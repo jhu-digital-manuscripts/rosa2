@@ -3,11 +3,13 @@ package rosa.archive.model;
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
 
 /**
- *
+ * Information about about the cropping data of zero or more images.
  */
-public class CropInfo implements IsSerializable {
+public class CropInfo implements Iterable<CropData>, IsSerializable {
 
     private HashMap<String, CropData> data;
 
@@ -23,14 +25,22 @@ public class CropInfo implements IsSerializable {
         data.put(pageData.getId(), pageData);
     }
 
-//    TODO expose underlying Map in this way?
-//    public HashMap<String, CropData> getData() {
-//        return data;
-//    }
-//
-//    public void setData(HashMap<String, CropData> data) {
-//        this.data = data;
-//    }
+    @Override
+    public Iterator<CropData> iterator() {
+        final Iterator<Entry<String, CropData>> daterator = data.entrySet().iterator();
+
+        return new Iterator<CropData>() {
+            @Override
+            public boolean hasNext() {
+                return daterator.hasNext();
+            }
+
+            @Override
+            public CropData next() {
+                return daterator.next().getValue();
+            }
+        };
+    }
 
     @Override
     public boolean equals(Object o) {

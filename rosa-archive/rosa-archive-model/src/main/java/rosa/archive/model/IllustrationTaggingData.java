@@ -7,8 +7,9 @@ import java.util.Arrays;
 /**
  * Image tagging information for a single page.
  */
-public class ImageTaggingPage implements IsSerializable {
+public class IllustrationTaggingData implements IsSerializable {
     private String id;
+    private String page;
     private String textualElement;
     private String costume;
     private String object;
@@ -18,7 +19,7 @@ public class ImageTaggingPage implements IsSerializable {
     private String[] characters;
     private String[] titles;
 
-    public ImageTaggingPage() {  }
+    public IllustrationTaggingData() {  }
 
     public String getId() {
         return id;
@@ -26,6 +27,14 @@ public class ImageTaggingPage implements IsSerializable {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getPage() {
+        return page;
+    }
+
+    public void setPage(String page) {
+        this.page = page;
     }
 
     public String getTextualElement() {
@@ -95,9 +104,9 @@ public class ImageTaggingPage implements IsSerializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof ImageTaggingPage)) return false;
+        if (!(o instanceof IllustrationTaggingData)) return false;
 
-        ImageTaggingPage that = (ImageTaggingPage) o;
+        IllustrationTaggingData that = (IllustrationTaggingData) o;
 
         if (architecture != null ? !architecture.equals(that.architecture) : that.architecture != null) return false;
         if (!Arrays.equals(characters, that.characters)) return false;
@@ -129,7 +138,7 @@ public class ImageTaggingPage implements IsSerializable {
 
     @Override
     public String toString() {
-        return "ImageTaggingPage{" +
+        return "IllustrationTaggingData{" +
                 "id='" + id + '\'' +
                 ", textualElement='" + textualElement + '\'' +
                 ", costume='" + costume + '\'' +

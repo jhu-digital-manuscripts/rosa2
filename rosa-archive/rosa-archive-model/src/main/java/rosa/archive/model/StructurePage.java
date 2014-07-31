@@ -1,9 +1,11 @@
 package rosa.archive.model;
 
+import com.google.gwt.user.client.rpc.IsSerializable;
+
 /**
  * A page in a book. Used for determining the books structure
  */
-public class StructurePage {
+public class StructurePage implements IsSerializable {
 
     private String id;
     private String name;

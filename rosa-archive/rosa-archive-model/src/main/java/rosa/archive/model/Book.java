@@ -32,7 +32,7 @@ public class Book implements IsSerializable {
     private Collection<String> content;
 
     private BookStructure bookStructure;
-    private ImageTagging imageTagging;
+    private IllustrationTagging illustrationTagging;
     private List<BookScene> manualNarrativeTagging;
     private List<BookScene> automaticNarrativeTagging;
 
@@ -110,12 +110,12 @@ public class Book implements IsSerializable {
         this.bookStructure = bookStructure;
     }
 
-    public ImageTagging getImageTagging() {
-        return imageTagging;
+    public IllustrationTagging getIllustrationTagging() {
+        return illustrationTagging;
     }
 
-    public void setImageTagging(ImageTagging imageTagging) {
-        this.imageTagging = imageTagging;
+    public void setIllustrationTagging(IllustrationTagging illustrationTagging) {
+        this.illustrationTagging = illustrationTagging;
     }
 
     public List<BookScene> getManualNarrativeTagging() {
@@ -154,7 +154,7 @@ public class Book implements IsSerializable {
         if (croppedImages != null ? !croppedImages.equals(book.croppedImages) : book.croppedImages != null)
             return false;
         if (id != null ? !id.equals(book.id) : book.id != null) return false;
-        if (imageTagging != null ? !imageTagging.equals(book.imageTagging) : book.imageTagging != null) return false;
+        if (illustrationTagging != null ? !illustrationTagging.equals(book.illustrationTagging) : book.illustrationTagging != null) return false;
         if (images != null ? !images.equals(book.images) : book.images != null) return false;
         if (manualNarrativeTagging != null ? !manualNarrativeTagging.equals(book.manualNarrativeTagging) : book.manualNarrativeTagging != null)
             return false;
@@ -173,7 +173,7 @@ public class Book implements IsSerializable {
         result = 31 * result + (checksumInfo != null ? checksumInfo.hashCode() : 0);
         result = 31 * result + (content != null ? content.hashCode() : 0);
         result = 31 * result + (bookStructure != null ? bookStructure.hashCode() : 0);
-        result = 31 * result + (imageTagging != null ? imageTagging.hashCode() : 0);
+        result = 31 * result + (illustrationTagging != null ? illustrationTagging.hashCode() : 0);
         result = 31 * result + (manualNarrativeTagging != null ? manualNarrativeTagging.hashCode() : 0);
         result = 31 * result + (automaticNarrativeTagging != null ? automaticNarrativeTagging.hashCode() : 0);
         return result;
@@ -191,7 +191,7 @@ public class Book implements IsSerializable {
                 ", checksumInfo=" + checksumInfo +
                 ", content=" + content +
                 ", bookStructure=" + bookStructure +
-                ", imageTagging=" + imageTagging +
+                ", illustrationTagging=" + illustrationTagging +
                 ", manualNarrativeTagging=" + manualNarrativeTagging +
                 ", automaticNarrativeTagging=" + automaticNarrativeTagging +
                 '}';
