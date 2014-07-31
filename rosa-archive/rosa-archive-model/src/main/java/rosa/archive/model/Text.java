@@ -64,5 +64,43 @@ public class Text implements IsSerializable {
         this.id = id;
     }
 
-    // TODO equals/hashCode
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Text)) return false;
+
+        Text text = (Text) o;
+
+        if (NumberOfIllustrations != text.NumberOfIllustrations) return false;
+        if (columnsPerPage != text.columnsPerPage) return false;
+        if (leavesPerGathering != text.leavesPerGathering) return false;
+        if (linesPerColumn != text.linesPerColumn) return false;
+        if (numberOfPages != text.numberOfPages) return false;
+        if (id != null ? !id.equals(text.id) : text.id != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = linesPerColumn;
+        result = 31 * result + columnsPerPage;
+        result = 31 * result + leavesPerGathering;
+        result = 31 * result + NumberOfIllustrations;
+        result = 31 * result + numberOfPages;
+        result = 31 * result + (id != null ? id.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Text{" +
+                "linesPerColumn=" + linesPerColumn +
+                ", columnsPerPage=" + columnsPerPage +
+                ", leavesPerGathering=" + leavesPerGathering +
+                ", NumberOfIllustrations=" + NumberOfIllustrations +
+                ", numberOfPages=" + numberOfPages +
+                ", id='" + id + '\'' +
+                '}';
+    }
 }

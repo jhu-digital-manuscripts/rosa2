@@ -35,7 +35,11 @@ public class NarrativeSections implements IsSerializable {
     }
 
     public int findIndexOfSceneById(String id) {
-        // TODO stub
+        for (int i = 0; i < scenes.size(); i++) {
+            if (scenes.get(i).getId().equals(id)) {
+                return i;
+            }
+        }
         return -1;
     }
 
@@ -58,5 +62,12 @@ public class NarrativeSections implements IsSerializable {
     @Override
     public int hashCode() {
         return scenes.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "NarrativeSections{" +
+                "scenes=" + scenes +
+                '}';
     }
 }

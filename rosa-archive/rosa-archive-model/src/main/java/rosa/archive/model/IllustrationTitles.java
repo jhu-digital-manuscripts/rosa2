@@ -53,4 +53,11 @@ public class IllustrationTitles implements IsSerializable {
     public int hashCode() {
         return data.hashCode();
     }
+
+    @Override
+    public String toString() {
+        return "IllustrationTitles{" +
+                "data=" + data +
+                '}';
+    }
 }

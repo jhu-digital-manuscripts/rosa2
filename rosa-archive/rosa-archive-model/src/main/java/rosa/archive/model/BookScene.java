@@ -91,5 +91,54 @@ public class BookScene implements IsSerializable {
         this.startTranscription = startTranscription;
     }
 
-    //TODO equals/hashCode
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof BookScene)) return false;
+
+        BookScene bookScene = (BookScene) o;
+
+        if (endLineOffset != bookScene.endLineOffset) return false;
+        if (startCriticalEdition != bookScene.startCriticalEdition) return false;
+        if (startLineOffset != bookScene.startLineOffset) return false;
+        if (endPage != null ? !endPage.equals(bookScene.endPage) : bookScene.endPage != null) return false;
+        if (endPageCol != null ? !endPageCol.equals(bookScene.endPageCol) : bookScene.endPageCol != null) return false;
+        if (id != null ? !id.equals(bookScene.id) : bookScene.id != null) return false;
+        if (startPage != null ? !startPage.equals(bookScene.startPage) : bookScene.startPage != null) return false;
+        if (startPageCol != null ? !startPageCol.equals(bookScene.startPageCol) : bookScene.startPageCol != null)
+            return false;
+        if (startTranscription != null ? !startTranscription.equals(bookScene.startTranscription) : bookScene.startTranscription != null)
+            return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (startPage != null ? startPage.hashCode() : 0);
+        result = 31 * result + (endPage != null ? endPage.hashCode() : 0);
+        result = 31 * result + (startPageCol != null ? startPageCol.hashCode() : 0);
+        result = 31 * result + (endPageCol != null ? endPageCol.hashCode() : 0);
+        result = 31 * result + startLineOffset;
+        result = 31 * result + endLineOffset;
+        result = 31 * result + startCriticalEdition;
+        result = 31 * result + (startTranscription != null ? startTranscription.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "BookScene{" +
+                "id='" + id + '\'' +
+                ", startPage='" + startPage + '\'' +
+                ", endPage='" + endPage + '\'' +
+                ", startPageCol='" + startPageCol + '\'' +
+                ", endPageCol='" + endPageCol + '\'' +
+                ", startLineOffset=" + startLineOffset +
+                ", endLineOffset=" + endLineOffset +
+                ", startCriticalEdition=" + startCriticalEdition +
+                ", startTranscription='" + startTranscription + '\'' +
+                '}';
+    }
 }

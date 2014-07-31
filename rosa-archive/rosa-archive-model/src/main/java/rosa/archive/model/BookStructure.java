@@ -2,11 +2,45 @@ package rosa.archive.model;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  */
 public class BookStructure implements IsSerializable {
 
-    // TODO all
+    private List<StructurePage> pages;
 
+    public BookStructure() {
+        this.pages = new ArrayList<>();
+    }
+
+    public List<StructurePage> getPages() {
+        return pages;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof BookStructure)) return false;
+
+        BookStructure that = (BookStructure) o;
+
+        if (pages != null ? !pages.equals(that.pages) : that.pages != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return pages != null ? pages.hashCode() : 0;
+    }
+
+    @Override
+    public String toString() {
+        return "BookStructure{" +
+                "pages=" + pages +
+                '}';
+    }
 }

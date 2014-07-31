@@ -2,6 +2,7 @@ package rosa.archive.model;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,9 +11,11 @@ import java.util.List;
 public class ImageTagging implements IsSerializable {
 
     private int numberOfImages;
-    private List<Page> pages;
+    private List<ImageTaggingPage> pages;
 
-    public ImageTagging() {  }
+    public ImageTagging() {
+        this.pages = new ArrayList<>();
+    }
 
     public int getNumberOfImages() {
         return numberOfImages;
@@ -22,12 +25,30 @@ public class ImageTagging implements IsSerializable {
         this.numberOfImages = numberOfImages;
     }
 
-    public List<Page> getPages() {
-        return pages;
+//    TODO expose underlying list in this way?
+//    public List<ImageTaggingPage> getPages() {
+//        return pages;
+//    }
+//
+//    public void setPages(List<ImageTaggingPage> pages) {
+//        this.pages = pages;
+//    }
+
+    public ImageTaggingPage getPage(int index) {
+        return pages.get(index);
     }
 
-    public void setPages(List<Page> pages) {
-        this.pages = pages;
+    public void addPage(ImageTaggingPage page) {
+        pages.add(page);
+    }
+
+    public int getIndexOfPage(String pageId) {
+        for (int i = 0; i < pages.size(); i++) {
+            if (pages.get(i).getId().equals(pageId)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     @Override
@@ -49,84 +70,4 @@ public class ImageTagging implements IsSerializable {
         result = 31 * result + pages.hashCode();
         return result;
     }
-
-    public class Page implements IsSerializable {
-        private String textualElement;
-        private String costume;
-        private String object;
-        private String landscape;
-        private String architecture;
-        private String other;
-        private String[] characters;
-        private String[] titles;
-
-        public Page() {  }
-
-        public String getTextualElement() {
-            return textualElement;
-        }
-
-        public void setTextualElement(String textualElement) {
-            this.textualElement = textualElement;
-        }
-
-        public String getCostume() {
-            return costume;
-        }
-
-        public void setCostume(String costume) {
-            this.costume = costume;
-        }
-
-        public String getObject() {
-            return object;
-        }
-
-        public void setObject(String object) {
-            this.object = object;
-        }
-
-        public String getLandscape() {
-            return landscape;
-        }
-
-        public void setLandscape(String landscape) {
-            this.landscape = landscape;
-        }
-
-        public String getArchitecture() {
-            return architecture;
-        }
-
-        public void setArchitecture(String architecture) {
-            this.architecture = architecture;
-        }
-
-        public String getOther() {
-            return other;
-        }
-
-        public void setOther(String other) {
-            this.other = other;
-        }
-
-        public String[] getCharacters() {
-            return characters;
-        }
-
-        public void setCharacters(String[] characters) {
-            this.characters = characters;
-        }
-
-        public String[] getTitles() {
-            return titles;
-        }
-
-        public void setTitles(String[] titles) {
-            this.titles = titles;
-        }
-
-        // TODO equals/hashCode
-    }
-
 }

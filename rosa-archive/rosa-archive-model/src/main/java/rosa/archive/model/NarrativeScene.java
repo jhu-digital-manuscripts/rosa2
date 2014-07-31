@@ -64,5 +64,43 @@ public class NarrativeScene implements IsSerializable {
         this.rel_line_end = rel_line_end;
     }
 
-    // TODO equals/hashCode
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof NarrativeScene)) return false;
+
+        NarrativeScene that = (NarrativeScene) o;
+
+        if (criticalEditionEnd != that.criticalEditionEnd) return false;
+        if (criticalEditionStart != that.criticalEditionStart) return false;
+        if (rel_line_end != that.rel_line_end) return false;
+        if (rel_line_start != that.rel_line_start) return false;
+        if (description != null ? !description.equals(that.description) : that.description != null) return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (description != null ? description.hashCode() : 0);
+        result = 31 * result + criticalEditionStart;
+        result = 31 * result + criticalEditionEnd;
+        result = 31 * result + rel_line_start;
+        result = 31 * result + rel_line_end;
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "NarrativeScene{" +
+                "id='" + id + '\'' +
+                ", description='" + description + '\'' +
+                ", criticalEditionStart=" + criticalEditionStart +
+                ", criticalEditionEnd=" + criticalEditionEnd +
+                ", rel_line_start=" + rel_line_start +
+                ", rel_line_end=" + rel_line_end +
+                '}';
+    }
 }

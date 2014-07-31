@@ -3,11 +3,16 @@ package rosa.archive.model;
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- *
+ * The name of a character. Supports multiple languages.
  */
 public class CharacterName implements IsSerializable {
+    // TODO set a default language if non is specified when added? can be made configurable!
+    private static final String DEFAULT_LANGUAGE = "EN";
+
     private String id;
     /**
      * Map of language -> name
@@ -30,9 +35,58 @@ public class CharacterName implements IsSerializable {
         return names.get(language);
     }
 
-    public void setNames(HashMap<String, String> names) {
-        this.names = names;
+    /**
+     * @return
+     *          All names for this character in no particular order
+     */
+    public Set<String> getAllNames() {
+        Set<String> nameSet = new HashSet<>();
+
+        for (String lang : names.keySet()) {
+            nameSet.add(names.get(lang));
+        }
+
+        return nameSet;
     }
 
-    // TODO equals/hashCode
+    public void addName(String name, String language) {
+        names.put(language, name);
+    }
+
+    public void addName(String name) {
+        addName(DEFAULT_LANGUAGE, name);
+    }
+
+//    TODO reveal underlying map in this way?
+//    public void setNames(HashMap<String, String> names) {
+//        this.names = names;
+//    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CharacterName)) return false;
+
+        CharacterName that = (CharacterName) o;
+
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (names != null ? !names.equals(that.names) : that.names != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (names != null ? names.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "CharacterName{" +
+                "id='" + id + '\'' +
+                ", names=" + names +
+                '}';
+    }
 }

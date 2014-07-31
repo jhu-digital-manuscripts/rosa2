@@ -109,6 +109,43 @@ public class ArchiveCollection implements IsSerializable {
         return languages.contains(language);
     }
 
-    // TODO equals/hashCode
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ArchiveCollection)) return false;
 
+        ArchiveCollection that = (ArchiveCollection) o;
+
+        if (books != null ? !books.equals(that.books) : that.books != null) return false;
+        if (characterNames != null ? !characterNames.equals(that.characterNames) : that.characterNames != null)
+            return false;
+        if (illustrationTitles != null ? !illustrationTitles.equals(that.illustrationTitles) : that.illustrationTitles != null)
+            return false;
+        if (languages != null ? !languages.equals(that.languages) : that.languages != null) return false;
+        if (narrativeSections != null ? !narrativeSections.equals(that.narrativeSections) : that.narrativeSections != null)
+            return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = books != null ? books.hashCode() : 0;
+        result = 31 * result + (languages != null ? languages.hashCode() : 0);
+        result = 31 * result + (characterNames != null ? characterNames.hashCode() : 0);
+        result = 31 * result + (illustrationTitles != null ? illustrationTitles.hashCode() : 0);
+        result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "ArchiveCollection{" +
+                "books=" + books +
+                ", languages=" + languages +
+                ", characterNames=" + characterNames +
+                ", illustrationTitles=" + illustrationTitles +
+                ", narrativeSections=" + narrativeSections +
+                '}';
+    }
 }

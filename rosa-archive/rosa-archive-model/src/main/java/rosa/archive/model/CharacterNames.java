@@ -43,5 +43,33 @@ public class CharacterNames implements IsSerializable {
         return names.get(id).getNameInLanguage(language);
     }
 
-    // TODO equals/hashCode
+    public Set<String> getAllCharacterIds() {
+        return names.keySet();
+    }
+
+    public void addCharacterName(CharacterName name) {
+        names.put(name.getId(), name);
+    }
+
+//    TODO expose underlying map in this way?
+//    public void setNames(HashMap<String, CharacterName> names) {
+//        this.names = names;
+//    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CharacterNames)) return false;
+
+        CharacterNames that = (CharacterNames) o;
+
+        if (names != null ? !names.equals(that.names) : that.names != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return names != null ? names.hashCode() : 0;
+    }
 }
