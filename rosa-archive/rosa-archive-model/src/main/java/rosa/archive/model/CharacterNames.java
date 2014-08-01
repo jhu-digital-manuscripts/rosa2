@@ -3,8 +3,10 @@ package rosa.archive.model;
 import com.google.gwt.user.client.rpc.IsSerializable;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -66,5 +68,12 @@ public class CharacterNames implements IsSerializable {
     @Override
     public int hashCode() {
         return names != null ? names.hashCode() : 0;
+    }
+
+    @Override
+    public String toString() {
+        return "CharacterNames{" +
+                "names=" + names +
+                '}';
     }
 }

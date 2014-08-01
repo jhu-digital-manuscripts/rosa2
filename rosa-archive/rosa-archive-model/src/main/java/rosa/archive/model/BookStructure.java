@@ -10,6 +10,9 @@ import java.util.List;
  */
 public class BookStructure implements IsSerializable {
 
+    /**
+     * List of pages in order.
+     */
     private List<StructurePage> pages;
 
     public BookStructure() {
@@ -18,6 +21,11 @@ public class BookStructure implements IsSerializable {
 
     public List<StructurePage> getPages() {
         return pages;
+    }
+
+    public List<StructureColumn> getAllColumns() {
+
+        return null;
     }
 
     @Override

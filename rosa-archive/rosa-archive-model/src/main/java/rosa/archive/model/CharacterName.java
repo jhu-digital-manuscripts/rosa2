@@ -50,11 +50,11 @@ public class CharacterName implements IsSerializable {
     }
 
     public void addName(String name, String language) {
-        names.put(language, name);
+        names.put(language.trim().toLowerCase(), name);
     }
 
     public void addName(String name) {
-        addName(DEFAULT_LANGUAGE, name);
+        addName(name, DEFAULT_LANGUAGE);
     }
 
     @Override
