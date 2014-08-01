@@ -22,6 +22,7 @@ public class ArchiveCollection implements IsSerializable {
 
     public ArchiveCollection() {
         this.books = new HashMap<>();
+        this.languages = new ArrayList<>();
     }
 
     /**
@@ -45,7 +46,7 @@ public class ArchiveCollection implements IsSerializable {
      * Get a set containing all of the books in this collection.
      *
      * @return
-     *          an emtpy set will be returned if no books exist in this collection.
+     *          an empty set will be returned if no books exist in this collection.
      */
     // Is this necessary?
     public Set<Book> getAllBooks() {
@@ -93,6 +94,10 @@ public class ArchiveCollection implements IsSerializable {
      */
     public List<String> getAllSupportedLanguages() {
         return languages;
+    }
+
+    public void addSupportedLanguage(String language) {
+        languages.add(language);
     }
 
     public void setLanguages(ArrayList<String> languages) {

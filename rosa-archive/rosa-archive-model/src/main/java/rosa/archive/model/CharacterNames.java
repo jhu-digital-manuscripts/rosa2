@@ -51,11 +51,6 @@ public class CharacterNames implements IsSerializable {
         names.put(name.getId(), name);
     }
 
-//    TODO expose underlying map in this way?
-//    public void setNames(HashMap<String, CharacterName> names) {
-//        this.names = names;
-//    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

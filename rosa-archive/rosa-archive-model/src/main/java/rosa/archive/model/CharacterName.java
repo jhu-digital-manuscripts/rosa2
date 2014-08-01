@@ -57,11 +57,6 @@ public class CharacterName implements IsSerializable {
         addName(DEFAULT_LANGUAGE, name);
     }
 
-//    TODO reveal underlying map in this way?
-//    public void setNames(HashMap<String, String> names) {
-//        this.names = names;
-//    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
