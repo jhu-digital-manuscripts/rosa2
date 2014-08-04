@@ -6,7 +6,8 @@ import java.util.HashMap;
 import java.util.Set;
 
 /**
- *
+ * Illustration titles associated with a collection, not necessarily with a single book in
+ * the collection.
  */
 public class IllustrationTitles implements IsSerializable {
 

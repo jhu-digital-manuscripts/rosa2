@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * Image tagging information for a single page.
  */
-public class IllustrationTaggingData implements IsSerializable {
+public class Illustration implements IsSerializable {
     private String id;
     private String page;
     private String textualElement;
@@ -19,7 +19,7 @@ public class IllustrationTaggingData implements IsSerializable {
     private String[] characters;
     private String[] titles;
 
-    public IllustrationTaggingData() {  }
+    public Illustration() {  }
 
     public String getId() {
         return id;
@@ -104,9 +104,9 @@ public class IllustrationTaggingData implements IsSerializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof IllustrationTaggingData)) return false;
+        if (!(o instanceof Illustration)) return false;
 
-        IllustrationTaggingData that = (IllustrationTaggingData) o;
+        Illustration that = (Illustration) o;
 
         if (architecture != null ? !architecture.equals(that.architecture) : that.architecture != null) return false;
         if (!Arrays.equals(characters, that.characters)) return false;
@@ -138,7 +138,7 @@ public class IllustrationTaggingData implements IsSerializable {
 
     @Override
     public String toString() {
-        return "IllustrationTaggingData{" +
+        return "Illustration{" +
                 "id='" + id + '\'' +
                 ", textualElement='" + textualElement + '\'' +
                 ", costume='" + costume + '\'' +

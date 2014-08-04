@@ -9,26 +9,40 @@ import java.util.List;
 /**
  * Information about zero or more illustrations.
  */
-public class IllustrationTagging implements Iterable<IllustrationTaggingData>, IsSerializable {
+public class IllustrationTagging implements Iterable<Illustration>, IsSerializable {
 
-    private List<IllustrationTaggingData> data;
+    private List<Illustration> data;
 
     public IllustrationTagging() {
         this.data = new ArrayList<>();
     }
 
-    public int getNumberOfIllustrations() {
+    public int size() {
         return data.size();
     }
 
-    public IllustrationTaggingData getIllustrationData(int index) {
+    /**
+     *
+     * @param index
+     *          numeric index of illustration
+     * @return
+     *          illustration data at specified index
+     */
+    public Illustration getIllustrationData(int index) {
         return data.get(index);
     }
 
-    public void addIllustrationData(IllustrationTaggingData data) {
+    public void addIllustrationData(Illustration data) {
         this.data.add(data);
     }
 
+    /**
+     *
+     * @param illustrationId
+     *          the ID of the illustration in question
+     * @return
+     *          numerical index of requested illustration, or -1 if illustration is not present
+     */
     public int getIndexOfIllustration(String illustrationId) {
         for (int i = 0; i < data.size(); i++) {
             if (data.get(i).getId().equals(illustrationId)) {
@@ -39,8 +53,8 @@ public class IllustrationTagging implements Iterable<IllustrationTaggingData>, I
     }
 
     @Override
-    public Iterator<IllustrationTaggingData> iterator() {
-        return new Iterator<IllustrationTaggingData>() {
+    public Iterator<Illustration> iterator() {
+        return new Iterator<Illustration>() {
             private int index = 0;
 
             @Override
@@ -49,8 +63,13 @@ public class IllustrationTagging implements Iterable<IllustrationTaggingData>, I
             }
 
             @Override
-            public IllustrationTaggingData next() {
+            public Illustration next() {
                 return getIllustrationData(index++);
+            }
+
+            @Override
+            public void remove() {
+                throw new UnsupportedOperationException("Cannot remove items!");
             }
         };
     }

@@ -27,17 +27,22 @@ public class CropInfo implements Iterable<CropData>, IsSerializable {
 
     @Override
     public Iterator<CropData> iterator() {
-        final Iterator<Entry<String, CropData>> daterator = data.entrySet().iterator();
+        final Iterator<Entry<String, CropData>> datarator = data.entrySet().iterator();
 
         return new Iterator<CropData>() {
             @Override
             public boolean hasNext() {
-                return daterator.hasNext();
+                return datarator.hasNext();
             }
 
             @Override
             public CropData next() {
-                return daterator.next().getValue();
+                return datarator.next().getValue();
+            }
+
+            @Override
+            public void remove() {
+                throw new UnsupportedOperationException("Cannot remove item from this iterator.");
             }
         };
     }
