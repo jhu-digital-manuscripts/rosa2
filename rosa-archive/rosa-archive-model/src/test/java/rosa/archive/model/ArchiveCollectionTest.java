@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
@@ -101,6 +102,12 @@ public class ArchiveCollectionTest {
         assertTrue(collection.isLanguageSupported(LANGS[0]));
         assertTrue(collection.isLanguageSupported(LANGS[1]));
         assertTrue(collection.isLanguageSupported(LANGS[2]));
+    }
+
+    @Test
+    public void languageNotSupported() {
+        assertFalse(collection.isLanguageSupported("asdf"));
+        assertFalse(collection.isLanguageSupported("is"));
     }
 
 }
