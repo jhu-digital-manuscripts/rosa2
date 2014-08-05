@@ -6,11 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Collection of scenes present in a collection. Scenes may or may not be present in individual
+ * books in the collection. Useful for mapping scenes onto the books.
  */
 public class NarrativeSections implements IsSerializable {
 
-    private ArrayList<NarrativeScene> scenes;
+    private List<NarrativeScene> scenes;
 
     public NarrativeSections() {
         this.scenes = new ArrayList<>();
@@ -34,6 +35,12 @@ public class NarrativeSections implements IsSerializable {
         return scenes.size();
     }
 
+    /**
+     * @param id
+     *          id of the scene to find
+     * @return
+     *          index of the scene in question if present. If the scene is not present, -1 is returned.
+     */
     public int findIndexOfSceneById(String id) {
         for (int i = 0; i < scenes.size(); i++) {
             if (scenes.get(i).getId().equals(id)) {
@@ -43,7 +50,7 @@ public class NarrativeSections implements IsSerializable {
         return -1;
     }
 
-    public void setScenes(ArrayList<NarrativeScene> scenes) {
+    public void setScenes(List<NarrativeScene> scenes) {
         this.scenes = scenes;
     }
 

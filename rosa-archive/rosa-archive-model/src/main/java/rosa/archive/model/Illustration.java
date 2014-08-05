@@ -5,7 +5,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 import java.util.Arrays;
 
 /**
- * Image tagging information for a single page.
+ * Image tagging information for a single image on a page.
  */
 public class Illustration implements IsSerializable {
     private String id;

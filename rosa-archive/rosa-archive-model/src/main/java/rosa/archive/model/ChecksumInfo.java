@@ -7,10 +7,13 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- *
+ * Holds the checksums for all items in the archive for a book.
  */
 public class ChecksumInfo implements IsSerializable {
 
+    /**
+     * Archive item ID -> ChecksumData
+     */
     private Map<String, ChecksumData> checksums;
 
     public ChecksumInfo() {

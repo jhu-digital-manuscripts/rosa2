@@ -18,11 +18,11 @@ public class StructurePageSide implements IsSerializable {
         this.columns = new ArrayList<>();
     }
 
-    public List<Item> getSpanning() {
+    public List<Item> spanning() {
         return spanning;
     }
 
-    public List<StructureColumn> getColumns() {
+    public List<StructureColumn> columns() {
         return columns;
     }
 

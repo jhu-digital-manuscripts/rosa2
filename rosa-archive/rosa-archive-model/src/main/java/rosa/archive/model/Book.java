@@ -2,6 +2,8 @@ package rosa.archive.model;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -14,11 +16,11 @@ public class Book implements IsSerializable {
     /**
      * High resolution images of the pages of this book.
      */
-    private Collection<BookImage> images;
+    private List<BookImage> images;
     /**
      * High resolution images of the pages of this book after cropping.
      */
-    private Collection<BookImage> croppedImages;
+    private List<BookImage> croppedImages;
     /**
      * Information about the cropping of the original images.
      */
@@ -27,16 +29,21 @@ public class Book implements IsSerializable {
     private BookDescription bookDescription;
     private ChecksumInfo checksumInfo;
     /**
-     * Collection of all content associated with this book (ex: all file names in a directory).
+     * Array of all content associated with this book (ex: all file names in a directory).
      */
-    private Collection<String> content;
+    private String[] content;
 
     private BookStructure bookStructure;
     private IllustrationTagging illustrationTagging;
     private List<BookScene> manualNarrativeTagging;
     private List<BookScene> automaticNarrativeTagging;
 
-    public Book() {  }
+    public Book() {
+        this.images = new ArrayList<>();
+        this.croppedImages = new ArrayList<>();
+        this.manualNarrativeTagging = new ArrayList<>();
+        this.automaticNarrativeTagging = new ArrayList<>();
+    }
 
     public String getId() {
         return id;
@@ -46,19 +53,19 @@ public class Book implements IsSerializable {
         this.id = id;
     }
 
-    public Collection<BookImage> getImages() {
+    public List<BookImage> getImages() {
         return images;
     }
 
-    public void setImages(Collection<BookImage> images) {
+    public void setImages(List<BookImage> images) {
         this.images = images;
     }
 
-    public Collection<BookImage> getCroppedImages() {
+    public List<BookImage> getCroppedImages() {
         return croppedImages;
     }
 
-    public void setCroppedImages(Collection<BookImage> croppedImages) {
+    public void setCroppedImages(List<BookImage> croppedImages) {
         this.croppedImages = croppedImages;
     }
 
@@ -94,11 +101,11 @@ public class Book implements IsSerializable {
         this.checksumInfo = checksumInfo;
     }
 
-    public Collection<String> getContent() {
+    public String[] getContent() {
         return content;
     }
 
-    public void setContent(Collection<String> content) {
+    public void setContent(String[] content) {
         this.content = content;
     }
 
@@ -149,12 +156,13 @@ public class Book implements IsSerializable {
         if (bookStructure != null ? !bookStructure.equals(book.bookStructure) : book.bookStructure != null)
             return false;
         if (checksumInfo != null ? !checksumInfo.equals(book.checksumInfo) : book.checksumInfo != null) return false;
-        if (content != null ? !content.equals(book.content) : book.content != null) return false;
+        if (!Arrays.equals(content, book.content)) return false;
         if (cropInfo != null ? !cropInfo.equals(book.cropInfo) : book.cropInfo != null) return false;
         if (croppedImages != null ? !croppedImages.equals(book.croppedImages) : book.croppedImages != null)
             return false;
         if (id != null ? !id.equals(book.id) : book.id != null) return false;
-        if (illustrationTagging != null ? !illustrationTagging.equals(book.illustrationTagging) : book.illustrationTagging != null) return false;
+        if (illustrationTagging != null ? !illustrationTagging.equals(book.illustrationTagging) : book.illustrationTagging != null)
+            return false;
         if (images != null ? !images.equals(book.images) : book.images != null) return false;
         if (manualNarrativeTagging != null ? !manualNarrativeTagging.equals(book.manualNarrativeTagging) : book.manualNarrativeTagging != null)
             return false;
@@ -171,7 +179,7 @@ public class Book implements IsSerializable {
         result = 31 * result + (bookMetadata != null ? bookMetadata.hashCode() : 0);
         result = 31 * result + (bookDescription != null ? bookDescription.hashCode() : 0);
         result = 31 * result + (checksumInfo != null ? checksumInfo.hashCode() : 0);
-        result = 31 * result + (content != null ? content.hashCode() : 0);
+        result = 31 * result + (content != null ? Arrays.hashCode(content) : 0);
         result = 31 * result + (bookStructure != null ? bookStructure.hashCode() : 0);
         result = 31 * result + (illustrationTagging != null ? illustrationTagging.hashCode() : 0);
         result = 31 * result + (manualNarrativeTagging != null ? manualNarrativeTagging.hashCode() : 0);
@@ -189,7 +197,7 @@ public class Book implements IsSerializable {
                 ", bookMetadata=" + bookMetadata +
                 ", bookDescription=" + bookDescription +
                 ", checksumInfo=" + checksumInfo +
-                ", content=" + content +
+                ", content=" + Arrays.toString(content) +
                 ", bookStructure=" + bookStructure +
                 ", illustrationTagging=" + illustrationTagging +
                 ", manualNarrativeTagging=" + manualNarrativeTagging +

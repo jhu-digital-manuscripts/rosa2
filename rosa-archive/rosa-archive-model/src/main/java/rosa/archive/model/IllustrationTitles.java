@@ -3,6 +3,7 @@ package rosa.archive.model;
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -11,7 +12,7 @@ import java.util.Set;
  */
 public class IllustrationTitles implements IsSerializable {
 
-    private HashMap<String, String> data;
+    private Map<String, String> data;
 
     public IllustrationTitles() {
         this.data = new HashMap<>();

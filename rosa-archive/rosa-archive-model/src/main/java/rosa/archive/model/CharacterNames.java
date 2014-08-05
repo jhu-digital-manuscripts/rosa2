@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Set;
  */
 public class CharacterNames implements IsSerializable {
 
-    private HashMap<String, CharacterName> names;
+    private Map<String, CharacterName> names;
 
     public CharacterNames() {
         this.names = new HashMap<>();

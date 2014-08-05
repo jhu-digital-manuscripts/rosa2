@@ -2,6 +2,9 @@ package rosa.archive.model;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 
+/**
+ * Checksum data for an item in the archive, including the hash algorithm and hash itself.
+ */
 public class ChecksumData implements IsSerializable {
 
     private String id;

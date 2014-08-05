@@ -66,12 +66,12 @@ public class BookStructure implements Iterable<StructurePage>, IsSerializable {
         for (StructurePage page : pages) {
             StructurePageSide recto = page.getRecto();
             if (recto != null) {
-                columns.addAll(recto.getColumns());
+                columns.addAll(recto.columns());
             }
 
             StructurePageSide verso = page.getVerso();
             if (verso != null) {
-                columns.addAll(verso.getColumns());
+                columns.addAll(verso.columns());
             }
         }
 

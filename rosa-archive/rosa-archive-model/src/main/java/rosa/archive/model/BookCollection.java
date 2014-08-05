@@ -2,6 +2,8 @@ package rosa.archive.model;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 
+import java.util.Arrays;
+
 /**
  * A collection of books stored in the archive.
  */
@@ -95,12 +97,12 @@ public class BookCollection implements IsSerializable {
 
         BookCollection that = (BookCollection) o;
 
-        if (books != null ? !books.equals(that.books) : that.books != null) return false;
+        if (!Arrays.equals(books, that.books)) return false;
         if (characterNames != null ? !characterNames.equals(that.characterNames) : that.characterNames != null)
             return false;
         if (illustrationTitles != null ? !illustrationTitles.equals(that.illustrationTitles) : that.illustrationTitles != null)
             return false;
-        if (languages != null ? !languages.equals(that.languages) : that.languages != null) return false;
+        if (!Arrays.equals(languages, that.languages)) return false;
         if (narrativeSections != null ? !narrativeSections.equals(that.narrativeSections) : that.narrativeSections != null)
             return false;
 
@@ -109,8 +111,8 @@ public class BookCollection implements IsSerializable {
 
     @Override
     public int hashCode() {
-        int result = books != null ? books.hashCode() : 0;
-        result = 31 * result + (languages != null ? languages.hashCode() : 0);
+        int result = books != null ? Arrays.hashCode(books) : 0;
+        result = 31 * result + (languages != null ? Arrays.hashCode(languages) : 0);
         result = 31 * result + (characterNames != null ? characterNames.hashCode() : 0);
         result = 31 * result + (illustrationTitles != null ? illustrationTitles.hashCode() : 0);
         result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
@@ -120,8 +122,8 @@ public class BookCollection implements IsSerializable {
     @Override
     public String toString() {
         return "BookCollection{" +
-                "books=" + books +
-                ", languages=" + languages +
+                "books=" + Arrays.toString(books) +
+                ", languages=" + Arrays.toString(languages) +
                 ", characterNames=" + characterNames +
                 ", illustrationTitles=" + illustrationTitles +
                 ", narrativeSections=" + narrativeSections +

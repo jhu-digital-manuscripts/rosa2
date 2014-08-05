@@ -4,6 +4,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -17,7 +18,7 @@ public class CharacterName implements IsSerializable {
     /**
      * Map of language -> name
      */
-    private HashMap<String, String> names;
+    private Map<String, String> names;
 
     public CharacterName() {
         this.names = new HashMap<>();

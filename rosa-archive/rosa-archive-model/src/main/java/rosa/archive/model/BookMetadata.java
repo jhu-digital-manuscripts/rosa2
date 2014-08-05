@@ -2,6 +2,7 @@ package rosa.archive.model;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 
+import java.util.Arrays;
 import java.util.Collection;
 
 /**
@@ -24,7 +25,7 @@ public class BookMetadata implements IsSerializable {
     private String type;
     private String commonName;
     private String material;
-    private Collection<BookText> texts;
+    private BookText[] texts;
 
     public BookMetadata() {  }
 
@@ -148,11 +149,11 @@ public class BookMetadata implements IsSerializable {
         this.material = material;
     }
 
-    public Collection<BookText> getTexts() {
+    public BookText[] getTexts() {
         return texts;
     }
 
-    public void setTexts(Collection<BookText> texts) {
+    public void setTexts(BookText[] texts) {
         this.texts = texts;
     }
 
@@ -178,7 +179,7 @@ public class BookMetadata implements IsSerializable {
         if (origin != null ? !origin.equals(that.origin) : that.origin != null) return false;
         if (repository != null ? !repository.equals(that.repository) : that.repository != null) return false;
         if (shelfmark != null ? !shelfmark.equals(that.shelfmark) : that.shelfmark != null) return false;
-        if (texts != null ? !texts.equals(that.texts) : that.texts != null) return false;
+        if (!Arrays.equals(texts, that.texts)) return false;
         if (type != null ? !type.equals(that.type) : that.type != null) return false;
 
         return true;
@@ -201,7 +202,7 @@ public class BookMetadata implements IsSerializable {
         result = 31 * result + (type != null ? type.hashCode() : 0);
         result = 31 * result + (commonName != null ? commonName.hashCode() : 0);
         result = 31 * result + (material != null ? material.hashCode() : 0);
-        result = 31 * result + (texts != null ? texts.hashCode() : 0);
+        result = 31 * result + (texts != null ? Arrays.hashCode(texts) : 0);
         return result;
     }
 
@@ -223,7 +224,7 @@ public class BookMetadata implements IsSerializable {
                 ", type='" + type + '\'' +
                 ", commonName='" + commonName + '\'' +
                 ", material='" + material + '\'' +
-                ", texts=" + texts +
+                ", texts=" + Arrays.toString(texts) +
                 '}';
     }
 }

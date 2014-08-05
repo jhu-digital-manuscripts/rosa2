@@ -41,8 +41,8 @@ public class BookStructureTest {
             StructureColumn col3 = mock(StructureColumn.class);
             StructureColumn col4 = mock(StructureColumn.class);
 
-            when(recto.getColumns()).thenReturn(Arrays.asList(col1, col2));
-            when(verso.getColumns()).thenReturn(Arrays.asList(col3, col4));
+            when(recto.columns()).thenReturn(Arrays.asList(col1, col2));
+            when(verso.columns()).thenReturn(Arrays.asList(col3, col4));
         }
     }
 

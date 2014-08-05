@@ -3,7 +3,7 @@ package rosa.archive.model;
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 /**
- *
+ * Crop data for high resolution images. All numbers are percents.
  */
 public class CropData implements IsSerializable {
 
