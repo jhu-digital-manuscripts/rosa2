@@ -2,63 +2,34 @@ package rosa.archive.model;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map.Entry;
-import java.util.Set;
-
 /**
  * A collection of books stored in the archive.
  */
 public class BookCollection implements IsSerializable {
 
-    private HashMap<String, Book> books;
-    private ArrayList<String> languages;
+    /**
+     * Array of book IDs for the books in this collection.
+     */
+    private String[] books;
+    /**
+     * Array of languages supported by this collection.
+     */
+    private String[] languages;
     private CharacterNames characterNames;
     private IllustrationTitles illustrationTitles;
     private NarrativeSections narrativeSections;
 
-    public BookCollection() {
-        this.books = new HashMap<>();
-        this.languages = new ArrayList<>();
-    }
+    public BookCollection() {  }
 
     /**
-     * Retrieve a book in the archive with its ID. If the book is not present in this collection,
-     * NULL is returned.
-     *
-     * @param id
-     *          ID of the book you want
      * @return
-     *          a Book. NULL if Book is not present in the collection.
+     *          array containing the IDs of all books in this collection.
      */
-    public Book getBook(String id) {
-        return books.get(id);
+    public String[] books() {
+        return books;
     }
 
-    public Set<String> getAllBookIds() {
-        return books.keySet();
-    }
-
-    /**
-     * Get a set containing all of the books in this collection.
-     *
-     * @return
-     *          an empty set will be returned if no books exist in this collection.
-     */
-    // Is this necessary?
-    public Set<Book> getAllBooks() {
-        Set<Book> allBooks = new HashSet<>();
-
-        for (Entry<String, Book> entry : books.entrySet()) {
-            allBooks.add( entry.getValue() );
-        }
-        return allBooks;
-    }
-
-    public void setBooks(HashMap<String, Book> books) {
+    public void setBooks(String[] books) {
         this.books = books;
     }
 
@@ -92,15 +63,11 @@ public class BookCollection implements IsSerializable {
      * @return
      *          List of languages
      */
-    public List<String> getAllSupportedLanguages() {
+    public String[] getAllSupportedLanguages() {
         return languages;
     }
 
-    public void addSupportedLanguage(String language) {
-        languages.add(language);
-    }
-
-    public void setLanguages(ArrayList<String> languages) {
+    public void setLanguages(String[] languages) {
         this.languages = languages;
     }
 
@@ -108,10 +75,17 @@ public class BookCollection implements IsSerializable {
      * Checks whether or not a language is supported by this collection.
      *
      * @param language
+     *          language code
      * @return
+     *          TRUE if language is supported by collection. FALSE otherwise.
      */
     public boolean isLanguageSupported(String language) {
-        return languages.contains(language);
+        for (String lang : languages) {
+            if (lang.equals(language)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
