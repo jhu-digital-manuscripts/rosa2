@@ -5,7 +5,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 /**
  *
  */
-public class Text implements IsSerializable {
+public class BookText implements IsSerializable {
 
     private int linesPerColumn;
     private int columnsPerPage;
@@ -14,7 +14,7 @@ public class Text implements IsSerializable {
     private int numberOfPages;
     private String id;
 
-    public Text() {  }
+    public BookText() {  }
 
     public int getLinesPerColumn() {
         return linesPerColumn;
@@ -67,9 +67,9 @@ public class Text implements IsSerializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Text)) return false;
+        if (!(o instanceof BookText)) return false;
 
-        Text text = (Text) o;
+        BookText text = (BookText) o;
 
         if (NumberOfIllustrations != text.NumberOfIllustrations) return false;
         if (columnsPerPage != text.columnsPerPage) return false;
@@ -94,7 +94,7 @@ public class Text implements IsSerializable {
 
     @Override
     public String toString() {
-        return "Text{" +
+        return "BookText{" +
                 "linesPerColumn=" + linesPerColumn +
                 ", columnsPerPage=" + columnsPerPage +
                 ", leavesPerGathering=" + leavesPerGathering +

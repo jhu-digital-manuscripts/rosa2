@@ -15,7 +15,7 @@ public class SerializationTest {
 
     @Test
     public void archiveCollectionSerializationTest() throws Exception {
-        checkGwtSerializability(new ArchiveCollection());
+        checkGwtSerializability(new BookCollection());
     }
 
     /**

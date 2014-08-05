@@ -24,7 +24,7 @@ public class BookMetadata implements IsSerializable {
     private String type;
     private String commonName;
     private String material;
-    private Collection<Text> texts;
+    private Collection<BookText> texts;
 
     public BookMetadata() {  }
 
@@ -148,11 +148,11 @@ public class BookMetadata implements IsSerializable {
         this.material = material;
     }
 
-    public Collection<Text> getTexts() {
+    public Collection<BookText> getTexts() {
         return texts;
     }
 
-    public void setTexts(Collection<Text> texts) {
+    public void setTexts(Collection<BookText> texts) {
         this.texts = texts;
     }
 

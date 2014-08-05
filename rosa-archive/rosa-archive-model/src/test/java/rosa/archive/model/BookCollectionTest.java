@@ -15,17 +15,17 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
- * @see rosa.archive.model.ArchiveCollection
+ * @see BookCollection
  */
-public class ArchiveCollectionTest {
+public class BookCollectionTest {
     private static final int MAX_BOOKS = 10;
     private static final String[] LANGS = { "en", "fr", "de" };
 
-    private ArchiveCollection collection;
+    private BookCollection collection;
 
     @Before
     public void setup() {
-        this.collection = new ArchiveCollection();
+        this.collection = new BookCollection();
 
         // Setting the books in the collection.
         HashMap<String, Book> books = new HashMap<>();
@@ -69,7 +69,7 @@ public class ArchiveCollectionTest {
 
     @Test
     public void emptySetReturnedIfNoBooksPresent() {
-        ArchiveCollection collection = new ArchiveCollection();
+        BookCollection collection = new BookCollection();
 
         Set<Book> allBooks = collection.getAllBooks();
         assertNotNull(allBooks);

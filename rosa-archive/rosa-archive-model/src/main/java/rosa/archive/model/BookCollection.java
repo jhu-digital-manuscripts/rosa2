@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * A collection of books stored in the archive.
  */
-public class ArchiveCollection implements IsSerializable {
+public class BookCollection implements IsSerializable {
 
     private HashMap<String, Book> books;
     private ArrayList<String> languages;
@@ -20,7 +20,7 @@ public class ArchiveCollection implements IsSerializable {
     private IllustrationTitles illustrationTitles;
     private NarrativeSections narrativeSections;
 
-    public ArchiveCollection() {
+    public BookCollection() {
         this.books = new HashMap<>();
         this.languages = new ArrayList<>();
     }
@@ -117,9 +117,9 @@ public class ArchiveCollection implements IsSerializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof ArchiveCollection)) return false;
+        if (!(o instanceof BookCollection)) return false;
 
-        ArchiveCollection that = (ArchiveCollection) o;
+        BookCollection that = (BookCollection) o;
 
         if (books != null ? !books.equals(that.books) : that.books != null) return false;
         if (characterNames != null ? !characterNames.equals(that.characterNames) : that.characterNames != null)
@@ -145,7 +145,7 @@ public class ArchiveCollection implements IsSerializable {
 
     @Override
     public String toString() {
-        return "ArchiveCollection{" +
+        return "BookCollection{" +
                 "books=" + books +
                 ", languages=" + languages +
                 ", characterNames=" + characterNames +
