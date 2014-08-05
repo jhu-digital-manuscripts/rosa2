@@ -18,7 +18,7 @@ public class IllustrationTitles implements IsSerializable {
         this.data = new HashMap<>();
     }
 
-    public void setData(HashMap<String, String> data) {
+    public void setData(Map<String, String> data) {
         this.data = data;
     }
 
