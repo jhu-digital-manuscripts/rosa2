@@ -50,6 +50,16 @@ public class CharacterName implements IsSerializable {
         return nameSet;
     }
 
+    /**
+     * Add a name for a language. If a name already exists for the specified language, the
+     * new name will overwrite the old name.
+     *
+     * @param name
+     *          the character's name
+     * @param language
+     *          the language that the name is in
+     * @throws java.lang.NullPointerException thrown if language is NULL
+     */
     public void addName(String name, String language) {
         names.put(language.trim().toLowerCase(), name);
     }

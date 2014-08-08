@@ -42,8 +42,20 @@ public class CharacterNames implements IsSerializable {
         return namesInLanguage;
     }
 
+    /**
+     * Get the name of a character in a specific language. If the character name's ID
+     * does not exist, or the character name does not exist in the specified language,
+     * NULL will be returned.
+     *
+     * @param id
+     *          the CharacterName id
+     * @param language
+     *          language code
+     * @return
+     *          the name of a character in the desired language or NULL if not available.
+     */
     public String getNameInLanguage(String id, String language) {
-        return names.get(id).getNameInLanguage(language);
+        return names.get(id) == null ? null : names.get(id).getNameInLanguage(language);
     }
 
     public Set<String> getAllCharacterIds() {

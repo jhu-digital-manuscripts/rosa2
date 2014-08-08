@@ -57,8 +57,10 @@ public class BookStructure implements Iterable<StructurePage>, IsSerializable {
     }
 
     /**
+     * Get a list of columns of text in the order in which they appear.
+     *
      * @return
-     *          a list of all columns of text in reading order
+     *          a list of all columns
      */
     public List<StructureColumn> columns() {
         List<StructureColumn> columns = new ArrayList<>();
