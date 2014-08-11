@@ -16,11 +16,11 @@ public class Book implements IsSerializable {
     /**
      * High resolution images of the pages of this book.
      */
-    private List<BookImage> images;
+    private ImageList images;
     /**
      * High resolution images of the pages of this book after cropping.
      */
-    private List<BookImage> croppedImages;
+    private ImageList croppedImages;
     /**
      * Information about the cropping of the original images.
      */
@@ -35,15 +35,10 @@ public class Book implements IsSerializable {
 
     private BookStructure bookStructure;
     private IllustrationTagging illustrationTagging;
-    private List<BookScene> manualNarrativeTagging;
-    private List<BookScene> automaticNarrativeTagging;
+    private NarrativeTagging manualNarrativeTagging;
+    private NarrativeTagging automaticNarrativeTagging;
 
-    public Book() {
-        this.images = new ArrayList<>();
-        this.croppedImages = new ArrayList<>();
-        this.manualNarrativeTagging = new ArrayList<>();
-        this.automaticNarrativeTagging = new ArrayList<>();
-    }
+    public Book() {  }
 
     public String getId() {
         return id;
@@ -53,19 +48,19 @@ public class Book implements IsSerializable {
         this.id = id;
     }
 
-    public List<BookImage> getImages() {
+    public ImageList getImages() {
         return images;
     }
 
-    public void setImages(List<BookImage> images) {
+    public void setImages(ImageList images) {
         this.images = images;
     }
 
-    public List<BookImage> getCroppedImages() {
+    public ImageList getCroppedImages() {
         return croppedImages;
     }
 
-    public void setCroppedImages(List<BookImage> croppedImages) {
+    public void setCroppedImages(ImageList croppedImages) {
         this.croppedImages = croppedImages;
     }
 
@@ -125,19 +120,19 @@ public class Book implements IsSerializable {
         this.illustrationTagging = illustrationTagging;
     }
 
-    public List<BookScene> getManualNarrativeTagging() {
+    public NarrativeTagging getManualNarrativeTagging() {
         return manualNarrativeTagging;
     }
 
-    public void setManualNarrativeTagging(List<BookScene> manualNarrativeTagging) {
+    public void setManualNarrativeTagging(NarrativeTagging manualNarrativeTagging) {
         this.manualNarrativeTagging = manualNarrativeTagging;
     }
 
-    public List<BookScene> getAutomaticNarrativeTagging() {
+    public NarrativeTagging getAutomaticNarrativeTagging() {
         return automaticNarrativeTagging;
     }
 
-    public void setAutomaticNarrativeTagging(List<BookScene> automaticNarrativeTagging) {
+    public void setAutomaticNarrativeTagging(NarrativeTagging automaticNarrativeTagging) {
         this.automaticNarrativeTagging = automaticNarrativeTagging;
     }
 

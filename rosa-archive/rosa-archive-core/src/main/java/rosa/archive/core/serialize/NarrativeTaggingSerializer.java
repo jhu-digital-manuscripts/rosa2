@@ -8,7 +8,7 @@ import java.io.OutputStream;
 /**
  *
  */
-public class BookScenesSerializer implements Serializer<BookScene> {
+public class NarrativeTaggingSerializer implements Serializer<BookScene> {
     @Override
     public BookScene read(InputStream is) {
         return null;
