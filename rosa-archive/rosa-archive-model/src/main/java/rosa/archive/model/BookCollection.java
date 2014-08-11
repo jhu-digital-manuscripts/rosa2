@@ -20,6 +20,7 @@ public class BookCollection implements IsSerializable {
     private CharacterNames characterNames;
     private IllustrationTitles illustrationTitles;
     private NarrativeSections narrativeSections;
+    private MissingList missing;
 
     public BookCollection() {  }
 
@@ -29,6 +30,14 @@ public class BookCollection implements IsSerializable {
      */
     public String[] books() {
         return books;
+    }
+
+    public MissingList getMissing() {
+        return missing;
+    }
+
+    public void setMissing(MissingList missing) {
+        this.missing = missing;
     }
 
     public void setBooks(String[] books) {

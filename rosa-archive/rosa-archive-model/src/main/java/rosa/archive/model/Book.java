@@ -38,6 +38,8 @@ public class Book implements IsSerializable {
     private NarrativeTagging manualNarrativeTagging;
     private NarrativeTagging automaticNarrativeTagging;
 
+    // TODO permissions and transcription!!
+
     public Book() {  }
 
     public String getId() {
