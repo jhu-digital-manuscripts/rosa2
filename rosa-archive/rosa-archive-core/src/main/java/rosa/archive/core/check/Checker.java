@@ -5,7 +5,7 @@ package rosa.archive.core.check;
  *
  * @see rosa.archive.core.check.DataChecker
  */
-public interface Checker {
+public interface Checker<T> {
 
     /**
      * Checks the bit integrity of an object that has been persisted in the archive. The
@@ -14,13 +14,13 @@ public interface Checker {
      * the data in an object is, on the bit level, exactly the data that is stored in the
      * archive. For a check of the data's structure, use <code>checkContent(obj)</code>.
      *
-     * @param o
+     * @param t
      *          object to check
      * @throws java.lang.ClassCastException
      * @return
      *          TRUE if the objects bit values validate, FALSE if object contains bit errors
      */
-    boolean checkBits(Object o);
+    boolean checkBits(T t);
 
     /**
      * Checks the data consistency of a data model object. This method does not guarantee a bit
@@ -32,12 +32,12 @@ public interface Checker {
      * and looks right. To check if the data is what you expect on a bit level, use
      * <code>checkBits(obj)</code>.
      *
-     * @param o
+     * @param t
      *          object to check
      * @throws java.lang.ClassCastException
      * @return
      *          TRUE if content of object is consistent with data model and persistent data store
      */
-    boolean checkContent(Object o);
+    boolean checkContent(T t);
 
 }

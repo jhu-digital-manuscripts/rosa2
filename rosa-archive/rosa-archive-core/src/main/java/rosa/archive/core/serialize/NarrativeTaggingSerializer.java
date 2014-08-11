@@ -4,18 +4,20 @@ import rosa.archive.model.BookScene;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.List;
 
 /**
  *
  */
-public class NarrativeTaggingSerializer implements Serializer<BookScene> {
+public class NarrativeTaggingSerializer implements Serializer<List<BookScene>> {
+
     @Override
-    public BookScene read(InputStream is) {
+    public List<BookScene> read(InputStream is) {
         return null;
     }
 
     @Override
-    public void write(BookScene object, OutputStream out) {
+    public void write(List<BookScene> object, OutputStream out) {
 
     }
 }
