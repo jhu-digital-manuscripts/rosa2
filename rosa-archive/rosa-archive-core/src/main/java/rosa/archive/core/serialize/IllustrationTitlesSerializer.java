@@ -1,21 +1,57 @@
 package rosa.archive.core.serialize;
 
+import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.IllustrationTitles;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  *
  */
 public class IllustrationTitlesSerializer implements Serializer<IllustrationTitles> {
-    @Override
-    public IllustrationTitles read(InputStream is) {
-        return null;
+
+    private enum Column {
+        ID, TITLE
     }
 
     @Override
-    public void write(IllustrationTitles object, OutputStream out) {
+    public IllustrationTitles read(InputStream is) throws IOException{
+
+        IllustrationTitles titles = new IllustrationTitles();
+        List<String> errors = new ArrayList<>();
+
+        try (InputStreamReader reader = new InputStreamReader(is)) {
+
+            CSVSpreadSheet data = new CSVSpreadSheet(reader, 2, 2, errors);
+            Map<String, String> dataMap = new HashMap<>();
+
+            for (int row = 1; row < data.size(); row++) {
+                String id = data.get(row, Column.ID.ordinal());
+                String title = data.get(row, Column.TITLE.ordinal());
+
+                if (dataMap.containsKey(id)) {
+                    // TODO log this...?
+                    errors.add("ID [" + id + "] already exists.");
+                }
+
+                dataMap.put(id, title);
+            }
+
+            titles.setData(dataMap);
+        }
+
+        return titles;
+    }
+
+    @Override
+    public void write(IllustrationTitles object, OutputStream out) throws IOException{
 
     }
 }

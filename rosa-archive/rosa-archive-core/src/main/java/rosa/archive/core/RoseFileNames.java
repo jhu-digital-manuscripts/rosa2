@@ -25,4 +25,12 @@ public interface RoseFileNames {
     String BNF_FILEMAP = ".bnf.filemap.csv";
     String BNF_FOLIATION = ".bnf.foliation.xml";
     String BNF_MD5SUM = ".bnf.MD5SUM";
+
+    // Images
+    String IMG_FRONTCOVER = ".binding.frontcover.tif";
+    String IMG_BACKCOVER = ".binding.backcover.tif";
+    String ING_FRONTPASTEDOWN = ".frontmatter.pastedown.tif";
+    String IMG_ENDPASTEDOWN = ".endmatter.pastedown.tif";
+    String IMG_FRONT_FLYLEAF = ".frontmatter.flyleaf.";
+    String IMG_END_FLYLEAF = ".endmatter.flyleaf.";
 }
