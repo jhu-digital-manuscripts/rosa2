@@ -1,21 +1,62 @@
 package rosa.archive.core.serialize;
 
+import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.CharacterNames;
+import rosa.archive.model.CharacterName;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  *
  */
 public class CharacterNamesSerializer implements Serializer<CharacterNames> {
-    @Override
-    public CharacterNames read(InputStream is) {
-        return null;
+    private static final int MIN_COLS = 1;
+    private static final int MAX_COLS = 200;
+
+    private enum Column {
+        ID, SITE_NAME, FRENCH_NAME, ENGLISH_NAME
     }
 
     @Override
-    public void write(CharacterNames object, OutputStream out) {
+    public CharacterNames read(InputStream is) throws IOException{
+        CharacterNames names = new CharacterNames();
+        List<String> errors = new ArrayList<>();
 
+        try (InputStreamReader reader = new InputStreamReader(is)) {
+
+            CSVSpreadSheet table = new CSVSpreadSheet(reader, MIN_COLS, MAX_COLS, errors);
+            List<String> headers = new ArrayList<>(Arrays.asList(table.row(0)));
+
+            // Navigate the rows, skip the 1st row, which contains the headers
+            for (int i = 1; i < table.size(); i++) {
+                CharacterName name = new CharacterName();
+                String[] row = table.row(i);
+
+                name.setId(row[Column.ID.ordinal()]);
+                // Navigate the columns in a row, skip 1st column which is the row ID
+                for (int j = 1; j < row.length; j++) {
+                    name.addName(row[j], headers.get(j));
+                }
+
+                if (names.getAllCharacterIds().contains(name.getId())) {
+                    errors.add("ID [" + name.getId() + "] already exists.");
+                }
+                names.addCharacterName(name);
+            }
+
+        }
+
+        return names;
+    }
+
+    @Override
+    public void write(CharacterNames object, OutputStream out) throws IOException {
+        throw new UnsupportedOperationException("Not implemented yet!");
     }
 }

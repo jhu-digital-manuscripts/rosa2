@@ -51,7 +51,7 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
     }
 
     @Override
-    public void write(IllustrationTitles object, OutputStream out) throws IOException{
-
+    public void write(IllustrationTitles object, OutputStream out) throws IOException {
+        throw new UnsupportedOperationException("Write not implemented yet!");
     }
 }

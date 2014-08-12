@@ -52,6 +52,13 @@ public class CSVSpreadSheet {
 		return table[row][col];
 	}
 
+    public String[] row(int index) {
+        if (index > table.length) {
+            return new String[] {};
+        }
+        return table[index];
+    }
+
 	public String set(int row, int col, String value) {
 		// Check for ragged rows
 		if (col >= table[row].length) {
