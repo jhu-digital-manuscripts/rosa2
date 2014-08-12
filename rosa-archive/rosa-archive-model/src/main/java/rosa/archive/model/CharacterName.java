@@ -33,7 +33,7 @@ public class CharacterName implements IsSerializable {
     }
 
     public String getNameInLanguage(String language) {
-        return names.get(language);
+        return names.get(language.toLowerCase());
     }
 
     /**
