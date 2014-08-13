@@ -33,4 +33,6 @@ public interface RoseFileNames {
     String IMG_ENDPASTEDOWN = ".endmatter.pastedown.tif";
     String IMG_FRONT_FLYLEAF = ".frontmatter.flyleaf.";
     String IMG_END_FLYLEAF = ".endmatter.flyleaf.";
+
+    String MISSING_PREFIX = "*";
 }

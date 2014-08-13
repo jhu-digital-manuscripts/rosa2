@@ -23,7 +23,7 @@ public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
         List<String> lines = IOUtils.readLines(is);
         for (String line : lines) {
             // Split on space
-            String[] parts = line.split(DELIMITER);
+            String[] parts = line.split("\\s+");
 
             if (parts.length != 2) {
                 // TODO log this as an error
