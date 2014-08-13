@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
 import org.apache.commons.io.IOUtils;
+import rosa.archive.core.RoseConstants;
 import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.HashAlgorithm;
@@ -20,7 +21,7 @@ public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
     public ChecksumInfo read(InputStream is) throws IOException {
         ChecksumInfo info = new ChecksumInfo();
 
-        List<String> lines = IOUtils.readLines(is);
+        List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
         for (String line : lines) {
             // Split on space
             String[] parts = line.split("\\s+");

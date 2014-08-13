@@ -1,7 +1,7 @@
 package rosa.archive.core.serialize;
 
 import org.apache.commons.io.IOUtils;
-import rosa.archive.core.RoseFileNames;
+import rosa.archive.core.RoseConstants;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
@@ -31,10 +31,10 @@ public class ImageListSerializer implements Serializer<ImageList> {
             // Check for the "missing image" prefix.
             // If present, remove the prefix from name before setting ID.
             String id = csvRow[0];
-            boolean missing = id.startsWith(RoseFileNames.MISSING_PREFIX);
+            boolean missing = id.startsWith(RoseConstants.MISSING_PREFIX);
 
             if (missing) {
-                id = id.substring(RoseFileNames.MISSING_PREFIX.length());
+                id = id.substring(RoseConstants.MISSING_PREFIX.length());
             }
 
             image.setId(id);

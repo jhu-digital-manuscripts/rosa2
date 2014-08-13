@@ -1,5 +1,6 @@
 package rosa.archive.core.serialize;
 
+import rosa.archive.core.RoseConstants;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.IllustrationTitles;
 
@@ -27,7 +28,7 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
         IllustrationTitles titles = new IllustrationTitles();
         List<String> errors = new ArrayList<>();
 
-        try (InputStreamReader reader = new InputStreamReader(is)) {
+        try (InputStreamReader reader = new InputStreamReader(is, RoseConstants.CHARSET)) {
 
             CSVSpreadSheet data = new CSVSpreadSheet(reader, 2, 2, errors);
             Map<String, String> dataMap = new HashMap<>();

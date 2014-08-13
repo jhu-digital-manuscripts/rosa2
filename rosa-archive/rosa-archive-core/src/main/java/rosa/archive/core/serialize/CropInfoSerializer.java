@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
 import org.apache.commons.io.IOUtils;
+import rosa.archive.core.RoseConstants;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
 
@@ -17,7 +18,7 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
     public CropInfo read(InputStream is) throws IOException {
         CropInfo info = new CropInfo();
 
-        List<String> lines = IOUtils.readLines(is);
+        List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
         for (String line : lines) {
 
             String[] parts = line.split("\\s+");

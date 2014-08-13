@@ -2,7 +2,7 @@ package rosa.archive.core.serialize;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.core.RoseFileNames;
+import rosa.archive.core.RoseConstants;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
 
@@ -29,7 +29,7 @@ public class CropInfoSerializerTest {
     @Test
     public void readTest() throws IOException {
         final String ID = "Walters143";
-        final String testFile = ID + "/" + ID + RoseFileNames.CROP;
+        final String testFile = ID + "/" + ID + RoseConstants.CROP;
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
             CropInfo info = serializer.read(in);

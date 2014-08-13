@@ -1,9 +1,11 @@
 package rosa.archive.core;
 
 /**
- * File name constants for RRDL archive.
+ * File name constants for RRDL archive. TODO make this stuff configurable!!
  */
-public interface RoseFileNames {
+public interface RoseConstants {
+    String CHARSET = "UTF-8";
+
     // Collection level (file names)
     String NARRATIVE_SECTIONS = "narrative_sections.csv";
     String CHARACTER_NAMES = "character_names.csv";

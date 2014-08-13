@@ -1,5 +1,6 @@
 package rosa.archive.core.serialize;
 
+import rosa.archive.core.RoseConstants;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.CharacterName;
@@ -28,7 +29,7 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
         CharacterNames names = new CharacterNames();
         List<String> errors = new ArrayList<>();
 
-        try (InputStreamReader reader = new InputStreamReader(is)) {
+        try (InputStreamReader reader = new InputStreamReader(is, RoseConstants.CHARSET)) {
 
             CSVSpreadSheet table = new CSVSpreadSheet(reader, MIN_COLS, MAX_COLS, errors);
             List<String> headers = new ArrayList<>(Arrays.asList(table.row(0)));
