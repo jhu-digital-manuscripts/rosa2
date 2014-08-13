@@ -16,6 +16,7 @@ public class BookScene implements IsSerializable {
     private int endLineOffset;
     private int startCriticalEdition;
     private String startTranscription;
+    private boolean correct;
 
     public BookScene() {  }
 
@@ -91,23 +92,31 @@ public class BookScene implements IsSerializable {
         this.startTranscription = startTranscription;
     }
 
+    public boolean isCorrect() {
+        return correct;
+    }
+
+    public void setCorrect(boolean correct) {
+        this.correct = correct;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof BookScene)) return false;
 
-        BookScene bookScene = (BookScene) o;
+        BookScene scene = (BookScene) o;
 
-        if (endLineOffset != bookScene.endLineOffset) return false;
-        if (startCriticalEdition != bookScene.startCriticalEdition) return false;
-        if (startLineOffset != bookScene.startLineOffset) return false;
-        if (endPage != null ? !endPage.equals(bookScene.endPage) : bookScene.endPage != null) return false;
-        if (endPageCol != null ? !endPageCol.equals(bookScene.endPageCol) : bookScene.endPageCol != null) return false;
-        if (id != null ? !id.equals(bookScene.id) : bookScene.id != null) return false;
-        if (startPage != null ? !startPage.equals(bookScene.startPage) : bookScene.startPage != null) return false;
-        if (startPageCol != null ? !startPageCol.equals(bookScene.startPageCol) : bookScene.startPageCol != null)
-            return false;
-        if (startTranscription != null ? !startTranscription.equals(bookScene.startTranscription) : bookScene.startTranscription != null)
+        if (correct != scene.correct) return false;
+        if (endLineOffset != scene.endLineOffset) return false;
+        if (startCriticalEdition != scene.startCriticalEdition) return false;
+        if (startLineOffset != scene.startLineOffset) return false;
+        if (endPage != null ? !endPage.equals(scene.endPage) : scene.endPage != null) return false;
+        if (endPageCol != null ? !endPageCol.equals(scene.endPageCol) : scene.endPageCol != null) return false;
+        if (id != null ? !id.equals(scene.id) : scene.id != null) return false;
+        if (startPage != null ? !startPage.equals(scene.startPage) : scene.startPage != null) return false;
+        if (startPageCol != null ? !startPageCol.equals(scene.startPageCol) : scene.startPageCol != null) return false;
+        if (startTranscription != null ? !startTranscription.equals(scene.startTranscription) : scene.startTranscription != null)
             return false;
 
         return true;
@@ -124,6 +133,7 @@ public class BookScene implements IsSerializable {
         result = 31 * result + endLineOffset;
         result = 31 * result + startCriticalEdition;
         result = 31 * result + (startTranscription != null ? startTranscription.hashCode() : 0);
+        result = 31 * result + (correct ? 1 : 0);
         return result;
     }
 
@@ -139,6 +149,7 @@ public class BookScene implements IsSerializable {
                 ", endLineOffset=" + endLineOffset +
                 ", startCriticalEdition=" + startCriticalEdition +
                 ", startTranscription='" + startTranscription + '\'' +
+                ", correct=" + correct +
                 '}';
     }
 }
