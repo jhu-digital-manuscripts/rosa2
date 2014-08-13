@@ -134,7 +134,7 @@ public class FileStore implements Store {
             DirectoryStream<Path> directoryStream = Files.newDirectoryStream(directory);
             for (Path child : directoryStream) {
                 if (Files.isDirectory(child)) {
-                    children.add(child.toString());
+                    children.add(child.getFileName().toString());
                 }
             }
 

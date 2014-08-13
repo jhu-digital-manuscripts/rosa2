@@ -18,7 +18,7 @@ import static org.mockito.Mockito.mock;
  * @see rosa.archive.core.serialize.ChecksumInfoSerializer
  */
 public class ChecksumInfoSerializerTest {
-    private static final String testFile = "Walters143/Walters143.SHA1SUM";
+    private static final String testFile = "data/Walters143/Walters143.SHA1SUM";
 
     private ChecksumInfoSerializer serializer;
 

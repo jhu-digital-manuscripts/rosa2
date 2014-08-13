@@ -24,13 +24,13 @@ public class CSVSpreadSheetTest {
     @Before
     public void setup() throws Exception {
         try (Reader input = new InputStreamReader(
-                getClass().getClassLoader().getResourceAsStream("narrative_sections.csv"))) {
+                getClass().getClassLoader().getResourceAsStream("data/narrative_sections.csv"))) {
 //            Reader input = new InputStreamReader(
 //                    getClass().getClassLoader().getResourceAsStream("narrative_sections.csv")
 //            );
             List<String> errors = new ArrayList<>();
 
-            URL url = getClass().getClassLoader().getResource("narrative_sections.csv");
+            URL url = getClass().getClassLoader().getResource("data/narrative_sections.csv");
             assertNotNull(url);
             Path path = Paths.get(url.toURI());
             assertNotNull(path);

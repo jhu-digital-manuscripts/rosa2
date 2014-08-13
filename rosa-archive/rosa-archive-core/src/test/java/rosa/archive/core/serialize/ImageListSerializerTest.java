@@ -30,7 +30,7 @@ public class ImageListSerializerTest {
 
     @Test
     public void readTest() throws IOException {
-        final String testFile = "Walters143/Walters143.images.csv";
+        final String testFile = "data/Walters143/Walters143.images.csv";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
 

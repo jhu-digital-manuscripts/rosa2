@@ -17,7 +17,7 @@ import static org.mockito.Mockito.mock;
  * @see rosa.archive.core.serialize.CharacterNamesSerializer
  */
 public class CharacterNamesSerializerTest {
-    private static final String testFile = "character_names.csv";
+    private static final String testFile = "data/character_names.csv";
 
     private CharacterNamesSerializer serializer;
 

@@ -30,7 +30,7 @@ public class NarrativeTaggingSerializerTest {
 
     @Test
     public void readCSVTest() throws IOException {
-        final String testFile = "LudwigXV7/LudwigXV7.nartag.csv";
+        final String testFile = "data/LudwigXV7/LudwigXV7.nartag.csv";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
             NarrativeTagging tagging = serializer.read(in);
@@ -54,7 +54,7 @@ public class NarrativeTaggingSerializerTest {
 
     @Test
     public void readTxtTest() throws IOException {
-        final String testFile = "Ferrell/Ferrell.nartag.txt";
+        final String testFile = "data/Ferrell/Ferrell.nartag.txt";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
             NarrativeTagging tagging = serializer.read(in);
