@@ -14,7 +14,7 @@ public class NarrativeScene implements IsSerializable {
     private int rel_line_start;
     private int rel_line_end;
 
-    private NarrativeScene() {  }
+    public NarrativeScene() {  }
 
     public String getId() {
         return id;
