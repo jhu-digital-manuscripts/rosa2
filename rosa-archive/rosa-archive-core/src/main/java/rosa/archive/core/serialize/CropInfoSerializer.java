@@ -11,7 +11,7 @@ import java.io.OutputStream;
 import java.util.List;
 
 /**
- *
+ * @see rosa.archive.model.CropInfo
  */
 public class CropInfoSerializer implements Serializer<CropInfo> {
     @Override

@@ -15,7 +15,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *
+ * @see rosa.archive.model.NarrativeTagging
  */
 public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> {
 

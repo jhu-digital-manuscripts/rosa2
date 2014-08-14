@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
+ * @see rosa.archive.model.IllustrationTitles
  */
 public class IllustrationTitlesSerializer implements Serializer<IllustrationTitles> {
 

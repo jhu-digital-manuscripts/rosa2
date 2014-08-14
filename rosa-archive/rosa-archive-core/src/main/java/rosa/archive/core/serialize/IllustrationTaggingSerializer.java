@@ -13,6 +13,8 @@ import java.util.List;
 
 /**
  * Serializes image tagging data.
+ *
+ * @see rosa.archive.model.IllustrationTagging
  */
 public class IllustrationTaggingSerializer implements Serializer<IllustrationTagging> {
     @Override

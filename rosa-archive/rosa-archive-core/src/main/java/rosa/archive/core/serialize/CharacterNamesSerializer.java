@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- *
+ * @see rosa.archive.model.CharacterNames
  */
 public class CharacterNamesSerializer implements Serializer<CharacterNames> {
     private static final int MIN_COLS = 1;

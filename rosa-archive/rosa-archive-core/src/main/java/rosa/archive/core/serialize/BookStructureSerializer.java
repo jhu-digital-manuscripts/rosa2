@@ -21,6 +21,8 @@ import java.util.List;
 
 /**
  * Associated with Reduced Tagging.
+ *
+ * @see rosa.archive.model.BookStructure
  */
 public class BookStructureSerializer implements Serializer<BookStructure> {
     @Override

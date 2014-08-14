@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- *
+ * @see rosa.archive.model.NarrativeSections
  */
 public class NarrativeSectionsSerializer implements Serializer<NarrativeSections> {
 
@@ -56,6 +56,15 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
         throw new UnsupportedOperationException("Not implemented");
     }
 
+    /**
+     * Check the format of data to make sure it represents a numberical range, ex: 5-10.
+     * If it is determined that the data does not represent a range, it is reported in
+     * {@param errors}.
+     *
+     * @param data a single cell from the CSV
+     * @param lineInData the row number that the data is in
+     * @param errors container to hold error messages
+     */
     private void checkNumberRange(String data, int lineInData, List<String> errors) {
         if (StringUtils.isBlank(data) || data.equals("a-j")) {
             return;
@@ -66,6 +75,12 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
         }
     }
 
+    /**
+     * Find the start and end of a range.
+     *
+     * @param data data from CSV that represents a numerical range
+     * @return integer array with start and end numbers
+     */
     private int[] getRangeValue(String data) {
         if (StringUtils.isBlank(data)) {
             return null;
@@ -88,6 +103,12 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
         }
     }
 
+    /**
+     * Create a {@link rosa.archive.model.NarrativeScene} from a row in the CSV.
+     *
+     * @param row row from CSV data
+     * @return the scene
+     */
     private NarrativeScene createScene(String[] row) {
         int[] lecoy = getRangeValue(row[2]);
         int[] lines = getRangeValue(row[1]);
