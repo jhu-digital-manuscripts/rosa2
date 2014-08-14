@@ -14,6 +14,13 @@ public class StructurePage implements IsSerializable {
 
     public StructurePage() {  }
 
+    public StructurePage(String name, int linesPerColumn) {
+        this.id = name;
+        this.name = name;
+        this.recto = new StructurePageSide(name + "r", linesPerColumn);
+        this.verso = new StructurePageSide(name + "v", linesPerColumn);
+    }
+
     public String getId() {
         return id;
     }

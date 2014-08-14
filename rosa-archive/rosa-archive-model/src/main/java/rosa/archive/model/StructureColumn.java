@@ -1,6 +1,7 @@
 package rosa.archive.model;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
+import javafx.geometry.Side;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,12 +14,19 @@ public class StructureColumn implements IsSerializable {
     private List<Item> items;
     private int firstLineCriticalEdition;
     private String firstLineTranscribed;
-    private StructurePageSide parentSide;
+    private String parentSide;
     private int totalLines;
     private char columnLetter;
 
     public StructureColumn() {
         this.items = new ArrayList<>();
+    }
+
+    public StructureColumn(String parentSide, int totalLines, char columnLetter) {
+        this();
+        this.parentSide = parentSide;
+        this.totalLines = totalLines;
+        this.columnLetter = columnLetter;
     }
 
     public List<Item> getItems() {
@@ -45,11 +53,11 @@ public class StructureColumn implements IsSerializable {
         this.firstLineTranscribed = firstLineTranscribed;
     }
 
-    public StructurePageSide getParentSide() {
+    public String getParentSide() {
         return parentSide;
     }
 
-    public void setParentSide(StructurePageSide parentSide) {
+    public void setParentSide(String parentSide) {
         this.parentSide = parentSide;
     }
 
