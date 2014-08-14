@@ -11,6 +11,7 @@ public class Illustration implements IsSerializable {
     private String id;
     private String page;
     private String textualElement;
+    private String initials;
     private String costume;
     private String object;
     private String landscape;
@@ -43,6 +44,14 @@ public class Illustration implements IsSerializable {
 
     public void setTextualElement(String textualElement) {
         this.textualElement = textualElement;
+    }
+
+    public String getInitials() {
+        return initials;
+    }
+
+    public void setInitials(String initials) {
+        this.initials = initials;
     }
 
     public String getCostume() {
@@ -112,9 +121,11 @@ public class Illustration implements IsSerializable {
         if (!Arrays.equals(characters, that.characters)) return false;
         if (costume != null ? !costume.equals(that.costume) : that.costume != null) return false;
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (initials != null ? !initials.equals(that.initials) : that.initials != null) return false;
         if (landscape != null ? !landscape.equals(that.landscape) : that.landscape != null) return false;
         if (object != null ? !object.equals(that.object) : that.object != null) return false;
         if (other != null ? !other.equals(that.other) : that.other != null) return false;
+        if (page != null ? !page.equals(that.page) : that.page != null) return false;
         if (textualElement != null ? !textualElement.equals(that.textualElement) : that.textualElement != null)
             return false;
         if (!Arrays.equals(titles, that.titles)) return false;
@@ -125,7 +136,9 @@ public class Illustration implements IsSerializable {
     @Override
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (page != null ? page.hashCode() : 0);
         result = 31 * result + (textualElement != null ? textualElement.hashCode() : 0);
+        result = 31 * result + (initials != null ? initials.hashCode() : 0);
         result = 31 * result + (costume != null ? costume.hashCode() : 0);
         result = 31 * result + (object != null ? object.hashCode() : 0);
         result = 31 * result + (landscape != null ? landscape.hashCode() : 0);
@@ -142,6 +155,7 @@ public class Illustration implements IsSerializable {
                 "id='" + id + '\'' +
                 ", textualElement='" + textualElement + '\'' +
                 ", costume='" + costume + '\'' +
+                ", initials='" + initials + '\'' +
                 ", object='" + object + '\'' +
                 ", landscape='" + landscape + '\'' +
                 ", architecture='" + architecture + '\'' +
