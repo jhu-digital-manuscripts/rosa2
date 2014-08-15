@@ -41,11 +41,11 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
         for (String line : inputLine) {
             line = line.trim();
             n++;
+
             if (line.length() == 0 || line.startsWith("#")) {
+                // The line is blank or a comment. Ignore.
                 continue;
             }
-
-            // System.err.println(n + " " + line);
 
             String normalizedLine = line;
             if (line.startsWith("[") && line.endsWith("]")) {
@@ -60,8 +60,7 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
             }
 
             try {
-                if (parts[0].equalsIgnoreCase("rubric")
-                        || parts[0].equalsIgnoreCase("r")) {
+                if (parts[0].equalsIgnoreCase("rubric") || parts[0].equalsIgnoreCase("r")) {
                     if (parts.length < 3) {
                         errors.add("Line " + n + ": " + "Rubric missing lines and text: " + line);
                         continue;
@@ -78,8 +77,7 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
 
                         items.add(rubric);
                     }
-                } else if (parts[0].equalsIgnoreCase("heading")
-                        || parts[0].equalsIgnoreCase("h")) {
+                } else if (parts[0].equalsIgnoreCase("heading") || parts[0].equalsIgnoreCase("h")) {
                     if (parts.length < 3) {
                         errors.add("Line " + n + ": " + "Heading missing lines and text: " + line);
                         continue;
@@ -112,8 +110,7 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
 
                 } else if (parts[0].equalsIgnoreCase("columnlines")) {
                     if (parts.length != 2) {
-                        errors.add("Line " + n + ": "
-                                + "Column without lines: " + line);
+                        errors.add("Line " + n + ": " + "Column without lines: " + line);
                         continue;
                     }
 
@@ -185,7 +182,6 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
                     }
 
                     String sidename = parts[1].toLowerCase();
-                    String c = parts[2].toLowerCase();
 
                     if (!sidename.endsWith("r") && !sidename.endsWith("v")) {
                         errors.add("Folio malformed: " + sidename);
@@ -193,7 +189,6 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
                     }
 
                     String leafname = sidename.substring(0, sidename.length() - 1);
-
                     StructurePage leaf = null;
 
                     for (StructurePage l : pages) {
@@ -215,6 +210,8 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
                     } else {
                         side = leaf.getVerso();
                     }
+
+                    String c = parts[2].toLowerCase();
 
                     if (c.equals("a") || c.equals("c")) {
                         col = side.columns().get(0);
@@ -241,9 +238,7 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
         }
 
         // Insert missing folios. Only works for ms.
-
-        if (pages.size() > 0
-                && !pages.get(0).getName().matches("\\d+")) {
+        if (pages.size() > 0 && !pages.get(0).getName().matches("\\d+")) {
             // Not a manuscript
             return null;
         }
