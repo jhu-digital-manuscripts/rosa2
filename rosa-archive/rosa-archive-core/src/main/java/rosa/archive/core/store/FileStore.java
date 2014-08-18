@@ -1,6 +1,5 @@
 package rosa.archive.core.store;
 
-import rosa.archive.core.builder.BookBuilder;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.check.Checker;
