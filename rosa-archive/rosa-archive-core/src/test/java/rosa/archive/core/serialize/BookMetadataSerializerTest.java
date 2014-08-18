@@ -1,7 +1,11 @@
 package rosa.archive.core.serialize;
 
-import org.junit.Before;
+import com.google.inject.Inject;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import rosa.archive.core.ArchiveCoreModule;
+import rosa.archive.core.GuiceJUnitRunner;
+import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.model.BookMetadata;
 
 import java.io.IOException;
@@ -15,21 +19,19 @@ import static org.mockito.Mockito.mock;
 /**
  * @see rosa.archive.core.serialize.BookMetadataSerializer
  */
+@RunWith(GuiceJUnitRunner.class)
+@GuiceModules({ArchiveCoreModule.class})
 public class BookMetadataSerializerTest {
 
-    private BookMetadataSerializer serializer;
-
-    @Before
-    public void setup() {
-        this.serializer = new BookMetadataSerializer();
-    }
+    @Inject
+    private Serializer<BookMetadata> serializer;
 
     @Test
     public void readTest() throws IOException {
         final String testFile = "data/Walters143/Walters143.description_en.xml";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            BookMetadata metadata = serializer.read(in);
+            BookMetadata metadata = (BookMetadata) serializer.read(in);
             assertNotNull(metadata);
 
             assertEquals("14th century", metadata.getDate());

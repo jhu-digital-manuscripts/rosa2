@@ -1,7 +1,11 @@
 package rosa.archive.core.serialize;
 
-import org.junit.Before;
+import com.google.inject.Inject;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import rosa.archive.core.ArchiveCoreModule;
+import rosa.archive.core.GuiceJUnitRunner;
+import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.core.RoseConstants;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
@@ -17,14 +21,12 @@ import static org.mockito.Mockito.mock;
 /**
  * @see rosa.archive.core.serialize.CropInfoSerializer
  */
+@RunWith(GuiceJUnitRunner.class)
+@GuiceModules({ArchiveCoreModule.class})
 public class CropInfoSerializerTest {
 
-    private CropInfoSerializer serializer;
-
-    @Before
-    public void setup() {
-        this.serializer = new CropInfoSerializer();
-    }
+    @Inject
+    private Serializer<CropInfo> serializer;
 
     @Test
     public void readTest() throws IOException {

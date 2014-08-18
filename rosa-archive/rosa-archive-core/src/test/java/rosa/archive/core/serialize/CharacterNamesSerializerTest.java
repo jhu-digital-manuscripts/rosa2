@@ -1,7 +1,11 @@
 package rosa.archive.core.serialize;
 
-import org.junit.Before;
+import com.google.inject.Inject;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import rosa.archive.core.ArchiveCoreModule;
+import rosa.archive.core.GuiceJUnitRunner;
+import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.model.CharacterNames;
 
 import java.io.IOException;
@@ -16,15 +20,13 @@ import static org.mockito.Mockito.mock;
 /**
  * @see rosa.archive.core.serialize.CharacterNamesSerializer
  */
+@RunWith(GuiceJUnitRunner.class)
+@GuiceModules({ArchiveCoreModule.class})
 public class CharacterNamesSerializerTest {
     private static final String testFile = "data/character_names.csv";
 
-    private CharacterNamesSerializer serializer;
-
-    @Before
-    public void setup() {
-        this.serializer = new CharacterNamesSerializer();
-    }
+    @Inject
+    private Serializer<CharacterNames> serializer;
 
     @Test
     public void readsFromFile() throws IOException {

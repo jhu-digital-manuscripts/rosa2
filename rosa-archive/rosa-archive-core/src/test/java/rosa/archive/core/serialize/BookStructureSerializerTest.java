@@ -1,7 +1,11 @@
 package rosa.archive.core.serialize;
 
-import org.junit.Before;
+import com.google.inject.Inject;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import rosa.archive.core.ArchiveCoreModule;
+import rosa.archive.core.GuiceJUnitRunner;
+import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.StructureColumn;
 import rosa.archive.model.StructurePage;
@@ -20,14 +24,12 @@ import static org.mockito.Mockito.mock;
  * @see rosa.archive.core.serialize.BookStructureSerializer
  * @see rosa.archive.model.BookStructure
  */
+@RunWith(GuiceJUnitRunner.class)
+@GuiceModules({ArchiveCoreModule.class})
 public class BookStructureSerializerTest {
 
-    private BookStructureSerializer serializer;
-
-    @Before
-    public void setup() {
-        this.serializer = new BookStructureSerializer();
-    }
+    @Inject
+    private Serializer<BookStructure> serializer;
 
     @Test
     public void readTest() throws IOException {
