@@ -87,13 +87,7 @@ public class FileStore implements Store {
 
 //        Serializer<Book> serializer = SerializerFactory.serializer(Book.class);
 //        return serializer.read(input);
-        return new BookBuilder("id")
-                .setBookMetadata(null)
-                .setBookStructure(null)
-                .setImages(null)
-                .setChecksumInfo(null)
-                .setContent(null)
-                .build();
+        return null;
     }
 
     @Override
