@@ -21,6 +21,9 @@ import java.util.List;
  * @see rosa.archive.model.BookMetadata
  */
 public class BookMetadataSerializer implements Serializer<BookMetadata> {
+
+    BookMetadataSerializer() {  }
+
     @Override
     public BookMetadata read(InputStream is) throws IOException {
 

@@ -16,6 +16,8 @@ import java.util.List;
  */
 public class ImageListSerializer implements Serializer<ImageList> {
 
+    public ImageListSerializer() {  }
+
     @Override
     public ImageList read(InputStream is) throws IOException {
         ImageList images = new ImageList();

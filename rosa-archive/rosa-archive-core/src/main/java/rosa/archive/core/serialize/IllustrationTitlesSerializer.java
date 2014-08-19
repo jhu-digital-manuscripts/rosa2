@@ -22,6 +22,8 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
         ID, TITLE
     }
 
+    public IllustrationTitlesSerializer() {  }
+
     @Override
     public IllustrationTitles read(InputStream is) throws IOException{
 

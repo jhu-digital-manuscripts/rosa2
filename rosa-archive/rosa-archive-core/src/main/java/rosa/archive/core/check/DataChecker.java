@@ -14,6 +14,13 @@ public class DataChecker implements Checker<Object> {
     @Inject
     private Checker<BookCollection> collectionChecker;
 
+    DataChecker() {  }
+
+    DataChecker(Checker<Book> bookChecker, Checker<BookCollection> collectionChecker) {
+        this.bookChecker = bookChecker;
+        this.collectionChecker = collectionChecker;
+    }
+
     @Override
     public boolean checkBits(Object o) {
 

@@ -17,6 +17,8 @@ import java.util.List;
 public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
     private static final String DELIMITER = "  ";
 
+    public ChecksumInfoSerializer() {  }
+
     @Override
     public ChecksumInfo read(InputStream is) throws IOException {
         ChecksumInfo info = new ChecksumInfo();

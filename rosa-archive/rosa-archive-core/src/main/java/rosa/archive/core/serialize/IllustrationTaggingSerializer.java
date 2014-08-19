@@ -17,6 +17,9 @@ import java.util.List;
  * @see rosa.archive.model.IllustrationTagging
  */
 public class IllustrationTaggingSerializer implements Serializer<IllustrationTagging> {
+
+    public IllustrationTaggingSerializer() {  }
+
     @Override
     public IllustrationTagging read(InputStream is) throws IOException{
         IllustrationTagging tagging = new IllustrationTagging();

@@ -28,12 +28,12 @@ public class FileStore implements Store {
     @Inject
     private Checker<Object> checker;
 
-    public FileStore() {
+    FileStore() {
         // TODO configure TOP
     }
 
     // Testing
-    public FileStore(String top, Checker<Object> checker) {
+    FileStore(String top, Checker<Object> checker) {
         this.top = Paths.get(top);
         this.checker = checker;
     }

@@ -24,6 +24,8 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
         ID, SITE_NAME, FRENCH_NAME, ENGLISH_NAME
     }
 
+    public CharacterNamesSerializer() {  }
+
     @Override
     public CharacterNames read(InputStream is) throws IOException{
         CharacterNames names = new CharacterNames();

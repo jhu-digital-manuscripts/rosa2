@@ -25,6 +25,9 @@ import java.util.List;
  * @see rosa.archive.model.BookStructure
  */
 public class BookStructureSerializer implements Serializer<BookStructure> {
+
+    public BookStructureSerializer() {  }
+
     @Override
     public BookStructure read(InputStream is) throws IOException {
         BookStructure structure = new BookStructure();

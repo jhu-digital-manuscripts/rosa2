@@ -19,6 +19,8 @@ import java.util.regex.Pattern;
  */
 public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> {
 
+    public NarrativeTaggingSerializer() {  }
+
     @Override
     public NarrativeTagging read(InputStream is) throws IOException {
 

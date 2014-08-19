@@ -1,42 +1,66 @@
 package rosa.archive.core.check;
 
-import com.google.inject.Inject;
-import jdk.nashorn.internal.ir.annotations.Ignore;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.GuiceJUnitRunner;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 /**
  * @see rosa.archive.core.check.DataChecker
  */
-@RunWith(GuiceJUnitRunner.class)
-@GuiceModules({ArchiveCoreModule.class})
 public class DataCheckerTest {
 
-    @Inject
     private Checker<Object> checker;
-    @Inject
+    @Mock
     private Checker<Book> bookChecker;
-    @Inject
+    @Mock
     private Checker<BookCollection> collectionChecker;
 
-    // Was used to test Guice DI
-    @Ignore
-    @Test
-    public void test() {
-        assertEquals(DataChecker.class, checker.getClass());
-        assertEquals(BookChecker.class, bookChecker.getClass());
-        assertEquals(BookCollectionChecker.class, collectionChecker.getClass());
+    private Book book;
+    private BookCollection collection;
 
-        System.out.println("Checker: " + checker.getClass().getSimpleName());
-        System.out.println("BookChecker: " + bookChecker.getClass().getSimpleName());
-        System.out.println("CollectionChecker: " + collectionChecker.getClass().getSimpleName());
+    @Before
+    public void setup() {
+        MockitoAnnotations.initMocks(this);
+
+        when(bookChecker.checkBits(any(Book.class))).thenReturn(false);
+        when(bookChecker.checkContent(any(Book.class))).thenReturn(false);
+        when(collectionChecker.checkBits(any(BookCollection.class))).thenReturn(false);
+        when(collectionChecker.checkContent(any(BookCollection.class))).thenReturn(false);
+
+        this.book = new Book();
+        this.collection = new BookCollection();
+        this.checker = new DataChecker(bookChecker, collectionChecker);
+    }
+
+    @Test
+    public void bookTest() {
+        assertFalse(checker.checkBits(book));
+        assertFalse(checker.checkContent(book));
+
+        verify(bookChecker).checkBits(book);
+        verify(bookChecker).checkContent(book);
+        verify(collectionChecker, never()).checkBits(collection);
+        verify(collectionChecker, never()).checkContent(collection);
+    }
+
+    @Test
+    public void collectionTest() {
+        assertFalse(checker.checkBits(collection));
+        assertFalse(checker.checkContent(collection));
+
+        verify(collectionChecker).checkBits(collection);
+        verify(collectionChecker).checkContent(collection);
+        verify(bookChecker, never()).checkBits(book);
+        verify(bookChecker, never()).checkContent(book);
     }
 
 }
