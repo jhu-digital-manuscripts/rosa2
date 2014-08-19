@@ -1,13 +1,9 @@
 package rosa.archive.core.store;
 
-import rosa.archive.core.check.BookChecker;
-import rosa.archive.core.check.BookCollectionChecker;
+import com.google.inject.Inject;
 import rosa.archive.core.check.Checker;
-import rosa.archive.core.serialize.Serializer;
-import rosa.archive.core.serialize.SerializerFactory;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
-import rosa.archive.model.BookScene;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,27 +15,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Implementation of {@link rosa.archive.core.store.Store} based on the structure of the
+ * Roman de la Rose Digital Library archive.
  *
+ * The RRDL archive has a set file hierarchy with the top level directory containing
+ * manuscript or book collections as directories. Each collection directory contains metadata
+ * files and directories representing each individual book or manuscript.
  */
 public class FileStore implements Store {
     private Path top;
 
-    private Checker<BookCollection> collectionChecker;
-    private Checker<Book> bookChecker;
+    @Inject
+    private Checker<Object> checker;
 
     public FileStore() {
         // TODO configure TOP
-
-        // TODO dependency injection would be nice....
-        this.collectionChecker = new BookCollectionChecker();
-        this.bookChecker = new BookChecker();
     }
 
     // Testing
-    public FileStore(String top, Checker<BookCollection> collectionChecker, Checker<Book> bookChecker) {
+    public FileStore(String top, Checker<Object> checker) {
         this.top = Paths.get(top);
-        this.collectionChecker = collectionChecker;
-        this.bookChecker = bookChecker;
+        this.checker = checker;
     }
 
     @Override
@@ -91,22 +87,22 @@ public class FileStore implements Store {
 
     @Override
     public boolean checkBitIntegrity(BookCollection collection) {
-        return false;
+        return checker.checkBits(collection);
     }
 
     @Override
     public boolean checkBitIntegrity(Book book) {
-        return false;
+        return checker.checkBits(book);
     }
 
     @Override
     public boolean checkContentConsistency(BookCollection collection) {
-        return false;
+        return checker.checkContent(collection);
     }
 
     @Override
     public boolean checkContentConsistency(Book book) {
-        return false;
+        return checker.checkContent(book);
     }
 
     private Path relativeTo(String id, Path parent) {
