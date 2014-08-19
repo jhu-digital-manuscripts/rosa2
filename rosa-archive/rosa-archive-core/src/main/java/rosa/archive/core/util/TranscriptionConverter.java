@@ -19,6 +19,9 @@ import java.util.regex.Pattern;
 /**
  * Conversion of text transcriptions to a TEI transcription.
  * Both errors and warnings are logged
+ *
+ * Taken from Rosa1 project.
+ * https://github.com/jhu-digital-manuscripts/rosa/blob/master/rosa-core/src/main/java/rosa/core/TranscriptionConverter.java
  */
 public class TranscriptionConverter {
 	private String lastfolio;

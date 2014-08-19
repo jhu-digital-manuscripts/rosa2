@@ -14,6 +14,9 @@ import java.util.Map;
 
 /**
  * Helper to write XML.
+ *
+ * Code from the Rosa1 project.
+ * https://github.com/jhu-digital-manuscripts/rosa/blob/master/rosa-core/src/main/java/rosa/core/util/XMLWriter.java
  */
 
 public class XMLWriter {
