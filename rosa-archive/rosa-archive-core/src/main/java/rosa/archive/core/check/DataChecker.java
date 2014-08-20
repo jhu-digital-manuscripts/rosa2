@@ -9,13 +9,10 @@ import rosa.archive.model.BookCollection;
  */
 public class DataChecker implements Checker<Object> {
 
-    @Inject
     private Checker<Book> bookChecker;
-    @Inject
     private Checker<BookCollection> collectionChecker;
 
-    DataChecker() {  }
-
+    @Inject
     DataChecker(Checker<Book> bookChecker, Checker<BookCollection> collectionChecker) {
         this.bookChecker = bookChecker;
         this.collectionChecker = collectionChecker;

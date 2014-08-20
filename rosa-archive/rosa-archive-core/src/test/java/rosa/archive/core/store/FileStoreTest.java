@@ -7,6 +7,10 @@ import org.mockito.MockitoAnnotations;
 import rosa.archive.core.check.Checker;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookMetadata;
+import rosa.archive.model.CharacterNames;
+import rosa.archive.model.CropInfo;
+import rosa.archive.model.IllustrationTitles;
 
 import java.net.URL;
 import java.nio.file.Path;
@@ -29,6 +33,7 @@ import static org.mockito.Mockito.when;
 public class FileStoreTest {
 
     private FileStore store;
+    private Path top;
 
     @Mock
     private Checker<Object> checker;
@@ -45,6 +50,7 @@ public class FileStoreTest {
         String url = u.getPath();
 
         Path path = Paths.get(url.startsWith("/") ? url.substring(1) : url).getParent().getParent();
+        this.top = path;
         this.store = new FileStore(path.toString(), checker);
     }
 
@@ -86,6 +92,50 @@ public class FileStoreTest {
         verify(checker).checkBits(collection);
         verify(checker).checkContent(book);
         verify(checker).checkContent(collection);
+    }
+
+    @Test
+    public void crappyTest() throws Exception {
+        Book book = new Book();
+        store.setFieldFromFile(
+                book,
+                "cropInfo",
+                top.resolve("data/Walters143/Walters143.crop.txt"),
+                new CropInfo()
+        );
+        store.setFieldFromFile(
+                book,
+                "bookMetadata",
+                top.resolve("data/Walters143/Walters143.description_en.xml"),
+                new BookMetadata()
+        );
+        System.out.println(book.toString());
+        assertNotNull(book.getCropInfo());
+        assertNotNull(book.getBookMetadata());
+    }
+
+    @Test
+    public void loadBookTest() {
+        Book book = store.loadBook("data", "Walters143");
+        System.out.println(book.toString());
+    }
+
+    @Test
+    public void loadCollectionTest() {
+        BookCollection collection = new BookCollection();
+        store.setFieldFromFile(
+                collection,
+                "characterNames",
+                top.resolve("data/character_names.csv"),
+                new CharacterNames()
+        );
+        store.setFieldFromFile(
+                collection,
+                "illustrationTitles",
+                top.resolve("data/illustration_titles.csv"),
+                new IllustrationTitles()
+        );
+        System.out.println(collection.toString());
     }
 
 }
