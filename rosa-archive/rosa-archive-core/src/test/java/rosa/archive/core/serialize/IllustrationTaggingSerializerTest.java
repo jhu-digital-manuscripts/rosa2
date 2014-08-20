@@ -24,7 +24,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class IllustrationTaggingSerializerTest {
+public class IllustrationTaggingSerializerTest extends BaseSerializerTest {
 
     @Inject
     private Serializer<IllustrationTagging> serializer;
@@ -34,7 +34,7 @@ public class IllustrationTaggingSerializerTest {
         final String testFile = "data/Walters143/Walters143.imagetag.csv";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            IllustrationTagging tagging = serializer.read(in);
+            IllustrationTagging tagging = serializer.read(in, errors);
             assertNotNull(tagging);
             assertEquals(29, tagging.size());
 

@@ -27,9 +27,8 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
     public CharacterNamesSerializer() {  }
 
     @Override
-    public CharacterNames read(InputStream is) throws IOException{
+    public CharacterNames read(InputStream is, List<String> errors) throws IOException{
         CharacterNames names = new CharacterNames();
-        List<String> errors = new ArrayList<>();
 
         try (InputStreamReader reader = new InputStreamReader(is, RoseConstants.CHARSET)) {
 

@@ -23,7 +23,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class CropInfoSerializerTest {
+public class CropInfoSerializerTest extends BaseSerializerTest {
 
     @Inject
     private Serializer<CropInfo> serializer;
@@ -34,7 +34,7 @@ public class CropInfoSerializerTest {
         final String testFile = "data/" + ID + "/" + ID + RoseConstants.CROP;
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            CropInfo info = serializer.read(in);
+            CropInfo info = serializer.read(in, errors);
             assertNotNull(info);
 
             CropData data = info.getCropDataForPage("Walters143.039v.tif");

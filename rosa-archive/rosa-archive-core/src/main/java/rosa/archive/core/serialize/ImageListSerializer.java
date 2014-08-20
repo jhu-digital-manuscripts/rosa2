@@ -9,6 +9,7 @@ import rosa.archive.model.ImageList;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -19,7 +20,7 @@ public class ImageListSerializer implements Serializer<ImageList> {
     public ImageListSerializer() {  }
 
     @Override
-    public ImageList read(InputStream is) throws IOException {
+    public ImageList read(InputStream is, List<String> errors) throws IOException {
         ImageList images = new ImageList();
 
         List<BookImage> imgList = images.getImages();
@@ -52,7 +53,7 @@ public class ImageListSerializer implements Serializer<ImageList> {
                     width = Integer.parseInt(csvRow[1]);
                     height = Integer.parseInt(csvRow[2]);
                 } catch (NumberFormatException e) {
-                    // TODO log
+                    errors.add("Error parsing image dimensions as integers: [" + Arrays.toString(csvRow) + "]");
                     continue;
                 }
             }

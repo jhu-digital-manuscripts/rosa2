@@ -15,12 +15,11 @@ import java.util.List;
  * @see rosa.archive.model.ChecksumInfo
  */
 public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
-    private static final String DELIMITER = "  ";
 
     public ChecksumInfoSerializer() {  }
 
     @Override
-    public ChecksumInfo read(InputStream is) throws IOException {
+    public ChecksumInfo read(InputStream is, List<String> errors) throws IOException {
         ChecksumInfo info = new ChecksumInfo();
 
         List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
@@ -29,7 +28,7 @@ public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
             String[] parts = line.split("\\s+");
 
             if (parts.length != 2) {
-                // TODO log this as an error
+                errors.add("Malformed line in checksum data: [" + line + "]");
                 continue;
             }
             ChecksumData data = new ChecksumData();

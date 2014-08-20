@@ -19,7 +19,7 @@ public class MissingListSerializer implements Serializer<MissingList> {
     MissingListSerializer() {  }
 
     @Override
-    public MissingList read(InputStream is) throws IOException {
+    public MissingList read(InputStream is, List<String> errors) throws IOException {
         MissingList missingList = new MissingList();
         List<String> list = missingList.getMissing();
 
@@ -29,6 +29,8 @@ public class MissingListSerializer implements Serializer<MissingList> {
 
             // BookID/BookID.order.txt:idOfMissingImage
             if (parts.length != 2) {
+                errors.add("Malformed line: [" + line + "]. Should have only 2 columns, instead has ("
+                        + parts.length + ")");
                 continue;
             }
             list.add(parts[1]);

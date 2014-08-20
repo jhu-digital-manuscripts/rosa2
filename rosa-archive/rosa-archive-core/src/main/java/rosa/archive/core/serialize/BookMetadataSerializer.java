@@ -25,7 +25,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
     BookMetadataSerializer() {  }
 
     @Override
-    public BookMetadata read(InputStream is) throws IOException {
+    public BookMetadata read(InputStream is, List<String> errors) throws IOException {
 
         try {
 
@@ -33,9 +33,14 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             Document doc = builder.parse(is);
             return buildMetadata(doc);
 
-        } catch (ParserConfigurationException | SAXException e) {
-            // TODO
-            return null;
+        } catch (ParserConfigurationException e) {
+            String reason = "Failed to build Document.";
+            errors.add(reason);
+            throw new IOException(reason, e);
+        } catch (SAXException e) {
+            String reason = "Failed to parse input stream.";
+            errors.add(reason);
+            throw new IOException(reason, e);
         }
     }
 

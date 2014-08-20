@@ -3,6 +3,7 @@ package rosa.archive.core.serialize;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.List;
 
 /**
  *
@@ -18,7 +19,7 @@ public interface Serializer<E> {
      *          object from persistent store
      * @throws java.io.IOException
      */
-    E read(InputStream is) throws IOException;
+    E read(InputStream is, List<String> errors) throws IOException;
 
     /**
      * Output a data model object to an output stream.

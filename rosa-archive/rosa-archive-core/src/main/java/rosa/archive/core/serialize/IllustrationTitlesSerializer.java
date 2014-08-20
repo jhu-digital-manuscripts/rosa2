@@ -25,10 +25,9 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
     public IllustrationTitlesSerializer() {  }
 
     @Override
-    public IllustrationTitles read(InputStream is) throws IOException{
+    public IllustrationTitles read(InputStream is, List<String> errors) throws IOException{
 
         IllustrationTitles titles = new IllustrationTitles();
-        List<String> errors = new ArrayList<>();
 
         try (InputStreamReader reader = new InputStreamReader(is, RoseConstants.CHARSET)) {
 
@@ -40,7 +39,6 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
                 String title = data.get(row, Column.TITLE.ordinal());
 
                 if (dataMap.containsKey(id)) {
-                    // TODO log this...?
                     errors.add("ID [" + id + "] already exists.");
                 }
 

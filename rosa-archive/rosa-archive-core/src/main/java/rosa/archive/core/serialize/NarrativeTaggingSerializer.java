@@ -22,9 +22,8 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
     public NarrativeTaggingSerializer() {  }
 
     @Override
-    public NarrativeTagging read(InputStream is) throws IOException {
+    public NarrativeTagging read(InputStream is, List<String> errors) throws IOException {
 
-        List<String> errors = new ArrayList<>();
         List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
 
         // Guess if it is a .csv file or a .txt file. Each must be parsed differently.
@@ -61,7 +60,8 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
             String[] csv = CSV.parse(row);
 
             if (csv.length != 8) {
-                // TODO log
+                errors.add("Malformed line in narrative tagging: [" + row + "], should have 8 columns, instead "
+                        + "has (" + csv.length + ")");
                 continue;
             }
 

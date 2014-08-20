@@ -22,11 +22,10 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
     NarrativeSectionsSerializer() {  }
 
     @Override
-    public NarrativeSections read(InputStream is) throws IOException {
+    public NarrativeSections read(InputStream is, List<String> errors) throws IOException {
         NarrativeSections sections = new NarrativeSections();
 
         List<NarrativeScene> scenes = sections.asScenes();
-        List<String> errors = new ArrayList<>();
 
         List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
         String[] headers = CSV.parse(lines.get(0));
@@ -35,14 +34,10 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
             String[] row = CSV.parse(lines.get(i));
 
             if (row.length < 4 || row.length > headers.length) {
-                errors.add("Malformed row [" + i + "]: " + Arrays.toString(row));
+                errors.add("Malformed row in narrative sections [" + i + "]: " + Arrays.toString(row));
             }
 
-            // TODO move this into scene creation method?
-            checkNumberRange(row[1], i, errors);
-            checkNumberRange(row[2], i, errors);
-
-            NarrativeScene scene = createScene(row);
+            NarrativeScene scene = createScene(row, errors);
             if (scene != null) {
                 scenes.add(scene);
             }
@@ -81,7 +76,7 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
      * @param data data from CSV that represents a numerical range
      * @return integer array with start and end numbers
      */
-    private int[] getRangeValue(String data) {
+    private int[] getRangeValue(String data, List<String> errors) {
         if (StringUtils.isBlank(data)) {
             return null;
         }
@@ -93,11 +88,12 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
 
             return new int[] { start, end };
         } catch (IndexOutOfBoundsException e) {
-            // TODO log malformed data
+            errors.add("Malformed data in narrative sections: [" + data + "]. " +
+                    "Should contain two numbers separated by '-'");
             return null;
         } catch (NumberFormatException e) {
             if (!data.equals("a-j")) {
-                // TODO log non-lecoy error
+                errors.add("Error parsing as integer or Lecoy in narrative sections: [" + data + "]");
             }
             return null;
         }
@@ -109,9 +105,9 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
      * @param row row from CSV data
      * @return the scene
      */
-    private NarrativeScene createScene(String[] row) {
-        int[] lecoy = getRangeValue(row[2]);
-        int[] lines = getRangeValue(row[1]);
+    private NarrativeScene createScene(String[] row, List<String> errors) {
+        int[] lecoy = getRangeValue(row[2], errors);
+        int[] lines = getRangeValue(row[1], errors);
 
         if (lecoy == null || lines == null) {
             return null;

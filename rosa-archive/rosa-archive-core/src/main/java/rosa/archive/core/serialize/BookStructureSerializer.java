@@ -29,11 +29,10 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
     public BookStructureSerializer() {  }
 
     @Override
-    public BookStructure read(InputStream is) throws IOException {
+    public BookStructure read(InputStream is, List<String> errors) throws IOException {
         BookStructure structure = new BookStructure();
 
         List<StructurePage> pages = structure.pages();
-        List<String> errors = new ArrayList<>();
         List<Item> items = new ArrayList<>();
 
         int n = 0;

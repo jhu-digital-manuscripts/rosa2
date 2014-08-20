@@ -24,7 +24,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class NarrativeTaggingSerializerTest {
+public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
 
     @Inject
     private Serializer<NarrativeTagging> serializer;
@@ -34,7 +34,7 @@ public class NarrativeTaggingSerializerTest {
         final String testFile = "data/LudwigXV7/LudwigXV7.nartag.csv";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            NarrativeTagging tagging = serializer.read(in);
+            NarrativeTagging tagging = serializer.read(in, errors);
             assertNotNull(tagging);
 
             List<BookScene> scenes = tagging.getScenes();
@@ -58,7 +58,7 @@ public class NarrativeTaggingSerializerTest {
         final String testFile = "data/Ferrell/Ferrell.nartag.txt";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            NarrativeTagging tagging = serializer.read(in);
+            NarrativeTagging tagging = serializer.read(in, errors);
             assertNotNull(tagging);
 
             List<BookScene> scenes = tagging.getScenes();

@@ -25,7 +25,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class ImageListSerializerTest {
+public class ImageListSerializerTest extends BaseSerializerTest{
 
     @Inject
     private Serializer<ImageList> serializer;
@@ -36,7 +36,7 @@ public class ImageListSerializerTest {
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
 
-            ImageList images = serializer.read(in);
+            ImageList images = serializer.read(in, errors);
             assertNotNull(images);
 
             List<BookImage> imgList = images.getImages();

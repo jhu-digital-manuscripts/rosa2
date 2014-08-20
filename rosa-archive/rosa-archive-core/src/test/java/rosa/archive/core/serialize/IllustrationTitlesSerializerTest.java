@@ -22,7 +22,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class IllustrationTitlesSerializerTest {
+public class IllustrationTitlesSerializerTest extends BaseSerializerTest {
     private static final String testFile = "data/illustration_titles.csv";
 
     @Inject
@@ -32,7 +32,7 @@ public class IllustrationTitlesSerializerTest {
     public void readsValidInput() throws Exception {
 
         try (InputStream stream = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            IllustrationTitles titles = serializer.read(stream);
+            IllustrationTitles titles = serializer.read(stream, errors);
 
             assertNotNull(titles);
             assertTrue(titles.getAllIds().size() > 0);

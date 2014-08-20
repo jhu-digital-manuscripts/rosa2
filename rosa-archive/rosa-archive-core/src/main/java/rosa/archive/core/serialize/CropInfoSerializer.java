@@ -18,7 +18,7 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
     public CropInfoSerializer() {  }
 
     @Override
-    public CropInfo read(InputStream is) throws IOException {
+    public CropInfo read(InputStream is, List<String> errors) throws IOException {
         CropInfo info = new CropInfo();
 
         List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
@@ -26,7 +26,8 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
 
             String[] parts = line.split("\\s+");
             if (parts.length != 5) {
-                // TODO log
+                errors.add("Malformed line in crop info: [" + line + "]. Should have 5 columns, but has ("
+                        + parts.length + ").");
                 continue;
             }
 
@@ -39,7 +40,7 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
                 data.setTop(Double.parseDouble(parts[3]));
                 data.setBottom(Double.parseDouble(parts[4]));
             } catch (NumberFormatException e) {
-                // TODO log
+                errors.add("Failed to parse crop data as decimal [" + line + "]");
                 continue;
             }
 

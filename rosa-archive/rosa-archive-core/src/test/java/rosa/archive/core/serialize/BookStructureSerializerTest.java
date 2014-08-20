@@ -26,7 +26,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class BookStructureSerializerTest {
+public class BookStructureSerializerTest extends BaseSerializerTest {
 
     @Inject
     private Serializer<BookStructure> serializer;
@@ -36,7 +36,7 @@ public class BookStructureSerializerTest {
         final String testFile = "data/LudwigXV7/LudwigXV7.redtag.txt";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            BookStructure structure = serializer.read(in);
+            BookStructure structure = serializer.read(in, errors);
             assertNotNull(structure);
 
             List<StructurePage> pages = structure.pages();

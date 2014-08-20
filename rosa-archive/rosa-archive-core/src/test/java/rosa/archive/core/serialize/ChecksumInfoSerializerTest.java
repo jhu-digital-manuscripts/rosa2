@@ -23,7 +23,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class ChecksumInfoSerializerTest {
+public class ChecksumInfoSerializerTest extends BaseSerializerTest {
     private static final String testFile = "data/Walters143/Walters143.SHA1SUM";
 
     @Inject
@@ -34,7 +34,7 @@ public class ChecksumInfoSerializerTest {
         InputStream is = getClass().getClassLoader().getResourceAsStream(testFile);
         assertNotNull(is);
 
-        ChecksumInfo info = serializer.read(is);
+        ChecksumInfo info = serializer.read(is, errors);
 
         assertNotNull(info);
         assertEquals(13, info.getAllIds().size());

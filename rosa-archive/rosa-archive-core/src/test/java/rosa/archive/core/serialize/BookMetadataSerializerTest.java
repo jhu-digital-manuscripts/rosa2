@@ -21,7 +21,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class BookMetadataSerializerTest {
+public class BookMetadataSerializerTest extends BaseSerializerTest {
 
     @Inject
     private Serializer<BookMetadata> serializer;
@@ -31,7 +31,7 @@ public class BookMetadataSerializerTest {
         final String testFile = "data/Walters143/Walters143.description_en.xml";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            BookMetadata metadata = (BookMetadata) serializer.read(in);
+            BookMetadata metadata = serializer.read(in, errors);
             assertNotNull(metadata);
 
             assertEquals("14th century", metadata.getDate());

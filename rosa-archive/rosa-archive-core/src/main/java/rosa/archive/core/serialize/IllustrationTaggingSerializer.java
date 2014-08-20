@@ -9,6 +9,7 @@ import rosa.archive.model.IllustrationTagging;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -21,7 +22,7 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
     public IllustrationTaggingSerializer() {  }
 
     @Override
-    public IllustrationTagging read(InputStream is) throws IOException{
+    public IllustrationTagging read(InputStream is, List<String> errors) throws IOException{
         IllustrationTagging tagging = new IllustrationTagging();
 
         List<String> linesIn = IOUtils.readLines(is, RoseConstants.CHARSET);
@@ -31,7 +32,8 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
             String[] row = CSV.parse(linesIn.get(i));
 
             if (row.length < 1 || row.length > 11) {
-                // TODO log malformed row
+                errors.add("Malformed row in Image Tagging: [" + Arrays.toString(row) + "]"
+                        + " bad number of columns! (" + row.length + ")");
                 continue;
             }
 

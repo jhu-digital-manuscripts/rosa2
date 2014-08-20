@@ -23,7 +23,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class NarrativeSectionsSerializerTest {
+public class NarrativeSectionsSerializerTest extends BaseSerializerTest {
 
     @Inject
     private Serializer<NarrativeSections> serializer;
@@ -33,7 +33,7 @@ public class NarrativeSectionsSerializerTest {
         final String testFile = "data/narrative_sections.csv";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            NarrativeSections sections = serializer.read(in);
+            NarrativeSections sections = serializer.read(in, errors);
             assertNotNull(sections);
 
             List<NarrativeScene> scenes = sections.asScenes();
