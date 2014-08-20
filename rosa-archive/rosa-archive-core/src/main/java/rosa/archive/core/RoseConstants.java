@@ -17,7 +17,7 @@ public interface RoseConstants {
     // Descriptions
     String IMAGES = ".images.csv";
     String IMAGES_CROP = ".images.crop.csv";
-    String IMAGE_TAGGING = ".imagtag.csv";
+    String IMAGE_TAGGING = ".imagetag.csv";
     String NARRATIVE_TAGGING = ".nartag.csv";
     String REDUCED_TAGGING = ".redtag.txt";
     // Permissions
