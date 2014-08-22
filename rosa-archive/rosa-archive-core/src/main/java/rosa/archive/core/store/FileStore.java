@@ -4,8 +4,6 @@ import com.google.inject.Inject;
 import rosa.archive.core.RoseConstants;
 import rosa.archive.core.check.Checker;
 import rosa.archive.core.serialize.Serializer;
-import rosa.archive.core.serialize.SerializerException;
-import rosa.archive.core.serialize.SerializerFactory;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
@@ -15,12 +13,11 @@ import rosa.archive.model.CropInfo;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.NarrativeTagging;
+import rosa.archive.model.Permission;
+import rosa.archive.model.Transcription;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.nio.file.DirectoryStream;
 import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.Files;
@@ -28,6 +25,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Implementation of {@link rosa.archive.core.store.Store} based on the structure of the
@@ -41,6 +39,7 @@ public class FileStore implements Store {
     private Path top;
 
     private Checker<Object> checker;
+    private Map<Class, Serializer> serializers;
 
     FileStore() {
         // TODO configure TOP
@@ -52,15 +51,15 @@ public class FileStore implements Store {
     // but will allow specifying TOP dynamically in code
     // http://stackoverflow.com/questions/8976250/how-to-use-guices-assistedinject
     @Inject
-    FileStore(String top, Checker<Object> checker) {
+    FileStore(String top, Checker<Object> checker, Map<Class, Serializer> serializers) {
         this.top = Paths.get(top);
         this.checker = checker;
+        this.serializers = serializers;
     }
 
     @Override
     public String[] listBookCollections() {
         // List the names of all directories in top
-//        List<String> archives = getSubDirectoryNames(top);
         List<String> archives = getItemNamesFromDirectory(top, new Filter<Path>() {
             @Override
             public boolean accept(Path entry) throws IOException {
@@ -80,7 +79,6 @@ public class FileStore implements Store {
         }
 
         // List the names of all directories in the collection directory
-//        List<String> books = getSubDirectoryNames(collection);
         List<String> books = getItemNamesFromDirectory(collection, new Filter<Path>() {
             @Override
             public boolean accept(Path entry) throws IOException {
@@ -110,60 +108,27 @@ public class FileStore implements Store {
         Book book = new Book();
         book.setId(bookId);
 
-        // Set the list of images.
-        try {
-            InputStream imagesIn = Files.newInputStream(relativeTo(bookId + RoseConstants.IMAGES, bookPath));
-
-            Serializer<ImageList> imageListSerializer = SerializerFactory.serializer(ImageList.class);
-            book.setImages(imageListSerializer.read(imagesIn));
-
-        } catch (SerializerException | IOException e) {
-            // TODO log error
-            book.setImages(new ImageList());
-        }
-
-        // Set the list of cropped images.
-        try {
-            InputStream in = Files.newInputStream(relativeTo(bookId + RoseConstants.IMAGES_CROP, bookPath));
-
-            Serializer<ImageList> imageListSerializer = SerializerFactory.serializer(ImageList.class);
-            book.setCroppedImages(imageListSerializer.read(in));
-
-        } catch (SerializerException | IOException e) {
-            // TODO log
-            book.setCroppedImages(new ImageList());
-        }
-
-        // Set crop info
-        try {
-            InputStream in = Files.newInputStream(relativeTo(bookId + RoseConstants.CROP, bookPath));
-
-            Serializer<CropInfo> serializer = SerializerFactory.serializer(CropInfo.class);
-            book.setCropInfo(serializer.read(in));
-
-        } catch (SerializerException | IOException e) {
-            // TODO log
-            book.setCropInfo(new CropInfo());
-        }
-
-        // Set book metadata
-        setFieldFromFile(book, "bookMetadata", relativeTo(bookId + ".description_" + language + ".xml", bookPath),
-                new BookMetadata());
-        // Set checksum info
-        setFieldFromFile(book, "checksumInfo", relativeTo(bookId + RoseConstants.SHA1SUM, bookPath),
-                new ChecksumInfo());
-        // Set book structure
-        setFieldFromFile(book, "bookStructure", relativeTo(bookId + RoseConstants.REDUCED_TAGGING, bookPath),
-                new BookStructure());
-        // Set illustration tagging
-        setFieldFromFile(book, "illustrationTagging", relativeTo(bookId + RoseConstants.IMAGE_TAGGING, bookPath),
-                new IllustrationTagging());
-        // Set manual narrative tagging
-        setFieldFromFile(book, "manualNarrativeTagging", relativeTo(bookId + ".nartag.txt", bookPath),
-                new NarrativeTagging());
-        // Set automatic narrative tagging
-        setFieldFromFile(book, "automaticNarrativeTagging", relativeTo(bookId + ".nartag.csv", bookPath),
-                new NarrativeTagging());
+        book.setImages(
+                loadFromFile(relativeTo(bookId + RoseConstants.IMAGES, bookPath), ImageList.class));
+        book.setCroppedImages(
+                loadFromFile(relativeTo(bookId + RoseConstants.IMAGES_CROP, bookPath), ImageList.class));
+        book.setCropInfo(
+                loadFromFile(relativeTo(bookId + RoseConstants.CROP, bookPath), CropInfo.class));
+        book.setBookMetadata(
+                loadFromFile(relativeTo(bookId + ".description_" + language + ".xml", bookPath), BookMetadata.class));
+        book.setBookStructure(
+                loadFromFile(relativeTo(bookId + RoseConstants.REDUCED_TAGGING, bookPath), BookStructure.class));
+        book.setChecksumInfo(
+                loadFromFile(relativeTo(bookId + RoseConstants.SHA1SUM, bookPath), ChecksumInfo.class));
+        book.setIllustrationTagging(
+                loadFromFile(relativeTo(bookId + RoseConstants.IMAGE_TAGGING, bookPath), IllustrationTagging.class));
+        book.setManualNarrativeTagging(
+                loadFromFile(relativeTo(bookId + ".nartag.txt", bookPath), NarrativeTagging.class));
+        book.setAutomaticNarrativeTagging(
+                loadFromFile(relativeTo(
+                        bookId + RoseConstants.AUTOMATIC_NARRATIVE_TAGGING, bookPath), NarrativeTagging.class));
+        book.setTranscription(
+                loadFromFile(relativeTo(bookId + RoseConstants.TRANSCRIPTION, bookPath), Transcription.class));
 
         book.setContent(getItemNamesFromDirectory(
                 bookPath,
@@ -177,44 +142,66 @@ public class FileStore implements Store {
                 .toArray(new String[0])
         );
 
+        // Find all permissions files, each should be for a different language.
+        List<String> permNames = getItemNamesFromDirectory(
+                bookPath,
+                new Filter<Path>() {
+                    @Override
+                    public boolean accept(Path entry) throws IOException {
+                        String filename = entry.getFileName().toString();
+                        return filename.contains(RoseConstants.PERMISSION);
+                    }
+                }
+        );
+        for (String permission : permNames) {
+            // Parse language code out of file name
+            String lang = findLanguageCodeInName(permission);
+            // Load permission statement from file as single String
+            Permission perm = loadFromFile(relativeTo(bookId + RoseConstants.TRANSCRIPTION, bookPath), Permission.class);
+            // Dump in Book obj
+            book.addPermission(perm, lang);
+        }
+
+
+
         return book;
     }
 
-    /**
-     * Novelty method for setting fields...
-     *
-     * @param objToChange
-     * @param fieldName
-     * @param filepath
-     * @param type
-     * @param <T>
-     */
-    protected <T> void setFieldFromFile(Object objToChange, String fieldName, Path filepath, T type) {
-        Object value = getValueFromFile(filepath, type);
+    // TODO needs to be tested!
+    protected String findLanguageCodeInName(String name) {
 
-        Class bookClass = objToChange.getClass();
-        String methodName = "set" + fieldName.substring(0, 1).toUpperCase() + fieldName.substring(1);
-        try {
-            @SuppressWarnings("unchecked")
-            Method method = bookClass.getMethod(methodName, type.getClass());
-            method.invoke(objToChange, value);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException ex) {
-            System.out.println("Could not call method.");
-            ex.printStackTrace();
+        String[] parts = name.split("_");
+        for (String part : parts) {
+            if (part.matches("(\\w){2,3}(?:(\\.[\\w]+)|$)")) {
+                return part.split(".")[0];
+            }
         }
+
+        return "";
     }
 
-    private <T> Object getValueFromFile(Path filepath, T type) {
+    /**
+     * Load data from a file in the archive without throwing an exception if it fails.
+     *
+     * @param file file to read
+     * @param type type token
+     * @param <T> return type
+     * @return data from file
+     */
+    @SuppressWarnings("unchecked")
+    private <T> T loadFromFile(Path file, Class<T> type) {
+
         try {
-            InputStream in = Files.newInputStream(filepath);
-            Serializer<T> serializer = SerializerFactory.serializer(type.getClass());
+            InputStream in = Files.newInputStream(file);
+            Serializer serializer = serializers.get(type);
 
-            return serializer.read(in);
+            return (T) serializer.read(in);
 
-        } catch (IOException | SerializerException e) {
-            e.printStackTrace();
-            return null;
+        } catch (IOException e) {
+            // TODO log
         }
+
+        return null;
     }
 
     @Override

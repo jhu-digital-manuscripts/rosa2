@@ -14,15 +14,16 @@ public interface RoseConstants {
 
     // Book level (file suffix)
     String CROP = ".crop.txt";
-    // Descriptions
+    String DESCRIPTION = ".description_"; // Needs a language code and file extension
     String IMAGES = ".images.csv";
     String IMAGES_CROP = ".images.crop.csv";
     String IMAGE_TAGGING = ".imagetag.csv";
-    String NARRATIVE_TAGGING = ".nartag.csv";
+    String AUTOMATIC_NARRATIVE_TAGGING = ".nartag.csv";
+    String MANUAL_NARRATIVE_TAGGING = ".nartag.txt";
     String REDUCED_TAGGING = ".redtag.txt";
-    // Permissions
+    String PERMISSION = ".permission_"; // Needs a language code and file extension
     String SHA1SUM = ".SHA1SUM";
-    // Transcription text files
+    String TRANSCRIPTION_TXT = ".transcription."; // Needs folio name and file extension
     String TRANSCRIPTION = ".transcription.xml";
     String BNF_FILEMAP = ".bnf.filemap.csv";
     String BNF_FOLIATION = ".bnf.foliation.xml";
@@ -38,4 +39,10 @@ public interface RoseConstants {
     String CROPPED_DIR = "cropped";
 
     String MISSING_PREFIX = "*";
+
+    // File extensions
+    String CSV = ".csv";
+    String TXT = ".txt";
+    String XML = ".xml";
+    String HTML = ".html";
 }
