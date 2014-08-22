@@ -4,8 +4,9 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * A single book in the archive.
@@ -38,9 +39,12 @@ public class Book implements IsSerializable {
     private NarrativeTagging manualNarrativeTagging;
     private NarrativeTagging automaticNarrativeTagging;
 
-    // TODO permissions and transcription!!
+    private Map<String, Permission> permissions;
+    private Transcription transcription;
 
-    public Book() {  }
+    public Book() {
+        this.permissions = new HashMap<>();
+    }
 
     public String getId() {
         return id;
@@ -138,6 +142,32 @@ public class Book implements IsSerializable {
         this.automaticNarrativeTagging = automaticNarrativeTagging;
     }
 
+    public void addPermission(Permission permission, String language) {
+        permissions.put(language, permission);
+    }
+
+    public Permission getPermission(String language) {
+        return permissions.get(language);
+    }
+
+    public Permission[] getPermissionsInAllLanguages() {
+        List<Permission> perms = new ArrayList<>();
+
+        for (String lang : permissions.keySet()) {
+            perms.add(permissions.get(lang));
+        }
+
+        return perms.toArray(new Permission[perms.size()]);
+    }
+
+    public Transcription getTranscription() {
+        return transcription;
+    }
+
+    public void setTranscription(Transcription transcription) {
+        this.transcription = transcription;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -163,6 +193,9 @@ public class Book implements IsSerializable {
         if (images != null ? !images.equals(book.images) : book.images != null) return false;
         if (manualNarrativeTagging != null ? !manualNarrativeTagging.equals(book.manualNarrativeTagging) : book.manualNarrativeTagging != null)
             return false;
+        if (permissions != null ? !permissions.equals(book.permissions) : book.permissions != null) return false;
+        if (transcription != null ? !transcription.equals(book.transcription) : book.transcription != null)
+            return false;
 
         return true;
     }
@@ -181,6 +214,8 @@ public class Book implements IsSerializable {
         result = 31 * result + (illustrationTagging != null ? illustrationTagging.hashCode() : 0);
         result = 31 * result + (manualNarrativeTagging != null ? manualNarrativeTagging.hashCode() : 0);
         result = 31 * result + (automaticNarrativeTagging != null ? automaticNarrativeTagging.hashCode() : 0);
+        result = 31 * result + (permissions != null ? permissions.hashCode() : 0);
+        result = 31 * result + (transcription != null ? transcription.hashCode() : 0);
         return result;
     }
 
@@ -199,6 +234,8 @@ public class Book implements IsSerializable {
                 ", illustrationTagging=" + illustrationTagging +
                 ", manualNarrativeTagging=" + manualNarrativeTagging +
                 ", automaticNarrativeTagging=" + automaticNarrativeTagging +
+                ", permissions=" + permissions +
+                ", transcription='" + transcription + '\'' +
                 '}';
     }
 }
