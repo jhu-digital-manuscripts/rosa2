@@ -1,5 +1,6 @@
 package rosa.archive.core.store;
 
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -139,6 +140,21 @@ public class FileStoreTest {
         assertNotNull(book.getPermissionsInAllLanguages());
         assertTrue(book.getPermissionsInAllLanguages().length > 0);
 
+    }
+
+    @Test
+    public void findsLanguageCode() {
+        assertEquals("en", store.findLanguageCodeInName("Walters143.permission_en.xml"));
+        assertEquals("fr", store.findLanguageCodeInName("Walters143.permission_fr.xml"));
+        assertEquals("eng", store.findLanguageCodeInName("Walters143.permission_eng.xml"));
+    }
+
+    @Test
+    public void returnEmptyStringForBadLanguage() {
+        assertEquals("", store.findLanguageCodeInName("Walters143.permissions.xml"));
+        assertEquals("", store.findLanguageCodeInName("Walters143.permissions_en-US.xml"));
+        assertEquals("", store.findLanguageCodeInName("Walters143.transcription.001r.txt"));
+        assertEquals("", store.findLanguageCodeInName("Walters143.transcription.xml"));
     }
 
     @Test

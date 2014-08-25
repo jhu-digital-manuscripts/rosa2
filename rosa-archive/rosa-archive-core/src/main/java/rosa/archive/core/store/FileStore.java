@@ -115,7 +115,8 @@ public class FileStore implements Store {
         book.setCropInfo(
                 loadFromFile(relativeTo(bookId + RoseConstants.CROP, bookPath), CropInfo.class));
         book.setBookMetadata(
-                loadFromFile(relativeTo(bookId + ".description_" + language + ".xml", bookPath), BookMetadata.class));
+                loadFromFile(relativeTo(
+                        bookId + RoseConstants.DESCRIPTION + language + RoseConstants.XML, bookPath), BookMetadata.class));
         book.setBookStructure(
                 loadFromFile(relativeTo(bookId + RoseConstants.REDUCED_TAGGING, bookPath), BookStructure.class));
         book.setChecksumInfo(
@@ -123,7 +124,8 @@ public class FileStore implements Store {
         book.setIllustrationTagging(
                 loadFromFile(relativeTo(bookId + RoseConstants.IMAGE_TAGGING, bookPath), IllustrationTagging.class));
         book.setManualNarrativeTagging(
-                loadFromFile(relativeTo(bookId + ".nartag.txt", bookPath), NarrativeTagging.class));
+                loadFromFile(relativeTo(
+                        bookId + RoseConstants.MANUAL_NARRATIVE_TAGGING, bookPath), NarrativeTagging.class));
         book.setAutomaticNarrativeTagging(
                 loadFromFile(relativeTo(
                         bookId + RoseConstants.AUTOMATIC_NARRATIVE_TAGGING, bookPath), NarrativeTagging.class));
@@ -173,7 +175,7 @@ public class FileStore implements Store {
         String[] parts = name.split("_");
         for (String part : parts) {
             if (part.matches("(\\w){2,3}(?:(\\.[\\w]+)|$)")) {
-                return part.split(".")[0];
+                return part.split("\\.")[0];
             }
         }
 
