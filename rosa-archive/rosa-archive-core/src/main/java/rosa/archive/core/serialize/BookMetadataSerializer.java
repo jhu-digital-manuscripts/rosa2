@@ -15,7 +15,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @see rosa.archive.model.BookMetadata
@@ -76,7 +78,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
                 return null;
             }
 
-            // TODO must be a better way to search through this crap...
             // in read() method, create a Map<String, String> (type attribute -> textContent)?
             for (int i = 0; i < notes.getLength(); i++) {
                 Element note = (Element) notes.item(i);
@@ -134,8 +135,12 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         metadata.setDate(getString(top, "date"));
         metadata.setCurrentLocation(getString(top, "settlement"));
         metadata.setRepository(getString(top, "repository"));
-        // TODO where to find shelfmark? <idno> ??
+
         metadata.setShelfmark(getString(top, "shelfmark"));
+        if (StringUtils.isBlank(metadata.getShelfmark())) {
+            metadata.setShelfmark(getString(top, "idno"));
+        }
+
         metadata.setOrigin(getString(top, "pubPlace"));
         metadata.setWidth(getInteger(top, "width"));
         metadata.setHeight(getInteger(top, "height"));
@@ -146,9 +151,9 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         metadata.setDimensions((metadata.getWidth() == -1 || metadata.getHeight() == -1)
                 ? "" : metadata.getWidth() + "x" + metadata.getHeight() + "mm");
 
-        NodeList numPagess = top.getElementsByTagName("measure");
-        if (numPagess.getLength() > 0) {
-            Element numPages = (Element) numPagess.item(0);
+        NodeList measureElement = top.getElementsByTagName("measure");
+        if (measureElement.getLength() > 0) {
+            Element numPages = (Element) measureElement.item(0);
             metadata.setNumberOfPages(getIntegerQuietly(numPages.getAttribute("quantity")));
         }
 
@@ -156,7 +161,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         if (dates.getLength() > 0) {
             Element date = (Element) dates.item(0);
 
-            // What the hell is wrong with these <date> attributes...
             try {
                 metadata.setYearStart(Integer.parseInt(date.getAttribute("notBefore")));
                 metadata.setYearEnd(Integer.parseInt(date.getAttribute("notAfter")));
@@ -167,11 +171,8 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         }
 
         List<BookText> texts = new ArrayList<>();
-//        NodeList nodes = doc.getElementsByTagName("text");
-        // Current description.xml files have "text" information not in the <text> element
-        // but in msDesc -> msContents -> msItem with the <text> element being empty...
-        // TODO ask mark about data structure!!! as far as XML parsing
         NodeList nodes = doc.getElementsByTagName("msItem");
+
         for (int i = 0; i < nodes.getLength(); i++) {
             Element el = (Element) nodes.item(i);
             BookText text = new BookText();

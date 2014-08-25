@@ -11,9 +11,12 @@ import rosa.archive.model.BookMetadata;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
 /**
@@ -39,9 +42,17 @@ public class BookMetadataSerializerTest {
             assertEquals(1300, metadata.getYearEnd());
             assertEquals("Baltimore, MD", metadata.getCurrentLocation());
             assertEquals("Walters Art Museum", metadata.getRepository());
+            assertNotNull(metadata.getShelfmark());
+            assertNotNull(metadata.getOrigin());
             assertEquals("manuscript", metadata.getType());
+            assertNotNull(metadata.getDimensions());
             assertEquals(216, metadata.getWidth());
             assertEquals(300, metadata.getHeight());
+            assertTrue(metadata.getNumberOfIllustrations() > -1);
+            assertTrue(metadata.getNumberOfPages() > -1);
+            assertNotNull(metadata.getCommonName());
+            assertNotNull(metadata.getMaterial());
+
             assertNotNull(metadata.getTexts());
             assertEquals(1, metadata.getTexts().length);
         }
