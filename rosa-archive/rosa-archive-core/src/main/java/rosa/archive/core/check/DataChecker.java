@@ -5,7 +5,8 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 
 /**
- *
+ * Generic {@link rosa.archive.core.check.Checker} implementation that delegates check
+ * operations to an appropriate implementation.
  */
 public class DataChecker implements Checker<Object> {
 
