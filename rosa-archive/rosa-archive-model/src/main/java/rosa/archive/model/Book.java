@@ -106,7 +106,13 @@ public class Book implements IsSerializable {
         return content;
     }
 
+    /**
+     * Sorts content array before setting the field.
+     *
+     * @param content array of content
+     */
     public void setContent(String[] content) {
+        Arrays.sort(content);
         this.content = content;
     }
 
