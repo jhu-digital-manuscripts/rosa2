@@ -21,7 +21,7 @@ import static org.mockito.Mockito.mock;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class TranscriptionXmlSerializerTest {
+public class TranscriptionXmlSerializerTest extends BaseSerializerTest {
 
     @Inject
     private Serializer<Transcription> serializer;
@@ -31,11 +31,12 @@ public class TranscriptionXmlSerializerTest {
         final String testFile = "data/Walters143/Walters143.transcription.xml";
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            Transcription transcription = serializer.read(in);
+            Transcription transcription = serializer.read(in, errors);
 
             assertNotNull(transcription);
             assertNotNull(transcription.getContent());
             assertTrue(transcription.getContent().length() > 0);
+            assertTrue(errors.isEmpty());
         }
 
     }

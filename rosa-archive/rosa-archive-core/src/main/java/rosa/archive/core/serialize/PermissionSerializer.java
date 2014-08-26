@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class PermissionSerializer implements Serializer<Permission> {
     @Override
-    public Permission read(InputStream is) throws IOException {
+    public Permission read(InputStream is, List<String> errors) throws IOException {
 
         List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
         StringBuilder content = new StringBuilder();

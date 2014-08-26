@@ -1,6 +1,5 @@
 package rosa.archive.core.store;
 
-import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -27,8 +26,6 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyObject;
-import static org.mockito.Matchers.booleanThat;
-import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.atMost;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -107,6 +104,7 @@ public class FileStoreTest {
     }
 
     @Test
+    @SuppressWarnings("unchecked")
     public void loadBookTest() throws Exception {
         Set<Class> classes = new HashSet<>();
 
@@ -132,7 +130,7 @@ public class FileStoreTest {
         for (Class c : classes) {
             // In the case the a file does not exist, the read() method will not be called...
 //            verify(serializerMap.get(c), atLeastOnce()).read(any(InputStream.class));
-            verify(serializerMap.get(c), atMost(2)).read(any(InputStream.class));
+            verify(serializerMap.get(c), atMost(2)).read(any(InputStream.class), any(List.class));
         }
 
         assertNotNull(book.getContent());
@@ -162,11 +160,12 @@ public class FileStoreTest {
 
     }
 
+    @SuppressWarnings("unchecked")
     private void mockSerializers(Set<Class> classes) throws IOException {
 
         for (Class c : classes) {
             Serializer s = mock(Serializer.class);
-            when(s.read(any(InputStream.class))).thenReturn(null);
+            when(s.read(any(InputStream.class), any(List.class))).thenReturn(null);
             serializerMap.put(c, s);
         }
     }

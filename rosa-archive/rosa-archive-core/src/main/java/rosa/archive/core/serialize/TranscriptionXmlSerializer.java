@@ -15,7 +15,7 @@ import java.util.List;
 public class TranscriptionXmlSerializer implements Serializer<Transcription> {
 
     @Override
-    public Transcription read(InputStream is) throws IOException {
+    public Transcription read(InputStream is, List<String> errors) throws IOException {
 
         List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
 

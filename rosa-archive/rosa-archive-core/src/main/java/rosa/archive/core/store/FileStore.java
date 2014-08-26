@@ -192,12 +192,13 @@ public class FileStore implements Store {
      */
     @SuppressWarnings("unchecked")
     private <T> T loadFromFile(Path file, Class<T> type) {
+        List<String> errors = new ArrayList<>();
 
         try {
             InputStream in = Files.newInputStream(file);
             Serializer serializer = serializers.get(type);
 
-            return (T) serializer.read(in);
+            return (T) serializer.read(in, errors);
 
         } catch (IOException e) {
             // TODO log
