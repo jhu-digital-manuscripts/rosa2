@@ -2,6 +2,7 @@ package rosa.archive.core;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
+import com.google.inject.multibindings.MapBinder;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.check.Checker;
@@ -17,7 +18,9 @@ import rosa.archive.core.serialize.ImageListSerializer;
 import rosa.archive.core.serialize.MissingListSerializer;
 import rosa.archive.core.serialize.NarrativeSectionsSerializer;
 import rosa.archive.core.serialize.NarrativeTaggingSerializer;
+import rosa.archive.core.serialize.PermissionSerializer;
 import rosa.archive.core.serialize.Serializer;
+import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import rosa.archive.core.store.FileStore;
 import rosa.archive.core.store.Store;
 import rosa.archive.model.Book;
@@ -33,6 +36,8 @@ import rosa.archive.model.ImageList;
 import rosa.archive.model.MissingList;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
+import rosa.archive.model.Permission;
+import rosa.archive.model.Transcription;
 
 /**
  * Dependency injection bindings for Google Guice.
@@ -52,9 +57,31 @@ public class ArchiveCoreModule extends AbstractModule {
         bind(new TypeLiteral<Serializer<MissingList>>(){}).to(MissingListSerializer.class);
         bind(new TypeLiteral<Serializer<NarrativeSections>>(){}).to(NarrativeSectionsSerializer.class);
         bind(new TypeLiteral<Serializer<NarrativeTagging>>(){}).to(NarrativeTaggingSerializer.class);
+        bind(new TypeLiteral<Serializer<Transcription>>(){}).to(TranscriptionXmlSerializer.class);
+        bind(new TypeLiteral<Serializer<Permission>>(){}).to(PermissionSerializer.class);
+
+        MapBinder<Class, Serializer> mapBinder = MapBinder.newMapBinder(
+                binder(),
+                Class.class,
+                Serializer.class
+        );
+        mapBinder.addBinding(BookMetadata.class).to(BookMetadataSerializer.class);
+        mapBinder.addBinding(BookStructure.class).to(BookStructureSerializer.class);
+        mapBinder.addBinding(CharacterNames.class).to(CharacterNamesSerializer.class);
+        mapBinder.addBinding(ChecksumInfo.class).to(ChecksumInfoSerializer.class);
+        mapBinder.addBinding(CropInfo.class).to(CropInfoSerializer.class);
+        mapBinder.addBinding(IllustrationTagging.class).to(IllustrationTaggingSerializer.class);
+        mapBinder.addBinding(IllustrationTitles.class).to(IllustrationTitlesSerializer.class);
+        mapBinder.addBinding(ImageList.class).to(ImageListSerializer.class);
+        mapBinder.addBinding(MissingList.class).to(MissingListSerializer.class);
+        mapBinder.addBinding(NarrativeSections.class).to(NarrativeSectionsSerializer.class);
+        mapBinder.addBinding(NarrativeTagging.class).to(NarrativeTaggingSerializer.class);
+        mapBinder.addBinding(Transcription.class).to(TranscriptionXmlSerializer.class);
+        mapBinder.addBinding(Permission.class).to(PermissionSerializer.class);
 
         // Data checkers
-        bind(new TypeLiteral<Checker<BookCollection>>(){}).to(BookCollectionChecker.class);
+        bind(new TypeLiteral<Checker<BookCollection>>() {
+        }).to(BookCollectionChecker.class);
         bind(new TypeLiteral<Checker<Book>>(){}).to(BookChecker.class);
         bind(new TypeLiteral<Checker<Object>>(){}).to(DataChecker.class);
         bind(Checker.class).to(DataChecker.class);

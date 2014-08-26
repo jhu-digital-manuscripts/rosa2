@@ -12,7 +12,11 @@ public class BookImage implements IsSerializable {
     private int height;
     private boolean isMissing;
 
-    public BookImage() {  }
+    public BookImage() {
+        width = -1;
+        height = -1;
+        isMissing = true;
+    }
 
     public String getId() {
         return id;

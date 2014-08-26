@@ -16,7 +16,6 @@ public interface Checker<T> {
      *
      * @param t
      *          object to check
-     * @throws java.lang.ClassCastException
      * @return
      *          TRUE if the objects bit values validate, FALSE if object contains bit errors
      */
@@ -30,11 +29,18 @@ public interface Checker<T> {
      * structure present in the archive. It will also check to see if all persisted data
      * associated with this input object can be loaded. This method sees if the data is readable
      * and looks right. To check if the data is what you expect on a bit level, use
-     * <code>checkBits(obj)</code>.
+     * <code>checkBits(obj)</code>. This is summarized in the following rules:
+     *
+     * <ul>
+     *     <li>The object must exist (not be NULL).</li>
+     *     <li>Each of the objects fields must be initialized to a non-null value, unless
+     *         determined otherwise by the implementation.</li>
+     *     <li>The object must be persisted in the archive, and this stored version must
+     *         be readable.</li>
+     * </ul>
      *
      * @param t
      *          object to check
-     * @throws java.lang.ClassCastException
      * @return
      *          TRUE if content of object is consistent with data model and persistent data store
      */

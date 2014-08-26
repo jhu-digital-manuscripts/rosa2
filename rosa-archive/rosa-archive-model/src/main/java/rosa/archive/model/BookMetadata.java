@@ -27,7 +27,14 @@ public class BookMetadata implements IsSerializable {
     private String material;
     private BookText[] texts;
 
-    public BookMetadata() {  }
+    public BookMetadata() {
+        yearStart = -1;
+        yearEnd = -1;
+        width = -1;
+        height = -1;
+        numberOfIllustrations = -1;
+        numberOfPages = -1;
+    }
 
     public String getDate() {
         return date;

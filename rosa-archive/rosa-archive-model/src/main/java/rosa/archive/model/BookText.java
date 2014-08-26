@@ -10,14 +10,20 @@ public class BookText implements IsSerializable {
     private int linesPerColumn;
     private int columnsPerPage;
     private int leavesPerGathering;
-    private int NumberOfIllustrations;
+    private int numberOfIllustrations;
     private int numberOfPages;
     private String id;
     private String title;
     private String firstPage;
     private String lastPage;
 
-    public BookText() {  }
+    public BookText() {
+        linesPerColumn = -1;
+        columnsPerPage = -1;
+        leavesPerGathering = -1;
+        numberOfIllustrations = -1;
+        numberOfPages = -1;
+    }
 
     public int getLinesPerColumn() {
         return linesPerColumn;
@@ -44,11 +50,11 @@ public class BookText implements IsSerializable {
     }
 
     public int getNumberOfIllustrations() {
-        return NumberOfIllustrations;
+        return numberOfIllustrations;
     }
 
     public void setNumberOfIllustrations(int numberOfIllustrations) {
-        NumberOfIllustrations = numberOfIllustrations;
+        this.numberOfIllustrations = numberOfIllustrations;
     }
 
     public int getNumberOfPages() {
@@ -98,7 +104,7 @@ public class BookText implements IsSerializable {
 
         BookText bookText = (BookText) o;
 
-        if (NumberOfIllustrations != bookText.NumberOfIllustrations) return false;
+        if (numberOfIllustrations != bookText.numberOfIllustrations) return false;
         if (columnsPerPage != bookText.columnsPerPage) return false;
         if (leavesPerGathering != bookText.leavesPerGathering) return false;
         if (linesPerColumn != bookText.linesPerColumn) return false;
@@ -116,7 +122,7 @@ public class BookText implements IsSerializable {
         int result = linesPerColumn;
         result = 31 * result + columnsPerPage;
         result = 31 * result + leavesPerGathering;
-        result = 31 * result + NumberOfIllustrations;
+        result = 31 * result + numberOfIllustrations;
         result = 31 * result + numberOfPages;
         result = 31 * result + (id != null ? id.hashCode() : 0);
         result = 31 * result + (title != null ? title.hashCode() : 0);
@@ -131,7 +137,7 @@ public class BookText implements IsSerializable {
                 "linesPerColumn=" + linesPerColumn +
                 ", columnsPerPage=" + columnsPerPage +
                 ", leavesPerGathering=" + leavesPerGathering +
-                ", NumberOfIllustrations=" + NumberOfIllustrations +
+                ", numberOfIllustrations=" + numberOfIllustrations +
                 ", numberOfPages=" + numberOfPages +
                 ", id='" + id + '\'' +
                 ", title='" + title + '\'' +

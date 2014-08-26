@@ -5,17 +5,15 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 
 /**
- *
+ * Generic {@link rosa.archive.core.check.Checker} implementation that delegates check
+ * operations to an appropriate implementation.
  */
 public class DataChecker implements Checker<Object> {
 
-    @Inject
     private Checker<Book> bookChecker;
-    @Inject
     private Checker<BookCollection> collectionChecker;
 
-    DataChecker() {  }
-
+    @Inject
     DataChecker(Checker<Book> bookChecker, Checker<BookCollection> collectionChecker) {
         this.bookChecker = bookChecker;
         this.collectionChecker = collectionChecker;
