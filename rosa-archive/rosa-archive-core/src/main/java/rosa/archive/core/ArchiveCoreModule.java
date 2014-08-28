@@ -2,6 +2,7 @@ package rosa.archive.core;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
+import com.google.inject.assistedinject.FactoryModuleBuilder;
 import com.google.inject.multibindings.MapBinder;
 import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
@@ -17,8 +18,9 @@ import rosa.archive.core.serialize.NarrativeTaggingSerializer;
 import rosa.archive.core.serialize.PermissionSerializer;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.core.serialize.TranscriptionXmlSerializer;
-import rosa.archive.core.store.FileStore;
+import rosa.archive.core.store.DefaultStore;
 import rosa.archive.core.store.Store;
+import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.CharacterNames;
@@ -40,6 +42,7 @@ public class ArchiveCoreModule extends AbstractModule {
 
     protected void configure() {
         // Serializers
+        //  Single class binding: Serializer<Type> -> correct serializer implementation
         bind(new TypeLiteral<Serializer<BookMetadata>>(){}).to(BookMetadataSerializer.class);
         bind(new TypeLiteral<Serializer<BookStructure>>(){}).to(BookStructureSerializer.class);
         bind(new TypeLiteral<Serializer<CharacterNames>>(){}).to(CharacterNamesSerializer.class);
@@ -54,6 +57,7 @@ public class ArchiveCoreModule extends AbstractModule {
         bind(new TypeLiteral<Serializer<Transcription>>(){}).to(TranscriptionXmlSerializer.class);
         bind(new TypeLiteral<Serializer<Permission>>(){}).to(PermissionSerializer.class);
 
+        //  Multibinding: Map<Class type, Serializer> -> key=Class, value=correct serializer implementation
         MapBinder<Class, Serializer> mapBinder = MapBinder.newMapBinder(
                 binder(),
                 Class.class,
@@ -76,7 +80,9 @@ public class ArchiveCoreModule extends AbstractModule {
         // Data checkers
 
         // Store
-        bind(Store.class).to(FileStore.class);
+        install(new FactoryModuleBuilder()
+                .implement(Store.class, DefaultStore.class)
+                .build(StoreFactory.class));
     }
 
 }
