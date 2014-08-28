@@ -7,6 +7,7 @@ public interface RoseConstants {
     String CHARSET = "UTF-8";
 
     // Collection level (file names)
+    String ILLUSTRATION_TITLES = "illustration_titles.csv";
     String NARRATIVE_SECTIONS = "narrative_sections.csv";
     String CHARACTER_NAMES = "character_names.csv";
     String MISSING_IMAGE = "missing_image.tif";
