@@ -37,14 +37,14 @@ public class CharacterNamesSerializerTest extends BaseSerializerTest {
             assertNotNull(names);
 
             assertEquals(78, names.getAllCharacterIds().size());
-            assertEquals(77, names.getAllNamesInLanguage("English name").size());
+            assertEquals(77, names.getAllNamesInLanguage("en").size());
             assertEquals(77, names.getAllNamesInLanguage("Site name").size());
-            assertTrue(names.getAllNamesInLanguage("French variant").size() > 0);
-            assertTrue(names.getAllNamesInLanguage("French variant").size() < 78);
+            assertTrue(names.getAllNamesInLanguage("fr").size() > 0);
+            assertTrue(names.getAllNamesInLanguage("fr").size() < 78);
 
             assertEquals("Diogenes", names.getNameInLanguage("36", "Site name"));
-            assertEquals("Dyogenes, Dyogenés", names.getNameInLanguage("36", "French variant"));
-            assertEquals("Diogenes", names.getNameInLanguage("36", "English name"));
+            assertEquals("Dyogenes, Dyogenés", names.getNameInLanguage("36", "fr"));
+            assertEquals("Diogenes", names.getNameInLanguage("36", "en"));
 
         }
 

@@ -4,6 +4,8 @@ import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
 import com.google.inject.multibindings.MapBinder;
+import com.google.inject.name.Names;
+import rosa.archive.core.config.AppContext;
 import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
@@ -34,6 +36,10 @@ import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 /**
  * Dependency injection bindings for Google Guice.
@@ -83,6 +89,22 @@ public class ArchiveCoreModule extends AbstractModule {
         install(new FactoryModuleBuilder()
                 .implement(Store.class, DefaultStore.class)
                 .build(StoreFactory.class));
+
+        Names.bindProperties(binder(), getProperties());
+    }
+
+    private Properties getProperties() {
+        Properties props = new Properties();
+
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("file-archive.properties")) {
+            props.load(in);
+            System.out.println("Properties loaded: [" + props.toString() + "]");
+        } catch (IOException e) {
+            // TODO log
+            System.out.println("Failed to load properties!!");
+        }
+
+        return props;
     }
 
 }
