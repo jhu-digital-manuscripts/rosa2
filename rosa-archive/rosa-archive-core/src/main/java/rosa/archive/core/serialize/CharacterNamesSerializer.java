@@ -36,7 +36,7 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
     public CharacterNames read(InputStream is, List<String> errors) throws IOException{
         CharacterNames names = new CharacterNames();
 
-        try (InputStreamReader reader = new InputStreamReader(is, config.CHARSET)) {
+        try (InputStreamReader reader = new InputStreamReader(is, config.getCHARSET())) {
 
             CSVSpreadSheet table = new CSVSpreadSheet(reader, MIN_COLS, MAX_COLS, errors);
             List<String> headers = new ArrayList<>(Arrays.asList(table.row(0)));

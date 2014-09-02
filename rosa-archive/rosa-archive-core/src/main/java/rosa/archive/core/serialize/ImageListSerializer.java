@@ -30,7 +30,7 @@ public class ImageListSerializer implements Serializer<ImageList> {
         ImageList images = new ImageList();
 
         List<BookImage> imgList = images.getImages();
-        List<String> rows = IOUtils.readLines(is);
+        List<String> rows = IOUtils.readLines(is, config.getCHARSET());
 
         for (String row : rows) {
             String[] csvRow = CSV.parse(row);
@@ -40,10 +40,10 @@ public class ImageListSerializer implements Serializer<ImageList> {
             // Check for the "missing image" prefix.
             // If present, remove the prefix from name before setting ID.
             String id = csvRow[0];
-            boolean missing = id.startsWith(config.MISSING_PREFIX);
+            boolean missing = id.startsWith(config.getMISSING_PREFIX());
 
             if (missing) {
-                id = id.substring(config.MISSING_PREFIX.length());
+                id = id.substring(config.getMISSING_PREFIX().length());
             }
 
             image.setId(id);

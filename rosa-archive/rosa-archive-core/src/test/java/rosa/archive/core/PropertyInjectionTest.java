@@ -17,7 +17,7 @@ public class PropertyInjectionTest {
 
     @Test
     public void test() {
-        System.out.println(context.CHARSET);
+        System.out.println(context.getCHARSET());
         System.out.println(Arrays.toString(context.languages()));
     }
 

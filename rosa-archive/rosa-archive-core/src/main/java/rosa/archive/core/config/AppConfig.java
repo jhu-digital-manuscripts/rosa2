@@ -9,114 +9,245 @@ import com.google.inject.name.Named;
 public class AppConfig {
 
     @Inject @Named("ENCODING")
-    public String CHARSET;
+    private String CHARSET;
 
     @Inject @Named("TOP_COLLECTIONS_DIRECTORY")
-    public String DIRECTORY;
+    private String DIRECTORY;
 
     @Inject @Named("LANGUAGES")
-    public String LANGUAGES;
+    private String LANGUAGES;
+
+    // Collection
+
+    @Inject @Named("ILLUSTRATION_TITLES")
+    private String ILLUSTRATION_TITLES;
+
+    @Inject @Named("NARRATIVE_SECTIONS")
+    private String NARRATIVE_SECTIONS;
+
+    @Inject @Named("CHARACTER_NAMES")
+    private String CHARACTER_NAMES;
+
+    @Inject @Named("MISSING_IMAGE")
+    private String MISSING_IMAGE;
+
+    @Inject @Named("MISSING_PAGES")
+    private String MISSING_PAGES;
+
+    // Book
+
+    @Inject @Named("CROP")
+    private String CROP;
+
+    @Inject @Named("IMAGES")
+    private String IMAGES;
+
+    @Inject @Named("IMAGES_CROP")
+    private String IMAGES_CROP;
+
+    @Inject @Named("IMAGE_TAGGING")
+    private String IMAGE_TAGGING;
+
+    @Inject @Named("NARRATIVE_TAGGING")
+    private String NARRATIVE_TAGGING;
+
+    @Inject @Named("NARRATIVE_TAGGING_MAN")
+    private String NARRATIVE_TAGGING_MAN;
+
+    @Inject @Named("REDUCED_TAGGING")
+    private String REDUCED_TAGGING;
+
+    @Inject @Named("SHA1SUM")
+    private String SHA1SUM;
+
+    @Inject @Named("TRANSCRIPTION")
+    private String TRANSCRIPTION;
+
+    @Inject @Named("DESCRIPTION")
+    private String DESCRIPTION;
+
+    @Inject @Named("PERMISSION")
+    private String PERMISSION;
+
+    @Inject @Named("BNF_FILEMAP")
+    private String BNF_FILEMAP;
+
+    @Inject @Named("BNF_FOLIATION")
+    private String BNF_FOLIATION;
+
+    @Inject @Named("BNF_MD5SUM")
+    private String BNF_MD5SUM;
+
+    // Images
+
+    @Inject @Named("IMG_FRONTCOVER")
+    private String IMG_FRONTCOVER;
+
+    @Inject @Named("IMG_BACKCOVER")
+    private String IMG_BACKCOVER;
+
+    @Inject @Named("IMG_FRONTPASTEDOWN")
+    private String IMG_FRONTPASTEDOWN;
+
+    @Inject @Named("IMG_ENDPASTEDOWN")
+    private String IMG_ENDPASTEDOWN;
+
+    @Inject @Named("IMG_FRONT_FLYLEAF")
+    private String IMG_FRONT_FLYLEAF;
+
+    @Inject @Named("IMG_END_FLYLEAF")
+    private String IMG_END_FLYLEAF;
+
+    @Inject @Named("CROPPED_DIR")
+    private String CROPPED_DIR;
+
+    @Inject @Named("MISSING_PREFIX")
+    private String MISSING_PREFIX;
+
+    // Extensions
+
+    @Inject @Named("CSV")
+    private String CSV;
+
+    @Inject @Named("XML")
+    private String XML;
+
+    @Inject @Named("TXT")
+    private String TXT;
 
     public String[] languages() {
         return LANGUAGES.split(",");
     }
 
-    // Collection
+    public String getCHARSET() {
+        return CHARSET;
+    }
 
-    @Inject @Named("ILLUSTRATION_TITLES")
-    public String ILLUSTRATION_TITLES;
+    public String getDIRECTORY() {
+        return DIRECTORY;
+    }
 
-    @Inject @Named("NARRATIVE_SECTIONS")
-    public String NARRATIVE_SECTIONS;
+    public String getLANGUAGES() {
+        return LANGUAGES;
+    }
 
-    @Inject @Named("CHARACTER_NAMES")
-    public String CHARACTER_NAMES;
+    public String getILLUSTRATION_TITLES() {
+        return ILLUSTRATION_TITLES;
+    }
 
-    @Inject @Named("MISSING_IMAGE")
-    public String MISSING_IMAGE;
+    public String getNARRATIVE_SECTIONS() {
+        return NARRATIVE_SECTIONS;
+    }
 
-    @Inject @Named("MISSING_PAGES")
-    public String MISSING_PAGES;
+    public String getCHARACTER_NAMES() {
+        return CHARACTER_NAMES;
+    }
 
-    // Book
+    public String getMISSING_IMAGE() {
+        return MISSING_IMAGE;
+    }
 
-    @Inject @Named("CROP")
-    public String CROP;
+    public String getMISSING_PAGES() {
+        return MISSING_PAGES;
+    }
 
-    @Inject @Named("IMAGES")
-    public String IMAGES;
+    public String getCROP() {
+        return CROP;
+    }
 
-    @Inject @Named("IMAGES_CROP")
-    public String IMAGES_CROP;
+    public String getIMAGES() {
+        return IMAGES;
+    }
 
-    @Inject @Named("IMAGE_TAGGING")
-    public String IMAGE_TAGGING;
+    public String getIMAGES_CROP() {
+        return IMAGES_CROP;
+    }
 
-    @Inject @Named("NARRATIVE_TAGGING")
-    public String NARRATIVE_TAGGING;
+    public String getIMAGE_TAGGING() {
+        return IMAGE_TAGGING;
+    }
 
-    @Inject @Named("NARRATIVE_TAGGING_MAN")
-    public String NARRATIVE_TAGGING_MAN;
+    public String getNARRATIVE_TAGGING() {
+        return NARRATIVE_TAGGING;
+    }
 
-    @Inject @Named("REDUCED_TAGGING")
-    public String REDUCED_TAGGING;
+    public String getNARRATIVE_TAGGING_MAN() {
+        return NARRATIVE_TAGGING_MAN;
+    }
 
-    @Inject @Named("SHA1SUM")
-    public String SHA1SUM;
+    public String getREDUCED_TAGGING() {
+        return REDUCED_TAGGING;
+    }
 
-    @Inject @Named("TRANSCRIPTION")
-    public String TRANSCRIPTION;
+    public String getSHA1SUM() {
+        return SHA1SUM;
+    }
 
-    @Inject @Named("DESCRIPTION")
-    public String DESCRIPTION;
+    public String getTRANSCRIPTION() {
+        return TRANSCRIPTION;
+    }
 
-    @Inject @Named("PERMISSION")
-    public String PERMISSION;
+    public String getDESCRIPTION() {
+        return DESCRIPTION;
+    }
 
-    @Inject @Named("BNF_FILEMAP")
-    public String BNF_FILEMAP;
+    public String getPERMISSION() {
+        return PERMISSION;
+    }
 
-    @Inject @Named("BNF_FOLIATION")
-    public String BNF_FOLIATION;
+    public String getBNF_FILEMAP() {
+        return BNF_FILEMAP;
+    }
 
-    @Inject @Named("BNF_MD5SUM")
-    public String BNF_MD5SUM;
+    public String getBNF_FOLIATION() {
+        return BNF_FOLIATION;
+    }
 
-    // Images
+    public String getBNF_MD5SUM() {
+        return BNF_MD5SUM;
+    }
 
-    @Inject @Named("IMG_FRONTCOVER")
-    public String IMG_FRONTCOVER;
+    public String getIMG_FRONTCOVER() {
+        return IMG_FRONTCOVER;
+    }
 
-    @Inject @Named("IMG_BACKCOVER")
-    public String IMG_BACKCOVER;
+    public String getIMG_BACKCOVER() {
+        return IMG_BACKCOVER;
+    }
 
-    @Inject @Named("IMG_FRONTPASTEDOWN")
-    public String IMG_FRONTPASTEDOWN;
+    public String getIMG_FRONTPASTEDOWN() {
+        return IMG_FRONTPASTEDOWN;
+    }
 
-    @Inject @Named("IMG_ENDPASTEDOWN")
-    public String IMG_ENDPASTEDOWN;
+    public String getIMG_ENDPASTEDOWN() {
+        return IMG_ENDPASTEDOWN;
+    }
 
-    @Inject @Named("IMG_FRONT_FLYLEAF")
-    public String IMG_FRONT_FLYLEAF;
+    public String getIMG_FRONT_FLYLEAF() {
+        return IMG_FRONT_FLYLEAF;
+    }
 
-    @Inject @Named("IMG_END_FLYLEAF")
-    public String IMG_END_FLYLEAF;
+    public String getIMG_END_FLYLEAF() {
+        return IMG_END_FLYLEAF;
+    }
 
-    @Inject @Named("CROPPED_DIR")
-    public String CROPPED_DIR;
+    public String getCROPPED_DIR() {
+        return CROPPED_DIR;
+    }
 
-    @Inject @Named("MISSING_PREFIX")
-    public String MISSING_PREFIX;
+    public String getMISSING_PREFIX() {
+        return MISSING_PREFIX;
+    }
 
-    // Extensions
+    public String getCSV() {
+        return CSV;
+    }
 
-    @Inject @Named("CSV")
-    public String CSV;
+    public String getXML() {
+        return XML;
+    }
 
-    @Inject @Named("XML")
-    public String XML;
-
-    @Inject @Named("TXT")
-    public String TXT;
-
+    public String getTXT() {
+        return TXT;
+    }
 }

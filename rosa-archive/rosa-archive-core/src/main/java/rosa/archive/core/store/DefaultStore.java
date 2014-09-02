@@ -52,12 +52,12 @@ public class DefaultStore implements Store {
 
         collection.setBooks(listBooks(collectionId));
         collection.setCharacterNames(
-                loadItem(config.CHARACTER_NAMES, collectionGroup, CharacterNames.class));
+                loadItem(config.getCHARACTER_NAMES(), collectionGroup, CharacterNames.class));
         collection.setIllustrationTitles(
-                loadItem(config.ILLUSTRATION_TITLES, collectionGroup, IllustrationTitles.class));
+                loadItem(config.getILLUSTRATION_TITLES(), collectionGroup, IllustrationTitles.class));
         collection.setNarrativeSections(
-                loadItem(config.NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class));
-        collection.setMissing(loadItem(config.MISSING_PAGES, collectionGroup, MissingList.class));
+                loadItem(config.getNARRATIVE_SECTIONS(), collectionGroup, NarrativeSections.class));
+        collection.setMissing(loadItem(config.getMISSING_PAGES(), collectionGroup, MissingList.class));
 
         // Languages from configuration.
         collection.setLanguages(config.languages());
@@ -78,36 +78,36 @@ public class DefaultStore implements Store {
 
         book.setId(bookId);
         book.setImages(
-                loadItem(bookId + config.IMAGES, bookStreams, ImageList.class));
+                loadItem(bookId + config.getIMAGES(), bookStreams, ImageList.class));
         book.setCroppedImages(
-                loadItem(bookId + config.IMAGES_CROP, bookStreams, ImageList.class));
+                loadItem(bookId + config.getIMAGES_CROP(), bookStreams, ImageList.class));
         book.setCropInfo(
-                loadItem(bookId + config.CROP, bookStreams, CropInfo.class));
+                loadItem(bookId + config.getCROP(), bookStreams, CropInfo.class));
         book.setBookMetadata(
-                loadItem(bookId + config.DESCRIPTION, bookStreams, BookMetadata.class));
+                loadItem(bookId + config.getDESCRIPTION(), bookStreams, BookMetadata.class));
         book.setBookStructure(
-                loadItem(bookId + config.REDUCED_TAGGING, bookStreams, BookStructure.class));
+                loadItem(bookId + config.getREDUCED_TAGGING(), bookStreams, BookStructure.class));
         book.setChecksumInfo(
-                loadItem(bookId + config.SHA1SUM, bookStreams, ChecksumInfo.class));
+                loadItem(bookId + config.getSHA1SUM(), bookStreams, ChecksumInfo.class));
         book.setIllustrationTagging(
-                loadItem(bookId + config.IMAGE_TAGGING, bookStreams, IllustrationTagging.class));
+                loadItem(bookId + config.getIMAGE_TAGGING(), bookStreams, IllustrationTagging.class));
         book.setManualNarrativeTagging(
-                loadItem(bookId + config.NARRATIVE_TAGGING_MAN, bookStreams, NarrativeTagging.class));
+                loadItem(bookId + config.getNARRATIVE_TAGGING_MAN(), bookStreams, NarrativeTagging.class));
         book.setAutomaticNarrativeTagging(
-                loadItem(bookId + config.NARRATIVE_TAGGING, bookStreams, NarrativeTagging.class));
+                loadItem(bookId + config.getNARRATIVE_TAGGING(), bookStreams, NarrativeTagging.class));
         book.setTranscription(
-                loadItem(bookId + config.TRANSCRIPTION, bookStreams, Transcription.class));
+                loadItem(bookId + config.getTRANSCRIPTION(), bookStreams, Transcription.class));
 
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
 
         // Look for permissions
         for (String name : content) {
-            if (name.contains(config.PERMISSION)) {
+            if (name.contains(config.getPERMISSION())) {
                 String lang = findLanguageCodeInName(name);
                 if (StringUtils.isNotBlank(lang)) {
                     Permission perm = loadItem(
-                            bookId + config.PERMISSION + lang + config.XML,
+                            bookId + config.getPERMISSION() + lang + config.getXML(),
                             bookStreams,
                             Permission.class
                     );

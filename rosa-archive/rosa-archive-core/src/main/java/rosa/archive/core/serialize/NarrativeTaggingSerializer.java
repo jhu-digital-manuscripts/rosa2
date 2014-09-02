@@ -29,7 +29,7 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
     @Override
     public NarrativeTagging read(InputStream is, List<String> errors) throws IOException {
 
-        List<String> lines = IOUtils.readLines(is, config.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
 
         // Guess if it is a .csv file or a .txt file. Each must be parsed differently.
         // Narrative Tagging CSV file will have 8 columns.

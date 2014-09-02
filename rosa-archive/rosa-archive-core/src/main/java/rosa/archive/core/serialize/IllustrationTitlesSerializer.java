@@ -34,7 +34,7 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
 
         IllustrationTitles titles = new IllustrationTitles();
 
-        try (InputStreamReader reader = new InputStreamReader(is, config.CHARSET)) {
+        try (InputStreamReader reader = new InputStreamReader(is, config.getCHARSET())) {
 
             CSVSpreadSheet data = new CSVSpreadSheet(reader, 2, 2, errors);
             Map<String, String> dataMap = new HashMap<>();

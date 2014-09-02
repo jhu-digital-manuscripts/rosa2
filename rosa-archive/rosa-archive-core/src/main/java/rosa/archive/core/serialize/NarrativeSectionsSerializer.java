@@ -32,7 +32,7 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
 
         List<NarrativeScene> scenes = sections.asScenes();
 
-        List<String> lines = IOUtils.readLines(is, config.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
         String[] headers = CSV.parse(lines.get(0));
 
         for (int i = 1; i < lines.size(); i++) {

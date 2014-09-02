@@ -25,7 +25,7 @@ public class PermissionSerializer implements Serializer<Permission> {
     @Override
     public Permission read(InputStream is, List<String> errors) throws IOException {
 
-        List<String> lines = IOUtils.readLines(is, config.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
         StringBuilder content = new StringBuilder();
 
         for (String line : lines) {

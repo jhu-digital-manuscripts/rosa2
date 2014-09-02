@@ -45,7 +45,7 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
         int linesInColumn = -1;
         StructureColumn col = null;
 
-        List<String> inputLine = IOUtils.readLines(is, config.CHARSET);
+        List<String> inputLine = IOUtils.readLines(is, config.getCHARSET());
         for (String line : inputLine) {
             line = line.trim();
             n++;

@@ -29,7 +29,7 @@ public class MissingListSerializer implements Serializer<MissingList> {
         MissingList missingList = new MissingList();
         List<String> list = missingList.getMissing();
 
-        List<String> lines = IOUtils.readLines(is, config.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
         for (String line : lines) {
             String[] parts = line.split(":");
 

@@ -33,7 +33,7 @@ public class CropInfoSerializerTest extends BaseSerializerTest {
     @Test
     public void readTest() throws IOException {
         final String ID = "Walters143";
-        final String testFile = "data/" + ID + "/" + ID + config.CROP;
+        final String testFile = "data/" + ID + "/" + ID + config.getCROP();
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
             CropInfo info = serializer.read(in, errors);

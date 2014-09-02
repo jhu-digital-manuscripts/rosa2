@@ -75,7 +75,7 @@ public class DefaultStoreTest {
         this.store = new DefaultStore(serializerMap, context, bsg);
 
         when(context.languages()).thenReturn(new String[] {"en", "fr"});
-        context.PERMISSION = ".permission_";
+        when(context.getPERMISSION()).thenReturn(".permission_");
     }
 
     @Test

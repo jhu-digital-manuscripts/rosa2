@@ -28,7 +28,7 @@ public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
     public ChecksumInfo read(InputStream is, List<String> errors) throws IOException {
         ChecksumInfo info = new ChecksumInfo();
 
-        List<String> lines = IOUtils.readLines(is, config.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
         for (String line : lines) {
             // Split on space
             String[] parts = line.split("\\s+");

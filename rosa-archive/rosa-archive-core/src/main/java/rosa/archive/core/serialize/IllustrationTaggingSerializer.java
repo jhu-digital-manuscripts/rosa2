@@ -31,7 +31,7 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
     public IllustrationTagging read(InputStream is, List<String> errors) throws IOException{
         IllustrationTagging tagging = new IllustrationTagging();
 
-        List<String> linesIn = IOUtils.readLines(is, config.CHARSET);
+        List<String> linesIn = IOUtils.readLines(is, config.getCHARSET());
 
         for (int i = 1; i < linesIn.size(); i++) {
             String[] row = CSV.parse(linesIn.get(i));

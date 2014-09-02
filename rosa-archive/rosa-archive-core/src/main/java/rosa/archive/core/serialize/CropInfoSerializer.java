@@ -27,7 +27,7 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
     public CropInfo read(InputStream is, List<String> errors) throws IOException {
         CropInfo info = new CropInfo();
 
-        List<String> lines = IOUtils.readLines(is, config.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
         for (String line : lines) {
 
             String[] parts = line.split("\\s+");
