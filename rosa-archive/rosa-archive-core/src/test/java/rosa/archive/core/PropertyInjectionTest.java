@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
-import rosa.archive.core.config.AppContext;
+import rosa.archive.core.config.AppConfig;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ import java.util.Arrays;
 public class PropertyInjectionTest {
 
     @Inject
-    private AppContext context;
+    private AppConfig context;
 
     @Test
     public void test() {

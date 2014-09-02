@@ -1,7 +1,8 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
@@ -19,14 +20,18 @@ import java.util.List;
  */
 public class IllustrationTaggingSerializer implements Serializer<IllustrationTagging> {
 
-    public IllustrationTaggingSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    IllustrationTaggingSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public IllustrationTagging read(InputStream is, List<String> errors) throws IOException{
         IllustrationTagging tagging = new IllustrationTagging();
 
-        List<String> linesIn = IOUtils.readLines(is, RoseConstants.CHARSET);
-//        String[] headers = CSV.parse(linesIn.get(0));
+        List<String> linesIn = IOUtils.readLines(is, config.CHARSET);
 
         for (int i = 1; i < linesIn.size(); i++) {
             String[] row = CSV.parse(linesIn.get(i));

@@ -6,7 +6,7 @@ import com.google.inject.name.Named;
 /**
  *
  */
-public class AppContext {
+public class AppConfig {
 
     @Inject @Named("ENCODING")
     public String CHARSET;
@@ -22,6 +22,9 @@ public class AppContext {
     }
 
     // Collection
+
+    @Inject @Named("ILLUSTRATION_TITLES")
+    public String ILLUSTRATION_TITLES;
 
     @Inject @Named("NARRATIVE_SECTIONS")
     public String NARRATIVE_SECTIONS;
@@ -51,6 +54,9 @@ public class AppContext {
 
     @Inject @Named("NARRATIVE_TAGGING")
     public String NARRATIVE_TAGGING;
+
+    @Inject @Named("NARRATIVE_TAGGING_MAN")
+    public String NARRATIVE_TAGGING_MAN;
 
     @Inject @Named("REDUCED_TAGGING")
     public String REDUCED_TAGGING;

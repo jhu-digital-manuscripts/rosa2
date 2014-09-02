@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
-import rosa.archive.core.RoseConstants;
+import com.google.inject.Inject;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.CharacterName;
@@ -24,13 +25,18 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
         ID, SITE_NAME, FRENCH_NAME, ENGLISH_NAME
     }
 
-    public CharacterNamesSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    CharacterNamesSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public CharacterNames read(InputStream is, List<String> errors) throws IOException{
         CharacterNames names = new CharacterNames();
 
-        try (InputStreamReader reader = new InputStreamReader(is, RoseConstants.CHARSET)) {
+        try (InputStreamReader reader = new InputStreamReader(is, config.CHARSET)) {
 
             CSVSpreadSheet table = new CSVSpreadSheet(reader, MIN_COLS, MAX_COLS, errors);
             List<String> headers = new ArrayList<>(Arrays.asList(table.row(0)));

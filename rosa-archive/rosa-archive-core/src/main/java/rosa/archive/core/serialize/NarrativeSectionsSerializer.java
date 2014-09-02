@@ -1,8 +1,9 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
@@ -10,7 +11,6 @@ import rosa.archive.model.NarrativeSections;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -19,7 +19,12 @@ import java.util.List;
  */
 public class NarrativeSectionsSerializer implements Serializer<NarrativeSections> {
 
-    NarrativeSectionsSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    NarrativeSectionsSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public NarrativeSections read(InputStream is, List<String> errors) throws IOException {
@@ -27,7 +32,7 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
 
         List<NarrativeScene> scenes = sections.asScenes();
 
-        List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.CHARSET);
         String[] headers = CSV.parse(lines.get(0));
 
         for (int i = 1; i < lines.size(); i++) {

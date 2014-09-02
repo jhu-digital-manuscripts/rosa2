@@ -1,10 +1,12 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 
@@ -24,7 +26,12 @@ import java.util.Map;
  */
 public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
-    BookMetadataSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    BookMetadataSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public BookMetadata read(InputStream is, List<String> errors) throws IOException {
@@ -134,7 +141,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
      */
     private BookMetadata buildMetadata(Document doc) {
         BookMetadata metadata = new BookMetadata();
-
+// TODO configure XML elements!!
         Element top = doc.getDocumentElement();
 
         metadata.setDate(getString(top, "date"));

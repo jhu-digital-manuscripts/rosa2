@@ -1,7 +1,8 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.Blank;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.Heading;
@@ -26,7 +27,12 @@ import java.util.List;
  */
 public class BookStructureSerializer implements Serializer<BookStructure> {
 
-    public BookStructureSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    BookStructureSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public BookStructure read(InputStream is, List<String> errors) throws IOException {
@@ -39,7 +45,7 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
         int linesInColumn = -1;
         StructureColumn col = null;
 
-        List<String> inputLine = IOUtils.readLines(is, RoseConstants.CHARSET);
+        List<String> inputLine = IOUtils.readLines(is, config.CHARSET);
         for (String line : inputLine) {
             line = line.trim();
             n++;

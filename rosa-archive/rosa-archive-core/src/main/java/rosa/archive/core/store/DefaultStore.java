@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.*;
 
@@ -20,11 +20,15 @@ import java.util.Map;
 public class DefaultStore implements Store {
 
     private final ByteStreamGroup base;
+    private final AppConfig config;
     private Map<Class, Serializer> serializerMap;
 
     @Inject
-    public DefaultStore(Map<Class, Serializer> serializerMap, @Assisted ByteStreamGroup base) {
+    public DefaultStore(Map<Class, Serializer> serializerMap,
+                        AppConfig config,
+                        @Assisted ByteStreamGroup base) {
         this.base = base;
+        this.config = config;
         this.serializerMap = serializerMap;
     }
 
@@ -48,16 +52,15 @@ public class DefaultStore implements Store {
 
         collection.setBooks(listBooks(collectionId));
         collection.setCharacterNames(
-                loadItem(RoseConstants.CHARACTER_NAMES, collectionGroup, CharacterNames.class));
+                loadItem(config.CHARACTER_NAMES, collectionGroup, CharacterNames.class));
         collection.setIllustrationTitles(
-                loadItem(RoseConstants.ILLUSTRATION_TITLES, collectionGroup, IllustrationTitles.class));
+                loadItem(config.ILLUSTRATION_TITLES, collectionGroup, IllustrationTitles.class));
         collection.setNarrativeSections(
-                loadItem(RoseConstants.NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class));
-        collection.setMissing(loadItem(RoseConstants.MISSING_FOLIOS, collectionGroup, MissingList.class));
+                loadItem(config.NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class));
+        collection.setMissing(loadItem(config.MISSING_PAGES, collectionGroup, MissingList.class));
 
-        // Guess what languages are supported by inspecting the Character Names object...
-//        collection.getCharacterNames().getAllCharacterIds()
-        // TODO make languages configurable!
+        // Languages from configuration.
+        collection.setLanguages(config.languages());
 
         return collection;
     }
@@ -75,36 +78,36 @@ public class DefaultStore implements Store {
 
         book.setId(bookId);
         book.setImages(
-                loadItem(bookId + RoseConstants.IMAGES, bookStreams, ImageList.class));
+                loadItem(bookId + config.IMAGES, bookStreams, ImageList.class));
         book.setCroppedImages(
-                loadItem(bookId + RoseConstants.IMAGES_CROP, bookStreams, ImageList.class));
+                loadItem(bookId + config.IMAGES_CROP, bookStreams, ImageList.class));
         book.setCropInfo(
-                loadItem(bookId + RoseConstants.CROP, bookStreams, CropInfo.class));
+                loadItem(bookId + config.CROP, bookStreams, CropInfo.class));
         book.setBookMetadata(
-                loadItem(bookId + RoseConstants.DESCRIPTION, bookStreams, BookMetadata.class));
+                loadItem(bookId + config.DESCRIPTION, bookStreams, BookMetadata.class));
         book.setBookStructure(
-                loadItem(bookId + RoseConstants.REDUCED_TAGGING, bookStreams, BookStructure.class));
+                loadItem(bookId + config.REDUCED_TAGGING, bookStreams, BookStructure.class));
         book.setChecksumInfo(
-                loadItem(bookId + RoseConstants.SHA1SUM, bookStreams, ChecksumInfo.class));
+                loadItem(bookId + config.SHA1SUM, bookStreams, ChecksumInfo.class));
         book.setIllustrationTagging(
-                loadItem(bookId + RoseConstants.IMAGE_TAGGING, bookStreams, IllustrationTagging.class));
+                loadItem(bookId + config.IMAGE_TAGGING, bookStreams, IllustrationTagging.class));
         book.setManualNarrativeTagging(
-                loadItem(bookId + RoseConstants.MANUAL_NARRATIVE_TAGGING, bookStreams, NarrativeTagging.class));
+                loadItem(bookId + config.NARRATIVE_TAGGING_MAN, bookStreams, NarrativeTagging.class));
         book.setAutomaticNarrativeTagging(
-                loadItem(bookId + RoseConstants.AUTOMATIC_NARRATIVE_TAGGING, bookStreams, NarrativeTagging.class));
+                loadItem(bookId + config.NARRATIVE_TAGGING, bookStreams, NarrativeTagging.class));
         book.setTranscription(
-                loadItem(bookId + RoseConstants.TRANSCRIPTION, bookStreams, Transcription.class));
+                loadItem(bookId + config.TRANSCRIPTION, bookStreams, Transcription.class));
 
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
 
         // Look for permissions
         for (String name : content) {
-            if (name.contains(RoseConstants.PERMISSION)) {
+            if (name.contains(config.PERMISSION)) {
                 String lang = findLanguageCodeInName(name);
                 if (StringUtils.isNotBlank(lang)) {
                     Permission perm = loadItem(
-                            bookId + RoseConstants.PERMISSION + lang + RoseConstants.XML,
+                            bookId + config.PERMISSION + lang + config.XML,
                             bookStreams,
                             Permission.class
                     );

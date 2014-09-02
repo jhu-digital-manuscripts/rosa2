@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
-import rosa.archive.core.RoseConstants;
+import com.google.inject.Inject;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.IllustrationTitles;
 
@@ -8,7 +9,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,14 +22,19 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
         ID, TITLE
     }
 
-    public IllustrationTitlesSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    IllustrationTitlesSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public IllustrationTitles read(InputStream is, List<String> errors) throws IOException{
 
         IllustrationTitles titles = new IllustrationTitles();
 
-        try (InputStreamReader reader = new InputStreamReader(is, RoseConstants.CHARSET)) {
+        try (InputStreamReader reader = new InputStreamReader(is, config.CHARSET)) {
 
             CSVSpreadSheet data = new CSVSpreadSheet(reader, 2, 2, errors);
             Map<String, String> dataMap = new HashMap<>();

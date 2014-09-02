@@ -1,7 +1,8 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.MissingList;
 
 import java.io.IOException;
@@ -16,14 +17,19 @@ import java.util.List;
  */
 public class MissingListSerializer implements Serializer<MissingList> {
 
-    MissingListSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    MissingListSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public MissingList read(InputStream is, List<String> errors) throws IOException {
         MissingList missingList = new MissingList();
         List<String> list = missingList.getMissing();
 
-        List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.CHARSET);
         for (String line : lines) {
             String[] parts = line.split(":");
 

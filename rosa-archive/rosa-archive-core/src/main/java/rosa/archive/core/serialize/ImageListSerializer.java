@@ -1,7 +1,8 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
@@ -17,7 +18,12 @@ import java.util.List;
  */
 public class ImageListSerializer implements Serializer<ImageList> {
 
-    public ImageListSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    ImageListSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public ImageList read(InputStream is, List<String> errors) throws IOException {
@@ -34,10 +40,10 @@ public class ImageListSerializer implements Serializer<ImageList> {
             // Check for the "missing image" prefix.
             // If present, remove the prefix from name before setting ID.
             String id = csvRow[0];
-            boolean missing = id.startsWith(RoseConstants.MISSING_PREFIX);
+            boolean missing = id.startsWith(config.MISSING_PREFIX);
 
             if (missing) {
-                id = id.substring(RoseConstants.MISSING_PREFIX.length());
+                id = id.substring(config.MISSING_PREFIX.length());
             }
 
             image.setId(id);

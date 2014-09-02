@@ -1,7 +1,8 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
 
@@ -15,13 +16,18 @@ import java.util.List;
  */
 public class CropInfoSerializer implements Serializer<CropInfo> {
 
-    public CropInfoSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    CropInfoSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public CropInfo read(InputStream is, List<String> errors) throws IOException {
         CropInfo info = new CropInfo();
 
-        List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.CHARSET);
         for (String line : lines) {
 
             String[] parts = line.split("\\s+");

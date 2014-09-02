@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.GuiceJUnitRunner;
 import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
 
@@ -27,11 +27,13 @@ public class CropInfoSerializerTest extends BaseSerializerTest {
 
     @Inject
     private Serializer<CropInfo> serializer;
+    @Inject
+    private AppConfig config;
 
     @Test
     public void readTest() throws IOException {
         final String ID = "Walters143";
-        final String testFile = "data/" + ID + "/" + ID + RoseConstants.CROP;
+        final String testFile = "data/" + ID + "/" + ID + config.CROP;
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
             CropInfo info = serializer.read(in, errors);

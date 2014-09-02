@@ -1,7 +1,8 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.Permission;
 
 import java.io.IOException;
@@ -13,10 +14,18 @@ import java.util.List;
  *
  */
 public class PermissionSerializer implements Serializer<Permission> {
+
+    private AppConfig config;
+
+    @Inject
+    PermissionSerializer(AppConfig config) {
+        this.config = config;
+    }
+
     @Override
     public Permission read(InputStream is, List<String> errors) throws IOException {
 
-        List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.CHARSET);
         StringBuilder content = new StringBuilder();
 
         for (String line : lines) {

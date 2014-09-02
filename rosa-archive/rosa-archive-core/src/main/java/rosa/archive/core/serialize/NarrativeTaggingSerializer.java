@@ -1,7 +1,8 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
-import rosa.archive.core.RoseConstants;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.NarrativeTagging;
@@ -9,7 +10,6 @@ import rosa.archive.model.NarrativeTagging;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -19,12 +19,17 @@ import java.util.regex.Pattern;
  */
 public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> {
 
-    public NarrativeTaggingSerializer() {  }
+    private AppConfig config;
+
+    @Inject
+    NarrativeTaggingSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public NarrativeTagging read(InputStream is, List<String> errors) throws IOException {
 
-        List<String> lines = IOUtils.readLines(is, RoseConstants.CHARSET);
+        List<String> lines = IOUtils.readLines(is, config.CHARSET);
 
         // Guess if it is a .csv file or a .txt file. Each must be parsed differently.
         // Narrative Tagging CSV file will have 8 columns.
