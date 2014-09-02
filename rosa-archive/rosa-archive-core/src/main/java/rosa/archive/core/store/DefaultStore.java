@@ -2,6 +2,7 @@ package rosa.archive.core.store;
 
 import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
+import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.RoseConstants;
 import rosa.archive.core.serialize.Serializer;
@@ -18,31 +19,31 @@ import java.util.Map;
  */
 public class DefaultStore implements Store {
 
-    private final ByteStreamGroup bsg;
+    private final ByteStreamGroup base;
     private Map<Class, Serializer> serializerMap;
 
     @Inject
-    public DefaultStore(Map<Class, Serializer> serializerMap, @Assisted ByteStreamGroup bsg) {
-        this.bsg = bsg;
+    public DefaultStore(Map<Class, Serializer> serializerMap, @Assisted ByteStreamGroup base) {
+        this.base = base;
         this.serializerMap = serializerMap;
     }
 
     @Override
     public String[] listBookCollections() {
-        return bsg.listByteStreamGroupNames()
-                .toArray(new String[bsg.numberOfByteStreamGroups()]);
+        return base.listByteStreamGroupNames()
+                .toArray(new String[base.numberOfByteStreamGroups()]);
     }
 
     @Override
     public String[] listBooks(String collectionId) {
-        ByteStreamGroup collection = bsg.getByteStreamGroup(collectionId);
+        ByteStreamGroup collection = base.getByteStreamGroup(collectionId);
         return collection.listByteStreamGroupNames()
                 .toArray(new String[collection.numberOfByteStreamGroups()]);
     }
 
     @Override
     public BookCollection loadBookCollection(String collectionId) {
-        ByteStreamGroup collectionGroup = bsg.getByteStreamGroup(collectionId);
+        ByteStreamGroup collectionGroup = base.getByteStreamGroup(collectionId);
         BookCollection collection = new BookCollection();
 
         collection.setBooks(listBooks(collectionId));
@@ -53,15 +54,17 @@ public class DefaultStore implements Store {
         collection.setNarrativeSections(
                 loadItem(RoseConstants.NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class));
         collection.setMissing(loadItem(RoseConstants.MISSING_FOLIOS, collectionGroup, MissingList.class));
-        // TODO set languages!
-//        collection.setLanguages();
+
+        // Guess what languages are supported by inspecting the Character Names object...
+//        collection.getCharacterNames().getAllCharacterIds()
+        // TODO make languages configurable!
 
         return collection;
     }
 
     @Override
     public Book loadBook(String collectionId, String bookId) {
-        ByteStreamGroup byteStreams = bsg.getByteStreamGroup(collectionId);
+        ByteStreamGroup byteStreams = base.getByteStreamGroup(collectionId);
         if (!byteStreams.hasByteStreamGroup(bookId)) {
             // TODO report missing book
             return null;
@@ -99,12 +102,14 @@ public class DefaultStore implements Store {
         for (String name : content) {
             if (name.contains(RoseConstants.PERMISSION)) {
                 String lang = findLanguageCodeInName(name);
-                Permission perm = loadItem(
-                        bookId + RoseConstants.PERMISSION + lang + RoseConstants.XML,
-                        bookStreams,
-                        Permission.class
-                );
-                book.addPermission(perm, lang);
+                if (StringUtils.isNotBlank(lang)) {
+                    Permission perm = loadItem(
+                            bookId + RoseConstants.PERMISSION + lang + RoseConstants.XML,
+                            bookStreams,
+                            Permission.class
+                    );
+                    book.addPermission(perm, lang);
+                }
             }
         }
 

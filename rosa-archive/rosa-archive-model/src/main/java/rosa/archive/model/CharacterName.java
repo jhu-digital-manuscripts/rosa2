@@ -61,7 +61,14 @@ public class CharacterName implements IsSerializable {
      * @throws java.lang.NullPointerException thrown if language is NULL
      */
     public void addName(String name, String language) {
-        names.put(language.trim().toLowerCase(), name);
+        // hack to change weird column headers into 2 char language codes
+        language = language.toLowerCase().trim();
+        if (language.contains("english")) {
+            language = "en";
+        } else if (language.contains("french")) {
+            language = "fr";
+        }
+        names.put(language, name);
     }
 
     public void addName(String name) {

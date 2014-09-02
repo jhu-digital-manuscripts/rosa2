@@ -1,8 +1,5 @@
 package rosa.archive.core;
 
-import com.google.inject.Inject;
-import com.google.inject.assistedinject.Assisted;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.DirectoryStream;
@@ -25,9 +22,7 @@ public class ByteStreamGroupImpl implements ByteStreamGroup {
     private List<Path> files;
     private Map<String, ByteStreamGroup> directories;
 
-    // TODO no need for injection!
-    @Inject
-    public ByteStreamGroupImpl(@Assisted String base) {
+    public ByteStreamGroupImpl(String base) {
         this(Paths.get(base));
     }
 
