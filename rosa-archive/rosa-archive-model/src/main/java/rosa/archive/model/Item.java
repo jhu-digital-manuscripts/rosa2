@@ -12,7 +12,9 @@ public class Item implements IsSerializable {
 
     private int lines;
 
-    public Item() {  }
+    public Item() {
+        this.lines = -1;
+    }
 
     public int getLines() {
         return lines;

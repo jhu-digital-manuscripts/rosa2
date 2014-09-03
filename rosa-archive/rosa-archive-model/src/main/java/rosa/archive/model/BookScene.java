@@ -18,7 +18,11 @@ public class BookScene implements IsSerializable {
     private String startTranscription;
     private boolean correct;
 
-    public BookScene() {  }
+    public BookScene() {
+        startLineOffset = -1;
+        endLineOffset = -1;
+        startCriticalEdition = -1;
+    }
 
     public String getId() {
         return id;

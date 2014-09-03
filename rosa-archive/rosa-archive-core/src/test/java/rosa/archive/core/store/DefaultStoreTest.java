@@ -25,7 +25,6 @@ import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.nio.file.Path;
@@ -76,6 +75,7 @@ public class DefaultStoreTest {
 
         when(context.languages()).thenReturn(new String[] {"en", "fr"});
         when(context.getPERMISSION()).thenReturn(".permission_");
+        when(context.getDESCRIPTION()).thenReturn(".description_");
     }
 
     @Test
@@ -177,11 +177,12 @@ public class DefaultStoreTest {
     }
 
     @SuppressWarnings("unchecked")
-    private void mockSerializers(Set<Class> classes) throws IOException {
+    private void mockSerializers(Set<Class> classes) throws Exception {
 
         for (Class c : classes) {
             Serializer s = mock(Serializer.class);
-            when(s.read(any(InputStream.class), any(List.class))).thenReturn(null);
+            when(s.read(any(InputStream.class), any(List.class)))
+                    .thenReturn(c.newInstance());
             serializerMap.put(c, s);
         }
     }

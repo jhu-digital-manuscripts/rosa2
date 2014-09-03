@@ -20,6 +20,8 @@ public class StructureColumn implements IsSerializable {
 
     public StructureColumn() {
         this.items = new ArrayList<>();
+        this.totalLines = -1;
+        this.firstLineCriticalEdition = -1;
     }
 
     public StructureColumn(String parentSide, int totalLines, char columnLetter) {

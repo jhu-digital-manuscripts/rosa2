@@ -83,8 +83,6 @@ public class DefaultStore implements Store {
                 loadItem(bookId + config.getIMAGES_CROP(), bookStreams, ImageList.class));
         book.setCropInfo(
                 loadItem(bookId + config.getCROP(), bookStreams, CropInfo.class));
-        book.setBookMetadata(
-                loadItem(bookId + config.getDESCRIPTION(), bookStreams, BookMetadata.class));
         book.setBookStructure(
                 loadItem(bookId + config.getREDUCED_TAGGING(), bookStreams, BookStructure.class));
         book.setChecksumInfo(
@@ -101,17 +99,23 @@ public class DefaultStore implements Store {
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
 
-        // Look for permissions
+        // Look for language dependent items
+        // TODO validate language found against configured languages
         for (String name : content) {
+            String lang = findLanguageCodeInName(name);
             if (name.contains(config.getPERMISSION())) {
-                String lang = findLanguageCodeInName(name);
                 if (StringUtils.isNotBlank(lang)) {
-                    Permission perm = loadItem(
-                            bookId + config.getPERMISSION() + lang + config.getXML(),
-                            bookStreams,
-                            Permission.class
-                    );
+                    Permission perm = loadItem(name, bookStreams, Permission.class);
+                    perm.setId(name);
+
                     book.addPermission(perm, lang);
+                }
+            } else if (name.contains(config.getDESCRIPTION())) {
+                if (StringUtils.isNoneBlank(lang)) {
+                    BookMetadata metadata = loadItem(name, bookStreams, BookMetadata.class);
+                    metadata.setId(name);
+
+                    book.addBookMetadata(metadata, lang);
                 }
             }
         }
