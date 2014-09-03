@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class BookStructure implements Iterable<StructurePage>, IsSerializable {
 
+    private String id;
     /**
      * List of pages in order.
      */
@@ -19,6 +20,14 @@ public class BookStructure implements Iterable<StructurePage>, IsSerializable {
 
     public BookStructure() {
         this.pages = new ArrayList<>();
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     /**
@@ -109,6 +118,7 @@ public class BookStructure implements Iterable<StructurePage>, IsSerializable {
 
         BookStructure that = (BookStructure) o;
 
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (pages != null ? !pages.equals(that.pages) : that.pages != null) return false;
 
         return true;
@@ -116,13 +126,16 @@ public class BookStructure implements Iterable<StructurePage>, IsSerializable {
 
     @Override
     public int hashCode() {
-        return pages != null ? pages.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (pages != null ? pages.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "BookStructure{" +
-                "pages=" + pages +
+                "id='" + id + '\'' +
+                ", pages=" + pages +
                 '}';
     }
 }

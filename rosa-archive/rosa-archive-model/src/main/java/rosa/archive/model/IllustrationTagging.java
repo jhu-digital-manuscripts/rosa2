@@ -11,10 +11,19 @@ import java.util.List;
  */
 public class IllustrationTagging implements Iterable<Illustration>, IsSerializable {
 
+    private String id;
     private List<Illustration> data;
 
     public IllustrationTagging() {
         this.data = new ArrayList<>();
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public int size() {
@@ -79,22 +88,26 @@ public class IllustrationTagging implements Iterable<Illustration>, IsSerializab
         if (this == o) return true;
         if (!(o instanceof IllustrationTagging)) return false;
 
-        IllustrationTagging that = (IllustrationTagging) o;
+        IllustrationTagging tagging = (IllustrationTagging) o;
 
-        if (data != null ? !data.equals(that.data) : that.data != null) return false;
+        if (data != null ? !data.equals(tagging.data) : tagging.data != null) return false;
+        if (id != null ? !id.equals(tagging.id) : tagging.id != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return data != null ? data.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (data != null ? data.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "IllustrationTagging{" +
-                "data=" + data +
+                "id='" + id + '\'' +
+                ", data=" + data +
                 '}';
     }
 }

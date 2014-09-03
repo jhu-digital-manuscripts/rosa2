@@ -15,10 +15,19 @@ import java.util.Set;
  */
 public class CharacterNames implements IsSerializable {
 
+    private String id;
     private Map<String, CharacterName> names;
 
     public CharacterNames() {
         this.names = new HashMap<>();
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     /**
@@ -71,22 +80,26 @@ public class CharacterNames implements IsSerializable {
         if (this == o) return true;
         if (!(o instanceof CharacterNames)) return false;
 
-        CharacterNames that = (CharacterNames) o;
+        CharacterNames names1 = (CharacterNames) o;
 
-        if (names != null ? !names.equals(that.names) : that.names != null) return false;
+        if (id != null ? !id.equals(names1.id) : names1.id != null) return false;
+        if (names != null ? !names.equals(names1.names) : names1.names != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return names != null ? names.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (names != null ? names.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "CharacterNames{" +
-                "names=" + names +
+                "id='" + id + '\'' +
+                ", names=" + names +
                 '}';
     }
 }

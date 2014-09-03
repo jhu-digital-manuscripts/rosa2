@@ -26,7 +26,6 @@ public class Book implements IsSerializable {
      * Information about the cropping of the original images.
      */
     private CropInfo cropInfo;
-    private BookMetadata bookMetadata;
     private BookDescription bookDescription;
     private ChecksumInfo checksumInfo;
     /**
@@ -40,10 +39,12 @@ public class Book implements IsSerializable {
     private NarrativeTagging automaticNarrativeTagging;
 
     private Map<String, Permission> permissions;
+    private Map<String, BookMetadata> metadataMap;
     private Transcription transcription;
 
     public Book() {
         this.permissions = new HashMap<>();
+        this.metadataMap = new HashMap<>();
     }
 
     public String getId() {
@@ -78,12 +79,16 @@ public class Book implements IsSerializable {
         this.cropInfo = cropInfo;
     }
 
-    public BookMetadata getBookMetadata() {
-        return bookMetadata;
+    public BookMetadata getBookMetadata(String language) {
+        return metadataMap.get(language);
     }
 
-    public void setBookMetadata(BookMetadata bookMetadata) {
-        this.bookMetadata = bookMetadata;
+    public void addBookMetadata(BookMetadata metadata, String language) {
+        metadataMap.put(language, metadata);
+    }
+
+    public void setBookMetadata(Map<String, BookMetadata> metadataMap) {
+        this.metadataMap = metadataMap;
     }
 
     public BookDescription getBookDescription() {
@@ -185,7 +190,6 @@ public class Book implements IsSerializable {
             return false;
         if (bookDescription != null ? !bookDescription.equals(book.bookDescription) : book.bookDescription != null)
             return false;
-        if (bookMetadata != null ? !bookMetadata.equals(book.bookMetadata) : book.bookMetadata != null) return false;
         if (bookStructure != null ? !bookStructure.equals(book.bookStructure) : book.bookStructure != null)
             return false;
         if (checksumInfo != null ? !checksumInfo.equals(book.checksumInfo) : book.checksumInfo != null) return false;
@@ -199,6 +203,7 @@ public class Book implements IsSerializable {
         if (images != null ? !images.equals(book.images) : book.images != null) return false;
         if (manualNarrativeTagging != null ? !manualNarrativeTagging.equals(book.manualNarrativeTagging) : book.manualNarrativeTagging != null)
             return false;
+        if (metadataMap != null ? !metadataMap.equals(book.metadataMap) : book.metadataMap != null) return false;
         if (permissions != null ? !permissions.equals(book.permissions) : book.permissions != null) return false;
         if (transcription != null ? !transcription.equals(book.transcription) : book.transcription != null)
             return false;
@@ -212,7 +217,6 @@ public class Book implements IsSerializable {
         result = 31 * result + (images != null ? images.hashCode() : 0);
         result = 31 * result + (croppedImages != null ? croppedImages.hashCode() : 0);
         result = 31 * result + (cropInfo != null ? cropInfo.hashCode() : 0);
-        result = 31 * result + (bookMetadata != null ? bookMetadata.hashCode() : 0);
         result = 31 * result + (bookDescription != null ? bookDescription.hashCode() : 0);
         result = 31 * result + (checksumInfo != null ? checksumInfo.hashCode() : 0);
         result = 31 * result + (content != null ? Arrays.hashCode(content) : 0);
@@ -221,6 +225,7 @@ public class Book implements IsSerializable {
         result = 31 * result + (manualNarrativeTagging != null ? manualNarrativeTagging.hashCode() : 0);
         result = 31 * result + (automaticNarrativeTagging != null ? automaticNarrativeTagging.hashCode() : 0);
         result = 31 * result + (permissions != null ? permissions.hashCode() : 0);
+        result = 31 * result + (metadataMap != null ? metadataMap.hashCode() : 0);
         result = 31 * result + (transcription != null ? transcription.hashCode() : 0);
         return result;
     }
@@ -232,7 +237,6 @@ public class Book implements IsSerializable {
                 ", images=" + images +
                 ", croppedImages=" + croppedImages +
                 ", cropInfo=" + cropInfo +
-                ", bookMetadata=" + bookMetadata +
                 ", bookDescription=" + bookDescription +
                 ", checksumInfo=" + checksumInfo +
                 ", content=" + Arrays.toString(content) +
@@ -241,7 +245,8 @@ public class Book implements IsSerializable {
                 ", manualNarrativeTagging=" + manualNarrativeTagging +
                 ", automaticNarrativeTagging=" + automaticNarrativeTagging +
                 ", permissions=" + permissions +
-                ", transcription='" + transcription + '\'' +
+                ", metadataMap=" + metadataMap +
+                ", transcription=" + transcription +
                 '}';
     }
 }

@@ -13,7 +13,12 @@ public class CropData implements IsSerializable {
     private double top;
     private double bottom;
 
-    public CropData() {  }
+    public CropData() {
+        left = -1.0;
+        right = -1.0;
+        top = -1.0;
+        bottom = -1.0;
+    }
 
     public String getId() {
         return id;

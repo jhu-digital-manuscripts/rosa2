@@ -12,9 +12,18 @@ import java.util.Map.Entry;
 public class CropInfo implements Iterable<CropData>, IsSerializable {
 
     private HashMap<String, CropData> data;
+    private String id;
 
     public CropInfo() {
         this.data = new HashMap<>();
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public CropData getCropDataForPage(String page) {
@@ -52,22 +61,26 @@ public class CropInfo implements Iterable<CropData>, IsSerializable {
         if (this == o) return true;
         if (!(o instanceof CropInfo)) return false;
 
-        CropInfo cropInfo = (CropInfo) o;
+        CropInfo info = (CropInfo) o;
 
-        if (data != null ? !data.equals(cropInfo.data) : cropInfo.data != null) return false;
+        if (data != null ? !data.equals(info.data) : info.data != null) return false;
+        if (id != null ? !id.equals(info.id) : info.id != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return data != null ? data.hashCode() : 0;
+        int result = data != null ? data.hashCode() : 0;
+        result = 31 * result + (id != null ? id.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "CropInfo{" +
                 "data=" + data +
+                ", id='" + id + '\'' +
                 '}';
     }
 }

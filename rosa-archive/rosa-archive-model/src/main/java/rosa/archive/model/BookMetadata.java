@@ -10,6 +10,7 @@ import java.util.Collection;
  */
 public class BookMetadata implements IsSerializable {
 
+    private String id;
     private String date;
     private int yearStart;
     private int yearEnd;
@@ -34,6 +35,14 @@ public class BookMetadata implements IsSerializable {
         height = -1;
         numberOfIllustrations = -1;
         numberOfPages = -1;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getDate() {
@@ -169,32 +178,34 @@ public class BookMetadata implements IsSerializable {
         if (this == o) return true;
         if (!(o instanceof BookMetadata)) return false;
 
-        BookMetadata that = (BookMetadata) o;
+        BookMetadata metadata = (BookMetadata) o;
 
-        if (height != that.height) return false;
-        if (numberOfIllustrations != that.numberOfIllustrations) return false;
-        if (numberOfPages != that.numberOfPages) return false;
-        if (width != that.width) return false;
-        if (yearEnd != that.yearEnd) return false;
-        if (yearStart != that.yearStart) return false;
-        if (commonName != null ? !commonName.equals(that.commonName) : that.commonName != null) return false;
-        if (currentLocation != null ? !currentLocation.equals(that.currentLocation) : that.currentLocation != null)
+        if (height != metadata.height) return false;
+        if (numberOfIllustrations != metadata.numberOfIllustrations) return false;
+        if (numberOfPages != metadata.numberOfPages) return false;
+        if (width != metadata.width) return false;
+        if (yearEnd != metadata.yearEnd) return false;
+        if (yearStart != metadata.yearStart) return false;
+        if (commonName != null ? !commonName.equals(metadata.commonName) : metadata.commonName != null) return false;
+        if (currentLocation != null ? !currentLocation.equals(metadata.currentLocation) : metadata.currentLocation != null)
             return false;
-        if (date != null ? !date.equals(that.date) : that.date != null) return false;
-        if (dimensions != null ? !dimensions.equals(that.dimensions) : that.dimensions != null) return false;
-        if (material != null ? !material.equals(that.material) : that.material != null) return false;
-        if (origin != null ? !origin.equals(that.origin) : that.origin != null) return false;
-        if (repository != null ? !repository.equals(that.repository) : that.repository != null) return false;
-        if (shelfmark != null ? !shelfmark.equals(that.shelfmark) : that.shelfmark != null) return false;
-        if (!Arrays.equals(texts, that.texts)) return false;
-        if (type != null ? !type.equals(that.type) : that.type != null) return false;
+        if (date != null ? !date.equals(metadata.date) : metadata.date != null) return false;
+        if (dimensions != null ? !dimensions.equals(metadata.dimensions) : metadata.dimensions != null) return false;
+        if (id != null ? !id.equals(metadata.id) : metadata.id != null) return false;
+        if (material != null ? !material.equals(metadata.material) : metadata.material != null) return false;
+        if (origin != null ? !origin.equals(metadata.origin) : metadata.origin != null) return false;
+        if (repository != null ? !repository.equals(metadata.repository) : metadata.repository != null) return false;
+        if (shelfmark != null ? !shelfmark.equals(metadata.shelfmark) : metadata.shelfmark != null) return false;
+        if (!Arrays.equals(texts, metadata.texts)) return false;
+        if (type != null ? !type.equals(metadata.type) : metadata.type != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = date != null ? date.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (date != null ? date.hashCode() : 0);
         result = 31 * result + yearStart;
         result = 31 * result + yearEnd;
         result = 31 * result + (currentLocation != null ? currentLocation.hashCode() : 0);
@@ -216,7 +227,8 @@ public class BookMetadata implements IsSerializable {
     @Override
     public String toString() {
         return "BookMetadata{" +
-                "date='" + date + '\'' +
+                "id='" + id + '\'' +
+                ", date='" + date + '\'' +
                 ", yearStart=" + yearStart +
                 ", yearEnd=" + yearEnd +
                 ", currentLocation='" + currentLocation + '\'' +

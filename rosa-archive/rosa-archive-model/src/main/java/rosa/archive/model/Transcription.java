@@ -5,9 +5,18 @@ package rosa.archive.model;
  */
 public class Transcription {
 
+    private String id;
     private String content;
 
     public Transcription() {  }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getContent() {
         return content;
@@ -25,19 +34,23 @@ public class Transcription {
         Transcription that = (Transcription) o;
 
         if (content != null ? !content.equals(that.content) : that.content != null) return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return content != null ? content.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (content != null ? content.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "Transcription{" +
-                "content='" + content + '\'' +
+                "id='" + id + '\'' +
+                ", content='" + content + '\'' +
                 '}';
     }
 }

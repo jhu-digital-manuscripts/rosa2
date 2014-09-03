@@ -11,10 +11,19 @@ import java.util.List;
  */
 public class NarrativeTagging implements IsSerializable, Iterable<BookScene> {
 
+    private String id;
     private List<BookScene> scenes;
 
     public NarrativeTagging() {
         this.scenes = new ArrayList<>();
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public List<BookScene> getScenes() {
@@ -35,22 +44,26 @@ public class NarrativeTagging implements IsSerializable, Iterable<BookScene> {
         if (this == o) return true;
         if (!(o instanceof NarrativeTagging)) return false;
 
-        NarrativeTagging that = (NarrativeTagging) o;
+        NarrativeTagging tagging = (NarrativeTagging) o;
 
-        if (scenes != null ? !scenes.equals(that.scenes) : that.scenes != null) return false;
+        if (id != null ? !id.equals(tagging.id) : tagging.id != null) return false;
+        if (scenes != null ? !scenes.equals(tagging.scenes) : tagging.scenes != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return scenes != null ? scenes.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (scenes != null ? scenes.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "NarrativeTagging{" +
-                "scenes=" + scenes +
+                "id='" + id + '\'' +
+                ", scenes=" + scenes +
                 '}';
     }
 }

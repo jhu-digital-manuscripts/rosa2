@@ -5,9 +5,18 @@ package rosa.archive.model;
  */
 public class Permission {
 
+    private String id;
     private String permission;
 
     public Permission() {  }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getPermission() {
         return permission;
@@ -24,6 +33,7 @@ public class Permission {
 
         Permission that = (Permission) o;
 
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (permission != null ? !permission.equals(that.permission) : that.permission != null) return false;
 
         return true;
@@ -31,13 +41,16 @@ public class Permission {
 
     @Override
     public int hashCode() {
-        return permission != null ? permission.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (permission != null ? permission.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "Permission{" +
-                "permission='" + permission + '\'' +
+                "id='" + id + '\'' +
+                ", permission='" + permission + '\'' +
                 '}';
     }
 }

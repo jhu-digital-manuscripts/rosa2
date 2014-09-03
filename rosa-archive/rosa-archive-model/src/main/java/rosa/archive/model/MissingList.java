@@ -10,10 +10,19 @@ import java.util.List;
  */
 public class MissingList implements IsSerializable {
 
+    private String id;
     private List<String> missing;
 
     public MissingList() {
         this.missing = new ArrayList<>();
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public List<String> getMissing() {
@@ -31,6 +40,7 @@ public class MissingList implements IsSerializable {
 
         MissingList that = (MissingList) o;
 
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (missing != null ? !missing.equals(that.missing) : that.missing != null) return false;
 
         return true;
@@ -38,13 +48,16 @@ public class MissingList implements IsSerializable {
 
     @Override
     public int hashCode() {
-        return missing != null ? missing.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (missing != null ? missing.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "MissingList{" +
-                "missing=" + missing +
+                "id='" + id + '\'' +
+                ", missing=" + missing +
                 '}';
     }
 }

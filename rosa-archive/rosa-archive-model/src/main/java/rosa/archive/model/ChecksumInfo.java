@@ -11,6 +11,7 @@ import java.util.Set;
  */
 public class ChecksumInfo implements IsSerializable {
 
+    private String id;
     /**
      * Archive item ID -> ChecksumData
      */
@@ -18,6 +19,14 @@ public class ChecksumInfo implements IsSerializable {
 
     public ChecksumInfo() {
         this.checksums = new HashMap<>();
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Set<String> getAllIds() {
@@ -37,22 +46,26 @@ public class ChecksumInfo implements IsSerializable {
         if (this == o) return true;
         if (!(o instanceof ChecksumInfo)) return false;
 
-        ChecksumInfo that = (ChecksumInfo) o;
+        ChecksumInfo info = (ChecksumInfo) o;
 
-        if (!checksums.equals(that.checksums)) return false;
+        if (checksums != null ? !checksums.equals(info.checksums) : info.checksums != null) return false;
+        if (id != null ? !id.equals(info.id) : info.id != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return checksums.hashCode();
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (checksums != null ? checksums.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "ChecksumInfo{" +
-                "checksums=" + checksums +
+                "id='" + id + '\'' +
+                ", checksums=" + checksums +
                 '}';
     }
 }

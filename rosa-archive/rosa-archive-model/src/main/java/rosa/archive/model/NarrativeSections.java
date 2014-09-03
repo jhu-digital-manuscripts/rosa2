@@ -11,10 +11,19 @@ import java.util.List;
  */
 public class NarrativeSections implements IsSerializable {
 
+    private String id;
     private List<NarrativeScene> scenes;
 
     public NarrativeSections() {
         this.scenes = new ArrayList<>();
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     /**
@@ -59,22 +68,26 @@ public class NarrativeSections implements IsSerializable {
         if (this == o) return true;
         if (!(o instanceof NarrativeSections)) return false;
 
-        NarrativeSections that = (NarrativeSections) o;
+        NarrativeSections sections = (NarrativeSections) o;
 
-        if (!scenes.equals(that.scenes)) return false;
+        if (id != null ? !id.equals(sections.id) : sections.id != null) return false;
+        if (scenes != null ? !scenes.equals(sections.scenes) : sections.scenes != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return scenes.hashCode();
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (scenes != null ? scenes.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "NarrativeSections{" +
-                "scenes=" + scenes +
+                "id='" + id + '\'' +
+                ", scenes=" + scenes +
                 '}';
     }
 }
