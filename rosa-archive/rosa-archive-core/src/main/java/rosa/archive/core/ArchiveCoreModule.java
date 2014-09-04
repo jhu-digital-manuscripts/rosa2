@@ -5,6 +5,10 @@ import com.google.inject.TypeLiteral;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
 import com.google.inject.multibindings.MapBinder;
 import com.google.inject.name.Names;
+import rosa.archive.core.check.BookChecker;
+import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.check.Checker;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
@@ -22,6 +26,8 @@ import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import rosa.archive.core.store.DefaultStore;
 import rosa.archive.core.store.Store;
 import rosa.archive.core.store.StoreFactory;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.CharacterNames;
@@ -83,6 +89,13 @@ public class ArchiveCoreModule extends AbstractModule {
         mapBinder.addBinding(Permission.class).to(PermissionSerializer.class);
 
         // Data checkers
+        MapBinder<Class, Checker> checkerMapBinder = MapBinder.newMapBinder(
+                binder(),
+                Class.class,
+                Checker.class
+        );
+        checkerMapBinder.addBinding(Book.class).to(BookChecker.class);
+        checkerMapBinder.addBinding(BookCollection.class).to(BookCollectionChecker.class);
 
         // Store
         install(new FactoryModuleBuilder()

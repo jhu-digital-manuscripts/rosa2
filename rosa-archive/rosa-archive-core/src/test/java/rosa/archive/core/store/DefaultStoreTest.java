@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.ByteStreamGroupImpl;
 import rosa.archive.core.check.Checker;
@@ -41,6 +42,9 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyBoolean;
+import static org.mockito.Matchers.anyObject;
+import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.atMost;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -49,29 +53,22 @@ import static org.mockito.Mockito.when;
 /**
  *
  */
-public class DefaultStoreTest {
+public class DefaultStoreTest extends AbstractFileSystemTest {
 
     private DefaultStore store;
     @Mock
-    private Checker<Object> checker;
-    @Mock
     private AppConfig context;
     private Map<Class, Serializer> serializerMap;
+    private Map<Class, Checker> checkerMap;
 
     @Before
-    public void setup() throws Exception {
+    public void setup() {
+        super.setup();
         MockitoAnnotations.initMocks(this);
         serializerMap = new HashMap<>();
+        checkerMap = new HashMap<>();
 
-        // TODO move to BaseTest class
-        URL u = getClass().getClassLoader().getResource("data/character_names.csv");
-        assertNotNull(u);
-        String url = u.getPath();
-
-        Path path = Paths.get(url.startsWith("/") ? url.substring(1) : url).getParent().getParent();
-
-        ByteStreamGroup bsg = new ByteStreamGroupImpl(path.toString());
-        this.store = new DefaultStore(serializerMap, context, bsg);
+        this.store = new DefaultStore(serializerMap, checkerMap, context, base);
 
         when(context.languages()).thenReturn(new String[] {"en", "fr"});
         when(context.getPERMISSION()).thenReturn(".permission_");
@@ -103,20 +100,30 @@ public class DefaultStoreTest {
     }
 
     @Test
-    public void checkerTests() {
+    @SuppressWarnings("unchecked")
+    public void checkerTests() throws Exception {
+        Set<Class> classes = new HashSet<>();
+        classes.add(Book.class);
+        classes.add(BookCollection.class);
+
+        mockCheckers(classes);
+
         Book book = new Book();
         BookCollection collection = new BookCollection();
 
-        // Stub implementations
-        assertFalse(store.checkBitIntegrity(book));
-        assertFalse(store.checkBitIntegrity(collection));
-        assertFalse(store.checkContentConsistency(book));
-        assertFalse(store.checkContentConsistency(collection));
+        assertFalse(store.check(book, true));
+        assertFalse(store.check(book, false));
+        assertFalse(store.check(collection, true));
+        assertFalse(store.check(collection, false));
 
-//        verify(checker).checkBits(book);
-//        verify(checker).checkBits(collection);
-//        verify(checker).checkContent(book);
-//        verify(checker).checkContent(collection);
+        Checker bChecker = checkerMap.get(Book.class);
+        verify(bChecker).checkContent(eq(book), any(ByteStreamGroup.class), eq(true));
+        verify(bChecker).checkContent(eq(book), any(ByteStreamGroup.class), eq(true));
+
+        Checker cChecker = checkerMap.get(BookCollection.class);
+        verify(cChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(true));
+        verify(cChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(true));
+
     }
 
     @Test
@@ -184,6 +191,16 @@ public class DefaultStoreTest {
             when(s.read(any(InputStream.class), any(List.class)))
                     .thenReturn(c.newInstance());
             serializerMap.put(c, s);
+        }
+    }
+
+    @SuppressWarnings("unchecked")
+    private void mockCheckers(Set<Class> classes) throws Exception {
+        for (Class c : classes) {
+            Checker check = mock(Checker.class);
+            when(check.checkContent(anyObject(), any(ByteStreamGroup.class), anyBoolean()))
+                    .thenReturn(false);
+            checkerMap.put(c, check);
         }
     }
 

@@ -1,5 +1,6 @@
 package rosa.archive.core.check;
 
+import com.google.inject.Inject;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
@@ -34,6 +35,7 @@ public class BookChecker implements Checker<Book> {
 
     private AppConfig config;
 
+    @Inject
     BookChecker(AppConfig config) {
         this.config = config;
     }
@@ -331,7 +333,7 @@ public class BookChecker implements Checker<Book> {
             if (StringUtils.isBlank(data.getHash())) {
                 errors.add("Hash value missing. [" + data + "]");
             }
-            if (!StringUtils.isNumeric(data.getHash())) {
+            if (!StringUtils.isAlphanumeric(data.getHash())) {
                 errors.add("Hash value is non-numeric. " + data + "]");
             }
         }
@@ -366,14 +368,17 @@ public class BookChecker implements Checker<Book> {
             if (StringUtils.isBlank(page.getId())) {
                 errors.add("Page ID missing. [" + page + "]");
             }
-            if (StringUtils.isBlank(page.getName())) {
-                errors.add("Page name missing. [" + page + "]");
-            }
             if (page.getVerso() != null) {
                 errors.addAll(check(page.getVerso()));
+                if (guessImageName(page.getId() + "v", parent) == null) {
+                    errors.add("Could not find image associated with verso. [" + page + "]");
+                }
             }
             if (page.getRecto() != null) {
                 errors.addAll(check(page.getRecto()));
+                if (guessImageName(page.getId() + "r", parent) == null) {
+                    errors.add("Could not find image associated with recto. [" + page + "]");
+                }
             }
         }
 
@@ -433,17 +438,11 @@ public class BookChecker implements Checker<Book> {
             return errors;
         }
 
-        if (StringUtils.isBlank(column.getFirstLineTranscribed())) {
-            errors.add("First line of column is not transcribed. [" + column + "]");
-        }
         if (StringUtils.isBlank(column.getParentSide())) {
             errors.add("Parent side of column missing. [" + column + "]");
         }
         if (column.getColumnLetter() == '\u0000') {
             errors.add("Column letter designation missing. [" + column + "]");
-        }
-        if (column.getFirstLineCriticalEdition() < 0) {
-            errors.add("First line of the critical edition not defined. [" + column + "]");
         }
         if (column.getTotalLines() < 0) {
             errors.add("Total lines of column not defined. [" + column + "]");
@@ -538,10 +537,53 @@ public class BookChecker implements Checker<Book> {
         }
 
         for (BookScene scene : tagging) {
-            // TODO
+            // TODO compare with scenes in collections NarrativeSections
+            if (guessImageName(scene.getStartPage(), parent) == null) {
+                errors.add("Could not find start page of scene. [" + scene + "]");
+            }
+            if (guessImageName(scene.getEndPage(), parent) == null) {
+                errors.add("Could not find end page of scene. [" + scene + "]");
+            }
         }
 
         return errors;
+    }
+
+    /**
+     * Guess the name of the image associated with a name.
+     *
+     * @param name name of item to check
+     * @param book book archive
+     * @return the name of the image or NULL if no image is found
+     */
+    private String guessImageName(String name, Book book) {
+        name = name.trim();
+
+        if (name.matches("\\d+")) {
+            name += "r";
+        }
+
+        if (name.matches("\\d[rRvV]")) {
+            name = "00" + name;
+        } else if (name.matches("\\d\\d[rRvV]")) {
+            name = "0" + name;
+        }
+
+        if (!name.endsWith(".tif")) {
+            name += ".tif";
+        }
+
+        if (!name.startsWith(book.getId())) {
+            name = book.getId() + "." + name;
+        }
+
+        for (String itemName : book.getContent()) {
+            if (itemName.equalsIgnoreCase(name)) {
+                return itemName;
+            }
+        }
+        
+        return null;
     }
 
 }

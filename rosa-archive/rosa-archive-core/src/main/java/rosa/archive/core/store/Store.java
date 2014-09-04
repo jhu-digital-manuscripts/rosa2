@@ -41,36 +41,7 @@ public interface Store {
     Book loadBook(String collectionId, String bookId);
 
     /**
-     * Check whether or not the data held in an object is the data that you expect.
-     *
-     * <p>
-     *     This method compares the object on a bit level and compares it to the data
-     *     in the archive. True will be returned only if the data model object exactly
-     *     matches the data from the archive.
-     * </p>
-     *
-     *
-     * @param collection
-     *          collection to check
-     * @return
-     *          TRUE if the data matches the data in the archive, FALSE otherwise
-     */
-    boolean checkBitIntegrity(BookCollection collection);
-
-    /**
-     * Checks whether or not the data in the Book matches the associated data in
-     * the archive. See {@link #checkBitIntegrity(rosa.archive.model.BookCollection)}
-     * for more description.
-     *
-     * @param book
-     *          book to check
-     * @return
-     *          TRUE if the data matches the data in the archive, FALSE otherwise
-     */
-    boolean checkBitIntegrity(Book book);
-
-    /**
-     * Check the consistency of the data in a archive model object.
+     * Check the internal data consistency and bit integrity of an archive within this Store.
      *
      * <p>
      *     This method checks an archive data model object for the correct data structure.
@@ -81,24 +52,26 @@ public interface Store {
      *     checked, instead this method only checks to see if all necessary items exist and
      *     are readable.
      * </p>
+     * <p>
+     *     If {@code checkBits} is TRUE, the bit values of each item in the archive is checked
+     *     against known values to ensure that the bits that you read are the bits that you
+     *     want, and that all of the data is valid.
+     * </p>
      *
-     * @param collection
-     *          collection to check
-     * @return
-     *          TRUE if the data is self consistent, FALSE otherwise
+     * @param book book to check
+     * @param checkBits check bit integrity?
+     * @return TRUE if data checks complete with no errors, FALSE otherwise
      */
-    boolean checkContentConsistency(BookCollection collection);
+    boolean check(Book book, boolean checkBits);
 
     /**
-     * Checks the consistency of the data of a Book. For more description, see
-     * {@link #checkContentConsistency(rosa.archive.model.BookCollection)}.
+     * See {@link #check(rosa.archive.model.Book, boolean)}
      *
-     * @param book
-     *          a Book
-     * @return
-     *          TRUE if the data is self consistent, FALSE otherwise
+     * @param collection collection to check
+     * @param checkBits check bit integrity?
+     * @return TRUE if data checks complete with no errors, FALSE otherwise
      */
-    boolean checkContentConsistency(Book book);
+    boolean check(BookCollection collection, boolean checkBits);
 
     // TODO the following methods will not be in first iteration!
     // updateBook(...)

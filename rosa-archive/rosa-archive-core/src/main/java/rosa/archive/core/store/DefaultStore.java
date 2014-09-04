@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
+import rosa.archive.core.check.Checker;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.*;
@@ -22,14 +23,17 @@ public class DefaultStore implements Store {
     private final ByteStreamGroup base;
     private final AppConfig config;
     private Map<Class, Serializer> serializerMap;
+    private Map<Class, Checker> checkerMap;
 
     @Inject
     public DefaultStore(Map<Class, Serializer> serializerMap,
+                        Map<Class, Checker> checkerMap,
                         AppConfig config,
                         @Assisted ByteStreamGroup base) {
         this.base = base;
         this.config = config;
         this.serializerMap = serializerMap;
+        this.checkerMap = checkerMap;
     }
 
     @Override
@@ -53,11 +57,15 @@ public class DefaultStore implements Store {
         collection.setBooks(listBooks(collectionId));
         collection.setCharacterNames(
                 loadItem(config.getCHARACTER_NAMES(), collectionGroup, CharacterNames.class));
+        collection.getCharacterNames().setId(config.getCHARACTER_NAMES());
         collection.setIllustrationTitles(
                 loadItem(config.getILLUSTRATION_TITLES(), collectionGroup, IllustrationTitles.class));
+        collection.getIllustrationTitles().setId(config.getILLUSTRATION_TITLES());
         collection.setNarrativeSections(
                 loadItem(config.getNARRATIVE_SECTIONS(), collectionGroup, NarrativeSections.class));
+        collection.getNarrativeSections().setId(config.getNARRATIVE_SECTIONS());
         collection.setMissing(loadItem(config.getMISSING_PAGES(), collectionGroup, MissingList.class));
+        collection.getMissing().setId(config.getMISSING_PAGES());
 
         // Languages from configuration.
         collection.setLanguages(config.languages());
@@ -79,22 +87,31 @@ public class DefaultStore implements Store {
         book.setId(bookId);
         book.setImages(
                 loadItem(bookId + config.getIMAGES(), bookStreams, ImageList.class));
+        book.getImages().setId(bookId + config.getIMAGES());
         book.setCroppedImages(
                 loadItem(bookId + config.getIMAGES_CROP(), bookStreams, ImageList.class));
+        book.getCroppedImages().setId(bookId + config.getIMAGES_CROP());
         book.setCropInfo(
                 loadItem(bookId + config.getCROP(), bookStreams, CropInfo.class));
+        book.getCropInfo().setId(bookId + config.getCROP());
         book.setBookStructure(
                 loadItem(bookId + config.getREDUCED_TAGGING(), bookStreams, BookStructure.class));
+        book.getBookStructure().setId(bookId + config.getREDUCED_TAGGING());
         book.setChecksumInfo(
                 loadItem(bookId + config.getSHA1SUM(), bookStreams, ChecksumInfo.class));
+        book.getChecksumInfo().setId(bookId + config.getSHA1SUM());
         book.setIllustrationTagging(
                 loadItem(bookId + config.getIMAGE_TAGGING(), bookStreams, IllustrationTagging.class));
+        book.getIllustrationTagging().setId(bookId + config.getIMAGE_TAGGING());
         book.setManualNarrativeTagging(
                 loadItem(bookId + config.getNARRATIVE_TAGGING_MAN(), bookStreams, NarrativeTagging.class));
+        book.getManualNarrativeTagging().setId(bookId + config.getNARRATIVE_TAGGING_MAN());
         book.setAutomaticNarrativeTagging(
                 loadItem(bookId + config.getNARRATIVE_TAGGING(), bookStreams, NarrativeTagging.class));
+        book.getAutomaticNarrativeTagging().setId(bookId + config.getNARRATIVE_TAGGING());
         book.setTranscription(
                 loadItem(bookId + config.getTRANSCRIPTION(), bookStreams, Transcription.class));
+        book.getTranscription().setId(bookId + config.getTRANSCRIPTION());
 
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
@@ -121,6 +138,18 @@ public class DefaultStore implements Store {
         }
 
         return book;
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public boolean check(Book book, boolean checkBits) {
+        return checkerMap.get(Book.class).checkContent(book, base, checkBits);
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public boolean check(BookCollection collection, boolean checkBits) {
+        return checkerMap.get(BookCollection.class).checkContent(collection, base, checkBits);
     }
 
     @SuppressWarnings("unchecked")
@@ -151,23 +180,5 @@ public class DefaultStore implements Store {
         return "";
     }
 
-    @Override
-    public boolean checkBitIntegrity(BookCollection collection) {
-        return false;
-    }
 
-    @Override
-    public boolean checkBitIntegrity(Book book) {
-        return false;
-    }
-
-    @Override
-    public boolean checkContentConsistency(BookCollection collection) {
-        return false;
-    }
-
-    @Override
-    public boolean checkContentConsistency(Book book) {
-        return false;
-    }
 }
