@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Roman de la Rose</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>M. 948, Morgan Library &amp; Museum, New York. French, c. 1520.</p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 260mm x 180mm, 210 folios</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p>
+                  <material>Parchment</material> of good quality, with only the most minor instances of holes or soiling
+                     (<locus>3v</locus> and <locus>4r</locus>, the dedication page, show the most
+                  signs of use).</p>
+            
+            </note>
+            
+            <note rend="QUIRES">
+               
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     <locus from="1" to="4">1-4</locus>two adjacent bifolia, one ruled and
+                     blank except for title; the other containing dedication page and coat of arms;
+                     first bifolium might possibly be two single leaves </item>
+                  
+                  <item n="II">
+                     <locus from="5" to="12">5-12</locus>
+                  </item>
+                  
+                  <item n="III">
+                     <locus from="13" to="19">13-19</locus>(one leaf missing before fol. 13; Lecoy 652-763) </item>
+                  
+                  <item n="IV">
+                     <locus from="20" to="27">20-27</locus>
+                  </item>
+                  
+                  <item n="V">
+                     <locus from="28" to="29">28-29</locus>
+                  </item>
+                  
+                  <item n="VI">
+                     <locus from="30" to="37">30-37</locus>
+                  </item>
+                  
+                  <item n="VII">
+                     <locus from="38" to="45">38-45</locus>
+                  </item>
+                  
+                  <item n="VIII">
+                     <locus from="46" to="53">46-53</locus>
+                  </item>
+                  
+                  <item n="IX">
+                     <locus from="54" to="61">54-61</locus>
+                  </item>
+                  
+                  <item n="X">
+                     <locus from="62" to="69">62-69</locus>
+                  </item>
+                  
+                  <item n="XI">
+                     <locus from="70" to="77">70-77</locus>
+                  </item>
+                  
+                  <item n="XII">
+                     <locus from="78" to="85">78-85</locus>
+                  </item>
+                  
+                  <item n="XIII">
+                     <locus from="86" to="93">86-93</locus>
+                  </item>
+                  
+                  <item n="XIV">
+                     <locus from="94" to="99">94-99</locus>
+                  </item>
+                  
+                  <item n="XV">
+                     <locus from="100" to="107">100-107</locus>
+                  </item>
+                  
+                  <item n="XVI">
+                     <locus from="108" to="115">108-115</locus>
+                  </item>
+                  
+                  <item n="XVII">
+                     <locus from="116" to="123">116-123</locus>
+                  </item>
+                  
+                  <item n="XVIII">
+                     <locus from="124" to="131">124-131</locus>
+                  </item>
+                  
+                  <item n="XIX">
+                     <locus from="132" to="139">132-139</locus>
+                  </item>
+                  
+                  <item n="XX">
+                     <locus from="140" to="147">140-147</locus>
+                  </item>
+                  
+                  <item n="XXI">
+                     <locus from="148" to="155">148-155</locus>
+                  </item>
+                  
+                  <item n="XXII">
+                     <locus from="156" to="163">156-163</locus>
+                  </item>
+                  
+                  <item n="XXIII">
+                     <locus from="164" to="171">164-171</locus>
+                  </item>
+                  
+                  <item n="XXIV">
+                     <locus from="172" to="179">172-179</locus>
+                  </item>
+                  
+                  <item n="XXV">
+                     <locus from="180" to="187">180-187</locus>
+                  </item>
+                  
+                  <item n="XXVI">
+                     <locus from="188" to="195">188-195</locus>
+                  </item>
+                  
+                  <item n="XXVII">
+                     <locus from="196" to="201">196-201</locus>(two leaves missing after fol. 198; Lecoy 20677-20840) </item>
+                  
+                  <item n="XXVIII">
+                     <locus from="202" to="209">202-209</locus>; (fol.210 added singleton)</item>
+                  
+               
+               </list>
+               
+               <p>ii+210+ii. Modern quire numbers are present in bottom left gutter beginning with quire II (i.e. the numbering of the quires begins with “1,” on fol. <locus>5</locus>, continues with “2” on fol. <locus>13</locus>, etc.). Signatures were formerly on the first four leaves of each gathering at the bottom center, but are now mostly lost to cropping. A few remain, however, e.g. fol. <locus>88r</locus> 
+                  <hi rend="italics">Liij</hi> (L3), <locus>109r</locus> 
+                  <hi rend="italics">oij</hi> (O2), <locus>119r</locus> 
+                  <hi rend="italics">p4</hi> (P4). (The alphabet used to designate signatures includes “J” but not “W.”) No catchwords. Modern foliation in pencil, top right corner, is accurate. </p>
+               
+               <p>Folios <locus>1</locus> and <locus>2</locus> deserve a special note. These leaves
+                  appear to be added to the front of the manuscript to provide a title page, either
+                  singly or as a bifolium, just as folio <locus>210</locus> is added singly to the
+                  end of the codex, and all three of these leaves share a ruling pattern not found
+                  elsewhere in the codex. Leaves <locus>3</locus> and <locus>4</locus> form a
+                  separate bifolium. Thus quire I does not constitute a cohesive codicological unit
+                  per se, but grouping these leaves together makes for a clear means of describing
+                  the structure of the book that has the added benefit of agreeing with quire
+                  numberings extant in earlier descriptions. </p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>Ruled in red, probably in ink. Prickings feature one hole for each line. These are
+                  mostly lost to cropping, but some survive, e.g. fols. <locus>190</locus>,
+                     <locus>200</locus>. (The most conspicuous examples of prickings occur after
+                  folio <locus>180</locus> in quires with a different ruling pattern.) The text is
+                  ruled in two columns of 33 lines each. Text blocks are 180 mm x 55 mm. There are
+                  four vertical lines, two horizontal lines at the top, and one at the bottom. This
+                  is true on folios <locus from="5" to="179">5-179</locus>, but the following
+                  exceptions occur: </p>
+               
+               <p>1) Fols. <locus from="1" to="2">1-2</locus> and 210 have a single rather than
+                  double horizontal line at the top, but are otherwise ruled the same. Note that
+                  these are not part of the normal quire structures, as described in section 4
+                  above. </p>
+               
+               <p>2) Fols. <locus from="3" to="4">3-4</locus> are not ruled beneath images;
+                     <locus>4v</locus> has double horizontal lines at top and bottom and is ruled
+                  for a single block of prose rather than in two columns, with a text block 177mm in
+                  height; note that this bifolium contains the dedication page, coat of arms, and
+                  prose preface. </p>
+               
+               <p>3) Fols. <locus from="180" to="209">180-209</locus> have one horizontal line at
+                  the top and two at the bottom – i.e. the ruling pattern is an upside-down mirror
+                  opposite of the main pattern; text block is about 178mm in height rather than 180.
+               </p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The manuscript is the work of one scribe, Girard Acarie, who uses a cursiva
+                  formata script throughout.<lb/>
+                  Few if any corrections. </p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>No rubricated text. Numerous one- and two-line initials alternating gold ink on
+                  blue backgrounds and gold ink on red backgrounds. No text decoration aside from
+                  initials. No line fillers other than one in prose dedication, fol.
+                  <locus>4v</locus>. Architectural frames around large miniatures, simple gold
+                  borders around small miniatures. Small borders at the bottom of the second column
+                  on fol. <locus>180v</locus> and at the top of the first column on fol.
+                  <locus>181r</locus> mark the spot of lines not typically found in the <hi rend="italics">Roman de la Rose</hi> that were added here for King Francis I. 2
+                  full-page, 67 large, and 38 small miniatures by at least two artists. </p>
+               
+            
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>Modern red velvet binding, likely 19th-century. As described in the <hi rend="italics">Seventeenth Report to the Fellows of the Pierpont Morgan
+                     Library, 1972-1974</hi>, “edges gilt and gauffered, with a row of lozenges
+                  containing the letter F flanked by rows of lozenges containing fleur-de-lis.” No
+                  clasps or metallic pieces. Parchment flyleaves numbered i, ii in front, 211, 212
+                  in back.</p>
+            
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The book was copied c. 1520 by Girard Acarie for presentation to Francis I, king
+                  of France; Acarie copied the text from a 1519 edition printed in Paris by Michel
+                  le Noir. Francis is depicted receiving the book on fol. 4r, and his coat of arms
+                  appears opposite this on 3v. The following provenance is from the <hi rend="italics">Seventeenth Report to the Fellows of the Pierpont Morgan
+                     Library, 1972-1974</hi>:</p>
+               
+               <p>
+                  
+                  <hi rend="italics">Provenance: Francis I, king of France, for whom the manuscript
+                     was made; John Louis Goldsmid; his sale, London, Evans, 11 December 1815, lot
+                     729; to John North of East Acton, Middlesex; his sale, London, Evans, 25 May
+                     1819, III, lot 806; to William Esdaile; his sale, London, Christie's, 15 March
+                     1838, lot 357; to Henry Bohn, London bookdealer; William Knight; his sale,
+                     London, Sotheby's, 2 August 1847, lot 1074; to William Pickering, London
+                     bookdealer; Lord Vernon (Sudbury Hall Library, Derbyshire), with bookplate; his
+                     sale, London, Sotheby's, 10 June 1918, lot 327; to B.F. Stevens; Cortlandt
+                     Field Bishop, with bookplate; his sale, New York, American Art Association -
+                     Anderson Galleries, 26 April 1931, lot 1365; to Beatrice Bishop Berle.</hi>
+               
+               </p>
+               
+               <p>The following bookplates are present: The Pierpont Morgan Library; Lord Vernon’s
+                  bookplate; Cortlandt Field Bishops’ bookplate; label: “THE GIFT OF Beatrice Bishop
+                  Berle in memory of her father Cortlandt Field Bishop 1972.” Written in pencil
+                  inside front cover: “Cabinet I.a. 1777 in Catalogue [?<hi rend="italics">struck
+                     through</hi>].</p>
+            
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>Contains only <hi rend="italics">Roman de la Rose</hi>; lacunae at Lecoy 652-763 and 20677-20840, as described above in collation. The following 10-line interpolation praising Franics I was added on fols. <locus from="180" to="181">180v-181r</locus>: </p>
+               
+               <p>
+                  <hi rend="italics">Mesmes Francoys premier du nom<lb/>
+                  Roy des francoys de grant renom<lb/>
+                  Prudent en faictz doulx en parler<lb/>
+                  Aux armes preux hardy vouloir<lb/>
+                  D'esprit tres beau forme de corps<lb/>
+                  Tres gracieulx misericors<lb/>
+                  Saige en conseil et raisounable<lb/>
+                  Royal de cueur begnin a fable<lb/>
+                  Large en honneurs Richesse avoir<lb/>
+                  Plus que Cesar prompt en scavoir
+               </hi>
+               </p>
+            
+            </note>
+            
+            <note>
+              
+               <p>Description by Timothy L. Stinson</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Morgan 948</note>
+               
+               <title>Roman de la Rose</title>
+
+               
+               <extent>
+                  <measure quantity="210" unit="folios">210 folios</measure> 
+                  <dimensions>
+                     
+                     <height unit="mm">260</height>
+                     
+                     <width unit="mm">180</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">107</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1600" notBefore="1500">16th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>New York</settlement>
+                  
+                  <repository>Morgan Library &amp; Museum</repository>
+                  
+                  <idno>M. 948</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="5r" to="207r">5r-207r</locus>
+                     <title>Roman de la Rose</title>
+                     <note type="textid">rose</note>
+                     <note type="folios">203</note>
+                     <note type="illustrations">107</note>
+                     <note type="linesPerColumn">33</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

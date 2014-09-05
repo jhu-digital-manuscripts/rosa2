@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Roman de la Rose</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>New York, Morgan Library &amp; Museum, M. 948. France, c. 1520. Contient le Roman de la Rose.</p>
+            
+            </note>
+            
+            <note rend="INFORMATIONS BASIQUES">
+               
+               <p>
+                  <material>Parchemin</material>, 260mm x 180mm, 210 feuillets</p>
+            
+            </note>
+            
+            <note rend="MATERIEL">
+               
+               <p>Parchemin de bonne qualité, quelques instances les plus mineures de trous ou de souillure
+                     (<locus>3v</locus> 
+                  <locus>4r</locus>, la dédicace montrent la plupart des indices d'usage.
+               
+</p>
+            
+            </note>
+            
+            <note rend="CAHIERS">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I4">
+                     <locus from="1" to="4">1-4</locus>Deux bifeuillets adjacents, l'un réglé 
+				  et blanc à part le titre. L'autre contient la dédicace et un blason. Le premier bifeuillet
+				  est peut-être deus feuillets individuels.  </item>
+                  
+                  <item n="II8">
+                     <locus from="5" to="12">5-12</locus>
+                  </item>
+                  
+                  <item n="III7">
+                     <locus from="13" to="19">13-19</locus>(Il manque un feuillet entre les ff. 12 et 13) </item>
+                  
+                  <item n="IV8">
+                     <locus from="20" to="27">20-27</locus>
+                  </item>
+                  
+                  <item n="V2">
+                     <locus from="28" to="29">28-29</locus>
+                  </item>
+                  
+                  <item n="VI8">
+                     <locus from="30" to="37">30-37</locus>
+                  </item>
+                  
+                  <item n="VII8">
+                     <locus from="38" to="45">38-45</locus>
+                  </item>
+                  
+                  <item n="VIII8">
+                     <locus from="46" to="53">46-53</locus>
+                  </item>
+                  
+                  <item n="IX8">
+                     <locus from="54" to="61">54-61</locus>
+                  </item>
+                  
+                  <item n="X8">
+                     <locus from="62" to="69">62-69</locus>
+                  </item>
+                  
+                  <item n="XI8">
+                     <locus from="70" to="77">70-77</locus>
+                  </item>
+                  
+                  <item n="XII8">
+                     <locus from="78" to="85">78-85</locus>
+                  </item>
+                  
+                  <item n="XIII8">
+                     <locus from="86" to="93">86-93</locus>
+                  </item>
+                  
+                  <item n="XIV6">
+                     <locus from="94" to="99">94-99</locus>
+                  </item>
+                  
+                  <item n="XV8">
+                     <locus from="100" to="107">100-107</locus>
+                  </item>
+                  
+                  <item n="XVI8">
+                     <locus from="108" to="115">108-115</locus>
+                  </item>
+                  
+                  <item n="XVII8">
+                     <locus from="116" to="123">116-123</locus>
+                  </item>
+                  
+                  <item n="XVIII8">
+                     <locus from="124" to="131">124-131</locus>
+                  </item>
+                  
+                  <item n="XIX8">
+                     <locus from="132" to="139">132-139</locus>
+                  </item>
+                  
+                  <item n="XX8">
+                     <locus from="140" to="147">140-147</locus>
+                  </item>
+                  
+                  <item n="XXI8">
+                     <locus from="148" to="155">148-155</locus>
+                  </item>
+                  
+                  <item n="XXII8">
+                     <locus from="156" to="163">156-163</locus>
+                  </item>
+                  
+                  <item n="XXIII8">
+                     <locus from="164" to="171">164-171</locus>
+                  </item>
+                  
+                  <item n="XXIV8">
+                     <locus from="172" to="179">172-179</locus>
+                  </item>
+                  
+                  <item n="XXV8">
+                     <locus from="180" to="187">180-187</locus>
+                  </item>
+                  
+                  <item n="XXVI8">
+                     <locus from="188" to="195">188-195</locus>
+                  </item>
+                  
+                  <item n="XXVII6">
+                     <locus from="196" to="201">196-201</locus>(Il manque deux feuillets entre les ff. 198 et 199) </item>
+                  
+                  <item n="XXVIII8+1">
+                     <locus from="202" to="209">202-209</locus>; <locus>210</locus>added on.</item>
+                  
+               
+               </list>
+                
+               <p> La numérotation des cahiers modernes est présente à la gauche inférieure du 
+			   fond, en commençant avec le cahier II (c'est-à-dire que la numérotation des cahiers commence 
+			   avec “1,” au f. <locus>5</locus>, continue avec “2” au f.
+                     <locus>13</locus>, etc.). Les signatures se trouvaient autrefois aux premiers quatre feuillets de chaque cahier 
+					 au centre inférieur mais sont maintenant pour la plupart perdues dû à l'ébarbage.  
+					 Quelques unes restent encore, par exemple au f. <locus>88r</locus> Liij (L3), <locus>109r</locus> oij
+                  (O2), <locus>119r</locus> p4 (P4). (L'alphabète utilisé pour designer les signatures s'employe 
+				  de la “J” mais non pas de la “W”) Il n'y a pas de réclames. La foliotation moderne à la droite 
+				  supérieure, est correcte.</p>
+			   
+               <p>Les feuillets <locus>1</locus> et <locus>2</locus> méritent une mention particulière.  Ces 
+			   deux feuillets semblent avoir été ajoutés au début du manuscrit afin de fournir 
+			   une page de titre, ou individuellement ou comme un bifeuillet, tout comme le feuillet <locus>210</locus> a 
+			   été ajouté individuellement à la fin du codex ; chacun de ces feuillets partagent 
+			   un schéma de réglage qui ne se trouve pas ailleurs dans le codex.  Les feuillets <locus>3</locus> 
+			   et <locus>4</locus> forment un bifeuillet séparé. Le cahier I ne constitue donc pas une unité 
+			   codicologique cohésive, mais les regrouper ensemble offre une façon claire de décrire la structure
+			   du livre qui aurait l'avantage de s'accorder avec le numérotage des cahiers qui existe dans des 
+			   descriptions antérieurs à celle-ci. </p>
+            
+            </note>
+            
+			
+            <note rend="MISE-EN-PAGE">
+               
+               <p>Réglé en rouge, le plus probablement en encre.  Les piqûres se plaçaient 
+			   une pour chaque ligne, mais la plupart se sont perdues dû à l'ébarbage ; quelques 
+			   unes survivent encore, par exemple aux ff. <locus>190</locus> 
+                  <locus>200</locus>. (Les exemples les plus 
+			   évidents se trouvent après le f. <locus>180</locus> dans des cahiers avec un schéma de 
+			   réglage différent). Le texte est réglé en deux colonnes de 33 lignes chacune. Les 
+			   corps de textes mesurent 180 mm x 55 mm. Il y a quatre lignes rectrices majeures verticales, deux lignes rectrices 
+			   majeures horizontales en haut et une en bas.  Ceci est le cas pour les ff. <locus from="5" to="179">5-179</locus>, 
+			   avec les exceptions suivantes : </p>
+               
+               <p>1) Ff. <locus from="1" to="2">1-2</locus> et 210 ont une ligne rectrice majeure en haut au lieu de deux, 
+			   mais ces feuillets sont autrement réglés de la même façon que les autres. A noter 
+			   qu'ils ne font pas partie de la structure générale des cahiers (voir la section 4 ci-dessus). </p>
+               
+               <p>2) Les ff. <locus from="3" to="4">3-4</locus> ne sont pas réglés en dessous des miniatures ;
+                     <locus>4v</locus> a deux lignes rectrices majeures au dessus et en dessous et il est réglé 
+					 pour un bloc de prose au lieu de deux colonnes ; le corps de texte mesure 177 mm de hauteur ; à noter 
+					 que ce bifeuillet contient la dédicace, le blason, et une préface en prose. </p>
+               
+               <p>3) Les ff. <locus from="180" to="209">180-209</locus> ont une ligne rectrice majeure supérieure et deux 
+			   inférieures – c'est-à-dire que le schéma de réglage est l'inverse du 
+			   schéma principal ; le corps de texte est environ 178 mm de hauteur au lieu de 180 mm.
+               </p>
+
+            
+            </note>
+            
+            <note rend="ECRITURE">
+               
+               <p>Le manuscrit est l'œuvre d'un seul scribe, Girard Acarie, qui utilise une 
+			   écriture cursiva formata partout.  Il n'y a ni de lettres capitulaires ni de titres courants ; 
+			   on voit très peu de corrections. </p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p> Il n'y a pas de texte rubriqué. On voit de nombreuses initiales d'une et de deux lignes ; 
+			   les initiales en encre d'or sur fond bleu alterne avec celles en encre d'or sur fond rouge. Le texte 
+			   n'est pas décoré à part les initiales.  Il n'y a pas de bouts-de lignes sauf un 
+			   qui se trouve dans la dédicace en prose.
+                  <locus>4v</locus>. Des cadres architecturaux entourent les grandes miniatures, des cadres dorés simples e
+				  ntourent les petites miniatures.  On voit de petites bordures à l'inférieur de la 
+				  deuxième colonne au f. <locus>180v</locus> et au supérieure de la première colonne au 
+				  f.  <locus>181r</locus> qui marquent les vers qui ne se trouve pas normalement dans le <hi rend="italics">Roman de la Rose</hi> et y ont été ajoutés pour le roi 
+					 François I.  Il y a deux miniatures à pleine page, 67 grandes miniatures et 38 petites 
+					 miniatures faites par au moins deux artistes. </p>
+              
+            
+            </note>
+            
+            <note rend="RELIURE">
+               
+               <p>Reliure en velours rouge, probablement du XIXe siècle, décrite ainsi dans le <hi rend="italics">Seventeenth Report to the Fellows of the Pierpont Morgan
+                     Library, 1972-1974</hi>, “Tranches dorées et gaufrées, avec un rang qui contient 
+					 la lettre F bordée par des rangs de losanges qui contiennent des fleurs-de-lis " [traduit de l'anglais - voir
+					 la version anglaise de cette page pour le texte original].  Le manuscrit est sans fermoirs ou parties en 
+					 métal.  Des gardes volantes en parchemin sont numérotées i, ii, au devant et 211 
+					 et 212 à la fin.</p>
+
+            
+            </note>
+            
+            <note rend="HISTOIRE">
+               
+               <p> Le livre a été copié vers 1520 par Girard Acarie pour présentation 
+			   au roi François I.  Acarie a copié le texte d'une édition de 1519 imprimée à 
+			   Paris par Michel le Noir.  Le roi François est dépeint en train de recevoir le livre au f. 4r et son blason 
+			   apparaît en face au f. 3v.  La provenance suivante est tirée du 
+			   <hi rend="italics">Seventeenth Report to the Fellows of the Pierpont Morgan
+                     Library, 1972-1974</hi>:</p>
+               
+               <p>
+                  
+                  <hi rend="italics">Provenance: François I, roi de France, pour qui le manuscrit a été fait.  
+				  John Louis Goldsmid ; sa vente, Londan, Evans, le 11 décembre, 1815, lot 729 ; à John North de East 
+				  Acton, Middlesex ; sa vente, Londres, Evans, le 25 mai 1819, III, lot 806 ; à William Esdaile ; sa vente, 
+				  Londres, Christie's, le 15 mars, 1838, lot 357 ; à Henry Bohn, libraire londonien ; William Knight ; 
+				  sa vente, Londres, Sotheby's, le 2 août 1847, lot 1074 ; à William Pickering, libraire londonien ; 
+				  Lord Vernon (bibliothèque de Sudbury Hall, Derbyshire), avec ex-libris ; sa vente, Londres, Sotheby's, 
+				  le 10 juin 1918, lot 327 ; à B. F. Stevens ; Cortlandt Field Bishop, avec ex-libris ; sa vente, Association 
+				  d'Art Américain, - Galleries Anderson, le 26 avril 1931, lot 1365 ; à Beatrice Bishop Berle.</hi>
+				  [traduit de l'anglais - voire la version anglaise de cette page pour le texte original]
+                              
+ </p>
+
+               <p>Les ex-libris suivants sont présents: La bibliothèque Pierpont Morgan, l'ex-libris de Lord Vernon, 
+et celui de Cortlandt Field Bishop.  L'étiquette suivante s'y trouve aussi:  "LE DON DE Beatrice Bishop Berle à 
+				  la mémoire de son père Cortlandt Field Bisho"[traduit de l'anglais].  Ecrit en crayon au contre-plat du devant : 
+				  “Cabinet I.a. 1777 in Catalogue [?<hi rend="italics">rayé</hi>].</p>
+            
+            </note>
+            
+            <note rend="TEXTE">
+               
+               <p> Le manuscrit contient seulement le <hi rend="italics">Roman de la Rose</hi>. Les titres incluent “Le Roman de la Rose” au f. <locus>2r</locus> probablement d'une main postérieure, et “Cy est le rommant de la rose” au f. <locus>5r</locus>. Sans lacunes, gloses, commentaire et colophons. </p>
+			
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscrit</note>
+               
+               <note type="commonName">Morgan 948</note>
+               
+               <title>Roman de la Rose</title>
+
+               
+               <extent>
+                  <measure quantity="210" unit="folios">210 feuillets</measure> 
+                  <dimensions>
+                     
+                     <height unit="mm">260</height>
+                     
+                     <width unit="mm">180</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">107</note>
+               
+               
+               
+               
+               
+               <note type="material">parchemin</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1600" notBefore="1500">16e siècle</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>New York</settlement>
+                  
+                  <repository>Morgan Library &amp; Museum</repository>
+                  
+                  <idno>M. 948</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="5r" to="207r">5r-207r</locus>
+                     <title>Roman de la Rose</title>
+                     <note type="textid">rose</note>
+                     <note type="folios">203</note>
+                     <note type="illustrations">107</note>
+                     <note type="linesPerColumn">33</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

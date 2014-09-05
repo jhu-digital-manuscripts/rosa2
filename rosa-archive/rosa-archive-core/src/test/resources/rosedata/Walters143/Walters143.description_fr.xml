@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Roman de la Rose</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscrit</note>
+               
+               <note type="commonName">Walters 143</note>
+               
+               <title>Roman de la Rose</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="143" unit="folios">143 feuillets</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">300</height>
+                     
+                     <width unit="mm">216</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">42</note>
+               
+               
+               
+               
+               
+               <note type="material">parchemin</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+               
+               <date notAfter="1350" notBefore="1325">14e siècle</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Baltimore, MD</settlement>
+                  
+                  <repository>Walters Art Museum</repository>
+                  
+                  <idno>W. 143</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="143r">1r-143r</locus>
+                     <title>Roman de la Rose</title>
+                     <note type="textid">rose</note>
+                     <note type="folios">143</note>
+                     <note type="illustrations">42</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

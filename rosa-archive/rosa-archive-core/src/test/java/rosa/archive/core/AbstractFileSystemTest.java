@@ -1,6 +1,8 @@
 package rosa.archive.core;
 
 import org.junit.Before;
+import org.junit.runner.RunWith;
+import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 
 import java.net.URL;
 import java.nio.file.Path;
@@ -11,6 +13,8 @@ import static org.junit.Assert.assertNotNull;
 /**
  *
  */
+@RunWith(GuiceJUnitRunner.class)
+@GuiceModules({ArchiveCoreModule.class})
 public abstract class AbstractFileSystemTest {
 
     protected ByteStreamGroup base;

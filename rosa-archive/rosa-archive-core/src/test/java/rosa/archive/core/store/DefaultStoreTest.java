@@ -6,7 +6,6 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.ByteStreamGroupImpl;
 import rosa.archive.core.check.Checker;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
@@ -26,10 +25,8 @@ import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
 
+import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -70,9 +67,26 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
 
         this.store = new DefaultStore(serializerMap, checkerMap, context, base);
 
+        // Setting config to a single constant to ensure that all input streams will open
+        // in order to read from the mock serializers.
+        final String GOOD_FILE = ".crop.txt";
         when(context.languages()).thenReturn(new String[] {"en", "fr"});
         when(context.getPERMISSION()).thenReturn(".permission_");
         when(context.getDESCRIPTION()).thenReturn(".description_");
+        when(context.getIMAGES()).thenReturn(GOOD_FILE);
+        when(context.getIMAGES_CROP()).thenReturn(GOOD_FILE);
+        when(context.getCHARACTER_NAMES()).thenReturn(GOOD_FILE);
+        when(context.getCROP()).thenReturn(GOOD_FILE);
+        when(context.getILLUSTRATION_TITLES()).thenReturn(GOOD_FILE);
+        when(context.getIMAGE_TAGGING()).thenReturn(GOOD_FILE);
+        when(context.getMISSING_PAGES()).thenReturn(GOOD_FILE);
+        when(context.getNARRATIVE_SECTIONS()).thenReturn(GOOD_FILE);
+        when(context.getSHA1SUM()).thenReturn(GOOD_FILE);
+        when(context.getNARRATIVE_TAGGING()).thenReturn(GOOD_FILE);
+        when(context.getNARRATIVE_TAGGING_MAN()).thenReturn(GOOD_FILE);
+        when(context.getREDUCED_TAGGING()).thenReturn(GOOD_FILE);
+        when(context.getTRANSCRIPTION()).thenReturn(".transcription");
+        when(context.getXML()).thenReturn(".xml");
     }
 
     @Test
@@ -84,6 +98,21 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
         assertNotNull(list);
         assertTrue(list.size() > 0);
         assertTrue(list.contains("data"));
+        assertTrue(list.contains("rosedata"));
+    }
+
+    @Test
+    public void listBooksInRosedata() {
+        String[] books = store.listBooks("rosedata");
+        assertNotNull(books);
+
+        List<String> list = Arrays.asList(books);
+        assertNotNull(list);
+        assertEquals(4, list.size());
+        assertTrue(list.contains("Walters143"));
+        assertTrue(list.contains("Senshu2"));
+        assertTrue(list.contains("Morgan948"));
+        assertTrue(list.contains("LudwigXV7"));
     }
 
     @Test
@@ -127,7 +156,6 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
     }
 
     @Test
-    @SuppressWarnings("unchecked")
     public void loadBookTest() throws Exception {
         Set<Class> classes = new HashSet<>();
 
@@ -148,19 +176,33 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
         mockSerializers(classes);
 
         Book book = store.loadBook("data", "Walters143");
-        assertNotNull(book);
 
-        for (Class c : classes) {
-            // In the case the a file does not exist, the read() method will not be called...
-//            verify(serializerMap.get(c), atLeastOnce()).read(any(InputStream.class));
-            verify(serializerMap.get(c), atMost(2)).read(any(InputStream.class), any(List.class));
-        }
+        checkBook(book, classes);
+    }
 
-        assertNotNull(book.getContent());
-        assertTrue(book.getContent().length > 0);
-        assertNotNull(book.getPermissionsInAllLanguages());
-        assertTrue(book.getPermissionsInAllLanguages().length > 0);
+    @Test
+    public void loadBookFromRosedataTest() throws Exception {
+        Set<Class> classes = new HashSet<>();
 
+        classes.add(BookMetadata.class);
+        classes.add(BookStructure.class);
+        classes.add(CharacterNames.class);
+        classes.add(ChecksumInfo.class);
+        classes.add(CropInfo.class);
+        classes.add(IllustrationTagging.class);
+        classes.add(IllustrationTitles.class);
+        classes.add(ImageList.class);
+        classes.add(MissingList.class);
+        classes.add(NarrativeSections.class);
+        classes.add(NarrativeTagging.class);
+        classes.add(Permission.class);
+        classes.add(Transcription.class);
+
+        mockSerializers(classes);
+
+        Book book = store.loadBook("rosedata", "LudwigXV7");
+
+        checkBook(book, classes);
     }
 
     @Test
@@ -180,7 +222,7 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
 
     @Test
     public void loadCollectionTest() {
-
+        // TODO
     }
 
     @SuppressWarnings("unchecked")
@@ -202,6 +244,21 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
                     .thenReturn(false);
             checkerMap.put(c, check);
         }
+    }
+
+    @SuppressWarnings("unchecked")
+    private void checkBook(Book book, Set<Class> classes) throws IOException {
+        for (Class c : classes) {
+            // In the case the a file does not exist, the read() method will not be called...
+//            verify(serializerMap.get(c), atLeastOnce()).read(any(InputStream.class));
+            verify(serializerMap.get(c), atMost(2)).read(any(InputStream.class), any(List.class));
+        }
+
+        assertNotNull(book.getContent());
+        assertTrue(book.getContent().length > 0);
+        assertNotNull(book.getPermissionsInAllLanguages());
+        assertTrue(book.getPermissionsInAllLanguages().length > 0);
+        assertNotNull(book.getBookMetadata("en"));
     }
 
 }

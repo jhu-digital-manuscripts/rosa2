@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Roman de la Rose</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+         
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Tokyo, Senshu University, MS 2 </p>
+            
+            </note>
+            
+            <note rend="CONTENTS">
+               
+               <p>Fragments of a <hi rend="italics">Roman de la Rose</hi> (ff. 1r-105v): f.1r-1v (Lecoy 3532-3641), f. 2r-2v (Lecoy 4034-4149), ff.3r-41v (Lecoy 4254-8789), ff. 42r-43v (Lecoy 9241-9462), ff. 44r-105v (Lecoy 12063-19346)</p>
+            </note>
+            
+            
+            <note rend="MATERIAL">
+               
+               <p>Parchment with some water damage</p>
+            
+            </note>
+            
+            <note rend="ORIGIN">
+               
+               <p>France</p>
+            
+            </note>
+            
+            <note rend="DATE">
+               
+               <p>14th century</p>
+            
+            </note>    
+            
+            <note rend="SCRIPT">
+               
+               <p>Gothic, written in 2 columns of 29 lines, 1 scribe</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>Red and blue flourished initials throughout</p>
+            
+            </note>
+            
+            <note rend="DIMENSIONS">
+               
+               <p>229 x 163 mm</p>
+            
+            </note>
+            
+            <note rend="FOLIATION">
+               
+               <p>ff. iii + 105 + ?</p>
+            
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>Red morocco</p>
+            </note>
+            
+            <note rend="PROVENANCE">
+               <p> Sir Thomas Phillipps (1792-1872), 19th century (purchased from Longman booksellers) - it was ms. 4185 in his collection</p>
+            
+            </note>
+            
+            <note rend="SELECT BIBLIOGRAPHY">
+               
+               <p>Edward Billings Ham, "The Cheltenham Manuscripts of the 'Roman de la Rose'," <hi rend="italics">The Modern Language Review</hi>, 26 (1931), pp. 427-435</p> 
+            
+            </note>
+            
+            <note rend="N.B.">
+               
+               <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+            </note>
+            
+            <note>
+               
+               <p>Description by Beatrice Radden Keefe</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Senshu 2</note>
+               
+               <title>Roman de la Rose</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="105" unit="folios">105 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">229</height>
+                     
+                     <width unit="mm">163</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1400" notBefore="1300">14th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Tokyo, Japan</settlement>
+                  
+                  <repository>Senshu University</repository>
+                  
+                  <idno>MS 2</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="105v">1r-105v</locus>
+                     <title>Roman de la Rose</title>
+                     <note type="textid">rose</note>
+                     <note type="folios">105</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">29</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>
