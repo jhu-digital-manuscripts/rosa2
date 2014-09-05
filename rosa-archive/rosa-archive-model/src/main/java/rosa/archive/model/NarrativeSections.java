@@ -9,7 +9,7 @@ import java.util.List;
  * Collection of scenes present in a collection. Scenes may or may not be present in individual
  * books in the collection. Useful for mapping scenes onto the books.
  */
-public class NarrativeSections implements IsSerializable {
+public class NarrativeSections implements HasId, IsSerializable {
 
     private String id;
     private List<NarrativeScene> scenes;
@@ -18,10 +18,12 @@ public class NarrativeSections implements IsSerializable {
         this.scenes = new ArrayList<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

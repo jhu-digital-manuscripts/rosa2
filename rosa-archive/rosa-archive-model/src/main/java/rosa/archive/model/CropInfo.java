@@ -9,7 +9,7 @@ import java.util.Map.Entry;
 /**
  * Information about about the cropping data of zero or more images.
  */
-public class CropInfo implements Iterable<CropData>, IsSerializable {
+public class CropInfo implements HasId, Iterable<CropData>, IsSerializable {
 
     private HashMap<String, CropData> data;
     private String id;
@@ -18,10 +18,12 @@ public class CropInfo implements Iterable<CropData>, IsSerializable {
         this.data = new HashMap<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

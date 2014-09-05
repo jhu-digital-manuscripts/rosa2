@@ -10,7 +10,7 @@ import java.util.List;
 /**
  *
  */
-public class BookStructure implements Iterable<StructurePage>, IsSerializable {
+public class BookStructure implements HasId, Iterable<StructurePage>, IsSerializable {
 
     private String id;
     /**
@@ -22,10 +22,12 @@ public class BookStructure implements Iterable<StructurePage>, IsSerializable {
         this.pages = new ArrayList<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

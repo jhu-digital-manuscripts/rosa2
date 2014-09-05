@@ -8,7 +8,7 @@ import java.util.Collection;
 /**
  * Metadata describing a book in the archive.
  */
-public class BookMetadata implements IsSerializable {
+public class BookMetadata implements HasId, IsSerializable {
 
     private String id;
     private String date;
@@ -37,10 +37,12 @@ public class BookMetadata implements IsSerializable {
         numberOfPages = -1;
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

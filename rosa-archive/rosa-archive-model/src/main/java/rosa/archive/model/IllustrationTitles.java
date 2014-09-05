@@ -10,7 +10,7 @@ import java.util.Set;
  * Illustration titles associated with a collection, not necessarily with a single book in
  * the collection.
  */
-public class IllustrationTitles implements IsSerializable {
+public class IllustrationTitles implements HasId, IsSerializable {
 
     private String id;
     private Map<String, String> data;
@@ -19,10 +19,12 @@ public class IllustrationTitles implements IsSerializable {
         this.data = new HashMap<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

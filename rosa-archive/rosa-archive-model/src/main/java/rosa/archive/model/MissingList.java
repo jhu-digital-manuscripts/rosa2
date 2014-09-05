@@ -8,7 +8,7 @@ import java.util.List;
 /**
  *
  */
-public class MissingList implements IsSerializable {
+public class MissingList implements HasId, IsSerializable {
 
     private String id;
     private List<String> missing;
@@ -17,10 +17,12 @@ public class MissingList implements IsSerializable {
         this.missing = new ArrayList<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

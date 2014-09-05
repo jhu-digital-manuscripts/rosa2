@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Information about zero or more illustrations.
  */
-public class IllustrationTagging implements Iterable<Illustration>, IsSerializable {
+public class IllustrationTagging implements HasId, Iterable<Illustration>, IsSerializable {
 
     private String id;
     private List<Illustration> data;
@@ -18,10 +18,12 @@ public class IllustrationTagging implements Iterable<Illustration>, IsSerializab
         this.data = new ArrayList<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

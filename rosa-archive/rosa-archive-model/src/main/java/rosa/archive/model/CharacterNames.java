@@ -13,7 +13,7 @@ import java.util.Set;
 /**
  *
  */
-public class CharacterNames implements IsSerializable {
+public class CharacterNames implements HasId, IsSerializable {
 
     private String id;
     private Map<String, CharacterName> names;
@@ -22,10 +22,12 @@ public class CharacterNames implements IsSerializable {
         this.names = new HashMap<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

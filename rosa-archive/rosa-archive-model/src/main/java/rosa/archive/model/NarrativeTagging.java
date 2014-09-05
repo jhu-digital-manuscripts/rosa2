@@ -9,7 +9,7 @@ import java.util.List;
 /**
  *
  */
-public class NarrativeTagging implements IsSerializable, Iterable<BookScene> {
+public class NarrativeTagging implements HasId, IsSerializable, Iterable<BookScene> {
 
     private String id;
     private List<BookScene> scenes;
@@ -18,10 +18,12 @@ public class NarrativeTagging implements IsSerializable, Iterable<BookScene> {
         this.scenes = new ArrayList<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

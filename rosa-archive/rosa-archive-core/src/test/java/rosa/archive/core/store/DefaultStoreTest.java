@@ -227,6 +227,7 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
 
     @SuppressWarnings("unchecked")
     private void mockSerializers(Set<Class> classes) throws Exception {
+        serializerMap.clear();
 
         for (Class c : classes) {
             Serializer s = mock(Serializer.class);
@@ -238,6 +239,8 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
 
     @SuppressWarnings("unchecked")
     private void mockCheckers(Set<Class> classes) throws Exception {
+        checkerMap.clear();
+
         for (Class c : classes) {
             Checker check = mock(Checker.class);
             when(check.checkContent(anyObject(), any(ByteStreamGroup.class), anyBoolean()))
