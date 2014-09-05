@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * A collection of books stored in the archive.
  */
-public class BookCollection implements IsSerializable {
+public class BookCollection implements HasId, IsSerializable {
 
     private String id;
     /**
@@ -25,10 +25,12 @@ public class BookCollection implements IsSerializable {
 
     public BookCollection() {  }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }
