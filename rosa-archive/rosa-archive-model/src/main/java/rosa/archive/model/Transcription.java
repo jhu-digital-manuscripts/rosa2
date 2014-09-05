@@ -1,19 +1,23 @@
 package rosa.archive.model;
 
+import com.google.gwt.user.client.rpc.IsSerializable;
+
 /**
  *
  */
-public class Transcription {
+public class Transcription implements HasId, IsSerializable {
 
     private String id;
     private String content;
 
     public Transcription() {  }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

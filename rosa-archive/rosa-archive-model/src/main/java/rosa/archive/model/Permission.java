@@ -1,19 +1,23 @@
 package rosa.archive.model;
 
+import com.google.gwt.user.client.rpc.IsSerializable;
+
 /**
  *
  */
-public class Permission {
+public class Permission implements HasId, IsSerializable {
 
     private String id;
     private String permission;
 
     public Permission() {  }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

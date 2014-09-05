@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * A single book in the archive.
  */
-public class Book implements IsSerializable {
+public class Book implements HasId, IsSerializable {
 
     private String id;
     /**
@@ -47,10 +47,12 @@ public class Book implements IsSerializable {
         this.metadataMap = new HashMap<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

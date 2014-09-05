@@ -58,15 +58,11 @@ public class DefaultStore implements Store {
         collection.setBooks(listBooks(collectionId));
         collection.setCharacterNames(
                 loadItem(config.getCHARACTER_NAMES(), collectionGroup, CharacterNames.class));
-        collection.getCharacterNames().setId(config.getCHARACTER_NAMES());
         collection.setIllustrationTitles(
                 loadItem(config.getILLUSTRATION_TITLES(), collectionGroup, IllustrationTitles.class));
-        collection.getIllustrationTitles().setId(config.getILLUSTRATION_TITLES());
         collection.setNarrativeSections(
                 loadItem(config.getNARRATIVE_SECTIONS(), collectionGroup, NarrativeSections.class));
-        collection.getNarrativeSections().setId(config.getNARRATIVE_SECTIONS());
         collection.setMissing(loadItem(config.getMISSING_PAGES(), collectionGroup, MissingList.class));
-        collection.getMissing().setId(config.getMISSING_PAGES());
 
         // Languages from configuration.
         collection.setLanguages(config.languages());
@@ -88,49 +84,22 @@ public class DefaultStore implements Store {
         book.setId(bookId);
         book.setImages(
                 loadItem(bookId + config.getIMAGES(), bookStreams, ImageList.class));
-        if (book.getImages() != null) {
-            book.getImages().setId(bookId + config.getIMAGES());
-        }
         book.setCroppedImages(
                 loadItem(bookId + config.getIMAGES_CROP(), bookStreams, ImageList.class));
-        if (book.getCroppedImages() != null) {
-            book.getCroppedImages().setId(bookId + config.getIMAGES_CROP());
-        }
         book.setCropInfo(
                 loadItem(bookId + config.getCROP(), bookStreams, CropInfo.class));
-        if (book.getCropInfo() != null) {
-            book.getCropInfo().setId(bookId + config.getCROP());
-        }
         book.setBookStructure(
                 loadItem(bookId + config.getREDUCED_TAGGING(), bookStreams, BookStructure.class));
-        if (book.getBookStructure() != null) {
-            book.getBookStructure().setId(bookId + config.getREDUCED_TAGGING());
-        }
         book.setChecksumInfo(
                 loadItem(bookId + config.getSHA1SUM(), bookStreams, ChecksumInfo.class));
-        if (book.getChecksumInfo() != null) {
-            book.getChecksumInfo().setId(bookId + config.getSHA1SUM());
-        }
         book.setIllustrationTagging(
                 loadItem(bookId + config.getIMAGE_TAGGING(), bookStreams, IllustrationTagging.class));
-        if (book.getIllustrationTagging() != null) {
-            book.getIllustrationTagging().setId(bookId + config.getIMAGE_TAGGING());
-        }
         book.setManualNarrativeTagging(
                 loadItem(bookId + config.getNARRATIVE_TAGGING_MAN(), bookStreams, NarrativeTagging.class));
-        if (book.getManualNarrativeTagging() != null) {
-            book.getManualNarrativeTagging().setId(bookId + config.getNARRATIVE_TAGGING_MAN());
-        }
         book.setAutomaticNarrativeTagging(
                 loadItem(bookId + config.getNARRATIVE_TAGGING(), bookStreams, NarrativeTagging.class));
-        if (book.getAutomaticNarrativeTagging() != null) {
-            book.getAutomaticNarrativeTagging().setId(bookId + config.getNARRATIVE_TAGGING());
-        }
         book.setTranscription(
                 loadItem(bookId + config.getTRANSCRIPTION() + config.getXML(), bookStreams, Transcription.class));
-        if (book.getTranscription() != null) {
-            book.getTranscription().setId(bookId + config.getTRANSCRIPTION() + config.getXML());
-        }
 
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
@@ -142,19 +111,11 @@ public class DefaultStore implements Store {
             if (name.contains(config.getPERMISSION())) {
                 if (StringUtils.isNotBlank(lang)) {
                     Permission perm = loadItem(name, bookStreams, Permission.class);
-                    if (perm != null) {
-                        perm.setId(name);
-                    }
-
                     book.addPermission(perm, lang);
                 }
             } else if (name.contains(config.getDESCRIPTION())) {
                 if (StringUtils.isNoneBlank(lang)) {
                     BookMetadata metadata = loadItem(name, bookStreams, BookMetadata.class);
-                    if (metadata != null) {
-                        metadata.setId(name);
-                    }
-
                     book.addBookMetadata(metadata, lang);
                 }
             }
@@ -176,13 +137,16 @@ public class DefaultStore implements Store {
     }
 
     @SuppressWarnings("unchecked")
-    protected <T> T loadItem(String name, ByteStreamGroup bsg, Class<T> type) {
+    protected <T extends HasId> T loadItem(String name, ByteStreamGroup bsg, Class<T> type) {
         List<String> errors = new ArrayList<>();
 
         try (InputStream in = bsg.getByteStream(name)) {
             Serializer serializer = serializerMap.get(type);
 
-            return (T) serializer.read(in, errors);
+            T obj = (T) serializer.read(in, errors);
+            obj.setId(name);
+
+            return obj;
 
         } catch (IOException e) {
             // TODO

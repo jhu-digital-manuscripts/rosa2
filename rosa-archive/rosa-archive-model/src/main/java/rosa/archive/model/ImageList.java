@@ -9,7 +9,7 @@ import java.util.List;
 /**
  *
  */
-public class ImageList implements IsSerializable, Iterable<BookImage> {
+public class ImageList implements HasId, IsSerializable, Iterable<BookImage> {
 
     private String id;
     private List<BookImage> images;
@@ -18,10 +18,12 @@ public class ImageList implements IsSerializable, Iterable<BookImage> {
         this.images = new ArrayList<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

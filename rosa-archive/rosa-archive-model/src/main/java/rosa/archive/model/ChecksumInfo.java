@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * Holds the checksums for all items in the archive for a book.
  */
-public class ChecksumInfo implements IsSerializable {
+public class ChecksumInfo implements HasId, IsSerializable {
 
     private String id;
     /**
@@ -21,10 +21,12 @@ public class ChecksumInfo implements IsSerializable {
         this.checksums = new HashMap<>();
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }
