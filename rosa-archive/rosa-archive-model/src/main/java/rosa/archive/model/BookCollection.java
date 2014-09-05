@@ -9,6 +9,7 @@ import java.util.Arrays;
  */
 public class BookCollection implements IsSerializable {
 
+    private String id;
     /**
      * Array of book IDs for the books in this collection.
      */
@@ -23,6 +24,14 @@ public class BookCollection implements IsSerializable {
     private MissingList missing;
 
     public BookCollection() {  }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     /**
      * @return
@@ -109,9 +118,11 @@ public class BookCollection implements IsSerializable {
         if (!Arrays.equals(books, that.books)) return false;
         if (characterNames != null ? !characterNames.equals(that.characterNames) : that.characterNames != null)
             return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (illustrationTitles != null ? !illustrationTitles.equals(that.illustrationTitles) : that.illustrationTitles != null)
             return false;
         if (!Arrays.equals(languages, that.languages)) return false;
+        if (missing != null ? !missing.equals(that.missing) : that.missing != null) return false;
         if (narrativeSections != null ? !narrativeSections.equals(that.narrativeSections) : that.narrativeSections != null)
             return false;
 
@@ -120,22 +131,26 @@ public class BookCollection implements IsSerializable {
 
     @Override
     public int hashCode() {
-        int result = books != null ? Arrays.hashCode(books) : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (books != null ? Arrays.hashCode(books) : 0);
         result = 31 * result + (languages != null ? Arrays.hashCode(languages) : 0);
         result = 31 * result + (characterNames != null ? characterNames.hashCode() : 0);
         result = 31 * result + (illustrationTitles != null ? illustrationTitles.hashCode() : 0);
         result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
+        result = 31 * result + (missing != null ? missing.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
         return "BookCollection{" +
-                "books=" + Arrays.toString(books) +
+                "id='" + id + '\'' +
+                ", books=" + Arrays.toString(books) +
                 ", languages=" + Arrays.toString(languages) +
                 ", characterNames=" + characterNames +
                 ", illustrationTitles=" + illustrationTitles +
                 ", narrativeSections=" + narrativeSections +
+                ", missing=" + missing +
                 '}';
     }
 }

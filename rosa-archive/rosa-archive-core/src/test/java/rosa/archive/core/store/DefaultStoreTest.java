@@ -75,12 +75,12 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
         when(context.getDESCRIPTION()).thenReturn(".description_");
         when(context.getIMAGES()).thenReturn(GOOD_FILE);
         when(context.getIMAGES_CROP()).thenReturn(GOOD_FILE);
-        when(context.getCHARACTER_NAMES()).thenReturn(GOOD_FILE);
+        when(context.getCHARACTER_NAMES()).thenReturn("character_names.csv");
         when(context.getCROP()).thenReturn(GOOD_FILE);
-        when(context.getILLUSTRATION_TITLES()).thenReturn(GOOD_FILE);
+        when(context.getILLUSTRATION_TITLES()).thenReturn("illustration_titles.csv");
         when(context.getIMAGE_TAGGING()).thenReturn(GOOD_FILE);
-        when(context.getMISSING_PAGES()).thenReturn(GOOD_FILE);
-        when(context.getNARRATIVE_SECTIONS()).thenReturn(GOOD_FILE);
+        when(context.getMISSING_PAGES()).thenReturn("missing.txt");
+        when(context.getNARRATIVE_SECTIONS()).thenReturn("narrative_sections.csv");
         when(context.getSHA1SUM()).thenReturn(GOOD_FILE);
         when(context.getNARRATIVE_TAGGING()).thenReturn(GOOD_FILE);
         when(context.getNARRATIVE_TAGGING_MAN()).thenReturn(GOOD_FILE);
@@ -161,48 +161,41 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
 
         classes.add(BookMetadata.class);
         classes.add(BookStructure.class);
-        classes.add(CharacterNames.class);
         classes.add(ChecksumInfo.class);
         classes.add(CropInfo.class);
         classes.add(IllustrationTagging.class);
-        classes.add(IllustrationTitles.class);
         classes.add(ImageList.class);
-        classes.add(MissingList.class);
-        classes.add(NarrativeSections.class);
         classes.add(NarrativeTagging.class);
         classes.add(Permission.class);
         classes.add(Transcription.class);
 
-        mockSerializers(classes);
+        String[][] books = {
+                {"Ferrell", "LudwigXV7", "Walters143"},
+                {"LudwigXV7", "Morgan948", "Senshu2", "Walters143"}
+        };
 
-        Book book = store.loadBook("data", "Walters143");
-
-        checkBook(book, classes);
+        for (String bookName : books[0]) {
+            mockSerializers(classes);
+            Book book = store.loadBook("data", bookName);
+            checkBook(book, classes);
+        }
+        for (String bookName : books[1]) {
+            mockSerializers(classes);
+            Book book = store.loadBook("rosedata", bookName);
+            checkBook(book, classes);
+        }
     }
 
-    @Test
-    public void loadBookFromRosedataTest() throws Exception {
-        Set<Class> classes = new HashSet<>();
+    @SuppressWarnings("unchecked")
+    private void checkBook(Book book, Set<Class> classes) throws IOException {
+        for (Class c : classes) {
+            // In the case the a file does not exist, the read() method will not be called...
+            verify(serializerMap.get(c), atMost(2)).read(any(InputStream.class), any(List.class));
+        }
 
-        classes.add(BookMetadata.class);
-        classes.add(BookStructure.class);
-        classes.add(CharacterNames.class);
-        classes.add(ChecksumInfo.class);
-        classes.add(CropInfo.class);
-        classes.add(IllustrationTagging.class);
-        classes.add(IllustrationTitles.class);
-        classes.add(ImageList.class);
-        classes.add(MissingList.class);
-        classes.add(NarrativeSections.class);
-        classes.add(NarrativeTagging.class);
-        classes.add(Permission.class);
-        classes.add(Transcription.class);
-
-        mockSerializers(classes);
-
-        Book book = store.loadBook("rosedata", "LudwigXV7");
-
-        checkBook(book, classes);
+        assertNotNull(book.getContent());
+        assertTrue(book.getContent().length > 0);
+        assertNotNull(book.getId());
     }
 
     @Test
@@ -221,8 +214,28 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
     }
 
     @Test
-    public void loadCollectionTest() {
-        // TODO
+    public void loadCollectionTest() throws Exception {
+        Set<Class> classes = new HashSet<>();
+
+        classes.add(CharacterNames.class);
+        classes.add(IllustrationTitles.class);
+        classes.add(MissingList.class);
+        classes.add(NarrativeSections.class);
+
+        String[] cols = {"data", "rosedata"};
+
+        for (String collectionName : cols) {
+            mockSerializers(classes);
+            BookCollection collection = store.loadBookCollection(collectionName);
+
+            assertNotNull(collection);
+            assertNotNull(collection.getId());
+            assertNotNull(collection.getCharacterNames());
+            assertNotNull(collection.getIllustrationTitles());
+            assertNotNull(collection.getNarrativeSections());
+            assertNotNull(collection.getMissing());
+            assertNotNull(collection.getAllSupportedLanguages());
+        }
     }
 
     @SuppressWarnings("unchecked")
@@ -246,19 +259,6 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
         }
     }
 
-    @SuppressWarnings("unchecked")
-    private void checkBook(Book book, Set<Class> classes) throws IOException {
-        for (Class c : classes) {
-            // In the case the a file does not exist, the read() method will not be called...
-//            verify(serializerMap.get(c), atLeastOnce()).read(any(InputStream.class));
-            verify(serializerMap.get(c), atMost(2)).read(any(InputStream.class), any(List.class));
-        }
 
-        assertNotNull(book.getContent());
-        assertTrue(book.getContent().length > 0);
-        assertNotNull(book.getPermissionsInAllLanguages());
-        assertTrue(book.getPermissionsInAllLanguages().length > 0);
-        assertNotNull(book.getBookMetadata("en"));
-    }
 
 }
