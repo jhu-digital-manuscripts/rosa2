@@ -19,6 +19,7 @@ import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.Item;
 import rosa.archive.model.NarrativeTagging;
+import rosa.archive.model.Permission;
 import rosa.archive.model.StructureColumn;
 import rosa.archive.model.StructurePage;
 import rosa.archive.model.StructurePageSide;
@@ -45,9 +46,12 @@ public class BookChecker implements Checker<Book> {
         List<String> errors = new ArrayList<>();
 
         // Check the following items:
-        //   images, croppedImages
+        //   list of images is required
         errors.addAll(check(book.getImages(), book));
-        errors.addAll(check(book.getCroppedImages(), book));
+        //   but list of cropped images is not required
+        if (book.getCroppedImages() != null) {
+            errors.addAll(check(book.getCroppedImages(), book));
+        }
         //   cropInfo
         errors.addAll(check(book.getCropInfo(), book));
 
@@ -56,11 +60,12 @@ public class BookChecker implements Checker<Book> {
             errors.addAll(check(book.getBookMetadata(lang), book));
             //   bookDescription (currently not present in model)
             //   permissions
+            errors.addAll(check(book.getPermission(lang), book));
         }
-
+        //   content
+        errors.addAll(check(book.getContent(), book.getId()));
         //   checksumInfo
         errors.addAll(check(book.getChecksumInfo(), book));
-        //   content
         //   bookStructure
         errors.addAll(check(book.getBookStructure(), book));
         //   illustrationTagging
@@ -88,6 +93,45 @@ public class BookChecker implements Checker<Book> {
      */
     private boolean isInArchive(String id, String[] contents) {
         return Arrays.binarySearch(contents, id) >= 0;
+    }
+
+    /**
+     * Logical check on the contents of the Book archive. This method checks to
+     * make sure that the content names are of the expected form.
+     *
+     * Code taken from Rosa1 project: rosa.tool.deriv.BaseDerivative#checkFilenames(..)
+     *
+     * @param content item to check
+     * @param bookId containing book
+     * @return list of errors found during the check
+     */
+    private List<String> check(String[] content, String bookId) {
+        List<String> errors = new ArrayList<>();
+
+        for (String name : content) {
+            if (!name.startsWith(bookId + ".")) {
+                errors.add("File does not start with manuscript ID. [" + name + "]");
+            }
+            // Code taken from Rosa1 project, BaseDerivative#checkFilenames(archive)
+            if (!isKnownName(name)) {
+                errors.add("Unknown file. [" + name + "]");
+            }
+        }
+
+        return errors;
+    }
+
+    private boolean isKnownName(String name) {
+        return name.endsWith(config.getXML())
+                || name.endsWith(config.getTXT())
+                || name.endsWith(config.getCSV())
+                || name.contains(config.getSHA1SUM())
+                || name.contains(config.getPERMISSION())
+                || name.contains(config.getNARRATIVE_TAGGING())
+                || name.contains(config.getNARRATIVE_TAGGING_MAN())
+                || name.contains(config.getIMAGE_TAGGING())
+                || name.contains(config.getBNF_FILEMAP())
+                || name.contains(config.getBNF_MD5SUM());
     }
 
     /**
@@ -135,9 +179,6 @@ public class BookChecker implements Checker<Book> {
         }
         if (StringUtils.isBlank(metadata.getRepository())) {
             errors.add("Metadata repository not set.");
-        }
-        if (StringUtils.isBlank(metadata.getShelfmark())) {
-            errors.add("Metadata shelfmark not set.");
         }
         if (StringUtils.isBlank(metadata.getOrigin())) {
             errors.add("Metadata origin not set.");
@@ -201,6 +242,34 @@ public class BookChecker implements Checker<Book> {
     }
 
     /**
+     * Permission statement on use of content is required.
+     *
+     * @param permission item to check
+     * @param parent containing Book
+     * @return list of errors found while performing check
+     */
+    private List<String> check(Permission permission, Book parent) {
+        List<String> errors = new ArrayList<>();
+
+        if (permission == null) {
+            errors.add("Permission statement missing.");
+            return errors;
+        }
+
+        if (StringUtils.isBlank(permission.getId())) {
+            errors.add("Permission ID not set.");
+        }
+        if (StringUtils.isBlank(permission.getPermission())) {
+            errors.add("Permission statement not set.");
+        }
+        if (!isInArchive(permission.getId(), parent.getContent())) {
+            errors.add("Permission not in archive.");
+        }
+
+        return errors;
+    }
+
+    /**
      * Check data consistency of an {@link rosa.archive.model.ImageList} according
      * to the following rules:
      *
@@ -251,7 +320,7 @@ public class BookChecker implements Checker<Book> {
      * Check the following:
      *
      * <ul>
-     *     <li>Crop information must be exist.</li>
+     *     <li>Crop information is not required.</li>
      *     <li>Crop information must exist in parent book content.</li>
      *     <li>For each data row, the ID must exist in the parent book content.</li>
      *     <li>For each data row, the values left, right, top, bottom must be between 0 and 1.</li>
@@ -265,7 +334,6 @@ public class BookChecker implements Checker<Book> {
         List<String> errors = new ArrayList<>();
 
         if (cropInfo == null) {
-            errors.add("Crop information missing.");
             return errors;
         }
 
@@ -343,7 +411,7 @@ public class BookChecker implements Checker<Book> {
 
     /**
      * <ul>
-     *     <li>The {@link rosa.archive.model.BookStructure} must exist in the Book object.</li>
+     *     <li>The {@link rosa.archive.model.BookStructure} is not required.</li>
      *     <li>The associated item in the archive must exist (Reduced Tagging).</li>
      *     <li>For each page in the structure, there must be an ID, name and front and back sides.</li>
      * </ul>
@@ -356,7 +424,6 @@ public class BookChecker implements Checker<Book> {
         List<String> errors = new ArrayList<>();
 
         if (structure == null) {
-            errors.add("Reduced tagging missing.");
             return errors;
         }
 
@@ -400,7 +467,6 @@ public class BookChecker implements Checker<Book> {
         List<String> errors = new ArrayList<>();
 
         if (side == null) {
-            errors.add("Side of page missing.");
             return errors;
         }
 
@@ -434,7 +500,6 @@ public class BookChecker implements Checker<Book> {
         List<String> errors = new ArrayList<>();
 
         if (column == null) {
-            errors.add("Column is missing.");
             return errors;
         }
 
@@ -469,7 +534,6 @@ public class BookChecker implements Checker<Book> {
         List<String> errors = new ArrayList<>();
 
         if (item == null) {
-            errors.add("Item is missing.");
             return errors;
         }
 
@@ -480,11 +544,17 @@ public class BookChecker implements Checker<Book> {
         return errors;
     }
 
+    /**
+     * Not required.
+     *
+     * @param tagging item to check
+     * @param parent containing Book
+     * @return list of errors found while performing check
+     */
     private List<String> check(IllustrationTagging tagging, Book parent) {
         List<String> errors = new ArrayList<>();
 
         if (tagging == null) {
-            errors.add("Image tagging missing.");
             return errors;
         }
 
@@ -524,11 +594,17 @@ public class BookChecker implements Checker<Book> {
         return errors;
     }
 
+    /**
+     * Not required.
+     *
+     * @param tagging item to check
+     * @param parent containing Book
+     * @return list of errors found while performing check
+     */
     private List<String> check(NarrativeTagging tagging, Book parent) {
         List<String> errors = new ArrayList<>();
 
         if (tagging == null) {
-            errors.add("Narrative tagging missing.");
             return errors;
         }
 
