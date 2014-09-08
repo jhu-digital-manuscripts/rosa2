@@ -23,9 +23,8 @@ public abstract class AbstractFileSystemTest {
     public void setup() {
         URL u = getClass().getClassLoader().getResource("data/character_names.csv");
         assertNotNull(u);
-        String url = u.getPath();
 
-        Path path = Paths.get(url.startsWith("/") ? url.substring(1) : url).getParent().getParent();
+        Path path = Paths.get(u.getPath()).getParent().getParent();
         assertNotNull(path);
 
         base = new ByteStreamGroupImpl(path.toString());
