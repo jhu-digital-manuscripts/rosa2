@@ -1,11 +1,7 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.GuiceJUnitRunner;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 
@@ -19,16 +15,22 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 /**
  * @see rosa.archive.core.serialize.ImageListSerializer
  */
-@RunWith(GuiceJUnitRunner.class)
-@GuiceModules({ArchiveCoreModule.class})
 public class ImageListSerializerTest extends BaseSerializerTest{
 
-    @Inject
     private Serializer<ImageList> serializer;
+
+    @Before
+    public void setup() {
+        super.setup();
+        serializer = new ImageListSerializer(config);
+
+        when(config.getMISSING_PREFIX()).thenReturn("*");
+    }
 
     @Test
     public void readTest() throws IOException {

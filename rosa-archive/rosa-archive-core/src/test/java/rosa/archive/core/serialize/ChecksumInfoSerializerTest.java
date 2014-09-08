@@ -1,11 +1,7 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.GuiceJUnitRunner;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.HashAlgorithm;
@@ -21,13 +17,16 @@ import static org.mockito.Mockito.mock;
 /**
  * @see rosa.archive.core.serialize.ChecksumInfoSerializer
  */
-@RunWith(GuiceJUnitRunner.class)
-@GuiceModules({ArchiveCoreModule.class})
 public class ChecksumInfoSerializerTest extends BaseSerializerTest {
     private static final String testFile = "data/Walters143/Walters143.SHA1SUM";
 
-    @Inject
     private Serializer<ChecksumInfo> serializer;
+
+    @Before
+    public void setup() {
+        super.setup();
+        serializer = new ChecksumInfoSerializer(config);
+    }
 
     @Test
     public void readTest() throws Exception {

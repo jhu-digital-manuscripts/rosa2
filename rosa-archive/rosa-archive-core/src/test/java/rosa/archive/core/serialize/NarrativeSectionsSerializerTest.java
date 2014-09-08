@@ -1,11 +1,7 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.GuiceJUnitRunner;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
 
@@ -21,12 +17,15 @@ import static org.mockito.Mockito.mock;
 /**
  * @see rosa.archive.core.serialize.NarrativeSectionsSerializer
  */
-@RunWith(GuiceJUnitRunner.class)
-@GuiceModules({ArchiveCoreModule.class})
 public class NarrativeSectionsSerializerTest extends BaseSerializerTest {
 
-    @Inject
     private Serializer<NarrativeSections> serializer;
+
+    @Before
+    public void setup() {
+        super.setup();
+        serializer = new NarrativeSectionsSerializer(config);
+    }
 
     @Test
     public void readTest() throws IOException {
