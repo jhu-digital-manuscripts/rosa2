@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Writer;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -100,7 +101,7 @@ public class CSVTest {
         };
 
         File testFile = tmp.newFile("test");
-        Writer writer = Files.newBufferedWriter(Paths.get(testFile.toURI()));
+        Writer writer = Files.newBufferedWriter(Paths.get(testFile.toURI()), Charset.forName("UTF-8"));
 
         CSV.write(writer, data);
 
