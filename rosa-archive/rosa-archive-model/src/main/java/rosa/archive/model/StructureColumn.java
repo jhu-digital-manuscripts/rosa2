@@ -1,7 +1,6 @@
 package rosa.archive.model;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
-import javafx.geometry.Side;
 
 import java.util.ArrayList;
 import java.util.List;
