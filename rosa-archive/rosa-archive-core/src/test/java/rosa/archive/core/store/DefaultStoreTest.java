@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
 import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.check.Checker;
@@ -27,6 +28,7 @@ import rosa.archive.model.Transcription;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URISyntaxException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -59,7 +61,7 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
     private Map<Class, Checker> checkerMap;
 
     @Before
-    public void setup() {
+    public void setup() throws URISyntaxException {
         super.setup();
         MockitoAnnotations.initMocks(this);
         serializerMap = new HashMap<>();

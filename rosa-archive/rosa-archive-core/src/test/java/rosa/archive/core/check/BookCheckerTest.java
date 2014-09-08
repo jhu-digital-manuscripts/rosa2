@@ -30,6 +30,7 @@ import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.StructurePage;
 import rosa.archive.model.StructurePageSide;
 
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -44,7 +45,7 @@ import static org.junit.Assert.assertTrue;
 @GuiceModules({ArchiveCoreModule.class})
 public class BookCheckerTest extends AbstractFileSystemTest {
     @Before
-    public void setup() {
+    public void setup() throws URISyntaxException {
         super.setup();
     }
 
