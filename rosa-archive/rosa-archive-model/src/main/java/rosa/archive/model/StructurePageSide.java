@@ -1,14 +1,14 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
  */
-public class StructurePageSide implements IsSerializable {
+public class StructurePageSide implements Serializable {
+    static final long serialVersionUID = 1L;
 
     private String parentPage;
     private List<Item> spanning;

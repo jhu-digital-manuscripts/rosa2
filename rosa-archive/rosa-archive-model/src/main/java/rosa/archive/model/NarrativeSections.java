@@ -1,7 +1,6 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +8,8 @@ import java.util.List;
  * Collection of scenes present in a collection. Scenes may or may not be present in individual
  * books in the collection. Useful for mapping scenes onto the books.
  */
-public class NarrativeSections implements HasId, IsSerializable {
+public class NarrativeSections implements HasId, Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private List<NarrativeScene> scenes;

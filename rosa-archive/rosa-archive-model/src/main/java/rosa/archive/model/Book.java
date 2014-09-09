@@ -1,7 +1,6 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -11,7 +10,8 @@ import java.util.Map;
 /**
  * A single book in the archive.
  */
-public class Book implements HasId, IsSerializable {
+public class Book implements HasId, Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     /**

@@ -1,11 +1,12 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
+import java.io.Serializable;
 
 /**
  * A high resolution image of a page in a book. Dimensions should be in pixels!
  */
-public class BookImage implements IsSerializable {
+public class BookImage implements Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private int width;

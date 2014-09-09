@@ -1,6 +1,6 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
+import java.io.Serializable;
 
 /**
  * An item on a page in a book.
@@ -8,7 +8,8 @@ import com.google.gwt.user.client.rpc.IsSerializable;
  * This item takes the place of zero or more lines of text on the page. This information is used
  * to help determine the number of lines of text are on a page.
  */
-public class Item implements IsSerializable {
+public class Item implements Serializable {
+    static final long serialVersionUID = 1L;
 
     private int lines;
 

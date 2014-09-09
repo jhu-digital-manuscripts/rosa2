@@ -1,13 +1,14 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.Arrays;
 
 /**
  * Image tagging information for a single image on a page.
  */
-public class Illustration implements IsSerializable {
+public class Illustration implements Serializable {
+    static final long serialVersionUID = 1L;
+
     private String id;
     private String page;
     private String textualElement;

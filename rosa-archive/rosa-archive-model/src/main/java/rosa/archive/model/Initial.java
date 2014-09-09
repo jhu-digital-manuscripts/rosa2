@@ -4,6 +4,7 @@ package rosa.archive.model;
  *
  */
 public class Initial extends Item {
+    static final long serialVersionUID = 1L;
 
     private String character;
     private boolean isEmpty;

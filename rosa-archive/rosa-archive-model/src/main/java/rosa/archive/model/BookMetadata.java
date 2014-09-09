@@ -1,14 +1,13 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.Arrays;
-import java.util.Collection;
 
 /**
  * Metadata describing a book in the archive.
  */
-public class BookMetadata implements HasId, IsSerializable {
+public class BookMetadata implements HasId, Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private String date;

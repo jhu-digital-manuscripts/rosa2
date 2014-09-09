@@ -1,14 +1,14 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
  */
-public class StructureColumn implements IsSerializable {
+public class StructureColumn implements Serializable {
+    static final long serialVersionUID = 1L;
 
     private List<Item> items;
     private int firstLineCriticalEdition;

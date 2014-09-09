@@ -12,15 +12,4 @@
     <artifactId>rosa-archive-model</artifactId>
     <packaging>jar</packaging>
 
-    <dependencies>
-
-        <!-- GWT dependency for serialization support -->
-        <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-user</artifactId>
-            <version>${gwt.version}</version>
-        </dependency>
-
-    </dependencies>
-
 </project>

@@ -1,11 +1,12 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
+import java.io.Serializable;
 
 /**
  * Used in NarrativeSection
  */
-public class NarrativeScene implements IsSerializable {
+public class NarrativeScene implements Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private String description;

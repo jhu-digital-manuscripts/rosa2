@@ -1,7 +1,6 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -9,7 +8,8 @@ import java.util.Set;
 /**
  * Holds the checksums for all items in the archive for a book.
  */
-public class ChecksumInfo implements HasId, IsSerializable {
+public class ChecksumInfo implements HasId, Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     /**

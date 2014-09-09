@@ -1,7 +1,6 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -10,9 +9,9 @@ import java.util.Set;
 /**
  * The name of a character. Supports multiple languages.
  */
-public class CharacterName implements IsSerializable {
-    // TODO set a default language if non is specified when added? can be made configurable!
-    private static final String DEFAULT_LANGUAGE = "EN";
+public class CharacterName implements Serializable {
+    static final long serialVersionUID = 1L;
+    private static final String DEFAULT_LANGUAGE = "en";
 
     private String id;
     /**

@@ -1,7 +1,6 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
@@ -9,7 +8,8 @@ import java.util.Map.Entry;
 /**
  * Information about about the cropping data of zero or more images.
  */
-public class CropInfo implements HasId, Iterable<CropData>, IsSerializable {
+public class CropInfo implements HasId, Iterable<CropData>, Serializable {
+    static final long serialVersionUID = 1L;
 
     private HashMap<String, CropData> data;
     private String id;

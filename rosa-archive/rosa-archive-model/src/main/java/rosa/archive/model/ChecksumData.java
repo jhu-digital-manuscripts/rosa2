@@ -1,11 +1,12 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
+import java.io.Serializable;
 
 /**
  * Checksum data for an item in the archive, including the hash algorithm and hash itself.
  */
-public class ChecksumData implements IsSerializable {
+public class ChecksumData implements Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private HashAlgorithm algorithm;

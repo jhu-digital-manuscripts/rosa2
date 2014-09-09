@@ -1,11 +1,12 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
+import java.io.Serializable;
 
 /**
  * A page in a book. Used for determining the books structure
  */
-public class StructurePage implements IsSerializable {
+public class StructurePage implements Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private String name;

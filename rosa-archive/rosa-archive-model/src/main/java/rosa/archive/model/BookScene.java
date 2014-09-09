@@ -1,11 +1,12 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
+import java.io.Serializable;
 
 /**
  *
  */
-public class BookScene implements IsSerializable {
+public class BookScene implements Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private String startPage;

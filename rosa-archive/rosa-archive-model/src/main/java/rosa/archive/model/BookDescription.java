@@ -1,11 +1,12 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
+import java.io.Serializable;
 
 /**
  * A prose description of a book.
  */
-public class BookDescription implements IsSerializable {
+public class BookDescription implements Serializable {
+    static final long serialVersionUID = 1L;
 
     public BookDescription() {  }
 

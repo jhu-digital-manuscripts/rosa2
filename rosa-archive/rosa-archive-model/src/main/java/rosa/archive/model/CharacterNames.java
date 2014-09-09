@@ -1,19 +1,18 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 /**
  *
  */
-public class CharacterNames implements HasId, IsSerializable {
+public class CharacterNames implements HasId, Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private Map<String, CharacterName> names;

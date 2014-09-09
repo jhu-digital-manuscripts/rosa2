@@ -1,7 +1,6 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -9,7 +8,8 @@ import java.util.List;
 /**
  *
  */
-public class ImageList implements HasId, IsSerializable, Iterable<BookImage> {
+public class ImageList implements HasId, Serializable, Iterable<BookImage> {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private List<BookImage> images;

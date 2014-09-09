@@ -1,7 +1,6 @@
 package rosa.archive.model;
 
-import com.google.gwt.user.client.rpc.IsSerializable;
-
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -10,7 +9,8 @@ import java.util.Set;
  * Illustration titles associated with a collection, not necessarily with a single book in
  * the collection.
  */
-public class IllustrationTitles implements HasId, IsSerializable {
+public class IllustrationTitles implements HasId, Serializable {
+    static final long serialVersionUID = 1L;
 
     private String id;
     private Map<String, String> data;
