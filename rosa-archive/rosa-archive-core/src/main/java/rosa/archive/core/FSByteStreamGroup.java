@@ -15,18 +15,18 @@ import java.util.Map.Entry;
 /**
  *
  */
-public class ByteStreamGroupImpl implements ByteStreamGroup {
+public class FSByteStreamGroup implements ByteStreamGroup {
 
     private Path base;
 
     private List<Path> files;
     private Map<String, ByteStreamGroup> directories;
 
-    public ByteStreamGroupImpl(String base) {
+    public FSByteStreamGroup(String base) {
         this(Paths.get(base));
     }
 
-    ByteStreamGroupImpl(Path base) {
+    FSByteStreamGroup(Path base) {
         this.base = base;
         this.files = new ArrayList<>();
         this.directories = new HashMap<>();
@@ -36,7 +36,7 @@ public class ByteStreamGroupImpl implements ByteStreamGroup {
                 if (Files.isRegularFile(path)) {
                     files.add(path);
                 } else if (Files.isDirectory(path)) {
-                    directories.put(path.toString(), new ByteStreamGroupImpl(path));
+                    directories.put(path.toString(), new FSByteStreamGroup(path));
                 }
             }
         } catch (IOException e) {

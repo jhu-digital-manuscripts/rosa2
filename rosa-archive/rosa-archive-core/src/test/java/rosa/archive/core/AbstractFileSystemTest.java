@@ -29,7 +29,7 @@ public abstract class AbstractFileSystemTest {
         Path path = Paths.get(u.toURI()).getParent().getParent();        
         assertNotNull(path);
 
-        base = new ByteStreamGroupImpl(path.toString());
+        base = new FSByteStreamGroup(path.toString());
     }
 
 }
