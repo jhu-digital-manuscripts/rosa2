@@ -10,7 +10,7 @@ import java.util.List;
  *
  */
 public class BookStructure implements HasId, Iterable<StructurePage>, Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     /**

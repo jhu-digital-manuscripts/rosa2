@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Crop data for high resolution images. All numbers are percents.
  */
 public class CropData implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private double left;

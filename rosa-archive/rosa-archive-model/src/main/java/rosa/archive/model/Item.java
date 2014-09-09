@@ -9,7 +9,7 @@ import java.io.Serializable;
  * to help determine the number of lines of text are on a page.
  */
 public class Item implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private int lines;
 

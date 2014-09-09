@@ -9,7 +9,7 @@ import java.util.List;
  * books in the collection. Useful for mapping scenes onto the books.
  */
 public class NarrativeSections implements HasId, Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private List<NarrativeScene> scenes;

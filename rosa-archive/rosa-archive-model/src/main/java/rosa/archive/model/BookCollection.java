@@ -7,7 +7,7 @@ import java.util.Arrays;
  * A collection of books stored in the archive.
  */
 public class BookCollection implements HasId, Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     /**

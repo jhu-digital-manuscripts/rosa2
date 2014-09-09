@@ -6,7 +6,7 @@ import java.io.Serializable;
  * A prose description of a book.
  */
 public class BookDescription implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     public BookDescription() {  }
 

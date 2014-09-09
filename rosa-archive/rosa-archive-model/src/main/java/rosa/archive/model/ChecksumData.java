@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Checksum data for an item in the archive, including the hash algorithm and hash itself.
  */
 public class ChecksumData implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private HashAlgorithm algorithm;

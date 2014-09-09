@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Image tagging information for a single image on a page.
  */
 public class Illustration implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private String page;

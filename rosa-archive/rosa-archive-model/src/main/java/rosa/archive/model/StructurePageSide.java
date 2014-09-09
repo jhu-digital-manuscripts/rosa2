@@ -8,7 +8,7 @@ import java.util.List;
  *
  */
 public class StructurePageSide implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String parentPage;
     private List<Item> spanning;

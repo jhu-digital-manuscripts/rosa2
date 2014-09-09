@@ -9,7 +9,7 @@ import java.util.List;
  *
  */
 public class ImageList implements HasId, Serializable, Iterable<BookImage> {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private List<BookImage> images;

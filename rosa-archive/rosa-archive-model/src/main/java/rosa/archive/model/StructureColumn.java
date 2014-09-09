@@ -8,7 +8,7 @@ import java.util.List;
  *
  */
 public class StructureColumn implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private List<Item> items;
     private int firstLineCriticalEdition;

@@ -6,7 +6,7 @@ import java.io.Serializable;
  * A high resolution image of a page in a book. Dimensions should be in pixels!
  */
 public class BookImage implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private int width;

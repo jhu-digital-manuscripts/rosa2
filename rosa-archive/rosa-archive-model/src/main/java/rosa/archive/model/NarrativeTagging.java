@@ -9,7 +9,7 @@ import java.util.List;
  *
  */
 public class NarrativeTagging implements HasId, Serializable, Iterable<BookScene> {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private List<BookScene> scenes;

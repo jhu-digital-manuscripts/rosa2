@@ -9,7 +9,7 @@ import java.util.List;
  * Information about zero or more illustrations.
  */
 public class IllustrationTagging implements HasId, Iterable<Illustration>, Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private List<Illustration> data;

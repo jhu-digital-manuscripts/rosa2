@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Used in NarrativeSection
  */
 public class NarrativeScene implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private String description;

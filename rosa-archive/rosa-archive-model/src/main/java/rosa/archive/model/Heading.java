@@ -4,7 +4,7 @@ package rosa.archive.model;
  *
  */
 public class Heading extends Item {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String text;
 

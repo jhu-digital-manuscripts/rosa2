@@ -12,7 +12,7 @@ import java.util.Set;
  *
  */
 public class CharacterNames implements HasId, Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private Map<String, CharacterName> names;

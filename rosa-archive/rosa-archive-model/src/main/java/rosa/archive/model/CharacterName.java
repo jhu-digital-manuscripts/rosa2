@@ -10,7 +10,7 @@ import java.util.Set;
  * The name of a character. Supports multiple languages.
  */
 public class CharacterName implements Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     private static final String DEFAULT_LANGUAGE = "en";
 
     private String id;

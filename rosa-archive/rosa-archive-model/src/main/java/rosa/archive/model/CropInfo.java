@@ -9,7 +9,7 @@ import java.util.Map.Entry;
  * Information about about the cropping data of zero or more images.
  */
 public class CropInfo implements HasId, Iterable<CropData>, Serializable {
-    static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private HashMap<String, CropData> data;
     private String id;
