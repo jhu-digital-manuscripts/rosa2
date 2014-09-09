@@ -115,6 +115,9 @@ public class AppConfig {
     @Inject @Named("TXT")
     private String TXT;
 
+    @Inject @Named("TIF")
+    private String TIF;
+
     public String[] languages() {
         return LANGUAGES.split(",");
     }
@@ -249,5 +252,9 @@ public class AppConfig {
 
     public String getTXT() {
         return TXT;
+    }
+
+    public String getTIF() {
+        return TIF;
     }
 }

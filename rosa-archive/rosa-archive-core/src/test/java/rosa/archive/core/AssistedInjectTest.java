@@ -2,55 +2,35 @@ package rosa.archive.core;
 
 import com.google.inject.Inject;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
 import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.core.store.DefaultStore;
 import rosa.archive.core.store.Store;
 import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.BookCollection;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class AssistedInjectTest {
+public class AssistedInjectTest extends AbstractFileSystemTest {
 
     @Inject
     private StoreFactory storeFactory;
-    private ByteStreamGroup bsg;
-
-    @Before
-    public void setup() throws URISyntaxException {
-        URL u = getClass().getClassLoader().getResource("data/character_names.csv");
-        assertNotNull(u);
-
-        Path path = Paths.get(u.toURI()).getParent().getParent();        
-        
-        bsg = ByteStreamGroupFactory.create(path.toString());
-        assertNotNull(bsg);
-    }
 
     @Test
     public void verifyBSGInjection() {
-        assertNotNull(bsg);
-        assertNotNull(bsg.id());
-        assertNotNull(bsg.name());
-        assertEquals("test-classes", bsg.name());
+        assertNotNull(base);
+        assertNotNull(base.id());
+        assertNotNull(base.name());
+        assertEquals("test-classes", base.name());
     }
 
     @Test
     public void verifyStoreInjection() {
-        Store store = storeFactory.create(bsg);
+        Store store = storeFactory.create(base);
 
         assertNotNull(store);
         assertEquals(DefaultStore.class, store.getClass());

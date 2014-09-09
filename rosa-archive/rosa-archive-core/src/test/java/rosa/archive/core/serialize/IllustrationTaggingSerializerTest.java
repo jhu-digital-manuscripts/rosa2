@@ -1,12 +1,8 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
 import org.apache.commons.lang3.StringUtils;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.GuiceJUnitRunner;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 
@@ -22,12 +18,15 @@ import static org.mockito.Mockito.mock;
 /**
  * @see rosa.archive.core.serialize.IllustrationTaggingSerializer
  */
-@RunWith(GuiceJUnitRunner.class)
-@GuiceModules({ArchiveCoreModule.class})
 public class IllustrationTaggingSerializerTest extends BaseSerializerTest {
 
-    @Inject
     private Serializer<IllustrationTagging> serializer;
+
+    @Before
+    public void setup() {
+        super.setup();
+        serializer = new IllustrationTaggingSerializer(config);
+    }
 
     @Test
     public void readTest() throws IOException {

@@ -1,11 +1,7 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.GuiceJUnitRunner;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.NarrativeTagging;
 
@@ -22,12 +18,15 @@ import static org.mockito.Mockito.mock;
 /**
  * @see rosa.archive.core.serialize.NarrativeTaggingSerializer
  */
-@RunWith(GuiceJUnitRunner.class)
-@GuiceModules({ArchiveCoreModule.class})
 public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
 
-    @Inject
     private Serializer<NarrativeTagging> serializer;
+
+    @Before
+    public void setup() {
+        super.setup();
+        serializer = new NarrativeTaggingSerializer(config);
+    }
 
     @Test
     public void readCSVTest() throws IOException {

@@ -1,11 +1,7 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.GuiceJUnitRunner;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.model.Transcription;
 
 import java.io.IOException;
@@ -19,12 +15,15 @@ import static org.mockito.Mockito.mock;
 /**
  * @see TranscriptionXmlSerializerTest
  */
-@RunWith(GuiceJUnitRunner.class)
-@GuiceModules({ArchiveCoreModule.class})
 public class TranscriptionXmlSerializerTest extends BaseSerializerTest {
 
-    @Inject
     private Serializer<Transcription> serializer;
+
+    @Before
+    public void setup() {
+        super.setup();
+        serializer = new TranscriptionXmlSerializer(config);
+    }
 
     @Test
     public void readTest() throws IOException {

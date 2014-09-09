@@ -92,6 +92,7 @@ public class BookChecker implements Checker<Book> {
      * @return TRUE if the ID is present
      */
     private boolean isInArchive(String id, String[] contents) {
+        Arrays.sort(contents);
         return Arrays.binarySearch(contents, id) >= 0;
     }
 
@@ -125,6 +126,7 @@ public class BookChecker implements Checker<Book> {
         return name.endsWith(config.getXML())
                 || name.endsWith(config.getTXT())
                 || name.endsWith(config.getCSV())
+                || name.endsWith(config.getTIF())
                 || name.contains(config.getSHA1SUM())
                 || name.contains(config.getPERMISSION())
                 || name.contains(config.getNARRATIVE_TAGGING())
