@@ -22,6 +22,7 @@ import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.NarrativeTagging;
+import rosa.archive.model.Permission;
 import rosa.archive.model.StructurePage;
 import rosa.archive.model.StructurePageSide;
 
@@ -49,6 +50,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         when(config.getXML()).thenReturn(".xml");
         when(config.getTXT()).thenReturn(".txt");
         when(config.getCSV()).thenReturn(".csv");
+        when(config.getTIF()).thenReturn(".tif");
         when(config.getSHA1SUM()).thenReturn(".SHA1SUM");
         when(config.getPERMISSION()).thenReturn(".permission_");
         when(config.getNARRATIVE_TAGGING()).thenReturn(".nartag.csv");
@@ -65,10 +67,10 @@ public class BookCheckerTest extends AbstractFileSystemTest {
     public void checkContentTest() {
         BookChecker bChecker = new BookChecker(config);
 
-//        assertTrue(bChecker.checkContent(createBook(), base, true));
-//        assertFalse(bChecker.checkContent(createBadBook(), base, true));
-//        assertTrue(bChecker.checkContent(createBook(), base, false));
-//        assertFalse(bChecker.checkContent(createBadBook(), base, false));
+        assertTrue(bChecker.checkContent(createBook(), base, true));
+        assertFalse(bChecker.checkContent(createBadBook(), base, true));
+        assertTrue(bChecker.checkContent(createBook(), base, false));
+        assertFalse(bChecker.checkContent(createBadBook(), base, false));
     }
 
     private Book createBook() {
@@ -233,6 +235,20 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         }
         content.add(checksums.getId());
         book.setChecksumInfo(checksums);
+
+        // Permissions
+        Permission perm_en = new Permission();
+        perm_en.setId("BookId.permission_en.html");
+        perm_en.setPermission("This is an english permission statement.");
+
+        Permission perm_fr = new Permission();
+        perm_fr.setId("BookId.permission_fr.html");
+        perm_fr.setPermission("This is a french permission statement");
+
+        content.add(perm_en.getId());
+        content.add(perm_fr.getId());
+        book.addPermission(perm_en, "en");
+        book.addPermission(perm_fr, "fr");
 
         book.setContent(content.toArray(new String[content.size()]));
         return book;
