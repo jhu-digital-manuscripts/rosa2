@@ -16,25 +16,25 @@ public interface ByteStreamGroup {
      */
     public String name();
 
-    public int numberOfByteStreams();
+    public int numberOfByteStreams() throws IOException;
 
-    public int numberOfByteStreamGroups();
+    public int numberOfByteStreamGroups() throws IOException;
 
     /**
      * @return list of ByteStream IDs
      */
-    public List<String> listByteStreamIds();
+    public List<String> listByteStreamIds() throws IOException;
 
     /**
      * @return list of ByteStream names
      */
-    public List<String> listByteStreamNames();
+    public List<String> listByteStreamNames() throws IOException;
 
-    public List<String> listByteStreamGroupIds();
+    public List<String> listByteStreamGroupIds() throws IOException;
 
-    public List<String> listByteStreamGroupNames();
+    public List<String> listByteStreamGroupNames() throws IOException;
 
-    public List<ByteStreamGroup> listByteStreamGroups();
+    public List<ByteStreamGroup> listByteStreamGroups() throws IOException;
 
     public boolean hasByteStream(String name);
 

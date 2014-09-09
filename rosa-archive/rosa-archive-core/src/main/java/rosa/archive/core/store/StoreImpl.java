@@ -37,20 +37,20 @@ public class StoreImpl implements Store {
     }
 
     @Override
-    public String[] listBookCollections() {
+    public String[] listBookCollections() throws IOException {
         return base.listByteStreamGroupNames()
                 .toArray(new String[base.numberOfByteStreamGroups()]);
     }
 
     @Override
-    public String[] listBooks(String collectionId) {
+    public String[] listBooks(String collectionId) throws IOException{
         ByteStreamGroup collection = base.getByteStreamGroup(collectionId);
         return collection.listByteStreamGroupNames()
                 .toArray(new String[collection.numberOfByteStreamGroups()]);
     }
 
     @Override
-    public BookCollection loadBookCollection(String collectionId) {
+    public BookCollection loadBookCollection(String collectionId) throws IOException {
         ByteStreamGroup collectionGroup = base.getByteStreamGroup(collectionId);
         BookCollection collection = new BookCollection();
 
@@ -71,7 +71,7 @@ public class StoreImpl implements Store {
     }
 
     @Override
-    public Book loadBook(String collectionId, String bookId) {
+    public Book loadBook(String collectionId, String bookId) throws IOException {
         ByteStreamGroup byteStreams = base.getByteStreamGroup(collectionId);
         if (!byteStreams.hasByteStreamGroup(bookId)) {
             // TODO report missing book

@@ -61,7 +61,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
     private Map<Class, Checker> checkerMap;
 
     @Before
-    public void setup() throws URISyntaxException {
+    public void setup() throws URISyntaxException, IOException {
         super.setup();
         MockitoAnnotations.initMocks(this);
         serializerMap = new HashMap<>();
@@ -92,7 +92,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
     }
 
     @Test
-    public void listCollectionsTest() {
+    public void listCollectionsTest() throws IOException {
         String[] collections = store.listBookCollections();
         assertNotNull(collections);
 
@@ -104,7 +104,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
     }
 
     @Test
-    public void listBooksInRosedata() {
+    public void listBooksInRosedata() throws IOException {
         String[] books = store.listBooks("rosedata");
         assertNotNull(books);
 
@@ -118,7 +118,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
     }
 
     @Test
-    public void listBooksTest() {
+    public void listBooksTest() throws IOException {
         String[] books = store.listBooks("data");
         assertNotNull(books);
 

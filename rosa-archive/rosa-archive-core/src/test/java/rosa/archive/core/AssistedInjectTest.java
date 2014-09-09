@@ -10,6 +10,8 @@ import rosa.archive.core.store.Store;
 import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.BookCollection;
 
+import java.io.IOException;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
@@ -29,7 +31,7 @@ public class AssistedInjectTest extends AbstractFileSystemTest {
     }
 
     @Test
-    public void verifyStoreInjection() {
+    public void verifyStoreInjection() throws IOException {
         Store store = storeFactory.create(base);
 
         assertNotNull(store);

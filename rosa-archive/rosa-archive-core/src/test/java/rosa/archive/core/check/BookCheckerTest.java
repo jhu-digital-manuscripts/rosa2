@@ -26,6 +26,7 @@ import rosa.archive.model.Permission;
 import rosa.archive.model.StructurePage;
 import rosa.archive.model.StructurePageSide;
 
+import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +44,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
     private AppConfig config;
 
     @Before
-    public void setup() throws URISyntaxException {
+    public void setup() throws URISyntaxException, IOException {
         super.setup();
         MockitoAnnotations.initMocks(this);
 

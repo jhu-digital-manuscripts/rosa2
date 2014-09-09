@@ -3,19 +3,21 @@ package rosa.archive.core.store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 
+import java.io.IOException;
+
 /**
  *
  */
 public interface Store {
 
-    String[] listBookCollections();
+    String[] listBookCollections() throws IOException;
 
     /**
      *
      * @return
      *          array of items that exists in the collection
      */
-    String[] listBooks(String collectionId);
+    String[] listBooks(String collectionId) throws IOException;
 
     /**
      * From the collection id, load the collection from the archive and get a BookCollection
@@ -26,7 +28,7 @@ public interface Store {
      * @return
      *          BookCollection object
      */
-    BookCollection loadBookCollection(String collectionId);
+    BookCollection loadBookCollection(String collectionId) throws IOException;
 
     /**
      * Get a single book from the archive that exists in the specified collection.
@@ -38,7 +40,7 @@ public interface Store {
      * @return
      *          Book object
      */
-    Book loadBook(String collectionId, String bookId);
+    Book loadBook(String collectionId, String bookId) throws IOException;
 
     /**
      * Check the internal data consistency and bit integrity of an archive within this Store.

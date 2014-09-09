@@ -7,10 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 
 /**
  *
@@ -19,29 +16,12 @@ public class FSByteStreamGroup implements ByteStreamGroup {
 
     private Path base;
 
-    private List<Path> files;
-    private Map<String, ByteStreamGroup> directories;
-
-    public FSByteStreamGroup(String base) {
+    public FSByteStreamGroup(String base) throws IOException{
         this(Paths.get(base));
     }
 
     FSByteStreamGroup(Path base) {
         this.base = base;
-        this.files = new ArrayList<>();
-        this.directories = new HashMap<>();
-
-        try (DirectoryStream<Path> ds = Files.newDirectoryStream(base)) {
-            for (Path path : ds) {
-                if (Files.isRegularFile(path)) {
-                    files.add(path);
-                } else if (Files.isDirectory(path)) {
-                    directories.put(path.toString(), new FSByteStreamGroup(path));
-                }
-            }
-        } catch (IOException e) {
-            throw new RuntimeException("Unable to create ByteStreamGroup.", e);
-        }
     }
 
     /**
@@ -61,23 +41,43 @@ public class FSByteStreamGroup implements ByteStreamGroup {
     }
 
     @Override
-    public int numberOfByteStreams() {
-        return files.size();
+    public int numberOfByteStreams() throws IOException {
+        int filesCount = 0;
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(base)) {
+            for (Path path : ds) {
+                if (Files.isRegularFile(path)) {
+                    filesCount++;
+                }
+            }
+        }
+        return filesCount;
     }
 
     @Override
-    public int numberOfByteStreamGroups() {
-        return directories.size();
+    public int numberOfByteStreamGroups() throws IOException {
+        int dirCount = 0;
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(base)) {
+            for (Path path : ds) {
+                if (Files.isDirectory(path)) {
+                    dirCount++;
+                }
+            }
+        }
+        return dirCount;
     }
 
     /**
      * @return list of ByteStream IDs
      */
     @Override
-    public List<String> listByteStreamIds() {
+    public List<String> listByteStreamIds() throws IOException {
         List<String> ids = new ArrayList<>();
-        for (Path path : files) {
-            ids.add(path.toString());
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(base)) {
+            for (Path path : ds) {
+                if (Files.isRegularFile(path)) {
+                    ids.add(path.toString());
+                }
+            }
         }
         return ids;
     }
@@ -86,52 +86,67 @@ public class FSByteStreamGroup implements ByteStreamGroup {
      * @return list of ByteStream names
      */
     @Override
-    public List<String> listByteStreamNames() {
+    public List<String> listByteStreamNames() throws IOException {
         List<String> names = new ArrayList<>();
-        for (Path path : files) {
-            names.add(path.getFileName().toString());
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(base)) {
+            for (Path path : ds) {
+                if (Files.isRegularFile(path)) {
+                    names.add(path.getFileName().toString());
+                }
+            }
         }
         return names;
     }
 
     @Override
-    public List<String> listByteStreamGroupIds() {
+    public List<String> listByteStreamGroupIds() throws IOException {
         List<String> ids = new ArrayList<>();
-        for (String id : directories.keySet()) {
-            ids.add(id);
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(base)) {
+            for (Path path : ds) {
+                if (Files.isDirectory(path)) {
+                    ids.add(path.toString());
+                }
+            }
         }
         return ids;
     }
 
     @Override
-    public List<String> listByteStreamGroupNames() {
+    public List<String> listByteStreamGroupNames() throws IOException {
         List<String> names = new ArrayList<>();
-        for (ByteStreamGroup bsg : listByteStreamGroups()) {
-            names.add(bsg.name());
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(base)) {
+            for (Path path : ds) {
+                if (Files.isDirectory(path)) {
+                    names.add(path.getFileName().toString());
+                }
+            }
         }
         return names;
     }
 
     @Override
-    public List<ByteStreamGroup> listByteStreamGroups() {
+    public List<ByteStreamGroup> listByteStreamGroups() throws IOException {
         List<ByteStreamGroup> bsg = new ArrayList<>();
-
-        for (Entry<String, ByteStreamGroup> entry : directories.entrySet()) {
-            bsg.add(entry.getValue());
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(base)) {
+            for (Path path : ds) {
+                if (Files.isDirectory(path)) {
+                    bsg.add(new FSByteStreamGroup(path));
+                }
+            }
         }
-
         return bsg;
     }
 
     @Override
     public boolean hasByteStream(String name) {
         Path relative = base.resolve(name);
-        return files.contains(relative);
+        return Files.exists(relative) && Files.isRegularFile(relative);
     }
 
     @Override
     public boolean hasByteStreamGroup(String name) {
-        return listByteStreamGroupNames().contains(name);
+        Path relative = base.resolve(name);
+        return Files.exists(relative) && Files.isDirectory(relative);
     }
 
     @Override
@@ -143,7 +158,7 @@ public class FSByteStreamGroup implements ByteStreamGroup {
     @Override
     public ByteStreamGroup getByteStreamGroup(String name) {
         Path path = base.resolve(name);
-        return directories.get(path.toString());
+        return new FSByteStreamGroup(path);
     }
 
 }

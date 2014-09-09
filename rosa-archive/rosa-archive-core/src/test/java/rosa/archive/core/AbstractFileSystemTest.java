@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 
 import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 
+import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Path;
@@ -22,14 +23,14 @@ public abstract class AbstractFileSystemTest {
     protected ByteStreamGroup base;
 
     @Before
-    public void setup() throws URISyntaxException {
+    public void setup() throws URISyntaxException, IOException {
         URL u = getClass().getClassLoader().getResource("data/character_names.csv");
         assertNotNull(u);
 
         Path path = Paths.get(u.toURI()).getParent().getParent();        
         assertNotNull(path);
 
-        base = new FSByteStreamGroup(path.toString());
+        base = new FSByteStreamGroup(path);
     }
 
 }
