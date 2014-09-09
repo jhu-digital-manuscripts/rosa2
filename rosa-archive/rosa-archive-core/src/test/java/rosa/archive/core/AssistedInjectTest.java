@@ -5,7 +5,7 @@ import com.google.inject.Inject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
-import rosa.archive.core.store.DefaultStore;
+import rosa.archive.core.store.StoreImpl;
 import rosa.archive.core.store.Store;
 import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.BookCollection;
@@ -33,7 +33,7 @@ public class AssistedInjectTest extends AbstractFileSystemTest {
         Store store = storeFactory.create(base);
 
         assertNotNull(store);
-        assertEquals(DefaultStore.class, store.getClass());
+        assertEquals(StoreImpl.class, store.getClass());
 
         // Serializers in the Store are not accessible from the outside, so testing a few
         // methods to make sure they were injected properly....

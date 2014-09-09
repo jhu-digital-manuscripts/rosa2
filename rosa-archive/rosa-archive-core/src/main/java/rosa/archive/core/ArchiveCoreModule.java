@@ -8,7 +8,6 @@ import com.google.inject.name.Names;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.check.Checker;
-import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
@@ -23,7 +22,7 @@ import rosa.archive.core.serialize.NarrativeTaggingSerializer;
 import rosa.archive.core.serialize.PermissionSerializer;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.core.serialize.TranscriptionXmlSerializer;
-import rosa.archive.core.store.DefaultStore;
+import rosa.archive.core.store.StoreImpl;
 import rosa.archive.core.store.Store;
 import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.Book;
@@ -99,7 +98,7 @@ public class ArchiveCoreModule extends AbstractModule {
 
         // Store
         install(new FactoryModuleBuilder()
-                .implement(Store.class, DefaultStore.class)
+                .implement(Store.class, StoreImpl.class)
                 .build(StoreFactory.class));
 
         Names.bindProperties(binder(), getProperties());

@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  *
  */
-public class DefaultStore implements Store {
+public class StoreImpl implements Store {
 
     private final ByteStreamGroup base;
     private final AppConfig config;
@@ -26,10 +26,10 @@ public class DefaultStore implements Store {
     private Map<Class, Checker> checkerMap;
 
     @Inject
-    public DefaultStore(Map<Class, Serializer> serializerMap,
-                        Map<Class, Checker> checkerMap,
-                        AppConfig config,
-                        @Assisted ByteStreamGroup base) {
+    public StoreImpl(Map<Class, Serializer> serializerMap,
+                     Map<Class, Checker> checkerMap,
+                     AppConfig config,
+                     @Assisted ByteStreamGroup base) {
         this.base = base;
         this.config = config;
         this.serializerMap = serializerMap;

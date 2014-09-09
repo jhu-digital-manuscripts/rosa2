@@ -52,9 +52,9 @@ import static org.mockito.Mockito.when;
 /**
  *
  */
-public class DefaultStoreTest extends AbstractFileSystemTest {
+public class StoreImplTest extends AbstractFileSystemTest {
 
-    private DefaultStore store;
+    private StoreImpl store;
     @Mock
     private AppConfig context;
     private Map<Class, Serializer> serializerMap;
@@ -67,7 +67,7 @@ public class DefaultStoreTest extends AbstractFileSystemTest {
         serializerMap = new HashMap<>();
         checkerMap = new HashMap<>();
 
-        this.store = new DefaultStore(serializerMap, checkerMap, context, base);
+        this.store = new StoreImpl(serializerMap, checkerMap, context, base);
 
         // Setting config to a single constant to ensure that all input streams will open
         // in order to read from the mock serializers.
