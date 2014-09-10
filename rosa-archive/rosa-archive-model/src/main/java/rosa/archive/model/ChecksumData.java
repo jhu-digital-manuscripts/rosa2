@@ -43,17 +43,19 @@ public class ChecksumData implements Serializable {
         if (this == o) return true;
         if (!(o instanceof ChecksumData)) return false;
 
-        ChecksumData that = (ChecksumData) o;
+        ChecksumData data = (ChecksumData) o;
 
-        if (algorithm != that.algorithm) return false;
-        if (hash != null ? !hash.equals(that.hash) : that.hash != null) return false;
+        if (algorithm != data.algorithm) return false;
+        if (hash != null ? !hash.equals(data.hash) : data.hash != null) return false;
+        if (id != null ? !id.equals(data.id) : data.id != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = algorithm != null ? algorithm.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (algorithm != null ? algorithm.hashCode() : 0);
         result = 31 * result + (hash != null ? hash.hashCode() : 0);
         return result;
     }
@@ -61,7 +63,8 @@ public class ChecksumData implements Serializable {
     @Override
     public String toString() {
         return "ChecksumData{" +
-                "algorithm=" + algorithm +
+                "id='" + id + '\'' +
+                ", algorithm=" + algorithm +
                 ", hash='" + hash + '\'' +
                 '}';
     }

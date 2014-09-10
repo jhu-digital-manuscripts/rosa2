@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import rosa.archive.core.AbstractFileSystemTest;
+import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
@@ -27,12 +28,16 @@ import rosa.archive.model.StructurePage;
 import rosa.archive.model.StructurePageSide;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
@@ -42,6 +47,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
     @Mock
     private AppConfig config;
+    private InputStream in;
 
     @Before
     public void setup() throws URISyntaxException, IOException {
@@ -66,23 +72,29 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
     @Test
     @SuppressWarnings("unchecked")
-    public void checkContentTest() {
+    public void checkContentTest() throws IOException {
         BookChecker bChecker = new BookChecker(config);
 
-        assertTrue(bChecker.checkContent(createBook(), base, true));
-        assertFalse(bChecker.checkContent(createBadBook(), base, true));
-        assertTrue(bChecker.checkContent(createBook(), base, false));
-        assertFalse(bChecker.checkContent(createBadBook(), base, false));
+        ByteStreamGroup bsg = mock(ByteStreamGroup.class);
+        when(bsg.getByteStream(anyString())).thenReturn(
+                getClass().getClassLoader().getResourceAsStream("rosedata/LudwigXV7/LudwigXV7.crop.txt")
+        );
+
+
+        assertTrue(bChecker.checkContent(createBook(), bsg, true));
+        assertFalse(bChecker.checkContent(createBadBook(), bsg, true));
+        assertTrue(bChecker.checkContent(createBook(), bsg, false));
+        assertFalse(bChecker.checkContent(createBadBook(), bsg, false));
     }
 
     private Book createBook() {
         Book book = new Book();
-        book.setId("BookId");
+        book.setId("LudwigXV7");
         List<String> content = new ArrayList<>();
 
         // Metadata
         BookMetadata metadata = new BookMetadata();
-        metadata.setId("BookId.description_en.csv");
+        metadata.setId("LudwigXV7.description_en.csv");
         metadata.setCommonName("Common Name");
         metadata.setShelfmark("Shelfmark");
         metadata.setYearStart(0);
@@ -119,17 +131,17 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         // Images
         ImageList images = new ImageList();
         ImageList cropped = new ImageList();
-        images.setId("BookId.images.csv");
-        cropped.setId("BookId.images.crop.csv");
+        images.setId("LudwigXV7.images.csv");
+        cropped.setId("LudwigXV7.images.crop.csv");
         for (int i = 0; i < 10; i++) {
             BookImage image = new BookImage();
-            image.setId("BookId.00" + i + "v.tif");
+            image.setId("LudwigXV7.00" + (i) + "v.tif");
             image.setMissing(false);
             image.setWidth(100);
             image.setHeight(100);
             images.getImages().add(image);
             BookImage image1 = new BookImage();
-            image1.setId("BookId.00" + i + "r.tif");
+            image1.setId("LudwigXV7.00" + (i) + "r.tif");
             image1.setMissing(false);
             image1.setWidth(100);
             image1.setHeight(100);
@@ -137,7 +149,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
             // cropped images marked as missing
             BookImage crop = new BookImage();
-            crop.setId("CroppedImage.00" + i + "r.tif");
+            crop.setId("CroppedImage.00" + (i) + "r.tif");
             crop.setMissing(true);
             crop.setHeight(95);
             crop.setWidth(95);
@@ -153,10 +165,10 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
         // Crop info
         CropInfo cropInfo = new CropInfo();
-        cropInfo.setId("BookId.crop.txt");
+        cropInfo.setId("LudwigXV7.crop.txt");
         for (int i = 0; i < 10; i++) {
             CropData data = new CropData();
-            data.setId("BookId.00" + i + "v.tif");
+            data.setId("LudwigXV7.00" + (i) + "v.tif");
             data.setLeft(.01);
             data.setRight(.02);
             data.setTop(0.03);
@@ -169,7 +181,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
         // reduced tagging
         BookStructure structure = new BookStructure();
-        structure.setId("BookId.redtag.csv");
+        structure.setId("LudwigXV7.redtag.csv");
         List<StructurePage> pages = structure.pages();
         for (int i = 1; i < 10; i++) {
             StructurePage page = new StructurePage();
@@ -185,7 +197,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
         // Illustration tagging
         IllustrationTagging ilTag = new IllustrationTagging();
-        ilTag.setId("BookId.imagetag.csv");
+        ilTag.setId("LudwigXV7.imagetag.csv");
         for (int i = 0; i < 15; i++) {
             Illustration ill = new Illustration();
             ill.setId(String.valueOf(i));
@@ -202,8 +214,8 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         // Manual narrative tagging
         NarrativeTagging manNarTag = new NarrativeTagging();
         NarrativeTagging autNarTag = new NarrativeTagging();
-        manNarTag.setId("BookId.nartag.txt");
-        autNarTag.setId("BookId.nartag.csv");
+        manNarTag.setId("LudwigXV7.nartag.txt");
+        autNarTag.setId("LudwigXV7.nartag.csv");
         List<BookScene> manScenes = manNarTag.getScenes();
         List<BookScene> autScenes = autNarTag.getScenes();
         for (int i = 0; i < 10; i++) {
@@ -224,33 +236,40 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         book.setManualNarrativeTagging(manNarTag);
         book.setAutomaticNarrativeTagging(autNarTag);
 
-        // Checksum info
-        ChecksumInfo checksums = new ChecksumInfo();
-        checksums.setId("BookId.SHA1SUM");
-        for (String filename : content) {
-            ChecksumData data = new ChecksumData();
-            data.setId(filename);
-            data.setAlgorithm(HashAlgorithm.SHA1);
-            data.setHash("12341234abaa");
-
-            checksums.addChecksum(data);
-        }
-        content.add(checksums.getId());
-        book.setChecksumInfo(checksums);
-
         // Permissions
         Permission perm_en = new Permission();
-        perm_en.setId("BookId.permission_en.html");
+        perm_en.setId("LudwigXV7.permission_en.html");
         perm_en.setPermission("This is an english permission statement.");
 
         Permission perm_fr = new Permission();
-        perm_fr.setId("BookId.permission_fr.html");
+        perm_fr.setId("LudwigXV7.permission_fr.html");
         perm_fr.setPermission("This is a french permission statement");
 
         content.add(perm_en.getId());
         content.add(perm_fr.getId());
         book.addPermission(perm_en, "en");
         book.addPermission(perm_fr, "fr");
+
+        // Checksum info
+        boolean first = true;
+        Collections.sort(content);
+
+        ChecksumInfo checksums = new ChecksumInfo();
+        checksums.setId("LudwigXV7.SHA1SUM");
+        for (String filename : content) {
+            ChecksumData data = new ChecksumData();
+            data.setId(filename);
+            data.setAlgorithm(HashAlgorithm.SHA1);
+            if (first) {
+                data.setHash("1ae91bed8acf6df12710743b39b143905abbc8aa");
+                first = false;
+            } else
+                data.setHash("da39a3ee5e6b4b0d3255bfef95601890afd80709");
+
+            checksums.addChecksum(data);
+        }
+        content.add(checksums.getId());
+        book.setChecksumInfo(checksums);
 
         book.setContent(content.toArray(new String[content.size()]));
         return book;
@@ -289,6 +308,27 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         }
         badBook.setImages(images);
         badBook.setCroppedImages(cropped);
+
+        // Checksum info
+        boolean first = true;
+        Collections.sort(content);
+
+        ChecksumInfo checksums = new ChecksumInfo();
+        checksums.setId("LudwigXV7.SHA1SUM");
+        for (String filename : content) {
+            ChecksumData data = new ChecksumData();
+            data.setId(filename);
+            data.setAlgorithm(HashAlgorithm.SHA1);
+            if (first) {
+                data.setHash("1ae91bed8acf6df12710743b39b143905abbc8aa");
+                first = false;
+            } else
+                data.setHash("da39a3ee5e6b4b0d3255bfef95601890afd80709");
+
+            checksums.addChecksum(data);
+        }
+        content.add(checksums.getId());
+        badBook.setChecksumInfo(checksums);
 
         badBook.setContent(content.toArray(new String[content.size()]));
         return badBook;

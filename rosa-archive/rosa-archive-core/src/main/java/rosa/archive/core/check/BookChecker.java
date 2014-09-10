@@ -14,6 +14,8 @@ import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
+import rosa.archive.model.HasId;
+import rosa.archive.model.HashAlgorithm;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.ImageList;
@@ -24,6 +26,10 @@ import rosa.archive.model.StructureColumn;
 import rosa.archive.model.StructurePage;
 import rosa.archive.model.StructurePageSide;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -33,6 +39,7 @@ import java.util.List;
  * @see rosa.archive.model.Book
  */
 public class BookChecker implements Checker<Book> {
+    final protected static char[] hexArray = "0123456789abcdef".toCharArray();
 
     private AppConfig config;
 
@@ -46,6 +53,8 @@ public class BookChecker implements Checker<Book> {
         List<String> errors = new ArrayList<>();
 
         // Check the following items:
+        //   checksumInfo
+        errors.addAll(check(book.getChecksumInfo(), book));
         //   list of images is required
         errors.addAll(check(book.getImages(), book));
         //   but list of cropped images is not required
@@ -64,8 +73,6 @@ public class BookChecker implements Checker<Book> {
         }
         //   content
         errors.addAll(check(book.getContent(), book.getId()));
-        //   checksumInfo
-        errors.addAll(check(book.getChecksumInfo(), book));
         //   bookStructure
         errors.addAll(check(book.getBookStructure(), book));
         //   illustrationTagging
@@ -78,6 +85,9 @@ public class BookChecker implements Checker<Book> {
         // If checkBits is true
         //   calculate hash digest of each of the above items, compare it to the hash values
         //   stored in checksumInfo
+        if (checkBits) {
+            errors.addAll(checkAllBits(bsg, book));
+        }
 
         // Return TRUE if all above checks pass
         // Return FALSE if any of the above tests fail
@@ -94,6 +104,90 @@ public class BookChecker implements Checker<Book> {
     private boolean isInArchive(String id, String[] contents) {
         Arrays.sort(contents);
         return Arrays.binarySearch(contents, id) >= 0;
+    }
+
+    private boolean isKnownName(String name) {
+        return name.endsWith(config.getXML())
+                || name.endsWith(config.getTXT())
+                || name.endsWith(config.getCSV())
+                || name.endsWith(config.getTIF())
+                || name.contains(config.getSHA1SUM())
+                || name.contains(config.getPERMISSION())
+                || name.contains(config.getNARRATIVE_TAGGING())
+                || name.contains(config.getNARRATIVE_TAGGING_MAN())
+                || name.contains(config.getIMAGE_TAGGING())
+                || name.contains(config.getBNF_FILEMAP())
+                || name.contains(config.getBNF_MD5SUM());
+    }
+
+    private static String bytesToHex(byte[] bytes) {
+        char[] hexChars = new char[bytes.length * 2];
+        for ( int j = 0; j < bytes.length; j++ ) {
+            int v = bytes[j] & 0xFF;
+            hexChars[j * 2] = hexArray[v >>> 4];
+            hexChars[j * 2 + 1] = hexArray[v & 0x0F];
+        }
+        return new String(hexChars);
+    }
+
+    protected String calculateChecksum(InputStream in, HashAlgorithm algorithm)
+            throws IOException, NoSuchAlgorithmException {
+
+        MessageDigest md = MessageDigest.getInstance(algorithm.toString());
+
+        byte[] buff = new byte[1024];
+
+        int numRead;
+        do {
+            numRead = in.read(buff);
+            if (numRead > 0) {
+                md.update(buff, 0, numRead);
+            }
+        } while (numRead != -1);
+
+        return bytesToHex(md.digest());
+    }
+
+    /**
+     * Check the bit integrity of all items in the book archive. Checksum
+     * values are calculated for each item in the book archive and compared
+     * to known checksum values that are stored in the archive.
+     *
+     * @param bsg object wrapping all InputStreams for the archive
+     * @param book book archive
+     * @return list of errors found while performing check
+     */
+    protected List<String> checkAllBits(ByteStreamGroup bsg, Book book) {
+        List<String> errors = new ArrayList<>();
+
+        ChecksumInfo checksums = book.getChecksumInfo();
+        if (checksums == null) {
+            errors.add("Checksum missing from book archive.");
+            return errors;
+        }
+
+        for (String id : book.getContent()) {
+
+            if (id.contains(config.getSHA1SUM()) || id.contains(config.getBNF_MD5SUM())) {
+                continue;
+            }
+
+            ChecksumData stored = checksums.getChecksumDataForId(id);
+            try {
+                String calculated = calculateChecksum(
+                        bsg.getByteStream(id),
+                        stored.getAlgorithm()
+                );
+
+                if (!stored.getHash().equalsIgnoreCase(calculated)) {
+                    errors.add("Calculated checksum different from stored checksum. [" + id + "]");
+                }
+            } catch (IOException | NoSuchAlgorithmException e) {
+                errors.add("Failed to calculate checksum for [" + id + "]");
+            }
+        }
+
+        return errors;
     }
 
     /**
@@ -120,20 +214,6 @@ public class BookChecker implements Checker<Book> {
         }
 
         return errors;
-    }
-
-    private boolean isKnownName(String name) {
-        return name.endsWith(config.getXML())
-                || name.endsWith(config.getTXT())
-                || name.endsWith(config.getCSV())
-                || name.endsWith(config.getTIF())
-                || name.contains(config.getSHA1SUM())
-                || name.contains(config.getPERMISSION())
-                || name.contains(config.getNARRATIVE_TAGGING())
-                || name.contains(config.getNARRATIVE_TAGGING_MAN())
-                || name.contains(config.getIMAGE_TAGGING())
-                || name.contains(config.getBNF_FILEMAP())
-                || name.contains(config.getBNF_MD5SUM());
     }
 
     /**
@@ -345,9 +425,9 @@ public class BookChecker implements Checker<Book> {
 
         for (CropData crop : cropInfo) {
             if (StringUtils.isBlank(crop.getId())) {
-                errors.add("Crop ID missing. ]" + crop + "]");
+                errors.add("Crop ID missing. [" + crop + "]");
             } else if (!isInArchive(crop.getId(), parent.getContent())) {
-                errors.add("Crop information not present in parent Book.");
+                errors.add("Crop information missing from parent Book archive. [" + crop + "]");
             }
 
             if (crop.getLeft() < 0.0 || crop.getRight() < 0.0
