@@ -1,6 +1,8 @@
 package rosa.archive.core.check;
 
 import com.google.inject.Inject;
+import org.apache.commons.codec.binary.Hex;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
@@ -14,7 +16,6 @@ import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
-import rosa.archive.model.HasId;
 import rosa.archive.model.HashAlgorithm;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
@@ -39,18 +40,21 @@ import java.util.List;
  * @see rosa.archive.model.Book
  */
 public class BookChecker implements Checker<Book> {
-    final protected static char[] hexArray = "0123456789abcdef".toCharArray();
-
     private AppConfig config;
 
     @Inject
     BookChecker(AppConfig config) {
         this.config = config;
     }
-
+// TODO re-serialize from ByteStreamGroup to check readability?
     @Override
     public boolean checkContent(Book book, ByteStreamGroup bsg, boolean checkBits) {
         List<String> errors = new ArrayList<>();
+
+        if (book == null) {
+            errors.add("Book is missing.");
+            return false;
+        }
 
         // Check the following items:
         //   checksumInfo
@@ -82,9 +86,7 @@ public class BookChecker implements Checker<Book> {
         //   automaticNarrativeTagging
         errors.addAll(check(book.getAutomaticNarrativeTagging(), book));
 
-        // If checkBits is true
-        //   calculate hash digest of each of the above items, compare it to the hash values
-        //   stored in checksumInfo
+        // check bit integrity
         if (checkBits) {
             errors.addAll(checkAllBits(bsg, book));
         }
@@ -120,32 +122,20 @@ public class BookChecker implements Checker<Book> {
                 || name.contains(config.getBNF_MD5SUM());
     }
 
-    private static String bytesToHex(byte[] bytes) {
-        char[] hexChars = new char[bytes.length * 2];
-        for ( int j = 0; j < bytes.length; j++ ) {
-            int v = bytes[j] & 0xFF;
-            hexChars[j * 2] = hexArray[v >>> 4];
-            hexChars[j * 2 + 1] = hexArray[v & 0x0F];
-        }
-        return new String(hexChars);
-    }
-
+    /**
+     * Compute the hash of an input stream using the specified algorithm.
+     *
+     * @param in input
+     * @param algorithm hashing algorithm to use
+     * @return hash value as hex string
+     * @throws IOException
+     * @throws NoSuchAlgorithmException
+     */
     protected String calculateChecksum(InputStream in, HashAlgorithm algorithm)
             throws IOException, NoSuchAlgorithmException {
-
-        MessageDigest md = MessageDigest.getInstance(algorithm.toString());
-
-        byte[] buff = new byte[1024];
-
-        int numRead;
-        do {
-            numRead = in.read(buff);
-            if (numRead > 0) {
-                md.update(buff, 0, numRead);
-            }
-        } while (numRead != -1);
-
-        return bytesToHex(md.digest());
+        MessageDigest md = DigestUtils.getDigest(algorithm.toString());
+        DigestUtils.updateDigest(md, in);
+        return Hex.encodeHexString(md.digest());
     }
 
     /**
@@ -658,7 +648,7 @@ public class BookChecker implements Checker<Book> {
                     if (!StringUtils.isNumeric(id)) {
                         errors.add("Illustration ID is non-numeric. [" + illustration + "]");
                     }
-                    // TODO compare with IDs in collection's IllustrationTitles
+                    // Link to illustration_titles.csv in collection checked in the collection checker
                 }
             }
             if (illustration.getCharacters().length == 0) {
@@ -668,7 +658,7 @@ public class BookChecker implements Checker<Book> {
                     if (!StringUtils.isNumeric(id)) {
                         errors.add("Illustration character ID is non-numeric.[" + illustration + "]");
                     }
-                    // TODO compare with IDs in collections CharacterNames
+                    // Link to character_names.csv in collection checked in the collection checker
                 }
             }
         }
@@ -695,7 +685,7 @@ public class BookChecker implements Checker<Book> {
         }
 
         for (BookScene scene : tagging) {
-            // TODO compare with scenes in collections NarrativeSections
+            // Link to narrative_sections.csv checked in collection checker
             if (guessImageName(scene.getStartPage(), parent) == null) {
                 errors.add("Could not find start page of scene. [" + scene + "]");
             }
