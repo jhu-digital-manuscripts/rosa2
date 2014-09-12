@@ -33,6 +33,10 @@ public class IllustrationTitles implements HasId, Serializable {
         this.data = data;
     }
 
+    public boolean hasTitle(String id) {
+        return getAllIds().contains(id);
+    }
+
     public String getTitleById(String id) {
         return data.get(id);
     }

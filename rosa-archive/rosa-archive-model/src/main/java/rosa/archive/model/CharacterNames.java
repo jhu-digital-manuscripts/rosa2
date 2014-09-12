@@ -31,6 +31,10 @@ public class CharacterNames implements HasId, Serializable {
         this.id = id;
     }
 
+    public boolean hasCharacter(String id) {
+        return getAllCharacterIds().contains(id);
+    }
+
     /**
      * Get a set of all character names in a particular language.
      *
