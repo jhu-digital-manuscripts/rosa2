@@ -23,7 +23,10 @@ public class BookCollection implements HasId, Serializable {
     private NarrativeSections narrativeSections;
     private MissingList missing;
 
-    public BookCollection() {  }
+    public BookCollection() {
+        books = new String[0];
+        languages = new String[0];
+    }
 
     @Override
     public String getId() {

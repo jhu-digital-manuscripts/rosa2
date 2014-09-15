@@ -1,6 +1,8 @@
 package rosa.archive.core.check;
 
 import com.google.inject.Inject;
+import org.apache.commons.codec.binary.Hex;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
@@ -8,7 +10,10 @@ import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.CharacterNames;
+import rosa.archive.model.ChecksumData;
+import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.HasId;
+import rosa.archive.model.HashAlgorithm;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
@@ -17,6 +22,8 @@ import rosa.archive.model.NarrativeTagging;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -71,7 +78,7 @@ public class BookCollectionChecker implements Checker<BookCollection> {
 
         // Check bit integrity (there is no stored checksum values for these files)
         if (checkBits) {
-            // TODO
+            errors.addAll(checkBits(bsg));
         }
 
         return errors.isEmpty();
@@ -106,7 +113,8 @@ public class BookCollectionChecker implements Checker<BookCollection> {
     }
 
     /**
-     * Check books within a collection for references to character_names and illustration_titles.
+     * Check books within a collection for references to character_names and illustration_titles
+     * and narrative_sections.
      *
      * @param bsg byte stream group
      * @param collection parent collection
@@ -227,6 +235,7 @@ public class BookCollectionChecker implements Checker<BookCollection> {
     }
 
     /**
+     * Make sure the IDs in a book's narrative tagging exist in the collections narrative sections.
      *
      * @param sections narrative sections to check
      * @param tagging image tagging to check against
@@ -242,6 +251,69 @@ public class BookCollectionChecker implements Checker<BookCollection> {
         }
 
         return errors;
+    }
+
+    private List<String> checkBits(ByteStreamGroup bsg) {
+        List<String> errors = new ArrayList<>();
+
+        String guessChecksumName = bsg.name() + config.getSHA1SUM();
+        ChecksumInfo checksumInfo = null;
+        if (bsg.hasByteStream(guessChecksumName)) {
+            try (InputStream checkIn = bsg.getByteStream(guessChecksumName)) {
+                Serializer checksumSerializer = serializerMap.get(ChecksumInfo.class);
+                checksumInfo = (ChecksumInfo) checksumSerializer.read(checkIn, errors);
+            } catch (IOException e) {
+                errors.add("Failed to load checksums. [" + guessChecksumName + "]");
+            }
+        }
+
+        if (checksumInfo == null) {
+            return errors;
+        }
+
+        List<String> streamIds = new ArrayList<>();
+        try {
+            streamIds.addAll(bsg.listByteStreamIds());
+        } catch (IOException e) {
+            errors.add("Failed to get stream IDs from group. [" + bsg.id() + "]");
+        }
+
+        for (String id : streamIds) {
+            ChecksumData checksum = checksumInfo.getChecksumDataForId(id);
+
+            if (checksum == null) {
+                errors.add("No checksum data found for stream [" + id + "]");
+                continue;
+            }
+
+            try (InputStream in = bsg.getByteStream(id)) {
+                String hash = calculateChecksum(in, checksum.getAlgorithm());
+
+                if (!checksum.getHash().equalsIgnoreCase(hash)) {
+                    errors.add("Stream [" + id + "]: Stored checksum different from calculated checksum.");
+                }
+            } catch (IOException | NoSuchAlgorithmException e) {
+                errors.add("Failed to read stream. [" + id + "]");
+            }
+        }
+
+        return errors;
+    }
+
+    /**
+     * Compute the hash of an input stream using the specified algorithm.
+     *
+     * @param in input
+     * @param algorithm hashing algorithm to use
+     * @return hash value as hex string
+     * @throws IOException
+     * @throws java.security.NoSuchAlgorithmException
+     */
+    protected String calculateChecksum(InputStream in, HashAlgorithm algorithm)
+            throws IOException, NoSuchAlgorithmException {
+        MessageDigest md = DigestUtils.getDigest(algorithm.toString());
+        DigestUtils.updateDigest(md, in);
+        return Hex.encodeHexString(md.digest());
     }
 
 //    /**
