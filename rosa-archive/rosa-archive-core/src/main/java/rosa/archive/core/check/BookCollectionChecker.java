@@ -65,13 +65,12 @@ public class BookCollectionChecker implements Checker<BookCollection> {
             }
         }
 
-        //   character_names and illustration_titles
-        errors.addAll(check(collection.getCharacterNames(), collection.getIllustrationTitles(), bsg, collection));
-        //   narrative_sections
-        errors.addAll(check(collection.getNarrativeSections(), bsg, collection));
+        //   character_names and illustration_titles and narrative_sections
+        errors.addAll(check(collection, bsg));
         //   missing
 
         // Check bit integrity (there is no stored checksum values for these files)
+        // TODO
 
         return errors.isEmpty();
     }
@@ -86,8 +85,13 @@ public class BookCollectionChecker implements Checker<BookCollection> {
      * @param <T> item type
      * @return list of errors found while performing the check
      */
-    private <T extends HasId> List<String> atteptToRead(T item, ByteStreamGroup bsg) {
+    private <T extends HasId> List<String> attemptToRead(T item, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
+
+        if (item == null || StringUtils.isBlank(item.getId())) {
+            errors.add("Item missing from archive.");
+            return errors;
+        }
 
         try (InputStream in = bsg.getByteStream(item.getId())) {
             // This will read the item in the archive and report any errors
@@ -102,66 +106,91 @@ public class BookCollectionChecker implements Checker<BookCollection> {
     /**
      * Check books within a collection for references to character_names and illustration_titles.
      *
-     * @param names character names to check
-     * @param titles illustration titles to check
      * @param bsg byte stream group
      * @param collection parent collection
      * @return list of errors found while performing check
      */
-    private List<String> check(CharacterNames names, IllustrationTitles titles,
-                               ByteStreamGroup bsg, BookCollection collection) {
+    private List<String> check(BookCollection collection, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
-        if (names == null || !bsg.hasByteStream(names.getId())) {
-            errors.add("character_names.csv missing from archive.");
-            return errors;
-        }
+        CharacterNames names = collection.getCharacterNames();
+        IllustrationTitles titles = collection.getIllustrationTitles();
+        NarrativeSections sections = collection.getNarrativeSections();
 
-        // Make sure the character_names item can be read
-        errors.addAll(atteptToRead(names, bsg));
+        // Make sure the things can be read
+        errors.addAll(attemptToRead(names, bsg));
+        errors.addAll(attemptToRead(titles, bsg));
+        errors.addAll(attemptToRead(sections, bsg));
 
         // Check character names references in image tagging in books
         List<String> booksInCollection = Arrays.asList(collection.books());
         try {
             for (String bookName : booksInCollection) {
-                ByteStreamGroup b = bsg.getByteStreamGroup(bookName);
-                if (b == null || !b.name().equals(bookName)) {
+                ByteStreamGroup bookBSG = bsg.getByteStreamGroup(bookName);
+                // Make sure that a book in the collection's book list exists in the archive
+                if (bookBSG == null || !bookBSG.name().equals(bookName)) {
                     errors.add("Book missing from archive. [" + bookName + "]");
                     continue;
                 }
 
-                String id = bookName + config.getIMAGE_TAGGING();
-                if (!b.hasByteStream(id)) {
-                    errors.add("Image tagging missing from book. [" + bookName + "]");
-                    continue;
-                }
-
-                Serializer serializer = serializerMap.get(IllustrationTagging.class);
-                InputStream in = b.getByteStream(id);
-                IllustrationTagging tagging = (IllustrationTagging) serializer.read(in, errors);
-
-                for (Illustration ill : tagging) {
-                    // Check character_names references in imagetag
-                    List<String> characters = Arrays.asList(ill.getCharacters());
-                    for (String character : characters) {
-                        if (!names.hasCharacter(character)) {
-                            errors.add("Character ID [" + character + "] in illustration [" +
-                                    ill.getId() + "] missing.");
-                        }
-                    }
-
-                    // Check illustration_titles references in imagetag
-                    List<String> t = Arrays.asList(ill.getTitles());
-                    for (String title : t) {
-                        if (!titles.hasTitle(title)) {
-                            errors.add("Title [" + title + "] in illustration [" + ill.getId() + "] missing.");
-                        }
-                    }
-                }
+                // Check character_names and illustration_titles
+                errors.addAll(check(names, titles, bookBSG));
+                // Check narrative_sections (automatic and manual)
+                errors.addAll(check(sections, bookBSG));
 
             }
         } catch (IOException e) {
-            errors.add("Failed to check book references to [" + names.getId() + "] or [" + titles.getId() + "]");
+            errors.add("Failed to check book references to [" + names.getId() + "] or [" + titles.getId() + "]"
+                    + " or [" + sections.getId() + "]");
+        }
+
+        return errors;
+    }
+
+    /**
+     *
+     * @param names character names
+     * @param titles illustration titles
+     * @param bsg byte stream group
+     * @return list of errors found while checking
+     * @throws IOException
+     */
+    private List<String> check(CharacterNames names, IllustrationTitles titles, ByteStreamGroup bsg)
+            throws IOException {
+        List<String> errors = new ArrayList<>();
+
+        String id = bsg.name() + config.getIMAGE_TAGGING();
+        if (!bsg.hasByteStream(id)) {
+            // Return nothing if there is no image tagging to check
+            return errors;
+        }
+
+        Serializer serializer = serializerMap.get(IllustrationTagging.class);
+        InputStream in = bsg.getByteStream(id);
+        IllustrationTagging tagging = (IllustrationTagging) serializer.read(in, errors);
+
+        // Checking CharacterNames and IllustrationTitles, referenced in image tagging
+        for (Illustration ill : tagging) {
+            // Check character_names references in imagetag
+            if (names != null) {
+                List<String> characters = Arrays.asList(ill.getCharacters());
+                for (String character : characters) {
+                    if (!names.hasCharacter(character)) {
+                        errors.add("Character ID [" + character + "] in illustration [" +
+                                ill.getId() + "] missing.");
+                    }
+                }
+            }
+
+            // Check illustration_titles references in imagetag
+            if (titles != null) {
+                List<String> t = Arrays.asList(ill.getTitles());
+                for (String title : t) {
+                    if (!titles.hasTitle(title)) {
+                        errors.add("Title [" + title + "] in illustration [" + ill.getId() + "] missing.");
+                    }
+                }
+            }
         }
 
         return errors;
@@ -170,47 +199,44 @@ public class BookCollectionChecker implements Checker<BookCollection> {
     /**
      *
      * @param sections item to check
-     * @param bsg byte stream group
+     * @param bookBSG byte stream group
      * @return list of errors found while performing check
      */
-    private List<String> check(NarrativeSections sections, ByteStreamGroup bsg, BookCollection collection) {
+    private List<String> check(NarrativeSections sections, ByteStreamGroup bookBSG) throws IOException {
         List<String> errors = new ArrayList<>();
 
-        if (sections == null || !bsg.hasByteStream(sections.getId())) {
-            errors.add("narrative_sections.csv missing from archive.");
-            return errors;
-        }
-
-        // Make sure narrative_sections can be read
-        errors.addAll(atteptToRead(sections, bsg));
+        Serializer serializer = serializerMap.get(NarrativeTagging.class);
 
         // Check narrative sections references in narrative tagging in books
-        List<String> booksInCollection = Arrays.asList(collection.books());
-        try {
-            for (String bookName : booksInCollection) {
-                ByteStreamGroup b = bsg.getByteStreamGroup(bookName);
-                if (b == null || !b.name().equals(bookName)) {
-                    errors.add("Book missing from archive. [" + bookName + "]");
-                    continue;
-                }
+        // both automatic and narrative tagging, if they exist
+        String autoId = bookBSG.name() + config.getNARRATIVE_TAGGING();
+        if (bookBSG.hasByteStream(autoId)) {
+            InputStream autoIn = bookBSG.getByteStream(autoId);
+            check(sections, (NarrativeTagging) serializer.read(autoIn, errors));
+        }
 
-                String id = bookName + config.getNARRATIVE_TAGGING();
-                if (!b.hasByteStream(id)) {
-                    errors.add("Narrative tagging missing from book. [" + bookName + "]");
-                    continue;
-                }
+        String manId = bookBSG.name() + config.getNARRATIVE_TAGGING_MAN();
+        if (bookBSG.hasByteStream(manId)) {
+            InputStream manIn = bookBSG.getByteStream(manId);
+            check(sections, (NarrativeTagging) serializer.read(manIn, errors));
+        }
 
-                Serializer serializer = serializerMap.get(NarrativeTagging.class);
-                InputStream in = b.getByteStream(id);
-                NarrativeTagging tagging = (NarrativeTagging) serializer.read(in, errors);
+        return errors;
+    }
 
-                for (BookScene scene : tagging) {
+    /**
+     *
+     * @param sections narrative sections to check
+     * @param tagging image tagging to check against
+     * @return list of errors found while checking
+     */
+    private List<String> check(NarrativeSections sections, NarrativeTagging tagging) {
+        List<String> errors = new ArrayList<>();
 
-                }
-
+        for (BookScene scene : tagging) {
+            if (sections.findIndexOfSceneById(scene.getId()) < 0) {
+                errors.add("Narrative tagging scene not found in narrative_sections.");
             }
-        } catch (IOException e) {
-            errors.add("Failed to check book references to [" + sections.getId() + "]");
         }
 
         return errors;

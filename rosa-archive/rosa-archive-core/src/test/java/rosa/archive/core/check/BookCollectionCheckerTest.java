@@ -5,6 +5,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.junit.Ignore;
 import org.junit.Test;
 import rosa.archive.core.AbstractFileSystemTest;
+import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.*;
@@ -30,6 +31,7 @@ import static org.mockito.Mockito.when;
  * @see rosa.archive.core.check.BookCollectionChecker
  */
 public class BookCollectionCheckerTest extends AbstractFileSystemTest {
+    private static final String[] bookNames = { "LudwigXV7", "Morgan948", "Senshu2", "Walters143" };
 
     @Test
     public void checkTest() throws Exception {
@@ -40,15 +42,25 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
         BookCollectionChecker checker = new BookCollectionChecker(config, serializerMap);
         BookCollection collection = createBookCollection();
 
+        ByteStreamGroup bsg = base.getByteStreamGroup("rosedata");
 
+        System.out.println("BSG: " + bsg.toString()
+                + "\nsub-names: " + bsg.listByteStreamGroupNames()
+                + "\nbyte streams: " + bsg.listByteStreamNames());
+
+        assertTrue(checker.checkContent(collection, bsg, false));
 
     }
 
     private BookCollection createBookCollection() {
         BookCollection collection = new BookCollection();
+        collection.setId("rosetest");
+
+        collection.setLanguages(new String[] { "en", "fr" });
 
         // Character names
         CharacterNames names = new CharacterNames();
+        names.setId("character_names.csv");
         for (int i = 0; i < 5; i++) {
             CharacterName name = new CharacterName();
             name.setId("Character" + i);
@@ -61,6 +73,7 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
 
         // Illustration titles
         IllustrationTitles titles = new IllustrationTitles();
+        titles.setId("illustration_titles.csv");
         Map<String, String> titleMap = new HashMap<>();
         for (int i = 0; i < 10; i++) {
             titleMap.put("Illustration" + i, "Illustration Title");
@@ -70,6 +83,7 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
 
         // Narrative sections
         NarrativeSections sections = new NarrativeSections();
+        sections.setId("narrative_sections.csv");
         List<NarrativeScene> scenes = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             NarrativeScene scene = new NarrativeScene();
@@ -80,43 +94,17 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
         sections.setScenes(scenes);
         collection.setNarrativeSections(sections);
 
-        List<String> books = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            books.add("Book" + i);
-        }
-        collection.setBooks(books.toArray(new String[5]));
+        collection.setBooks(bookNames);
 
         return collection;
     }
 
-    private Book createBook(String id) {
-        Book book = new Book();
-        book.setId(id);
-
-        IllustrationTagging tagging = new IllustrationTagging();
-        for (int i = 0; i < 10; i++) {
-            Illustration ill = new Illustration();
-            ill.setPage("001r");
-            ill.setTitles(new String[] { "Illustration"+i });
-            ill.setCharacters(new String[] { "Character1" });
-
-            tagging.addIllustrationData(ill);
-        }
-        book.setIllustrationTagging(tagging);
-
-        NarrativeTagging nartag = new NarrativeTagging();
-        List<BookScene> scenes = nartag.getScenes();
-        for (int i = 0; i < 10; i++) {
-            BookScene scene = new BookScene();
-            scene.setId("Scene" + i);
-
-            scenes.add(scene);
-        }
-        book.setAutomaticNarrativeTagging(nartag);
-
-        return book;
-    }
-
+    /**
+     * Create a map of Class objects to mocks of matching Serializers.
+     *
+     * @return map of Serializer mocks
+     * @throws Exception
+     */
     @SuppressWarnings("unchecked")
     private Map<Class, Serializer> mockSerializers() throws Exception{
         Map<Class, Serializer> serializerMap = new HashMap<>();
@@ -125,6 +113,8 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
         classes.add(CharacterNames.class);
         classes.add(IllustrationTitles.class);
         classes.add(NarrativeSections.class);
+        classes.add(IllustrationTagging.class);
+        classes.add(NarrativeTagging.class);
         classes.add(MissingList.class);
 
         for (Class c : classes) {
@@ -137,10 +127,18 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
         return serializerMap;
     }
 
+    /**
+     * Create a new {@link rosa.archive.core.config.AppConfig} mock object.
+     *
+     * @return AppConfig mock
+     */
     private AppConfig mockAppConfig() {
         AppConfig config = mock(AppConfig.class);
 
         when(config.languages()).thenReturn(new String[] { "en", "fr" });
+        when(config.getIMAGE_TAGGING()).thenReturn(".imagetag.csv");
+        when(config.getNARRATIVE_TAGGING()).thenReturn(".nartag.csv");
+        when(config.getNARRATIVE_TAGGING_MAN()).thenReturn(".nartag.txt");
 
         return config;
     }

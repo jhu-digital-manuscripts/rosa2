@@ -693,7 +693,7 @@ public class BookChecker implements Checker<Book> {
                 errors.add("Could not find end page of scene. [" + scene + "]");
             }
         }
-
+// TODO check other parts against BookStructure
         return errors;
     }
 
