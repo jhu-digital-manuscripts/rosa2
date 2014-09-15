@@ -70,7 +70,9 @@ public class BookCollectionChecker implements Checker<BookCollection> {
         //   missing
 
         // Check bit integrity (there is no stored checksum values for these files)
-        // TODO
+        if (checkBits) {
+            // TODO
+        }
 
         return errors.isEmpty();
     }

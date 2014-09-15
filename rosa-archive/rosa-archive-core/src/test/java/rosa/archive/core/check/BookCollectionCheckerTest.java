@@ -21,6 +21,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyList;
@@ -44,17 +45,16 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
 
         ByteStreamGroup bsg = base.getByteStreamGroup("rosedata");
 
-        System.out.println("BSG: " + bsg.toString()
-                + "\nsub-names: " + bsg.listByteStreamGroupNames()
-                + "\nbyte streams: " + bsg.listByteStreamNames());
-
         assertTrue(checker.checkContent(collection, bsg, false));
+        assertFalse(checker.checkContent(new BookCollection(), bsg, false));
+        
+        // TODO checkBits=TRUE
 
     }
 
     private BookCollection createBookCollection() {
         BookCollection collection = new BookCollection();
-        collection.setId("rosetest");
+        collection.setId("rosedata");
 
         collection.setLanguages(new String[] { "en", "fr" });
 
