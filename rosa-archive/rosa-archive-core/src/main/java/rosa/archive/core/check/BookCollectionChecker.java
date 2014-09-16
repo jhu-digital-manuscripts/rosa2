@@ -185,10 +185,13 @@ public class BookCollectionChecker implements Checker<BookCollection> {
             if (names != null) {
                 List<String> characters = Arrays.asList(ill.getCharacters());
                 for (String character : characters) {
-                    if (!names.hasCharacter(character)) {
-                        errors.add("Character ID [" + character + "] in illustration [" +
-                                ill.getId() + "] missing.");
+                    for (String charId : numericIds(character)) {
+                        if (!names.hasCharacter(charId)) {
+                            errors.add("Character ID [" + charId + "] in illustration [" +
+                                    ill.getId() + "] missing.");
+                        }
                     }
+
                 }
             }
 
@@ -196,14 +199,37 @@ public class BookCollectionChecker implements Checker<BookCollection> {
             if (titles != null) {
                 List<String> t = Arrays.asList(ill.getTitles());
                 for (String title : t) {
-                    if (!titles.hasTitle(title)) {
-                        errors.add("Title [" + title + "] in illustration [" + ill.getId() + "] missing.");
+                    for (String titleId : numericIds(title)) {
+                        if (!titles.hasTitle(titleId)) {
+                            errors.add("Title [" + titleId + "] in illustration [" + ill.getId() + "] missing.");
+                        }
                     }
+
                 }
             }
         }
 
         return errors;
+    }
+
+    /**
+     * Get only numerical IDs from a comma delimited string.
+     *
+     * @param ref string possibly containing reference IDs
+     * @return array with only numerical IDs
+     */
+    protected String[] numericIds(String ref) {
+        String[] rawParts = ref.split(",");
+
+        // Leave text out.
+        List<String> onlyNumbers = new ArrayList<>();
+        for (String rawPart : rawParts) {
+            if (rawPart.matches("\\d+")) {
+                onlyNumbers.add(rawPart);
+            }
+        }
+
+        return onlyNumbers.toArray(new String[onlyNumbers.size()]);
     }
 
     /**

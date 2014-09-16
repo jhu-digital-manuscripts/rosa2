@@ -111,6 +111,11 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
      * @return the scene
      */
     private NarrativeScene createScene(String[] row, List<String> errors) {
+
+        if (row == null || row.length != 4) {
+            return null;
+        }
+
         int[] lecoy = getRangeValue(row[2], errors);
         int[] lines = getRangeValue(row[1], errors);
 

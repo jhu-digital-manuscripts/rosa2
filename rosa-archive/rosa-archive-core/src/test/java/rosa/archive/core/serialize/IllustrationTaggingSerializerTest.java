@@ -53,6 +53,12 @@ public class IllustrationTaggingSerializerTest extends BaseSerializerTest {
             assertEquals("Grass ground beneath castle", illustration.getLandscape());
             assertTrue(illustration.getArchitecture().startsWith("Crenellated wall"));
             assertEquals("Diaper pattern background", illustration.getOther());
+
+            for (Illustration ill : tagging) {
+                assertNotNull(ill.getId());
+                assertNotNull(ill.getPage());
+                assertNotNull(ill.getTitles());
+            }
         }
     }
 
