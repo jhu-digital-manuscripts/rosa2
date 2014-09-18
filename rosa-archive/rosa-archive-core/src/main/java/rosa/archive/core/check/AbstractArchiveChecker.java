@@ -3,6 +3,7 @@ package rosa.archive.core.check;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
@@ -33,6 +34,34 @@ public abstract class AbstractArchiveChecker {
     }
 
     abstract <T extends HasId> boolean check(T t, ByteStreamGroup bsg, boolean checkBits);
+
+    /**
+     * Read an item from the archive, as identified by {@code item.getId()}. This ensures
+     * that the object in the archive is readable. It does not check the bit integrity of
+     * the object.
+     *
+     * @param item item to check
+     * @param bsg byte stream group
+     * @param <T> item type
+     * @return list of errors found while performing the check
+     */
+    private <T extends HasId> List<String> attemptToRead(T item, ByteStreamGroup bsg) {
+        List<String> errors = new ArrayList<>();
+
+        if (item == null || StringUtils.isBlank(item.getId())) {
+            errors.add("Item missing from archive.");
+            return errors;
+        }
+
+        try (InputStream in = bsg.getByteStream(item.getId())) {
+            // This will read the item in the archive and report any errors
+            serializerMap.get(item.getClass()).read(in, errors);
+        } catch (IOException e) {
+            errors.add("Failed to read [" + item.getId() + "]");
+        }
+
+        return errors;
+    }
 
     /**
      *

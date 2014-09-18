@@ -48,8 +48,7 @@ public class BookChecker implements Checker<Book> {
     }
 // TODO re-serialize from ByteStreamGroup to check readability?
     @Override
-    public boolean checkContent(Book book, ByteStreamGroup bsg, boolean checkBits) {
-        List<String> errors = new ArrayList<>();
+    public boolean checkContent(Book book, ByteStreamGroup bsg, boolean checkBits, List<String> errors) {
 
         if (book == null) {
             errors.add("Book is missing.");

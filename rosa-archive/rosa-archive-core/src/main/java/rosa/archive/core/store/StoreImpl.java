@@ -126,14 +126,40 @@ public class StoreImpl implements Store {
 
     @Override
     @SuppressWarnings("unchecked")
-    public boolean check(Book book, boolean checkBits) {
-        return checkerMap.get(Book.class).checkContent(book, base, checkBits);
+    public boolean check(Book book, boolean checkBits, List<String> errors) {
+        try {
+            for (ByteStreamGroup b : base.listByteStreamGroups()) {
+                // Search through these collections for the book
+                List<String> books = b.listByteStreamGroupNames();
+                if (books.contains(book.getId())) {
+                    ByteStreamGroup bookGroup = b.getByteStreamGroup(book.getId());
+                    return checkerMap.get(Book.class).checkContent(
+                            book,
+                            base,
+                            checkBits,
+                            errors
+                    );
+                }
+            }
+
+
+        } catch (IOException e) {
+            errors.add("Failed to look through collections for book. [" + book.getId() + "]");
+        }
+
+        errors.add("Unable to find book. [" + book.getId() + "]");
+        return false;
     }
 
     @Override
     @SuppressWarnings("unchecked")
-    public boolean check(BookCollection collection, boolean checkBits) {
-        return checkerMap.get(BookCollection.class).checkContent(collection, base, checkBits);
+    public boolean check(BookCollection collection, boolean checkBits, List<String> errors) {
+        return checkerMap.get(BookCollection.class).checkContent(
+                collection,
+                base.getByteStreamGroup(collection.getId()),
+                checkBits,
+                errors
+        );
     }
 
     @SuppressWarnings("unchecked")

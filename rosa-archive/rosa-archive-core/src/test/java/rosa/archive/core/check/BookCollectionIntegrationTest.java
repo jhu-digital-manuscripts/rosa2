@@ -2,6 +2,7 @@ package rosa.archive.core.check;
 
 import com.google.inject.Inject;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import rosa.archive.core.AbstractFileSystemTest;
@@ -16,6 +17,8 @@ import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.assertNotNull;
@@ -44,14 +47,29 @@ public class BookCollectionIntegrationTest extends AbstractFileSystemTest {
     }
 
     @Test
+    @Ignore
     public void dontCheckBitsTest() throws Exception {
         Store store = storeFactory.create(base);
 
         BookCollection collection = store.loadBookCollection("rosedata");
         assertNotNull(collection);
 
-        boolean check = checker.checkContent(collection, base.getByteStreamGroup("rosedata"), false);
-//        assertTrue(check);
+        List<String> errors = new ArrayList<>();
+        boolean check = checker.checkContent(collection, base.getByteStreamGroup("rosedata"), false, errors);
+        assertTrue(check);
+    }
+
+    @Test
+    @Ignore
+    public void doCheckBitsTest() throws Exception {
+        Store store = storeFactory.create(base);
+
+        BookCollection collection = store.loadBookCollection("rosedata");
+        assertNotNull(collection);
+
+        List<String> errors = new ArrayList<>();
+        boolean check = checker.checkContent(collection, base.getByteStreamGroup("rosedata"), true, errors);
+        assertTrue(check);
     }
 
 }

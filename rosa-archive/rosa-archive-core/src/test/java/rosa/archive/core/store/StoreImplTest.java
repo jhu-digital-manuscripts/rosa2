@@ -29,6 +29,7 @@ import rosa.archive.model.Transcription;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -42,6 +43,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyBoolean;
+import static org.mockito.Matchers.anyList;
 import static org.mockito.Matchers.anyObject;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.atMost;
@@ -142,18 +144,18 @@ public class StoreImplTest extends AbstractFileSystemTest {
         Book book = new Book();
         BookCollection collection = new BookCollection();
 
-        assertFalse(store.check(book, true));
-        assertFalse(store.check(book, false));
-        assertFalse(store.check(collection, true));
-        assertFalse(store.check(collection, false));
+        assertFalse(store.check(book, true, new ArrayList<String>()));
+        assertFalse(store.check(book, false, new ArrayList<String>()));
+        assertFalse(store.check(collection, true, new ArrayList<String>()));
+        assertFalse(store.check(collection, false, new ArrayList<String>()));
 
         Checker bChecker = checkerMap.get(Book.class);
-        verify(bChecker).checkContent(eq(book), any(ByteStreamGroup.class), eq(true));
-        verify(bChecker).checkContent(eq(book), any(ByteStreamGroup.class), eq(true));
+        verify(bChecker).checkContent(eq(book), any(ByteStreamGroup.class), eq(true), anyList());
+        verify(bChecker).checkContent(eq(book), any(ByteStreamGroup.class), eq(true), anyList());
 
         Checker cChecker = checkerMap.get(BookCollection.class);
-        verify(cChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(true));
-        verify(cChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(true));
+        verify(cChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(true), anyList());
+        verify(cChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(true), anyList());
 
     }
 
@@ -258,7 +260,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
 
         for (Class c : classes) {
             Checker check = mock(Checker.class);
-            when(check.checkContent(anyObject(), any(ByteStreamGroup.class), anyBoolean()))
+            when(check.checkContent(anyObject(), any(ByteStreamGroup.class), anyBoolean(), anyList()))
                     .thenReturn(false);
             checkerMap.put(c, check);
         }

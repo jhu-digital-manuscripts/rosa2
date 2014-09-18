@@ -81,10 +81,10 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         );
 
 
-        assertTrue(bChecker.checkContent(createBook(), bsg, true));
-        assertFalse(bChecker.checkContent(createBadBook(), bsg, true));
-        assertTrue(bChecker.checkContent(createBook(), bsg, false));
-        assertFalse(bChecker.checkContent(createBadBook(), bsg, false));
+        assertTrue(bChecker.checkContent(createBook(), bsg, true, new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(createBadBook(), bsg, true, new ArrayList<String>()));
+        assertTrue(bChecker.checkContent(createBook(), bsg, false, new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(createBadBook(), bsg, false, new ArrayList<String>()));
     }
 
     private Book createBook() {

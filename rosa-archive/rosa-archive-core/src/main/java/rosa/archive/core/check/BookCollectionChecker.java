@@ -44,8 +44,8 @@ public class BookCollectionChecker implements Checker<BookCollection> {
     }
 
     @Override
-    public boolean checkContent(BookCollection collection, ByteStreamGroup bsg, boolean checkBits) {
-        List<String> errors = new ArrayList<>();
+    public boolean checkContent(BookCollection collection, ByteStreamGroup bsg, boolean checkBits,
+                                List<String> errors) {
 
         if (collection == null) {
             errors.add("Book collection missing.");

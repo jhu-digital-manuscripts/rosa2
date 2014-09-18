@@ -4,6 +4,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  *
@@ -64,16 +65,16 @@ public interface Store {
      * @param checkBits check bit integrity?
      * @return TRUE if data checks complete with no errors, FALSE otherwise
      */
-    boolean check(Book book, boolean checkBits);
+    boolean check(Book book, boolean checkBits, List<String> errors);
 
     /**
-     * See {@link #check(rosa.archive.model.Book, boolean)}
+     * See {@link #check(rosa.archive.model.Book, boolean, java.util.List)}
      *
      * @param collection collection to check
      * @param checkBits check bit integrity?
      * @return TRUE if data checks complete with no errors, FALSE otherwise
      */
-    boolean check(BookCollection collection, boolean checkBits);
+    boolean check(BookCollection collection, boolean checkBits, List<String> errors);
 
     // TODO the following methods will not be in first iteration!
     // updateBook(...)
