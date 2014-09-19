@@ -162,6 +162,9 @@ public class BookChecker implements Checker<Book> {
             }
 
             ChecksumData stored = checksums.getChecksumDataForId(id);
+            if (stored == null) {
+                continue;
+            }
             try {
                 String calculated = calculateChecksum(
                         bsg.getByteStream(id),
@@ -172,7 +175,7 @@ public class BookChecker implements Checker<Book> {
                     errors.add("Calculated checksum different from stored checksum. [" + id + "]");
                 }
             } catch (IOException | NoSuchAlgorithmException e) {
-                errors.add("Failed to calculate checksum for [" + id + "]");
+                errors.add("Failed to calculate checksum for [" + id + "] '" + e.getMessage() + "'");
             }
         }
 

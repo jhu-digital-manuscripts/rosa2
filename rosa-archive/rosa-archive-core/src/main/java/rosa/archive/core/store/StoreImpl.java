@@ -135,7 +135,7 @@ public class StoreImpl implements Store {
                     ByteStreamGroup bookGroup = b.getByteStreamGroup(book.getId());
                     return checkerMap.get(Book.class).checkContent(
                             book,
-                            base,
+                            bookGroup,
                             checkBits,
                             errors
                     );

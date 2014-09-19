@@ -144,6 +144,9 @@ public class StoreImplTest extends AbstractFileSystemTest {
         Book book = new Book();
         BookCollection collection = new BookCollection();
 
+        book.setId("LudwigXV7");
+        collection.setId("rosedata");
+
         assertFalse(store.check(book, true, new ArrayList<String>()));
         assertFalse(store.check(book, false, new ArrayList<String>()));
         assertFalse(store.check(collection, true, new ArrayList<String>()));
