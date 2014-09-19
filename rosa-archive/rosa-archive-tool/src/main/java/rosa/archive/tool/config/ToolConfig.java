@@ -20,6 +20,9 @@ public class ToolConfig {
     @Inject @Named("FLAG_CHECK_BITS")
     private String FLAG_CHECK_BITS;
 
+    @Inject @Named("FLAG_SHOW_ERRORS")
+    private String FLAG_SHOW_ERRORS;
+
 // -----------------------------------------------------------------------------------
 // ------ Getters --------------------------------------------------------------------
 // -----------------------------------------------------------------------------------
@@ -39,5 +42,9 @@ public class ToolConfig {
 
     public String getARCHIVE_PATH() {
         return ARCHIVE_PATH;
+    }
+
+    public String getFLAG_SHOW_ERRORS() {
+        return FLAG_SHOW_ERRORS;
     }
 }

@@ -11,7 +11,6 @@ import rosa.archive.model.*;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -50,19 +49,19 @@ public class StoreImpl implements Store {
     }
 
     @Override
-    public BookCollection loadBookCollection(String collectionId) throws IOException {
+    public BookCollection loadBookCollection(String collectionId, List<String> errors) throws IOException {
         ByteStreamGroup collectionGroup = base.getByteStreamGroup(collectionId);
         BookCollection collection = new BookCollection();
 
         collection.setId(collectionId);
         collection.setBooks(listBooks(collectionId));
         collection.setCharacterNames(
-                loadItem(config.getCHARACTER_NAMES(), collectionGroup, CharacterNames.class));
+                loadItem(config.getCHARACTER_NAMES(), collectionGroup, CharacterNames.class, errors));
         collection.setIllustrationTitles(
-                loadItem(config.getILLUSTRATION_TITLES(), collectionGroup, IllustrationTitles.class));
+                loadItem(config.getILLUSTRATION_TITLES(), collectionGroup, IllustrationTitles.class, errors));
         collection.setNarrativeSections(
-                loadItem(config.getNARRATIVE_SECTIONS(), collectionGroup, NarrativeSections.class));
-        collection.setMissing(loadItem(config.getMISSING_PAGES(), collectionGroup, MissingList.class));
+                loadItem(config.getNARRATIVE_SECTIONS(), collectionGroup, NarrativeSections.class, errors));
+        collection.setMissing(loadItem(config.getMISSING_PAGES(), collectionGroup, MissingList.class, errors));
 
         // Languages from configuration.
         collection.setLanguages(config.languages());
@@ -71,7 +70,7 @@ public class StoreImpl implements Store {
     }
 
     @Override
-    public Book loadBook(String collectionId, String bookId) throws IOException {
+    public Book loadBook(String collectionId, String bookId, List<String> errors) throws IOException {
         ByteStreamGroup byteStreams = base.getByteStreamGroup(collectionId);
         if (!byteStreams.hasByteStreamGroup(bookId)) {
             // TODO report missing book
@@ -83,23 +82,23 @@ public class StoreImpl implements Store {
 
         book.setId(bookId);
         book.setImages(
-                loadItem(bookId + config.getIMAGES(), bookStreams, ImageList.class));
+                loadItem(bookId + config.getIMAGES(), bookStreams, ImageList.class, errors));
         book.setCroppedImages(
-                loadItem(bookId + config.getIMAGES_CROP(), bookStreams, ImageList.class));
+                loadItem(bookId + config.getIMAGES_CROP(), bookStreams, ImageList.class, errors));
         book.setCropInfo(
-                loadItem(bookId + config.getCROP(), bookStreams, CropInfo.class));
+                loadItem(bookId + config.getCROP(), bookStreams, CropInfo.class, errors));
         book.setBookStructure(
-                loadItem(bookId + config.getREDUCED_TAGGING(), bookStreams, BookStructure.class));
+                loadItem(bookId + config.getREDUCED_TAGGING(), bookStreams, BookStructure.class, errors));
         book.setChecksumInfo(
-                loadItem(bookId + config.getSHA1SUM(), bookStreams, ChecksumInfo.class));
+                loadItem(bookId + config.getSHA1SUM(), bookStreams, ChecksumInfo.class, errors));
         book.setIllustrationTagging(
-                loadItem(bookId + config.getIMAGE_TAGGING(), bookStreams, IllustrationTagging.class));
+                loadItem(bookId + config.getIMAGE_TAGGING(), bookStreams, IllustrationTagging.class, errors));
         book.setManualNarrativeTagging(
-                loadItem(bookId + config.getNARRATIVE_TAGGING_MAN(), bookStreams, NarrativeTagging.class));
+                loadItem(bookId + config.getNARRATIVE_TAGGING_MAN(), bookStreams, NarrativeTagging.class, errors));
         book.setAutomaticNarrativeTagging(
-                loadItem(bookId + config.getNARRATIVE_TAGGING(), bookStreams, NarrativeTagging.class));
+                loadItem(bookId + config.getNARRATIVE_TAGGING(), bookStreams, NarrativeTagging.class, errors));
         book.setTranscription(
-                loadItem(bookId + config.getTRANSCRIPTION() + config.getXML(), bookStreams, Transcription.class));
+                loadItem(bookId + config.getTRANSCRIPTION() + config.getXML(), bookStreams, Transcription.class, errors));
 
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
@@ -109,10 +108,10 @@ public class StoreImpl implements Store {
             String lang = findLanguageCodeInName(name);
             if (StringUtils.isNotBlank(lang)) {
                 if (name.contains(config.getPERMISSION())) {
-                    Permission perm = loadItem(name, bookStreams, Permission.class);
+                    Permission perm = loadItem(name, bookStreams, Permission.class, errors);
                     book.addPermission(perm, lang);
                 } else if (name.contains(config.getDESCRIPTION())) {
-                    BookMetadata metadata = loadItem(name, bookStreams, BookMetadata.class);
+                    BookMetadata metadata = loadItem(name, bookStreams, BookMetadata.class, errors);
                     book.addBookMetadata(metadata, lang);
                 }
             }
@@ -160,8 +159,11 @@ public class StoreImpl implements Store {
     }
 
     @SuppressWarnings("unchecked")
-    protected <T extends HasId> T loadItem(String name, ByteStreamGroup bsg, Class<T> type) {
-        List<String> errors = new ArrayList<>();
+    protected <T extends HasId> T loadItem(String name, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
+        // The file does not exist
+        if (!bsg.hasByteStream(name)) {
+            return null;
+        }
 
         try (InputStream in = bsg.getByteStream(name)) {
             Serializer serializer = serializerMap.get(type);
@@ -172,7 +174,7 @@ public class StoreImpl implements Store {
             return obj;
 
         } catch (IOException e) {
-            // TODO
+            errors.add("Failed to read item in archive. [" + name + "]");
             return null;
         }
     }

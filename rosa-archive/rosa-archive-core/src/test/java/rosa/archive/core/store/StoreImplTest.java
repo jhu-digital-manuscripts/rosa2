@@ -181,14 +181,15 @@ public class StoreImplTest extends AbstractFileSystemTest {
                 {"LudwigXV7", "Morgan948", "Senshu2", "Walters143"}
         };
 
+        List<String> errors = new ArrayList<>();
         for (String bookName : books[0]) {
             mockSerializers(classes);
-            Book book = store.loadBook("data", bookName);
+            Book book = store.loadBook("data", bookName, errors);
             checkBook(book, classes);
         }
         for (String bookName : books[1]) {
             mockSerializers(classes);
-            Book book = store.loadBook("rosedata", bookName);
+            Book book = store.loadBook("rosedata", bookName, errors);
             checkBook(book, classes);
         }
     }
@@ -231,9 +232,10 @@ public class StoreImplTest extends AbstractFileSystemTest {
 
         String[] cols = {"data", "rosedata"};
 
+        List<String> errors = new ArrayList<>();
         for (String collectionName : cols) {
             mockSerializers(classes);
-            BookCollection collection = store.loadBookCollection(collectionName);
+            BookCollection collection = store.loadBookCollection(collectionName, errors);
 
             assertNotNull(collection);
             assertNotNull(collection.getId());

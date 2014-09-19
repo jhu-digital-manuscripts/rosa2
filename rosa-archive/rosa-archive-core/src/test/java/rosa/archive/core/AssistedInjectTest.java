@@ -11,6 +11,8 @@ import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -39,7 +41,8 @@ public class AssistedInjectTest extends AbstractFileSystemTest {
 
         // Serializers in the Store are not accessible from the outside, so testing a few
         // methods to make sure they were injected properly....
-        BookCollection collection = store.loadBookCollection("data");
+        List<String> errors = new ArrayList<>();
+        BookCollection collection = store.loadBookCollection("data", errors);
         assertNotNull(collection);
 
         assertNotNull(collection.books());

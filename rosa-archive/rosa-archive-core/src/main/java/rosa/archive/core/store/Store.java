@@ -29,7 +29,7 @@ public interface Store {
      * @return
      *          BookCollection object
      */
-    BookCollection loadBookCollection(String collectionId) throws IOException;
+    BookCollection loadBookCollection(String collectionId, List<String> errors) throws IOException;
 
     /**
      * Get a single book from the archive that exists in the specified collection.
@@ -41,7 +41,7 @@ public interface Store {
      * @return
      *          Book object
      */
-    Book loadBook(String collectionId, String bookId) throws IOException;
+    Book loadBook(String collectionId, String bookId, List<String> errors) throws IOException;
 
     /**
      * Check the internal data consistency and bit integrity of an archive within this Store.

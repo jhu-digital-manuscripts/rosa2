@@ -71,7 +71,7 @@ public class ArchiveTool {
      *         in the collection, as specified by this ID.</li>
      *     <li>bookId: if this is specified, collectionId must also be specified. List all items in the book.</li>
      *     <li>If no IDs are present, then the collections will be listed.</li>
-     *     <li>This command has no options flags.</li>
+     *     <li>-showErrors : errors will be displayed.</li>
      * </ul>
      *
      * Example: {@code java -jar tool.jar rose LudwigXV7}
@@ -83,12 +83,22 @@ public class ArchiveTool {
     private void list(String[] args) {
 
         int[] flagsPositions = findFlags(args);
-        if (flagsPositions == null || flagsPositions.length > 0) {
-            System.err.println("There are no flags associated with the 'list' command.");
-            System.exit(1);
+        boolean showErrors = false;
+        for (int i : flagsPositions) {
+            if (args[i].equals(config.getFLAG_SHOW_ERRORS())) {
+                showErrors = true;
+                List<String> argsList = new ArrayList<>();
+                argsList.addAll(Arrays.asList(args));
+                argsList.remove(i);
+                args = argsList.toArray(new String[argsList.size()]);
+            } else {
+                System.err.println("Unsupported flag found: [" + args[i] + "]");
+                System.exit(1);
+            }
         }
 
         // list
+        List<String> errors = new ArrayList<>();
         if (args.length == 1) {
             // list
             System.out.println("Collections: ");
@@ -115,15 +125,29 @@ public class ArchiveTool {
             // list <collectionId> <bookId>
             System.out.println("Stuff in " + args[1] + ":" + args[2]);
             try {
-                Book book = store.loadBook(args[1], args[2]);
+                Book book = store.loadBook(args[1], args[2], errors);
                 for (String item : book.getContent()) {
                     System.out.println("  " + item);
+                }
+
+                if (showErrors) {
+                    System.out.println("\nErrors found while processing:");
+                    for (String err : errors) {
+                        System.out.println("  " + err);
+                    }
                 }
             } catch (IOException e) {
                 System.err.println("  Error: Unable to load book [" + args[1] + ":" + args[2] + "]");
             }
         } else {
             System.err.println("Too many arguments. USAGE: list <collectionId> <bookId>");
+        }
+
+        if (showErrors) {
+
+        } else {
+            System.out.println("\nErrors were found while processing the command. Use the -showErrors flag " +
+                    "to display the errors.");
         }
     }
 
@@ -174,12 +198,12 @@ public class ArchiveTool {
             try {
                 String[] collections =  store.listBookCollections();
                 for (String collectionName : collections) {
-                    BookCollection collection = store.loadBookCollection(collectionName);
+                    BookCollection collection = store.loadBookCollection(collectionName, errors);
                     System.out.println(collectionName);
                     store.check(collection, checkBits, errors);
 
                     for (String bookName : store.listBooks(collectionName)) {
-                        Book book = store.loadBook(collectionName, bookName);
+                        Book book = store.loadBook(collectionName, bookName, errors);
                         System.out.println("  " + bookName);
                         store.check(book, checkBits, errors);
                     }
@@ -190,7 +214,7 @@ public class ArchiveTool {
         } else if (args.length == 2) {
             // check collection
             try {
-                BookCollection collection = store.loadBookCollection(args[1]);
+                BookCollection collection = store.loadBookCollection(args[1], errors);
                 store.check(collection, checkBits, errors);
             } catch (IOException e) {
                 System.err.println("  Error: Unable to load collection. [" + args[1] + "]");
@@ -198,7 +222,7 @@ public class ArchiveTool {
         } else if (args.length == 3) {
             // check book
             try {
-                Book book = store.loadBook(args[1], args[2]);
+                Book book = store.loadBook(args[1], args[2], errors);
                 store.check(book, checkBits, errors);
             } catch (IOException e) {
                 System.err.println("  Error: Unable to load book. [" + args[1] + ":" + args[2] + "]");

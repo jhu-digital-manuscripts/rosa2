@@ -50,11 +50,11 @@ public class BookCollectionIntegrationTest extends AbstractFileSystemTest {
     @Ignore
     public void dontCheckBitsTest() throws Exception {
         Store store = storeFactory.create(base);
+        List<String> errors = new ArrayList<>();
 
-        BookCollection collection = store.loadBookCollection("rosedata");
+        BookCollection collection = store.loadBookCollection("rosedata", errors);
         assertNotNull(collection);
 
-        List<String> errors = new ArrayList<>();
         boolean check = checker.checkContent(collection, base.getByteStreamGroup("rosedata"), false, errors);
         assertTrue(check);
     }
@@ -63,11 +63,11 @@ public class BookCollectionIntegrationTest extends AbstractFileSystemTest {
     @Ignore
     public void doCheckBitsTest() throws Exception {
         Store store = storeFactory.create(base);
+        List<String> errors = new ArrayList<>();
 
-        BookCollection collection = store.loadBookCollection("rosedata");
+        BookCollection collection = store.loadBookCollection("rosedata", errors);
         assertNotNull(collection);
 
-        List<String> errors = new ArrayList<>();
         boolean check = checker.checkContent(collection, base.getByteStreamGroup("rosedata"), true, errors);
         assertTrue(check);
     }
