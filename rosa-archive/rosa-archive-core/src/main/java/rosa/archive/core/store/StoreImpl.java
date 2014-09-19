@@ -105,16 +105,13 @@ public class StoreImpl implements Store {
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
 
         // Look for language dependent items
-        // TODO validate language found against configured languages
         for (String name : content) {
             String lang = findLanguageCodeInName(name);
-            if (name.contains(config.getPERMISSION())) {
-                if (StringUtils.isNotBlank(lang)) {
+            if (StringUtils.isNotBlank(lang)) {
+                if (name.contains(config.getPERMISSION())) {
                     Permission perm = loadItem(name, bookStreams, Permission.class);
                     book.addPermission(perm, lang);
-                }
-            } else if (name.contains(config.getDESCRIPTION())) {
-                if (StringUtils.isNoneBlank(lang)) {
+                } else if (name.contains(config.getDESCRIPTION())) {
                     BookMetadata metadata = loadItem(name, bookStreams, BookMetadata.class);
                     book.addBookMetadata(metadata, lang);
                 }

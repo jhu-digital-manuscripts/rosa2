@@ -341,40 +341,4 @@ public class BookCollectionChecker implements Checker<BookCollection> {
         DigestUtils.updateDigest(md, in);
         return Hex.encodeHexString(md.digest());
     }
-
-//    /**
-//     *
-//     * @param bsg byte stream group
-//     * @return list of errors found while performing check
-//     */
-//    private List<String> check(ByteStreamGroup bsg) {
-//        List<String> errors = new ArrayList<>();
-//
-//        // Try to read all InputStreams in this ByteStreamGroup
-//        try {
-//            List<String> streamIds = bsg.listByteStreamIds();
-//
-//            for (String id : streamIds) {
-//                try (InputStream in = bsg.getByteStream(id)) {
-//                    List<String> lines = IOUtils.readLines(in);
-//                    if (lines == null || lines.size() == 0) {
-//                        errors.add("Did not read item. [" + id + "]");
-//                    }
-//                }
-//            }
-//        } catch (IOException e) {
-//            errors.add("Failed to read byte streams. [" + bsg + "]");
-//        }
-//
-//        // For each ByteStreamGroup within [bsg], run this check
-//        try {
-//            for (ByteStreamGroup b : bsg.listByteStreamGroups()) {
-//                errors.addAll(check(b));
-//            }
-//        } catch (IOException e) {
-//            errors.add("Failed to check byte stream group. [" + bsg + "]");
-//        }
-//
-//        return errors;
-//    }
 }

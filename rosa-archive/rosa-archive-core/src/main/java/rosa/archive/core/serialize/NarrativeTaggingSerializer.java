@@ -205,7 +205,6 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
             return null;
         }
 
-        // TODO specifies up to only 4 columns on any page, change to arbitrary columns?
         if (!start_folio_col.matches("a|b|c|d")
                 || !end_folio_col.matches("a|b|c|d")) {
             errors.add("Line " + line + ": Malformed column: [" + start_folio_col + "][" + end_folio_col + "]");

@@ -63,11 +63,31 @@ public class ArchiveTool {
     }
 
     /**
+     * List items in the archive according to the command arguments.
      *
+     * USAGE: java -jar &lt;jar file&gt; list &lt;collectionId (optional)&gt; &lt;bookId (optional)&gt;
+     * <ul>
+     *     <li>collectionId: if this is specified by itself (bookId is missing), then list all books
+     *         in the collection, as specified by this ID.</li>
+     *     <li>bookId: if this is specified, collectionId must also be specified. List all items in the book.</li>
+     *     <li>If no IDs are present, then the collections will be listed.</li>
+     *     <li>This command has no options flags.</li>
+     * </ul>
      *
-     * @param args command
+     * Example: {@code java -jar tool.jar rose LudwigXV7}
+     *
+     * This will list all items in the archive in the 'LudwigXV7' book in the 'rose' archive.
+     *
+     * @param args command plus arguments
      */
     private void list(String[] args) {
+
+        int[] flagsPositions = findFlags(args);
+        if (flagsPositions == null || flagsPositions.length > 0) {
+            System.err.println("There are no flags associated with the 'list' command.");
+            System.exit(1);
+        }
+
         // list
         if (args.length == 1) {
             // list
@@ -108,7 +128,19 @@ public class ArchiveTool {
     }
 
     /**
+     * Checks the data consistency and/or bit integrity of items in the archive.
      *
+     * USAGE: java -jar &lt;jar file&gt; check [-checkBits] &lt;collectionId&gt; &lt;bookId&gt;
+     * <ul>
+     *     <li>If collectionID and bookId are missing, every item in the archive will be checked.</li>
+     *     <li>collectionId : all items in this collection will be checked. All books in the collection
+     *         are also checked.</li>
+     *     <li>bookId : check all items in this book.</li>
+     *     <li>-checkBits : tells the command to check the bit integrity of items</li>
+     *     <li>If any other flag besides '-checkBits' is found, the command will terminate.</li>
+     * </ul>
+     *
+     * Example: {@code java -jar tool.jar rose LudwigXV7}
      *
      * @param args command
      */
@@ -121,6 +153,9 @@ public class ArchiveTool {
         for (int i : flagPositions) {
             if (args[i].equals(config.getFLAG_CHECK_BITS())) {
                 checkBits = true;
+            } else {
+                System.err.println("Unsupported flag found [" + args[i] + "]");
+                System.exit(1);
             }
         }
 
@@ -140,8 +175,14 @@ public class ArchiveTool {
                 String[] collections =  store.listBookCollections();
                 for (String collectionName : collections) {
                     BookCollection collection = store.loadBookCollection(collectionName);
-                    System.out.println("\n" + collectionName);
+                    System.out.println(collectionName);
                     store.check(collection, checkBits, errors);
+
+                    for (String bookName : store.listBooks(collectionName)) {
+                        Book book = store.loadBook(collectionName, bookName);
+                        System.out.println("  " + bookName);
+                        store.check(book, checkBits, errors);
+                    }
                 }
             } catch (IOException e) {
                 System.err.println("  Error: Unable to check archive.");
@@ -154,7 +195,7 @@ public class ArchiveTool {
             } catch (IOException e) {
                 System.err.println("  Error: Unable to load collection. [" + args[1] + "]");
             }
-        } else if (args.length == 3) { System.out.println(Arrays.toString(args));
+        } else if (args.length == 3) {
             // check book
             try {
                 Book book = store.loadBook(args[1], args[2]);
