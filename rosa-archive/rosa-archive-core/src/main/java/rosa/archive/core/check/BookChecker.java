@@ -7,6 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookScene;
@@ -36,10 +37,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @see rosa.archive.core.check.Checker
  * @see rosa.archive.model.Book
  */
-public class BookChecker implements Checker<Book> {
+public class BookChecker {
     private AppConfig config;
 
     @Inject
@@ -47,8 +47,9 @@ public class BookChecker implements Checker<Book> {
         this.config = config;
     }
 // TODO re-serialize from ByteStreamGroup to check readability?
-    @Override
-    public boolean checkContent(Book book, ByteStreamGroup bsg, boolean checkBits, List<String> errors) {
+
+    public boolean checkContent(
+            BookCollection collection, Book book, ByteStreamGroup bsg, boolean checkBits, List<String> errors) {
 
         if (book == null) {
             errors.add("Book is missing.");
@@ -84,6 +85,9 @@ public class BookChecker implements Checker<Book> {
         errors.addAll(check(book.getManualNarrativeTagging(), book));
         //   automaticNarrativeTagging
         errors.addAll(check(book.getAutomaticNarrativeTagging(), book));
+
+        // TODO Check references to files in the collection
+
 
         // check bit integrity
         if (checkBits) {
@@ -175,6 +179,7 @@ public class BookChecker implements Checker<Book> {
                     errors.add("Calculated checksum different from stored checksum. [" + id + "]");
                 }
             } catch (IOException | NoSuchAlgorithmException e) {
+                e.printStackTrace(System.err);
                 errors.add("Failed to calculate checksum for [" + id + "] '" + e.getMessage() + "'");
             }
         }

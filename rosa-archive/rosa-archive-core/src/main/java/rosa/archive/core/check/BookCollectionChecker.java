@@ -32,7 +32,7 @@ import java.util.Map;
 /**
  *
  */
-public class BookCollectionChecker implements Checker<BookCollection> {
+public class BookCollectionChecker {
 
     private AppConfig config;
     private Map<Class, Serializer> serializerMap;
@@ -43,7 +43,6 @@ public class BookCollectionChecker implements Checker<BookCollection> {
         this.serializerMap = serializerMap;
     }
 
-    @Override
     public boolean checkContent(BookCollection collection, ByteStreamGroup bsg, boolean checkBits,
                                 List<String> errors) {
 

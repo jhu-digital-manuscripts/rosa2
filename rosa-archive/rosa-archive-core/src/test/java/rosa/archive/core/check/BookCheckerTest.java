@@ -9,6 +9,7 @@ import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookScene;
@@ -80,11 +81,11 @@ public class BookCheckerTest extends AbstractFileSystemTest {
                 getClass().getClassLoader().getResourceAsStream("rosedata/LudwigXV7/LudwigXV7.crop.txt")
         );
 
-
-        assertTrue(bChecker.checkContent(createBook(), bsg, true, new ArrayList<String>()));
-        assertFalse(bChecker.checkContent(createBadBook(), bsg, true, new ArrayList<String>()));
-        assertTrue(bChecker.checkContent(createBook(), bsg, false, new ArrayList<String>()));
-        assertFalse(bChecker.checkContent(createBadBook(), bsg, false, new ArrayList<String>()));
+        // TODO this will not be right until a Collection can be fully mocked
+        assertTrue(bChecker.checkContent(new BookCollection(), createBook(), bsg, true, new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(new BookCollection(), createBadBook(), bsg, true, new ArrayList<String>()));
+        assertTrue(bChecker.checkContent(new BookCollection(), createBook(), bsg, false, new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(new BookCollection(), createBadBook(), bsg, false, new ArrayList<String>()));
     }
 
     private Book createBook() {

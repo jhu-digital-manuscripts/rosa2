@@ -4,7 +4,8 @@ import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.check.Checker;
+import rosa.archive.core.check.BookChecker;
+import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.*;
@@ -22,17 +23,20 @@ public class StoreImpl implements Store {
     private final ByteStreamGroup base;
     private final AppConfig config;
     private Map<Class, Serializer> serializerMap;
-    private Map<Class, Checker> checkerMap;
+    private BookCollectionChecker collectionChecker;
+    private BookChecker bookChecker;
 
     @Inject
     public StoreImpl(Map<Class, Serializer> serializerMap,
-                     Map<Class, Checker> checkerMap,
+                     BookChecker bookChecker,
+                     BookCollectionChecker collectionChecker,
                      AppConfig config,
                      @Assisted ByteStreamGroup base) {
         this.base = base;
         this.config = config;
         this.serializerMap = serializerMap;
-        this.checkerMap = checkerMap;
+        this.collectionChecker = collectionChecker;
+        this.bookChecker = bookChecker;
     }
 
     @Override
@@ -121,36 +125,27 @@ public class StoreImpl implements Store {
     }
 
     @Override
-    @SuppressWarnings("unchecked")
-    public boolean check(Book book, boolean checkBits, List<String> errors) {
-        try {
-            for (ByteStreamGroup b : base.listByteStreamGroups()) {
-                // Search through these collections for the book
-                List<String> books = b.listByteStreamGroupNames();
-                if (books.contains(book.getId())) {
-                    ByteStreamGroup bookGroup = b.getByteStreamGroup(book.getId());
-                    return checkerMap.get(Book.class).checkContent(
-                            book,
-                            bookGroup,
-                            checkBits,
-                            errors
-                    );
-                }
+    public boolean check(BookCollection collection, Book book, boolean checkBits, List<String> errors) {
+        if (base.hasByteStreamGroup(collection.getId())) {
+            ByteStreamGroup collectionGroup = base.getByteStreamGroup(collection.getId());
+            if (collectionGroup.hasByteStreamGroup(book.getId())) {
+                ByteStreamGroup bookGroup = collectionGroup.getByteStreamGroup(book.getId());
+                return bookChecker.checkContent(
+                        collection,
+                        book,
+                        bookGroup,
+                        checkBits,
+                        errors
+                );
             }
-
-
-        } catch (IOException e) {
-            errors.add("Failed to look through collections for book. [" + book.getId() + "]");
         }
-
         errors.add("Unable to find book. [" + book.getId() + "]");
         return false;
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public boolean check(BookCollection collection, boolean checkBits, List<String> errors) {
-        return checkerMap.get(BookCollection.class).checkContent(
+        return collectionChecker.checkContent(
                 collection,
                 base.getByteStreamGroup(collection.getId()),
                 checkBits,

@@ -67,6 +67,11 @@ public class ArchiveTool {
         System.err.println(message);
     }
 
+    private void displayError(String message, String[] args, Exception e) {
+        displayError(message, args);
+        e.printStackTrace(System.err);
+    }
+
     /**
      * List items in the archive according to the command arguments.
      *
@@ -113,7 +118,7 @@ public class ArchiveTool {
                     System.out.println("  " + name);
                 }
             } catch (IOException e) {
-                displayError("Error: Unable to read collection names.", args);
+                displayError("Error: Unable to read collection names.", args, e);
             }
         } else if (args.length == 2) {
             // list <collectionId>
@@ -124,7 +129,7 @@ public class ArchiveTool {
                     System.out.println("  " + name);
                 }
             } catch (IOException e) {
-                displayError("Error: Unable to read book names in collection [" + args[1] + "]", args);
+                displayError("Error: Unable to read book names in collection [" + args[1] + "]", args, e);
             }
         } else if (args.length == 3) {
             // list <collectionId> <bookId>
@@ -142,15 +147,13 @@ public class ArchiveTool {
                     }
                 }
             } catch (IOException e) {
-                displayError("Error: Unable to load book [" + args[1] + ":" + args[2] + "]", args);
+                displayError("Error: Unable to load book [" + args[1] + ":" + args[2] + "]", args, e);
             }
         } else {
             displayError("Too many arguments. USAGE: list <collectionId> <bookId>", args);
         }
 
-        if (showErrors) {
-
-        } else {
+        if (!showErrors) {
             System.out.println("\nErrors were found while processing the command. Use the -showErrors flag " +
                     "to display the errors.");
         }
@@ -210,11 +213,11 @@ public class ArchiveTool {
                     for (String bookName : store.listBooks(collectionName)) {
                         Book book = store.loadBook(collectionName, bookName, errors);
                         System.out.println("  " + bookName);
-                        store.check(book, checkBits, errors);
+                        store.check(collection, book, checkBits, errors);
                     }
                 }
             } catch (IOException e) {
-                displayError("Error: Unable to check archive.", args);
+                displayError("Error: Unable to check archive.", args, e);
             }
         } else if (args.length == 2) {
             // check collection
@@ -222,23 +225,26 @@ public class ArchiveTool {
                 BookCollection collection = store.loadBookCollection(args[1], errors);
                 store.check(collection, checkBits, errors);
             } catch (IOException e) {
-                displayError("Error: Unable to load collection. [" + args[1] + "]", args);
+                displayError("Error: Unable to load collection. [" + args[1] + "]", args, e);
             }
         } else if (args.length == 3) {
             // check book
             try {
+                BookCollection collection = store.loadBookCollection(args[1], errors);
                 Book book = store.loadBook(args[1], args[2], errors);
-                store.check(book, checkBits, errors);
+                store.check(collection, book, checkBits, errors);
             } catch (IOException e) {
-                displayError("Error: Unable to load book. [" + args[1] + ":" + args[2] + "]", args);
+                displayError("Error: Unable to load book. [" + args[1] + ":" + args[2] + "]", args, e);
             }
         } else {
             displayError("Too many arguments. USAGE: check <collectionId> <bookId>", args);
         }
 
-        System.out.println("Errors: ");
-        for (String err : errors) {
-            System.out.println("  " + err);
+        if (!errors.isEmpty()) {
+            System.out.println("Errors: ");
+            for (String err : errors) {
+                System.out.println("  " + err);
+            }
         }
     }
 
