@@ -58,8 +58,13 @@ public class ArchiveTool {
             // check
             check(args);
         } else {
-            System.err.println("Unknown command.");
+            displayError("Unknown command.", args);
         }
+    }
+
+    private void displayError(String message, String[] args) {
+        System.err.println("Command: " + Arrays.toString(args));
+        System.err.println(message);
     }
 
     /**
@@ -92,7 +97,7 @@ public class ArchiveTool {
                 argsList.remove(i);
                 args = argsList.toArray(new String[argsList.size()]);
             } else {
-                System.err.println("Unsupported flag found: [" + args[i] + "]");
+                displayError("Unsupported flag found: [" + args[i] + "]", args);
                 System.exit(1);
             }
         }
@@ -108,7 +113,7 @@ public class ArchiveTool {
                     System.out.println("  " + name);
                 }
             } catch (IOException e) {
-                System.err.println("  Error: Unable to read collection names.");
+                displayError("Error: Unable to read collection names.", args);
             }
         } else if (args.length == 2) {
             // list <collectionId>
@@ -119,7 +124,7 @@ public class ArchiveTool {
                     System.out.println("  " + name);
                 }
             } catch (IOException e) {
-                System.err.println("  Error: Unable to read book names in collection [" + args[1] + "]");
+                displayError("Error: Unable to read book names in collection [" + args[1] + "]", args);
             }
         } else if (args.length == 3) {
             // list <collectionId> <bookId>
@@ -137,10 +142,10 @@ public class ArchiveTool {
                     }
                 }
             } catch (IOException e) {
-                System.err.println("  Error: Unable to load book [" + args[1] + ":" + args[2] + "]");
+                displayError("Error: Unable to load book [" + args[1] + ":" + args[2] + "]", args);
             }
         } else {
-            System.err.println("Too many arguments. USAGE: list <collectionId> <bookId>");
+            displayError("Too many arguments. USAGE: list <collectionId> <bookId>", args);
         }
 
         if (showErrors) {
@@ -178,7 +183,7 @@ public class ArchiveTool {
             if (args[i].equals(config.getFLAG_CHECK_BITS())) {
                 checkBits = true;
             } else {
-                System.err.println("Unsupported flag found [" + args[i] + "]");
+                displayError("Unsupported flag found [" + args[i] + "]", args);
                 System.exit(1);
             }
         }
@@ -209,7 +214,7 @@ public class ArchiveTool {
                     }
                 }
             } catch (IOException e) {
-                System.err.println("  Error: Unable to check archive.");
+                displayError("Error: Unable to check archive.", args);
             }
         } else if (args.length == 2) {
             // check collection
@@ -217,7 +222,7 @@ public class ArchiveTool {
                 BookCollection collection = store.loadBookCollection(args[1], errors);
                 store.check(collection, checkBits, errors);
             } catch (IOException e) {
-                System.err.println("  Error: Unable to load collection. [" + args[1] + "]");
+                displayError("Error: Unable to load collection. [" + args[1] + "]", args);
             }
         } else if (args.length == 3) {
             // check book
@@ -225,10 +230,10 @@ public class ArchiveTool {
                 Book book = store.loadBook(args[1], args[2], errors);
                 store.check(book, checkBits, errors);
             } catch (IOException e) {
-                System.err.println("  Error: Unable to load book. [" + args[1] + ":" + args[2] + "]");
+                displayError("Error: Unable to load book. [" + args[1] + ":" + args[2] + "]", args);
             }
         } else {
-            System.err.println("  Too many arguments. USAGE: check <collectionId> <bookId>");
+            displayError("Too many arguments. USAGE: check <collectionId> <bookId>", args);
         }
 
         System.out.println("Errors: ");
