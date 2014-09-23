@@ -13,6 +13,7 @@ import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.BookText;
+import rosa.archive.model.CharacterNames;
 import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.CropData;
@@ -20,8 +21,10 @@ import rosa.archive.model.CropInfo;
 import rosa.archive.model.HashAlgorithm;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
+import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.Item;
+import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.StructureColumn;
@@ -86,9 +89,23 @@ public class BookChecker {
         //   automaticNarrativeTagging
         errors.addAll(check(book.getAutomaticNarrativeTagging(), book));
 
-        // TODO Check references to files in the collection
+        try {
+            // Check character_names and illustration_titles
+            errors.addAll(
+                    check(
+                            book.getIllustrationTagging(),
+                            collection.getCharacterNames(),
+                            collection.getIllustrationTitles()
+                    )
+            );
 
+            // Check narrative_sections (automatic and manual)
+            errors.addAll(check(book.getAutomaticNarrativeTagging(), collection.getNarrativeSections()));
+            errors.addAll(check(book.getManualNarrativeTagging(), collection.getNarrativeSections()));
 
+        } catch (IOException e) {
+            errors.add("Unable to check references to character_names, illustration_titles, or narrative_sections.");
+        }
         // check bit integrity
         if (checkBits) {
             errors.addAll(checkAllBits(bsg, book));
@@ -739,6 +756,98 @@ public class BookChecker {
         }
         
         return null;
+    }
+
+    /**
+     *
+     * @param tagging illustration tagging
+     * @param names character names
+     * @param titles illustration titles
+     * @return list of errors found while checking
+     * @throws IOException
+     */
+    private List<String> check(IllustrationTagging tagging, CharacterNames names, IllustrationTitles titles)
+            throws IOException {
+        List<String> errors = new ArrayList<>();
+
+        if (tagging == null) {
+            return errors;
+        }
+
+        // Checking CharacterNames and IllustrationTitles, referenced in image tagging
+        for (Illustration ill : tagging) {
+            // Check character_names references in imagetag
+            if (names != null) {
+                List<String> characters = Arrays.asList(ill.getCharacters());
+                for (String character : characters) {
+                    for (String charId : numericIds(character)) {
+                        if (!names.hasCharacter(charId)) {
+                            errors.add("Character ID [" + charId + "] in illustration [" +
+                                    ill.getId() + "] missing.");
+                        }
+                    }
+
+                }
+            }
+
+            // Check illustration_titles references in imagetag
+            if (titles != null) {
+                List<String> t = Arrays.asList(ill.getTitles());
+                for (String title : t) {
+                    for (String titleId : numericIds(title)) {
+                        if (!titles.hasTitle(titleId)) {
+                            errors.add("Title [" + titleId + "] in illustration [" + ill.getId() + "] missing.");
+                        }
+                    }
+
+                }
+            }
+        }
+
+        return errors;
+    }
+
+    /**
+     * Get only numerical IDs from a comma delimited string.
+     *
+     * @param ref string possibly containing reference IDs
+     * @return array with only numerical IDs
+     */
+    protected String[] numericIds(String ref) {
+        String[] rawParts = ref.split(",");
+
+        // Leave text out.
+        List<String> onlyNumbers = new ArrayList<>();
+        for (String rawPart : rawParts) {
+            if (rawPart.matches("\\d+")) {
+                onlyNumbers.add(rawPart);
+            }
+        }
+
+        return onlyNumbers.toArray(new String[onlyNumbers.size()]);
+    }
+
+    /**
+     * Make sure the IDs in a book's narrative tagging exist in the collections narrative sections.
+     *
+     * @param sections narrative sections to check
+     * @param tagging image tagging to check against
+     * @return list of errors found while checking
+     */
+    private List<String> check(NarrativeTagging tagging, NarrativeSections sections) {
+        List<String> errors = new ArrayList<>();
+
+        if (tagging == null) {
+            return errors;
+        }
+
+        for (BookScene scene : tagging) {
+            if (sections.findIndexOfSceneById(scene.getId()) < 0) {
+                errors.add("Narrative tagging scene not found in narrative_sections.");
+            }
+        }
+
+        return errors;
     }
 
 }

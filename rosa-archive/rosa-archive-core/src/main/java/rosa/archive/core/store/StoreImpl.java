@@ -77,7 +77,7 @@ public class StoreImpl implements Store {
     public Book loadBook(String collectionId, String bookId, List<String> errors) throws IOException {
         ByteStreamGroup byteStreams = base.getByteStreamGroup(collectionId);
         if (!byteStreams.hasByteStreamGroup(bookId)) {
-            // TODO report missing book
+            errors.add("Unable to find book. [" + bookId + "]");
             return null;
         }
 

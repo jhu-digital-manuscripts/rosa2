@@ -2,7 +2,6 @@ package rosa.archive.core.check;
 
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
@@ -33,8 +32,6 @@ public abstract class AbstractArchiveChecker {
         this.serializerMap = serializerMap;
     }
 
-    abstract <T extends HasId> boolean check(T t, ByteStreamGroup bsg, boolean checkBits);
-
     /**
      * Read an item from the archive, as identified by {@code item.getId()}. This ensures
      * that the object in the archive is readable. It does not check the bit integrity of
@@ -45,7 +42,7 @@ public abstract class AbstractArchiveChecker {
      * @param <T> item type
      * @return list of errors found while performing the check
      */
-    private <T extends HasId> List<String> attemptToRead(T item, ByteStreamGroup bsg) {
+    protected <T extends HasId> List<String> attemptToRead(T item, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (item == null || StringUtils.isBlank(item.getId())) {
@@ -67,6 +64,7 @@ public abstract class AbstractArchiveChecker {
      *
      * @param bsg byte stream group holding all streams to the archive
      * @param checkSubGroups TRUE - check streams in all sub-groups within {@code bsg}
+     * @param required is the checksum validation required?
      * @return list of errors found while checking
      */
     protected List<String> checkBits(ByteStreamGroup bsg, boolean checkSubGroups, boolean required) {
@@ -83,14 +81,14 @@ public abstract class AbstractArchiveChecker {
 
         // Look for CHECKSUM stream
         for (String name : streams) {
-            if (name.contains(config.getSHA1SUM()) || name.contains(config.getBNF_MD5SUM())) {
+            if (name.contains(config.getSHA1SUM())) {
                 checksumId = name;
                 break;
             }
         }
 
         if (checksumId != null) {
-            errors.addAll(checkStreams(bsg, checksumId, checkSubGroups));
+            errors.addAll(checkStreams(bsg, checksumId));
         } else if (required) {
             // checksumId will always be NULL here (no checksum stream exists)
             errors.add("Failed to get checksum data from group. [" + bsg.name() + "]");
@@ -106,8 +104,6 @@ public abstract class AbstractArchiveChecker {
             }
 
             for (ByteStreamGroup group : subGroups) {
-                String csName = group.hasByteStream(group.name() + config.getSHA1SUM())
-                        ? group.name() + config.getSHA1SUM() : null;
                 errors.addAll(checkBits(group, true, required));
             }
         }
@@ -123,45 +119,45 @@ public abstract class AbstractArchiveChecker {
      *
      * @param bsg byte stream group
      * @param checksumName name of checksum item in this group
-     * @param checkSubGroups TRUE - check streams in all sub-groups within {@code bsg}
      * @return list of errors found while performing check
      */
-    private List<String> checkStreams(ByteStreamGroup bsg, String checksumName, boolean checkSubGroups) {
+    private List<String> checkStreams(ByteStreamGroup bsg, String checksumName) {
         List<String> errors = new ArrayList<>();
-        boolean compareChecksums = checksumName != null;
+
+        if (checksumName == null) {
+            return errors;
+        }
 
         // Load all stored checksum data
         ChecksumInfo checksums = null;
-        if (compareChecksums) {
-            try (InputStream in = bsg.getByteStream(checksumName)) {
-                checksums = (ChecksumInfo) serializerMap.get(ChecksumInfo.class).read(in, errors);
-            } catch (IOException e) {
-                errors.add("Failed to read checksums. [" + checksumName + "]");
-            }
+        try (InputStream in = bsg.getByteStream(checksumName)) {
+            checksums = (ChecksumInfo) serializerMap.get(ChecksumInfo.class).read(in, errors);
+        } catch (IOException e) {
+            errors.add("Failed to read checksums. [" + checksumName + "]");
+        }
+
+        if (checksums == null) {
+            return errors;
         }
 
         List<String> streamIds = new ArrayList<>();
         try {
-            streamIds.addAll(bsg.listByteStreamIds());
+            streamIds.addAll(bsg.listByteStreamNames());
         } catch (IOException e) {
             errors.add("Could not get stream IDs from group. [" + bsg.name() + "]");
         }
 
         for (String streamId : streamIds) {
             try (InputStream in = bsg.getByteStream(streamId)){
-                // Validate checksum if applicable OR simply ensure byte stream is readable
-                if (compareChecksums && checksums != null) {
-                    ChecksumData cs = checksums.getChecksumDataForId(streamId);
-                    String hash = calculateChecksum(in, cs.getAlgorithm());
+                // Validate checksum if applicable
+                ChecksumData cs = checksums.getChecksumDataForId(streamId);
+                String hash = calculateChecksum(in, cs.getAlgorithm());
 
-                    if (!cs.getHash().equalsIgnoreCase(hash)) {
-                        errors.add("Calculated hash value is different from stored value!\n"
-                                        + "Calc: {" + streamId + ", " + hash + "}\n"
-                                        + "Stored " + cs.toString()
-                        );
-                    }
-                } else {
-                    IOUtils.toByteArray(in);
+                if (!cs.getHash().equalsIgnoreCase(hash)) {
+                    errors.add("Calculated hash value is different from stored value!\n"
+                                    + "Calc: {" + streamId + ", " + hash + "}\n"
+                                    + "Stored " + cs.toString()
+                    );
                 }
 
             } catch (IOException | NoSuchAlgorithmException e) {

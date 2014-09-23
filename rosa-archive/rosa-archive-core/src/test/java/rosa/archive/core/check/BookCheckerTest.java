@@ -8,32 +8,16 @@ import org.mockito.MockitoAnnotations;
 import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
-import rosa.archive.model.BookImage;
-import rosa.archive.model.BookMetadata;
-import rosa.archive.model.BookScene;
-import rosa.archive.model.BookStructure;
-import rosa.archive.model.BookText;
-import rosa.archive.model.ChecksumData;
-import rosa.archive.model.ChecksumInfo;
-import rosa.archive.model.CropData;
-import rosa.archive.model.CropInfo;
-import rosa.archive.model.HashAlgorithm;
-import rosa.archive.model.Illustration;
-import rosa.archive.model.IllustrationTagging;
-import rosa.archive.model.ImageList;
-import rosa.archive.model.NarrativeTagging;
-import rosa.archive.model.Permission;
-import rosa.archive.model.StructurePage;
-import rosa.archive.model.StructurePageSide;
+import rosa.archive.model.*;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -82,10 +66,10 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         );
 
         // TODO this will not be right until a Collection can be fully mocked
-        assertTrue(bChecker.checkContent(new BookCollection(), createBook(), bsg, true, new ArrayList<String>()));
-        assertFalse(bChecker.checkContent(new BookCollection(), createBadBook(), bsg, true, new ArrayList<String>()));
-        assertTrue(bChecker.checkContent(new BookCollection(), createBook(), bsg, false, new ArrayList<String>()));
-        assertFalse(bChecker.checkContent(new BookCollection(), createBadBook(), bsg, false, new ArrayList<String>()));
+        assertTrue(bChecker.checkContent(mockCollection(), createBook(), bsg, true, new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(mockCollection(), createBadBook(), bsg, true, new ArrayList<String>()));
+        assertTrue(bChecker.checkContent(mockCollection(), createBook(), bsg, false, new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(mockCollection(), createBadBook(), bsg, false, new ArrayList<String>()));
     }
 
     private Book createBook() {
@@ -333,6 +317,45 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
         badBook.setContent(content.toArray(new String[content.size()]));
         return badBook;
+    }
+
+    private BookCollection mockCollection() {
+        BookCollection collection = new BookCollection();
+
+        collection.setId("rosedata");
+        collection.setLanguages(new String[] {"en", "fr"});
+
+        NarrativeSections sections = new NarrativeSections();
+        List<NarrativeScene> scenes = sections.asScenes();
+        for (int i = 0; i < 10; i++) {
+            NarrativeScene scene = new NarrativeScene();
+            scene.setId("scene" + i);
+
+            NarrativeScene scene1 = new NarrativeScene();
+            scene1.setId("auto-scene" + i);
+
+            scenes.add(scene);
+            scenes.add(scene1);
+        }
+        collection.setNarrativeSections(sections);
+
+        IllustrationTitles titles = new IllustrationTitles();
+        Map<String, String> titleData = new HashMap<>();
+        titleData.put("1", "1");
+        titleData.put("2", "2");
+        titles.setData(titleData);
+        collection.setIllustrationTitles(titles);
+
+        CharacterNames names = new CharacterNames();
+        CharacterName name1 = new CharacterName();
+        name1.addName("1", "en");
+        CharacterName name2 = new CharacterName();
+        name2.addName("2", "en");
+
+        names.addCharacterName(name1);
+        names.addCharacterName(name2);
+
+        return collection;
     }
 
 }
