@@ -710,7 +710,7 @@ public class BookChecker extends AbstractArchiveChecker {
             errors.add("Failed to serialize ");
         }
 
-// TODO check other parts against BookStructure
+    // TODO check other parts against BookStructure
         return errors;
     }
 
@@ -810,7 +810,8 @@ public class BookChecker extends AbstractArchiveChecker {
 
         for (BookScene scene : tagging) {
             if (sections.findIndexOfSceneById(scene.getId()) < 0) {
-                errors.add("Narrative tagging scene not found in narrative_sections.");
+                errors.add("Narrative tagging scene [" + scene.getId()
+                        + "] not found in narrative_sections.");
             }
         }
 

@@ -140,7 +140,7 @@ public class ArchiveTool {
                     System.out.println("  " + item);
                 }
 
-                if (showErrors) {
+                if (showErrors && !errors.isEmpty()) {
                     System.out.println("\nErrors found while processing:");
                     for (String err : errors) {
                         System.out.println("  " + err);
@@ -153,7 +153,7 @@ public class ArchiveTool {
             displayError("Too many arguments. USAGE: list <collectionId> <bookId>", args);
         }
 
-        if (!showErrors) {
+        if (!showErrors && !errors.isEmpty()) {
             System.out.println("\nErrors were found while processing the command. Use the -showErrors flag " +
                     "to display the errors.");
         }
@@ -206,14 +206,26 @@ public class ArchiveTool {
             try {
                 String[] collections =  store.listBookCollections();
                 for (String collectionName : collections) {
-                    BookCollection collection = store.loadBookCollection(collectionName, errors);
+                    List<String> e = new ArrayList<>();
+
+                    BookCollection collection = store.loadBookCollection(collectionName, e);
                     System.out.println(collectionName);
-                    store.check(collection, checkBits, errors);
+                    store.check(collection, checkBits, e);
+
+                    if (!e.isEmpty()) {
+                        displayError(e);
+                        e.clear();
+                    }
 
                     for (String bookName : store.listBooks(collectionName)) {
-                        Book book = store.loadBook(collectionName, bookName, errors);
-                        System.out.println("  " + bookName);
-                        store.check(collection, book, checkBits, errors);
+                        Book book = store.loadBook(collectionName, bookName, e);
+                        System.out.println("\n-" + bookName);
+                        store.check(collection, book, checkBits, e);
+
+                        if (!e.isEmpty()) {
+                            displayError(e);
+                            e.clear();
+                        }
                     }
                 }
             } catch (IOException e) {
@@ -240,11 +252,16 @@ public class ArchiveTool {
             displayError("Too many arguments. USAGE: check <collectionId> <bookId>", args);
         }
 
+        System.out.println();
         if (!errors.isEmpty()) {
-            System.out.println("Errors: ");
-            for (String err : errors) {
-                System.out.println("  " + err);
-            }
+            displayError(errors);
+        }
+    }
+
+    private void displayError(List<String> errors) {
+        System.out.println("Errors: ");
+        for (String error : errors) {
+            System.out.println("  " + error);
         }
     }
 

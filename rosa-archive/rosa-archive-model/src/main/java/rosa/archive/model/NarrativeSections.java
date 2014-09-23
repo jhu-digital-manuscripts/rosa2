@@ -54,7 +54,11 @@ public class NarrativeSections implements HasId, Serializable {
      */
     public int findIndexOfSceneById(String id) {
         for (int i = 0; i < scenes.size(); i++) {
-            if (scenes.get(i).getId().equals(id)) {
+            // Remove any whitespaces
+            String sceneId = scenes.get(i).getId();
+            sceneId = sceneId.replaceAll("\\s+", "");
+
+            if (sceneId.equalsIgnoreCase(id.replaceAll("\\s+", ""))) {
                 return i;
             }
         }
