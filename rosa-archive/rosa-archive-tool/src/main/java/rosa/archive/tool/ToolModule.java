@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * Dependency injectino using Google Guice.
+ * Dependency injection using Google Guice.
  */
 public class ToolModule extends AbstractModule {
 

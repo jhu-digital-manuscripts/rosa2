@@ -1,8 +1,6 @@
 package rosa.archive.core.check;
 
 import com.google.inject.Inject;
-import org.apache.commons.codec.binary.Hex;
-import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
@@ -19,7 +17,6 @@ import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
-import rosa.archive.model.HashAlgorithm;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
@@ -33,9 +30,6 @@ import rosa.archive.model.StructurePage;
 import rosa.archive.model.StructurePageSide;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
