@@ -46,10 +46,10 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
 
             illustration.setId(row[0]);
             illustration.setPage(row.length > 1 ? row[1] : "");
-            illustration.setTitles(row.length > 2 ? row[2].split("\\s+,\\s+") : new String[] {});
+            illustration.setTitles(row.length > 2 ? row[2].split("\\s*,\\s*") : new String[] {});
             illustration.setTextualElement(row.length > 3 ? row[3] : "");
             illustration.setInitials(row.length > 4 ? row[4] : "");
-            illustration.setCharacters(row.length > 5 ? row[5].split("\\s+,\\s+") : new String[] {});
+            illustration.setCharacters(row.length > 5 ? row[5].split("\\s*,\\s*") : new String[] {});
             illustration.setCostume(row.length > 6 ? row[6] : "");
             illustration.setObject(row.length > 7 ? row[7] : "");
             illustration.setLandscape(row.length > 8 ? row[8] : "");

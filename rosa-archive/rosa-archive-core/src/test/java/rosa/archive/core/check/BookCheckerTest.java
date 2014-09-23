@@ -8,6 +8,7 @@ import org.mockito.MockitoAnnotations;
 import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.*;
 
 import java.io.IOException;
@@ -16,11 +17,15 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyList;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -58,7 +63,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
     @Test
     @SuppressWarnings("unchecked")
     public void checkContentTest() throws IOException {
-        BookChecker bChecker = new BookChecker(config);
+        BookChecker bChecker = new BookChecker(config, serializerMap);
 
         ByteStreamGroup bsg = mock(ByteStreamGroup.class);
         when(bsg.getByteStream(anyString())).thenReturn(

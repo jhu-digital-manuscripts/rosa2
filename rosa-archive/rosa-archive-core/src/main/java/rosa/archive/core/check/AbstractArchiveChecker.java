@@ -24,8 +24,8 @@ import java.util.Map;
  */
 public abstract class AbstractArchiveChecker {
 
-    private AppConfig config;
-    private Map<Class, Serializer> serializerMap;
+    protected AppConfig config;
+    protected Map<Class, Serializer> serializerMap;
 
     AbstractArchiveChecker(AppConfig config, Map<Class, Serializer> serializerMap) {
         this.config = config;
@@ -121,7 +121,7 @@ public abstract class AbstractArchiveChecker {
      * @param checksumName name of checksum item in this group
      * @return list of errors found while performing check
      */
-    private List<String> checkStreams(ByteStreamGroup bsg, String checksumName) {
+    protected List<String> checkStreams(ByteStreamGroup bsg, String checksumName) {
         List<String> errors = new ArrayList<>();
 
         if (checksumName == null) {
@@ -148,15 +148,23 @@ public abstract class AbstractArchiveChecker {
         }
 
         for (String streamId : streamIds) {
+            // Do not validate checksum for checksum file...
+            if (streamId.equalsIgnoreCase(checksumName)) {
+                continue;
+            }
+
+            ChecksumData cs = checksums.getChecksumDataForId(streamId);
+            if (cs == null) {
+                continue;
+            }
+
             try (InputStream in = bsg.getByteStream(streamId)){
-                // Validate checksum if applicable
-                ChecksumData cs = checksums.getChecksumDataForId(streamId);
                 String hash = calculateChecksum(in, cs.getAlgorithm());
 
                 if (!cs.getHash().equalsIgnoreCase(hash)) {
                     errors.add("Calculated hash value is different from stored value!\n"
-                                    + "Calc: {" + streamId + ", " + hash + "}\n"
-                                    + "Stored " + cs.toString()
+                                    + "    Calc: {" + streamId + ", " + hash + "}\n"
+                                    + "    Stored " + cs.toString()
                     );
                 }
 

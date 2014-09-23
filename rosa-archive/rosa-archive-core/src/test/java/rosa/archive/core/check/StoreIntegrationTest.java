@@ -13,6 +13,7 @@ import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.core.store.Store;
 import rosa.archive.core.store.StoreFactory;
+import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
@@ -21,6 +22,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -29,7 +32,7 @@ import static org.junit.Assert.assertTrue;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})
-public class BookCollectionIntegrationTest extends AbstractFileSystemTest {
+public class StoreIntegrationTest extends AbstractFileSystemTest {
 
     @Inject
     private AppConfig config;
@@ -38,12 +41,12 @@ public class BookCollectionIntegrationTest extends AbstractFileSystemTest {
     @Inject
     private StoreFactory storeFactory;
 
-    private BookCollectionChecker checker;
+    private BookCollectionChecker collectionChecker;
 
     @Before
     public void setup() throws URISyntaxException, IOException {
         super.setup();
-        checker = new BookCollectionChecker(config, serializerMap);
+        collectionChecker = new BookCollectionChecker(config, serializerMap);
     }
 
     @Test
@@ -55,7 +58,7 @@ public class BookCollectionIntegrationTest extends AbstractFileSystemTest {
         BookCollection collection = store.loadBookCollection("rosedata", errors);
         assertNotNull(collection);
 
-        boolean check = checker.checkContent(collection, base.getByteStreamGroup("rosedata"), false, errors);
+        boolean check = collectionChecker.checkContent(collection, base.getByteStreamGroup("rosedata"), false, errors);
         assertTrue(check);
     }
 
@@ -68,8 +71,32 @@ public class BookCollectionIntegrationTest extends AbstractFileSystemTest {
         BookCollection collection = store.loadBookCollection("rosedata", errors);
         assertNotNull(collection);
 
-        boolean check = checker.checkContent(collection, base.getByteStreamGroup("rosedata"), true, errors);
+        boolean check = collectionChecker.checkContent(collection, base.getByteStreamGroup("rosedata"), true, errors);
         assertTrue(check);
+    }
+
+    @Test
+    @Ignore
+    public void checkBitsOnBook() throws Exception {
+        Store store = storeFactory.create(base);
+        List<String> errors = new ArrayList<>();
+
+        BookCollection collection = store.loadBookCollection("rosedata", errors);
+        assertNotNull(collection);
+
+        Book book = store.loadBook("rosedata", "Walters143", errors);
+        assertNotNull(book);
+
+//        assertEquals(0, errors.size());
+        errors.clear();
+
+        boolean check = store.check(collection, book, true, errors);
+        assertFalse(check);
+
+        System.out.println("Number of errors: " + errors.size() + "\n");
+        for (String error : errors) {
+            System.err.println(error);
+        }
     }
 
 }

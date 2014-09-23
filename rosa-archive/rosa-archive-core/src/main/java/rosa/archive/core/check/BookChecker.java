@@ -6,6 +6,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -38,18 +39,16 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @see rosa.archive.model.Book
  */
-public class BookChecker {
-    private AppConfig config;
-
+public class BookChecker extends AbstractArchiveChecker {
     @Inject
-    BookChecker(AppConfig config) {
-        this.config = config;
+    BookChecker(AppConfig config, Map<Class, Serializer> serializerMap) {
+        super(config, serializerMap);
     }
-// TODO re-serialize from ByteStreamGroup to check readability?
 
     public boolean checkContent(
             BookCollection collection, Book book, ByteStreamGroup bsg, boolean checkBits, List<String> errors) {
@@ -143,22 +142,6 @@ public class BookChecker {
     }
 
     /**
-     * Compute the hash of an input stream using the specified algorithm.
-     *
-     * @param in input
-     * @param algorithm hashing algorithm to use
-     * @return hash value as hex string
-     * @throws IOException
-     * @throws NoSuchAlgorithmException
-     */
-    protected String calculateChecksum(InputStream in, HashAlgorithm algorithm)
-            throws IOException, NoSuchAlgorithmException {
-        MessageDigest md = DigestUtils.getDigest(algorithm.toString());
-        DigestUtils.updateDigest(md, in);
-        return Hex.encodeHexString(md.digest());
-    }
-
-    /**
      * Check the bit integrity of all items in the book archive. Checksum
      * values are calculated for each item in the book archive and compared
      * to known checksum values that are stored in the archive.
@@ -168,40 +151,7 @@ public class BookChecker {
      * @return list of errors found while performing check
      */
     protected List<String> checkAllBits(ByteStreamGroup bsg, Book book) {
-        List<String> errors = new ArrayList<>();
-
-        ChecksumInfo checksums = book.getChecksumInfo();
-        if (checksums == null) {
-            errors.add("Checksum missing from book archive.");
-            return errors;
-        }
-
-        for (String id : book.getContent()) {
-
-            if (id.contains(config.getSHA1SUM()) || id.contains(config.getBNF_MD5SUM())) {
-                continue;
-            }
-
-            ChecksumData stored = checksums.getChecksumDataForId(id);
-            if (stored == null) {
-                continue;
-            }
-            try {
-                String calculated = calculateChecksum(
-                        bsg.getByteStream(id),
-                        stored.getAlgorithm()
-                );
-
-                if (!stored.getHash().equalsIgnoreCase(calculated)) {
-                    errors.add("Calculated checksum different from stored checksum. [" + id + "]");
-                }
-            } catch (IOException | NoSuchAlgorithmException e) {
-                e.printStackTrace(System.err);
-                errors.add("Failed to calculate checksum for [" + id + "] '" + e.getMessage() + "'");
-            }
-        }
-
-        return errors;
+        return checkStreams(bsg, book.getChecksumInfo().getId());
     }
 
     /**
@@ -780,13 +730,10 @@ public class BookChecker {
             if (names != null) {
                 List<String> characters = Arrays.asList(ill.getCharacters());
                 for (String character : characters) {
-                    for (String charId : numericIds(character)) {
-                        if (!names.hasCharacter(charId)) {
-                            errors.add("Character ID [" + charId + "] in illustration [" +
+                        if (StringUtils.isNumeric(character) && !names.hasCharacter(character)) {
+                            errors.add("Character ID [" + character + "] in illustration [" +
                                     ill.getId() + "] missing.");
                         }
-                    }
-
                 }
             }
 
@@ -794,37 +741,14 @@ public class BookChecker {
             if (titles != null) {
                 List<String> t = Arrays.asList(ill.getTitles());
                 for (String title : t) {
-                    for (String titleId : numericIds(title)) {
-                        if (!titles.hasTitle(titleId)) {
-                            errors.add("Title [" + titleId + "] in illustration [" + ill.getId() + "] missing.");
-                        }
+                    if (StringUtils.isNumeric(title) && !titles.hasTitle(title)) {
+                        errors.add("Title [" + title + "] in illustration [" + ill.getId() + "] missing.");
                     }
-
                 }
             }
         }
 
         return errors;
-    }
-
-    /**
-     * Get only numerical IDs from a comma delimited string.
-     *
-     * @param ref string possibly containing reference IDs
-     * @return array with only numerical IDs
-     */
-    protected String[] numericIds(String ref) {
-        String[] rawParts = ref.split(",");
-
-        // Leave text out.
-        List<String> onlyNumbers = new ArrayList<>();
-        for (String rawPart : rawParts) {
-            if (rawPart.matches("\\d+")) {
-                onlyNumbers.add(rawPart);
-            }
-        }
-
-        return onlyNumbers.toArray(new String[onlyNumbers.size()]);
     }
 
     /**
