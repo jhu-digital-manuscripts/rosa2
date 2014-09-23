@@ -60,33 +60,33 @@ public class BookChecker extends AbstractArchiveChecker {
 
         // Check the following items:
         //   checksumInfo
-        errors.addAll(check(book.getChecksumInfo(), book));
+        errors.addAll(check(book.getChecksumInfo(), book, bsg));
         //   list of images is required
-        errors.addAll(check(book.getImages(), book));
+        errors.addAll(check(book.getImages(), book, bsg));
         //   but list of cropped images is not required
         if (book.getCroppedImages() != null) {
-            errors.addAll(check(book.getCroppedImages(), book));
+            errors.addAll(check(book.getCroppedImages(), book, bsg));
         }
         //   cropInfo
-        errors.addAll(check(book.getCropInfo(), book));
+        errors.addAll(check(book.getCropInfo(), book, bsg));
 
         for (String lang : config.languages()) {
             //   bookMetadata
-            errors.addAll(check(book.getBookMetadata(lang), book));
+            errors.addAll(check(book.getBookMetadata(lang), book, bsg));
             //   bookDescription (currently not present in model)
             //   permissions
-            errors.addAll(check(book.getPermission(lang), book));
+            errors.addAll(check(book.getPermission(lang), book, bsg));
         }
         //   content
         errors.addAll(check(book.getContent(), book.getId()));
         //   bookStructure
-        errors.addAll(check(book.getBookStructure(), book));
+        errors.addAll(check(book.getBookStructure(), book, bsg));
         //   illustrationTagging
-        errors.addAll(check(book.getIllustrationTagging(), book));
+        errors.addAll(check(book.getIllustrationTagging(), book, bsg));
         //   manualNarrativeTagging
-        errors.addAll(check(book.getManualNarrativeTagging(), book));
+        errors.addAll(check(book.getManualNarrativeTagging(), book, bsg));
         //   automaticNarrativeTagging
-        errors.addAll(check(book.getAutomaticNarrativeTagging(), book));
+        errors.addAll(check(book.getAutomaticNarrativeTagging(), book, bsg));
 
         try {
             // Check character_names and illustration_titles
@@ -195,7 +195,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param parent parent container
      * @return list of errors found during the check
      */
-    private List<String> check(BookMetadata metadata, Book parent) {
+    private List<String> check(BookMetadata metadata, Book parent, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (metadata == null) {
@@ -284,6 +284,12 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
+        try {
+            serializerMap.get(BookMetadata.class).read(bsg.getByteStream(metadata.getId()), errors);
+        } catch (IOException e) {
+            errors.add("Failed to serialize book metadata. [" + metadata.getId() + "]");
+        }
+
         return errors;
     }
 
@@ -294,7 +300,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param parent containing Book
      * @return list of errors found while performing check
      */
-    private List<String> check(Permission permission, Book parent) {
+    private List<String> check(Permission permission, Book parent, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (permission == null) {
@@ -310,6 +316,12 @@ public class BookChecker extends AbstractArchiveChecker {
         }
         if (!isInArchive(permission.getId(), parent.getContent())) {
             errors.add("Permission not in archive.");
+        }
+
+        try {
+            serializerMap.get(Permission.class).read(bsg.getByteStream(permission.getId()), errors);
+        } catch (IOException e) {
+            errors.add("Failed to serialize permission file. [" + permission.getId() + "]");
         }
 
         return errors;
@@ -330,7 +342,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param parent {@link rosa.archive.model.Book} that contains this image list
      * @return list of errors found while checking data
      */
-    private List<String> check(ImageList images, Book parent) {
+    private List<String> check(ImageList images, Book parent, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (images == null || images.getImages() == null) {
@@ -359,6 +371,12 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
+        try {
+            serializerMap.get(ImageList.class).read(bsg.getByteStream(images.getId()), errors);
+        } catch (IOException e) {
+            errors.add("Failed to serialize image list. [" + images.getId() + "]");
+        }
+
         return errors;
     }
 
@@ -376,7 +394,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param parent parent book
      * @return list of errors found while performing check
      */
-    private List<String> check(CropInfo cropInfo, Book parent) {
+    private List<String> check(CropInfo cropInfo, Book parent, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (cropInfo == null) {
@@ -403,6 +421,12 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
+        try {
+            serializerMap.get(CropInfo.class).read(bsg.getByteStream(cropInfo.getId()), errors);
+        } catch (IOException e) {
+            errors.add("Failed to serialize crop info. [" + cropInfo.getId() + "]");
+        }
+
         return errors;
     }
 
@@ -419,7 +443,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param parent containing Book
      * @return list of errors found during checking
      */
-    private List<String> check(ChecksumInfo info, Book parent) {
+    private List<String> check(ChecksumInfo info, Book parent, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (info == null) {
@@ -452,6 +476,12 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
+        try {
+            serializerMap.get(ChecksumInfo.class).read(bsg.getByteStream(info.getId()), errors);
+        } catch (IOException e) {
+            errors.add("Failed to serialize checksum info. [" + info.getId() + "]");
+        }
+
         return errors;
     }
 
@@ -466,7 +496,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param parent parent container
      * @return list of errors found while performing the check
      */
-    private List<String> check(BookStructure structure, Book parent) {
+    private List<String> check(BookStructure structure, Book parent, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (structure == null) {
@@ -493,6 +523,12 @@ public class BookChecker extends AbstractArchiveChecker {
                     errors.add("Could not find image associated with recto. [" + page + "]");
                 }
             }
+        }
+
+        try {
+            serializerMap.get(BookStructure.class).read(bsg.getByteStream(structure.getId()), errors);
+        } catch (IOException e) {
+            errors.add("Failed to serialize reduced tagging. [" + structure.getId() + "]");
         }
 
         return errors;
@@ -597,7 +633,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param parent containing Book
      * @return list of errors found while performing check
      */
-    private List<String> check(IllustrationTagging tagging, Book parent) {
+    private List<String> check(IllustrationTagging tagging, Book parent, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (tagging == null) {
@@ -637,6 +673,12 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
+        try {
+            serializerMap.get(IllustrationTagging.class).read(bsg.getByteStream(tagging.getId()), errors);
+        } catch (IOException e) {
+            errors.add("Failed to serialize illustration tagging. [" + tagging.getId() + "]");
+        }
+
         return errors;
     }
 
@@ -647,7 +689,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param parent containing Book
      * @return list of errors found while performing check
      */
-    private List<String> check(NarrativeTagging tagging, Book parent) {
+    private List<String> check(NarrativeTagging tagging, Book parent, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (tagging == null) {
@@ -667,6 +709,13 @@ public class BookChecker extends AbstractArchiveChecker {
                 errors.add("Could not find end page of scene. [" + scene + "]");
             }
         }
+
+        try {
+            serializerMap.get(NarrativeTagging.class).read(bsg.getByteStream(tagging.getId()), errors);
+        } catch (IOException e) {
+            errors.add("Failed to serialize ");
+        }
+
 // TODO check other parts against BookStructure
         return errors;
     }
