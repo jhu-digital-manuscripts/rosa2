@@ -145,6 +145,12 @@ public class BookChecker extends AbstractArchiveChecker {
      * @return list of errors found while performing check
      */
     protected List<String> checkAllBits(ByteStreamGroup bsg, Book book) {
+        if (book.getChecksumInfo() == null) {
+            return Arrays.asList(
+                    ("Book [" + book.getId() + "] has no stored checksums. "
+                            + "Cannot check bit integrity.")
+            );
+        }
         return checkStreams(bsg, book.getChecksumInfo().getId());
     }
 
@@ -359,9 +365,11 @@ public class BookChecker extends AbstractArchiveChecker {
             // Relies on the fact that the array is sorted.
             boolean inContent = isInArchive(image.getId(), parent.getContent());
             if (image.isMissing() && inContent) {
-                errors.add("Image [" + image.getId() + "] marked as missing is present in archive.");
+                errors.add("Image [" + image.getId() + "] marked as missing is present in archive. ["
+                        + images.getId() + "]");
             } else if (!image.isMissing() && !inContent) {
-                errors.add("Image [" + image.getId() + "] marked as present in archive is missing.");
+                errors.add("Image [" + image.getId() + "] marked as present in archive is missing. ["
+                        + images.getId() + "]");
             }
         }
 
@@ -396,14 +404,15 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         if (!isInArchive(parent.getId() + config.getCROP(), parent.getContent())) {
-            errors.add("Crop information missing from parent book content.");
+            errors.add("Crop information missing from parent book content. [" + parent.getId() + "]");
         }
 
         for (CropData crop : cropInfo) {
             if (StringUtils.isBlank(crop.getId())) {
                 errors.add("Crop ID missing. [" + crop + "]");
             } else if (!isInArchive(crop.getId(), parent.getContent())) {
-                errors.add("Crop information missing from parent Book archive. [" + crop + "]");
+                errors.add("Croping information for item [" + crop.getId()
+                        + "] missing from parent Book archive. [" + parent.getId() + "]");
             }
 
             if (crop.getLeft() < 0.0 || crop.getRight() < 0.0
@@ -456,17 +465,17 @@ public class BookChecker extends AbstractArchiveChecker {
                 errors.add("ID missing for checksum: [" + data + "]");
             } else {
                 if (!isInArchive(data.getId(), parent.getContent())) {
-                    errors.add("ID associated with checksum does not exist in the archive. [" + data + "]");
+                    errors.add("Checksum data found for [" + dataId + "]. Item does not exist in archive ["
+                            + parent.getId() + "]");
                 }
             }
             if (data.getAlgorithm() == null) {
-                errors.add("Hashing algorithm not defined for checksum: [" + data + "]");
+                errors.add("Hashing algorithm not defined for checksum: [" + dataId + "]");
             }
             if (StringUtils.isBlank(data.getHash())) {
-                errors.add("Hash value missing. [" + data + "]");
-            }
-            if (!StringUtils.isAlphanumeric(data.getHash())) {
-                errors.add("Hash value is non-numeric. " + data + "]");
+                errors.add("Hash value missing. [" + dataId + "]");
+            } else if (!StringUtils.isAlphanumeric(data.getHash())) {
+                errors.add("Malformed hash value. [" + dataId + " -> " + data.getHash() + "]");
             }
         }
 
@@ -508,13 +517,15 @@ public class BookChecker extends AbstractArchiveChecker {
             if (page.getVerso() != null) {
                 errors.addAll(check(page.getVerso()));
                 if (guessImageName(page.getId() + "v", parent) == null) {
-                    errors.add("Could not find image associated with verso. [" + page + "]");
+                    errors.add("Could not find image associated with verso. ["
+                            + parent.getId() + ":" + page.getVerso().getParentPage() + "]");
                 }
             }
             if (page.getRecto() != null) {
                 errors.addAll(check(page.getRecto()));
                 if (guessImageName(page.getId() + "r", parent) == null) {
-                    errors.add("Could not find image associated with recto. [" + page + "]");
+                    errors.add("Could not find image associated with recto. ["
+                            + parent.getId() + ":" + page.getRecto().getParentPage() + "]");
                 }
             }
         }
@@ -635,32 +646,36 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         if (!isInArchive(tagging.getId(), parent.getContent())) {
-            errors.add("Image tagging missing from archive.");
+            errors.add("Image tagging missing from archive. [" + parent.getId() + "]");
         }
 
         for (Illustration illustration : tagging) {
             if (StringUtils.isBlank(illustration.getId())) {
-                errors.add("Illustration ID missing. [" + illustration + "]");
+                errors.add("Illustration ID missing. [" + illustration.getId() + "]");
             }
             if (StringUtils.isBlank(illustration.getPage())) {
-                errors.add("Illustration page missing. [" + illustration + "]");
+                errors.add("Illustration page missing. [" + illustration.getId() + "]");
             }
             if (illustration.getTitles().length == 0) {
-                errors.add("Illustration title missing. [" + illustration + "]");
+                errors.add("Illustration title missing. [" + illustration.getId() + "]");
             } else {
                 for (String id : illustration.getTitles()) {
                     if (!StringUtils.isNumeric(id)) {
-                        errors.add("Illustration ID is non-numeric. [" + illustration + "]");
+                        errors.add("Illustration ID is non-numeric. "
+                                + "Illustration [" + illustration.getId() + "], "
+                                + "[" + id + "]");
                     }
-                    // Link to illustration_titles.csv in collection checked in the collection checker
+                    // Link to illustration_titles.csv in collection checked below
                 }
             }
             if (illustration.getCharacters().length == 0) {
-                errors.add("Illustration characters missing. [" + illustration + "]");
+                errors.add("Illustration characters missing. [" + illustration.getId() + "]");
             } else {
                 for (String id : illustration.getCharacters()) {
                     if (!StringUtils.isNumeric(id)) {
-                        errors.add("Illustration character ID is non-numeric.[" + illustration + "]");
+                        errors.add("Illustration character ID is non-numeric. "
+                                + "Illustration [" + illustration.getId() + "], "
+                                + "character ID [" + id + "]");
                     }
                     // Link to character_names.csv in collection checked in the collection checker
                 }
@@ -691,23 +706,26 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         if (!isInArchive(tagging.getId(), parent.getContent())) {
-            errors.add("Narrative tagging not found in archive. [" + tagging + "]");
+            errors.add("Narrative tagging not found in archive. ["
+                    + parent.getId() + ":" + tagging.getId() + "]");
         }
 
         for (BookScene scene : tagging) {
             // Link to narrative_sections.csv checked in collection checker
             if (guessImageName(scene.getStartPage(), parent) == null) {
-                errors.add("Could not find start page of scene. [" + scene + "]");
+                errors.add("Could not find start page of scene. ["
+                        + scene.getId() + " : " + scene.getStartPage() + "]");
             }
             if (guessImageName(scene.getEndPage(), parent) == null) {
-                errors.add("Could not find end page of scene. [" + scene + "]");
+                errors.add("Could not find end page of scene. ["
+                        + scene.getId() + " : "  + scene.getEndPage() + "]");
             }
         }
 
         try {
             serializerMap.get(NarrativeTagging.class).read(bsg.getByteStream(tagging.getId()), errors);
         } catch (IOException e) {
-            errors.add("Failed to serialize ");
+            errors.add("Failed to serialize [" + parent.getId() + ":" + tagging.getId() + "]");
         }
 
     // TODO check other parts against BookStructure

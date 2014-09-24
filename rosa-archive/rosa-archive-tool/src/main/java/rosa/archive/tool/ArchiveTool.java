@@ -201,6 +201,8 @@ public class ArchiveTool {
         }
 
         System.out.println("Checking...");
+
+        List<String> loadingErrors = new ArrayList<>();
         if (args.length == 1) {
             // check everything
             try {
@@ -208,7 +210,7 @@ public class ArchiveTool {
                 for (String collectionName : collections) {
                     List<String> e = new ArrayList<>();
 
-                    BookCollection collection = store.loadBookCollection(collectionName, e);
+                    BookCollection collection = store.loadBookCollection(collectionName, loadingErrors);
                     System.out.println(collectionName);
                     store.check(collection, checkBits, e);
 
@@ -218,7 +220,7 @@ public class ArchiveTool {
                     }
 
                     for (String bookName : store.listBooks(collectionName)) {
-                        Book book = store.loadBook(collectionName, bookName, e);
+                        Book book = store.loadBook(collectionName, bookName, loadingErrors);
                         System.out.println("\n-" + bookName);
                         store.check(collection, book, checkBits, e);
 
@@ -234,7 +236,7 @@ public class ArchiveTool {
         } else if (args.length == 2) {
             // check collection
             try {
-                BookCollection collection = store.loadBookCollection(args[1], errors);
+                BookCollection collection = store.loadBookCollection(args[1], loadingErrors);
                 store.check(collection, checkBits, errors);
             } catch (IOException e) {
                 displayError("Error: Unable to load collection. [" + args[1] + "]", args, e);
@@ -242,8 +244,8 @@ public class ArchiveTool {
         } else if (args.length == 3) {
             // check book
             try {
-                BookCollection collection = store.loadBookCollection(args[1], errors);
-                Book book = store.loadBook(args[1], args[2], errors);
+                BookCollection collection = store.loadBookCollection(args[1], loadingErrors);
+                Book book = store.loadBook(args[1], args[2], loadingErrors);
                 store.check(collection, book, checkBits, errors);
             } catch (IOException e) {
                 displayError("Error: Unable to load book. [" + args[1] + ":" + args[2] + "]", args, e);
@@ -252,14 +254,14 @@ public class ArchiveTool {
             displayError("Too many arguments. USAGE: check <collectionId> <bookId>", args);
         }
 
-        System.out.println("\n...complete");
+        System.out.println("...complete");
         if (!errors.isEmpty()) {
             displayError(errors);
         }
     }
 
     private void displayError(List<String> errors) {
-        System.out.println("Errors: ");
+        System.out.println("\nErrors: ");
         for (String error : errors) {
             System.out.println("  " + error);
         }

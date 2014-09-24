@@ -46,7 +46,7 @@ public abstract class AbstractArchiveChecker {
         List<String> errors = new ArrayList<>();
 
         if (item == null || StringUtils.isBlank(item.getId())) {
-            errors.add("Item missing from archive.");
+            errors.add("Item missing from archive. [" + bsg.name() + "]");
             return errors;
         }
 
@@ -54,7 +54,7 @@ public abstract class AbstractArchiveChecker {
             // This will read the item in the archive and report any errors
             serializerMap.get(item.getClass()).read(in, errors);
         } catch (IOException e) {
-            errors.add("Failed to read [" + item.getId() + "]");
+            errors.add("Failed to read [" + bsg.name() + ":" + item.getId() + "]");
         }
 
         return errors;
@@ -133,7 +133,7 @@ public abstract class AbstractArchiveChecker {
         try (InputStream in = bsg.getByteStream(checksumName)) {
             checksums = (ChecksumInfo) serializerMap.get(ChecksumInfo.class).read(in, errors);
         } catch (IOException e) {
-            errors.add("Failed to read checksums. [" + checksumName + "]");
+            errors.add("Failed to read checksums. [" + bsg.name() + ":" + checksumName + "]");
         }
 
         if (checksums == null) {

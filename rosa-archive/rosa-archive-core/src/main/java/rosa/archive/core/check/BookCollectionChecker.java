@@ -35,7 +35,7 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
         // Check collection items:
         //   id
         if (StringUtils.isBlank(collection.getId())) {
-            errors.add("Collection ID missing.");
+            errors.add("Collection ID missing from collection. [" + collection.getId() + "]");
         }
 
         //   books[]
