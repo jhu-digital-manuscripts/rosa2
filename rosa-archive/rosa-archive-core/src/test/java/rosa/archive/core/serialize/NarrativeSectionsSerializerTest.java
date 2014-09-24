@@ -38,7 +38,7 @@ public class NarrativeSectionsSerializerTest extends BaseSerializerTest {
             List<NarrativeScene> scenes = sections.asScenes();
             assertNotNull(scenes);
             // There is one line that is missing Lecoy
-            assertEquals(65, scenes.size());
+            assertEquals(341, scenes.size());
 
             NarrativeScene scene = scenes.get(0);
             assertEquals("G 1a", scene.getId());

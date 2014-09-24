@@ -36,7 +36,7 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest {
             assertNotNull(titles);
             assertTrue(titles.getAllIds().size() > 0);
 
-            assertEquals(80, titles.getAllIds().size());
+            assertEquals(321, titles.getAllIds().size());
             assertEquals("Portrait of Author (Guillaume de Lorris)", titles.getTitleById("1"));
             assertEquals("Dangier Speaks to L’Amans", titles.getTitleById("80"));
         }

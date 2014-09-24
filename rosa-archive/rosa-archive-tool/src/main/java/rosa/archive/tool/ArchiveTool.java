@@ -252,7 +252,7 @@ public class ArchiveTool {
             displayError("Too many arguments. USAGE: check <collectionId> <bookId>", args);
         }
 
-        System.out.println();
+        System.out.println("\n...complete");
         if (!errors.isEmpty()) {
             displayError(errors);
         }

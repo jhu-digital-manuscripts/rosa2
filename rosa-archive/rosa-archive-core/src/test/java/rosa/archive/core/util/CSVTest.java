@@ -57,7 +57,7 @@ public class CSVTest {
 
             String[][] table = CSV.parseTable(reader);
 
-            assertEquals(67, table.length);
+            assertEquals(354, table.length);
             for (String[] row : table) {
                 assertEquals("Unexpected row length: [" + row.length + "], should be [4].", 4, row.length);
             }

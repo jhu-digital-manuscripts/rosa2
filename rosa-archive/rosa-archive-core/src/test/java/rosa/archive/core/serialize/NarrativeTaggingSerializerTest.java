@@ -38,17 +38,17 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
 
             List<BookScene> scenes = tagging.getScenes();
             assertNotNull(scenes);
-            assertEquals(81, scenes.size());
+            assertEquals(44, scenes.size());
 
-            //g11c,19r.b,31,19v.c,29,,0,2809
-            BookScene scene = scenes.get(80);
-            assertEquals("g11c", scene.getId());
-            assertEquals("19r", scene.getStartPage());
-            assertEquals("b", scene.getStartPageCol());
-            assertEquals(31, scene.getStartLineOffset());
-            assertEquals("19v", scene.getEndPage());
-            assertEquals("c", scene.getEndPageCol());
-            assertEquals(29, scene.getEndLineOffset());
+            // g8c,10v.d,1,10v.d,38,(SS57) Il ont pliens cleres fontainnes,0,1381
+            BookScene scene = scenes.get(43);
+            assertEquals("g8c", scene.getId());
+            assertEquals("10v", scene.getStartPage());
+            assertEquals("d", scene.getStartPageCol());
+            assertEquals(1, scene.getStartLineOffset());
+            assertEquals("10v", scene.getEndPage());
+            assertEquals("d", scene.getEndPageCol());
+            assertEquals(38, scene.getEndLineOffset());
         }
     }
 

@@ -40,32 +40,32 @@ public class BookStructureSerializerTest extends BaseSerializerTest {
 
             List<StructurePage> pages = structure.pages();
             assertNotNull(pages);
-            assertEquals(27, pages.size());
+            assertEquals(10, pages.size());
 
-            StructurePage page = pages.get(26);
+            StructurePage page = pages.get(9);
             assertNotNull(page);
-            assertEquals("27", page.getId());
-            assertEquals("27", page.getName());
+            assertEquals("10", page.getId());
+            assertEquals("10", page.getName());
             assertNotNull(page.getRecto());
             assertNotNull(page.getVerso());
 
             StructurePageSide side = page.getRecto();
             assertNotNull(side);
-            assertEquals("27r", side.getParentPage());
+            assertEquals("10r", side.getParentPage());
             assertNotNull(side.columns());
             assertNotNull(side.spanning());
             assertEquals(2, side.columns().size());
 
             StructureColumn col = side.columns().get(0);
             assertNotNull(col);
-            assertNotNull("27r", col.getParentSide());
+            assertNotNull("10r", col.getParentSide());
             assertEquals('a', col.getColumnLetter());
             assertNotNull(col.getItems());
-            assertEquals(3, col.getItems().size());
+            assertEquals(9, col.getItems().size());
 
             List<StructureColumn> columns = structure.columns();
             assertNotNull(columns);
-            assertEquals(108, columns.size());
+            assertEquals(40, columns.size());
 
         }
     }
