@@ -13,6 +13,7 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.tool.config.ToolConfig;
 
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -24,15 +25,24 @@ public class ArchiveTool {
 
     private ToolConfig config;
     private Store store;
+    
+    private PrintStream report;
 
     public ArchiveTool(Store store, ToolConfig config) {
         this.store = store;
         this.config = config;
+
+        this.report = System.out;
+    }
+    
+    public ArchiveTool(Store store, ToolConfig config, PrintStream report) {
+        this(store, config);
+        this.report = report;
     }
 
     public static void main(String[] args) throws Exception {
         if (args.length < 1) {
-            System.err.println("A command must be issued.");
+            System.out.println("A command must be issued.");
             System.exit(1);
         }
 
@@ -63,13 +73,13 @@ public class ArchiveTool {
     }
 
     private void displayError(String message, String[] args) {
-        System.err.println("Command: " + Arrays.toString(args));
-        System.err.println(message);
+        report.println("Command: " + Arrays.toString(args));
+        report.println(message);
     }
 
     private void displayError(String message, String[] args, Exception e) {
         displayError(message, args);
-        e.printStackTrace(System.err);
+        e.printStackTrace(report);
     }
 
     /**
@@ -111,39 +121,39 @@ public class ArchiveTool {
         List<String> errors = new ArrayList<>();
         if (args.length == 1) {
             // list
-            System.out.println("Collections: ");
+            report.println("Collections: ");
             try {
                 String[] collectionNames = store.listBookCollections();
                 for (String name : collectionNames) {
-                    System.out.println("  " + name);
+                    report.println("  " + name);
                 }
             } catch (IOException e) {
                 displayError("Error: Unable to read collection names.", args, e);
             }
         } else if (args.length == 2) {
             // list <collectionId>
-            System.out.println("Books in " + args[1]);
+            report.println("Books in " + args[1]);
             try {
                 String[] books = store.listBooks(args[1]);
                 for (String name : books) {
-                    System.out.println("  " + name);
+                    report.println("  " + name);
                 }
             } catch (IOException e) {
                 displayError("Error: Unable to read book names in collection [" + args[1] + "]", args, e);
             }
         } else if (args.length == 3) {
             // list <collectionId> <bookId>
-            System.out.println("Stuff in " + args[1] + ":" + args[2]);
+            report.println("Stuff in " + args[1] + ":" + args[2]);
             try {
                 Book book = store.loadBook(args[1], args[2], errors);
                 for (String item : book.getContent()) {
-                    System.out.println("  " + item);
+                    report.println("  " + item);
                 }
 
                 if (showErrors && !errors.isEmpty()) {
-                    System.out.println("\nErrors found while processing:");
+                    report.println("\nErrors found while processing:");
                     for (String err : errors) {
-                        System.out.println("  " + err);
+                        report.println("  " + err);
                     }
                 }
             } catch (IOException e) {
@@ -154,7 +164,7 @@ public class ArchiveTool {
         }
 
         if (!showErrors && !errors.isEmpty()) {
-            System.out.println("\nErrors were found while processing the command. Use the -showErrors flag " +
+            report.println("\nErrors were found while processing the command. Use the -showErrors flag " +
                     "to display the errors.");
         }
     }
@@ -200,7 +210,7 @@ public class ArchiveTool {
             args = argsList.toArray(new String[argsList.size()]);
         }
 
-        System.out.println("Checking...");
+        report.println("Checking...");
 
         List<String> loadingErrors = new ArrayList<>();
         if (args.length == 1) {
@@ -211,7 +221,7 @@ public class ArchiveTool {
                     List<String> e = new ArrayList<>();
 
                     BookCollection collection = store.loadBookCollection(collectionName, loadingErrors);
-                    System.out.println(collectionName);
+                    report.println(collectionName);
                     store.check(collection, checkBits, e);
 
                     if (!e.isEmpty()) {
@@ -221,7 +231,7 @@ public class ArchiveTool {
 
                     for (String bookName : store.listBooks(collectionName)) {
                         Book book = store.loadBook(collectionName, bookName, loadingErrors);
-                        System.out.println("\n-" + bookName);
+                        report.println("\n-" + bookName);
                         store.check(collection, book, checkBits, e);
 
                         if (!e.isEmpty()) {
@@ -254,16 +264,16 @@ public class ArchiveTool {
             displayError("Too many arguments. USAGE: check <collectionId> <bookId>", args);
         }
 
-        System.out.println("...complete");
+        report.println("...complete");
         if (!errors.isEmpty()) {
             displayError(errors);
         }
     }
 
     private void displayError(List<String> errors) {
-        System.out.println("\nErrors: ");
+        report.println("\nErrors: ");
         for (String error : errors) {
-            System.out.println("  " + error);
+            report.println("  " + error);
         }
     }
 
