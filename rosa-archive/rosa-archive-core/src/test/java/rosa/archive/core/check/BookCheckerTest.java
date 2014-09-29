@@ -8,8 +8,9 @@ import org.mockito.MockitoAnnotations;
 import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
-import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.*;
+import rosa.archive.model.redtag.StructurePage;
+import rosa.archive.model.redtag.StructurePageSide;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,15 +18,12 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyList;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -51,8 +49,8 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         when(config.getTIF()).thenReturn(".tif");
         when(config.getSHA1SUM()).thenReturn(".SHA1SUM");
         when(config.getPERMISSION()).thenReturn(".permission_");
-        when(config.getNARRATIVE_TAGGING()).thenReturn(".nartag.csv");
-        when(config.getNARRATIVE_TAGGING_MAN()).thenReturn(".nartag.txt");
+        when(config.getNARRATIVE_TAGGING()).thenReturn(".redtag.csv");
+        when(config.getNARRATIVE_TAGGING_MAN()).thenReturn(".redtag.txt");
         when(config.getIMAGE_TAGGING()).thenReturn(".imagetag.csv");
         when(config.getCROP()).thenReturn(".crop.txt");
         when(config.getBNF_FILEMAP()).thenReturn(".bnf.filemap.csv");

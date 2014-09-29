@@ -2,6 +2,9 @@ package rosa.archive.model;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.model.redtag.StructureColumn;
+import rosa.archive.model.redtag.StructurePage;
+import rosa.archive.model.redtag.StructurePageSide;
 
 import java.util.Arrays;
 import java.util.List;

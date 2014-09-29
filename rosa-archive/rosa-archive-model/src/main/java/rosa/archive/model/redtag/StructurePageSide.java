@@ -1,4 +1,4 @@
-package rosa.archive.model;
+package rosa.archive.model.redtag;
 
 import java.io.Serializable;
 import java.util.ArrayList;

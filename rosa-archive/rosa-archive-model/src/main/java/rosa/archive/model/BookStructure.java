@@ -1,5 +1,9 @@
 package rosa.archive.model;
 
+import rosa.archive.model.redtag.StructureColumn;
+import rosa.archive.model.redtag.StructurePage;
+import rosa.archive.model.redtag.StructurePageSide;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;

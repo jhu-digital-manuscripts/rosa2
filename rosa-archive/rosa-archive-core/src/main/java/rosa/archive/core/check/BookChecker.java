@@ -21,13 +21,13 @@ import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
-import rosa.archive.model.Item;
+import rosa.archive.model.redtag.Item;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
-import rosa.archive.model.StructureColumn;
-import rosa.archive.model.StructurePage;
-import rosa.archive.model.StructurePageSide;
+import rosa.archive.model.redtag.StructureColumn;
+import rosa.archive.model.redtag.StructurePage;
+import rosa.archive.model.redtag.StructurePageSide;
 
 import java.io.IOException;
 import java.util.ArrayList;

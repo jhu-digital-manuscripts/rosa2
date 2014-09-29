@@ -3,9 +3,9 @@ package rosa.archive.core.serialize;
 import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.BookStructure;
-import rosa.archive.model.StructureColumn;
-import rosa.archive.model.StructurePage;
-import rosa.archive.model.StructurePageSide;
+import rosa.archive.model.redtag.StructureColumn;
+import rosa.archive.model.redtag.StructurePage;
+import rosa.archive.model.redtag.StructurePageSide;
 
 import java.io.IOException;
 import java.io.InputStream;

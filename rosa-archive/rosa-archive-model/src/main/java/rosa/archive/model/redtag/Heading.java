@@ -1,14 +1,14 @@
-package rosa.archive.model;
+package rosa.archive.model.redtag;
 
 /**
  *
  */
-public class Rubric extends Item {
+public class Heading extends Item {
     private static final long serialVersionUID = 1L;
 
     private String text;
 
-    public Rubric() {  }
+    public Heading() {  }
 
     public String getText() {
         return text;
@@ -21,12 +21,12 @@ public class Rubric extends Item {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Rubric)) return false;
+        if (!(o instanceof Heading)) return false;
         if (!super.equals(o)) return false;
 
-        Rubric rubric = (Rubric) o;
+        Heading heading = (Heading) o;
 
-        if (text != null ? !text.equals(rubric.text) : rubric.text != null) return false;
+        if (text != null ? !text.equals(heading.text) : heading.text != null) return false;
 
         return true;
     }
@@ -40,7 +40,7 @@ public class Rubric extends Item {
 
     @Override
     public String toString() {
-        return "Rubric{" +
+        return "Heading{" +
                 "text='" + text + '\'' +
                 ", lines='" + getLines() + '\'' +
                 '}';
