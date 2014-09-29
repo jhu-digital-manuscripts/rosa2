@@ -65,7 +65,6 @@ public class StoreImpl implements Store {
                 loadItem(config.getILLUSTRATION_TITLES(), collectionGroup, IllustrationTitles.class, errors));
         collection.setNarrativeSections(
                 loadItem(config.getNARRATIVE_SECTIONS(), collectionGroup, NarrativeSections.class, errors));
-        collection.setMissing(loadItem(config.getMISSING_PAGES(), collectionGroup, MissingList.class, errors));
 
         // Languages from configuration.
         collection.setLanguages(config.languages());

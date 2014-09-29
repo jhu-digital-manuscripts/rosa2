@@ -21,7 +21,6 @@ import rosa.archive.model.CropInfo;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
-import rosa.archive.model.MissingList;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
@@ -240,7 +239,6 @@ public class StoreImplTest extends AbstractFileSystemTest {
 
         classes.add(CharacterNames.class);
         classes.add(IllustrationTitles.class);
-        classes.add(MissingList.class);
         classes.add(NarrativeSections.class);
 
         String[] cols = {"data", "rosedata"};
@@ -255,7 +253,6 @@ public class StoreImplTest extends AbstractFileSystemTest {
             assertNotNull(collection.getCharacterNames());
             assertNotNull(collection.getIllustrationTitles());
             assertNotNull(collection.getNarrativeSections());
-            assertNotNull(collection.getMissing());
             assertNotNull(collection.getAllSupportedLanguages());
         }
     }

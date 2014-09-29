@@ -1,7 +1,5 @@
 package rosa.archive.model;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -48,7 +46,7 @@ public class CharacterNames implements HasId, Serializable {
             CharacterName characterName = names.get(id);
             String name = characterName.getNameInLanguage(language);
 
-            if (StringUtils.isNotBlank(name)) {
+            if (name != null && !name.equals("")) {
                 namesInLanguage.add(name);
             }
         }

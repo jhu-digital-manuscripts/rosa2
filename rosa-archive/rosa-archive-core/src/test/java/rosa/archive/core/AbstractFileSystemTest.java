@@ -13,7 +13,6 @@ import rosa.archive.model.CropInfo;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
-import rosa.archive.model.MissingList;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
@@ -70,7 +69,6 @@ public abstract class AbstractFileSystemTest {
         classes.add(IllustrationTagging.class);
         classes.add(IllustrationTitles.class);
         classes.add(ImageList.class);
-        classes.add(MissingList.class);
         classes.add(NarrativeSections.class);
         classes.add(NarrativeTagging.class);
         classes.add(Transcription.class);

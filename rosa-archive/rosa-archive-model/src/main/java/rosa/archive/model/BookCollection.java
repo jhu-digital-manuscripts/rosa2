@@ -21,7 +21,6 @@ public class BookCollection implements HasId, Serializable {
     private CharacterNames characterNames;
     private IllustrationTitles illustrationTitles;
     private NarrativeSections narrativeSections;
-    private MissingList missing;
 
     public BookCollection() {
         books = new String[0];
@@ -44,14 +43,6 @@ public class BookCollection implements HasId, Serializable {
      */
     public String[] books() {
         return books;
-    }
-
-    public MissingList getMissing() {
-        return missing;
-    }
-
-    public void setMissing(MissingList missing) {
-        this.missing = missing;
     }
 
     public void setBooks(String[] books) {
@@ -127,7 +118,6 @@ public class BookCollection implements HasId, Serializable {
         if (illustrationTitles != null ? !illustrationTitles.equals(that.illustrationTitles) : that.illustrationTitles != null)
             return false;
         if (!Arrays.equals(languages, that.languages)) return false;
-        if (missing != null ? !missing.equals(that.missing) : that.missing != null) return false;
         if (narrativeSections != null ? !narrativeSections.equals(that.narrativeSections) : that.narrativeSections != null)
             return false;
 
@@ -142,7 +132,6 @@ public class BookCollection implements HasId, Serializable {
         result = 31 * result + (characterNames != null ? characterNames.hashCode() : 0);
         result = 31 * result + (illustrationTitles != null ? illustrationTitles.hashCode() : 0);
         result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
-        result = 31 * result + (missing != null ? missing.hashCode() : 0);
         return result;
     }
 
@@ -155,7 +144,6 @@ public class BookCollection implements HasId, Serializable {
                 ", characterNames=" + characterNames +
                 ", illustrationTitles=" + illustrationTitles +
                 ", narrativeSections=" + narrativeSections +
-                ", missing=" + missing +
                 '}';
     }
 }

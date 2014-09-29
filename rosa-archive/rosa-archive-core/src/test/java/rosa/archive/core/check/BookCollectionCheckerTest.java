@@ -115,7 +115,6 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
         classes.add(NarrativeSections.class);
         classes.add(IllustrationTagging.class);
         classes.add(NarrativeTagging.class);
-        classes.add(MissingList.class);
 
         for (Class c : classes) {
             Serializer s = mock(Serializer.class);
