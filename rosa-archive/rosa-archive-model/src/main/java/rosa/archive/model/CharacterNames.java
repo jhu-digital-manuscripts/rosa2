@@ -46,7 +46,7 @@ public class CharacterNames implements HasId, Serializable {
             CharacterName characterName = names.get(id);
             String name = characterName.getNameInLanguage(language);
 
-            if (name != null && !name.equals("")) {
+            if (name != null && !name.isEmpty()) {
                 namesInLanguage.add(name);
             }
         }
