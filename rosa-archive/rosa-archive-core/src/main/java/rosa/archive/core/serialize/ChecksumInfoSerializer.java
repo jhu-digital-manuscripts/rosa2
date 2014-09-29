@@ -3,14 +3,13 @@ package rosa.archive.core.serialize;
 import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
 import rosa.archive.core.config.AppConfig;
-import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
-import rosa.archive.model.HashAlgorithm;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @see rosa.archive.model.ChecksumInfo
@@ -27,6 +26,7 @@ public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
     @Override
     public ChecksumInfo read(InputStream is, List<String> errors) throws IOException {
         ChecksumInfo info = new ChecksumInfo();
+        Map<String, String> checksums = info.checksums();
 
         List<String> lines = IOUtils.readLines(is, config.getCHARSET());
         for (String line : lines) {
@@ -37,12 +37,8 @@ public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
                 errors.add("Malformed line in checksum data: [" + line + "]");
                 continue;
             }
-            ChecksumData data = new ChecksumData();
-            data.setId(parts[1]);
-            data.setHash(parts[0]);
-            data.setAlgorithm(HashAlgorithm.SHA1);
 
-            info.addChecksum(data);
+            checksums.put(parts[1], parts[0]);
         }
 
         return info;

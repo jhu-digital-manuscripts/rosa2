@@ -2,7 +2,6 @@ package rosa.archive.core.serialize;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.HashAlgorithm;
 
@@ -38,9 +37,8 @@ public class ChecksumInfoSerializerTest extends BaseSerializerTest {
         assertNotNull(info);
         assertEquals(13, info.getAllIds().size());
 
-        ChecksumData data = info.getChecksumDataForId("Walters143.permission_en.html");
-        assertEquals("9421c9c5988b83afb28eed96d60c5611b10d6336", data.getHash());
-        assertEquals(HashAlgorithm.SHA1, data.getAlgorithm());
+        String hash = info.checksums().get("Walters143.permission_en.html");
+        assertEquals("9421c9c5988b83afb28eed96d60c5611b10d6336", hash);
     }
 
     @Test (expected = UnsupportedOperationException.class)

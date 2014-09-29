@@ -23,7 +23,6 @@ import java.util.Map;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -245,16 +244,14 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         ChecksumInfo checksums = new ChecksumInfo();
         checksums.setId("LudwigXV7.SHA1SUM");
         for (String filename : content) {
-            ChecksumData data = new ChecksumData();
-            data.setId(filename);
-            data.setAlgorithm(HashAlgorithm.SHA1);
+            String hash;
             if (first) {
-                data.setHash("1ae91bed8acf6df12710743b39b143905abbc8aa");
+                hash = "1ae91bed8acf6df12710743b39b143905abbc8aa";
                 first = false;
             } else
-                data.setHash("da39a3ee5e6b4b0d3255bfef95601890afd80709");
+                hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709";
 
-            checksums.addChecksum(data);
+            checksums.checksums().put(filename, hash);
         }
         content.add(checksums.getId());
         book.setChecksumInfo(checksums);
@@ -304,16 +301,14 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         ChecksumInfo checksums = new ChecksumInfo();
         checksums.setId("LudwigXV7.SHA1SUM");
         for (String filename : content) {
-            ChecksumData data = new ChecksumData();
-            data.setId(filename);
-            data.setAlgorithm(HashAlgorithm.SHA1);
+            String hash;
             if (first) {
-                data.setHash("1ae91bed8acf6df12710743b39b143905abbc8aa");
+                hash = "1ae91bed8acf6df12710743b39b143905abbc8aa";
                 first = false;
             } else
-                data.setHash("da39a3ee5e6b4b0d3255bfef95601890afd80709");
+                hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709";
 
-            checksums.addChecksum(data);
+            checksums.checksums().put(filename, hash);
         }
         content.add(checksums.getId());
         badBook.setChecksumInfo(checksums);

@@ -13,9 +13,9 @@ public class ChecksumInfo implements HasId, Serializable {
 
     private String id;
     /**
-     * Archive item ID -> ChecksumData
+     * Archive item ID -> checksum
      */
-    private Map<String, ChecksumData> checksums;
+    private Map<String, String> checksums;
 
     public ChecksumInfo() {
         this.checksums = new HashMap<>();
@@ -35,12 +35,8 @@ public class ChecksumInfo implements HasId, Serializable {
         return checksums.keySet();
     }
 
-    public ChecksumData getChecksumDataForId(String id) {
-        return checksums.get(id);
-    }
-
-    public void addChecksum(ChecksumData checksum) {
-        checksums.put(checksum.getId(), checksum);
+    public Map<String, String> checksums() {
+        return checksums;
     }
 
     @Override

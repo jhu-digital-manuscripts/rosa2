@@ -13,7 +13,6 @@ import rosa.archive.model.BookScene;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.BookText;
 import rosa.archive.model.CharacterNames;
-import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
@@ -459,23 +458,17 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         for (String dataId : info.getAllIds()) {
-            ChecksumData data = info.getChecksumDataForId(dataId);
+            String hash = info.checksums().get(dataId);
 
-            if (StringUtils.isBlank(data.getId())) {
-                errors.add("ID missing for checksum: [" + data + "]");
-            } else {
-                if (!isInArchive(data.getId(), parent.getContent())) {
-                    errors.add("Checksum data found for [" + dataId + "]. Item does not exist in archive ["
-                            + parent.getId() + "]");
-                }
+            if (!isInArchive(dataId, parent.getContent())) {
+                errors.add("Checksum data found for [" + dataId + "]. Item does not exist in archive ["
+                        + parent.getId() + "]");
             }
-            if (data.getAlgorithm() == null) {
-                errors.add("Hashing algorithm not defined for checksum: [" + dataId + "]");
-            }
-            if (StringUtils.isBlank(data.getHash())) {
+
+            if (StringUtils.isBlank(hash)) {
                 errors.add("Hash value missing. [" + dataId + "]");
-            } else if (!StringUtils.isAlphanumeric(data.getHash())) {
-                errors.add("Malformed hash value. [" + dataId + " -> " + data.getHash() + "]");
+            } else if (!StringUtils.isAlphanumeric(hash)) {
+                errors.add("Malformed hash value. [" + dataId + " -> " + hash + "]");
             }
         }
 

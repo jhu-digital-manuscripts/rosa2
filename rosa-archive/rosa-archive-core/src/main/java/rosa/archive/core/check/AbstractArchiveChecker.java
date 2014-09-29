@@ -6,7 +6,6 @@ import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
-import rosa.archive.model.ChecksumData;
 import rosa.archive.model.ChecksumInfo;
 import rosa.archive.model.HasId;
 import rosa.archive.model.HashAlgorithm;
@@ -129,14 +128,14 @@ public abstract class AbstractArchiveChecker {
         }
 
         // Load all stored checksum data
-        ChecksumInfo checksums = null;
+        ChecksumInfo checksumInfo = null;
         try (InputStream in = bsg.getByteStream(checksumName)) {
-            checksums = (ChecksumInfo) serializerMap.get(ChecksumInfo.class).read(in, errors);
+            checksumInfo = (ChecksumInfo) serializerMap.get(ChecksumInfo.class).read(in, errors);
         } catch (IOException e) {
             errors.add("Failed to read checksums. [" + bsg.name() + ":" + checksumName + "]");
         }
 
-        if (checksums == null) {
+        if (checksumInfo == null) {
             return errors;
         }
 
@@ -147,24 +146,25 @@ public abstract class AbstractArchiveChecker {
             errors.add("Could not get stream IDs from group. [" + bsg.name() + "]");
         }
 
+        // Calculate checksum for all InputStreams, compare to stored values
         for (String streamId : streamIds) {
             // Do not validate checksum for checksum file...
             if (streamId.equalsIgnoreCase(checksumName)) {
                 continue;
             }
 
-            ChecksumData cs = checksums.getChecksumDataForId(streamId);
-            if (cs == null) {
+            String storedHash = checksumInfo.checksums().get(streamId);
+            if (storedHash == null) {
                 continue;
             }
 
             try (InputStream in = bsg.getByteStream(streamId)){
-                String hash = calculateChecksum(in, cs.getAlgorithm());
+                String hash = calculateChecksum(in, HashAlgorithm.SHA1);
 
-                if (!cs.getHash().equalsIgnoreCase(hash)) {
+                if (!storedHash.equalsIgnoreCase(hash)) {
                     errors.add("Calculated hash value is different from stored value!\n"
-                                    + "    Calc: {" + streamId + ", " + hash + "}\n"
-                                    + "    Stored " + cs.toString()
+                                    + "    Calc:   {" + streamId + ", " + hash + "}\n"
+                                    + "    Stored: {" + streamId + ", " + storedHash + "}"
                     );
                 }
 
