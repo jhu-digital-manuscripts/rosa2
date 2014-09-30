@@ -92,8 +92,8 @@ public class StoreImpl implements Store {
                 loadItem(bookId + config.getCROP(), bookStreams, CropInfo.class, errors));
         book.setBookStructure(
                 loadItem(bookId + config.getREDUCED_TAGGING(), bookStreams, BookStructure.class, errors));
-        book.setChecksumInfo(
-                loadItem(bookId + config.getSHA1SUM(), bookStreams, ChecksumInfo.class, errors));
+        book.setSHA1Checksum(
+                loadItem(bookId + config.getSHA1SUM(), bookStreams, SHA1Checksum.class, errors));
         book.setIllustrationTagging(
                 loadItem(bookId + config.getIMAGE_TAGGING(), bookStreams, IllustrationTagging.class, errors));
         book.setManualNarrativeTagging(

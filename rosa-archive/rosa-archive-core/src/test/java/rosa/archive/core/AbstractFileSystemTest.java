@@ -8,7 +8,7 @@ import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.CharacterNames;
-import rosa.archive.model.ChecksumInfo;
+import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.CropInfo;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
@@ -64,7 +64,7 @@ public abstract class AbstractFileSystemTest {
         classes.add(BookMetadata.class);
         classes.add(BookStructure.class);
         classes.add(CharacterNames.class);
-        classes.add(ChecksumInfo.class);
+        classes.add(SHA1Checksum.class);
         classes.add(CropInfo.class);
         classes.add(IllustrationTagging.class);
         classes.add(IllustrationTitles.class);

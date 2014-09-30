@@ -13,7 +13,7 @@ import rosa.archive.model.BookScene;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.BookText;
 import rosa.archive.model.CharacterNames;
-import rosa.archive.model.ChecksumInfo;
+import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
 import rosa.archive.model.Illustration;
@@ -53,7 +53,7 @@ public class BookChecker extends AbstractArchiveChecker {
 
         // Check the following items:
         //   checksumInfo
-        errors.addAll(check(book.getChecksumInfo(), book, bsg));
+        errors.addAll(check(book.getSHA1Checksum(), book, bsg));
         //   list of images is required
         errors.addAll(check(book.getImages(), book, bsg));
         //   but list of cropped images is not required
@@ -144,13 +144,13 @@ public class BookChecker extends AbstractArchiveChecker {
      * @return list of errors found while performing check
      */
     protected List<String> checkAllBits(ByteStreamGroup bsg, Book book) {
-        if (book.getChecksumInfo() == null) {
+        if (book.getSHA1Checksum() == null) {
             return Arrays.asList(
                     ("Book [" + book.getId() + "] has no stored checksums. "
                             + "Cannot check bit integrity.")
             );
         }
-        return checkStreams(bsg, book.getChecksumInfo().getId());
+        return checkStreams(bsg, book.getSHA1Checksum().getId());
     }
 
     /**
@@ -445,7 +445,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param parent containing Book
      * @return list of errors found during checking
      */
-    private List<String> check(ChecksumInfo info, Book parent, ByteStreamGroup bsg) {
+    private List<String> check(SHA1Checksum info, Book parent, ByteStreamGroup bsg) {
         List<String> errors = new ArrayList<>();
 
         if (info == null) {
@@ -473,7 +473,7 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         try {
-            serializerMap.get(ChecksumInfo.class).read(bsg.getByteStream(info.getId()), errors);
+            serializerMap.get(SHA1Checksum.class).read(bsg.getByteStream(info.getId()), errors);
         } catch (IOException e) {
             errors.add("Failed to serialize checksum info. [" + info.getId() + "]");
         }

@@ -241,7 +241,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         boolean first = true;
         Collections.sort(content);
 
-        ChecksumInfo checksums = new ChecksumInfo();
+        SHA1Checksum checksums = new SHA1Checksum();
         checksums.setId("LudwigXV7.SHA1SUM");
         for (String filename : content) {
             String hash;
@@ -254,7 +254,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
             checksums.checksums().put(filename, hash);
         }
         content.add(checksums.getId());
-        book.setChecksumInfo(checksums);
+        book.setSHA1Checksum(checksums);
 
         book.setContent(content.toArray(new String[content.size()]));
         return book;
@@ -298,7 +298,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         boolean first = true;
         Collections.sort(content);
 
-        ChecksumInfo checksums = new ChecksumInfo();
+        SHA1Checksum checksums = new SHA1Checksum();
         checksums.setId("LudwigXV7.SHA1SUM");
         for (String filename : content) {
             String hash;
@@ -311,7 +311,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
             checksums.checksums().put(filename, hash);
         }
         content.add(checksums.getId());
-        badBook.setChecksumInfo(checksums);
+        badBook.setSHA1Checksum(checksums);
 
         badBook.setContent(content.toArray(new String[content.size()]));
         return badBook;

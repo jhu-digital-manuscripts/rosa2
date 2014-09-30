@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
-import rosa.archive.model.ChecksumInfo;
+import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.HasId;
 import rosa.archive.model.HashAlgorithm;
 
@@ -128,14 +128,14 @@ public abstract class AbstractArchiveChecker {
         }
 
         // Load all stored checksum data
-        ChecksumInfo checksumInfo = null;
+        SHA1Checksum SHA1Checksum = null;
         try (InputStream in = bsg.getByteStream(checksumName)) {
-            checksumInfo = (ChecksumInfo) serializerMap.get(ChecksumInfo.class).read(in, errors);
+            SHA1Checksum = (SHA1Checksum) serializerMap.get(SHA1Checksum.class).read(in, errors);
         } catch (IOException e) {
             errors.add("Failed to read checksums. [" + bsg.name() + ":" + checksumName + "]");
         }
 
-        if (checksumInfo == null) {
+        if (SHA1Checksum == null) {
             return errors;
         }
 
@@ -153,7 +153,7 @@ public abstract class AbstractArchiveChecker {
                 continue;
             }
 
-            String storedHash = checksumInfo.checksums().get(streamId);
+            String storedHash = SHA1Checksum.checksums().get(streamId);
             if (storedHash == null) {
                 continue;
             }

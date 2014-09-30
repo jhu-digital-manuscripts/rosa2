@@ -27,7 +27,7 @@ public class Book implements HasId, Serializable {
      */
     private CropInfo cropInfo;
     private BookDescription bookDescription;
-    private ChecksumInfo checksumInfo;
+    private SHA1Checksum SHA1Checksum;
     /**
      * Array of all content associated with this book (ex: all file names in a directory).
      */
@@ -101,12 +101,12 @@ public class Book implements HasId, Serializable {
         this.bookDescription = bookDescription;
     }
 
-    public ChecksumInfo getChecksumInfo() {
-        return checksumInfo;
+    public SHA1Checksum getSHA1Checksum() {
+        return SHA1Checksum;
     }
 
-    public void setChecksumInfo(ChecksumInfo checksumInfo) {
-        this.checksumInfo = checksumInfo;
+    public void setSHA1Checksum(SHA1Checksum SHA1Checksum) {
+        this.SHA1Checksum = SHA1Checksum;
     }
 
     public String[] getContent() {
@@ -194,7 +194,7 @@ public class Book implements HasId, Serializable {
             return false;
         if (bookStructure != null ? !bookStructure.equals(book.bookStructure) : book.bookStructure != null)
             return false;
-        if (checksumInfo != null ? !checksumInfo.equals(book.checksumInfo) : book.checksumInfo != null) return false;
+        if (SHA1Checksum != null ? !SHA1Checksum.equals(book.SHA1Checksum) : book.SHA1Checksum != null) return false;
         if (!Arrays.equals(content, book.content)) return false;
         if (cropInfo != null ? !cropInfo.equals(book.cropInfo) : book.cropInfo != null) return false;
         if (croppedImages != null ? !croppedImages.equals(book.croppedImages) : book.croppedImages != null)
@@ -220,7 +220,7 @@ public class Book implements HasId, Serializable {
         result = 31 * result + (croppedImages != null ? croppedImages.hashCode() : 0);
         result = 31 * result + (cropInfo != null ? cropInfo.hashCode() : 0);
         result = 31 * result + (bookDescription != null ? bookDescription.hashCode() : 0);
-        result = 31 * result + (checksumInfo != null ? checksumInfo.hashCode() : 0);
+        result = 31 * result + (SHA1Checksum != null ? SHA1Checksum.hashCode() : 0);
         result = 31 * result + (content != null ? Arrays.hashCode(content) : 0);
         result = 31 * result + (bookStructure != null ? bookStructure.hashCode() : 0);
         result = 31 * result + (illustrationTagging != null ? illustrationTagging.hashCode() : 0);
@@ -240,7 +240,7 @@ public class Book implements HasId, Serializable {
                 ", croppedImages=" + croppedImages +
                 ", cropInfo=" + cropInfo +
                 ", bookDescription=" + bookDescription +
-                ", checksumInfo=" + checksumInfo +
+                ", checksumInfo=" + SHA1Checksum +
                 ", content=" + Arrays.toString(content) +
                 ", bookStructure=" + bookStructure +
                 ", illustrationTagging=" + illustrationTagging +

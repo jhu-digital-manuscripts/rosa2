@@ -2,8 +2,7 @@ package rosa.archive.core.serialize;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.model.ChecksumInfo;
-import rosa.archive.model.HashAlgorithm;
+import rosa.archive.model.SHA1Checksum;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,17 +13,17 @@ import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.mock;
 
 /**
- * @see rosa.archive.core.serialize.ChecksumInfoSerializer
+ * @see SHA1ChecksumSerializer
  */
-public class ChecksumInfoSerializerTest extends BaseSerializerTest {
+public class SHA1ChecksumSerializerTest extends BaseSerializerTest {
     private static final String testFile = "data/Walters143/Walters143.SHA1SUM";
 
-    private Serializer<ChecksumInfo> serializer;
+    private Serializer<SHA1Checksum> serializer;
 
     @Before
     public void setup() {
         super.setup();
-        serializer = new ChecksumInfoSerializer(config);
+        serializer = new SHA1ChecksumSerializer(config);
     }
 
     @Test
@@ -32,7 +31,7 @@ public class ChecksumInfoSerializerTest extends BaseSerializerTest {
         InputStream is = getClass().getClassLoader().getResourceAsStream(testFile);
         assertNotNull(is);
 
-        ChecksumInfo info = serializer.read(is, errors);
+        SHA1Checksum info = serializer.read(is, errors);
 
         assertNotNull(info);
         assertEquals(13, info.getAllIds().size());
@@ -44,7 +43,7 @@ public class ChecksumInfoSerializerTest extends BaseSerializerTest {
     @Test (expected = UnsupportedOperationException.class)
     public void writeTest() throws IOException {
         OutputStream out = mock(OutputStream.class);
-        serializer.write(new ChecksumInfo(), out);
+        serializer.write(new SHA1Checksum(), out);
     }
 
 }

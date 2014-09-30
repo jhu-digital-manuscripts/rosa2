@@ -3,7 +3,7 @@ package rosa.archive.core.serialize;
 import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
 import rosa.archive.core.config.AppConfig;
-import rosa.archive.model.ChecksumInfo;
+import rosa.archive.model.SHA1Checksum;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,20 +12,20 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @see rosa.archive.model.ChecksumInfo
+ * @see rosa.archive.model.SHA1Checksum
  */
-public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
+public class SHA1ChecksumSerializer implements Serializer<SHA1Checksum> {
 
     private AppConfig config;
 
     @Inject
-    ChecksumInfoSerializer(AppConfig config) {
+    SHA1ChecksumSerializer(AppConfig config) {
         this.config = config;
     }
 
     @Override
-    public ChecksumInfo read(InputStream is, List<String> errors) throws IOException {
-        ChecksumInfo info = new ChecksumInfo();
+    public SHA1Checksum read(InputStream is, List<String> errors) throws IOException {
+        SHA1Checksum info = new SHA1Checksum();
         Map<String, String> checksums = info.checksums();
 
         List<String> lines = IOUtils.readLines(is, config.getCHARSET());
@@ -45,7 +45,7 @@ public class ChecksumInfoSerializer implements Serializer<ChecksumInfo> {
     }
 
     @Override
-    public void write(ChecksumInfo object, OutputStream out) {
+    public void write(SHA1Checksum object, OutputStream out) {
         throw new UnsupportedOperationException("Not implemented yet!");
     }
 }

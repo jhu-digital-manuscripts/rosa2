@@ -8,8 +8,10 @@ import java.util.Set;
 /**
  * Holds the checksums for all items in the archive for a book.
  */
-public class ChecksumInfo implements HasId, Serializable {
+public class SHA1Checksum implements HasId, Serializable {
     private static final long serialVersionUID = 1L;
+
+    public static final String ALGORITHM = "SHA1";
 
     private String id;
     /**
@@ -17,7 +19,7 @@ public class ChecksumInfo implements HasId, Serializable {
      */
     private Map<String, String> checksums;
 
-    public ChecksumInfo() {
+    public SHA1Checksum() {
         this.checksums = new HashMap<>();
     }
 
@@ -42,9 +44,9 @@ public class ChecksumInfo implements HasId, Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof ChecksumInfo)) return false;
+        if (!(o instanceof SHA1Checksum)) return false;
 
-        ChecksumInfo info = (ChecksumInfo) o;
+        SHA1Checksum info = (SHA1Checksum) o;
 
         if (checksums != null ? !checksums.equals(info.checksums) : info.checksums != null) return false;
         if (id != null ? !id.equals(info.id) : info.id != null) return false;
