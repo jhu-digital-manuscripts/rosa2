@@ -44,6 +44,10 @@ public class ToolConfig {
         return ARCHIVE_PATH;
     }
 
+    public void setARCHIVE_PATH(String ARCHIVE_PATH) {
+        this.ARCHIVE_PATH = ARCHIVE_PATH;
+    }
+
     public String getFLAG_SHOW_ERRORS() {
         return FLAG_SHOW_ERRORS;
     }

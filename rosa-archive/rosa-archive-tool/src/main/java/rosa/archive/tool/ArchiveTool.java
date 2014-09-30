@@ -2,7 +2,13 @@ package rosa.archive.tool;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.cli.BasicParser;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.OptionBuilder;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.ParseException;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
@@ -40,7 +46,7 @@ public class ArchiveTool {
         this.report = report;
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws ParseException, IOException {
         if (args.length < 1) {
             System.out.println("A command must be issued.");
             System.exit(1);
@@ -51,24 +57,49 @@ public class ArchiveTool {
         ToolConfig config = injector.getInstance(ToolConfig.class);
         StoreFactory sFactory = injector.getInstance(StoreFactory.class);
 
+        // Set the valid options for the tool
+        Options options = new Options();
+        options.addOption(OptionBuilder.withArgName("archive.path=value")
+                .withDescription("set the path of the archive. A default value for this path" +
+                        " can is set in 'tool-config.properties'")
+                .hasArgs(2)
+                .withValueSeparator()
+                .create("D"));
+        options.addOption(new Option(config.getFLAG_SHOW_ERRORS(), false, "show all errors"));
+        options.addOption(new Option(
+                config.getFLAG_CHECK_BITS(), false, "check bit integrity of data in the archive"));
+
+        CommandLineParser parser = new BasicParser();
+        CommandLine cmd = parser.parse(options, args);
+
+        // Set archive path if the argument exists in the CLI command issued
+        ArchiveTool tool;
+        if (cmd.hasOption("D")) {
+            config.setARCHIVE_PATH(
+                    cmd.getOptionProperties("D").getProperty("archive.path")
+            );
+        }
+
+        // Create the tool and run the command
         ByteStreamGroup base = new FSByteStreamGroup(config.getARCHIVE_PATH());
         Store store = sFactory.create(base);
 
-        ArchiveTool tool = new ArchiveTool(store, config);
-        tool.run(args);
+        tool = new ArchiveTool(store, config);
+        tool.run(cmd);
     }
 
-    public void run(String[] args) {
-        String command = args[0];
+    /**
+     * Run the command
+     *
+     * @param cmd CLI command
+     */
+    public void run(CommandLine cmd) {
+        String command = cmd.getArgs()[0];
 
-        // Commands:
         if (command.equals(config.getCMD_LIST())) {
-            list(args);
+            list(cmd);
         } else if (command.equals(config.getCMD_CHECK())) {
-            // check
-            check(args);
-        } else {
-            displayError("Unknown command.", args);
+            check(cmd);
         }
     }
 
@@ -82,40 +113,21 @@ public class ArchiveTool {
         e.printStackTrace(report);
     }
 
+    private void displayError(List<String> errors) {
+        report.println("\nErrors: ");
+        for (String error : errors) {
+            report.println("  " + error);
+        }
+    }
+
     /**
      * List items in the archive according to the command arguments.
      *
-     * USAGE: java -jar &lt;jar file&gt; list &lt;collectionId (optional)&gt; &lt;bookId (optional)&gt;
-     * <ul>
-     *     <li>collectionId: if this is specified by itself (bookId is missing), then list all books
-     *         in the collection, as specified by this ID.</li>
-     *     <li>bookId: if this is specified, collectionId must also be specified. List all items in the book.</li>
-     *     <li>If no IDs are present, then the collections will be listed.</li>
-     *     <li>-showErrors : errors will be displayed.</li>
-     * </ul>
-     *
-     * Example: {@code java -jar tool.jar rose LudwigXV7}
-     *
-     * This will list all items in the archive in the 'LudwigXV7' book in the 'rose' archive.
-     *
-     * @param args command plus arguments
+     * @param cmd CLI command
      */
-    private void list(String[] args) {
-
-        int[] flagsPositions = findFlags(args);
-        boolean showErrors = false;
-        for (int i : flagsPositions) {
-            if (args[i].equals(config.getFLAG_SHOW_ERRORS())) {
-                showErrors = true;
-                List<String> argsList = new ArrayList<>();
-                argsList.addAll(Arrays.asList(args));
-                argsList.remove(i);
-                args = argsList.toArray(new String[argsList.size()]);
-            } else {
-                displayError("Unsupported flag found: [" + args[i] + "]", args);
-                System.exit(1);
-            }
-        }
+    private void list(CommandLine cmd) {
+        String[] args = cmd.getArgs();
+        boolean showErrors = cmd.hasOption(config.getFLAG_SHOW_ERRORS());
 
         // list
         List<String> errors = new ArrayList<>();
@@ -172,43 +184,13 @@ public class ArchiveTool {
     /**
      * Checks the data consistency and/or bit integrity of items in the archive.
      *
-     * USAGE: java -jar &lt;jar file&gt; check [-checkBits] &lt;collectionId&gt; &lt;bookId&gt;
-     * <ul>
-     *     <li>If collectionID and bookId are missing, every item in the archive will be checked.</li>
-     *     <li>collectionId : all items in this collection will be checked. All books in the collection
-     *         are also checked.</li>
-     *     <li>bookId : check all items in this book.</li>
-     *     <li>-checkBits : tells the command to check the bit integrity of items</li>
-     *     <li>If any other flag besides '-checkBits' is found, the command will terminate.</li>
-     * </ul>
-     *
-     * Example: {@code java -jar tool.jar rose LudwigXV7}
-     *
-     * @param args command
+     * @param cmd CLI command
      */
-    private void check(String[] args) {
+    private void check(CommandLine cmd) {
         List<String> errors = new ArrayList<>();
 
-        // Look for -checkBits flag
-        int[] flagPositions = findFlags(args);
-        boolean checkBits = false;
-        for (int i : flagPositions) {
-            if (args[i].equals(config.getFLAG_CHECK_BITS())) {
-                checkBits = true;
-            } else {
-                displayError("Unsupported flag found [" + args[i] + "]", args);
-                System.exit(1);
-            }
-        }
-
-        // If checkBits flag exists remove it from args list for processing
-        if (checkBits) {
-            // Arrays.asList(..) returns a custom ArrayList where #remove() is unsupported.
-            List<String> argsList = new ArrayList<>();
-            argsList.addAll(Arrays.asList(args));
-            argsList.remove(flagPositions[0]);
-            args = argsList.toArray(new String[argsList.size()]);
-        }
+        String[] args = cmd.getArgs();
+        boolean checkBits = cmd.hasOption(config.getFLAG_CHECK_BITS());
 
         report.println("Checking...");
 
@@ -268,33 +250,6 @@ public class ArchiveTool {
         if (!errors.isEmpty()) {
             displayError(errors);
         }
-    }
-
-    private void displayError(List<String> errors) {
-        report.println("\nErrors: ");
-        for (String error : errors) {
-            report.println("  " + error);
-        }
-    }
-
-    /**
-     * Get the index of all flags
-     *
-     * @param args command entered into command line
-     * @return index of each flag
-     */
-    private int[] findFlags(String[] args) {
-        List<Integer> indecies = new ArrayList<>();
-
-        for (int i = 0; i < args.length; i++) {
-            if (args[i].startsWith("-")) {
-                indecies.add(i);
-            }
-        }
-
-        return ArrayUtils.toPrimitive(
-                indecies.toArray(new Integer[indecies.size()])
-        );
     }
 
 }
