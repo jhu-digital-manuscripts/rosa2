@@ -2,7 +2,6 @@ package rosa.archive.tool;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.core.store.Store;
 import rosa.archive.tool.config.ToolConfig;
 
 import static org.mockito.Mockito.mock;
@@ -19,11 +18,11 @@ public class ArchiveToolTest {
     public void setup() {
         ToolConfig config = mock(ToolConfig.class);
 
-        when(config.getARCHIVE_PATH()).thenReturn("");
-        when(config.getCMD_LIST()).thenReturn("list");
-        when(config.getCMD_CHECK()).thenReturn("check");
-        when(config.getFLAG_CHECK_BITS()).thenReturn("-checkBits");
-        when(config.getFLAG_SHOW_ERRORS()).thenReturn("-showErrors");
+        when(config.getArchivePath()).thenReturn("");
+        when(config.getCmdList()).thenReturn("list");
+        when(config.getCmdCheck()).thenReturn("check");
+        when(config.getFlagCheckBits()).thenReturn("-checkBits");
+        when(config.getFlagShowErrors()).thenReturn("-showErrors");
     }
 
     @Test

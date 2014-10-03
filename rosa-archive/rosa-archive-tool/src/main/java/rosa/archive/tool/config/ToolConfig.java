@@ -9,46 +9,53 @@ import com.google.inject.name.Named;
 public class ToolConfig {
 
     @Inject @Named("archive.path")
-    private String ARCHIVE_PATH;
+    private String archivePath;
 
     @Inject @Named("CMD_LIST")
-    private String CMD_LIST;
+    private String cmdList;
 
     @Inject @Named("CMD_CHECK")
-    private String CMD_CHECK;
+    private String cmdCheck;
+
+    @Inject @Named("CMD_UPDATE")
+    private String cmdUpdate;
 
     @Inject @Named("FLAG_CHECK_BITS")
-    private String FLAG_CHECK_BITS;
+    private String flagCheckBits;
 
     @Inject @Named("FLAG_SHOW_ERRORS")
-    private String FLAG_SHOW_ERRORS;
+    private String flagShowErrors;
 
 // -----------------------------------------------------------------------------------
 // ------ Getters --------------------------------------------------------------------
 // -----------------------------------------------------------------------------------
 
 
-    public String getCMD_LIST() {
-        return CMD_LIST;
+    public String getCmdList() {
+        return cmdList;
     }
 
-    public String getCMD_CHECK() {
-        return CMD_CHECK;
+    public String getCmdCheck() {
+        return cmdCheck;
     }
 
-    public String getFLAG_CHECK_BITS() {
-        return FLAG_CHECK_BITS;
+    public String getFlagCheckBits() {
+        return flagCheckBits;
     }
 
-    public String getARCHIVE_PATH() {
-        return ARCHIVE_PATH;
+    public String getArchivePath() {
+        return archivePath;
     }
 
-    public void setARCHIVE_PATH(String ARCHIVE_PATH) {
-        this.ARCHIVE_PATH = ARCHIVE_PATH;
+    public void setArchivePath(String archivePath) {
+        this.archivePath = archivePath;
     }
 
-    public String getFLAG_SHOW_ERRORS() {
-        return FLAG_SHOW_ERRORS;
+    public String getFlagShowErrors() {
+        return flagShowErrors;
+    }
+
+    public String getCmdUpdate() {
+        return cmdUpdate;
     }
 }

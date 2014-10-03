@@ -65,23 +65,24 @@ public class ArchiveTool {
                 .hasArgs(2)
                 .withValueSeparator()
                 .create("D"));
-        options.addOption(new Option(config.getFLAG_SHOW_ERRORS(), false, "show all errors"));
+        options.addOption(new Option(config.getFlagShowErrors(), false, "show all errors"));
         options.addOption(new Option(
-                config.getFLAG_CHECK_BITS(), false, "check bit integrity of data in the archive"));
+                config.getFlagCheckBits(), false, "check bit integrity of data in the archive"));
 
+        // Apache CLI to parse input args
         CommandLineParser parser = new BasicParser();
         CommandLine cmd = parser.parse(options, args);
 
         // Set archive path if the argument exists in the CLI command issued
         ArchiveTool tool;
-        if (cmd.hasOption("D")) {
-            config.setARCHIVE_PATH(
+        if (cmd.hasOption("D") && cmd.getOptionProperties("D").getProperty("archive.path") != null) {
+            config.setArchivePath(
                     cmd.getOptionProperties("D").getProperty("archive.path")
             );
         }
 
         // Create the tool and run the command
-        ByteStreamGroup base = new FSByteStreamGroup(config.getARCHIVE_PATH());
+        ByteStreamGroup base = new FSByteStreamGroup(config.getArchivePath());
         Store store = sFactory.create(base);
 
         tool = new ArchiveTool(store, config);
@@ -96,10 +97,12 @@ public class ArchiveTool {
     public void run(CommandLine cmd) {
         String command = cmd.getArgs()[0];
 
-        if (command.equals(config.getCMD_LIST())) {
+        if (command.equals(config.getCmdList())) {
             list(cmd);
-        } else if (command.equals(config.getCMD_CHECK())) {
+        } else if (command.equals(config.getCmdCheck())) {
             check(cmd);
+        } else if (command.equals(config.getCmdUpdate())) {
+            update(cmd);
         }
     }
 
@@ -127,7 +130,7 @@ public class ArchiveTool {
      */
     private void list(CommandLine cmd) {
         String[] args = cmd.getArgs();
-        boolean showErrors = cmd.hasOption(config.getFLAG_SHOW_ERRORS());
+        boolean showErrors = cmd.hasOption(config.getFlagShowErrors());
 
         // list
         List<String> errors = new ArrayList<>();
@@ -190,7 +193,7 @@ public class ArchiveTool {
         List<String> errors = new ArrayList<>();
 
         String[] args = cmd.getArgs();
-        boolean checkBits = cmd.hasOption(config.getFLAG_CHECK_BITS());
+        boolean checkBits = cmd.hasOption(config.getFlagCheckBits());
 
         report.println("Checking...");
 
@@ -250,6 +253,15 @@ public class ArchiveTool {
         if (!errors.isEmpty()) {
             displayError(errors);
         }
+    }
+
+    /**
+     *
+     *
+     * @param cmd
+     */
+    private void update(CommandLine cmd) {
+        System.out.println("Tool will update stuff...");
     }
 
 }
