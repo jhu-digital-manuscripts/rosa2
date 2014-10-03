@@ -9,6 +9,7 @@ import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.*;
+import rosa.archive.model.BookMetadata;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -9,6 +9,7 @@ import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.*;
+import rosa.archive.model.BookMetadata;
 import rosa.archive.model.redtag.StructurePage;
 import rosa.archive.model.redtag.StructurePageSide;
 

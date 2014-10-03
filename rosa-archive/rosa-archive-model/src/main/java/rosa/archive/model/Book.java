@@ -26,7 +26,7 @@ public class Book implements HasId, Serializable {
      * Information about the cropping of the original images.
      */
     private CropInfo cropInfo;
-    private BookDescription bookDescription;
+
     private SHA1Checksum SHA1Checksum;
     /**
      * Array of all content associated with this book (ex: all file names in a directory).
@@ -40,11 +40,13 @@ public class Book implements HasId, Serializable {
 
     private Map<String, Permission> permissions;
     private Map<String, BookMetadata> metadataMap;
+    private Map<String, BookDescription> descriptionMap;
     private Transcription transcription;
 
     public Book() {
         this.permissions = new HashMap<>();
         this.metadataMap = new HashMap<>();
+        this.descriptionMap = new HashMap<>();
     }
 
     @Override
@@ -93,12 +95,12 @@ public class Book implements HasId, Serializable {
         this.metadataMap = metadataMap;
     }
 
-    public BookDescription getBookDescription() {
-        return bookDescription;
+    public BookDescription getBookDescription(String language) {
+        return descriptionMap.get(language);
     }
 
-    public void setBookDescription(BookDescription bookDescription) {
-        this.bookDescription = bookDescription;
+    public void setBookDescription(BookDescription bookDescription, String language) {
+        descriptionMap.put(language, bookDescription);
     }
 
     public SHA1Checksum getSHA1Checksum() {
@@ -184,20 +186,20 @@ public class Book implements HasId, Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Book)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
 
         Book book = (Book) o;
 
+        if (SHA1Checksum != null ? !SHA1Checksum.equals(book.SHA1Checksum) : book.SHA1Checksum != null) return false;
         if (automaticNarrativeTagging != null ? !automaticNarrativeTagging.equals(book.automaticNarrativeTagging) : book.automaticNarrativeTagging != null)
-            return false;
-        if (bookDescription != null ? !bookDescription.equals(book.bookDescription) : book.bookDescription != null)
             return false;
         if (bookStructure != null ? !bookStructure.equals(book.bookStructure) : book.bookStructure != null)
             return false;
-        if (SHA1Checksum != null ? !SHA1Checksum.equals(book.SHA1Checksum) : book.SHA1Checksum != null) return false;
         if (!Arrays.equals(content, book.content)) return false;
         if (cropInfo != null ? !cropInfo.equals(book.cropInfo) : book.cropInfo != null) return false;
         if (croppedImages != null ? !croppedImages.equals(book.croppedImages) : book.croppedImages != null)
+            return false;
+        if (descriptionMap != null ? !descriptionMap.equals(book.descriptionMap) : book.descriptionMap != null)
             return false;
         if (id != null ? !id.equals(book.id) : book.id != null) return false;
         if (illustrationTagging != null ? !illustrationTagging.equals(book.illustrationTagging) : book.illustrationTagging != null)
@@ -219,7 +221,6 @@ public class Book implements HasId, Serializable {
         result = 31 * result + (images != null ? images.hashCode() : 0);
         result = 31 * result + (croppedImages != null ? croppedImages.hashCode() : 0);
         result = 31 * result + (cropInfo != null ? cropInfo.hashCode() : 0);
-        result = 31 * result + (bookDescription != null ? bookDescription.hashCode() : 0);
         result = 31 * result + (SHA1Checksum != null ? SHA1Checksum.hashCode() : 0);
         result = 31 * result + (content != null ? Arrays.hashCode(content) : 0);
         result = 31 * result + (bookStructure != null ? bookStructure.hashCode() : 0);
@@ -228,6 +229,7 @@ public class Book implements HasId, Serializable {
         result = 31 * result + (automaticNarrativeTagging != null ? automaticNarrativeTagging.hashCode() : 0);
         result = 31 * result + (permissions != null ? permissions.hashCode() : 0);
         result = 31 * result + (metadataMap != null ? metadataMap.hashCode() : 0);
+        result = 31 * result + (descriptionMap != null ? descriptionMap.hashCode() : 0);
         result = 31 * result + (transcription != null ? transcription.hashCode() : 0);
         return result;
     }
@@ -239,8 +241,7 @@ public class Book implements HasId, Serializable {
                 ", images=" + images +
                 ", croppedImages=" + croppedImages +
                 ", cropInfo=" + cropInfo +
-                ", bookDescription=" + bookDescription +
-                ", checksumInfo=" + SHA1Checksum +
+                ", SHA1Checksum=" + SHA1Checksum +
                 ", content=" + Arrays.toString(content) +
                 ", bookStructure=" + bookStructure +
                 ", illustrationTagging=" + illustrationTagging +
@@ -248,6 +249,7 @@ public class Book implements HasId, Serializable {
                 ", automaticNarrativeTagging=" + automaticNarrativeTagging +
                 ", permissions=" + permissions +
                 ", metadataMap=" + metadataMap +
+                ", descriptionMap=" + descriptionMap +
                 ", transcription=" + transcription +
                 '}';
     }
