@@ -118,6 +118,89 @@ public class AppConfig {
     @Inject @Named("TIF")
     private String TIF;
 
+    // -----------------------------------------------------------------------------------------
+    // ---------- Metadata XML -----------------------------------------------------------------
+    // -----------------------------------------------------------------------------------------
+
+    @Inject @Named("metadata.xml.date")
+    private String metadataDateTag;
+
+    @Inject @Named("metadata.xml.currentLocation")
+    private String metadataCurrentLocationTag;
+
+    @Inject @Named("metadata.xml.repository")
+    private String metadataRepositoryTag;
+
+    @Inject @Named("metadata.xml.shelfmark")
+    private String metadataShelfmarkTag;
+
+    @Inject @Named("metadata.xml.origin")
+    private String metadataOriginTag;
+
+    @Inject @Named("metadata.xml.width")
+    private String metadataWidthTag;
+
+    @Inject @Named("metadata.xml.height")
+    private String metadataHeightTag;
+
+    @Inject @Named("metadata.xml.numberOfIllustrations")
+    private String metadataNumIllustrationsTag;
+
+    @Inject @Named("metadata.xml.commonName")
+    private String metadataCommonNameTag;
+
+    @Inject @Named("metadata.xml.material")
+    private String metadataMaterialTag;
+
+    @Inject @Named("metadata.xml.type")
+    private String metadataTypeTag;
+
+    @Inject @Named("metadata.xml.measure")
+    private String metadataMeasureTag;
+
+    @Inject @Named("metadata.xml.numberOfPages")
+    private String metadataNumPagesTag;
+
+    @Inject @Named("metadata.xml.yearStart")
+    private String metadataYearStartTag;
+
+    @Inject @Named("metadata.xml.yearEnd")
+    private String metadataYearEndTag;
+
+    @Inject @Named("metadata.xml.texts")
+    private String metadataTextsTag;
+
+    @Inject @Named("metadata.xml.texts.linesPerColumn")
+    private String metadataTextsLinesPerColTag;
+
+    @Inject @Named("metadata.xml.texts.columnsPerPage")
+    private String metadataTextsColsPerPageTag;
+
+    @Inject @Named("metadata.xml.texts.leavesPerGathering")
+    private String metadataTextsLeavesPerGatheringTag;
+
+    @Inject @Named("metadata.xml.texts.numberOfPages")
+    private String metadataTextsNumPagesTag;
+
+    @Inject @Named("metadata.xml.texts.id")
+    private String metadataTextsIdTag;
+
+    @Inject @Named("metadata.xml.texts.title")
+    private String metadataTextsTitleTag;
+
+    @Inject @Named("metadata.xml.texts.locus")
+    private String metadataTextsLocusTag;
+
+    @Inject @Named("metadata.xml.texts.firstPage")
+    private String metadataTextsFirstPageTag;
+
+    @Inject @Named("metadata.xml.texts.lastPage")
+    private String metadataTextsLastPageTag;
+
+    // -----------------------------------------------------------------------------------------
+    // ---------- getters ----------------------------------------------------------------------
+    // -----------------------------------------------------------------------------------------
+
     public String[] languages() {
         return LANGUAGES.split(",");
     }
@@ -256,5 +339,105 @@ public class AppConfig {
 
     public String getTIF() {
         return TIF;
+    }
+
+    public String getMetadataDateTag() {
+        return metadataDateTag;
+    }
+
+    public String getMetadataCurrentLocationTag() {
+        return metadataCurrentLocationTag;
+    }
+
+    public String getMetadataRepositoryTag() {
+        return metadataRepositoryTag;
+    }
+
+    public String getMetadataShelfmarkTag() {
+        return metadataShelfmarkTag;
+    }
+
+    public String getMetadataOriginTag() {
+        return metadataOriginTag;
+    }
+
+    public String getMetadataWidthTag() {
+        return metadataWidthTag;
+    }
+
+    public String getMetadataHeightTag() {
+        return metadataHeightTag;
+    }
+
+    public String getMetadataNumIllustrationsTag() {
+        return metadataNumIllustrationsTag;
+    }
+
+    public String getMetadataCommonNameTag() {
+        return metadataCommonNameTag;
+    }
+
+    public String getMetadataMaterialTag() {
+        return metadataMaterialTag;
+    }
+
+    public String getMetadataTypeTag() {
+        return metadataTypeTag;
+    }
+
+    public String getMetadataMeasureTag() {
+        return metadataMeasureTag;
+    }
+
+    public String getMetadataNumPagesTag() {
+        return metadataNumPagesTag;
+    }
+
+    public String getMetadataYearStartTag() {
+        return metadataYearStartTag;
+    }
+
+    public String getMetadataYearEndTag() {
+        return metadataYearEndTag;
+    }
+
+    public String getMetadataTextsTag() {
+        return metadataTextsTag;
+    }
+
+    public String getMetadataTextsLinesPerColTag() {
+        return metadataTextsLinesPerColTag;
+    }
+
+    public String getMetadataTextsColsPerPageTag() {
+        return metadataTextsColsPerPageTag;
+    }
+
+    public String getMetadataTextsLeavesPerGatheringTag() {
+        return metadataTextsLeavesPerGatheringTag;
+    }
+
+    public String getMetadataTextsNumPagesTag() {
+        return metadataTextsNumPagesTag;
+    }
+
+    public String getMetadataTextsIdTag() {
+        return metadataTextsIdTag;
+    }
+
+    public String getMetadataTextsTitleTag() {
+        return metadataTextsTitleTag;
+    }
+
+    public String getMetadataTextsLocusTag() {
+        return metadataTextsLocusTag;
+    }
+
+    public String getMetadataTextsFirstPageTag() {
+        return metadataTextsFirstPageTag;
+    }
+
+    public String getMetadataTextsLastPageTag() {
+        return metadataTextsLastPageTag;
     }
 }

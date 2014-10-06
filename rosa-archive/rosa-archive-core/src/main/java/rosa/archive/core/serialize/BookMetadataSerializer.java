@@ -139,41 +139,41 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
      */
     private BookMetadata buildMetadata(Document doc) {
         BookMetadata metadata = new BookMetadata();
-// TODO configure XML elements!!
+
         Element top = doc.getDocumentElement();
 
-        metadata.setDate(getString(top, "date"));
-        metadata.setCurrentLocation(getString(top, "settlement"));
-        metadata.setRepository(getString(top, "repository"));
+        metadata.setDate(getString(top, config.getMetadataDateTag()));
+        metadata.setCurrentLocation(getString(top, config.getMetadataCurrentLocationTag()));
+        metadata.setRepository(getString(top, config.getMetadataRepositoryTag()));
 
         metadata.setShelfmark(getString(top, "shelfmark"));
         if (StringUtils.isBlank(metadata.getShelfmark())) {
-            metadata.setShelfmark(getString(top, "idno"));
+            metadata.setShelfmark(getString(top, config.getMetadataShelfmarkTag()));
         }
 
-        metadata.setOrigin(getString(top, "pubPlace"));
-        metadata.setWidth(getInteger(top, "width"));
-        metadata.setHeight(getInteger(top, "height"));
-        metadata.setNumberOfIllustrations(getInteger(top, "illustrations"));
-        metadata.setCommonName(getString(top, "commonName"));
-        metadata.setMaterial(getString(top, "material"));
-        metadata.setType(getString(top, "format"));
+        metadata.setOrigin(getString(top, config.getMetadataOriginTag()));
+        metadata.setWidth(getInteger(top, config.getMetadataWidthTag()));
+        metadata.setHeight(getInteger(top, config.getMetadataHeightTag()));
+        metadata.setNumberOfIllustrations(getInteger(top, config.getMetadataNumIllustrationsTag()));
+        metadata.setCommonName(getString(top, config.getMetadataCommonNameTag()));
+        metadata.setMaterial(getString(top, config.getMetadataMaterialTag()));
+        metadata.setType(getString(top, config.getMetadataTypeTag()));
         metadata.setDimensions((metadata.getWidth() == -1 || metadata.getHeight() == -1)
                 ? "" : metadata.getWidth() + "x" + metadata.getHeight() + "mm");
 
-        NodeList measureElement = top.getElementsByTagName("measure");
+        NodeList measureElement = top.getElementsByTagName(config.getMetadataMeasureTag());
         if (measureElement.getLength() > 0) {
             Element numPages = (Element) measureElement.item(0);
-            metadata.setNumberOfPages(getIntegerQuietly(numPages.getAttribute("quantity")));
+            metadata.setNumberOfPages(getIntegerQuietly(numPages.getAttribute(config.getMetadataNumPagesTag())));
         }
 
-        NodeList dates = top.getElementsByTagName("date");
+        NodeList dates = top.getElementsByTagName(config.getMetadataDateTag());
         if (dates.getLength() > 0) {
             Element date = (Element) dates.item(0);
 
             try {
-                metadata.setYearStart(Integer.parseInt(date.getAttribute("notBefore")));
-                metadata.setYearEnd(Integer.parseInt(date.getAttribute("notAfter")));
+                metadata.setYearStart(Integer.parseInt(date.getAttribute(config.getMetadataYearStartTag())));
+                metadata.setYearEnd(Integer.parseInt(date.getAttribute(config.getMetadataYearEndTag())));
             } catch (NumberFormatException e) {
                 metadata.setYearStart(-1);
                 metadata.setYearEnd(-1);
@@ -181,26 +181,26 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         }
 
         List<BookText> texts = new ArrayList<>();
-        NodeList nodes = doc.getElementsByTagName("msItem");
+        NodeList nodes = doc.getElementsByTagName(config.getMetadataTextsTag());
 
         for (int i = 0; i < nodes.getLength(); i++) {
             Element el = (Element) nodes.item(i);
             BookText text = new BookText();
 
-            text.setLinesPerColumn(getInteger(el, "linesPerColumn"));
-            text.setColumnsPerPage(getInteger(el, "columnsPerFolio"));
-            text.setLeavesPerGathering(getInteger(el, "leavesPerGathering"));
-            text.setNumberOfIllustrations(getInteger(el, "illustrations"));
-            text.setNumberOfPages(getInteger(el, "folios"));
-            text.setId(getString(el, "textid"));
-            text.setTitle(getString(el, "title"));
+            text.setLinesPerColumn(getInteger(el, config.getMetadataTextsLinesPerColTag()));
+            text.setColumnsPerPage(getInteger(el, config.getMetadataTextsColsPerPageTag()));
+            text.setLeavesPerGathering(getInteger(el, config.getMetadataTextsLeavesPerGatheringTag()));
+            text.setNumberOfIllustrations(getInteger(el, config.getMetadataNumIllustrationsTag()));
+            text.setNumberOfPages(getInteger(el, config.getMetadataTextsNumPagesTag()));
+            text.setId(getString(el, config.getMetadataTextsIdTag()));
+            text.setTitle(getString(el, config.getMetadataTextsTitleTag()));
 
-            NodeList locii = el.getElementsByTagName("locus");
+            NodeList locii = el.getElementsByTagName(config.getMetadataTextsLocusTag());
             if (locii.getLength() > 0) {
                 Element range = (Element) locii.item(0);
 
-                text.setFirstPage(range.getAttribute("from"));
-                text.setLastPage(range.getAttribute("to"));
+                text.setFirstPage(range.getAttribute(config.getMetadataTextsFirstPageTag()));
+                text.setLastPage(range.getAttribute(config.getMetadataTextsLastPageTag()));
             }
             texts.add(text);
         }

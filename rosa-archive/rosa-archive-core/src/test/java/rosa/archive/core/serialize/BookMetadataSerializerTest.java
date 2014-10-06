@@ -1,12 +1,15 @@
 package rosa.archive.core.serialize;
 
+import org.apache.commons.io.IOUtils;
 import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.BookMetadata;
+import sun.nio.ch.IOUtil;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
