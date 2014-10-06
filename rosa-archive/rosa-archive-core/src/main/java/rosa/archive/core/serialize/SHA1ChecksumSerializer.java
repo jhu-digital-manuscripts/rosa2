@@ -45,7 +45,12 @@ public class SHA1ChecksumSerializer implements Serializer<SHA1Checksum> {
     }
 
     @Override
-    public void write(SHA1Checksum object, OutputStream out) {
-        throw new UnsupportedOperationException("Not implemented yet!");
+    public void write(SHA1Checksum object, OutputStream out) throws IOException {
+        Map<String, String> checksums = object.checksums();
+
+        for (String id : checksums.keySet()) {
+            String lineToWrite = checksums.get(id) + "  " + id + "\n";
+            IOUtils.write(lineToWrite, out, config.getCHARSET());
+        }
     }
 }
