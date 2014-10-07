@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+import com.sun.org.apache.xml.internal.serializer.OutputPropertiesFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -13,6 +14,15 @@ import rosa.archive.model.BookText;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -52,8 +62,216 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
     }
 
     @Override
-    public void write(BookMetadata object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented");
+    public void write(BookMetadata metadata, OutputStream out) throws IOException {
+        Document doc = newDocument();
+
+        Element root = doc.createElement("TEI");
+        root.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
+        root.setAttribute("version", "5.0");
+        doc.appendChild(root);
+
+        Element teiheader = doc.createElement("teiheader");
+        root.appendChild(teiheader);
+
+        Element sourceDesc = doc.createElement("sourceDesc");
+        teiheader.appendChild(sourceDesc);
+
+        // ------ bibl ------
+        Element bibl = doc.createElement("bibl");
+        sourceDesc.appendChild(bibl);
+
+        // TODO pull Title out of the ID?
+        Element title = doc.createElement(config.getMetadataTextsTitleTag());
+        title.appendChild(doc.createTextNode(metadata.getId()));
+        bibl.appendChild(title);
+
+        // origin: <pubPlace>
+        Element pubPlace = doc.createElement(config.getMetadataOriginTag());
+        pubPlace.appendChild(doc.createTextNode(metadata.getOrigin()));
+        bibl.appendChild(pubPlace);
+
+        // <date>
+        Element dateEl = doc.createElement(config.getMetadataDateTag());
+        dateEl.setAttribute(config.getMetadataYearEndTag(), String.valueOf(metadata.getYearEnd()));
+        dateEl.setAttribute(config.getMetadataYearStartTag(), String.valueOf(metadata.getYearStart()));
+        dateEl.appendChild(doc.createTextNode(metadata.getDate()));
+        bibl.appendChild(dateEl);
+
+        // Notes: format, commonName, material, illustrations
+        bibl.appendChild(note(config.getMetadataTypeTag(), metadata.getType(), doc));
+        bibl.appendChild(note(config.getMetadataCommonNameTag(), metadata.getCommonName(), doc));
+        bibl.appendChild(note(config.getMetadataMaterialTag(), metadata.getMaterial(), doc));
+        bibl.appendChild(note(
+                config.getMetadataNumIllustrationsTag(),
+                String.valueOf(metadata.getNumberOfIllustrations()),
+                doc
+        ));
+
+        // <extent>
+        Element extentEl = doc.createElement("extent");
+        bibl.appendChild(extentEl);
+
+        //    <measure>
+        Element measureEl = doc.createElement(config.getMetadataMeasureTag());
+        extentEl.appendChild(measureEl);
+        measureEl.setAttribute(config.getMetadataNumPagesTag(), String.valueOf(metadata.getNumberOfPages()));
+        measureEl.setAttribute("unit", "folios");
+        measureEl.appendChild(doc.createTextNode(metadata.getNumberOfPages() + " folios"));
+
+        //    <dimensions>
+        Element dimensionsEl = doc.createElement("dimensions");
+        extentEl.appendChild(dimensionsEl);
+
+        //        <height>TODO record dimension units in model!
+        Element height = doc.createElement(config.getMetadataHeightTag());
+        dimensionsEl.appendChild(height);
+        height.setAttribute("unit", "mm");
+        height.appendChild(doc.createTextNode(String.valueOf(metadata.getHeight())));
+
+        //        <width>
+        Element width = doc.createElement(config.getMetadataWidthTag());
+        dimensionsEl.appendChild(width);
+        width.setAttribute("unit", "mm");
+        width.appendChild(doc.createTextNode(String.valueOf(metadata.getWidth())));
+
+        // ------ msDesc ------
+        Element msDesc = doc.createElement("msDesc");
+        sourceDesc.appendChild(msDesc);
+
+        //    <msIdentifier>
+        Element msIdentifier = doc.createElement("msIdentifier");
+        msDesc.appendChild(msIdentifier);
+
+        //        <settlement>
+        Element origin = doc.createElement(config.getMetadataOriginTag());
+        msIdentifier.appendChild(origin);
+        origin.appendChild(doc.createTextNode(metadata.getOrigin()));
+
+        //        <repository>
+        Element repository = doc.createElement(config.getMetadataRepositoryTag());
+        msIdentifier.appendChild(repository);
+        repository.appendChild(doc.createTextNode(metadata.getRepository()));
+
+        //        <idno>
+        Element shelfmark = doc.createElement(config.getMetadataShelfmarkTag());
+        msIdentifier.appendChild(shelfmark);
+        shelfmark.appendChild(doc.createTextNode(metadata.getShelfmark()));
+
+        //    <msContents>
+        Element msContents = doc.createElement("msContents");
+        msDesc.appendChild(msContents);
+
+        for (int i = 0; i < metadata.getTexts().length; i++) {
+            BookText text = metadata.getTexts()[i];
+
+        //        <msItems>
+            Element msItem = doc.createElement("msItem");
+            msContents.appendChild(msItem);
+            msItem.setAttribute("n", String.valueOf(i));
+
+            Element locus = doc.createElement(config.getMetadataTextsLocusTag());
+            msItem.appendChild(locus);
+            locus.setAttribute(config.getMetadataTextsFirstPageTag(), text.getFirstPage());
+            locus.setAttribute(config.getMetadataTextsLastPageTag() , text.getLastPage() );
+            locus.appendChild(doc.createTextNode(text.getFirstPage() + "-" + text.getLastPage()));
+
+            // TODO title again...
+
+            msItem.appendChild(note(
+                    config.getMetadataTextsIdTag(),
+                    text.getId(),
+                    doc
+            ));
+            msItem.appendChild(note(
+                    config.getMetadataTextsNumPagesTag(),
+                    String.valueOf(text.getNumberOfPages()),
+                    doc
+            ));
+            msItem.appendChild(note(
+                    config.getMetadataNumIllustrationsTag(),
+                    String.valueOf(text.getNumberOfIllustrations()),
+                    doc
+            ));
+            msItem.appendChild(note(
+                    config.getMetadataTextsLinesPerColTag(),
+                    String.valueOf(text.getLinesPerColumn()),
+                    doc
+            ));
+            msItem.appendChild(note(
+                    config.getMetadataTextsLeavesPerGatheringTag(),
+                    String.valueOf(text.getLeavesPerGathering()),
+                    doc
+            ));
+            msItem.appendChild(note(
+                    config.getMetadataTextsColsPerPageTag(),
+                    String.valueOf(text.getColumnsPerPage()),
+                    doc
+            ));
+        }
+
+        write(doc, out);
+
+    }
+
+    /**
+     * <note type="{@param type}">{@param text}</note>
+     * &lt;note type="{@param type}"&gt;{@param text}&lt;/note&gt;
+     *
+     * @param type type attribute
+     * @param text note text
+     * @param doc containing document
+     * @return the note element
+     */
+    private Element note(String type, String text, Document doc) {
+        Element note = doc.createElement("note");
+
+        note.setAttribute("type", type);
+        note.appendChild(doc.createTextNode(text));
+
+        return note;
+    }
+
+    /**
+     * @return a new DOM document
+     */
+    private Document newDocument() {
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = null;
+        try {
+            builder = dbf.newDocumentBuilder();
+        } catch (ParserConfigurationException e) {
+            return null;
+        }
+
+        return builder.newDocument();
+    }
+
+    /**
+     * @param doc document
+     * @param out output stream
+     */
+    private void write(Document doc, OutputStream out) {
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = null;
+        try {
+            transformer = transformerFactory.newTransformer();
+
+            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+            // Options to make it human readable
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            transformer.setOutputProperty(OutputPropertiesFactory.S_KEY_INDENT_AMOUNT, "4");
+        } catch (TransformerConfigurationException e) {
+            return;
+        }
+
+        Source xmlSource = new DOMSource(doc);
+        Result result = new StreamResult(out);
+
+        try {
+            transformer.transform(xmlSource, result);
+        } catch (TransformerException e) {
+            return;
+        }
     }
 
     /**
