@@ -5,6 +5,7 @@ import org.junit.Test;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -63,10 +64,50 @@ public class ImageListSerializerTest extends BaseSerializerTest{
         }
     }
 
-    @Test (expected = UnsupportedOperationException.class)
+    @Test
     public void writeTest() throws IOException {
-        OutputStream out = mock(OutputStream.class);
-        serializer.write(new ImageList(), out);
+        String[] names = {
+                "LudwigXV7.001r.tif",
+                "LudwigXV7.001v.tif",
+                "LudwigXV7.binding.frontcover.tif",
+                "LudwigXV7.frontmatter.pastedown.tif",
+                "LudwigXV7.frontmatter.flyleaf.04v.tif",
+                "LudwigXV7.frontmatter.flyleaf.04r.tif",
+                "LudwigXV7.endmatter.flyleaf.01r.tif",
+                "LudwigXV7.endmatter.flyleaf.02v.tif",
+                "LudwigXV7.endmatter.pastedown.tif",
+                "LudwigXV7.binding.backcover.tif"
+        };
+
+        ImageList list = new ImageList();
+
+        List<BookImage> images = list.getImages();
+        for (int i = 0; i < names.length; i++) {
+            BookImage image = new BookImage();
+
+            image.setId(names[i]);
+            image.setWidth(100 + i);
+            image.setHeight(200 + i);
+
+            if (i % 3 == 0) {
+                image.setMissing(true);
+            } else {
+                image.setMissing(false);
+            }
+
+            images.add(image);
+        }
+
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        serializer.write(list, out);
+
+        String output = out.toString("UTF-8");
+        assertNotNull(output);
+
+        String[] lines = output.split("\\n");
+        assertNotNull(lines);
+        assertEquals(10, lines.length);
+        assertTrue(lines[9].equals("*LudwigXV7.binding.backcover.tif,109,209"));
     }
 
 }

@@ -3,6 +3,7 @@ package rosa.archive.core.serialize;
 import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
 import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
@@ -11,6 +12,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -74,7 +77,15 @@ public class ImageListSerializer implements Serializer<ImageList> {
     }
 
     @Override
-    public void write(ImageList object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented");
+    public void write(ImageList imageList, OutputStream out) throws IOException {
+        List<BookImage> images = imageList.getImages();
+
+        Collections.sort(images, BookImageComparator.instance());
+
+        for (BookImage image : imageList) {
+            String line = image.isMissing() ? "*" : "";
+            line += image.getId() + "," + image.getWidth() + "," + image.getHeight() + "\n";
+            IOUtils.write(line, out, config.getCHARSET());
+        }
     }
 }
