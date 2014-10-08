@@ -57,7 +57,16 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
     }
 
     @Override
-    public void write(CropInfo object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented!");
+    public void write(CropInfo info, OutputStream out) throws IOException {
+
+        for (CropData crop : info) {
+            String line = crop.getId() + " "
+                    + String.format("%03f", crop.getLeft()) + " "
+                    + String.format("%03f", crop.getRight()) + " "
+                    + String.format("%03f", crop.getTop()) + " "
+                    + String.format("%03f", crop.getBottom()) + "\n";
+            IOUtils.write(line, out, config.getCHARSET());
+        }
+
     }
 }

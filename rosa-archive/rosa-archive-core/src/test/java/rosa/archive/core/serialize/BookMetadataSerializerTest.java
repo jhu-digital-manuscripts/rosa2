@@ -61,19 +61,16 @@ public class BookMetadataSerializerTest extends BaseSerializerTest {
 
     @Test
     public void writeTest() throws IOException {
-
         BookMetadata metadata = createMetadata();
 
         File tempFile = tempFolder.newFile();
-        OutputStream out = Files.newOutputStream(tempFile.toPath());
-
-        serializer.write(metadata, out);
+        try (OutputStream out = Files.newOutputStream(tempFile.toPath())) {
+            serializer.write(metadata, out);
+        }
 
         // inspection of written file
         List<String> lines = Files.readAllLines(tempFile.toPath());
-//        for (String line : lines) {
-//            System.out.println(line);
-//        }
+
         assertEquals("<TEI xmlns=\"http://www.tei-c.org/ns/1.0\" version=\"5.0\">", lines.get(1));
         assertEquals("    <teiheader>", lines.get(2));
         assertEquals("    </teiheader>", lines.get(lines.size() - 2));

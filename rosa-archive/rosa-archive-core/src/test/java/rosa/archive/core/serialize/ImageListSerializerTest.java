@@ -98,16 +98,17 @@ public class ImageListSerializerTest extends BaseSerializerTest{
             images.add(image);
         }
 
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.write(list, out);
+        try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+            serializer.write(list, out);
 
-        String output = out.toString("UTF-8");
-        assertNotNull(output);
+            String output = out.toString("UTF-8");
+            assertNotNull(output);
 
-        String[] lines = output.split("\\n");
-        assertNotNull(lines);
-        assertEquals(10, lines.length);
-        assertTrue(lines[9].equals("*LudwigXV7.binding.backcover.tif,109,209"));
+            String[] lines = output.split("\\n");
+            assertNotNull(lines);
+            assertEquals(10, lines.length);
+            assertTrue(lines[9].equals("*LudwigXV7.binding.backcover.tif,109,209"));
+        }
     }
 
 }

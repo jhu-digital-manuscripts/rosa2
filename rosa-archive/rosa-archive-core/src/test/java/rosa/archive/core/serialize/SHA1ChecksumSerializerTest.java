@@ -73,10 +73,10 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest {
 
         // Create test file to write to
         File tempChecksumFile = tempFolder.newFile(id);
-        tempChecksumFile.deleteOnExit();
 
-        OutputStream out = new FileOutputStream(tempChecksumFile);
-        serializer.write(checksum, out);
+        try (OutputStream out = new FileOutputStream(tempChecksumFile)) {
+            serializer.write(checksum, out);
+        }
 
         // Check written file against real file (in test resources)
         URL url = getClass().getClassLoader().getResource("data/Walters143/Walters143.SHA1SUM");

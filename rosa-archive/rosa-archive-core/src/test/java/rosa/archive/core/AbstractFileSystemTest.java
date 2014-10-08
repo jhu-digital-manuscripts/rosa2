@@ -58,6 +58,7 @@ public abstract class AbstractFileSystemTest {
         serializerMap = mockSerializers();
     }
 
+    @SuppressWarnings("unchecked")
     private Map<Class, Serializer> mockSerializers() {
         Set<Class> classes = new HashSet<>();
 
