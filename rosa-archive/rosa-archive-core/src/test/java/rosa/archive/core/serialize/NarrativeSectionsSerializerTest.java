@@ -7,12 +7,11 @@ import rosa.archive.model.NarrativeSections;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.mock;
 
 /**
  * @see rosa.archive.core.serialize.NarrativeSectionsSerializer
@@ -50,10 +49,31 @@ public class NarrativeSectionsSerializerTest extends BaseSerializerTest {
         }
     }
 
-    @Test (expected = UnsupportedOperationException.class)
+    @Test
     public void writeTest() throws IOException {
-        OutputStream out = mock(OutputStream.class);
-        serializer.write(new NarrativeSections(), out);
+        NarrativeSections sections = createNarrativeSections();
+        serializer.write(sections, System.out);
+    }
+
+    private NarrativeSections createNarrativeSections() {
+        NarrativeSections sections = new NarrativeSections();
+
+        List<NarrativeScene> scenes = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            NarrativeScene scene = new NarrativeScene();
+
+            scene.setId("ID" + i);
+            scene.setCriticalEditionStart(i);
+            scene.setCriticalEditionEnd(i + 2);
+            scene.setRel_line_start(i);
+            scene.setRel_line_end(i + 2);
+            scene.setDescription("This is a description.");
+
+            scenes.add(scene);
+        }
+        sections.setScenes(scenes);
+
+        return sections;
     }
 
 }

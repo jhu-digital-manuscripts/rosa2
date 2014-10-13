@@ -2,8 +2,8 @@ package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.util.CSV;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.CharacterName;
@@ -90,29 +90,15 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
             StringBuilder sb = new StringBuilder(id);
 
             sb.append(',');
-            String site = names.getNameInLanguage(id, Column.SITE_NAME.getName());
-            if (StringUtils.isNoneBlank(site)) {
-                if (site.contains(",")) {
-                    sb.append('"');
-                    sb.append(site);
-                    sb.append('"');
-                } else {
-                    sb.append(site);
-                }
-            }
+            sb.append(CSV.escape(
+                    names.getNameInLanguage(id, Column.SITE_NAME.getName())
+            ));
 
             for (String lang : langs) {
                 sb.append(',');
-                String name = names.getNameInLanguage(id, lang);
-                if (StringUtils.isNotBlank(name)) {
-                    if (name.contains(",")) {
-                        sb.append('"');
-                        sb.append(name);
-                        sb.append('"');
-                    } else {
-                        sb.append(name);
-                    }
-                }
+                sb.append(CSV.escape(
+                        names.getNameInLanguage(id, lang)
+                ));
             }
             sb.append('\n');
 

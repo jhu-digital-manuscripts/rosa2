@@ -11,6 +11,7 @@ import rosa.archive.model.NarrativeSections;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.List;
 
@@ -52,8 +53,31 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
     }
 
     @Override
-    public void write(NarrativeSections object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented");
+    public void write(NarrativeSections sections, OutputStream out) throws IOException {
+        final String header = "Section,Lines,Lecoy,Description\n"; // TODO make configurable!
+        IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
+
+        for (NarrativeScene scene : sections.asScenes()) {
+            StringBuilder sb = new StringBuilder(CSV.escape(scene.getId()));
+
+            sb.append(',');
+            if (scene.getRel_line_start() != -1 && scene.getRel_line_end() != -1) {
+                sb.append(CSV.escape(scene.getRel_line_start() + "-" + scene.getRel_line_end()));
+            }
+
+            sb.append(',');
+            if (scene.getCriticalEditionStart() != -1 && scene.getCriticalEditionEnd() != -1) {
+                sb.append(CSV.escape(scene.getCriticalEditionStart() + "-" + scene.getCriticalEditionEnd()));
+            }
+
+            sb.append(',');
+            if (scene.getDescription() != null) {
+                sb.append(scene.getDescription());
+            }
+
+            sb.append('\n');
+            IOUtils.write(sb, out, Charset.forName(config.getCHARSET()));
+        }
     }
 
     /**

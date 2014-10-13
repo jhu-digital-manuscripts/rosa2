@@ -87,6 +87,10 @@ public class CSV {
      *          escaped String
      */
     public static String escape(String val) {
+        if (val == null) {
+            return "";
+        }
+
         val = val.replaceAll("\\\"", "\"\"");
 
         if (val.contains(",") || val.contains("\"") || val.contains("\n")) {

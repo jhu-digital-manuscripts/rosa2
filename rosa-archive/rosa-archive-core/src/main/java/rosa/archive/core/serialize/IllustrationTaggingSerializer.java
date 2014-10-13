@@ -10,6 +10,7 @@ import rosa.archive.model.IllustrationTagging;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.List;
 
@@ -63,7 +64,44 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
     }
 
     @Override
-    public void write(IllustrationTagging object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented");
+    public void write(IllustrationTagging tagging, OutputStream out) throws IOException {
+        // TODO make header configurable
+        final String header = "id,Folio,Illustration title,Textual elements,Initials,Characters,Costume,Objects,Landscape,Architecture,Other\n";
+        IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
+
+        for (Illustration ill : tagging) {
+            String line =
+                    ill.getId() + ','
+                    + ill.getPage() + ','
+                    + CSV.escape(arrayToString(ill.getTitles())) + ','
+                    + CSV.escape(ill.getTextualElement()) + ','
+                    + CSV.escape(ill.getInitials()) + ','
+                    + CSV.escape(arrayToString(ill.getCharacters())) + ','
+                    + CSV.escape(ill.getCostume()) + ','
+                    + CSV.escape(ill.getObject()) + ','
+                    + CSV.escape(ill.getLandscape()) + ','
+                    + CSV.escape(ill.getArchitecture()) + ','
+                    + CSV.escape(ill.getOther()) + '\n';
+
+            IOUtils.write(line, out, Charset.forName(config.getCHARSET()));
+        }
+    }
+
+    private String arrayToString(String[] arr) {
+        if (arr == null) {
+            return "";
+        }
+
+        StringBuilder sb = new StringBuilder();
+        boolean notFirst = false;
+        for (String str : arr) {
+            if (notFirst) {
+                sb.append(',');
+            }
+            sb.append(str);
+            notFirst = true;
+        }
+
+        return sb.toString();
     }
 }

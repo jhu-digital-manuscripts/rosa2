@@ -3,6 +3,7 @@ package rosa.archive.core.serialize;
 import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
 import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.util.CSV;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.IllustrationTitles;
 
@@ -65,16 +66,7 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
         IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
 
         for (String id : titles.getAllIds()) {
-            String line = id + ',';
-
-            if (titles.getTitleById(id).contains(",")) {
-                line += '"' + titles.getTitleById(id) + '"';
-            } else {
-                line += titles.getTitleById(id);
-            }
-
-            line += '\n';
-
+            String line = id + ',' + CSV.escape(titles.getTitleById(id)) + '\n';
             IOUtils.write(line, out, Charset.forName(config.getCHARSET()));
         }
 

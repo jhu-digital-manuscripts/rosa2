@@ -8,12 +8,10 @@ import rosa.archive.model.IllustrationTagging;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
 
 /**
  * @see rosa.archive.core.serialize.IllustrationTaggingSerializer
@@ -62,10 +60,29 @@ public class IllustrationTaggingSerializerTest extends BaseSerializerTest {
         }
     }
 
-    @Test (expected = UnsupportedOperationException.class)
+    @Test
     public void writeTest() throws IOException {
-        OutputStream out = mock(OutputStream.class);
-        serializer.write(new IllustrationTagging(), out);
+        IllustrationTagging tagging = createTagging();
+        serializer.write(tagging, System.out);
+    }
+
+    private IllustrationTagging createTagging() {
+        IllustrationTagging tagging = new IllustrationTagging();
+
+        tagging.setId("TaggingID");
+        for (int i = 0; i < 10; i++) {
+            Illustration ill = new Illustration();
+            ill.setId("IllID" + i);
+            ill.setPage("Page " + i);
+            ill.setTitles(new String[] {"Title1", "Title2"});
+            ill.setTextualElement("TextualElement");
+            ill.setCharacters(new String[] {"char1", "char2"});
+            ill.setOther("OtherOtherOther");
+
+            tagging.addIllustrationData(ill);
+        }
+
+        return tagging;
     }
 
 }
