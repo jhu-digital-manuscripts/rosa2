@@ -37,6 +37,7 @@ public abstract class BaseSerializerTest {
         MockitoAnnotations.initMocks(this);
 
         when(config.getCHARSET()).thenReturn("UTF-8");
+        when(config.languages()).thenReturn(new String[] {"en", "fr"});
 
         when(config.getMetadataCommonNameTag()).thenReturn("commonName");
         when(config.getMetadataCurrentLocationTag()).thenReturn("settlement");

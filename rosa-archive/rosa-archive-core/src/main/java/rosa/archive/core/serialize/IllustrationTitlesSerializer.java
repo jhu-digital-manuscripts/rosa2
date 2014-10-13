@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+import org.apache.commons.io.IOUtils;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.IllustrationTitles;
@@ -9,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,7 +59,24 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
     }
 
     @Override
-    public void write(IllustrationTitles object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Write not implemented yet!");
+    public void write(IllustrationTitles titles, OutputStream out) throws IOException {
+        // TODO make header configurable
+        final String header = "Id,Title\n";
+        IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
+
+        for (String id : titles.getAllIds()) {
+            String line = id + ',';
+
+            if (titles.getTitleById(id).contains(",")) {
+                line += '"' + titles.getTitleById(id) + '"';
+            } else {
+                line += titles.getTitleById(id);
+            }
+
+            line += '\n';
+
+            IOUtils.write(line, out, Charset.forName(config.getCHARSET()));
+        }
+
     }
 }

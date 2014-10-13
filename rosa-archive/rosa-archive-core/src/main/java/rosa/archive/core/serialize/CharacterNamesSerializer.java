@@ -1,6 +1,8 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.CharacterNames;
@@ -10,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,7 +25,20 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
     private static final int MAX_COLS = 200;
 
     private enum Column {
-        ID, SITE_NAME, FRENCH_NAME, ENGLISH_NAME
+        ID("ID"),
+        SITE_NAME("site name"),
+        FRENCH_NAME("French variant"),
+        ENGLISH_NAME("English name");
+
+        private String name;
+
+        Column(String name) {
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
     }
 
     private AppConfig config;
@@ -64,7 +80,44 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
     }
 
     @Override
-    public void write(CharacterNames object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented yet!");
+    public void write(CharacterNames names, OutputStream out) throws IOException {
+        // TODO make headers configurable
+        final String header = "ID,Site name,French variant,English name\n";
+        IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
+
+        String[] langs = config.languages();
+        for (String id : names.getAllCharacterIds()) {
+            StringBuilder sb = new StringBuilder(id);
+
+            sb.append(',');
+            String site = names.getNameInLanguage(id, Column.SITE_NAME.getName());
+            if (StringUtils.isNoneBlank(site)) {
+                if (site.contains(",")) {
+                    sb.append('"');
+                    sb.append(site);
+                    sb.append('"');
+                } else {
+                    sb.append(site);
+                }
+            }
+
+            for (String lang : langs) {
+                sb.append(',');
+                String name = names.getNameInLanguage(id, lang);
+                if (StringUtils.isNotBlank(name)) {
+                    if (name.contains(",")) {
+                        sb.append('"');
+                        sb.append(name);
+                        sb.append('"');
+                    } else {
+                        sb.append(name);
+                    }
+                }
+            }
+            sb.append('\n');
+
+            IOUtils.write(sb, out, Charset.forName(config.getCHARSET()));
+        }
+
     }
 }

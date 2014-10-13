@@ -8,6 +8,7 @@ import rosa.archive.model.Permission;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 import java.util.List;
 
 /**
@@ -39,7 +40,7 @@ public class PermissionSerializer implements Serializer<Permission> {
     }
 
     @Override
-    public void write(Permission object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented");
+    public void write(Permission permission, OutputStream out) throws IOException {
+        IOUtils.write(permission.getPermission(), out, Charset.forName(config.getCHARSET()));
     }
 }

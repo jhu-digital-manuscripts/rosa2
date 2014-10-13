@@ -2,16 +2,18 @@ package rosa.archive.core.serialize;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.model.CharacterNames;
+import rosa.archive.model.*;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.file.Files;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
 
 /**
  * @see rosa.archive.core.serialize.CharacterNamesSerializer
@@ -49,10 +51,50 @@ public class CharacterNamesSerializerTest extends BaseSerializerTest {
 
     }
 
-    @Test (expected = UnsupportedOperationException.class)
+    @Test
     public void writeTest() throws IOException {
-        OutputStream out = mock(OutputStream.class);
-        serializer.write(new CharacterNames(), out);
+//        File tmp = tempFolder.newFile();
+        CharacterNames names = createCharacterNames();
+        serializer.write(names, System.out);
+//        try (OutputStream out = Files.newOutputStream(tmp.toPath())) {
+//            serializer.write(names, out);
+//        }
+
+
+    }
+
+    private CharacterNames createCharacterNames() {
+        CharacterNames names = new CharacterNames();
+
+        CharacterName n1 = new CharacterName();
+        n1.setId("id1");
+        n1.addName("name", "site name");
+        n1.addName("name1", "en");
+        n1.addName("name11", "fr");
+        names.addCharacterName(n1);
+
+        CharacterName n2 = new CharacterName();
+        n2.setId("id2");
+        n2.addName("name", "site name");
+        n2.addName("name2", "en");
+        n2.addName("name22", "fr");
+        names.addCharacterName(n2);
+
+        CharacterName n3 = new CharacterName();
+        n3.setId("id3");
+        n3.addName("name", "site name");
+        n3.addName("name3, n3, bleep", "en");
+        n3.addName("name33", "fr");
+        names.addCharacterName(n3);
+
+        CharacterName n4 = new CharacterName();
+        n4.setId("id4");
+        n4.addName("name4", "en");
+        n4.addName("n4", "en");
+        n4.addName("name44", "fr");
+        names.addCharacterName(n4);
+
+        return names;
     }
 
 }

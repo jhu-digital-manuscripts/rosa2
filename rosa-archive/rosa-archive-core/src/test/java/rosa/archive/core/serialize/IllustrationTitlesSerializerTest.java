@@ -7,6 +7,8 @@ import rosa.archive.model.IllustrationTitles;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -43,12 +45,18 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest {
 
     }
 
-    @Test (expected = UnsupportedOperationException.class)
+    @Test
     public void writesDataToFile() throws IOException {
-        OutputStream out = mock(OutputStream.class);
-        IllustrationTitles titles = mock(IllustrationTitles.class);
+        IllustrationTitles titles = new IllustrationTitles();
+        titles.setId("IllustrationTitles");
 
-        serializer.write(titles, out);
+        Map<String, String> titlesMap = new HashMap<>();
+        for (int i = 0; i < 10; i++) {
+            titlesMap.put("ID" + i, "Illustration Title [" + i + "]");
+        }
+        titles.setData(titlesMap);
+
+        serializer.write(titles, System.out);
     }
 
 }
