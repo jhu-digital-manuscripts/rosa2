@@ -1,4 +1,4 @@
-package rosa.archive.core.check;
+package rosa.archive.core.store;
 
 import com.google.inject.Inject;
 import org.junit.Before;
@@ -9,6 +9,7 @@ import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.GuiceJUnitRunner;
 import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
+import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.core.store.Store;

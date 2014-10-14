@@ -45,6 +45,7 @@
         <!ATTLIST mark text CDATA #IMPLIED>
 
         <!ENTITY agrave "à">
+        <!ENTITY egrave "è">
         <!ENTITY aacute "á">
         <!ENTITY atiled "ã">
         <!ENTITY eacute "é">

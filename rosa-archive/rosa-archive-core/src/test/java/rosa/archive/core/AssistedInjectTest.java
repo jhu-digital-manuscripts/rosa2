@@ -46,7 +46,7 @@ public class AssistedInjectTest extends AbstractFileSystemTest {
         assertNotNull(collection);
 
         assertNotNull(collection.books());
-        assertEquals(3, collection.books().length);
+        assertEquals(4, collection.books().length);
         assertNotNull(collection.getCharacterNames());
     }
 

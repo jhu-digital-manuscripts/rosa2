@@ -51,6 +51,7 @@ public class Book implements HasId, Serializable {
         this.permissions = new HashMap<>();
         this.metadataMap = new HashMap<>();
         this.descriptionMap = new HashMap<>();
+        this.annotatedPages = new ArrayList<>();
     }
 
     @Override

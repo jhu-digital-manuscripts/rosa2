@@ -1,11 +1,13 @@
 package rosa.archive.model.aor;
 
+import rosa.archive.model.HasId;
+
 import java.util.List;
 
 /**
  *
  */
-public class AnnotatedPage {
+public class AnnotatedPage implements HasId {
 
     private String id;
     private String reader;
@@ -13,10 +15,12 @@ public class AnnotatedPage {
     private String signature;
     private List<Annotation> annotations;
 
+    @Override
     public String getId() {
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }

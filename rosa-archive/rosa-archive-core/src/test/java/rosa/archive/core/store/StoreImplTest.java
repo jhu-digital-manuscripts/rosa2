@@ -25,6 +25,7 @@ import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
+import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -65,6 +66,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
     private Map<Class, Serializer> serializerMap;
 
     @Before
+    @SuppressWarnings("unchecked")
     public void setup() throws URISyntaxException, IOException {
         super.setup();
         MockitoAnnotations.initMocks(this);
@@ -145,10 +147,11 @@ public class StoreImplTest extends AbstractFileSystemTest {
 
         List<String> list = Arrays.asList(books);
         assertNotNull(list);
-        assertEquals(3, list.size());
+        assertEquals(4, list.size());
         assertTrue(list.contains("Ferrell"));
         assertTrue(list.contains("LudwigXV7"));
         assertTrue(list.contains("Walters143"));
+        assertTrue(list.contains("Domenichi"));
     }
 
     @Test
@@ -187,9 +190,10 @@ public class StoreImplTest extends AbstractFileSystemTest {
         classes.add(NarrativeTagging.class);
         classes.add(Permission.class);
         classes.add(Transcription.class);
+        classes.add(AnnotatedPage.class);
 
         String[][] books = {
-                {"Ferrell", "LudwigXV7", "Walters143"},
+                {"Domenichi", "Ferrell", "LudwigXV7", "Walters143"},
                 {"LudwigXV7", "Morgan948", "Senshu2", "Walters143"}
         };
 

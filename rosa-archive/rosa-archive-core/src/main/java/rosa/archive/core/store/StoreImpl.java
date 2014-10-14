@@ -10,6 +10,7 @@ import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.*;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -107,8 +108,9 @@ public class StoreImpl implements Store {
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
 
-        // Look for language dependent items
+        List<AnnotatedPage> pages = book.getAnnotatedPages();
         for (String name : content) {
+            // Look for language dependent items
             String lang = findLanguageCodeInName(name);
             if (StringUtils.isNotBlank(lang)) {
                 if (name.contains(config.getPERMISSION())) {
@@ -118,6 +120,11 @@ public class StoreImpl implements Store {
                     BookMetadata metadata = loadItem(name, bookStreams, BookMetadata.class, errors);
                     book.addBookMetadata(metadata, lang);
                 }
+            }
+
+            // Look for annotation files TODO temporary
+            if (name.contains("Domenichi")) {
+                pages.add(loadItem(name, bookStreams, AnnotatedPage.class, errors));
             }
         }
 

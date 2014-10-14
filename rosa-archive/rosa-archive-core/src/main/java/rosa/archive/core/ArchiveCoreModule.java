@@ -7,6 +7,7 @@ import com.google.inject.multibindings.MapBinder;
 import com.google.inject.name.Names;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
@@ -35,6 +36,7 @@ import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
+import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -79,6 +81,7 @@ public class ArchiveCoreModule extends AbstractModule {
         mapBinder.addBinding(NarrativeTagging.class).to(NarrativeTaggingSerializer.class);
         mapBinder.addBinding(Transcription.class).to(TranscriptionXmlSerializer.class);
         mapBinder.addBinding(Permission.class).to(PermissionSerializer.class);
+        mapBinder.addBinding(AnnotatedPage.class).to(AORAnnotatedPageSerializer.class);
 
         // Data checkers
         bind(BookChecker.class);
