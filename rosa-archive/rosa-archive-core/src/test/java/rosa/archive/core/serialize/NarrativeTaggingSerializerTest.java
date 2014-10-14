@@ -79,10 +79,36 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
         }
     }
 
-    @Test (expected = UnsupportedOperationException.class)
+    @Test
     public void writeTest() throws IOException {
-        OutputStream out = mock(OutputStream.class);
-        serializer.write(new NarrativeTagging(), out);
+        NarrativeTagging tagging = createNartag();
+        serializer.write(tagging, System.out);
+    }
+
+    private NarrativeTagging createNartag() {
+        NarrativeTagging tagging = new NarrativeTagging();
+
+        tagging.setId("NarrativeTaggingID");
+
+        List<BookScene> scenes = tagging.getScenes();
+        for (int i = 0; i < 10; i++) {
+            BookScene scene = new BookScene();
+
+            scene.setId("SceneId" + i);
+            scene.setStartPage(i + "r");
+            scene.setStartPageCol("a");
+            scene.setStartLineOffset(2);
+            scene.setEndPage((i + 1) + "r");
+            scene.setEndPageCol("b");
+            scene.setEndLineOffset(12);
+            scene.setCorrect(true);
+            scene.setStartCriticalEdition(2);
+            scene.setStartTranscription("This is the start of the transcription.");
+
+            scenes.add(scene);
+        }
+
+        return tagging;
     }
 
 }

@@ -10,6 +10,7 @@ import rosa.archive.model.NarrativeTagging;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -42,8 +43,53 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
     }
 
     @Override
-    public void write(NarrativeTagging object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented");
+    public void write(NarrativeTagging tagging, OutputStream out) throws IOException {
+        // Write out ONLY to CSV format
+        // no header!
+
+        for (BookScene scene : tagging) {
+            StringBuilder sb = new StringBuilder(scene.getId());
+            sb.append(',');
+
+            if (scene.getStartPage() != null && scene.getStartPageCol() != null) {
+                sb.append(scene.getStartPage());
+                sb.append('.');
+                sb.append(scene.getStartPageCol());
+            }
+
+            sb.append(',');
+            if (scene.getStartLineOffset() != -1) {
+                sb.append(scene.getStartLineOffset());
+            }
+
+            sb.append(',');
+            if (scene.getEndPage() != null && scene.getEndPageCol() != null) {
+                sb.append(scene.getEndPage());
+                sb.append('.');
+                sb.append(scene.getEndPageCol());
+            }
+
+            sb.append(',');
+            if (scene.getEndLineOffset() != -1) {
+                sb.append(scene.getEndLineOffset());
+            }
+
+            sb.append(',');
+            if (scene.getStartTranscription() != null) {
+                sb.append(CSV.escape(scene.getStartTranscription()));
+            }
+
+            sb.append(',');
+            sb.append(scene.isCorrect() ? 1 : 0);
+
+            sb.append(',');
+            if (scene.getStartCriticalEdition() != -1) {
+                sb.append(scene.getStartCriticalEdition());
+            }
+            sb.append('\n');
+            IOUtils.write(sb.toString(), out, Charset.forName(config.getCHARSET()));
+        }
+
     }
 
     /**
