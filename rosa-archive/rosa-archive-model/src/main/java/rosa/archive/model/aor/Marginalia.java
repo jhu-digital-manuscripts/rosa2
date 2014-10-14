@@ -8,110 +8,13 @@ import java.util.List;
  */
 public class Marginalia extends Annotation {
 
-    public class Language {
-        String lang;
-        List<Position> positions;
-
-        public Language() {
-            positions = new ArrayList<>();
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-
-            Language language = (Language) o;
-
-            if (lang != null ? !lang.equals(language.lang) : language.lang != null) return false;
-            if (positions != null ? !positions.equals(language.positions) : language.positions != null) return false;
-
-            return true;
-        }
-
-        @Override
-        public int hashCode() {
-            int result = lang != null ? lang.hashCode() : 0;
-            result = 31 * result + (positions != null ? positions.hashCode() : 0);
-            return result;
-        }
-
-        @Override
-        public String toString() {
-            return "Language{" +
-                    "lang='" + lang + '\'' +
-                    ", positions=" + positions +
-                    '}';
-        }
-    }
-
-    public class Position {
-        String text;
-        String place;
-        int orientation;
-        List<String> people;
-        List<String> books;
-        List<String> locations;
-        List<Underline> emphasis;
-
-        public Position() {
-            people = new ArrayList<>();
-            books = new ArrayList<>();
-            locations = new ArrayList<>();
-            emphasis = new ArrayList<>();
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-
-            Position position = (Position) o;
-
-            if (orientation != position.orientation) return false;
-            if (books != null ? !books.equals(position.books) : position.books != null) return false;
-            if (emphasis != null ? !emphasis.equals(position.emphasis) : position.emphasis != null) return false;
-            if (locations != null ? !locations.equals(position.locations) : position.locations != null) return false;
-            if (people != null ? !people.equals(position.people) : position.people != null) return false;
-            if (place != null ? !place.equals(position.place) : position.place != null) return false;
-            if (text != null ? !text.equals(position.text) : position.text != null) return false;
-
-            return true;
-        }
-
-        @Override
-        public int hashCode() {
-            int result = text != null ? text.hashCode() : 0;
-            result = 31 * result + (place != null ? place.hashCode() : 0);
-            result = 31 * result + orientation;
-            result = 31 * result + (people != null ? people.hashCode() : 0);
-            result = 31 * result + (books != null ? books.hashCode() : 0);
-            result = 31 * result + (locations != null ? locations.hashCode() : 0);
-            result = 31 * result + (emphasis != null ? emphasis.hashCode() : 0);
-            return result;
-        }
-
-        @Override
-        public String toString() {
-            return "Position{" +
-                    "text='" + text + '\'' +
-                    ", place='" + place + '\'' +
-                    ", orientation=" + orientation +
-                    ", people=" + people +
-                    ", books=" + books +
-                    ", locations=" + locations +
-                    ", emphasis=" + emphasis +
-                    '}';
-        }
-    }
-
     private String hand;
     private String date;
     private String otherReader;
     private String topic;
     private String anchorText;
     private String translation;
-    private List<Language> languages;
+    private List<MarginaliaLanguage> languages;
 
     public Marginalia() {
         languages = new ArrayList<>();
@@ -165,11 +68,11 @@ public class Marginalia extends Annotation {
         this.translation = translation;
     }
 
-    public List<Language> getLanguages() {
+    public List<MarginaliaLanguage> getLanguages() {
         return languages;
     }
 
-    public void setLanguages(List<Language> languages) {
+    public void setLanguages(List<MarginaliaLanguage> languages) {
         this.languages = languages;
     }
 

@@ -81,8 +81,8 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
         fileDesc.appendChild(notesStmt);
 
         Map<String, Element> notes = description.getNotes();
-        for (String key : notes.keySet()) { 
-            notesStmt.appendChild(notes.get(key));
+        for (String key : notes.keySet()) {
+            notesStmt.appendChild(doc.importNode(notes.get(key), true));
         }
 
         write(doc, out);
@@ -101,11 +101,7 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
             return null;
         }
 
-        // TODO ask if it is fine to do it this way
-        // These elements stored in the map belong to a different Document object!
-        Document doc = builder.newDocument();
-        doc.setStrictErrorChecking(false);
-        return doc;
+        return builder.newDocument();
     }
 
     /**

@@ -1,0 +1,172 @@
+<!DOCTYPE transcription [
+        <!ELEMENT transcription (page, annotation)>
+        <!ELEMENT page EMPTY>
+        <!ATTLIST page filename CDATA #REQUIRED>
+        <!ATTLIST page pagination CDATA #IMPLIED>
+        <!ATTLIST page signature CDATA #IMPLIED>
+        <!ATTLIST page reader CDATA #REQUIRED>
+
+        <!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>
+        <!ELEMENT marginalia (language*, translation?)>
+        <!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
+        <!ATTLIST marginalia date CDATA #IMPLIED>
+        <!ATTLIST marginalia other_reader CDATA #IMPLIED>
+        <!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED>
+        <!ATTLIST marginalia anchor_text CDATA #IMPLIED>
+        <!ELEMENT language (position*)>
+        <!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED>
+        <!ELEMENT position (marginalia_text*, person*, location*, book*, emphasis*)>
+        <!ATTLIST position place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+        <!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
+        <!ELEMENT marginalia_text (#PCDATA)>
+        <!ELEMENT person EMPTY>
+        <!ATTLIST person person_name CDATA #REQUIRED>
+        <!ELEMENT book EMPTY>
+        <!ATTLIST book title CDATA #REQUIRED>
+        <!ELEMENT location EMPTY>
+        <!ATTLIST location location_name CDATA #REQUIRED>
+        <!ELEMENT emphasis EMPTY>
+        <!ATTLIST emphasis method (chalk|pen) #REQUIRED>
+        <!ATTLIST emphasis emphasis_text CDATA #IMPLIED>
+        <!ELEMENT translation EMPTY>
+        <!ATTLIST translation translation_text CDATA #REQUIRED>
+        <!ELEMENT underline EMPTY>
+        <!ATTLIST underline method (chalk|pen) #REQUIRED>
+        <!ATTLIST underline type (straight|curved) #REQUIRED>
+        <!ATTLIST underline text CDATA #IMPLIED>
+        <!ELEMENT symbol EMPTY>
+        <!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
+        <!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+        <!ATTLIST symbol text CDATA #IMPLIED>
+        <!ELEMENT mark EMPTY>
+        <!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
+        <!ATTLIST mark method (chalk|pen) #REQUIRED>
+        <!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+        <!ATTLIST mark text CDATA #IMPLIED>
+
+        <!ENTITY agrave "à">
+        <!ENTITY aacute "á">
+        <!ENTITY atiled "ã">
+        <!ENTITY eacute "é">
+        <!ENTITY ecirc "ê">
+        <!ENTITY ograve "ò">
+        <!ENTITY euml "ë">
+        ]>
+
+<transcription>
+    <page filename="Domenichi_007left" pagination="324" reader="Harvey" />
+    <annotation>
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>Venus, virorum pestilentissima pastis.</marginalia_text>
+                    <person person_name="Venus"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="left_margin" book_orientation="90">
+                    <marginalia_text> Socrates omnes mortales ludebat propter vanitatem:
+                        Democritus omnes philosophos ridebat propter inscitiam: Diogenes omnes
+                        viros contemnebat propter ignauiam: Momus omnes Deos carpebat propter
+                        aliquam</marginalia_text>
+                    <person person_name="Socrates"/>
+                    <person person_name="Democritus"/>
+                    <person person_name="Diogenes of Sinope"/>
+                    <person person_name="Momus"/>
+                    <emphasis method="pen" emphasis_text="Socrates"/>
+                    <emphasis method="pen" emphasis_text="Democritus"/>
+                    <emphasis method="pen" emphasis_text="Diogenes"/>
+                    <emphasis method="pen" emphasis_text="Momus"/>
+                </position>
+                <position place="tail" book_orientation="90"> 
+                    <marginalia_text>imperfectionem.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="right_margin" book_orientation="270">
+                    <marginalia_text> Solus sibi sapiens Socrates: solus sibi peritus,
+                        Democritus: Solus
+                        <!-- The rest of this annotation is cut off in the scan due to the folded page -->
+                    </marginalia_text>
+                    <person person_name="Socrates"/>
+                    <person person_name="Democritus"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="tail" book_orientation="0">
+                    <marginalia_text> Quisq[ue] magnus, Philautus. </marginalia_text>
+                    <person person_name="Philautus"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position place="tail" book_orientation="0">
+                    <marginalia_text>Merrie gentlemen.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+
+        <!-- Underlines -->
+        <underline method="pen" type="straight" text="giouinetto staffiere"/>
+        <underline method="pen" type="straight" text="era pregna."/>
+        <underline method="pen" type="straight" text="un uecchio"/>
+        <underline method="pen" type="straight" text="cerusico ben uestito"/>
+        <underline method="pen" type="straight" text="grande Astrologo"/>
+        <underline method="pen" type="straight" text="conosceua la mano"/>
+        <underline method="pen" type="straight" text="hauesse auuenire"/>
+        <underline method="pen" type="straight" text="molte cose, che a costei erano incontrate"/>
+        <underline method="pen" type="straight" text="uera del passato"/>
+        <underline method="pen" type="straight" text="del presente"/>
+        <underline method="pen" type="straight" text="dell'auuenire"/>
+        <underline method="pen" type="straight" text="prima alcuni"/>
+        <underline method="pen" type="straight" text="guardar la mano"/>
+        <underline method="pen" type="straight" text="dare colore alla"/>
+        <underline method="pen" type="straight" text="che loro indouinaua"/>
+        <underline method="pen" type="straight" text="astrologar gli altri"/>
+        <underline method="pen" type="straight" text="ella d'essere astrologata"/>
+        <underline method="pen" type="straight" text="molte cose uere a lei accadute"/>
+        <underline method="pen" type="straight" text="una cosa importante"/>
+        <underline method="pen" type="straight" text="siete grauida, soggiunse il Vinitiano"/>
+        <underline method="pen" type="straight" text="oh costei cominci&ograve; saltare, &amp;"/>
+        <underline method="pen" type="straight" text="perche ella non"/>
+        <underline method="pen" type="straight" text="no[n] s&ograve; piu oltre"/>
+        <underline method="pen" type="straight" text="diuenuta in uiso"/>
+        <underline method="pen" type="straight" text="una bracia di fuoco"/>
+        <underline method="pen" type="straight" text="guardaua tutti"/>
+        <underline method="pen" type="straight" text="Barba medico"/>
+        <underline method="pen" type="straight" text="in bagno"/>
+        <underline method="pen" type="straight" text="Gentilhuomo Genouese"/>
+        <underline method="pen" type="straight" text="sfilato"/>
+        <underline method="pen" type="straight" text="si rispose"/>
+        <underline method="pen" type="straight" text="Oh poueretta"/>
+        <underline method="pen" type="straight" text="uoi presa la imbeccata"/>
+        <underline method="pen" type="straight" text="gridarono tutti quei"/>
+        <underline method="pen" type="straight" text="gentilhuomini"/>
+        <underline method="pen" type="straight" text="Auerroe"/>
+        <underline method="pen" type="straight" text="cose possibile impregnare per tal uia?"/>
+        <underline method="pen" type="straight"
+            text="tutta smaritta, &amp; disperata se n'and&ograve; in"/>
+
+
+        <!-- Symbols -->
+        <symbol name="Sun" place="head"/>
+
+        <!-- Marks -->
+        <mark name="plus_sign" method="pen" place="intext" text="Astrologo"/>
+        <mark name="plus_sign" method="pen" place="intext" text="mano"/>
+        <mark name="plus_sign" method="pen" place="intext" text="mano"/>
+        <mark name="dot" method="pen" place="intext"/>
+        <mark name="quotation_mark" method="pen" place="intext" text="oh costei"/>
+        <mark name="quotation_mark" method="pen" place="intext" text="Oh poueretta"/>
+        <mark name="plus_sign" method="pen" place="intext" text="possibile"/>
+        <mark name="plus_sign" method="pen" place="right_margin"/>
+    </annotation>
+</transcription>
