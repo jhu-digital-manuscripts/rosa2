@@ -4,9 +4,9 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.EntityResolver;
-import org.xml.sax.InputSource;
+import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.MarginaliaLanguage;
@@ -32,31 +32,34 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
 
 
     @Override
-    public AnnotatedPage read(InputStream is, List<String> errors) throws IOException {
+    public AnnotatedPage read(InputStream is, final List<String> errors) throws IOException {
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
-            // TODO need to grab the DTD if DOCTYPE is missing
-//            builder.setEntityResolver(new EntityResolver()
-//            {
-//                public InputSource resolveEntity(String publicId, String systemId)
-//                        throws SAXException, IOException
-//                {
-//                    return new InputSource(null);
-//                }
-//            });
+            builder.setErrorHandler(new ErrorHandler() {
+                @Override
+                public void warning(SAXParseException e) throws SAXException {
+
+                }
+
+                @Override
+                public void error(SAXParseException e) throws SAXException {
+                    errors.add("[Error]" + e.getLineNumber() + ":"
+                            + e.getColumnNumber() + ": " + e.getMessage());
+                }
+
+                @Override
+                public void fatalError(SAXParseException e) throws SAXException {
+                    errors.add("[Fatal Error] :" + e.getLineNumber() + ":"
+                            + e.getColumnNumber() + ": " + e.getMessage());
+                }
+            });
 
             Document doc = builder.parse(is);
             return buildPage(doc, errors);
 
-        } catch (ParserConfigurationException e) {
-            String reason = "Failed to build Document.";
-            errors.add(reason);
-            throw new IOException(reason, e);
-        } catch (SAXException e) {
-            String reason = "Failed to parse input stream.";
-            errors.add(reason);
-            throw new IOException(reason, e);
+        } catch (ParserConfigurationException | SAXException e) {
+            throw new IOException(e);
         }
     }
 
@@ -76,7 +79,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
         } else {
             Element pageEl = (Element) pageEls.item(0);
 
-            page.setId(pageEl.getAttribute("filename"));
+            page.setPage(pageEl.getAttribute("filename"));
             page.setPagination(pageEl.getAttribute("pagination"));
             page.setReader(pageEl.getAttribute("reader"));
             page.setSignature(pageEl.getAttribute("signature"));

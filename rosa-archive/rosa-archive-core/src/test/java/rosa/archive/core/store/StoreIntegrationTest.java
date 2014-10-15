@@ -16,6 +16,7 @@ import rosa.archive.core.store.Store;
 import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -26,6 +27,7 @@ import java.util.Map;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -89,6 +91,47 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
         assertNotNull(book);
 
 //        assertEquals(0, errors.size());
+        errors.clear();
+
+        boolean check = store.check(collection, book, true, errors);
+        assertFalse(check);
+
+        System.out.println("Number of errors: " + errors.size() + "\n");
+        for (String error : errors) {
+            System.err.println(error);
+        }
+    }
+
+    @Test
+//    @Ignore
+    public void readBookWithAnnotations() throws Exception {
+        Store store = storeFactory.create(base);
+        List<String> errors = new ArrayList<>();
+
+        BookCollection collection = store.loadBookCollection("data", errors);
+        assertNotNull(collection);
+
+        Book book = store.loadBook("data", "Domenichi", errors);
+
+        assertNotNull(book);
+        assertEquals("Domenichi", book.getId());
+        assertNull(book.getImages());
+        assertNull(book.getCropInfo());
+        assertNull(book.getSHA1Checksum());
+        assertNotNull(book.getContent());
+        assertNull(book.getBookStructure());
+        assertNull(book.getIllustrationTagging());
+        assertNull(book.getManualNarrativeTagging());
+        assertNull(book.getAutomaticNarrativeTagging());
+        assertEquals(0, book.getPermissionsInAllLanguages().length);
+        assertNull(book.getBookMetadata("en"));
+        assertNull(book.getBookDescription("en"));
+        assertNull(book.getTranscription());
+
+        List<AnnotatedPage> annotatedPages = book.getAnnotatedPages();
+        assertNotNull(annotatedPages);
+        assertEquals(2, annotatedPages.size());
+
         errors.clear();
 
         boolean check = store.check(collection, book, true, errors);

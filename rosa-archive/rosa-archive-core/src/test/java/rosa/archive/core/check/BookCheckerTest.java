@@ -10,6 +10,10 @@ import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.*;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Annotation;
+import rosa.archive.model.aor.Symbol;
+import rosa.archive.model.aor.Underline;
 import rosa.archive.model.redtag.StructurePage;
 import rosa.archive.model.redtag.StructurePageSide;
 
@@ -182,6 +186,33 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         }
         content.add(structure.getId());
         book.setBookStructure(structure);
+
+        // Annotated pages
+        List<AnnotatedPage> annotatedPages = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            AnnotatedPage page = new AnnotatedPage();
+            page.setId("LudwigXV7.AnnoPage" + i + ".xml");
+            page.setPage("LudwigXV7.00" + i + "r.tif");
+            page.setReader("Harvey Birdman, attorney at law");
+            page.setPagination("I don't know what this field will do");
+
+            List<Annotation> annos = new ArrayList<>();
+            Underline u1 = new Underline();
+            u1.setMethod("UnderlineMethod");
+            u1.setReferringText("This is some 'underlined' text.");
+            u1.setType("Type");
+            annos.add(u1);
+            Symbol s1 = new Symbol();
+            s1.setPlace("left margin");
+            s1.setName("SymbolName");
+            s1.setReferringText("This is some symbol text.");
+            annos.add(s1);
+
+            page.setAnnotations(annos);
+            annotatedPages.add(page);
+            content.add(page.getId());
+        }
+        book.setAnnotatedPages(annotatedPages);
 
         // Illustration tagging
         IllustrationTagging ilTag = new IllustrationTagging();

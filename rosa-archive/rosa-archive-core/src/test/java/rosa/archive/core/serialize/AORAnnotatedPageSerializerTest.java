@@ -9,7 +9,10 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  *
@@ -32,9 +35,16 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
         AnnotatedPage page = null;
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
             page = serializer.read(in, errors);
+        } catch (IOException e) {
+            System.out.println(errors);
         }
-        System.out.println(page);
+
         assertNotNull(page);
+        assertNull(page.getId());
+        assertTrue(page.getSignature().equals(""));
+        assertNotNull(page.getReader());
+        assertNotNull(page.getPagination());
+        assertEquals(52, page.getAnnotations().size());
     }
 
 }
