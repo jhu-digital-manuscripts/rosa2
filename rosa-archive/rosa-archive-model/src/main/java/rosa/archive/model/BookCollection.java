@@ -21,6 +21,7 @@ public class BookCollection implements HasId, Serializable {
     private CharacterNames characterNames;
     private IllustrationTitles illustrationTitles;
     private NarrativeSections narrativeSections;
+    private SHA1Checksum checksums;
 
     public BookCollection() {
         books = new String[0];
@@ -104,16 +105,25 @@ public class BookCollection implements HasId, Serializable {
         return false;
     }
 
+    public SHA1Checksum getChecksums() {
+        return checksums;
+    }
+
+    public void setChecksums(SHA1Checksum checksums) {
+        this.checksums = checksums;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof BookCollection)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
 
         BookCollection that = (BookCollection) o;
 
         if (!Arrays.equals(books, that.books)) return false;
         if (characterNames != null ? !characterNames.equals(that.characterNames) : that.characterNames != null)
             return false;
+        if (checksums != null ? !checksums.equals(that.checksums) : that.checksums != null) return false;
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (illustrationTitles != null ? !illustrationTitles.equals(that.illustrationTitles) : that.illustrationTitles != null)
             return false;
@@ -132,6 +142,7 @@ public class BookCollection implements HasId, Serializable {
         result = 31 * result + (characterNames != null ? characterNames.hashCode() : 0);
         result = 31 * result + (illustrationTitles != null ? illustrationTitles.hashCode() : 0);
         result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
+        result = 31 * result + (checksums != null ? checksums.hashCode() : 0);
         return result;
     }
 
@@ -144,6 +155,7 @@ public class BookCollection implements HasId, Serializable {
                 ", characterNames=" + characterNames +
                 ", illustrationTitles=" + illustrationTitles +
                 ", narrativeSections=" + narrativeSections +
+                ", checksums=" + checksums +
                 '}';
     }
 }

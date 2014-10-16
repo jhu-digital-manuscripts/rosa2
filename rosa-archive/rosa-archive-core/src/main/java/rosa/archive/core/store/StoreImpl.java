@@ -66,6 +66,9 @@ public class StoreImpl implements Store {
                 loadItem(config.getILLUSTRATION_TITLES(), collectionGroup, IllustrationTitles.class, errors));
         collection.setNarrativeSections(
                 loadItem(config.getNARRATIVE_SECTIONS(), collectionGroup, NarrativeSections.class, errors));
+        collection.setChecksums(
+                loadItem(collectionId + config.getSHA1SUM(), collectionGroup, SHA1Checksum.class, errors)
+        );
 
         // Languages from configuration.
         collection.setLanguages(config.languages());
