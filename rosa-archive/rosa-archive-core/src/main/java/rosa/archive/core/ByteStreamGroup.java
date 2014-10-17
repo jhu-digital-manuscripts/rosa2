@@ -2,6 +2,7 @@ package rosa.archive.core;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.List;
 
 /**
@@ -42,6 +43,14 @@ public interface ByteStreamGroup {
 
     public InputStream getByteStream(String name) throws IOException;
 
+    public OutputStream getOutputStream(String name) throws IOException;
+
     public ByteStreamGroup getByteStreamGroup(String name);
+
+    /**
+     * @param streamName name of byte stream of interest
+     * @return last time the source of a byte stream was modified
+     */
+    public long getLastModified(String streamName);
 
 }

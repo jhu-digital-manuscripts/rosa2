@@ -1,12 +1,15 @@
 package rosa.archive.core.store;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
+import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.config.AppConfig;
@@ -26,9 +29,13 @@ import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -44,6 +51,7 @@ import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyBoolean;
 import static org.mockito.Matchers.anyList;
+import static org.mockito.Matchers.anyObject;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.atMost;
 import static org.mockito.Mockito.mock;
@@ -63,6 +71,9 @@ public class StoreImplTest extends AbstractFileSystemTest {
     @Mock
     private BookChecker bookChecker;
     private Map<Class, Serializer> serializerMap;
+
+    @Rule
+    public TemporaryFolder tmpFolder = new TemporaryFolder();
 
     @Before
     public void setup() throws URISyntaxException, IOException {
@@ -110,6 +121,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
         when(context.getREDUCED_TAGGING()).thenReturn(GOOD_FILE);
         when(context.getTRANSCRIPTION()).thenReturn(".transcription");
         when(context.getXML()).thenReturn(".xml");
+        when(context.getSHA1SUM()).thenReturn(".SHA1SUM");
     }
 
     @Test
@@ -255,6 +267,51 @@ public class StoreImplTest extends AbstractFileSystemTest {
             assertNotNull(collection.getNarrativeSections());
             assertNotNull(collection.getAllSupportedLanguages());
         }
+    }
+
+
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void updateChecksumCreatesNewChecksumFile() throws Exception {
+        Set<Class> classes = new HashSet<>();
+        classes.add(SHA1Checksum.class);
+        classes.add(CharacterNames.class);
+        classes.add(IllustrationTitles.class);
+        classes.add(NarrativeSections.class);
+        mockSerializers(classes);
+
+        File folder = tmpFolder.newFolder();
+        folder = Files.createDirectory(folder.toPath().resolve("r")).toFile();
+
+        try (
+                InputStream in1 = getClass().getClassLoader().getResourceAsStream("data/character_names.csv");
+                InputStream in2 = getClass().getClassLoader().getResourceAsStream("data/illustration_titles.csv");
+                InputStream in3 = getClass().getClassLoader().getResourceAsStream("data/narrative_sections.csv")
+            ) {
+            Files.copy(in1, folder.toPath().resolve("character_names.csv"));
+            Files.copy(in2, folder.toPath().resolve("illustration_titles.csv"));
+            Files.copy(in3, folder.toPath().resolve("narrative_sections.csv"));
+        }
+
+        ByteStreamGroup temp = new FSByteStreamGroup(folder.getParent());
+        Store tmpStore = new StoreImpl(serializerMap, bookChecker, collectionChecker, context, temp);
+
+        List<String> errors = new ArrayList<>();
+        BookCollection collection = tmpStore.loadBookCollection("r", errors);
+
+        assertNotNull(collection);
+        assertEquals(0, errors.size());
+
+        tmpStore.updateChecksum(collection, false, errors);
+        assertEquals(0, errors.size());
+
+        List<String> inCollection = Arrays.asList(folder.list());
+        assertTrue(inCollection.contains("character_names.csv"));
+        assertTrue(inCollection.contains("illustration_titles.csv"));
+        assertTrue(inCollection.contains("narrative_sections.csv"));
+
+        verify(serializerMap.get(SHA1Checksum.class)).write(anyObject(), any(OutputStream.class));
     }
 
     @SuppressWarnings("unchecked")

@@ -17,6 +17,7 @@ import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.tool.config.ToolConfig;
+import rosa.archive.tool.derivative.CollectionDerivative;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -68,6 +69,7 @@ public class ArchiveTool {
         options.addOption(new Option(config.getFlagShowErrors(), false, "show all errors"));
         options.addOption(new Option(
                 config.getFlagCheckBits(), false, "check bit integrity of data in the archive"));
+        options.addOption("f", "force", false, "force the operation to execute fully, without skipping data");
 
         // Apache CLI to parse input args
         CommandLineParser parser = new BasicParser();
@@ -258,10 +260,36 @@ public class ArchiveTool {
     /**
      *
      *
-     * @param cmd
+     * @param cmd CLI command
      */
     private void update(CommandLine cmd) {
-        System.out.println("Tool will update stuff...");
+        boolean force = cmd.hasOption("force") || cmd.hasOption("f");
+        String[] args = cmd.getArgs();
+
+        if (args.length == 1) {
+            // update all checksums in all collections
+            report.println("Updating all checksums.");
+        } else if (args.length == 2) {
+            // update checksums for the collection (plus all books?)
+            String collectionId = args[1];
+            report.println("Updating checksum for collection [" + collectionId + "]");
+
+            CollectionDerivative cDeriv = new CollectionDerivative(collectionId, report, store);
+            try {
+                cDeriv.updateChecksum(force);
+            } catch (IOException e) {
+                displayError("Failed to update checksums for collection. [" + collectionId + "]", args, e);
+            }
+
+        } else if (args.length == 3) {
+            // update checksums only for the book
+            String collectionId = args[1];
+            String bookId = args[2];
+            report.println("Updating checksums for book [" + collectionId + ":" + bookId + "]");
+        } else {
+            displayError("Too many arguments. USAGE: update <collectionId> <bookId>", args);
+        }
+
     }
 
 }

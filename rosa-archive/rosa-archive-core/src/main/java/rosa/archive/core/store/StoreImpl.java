@@ -8,11 +8,14 @@ import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
+import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.model.*;
 import rosa.archive.model.BookMetadata;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.Map;
 
@@ -154,6 +157,69 @@ public class StoreImpl implements Store {
                 checkBits,
                 errors
         );
+    }
+
+    @Override
+    public boolean updateChecksum(BookCollection collection, boolean force, List<String> errors) throws IOException {
+        boolean success = true;
+
+        SHA1Checksum checksums = collection.getChecksums();
+        // If SHA1SUM does not exist, create it!
+        if (checksums == null) {
+            checksums = new SHA1Checksum();
+            checksums.setId(collection.getId() + config.getSHA1SUM());
+        }
+
+        ByteStreamGroup collectionStreams = base.getByteStreamGroup(collection.getId());
+
+        Map<String, String> checksumMap = checksums.checksums();
+        long checksumLastMod = collectionStreams.getLastModified(checksums.getId());
+
+        for (String streamName : collectionStreams.listByteStreamNames()) {
+            // Do not record checksum of SHA1SUM file!
+            if (streamName.equals(checksums.getId())) {
+                continue;
+            }
+
+            long streamLastMod = collectionStreams.getLastModified(streamName);
+            String checksum = checksumMap.get(streamName);
+
+            // Write checksum if it is out of date or doesn't exist or it is explicitly told.
+            if (force || streamLastMod > checksumLastMod || checksum == null) {
+                try {
+                    String checksumValue = ChecksumUtil.calculateChecksum(
+                            collectionStreams.getByteStream(streamName),
+                            HashAlgorithm.SHA1
+                    );
+
+                    checksumMap.put(streamName, checksumValue);
+
+                } catch (NoSuchAlgorithmException e) {
+                    errors.add("Failed to generate checksum for [" + streamName + "]");
+                    success = false;
+                }
+            }
+        }
+
+        // Write out checksums only if nothing has failed yet.
+        return success && writeItem(checksums, collectionStreams, SHA1Checksum.class);
+    }
+
+    @Override
+    public boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors) throws IOException {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    @SuppressWarnings("unchecked")
+    protected <T extends HasId> boolean  writeItem(T item, ByteStreamGroup bsg, Class<T> type) {
+        try (OutputStream out = bsg.getOutputStream(item.getId())) {
+            Serializer serializer = serializerMap.get(type);
+            serializer.write(item, out);
+
+            return true;
+        } catch (IOException e) {
+            return false;
+        }
     }
 
     @SuppressWarnings("unchecked")

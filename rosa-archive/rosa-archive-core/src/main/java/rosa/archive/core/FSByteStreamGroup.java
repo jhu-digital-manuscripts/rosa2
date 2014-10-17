@@ -2,6 +2,7 @@ package rosa.archive.core;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -156,9 +157,29 @@ public class FSByteStreamGroup implements ByteStreamGroup {
     }
 
     @Override
+    public OutputStream getOutputStream(String name) throws IOException {
+        Path path = base.resolve(name);
+        return Files.newOutputStream(path);
+    }
+
+    @Override
     public ByteStreamGroup getByteStreamGroup(String name) {
         Path path = base.resolve(name);
         return new FSByteStreamGroup(path);
+    }
+
+    @Override
+    public long getLastModified(String streamName) {
+        if (streamName == null) {
+            return -1L;
+        }
+
+        Path path = base.resolve(streamName);
+        if (!Files.exists(path) || !Files.isRegularFile(path)) {
+            return -1L;
+        }
+
+        return path.toFile().lastModified();
     }
 
 }

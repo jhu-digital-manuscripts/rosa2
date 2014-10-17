@@ -2,6 +2,7 @@ package rosa.archive.core.store;
 
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.SHA1Checksum;
 
 import java.io.IOException;
 import java.util.List;
@@ -76,6 +77,9 @@ public interface Store {
      */
     boolean check(BookCollection collection, boolean checkBits, List<String> errors);
 
+    boolean updateChecksum(BookCollection collection, boolean force, List<String> errors) throws IOException;
+
+    boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors) throws IOException;
     // TODO the following methods will not be in first iteration!
     // updateBook(...)
     // addBook(...)
