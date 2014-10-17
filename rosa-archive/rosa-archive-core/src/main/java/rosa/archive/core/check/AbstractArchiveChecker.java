@@ -1,18 +1,16 @@
 package rosa.archive.core.check;
 
-import org.apache.commons.codec.binary.Hex;
-import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
+import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.HasId;
 import rosa.archive.model.HashAlgorithm;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
@@ -159,7 +157,7 @@ public abstract class AbstractArchiveChecker {
             }
 
             try (InputStream in = bsg.getByteStream(streamId)){
-                String hash = calculateChecksum(in, HashAlgorithm.SHA1);
+                String hash = ChecksumUtil.calculateChecksum(in, HashAlgorithm.SHA1);
 
                 if (!storedHash.equalsIgnoreCase(hash)) {
                     errors.add("Calculated hash value is different from stored value!\n"
@@ -174,22 +172,6 @@ public abstract class AbstractArchiveChecker {
         }
 
         return errors;
-    }
-
-    /**
-     * Compute the hash of an input stream using the specified algorithm.
-     *
-     * @param in input
-     * @param algorithm hashing algorithm to use
-     * @return hash value as hex string
-     * @throws IOException
-     * @throws java.security.NoSuchAlgorithmException
-     */
-    protected String calculateChecksum(InputStream in, HashAlgorithm algorithm)
-            throws IOException, NoSuchAlgorithmException {
-        MessageDigest md = DigestUtils.getDigest(algorithm.toString());
-        DigestUtils.updateDigest(md, in);
-        return Hex.encodeHexString(md.digest());
     }
 
 }

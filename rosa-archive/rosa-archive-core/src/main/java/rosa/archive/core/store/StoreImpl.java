@@ -172,47 +172,74 @@ public class StoreImpl implements Store {
 
         ByteStreamGroup collectionStreams = base.getByteStreamGroup(collection.getId());
 
-        Map<String, String> checksumMap = checksums.checksums();
-        long checksumLastMod = collectionStreams.getLastModified(checksums.getId());
+        return updateChecksum(checksums, collectionStreams, force, errors);
+    }
 
-        for (String streamName : collectionStreams.listByteStreamNames()) {
-            // Do not record checksum of SHA1SUM file!
+    @Override
+    public boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors) throws IOException {
+
+        SHA1Checksum checksums = book.getSHA1Checksum();
+        if (checksums == null) {
+            checksums = new SHA1Checksum();
+            checksums.setId(book.getId() + config.getSHA1SUM());
+        }
+
+        ByteStreamGroup colStreams = base.getByteStreamGroup(collection.getId());
+        if (colStreams == null || !colStreams.hasByteStream(book.getId())) {
+            return false;
+        }
+        ByteStreamGroup bookStreams = colStreams.getByteStreamGroup(book.getId());
+
+        return updateChecksum(checksums, bookStreams, force, errors);
+    }
+
+    /**
+     *
+     *
+     * @param checksums container holding checksum information
+     * @param bsg byte stream group
+     * @param force overwrite all checksum values?
+     * @param errors list of errors found while calculating checksums
+     * @return if checksums were updated and written successfully
+     * @throws IOException
+     */
+    protected boolean updateChecksum(SHA1Checksum checksums, ByteStreamGroup bsg, boolean force,
+                                     List<String> errors) throws IOException {
+        boolean success = true;
+        long checksumLastMod = bsg.getLastModified(checksums.getId());
+        Map<String, String> checksumMap = checksums.checksums();
+
+        for (String streamName : bsg.listByteStreamNames()) {
+            // Do not record checksum for the checksum file!
             if (streamName.equals(checksums.getId())) {
                 continue;
             }
 
-            long streamLastMod = collectionStreams.getLastModified(streamName);
+            long lastMod = bsg.getLastModified(streamName);
             String checksum = checksumMap.get(streamName);
 
             // Write checksum if it is out of date or doesn't exist or it is explicitly told.
-            if (force || streamLastMod > checksumLastMod || checksum == null) {
-                try {
-                    String checksumValue = ChecksumUtil.calculateChecksum(
-                            collectionStreams.getByteStream(streamName),
-                            HashAlgorithm.SHA1
-                    );
+            if (force || lastMod > checksumLastMod || checksum == null) {
+                try (InputStream in = bsg.getByteStream(streamName)) {
 
+                    String checksumValue = ChecksumUtil.calculateChecksum(in, HashAlgorithm.SHA1);
                     checksumMap.put(streamName, checksumValue);
 
                 } catch (NoSuchAlgorithmException e) {
-                    errors.add("Failed to generate checksum for [" + streamName + "]");
+                    errors.add("Failed to generate checksum. [" + bsg.name() + ":" + streamName + "]");
                     success = false;
                 }
             }
         }
 
         // Write out checksums only if nothing has failed yet.
-        return success && writeItem(checksums, collectionStreams, SHA1Checksum.class);
-    }
-
-    @Override
-    public boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors) throws IOException {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return success && writeItem(checksums, bsg, SHA1Checksum.class);
     }
 
     @SuppressWarnings("unchecked")
     protected <T extends HasId> boolean  writeItem(T item, ByteStreamGroup bsg, Class<T> type) {
         try (OutputStream out = bsg.getOutputStream(item.getId())) {
+
             Serializer serializer = serializerMap.get(type);
             serializer.write(item, out);
 
