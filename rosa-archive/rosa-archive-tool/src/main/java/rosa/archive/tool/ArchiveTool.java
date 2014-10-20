@@ -17,6 +17,7 @@ import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.tool.config.ToolConfig;
+import rosa.archive.tool.derivative.BookDerivative;
 import rosa.archive.tool.derivative.CollectionDerivative;
 
 import java.io.IOException;
@@ -60,9 +61,9 @@ public class ArchiveTool {
 
         // Set the valid options for the tool
         Options options = new Options();
-        options.addOption(OptionBuilder.withArgName("archive.path=value")
+        options.addOption(OptionBuilder.withArgName("property=value")
                 .withDescription("set the path of the archive. A default value for this path" +
-                        " can is set in 'tool-config.properties'")
+                        " is set in 'tool-config.properties'")
                 .hasArgs(2)
                 .withValueSeparator()
                 .create("D"));
@@ -87,7 +88,7 @@ public class ArchiveTool {
         ByteStreamGroup base = new FSByteStreamGroup(config.getArchivePath());
         Store store = sFactory.create(base);
 
-        tool = new ArchiveTool(store, config);
+        tool = new ArchiveTool(store, config, System.out);
         tool.run(cmd);
     }
 
@@ -163,8 +164,12 @@ public class ArchiveTool {
             report.println("Stuff in " + args[1] + ":" + args[2]);
             try {
                 Book book = store.loadBook(args[1], args[2], errors);
-                for (String item : book.getContent()) {
-                    report.println("  " + item);
+                if (book != null) {
+                    for (String item : book.getContent()) {
+                        report.println("  " + item);
+                    }
+                } else {
+                    report.println("Failed to read book. [" + args[1] + ":" + args[2] + "]");
                 }
 
                 if (showErrors && !errors.isEmpty()) {
@@ -208,6 +213,9 @@ public class ArchiveTool {
                     List<String> e = new ArrayList<>();
 
                     BookCollection collection = store.loadBookCollection(collectionName, loadingErrors);
+                    if (collection == null) {
+                        continue;
+                    }
                     report.println(collectionName);
                     store.check(collection, checkBits, e);
 
@@ -218,6 +226,10 @@ public class ArchiveTool {
 
                     for (String bookName : store.listBooks(collectionName)) {
                         Book book = store.loadBook(collectionName, bookName, loadingErrors);
+                        if (book == null) {
+                            report.println("Failed to read book. [" + collectionName + ":" + bookName + "]");
+                            continue;
+                        }
                         report.println("\n-" + bookName);
                         store.check(collection, book, checkBits, e);
 
@@ -234,7 +246,9 @@ public class ArchiveTool {
             // check collection
             try {
                 BookCollection collection = store.loadBookCollection(args[1], loadingErrors);
-                store.check(collection, checkBits, errors);
+                if (collection != null) {
+                    store.check(collection, checkBits, errors);
+                }
             } catch (IOException e) {
                 displayError("Error: Unable to load collection. [" + args[1] + "]", args, e);
             }
@@ -242,8 +256,12 @@ public class ArchiveTool {
             // check book
             try {
                 BookCollection collection = store.loadBookCollection(args[1], loadingErrors);
-                Book book = store.loadBook(args[1], args[2], loadingErrors);
-                store.check(collection, book, checkBits, errors);
+                Book book = collection == null ? null : store.loadBook(args[1], args[2], loadingErrors);
+                if (book != null) {
+                    store.check(collection, book, checkBits, errors);
+                } else {
+                    report.println("Failed to read book. [" + args[1] + ":" + args[2] + "]");
+                }
             } catch (IOException e) {
                 displayError("Error: Unable to load book. [" + args[1] + ":" + args[2] + "]", args, e);
             }
@@ -269,6 +287,21 @@ public class ArchiveTool {
         if (args.length == 1) {
             // update all checksums in all collections
             report.println("Updating all checksums.");
+            // TODO test
+            try {
+                for (String col : store.listBookCollections()) {
+
+                    CollectionDerivative cDeriv = new CollectionDerivative(col, report, store);
+                    cDeriv.updateChecksum(force);
+
+                    for (String book : store.listBooks(col)) {
+                        BookDerivative bDeriv = new BookDerivative(col, book, report, store);
+                        bDeriv.updateChecksum(force);
+                    }
+                }
+            } catch (IOException e) {
+                displayError("Unable to update checksums.", args, e);
+            }
         } else if (args.length == 2) {
             // update checksums for the collection (plus all books?)
             String collectionId = args[1];
@@ -286,6 +319,13 @@ public class ArchiveTool {
             String collectionId = args[1];
             String bookId = args[2];
             report.println("Updating checksums for book [" + collectionId + ":" + bookId + "]");
+
+            BookDerivative bDeriv = new BookDerivative(collectionId, bookId, report, store);
+            try {
+                bDeriv.updateChecksum(force);
+            } catch (IOException e) {
+                displayError("Failed to update checksums. [" + collectionId + ":" + bookId + "]", args, e);
+            }
         } else {
             displayError("Too many arguments. USAGE: update <collectionId> <bookId>", args);
         }

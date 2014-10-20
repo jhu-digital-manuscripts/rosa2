@@ -77,7 +77,11 @@ public interface Store {
      */
     boolean check(BookCollection collection, boolean checkBits, List<String> errors);
 
+    boolean updateChecksum(String collection, boolean force, List<String> errors) throws IOException;
+
     boolean updateChecksum(BookCollection collection, boolean force, List<String> errors) throws IOException;
+
+    boolean updateChecksum(String collection, String book, boolean force, List<String> errors) throws IOException;
 
     boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors) throws IOException;
     // TODO the following methods will not be in first iteration!

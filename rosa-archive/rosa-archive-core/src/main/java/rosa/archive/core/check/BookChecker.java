@@ -146,7 +146,7 @@ public class BookChecker extends AbstractArchiveChecker {
     protected List<String> checkAllBits(ByteStreamGroup bsg, Book book) {
         if (book.getSHA1Checksum() == null) {
             return Arrays.asList(
-                    ("Book [" + book.getId() + "] has no stored checksums. "
+                    ("Book [" + book.getId() + "] has no stored SHA1SUM. "
                             + "Cannot check bit integrity.")
             );
         }
@@ -258,28 +258,28 @@ public class BookChecker extends AbstractArchiveChecker {
 
         for (BookText text : metadata.getTexts()) {
             if (StringUtils.isBlank(text.getFirstPage())) {
-                errors.add("Metadata text first page not set. [" + text + "]");
+                errors.add("Metadata text first page not set. [" + metadata.getId() + ":" + text.getId() + "]");
             }
             if (StringUtils.isBlank(text.getLastPage())) {
-                errors.add("Metadata text last page not set. [" + text + "]");
+                errors.add("Metadata text last page not set. [" + metadata.getId() + ":" + text.getId() + "]");
             }
             if (StringUtils.isBlank(text.getTitle())) {
-                errors.add("Metadata text title not set. [" + text + "]");
+                errors.add("Metadata text title not set. [" + metadata.getId() + ":" + text.getId() + "]");
             }
             if (text.getNumberOfIllustrations() == -1) {
-                errors.add("Metadata number of illustrations not set. [" + text + "]");
+                errors.add("Metadata number of illustrations not set. [" + metadata.getId() + ":" + text.getId() + "]");
             }
             if (text.getNumberOfPages() == -1) {
-                errors.add("Metadata number of pages not set. [" + text + "]");
+                errors.add("Metadata number of pages not set. [" + metadata.getId() + ":" + text.getId() + "]");
             }
             if (text.getColumnsPerPage() == -1) {
-                errors.add("Metadata columns per page not set. [" + text + "]");
+                errors.add("Metadata columns per page not set. [" + metadata.getId() + ":" + text.getId() + "]");
             }
             if (text.getLeavesPerGathering() == -1) {
-                errors.add("Metadata leaves per gathering not set. [" + text + "]");
+                errors.add("Metadata leaves per gathering not set. [" + metadata.getId() + ":" + text.getId() + "]");
             }
             if (text.getLinesPerColumn() == -1) {
-                errors.add("Metadata lines per column not set. [" + text + "]");
+                errors.add("Metadata lines per column not set. [" + metadata.getId() + ":" + text.getId() + "]");
             }
         }
 
@@ -449,7 +449,10 @@ public class BookChecker extends AbstractArchiveChecker {
         List<String> errors = new ArrayList<>();
 
         if (info == null) {
-            errors.add("Checksum information missing.");
+            errors.add("SHA1SUM missing.");
+            if (isInArchive(parent.getId() + config.getBNF_MD5SUM(), parent.getContent())) {
+                errors.add(parent.getId() + config.getBNF_MD5SUM() + " is present.");
+            }
             return errors;
         }
 

@@ -248,7 +248,7 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
         // Insert missing folios. Only works for ms.
         if (pages.size() > 0 && !pages.get(0).getName().matches("\\d+")) {
             // Not a manuscript
-            return null;
+            return new BookStructure();
         }
 
         for (int i = 0; i < pages.size();) {

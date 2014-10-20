@@ -160,6 +160,12 @@ public class StoreImpl implements Store {
     }
 
     @Override
+    public boolean updateChecksum(String collection, boolean force, List<String> errors) throws IOException {
+        BookCollection col = loadBookCollection(collection, errors);
+        return col != null && updateChecksum(col, force, errors);
+    }
+
+    @Override
     public boolean updateChecksum(BookCollection collection, boolean force, List<String> errors) throws IOException {
         boolean success = true;
 
@@ -173,6 +179,13 @@ public class StoreImpl implements Store {
         ByteStreamGroup collectionStreams = base.getByteStreamGroup(collection.getId());
 
         return updateChecksum(checksums, collectionStreams, force, errors);
+    }
+
+    @Override
+    public boolean updateChecksum(String collection, String book, boolean force, List<String> errors) throws IOException {
+        BookCollection col = loadBookCollection(collection, errors);
+        Book b = loadBook(collection, book, errors);
+        return col != null && b != null && updateChecksum(col, b, force, errors);
     }
 
     @Override
