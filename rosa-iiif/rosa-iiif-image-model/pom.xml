@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>rosa-parent</artifactId>
+    <artifactId>rosa-iiif-parent</artifactId>
     <groupId>rosa</groupId>
     <version>2.0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>rosa-iiif-parent</artifactId>
-  <packaging>pom</packaging>
-
-  <modules>
-    <module>rosa-iiif-image-core</module>
-    <module>rosa-iiif-image-endpoint</module>
-    <module>rosa-iiif-image-model</module>
-  </modules>  
+  <artifactId>rosa-iiif-image-model</artifactId>
+  <packaging>jar</packaging>
 </project>
