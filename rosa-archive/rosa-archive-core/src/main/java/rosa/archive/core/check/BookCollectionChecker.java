@@ -25,7 +25,7 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
     }
 
     public boolean checkContent(BookCollection collection, ByteStreamGroup bsg, boolean checkBits,
-                                List<String> errors) {
+                                List<String> errors, List<String> warnings) {
 
         if (collection == null) {
             errors.add("Book collection missing.");
@@ -53,12 +53,11 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
         }
 
         //   character_names and illustration_titles and narrative_sections
-        errors.addAll(check(collection, bsg));
-        //   missing
+        check(collection, bsg, errors, warnings);
 
         // Check bit integrity (there is no stored checksum values for these files)
         if (checkBits) {
-            errors.addAll(checkBits(bsg, false, false));
+            checkBits(bsg, false, false, errors, warnings);
         }
 
         return errors.isEmpty();
@@ -69,20 +68,18 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
      *
      * @param bsg byte stream group
      * @param collection parent collection
-     * @return list of errors found while performing check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(BookCollection collection, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
+    private void check(BookCollection collection, ByteStreamGroup bsg, List<String> errors, List<String> warnings) {
 
         CharacterNames names = collection.getCharacterNames();
         IllustrationTitles titles = collection.getIllustrationTitles();
         NarrativeSections sections = collection.getNarrativeSections();
 
         // Make sure the things can be read
-        errors.addAll(attemptToRead(names, bsg));
-        errors.addAll(attemptToRead(titles, bsg));
-        errors.addAll(attemptToRead(sections, bsg));
-
-        return errors;
+        attemptToRead(names, bsg, errors, warnings);
+        attemptToRead(titles, bsg, errors, warnings);
+        attemptToRead(sections, bsg, errors, warnings);
     }
 }

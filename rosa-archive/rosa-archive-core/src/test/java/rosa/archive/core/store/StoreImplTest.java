@@ -76,6 +76,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
     public TemporaryFolder tmpFolder = new TemporaryFolder();
 
     @Before
+    @SuppressWarnings("unchecked")
     public void setup() throws URISyntaxException, IOException {
         super.setup();
         MockitoAnnotations.initMocks(this);
@@ -89,6 +90,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
                         any(Book.class),
                         any(ByteStreamGroup.class),
                         anyBoolean(),
+                        anyList(),
                         anyList()
                 )
         ).thenReturn(false);
@@ -97,6 +99,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
                         any(BookCollection.class),
                         any(ByteStreamGroup.class),
                         anyBoolean(),
+                        anyList(),
                         anyList()
                 )
         ).thenReturn(false);
@@ -173,16 +176,16 @@ public class StoreImplTest extends AbstractFileSystemTest {
         book.setId("LudwigXV7");
         collection.setId("rosedata");
 
-        assertFalse(store.check(collection, book, true, new ArrayList<String>()));
-        assertFalse(store.check(collection, book, false, new ArrayList<String>()));
-        assertFalse(store.check(collection, true, new ArrayList<String>()));
-        assertFalse(store.check(collection, false, new ArrayList<String>()));
+        assertFalse(store.check(collection, book, true, new ArrayList<String>(), new ArrayList<String>()));
+        assertFalse(store.check(collection, book, false, new ArrayList<String>(), new ArrayList<String>()));
+        assertFalse(store.check(collection, true, new ArrayList<String>(), new ArrayList<String>()));
+        assertFalse(store.check(collection, false, new ArrayList<String>(), new ArrayList<String>()));
 
-        verify(bookChecker).checkContent(eq(collection), eq(book), any(ByteStreamGroup.class), eq(false), anyList());
-        verify(bookChecker).checkContent(eq(collection), eq(book), any(ByteStreamGroup.class), eq(true), anyList());
+        verify(bookChecker).checkContent(eq(collection), eq(book), any(ByteStreamGroup.class), eq(false), anyList(), anyList());
+        verify(bookChecker).checkContent(eq(collection), eq(book), any(ByteStreamGroup.class), eq(true), anyList(), anyList());
 
-        verify(collectionChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(false), anyList());
-        verify(collectionChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(true), anyList());
+        verify(collectionChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(false), anyList(), anyList());
+        verify(collectionChecker).checkContent(eq(collection), any(ByteStreamGroup.class), eq(true), anyList(), anyList());
 
     }
 

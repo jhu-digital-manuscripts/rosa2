@@ -198,6 +198,7 @@ public class ArchiveTool {
      */
     private void check(CommandLine cmd) {
         List<String> errors = new ArrayList<>();
+        List<String> warnings = new ArrayList<>();
 
         String[] args = cmd.getArgs();
         boolean checkBits = cmd.hasOption(config.getFlagCheckBits());
@@ -211,13 +212,14 @@ public class ArchiveTool {
                 String[] collections =  store.listBookCollections();
                 for (String collectionName : collections) {
                     List<String> e = new ArrayList<>();
+                    List<String> w = new ArrayList<>();
 
                     BookCollection collection = store.loadBookCollection(collectionName, loadingErrors);
                     if (collection == null) {
                         continue;
                     }
                     report.println(collectionName);
-                    store.check(collection, checkBits, e);
+                    store.check(collection, checkBits, e, w);
 
                     if (!e.isEmpty()) {
                         displayError(e);
@@ -231,7 +233,7 @@ public class ArchiveTool {
                             continue;
                         }
                         report.println("\n-" + bookName);
-                        store.check(collection, book, checkBits, e);
+                        store.check(collection, book, checkBits, e, w);
 
                         if (!e.isEmpty()) {
                             displayError(e);
@@ -247,7 +249,7 @@ public class ArchiveTool {
             try {
                 BookCollection collection = store.loadBookCollection(args[1], loadingErrors);
                 if (collection != null) {
-                    store.check(collection, checkBits, errors);
+                    store.check(collection, checkBits, errors, warnings);
                 }
             } catch (IOException e) {
                 displayError("Error: Unable to load collection. [" + args[1] + "]", args, e);
@@ -258,7 +260,7 @@ public class ArchiveTool {
                 BookCollection collection = store.loadBookCollection(args[1], loadingErrors);
                 Book book = collection == null ? null : store.loadBook(args[1], args[2], loadingErrors);
                 if (book != null) {
-                    store.check(collection, book, checkBits, errors);
+                    store.check(collection, book, checkBits, errors, warnings);
                 } else {
                     report.println("Failed to read book. [" + args[1] + ":" + args[2] + "]");
                 }

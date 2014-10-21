@@ -37,14 +37,15 @@ public abstract class AbstractArchiveChecker {
      * @param item item to check
      * @param bsg byte stream group
      * @param <T> item type
-     * @return list of errors found while performing the check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    protected <T extends HasId> List<String> attemptToRead(T item, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
+    protected <T extends HasId> void attemptToRead(T item, ByteStreamGroup bsg,
+                                                   List<String> errors, List<String> warnings) {
 
         if (item == null || StringUtils.isBlank(item.getId())) {
             errors.add("Item missing from archive. [" + bsg.name() + "]");
-            return errors;
+            return;
         }
 
         try (InputStream in = bsg.getByteStream(item.getId())) {
@@ -53,8 +54,6 @@ public abstract class AbstractArchiveChecker {
         } catch (IOException e) {
             errors.add("Failed to read [" + bsg.name() + ":" + item.getId() + "]");
         }
-
-        return errors;
     }
 
     /**
@@ -62,11 +61,11 @@ public abstract class AbstractArchiveChecker {
      * @param bsg byte stream group holding all streams to the archive
      * @param checkSubGroups TRUE - check streams in all sub-groups within {@code bsg}
      * @param required is the checksum validation required?
-     * @return list of errors found while checking
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    protected List<String> checkBits(ByteStreamGroup bsg, boolean checkSubGroups, boolean required) {
-        List<String> errors = new ArrayList<>();
-
+    protected void checkBits(ByteStreamGroup bsg, boolean checkSubGroups, boolean required,
+                                     List<String> errors, List<String> warnings) {
         String checksumId = null;
         List<String> streams = new ArrayList<>();
         try {
@@ -85,7 +84,7 @@ public abstract class AbstractArchiveChecker {
         }
 
         if (checksumId != null) {
-            errors.addAll(checkStreams(bsg, checksumId));
+            checkStreams(bsg, checksumId, errors, warnings);
         } else if (required) {
             // checksumId will always be NULL here (no checksum stream exists)
             errors.add("Failed to get checksum data from group. [" + bsg.name() + "]");
@@ -101,11 +100,9 @@ public abstract class AbstractArchiveChecker {
             }
 
             for (ByteStreamGroup group : subGroups) {
-                errors.addAll(checkBits(group, true, required));
+                checkBits(group, true, required, errors, warnings);
             }
         }
-
-        return errors;
     }
 
     /**
@@ -116,10 +113,11 @@ public abstract class AbstractArchiveChecker {
      *
      * @param bsg byte stream group
      * @param checksumName name of checksum item in this group
-     * @return list of errors found while performing check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    protected List<String> checkStreams(ByteStreamGroup bsg, String checksumName) {
-        List<String> errors = new ArrayList<>();
+    protected List<String> checkStreams(ByteStreamGroup bsg, String checksumName,
+                                        List<String> errors, List<String> warnings) {
 
         if (checksumName == null) {
             return errors;
