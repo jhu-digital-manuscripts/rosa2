@@ -119,8 +119,8 @@ public class ArchiveTool {
         e.printStackTrace(report);
     }
 
-    private void displayError(List<String> errors) {
-        report.println("\nErrors: ");
+    private void displayError(String title, List<String> errors) {
+        report.println("\n" + title);
         for (String error : errors) {
             report.println("  " + error);
         }
@@ -173,10 +173,7 @@ public class ArchiveTool {
                 }
 
                 if (showErrors && !errors.isEmpty()) {
-                    report.println("\nErrors found while processing:");
-                    for (String err : errors) {
-                        report.println("  " + err);
-                    }
+                    displayError("Errors: ", errors);
                 }
             } catch (IOException e) {
                 displayError("Error: Unable to load book [" + args[1] + ":" + args[2] + "]", args, e);
@@ -197,48 +194,18 @@ public class ArchiveTool {
      * @param cmd CLI command
      */
     private void check(CommandLine cmd) {
-        List<String> errors = new ArrayList<>();
-        List<String> warnings = new ArrayList<>();
-
         String[] args = cmd.getArgs();
         boolean checkBits = cmd.hasOption(config.getFlagCheckBits());
 
         report.println("Checking...");
-
-        List<String> loadingErrors = new ArrayList<>();
         if (args.length == 1) {
             // check everything
             try {
                 String[] collections =  store.listBookCollections();
-                for (String collectionName : collections) {
-                    List<String> e = new ArrayList<>();
-                    List<String> w = new ArrayList<>();
-
-                    BookCollection collection = store.loadBookCollection(collectionName, loadingErrors);
-                    if (collection == null) {
-                        continue;
-                    }
-                    report.println(collectionName);
-                    store.check(collection, checkBits, e, w);
-
-                    if (!e.isEmpty()) {
-                        displayError(e);
-                        e.clear();
-                    }
-
-                    for (String bookName : store.listBooks(collectionName)) {
-                        Book book = store.loadBook(collectionName, bookName, loadingErrors);
-                        if (book == null) {
-                            report.println("Failed to read book. [" + collectionName + ":" + bookName + "]");
-                            continue;
-                        }
-                        report.println("\n-" + bookName);
-                        store.check(collection, book, checkBits, e, w);
-
-                        if (!e.isEmpty()) {
-                            displayError(e);
-                            e.clear();
-                        }
+                if (collections != null) {
+                    for (String collectionName : collections) {
+                        CollectionDerivative cDeriv = new CollectionDerivative(collectionName, report, store);
+                        cDeriv.check(checkBits);
                     }
                 }
             } catch (IOException e) {
@@ -246,24 +213,17 @@ public class ArchiveTool {
             }
         } else if (args.length == 2) {
             // check collection
+            CollectionDerivative cDeriv = new CollectionDerivative(args[1], report, store);
             try {
-                BookCollection collection = store.loadBookCollection(args[1], loadingErrors);
-                if (collection != null) {
-                    store.check(collection, checkBits, errors, warnings);
-                }
+                cDeriv.check(checkBits);
             } catch (IOException e) {
-                displayError("Error: Unable to load collection. [" + args[1] + "]", args, e);
+                displayError("Error: Unable to check collection. [" + args[1] + "]", args, e);
             }
         } else if (args.length == 3) {
             // check book
+            BookDerivative bDeriv = new BookDerivative(args[1], args[2], report, store);
             try {
-                BookCollection collection = store.loadBookCollection(args[1], loadingErrors);
-                Book book = collection == null ? null : store.loadBook(args[1], args[2], loadingErrors);
-                if (book != null) {
-                    store.check(collection, book, checkBits, errors, warnings);
-                } else {
-                    report.println("Failed to read book. [" + args[1] + ":" + args[2] + "]");
-                }
+                bDeriv.check(checkBits);
             } catch (IOException e) {
                 displayError("Error: Unable to load book. [" + args[1] + ":" + args[2] + "]", args, e);
             }
@@ -272,9 +232,6 @@ public class ArchiveTool {
         }
 
         report.println("...complete");
-        if (!errors.isEmpty()) {
-            displayError(errors);
-        }
     }
 
     /**

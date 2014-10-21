@@ -38,6 +38,7 @@ import java.util.Map;
  */
 public class BookChecker extends AbstractArchiveChecker {
     private static final String PAGE_PATTERN = "\\d+(r|v|R|V)";
+    private static final String MANUSCRIPT = "manuscript";
 
     @Inject
     BookChecker(AppConfig config, Map<Class, Serializer> serializerMap) {
@@ -256,13 +257,13 @@ public class BookChecker extends AbstractArchiveChecker {
             for (BookText text : metadata.getTexts()) {
                 if (StringUtils.isBlank(text.getFirstPage())) {
                     warnings.add("Metadata text first page not set. [" + metadata.getId() + ":" + text.getId() + "]");
-                } else if (!text.getFirstPage().matches(PAGE_PATTERN)) {
-                    errors.add("Page has bad format. [" + text.getFirstPage() + "]");
+                } else if (!text.getFirstPage().matches(PAGE_PATTERN) && metadata.getType().equalsIgnoreCase(MANUSCRIPT)) {
+                    errors.add("Page has bad format. [" + metadata.getId() + ":" + text.getFirstPage() + "]");
                 }
                 if (StringUtils.isBlank(text.getLastPage())) {
                     warnings.add("Metadata text last page not set. [" + metadata.getId() + ":" + text.getId() + "]");
-                } else if (!text.getLastPage().matches(PAGE_PATTERN)) {
-                    errors.add("Page has bad format. [" + text.getLastPage() + "]");
+                } else if (!text.getLastPage().matches(PAGE_PATTERN) && metadata.getType().equalsIgnoreCase(MANUSCRIPT)) {
+                    errors.add("Page has bad format. [" + metadata.getId() + ":" + text.getLastPage() + "]");
                 }
                 if (StringUtils.isBlank(text.getTitle())) {
                     warnings.add("Metadata text title not set. [" + metadata.getId() + ":" + text.getId() + "]");
@@ -272,13 +273,14 @@ public class BookChecker extends AbstractArchiveChecker {
                 } else if (text.getNumberOfIllustrations() > metadata.getNumberOfIllustrations()) {
                     warnings.add("Number of illustrations in text [" + text.getNumberOfIllustrations()
                             + "] is greater than the number if illustrations in the manuscript ["
-                            + metadata.getNumberOfIllustrations() + "]");
+                            + metadata.getNumberOfIllustrations() + "] {" + metadata.getId() + ":" + text.getId() + "}");
                 }
                 if (text.getNumberOfPages() == -1) {
                     warnings.add("Metadata number of pages not set. [" + metadata.getId() + ":" + text.getId() + "]");
                 } else if (text.getNumberOfPages() > metadata.getNumberOfPages()) {
                     warnings.add("Number of pages in text [" + text.getNumberOfPages() + "] exceeds number " +
-                            "of pages in the manuscript [" + metadata.getNumberOfPages() + "]");
+                            "of pages in the manuscript [" + metadata.getNumberOfPages() + "] {"
+                            + metadata.getId() + ":" + text.getId() + "}");
                 }
                 if (text.getColumnsPerPage() == -1) {
                     warnings.add("Metadata columns per page not set. [" + metadata.getId() + ":" + text.getId() + "]");
@@ -640,7 +642,7 @@ public class BookChecker extends AbstractArchiveChecker {
             if (StringUtils.isBlank(illustration.getPage())) {
                 errors.add("Illustration page missing. [" + illustration.getId() + "]");
             } else if (!illustration.getPage().matches(PAGE_PATTERN)) {
-                warnings.add("Illustration page formatted incorrectly. [" + illustration.getPage() + "]");
+                warnings.add("Illustration page may be formatted incorrectly. [" + illustration.getPage() + "]");
             }
             if (illustration.getTitles() == null) {
                 errors.add("Illustration title missing. [" + illustration.getId() + "]");
