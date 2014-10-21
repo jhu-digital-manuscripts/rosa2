@@ -149,7 +149,7 @@ public class BookChecker extends AbstractArchiveChecker {
                             + "Cannot check bit integrity.")
             );
         }
-        return checkStreams(bsg, book.getSHA1Checksum().getId());
+        return checkStreams(bsg, book.getSHA1Checksum().getId(), errors, warnings);
     }
 
     /**
@@ -171,7 +171,7 @@ public class BookChecker extends AbstractArchiveChecker {
             }
             // Code taken from Rosa1 project, BaseDerivative#checkFilenames(archive)
             if (!isKnownName(name)) {
-                errors.add("Unknown file. [" + name + "]");
+                warnings.add("Unknown file. [" + name + "]");
             }
         }
     }
