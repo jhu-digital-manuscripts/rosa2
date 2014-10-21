@@ -29,7 +29,6 @@ import rosa.archive.model.redtag.StructurePage;
 import rosa.archive.model.redtag.StructurePageSide;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -38,13 +37,16 @@ import java.util.Map;
  * @see rosa.archive.model.Book
  */
 public class BookChecker extends AbstractArchiveChecker {
+    private static final String PAGE_PATTERN = "\\d+(r|v|R|V)";
+
     @Inject
     BookChecker(AppConfig config, Map<Class, Serializer> serializerMap) {
         super(config, serializerMap);
     }
 
     public boolean checkContent(
-            BookCollection collection, Book book, ByteStreamGroup bsg, boolean checkBits, List<String> errors) {
+            BookCollection collection, Book book, ByteStreamGroup bsg, boolean checkBits,
+            List<String> errors, List<String> warnings) {
 
         if (book == null) {
             errors.add("Book is missing.");
@@ -53,54 +55,51 @@ public class BookChecker extends AbstractArchiveChecker {
 
         // Check the following items:
         //   checksumInfo
-        errors.addAll(check(book.getSHA1Checksum(), book, bsg));
+        check(book.getSHA1Checksum(), book, bsg, errors, warnings);
         //   list of images is required
-        errors.addAll(check(book.getImages(), book, bsg));
+        check(book.getImages(), book, bsg, errors, warnings);
         //   but list of cropped images is not required
         if (book.getCroppedImages() != null) {
-            errors.addAll(check(book.getCroppedImages(), book, bsg));
+            check(book.getCroppedImages(), book, bsg, errors, warnings);
         }
         //   cropInfo
-        errors.addAll(check(book.getCropInfo(), book, bsg));
+        check(book.getCropInfo(), book, bsg, errors, warnings);
 
         for (String lang : config.languages()) {
             //   bookMetadata
-            errors.addAll(check(book.getBookMetadata(lang), book, bsg));
+            check(book.getBookMetadata(lang), book, bsg, errors, warnings);
             //   bookDescription (currently not present in model)
             //   permissions
-            errors.addAll(check(book.getPermission(lang), book, bsg));
+            check(book.getPermission(lang), book, bsg, errors, warnings);
         }
         //   content
-        errors.addAll(check(book.getContent(), book.getId()));
+        check(book.getContent(), book.getId(), errors, warnings);
         //   bookStructure
-        errors.addAll(check(book.getBookStructure(), book, bsg));
+        check(book.getBookStructure(), book, bsg, errors, warnings);
         //   illustrationTagging
-        errors.addAll(check(book.getIllustrationTagging(), book, bsg));
+        check(book.getIllustrationTagging(), book, bsg, errors, warnings);
         //   manualNarrativeTagging
-        errors.addAll(check(book.getManualNarrativeTagging(), book, bsg));
+        check(book.getManualNarrativeTagging(), book, bsg, errors, warnings);
         //   automaticNarrativeTagging
-        errors.addAll(check(book.getAutomaticNarrativeTagging(), book, bsg));
+        check(book.getAutomaticNarrativeTagging(), book, bsg, errors, warnings);
 
         try {
             // Check character_names and illustration_titles
-            errors.addAll(
-                    check(
-                            book.getIllustrationTagging(),
-                            collection.getCharacterNames(),
-                            collection.getIllustrationTitles()
-                    )
+            check(
+                    book.getIllustrationTagging(), collection.getCharacterNames(),
+                    collection.getIllustrationTitles(), errors, warnings
             );
 
             // Check narrative_sections (automatic and manual)
-            errors.addAll(check(book.getAutomaticNarrativeTagging(), collection.getNarrativeSections()));
-            errors.addAll(check(book.getManualNarrativeTagging(), collection.getNarrativeSections()));
+            check(book.getAutomaticNarrativeTagging(), collection.getNarrativeSections(), errors, warnings);
+            check(book.getManualNarrativeTagging(), collection.getNarrativeSections(), errors, warnings);
 
         } catch (IOException e) {
             errors.add("Unable to check references to character_names, illustration_titles, or narrative_sections.");
         }
         // check bit integrity
         if (checkBits) {
-            errors.addAll(checkAllBits(bsg, book));
+            checkAllBits(bsg, book, errors, warnings);
         }
 
         // Return TRUE if all above checks pass
@@ -143,7 +142,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param book book archive
      * @return list of errors found while performing check
      */
-    protected List<String> checkAllBits(ByteStreamGroup bsg, Book book) {
+    protected List<String> checkAllBits(ByteStreamGroup bsg, Book book, List<String> errors, List<String> warnings) {
         if (book.getSHA1Checksum() == null) {
             return Arrays.asList(
                     ("Book [" + book.getId() + "] has no stored SHA1SUM. "
@@ -161,10 +160,10 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param content item to check
      * @param bookId containing book
-     * @return list of errors found during the check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(String[] content, String bookId) {
-        List<String> errors = new ArrayList<>();
+    private void check(String[] content, String bookId, List<String> errors, List<String> warnings) {
 
         for (String name : content) {
             if (!name.startsWith(bookId + ".")) {
@@ -175,8 +174,6 @@ public class BookChecker extends AbstractArchiveChecker {
                 errors.add("Unknown file. [" + name + "]");
             }
         }
-
-        return errors;
     }
 
     /**
@@ -192,14 +189,14 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param metadata data to check
      * @param parent parent container
-     * @return list of errors found during the check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(BookMetadata metadata, Book parent, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(BookMetadata metadata, Book parent, ByteStreamGroup bsg,
+                               List<String> errors, List<String> warnings) {
         if (metadata == null) {
             errors.add("Metadata is missing.");
-            return errors;
+            return;
         }
 
         if (!isInArchive(metadata.getId(), parent.getContent())) {
@@ -207,17 +204,17 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         if (StringUtils.isBlank(metadata.getDate())) {
-            errors.add("Metadata date not set.");
+            warnings.add("Metadata date not set.");
         }
         if (metadata.getYearStart() == -1) {
-            errors.add("Metadata start year not set.");
+            warnings.add("Metadata start year not set.");
         }
         if (metadata.getYearEnd() - metadata.getYearStart() < 0) {
             errors.add("Date range ends before it begins! " +
                     "Check the description <date notBefore=\"..\" notAfter=\"..\"> element.");
         }
         if (metadata.getYearEnd() == -1) {
-            errors.add("Metadata end year not set.");
+            warnings.add("Metadata end year not set.");
         }
         if (StringUtils.isBlank(metadata.getCurrentLocation())) {
             errors.add("Metadata current location not set.");
@@ -226,60 +223,72 @@ public class BookChecker extends AbstractArchiveChecker {
             errors.add("Metadata repository not set.");
         }
         if (StringUtils.isBlank(metadata.getOrigin())) {
-            errors.add("Metadata origin not set.");
-        }
-        if (StringUtils.isBlank(metadata.getDimensions())) {
-            errors.add("Metadata dimensions not set.");
+            warnings.add("Metadata origin not set.");
         }
         if (metadata.getWidth() == -1) {
-            errors.add("Metadata width not set.");
+            warnings.add("Metadata width not set.");
         }
         if (metadata.getHeight() == -1) {
-            errors.add("Metadata height not set.");
+            warnings.add("Metadata height not set.");
+        }
+        if (StringUtils.isBlank(metadata.getDimensions())
+                && metadata.getWidth() != -1 && metadata.getHeight() != -1) {
+            warnings.add("Metadata dimensions not set.");
         }
         if (metadata.getNumberOfIllustrations() == -1) {
-            errors.add("Metadata number of illustrations not set.");
+            warnings.add("Metadata number of illustrations not set.");
         }
         if (metadata.getNumberOfPages() == -1) {
-            errors.add("Metadata number of pages/folios not set.");
+            warnings.add("Metadata number of pages/folios not set.");
         }
         if (StringUtils.isBlank(metadata.getType())) {
-            errors.add("Metadata type not set.");
+            warnings.add("Metadata type not set.");
         }
         if (StringUtils.isBlank(metadata.getCommonName())) {
-            errors.add("Metadata common name not set.");
+            warnings.add("Metadata common name not set.");
         }
         if (StringUtils.isBlank(metadata.getMaterial())) {
-            errors.add("Metadata material not set.");
+            warnings.add("Metadata material not set.");
         }
         if (metadata.getTexts() == null) {
-            errors.add("Metadata texts not set.");
-        }
-
-        for (BookText text : metadata.getTexts()) {
-            if (StringUtils.isBlank(text.getFirstPage())) {
-                errors.add("Metadata text first page not set. [" + metadata.getId() + ":" + text.getId() + "]");
-            }
-            if (StringUtils.isBlank(text.getLastPage())) {
-                errors.add("Metadata text last page not set. [" + metadata.getId() + ":" + text.getId() + "]");
-            }
-            if (StringUtils.isBlank(text.getTitle())) {
-                errors.add("Metadata text title not set. [" + metadata.getId() + ":" + text.getId() + "]");
-            }
-            if (text.getNumberOfIllustrations() == -1) {
-                errors.add("Metadata number of illustrations not set. [" + metadata.getId() + ":" + text.getId() + "]");
-            }
-            if (text.getNumberOfPages() == -1) {
-                errors.add("Metadata number of pages not set. [" + metadata.getId() + ":" + text.getId() + "]");
-            }
-            if (text.getColumnsPerPage() == -1) {
-                errors.add("Metadata columns per page not set. [" + metadata.getId() + ":" + text.getId() + "]");
-            }
-            if (text.getLeavesPerGathering() == -1) {
-                errors.add("Metadata leaves per gathering not set. [" + metadata.getId() + ":" + text.getId() + "]");
-            }
-            if (text.getLinesPerColumn() == -1) {
-                errors.add("Metadata lines per column not set. [" + metadata.getId() + ":" + text.getId() + "]");
+            warnings.add("Metadata texts not set.");
+        } else {
+            for (BookText text : metadata.getTexts()) {
+                if (StringUtils.isBlank(text.getFirstPage())) {
+                    warnings.add("Metadata text first page not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                } else if (!text.getFirstPage().matches(PAGE_PATTERN)) {
+                    errors.add("Page has bad format. [" + text.getFirstPage() + "]");
+                }
+                if (StringUtils.isBlank(text.getLastPage())) {
+                    warnings.add("Metadata text last page not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                } else if (!text.getLastPage().matches(PAGE_PATTERN)) {
+                    errors.add("Page has bad format. [" + text.getLastPage() + "]");
+                }
+                if (StringUtils.isBlank(text.getTitle())) {
+                    warnings.add("Metadata text title not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                }
+                if (text.getNumberOfIllustrations() == -1) {
+                    warnings.add("Metadata number of illustrations not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                } else if (text.getNumberOfIllustrations() > metadata.getNumberOfIllustrations()) {
+                    warnings.add("Number of illustrations in text [" + text.getNumberOfIllustrations()
+                            + "] is greater than the number if illustrations in the manuscript ["
+                            + metadata.getNumberOfIllustrations() + "]");
+                }
+                if (text.getNumberOfPages() == -1) {
+                    warnings.add("Metadata number of pages not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                } else if (text.getNumberOfPages() > metadata.getNumberOfPages()) {
+                    warnings.add("Number of pages in text [" + text.getNumberOfPages() + "] exceeds number " +
+                            "of pages in the manuscript [" + metadata.getNumberOfPages() + "]");
+                }
+                if (text.getColumnsPerPage() == -1) {
+                    warnings.add("Metadata columns per page not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                }
+                if (text.getLeavesPerGathering() == -1) {
+                    warnings.add("Metadata leaves per gathering not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                }
+                if (text.getLinesPerColumn() == -1) {
+                    warnings.add("Metadata lines per column not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                }
             }
         }
 
@@ -288,8 +297,6 @@ public class BookChecker extends AbstractArchiveChecker {
         } catch (IOException e) {
             errors.add("Failed to serialize book metadata. [" + metadata.getId() + "]");
         }
-
-        return errors;
     }
 
     /**
@@ -297,14 +304,14 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param permission item to check
      * @param parent containing Book
-     * @return list of errors found while performing check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(Permission permission, Book parent, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(Permission permission, Book parent, ByteStreamGroup bsg,
+                               List<String> errors, List<String> warnings) {
         if (permission == null) {
             errors.add("Permission statement missing.");
-            return errors;
+            return;
         }
 
         if (StringUtils.isBlank(permission.getId())) {
@@ -322,8 +329,6 @@ public class BookChecker extends AbstractArchiveChecker {
         } catch (IOException e) {
             errors.add("Failed to serialize permission file. [" + permission.getId() + "]");
         }
-
-        return errors;
     }
 
     /**
@@ -339,14 +344,14 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param images {@link rosa.archive.model.ImageList}
      * @param parent {@link rosa.archive.model.Book} that contains this image list
-     * @return list of errors found while checking data
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(ImageList images, Book parent, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(ImageList images, Book parent, ByteStreamGroup bsg,
+                               List<String> errors, List<String> warnings) {
         if (images == null || images.getImages() == null) {
             errors.add("Image list is missing.");
-            return errors;
+            return;
         }
 
         for (BookImage image : images.getImages()) {
@@ -377,8 +382,6 @@ public class BookChecker extends AbstractArchiveChecker {
         } catch (IOException e) {
             errors.add("Failed to serialize image list. [" + images.getId() + "]");
         }
-
-        return errors;
     }
 
     /**
@@ -393,13 +396,13 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param cropInfo cropping data
      * @param parent parent book
-     * @return list of errors found while performing check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(CropInfo cropInfo, Book parent, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(CropInfo cropInfo, Book parent, ByteStreamGroup bsg,
+                               List<String> errors, List<String> warnings) {
         if (cropInfo == null) {
-            return errors;
+            return;
         }
 
         if (!isInArchive(parent.getId() + config.getCROP(), parent.getContent())) {
@@ -428,8 +431,6 @@ public class BookChecker extends AbstractArchiveChecker {
         } catch (IOException e) {
             errors.add("Failed to serialize crop info. [" + cropInfo.getId() + "]");
         }
-
-        return errors;
     }
 
     /**
@@ -443,17 +444,17 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param info item to check
      * @param parent containing Book
-     * @return list of errors found during checking
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(SHA1Checksum info, Book parent, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(SHA1Checksum info, Book parent, ByteStreamGroup bsg,
+                               List<String> errors, List<String> warnings) {
         if (info == null) {
             errors.add("SHA1SUM missing.");
             if (isInArchive(parent.getId() + config.getBNF_MD5SUM(), parent.getContent())) {
-                errors.add(parent.getId() + config.getBNF_MD5SUM() + " is present.");
+                warnings.add(parent.getId() + config.getBNF_MD5SUM() + " is present.");
             }
-            return errors;
+            return;
         }
 
         if (!isInArchive(info.getId(), parent.getContent())) {
@@ -480,8 +481,6 @@ public class BookChecker extends AbstractArchiveChecker {
         } catch (IOException e) {
             errors.add("Failed to serialize checksum info. [" + info.getId() + "]");
         }
-
-        return errors;
     }
 
     /**
@@ -493,13 +492,13 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param structure item to check
      * @param parent parent container
-     * @return list of errors found while performing the check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(BookStructure structure, Book parent, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(BookStructure structure, Book parent, ByteStreamGroup bsg,
+                               List<String> errors, List<String> warnings) {
         if (structure == null) {
-            return errors;
+            return;
         }
 
         if (!isInArchive(structure.getId(), parent.getContent())) {
@@ -511,14 +510,14 @@ public class BookChecker extends AbstractArchiveChecker {
                 errors.add("Page ID missing. [" + page + "]");
             }
             if (page.getVerso() != null) {
-                errors.addAll(check(page.getVerso()));
+                check(page.getVerso(), errors, warnings);
                 if (guessImageName(page.getId() + "v", parent) == null) {
                     errors.add("Could not find image associated with verso. ["
                             + parent.getId() + ":" + page.getVerso().getParentPage() + "]");
                 }
             }
             if (page.getRecto() != null) {
-                errors.addAll(check(page.getRecto()));
+                check(page.getRecto(), errors, warnings);
                 if (guessImageName(page.getId() + "r", parent) == null) {
                     errors.add("Could not find image associated with recto. ["
                             + parent.getId() + ":" + page.getRecto().getParentPage() + "]");
@@ -531,8 +530,6 @@ public class BookChecker extends AbstractArchiveChecker {
         } catch (IOException e) {
             errors.add("Failed to serialize reduced tagging. [" + structure.getId() + "]");
         }
-
-        return errors;
     }
 
     /**
@@ -544,27 +541,24 @@ public class BookChecker extends AbstractArchiveChecker {
      * </ul>
      *
      * @param side side of a page to check
-     * @return list of errors found while checking
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(StructurePageSide side) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(StructurePageSide side, List<String> errors, List<String> warnings) {
         if (side == null) {
-            return errors;
+            return;
         }
 
         if (side.columns() != null) {
             for (StructureColumn column : side.columns()) {
-                errors.addAll(check(column));
+                check(column, errors, warnings);
             }
         }
         if (side.spanning() != null) {
             for (Item item : side.spanning()) {
-                errors.addAll(check(item));
+                check(item, errors, warnings);
             }
         }
-
-        return errors;
     }
 
     /**
@@ -577,13 +571,12 @@ public class BookChecker extends AbstractArchiveChecker {
      * </ul>
      *
      * @param column column of stuff on a page
-     * @return list of errors found while checking
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(StructureColumn column) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(StructureColumn column, List<String> errors, List<String> warnings) {
         if (column == null) {
-            return errors;
+            return;
         }
 
         if (StringUtils.isBlank(column.getParentSide())) {
@@ -593,15 +586,13 @@ public class BookChecker extends AbstractArchiveChecker {
             errors.add("Column letter designation missing. [" + column + "]");
         }
         if (column.getTotalLines() < 0) {
-            errors.add("Total lines of column not defined. [" + column + "]");
+            warnings.add("Total lines of column not defined. [" + column + "]");
         }
         if (column.getItems() != null) {
             for (Item item : column.getItems()) {
-                errors.addAll(check(item));
+                check(item, errors, warnings);
             }
         }
-
-        return errors;
     }
 
     /**
@@ -611,20 +602,17 @@ public class BookChecker extends AbstractArchiveChecker {
      * </ul>
      *
      * @param item item to check
-     * @return list of errors found during the check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(Item item) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(Item item, List<String> errors, List<String> warnings) {
         if (item == null) {
-            return errors;
+            return;
         }
 
         if (item.getLines() < 0) {
-            errors.add("Lines is negative. [" + item + "]");
+            warnings.add("Lines is negative. [" + item + "]");
         }
-
-        return errors;
     }
 
     /**
@@ -632,13 +620,13 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param tagging item to check
      * @param parent containing Book
-     * @return list of errors found while performing check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(IllustrationTagging tagging, Book parent, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(IllustrationTagging tagging, Book parent, ByteStreamGroup bsg,
+                               List<String> errors, List<String> warnings) {
         if (tagging == null) {
-            return errors;
+            return;
         }
 
         if (!isInArchive(tagging.getId(), parent.getContent())) {
@@ -651,25 +639,27 @@ public class BookChecker extends AbstractArchiveChecker {
             }
             if (StringUtils.isBlank(illustration.getPage())) {
                 errors.add("Illustration page missing. [" + illustration.getId() + "]");
+            } else if (!illustration.getPage().matches(PAGE_PATTERN)) {
+                warnings.add("Illustration page formatted incorrectly. [" + illustration.getPage() + "]");
             }
-            if (illustration.getTitles().length == 0) {
+            if (illustration.getTitles() == null) {
                 errors.add("Illustration title missing. [" + illustration.getId() + "]");
             } else {
                 for (String id : illustration.getTitles()) {
-                    if (!StringUtils.isNumeric(id)) {
-                        errors.add("Illustration ID is non-numeric. "
+                    if (StringUtils.isNotBlank(id) && !StringUtils.isNumeric(id)) {
+                        warnings.add("Illustration ID is non-numeric. "
                                 + "Illustration [" + illustration.getId() + "], "
                                 + "[" + id + "]");
                     }
                     // Link to illustration_titles.csv in collection checked below
                 }
             }
-            if (illustration.getCharacters().length == 0) {
+            if (illustration.getCharacters() == null) {
                 errors.add("Illustration characters missing. [" + illustration.getId() + "]");
             } else {
                 for (String id : illustration.getCharacters()) {
-                    if (!StringUtils.isNumeric(id)) {
-                        errors.add("Illustration character ID is non-numeric. "
+                    if (StringUtils.isNotBlank(id) && !StringUtils.isNumeric(id) ) {
+                        warnings.add("Illustration character ID is non-numeric. "
                                 + "Illustration [" + illustration.getId() + "], "
                                 + "character ID [" + id + "]");
                     }
@@ -683,8 +673,6 @@ public class BookChecker extends AbstractArchiveChecker {
         } catch (IOException e) {
             errors.add("Failed to serialize illustration tagging. [" + tagging.getId() + "]");
         }
-
-        return errors;
     }
 
     /**
@@ -692,13 +680,13 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param tagging item to check
      * @param parent containing Book
-     * @return list of errors found while performing check
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(NarrativeTagging tagging, Book parent, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(NarrativeTagging tagging, Book parent, ByteStreamGroup bsg,
+                               List<String> errors, List<String> warnings) {
         if (tagging == null) {
-            return errors;
+            return;
         }
 
         if (!isInArchive(tagging.getId(), parent.getContent())) {
@@ -725,7 +713,6 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
     // TODO check other parts against BookStructure
-        return errors;
     }
 
     /**
@@ -770,15 +757,15 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param tagging illustration tagging
      * @param names character names
      * @param titles illustration titles
-     * @return list of errors found while checking
+     * @param errors list of errors
+     * @param warnings list of warnings
      * @throws IOException
      */
-    private List<String> check(IllustrationTagging tagging, CharacterNames names, IllustrationTitles titles)
+    private void check(IllustrationTagging tagging, CharacterNames names, IllustrationTitles titles,
+                               List<String> errors, List<String> warnings)
             throws IOException {
-        List<String> errors = new ArrayList<>();
-
         if (tagging == null) {
-            return errors;
+            return;
         }
 
         // Checking CharacterNames and IllustrationTitles, referenced in image tagging
@@ -804,8 +791,6 @@ public class BookChecker extends AbstractArchiveChecker {
                 }
             }
         }
-
-        return errors;
     }
 
     /**
@@ -813,13 +798,13 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param sections narrative sections to check
      * @param tagging image tagging to check against
-     * @return list of errors found while checking
+     * @param errors list of errors
+     * @param warnings list of warnings
      */
-    private List<String> check(NarrativeTagging tagging, NarrativeSections sections) {
-        List<String> errors = new ArrayList<>();
-
+    private void check(NarrativeTagging tagging, NarrativeSections sections,
+                               List<String> errors, List<String> warnings) {
         if (tagging == null) {
-            return errors;
+            return;
         }
 
         for (BookScene scene : tagging) {
@@ -828,8 +813,6 @@ public class BookChecker extends AbstractArchiveChecker {
                         + "] not found in narrative_sections.");
             }
         }
-
-        return errors;
     }
 
 }

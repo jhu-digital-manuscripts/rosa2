@@ -66,16 +66,17 @@ public interface Store {
      * @param checkBits check bit integrity?
      * @return TRUE if data checks complete with no errors, FALSE otherwise
      */
-    boolean check(BookCollection collection, Book book, boolean checkBits, List<String> errors);
+    boolean check(BookCollection collection, Book book, boolean checkBits, List<String> errors, List<String> warnings);
 
     /**
-     * See {@link #check(rosa.archive.model.BookCollection, rosa.archive.model.Book, boolean, java.util.List)}
+     * See {@link #check(rosa.archive.model.BookCollection, rosa.archive.model.Book,
+     * boolean, java.util.List, java.util.List)}
      *
      * @param collection collection to check
      * @param checkBits check bit integrity?
      * @return TRUE if data checks complete with no errors, FALSE otherwise
      */
-    boolean check(BookCollection collection, boolean checkBits, List<String> errors);
+    boolean check(BookCollection collection, boolean checkBits, List<String> errors, List<String> warnings);
 
     boolean updateChecksum(String collection, boolean force, List<String> errors) throws IOException;
 

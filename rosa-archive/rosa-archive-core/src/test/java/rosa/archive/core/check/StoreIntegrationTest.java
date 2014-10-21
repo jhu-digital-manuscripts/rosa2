@@ -66,11 +66,12 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
     public void dontCheckBitsTest() throws Exception {
         Store store = storeFactory.create(base);
         List<String> errors = new ArrayList<>();
+        List<String> warnings = new ArrayList<String>();
 
         BookCollection collection = store.loadBookCollection("rosedata", errors);
         assertNotNull(collection);
 
-        boolean check = collectionChecker.checkContent(collection, base.getByteStreamGroup("rosedata"), false, errors);
+        boolean check = collectionChecker.checkContent(collection, base.getByteStreamGroup("rosedata"), false, errors, warnings);
         assertTrue(check);
     }
 
@@ -79,11 +80,12 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
     public void doCheckBitsTest() throws Exception {
         Store store = storeFactory.create(base);
         List<String> errors = new ArrayList<>();
+        List<String> warnings = new ArrayList<>();
 
         BookCollection collection = store.loadBookCollection("rosedata", errors);
         assertNotNull(collection);
 
-        boolean check = collectionChecker.checkContent(collection, base.getByteStreamGroup("rosedata"), true, errors);
+        boolean check = collectionChecker.checkContent(collection, base.getByteStreamGroup("rosedata"), true, errors, warnings);
         assertTrue(check);
     }
 
@@ -92,6 +94,7 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
     public void checkBitsOnBook() throws Exception {
         Store store = storeFactory.create(base);
         List<String> errors = new ArrayList<>();
+        List<String> warnings = new ArrayList<>();
 
         BookCollection collection = store.loadBookCollection("rosedata", errors);
         assertNotNull(collection);
@@ -101,7 +104,7 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
 
         errors.clear();
 
-        boolean check = store.check(collection, book, true, errors);
+        boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
 
         System.out.println("Number of errors: " + errors.size() + "\n");

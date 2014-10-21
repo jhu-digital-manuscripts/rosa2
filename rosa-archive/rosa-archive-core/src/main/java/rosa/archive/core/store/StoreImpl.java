@@ -131,7 +131,8 @@ public class StoreImpl implements Store {
     }
 
     @Override
-    public boolean check(BookCollection collection, Book book, boolean checkBits, List<String> errors) {
+    public boolean check(BookCollection collection, Book book, boolean checkBits,
+                         List<String> errors, List<String> warnings) {
         if (base.hasByteStreamGroup(collection.getId())) {
             ByteStreamGroup collectionGroup = base.getByteStreamGroup(collection.getId());
             if (collectionGroup.hasByteStreamGroup(book.getId())) {
@@ -141,7 +142,8 @@ public class StoreImpl implements Store {
                         book,
                         bookGroup,
                         checkBits,
-                        errors
+                        errors,
+                        warnings
                 );
             }
         }
@@ -150,12 +152,13 @@ public class StoreImpl implements Store {
     }
 
     @Override
-    public boolean check(BookCollection collection, boolean checkBits, List<String> errors) {
+    public boolean check(BookCollection collection, boolean checkBits, List<String> errors, List<String> warnings) {
         return collectionChecker.checkContent(
                 collection,
                 base.getByteStreamGroup(collection.getId()),
                 checkBits,
-                errors
+                errors,
+                warnings
         );
     }
 

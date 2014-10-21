@@ -25,7 +25,7 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
     }
 
     public boolean checkContent(BookCollection collection, ByteStreamGroup bsg, boolean checkBits,
-                                List<String> errors) {
+                                List<String> errors, List<String> warnings) {
 
         if (collection == null) {
             errors.add("Book collection missing.");

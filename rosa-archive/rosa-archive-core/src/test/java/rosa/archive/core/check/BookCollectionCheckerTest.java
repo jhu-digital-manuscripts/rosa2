@@ -45,8 +45,8 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
 
         ByteStreamGroup bsg = base.getByteStreamGroup("rosedata");
 
-        assertTrue(checker.checkContent(collection, bsg, false, new ArrayList<String>()));
-        assertFalse(checker.checkContent(new BookCollection(), bsg, false, new ArrayList<String>()));
+        assertTrue(checker.checkContent(collection, bsg, false, new ArrayList<String>(), new ArrayList<String>()));
+        assertFalse(checker.checkContent(new BookCollection(), bsg, false, new ArrayList<String>(), new ArrayList<String>()));
         
         // TODO checkBits=TRUE
 

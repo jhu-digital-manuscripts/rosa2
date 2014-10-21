@@ -69,10 +69,10 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         );
 
         // TODO this will not be right until a Collection can be fully mocked
-        assertTrue(bChecker.checkContent(mockCollection(), createBook(), bsg, true, new ArrayList<String>()));
-        assertFalse(bChecker.checkContent(mockCollection(), createBadBook(), bsg, true, new ArrayList<String>()));
-        assertTrue(bChecker.checkContent(mockCollection(), createBook(), bsg, false, new ArrayList<String>()));
-        assertFalse(bChecker.checkContent(mockCollection(), createBadBook(), bsg, false, new ArrayList<String>()));
+        assertTrue(bChecker.checkContent(mockCollection(), createBook(), bsg, true, new ArrayList<String>(), new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(mockCollection(), createBadBook(), bsg, true, new ArrayList<String>(), new ArrayList<String>()));
+        assertTrue(bChecker.checkContent(mockCollection(), createBook(), bsg, false, new ArrayList<String>(), new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(mockCollection(), createBadBook(), bsg, false, new ArrayList<String>(), new ArrayList<String>()));
     }
 
     private Book createBook() {
@@ -101,8 +101,8 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
         BookText text = new BookText();
         text.setId("BookTextId");
-        text.setFirstPage("firstPage");
-        text.setLastPage("lastPage");
+        text.setFirstPage("001r");
+        text.setLastPage("010v");
         text.setNumberOfIllustrations(101);
         text.setNumberOfPages(11);
         text.setColumnsPerPage(2);
