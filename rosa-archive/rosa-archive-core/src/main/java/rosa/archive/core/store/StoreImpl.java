@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.security.NoSuchAlgorithmException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -170,7 +171,6 @@ public class StoreImpl implements Store {
 
     @Override
     public boolean updateChecksum(BookCollection collection, boolean force, List<String> errors) throws IOException {
-        boolean success = true;
 
         SHA1Checksum checksums = collection.getChecksums();
         // If SHA1SUM does not exist, create it!
@@ -201,7 +201,7 @@ public class StoreImpl implements Store {
         }
 
         ByteStreamGroup colStreams = base.getByteStreamGroup(collection.getId());
-        if (colStreams == null || !colStreams.hasByteStream(book.getId())) {
+        if (colStreams == null || !colStreams.hasByteStreamGroup(book.getId())) {
             return false;
         }
         ByteStreamGroup bookStreams = colStreams.getByteStreamGroup(book.getId());
@@ -210,7 +210,26 @@ public class StoreImpl implements Store {
     }
 
     /**
+     * Update all checksum values for an archive.
      *
+     * <p>
+     *     A {@link rosa.archive.core.ByteStreamGroup} with top level byte streams
+     *     representing the level in the archive to be checked is used. Each byte
+     *     stream is checked for the last time its contents were modified. If this
+     *     date falls after (more recent) the last modified date of the checksum
+     *     file, then the checksum value for that byte stream is updated and saved.
+     *     A new checksum entry is calculated and saved for those streams that are
+     *     not already present in the checksum data.
+     * </p>
+     * <p>
+     *     All entries can be forced to update, regardless of last modified dates
+     *     by using the {@param force} flag.
+     * </p>
+     * <p>
+     *     If a checksum entry is initially present for a byte stream that no is not
+     *     present in this {@param bsg}, it is assumed to no longer exist in the
+     *     archive. In this case, the entry is removed from the checksum data.
+     * </p>
      *
      * @param checksums container holding checksum information
      * @param bsg byte stream group
@@ -222,8 +241,9 @@ public class StoreImpl implements Store {
     protected boolean updateChecksum(SHA1Checksum checksums, ByteStreamGroup bsg, boolean force,
                                      List<String> errors) throws IOException {
         boolean success = true;
+
         long checksumLastMod = bsg.getLastModified(checksums.getId());
-        Map<String, String> checksumMap = checksums.checksums();
+        Map<String, String> checksumMap = new HashMap<>();
 
         for (String streamName : bsg.listByteStreamNames()) {
             // Do not record checksum for the checksum file!
@@ -232,10 +252,10 @@ public class StoreImpl implements Store {
             }
 
             long lastMod = bsg.getLastModified(streamName);
-            String checksum = checksumMap.get(streamName);
+            String checksum = checksums.checksums().get(streamName);
 
-            // Write checksum if it is out of date or doesn't exist or it is explicitly told.
             if (force || lastMod > checksumLastMod || checksum == null) {
+                // Write checksum if it is out of date or doesn't exist or it is forced.
                 try (InputStream in = bsg.getByteStream(streamName)) {
 
                     String checksumValue = ChecksumUtil.calculateChecksum(in, HashAlgorithm.SHA1);
@@ -245,15 +265,28 @@ public class StoreImpl implements Store {
                     errors.add("Failed to generate checksum. [" + bsg.name() + ":" + streamName + "]");
                     success = false;
                 }
+            } else if (lastMod <= checksumLastMod) {
+                // Keep if the item already has a checksum value that is up-to-date AND it still exists in the archive.
+                checksumMap.put(streamName, checksum);
             }
         }
+        // Replace old checksum map. This serves to remove all checksum entries that exist for
+        // files that are no longer in the archive.
+        checksums.checksums().clear();
+        checksums.checksums().putAll(checksumMap);
 
         // Write out checksums only if nothing has failed yet.
-        return success && writeItem(checksums, bsg, SHA1Checksum.class);
+        return success && writeItem(checksums, bsg, SHA1Checksum.class, errors);
     }
 
     @SuppressWarnings("unchecked")
-    protected <T extends HasId> boolean  writeItem(T item, ByteStreamGroup bsg, Class<T> type) {
+    protected <T extends HasId> boolean  writeItem(T item, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
+        // No item to write
+        if (item == null) {
+            errors.add("Cannot write an object that does not exist! [type=" + type.toString() + "]");
+            return false;
+        }
+
         try (OutputStream out = bsg.getOutputStream(item.getId())) {
 
             Serializer serializer = serializerMap.get(type);
@@ -261,6 +294,7 @@ public class StoreImpl implements Store {
 
             return true;
         } catch (IOException e) {
+            errors.add("Failed to write [" + item.getId() + "]");
             return false;
         }
     }
