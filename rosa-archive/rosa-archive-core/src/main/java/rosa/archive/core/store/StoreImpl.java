@@ -254,7 +254,7 @@ public class StoreImpl implements Store {
             long lastMod = bsg.getLastModified(streamName);
             String checksum = checksums.checksums().get(streamName);
 
-            if (force || lastMod > checksumLastMod || checksum == null) {
+            if (force || lastMod >= checksumLastMod || checksum == null) {
                 // Write checksum if it is out of date or doesn't exist or it is forced.
                 try (InputStream in = bsg.getByteStream(streamName)) {
 
@@ -265,7 +265,7 @@ public class StoreImpl implements Store {
                     errors.add("Failed to generate checksum. [" + bsg.name() + ":" + streamName + "]");
                     success = false;
                 }
-            } else if (lastMod <= checksumLastMod) {
+            } else if (lastMod < checksumLastMod) {
                 // Keep if the item already has a checksum value that is up-to-date AND it still exists in the archive.
                 checksumMap.put(streamName, checksum);
             }

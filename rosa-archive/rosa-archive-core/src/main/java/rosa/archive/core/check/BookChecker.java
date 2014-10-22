@@ -805,7 +805,7 @@ public class BookChecker extends AbstractArchiveChecker {
      */
     private void check(NarrativeTagging tagging, NarrativeSections sections,
                                List<String> errors, List<String> warnings) {
-        if (tagging == null) {
+        if (tagging == null || sections == null) {
             return;
         }
 
