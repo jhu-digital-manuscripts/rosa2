@@ -14,6 +14,7 @@ import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.GuiceJUnitRunner;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.SHA1Checksum;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,6 +33,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -201,6 +203,68 @@ public class StoreUpdateChecksumIntegrationTest extends AbstractFileSystemTest {
     }
 
     @Test
+    public void createNewChecksums() throws Exception {
+        final String BOOK = "LudwigXV7";
+        List<String> errors = new ArrayList<>();
+
+        // Copy all files, then delete the SHA1SUM file
+        copyTestFiles(originalPath);
+        Files.deleteIfExists(bookPath.resolve("LudwigXV7.SHA1SUM"));
+
+        assertEquals(1, store.listBookCollections().length);
+        assertEquals(1, store.listBooks("collection").length);
+        assertEquals("LudwigXV7", store.listBooks("collection")[0]);
+
+        // Ensure that no SHA1SUM file exists
+        ByteStreamGroup bookStreams = new FSByteStreamGroup(bookPath.toString());
+        assertNotNull(bookStreams);
+        assertEquals(0, bookStreams.numberOfByteStreamGroups());
+        assertEquals(51, bookStreams.numberOfByteStreams());
+        assertFalse(bookStreams.hasByteStream("LudwigXV7.SHA1SUM"));
+
+        // Load collection + book
+        BookCollection collection = store.loadBookCollection(COLLECTION, errors);
+        Book book = store.loadBook(COLLECTION, BOOK, errors);
+
+        assertNotNull(collection);
+        assertNotNull(book);
+        assertEquals(BOOK, book.getId());
+        assertNull(book.getSHA1Checksum());
+        errors.clear();
+
+        // Update checksum
+        assertTrue(store.updateChecksum(collection, book, false, errors));
+        assertEquals(0, errors.size());
+
+        // Reload the book to grab new SHA1SUM and validate
+        book = store.loadBook(COLLECTION, BOOK, errors);
+
+        SHA1Checksum checksum = book.getSHA1Checksum();
+        assertNotNull(checksum);
+        assertEquals(51, checksum.getAllIds().size());
+
+        assertEquals(0, badChecksums(collection, book));
+
+        // Read in the file again.
+        List<String> newLines = Files.readAllLines(bookPath.resolve("LudwigXV7.SHA1SUM"), Charset.forName("UTF-8"));
+        assertNotNull(newLines);
+
+        // Make sure the two lists are different!
+        assertEquals(51, newLines.size());
+
+        for (String str : newLines) {
+            String[] parts = str.split("\\s+");
+
+            // proper format
+            assertNotNull(parts);
+            assertEquals(2, parts.length);
+            assertTrue(StringUtils.isAlphanumeric(parts[0]));
+            assertTrue(parts[1].startsWith("LudwigXV7."));
+            assertFalse(parts[1].equals("LudwigXV7.SHA1SUM"));
+        }
+    }
+
+    @Test
     public void overwriteOldChecksums() throws Exception {
         List<String> errors = new ArrayList<>();
 
@@ -212,7 +276,7 @@ public class StoreUpdateChecksumIntegrationTest extends AbstractFileSystemTest {
         assertEquals(51, originalLines.size());
 
         // Load collection + book from the store
-        BookCollection collection = store.loadBookCollection("collection", errors);
+        BookCollection collection = store.loadBookCollection(COLLECTION, errors);
         Book book = store.loadBook(COLLECTION, "LudwigXV7", errors);
 
         assertNotNull(book);
@@ -245,8 +309,6 @@ public class StoreUpdateChecksumIntegrationTest extends AbstractFileSystemTest {
             assertNotNull(parts);
             assertEquals(2, parts.length);
             assertTrue(StringUtils.isAlphanumeric(parts[0]));
-            // Make sure all of the old 'Walters143' data has been cleared out
-            // Replaced by new 'book' data
             assertTrue(parts[1].startsWith("LudwigXV7."));
         }
 

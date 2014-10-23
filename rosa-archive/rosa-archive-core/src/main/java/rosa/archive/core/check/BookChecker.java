@@ -205,54 +205,55 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         if (StringUtils.isBlank(metadata.getDate())) {
-            warnings.add("Metadata date not set.");
+            warnings.add("Metadata date not set. [" + metadata.getId() + "]");
         }
         if (metadata.getYearStart() == -1) {
-            warnings.add("Metadata start year not set.");
+            warnings.add("Metadata start year not set. [" + metadata.getId() + "]");
         }
         if (metadata.getYearEnd() - metadata.getYearStart() < 0) {
             errors.add("Date range ends before it begins! " +
-                    "Check the description <date notBefore=\"..\" notAfter=\"..\"> element.");
+                    "Check the description <date notBefore=\"..\" notAfter=\"..\"> element. ["
+                    + metadata.getId() + "]");
         }
         if (metadata.getYearEnd() == -1) {
-            warnings.add("Metadata end year not set.");
+            warnings.add("Metadata end year not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getCurrentLocation())) {
-            errors.add("Metadata current location not set.");
+            errors.add("Metadata current location not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getRepository())) {
-            errors.add("Metadata repository not set.");
+            errors.add("Metadata repository not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getOrigin())) {
-            warnings.add("Metadata origin not set.");
+            warnings.add("Metadata origin not set. [" + metadata.getId() + "]");
         }
         if (metadata.getWidth() == -1) {
-            warnings.add("Metadata width not set.");
+            warnings.add("Metadata width not set. [" + metadata.getId() + "]");
         }
         if (metadata.getHeight() == -1) {
-            warnings.add("Metadata height not set.");
+            warnings.add("Metadata height not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getDimensions())
                 && metadata.getWidth() != -1 && metadata.getHeight() != -1) {
-            warnings.add("Metadata dimensions not set.");
+            warnings.add("Metadata dimensions not set. [" + metadata.getId() + "]");
         }
         if (metadata.getNumberOfIllustrations() == -1) {
-            warnings.add("Metadata number of illustrations not set.");
+            warnings.add("Metadata number of illustrations not set. [" + metadata.getId() + "]");
         }
         if (metadata.getNumberOfPages() == -1) {
-            warnings.add("Metadata number of pages/folios not set.");
+            warnings.add("Metadata number of pages/folios not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getType())) {
-            warnings.add("Metadata type not set.");
+            warnings.add("Metadata type not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getCommonName())) {
-            warnings.add("Metadata common name not set.");
+            warnings.add("Metadata common name not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getMaterial())) {
-            warnings.add("Metadata material not set.");
+            warnings.add("Metadata material not set. [" + metadata.getId() + "]");
         }
         if (metadata.getTexts() == null) {
-            warnings.add("Metadata texts not set.");
+            warnings.add("Metadata texts not set. [" + metadata.getId() + "]");
         } else {
             for (BookText text : metadata.getTexts()) {
                 if (StringUtils.isBlank(text.getFirstPage())) {
@@ -317,13 +318,13 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         if (StringUtils.isBlank(permission.getId())) {
-            errors.add("Permission ID not set.");
+            errors.add("Permission ID not set. [" + permission.getId() + "]");
         }
         if (StringUtils.isBlank(permission.getPermission())) {
-            errors.add("Permission statement not set.");
+            errors.add("Permission statement not set. [" + permission.getId() + "]");
         }
         if (!isInArchive(permission.getId(), parent.getContent())) {
-            errors.add("Permission not in archive.");
+            errors.add("Permission not in archive. [" + permission.getId() + "]");
         }
 
         try {
@@ -362,10 +363,10 @@ public class BookChecker extends AbstractArchiveChecker {
                 errors.add("Image ID not set. [" + image + "]");
             }
             if (image.getWidth() == -1) {
-                errors.add("Image width not set. [" + image + "]");
+                errors.add("Image width not set. [" + image.getId() + "]");
             }
             if (image.getHeight() == -1) {
-                errors.add("Image height not set. [" + image + "]");
+                errors.add("Image height not set. [" + image.getId() + "]");
             }
 
             // Relies on the fact that the array is sorted.
@@ -452,15 +453,16 @@ public class BookChecker extends AbstractArchiveChecker {
     private void check(SHA1Checksum info, Book parent, ByteStreamGroup bsg,
                                List<String> errors, List<String> warnings) {
         if (info == null) {
-            errors.add("SHA1SUM missing.");
+            String message = "SHA1SUM missing";
             if (isInArchive(parent.getId() + config.getBNF_MD5SUM(), parent.getContent())) {
-                warnings.add(parent.getId() + config.getBNF_MD5SUM() + " is present.");
+                message += "; bnf.MD5SUM is present.";
             }
+            errors.add(message);
             return;
         }
 
         if (!isInArchive(info.getId(), parent.getContent())) {
-            errors.add("Checksum information not present in archive.");
+            errors.add("Checksum information not present in archive. [" + info.getId() + "]");
         }
 
         for (String dataId : info.getAllIds()) {
@@ -504,12 +506,12 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         if (!isInArchive(structure.getId(), parent.getContent())) {
-            errors.add("Reduced tagging missing from archive.");
+            errors.add("Reduced tagging missing from archive. [" + structure.getId() + "]");
         }
 
         for (StructurePage page : structure) {
             if (StringUtils.isBlank(page.getId())) {
-                errors.add("Page ID missing. [" + page + "]");
+                errors.add("Page ID missing. [" + page.getId() + "]");
             }
             if (page.getVerso() != null) {
                 check(page.getVerso(), errors, warnings);
@@ -588,7 +590,8 @@ public class BookChecker extends AbstractArchiveChecker {
             errors.add("Column letter designation missing. [" + column + "]");
         }
         if (column.getTotalLines() < 0) {
-            warnings.add("Total lines of column not defined. [" + column + "]");
+            warnings.add("Total lines of column not defined. [" + column.getParentSide()
+                    + " " + column.getColumnLetter() + "]");
         }
         if (column.getItems() != null) {
             for (Item item : column.getItems()) {
