@@ -21,13 +21,38 @@ public class CollectionDerivative extends AbstractDerivative {
         this.collection = collection;
     }
 
+    /**
+     * Update checksum values of the collection plus all books contained within
+     * the collection.
+     *
+     * Checksum values will be updated if
+     * <ul>
+     *     <li>the last modified date of the file falls after the last modified
+     *          date of the checksum file</li>
+     *     <li>an item does not have a checksum value in the checksum file</li>
+     *     <li>the force flag is present</li>
+     * </ul>
+     *
+     * @param force force update of all checksum values
+     * @throws IOException
+     */
     public void updateChecksum(boolean force) throws IOException {
         List<String> errors = new ArrayList<>();
 
         store.updateChecksum(collection, force, errors);
 
-        if (errors.size() > 0) {
-            reportError(errors.toArray(new String[errors.size()]));
+        if (!errors.isEmpty()) {
+            reportError("Errors", errors);
+            errors.clear();
+        }
+
+        for (String bookName : store.listBooks(collection)) {
+            store.updateChecksum(collection, bookName, force, errors);
+
+            if (!errors.isEmpty()) {
+                reportError("Errors", errors);
+                errors.clear();
+            }
         }
     }
 

@@ -249,14 +249,8 @@ public class ArchiveTool {
             // TODO test
             try {
                 for (String col : store.listBookCollections()) {
-
                     CollectionDerivative cDeriv = new CollectionDerivative(col, report, store);
                     cDeriv.updateChecksum(force);
-
-                    for (String book : store.listBooks(col)) {
-                        BookDerivative bDeriv = new BookDerivative(col, book, report, store);
-                        bDeriv.updateChecksum(force);
-                    }
                 }
             } catch (IOException e) {
                 displayError("Unable to update checksums.", args, e);
