@@ -55,4 +55,13 @@ public class BookDerivative extends AbstractDerivative {
         }
     }
 
+    public void generateAndWriteImageList(boolean force) throws IOException {
+        List<String> errors = new ArrayList<>();
+        store.generateAndWriteImageList(collection, book, force, errors);
+
+        if (!errors.isEmpty()) {
+            reportError("Errors:", errors);
+        }
+    }
+
 }

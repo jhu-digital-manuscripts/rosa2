@@ -16,6 +16,7 @@ import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.CharacterNames;
@@ -35,7 +36,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -53,6 +53,7 @@ import static org.mockito.Matchers.anyBoolean;
 import static org.mockito.Matchers.anyList;
 import static org.mockito.Matchers.anyObject;
 import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.atMost;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -110,7 +111,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
         when(context.languages()).thenReturn(new String[] {"en", "fr"});
         when(context.getPERMISSION()).thenReturn(".permission_");
         when(context.getDESCRIPTION()).thenReturn(".description_");
-        when(context.getIMAGES()).thenReturn(GOOD_FILE);
+        when(context.getIMAGES()).thenReturn(".images.csv");
         when(context.getIMAGES_CROP()).thenReturn(GOOD_FILE);
         when(context.getCHARACTER_NAMES()).thenReturn("character_names.csv");
         when(context.getCROP()).thenReturn(GOOD_FILE);
@@ -125,6 +126,15 @@ public class StoreImplTest extends AbstractFileSystemTest {
         when(context.getTRANSCRIPTION()).thenReturn(".transcription");
         when(context.getXML()).thenReturn(".xml");
         when(context.getSHA1SUM()).thenReturn(".SHA1SUM");
+
+        when(context.getMISSING_PREFIX()).thenReturn("*");
+        when(context.getTIF()).thenReturn(".tif");
+        when(context.getIMG_BACKCOVER()).thenReturn(".binding.backcover.tif");
+        when(context.getIMG_ENDPASTEDOWN()).thenReturn(".endmatter.pastedown.tif");
+        when(context.getIMG_END_FLYLEAF()).thenReturn(".endmatter.flyleaf.");
+        when(context.getIMG_FRONTCOVER()).thenReturn(".binding.frontcover.tif");
+        when(context.getIMG_FRONTPASTEDOWN()).thenReturn(".frontmatter.pastedown.tif");
+        when(context.getIMG_FRONT_FLYLEAF()).thenReturn(".frontmatter.flyleaf.");
     }
 
     @Test
@@ -272,8 +282,6 @@ public class StoreImplTest extends AbstractFileSystemTest {
         }
     }
 
-
-
     @Test
     @SuppressWarnings("unchecked")
     public void updateChecksumCreatesNewChecksumFile() throws Exception {
@@ -315,6 +323,61 @@ public class StoreImplTest extends AbstractFileSystemTest {
         assertTrue(inCollection.contains("narrative_sections.csv"));
 
         verify(serializerMap.get(SHA1Checksum.class)).write(anyObject(), any(OutputStream.class));
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void generateAndWriteImageListTest() throws Exception {
+        Set<Class> classes = new HashSet<>();
+        classes.add(ImageList.class);
+        mockSerializers(classes);
+
+        List<String> errors = new ArrayList<>();
+        store.generateAndWriteImageList("data", "LudwigXV7", true, errors);
+
+        final String[] expected = {
+                "LudwigXV7.binding.frontcover.tif", "LudwigXV7.frontmatter.pastedown.tif",
+                "LudwigXV7.frontmatter.flyleaf.001r.tif", "LudwigXV7.frontmatter.flyleaf.001v.tif",
+                "LudwigXV7.001r.tif", "LudwigXV7.001v.tif", "LudwigXV7.002r.tif", "LudwigXV7.002v.tif",
+                "LudwigXV7.003r.tif", "LudwigXV7.003v.tif", "LudwigXV7.004r.tif", "LudwigXV7.004v.tif",
+                "LudwigXV7.005r.tif", "LudwigXV7.005v.tif","LudwigXV7.006r.tif", "LudwigXV7.006v.tif",
+                "LudwigXV7.007r.tif", "LudwigXV7.007v.tif", "LudwigXV7.008r.tif", "LudwigXV7.008v.tif",
+                "LudwigXV7.009r.tif", "LudwigXV7.009v.tif", "LudwigXV7.010r.tif", "LudwigXV7.010v.tif",
+                "LudwigXV7.endmatter.pastedown.tif", "LudwigXV7.binding.backcover.tif"
+        };
+
+        List<BookImage> expectedImages = new ArrayList<>();
+        for (int i = 0; i < expected.length; i++) {
+            BookImage image = new BookImage();
+
+            image.setId(expected[i]);
+            image.setWidth(3);
+            image.setHeight(3);
+            if (i == 0 || i == 1 || i == 3 ||i == 24 || i == 25) {
+                image.setMissing(true);
+            } else {
+                image.setMissing(false);
+            }
+
+            expectedImages.add(image);
+        }
+
+        ImageList expectedImageList = new ImageList();
+        expectedImageList.setId("LudwigXV7.images.csv");
+        expectedImageList.setImages(expectedImages);
+
+        verify(serializerMap.get(ImageList.class)).write(eq(expectedImageList), any(OutputStream.class));
+        verify(context, atLeastOnce()).getIMG_BACKCOVER();
+        verify(context).getIMG_END_FLYLEAF();
+        verify(context, atLeastOnce()).getIMG_FRONTCOVER();
+        verify(context).getIMG_FRONT_FLYLEAF();
+        verify(context, atLeastOnce()).getIMG_ENDPASTEDOWN();
+        verify(context, atLeastOnce()).getIMG_FRONTPASTEDOWN();
+        verify(context, atLeastOnce()).getTIF();
+        verify(context, atLeastOnce()).getIMAGES();
+
+        assertEquals(0, errors.size());
+
     }
 
     @SuppressWarnings("unchecked")

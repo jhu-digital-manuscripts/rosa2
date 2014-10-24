@@ -116,7 +116,7 @@ public class StoreUpdateChecksumIntegrationTest extends AbstractFileSystemTest {
             }
 
             assertEquals(1, collectionPath.toFile().list().length);
-            assertEquals(52, bookPath.toFile().list().length);
+            assertEquals(53, bookPath.toFile().list().length);
         }
     }
 
@@ -219,7 +219,7 @@ public class StoreUpdateChecksumIntegrationTest extends AbstractFileSystemTest {
         ByteStreamGroup bookStreams = new FSByteStreamGroup(bookPath.toString());
         assertNotNull(bookStreams);
         assertEquals(0, bookStreams.numberOfByteStreamGroups());
-        assertEquals(51, bookStreams.numberOfByteStreams());
+        assertEquals(52, bookStreams.numberOfByteStreams());
         assertFalse(bookStreams.hasByteStream("LudwigXV7.SHA1SUM"));
 
         // Load collection + book
@@ -241,7 +241,7 @@ public class StoreUpdateChecksumIntegrationTest extends AbstractFileSystemTest {
 
         SHA1Checksum checksum = book.getSHA1Checksum();
         assertNotNull(checksum);
-        assertEquals(51, checksum.getAllIds().size());
+        assertEquals(52, checksum.getAllIds().size());
 
         assertEquals(0, badChecksums(collection, book));
 
@@ -250,7 +250,7 @@ public class StoreUpdateChecksumIntegrationTest extends AbstractFileSystemTest {
         assertNotNull(newLines);
 
         // Make sure the two lists are different!
-        assertEquals(51, newLines.size());
+        assertEquals(52, newLines.size());
 
         for (String str : newLines) {
             String[] parts = str.split("\\s+");
@@ -300,7 +300,7 @@ public class StoreUpdateChecksumIntegrationTest extends AbstractFileSystemTest {
 
         // Make sure the two lists are different!
         assertNotEquals(originalLines, newLines);
-        assertEquals(51, newLines.size());
+        assertEquals(52, newLines.size());
 
         for (String str : newLines) {
             String[] parts = str.split("\\s+");

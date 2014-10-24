@@ -20,16 +20,21 @@ public class ToolConfig {
     @Inject @Named("CMD_UPDATE")
     private String cmdUpdate;
 
+    @Inject @Named("CMD_UPDATE_IMAGE_LIST")
+    private String cmdUpdateImageList;
+
     @Inject @Named("FLAG_CHECK_BITS")
     private String flagCheckBits;
 
     @Inject @Named("FLAG_SHOW_ERRORS")
     private String flagShowErrors;
 
+    @Inject @Named("FLAG_FORCE")
+    private String flagForce;
+
 // -----------------------------------------------------------------------------------
 // ------ Getters --------------------------------------------------------------------
 // -----------------------------------------------------------------------------------
-
 
     public String getCmdList() {
         return cmdList;
@@ -57,5 +62,13 @@ public class ToolConfig {
 
     public String getCmdUpdate() {
         return cmdUpdate;
+    }
+
+    public String getCmdUpdateImageList() {
+        return cmdUpdateImageList;
+    }
+
+    public String getFlagForce() {
+        return flagForce;
     }
 }

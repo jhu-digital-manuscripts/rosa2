@@ -13,6 +13,7 @@ public class BookImageComparator implements Comparator<BookImage> {
     private static final String pastedown = "pastedown";
     private static final String endmatter = "endmatter";
     private static final String backcover = "backcover";
+    private static final String misc = "misc";
 
     private static final String folioMatcher = "\\d+(r|v)";
 
@@ -87,6 +88,14 @@ public class BookImageComparator implements Comparator<BookImage> {
                     return i1[3].compareToIgnoreCase(i2[3]);
                 }
             }
+
+            if (i1[1].equals(misc) && !i2[1].equals(misc)) {
+                // only i1 is misc
+                return 1;
+            } else if (!i1[1].equals(misc) && i2[1].equals(misc)) {
+                // only i2 is misc
+                return -1;
+            } // if both are misc, use default behavior
 
         } catch (IndexOutOfBoundsException e) {
             // TODO

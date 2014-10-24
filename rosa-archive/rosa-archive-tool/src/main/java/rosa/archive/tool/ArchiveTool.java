@@ -15,7 +15,6 @@ import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.store.Store;
 import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
 import rosa.archive.tool.config.ToolConfig;
 import rosa.archive.tool.derivative.BookDerivative;
 import rosa.archive.tool.derivative.CollectionDerivative;
@@ -106,6 +105,8 @@ public class ArchiveTool {
             check(cmd);
         } else if (command.equals(config.getCmdUpdate())) {
             update(cmd);
+        } else if (command.equals(config.getCmdUpdateImageList())) {
+            generateImageList(cmd);
         }
     }
 
@@ -282,7 +283,12 @@ public class ArchiveTool {
         } else {
             displayError("Too many arguments. USAGE: update <collectionId> <bookId>", args);
         }
+    }
 
+    private void generateImageList(CommandLine cmd) {
+        boolean force = cmd.hasOption("force") || cmd.hasOption("f");
+        String[] args = cmd.getArgs();
+        
     }
 
 }
