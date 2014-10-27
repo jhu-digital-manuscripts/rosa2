@@ -106,7 +106,7 @@ public class ArchiveTool {
         } else if (command.equals(config.getCmdUpdate())) {
             update(cmd);
         } else if (command.equals(config.getCmdUpdateImageList())) {
-            generateImageList(cmd);
+            updateImageList(cmd);
         }
     }
 
@@ -136,51 +136,55 @@ public class ArchiveTool {
         String[] args = cmd.getArgs();
         boolean showErrors = cmd.hasOption(config.getFlagShowErrors());
 
-        // list
         List<String> errors = new ArrayList<>();
-        if (args.length == 1) {
-            // list
-            report.println("Collections: ");
-            try {
-                String[] collectionNames = store.listBookCollections();
-                for (String name : collectionNames) {
-                    report.println("  " + name);
-                }
-            } catch (IOException e) {
-                displayError("Error: Unable to read collection names.", args, e);
-            }
-        } else if (args.length == 2) {
-            // list <collectionId>
-            report.println("Books in " + args[1]);
-            try {
-                String[] books = store.listBooks(args[1]);
-                for (String name : books) {
-                    report.println("  " + name);
-                }
-            } catch (IOException e) {
-                displayError("Error: Unable to read book names in collection [" + args[1] + "]", args, e);
-            }
-        } else if (args.length == 3) {
-            // list <collectionId> <bookId>
-            report.println("Stuff in " + args[1] + ":" + args[2]);
-            try {
-                Book book = store.loadBook(args[1], args[2], errors);
-                if (book != null) {
-                    for (String item : book.getContent()) {
-                        report.println("  " + item);
+        switch (args.length) {
+            case 1:
+                // list
+                report.println("Collections: ");
+                try {
+                    String[] collectionNames = store.listBookCollections();
+                    for (String name : collectionNames) {
+                        report.println("  " + name);
                     }
-                } else {
-                    report.println("Failed to read book. [" + args[1] + ":" + args[2] + "]");
+                } catch (IOException e) {
+                    displayError("Error: Unable to read collection names.", args, e);
                 }
+                break;
+            case 2:
+                // list <collectionId>
+                report.println("Books in " + args[1]);
+                try {
+                    String[] books = store.listBooks(args[1]);
+                    for (String name : books) {
+                        report.println("  " + name);
+                    }
+                } catch (IOException e) {
+                    displayError("Error: Unable to read book names in collection [" + args[1] + "]", args, e);
+                }
+                break;
+            case 3:
+                // list <collectionId> <bookId>
+                report.println("Stuff in " + args[1] + ":" + args[2]);
+                try {
+                    Book book = store.loadBook(args[1], args[2], errors);
+                    if (book != null) {
+                        for (String item : book.getContent()) {
+                            report.println("  " + item);
+                        }
+                    } else {
+                        report.println("Failed to read book. [" + args[1] + ":" + args[2] + "]");
+                    }
 
-                if (showErrors && !errors.isEmpty()) {
-                    displayError("Errors: ", errors);
+                    if (showErrors && !errors.isEmpty()) {
+                        displayError("Errors: ", errors);
+                    }
+                } catch (IOException e) {
+                    displayError("Error: Unable to load book [" + args[1] + ":" + args[2] + "]", args, e);
                 }
-            } catch (IOException e) {
-                displayError("Error: Unable to load book [" + args[1] + ":" + args[2] + "]", args, e);
-            }
-        } else {
-            displayError("Too many arguments. USAGE: list <collectionId> <bookId>", args);
+                break;
+            default:
+                displayError("Too many arguments. USAGE: list [-options] <collectionId> <bookId>", args);
+                break;
         }
 
         if (!showErrors && !errors.isEmpty()) {
@@ -199,44 +203,49 @@ public class ArchiveTool {
         boolean checkBits = cmd.hasOption(config.getFlagCheckBits());
 
         report.println("Checking...");
-        if (args.length == 1) {
-            // check everything
-            try {
-                String[] collections =  store.listBookCollections();
-                if (collections != null) {
-                    for (String collectionName : collections) {
-                        CollectionDerivative cDeriv = new CollectionDerivative(collectionName, report, store);
-                        cDeriv.check(checkBits);
+        switch (args.length) {
+            case 1:
+                // check everything
+                try {
+                    String[] collections =  store.listBookCollections();
+                    if (collections != null) {
+                        for (String collectionName : collections) {
+                            CollectionDerivative cDeriv = new CollectionDerivative(collectionName, report, store);
+                            cDeriv.check(checkBits);
+                        }
                     }
+                } catch (IOException e) {
+                    displayError("Error: Unable to check archive.", args, e);
                 }
-            } catch (IOException e) {
-                displayError("Error: Unable to check archive.", args, e);
-            }
-        } else if (args.length == 2) {
-            // check collection
-            CollectionDerivative cDeriv = new CollectionDerivative(args[1], report, store);
-            try {
-                cDeriv.check(checkBits);
-            } catch (IOException e) {
-                displayError("Error: Unable to check collection. [" + args[1] + "]", args, e);
-            }
-        } else if (args.length == 3) {
-            // check book
-            BookDerivative bDeriv = new BookDerivative(args[1], args[2], report, store);
-            try {
-                bDeriv.check(checkBits);
-            } catch (IOException e) {
-                displayError("Error: Unable to load book. [" + args[1] + ":" + args[2] + "]", args, e);
-            }
-        } else {
-            displayError("Too many arguments. USAGE: check <collectionId> <bookId>", args);
+                break;
+            case 2:
+                // check collection
+                CollectionDerivative cDeriv = new CollectionDerivative(args[1], report, store);
+                try {
+                    cDeriv.check(checkBits);
+                } catch (IOException e) {
+                    displayError("Error: Unable to check collection. [" + args[1] + "]", args, e);
+                }
+                break;
+            case 3:
+                // check book
+                BookDerivative bDeriv = new BookDerivative(args[1], args[2], report, store);
+                try {
+                    bDeriv.check(checkBits);
+                } catch (IOException e) {
+                    displayError("Error: Unable to load book. [" + args[1] + ":" + args[2] + "]", args, e);
+                }
+                break;
+            default:
+                displayError("Too many arguments. USAGE: check [-options] <collectionId> <bookId>", args);
+                break;
         }
 
         report.println("...complete");
     }
 
     /**
-     *
+     * Update checksum values in the archive.
      *
      * @param cmd CLI command
      */
@@ -244,51 +253,102 @@ public class ArchiveTool {
         boolean force = cmd.hasOption("force") || cmd.hasOption("f");
         String[] args = cmd.getArgs();
 
-        if (args.length == 1) {
-            // update all checksums in all collections
-            report.println("Updating all checksums.");
-            // TODO test
-            try {
-                for (String col : store.listBookCollections()) {
-                    CollectionDerivative cDeriv = new CollectionDerivative(col, report, store);
-                    cDeriv.updateChecksum(force);
+        switch (args.length) {
+            case 1:
+                // update all checksums in all collections
+                report.println("Updating all checksums.");
+                try {
+                    for (String col : store.listBookCollections()) {
+                        CollectionDerivative cDeriv = new CollectionDerivative(col, report, store);
+                        cDeriv.updateChecksum(force);
+                    }
+                } catch (IOException e) {
+                    displayError("Unable to update checksums.", args, e);
                 }
-            } catch (IOException e) {
-                displayError("Unable to update checksums.", args, e);
-            }
-        } else if (args.length == 2) {
-            // update checksums for the collection (plus all books?)
-            String collectionId = args[1];
-            report.println("Updating checksum for collection [" + collectionId + "]");
 
-            CollectionDerivative cDeriv = new CollectionDerivative(collectionId, report, store);
-            try {
-                cDeriv.updateChecksum(force);
-            } catch (IOException e) {
-                displayError("Failed to update checksums for collection. [" + collectionId + "]", args, e);
-            }
+                break;
+            case 2:
+                // update checksums for the collection (plus all books?)
+                String collectionId = args[1];
+                report.println("Updating checksum for collection [" + collectionId + "]");
 
-        } else if (args.length == 3) {
-            // update checksums only for the book
-            String collectionId = args[1];
-            String bookId = args[2];
-            report.println("Updating checksums for book [" + collectionId + ":" + bookId + "]");
+                CollectionDerivative cDeriv = new CollectionDerivative(collectionId, report, store);
+                try {
+                    cDeriv.updateChecksum(force);
+                } catch (IOException e) {
+                    displayError("Failed to update checksums for collection. [" + collectionId + "]", args, e);
+                }
 
-            BookDerivative bDeriv = new BookDerivative(collectionId, bookId, report, store);
-            try {
-                bDeriv.updateChecksum(force);
-            } catch (IOException e) {
-                displayError("Failed to update checksums. [" + collectionId + ":" + bookId + "]", args, e);
-            }
-        } else {
-            displayError("Too many arguments. USAGE: update <collectionId> <bookId>", args);
+                break;
+            case 3:
+                // update checksums only for the book
+//                String collectionId = args[1];
+                String bookId = args[2];
+                report.println("Updating checksums for book [" + args[1] + ":" + bookId + "]");
+
+                BookDerivative bDeriv = new BookDerivative(args[1], bookId, report, store);
+                try {
+                    bDeriv.updateChecksum(force);
+                } catch (IOException e) {
+                    displayError("Failed to update checksums. [" + args[1] + ":" + bookId + "]", args, e);
+                }
+
+                break;
+            default:
+                displayError("Too many arguments. USAGE: update [-options] <collectionId> <bookId>", args);
+                break;
         }
     }
 
-    private void generateImageList(CommandLine cmd) {
+    /**
+     * Update / create image list for books in the archive.
+     *
+     * @param cmd CLI command
+     */
+    private void updateImageList(CommandLine cmd) {
         boolean force = cmd.hasOption("force") || cmd.hasOption("f");
         String[] args = cmd.getArgs();
-        
+
+        switch (args.length) {
+            case 1:
+                try {
+                    for (String collection : store.listBookCollections()) {
+                        for (String book : store.listBooks(collection)) {
+                            report.println("Updating image list for book. [" + collection + ":" + book + "]");
+                            BookDerivative bDeriv = new BookDerivative(collection, book, report, store);
+                            bDeriv.generateAndWriteImageList(force);
+                        }
+                    }
+                } catch (IOException e) {
+                    displayError("Failed to update image lists.", args, e);
+                }
+                break;
+            case 2:
+                try {
+                    for (String book : store.listBooks(args[1])) {
+                        report.println("Updating image list for book. [" + args[1] + ":" + book + "]");
+                        BookDerivative bDeriv = new BookDerivative(args[1], book, report, store);
+                        bDeriv.generateAndWriteImageList(force);
+                    }
+                } catch (IOException e) {
+                    displayError("Failed to update image lists. [" + args[1] + "]", args, e);
+                }
+                break;
+            case 3:
+                BookDerivative bDeriv = new BookDerivative(args[1], args[2], report, store);
+                try {
+                    report.println("Updating image list for book. [" + args[1] + ":" + args[2] + "]");
+                    bDeriv.generateAndWriteImageList(force);
+                } catch (IOException e) {
+                    displayError("Failed to update image list. [" + args[1] + ":" + args[2] + "]", args, e);
+                }
+                break;
+            default:
+                displayError("Too many arguments. Usage: update-image-list [-options] <collectionId> <bookId>", args);
+                break;
+        }
+
+        report.println("...complete");
     }
 
 }

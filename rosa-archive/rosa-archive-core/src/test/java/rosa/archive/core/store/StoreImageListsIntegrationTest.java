@@ -40,7 +40,7 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
 
     private Store store;
 
-    private Path originalPath;
+    private Path defaultPath;
     private File folder;
 
     @Before
@@ -48,12 +48,10 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
         super.setup();
         URL url = getClass().getClassLoader().getResource("data/LudwigXV7");
         assertNotNull(url);
-        originalPath = Paths.get(url.toURI());
-        assertNotNull(originalPath);
+        defaultPath = Paths.get(url.toURI());
+        assertNotNull(defaultPath);
 
         folder = tempFolder.newFolder("1");
-//        collectionPath = Files.createDirectories(folder.toPath().resolve(COLLECTION));
-//        bookPath = Files.createDirectories(collectionPath.resolve("LudwigXV7"));
 
         ByteStreamGroup tempGroup = new FSByteStreamGroup(folder.toString());
         assertNotNull(tempGroup);
@@ -69,7 +67,7 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
      *
      * @throws IOException
      */
-    private void copyTestFiles(Path collectionPath, Path bookPath) throws IOException {
+    private void copyTestFiles(Path originalPath, Path bookPath) throws IOException {
         // Copy test files to tmp directory
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(originalPath, new DirectoryStream.Filter<Path>() {
             @Override
@@ -87,25 +85,39 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
                     assertTrue(Files.isRegularFile(filePath));
                 }
             }
+        }
+    }
 
-            assertEquals(1, collectionPath.toFile().list().length);
-            assertEquals(51, bookPath.toFile().list().length);
+    private void checkImageList(Path imageListPath, String[] expected) throws IOException {
+        assertNotNull(expected);
+        assertNotNull(imageListPath);
+
+        assertTrue(Files.exists(imageListPath));
+        assertTrue(Files.isRegularFile(imageListPath));
+
+        List<String> lines = Files.readAllLines(imageListPath, Charset.forName("UTF-8"));
+        assertNotNull(lines);
+        assertEquals(expected.length, lines.size());
+        for (int i = 0; i < lines.size(); i++) {
+            String line = lines.get(i);
+
+            assertNotNull(line);
+            assertTrue(line.startsWith(expected[i]));
         }
     }
 
     @Test
     public void generateAndWriteImageListIntegrationTest() throws Exception {
-        Path collectionPath = Files.createDirectories(folder.toPath().resolve(COLLECTION));
-        Path bookPath = Files.createDirectories(collectionPath.resolve("LudwigXV7"));
+        Path bookPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("LudwigXV7"));
 
-        copyTestFiles(collectionPath, bookPath);
+        copyTestFiles(defaultPath, bookPath);
 
         final String[] expected = {
                 "*LudwigXV7.binding.frontcover.tif", "*LudwigXV7.frontmatter.pastedown.tif",
                 "LudwigXV7.frontmatter.flyleaf.001r.tif", "*LudwigXV7.frontmatter.flyleaf.001v.tif",
                 "LudwigXV7.001r.tif", "LudwigXV7.001v.tif", "LudwigXV7.002r.tif", "LudwigXV7.002v.tif",
                 "LudwigXV7.003r.tif", "LudwigXV7.003v.tif", "LudwigXV7.004r.tif", "LudwigXV7.004v.tif",
-                "LudwigXV7.005r.tif", "LudwigXV7.005v.tif","LudwigXV7.006r.tif", "LudwigXV7.006v.tif",
+                "LudwigXV7.005r.tif", "LudwigXV7.005v.tif", "LudwigXV7.006r.tif", "LudwigXV7.006v.tif",
                 "LudwigXV7.007r.tif", "LudwigXV7.007v.tif", "LudwigXV7.008r.tif", "LudwigXV7.008v.tif",
                 "LudwigXV7.009r.tif", "LudwigXV7.009v.tif", "LudwigXV7.010r.tif", "LudwigXV7.010v.tif",
                 "*LudwigXV7.endmatter.pastedown.tif", "*LudwigXV7.binding.backcover.tif"
@@ -121,17 +133,66 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
         store.generateAndWriteImageList(COLLECTION, "LudwigXV7", false, errors);
 
         assertTrue(errors.isEmpty());
-        assertTrue(bookGroup.hasByteStream("LudwigXV7.images.csv"));
 
-        List<String> lines = Files.readAllLines(bookPath.resolve("LudwigXV7.images.csv"), Charset.forName("UTF-8"));
-        assertNotNull(lines);
-        assertEquals(26, lines.size());
-        for (int i = 0; i < lines.size(); i++) {
-            String line = lines.get(i);
+        checkImageList(bookPath.resolve("LudwigXV7.images.csv"), expected);
+    }
 
-            assertNotNull(line);
-            assertTrue(line.startsWith(expected[i]));
+    @Test
+    public void imageListWithNoImages() throws Exception {
+        Path collectionPath = Files.createDirectories(folder.toPath().resolve(COLLECTION));
+        Path bookPath = Files.createDirectories(collectionPath.resolve("LudwigXV7"));
+
+        // Do not copy files!
+
+        ByteStreamGroup bookGroup = new FSByteStreamGroup(bookPath.toString());
+        assertEquals(0, bookGroup.numberOfByteStreamGroups());
+        assertEquals(0, bookGroup.numberOfByteStreams());
+
+        List<String> errors = new ArrayList<>();
+        store.generateAndWriteImageList(COLLECTION, "LudwigXV7", false, errors);
+
+        assertTrue(errors.isEmpty());
+        assertEquals(1, bookGroup.numberOfByteStreams());
+
+        checkImageList(bookPath.resolve("LudwigXV7.images.csv"), new String[0]);
+    }
+
+    @Test
+    public void replaceExistingImageList() throws Exception {
+        URL url = getClass().getClassLoader().getResource("data/Walters143");
+        assertNotNull(url);
+        Path originalPath = Paths.get(url.toURI());
+
+        Path bookPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("Walters143"));
+
+        // Copy all + image list
+        copyTestFiles(originalPath, bookPath);
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("data/Walters143/Walters143.images.csv")) {
+            Files.copy(in, bookPath.resolve("Walters143.images.csv"));
         }
+
+        ByteStreamGroup bookGroup = new FSByteStreamGroup(bookPath.toString());
+        assertNotNull(bookGroup);
+        assertEquals(0, bookGroup.numberOfByteStreamGroups());
+        assertEquals(7, bookGroup.numberOfByteStreams());
+
+        List<String> errors = new ArrayList<>();
+        store.generateAndWriteImageList(COLLECTION, "Walters143", false, errors);
+
+        assertFalse(errors.isEmpty());
+        assertEquals(1, errors.size());
+        assertEquals("[Walters143.images.csv] already exists. You can force this operation to update " +
+                "the existing image list.", errors.get(0));
+
+        List<String> lines = Files.readAllLines(bookPath.resolve("Walters143.images.csv"));
+        assertNotNull(lines);
+        assertEquals(81, lines.size());
+
+        errors.clear();
+        store.generateAndWriteImageList(COLLECTION, "Walters143", true, errors);
+        
+        assertTrue(errors.isEmpty());
+        checkImageList(bookPath.resolve("Walters143.images.csv"), new String[0]);
     }
 
 }
