@@ -10,7 +10,6 @@ import rosa.archive.model.CharacterNames;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.NarrativeSections;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -50,6 +49,10 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
             if (!collection.isLanguageSupported(lang)) {
                 errors.add("Language should be supported but is not. [" + lang + "]");
             }
+        }
+
+        if (!bsg.hasByteStream(config.getMISSING_IMAGE())) {
+            errors.add("[" + config.getMISSING_IMAGE() + "] missing.");
         }
 
         //   character_names and illustration_titles and narrative_sections

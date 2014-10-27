@@ -118,6 +118,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
         when(context.getILLUSTRATION_TITLES()).thenReturn("illustration_titles.csv");
         when(context.getIMAGE_TAGGING()).thenReturn(GOOD_FILE);
         when(context.getMISSING_PAGES()).thenReturn("missing.txt");
+        when(context.getMISSING_IMAGE()).thenReturn("missing_image.tif");
         when(context.getNARRATIVE_SECTIONS()).thenReturn("narrative_sections.csv");
         when(context.getSHA1SUM()).thenReturn(GOOD_FILE);
         when(context.getNARRATIVE_TAGGING()).thenReturn(GOOD_FILE);

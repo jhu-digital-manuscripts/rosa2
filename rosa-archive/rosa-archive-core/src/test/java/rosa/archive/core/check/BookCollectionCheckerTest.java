@@ -138,6 +138,7 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
         when(config.getIMAGE_TAGGING()).thenReturn(".imagetag.csv");
         when(config.getNARRATIVE_TAGGING()).thenReturn(".nartag.csv");
         when(config.getNARRATIVE_TAGGING_MAN()).thenReturn(".nartag.txt");
+        when(config.getMISSING_IMAGE()).thenReturn("missing_image.tif");
 
         return config;
     }

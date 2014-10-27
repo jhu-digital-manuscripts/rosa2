@@ -103,7 +103,7 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
         assertEquals(1169, errors.size());
-        assertTrue(errors.contains("Croping information for item [Walters143.138v.tif] missing from parent Book archive. [Walters143]"));
+        assertTrue(errors.contains("Cropping information for item [Walters143.138v.tif] missing from parent Book archive. [Walters143]"));
         assertEquals(7, warnings.size());
         assertTrue(warnings.contains("Illustration character ID is non-numeric. Illustration [43], character ID [Galatea]"));
     }

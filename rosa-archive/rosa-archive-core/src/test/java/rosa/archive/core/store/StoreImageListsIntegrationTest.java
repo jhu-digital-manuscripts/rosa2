@@ -61,6 +61,15 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
 
     }
 
+    private void copyMissingImage(Path originalPath, Path collectionPath) throws IOException {
+        if (Files.exists(originalPath.resolve("missing_image.tif"))) {
+            Files.copy(
+                    originalPath.resolve("missing_image.tif"),
+                    collectionPath.resolve("missing_image.tif")
+            );
+        }
+    }
+
     /**
      * Copy all files from the original path (data/LudwigXV7) to a new book in the temporary folder,
      * except for images.csv and images.crop.csv.
@@ -69,6 +78,8 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
      */
     private void copyTestFiles(Path originalPath, Path bookPath) throws IOException {
         // Copy test files to tmp directory
+        copyMissingImage(originalPath.getParent(), bookPath.getParent());
+
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(originalPath, new DirectoryStream.Filter<Path>() {
             @Override
             public boolean accept(Path entry) throws IOException {
@@ -142,7 +153,8 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
         Path collectionPath = Files.createDirectories(folder.toPath().resolve(COLLECTION));
         Path bookPath = Files.createDirectories(collectionPath.resolve("LudwigXV7"));
 
-        // Do not copy files!
+        copyMissingImage(defaultPath.getParent(), collectionPath);
+        // Do not copy book files!
 
         ByteStreamGroup bookGroup = new FSByteStreamGroup(bookPath.toString());
         assertEquals(0, bookGroup.numberOfByteStreamGroups());
@@ -154,7 +166,11 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
         assertTrue(errors.isEmpty());
         assertEquals(1, bookGroup.numberOfByteStreams());
 
-        checkImageList(bookPath.resolve("LudwigXV7.images.csv"), new String[0]);
+        checkImageList(bookPath.resolve("LudwigXV7.images.csv"), new String[] {
+            "*LudwigXV7.binding.frontcover.tif", "*LudwigXV7.frontmatter.pastedown.tif",
+            "*LudwigXV7.frontmatter.flyleaf.001r.tif", "*LudwigXV7.frontmatter.flyleaf.001v.tif",
+            "*LudwigXV7.endmatter.pastedown.tif", "*LudwigXV7.binding.backcover.tif"
+        });
     }
 
     @Test
@@ -190,9 +206,13 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
 
         errors.clear();
         store.generateAndWriteImageList(COLLECTION, "Walters143", true, errors);
-        
+
         assertTrue(errors.isEmpty());
-        checkImageList(bookPath.resolve("Walters143.images.csv"), new String[0]);
+        checkImageList(bookPath.resolve("Walters143.images.csv"), new String[] {
+                "*Walters143.binding.frontcover.tif", "*Walters143.frontmatter.pastedown.tif",
+                "*Walters143.frontmatter.flyleaf.001r.tif", "*Walters143.frontmatter.flyleaf.001v.tif",
+                "*Walters143.endmatter.pastedown.tif", "*Walters143.binding.backcover.tif"
+        });
     }
 
 }

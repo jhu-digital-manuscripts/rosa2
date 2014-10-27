@@ -231,7 +231,12 @@ public class StoreImpl implements Store {
             }
         }
         images.sort(BookImageComparator.instance());
-        addMissingImages(book, images);
+        int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(config.getMISSING_IMAGE()) ?
+                getImageDimensionsHack(
+                        Paths.get(base.getByteStreamGroup(collection).id())
+                                .resolve(config.getMISSING_IMAGE()).toString()) :
+                new int[] {0, 0};
+        addMissingImages(book, images, missingDimensions);
 
         ImageList list = new ImageList();
         list.setId(book + config.getIMAGES());
@@ -267,34 +272,58 @@ public class StoreImpl implements Store {
      * @param book book ID
      * @param images list of images in the book
      */
-    private void addMissingImages(String book, List<BookImage> images) {
+    private void addMissingImages(String book, List<BookImage> images, int[] missingDimensions) {
+        if (images == null || missingDimensions == null || missingDimensions.length != 2) {
+            return;
+        }
+
         if (images.size() < 2) {
+            String[] requiredPages = {
+                    book + config.getIMG_FRONTCOVER(),
+                    book + config.getIMG_FRONTPASTEDOWN(),
+                    book + config.getIMG_FRONT_FLYLEAF() + "001r.tif",
+                    book + config.getIMG_FRONT_FLYLEAF() + "001v.tif",
+                    book + config.getIMG_ENDPASTEDOWN(),
+                    book + config.getIMG_BACKCOVER()
+            };
+
+            for (String name : requiredPages) {
+                BookImage image = new BookImage();
+                image.setId(name);
+                image.setWidth(missingDimensions[0]);
+                image.setHeight(missingDimensions[1]);
+                image.setMissing(true);
+
+                if (!images.contains(image)) {
+                    images.add(image);
+                }
+            }
             return;
         }
         // front/back covers can be missing
         BookImage img = images.get(0);
         if (!img.getId().contains(config.getIMG_FRONTCOVER())) {
             images.add(0, bookImage(
-                    book + config.getIMG_FRONTCOVER(), img.getWidth(), img.getHeight(), true
+                    book + config.getIMG_FRONTCOVER(), missingDimensions[0], missingDimensions[1], true
             ));
         }
         img = images.get(1);
         if (!img.getId().contains(config.getIMG_FRONTPASTEDOWN())) {
             images.add(1, bookImage(
-                    book + config.getIMG_FRONTPASTEDOWN(), img.getWidth(), img.getHeight(), true
+                    book + config.getIMG_FRONTPASTEDOWN(), missingDimensions[0], missingDimensions[1], true
             ));
         }
         // front/back pastedown can be missing
         img = images.get(images.size() - 2);
         if (!img.getId().contains(config.getIMG_ENDPASTEDOWN())) {
             images.add(images.size(), bookImage(
-                    book + config.getIMG_ENDPASTEDOWN(), img.getWidth(), img.getHeight(), true
+                    book + config.getIMG_ENDPASTEDOWN(), missingDimensions[0], missingDimensions[1], true
             ));
         }
         img = images.get(images.size() - 1);
         if (!img.getId().contains(config.getIMG_BACKCOVER())) {
             images.add(images.size(), bookImage(
-                    book + config.getIMG_BACKCOVER(), img.getWidth(), img.getHeight(), true
+                    book + config.getIMG_BACKCOVER(), missingDimensions[0], missingDimensions[1], true
             ));
         }
 
@@ -305,7 +334,7 @@ public class StoreImpl implements Store {
             if (img.getId().endsWith("r.tif")) {
                 images.add(frontFlyleafIndex + 1, bookImage(
                         img.getId().substring(0, img.getId().length() - 5) + "v.tif",
-                        img.getWidth(), img.getHeight(), true
+                        missingDimensions[0], missingDimensions[1], true
                 ));
             }
         }
@@ -315,11 +344,12 @@ public class StoreImpl implements Store {
             if (img.getId().endsWith("r.tif")) {
                 images.add(endFlyleafIndex + 1, bookImage(
                         img.getId().substring(0, img.getId().length() - 5) + "v.tif",
-                        img.getWidth(), img.getHeight(), true
+                        missingDimensions[0], missingDimensions[1], true
                 ));
             }
         }
 
+        images.sort(BookImageComparator.instance());
     }
 
     /**

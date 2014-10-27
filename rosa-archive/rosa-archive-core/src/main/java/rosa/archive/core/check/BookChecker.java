@@ -416,7 +416,7 @@ public class BookChecker extends AbstractArchiveChecker {
             if (StringUtils.isBlank(crop.getId())) {
                 errors.add("Crop ID missing. [" + crop + "]");
             } else if (!isInArchive(crop.getId(), parent.getContent())) {
-                errors.add("Croping information for item [" + crop.getId()
+                errors.add("Cropping information for item [" + crop.getId()
                         + "] missing from parent Book archive. [" + parent.getId() + "]");
             }
 

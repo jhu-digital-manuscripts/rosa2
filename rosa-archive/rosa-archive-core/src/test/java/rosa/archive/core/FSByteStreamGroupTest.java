@@ -61,7 +61,7 @@ public class FSByteStreamGroupTest extends AbstractFileSystemTest {
     public void dataFolderHasFourByteStreams() throws IOException {
         ByteStreamGroup data = base.getByteStreamGroup("data");
         assertNotNull(data);
-        assertEquals(4, data.numberOfByteStreams());
+        assertEquals(5, data.numberOfByteStreams());
     }
 
     @Test
@@ -71,7 +71,7 @@ public class FSByteStreamGroupTest extends AbstractFileSystemTest {
 
         List<String> ids = data.listByteStreamIds();
         assertNotNull(ids);
-        assertEquals(4, ids.size());
+        assertEquals(5, ids.size());
     }
 
     @Test
