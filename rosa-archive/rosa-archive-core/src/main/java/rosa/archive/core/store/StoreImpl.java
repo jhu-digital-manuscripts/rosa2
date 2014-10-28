@@ -13,6 +13,7 @@ import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.model.*;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -118,8 +119,9 @@ public class StoreImpl implements Store {
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
 
-        // Look for language dependent items
+        List<AnnotatedPage> pages = book.getAnnotatedPages();
         for (String name : content) {
+            // Look for language dependent items
             String lang = findLanguageCodeInName(name);
             if (StringUtils.isNotBlank(lang)) {
                 if (name.contains(config.getPERMISSION())) {
@@ -129,6 +131,11 @@ public class StoreImpl implements Store {
                     BookMetadata metadata = loadItem(name, bookStreams, BookMetadata.class, errors);
                     book.addBookMetadata(metadata, lang);
                 }
+            }
+
+            // Look for annotation files matching bookId.PAGE.xml  TODO temporary
+            if (name.matches("\\w+\\.\\d{1,3}(r|v|R|V)\\.xml")) {
+                pages.add(loadItem(name, bookStreams, AnnotatedPage.class, errors));
             }
         }
 

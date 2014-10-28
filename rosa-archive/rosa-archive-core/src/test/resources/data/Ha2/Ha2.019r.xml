@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="Ha2.019r.tif" pagination="361" reader="Harvey"/>	<!-- ABO 023right -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			               <position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Chrysotechni vita sublimata.
+                      			              </marginalia_text>
+            			               	<person name="Chrysotechnus"/>
+            			               </position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						Deuterojason; Archiheros.	<!-- I'm unclear on the first word here, though it definitely seems to be a name.-->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Euhecticus
+    					</marginalia_text>
+    					<person name="Euhecticus"/>	<!-- Creation of Harvey's -->
+    				</position>
+    			</language>
+    			<language ident="EL">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						ἐν ἀχμῆ	<!-- Greek: en axme -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						{ The most Jovial, &amp; Solari[c] man in the World.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Neoph[a][e]bus in Hore.	<!-- This was written Neophoebus before, although it looks like possibly Neophaebus here. -->
+    						Singula dicta, et facta eminentissima.
+    					</marginalia_text>
+    					<person name="Neophoebus"/>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						Ni aliquid boni accrescat vnoquoq[ue] minuto: aliquid mali accrescet unaquaq[ue] hora.   
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="90">
+    					<marginalia_text>
+    						Entelechia triplex; et vita essentia quinta; 
+    						Spartaq[ue] inaccessis multiplicata typis. }
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="la facult&agrave; di"/>
+    		<underline method="pen" type="straight" language="IT" text="uolerla estinguere"/>
+    		<underline method="pen" type="straight" language="IT" text="riputasse per estina alla solita"/>
+    		<underline method="pen" type="straight" language="IT" text="Assicuratosi"/>
+    		<underline method="pen" type="straight" language="IT" text="sulla incorrotta fede del"/>
+    		<underline method="pen" type="straight" language="IT" text="prezzo dell'estintione"/>
+    		<underline method="pen" type="straight" language="IT" text="il priuilegio, o scritture"/>
+    		<underline method="pen" type="straight" language="IT" text="uno auuocato intendente di tal"/>
+    		<underline method="pen" type="straight" language="IT" text="scritture erano sospette di falsit&agrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="procurator fiscale"/>
+    		<underline method="pen" type="straight" language="IT" text="due cose"/>
+    		<underline method="pen" type="straight" language="IT" text="liberation sua della pensione"/>
+    		<underline method="pen" type="straight" language="IT" text="ruina del Bresciano"/>
+    		<underline method="pen" type="straight" language="IT" text="guadagnarmi questa pensione"/>
+    		<underline method="pen" type="straight" language="IT" text="col negare le conuentioni fatte fra noi"/>
+    		<underline method="pen" type="straight" language="IT" text="interuenuto alcun testimone"/>
+    		<underline method="pen" type="straight" language="IT" text="quelle confessando, renderle"/>
+    		<underline method="pen" type="straight" language="IT" text="l'allegar"/>
+    		<underline method="pen" type="straight" language="IT" text="senza il consenso apostolico"/>
+    		<underline method="pen" type="straight" language="IT" text="a parole, o pur' in scritto"/>
+    		<underline method="pen" type="straight" language="IT" text="niun ualore"/>
+    		<underline method="pen" type="straight" language="IT" text="quante falsit&agrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="io no[n]"/>
+    		<underline method="pen" type="straight" language="IT" text="sua, o altrui ruina procacciarmi alcun commodo"/>
+    		<underline method="pen" type="straight" language="IT" text="sincero gentil'huomo"/>
+    		<underline method="pen" type="straight" language="IT" text="un mercante"/>
+    		<underline method="pen" type="straight" language="IT" text="dotato de' beni della fortuna"/>
+    		
+	       
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="head"/>
+    		<symbol name="JC" place="head"/>
+    		<symbol name="JC" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- altri -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!--  si falsita: & -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- uo -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- fatte -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- pu -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- senza il -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- scrit -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- hab -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- procac -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- copiosamen -->    		
+    		
+	    	<!-- Left margin -->
+	    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- auuertito -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- dandosi ... tone  -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- fra noi -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- to, ... sincero  -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="plus_sign" method="pen" place="intext"/> <!-- erano sospette -->
+    		<mark name="vertical_bar" method="chalk" place="intext"/><!-- Chalk mark. Right side, middle of page -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- pensione, & -->
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- altrui ruina -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- Ingenuo -->
+
+    </annotation>
+</transcription>

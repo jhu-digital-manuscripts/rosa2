@@ -1,5 +1,7 @@
 package rosa.archive.model;
 
+import rosa.archive.model.aor.AnnotatedPage;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -43,10 +45,13 @@ public class Book implements HasId, Serializable {
     private Map<String, BookDescription> descriptionMap;
     private Transcription transcription;
 
+    private List<AnnotatedPage> annotatedPages;
+
     public Book() {
         this.permissions = new HashMap<>();
         this.metadataMap = new HashMap<>();
         this.descriptionMap = new HashMap<>();
+        this.annotatedPages = new ArrayList<>();
     }
 
     @Override
@@ -183,6 +188,14 @@ public class Book implements HasId, Serializable {
         this.transcription = transcription;
     }
 
+    public List<AnnotatedPage> getAnnotatedPages() {
+        return annotatedPages;
+    }
+
+    public void setAnnotatedPages(List<AnnotatedPage> annotatedPages) {
+        this.annotatedPages = annotatedPages;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -191,6 +204,8 @@ public class Book implements HasId, Serializable {
         Book book = (Book) o;
 
         if (SHA1Checksum != null ? !SHA1Checksum.equals(book.SHA1Checksum) : book.SHA1Checksum != null) return false;
+        if (annotatedPages != null ? !annotatedPages.equals(book.annotatedPages) : book.annotatedPages != null)
+            return false;
         if (automaticNarrativeTagging != null ? !automaticNarrativeTagging.equals(book.automaticNarrativeTagging) : book.automaticNarrativeTagging != null)
             return false;
         if (bookStructure != null ? !bookStructure.equals(book.bookStructure) : book.bookStructure != null)
@@ -231,6 +246,7 @@ public class Book implements HasId, Serializable {
         result = 31 * result + (metadataMap != null ? metadataMap.hashCode() : 0);
         result = 31 * result + (descriptionMap != null ? descriptionMap.hashCode() : 0);
         result = 31 * result + (transcription != null ? transcription.hashCode() : 0);
+        result = 31 * result + (annotatedPages != null ? annotatedPages.hashCode() : 0);
         return result;
     }
 
@@ -251,6 +267,7 @@ public class Book implements HasId, Serializable {
                 ", metadataMap=" + metadataMap +
                 ", descriptionMap=" + descriptionMap +
                 ", transcription=" + transcription +
+                ", annotatedPages=" + annotatedPages +
                 '}';
     }
 }

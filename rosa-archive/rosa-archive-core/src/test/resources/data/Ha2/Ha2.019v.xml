@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="Ha2.019v.tif" pagination="358" reader="Harvey"/>	<!-- ABO 024left  -->
+    	<annotation>		
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+        				<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Solipatra had all bookes withowt booke. 
+                      			            	</marginalia_text>
+            			        		<person name="Solipatra"/>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Lingua Sirenis: caput Gorgonis: manus Da[e]dali: pes Persei: 
+    						quatuor machina[e] miraculorum 
+    					</marginalia_text>
+    					<person name="Siren"/>
+    					<person name="Gorgon"/>		<!-- I thought it might be a good idea to add these mythological creatures. What do you think? -->
+    					<person name="Daedalus"/>
+    					<person name="Perseus"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Delirant famosissimi Scholastici: quasi infinita[e]
+    						Lectionis: minima[e] artis: nullius fere actioni[s].
+    					</marginalia_text>
+    					<emphasis method="pen" type="straight" text="quasi infinitae"/>	<!-- It looks like he slightly underlined this annotation, but I'm not sure. -->
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="270">
+    					<marginalia_text>
+    						Quantus Ca[e]sar, qui plus,
+    						qu&agrave;m isti Omnes.
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="270">
+    					<marginalia_text>
+    						Eloquentia [-]
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="270">
+    					<marginalia_text>
+    						[-]cules.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+    		<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="cadendo in pouert&agrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="molti debiti"/>
+    		<underline method="pen" type="straight" language="IT" text="da' suoi creditori"/>
+    		<underline method="pen" type="straight" language="IT" text="senza alcun freno di uergogna"/>
+    		<underline method="pen" type="straight" language="IT" text="altro rispetto"/>
+    		<underline method="pen" type="straight" language="IT" text="per pazzo"/>
+    		<underline method="pen" type="straight" language="IT" text="farlo incarcerare"/>
+    		<underline method="pen" type="straight" language="IT" text="migliorare la"/>
+    		<underline method="pen" type="straight" language="IT" text="le leggi non"/>
+    		<underline method="pen" type="straight" language="IT" text="contra i pazzi per conto di debiti"/>
+    		<underline method="pen" type="straight" language="IT" text="termini di giustitia"/>
+    		<underline method="pen" type="straight" language="IT" text="tormentati dal loro furore"/>
+    		<underline method="pen" type="straight" language="IT" text="a negociare pi&ugrave; cautamente"/>
+    		<underline method="pen" type="straight" language="IT" text="quattro anni in quella pazzia"/>
+    		<underline method="pen" type="straight" language="IT" text="cominci&ograve; a poco a poco a"/>
+    		<underline method="pen" type="straight" language="IT" text="ritirarsi verso il suo"/>
+    		<underline method="pen" type="straight" language="IT" text="a fare sue faccende appartenenti"/>
+    		<underline method="pen" type="straight" language="IT" text="col Conte Ludouico"/>
+    		<underline method="pen" type="straight" language="IT" text="con molta sicurt&agrave; detto"/>
+    		<underline method="pen" type="straight" language="IT" text="haueui tu buonissimo tempo, quando"/>
+    		<underline method="pen" type="straight" language="IT" text="d'ogni cura di sospetti, o rispetti, &amp; libero da tutte quelle seruit&ugrave;, che arrecano ta[n]ta"/>
+    		<underline method="pen" type="straight" language="IT" text="al uiuer nostro"/>
+    		<underline method="pen" type="straight" language="IT" text="correui a tuo piacere"/>
+    		<underline method="pen" type="straight" language="IT" text="senza paragone, rispose il mercante, era il uiuer mio"/>
+    		<underline method="pen" type="straight" language="IT" text="&egrave; il uostro"/>
+    		<underline method="pen" type="straight" language="IT" text="trista fortuna"/>
+    		<underline method="pen" type="straight" language="IT" text="lascia dolcezza alcuna senza la compagnia"/>
+    		<underline method="pen" type="straight" language="IT" text="molto amaro"/>
+    		<underline method="pen" type="straight" language="IT" text="quella tranquillit&agrave; di uita"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="JC" place="head"/>
+    		<symbol name="JC" place="left_margin"/>
+    		<symbol name="SS" place="left_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- cau -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- a ri -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Ben -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- o ri -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!--ta[n] -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- pia -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- sen -->
+    		
+	    	<!-- Left margin -->
+	    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- za paragone -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="negociare"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- citta, gli fu da -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- di sospetti -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- mio, & senza -->
+
+    </annotation>
+</transcription>

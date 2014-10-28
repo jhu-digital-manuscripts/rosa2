@@ -20,6 +20,7 @@ import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.redtag.Item;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
@@ -83,6 +84,9 @@ public class BookChecker extends AbstractArchiveChecker {
         check(book.getManualNarrativeTagging(), book, bsg, errors, warnings);
         //   automaticNarrativeTagging
         check(book.getAutomaticNarrativeTagging(), book, bsg, errors, warnings);
+        errors.addAll(check(book.getAutomaticNarrativeTagging(), book, bsg));
+        //   annotated pages
+        errors.addAll(check(book.getAnnotatedPages(), book, bsg));
 
         try {
             // Check character_names and illustration_titles
@@ -718,6 +722,38 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
     // TODO check other parts against BookStructure
+    }
+
+    private List<String> check(List<AnnotatedPage> pages, Book parent, ByteStreamGroup bsg) {
+        List<String> errors = new ArrayList<>();
+
+        if (pages == null) {
+            return errors;
+        }
+
+        for (AnnotatedPage page : pages) {
+            if (page == null) {
+                continue;
+            }
+
+            if (!isInArchive(page.getId(), parent.getContent())) {
+                errors.add("Annotated page not found in archive. ["
+                        + parent.getId() + ":" + page.getId() + "]");
+            }
+
+            if (!isInArchive(page.getPage(), parent.getContent())) {
+                errors.add("Annotated page refers to a page not in archive. ["
+                        + page.getPage() + "]");
+            }
+
+            try {
+                serializerMap.get(AnnotatedPage.class).read(bsg.getByteStream(page.getId()), errors);
+            } catch (IOException e) {
+                errors.add("Failed to serialize [" + parent.getId() + ":" + page.getId() + "]");
+            }
+        }
+
+        return errors;
     }
 
     /**

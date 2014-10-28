@@ -17,6 +17,7 @@ import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
+import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -74,6 +75,7 @@ public abstract class AbstractFileSystemTest {
         classes.add(NarrativeTagging.class);
         classes.add(Transcription.class);
         classes.add(Permission.class);
+        classes.add(AnnotatedPage.class);
 
         Map<Class, Serializer> serializerMap = new HashMap<>();
         try {

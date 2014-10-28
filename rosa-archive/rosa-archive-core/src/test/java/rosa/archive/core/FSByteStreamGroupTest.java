@@ -105,7 +105,7 @@ public class FSByteStreamGroupTest extends AbstractFileSystemTest {
 
         List<String> ids = data.listByteStreamGroupIds();
         assertNotNull(ids);
-        assertEquals(3, ids.size());
+        assertEquals(4, ids.size());
     }
 
     @Test
@@ -115,7 +115,7 @@ public class FSByteStreamGroupTest extends AbstractFileSystemTest {
 
         List<ByteStreamGroup> bsgs = data.listByteStreamGroups();
         assertNotNull(bsgs);
-        assertEquals(3, bsgs.size());
+        assertEquals(4, bsgs.size());
     }
 
     @Test
