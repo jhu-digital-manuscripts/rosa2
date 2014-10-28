@@ -151,7 +151,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
         assertTrue(list.contains("Ferrell"));
         assertTrue(list.contains("LudwigXV7"));
         assertTrue(list.contains("Walters143"));
-        assertTrue(list.contains("Domenichi"));
+        assertTrue(list.contains("Ha2"));
     }
 
     @Test
@@ -193,7 +193,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
         classes.add(AnnotatedPage.class);
 
         String[][] books = {
-                {"Domenichi", "Ferrell", "LudwigXV7", "Walters143"},
+                {"Ha2", "Ferrell", "LudwigXV7", "Walters143"},
                 {"LudwigXV7", "Morgan948", "Senshu2", "Walters143"}
         };
 

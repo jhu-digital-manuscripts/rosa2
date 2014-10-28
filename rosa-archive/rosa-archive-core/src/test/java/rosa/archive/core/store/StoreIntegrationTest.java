@@ -111,10 +111,10 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
         BookCollection collection = store.loadBookCollection("data", errors);
         assertNotNull(collection);
 
-        Book book = store.loadBook("data", "Domenichi", errors);
+        Book book = store.loadBook("data", "Ha2", errors);
 
         assertNotNull(book);
-        assertEquals("Domenichi", book.getId());
+        assertEquals("Ha2", book.getId());
         assertNull(book.getImages());
         assertNull(book.getCropInfo());
         assertNull(book.getSHA1Checksum());

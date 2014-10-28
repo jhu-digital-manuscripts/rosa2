@@ -1,9 +1,11 @@
 package rosa.archive.model.aor;
 
+import java.io.Serializable;
+
 /**
  *
  */
-public abstract class Annotation {
+public abstract class Annotation implements Serializable {
 
     private String referringText;
 

@@ -12,9 +12,11 @@ import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.Mark;
+import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
+import rosa.archive.model.aor.XRef;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -91,14 +93,18 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
             errors.add("Transcription file must have ONE <annotation> element! Current document " +
                     "has [" + annotationEls.getLength() + "]");
         } else {
-            page.setAnnotations(readAnnotations((Element) annotationEls.item(0)));
+            readAnnotations((Element) annotationEls.item(0), page);
         }
 
         return page;
     }
 
-    private List<Annotation> readAnnotations(Element annotationEl) {
-        List<Annotation> annotations = new ArrayList<>();
+    private void readAnnotations(Element annotationEl, AnnotatedPage page) {
+        List<Marginalia> marginalia = page.getMarginalia();
+        List<Mark> marks = page.getMarks();
+        List<Numeral> numerals = page.getNumerals();
+        List<Symbol> symbols = page.getSymbols();
+        List<Underline> underlines = page.getUnderlines();
 
         NodeList children = annotationEl.getChildNodes();
         for (int i = 0; i < children.getLength(); i++) {
@@ -110,16 +116,17 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
             Element annotation = (Element) child;
             switch (annotation.getTagName()) {
                 case "marginalia":
-                    annotations.add(buildMarginalia(annotation));
+                    marginalia.add(buildMarginalia(annotation));
                     break;
                 case "underline":
                     Underline underline = new Underline();
 
                     underline.setMethod(annotation.getAttribute("method"));
                     underline.setType(annotation.getAttribute("type"));
+                    underline.setLanguage(annotation.getAttribute("language"));
                     underline.setReferringText(annotation.getAttribute("text"));
 
-                    annotations.add(underline);
+                    underlines.add(underline);
                     break;
                 case "symbol":
                     Symbol symbol = new Symbol();
@@ -128,7 +135,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                     symbol.setPlace(annotation.getAttribute("place"));
                     symbol.setReferringText(annotation.getAttribute("text"));
 
-                    annotations.add(symbol);
+                    symbols.add(symbol);
                     break;
                 case "mark":
                     Mark mark = new Mark();
@@ -136,16 +143,23 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                     mark.setName(annotation.getAttribute("name"));
                     mark.setPlace(annotation.getAttribute("place"));
                     mark.setMethod(annotation.getAttribute("method"));
+                    mark.setLanguage(annotation.getAttribute("language"));
                     mark.setReferringText(annotation.getAttribute("text"));
 
-                    annotations.add(mark);
+                    marks.add(mark);
+                    break;
+                case "numeral":
+                    Numeral numeral = new Numeral();
+
+                    numeral.setPlace(annotation.getAttribute("place"));
+                    numeral.setReferringText(annotation.getAttribute("text"));
+
+                    numerals.add(numeral);
                     break;
                 default:
                     break;
             }
         }
-
-        return annotations;
     }
 
     private Marginalia buildMarginalia(Element annotation) {
@@ -207,6 +221,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
 
         List<String> people = pos.getPeople();
         List<String> books = pos.getBooks();
+        List<XRef> xRefs = pos.getxRefs();
         List<String> locations = pos.getLocations();
         List<Underline> underlines = pos.getEmphasis();
 
@@ -229,7 +244,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                     locations.add(el.getAttribute("location_name"));
                     break;
                 case "marginalia_text":
-                    pos.setText(el.getTextContent());
+                    pos.getTexts().add(el.getTextContent());
                     break;
                 case "emphasis":
                     Underline underline = new Underline();
@@ -237,6 +252,10 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                     underline.setReferringText(el.getAttribute("emphasis_text"));
 
                     underlines.add(underline);
+                    break;
+                case "X-ref":
+                    XRef xRef = new XRef(el.getAttribute("person"), el.getAttribute("title"));
+                    xRefs.add(xRef);
                     break;
                 default:
                     break;

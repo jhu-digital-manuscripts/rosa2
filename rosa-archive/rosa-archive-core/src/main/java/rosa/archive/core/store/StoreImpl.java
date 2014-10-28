@@ -122,8 +122,8 @@ public class StoreImpl implements Store {
                 }
             }
 
-            // Look for annotation files TODO temporary
-            if (name.contains("Domenichi")) {
+            // Look for annotation files matching bookId.PAGE.xml  TODO temporary
+            if (name.matches("\\w+\\.\\d{1,3}(r|v|R|V)\\.xml")) {
                 pages.add(loadItem(name, bookStreams, AnnotatedPage.class, errors));
             }
         }

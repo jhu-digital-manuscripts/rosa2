@@ -28,8 +28,8 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
 
     @Test
     public void readTest() throws IOException {
-//        final String testFile = "data/Domenichi/Domenichi_007right.xml";
-        final String testFile = "data/Domenichi/Domenichi_007left.xml";
+//        final String testFile = "data/Ha2/Ha2.019r.xml";
+        final String testFile = "data/Ha2/Ha2.019v.xml";
         List<String> errors = new ArrayList<>();
 
         AnnotatedPage page = null;
@@ -44,7 +44,11 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
         assertTrue(page.getSignature().equals(""));
         assertNotNull(page.getReader());
         assertNotNull(page.getPagination());
-        assertEquals(52, page.getAnnotations().size());
+        assertEquals(6, page.getMarginalia().size());
+        assertEquals(12, page.getMarks().size());
+        assertEquals(3, page.getSymbols().size());
+        assertEquals(29, page.getUnderlines().size());
+        assertEquals(0, page.getNumerals().size());
     }
 
 }

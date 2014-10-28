@@ -1,12 +1,13 @@
 package rosa.archive.model.aor;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
  */
-public class MarginaliaLanguage {
+public class MarginaliaLanguage implements Serializable {
     String lang;
     List<Position> positions;
 

@@ -1,12 +1,15 @@
 package rosa.archive.model.aor;
 
+import java.io.Serializable;
+
 /**
  *
  */
-public class Underline extends Annotation {
+public class Underline extends Annotation implements Serializable {
 
     private String method;
     private String type;
+    private String language;
 
     public String getMethod() {
         return method;
@@ -24,6 +27,14 @@ public class Underline extends Annotation {
         this.type = type;
     }
 
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -32,6 +43,7 @@ public class Underline extends Annotation {
 
         Underline underline = (Underline) o;
 
+        if (language != null ? !language.equals(underline.language) : underline.language != null) return false;
         if (method != null ? !method.equals(underline.method) : underline.method != null) return false;
         if (type != null ? !type.equals(underline.type) : underline.type != null) return false;
 
@@ -43,6 +55,7 @@ public class Underline extends Annotation {
         int result = super.hashCode();
         result = 31 * result + (method != null ? method.hashCode() : 0);
         result = 31 * result + (type != null ? type.hashCode() : 0);
+        result = 31 * result + (language != null ? language.hashCode() : 0);
         return result;
     }
 
@@ -51,6 +64,7 @@ public class Underline extends Annotation {
         return "Underline{" +
                 "method='" + method + '\'' +
                 ", type='" + type + '\'' +
+                ", language='" + language + '\'' +
                 '}';
     }
 }

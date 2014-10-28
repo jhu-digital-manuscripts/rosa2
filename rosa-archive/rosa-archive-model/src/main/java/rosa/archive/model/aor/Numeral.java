@@ -5,18 +5,9 @@ import java.io.Serializable;
 /**
  *
  */
-public class Symbol extends Annotation implements Serializable {
+public class Numeral extends Annotation implements Serializable {
 
-    private String name;
     private String place;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getPlace() {
         return place;
@@ -32,10 +23,9 @@ public class Symbol extends Annotation implements Serializable {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
 
-        Symbol symbol = (Symbol) o;
+        Numeral numeral = (Numeral) o;
 
-        if (name != null ? !name.equals(symbol.name) : symbol.name != null) return false;
-        if (place != null ? !place.equals(symbol.place) : symbol.place != null) return false;
+        if (place != null ? !place.equals(numeral.place) : numeral.place != null) return false;
 
         return true;
     }
@@ -43,16 +33,15 @@ public class Symbol extends Annotation implements Serializable {
     @Override
     public int hashCode() {
         int result = super.hashCode();
-        result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (place != null ? place.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return "Symbol{" +
-                "name='" + name + '\'' +
-                ", place='" + place + '\'' +
+        return "Numeral{" +
+                "place='" + place + '\'' +
+                super.toString() +
                 '}';
     }
 }

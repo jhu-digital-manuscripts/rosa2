@@ -196,19 +196,18 @@ public class BookCheckerTest extends AbstractFileSystemTest {
             page.setReader("Harvey Birdman, attorney at law");
             page.setPagination("I don't know what this field will do");
 
-            List<Annotation> annos = new ArrayList<>();
             Underline u1 = new Underline();
             u1.setMethod("UnderlineMethod");
             u1.setReferringText("This is some 'underlined' text.");
             u1.setType("Type");
-            annos.add(u1);
+            page.getUnderlines().add(u1);
+
             Symbol s1 = new Symbol();
             s1.setPlace("left margin");
             s1.setName("SymbolName");
             s1.setReferringText("This is some symbol text.");
-            annos.add(s1);
+            page.getSymbols().add(s1);
 
-            page.setAnnotations(annos);
             annotatedPages.add(page);
             content.add(page.getId());
         }

@@ -2,19 +2,33 @@ package rosa.archive.model.aor;
 
 import rosa.archive.model.HasId;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
  */
-public class AnnotatedPage implements HasId {
+public class AnnotatedPage implements HasId, Serializable {
 
     private String id;
     private String page;
     private String reader;
     private String pagination;
     private String signature;
-    private List<Annotation> annotations;
+    private List<Marginalia> marginalia;
+    private List<Mark> marks;
+    private List<Symbol> symbols;
+    private List<Underline> underlines;
+    private List<Numeral> numerals;
+
+    public AnnotatedPage() {
+        marginalia = new ArrayList<>();
+        marks = new ArrayList<>();
+        symbols = new ArrayList<>();
+        underlines = new ArrayList<>();
+        numerals = new ArrayList<>();
+    }
 
     @Override
     public String getId() {
@@ -58,12 +72,44 @@ public class AnnotatedPage implements HasId {
         this.signature = signature;
     }
 
-    public List<Annotation> getAnnotations() {
-        return annotations;
+    public List<Marginalia> getMarginalia() {
+        return marginalia;
     }
 
-    public void setAnnotations(List<Annotation> annotations) {
-        this.annotations = annotations;
+    public void setMarginalia(List<Marginalia> marginalia) {
+        this.marginalia = marginalia;
+    }
+
+    public List<Mark> getMarks() {
+        return marks;
+    }
+
+    public void setMarks(List<Mark> marks) {
+        this.marks = marks;
+    }
+
+    public List<Symbol> getSymbols() {
+        return symbols;
+    }
+
+    public void setSymbols(List<Symbol> symbols) {
+        this.symbols = symbols;
+    }
+
+    public List<Underline> getUnderlines() {
+        return underlines;
+    }
+
+    public void setUnderlines(List<Underline> underlines) {
+        this.underlines = underlines;
+    }
+
+    public List<Numeral> getNumerals() {
+        return numerals;
+    }
+
+    public void setNumerals(List<Numeral> numerals) {
+        this.numerals = numerals;
     }
 
     @Override
@@ -71,13 +117,18 @@ public class AnnotatedPage implements HasId {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        AnnotatedPage that = (AnnotatedPage) o;
+        AnnotatedPage page1 = (AnnotatedPage) o;
 
-        if (annotations != null ? !annotations.equals(that.annotations) : that.annotations != null) return false;
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (pagination != null ? !pagination.equals(that.pagination) : that.pagination != null) return false;
-        if (reader != null ? !reader.equals(that.reader) : that.reader != null) return false;
-        if (signature != null ? !signature.equals(that.signature) : that.signature != null) return false;
+        if (id != null ? !id.equals(page1.id) : page1.id != null) return false;
+        if (marginalia != null ? !marginalia.equals(page1.marginalia) : page1.marginalia != null) return false;
+        if (marks != null ? !marks.equals(page1.marks) : page1.marks != null) return false;
+        if (numerals != null ? !numerals.equals(page1.numerals) : page1.numerals != null) return false;
+        if (page != null ? !page.equals(page1.page) : page1.page != null) return false;
+        if (pagination != null ? !pagination.equals(page1.pagination) : page1.pagination != null) return false;
+        if (reader != null ? !reader.equals(page1.reader) : page1.reader != null) return false;
+        if (signature != null ? !signature.equals(page1.signature) : page1.signature != null) return false;
+        if (symbols != null ? !symbols.equals(page1.symbols) : page1.symbols != null) return false;
+        if (underlines != null ? !underlines.equals(page1.underlines) : page1.underlines != null) return false;
 
         return true;
     }
@@ -85,10 +136,15 @@ public class AnnotatedPage implements HasId {
     @Override
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (page != null ? page.hashCode() : 0);
         result = 31 * result + (reader != null ? reader.hashCode() : 0);
         result = 31 * result + (pagination != null ? pagination.hashCode() : 0);
         result = 31 * result + (signature != null ? signature.hashCode() : 0);
-        result = 31 * result + (annotations != null ? annotations.hashCode() : 0);
+        result = 31 * result + (marginalia != null ? marginalia.hashCode() : 0);
+        result = 31 * result + (marks != null ? marks.hashCode() : 0);
+        result = 31 * result + (symbols != null ? symbols.hashCode() : 0);
+        result = 31 * result + (underlines != null ? underlines.hashCode() : 0);
+        result = 31 * result + (numerals != null ? numerals.hashCode() : 0);
         return result;
     }
 
@@ -96,10 +152,15 @@ public class AnnotatedPage implements HasId {
     public String toString() {
         return "AnnotatedPage{" +
                 "id='" + id + '\'' +
+                ", page='" + page + '\'' +
                 ", reader='" + reader + '\'' +
                 ", pagination='" + pagination + '\'' +
                 ", signature='" + signature + '\'' +
-                ", annotations=" + annotations +
+                ", marginalia=" + marginalia +
+                ", marks=" + marks +
+                ", symbols=" + symbols +
+                ", underlines=" + underlines +
+                ", numerals=" + numerals +
                 '}';
     }
 }

@@ -1,31 +1,35 @@
 package rosa.archive.model.aor;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Position {
+public class Position implements Serializable {
 
-    String text;
     String place;
     int orientation;
+    List<String> texts;
     List<String> people;
     List<String> books;
     List<String> locations;
+    List<XRef> xRefs;
     List<Underline> emphasis;
 
     public Position() {
+        texts = new ArrayList<>();
         people = new ArrayList<>();
         books = new ArrayList<>();
         locations = new ArrayList<>();
+        xRefs = new ArrayList<>();
         emphasis = new ArrayList<>();
     }
 
-    public String getText() {
-        return text;
+    public List<String> getTexts() {
+        return texts;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setTexts(List<String> texts) {
+        this.texts = texts;
     }
 
     public String getPlace() {
@@ -76,6 +80,14 @@ public class Position {
         this.emphasis = emphasis;
     }
 
+    public List<XRef> getxRefs() {
+        return xRefs;
+    }
+
+    public void setxRefs(List<XRef> xRefs) {
+        this.xRefs = xRefs;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -89,19 +101,21 @@ public class Position {
         if (locations != null ? !locations.equals(position.locations) : position.locations != null) return false;
         if (people != null ? !people.equals(position.people) : position.people != null) return false;
         if (place != null ? !place.equals(position.place) : position.place != null) return false;
-        if (text != null ? !text.equals(position.text) : position.text != null) return false;
+        if (texts != null ? !texts.equals(position.texts) : position.texts != null) return false;
+        if (xRefs != null ? !xRefs.equals(position.xRefs) : position.xRefs != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = text != null ? text.hashCode() : 0;
-        result = 31 * result + (place != null ? place.hashCode() : 0);
+        int result = place != null ? place.hashCode() : 0;
         result = 31 * result + orientation;
+        result = 31 * result + (texts != null ? texts.hashCode() : 0);
         result = 31 * result + (people != null ? people.hashCode() : 0);
         result = 31 * result + (books != null ? books.hashCode() : 0);
         result = 31 * result + (locations != null ? locations.hashCode() : 0);
+        result = 31 * result + (xRefs != null ? xRefs.hashCode() : 0);
         result = 31 * result + (emphasis != null ? emphasis.hashCode() : 0);
         return result;
     }
@@ -109,12 +123,13 @@ public class Position {
     @Override
     public String toString() {
         return "Position{" +
-                "text='" + text + '\'' +
-                ", place='" + place + '\'' +
+                "place='" + place + '\'' +
                 ", orientation=" + orientation +
+                ", texts=" + texts +
                 ", people=" + people +
                 ", books=" + books +
                 ", locations=" + locations +
+                ", xRefs=" + xRefs +
                 ", emphasis=" + emphasis +
                 '}';
     }

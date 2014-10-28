@@ -1,12 +1,13 @@
 package rosa.archive.model.aor;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
  */
-public class Marginalia extends Annotation {
+public class Marginalia extends Annotation implements Serializable {
 
     private String hand;
     private String date;
