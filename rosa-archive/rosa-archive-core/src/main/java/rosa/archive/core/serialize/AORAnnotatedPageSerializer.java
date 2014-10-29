@@ -1,14 +1,13 @@
 package rosa.archive.core.serialize;
 
+import com.google.inject.Inject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.Mark;
@@ -24,7 +23,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,30 +30,45 @@ import java.util.List;
  */
 public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
 
+    private AppConfig config;
+
+    @Inject
+    AORAnnotatedPageSerializer(AppConfig config) {
+        this.config = config;
+    }
 
     @Override
     public AnnotatedPage read(InputStream is, final List<String> errors) throws IOException {
+        // Error reporting for validation
+//        ErrorHandler errorHandler = new ErrorHandler() {
+//            @Override
+//            public void warning(SAXParseException e) throws SAXException {
+//
+//            }
+//
+//            @Override
+//            public void error(SAXParseException e) throws SAXException {
+//                errors.add("[Error] " + e.getLineNumber() + ":"
+//                        + e.getColumnNumber() + ": " + e.getMessage());
+//            }
+//
+//            @Override
+//            public void fatalError(SAXParseException e) throws SAXException {
+//                errors.add("[Fatal Error]: " + e.getLineNumber() + ":"
+//                        + e.getColumnNumber() + ": " + e.getMessage());
+//            }
+//        };
+
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+
+            // Following three lines will validate the XML as it parses!
+//            factory.setNamespaceAware(true);
+//            factory.setValidating(true);
+//            factory.setAttribute(JAXPConstants.JAXP_SCHEMA_LANGUAGE, JAXPConstants.W3C_XML_SCHEMA);
+
             DocumentBuilder builder = factory.newDocumentBuilder();
-            builder.setErrorHandler(new ErrorHandler() {
-                @Override
-                public void warning(SAXParseException e) throws SAXException {
-
-                }
-
-                @Override
-                public void error(SAXParseException e) throws SAXException {
-                    errors.add("[Error]" + e.getLineNumber() + ":"
-                            + e.getColumnNumber() + ": " + e.getMessage());
-                }
-
-                @Override
-                public void fatalError(SAXParseException e) throws SAXException {
-                    errors.add("[Fatal Error] :" + e.getLineNumber() + ":"
-                            + e.getColumnNumber() + ": " + e.getMessage());
-                }
-            });
+//            builder.setErrorHandler(errorHandler);
 
             Document doc = builder.parse(is);
             return buildPage(doc, errors);

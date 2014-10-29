@@ -55,7 +55,8 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
         try (InputStreamReader reader = new InputStreamReader(is, config.getCHARSET())) {
 
             CSVSpreadSheet table = new CSVSpreadSheet(reader, MIN_COLS, MAX_COLS, errors);
-            List<String> headers = new ArrayList<>(Arrays.asList(table.row(0)));
+            List<String> headers = table.size() > 0 ?
+                    new ArrayList<>(Arrays.asList(table.row(0))) : new ArrayList<String>();
 
             // Navigate the rows, skip the 1st row, which contains the headers
             for (int i = 1; i < table.size(); i++) {

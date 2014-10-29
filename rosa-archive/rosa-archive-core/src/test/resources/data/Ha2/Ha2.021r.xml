@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="Ha2.021r.tif" pagination="365" reader="Harvey"/>	<!-- ABO 025right -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Sufficit dici sua malitia.
+                      			            </marginalia_text>
+            			</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						Sufficiat dici sua la[e]titia.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						s[upr]a, 360.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Quot impedimenta; tot calcaria, aut occasiones.
+    						Adhuc animus in exp[edi]to.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		
+    		<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+		<!-- It appears that some text is obscured by the bend of the page. -->
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						fine enowgh: no dispute subtill enowgh: no behauiour sweet enowgh: no discouerie,
+    						or intelligence profound enowgh: no desert meritorious enowgh: "
+    					</marginalia_text>
+    				</position>
+    				<position place="right_margin" book_orientation="90">
+    					<marginalia_text>
+    						" no cautell superabundant: no action supererogatorie. 
+    						No no: this age is a fox: &amp; this world a Lion. 
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="s'oblig&ograve; per contratto di restituirgli"/>
+    		<underline method="pen" type="straight" language="IT" text="parargli l'utile"/>
+    		<underline method="pen" type="straight" language="IT" text="sul banco di San"/>
+    		<underline method="pen" type="straight" language="IT" text="cauati per"/>
+    		<underline method="pen" type="straight" language="IT" text="a morte"/>
+    		<underline method="pen" type="straight" language="IT" text="lasciato heredi altri"/>
+    		<underline method="pen" type="straight" language="IT" text="piu stretti"/>
+    		<underline method="pen" type="straight" language="IT" text="che esso S. Marc'"/>
+    		<underline method="pen" type="straight" language="IT" text="il tempo di restituire"/>
+    		<underline method="pen" type="straight" language="IT" text="con due preti huomini"/>
+    		<underline method="pen" type="straight" language="IT" text="stati presenti"/>
+    		<underline method="pen" type="straight" language="IT" text="in termine di morte"/>
+    		<underline method="pen" type="straight" language="IT" text="hauea dati i quattrocento scudi al nipote"/>
+    		<underline method="pen" type="straight" language="IT" text="non riuolergli altrimenti"/>
+    		<underline method="pen" type="straight" language="IT" text="l'haueua obligato"/>
+    		<underline method="pen" type="straight" language="IT" text="stato per tenerlo in freno"/>
+    		<underline method="pen" type="straight" language="IT" text="che 'l nipote se gli hauesse"/>
+    		<underline method="pen" type="straight" language="IT" text="fargli questo beneficio"/>
+    		<underline method="pen" type="straight" language="IT" text="gli offerse"/>
+    		<underline method="pen" type="straight" language="IT" text="testimoni farne fede in giudicio"/>
+    		<underline method="pen" type="straight" language="IT" text="molti sapeuano"/>
+    		<underline method="pen" type="straight" language="IT" text="che egli haueua"/>
+    		<underline method="pen" type="straight" language="IT" text="conuenuto di restituire i denari"/>
+    		<underline method="pen" type="straight" language="IT" text="incontro tre soli s'offeriuano di far fede"/>
+    		<underline method="pen" type="straight" language="IT" text="tosto pagando sodisfar a molti"/>
+    		<underline method="pen" type="straight" language="IT" text="compiacere a' pochi; e"/>
+    		<underline method="pen" type="straight" language="IT" text="huomo uirtuoso"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="JC" place="head"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- ca -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- soleua ca -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- iqua -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Pao -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- haueua ha -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- offer -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- far fede, co -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- di uo-  -->
+    		
+	    	<!-- Left margin -->
+	    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- Platone. This looks to be part of the marginalia though. -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- uar sul banco -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- uto a dire -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- me ... so -->
+    		
+	    	<!-- Intext -->
+	    	<mark name="dot" method="pen" place="intext"/> <!-- contratto, M. Pao  -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="freno"/>
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- uirtuoso.] -->
+
+    </annotation>
+</transcription>

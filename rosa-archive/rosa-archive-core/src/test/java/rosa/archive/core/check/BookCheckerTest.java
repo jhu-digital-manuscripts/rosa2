@@ -73,9 +73,9 @@ public class BookCheckerTest extends AbstractFileSystemTest {
         );
 
         // TODO this will not be right until a Collection can be fully mocked
-        assertTrue(bChecker.checkContent(mockCollection(), createBook(), bsg, true, new ArrayList<String>(), new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(mockCollection(), createBook(), bsg, true, new ArrayList<String>(), new ArrayList<String>()));
         assertFalse(bChecker.checkContent(mockCollection(), createBadBook(), bsg, true, new ArrayList<String>(), new ArrayList<String>()));
-        assertTrue(bChecker.checkContent(mockCollection(), createBook(), bsg, false, new ArrayList<String>(), new ArrayList<String>()));
+        assertFalse(bChecker.checkContent(mockCollection(), createBook(), bsg, false, new ArrayList<String>(), new ArrayList<String>()));
         assertFalse(bChecker.checkContent(mockCollection(), createBadBook(), bsg, false, new ArrayList<String>(), new ArrayList<String>()));
     }
 

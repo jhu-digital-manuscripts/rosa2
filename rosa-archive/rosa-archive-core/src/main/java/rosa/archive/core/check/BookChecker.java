@@ -2,6 +2,9 @@ package rosa.archive.core.check;
 
 import com.google.inject.Inject;
 import org.apache.commons.lang3.StringUtils;
+import org.xml.sax.ErrorHandler;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
@@ -29,7 +32,14 @@ import rosa.archive.model.redtag.StructureColumn;
 import rosa.archive.model.redtag.StructurePage;
 import rosa.archive.model.redtag.StructurePageSide;
 
+import javax.xml.XMLConstants;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -40,6 +50,7 @@ import java.util.Map;
 public class BookChecker extends AbstractArchiveChecker {
     private static final String PAGE_PATTERN = "\\d+(r|v|R|V)";
     private static final String MANUSCRIPT = "manuscript";
+    private static Schema aorAnnotationSchema;
 
     @Inject
     BookChecker(AppConfig config, Map<Class, Serializer> serializerMap) {
@@ -84,9 +95,9 @@ public class BookChecker extends AbstractArchiveChecker {
         check(book.getManualNarrativeTagging(), book, bsg, errors, warnings);
         //   automaticNarrativeTagging
         check(book.getAutomaticNarrativeTagging(), book, bsg, errors, warnings);
-        errors.addAll(check(book.getAutomaticNarrativeTagging(), book, bsg));
+        check(book.getAutomaticNarrativeTagging(), book, bsg, errors, warnings);
         //   annotated pages
-        errors.addAll(check(book.getAnnotatedPages(), book, bsg));
+        check(book.getAnnotatedPages(), book, bsg, errors, warnings);
 
         try {
             // Check character_names and illustration_titles
@@ -460,8 +471,11 @@ public class BookChecker extends AbstractArchiveChecker {
             String message = "SHA1SUM missing";
             if (isInArchive(parent.getId() + config.getBNF_MD5SUM(), parent.getContent())) {
                 message += "; bnf.MD5SUM is present.";
+                warnings.add(message);
+            } else {
+                message += "; no checksum information found.";
+                errors.add(message);
             }
-            errors.add(message);
             return;
         }
 
@@ -648,7 +662,8 @@ public class BookChecker extends AbstractArchiveChecker {
             }
             if (StringUtils.isBlank(illustration.getPage())) {
                 errors.add("Illustration page missing. [" + illustration.getId() + "]");
-            } else if (!illustration.getPage().matches(PAGE_PATTERN)) {
+            } else if (!illustration.getPage().matches(PAGE_PATTERN) &&
+                    !illustration.getPage().matches("\\w")) {
                 warnings.add("Illustration page may be formatted incorrectly. [" + illustration.getPage() + "]");
             }
             if (illustration.getTitles() == null) {
@@ -724,14 +739,14 @@ public class BookChecker extends AbstractArchiveChecker {
     // TODO check other parts against BookStructure
     }
 
-    private List<String> check(List<AnnotatedPage> pages, Book parent, ByteStreamGroup bsg) {
-        List<String> errors = new ArrayList<>();
+    private void check(List<AnnotatedPage> pages, Book parent, ByteStreamGroup bsg,
+                       final List<String> errors, final List<String> warnings) {
 
         if (pages == null) {
-            return errors;
+            return;
         }
 
-        for (AnnotatedPage page : pages) {
+        for (final AnnotatedPage page : pages) {
             if (page == null) {
                 continue;
             }
@@ -746,14 +761,54 @@ public class BookChecker extends AbstractArchiveChecker {
                         + page.getPage() + "]");
             }
 
-            try {
-                serializerMap.get(AnnotatedPage.class).read(bsg.getByteStream(page.getId()), errors);
-            } catch (IOException e) {
-                errors.add("Failed to serialize [" + parent.getId() + ":" + page.getId() + "]");
+            if (!bsg.hasByteStream(page.getId())) {
+                errors.add("Cannot find file. " + page.getId() + "]");
+            } else {
+                try {
+                    serializerMap.get(AnnotatedPage.class).read(bsg.getByteStream(page.getId()), errors);
+                } catch (IOException e) {
+                    errors.add("Failed to serialize [" + parent.getId() + ":" + page.getId() + "]");
+                }
+
+                try {
+                    if (aorAnnotationSchema == null) {
+                        URL schemaUrl = new URL(config.getAnnotationSchemaUrl());
+                        SchemaFactory schemaFactory =
+                                SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+                        aorAnnotationSchema = schemaFactory.newSchema(schemaUrl);
+                    }
+
+                    Validator validator = aorAnnotationSchema.newValidator();
+                    validator.setErrorHandler(new ErrorHandler() {
+                        @Override
+                        public void warning(SAXParseException e) throws SAXException {
+                            warnings.add("[Warn: " + page.getId() + "] (" + e.getLineNumber() + ":"
+                                    + e.getColumnNumber() + "): " + e.getMessage());
+                        }
+
+                        @Override
+                        public void error(SAXParseException e) throws SAXException {
+                            errors.add("[Error: " + page.getId() + "] (" + e.getLineNumber() + ":"
+                                    + e.getColumnNumber() + "): " + e.getMessage());
+                        }
+
+                        @Override
+                        public void fatalError(SAXParseException e) throws SAXException {
+                            errors.add("[Fatal Error: " + page.getId() + "] (" + e.getLineNumber() + ":"
+                                    + e.getColumnNumber() + "): " + e.getMessage());
+                        }
+                    });
+
+                    Source source = new StreamSource(
+                            bsg.getByteStream(page.getId())
+                    );
+
+                    validator.validate(source);
+                } catch (SAXException | IOException e) {
+                    errors.add("[" + page.getId() + "] failed to validate.");
+                }
             }
         }
-
-        return errors;
     }
 
     /**

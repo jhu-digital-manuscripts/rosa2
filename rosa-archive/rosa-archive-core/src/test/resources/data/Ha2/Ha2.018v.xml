@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="Ha2.018v.tif" pagination="360" reader="Harvey"/>	<!-- ABO 023left -->
+	
+    	<annotation>		<!-- The page numers seem to be out of order due to an error in the printing, hence the pagination is strange. The previous file was page 355. --> 
+    				<!-- There's no problem with the order of the text, just a misnumbering. -->
+    				<!--  Pages 356 and 357 seem to be missing. -->
+    				<!-- 354, 355, 360, 361, 358, 359, 364, 365, 362, 363, 368, 369, 366, 367, 372, 369, 370, 371, and then regular order -->
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					non facil&egrave; litigandum cum amicis.
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						( s[upr]a, 365. / Tam pra[e]cis&egrave;, qu&agrave;m concis&egrave;.	<!-- How should I be capturing these references to other pages? -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Apophthegmata magis honesta, qu&agrave;m pragmatica.
+    						( In dictis, factisq[ue] scrupolosa perfectio. )
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						Euer speak owt of [the] brest of reason concentred: with the tounge of
+    						Eloquence refined: the hart of vigour sublimed: &amp; the witt of 
+    						Prudence vnited: allwais enforced to the strictest point of possibilitie.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		
+    		<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+        
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="la tassa"/>
+    		<underline method="pen" type="straight" language="IT" text="all'arbitrio mio"/>
+    		<underline method="pen" type="straight" language="IT" text="di nuouo"/>
+    		<underline method="pen" type="straight" language="IT" text="a quella me ne"/>
+    		<underline method="pen" type="straight" language="IT" text="poi poco discretamente"/>
+    		<underline method="pen" type="straight" language="IT" text="da mercanti"/>
+    		<underline method="pen" type="straight" language="IT" text="trapassaua i termini dell'"/>
+    		<underline method="pen" type="straight" language="IT" text="allegramente"/>
+    		<underline method="pen" type="straight" language="IT" text="allhora ripreso"/>
+    		<underline method="pen" type="straight" language="IT" text="ingiusta, e a se stesso dannosa"/>
+    		<underline method="pen" type="straight" language="IT" text="riportata fauoreuole"/>
+    		<underline method="pen" type="straight" language="IT" text="l'obligo della creanza"/>
+    		<underline method="pen" type="straight" language="IT" text="a far parole altercatorie"/>
+    		<underline method="pen" type="straight" language="IT" text="a piatire"/>
+    		<underline method="pen" type="straight" language="IT" text="con"/>
+    		<underline method="pen" type="straight" language="IT" text="stimati amici"/>
+    		<underline method="pen" type="straight" language="IT" text="conto d'hospitalita"/>
+    		<underline method="pen" type="straight" language="IT" text="litiga[n]do per"/>
+    		<underline method="pen" type="straight" language="IT" text="le sante ragioni dell'hospitio"/>
+    		<underline method="pen" type="straight" language="IT" text="cortese"/>
+    		<underline method="pen" type="straight" language="IT" text="beneficio"/>
+    		<underline method="pen" type="straight" language="IT" text="una pensione a"/>
+    		<underline method="pen" type="straight" language="IT" text="pigliare moglie"/>
+    		<underline method="pen" type="straight" language="IT" text="estinguesse la pe[n]sione"/>
+    		<underline method="pen" type="straight" language="IT" text="desiderio di maritarsi"/>
+    		<underline method="pen" type="straight" language="IT" text="uolerla estinguere"/>
+    		<underline method="pen" type="straight" language="IT" text="di guadagnarla tosto per"/>
+    		<underline method="pen" type="straight" language="IT" text="Al cui fondamento il"/>
+    		<underline method="pen" type="straight" language="IT" text="auttorit&agrave; di trasferire la pensione"/>
+    		<underline method="pen" type="straight" language="IT" text="trasferita in persona d'un suo"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="JC" place="head"/>
+    		<symbol name="JC" place="left_margin"/>
+    		<symbol name="JC" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- seco -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- fat -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- trapas -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- ripre -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- ritroua -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- siura -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- a far paro -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- paro -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- hauen -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Plato -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- mari -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- al -->
+    		
+	    	<!-- Left margin -->
+	    	<mark name="plus_sign" method="pen" place="left_margin"/> <!-- saua i termini  -->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!--  le altercatorie -->
+    		
+	    	<!-- Intext -->
+	    	<mark name="dot" method="pen" place="intext"/> <!-- honesto, fu -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- presenti, parendo -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- sentenza, rispose -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="sante"/>
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="pensione"/>
+    		
+
+    </annotation>
+</transcription>

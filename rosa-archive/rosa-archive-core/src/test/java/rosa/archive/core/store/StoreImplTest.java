@@ -239,7 +239,7 @@ public class StoreImplTest extends AbstractFileSystemTest {
     private void checkBook(Book book, Set<Class> classes) throws IOException {
         for (Class c : classes) {
             // In the case the a file does not exist, the read() method will not be called...
-            verify(serializerMap.get(c), atMost(2)).read(any(InputStream.class), any(List.class));
+            verify(serializerMap.get(c), atMost(8)).read(any(InputStream.class), any(List.class));
         }
 
         assertNotNull(book.getContent());

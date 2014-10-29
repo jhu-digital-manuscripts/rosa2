@@ -2,6 +2,7 @@ package rosa.archive.core.serialize;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
@@ -13,6 +14,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 /**
  *
@@ -23,32 +26,50 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
 
     @Before
     public void setup() {
-        serializer = new AORAnnotatedPageSerializer();
+        AppConfig config = mock(AppConfig.class);
+        serializer = new AORAnnotatedPageSerializer(config);
+
+        when(config.getAnnotationSchemaUrl()).thenReturn("http://www.livesandletters.ac.uk/schema/aor_20141023.xsd");
+        when(config.getAnnotationDtdUrl()).thenReturn("http://www.livesandletters.ac.uk/schema/aor_20141023.dtd");
     }
 
     @Test
     public void readTest() throws IOException {
-//        final String testFile = "data/Ha2/Ha2.019r.xml";
-        final String testFile = "data/Ha2/Ha2.019v.xml";
+        final String[] files = {
+                "data/Ha2/Ha2.018r.xml", "data/Ha2/Ha2.018v.xml",
+                "data/Ha2/Ha2.019r.xml", "data/Ha2/Ha2.019v.xml",
+                "data/Ha2/Ha2.020r.xml", "data/Ha2/Ha2.020v.xml",
+                "data/Ha2/Ha2.021r.xml", "data/Ha2/Ha2.021v.xml"
+        };
         List<String> errors = new ArrayList<>();
 
         AnnotatedPage page = null;
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            page = serializer.read(in, errors);
-        } catch (IOException e) {
-            System.out.println(errors);
-        }
+        for (String testFile : files) {
+            errors.clear();
+//            long start = System.currentTimeMillis();
+            try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
+                page = serializer.read(in, errors);
+            } catch (IOException e) {
+                System.out.println(errors);
+                e.printStackTrace();
+            }
+//            System.out.println(errors);
+//            System.out.println("Time: " + String.format("%03f", ((double) (System.currentTimeMillis() - start) / 1000)) + "s");
 
-        assertNotNull(page);
-        assertNull(page.getId());
-        assertTrue(page.getSignature().equals(""));
-        assertNotNull(page.getReader());
-        assertNotNull(page.getPagination());
-        assertEquals(6, page.getMarginalia().size());
-        assertEquals(12, page.getMarks().size());
-        assertEquals(3, page.getSymbols().size());
-        assertEquals(29, page.getUnderlines().size());
-        assertEquals(0, page.getNumerals().size());
+            assertEquals(0, errors.size());
+            assertNotNull(page);
+            assertNull(page.getId());
+            assertTrue(page.getSignature().equals(""));
+            assertNotNull(page.getReader());
+            assertNotNull(page.getPagination());
+            assertTrue(page.getMarginalia().size() > 0);
+            assertTrue(page.getUnderlines().size() > 0);
+//            assertEquals(6, page.getMarginalia().size());
+//            assertEquals(12, page.getMarks().size());
+//            assertEquals(3, page.getSymbols().size());
+//            assertEquals(29, page.getUnderlines().size());
+//            assertEquals(0, page.getNumerals().size());
+        }
     }
 
 }

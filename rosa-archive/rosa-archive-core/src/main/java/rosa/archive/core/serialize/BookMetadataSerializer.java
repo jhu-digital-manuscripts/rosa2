@@ -82,7 +82,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
         // TODO pull Title out of the ID?
         Element title = doc.createElement(config.getMetadataTextsTitleTag());
-        title.appendChild(doc.createTextNode(metadata.getId()));
+        title.appendChild(doc.createTextNode(metadata.getTitle()));
         bibl.appendChild(title);
 
         // origin: <pubPlace>
@@ -360,6 +360,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
         Element top = doc.getDocumentElement();
 
+//        metadata.setTitle(getString(top, config.getMetadataTextsTitleTag()));
         metadata.setDate(getString(top, config.getMetadataDateTag()));
         metadata.setCurrentLocation(getString(top, config.getMetadataCurrentLocationTag()));
         metadata.setRepository(getString(top, config.getMetadataRepositoryTag()));

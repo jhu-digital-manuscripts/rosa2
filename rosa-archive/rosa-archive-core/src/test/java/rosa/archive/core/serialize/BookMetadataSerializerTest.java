@@ -82,6 +82,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest {
         metadata.setId("Test.ID");
 
         metadata.setCommonName("Common Name");
+        metadata.setTitle("Title");
         metadata.setCurrentLocation("Current Location");
         metadata.setDate("Today's date.");
         metadata.setWidth(1000);

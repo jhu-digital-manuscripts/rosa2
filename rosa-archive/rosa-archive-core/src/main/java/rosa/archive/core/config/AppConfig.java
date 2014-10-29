@@ -197,6 +197,12 @@ public class AppConfig {
     @Inject @Named("metadata.xml.texts.lastPage")
     private String metadataTextsLastPageTag;
 
+    @Inject @Named("annotation.schema.url")
+    private String annotationSchemaUrl;
+
+    @Inject @Named("annotation.dtd.url")
+    private String annotationDtdUrl;
+
     // -----------------------------------------------------------------------------------------
     // ---------- getters ----------------------------------------------------------------------
     // -----------------------------------------------------------------------------------------
@@ -439,5 +445,13 @@ public class AppConfig {
 
     public String getMetadataTextsLastPageTag() {
         return metadataTextsLastPageTag;
+    }
+
+    public String getAnnotationSchemaUrl() {
+        return annotationSchemaUrl;
+    }
+
+    public String getAnnotationDtdUrl() {
+        return annotationDtdUrl;
     }
 }

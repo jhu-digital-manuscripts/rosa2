@@ -9,12 +9,9 @@ import org.junit.runner.RunWith;
 import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.GuiceJUnitRunner;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
-import rosa.archive.core.store.Store;
-import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.aor.AnnotatedPage;
@@ -35,7 +32,7 @@ import static org.junit.Assert.assertTrue;
  *
  */
 @RunWith(GuiceJUnitRunner.class)
-@GuiceModules({ArchiveCoreModule.class})
+@GuiceJUnitRunner.GuiceModules({ArchiveCoreModule.class})
 public class StoreIntegrationTest extends AbstractFileSystemTest {
 
     @Rule
@@ -102,20 +99,17 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
         Book book = store.loadBook("rosedata", "Walters143", errors);
         assertNotNull(book);
 
-//        assertEquals(0, errors.size());
         errors.clear();
 
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
-
-        System.out.println("Number of errors: " + errors.size() + "\n");
-        for (String error : errors) {
-            System.err.println(error);
-        }
+        assertEquals(1169, errors.size());
+        assertTrue(errors.contains("Cropping information for item [Walters143.138v.tif] missing from parent Book archive. [Walters143]"));
+        assertEquals(7, warnings.size());
+        assertTrue(warnings.contains("Illustration character ID is non-numeric. Illustration [43], character ID [Galatea]"));
     }
 
     @Test
-//    @Ignore
     public void readBookWithAnnotations() throws Exception {
         Store store = storeFactory.create(base);
         List<String> errors = new ArrayList<>();
@@ -143,15 +137,15 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
 
         List<AnnotatedPage> annotatedPages = book.getAnnotatedPages();
         assertNotNull(annotatedPages);
-        assertEquals(2, annotatedPages.size());
+        assertEquals(8, annotatedPages.size());
 
         errors.clear();
 
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
-        assertEquals(1169, errors.size());
-        assertTrue(errors.contains("Cropping information for item [Walters143.138v.tif] missing from parent Book archive. [Walters143]"));
-        assertEquals(7, warnings.size());
-        assertTrue(warnings.contains("Illustration character ID is non-numeric. Illustration [43], character ID [Galatea]"));
+        for (String str : errors) {
+            System.out.println(str);
+        }
+        assertEquals(15, errors.size());
     }
 }
