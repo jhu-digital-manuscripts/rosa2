@@ -11,6 +11,7 @@ import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
+import rosa.archive.core.serialize.MultilangMetadataSerializer;
 import rosa.archive.core.serialize.SHA1ChecksumSerializer;
 import rosa.archive.core.serialize.CropInfoSerializer;
 import rosa.archive.core.serialize.IllustrationTaggingSerializer;
@@ -37,6 +38,7 @@ import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -82,6 +84,7 @@ public class ArchiveCoreModule extends AbstractModule {
         mapBinder.addBinding(Transcription.class).to(TranscriptionXmlSerializer.class);
         mapBinder.addBinding(Permission.class).to(PermissionSerializer.class);
         mapBinder.addBinding(AnnotatedPage.class).to(AORAnnotatedPageSerializer.class);
+        mapBinder.addBinding(MultilangMetadata.class).to(MultilangMetadataSerializer.class);
 
         // Data checkers
         bind(BookChecker.class);

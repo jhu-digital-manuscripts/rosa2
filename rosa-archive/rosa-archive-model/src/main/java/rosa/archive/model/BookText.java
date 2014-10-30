@@ -14,6 +14,7 @@ public class BookText implements Serializable {
     private int numberOfIllustrations;
     private int numberOfPages;
     private String id;
+    private String textId;
     private String title;
     private String firstPage;
     private String lastPage;
@@ -101,18 +102,19 @@ public class BookText implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof BookText)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
 
         BookText bookText = (BookText) o;
 
-        if (numberOfIllustrations != bookText.numberOfIllustrations) return false;
         if (columnsPerPage != bookText.columnsPerPage) return false;
         if (leavesPerGathering != bookText.leavesPerGathering) return false;
         if (linesPerColumn != bookText.linesPerColumn) return false;
+        if (numberOfIllustrations != bookText.numberOfIllustrations) return false;
         if (numberOfPages != bookText.numberOfPages) return false;
         if (firstPage != null ? !firstPage.equals(bookText.firstPage) : bookText.firstPage != null) return false;
         if (id != null ? !id.equals(bookText.id) : bookText.id != null) return false;
         if (lastPage != null ? !lastPage.equals(bookText.lastPage) : bookText.lastPage != null) return false;
+        if (textId != null ? !textId.equals(bookText.textId) : bookText.textId != null) return false;
         if (title != null ? !title.equals(bookText.title) : bookText.title != null) return false;
 
         return true;
@@ -126,10 +128,19 @@ public class BookText implements Serializable {
         result = 31 * result + numberOfIllustrations;
         result = 31 * result + numberOfPages;
         result = 31 * result + (id != null ? id.hashCode() : 0);
+        result = 31 * result + (textId != null ? textId.hashCode() : 0);
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (firstPage != null ? firstPage.hashCode() : 0);
         result = 31 * result + (lastPage != null ? lastPage.hashCode() : 0);
         return result;
+    }
+
+    public String getTextId() {
+        return textId;
+    }
+
+    public void setTextId(String textId) {
+        this.textId = textId;
     }
 
     @Override
@@ -141,6 +152,7 @@ public class BookText implements Serializable {
                 ", numberOfIllustrations=" + numberOfIllustrations +
                 ", numberOfPages=" + numberOfPages +
                 ", id='" + id + '\'' +
+                ", textId='" + textId + '\'' +
                 ", title='" + title + '\'' +
                 ", firstPage='" + firstPage + '\'' +
                 ", lastPage='" + lastPage + '\'' +
