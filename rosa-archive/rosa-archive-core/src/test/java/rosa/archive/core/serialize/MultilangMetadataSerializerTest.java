@@ -2,13 +2,14 @@ package rosa.archive.core.serialize;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 import rosa.archive.model.meta.BiblioData;
 import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +18,68 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 public class MultilangMetadataSerializerTest extends BaseSerializerTest {
+    private final static String bigXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+            "<book>\n" +
+            "    <illustrations>10</illustrations>\n" +
+            "    <totalPages>8</totalPages>\n" +
+            "    <dimensions units=\"mm\">\n" +
+            "        <width>100</width>\n" +
+            "        <height>200</height>\n" +
+            "    </dimensions>\n" +
+            "    <dates>\n" +
+            "        <startDate>1900</startDate>\n" +
+            "        <endDate>1950</endDate>\n" +
+            "    </dates>\n" +
+            "    <texts>\n" +
+            "        <text id=\"1\">\n" +
+            "            <title>title</title>\n" +
+            "            <textId>rose</textId>\n" +
+            "            <pages end=\"100r\" start=\"1r\">100</pages>\n" +
+            "            <illustrations>1</illustrations>\n" +
+            "            <linesPerColumn>2</linesPerColumn>\n" +
+            "            <columnsPerPage>3</columnsPerPage>\n" +
+            "            <leavesPerGathering>4</leavesPerGathering>\n" +
+            "        </text>\n" +
+            "        <text id=\"2\">\n" +
+            "            <title>title</title>\n" +
+            "            <textId>not rose</textId>\n" +
+            "            <pages end=\"300r\" start=\"100v\">200</pages>\n" +
+            "            <illustrations>0</illustrations>\n" +
+            "            <linesPerColumn>0</linesPerColumn>\n" +
+            "            <columnsPerPage>0</columnsPerPage>\n" +
+            "            <leavesPerGathering>0</leavesPerGathering>\n" +
+            "        </text>\n" +
+            "    </texts>\n" +
+            "    <bibliographies>\n" +
+            "        <bibliography lang=\"en\">\n" +
+            "            <title>Book Title</title>\n" +
+            "            <dateLabel>Date String</dateLabel>\n" +
+            "            <type>Type String</type>\n" +
+            "            <commonName>Common Name String</commonName>\n" +
+            "            <material>Material String</material>\n" +
+            "            <origin>Origin String</origin>\n" +
+            "            <currentLocation>Current Location String</currentLocation>\n" +
+            "            <repository>Repository String</repository>\n" +
+            "            <shelfmark>Shelfmark String</shelfmark>\n" +
+            "            <detail>Bibliographic Details</detail>\n" +
+            "            <author>Author</author>\n" +
+            "            <note>Note</note>\n" +
+            "        </bibliography>\n" +
+            "        <bibliography lang=\"fr\">\n" +
+            "            <title>Book Title</title>\n" +
+            "            <dateLabel>Date String</dateLabel>\n" +
+            "            <type>Type String</type>\n" +
+            "            <commonName>Common Name String</commonName>\n" +
+            "            <material>Material String</material>\n" +
+            "            <origin>Origin String</origin>\n" +
+            "            <currentLocation>Current Location String</currentLocation>\n" +
+            "            <repository>Repository String</repository>\n" +
+            "            <shelfmark>Shelfmark String</shelfmark>\n" +
+            "            <detail>Bibliographic Details</detail>\n" +
+            "            <author>Author</author>\n" +
+            "        </bibliography>\n" +
+            "    </bibliographies>\n" +
+            "</book>";
 
     private MultilangMetadataSerializer serializer;
 
@@ -28,72 +91,10 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
 
     @Test
     public void readTest() throws Exception {
-        String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
-                "<book>\n" +
-                "    <illustrations>10</illustrations>\n" +
-                "    <totalPages>8</totalPages>\n" +
-                "    <dimensions units=\"mm\">\n" +
-                "        <width>100</width>\n" +
-                "        <height>200</height>\n" +
-                "    </dimensions>\n" +
-                "    <dates>\n" +
-                "        <startDate>1900</startDate>\n" +
-                "        <endDate>1950</endDate>\n" +
-                "    </dates>\n" +
-                "    <texts>\n" +
-                "        <text id=\"1\">\n" +
-                "            <title>title</title>\n" +
-                "            <textId>rose</textId>\n" +
-                "            <pages start=\"1r\" end=\"100r\">100</pages>\n" +
-                "            <illustrations>1</illustrations>\n" +
-                "            <linesPerColumn>2</linesPerColumn>\n" +
-                "            <columnsPerPage>3</columnsPerPage>\n" +
-                "            <leavesPerGathering>4</leavesPerGathering>\n" +
-                "        </text>\n" +
-                "        <text id=\"2\">\n" +
-                "            <title>title</title>\n" +
-                "            <textId>not rose</textId>\n" +
-                "            <pages start=\"100v\" end=\"300r\">200</pages>\n" +
-                "            <illustrations>0</illustrations>\n" +
-                "            <linesPerColumn>0</linesPerColumn>\n" +
-                "            <columnsPerPage>0</columnsPerPage>\n" +
-                "            <leavesPerGathering>0</leavesPerGathering>\n" +
-                "        </text>\n" +
-                "    </texts>\n" +
-                "    <bibliographies>\n" +
-                "        <bibliography lang=\"en\">\n" +
-                "            <title>Book Title</title>\n" +
-                "            <dateLabel>Date String</dateLabel>\n" +
-                "            <type>Type String</type>\n" +
-                "            <commonName>Common Name String</commonName>\n" +
-                "            <material>Material String</material>\n" +
-                "            <origin>Origin String</origin>\n" +
-                "            <currentLocation>Current Location String</currentLocation>\n" +
-                "            <repository>Repository String</repository>\n" +
-                "            <shelfmark>Shelfmark String</shelfmark>\n" +
-                "            <detail>Bibliographic Details</detail>\n" +
-                "            <author>Author</author>\n" +
-                "            <note>Note</note>\n" +
-                "        </bibliography>\n" +
-                "        <bibliography lang=\"fr\">\n" +
-                "            <title>Book Title</title>\n" +
-                "            <dateLabel>Date String</dateLabel>\n" +
-                "            <type>Type String</type>\n" +
-                "            <commonName>Common Name String</commonName>\n" +
-                "            <material>Material String</material>\n" +
-                "            <origin>Origin String</origin>\n" +
-                "            <currentLocation>Current Location String</currentLocation>\n" +
-                "            <repository>Repository String</repository>\n" +
-                "            <shelfmark>Shelfmark String</shelfmark>\n" +
-                "            <detail>Bibliographic Details</detail>\n" +
-                "            <author>Author</author>\n" +
-                "        </bibliography>\n" +
-                "    </bibliographies>\n" +
-                "</book>";
 
         List<String> errors = new ArrayList<>();
         MultilangMetadata metadata = null;
-        try (InputStream in = new ByteArrayInputStream(xml.getBytes("UTF-8"))) {
+        try (InputStream in = new ByteArrayInputStream(bigXml.getBytes("UTF-8"))) {
             metadata = serializer.read(in, errors);
         }
 
@@ -207,47 +208,87 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
         assertEquals(0, metadata.getBookTexts().size());
     }
 
-    @Test (expected = UnsupportedOperationException.class)
+    @Test
     public void writeTest() throws Exception {
-        serializer.write(null, null);
+        OutputStream out = new ByteArrayOutputStream();
+        assertNotNull(out);
+        serializer.write(createMetadata(), out);
+
+        ByteArrayOutputStream baos = (ByteArrayOutputStream) out;
+        assertNotNull(baos);
+
+        String result = baos.toString("UTF-8");
+        assertNotNull(result);
+        assertEquals(bigXml.trim(), result.trim());
     }
 
-    private BookMetadata createMetadata(String lang) {
-        BookMetadata metadata = new BookMetadata();
-        metadata.setId("Test.ID");
+    private MultilangMetadata createMetadata() {
+        MultilangMetadata metadata = new MultilangMetadata();
 
-        metadata.setCommonName("Common Name");
-        metadata.setCurrentLocation("Current Location");
-        metadata.setDate("Today's date.");
-        metadata.setWidth(1000);
-        metadata.setHeight(2000);
-        metadata.setNumberOfIllustrations(42);
-        metadata.setNumberOfPages(100);
-        metadata.setDimensions("1000x2000");
-        metadata.setMaterial("Some Material");
-        metadata.setOrigin("Origin");
-        metadata.setRepository("Repository");
-        metadata.setShelfmark("On the shelf");
-        metadata.setYearEnd(300);
-        metadata.setYearStart(100);
-        metadata.setType("The type");
+        metadata.setNumberOfIllustrations(10);
+        metadata.setNumberOfPages(8);
+        metadata.setDimensionUnits("mm");
+        metadata.setWidth(100);
+        metadata.setHeight(200);
+        metadata.setYearStart(1900);
+        metadata.setYearEnd(1950);
 
-        List<BookText> bookTextList = new ArrayList<>();
-        for (int i = 0; i < 1; i++) {
-            BookText text = new BookText();
-            text.setId("ID" + i);
-            text.setFirstPage("Page " + i);
-            text.setLastPage("Page " + (i+1));
-            text.setColumnsPerPage(2);
-            text.setLeavesPerGathering(6);
-            text.setLinesPerColumn(45);
-            text.setNumberOfIllustrations(42);
-            text.setNumberOfPages(36);
-            text.setTitle("Title Title");
+        BookText t1 = new BookText();
+        t1.setId("1");
+        t1.setTitle("title");
+        t1.setTextId("rose");
+        t1.setFirstPage("1r");
+        t1.setLastPage("100r");
+        t1.setNumberOfPages(100);
+        t1.setNumberOfIllustrations(1);
+        t1.setLinesPerColumn(2);
+        t1.setColumnsPerPage(3);
+        t1.setLeavesPerGathering(4);
+        metadata.getBookTexts().add(t1);
 
-            bookTextList.add(text);
-        }
-        metadata.setTexts(bookTextList.toArray(new BookText[bookTextList.size()]));
+        BookText t2 = new BookText();
+        t2.setId("2");
+        t2.setTitle("title");
+        t2.setTextId("not rose");
+        t2.setFirstPage("100v");
+        t2.setLastPage("300r");
+        t2.setNumberOfPages(200);
+        t2.setNumberOfIllustrations(0);
+        t2.setLinesPerColumn(0);
+        t2.setColumnsPerPage(0);
+        t2.setLeavesPerGathering(0);
+        metadata.getBookTexts().add(t2);
+
+        BiblioData d1 = new BiblioData();
+        d1.setLanguage("en");
+        d1.setTitle("Book Title");
+        d1.setDateLabel("Date String");
+        d1.setType("Type String");
+        d1.setCommonName("Common Name String");
+        d1.setMaterial("Material String");
+        d1.setOrigin("Origin String");
+        d1.setCurrentLocation("Current Location String");
+        d1.setRepository("Repository String");
+        d1.setShelfmark("Shelfmark String");
+        d1.setDetails(new String[] {"Bibliographic Details"});
+        d1.setAuthors(new String[] {"Author"});
+        d1.setNotes(new String[] {"Note"});
+        metadata.getBiblioDataMap().put("en", d1);
+
+        BiblioData d2 = new BiblioData();
+        d2.setLanguage("fr");
+        d2.setTitle("Book Title");
+        d2.setDateLabel("Date String");
+        d2.setType("Type String");
+        d2.setCommonName("Common Name String");
+        d2.setMaterial("Material String");
+        d2.setOrigin("Origin String");
+        d2.setCurrentLocation("Current Location String");
+        d2.setRepository("Repository String");
+        d2.setShelfmark("Shelfmark String");
+        d2.setDetails(new String[]{"Bibliographic Details"});
+        d2.setAuthors(new String[]{"Author"});
+        metadata.getBiblioDataMap().put("fr", d2);
 
         return metadata;
     }

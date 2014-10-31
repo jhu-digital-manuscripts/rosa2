@@ -24,7 +24,11 @@ public class BiblioData implements Serializable {
 
     private String language;
 
-    public BiblioData() {}
+    public BiblioData() {
+        details = new String[0];
+        authors = new String[0];
+        notes = new String[0];
+    }
 
     public String getTitle() {
         return title;

@@ -1,5 +1,6 @@
 package rosa.archive.core.serialize;
 
+import com.sun.org.apache.xml.internal.serializer.OutputPropertiesFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -14,6 +15,15 @@ import rosa.archive.model.meta.MultilangMetadata;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -61,8 +71,78 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
     }
 
     @Override
-    public void write(MultilangMetadata object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented");
+    public void write(MultilangMetadata metadata, OutputStream out) throws IOException {
+        Document doc = newDocument();
+
+        Element root = doc.createElement("book");
+        doc.appendChild(root);
+
+        valueElement("illustrations", metadata.getNumberOfIllustrations(), root, doc);
+        valueElement("totalPages", metadata.getNumberOfPages(), root, doc);
+
+        Element dimensions = doc.createElement("dimensions");
+        root.appendChild(dimensions);
+        dimensions.setAttribute("units", metadata.getDimensionUnits());
+        valueElement("width", metadata.getWidth(), dimensions, doc);
+        valueElement("height", metadata.getHeight(), dimensions, doc);
+
+        Element dates = doc.createElement("dates");
+        root.appendChild(dates);
+        valueElement("startDate", metadata.getYearStart(), dates, doc);
+        valueElement("endDate", metadata.getYearEnd(), dates, doc);
+
+        Element texts = doc.createElement("texts");
+        root.appendChild(texts);
+
+        for (BookText t : metadata.getBookTexts()) {
+            Element text = doc.createElement("text");
+            texts.appendChild(text);
+
+            text.setAttribute("id", t.getId());
+            valueElement("title", t.getTitle(), text, doc);
+            valueElement("textId", t.getTextId(), text, doc);
+
+            Element pages = valueElement("pages", t.getNumberOfPages(), text, doc);
+            pages.setAttribute("end", t.getLastPage());
+            pages.setAttribute("start", t.getFirstPage());
+
+            valueElement("illustrations", t.getNumberOfIllustrations(), text, doc);
+            valueElement("linesPerColumn", t.getLinesPerColumn(), text, doc);
+            valueElement("columnsPerPage", t.getColumnsPerPage(), text, doc);
+            valueElement("leavesPerGathering", t.getLeavesPerGathering(), text, doc);
+        }
+
+        Element bibs = doc.createElement("bibliographies");
+        root.appendChild(bibs);
+        for (String lang : metadata.getBiblioDataMap().keySet()) {
+            BiblioData data = metadata.getBiblioDataMap().get(lang);
+
+            Element bib = doc.createElement("bibliography");
+            bibs.appendChild(bib);
+            bib.setAttribute("lang", lang);
+
+            valueElement("title", data.getTitle(), bib, doc);
+            valueElement("dateLabel", data.getDateLabel(), bib, doc);
+            valueElement("type", data.getType(), bib, doc);
+            valueElement("commonName", data.getCommonName(), bib, doc);
+            valueElement("material", data.getMaterial(), bib, doc);
+            valueElement("origin", data.getOrigin(), bib, doc);
+            valueElement("currentLocation", data.getCurrentLocation(), bib, doc);
+            valueElement("repository", data.getRepository(), bib, doc);
+            valueElement("shelfmark", data.getShelfmark(), bib, doc);
+
+            for (String detail : data.getDetails()) {
+                valueElement("detail", detail, bib, doc);
+            }
+            for (String author : data.getAuthors()) {
+                valueElement("author", author, bib, doc);
+            }
+            for (String note : data.getNotes()) {
+                valueElement("note", note, bib, doc);
+            }
+        }
+
+        write(doc, out);
     }
 
     private MultilangMetadata buildMetadata(Document doc) {
@@ -180,20 +260,6 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
         }
     }
 
-    private int getIntegerAttribute(String attribute, String tag, Element parent) {
-        String text = getAttribute(attribute, tag, parent);
-
-        if (text == null || text.equals("")) {
-            return -1;
-        }
-
-        try {
-            return Integer.parseInt(text);
-        } catch (NumberFormatException e) {
-            return -1;
-        }
-    }
-
     private int number(String tagName, Element parent) {
         String text = text(tagName, parent);
         if (text == null) {
@@ -214,6 +280,65 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
             return els.get(0).getTextContent();
         } else {
             return "";
+        }
+    }
+
+    private Element valueElement(String tagName, String value, Element parent, Document doc) {
+        Element el = doc.createElement(tagName);
+        el.setTextContent(value);
+        parent.appendChild(el);
+
+        return el;
+    }
+
+    private Element valueElement(String tagName, int value, Element parent, Document doc) {
+        Element el = doc.createElement(tagName);
+        el.setTextContent(String.valueOf(value));
+        parent.appendChild(el);
+
+        return el;
+    }
+
+    /**
+     * @return a new DOM document
+     */
+    private Document newDocument() {
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = null;
+        try {
+            builder = dbf.newDocumentBuilder();
+        } catch (ParserConfigurationException e) {
+            return null;
+        }
+
+        return builder.newDocument();
+    }
+
+    /**
+     * @param doc document
+     * @param out output stream
+     */
+    private void write(Document doc, OutputStream out) {
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = null;
+        try {
+            transformer = transformerFactory.newTransformer();
+
+            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+            // Options to make it human readable
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            transformer.setOutputProperty(OutputPropertiesFactory.S_KEY_INDENT_AMOUNT, "4");
+        } catch (TransformerConfigurationException e) {
+            return;
+        }
+
+        Source xmlSource = new DOMSource(doc);
+        Result result = new StreamResult(out);
+
+        try {
+            transformer.transform(xmlSource, result);
+        } catch (TransformerException e) {
+            return;
         }
     }
 }
