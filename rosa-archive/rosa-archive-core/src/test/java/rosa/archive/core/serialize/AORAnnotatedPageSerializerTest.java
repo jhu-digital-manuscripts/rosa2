@@ -46,15 +46,10 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
         AnnotatedPage page = null;
         for (String testFile : files) {
             errors.clear();
-//            long start = System.currentTimeMillis();
+
             try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
                 page = serializer.read(in, errors);
-            } catch (IOException e) {
-                System.out.println(errors);
-                e.printStackTrace();
             }
-//            System.out.println(errors);
-//            System.out.println("Time: " + String.format("%03f", ((double) (System.currentTimeMillis() - start) / 1000)) + "s");
 
             assertEquals(0, errors.size());
             assertNotNull(page);
@@ -64,12 +59,12 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
             assertNotNull(page.getPagination());
             assertTrue(page.getMarginalia().size() > 0);
             assertTrue(page.getUnderlines().size() > 0);
-//            assertEquals(6, page.getMarginalia().size());
-//            assertEquals(12, page.getMarks().size());
-//            assertEquals(3, page.getSymbols().size());
-//            assertEquals(29, page.getUnderlines().size());
-//            assertEquals(0, page.getNumerals().size());
         }
+    }
+
+    @Test
+    public void writeTest() throws IOException {
+        // TODO
     }
 
 }

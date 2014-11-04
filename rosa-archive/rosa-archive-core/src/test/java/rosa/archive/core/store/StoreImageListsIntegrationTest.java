@@ -1,11 +1,7 @@
 package rosa.archive.core.store;
 
-import com.google.inject.Inject;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.TemporaryFolder;
-import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
 
@@ -30,73 +26,12 @@ import static org.junit.Assert.assertTrue;
 /**
  *
  */
-public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
+public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
     private static final String COLLECTION = "collection";
-
-    @Inject
-    private StoreFactory storeFactory;
-    @Rule
-    public TemporaryFolder tempFolder = new TemporaryFolder();
-
-    private Store store;
-
-    private Path defaultPath;
-    private File folder;
 
     @Before
     public void setup() throws URISyntaxException, IOException {
         super.setup();
-        URL url = getClass().getClassLoader().getResource("data/LudwigXV7");
-        assertNotNull(url);
-        defaultPath = Paths.get(url.toURI());
-        assertNotNull(defaultPath);
-
-        folder = tempFolder.newFolder("1");
-
-        ByteStreamGroup tempGroup = new FSByteStreamGroup(folder.toString());
-        assertNotNull(tempGroup);
-
-        store = storeFactory.create(tempGroup);
-        assertNotNull(store);
-
-    }
-
-    private void copyMissingImage(Path originalPath, Path collectionPath) throws IOException {
-        if (Files.exists(originalPath.resolve("missing_image.tif"))) {
-            Files.copy(
-                    originalPath.resolve("missing_image.tif"),
-                    collectionPath.resolve("missing_image.tif")
-            );
-        }
-    }
-
-    /**
-     * Copy all files from the original path (data/LudwigXV7) to a new book in the temporary folder,
-     * except for images.csv and images.crop.csv.
-     *
-     * @throws IOException
-     */
-    private void copyTestFiles(Path originalPath, Path bookPath) throws IOException {
-        // Copy test files to tmp directory
-        copyMissingImage(originalPath.getParent(), bookPath.getParent());
-
-        try (DirectoryStream<Path> ds = Files.newDirectoryStream(originalPath, new DirectoryStream.Filter<Path>() {
-            @Override
-            public boolean accept(Path entry) throws IOException {
-                return Files.isRegularFile(entry) && !entry.getFileName().toString().contains("images");
-            }
-        })) {
-            for (Path path : ds) {
-                try (InputStream in = Files.newInputStream(path)) {
-                    String name = path.getFileName().toString();
-                    Path filePath = bookPath.resolve(name);
-
-                    Files.copy(in, filePath);
-                    assertTrue(Files.exists(filePath));
-                    assertTrue(Files.isRegularFile(filePath));
-                }
-            }
-        }
     }
 
     private void checkImageList(Path imageListPath, String[] expected) throws IOException {
@@ -122,6 +57,8 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
         Path bookPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("LudwigXV7"));
 
         copyTestFiles(defaultPath, bookPath);
+        remove(bookPath, "LudwigXV7.images.csv");
+        remove(bookPath, "LudwigXV7.images.crop.csv");
 
         final String[] expected = {
                 "*LudwigXV7.binding.frontcover.tif", "*LudwigXV7.frontmatter.pastedown.tif",
@@ -177,20 +114,17 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
     public void replaceExistingImageList() throws Exception {
         URL url = getClass().getClassLoader().getResource("data/Walters143");
         assertNotNull(url);
-        Path originalPath = Paths.get(url.toURI());
+        Path waltersOriginalPath = Paths.get(url.toURI());
 
-        Path bookPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("Walters143"));
+        Path bookTestPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("Walters143"));
 
         // Copy all + image list
-        copyTestFiles(originalPath, bookPath);
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("data/Walters143/Walters143.images.csv")) {
-            Files.copy(in, bookPath.resolve("Walters143.images.csv"));
-        }
+        copyTestFiles(waltersOriginalPath, bookTestPath);
 
-        ByteStreamGroup bookGroup = new FSByteStreamGroup(bookPath.toString());
+        ByteStreamGroup bookGroup = new FSByteStreamGroup(bookTestPath.toString());
         assertNotNull(bookGroup);
         assertEquals(0, bookGroup.numberOfByteStreamGroups());
-        assertEquals(7, bookGroup.numberOfByteStreams());
+        assertEquals(8, bookGroup.numberOfByteStreams());
 
         List<String> errors = new ArrayList<>();
         store.generateAndWriteImageList(COLLECTION, "Walters143", false, errors);
@@ -200,7 +134,7 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
         assertEquals("[Walters143.images.csv] already exists. You can force this operation to update " +
                 "the existing image list.", errors.get(0));
 
-        List<String> lines = Files.readAllLines(bookPath.resolve("Walters143.images.csv"));
+        List<String> lines = Files.readAllLines(bookTestPath.resolve("Walters143.images.csv"));
         assertNotNull(lines);
         assertEquals(81, lines.size());
 
@@ -208,7 +142,7 @@ public class StoreImageListsIntegrationTest extends AbstractFileSystemTest {
         store.generateAndWriteImageList(COLLECTION, "Walters143", true, errors);
 
         assertTrue(errors.isEmpty());
-        checkImageList(bookPath.resolve("Walters143.images.csv"), new String[] {
+        checkImageList(bookTestPath.resolve("Walters143.images.csv"), new String[]{
                 "*Walters143.binding.frontcover.tif", "*Walters143.frontmatter.pastedown.tif",
                 "*Walters143.frontmatter.flyleaf.001r.tif", "*Walters143.frontmatter.flyleaf.001v.tif",
                 "*Walters143.endmatter.pastedown.tif", "*Walters143.binding.backcover.tif"

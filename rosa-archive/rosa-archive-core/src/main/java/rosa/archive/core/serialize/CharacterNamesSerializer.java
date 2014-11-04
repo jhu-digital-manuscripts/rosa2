@@ -86,7 +86,6 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
         final String header = "ID,Site name,French variant,English name\n";
         IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
 
-        String[] langs = config.languages();
         for (String id : names.getAllCharacterIds()) {
             StringBuilder sb = new StringBuilder(id);
 
@@ -95,12 +94,10 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
                     names.getNameInLanguage(id, Column.SITE_NAME.getName())
             ));
 
-            for (String lang : langs) {
-                sb.append(',');
-                sb.append(CSV.escape(
-                        names.getNameInLanguage(id, lang)
-                ));
-            }
+            sb.append(',');
+            sb.append(CSV.escape(names.getNameInLanguage(id, "fr")));
+            sb.append(',');
+            sb.append(CSV.escape(names.getNameInLanguage(id, "en")));
             sb.append('\n');
 
             IOUtils.write(sb, out, Charset.forName(config.getCHARSET()));

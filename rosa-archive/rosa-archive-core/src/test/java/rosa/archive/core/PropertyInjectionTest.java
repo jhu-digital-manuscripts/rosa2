@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(GuiceJUnitRunner.class)
@@ -33,8 +34,10 @@ public class PropertyInjectionTest {
 
     @Test
     public void test() {
-        System.out.println(context.getCHARSET());
-        System.out.println(Arrays.toString(context.languages()));
+        assertEquals("UTF-8", context.getCHARSET());
+        assertEquals(2, context.languages().length);
+        assertEquals("en", context.languages()[0]);
+        assertEquals("fr", context.languages()[1]);
     }
 
 //    @Test

@@ -1,6 +1,7 @@
 package rosa.archive.tool;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import rosa.archive.tool.config.ToolConfig;
 
@@ -19,13 +20,10 @@ public class ArchiveToolTest {
         ToolConfig config = mock(ToolConfig.class);
 
         when(config.getArchivePath()).thenReturn("");
-        when(config.getCmdList()).thenReturn("list");
-        when(config.getCmdCheck()).thenReturn("check");
-        when(config.getFlagCheckBits()).thenReturn("-checkBits");
-        when(config.getFlagShowErrors()).thenReturn("-showErrors");
     }
 
     @Test
+    @Ignore
     public void testTest() {
 
     }

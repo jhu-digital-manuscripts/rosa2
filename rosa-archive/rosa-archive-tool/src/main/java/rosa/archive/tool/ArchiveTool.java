@@ -15,6 +15,8 @@ import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.store.Store;
 import rosa.archive.core.store.StoreFactory;
 import rosa.archive.model.Book;
+import rosa.archive.tool.config.Command;
+import rosa.archive.tool.config.Flag;
 import rosa.archive.tool.config.ToolConfig;
 import rosa.archive.tool.derivative.BookDerivative;
 import rosa.archive.tool.derivative.CollectionDerivative;
@@ -66,10 +68,10 @@ public class ArchiveTool {
                 .hasArgs(2)
                 .withValueSeparator()
                 .create("D"));
-        options.addOption(new Option(config.getFlagShowErrors(), false, "show all errors"));
+        options.addOption(new Option(Flag.SHOW_ERRORS.display(), false, "show all errors"));
         options.addOption(new Option(
-                config.getFlagCheckBits(), false, "check bit integrity of data in the archive"));
-        options.addOption("f", "force", false, "force the operation to execute fully, without skipping data");
+                Flag.CHECK_BITS.display(), false, "check bit integrity of data in the archive"));
+        options.addOption("f", Flag.FORCE.display(), false, "force the operation to execute fully, without skipping data");
 
         // Apache CLI to parse input args
         CommandLineParser parser = new BasicParser();
@@ -99,13 +101,13 @@ public class ArchiveTool {
     public void run(CommandLine cmd) {
         String command = cmd.getArgs()[0];
 
-        if (command.equals(config.getCmdList())) {
+        if (command.equals(Command.LIST.display())) {
             list(cmd);
-        } else if (command.equals(config.getCmdCheck())) {
+        } else if (command.equals(Command.CHECK.display())) {
             check(cmd);
-        } else if (command.equals(config.getCmdUpdate())) {
+        } else if (command.equals(Command.UPDATE.display())) {
             update(cmd);
-        } else if (command.equals(config.getCmdUpdateImageList())) {
+        } else if (command.equals(Command.UPDATE_IMAGE_LIST.display())) {
             updateImageList(cmd);
         }
     }
@@ -134,7 +136,7 @@ public class ArchiveTool {
      */
     private void list(CommandLine cmd) {
         String[] args = cmd.getArgs();
-        boolean showErrors = cmd.hasOption(config.getFlagShowErrors());
+        boolean showErrors = cmd.hasOption(Flag.SHOW_ERRORS.display());
 
         List<String> errors = new ArrayList<>();
         switch (args.length) {
@@ -200,7 +202,7 @@ public class ArchiveTool {
      */
     private void check(CommandLine cmd) {
         String[] args = cmd.getArgs();
-        boolean checkBits = cmd.hasOption(config.getFlagCheckBits());
+        boolean checkBits = cmd.hasOption(Flag.CHECK_BITS.display());
 
         report.println("Checking...");
         switch (args.length) {
@@ -250,7 +252,7 @@ public class ArchiveTool {
      * @param cmd CLI command
      */
     private void update(CommandLine cmd) {
-        boolean force = cmd.hasOption("force") || cmd.hasOption("f");
+        boolean force = cmd.hasOption(Flag.FORCE.display()) || cmd.hasOption("f");
         String[] args = cmd.getArgs();
 
         switch (args.length) {
@@ -282,7 +284,6 @@ public class ArchiveTool {
                 break;
             case 3:
                 // update checksums only for the book
-//                String collectionId = args[1];
                 String bookId = args[2];
                 report.println("Updating checksums for book [" + args[1] + ":" + bookId + "]");
 
@@ -306,7 +307,7 @@ public class ArchiveTool {
      * @param cmd CLI command
      */
     private void updateImageList(CommandLine cmd) {
-        boolean force = cmd.hasOption("force") || cmd.hasOption("f");
+        boolean force = cmd.hasOption(Flag.FORCE.display()) || cmd.hasOption("f");
         String[] args = cmd.getArgs();
 
         switch (args.length) {

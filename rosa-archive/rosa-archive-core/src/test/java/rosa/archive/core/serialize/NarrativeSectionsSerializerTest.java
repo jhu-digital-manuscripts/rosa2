@@ -52,7 +52,9 @@ public class NarrativeSectionsSerializerTest extends BaseSerializerTest {
     @Test
     public void writeTest() throws IOException {
         NarrativeSections sections = createNarrativeSections();
-        serializer.write(sections, System.out);
+//        serializer.write(sections, System.out);
+
+        // TODO
     }
 
     private NarrativeSections createNarrativeSections() {

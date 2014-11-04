@@ -97,17 +97,17 @@
                 <version>1.9.5</version>
             </dependency>
 
-	    <dependency>
-	        <artifactId>servlet-api</artifactId>
-	        <groupId>javax.servlet</groupId>
-	        <version>2.5</version>
-	    </dependency>
+            <dependency>
+                <artifactId>servlet-api</artifactId>
+                <groupId>javax.servlet</groupId>
+                <version>2.5</version>
+            </dependency>
 
-	    <dependency>
-	        <groupId>org.json</groupId>
-		<artifactId>json</artifactId>
-		<version>20140107</version>
-	    </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20140107</version>
+            </dependency>
 
             <!-- Internal dependencies -->
 
@@ -140,6 +140,29 @@
 
     <build>
         <plugins>
+            <!-- Maven enforcer plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${mvn.enforcer.version}</version>
+                <executions>
+                    <execution>
+                        <id>enforce-versions</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>${mvn.compiler.target}</version>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Maven compiler plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

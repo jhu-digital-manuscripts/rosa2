@@ -8,6 +8,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 
@@ -63,7 +64,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
     @Override
     public void write(BookMetadata metadata, OutputStream out) throws IOException {
-        Document doc = newDocument();
+        Document doc = XMLUtil.newDocument();
 
         Element root = doc.createElement("TEI");
         root.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
@@ -209,8 +210,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             ));
         }
 
-        write(doc, out);
-
+        XMLUtil.write(doc, out);
     }
 
     /**
@@ -229,49 +229,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         note.appendChild(doc.createTextNode(text));
 
         return note;
-    }
-
-    /**
-     * @return a new DOM document
-     */
-    private Document newDocument() {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = null;
-        try {
-            builder = dbf.newDocumentBuilder();
-        } catch (ParserConfigurationException e) {
-            return null;
-        }
-
-        return builder.newDocument();
-    }
-
-    /**
-     * @param doc document
-     * @param out output stream
-     */
-    private void write(Document doc, OutputStream out) {
-        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer = null;
-        try {
-            transformer = transformerFactory.newTransformer();
-
-            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-            // Options to make it human readable
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer.setOutputProperty(OutputPropertiesFactory.S_KEY_INDENT_AMOUNT, "4");
-        } catch (TransformerConfigurationException e) {
-            return;
-        }
-
-        Source xmlSource = new DOMSource(doc);
-        Result result = new StreamResult(out);
-
-        try {
-            transformer.transform(xmlSource, result);
-        } catch (TransformerException e) {
-            return;
-        }
     }
 
     /**

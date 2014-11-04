@@ -6,8 +6,10 @@ import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -79,7 +81,20 @@ public class MetadataSerializerTest extends BaseSerializerTest {
         metadataMap.put("en", metadata);
         metadataMap.put("fr", metadataFr);
 
-        serializer.write(metadataMap, System.out);
+        try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+            serializer.write(metadataMap, out);
+            String res = out.toString("UTF-8");
+            assertNotNull(res);
+            assertTrue(res.length() > 0);
+
+            List<String> lines = Arrays.asList(res.split("\n"));
+            assertNotNull(lines);
+            assertEquals(27, lines.size());
+
+            assertEquals("<book illustrations=\"42\" pages=\"100\">", lines.get(1));
+            assertEquals("        <material>Some Material</material>", lines.get(10));
+            assertEquals("    <bibliography lang=\"fr\">", lines.get(16));
+        }
     }
 
     private BookMetadata createMetadata(String lang) {

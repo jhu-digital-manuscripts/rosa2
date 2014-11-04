@@ -9,6 +9,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.BookDescription;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -63,8 +64,7 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
 
     @Override
     public void write(BookDescription description, OutputStream out) throws IOException {
-
-        Document doc = newDocument();
+        Document doc = XMLUtil.newDocument();
 
         Element root = doc.createElement("TEI");
         root.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
@@ -85,51 +85,7 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
             notesStmt.appendChild(doc.importNode(notes.get(key), true));
         }
 
-        write(doc, out);
-
-    }
-
-    /**
-     * @return a new DOM document
-     */
-    private Document newDocument() {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = null;
-        try {
-            builder = dbf.newDocumentBuilder();
-        } catch (ParserConfigurationException e) {
-            return null;
-        }
-
-        return builder.newDocument();
-    }
-
-    /**
-     * @param doc document
-     * @param out output stream
-     */
-    private void write(Document doc, OutputStream out) {
-        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer = null;
-        try {
-            transformer = transformerFactory.newTransformer();
-
-            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-            // Options to make it human readable
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer.setOutputProperty(OutputPropertiesFactory.S_KEY_INDENT_AMOUNT, "4");
-        } catch (TransformerConfigurationException e) {
-            return;
-        }
-
-        Source xmlSource = new DOMSource(doc);
-        Result result = new StreamResult(out);
-
-        try {
-            transformer.transform(xmlSource, result);
-        } catch (TransformerException e) {
-            return;
-        }
+        XMLUtil.write(doc, out);
     }
 
     private BookDescription buildDescription(Document document, List<String> errors) {

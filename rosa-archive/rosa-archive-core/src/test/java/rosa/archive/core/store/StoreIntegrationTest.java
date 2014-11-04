@@ -143,9 +143,6 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
 
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
-        for (String str : errors) {
-            System.out.println(str);
-        }
         assertEquals(15, errors.size());
     }
 }

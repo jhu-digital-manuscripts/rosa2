@@ -82,7 +82,9 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
     @Test
     public void writeTest() throws IOException {
         NarrativeTagging tagging = createNartag();
-        serializer.write(tagging, System.out);
+//        serializer.write(tagging, System.out);
+
+        // TODO
     }
 
     private NarrativeTagging createNartag() {

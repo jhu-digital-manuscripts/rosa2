@@ -14,9 +14,14 @@ public class BookImage implements Serializable {
     private boolean isMissing;
 
     public BookImage() {
-        width = -1;
-        height = -1;
-        isMissing = true;
+        this(null, -1, -1, true);
+    }
+
+    public BookImage(String id, int width, int height, boolean isMissing) {
+        this.id = id;
+        this.width = width;
+        this.height = height;
+        this.isMissing = isMissing;
     }
 
     public String getId() {

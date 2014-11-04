@@ -4,10 +4,13 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.IllustrationTitles;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
@@ -54,9 +57,26 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest {
         for (int i = 0; i < 10; i++) {
             titlesMap.put("ID" + i, "Illustration Title [" + i + "]");
         }
+        titlesMap.put("ID3", "Title 2");
+        titlesMap.put("ID8", "Title 1, Title 2, Title 3");
         titles.setData(titlesMap);
 
-        serializer.write(titles, System.out);
+        try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+            serializer.write(titles, out);
+            String res = out.toString("UTF-8");
+
+            assertNotNull(res);
+            assertTrue(res.length() > 0);
+
+            List<String> lines = Arrays.asList(res.split("\n"));
+            assertNotNull(lines);
+            assertEquals(11, lines.size());
+
+            assertEquals("Id,Title", lines.get(0));
+            assertTrue(lines.contains("ID3,Title 2"));
+            assertTrue(lines.contains("ID8,\"Title 1, Title 2, Title 3\""));
+            assertTrue(lines.contains("ID1,Illustration Title [1]"));
+        }
     }
 
 }
