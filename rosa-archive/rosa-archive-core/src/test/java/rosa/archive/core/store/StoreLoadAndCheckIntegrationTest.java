@@ -33,7 +33,7 @@ import static org.junit.Assert.assertTrue;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceJUnitRunner.GuiceModules({ArchiveCoreModule.class})
-public class StoreIntegrationTest extends AbstractFileSystemTest {
+public class StoreLoadAndCheckIntegrationTest extends AbstractFileSystemTest {
 
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();

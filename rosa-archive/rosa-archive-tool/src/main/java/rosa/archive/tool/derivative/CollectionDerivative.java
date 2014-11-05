@@ -39,7 +39,9 @@ public class CollectionDerivative extends AbstractDerivative {
     public void updateChecksum(boolean force) throws IOException {
         List<String> errors = new ArrayList<>();
 
+        report.print("  \nUpdating SHA1SUM for collection. [" + collection + "]");
         store.updateChecksum(collection, force, errors);
+        report.println(" ... complete!");
 
         if (!errors.isEmpty()) {
             reportError("Errors", errors);
@@ -47,7 +49,9 @@ public class CollectionDerivative extends AbstractDerivative {
         }
 
         for (String bookName : store.listBooks(collection)) {
+            report.print("  Updating SHA1SUM for book. [" + collection + ":" + bookName + "]");
             store.updateChecksum(collection, bookName, force, errors);
+            report.println(" ... complete!");
 
             if (!errors.isEmpty()) {
                 reportError("Errors", errors);

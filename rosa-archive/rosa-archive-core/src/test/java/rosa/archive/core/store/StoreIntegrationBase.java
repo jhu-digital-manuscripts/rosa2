@@ -1,6 +1,8 @@
 package rosa.archive.core.store;
 
 import com.google.inject.Inject;
+import org.apache.commons.io.IOUtils;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TemporaryFolder;
@@ -15,10 +17,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -29,6 +33,8 @@ import static org.junit.Assert.assertTrue;
 @RunWith(GuiceJUnitRunner.class)
 @GuiceJUnitRunner.GuiceModules({ArchiveCoreModule.class})
 public abstract class StoreIntegrationBase {
+    public final String COLLECTION = "collection";
+    public final String BOOK = "LudwigXV7";
 
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
@@ -40,6 +46,9 @@ public abstract class StoreIntegrationBase {
     protected Path defaultPath;
     protected File folder;
 
+    public Path testCollection;
+    public Path testBook;
+
     @Before
     public void setup() throws URISyntaxException, IOException {
         URL url = getClass().getClassLoader().getResource("data/LudwigXV7");
@@ -47,12 +56,15 @@ public abstract class StoreIntegrationBase {
         defaultPath = Paths.get(url.toURI());
         assertNotNull(defaultPath);
 
-        folder = tempFolder.newFolder("1");
+        folder = tempFolder.newFolder();
 
         ByteStreamGroup tGroup = new FSByteStreamGroup(folder.toString());
 
         store = storeFactory.create(tGroup);
         assertNotNull(store);
+
+        testCollection = Files.createDirectory(folder.toPath().resolve(COLLECTION));
+        testBook = Files.createDirectory(testCollection.resolve(BOOK));
     }
 
     protected void copyMissingImage(Path originalPath, Path collectionPath) throws IOException {
@@ -84,6 +96,19 @@ public abstract class StoreIntegrationBase {
                 try (InputStream in = Files.newInputStream(path)) {
                     String name = path.getFileName().toString();
                     Path filePath = bookPath.resolve(name);
+
+                    if (name.endsWith("images.csv")) {
+                        System.out.println("Readable? " + Files.isReadable(path));
+                        System.out.println("---------- ORIGINAL : " + name + " ----------");
+//                        List<String> lines = Files.readAllLines(path, Charset.forName("UTF-8"));
+//                        List<String> lines = IOUtils.readLines(in, Charset.forName("UTF-8"));
+                        byte[] bytes = Files.readAllBytes(path);
+                        System.out.println(new String(bytes, "UTF-8"));
+//                        for (String l : lines) {
+//                            System.out.println(l);
+//                        }
+                        System.out.println("---------- END ----------");
+                    }
 
                     Files.copy(in, filePath);
                     assertTrue(Files.exists(filePath));

@@ -24,6 +24,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  *
@@ -221,33 +223,9 @@ public class StoreImpl implements Store {
             return;
         }
 
-        List<BookImage> images = new ArrayList<>();
-        for (String file : bookStreams.listByteStreamNames()) {
-            if (file.endsWith(config.getTIF())) {
-
-                String filepath = Paths.get(bookStreams.id()).resolve(file).toString();
-                int[] dimensions = getImageDimensionsHack(filepath);
-
-                BookImage img = new BookImage();
-                img.setId(file);
-                img.setWidth(dimensions[0]);
-                img.setHeight(dimensions[1]);
-                img.setMissing(false);
-
-                images.add(img);
-            }
-        }
-        images.sort(BookImageComparator.instance());
-        int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(config.getMISSING_IMAGE()) ?
-                getImageDimensionsHack(
-                        Paths.get(base.getByteStreamGroup(collection).id())
-                                .resolve(config.getMISSING_IMAGE()).toString()) :
-                new int[] {0, 0};
-        addMissingImages(book, images, missingDimensions);
-
         ImageList list = new ImageList();
         list.setId(book + config.getIMAGES());
-        list.setImages(images);
+        list.setImages(buildImageList(collection, book, true, bookStreams));
 
         writeItem(list, bookStreams, ImageList.class, errors);
     }
@@ -268,6 +246,53 @@ public class StoreImpl implements Store {
         ByteStreamGroup bookStreams = colStreams.getByteStreamGroup(book.getId());
 
         return updateChecksum(checksums, bookStreams, force, errors);
+    }
+
+    @Override
+    public void generateAndWriteCropList(String collection, String book, boolean force, List<String> errors) throws IOException {
+
+    }
+
+    @Override
+    public void cropImages(String collection, String book, boolean force, List<String> errors) throws IOException {
+        if (!base.hasByteStreamGroup(collection)) {
+            errors.add("Collection not found in directory. [" + base.id() + "]");
+            return;
+        } else if (!base.getByteStreamGroup(collection).hasByteStreamGroup(book)) {
+            errors.add("Book not found in collection. [" + collection + "]");
+            return;
+        }
+
+        ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
+        Book b = loadBook(collection, book, errors);
+        errors.clear();
+
+        if (!force && (b.getCroppedImages() != null || bookStreams.hasByteStreamGroup(config.getCROPPED_DIR()))) {
+            errors.add("Cropped images already exist for this book. [" + collection + ":" + book
+                    + "]. Force overwrite with '-force'");
+            return;
+        }
+
+        ByteStreamGroup cropGroup = bookStreams.newByteStreamGroup(config.getCROPPED_DIR());
+
+        CropInfo cropInfo = b.getCropInfo();
+        ImageList images = b.getImages();
+
+        ExecutorService executorService = Executors.newFixedThreadPool(4);
+        for (BookImage image : images) {
+            CropData cropping = cropInfo.getCropDataForPage(image.getId());
+            if (cropping == null) {
+                errors.add("Image missing from cropping information, copying old file. [" + image.getId() + "]");
+                bookStreams.copyByteStream(image.getId(), cropGroup);
+                continue;
+            }
+
+            Runnable cropper = new CropRunnable(
+                    bookStreams.id(), image, cropping, config.getCROPPED_DIR(), errors
+            );
+            executorService.execute(cropper);
+        }
+        executorService.shutdown();
     }
 
     /**
@@ -357,6 +382,47 @@ public class StoreImpl implements Store {
         }
 
         images.sort(BookImageComparator.instance());
+    }
+
+    /**
+     * Take all images from {@param bookStreams} and build a list of {@link rosa.archive.model.BookImage}s.
+     *
+     * @param collection collection name
+     * @param book book name
+     * @param bookStreams byte stream group containing the images
+     * @return list of BookImages
+     * @throws IOException
+     */
+    private List<BookImage> buildImageList(String collection, String book, boolean addMissing,
+                                           ByteStreamGroup bookStreams) throws IOException {
+        List<BookImage> images = new ArrayList<>();
+        for (String file : bookStreams.listByteStreamNames()) {
+            if (file.endsWith(config.getTIF())) {
+
+                String filepath = Paths.get(bookStreams.id()).resolve(file).toString();
+                int[] dimensions = getImageDimensionsHack(filepath);
+
+                BookImage img = new BookImage();
+                img.setId(file);
+                img.setWidth(dimensions[0]);
+                img.setHeight(dimensions[1]);
+                img.setMissing(false);
+
+                images.add(img);
+            }
+        }
+        images.sort(BookImageComparator.instance());
+
+        if (addMissing) {
+            int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(config.getMISSING_IMAGE()) ?
+                    getImageDimensionsHack(
+                            Paths.get(base.getByteStreamGroup(collection).id())
+                                    .resolve(config.getMISSING_IMAGE()).toString()) :
+                    new int[]{0, 0};
+            addMissingImages(book, images, missingDimensions);
+        }
+
+        return images;
     }
 
     /**

@@ -7,6 +7,7 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -182,4 +183,26 @@ public class FSByteStreamGroup implements ByteStreamGroup {
         return path.toFile().lastModified();
     }
 
+    @Override
+    public ByteStreamGroup newByteStreamGroup(String name) throws IOException {
+        if (hasByteStreamGroup(name)) {
+            return getByteStreamGroup(name);
+        }
+
+        Path group = Files.createDirectory(base.resolve(name));
+        return new FSByteStreamGroup(group);
+    }
+
+    @Override
+    public void copyByteStream(String sourceStream, ByteStreamGroup targetGroup) throws IOException {
+        copyByteStream(sourceStream, sourceStream, targetGroup);
+    }
+
+    @Override
+    public void copyByteStream(String sourceStream, String targetStream, ByteStreamGroup targetGroup) throws IOException {
+        InputStream source = getByteStream(sourceStream);
+        Path target = Paths.get(targetGroup.id()).resolve(targetStream);
+
+        Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
+    }
 }

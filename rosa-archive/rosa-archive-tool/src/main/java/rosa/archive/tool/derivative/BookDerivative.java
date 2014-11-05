@@ -14,8 +14,8 @@ import java.util.List;
  */
 public class BookDerivative extends AbstractDerivative {
 
-    private String collection;
-    private String book;
+    protected String collection;
+    protected String book;
 
     public BookDerivative(String collection, String book, PrintStream report, Store store) {
         super(report, store);

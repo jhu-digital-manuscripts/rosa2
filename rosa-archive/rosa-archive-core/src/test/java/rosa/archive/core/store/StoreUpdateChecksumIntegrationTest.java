@@ -107,22 +107,18 @@ public class StoreUpdateChecksumIntegrationTest extends StoreIntegrationBase {
 
     @Test
     public void createNewChecksums() throws Exception {
-        final String BOOK = "LudwigXV7";
         List<String> errors = new ArrayList<>();
 
-        Path collectionPath = Files.createDirectories(folder.toPath().resolve(COLLECTION));
-        Path bookPath = Files.createDirectories(collectionPath.resolve(BOOK));
-
         // Copy all files, then delete the SHA1SUM file
-        copyTestFiles(defaultPath, bookPath);
-        Files.deleteIfExists(bookPath.resolve("LudwigXV7.SHA1SUM"));
+        copyTestFiles(defaultPath, testBook);
+        Files.deleteIfExists(testBook.resolve("LudwigXV7.SHA1SUM"));
 
         assertEquals(1, store.listBookCollections().length);
         assertEquals(1, store.listBooks("collection").length);
         assertEquals("LudwigXV7", store.listBooks("collection")[0]);
 
         // Ensure that no SHA1SUM file exists
-        ByteStreamGroup bookStreams = new FSByteStreamGroup(bookPath.toString());
+        ByteStreamGroup bookStreams = new FSByteStreamGroup(testBook.toString());
         assertNotNull(bookStreams);
         assertEquals(0, bookStreams.numberOfByteStreamGroups());
         assertEquals(52, bookStreams.numberOfByteStreams());
@@ -152,7 +148,7 @@ public class StoreUpdateChecksumIntegrationTest extends StoreIntegrationBase {
         assertEquals(0, badChecksums(collection, book));
 
         // Read in the file again.
-        List<String> newLines = Files.readAllLines(bookPath.resolve("LudwigXV7.SHA1SUM"), Charset.forName("UTF-8"));
+        List<String> newLines = Files.readAllLines(testBook.resolve("LudwigXV7.SHA1SUM"), Charset.forName("UTF-8"));
         assertNotNull(newLines);
 
         // Make sure the two lists are different!
@@ -173,13 +169,11 @@ public class StoreUpdateChecksumIntegrationTest extends StoreIntegrationBase {
     @Test
     public void overwriteOldChecksums() throws Exception {
         List<String> errors = new ArrayList<>();
-        Path collectionPath = Files.createDirectory(folder.toPath().resolve(COLLECTION));
-        Path bookPath = Files.createDirectory(collectionPath.resolve("LudwigXV7"));
 
-        copyTestFiles(defaultPath, bookPath);
+        copyTestFiles(defaultPath, testBook);
 
         // Save original data lines
-        List<String> originalLines = Files.readAllLines(bookPath.resolve("LudwigXV7.SHA1SUM"), Charset.forName("UTF-8"));
+        List<String> originalLines = Files.readAllLines(testBook.resolve("LudwigXV7.SHA1SUM"), Charset.forName("UTF-8"));
         assertNotNull(originalLines);
         assertEquals(51, originalLines.size());
 
@@ -203,7 +197,7 @@ public class StoreUpdateChecksumIntegrationTest extends StoreIntegrationBase {
         assertEquals(0, badChecksums(collection, store.loadBook(COLLECTION, "LudwigXV7", errors)));
 
         // Read in the file again.
-        List<String> newLines = Files.readAllLines(bookPath.resolve("LudwigXV7.SHA1SUM"), Charset.forName("UTF-8"));
+        List<String> newLines = Files.readAllLines(testBook.resolve("LudwigXV7.SHA1SUM"), Charset.forName("UTF-8"));
         assertNotNull(newLines);
 
         // Make sure the two lists are different!
