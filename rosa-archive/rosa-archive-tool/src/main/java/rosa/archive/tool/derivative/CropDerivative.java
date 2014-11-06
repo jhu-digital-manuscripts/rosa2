@@ -13,18 +13,11 @@ public class CropDerivative extends BookDerivative {
         super(collection, book, report, store);
     }
 
-    private void generateCroppedImageList(boolean force) throws IOException {
-        List<String> errors = new ArrayList<>();
-//        store.generateAndWriteImageList(collection, book, force, errors);
-
-        if (!errors.isEmpty()) {
-            reportError("Errors:", errors);
-        }
-    }
-
     public boolean cropImages(boolean force) throws IOException {
         List<String> errors = new ArrayList<>();
+
         store.cropImages(collection, book, force, errors);
+        store.generateAndWriteCropList(collection, book, force, errors);
 
         return errors.isEmpty();
     }

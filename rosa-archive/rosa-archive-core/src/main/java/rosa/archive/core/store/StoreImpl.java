@@ -251,7 +251,32 @@ public class StoreImpl implements Store {
 
     @Override
     public void generateAndWriteCropList(String collection, String book, boolean force, List<String> errors) throws IOException {
+        if (!base.hasByteStreamGroup(collection)) {
+            errors.add("Collection not found in directory. [" + base.id() + "]");
+            return;
+        } else if (!base.getByteStreamGroup(collection).hasByteStreamGroup(book)) {
+            errors.add("Book not found in collection. [" + collection + "]");
+            return;
+        }
 
+        ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
+
+        if (!bookStreams.hasByteStreamGroup(config.getCROPPED_DIR())) {
+            errors.add("No cropped images found. [" + collection + ":" + book + "]");
+            return;
+        } else if (!force && bookStreams.hasByteStream(book + config.getIMAGES_CROP())) {
+            errors.add("[" + book + config.getIMAGES_CROP() + "] already exists. You can force this operation" +
+                    " to update the existing image list.");
+            return;
+        }
+
+        ImageList list = new ImageList();
+        list.setId(book + config.getIMAGES_CROP());
+        list.setImages(
+                buildImageList(collection, book, false, bookStreams.getByteStreamGroup(config.getCROPPED_DIR()))
+        );
+
+        writeItem(list, bookStreams, ImageList.class, errors);
     }
 
     @Override
@@ -283,6 +308,10 @@ public class StoreImpl implements Store {
         // Crop images using ImageMagick, 4 at a time
         ExecutorService executorService = Executors.newFixedThreadPool(4);
         for (BookImage image : images) {
+            if (image.isMissing()) {
+                continue;
+            }
+
             CropData cropping = cropInfo.getCropDataForPage(image.getId());
             if (cropping == null) {
                 errors.add("Image missing from cropping information, copying old file. [" + image.getId() + "]");

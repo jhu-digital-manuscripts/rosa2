@@ -20,6 +20,7 @@ import rosa.archive.tool.config.Flag;
 import rosa.archive.tool.config.ToolConfig;
 import rosa.archive.tool.derivative.BookDerivative;
 import rosa.archive.tool.derivative.CollectionDerivative;
+import rosa.archive.tool.derivative.CropDerivative;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -109,6 +110,8 @@ public class ArchiveTool {
             update(cmd);
         } else if (command.equals(Command.UPDATE_IMAGE_LIST.display())) {
             updateImageList(cmd);
+        } else if (command.equals(Command.CROP_IMAGES.display())) {
+            cropImages(cmd);
         }
     }
 
@@ -352,4 +355,54 @@ public class ArchiveTool {
         report.println("...complete");
     }
 
+    /**
+     * Crop book images in the archive and create *.images.crop.csv
+     *
+     * @param cmd CLI command
+     */
+    private void cropImages(CommandLine cmd) {
+        boolean force = cmd.hasOption(Flag.FORCE.display()) || cmd.hasOption("f");
+        String[] args = cmd.getArgs();
+
+        switch (args.length) {
+            case 1:
+                try {
+                    for (String collection : store.listBookCollections()) {
+                        for (String book : store.listBooks(collection)) {
+                            report.println("Cropping images for book [" + collection + ":" + book + "]");
+                            CropDerivative deriv = new CropDerivative(collection, book, report, store);
+
+                            deriv.cropImages(force);
+                        }
+                    }
+                } catch (IOException e) {
+                    displayError("Failed to crop images.", args, e);
+                }
+                break;
+            case 2:
+                try {
+                    for (String book : store.listBooks(args[1])) {
+                        report.println("Cropping images for book [" + args[1] + ":" + book + "]");
+                        CropDerivative deriv = new CropDerivative(args[1], book, report, store);
+
+                        deriv.cropImages(force);
+                    }
+                } catch (IOException e) {
+                    displayError("Failed to crop images. [" + args[1] + "]", args, e);
+                }
+                break;
+            case 3:
+                report.println("Cropping images for book. [" + args[1] + ":" + args[2] + "]");
+                CropDerivative deriv = new CropDerivative(args[1], args[2], report, store);
+                try {
+                    deriv.cropImages(force);
+                } catch (IOException e) {
+                    displayError("Failed to crop images. [" + args[1] + ":" + args[2] + "]", args, e);
+                }
+                break;
+            default:
+                displayError("Too many arguments. Usage: crop-images [-options] <collectionId> <bookId>", args);
+                break;
+        }
+    }
 }
