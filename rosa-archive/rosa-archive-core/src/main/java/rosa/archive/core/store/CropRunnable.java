@@ -33,7 +33,7 @@ public class CropRunnable implements Runnable {
         boolean success = true;
         try {
             Process p = Runtime.getRuntime().exec(cmd);
-            success = p.waitFor(30, TimeUnit.SECONDS);
+            success = p.waitFor(60, TimeUnit.SECONDS);
         } catch (IOException | InterruptedException e) {
             errors.add("Failed to crop image. [" + cmd + "]");
         }
@@ -55,7 +55,7 @@ public class CropRunnable implements Runnable {
 
         // convert <source_image>: -crop WIDTHxHEIGHT+X+Y +repage <target_image>
         return "convert "
-                + source.toString() + ": -crop "
+                + source.toString() + " -crop "
                 + cropWidth + "x" + cropHeight
                 + "+" + points[2] + "+" + points[0]
                 + " +repage "

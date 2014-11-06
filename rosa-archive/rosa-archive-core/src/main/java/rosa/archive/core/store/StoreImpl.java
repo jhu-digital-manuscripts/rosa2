@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  *
@@ -262,7 +263,7 @@ public class StoreImpl implements Store {
             errors.add("Book not found in collection. [" + collection + "]");
             return;
         }
-
+        // Load the book
         ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
         Book b = loadBook(collection, book, errors);
         errors.clear();
@@ -273,11 +274,13 @@ public class StoreImpl implements Store {
             return;
         }
 
+        // Create the cropped/ directory
         ByteStreamGroup cropGroup = bookStreams.newByteStreamGroup(config.getCROPPED_DIR());
 
         CropInfo cropInfo = b.getCropInfo();
         ImageList images = b.getImages();
 
+        // Crop images using ImageMagick, 4 at a time
         ExecutorService executorService = Executors.newFixedThreadPool(4);
         for (BookImage image : images) {
             CropData cropping = cropInfo.getCropDataForPage(image.getId());
@@ -293,6 +296,12 @@ public class StoreImpl implements Store {
             executorService.execute(cropper);
         }
         executorService.shutdown();
+
+        try {
+            executorService.awaitTermination(30, TimeUnit.MINUTES);
+        } catch (InterruptedException e) {
+            errors.add("Cropping was interrupted!");
+        }
     }
 
     /**

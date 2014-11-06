@@ -1,8 +1,6 @@
 package rosa.archive.core.store;
 
 import com.google.inject.Inject;
-import org.apache.commons.io.IOUtils;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TemporaryFolder;
@@ -17,12 +15,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -96,19 +92,6 @@ public abstract class StoreIntegrationBase {
                 try (InputStream in = Files.newInputStream(path)) {
                     String name = path.getFileName().toString();
                     Path filePath = bookPath.resolve(name);
-
-                    if (name.endsWith("images.csv")) {
-                        System.out.println("Readable? " + Files.isReadable(path));
-                        System.out.println("---------- ORIGINAL : " + name + " ----------");
-//                        List<String> lines = Files.readAllLines(path, Charset.forName("UTF-8"));
-//                        List<String> lines = IOUtils.readLines(in, Charset.forName("UTF-8"));
-                        byte[] bytes = Files.readAllBytes(path);
-                        System.out.println(new String(bytes, "UTF-8"));
-//                        for (String l : lines) {
-//                            System.out.println(l);
-//                        }
-                        System.out.println("---------- END ----------");
-                    }
 
                     Files.copy(in, filePath);
                     assertTrue(Files.exists(filePath));

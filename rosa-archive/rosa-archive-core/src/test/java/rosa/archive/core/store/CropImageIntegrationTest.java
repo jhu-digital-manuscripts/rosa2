@@ -1,14 +1,10 @@
 package rosa.archive.core.store;
 
-import org.apache.commons.io.IOUtils;
 import org.junit.Test;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,15 +38,6 @@ public class CropImageIntegrationTest extends StoreIntegrationBase {
         assertNotNull(bookGroup);
         assertTrue(bookGroup.hasByteStream("LudwigXV7.images.crop.csv"));
         assertFalse(bookGroup.hasByteStreamGroup("cropped"));
-
-        System.out.println("\n---- LudwigXV7.images.csv ----");
-        try (InputStream in = bookGroup.getByteStream("LudwigXV7.images.csv")) {
-            List<String> lines = IOUtils.readLines(in, "UTF-8");
-            for (String line : lines) {
-                System.out.println(line);
-            }
-        }
-        System.out.println("\n ---- end ----");
 
         List<String> errors = new ArrayList<>();
         store.cropImages(COLLECTION, BOOK, false, errors);
@@ -86,34 +73,15 @@ public class CropImageIntegrationTest extends StoreIntegrationBase {
         assertTrue(bookGroup.hasByteStream("LudwigXV7.images.crop.csv"));
         assertFalse(bookGroup.hasByteStreamGroup("cropped"));
 
-        System.out.println("\n---- COPY: LudwigXV7.images.csv ----");
-        try (InputStream in = bookGroup.getByteStream("LudwigXV7.images.csv")) {
-//            List<String> lines = IOUtils.readLines(in, "UTF-8");
-            List<String> lines = Files.readAllLines(Paths.get(bookGroup.id()).resolve("LudwigXV7.images.csv"));
-            for (String line : lines) {
-                System.out.println(line);
-            }
-        }
-        System.out.println("\n ---- end ----");
-
-//        System.out.println("Byte Streams:");
-//        for (String name : bookGroup.listByteStreamNames()) {
-//            System.out.println(name);
-//        }
-//        System.out.println("Byte Stream Groups:");
-//        for (String name : bookGroup.listByteStreamGroupNames()) {
-//            System.out.println(name);
-//        }
-
         // count the number of original images
         assertEquals(21, countImages(bookGroup));
 
         List<String> errors = new ArrayList<>();
         store.cropImages(COLLECTION, BOOK, true, errors);
 
-//        assertEquals(1, errors.size());
-//        assertEquals("Image missing from cropping information, copying old file. [LudwigXV7.frontmatter.flyleaf.001r.tif]",
-//                errors.get(0));
+        assertEquals(1, errors.size());
+        assertEquals("Image missing from cropping information, copying old file. [LudwigXV7.frontmatter.flyleaf.001r.tif]",
+                errors.get(0));
         assertTrue(bookGroup.hasByteStreamGroup("cropped"));
         assertEquals(21, countImages(bookGroup.getByteStreamGroup("cropped")));
     }
