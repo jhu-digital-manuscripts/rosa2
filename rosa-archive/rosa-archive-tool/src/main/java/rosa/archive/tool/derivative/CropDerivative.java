@@ -19,6 +19,10 @@ public class CropDerivative extends BookDerivative {
         store.cropImages(collection, book, force, errors);
         store.generateAndWriteCropList(collection, book, force, errors);
 
+        if (!errors.isEmpty()) {
+            reportError("Errors:", errors);
+        }
+
         return errors.isEmpty();
     }
 

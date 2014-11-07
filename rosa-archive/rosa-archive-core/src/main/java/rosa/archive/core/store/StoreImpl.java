@@ -15,9 +15,11 @@ import rosa.archive.model.*;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.aor.AnnotatedPage;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PrintStream;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
@@ -329,7 +331,7 @@ public class StoreImpl implements Store {
         try {
             executorService.awaitTermination(30, TimeUnit.MINUTES);
         } catch (InterruptedException e) {
-            errors.add("Cropping was interrupted!");
+            errors.add("Cropping was interrupted!\n" + stacktrace(e));
         }
     }
 
@@ -603,7 +605,7 @@ public class StoreImpl implements Store {
 
             return true;
         } catch (IOException e) {
-            errors.add("Failed to write [" + item.getId() + "]");
+            errors.add("Failed to write [" + item.getId() + "]\n" + stacktrace(e));
             return false;
         }
     }
@@ -624,7 +626,7 @@ public class StoreImpl implements Store {
             return obj;
 
         } catch (IOException e) {
-            errors.add("Failed to read item in archive. [" + name + "]");
+            errors.add("Failed to read item in archive. [" + name + "]\n" + stacktrace(e));
             return null;
         }
     }
@@ -641,5 +643,10 @@ public class StoreImpl implements Store {
         return "";
     }
 
+    private String stacktrace(Exception e) {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        e.printStackTrace(new PrintStream(out));
 
+        return out.toString();
+    }
 }

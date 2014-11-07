@@ -3,7 +3,9 @@ package rosa.archive.core.store;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.CropData;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
@@ -31,11 +33,18 @@ public class CropRunnable implements Runnable {
 
         String cmd = buildCommand();
         boolean success = true;
+        Process p = null;
         try {
-            Process p = Runtime.getRuntime().exec(cmd);
+            p = Runtime.getRuntime().exec(cmd);
             success = p.waitFor(60, TimeUnit.SECONDS);
         } catch (IOException | InterruptedException e) {
-            errors.add("Failed to crop image. [" + cmd + "]");
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            e.printStackTrace(new PrintStream(out));
+            errors.add("Failed to crop image. [" + cmd + "]\n" + out.toString());
+        } finally {
+            if (p != null) {
+                p.destroy();
+            }
         }
 
         if (!success) {

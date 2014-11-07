@@ -111,7 +111,8 @@ public class BookChecker extends AbstractArchiveChecker {
             check(book.getManualNarrativeTagging(), collection.getNarrativeSections(), errors, warnings);
 
         } catch (IOException e) {
-            errors.add("Unable to check references to character_names, illustration_titles, or narrative_sections.");
+            errors.add("Unable to check references to character_names, illustration_titles, " +
+                    "or narrative_sections.\n" + stacktrace(e));
         }
         // check bit integrity
         if (checkBits) {
@@ -310,11 +311,7 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
-        try {
-            serializerMap.get(BookMetadata.class).read(bsg.getByteStream(metadata.getId()), errors);
-        } catch (IOException e) {
-            errors.add("Failed to serialize book metadata. [" + metadata.getId() + "]");
-        }
+        attemptToRead(metadata, bsg, errors, warnings);
     }
 
     /**
@@ -342,11 +339,7 @@ public class BookChecker extends AbstractArchiveChecker {
             errors.add("Permission not in archive. [" + permission.getId() + "]");
         }
 
-        try {
-            serializerMap.get(Permission.class).read(bsg.getByteStream(permission.getId()), errors);
-        } catch (IOException e) {
-            errors.add("Failed to serialize permission file. [" + permission.getId() + "]");
-        }
+        attemptToRead(permission, bsg, errors, warnings);
     }
 
     /**
@@ -395,11 +388,7 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
-        try {
-            serializerMap.get(ImageList.class).read(bsg.getByteStream(images.getId()), errors);
-        } catch (IOException e) {
-            errors.add("Failed to serialize image list. [" + images.getId() + "]");
-        }
+        attemptToRead(images, bsg, errors, warnings);
     }
 
     /**
@@ -444,11 +433,7 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
-        try {
-            serializerMap.get(CropInfo.class).read(bsg.getByteStream(cropInfo.getId()), errors);
-        } catch (IOException e) {
-            errors.add("Failed to serialize crop info. [" + cropInfo.getId() + "]");
-        }
+        attemptToRead(cropInfo, bsg, errors, warnings);
     }
 
     /**
@@ -498,11 +483,7 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
-        try {
-            serializerMap.get(SHA1Checksum.class).read(bsg.getByteStream(info.getId()), errors);
-        } catch (IOException e) {
-            errors.add("Failed to serialize checksum info. [" + info.getId() + "]");
-        }
+        attemptToRead(info, bsg, errors, warnings);
     }
 
     /**
@@ -547,11 +528,7 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
-        try {
-            serializerMap.get(BookStructure.class).read(bsg.getByteStream(structure.getId()), errors);
-        } catch (IOException e) {
-            errors.add("Failed to serialize reduced tagging. [" + structure.getId() + "]");
-        }
+        attemptToRead(structure, bsg, errors, warnings);
     }
 
     /**
@@ -692,11 +669,7 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
-        try {
-            serializerMap.get(IllustrationTagging.class).read(bsg.getByteStream(tagging.getId()), errors);
-        } catch (IOException e) {
-            errors.add("Failed to serialize illustration tagging. [" + tagging.getId() + "]");
-        }
+        attemptToRead(tagging, bsg, errors,warnings);
     }
 
     /**
@@ -730,15 +703,25 @@ public class BookChecker extends AbstractArchiveChecker {
             }
         }
 
-        try {
-            serializerMap.get(NarrativeTagging.class).read(bsg.getByteStream(tagging.getId()), errors);
-        } catch (IOException e) {
-            errors.add("Failed to serialize [" + parent.getId() + ":" + tagging.getId() + "]");
-        }
+        attemptToRead(tagging, bsg, errors, warnings);
 
     // TODO check other parts against BookStructure
     }
 
+    /**
+     * Check validity of AoR transcription data.
+     * <ul>
+     *     <li>XML transcriptions must validate against the schema</li>
+     *     <li>XML transcription must be in the archive</li>
+     *     <li>Page that the transcription refers to must be in archive</li>
+     * </ul>
+     *
+     * @param pages list of AOR annotated pages
+     * @param parent parent book
+     * @param bsg byte stream group that holds these pages
+     * @param errors list of errors
+     * @param warnings list of warnings
+     */
     private void check(List<AnnotatedPage> pages, Book parent, ByteStreamGroup bsg,
                        final List<String> errors, final List<String> warnings) {
 
@@ -764,11 +747,7 @@ public class BookChecker extends AbstractArchiveChecker {
             if (!bsg.hasByteStream(page.getId())) {
                 errors.add("Cannot find file. " + page.getId() + "]");
             } else {
-                try {
-                    serializerMap.get(AnnotatedPage.class).read(bsg.getByteStream(page.getId()), errors);
-                } catch (IOException e) {
-                    errors.add("Failed to serialize [" + parent.getId() + ":" + page.getId() + "]");
-                }
+                attemptToRead(page, bsg, errors, warnings);
 
                 try {
                     if (aorAnnotationSchema == null) {
@@ -805,7 +784,7 @@ public class BookChecker extends AbstractArchiveChecker {
 
                     validator.validate(source);
                 } catch (SAXException | IOException e) {
-                    errors.add("[" + page.getId() + "] failed to validate.");
+                    errors.add("[" + page.getId() + "] failed to validate.\n" + stacktrace(e));
                 }
             }
         }

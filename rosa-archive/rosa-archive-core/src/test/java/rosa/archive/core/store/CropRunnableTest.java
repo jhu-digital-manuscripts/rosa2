@@ -50,7 +50,7 @@ public class CropRunnableTest {
 
     @Test
     public void buildCommandTest() {
-        String expected = "convert /fake/IMAGE: -crop 800x800+100+100 +repage /fake/cropped/IMAGE";
+        String expected = "convert /fake/IMAGE -crop 800x800+100+100 +repage /fake/cropped/IMAGE";
         assertEquals(expected, runnable.buildCommand());
     }
 
