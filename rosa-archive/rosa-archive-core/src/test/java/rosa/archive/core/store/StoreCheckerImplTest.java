@@ -64,7 +64,7 @@ import static org.mockito.Mockito.when;
 /**
  *
  */
-public class StoreImplTest extends AbstractFileSystemTest {
+public class StoreCheckerImplTest extends AbstractFileSystemTest {
 
     private StoreImpl store;
     @Mock

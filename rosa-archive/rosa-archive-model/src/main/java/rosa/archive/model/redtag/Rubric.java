@@ -3,7 +3,7 @@ package rosa.archive.model.redtag;
 /**
  *
  */
-public class Rubric extends Item {
+public final class Rubric extends Item {
     private static final long serialVersionUID = 1L;
 
     private String text;
@@ -21,7 +21,7 @@ public class Rubric extends Item {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Rubric)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
 
         Rubric rubric = (Rubric) o;

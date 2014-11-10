@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
- *
+ * Test this godawful comparator.
  */
 public class BookImageComparatorTest {
 
@@ -19,8 +19,14 @@ public class BookImageComparatorTest {
         comparator = BookImageComparator.instance();
     }
 
+    /**
+     * Manuscript pagination: 001r, 001v, 002r, 002v, etc
+     *
+     * Page names are already in order. Each page name is compared to every other
+     * page name and the results of the comparator are checked.
+     */
     @Test
-    public void comparatorTest() {
+    public void manuscriptPaginationTest() {
         String[] names = {
                 "LudwigXV7.binding.frontcover.tif",
                 "LudwigXV7.frontmatter.pastedown.tif",
@@ -34,6 +40,22 @@ public class BookImageComparatorTest {
                 "LudwigXV7.binding.backcover.tif"
         };
 
+        testNames(names);
+    }
+
+    /**
+     * Example printed book pagination: A1r, A1v, A2r, A2v, ..., C3v, C4r, ..., etc
+     */
+    @Test
+    public void printedBookPaginationTest() {
+        String[] names = {
+                "id.a1r.tif", "id.A1v", "id.C3v", "id.C7r"
+        };
+
+        testNames(names);
+    }
+
+    private void testNames(String[] names) {
         BookImage im1 = new BookImage();
         BookImage im2 = new BookImage();
 
@@ -44,13 +66,17 @@ public class BookImageComparatorTest {
                     continue;
                 }
                 im2.setId(names[j]);
+                System.out.println(names[i] + "  ::  " + names[j] + "  ?  " + comparator.compare(im1, im2));
 
                 if (i < j) {
                     assertTrue(comparator.compare(im1, im2) < 0);
+                    assertTrue(comparator.compare(im2, im1) > 0);
                 } else if (i > j) {
                     assertTrue(comparator.compare(im1, im2) > 0);
+                    assertTrue(comparator.compare(im2, im1) < 0);
                 } else {
                     assertEquals(0, comparator.compare(im1, im2));
+                    assertEquals(0, comparator.compare(im2, im1));
                 }
             }
         }

@@ -32,6 +32,10 @@ public class PropertyInjectionTest {
     @Inject
     private AppConfig context;
 
+    /**
+     * Playing around with property injection in Guice, make sure they are
+     * available as expected.
+     */
     @Test
     public void test() {
         assertEquals("UTF-8", context.getCHARSET());

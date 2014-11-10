@@ -86,6 +86,20 @@
             </dependency>
 
             <dependency>
+                <artifactId>servlet-api</artifactId>
+                <groupId>javax.servlet</groupId>
+                <version>2.5</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>20140107</version>
+            </dependency>
+
+            <!-- Testing dependencies -->
+
+            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.11</version>
@@ -98,15 +112,9 @@
             </dependency>
 
             <dependency>
-                <artifactId>servlet-api</artifactId>
-                <groupId>javax.servlet</groupId>
-                <version>2.5</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20140107</version>
+                <groupId>nl.jqno.equalsverifier</groupId>
+                <artifactId>equalsverifier</artifactId>
+                <version>1.5</version>
             </dependency>
 
             <!-- Internal dependencies -->

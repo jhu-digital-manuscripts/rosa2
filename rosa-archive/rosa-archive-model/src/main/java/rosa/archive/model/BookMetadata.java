@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * Metadata describing a book in the archive.
  */
-public class BookMetadata implements HasId, Serializable {
+public final class BookMetadata implements HasId, Serializable {
     private static final long serialVersionUID = 1L;
 
     private String id;

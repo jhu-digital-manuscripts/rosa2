@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  *
  */
-public class BookText implements Serializable {
+public final class BookText implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private int linesPerColumn;

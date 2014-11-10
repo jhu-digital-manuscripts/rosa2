@@ -216,6 +216,15 @@ public class StoreUpdateChecksumIntegrationTest extends StoreIntegrationBase {
 
     }
 
+    /**
+     * Count the number of entries where the stored hash value does not match
+     * the newly calculated hash value. This is done by using
+     * {@link Store#check(rosa.archive.model.BookCollection, rosa.archive.model.Book, boolean, java.util.List, java.util.List)}
+     *
+     * @param collection name of collection
+     * @param book name of book
+     * @return number of bad checksums
+     */
     private int badChecksums(BookCollection collection, Book book) {
         List<String> errors = new ArrayList<>();
         List<String> warnings = new ArrayList<>();

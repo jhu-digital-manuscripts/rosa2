@@ -53,6 +53,13 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         }
     }
 
+    /**
+     * From the test files, a book archive is inspected and an image list is created
+     * and written to a temporary file (in order to leave the test data undisturbed).
+     * Check if the file was written correctly and has the proper format.
+     *
+     * @throws Exception
+     */
     @Test
     public void generateAndWriteImageListIntegrationTest() throws Exception {
         Path bookPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("LudwigXV7"));
@@ -86,6 +93,12 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         checkImageList(bookPath.resolve("LudwigXV7.images.csv"), expected);
     }
 
+    /**
+     * If a book archive has zero images, an image list will be generated. It will contain
+     * only those six required images, which will be labeled as missing.
+     *
+     * @throws Exception
+     */
     @Test
     public void imageListWithNoImages() throws Exception {
         Path collectionPath = Files.createDirectories(folder.toPath().resolve(COLLECTION));
@@ -111,6 +124,12 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         });
     }
 
+    /**
+     * For a book archive that already contains an image list that is out of date,
+     * overwrite the image list with the new data.
+     *
+     * @throws Exception
+     */
     @Test
     public void replaceExistingImageList() throws Exception {
         URL url = getClass().getClassLoader().getResource("data/Walters143");

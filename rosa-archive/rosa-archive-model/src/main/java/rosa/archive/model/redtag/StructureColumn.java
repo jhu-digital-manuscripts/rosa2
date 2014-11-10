@@ -7,7 +7,7 @@ import java.util.List;
 /**
  *
  */
-public class StructureColumn implements Serializable {
+public final class StructureColumn implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private List<Item> items;
@@ -81,24 +81,24 @@ public class StructureColumn implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof StructureColumn)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
 
-        StructureColumn that = (StructureColumn) o;
+        StructureColumn column = (StructureColumn) o;
 
-        if (columnLetter != that.columnLetter) return false;
-        if (firstLineCriticalEdition != that.firstLineCriticalEdition) return false;
-        if (totalLines != that.totalLines) return false;
-        if (firstLineTranscribed != null ? !firstLineTranscribed.equals(that.firstLineTranscribed) : that.firstLineTranscribed != null)
+        if (columnLetter != column.columnLetter) return false;
+        if (firstLineCriticalEdition != column.firstLineCriticalEdition) return false;
+        if (totalLines != column.totalLines) return false;
+        if (firstLineTranscribed != null ? !firstLineTranscribed.equals(column.firstLineTranscribed) : column.firstLineTranscribed != null)
             return false;
-        if (!items.equals(that.items)) return false;
-        if (parentSide != null ? !parentSide.equals(that.parentSide) : that.parentSide != null) return false;
+        if (items != null ? !items.equals(column.items) : column.items != null) return false;
+        if (parentSide != null ? !parentSide.equals(column.parentSide) : column.parentSide != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = items.hashCode();
+        int result = items != null ? items.hashCode() : 0;
         result = 31 * result + firstLineCriticalEdition;
         result = 31 * result + (firstLineTranscribed != null ? firstLineTranscribed.hashCode() : 0);
         result = 31 * result + (parentSide != null ? parentSide.hashCode() : 0);
@@ -113,7 +113,7 @@ public class StructureColumn implements Serializable {
                 "items=" + items +
                 ", firstLineCriticalEdition=" + firstLineCriticalEdition +
                 ", firstLineTranscribed='" + firstLineTranscribed + '\'' +
-                ", parentSide=" + parentSide +
+                ", parentSide='" + parentSide + '\'' +
                 ", totalLines=" + totalLines +
                 ", columnLetter=" + columnLetter +
                 '}';

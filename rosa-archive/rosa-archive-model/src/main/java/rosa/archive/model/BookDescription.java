@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * A prose description of a book.
  */
-public class BookDescription implements HasId, Serializable {
+public final class BookDescription implements HasId, Serializable {
     private static final long serialVersionUID = 1L;
 
     private String id;

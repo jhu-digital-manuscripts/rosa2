@@ -36,6 +36,11 @@ public class CropRunnableTest {
         runnable = new CropRunnable("/fake/", image, crop, "cropped", errors);
     }
 
+    /**
+     * Input data for the CropRunnable includes initial width and height and the crop percent
+     * for top, bottom, left, and right. Make sure the top, bottom, left, and right position
+     * of the crop are calculated correctly in pixels.
+     */
     @Test
     public void fourCornersTest() {
         int[] corners = runnable.calcPoints();
