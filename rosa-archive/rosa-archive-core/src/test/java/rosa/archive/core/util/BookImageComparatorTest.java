@@ -66,7 +66,6 @@ public class BookImageComparatorTest {
                     continue;
                 }
                 im2.setId(names[j]);
-                System.out.println(names[i] + "  ::  " + names[j] + "  ?  " + comparator.compare(im1, im2));
 
                 if (i < j) {
                     assertTrue(comparator.compare(im1, im2) < 0);

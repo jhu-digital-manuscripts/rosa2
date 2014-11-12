@@ -29,6 +29,8 @@ import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -399,6 +401,9 @@ public class StoreImpl implements Store {
             ));
         }
 
+        // If images were skipped over, add those
+        addSkippedImages(images, missingDimensions);
+
         // Flyleaves, if present, must end in 'v' and have at minimum 1r & 1v
         int frontFlyleafIndex = lastIndexOfPrefix(book + config.getIMG_FRONT_FLYLEAF(), images);
         if (frontFlyleafIndex != -1) {
@@ -420,8 +425,107 @@ public class StoreImpl implements Store {
                 ));
             }
         }
+    }
 
+    /**
+     * Add any images that were skipped. The manuscripts contain several separate sequences
+     * of images (frontmatter, endmatter, and the main sequence). In each of these
+     * sequences, it is possible for images to be missing. This method adds a placeholder
+     * to the image list with the correct name for those missing images.
+     *
+     * @param images list of all BookImages
+     * @param missingDimensions dimensions of the missing image
+     */
+    private void addSkippedImages(List<BookImage> images, int[] missingDimensions) {
         images.sort(BookImageComparator.instance());
+
+        List<BookImage> missing = new ArrayList<>();
+        for (int i = 1; i < images.size(); i++) {
+            BookImage i1 = images.get(i - 1);
+            BookImage i2 = images.get(i);
+
+            String[] p1 = i1.getId().split("\\.");
+            String[] p2 = i2.getId().split("\\.");
+
+            if (p1.length != p2.length) {
+                // assuming prefixes with folios change length
+                continue;
+            }
+
+            String f1 = findFolio(i1.getId());
+            String f2 = findFolio(i2.getId());
+
+            if (StringUtils.isNotBlank(f1) && StringUtils.isNotBlank(f2)) {
+                String prefix1 = i1.getId().substring(0, i1.getId().length() - (f1 + config.getTIF()).length());
+                String prefix2 = i2.getId().substring(0, i2.getId().length() - (f2 + config.getTIF()).length());
+
+                if (!prefix1.equals(prefix2)) {
+                    continue;
+                }
+
+                int seq1 = Integer.parseInt(f1.substring(0, f1.length() - 1));
+                int seq2 = Integer.parseInt(f2.substring(0, f2.length() - 1));
+
+                char rv1 = f1.charAt(f1.length() - 1);
+                char rv2 = f2.charAt(f2.length() - 1);
+
+                // if seq1 == seq2 AND rv1 == 'r' AND rv2 == 'v'
+                //     nothing missing.
+                // if seq1 == seq2 AND (rv1 == 'v' OR rv2 == 'r')
+                //     something is wrong!
+                // if seq1 > seq2
+                //     list not sorted correctly
+                if (seq1 < seq2) {
+                    int numMissing = (seq2 - seq1 - 1) * 2;
+
+                    if (rv1 == 'r') {
+                        numMissing++;
+                    }
+                    if (rv2 == 'v') {
+                        numMissing++;
+                    }
+
+                    char next_rv = rv1;
+                    int next_seq = seq1;
+                    for (int j = 0; j < numMissing; j++) {
+                        if (next_rv == 'v') {
+                            next_rv = 'r';
+                            next_seq++;
+                        } else {
+                            next_rv = 'v';
+                        }
+
+                        BookImage missingImage = new BookImage(
+                                prefix1 + String.format("%03d", next_seq) + next_rv + config.getTIF(),
+                                missingDimensions[0], missingDimensions[1],
+                                true
+                        );
+                        missing.add(missingImage);
+                    }
+                }
+            }
+        }
+
+        images.addAll(missing);
+        images.sort(BookImageComparator.instance());
+    }
+
+    /**
+     * Find the folio designation from an image file name
+     *
+     * @param filename .
+     * @return folio number + side
+     */
+    public static String findFolio(String filename) {
+        Pattern p = Pattern.compile("(\\d+)(r|v)");
+        Matcher m = p.matcher(filename);
+
+        if (m.find()) {
+            int n = Integer.parseInt(m.group(1));
+            return String.format("%03d", n) + m.group(2);
+        } else {
+            return null;
+        }
     }
 
     /**

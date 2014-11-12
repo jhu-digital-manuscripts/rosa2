@@ -85,6 +85,10 @@ public class CollectionDerivative extends AbstractDerivative {
         }
 
         for (String bookName : store.listBooks(collection)) {
+            if (bookName.endsWith(".ignore")) {
+                continue;
+            }
+
             Book book = store.loadBook(collection, bookName, loadingErrors);
             if (book == null) {
                 report.println("Failed to read book. [" + collection + ":" + bookName + "]");

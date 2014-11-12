@@ -103,10 +103,9 @@ public class StoreLoadAndCheckIntegrationTest extends AbstractFileSystemTest {
 
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
-        assertEquals(1169, errors.size());
+        assertEquals(1163, errors.size());
         assertTrue(errors.contains("Cropping information for item [Walters143.138v.tif] missing from parent Book archive. [Walters143]"));
-        assertEquals(7, warnings.size());
-        assertTrue(warnings.contains("Illustration character ID is non-numeric. Illustration [43], character ID [Galatea]"));
+        assertEquals(0, warnings.size());
     }
 
     @Test

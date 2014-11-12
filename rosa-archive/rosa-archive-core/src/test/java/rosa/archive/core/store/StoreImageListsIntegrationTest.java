@@ -53,6 +53,45 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         }
     }
 
+    @Test
+    public void withMissingFolioImages() throws Exception {
+        Path bookPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("LudwigXV7"));
+
+        copyTestFiles(defaultPath, bookPath);
+        remove(bookPath, "LudwigXV7.images.csv");
+        remove(bookPath, "LudwigXV7.images.crop.csv");
+        remove(bookPath, "LudwigXV7.003r.tif");
+        remove(bookPath, "LudwigXV7.003v.tif");
+        remove(bookPath, "LudwigXV7.004r.tif");
+        remove(bookPath, "LudwigXV7.005v.tif");
+        remove(bookPath, "LudwigXV7.006r.tif");
+        remove(bookPath, "LudwigXV7.007v.tif");
+
+        final String[] expected = {
+                "*LudwigXV7.binding.frontcover.tif", "*LudwigXV7.frontmatter.pastedown.tif",
+                "LudwigXV7.frontmatter.flyleaf.001r.tif", "*LudwigXV7.frontmatter.flyleaf.001v.tif",
+                "LudwigXV7.001r.tif", "LudwigXV7.001v.tif", "LudwigXV7.002r.tif", "LudwigXV7.002v.tif",
+                "*LudwigXV7.003r.tif", "*LudwigXV7.003v.tif", "*LudwigXV7.004r.tif", "LudwigXV7.004v.tif",
+                "LudwigXV7.005r.tif", "*LudwigXV7.005v.tif", "*LudwigXV7.006r.tif", "LudwigXV7.006v.tif",
+                "LudwigXV7.007r.tif", "*LudwigXV7.007v.tif", "LudwigXV7.008r.tif", "LudwigXV7.008v.tif",
+                "LudwigXV7.009r.tif", "LudwigXV7.009v.tif", "LudwigXV7.010r.tif", "LudwigXV7.010v.tif",
+                "*LudwigXV7.endmatter.pastedown.tif", "*LudwigXV7.binding.backcover.tif"
+        };
+
+        ByteStreamGroup bookGroup = new FSByteStreamGroup(bookPath.toString());
+        assertEquals(0, bookGroup.numberOfByteStreamGroups());
+        assertEquals(45, bookGroup.numberOfByteStreams());
+        assertFalse(bookGroup.hasByteStream("LudwigXV7.images.csv"));
+        assertFalse(bookGroup.hasByteStream("LudwigXV7.images.crop.csv"));
+
+        List<String> errors = new ArrayList<>();
+        store.generateAndWriteImageList(COLLECTION, "LudwigXV7", false, errors);
+
+        assertTrue(errors.isEmpty());
+
+        checkImageList(bookPath.resolve("LudwigXV7.images.csv"), expected);
+    }
+
     /**
      * From the test files, a book archive is inspected and an image list is created
      * and written to a temporary file (in order to leave the test data undisturbed).
