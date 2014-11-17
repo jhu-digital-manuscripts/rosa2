@@ -30,7 +30,6 @@ public class BookImageComparator implements Comparator<BookImage> {
 
     @Override
     public int compare(BookImage image1, BookImage image2) {
-// TODO this thing sucks....might as well just assemble the list by hand!
         String[] i1 = image1.getId().split("\\.");
         String[] i2 = image2.getId().split("\\.");
 
@@ -98,7 +97,7 @@ public class BookImageComparator implements Comparator<BookImage> {
             } // if both are misc, use default behavior
 
         } catch (IndexOutOfBoundsException e) {
-            // TODO
+
         }
 
         return image1.getId().compareToIgnoreCase(image2.getId());

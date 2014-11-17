@@ -82,7 +82,6 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
 
     @Override
     public void write(CharacterNames names, OutputStream out) throws IOException {
-        // TODO make headers configurable
         final String header = "ID,Site name,French variant,English name\n";
         IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
 

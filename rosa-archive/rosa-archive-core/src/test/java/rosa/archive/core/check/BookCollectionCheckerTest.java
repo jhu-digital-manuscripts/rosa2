@@ -47,8 +47,6 @@ public class BookCollectionCheckerTest extends AbstractFileSystemTest {
 
         assertTrue(checker.checkContent(collection, bsg, false, new ArrayList<String>(), new ArrayList<String>()));
         assertFalse(checker.checkContent(new BookCollection(), bsg, false, new ArrayList<String>(), new ArrayList<String>()));
-        
-        // TODO checkBits=TRUE
 
     }
 

@@ -1,6 +1,5 @@
 package rosa.archive.core.serialize;
 
-import com.sun.org.apache.xml.internal.serializer.OutputPropertiesFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -13,15 +12,6 @@ import rosa.archive.model.BookText;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -143,7 +133,6 @@ public class MetadataSerializer implements Serializer<Map<String, BookMetadata>>
         Map<String, BookMetadata> metadataMap = new HashMap<>();
 
         Element top = doc.getDocumentElement();
-//  TODO support lang
 
         for (String lang : getLanguages(doc)) {
             BookMetadata metadata = new BookMetadata();

@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
@@ -29,6 +30,7 @@ public class MetadataSerializerTest extends BaseSerializerTest {
     }
 
     @Test
+    @Ignore
     public void readTest() throws Exception {
         String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
                 "<book illustrations=\"42\" pages=\"100\">\n" +
@@ -73,6 +75,7 @@ public class MetadataSerializerTest extends BaseSerializerTest {
     }
 
     @Test
+    @Ignore
     public void writeTest() throws Exception {
         BookMetadata metadata = createMetadata("en");
         BookMetadata metadataFr = createMetadata("fr");

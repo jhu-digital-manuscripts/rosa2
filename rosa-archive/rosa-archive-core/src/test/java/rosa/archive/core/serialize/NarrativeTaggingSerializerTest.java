@@ -5,6 +5,7 @@ import org.junit.Test;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.NarrativeTagging;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -82,9 +83,8 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
     @Test
     public void writeTest() throws IOException {
         NarrativeTagging tagging = createNartag();
-//        serializer.write(tagging, System.out);
-
-        // TODO
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        serializer.write(tagging, out);
     }
 
     private NarrativeTagging createNartag() {

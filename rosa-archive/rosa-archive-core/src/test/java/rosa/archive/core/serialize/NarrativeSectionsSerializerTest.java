@@ -5,6 +5,7 @@ import org.junit.Test;
 import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -52,9 +53,8 @@ public class NarrativeSectionsSerializerTest extends BaseSerializerTest {
     @Test
     public void writeTest() throws IOException {
         NarrativeSections sections = createNarrativeSections();
-//        serializer.write(sections, System.out);
-
-        // TODO
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        serializer.write(sections, out);
     }
 
     private NarrativeSections createNarrativeSections() {

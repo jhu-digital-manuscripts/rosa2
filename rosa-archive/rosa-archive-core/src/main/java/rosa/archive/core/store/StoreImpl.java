@@ -141,7 +141,7 @@ public class StoreImpl implements Store {
                 }
             }
 
-            // Look for annotation files matching bookId.PAGE.xml  TODO temporary
+            // Look for annotation files matching bookId.PAGE.xml
             if (name.matches("\\w+\\.\\d{1,3}(r|v|R|V)\\.xml")) {
                 pages.add(loadItem(name, bookStreams, AnnotatedPage.class, errors));
             }

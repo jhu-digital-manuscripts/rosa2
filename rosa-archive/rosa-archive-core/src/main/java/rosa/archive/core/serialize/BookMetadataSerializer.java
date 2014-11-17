@@ -81,7 +81,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         Element bibl = doc.createElement("bibl");
         sourceDesc.appendChild(bibl);
 
-        // TODO pull Title out of the ID?
         Element title = doc.createElement(config.getMetadataTextsTitleTag());
         title.appendChild(doc.createTextNode(metadata.getTitle()));
         bibl.appendChild(title);
@@ -123,7 +122,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         Element dimensionsEl = doc.createElement("dimensions");
         extentEl.appendChild(dimensionsEl);
 
-        //        <height>TODO record dimension units in model!
         Element height = doc.createElement(config.getMetadataHeightTag());
         dimensionsEl.appendChild(height);
         height.setAttribute("unit", metadata.getDimensionUnits());
@@ -175,8 +173,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             locus.setAttribute(config.getMetadataTextsFirstPageTag(), text.getFirstPage());
             locus.setAttribute(config.getMetadataTextsLastPageTag() , text.getLastPage() );
             locus.appendChild(doc.createTextNode(text.getFirstPage() + "-" + text.getLastPage()));
-
-            // TODO title again...
 
             msItem.appendChild(note(
                     config.getMetadataTextsIdTag(),
@@ -301,7 +297,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         try {
             return Integer.parseInt(integer.trim());
         } catch (NumberFormatException e) {
-            // TODO log not a number error!
             return -1;
         }
     }
@@ -317,7 +312,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
         Element top = doc.getDocumentElement();
 
-//        metadata.setTitle(getString(top, config.getMetadataTextsTitleTag()));
+        metadata.setTitle(getString(top, config.getMetadataTextsTitleTag()));
         metadata.setDate(getString(top, config.getMetadataDateTag()));
         metadata.setCurrentLocation(getString(top, config.getMetadataCurrentLocationTag()));
         metadata.setRepository(getString(top, config.getMetadataRepositoryTag()));

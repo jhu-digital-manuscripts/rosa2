@@ -5,6 +5,7 @@ import org.junit.Test;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.aor.AnnotatedPage;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -62,9 +63,10 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
         }
     }
 
-    @Test
+    @Test (expected = UnsupportedOperationException.class)
     public void writeTest() throws IOException {
-        // TODO
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        serializer.write(new AnnotatedPage(), out);
     }
 
 }

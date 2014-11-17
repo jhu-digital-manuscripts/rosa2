@@ -780,8 +780,6 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         attemptToRead(tagging, bsg, errors, warnings);
-
-    // TODO check other parts against BookStructure
     }
 
     /**
