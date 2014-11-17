@@ -32,11 +32,14 @@ public class CropRunnable implements Runnable {
     public void run() {
 
         String cmd = buildCommand();
-        boolean success = true;
+        int success = 0;
         Process p = null;
         try {
             p = Runtime.getRuntime().exec(cmd);
-            success = p.waitFor(60, TimeUnit.SECONDS);
+            // Java8 only
+//            success = p.waitFor(60, TimeUnit.SECONDS);
+            // Java7
+            success = p.waitFor();
         } catch (IOException | InterruptedException e) {
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             e.printStackTrace(new PrintStream(out));
@@ -47,8 +50,8 @@ public class CropRunnable implements Runnable {
             }
         }
 
-        if (!success) {
-            errors.add("Image crop timed out. [" + cmd + "]");
+        if (success != 0) {
+            errors.add("Error in cropping images. [" + cmd + "]");
         }
     }
 

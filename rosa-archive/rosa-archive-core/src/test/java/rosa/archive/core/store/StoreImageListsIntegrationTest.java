@@ -193,7 +193,7 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         assertEquals("[Walters143.images.csv] already exists. You can force this operation to update " +
                 "the existing image list.", errors.get(0));
 
-        List<String> lines = Files.readAllLines(bookTestPath.resolve("Walters143.images.csv"));
+        List<String> lines = Files.readAllLines(bookTestPath.resolve("Walters143.images.csv"), Charset.forName("UTF-8"));
         assertNotNull(lines);
         assertEquals(81, lines.size());
 

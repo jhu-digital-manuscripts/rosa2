@@ -107,6 +107,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest {
         metadata.setYearEnd(300);
         metadata.setYearStart(100);
         metadata.setType("The type");
+        metadata.setDimensionUnits("mm");
 
         List<BookText> bookTextList = new ArrayList<>();
         for (int i = 0; i < 3; i++) {

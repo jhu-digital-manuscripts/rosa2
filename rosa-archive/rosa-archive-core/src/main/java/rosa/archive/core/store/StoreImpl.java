@@ -23,6 +23,7 @@ import java.io.PrintStream;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -437,7 +438,9 @@ public class StoreImpl implements Store {
      * @param missingDimensions dimensions of the missing image
      */
     private void addSkippedImages(List<BookImage> images, int[] missingDimensions) {
-        images.sort(BookImageComparator.instance());
+        Collections.sort(images, BookImageComparator.instance());
+//        Java8 only!
+//        images.sort(BookImageComparator.instance());
 
         List<BookImage> missing = new ArrayList<>();
         for (int i = 1; i < images.size(); i++) {
@@ -507,7 +510,8 @@ public class StoreImpl implements Store {
         }
 
         images.addAll(missing);
-        images.sort(BookImageComparator.instance());
+        Collections.sort(images, BookImageComparator.instance());
+//        images.sort(BookImageComparator.instance());
     }
 
     /**
@@ -555,7 +559,8 @@ public class StoreImpl implements Store {
                 images.add(img);
             }
         }
-        images.sort(BookImageComparator.instance());
+        Collections.sort(images, BookImageComparator.instance());
+//        images.sort(BookImageComparator.instance());
 
         if (addMissing) {
             int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(config.getMISSING_IMAGE()) ?

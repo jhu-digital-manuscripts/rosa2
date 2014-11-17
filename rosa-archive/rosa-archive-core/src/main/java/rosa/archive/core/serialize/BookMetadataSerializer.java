@@ -126,13 +126,13 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         //        <height>TODO record dimension units in model!
         Element height = doc.createElement(config.getMetadataHeightTag());
         dimensionsEl.appendChild(height);
-        height.setAttribute("unit", "mm");
+        height.setAttribute("unit", metadata.getDimensionUnits());
         height.appendChild(doc.createTextNode(String.valueOf(metadata.getHeight())));
 
         //        <width>
         Element width = doc.createElement(config.getMetadataWidthTag());
         dimensionsEl.appendChild(width);
-        width.setAttribute("unit", "mm");
+        height.setAttribute("unit", metadata.getDimensionUnits());
         width.appendChild(doc.createTextNode(String.valueOf(metadata.getWidth())));
 
         // ------ msDesc ------

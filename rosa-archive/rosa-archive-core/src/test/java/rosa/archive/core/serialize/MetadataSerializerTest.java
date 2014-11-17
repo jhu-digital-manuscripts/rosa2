@@ -91,9 +91,9 @@ public class MetadataSerializerTest extends BaseSerializerTest {
             assertNotNull(lines);
             assertEquals(27, lines.size());
 
-            assertEquals("<book illustrations=\"42\" pages=\"100\">", lines.get(1));
-            assertEquals("        <material>Some Material</material>", lines.get(10));
-            assertEquals("    <bibliography lang=\"fr\">", lines.get(16));
+            assertTrue(lines.contains("<book illustrations=\"42\" pages=\"100\">"));
+            assertTrue(lines.contains("        <material>Some Material</material>"));
+            assertTrue(lines.contains("    <bibliography lang=\"fr\">"));
         }
     }
 
