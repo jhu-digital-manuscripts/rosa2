@@ -1,11 +1,15 @@
 package rosa.iiif.image.model;
 
+import java.io.Serializable;
+
 /**
  * Request to perform a transform on an image and return the result.
  * 
  * Order of operations: Region THEN Size THEN Rotation THEN Quality THEN Format
  */
-public class ImageRequest {
+public class ImageRequest implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
     private String image_id;
     private ImageFormat format;
     private Size size;
@@ -79,43 +83,56 @@ public class ImageRequest {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
+        if (this == obj) {
             return true;
-        if (obj == null)
+        }
+        if (obj == null) {
             return false;
-        if (!(obj instanceof ImageRequest))
+        }
+        if (!(obj instanceof ImageRequest)) {
             return false;
+        }
         ImageRequest other = (ImageRequest) obj;
-        if (format != other.format)
+        if (format != other.format) {
             return false;
+        }
         if (image_id == null) {
-            if (other.image_id != null)
+            if (other.image_id != null) {
                 return false;
-        } else if (!image_id.equals(other.image_id))
+            }
+        } else if (!image_id.equals(other.image_id)) {
             return false;
-        if (quality != other.quality)
+        }
+        if (quality != other.quality) {
             return false;
+        }
         if (region == null) {
-            if (other.region != null)
+            if (other.region != null) {
                 return false;
-        } else if (!region.equals(other.region))
+            }
+        } else if (!region.equals(other.region)) {
             return false;
+        }
         if (rotation == null) {
-            if (other.rotation != null)
+            if (other.rotation != null) {
                 return false;
-        } else if (!rotation.equals(other.rotation))
+            }
+        } else if (!rotation.equals(other.rotation)) {
             return false;
+        }
         if (size == null) {
-            if (other.size != null)
+            if (other.size != null) {
                 return false;
-        } else if (!size.equals(other.size))
+            }
+        } else if (!size.equals(other.size)) {
             return false;
+        }
         return true;
     }
 
     @Override
     public String toString() {
-        return "IIIFImageRequest [image=" + image_id + ", format=" + format + ", scale=" + size + ", region=" + region
+        return "ImageRequest [image_id=" + image_id + ", format=" + format + ", size=" + size + ", region=" + region
                 + ", quality=" + quality + ", rotation=" + rotation + "]";
     }
 

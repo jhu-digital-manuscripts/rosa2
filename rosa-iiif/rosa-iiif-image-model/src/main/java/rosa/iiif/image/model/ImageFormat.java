@@ -1,8 +1,8 @@
 package rosa.iiif.image.model;
 
 public enum ImageFormat {
-    JPG("jpg", "image/jpeg"), TIF(".tif", "image/tiff"), PNG(".png", "image/png"), GIF(".gif", "image/gif"), 
-        JP2(".jp2", "image/jp2"), PDF(".pdf", "application/pdf"), WEBP("webp", "image/webp");
+    JPG("jpg", "image/jpeg"), TIF("tif", "image/tiff"), PNG("png", "image/png"), GIF("gif", "image/gif"), 
+        JP2("jp2", "image/jp2"), PDF("pdf", "application/pdf"), WEBP("webp", "image/webp");
 
     private String file_ext;
     private String mime_type;

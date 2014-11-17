@@ -1,9 +1,13 @@
 package rosa.iiif.image.model;
 
+import java.io.Serializable;
+
 /**
  * Request to return information about an image.
  */
-public class InfoRequest {
+public class InfoRequest implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private String image_id;
     private InfoFormat format;
 
@@ -37,25 +41,32 @@ public class InfoRequest {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
+        if (this == obj) {
             return true;
-        if (obj == null)
+        }
+        if (obj == null) {
             return false;
-        if (getClass() != obj.getClass())
+        }
+        if (!(obj instanceof InfoRequest)) {
             return false;
+        }
         InfoRequest other = (InfoRequest) obj;
-        if (format != other.format)
+        if (format != other.format) {
             return false;
+        }
         if (image_id == null) {
-            if (other.image_id != null)
+            if (other.image_id != null) {
                 return false;
-        } else if (!image_id.equals(other.image_id))
+            }
+        } else if (!image_id.equals(other.image_id)) {
             return false;
+        }
         return true;
     }
 
     @Override
     public String toString() {
-        return "IIIFInfoRequest [image=" + image_id + ", format=" + format + "]";
+        return "InfoRequest [image_id=" + image_id + ", format=" + format + "]";
     }
+
 }

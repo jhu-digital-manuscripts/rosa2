@@ -1,5 +1,7 @@
 package rosa.iiif.image.model;
 
+import java.io.Serializable;
+
 /**
  * An image may be rotated and mirrored.
  * 
@@ -7,10 +9,25 @@ package rosa.iiif.image.model;
  * is applied. The angle is the number of degrees of clockwise rotation and may
  * range from 0 to 360.
  */
-public class Rotation {
+public class Rotation implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
     private double angle;
     private boolean mirrored;
 
+    public Rotation() {
+        this(0.0, false);
+    }
+    
+    public Rotation(double angle) {
+        this(angle, false);
+    }
+    
+    public Rotation(double angle, boolean mirrored) {
+        this.angle = angle;
+        this.mirrored = mirrored;
+    }
+    
     public double getAngle() {
         return angle;
     }
@@ -40,17 +57,22 @@ public class Rotation {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
+        if (this == obj) {
             return true;
-        if (obj == null)
+        }
+        if (obj == null) {
             return false;
-        if (!(obj instanceof Rotation))
+        }
+        if (!(obj instanceof Rotation)) {
             return false;
+        }
         Rotation other = (Rotation) obj;
-        if (Double.doubleToLongBits(angle) != Double.doubleToLongBits(other.angle))
+        if (Double.doubleToLongBits(angle) != Double.doubleToLongBits(other.angle)) {
             return false;
-        if (mirrored != other.mirrored)
+        }
+        if (mirrored != other.mirrored) {
             return false;
+        }
         return true;
     }
 

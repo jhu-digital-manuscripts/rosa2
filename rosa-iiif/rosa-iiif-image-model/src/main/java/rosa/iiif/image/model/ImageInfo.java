@@ -1,26 +1,27 @@
 package rosa.iiif.image.model;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-
-public class ImageInfo {
+public class ImageInfo implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
     private String id;
     private int width;
     private int height;
-    private int[] scale_factors;
     private ImageFormat[] formats;
     private Quality[] qualities;
-    private int tile_width;
-    private int tile_height;
+    private int[] sizes;
+    private ServiceReference[] services;
 
     public ImageInfo() {
     }
 
-    public String getId() {
+    public String getImageId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setImageId(String id) {
         this.id = id;
     }
 
@@ -40,14 +41,6 @@ public class ImageInfo {
         this.height = height;
     }
 
-    public int[] getScaleFactors() {
-        return scale_factors;
-    }
-
-    public void setScaleFactors(int... scale_factors) {
-        this.scale_factors = scale_factors;
-    }
-
     public ImageFormat[] getFormats() {
         return formats;
     }
@@ -64,20 +57,27 @@ public class ImageInfo {
         this.qualities = qualities;
     }
 
-    public int getTileWidth() {
-        return tile_width;
+    /**
+     * @return width,height pairs
+     */
+    public int[] getSizes() {
+        return sizes;
     }
 
-    public void setTileWidth(int tile_width) {
-        this.tile_width = tile_width;
+    /**
+     * @param sizes
+     *            must be width,height pairs
+     */
+    public void setSizes(int... sizes) {
+        this.sizes = sizes;
     }
 
-    public int getTileHeight() {
-        return tile_height;
+    public ServiceReference[] getServices() {
+        return services;
     }
 
-    public void setTileHeight(int tile_height) {
-        this.tile_height = tile_height;
+    public void setServices(ServiceReference... services) {
+        this.services = services;
     }
 
     @Override
@@ -88,50 +88,56 @@ public class ImageInfo {
         result = prime * result + height;
         result = prime * result + ((id == null) ? 0 : id.hashCode());
         result = prime * result + Arrays.hashCode(qualities);
-        result = prime * result + Arrays.hashCode(scale_factors);
-        result = prime * result + tile_height;
-        result = prime * result + tile_width;
+        result = prime * result + Arrays.hashCode(services);
+        result = prime * result + Arrays.hashCode(sizes);
         result = prime * result + width;
         return result;
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
+        if (this == obj) {
             return true;
-        if (obj == null)
+        }
+        if (obj == null) {
             return false;
-        if (getClass() != obj.getClass())
+        }
+        if (!(obj instanceof ImageInfo)) {
             return false;
+        }
         ImageInfo other = (ImageInfo) obj;
-        if (!Arrays.equals(formats, other.formats))
+        if (!Arrays.equals(formats, other.formats)) {
             return false;
-        if (height != other.height)
+        }
+        if (height != other.height) {
             return false;
+        }
         if (id == null) {
-            if (other.id != null)
+            if (other.id != null) {
                 return false;
-        } else if (!id.equals(other.id))
+            }
+        } else if (!id.equals(other.id)) {
             return false;
-        if (!Arrays.equals(qualities, other.qualities))
+        }
+        if (!Arrays.equals(qualities, other.qualities)) {
             return false;
-        if (!Arrays.equals(scale_factors, other.scale_factors))
+        }
+        if (!Arrays.equals(services, other.services)) {
             return false;
-        if (tile_height != other.tile_height)
+        }
+        if (!Arrays.equals(sizes, other.sizes)) {
             return false;
-        if (tile_width != other.tile_width)
+        }
+        if (width != other.width) {
             return false;
-        if (width != other.width)
-            return false;
+        }
         return true;
     }
 
     @Override
     public String toString() {
-        return "ImageInfo [id=" + id + ", width=" + width + ", height="
-                + height + ", scale_factors=" + Arrays.toString(scale_factors)
-                + ", formats=" + Arrays.toString(formats) + ", qualities="
-                + Arrays.toString(qualities) + ", tile_width=" + tile_width
-                + ", tile_height=" + tile_height + "]";
+        return "ImageInfo [id=" + id + ", width=" + width + ", height=" + height + ", formats="
+                + Arrays.toString(formats) + ", qualities=" + Arrays.toString(qualities) + ", sizes="
+                + Arrays.toString(sizes) + ", services=" + Arrays.toString(services) + "]";
     }
 }

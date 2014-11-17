@@ -1,5 +1,7 @@
 package rosa.iiif.image.model;
 
+import java.io.Serializable;
+
 /**
  * The region parameter defines the rectangular portion of the full image to be
  * returned.
@@ -10,7 +12,9 @@ package rosa.iiif.image.model;
  * 
  * The top left of an image is considered position 0,0.
  */
-public class Region {
+public class Region implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
     private int x, y, width, height;
     private double px, py, pwidth, pheight;
     private RegionType type;
@@ -117,31 +121,43 @@ public class Region {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
+        if (this == obj) {
             return true;
-        if (obj == null)
+        }
+        if (obj == null) {
             return false;
-        if (getClass() != obj.getClass())
+        }
+        if (!(obj instanceof Region)) {
             return false;
+        }
         Region other = (Region) obj;
-        if (height != other.height)
+        if (height != other.height) {
             return false;
-        if (Double.doubleToLongBits(pheight) != Double.doubleToLongBits(other.pheight))
+        }
+        if (Double.doubleToLongBits(pheight) != Double.doubleToLongBits(other.pheight)) {
             return false;
-        if (Double.doubleToLongBits(pwidth) != Double.doubleToLongBits(other.pwidth))
+        }
+        if (Double.doubleToLongBits(pwidth) != Double.doubleToLongBits(other.pwidth)) {
             return false;
-        if (Double.doubleToLongBits(px) != Double.doubleToLongBits(other.px))
+        }
+        if (Double.doubleToLongBits(px) != Double.doubleToLongBits(other.px)) {
             return false;
-        if (Double.doubleToLongBits(py) != Double.doubleToLongBits(other.py))
+        }
+        if (Double.doubleToLongBits(py) != Double.doubleToLongBits(other.py)) {
             return false;
-        if (type != other.type)
+        }
+        if (type != other.type) {
             return false;
-        if (width != other.width)
+        }
+        if (width != other.width) {
             return false;
-        if (x != other.x)
+        }
+        if (x != other.x) {
             return false;
-        if (y != other.y)
+        }
+        if (y != other.y) {
             return false;
+        }
         return true;
     }
 
@@ -150,4 +166,5 @@ public class Region {
         return "Region [x=" + x + ", y=" + y + ", width=" + width + ", height=" + height + ", px=" + px + ", py=" + py
                 + ", pwidth=" + pwidth + ", pheight=" + pheight + ", type=" + type + "]";
     }
+
 }
