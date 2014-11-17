@@ -103,7 +103,7 @@ public class StoreLoadAndCheckIntegrationTest extends AbstractFileSystemTest {
 
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
-        assertEquals(1163, errors.size());
+        assertEquals(1165, errors.size());
         assertTrue(errors.contains("Cropping information for item [Walters143.138v.tif] missing from parent Book archive. [Walters143]"));
         assertEquals(0, warnings.size());
     }
@@ -142,6 +142,6 @@ public class StoreLoadAndCheckIntegrationTest extends AbstractFileSystemTest {
 
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
-        assertEquals(15, errors.size());
+        assertEquals(16, errors.size());
     }
 }

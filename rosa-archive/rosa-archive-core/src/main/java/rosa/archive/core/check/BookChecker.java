@@ -40,6 +40,7 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -48,7 +49,7 @@ import java.util.Map;
  * @see rosa.archive.model.Book
  */
 public class BookChecker extends AbstractArchiveChecker {
-    private static final String PAGE_PATTERN = "\\w?\\d+(r|v|R|V)";
+    private static final String PAGE_PATTERN = "\\w*\\d+(r|v|R|V)";
     private static final String MANUSCRIPT = "manuscript";
     private static Schema aorAnnotationSchema;
 
@@ -85,6 +86,9 @@ public class BookChecker extends AbstractArchiveChecker {
             //   permissions
             check(book.getPermission(lang), book, bsg, errors, warnings);
         }
+        //   compare contents of metadata descriptions in different languages
+        check(book, config.languages(), bsg, errors, warnings);
+
         //   content
         check(book.getContent(), book.getId(), errors, warnings);
         //   bookStructure
@@ -304,6 +308,83 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         attemptToRead(metadata, bsg, errors, warnings);
+    }
+
+    private void check(Book parent, String[] languages, ByteStreamGroup bsg, List<String> errors, List<String> warnings) {
+        List<BookMetadata> metadatas = new ArrayList<>();
+
+        for (String lang : languages) {
+            if (parent.getBookMetadata(lang) != null) {
+                metadatas.add(parent.getBookMetadata(lang));
+            }
+        }
+
+        if (metadatas.size() == 0) {
+            errors.add("Failed to get metadata descriptions. [" + parent.getId() + "]");
+            return;
+        }
+        BookMetadata reference = metadatas.get(0);
+        for (int i = 0; i < metadatas.size(); i++) {
+            BookMetadata test = metadatas.get(i);
+            String fileLabel = " [" + reference.getId() + "/" + test.getId() + "] ";
+
+            if (test.getYearStart() != reference.getYearStart()) {
+                errors.add("Metadata year start different." + fileLabel
+                        + "(" + reference.getYearStart() + "/" + test.getYearStart() + ")");
+            }
+            if (test.getYearEnd() != reference.getYearEnd()) {
+                errors.add("Metadata year end different." + fileLabel
+                        + "(" + reference.getYearEnd() + "/" + test.getYearEnd() + ")");
+            }
+            if (test.getWidth() != reference.getWidth()) {
+                errors.add("Metadata width different." + fileLabel
+                        + "(" + reference.getWidth() + "/" + test.getWidth() + ")");
+            }
+            if (test.getHeight() != reference.getHeight()) {
+                errors.add("Metadata height different." + fileLabel
+                        + "(" + reference.getHeight() + "/" + test.getHeight() + ")");
+            }
+            if (test.getNumberOfIllustrations() != reference.getNumberOfIllustrations()) {
+                errors.add("Metadata number of illustrations different." + fileLabel
+                        + "(" + reference.getNumberOfIllustrations() + "/" + test.getNumberOfIllustrations() + ")");
+            }
+            if (test.getNumberOfPages() != reference.getNumberOfPages()) {
+                errors.add("Metadata number of pages different." + fileLabel
+                        + "(" + reference.getNumberOfPages() + "/" + test.getNumberOfPages() + ")");
+            }
+
+            if (test.getTexts().length != reference.getTexts().length) {
+                errors.add("Number of texts different." + fileLabel
+                        + "(" + reference.getTexts().length + "/" + test.getTexts().length + ")");
+            } else {
+                for (int j = 0; j < reference.getTexts().length; j++) {
+                    BookText refText = reference.getTexts()[j];
+                    BookText testText = test.getTexts()[j];
+                    String textLabel = " [" + refText.getTextId() + "/" + testText.getTextId() + "] ";
+
+                    if (testText.getLinesPerColumn() != refText.getLinesPerColumn()) {
+                        errors.add("Book text lines per column different" + textLabel
+                                + "(" + refText.getLinesPerColumn() + "/" + testText.getLinesPerColumn() + ")");
+                    }
+                    if (testText.getColumnsPerPage() != refText.getColumnsPerPage()) {
+                        errors.add("Book text columns per page different." + textLabel
+                                + "(" + refText.getColumnsPerPage() + "/" + testText.getColumnsPerPage() + ")");
+                    }
+                    if (testText.getLeavesPerGathering() != refText.getLeavesPerGathering()) {
+                        errors.add("Book text leaves per gathering different." + textLabel
+                                + "(" + refText.getLeavesPerGathering() + "/" + testText.getLeavesPerGathering() + ")");
+                    }
+                    if (testText.getNumberOfIllustrations() != refText.getNumberOfIllustrations()) {
+                        errors.add("Book text number of illustrations different." + textLabel
+                                + "(" + refText.getNumberOfIllustrations() + "/" + testText.getNumberOfIllustrations() + ")");
+                    }
+                    if (testText.getNumberOfPages() != refText.getNumberOfPages()) {
+                        errors.add("Book text number of pages different." + textLabel
+                                + "(" + refText.getNumberOfPages() + "/" + testText.getNumberOfPages() + ")");
+                    }
+                }
+            }
+        }
     }
 
     /**

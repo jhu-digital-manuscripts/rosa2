@@ -68,8 +68,7 @@ public class StoreUpdateChecksumIntegrationTest extends StoreIntegrationBase {
         BookCollection collection = store.loadBookCollection("collection", errors);
 
         assertNotNull(collection);
-        // 1 error comes from serializing the Narrative Sections!!
-        assertEquals(1, errors.size());
+        assertEquals(0, errors.size());
         errors.clear();
 
         // Force update of the checksum
