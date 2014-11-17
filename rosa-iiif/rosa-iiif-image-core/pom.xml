@@ -12,19 +12,24 @@
 
   <dependencies>
     <dependency>
-      <artifactId>servlet-api</artifactId>
-      <groupId>javax.servlet</groupId>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
     </dependency>
 
     <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+    </dependency>
+
+    <dependency>
       <groupId>rosa</groupId>
       <artifactId>rosa-iiif-image-model</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 

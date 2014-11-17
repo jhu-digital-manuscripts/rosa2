@@ -18,29 +18,47 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import rosa.iiif.image.model.ComplianceLevel;
 import rosa.iiif.image.model.ImageFormat;
 import rosa.iiif.image.model.ImageInfo;
 import rosa.iiif.image.model.ImageRequest;
+import rosa.iiif.image.model.ImageServerProfile;
 import rosa.iiif.image.model.Quality;
 import rosa.iiif.image.model.Region;
 import rosa.iiif.image.model.RegionType;
+import rosa.iiif.image.model.Rotation;
 import rosa.iiif.image.model.Size;
 import rosa.iiif.image.model.SizeType;
 
 /**
+ * Use FSI server http api to fullfull requests.
+ * 
  * Unsupported: bitonal, rotation, does not distort aspect ratio
+ * 
+ * Threadsafe.
+ * 
+ * ImageInfo lookups are cached.
  */
 public class FSIServer implements ImageServer {
-    private String baseurl;
-    private Map<String, ImageInfo> image_info_cache;
-    private static int MAX_IMAGE_INFO_CACHE_SIZE = 1000;
+    // TODO configurable..
+    private static final int MAX_IMAGE_INFO_CACHE_SIZE = 1000;
+
+    private final String baseurl;
+    private final Map<String, ImageInfo> image_info_cache;
+    private final ImageServerProfile profile;
 
     public FSIServer(String baseurl) {
         this.baseurl = baseurl;
         this.image_info_cache = new ConcurrentHashMap<String, ImageInfo>();
+        this.profile = new ImageServerProfile();
+
+        // TODO
+        profile.setFormats(ImageFormat.PNG, ImageFormat.GIF, ImageFormat.JPG, ImageFormat.TIF);
+        profile.setSupports();
+        profile.setQualities(Quality.COLOR, Quality.GRAY);
     }
 
-    // TODO always lookup image?
+    // TODO move to switches...
 
     public String constructURL(ImageRequest req) throws IIIFException {
         String url = baseurl + "?type=image";
@@ -52,9 +70,10 @@ public class FSIServer implements ImageServer {
             return null;
         }
 
+        // TODO
         if (req.getFormat() == ImageFormat.PNG) {
             url += "&" + param("profile", "png");
-        } else if (req.getFormat() == null || req.getFormat() == ImageFormat.JPG) {
+        } else if (req.getFormat() == ImageFormat.JPG) {
             url += "&" + param("profile", "jpeg");
         } else {
             throw new IIIFException("format unsupported", "format");
@@ -124,24 +143,30 @@ public class FSIServer implements ImageServer {
             url += "&" + param("height", "" + height);
         }
 
-        String effects = null;
+        String effects = "";
 
-        if (req.getQuality() == Quality.DEFAULT) {
-
-        } else if (req.getQuality() == Quality.COLOR) {
-
-        } else if (req.getQuality() == Quality.GREY) {
+        if (req.getQuality() == Quality.DEFAULT || req.getQuality() == Quality.COLOR) {
+        } else if (req.getQuality() == Quality.BITONAL) {
+            // TODO This can probably be supported with the right effect
+            throw new IIIFException("quality unsupported", "quality");
+        } else if (req.getQuality() == Quality.GRAY) {
             effects = "desaturate(lightness),";
         } else {
             throw new IIIFException("quality unsupported", "quality");
         }
 
-        if (effects != null) {
-            url += "&" + param("effects", effects);
+        Rotation rot = req.getRotation();
+
+        if (rot.isMirrored()) {
+            effects += "flip(horizontal)";
         }
 
-        if (req.getRotation().getAngle() != 0.0) {
+        if (rot.getAngle() != 0.0) {
             throw new IIIFException("rotation unsupported", "rotation");
+        }
+
+        if (!effects.isEmpty()) {
+            url += "&" + param("effects", effects);
         }
 
         return url;
@@ -155,22 +180,20 @@ public class FSIServer implements ImageServer {
         }
     }
 
-    public ImageInfo lookupImage(String image) throws IIIFException {
-        ImageInfo info = image_info_cache.get(image);
+    public ImageInfo lookupImage(String image_id) throws IIIFException {
+        ImageInfo info = image_info_cache.get(image_id);
 
         if (info != null) {
             return info;
         }
 
         info = new ImageInfo();
-        info.setId(image);
-        info.setTileWidth(1000);
-        info.setTileHeight(1000);
-        info.setQualities(Quality.COLOR);
-        info.setFormats(ImageFormat.JPG, ImageFormat.PNG);
+        info.setImageId(image_id);
+
+        // Dispatch a call to FSI image info service and parse the XML result
 
         String url = baseurl + "?type=info&tpl=info";
-        url += "&" + param("source", image);
+        url += "&" + param("source", image_id);
 
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 
@@ -216,12 +239,18 @@ public class FSIServer implements ImageServer {
             image_info_cache.clear();
         }
 
-        image_info_cache.put(image, info);
+        image_info_cache.put(image_id, info);
 
         return info;
     }
 
-    public int compliance() {
-        return 1;
+    @Override
+    public ImageServerProfile getProfile() {
+        return profile;
+    }
+
+    @Override
+    public ComplianceLevel getCompliance() {
+        return ComplianceLevel.LEVEL_1;
     }
 }

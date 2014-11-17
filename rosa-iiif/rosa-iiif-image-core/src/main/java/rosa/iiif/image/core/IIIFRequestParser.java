@@ -2,8 +2,6 @@ package rosa.iiif.image.core;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
-import java.util.HashMap;
-import java.util.Map;
 
 import rosa.iiif.image.model.ImageFormat;
 import rosa.iiif.image.model.ImageRequest;
@@ -13,39 +11,43 @@ import rosa.iiif.image.model.Quality;
 import rosa.iiif.image.model.Region;
 import rosa.iiif.image.model.RegionType;
 import rosa.iiif.image.model.RequestType;
+import rosa.iiif.image.model.Rotation;
 import rosa.iiif.image.model.Size;
 import rosa.iiif.image.model.SizeType;
 
 /**
- * Parse a URL path info a IIIF request. If a path_prefix is given, it is
+ * Parse an raw URL path info a IIIF request. If a path_prefix is given, it is
  * stripped from paths before parsing.
  */
-public class IIIFParser {
+public class IIIFRequestParser {
     private final String path_prefix;
-    private final Map<String, String> aliases; // alias -> fsi image id
 
-    public IIIFParser() {
+    public IIIFRequestParser() {
         this(null);
     }
 
-    public IIIFParser(String path_prefix) {
+    /**
+     * @param path_prefix must not be decoded
+     */
+    public IIIFRequestParser(String path_prefix) {
         this.path_prefix = path_prefix;
-        this.aliases = new HashMap<String, String>();
     }
 
+    /**
+     * Determine type of a IIIF request.
+     * 
+     * @param path must not be decoded
+     * @return type of the request.
+     */
     public RequestType determineRequestType(String path) {
-        if (path.endsWith("/info.xml") || path.endsWith("/info.json")) {
+        if (path.endsWith("/info.json")) {
             return RequestType.INFO;
         } else {
             return RequestType.IMAGE;
         }
     }
 
-    public Map<String, String> getImageAliases() {
-        return aliases;
-    }
-
-    private String[] parse(String path) {
+    private String[] split(String path) {
         if (path_prefix != null && path.startsWith(path_prefix)) {
             path = path.substring(path_prefix.length());
         }
@@ -58,6 +60,8 @@ public class IIIFParser {
 
         for (int i = 0; i < parts.length; i++) {
             try {
+                // TODO This is wrong, must use real uri decoder 
+                
                 parts[i] = URLDecoder.decode(parts[i], "UTF-8");
             } catch (UnsupportedEncodingException e) {
                 throw new RuntimeException(e);
@@ -67,20 +71,22 @@ public class IIIFParser {
         return parts;
     }
 
+    /**
+     * Parse a IIIF Image info request.
+     * 
+     * @param path must not be decoded
+     * @return image info request
+     * @throws IIIFException
+     */
     public InfoRequest parseImageInfoRequest(String path) throws IIIFException {
-        String[] parts = parse(path);
+        String[] parts = split(path);
 
         if (parts.length != 2) {
             throw new IIIFException("Malformed info request: " + path);
         }
 
         InfoRequest req = new InfoRequest();
-
-        if (aliases.containsKey(parts[0])) {
-            req.setImageId(aliases.get(parts[0]));
-        } else {
-            req.setImageId(parts[0]);
-        }
+        req.setImageId(parts[0]);
 
         if (parts[1].equals("info.json")) {
             req.setFormat(InfoFormat.JSON);
@@ -91,61 +97,47 @@ public class IIIFParser {
         return req;
     }
 
+    /**
+     * Parse a IIIF Image request.
+     * 
+     * @param path must not be decoded
+     * @return image request
+     * @throws IIIFException
+     */
     public ImageRequest parseImageRequest(String path) throws IIIFException {
-        String[] parts = parse(path);
+        String[] parts = split(path);
 
         if (parts.length != 5) {
             throw new IIIFException("Malformed image request: " + path);
         }
 
         ImageRequest req = new ImageRequest();
-
-        if (aliases.containsKey(parts[0])) {
-            req.setImageId(aliases.get(parts[0]));
-        } else {
-            req.setImageId(parts[0]);
-        }
+        req.setImageId(parts[0]);
 
         req.setRegion(parseRegion(parts[1]));
         req.setSize(parseSize(parts[2]));
-
-        double rotation;
-
-        try {
-            rotation = Double.parseDouble(parts[3]);
-        } catch (NumberFormatException e) {
-            throw new IIIFException("Malformed rotation: " + e.getMessage(), "rotation");
-        }
-
-        if (rotation < 0 || rotation > 360) {
-            throw new IIIFException("Invalid rotation: " + rotation, "rotation");
-        }
-        
-        // TODO fix
-        //req.setRotation(rotation);
+        req.setRotation(parseRotation(parts[3]));
 
         String[] last = parts[4].split("\\.");
 
-        if (last.length != 1 && last.length != 2) {
-            throw new IIIFException("Malformed image request");
+        if (last.length != 2) {
+            throw new IIIFException("Malformed image request: " + path);
         }
 
-        req.setQuality(parseQuality(last[0]));
-
-        if (last.length == 2) {
-            req.setFormat(parseImageFormat(last[1]));
-        }
+        req.setQuality(parseQuality(last[0]));        
+        req.setFormat(parseImageFormat(last[1]));
 
         return req;
     }
 
-    private ImageFormat parseImageFormat(String s) throws IIIFException {
-        // TODO fix
-        try {
-            return ImageFormat.valueOf(s.toUpperCase());
-        } catch (IllegalArgumentException e) {
-            throw new IIIFException("Malformed image format", "format");
+    private ImageFormat parseImageFormat(String file_ext) throws IIIFException {
+        for (ImageFormat fmt : ImageFormat.values()) {
+            if (fmt.getFileExtension().equals(file_ext)) {
+                return fmt;
+            }
         }
+
+        throw new IIIFException("Unknown image format: " + file_ext, "format");
     }
 
     private Size parseSize(String s) throws IIIFException {
@@ -207,11 +199,41 @@ public class IIIFParser {
     }
 
     private Quality parseQuality(String s) throws IIIFException {
-        try {
-            return Quality.valueOf(s.toUpperCase());
-        } catch (IllegalArgumentException e) {
-            throw new IIIFException("Malformed quality", "quality");
+        for (Quality q : Quality.values()) {
+            if (q.getKeyword().equals(s)) {
+                return q;
+            }
         }
+
+        throw new IIIFException("Unsupported quality: " + s, "quality");
+    }
+
+    private Rotation parseRotation(String s) throws IIIFException {
+        Rotation rot = new Rotation();
+
+        boolean mirrored = !s.isEmpty() && s.charAt(0) == '!';
+
+        if (mirrored) {
+            s = s.substring(1);
+        }
+
+        rot.setMirrored(mirrored);
+
+        double angle;
+
+        try {
+            angle = Double.parseDouble(s);
+        } catch (NumberFormatException e) {
+            throw new IIIFException("Malformed rotation: " + e.getMessage(), "rotation");
+        }
+
+        if (angle < 0.0 || angle > 360.0) {
+            throw new IIIFException("Invalid rotation: " + angle, "rotation");
+        }
+
+        rot.setAngle(angle);
+
+        return rot;
     }
 
     private Region parseRegion(String s) throws IIIFException {
