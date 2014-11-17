@@ -9,4 +9,28 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>rosa-iiif-image-endpoint</artifactId>
   <packaging>war</packaging>
+
+ <dependencies>
+    <dependency>
+      <artifactId>servlet-api</artifactId>
+      <groupId>javax.servlet</groupId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.inject.extensions</groupId>
+      <artifactId>guice-servlet</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>rosa</groupId>
+      <artifactId>rosa-iiif-image-core</artifactId>
+    </dependency>
+  </dependencies>
+
 </project>
