@@ -33,7 +33,7 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void readsValidInput() throws Exception {
+    public void readTest() throws IOException {
 
         try (InputStream stream = getClass().getClassLoader().getResourceAsStream(testFile)) {
             IllustrationTitles titles = serializer.read(stream, errors);
@@ -49,7 +49,7 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void writesDataToFile() throws IOException {
+    public void writeTest() throws IOException {
         IllustrationTitles titles = new IllustrationTitles();
         titles.setId("IllustrationTitles");
 

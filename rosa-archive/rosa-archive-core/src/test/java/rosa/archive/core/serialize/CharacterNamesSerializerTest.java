@@ -33,7 +33,8 @@ public class CharacterNamesSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void readsFromFile() throws IOException {
+    @Override
+    public void readTest() throws IOException {
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
 

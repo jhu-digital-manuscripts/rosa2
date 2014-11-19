@@ -136,12 +136,16 @@ public class StoreLoadAndCheckIntegrationTest extends AbstractFileSystemTest {
 
         List<AnnotatedPage> annotatedPages = book.getAnnotatedPages();
         assertNotNull(annotatedPages);
-        assertEquals(8, annotatedPages.size());
+        assertEquals(9, annotatedPages.size());
 
         errors.clear();
 
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
-        assertEquals(16, errors.size());
+        assertEquals(17, errors.size());
+        assertTrue(errors.contains(
+                "[Error: Ha2.019v.xml] (9:78): cvc-complex-type.3.2.2: " +
+                "Attribute 'blah' is not allowed to appear in element 'page'."
+        ));
     }
 }

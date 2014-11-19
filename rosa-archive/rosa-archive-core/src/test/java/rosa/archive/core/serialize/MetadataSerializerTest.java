@@ -8,6 +8,7 @@ import rosa.archive.model.BookText;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,7 +32,7 @@ public class MetadataSerializerTest extends BaseSerializerTest {
 
     @Test
     @Ignore
-    public void readTest() throws Exception {
+    public void readTest() throws IOException {
         String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
                 "<book illustrations=\"42\" pages=\"100\">\n" +
                 "    <dimensions height=\"2000\" unit=\"mm\" width=\"1000\"/>\n" +
@@ -76,7 +77,7 @@ public class MetadataSerializerTest extends BaseSerializerTest {
 
     @Test
     @Ignore
-    public void writeTest() throws Exception {
+    public void writeTest() throws IOException {
         BookMetadata metadata = createMetadata("en");
         BookMetadata metadataFr = createMetadata("fr");
 

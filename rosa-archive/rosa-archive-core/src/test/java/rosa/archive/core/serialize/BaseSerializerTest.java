@@ -2,6 +2,7 @@ package rosa.archive.core.serialize;
 
 import org.junit.Before;
 import org.junit.Rule;
+import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -67,5 +68,11 @@ public abstract class BaseSerializerTest {
 
         errors = new ArrayList<>();
     }
+
+    @Test
+    public abstract void readTest() throws IOException;
+
+    @Test
+    public abstract void writeTest() throws IOException;
 
 }

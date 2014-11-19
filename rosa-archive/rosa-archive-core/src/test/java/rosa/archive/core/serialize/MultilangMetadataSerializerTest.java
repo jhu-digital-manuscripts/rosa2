@@ -8,6 +8,7 @@ import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -91,7 +92,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void readTest() throws Exception {
+    public void readTest() throws IOException {
 
         List<String> errors = new ArrayList<>();
         MultilangMetadata metadata = null;
@@ -210,7 +211,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void writeTest() throws Exception {
+    public void writeTest() throws IOException {
         OutputStream out = new ByteArrayOutputStream();
         assertNotNull(out);
         serializer.write(createMetadata(), out);

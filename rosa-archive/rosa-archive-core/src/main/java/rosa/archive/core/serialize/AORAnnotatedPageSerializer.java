@@ -8,6 +8,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.Mark;
@@ -39,26 +40,10 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
 
     @Override
     public AnnotatedPage read(InputStream is, final List<String> errors) throws IOException {
-        // Error reporting for validation
-//        ErrorHandler errorHandler = new ErrorHandler() {
-//            @Override
-//            public void warning(SAXParseException e) throws SAXException {
-//
-//            }
-//
-//            @Override
-//            public void error(SAXParseException e) throws SAXException {
-//                errors.add("[Error] " + e.getLineNumber() + ":"
-//                        + e.getColumnNumber() + ": " + e.getMessage());
-//            }
-//
-//            @Override
-//            public void fatalError(SAXParseException e) throws SAXException {
-//                errors.add("[Fatal Error]: " + e.getLineNumber() + ":"
-//                        + e.getColumnNumber() + ": " + e.getMessage());
-//            }
-//        };
 
+        if (is == null) {
+            return null;
+        }
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
@@ -68,7 +53,6 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
 //            factory.setAttribute(JAXPConstants.JAXP_SCHEMA_LANGUAGE, JAXPConstants.W3C_XML_SCHEMA);
 
             DocumentBuilder builder = factory.newDocumentBuilder();
-//            builder.setErrorHandler(errorHandler);
 
             Document doc = builder.parse(is);
             return buildPage(doc, errors);
@@ -113,11 +97,6 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
     }
 
     private void readAnnotations(Element annotationEl, AnnotatedPage page) {
-        List<Marginalia> marginalia = page.getMarginalia();
-        List<Mark> marks = page.getMarks();
-        List<Numeral> numerals = page.getNumerals();
-        List<Symbol> symbols = page.getSymbols();
-        List<Underline> underlines = page.getUnderlines();
 
         NodeList children = annotationEl.getChildNodes();
         for (int i = 0; i < children.getLength(); i++) {
@@ -129,45 +108,45 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
             Element annotation = (Element) child;
             switch (annotation.getTagName()) {
                 case "marginalia":
-                    marginalia.add(buildMarginalia(annotation));
+                    page.getMarginalia().add(
+                            buildMarginalia(annotation)
+                    );
                     break;
                 case "underline":
-                    Underline underline = new Underline();
-
-                    underline.setMethod(annotation.getAttribute("method"));
-                    underline.setType(annotation.getAttribute("type"));
-                    underline.setLanguage(annotation.getAttribute("language"));
-                    underline.setReferringText(annotation.getAttribute("text"));
-
-                    underlines.add(underline);
+                    page.getUnderlines().add(new Underline(
+                            annotation.getAttribute("text"),
+                            annotation.getAttribute("method"),
+                            annotation.getAttribute("type"),
+                            annotation.getAttribute("language")
+                    ));
                     break;
                 case "symbol":
-                    Symbol symbol = new Symbol();
-
-                    symbol.setName(annotation.getAttribute("name"));
-                    symbol.setPlace(annotation.getAttribute("place"));
-                    symbol.setReferringText(annotation.getAttribute("text"));
-
-                    symbols.add(symbol);
+                    page.getSymbols().add(new Symbol(
+                            annotation.getAttribute("text"),
+                            annotation.getAttribute("name"),
+                            annotation.getAttribute("place")
+                    ));
                     break;
                 case "mark":
-                    Mark mark = new Mark();
-
-                    mark.setName(annotation.getAttribute("name"));
-                    mark.setPlace(annotation.getAttribute("place"));
-                    mark.setMethod(annotation.getAttribute("method"));
-                    mark.setLanguage(annotation.getAttribute("language"));
-                    mark.setReferringText(annotation.getAttribute("text"));
-
-                    marks.add(mark);
+                    page.getMarks().add(new Mark(
+                            annotation.getAttribute("text"),
+                            annotation.getAttribute("name"),
+                            annotation.getAttribute("method"),
+                            annotation.getAttribute("place"),
+                            annotation.getAttribute("language")
+                    ));
                     break;
                 case "numeral":
-                    Numeral numeral = new Numeral();
-
-                    numeral.setPlace(annotation.getAttribute("place"));
-                    numeral.setReferringText(annotation.getAttribute("text"));
-
-                    numerals.add(numeral);
+                    page.getNumerals().add(new Numeral(
+                            annotation.getAttribute("text"),
+                            annotation.getAttribute("place")
+                    ));
+                    break;
+                case "errata":
+                    page.getErrata().add(new Errata(
+                            annotation.getAttribute("copytext"),
+                            annotation.getAttribute("amendedtext")
+                    ));
                     break;
                 default:
                     break;
@@ -260,11 +239,12 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                     pos.getTexts().add(el.getTextContent());
                     break;
                 case "emphasis":
-                    Underline underline = new Underline();
-                    underline.setMethod(el.getAttribute("method"));
-                    underline.setReferringText(el.getAttribute("emphasis_text"));
-
-                    underlines.add(underline);
+                    underlines.add(new Underline(
+                            el.getAttribute("emphasis_text"),
+                            el.getAttribute("method"),
+                            el.getAttribute("type"),
+                            el.getAttribute("language")
+                    ));
                     break;
                 case "X-ref":
                     XRef xRef = new XRef(el.getAttribute("person"), el.getAttribute("title"));

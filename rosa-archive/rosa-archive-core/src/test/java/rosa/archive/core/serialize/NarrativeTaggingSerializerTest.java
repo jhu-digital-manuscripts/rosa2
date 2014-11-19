@@ -30,6 +30,11 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
     }
 
     @Test
+    public void readTest() throws IOException {
+        readCSVTest();
+        readTxtTest();
+    }
+
     public void readCSVTest() throws IOException {
         final String testFile = "data/LudwigXV7/LudwigXV7.nartag.csv";
 
@@ -53,7 +58,6 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
         }
     }
 
-    @Test
     public void readTxtTest() throws IOException {
         final String testFile = "data/Ferrell/Ferrell.nartag.txt";
 
