@@ -4,6 +4,7 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.Warning;
 import org.junit.Test;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
@@ -82,6 +83,16 @@ public class AORModelEqualsAndHashCodeTest {
     public void underlineTest() {
         EqualsVerifier
                 .forClass(Underline.class)
+                .usingGetClass()
+                .allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
+                .verify();
+    }
+
+    @Test
+    public void errataTest() {
+        EqualsVerifier
+                .forClass(Errata.class)
                 .usingGetClass()
                 .allFieldsShouldBeUsed()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)

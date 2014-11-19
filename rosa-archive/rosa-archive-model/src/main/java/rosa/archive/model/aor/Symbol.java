@@ -10,6 +10,14 @@ public class Symbol extends Annotation implements Serializable {
     private String name;
     private String place;
 
+    public Symbol() {}
+
+    public Symbol(String referringText, String name, String place) {
+        super(referringText);
+        this.name = name;
+        this.place = place;
+    }
+
     public String getName() {
         return name;
     }
