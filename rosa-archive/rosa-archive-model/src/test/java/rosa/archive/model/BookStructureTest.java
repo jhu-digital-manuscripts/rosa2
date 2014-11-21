@@ -2,17 +2,12 @@ package rosa.archive.model;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.model.redtag.StructureColumn;
 import rosa.archive.model.redtag.StructurePage;
-import rosa.archive.model.redtag.StructurePageSide;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 /**
  * @see rosa.archive.model.BookStructure
@@ -27,25 +22,30 @@ public class BookStructureTest {
         this.structure = new BookStructure();
 
         List<StructurePage> pages = structure.pages();
+//        for (int i = 0; i < MAX_PAGES; i++) {
+//            StructurePage page = mock(StructurePage.class);
+//            when(page.getId()).thenReturn(String.valueOf(i));
+//            when(page.getName()).thenReturn(String.valueOf(i));
+//
+//            StructurePageSide recto = mock(StructurePageSide.class);
+//            when(page.getRecto()).thenReturn(recto);
+//            StructurePageSide verso = mock(StructurePageSide.class);
+//            when(page.getVerso()).thenReturn(verso);
+//
+//            pages.add(page);
+//
+//            StructureColumn col1 = mock(StructureColumn.class);
+//            StructureColumn col2 = mock(StructureColumn.class);
+//            StructureColumn col3 = mock(StructureColumn.class);
+//            StructureColumn col4 = mock(StructureColumn.class);
+//
+//            when(recto.columns()).thenReturn(Arrays.asList(col1, col2));
+//            when(verso.columns()).thenReturn(Arrays.asList(col3, col4));
+//        }
+
         for (int i = 0; i < MAX_PAGES; i++) {
-            StructurePage page = mock(StructurePage.class);
-            when(page.getId()).thenReturn(String.valueOf(i));
-            when(page.getName()).thenReturn(String.valueOf(i));
-
-            StructurePageSide recto = mock(StructurePageSide.class);
-            when(page.getRecto()).thenReturn(recto);
-            StructurePageSide verso = mock(StructurePageSide.class);
-            when(page.getVerso()).thenReturn(verso);
-
+            StructurePage page = new StructurePage(String.valueOf(i), 10);
             pages.add(page);
-
-            StructureColumn col1 = mock(StructureColumn.class);
-            StructureColumn col2 = mock(StructureColumn.class);
-            StructureColumn col3 = mock(StructureColumn.class);
-            StructureColumn col4 = mock(StructureColumn.class);
-
-            when(recto.columns()).thenReturn(Arrays.asList(col1, col2));
-            when(verso.columns()).thenReturn(Arrays.asList(col3, col4));
         }
     }
 
@@ -69,7 +69,6 @@ public class BookStructureTest {
         }
     }
 
-    // TODO sucky test, should check order of columns, too!
     @Test
     public void returnsAllColumns() {
         assertEquals(MAX_PAGES * 4, structure.columns().size());

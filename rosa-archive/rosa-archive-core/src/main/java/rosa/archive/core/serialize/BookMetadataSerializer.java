@@ -8,6 +8,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 
@@ -63,7 +64,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
     @Override
     public void write(BookMetadata metadata, OutputStream out) throws IOException {
-        Document doc = newDocument();
+        Document doc = XMLUtil.newDocument();
 
         Element root = doc.createElement("TEI");
         root.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
@@ -80,7 +81,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         Element bibl = doc.createElement("bibl");
         sourceDesc.appendChild(bibl);
 
-        // TODO pull Title out of the ID?
         Element title = doc.createElement(config.getMetadataTextsTitleTag());
         title.appendChild(doc.createTextNode(metadata.getTitle()));
         bibl.appendChild(title);
@@ -122,16 +122,15 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         Element dimensionsEl = doc.createElement("dimensions");
         extentEl.appendChild(dimensionsEl);
 
-        //        <height>TODO record dimension units in model!
         Element height = doc.createElement(config.getMetadataHeightTag());
         dimensionsEl.appendChild(height);
-        height.setAttribute("unit", "mm");
+        height.setAttribute("unit", metadata.getDimensionUnits());
         height.appendChild(doc.createTextNode(String.valueOf(metadata.getHeight())));
 
         //        <width>
         Element width = doc.createElement(config.getMetadataWidthTag());
         dimensionsEl.appendChild(width);
-        width.setAttribute("unit", "mm");
+        height.setAttribute("unit", metadata.getDimensionUnits());
         width.appendChild(doc.createTextNode(String.valueOf(metadata.getWidth())));
 
         // ------ msDesc ------
@@ -175,8 +174,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             locus.setAttribute(config.getMetadataTextsLastPageTag() , text.getLastPage() );
             locus.appendChild(doc.createTextNode(text.getFirstPage() + "-" + text.getLastPage()));
 
-            // TODO title again...
-
             msItem.appendChild(note(
                     config.getMetadataTextsIdTag(),
                     text.getId(),
@@ -209,8 +206,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             ));
         }
 
-        write(doc, out);
-
+        XMLUtil.write(doc, out);
     }
 
     /**
@@ -229,49 +225,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         note.appendChild(doc.createTextNode(text));
 
         return note;
-    }
-
-    /**
-     * @return a new DOM document
-     */
-    private Document newDocument() {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = null;
-        try {
-            builder = dbf.newDocumentBuilder();
-        } catch (ParserConfigurationException e) {
-            return null;
-        }
-
-        return builder.newDocument();
-    }
-
-    /**
-     * @param doc document
-     * @param out output stream
-     */
-    private void write(Document doc, OutputStream out) {
-        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer = null;
-        try {
-            transformer = transformerFactory.newTransformer();
-
-            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-            // Options to make it human readable
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer.setOutputProperty(OutputPropertiesFactory.S_KEY_INDENT_AMOUNT, "4");
-        } catch (TransformerConfigurationException e) {
-            return;
-        }
-
-        Source xmlSource = new DOMSource(doc);
-        Result result = new StreamResult(out);
-
-        try {
-            transformer.transform(xmlSource, result);
-        } catch (TransformerException e) {
-            return;
-        }
     }
 
     /**
@@ -344,7 +297,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         try {
             return Integer.parseInt(integer.trim());
         } catch (NumberFormatException e) {
-            // TODO log not a number error!
             return -1;
         }
     }
@@ -360,7 +312,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
         Element top = doc.getDocumentElement();
 
-//        metadata.setTitle(getString(top, config.getMetadataTextsTitleTag()));
+        metadata.setTitle(getString(top, config.getMetadataTextsTitleTag()));
         metadata.setDate(getString(top, config.getMetadataDateTag()));
         metadata.setCurrentLocation(getString(top, config.getMetadataCurrentLocationTag()));
         metadata.setRepository(getString(top, config.getMetadataRepositoryTag()));

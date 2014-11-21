@@ -65,7 +65,6 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
 
     @Override
     public void write(IllustrationTagging tagging, OutputStream out) throws IOException {
-        // TODO make header configurable
         final String header = "id,Folio,Illustration title,Textual elements,Initials,Characters,Costume,Objects,Landscape,Architecture,Other\n";
         IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
 

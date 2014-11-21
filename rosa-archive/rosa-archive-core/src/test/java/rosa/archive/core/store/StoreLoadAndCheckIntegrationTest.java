@@ -33,7 +33,7 @@ import static org.junit.Assert.assertTrue;
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceJUnitRunner.GuiceModules({ArchiveCoreModule.class})
-public class StoreIntegrationTest extends AbstractFileSystemTest {
+public class StoreLoadAndCheckIntegrationTest extends AbstractFileSystemTest {
 
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
@@ -103,10 +103,9 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
 
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
-        assertEquals(1169, errors.size());
+        assertEquals(1165, errors.size());
         assertTrue(errors.contains("Cropping information for item [Walters143.138v.tif] missing from parent Book archive. [Walters143]"));
-        assertEquals(7, warnings.size());
-        assertTrue(warnings.contains("Illustration character ID is non-numeric. Illustration [43], character ID [Galatea]"));
+        assertEquals(0, warnings.size());
     }
 
     @Test
@@ -137,15 +136,16 @@ public class StoreIntegrationTest extends AbstractFileSystemTest {
 
         List<AnnotatedPage> annotatedPages = book.getAnnotatedPages();
         assertNotNull(annotatedPages);
-        assertEquals(8, annotatedPages.size());
+        assertEquals(9, annotatedPages.size());
 
         errors.clear();
 
         boolean check = store.check(collection, book, true, errors, warnings);
         assertFalse(check);
-        for (String str : errors) {
-            System.out.println(str);
-        }
-        assertEquals(15, errors.size());
+        assertEquals(17, errors.size());
+        assertTrue(errors.contains(
+                "[Error: Ha2.019v.xml] (9:78): cvc-complex-type.3.2.2: " +
+                "Attribute 'blah' is not allowed to appear in element 'page'."
+        ));
     }
 }

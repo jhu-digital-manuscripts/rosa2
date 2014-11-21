@@ -15,15 +15,23 @@ import rosa.archive.model.*;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.aor.AnnotatedPage;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PrintStream;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -133,7 +141,7 @@ public class StoreImpl implements Store {
                 }
             }
 
-            // Look for annotation files matching bookId.PAGE.xml  TODO temporary
+            // Look for annotation files matching bookId.PAGE.xml
             if (name.matches("\\w+\\.\\d{1,3}(r|v|R|V)\\.xml")) {
                 pages.add(loadItem(name, bookStreams, AnnotatedPage.class, errors));
             }
@@ -221,33 +229,9 @@ public class StoreImpl implements Store {
             return;
         }
 
-        List<BookImage> images = new ArrayList<>();
-        for (String file : bookStreams.listByteStreamNames()) {
-            if (file.endsWith(config.getTIF())) {
-
-                String filepath = Paths.get(bookStreams.id()).resolve(file).toString();
-                int[] dimensions = getImageDimensionsHack(filepath);
-
-                BookImage img = new BookImage();
-                img.setId(file);
-                img.setWidth(dimensions[0]);
-                img.setHeight(dimensions[1]);
-                img.setMissing(false);
-
-                images.add(img);
-            }
-        }
-        images.sort(BookImageComparator.instance());
-        int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(config.getMISSING_IMAGE()) ?
-                getImageDimensionsHack(
-                        Paths.get(base.getByteStreamGroup(collection).id())
-                                .resolve(config.getMISSING_IMAGE()).toString()) :
-                new int[] {0, 0};
-        addMissingImages(book, images, missingDimensions);
-
         ImageList list = new ImageList();
         list.setId(book + config.getIMAGES());
-        list.setImages(images);
+        list.setImages(buildImageList(collection, book, true, bookStreams));
 
         writeItem(list, bookStreams, ImageList.class, errors);
     }
@@ -268,6 +252,90 @@ public class StoreImpl implements Store {
         ByteStreamGroup bookStreams = colStreams.getByteStreamGroup(book.getId());
 
         return updateChecksum(checksums, bookStreams, force, errors);
+    }
+
+    @Override
+    public void generateAndWriteCropList(String collection, String book, boolean force, List<String> errors) throws IOException {
+        if (!base.hasByteStreamGroup(collection)) {
+            errors.add("Collection not found in directory. [" + base.id() + "]");
+            return;
+        } else if (!base.getByteStreamGroup(collection).hasByteStreamGroup(book)) {
+            errors.add("Book not found in collection. [" + collection + "]");
+            return;
+        }
+
+        ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
+
+        if (!bookStreams.hasByteStreamGroup(config.getCROPPED_DIR())) {
+            errors.add("No cropped images found. [" + collection + ":" + book + "]");
+            return;
+        } else if (!force && bookStreams.hasByteStream(book + config.getIMAGES_CROP())) {
+            errors.add("[" + book + config.getIMAGES_CROP() + "] already exists. You can force this operation" +
+                    " to update the existing image list.");
+            return;
+        }
+
+        ImageList list = new ImageList();
+        list.setId(book + config.getIMAGES_CROP());
+        list.setImages(
+                buildImageList(collection, book, false, bookStreams.getByteStreamGroup(config.getCROPPED_DIR()))
+        );
+
+        writeItem(list, bookStreams, ImageList.class, errors);
+    }
+
+    @Override
+    public void cropImages(String collection, String book, boolean force, List<String> errors) throws IOException {
+        if (!base.hasByteStreamGroup(collection)) {
+            errors.add("Collection not found in directory. [" + base.id() + "]");
+            return;
+        } else if (!base.getByteStreamGroup(collection).hasByteStreamGroup(book)) {
+            errors.add("Book not found in collection. [" + collection + "]");
+            return;
+        }
+        // Load the book
+        ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
+        Book b = loadBook(collection, book, errors);
+        errors.clear();
+
+        if (!force && (b.getCroppedImages() != null || bookStreams.hasByteStreamGroup(config.getCROPPED_DIR()))) {
+            errors.add("Cropped images already exist for this book. [" + collection + ":" + book
+                    + "]. Force overwrite with '-force'");
+            return;
+        }
+
+        // Create the cropped/ directory
+        ByteStreamGroup cropGroup = bookStreams.newByteStreamGroup(config.getCROPPED_DIR());
+
+        CropInfo cropInfo = b.getCropInfo();
+        ImageList images = b.getImages();
+
+        // Crop images using ImageMagick, 4 at a time
+        ExecutorService executorService = Executors.newFixedThreadPool(4);
+        for (BookImage image : images) {
+            if (image.isMissing()) {
+                continue;
+            }
+
+            CropData cropping = cropInfo.getCropDataForPage(image.getId());
+            if (cropping == null) {
+                errors.add("Image missing from cropping information, copying old file. [" + image.getId() + "]");
+                bookStreams.copyByteStream(image.getId(), cropGroup);
+                continue;
+            }
+
+            Runnable cropper = new CropRunnable(
+                    bookStreams.id(), image, cropping, config.getCROPPED_DIR(), errors
+            );
+            executorService.execute(cropper);
+        }
+        executorService.shutdown();
+
+        try {
+            executorService.awaitTermination(30, TimeUnit.MINUTES);
+        } catch (InterruptedException e) {
+            errors.add("Cropping was interrupted!\n" + stacktrace(e));
+        }
     }
 
     /**
@@ -310,36 +378,39 @@ public class StoreImpl implements Store {
         // front/back covers can be missing
         BookImage img = images.get(0);
         if (!img.getId().contains(config.getIMG_FRONTCOVER())) {
-            images.add(0, bookImage(
+            images.add(0, new BookImage(
                     book + config.getIMG_FRONTCOVER(), missingDimensions[0], missingDimensions[1], true
             ));
         }
         img = images.get(1);
         if (!img.getId().contains(config.getIMG_FRONTPASTEDOWN())) {
-            images.add(1, bookImage(
+            images.add(1, new BookImage(
                     book + config.getIMG_FRONTPASTEDOWN(), missingDimensions[0], missingDimensions[1], true
             ));
         }
         // front/back pastedown can be missing
         img = images.get(images.size() - 2);
         if (!img.getId().contains(config.getIMG_ENDPASTEDOWN())) {
-            images.add(images.size(), bookImage(
+            images.add(images.size(), new BookImage(
                     book + config.getIMG_ENDPASTEDOWN(), missingDimensions[0], missingDimensions[1], true
             ));
         }
         img = images.get(images.size() - 1);
         if (!img.getId().contains(config.getIMG_BACKCOVER())) {
-            images.add(images.size(), bookImage(
+            images.add(images.size(), new BookImage(
                     book + config.getIMG_BACKCOVER(), missingDimensions[0], missingDimensions[1], true
             ));
         }
+
+        // If images were skipped over, add those
+        addSkippedImages(images, missingDimensions);
 
         // Flyleaves, if present, must end in 'v' and have at minimum 1r & 1v
         int frontFlyleafIndex = lastIndexOfPrefix(book + config.getIMG_FRONT_FLYLEAF(), images);
         if (frontFlyleafIndex != -1) {
             img = images.get(frontFlyleafIndex);
             if (img.getId().endsWith("r.tif")) {
-                images.add(frontFlyleafIndex + 1, bookImage(
+                images.add(frontFlyleafIndex + 1, new BookImage(
                         img.getId().substring(0, img.getId().length() - 5) + "v.tif",
                         missingDimensions[0], missingDimensions[1], true
                 ));
@@ -349,14 +420,158 @@ public class StoreImpl implements Store {
         if (endFlyleafIndex != -1) {
             img = images.get(endFlyleafIndex);
             if (img.getId().endsWith("r.tif")) {
-                images.add(endFlyleafIndex + 1, bookImage(
+                images.add(endFlyleafIndex + 1, new BookImage(
                         img.getId().substring(0, img.getId().length() - 5) + "v.tif",
                         missingDimensions[0], missingDimensions[1], true
                 ));
             }
         }
+    }
 
-        images.sort(BookImageComparator.instance());
+    /**
+     * Add any images that were skipped. The manuscripts contain several separate sequences
+     * of images (frontmatter, endmatter, and the main sequence). In each of these
+     * sequences, it is possible for images to be missing. This method adds a placeholder
+     * to the image list with the correct name for those missing images.
+     *
+     * @param images list of all BookImages
+     * @param missingDimensions dimensions of the missing image
+     */
+    private void addSkippedImages(List<BookImage> images, int[] missingDimensions) {
+        Collections.sort(images, BookImageComparator.instance());
+//        Java8 only!
+//        images.sort(BookImageComparator.instance());
+
+        List<BookImage> missing = new ArrayList<>();
+        for (int i = 1; i < images.size(); i++) {
+            BookImage i1 = images.get(i - 1);
+            BookImage i2 = images.get(i);
+
+            String[] p1 = i1.getId().split("\\.");
+            String[] p2 = i2.getId().split("\\.");
+
+            if (p1.length != p2.length) {
+                // assuming prefixes with folios change length
+                continue;
+            }
+
+            String f1 = findFolio(i1.getId());
+            String f2 = findFolio(i2.getId());
+
+            if (StringUtils.isNotBlank(f1) && StringUtils.isNotBlank(f2)) {
+                String prefix1 = i1.getId().substring(0, i1.getId().length() - (f1 + config.getTIF()).length());
+                String prefix2 = i2.getId().substring(0, i2.getId().length() - (f2 + config.getTIF()).length());
+
+                if (!prefix1.equals(prefix2)) {
+                    continue;
+                }
+
+                int seq1 = Integer.parseInt(f1.substring(0, f1.length() - 1));
+                int seq2 = Integer.parseInt(f2.substring(0, f2.length() - 1));
+
+                char rv1 = f1.charAt(f1.length() - 1);
+                char rv2 = f2.charAt(f2.length() - 1);
+
+                // if seq1 == seq2 AND rv1 == 'r' AND rv2 == 'v'
+                //     nothing missing.
+                // if seq1 == seq2 AND (rv1 == 'v' OR rv2 == 'r')
+                //     something is wrong!
+                // if seq1 > seq2
+                //     list not sorted correctly
+                if (seq1 < seq2) {
+                    int numMissing = (seq2 - seq1 - 1) * 2;
+
+                    if (rv1 == 'r') {
+                        numMissing++;
+                    }
+                    if (rv2 == 'v') {
+                        numMissing++;
+                    }
+
+                    char next_rv = rv1;
+                    int next_seq = seq1;
+                    for (int j = 0; j < numMissing; j++) {
+                        if (next_rv == 'v') {
+                            next_rv = 'r';
+                            next_seq++;
+                        } else {
+                            next_rv = 'v';
+                        }
+
+                        BookImage missingImage = new BookImage(
+                                prefix1 + String.format("%03d", next_seq) + next_rv + config.getTIF(),
+                                missingDimensions[0], missingDimensions[1],
+                                true
+                        );
+                        missing.add(missingImage);
+                    }
+                }
+            }
+        }
+
+        images.addAll(missing);
+        Collections.sort(images, BookImageComparator.instance());
+//        images.sort(BookImageComparator.instance());
+    }
+
+    /**
+     * Find the folio designation from an image file name
+     *
+     * @param filename .
+     * @return folio number + side
+     */
+    public static String findFolio(String filename) {
+        Pattern p = Pattern.compile("(\\d+)(r|v)");
+        Matcher m = p.matcher(filename);
+
+        if (m.find()) {
+            int n = Integer.parseInt(m.group(1));
+            return String.format("%03d", n) + m.group(2);
+        } else {
+            return null;
+        }
+    }
+
+    /**
+     * Take all images from {@param bookStreams} and build a list of {@link rosa.archive.model.BookImage}s.
+     *
+     * @param collection collection name
+     * @param book book name
+     * @param bookStreams byte stream group containing the images
+     * @return list of BookImages
+     * @throws IOException
+     */
+    private List<BookImage> buildImageList(String collection, String book, boolean addMissing,
+                                           ByteStreamGroup bookStreams) throws IOException {
+        List<BookImage> images = new ArrayList<>();
+        for (String file : bookStreams.listByteStreamNames()) {
+            if (file.endsWith(config.getTIF())) {
+
+                String filepath = Paths.get(bookStreams.id()).resolve(file).toString();
+                int[] dimensions = getImageDimensionsHack(filepath);
+
+                BookImage img = new BookImage();
+                img.setId(file);
+                img.setWidth(dimensions[0]);
+                img.setHeight(dimensions[1]);
+                img.setMissing(false);
+
+                images.add(img);
+            }
+        }
+        Collections.sort(images, BookImageComparator.instance());
+//        images.sort(BookImageComparator.instance());
+
+        if (addMissing) {
+            int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(config.getMISSING_IMAGE()) ?
+                    getImageDimensionsHack(
+                            Paths.get(base.getByteStreamGroup(collection).id())
+                                    .resolve(config.getMISSING_IMAGE()).toString()) :
+                    new int[]{0, 0};
+            addMissingImages(book, images, missingDimensions);
+        }
+
+        return images;
     }
 
     /**
@@ -412,17 +627,6 @@ public class StoreImpl implements Store {
         } finally {
             p.destroy();
         }
-    }
-
-    private BookImage bookImage(String id, int width, int height, boolean missing) {
-        BookImage img = new BookImage();
-
-        img.setId(id);
-        img.setWidth(width);
-        img.setHeight(height);
-        img.setMissing(missing);
-
-        return img;
     }
 
     /**
@@ -510,7 +714,7 @@ public class StoreImpl implements Store {
 
             return true;
         } catch (IOException e) {
-            errors.add("Failed to write [" + item.getId() + "]");
+            errors.add("Failed to write [" + item.getId() + "]\n" + stacktrace(e));
             return false;
         }
     }
@@ -531,7 +735,7 @@ public class StoreImpl implements Store {
             return obj;
 
         } catch (IOException e) {
-            errors.add("Failed to read item in archive. [" + name + "]");
+            errors.add("Failed to read item in archive. [" + name + "]\n" + stacktrace(e));
             return null;
         }
     }
@@ -548,5 +752,10 @@ public class StoreImpl implements Store {
         return "";
     }
 
+    private String stacktrace(Exception e) {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        e.printStackTrace(new PrintStream(out));
 
+        return out.toString();
+    }
 }

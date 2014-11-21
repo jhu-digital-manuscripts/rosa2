@@ -86,7 +86,11 @@ public interface Store {
 
     boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors) throws IOException;
 
-    void generateAndWriteImageList(String collection, String book, boolean force,  List<String> errors) throws IOException;
+    void generateAndWriteImageList(String collection, String book, boolean force, List<String> errors) throws IOException;
+
+    void generateAndWriteCropList(String collection, String book, boolean force, List<String> errors) throws IOException;
+
+    void cropImages(String collection, String book, boolean force, List<String> errors) throws IOException;
     // TODO the following methods will not be in first iteration!
     // updateBook(...)
     // addBook(...)

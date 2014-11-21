@@ -6,8 +6,11 @@ import org.junit.Test;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -63,7 +66,23 @@ public class IllustrationTaggingSerializerTest extends BaseSerializerTest {
     @Test
     public void writeTest() throws IOException {
         IllustrationTagging tagging = createTagging();
-        serializer.write(tagging, System.out);
+
+        try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+            serializer.write(tagging, out);
+            String results = out.toString("UTF-8");
+
+            assertNotNull(results);
+            assertTrue(results.length() > 0);
+
+            List<String> lines = Arrays.asList(results.split("\n"));
+            assertNotNull(lines);
+            assertEquals(11, lines.size());
+            assertEquals("id,Folio,Illustration title,Textual elements,Initials,Characters,Costume,Objects,Landscape,Architecture,Other",
+                    lines.get(0));
+            assertTrue(lines.contains("IllID1,Page 1,\"Title1,Title2\",TextualElement,,\"char1,char2\",,,,,OtherOtherOther"));
+            assertTrue(lines.contains("IllID8,Page 8,\"Title1,Title2\",TextualElement,,\"char1,char2\",,,,,OtherOtherOther"));
+        }
+
     }
 
     private IllustrationTagging createTagging() {

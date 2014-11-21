@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
@@ -69,12 +70,21 @@ public class BookMetadataSerializerTest extends BaseSerializerTest {
         }
 
         // inspection of written file
-        List<String> lines = Files.readAllLines(tempFile.toPath());
+        List<String> lines = Files.readAllLines(tempFile.toPath(), Charset.forName("UTF-8"));
 
         assertEquals("<TEI xmlns=\"http://www.tei-c.org/ns/1.0\" version=\"5.0\">", lines.get(1));
         assertEquals("    <teiheader>", lines.get(2));
         assertEquals("    </teiheader>", lines.get(lines.size() - 2));
         assertEquals("</TEI>", lines.get(lines.size() - 1));
+
+        assertEquals("        <sourceDesc>", lines.get(3));
+        assertEquals("                <title>Title</title>", lines.get(5));
+        assertEquals("                        <height unit=\"mm\">2000</height>", lines.get(15));
+        assertEquals("            <msDesc>", lines.get(20));
+        assertEquals("                        <locus from=\"Page 0\" to=\"Page 1\">Page 0-Page 1</locus>",
+                    lines.get(28));
+        assertEquals("                        <note type=\"linesPerColumn\">45</note>",
+                    lines.get(50));
     }
 
     private BookMetadata createMetadata() {
@@ -97,6 +107,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest {
         metadata.setYearEnd(300);
         metadata.setYearStart(100);
         metadata.setType("The type");
+        metadata.setDimensionUnits("mm");
 
         List<BookText> bookTextList = new ArrayList<>();
         for (int i = 0; i < 3; i++) {

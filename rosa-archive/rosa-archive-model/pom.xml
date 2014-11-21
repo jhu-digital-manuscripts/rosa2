@@ -16,7 +16,7 @@
 
        <!-- Test dependencies -->
 
-       <dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
@@ -27,6 +27,13 @@
             <artifactId>mockito-all</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>nl.jqno.equalsverifier</groupId>
+            <artifactId>equalsverifier</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
 </project>

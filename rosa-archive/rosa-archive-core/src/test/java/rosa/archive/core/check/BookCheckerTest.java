@@ -72,7 +72,6 @@ public class BookCheckerTest extends AbstractFileSystemTest {
                 getClass().getClassLoader().getResourceAsStream("rosedata/LudwigXV7/LudwigXV7.crop.txt")
         );
 
-        // TODO this will not be right until a Collection can be fully mocked
         assertFalse(bChecker.checkContent(mockCollection(), createBook(), bsg, true, new ArrayList<String>(), new ArrayList<String>()));
         assertFalse(bChecker.checkContent(mockCollection(), createBadBook(), bsg, true, new ArrayList<String>(), new ArrayList<String>()));
         assertFalse(bChecker.checkContent(mockCollection(), createBook(), bsg, false, new ArrayList<String>(), new ArrayList<String>()));

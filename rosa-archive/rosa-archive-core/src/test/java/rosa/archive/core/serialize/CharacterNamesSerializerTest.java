@@ -4,14 +4,17 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.*;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -30,7 +33,8 @@ public class CharacterNamesSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void readsFromFile() throws IOException {
+    @Override
+    public void readTest() throws IOException {
 
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
 
@@ -53,14 +57,24 @@ public class CharacterNamesSerializerTest extends BaseSerializerTest {
 
     @Test
     public void writeTest() throws IOException {
-//        File tmp = tempFolder.newFile();
         CharacterNames names = createCharacterNames();
-        serializer.write(names, System.out);
-//        try (OutputStream out = Files.newOutputStream(tmp.toPath())) {
-//            serializer.write(names, out);
-//        }
 
+        try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+            serializer.write(names, out);
+            String output = out.toString("UTF-8");
 
+            assertNotNull(output);
+            assertNotEquals("", output);
+
+            List<String> lines = Arrays.asList(output.split("\n"));
+            assertEquals(5, lines.size());
+
+            assertTrue(lines.contains("ID,Site name,French variant,English name"));
+            assertTrue(lines.contains("id1,name,name11,name1"));
+            assertTrue(lines.contains("id2,name,name22,name2"));
+            assertTrue(lines.contains("id3,name,name33,\"name3, n3, bleep\""));
+            assertTrue(lines.contains("id4,,name44,n4"));
+        }
     }
 
     private CharacterNames createCharacterNames() {

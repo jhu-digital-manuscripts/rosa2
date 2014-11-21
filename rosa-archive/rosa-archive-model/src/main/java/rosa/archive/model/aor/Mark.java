@@ -12,6 +12,16 @@ public class Mark extends Annotation implements Serializable {
     private String place;
     private String language;
 
+    public Mark() {}
+
+    public Mark(String referringText, String name, String method, String place, String language) {
+        super(referringText);
+        this.name = name;
+        this.method = method;
+        this.place = place;
+        this.language = language;
+    }
+
     public String getName() {
         return name;
     }

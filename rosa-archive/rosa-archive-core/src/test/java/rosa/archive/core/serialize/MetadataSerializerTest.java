@@ -1,13 +1,17 @@
 package rosa.archive.core.serialize;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +31,8 @@ public class MetadataSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void readTest() throws Exception {
+    @Ignore
+    public void readTest() throws IOException {
         String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
                 "<book illustrations=\"42\" pages=\"100\">\n" +
                 "    <dimensions height=\"2000\" unit=\"mm\" width=\"1000\"/>\n" +
@@ -71,7 +76,8 @@ public class MetadataSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void writeTest() throws Exception {
+    @Ignore
+    public void writeTest() throws IOException {
         BookMetadata metadata = createMetadata("en");
         BookMetadata metadataFr = createMetadata("fr");
 
@@ -79,7 +85,20 @@ public class MetadataSerializerTest extends BaseSerializerTest {
         metadataMap.put("en", metadata);
         metadataMap.put("fr", metadataFr);
 
-        serializer.write(metadataMap, System.out);
+        try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+            serializer.write(metadataMap, out);
+            String res = out.toString("UTF-8");
+            assertNotNull(res);
+            assertTrue(res.length() > 0);
+
+            List<String> lines = Arrays.asList(res.split("\n"));
+            assertNotNull(lines);
+            assertEquals(27, lines.size());
+
+            assertTrue(lines.contains("<book illustrations=\"42\" pages=\"100\">"));
+            assertTrue(lines.contains("        <material>Some Material</material>"));
+            assertTrue(lines.contains("    <bibliography lang=\"fr\">"));
+        }
     }
 
     private BookMetadata createMetadata(String lang) {
