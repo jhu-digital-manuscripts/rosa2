@@ -17,7 +17,7 @@ import org.json.JSONException;
 
 import rosa.iiif.image.core.IIIFException;
 import rosa.iiif.image.core.IIIFRequestParser;
-import rosa.iiif.image.core.IIIFSerializer;
+import rosa.iiif.image.core.IIIFResponseSerializer;
 import rosa.iiif.image.core.ImageServer;
 import rosa.iiif.image.model.ImageInfo;
 import rosa.iiif.image.model.ImageRequest;
@@ -25,7 +25,9 @@ import rosa.iiif.image.model.InfoFormat;
 import rosa.iiif.image.model.InfoRequest;
 import rosa.iiif.image.model.RequestType;
 
+import com.google.inject.Inject;
 import com.google.inject.Singleton;
+import com.google.inject.name.Named;
 
 // TODO check error code handling
 
@@ -38,12 +40,13 @@ public class IIIFServlet extends HttpServlet {
 
     private final ImageServer server;
     private final IIIFRequestParser parser;
-    private final IIIFSerializer serializer;
+    private final IIIFResponseSerializer serializer;
     private final Map<String, String> image_id_aliases; // alias -> image id
 
-    public IIIFServlet(ImageServer server, Map<String, String> image_id_aliases) {
+    @Inject
+    public IIIFServlet(ImageServer server, @Named("image.aliases") Map<String, String> image_id_aliases) {
         this.server = server;
-        this.serializer = new IIIFSerializer(server.getCompliance());
+        this.serializer = new IIIFResponseSerializer();
         this.parser = new IIIFRequestParser();
         this.image_id_aliases = image_id_aliases;
     }
@@ -56,9 +59,7 @@ public class IIIFServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        // TODO server compliance...
-        resp.addHeader("Link", "<http://library.stanford.edu/iiif/image-api/compliance.html#level0>;rel=\"profile\"");
+        resp.addHeader("Link", "<" + server.getCompliance().getUri() + ">;rel=\"profile\"");
 
         // Hack to get raw path;
 
@@ -94,7 +95,7 @@ public class IIIFServlet extends HttpServlet {
 
                     try {
                         if (inforeq.getFormat() == InfoFormat.JSON) {
-                            serializer.toJsonLd(info, os);
+                            serializer.writeJsonLd(info, os);
                         } else {
                             report_error(resp, 415, "no such info format");
                         }
