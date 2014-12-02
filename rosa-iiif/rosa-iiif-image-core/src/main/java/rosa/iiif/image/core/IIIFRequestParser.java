@@ -1,8 +1,5 @@
 package rosa.iiif.image.core;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-
 import rosa.iiif.image.model.ImageFormat;
 import rosa.iiif.image.model.ImageRequest;
 import rosa.iiif.image.model.InfoFormat;
@@ -27,7 +24,8 @@ public class IIIFRequestParser {
     }
 
     /**
-     * @param path_prefix must not be decoded
+     * @param path_prefix
+     *            must not be decoded
      */
     public IIIFRequestParser(String path_prefix) {
         this.path_prefix = path_prefix;
@@ -36,7 +34,8 @@ public class IIIFRequestParser {
     /**
      * Determine type of a IIIF request.
      * 
-     * @param path must not be decoded
+     * @param path
+     *            must not be decoded
      * @return type of the request.
      */
     public RequestType determineRequestType(String path) {
@@ -47,7 +46,7 @@ public class IIIFRequestParser {
         }
     }
 
-    private String[] split(String path) {
+    private String[] split_path(String path) {
         if (path_prefix != null && path.startsWith(path_prefix)) {
             path = path.substring(path_prefix.length());
         }
@@ -59,13 +58,7 @@ public class IIIFRequestParser {
         String[] parts = path.split("/");
 
         for (int i = 0; i < parts.length; i++) {
-            try {
-                // TODO This is wrong, must use real uri decoder 
-                
-                parts[i] = URLDecoder.decode(parts[i], "UTF-8");
-            } catch (UnsupportedEncodingException e) {
-                throw new RuntimeException(e);
-            }
+            parts[i] = UriUtil.decodePathSegment(parts[i]);
         }
 
         return parts;
@@ -74,12 +67,13 @@ public class IIIFRequestParser {
     /**
      * Parse a IIIF Image info request.
      * 
-     * @param path must not be decoded
+     * @param path
+     *            must not be decoded
      * @return image info request
      * @throws IIIFException
      */
     public InfoRequest parseImageInfoRequest(String path) throws IIIFException {
-        String[] parts = split(path);
+        String[] parts = split_path(path);
 
         if (parts.length != 2) {
             throw new IIIFException("Malformed info request: " + path);
@@ -100,12 +94,13 @@ public class IIIFRequestParser {
     /**
      * Parse a IIIF Image request.
      * 
-     * @param path must not be decoded
+     * @param path
+     *            must not be decoded
      * @return image request
      * @throws IIIFException
      */
     public ImageRequest parseImageRequest(String path) throws IIIFException {
-        String[] parts = split(path);
+        String[] parts = split_path(path);
 
         if (parts.length != 5) {
             throw new IIIFException("Malformed image request: " + path);
@@ -124,7 +119,7 @@ public class IIIFRequestParser {
             throw new IIIFException("Malformed image request: " + path);
         }
 
-        req.setQuality(parseQuality(last[0]));        
+        req.setQuality(parseQuality(last[0]));
         req.setFormat(parseImageFormat(last[1]));
 
         return req;

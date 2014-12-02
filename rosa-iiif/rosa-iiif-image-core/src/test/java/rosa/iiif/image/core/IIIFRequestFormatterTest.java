@@ -2,7 +2,6 @@ package rosa.iiif.image.core;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import rosa.iiif.image.model.ImageFormat;
@@ -25,16 +24,12 @@ public class IIIFRequestFormatterTest {
         InfoRequest req = new InfoRequest();
 
         req.setImageId("grass.png");
-
-        // TODO Only JSON...
         req.setFormat(InfoFormat.JSON_LD);
 
         assertEquals(base + "grass.png/info.json", formatter.format(req));
     }
 
-    // TODO format rotation correctly
-    
-    @Ignore
+    @Test
     public void testFormatImageRequest() {
         ImageRequest req = new ImageRequest();
 
@@ -44,7 +39,19 @@ public class IIIFRequestFormatterTest {
         req.setRegion(new Region(RegionType.FULL));
         req.setSize(new Size(SizeType.FULL));
         req.setRotation(new Rotation(90));
-        
+
+        // In particular check rotation formatting
+
         assertEquals(base + "gorilla/full/full/90/bitonal.png", formatter.format(req));
+
+        req.setRotation(new Rotation(0));
+        assertEquals(base + "gorilla/full/full/0/bitonal.png", formatter.format(req));
+
+        req.setRotation(new Rotation(120.500));
+        assertEquals(base + "gorilla/full/full/120.5/bitonal.png", formatter.format(req));
+
+        req.setRotation(new Rotation(.05));
+        assertEquals(base + "gorilla/full/full/0.05/bitonal.png", formatter.format(req));
     }
+
 }

@@ -84,6 +84,15 @@ public class IIIFRequestFormatter {
     }
 
     private String format(Rotation rotation) {
-        return (rotation.isMirrored() ? "!" : "") + String.format("%g", rotation.getAngle());
+        // Formatted angle should be integer if possible and not have trailing
+        // zeros. If < 0, then should start with 0.
+
+        String angle = String.valueOf(rotation.getAngle());
+
+        if (angle.endsWith(".0")) {
+            angle = angle.substring(0, angle.length() - 2);
+        }
+
+        return (rotation.isMirrored() ? "!" : "") + angle;
     }
 }
