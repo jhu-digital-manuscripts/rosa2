@@ -6,8 +6,10 @@ import rosa.archive.model.SHA1Checksum;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -19,6 +21,7 @@ import java.util.Map;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 /**
  * @see SHA1ChecksumSerializer
@@ -35,7 +38,7 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void readTest() throws Exception {
+    public void readTest() throws IOException {
         InputStream is = getClass().getClassLoader().getResourceAsStream(testFile);
         assertNotNull(is);
 
@@ -49,7 +52,7 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void writeTest() throws Exception {
+    public void writeTest() throws IOException {
         String id = "temp.SHA1SUM";
 
         // Create test data
@@ -82,7 +85,12 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest {
         URL url = getClass().getClassLoader().getResource("data/Walters143/Walters143.SHA1SUM");
         assertNotNull(url);
 
-        Path realChecksum = Paths.get(url.toURI());
+        Path realChecksum = null;
+        try {
+            realChecksum = Paths.get(url.toURI());
+        } catch (URISyntaxException e) {
+            fail("Failed to resolve URI. [" + url.toString() + "]");
+        }
 
         List<String> realLines = Files.readAllLines(realChecksum, Charset.forName("UTF-8"));
         for (String line : realLines) {

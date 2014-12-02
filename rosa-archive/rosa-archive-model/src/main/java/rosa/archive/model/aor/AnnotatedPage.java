@@ -21,6 +21,7 @@ public class AnnotatedPage implements HasId, Serializable {
     private List<Symbol> symbols;
     private List<Underline> underlines;
     private List<Numeral> numerals;
+    private List<Errata> errata;
 
     public AnnotatedPage() {
         marginalia = new ArrayList<>();
@@ -28,6 +29,7 @@ public class AnnotatedPage implements HasId, Serializable {
         symbols = new ArrayList<>();
         underlines = new ArrayList<>();
         numerals = new ArrayList<>();
+        errata = new ArrayList<>();
     }
 
     @Override
@@ -112,6 +114,14 @@ public class AnnotatedPage implements HasId, Serializable {
         this.numerals = numerals;
     }
 
+    public List<Errata> getErrata() {
+        return errata;
+    }
+
+    public void setErrata(List<Errata> errata) {
+        this.errata = errata;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -119,6 +129,7 @@ public class AnnotatedPage implements HasId, Serializable {
 
         AnnotatedPage page1 = (AnnotatedPage) o;
 
+        if (errata != null ? !errata.equals(page1.errata) : page1.errata != null) return false;
         if (id != null ? !id.equals(page1.id) : page1.id != null) return false;
         if (marginalia != null ? !marginalia.equals(page1.marginalia) : page1.marginalia != null) return false;
         if (marks != null ? !marks.equals(page1.marks) : page1.marks != null) return false;
@@ -145,6 +156,7 @@ public class AnnotatedPage implements HasId, Serializable {
         result = 31 * result + (symbols != null ? symbols.hashCode() : 0);
         result = 31 * result + (underlines != null ? underlines.hashCode() : 0);
         result = 31 * result + (numerals != null ? numerals.hashCode() : 0);
+        result = 31 * result + (errata != null ? errata.hashCode() : 0);
         return result;
     }
 
@@ -161,6 +173,7 @@ public class AnnotatedPage implements HasId, Serializable {
                 ", symbols=" + symbols +
                 ", underlines=" + underlines +
                 ", numerals=" + numerals +
+                ", errata=" + errata +
                 '}';
     }
 }

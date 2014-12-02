@@ -5,6 +5,7 @@ import org.junit.Test;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.NarrativeTagging;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -29,6 +30,11 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
     }
 
     @Test
+    public void readTest() throws IOException {
+        readCSVTest();
+        readTxtTest();
+    }
+
     public void readCSVTest() throws IOException {
         final String testFile = "data/LudwigXV7/LudwigXV7.nartag.csv";
 
@@ -52,7 +58,6 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
         }
     }
 
-    @Test
     public void readTxtTest() throws IOException {
         final String testFile = "data/Ferrell/Ferrell.nartag.txt";
 
@@ -82,7 +87,8 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
     @Test
     public void writeTest() throws IOException {
         NarrativeTagging tagging = createNartag();
-        serializer.write(tagging, System.out);
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        serializer.write(tagging, out);
     }
 
     private NarrativeTagging createNartag() {

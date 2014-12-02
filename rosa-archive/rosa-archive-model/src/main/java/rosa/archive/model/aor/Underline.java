@@ -11,6 +11,15 @@ public class Underline extends Annotation implements Serializable {
     private String type;
     private String language;
 
+    public Underline() {}
+
+    public Underline(String referringText, String method, String type, String language) {
+        super(referringText);
+        this.method = method;
+        this.type = type;
+        this.language = language;
+    }
+
     public String getMethod() {
         return method;
     }
@@ -65,6 +74,7 @@ public class Underline extends Annotation implements Serializable {
                 "method='" + method + '\'' +
                 ", type='" + type + '\'' +
                 ", language='" + language + '\'' +
+                ", text='" + getReferringText() + '\'' +
                 '}';
     }
 }

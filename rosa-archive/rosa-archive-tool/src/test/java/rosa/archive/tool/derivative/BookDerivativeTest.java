@@ -1,5 +1,6 @@
 package rosa.archive.tool.derivative;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -10,6 +11,7 @@ import java.io.IOException;
 public class BookDerivativeTest {
 
     @Test
+    @Ignore
     public void getImageListTest() throws IOException {
         String[] names = {
                 "LudwigXV7.binding.frontcover.tif",

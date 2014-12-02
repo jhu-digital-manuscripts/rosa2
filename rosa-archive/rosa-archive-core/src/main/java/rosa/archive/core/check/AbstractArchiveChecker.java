@@ -9,8 +9,10 @@ import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.HasId;
 import rosa.archive.model.HashAlgorithm;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintStream;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +54,7 @@ public abstract class AbstractArchiveChecker {
             // This will read the item in the archive and report any errors
             serializerMap.get(item.getClass()).read(in, errors);
         } catch (IOException e) {
-            errors.add("Failed to read [" + bsg.name() + ":" + item.getId() + "]");
+            errors.add("Failed to read [" + bsg.name() + ":" + item.getId() + "]\n" + stacktrace(e));
         }
     }
 
@@ -170,6 +172,19 @@ public abstract class AbstractArchiveChecker {
         }
 
         return errors;
+    }
+
+    /**
+     * Print the stacktrace to a String!
+     *
+     * @param e exception
+     * @return stacktrace
+     */
+    protected String stacktrace(Exception e) {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        e.printStackTrace(new PrintStream(out));
+
+        return out.toString();
     }
 
 }

@@ -34,7 +34,12 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
 
         // Guess if it is a .csv file or a .txt file. Each must be parsed differently.
         // Narrative Tagging CSV file will have 8 columns.
-        String[] firstRow = lines.get(0).split(",");
+        if (lines == null || lines.size() == 0) {
+            errors.add("Empty or missing narrative tagging.");
+            return new NarrativeTagging();
+        }
+//        String[] firstRow = lines.get(0).split(",");
+        String[] firstRow = CSV.parse(lines.get(0));
         if (firstRow.length == 8) {
             return readCSVFormat(lines, errors);
         }

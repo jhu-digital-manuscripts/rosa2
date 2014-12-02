@@ -8,9 +8,11 @@ import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -90,7 +92,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void readTest() throws Exception {
+    public void readTest() throws IOException {
 
         List<String> errors = new ArrayList<>();
         MultilangMetadata metadata = null;
@@ -209,7 +211,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
     }
 
     @Test
-    public void writeTest() throws Exception {
+    public void writeTest() throws IOException {
         OutputStream out = new ByteArrayOutputStream();
         assertNotNull(out);
         serializer.write(createMetadata(), out);
@@ -219,7 +221,14 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
 
         String result = baos.toString("UTF-8");
         assertNotNull(result);
-        assertEquals(bigXml.trim(), result.trim());
+
+        List<String> expectedLines = Arrays.asList(bigXml.split("\n"));
+        List<String> resultLines = Arrays.asList(result.split("\n"));
+
+        // All lines in results are in expected lines
+        for (String line : resultLines) {
+            assertTrue(expectedLines.contains(line));
+        }
     }
 
     private MultilangMetadata createMetadata() {
@@ -259,6 +268,21 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
         t2.setLeavesPerGathering(0);
         metadata.getBookTexts().add(t2);
 
+        BiblioData d2 = new BiblioData();
+        d2.setLanguage("fr");
+        d2.setTitle("Book Title");
+        d2.setDateLabel("Date String");
+        d2.setType("Type String");
+        d2.setCommonName("Common Name String");
+        d2.setMaterial("Material String");
+        d2.setOrigin("Origin String");
+        d2.setCurrentLocation("Current Location String");
+        d2.setRepository("Repository String");
+        d2.setShelfmark("Shelfmark String");
+        d2.setDetails(new String[]{"Bibliographic Details"});
+        d2.setAuthors(new String[]{"Author"});
+        metadata.getBiblioDataMap().put("fr", d2);
+
         BiblioData d1 = new BiblioData();
         d1.setLanguage("en");
         d1.setTitle("Book Title");
@@ -274,21 +298,6 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
         d1.setAuthors(new String[] {"Author"});
         d1.setNotes(new String[] {"Note"});
         metadata.getBiblioDataMap().put("en", d1);
-
-        BiblioData d2 = new BiblioData();
-        d2.setLanguage("fr");
-        d2.setTitle("Book Title");
-        d2.setDateLabel("Date String");
-        d2.setType("Type String");
-        d2.setCommonName("Common Name String");
-        d2.setMaterial("Material String");
-        d2.setOrigin("Origin String");
-        d2.setCurrentLocation("Current Location String");
-        d2.setRepository("Repository String");
-        d2.setShelfmark("Shelfmark String");
-        d2.setDetails(new String[]{"Bibliographic Details"});
-        d2.setAuthors(new String[]{"Author"});
-        metadata.getBiblioDataMap().put("fr", d2);
 
         return metadata;
     }

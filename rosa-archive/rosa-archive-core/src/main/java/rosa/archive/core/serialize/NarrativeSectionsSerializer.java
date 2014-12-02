@@ -55,7 +55,7 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
 
     @Override
     public void write(NarrativeSections sections, OutputStream out) throws IOException {
-        final String header = "Section,Lines,Lecoy,Description\n"; // TODO make configurable!
+        final String header = "Section,Lines,Lecoy,Description\n";
         IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
 
         for (NarrativeScene scene : sections.asScenes()) {

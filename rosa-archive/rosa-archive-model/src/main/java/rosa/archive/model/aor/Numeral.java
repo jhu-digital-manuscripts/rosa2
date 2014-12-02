@@ -9,6 +9,13 @@ public class Numeral extends Annotation implements Serializable {
 
     private String place;
 
+    public Numeral() {}
+
+    public Numeral(String referringText, String place) {
+        super(referringText);
+        this.place = place;
+    }
+
     public String getPlace() {
         return place;
     }

@@ -53,4 +53,27 @@ public interface ByteStreamGroup {
      */
     public long getLastModified(String streamName);
 
+    /**
+     * Create a new byte stream group relative to this group.
+     *
+     * @param name name of new group
+     * @return the new byte stream group
+     * @throws IOException
+     */
+    public ByteStreamGroup newByteStreamGroup(String name) throws IOException;
+
+    public void copyByteStream(String sourceStream, ByteStreamGroup targetGroup) throws IOException;
+
+    /**
+     * Copy a byte stream from this byte stream group to the target byte stream group. Rename
+     * the byte stream in the target.
+     *
+     * @param sourceStream name of source
+     * @param targetStream name of destination
+     * @param targetGroup target group to copy file
+     * @throws IOException
+     */
+    public void copyByteStream(String sourceStream, String targetStream, ByteStreamGroup targetGroup)
+            throws IOException;
+
 }

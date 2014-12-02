@@ -9,6 +9,12 @@ public abstract class Annotation implements Serializable {
 
     private String referringText;
 
+    protected Annotation() {}
+
+    protected Annotation(String referringText) {
+        this.referringText = referringText;
+    }
+
     public String getReferringText() {
         return referringText;
     }

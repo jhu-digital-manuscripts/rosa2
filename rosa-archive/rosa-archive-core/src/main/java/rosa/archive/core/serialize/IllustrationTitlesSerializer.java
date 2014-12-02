@@ -61,7 +61,6 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
 
     @Override
     public void write(IllustrationTitles titles, OutputStream out) throws IOException {
-        // TODO make header configurable
         final String header = "Id,Title\n";
         IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
 

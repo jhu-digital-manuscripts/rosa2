@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * Metadata describing a book in the archive.
  */
-public class BookMetadata implements HasId, Serializable {
+public final class BookMetadata implements HasId, Serializable {
     private static final long serialVersionUID = 1L;
 
     private String id;
@@ -19,6 +19,7 @@ public class BookMetadata implements HasId, Serializable {
     private String shelfmark;
     private String origin;
     private String dimensions;
+    private String dimensionUnits;
     private int width;
     private int height;
     private int numberOfIllustrations;
@@ -175,6 +176,14 @@ public class BookMetadata implements HasId, Serializable {
         this.material = material;
     }
 
+    public String getDimensionUnits() {
+        return dimensionUnits;
+    }
+
+    public void setDimensionUnits(String dimensionUnits) {
+        this.dimensionUnits = dimensionUnits;
+    }
+
     public BookText[] getTexts() {
         return texts;
     }
@@ -200,6 +209,8 @@ public class BookMetadata implements HasId, Serializable {
         if (currentLocation != null ? !currentLocation.equals(metadata.currentLocation) : metadata.currentLocation != null)
             return false;
         if (date != null ? !date.equals(metadata.date) : metadata.date != null) return false;
+        if (dimensionUnits != null ? !dimensionUnits.equals(metadata.dimensionUnits) : metadata.dimensionUnits != null)
+            return false;
         if (dimensions != null ? !dimensions.equals(metadata.dimensions) : metadata.dimensions != null) return false;
         if (id != null ? !id.equals(metadata.id) : metadata.id != null) return false;
         if (material != null ? !material.equals(metadata.material) : metadata.material != null) return false;
@@ -225,6 +236,7 @@ public class BookMetadata implements HasId, Serializable {
         result = 31 * result + (shelfmark != null ? shelfmark.hashCode() : 0);
         result = 31 * result + (origin != null ? origin.hashCode() : 0);
         result = 31 * result + (dimensions != null ? dimensions.hashCode() : 0);
+        result = 31 * result + (dimensionUnits != null ? dimensionUnits.hashCode() : 0);
         result = 31 * result + width;
         result = 31 * result + height;
         result = 31 * result + numberOfIllustrations;
@@ -249,6 +261,7 @@ public class BookMetadata implements HasId, Serializable {
                 ", shelfmark='" + shelfmark + '\'' +
                 ", origin='" + origin + '\'' +
                 ", dimensions='" + dimensions + '\'' +
+                ", dimensionUnits='" + dimensionUnits + '\'' +
                 ", width=" + width +
                 ", height=" + height +
                 ", numberOfIllustrations=" + numberOfIllustrations +

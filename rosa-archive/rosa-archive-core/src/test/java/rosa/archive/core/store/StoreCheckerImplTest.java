@@ -1,6 +1,7 @@
 package rosa.archive.core.store;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -63,7 +64,7 @@ import static org.mockito.Mockito.when;
 /**
  *
  */
-public class StoreImplTest extends AbstractFileSystemTest {
+public class StoreCheckerImplTest extends AbstractFileSystemTest {
 
     private StoreImpl store;
     @Mock
@@ -239,7 +240,8 @@ public class StoreImplTest extends AbstractFileSystemTest {
     private void checkBook(Book book, Set<Class> classes) throws IOException {
         for (Class c : classes) {
             // In the case the a file does not exist, the read() method will not be called...
-            verify(serializerMap.get(c), atMost(8)).read(any(InputStream.class), any(List.class));
+            // Annotation serializer will be called once per page
+            verify(serializerMap.get(c), atMost(9)).read(any(InputStream.class), any(List.class));
         }
 
         assertNotNull(book.getContent());
@@ -329,7 +331,13 @@ public class StoreImplTest extends AbstractFileSystemTest {
         verify(serializerMap.get(SHA1Checksum.class)).write(anyObject(), any(OutputStream.class));
     }
 
+    /**
+     * Note: this method overwrites the images list in the test-classes classpath!
+     *
+     * @throws Exception
+     */
     @Test
+    @Ignore
     @SuppressWarnings("unchecked")
     public void generateAndWriteImageListTest() throws Exception {
         Set<Class> classes = new HashSet<>();
