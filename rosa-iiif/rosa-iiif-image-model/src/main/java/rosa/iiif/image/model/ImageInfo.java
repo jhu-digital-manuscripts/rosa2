@@ -124,6 +124,7 @@ public class ImageInfo implements Serializable {
         result = prime * result + Arrays.hashCode(formats);
         result = prime * result + height;
         result = prime * result + ((image_id == null) ? 0 : image_id.hashCode());
+        result = prime * result + ((image_url == null) ? 0 : image_url.hashCode());
         result = prime * result + Arrays.hashCode(profiles);
         result = prime * result + Arrays.hashCode(qualities);
         result = prime * result + Arrays.hashCode(services);
@@ -135,58 +136,49 @@ public class ImageInfo implements Serializable {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
+        if (this == obj)
             return true;
-        }
-        if (obj == null) {
+        if (obj == null)
             return false;
-        }
-        if (!(obj instanceof ImageInfo)) {
+        if (!(obj instanceof ImageInfo))
             return false;
-        }
         ImageInfo other = (ImageInfo) obj;
-        if (compliance != other.compliance) {
+        if (compliance != other.compliance)
             return false;
-        }
-        if (!Arrays.equals(formats, other.formats)) {
+        if (!Arrays.equals(formats, other.formats))
             return false;
-        }
-        if (height != other.height) {
+        if (height != other.height)
             return false;
-        }
         if (image_id == null) {
-            if (other.image_id != null) {
+            if (other.image_id != null)
                 return false;
-            }
-        } else if (!image_id.equals(other.image_id)) {
+        } else if (!image_id.equals(other.image_id))
             return false;
-        }
-        if (!Arrays.equals(profiles, other.profiles)) {
+        if (image_url == null) {
+            if (other.image_url != null)
+                return false;
+        } else if (!image_url.equals(other.image_url))
             return false;
-        }
-        if (!Arrays.equals(qualities, other.qualities)) {
+        if (!Arrays.equals(profiles, other.profiles))
             return false;
-        }
-        if (!Arrays.equals(services, other.services)) {
+        if (!Arrays.equals(qualities, other.qualities))
             return false;
-        }
-        if (!Arrays.equals(sizes, other.sizes)) {
+        if (!Arrays.equals(services, other.services))
             return false;
-        }
-        if (!Arrays.equals(tiles, other.tiles)) {
+        if (!Arrays.equals(sizes, other.sizes))
             return false;
-        }
-        if (width != other.width) {
+        if (!Arrays.equals(tiles, other.tiles))
             return false;
-        }
+        if (width != other.width)
+            return false;
         return true;
     }
 
     @Override
     public String toString() {
-        return "ImageInfo [id=" + image_id + ", width=" + width + ", height=" + height + ", formats="
-                + Arrays.toString(formats) + ", qualities=" + Arrays.toString(qualities) + ", sizes="
-                + Arrays.toString(sizes) + ", services=" + Arrays.toString(services) + ", compliance=" + compliance
-                + ", tiles=" + Arrays.toString(tiles) + ", profiles=" + Arrays.toString(profiles) + "]";
+        return "ImageInfo [image_id=" + image_id + ", image_url=" + image_url + ", width=" + width + ", height="
+                + height + ", formats=" + Arrays.toString(formats) + ", qualities=" + Arrays.toString(qualities)
+                + ", sizes=" + Arrays.toString(sizes) + ", services=" + Arrays.toString(services) + ", compliance="
+                + compliance + ", tiles=" + Arrays.toString(tiles) + ", profiles=" + Arrays.toString(profiles) + "]";
     }
 }
