@@ -14,6 +14,10 @@ import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 import com.google.inject.servlet.ServletModule;
 
+/**
+ * The servlet is configured by iiif-servlet.properties and image aliases are
+ * set in image-aliases.properties.
+ */
 public class IIIFServletModule extends ServletModule {
     private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
     private static final String IMAGE_ALIASES_PATH = "/image-aliases.properties";
@@ -53,6 +57,6 @@ public class IIIFServletModule extends ServletModule {
 
     @Provides
     protected ImageServer provideImageServer(@Named("fsi.url") String fsi_url) {
-        return new FSIServer(fsi_url);
+        return new FSIServer(fsi_url, 1000);
     }
 }

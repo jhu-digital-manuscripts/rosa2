@@ -3,6 +3,8 @@ package rosa.iiif.image.endpoint;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PrintStream;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Map;
@@ -29,8 +31,6 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 
-// TODO check error code handling
-
 /**
  * Implement the IIIF Image API version 2.0, http://iiif.io/api/image/2.0/
  */
@@ -51,31 +51,75 @@ public class IIIFServlet extends HttpServlet {
         this.image_id_aliases = image_id_aliases;
     }
 
-    private void report_error(HttpServletResponse resp, int code, String message) throws ServletException, IOException {
+    private void report_error(HttpServletResponse resp, IIIFException e) throws IOException {
+        int code = e.getHttpCode();
+
         resp.setStatus(code);
         resp.setContentType("text/plain");
 
-        resp.getWriter().print("Error: " + message);
+        String overview;
+
+        if (code == HttpURLConnection.HTTP_BAD_REQUEST) {
+            overview = "Request not understood.";
+        } else if (code == HttpURLConnection.HTTP_INTERNAL_ERROR) {
+            overview = "Internal error handling request.";
+        } else if (code == HttpURLConnection.HTTP_NOT_IMPLEMENTED) {
+            overview = "Requested functionality not available.";
+        } else {
+            overview = "Error handling request.";
+        }
+
+        String message = "";
+
+        if (e.getMessage() != null) {
+            message = e.getMessage();
+        }
+
+        PrintStream out = new PrintStream(resp.getOutputStream());
+
+        out.println(overview);
+        out.println(message);
+
+        // Stack trace only on internal errors.
+
+        if (code == HttpURLConnection.HTTP_INTERNAL_ERROR) {
+            out.println("Stack trace:");
+            e.printStackTrace(out);
+        }
+
+        out.flush();
     }
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.addHeader("Link", "<" + server.getCompliance().getUri() + ">;rel=\"profile\"");
-
-        // Hack to get raw path;
-
+    private String get_raw_path(HttpServletRequest req) throws IIIFException {
         String context = req.getContextPath();
         StringBuffer sb = req.getRequestURL();
         int i = sb.indexOf(context);
 
         if (i == -1) {
-            throw new ServletException("Cannot find " + context + " in " + sb);
+            throw new IIIFException("Cannot find " + context + " in " + sb, HttpURLConnection.HTTP_INTERNAL_ERROR);
         }
 
-        String path = sb.substring(i + context.length());
+        return sb.substring(i + context.length());
+    }
 
-        RequestType type = parser.determineRequestType(path);
+    private boolean want_json_ld_mime_type(HttpServletRequest req) {
+        String accept = req.getHeader("Accept");
+
+        if (accept != null && accept.contains(InfoFormat.JSON_LD.getMimeType())) {
+            return true;
+        }
+
+        return false;
+    }
+
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.addHeader("Link", "<" + server.getCompliance().getUri() + ">;rel=\"profile\"");
 
         try {
+            String path = get_raw_path(req);
+
+            RequestType type = parser.determineRequestType(path);
+
             if (type == RequestType.INFO) {
                 InfoRequest inforeq = parser.parseImageInfoRequest(path);
 
@@ -88,22 +132,35 @@ public class IIIFServlet extends HttpServlet {
                 ImageInfo info = server.lookupImage(inforeq.getImageId());
 
                 if (info == null) {
-                    report_error(resp, 404, "image not found: " + inforeq.getImageId());
+                    throw new IIIFException("Image not found: " + inforeq.getImageId(),
+                            HttpURLConnection.HTTP_NOT_FOUND);
                 } else {
-                    OutputStream os = resp.getOutputStream();
-                    resp.setContentType(inforeq.getFormat().getMimeType());
+                    resp.setHeader("Access-Control-Allow-Origin", "*");
 
+                    OutputStream os = resp.getOutputStream();
+
+                    InfoFormat fmt = inforeq.getFormat();
+
+                    if (want_json_ld_mime_type(req)) {
+                        fmt = InfoFormat.JSON_LD;
+                    }
+
+                    if (fmt == InfoFormat.JSON) {
+                        resp.addHeader(
+                                "Link",
+                                "<http://iiif.io/api/image/2/context.json>;rel=\"http://www.w3.org/ns/json-ld#context\";type=\"application/ld+json\"");
+                    }
+
+                    resp.setContentType(fmt.getMimeType());
+
+                    info.setImageUrl(req.getRequestURL().toString());
+                    
                     try {
-                        if (inforeq.getFormat() == InfoFormat.JSON) {
-                            serializer.writeJsonLd(info, os);
-                        } else {
-                            report_error(resp, 415, "no such info format");
-                        }
+                        serializer.writeJsonLd(info, os);
                     } catch (JSONException e) {
-                        throw new ServletException(e);
+                        throw new IIIFException("Error writing JSON-LD", e, HttpURLConnection.HTTP_INTERNAL_ERROR);
                     }
                 }
-
             } else if (type == RequestType.IMAGE) {
                 ImageRequest imgreq = parser.parseImageRequest(path);
 
@@ -116,24 +173,15 @@ public class IIIFServlet extends HttpServlet {
                 String imgurl = server.constructURL(imgreq);
 
                 if (imgurl == null) {
-                    report_error(resp, 404, "image not found: " + imgreq.getImageId());
+                    throw new IIIFException("Image not found: " + imgreq.getImageId(), HttpURLConnection.HTTP_NOT_FOUND);
                 } else {
                     forward(imgurl, resp);
                 }
             } else {
-                report_error(resp, 400, "malformed request");
+                throw new IIIFException("Malformed request: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
             }
         } catch (IIIFException e) {
-            String param = e.getParameter() == null ? "unknown" : e.getParameter();
-            int code = 400;
-
-            if (param.equals("identifier")) {
-                code = 404;
-            } else if (param.equals("format")) {
-                code = 415;
-            }
-
-            report_error(resp, code, e.getMessage());
+            report_error(resp, e);
         }
 
         resp.flushBuffer();
