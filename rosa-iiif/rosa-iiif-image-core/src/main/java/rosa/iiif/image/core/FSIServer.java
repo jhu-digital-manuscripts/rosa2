@@ -7,7 +7,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -23,6 +22,7 @@ import rosa.iiif.image.model.ImageFormat;
 import rosa.iiif.image.model.ImageInfo;
 import rosa.iiif.image.model.ImageRequest;
 import rosa.iiif.image.model.ImageServerProfile;
+import rosa.iiif.image.model.ImageServerSupports;
 import rosa.iiif.image.model.Quality;
 import rosa.iiif.image.model.Region;
 import rosa.iiif.image.model.RegionType;
@@ -31,38 +31,37 @@ import rosa.iiif.image.model.Size;
 import rosa.iiif.image.model.SizeType;
 
 /**
- * Use FSI server http api to fullfull requests.
- * 
- * Unsupported: bitonal, rotation, does not distort aspect ratio
- * 
- * Threadsafe.
- * 
- * ImageInfo lookups are cached.
+ * Use FSI server HTTP API to fulfill IIIF requests. Image info lookups are
+ * cached for performance.
  */
 public class FSIServer implements ImageServer {
-    // TODO configurable..
-    private static final int MAX_IMAGE_INFO_CACHE_SIZE = 1000;
-
     private final String baseurl;
-    private final Map<String, ImageInfo> image_info_cache;
+    private final ConcurrentHashMap<String, ImageInfo> image_info_cache;
     private final ImageServerProfile profile;
+    private final int image_info_cache_size;
 
-    public FSIServer(String baseurl) {
+    /**
+     * The base url must not end in '/' and should look something like
+     * 'http://fsiserver.library.jhu.edu/server'.
+     * 
+     * @param baseurl
+     * @param image_info_cache_size
+     *            number of image info lookup responses to cache
+     */
+    public FSIServer(String baseurl, int image_info_cache_size) {
         this.baseurl = baseurl;
-        this.image_info_cache = new ConcurrentHashMap<String, ImageInfo>();
+        this.image_info_cache = new ConcurrentHashMap<String, ImageInfo>(image_info_cache_size);
         this.profile = new ImageServerProfile();
+        this.image_info_cache_size = image_info_cache_size;
 
-        // TODO
-        profile.setFormats(ImageFormat.PNG, ImageFormat.GIF, ImageFormat.JPG, ImageFormat.TIF);
-        profile.setSupports();
+        profile.setFormats(ImageFormat.PNG);
+        profile.setSupports(ImageServerSupports.REGION_BY_PCT, ImageServerSupports.SIZE_BY_WH,
+                ImageServerSupports.PROFILE_LINK_HEADER, ImageServerSupports.JSONLD_MEDIA_TYPEType);
         profile.setQualities(Quality.COLOR, Quality.GRAY);
     }
 
-    // TODO move to switches...
-
     public String constructURL(ImageRequest req) throws IIIFException {
-        String url = baseurl + "?type=image";
-        url += "&" + param("source", req.getImageId());
+        String url = baseurl + "?type=image&" + param("source", req.getImageId());
 
         ImageInfo info = lookupImage(req.getImageId());
 
@@ -70,13 +69,13 @@ public class FSIServer implements ImageServer {
             return null;
         }
 
-        // TODO
         if (req.getFormat() == ImageFormat.PNG) {
             url += "&" + param("profile", "png");
         } else if (req.getFormat() == ImageFormat.JPG) {
             url += "&" + param("profile", "jpeg");
         } else {
-            throw new IIIFException("format unsupported", "format");
+            throw new IIIFException("Format unsupported: " + req.getFormat().getFileExtension(),
+                    HttpURLConnection.HTTP_NOT_IMPLEMENTED);
         }
 
         Region reg = req.getRegion();
@@ -96,14 +95,14 @@ public class FSIServer implements ImageServer {
             top = reg.getY() / height;
             right = left + (reg.getWidth() / width);
             bottom = top + (reg.getHeight() / height);
-
         } else if (reg.getRegionType() == RegionType.PERCENTAGE) {
             left = reg.getPercentageX() / 100.0;
             top = reg.getPercentageY() / 100.0;
             right = left + (reg.getPercentageWidth() / 100.0);
             bottom = top + (reg.getPercentageHeight() / 100.0);
         } else {
-            throw new IIIFException("region unsupported", "region");
+            throw new IIIFException("Region unsupported: " + reg.getRegionType(),
+                    HttpURLConnection.HTTP_NOT_IMPLEMENTED);
         }
 
         // FSI docs say this should be left,top,right,bottom but it actually
@@ -132,7 +131,7 @@ public class FSIServer implements ImageServer {
             width = (int) ((right - left) * info.getWidth() * (scale.getPercentage() / 100));
             height = (int) ((bottom - top) * info.getHeight() * (scale.getPercentage() / 100));
         } else {
-            throw new IIIFException("scale unsupported", "scale");
+            throw new IIIFException("Scale unsupported: " + scale.getSizeType(), HttpURLConnection.HTTP_NOT_IMPLEMENTED);
         }
 
         if (width != -1) {
@@ -146,13 +145,11 @@ public class FSIServer implements ImageServer {
         String effects = "";
 
         if (req.getQuality() == Quality.DEFAULT || req.getQuality() == Quality.COLOR) {
-        } else if (req.getQuality() == Quality.BITONAL) {
-            // TODO This can probably be supported with the right effect
-            throw new IIIFException("quality unsupported", "quality");
         } else if (req.getQuality() == Quality.GRAY) {
             effects = "desaturate(lightness),";
         } else {
-            throw new IIIFException("quality unsupported", "quality");
+            throw new IIIFException("Quality unsupported: " + req.getQuality().getKeyword(),
+                    HttpURLConnection.HTTP_NOT_IMPLEMENTED);
         }
 
         Rotation rot = req.getRotation();
@@ -162,7 +159,8 @@ public class FSIServer implements ImageServer {
         }
 
         if (rot.getAngle() != 0.0) {
-            throw new IIIFException("rotation unsupported", "rotation");
+            throw new IIIFException("Rotation angle unsupported: " + rot.getAngle(),
+                    HttpURLConnection.HTTP_NOT_IMPLEMENTED);
         }
 
         if (!effects.isEmpty()) {
@@ -180,6 +178,48 @@ public class FSIServer implements ImageServer {
         }
     }
 
+    /**
+     * Extract information from FSI XML. Set image width and height.
+     * 
+     * @param is
+     * @param info
+     * @throws IIIFException
+     */
+    protected ImageInfo parse_image_info(InputStream is) throws IIIFException {
+        ImageInfo result = new ImageInfo();
+
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+
+        try {
+            DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+
+            Document doc = docBuilder.parse(is);
+
+            NodeList widths = doc.getElementsByTagName("Width");
+            NodeList heights = doc.getElementsByTagName("Height");
+
+            if (widths.getLength() > 0) {
+                String s = widths.item(0).getAttributes().getNamedItem("value").getTextContent();
+                result.setWidth(Integer.parseInt(s));
+            }
+
+            if (heights.getLength() > 0) {
+                String s = heights.item(0).getAttributes().getNamedItem("value").getTextContent();
+                result.setHeight(Integer.parseInt(s));
+            }
+
+            return result;
+        } catch (ParserConfigurationException e) {
+            throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
+        } catch (SAXException e) {
+            throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
+        } catch (NumberFormatException e) {
+            throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
+        } catch (IOException e) {
+            throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
+        }
+    }
+
     public ImageInfo lookupImage(String image_id) throws IIIFException {
         ImageInfo info = image_info_cache.get(image_id);
 
@@ -187,20 +227,12 @@ public class FSIServer implements ImageServer {
             return info;
         }
 
-        info = new ImageInfo();
-        info.setImageId(image_id);
+        // Retrieve info from FSI
 
-        // Dispatch a call to FSI image info service and parse the XML result
-
-        String url = baseurl + "?type=info&tpl=info";
-        url += "&" + param("source", image_id);
-
-        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        String fsi_info_url = baseurl + "?type=info&tpl=info" + "&" + param("source", image_id);
 
         try {
-            DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
-
-            URLConnection con = new URL(url).openConnection();
+            URLConnection con = new URL(fsi_info_url).openConnection();
             con.connect();
 
             if (con instanceof HttpURLConnection) {
@@ -209,37 +241,22 @@ public class FSIServer implements ImageServer {
                 }
             }
 
-            InputStream is = con.getInputStream();
-            Document doc = docBuilder.parse(is);
-            is.close();
+            try (InputStream is = con.getInputStream()) {
+                info = parse_image_info(is);
 
-            NodeList widths = doc.getElementsByTagName("Width");
-            NodeList heights = doc.getElementsByTagName("Height");
-
-            if (widths.getLength() > 0) {
-                String s = widths.item(0).getAttributes().getNamedItem("value").getTextContent();
-                info.setWidth(Integer.parseInt(s));
+                info.setImageId(image_id);
+                info.setCompliance(getCompliance());
+                info.setProfiles(profile);
             }
-
-            if (heights.getLength() > 0) {
-                String s = heights.item(0).getAttributes().getNamedItem("value").getTextContent();
-                info.setHeight(Integer.parseInt(s));
-            }
-        } catch (ParserConfigurationException e) {
-            throw new IIIFException(e);
-        } catch (SAXException e) {
-            throw new IIIFException(e);
-        } catch (NumberFormatException e) {
-            throw new IIIFException(e);
         } catch (IOException e) {
-            throw new IIIFException(e);
+            throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
         }
 
-        if (image_info_cache.size() > MAX_IMAGE_INFO_CACHE_SIZE) {
+        if (image_info_cache.size() > image_info_cache_size) {
             image_info_cache.clear();
         }
 
-        image_info_cache.put(image_id, info);
+        image_info_cache.putIfAbsent(image_id, info);
 
         return info;
     }

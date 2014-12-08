@@ -19,16 +19,6 @@ import rosa.iiif.image.model.SizeType;
 public class IIIFRequestParserTest {
     private IIIFRequestParser parser = new IIIFRequestParser("/iiif");
 
-    // TODO more testing
-    // identifier=id1 region=full size=full rotation=0 quality=default  id1/full/full/0/default
-    // identifier=id1 region=0,10,100,200 size=pct:50 rotation=90 quality=default format=png   id1/0,10,100,200/pct:50/90/default.png
-    //        identifier=id1 region=pct:10,10,80,80 size=50, rotation=22.5 quality=color format=jpg   id1/pct:10,10,80,80/50,/22.5/color.jpg
-    //        identifier=bb157hs6068 region=full size=full rotation=270 quality=gray format=jpg   bb157hs6068/full/full/270/gray.jpg
-    //        identifier=ark:/12025/654xz321 region=full size=full rotation=0 quality=default ark:%2F12025%2F654xz321/full/full/0/default
-    //        identifier=urn:foo:a123,456 region=full size=full rotation=0 quality=default    urn:foo:a123,456/full/full/0/default
-    //        identifier=urn:sici:1046-8188(199501)13:1%3C69:FTTHBI%3E2.0.TX;2-4 region=full size=full rotation=0 quality=default urn:sici:1046-8188(199501)13:1%253C69:FTTHBI%253E2.0.TX;2-4/full/full/0/default
-    //        identifier=http://example.com/?54#a region=full size=full rotation=0 quality=default    http:%2F%2Fexample.com%2F%3F54%23a/full/full/0/default
-    
     @Test
     public void testDetermineType() {
         assertEquals(RequestType.INFO, parser.determineRequestType("/iiif/abcd1234/info.json"));
@@ -56,29 +46,77 @@ public class IIIFRequestParserTest {
 
     @Test
     public void testParseImageRequest() throws Exception {
-        ImageRequest img, test;
+        {
+            ImageRequest img = new ImageRequest();
+            img.setImageId("moo");
+            img.setFormat(ImageFormat.PNG);
+            img.setQuality(Quality.DEFAULT);
+            img.setRegion(new Region(RegionType.FULL));
+            img.setSize(new Size(SizeType.FULL));
+            img.setRotation(new Rotation(0));
 
-        img = new ImageRequest();
-        img.setImageId("moo");
-        img.setFormat(ImageFormat.PNG);
-        img.setQuality(Quality.DEFAULT);
-        img.setRegion(new Region(RegionType.FULL));
-        img.setSize(new Size(SizeType.FULL));
-        img.setRotation(new Rotation(0));
+            ImageRequest test = parser.parseImageRequest("/iiif/moo/full/full/0/default.png");
+            assertEquals(img, test);
+        }
 
-        test = parser.parseImageRequest("/iiif/moo/full/full/0/default.png");
-        assertEquals(img, test);
+        {
+            ImageRequest img = new ImageRequest();
+            img.setImageId("m o o");
+            img.setFormat(ImageFormat.JPG);
+            img.setQuality(Quality.COLOR);
+            img.setRotation(new Rotation(90));
+            img.setRegion(new Region(RegionType.FULL));
+            img.setSize(new Size(SizeType.FULL));
 
-        img = new ImageRequest();
-        img.setImageId("m o o");
-        img.setFormat(ImageFormat.JPG);
-        img.setQuality(Quality.COLOR);
-        img.setRotation(new Rotation(90));
-        img.setRegion(new Region(RegionType.FULL));
-        img.setSize(new Size(SizeType.FULL));
+            ImageRequest test = parser.parseImageRequest("/iiif/m%20o%20o/full/full/90/color.jpg");
+            assertEquals(img, test);
+        }
 
-        test = parser.parseImageRequest("/iiif/m%20o%20o/full/full/90/color.jpg");
-        assertEquals(img, test);
+        {
+            ImageRequest img = new ImageRequest();
+
+            img.setImageId("id1");
+            img.setFormat(ImageFormat.PNG);
+            img.setQuality(Quality.DEFAULT);
+            img.setRotation(new Rotation(90));
+
+            Region reg = new Region(RegionType.ABSOLUTE);
+            reg.setX(0);
+            reg.setY(10);
+            reg.setWidth(100);
+            reg.setHeight(200);
+            img.setRegion(reg);
+
+            Size size = new Size(SizeType.PERCENTAGE);
+            size.setPercentage(50);
+            img.setSize(size);
+
+            ImageRequest test = parser.parseImageRequest("id1/0,10,100,200/pct:50/90/default.png");
+            assertEquals(img, test);
+        }
+
+        {
+            ImageRequest img = new ImageRequest();
+
+            img.setImageId("id1");
+            img.setFormat(ImageFormat.PDF);
+            img.setQuality(Quality.COLOR);
+            img.setRotation(new Rotation(22.5));
+
+            Region reg = new Region(RegionType.PERCENTAGE);
+            reg.setPercentageX(10);
+            reg.setPercentageY(10);
+            reg.setPercentageWidth(80);
+            reg.setPercentageHeight(90);
+            img.setRegion(reg);
+
+            Size size = new Size(SizeType.EXACT_WIDTH);
+            size.setWidth(50);
+            img.setSize(size);
+
+            ImageRequest test = parser.parseImageRequest("id1/pct:10,10,80,90/50,/22.5/color.pdf");
+            assertEquals(img, test);
+        }
     }
 
     @Test
@@ -216,5 +254,18 @@ public class IIIFRequestParserTest {
                 .parseImageRequest("/iiif/f23dc590%252D8736%252D11e2%252Da400%252D0050569b3c3f/full/full/0/gray.png");
 
         assertEquals("f23dc590%2D8736%2D11e2%2Da400%2D0050569b3c3f", test.getImageId());
+
+        test = parser
+                .parseImageRequest("/iiif/urn:sici:1046-8188(199501)13:1%253C69:FTTHBI%253E2.0.TX;2-4/full/full/0/default.jpg");
+        assertEquals("urn:sici:1046-8188(199501)13:1%3C69:FTTHBI%3E2.0.TX;2-4", test.getImageId());
+
+        test = parser.parseImageRequest("/iiif/http:%2F%2Fexample.com%2F%3F54%23a/full/full/0/default.jpg");
+        assertEquals("http://example.com/?54#a", test.getImageId());
+
+        test = parser.parseImageRequest("/iiif/urn:foo:a123,456/full/full/0/default.jpg");
+        assertEquals("urn:foo:a123,456", test.getImageId());
+
+        test = parser.parseImageRequest("/iiif/ark:%2F12025%2F654xz321/full/full/0/default.jpg");
+        assertEquals("ark:/12025/654xz321", test.getImageId());
     }
 }

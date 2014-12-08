@@ -39,6 +39,8 @@ public class IIIFResponseSerializer {
         write_json_ld(info.getTiles(), out);
         write_json_ld(info.getCompliance(), info.getProfiles(), out);
         write_json_ld(info.getServices(), out);
+
+        out.endObject();
     }
 
     public void writeJsonLd(ImageInfo info, OutputStream os) throws JSONException, IOException {

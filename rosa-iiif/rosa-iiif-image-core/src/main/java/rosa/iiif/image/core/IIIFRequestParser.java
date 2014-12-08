@@ -1,5 +1,7 @@
 package rosa.iiif.image.core;
 
+import java.net.HttpURLConnection;
+
 import rosa.iiif.image.model.ImageFormat;
 import rosa.iiif.image.model.ImageRequest;
 import rosa.iiif.image.model.InfoFormat;
@@ -65,7 +67,7 @@ public class IIIFRequestParser {
     }
 
     /**
-     * Parse a IIIF Image info request.
+     * Parse a IIIF Image info request. The format is always JSON (which happens to be JSON-LD anyway).
      * 
      * @param path
      *            must not be decoded
@@ -76,7 +78,7 @@ public class IIIFRequestParser {
         String[] parts = split_path(path);
 
         if (parts.length != 2) {
-            throw new IIIFException("Malformed info request: " + path);
+            throw new IIIFException("Malformed info request: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
         }
 
         InfoRequest req = new InfoRequest();
@@ -85,7 +87,7 @@ public class IIIFRequestParser {
         if (parts[1].equals("info.json")) {
             req.setFormat(InfoFormat.JSON);
         } else {
-            throw new IIIFException("Format not available: " + parts[1], "format");
+            throw new IIIFException("Format not available: " + parts[1], HttpURLConnection.HTTP_BAD_REQUEST);
         }
 
         return req;
@@ -103,7 +105,7 @@ public class IIIFRequestParser {
         String[] parts = split_path(path);
 
         if (parts.length != 5) {
-            throw new IIIFException("Malformed image request: " + path);
+            throw new IIIFException("Malformed image request: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
         }
 
         ImageRequest req = new ImageRequest();
@@ -116,7 +118,7 @@ public class IIIFRequestParser {
         String[] last = parts[4].split("\\.");
 
         if (last.length != 2) {
-            throw new IIIFException("Malformed image request: " + path);
+            throw new IIIFException("Malformed image request: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
         }
 
         req.setQuality(parseQuality(last[0]));
@@ -132,7 +134,7 @@ public class IIIFRequestParser {
             }
         }
 
-        throw new IIIFException("Unknown image format: " + file_ext, "format");
+        throw new IIIFException("Unknown image format: " + file_ext, HttpURLConnection.HTTP_BAD_REQUEST);
     }
 
     private Size parseSize(String s) throws IIIFException {
@@ -181,7 +183,7 @@ public class IIIFRequestParser {
             String[] parts = s.split(",");
 
             if (parts.length != 2) {
-                throw new IIIFException("Malformed size", "size");
+                throw new IIIFException("Malformed size", HttpURLConnection.HTTP_BAD_REQUEST);
             }
 
             size.setWidth(Integer.parseInt(parts[0]));
@@ -189,7 +191,7 @@ public class IIIFRequestParser {
 
             return size;
         } catch (NumberFormatException e) {
-            throw new IIIFException("Malformed number: " + e.getMessage(), "size");
+            throw new IIIFException("Malformed number: " + e.getMessage(), HttpURLConnection.HTTP_BAD_REQUEST);
         }
     }
 
@@ -200,7 +202,7 @@ public class IIIFRequestParser {
             }
         }
 
-        throw new IIIFException("Unsupported quality: " + s, "quality");
+        throw new IIIFException("Unsupported quality: " + s, HttpURLConnection.HTTP_BAD_REQUEST);
     }
 
     private Rotation parseRotation(String s) throws IIIFException {
@@ -219,11 +221,11 @@ public class IIIFRequestParser {
         try {
             angle = Double.parseDouble(s);
         } catch (NumberFormatException e) {
-            throw new IIIFException("Malformed rotation: " + e.getMessage(), "rotation");
+            throw new IIIFException("Malformed rotation: " + e.getMessage(), HttpURLConnection.HTTP_BAD_REQUEST);
         }
 
         if (angle < 0.0 || angle > 360.0) {
-            throw new IIIFException("Invalid rotation: " + angle, "rotation");
+            throw new IIIFException("Invalid rotation: " + angle, HttpURLConnection.HTTP_BAD_REQUEST);
         }
 
         rot.setAngle(angle);
@@ -243,7 +245,7 @@ public class IIIFRequestParser {
             String[] parts = s.split(",");
 
             if (parts.length != 4) {
-                throw new IIIFException("Malformed region", "region");
+                throw new IIIFException("Malformed region", HttpURLConnection.HTTP_BAD_REQUEST);
             }
 
             if (s.startsWith("pct:")) {
@@ -264,7 +266,7 @@ public class IIIFRequestParser {
 
             return region;
         } catch (NumberFormatException e) {
-            throw new IIIFException("Malformed number: " + e.getMessage(), "region");
+            throw new IIIFException("Malformed number: " + e.getMessage(), HttpURLConnection.HTTP_BAD_REQUEST);
         }
     }
 }
