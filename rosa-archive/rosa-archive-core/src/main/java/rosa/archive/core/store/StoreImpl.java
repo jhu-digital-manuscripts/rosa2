@@ -545,7 +545,7 @@ public class StoreImpl implements Store {
                                            ByteStreamGroup bookStreams) throws IOException {
         List<BookImage> images = new ArrayList<>();
         for (String file : bookStreams.listByteStreamNames()) {
-            if (file.endsWith(config.getTIF())) {
+            if (!file.startsWith("\\.") && file.endsWith(config.getTIF())) {
 
                 String filepath = Paths.get(bookStreams.id()).resolve(file).toString();
                 int[] dimensions = getImageDimensionsHack(filepath);
