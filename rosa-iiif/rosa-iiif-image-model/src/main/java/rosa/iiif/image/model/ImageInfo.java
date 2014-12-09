@@ -7,7 +7,7 @@ public class ImageInfo implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String image_id;
-    private String image_url;
+    private String image_uri;
     private int width;
     private int height;
     private ImageFormat[] formats;
@@ -29,12 +29,12 @@ public class ImageInfo implements Serializable {
         this.image_id = id;
     }
 
-    public String getImageUrl() {
-        return image_url;
+    public String getImageUri() {
+        return image_uri;
     }
 
-    public void setImageUrl(String url) {
-        this.image_url = url;
+    public void setImageUri(String uri) {
+        this.image_uri = uri;
     }
     
     public int getWidth() {
@@ -124,7 +124,7 @@ public class ImageInfo implements Serializable {
         result = prime * result + Arrays.hashCode(formats);
         result = prime * result + height;
         result = prime * result + ((image_id == null) ? 0 : image_id.hashCode());
-        result = prime * result + ((image_url == null) ? 0 : image_url.hashCode());
+        result = prime * result + ((image_uri == null) ? 0 : image_uri.hashCode());
         result = prime * result + Arrays.hashCode(profiles);
         result = prime * result + Arrays.hashCode(qualities);
         result = prime * result + Arrays.hashCode(services);
@@ -154,10 +154,10 @@ public class ImageInfo implements Serializable {
                 return false;
         } else if (!image_id.equals(other.image_id))
             return false;
-        if (image_url == null) {
-            if (other.image_url != null)
+        if (image_uri == null) {
+            if (other.image_uri != null)
                 return false;
-        } else if (!image_url.equals(other.image_url))
+        } else if (!image_uri.equals(other.image_uri))
             return false;
         if (!Arrays.equals(profiles, other.profiles))
             return false;
@@ -176,7 +176,7 @@ public class ImageInfo implements Serializable {
 
     @Override
     public String toString() {
-        return "ImageInfo [image_id=" + image_id + ", image_url=" + image_url + ", width=" + width + ", height="
+        return "ImageInfo [image_id=" + image_id + ", image_url=" + image_uri + ", width=" + width + ", height="
                 + height + ", formats=" + Arrays.toString(formats) + ", qualities=" + Arrays.toString(qualities)
                 + ", sizes=" + Arrays.toString(sizes) + ", services=" + Arrays.toString(services) + ", compliance="
                 + compliance + ", tiles=" + Arrays.toString(tiles) + ", profiles=" + Arrays.toString(profiles) + "]";
