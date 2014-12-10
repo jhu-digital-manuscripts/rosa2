@@ -22,7 +22,7 @@ public class IIIFRequestParserTest {
     @Test
     public void testDetermineType() {
         assertEquals(RequestType.INFO, parser.determineRequestType("/iiif/abcd1234/info.json"));
-        assertEquals(RequestType.URI, parser.determineRequestType("/iiif/abcd1234"));
+        assertEquals(RequestType.IMAGE, parser.determineRequestType("/iiif/abcd1234"));
         assertEquals(RequestType.OPERATION, parser.determineRequestType("/iiif/abcd1234/full/full/0/native.jpg"));
 
         // No exceptions on garbage data

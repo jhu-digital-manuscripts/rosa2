@@ -179,7 +179,7 @@ public class IIIFServlet extends HttpServlet {
                 } else {
                     forward(imgurl, resp);
                 }
-            } else if (type == RequestType.URI) {
+            } else if (type == RequestType.IMAGE) {
                 // Redirect to info request
                 resp.sendRedirect("info.json");
             } else {

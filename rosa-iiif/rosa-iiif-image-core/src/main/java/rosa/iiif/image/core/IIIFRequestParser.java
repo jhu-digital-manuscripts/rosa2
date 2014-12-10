@@ -58,7 +58,7 @@ public class IIIFRequestParser {
         if (path.endsWith("/info.json")) {
             return RequestType.INFO;
         } else if (path.indexOf('/') == -1) {
-            return RequestType.URI;
+            return RequestType.IMAGE;
         } else {
             return RequestType.OPERATION;
         }
