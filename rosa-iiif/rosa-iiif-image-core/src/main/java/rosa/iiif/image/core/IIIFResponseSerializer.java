@@ -29,7 +29,7 @@ public class IIIFResponseSerializer {
         out.object();
 
         out.key("@context").value("http://iiif.io/api/image/2/context.json");
-        out.key("@id").value(info.getImageUrl());
+        out.key("@id").value(info.getImageUri());
 
         out.key("protocol").value("http://iiif.io/api/image");
         out.key("width").value(info.getWidth());

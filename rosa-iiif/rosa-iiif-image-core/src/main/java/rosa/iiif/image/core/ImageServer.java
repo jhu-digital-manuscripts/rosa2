@@ -8,6 +8,8 @@ import rosa.iiif.image.model.ImageServerProfile;
 /**
  * Provides the ability to make IIIF requests to an image server that exposes a
  * HTTP API.
+ * 
+ * TODO Instead of constructing a URL, this interface should just perform the operation.
  */
 public interface ImageServer {
     /**

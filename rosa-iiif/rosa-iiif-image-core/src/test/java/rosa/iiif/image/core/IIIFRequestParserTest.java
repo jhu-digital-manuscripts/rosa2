@@ -22,7 +22,8 @@ public class IIIFRequestParserTest {
     @Test
     public void testDetermineType() {
         assertEquals(RequestType.INFO, parser.determineRequestType("/iiif/abcd1234/info.json"));
-        assertEquals(RequestType.IMAGE, parser.determineRequestType("/iiif/abcd1234/full/full/0/native.jpg"));
+        assertEquals(RequestType.URI, parser.determineRequestType("/iiif/abcd1234"));
+        assertEquals(RequestType.OPERATION, parser.determineRequestType("/iiif/abcd1234/full/full/0/native.jpg"));
 
         // No exceptions on garbage data
         parser.determineRequestType("\\aA'");
@@ -117,6 +118,11 @@ public class IIIFRequestParserTest {
             ImageRequest test = parser.parseImageRequest("id1/pct:10,10,80,90/50,/22.5/color.pdf");
             assertEquals(img, test);
         }
+    }
+
+    @Test(expected = IIIFException.class)
+    public void testInvalidRequest() throws IIIFException {
+        parser.parseImageRequest("[frob]/full/full/0/default.jpg");
     }
 
     @Test
