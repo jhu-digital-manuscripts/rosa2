@@ -146,22 +146,24 @@ public class IIIFServlet extends HttpServlet {
                     }
 
                     if (fmt == InfoFormat.JSON) {
-                        resp.addHeader(
-                                "Link",
+                        resp.addHeader("Link",
                                 "<http://iiif.io/api/image/2/context.json>;rel=\"http://www.w3.org/ns/json-ld#context\";type=\"application/ld+json\"");
                     }
 
                     resp.setContentType(fmt.getMimeType());
 
-                    info.setImageUrl(req.getRequestURL().toString());
-                    
+                    String url = req.getRequestURL().toString();
+
+                    // Must set image uri to request url without /info.json
+                    info.setImageUri(url.substring(0, url.length() - "/info.json".length()));
+
                     try {
                         serializer.writeJsonLd(info, os);
                     } catch (JSONException e) {
                         throw new IIIFException("Error writing JSON-LD", e, HttpURLConnection.HTTP_INTERNAL_ERROR);
                     }
                 }
-            } else if (type == RequestType.IMAGE) {
+            } else if (type == RequestType.OPERATION) {
                 ImageRequest imgreq = parser.parseImageRequest(path);
 
                 String alias = image_id_aliases.get(imgreq.getImageId());
@@ -177,6 +179,9 @@ public class IIIFServlet extends HttpServlet {
                 } else {
                     forward(imgurl, resp);
                 }
+            } else if (type == RequestType.IMAGE) {
+                // Redirect to info request
+                resp.sendRedirect("info.json");
             } else {
                 throw new IIIFException("Malformed request: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
             }
@@ -195,6 +200,7 @@ public class IIIFServlet extends HttpServlet {
         }
     }
 
+    // TODO optionally do redirect?
     private void forward(String url, HttpServletResponse resp) throws IOException {
         URLConnection con = new URL(url).openConnection();
         con.connect();

@@ -33,22 +33,7 @@ public class IIIFRequestParser {
         this.path_prefix = path_prefix;
     }
 
-    /**
-     * Determine type of a IIIF request.
-     * 
-     * @param path
-     *            must not be decoded
-     * @return type of the request.
-     */
-    public RequestType determineRequestType(String path) {
-        if (path.endsWith("/info.json")) {
-            return RequestType.INFO;
-        } else {
-            return RequestType.IMAGE;
-        }
-    }
-
-    private String[] split_path(String path) {
+    private String get_relative_path(String path) {
         if (path_prefix != null && path.startsWith(path_prefix)) {
             path = path.substring(path_prefix.length());
         }
@@ -57,7 +42,30 @@ public class IIIFRequestParser {
             path = path.substring(1);
         }
 
-        String[] parts = path.split("/");
+        return path;
+    }
+
+    /**
+     * Determine type of a IIIF request.
+     * 
+     * @param path
+     *            must not be decoded
+     * @return type of the request.
+     */
+    public RequestType determineRequestType(String path) {
+        path = get_relative_path(path);
+
+        if (path.endsWith("/info.json")) {
+            return RequestType.INFO;
+        } else if (path.indexOf('/') == -1) {
+            return RequestType.IMAGE;
+        } else {
+            return RequestType.OPERATION;
+        }
+    }
+
+    private String[] split_path(String path) {
+        String[] parts = get_relative_path(path).split("/");
 
         for (int i = 0; i < parts.length; i++) {
             parts[i] = UriUtil.decodePathSegment(parts[i]);
@@ -67,7 +75,8 @@ public class IIIFRequestParser {
     }
 
     /**
-     * Parse a IIIF Image info request. The format is always JSON (which happens to be JSON-LD anyway).
+     * Parse a IIIF Image info request. The format is always JSON (which happens
+     * to be JSON-LD anyway).
      * 
      * @param path
      *            must not be decoded
@@ -75,6 +84,10 @@ public class IIIFRequestParser {
      * @throws IIIFException
      */
     public InfoRequest parseImageInfoRequest(String path) throws IIIFException {
+        if (!UriUtil.isValidEncodedPath(path)) {
+            throw new IIIFException("Invalid request path: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
+        }
+
         String[] parts = split_path(path);
 
         if (parts.length != 2) {
@@ -102,6 +115,10 @@ public class IIIFRequestParser {
      * @throws IIIFException
      */
     public ImageRequest parseImageRequest(String path) throws IIIFException {
+        if (!UriUtil.isValidEncodedPath(path)) {
+            throw new IIIFException("Invalid request path: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
+        }
+
         String[] parts = split_path(path);
 
         if (parts.length != 5) {

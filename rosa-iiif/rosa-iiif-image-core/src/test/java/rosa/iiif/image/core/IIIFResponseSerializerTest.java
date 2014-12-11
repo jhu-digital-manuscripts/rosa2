@@ -20,7 +20,7 @@ public class IIIFResponseSerializerTest {
         ImageInfo info = new ImageInfo();
 
         info.setImageId("testid");
-        info.setImageUrl("http://example.com/iiif/testid/blah");
+        info.setImageUri("http://example.com/iiif/testid/blah");
         info.setCompliance(ComplianceLevel.LEVEL_0);
         info.setFormats(ImageFormat.PNG);
         info.setWidth(1000);
@@ -38,7 +38,7 @@ public class IIIFResponseSerializerTest {
     private void check(ImageInfo info, JSONObject obj) {
         assertEquals("http://iiif.io/api/image/2/context.json", obj.getString("@context"));
         assertEquals("http://iiif.io/api/image", obj.getString("protocol"));
-        assertEquals(info.getImageUrl(), obj.getString("@id"));
+        assertEquals(info.getImageUri(), obj.getString("@id"));
         assertEquals(info.getWidth(), obj.getInt("width"));
         assertEquals(info.getHeight(), obj.getInt("height"));
         assertEquals(info.getCompliance().getUri(), obj.getJSONArray("profile").getString(0));

@@ -55,8 +55,9 @@ public class FSIServer implements ImageServer {
         this.image_info_cache_size = image_info_cache_size;
 
         profile.setFormats(ImageFormat.PNG);
-        profile.setSupports(ImageServerSupports.REGION_BY_PCT, ImageServerSupports.SIZE_BY_WH,
-                ImageServerSupports.PROFILE_LINK_HEADER, ImageServerSupports.JSONLD_MEDIA_TYPEType);
+        profile.setSupports(ImageServerSupports.REGION_BY_PCT, ImageServerSupports.SIZE_BY_FORCED_WH,
+                ImageServerSupports.SIZE_BY_WH, ImageServerSupports.PROFILE_LINK_HEADER,
+                ImageServerSupports.JSONLD_MEDIA_TYPEType);
         profile.setQualities(Quality.COLOR, Quality.GRAY);
     }
 
@@ -115,8 +116,27 @@ public class FSIServer implements ImageServer {
         int width = -1, height = -1;
 
         if (scale.getSizeType() == SizeType.BEST_FIT) {
-            width = scale.getWidth();
-            height = scale.getHeight();
+            if (info.getWidth() > info.getHeight()) {
+                width = scale.getWidth();
+                height = (scale.getHeight() * info.getHeight()) / info.getWidth();
+
+                if (height > scale.getHeight()) {
+                    int diff = height - scale.getHeight();
+
+                    height = scale.getHeight();
+                    width -= (info.getWidth() * diff / info.getHeight());
+                }
+            } else {
+                height = scale.getHeight();
+                width = (scale.getHeight() * info.getWidth()) / info.getHeight();
+
+                if (width > scale.getWidth()) {
+                    int diff = width - scale.getWidth();
+
+                    width = scale.getWidth();
+                    height -= (info.getHeight() * diff / info.getWidth());
+                }
+            }
         } else if (scale.getSizeType() == SizeType.EXACT) {
             width = scale.getWidth();
             height = scale.getHeight();
