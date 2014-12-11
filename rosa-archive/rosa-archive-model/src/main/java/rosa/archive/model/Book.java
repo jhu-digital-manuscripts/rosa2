@@ -1,6 +1,8 @@
 package rosa.archive.model;
 
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.meta.BiblioData;
+import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -39,6 +41,7 @@ public class Book implements HasId, Serializable {
     private IllustrationTagging illustrationTagging;
     private NarrativeTagging manualNarrativeTagging;
     private NarrativeTagging automaticNarrativeTagging;
+    private MultilangMetadata multilangMetadata;
 
     private Map<String, Permission> permissions;
     private Map<String, BookMetadata> metadataMap;
@@ -89,6 +92,33 @@ public class Book implements HasId, Serializable {
     }
 
     public BookMetadata getBookMetadata(String language) {
+        if (multilangMetadata != null) {
+            BookMetadata metadata = new BookMetadata();
+
+            metadata.setId(multilangMetadata.getId());
+            metadata.setYearStart(multilangMetadata.getYearStart());
+            metadata.setYearEnd(multilangMetadata.getYearEnd());
+            metadata.setDimensionUnits(multilangMetadata.getDimensionUnits());
+            metadata.setDimensions(multilangMetadata.getDimensionsString());
+            metadata.setWidth(multilangMetadata.getWidth());
+            metadata.setHeight(multilangMetadata.getHeight());
+            metadata.setNumberOfPages(multilangMetadata.getNumberOfPages());
+            metadata.setNumberOfIllustrations(multilangMetadata.getNumberOfIllustrations());
+            metadata.setTexts(multilangMetadata.getBookTexts().toArray(new BookText[0]));
+
+            BiblioData forLang = multilangMetadata.getBiblioDataMap().get(language);
+            metadata.setTitle(forLang.getTitle());
+            metadata.setDate(forLang.getDateLabel());
+            metadata.setCurrentLocation(forLang.getCurrentLocation());
+            metadata.setRepository(forLang.getRepository());
+            metadata.setShelfmark(forLang.getShelfmark());
+            metadata.setOrigin(forLang.getOrigin());
+            metadata.setType(forLang.getType());
+            metadata.setCommonName(forLang.getCommonName());
+            metadata.setMaterial(forLang.getMaterial());
+
+            return metadata;
+        }
         return metadataMap.get(language);
     }
 
@@ -196,6 +226,14 @@ public class Book implements HasId, Serializable {
         this.annotatedPages = annotatedPages;
     }
 
+    public MultilangMetadata getMultilangMetadata() {
+        return multilangMetadata;
+    }
+
+    public void setMultilangMetadata(MultilangMetadata multilangMetadata) {
+        this.multilangMetadata = multilangMetadata;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -223,6 +261,8 @@ public class Book implements HasId, Serializable {
         if (manualNarrativeTagging != null ? !manualNarrativeTagging.equals(book.manualNarrativeTagging) : book.manualNarrativeTagging != null)
             return false;
         if (metadataMap != null ? !metadataMap.equals(book.metadataMap) : book.metadataMap != null) return false;
+        if (multilangMetadata != null ? !multilangMetadata.equals(book.multilangMetadata) : book.multilangMetadata != null)
+            return false;
         if (permissions != null ? !permissions.equals(book.permissions) : book.permissions != null) return false;
         if (transcription != null ? !transcription.equals(book.transcription) : book.transcription != null)
             return false;
@@ -242,6 +282,7 @@ public class Book implements HasId, Serializable {
         result = 31 * result + (illustrationTagging != null ? illustrationTagging.hashCode() : 0);
         result = 31 * result + (manualNarrativeTagging != null ? manualNarrativeTagging.hashCode() : 0);
         result = 31 * result + (automaticNarrativeTagging != null ? automaticNarrativeTagging.hashCode() : 0);
+        result = 31 * result + (multilangMetadata != null ? multilangMetadata.hashCode() : 0);
         result = 31 * result + (permissions != null ? permissions.hashCode() : 0);
         result = 31 * result + (metadataMap != null ? metadataMap.hashCode() : 0);
         result = 31 * result + (descriptionMap != null ? descriptionMap.hashCode() : 0);
@@ -263,6 +304,7 @@ public class Book implements HasId, Serializable {
                 ", illustrationTagging=" + illustrationTagging +
                 ", manualNarrativeTagging=" + manualNarrativeTagging +
                 ", automaticNarrativeTagging=" + automaticNarrativeTagging +
+                ", multilangMetadata=" + multilangMetadata +
                 ", permissions=" + permissions +
                 ", metadataMap=" + metadataMap +
                 ", descriptionMap=" + descriptionMap +

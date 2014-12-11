@@ -24,6 +24,7 @@ import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.meta.MultilangMetadata;
 import rosa.archive.model.redtag.Item;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
@@ -102,6 +103,7 @@ public class BookChecker extends AbstractArchiveChecker {
         check(book.getAutomaticNarrativeTagging(), book, bsg, errors, warnings);
         //   annotated pages
         check(book.getAnnotatedPages(), book, bsg, errors, warnings);
+        check(book.getMultilangMetadata(), book, bsg, errors, warnings);
 
         try {
             // Check character_names and illustration_titles
@@ -962,6 +964,22 @@ public class BookChecker extends AbstractArchiveChecker {
                         + "] not found in narrative_sections.");
             }
         }
+    }
+
+    private void check(MultilangMetadata mm, Book parent, ByteStreamGroup bsg, List<String> errors,
+                       List<String> warnings) {
+        if (mm == null) {
+            return;
+        }
+
+        if (!isInArchive(mm.getId(), parent.getContent())) {
+            errors.add("Multi-language metadata not found in archive. [" + parent.getId()
+                    + ":" + mm.getId() + "]");
+        }
+
+        // TODO
+
+        attemptToRead(mm, bsg, errors, warnings);
     }
 
     public final boolean containsDigit(String s){
