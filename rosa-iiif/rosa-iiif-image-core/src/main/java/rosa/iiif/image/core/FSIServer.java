@@ -30,6 +30,8 @@ import rosa.iiif.image.model.Rotation;
 import rosa.iiif.image.model.Size;
 import rosa.iiif.image.model.SizeType;
 
+// TODO how to handle fsi result dimension limit
+
 /**
  * Use FSI server HTTP API to fulfill IIIF requests. Image info lookups are
  * cached for performance.
@@ -147,6 +149,8 @@ public class FSIServer implements ImageServer {
             width = scale.getWidth();
             height = -1;
         } else if (scale.getSizeType() == SizeType.FULL) {
+            width = info.getWidth();
+            height = info.getHeight();
         } else if (scale.getSizeType() == SizeType.PERCENTAGE) {
             width = (int) ((right - left) * info.getWidth() * (scale.getPercentage() / 100));
             height = (int) ((bottom - top) * info.getHeight() * (scale.getPercentage() / 100));
@@ -186,7 +190,7 @@ public class FSIServer implements ImageServer {
         if (!effects.isEmpty()) {
             url += "&" + param("effects", effects);
         }
-
+        
         return url;
     }
 
