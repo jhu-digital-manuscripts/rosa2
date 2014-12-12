@@ -2,15 +2,19 @@ package rosa.archive.model;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.meta.BiblioData;
 import rosa.archive.model.meta.MultilangMetadata;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 /**
  * Nothing but getters/setters currently. Not much to test...

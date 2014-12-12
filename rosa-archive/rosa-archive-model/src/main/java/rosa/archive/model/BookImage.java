@@ -32,6 +32,17 @@ public class BookImage implements Serializable {
         this.id = id;
     }
 
+    public String getPage() {
+        String[] parts = id.split("\\.");
+        StringBuilder sb = new StringBuilder();
+        // Strip off book ID and file extension to get page name
+        for (int i = 1; i < (parts.length - 1); i++) {
+            sb.append(parts[i]);
+        }
+
+        return sb.toString();
+    }
+
     public int getWidth() {
         return width;
     }

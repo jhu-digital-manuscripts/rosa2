@@ -1,5 +1,7 @@
 package rosa.iiif.presentation.model;
 
+import rosa.iiif.presentation.model.util.MultiLangValue;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,17 +27,17 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
      * Type of resource: Manifest, canvas, image content, etc
      */
     protected String type;
-    protected String viewingHint;
+    protected ViewingHint viewingHint;
 
     // Descriptive Properties
     /**
      * Human readable label, name, or title.
      */
-    protected String label;
+    protected MultiLangValue label;
     /**
      * Long-form prose description, can include some basic HTML formatting.
      */
-    protected String description;
+    protected MultiLangValue description;
     /**
      * URL that should follow the IIIF Image API syntax.
      */
@@ -50,7 +52,7 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
     /**
      * Text to be displayed describing rights or license of a resource.
      */
-    protected String attribution;
+    protected MultiLangValue attribution;
     /**
      * URL to license or rights statement. If text is intended to be displayed,
      * use {@link PresentationBase#attribution}
@@ -91,7 +93,7 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
      *
      * This should not be used for discovery purposes.
      */
-    protected Map<String, String> metadata;
+    protected Map<String, MultiLangValue> metadata;
 
     protected PresentationBase() {
         metadata = new HashMap<>();
@@ -121,28 +123,52 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         this.type = type;
     }
 
-    public String getViewingHint() {
+    public ViewingHint getViewingHint() {
         return viewingHint;
     }
 
-    public void setViewingHint(String viewingHint) {
+    public void setViewingHint(ViewingHint viewingHint) {
         this.viewingHint = viewingHint;
     }
 
-    public String getLabel() {
+    public MultiLangValue getLabel() {
         return label;
     }
 
-    public void setLabel(String label) {
+    public String getLabel(String language) {
+        return getLabel() != null ? getLabel().getValue(language) : "";
+    }
+
+    public void setLabel(MultiLangValue label) {
         this.label = label;
     }
 
-    public String getDescription() {
+    public void addLabel(String label, String language) {
+        if (getLabel() == null) {
+            setLabel(new MultiLangValue(label, language));
+        } else {
+            getLabel().addValue(label, language);
+        }
+    }
+
+    public MultiLangValue getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
+    public String getDescription(String language) {
+        return getDescription() != null ? getDescription().getValue(language) : "";
+    }
+
+    public void setDescription(MultiLangValue description) {
         this.description = description;
+    }
+
+    public void addDescription(String description, String language) {
+        if (getDescription() == null) {
+            setDescription(new MultiLangValue(description, language));
+        } else {
+            getDescription().addValue(description, language);
+        }
     }
 
     public String getThumbnailUrl() {
@@ -161,12 +187,24 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         this.thumbnailService = thumbnailService;
     }
 
-    public String getAttribution() {
+    public MultiLangValue getAttribution() {
         return attribution;
     }
 
-    public void setAttribution(String attribution) {
+    public String getAttribution(String language) {
+        return getAttribution() != null ? getAttribution().getValue(language) : "";
+    }
+
+    public void setAttribution(MultiLangValue attribution) {
         this.attribution = attribution;
+    }
+
+    public void addAttribution(String attribution, String language) {
+        if (getAttribution() == null) {
+            setAttribution(new MultiLangValue(attribution, language));
+        } else {
+            getAttribution().addValue(attribution, language);
+        }
     }
 
     public String getLicense() {
@@ -225,11 +263,11 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         this.within = within;
     }
 
-    public Map<String, String> getMetadata() {
+    public Map<String, MultiLangValue> getMetadata() {
         return metadata;
     }
 
-    public void setMetadata(Map<String, String> metadata) {
+    public void setMetadata(Map<String, MultiLangValue> metadata) {
         this.metadata = metadata;
     }
 

@@ -24,23 +24,30 @@ public class AnnotationSource implements Serializable {
 
     public AnnotationSource() {}
 
-    public AnnotationSource(String type, String format, String embeddedText, String embeddedLanguage) {
-        this.type = type;
-        this.format = format;
+    /**
+     * Suggested for text based annotations.
+     *
+     * @param uri URI ID
+     * @param type rdf type
+     * @param format MIME type
+     * @param embeddedText text content
+     * @param embeddedLanguage content language
+     */
+    public AnnotationSource(String uri, String type, String format, String embeddedText, String embeddedLanguage) {
+        this(uri, type, format);
         this.embeddedText = embeddedText;
         this.embeddedLanguage = embeddedLanguage;
     }
 
-    public AnnotationSource(String uri, String type, String format, Service service) {
-        this(uri, type, format, service, null);
-    }
-
-    public AnnotationSource(String uri, String type, String format, Service service, Selector selector) {
+    /**
+     * @param uri URI ID
+     * @param type rdf type
+     * @param format MIME type
+     */
+    public AnnotationSource(String uri, String type, String format) {
         this.uri = uri;
         this.type = type;
         this.format = format;
-        this.service = service;
-        this.selector = selector;
     }
 
     public String getUri() {
@@ -101,6 +108,11 @@ public class AnnotationSource implements Serializable {
 
     public void setEmbeddedLanguage(String embeddedLanguage) {
         this.embeddedLanguage = embeddedLanguage;
+    }
+
+    public boolean isImage() {
+        // TODO
+        return type.equals("dcterms:Image");
     }
 
     public boolean isEmbeddedText() {

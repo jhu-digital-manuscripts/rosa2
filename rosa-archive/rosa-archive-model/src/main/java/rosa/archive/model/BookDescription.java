@@ -1,7 +1,16 @@
 package rosa.archive.model;
 
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.ByteArrayOutputStream;
+import java.io.OutputStream;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -33,8 +42,44 @@ public final class BookDescription implements HasId, Serializable {
         return notes;
     }
 
+    public String getNote(String id) {
+        return asString(notes.get(id));
+    }
+
+    public Map<String, String> getNoteStrings() {
+        Map<String, String> strs = new HashMap<>();
+        for (String key : notes.keySet()) {
+            strs.put(key, getNote(key));
+        }
+        return strs;
+    }
+
     public void setNotes(Map<String, Element> notes) {
         this.notes = notes;
+    }
+
+    private String asString(Element el) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        try {
+            write(el, baos);
+            return baos.toString();
+        } catch (TransformerException e) {
+            return "";
+        }
+    }
+
+    /**
+     * @param doc document
+     * @param out output stream
+     */
+    private void write(Node doc, OutputStream out) throws TransformerException {
+        Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+
+        transformer.transform(
+                new DOMSource(doc),
+                new StreamResult(out)
+        );
     }
 
     @Override

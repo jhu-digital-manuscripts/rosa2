@@ -42,6 +42,7 @@ public class Sequence extends PresentationBase implements Iterable<Canvas>, Seri
     public Sequence() {
         super();
         canvases = new ArrayList<>();
+        startCanvas = -1;
     }
 
     public ViewingDirection getViewingDirection() {

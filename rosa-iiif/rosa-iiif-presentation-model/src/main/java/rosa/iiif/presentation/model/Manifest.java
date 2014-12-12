@@ -8,12 +8,14 @@ public class Manifest extends PresentationBase implements Serializable {
 
     private ViewingDirection viewingDirection;
     private List<Sequence> sequences;
+    private int defaultSequence;
 
     public Manifest() {}
 
-    public Manifest(ViewingDirection viewingDirection, List<Sequence> sequences) {
+    public Manifest(ViewingDirection viewingDirection, List<Sequence> sequences, int defaultSequence) {
         this.viewingDirection = viewingDirection;
         this.sequences = sequences;
+        this.defaultSequence = defaultSequence;
     }
 
     public ViewingDirection getViewingDirection() {
@@ -32,6 +34,14 @@ public class Manifest extends PresentationBase implements Serializable {
         this.sequences = sequences;
     }
 
+    public int getDefaultSequence() {
+        return defaultSequence;
+    }
+
+    public void setDefaultSequence(int defaultSequence) {
+        this.defaultSequence = defaultSequence;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -40,6 +50,7 @@ public class Manifest extends PresentationBase implements Serializable {
 
         Manifest manifest = (Manifest) o;
 
+        if (defaultSequence != manifest.defaultSequence) return false;
         if (sequences != null ? !sequences.equals(manifest.sequences) : manifest.sequences != null) return false;
         if (viewingDirection != manifest.viewingDirection) return false;
 
@@ -51,6 +62,7 @@ public class Manifest extends PresentationBase implements Serializable {
         int result = super.hashCode();
         result = 31 * result + (viewingDirection != null ? viewingDirection.hashCode() : 0);
         result = 31 * result + (sequences != null ? sequences.hashCode() : 0);
+        result = 31 * result + defaultSequence;
         return result;
     }
 
@@ -60,6 +72,7 @@ public class Manifest extends PresentationBase implements Serializable {
                 super.toString() +
                 "viewingDirection=" + viewingDirection +
                 ", sequences=" + sequences +
+                ", defaultSequence=" + defaultSequence +
                 '}';
     }
 }
