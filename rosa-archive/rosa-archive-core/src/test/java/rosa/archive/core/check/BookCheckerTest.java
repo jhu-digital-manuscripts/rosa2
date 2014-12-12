@@ -202,7 +202,6 @@ public class BookCheckerTest extends AbstractFileSystemTest {
             page.getUnderlines().add(u1);
 
             Symbol s1 = new Symbol();
-            s1.setPlace("left margin");
             s1.setName("SymbolName");
             s1.setReferringText("This is some symbol text.");
             page.getSymbols().add(s1);

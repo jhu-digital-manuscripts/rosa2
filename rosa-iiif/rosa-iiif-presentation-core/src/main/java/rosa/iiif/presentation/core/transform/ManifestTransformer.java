@@ -5,8 +5,12 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.Mark;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
+import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
@@ -62,9 +66,10 @@ public class ManifestTransformer {
         Manifest manifest = new Manifest();
 
         manifest.setId(book.getId());
+        manifest.setType(IIIFNames.SC_MANIFEST);
         manifest.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
         manifest.setSequences(
-                Arrays.asList(buildSequence(book, book.getImages()))
+                Arrays.asList(buildSequence(book, book.getImages(), collection.getAllSupportedLanguages()))
         );
         manifest.setDefaultSequence(0);
 
@@ -139,13 +144,19 @@ public class ManifestTransformer {
      * @param imageList image list
      * @return sequence
      */
-    private Sequence buildSequence(Book book, ImageList imageList) {
+    private Sequence buildSequence(Book book, ImageList imageList, String[] langs) {
         if (imageList == null) {
             return null;
         }
 
         Sequence sequence = new Sequence();
         sequence.setId(imageList.getId());
+        sequence.setType(IIIFNames.SC_SEQUENCE);
+
+        for (String lang : langs) {
+            sequence.addLabel("Default", lang);
+        }
+
 
         List<Canvas> canvases = new ArrayList<>();
         int count = 0;
@@ -180,21 +191,23 @@ public class ManifestTransformer {
         }
         Canvas canvas = new Canvas();
         canvas.setId(image.getId());
+        canvas.setType(IIIFNames.SC_CANVAS);
 
         canvas.setWidth(image.getWidth());
         canvas.setHeight(image.getHeight());
-        canvas.setImages(Arrays.asList(imageResource(image)));
+        canvas.setImages(Arrays.asList(imageResource(image, canvas.getId())));
 
         // Set default target of this image to this Canvas
-        Annotation defaultImage = imageResource(image);
-        defaultImage.getDefaultTarget().setUri(canvas.getId());
+        canvas.setImages(Arrays.asList(imageResource(image, canvas.getId())));
 
-        book.getAnnotationPage(image.getPage());
+        List<Annotation> aorAnnotations = annotationsFromAoR(book,
+                book.getAnnotationPage(image.getPage()), canvas.getId());
+        canvas.setOtherContent(aorAnnotations);
 
         return canvas;
     }
 
-    private Annotation imageResource(BookImage image) {
+    private Annotation imageResource(BookImage image, String canvasId) {
         if (image == null) {
             return null;
         }
@@ -204,8 +217,8 @@ public class ManifestTransformer {
         ann.setId(image.getId());
         ann.setWidth(image.getWidth());
         ann.setHeight(image.getHeight());
-        ann.setMotivation("sc:painting");
-        ann.setType("oa:Annotation");
+        ann.setMotivation(IIIFNames.SC_PAINTING);
+        ann.setType(IIIFNames.OA_ANNOTATION);
 
         IIIFImageService imageService = new IIIFImageService();
         AnnotationSource source = new AnnotationSource(
@@ -214,12 +227,60 @@ public class ManifestTransformer {
         source.setService(imageService);
 
         // Can set target when building Canvas (to the Canvas URI)?
-        AnnotationTarget target = new AnnotationTarget("URI");
+        AnnotationTarget target = new AnnotationTarget(canvasId);
 
         ann.setDefaultSource(source);
         ann.setDefaultTarget(target);
 
         return ann;
+    }
+
+    private List<Annotation> annotationsFromAoR(Book book, AnnotatedPage aPage, String canvasId) {
+        if (aPage == null) {
+            return null;
+        }
+
+        List<Annotation> annotations = new ArrayList<>();
+
+        for (Marginalia marg : aPage.getMarginalia()) {
+            annotations.addAll(adaptMarginalia(marg, canvasId));
+        }
+        for (rosa.archive.model.aor.Annotation mark : aPage.getMarks()) {
+            annotations.add(adaptAnnotation(mark, canvasId));
+        }
+        for (rosa.archive.model.aor.Annotation symbol : aPage.getSymbols()) {
+            annotations.add(adaptAnnotation(symbol, canvasId));
+        }
+        for (rosa.archive.model.aor.Annotation underline : aPage.getUnderlines()) {
+            annotations.add(adaptAnnotation(underline, canvasId));
+        }
+        for (rosa.archive.model.aor.Annotation numeral : aPage.getNumerals()) {
+            annotations.add(adaptAnnotation(numeral, canvasId));
+        }
+        for (rosa.archive.model.aor.Annotation errata : aPage.getErrata()) {
+            annotations.add(adaptAnnotation(errata, canvasId));
+        }
+
+        return annotations;
+    }
+
+    private Annotation adaptAnnotation(rosa.archive.model.aor.Annotation anno, String canvasId) {
+        Annotation a = new Annotation();
+
+        a.setId("ID");
+        a.setType(IIIFNames.OA_ANNOTATION);
+        a.setMotivation(IIIFNames.SC_PAINTING);
+        a.setDefaultSource(new AnnotationSource(
+                "URI", IIIFNames.DC_TEXT, "text/html", anno.toPrettyString(), "en"
+        ));
+        // TODO make specific resource!
+        a.setDefaultTarget(new AnnotationTarget(canvasId));
+
+        return a;
+    }
+
+    private List<Annotation> adaptMarginalia(Marginalia marg, String canvasId) {
+        return null;
     }
 
 }

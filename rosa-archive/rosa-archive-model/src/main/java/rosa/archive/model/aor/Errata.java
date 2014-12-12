@@ -11,8 +11,13 @@ public class Errata extends Annotation implements Serializable {
 
     public Errata() {}
 
+    @Override
+    public String toPrettyString() {
+        return null;
+    }
+
     public Errata(String copyText, String amendedText) {
-        super(copyText);
+        super(copyText, Location.INTEXT);
         this.amendedText = amendedText;
     }
 

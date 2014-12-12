@@ -9,6 +9,7 @@ import org.xml.sax.SAXException;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Errata;
+import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.Mark;
@@ -117,14 +118,17 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                             annotation.getAttribute("text"),
                             annotation.getAttribute("method"),
                             annotation.getAttribute("type"),
-                            annotation.getAttribute("language")
+                            annotation.getAttribute("language"),
+                            Location.INTEXT
                     ));
                     break;
                 case "symbol":
                     page.getSymbols().add(new Symbol(
                             annotation.getAttribute("text"),
                             annotation.getAttribute("name"),
-                            annotation.getAttribute("place")
+                            Location.valueOf(
+                                    annotation.getAttribute("place").toUpperCase()
+                            )
                     ));
                     break;
                 case "mark":
@@ -132,14 +136,19 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                             annotation.getAttribute("text"),
                             annotation.getAttribute("name"),
                             annotation.getAttribute("method"),
-                            annotation.getAttribute("place"),
-                            annotation.getAttribute("language")
+                            annotation.getAttribute("language"),
+                            Location.valueOf(
+                                    annotation.getAttribute("place").toUpperCase()
+                            )
                     ));
                     break;
                 case "numeral":
                     page.getNumerals().add(new Numeral(
                             annotation.getAttribute("text"),
-                            annotation.getAttribute("place")
+                            Location.valueOf(
+                                    annotation.getAttribute("place").toUpperCase()
+                            )
+
                     ));
                     break;
                 case "errata":
@@ -243,7 +252,10 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                             el.getAttribute("emphasis_text"),
                             el.getAttribute("method"),
                             el.getAttribute("type"),
-                            el.getAttribute("language")
+                            el.getAttribute("language"),
+                            Location.valueOf(
+                                    pos.getPlace().toUpperCase()
+                            )
                     ));
                     break;
                 case "X-ref":

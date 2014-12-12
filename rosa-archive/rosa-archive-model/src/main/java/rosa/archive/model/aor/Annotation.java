@@ -8,11 +8,13 @@ import java.io.Serializable;
 public abstract class Annotation implements Serializable {
 
     private String referringText;
+    private Location location;
 
     protected Annotation() {}
 
-    protected Annotation(String referringText) {
+    protected Annotation(String referringText, Location location) {
         this.referringText = referringText;
+        this.location = location;
     }
 
     public String getReferringText() {
@@ -23,6 +25,16 @@ public abstract class Annotation implements Serializable {
         this.referringText = referringText;
     }
 
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public abstract String toPrettyString();
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -30,6 +42,7 @@ public abstract class Annotation implements Serializable {
 
         Annotation that = (Annotation) o;
 
+        if (location != that.location) return false;
         if (referringText != null ? !referringText.equals(that.referringText) : that.referringText != null)
             return false;
 
@@ -38,13 +51,16 @@ public abstract class Annotation implements Serializable {
 
     @Override
     public int hashCode() {
-        return referringText != null ? referringText.hashCode() : 0;
+        int result = referringText != null ? referringText.hashCode() : 0;
+        result = 31 * result + (location != null ? location.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "Annotation{" +
                 "referringText='" + referringText + '\'' +
+                ", location=" + location +
                 '}';
     }
 }

@@ -78,6 +78,18 @@ public class Marginalia extends Annotation implements Serializable {
     }
 
     @Override
+    public String toPrettyString() {
+        StringBuilder sb = new StringBuilder("<p>");
+        sb.append("<strong>Marginalia</strong>");
+        sb.append("<p>");
+
+        sb.append("</p>");
+
+        sb.append("</p>");
+        return "";
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

@@ -13,8 +13,20 @@ public class Underline extends Annotation implements Serializable {
 
     public Underline() {}
 
+    @Override
+    public String toPrettyString() {
+        return null;
+    }
+
     public Underline(String referringText, String method, String type, String language) {
-        super(referringText);
+        super(referringText, Location.INTEXT);
+        this.method = method;
+        this.type = type;
+        this.language = language;
+    }
+
+    public Underline(String referringText, String method, String type, String language, Location location) {
+        super(referringText, location);
         this.method = method;
         this.type = type;
         this.language = language;
