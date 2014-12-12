@@ -14,6 +14,7 @@ import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.model.*;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -123,6 +124,9 @@ public class StoreImpl implements Store {
                 loadItem(bookId + config.getNARRATIVE_TAGGING(), bookStreams, NarrativeTagging.class, errors));
         book.setTranscription(
                 loadItem(bookId + config.getTRANSCRIPTION() + config.getXML(), bookStreams, Transcription.class, errors));
+        book.setMultilangMetadata(
+                loadItem(bookId + ".description.xml", bookStreams, MultilangMetadata.class, errors)
+        );
 
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
@@ -545,7 +549,7 @@ public class StoreImpl implements Store {
                                            ByteStreamGroup bookStreams) throws IOException {
         List<BookImage> images = new ArrayList<>();
         for (String file : bookStreams.listByteStreamNames()) {
-            if (file.endsWith(config.getTIF())) {
+            if (!file.startsWith(".") && file.endsWith(config.getTIF())) {
 
                 String filepath = Paths.get(bookStreams.id()).resolve(file).toString();
                 int[] dimensions = getImageDimensionsHack(filepath);
@@ -739,6 +743,19 @@ public class StoreImpl implements Store {
             return null;
         }
     }
+
+//    protected MultilangMetadata loadMultilangMetadata(String name, ByteStreamGroup bsg, List<String> errors) {
+//        if (!bsg.hasByteStream(name)) {
+//            return null;
+//        }
+//
+//        try (InputStream in = bsg.getByteStream(name)) {
+//            Ser
+//        } catch (IOException e) {
+//            errors.add("Failed to read multi-language metadata XML file.\n" + stacktrace(e));
+//            return null;
+//        }
+//    }
 
     protected String findLanguageCodeInName(String name) {
 

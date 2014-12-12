@@ -14,7 +14,9 @@ import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookMetadata;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -106,6 +108,22 @@ public class StoreLoadAndCheckIntegrationTest extends AbstractFileSystemTest {
         assertEquals(1165, errors.size());
         assertTrue(errors.contains("Cropping information for item [Walters143.138v.tif] missing from parent Book archive. [Walters143]"));
         assertEquals(0, warnings.size());
+    }
+
+    @Test
+    public void loadWithMultilangMetadata() throws Exception {
+        Store store = storeFactory.create(base);
+        List<String> errors = new ArrayList<>();
+
+        BookCollection collection = store.loadBookCollection("rosedata", errors);
+        assertNotNull(collection);
+
+        Book book = store.loadBook("rosedata", "Morgan948", errors);
+        assertNotNull(book);
+        errors.clear();
+
+        MultilangMetadata mm = book.getMultilangMetadata();
+        assertNotNull(mm);
     }
 
     @Test

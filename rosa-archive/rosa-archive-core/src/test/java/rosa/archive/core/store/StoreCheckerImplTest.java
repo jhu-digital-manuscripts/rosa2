@@ -31,6 +31,7 @@ import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.File;
 import java.io.IOException;
@@ -217,6 +218,7 @@ public class StoreCheckerImplTest extends AbstractFileSystemTest {
         classes.add(Permission.class);
         classes.add(Transcription.class);
         classes.add(AnnotatedPage.class);
+        classes.add(MultilangMetadata.class);
 
         String[][] books = {
                 {"Ha2", "Ferrell", "LudwigXV7", "Walters143"},

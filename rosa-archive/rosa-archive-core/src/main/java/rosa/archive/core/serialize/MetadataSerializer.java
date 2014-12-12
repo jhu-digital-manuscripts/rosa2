@@ -42,91 +42,92 @@ public class MetadataSerializer implements Serializer<Map<String, BookMetadata>>
 
     @Override
     public void write(Map<String, BookMetadata> metadataMap, OutputStream out) throws IOException {
-        Document doc = XMLUtil.newDocument();
-
-        Element root = doc.createElement("book");
-        doc.appendChild(root);
-
-        boolean first = true;
-        for (String lang : metadataMap.keySet()) {
-            BookMetadata metadata = metadataMap.get(lang);
-
-            if (first) {
-                first = false;
-
-                root.setAttribute("illustrations", String.valueOf(metadata.getNumberOfIllustrations()));
-                root.setAttribute("pages", String.valueOf(metadata.getNumberOfPages()));
-                // TODO title
-
-                Element dimensions = doc.createElement("dimensions");
-                root.appendChild(dimensions);
-                dimensions.setAttribute("unit", "mm");
-                dimensions.setAttribute("width", String.valueOf(metadata.getWidth()));
-                dimensions.setAttribute("height", String.valueOf(metadata.getHeight()));
-
-                Element texts = doc.createElement("texts");
-                root.appendChild(texts);
-
-                for (BookText text : metadata.getTexts()) {
-                    Element el = doc.createElement("text");
-                    texts.appendChild(el);
-
-                    el.setAttribute("id", text.getId());
-                    el.setAttribute("title", text.getTitle());
-                    el.setAttribute("start", text.getFirstPage());
-                    el.setAttribute("end", text.getLastPage());
-                    el.setAttribute("pages", String.valueOf(text.getNumberOfPages()));
-                    el.setAttribute("illustrations", String.valueOf(text.getNumberOfIllustrations()));
-                    el.setAttribute("linesPerColumn", String.valueOf(text.getLinesPerColumn()));
-                    el.setAttribute("leavesPerGathering", String.valueOf(text.getLeavesPerGathering()));
-                    el.setAttribute("columnsPerPage", String.valueOf(text.getColumnsPerPage()));
-                }
-            }
-
-            Element bibliography = doc.createElement("bibliography");
-            root.appendChild(bibliography);
-            bibliography.setAttribute("lang", lang);
-
-            Element date = doc.createElement("date");
-            bibliography.appendChild(date);
-            date.setAttribute("start", String.valueOf(metadata.getYearStart()));
-            date.setAttribute("end", String.valueOf(metadata.getYearEnd()));
-            date.appendChild(doc.createTextNode(metadata.getDate()));
-
-            Element type = doc.createElement("type");
-            bibliography.appendChild(type);
-            type.appendChild(doc.createTextNode(metadata.getType()));
-
-            Element commonName = doc.createElement("commonName");
-            bibliography.appendChild(commonName);
-            commonName.appendChild(doc.createTextNode(metadata.getCommonName()));
-
-            Element material = doc.createElement("material");
-            bibliography.appendChild(material);
-            material.appendChild(doc.createTextNode(metadata.getMaterial()));
-
-            Element origin = doc.createElement("origin");
-            bibliography.appendChild(origin);
-            origin.appendChild(doc.createTextNode(metadata.getOrigin()));
-
-            Element currentLocation = doc.createElement("currentLocation");
-            bibliography.appendChild(currentLocation);
-            currentLocation.appendChild(doc.createTextNode(metadata.getCurrentLocation()));
-
-            Element repository = doc.createElement("repository");
-            bibliography.appendChild(repository);
-            repository.appendChild(doc.createTextNode(metadata.getRepository()));
-
-            Element shelfmark = doc.createElement("shelfmark");
-            bibliography.appendChild(shelfmark);
-            shelfmark.appendChild(doc.createTextNode(metadata.getShelfmark()));
-
-//            Element measure = doc.createElement("measure");
-//            bibliography.appendChild(measure);
-//            measure.appendChild(doc.createTextNode(metadata.get))
-        }
-
-        XMLUtil.write(doc, out);
+        throw new UnsupportedOperationException("Not implemented");
+//        Document doc = XMLUtil.newDocument();
+//
+//        Element root = doc.createElement("book");
+//        doc.appendChild(root);
+//
+//        boolean first = true;
+//        for (String lang : metadataMap.keySet()) {
+//            BookMetadata metadata = metadataMap.get(lang);
+//
+//            if (first) {
+//                first = false;
+//
+//                root.setAttribute("illustrations", String.valueOf(metadata.getNumberOfIllustrations()));
+//                root.setAttribute("pages", String.valueOf(metadata.getNumberOfPages()));
+//                // TODO title
+//
+//                Element dimensions = doc.createElement("dimensions");
+//                root.appendChild(dimensions);
+//                dimensions.setAttribute("unit", "mm");
+//                dimensions.setAttribute("width", String.valueOf(metadata.getWidth()));
+//                dimensions.setAttribute("height", String.valueOf(metadata.getHeight()));
+//
+//                Element texts = doc.createElement("texts");
+//                root.appendChild(texts);
+//
+//                for (BookText text : metadata.getTexts()) {
+//                    Element el = doc.createElement("text");
+//                    texts.appendChild(el);
+//
+//                    el.setAttribute("id", text.getId());
+//                    el.setAttribute("title", text.getTitle());
+//                    el.setAttribute("start", text.getFirstPage());
+//                    el.setAttribute("end", text.getLastPage());
+//                    el.setAttribute("pages", String.valueOf(text.getNumberOfPages()));
+//                    el.setAttribute("illustrations", String.valueOf(text.getNumberOfIllustrations()));
+//                    el.setAttribute("linesPerColumn", String.valueOf(text.getLinesPerColumn()));
+//                    el.setAttribute("leavesPerGathering", String.valueOf(text.getLeavesPerGathering()));
+//                    el.setAttribute("columnsPerPage", String.valueOf(text.getColumnsPerPage()));
+//                }
+//            }
+//
+//            Element bibliography = doc.createElement("bibliography");
+//            root.appendChild(bibliography);
+//            bibliography.setAttribute("lang", lang);
+//
+//            Element date = doc.createElement("date");
+//            bibliography.appendChild(date);
+//            date.setAttribute("start", String.valueOf(metadata.getYearStart()));
+//            date.setAttribute("end", String.valueOf(metadata.getYearEnd()));
+//            date.appendChild(doc.createTextNode(metadata.getDate()));
+//
+//            Element type = doc.createElement("type");
+//            bibliography.appendChild(type);
+//            type.appendChild(doc.createTextNode(metadata.getType()));
+//
+//            Element commonName = doc.createElement("commonName");
+//            bibliography.appendChild(commonName);
+//            commonName.appendChild(doc.createTextNode(metadata.getCommonName()));
+//
+//            Element material = doc.createElement("material");
+//            bibliography.appendChild(material);
+//            material.appendChild(doc.createTextNode(metadata.getMaterial()));
+//
+//            Element origin = doc.createElement("origin");
+//            bibliography.appendChild(origin);
+//            origin.appendChild(doc.createTextNode(metadata.getOrigin()));
+//
+//            Element currentLocation = doc.createElement("currentLocation");
+//            bibliography.appendChild(currentLocation);
+//            currentLocation.appendChild(doc.createTextNode(metadata.getCurrentLocation()));
+//
+//            Element repository = doc.createElement("repository");
+//            bibliography.appendChild(repository);
+//            repository.appendChild(doc.createTextNode(metadata.getRepository()));
+//
+//            Element shelfmark = doc.createElement("shelfmark");
+//            bibliography.appendChild(shelfmark);
+//            shelfmark.appendChild(doc.createTextNode(metadata.getShelfmark()));
+//
+////            Element measure = doc.createElement("measure");
+////            bibliography.appendChild(measure);
+////            measure.appendChild(doc.createTextNode(metadata.get))
+//        }
+//
+//        XMLUtil.write(doc, out);
     }
 
     private Map<String, BookMetadata> buildMetadata(Document doc) {
@@ -138,7 +139,7 @@ public class MetadataSerializer implements Serializer<Map<String, BookMetadata>>
             BookMetadata metadata = new BookMetadata();
 
             metadata.setNumberOfIllustrations(Integer.parseInt(top.getAttribute("illustrations")));
-            metadata.setNumberOfPages(Integer.parseInt(top.getAttribute("pages")));
+            metadata.setNumberOfPages(Integer.parseInt(top.getAttribute("totalPages")));
 
             NodeList list = top.getChildNodes();
             for (int i = 0; i < list.getLength(); i++) {
@@ -151,16 +152,19 @@ public class MetadataSerializer implements Serializer<Map<String, BookMetadata>>
                 if (el.getNodeName().equals("dimensions")) {
                     metadata.setHeight(Integer.parseInt(el.getAttribute("height")));
                     metadata.setWidth(Integer.parseInt(el.getAttribute("width")));
-                } else if (el.getNodeName().equals("date")) {
-                    metadata.setYearStart(Integer.parseInt(el.getAttribute("start")));
-                    metadata.setYearEnd(Integer.parseInt(el.getAttribute("end")));
-                    metadata.setDate(el.getTextContent());
+                } else if (el.getNodeName().equals("dates")) {
+                    metadata.setYearStart(getFirstElementInt("startDate", el));
+                    metadata.setYearEnd(getFirstElementInt("endDate", el));
+                    // TODO dateLabel
                 } else if (el.getNodeName().equals("texts")) {
                     List<BookText> texts = handleBookTexts(el);
                     metadata.setTexts(texts.toArray(new BookText[texts.size()]));
-                } else if (el.getNodeName().equals("bibliography") && el.getAttribute("lang").equals(lang)) {
-                    readBibInfo(el, metadata);
+                } else if (el.getNodeName().equals("bibliography")) {
+                    handleBiblio(el, lang, metadata);
                 }
+//                else if (el.getNodeName().equals("bibliography") && el.getAttribute("lang").equals(lang)) {
+//                    readBibInfo(el, metadata);
+//                }
             }
 
             metadataMap.put(lang, metadata);
@@ -188,6 +192,31 @@ public class MetadataSerializer implements Serializer<Map<String, BookMetadata>>
         }
 
         return langs.toArray(new String[langs.size()]);
+    }
+
+    private void handleBiblio(Element bibs, String lang, BookMetadata metadata) {
+        NodeList list = bibs.getElementsByTagName("bibliography");
+        for (int i = 0; i < list.getLength(); i++) {
+            Node node = list.item(i);
+            if (node.getNodeType() != Node.ELEMENT_NODE) {
+                continue;
+            }
+
+            Element bib = (Element) node;
+            if (!bib.getAttribute("lang").equals(lang)) {
+                continue;
+            }
+
+            metadata.setTitle(getFirstElement("title", bib));
+            metadata.setDate(getFirstElement("dateLabel", bib));
+            metadata.setType(getFirstElement("type", bib));
+            metadata.setCommonName(getFirstElement("commonName", bib));
+            metadata.setMaterial(getFirstElement("material", bib));
+            metadata.setOrigin(getFirstElement("origin", bib));
+            metadata.setCurrentLocation(getFirstElement("currentLocation", bib));
+            metadata.setRepository(getFirstElement("repository", bib));
+            metadata.setShelfmark(getFirstElement("shelfmark", bib));
+        }
     }
 
     private void readBibInfo(Element biblio, BookMetadata metadata) {
@@ -250,18 +279,60 @@ public class MetadataSerializer implements Serializer<Map<String, BookMetadata>>
             BookText text = new BookText();
 
             text.setId(item.getAttribute("id"));
-            text.setTitle(item.getAttribute("title"));
-            text.setFirstPage(item.getAttribute("start"));
-            text.setLastPage(item.getAttribute("end"));
-            text.setNumberOfPages(Integer.parseInt(item.getAttribute("pages")));
-            text.setNumberOfIllustrations(Integer.parseInt(item.getAttribute("illustrations")));
-            text.setLinesPerColumn(Integer.parseInt(item.getAttribute("linesPerColumn")));
-            text.setLeavesPerGathering(Integer.parseInt(item.getAttribute("leavesPerGathering")));
-            text.setColumnsPerPage(Integer.parseInt(item.getAttribute("columnsPerPage")));
+            text.setTitle(getFirstElement("title", item));
+            text.setFirstPage(getAttribute("pages", "start", item));
+            text.setLastPage(getAttribute("pages", "end", item));
+//            text.setNumberOfPages();
+            text.setNumberOfIllustrations(getFirstElementInt("illustrations", item));
+            text.setLinesPerColumn(getFirstElementInt("linesPerColumn", item));
+            text.setLeavesPerGathering(getFirstElementInt("leavesPerGathering", item));
+            text.setColumnsPerPage(getFirstElementInt("columnsPerPage", item));
 
             texts.add(text);
         }
 
         return texts;
+    }
+
+    private Element getElement(String tagname, Element top) {
+        NodeList list = top.getElementsByTagName(tagname);
+        for (int i = 0; i < list.getLength(); i++) {
+            Node node = list.item(i);
+            if (node.getNodeType() != Node.ELEMENT_NODE) {
+                continue;
+            }
+
+            return (Element) node;
+        }
+
+        return null;
+    }
+
+    private String getFirstElement(String tagname, Element top) {
+        Element el = getElement(tagname, top);
+
+        if (el == null) {
+            return "";
+        } else {
+            return el.getTextContent();
+        }
+    }
+
+    private int getFirstElementInt(String tagname, Element top) {
+        try {
+            return Integer.parseInt(getFirstElement(tagname, top));
+        } catch (Exception e) {
+            return -1;
+        }
+    }
+
+    private String getAttribute(String tagname, String attribute, Element top) {
+        Element el = getElement(tagname, top);
+
+        if (el == null) {
+            return "";
+        } else {
+            return el.getAttribute(attribute);
+        }
     }
 }
