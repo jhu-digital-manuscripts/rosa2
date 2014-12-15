@@ -212,7 +212,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
 
     private Position buildPosition(Element position) {
         Position pos = new Position();
-        pos.setPlace(position.getAttribute("place"));
+        pos.setPlace(Location.valueOf(position.getAttribute("place")));
 
         // book_orientation is integer value: (0|90|180|270)
         String orientation = position.getAttribute("book_orientation");
@@ -253,9 +253,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                             el.getAttribute("method"),
                             el.getAttribute("type"),
                             el.getAttribute("language"),
-                            Location.valueOf(
-                                    pos.getPlace().toUpperCase()
-                            )
+                            pos.getPlace()
                     ));
                     break;
                 case "X-ref":

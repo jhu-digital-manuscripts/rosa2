@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Position implements Serializable {
 
-    String place;
+    Location place;
     int orientation;
     List<String> texts;
     List<String> people;
@@ -32,11 +32,11 @@ public class Position implements Serializable {
         this.texts = texts;
     }
 
-    public String getPlace() {
+    public Location getPlace() {
         return place;
     }
 
-    public void setPlace(String place) {
+    public void setPlace(Location place) {
         this.place = place;
     }
 

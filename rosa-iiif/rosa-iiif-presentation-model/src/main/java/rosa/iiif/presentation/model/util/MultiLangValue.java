@@ -33,10 +33,8 @@ public final class MultiLangValue {
     }
 
     public void addValue(String value, String language) {
-        if (value == null) {
-            throw new IllegalArgumentException("Value must not be NULL");
-        } else if (language == null) {
-            throw new IllegalArgumentException("Language cannot be NULL");
+        if (value == null || language == null) {
+            return;
         }
         data.put(language, value);
     }

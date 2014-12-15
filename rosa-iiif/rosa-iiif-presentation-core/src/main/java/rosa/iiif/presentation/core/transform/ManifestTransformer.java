@@ -6,8 +6,10 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
-import rosa.archive.model.aor.Mark;
+import rosa.archive.model.aor.MarginaliaLanguage;
+import rosa.archive.model.aor.Position;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -100,6 +102,11 @@ public class ManifestTransformer {
         for (String lang : languages) {
             BookMetadata metadata = book.getBookMetadata(lang);
 
+            map.get("currentLocation").addValue(metadata.getCurrentLocation(), lang);
+            map.get("repository").addValue(metadata.getRepository(), lang);
+            map.get("shelfmark").addValue(metadata.getShelfmark(), lang);
+            map.get("origin").addValue(metadata.getOrigin(), lang);
+
             map.get("width").addValue(metadata.getWidth()+"", lang);
             map.get("height").addValue(metadata.getHeight()+"", lang);
             map.get("yearStart").addValue(metadata.getYearStart()+"", lang);
@@ -108,10 +115,6 @@ public class ManifestTransformer {
             map.get("numberOfIllustrations").addValue(metadata.getNumberOfIllustrations()+"", lang);
             map.get("title").addValue(metadata.getTitle(), lang);
             map.get("date").addValue(metadata.getDate(), lang);
-            map.get("currentLocation").addValue(metadata.getCurrentLocation(), lang);
-            map.get("repository").addValue(metadata.getRepository(), lang);
-            map.get("shelfmark").addValue(metadata.getShelfmark(), lang);
-            map.get("origin").addValue(metadata.getOrigin(), lang);
             map.get("dimensions").addValue(metadata.getDimensions(), lang);
             map.get("dimensionUnits").addValue(metadata.getDimensionUnits(), lang);
             map.get("type").addValue(metadata.getType(), lang);
@@ -150,8 +153,10 @@ public class ManifestTransformer {
         }
 
         Sequence sequence = new Sequence();
+        // TODO make URL
         sequence.setId(imageList.getId());
         sequence.setType(IIIFNames.SC_SEQUENCE);
+        sequence.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
 
         for (String lang : langs) {
             sequence.addLabel("Default", lang);
@@ -200,8 +205,8 @@ public class ManifestTransformer {
         // Set default target of this image to this Canvas
         canvas.setImages(Arrays.asList(imageResource(image, canvas.getId())));
 
-        List<Annotation> aorAnnotations = annotationsFromAoR(book,
-                book.getAnnotationPage(image.getPage()), canvas.getId());
+        List<Annotation> aorAnnotations = annotationsFromAoR(canvas,
+                book.getAnnotationPage(image.getPage()));
         canvas.setOtherContent(aorAnnotations);
 
         return canvas;
@@ -235,36 +240,35 @@ public class ManifestTransformer {
         return ann;
     }
 
-    private List<Annotation> annotationsFromAoR(Book book, AnnotatedPage aPage, String canvasId) {
+    private List<Annotation> annotationsFromAoR(Canvas canvas, AnnotatedPage aPage) {
         if (aPage == null) {
             return null;
         }
 
         List<Annotation> annotations = new ArrayList<>();
-
         for (Marginalia marg : aPage.getMarginalia()) {
-            annotations.addAll(adaptMarginalia(marg, canvasId));
+            annotations.addAll(adaptMarginalia(marg, canvas));
         }
         for (rosa.archive.model.aor.Annotation mark : aPage.getMarks()) {
-            annotations.add(adaptAnnotation(mark, canvasId));
+            annotations.add(adaptAnnotation(mark, canvas));
         }
         for (rosa.archive.model.aor.Annotation symbol : aPage.getSymbols()) {
-            annotations.add(adaptAnnotation(symbol, canvasId));
+            annotations.add(adaptAnnotation(symbol, canvas));
         }
         for (rosa.archive.model.aor.Annotation underline : aPage.getUnderlines()) {
-            annotations.add(adaptAnnotation(underline, canvasId));
+            annotations.add(adaptAnnotation(underline, canvas));
         }
         for (rosa.archive.model.aor.Annotation numeral : aPage.getNumerals()) {
-            annotations.add(adaptAnnotation(numeral, canvasId));
+            annotations.add(adaptAnnotation(numeral, canvas));
         }
         for (rosa.archive.model.aor.Annotation errata : aPage.getErrata()) {
-            annotations.add(adaptAnnotation(errata, canvasId));
+            annotations.add(adaptAnnotation(errata, canvas));
         }
 
         return annotations;
     }
 
-    private Annotation adaptAnnotation(rosa.archive.model.aor.Annotation anno, String canvasId) {
+    private Annotation adaptAnnotation(rosa.archive.model.aor.Annotation anno, Canvas canvas) {
         Annotation a = new Annotation();
 
         a.setId("ID");
@@ -273,14 +277,37 @@ public class ManifestTransformer {
         a.setDefaultSource(new AnnotationSource(
                 "URI", IIIFNames.DC_TEXT, "text/html", anno.toPrettyString(), "en"
         ));
-        // TODO make specific resource!
-        a.setDefaultTarget(new AnnotationTarget(canvasId));
+
+        a.setDefaultTarget(locationOnCanvas(canvas, anno.getLocation()));
 
         return a;
     }
 
-    private List<Annotation> adaptMarginalia(Marginalia marg, String canvasId) {
-        return null;
+    private List<Annotation> adaptMarginalia(Marginalia marg, Canvas canvas) {
+        List<Annotation> annotations = new ArrayList<>();
+        for (MarginaliaLanguage lang : marg.getLanguages()) {
+            for (Position pos : lang.getPositions()) {
+                Annotation anno = new Annotation();
+
+                anno.setId("ID");
+                anno.setMotivation(IIIFNames.SC_PAINTING);
+                anno.setDefaultSource(new AnnotationSource(
+                        "URI", IIIFNames.DC_TEXT, "text/html",
+                        pos.getTexts().toString(), lang.getLang()
+                ));
+                anno.setDefaultTarget(locationOnCanvas(canvas, pos.getPlace()));
+
+                annotations.add(anno);
+            }
+        }
+
+        return annotations;
+    }
+
+    private AnnotationTarget locationOnCanvas(Canvas canvas, Location location) {
+        // TODO
+        // For now, everything will default to FULL_PAGE (selector == null)
+        return new AnnotationTarget(canvas.getId(), null);
     }
 
 }
