@@ -22,6 +22,7 @@ import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.SvgSelector;
 import rosa.iiif.presentation.model.selector.SvgType;
+import rosa.iiif.presentation.model.util.HtmlValue;
 import rosa.iiif.presentation.model.util.TextValue;
 
 import java.util.ArrayList;
@@ -82,54 +83,54 @@ public class ManifestTransformer {
      * @param manifest manifest to add the metadata
      */
     private void transformMetadata(Book book, String[] languages, Manifest manifest) {
-        Map<String, TextValue> map = new HashMap<>();
+        Map<String, HtmlValue> map = new HashMap<>();
 
         for (String lang : languages) {
             BookMetadata metadata = book.getBookMetadata(lang);
 
-            map.put("currentLocation", new TextValue(metadata.getCurrentLocation(), lang));
-            map.put("repository", new TextValue(metadata.getRepository(), lang));
-            map.put("shelfmark", new TextValue(metadata.getShelfmark(), lang));
-            map.put("origin", new TextValue(metadata.getOrigin(), lang));
+            map.put("currentLocation", new HtmlValue(metadata.getCurrentLocation(), lang));
+            map.put("repository", new HtmlValue(metadata.getRepository(), lang));
+            map.put("shelfmark", new HtmlValue(metadata.getShelfmark(), lang));
+            map.put("origin", new HtmlValue(metadata.getOrigin(), lang));
 
             if (metadata.getWidth() != -1) {
-                map.put("width", new TextValue(metadata.getWidth() + "", lang));
+                map.put("width", new HtmlValue(metadata.getWidth() + "", lang));
             }
             if (metadata.getHeight() != -1) {
-                map.put("height", new TextValue(metadata.getHeight() + "", lang));
+                map.put("height", new HtmlValue(metadata.getHeight() + "", lang));
             }
             if (metadata.getYearStart() != -1) {
-                map.put("yearStart", new TextValue(metadata.getYearStart() + "", lang));
+                map.put("yearStart", new HtmlValue(metadata.getYearStart() + "", lang));
             }
             if (metadata.getYearEnd() != -1) {
-                map.put("yearEnd", new TextValue(metadata.getYearEnd() + "", lang));
+                map.put("yearEnd", new HtmlValue(metadata.getYearEnd() + "", lang));
             }
             if (metadata.getNumberOfPages() != -1) {
-                map.put("numberOfPages", new TextValue(metadata.getNumberOfPages() + "", lang));
+                map.put("numberOfPages", new HtmlValue(metadata.getNumberOfPages() + "", lang));
             }
             if (metadata.getNumberOfIllustrations() != -1) {
-                map.put("numberOfIllustrations", new TextValue(metadata.getNumberOfIllustrations() + "", lang));
+                map.put("numberOfIllustrations", new HtmlValue(metadata.getNumberOfIllustrations() + "", lang));
             }
             if (metadata.getTitle() != null) {
-                map.put("title", new TextValue(metadata.getTitle(), lang));
+                map.put("title", new HtmlValue(metadata.getTitle(), lang));
             }
             if (metadata.getDate() != null) {
-                map.put("date", new TextValue(metadata.getDate(), lang));
+                map.put("date", new HtmlValue(metadata.getDate(), lang));
             }
             if (metadata.getDimensions() != null) {
-                map.put("dimensions", new TextValue(metadata.getDimensions(), lang));
+                map.put("dimensions", new HtmlValue(metadata.getDimensions(), lang));
             }
             if (metadata.getDimensionUnits() != null) {
-                map.put("dimensionUnits", new TextValue(metadata.getDimensionUnits(), lang));
+                map.put("dimensionUnits", new HtmlValue(metadata.getDimensionUnits(), lang));
             }
             if (metadata.getType() != null) {
-                map.put("type", new TextValue(metadata.getType(), lang));
+                map.put("type", new HtmlValue(metadata.getType(), lang));
             }
             if (metadata.getCommonName() != null) {
-                map.put("commonName", new TextValue(metadata.getCommonName(), lang));
+                map.put("commonName", new HtmlValue(metadata.getCommonName(), lang));
             }
             if (metadata.getMaterial() != null) {
-                map.put("material", new TextValue(metadata.getMaterial(), lang));
+                map.put("material", new HtmlValue(metadata.getMaterial(), lang));
             }
 
             // TODO book texts

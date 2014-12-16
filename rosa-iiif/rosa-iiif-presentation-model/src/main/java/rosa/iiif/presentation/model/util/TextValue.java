@@ -2,8 +2,8 @@ package rosa.iiif.presentation.model.util;
 
 public class TextValue {
 
-    private final String value;
-    private final String language;
+    protected final String value;
+    protected final String language;
 
     public TextValue(String value, String language) {
         this.language = language;

@@ -32,6 +32,7 @@ import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.Selector;
 import rosa.iiif.presentation.model.selector.SvgSelector;
 import rosa.iiif.presentation.model.selector.SvgType;
+import rosa.iiif.presentation.model.util.HtmlValue;
 import rosa.iiif.presentation.model.util.TextValue;
 
 import java.util.ArrayList;
@@ -114,7 +115,7 @@ public class ManifestTransformerTest {
         }
 
         assertNotNull("Metadata missing", manifest.getMetadata());
-        Map<String, TextValue> metadata = manifest.getMetadata();
+        Map<String, HtmlValue> metadata = manifest.getMetadata();
         assertEquals("Wrong number of pieces of metadata.", 16, metadata.size());
         assertEquals("Wrong value for 'current location'",
                 "Current Location", metadata.get("currentLocation").getValue());

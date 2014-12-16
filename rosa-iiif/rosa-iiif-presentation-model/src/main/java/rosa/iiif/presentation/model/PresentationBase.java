@@ -1,5 +1,6 @@
 package rosa.iiif.presentation.model;
 
+import rosa.iiif.presentation.model.util.HtmlValue;
 import rosa.iiif.presentation.model.util.TextValue;
 
 import java.io.Serializable;
@@ -31,13 +32,13 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
 
     // Descriptive Properties
     /**
-     * Human readable label, name, or title.
+     * Human readable label, name, or title. Plain text only.
      */
     protected TextValue label;
     /**
      * Long-form prose description, can include some basic HTML formatting.
      */
-    protected TextValue description;
+    protected HtmlValue description;
     /**
      * URL that should follow the IIIF Image API syntax.
      */
@@ -50,9 +51,9 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
 
     // Rights and Licensing properties
     /**
-     * Text to be displayed describing rights or license of a resource.
+     * Text to be displayed describing rights or license of a resource. HTML or plain text.
      */
-    protected TextValue attribution;
+    protected HtmlValue attribution;
     /**
      * URL to license or rights statement. If text is intended to be displayed,
      * use {@link PresentationBase#attribution}
@@ -91,9 +92,9 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
      * value to be displayed to the user. The value should be either simple HTML, including
      * links and text markup, or plain text, and the label should be plain text.
      *
-     * This should not be used for discovery purposes. TODO
+     * This should not be used for discovery purposes. TODO HTML
      */
-    protected Map<String, TextValue> metadata;
+    protected Map<String, HtmlValue> metadata;
 
     protected PresentationBase() {
         metadata = new HashMap<>();
@@ -155,12 +156,12 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         return getDescription() != null ? getDescription().getValue() : "";
     }
 
-    public void setDescription(TextValue description) {
+    public void setDescription(HtmlValue description) {
         this.description = description;
     }
 
     public void setDescription(String description, String language) {
-        setDescription(new TextValue(description, language));
+        setDescription(new HtmlValue(description, language));
     }
 
     public String getThumbnailUrl() {
@@ -187,12 +188,12 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         return getAttribution() != null ? getAttribution().getValue() : "";
     }
 
-    public void setAttribution(TextValue attribution) {
+    public void setAttribution(HtmlValue attribution) {
         this.attribution = attribution;
     }
 
     public void addAttribution(String attribution, String language) {
-        setAttribution(new TextValue(attribution, language));
+        setAttribution(new HtmlValue(attribution, language));
     }
 
     public String getLicense() {
@@ -251,11 +252,11 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         this.within = within;
     }
 
-    public Map<String, TextValue> getMetadata() {
+    public Map<String, HtmlValue> getMetadata() {
         return metadata;
     }
 
-    public void setMetadata(Map<String, TextValue> metadata) {
+    public void setMetadata(Map<String, HtmlValue> metadata) {
         this.metadata = metadata;
     }
 
