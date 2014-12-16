@@ -9,20 +9,20 @@ public class SvgSelector implements Selector, Serializable {
     private static final long serialVersionUID = 1L;
 
     private SvgType type;
-    private int[] points;
+    private int[][] points;
 
     public SvgSelector() {}
 
-    public SvgSelector(SvgType type, int ... points) {
+    public SvgSelector(SvgType type, int[][] points) {
         this.type = type;
         this.points = points;
     }
 
-    public int[] getPoints() {
+    public int[][] getPoints() {
         return points;
     }
 
-    public void setPoints(int[] points) {
+    public void setPoints(int[][] points) {
         this.points = points;
     }
 
@@ -46,20 +46,45 @@ public class SvgSelector implements Selector, Serializable {
 
     @Override
     public String content() {
-        StringBuilder sb = new StringBuilder("<");
-        sb.append(type.label());
+        if (type == SvgType.POLYGON || type == SvgType.PATH || type == SvgType.POLYLINE) {
+            StringBuilder sb = new StringBuilder("<");
+            sb.append(type.label());
+            sb.append(" points=\"");
+            for (int[] p : points) {
+                int x = p[0];
+                int y = p[1];
 
-        for (int i = 0; i < points.length; i++) {
-            int p = points[i];
-            sb.append(" p");
-            sb.append(i);
-            sb.append("=\"");
-            sb.append(p);
-            sb.append('"');
+                sb.append(x);
+                sb.append(',');
+                sb.append(y);
+                sb.append(' ');
+            }
+            sb.append("\"/>");
+
+            return sb.toString();
+        } else if (type == SvgType.RECT) {
+            return "<" + type.label()
+                    + " x=\"" + points[0][0]
+                    + "\" y=\"" + points[0][1]
+                    + "\" w=\"" + points[1][0]
+                    + "\" h=\"" + points[1][1]
+                    + "\"/>";
+        } else if (type == SvgType.CIRCLE) {
+            return "<" + type.label()
+                    + " cx=\"" + points[0][0]
+                    + "\" cy=\"" + points[0][1]
+                    + "\" r=\"" + points[1][0]
+                    + "\"/>";
+        } else if (type == SvgType.ELLIPSE) {
+            return "<" + type.label()
+                    + " cx=\"" + points[0][0]
+                    + "\" cy=\"" + points[0][1]
+                    + "\" rx=\"" + points[1][0]
+                    + "\" ry=\"" + points[1][1]
+                    + "\"/>";
+        } else {
+            return "";
         }
-
-        sb.append("/>");
-        return sb.toString();
     }
 
     @Override

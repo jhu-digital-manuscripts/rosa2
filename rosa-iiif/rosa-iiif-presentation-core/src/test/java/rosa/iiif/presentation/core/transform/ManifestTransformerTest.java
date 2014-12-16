@@ -27,6 +27,12 @@ import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
+import rosa.iiif.presentation.model.annotation.Annotation;
+import rosa.iiif.presentation.model.annotation.AnnotationTarget;
+import rosa.iiif.presentation.model.selector.Selector;
+import rosa.iiif.presentation.model.selector.SvgSelector;
+import rosa.iiif.presentation.model.selector.SvgType;
+import rosa.iiif.presentation.model.util.TextValue;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,7 +40,9 @@ import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 public class ManifestTransformerTest {
@@ -53,25 +61,103 @@ public class ManifestTransformerTest {
     }
 
     @Test
-    public void test() {
+    public void transformerTest() {
         Manifest manifest = transformer.transform(createBookCollection(), createBook());
-        assertNotNull(manifest);
+        assertNotNull("No manifest!", manifest);
 
-        assertNotNull(manifest.getSequences());
-        assertEquals(1, manifest.getSequences().size());
-        assertNotNull(manifest.getDefaultSequence());
+        assertNotNull("List of sequences missing.", manifest.getSequences());
+        assertEquals("Wrong number of sequences.", 1, manifest.getSequences().size());
+        assertNotNull("Default sequence missing.", manifest.getDefaultSequence());
 
         // Test sequence
         Sequence seq = manifest.getSequences().get(manifest.getDefaultSequence());
-        assertNotNull(seq);
+        assertNotNull("No default sequence in Manifest.", seq);
         assertTrue(seq.getStartCanvas() != -1);
-        assertEquals(ViewingDirection.LEFT_TO_RIGHT, seq.getViewingDirection());
-        assertNotNull(seq.getId());
+        assertEquals("Incorrect viewing direction.",
+                ViewingDirection.LEFT_TO_RIGHT, seq.getViewingDirection());
+        assertNotNull("Sequence ID not set.", seq.getId());
 
         // Test canvases
         List<Canvas> canvases = seq.getCanvases();
-        assertNotNull(canvases);
-        assertTrue(canvases.size() == 16);
+        assertNotNull("List of canvases missing from sequence.", canvases);
+        assertTrue("Wrong number of canvases.", canvases.size() == 16);
+
+        for (Canvas c : canvases) {
+            assertNotNull("Canvas ID not set.", c.getId());
+
+            assertNotNull("List of image annotations missing.", c.getImages());
+            assertEquals("Too many image annotations.", 1, c.getImages().size());
+
+            Annotation imageAnno = c.getImages().get(0);
+            assertNotNull("Image annotation missing", imageAnno);
+            assertEquals("Incorrect motivation.", "sc:painting", imageAnno.getMotivation());
+            assertEquals("Incorrect image width.", 1000, imageAnno.getWidth());
+            assertEquals("Incorrect image height.", 1500, imageAnno.getHeight());
+            assertNotNull("Annotation source missing.", imageAnno.getDefaultSource());
+            assertFalse("Image must not be text!", imageAnno.getDefaultSource().isEmbeddedText());
+            assertTrue("Image is not an image.", imageAnno.getDefaultSource().isImage());
+            assertNull("Image cannot have selector.", imageAnno.getDefaultSource().getSelector());
+            // test for IIIF image service
+            assertEquals("Wrong number of sources.", 1, imageAnno.getSources().size());
+            assertNotNull("Annotation target missing.", imageAnno.getDefaultTarget());
+            assertEquals("Wrong number of targets.", 1, imageAnno.getTargets().size());
+            assertNull("Target has a Selector.", imageAnno.getDefaultTarget().getSelector());
+            assertFalse("Target is specific resource.", imageAnno.getDefaultTarget().isSpecificResource());
+
+            assertEquals("Canvas width incorrect.", 1000, c.getWidth());
+            assertEquals("Canvas height incorrect.", 1500, c.getHeight());
+
+            assertNotNull("List of other content annotations is missing.",
+                    c.getOtherContent()
+            );
+            assertEquals("Wrong number of annotations from Annotated Pages.", 180, c.getOtherContent().size());
+        }
+
+        assertNotNull("Metadata missing", manifest.getMetadata());
+        Map<String, TextValue> metadata = manifest.getMetadata();
+        assertEquals("Wrong number of pieces of metadata.", 16, metadata.size());
+        assertEquals("Wrong value for 'current location'",
+                "Current Location", metadata.get("currentLocation").getValue());
+        assertEquals("Wrong end year.", "1920", metadata.get("yearEnd").getValue());
+
+        String[] expectedFields = {
+                "title", "numberOfPages", "numberOfIllustrations", "width", "height",
+                "yearStart", "yearEnd", "dimensionUnits", "dimensions", "material",
+                "currentLocation", "shelfmark", "type"
+        };
+        for (String field : expectedFields) {
+            assertTrue("Expected field is missing. " + field, metadata.containsKey(field));
+        }
+    }
+
+    @Test
+    public void locationOnCanvasTest() {
+        for (int i = 0; i < 10; i++) {
+            Canvas c = new Canvas();
+            c.setId("Canvas" + i);
+            c.setWidth(1000);
+            c.setHeight(1500);
+
+            AnnotationTarget t = transformer.locationOnCanvas(c, Location.HEAD);
+            checkTarget(t, false);
+            checkTarget(transformer.locationOnCanvas(c, Location.RIGHT_MARGIN), false);
+            checkTarget(transformer.locationOnCanvas(c, Location.FULL_PAGE), true);
+        }
+    }
+
+    private void checkTarget(AnnotationTarget target, boolean isFullPage) {
+        assertNotNull(target);
+        if (isFullPage) {
+            assertFalse(target.isSpecificResource());
+            assertNull(target.getSelector());
+        } else {
+            assertTrue(target.isSpecificResource());
+
+            Selector s = target.getSelector();
+            assertNotNull(s);
+            assertTrue(s instanceof SvgSelector);
+            assertEquals(SvgType.RECT, ((SvgSelector) s).getType());
+        }
     }
 
     private BookCollection createBookCollection() {
@@ -147,16 +233,18 @@ public class ManifestTransformerTest {
                 marg.setTranslation("Translation");
                 marg.setReferringText("Text line");
                 marg.setHand("Harvey Dent");
-                marg.setLocation(Location.TAIL);
+//                marg.setLocation(Location.TAIL);
 
                 MarginaliaLanguage lang = new MarginaliaLanguage();
                 Position pos = new Position();
                 pos.getTexts().add("This is marginalia text.");
+                pos.setPlace(Location.TAIL);
                 lang.getPositions().add(pos);
                 marg.getLanguages().add(lang);
 
                 page.getMarginalia().add(marg);
             }
+            pages.add(page);
         }
 
         return pages;

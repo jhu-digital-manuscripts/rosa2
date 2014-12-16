@@ -1,6 +1,6 @@
 package rosa.iiif.presentation.model;
 
-import rosa.iiif.presentation.model.util.MultiLangValue;
+import rosa.iiif.presentation.model.util.TextValue;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -33,11 +33,11 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
     /**
      * Human readable label, name, or title.
      */
-    protected MultiLangValue label;
+    protected TextValue label;
     /**
      * Long-form prose description, can include some basic HTML formatting.
      */
-    protected MultiLangValue description;
+    protected TextValue description;
     /**
      * URL that should follow the IIIF Image API syntax.
      */
@@ -52,7 +52,7 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
     /**
      * Text to be displayed describing rights or license of a resource.
      */
-    protected MultiLangValue attribution;
+    protected TextValue attribution;
     /**
      * URL to license or rights statement. If text is intended to be displayed,
      * use {@link PresentationBase#attribution}
@@ -91,9 +91,9 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
      * value to be displayed to the user. The value should be either simple HTML, including
      * links and text markup, or plain text, and the label should be plain text.
      *
-     * This should not be used for discovery purposes.
+     * This should not be used for discovery purposes. TODO
      */
-    protected Map<String, MultiLangValue> metadata;
+    protected Map<String, TextValue> metadata;
 
     protected PresentationBase() {
         metadata = new HashMap<>();
@@ -131,44 +131,36 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         this.viewingHint = viewingHint;
     }
 
-    public MultiLangValue getLabel() {
+    public TextValue getLabel() {
         return label;
     }
 
     public String getLabel(String language) {
-        return getLabel() != null ? getLabel().getValue(language) : "";
+        return getLabel() != null ? getLabel().getValue() : "";
     }
 
-    public void setLabel(MultiLangValue label) {
+    public void setLabel(TextValue label) {
         this.label = label;
     }
 
-    public void addLabel(String label, String language) {
-        if (getLabel() == null) {
-            setLabel(new MultiLangValue(label, language));
-        } else {
-            getLabel().addValue(label, language);
-        }
+    public void setLabel(String label, String language) {
+        setLabel(new TextValue(label, language));
     }
 
-    public MultiLangValue getDescription() {
+    public TextValue getDescription() {
         return description;
     }
 
     public String getDescription(String language) {
-        return getDescription() != null ? getDescription().getValue(language) : "";
+        return getDescription() != null ? getDescription().getValue() : "";
     }
 
-    public void setDescription(MultiLangValue description) {
+    public void setDescription(TextValue description) {
         this.description = description;
     }
 
-    public void addDescription(String description, String language) {
-        if (getDescription() == null) {
-            setDescription(new MultiLangValue(description, language));
-        } else {
-            getDescription().addValue(description, language);
-        }
+    public void setDescription(String description, String language) {
+        setDescription(new TextValue(description, language));
     }
 
     public String getThumbnailUrl() {
@@ -187,24 +179,20 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         this.thumbnailService = thumbnailService;
     }
 
-    public MultiLangValue getAttribution() {
+    public TextValue getAttribution() {
         return attribution;
     }
 
     public String getAttribution(String language) {
-        return getAttribution() != null ? getAttribution().getValue(language) : "";
+        return getAttribution() != null ? getAttribution().getValue() : "";
     }
 
-    public void setAttribution(MultiLangValue attribution) {
+    public void setAttribution(TextValue attribution) {
         this.attribution = attribution;
     }
 
     public void addAttribution(String attribution, String language) {
-        if (getAttribution() == null) {
-            setAttribution(new MultiLangValue(attribution, language));
-        } else {
-            getAttribution().addValue(attribution, language);
-        }
+        setAttribution(new TextValue(attribution, language));
     }
 
     public String getLicense() {
@@ -263,11 +251,11 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         this.within = within;
     }
 
-    public Map<String, MultiLangValue> getMetadata() {
+    public Map<String, TextValue> getMetadata() {
         return metadata;
     }
 
-    public void setMetadata(Map<String, MultiLangValue> metadata) {
+    public void setMetadata(Map<String, TextValue> metadata) {
         this.metadata = metadata;
     }
 
