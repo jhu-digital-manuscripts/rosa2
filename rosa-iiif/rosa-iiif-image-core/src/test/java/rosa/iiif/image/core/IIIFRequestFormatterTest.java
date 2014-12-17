@@ -28,6 +28,11 @@ public class IIIFRequestFormatterTest {
 
         assertEquals(base + "grass.png/info.json", formatter.format(req));
     }
+    
+    @Test
+    public void testFormatImageId() {
+        assertEquals(base + "moo", formatter.format("moo"));
+    }
 
     @Test
     public void testFormatImageRequest() {

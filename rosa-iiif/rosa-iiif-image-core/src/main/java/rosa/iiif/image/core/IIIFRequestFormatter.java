@@ -32,6 +32,8 @@ public class IIIFRequestFormatter {
     }
 
     /**
+     * Format an info request.
+     * 
      * @param req
      * @return URI for request
      */
@@ -39,11 +41,27 @@ public class IIIFRequestFormatter {
         return base() + UriUtil.encodePathSegment(req.getImageId()) + "/info.json";
     }
 
+    /**
+     * Format an image request canonically acoording to the standard.
+     * 
+     * @param req
+     * @return URI for request
+     */
     public String format(ImageRequest req) {
         return base()
                 + UriUtil.encodePathSegments(req.getImageId(), format(req.getRegion()), format(req.getSize()),
                         format(req.getRotation()), req.getQuality().getKeyword() + "."
                                 + req.getFormat().getFileExtension());
+    }
+
+    /**
+     * Format an image id as a URI.
+     * 
+     * @param image_id
+     * @return URI for image id
+     */
+    public String format(String image_id) {
+        return base() + UriUtil.encodePathSegment(image_id);
     }
 
     private String base() {

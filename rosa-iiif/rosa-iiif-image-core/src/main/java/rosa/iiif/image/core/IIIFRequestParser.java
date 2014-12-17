@@ -46,7 +46,7 @@ public class IIIFRequestParser {
     }
 
     /**
-     * Determine type of a IIIF request.
+     * Determine possible type of a IIIF request. The request may not be valid.
      * 
      * @param path
      *            must not be decoded
@@ -79,7 +79,7 @@ public class IIIFRequestParser {
      * to be JSON-LD anyway).
      * 
      * @param path
-     *            must not be decoded
+     *            must not be decoded and be valid
      * @return image info request
      * @throws IIIFException
      */

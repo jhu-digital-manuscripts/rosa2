@@ -23,6 +23,7 @@ import rosa.iiif.image.model.ImageInfo;
 import rosa.iiif.image.model.ImageRequest;
 import rosa.iiif.image.model.ImageServerProfile;
 import rosa.iiif.image.model.ImageServerSupports;
+import rosa.iiif.image.model.InfoRequest;
 import rosa.iiif.image.model.Quality;
 import rosa.iiif.image.model.Region;
 import rosa.iiif.image.model.RegionType;
@@ -30,30 +31,32 @@ import rosa.iiif.image.model.Rotation;
 import rosa.iiif.image.model.Size;
 import rosa.iiif.image.model.SizeType;
 
-// TODO how to handle fsi result dimension limit
-
 /**
  * Use FSI server HTTP API to fulfill IIIF requests. Image info lookups are
  * cached for performance.
  */
-public class FSIServer implements ImageServer {
+public class FSIService implements IIIFService {
     private final String baseurl;
     private final ConcurrentHashMap<String, ImageInfo> image_info_cache;
     private final ImageServerProfile profile;
     private final int image_info_cache_size;
+    private final int max_image_size;
 
     /**
      * The base url must not end in '/' and should look something like
      * 'http://fsiserver.library.jhu.edu/server'.
      * 
      * @param baseurl
+     * @param max_image_size
+     *            maximum dimension of a returned image, -1 for unlimited
      * @param image_info_cache_size
      *            number of image info lookup responses to cache
      */
-    public FSIServer(String baseurl, int image_info_cache_size) {
+    public FSIService(String baseurl, int max_image_size, int image_info_cache_size) {
         this.baseurl = baseurl;
         this.image_info_cache = new ConcurrentHashMap<String, ImageInfo>(image_info_cache_size);
         this.profile = new ImageServerProfile();
+        this.max_image_size = max_image_size;
         this.image_info_cache_size = image_info_cache_size;
 
         profile.setFormats(ImageFormat.PNG);
@@ -63,14 +66,10 @@ public class FSIServer implements ImageServer {
         profile.setQualities(Quality.COLOR, Quality.GRAY);
     }
 
-    public String constructURL(ImageRequest req) throws IIIFException {
+    public String performURL(ImageRequest req) throws IIIFException {
         String url = baseurl + "?type=image&" + param("source", req.getImageId());
 
-        ImageInfo info = lookupImage(req.getImageId());
-
-        if (info == null) {
-            return null;
-        }
+        ImageInfo info = lookup(req.getImageId());
 
         if (req.getFormat() == ImageFormat.PNG) {
             url += "&" + param("profile", "png");
@@ -159,10 +158,20 @@ public class FSIServer implements ImageServer {
         }
 
         if (width != -1) {
+            if (width > max_image_size && max_image_size != -1) {
+                throw new IIIFException("Max width supported: " + max_image_size,
+                        HttpURLConnection.HTTP_NOT_IMPLEMENTED);
+            }
+
             url += "&" + param("width", "" + width);
         }
 
         if (height != -1) {
+            if (height > max_image_size && max_image_size != -1) {
+                throw new IIIFException("Max height supported: " + max_image_size,
+                        HttpURLConnection.HTTP_NOT_IMPLEMENTED);
+            }
+
             url += "&" + param("height", "" + height);
         }
 
@@ -190,7 +199,7 @@ public class FSIServer implements ImageServer {
         if (!effects.isEmpty()) {
             url += "&" + param("effects", effects);
         }
-        
+
         return url;
     }
 
@@ -199,6 +208,15 @@ public class FSIServer implements ImageServer {
             return name + "=" + URLEncoder.encode(value, "UTF-8");
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public InputStream perform(ImageRequest req) throws IIIFException {
+        try {
+            return new URL(performURL(req)).openStream();
+        } catch (IOException e) {
+            throw new IIIFException("Failure performing image request", e, HttpURLConnection.HTTP_INTERNAL_ERROR);
         }
     }
 
@@ -244,7 +262,12 @@ public class FSIServer implements ImageServer {
         }
     }
 
-    public ImageInfo lookupImage(String image_id) throws IIIFException {
+    @Override
+    public ImageInfo perform(InfoRequest req) throws IIIFException {
+        return lookup(req.getImageId());
+    }
+
+    private ImageInfo lookup(String image_id) throws IIIFException {
         ImageInfo info = image_info_cache.get(image_id);
 
         if (info != null) {
@@ -261,7 +284,7 @@ public class FSIServer implements ImageServer {
 
             if (con instanceof HttpURLConnection) {
                 if (((HttpURLConnection) con).getResponseCode() == 404) {
-                    return null;
+                    throw new IIIFException("Image not found: " + image_id, HttpURLConnection.HTTP_NOT_FOUND);
                 }
             }
 
@@ -293,5 +316,10 @@ public class FSIServer implements ImageServer {
     @Override
     public ComplianceLevel getCompliance() {
         return ComplianceLevel.LEVEL_1;
+    }
+
+    @Override
+    public boolean supportsImageRequestURL() {
+        return true;
     }
 }
