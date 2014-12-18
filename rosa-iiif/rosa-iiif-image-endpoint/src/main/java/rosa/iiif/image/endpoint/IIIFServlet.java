@@ -20,7 +20,7 @@ import org.json.JSONException;
 import rosa.iiif.image.core.IIIFException;
 import rosa.iiif.image.core.IIIFRequestParser;
 import rosa.iiif.image.core.IIIFResponseSerializer;
-import rosa.iiif.image.core.ImageServer;
+import rosa.iiif.image.core.IIIFService;
 import rosa.iiif.image.model.ImageInfo;
 import rosa.iiif.image.model.ImageRequest;
 import rosa.iiif.image.model.InfoFormat;
@@ -38,14 +38,14 @@ import com.google.inject.name.Named;
 public class IIIFServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    private final ImageServer server;
+    private final IIIFService service;
     private final IIIFRequestParser parser;
     private final IIIFResponseSerializer serializer;
     private final Map<String, String> image_id_aliases; // alias -> image id
 
     @Inject
-    public IIIFServlet(ImageServer server, @Named("image.aliases") Map<String, String> image_id_aliases) {
-        this.server = server;
+    public IIIFServlet(IIIFService service, @Named("image.aliases") Map<String, String> image_id_aliases) {
+        this.service = service;
         this.serializer = new IIIFResponseSerializer();
         this.parser = new IIIFRequestParser();
         this.image_id_aliases = image_id_aliases;
@@ -113,7 +113,7 @@ public class IIIFServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.addHeader("Link", "<" + server.getCompliance().getUri() + ">;rel=\"profile\"");
+        resp.addHeader("Link", "<" + service.getCompliance().getUri() + ">;rel=\"profile\"");
 
         try {
             String path = get_raw_path(req);
@@ -129,40 +129,36 @@ public class IIIFServlet extends HttpServlet {
                     inforeq.setImageId(alias);
                 }
 
-                ImageInfo info = server.lookupImage(inforeq.getImageId());
+                ImageInfo info = service.perform(inforeq);
 
-                if (info == null) {
-                    throw new IIIFException("Image not found: " + inforeq.getImageId(),
-                            HttpURLConnection.HTTP_NOT_FOUND);
-                } else {
-                    resp.setHeader("Access-Control-Allow-Origin", "*");
+                resp.setHeader("Access-Control-Allow-Origin", "*");
 
-                    OutputStream os = resp.getOutputStream();
+                OutputStream os = resp.getOutputStream();
 
-                    InfoFormat fmt = inforeq.getFormat();
+                InfoFormat fmt = inforeq.getFormat();
 
-                    if (want_json_ld_mime_type(req)) {
-                        fmt = InfoFormat.JSON_LD;
-                    }
-
-                    if (fmt == InfoFormat.JSON) {
-                        resp.addHeader("Link",
-                                "<http://iiif.io/api/image/2/context.json>;rel=\"http://www.w3.org/ns/json-ld#context\";type=\"application/ld+json\"");
-                    }
-
-                    resp.setContentType(fmt.getMimeType());
-
-                    String url = req.getRequestURL().toString();
-
-                    // Must set image uri to request url without /info.json
-                    info.setImageUri(url.substring(0, url.length() - "/info.json".length()));
-
-                    try {
-                        serializer.writeJsonLd(info, os);
-                    } catch (JSONException e) {
-                        throw new IIIFException("Error writing JSON-LD", e, HttpURLConnection.HTTP_INTERNAL_ERROR);
-                    }
+                if (want_json_ld_mime_type(req)) {
+                    fmt = InfoFormat.JSON_LD;
                 }
+
+                if (fmt == InfoFormat.JSON) {
+                    resp.addHeader("Link",
+                            "<http://iiif.io/api/image/2/context.json>;rel=\"http://www.w3.org/ns/json-ld#context\";type=\"application/ld+json\"");
+                }
+
+                resp.setContentType(fmt.getMimeType());
+
+                String url = req.getRequestURL().toString();
+
+                // Must set image uri to request url without /info.json
+                info.setImageUri(url.substring(0, url.length() - "/info.json".length()));
+
+                try {
+                    serializer.writeJsonLd(info, os);
+                } catch (JSONException e) {
+                    throw new IIIFException("Error writing JSON-LD", e, HttpURLConnection.HTTP_INTERNAL_ERROR);
+                }
+
             } else if (type == RequestType.OPERATION) {
                 ImageRequest imgreq = parser.parseImageRequest(path);
 
@@ -172,18 +168,12 @@ public class IIIFServlet extends HttpServlet {
                     imgreq.setImageId(alias);
                 }
 
-                String imgurl = server.constructURL(imgreq);
-
-                if (imgurl == null) {
-                    throw new IIIFException("Image not found: " + imgreq.getImageId(), HttpURLConnection.HTTP_NOT_FOUND);
-                } else {
-                    forward(imgurl, resp);
-                }
+                perform_image_request(imgreq, resp);
             } else if (type == RequestType.IMAGE) {
                 // Redirect to info request
                 resp.sendRedirect("info.json");
             } else {
-                throw new IIIFException("Malformed request: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
+                throw new IIIFException("Request type not handled: " + type, HttpURLConnection.HTTP_INTERNAL_ERROR);
             }
         } catch (IIIFException e) {
             report_error(resp, e);
@@ -200,20 +190,27 @@ public class IIIFServlet extends HttpServlet {
         }
     }
 
-    // TODO optionally do redirect?
-    private void forward(String url, HttpServletResponse resp) throws IOException {
-        URLConnection con = new URL(url).openConnection();
-        con.connect();
-
-        // TODO investigate what headers to copy
-
-        set_header_if_exists("Last-Modified", con, resp);
-        set_header_if_exists("Content-Type", con, resp);
-        set_header_if_exists("Content-Length", con, resp);
-
-        InputStream is = con.getInputStream();
+    // Either submit request to a URL or perform directly
+    private void perform_image_request(ImageRequest req, HttpServletResponse resp) throws IOException, IIIFException {
         OutputStream os = resp.getOutputStream();
 
-        IOUtils.copy(is, os);
+        if (service.supportsImageRequestURL()) {
+            URLConnection con = new URL(service.performURL(req)).openConnection();
+            con.connect();
+
+            set_header_if_exists("Last-Modified", con, resp);
+            set_header_if_exists("Content-Type", con, resp);
+            set_header_if_exists("Content-Length", con, resp);
+
+            try (InputStream is = con.getInputStream()) {
+                IOUtils.copy(is, os);
+            }
+        } else {
+            try (InputStream is = service.perform(req)) {
+                resp.setContentType(req.getFormat().getMimeType());
+
+                IOUtils.copy(is, os);
+            }
+        }
     }
 }

@@ -14,6 +14,10 @@ public class InfoRequest implements Serializable {
     public InfoRequest() {
     }
 
+    public InfoRequest(String image_id) {
+        this.image_id = image_id;
+    }
+
     public String getImageId() {
         return image_id;
     }

@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import rosa.iiif.image.core.FSIServer;
-import rosa.iiif.image.core.ImageServer;
+import rosa.iiif.image.core.FSIService;
+import rosa.iiif.image.core.IIIFService;
 
 import com.google.inject.Provides;
 import com.google.inject.name.Named;
@@ -56,7 +56,7 @@ public class IIIFServletModule extends ServletModule {
     }
 
     @Provides
-    protected ImageServer provideImageServer(@Named("fsi.url") String fsi_url) {
-        return new FSIServer(fsi_url, 1000);
+    protected IIIFService provideImageService(@Named("fsi.url") String fsi_url) {
+        return new FSIService(fsi_url, 1000, 1000);
     }
 }

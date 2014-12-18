@@ -31,6 +31,12 @@
       <groupId>rosa</groupId>
       <artifactId>rosa-iiif-image-core</artifactId>
     </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>                
   </dependencies>
 
 </project>
