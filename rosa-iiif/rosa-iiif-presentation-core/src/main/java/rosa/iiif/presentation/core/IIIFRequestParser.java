@@ -8,30 +8,14 @@ import rosa.iiif.presentation.model.PresentationRequestType;
  * Parse a IIIF Presentation API according to the recommended URI patterns.
  */
 public class IIIFRequestParser {
-    private final String path_prefix;
-
-    /**
-     * @param path_prefix
-     *            must not be decoded
-     */
-    public IIIFRequestParser(String path_prefix) {
-        this.path_prefix = path_prefix;
-    }
-
-    private String get_relative_path(String path) {
-        if (path_prefix != null && path.startsWith(path_prefix)) {
-            path = path.substring(path_prefix.length());
-        }
-
+    private String[] split_path(String path) {
+        // Strip leading / if present
+        
         if (path.length() > 0 && path.charAt(0) == '/') {
             path = path.substring(1);
         }
-
-        return path;
-    }
-
-    private String[] split_path(String path) {
-        String[] parts = get_relative_path(path).split("/");
+        
+        String[] parts = path.split("/");
 
         for (int i = 0; i < parts.length; i++) {
             parts[i] = UriUtil.decodePathSegment(parts[i]);
@@ -51,12 +35,10 @@ public class IIIFRequestParser {
     }
 
     /**
-     * @param path
+     * @param path must be correctly encoded 
      * @return null on failure
      */
     public PresentationRequest parsePresentationRequest(String path) {
-        path = get_relative_path(path);
-
         if (!UriUtil.isValidEncodedPath(path)) {
             return null;
         }
