@@ -15,36 +15,10 @@ import rosa.iiif.image.model.Size;
 import rosa.iiif.image.model.SizeType;
 
 /**
- * Parse an raw URL path info a IIIF request. If a path_prefix is given, it is
- * stripped from paths before parsing.
+ * Parse the raw URI path making up a IIIF Image API request. The path may start with a /.
  */
 public class IIIFRequestParser {
-    private final String path_prefix;
-
-    public IIIFRequestParser() {
-        this(null);
-    }
-
-    /**
-     * @param path_prefix
-     *            must not be decoded
-     */
-    public IIIFRequestParser(String path_prefix) {
-        this.path_prefix = path_prefix;
-    }
-
-    private String get_relative_path(String path) {
-        if (path_prefix != null && path.startsWith(path_prefix)) {
-            path = path.substring(path_prefix.length());
-        }
-
-        if (path.length() > 0 && path.charAt(0) == '/') {
-            path = path.substring(1);
-        }
-
-        return path;
-    }
-
+ 
     /**
      * Determine possible type of a IIIF request. The request may not be valid.
      * 
@@ -53,9 +27,7 @@ public class IIIFRequestParser {
      * @return type of the request.
      */
     public RequestType determineRequestType(String path) {
-        path = get_relative_path(path);
-
-        if (path.endsWith("/info.json")) {
+         if (path.endsWith("/info.json")) {
             return RequestType.INFO;
         } else if (path.indexOf('/') == -1) {
             return RequestType.IMAGE;
@@ -65,7 +37,13 @@ public class IIIFRequestParser {
     }
 
     private String[] split_path(String path) {
-        String[] parts = get_relative_path(path).split("/");
+        // Strip leading / if present
+        
+        if (path.length() > 0 && path.charAt(0) == '/') {
+            path = path.substring(1);
+        }
+        
+        String[] parts = path.split("/");
 
         for (int i = 0; i < parts.length; i++) {
             parts[i] = UriUtil.decodePathSegment(parts[i]);
