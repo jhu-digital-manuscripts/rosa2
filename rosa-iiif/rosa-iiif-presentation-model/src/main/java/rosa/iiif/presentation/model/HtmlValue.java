@@ -1,11 +1,10 @@
-package rosa.iiif.presentation.model.util;
-
-import org.jsoup.Jsoup;
-import org.jsoup.safety.Whitelist;
+package rosa.iiif.presentation.model;
 
 /**
- * {@link rosa.iiif.presentation.model.util.TextValue} with the added rule
- * that the value is to be taken as arbitrary HTML that is sanitized.
+ * {@link TextValue} with the added rule
+ * that the value is to be taken as arbitrary HTML that is sanitized. The
+ * code that uses this class is responsible for ensuring that the HTML
+ * value is safe to use.
  *
  * In following the
  * <a href="http://iiif.io/api/presentation/2.0/#property-values-in-html">IIIF Presentation API v2.0</a>,
@@ -21,16 +20,12 @@ public class HtmlValue extends TextValue {
 
     public HtmlValue(String value, String language) {
         super(value, language);
+//        safeValue = IiifHtmlSanitizer.defaultSanitizer().sanitize(value);
+        safeValue = value;
+    }
 
-        Whitelist whitelist = Whitelist
-                .none()
-                .addTags("a", "b", "br", "i", "img", "p", "span")
-                .addAttributes("a", "href")
-                .addAttributes("img", "src", "alt")
-                .addProtocols("a", "href", "ftp", "http", "https", "mailto")
-                .addEnforcedAttribute("a", "rel", "no-follow");
-
-        safeValue = Jsoup.clean(value, whitelist);
+    public HtmlValue(String value) {
+        this(value, "en");
     }
 
     @Override
@@ -41,6 +36,10 @@ public class HtmlValue extends TextValue {
     @Override
     public String getLanguage() {
         return language;
+    }
+
+    public String asString() {
+        return getValue();
     }
 
     @Override

@@ -31,7 +31,7 @@
 
         <!-- Dependency versions -->
         <guice.version>3.0</guice.version>
-        <gwt.version>2.6.1</gwt.version>
+        <gwt.version>2.7.0</gwt.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons-io.version>2.4</commons-io.version>
         <commons-codec.version>1.9</commons-codec.version>
@@ -43,13 +43,6 @@
         <dependencies>
 
             <!-- External dependencies -->
-
-            <dependency>
-                <!-- jsoup HTML parser library @ http://jsoup.org/ -->
-                <groupId>org.jsoup</groupId>
-                <artifactId>jsoup</artifactId>
-                <version>${jsoup.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>com.google.inject</groupId>
@@ -69,11 +62,11 @@
                 <version>${guice.version}</version>
             </dependency>
 
-	    <dependency>
-	      <groupId>com.google.inject.extensions</groupId>
-	      <artifactId>guice-servlet</artifactId>
-              <version>${guice.version}</version>
-	    </dependency>
+            <dependency>
+                <groupId>com.google.inject.extensions</groupId>
+                <artifactId>guice-servlet</artifactId>
+                <version>${guice.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.apache.commons</groupId>

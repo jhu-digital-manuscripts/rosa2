@@ -1,8 +1,5 @@
 package rosa.iiif.presentation.model;
 
-import rosa.iiif.presentation.model.util.HtmlValue;
-import rosa.iiif.presentation.model.util.TextValue;
-
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;

@@ -20,10 +20,8 @@ import rosa.iiif.presentation.model.ViewingHint;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
-import rosa.iiif.presentation.model.selector.SvgSelector;
-import rosa.iiif.presentation.model.selector.SvgType;
-import rosa.iiif.presentation.model.util.HtmlValue;
-import rosa.iiif.presentation.model.util.TextValue;
+import rosa.iiif.presentation.model.selector.FragmentSelector;
+import rosa.iiif.presentation.model.HtmlValue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -34,6 +32,7 @@ import java.util.Map;
 // TODO All IDs should be resolvable IIIF resource IDs!
 // TODO handle HTML sanitization!
 public class ManifestTransformer {
+    private static final String PAGE_REGEX = "\\d{1,3}(r|v|R|V)";
 
     public ManifestTransformer() {}
 
@@ -151,8 +150,7 @@ public class ManifestTransformer {
         }
 
         Sequence sequence = new Sequence();
-        // TODO make URL
-        sequence.setId(imageList.getId());
+        sequence.setId(imageList.getId()); // TODO make URL
         sequence.setType(IIIFNames.SC_SEQUENCE);
         sequence.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
 
@@ -170,7 +168,7 @@ public class ManifestTransformer {
             // Set the starting point in the sequence to the first page
             // of printed material
             String page = image.getPage();
-            if (hasNotBeenSet && page.matches("\\d{1,3}(r|v|R|V)")) {
+            if (hasNotBeenSet && page.matches(PAGE_REGEX)) {
                 sequence.setStartCanvas(count);
                 hasNotBeenSet = false;
             }
@@ -193,11 +191,19 @@ public class ManifestTransformer {
             return null;
         }
         Canvas canvas = new Canvas();
-        canvas.setId(image.getId());
+        canvas.setId("URL"); // TODO URL
         canvas.setType(IIIFNames.SC_CANVAS);
+        canvas.setLabel(image.getPage(), "en");
 
-        canvas.setWidth(image.getWidth());
-        canvas.setHeight(image.getHeight());
+        if (image.getId().contains("misc") || image.getId().contains("binding")) {
+            canvas.setViewingHint(ViewingHint.NON_PAGED);
+        } else {
+            canvas.setViewingHint(ViewingHint.PAGED);
+        }
+
+        boolean tooSmall = image.getWidth() < 1200 || image.getHeight() < 1200;
+        canvas.setWidth(tooSmall ? image.getWidth() * 2 : image.getWidth());
+        canvas.setHeight(tooSmall ? image.getHeight() * 2 : image.getHeight());
         canvas.setImages(Arrays.asList(imageResource(image, canvas.getId())));
 
         // Set default target of this image to this Canvas
@@ -349,7 +355,6 @@ public class ManifestTransformer {
 
         AnnotationTarget target = new AnnotationTarget(canvas.getId());
 
-        // TODO should use a fragment selector for rectangles!
         switch (location) {
             case HEAD:
                 h = (int) (canvas.getHeight() * margin_guess);
@@ -377,9 +382,7 @@ public class ManifestTransformer {
                 throw new IllegalArgumentException("Invalid Location. [" + location + "]");
         }
 
-//        int[][] points = {{x, y}, {x+w, y}, {x+w, y+h}, {x, y+h}, {x, y}};
-        int[][] points = {{x, y}, {w, h}};
-        target.setSelector(new SvgSelector(SvgType.RECT, points));
+        target.setSelector(new FragmentSelector(x, y, w, h));
 
         return target;
     }

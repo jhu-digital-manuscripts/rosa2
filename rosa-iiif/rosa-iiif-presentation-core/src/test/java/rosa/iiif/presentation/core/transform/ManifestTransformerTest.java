@@ -29,11 +29,9 @@ import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
+import rosa.iiif.presentation.model.selector.FragmentSelector;
 import rosa.iiif.presentation.model.selector.Selector;
-import rosa.iiif.presentation.model.selector.SvgSelector;
-import rosa.iiif.presentation.model.selector.SvgType;
-import rosa.iiif.presentation.model.util.HtmlValue;
-import rosa.iiif.presentation.model.util.TextValue;
+import rosa.iiif.presentation.model.HtmlValue;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -105,8 +103,8 @@ public class ManifestTransformerTest {
             assertNull("Target has a Selector.", imageAnno.getDefaultTarget().getSelector());
             assertFalse("Target is specific resource.", imageAnno.getDefaultTarget().isSpecificResource());
 
-            assertEquals("Canvas width incorrect.", 1000, c.getWidth());
-            assertEquals("Canvas height incorrect.", 1500, c.getHeight());
+            assertEquals("Canvas width incorrect.", 2000, c.getWidth());
+            assertEquals("Canvas height incorrect.", 3000, c.getHeight());
 
             assertNotNull("List of other content annotations is missing.",
                     c.getOtherContent()
@@ -139,10 +137,19 @@ public class ManifestTransformerTest {
             c.setWidth(1000);
             c.setHeight(1500);
 
-            AnnotationTarget t = transformer.locationOnCanvas(c, Location.HEAD);
-            checkTarget(t, false);
             checkTarget(transformer.locationOnCanvas(c, Location.RIGHT_MARGIN), false);
             checkTarget(transformer.locationOnCanvas(c, Location.FULL_PAGE), true);
+
+            AnnotationTarget t = transformer.locationOnCanvas(c, Location.HEAD);
+            checkTarget(t, false);
+
+            String selectorContent = t.getSelector().content();
+            String[] parts = selectorContent.split(",");
+            assertEquals(4, parts.length);
+            assertEquals("0", parts[0]);
+            assertEquals("0", parts[1]);
+            assertEquals("1000", parts[2]);
+            // x, y, width are always known. Height depends on the guessing factor
         }
     }
 
@@ -156,8 +163,7 @@ public class ManifestTransformerTest {
 
             Selector s = target.getSelector();
             assertNotNull(s);
-            assertTrue(s instanceof SvgSelector);
-            assertEquals(SvgType.RECT, ((SvgSelector) s).getType());
+            assertTrue(s instanceof FragmentSelector);
         }
     }
 

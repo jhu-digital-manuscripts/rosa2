@@ -1,4 +1,4 @@
-package rosa.iiif.presentation.model.util;
+package rosa.iiif.presentation.model;
 
 public class TextValue {
 
