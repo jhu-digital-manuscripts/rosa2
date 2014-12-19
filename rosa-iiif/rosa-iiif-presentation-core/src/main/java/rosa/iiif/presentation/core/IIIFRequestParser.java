@@ -24,7 +24,7 @@ public class IIIFRequestParser {
         return parts;
     }
 
-    private PresentationRequestType getType(String keyword) {
+    private PresentationRequestType parse_type(String keyword) {
         for (PresentationRequestType type : PresentationRequestType.values()) {
             if (type.getKeyword().equals(keyword)) {
                 return type;
@@ -59,7 +59,7 @@ public class IIIFRequestParser {
             }
         } else if (parts.length == 3) {
             req.setId(parts[0]);
-            req.setType(getType(parts[1]));
+            req.setType(parse_type(parts[1]));
             req.setName(parts[2]);
         } else {
             return null;
