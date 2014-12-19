@@ -39,6 +39,7 @@ public class IIIFServletModule extends ServletModule {
 
     @Provides
     protected IIIFService provideIIIFService() {
-        return new ArchiveIIIFService();
+        // TODO Think about StoreImpl config wiring
+        return new ArchiveIIIFService(null);
     }
 }
