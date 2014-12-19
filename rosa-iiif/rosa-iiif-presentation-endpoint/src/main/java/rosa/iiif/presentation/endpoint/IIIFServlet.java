@@ -17,7 +17,7 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
 /**
- * Implement the IIIF Image API version 2.0, http://iiif.io/api/image/2.0/
+ * Implement the IIIF Presentation API version 2.0, http://iiif.io/api/presentation/2.0/
  */
 @Singleton
 public class IIIFServlet extends HttpServlet {
