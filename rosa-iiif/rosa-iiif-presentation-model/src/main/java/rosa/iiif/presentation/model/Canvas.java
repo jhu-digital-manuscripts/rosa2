@@ -69,6 +69,8 @@ public class Canvas extends PresentationBase implements Serializable {
         super();
         images = new ArrayList<>();
         otherContent = new ArrayList<>();
+
+        setType(IIIFNames.SC_CANVAS);
     }
 
     public int getHeight() {

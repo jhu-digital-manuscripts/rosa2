@@ -36,7 +36,6 @@
         <commons-io.version>2.4</commons-io.version>
         <commons-codec.version>1.9</commons-codec.version>
         <commons-cli.version>1.2</commons-cli.version>
-        <jsoup.version>1.8.1</jsoup.version>
     </properties>
 
     <dependencyManagement>

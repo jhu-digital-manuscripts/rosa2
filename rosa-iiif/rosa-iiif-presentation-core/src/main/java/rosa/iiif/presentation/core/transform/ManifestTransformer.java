@@ -150,7 +150,7 @@ public class ManifestTransformer {
         }
 
         Sequence sequence = new Sequence();
-        sequence.setId(imageList.getId()); // TODO make URL
+        sequence.setId(imageList.getId());
         sequence.setType(IIIFNames.SC_SEQUENCE);
         sequence.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
 
@@ -191,27 +191,34 @@ public class ManifestTransformer {
             return null;
         }
         Canvas canvas = new Canvas();
-        canvas.setId("URL"); // TODO URL
+        canvas.setId("URL");
         canvas.setType(IIIFNames.SC_CANVAS);
         canvas.setLabel(image.getPage(), "en");
 
+        // Images of bindings or misc images will be displayed as individuals
+        // instead of openings
         if (image.getId().contains("misc") || image.getId().contains("binding")) {
             canvas.setViewingHint(ViewingHint.NON_PAGED);
         } else {
             canvas.setViewingHint(ViewingHint.PAGED);
         }
 
+        // If the image is less than 1200 px in either dimension, force the dimensions
+        // of the canvas to be double that of the image.
         boolean tooSmall = image.getWidth() < 1200 || image.getHeight() < 1200;
         canvas.setWidth(tooSmall ? image.getWidth() * 2 : image.getWidth());
         canvas.setHeight(tooSmall ? image.getHeight() * 2 : image.getHeight());
+        // Set images to be the single image
         canvas.setImages(Arrays.asList(imageResource(image, canvas.getId())));
 
         // Set default target of this image to this Canvas
         canvas.setImages(Arrays.asList(imageResource(image, canvas.getId())));
 
+        // Set 'other content' to be AoR transcriptions as IIIF annotations
         List<Annotation> aorAnnotations = annotationsFromAoR(canvas,
                 book.getAnnotationPage(image.getPage()));
         canvas.setOtherContent(aorAnnotations);
+        // TODO add rosa transcriptions as annotations!
 
         return canvas;
     }
@@ -302,7 +309,7 @@ public class ManifestTransformer {
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.setDefaultSource(new AnnotationSource(
                 "URI", IIIFNames.DC_TEXT, "text/html", anno.toPrettyString(), "en"
-        ));
+        )); // TODO URL
 
         a.setDefaultTarget(locationOnCanvas(canvas, anno.getLocation()));
 
@@ -312,6 +319,10 @@ public class ManifestTransformer {
     /**
      * Transform marginalia data into a list of annotations that are associated
      * with a canvas.
+     *
+     * Marginalia is split into potentially several languages, each of which are
+     * split into potentially several locations. Currently, each piece is treated
+     * as a new and separate IIIF annotation. TODO these pieces must be linked somehow
      *
      * @param marg AoR marginalia
      * @param canvas the canvas
@@ -328,7 +339,7 @@ public class ManifestTransformer {
                 anno.setDefaultSource(new AnnotationSource(
                         "URI", IIIFNames.DC_TEXT, "text/html",
                         pos.getTexts().toString(), lang.getLang()
-                ));
+                )); // TODO URL
                 anno.setDefaultTarget(locationOnCanvas(canvas, pos.getPlace()));
 
                 annotations.add(anno);

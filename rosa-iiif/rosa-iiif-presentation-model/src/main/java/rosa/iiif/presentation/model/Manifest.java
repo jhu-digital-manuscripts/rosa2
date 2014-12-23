@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Manifest extends PresentationBase implements Serializable {
@@ -10,12 +11,17 @@ public class Manifest extends PresentationBase implements Serializable {
     private List<Sequence> sequences;
     private int defaultSequence;
 
-    public Manifest() {}
+    public Manifest() {
+        sequences = new ArrayList<>();
+        setType(IIIFNames.SC_MANIFEST);
+    }
 
     public Manifest(ViewingDirection viewingDirection, List<Sequence> sequences, int defaultSequence) {
         this.viewingDirection = viewingDirection;
         this.sequences = sequences;
         this.defaultSequence = defaultSequence;
+
+        setType(IIIFNames.SC_MANIFEST);
     }
 
     public ViewingDirection getViewingDirection() {

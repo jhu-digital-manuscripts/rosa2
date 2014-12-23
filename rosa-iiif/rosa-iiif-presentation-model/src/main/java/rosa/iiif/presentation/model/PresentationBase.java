@@ -70,7 +70,7 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
     /**
      * URL to an external service that extends functionality of this resource.
      */
-    protected String service;
+    protected Service service;
     /**
      * URL to an external resource intended to be displayed.
      */
@@ -217,11 +217,11 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         this.seeAlso = seeAlso;
     }
 
-    public String getService() {
+    public Service getService() {
         return service;
     }
 
-    public void setService(String service) {
+    public void setService(Service service) {
         this.service = service;
     }
 

@@ -1,5 +1,6 @@
 package rosa.iiif.presentation.model.annotation;
 
+import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationBase;
 
 import java.io.Serializable;
@@ -25,6 +26,8 @@ public class Annotation extends PresentationBase implements Serializable {
 
         width = -1;
         height = -1;
+
+        setType(IIIFNames.OA_ANNOTATION);
     }
 
     public String getMotivation() {
