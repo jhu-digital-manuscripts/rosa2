@@ -8,6 +8,8 @@ import java.util.List;
  *
  */
 public class MarginaliaLanguage implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     String lang;
     List<Position> positions;
 

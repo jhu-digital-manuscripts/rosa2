@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Position implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     Location place;
     int orientation;

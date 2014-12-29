@@ -10,6 +10,7 @@ import java.util.List;
  *
  */
 public class AnnotatedPage implements HasId, Serializable {
+    private static final long serialVersionUID = 1L;
 
     private String id;
     private String page;
