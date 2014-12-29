@@ -1,24 +1,11 @@
 package rosa.archive.core.check;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import rosa.archive.core.AbstractFileSystemTest;
-import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.config.AppConfig;
-import rosa.archive.model.*;
-import rosa.archive.model.BookMetadata;
-import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.Annotation;
-import rosa.archive.model.aor.Symbol;
-import rosa.archive.model.aor.Underline;
-import rosa.archive.model.redtag.StructurePage;
-import rosa.archive.model.redtag.StructurePageSide;
+import static org.junit.Assert.assertFalse;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -26,11 +13,39 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import rosa.archive.core.AbstractFileSystemTest;
+import rosa.archive.core.ByteStreamGroup;
+import rosa.archive.core.config.AppConfig;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
+import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookScene;
+import rosa.archive.model.BookStructure;
+import rosa.archive.model.BookText;
+import rosa.archive.model.CharacterName;
+import rosa.archive.model.CharacterNames;
+import rosa.archive.model.CropData;
+import rosa.archive.model.CropInfo;
+import rosa.archive.model.Illustration;
+import rosa.archive.model.IllustrationTagging;
+import rosa.archive.model.IllustrationTitles;
+import rosa.archive.model.ImageList;
+import rosa.archive.model.NarrativeScene;
+import rosa.archive.model.NarrativeSections;
+import rosa.archive.model.NarrativeTagging;
+import rosa.archive.model.Permission;
+import rosa.archive.model.SHA1Checksum;
+import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Symbol;
+import rosa.archive.model.aor.Underline;
+import rosa.archive.model.redtag.StructurePage;
+import rosa.archive.model.redtag.StructurePageSide;
 
 /**
 * @see rosa.archive.core.check.BookChecker
@@ -39,7 +54,6 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
     @Mock
     private AppConfig config;
-    private InputStream in;
 
     @Before
     public void setup() throws URISyntaxException, IOException {
@@ -63,7 +77,6 @@ public class BookCheckerTest extends AbstractFileSystemTest {
     }
 
     @Test
-    @SuppressWarnings("unchecked")
     public void checkContentTest() throws IOException {
         BookChecker bChecker = new BookChecker(config, serializerMap);
 

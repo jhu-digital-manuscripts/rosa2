@@ -1,20 +1,19 @@
 package rosa.archive.core.serialize;
 
-import org.junit.Before;
-import org.junit.Test;
-import rosa.archive.model.BookScene;
-import rosa.archive.model.NarrativeTagging;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
+import org.junit.Before;
+import org.junit.Test;
+
+import rosa.archive.model.BookScene;
+import rosa.archive.model.NarrativeTagging;
 
 /**
  * @see rosa.archive.core.serialize.NarrativeTaggingSerializer

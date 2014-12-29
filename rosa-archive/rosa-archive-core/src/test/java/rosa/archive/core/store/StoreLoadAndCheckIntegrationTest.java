@@ -1,11 +1,23 @@
 package rosa.archive.core.store;
 
-import com.google.inject.Inject;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
+
 import rosa.archive.core.AbstractFileSystemTest;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.GuiceJUnitRunner;
@@ -14,21 +26,10 @@ import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.Serializer;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
-import rosa.archive.model.BookMetadata;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.meta.MultilangMetadata;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import com.google.inject.Inject;
 
 /**
  *

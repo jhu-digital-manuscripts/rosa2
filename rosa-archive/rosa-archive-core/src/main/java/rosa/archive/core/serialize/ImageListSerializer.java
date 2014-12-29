@@ -1,20 +1,21 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import com.google.inject.Inject;
 
 /**
  *

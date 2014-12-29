@@ -122,7 +122,6 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
 
     @Test
     public void readNonexistantFile() throws IOException {
-        final String file = "fake file";
         List<String> errors = new ArrayList<>();
 
         AnnotatedPage page = serializer.read(null, errors);

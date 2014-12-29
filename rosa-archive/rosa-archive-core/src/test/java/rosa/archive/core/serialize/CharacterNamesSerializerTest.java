@@ -1,22 +1,21 @@
 package rosa.archive.core.serialize;
 
-import org.junit.Before;
-import org.junit.Test;
-import rosa.archive.model.*;
-
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.nio.file.Files;
-import java.util.Arrays;
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import rosa.archive.model.CharacterName;
+import rosa.archive.model.CharacterNames;
 
 /**
  * @see rosa.archive.core.serialize.CharacterNamesSerializer

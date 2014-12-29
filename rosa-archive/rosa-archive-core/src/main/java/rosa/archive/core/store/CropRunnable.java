@@ -1,15 +1,14 @@
 package rosa.archive.core.store;
 
-import rosa.archive.model.BookImage;
-import rosa.archive.model.CropData;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
+import rosa.archive.model.BookImage;
+import rosa.archive.model.CropData;
 
 public class CropRunnable implements Runnable {
     private BookImage image;

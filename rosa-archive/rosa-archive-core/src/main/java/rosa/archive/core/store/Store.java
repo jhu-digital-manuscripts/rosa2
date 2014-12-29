@@ -1,11 +1,10 @@
 package rosa.archive.core.store;
 
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
-import rosa.archive.model.SHA1Checksum;
-
 import java.io.IOException;
 import java.util.List;
+
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
 
 /**
  *

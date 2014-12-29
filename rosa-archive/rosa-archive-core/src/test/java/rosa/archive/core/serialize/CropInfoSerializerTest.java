@@ -1,9 +1,9 @@
 package rosa.archive.core.serialize;
 
-import org.junit.Before;
-import org.junit.Test;
-import rosa.archive.model.CropData;
-import rosa.archive.model.CropInfo;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,11 +13,11 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
+import org.junit.Before;
+import org.junit.Test;
+
+import rosa.archive.model.CropData;
+import rosa.archive.model.CropInfo;
 
 /**
  * @see rosa.archive.core.serialize.CropInfoSerializer

@@ -1,29 +1,18 @@
 package rosa.archive.core;
 
-import com.google.inject.Inject;
-import org.apache.commons.codec.binary.Hex;
-import org.apache.commons.codec.digest.DigestUtils;
-import org.junit.Ignore;
+import static org.junit.Assert.assertEquals;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.core.config.AppConfig;
 
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URI;
-import java.net.URL;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.security.MessageDigest;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import com.google.inject.Inject;
 
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ArchiveCoreModule.class})

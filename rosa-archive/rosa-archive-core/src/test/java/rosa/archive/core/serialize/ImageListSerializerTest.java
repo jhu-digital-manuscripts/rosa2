@@ -1,22 +1,21 @@
 package rosa.archive.core.serialize;
 
-import org.junit.Before;
-import org.junit.Test;
-import rosa.archive.model.BookImage;
-import rosa.archive.model.ImageList;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import rosa.archive.model.BookImage;
+import rosa.archive.model.ImageList;
 
 /**
  * @see rosa.archive.core.serialize.ImageListSerializer
