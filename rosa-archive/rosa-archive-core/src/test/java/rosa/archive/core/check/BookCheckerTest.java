@@ -18,7 +18,7 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import rosa.archive.core.AbstractFileSystemTest;
+import rosa.archive.core.BaseGuiceTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.Book;
@@ -50,7 +50,7 @@ import rosa.archive.model.redtag.StructurePageSide;
 /**
 * @see rosa.archive.core.check.BookChecker
 */
-public class BookCheckerTest extends AbstractFileSystemTest {
+public class BookCheckerTest extends BaseGuiceTest {
 
     @Mock
     private AppConfig config;
@@ -78,7 +78,7 @@ public class BookCheckerTest extends AbstractFileSystemTest {
 
     @Test
     public void checkContentTest() throws IOException {
-        BookChecker bChecker = new BookChecker(config, serializerMap);
+        BookChecker bChecker = new BookChecker(config, serializers);
 
         ByteStreamGroup bsg = mock(ByteStreamGroup.class);
         when(bsg.getByteStream(anyString())).thenReturn(

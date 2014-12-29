@@ -1,7 +1,9 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.core.util.CSVSpreadSheet;
@@ -33,7 +35,7 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
     }
 
     @Override
-    public IllustrationTitles read(InputStream is, List<String> errors) throws IOException{
+    public IllustrationTitles read(InputStream is, List<String> errors) throws IOException {
 
         IllustrationTitles titles = new IllustrationTitles();
 
@@ -69,5 +71,10 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
             IOUtils.write(line, out, Charset.forName(config.getCHARSET()));
         }
 
+    }
+
+    @Override
+    public Class<IllustrationTitles> getObjectType() {
+        return IllustrationTitles.class;
     }
 }

@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import rosa.archive.core.ByteStreamGroup;
@@ -24,6 +25,7 @@ import rosa.archive.core.FSByteStreamGroup;
 /**
  *
  */
+@Ignore
 public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
     private static final String COLLECTION = "collection";
 

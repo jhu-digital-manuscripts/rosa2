@@ -89,4 +89,9 @@ public class ImageListSerializer implements Serializer<ImageList> {
             IOUtils.write(line, out, config.getCHARSET());
         }
     }
+
+    @Override
+    public Class<ImageList> getObjectType() {
+        return ImageList.class;
+    }
 }

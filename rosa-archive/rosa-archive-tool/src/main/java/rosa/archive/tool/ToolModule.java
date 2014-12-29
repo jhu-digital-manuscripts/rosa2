@@ -2,6 +2,7 @@ package rosa.archive.tool;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
+
 import rosa.archive.tool.config.ToolConfig;
 
 import java.io.IOException;
@@ -28,7 +29,7 @@ public class ToolModule extends AbstractModule {
         try (InputStream in = getClass().getClassLoader().getResourceAsStream("tool-config.properties")) {
             props.load(in);
         } catch (IOException e) {
-            // TODO log
+            throw new RuntimeException(e);
         }
 
         return props;

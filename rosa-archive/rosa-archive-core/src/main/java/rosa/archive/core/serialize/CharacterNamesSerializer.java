@@ -1,7 +1,9 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.core.util.CSVSpreadSheet;
@@ -102,5 +104,10 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
             IOUtils.write(sb, out, Charset.forName(config.getCHARSET()));
         }
 
+    }
+
+    @Override
+    public Class<CharacterNames> getObjectType() {
+        return CharacterNames.class;
     }
 }

@@ -7,6 +7,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
+
 import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.BookText;
 import rosa.archive.model.meta.BiblioData;
@@ -15,6 +16,7 @@ import rosa.archive.model.meta.MultilangMetadata;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -288,5 +290,10 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
         parent.appendChild(el);
 
         return el;
+    }
+
+    @Override
+    public Class<MultilangMetadata> getObjectType() {
+        return MultilangMetadata.class;
     }
 }

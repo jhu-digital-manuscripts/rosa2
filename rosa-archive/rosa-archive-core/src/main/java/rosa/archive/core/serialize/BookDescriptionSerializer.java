@@ -17,24 +17,13 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.BookDescription;
-
-import com.google.inject.Inject;
 
 /**
  *
  */
 public class BookDescriptionSerializer implements Serializer<BookDescription> {
-
-    private AppConfig config;
-
-    @Inject
-    BookDescriptionSerializer(AppConfig config) {
-        this.config = config;
-    }
-
     @Override
     public BookDescription read(InputStream is, List<String> errors) throws IOException {
 
@@ -118,5 +107,10 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
         }
 
         return description;
+    }
+
+    @Override
+    public Class<BookDescription> getObjectType() {
+        return BookDescription.class;
     }
 }

@@ -6,6 +6,8 @@ import com.google.inject.name.Named;
 /**
  *
  */
+// TODO Much of this does not belong here
+
 public class AppConfig {
 
     @Inject @Named("ENCODING")

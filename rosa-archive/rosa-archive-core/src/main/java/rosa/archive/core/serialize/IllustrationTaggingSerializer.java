@@ -1,7 +1,9 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.Illustration;
@@ -102,5 +104,10 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
         }
 
         return sb.toString();
+    }
+
+    @Override
+    public Class<IllustrationTagging> getObjectType() {
+       return IllustrationTagging.class;
     }
 }

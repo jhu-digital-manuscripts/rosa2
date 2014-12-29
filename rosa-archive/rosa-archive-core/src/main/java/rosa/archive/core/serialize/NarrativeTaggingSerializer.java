@@ -1,7 +1,9 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookScene;
@@ -279,5 +281,10 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
         scene.setEndPageCol(end_folio_col);
 
         return scene;
+    }
+
+    @Override
+    public Class<NarrativeTagging> getObjectType() {
+        return NarrativeTagging.class;
     }
 }

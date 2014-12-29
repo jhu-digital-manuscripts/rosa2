@@ -1,17 +1,18 @@
 package rosa.archive.core.check;
 
-import com.google.inject.Inject;
+import java.util.List;
+
 import org.apache.commons.lang3.StringUtils;
+
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
-import rosa.archive.core.serialize.Serializer;
+import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.NarrativeSections;
 
-import java.util.List;
-import java.util.Map;
+import com.google.inject.Inject;
 
 /**
  *
@@ -19,8 +20,8 @@ import java.util.Map;
 public class BookCollectionChecker extends AbstractArchiveChecker {
 
     @Inject
-    public BookCollectionChecker(AppConfig config, Map<Class, Serializer> serializerMap) {
-        super(config, serializerMap);
+    public BookCollectionChecker(AppConfig config, SerializerSet serializers) {
+        super(config, serializers);
     }
 
     public boolean checkContent(BookCollection collection, ByteStreamGroup bsg, boolean checkBits,

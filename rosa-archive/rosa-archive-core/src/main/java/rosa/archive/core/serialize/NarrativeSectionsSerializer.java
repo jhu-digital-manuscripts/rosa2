@@ -1,8 +1,10 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.NarrativeScene;
@@ -158,5 +160,10 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
         scene.setRel_line_end(lines[1]);
 
         return scene;
+    }
+
+    @Override
+    public Class<NarrativeSections> getObjectType() {
+        return NarrativeSections.class;
     }
 }

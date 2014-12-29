@@ -1,17 +1,25 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-import rosa.archive.core.config.AppConfig;
+
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Location;
-import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
@@ -19,26 +27,10 @@ import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.List;
-
 /**
  *
  */
 public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
-
-    private AppConfig config;
-
-    @Inject
-    AORAnnotatedPageSerializer(AppConfig config) {
-        this.config = config;
-    }
-
     @Override
     public AnnotatedPage read(InputStream is, final List<String> errors) throws IOException {
 
@@ -266,5 +258,10 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
         }
 
         return pos;
+    }
+
+    @Override
+    public Class<AnnotatedPage> getObjectType() {
+        return AnnotatedPage.class;
     }
 }

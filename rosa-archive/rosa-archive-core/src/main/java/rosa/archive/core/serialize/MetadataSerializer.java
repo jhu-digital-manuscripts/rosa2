@@ -21,6 +21,8 @@ import org.xml.sax.SAXException;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 
+// TODO Should not work on map.
+
 public class MetadataSerializer implements Serializer<Map<String, BookMetadata>> {
     @Override
     public Map<String, BookMetadata> read(InputStream is, List<String> errors) throws IOException {
@@ -335,5 +337,10 @@ public class MetadataSerializer implements Serializer<Map<String, BookMetadata>>
         } else {
             return el.getAttribute(attribute);
         }
+    }
+
+    @Override
+    public Class<Map<String, BookMetadata>> getObjectType() {
+        return null;
     }
 }

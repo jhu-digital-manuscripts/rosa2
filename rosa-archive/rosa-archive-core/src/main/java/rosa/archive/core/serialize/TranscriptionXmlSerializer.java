@@ -1,7 +1,9 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.Transcription;
 
@@ -41,6 +43,11 @@ public class TranscriptionXmlSerializer implements Serializer<Transcription> {
     @Override
     public void write(Transcription object, OutputStream out) throws IOException {
         throw new UnsupportedOperationException("Not implemented");
+    }
+
+    @Override
+    public Class<Transcription> getObjectType() {
+        return Transcription.class;
     }
 
 }

@@ -94,24 +94,21 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         bibl.appendChild(note(config.getMetadataTypeTag(), metadata.getType(), doc));
         bibl.appendChild(note(config.getMetadataCommonNameTag(), metadata.getCommonName(), doc));
         bibl.appendChild(note(config.getMetadataMaterialTag(), metadata.getMaterial(), doc));
-        bibl.appendChild(note(
-                config.getMetadataNumIllustrationsTag(),
-                String.valueOf(metadata.getNumberOfIllustrations()),
-                doc
-        ));
+        bibl.appendChild(note(config.getMetadataNumIllustrationsTag(),
+                String.valueOf(metadata.getNumberOfIllustrations()), doc));
 
         // <extent>
         Element extentEl = doc.createElement("extent");
         bibl.appendChild(extentEl);
 
-        //    <measure>
+        // <measure>
         Element measureEl = doc.createElement(config.getMetadataMeasureTag());
         extentEl.appendChild(measureEl);
         measureEl.setAttribute(config.getMetadataNumPagesTag(), String.valueOf(metadata.getNumberOfPages()));
         measureEl.setAttribute("unit", "folios");
         measureEl.appendChild(doc.createTextNode(metadata.getNumberOfPages() + " folios"));
 
-        //    <dimensions>
+        // <dimensions>
         Element dimensionsEl = doc.createElement("dimensions");
         extentEl.appendChild(dimensionsEl);
 
@@ -120,7 +117,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         height.setAttribute("unit", metadata.getDimensionUnits());
         height.appendChild(doc.createTextNode(String.valueOf(metadata.getHeight())));
 
-        //        <width>
+        // <width>
         Element width = doc.createElement(config.getMetadataWidthTag());
         dimensionsEl.appendChild(width);
         height.setAttribute("unit", metadata.getDimensionUnits());
@@ -130,33 +127,33 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         Element msDesc = doc.createElement("msDesc");
         sourceDesc.appendChild(msDesc);
 
-        //    <msIdentifier>
+        // <msIdentifier>
         Element msIdentifier = doc.createElement("msIdentifier");
         msDesc.appendChild(msIdentifier);
 
-        //        <settlement>
+        // <settlement>
         Element origin = doc.createElement(config.getMetadataOriginTag());
         msIdentifier.appendChild(origin);
         origin.appendChild(doc.createTextNode(metadata.getOrigin()));
 
-        //        <repository>
+        // <repository>
         Element repository = doc.createElement(config.getMetadataRepositoryTag());
         msIdentifier.appendChild(repository);
         repository.appendChild(doc.createTextNode(metadata.getRepository()));
 
-        //        <idno>
+        // <idno>
         Element shelfmark = doc.createElement(config.getMetadataShelfmarkTag());
         msIdentifier.appendChild(shelfmark);
         shelfmark.appendChild(doc.createTextNode(metadata.getShelfmark()));
 
-        //    <msContents>
+        // <msContents>
         Element msContents = doc.createElement("msContents");
         msDesc.appendChild(msContents);
 
         for (int i = 0; i < metadata.getTexts().length; i++) {
             BookText text = metadata.getTexts()[i];
 
-        //        <msItems>
+            // <msItems>
             Element msItem = doc.createElement("msItem");
             msContents.appendChild(msItem);
             msItem.setAttribute("n", String.valueOf(i));
@@ -164,51 +161,42 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             Element locus = doc.createElement(config.getMetadataTextsLocusTag());
             msItem.appendChild(locus);
             locus.setAttribute(config.getMetadataTextsFirstPageTag(), text.getFirstPage());
-            locus.setAttribute(config.getMetadataTextsLastPageTag() , text.getLastPage() );
+            locus.setAttribute(config.getMetadataTextsLastPageTag(), text.getLastPage());
             locus.appendChild(doc.createTextNode(text.getFirstPage() + "-" + text.getLastPage()));
 
-            msItem.appendChild(note(
-                    config.getMetadataTextsIdTag(),
-                    text.getId(),
-                    doc
-            ));
-            msItem.appendChild(note(
-                    config.getMetadataTextsNumPagesTag(),
-                    String.valueOf(text.getNumberOfPages()),
-                    doc
-            ));
-            msItem.appendChild(note(
-                    config.getMetadataNumIllustrationsTag(),
-                    String.valueOf(text.getNumberOfIllustrations()),
-                    doc
-            ));
-            msItem.appendChild(note(
-                    config.getMetadataTextsLinesPerColTag(),
-                    String.valueOf(text.getLinesPerColumn()),
-                    doc
-            ));
-            msItem.appendChild(note(
-                    config.getMetadataTextsLeavesPerGatheringTag(),
-                    String.valueOf(text.getLeavesPerGathering()),
-                    doc
-            ));
-            msItem.appendChild(note(
-                    config.getMetadataTextsColsPerPageTag(),
-                    String.valueOf(text.getColumnsPerPage()),
-                    doc
-            ));
+            msItem.appendChild(note(config.getMetadataTextsIdTag(), text.getId(), doc));
+            msItem.appendChild(note(config.getMetadataTextsNumPagesTag(), String.valueOf(text.getNumberOfPages()), doc));
+            msItem.appendChild(note(config.getMetadataNumIllustrationsTag(),
+                    String.valueOf(text.getNumberOfIllustrations()), doc));
+            msItem.appendChild(note(config.getMetadataTextsLinesPerColTag(), String.valueOf(text.getLinesPerColumn()),
+                    doc));
+            msItem.appendChild(note(config.getMetadataTextsLeavesPerGatheringTag(),
+                    String.valueOf(text.getLeavesPerGathering()), doc));
+            msItem.appendChild(note(config.getMetadataTextsColsPerPageTag(), String.valueOf(text.getColumnsPerPage()),
+                    doc));
         }
 
         XMLUtil.write(doc, out);
     }
 
     /**
-     * <note type="{@param type}">{@param text}</note>
-     * &lt;note type="{@param type}"&gt;{@param text}&lt;/note&gt;
-     *
-     * @param type type attribute
-     * @param text note text
-     * @param doc containing document
+     * <note type="
+     * 
+     * @param type
+     *            ">
+     * @param text
+     *            </note> &lt;note type="
+     * @param type
+     *            "&gt;
+     * @param text
+     *            &lt;/note&gt;
+     * 
+     * @param type
+     *            type attribute
+     * @param text
+     *            note text
+     * @param doc
+     *            containing document
      * @return the note element
      */
     private Element note(String type, String text, Document doc) {
@@ -221,38 +209,50 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
     }
 
     /**
-     * Get the text value of the first element encountered with the specified name. If
-     * no tags exist within the base element ({@param el}) with the name {@param name},
-     * then all <code>&lt;note&gt;</code> tags are searched. A <code>&lt;note&gt;</code>
-     * tag is determined to match if {@param name} matches the 'type' attribute.
-     *
-     * If both of these searches fails to find any matches, a value of NULL is returned.
-     *
-     * Example: method call: .firstElementValue(someElement, "commonName");
-     *
-     * If no <code>&lt;commonName&gt;</code> tags exist within <em>someElement</em>,
-     * then this method will search for <code>&lt;note type="commonName"&gt;</code>.
-     * The text content of this tag will be returned if it is found.
-     *
-     * @param el search inside this element
-     * @param name name of tag to look for
-     * @return
-     *          text value of the desired element. if multiple elements exist, than the
-     *          first value is taken
+     * Get the text value of the first element encountered with the specified
+     * name. If no tags exist within the base element (
+     * 
+     * @param el
+     *            ) with the name
+     * @param name
+     *            , then all <code>&lt;note&gt;</code> tags are searched. A
+     *            <code>&lt;note&gt;</code> tag is determined to match if
+     * @param name
+     *            matches the 'type' attribute.
+     * 
+     *            If both of these searches fails to find any matches, a value
+     *            of NULL is returned.
+     * 
+     *            Example: method call: .firstElementValue(someElement,
+     *            "commonName");
+     * 
+     *            If no <code>&lt;commonName&gt;</code> tags exist within
+     *            <em>someElement</em>, then this method will search for
+     *            <code>&lt;note type="commonName"&gt;</code>. The text content
+     *            of this tag will be returned if it is found.
+     * 
+     * @param el
+     *            search inside this element
+     * @param name
+     *            name of tag to look for
+     * @return text value of the desired element. if multiple elements exist,
+     *         than the first value is taken
      */
     private String firstElementValue(Element el, String name) {
         NodeList list = el.getElementsByTagName(name);
 
         // No XML tag with specified name.
         if (list.getLength() == 0) {
-            // First check if there is a <note> tag with 'type' attribute equal to specified name
+            // First check if there is a <note> tag with 'type' attribute equal
+            // to specified name
             NodeList notes = el.getElementsByTagName("note");
 
             if (notes == null) {
                 return null;
             }
 
-            // in read() method, create a Map<String, String> (type attribute -> textContent)?
+            // in read() method, create a Map<String, String> (type attribute ->
+            // textContent)?
             for (int i = 0; i < notes.getLength(); i++) {
                 Element note = (Element) notes.item(i);
                 if (note.getAttribute("type").equals(name)) {
@@ -276,10 +276,11 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
     /**
      * Parse a string as an integer. Will not throw an exception in the event of
-     * a parsing error, instead it will return the value of -1.
-     * A parsing error will happen if the input string is blank, or is not a number.
-     *
-     * @param integer string to parse
+     * a parsing error, instead it will return the value of -1. A parsing error
+     * will happen if the input string is blank, or is not a number.
+     * 
+     * @param integer
+     *            string to parse
      * @return integer equivalent of input string
      */
     private int getIntegerQuietly(String integer) {
@@ -296,8 +297,9 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
     /**
      * From an XML document, build the metadata object.
-     *
-     * @param doc XML document
+     * 
+     * @param doc
+     *            XML document
      * @return metadata
      */
     private BookMetadata buildMetadata(Document doc) {
@@ -322,8 +324,8 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         metadata.setCommonName(getString(top, config.getMetadataCommonNameTag()));
         metadata.setMaterial(getString(top, config.getMetadataMaterialTag()));
         metadata.setType(getString(top, config.getMetadataTypeTag()));
-        metadata.setDimensions((metadata.getWidth() == -1 || metadata.getHeight() == -1)
-                ? "" : metadata.getWidth() + "x" + metadata.getHeight() + "mm");
+        metadata.setDimensions((metadata.getWidth() == -1 || metadata.getHeight() == -1) ? "" : metadata.getWidth()
+                + "x" + metadata.getHeight() + "mm");
 
         NodeList measureElement = top.getElementsByTagName(config.getMetadataMeasureTag());
         if (measureElement.getLength() > 0) {
@@ -372,5 +374,10 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         metadata.setTexts(texts.toArray(new BookText[texts.size()]));
 
         return metadata;
+    }
+
+    @Override
+    public Class<BookMetadata> getObjectType() {
+        return BookMetadata.class;
     }
 }

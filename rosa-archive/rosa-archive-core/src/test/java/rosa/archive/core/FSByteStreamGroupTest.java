@@ -11,9 +11,9 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 /**
- *
+ * Test against data in src/test/resources.
  */
-public class FSByteStreamGroupTest extends AbstractFileSystemTest {
+public class FSByteStreamGroupTest extends BaseGuiceTest {
 
     @Test
     public void idTest() throws IOException {
@@ -133,5 +133,4 @@ public class FSByteStreamGroupTest extends AbstractFileSystemTest {
         assertTrue(data.hasByteStream("illustration_titles.csv"));
         assertTrue(data.hasByteStream("narrative_sections.csv"));
     }
-
 }

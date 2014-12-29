@@ -1,7 +1,9 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.SHA1Checksum;
 
@@ -52,5 +54,10 @@ public class SHA1ChecksumSerializer implements Serializer<SHA1Checksum> {
             String lineToWrite = checksums.get(id) + "  " + id + "\n";
             IOUtils.write(lineToWrite, out, config.getCHARSET());
         }
+    }
+
+    @Override
+    public Class<SHA1Checksum> getObjectType() {
+       return SHA1Checksum.class;
     }
 }

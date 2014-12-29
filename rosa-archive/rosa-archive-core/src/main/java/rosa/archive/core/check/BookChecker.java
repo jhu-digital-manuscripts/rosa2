@@ -1,13 +1,26 @@
 package rosa.archive.core.check;
 
-import com.google.inject.Inject;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.xml.XMLConstants;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
+
 import org.apache.commons.lang3.StringUtils;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
+
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.config.AppConfig;
-import rosa.archive.core.serialize.Serializer;
+import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -16,35 +29,24 @@ import rosa.archive.model.BookScene;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.BookText;
 import rosa.archive.model.CharacterNames;
-import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
-import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.meta.MultilangMetadata;
-import rosa.archive.model.redtag.Item;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
+import rosa.archive.model.SHA1Checksum;
+import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.meta.MultilangMetadata;
+import rosa.archive.model.redtag.Item;
 import rosa.archive.model.redtag.StructureColumn;
 import rosa.archive.model.redtag.StructurePage;
 import rosa.archive.model.redtag.StructurePageSide;
 
-import javax.xml.XMLConstants;
-import javax.xml.transform.Source;
-import javax.xml.transform.stream.StreamSource;
-import javax.xml.validation.Schema;
-import javax.xml.validation.SchemaFactory;
-import javax.xml.validation.Validator;
-import java.io.IOException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import com.google.inject.Inject;
 
 /**
  * @see rosa.archive.model.Book
@@ -55,8 +57,8 @@ public class BookChecker extends AbstractArchiveChecker {
     private static Schema aorAnnotationSchema;
 
     @Inject
-    BookChecker(AppConfig config, Map<Class, Serializer> serializerMap) {
-        super(config, serializerMap);
+    BookChecker(AppConfig config, SerializerSet serializers) {
+        super(config, serializers);
     }
 
     public boolean checkContent(

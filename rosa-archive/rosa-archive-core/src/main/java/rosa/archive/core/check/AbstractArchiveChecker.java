@@ -1,14 +1,5 @@
 package rosa.archive.core.check;
 
-import org.apache.commons.lang3.StringUtils;
-import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.config.AppConfig;
-import rosa.archive.core.serialize.Serializer;
-import rosa.archive.core.util.ChecksumUtil;
-import rosa.archive.model.SHA1Checksum;
-import rosa.archive.model.HasId;
-import rosa.archive.model.HashAlgorithm;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,19 +7,28 @@ import java.io.PrintStream;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+
+import org.apache.commons.lang3.StringUtils;
+
+import rosa.archive.core.ByteStreamGroup;
+import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.serialize.SerializerSet;
+import rosa.archive.core.util.ChecksumUtil;
+import rosa.archive.model.HasId;
+import rosa.archive.model.HashAlgorithm;
+import rosa.archive.model.SHA1Checksum;
 
 /**
  *
  */
 public abstract class AbstractArchiveChecker {
 
-    protected AppConfig config;
-    protected Map<Class, Serializer> serializerMap;
+    protected final AppConfig config;
+    protected final SerializerSet serializers;
 
-    AbstractArchiveChecker(AppConfig config, Map<Class, Serializer> serializerMap) {
+    AbstractArchiveChecker(AppConfig config, SerializerSet serializers) {
         this.config = config;
-        this.serializerMap = serializerMap;
+        this.serializers = serializers;
     }
 
     /**
@@ -52,7 +52,7 @@ public abstract class AbstractArchiveChecker {
 
         try (InputStream in = bsg.getByteStream(item.getId())) {
             // This will read the item in the archive and report any errors
-            serializerMap.get(item.getClass()).read(in, errors);
+            serializers.getSerializer(item.getClass()).read(in, errors);
         } catch (IOException e) {
             errors.add("Failed to read [" + bsg.name() + ":" + item.getId() + "]\n" + stacktrace(e));
         }
@@ -128,7 +128,7 @@ public abstract class AbstractArchiveChecker {
         // Load all stored checksum data
         SHA1Checksum SHA1Checksum = null;
         try (InputStream in = bsg.getByteStream(checksumName)) {
-            SHA1Checksum = (SHA1Checksum) serializerMap.get(SHA1Checksum.class).read(in, errors);
+            SHA1Checksum = serializers.getSerializer(SHA1Checksum.class).read(in, errors);
         } catch (IOException e) {
             errors.add("Failed to read checksums. [" + bsg.name() + ":" + checksumName + "]");
         }

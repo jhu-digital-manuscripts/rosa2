@@ -1,7 +1,9 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
@@ -60,13 +62,16 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
     public void write(CropInfo info, OutputStream out) throws IOException {
 
         for (CropData crop : info) {
-            String line = crop.getId() + " "
-                    + String.format("%03f", crop.getLeft()) + " "
-                    + String.format("%03f", crop.getRight()) + " "
-                    + String.format("%03f", crop.getTop()) + " "
+            String line = crop.getId() + " " + String.format("%03f", crop.getLeft()) + " "
+                    + String.format("%03f", crop.getRight()) + " " + String.format("%03f", crop.getTop()) + " "
                     + String.format("%03f", crop.getBottom()) + "\n";
             IOUtils.write(line, out, config.getCHARSET());
         }
 
+    }
+
+    @Override
+    public Class<CropInfo> getObjectType() {
+        return CropInfo.class;
     }
 }

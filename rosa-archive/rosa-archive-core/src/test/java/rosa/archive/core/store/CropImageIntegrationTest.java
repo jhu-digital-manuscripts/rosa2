@@ -1,6 +1,8 @@
 package rosa.archive.core.store;
 
+import org.junit.Ignore;
 import org.junit.Test;
+
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
 
@@ -16,6 +18,7 @@ import static org.junit.Assert.assertTrue;
 /**
  *
  */
+@Ignore
 public class CropImageIntegrationTest extends StoreIntegrationBase {
 
     /**

@@ -1,7 +1,9 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.Permission;
 
@@ -42,5 +44,10 @@ public class PermissionSerializer implements Serializer<Permission> {
     @Override
     public void write(Permission permission, OutputStream out) throws IOException {
         IOUtils.write(permission.getPermission(), out, Charset.forName(config.getCHARSET()));
+    }
+
+    @Override
+    public Class<Permission> getObjectType() {
+        return Permission.class;
     }
 }

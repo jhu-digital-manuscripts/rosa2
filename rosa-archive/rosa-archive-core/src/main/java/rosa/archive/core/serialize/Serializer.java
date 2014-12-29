@@ -8,28 +8,31 @@ import java.util.List;
 /**
  *
  */
-public interface Serializer<E> {
+public interface Serializer<T> {
 
     /**
      * Read an input stream to construct a data model object.
-     *
+     * 
      * @param is
-     *          input stream
-     * @return
-     *          object from persistent store
+     *            input stream
+     * @return object from persistent store
      * @throws java.io.IOException
      */
-    E read(InputStream is, List<String> errors) throws IOException;
+    T read(InputStream is, List<String> errors) throws IOException;
 
     /**
      * Output a data model object to an output stream.
-     *
+     * 
      * @param object
-     *          object to write
+     *            object to write
      * @param out
-     *          output stream
+     *            output stream
      * @throws java.io.IOException
      */
-    void write(E object, OutputStream out) throws IOException ;
+    void write(T object, OutputStream out) throws IOException;
 
+    /**
+     * @return supported object type
+     */
+    Class<T> getObjectType();
 }

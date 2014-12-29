@@ -1,21 +1,5 @@
 package rosa.archive.core.store;
 
-import com.google.inject.Inject;
-import com.google.inject.assistedinject.Assisted;
-import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang3.StringUtils;
-import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.check.BookChecker;
-import rosa.archive.core.check.BookCollectionChecker;
-import rosa.archive.core.config.AppConfig;
-import rosa.archive.core.serialize.Serializer;
-import rosa.archive.core.util.BookImageComparator;
-import rosa.archive.core.util.ChecksumUtil;
-import rosa.archive.model.*;
-import rosa.archive.model.BookMetadata;
-import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.meta.MultilangMetadata;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,26 +18,58 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
+
+import rosa.archive.core.ByteStreamGroup;
+import rosa.archive.core.check.BookChecker;
+import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.serialize.SerializerSet;
+import rosa.archive.core.util.BookImageComparator;
+import rosa.archive.core.util.ChecksumUtil;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
+import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookStructure;
+import rosa.archive.model.CharacterNames;
+import rosa.archive.model.CropData;
+import rosa.archive.model.CropInfo;
+import rosa.archive.model.HasId;
+import rosa.archive.model.HashAlgorithm;
+import rosa.archive.model.IllustrationTagging;
+import rosa.archive.model.IllustrationTitles;
+import rosa.archive.model.ImageList;
+import rosa.archive.model.NarrativeSections;
+import rosa.archive.model.NarrativeTagging;
+import rosa.archive.model.Permission;
+import rosa.archive.model.SHA1Checksum;
+import rosa.archive.model.Transcription;
+import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.meta.MultilangMetadata;
+
+import com.google.inject.Inject;
+
 /**
  *
  */
 public class StoreImpl implements Store {
-
+    private final SerializerSet serializers;
     private final ByteStreamGroup base;
     private final AppConfig config;
-    private Map<Class, Serializer> serializerMap;
-    private BookCollectionChecker collectionChecker;
-    private BookChecker bookChecker;
+    private final BookCollectionChecker collectionChecker;
+    private final BookChecker bookChecker;
 
     @Inject
-    public StoreImpl(Map<Class, Serializer> serializerMap,
+    public StoreImpl(SerializerSet serializers,
                      BookChecker bookChecker,
                      BookCollectionChecker collectionChecker,
                      AppConfig config,
-                     @Assisted ByteStreamGroup base) {
+                     ByteStreamGroup base) {
+        this.serializers = serializers;
         this.base = base;
         this.config = config;
-        this.serializerMap = serializerMap;
         this.collectionChecker = collectionChecker;
         this.bookChecker = bookChecker;
     }
@@ -703,7 +719,6 @@ public class StoreImpl implements Store {
         return success && writeItem(checksums, bsg, SHA1Checksum.class, errors);
     }
 
-    @SuppressWarnings("unchecked")
     protected <T extends HasId> boolean  writeItem(T item, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
         // No item to write
         if (item == null) {
@@ -712,10 +727,7 @@ public class StoreImpl implements Store {
         }
 
         try (OutputStream out = bsg.getOutputStream(item.getId())) {
-
-            Serializer serializer = serializerMap.get(type);
-            serializer.write(item, out);
-
+            serializers.getSerializer(type).write(item, out);
             return true;
         } catch (IOException e) {
             errors.add("Failed to write [" + item.getId() + "]\n" + stacktrace(e));
@@ -723,7 +735,6 @@ public class StoreImpl implements Store {
         }
     }
 
-    @SuppressWarnings("unchecked")
     protected <T extends HasId> T loadItem(String name, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
         // The file does not exist
         if (!bsg.hasByteStream(name)) {
@@ -731,9 +742,7 @@ public class StoreImpl implements Store {
         }
 
         try (InputStream in = bsg.getByteStream(name)) {
-            Serializer serializer = serializerMap.get(type);
-
-            T obj = (T) serializer.read(in, errors);
+            T obj = serializers.getSerializer(type).read(in, errors);
             obj.setId(name);
 
             return obj;

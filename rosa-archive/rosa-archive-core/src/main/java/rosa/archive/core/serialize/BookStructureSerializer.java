@@ -1,7 +1,9 @@
 package rosa.archive.core.serialize;
 
 import com.google.inject.Inject;
+
 import org.apache.commons.io.IOUtils;
+
 import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.redtag.Blank;
 import rosa.archive.model.BookStructure;
@@ -277,5 +279,10 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
     @Override
     public void write(BookStructure object, OutputStream out) throws IOException {
         throw new UnsupportedOperationException("Not implemented");
+    }
+
+    @Override
+    public Class<BookStructure> getObjectType() {
+        return BookStructure.class;
     }
 }

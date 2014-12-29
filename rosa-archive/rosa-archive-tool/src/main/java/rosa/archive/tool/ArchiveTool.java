@@ -2,6 +2,7 @@ package rosa.archive.tool;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -9,11 +10,16 @@ import org.apache.commons.cli.Option;
 import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
+
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
+import rosa.archive.core.check.BookChecker;
+import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.core.store.Store;
-import rosa.archive.core.store.StoreFactory;
+import rosa.archive.core.store.StoreImpl;
 import rosa.archive.model.Book;
 import rosa.archive.tool.config.Command;
 import rosa.archive.tool.config.Flag;
@@ -59,7 +65,6 @@ public class ArchiveTool {
         Injector injector = Guice.createInjector(new ToolModule(), new ArchiveCoreModule());
 
         ToolConfig config = injector.getInstance(ToolConfig.class);
-        StoreFactory sFactory = injector.getInstance(StoreFactory.class);
 
         // Set the valid options for the tool
         Options options = new Options();
@@ -88,7 +93,7 @@ public class ArchiveTool {
 
         // Create the tool and run the command
         ByteStreamGroup base = new FSByteStreamGroup(config.getArchivePath());
-        Store store = sFactory.create(base);
+        Store store = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), injector.getInstance(AppConfig.class), base);
 
         tool = new ArchiveTool(store, config, System.out);
         tool.run(cmd);
