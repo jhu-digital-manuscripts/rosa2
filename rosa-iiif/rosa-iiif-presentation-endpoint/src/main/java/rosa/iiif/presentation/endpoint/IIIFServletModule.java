@@ -12,8 +12,7 @@ import com.google.inject.name.Names;
 import com.google.inject.servlet.ServletModule;
 
 /**
- * The servlet is configured by iiif-servlet.properties and image aliases are
- * set in image-aliases.properties.
+ * The servlet is configured by iiif-servlet.properties.
  */
 public class IIIFServletModule extends ServletModule {
     private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
