@@ -3,7 +3,7 @@ package rosa.iiif.presentation.core;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import rosa.archive.core.store.Store;
+import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;

@@ -37,9 +37,6 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
     @Before
     public void setup() {
         serializer = new AORAnnotatedPageSerializer();
-
-        when(config.getAnnotationSchemaUrl()).thenReturn("http://www.livesandletters.ac.uk/schema/aor_20141023.xsd");
-        when(config.getAnnotationDtdUrl()).thenReturn("http://www.livesandletters.ac.uk/schema/aor_20141023.dtd");
     }
 
     @Test

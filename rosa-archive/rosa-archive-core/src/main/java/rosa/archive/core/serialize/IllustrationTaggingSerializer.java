@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
@@ -23,10 +23,10 @@ import java.util.List;
  */
 public class IllustrationTaggingSerializer implements Serializer<IllustrationTagging> {
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    IllustrationTaggingSerializer(AppConfig config) {
+    IllustrationTaggingSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
@@ -34,7 +34,7 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
     public IllustrationTagging read(InputStream is, List<String> errors) throws IOException{
         IllustrationTagging tagging = new IllustrationTagging();
 
-        List<String> linesIn = IOUtils.readLines(is, config.getCHARSET());
+        List<String> linesIn = IOUtils.readLines(is, config.getEncoding());
 
         for (int i = 1; i < linesIn.size(); i++) {
             String[] row = CSV.parse(linesIn.get(i));
@@ -68,7 +68,7 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
     @Override
     public void write(IllustrationTagging tagging, OutputStream out) throws IOException {
         final String header = "id,Folio,Illustration title,Textual elements,Initials,Characters,Costume,Objects,Landscape,Architecture,Other\n";
-        IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
+        IOUtils.write(header, out, Charset.forName(config.getEncoding()));
 
         for (Illustration ill : tagging) {
             String line =
@@ -84,7 +84,7 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
                     + CSV.escape(ill.getArchitecture()) + ','
                     + CSV.escape(ill.getOther()) + '\n';
 
-            IOUtils.write(line, out, Charset.forName(config.getCHARSET()));
+            IOUtils.write(line, out, Charset.forName(config.getEncoding()));
         }
     }
 

@@ -19,7 +19,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -57,7 +57,7 @@ public class BookChecker extends AbstractArchiveChecker {
     private static Schema aorAnnotationSchema;
 
     @Inject
-    BookChecker(AppConfig config, SerializerSet serializers) {
+    BookChecker(ArchiveConfig config, SerializerSet serializers) {
         super(config, serializers);
     }
 
@@ -82,7 +82,7 @@ public class BookChecker extends AbstractArchiveChecker {
         //   cropInfo
         check(book.getCropInfo(), book, bsg, errors, warnings);
 
-        for (String lang : config.languages()) {
+        for (String lang : config.getLanguages()) {
             //   bookMetadata
             check(book.getBookMetadata(lang), book, bsg, errors, warnings);
             //   bookDescription (currently not present in model)
@@ -90,7 +90,7 @@ public class BookChecker extends AbstractArchiveChecker {
             check(book.getPermission(lang), book, bsg, errors, warnings);
         }
         //   compare contents of metadata descriptions in different languages
-        check(book, config.languages(), bsg, errors, warnings);
+        check(book, config.getLanguages(), bsg, errors, warnings);
 
         //   content
         check(book.getContent(), book.getId(), errors, warnings);
@@ -145,17 +145,17 @@ public class BookChecker extends AbstractArchiveChecker {
     }
 
     private boolean isKnownName(String name) {
-        return name.endsWith(config.getXML())
-                || name.endsWith(config.getTXT())
-                || name.endsWith(config.getCSV())
-                || name.endsWith(config.getTIF())
-                || name.contains(config.getSHA1SUM())
-                || name.contains(config.getPERMISSION())
-                || name.contains(config.getNARRATIVE_TAGGING())
-                || name.contains(config.getNARRATIVE_TAGGING_MAN())
-                || name.contains(config.getIMAGE_TAGGING())
-                || name.contains(config.getBNF_FILEMAP())
-                || name.contains(config.getBNF_MD5SUM());
+        return name.endsWith(XML_EXT)
+                || name.endsWith(TXT_EXT)
+                || name.endsWith(CSV_EXT)
+                || name.endsWith(TIF_EXT)
+                || name.contains(SHA1SUM)
+                || name.contains(PERMISSION)
+                || name.contains(NARRATIVE_TAGGING)
+                || name.contains(NARRATIVE_TAGGING_MAN)
+                || name.contains(IMAGE_TAGGING)
+                || name.contains(BNF_FILEMAP)
+                || name.contains(BNF_MD5SUM);
     }
 
     /**
@@ -489,7 +489,7 @@ public class BookChecker extends AbstractArchiveChecker {
             return;
         }
 
-        if (!isInArchive(parent.getId() + config.getCROP(), parent.getContent())) {
+        if (!isInArchive(parent.getId() + CROP, parent.getContent())) {
             errors.add("Crop information missing from parent book content. [" + parent.getId() + "]");
         }
 
@@ -531,7 +531,7 @@ public class BookChecker extends AbstractArchiveChecker {
                                List<String> errors, List<String> warnings) {
         if (info == null) {
             String message = "SHA1SUM missing";
-            if (isInArchive(parent.getId() + config.getBNF_MD5SUM(), parent.getContent())) {
+            if (isInArchive(parent.getId() + BNF_MD5SUM, parent.getContent())) {
                 message += "; bnf.MD5SUM is present.";
                 warnings.add(message);
             } else {
@@ -829,7 +829,7 @@ public class BookChecker extends AbstractArchiveChecker {
 
                 try {
                     if (aorAnnotationSchema == null) {
-                        URL schemaUrl = new URL(config.getAnnotationSchemaUrl());
+                        URL schemaUrl = new URL(annotationSchemaUrl);
                         SchemaFactory schemaFactory =
                                 SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
                         aorAnnotationSchema = schemaFactory.newSchema(schemaUrl);

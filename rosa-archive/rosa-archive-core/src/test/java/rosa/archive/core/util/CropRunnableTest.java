@@ -1,7 +1,9 @@
-package rosa.archive.core.store;
+package rosa.archive.core.util;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import rosa.archive.core.util.CropRunnable;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.CropData;
 

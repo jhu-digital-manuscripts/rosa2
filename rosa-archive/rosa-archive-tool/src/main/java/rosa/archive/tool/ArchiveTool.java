@@ -1,7 +1,10 @@
 package rosa.archive.tool;
 
-import com.google.inject.Guice;
-import com.google.inject.Injector;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
@@ -11,15 +14,15 @@ import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
+import rosa.archive.core.Store;
+import rosa.archive.core.StoreImpl;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
-import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.SerializerSet;
-import rosa.archive.core.store.Store;
-import rosa.archive.core.store.StoreImpl;
 import rosa.archive.model.Book;
 import rosa.archive.tool.config.Command;
 import rosa.archive.tool.config.Flag;
@@ -28,11 +31,8 @@ import rosa.archive.tool.derivative.BookDerivative;
 import rosa.archive.tool.derivative.CollectionDerivative;
 import rosa.archive.tool.derivative.CropDerivative;
 
-import java.io.IOException;
-import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 
 /**
  *
@@ -93,7 +93,7 @@ public class ArchiveTool {
 
         // Create the tool and run the command
         ByteStreamGroup base = new FSByteStreamGroup(config.getArchivePath());
-        Store store = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), injector.getInstance(AppConfig.class), base);
+        Store store = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), injector.getInstance(ArchiveConfig.class), base);
 
         tool = new ArchiveTool(store, config, System.out);
         tool.run(cmd);

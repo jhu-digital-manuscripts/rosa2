@@ -1,4 +1,4 @@
-package rosa.archive.core.store;
+package rosa.archive.core;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
-import rosa.archive.core.GuiceJUnitRunner;
+import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.SHA1Checksum;

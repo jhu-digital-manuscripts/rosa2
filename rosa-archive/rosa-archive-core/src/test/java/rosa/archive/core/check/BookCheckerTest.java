@@ -20,7 +20,7 @@ import org.mockito.MockitoAnnotations;
 
 import rosa.archive.core.BaseGuiceTest;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -53,27 +53,14 @@ import rosa.archive.model.redtag.StructurePageSide;
 public class BookCheckerTest extends BaseGuiceTest {
 
     @Mock
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Before
     public void setup() throws URISyntaxException, IOException {
         super.setup();
         MockitoAnnotations.initMocks(this);
 
-        when(config.languages()).thenReturn(new String[] { "en", "fr" });
-        when(config.getXML()).thenReturn(".xml");
-        when(config.getTXT()).thenReturn(".txt");
-        when(config.getCSV()).thenReturn(".csv");
-        when(config.getTIF()).thenReturn(".tif");
-        when(config.getSHA1SUM()).thenReturn(".SHA1SUM");
-        when(config.getPERMISSION()).thenReturn(".permission_");
-        when(config.getNARRATIVE_TAGGING()).thenReturn(".redtag.csv");
-        when(config.getNARRATIVE_TAGGING_MAN()).thenReturn(".redtag.txt");
-        when(config.getIMAGE_TAGGING()).thenReturn(".imagetag.csv");
-        when(config.getCROP()).thenReturn(".crop.txt");
-        when(config.getBNF_FILEMAP()).thenReturn(".bnf.filemap.csv");
-        when(config.getBNF_MD5SUM()).thenReturn(".bnf.MD5SUM");
-
+        when(config.getLanguages()).thenReturn(new String[] { "en", "fr" });
     }
 
     @Test

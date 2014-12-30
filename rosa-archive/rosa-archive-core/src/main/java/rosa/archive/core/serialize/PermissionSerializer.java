@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.model.Permission;
 
 import java.io.IOException;
@@ -18,17 +18,17 @@ import java.util.List;
  */
 public class PermissionSerializer implements Serializer<Permission> {
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    PermissionSerializer(AppConfig config) {
+    PermissionSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
     @Override
     public Permission read(InputStream is, List<String> errors) throws IOException {
 
-        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
+        List<String> lines = IOUtils.readLines(is, config.getEncoding());
         StringBuilder content = new StringBuilder();
 
         for (String line : lines) {
@@ -43,7 +43,7 @@ public class PermissionSerializer implements Serializer<Permission> {
 
     @Override
     public void write(Permission permission, OutputStream out) throws IOException {
-        IOUtils.write(permission.getPermission(), out, Charset.forName(config.getCHARSET()));
+        IOUtils.write(permission.getPermission(), out, Charset.forName(config.getEncoding()));
     }
 
     @Override

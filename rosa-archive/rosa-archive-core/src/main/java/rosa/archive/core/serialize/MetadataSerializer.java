@@ -222,52 +222,52 @@ public class MetadataSerializer implements Serializer<Map<String, BookMetadata>>
         }
     }
 
-    private void readBibInfo(Element biblio, BookMetadata metadata) {
-        NodeList children = biblio.getChildNodes();
-        for (int i = 0; i < children.getLength(); i++) {
-            Node child = children.item(i);
-            if (child.getNodeType() != Node.ELEMENT_NODE) {
-                continue;
-            }
-
-            Element el = (Element) child;
-
-            String name = el.getNodeName();
-            String content = el.getTextContent();
-            switch (name) {
-                case "type":
-                    metadata.setType(content);
-                    break;
-                case "commonName":
-                    metadata.setCommonName(content);
-                    break;
-                case "material":
-                    metadata.setMaterial(content);
-                    break;
-                case "origin":
-                    metadata.setOrigin(content);
-                    break;
-                case "currentLocation":
-                    metadata.setCurrentLocation(content);
-                    break;
-                case "repository":
-                    metadata.setRepository(content);
-                    break;
-                case "shelfmark":
-                    metadata.setShelfmark(content);
-                    break;
-                case "measure":
-                    break;
-                case "date":
-                    metadata.setDate(content);
-                    metadata.setYearStart(Integer.parseInt(el.getAttribute("start")));
-                    metadata.setYearEnd(Integer.parseInt(el.getAttribute("end")));
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
+//    private void readBibInfo(Element biblio, BookMetadata metadata) {
+//        NodeList children = biblio.getChildNodes();
+//        for (int i = 0; i < children.getLength(); i++) {
+//            Node child = children.item(i);
+//            if (child.getNodeType() != Node.ELEMENT_NODE) {
+//                continue;
+//            }
+//
+//            Element el = (Element) child;
+//
+//            String name = el.getNodeName();
+//            String content = el.getTextContent();
+//            switch (name) {
+//                case "type":
+//                    metadata.setType(content);
+//                    break;
+//                case "commonName":
+//                    metadata.setCommonName(content);
+//                    break;
+//                case "material":
+//                    metadata.setMaterial(content);
+//                    break;
+//                case "origin":
+//                    metadata.setOrigin(content);
+//                    break;
+//                case "currentLocation":
+//                    metadata.setCurrentLocation(content);
+//                    break;
+//                case "repository":
+//                    metadata.setRepository(content);
+//                    break;
+//                case "shelfmark":
+//                    metadata.setShelfmark(content);
+//                    break;
+//                case "measure":
+//                    break;
+//                case "date":
+//                    metadata.setDate(content);
+//                    metadata.setYearStart(Integer.parseInt(el.getAttribute("start")));
+//                    metadata.setYearEnd(Integer.parseInt(el.getAttribute("end")));
+//                    break;
+//                default:
+//                    break;
+//            }
+//        }
+//    }
 
     private List<BookText> handleBookTexts(Element el) {
         List<BookText> texts = new ArrayList<>();

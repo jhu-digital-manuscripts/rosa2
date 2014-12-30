@@ -5,7 +5,7 @@ import com.google.inject.Inject;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
@@ -22,10 +22,10 @@ import java.util.List;
  */
 public class NarrativeSectionsSerializer implements Serializer<NarrativeSections> {
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    NarrativeSectionsSerializer(AppConfig config) {
+    NarrativeSectionsSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
@@ -35,7 +35,7 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
 
         List<NarrativeScene> scenes = sections.asScenes();
 
-        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
+        List<String> lines = IOUtils.readLines(is, config.getEncoding());
         String[] headers = lines.size() > 0 ?
                 CSV.parse(lines.get(0)) : new String[4];
 
@@ -58,7 +58,7 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
     @Override
     public void write(NarrativeSections sections, OutputStream out) throws IOException {
         final String header = "Section,Lines,Lecoy,Description\n";
-        IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
+        IOUtils.write(header, out, Charset.forName(config.getEncoding()));
 
         for (NarrativeScene scene : sections.asScenes()) {
             StringBuilder sb = new StringBuilder(CSV.escape(scene.getId()));
@@ -79,7 +79,7 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
             }
 
             sb.append('\n');
-            IOUtils.write(sb, out, Charset.forName(config.getCHARSET()));
+            IOUtils.write(sb, out, Charset.forName(config.getEncoding()));
         }
     }
 
@@ -92,15 +92,15 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
      * @param lineInData the row number that the data is in
      * @param errors container to hold error messages
      */
-    private void checkNumberRange(String data, int lineInData, List<String> errors) {
-        if (StringUtils.isBlank(data) || data.equals("a-j")) {
-            return;
-        }
-
-        if (!data.matches("\\d+-\\d+")) {
-            errors.add("Row [" + lineInData + "] has bad range: [" + data + "]");
-        }
-    }
+//    private void checkNumberRange(String data, int lineInData, List<String> errors) {
+//        if (StringUtils.isBlank(data) || data.equals("a-j")) {
+//            return;
+//        }
+//
+//        if (!data.matches("\\d+-\\d+")) {
+//            errors.add("Row [" + lineInData + "] has bad range: [" + data + "]");
+//        }
+//    }
 
     /**
      * Find the start and end of a range.

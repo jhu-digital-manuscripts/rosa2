@@ -1,4 +1,4 @@
-package rosa.archive.core.store;
+package rosa.archive.core;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -19,10 +19,8 @@ import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 
 import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.BaseGuiceTest;
-import rosa.archive.core.GuiceJUnitRunner;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.check.BookCollectionChecker;
-import rosa.archive.core.config.AppConfig;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.aor.AnnotatedPage;
@@ -43,7 +41,7 @@ public class StoreLoadAndCheckIntegrationTest extends BaseGuiceTest {
     public TemporaryFolder tempFolder = new TemporaryFolder();
 
     @Inject
-    private AppConfig config;
+    private ArchiveConfig config;
 
 
     private BookCollectionChecker collectionChecker;

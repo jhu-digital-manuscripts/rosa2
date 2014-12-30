@@ -1,4 +1,4 @@
-package rosa.archive.core.store;
+package rosa.archive.core;
 
 import com.google.inject.Inject;
 
@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
-import rosa.archive.core.GuiceJUnitRunner;
+import rosa.archive.core.Store;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package rosa.archive.core.store;
+package rosa.archive.core;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -21,13 +21,12 @@ import java.util.regex.Pattern;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
-import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
-import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.ChecksumUtil;
+import rosa.archive.core.util.CropRunnable;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -54,10 +53,10 @@ import com.google.inject.Inject;
 /**
  *
  */
-public class StoreImpl implements Store {
+public class StoreImpl implements Store, ArchiveConstants {
     private final SerializerSet serializers;
     private final ByteStreamGroup base;
-    private final AppConfig config;
+    private final ArchiveConfig config;
     private final BookCollectionChecker collectionChecker;
     private final BookChecker bookChecker;
 
@@ -65,7 +64,7 @@ public class StoreImpl implements Store {
     public StoreImpl(SerializerSet serializers,
                      BookChecker bookChecker,
                      BookCollectionChecker collectionChecker,
-                     AppConfig config,
+                     ArchiveConfig config,
                      ByteStreamGroup base) {
         this.serializers = serializers;
         this.base = base;
@@ -95,17 +94,17 @@ public class StoreImpl implements Store {
         collection.setId(collectionId);
         collection.setBooks(listBooks(collectionId));
         collection.setCharacterNames(
-                loadItem(config.getCHARACTER_NAMES(), collectionGroup, CharacterNames.class, errors));
+                loadItem(CHARACTER_NAMES, collectionGroup, CharacterNames.class, errors));
         collection.setIllustrationTitles(
-                loadItem(config.getILLUSTRATION_TITLES(), collectionGroup, IllustrationTitles.class, errors));
+                loadItem(ILLUSTRATION_TITLES, collectionGroup, IllustrationTitles.class, errors));
         collection.setNarrativeSections(
-                loadItem(config.getNARRATIVE_SECTIONS(), collectionGroup, NarrativeSections.class, errors));
+                loadItem(NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class, errors));
         collection.setChecksums(
-                loadItem(collectionId + config.getSHA1SUM(), collectionGroup, SHA1Checksum.class, errors)
+                loadItem(collectionId + SHA1SUM, collectionGroup, SHA1Checksum.class, errors)
         );
 
         // Languages from configuration.
-        collection.setLanguages(config.languages());
+        collection.setLanguages(config.getLanguages());
 
         return collection;
     }
@@ -123,23 +122,23 @@ public class StoreImpl implements Store {
 
         book.setId(bookId);
         book.setImages(
-                loadItem(bookId + config.getIMAGES(), bookStreams, ImageList.class, errors));
+                loadItem(bookId + IMAGES, bookStreams, ImageList.class, errors));
         book.setCroppedImages(
-                loadItem(bookId + config.getIMAGES_CROP(), bookStreams, ImageList.class, errors));
+                loadItem(bookId + IMAGES_CROP, bookStreams, ImageList.class, errors));
         book.setCropInfo(
-                loadItem(bookId + config.getCROP(), bookStreams, CropInfo.class, errors));
+                loadItem(bookId + CROP, bookStreams, CropInfo.class, errors));
         book.setBookStructure(
-                loadItem(bookId + config.getREDUCED_TAGGING(), bookStreams, BookStructure.class, errors));
+                loadItem(bookId + REDUCED_TAGGING, bookStreams, BookStructure.class, errors));
         book.setSHA1Checksum(
-                loadItem(bookId + config.getSHA1SUM(), bookStreams, SHA1Checksum.class, errors));
+                loadItem(bookId + SHA1SUM, bookStreams, SHA1Checksum.class, errors));
         book.setIllustrationTagging(
-                loadItem(bookId + config.getIMAGE_TAGGING(), bookStreams, IllustrationTagging.class, errors));
+                loadItem(bookId + IMAGE_TAGGING, bookStreams, IllustrationTagging.class, errors));
         book.setManualNarrativeTagging(
-                loadItem(bookId + config.getNARRATIVE_TAGGING_MAN(), bookStreams, NarrativeTagging.class, errors));
+                loadItem(bookId + NARRATIVE_TAGGING_MAN, bookStreams, NarrativeTagging.class, errors));
         book.setAutomaticNarrativeTagging(
-                loadItem(bookId + config.getNARRATIVE_TAGGING(), bookStreams, NarrativeTagging.class, errors));
+                loadItem(bookId + NARRATIVE_TAGGING, bookStreams, NarrativeTagging.class, errors));
         book.setTranscription(
-                loadItem(bookId + config.getTRANSCRIPTION() + config.getXML(), bookStreams, Transcription.class, errors));
+                loadItem(bookId + TRANSCRIPTION + XML_EXT, bookStreams, Transcription.class, errors));
         book.setMultilangMetadata(
                 loadItem(bookId + ".description.xml", bookStreams, MultilangMetadata.class, errors)
         );
@@ -152,10 +151,10 @@ public class StoreImpl implements Store {
             // Look for language dependent items
             String lang = findLanguageCodeInName(name);
             if (StringUtils.isNotBlank(lang)) {
-                if (name.contains(config.getPERMISSION())) {
+                if (name.contains(PERMISSION)) {
                     Permission perm = loadItem(name, bookStreams, Permission.class, errors);
                     book.addPermission(perm, lang);
-                } else if (name.contains(config.getDESCRIPTION())) {
+                } else if (name.contains(DESCRIPTION)) {
                     BookMetadata metadata = loadItem(name, bookStreams, BookMetadata.class, errors);
                     book.addBookMetadata(metadata, lang);
                 }
@@ -215,7 +214,7 @@ public class StoreImpl implements Store {
         // If SHA1SUM does not exist, create it!
         if (checksums == null) {
             checksums = new SHA1Checksum();
-            checksums.setId(collection.getId() + config.getSHA1SUM());
+            checksums.setId(collection.getId() + SHA1SUM);
         }
 
         ByteStreamGroup collectionStreams = base.getByteStreamGroup(collection.getId());
@@ -243,14 +242,14 @@ public class StoreImpl implements Store {
 
         ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
 
-        if (!force && bookStreams.hasByteStream(book + config.getIMAGES())) {
-            errors.add("[" + book + config.getIMAGES() + "] already exists. You can force this operation" +
+        if (!force && bookStreams.hasByteStream(book + IMAGES)) {
+            errors.add("[" + book + IMAGES + "] already exists. You can force this operation" +
                     " to update the existing image list.");
             return;
         }
 
         ImageList list = new ImageList();
-        list.setId(book + config.getIMAGES());
+        list.setId(book + IMAGES);
         list.setImages(buildImageList(collection, book, true, bookStreams));
 
         writeItem(list, bookStreams, ImageList.class, errors);
@@ -262,7 +261,7 @@ public class StoreImpl implements Store {
         SHA1Checksum checksums = book.getSHA1Checksum();
         if (checksums == null) {
             checksums = new SHA1Checksum();
-            checksums.setId(book.getId() + config.getSHA1SUM());
+            checksums.setId(book.getId() + SHA1SUM);
         }
 
         ByteStreamGroup colStreams = base.getByteStreamGroup(collection.getId());
@@ -286,19 +285,19 @@ public class StoreImpl implements Store {
 
         ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
 
-        if (!bookStreams.hasByteStreamGroup(config.getCROPPED_DIR())) {
+        if (!bookStreams.hasByteStreamGroup(CROPPED_DIR)) {
             errors.add("No cropped images found. [" + collection + ":" + book + "]");
             return;
-        } else if (!force && bookStreams.hasByteStream(book + config.getIMAGES_CROP())) {
-            errors.add("[" + book + config.getIMAGES_CROP() + "] already exists. You can force this operation" +
+        } else if (!force && bookStreams.hasByteStream(book + IMAGES_CROP)) {
+            errors.add("[" + book + IMAGES_CROP + "] already exists. You can force this operation" +
                     " to update the existing image list.");
             return;
         }
 
         ImageList list = new ImageList();
-        list.setId(book + config.getIMAGES_CROP());
+        list.setId(book + IMAGES_CROP);
         list.setImages(
-                buildImageList(collection, book, false, bookStreams.getByteStreamGroup(config.getCROPPED_DIR()))
+                buildImageList(collection, book, false, bookStreams.getByteStreamGroup(CROPPED_DIR))
         );
 
         writeItem(list, bookStreams, ImageList.class, errors);
@@ -318,14 +317,14 @@ public class StoreImpl implements Store {
         Book b = loadBook(collection, book, errors);
         errors.clear();
 
-        if (!force && (b.getCroppedImages() != null || bookStreams.hasByteStreamGroup(config.getCROPPED_DIR()))) {
+        if (!force && (b.getCroppedImages() != null || bookStreams.hasByteStreamGroup(CROPPED_DIR))) {
             errors.add("Cropped images already exist for this book. [" + collection + ":" + book
                     + "]. Force overwrite with '-force'");
             return;
         }
 
         // Create the cropped/ directory
-        ByteStreamGroup cropGroup = bookStreams.newByteStreamGroup(config.getCROPPED_DIR());
+        ByteStreamGroup cropGroup = bookStreams.newByteStreamGroup(CROPPED_DIR);
 
         CropInfo cropInfo = b.getCropInfo();
         ImageList images = b.getImages();
@@ -345,7 +344,7 @@ public class StoreImpl implements Store {
             }
 
             Runnable cropper = new CropRunnable(
-                    bookStreams.id(), image, cropping, config.getCROPPED_DIR(), errors
+                    bookStreams.id(), image, cropping, CROPPED_DIR, errors
             );
             executorService.execute(cropper);
         }
@@ -374,12 +373,12 @@ public class StoreImpl implements Store {
 
         if (images.size() < 2) {
             String[] requiredPages = {
-                    book + config.getIMG_FRONTCOVER(),
-                    book + config.getIMG_FRONTPASTEDOWN(),
-                    book + config.getIMG_FRONT_FLYLEAF() + "001r.tif",
-                    book + config.getIMG_FRONT_FLYLEAF() + "001v.tif",
-                    book + config.getIMG_ENDPASTEDOWN(),
-                    book + config.getIMG_BACKCOVER()
+                    book + IMG_FRONTCOVER,
+                    book + IMG_FRONTPASTEDOWN,
+                    book + IMG_FRONT_FLYLEAF + "001r.tif",
+                    book + IMG_FRONT_FLYLEAF + "001v.tif",
+                    book + IMG_ENDPASTEDOWN,
+                    book + IMG_BACKCOVER
             };
 
             for (String name : requiredPages) {
@@ -397,28 +396,28 @@ public class StoreImpl implements Store {
         }
         // front/back covers can be missing
         BookImage img = images.get(0);
-        if (!img.getId().contains(config.getIMG_FRONTCOVER())) {
+        if (!img.getId().contains(IMG_FRONTCOVER)) {
             images.add(0, new BookImage(
-                    book + config.getIMG_FRONTCOVER(), missingDimensions[0], missingDimensions[1], true
+                    book + IMG_FRONTCOVER, missingDimensions[0], missingDimensions[1], true
             ));
         }
         img = images.get(1);
-        if (!img.getId().contains(config.getIMG_FRONTPASTEDOWN())) {
+        if (!img.getId().contains(IMG_FRONTPASTEDOWN)) {
             images.add(1, new BookImage(
-                    book + config.getIMG_FRONTPASTEDOWN(), missingDimensions[0], missingDimensions[1], true
+                    book + IMG_FRONTPASTEDOWN, missingDimensions[0], missingDimensions[1], true
             ));
         }
         // front/back pastedown can be missing
         img = images.get(images.size() - 2);
-        if (!img.getId().contains(config.getIMG_ENDPASTEDOWN())) {
+        if (!img.getId().contains(IMG_ENDPASTEDOWN)) {
             images.add(images.size(), new BookImage(
-                    book + config.getIMG_ENDPASTEDOWN(), missingDimensions[0], missingDimensions[1], true
+                    book + IMG_ENDPASTEDOWN, missingDimensions[0], missingDimensions[1], true
             ));
         }
         img = images.get(images.size() - 1);
-        if (!img.getId().contains(config.getIMG_BACKCOVER())) {
+        if (!img.getId().contains(IMG_BACKCOVER)) {
             images.add(images.size(), new BookImage(
-                    book + config.getIMG_BACKCOVER(), missingDimensions[0], missingDimensions[1], true
+                    book + IMG_BACKCOVER, missingDimensions[0], missingDimensions[1], true
             ));
         }
 
@@ -426,7 +425,7 @@ public class StoreImpl implements Store {
         addSkippedImages(images, missingDimensions);
 
         // Flyleaves, if present, must end in 'v' and have at minimum 1r & 1v
-        int frontFlyleafIndex = lastIndexOfPrefix(book + config.getIMG_FRONT_FLYLEAF(), images);
+        int frontFlyleafIndex = lastIndexOfPrefix(book + IMG_FRONT_FLYLEAF, images);
         if (frontFlyleafIndex != -1) {
             img = images.get(frontFlyleafIndex);
             if (img.getId().endsWith("r.tif")) {
@@ -436,7 +435,7 @@ public class StoreImpl implements Store {
                 ));
             }
         }
-        int endFlyleafIndex = lastIndexOfPrefix(book + config.getIMG_END_FLYLEAF(), images);
+        int endFlyleafIndex = lastIndexOfPrefix(book + IMG_END_FLYLEAF, images);
         if (endFlyleafIndex != -1) {
             img = images.get(endFlyleafIndex);
             if (img.getId().endsWith("r.tif")) {
@@ -479,8 +478,8 @@ public class StoreImpl implements Store {
             String f2 = findFolio(i2.getId());
 
             if (StringUtils.isNotBlank(f1) && StringUtils.isNotBlank(f2)) {
-                String prefix1 = i1.getId().substring(0, i1.getId().length() - (f1 + config.getTIF()).length());
-                String prefix2 = i2.getId().substring(0, i2.getId().length() - (f2 + config.getTIF()).length());
+                String prefix1 = i1.getId().substring(0, i1.getId().length() - (f1 + TIF_EXT).length());
+                String prefix2 = i2.getId().substring(0, i2.getId().length() - (f2 + TIF_EXT).length());
 
                 if (!prefix1.equals(prefix2)) {
                     continue;
@@ -519,7 +518,7 @@ public class StoreImpl implements Store {
                         }
 
                         BookImage missingImage = new BookImage(
-                                prefix1 + String.format("%03d", next_seq) + next_rv + config.getTIF(),
+                                prefix1 + String.format("%03d", next_seq) + next_rv + TIF_EXT,
                                 missingDimensions[0], missingDimensions[1],
                                 true
                         );
@@ -565,7 +564,7 @@ public class StoreImpl implements Store {
                                            ByteStreamGroup bookStreams) throws IOException {
         List<BookImage> images = new ArrayList<>();
         for (String file : bookStreams.listByteStreamNames()) {
-            if (!file.startsWith(".") && file.endsWith(config.getTIF())) {
+            if (!file.startsWith(".") && file.endsWith(TIF_EXT)) {
 
                 String filepath = Paths.get(bookStreams.id()).resolve(file).toString();
                 int[] dimensions = getImageDimensionsHack(filepath);
@@ -583,10 +582,10 @@ public class StoreImpl implements Store {
 //        images.sort(BookImageComparator.instance());
 
         if (addMissing) {
-            int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(config.getMISSING_IMAGE()) ?
+            int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(MISSING_IMAGE) ?
                     getImageDimensionsHack(
                             Paths.get(base.getByteStreamGroup(collection).id())
-                                    .resolve(config.getMISSING_IMAGE()).toString()) :
+                                    .resolve(MISSING_IMAGE).toString()) :
                     new int[]{0, 0};
             addMissingImages(book, images, missingDimensions);
         }

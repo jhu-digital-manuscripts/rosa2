@@ -1,13 +1,13 @@
 package rosa.archive.tool.derivative;
 
-import rosa.archive.core.store.Store;
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
-
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import rosa.archive.core.Store;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
 
 /**
  *

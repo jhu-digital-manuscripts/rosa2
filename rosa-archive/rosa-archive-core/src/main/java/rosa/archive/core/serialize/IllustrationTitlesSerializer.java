@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.IllustrationTitles;
@@ -27,10 +27,10 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
         ID, TITLE
     }
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    IllustrationTitlesSerializer(AppConfig config) {
+    IllustrationTitlesSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
@@ -39,7 +39,7 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
 
         IllustrationTitles titles = new IllustrationTitles();
 
-        try (InputStreamReader reader = new InputStreamReader(is, config.getCHARSET())) {
+        try (InputStreamReader reader = new InputStreamReader(is, config.getEncoding())) {
 
             CSVSpreadSheet data = new CSVSpreadSheet(reader, 2, 2, errors);
             Map<String, String> dataMap = new HashMap<>();
@@ -64,11 +64,11 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
     @Override
     public void write(IllustrationTitles titles, OutputStream out) throws IOException {
         final String header = "Id,Title\n";
-        IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
+        IOUtils.write(header, out, Charset.forName(config.getEncoding()));
 
         for (String id : titles.getAllIds()) {
             String line = id + ',' + CSV.escape(titles.getTitleById(id)) + '\n';
-            IOUtils.write(line, out, Charset.forName(config.getCHARSET()));
+            IOUtils.write(line, out, Charset.forName(config.getEncoding()));
         }
 
     }

@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.model.redtag.Blank;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.redtag.Heading;
@@ -29,10 +29,10 @@ import java.util.List;
  */
 public class BookStructureSerializer implements Serializer<BookStructure> {
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    BookStructureSerializer(AppConfig config) {
+    BookStructureSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
@@ -47,7 +47,7 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
         int linesInColumn = -1;
         StructureColumn col = null;
 
-        List<String> inputLine = IOUtils.readLines(is, config.getCHARSET());
+        List<String> inputLine = IOUtils.readLines(is, config.getEncoding());
         for (String line : inputLine) {
             line = line.trim();
             n++;

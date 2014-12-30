@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.model.Transcription;
 
 import java.io.IOException;
@@ -17,17 +17,17 @@ import java.util.List;
  */
 public class TranscriptionXmlSerializer implements Serializer<Transcription> {
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    TranscriptionXmlSerializer(AppConfig config) {
+    TranscriptionXmlSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
     @Override
     public Transcription read(InputStream is, List<String> errors) throws IOException {
 
-        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
+        List<String> lines = IOUtils.readLines(is, config.getEncoding());
 
         StringBuilder content = new StringBuilder();
         for (String line : lines) {

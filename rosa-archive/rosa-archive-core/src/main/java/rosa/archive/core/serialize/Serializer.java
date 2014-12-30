@@ -5,10 +5,12 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
 
+import rosa.archive.core.ArchiveConstants;
+
 /**
  *
  */
-public interface Serializer<T> {
+public interface Serializer<T> extends ArchiveConstants {
 
     /**
      * Read an input stream to construct a data model object.

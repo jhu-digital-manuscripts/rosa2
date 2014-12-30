@@ -1,4 +1,4 @@
-package rosa.archive.core.store;
+package rosa.archive.core;
 
 import org.junit.Ignore;
 import org.junit.Test;

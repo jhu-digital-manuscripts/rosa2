@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.core.util.CSVSpreadSheet;
 import rosa.archive.model.CharacterNames;
@@ -43,10 +43,10 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
         }
     }
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    CharacterNamesSerializer(AppConfig config) {
+    CharacterNamesSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
@@ -54,7 +54,7 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
     public CharacterNames read(InputStream is, List<String> errors) throws IOException{
         CharacterNames names = new CharacterNames();
 
-        try (InputStreamReader reader = new InputStreamReader(is, config.getCHARSET())) {
+        try (InputStreamReader reader = new InputStreamReader(is, config.getEncoding())) {
 
             CSVSpreadSheet table = new CSVSpreadSheet(reader, MIN_COLS, MAX_COLS, errors);
             List<String> headers = table.size() > 0 ?
@@ -85,7 +85,7 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
     @Override
     public void write(CharacterNames names, OutputStream out) throws IOException {
         final String header = "ID,Site name,French variant,English name\n";
-        IOUtils.write(header, out, Charset.forName(config.getCHARSET()));
+        IOUtils.write(header, out, Charset.forName(config.getEncoding()));
 
         for (String id : names.getAllCharacterIds()) {
             StringBuilder sb = new StringBuilder(id);
@@ -101,7 +101,7 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
             sb.append(CSV.escape(names.getNameInLanguage(id, "en")));
             sb.append('\n');
 
-            IOUtils.write(sb, out, Charset.forName(config.getCHARSET()));
+            IOUtils.write(sb, out, Charset.forName(config.getEncoding()));
         }
 
     }

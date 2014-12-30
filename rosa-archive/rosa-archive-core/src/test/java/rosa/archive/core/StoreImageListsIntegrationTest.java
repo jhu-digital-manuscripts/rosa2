@@ -1,4 +1,4 @@
-package rosa.archive.core.store;
+package rosa.archive.core;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

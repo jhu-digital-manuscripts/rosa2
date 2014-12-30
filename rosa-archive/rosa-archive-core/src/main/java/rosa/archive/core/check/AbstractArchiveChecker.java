@@ -10,8 +10,9 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+import rosa.archive.core.ArchiveConstants;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.model.HasId;
@@ -21,12 +22,12 @@ import rosa.archive.model.SHA1Checksum;
 /**
  *
  */
-public abstract class AbstractArchiveChecker {
+public abstract class AbstractArchiveChecker implements ArchiveConstants {
 
-    protected final AppConfig config;
+    protected final ArchiveConfig config;
     protected final SerializerSet serializers;
 
-    AbstractArchiveChecker(AppConfig config, SerializerSet serializers) {
+    AbstractArchiveChecker(ArchiveConfig config, SerializerSet serializers) {
         this.config = config;
         this.serializers = serializers;
     }
@@ -79,7 +80,7 @@ public abstract class AbstractArchiveChecker {
 
         // Look for CHECKSUM stream
         for (String name : streams) {
-            if (name.contains(config.getSHA1SUM())) {
+            if (name.contains(SHA1SUM)) {
                 checksumId = name;
                 break;
             }

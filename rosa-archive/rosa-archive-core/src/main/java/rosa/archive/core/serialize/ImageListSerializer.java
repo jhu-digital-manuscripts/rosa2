@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookImage;
@@ -22,10 +22,10 @@ import com.google.inject.Inject;
  */
 public class ImageListSerializer implements Serializer<ImageList> {
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    ImageListSerializer(AppConfig config) {
+    ImageListSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
@@ -34,7 +34,7 @@ public class ImageListSerializer implements Serializer<ImageList> {
         ImageList images = new ImageList();
 
         List<BookImage> imgList = images.getImages();
-        List<String> rows = IOUtils.readLines(is, config.getCHARSET());
+        List<String> rows = IOUtils.readLines(is, config.getEncoding());
 
         for (String row : rows) {
             String[] csvRow = CSV.parse(row);
@@ -44,10 +44,10 @@ public class ImageListSerializer implements Serializer<ImageList> {
             // Check for the "missing image" prefix.
             // If present, remove the prefix from name before setting ID.
             String id = csvRow[0];
-            boolean missing = id.startsWith(config.getMISSING_PREFIX());
+            boolean missing = id.startsWith(MISSING_PREFIX);
 
             if (missing) {
-                id = id.substring(config.getMISSING_PREFIX().length());
+                id = id.substring(MISSING_PREFIX.length());
             }
 
             image.setId(id);
@@ -86,7 +86,7 @@ public class ImageListSerializer implements Serializer<ImageList> {
         for (BookImage image : imageList) {
             String line = image.isMissing() ? "*" : "";
             line += image.getId() + "," + image.getWidth() + "," + image.getHeight() + "\n";
-            IOUtils.write(line, out, config.getCHARSET());
+            IOUtils.write(line, out, config.getEncoding());
         }
     }
 

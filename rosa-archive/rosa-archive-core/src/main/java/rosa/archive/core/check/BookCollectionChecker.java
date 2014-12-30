@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.CharacterNames;
@@ -20,7 +20,7 @@ import com.google.inject.Inject;
 public class BookCollectionChecker extends AbstractArchiveChecker {
 
     @Inject
-    public BookCollectionChecker(AppConfig config, SerializerSet serializers) {
+    public BookCollectionChecker(ArchiveConfig config, SerializerSet serializers) {
         super(config, serializers);
     }
 
@@ -46,14 +46,14 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
         }
 
         //   languages
-        for (String lang : config.languages()) {
+        for (String lang : config.getLanguages()) {
             if (!collection.isLanguageSupported(lang)) {
                 errors.add("Language should be supported but is not. [" + lang + "]");
             }
         }
 
-        if (!bsg.hasByteStream(config.getMISSING_IMAGE())) {
-            errors.add("[" + config.getMISSING_IMAGE() + "] missing.");
+        if (!bsg.hasByteStream(MISSING_IMAGE)) {
+            errors.add("[" + MISSING_IMAGE + "] missing.");
         }
 
         //   character_names and illustration_titles and narrative_sections

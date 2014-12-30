@@ -18,10 +18,7 @@ import com.google.inject.Inject;
 import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
-import rosa.archive.core.config.AppConfig;
 import rosa.archive.core.serialize.SerializerSet;
-import rosa.archive.core.store.Store;
-import rosa.archive.core.store.StoreImpl;
 
 /**
  * Setup Guice injection and a store which points at the data in src/test/resources.
@@ -39,7 +36,7 @@ public abstract class BaseGuiceTest {
     protected BookCollectionChecker collectionChecker;
 
     @Inject
-    protected AppConfig config;
+    protected ArchiveConfig config;
 
     protected ByteStreamGroup base;
     protected Store store;

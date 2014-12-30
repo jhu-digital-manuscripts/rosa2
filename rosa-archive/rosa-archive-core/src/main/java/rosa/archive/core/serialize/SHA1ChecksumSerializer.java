@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.model.SHA1Checksum;
 
 import java.io.IOException;
@@ -18,10 +18,10 @@ import java.util.Map;
  */
 public class SHA1ChecksumSerializer implements Serializer<SHA1Checksum> {
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    SHA1ChecksumSerializer(AppConfig config) {
+    SHA1ChecksumSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
@@ -30,7 +30,7 @@ public class SHA1ChecksumSerializer implements Serializer<SHA1Checksum> {
         SHA1Checksum info = new SHA1Checksum();
         Map<String, String> checksums = info.checksums();
 
-        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
+        List<String> lines = IOUtils.readLines(is, config.getEncoding());
         for (String line : lines) {
             // Split on space
             String[] parts = line.split("\\s+");
@@ -52,7 +52,7 @@ public class SHA1ChecksumSerializer implements Serializer<SHA1Checksum> {
 
         for (String id : checksums.keySet()) {
             String lineToWrite = checksums.get(id) + "  " + id + "\n";
-            IOUtils.write(lineToWrite, out, config.getCHARSET());
+            IOUtils.write(lineToWrite, out, config.getEncoding());
         }
     }
 

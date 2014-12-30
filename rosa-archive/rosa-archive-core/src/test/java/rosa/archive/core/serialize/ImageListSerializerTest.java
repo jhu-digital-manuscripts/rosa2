@@ -28,8 +28,6 @@ public class ImageListSerializerTest extends BaseSerializerTest{
     public void setup() {
         super.setup();
         serializer = new ImageListSerializer(config);
-
-        when(config.getMISSING_PREFIX()).thenReturn("*");
     }
 
     @Test

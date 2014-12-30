@@ -33,7 +33,6 @@ public class ArchiveCoreModule extends AbstractModule {
 
     protected void configure() {
         //  Serializers
-
         Multibinder<Serializer<?>> serializers = Multibinder.newSetBinder(binder(), new TypeLiteral<Serializer<?>>(){});
         
         serializers.addBinding().to(BookMetadataSerializer.class);

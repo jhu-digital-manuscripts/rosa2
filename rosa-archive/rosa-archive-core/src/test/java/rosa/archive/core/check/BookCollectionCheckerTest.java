@@ -21,7 +21,7 @@ import org.junit.Test;
 
 import rosa.archive.core.BaseGuiceTest;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.CharacterName;
 import rosa.archive.model.CharacterNames;
@@ -41,7 +41,7 @@ public class BookCollectionCheckerTest extends BaseGuiceTest {
     @Ignore
     public void checkTest() throws Exception {
 
-        AppConfig config = mockAppConfig();
+        ArchiveConfig config = mockAppConfig();
 
         BookCollectionChecker checker = new BookCollectionChecker(config, serializers);
         BookCollection collection = createBookCollection();
@@ -102,19 +102,15 @@ public class BookCollectionCheckerTest extends BaseGuiceTest {
 
    
     /**
-     * Create a new {@link rosa.archive.core.config.AppConfig} mock object.
+     * Create a new {@link rosa.archive.core.ArchiveConfig} mock object.
      *
      * @return AppConfig mock
      */
-    private AppConfig mockAppConfig() {
-        AppConfig config = mock(AppConfig.class);
+    private ArchiveConfig mockAppConfig() {
+        ArchiveConfig config = mock(ArchiveConfig.class);
 
-        when(config.languages()).thenReturn(new String[] { "en", "fr" });
-        when(config.getIMAGE_TAGGING()).thenReturn(".imagetag.csv");
-        when(config.getNARRATIVE_TAGGING()).thenReturn(".nartag.csv");
-        when(config.getNARRATIVE_TAGGING_MAN()).thenReturn(".nartag.txt");
-        when(config.getMISSING_IMAGE()).thenReturn("missing_image.tif");
-
+        when(config.getLanguages()).thenReturn(new String[] { "en", "fr" });
+       
         return config;
     }
 

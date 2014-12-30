@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.config.AppConfig;
+import rosa.archive.core.ArchiveConfig;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
 
@@ -18,10 +18,10 @@ import java.util.List;
  */
 public class CropInfoSerializer implements Serializer<CropInfo> {
 
-    private AppConfig config;
+    private ArchiveConfig config;
 
     @Inject
-    CropInfoSerializer(AppConfig config) {
+    CropInfoSerializer(ArchiveConfig config) {
         this.config = config;
     }
 
@@ -29,7 +29,7 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
     public CropInfo read(InputStream is, List<String> errors) throws IOException {
         CropInfo info = new CropInfo();
 
-        List<String> lines = IOUtils.readLines(is, config.getCHARSET());
+        List<String> lines = IOUtils.readLines(is, config.getEncoding());
         for (String line : lines) {
 
             String[] parts = line.split("\\s+");
@@ -65,7 +65,7 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
             String line = crop.getId() + " " + String.format("%03f", crop.getLeft()) + " "
                     + String.format("%03f", crop.getRight()) + " " + String.format("%03f", crop.getTop()) + " "
                     + String.format("%03f", crop.getBottom()) + "\n";
-            IOUtils.write(line, out, config.getCHARSET());
+            IOUtils.write(line, out, config.getEncoding());
         }
 
     }

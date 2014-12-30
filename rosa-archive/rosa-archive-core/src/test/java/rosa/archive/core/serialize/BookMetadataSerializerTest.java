@@ -28,7 +28,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest {
     @Before
     public void setup() {
         super.setup();
-        serializer = new BookMetadataSerializer(config);
+        serializer = new BookMetadataSerializer();
     }
 
     @Test

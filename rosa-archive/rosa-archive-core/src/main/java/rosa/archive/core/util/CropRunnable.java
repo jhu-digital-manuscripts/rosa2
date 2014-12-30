@@ -1,4 +1,4 @@
-package rosa.archive.core.store;
+package rosa.archive.core.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
