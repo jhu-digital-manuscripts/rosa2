@@ -26,14 +26,7 @@ import rosa.archive.core.FSByteStreamGroup;
  *
  */
 @Ignore
-public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
-    private static final String COLLECTION = "collection";
-
-    @Before
-    public void setup() throws URISyntaxException, IOException {
-        super.setup();
-    }
-
+public class StoreImageListsIntegrationTest extends BaseStoreTest {
     private void checkImageList(Path imageListPath, String[] expected) throws IOException {
         assertNotNull(expected);
         assertNotNull(imageListPath);
@@ -54,17 +47,14 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
 
     @Test
     public void withMissingFolioImages() throws Exception {
-        Path bookPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("LudwigXV7"));
-
-        copyTestFiles(defaultPath, bookPath);
-        remove(bookPath, "LudwigXV7.images.csv");
-        remove(bookPath, "LudwigXV7.images.crop.csv");
-        remove(bookPath, "LudwigXV7.003r.tif");
-        remove(bookPath, "LudwigXV7.003v.tif");
-        remove(bookPath, "LudwigXV7.004r.tif");
-        remove(bookPath, "LudwigXV7.005v.tif");
-        remove(bookPath, "LudwigXV7.006r.tif");
-        remove(bookPath, "LudwigXV7.007v.tif");
+        removeBookFile("LudwigXV7.images.csv");
+        removeBookFile("LudwigXV7.images.crop.csv");
+        removeBookFile("LudwigXV7.003r.tif");
+        removeBookFile("LudwigXV7.003v.tif");
+        removeBookFile("LudwigXV7.004r.tif");
+        removeBookFile("LudwigXV7.005v.tif");
+        removeBookFile("LudwigXV7.006r.tif");
+        removeBookFile("LudwigXV7.007v.tif");
 
         final String[] expected = {
                 "*LudwigXV7.binding.frontcover.tif", "*LudwigXV7.frontmatter.pastedown.tif",
@@ -77,18 +67,18 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
                 "*LudwigXV7.endmatter.pastedown.tif", "*LudwigXV7.binding.backcover.tif"
         };
 
-        ByteStreamGroup bookGroup = new FSByteStreamGroup(bookPath.toString());
+        ByteStreamGroup bookGroup = new FSByteStreamGroup(testBookPath);
         assertEquals(0, bookGroup.numberOfByteStreamGroups());
         assertEquals(45, bookGroup.numberOfByteStreams());
         assertFalse(bookGroup.hasByteStream("LudwigXV7.images.csv"));
         assertFalse(bookGroup.hasByteStream("LudwigXV7.images.crop.csv"));
 
         List<String> errors = new ArrayList<>();
-        store.generateAndWriteImageList(COLLECTION, "LudwigXV7", false, errors);
+        testStore.generateAndWriteImageList(COLLECTION_NAME, "LudwigXV7", false, errors);
 
         assertTrue(errors.isEmpty());
 
-        checkImageList(bookPath.resolve("LudwigXV7.images.csv"), expected);
+        checkImageList(testBookPath.resolve("LudwigXV7.images.csv"), expected);
     }
 
     /**
@@ -100,11 +90,10 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
      */
     @Test
     public void generateAndWriteImageListIntegrationTest() throws Exception {
-        Path bookPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("LudwigXV7"));
+        Path bookPath = Files.createDirectories(testArchivePath.resolve(COLLECTION_NAME).resolve("LudwigXV7"));
 
-        copyTestFiles(defaultPath, bookPath);
-        remove(bookPath, "LudwigXV7.images.csv");
-        remove(bookPath, "LudwigXV7.images.crop.csv");
+        removeBookFile("LudwigXV7.images.csv");
+        removeBookFile("LudwigXV7.images.crop.csv");
 
         final String[] expected = {
                 "*LudwigXV7.binding.frontcover.tif", "*LudwigXV7.frontmatter.pastedown.tif",
@@ -124,7 +113,7 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         assertFalse(bookGroup.hasByteStream("LudwigXV7.images.crop.csv"));
 
         List<String> errors = new ArrayList<>();
-        store.generateAndWriteImageList(COLLECTION, "LudwigXV7", false, errors);
+        testStore.generateAndWriteImageList(COLLECTION_NAME, "LudwigXV7", false, errors);
 
         assertTrue(errors.isEmpty());
 
@@ -139,10 +128,9 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
      */
     @Test
     public void imageListWithNoImages() throws Exception {
-        Path collectionPath = Files.createDirectories(folder.toPath().resolve(COLLECTION));
+        Path collectionPath = Files.createDirectories(testArchivePath.resolve(COLLECTION_NAME));
         Path bookPath = Files.createDirectories(collectionPath.resolve("LudwigXV7"));
 
-        copyMissingImage(defaultPath.getParent(), collectionPath);
         // Do not copy book files!
 
         ByteStreamGroup bookGroup = new FSByteStreamGroup(bookPath.toString());
@@ -150,7 +138,7 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         assertEquals(0, bookGroup.numberOfByteStreams());
 
         List<String> errors = new ArrayList<>();
-        store.generateAndWriteImageList(COLLECTION, "LudwigXV7", false, errors);
+        testStore.generateAndWriteImageList(COLLECTION_NAME, "LudwigXV7", false, errors);
 
         assertTrue(errors.isEmpty());
         assertEquals(1, bookGroup.numberOfByteStreams());
@@ -174,10 +162,11 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         assertNotNull(url);
         Path waltersOriginalPath = Paths.get(url.toURI());
 
-        Path bookTestPath = Files.createDirectories(folder.toPath().resolve(COLLECTION).resolve("Walters143"));
+        Path bookTestPath = Files.createDirectories(testArchivePath.resolve(COLLECTION_NAME).resolve("Walters143"));
 
         // Copy all + image list
-        copyTestFiles(waltersOriginalPath, bookTestPath);
+        // TODO
+        // copyTestFiles(waltersOriginalPath, bookTestPath);
 
         ByteStreamGroup bookGroup = new FSByteStreamGroup(bookTestPath.toString());
         assertNotNull(bookGroup);
@@ -185,7 +174,7 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         assertEquals(8, bookGroup.numberOfByteStreams());
 
         List<String> errors = new ArrayList<>();
-        store.generateAndWriteImageList(COLLECTION, "Walters143", false, errors);
+        testStore.generateAndWriteImageList(COLLECTION_NAME, "Walters143", false, errors);
 
         assertFalse(errors.isEmpty());
         assertEquals(1, errors.size());
@@ -197,7 +186,7 @@ public class StoreImageListsIntegrationTest extends StoreIntegrationBase {
         assertEquals(81, lines.size());
 
         errors.clear();
-        store.generateAndWriteImageList(COLLECTION, "Walters143", true, errors);
+        testStore.generateAndWriteImageList(COLLECTION_NAME, "Walters143", true, errors);
 
         assertTrue(errors.isEmpty());
         checkImageList(bookTestPath.resolve("Walters143.images.csv"), new String[]{

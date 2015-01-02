@@ -322,7 +322,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         Book b = loadBook(collection, book, errors);
         errors.clear();
 
-        if (!force && (b.getCroppedImages() != null || bookStreams.hasByteStreamGroup(CROPPED_DIR))) {
+        if (!force && b.getCroppedImages() != null && bookStreams.hasByteStreamGroup(CROPPED_DIR)) {
             errors.add("Cropped images already exist for this book. [" + collection + ":" + book
                     + "]. Force overwrite with '-force'");
             return;

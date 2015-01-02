@@ -1,54 +1,39 @@
 package rosa.archive.core;
 
-import org.junit.Ignore;
-import org.junit.Test;
-
-import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.FSByteStreamGroup;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
 /**
- *
+ * Test handling of cropped images.
  */
-@Ignore
-public class CropImageIntegrationTest extends StoreIntegrationBase {
+public class StoreCropTest extends BaseStoreTest {
 
     /**
-     * cropped/ directory does not exist, but the file *.images.crop.csv does exist.
-     * The code should execute and result in 1 error and no images being cropped or
-     * generated. The cropped/ directory should not be created.
+     * Should not crop if not forced and the cropped directory already exists.
      *
      * @throws IOException
      */
     @Test
-    public void dontCropImagesTest() throws IOException {
-        copyTestFiles(defaultPath, testBook);
-
-        assertEquals(1, store.listBookCollections().length);
-        assertEquals(1, store.listBooks(COLLECTION).length);
-        assertEquals(BOOK, store.listBooks(COLLECTION)[0]);
-
-        // Make sure cropped/ directory does not exist
-        ByteStreamGroup bookGroup = new FSByteStreamGroup(testBook.toString());
+    public void testDoNotCropExistingImages() throws IOException {
+        // Create cropped directory
+        ByteStreamGroup bookGroup = new FSByteStreamGroup(testBookPath);
         assertNotNull(bookGroup);
-        assertTrue(bookGroup.hasByteStream("LudwigXV7.images.crop.csv"));
-        assertFalse(bookGroup.hasByteStreamGroup("cropped"));
+        bookGroup.newByteStreamGroup("cropped");
+        assertTrue(bookGroup.hasByteStreamGroup("cropped"));
 
         List<String> errors = new ArrayList<>();
-        store.cropImages(COLLECTION, BOOK, false, errors);
+        testStore.cropImages(COLLECTION_NAME, BOOK_NAME, false, errors);
 
         assertEquals(1, errors.size());
-        assertEquals("Cropped images already exist for this book. [collection:LudwigXV7]. Force overwrite with '-force'",
-                    errors.get(0));
-        assertFalse(bookGroup.hasByteStreamGroup("cropped"));
+        assertTrue(errors.get(0).contains("images already exist for this book"));
     }
 
     /**
@@ -63,14 +48,8 @@ public class CropImageIntegrationTest extends StoreIntegrationBase {
      */
     @Test
     public void forceImageCropDespiteCropFile() throws IOException {
-        copyTestFiles(defaultPath, testBook);
-
-        assertEquals(1, store.listBookCollections().length);
-        assertEquals(1, store.listBooks(COLLECTION).length);
-        assertEquals(BOOK, store.listBooks(COLLECTION)[0]);
-
         // Make sure cropped/ directory does not exist
-        ByteStreamGroup bookGroup = new FSByteStreamGroup(testBook.toString());
+        ByteStreamGroup bookGroup = new FSByteStreamGroup(testBookPath);
         assertNotNull(bookGroup);
         assertTrue(bookGroup.hasByteStream("LudwigXV7.images.csv"));
         assertTrue(bookGroup.hasByteStream("LudwigXV7.images.crop.csv"));
@@ -80,7 +59,7 @@ public class CropImageIntegrationTest extends StoreIntegrationBase {
         assertEquals(21, countImages(bookGroup));
 
         List<String> errors = new ArrayList<>();
-        store.cropImages(COLLECTION, BOOK, true, errors);
+        testStore.cropImages(COLLECTION_NAME, BOOK_NAME, true, errors);
 
         assertEquals(1, errors.size());
         assertEquals("Image missing from cropping information, copying old file. [LudwigXV7.frontmatter.flyleaf.001r.tif]",
@@ -100,7 +79,7 @@ public class CropImageIntegrationTest extends StoreIntegrationBase {
         int count = 0;
 
         for (String name : bsg.listByteStreamNames()) {
-            if (name.endsWith(".tif")) {
+            if (name.endsWith(ArchiveConstants.TIF_EXT)) {
                 count++;
             }
         }

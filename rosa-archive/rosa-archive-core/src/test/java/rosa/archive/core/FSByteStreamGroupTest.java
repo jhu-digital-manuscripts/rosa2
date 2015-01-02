@@ -32,9 +32,9 @@ public class FSByteStreamGroupTest extends BaseGuiceTest {
     }
 
     @Test
-    public void noByteStreamsAtTop() throws IOException {
+    public void oneByteStreamsAtTop() throws IOException {
         int numberOfByteStreams = base.numberOfByteStreams();
-        assertEquals(0, numberOfByteStreams);
+        assertEquals(1, numberOfByteStreams);
     }
 
     @Test
