@@ -28,7 +28,7 @@ public class CharacterNamesSerializerTest extends BaseSerializerTest {
     @Before
     public void setup() {
         super.setup();
-        serializer = new CharacterNamesSerializer(config);
+        serializer = new CharacterNamesSerializer();
     }
 
     @Test

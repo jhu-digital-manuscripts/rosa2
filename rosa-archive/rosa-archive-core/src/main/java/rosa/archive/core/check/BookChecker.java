@@ -19,7 +19,6 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -57,8 +56,8 @@ public class BookChecker extends AbstractArchiveChecker {
     private static Schema aorAnnotationSchema;
 
     @Inject
-    BookChecker(ArchiveConfig config, SerializerSet serializers) {
-        super(config, serializers);
+    BookChecker(SerializerSet serializers) {
+        super(serializers);
     }
 
     public boolean checkContent(
@@ -82,7 +81,7 @@ public class BookChecker extends AbstractArchiveChecker {
         //   cropInfo
         check(book.getCropInfo(), book, bsg, errors, warnings);
 
-        for (String lang : config.getLanguages()) {
+        for (String lang : collection.getAllSupportedLanguages()) {
             //   bookMetadata
             check(book.getBookMetadata(lang), book, bsg, errors, warnings);
             //   bookDescription (currently not present in model)
@@ -90,7 +89,7 @@ public class BookChecker extends AbstractArchiveChecker {
             check(book.getPermission(lang), book, bsg, errors, warnings);
         }
         //   compare contents of metadata descriptions in different languages
-        check(book, config.getLanguages(), bsg, errors, warnings);
+        check(book, collection.getAllSupportedLanguages(), bsg, errors, warnings);
 
         //   content
         check(book.getContent(), book.getId(), errors, warnings);

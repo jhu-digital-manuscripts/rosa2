@@ -28,7 +28,7 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest {
     @Before
     public void setup() {
         super.setup();
-        serializer = new IllustrationTitlesSerializer(config);
+        serializer = new IllustrationTitlesSerializer();
     }
 
     @Test

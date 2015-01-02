@@ -5,7 +5,6 @@ import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.CharacterNames;
@@ -20,8 +19,8 @@ import com.google.inject.Inject;
 public class BookCollectionChecker extends AbstractArchiveChecker {
 
     @Inject
-    public BookCollectionChecker(ArchiveConfig config, SerializerSet serializers) {
-        super(config, serializers);
+    public BookCollectionChecker(SerializerSet serializers) {
+        super(serializers);
     }
 
     public boolean checkContent(BookCollection collection, ByteStreamGroup bsg, boolean checkBits,
@@ -46,7 +45,7 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
         }
 
         //   languages
-        for (String lang : config.getLanguages()) {
+        for (String lang : collection.getAllSupportedLanguages()) {
             if (!collection.isLanguageSupported(lang)) {
                 errors.add("Language should be supported but is not. [" + lang + "]");
             }

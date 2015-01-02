@@ -1,38 +1,18 @@
 package rosa.archive.core;
 
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.TemporaryFolder;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-
-import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.ArchiveConfig;
-import rosa.archive.core.FSByteStreamGroup;
-import rosa.archive.core.Store;
-import rosa.archive.core.StoreImpl;
-import rosa.archive.core.check.BookChecker;
-import rosa.archive.core.check.BookCollectionChecker;
-import rosa.archive.core.serialize.Serializer;
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
-import rosa.archive.model.BookImage;
-import rosa.archive.model.BookMetadata;
-import rosa.archive.model.BookStructure;
-import rosa.archive.model.CharacterNames;
-import rosa.archive.model.SHA1Checksum;
-import rosa.archive.model.CropInfo;
-import rosa.archive.model.IllustrationTagging;
-import rosa.archive.model.IllustrationTitles;
-import rosa.archive.model.ImageList;
-import rosa.archive.model.NarrativeSections;
-import rosa.archive.model.NarrativeTagging;
-import rosa.archive.model.Permission;
-import rosa.archive.model.Transcription;
-import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.meta.MultilangMetadata;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyBoolean;
+import static org.mockito.Matchers.anyList;
+import static org.mockito.Matchers.anyObject;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.atMost;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import java.io.File;
 import java.io.IOException;
@@ -48,20 +28,34 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyBoolean;
-import static org.mockito.Matchers.anyList;
-import static org.mockito.Matchers.anyObject;
-import static org.mockito.Matchers.eq;
-import static org.mockito.Mockito.atLeastOnce;
-import static org.mockito.Mockito.atMost;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import rosa.archive.core.check.BookChecker;
+import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.serialize.Serializer;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
+import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookStructure;
+import rosa.archive.model.CharacterNames;
+import rosa.archive.model.CropInfo;
+import rosa.archive.model.IllustrationTagging;
+import rosa.archive.model.IllustrationTitles;
+import rosa.archive.model.ImageList;
+import rosa.archive.model.NarrativeSections;
+import rosa.archive.model.NarrativeTagging;
+import rosa.archive.model.Permission;
+import rosa.archive.model.SHA1Checksum;
+import rosa.archive.model.Transcription;
+import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.meta.MultilangMetadata;
 
 // TODO Fix and cleanup
 
@@ -72,8 +66,7 @@ import static org.mockito.Mockito.when;
 public class StoreCheckerImplTest extends BaseGuiceTest {
 
     private StoreImpl store;
-    @Mock
-    private ArchiveConfig context;
+
     @Mock
     private BookCollectionChecker collectionChecker;
     @Mock
@@ -115,7 +108,6 @@ public class StoreCheckerImplTest extends BaseGuiceTest {
         // Setting config to a single constant to ensure that all input streams will open
         // in order to read from the mock serializers.
         final String GOOD_FILE = ".crop.txt";
-        when(context.getLanguages()).thenReturn(new String[] {"en", "fr"});
     }
 
     @Test
@@ -291,7 +283,7 @@ public class StoreCheckerImplTest extends BaseGuiceTest {
         }
 
         ByteStreamGroup temp = new FSByteStreamGroup(folder.getParent());
-        Store tmpStore = new StoreImpl(serializers, bookChecker, collectionChecker, context, temp);
+        Store tmpStore = new StoreImpl(serializers, bookChecker, collectionChecker, temp);
 
         List<String> errors = new ArrayList<>();
         BookCollection collection = tmpStore.loadBookCollection("r", errors);

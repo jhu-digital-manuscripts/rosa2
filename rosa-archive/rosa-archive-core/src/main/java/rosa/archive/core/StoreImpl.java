@@ -56,7 +56,6 @@ import com.google.inject.Inject;
 public class StoreImpl implements Store, ArchiveConstants {
     private final SerializerSet serializers;
     private final ByteStreamGroup base;
-    private final ArchiveConfig config;
     private final BookCollectionChecker collectionChecker;
     private final BookChecker bookChecker;
 
@@ -64,11 +63,9 @@ public class StoreImpl implements Store, ArchiveConstants {
     public StoreImpl(SerializerSet serializers,
                      BookChecker bookChecker,
                      BookCollectionChecker collectionChecker,
-                     ArchiveConfig config,
                      ByteStreamGroup base) {
         this.serializers = serializers;
         this.base = base;
-        this.config = config;
         this.collectionChecker = collectionChecker;
         this.bookChecker = bookChecker;
     }
@@ -104,7 +101,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         );
 
         // Languages from configuration.
-        collection.setLanguages(config.getLanguages());
+        //collection.setLanguages(config.getLanguages());
 
         return collection;
     }

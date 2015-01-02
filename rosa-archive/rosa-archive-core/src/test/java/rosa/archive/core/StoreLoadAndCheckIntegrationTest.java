@@ -18,15 +18,11 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.meta.MultilangMetadata;
-
-import com.google.inject.Inject;
 
 /**
  *
@@ -40,16 +36,12 @@ public class StoreLoadAndCheckIntegrationTest extends BaseGuiceTest {
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
 
-    @Inject
-    private ArchiveConfig config;
-
-
     private BookCollectionChecker collectionChecker;
 
     @Before
     public void setup() throws URISyntaxException, IOException {
         super.setup();
-        collectionChecker = new BookCollectionChecker(config, serializers);
+        collectionChecker = new BookCollectionChecker(serializers);
     }
 
     @Test

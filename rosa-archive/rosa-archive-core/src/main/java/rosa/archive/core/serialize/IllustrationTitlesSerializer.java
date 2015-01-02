@@ -1,22 +1,18 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
-
-import org.apache.commons.io.IOUtils;
-
-import rosa.archive.core.ArchiveConfig;
-import rosa.archive.core.util.CSV;
-import rosa.archive.core.util.CSVSpreadSheet;
-import rosa.archive.model.IllustrationTitles;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import org.apache.commons.io.IOUtils;
+
+import rosa.archive.core.util.CSV;
+import rosa.archive.core.util.CSVSpreadSheet;
+import rosa.archive.model.IllustrationTitles;
 
 /**
  * @see rosa.archive.model.IllustrationTitles
@@ -27,19 +23,12 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
         ID, TITLE
     }
 
-    private ArchiveConfig config;
-
-    @Inject
-    IllustrationTitlesSerializer(ArchiveConfig config) {
-        this.config = config;
-    }
-
     @Override
     public IllustrationTitles read(InputStream is, List<String> errors) throws IOException {
 
         IllustrationTitles titles = new IllustrationTitles();
 
-        try (InputStreamReader reader = new InputStreamReader(is, config.getEncoding())) {
+        try (InputStreamReader reader = new InputStreamReader(is, UTF_8)) {
 
             CSVSpreadSheet data = new CSVSpreadSheet(reader, 2, 2, errors);
             Map<String, String> dataMap = new HashMap<>();
@@ -64,11 +53,11 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
     @Override
     public void write(IllustrationTitles titles, OutputStream out) throws IOException {
         final String header = "Id,Title\n";
-        IOUtils.write(header, out, Charset.forName(config.getEncoding()));
+        IOUtils.write(header, out, UTF_8);
 
         for (String id : titles.getAllIds()) {
             String line = id + ',' + CSV.escape(titles.getTitleById(id)) + '\n';
-            IOUtils.write(line, out, Charset.forName(config.getEncoding()));
+            IOUtils.write(line, out, UTF_8);
         }
 
     }

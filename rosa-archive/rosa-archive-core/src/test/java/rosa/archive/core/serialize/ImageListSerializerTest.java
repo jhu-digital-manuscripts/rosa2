@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.when;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -27,7 +26,7 @@ public class ImageListSerializerTest extends BaseSerializerTest{
     @Before
     public void setup() {
         super.setup();
-        serializer = new ImageListSerializer(config);
+        serializer = new ImageListSerializer();
     }
 
     @Test

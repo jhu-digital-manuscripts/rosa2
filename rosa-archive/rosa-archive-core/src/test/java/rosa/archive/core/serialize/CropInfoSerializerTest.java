@@ -29,7 +29,7 @@ public class CropInfoSerializerTest extends BaseSerializerTest {
     @Before
     public void setup() {
         super.setup();
-        serializer = new CropInfoSerializer(config);
+        serializer = new CropInfoSerializer();
     }
 
     @Test

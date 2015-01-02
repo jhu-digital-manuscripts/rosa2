@@ -1,9 +1,7 @@
 package rosa.archive.core.serialize;
 
-import org.junit.Before;
-import org.junit.Test;
-import rosa.archive.model.NarrativeScene;
-import rosa.archive.model.NarrativeSections;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -11,8 +9,11 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import org.junit.Before;
+import org.junit.Test;
+
+import rosa.archive.model.NarrativeScene;
+import rosa.archive.model.NarrativeSections;
 
 /**
  * @see rosa.archive.core.serialize.NarrativeSectionsSerializer
@@ -24,7 +25,7 @@ public class NarrativeSectionsSerializerTest extends BaseSerializerTest {
     @Before
     public void setup() {
         super.setup();
-        serializer = new NarrativeSectionsSerializer(config);
+        serializer = new NarrativeSectionsSerializer();
     }
 
     @Test

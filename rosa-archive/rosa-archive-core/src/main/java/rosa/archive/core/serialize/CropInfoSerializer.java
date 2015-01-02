@@ -1,35 +1,24 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
-
-import org.apache.commons.io.IOUtils;
-
-import rosa.archive.core.ArchiveConfig;
-import rosa.archive.model.CropData;
-import rosa.archive.model.CropInfo;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
 
+import org.apache.commons.io.IOUtils;
+
+import rosa.archive.model.CropData;
+import rosa.archive.model.CropInfo;
+
 /**
  * @see rosa.archive.model.CropInfo
  */
 public class CropInfoSerializer implements Serializer<CropInfo> {
-
-    private ArchiveConfig config;
-
-    @Inject
-    CropInfoSerializer(ArchiveConfig config) {
-        this.config = config;
-    }
-
     @Override
     public CropInfo read(InputStream is, List<String> errors) throws IOException {
         CropInfo info = new CropInfo();
 
-        List<String> lines = IOUtils.readLines(is, config.getEncoding());
+        List<String> lines = IOUtils.readLines(is, UTF_8);
         for (String line : lines) {
 
             String[] parts = line.split("\\s+");
@@ -65,7 +54,7 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
             String line = crop.getId() + " " + String.format("%03f", crop.getLeft()) + " "
                     + String.format("%03f", crop.getRight()) + " " + String.format("%03f", crop.getTop()) + " "
                     + String.format("%03f", crop.getBottom()) + "\n";
-            IOUtils.write(line, out, config.getEncoding());
+            IOUtils.write(line, out, UTF_8);
         }
 
     }

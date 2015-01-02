@@ -21,7 +21,6 @@ import org.junit.Test;
 
 import rosa.archive.core.BaseGuiceTest;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.ArchiveConfig;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.CharacterName;
 import rosa.archive.model.CharacterNames;
@@ -40,10 +39,7 @@ public class BookCollectionCheckerTest extends BaseGuiceTest {
     @Test
     @Ignore
     public void checkTest() throws Exception {
-
-        ArchiveConfig config = mockAppConfig();
-
-        BookCollectionChecker checker = new BookCollectionChecker(config, serializers);
+        BookCollectionChecker checker = new BookCollectionChecker(serializers);
         BookCollection collection = createBookCollection();
 
         ByteStreamGroup bsg = base.getByteStreamGroup("rosedata");
@@ -100,19 +96,6 @@ public class BookCollectionCheckerTest extends BaseGuiceTest {
         return collection;
     }
 
-   
-    /**
-     * Create a new {@link rosa.archive.core.ArchiveConfig} mock object.
-     *
-     * @return AppConfig mock
-     */
-    private ArchiveConfig mockAppConfig() {
-        ArchiveConfig config = mock(ArchiveConfig.class);
-
-        when(config.getLanguages()).thenReturn(new String[] { "en", "fr" });
-       
-        return config;
-    }
 
 // ---------------------------------------------------------------------------------------------------
 

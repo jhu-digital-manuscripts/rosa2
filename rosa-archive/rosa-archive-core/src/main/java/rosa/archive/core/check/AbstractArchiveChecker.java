@@ -12,7 +12,6 @@ import org.apache.commons.lang3.StringUtils;
 
 import rosa.archive.core.ArchiveConstants;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.model.HasId;
@@ -23,12 +22,9 @@ import rosa.archive.model.SHA1Checksum;
  *
  */
 public abstract class AbstractArchiveChecker implements ArchiveConstants {
-
-    protected final ArchiveConfig config;
     protected final SerializerSet serializers;
 
-    AbstractArchiveChecker(ArchiveConfig config, SerializerSet serializers) {
-        this.config = config;
+    AbstractArchiveChecker(SerializerSet serializers) {
         this.serializers = serializers;
     }
 

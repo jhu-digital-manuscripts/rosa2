@@ -34,7 +34,7 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest {
     @Before
     public void setup() {
         super.setup();
-        serializer = new SHA1ChecksumSerializer(config);
+        serializer = new SHA1ChecksumSerializer();
     }
 
     @Test

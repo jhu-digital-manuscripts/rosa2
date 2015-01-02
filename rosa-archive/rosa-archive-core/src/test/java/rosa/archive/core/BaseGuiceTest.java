@@ -35,9 +35,6 @@ public abstract class BaseGuiceTest {
     @Inject
     protected BookCollectionChecker collectionChecker;
 
-    @Inject
-    protected ArchiveConfig config;
-
     protected ByteStreamGroup base;
     protected Store store;
 
@@ -52,6 +49,6 @@ public abstract class BaseGuiceTest {
 
         base = new FSByteStreamGroup(path);
 
-        store = new StoreImpl(serializers, bookChecker, collectionChecker, config, base);
+        store = new StoreImpl(serializers, bookChecker, collectionChecker, base);
     }
 }

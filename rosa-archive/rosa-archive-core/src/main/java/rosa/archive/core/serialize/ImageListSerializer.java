@@ -9,32 +9,21 @@ import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 
-import com.google.inject.Inject;
-
 /**
  *
  */
 public class ImageListSerializer implements Serializer<ImageList> {
-
-    private ArchiveConfig config;
-
-    @Inject
-    ImageListSerializer(ArchiveConfig config) {
-        this.config = config;
-    }
-
     @Override
     public ImageList read(InputStream is, List<String> errors) throws IOException {
         ImageList images = new ImageList();
 
         List<BookImage> imgList = images.getImages();
-        List<String> rows = IOUtils.readLines(is, config.getEncoding());
+        List<String> rows = IOUtils.readLines(is, UTF_8);
 
         for (String row : rows) {
             String[] csvRow = CSV.parse(row);
@@ -86,7 +75,7 @@ public class ImageListSerializer implements Serializer<ImageList> {
         for (BookImage image : imageList) {
             String line = image.isMissing() ? "*" : "";
             line += image.getId() + "," + image.getWidth() + "," + image.getHeight() + "\n";
-            IOUtils.write(line, out, config.getEncoding());
+            IOUtils.write(line, out, UTF_8);
         }
     }
 

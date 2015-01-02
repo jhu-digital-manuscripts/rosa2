@@ -15,12 +15,10 @@ import java.util.Map;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import rosa.archive.core.BaseGuiceTest;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.ArchiveConfig;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -52,20 +50,15 @@ import rosa.archive.model.redtag.StructurePageSide;
 */
 public class BookCheckerTest extends BaseGuiceTest {
 
-    @Mock
-    private ArchiveConfig config;
-
     @Before
     public void setup() throws URISyntaxException, IOException {
         super.setup();
         MockitoAnnotations.initMocks(this);
-
-        when(config.getLanguages()).thenReturn(new String[] { "en", "fr" });
     }
 
     @Test
     public void checkContentTest() throws IOException {
-        BookChecker bChecker = new BookChecker(config, serializers);
+        BookChecker bChecker = new BookChecker(serializers);
 
         ByteStreamGroup bsg = mock(ByteStreamGroup.class);
         when(bsg.getByteStream(anyString())).thenReturn(

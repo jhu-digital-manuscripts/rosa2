@@ -1,36 +1,25 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
-
-import org.apache.commons.io.IOUtils;
-
-import rosa.archive.core.ArchiveConfig;
-import rosa.archive.model.SHA1Checksum;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.io.IOUtils;
+
+import rosa.archive.model.SHA1Checksum;
+
 /**
  * @see rosa.archive.model.SHA1Checksum
  */
 public class SHA1ChecksumSerializer implements Serializer<SHA1Checksum> {
-
-    private ArchiveConfig config;
-
-    @Inject
-    SHA1ChecksumSerializer(ArchiveConfig config) {
-        this.config = config;
-    }
-
     @Override
     public SHA1Checksum read(InputStream is, List<String> errors) throws IOException {
         SHA1Checksum info = new SHA1Checksum();
         Map<String, String> checksums = info.checksums();
 
-        List<String> lines = IOUtils.readLines(is, config.getEncoding());
+        List<String> lines = IOUtils.readLines(is, UTF_8);
         for (String line : lines) {
             // Split on space
             String[] parts = line.split("\\s+");
@@ -52,7 +41,7 @@ public class SHA1ChecksumSerializer implements Serializer<SHA1Checksum> {
 
         for (String id : checksums.keySet()) {
             String lineToWrite = checksums.get(id) + "  " + id + "\n";
-            IOUtils.write(lineToWrite, out, config.getEncoding());
+            IOUtils.write(lineToWrite, out, UTF_8);
         }
     }
 

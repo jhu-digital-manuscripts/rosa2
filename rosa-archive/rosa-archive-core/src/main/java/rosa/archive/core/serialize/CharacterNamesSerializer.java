@@ -1,23 +1,19 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
-
-import org.apache.commons.io.IOUtils;
-
-import rosa.archive.core.ArchiveConfig;
-import rosa.archive.core.util.CSV;
-import rosa.archive.core.util.CSVSpreadSheet;
-import rosa.archive.model.CharacterNames;
-import rosa.archive.model.CharacterName;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import org.apache.commons.io.IOUtils;
+
+import rosa.archive.core.util.CSV;
+import rosa.archive.core.util.CSVSpreadSheet;
+import rosa.archive.model.CharacterName;
+import rosa.archive.model.CharacterNames;
 
 /**
  * @see rosa.archive.model.CharacterNames
@@ -43,18 +39,11 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
         }
     }
 
-    private ArchiveConfig config;
-
-    @Inject
-    CharacterNamesSerializer(ArchiveConfig config) {
-        this.config = config;
-    }
-
     @Override
     public CharacterNames read(InputStream is, List<String> errors) throws IOException{
         CharacterNames names = new CharacterNames();
 
-        try (InputStreamReader reader = new InputStreamReader(is, config.getEncoding())) {
+        try (InputStreamReader reader = new InputStreamReader(is, UTF_8)) {
 
             CSVSpreadSheet table = new CSVSpreadSheet(reader, MIN_COLS, MAX_COLS, errors);
             List<String> headers = table.size() > 0 ?
@@ -85,7 +74,7 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
     @Override
     public void write(CharacterNames names, OutputStream out) throws IOException {
         final String header = "ID,Site name,French variant,English name\n";
-        IOUtils.write(header, out, Charset.forName(config.getEncoding()));
+        IOUtils.write(header, out, UTF_8);
 
         for (String id : names.getAllCharacterIds()) {
             StringBuilder sb = new StringBuilder(id);
@@ -101,7 +90,7 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
             sb.append(CSV.escape(names.getNameInLanguage(id, "en")));
             sb.append('\n');
 
-            IOUtils.write(sb, out, Charset.forName(config.getEncoding()));
+            IOUtils.write(sb, out, UTF_8);
         }
 
     }

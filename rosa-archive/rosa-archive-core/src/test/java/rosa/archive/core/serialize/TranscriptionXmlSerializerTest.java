@@ -22,7 +22,7 @@ public class TranscriptionXmlSerializerTest extends BaseSerializerTest {
     @Before
     public void setup() {
         super.setup();
-        serializer = new TranscriptionXmlSerializer(config);
+        serializer = new TranscriptionXmlSerializer();
     }
 
     @Test

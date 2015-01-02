@@ -1,41 +1,29 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Arrays;
+import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
-import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * @see rosa.archive.model.NarrativeSections
  */
 public class NarrativeSectionsSerializer implements Serializer<NarrativeSections> {
-
-    private ArchiveConfig config;
-
-    @Inject
-    NarrativeSectionsSerializer(ArchiveConfig config) {
-        this.config = config;
-    }
-
     @Override
     public NarrativeSections read(InputStream is, List<String> errors) throws IOException {
         NarrativeSections sections = new NarrativeSections();
 
         List<NarrativeScene> scenes = sections.asScenes();
 
-        List<String> lines = IOUtils.readLines(is, config.getEncoding());
+        List<String> lines = IOUtils.readLines(is, UTF_8);
         String[] headers = lines.size() > 0 ?
                 CSV.parse(lines.get(0)) : new String[4];
 
@@ -58,7 +46,7 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
     @Override
     public void write(NarrativeSections sections, OutputStream out) throws IOException {
         final String header = "Section,Lines,Lecoy,Description\n";
-        IOUtils.write(header, out, Charset.forName(config.getEncoding()));
+        IOUtils.write(header, out, UTF_8);
 
         for (NarrativeScene scene : sections.asScenes()) {
             StringBuilder sb = new StringBuilder(CSV.escape(scene.getId()));
@@ -79,7 +67,7 @@ public class NarrativeSectionsSerializer implements Serializer<NarrativeSections
             }
 
             sb.append('\n');
-            IOUtils.write(sb, out, Charset.forName(config.getEncoding()));
+            IOUtils.write(sb, out, UTF_8);
         }
     }
 

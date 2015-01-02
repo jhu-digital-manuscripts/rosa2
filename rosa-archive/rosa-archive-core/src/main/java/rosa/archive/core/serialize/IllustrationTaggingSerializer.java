@@ -1,20 +1,16 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
-
-import org.apache.commons.io.IOUtils;
-
-import rosa.archive.core.ArchiveConfig;
-import rosa.archive.core.util.CSV;
-import rosa.archive.model.Illustration;
-import rosa.archive.model.IllustrationTagging;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.List;
+
+import org.apache.commons.io.IOUtils;
+
+import rosa.archive.core.util.CSV;
+import rosa.archive.model.Illustration;
+import rosa.archive.model.IllustrationTagging;
 
 /**
  * Serializes image tagging data.
@@ -22,19 +18,11 @@ import java.util.List;
  * @see rosa.archive.model.IllustrationTagging
  */
 public class IllustrationTaggingSerializer implements Serializer<IllustrationTagging> {
-
-    private ArchiveConfig config;
-
-    @Inject
-    IllustrationTaggingSerializer(ArchiveConfig config) {
-        this.config = config;
-    }
-
     @Override
     public IllustrationTagging read(InputStream is, List<String> errors) throws IOException{
         IllustrationTagging tagging = new IllustrationTagging();
 
-        List<String> linesIn = IOUtils.readLines(is, config.getEncoding());
+        List<String> linesIn = IOUtils.readLines(is, UTF_8);
 
         for (int i = 1; i < linesIn.size(); i++) {
             String[] row = CSV.parse(linesIn.get(i));
@@ -68,7 +56,7 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
     @Override
     public void write(IllustrationTagging tagging, OutputStream out) throws IOException {
         final String header = "id,Folio,Illustration title,Textual elements,Initials,Characters,Costume,Objects,Landscape,Architecture,Other\n";
-        IOUtils.write(header, out, Charset.forName(config.getEncoding()));
+        IOUtils.write(header, out, UTF_8);
 
         for (Illustration ill : tagging) {
             String line =
@@ -84,7 +72,7 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
                     + CSV.escape(ill.getArchitecture()) + ','
                     + CSV.escape(ill.getOther()) + '\n';
 
-            IOUtils.write(line, out, Charset.forName(config.getEncoding()));
+            IOUtils.write(line, out, UTF_8);
         }
     }
 

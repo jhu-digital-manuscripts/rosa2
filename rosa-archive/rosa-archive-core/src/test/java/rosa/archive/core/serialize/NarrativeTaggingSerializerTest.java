@@ -25,7 +25,7 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
     @Before
     public void setup() {
         super.setup();
-        serializer = new NarrativeTaggingSerializer(config);
+        serializer = new NarrativeTaggingSerializer();
     }
 
     @Test

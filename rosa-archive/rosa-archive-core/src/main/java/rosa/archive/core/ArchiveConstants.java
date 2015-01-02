@@ -1,8 +1,12 @@
 package rosa.archive.core;
 
+import java.nio.charset.Charset;
+
 // TODO Capitalize, normalize based on usage
 // TODO Not clear all of this needs to be here
 public interface ArchiveConstants {
+    static final Charset UTF_8 = Charset.forName("UTF-8");
+    
     // AoR annotation schema and dtd
 
     static final String annotationSchemaUrl = "http://www.livesandletters.ac.uk/schema/aor_20141118.xsd";

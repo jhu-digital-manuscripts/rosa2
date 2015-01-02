@@ -1,38 +1,26 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
-
-import org.apache.commons.io.IOUtils;
-
-import rosa.archive.core.ArchiveConfig;
-import rosa.archive.core.util.CSV;
-import rosa.archive.model.BookScene;
-import rosa.archive.model.NarrativeTagging;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.nio.charset.Charset;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.apache.commons.io.IOUtils;
+
+import rosa.archive.core.util.CSV;
+import rosa.archive.model.BookScene;
+import rosa.archive.model.NarrativeTagging;
 
 /**
  * @see rosa.archive.model.NarrativeTagging
  */
 public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> {
-
-    private ArchiveConfig config;
-
-    @Inject
-    NarrativeTaggingSerializer(ArchiveConfig config) {
-        this.config = config;
-    }
-
     @Override
     public NarrativeTagging read(InputStream is, List<String> errors) throws IOException {
 
-        List<String> lines = IOUtils.readLines(is, config.getEncoding());
+        List<String> lines = IOUtils.readLines(is, UTF_8);
 
         // Guess if it is a .csv file or a .txt file. Each must be parsed differently.
         // Narrative Tagging CSV file will have 8 columns.
@@ -94,7 +82,7 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
                 sb.append(scene.getStartCriticalEdition());
             }
             sb.append('\n');
-            IOUtils.write(sb.toString(), out, Charset.forName(config.getEncoding()));
+            IOUtils.write(sb.toString(), out, UTF_8);
         }
 
     }

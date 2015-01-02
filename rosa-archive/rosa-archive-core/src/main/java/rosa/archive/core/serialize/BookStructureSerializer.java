@@ -1,12 +1,15 @@
 package rosa.archive.core.serialize;
 
-import com.google.inject.Inject;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 
-import rosa.archive.core.ArchiveConfig;
-import rosa.archive.model.redtag.Blank;
 import rosa.archive.model.BookStructure;
+import rosa.archive.model.redtag.Blank;
 import rosa.archive.model.redtag.Heading;
 import rosa.archive.model.redtag.Image;
 import rosa.archive.model.redtag.Initial;
@@ -16,26 +19,12 @@ import rosa.archive.model.redtag.StructureColumn;
 import rosa.archive.model.redtag.StructurePage;
 import rosa.archive.model.redtag.StructurePageSide;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Associated with Reduced Tagging.
  *
  * @see rosa.archive.model.BookStructure
  */
 public class BookStructureSerializer implements Serializer<BookStructure> {
-
-    private ArchiveConfig config;
-
-    @Inject
-    BookStructureSerializer(ArchiveConfig config) {
-        this.config = config;
-    }
-
     @Override
     public BookStructure read(InputStream is, List<String> errors) throws IOException {
         BookStructure structure = new BookStructure();
@@ -47,7 +36,7 @@ public class BookStructureSerializer implements Serializer<BookStructure> {
         int linesInColumn = -1;
         StructureColumn col = null;
 
-        List<String> inputLine = IOUtils.readLines(is, config.getEncoding());
+        List<String> inputLine = IOUtils.readLines(is, UTF_8);
         for (String line : inputLine) {
             line = line.trim();
             n++;
