@@ -40,7 +40,6 @@ public class StoreLoadAndCheckIntegrationTest extends BaseGuiceTest {
 
     @Before
     public void setup() throws URISyntaxException, IOException {
-        super.setup();
         collectionChecker = new BookCollectionChecker(serializers);
     }
 

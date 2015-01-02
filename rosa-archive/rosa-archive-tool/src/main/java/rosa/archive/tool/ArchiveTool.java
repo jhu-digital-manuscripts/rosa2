@@ -14,7 +14,6 @@ import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
-import rosa.archive.core.ArchiveConfig;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
@@ -93,7 +92,7 @@ public class ArchiveTool {
 
         // Create the tool and run the command
         ByteStreamGroup base = new FSByteStreamGroup(config.getArchivePath());
-        Store store = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), injector.getInstance(ArchiveConfig.class), base);
+        Store store = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
 
         tool = new ArchiveTool(store, config, System.out);
         tool.run(cmd);
