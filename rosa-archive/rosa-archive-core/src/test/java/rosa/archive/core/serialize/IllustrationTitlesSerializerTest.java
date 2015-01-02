@@ -4,10 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,35 +17,27 @@ import rosa.archive.model.IllustrationTitles;
 /**
  * @see rosa.archive.core.serialize.IllustrationTitlesSerializer
  */
-public class IllustrationTitlesSerializerTest extends BaseSerializerTest {
-    private static final String testFile = "data/illustration_titles.csv";
-
-    private Serializer<IllustrationTitles> serializer;
-
+public class IllustrationTitlesSerializerTest extends BaseSerializerTest<IllustrationTitles> {
     @Before
     public void setup() {
-        super.setup();
         serializer = new IllustrationTitlesSerializer();
     }
 
     @Test
     public void readTest() throws IOException {
+        IllustrationTitles titles = loadResource("data/illustration_titles.csv");
 
-        try (InputStream stream = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            IllustrationTitles titles = serializer.read(stream, errors);
+        assertNotNull(titles);
+        assertTrue(titles.getAllIds().size() > 0);
 
-            assertNotNull(titles);
-            assertTrue(titles.getAllIds().size() > 0);
-
-            assertEquals(321, titles.getAllIds().size());
-            assertEquals("Portrait of Author (Guillaume de Lorris)", titles.getTitleById("1"));
-            assertEquals("Dangier Speaks to L’Amans", titles.getTitleById("80"));
-        }
-
+        assertEquals(321, titles.getAllIds().size());
+        assertEquals("Portrait of Author (Guillaume de Lorris)", titles.getTitleById("1"));
+        assertEquals("Dangier Speaks to L’Amans", titles.getTitleById("80"));
     }
 
     @Test
     public void writeTest() throws IOException {
+        // Setup IllustrationTitles object
         IllustrationTitles titles = new IllustrationTitles();
         titles.setId("IllustrationTitles");
 
@@ -60,22 +49,16 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest {
         titlesMap.put("ID8", "Title 1, Title 2, Title 3");
         titles.setData(titlesMap);
 
-        try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
-            serializer.write(titles, out);
-            String res = out.toString("UTF-8");
+        // Write the object and get all written lines
+        List<String> lines = writeObjectAndGetWrittenLines(titles);
 
-            assertNotNull(res);
-            assertTrue(res.length() > 0);
+        assertNotNull(lines);
+        assertEquals(11, lines.size());
 
-            List<String> lines = Arrays.asList(res.split("\n"));
-            assertNotNull(lines);
-            assertEquals(11, lines.size());
-
-            assertEquals("Id,Title", lines.get(0));
-            assertTrue(lines.contains("ID3,Title 2"));
-            assertTrue(lines.contains("ID8,\"Title 1, Title 2, Title 3\""));
-            assertTrue(lines.contains("ID1,Illustration Title [1]"));
-        }
+        assertEquals("Id,Title", lines.get(0));
+        assertTrue(lines.contains("ID3,Title 2"));
+        assertTrue(lines.contains("ID8,\"Title 1, Title 2, Title 3\""));
+        assertTrue(lines.contains("ID1,Illustration Title [1]"));
     }
 
 }

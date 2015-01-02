@@ -4,9 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 import org.junit.Before;
@@ -18,13 +16,10 @@ import rosa.archive.model.NarrativeTagging;
 /**
  * @see rosa.archive.core.serialize.NarrativeTaggingSerializer
  */
-public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
-
-    private Serializer<NarrativeTagging> serializer;
+public class NarrativeTaggingSerializerTest extends BaseSerializerTest<NarrativeTagging> {
 
     @Before
     public void setup() {
-        super.setup();
         serializer = new NarrativeTaggingSerializer();
     }
 
@@ -35,61 +30,54 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest {
     }
 
     public void readCSVTest() throws IOException {
-        final String testFile = "data/LudwigXV7/LudwigXV7.nartag.csv";
+        NarrativeTagging tagging = loadResource("data/LudwigXV7/LudwigXV7.nartag.csv");
+        assertNotNull(tagging);
 
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            NarrativeTagging tagging = serializer.read(in, errors);
-            assertNotNull(tagging);
+        List<BookScene> scenes = tagging.getScenes();
+        assertNotNull(scenes);
+        assertEquals(44, scenes.size());
 
-            List<BookScene> scenes = tagging.getScenes();
-            assertNotNull(scenes);
-            assertEquals(44, scenes.size());
-
-            // g8c,10v.d,1,10v.d,38,(SS57) Il ont pliens cleres fontainnes,0,1381
-            BookScene scene = scenes.get(43);
-            assertEquals("g8c", scene.getId());
-            assertEquals("10v", scene.getStartPage());
-            assertEquals("d", scene.getStartPageCol());
-            assertEquals(1, scene.getStartLineOffset());
-            assertEquals("10v", scene.getEndPage());
-            assertEquals("d", scene.getEndPageCol());
-            assertEquals(38, scene.getEndLineOffset());
-        }
+        // g8c,10v.d,1,10v.d,38,(SS57) Il ont pliens cleres fontainnes,0,1381
+        BookScene scene = scenes.get(43);
+        assertEquals("g8c", scene.getId());
+        assertEquals("10v", scene.getStartPage());
+        assertEquals("d", scene.getStartPageCol());
+        assertEquals(1, scene.getStartLineOffset());
+        assertEquals("10v", scene.getEndPage());
+        assertEquals("d", scene.getEndPageCol());
+        assertEquals(38, scene.getEndLineOffset());
     }
 
     public void readTxtTest() throws IOException {
-        final String testFile = "data/Ferrell/Ferrell.nartag.txt";
+        NarrativeTagging tagging = loadResource("data/Ferrell/Ferrell.nartag.txt");
+        assertNotNull(tagging);
 
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            NarrativeTagging tagging = serializer.read(in, errors);
-            assertNotNull(tagging);
+        List<BookScene> scenes = tagging.getScenes();
+        assertNotNull(scenes);
+        assertEquals(73, scenes.size());
 
-            List<BookScene> scenes = tagging.getScenes();
-            assertNotNull(scenes);
-            assertEquals(73, scenes.size());
-
-            BookScene scene = scenes.get(72);
-            assertNotNull(scene);
-            assertEquals("G16a", scene.getId());
-            assertEquals("19r", scene.getStartPage());
-            assertEquals("b", scene.getStartPageCol());
-            assertEquals(39, scene.getStartLineOffset());
-            assertEquals("19v", scene.getEndPage());
-            assertEquals("c", scene.getEndPageCol());
-            assertEquals(19, scene.getEndLineOffset());
-            assertEquals(3402, scene.getStartCriticalEdition());
-            assertEquals("Mais venus qui touzdiz guerroye", scene.getStartTranscription());
-            assertTrue(scene.isCorrect());
-        }
+        BookScene scene = scenes.get(72);
+        assertNotNull(scene);
+        assertEquals("G16a", scene.getId());
+        assertEquals("19r", scene.getStartPage());
+        assertEquals("b", scene.getStartPageCol());
+        assertEquals(39, scene.getStartLineOffset());
+        assertEquals("19v", scene.getEndPage());
+        assertEquals("c", scene.getEndPageCol());
+        assertEquals(19, scene.getEndLineOffset());
+        assertEquals(3402, scene.getStartCriticalEdition());
+        assertEquals("Mais venus qui touzdiz guerroye", scene.getStartTranscription());
+        assertTrue(scene.isCorrect());
     }
 
     @Test
     public void writeTest() throws IOException {
-        NarrativeTagging tagging = createNartag();
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.write(tagging, out);
+        writeObjectAndGetContent(createNartag());
     }
 
+    /**
+     * @return a NarrativeTagging object to test the write method
+     */
     private NarrativeTagging createNartag() {
         NarrativeTagging tagging = new NarrativeTagging();
 

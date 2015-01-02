@@ -7,10 +7,8 @@ import rosa.archive.model.meta.BiblioData;
 import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -19,7 +17,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-public class MultilangMetadataSerializerTest extends BaseSerializerTest {
+public class MultilangMetadataSerializerTest extends BaseSerializerTest<MultilangMetadata> {
     private final static String bigXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
             "<book>\n" +
             "    <illustrations>10</illustrations>\n" +
@@ -83,11 +81,8 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
             "    </bibliographies>\n" +
             "</book>";
 
-    private MultilangMetadataSerializer serializer;
-
     @Before
     public void setup() {
-        super.setup();
         serializer = new MultilangMetadataSerializer();
     }
 
@@ -212,18 +207,8 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest {
 
     @Test
     public void writeTest() throws IOException {
-        OutputStream out = new ByteArrayOutputStream();
-        assertNotNull(out);
-        serializer.write(createMetadata(), out);
-
-        ByteArrayOutputStream baos = (ByteArrayOutputStream) out;
-        assertNotNull(baos);
-
-        String result = baos.toString("UTF-8");
-        assertNotNull(result);
-
         List<String> expectedLines = Arrays.asList(bigXml.split("\n"));
-        List<String> resultLines = Arrays.asList(result.split("\n"));
+        List<String> resultLines = writeObjectAndGetWrittenLines(createMetadata());
 
         // All lines in results are in expected lines
         for (String line : resultLines) {

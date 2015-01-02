@@ -4,45 +4,27 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.SHA1Checksum;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 /**
  * @see SHA1ChecksumSerializer
  */
-public class SHA1ChecksumSerializerTest extends BaseSerializerTest {
-    private static final String testFile = "data/Walters143/Walters143.SHA1SUM";
-
-    private Serializer<SHA1Checksum> serializer;
+public class SHA1ChecksumSerializerTest extends BaseSerializerTest<SHA1Checksum> {
 
     @Before
     public void setup() {
-        super.setup();
         serializer = new SHA1ChecksumSerializer();
     }
 
     @Test
     public void readTest() throws IOException {
-        InputStream is = getClass().getClassLoader().getResourceAsStream(testFile);
-        assertNotNull(is);
-
-        SHA1Checksum info = serializer.read(is, errors);
+        SHA1Checksum info = loadResource("data/Walters143/Walters143.SHA1SUM");
 
         assertNotNull(info);
         assertEquals(13, info.getAllIds().size());
@@ -74,25 +56,8 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest {
         map.put("Walters143.permission_fr.xml", "5eb98c10331f65bc6118f1f5480cd93d618def50");
         map.put("Walters143.permission_en.html", "9421c9c5988b83afb28eed96d60c5611b10d6336");
 
-        // Create test file to write to
-        File tempChecksumFile = tempFolder.newFile(id);
-
-        try (OutputStream out = new FileOutputStream(tempChecksumFile)) {
-            serializer.write(checksum, out);
-        }
-
-        // Check written file against real file (in test resources)
-        URL url = getClass().getClassLoader().getResource("data/Walters143/Walters143.SHA1SUM");
-        assertNotNull(url);
-
-        Path realChecksum = null;
-        try {
-            realChecksum = Paths.get(url.toURI());
-        } catch (URISyntaxException e) {
-            fail("Failed to resolve URI. [" + url.toString() + "]");
-        }
-
-        List<String> realLines = Files.readAllLines(realChecksum, Charset.forName("UTF-8"));
+        // Write object and get written lines
+        List<String> realLines = writeObjectAndGetWrittenLines(checksum);
         for (String line : realLines) {
             String[] parts = line.split("\\s+");
 

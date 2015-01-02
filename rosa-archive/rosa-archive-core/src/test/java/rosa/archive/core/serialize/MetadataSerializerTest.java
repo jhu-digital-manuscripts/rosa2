@@ -26,7 +26,6 @@ public class MetadataSerializerTest extends BaseSerializerTest {
 
     @Before
     public void setup() {
-        super.setup();
         serializer = new MetadataSerializer();
     }
 

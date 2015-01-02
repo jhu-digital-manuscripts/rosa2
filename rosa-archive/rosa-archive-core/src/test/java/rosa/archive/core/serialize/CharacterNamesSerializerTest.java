@@ -7,7 +7,6 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,60 +19,39 @@ import rosa.archive.model.CharacterNames;
 /**
  * @see rosa.archive.core.serialize.CharacterNamesSerializer
  */
-public class CharacterNamesSerializerTest extends BaseSerializerTest {
-    private static final String testFile = "data/character_names.csv";
-
-    private Serializer<CharacterNames> serializer;
+public class CharacterNamesSerializerTest extends BaseSerializerTest<CharacterNames> {
 
     @Before
     public void setup() {
-        super.setup();
         serializer = new CharacterNamesSerializer();
     }
 
     @Test
     @Override
     public void readTest() throws IOException {
+        CharacterNames names = loadResource("data/character_names.csv");
+        assertNotNull(names);
 
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
+        assertEquals(117, names.getAllCharacterIds().size());
+        assertEquals(116, names.getAllNamesInLanguage("en").size());
+        assertEquals(116, names.getAllNamesInLanguage("Site name").size());
+        assertTrue(names.getAllNamesInLanguage("fr").size() > 0);
+        assertTrue(names.getAllNamesInLanguage("fr").size() < 117);
 
-            CharacterNames names = serializer.read(in, errors);
-            assertNotNull(names);
-
-            assertEquals(117, names.getAllCharacterIds().size());
-            assertEquals(116, names.getAllNamesInLanguage("en").size());
-            assertEquals(116, names.getAllNamesInLanguage("Site name").size());
-            assertTrue(names.getAllNamesInLanguage("fr").size() > 0);
-            assertTrue(names.getAllNamesInLanguage("fr").size() < 117);
-
-            assertEquals("Diogenes", names.getNameInLanguage("36", "Site name"));
-            assertEquals("Dyogenes, Dyogenés", names.getNameInLanguage("36", "fr"));
-            assertEquals("Diogenes", names.getNameInLanguage("36", "en"));
-
-        }
-
+        assertEquals("Diogenes", names.getNameInLanguage("36", "Site name"));
+        assertEquals("Dyogenes, Dyogenés", names.getNameInLanguage("36", "fr"));
+        assertEquals("Diogenes", names.getNameInLanguage("36", "en"));
     }
 
     @Test
     public void writeTest() throws IOException {
-        CharacterNames names = createCharacterNames();
+        List<String> lines = writeObjectAndGetWrittenLines(createCharacterNames());
 
-        try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
-            serializer.write(names, out);
-            String output = out.toString("UTF-8");
-
-            assertNotNull(output);
-            assertNotEquals("", output);
-
-            List<String> lines = Arrays.asList(output.split("\n"));
-            assertEquals(5, lines.size());
-
-            assertTrue(lines.contains("ID,Site name,French variant,English name"));
-            assertTrue(lines.contains("id1,name,name11,name1"));
-            assertTrue(lines.contains("id2,name,name22,name2"));
-            assertTrue(lines.contains("id3,name,name33,\"name3, n3, bleep\""));
-            assertTrue(lines.contains("id4,,name44,n4"));
-        }
+        assertTrue(lines.contains("ID,Site name,French variant,English name"));
+        assertTrue(lines.contains("id1,name,name11,name1"));
+        assertTrue(lines.contains("id2,name,name22,name2"));
+        assertTrue(lines.contains("id3,name,name33,\"name3, n3, bleep\""));
+        assertTrue(lines.contains("id4,,name44,n4"));
     }
 
     private CharacterNames createCharacterNames() {

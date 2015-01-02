@@ -5,12 +5,7 @@ import org.junit.Test;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,13 +16,10 @@ import static org.junit.Assert.assertTrue;
 /**
  * @see rosa.archive.core.serialize.BookMetadataSerializer
  */
-public class BookMetadataSerializerTest extends BaseSerializerTest {
-
-    private Serializer<BookMetadata> serializer;
+public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata> {
 
     @Before
     public void setup() {
-        super.setup();
         serializer = new BookMetadataSerializer();
     }
 
@@ -35,42 +27,34 @@ public class BookMetadataSerializerTest extends BaseSerializerTest {
     public void readTest() throws IOException {
         final String testFile = "data/Walters143/Walters143.description_en.xml";
 
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            BookMetadata metadata = serializer.read(in, errors);
-            assertNotNull(metadata);
+        List<String> errors = new ArrayList<>();
 
-            assertEquals("14th century", metadata.getDate());
-            assertEquals(1400, metadata.getYearStart());
-            assertEquals(1300, metadata.getYearEnd());
-            assertEquals("Baltimore, MD", metadata.getCurrentLocation());
-            assertEquals("Walters Art Museum", metadata.getRepository());
-            assertNotNull(metadata.getShelfmark());
-            assertNotNull(metadata.getOrigin());
-            assertEquals("manuscript", metadata.getType());
-            assertNotNull(metadata.getDimensions());
-            assertEquals(216, metadata.getWidth());
-            assertEquals(300, metadata.getHeight());
-            assertTrue(metadata.getNumberOfIllustrations() > -1);
-            assertTrue(metadata.getNumberOfPages() > -1);
-            assertNotNull(metadata.getCommonName());
-            assertNotNull(metadata.getMaterial());
+        BookMetadata metadata = loadResource(testFile, errors);
+        assertNotNull(metadata);
 
-            assertNotNull(metadata.getTexts());
-            assertEquals(1, metadata.getTexts().length);
-        }
+        assertEquals("14th century", metadata.getDate());
+        assertEquals(1400, metadata.getYearStart());
+        assertEquals(1300, metadata.getYearEnd());
+        assertEquals("Baltimore, MD", metadata.getCurrentLocation());
+        assertEquals("Walters Art Museum", metadata.getRepository());
+        assertNotNull(metadata.getShelfmark());
+        assertNotNull(metadata.getOrigin());
+        assertEquals("manuscript", metadata.getType());
+        assertNotNull(metadata.getDimensions());
+        assertEquals(216, metadata.getWidth());
+        assertEquals(300, metadata.getHeight());
+        assertTrue(metadata.getNumberOfIllustrations() > -1);
+        assertTrue(metadata.getNumberOfPages() > -1);
+        assertNotNull(metadata.getCommonName());
+        assertNotNull(metadata.getMaterial());
+
+        assertNotNull(metadata.getTexts());
+        assertEquals(1, metadata.getTexts().length);
     }
 
     @Test
     public void writeTest() throws IOException {
-        BookMetadata metadata = createMetadata();
-
-        File tempFile = tempFolder.newFile();
-        try (OutputStream out = Files.newOutputStream(tempFile.toPath())) {
-            serializer.write(metadata, out);
-        }
-
-        // inspection of written file
-        List<String> lines = Files.readAllLines(tempFile.toPath(), Charset.forName("UTF-8"));
+        List<String> lines = writeObjectAndGetWrittenLines(createMetadata());
 
         assertEquals("<TEI xmlns=\"http://www.tei-c.org/ns/1.0\" version=\"5.0\">", lines.get(1));
         assertEquals("    <teiheader>", lines.get(2));
