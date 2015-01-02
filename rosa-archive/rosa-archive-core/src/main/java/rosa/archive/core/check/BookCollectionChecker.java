@@ -58,9 +58,14 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
         //   character_names and illustration_titles and narrative_sections
         check(collection, bsg, errors, warnings);
 
-        // Check bit integrity (there is no stored checksum values for these files)
-        if (checkBits) {
-            checkBits(bsg, false, false, errors, warnings);
+        // Checksum data
+        if (collection.getChecksums() == null) {
+            errors.add("Checksum file is missing for collection. [" + collection.getId() + "]");
+        } else {
+            // Check bit integrity (required)
+            if (checkBits) {
+                checkBits(bsg, false, true, errors, warnings);
+            }
         }
 
         return errors.isEmpty();

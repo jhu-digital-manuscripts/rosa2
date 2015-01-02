@@ -1,22 +1,15 @@
 package rosa.archive.core.check;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.codec.binary.Hex;
-import org.apache.commons.codec.digest.DigestUtils;
-import org.junit.Ignore;
+import org.junit.Before;
 import org.junit.Test;
 
 import rosa.archive.core.BaseGuiceTest;
@@ -24,10 +17,10 @@ import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.CharacterName;
 import rosa.archive.model.CharacterNames;
-import rosa.archive.model.HashAlgorithm;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
+import rosa.archive.model.SHA1Checksum;
 
 /**
  * @see rosa.archive.core.check.BookCollectionChecker
@@ -35,20 +28,110 @@ import rosa.archive.model.NarrativeSections;
 public class BookCollectionCheckerTest extends BaseGuiceTest {
     private static final String[] bookNames = { "LudwigXV7", "Morgan948", "Senshu2", "Walters143" };
 
-    // TODO Check this
-    @Test
-    @Ignore
-    public void checkTest() throws Exception {
-        BookCollectionChecker checker = new BookCollectionChecker(serializers);
-        BookCollection collection = createBookCollection();
+    private List<String> errors;
+    private List<String> warnings;
+    private ByteStreamGroup bsg;
 
-        ByteStreamGroup bsg = base.getByteStreamGroup("rosedata");
-        
-        assertTrue(checker.checkContent(collection, bsg, false, new ArrayList<String>(), new ArrayList<String>()));
-        assertFalse(checker.checkContent(new BookCollection(), bsg, false, new ArrayList<String>(), new ArrayList<String>()));
+    BookCollectionChecker checker;
 
+    @Before
+    public void setup() {
+        errors = new ArrayList<>();
+        warnings = new ArrayList<>();
+
+        bsg = base.getByteStreamGroup("rosedata");
+
+        checker = new BookCollectionChecker(serializers);
     }
 
+    /**
+     * Collection makes logical sense. Checker succeeds with no error or warning messages.
+     * Checksums are not checked, even if possible.
+     */
+    @Test
+    public void checkValidCollectionSkippingBits() throws Exception {
+        // Run check on a good collection
+        BookCollection collection = createBookCollection();
+        assertTrue("Collection checker should succeed, but did not.",
+                checker.checkContent(collection, bsg, false, errors, warnings));
+        assertTrue("Errors list should be empty.", errors.isEmpty());
+        assertTrue("Warnings list should be empty.", warnings.isEmpty());
+    }
+
+    /**
+     * Collection makes logical sense except that it has no checksum reference. Checker fails
+     * with exactly ONE error about the missing checksum. Checksums are not checked, even if possible.
+     */
+    @Test
+    public void checkCollectionWithoutChecksumsSkippingBits() throws Exception {
+        BookCollection collection = createBookCollection();
+        collection.setChecksums(null);
+
+        assertFalse("Collection checker should fail.", checker.checkContent(collection, bsg, false, errors, warnings));
+        assertEquals("There should be only 1 error message.", 1, errors.size());
+        assertEquals("Unexpected error message found.",
+                "Checksum file is missing for collection. [rosedata]", errors.get(0));
+        assertTrue("Warnings list should be empty.", warnings.isEmpty());
+    }
+
+    /**
+     * Collection does not make logical sense, checker fails with errors, but no warnings.
+     * Checksums are not checked, even if possible.
+     */
+    @Test
+    public void checkInvalidCollectionSkippingBits() throws Exception {
+        assertFalse("Collection checker should fail, but did not.",
+                checker.checkContent(new BookCollection(), bsg, false, errors, warnings));
+        assertFalse("Errors list should be empty.", errors.isEmpty());
+        assertTrue("Warnings list should be empty.", warnings.isEmpty());
+    }
+
+    /**
+     * Collection makes logical sense, checker passes with no errors/warnings. Checksums are
+     * checked.
+     */
+    @Test
+    public void checkValidCollectionWithBits() throws Exception {
+        BookCollection collection = createBookCollection();
+        assertTrue("Collection checker should pass, bud did not.",
+                checker.checkContent(collection, bsg, true, errors, warnings));
+        assertTrue("Errors list should be empty.", errors.isEmpty());
+        assertTrue("Warnings list should be empty.", warnings.isEmpty());
+    }
+
+    /**
+     * Collection makes logical sense except that it has no reference to checksums. Checker fails
+     * with ONE error and no warnings. Checksums are checked if possible.
+     */
+    @Test
+    public void checkCollectionWithoutChecksumWithBits() throws Exception {
+        BookCollection collection = createBookCollection();
+        collection.setChecksums(null);
+
+        assertFalse("Collection checker should fail, but did not.",
+                checker.checkContent(collection, bsg, true, errors, warnings));
+        assertFalse("Errors list should not be empty.", errors.isEmpty());
+        assertEquals("There should be exactly ONE error message.", 1, errors.size());
+        assertEquals("Unexpected error message found.",
+                "Checksum file is missing for collection. [rosedata]", errors.get(0));
+        assertTrue("Warnings list should be empty.", warnings.isEmpty());
+    }
+
+    /**
+     * Collection does not make logical sense. Checker fails with errors, but no warnings.
+     * Checksums are checked if possible.
+     */
+    @Test
+    public void checkInvalidCollectionWithBits() throws Exception {
+        assertFalse("Collection checker should fail, but did not.",
+                checker.checkContent(new BookCollection(), bsg, true, errors, warnings));
+        assertFalse("Errors list should not be empty.", errors.isEmpty());
+        assertTrue("Warnings list should be empty.", warnings.isEmpty());
+    }
+
+    /**
+     * @return a BookCollection object with data that makes logical sense.
+     */
     private BookCollection createBookCollection() {
         BookCollection collection = new BookCollection();
         collection.setId("rosedata");
@@ -93,72 +176,10 @@ public class BookCollectionCheckerTest extends BaseGuiceTest {
 
         collection.setBooks(bookNames);
 
+        SHA1Checksum checksum = new SHA1Checksum();
+        checksum.setId("SHA1SUM");
+        collection.setChecksums(checksum);
+
         return collection;
     }
-
-
-// ---------------------------------------------------------------------------------------------------
-
-    @Ignore
-    @Test
-    public void commonsCodecDigestTest() throws Exception {
-        final int MAX_ITERATION = 10000;
-
-        MessageDigest md = DigestUtils.getDigest("SHA1");
-        long apacheTime = 0;
-        long customTime = 0;
-
-        String apacheCS;
-        String customCS;
-
-        for (int i = 0; i < MAX_ITERATION; i++) {
-            try (InputStream in = getClass().getClassLoader().getResourceAsStream("rosedata/character_names.csv")) {
-                long start = System.nanoTime();
-                DigestUtils.updateDigest(md, in);
-                apacheCS = bytesToHex(md.digest());
-                apacheTime += System.nanoTime() - start;
-            }
-
-            try (InputStream in = getClass().getClassLoader().getResourceAsStream("rosedata/character_names.csv")) {
-                long start = System.nanoTime();
-                customCS = calculateChecksum(in, HashAlgorithm.SHA1);
-                customTime += System.nanoTime() - start;
-            }
-
-            assertTrue(
-                    "Checksum from Apache commons codec must be the same as the checksum from the custom method.",
-                    apacheCS.equals(customCS)
-            );
-        }
-
-        apacheTime = apacheTime / MAX_ITERATION;
-        customTime = customTime / MAX_ITERATION;
-
-        System.out.println("Apache time: " + apacheTime);
-        System.out.println("Custom time: " + customTime);
-
-    }
-
-    protected String calculateChecksum(InputStream in, HashAlgorithm algorithm)
-            throws IOException, NoSuchAlgorithmException {
-
-        MessageDigest md = MessageDigest.getInstance(algorithm.toString());
-
-        byte[] buff = new byte[1024];
-
-        int numRead;
-        do {
-            numRead = in.read(buff);
-            if (numRead > 0) {
-                md.update(buff, 0, numRead);
-            }
-        } while (numRead != -1);
-
-        return bytesToHex(md.digest());
-    }
-
-    private String bytesToHex(byte[] bytes) {
-        return Hex.encodeHexString(bytes);
-    }
-
 }

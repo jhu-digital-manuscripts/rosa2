@@ -55,6 +55,7 @@ public class BookCheckerTest extends BaseGuiceTest {
         MockitoAnnotations.initMocks(this);
     }
 
+    // TODO dont mock the ByteStreamGroup
     @Test
     public void checkContentTest() throws IOException {
         BookChecker bChecker = new BookChecker(serializers);

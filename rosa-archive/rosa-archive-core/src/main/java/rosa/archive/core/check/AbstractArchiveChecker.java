@@ -72,6 +72,7 @@ public abstract class AbstractArchiveChecker implements ArchiveConstants {
             streams.addAll(bsg.listByteStreamNames());
         } catch (IOException e) {
             errors.add("Could not get byte stream names from group. [" + bsg.name() + "]");
+            return;
         }
 
         // Look for CHECKSUM stream
@@ -87,6 +88,7 @@ public abstract class AbstractArchiveChecker implements ArchiveConstants {
         } else if (required) {
             // checksumId will always be NULL here (no checksum stream exists)
             errors.add("Failed to get checksum data from group. [" + bsg.name() + "]");
+            return;
         }
 
         // Check all byte stream groups within 'bsg' if checkSubGroups is TRUE
@@ -96,6 +98,7 @@ public abstract class AbstractArchiveChecker implements ArchiveConstants {
                 subGroups.addAll(bsg.listByteStreamGroups());
             } catch (IOException e) {
                 errors.add("Could not get byte stream groups from top level group. [" + bsg.name() + "]");
+                return;
             }
 
             for (ByteStreamGroup group : subGroups) {
