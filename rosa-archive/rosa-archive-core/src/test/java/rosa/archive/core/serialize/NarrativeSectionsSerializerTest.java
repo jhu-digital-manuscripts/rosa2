@@ -3,9 +3,7 @@ package rosa.archive.core.serialize;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,46 +16,40 @@ import rosa.archive.model.NarrativeSections;
 /**
  * @see rosa.archive.core.serialize.NarrativeSectionsSerializer
  */
-public class NarrativeSectionsSerializerTest extends BaseSerializerTest {
-
-    private Serializer<NarrativeSections> serializer;
+public class NarrativeSectionsSerializerTest extends BaseSerializerTest<NarrativeSections> {
 
     @Before
     public void setup() {
-        super.setup();
         serializer = new NarrativeSectionsSerializer();
     }
 
     @Test
     public void readTest() throws IOException {
-        final String testFile = "data/narrative_sections.csv";
+        NarrativeSections sections = loadResource("data/narrative_sections.csv");
+        assertNotNull(sections);
 
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            NarrativeSections sections = serializer.read(in, errors);
-            assertNotNull(sections);
+        List<NarrativeScene> scenes = sections.asScenes();
+        assertNotNull(scenes);
+        // There is one line that is missing Lecoy
+        assertEquals(341, scenes.size());
 
-            List<NarrativeScene> scenes = sections.asScenes();
-            assertNotNull(scenes);
-            // There is one line that is missing Lecoy
-            assertEquals(341, scenes.size());
-
-            NarrativeScene scene = scenes.get(0);
-            assertEquals("G 1a", scene.getId());
-            assertEquals(1, scene.getCriticalEditionStart());
-            assertEquals(20, scene.getCriticalEditionEnd());
-            assertEquals(1, scene.getRel_line_start());
-            assertEquals(20, scene.getRel_line_end());
-            assertEquals("Preface", scene.getDescription());
-        }
+        NarrativeScene scene = scenes.get(0);
+        assertEquals("G 1a", scene.getId());
+        assertEquals(1, scene.getCriticalEditionStart());
+        assertEquals(20, scene.getCriticalEditionEnd());
+        assertEquals(1, scene.getRel_line_start());
+        assertEquals(20, scene.getRel_line_end());
+        assertEquals("Preface", scene.getDescription());
     }
 
     @Test
     public void writeTest() throws IOException {
-        NarrativeSections sections = createNarrativeSections();
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.write(sections, out);
+        writeObjectAndGetContent(createNarrativeSections());
     }
 
+    /**
+     * @return a NarrativeSections object to test the write method
+     */
     private NarrativeSections createNarrativeSections() {
         NarrativeSections sections = new NarrativeSections();
 

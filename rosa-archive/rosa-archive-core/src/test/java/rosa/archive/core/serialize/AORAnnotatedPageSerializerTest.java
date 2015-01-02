@@ -5,16 +5,12 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.when;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import rosa.archive.model.aor.AnnotatedPage;
@@ -27,12 +23,7 @@ import rosa.archive.model.aor.Underline;
 /**
  *
  */
-
-// TODO Fix and cleanup
-@Ignore
-public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
-
-    private AORAnnotatedPageSerializer serializer;
+public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<AnnotatedPage> {
 
     @Before
     public void setup() {
@@ -52,14 +43,11 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
         AnnotatedPage page = null;
         for (String testFile : files) {
             errors.clear();
+            page = loadResource(testFile, errors);
 
-            try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-                page = serializer.read(in, errors);
-            }
-
-            assertEquals(0, errors.size());
+            assertTrue(errors.isEmpty());
             assertNotNull(page);
-            assertNull(page.getId());
+            assertEquals(testFile, page.getId());
             assertTrue(page.getSignature().equals(""));
             assertNotNull(page.getReader());
             assertNotNull(page.getPagination());
@@ -71,14 +59,8 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
 
     @Test
     public void withErrataTest() throws IOException {
-        final String file = "data/Ha2/Ha2.036r.xml";
-
         List<String> errors = new ArrayList<>();
-
-        AnnotatedPage page = null;
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream(file)) {
-            page = serializer.read(in, errors);
-        }
+        AnnotatedPage page = loadResource("data/Ha2/Ha2.036r.xml", errors);
 
         assertNotNull(page);
         assertTrue(errors.isEmpty());
@@ -121,16 +103,13 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest {
 
     @Test
     public void readNonexistantFile() throws IOException {
-        List<String> errors = new ArrayList<>();
-
-        AnnotatedPage page = serializer.read(null, errors);
+        AnnotatedPage page = loadResource("data/Ha2/Ha2.00v.xml");
         assertNull(page);
     }
 
     @Test (expected = UnsupportedOperationException.class)
     public void writeTest() throws IOException {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.write(new AnnotatedPage(), out);
+        writeObjectAndGetContent(new AnnotatedPage());
     }
 
 }

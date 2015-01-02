@@ -5,12 +5,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
 import java.util.List;
 
 import org.junit.Before;
@@ -22,13 +17,10 @@ import rosa.archive.model.CropInfo;
 /**
  * @see rosa.archive.core.serialize.CropInfoSerializer
  */
-public class CropInfoSerializerTest extends BaseSerializerTest {
-
-    private Serializer<CropInfo> serializer;
+public class CropInfoSerializerTest extends BaseSerializerTest<CropInfo> {
 
     @Before
     public void setup() {
-        super.setup();
         serializer = new CropInfoSerializer();
     }
 
@@ -36,38 +28,31 @@ public class CropInfoSerializerTest extends BaseSerializerTest {
     public void readTest() throws IOException {
         final String testFile = "data/Walters143/Walters143.crop.txt";
 
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream(testFile)) {
-            CropInfo info = serializer.read(in, errors);
-            assertNotNull(info);
+        CropInfo info = loadResource(testFile);
+        assertNotNull(info);
 
-            CropData data = info.getCropDataForPage("Walters143.039v.tif");
-            double delta = 0.0000001;
-            assertEquals("Walters143.039v.tif", data.getId());
-            assertEquals(0.119649, data.getLeft(), delta);
-            assertEquals(0.036224, data.getRight(), delta);
-            assertEquals(0.036667, data.getTop(), delta);
-            assertEquals(0.016667, data.getBottom(), delta);
-        }
+        CropData data = info.getCropDataForPage("Walters143.039v.tif");
+        double delta = 0.0000001;
+        assertEquals("Walters143.039v.tif", data.getId());
+        assertEquals(0.119649, data.getLeft(), delta);
+        assertEquals(0.036224, data.getRight(), delta);
+        assertEquals(0.036667, data.getTop(), delta);
+        assertEquals(0.016667, data.getBottom(), delta);
     }
 
     @Test
     public void writeTest() throws IOException {
-        CropInfo info = createCropInfo();
-
-        File cropFile = tempFolder.newFile();
-        try (OutputStream out = Files.newOutputStream(cropFile.toPath())) {
-            serializer.write(info, out);
-        }
-
-        List<String> lines = Files.readAllLines(cropFile.toPath(), Charset.forName("UTF-8"));
+        List<String> lines = writeObjectAndGetWrittenLines(createCropInfo());
 
         assertNotNull(lines);
         assertNotEquals(0, lines.size());
         assertTrue(lines.contains("LudwigXV7.frontmatter.pastedown.tif 0.035419 0.025974 0.026667 0.023333"));
         assertTrue(lines.contains("LudwigXV7.136v.tif 0.055427 0.063510 0.040833 0.045833"));
-
     }
 
+    /**
+     * @return a CropInfo object to test the write method
+     */
     private CropInfo createCropInfo() {
         String[] data = {
                 "LudwigXV7.binding.frontcover.tif 0.036866 0.0 28802 0.016667 0.025000",
