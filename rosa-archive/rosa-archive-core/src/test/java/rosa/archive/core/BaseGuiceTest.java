@@ -21,7 +21,8 @@ import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
 
 /**
- * Setup Guice injection and a store which points at the data in src/test/resources.
+ * Setup Guice injection and a store which points at the data in
+ * src/test/resources.
  */
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ ArchiveCoreModule.class })
@@ -39,16 +40,15 @@ public abstract class BaseGuiceTest {
     protected Store store;
 
     @Before
-    public void setup() throws URISyntaxException, IOException {
-        URL u = getClass().getClassLoader().getResource("data/character_names.csv");
+    public void setupArchiveStore() throws URISyntaxException, IOException {
+        URL u = getClass().getClassLoader().getResource("data");
         assertNotNull(u);
 
-        Path path = Paths.get(u.toURI()).getParent().getParent();
+        Path path = Paths.get(u.toURI()).getParent();
         assertNotNull(path);
         assertTrue(Files.isDirectory(path));
 
         base = new FSByteStreamGroup(path);
-
         store = new StoreImpl(serializers, bookChecker, collectionChecker, base);
     }
 }

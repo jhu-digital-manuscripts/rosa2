@@ -79,7 +79,6 @@ public class StoreCheckerImplTest extends BaseGuiceTest {
     @Before
     @SuppressWarnings("unchecked")
     public void setup() throws URISyntaxException, IOException {
-        super.setup();
         MockitoAnnotations.initMocks(this);
         serializerMap = new HashMap<>();
 

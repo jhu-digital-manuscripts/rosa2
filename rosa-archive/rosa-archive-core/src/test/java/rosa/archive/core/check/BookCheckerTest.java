@@ -52,7 +52,6 @@ public class BookCheckerTest extends BaseGuiceTest {
 
     @Before
     public void setup() throws URISyntaxException, IOException {
-        super.setup();
         MockitoAnnotations.initMocks(this);
     }
 
