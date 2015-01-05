@@ -22,6 +22,7 @@ import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookScene;
@@ -71,7 +72,7 @@ public class BookChecker extends AbstractArchiveChecker {
 
         // Check the following items:
         //   checksumInfo
-        check(book.getSHA1Checksum(), book, bsg, errors, warnings);
+        check(book.getChecksum(), book, bsg, errors, warnings);
         //   list of images is required
         check(book.getImages(), book, bsg, errors, warnings);
         //   but list of cropped images is not required
@@ -85,6 +86,7 @@ public class BookChecker extends AbstractArchiveChecker {
             //   bookMetadata
             check(book.getBookMetadata(lang), book, bsg, errors, warnings);
             //   bookDescription (currently not present in model)
+            check(book.getBookDescription(lang), book, bsg, errors, warnings);
             //   permissions
             check(book.getPermission(lang), book, bsg, errors, warnings);
         }
@@ -167,13 +169,13 @@ public class BookChecker extends AbstractArchiveChecker {
      * @return list of errors found while performing check
      */
     protected List<String> checkAllBits(ByteStreamGroup bsg, Book book, List<String> errors, List<String> warnings) {
-        if (book.getSHA1Checksum() == null) {
+        if (book.getChecksum() == null) {
             return Arrays.asList(
                     ("Book [" + book.getId() + "] has no stored SHA1SUM. "
                             + "Cannot check bit integrity.")
             );
         }
-        return checkStreams(bsg, book.getSHA1Checksum().getId(), errors, warnings);
+        return checkStreams(bsg, book.getChecksum().getId(), errors, warnings);
     }
 
     /**
@@ -416,6 +418,31 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         attemptToRead(permission, bsg, errors, warnings);
+    }
+
+    /**
+     * Book description is not required.
+     *
+     * @param description book description
+     * @param parent book containing this description
+     * @param bsg object wrapping all InputStreams for the archive
+     * @param errors list of errors
+     * @param warnings list of warnings
+     */
+    private void check(BookDescription description, Book parent, ByteStreamGroup bsg,
+                       List<String> errors, List<String> warnings) {
+        if (description == null) {
+            return;
+        }
+
+        if (StringUtils.isBlank(description.getId())) {
+            errors.add("Book description ID not set. [" + parent.getId() + "]");
+        }
+        if (!isInArchive(description.getId(), parent.getContent())) {
+            errors.add("Description not in archive. [" + description.getId() + "]");
+        }
+
+        attemptToRead(description, bsg, errors, warnings);
     }
 
     /**

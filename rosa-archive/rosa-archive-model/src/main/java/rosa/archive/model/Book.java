@@ -138,11 +138,11 @@ public class Book implements HasId, Serializable {
         descriptionMap.put(language, bookDescription);
     }
 
-    public SHA1Checksum getSHA1Checksum() {
+    public SHA1Checksum getChecksum() {
         return SHA1Checksum;
     }
 
-    public void setSHA1Checksum(SHA1Checksum SHA1Checksum) {
+    public void setChecksum(SHA1Checksum SHA1Checksum) {
         this.SHA1Checksum = SHA1Checksum;
     }
 

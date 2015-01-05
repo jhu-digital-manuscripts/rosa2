@@ -134,7 +134,7 @@ public class StoreImpl implements Store, ArchiveConstants {
                 loadItem(bookId + CROP, bookStreams, CropInfo.class, errors));
         book.setBookStructure(
                 loadItem(bookId + REDUCED_TAGGING, bookStreams, BookStructure.class, errors));
-        book.setSHA1Checksum(
+        book.setChecksum(
                 loadItem(bookId + SHA1SUM, bookStreams, SHA1Checksum.class, errors));
         book.setIllustrationTagging(
                 loadItem(bookId + IMAGE_TAGGING, bookStreams, IllustrationTagging.class, errors));
@@ -263,7 +263,7 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors) throws IOException {
 
-        SHA1Checksum checksums = book.getSHA1Checksum();
+        SHA1Checksum checksums = book.getChecksum();
         if (checksums == null) {
             checksums = new SHA1Checksum();
             checksums.setId(book.getId() + SHA1SUM);

@@ -8,8 +8,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang3.StringUtils;
-
 import rosa.archive.core.ArchiveConstants;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.serialize.SerializerSet;
@@ -42,7 +40,7 @@ public abstract class AbstractArchiveChecker implements ArchiveConstants {
     protected <T extends HasId> void attemptToRead(T item, ByteStreamGroup bsg,
                                                    List<String> errors, List<String> warnings) {
 
-        if (item == null || StringUtils.isBlank(item.getId())) {
+        if (item == null || item.getId() == null || item.getId().isEmpty()) {
             errors.add("Item missing from archive. [" + bsg.name() + "]");
             return;
         }
@@ -71,7 +69,8 @@ public abstract class AbstractArchiveChecker implements ArchiveConstants {
             // List all stream names, in order to look for CHECKSUM stream
             streams.addAll(bsg.listByteStreamNames());
         } catch (IOException e) {
-            errors.add("Could not get byte stream names from group. [" + bsg.name() + "]");
+            errors.add("Could not get byte stream names from group. [" + bsg.name() + "]\n"
+                            + stacktrace(e));
             return;
         }
 
@@ -97,7 +96,8 @@ public abstract class AbstractArchiveChecker implements ArchiveConstants {
             try {
                 subGroups.addAll(bsg.listByteStreamGroups());
             } catch (IOException e) {
-                errors.add("Could not get byte stream groups from top level group. [" + bsg.name() + "]");
+                errors.add("Could not get byte stream groups from top level group. [" + bsg.name() + "]\n"
+                                + stacktrace(e));
                 return;
             }
 
@@ -141,7 +141,8 @@ public abstract class AbstractArchiveChecker implements ArchiveConstants {
         try {
             streamIds.addAll(bsg.listByteStreamNames());
         } catch (IOException e) {
-            errors.add("Could not get stream IDs from group. [" + bsg.name() + "]");
+            errors.add("Could not get stream IDs from group. [" + bsg.name() + "]\n"
+                            + stacktrace(e));
         }
 
         // Calculate checksum for all InputStreams, compare to stored values
@@ -167,7 +168,7 @@ public abstract class AbstractArchiveChecker implements ArchiveConstants {
                 }
 
             } catch (IOException | NoSuchAlgorithmException e) {
-                errors.add("Could not read item. [" + streamId + "]");
+                errors.add("Could not read item. [" + streamId + "]\n" + stacktrace(e));
             }
         }
 

@@ -58,10 +58,10 @@ public class FSByteStreamGroupTest extends BaseGuiceTest {
     }
 
     @Test
-    public void dataFolderHasFourByteStreams() throws IOException {
+    public void dataFolderHasSixByteStreams() throws IOException {
         ByteStreamGroup data = base.getByteStreamGroup("data");
         assertNotNull(data);
-        assertEquals(5, data.numberOfByteStreams());
+        assertEquals(6, data.numberOfByteStreams());
     }
 
     @Test
@@ -71,7 +71,7 @@ public class FSByteStreamGroupTest extends BaseGuiceTest {
 
         List<String> ids = data.listByteStreamIds();
         assertNotNull(ids);
-        assertEquals(5, ids.size());
+        assertEquals(6, ids.size());
     }
 
     @Test
