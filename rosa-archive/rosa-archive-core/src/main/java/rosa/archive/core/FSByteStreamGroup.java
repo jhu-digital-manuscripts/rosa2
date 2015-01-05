@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Implementation of {@link ByteStreamGroup} backed by a directory in a file system.
  */
 public class FSByteStreamGroup implements ByteStreamGroup {
 
@@ -35,7 +35,7 @@ public class FSByteStreamGroup implements ByteStreamGroup {
     }
 
     /**
-     * @return simple name
+     * @return simple file name
      */
     @Override
     public String name() {
@@ -68,9 +68,6 @@ public class FSByteStreamGroup implements ByteStreamGroup {
         return dirCount;
     }
 
-    /**
-     * @return list of ByteStream IDs
-     */
     @Override
     public List<String> listByteStreamIds() throws IOException {
         List<String> ids = new ArrayList<>();
@@ -84,9 +81,6 @@ public class FSByteStreamGroup implements ByteStreamGroup {
         return ids;
     }
 
-    /**
-     * @return list of ByteStream names
-     */
     @Override
     public List<String> listByteStreamNames() throws IOException {
         List<String> names = new ArrayList<>();
