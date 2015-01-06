@@ -61,10 +61,8 @@ public class StoreImpl implements Store, ArchiveConstants {
     private final BookChecker bookChecker;
 
     @Inject
-    public StoreImpl(SerializerSet serializers,
-                     BookChecker bookChecker,
-                     BookCollectionChecker collectionChecker,
-                     ByteStreamGroup base) {
+    public StoreImpl(SerializerSet serializers, BookChecker bookChecker, BookCollectionChecker collectionChecker,
+            ByteStreamGroup base) {
         this.serializers = serializers;
         this.base = base;
         this.collectionChecker = collectionChecker;
@@ -73,15 +71,13 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     @Override
     public String[] listBookCollections() throws IOException {
-        return base.listByteStreamGroupNames()
-                .toArray(new String[]{});
+        return base.listByteStreamGroupNames().toArray(new String[] {});
     }
 
     @Override
-    public String[] listBooks(String collectionId) throws IOException{
+    public String[] listBooks(String collectionId) throws IOException {
         ByteStreamGroup collection = base.getByteStreamGroup(collectionId);
-        return collection.listByteStreamGroupNames()
-                .toArray(new String[]{});
+        return collection.listByteStreamGroupNames().toArray(new String[] {});
     }
 
     @Override
@@ -91,15 +87,11 @@ public class StoreImpl implements Store, ArchiveConstants {
 
         collection.setId(collectionId);
         collection.setBooks(listBooks(collectionId));
-        collection.setCharacterNames(
-                loadItem(CHARACTER_NAMES, collectionGroup, CharacterNames.class, errors));
-        collection.setIllustrationTitles(
-                loadItem(ILLUSTRATION_TITLES, collectionGroup, IllustrationTitles.class, errors));
-        collection.setNarrativeSections(
-                loadItem(NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class, errors));
-        collection.setChecksums(
-                loadItem(collectionId + SHA1SUM, collectionGroup, SHA1Checksum.class, errors)
-        );
+        collection.setCharacterNames(loadItem(CHARACTER_NAMES, collectionGroup, CharacterNames.class, errors));
+        collection.setIllustrationTitles(loadItem(ILLUSTRATION_TITLES, collectionGroup, IllustrationTitles.class,
+                errors));
+        collection.setNarrativeSections(loadItem(NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class, errors));
+        collection.setChecksums(loadItem(collectionId + SHA1SUM, collectionGroup, SHA1Checksum.class, errors));
 
         // Languages from configuration.
         Properties props = new Properties();
@@ -115,8 +107,9 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     @Override
-    public Book loadBook(String collectionId, String bookId, List<String> errors) throws IOException {
-        ByteStreamGroup byteStreams = base.getByteStreamGroup(collectionId);
+    public Book loadBook(BookCollection collection, String bookId, List<String> errors) throws IOException {
+        ByteStreamGroup byteStreams = base.getByteStreamGroup(collection.getId());
+
         if (!byteStreams.hasByteStreamGroup(bookId)) {
             errors.add("Unable to find book. [" + bookId + "]");
             return null;
@@ -126,47 +119,38 @@ public class StoreImpl implements Store, ArchiveConstants {
         Book book = new Book();
 
         book.setId(bookId);
-        book.setImages(
-                loadItem(bookId + IMAGES, bookStreams, ImageList.class, errors));
-        book.setCroppedImages(
-                loadItem(bookId + IMAGES_CROP, bookStreams, ImageList.class, errors));
-        book.setCropInfo(
-                loadItem(bookId + CROP, bookStreams, CropInfo.class, errors));
-        book.setBookStructure(
-                loadItem(bookId + REDUCED_TAGGING, bookStreams, BookStructure.class, errors));
-        book.setSHA1Checksum(
-                loadItem(bookId + SHA1SUM, bookStreams, SHA1Checksum.class, errors));
-        book.setIllustrationTagging(
-                loadItem(bookId + IMAGE_TAGGING, bookStreams, IllustrationTagging.class, errors));
-        book.setManualNarrativeTagging(
-                loadItem(bookId + NARRATIVE_TAGGING_MAN, bookStreams, NarrativeTagging.class, errors));
-        book.setAutomaticNarrativeTagging(
-                loadItem(bookId + NARRATIVE_TAGGING, bookStreams, NarrativeTagging.class, errors));
-        book.setTranscription(
-                loadItem(bookId + TRANSCRIPTION + XML_EXT, bookStreams, Transcription.class, errors));
-        book.setMultilangMetadata(
-                loadItem(bookId + ".description.xml", bookStreams, MultilangMetadata.class, errors)
-        );
+        book.setImages(loadItem(bookId + IMAGES, bookStreams, ImageList.class, errors));
+        book.setCroppedImages(loadItem(bookId + IMAGES_CROP, bookStreams, ImageList.class, errors));
+        book.setCropInfo(loadItem(bookId + CROP, bookStreams, CropInfo.class, errors));
+        book.setBookStructure(loadItem(bookId + REDUCED_TAGGING, bookStreams, BookStructure.class, errors));
+        book.setSHA1Checksum(loadItem(bookId + SHA1SUM, bookStreams, SHA1Checksum.class, errors));
+        book.setIllustrationTagging(loadItem(bookId + IMAGE_TAGGING, bookStreams, IllustrationTagging.class, errors));
+        book.setManualNarrativeTagging(loadItem(bookId + NARRATIVE_TAGGING_MAN, bookStreams, NarrativeTagging.class,
+                errors));
+        book.setAutomaticNarrativeTagging(loadItem(bookId + NARRATIVE_TAGGING, bookStreams, NarrativeTagging.class,
+                errors));
+        book.setTranscription(loadItem(bookId + TRANSCRIPTION + XML_EXT, bookStreams, Transcription.class, errors));
+        book.setMultilangMetadata(loadItem(bookId + ".description.xml", bookStreams, MultilangMetadata.class, errors));
 
         List<String> content = bookStreams.listByteStreamNames();
-        book.setContent(content.toArray(new String[]{}));
+        book.setContent(content.toArray(new String[] {}));
 
         List<AnnotatedPage> pages = book.getAnnotatedPages();
-        for (String name : content) {
-            // Look for language dependent items
-            String lang = findLanguageCodeInName(name);
-            if (StringUtils.isNotBlank(lang)) {
-                if (name.contains(PERMISSION)) {
-                    Permission perm = loadItem(name, bookStreams, Permission.class, errors);
-                    book.addPermission(perm, lang);
-                } else if (name.contains(DESCRIPTION)) {
-                    BookMetadata metadata = loadItem(name, bookStreams, BookMetadata.class, errors);
-                    book.addBookMetadata(metadata, lang);
-                }
-            }
 
-            // Look for annotation files matching bookId.PAGE.xml
-            if (name.matches("\\w+\\.\\d{1,3}(r|v|R|V)\\.xml")) {
+        // Handle permission and description in all languages
+
+        for (String lang : collection.getAllSupportedLanguages()) {
+            String perm_name = bookId + PERMISSION + lang + HTML_EXT;
+            book.addPermission(loadItem(perm_name, bookStreams, Permission.class, errors), lang);
+            
+            String descr_name = bookId + DESCRIPTION + lang + XML_EXT;
+            book.addBookMetadata(loadItem(descr_name, bookStreams, BookMetadata.class, errors), lang);
+        }
+
+        // Handle AoR annotations
+
+        for (String name : content) {
+            if (name.startsWith(bookId + AOR_ANNOTATION + XML_EXT)) {
                 pages.add(loadItem(name, bookStreams, AnnotatedPage.class, errors));
             }
         }
@@ -175,20 +159,13 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     @Override
-    public boolean check(BookCollection collection, Book book, boolean checkBits,
-                         List<String> errors, List<String> warnings) {
+    public boolean check(BookCollection collection, Book book, boolean checkBits, List<String> errors,
+            List<String> warnings) {
         if (base.hasByteStreamGroup(collection.getId())) {
             ByteStreamGroup collectionGroup = base.getByteStreamGroup(collection.getId());
             if (collectionGroup.hasByteStreamGroup(book.getId())) {
                 ByteStreamGroup bookGroup = collectionGroup.getByteStreamGroup(book.getId());
-                return bookChecker.checkContent(
-                        collection,
-                        book,
-                        bookGroup,
-                        checkBits,
-                        errors,
-                        warnings
-                );
+                return bookChecker.checkContent(collection, book, bookGroup, checkBits, errors, warnings);
             }
         }
         errors.add("Unable to find book. [" + book.getId() + "]");
@@ -197,13 +174,8 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     @Override
     public boolean check(BookCollection collection, boolean checkBits, List<String> errors, List<String> warnings) {
-        return collectionChecker.checkContent(
-                collection,
-                base.getByteStreamGroup(collection.getId()),
-                checkBits,
-                errors,
-                warnings
-        );
+        return collectionChecker.checkContent(collection, base.getByteStreamGroup(collection.getId()), checkBits,
+                errors, warnings);
     }
 
     @Override
@@ -228,14 +200,16 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     @Override
-    public boolean updateChecksum(String collection, String book, boolean force, List<String> errors) throws IOException {
+    public boolean updateChecksum(String collection, String book, boolean force, List<String> errors)
+            throws IOException {
         BookCollection col = loadBookCollection(collection, errors);
-        Book b = loadBook(collection, book, errors);
+        Book b = loadBook(col, book, errors);
         return col != null && b != null && updateChecksum(col, b, force, errors);
     }
 
     @Override
-    public void generateAndWriteImageList(String collection, String book, boolean force, List<String> errors) throws IOException {
+    public void generateAndWriteImageList(String collection, String book, boolean force, List<String> errors)
+            throws IOException {
 
         if (!base.hasByteStreamGroup(collection)) {
             errors.add("Collection not found in directory. [" + base.id() + "]");
@@ -248,8 +222,8 @@ public class StoreImpl implements Store, ArchiveConstants {
         ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
 
         if (!force && bookStreams.hasByteStream(book + IMAGES)) {
-            errors.add("[" + book + IMAGES + "] already exists. You can force this operation" +
-                    " to update the existing image list.");
+            errors.add("[" + book + IMAGES + "] already exists. You can force this operation"
+                    + " to update the existing image list.");
             return;
         }
 
@@ -261,7 +235,8 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     @Override
-    public boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors) throws IOException {
+    public boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors)
+            throws IOException {
 
         SHA1Checksum checksums = book.getSHA1Checksum();
         if (checksums == null) {
@@ -279,7 +254,8 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     @Override
-    public void generateAndWriteCropList(String collection, String book, boolean force, List<String> errors) throws IOException {
+    public void generateAndWriteCropList(String collection, String book, boolean force, List<String> errors)
+            throws IOException {
         if (!base.hasByteStreamGroup(collection)) {
             errors.add("Collection not found in directory. [" + base.id() + "]");
             return;
@@ -294,16 +270,14 @@ public class StoreImpl implements Store, ArchiveConstants {
             errors.add("No cropped images found. [" + collection + ":" + book + "]");
             return;
         } else if (!force && bookStreams.hasByteStream(book + IMAGES_CROP)) {
-            errors.add("[" + book + IMAGES_CROP + "] already exists. You can force this operation" +
-                    " to update the existing image list.");
+            errors.add("[" + book + IMAGES_CROP + "] already exists. You can force this operation"
+                    + " to update the existing image list.");
             return;
         }
 
         ImageList list = new ImageList();
         list.setId(book + IMAGES_CROP);
-        list.setImages(
-                buildImageList(collection, book, false, bookStreams.getByteStreamGroup(CROPPED_DIR))
-        );
+        list.setImages(buildImageList(collection, book, false, bookStreams.getByteStreamGroup(CROPPED_DIR)));
 
         writeItem(list, bookStreams, ImageList.class, errors);
     }
@@ -317,10 +291,11 @@ public class StoreImpl implements Store, ArchiveConstants {
             errors.add("Book not found in collection. [" + collection + "]");
             return;
         }
+
         // Load the book
         ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
-        Book b = loadBook(collection, book, errors);
-        errors.clear();
+        BookCollection col = loadBookCollection(collection, errors);       
+        Book b = loadBook(col, book, errors);
 
         if (!force && b.getCroppedImages() != null && bookStreams.hasByteStreamGroup(CROPPED_DIR)) {
             errors.add("Cropped images already exist for this book. [" + collection + ":" + book
@@ -348,9 +323,7 @@ public class StoreImpl implements Store, ArchiveConstants {
                 continue;
             }
 
-            Runnable cropper = new CropRunnable(
-                    bookStreams.id(), image, cropping, CROPPED_DIR, errors
-            );
+            Runnable cropper = new CropRunnable(bookStreams.id(), image, cropping, CROPPED_DIR, errors);
             executorService.execute(cropper);
         }
         executorService.shutdown();
@@ -364,12 +337,14 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     /**
      * Inspect a list of images and add images that are missing.
-     *
-     * Some images seem to be required, but can sometimes be missing:
-     * front/back cover, front/back pastedown
-     *
-     * @param book book ID
-     * @param images list of images in the book
+     * 
+     * Some images seem to be required, but can sometimes be missing: front/back
+     * cover, front/back pastedown
+     * 
+     * @param book
+     *            book ID
+     * @param images
+     *            list of images in the book
      */
     private void addMissingImages(String book, List<BookImage> images, int[] missingDimensions) {
         if (images == null || missingDimensions == null || missingDimensions.length != 2) {
@@ -377,14 +352,9 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
 
         if (images.size() < 2) {
-            String[] requiredPages = {
-                    book + IMG_FRONTCOVER,
-                    book + IMG_FRONTPASTEDOWN,
-                    book + IMG_FRONT_FLYLEAF + "001r.tif",
-                    book + IMG_FRONT_FLYLEAF + "001v.tif",
-                    book + IMG_ENDPASTEDOWN,
-                    book + IMG_BACKCOVER
-            };
+            String[] requiredPages = { book + IMG_FRONTCOVER, book + IMG_FRONTPASTEDOWN,
+                    book + IMG_FRONT_FLYLEAF + "001r.tif", book + IMG_FRONT_FLYLEAF + "001v.tif",
+                    book + IMG_ENDPASTEDOWN, book + IMG_BACKCOVER };
 
             for (String name : requiredPages) {
                 BookImage image = new BookImage();
@@ -402,28 +372,22 @@ public class StoreImpl implements Store, ArchiveConstants {
         // front/back covers can be missing
         BookImage img = images.get(0);
         if (!img.getId().contains(IMG_FRONTCOVER)) {
-            images.add(0, new BookImage(
-                    book + IMG_FRONTCOVER, missingDimensions[0], missingDimensions[1], true
-            ));
+            images.add(0, new BookImage(book + IMG_FRONTCOVER, missingDimensions[0], missingDimensions[1], true));
         }
         img = images.get(1);
         if (!img.getId().contains(IMG_FRONTPASTEDOWN)) {
-            images.add(1, new BookImage(
-                    book + IMG_FRONTPASTEDOWN, missingDimensions[0], missingDimensions[1], true
-            ));
+            images.add(1, new BookImage(book + IMG_FRONTPASTEDOWN, missingDimensions[0], missingDimensions[1], true));
         }
         // front/back pastedown can be missing
         img = images.get(images.size() - 2);
         if (!img.getId().contains(IMG_ENDPASTEDOWN)) {
-            images.add(images.size(), new BookImage(
-                    book + IMG_ENDPASTEDOWN, missingDimensions[0], missingDimensions[1], true
-            ));
+            images.add(images.size(), new BookImage(book + IMG_ENDPASTEDOWN, missingDimensions[0],
+                    missingDimensions[1], true));
         }
         img = images.get(images.size() - 1);
         if (!img.getId().contains(IMG_BACKCOVER)) {
-            images.add(images.size(), new BookImage(
-                    book + IMG_BACKCOVER, missingDimensions[0], missingDimensions[1], true
-            ));
+            images.add(images.size(), new BookImage(book + IMG_BACKCOVER, missingDimensions[0], missingDimensions[1],
+                    true));
         }
 
         // If images were skipped over, add those
@@ -434,37 +398,36 @@ public class StoreImpl implements Store, ArchiveConstants {
         if (frontFlyleafIndex != -1) {
             img = images.get(frontFlyleafIndex);
             if (img.getId().endsWith("r.tif")) {
-                images.add(frontFlyleafIndex + 1, new BookImage(
-                        img.getId().substring(0, img.getId().length() - 5) + "v.tif",
-                        missingDimensions[0], missingDimensions[1], true
-                ));
+                images.add(frontFlyleafIndex + 1, new BookImage(img.getId().substring(0, img.getId().length() - 5)
+                        + "v.tif", missingDimensions[0], missingDimensions[1], true));
             }
         }
         int endFlyleafIndex = lastIndexOfPrefix(book + IMG_END_FLYLEAF, images);
         if (endFlyleafIndex != -1) {
             img = images.get(endFlyleafIndex);
             if (img.getId().endsWith("r.tif")) {
-                images.add(endFlyleafIndex + 1, new BookImage(
-                        img.getId().substring(0, img.getId().length() - 5) + "v.tif",
-                        missingDimensions[0], missingDimensions[1], true
-                ));
+                images.add(endFlyleafIndex + 1, new BookImage(img.getId().substring(0, img.getId().length() - 5)
+                        + "v.tif", missingDimensions[0], missingDimensions[1], true));
             }
         }
     }
 
     /**
-     * Add any images that were skipped. The manuscripts contain several separate sequences
-     * of images (frontmatter, endmatter, and the main sequence). In each of these
-     * sequences, it is possible for images to be missing. This method adds a placeholder
-     * to the image list with the correct name for those missing images.
-     *
-     * @param images list of all BookImages
-     * @param missingDimensions dimensions of the missing image
+     * Add any images that were skipped. The manuscripts contain several
+     * separate sequences of images (frontmatter, endmatter, and the main
+     * sequence). In each of these sequences, it is possible for images to be
+     * missing. This method adds a placeholder to the image list with the
+     * correct name for those missing images.
+     * 
+     * @param images
+     *            list of all BookImages
+     * @param missingDimensions
+     *            dimensions of the missing image
      */
     private void addSkippedImages(List<BookImage> images, int[] missingDimensions) {
         Collections.sort(images, BookImageComparator.instance());
-//        Java8 only!
-//        images.sort(BookImageComparator.instance());
+        // Java8 only!
+        // images.sort(BookImageComparator.instance());
 
         List<BookImage> missing = new ArrayList<>();
         for (int i = 1; i < images.size(); i++) {
@@ -497,11 +460,11 @@ public class StoreImpl implements Store, ArchiveConstants {
                 char rv2 = f2.charAt(f2.length() - 1);
 
                 // if seq1 == seq2 AND rv1 == 'r' AND rv2 == 'v'
-                //     nothing missing.
+                // nothing missing.
                 // if seq1 == seq2 AND (rv1 == 'v' OR rv2 == 'r')
-                //     something is wrong!
+                // something is wrong!
                 // if seq1 > seq2
-                //     list not sorted correctly
+                // list not sorted correctly
                 if (seq1 < seq2) {
                     int numMissing = (seq2 - seq1 - 1) * 2;
 
@@ -522,11 +485,8 @@ public class StoreImpl implements Store, ArchiveConstants {
                             next_rv = 'v';
                         }
 
-                        BookImage missingImage = new BookImage(
-                                prefix1 + String.format("%03d", next_seq) + next_rv + TIF_EXT,
-                                missingDimensions[0], missingDimensions[1],
-                                true
-                        );
+                        BookImage missingImage = new BookImage(prefix1 + String.format("%03d", next_seq) + next_rv
+                                + TIF_EXT, missingDimensions[0], missingDimensions[1], true);
                         missing.add(missingImage);
                     }
                 }
@@ -535,13 +495,14 @@ public class StoreImpl implements Store, ArchiveConstants {
 
         images.addAll(missing);
         Collections.sort(images, BookImageComparator.instance());
-//        images.sort(BookImageComparator.instance());
+        // images.sort(BookImageComparator.instance());
     }
 
     /**
      * Find the folio designation from an image file name
-     *
-     * @param filename .
+     * 
+     * @param filename
+     *            .
      * @return folio number + side
      */
     public static String findFolio(String filename) {
@@ -557,16 +518,22 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     /**
-     * Take all images from {@param bookStreams} and build a list of {@link rosa.archive.model.BookImage}s.
-     *
-     * @param collection collection name
-     * @param book book name
-     * @param bookStreams byte stream group containing the images
+     * Take all images from
+     * 
+     * @param bookStreams
+     *            and build a list of {@link rosa.archive.model.BookImage}s.
+     * 
+     * @param collection
+     *            collection name
+     * @param book
+     *            book name
+     * @param bookStreams
+     *            byte stream group containing the images
      * @return list of BookImages
      * @throws IOException
      */
     private List<BookImage> buildImageList(String collection, String book, boolean addMissing,
-                                           ByteStreamGroup bookStreams) throws IOException {
+            ByteStreamGroup bookStreams) throws IOException {
         List<BookImage> images = new ArrayList<>();
         for (String file : bookStreams.listByteStreamNames()) {
             if (!file.startsWith(".") && file.endsWith(TIF_EXT)) {
@@ -584,14 +551,12 @@ public class StoreImpl implements Store, ArchiveConstants {
             }
         }
         Collections.sort(images, BookImageComparator.instance());
-//        images.sort(BookImageComparator.instance());
+        // images.sort(BookImageComparator.instance());
 
         if (addMissing) {
-            int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(MISSING_IMAGE) ?
-                    getImageDimensionsHack(
-                            Paths.get(base.getByteStreamGroup(collection).id())
-                                    .resolve(MISSING_IMAGE).toString()) :
-                    new int[]{0, 0};
+            int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(MISSING_IMAGE) ? getImageDimensionsHack(Paths
+                    .get(base.getByteStreamGroup(collection).id()).resolve(MISSING_IMAGE).toString())
+                    : new int[] { 0, 0 };
             addMissingImages(book, images, missingDimensions);
         }
 
@@ -599,8 +564,10 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     /**
-     * @param prefix defines the sequence
-     * @param images list of all images
+     * @param prefix
+     *            defines the sequence
+     * @param images
+     *            list of all images
      * @return index of last item or -1 if prefix does not appear in the list
      */
     private int lastIndexOfPrefix(String prefix, List<BookImage> images) {
@@ -615,10 +582,11 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     /**
-     * Code adapted from original rosa archive tool, now uses Apache Commons IO instead
-     * of custom byte array wrapper class.
-     *
-     * @param path file path of image
+     * Code adapted from original rosa archive tool, now uses Apache Commons IO
+     * instead of custom byte array wrapper class.
+     * 
+     * @param path
+     *            file path of image
      * @return array: [width, height]
      * @throws IOException
      */
@@ -655,35 +623,44 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     /**
      * Update all checksum values for an archive.
-     *
+     * 
      * <p>
-     *     A {@link rosa.archive.core.ByteStreamGroup} with top level byte streams
-     *     representing the level in the archive to be checked is used. Each byte
-     *     stream is checked for the last time its contents were modified. If this
-     *     date falls after (more recent) the last modified date of the checksum
-     *     file, then the checksum value for that byte stream is updated and saved.
-     *     A new checksum entry is calculated and saved for those streams that are
-     *     not already present in the checksum data.
+     * A {@link rosa.archive.core.ByteStreamGroup} with top level byte streams
+     * representing the level in the archive to be checked is used. Each byte
+     * stream is checked for the last time its contents were modified. If this
+     * date falls after (more recent) the last modified date of the checksum
+     * file, then the checksum value for that byte stream is updated and saved.
+     * A new checksum entry is calculated and saved for those streams that are
+     * not already present in the checksum data.
      * </p>
      * <p>
-     *     All entries can be forced to update, regardless of last modified dates
-     *     by using the {@param force} flag.
-     * </p>
-     * <p>
-     *     If a checksum entry is initially present for a byte stream that no is not
-     *     present in this {@param bsg}, it is assumed to no longer exist in the
-     *     archive. In this case, the entry is removed from the checksum data.
-     * </p>
-     *
-     * @param checksums container holding checksum information
-     * @param bsg byte stream group
-     * @param force overwrite all checksum values?
-     * @param errors list of errors found while calculating checksums
+     * All entries can be forced to update, regardless of last modified dates by
+     * using the
+     * 
+     * @param force
+     *            flag.
+     *            </p>
+     *            <p>
+     *            If a checksum entry is initially present for a byte stream
+     *            that no is not present in this
+     * @param bsg
+     *            , it is assumed to no longer exist in the archive. In this
+     *            case, the entry is removed from the checksum data.
+     *            </p>
+     * 
+     * @param checksums
+     *            container holding checksum information
+     * @param bsg
+     *            byte stream group
+     * @param force
+     *            overwrite all checksum values?
+     * @param errors
+     *            list of errors found while calculating checksums
      * @return if checksums were updated and written successfully
      * @throws IOException
      */
-    protected boolean updateChecksum(SHA1Checksum checksums, ByteStreamGroup bsg, boolean force,
-                                     List<String> errors) throws IOException {
+    protected boolean updateChecksum(SHA1Checksum checksums, ByteStreamGroup bsg, boolean force, List<String> errors)
+            throws IOException {
         boolean success = true;
 
         long checksumLastMod = bsg.getLastModified(checksums.getId());
@@ -699,7 +676,8 @@ public class StoreImpl implements Store, ArchiveConstants {
             String checksum = checksums.checksums().get(streamName);
 
             if (force || lastMod >= checksumLastMod || checksum == null) {
-                // Write checksum if it is out of date or doesn't exist or it is forced.
+                // Write checksum if it is out of date or doesn't exist or it is
+                // forced.
                 try (InputStream in = bsg.getByteStream(streamName)) {
 
                     String checksumValue = ChecksumUtil.calculateChecksum(in, HashAlgorithm.SHA1);
@@ -710,11 +688,13 @@ public class StoreImpl implements Store, ArchiveConstants {
                     success = false;
                 }
             } else if (lastMod < checksumLastMod) {
-                // Keep if the item already has a checksum value that is up-to-date AND it still exists in the archive.
+                // Keep if the item already has a checksum value that is
+                // up-to-date AND it still exists in the archive.
                 checksumMap.put(streamName, checksum);
             }
         }
-        // Replace old checksum map. This serves to remove all checksum entries that exist for
+        // Replace old checksum map. This serves to remove all checksum entries
+        // that exist for
         // files that are no longer in the archive.
         checksums.checksums().clear();
         checksums.checksums().putAll(checksumMap);
@@ -723,7 +703,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         return success && writeItem(checksums, bsg, SHA1Checksum.class, errors);
     }
 
-    protected <T extends HasId> boolean  writeItem(T item, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
+    protected <T extends HasId> boolean writeItem(T item, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
         // No item to write
         if (item == null) {
             errors.add("Cannot write an object that does not exist! [type=" + type.toString() + "]");
@@ -755,31 +735,6 @@ public class StoreImpl implements Store, ArchiveConstants {
             errors.add("Failed to read item in archive. [" + name + "]\n" + stacktrace(e));
             return null;
         }
-    }
-
-//    protected MultilangMetadata loadMultilangMetadata(String name, ByteStreamGroup bsg, List<String> errors) {
-//        if (!bsg.hasByteStream(name)) {
-//            return null;
-//        }
-//
-//        try (InputStream in = bsg.getByteStream(name)) {
-//            Ser
-//        } catch (IOException e) {
-//            errors.add("Failed to read multi-language metadata XML file.\n" + stacktrace(e));
-//            return null;
-//        }
-//    }
-
-    protected String findLanguageCodeInName(String name) {
-
-        String[] parts = name.split("_");
-        for (String part : parts) {
-            if (part.matches("(\\w){2,3}(?:(\\.[\\w]+)|$)")) {
-                return part.split("\\.")[0];
-            }
-        }
-
-        return "";
     }
 
     private String stacktrace(Exception e) {

@@ -34,14 +34,13 @@ public interface Store {
     /**
      * Get a single book from the archive that exists in the specified collection.
      *
-     * @param collectionId
-     *          id of the collection that the book is a part of
+     * @param collection
      * @param bookId
      *          id of the book to get
      * @return
      *          Book object
      */
-    Book loadBook(String collectionId, String bookId, List<String> errors) throws IOException;
+    Book loadBook(BookCollection collection, String bookId, List<String> errors) throws IOException;
 
     /**
      * Check the internal data consistency and bit integrity of an archive within this Store.

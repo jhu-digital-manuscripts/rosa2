@@ -49,7 +49,7 @@ public abstract class BaseGuiceTest {
 
     protected ByteStreamGroup base;
     protected Path basePath;
-    protected Store store;
+    protected StoreImpl store;
 
     @Before
     public void setupArchiveStore() throws URISyntaxException, IOException {
@@ -78,7 +78,7 @@ public abstract class BaseGuiceTest {
     protected Book loadBook(Store store, String collection, String book) throws IOException {
         List<String> errors = new ArrayList<>();
 
-        Book result = store.loadBook(collection, book, errors);
+        Book result = store.loadBook(loadCollection(store, collection), book, errors);
 
         assertNotNull(result);
         assertEquals(0, errors.size());

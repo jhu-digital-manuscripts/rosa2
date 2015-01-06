@@ -51,6 +51,8 @@ public interface ArchiveConstants {
 
     static final String BNF_MD5SUM = ".bnf.MD5SUM";
 
+    static final String AOR_ANNOTATION = ".annotation";
+    
     // Images names
 
     static final String IMG_FRONTCOVER = ".binding.frontcover.tif";
@@ -74,6 +76,8 @@ public interface ArchiveConstants {
     static final String CSV_EXT = ".csv";
 
     static final String XML_EXT = ".xml";
+    
+    static final String HTML_EXT = ".html";
 
     static final String TXT_EXT = ".txt";
 
