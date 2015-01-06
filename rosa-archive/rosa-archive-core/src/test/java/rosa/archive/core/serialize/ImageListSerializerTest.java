@@ -26,27 +26,27 @@ public class ImageListSerializerTest extends BaseSerializerTest<ImageList> {
 
     @Test
     public void readTest() throws IOException {
-        ImageList images = loadResource("data/Walters143/Walters143.images.csv");
+        ImageList images = loadResource(COLLECTION_NAME, BOOK_NAME, "LudwigXV7.images.csv");
         assertNotNull(images);
 
         List<BookImage> imgList = images.getImages();
         assertNotNull(imgList);
-        assertEquals(81, imgList.size());
+        assertEquals(288, imgList.size());
 
         // Missing image
         BookImage missingImage = imgList.get(0);
         assertNotNull(missingImage);
-        assertEquals("Walters143.binding.frontcover.tif", missingImage.getId());
-        assertEquals(0, missingImage.getWidth());
-        assertEquals(0, missingImage.getHeight());
-        assertTrue(missingImage.isMissing());
+        assertEquals("LudwigXV7.binding.frontcover.tif", missingImage.getId());
+        assertEquals(3, missingImage.getWidth());
+        assertEquals(3, missingImage.getHeight());
+        assertFalse(missingImage.isMissing());
 
         // Non-missing image
         BookImage image = imgList.get(80);
         assertNotNull(image);
-        assertEquals("Walters143.039r.tif", image.getId());
-        assertEquals(2076, image.getWidth());
-        assertEquals(2860, image.getHeight());
+        assertEquals("LudwigXV7.036r.tif", image.getId());
+        assertEquals(3, image.getWidth());
+        assertEquals(3, image.getHeight());
         assertFalse(image.isMissing());
     }
 

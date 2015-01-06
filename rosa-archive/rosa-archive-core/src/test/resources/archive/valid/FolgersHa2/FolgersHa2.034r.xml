@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141111.xsd">
+
+	<page filename="FolgersHa2.034r.tif" pagination="387" reader="Harvey"/>	<!-- ABO 038right -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Post proemium Magicum, in Alberto de mirabilib[us] mundi: Bacone
+                      			</marginalia_text>
+            				<person name="Albertus Magnus"/>
+            				<person name="Roger Bacon"/>
+            				<book title="Trinum magicum"/>
+            			</position>
+        				<position place="right_margin" book_orientation="0">
+        					<marginalia_text>
+        						de mirabili potest[ate] Art[is] et natura[e]:
+        					</marginalia_text>
+        					<book title="De mirabili potestate artis"/>
+        				</position>
+        				<position place="intext" book_orientation="0">
+        					<marginalia_text>
+        						) Pomponatio de incantationib[us] cum aptis
+        						Agrippa[e] titulis de occulta philos[ophia] et de uanit[atis] scient[iarum]
+        					</marginalia_text>
+        					<person name="Pietro Pomponazzi"/>
+        					<person name="Heinrich Cornelius Agrippa"/>
+        					<book title="De incantationibus "/>
+        					<book title="De occulta philosophia"/>
+        					<book title="De incertitudine et vanitate scientiarum"/>
+        				</position>
+        				<position place="right_margin" book_orientation="0">
+        					<marginalia_text>
+        						null&uacute;s Thaumaturgi pra[e]sentior Thesaurus, qu&agrave;m Apol[lonii] Tyanei vita:	<!-- Unsure if the "Thaumaturgi ... Thesaurus" is a text or not. -->
+        						cu[m] Stratagemata Gandini, [et] polya[e]. technis 
+        					</marginalia_text>
+        					<person name="Marcantonio Gandino"/>	
+        					<book title="De vita Apollonii Tyanei"/>
+        					<book title="Stratagemata"/>
+        				</position>
+        				<position place="intext" book_orientation="0">
+        					<marginalia_text>
+        						) oeconomicis, et politic[is] Arist[otelis]. 
+        					</marginalia_text>
+        					<person name="Aristotle"/>
+        					<book title="Economics"/>
+        					<book title="Politics"/>
+        				</position>
+        				<position place="right_margin" book_orientation="0">
+        					<marginalia_text>
+        						Porta[e] phytognomonicis: et Albertij physiogno[mia]
+        						Cardani, et Wecc. Secretis.
+        					</marginalia_text>
+        					<person name="Giovanni Battista Porta"/>
+        					<person name="Girolamo Cardano"/>
+        					<person name="Johannes Jacob Wecker"/>
+        					<book title="Phytognomonica"/>        					
+        					<book title="De secretis libri XVII"/> <!-- Wecker's lengthy treatise. -->
+        					<book title="De secretis"/>	<!-- Cardano's opusculum. -->
+        				</position>
+        			</language>
+        			<translation>
+        				After the Introduction on Magic in Albertus Magnus' De Mirabilibus Mundi, Roger Bacon's De mirabili potestate artis et naturae,
+        				Pomponazzi's De incantationibus, with Agrippa's aptly titled De occulta philosophia and De inceritudine et vanitate scientarium. 
+        				No collection of Thaumaturgy is more propitious than the De vita Apollonii Tyanei: with Gandini's Stratagemata and the Polytechnics, <!-- CG: Unsure still about 'polya[e] technis' -->
+        				Politics, and Economics of Aristotle. With Giovanni Battista Porta's Phytognomonica, Albertius' Physiognomia, and the De Secretis of Cardano and Wecker.	
+        					<!-- CG: I'm still unsure about the attribution 'Physiognomia.' I believe that 'Albertij' might refer to Claudius Albertius (Claude Aubery), 
+        					however, I cannot find a work named 'Physiognomia' to ascribe to him. Any results I get from 'physiognomia' point to Porta. --> 
+        			</translation>
+        		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						filosofo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				philosopher.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				ridiculous.
+    			</translation>
+    		</marginalia>    		
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						naturale filosofo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				natural philosopher.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						s[upr]a / 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				above /
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Adde rara opuscula, Vrsonis de prim: qual: arca:	
+    						Parcelsi onomasticon: Hesteri Chymica[m] Epist.	<!-- If this is a letter about chemistry, I'm unsure how to reference it. I couldn't find it while searching. --> <!--JG: Can't find anything either. Perhaps write an email to google group-->
+    					</marginalia_text>
+    					<person name="Urso of Salerno"/>
+    					<person name="Paracelsus"/>
+    					<person name="John Hester"/>
+    					<book title="De primarum qualitatum arcanis et effectibus"/>
+    					<book title="Onomasticon"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Add the rare opuscula, Urso of Salerno's De primarum qualitatum arcanis et effectibus,
+    				Paracelsus' Onomasticon, and Hester's Letter on Chemistry.
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						s[upr]a
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				above
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						s[upr]a /
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				above /
+    			</translation>
+    		</marginalia>
+    		
+    		
+        		
+        		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="270">
+    					<marginalia_text>
+    						Apollonij vita: cum Stratagematis, et Secretis: panurgi |	<!-- Could this be a person, Panurgus?--> <!--JG: Could be, but I can't find anything. Perhaps Panurgus, King of Oceana?-->
+    						Idiopa[e]dia.		<!-- I can't tell if this a real book or the ironic naming of a made-up book on Harvey's part. --> <!--JG: Can't find anything either. Perhaps make a list of such instances so that we can have a look at them later. Perhaps we find a clue in another of Harvey's books-->
+    					</marginalia_text>
+    					<book title="De vita Apollonii Tyanei"/>
+    					<book title="Stratagemata"/>
+    					<book title="De secretis"/>
+    				</position>
+    			</language>
+    			<translation>
+    				De vita Apolloni Tyanei, with the Stragemata, and the De secretis. with the Idiopaedia of Panurgus.
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="bastonato, &amp; cacciato"/>
+    		<underline method="pen" type="straight" language="IT" text="lasciatolo dire &amp;"/>
+    		<underline method="pen" type="straight" language="IT" text="quanto ei uolle"/>
+    		<underline method="pen" type="straight" language="IT" text="Habbiate patientia"/>
+    		<underline method="pen" type="straight" language="IT" text="La mia gola non h&agrave; orecchie"/>
+    		<underline method="pen" type="straight" language="IT" text="ranocchia mal si pu&ograve; cauare"/>
+    		<underline method="pen" type="straight" language="IT" text="fango"/>
+    		<underline method="pen" type="straight" language="IT" text="giuochi Carnascialeschi"/>
+    		<underline method="pen" type="straight" language="IT" text="maggior licenza"/>
+    		<underline method="pen" type="straight" language="IT" text="questo dubbio, o problema"/> 
+    		<underline method="pen" type="straight" language="IT" text="quale &egrave; quella cosa"/>
+    		<underline method="pen" type="straight" language="IT" text="piu contraria al forno"/>
+    		<underline method="pen" type="straight" language="IT" text="diuersamente da diuersi"/>
+    		<underline method="pen" type="straight" language="IT" text="nessuno alla sua intentione"/>
+    		<underline method="pen" type="straight" language="IT" text="la natura delle donne"/>
+    		<underline method="pen" type="straight" language="IT" text="della cagione"/>
+    		<underline method="pen" type="straight" language="IT" text="indurisce tutte le cose, che"/>
+    		<underline method="pen" type="straight" language="IT" text="quello instrumento"/>
+    		<underline method="pen" type="straight" language="IT" text="contrario effetto operando le"/>
+    		<underline method="pen" type="straight" language="IT" text="mollisca"/>
+    		<underline method="pen" type="straight" language="IT" text="Da M."/>
+    		<underline method="pen" type="straight" language="IT" text="molto arguto"/>
+    		<underline method="pen" type="straight" language="IT" text="meno mordace"/>
+    		<underline method="pen" type="straight" language="IT" text="che pronto"/>
+    		<underline method="pen" type="straight" language="IT" text="nelle risposte"/>
+    		<underline method="pen" type="straight" language="IT" text="era pericolo a trauagliarsi con esso lui"/>
+    		<underline method="pen" type="straight" language="IT" text="pure frizaua"/>
+    		<underline method="pen" type="straight" language="IT" text="pungeua"/>
+    		<underline method="pen" type="straight" language="IT" text="s'arrischiaua a toccarlo"/>
+    		<underline method="pen" type="straight" language="IT" text="porta alla croce"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+    		<symbol name="Sun" place="left_margin"/>
+    		<symbol name="SS" place="right_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- for -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- pos -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Dice -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- po -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- contraria al -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- s'ap -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- indu -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- indu -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- ben -->
+    		<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- le uie -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- te.. so  -->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- molto maggior -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- forno? -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- ne ... rammorbidisce -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- Alfonso ... pungeua -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- pungeua -->
+    		 
+	    	<!-- Intext -->
+	    	<mark name="dot" method="pen" place="intext"/> <!-- uolle, prontamen -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!--  prontamen -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="patientia"/>
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- orecchie -->
+    		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark end of first paragraph -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- fango.] --> 
+    		<mark name="dot" method="pen" place="intext"/> <!--  honesta, fu -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- problema -->
+    		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark in second paragraph -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="natura"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- dentro, & -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="arguto"/>
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="pronto"/>
+    		<mark name="dot" method="pen" place="intext"/> <!--  sue, tanto -->
+    		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark in third paragraph --> 
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- era pericolo -->
+    		
+    		
+    </annotation>
+</transcription>

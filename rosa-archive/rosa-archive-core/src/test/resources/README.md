@@ -2,14 +2,16 @@
 
 '''
 resources/ 
-  |--- data/ 
-  |--- rosedata/ 
+  |--- archive/
+    |--- valid/
+      |--- FolgersHa2/
+      |--- LudwigXV7/
 '''
 
-The test resources directory has two subdirectories, 'data' and 'rosedata', both of which contains testing data. This
-is meant to simulate an archive with two collections, making 'resources/' the archive directory, and 'resources/data/'
- and 'resources/rosedata/' separate collections. Admittedly, the names could be more clear.
+The initial 'archive' directory represents an archive filled with test data. This archive
+contains one test collection, called "valid" which has all completely valid data. The
+collection holds two books, FolgersHa2 and LudwigXV7. LudwigXV7 is data from 'rosecollection'
+on the CIS. FolgersHa2 contains AoR transcription data.
 
-The 'resources/rosedata/' directory holds data copied directly from our 'rosecollection' collection in the archive on
-the CIS. The 'resources/data/' directory holds different data meant more to test the full range of behaviors of this
-archive core code.
+The test data here should be treated as a read-only collection. Any tests should not write
+to this test archive.

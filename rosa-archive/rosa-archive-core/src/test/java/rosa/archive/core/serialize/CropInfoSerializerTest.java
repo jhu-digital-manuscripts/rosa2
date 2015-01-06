@@ -26,18 +26,18 @@ public class CropInfoSerializerTest extends BaseSerializerTest<CropInfo> {
 
     @Test
     public void readTest() throws IOException {
-        final String testFile = "data/Walters143/Walters143.crop.txt";
+        final String testFile = "LudwigXV7.crop.txt";
 
-        CropInfo info = loadResource(testFile);
+        CropInfo info = loadResource(COLLECTION_NAME, BOOK_NAME, testFile);
         assertNotNull(info);
 
-        CropData data = info.getCropDataForPage("Walters143.039v.tif");
+        CropData data = info.getCropDataForPage("LudwigXV7.039v.tif");
         double delta = 0.0000001;
-        assertEquals("Walters143.039v.tif", data.getId());
-        assertEquals(0.119649, data.getLeft(), delta);
-        assertEquals(0.036224, data.getRight(), delta);
-        assertEquals(0.036667, data.getTop(), delta);
-        assertEquals(0.016667, data.getBottom(), delta);
+        assertEquals("LudwigXV7.039v.tif", data.getId());
+        assertEquals(0.106335, data.getLeft(), delta);
+        assertEquals(0.024887, data.getRight(), delta);
+        assertEquals(0.033333, data.getTop(), delta);
+        assertEquals(0.034167, data.getBottom(), delta);
     }
 
     @Test

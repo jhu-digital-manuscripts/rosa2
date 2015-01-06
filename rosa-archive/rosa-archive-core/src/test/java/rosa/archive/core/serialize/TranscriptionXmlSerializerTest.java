@@ -24,7 +24,7 @@ public class TranscriptionXmlSerializerTest extends BaseSerializerTest<Transcrip
     @Test
     public void readTest() throws IOException {
         List<String> errors = new ArrayList<>();
-        Transcription transcription = loadResource("data/Walters143/Walters143.transcription.xml", errors);
+        Transcription transcription = loadResource(COLLECTION_NAME, BOOK_NAME, "LudwigXV7.transcription.xml", errors);
 
         assertNotNull(transcription);
         assertNotNull(transcription.getContent());

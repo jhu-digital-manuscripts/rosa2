@@ -26,12 +26,12 @@ public class BookStructureSerializerTest extends BaseSerializerTest<BookStructur
 
     @Test
     public void readTest() throws IOException {
-        BookStructure structure = loadResource("data/LudwigXV7/LudwigXV7.redtag.txt");
+        BookStructure structure = loadResource(COLLECTION_NAME, BOOK_NAME, "LudwigXV7.redtag.txt");
         assertNotNull(structure);
 
         List<StructurePage> pages = structure.pages();
         assertNotNull(pages);
-        assertEquals(10, pages.size());
+        assertEquals(135, pages.size());
 
         StructurePage page = pages.get(9);
         assertNotNull(page);
@@ -52,11 +52,11 @@ public class BookStructureSerializerTest extends BaseSerializerTest<BookStructur
         assertNotNull("10r", col.getParentSide());
         assertEquals('a', col.getColumnLetter());
         assertNotNull(col.getItems());
-        assertEquals(9, col.getItems().size());
+        assertEquals(6, col.getItems().size());
 
         List<StructureColumn> columns = structure.columns();
         assertNotNull(columns);
-        assertEquals(40, columns.size());
+        assertEquals(540, columns.size());
     }
 
     @Test (expected = UnsupportedOperationException.class)

@@ -2,6 +2,7 @@ package rosa.archive.core;
 
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
@@ -42,6 +43,7 @@ public class ArchiveCoreModule extends AbstractModule {
         serializers.addBinding().to(NarrativeTaggingSerializer.class);
         serializers.addBinding().to(TranscriptionXmlSerializer.class);
         serializers.addBinding().to(PermissionSerializer.class);
+        serializers.addBinding().to(AORAnnotatedPageSerializer.class);
         
         bind(SerializerSet.class);
         

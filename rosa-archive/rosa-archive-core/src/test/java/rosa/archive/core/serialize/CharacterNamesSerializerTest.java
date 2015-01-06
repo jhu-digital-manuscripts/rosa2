@@ -26,7 +26,7 @@ public class CharacterNamesSerializerTest extends BaseSerializerTest<CharacterNa
     @Test
     @Override
     public void readTest() throws IOException {
-        CharacterNames names = loadResource("data/character_names.csv");
+        CharacterNames names = loadResource(COLLECTION_NAME, null, "character_names.csv");
         assertNotNull(names);
 
         assertEquals(117, names.getAllCharacterIds().size());

@@ -27,10 +27,10 @@ public class BookDescriptionSerializerTest extends BaseSerializerTest<BookDescri
 
     @Test
     public void readTest() throws IOException {
-        BookDescription description = loadResource("data/Walters143/Walters143.description_en.xml");
+        BookDescription description = loadResource(COLLECTION_NAME, BOOK_NAME, "LudwigXV7.description_en.xml");
 
         assertNotNull(description);
-        assertEquals(10, description.getNotes().size());
+        assertEquals(11, description.getNotes().size());
 
         for (String section : sections) {
             assertTrue(description.getNotes().containsKey(section));

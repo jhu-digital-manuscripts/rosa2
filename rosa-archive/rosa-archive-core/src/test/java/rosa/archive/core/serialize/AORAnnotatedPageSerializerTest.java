@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import rosa.archive.model.aor.AnnotatedPage;
@@ -21,9 +22,10 @@ import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 
 /**
- *
+ * TODO after importing update AoR data
  */
 public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<AnnotatedPage> {
+    private static final String BOOK_NAME = "FolgersHa2";
 
     @Before
     public void setup() {
@@ -33,17 +35,17 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
     @Test
     public void readTest() throws IOException {
         final String[] files = {
-                "data/Ha2/Ha2.018r.xml", "data/Ha2/Ha2.018v.xml",
-                "data/Ha2/Ha2.019r.xml", "data/Ha2/Ha2.019v.xml",
-                "data/Ha2/Ha2.020r.xml", "data/Ha2/Ha2.020v.xml",
-                "data/Ha2/Ha2.021r.xml", "data/Ha2/Ha2.021v.xml"
+                "FolgersHa2.018r.xml", "FolgersHa2.018v.xml",
+                "FolgersHa2.019r.xml", "FolgersHa2.019v.xml",
+                "FolgersHa2.020r.xml", "FolgersHa2.020v.xml",
+                "FolgersHa2.021r.xml", "FolgersHa2.021v.xml"
         };
         List<String> errors = new ArrayList<>();
 
         AnnotatedPage page = null;
         for (String testFile : files) {
             errors.clear();
-            page = loadResource(testFile, errors);
+            page = loadResource(COLLECTION_NAME, BOOK_NAME, testFile, errors);
 
             assertTrue(errors.isEmpty());
             assertNotNull(page);
@@ -60,7 +62,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
     @Test
     public void withErrataTest() throws IOException {
         List<String> errors = new ArrayList<>();
-        AnnotatedPage page = loadResource("data/Ha2/Ha2.036r.xml", errors);
+        AnnotatedPage page = loadResource(COLLECTION_NAME, BOOK_NAME, "FolgersHa2.036r.xml", errors);
 
         assertNotNull(page);
         assertTrue(errors.isEmpty());
@@ -103,7 +105,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
 
     @Test
     public void readNonexistantFile() throws IOException {
-        AnnotatedPage page = loadResource("data/Ha2/Ha2.00v.xml");
+        AnnotatedPage page = loadResource(COLLECTION_NAME, BOOK_NAME, "FolgersHa2.00v.xml");
         assertNull(page);
     }
 

@@ -24,13 +24,13 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest<SHA1Checksum>
 
     @Test
     public void readTest() throws IOException {
-        SHA1Checksum info = loadResource("data/Walters143/Walters143.SHA1SUM");
+        SHA1Checksum info = loadResource(COLLECTION_NAME, BOOK_NAME, "LudwigXV7.SHA1SUM");
 
         assertNotNull(info);
-        assertEquals(13, info.getAllIds().size());
+        assertEquals(470, info.getAllIds().size());
 
-        String hash = info.checksums().get("Walters143.permission_en.html");
-        assertEquals("9421c9c5988b83afb28eed96d60c5611b10d6336", hash);
+        String hash = info.checksums().get("LudwigXV7.permission_en.html");
+        assertEquals("1a7db4954a300cae8ef041e2eaf6ec7b9a04d832", hash);
     }
 
     @Test
