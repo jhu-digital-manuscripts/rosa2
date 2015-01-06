@@ -39,18 +39,18 @@ public class FSByteStreamGroupTest extends BaseGuiceTest {
 
     @Test
     public void twoBSGAtTop() throws IOException {
-        assertEquals(3, base.numberOfByteStreamGroups());
+        assertEquals(2, base.numberOfByteStreamGroups());
     }
 
     @Test
     public void getsDataByteStreamGroup() throws IOException {
-        ByteStreamGroup data = base.getByteStreamGroup("data");
+        ByteStreamGroup data = base.getByteStreamGroup("valid");
         assertNotNull(data);
     }
 
     @Test
     public void getsCharNamesBS() throws IOException {
-        ByteStreamGroup data = base.getByteStreamGroup("data");
+        ByteStreamGroup data = base.getByteStreamGroup("valid");
         assertNotNull(data);
 
         InputStream in = data.getByteStream("character_names.csv");
@@ -59,14 +59,14 @@ public class FSByteStreamGroupTest extends BaseGuiceTest {
 
     @Test
     public void dataFolderHasSixByteStreams() throws IOException {
-        ByteStreamGroup data = base.getByteStreamGroup("data");
+        ByteStreamGroup data = base.getByteStreamGroup("valid");
         assertNotNull(data);
         assertEquals(6, data.numberOfByteStreams());
     }
 
     @Test
     public void dataFolderBSIdsTest() throws IOException {
-        ByteStreamGroup data = base.getByteStreamGroup("data");
+        ByteStreamGroup data = base.getByteStreamGroup("valid");
         assertNotNull(data);
 
         List<String> ids = data.listByteStreamIds();
@@ -76,7 +76,7 @@ public class FSByteStreamGroupTest extends BaseGuiceTest {
 
     @Test
     public void dataFolderByteStreamNamesTest() throws IOException {
-        ByteStreamGroup data = base.getByteStreamGroup("data");
+        ByteStreamGroup data = base.getByteStreamGroup("valid");
         assertNotNull(data);
 
         List<String> names = data.listByteStreamNames();
@@ -88,45 +88,43 @@ public class FSByteStreamGroupTest extends BaseGuiceTest {
 
     @Test
     public void dataFolderBSGNamesTest() throws IOException {
-        ByteStreamGroup data = base.getByteStreamGroup("data");
+        ByteStreamGroup data = base.getByteStreamGroup("valid");
         assertNotNull(data);
 
         List<String> names = data.listByteStreamGroupNames();
         assertNotNull(names);
-        assertTrue(names.contains("Ferrell"));
+        assertTrue(names.contains("FolgersHa2"));
         assertTrue(names.contains("LudwigXV7"));
-        assertTrue(names.contains("Walters143"));
     }
 
     @Test
     public void dataFolderBSGIdsTest() throws IOException {
-        ByteStreamGroup data = base.getByteStreamGroup("data");
+        ByteStreamGroup data = base.getByteStreamGroup("valid");
         assertNotNull(data);
 
         List<String> ids = data.listByteStreamGroupIds();
         assertNotNull(ids);
-        assertEquals(4, ids.size());
+        assertEquals(2, ids.size());
     }
 
     @Test
     public void hasAllBSGInData() throws IOException {
-        ByteStreamGroup data = base.getByteStreamGroup("data");
+        ByteStreamGroup data = base.getByteStreamGroup("valid");
         assertNotNull(data);
 
         List<ByteStreamGroup> bsgs = data.listByteStreamGroups();
         assertNotNull(bsgs);
-        assertEquals(4, bsgs.size());
+        assertEquals(2, bsgs.size());
     }
 
     @Test
     public void hasBSGTest() throws IOException {
-        assertTrue(base.hasByteStreamGroup("data"));
-        assertTrue(base.hasByteStreamGroup("rosedata"));
+        assertTrue(base.hasByteStreamGroup("valid"));
     }
 
     @Test
     public void hasBSTest() throws IOException {
-        ByteStreamGroup data = base.getByteStreamGroup("data");
+        ByteStreamGroup data = base.getByteStreamGroup("valid");
         assertNotNull(data);
 
         assertTrue(data.hasByteStream("character_names.csv"));
