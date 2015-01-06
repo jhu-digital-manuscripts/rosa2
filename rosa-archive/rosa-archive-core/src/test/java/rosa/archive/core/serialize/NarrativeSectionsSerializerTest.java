@@ -25,7 +25,7 @@ public class NarrativeSectionsSerializerTest extends BaseSerializerTest<Narrativ
 
     @Test
     public void readTest() throws IOException {
-        NarrativeSections sections = loadResource("data/narrative_sections.csv");
+        NarrativeSections sections = loadResource(COLLECTION_NAME, null, "narrative_sections.csv");
         assertNotNull(sections);
 
         List<NarrativeScene> scenes = sections.asScenes();

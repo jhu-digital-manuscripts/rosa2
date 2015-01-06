@@ -53,7 +53,7 @@ public class CSVTest {
     public void parsesInputFileToArray() {
 
         try (InputStreamReader reader = new InputStreamReader(
-                getClass().getClassLoader().getResourceAsStream("data/narrative_sections.csv"))) {
+                getClass().getClassLoader().getResourceAsStream("archive/valid/narrative_sections.csv"))) {
 
             String[][] table = CSV.parseTable(reader);
 

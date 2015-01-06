@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+
+	<page filename="FolgersHa2.026v.tif" pagination="372" reader="Harvey"/>	<!-- ABO 031left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					In sudore vultus tui vesceris pane tuo.
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        			<translation>
+        				By the sweat of your brow you will enjoy your bread.	<!-- CG: This is another biblical citation, Genesis 3:19. -->
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Prima omniu[m] maledictio: Vltima singulorum benedictio.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				The first malediction of all men: the last benediction of singular men. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						i[nfr]a, 382. 387.
+    						378.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				below, 382. 387.
+    				378. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						acetum in pectore.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				vinegar in the heart.	<!-- CG: I feel like this definitely has a more figurative meaning. Sharpness in the mind/soul? -->
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) Quotidianus sudor, 
+    					</marginalia_text>
+    				</position>
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						panis noster quotidianus.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				) Daily sweat, our daily bread.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Generosiss[im]a mundi disciplina,
+    						Artis, Virtutisq[ue] Vigor, industria, sudor.
+    					</marginalia_text>
+    				</position>
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Solis Equi anheli, fumantes
+    						alati, ignipedes, flammipedes.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				The most noble disciplines in the world: the vigor of art and of virtue, industry, sweat. 
+    				The panting of the horse alone, smoking, winged, fiery-footed, flame-footed.	<!-- CG: More perplexing stuff. -->
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						argutia[e] iuridica[e].
+    						dextr&egrave;. i[nfr]a, 378. pro, et contra.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				legal cleverness. skillfully. below, 378. for, and against.
+    			</translation>
+    		</marginalia>
+    		
+    		<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="e' mi s&agrave; be[n] male"/>
+    		<underline method="pen" type="straight" language="IT" text="di non essere a tempo a ricordarlo"/>
+    		<underline method="pen" type="straight" language="IT" text="uoi"/>
+    		<underline method="pen" type="straight" language="IT" text="speso in cortesia"/>
+    		<underline method="pen" type="straight" language="IT" text="oltra a i contanti, che furono"/>
+    		<underline method="pen" type="straight" language="IT" text="mordace"/>
+    		<underline method="pen" type="straight" language="IT" text="ammirata, &amp; tenuta"/>
+    		<underline method="pen" type="straight" language="IT" text="capricciosa &amp; arguta"/>
+    		<underline method="pen" type="straight" language="IT" text="era da scherzar seco"/>
+    		<underline method="pen" type="straight" language="IT" text="foenum in cornu"/>
+    		<underline method="pen" type="straight" language="IT" text="Piatiua Alfonso con B"/>
+    		<underline method="pen" type="straight" language="IT" text="chi piatisce"/>
+    		<underline method="pen" type="straight" language="IT" text="a' Sei dette"/>
+    		<underline method="pen" type="straight" language="IT" text="le sue ragioni"/>
+    		<underline method="pen" type="straight" language="IT" text="esser soprafatto"/>
+    		<underline method="pen" type="straight" language="IT" text="tu sei pazzo"/>
+    		<underline method="pen" type="straight" language="IT" text="st&agrave; cheto"/>
+    		<underline method="pen" type="straight" language="IT" text="lasciato 12 tuttori"/>
+    		<underline method="pen" type="straight" language="IT" text="smarrirsi"/>
+    		<underline method="pen" type="straight" language="IT" text="pan per focaccia"/>
+    		<underline method="pen" type="straight" language="IT" text="n'hauerebbe"/>
+    		<underline method="pen" type="straight" language="IT" text="24, s'egli"/>
+    		<underline method="pen" type="straight" language="IT" text="pensato, ch'io hauessi"/>
+    		<underline method="pen" type="straight" language="IT" text="hauuto a piatir teco"/>
+    		<underline method="pen" type="straight" language="IT" text="argutissima"/>
+    		<underline method="pen" type="straight" language="IT" text="il piu cauilloso huomo di Fiorenza"/>
+    		<underline method="pen" type="straight" language="IT" text="massimamente nel piatire"/>
+    		<underline method="pen" type="straight" language="IT" text="Alfonso de' Pazzi"/>
+    		<underline method="pen" type="straight" language="IT" text="Bidello dell'Academia Fiorentina"/>
+    		<underline method="pen" type="straight" language="IT" text="onde cicalando con alcuni giouani di certe"/>
+    		<underline method="pen" type="straight" language="IT" text="fantasia"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="SS" place="left_margin"/>
+    		<symbol name="SS" place="intext"/>
+    		<symbol name="JC" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- ricordarlo a --> <!--JG: It's above the printed text, so place should be head-->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- i con -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- tenuta al -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- La -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- cias -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- suo -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Al -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!--n'haue -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- hauessi -->
+    		
+	    	<!-- Left margin -->
+    		<mark name="horizontal_bar" method="pen" place="left_margin"/> <!-- Piatiua  -->
+	    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- pan per focaccia -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="equal_sign" method="pen" place="intext"/> <!-- uoi -->
+    		<mark name="vertical_bar" method="pen" place="intext"/> <!-- uoi haue[n]do -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- arguta -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- scherzar seco -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- seco, perche -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="piatisce"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- focaccia, subito -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- piatir teco -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- teco, risposta -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="argutissima"/>
+    		<mark name="equal_sign" method="pen" place="intext"/> <!-- piu cauilloso -->
+
+    </annotation>
+</transcription>

@@ -16,6 +16,8 @@ import static org.junit.Assert.assertNotNull;
  *
  */
 public abstract class BaseSerializerTest<T extends HasId> {
+    protected static final String COLLECTION_NAME = "valid";
+    protected static final String BOOK_NAME = "LudwigXV7";
 
     protected Serializer<T> serializer;
 
@@ -26,26 +28,30 @@ public abstract class BaseSerializerTest<T extends HasId> {
     public abstract void writeTest() throws IOException;
 
     /**
-     * @param name path of test resource
+     * @param path path of test resource
      * @return resource as an InputStream
      * @throws IOException
      */
-    public InputStream getResourceAsStream(String name) throws IOException {
-        return getClass().getClassLoader().getResourceAsStream(name);
+    public InputStream getResourceAsStream(String path) throws IOException {
+        return getClass().getClassLoader().getResourceAsStream(path);
     }
 
     /**
      *
-     *
+     * @param collection name of collection
+     * @param book name of book
      * @param name path of test resource
      * @param errors list to store errors found while loading resource
      * @return the object
      * @throws IOException
      */
-    public T loadResource(String name, List<String> errors) throws IOException {
+    public T loadResource(String collection, String book, String name, List<String> errors) throws IOException {
         assertNotNull("Serializer not set.", serializer);
 
-        try (InputStream in = getResourceAsStream(name)) {
+        String path = "archive/" + collection
+                + (book == null || book.isEmpty() ? "" : "/" + book)
+                + "/" + name;
+        try (InputStream in = getResourceAsStream(path)) {
             T obj = serializer.read(in, errors);
             if (obj == null) {
                 return null;
@@ -59,12 +65,14 @@ public abstract class BaseSerializerTest<T extends HasId> {
     /**
      * Load a test resource by name, ignoring errors.
      *
+     * @param collection name of collection
+     * @param book name of book
      * @param name path of test resource
      * @return the object
      * @throws IOException
      */
-    public T loadResource(String name) throws IOException {
-        return loadResource(name, new ArrayList<String>());
+    public T loadResource(String collection, String book, String name) throws IOException {
+        return loadResource(collection, book, name, new ArrayList<String>());
     }
 
     /**

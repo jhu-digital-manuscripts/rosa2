@@ -25,24 +25,24 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
 
     @Test
     public void readTest() throws IOException {
-        final String testFile = "data/Walters143/Walters143.description_en.xml";
+        final String testFile = "LudwigXV7.description_en.xml";
 
         List<String> errors = new ArrayList<>();
 
-        BookMetadata metadata = loadResource(testFile, errors);
+        BookMetadata metadata = loadResource(COLLECTION_NAME, BOOK_NAME, testFile, errors);
         assertNotNull(metadata);
 
-        assertEquals("14th century", metadata.getDate());
+        assertEquals("15th century", metadata.getDate());
         assertEquals(1400, metadata.getYearStart());
-        assertEquals(1300, metadata.getYearEnd());
-        assertEquals("Baltimore, MD", metadata.getCurrentLocation());
-        assertEquals("Walters Art Museum", metadata.getRepository());
+        assertEquals(1500, metadata.getYearEnd());
+        assertEquals("Los Angeles", metadata.getCurrentLocation());
+        assertEquals("J. Paul Getty Museum", metadata.getRepository());
         assertNotNull(metadata.getShelfmark());
         assertNotNull(metadata.getOrigin());
         assertEquals("manuscript", metadata.getType());
         assertNotNull(metadata.getDimensions());
-        assertEquals(216, metadata.getWidth());
-        assertEquals(300, metadata.getHeight());
+        assertEquals(260, metadata.getWidth());
+        assertEquals(370, metadata.getHeight());
         assertTrue(metadata.getNumberOfIllustrations() > -1);
         assertTrue(metadata.getNumberOfPages() > -1);
         assertNotNull(metadata.getCommonName());

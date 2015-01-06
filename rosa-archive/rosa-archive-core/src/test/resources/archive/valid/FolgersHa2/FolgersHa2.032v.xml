@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="FolgersHa2.032v.tif" pagination="384" reader="Harvey"/>	<!-- ABO 037left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            				<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Diogeni nemo vir, nisi Diogenes.
+                      				</marginalia_text>
+            					<person name="Diogenes of Sinope"/>
+	            				<emphasis method="chalk" type="straight"/>
+	            			</position>
+        			</language>
+        			<translation>
+        				To Diogenes, no one is a man, except Diogenes.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Philosophus, Philautus.
+    					</marginalia_text>
+    					<person name="Philautus"/>    					
+    				</position>
+    			</language>
+    			<translation>
+    				A philosopher, Philautus.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Cert&egrave; ingens vir, Si tam fuisset agendi
+    						potens, qu&agrave;m patiendi inuictus. Unde no[n] magis
+    						summoru[m] Regu[m], qua[m] Diogenis stilus; Inuictissimus.
+    					</marginalia_text>
+    					<person name="Diogenes of Sinope"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				A man is certainly great, if he is as strong in action, as he is unconquerable in enduring.
+    				Whence, the pen of Diogenes, rather than that of the greatest kings, is the most unconquerable.
+    			</translation>
+    		</marginalia>
+        
+    		<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="270">
+    					<marginalia_text>
+    						<!-- Words from marginalia in gutter. -->
+    						vt Diogenes solum respiciens Diogenem, +
+    					</marginalia_text>
+    					<person name="Diogenes of Sinope"/>
+    				</position>
+    				<position place="left_margin" book_orientation="270">
+    					<marginalia_text> 
+    						+ spernebat Aristotelem philosophu[m]: Platonem legislatore[m]: Demosthenem Oratore[m]: Demade[m]
+    						pragmaticu[m]: Philippu[m] Rege[m]: ipsu[m] orbis Victorem Alexandru[m]. Sibi ipse Soli addictus,
+    						neminem animo venerabatur Diogenes pra[e]ter Diogenem. Vnicus sua a[e]stimatione vir.
+    					</marginalia_text>
+    					<person name="Aristotle"/>
+    					<person name="Plato"/>
+    					<person name="Demosthenes"/>
+    					<person name="Demades"/>
+    					<person name="Philip II of Macedon"/>
+    					<person name="Alexander the Great"/>
+    				</position>
+    			</language>
+    			<translation>
+    				as Diogenes regarded Diogenes alone, he spurned Aristotle the philosopher, Plato the legislator, Demosthenes the orator, 
+    				Demades the pragmatist, Philip the King, even Alexander, conqueror of the world. Devoted to himself alone, Diogenes revered
+    				no one in his heart except Diogenes. In his estimation, a unique man.
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="accommodarono i ronzini nella"/>
+    		<underline method="pen" type="straight" language="IT" text="smontando quiui un contadino"/>
+    		<underline method="pen" type="straight" language="IT" text="del medesimo colore &amp; mantello"/>
+    		<underline method="pen" type="straight" language="IT" text="contadino si pigliaua sua bestia per"/>
+    		<underline method="pen" type="straight" language="IT" text="ingannato dalla somiglianza"/>
+    		<underline method="pen" type="straight" language="IT" text="non toccasse il suo cauallo"/>
+    		<underline method="pen" type="straight" language="IT" text="quello che badaua a' fatti suoi"/>
+    		<underline method="pen" type="straight" language="IT" text="aspre parole,"/>
+    		<underline method="pen" type="straight" language="IT" text="della sua presontione"/>
+    		<underline method="pen" type="straight" language="IT" text="haueua posto cura"/>
+    		<underline method="pen" type="straight" language="IT" text="c'hebbe assai del discreto"/>
+    		<underline method="pen" type="straight" language="IT" text="punto adirarsi"/>
+    		<underline method="pen" type="straight" language="IT" text="animale &egrave; femina"/>
+    		<underline method="pen" type="straight" language="IT" text="non maschio"/>
+    		<underline method="pen" type="straight" language="IT" text="cosi caualla"/>
+    		<underline method="pen" type="straight" language="IT" text="come &egrave;, &egrave; mia"/>
+    		<underline method="pen" type="straight" language="IT" text="uero acchetossi"/>
+    		<underline method="pen" type="straight" language="IT" text="molte risa dello Spini"/>
+    		<underline method="pen" type="straight" language="IT" text="Il medesimo"/>
+    		<underline method="pen" type="straight" language="IT" text="cosa notabile &amp; degna di marauiglia"/>
+    		<underline method="pen" type="straight" language="IT" text="della torre de gli Asinegli"/>
+    		<underline method="pen" type="straight" language="IT" text="per cosa rara, &amp;"/>
+    		<underline method="pen" type="straight" language="IT" text="da Modena"/>
+    		<underline method="pen" type="straight" language="IT" text="parecchi miglia discosto"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    		
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- su -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- co --> 
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- penti -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- sta -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- femi -->
+    		<mark name="bracket" method="pen" place="right_margin"/> <!-- auuerti ... tro -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Bolo -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- ui -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="plus_sign" method="pen" place="left_margin"/> <!-- con un'altra -->
+    		<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- ualcare -->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- na, & non -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- o, senza punto -->
+    		
+	    	<!-- Intext -->
+	    	<mark name="plus_sign" method="pen" place="intext"/> <!-- del discre  -->
+    		<mark name="equal_sign" method="pen" place="intext"/> <!-- punto adirarsi -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- adirarsi, dotted i -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- maschio, et -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- caualla, come -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- era con -->
+    		<mark name="bracket" method="pen" place="intext"/> <!-- Il medesimo. -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- marauiglia -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- marauiglia, & -->
+    		
+    </annotation>
+</transcription>

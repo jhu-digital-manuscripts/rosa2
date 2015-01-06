@@ -25,26 +25,26 @@ public class IllustrationTaggingSerializerTest extends BaseSerializerTest<Illust
 
     @Test
     public void readTest() throws IOException {
-        IllustrationTagging tagging = loadResource("data/Walters143/Walters143.imagetag.csv");
+        IllustrationTagging tagging = loadResource(COLLECTION_NAME, BOOK_NAME, "LudwigXV7.imagetag.csv");
         assertNotNull(tagging);
-        assertEquals(29, tagging.size());
+        assertEquals(101, tagging.size());
 
         Illustration illustration = tagging.getIllustrationData(28);
         assertNotNull(illustration);
 
         assertEquals("29", illustration.getId());
-        assertEquals("26v", illustration.getPage());
+        assertEquals("19r", illustration.getPage());
         assertNotNull(illustration.getTitles());
         assertEquals(1, illustration.getTitles().length);
         assertTrue(StringUtils.isBlank(illustration.getTextualElement()));
-        assertTrue(illustration.getInitials().startsWith("Blue initial"));
+        assertTrue(illustration.getInitials().isEmpty());
         assertNotNull(illustration.getCharacters());
-        assertEquals(1, illustration.getCharacters().length);
-        assertTrue(illustration.getCostume().startsWith("Jalousie wears"));
-        assertEquals("Ladder, trowel, hod, and hammer", illustration.getObject());
-        assertEquals("Grass ground beneath castle", illustration.getLandscape());
-        assertTrue(illustration.getArchitecture().startsWith("Crenellated wall"));
-        assertEquals("Diaper pattern background", illustration.getOther());
+        assertEquals(3, illustration.getCharacters().length);
+        assertEquals("Chaperon and bourrelet", illustration.getCostume());
+        assertEquals("Club", illustration.getObject());
+        assertTrue(illustration.getLandscape().startsWith("Figures stand within wattle fence"));
+        assertTrue(illustration.getArchitecture().isEmpty());
+        assertTrue(illustration.getOther().isEmpty());
 
         for (Illustration ill : tagging) {
             assertNotNull(ill.getId());

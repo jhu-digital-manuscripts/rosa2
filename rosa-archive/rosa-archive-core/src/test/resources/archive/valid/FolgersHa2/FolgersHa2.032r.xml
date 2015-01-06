@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+
+	<page filename="FolgersHa2.032r.tif" pagination="383" reader="Harvey"/>	<!-- ABO 036right -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Pueri Laceda[e]mone: viri nusq[uam].
+                      			</marginalia_text>
+            				<location name="Lacedaemon"/>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        			</language>
+        			<translation>
+        				Boys in Sparta: never men.	<!-- CG: This is unclear. -->
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						argut&egrave; in suo genere.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				cleverly in its own way.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Vnicus sibi vir Diogenes: etiam viuo, omniaq[ue] 
+    					</marginalia_text>
+    					<person name="Diogenes of Sinope"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						domati Alexandro.
+    						Agendo magnus Alexander: Diogenes patiendo maxim ):
+    						et in suo genere inuictissimus.
+    						)
+    					</marginalia_text>
+    					<person name="Alexander the Great"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Diogenes is a man unique to himself: even with Alexander alive and having
+    				dominated all things. 
+    				Alexander is great in action, and Diogenes is greatest in enduring,
+    				and in his own way he is invincible.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						Domenichi.
+    					</marginalia_text>
+    					<person name="Lodovico Domenichi"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Lodovico Domenichi
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						argut&egrave;. distinctio ciuilis.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				cleverly. a civil distinction.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) Quod etiam Occami
+    					</marginalia_text>
+    					<person name="William of Ockham"/>
+    				</position>
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						erat in disputando Elogiu[m].	<!-- I don't believe this is the title of a specific book. I'm not entirely sure what it is though. --> 
+    						Qui nec Alberto cedebat, mirabili doctori;
+    					</marginalia_text>
+    					<person name="Albertus Magnus"/>
+    				</position>
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						nec Thoma[e] angelico doctori; nec Scoto subtili
+    						doctori; ipse doctor inuictissimus.
+    					</marginalia_text>
+    					<person name="Thomas Aquinas"/>
+    					<person name="Duns Scotus"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				) Likewise what was said by Ockam in discussing the Elogium. Ockam, who never ceded to Albertus, the admirable doctor, <!-- CG: After looking around, still unsure what 'elogium' is referring to. -->
+    				nor to Thomas, the angelic doctor, nor to Scotus, the subtle doctor. He himself was a most invincible doctor.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						s[upr]a /
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				above /
+    			</translation>
+    		</marginalia>
+        
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						<!-- Given that this begins with a miniscule letter, I imagine that the marginalia begins in the right margin of the facing page, Ha2.031v. -->
+    						nulla propria 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="EL">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						ἀυτάρκεια,	<!-- Greek: autarkeia: "self-sufficiency" -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						sine necessarijs bonis animi, corporis, fort[unae]. <!-- Unsure about the abbreviation here. Need to check original source. -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				no self-sufficiency of one's own without the necessary goods of the mind, body, and fortune. 
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="che riscattato"/>
+    		<underline method="pen" type="straight" language="IT" text="scudi pagati"/>
+    		<underline method="pen" type="straight" language="IT" text="io ue n'ho aggiunte tante altre, che a far"/>
+    		<underline method="pen" type="straight" language="IT" text="conto"/>
+    		<underline method="pen" type="straight" language="IT" text="elle non mi costano due soldi l'una"/>
+    		<underline method="pen" type="straight" language="IT" text="empia"/>
+    		<underline method="pen" type="straight" language="IT" text="seuerisimo"/> <!--JG: seuerissimo-->
+    		<underline method="pen" type="straight" language="IT" text="donna rarissima"/>
+    		<underline method="pen" type="straight" language="IT" text="giorno meco"/>
+    		<underline method="pen" type="straight" language="IT" text="&amp; bellissimo intelletto"/>
+    		<underline method="pen" type="straight" language="IT" text="me"/>
+    		<underline method="pen" type="straight" language="IT" text="le belle cerimonie, gli organi"/>
+    		<underline method="pen" type="straight" language="IT" text="gentilezze usate da questi"/>
+    		<underline method="pen" type="straight" language="IT" text="di far uenir qui tanta"/>
+    		<underline method="pen" type="straight" language="IT" text="io"/>
+    		<underline method="pen" type="straight" language="IT" text="subito"/>
+    		<underline method="pen" type="straight" language="IT" text="son d'altro parere"/>
+    		<underline method="pen" type="straight" language="IT" text="tosto gli organi &amp; le"/>
+    		<underline method="pen" type="straight" language="IT" text="bellezze di tante gentildonne, che"/>
+    		<underline method="pen" type="straight" language="IT" text="Approu&ograve;"/>
+    		<underline method="pen" type="straight" language="IT" text="improuisa risposta"/>
+    		<underline method="pen" type="straight" language="IT" text="nuouo"/>
+    		<underline method="pen" type="straight" language="IT" text="pesce"/>
+    		<underline method="pen" type="straight" language="IT" text="nuoui &amp; ridicoli costumi, &amp;"/>
+    		<underline method="pen" type="straight" language="IT" text="ricetto della hospitalit&agrave; &amp; della"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="JC" place="head"/>
+    		<symbol name="Sun" place="right_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- paga -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- far bene -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- huo -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- se -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- organi -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- gli orga -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- habbiano -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Appro -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- nuo -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Gio -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- cor -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- giu[n] -->
+    		
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- pia ... empia -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- gente ... forza -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="plus_sign" method="pen" place="intext"/> <!-- tante altre  -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- Innocenti, et -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- above cagione -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- tante gentildonne -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="improuisa"/>
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="nuoui"/>
+    		
+    </annotation>
+</transcription>

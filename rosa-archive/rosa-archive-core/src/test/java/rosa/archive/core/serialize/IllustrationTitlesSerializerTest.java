@@ -25,7 +25,7 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest<Illustr
 
     @Test
     public void readTest() throws IOException {
-        IllustrationTitles titles = loadResource("data/illustration_titles.csv");
+        IllustrationTitles titles = loadResource(COLLECTION_NAME, null, "illustration_titles.csv");
 
         assertNotNull(titles);
         assertTrue(titles.getAllIds().size() > 0);

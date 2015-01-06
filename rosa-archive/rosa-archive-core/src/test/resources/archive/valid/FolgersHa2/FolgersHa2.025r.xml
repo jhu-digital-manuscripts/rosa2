@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+
+	<page filename="FolgersHa2.025r.tif" pagination="369" reader="Harvey"/>	<!-- ABO 029right -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Sola est a[e]therea Theurgia, qua[e] uelocissimas
+                      				</marginalia_text>
+            				<emphasis method="pen" type="straight" text="a[e]therea Theurgia"/>
+            			</position>
+        				<position place="right_margin" book_orientation="0">
+        					<marginalia_text>
+        						alas addit a[e]therea[e] Entelechia[e].
+        					</marginalia_text>
+        					<emphasis method="pen" type="straight" text="a[e]therea[e] Entelechia[e]."/>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						Cert&egrave; angelica Entelechia )
+    					</marginalia_text>
+    					<emphasis method="pen" type="straight" text="angelica Entelechia"/>
+    				</position>
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) necessari&ograve; exigit 
+    					</marginalia_text>
+    				</position>
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						angelicam dia[e]ta[e], omnisq[ue] munditia[e] 
+    					</marginalia_text>
+    					<emphasis method="pen" type="straight" text="angelicam dia[e]ta[e]"/>
+    					<emphasis method="pen" type="straight" text="munditia[e]"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Theurgiam. Infiniti, sunt hominum
+    					</marginalia_text>
+    					<emphasis method="pen" type="straight" text="Theurgiam"/>
+    				</position>
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						sordes, et virorum nuga[e]: decet aliquos
+    					</marginalia_text>
+    				</position>
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) ess[e] hominu[m] lautitias, et virorum, heroumq[ue] incrementa.
+    					</marginalia_text>
+    					<emphasis method="pen" type="straight" text="hominu[m] lautitias"/>
+    					<emphasis method="pen" type="straight" text="heroumq[ue] incrementa"/>
+    				</position>
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						Quales olim Dij mortales.
+    					</marginalia_text>
+    					<emphasis method="pen" type="straight" text="Dij mortales"/>
+    				</position>
+    			</language>
+        			<translation>
+        				Theurgy alone is celestial, which bestows the swiftest wings of ethereal Actualization. 
+        				Certainly angelic Actualization necessarily requires the angelic Theurgy of diet and every cleanliness.
+        				The filth of humanity and the trifles of men are infinite, and it is fitting that someone be the splendor
+        				of humanity, and of men, and the advancement of heroes. 	<!-- CG: This last phrase 'heroum incrementa' is strange. -->
+        				Once, mortals were as Gods.
+        			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						) Semper sui compotes; 
+    						totiusq[ue] Viri, ad omnia certissimi.
+    					</marginalia_text>
+    					<emphasis method="pen" type="straight" text="Semper sui compotes"/>
+    					<emphasis method="pen" type="straight" text="totiusq[ue] Viri"/>
+    				</position>
+    			</language>
+    			<translation>
+    				) Always having mastery over themselves; and over the whole man, most resolved toward all things. <!-- CG: I'm very unsure about this translation. -->
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Economico.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Economic.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Jeiunio, et oratione	
+    						fiunt miracula.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Miracles happen by fasting and by prayer.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				ridiculous.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						s[upr]a, 369.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				above, 369.
+    			</translation>
+    		</marginalia>
+    		
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="270">
+    					<marginalia_text>
+    						Parum, sed purum: purum etiam, sed parum. Merus spiritus. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Too little, but pure: or rather pure, but too little. Entirely spirit.
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="il giudice"/>
+    		<underline method="pen" type="straight" language="IT" text="il notaio"/>
+    		<underline method="pen" type="straight" language="IT" text="ballando, &amp; cantando, &amp; sonando il liuto"/>
+    		<underline method="pen" type="straight" language="IT" text="domanda la cagione di"/>
+    		<underline method="pen" type="straight" language="IT" text="tanta alle"/>
+    		<underline method="pen" type="straight" language="IT" text="l'allegra cuore"/>
+    		<underline method="pen" type="straight" language="IT" text="mangiare in insalate"/>
+    		<underline method="pen" type="straight" language="IT" text="mutolo il meschino uicario"/>
+    		<underline method="pen" type="straight" language="IT" text="poco manco cattiue spese"/>
+    		<underline method="pen" type="straight" language="IT" text="pouert&agrave; n'era"/>
+    		<underline method="pen" type="straight" language="IT" text="poteua scusarsi"/>
+    		<underline method="pen" type="straight" language="IT" text="Humore da Bologna"/>
+    		<underline method="pen" type="straight" language="IT" text="con le gotte"/>
+    		<underline method="pen" type="straight" language="IT" text="Morgante"/>
+    		<underline method="pen" type="straight" language="IT" text="scopri quel pi&egrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="&egrave; rosso rosso"/>
+    		<underline method="pen" type="straight" language="IT" text="Cuopri"/>
+    		<underline method="pen" type="straight" language="IT" text="che mi f&agrave; male"/>
+    		<underline method="pen" type="straight" language="IT" text="a Roma"/>
+    		<underline method="pen" type="straight" language="IT" text="fare scorciare una staffa"/>
+    		<underline method="pen" type="straight" language="IT" text="Morgante, che"/>
+    		<underline method="pen" type="straight" language="IT" text="m&ograve; dou'ella"/>
+    		<underline method="pen" type="straight" language="IT" text="Eccola"/>
+    		<underline method="pen" type="straight" language="IT" text="l'Humore"/>
+    		<underline method="pen" type="straight" language="IT" text="che lh&ograve; uista mi"/>
+    		<underline method="pen" type="straight" language="IT" text="diede uolta a Bologna"/>
+    		<underline method="pen" type="straight" language="IT" text="calzaua benissimo"/>
+    		<underline method="pen" type="straight" language="IT" text="questo sopranome"/>
+    		<underline method="pen" type="straight" language="IT" text="stracciare un cartello"/>
+    		<underline method="pen" type="straight" language="IT" text="schiaffo da"/>
+    		<underline method="pen" type="straight" language="IT" text="senza adirarsene"/>
+    		<underline method="pen" type="straight" language="IT" text="grande amico"/>
+    		<!--JG: Filosofissimo is underlined as well-->
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="left_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- uan -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- alle -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- que -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!--di que -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- ca -->
+    		<mark name="comma" method="pen" place="right_margin"/> <!-- quiui -->
+    		<mark name="equal_sign" method="pen" place="right_margin"/> <!-- Filosofissimo] beneath 'mortales' -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- sto .. mangiare -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- senza -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="apostrophe" method="pen" place="intext"/> <!-- che sente -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- tanta alle -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- grezza, a cui -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- rispondono di que -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- l'allegra cuore -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- dirsi, & -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- scusarsi.] -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- gotte, & -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- rosso rosso -->
+    		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark on right side, near bottom of page -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- questo sopranome -->
+    		<mark name="vertical_bar" method="pen" place="intext"/> <!-- Before paragraph beginning with 'Volendo' -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- canto tocco' -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- senza adirarsene -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- altrime[n]ti disse -->
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- grande amico -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Filosofissimo"/>
+
+    		<mark name="plus_sign" method="pen" place="tail"/>
+    		<mark name="plus_sign" method="pen" place="tail"/>
+
+    </annotation>
+</transcription>
