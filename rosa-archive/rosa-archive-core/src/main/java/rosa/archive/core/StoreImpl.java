@@ -74,14 +74,14 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public String[] listBookCollections() throws IOException {
         return base.listByteStreamGroupNames()
-                .toArray(new String[base.numberOfByteStreamGroups()]);
+                .toArray(new String[]{});
     }
 
     @Override
     public String[] listBooks(String collectionId) throws IOException{
         ByteStreamGroup collection = base.getByteStreamGroup(collectionId);
         return collection.listByteStreamGroupNames()
-                .toArray(new String[collection.numberOfByteStreamGroups()]);
+                .toArray(new String[]{});
     }
 
     @Override
@@ -134,7 +134,7 @@ public class StoreImpl implements Store, ArchiveConstants {
                 loadItem(bookId + CROP, bookStreams, CropInfo.class, errors));
         book.setBookStructure(
                 loadItem(bookId + REDUCED_TAGGING, bookStreams, BookStructure.class, errors));
-        book.setChecksum(
+        book.setSHA1Checksum(
                 loadItem(bookId + SHA1SUM, bookStreams, SHA1Checksum.class, errors));
         book.setIllustrationTagging(
                 loadItem(bookId + IMAGE_TAGGING, bookStreams, IllustrationTagging.class, errors));
@@ -149,7 +149,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         );
 
         List<String> content = bookStreams.listByteStreamNames();
-        book.setContent(content.toArray(new String[bookStreams.numberOfByteStreams()]));
+        book.setContent(content.toArray(new String[]{}));
 
         List<AnnotatedPage> pages = book.getAnnotatedPages();
         for (String name : content) {
@@ -263,7 +263,7 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors) throws IOException {
 
-        SHA1Checksum checksums = book.getChecksum();
+        SHA1Checksum checksums = book.getSHA1Checksum();
         if (checksums == null) {
             checksums = new SHA1Checksum();
             checksums.setId(book.getId() + SHA1SUM);

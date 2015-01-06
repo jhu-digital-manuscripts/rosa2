@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-public class MetadataSerializerTest extends BaseSerializerTest {
+public class MetadataSerializerTest extends BaseSerializerTest<BookMetadata> {
 
     private MetadataSerializer serializer;
 

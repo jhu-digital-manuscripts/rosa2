@@ -56,7 +56,7 @@ public class StoreUpdateChecksumTest extends BaseStoreTest {
         List<String> errors = new ArrayList<>();
 
         // Grab existing checksums
-        SHA1Checksum expected = testBook.getChecksum();
+        SHA1Checksum expected = testBook.getSHA1Checksum();
         assertNotNull(expected);
         assertFalse(expected.checksums().isEmpty());
 
@@ -70,7 +70,7 @@ public class StoreUpdateChecksumTest extends BaseStoreTest {
         assertTrue(result);
         assertEquals(0, errors.size());
 
-        SHA1Checksum test = testStore.loadBook(COLLECTION_NAME, BOOK_NAME, errors).getChecksum();
+        SHA1Checksum test = testStore.loadBook(COLLECTION_NAME, BOOK_NAME, errors).getSHA1Checksum();
         assertEquals(0, errors.size());
         
         assertEquals(expected.getAllIds().size(), test.getAllIds().size());
@@ -81,7 +81,7 @@ public class StoreUpdateChecksumTest extends BaseStoreTest {
     public void testUpdateBadChecksums() throws Exception {
         List<String> errors = new ArrayList<>();
 
-        SHA1Checksum expected = testBook.getChecksum();
+        SHA1Checksum expected = testBook.getSHA1Checksum();
         assertNotNull(expected);
         assertTrue(expected.checksums().size() > 0);
         
@@ -101,7 +101,7 @@ public class StoreUpdateChecksumTest extends BaseStoreTest {
         assertTrue(testStore.updateChecksum(COLLECTION_NAME, BOOK_NAME, false, errors));
         assertEquals(0, errors.size());
 
-        SHA1Checksum test = testStore.loadBook(COLLECTION_NAME, BOOK_NAME, errors).getChecksum();
+        SHA1Checksum test = testStore.loadBook(COLLECTION_NAME, BOOK_NAME, errors).getSHA1Checksum();
         assertEquals(0, errors.size());
         
         assertEquals(expected.checksums().get(wrong_entry), test.checksums().get(wrong_entry));
