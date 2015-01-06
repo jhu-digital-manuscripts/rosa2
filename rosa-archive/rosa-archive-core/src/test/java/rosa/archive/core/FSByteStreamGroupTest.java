@@ -11,7 +11,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 /**
- * Test against data in src/test/resources.
+ * Test against data in src/test/resources/archive.
  */
 public class FSByteStreamGroupTest extends BaseGuiceTest {
 
@@ -28,18 +28,18 @@ public class FSByteStreamGroupTest extends BaseGuiceTest {
         String name = base.name();
 
         assertNotNull(name);
-        assertEquals("test-classes", name);
+        assertEquals("archive", name);
     }
 
     @Test
-    public void oneByteStreamsAtTop() throws IOException {
+    public void zeroByteStreamsAtTop() throws IOException {
         int numberOfByteStreams = base.numberOfByteStreams();
-        assertEquals(1, numberOfByteStreams);
+        assertEquals(0, numberOfByteStreams);
     }
 
     @Test
     public void twoBSGAtTop() throws IOException {
-        assertEquals(2, base.numberOfByteStreamGroups());
+        assertEquals(1, base.numberOfByteStreamGroups());
     }
 
     @Test
