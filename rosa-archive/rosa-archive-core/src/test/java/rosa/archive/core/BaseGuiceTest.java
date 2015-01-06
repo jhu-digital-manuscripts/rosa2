@@ -42,7 +42,7 @@ public abstract class BaseGuiceTest {
 
     @Before
     public void setupArchiveStore() throws URISyntaxException, IOException {
-        URL u = getClass().getClassLoader().getResource("data");
+        URL u = getClass().getClassLoader().getResource("valid");
         assertNotNull(u);
 
         basePath = Paths.get(u.toURI()).getParent();
