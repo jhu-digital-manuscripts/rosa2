@@ -1,9 +1,5 @@
 package rosa.archive.core;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
-
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.BookMetadataSerializer;
@@ -24,7 +20,6 @@ import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.multibindings.Multibinder;
-import com.google.inject.name.Names;
 
 /**
  * Dependency injection bindings for Google Guice.
@@ -53,21 +48,5 @@ public class ArchiveCoreModule extends AbstractModule {
         // Checkers
         bind(BookChecker.class);
         bind(BookCollectionChecker.class);
-
-        Names.bindProperties(binder(), getProperties());
-    }
-
-    private Properties getProperties() {
-        Properties props = new Properties();
-
-         // TODO redo properties
-        
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("file-archive.properties")) {
-            props.load(in);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        return props;
     }
 }
