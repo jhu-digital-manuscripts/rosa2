@@ -24,18 +24,18 @@ public class StoreImplTest extends BaseGuiceTest {
 
         assertNotNull(collections);
         assertEquals(1, collections.length);
-        assertEquals(VALID_COLLECTION_NAME, collections[0]);
+        assertEquals(VALID_COLLECTION, collections[0]);
     }
 
     @Test
     public void testListBooks() throws IOException {
-        String[] books = store.listBooks(VALID_COLLECTION_NAME);
+        String[] books = store.listBooks(VALID_COLLECTION);
         assertNotNull(books);
 
         List<String> list = Arrays.asList(books);
 
         assertEquals(2, list.size());
-        assertTrue(list.contains(VALID_BOOK_FOLGERSHA2_NAME));
+        assertTrue(list.contains(VALID_BOOK_FOLGERSHA2));
         assertTrue(list.contains(VALID_BOOK_LUDWIGXV7));
     }
 
