@@ -37,24 +37,21 @@ import com.google.inject.Injector;
  *
  */
 public class ArchiveTool {
-
-    private ToolConfig config;
-    private Store store;
-    
-    private PrintStream report;
+    private final ToolConfig config;
+    private final Store store;
+    private final PrintStream report;
 
     public ArchiveTool(Store store, ToolConfig config) {
-        this.store = store;
-        this.config = config;
-
-        this.report = System.out;
+        this(store, config, System.out);
     }
     
     public ArchiveTool(Store store, ToolConfig config, PrintStream report) {
-        this(store, config);
+        this.store = store;
+        this.config = config;
         this.report = report;
     }
 
+    @SuppressWarnings("static-access")
     public static void main(String[] args) throws ParseException, IOException {
         if (args.length < 1) {
             System.out.println("A command must be issued.");
@@ -67,6 +64,7 @@ public class ArchiveTool {
 
         // Set the valid options for the tool
         Options options = new Options();
+        
         options.addOption(OptionBuilder.withArgName("property=value")
                 .withDescription("set the path of the archive. A default value for this path" +
                         " is set in 'tool-config.properties'")
@@ -106,6 +104,8 @@ public class ArchiveTool {
     public void run(CommandLine cmd) {
         String command = cmd.getArgs()[0];
 
+        report.println("Archive: " + config.getArchivePath());
+        
         if (command.equals(Command.LIST.display())) {
             list(cmd);
         } else if (command.equals(Command.CHECK.display())) {
@@ -116,6 +116,8 @@ public class ArchiveTool {
             updateImageList(cmd);
         } else if (command.equals(Command.CROP_IMAGES.display())) {
             cropImages(cmd);
+        } else {
+            throw new RuntimeException("Unknown command");
         }
     }
 
