@@ -45,7 +45,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-public class ManifestTransformerTest {
+public class PresentationTransformerTest {
     private static final String ENDPOINT_SCHEME = "http";
     private static final String ENDPOINT_HOST = "example.org";
     private static final String ENDPOINT_PREFIX = "/iiif";
@@ -58,11 +58,11 @@ public class ManifestTransformerTest {
             "BOOK.007r.tif", "BOOK.007v.tif", "BOOK.008r.tif", "BOOK.008v.tif"
     };
 
-    private ManifestTransformer transformer;
+    private PresentationTransformer transformer;
 
     @Before
     public void setup() {
-        transformer = new ManifestTransformer(
+        transformer = new PresentationTransformer(
                 new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT),
                 new rosa.iiif.image.core.IIIFRequestFormatter(
                         ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX)

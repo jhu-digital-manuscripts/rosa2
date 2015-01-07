@@ -33,7 +33,7 @@ import java.util.List;
 import java.util.Map;
 
 // TODO handle HTML sanitization!
-public class ManifestTransformer {
+public class PresentationTransformer {
     private static final String PAGE_REGEX = "\\d{1,3}(r|v|R|V)";
     private static int annotation_counter = 0;
 
@@ -41,8 +41,8 @@ public class ManifestTransformer {
     private rosa.iiif.image.core.IIIFRequestFormatter imageFormatter;
 
     // TODO inject with GUICE?
-    public ManifestTransformer(IIIFRequestFormatter requestFormatter,
-                               rosa.iiif.image.core.IIIFRequestFormatter imageFormatter) {
+    public PresentationTransformer(IIIFRequestFormatter requestFormatter,
+                                   rosa.iiif.image.core.IIIFRequestFormatter imageFormatter) {
         this.requestFormatter = requestFormatter;
         this.imageFormatter = imageFormatter;
     }

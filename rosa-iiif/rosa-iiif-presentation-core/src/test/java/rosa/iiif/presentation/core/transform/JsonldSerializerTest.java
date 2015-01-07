@@ -2,6 +2,7 @@ package rosa.iiif.presentation.core.transform;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.HtmlValue;
@@ -28,12 +29,18 @@ import static org.junit.Assert.assertNotNull;
 
 public class JsonldSerializerTest {
     private static final String IIIF_CONTEXT_URL = "http://iiif.io/api/image/2/context.json";
+    private static final String ENDPOINT_SCHEME = "http";
+    private static final String ENDPOINT_HOST = "example.org";
+    private static final String ENDPOINT_PREFIX = "iiif";
+    private static final int ENDPOINT_PORT = -1;
 
     private JsonldSerializer serializer;
 
     @Before
     public void setup() {
-        serializer = new JsonldSerializer();
+        serializer = new JsonldSerializer(
+                new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT)
+        );
     }
 
     @Test
@@ -41,7 +48,7 @@ public class JsonldSerializerTest {
         Collection collection = createCollectionOfManifests();
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.writeJsonld(collection, out);
+        serializer.write(collection, out);
 
         String json = out.toString();
         assertNotNull(json);
@@ -55,7 +62,7 @@ public class JsonldSerializerTest {
         Manifest manifest = createManifest();
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.writeJsonld(manifest, out);
+        serializer.write(manifest, out);
 
         String json = out.toString();
         assertNotNull("JSON-LD string does not exist.", json);
@@ -69,7 +76,7 @@ public class JsonldSerializerTest {
         Sequence sequence = createSequence(1);
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.writeJsonld(sequence, out);
+        serializer.write(sequence, out);
 
         String json = out.toString();
         assertNotNull(json);
@@ -83,7 +90,7 @@ public class JsonldSerializerTest {
         Canvas canvas = createCanvasesWithOneImage().get(0);
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.writeJsonld(canvas, out);
+        serializer.write(canvas, out);
 
         String json = out.toString();
         assertNotNull(json);

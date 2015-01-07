@@ -2,12 +2,15 @@ package rosa.iiif.presentation.core.transform;
 
 import org.json.JSONException;
 import org.json.JSONWriter;
+import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationBase;
+import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.annotation.Annotation;
@@ -24,10 +27,17 @@ import java.io.Writer;
 import java.util.List;
 
 // TODO handle multiple languages?
-public class JsonldSerializer {
+public class JsonldSerializer implements PresentationSerializer {
+    private static final String IIIF_PRESENTATION_CONTEXT = "http://iiif.io/api/presentation/2/context.json";
 
-    public void writeJsonld(Collection collection, OutputStream os)
-            throws JSONException, IOException {
+    private final IIIFRequestFormatter presentationUrlFormatter;
+
+    public JsonldSerializer(IIIFRequestFormatter presentationUrlFormatter) {
+        this.presentationUrlFormatter = presentationUrlFormatter;
+    }
+
+    @Override
+    public void write(Collection collection, OutputStream os) throws JSONException, IOException {
         Writer writer = new OutputStreamWriter(os, "UTF-8");
         JSONWriter jWriter = new JSONWriter(writer);
 
@@ -35,7 +45,8 @@ public class JsonldSerializer {
         writer.flush();
     }
 
-    public void writeJsonld(Manifest manifest, OutputStream os) throws JSONException, IOException {
+    @Override
+    public void write(Manifest manifest, OutputStream os) throws JSONException, IOException {
         Writer writer = new OutputStreamWriter(os, "UTF-8");
         JSONWriter jWriter = new JSONWriter(writer);
 
@@ -43,7 +54,8 @@ public class JsonldSerializer {
         writer.flush();
     }
 
-    public void writeJsonld(Sequence sequence, OutputStream os) throws JSONException, IOException {
+    @Override
+    public void write(Sequence sequence, OutputStream os) throws JSONException, IOException {
         Writer writer = new OutputStreamWriter(os, "UTF-8");
         JSONWriter jWriter = new JSONWriter(writer);
 
@@ -51,7 +63,8 @@ public class JsonldSerializer {
         writer.flush();
     }
 
-    public void writeJsonld(Canvas canvas, OutputStream os) throws JSONException, IOException {
+    @Override
+    public void write(Canvas canvas, OutputStream os) throws JSONException, IOException {
         Writer writer = new OutputStreamWriter(os, "UTF-8");
         JSONWriter jWriter = new JSONWriter(writer);
 
@@ -59,7 +72,8 @@ public class JsonldSerializer {
         writer.flush();
     }
 
-    public void writeJsonld(Annotation annotation, OutputStream os) throws JSONException, IOException {
+    @Override
+    public void write(Annotation annotation, OutputStream os) throws JSONException, IOException {
         Writer writer = new OutputStreamWriter(os, "UTF-8");
         JSONWriter jWriter = new JSONWriter(writer);
 
@@ -67,9 +81,26 @@ public class JsonldSerializer {
         writer.flush();
     }
 
+    @Override
+    public void write(Range range, OutputStream os) throws JSONException, IOException {
+        throw new UnsupportedOperationException("Not implemented.");
+    }
+
+    @Override
+    public void write(Layer layer, OutputStream os) throws JSONException, IOException {
+        throw new UnsupportedOperationException("Not implemented.");
+    }
+
+    /**
+     * Add the IIIF presentation API context if it is needed.
+     *
+     * @param jWriter json-ld writer
+     * @param included is this context included in the final document?
+     * @throws JSONException
+     */
     private void addIiifContext(JSONWriter jWriter, boolean included) throws JSONException {
         if (included) {
-            jWriter.key("@context").value("http://iiif.io/api/image/2/context.json");
+            jWriter.key("@context").value(IIIF_PRESENTATION_CONTEXT);
         }
     }
 
@@ -108,7 +139,10 @@ public class JsonldSerializer {
     }
 
     /**
-     * Write out a IIIF Presentation Manifest as JSON-LD
+     * Write out a IIIF Presentation Manifest as JSON-LD. All of the base data fields
+     * that hold data are written. The JSON-LD representation of the Manifest object
+     * embeds the default sequence (usually the first), and contains only a reference
+     * to any other sequences.
      *
      * @param manifest IIIF Presentation manifest
      * @param jWriter JSON-LD writer
@@ -127,6 +161,7 @@ public class JsonldSerializer {
             writeJsonld(manifest.getSequences().get(manifest.getDefaultSequence()), jWriter, false);
 
             for (int i = 0; i < manifest.getSequences().size(); i++) {
+                // Maybe the default sequence is not the first sequence in the list?
                 if (i == manifest.getDefaultSequence()) {
                     continue;
                 }
@@ -144,7 +179,11 @@ public class JsonldSerializer {
     }
 
     /**
-     * Write out a IIIF Presentation Sequence as JSON-LD
+     * Write out a IIIF Presentation Sequence as JSON-LD. All base data fields that
+     * contain data are written out. The JSON-LD representation embeds all canvases
+     * contained within this sequence. The IIIF presentation api context is included
+     * only if the initial request was for this sequence. Embedded sequences do not
+     * need the context attached.
      *
      * @param sequence the sequence
      * @param jWriter JSON-LD writer
@@ -172,7 +211,11 @@ public class JsonldSerializer {
     }
 
     /**
-     * Write out a IIIF Presentation Canvas as JSON-LD
+     * Write out a IIIF Presentation Canvas as JSON-LD. All base data fields that
+     * contain data are written. The JSON-LD representation embeds all image
+     * annotations associated with this canvas. All other annotations are written
+     * in an embedded annotation list. This annotation list holds references to
+     * non-image annotations and can be referenced separately from the canvas.
      *
      * @param canvas the canvas
      * @param jWriter JSON-LD writer
@@ -195,16 +238,19 @@ public class JsonldSerializer {
             jWriter.endArray();
         }
 
-        // TODO get ID for annotation list from canvas ID
         if (canvas.getOtherContent().size() > 0) {
-            writeAnnotationList(canvas.getOtherContent(), "ID", jWriter, false);
+            String listId = canvas.getLabel("en"); // TODO tmp, need better way to get canvas label
+            writeAnnotationList(canvas.getOtherContent(), listId, jWriter, false);
         }
 
         jWriter.endObject();
     }
 
     /**
-     * Write an annotation as JSON-LD
+     * Write an annotation as JSON-LD. All base data fields that contain data
+     * are written. The JSON-LD representation has a type ('@type') defined by
+     * its source. An annotation can potentially have multiple sources and
+     * targets, each can be defined by a selector.
      *
      * @param annotation annotation
      * @param jWriter JSON-LD writer
@@ -213,7 +259,7 @@ public class JsonldSerializer {
             throws JSONException {
         jWriter.object();
 
-        addIiifContext(jWriter, isRequested); // TODO
+        addIiifContext(jWriter, isRequested);
         writeBaseData(annotation, jWriter);
 //        jWriter.key("@type").value(IIIFNames.OA_ANNOTATION);
 
@@ -222,8 +268,7 @@ public class JsonldSerializer {
 
         writeIfNotNull("motivation", annotation.getMotivation(), jWriter);
 
-        // IIIF Presentation API 2.0 does not seem mention using Selectors for
-        // annotation targets.
+        // TODO write target with the possibility of it being a specific resource
         AnnotationTarget target = annotation.getDefaultTarget();
         jWriter.key("on").value(target.getUri());
 
@@ -231,7 +276,8 @@ public class JsonldSerializer {
     }
 
     /**
-     * Write an annotation list as JSON-LD
+     * Write an annotation list as JSON-LD. This object contains references to
+     * annotations only.
      *
      * @param annoList list of annotations
      * @param id resolvable URL
