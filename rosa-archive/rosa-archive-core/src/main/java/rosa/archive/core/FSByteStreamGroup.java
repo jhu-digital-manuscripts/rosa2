@@ -18,7 +18,7 @@ public class FSByteStreamGroup implements ByteStreamGroup {
 
     private Path base;
 
-    public FSByteStreamGroup(String base) throws IOException{
+    public FSByteStreamGroup(String base) {
         this(Paths.get(base));
     }
 
