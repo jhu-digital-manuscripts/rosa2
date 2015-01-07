@@ -40,7 +40,7 @@ public class BookDerivative extends AbstractDerivative {
         List<String> loadingErrors = new ArrayList<>();
 
         BookCollection col = store.loadBookCollection(collection, loadingErrors);
-        Book b = col == null ? null : store.loadBook(collection, book, loadingErrors);
+        Book b = col == null ? null : store.loadBook(col, book, loadingErrors);
         if (b != null) {
             store.check(col, b, checkBits, errors, warnings);
         } else {

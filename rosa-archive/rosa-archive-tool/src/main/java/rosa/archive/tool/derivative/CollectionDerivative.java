@@ -89,7 +89,7 @@ public class CollectionDerivative extends AbstractDerivative {
                 continue;
             }
 
-            Book book = store.loadBook(collection, bookName, loadingErrors);
+            Book book = store.loadBook(col, bookName, loadingErrors);
             if (book == null) {
                 report.println("Failed to read book. [" + collection + ":" + bookName + "]");
                 continue;

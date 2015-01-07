@@ -175,7 +175,7 @@ public class ArchiveTool {
                 // list <collectionId> <bookId>
                 report.println("Stuff in " + args[1] + ":" + args[2]);
                 try {
-                    Book book = store.loadBook(args[1], args[2], errors);
+                    Book book = store.loadBook(store.loadBookCollection(args[1], errors), args[2], errors);
                     if (book != null) {
                         for (String item : book.getContent()) {
                             report.println("  " + item);

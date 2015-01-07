@@ -21,10 +21,6 @@ import rosa.iiif.presentation.model.PresentationRequest;
 public class ArchiveIIIFService implements IIIFService {
     private final Store store;
 
-    /**
-     * @param col_map
-     *            name -> book collection
-     */
     public ArchiveIIIFService(Store store) {
         this.store = store;
     }
@@ -115,7 +111,7 @@ public class ArchiveIIIFService implements IIIFService {
     }
 
     private Book get_book_from_id(String id) throws IOException {
-        return store.loadBook(get_collection_id(id), get_book_id(id), null);
+        return store.loadBook(store.loadBookCollection(get_collection_id(id), null), get_book_id(id), null);
     }
 
     private boolean handle_collection(String name, OutputStream os) throws IOException {
