@@ -56,11 +56,8 @@ public class StoreCropTest extends BaseTmpStoreTest {
         Path crop_dir = getCroppedDir(VALID_COLLECTION_NAME, VALID_BOOK_LUDWIGXV7);
         assertFalse(Files.exists(crop_dir));
 
-        System.err.println("hi");
         // count the number of original images
         assertEquals(287, countImages(getTmpBookPath(VALID_COLLECTION_NAME, VALID_BOOK_LUDWIGXV7)));
-
-        System.err.println("hi2");
         
         List<String> errors = new ArrayList<>();
         tmpStore.cropImages(VALID_COLLECTION_NAME, VALID_BOOK_LUDWIGXV7, true, errors);

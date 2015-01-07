@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import rosa.archive.model.aor.AnnotatedPage;
@@ -22,7 +21,7 @@ import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 
 /**
- * TODO after importing update AoR data
+ *
  */
 public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<AnnotatedPage> {
     private static final String BOOK_NAME = "FolgersHa2";
@@ -35,34 +34,33 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
     @Test
     public void readTest() throws IOException {
         final String[] files = {
-                "FolgersHa2.018r.xml", "FolgersHa2.018v.xml",
-                "FolgersHa2.019r.xml", "FolgersHa2.019v.xml",
-                "FolgersHa2.020r.xml", "FolgersHa2.020v.xml",
-                "FolgersHa2.021r.xml", "FolgersHa2.021v.xml"
+                "FolgersHa2.aor.018r.xml", "FolgersHa2.aor.018v.xml",
+                "FolgersHa2.aor.019r.xml", "FolgersHa2.aor.019v.xml",
+                "FolgersHa2.aor.020r.xml", "FolgersHa2.aor.020v.xml",
+                "FolgersHa2.aor.021r.xml", "FolgersHa2.aor.021v.xml"
         };
         List<String> errors = new ArrayList<>();
 
-        AnnotatedPage page = null;
         for (String testFile : files) {
             errors.clear();
-            page = loadResource(COLLECTION_NAME, BOOK_NAME, testFile, errors);
+            AnnotatedPage page = loadResource(COLLECTION_NAME, BOOK_NAME, testFile, errors);
 
-            assertTrue(errors.isEmpty());
-            assertNotNull(page);
-            assertEquals(testFile, page.getId());
-            assertTrue(page.getSignature().equals(""));
-            assertNotNull(page.getReader());
-            assertNotNull(page.getPagination());
-            assertTrue(page.getMarginalia().size() > 0);
-            assertTrue(page.getUnderlines().size() > 0);
-            assertTrue(page.getErrata().size() == 0);
+            assertTrue("Errors list should be empty.", errors.isEmpty());
+            assertNotNull("Failed to load AoR transcription.", page);
+            assertEquals("Loaded wrong page.", testFile, page.getId());
+            assertTrue("Page signature should be empty.", page.getSignature().equals(""));
+            assertNotNull("Page reader should not be null.", page.getReader());
+            assertNotNull("Pagination should not be null.", page.getPagination());
+            assertFalse("Marginalia list should not be empty.", page.getMarginalia().isEmpty());
+            assertFalse("Underlines list should not be empty.", page.getUnderlines().isEmpty());
+            assertTrue("Errata list should be empty.", page.getErrata().isEmpty());
         }
     }
 
     @Test
     public void withErrataTest() throws IOException {
         List<String> errors = new ArrayList<>();
-        AnnotatedPage page = loadResource(COLLECTION_NAME, BOOK_NAME, "FolgersHa2.036r.xml", errors);
+        AnnotatedPage page = loadResource(COLLECTION_NAME, BOOK_NAME, "FolgersHa2.aor.036r.xml", errors);
 
         assertNotNull(page);
         assertTrue(errors.isEmpty());
@@ -105,7 +103,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
 
     @Test
     public void readNonexistantFile() throws IOException {
-        AnnotatedPage page = loadResource(COLLECTION_NAME, BOOK_NAME, "FolgersHa2.00v.xml");
+        AnnotatedPage page = loadResource(COLLECTION_NAME, BOOK_NAME, "FolgersHa2.aor.00v.xml");
         assertNull(page);
     }
 
