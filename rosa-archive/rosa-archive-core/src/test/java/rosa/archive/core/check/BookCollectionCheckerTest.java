@@ -35,7 +35,7 @@ public class BookCollectionCheckerTest extends BaseGuiceTest {
      */
     @Test
     public void checkValidCollectionSkippingBits() throws Exception {
-        ByteStreamGroup validGroup = base.getByteStreamGroup(VALID_COLLECTION_NAME);
+        ByteStreamGroup validGroup = base.getByteStreamGroup(VALID_COLLECTION);
         assertNotNull("Byte Stream Group 'valid' should always exist.", validGroup);
 
         // Run check on a good collection
@@ -47,7 +47,7 @@ public class BookCollectionCheckerTest extends BaseGuiceTest {
 
     @Test
     public void checkValidCollectionWithBits() throws Exception {
-        ByteStreamGroup validGroup = base.getByteStreamGroup(VALID_COLLECTION_NAME);
+        ByteStreamGroup validGroup = base.getByteStreamGroup(VALID_COLLECTION);
         assertNotNull("Byte Stream Group 'valid' should always exist.", validGroup);
 
         // Run check on good collection, checking the checksum data
@@ -66,7 +66,7 @@ public class BookCollectionCheckerTest extends BaseGuiceTest {
         BookCollection collection = loadValidCollection();
         collection.setChecksum(null);
 
-        ByteStreamGroup validGroup = base.getByteStreamGroup(VALID_COLLECTION_NAME);
+        ByteStreamGroup validGroup = base.getByteStreamGroup(VALID_COLLECTION);
         assertNotNull("Byte Stream Group 'valid' should always exist.", validGroup);
 
         assertFalse("Collection checker should fail.",

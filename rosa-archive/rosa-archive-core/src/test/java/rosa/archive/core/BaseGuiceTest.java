@@ -32,11 +32,11 @@ import com.google.inject.Inject;
 @RunWith(GuiceJUnitRunner.class)
 @GuiceModules({ ArchiveCoreModule.class })
 public abstract class BaseGuiceTest {
-    protected final static String VALID_COLLECTION_NAME = "valid";
-    protected final static String VALID_BOOK_FOLGERSHA2_NAME = "FolgersHa2";
+    protected final static String VALID_COLLECTION = "valid";
+    protected final static String VALID_BOOK_FOLGERSHA2 = "FolgersHa2";
     protected final static String VALID_BOOK_LUDWIGXV7 = "LudwigXV7";
 
-    protected final static String[] VALID_COLLECTION_BOOKS = { VALID_BOOK_LUDWIGXV7, VALID_BOOK_FOLGERSHA2_NAME };
+    protected final static String[] VALID_COLLECTION_BOOKS = { VALID_BOOK_LUDWIGXV7, VALID_BOOK_FOLGERSHA2 };
 
     @Inject
     protected SerializerSet serializers;
@@ -87,18 +87,18 @@ public abstract class BaseGuiceTest {
     }
 
     protected BookCollection loadValidCollection() throws IOException {
-        return loadCollection(store, VALID_COLLECTION_NAME);
+        return loadCollection(store, VALID_COLLECTION);
     }
 
     protected Book loadValidCollectionBook(String name) throws IOException {
-        return loadBook(store, VALID_COLLECTION_NAME, name);
+        return loadBook(store, VALID_COLLECTION, name);
     }
 
     protected Book loadValidFolgersHa2() throws IOException {
-        return loadBook(store, VALID_COLLECTION_NAME, VALID_BOOK_FOLGERSHA2_NAME);
+        return loadBook(store, VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
     }
 
     protected Book loadValidLudwigXV7() throws IOException {
-        return loadBook(store, VALID_COLLECTION_NAME, VALID_BOOK_LUDWIGXV7);
+        return loadBook(store, VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
     }
 }

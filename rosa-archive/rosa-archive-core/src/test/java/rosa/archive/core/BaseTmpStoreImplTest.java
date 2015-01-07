@@ -17,13 +17,15 @@ import rosa.archive.model.BookCollection;
  * Sets up a temp store containing all the data in BaseGuiceTest store.
  */
 
-public abstract class BaseTmpStoreTest extends BaseGuiceTest {
+// TODO Tests should only use ByteSteamGroup and not directly access file system.
+
+public abstract class BaseTmpStoreImplTest extends BaseGuiceTest {
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
 
     protected Path tmpBasePath;
     protected ByteStreamGroup tmpBase;
-    protected Store tmpStore;
+    protected StoreImpl tmpStore;
 
     @Before
     public void setupArchiveStore() throws URISyntaxException, IOException {
@@ -64,10 +66,10 @@ public abstract class BaseTmpStoreTest extends BaseGuiceTest {
     }
 
     protected BookCollection loadTmpValidCollection() throws IOException {
-        return loadCollection(tmpStore, VALID_COLLECTION_NAME);
+        return loadCollection(tmpStore, VALID_COLLECTION);
     }
 
     protected Book loadTmpValidCollectionBook(String name) throws IOException {
-        return loadBook(tmpStore, VALID_COLLECTION_NAME, name);
+        return loadBook(tmpStore, VALID_COLLECTION, name);
     }
 }

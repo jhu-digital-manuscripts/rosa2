@@ -17,7 +17,7 @@ import org.junit.Test;
 /**
  * Test handling of cropped images.
  */
-public class StoreCropTest extends BaseTmpStoreTest {
+public class StoreImplCropTest extends BaseTmpStoreImplTest {
     private Path getCroppedDir(String collection, String book) {
         return getTmpBookPath(collection, book).resolve("cropped");
     }
@@ -29,10 +29,10 @@ public class StoreCropTest extends BaseTmpStoreTest {
      */
     @Test
     public void testDoNotCropExistingImages() throws IOException {
-        Files.createDirectory(getCroppedDir(VALID_COLLECTION_NAME, VALID_BOOK_LUDWIGXV7));
+        Files.createDirectory(getCroppedDir(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7));
 
         List<String> errors = new ArrayList<>();
-        tmpStore.cropImages(VALID_COLLECTION_NAME, VALID_BOOK_LUDWIGXV7, false, errors);
+        tmpStore.cropImages(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, false, errors);
 
         assertEquals(1, errors.size());
         assertTrue(errors.get(0).contains("images already exist for this book"));
@@ -53,14 +53,14 @@ public class StoreCropTest extends BaseTmpStoreTest {
     public void forceImageCropDespiteCropFile() throws IOException {
         // Make sure cropped/ directory does not exist
 
-        Path crop_dir = getCroppedDir(VALID_COLLECTION_NAME, VALID_BOOK_LUDWIGXV7);
+        Path crop_dir = getCroppedDir(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
         assertFalse(Files.exists(crop_dir));
 
         // count the number of original images
-        assertEquals(287, countImages(getTmpBookPath(VALID_COLLECTION_NAME, VALID_BOOK_LUDWIGXV7)));
+        assertEquals(287, countImages(getTmpBookPath(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7)));
         
         List<String> errors = new ArrayList<>();
-        tmpStore.cropImages(VALID_COLLECTION_NAME, VALID_BOOK_LUDWIGXV7, true, errors);
+        tmpStore.cropImages(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, true, errors);
 
         assertEquals(0, errors.size());
         assertTrue(Files.exists(crop_dir));
