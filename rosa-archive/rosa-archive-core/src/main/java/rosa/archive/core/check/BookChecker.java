@@ -22,7 +22,6 @@ import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
-import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookScene;
@@ -85,8 +84,6 @@ public class BookChecker extends AbstractArchiveChecker {
         for (String lang : collection.getAllSupportedLanguages()) {
             //   bookMetadata
             check(book.getBookMetadata(lang), book, bsg, errors, warnings);
-            //   bookDescription (currently not present in model)
-            check(book.getBookDescription(lang), book, bsg, errors, warnings);
             //   permissions
             check(book.getPermission(lang), book, bsg, errors, warnings);
         }
@@ -418,31 +415,6 @@ public class BookChecker extends AbstractArchiveChecker {
         }
 
         attemptToRead(permission, bsg, errors, warnings);
-    }
-
-    /**
-     * Book description is not required.
-     *
-     * @param description book description
-     * @param parent book containing this description
-     * @param bsg object wrapping all InputStreams for the archive
-     * @param errors list of errors
-     * @param warnings list of warnings
-     */
-    private void check(BookDescription description, Book parent, ByteStreamGroup bsg,
-                       List<String> errors, List<String> warnings) {
-        if (description == null) {
-            return;
-        }
-
-        if (StringUtils.isBlank(description.getId())) {
-            errors.add("Book description ID not set. [" + parent.getId() + "]");
-        }
-        if (!isInArchive(description.getId(), parent.getContent())) {
-            errors.add("Description not in archive. [" + description.getId() + "]");
-        }
-
-        attemptToRead(description, bsg, errors, warnings);
     }
 
     /**

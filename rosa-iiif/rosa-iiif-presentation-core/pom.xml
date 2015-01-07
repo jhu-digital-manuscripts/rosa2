@@ -44,11 +44,6 @@
 
         <dependency>
             <groupId>rosa</groupId>
-            <artifactId>rosa-iiif-image-model</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>rosa</groupId>
             <artifactId>rosa-iiif-image-core</artifactId>
         </dependency>
 

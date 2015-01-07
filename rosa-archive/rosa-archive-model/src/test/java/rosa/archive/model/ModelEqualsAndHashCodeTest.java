@@ -9,14 +9,6 @@ import org.junit.Test;
  */
 public class ModelEqualsAndHashCodeTest {
 
-    @Test
-    public void bookDescriptionTest() {
-        EqualsVerifier
-                .forClass(BookDescription.class)
-                .allFieldsShouldBeUsed()
-                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
-                .verify();
-    }
 
     @Test
     public void bookImageTest() {

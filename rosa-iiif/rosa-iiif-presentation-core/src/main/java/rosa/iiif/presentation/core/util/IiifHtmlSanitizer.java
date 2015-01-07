@@ -1,4 +1,4 @@
-package rosa.iiif.presentation.model.util;
+package rosa.iiif.presentation.core.util;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+// TODO doesn't actually work...see test
 public class IiifHtmlSanitizer {
     private Set<String> allowedTags;
     private Map<String, Set<String>> allowedAttributes;
