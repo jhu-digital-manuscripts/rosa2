@@ -45,7 +45,6 @@ public class Book implements HasId, Serializable {
 
     private Map<String, Permission> permissions;
     private Map<String, BookMetadata> metadataMap;
-    private Map<String, BookDescription> descriptionMap;
     private Transcription transcription;
 
     private List<AnnotatedPage> annotatedPages;
@@ -53,7 +52,6 @@ public class Book implements HasId, Serializable {
     public Book() {
         this.permissions = new HashMap<>();
         this.metadataMap = new HashMap<>();
-        this.descriptionMap = new HashMap<>();
         this.annotatedPages = new ArrayList<>();
     }
 
@@ -128,14 +126,6 @@ public class Book implements HasId, Serializable {
 
     public void setBookMetadata(Map<String, BookMetadata> metadataMap) {
         this.metadataMap = metadataMap;
-    }
-
-    public BookDescription getBookDescription(String language) {
-        return descriptionMap.get(language);
-    }
-
-    public void setBookDescription(BookDescription bookDescription, String language) {
-        descriptionMap.put(language, bookDescription);
     }
 
     public SHA1Checksum getChecksum() {
@@ -261,8 +251,6 @@ public class Book implements HasId, Serializable {
         if (cropInfo != null ? !cropInfo.equals(book.cropInfo) : book.cropInfo != null) return false;
         if (croppedImages != null ? !croppedImages.equals(book.croppedImages) : book.croppedImages != null)
             return false;
-        if (descriptionMap != null ? !descriptionMap.equals(book.descriptionMap) : book.descriptionMap != null)
-            return false;
         if (id != null ? !id.equals(book.id) : book.id != null) return false;
         if (illustrationTagging != null ? !illustrationTagging.equals(book.illustrationTagging) : book.illustrationTagging != null)
             return false;
@@ -294,7 +282,6 @@ public class Book implements HasId, Serializable {
         result = 31 * result + (multilangMetadata != null ? multilangMetadata.hashCode() : 0);
         result = 31 * result + (permissions != null ? permissions.hashCode() : 0);
         result = 31 * result + (metadataMap != null ? metadataMap.hashCode() : 0);
-        result = 31 * result + (descriptionMap != null ? descriptionMap.hashCode() : 0);
         result = 31 * result + (transcription != null ? transcription.hashCode() : 0);
         result = 31 * result + (annotatedPages != null ? annotatedPages.hashCode() : 0);
         return result;
@@ -316,7 +303,6 @@ public class Book implements HasId, Serializable {
                 ", multilangMetadata=" + multilangMetadata +
                 ", permissions=" + permissions +
                 ", metadataMap=" + metadataMap +
-                ", descriptionMap=" + descriptionMap +
                 ", transcription=" + transcription +
                 ", annotatedPages=" + annotatedPages +
                 '}';

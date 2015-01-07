@@ -1,6 +1,8 @@
-package rosa.iiif.presentation.model.util;
+package rosa.iiif.presentation.core.util;
 
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class IiifHtmlSanitizerTest {
 
@@ -30,8 +32,9 @@ public class IiifHtmlSanitizerTest {
                 "&lt;!-- Comment should be removed! --&gt;" +
                 "&lt;strong&gt;This should not be here, apparently.&lt;/strong&gt;" +
                 "</p>";
-//        System.out.println(safeHtml);
-//        System.out.println(expectedHtml);
+        System.out.println(safeHtml);
+        System.out.println(expectedHtml);
+//        assertEquals(expectedHtml, safeHtml);
     }
 
 }
