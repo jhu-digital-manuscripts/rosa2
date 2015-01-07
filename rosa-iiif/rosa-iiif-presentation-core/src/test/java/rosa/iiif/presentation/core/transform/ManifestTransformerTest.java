@@ -23,6 +23,7 @@ import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.meta.BiblioData;
 import rosa.archive.model.meta.MultilangMetadata;
+import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Sequence;
@@ -45,6 +46,11 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 public class ManifestTransformerTest {
+    private static final String ENDPOINT_SCHEME = "http";
+    private static final String ENDPOINT_HOST = "example.org";
+    private static final String ENDPOINT_PREFIX = "/iiif";
+    private static final int ENDPOINT_PORT = -1;
+
     private static final String[] imageNames = {
             "BOOK.001r.tif", "BOOK.001v.tif", "BOOK.002r.tif", "BOOK.002v.tif",
             "BOOK.003r.tif", "BOOK.003v.tif", "BOOK.004r.tif", "BOOK.004v.tif",
@@ -56,13 +62,17 @@ public class ManifestTransformerTest {
 
     @Before
     public void setup() {
-        transformer = new ManifestTransformer();
+        transformer = new ManifestTransformer(
+                new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT),
+                new rosa.iiif.image.core.IIIFRequestFormatter(
+                        ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX)
+        );
     }
 
     @Test
     public void transformerTest() {
         Manifest manifest = transformer.transform(createBookCollection(), createBook());
-        assertNotNull("No manifest!", manifest);
+        checkId(manifest.getId());
 
         assertNotNull("List of sequences missing.", manifest.getSequences());
         assertEquals("Wrong number of sequences.", 1, manifest.getSequences().size());
@@ -71,6 +81,7 @@ public class ManifestTransformerTest {
         // Test sequence
         Sequence seq = manifest.getSequences().get(manifest.getDefaultSequence());
         assertNotNull("No default sequence in Manifest.", seq);
+        checkId(seq.getId());
         assertTrue(seq.getStartCanvas() != -1);
         assertEquals("Incorrect viewing direction.",
                 ViewingDirection.LEFT_TO_RIGHT, seq.getViewingDirection());
@@ -82,13 +93,14 @@ public class ManifestTransformerTest {
         assertTrue("Wrong number of canvases.", canvases.size() == 16);
 
         for (Canvas c : canvases) {
-            assertNotNull("Canvas ID not set.", c.getId());
+            checkId(c.getId());
 
             assertNotNull("List of image annotations missing.", c.getImages());
             assertEquals("Too many image annotations.", 1, c.getImages().size());
 
             Annotation imageAnno = c.getImages().get(0);
             assertNotNull("Image annotation missing", imageAnno);
+            checkId(imageAnno.getId());
             assertEquals("Incorrect motivation.", "sc:painting", imageAnno.getMotivation());
             assertEquals("Incorrect image width.", 1000, imageAnno.getWidth());
             assertEquals("Incorrect image height.", 1500, imageAnno.getHeight());
@@ -110,6 +122,15 @@ public class ManifestTransformerTest {
                     c.getOtherContent()
             );
             assertEquals("Wrong number of annotations from Annotated Pages.", 180, c.getOtherContent().size());
+            for (Annotation a : c.getOtherContent()) {
+                assertNotNull("AoR annotation is missing.", a);
+                checkId(a.getId());
+
+                assertEquals("Incorrect motivation.", "sc:painting", a.getMotivation());
+                assertEquals("Transcription should have no width.", -1, a.getWidth());
+                assertEquals("Transcription should have no height.", -1, a.getHeight());
+                assertTrue("Transcription target should be specific resource.", a.getDefaultTarget().isSpecificResource());
+            }
         }
 
         assertNotNull("Metadata missing", manifest.getMetadata());
@@ -165,6 +186,18 @@ public class ManifestTransformerTest {
             assertNotNull(s);
             assertTrue(s instanceof FragmentSelector);
         }
+    }
+
+    /**
+     * Make sure this ID is present, and starts with a well constructed IIIF formatted
+     * URL prefix
+     *
+     * @param id ID of a IIIF presentation object
+     */
+    private void checkId(String id) {
+        assertNotNull("ID is missing.", id);
+        assertTrue("ID has bad format.",
+                id.startsWith(ENDPOINT_SCHEME + "://" + ENDPOINT_HOST + ENDPOINT_PREFIX + "/"));
     }
 
     private BookCollection createBookCollection() {

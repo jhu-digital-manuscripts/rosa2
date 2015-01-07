@@ -10,10 +10,13 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
+import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Manifest;
+import rosa.iiif.presentation.model.PresentationRequest;
+import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
@@ -29,12 +32,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// TODO All IDs should be resolvable IIIF resource IDs!
 // TODO handle HTML sanitization!
 public class ManifestTransformer {
     private static final String PAGE_REGEX = "\\d{1,3}(r|v|R|V)";
+    private static int annotation_counter = 0;
 
-    public ManifestTransformer() {}
+    private IIIFRequestFormatter requestFormatter;
+    private rosa.iiif.image.core.IIIFRequestFormatter imageFormatter;
+
+    // TODO inject with GUICE?
+    public ManifestTransformer(IIIFRequestFormatter requestFormatter,
+                               rosa.iiif.image.core.IIIFRequestFormatter imageFormatter) {
+        this.requestFormatter = requestFormatter;
+        this.imageFormatter = imageFormatter;
+    }
 
     /**
      *
@@ -57,16 +68,17 @@ public class ManifestTransformer {
     private Manifest buildManifest(BookCollection collection, Book book) {
         Manifest manifest = new Manifest();
 
-        manifest.setId(book.getId());
+        manifest.setId(urlId(collection.getId(), book.getId(), null, PresentationRequestType.MANIFEST));
         manifest.setType(IIIFNames.SC_MANIFEST);
         manifest.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
         manifest.setSequences(
-                Arrays.asList(buildSequence(book, book.getImages(), collection.getAllSupportedLanguages()))
+                Arrays.asList(buildSequence(collection, book, book.getImages()))
         );
         manifest.setDefaultSequence(0);
 
         for (String lang : collection.getAllSupportedLanguages()) {
             manifest.addAttribution(book.getPermission(lang).getPermission(), lang);
+            manifest.setLabel(book.getId(), lang);
         }
         manifest.setViewingHint(ViewingHint.PAGED);
         transformMetadata(book, collection.getAllSupportedLanguages(), manifest);
@@ -144,18 +156,19 @@ public class ManifestTransformer {
      * @param imageList image list
      * @return sequence
      */
-    private Sequence buildSequence(Book book, ImageList imageList, String[] langs) {
+    private Sequence buildSequence(BookCollection collection, Book book, ImageList imageList) {
         if (imageList == null) {
             return null;
         }
+        String label = "reading-order";
 
         Sequence sequence = new Sequence();
-        sequence.setId(imageList.getId());
+        sequence.setId(urlId(collection.getId(), book.getId(), label, PresentationRequestType.SEQUENCE));
         sequence.setType(IIIFNames.SC_SEQUENCE);
         sequence.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
 
-        for (String lang : langs) {
-            sequence.setLabel("Default", lang);
+        for (String lang : collection.getAllSupportedLanguages()) {
+            sequence.setLabel(label, lang);
         }
 
 
@@ -163,7 +176,7 @@ public class ManifestTransformer {
         int count = 0;
         boolean hasNotBeenSet = true;
         for (BookImage image : imageList) {
-            canvases.add(buildCanvas(book, image));
+            canvases.add(buildCanvas(collection, book, image));
 
             // Set the starting point in the sequence to the first page
             // of printed material
@@ -186,14 +199,16 @@ public class ManifestTransformer {
      * @param image image object
      * @return canvas
      */
-    private Canvas buildCanvas(Book book, BookImage image) {
+    private Canvas buildCanvas(BookCollection collection, Book book, BookImage image) {
         if (image == null) {
             return null;
         }
         Canvas canvas = new Canvas();
-        canvas.setId("URL");
+        canvas.setId(urlId(collection.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
         canvas.setType(IIIFNames.SC_CANVAS);
-        canvas.setLabel(image.getPage(), "en");
+        for (String lang : collection.getAllSupportedLanguages()) {
+            canvas.setLabel(image.getPage(), lang);
+        }
 
         // Images of bindings or misc images will be displayed as individuals
         // instead of openings
@@ -208,14 +223,12 @@ public class ManifestTransformer {
         boolean tooSmall = image.getWidth() < 1200 || image.getHeight() < 1200;
         canvas.setWidth(tooSmall ? image.getWidth() * 2 : image.getWidth());
         canvas.setHeight(tooSmall ? image.getHeight() * 2 : image.getHeight());
-        // Set images to be the single image
-        canvas.setImages(Arrays.asList(imageResource(image, canvas.getId())));
 
-        // Set default target of this image to this Canvas
-        canvas.setImages(Arrays.asList(imageResource(image, canvas.getId())));
+        // Set images to be the single image
+        canvas.setImages(Arrays.asList(imageResource(collection, book.getId(), image, canvas.getId())));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
-        List<Annotation> aorAnnotations = annotationsFromAoR(canvas,
+        List<Annotation> aorAnnotations = annotationsFromAoR(collection, book.getId(), canvas,
                 book.getAnnotationPage(image.getPage()));
         canvas.setOtherContent(aorAnnotations);
         // TODO add rosa transcriptions as annotations!
@@ -230,22 +243,26 @@ public class ManifestTransformer {
      * @param canvasId ID of the canvas that the image belongs to
      * @return archive image as an annotation
      */
-    private Annotation imageResource(BookImage image, String canvasId) {
+    private Annotation imageResource(BookCollection collection, String book, BookImage image, String canvasId) {
         if (image == null) {
             return null;
         }
 
         Annotation ann = new Annotation();
 
-        ann.setId(image.getId());
+        ann.setId(urlId(collection.getId(), book, image.getPage(), PresentationRequestType.ANNOTATION));
         ann.setWidth(image.getWidth());
         ann.setHeight(image.getHeight());
         ann.setMotivation(IIIFNames.SC_PAINTING);
         ann.setType(IIIFNames.OA_ANNOTATION);
 
+        for (String lang : collection.getAllSupportedLanguages()) {
+            ann.setLabel(image.getPage(), lang);
+        }
+
         IIIFImageService imageService = new IIIFImageService();
         AnnotationSource source = new AnnotationSource(
-                "URI", "dcterms:Image", "EX: image/tiff"
+                imageFormatter.format(image.getId()), "dcterms:Image", "EX: image/tiff"
         );
         source.setService(imageService);
 
@@ -266,29 +283,30 @@ public class ManifestTransformer {
      * @param aPage the annotated page containing the data
      * @return annotated data as annotations
      */
-    private List<Annotation> annotationsFromAoR(Canvas canvas, AnnotatedPage aPage) {
+    private List<Annotation> annotationsFromAoR(BookCollection collection, String book, Canvas canvas, AnnotatedPage aPage) {
         if (aPage == null) {
             return null;
         }
+        annotation_counter = 0;
 
         List<Annotation> annotations = new ArrayList<>();
         for (Marginalia marg : aPage.getMarginalia()) {
-            annotations.addAll(adaptMarginalia(marg, canvas));
+            annotations.addAll(adaptMarginalia(collection, book, marg, canvas));
         }
         for (rosa.archive.model.aor.Annotation mark : aPage.getMarks()) {
-            annotations.add(adaptAnnotation(mark, canvas));
+            annotations.add(adaptAnnotation(collection, book, mark, canvas));
         }
         for (rosa.archive.model.aor.Annotation symbol : aPage.getSymbols()) {
-            annotations.add(adaptAnnotation(symbol, canvas));
+            annotations.add(adaptAnnotation(collection, book, symbol, canvas));
         }
         for (rosa.archive.model.aor.Annotation underline : aPage.getUnderlines()) {
-            annotations.add(adaptAnnotation(underline, canvas));
+            annotations.add(adaptAnnotation(collection, book, underline, canvas));
         }
         for (rosa.archive.model.aor.Annotation numeral : aPage.getNumerals()) {
-            annotations.add(adaptAnnotation(numeral, canvas));
+            annotations.add(adaptAnnotation(collection, book, numeral, canvas));
         }
         for (rosa.archive.model.aor.Annotation errata : aPage.getErrata()) {
-            annotations.add(adaptAnnotation(errata, canvas));
+            annotations.add(adaptAnnotation(collection, book, errata, canvas));
         }
 
         return annotations;
@@ -301,17 +319,24 @@ public class ManifestTransformer {
      * @param canvas the canvas
      * @return a IIIF presentation API annotation
      */
-    private Annotation adaptAnnotation(rosa.archive.model.aor.Annotation anno, Canvas canvas) {
+    private Annotation adaptAnnotation(BookCollection collection, String book, rosa.archive.model.aor.Annotation anno,
+                                       Canvas canvas) {
         Annotation a = new Annotation();
+        String annoName = getCanvasLabel(canvas, collection.getAllSupportedLanguages())
+                + "_" + annotation_counter++;
 
-        a.setId("ID");
+        a.setId(urlId(collection.getId(), book, annoName, PresentationRequestType.ANNOTATION));
         a.setType(IIIFNames.OA_ANNOTATION);
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.setDefaultSource(new AnnotationSource(
                 "URI", IIIFNames.DC_TEXT, "text/html", anno.toPrettyString(), "en"
-        )); // TODO URL
+        )); // TODO ask about this, we might not need to make these resolvable
 
         a.setDefaultTarget(locationOnCanvas(canvas, anno.getLocation()));
+
+        for (String lang : collection.getAllSupportedLanguages()) {
+            a.setLabel(annoName, lang);
+        }
 
         return a;
     }
@@ -328,18 +353,20 @@ public class ManifestTransformer {
      * @param canvas the canvas
      * @return list of annotations
      */
-    private List<Annotation> adaptMarginalia(Marginalia marg, Canvas canvas) {
+    private List<Annotation> adaptMarginalia(BookCollection collection, String book, Marginalia marg, Canvas canvas) {
         List<Annotation> annotations = new ArrayList<>();
         for (MarginaliaLanguage lang : marg.getLanguages()) {
             for (Position pos : lang.getPositions()) {
                 Annotation anno = new Annotation();
+                String label = getCanvasLabel(canvas, collection.getAllSupportedLanguages())
+                        + "_" + annotation_counter++;
 
-                anno.setId("ID");
+                anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
                 anno.setMotivation(IIIFNames.SC_PAINTING);
                 anno.setDefaultSource(new AnnotationSource(
                         "URI", IIIFNames.DC_TEXT, "text/html",
                         pos.getTexts().toString(), lang.getLang()
-                )); // TODO URL
+                )); // TODO ask about this, we might not need to make these resolvable
                 anno.setDefaultTarget(locationOnCanvas(canvas, pos.getPlace()));
 
                 annotations.add(anno);
@@ -396,6 +423,31 @@ public class ManifestTransformer {
         target.setSelector(new FragmentSelector(x, y, w, h));
 
         return target;
+    }
+
+    /**
+     * @param canvas the canvas
+     * @param langs possible languages
+     * @return the first label encountered, or an null if list of languages is empty
+     */
+    private String getCanvasLabel(Canvas canvas, String[] langs) {
+        if (langs.length > 0) {
+            return canvas.getLabel(langs[0]);
+        }
+        return null;
+    }
+
+    private String urlId(String collection, String book, String name, PresentationRequestType type) {
+        return requestFormatter.format(presentationRequest(collection, book, name, type));
+    }
+
+    private String presentationId(String collection, String book) {
+        return collection + "." + book;
+    }
+
+    private PresentationRequest presentationRequest(String collection, String book, String name,
+                                                    PresentationRequestType type) {
+        return new PresentationRequest(presentationId(collection, book), name, type);
     }
 
 }

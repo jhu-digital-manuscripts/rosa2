@@ -5,6 +5,14 @@ public class PresentationRequest {
     private String id;
     private String name;
 
+    public PresentationRequest() {}
+
+    public PresentationRequest(String id, String name, PresentationRequestType type) {
+        this.type = type;
+        this.id = id;
+        this.name = name;
+    }
+
     public PresentationRequestType getType() {
         return type;
     }

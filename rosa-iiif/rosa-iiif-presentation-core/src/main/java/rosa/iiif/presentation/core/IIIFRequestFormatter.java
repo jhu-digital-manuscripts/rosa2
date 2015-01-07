@@ -5,8 +5,8 @@ import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 
 /**
- * RECOMMENDED: {scheme}://{host}{/prefix}/{collection/book
- * identifier}/{object}/{object identifier}
+ * RECOMMENDED: {scheme}://{host}{/prefix}/{collection.book}/{object}/{object identifier}
+ *              {scheme}://{host}{/prefix}/{id}             /{type}  /{name}
  */
 public class IIIFRequestFormatter {
 
@@ -15,6 +15,15 @@ public class IIIFRequestFormatter {
     private final String prefix;
     private final int port;
 
+    /**
+     * @param scheme
+     *            http or https
+     * @param host
+     * @param port
+     *            -1 for default port
+     * @param prefix
+     *            must be encoded, start with '/', and not end with '/'.
+     */
     public IIIFRequestFormatter(String scheme, String host, String prefix, int port) {
         this.scheme = scheme;
         this.host = host;
@@ -35,7 +44,7 @@ public class IIIFRequestFormatter {
         } else if (type == PresentationRequestType.MANIFEST) {
             return base() + UriUtil.encodePathSegment(req.getId()) + "/" + UriUtil.encodePathSegment(type.getKeyword());
         } else {
-            return base() + UriUtil.encodePathSegment(req.getId()) + "/" + UriUtil.encodePathSegment(req.getName())
+            return base() + UriUtil.encodePathSegment(req.getId()) + "/" + UriUtil.encodePathSegment(type.getKeyword())
                     + "/" + UriUtil.encodePathSegment(req.getName());
         }
     }
