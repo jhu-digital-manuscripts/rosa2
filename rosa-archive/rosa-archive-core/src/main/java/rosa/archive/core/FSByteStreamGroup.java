@@ -22,7 +22,7 @@ public class FSByteStreamGroup implements ByteStreamGroup {
         this(Paths.get(base));
     }
 
-    FSByteStreamGroup(Path base) {
+    public FSByteStreamGroup(Path base) {
         this.base = base;
     }
 
