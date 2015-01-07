@@ -18,11 +18,11 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.SHA1Checksum;
 
 /**
- * Check creating and updating checksums.
- */
+* Check creating and updating checksums.
+*/
 @Ignore
 public class StoreUpdateChecksumTest extends BaseStoreTest {
-    
+
     /**
      * Check creation of new checksums for a collection.
      */
@@ -31,7 +31,7 @@ public class StoreUpdateChecksumTest extends BaseStoreTest {
         List<String> errors = new ArrayList<>();
 
         // Grab existing checksums
-        SHA1Checksum expected = testCollection.getChecksums();
+        SHA1Checksum expected = testCollection.getChecksum();
         assertNotNull(expected);
         assertFalse(expected.checksums().isEmpty());
 
@@ -45,7 +45,7 @@ public class StoreUpdateChecksumTest extends BaseStoreTest {
 
         BookCollection col = testStore.loadBookCollection(COLLECTION_NAME, errors);
         assertEquals(0, errors.size());
-        assertEquals(expected, col.getChecksums());
+        assertEquals(expected, col.getChecksum());
     }
 
     /**
@@ -61,7 +61,7 @@ public class StoreUpdateChecksumTest extends BaseStoreTest {
         assertFalse(expected.checksums().isEmpty());
 
         assertNotNull(expected.getId());
-        
+
         // Delete checksums file
         removeBookFile(expected.getId());
 
@@ -72,7 +72,7 @@ public class StoreUpdateChecksumTest extends BaseStoreTest {
 
         SHA1Checksum test = testStore.loadBook(COLLECTION_NAME, BOOK_NAME, errors).getChecksum();
         assertEquals(0, errors.size());
-        
+
         assertEquals(expected.getAllIds().size(), test.getAllIds().size());
         assertEquals(expected, test);
     }
@@ -84,26 +84,26 @@ public class StoreUpdateChecksumTest extends BaseStoreTest {
         SHA1Checksum expected = testBook.getChecksum();
         assertNotNull(expected);
         assertTrue(expected.checksums().size() > 0);
-        
+
         // Add an incorrect entry and write it out
         SHA1Checksum wrong = new SHA1Checksum();
         wrong.checksums().putAll(expected.checksums());
-        
-        String wrong_entry = wrong.checksums().keySet().iterator().next(); 
+
+        String wrong_entry = wrong.checksums().keySet().iterator().next();
         wrong.checksums().put(wrong_entry, "wrong");
-        
+
         SHA1ChecksumSerializer s = new SHA1ChecksumSerializer();
-        
-        try (OutputStream os = Files.newOutputStream(testBookPath.resolve(expected.getId()))) {        
+
+        try (OutputStream os = Files.newOutputStream(testBookPath.resolve(expected.getId()))) {
             s.write(wrong, os);
         }
-                
+
         assertTrue(testStore.updateChecksum(COLLECTION_NAME, BOOK_NAME, false, errors));
         assertEquals(0, errors.size());
 
         SHA1Checksum test = testStore.loadBook(COLLECTION_NAME, BOOK_NAME, errors).getChecksum();
         assertEquals(0, errors.size());
-        
+
         assertEquals(expected.checksums().get(wrong_entry), test.checksums().get(wrong_entry));
         assertEquals(expected, test);
     }

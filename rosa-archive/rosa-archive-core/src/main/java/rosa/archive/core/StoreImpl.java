@@ -82,6 +82,7 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     @Override
     public BookCollection loadBookCollection(String collectionId, List<String> errors) throws IOException {
+        errors = nonNullList(errors);
         ByteStreamGroup collectionGroup = base.getByteStreamGroup(collectionId);
         BookCollection collection = new BookCollection();
 
@@ -91,7 +92,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         collection.setIllustrationTitles(loadItem(ILLUSTRATION_TITLES, collectionGroup, IllustrationTitles.class,
                 errors));
         collection.setNarrativeSections(loadItem(NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class, errors));
-        collection.setChecksums(loadItem(collectionId + SHA1SUM, collectionGroup, SHA1Checksum.class, errors));
+        collection.setChecksum(loadItem(collectionId + SHA1SUM, collectionGroup, SHA1Checksum.class, errors));
 
         // Languages from configuration.
         Properties props = new Properties();
@@ -108,6 +109,7 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     @Override
     public Book loadBook(BookCollection collection, String bookId, List<String> errors) throws IOException {
+        errors = nonNullList(errors);
         ByteStreamGroup byteStreams = base.getByteStreamGroup(collection.getId());
 
         if (!byteStreams.hasByteStreamGroup(bookId)) {
@@ -123,7 +125,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         book.setCroppedImages(loadItem(bookId + IMAGES_CROP, bookStreams, ImageList.class, errors));
         book.setCropInfo(loadItem(bookId + CROP, bookStreams, CropInfo.class, errors));
         book.setBookStructure(loadItem(bookId + REDUCED_TAGGING, bookStreams, BookStructure.class, errors));
-        book.setSHA1Checksum(loadItem(bookId + SHA1SUM, bookStreams, SHA1Checksum.class, errors));
+        book.setChecksum(loadItem(bookId + SHA1SUM, bookStreams, SHA1Checksum.class, errors));
         book.setIllustrationTagging(loadItem(bookId + IMAGE_TAGGING, bookStreams, IllustrationTagging.class, errors));
         book.setManualNarrativeTagging(loadItem(bookId + NARRATIVE_TAGGING_MAN, bookStreams, NarrativeTagging.class,
                 errors));
@@ -161,6 +163,8 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public boolean check(BookCollection collection, Book book, boolean checkBits, List<String> errors,
             List<String> warnings) {
+        errors = nonNullList(errors);
+        warnings = nonNullList(warnings);
         if (base.hasByteStreamGroup(collection.getId())) {
             ByteStreamGroup collectionGroup = base.getByteStreamGroup(collection.getId());
             if (collectionGroup.hasByteStreamGroup(book.getId())) {
@@ -174,20 +178,24 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     @Override
     public boolean check(BookCollection collection, boolean checkBits, List<String> errors, List<String> warnings) {
+        errors = nonNullList(errors);
+        warnings = nonNullList(warnings);
         return collectionChecker.checkContent(collection, base.getByteStreamGroup(collection.getId()), checkBits,
                 errors, warnings);
     }
 
     @Override
     public boolean updateChecksum(String collection, boolean force, List<String> errors) throws IOException {
+        errors = nonNullList(errors);
         BookCollection col = loadBookCollection(collection, errors);
         return col != null && updateChecksum(col, force, errors);
     }
 
     @Override
     public boolean updateChecksum(BookCollection collection, boolean force, List<String> errors) throws IOException {
+        errors = nonNullList(errors);
 
-        SHA1Checksum checksums = collection.getChecksums();
+        SHA1Checksum checksums = collection.getChecksum();
         // If SHA1SUM does not exist, create it!
         if (checksums == null) {
             checksums = new SHA1Checksum();
@@ -202,6 +210,7 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public boolean updateChecksum(String collection, String book, boolean force, List<String> errors)
             throws IOException {
+        errors = nonNullList(errors);
         BookCollection col = loadBookCollection(collection, errors);
         Book b = loadBook(col, book, errors);
         return col != null && b != null && updateChecksum(col, b, force, errors);
@@ -210,6 +219,7 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public void generateAndWriteImageList(String collection, String book, boolean force, List<String> errors)
             throws IOException {
+        errors = nonNullList(errors);
 
         if (!base.hasByteStreamGroup(collection)) {
             errors.add("Collection not found in directory. [" + base.id() + "]");
@@ -237,8 +247,9 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public boolean updateChecksum(BookCollection collection, Book book, boolean force, List<String> errors)
             throws IOException {
+        errors = nonNullList(errors);
 
-        SHA1Checksum checksums = book.getSHA1Checksum();
+        SHA1Checksum checksums = book.getChecksum();
         if (checksums == null) {
             checksums = new SHA1Checksum();
             checksums.setId(book.getId() + SHA1SUM);
@@ -256,6 +267,8 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public void generateAndWriteCropList(String collection, String book, boolean force, List<String> errors)
             throws IOException {
+        errors = nonNullList(errors);
+
         if (!base.hasByteStreamGroup(collection)) {
             errors.add("Collection not found in directory. [" + base.id() + "]");
             return;
@@ -284,6 +297,8 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     @Override
     public void cropImages(String collection, String book, boolean force, List<String> errors) throws IOException {
+        errors = nonNullList(errors);
+
         if (!base.hasByteStreamGroup(collection)) {
             errors.add("Collection not found in directory. [" + base.id() + "]");
             return;
@@ -650,10 +665,6 @@ public class StoreImpl implements Store, ArchiveConstants {
      * 
      * @param checksums
      *            container holding checksum information
-     * @param bsg
-     *            byte stream group
-     * @param force
-     *            overwrite all checksum values?
      * @param errors
      *            list of errors found while calculating checksums
      * @return if checksums were updated and written successfully
@@ -742,5 +753,16 @@ public class StoreImpl implements Store, ArchiveConstants {
         e.printStackTrace(new PrintStream(out));
 
         return out.toString();
+    }
+
+    /**
+     * @param in input list
+     * @return a new list if input is NULL, the input list otherwise
+     */
+    private List<String> nonNullList(List<String> in) {
+        if (in == null) {
+            return new ArrayList<>();
+        }
+        return in;
     }
 }

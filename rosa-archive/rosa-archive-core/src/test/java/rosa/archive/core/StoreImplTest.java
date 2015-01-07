@@ -86,7 +86,7 @@ public class StoreImplTest extends BaseGuiceTest {
         assertNotNull(book.getBookMetadata("fr"));
         assertNotNull(book.getContent());
         assertNotNull(book.getCropInfo());
-        assertNotNull(book.getSHA1Checksum());
+        assertNotNull(book.getChecksum());
         assertNotNull(book.getTranscription());
         assertNotNull(book.getPermission("en"));
         assertNotNull(book.getPermission("fr"));

@@ -105,11 +105,11 @@ public class BookCollection implements HasId, Serializable {
         return false;
     }
 
-    public SHA1Checksum getChecksums() {
+    public SHA1Checksum getChecksum() {
         return checksums;
     }
 
-    public void setChecksums(SHA1Checksum checksums) {
+    public void setChecksum(SHA1Checksum checksums) {
         this.checksums = checksums;
     }
 

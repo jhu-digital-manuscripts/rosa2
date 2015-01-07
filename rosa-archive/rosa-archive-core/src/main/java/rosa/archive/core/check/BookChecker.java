@@ -72,7 +72,7 @@ public class BookChecker extends AbstractArchiveChecker {
 
         // Check the following items:
         //   checksumInfo
-        check(book.getSHA1Checksum(), book, bsg, errors, warnings);
+        check(book.getChecksum(), book, bsg, errors, warnings);
         //   list of images is required
         check(book.getImages(), book, bsg, errors, warnings);
         //   but list of cropped images is not required
@@ -169,13 +169,13 @@ public class BookChecker extends AbstractArchiveChecker {
      * @return list of errors found while performing check
      */
     protected List<String> checkAllBits(ByteStreamGroup bsg, Book book, List<String> errors, List<String> warnings) {
-        if (book.getSHA1Checksum() == null) {
+        if (book.getChecksum() == null) {
             return Arrays.asList(
                     ("Book [" + book.getId() + "] has no stored SHA1SUM. "
                             + "Cannot check bit integrity.")
             );
         }
-        return checkStreams(bsg, book.getSHA1Checksum().getId(), errors, warnings);
+        return checkStreams(bsg, book.getChecksum().getId(), errors, warnings);
     }
 
     /**

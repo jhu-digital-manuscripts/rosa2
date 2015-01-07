@@ -59,7 +59,7 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
         check(collection, bsg, errors, warnings);
 
         // Checksum data
-        if (collection.getChecksums() == null) {
+        if (collection.getChecksum() == null) {
             errors.add("Checksum file is missing for collection. [" + collection.getId() + "]");
         } else {
             // Check bit integrity (required)
