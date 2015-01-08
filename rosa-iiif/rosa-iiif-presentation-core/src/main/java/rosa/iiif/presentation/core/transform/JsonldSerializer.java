@@ -2,7 +2,6 @@ package rosa.iiif.presentation.core.transform;
 
 import org.json.JSONException;
 import org.json.JSONWriter;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFImageService;
@@ -30,11 +29,7 @@ import java.util.List;
 public class JsonldSerializer implements PresentationSerializer {
     private static final String IIIF_PRESENTATION_CONTEXT = "http://iiif.io/api/presentation/2/context.json";
 
-    private final IIIFRequestFormatter presentationUrlFormatter;
-
-    public JsonldSerializer(IIIFRequestFormatter presentationUrlFormatter) {
-        this.presentationUrlFormatter = presentationUrlFormatter;
-    }
+    public JsonldSerializer() {}
 
     @Override
     public void write(Collection collection, OutputStream os) throws JSONException, IOException {
@@ -300,6 +295,16 @@ public class JsonldSerializer implements PresentationSerializer {
         jWriter.endObject();
     }
 
+    /**
+     * An annotation consists of a resource, or content source, and a target,
+     * with which the source content is associated. In this resource, there can be
+     * multiple content sources, in which case, the annotation has a choice of
+     * which source to use.
+     *
+     * @param annotation a IIIF presentation annotation
+     * @param jWriter JSON-LD writer
+     * @throws JSONException
+     */
     private void writeResource(Annotation annotation, JSONWriter jWriter) throws JSONException {
         jWriter.object();
         if (annotation.getSources().size() == 1) {
@@ -327,6 +332,16 @@ public class JsonldSerializer implements PresentationSerializer {
         jWriter.endObject();
     }
 
+    /**
+     * Write an annotation source as JSON-LD.
+     *
+     * @param source content source for an annotation
+     * @param label label to give the source
+     * @param width width, if source is an image
+     * @param height height, if source is an image
+     * @param jWriter JSON-LD writer
+     * @throws JSONException
+     */
     private void writeSource(AnnotationSource source, String label, int width,
                              int height, JSONWriter jWriter) throws JSONException {
         writeIfNotNull("label", label, jWriter);

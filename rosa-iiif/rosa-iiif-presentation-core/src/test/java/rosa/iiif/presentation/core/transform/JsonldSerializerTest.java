@@ -28,19 +28,13 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 
 public class JsonldSerializerTest {
-    private static final String IIIF_CONTEXT_URL = "http://iiif.io/api/image/2/context.json";
-    private static final String ENDPOINT_SCHEME = "http";
-    private static final String ENDPOINT_HOST = "example.org";
-    private static final String ENDPOINT_PREFIX = "iiif";
-    private static final int ENDPOINT_PORT = -1;
+    private static final String IIIF_CONTEXT_URL = "http://iiif.io/api/presentation/2/context.json";
 
     private JsonldSerializer serializer;
 
     @Before
     public void setup() {
-        serializer = new JsonldSerializer(
-                new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT)
-        );
+        serializer = new JsonldSerializer();
     }
 
     @Test
@@ -54,7 +48,7 @@ public class JsonldSerializerTest {
         assertNotNull(json);
         assertFalse(json.isEmpty());
 
-        System.out.println(json);
+//        System.out.println(json);
     }
 
     @Test

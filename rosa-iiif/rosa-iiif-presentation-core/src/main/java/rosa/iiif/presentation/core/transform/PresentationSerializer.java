@@ -15,66 +15,73 @@ import java.io.OutputStream;
 public interface PresentationSerializer {
 
     /**
+     * Write a IIIF presentation collection object to an output stream.
      *
      * @param collection IIIF presentation collection object
      * @param out output stream to write to
      * @throws JSONException
      * @throws IOException
      */
-    void write(Collection collection, OutputStream out) throws JSONException, IOException;
+    void write(Collection collection, OutputStream out) throws IOException;
 
     /**
+     * Write a IIIF presentation manifest to an output stream.
      *
      * @param manifest IIIF presentation manifest object
      * @param out output stream to write to
      * @throws JSONException
      * @throws IOException
      */
-    void write(Manifest manifest, OutputStream out) throws JSONException, IOException;
+    void write(Manifest manifest, OutputStream out) throws IOException;
 
     /**
+     * Write a IIIF presentation sequence to an output stream.
      *
      * @param sequence IIIF presentation sequence object
      * @param out output stream to write to
      * @throws JSONException
      * @throws IOException
      */
-    void write(Sequence sequence, OutputStream out) throws JSONException, IOException;
+    void write(Sequence sequence, OutputStream out) throws IOException;
 
     /**
+     * Write a IIIF presentation canvas to an output stream.
      *
      * @param canvas IIIF presentation canvas object
      * @param out output stream to write to
      * @throws JSONException
      * @throws IOException
      */
-    void write(Canvas canvas, OutputStream out) throws JSONException, IOException;
+    void write(Canvas canvas, OutputStream out) throws IOException;
 
     /**
+     * Write a IIIF presentation annotation to an output stream.
      *
      * @param annotation IIIF presentation annotation object
      * @param out output stream to write to
      * @throws JSONException
      * @throws IOException
      */
-    void write(Annotation annotation, OutputStream out) throws JSONException, IOException;
+    void write(Annotation annotation, OutputStream out) throws IOException;
 
     /**
+     * Write a IIIF presentation layer to an output stream.
      *
      * @param layer IIIF presentation layer object
      * @param out output stream to write to
      * @throws JSONException
      * @throws IOException
      */
-    void write(Layer layer, OutputStream out)  throws JSONException, IOException;
+    void write(Layer layer, OutputStream out)  throws IOException;
 
     /**
+     * Write a IIIF presentation range to an output stream.
      *
      * @param range IIIF presentation range object
      * @param out output stream to write to
      * @throws JSONException
      * @throws IOException
      */
-    void write(Range range, OutputStream out)  throws JSONException, IOException;
+    void write(Range range, OutputStream out)  throws IOException;
 
 }
