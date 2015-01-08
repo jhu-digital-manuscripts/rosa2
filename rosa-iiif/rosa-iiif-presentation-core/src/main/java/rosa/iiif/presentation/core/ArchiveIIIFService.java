@@ -8,6 +8,9 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
+import rosa.iiif.presentation.core.transform.JsonldSerializer;
+import rosa.iiif.presentation.core.transform.PresentationTransformer;
+import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
 
 /**
@@ -20,9 +23,15 @@ import rosa.iiif.presentation.model.PresentationRequest;
  */
 public class ArchiveIIIFService implements IIIFService {
     private final Store store;
+    private final JsonldSerializer jsonld_serializer;
+    private final PresentationTransformer transformer;
 
-    public ArchiveIIIFService(Store store) {
+    // TODO Caches for intermediate objects and/or whole serialization
+    
+    public ArchiveIIIFService(Store store, JsonldSerializer jsonld_serializer, PresentationTransformer transformer) {
         this.store = store;
+        this.jsonld_serializer = jsonld_serializer;
+        this.transformer = transformer;
     }
 
     @Override
@@ -46,7 +55,7 @@ public class ArchiveIIIFService implements IIIFService {
         case LAYER:
             return handle_layer(req.getId(), req.getName(), os);
         case MANIFEST:
-            return handle_manifest(req.getId(), req.getName(), os);
+            return handle_manifest(req.getId(), os);
         case RANGE:
             return handle_range(req.getId(), req.getName(), os);
         case SEQUENCE:
@@ -64,8 +73,24 @@ public class ArchiveIIIFService implements IIIFService {
         return false;
     }
 
-    private boolean handle_manifest(String id, String name, OutputStream os) {
-        return false;
+    private boolean handle_manifest(String id, OutputStream os) throws IOException {
+        BookCollection col = get_collection_from_id(id);
+        
+        if (col == null) {
+            return false;
+        }
+        
+        Book book = get_book_from_id(id);
+
+        if (book == null) {
+            return false;
+        }
+        
+        Manifest man = transformer.transform(col, book);
+        
+        jsonld_serializer.write(man, os);
+        
+        return true;
     }
 
     private boolean handle_layer(String id, String name, OutputStream os) {
@@ -106,7 +131,7 @@ public class ArchiveIIIFService implements IIIFService {
         return parts[1];
     }
 
-    private BookCollection get_collection(String id) throws IOException {
+    private BookCollection get_collection_from_id(String id) throws IOException {
         return store.loadBookCollection(get_collection_id(id), null);
     }
 
