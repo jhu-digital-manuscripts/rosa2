@@ -52,6 +52,10 @@ public class PresentationTransformerTest {
     private static final String ENDPOINT_PREFIX = "/iiif";
     private static final int ENDPOINT_PORT = -1;
 
+    private static final String FAKE_COLLECTION_ID_ON_IMAGE_SERVER = "col";
+    private static final String FAKE_COLLECTION_ID = "COLLECTION";
+    private static final String FAKE_BOOK_ID = "BOOK";
+
     private static final String[] imageNames = {
             "BOOK.001r.tif", "BOOK.001v.tif", "BOOK.002r.tif", "BOOK.002v.tif",
             "BOOK.003r.tif", "BOOK.003v.tif", "BOOK.004r.tif", "BOOK.004v.tif",
@@ -64,6 +68,7 @@ public class PresentationTransformerTest {
     @Before
     public void setup() {
         Map<String, String> idMap = new HashMap<>();
+        idMap.put(FAKE_COLLECTION_ID, FAKE_COLLECTION_ID_ON_IMAGE_SERVER);
 
         transformer = new PresentationTransformer(
                 new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT),
@@ -101,6 +106,15 @@ public class PresentationTransformerTest {
 
             assertNotNull("List of image annotations missing.", c.getImages());
             assertEquals("Too many image annotations.", 1, c.getImages().size());
+
+            for (Annotation imageAnno : c.getImages()) {
+                checkId(imageAnno.getId());
+
+                assertTrue(imageAnno.getDefaultSource().isImage());
+                String sourceId = imageAnno.getDefaultSource().getUri();
+                // TODO sucky
+                assertTrue(sourceId.contains(FAKE_COLLECTION_ID_ON_IMAGE_SERVER + "%2f" + FAKE_BOOK_ID + "%2f"));
+            }
 
             Annotation imageAnno = c.getImages().get(0);
             assertNotNull("Image annotation missing", imageAnno);
@@ -206,9 +220,9 @@ public class PresentationTransformerTest {
 
     private BookCollection createBookCollection() {
         BookCollection collection = new BookCollection();
-        collection.setId("COLLECTION");
+        collection.setId(FAKE_COLLECTION_ID);
 
-        collection.setBooks(new String[] {"BOOK"});
+        collection.setBooks(new String[] {FAKE_BOOK_ID});
         collection.setLanguages(new String[] {"en", "fr"});
         collection.setCharacterNames(new CharacterNames());
         collection.setIllustrationTitles(new IllustrationTitles());
@@ -219,7 +233,7 @@ public class PresentationTransformerTest {
 
     private Book createBook() {
         Book book = new Book();
-        book.setId("BOOK");
+        book.setId(FAKE_BOOK_ID);
 
         book.setImages(imageList());
         book.setAnnotatedPages(annotatedPages());
