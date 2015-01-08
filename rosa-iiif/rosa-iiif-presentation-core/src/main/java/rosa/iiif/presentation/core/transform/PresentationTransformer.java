@@ -287,29 +287,29 @@ public class PresentationTransformer {
      * @return annotated data as annotations
      */
     private List<Annotation> annotationsFromAoR(BookCollection collection, String book, Canvas canvas, AnnotatedPage aPage) {
-        if (aPage == null) {
-            return null;
-        }
-        annotation_counter = 0;
-
         List<Annotation> annotations = new ArrayList<>();
-        for (Marginalia marg : aPage.getMarginalia()) {
-            annotations.addAll(adaptMarginalia(collection, book, marg, canvas));
-        }
-        for (rosa.archive.model.aor.Annotation mark : aPage.getMarks()) {
-            annotations.add(adaptAnnotation(collection, book, mark, canvas));
-        }
-        for (rosa.archive.model.aor.Annotation symbol : aPage.getSymbols()) {
-            annotations.add(adaptAnnotation(collection, book, symbol, canvas));
-        }
-        for (rosa.archive.model.aor.Annotation underline : aPage.getUnderlines()) {
-            annotations.add(adaptAnnotation(collection, book, underline, canvas));
-        }
-        for (rosa.archive.model.aor.Annotation numeral : aPage.getNumerals()) {
-            annotations.add(adaptAnnotation(collection, book, numeral, canvas));
-        }
-        for (rosa.archive.model.aor.Annotation errata : aPage.getErrata()) {
-            annotations.add(adaptAnnotation(collection, book, errata, canvas));
+
+        if (aPage != null) {
+            annotation_counter = 0;
+
+            for (Marginalia marg : aPage.getMarginalia()) {
+                annotations.addAll(adaptMarginalia(collection, book, marg, canvas));
+            }
+            for (rosa.archive.model.aor.Annotation mark : aPage.getMarks()) {
+                annotations.add(adaptAnnotation(collection, book, mark, canvas));
+            }
+            for (rosa.archive.model.aor.Annotation symbol : aPage.getSymbols()) {
+                annotations.add(adaptAnnotation(collection, book, symbol, canvas));
+            }
+            for (rosa.archive.model.aor.Annotation underline : aPage.getUnderlines()) {
+                annotations.add(adaptAnnotation(collection, book, underline, canvas));
+            }
+            for (rosa.archive.model.aor.Annotation numeral : aPage.getNumerals()) {
+                annotations.add(adaptAnnotation(collection, book, numeral, canvas));
+            }
+            for (rosa.archive.model.aor.Annotation errata : aPage.getErrata()) {
+                annotations.add(adaptAnnotation(collection, book, errata, canvas));
+            }
         }
 
         return annotations;
