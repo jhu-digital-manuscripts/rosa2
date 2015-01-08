@@ -11,6 +11,7 @@ import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -39,12 +40,15 @@ public class PresentationTransformer {
 
     private IIIFRequestFormatter requestFormatter;
     private rosa.iiif.image.core.IIIFRequestFormatter imageFormatter;
+    private ImageIdMapper imageIdMapper;
 
     // TODO inject with GUICE?
     public PresentationTransformer(IIIFRequestFormatter requestFormatter,
-                                   rosa.iiif.image.core.IIIFRequestFormatter imageFormatter) {
+                                   rosa.iiif.image.core.IIIFRequestFormatter imageFormatter,
+                                   ImageIdMapper imageIdMapper) {
         this.requestFormatter = requestFormatter;
         this.imageFormatter = imageFormatter;
+        this.imageIdMapper = imageIdMapper;
     }
 
     /**
@@ -225,7 +229,7 @@ public class PresentationTransformer {
         canvas.setHeight(tooSmall ? image.getHeight() * 2 : image.getHeight());
 
         // Set images to be the single image
-        canvas.setImages(Arrays.asList(imageResource(collection, book.getId(), image, canvas.getId())));
+        canvas.setImages(Arrays.asList(imageResource(collection, book, image, canvas.getId())));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
         List<Annotation> aorAnnotations = annotationsFromAoR(collection, book.getId(), canvas,
@@ -243,14 +247,14 @@ public class PresentationTransformer {
      * @param canvasId ID of the canvas that the image belongs to
      * @return archive image as an annotation
      */
-    private Annotation imageResource(BookCollection collection, String book, BookImage image, String canvasId) {
+    private Annotation imageResource(BookCollection collection, Book book, BookImage image, String canvasId) {
         if (image == null) {
             return null;
         }
 
         Annotation ann = new Annotation();
 
-        ann.setId(urlId(collection.getId(), book, image.getPage(), PresentationRequestType.ANNOTATION));
+        ann.setId(urlId(collection.getId(), book.getId(), image.getPage(), PresentationRequestType.ANNOTATION));
         ann.setWidth(image.getWidth());
         ann.setHeight(image.getHeight());
         ann.setMotivation(IIIFNames.SC_PAINTING);
@@ -260,10 +264,9 @@ public class PresentationTransformer {
             ann.setLabel(image.getPage(), lang);
         }
 
+        String id_in_image_server = imageFormatter.format(imageIdMapper.mapId(collection, book, image.getId()));
         IIIFImageService imageService = new IIIFImageService();
-        AnnotationSource source = new AnnotationSource(
-                imageFormatter.format(image.getId()), "dcterms:Image", "EX: image/tiff"
-        );
+        AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "EX: image/tiff");
         source.setService(imageService);
 
         // Can set target when building Canvas (to the Canvas URI)?

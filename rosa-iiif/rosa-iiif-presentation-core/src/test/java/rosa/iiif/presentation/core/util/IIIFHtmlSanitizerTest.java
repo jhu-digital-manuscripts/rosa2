@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class IiifHtmlSanitizerTest {
+public class IIIFHtmlSanitizerTest {
 
     @Test
     public void test() {
@@ -19,7 +19,7 @@ public class IiifHtmlSanitizerTest {
                 "<strong>This should not be here, apparently.</strong>" +
                 "</p>";
 
-        IiifHtmlSanitizer sanitizer = IiifHtmlSanitizer.defaultSanitizer();
+        IIIFHtmlSanitizer sanitizer = IIIFHtmlSanitizer.defaultSanitizer();
         String safeHtml = sanitizer.sanitize(badHtml);
 
         String expectedHtml =

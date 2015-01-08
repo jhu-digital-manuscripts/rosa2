@@ -24,6 +24,8 @@ import rosa.archive.model.aor.Underline;
 import rosa.archive.model.meta.BiblioData;
 import rosa.archive.model.meta.MultilangMetadata;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.ImageIdMapper;
+import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Sequence;
@@ -62,10 +64,13 @@ public class PresentationTransformerTest {
 
     @Before
     public void setup() {
+        Map<String, String> idMap = new HashMap<>();
+
         transformer = new PresentationTransformer(
                 new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT),
                 new rosa.iiif.image.core.IIIFRequestFormatter(
-                        ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX)
+                        ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX),
+                new JhuFsiImageIdMapper(idMap)
         );
     }
 

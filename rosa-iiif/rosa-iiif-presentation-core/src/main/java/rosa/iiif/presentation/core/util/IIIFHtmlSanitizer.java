@@ -7,17 +7,17 @@ import java.util.Map;
 import java.util.Set;
 
 // TODO doesn't actually work...see test
-public class IiifHtmlSanitizer {
+public class IIIFHtmlSanitizer {
     private Set<String> allowedTags;
     private Map<String, Set<String>> allowedAttributes;
 
-    private IiifHtmlSanitizer() {
+    private IIIFHtmlSanitizer() {
         allowedTags = new HashSet<>();
         allowedAttributes = new HashMap<>();
     }
 
-    public static IiifHtmlSanitizer defaultSanitizer() {
-        return new IiifHtmlSanitizer()
+    public static IIIFHtmlSanitizer defaultSanitizer() {
+        return new IIIFHtmlSanitizer()
                 .addTags("a", "b", "br", "i", "img", "p", "span")
                 .addAttributes("a", "href")
                 .addAttributes("img", "src", "alt");
@@ -30,7 +30,7 @@ public class IiifHtmlSanitizer {
         return simpleSanitize(html);
     }
 
-    public IiifHtmlSanitizer addTags(String ... tags) {
+    public IIIFHtmlSanitizer addTags(String ... tags) {
         if (tags == null || tags.length == 0) {
             throw new IllegalArgumentException("No tags specified.");
         }
@@ -38,7 +38,7 @@ public class IiifHtmlSanitizer {
         return this;
     }
 
-    public IiifHtmlSanitizer addAttributes(String tag, String ... attributes) {
+    public IIIFHtmlSanitizer addAttributes(String tag, String ... attributes) {
         if (tag == null || attributes == null) {
             throw new IllegalArgumentException("Cannot have NULL tag or attributes.");
         }
