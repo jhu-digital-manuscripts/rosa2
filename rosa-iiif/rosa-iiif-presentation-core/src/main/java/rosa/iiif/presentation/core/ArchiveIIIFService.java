@@ -8,10 +8,12 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
-import rosa.iiif.presentation.core.transform.JsonldSerializer;
+import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
+
+import com.google.inject.Inject;
 
 /**
  * An implementation of the IIIF Presentation API that transforms objects from
@@ -23,14 +25,15 @@ import rosa.iiif.presentation.model.PresentationRequest;
  */
 public class ArchiveIIIFService implements IIIFService {
     private final Store store;
-    private final JsonldSerializer jsonld_serializer;
+    private final PresentationSerializer serializer;
     private final PresentationTransformer transformer;
 
     // TODO Caches for intermediate objects and/or whole serialization
     
-    public ArchiveIIIFService(Store store, JsonldSerializer jsonld_serializer, PresentationTransformer transformer) {
+    @Inject
+    public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer) {
         this.store = store;
-        this.jsonld_serializer = jsonld_serializer;
+        this.serializer = jsonld_serializer;
         this.transformer = transformer;
     }
 
@@ -88,7 +91,7 @@ public class ArchiveIIIFService implements IIIFService {
         
         Manifest man = transformer.transform(col, book);
         
-        jsonld_serializer.write(man, os);
+        serializer.write(man, os);
         
         return true;
     }

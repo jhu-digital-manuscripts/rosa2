@@ -51,7 +51,7 @@ public class IIIFRequestParser {
             if (parts[0].equals(PresentationRequestType.COLLECTION.getKeyword())) {
                 req.setType(PresentationRequestType.COLLECTION);
                 req.setName(parts[1]);
-            } else if (parts[0].equals(PresentationRequestType.MANIFEST.getKeyword())) {
+            } else if (parts[1].equals(PresentationRequestType.MANIFEST.getKeyword())) {
                 req.setId(parts[0]);
                 req.setType(PresentationRequestType.MANIFEST);
             } else {

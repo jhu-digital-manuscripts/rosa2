@@ -24,7 +24,6 @@ import rosa.archive.model.aor.Underline;
 import rosa.archive.model.meta.BiblioData;
 import rosa.archive.model.meta.MultilangMetadata;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
-import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Manifest;
