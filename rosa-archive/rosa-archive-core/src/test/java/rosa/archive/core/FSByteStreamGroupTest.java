@@ -1,36 +1,22 @@
 package rosa.archive.core;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import org.junit.Test;
 
 /**
  * Test against data in src/test/resources/archive.
+ * 
+ * TODO Test all methods
  */
-public class FSByteStreamGroupTest extends BaseGuiceTest {
-
-    @Test
-    public void idTest() throws IOException {
-        String id = base.id();
-
-        assertNotNull(id);
-        assertTrue(id.contains("test-classes"));
-    }
-
-    @Test
-    public void nameTest() throws IOException {
-        String name = base.name();
-
-        assertNotNull(name);
-        assertEquals("archive", name);
-    }
-
+public class FSByteStreamGroupTest extends BaseArchiveTest {
+  
     @Test
     public void zeroByteStreamsAtTop() throws IOException {
         int numberOfByteStreams = base.numberOfByteStreams();

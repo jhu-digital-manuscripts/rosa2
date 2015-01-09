@@ -17,7 +17,7 @@ import rosa.archive.model.BookCollection;
 /**
  * Test StoreImpl functionality not tested elsewhere.
  */
-public class StoreImplTest extends BaseGuiceTest {
+public class StoreImplTest extends BaseArchiveTest {
     @Test
     public void testListCollections() throws IOException {
         String[] collections = store.listBookCollections();
