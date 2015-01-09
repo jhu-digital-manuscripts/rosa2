@@ -39,6 +39,11 @@
 
     <dependency>
       <groupId>rosa</groupId>
+      <artifactId>rosa-iiif-image-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>rosa</groupId>
       <artifactId>rosa-iiif-presentation-core</artifactId>
     </dependency>
 

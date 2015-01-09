@@ -1,8 +1,18 @@
 package rosa.iiif.presentation.core.transform;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.junit.Before;
 import org.junit.Test;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.HtmlValue;
@@ -16,16 +26,6 @@ import rosa.iiif.presentation.model.ViewingHint;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
-
-import java.io.ByteArrayOutputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
 
 public class JsonldSerializerTest {
     private static final String IIIF_CONTEXT_URL = "http://iiif.io/api/presentation/2/context.json";

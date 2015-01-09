@@ -16,7 +16,7 @@ import rosa.iiif.image.model.Size;
 import rosa.iiif.image.model.SizeType;
 
 public class IIIFRequestFormatterTest {
-    private final IIIFRequestFormatter formatter = new IIIFRequestFormatter("http", "example.com", -1, "/iiif");
+    private final IIIFRequestFormatter formatter = new IIIFRequestFormatter("http", "example.com", 80, "/iiif");
     private final String base = "http://example.com/iiif/";
 
     @Test

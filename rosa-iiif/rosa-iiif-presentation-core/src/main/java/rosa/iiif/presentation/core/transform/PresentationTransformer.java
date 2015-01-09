@@ -33,16 +33,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.google.inject.Inject;
+
 // TODO handle HTML sanitization!
 public class PresentationTransformer {
     private static final String PAGE_REGEX = "\\d{1,3}(r|v|R|V)";
     private static int annotation_counter = 0;
 
-    private IIIFRequestFormatter requestFormatter;
-    private rosa.iiif.image.core.IIIFRequestFormatter imageFormatter;
-    private ImageIdMapper imageIdMapper;
+    private final IIIFRequestFormatter requestFormatter;
+    private final rosa.iiif.image.core.IIIFRequestFormatter imageFormatter;
+    private final ImageIdMapper imageIdMapper;
 
-    // TODO inject with GUICE?
+    @Inject
     public PresentationTransformer(IIIFRequestFormatter requestFormatter,
                                    rosa.iiif.image.core.IIIFRequestFormatter imageFormatter,
                                    ImageIdMapper imageIdMapper) {
