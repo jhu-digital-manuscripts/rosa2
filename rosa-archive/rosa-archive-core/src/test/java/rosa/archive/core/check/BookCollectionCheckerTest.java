@@ -11,14 +11,14 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import rosa.archive.core.BaseGuiceTest;
+import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.model.BookCollection;
 
 /**
  * @see rosa.archive.core.check.BookCollectionChecker
  */
-public class BookCollectionCheckerTest extends BaseGuiceTest {
+public class BookCollectionCheckerTest extends BaseArchiveTest {
 
     private List<String> errors;
     private List<String> warnings;

@@ -2,7 +2,7 @@ package rosa.archive.core.check;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.core.BaseGuiceTest;
+import rosa.archive.core.BaseArchiveTest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ import static org.junit.Assert.assertTrue;
 /**
 * @see rosa.archive.core.check.BookChecker
 */
-public class BookCheckerTest extends BaseGuiceTest {
+public class BookCheckerTest extends BaseArchiveTest {
     // Test using the BookChecker in the base class (BaseGuiceTest)
 
     private List<String> errors;

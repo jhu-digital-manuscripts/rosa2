@@ -19,7 +19,7 @@ import rosa.archive.model.SHA1Checksum;
 /**
  * Check creating and updating checksums.
  */
-public class StoreImplUpdateChecksumTest extends BaseTmpStoreImplTest {
+public class StoreImplUpdateChecksumTest extends BaseArchiveTest {
 
     /**
      * Check creation of new checksums for a collection.
@@ -27,7 +27,7 @@ public class StoreImplUpdateChecksumTest extends BaseTmpStoreImplTest {
     @Test
     public void createNewChecksumsForCollection() throws Exception {
         // Grab existing checksums
-        SHA1Checksum expected = loadTmpCollection(VALID_COLLECTION).getChecksum();
+        SHA1Checksum expected = loadCollection(VALID_COLLECTION).getChecksum();
 
         assertNotNull(expected);
         assertFalse(expected.checksums().isEmpty());
@@ -37,11 +37,11 @@ public class StoreImplUpdateChecksumTest extends BaseTmpStoreImplTest {
 
         // Force update of the checksum and test
         List<String> errors = new ArrayList<>();
-        boolean result = tmpStore.updateChecksum(VALID_COLLECTION, true, errors);
+        boolean result = store.updateChecksum(VALID_COLLECTION, true, errors);
 
         assertTrue(result);
         assertEquals(0, errors.size());
-        assertEquals(expected, loadTmpCollection(VALID_COLLECTION).getChecksum());
+        assertEquals(expected, loadCollection(VALID_COLLECTION).getChecksum());
     }
 
     /**
@@ -52,7 +52,7 @@ public class StoreImplUpdateChecksumTest extends BaseTmpStoreImplTest {
         List<String> errors = new ArrayList<>();
 
         // Grab existing checksums
-        SHA1Checksum expected = loadTmpBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getChecksum();
+        SHA1Checksum expected = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getChecksum();
         assertNotNull(expected);
         assertFalse(expected.checksums().isEmpty());
 
@@ -62,11 +62,11 @@ public class StoreImplUpdateChecksumTest extends BaseTmpStoreImplTest {
         removeBookFile(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, expected.getId());
 
         // Force update of the checksum and test
-        boolean result = tmpStore.updateChecksum(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, true, errors);
+        boolean result = store.updateChecksum(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, true, errors);
         assertTrue(result);
         assertEquals(0, errors.size());
 
-        SHA1Checksum test = loadTmpBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getChecksum();
+        SHA1Checksum test = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getChecksum();
         assertEquals(0, errors.size());
 
         assertEquals(expected.getAllIds().size(), test.getAllIds().size());
@@ -95,13 +95,13 @@ public class StoreImplUpdateChecksumTest extends BaseTmpStoreImplTest {
 
         SHA1ChecksumSerializer s = new SHA1ChecksumSerializer();
 
-        Path cs_path = getTmpBookPath(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).resolve(expected.getId());
+        Path cs_path = getBookPath(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).resolve(expected.getId());
         
         try (OutputStream os = Files.newOutputStream(cs_path)) {
             s.write(wrong, os);
         }
 
-        assertTrue(tmpStore.updateChecksum(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, false, errors));
+        assertTrue(store.updateChecksum(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, true, errors));
         assertEquals(0, errors.size());
 
         SHA1Checksum test = loadValidLudwigXV7().getChecksum();

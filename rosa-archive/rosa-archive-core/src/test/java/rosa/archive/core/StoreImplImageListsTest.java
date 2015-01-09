@@ -23,7 +23,7 @@ import rosa.archive.model.ImageList;
  */
 
 // TODO Update ignored tests when image name formatting is redone.
-public class StoreImplImageListsTest extends BaseTmpStoreImplTest {
+public class StoreImplImageListsTest extends BaseArchiveTest {
     private void checkImageList(Path imageListPath, String[] expected) throws IOException {
         assertNotNull(expected);
         assertNotNull(imageListPath);
@@ -46,14 +46,14 @@ public class StoreImplImageListsTest extends BaseTmpStoreImplTest {
     public void testGenImageListWithMissingImages() throws Exception {
         // Remove some images
         
-        Path tmp_book_path = getTmpBookPath(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
+        Path tmp_book_path = getBookPath(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
         Path images_path = tmp_book_path.resolve("LudwigXV7.images.csv");
 
         System.err.println(Files.getLastModifiedTime(images_path));
         System.err.println(Files.exists(images_path));
         System.err.println(Files.size(images_path));
         
-        ImageList expected = loadTmpBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getImages();
+        ImageList expected = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getImages();
         
         String[] missing_images = { "LudwigXV7.003r.tif", "LudwigXV7.003v.tif", "LudwigXV7.004r.tif", "LudwigXV7.005v.tif",
                 "LudwigXV7.006r.tif", "LudwigXV7.007v.tif" };
@@ -80,14 +80,14 @@ public class StoreImplImageListsTest extends BaseTmpStoreImplTest {
         }
         
         List<String> errors = new ArrayList<>();
-        tmpStore.generateAndWriteImageList(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, false, errors);
+        store.generateAndWriteImageList(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, false, errors);
         assertTrue(errors.isEmpty());
 
         System.err.println(Files.getLastModifiedTime(images_path));
         System.err.println(Files.exists(images_path));
         System.err.println(Files.size(images_path));
         
-        ImageList result = loadTmpBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getImages();
+        ImageList result = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getImages();
         
         assertEquals(expected.getImages().size(), result.getImages().size());
         
@@ -101,24 +101,24 @@ public class StoreImplImageListsTest extends BaseTmpStoreImplTest {
 
     @Ignore
     public void testGenImageList() throws Exception {
-        ImageList expected = loadTmpBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getImages();
+        ImageList expected = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getImages();
         
         // Remove existing image lists
         
         removeBookFile(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, "LudwigXV7.images.csv");
         removeBookFile(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, "LudwigXV7.images.crop.csv");
 
-        Path tmp_book_path = getTmpBookPath(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
+        Path tmp_book_path = getBookPath(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
 
         ByteStreamGroup bookGroup = new FSByteStreamGroup(tmp_book_path);
         assertFalse(bookGroup.hasByteStream("LudwigXV7.images.csv"));
         assertFalse(bookGroup.hasByteStream("LudwigXV7.images.crop.csv"));
 
         List<String> errors = new ArrayList<>();
-        tmpStore.generateAndWriteImageList(VALID_COLLECTION, "LudwigXV7", false, errors);
+        store.generateAndWriteImageList(VALID_COLLECTION, "LudwigXV7", false, errors);
         assertTrue(errors.isEmpty());
         
-        ImageList result = loadTmpBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getImages();
+        ImageList result = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getImages();
         
         assertEquals(expected, result);
     }
@@ -131,7 +131,7 @@ public class StoreImplImageListsTest extends BaseTmpStoreImplTest {
     @Test
     public void testGenImageListWithNoImages() throws Exception {
         // Create empty book
-        Path book_path = getTmpBookPath(VALID_COLLECTION, "New");
+        Path book_path = getBookPath(VALID_COLLECTION, "New");
         Files.createDirectory(book_path);
 
         ByteStreamGroup bsg = new FSByteStreamGroup(book_path);
@@ -139,7 +139,7 @@ public class StoreImplImageListsTest extends BaseTmpStoreImplTest {
         assertEquals(0, bsg.numberOfByteStreams());
 
         List<String> errors = new ArrayList<>();
-        tmpStore.generateAndWriteImageList(VALID_COLLECTION, "New", false, errors);
+        store.generateAndWriteImageList(VALID_COLLECTION, "New", false, errors);
         assertTrue(errors.isEmpty());
         assertEquals(1, bsg.numberOfByteStreams());
 
