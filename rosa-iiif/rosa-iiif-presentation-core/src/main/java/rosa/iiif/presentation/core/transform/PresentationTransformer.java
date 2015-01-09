@@ -269,7 +269,7 @@ public class PresentationTransformer {
         String id_in_image_server = imageFormatter.format(imageIdMapper.mapId(collection, book, image.getId()));
         IIIFImageService imageService = new IIIFImageService();
         AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "EX: image/tiff");
-        source.setService(imageService);
+//        source.setService(imageService);
 
         // Can set target when building Canvas (to the Canvas URI)?
         AnnotationTarget target = new AnnotationTarget(canvasId);
