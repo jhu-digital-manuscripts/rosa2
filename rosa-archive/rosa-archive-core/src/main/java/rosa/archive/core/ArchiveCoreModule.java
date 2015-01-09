@@ -10,6 +10,7 @@ import rosa.archive.core.serialize.CropInfoSerializer;
 import rosa.archive.core.serialize.IllustrationTaggingSerializer;
 import rosa.archive.core.serialize.IllustrationTitlesSerializer;
 import rosa.archive.core.serialize.ImageListSerializer;
+import rosa.archive.core.serialize.MultilangMetadataSerializer;
 import rosa.archive.core.serialize.NarrativeSectionsSerializer;
 import rosa.archive.core.serialize.NarrativeTaggingSerializer;
 import rosa.archive.core.serialize.PermissionSerializer;
@@ -21,6 +22,7 @@ import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.multibindings.Multibinder;
+import rosa.archive.model.meta.MultilangMetadata;
 
 /**
  * Dependency injection bindings for Google Guice.
@@ -43,6 +45,7 @@ public class ArchiveCoreModule extends AbstractModule {
         serializers.addBinding().to(NarrativeTaggingSerializer.class);
         serializers.addBinding().to(TranscriptionXmlSerializer.class);
         serializers.addBinding().to(PermissionSerializer.class);
+        serializers.addBinding().to(MultilangMetadataSerializer.class);
         serializers.addBinding().to(AORAnnotatedPageSerializer.class);
         
         bind(SerializerSet.class);

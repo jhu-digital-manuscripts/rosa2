@@ -152,7 +152,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         // Handle AoR annotations
 
         for (String name : content) {
-            if (name.startsWith(bookId + AOR_ANNOTATION + XML_EXT)) {
+            if (name.startsWith(bookId + AOR_ANNOTATION ) && name.endsWith(XML_EXT)) {
                 pages.add(loadItem(name, bookStreams, AnnotatedPage.class, errors));
             }
         }
