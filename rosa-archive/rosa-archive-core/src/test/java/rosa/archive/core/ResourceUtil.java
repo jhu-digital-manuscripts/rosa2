@@ -12,9 +12,11 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
 import org.apache.commons.io.FileUtils;
+
 public class ResourceUtil {
     /**
-     * Recursively copy resource to the local file system.
+     * Recursively copy resource to the local file system. The specified
+     * resource will be placed inside dest.
      * 
      * @param klass
      * @param resource
@@ -26,10 +28,12 @@ public class ResourceUtil {
     }
 
     /**
-     * Recursively copy resource to the local file system.
+     * Recursively copy resource to the local file system. The specified
+     * resource will be placed inside dest.
      * 
      * @param resource
      * @param dest
+     *            directory
      * @throws IOException
      */
     public static void copyResource(URL resource, Path dest) throws IOException {
@@ -39,9 +43,9 @@ public class ResourceUtil {
             File src = FileUtils.toFile(resource);
 
             if (src.isDirectory()) {
-                FileUtils.copyDirectory(src, dest.toFile());
+                FileUtils.copyDirectory(src, dest.resolve(src.getName()).toFile());
             } else {
-                FileUtils.copyFile(src, dest.toFile());
+                FileUtils.copyFileToDirectory(src, dest.toFile());
             }
         } else if (protocol.equals("jar")) {
             copyResource((JarURLConnection) resource.openConnection(), dest);
@@ -52,22 +56,24 @@ public class ResourceUtil {
 
     private static void copyResource(JarURLConnection con, Path dest) throws IOException {
         JarFile jar = con.getJarFile();
+
+        // Only entries with this prefix are copied
         String prefix = con.getEntryName();
 
         for (JarEntry entry : Collections.list(jar.entries())) {
             String name = entry.getName();
 
-            if (name.startsWith(prefix)) {
-                Path path = dest.resolve(name.substring(prefix.length()));
+            if (!name.startsWith(prefix)) {
+                continue;
+            }
 
-                System.err.println(path + " -> " + path);
+            if (!entry.isDirectory()) {
+                Path entry_dest = dest.resolve(name);
 
-                if (entry.isDirectory()) {
-                    Files.createDirectories(path);
-                } else {
-                    try (InputStream is = jar.getInputStream(entry)) {
-                        Files.copy(is, dest);
-                    }
+                Files.createDirectories(entry_dest.getParent());
+
+                try (InputStream is = jar.getInputStream(entry)) {
+                    Files.copy(is, entry_dest);
                 }
             }
         }
