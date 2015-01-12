@@ -29,7 +29,7 @@ public class ArchiveIIIFService implements IIIFService {
     private final PresentationTransformer transformer;
 
     // TODO Caches for intermediate objects and/or whole serialization
-    
+
     @Inject
     public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer) {
         this.store = store;
@@ -78,21 +78,21 @@ public class ArchiveIIIFService implements IIIFService {
 
     private boolean handle_manifest(String id, OutputStream os) throws IOException {
         BookCollection col = get_collection_from_id(id);
-        
+
         if (col == null) {
             return false;
         }
-        
+
         Book book = get_book_from_id(id);
 
         if (book == null) {
             return false;
         }
-        
+
         Manifest man = transformer.transform(col, book);
-        
+
         serializer.write(man, os);
-        
+
         return true;
     }
 
