@@ -171,7 +171,7 @@ public class IIIFServlet extends HttpServlet {
                 perform_image_request(imgreq, resp);
             } else if (type == RequestType.IMAGE) {
                 // Redirect to info request
-                resp.sendRedirect("info.json");
+                resp.sendRedirect(req.getRequestURL() + "/info.json");
             } else {
                 throw new IIIFException("Request type not handled: " + type, HttpURLConnection.HTTP_INTERNAL_ERROR);
             }
