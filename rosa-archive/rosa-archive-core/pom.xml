@@ -12,6 +12,24 @@
     <artifactId>rosa-archive-core</artifactId>
     <packaging>jar</packaging>
 
+    <!-- Build a jar for test code and resources -->
+    <build>
+      <plugins>
+	<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+	  <version>${mvn.jar.version}</version>
+          <executions>
+            <execution>
+              <goals>
+		<goal>test-jar</goal>
+              </goals>
+            </execution>
+          </executions>
+	</plugin>
+      </plugins>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>rosa</groupId>

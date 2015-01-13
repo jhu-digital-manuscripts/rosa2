@@ -18,7 +18,6 @@
         <dependency>
             <groupId>com.github.jsonld-java</groupId>
             <artifactId>jsonld-java</artifactId>
-            <version>0.5.1</version>
         </dependency>
 
         <dependency>
@@ -54,6 +53,13 @@
         </dependency>
 
         <!-- testing dependencies -->
+
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-archive-core</artifactId>
+	        <type>test-jar</type>
+	        <scope>test</scope>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>

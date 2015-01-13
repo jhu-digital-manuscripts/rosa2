@@ -81,17 +81,17 @@ public class ArchiveIIIFService implements IIIFService {
 
     private boolean handle_manifest(String id, OutputStream os) throws IOException {
         BookCollection col = get_collection_from_id(id);
-        
+
         if (col == null) {
             return false;
         }
-        
+
         Book book = get_book_from_id(id);
 
         if (book == null) {
             return false;
         }
-        
+
         Manifest man = transformer.transform(col, book);
 
         ByteArrayOutputStream b = new ByteArrayOutputStream();
@@ -100,7 +100,7 @@ public class ArchiveIIIFService implements IIIFService {
         // TODO back to what it was (serialize directly to outputstream
         String prettyJson = JsonUtils.toPrettyString(JsonUtils.fromString(b.toString("UTF-8")));
         os.write(prettyJson.getBytes("UTF-8"));
-        
+
         return true;
     }
 

@@ -5,7 +5,6 @@ import static org.junit.Assert.assertNotNull;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -55,12 +54,11 @@ public abstract class BaseArchiveTest {
 
     @Before
     public void setupArchiveStore() throws URISyntaxException, IOException {
-        URL u = getClass().getClassLoader().getResource("archive");
-        assertNotNull(u);
-
-        basePath = tempFolder.newFolder().toPath();
-        ResourceUtil.copyResource(getClass(), "/archive", basePath);
+        Path tmp = tempFolder.newFolder().toPath();
         
+        ResourceUtil.copyResource(getClass(), "/archive", tmp);
+        
+        basePath = tmp.resolve("archive");
         base = new FSByteStreamGroup(basePath);
         store = new StoreImpl(serializers, bookChecker, collectionChecker, base);
     }
