@@ -34,8 +34,11 @@ public class UriUtilTest {
     public void testIsValidEncodedPath() {
         assertTrue(UriUtil.isValidEncodedPath("/cow"));
         assertTrue(UriUtil.isValidEncodedPath("/"));
+
+        assertFalse(UriUtil.isValidEncodedPath(""));
         assertFalse(UriUtil.isValidEncodedPath("[moo]"));
         assertFalse(UriUtil.isValidEncodedPath("moo cow"));
         assertFalse(UriUtil.isValidEncodedPath("gr`r"));
+        assertFalse(UriUtil.isValidEncodedPath("lkasjdf"));
     }
 }

@@ -5,14 +5,18 @@ import java.net.URISyntaxException;
 
 public class UriUtil {
     /**
-     * Return whether or not the given encoded path is a valid URI path.
+     * Return whether or not the given encoded path is a valid URI path. The path must start with '/'.
      * 
      * @param s
      * @return status
      */
     public static boolean isValidEncodedPath(String s) {
+        if (s.isEmpty() || s.charAt(0) != '/') {
+            return false;
+        }
+        
         try {
-            new URI("http://test" + s).getPath().substring(1);
+            new URI("http://test" + s);
         } catch (URISyntaxException e) {
             return false;
         }
@@ -53,7 +57,7 @@ public class UriUtil {
      * @return decoded path segments
      */
     public static String[] decodePathSegments(String path) {
-        String[] result = path.split("/");
+        String[] result = path.substring(1).split("/");
 
         for (int i = 0; i < result.length; i++) {
             result[i] = decodePathSegment(result[i]);
