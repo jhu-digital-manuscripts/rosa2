@@ -29,27 +29,11 @@ public class IIIFRequestParser {
     public RequestType determineRequestType(String path) {
          if (path.endsWith("/info.json")) {
             return RequestType.INFO;
-        } else if (path.indexOf('/') == -1) {
+        } else if (path.length() > 2 && path.indexOf('/', 1) == -1) {
             return RequestType.IMAGE;
         } else {
             return RequestType.OPERATION;
         }
-    }
-
-    private String[] split_path(String path) {
-        // Strip leading / if present
-        
-        if (path.length() > 0 && path.charAt(0) == '/') {
-            path = path.substring(1);
-        }
-        
-        String[] parts = path.split("/");
-
-        for (int i = 0; i < parts.length; i++) {
-            parts[i] = UriUtil.decodePathSegment(parts[i]);
-        }
-
-        return parts;
     }
 
     /**
@@ -66,7 +50,7 @@ public class IIIFRequestParser {
             throw new IIIFException("Invalid request path: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
         }
 
-        String[] parts = split_path(path);
+        String[] parts = UriUtil.decodePathSegments(path);
 
         if (parts.length != 2) {
             throw new IIIFException("Malformed info request: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
@@ -97,7 +81,7 @@ public class IIIFRequestParser {
             throw new IIIFException("Invalid request path: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
         }
 
-        String[] parts = split_path(path);
+        String[] parts = UriUtil.decodePathSegments(path);
 
         if (parts.length != 5) {
             throw new IIIFException("Malformed image request: " + path, HttpURLConnection.HTTP_BAD_REQUEST);
