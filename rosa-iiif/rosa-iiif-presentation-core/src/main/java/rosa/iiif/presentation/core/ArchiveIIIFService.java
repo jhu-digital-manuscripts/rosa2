@@ -1,8 +1,11 @@
 package rosa.iiif.presentation.core;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import com.github.jsonldjava.core.JsonLdUtils;
+import com.github.jsonldjava.utils.JsonUtils;
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -29,7 +32,7 @@ public class ArchiveIIIFService implements IIIFService {
     private final PresentationTransformer transformer;
 
     // TODO Caches for intermediate objects and/or whole serialization
-
+    
     @Inject
     public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer) {
         this.store = store;
@@ -91,7 +94,12 @@ public class ArchiveIIIFService implements IIIFService {
 
         Manifest man = transformer.transform(col, book);
 
-        serializer.write(man, os);
+        ByteArrayOutputStream b = new ByteArrayOutputStream();
+        serializer.write(man, b);
+
+        // TODO back to what it was (serialize directly to outputstream
+        String prettyJson = JsonUtils.toPrettyString(JsonUtils.fromString(b.toString("UTF-8")));
+        os.write(prettyJson.getBytes("UTF-8"));
 
         return true;
     }

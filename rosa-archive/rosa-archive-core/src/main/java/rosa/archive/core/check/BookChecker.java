@@ -81,9 +81,15 @@ public class BookChecker extends AbstractArchiveChecker {
         //   cropInfo
         check(book.getCropInfo(), book, bsg, errors, warnings);
 
+        boolean mustCheck = true;
         for (String lang : collection.getAllSupportedLanguages()) {
             //   bookMetadata
-            check(book.getBookMetadata(lang), book, bsg, errors, warnings);
+            if (book.getMultilangMetadata() == null) {
+                check(book.getBookMetadata(lang), book, bsg, errors, warnings);
+            } else if (mustCheck) {
+                check(book.getMultilangMetadata(), book, bsg, errors, warnings);
+                mustCheck = false;
+            }
             //   permissions
             check(book.getPermission(lang), book, bsg, errors, warnings);
         }
@@ -103,7 +109,6 @@ public class BookChecker extends AbstractArchiveChecker {
         check(book.getAutomaticNarrativeTagging(), book, bsg, errors, warnings);
         //   annotated pages
         check(book.getAnnotatedPages(), book, bsg, errors, warnings);
-        check(book.getMultilangMetadata(), book, bsg, errors, warnings);
 
         try {
             // Check character_names and illustration_titles
@@ -823,7 +828,7 @@ public class BookChecker extends AbstractArchiveChecker {
             if (!bsg.hasByteStream(page.getId())) {
                 errors.add("Cannot find file. " + page.getId() + "]");
             } else {
-                attemptToRead(page, bsg, errors, warnings);
+//                attemptToRead(page, bsg, errors, warnings);
 
                 try {
                     if (aorAnnotationSchema == null) {

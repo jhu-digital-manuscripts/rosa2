@@ -79,6 +79,21 @@ public class PresentationTransformerTest {
     }
 
     @Test
+    public void buildSequenceTest() {
+        Sequence sequence = transformer.transform(createBookCollection(), createBook(), "reading-order");
+        checkId(sequence.getId());
+
+        assertNotNull("List of canvases was missing.", sequence.getCanvases());
+        assertFalse("List of canvases was empty.", sequence.getCanvases().isEmpty());
+        for (Canvas c : sequence.getCanvases()) {
+            checkId(c.getId());
+            assertTrue(c.getWidth() > 0);
+            assertTrue(c.getHeight() > 0);
+            assertNotNull(c.getImages());
+        }
+    }
+
+    @Test
     public void transformerTest() {
         Manifest manifest = transformer.transform(createBookCollection(), createBook());
         checkId(manifest.getId());

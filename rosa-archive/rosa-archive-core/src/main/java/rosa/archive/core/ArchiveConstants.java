@@ -51,7 +51,7 @@ public interface ArchiveConstants {
 
     static final String BNF_MD5SUM = ".bnf.MD5SUM";
 
-    static final String AOR_ANNOTATION = ".annotation";
+    static final String AOR_ANNOTATION = ".aor";
     
     // Images names
 
