@@ -148,7 +148,8 @@ public class JsonldSerializer implements PresentationSerializer {
 
         addIiifContext(jWriter, isRequested);
         writeBaseData(manifest, jWriter);
-        writeIfNotNull("viewingDirection", manifest.getViewingDirection(), jWriter);
+        writeIfNotNull("viewingDirection",
+                manifest.getViewingDirection() != null ? manifest.getViewingDirection().getKeyword() : null, jWriter);
 
         if (manifest.getSequences() != null) {
             jWriter.key("sequences");
@@ -189,7 +190,8 @@ public class JsonldSerializer implements PresentationSerializer {
 
         addIiifContext(jWriter, isRequested);
         writeBaseData(sequence, jWriter);
-        writeIfNotNull("viewingDirection", sequence.getViewingDirection(), jWriter);
+        writeIfNotNull("viewingDirection",
+                sequence.getViewingDirection() != null ? sequence.getViewingDirection().getKeyword() : null, jWriter);
 
         if (sequence.getStartCanvas() >= 0) {
             Canvas start = sequence.getCanvases().get(sequence.getStartCanvas());
@@ -235,7 +237,10 @@ public class JsonldSerializer implements PresentationSerializer {
 
         if (canvas.getOtherContent().size() > 0) {
             String listId = canvas.getLabel("en"); // TODO tmp, need better way to get canvas label
+
+            jWriter.key("otherContent").array();
             writeAnnotationList(canvas.getOtherContent(), listId, jWriter, false);
+            jWriter.endArray();
         }
 
         jWriter.endObject();
@@ -286,12 +291,14 @@ public class JsonldSerializer implements PresentationSerializer {
         jWriter.key("@id").value(id);
         jWriter.key("@type").value(IIIFNames.SC_ANNOTATION_LIST);
 
-        jWriter.key("resources");
-        jWriter.array();
-        for (Annotation anno : annoList) {
-            writeJsonld(anno, jWriter, false);
+        if (isRequested) {
+            jWriter.key("resources");
+            jWriter.array();
+            for (Annotation anno : annoList) {
+                writeJsonld(anno, jWriter, false);
+            }
+            jWriter.endArray();
         }
-        jWriter.endArray();
         jWriter.endObject();
     }
 
@@ -344,7 +351,7 @@ public class JsonldSerializer implements PresentationSerializer {
      */
     private void writeSource(AnnotationSource source, String label, int width,
                              int height, JSONWriter jWriter) throws JSONException {
-        writeIfNotNull("label", label, jWriter);
+        jWriter.key("@id").value(source.getUri());
         if (source.isEmbeddedText()) {
             jWriter.key("@type").value(IIIFNames.CNT_CONTENT_AS_TEXT);
             jWriter.key("chars").value(source.getEmbeddedText());
@@ -355,6 +362,7 @@ public class JsonldSerializer implements PresentationSerializer {
             writeIfNotNull("height", height, jWriter);
             writeService(source.getService(), jWriter);
         }
+        writeIfNotNull("label", label, jWriter);
 
         if (source.isSpecificResource()) {
             writeSelector(source.getSelector(), jWriter);
@@ -398,7 +406,7 @@ public class JsonldSerializer implements PresentationSerializer {
 
         writeIfNotNull("label", obj.getLabel("en"), jWriter);
         writeIfNotNull("description", obj.getDescription("en"), jWriter);
-        writeIfNotNull("viewingHint", obj.getViewingHint(), jWriter);
+        writeIfNotNull("viewingHint", obj.getViewingHint() != null ? obj.getViewingHint().getKeyword() : null, jWriter);
 
         if (obj.getMetadata() != null && obj.getMetadata().size() > 0) {
             jWriter.key("metadata");

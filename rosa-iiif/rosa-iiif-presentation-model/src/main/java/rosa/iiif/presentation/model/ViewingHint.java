@@ -43,6 +43,9 @@ public enum ViewingHint {
      * There may be multiple ranges marked with this hint. If so, the client should display a
      * choice of multiple structures to navigate through.
      */
-    TOP
+    TOP;
 
+    public String getKeyword() {
+        return this.name().toLowerCase().replace("_", "-");
+    }
 }

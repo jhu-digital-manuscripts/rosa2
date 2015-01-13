@@ -13,7 +13,6 @@ import rosa.archive.model.aor.Position;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.model.Canvas;
-import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -37,6 +36,7 @@ import com.google.inject.Inject;
 
 // TODO handle HTML sanitization!
 public class PresentationTransformer {
+    private static final String DEFAULT_SEQUENCE_LABEL = "reading-order";
     private static final String PAGE_REGEX = "\\d{1,3}(r|v|R|V)";
     private static int annotation_counter = 0;
 
@@ -64,6 +64,10 @@ public class PresentationTransformer {
         return buildManifest(collection, book);
     }
 
+    public Sequence transform(BookCollection collection, Book book, String sequenceId) {
+        return buildSequence(collection, book, sequenceId, book.getImages());
+    }
+
     /**
      * Transform a Book in the archive to a IIIF manifest.
      *
@@ -78,13 +82,14 @@ public class PresentationTransformer {
         manifest.setType(IIIFNames.SC_MANIFEST);
         manifest.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
         manifest.setSequences(
-                Arrays.asList(buildSequence(collection, book, book.getImages()))
+                Arrays.asList(buildSequence(collection, book, DEFAULT_SEQUENCE_LABEL, book.getImages()))
         );
         manifest.setDefaultSequence(0);
 
         for (String lang : collection.getAllSupportedLanguages()) {
             manifest.addAttribution(book.getPermission(lang).getPermission(), lang);
             manifest.setLabel(book.getId(), lang);
+            manifest.setDescription("", lang);
         }
         manifest.setViewingHint(ViewingHint.PAGED);
         transformMetadata(book, collection.getAllSupportedLanguages(), manifest);
@@ -162,11 +167,10 @@ public class PresentationTransformer {
      * @param imageList image list
      * @return sequence
      */
-    private Sequence buildSequence(BookCollection collection, Book book, ImageList imageList) {
+    private Sequence buildSequence(BookCollection collection, Book book, String label, ImageList imageList) {
         if (imageList == null) {
             return null;
         }
-        String label = "reading-order";
 
         Sequence sequence = new Sequence();
         sequence.setId(urlId(collection.getId(), book.getId(), label, PresentationRequestType.SEQUENCE));
@@ -218,17 +222,20 @@ public class PresentationTransformer {
 
         // Images of bindings or misc images will be displayed as individuals
         // instead of openings
+        // Canvas elements *should not* have viewing hint = paged?
         if (image.getId().contains("misc") || image.getId().contains("binding")) {
             canvas.setViewingHint(ViewingHint.NON_PAGED);
-        } else {
-            canvas.setViewingHint(ViewingHint.PAGED);
         }
 
         // If the image is less than 1200 px in either dimension, force the dimensions
         // of the canvas to be double that of the image.
-        boolean tooSmall = image.getWidth() < 1200 || image.getHeight() < 1200;
-        canvas.setWidth(tooSmall ? image.getWidth() * 2 : image.getWidth());
-        canvas.setHeight(tooSmall ? image.getHeight() * 2 : image.getHeight());
+        // TODO hack to prevent canvas dimensions from being ZERO
+        int width = image.getWidth() == 0 ? 1 : image.getWidth();
+        int height = image.getHeight() == 0 ? 1 : image.getHeight();
+
+        boolean tooSmall = width < 1200 || height < 1200;
+        canvas.setWidth(tooSmall ? width * 2 : width);
+        canvas.setHeight(tooSmall ? height * 2 : height);
 
         // Set images to be the single image
         canvas.setImages(Arrays.asList(imageResource(collection, book, image, canvas.getId())));
@@ -267,10 +274,7 @@ public class PresentationTransformer {
         }
 
         String id_in_image_server = imageFormatter.format(imageIdMapper.mapId(collection, book, image.getId()));
-        IIIFImageService imageService = new IIIFImageService();
-        AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "EX: image/tiff");
-//        source.setService(imageService);
-
+        AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "image/tiff");
         // Can set target when building Canvas (to the Canvas URI)?
         AnnotationTarget target = new AnnotationTarget(canvasId);
 
