@@ -30,6 +30,7 @@ import rosa.iiif.image.model.RegionType;
 import rosa.iiif.image.model.Rotation;
 import rosa.iiif.image.model.Size;
 import rosa.iiif.image.model.SizeType;
+import rosa.iiif.image.model.TileInfo;
 
 /**
  * Use FSI server HTTP API to fulfill IIIF requests. Image info lookups are
@@ -39,6 +40,7 @@ public class FSIService implements IIIFService {
     private final String baseurl;
     private final ConcurrentHashMap<String, ImageInfo> image_info_cache;
     private final ImageServerProfile profile;
+    private final TileInfo tile_info;
     private final int image_info_cache_size;
     private final int max_image_size;
 
@@ -64,6 +66,13 @@ public class FSIService implements IIIFService {
                 ImageServerSupports.SIZE_BY_WH, ImageServerSupports.PROFILE_LINK_HEADER,
                 ImageServerSupports.JSONLD_MEDIA_TYPEType);
         profile.setQualities(Quality.COLOR, Quality.GRAY);
+        
+        this.tile_info = new TileInfo();
+        tile_info.setWidth(max_image_size);
+        tile_info.setHeight(max_image_size);
+        
+        // TODO What should this be set to?
+        tile_info.setScaleFactors(4);
     }
 
     public String performURL(ImageRequest req) throws IIIFException {
@@ -294,6 +303,7 @@ public class FSIService implements IIIFService {
                 info.setImageId(image_id);
                 info.setCompliance(getCompliance());
                 info.setProfiles(profile);
+                info.setTiles(tile_info);
             }
         } catch (IOException e) {
             throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
