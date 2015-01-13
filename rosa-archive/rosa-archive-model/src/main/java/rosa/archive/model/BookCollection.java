@@ -22,6 +22,7 @@ public class BookCollection implements HasId, Serializable {
     private IllustrationTitles illustrationTitles;
     private NarrativeSections narrativeSections;
     private SHA1Checksum checksums;
+    private BookImage missingImage;
 
     public BookCollection() {
         books = new String[0];
@@ -113,6 +114,14 @@ public class BookCollection implements HasId, Serializable {
         this.checksums = checksums;
     }
 
+    public BookImage getMissingImage() {
+        return missingImage;
+    }
+
+    public void setMissingImage(BookImage missingImage) {
+        this.missingImage = missingImage;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -130,6 +139,8 @@ public class BookCollection implements HasId, Serializable {
         if (!Arrays.equals(languages, that.languages)) return false;
         if (narrativeSections != null ? !narrativeSections.equals(that.narrativeSections) : that.narrativeSections != null)
             return false;
+        if (missingImage != null ? !missingImage.equals(that.missingImage) : that.missingImage != null)
+            return false;
 
         return true;
     }
@@ -143,6 +154,7 @@ public class BookCollection implements HasId, Serializable {
         result = 31 * result + (illustrationTitles != null ? illustrationTitles.hashCode() : 0);
         result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
         result = 31 * result + (checksums != null ? checksums.hashCode() : 0);
+        result = 31 * result + (missingImage != null ? missingImage.hashCode() : 0);
         return result;
     }
 
@@ -156,6 +168,7 @@ public class BookCollection implements HasId, Serializable {
                 ", illustrationTitles=" + illustrationTitles +
                 ", narrativeSections=" + narrativeSections +
                 ", checksums=" + checksums +
+                ", missimgImage=" + missingImage +
                 '}';
     }
 }

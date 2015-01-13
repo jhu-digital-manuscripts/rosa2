@@ -94,6 +94,16 @@ public class StoreImpl implements Store, ArchiveConstants {
         collection.setNarrativeSections(loadItem(NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class, errors));
         collection.setChecksum(loadItem(collectionId + SHA1SUM, collectionGroup, SHA1Checksum.class, errors));
 
+        BookImage missing = new BookImage();
+        missing.setId(MISSING_IMAGE);
+        missing.setMissing(false);
+
+        int[] missingDimensions = getMissingImageDimensions(collectionId);
+        missing.setWidth(missingDimensions[0]);
+        missing.setHeight(missingDimensions[1]);
+
+        collection.setMissingImage(missing);
+
         // Languages from configuration.
         Properties props = new Properties();
         try (InputStream configIn = collectionGroup.getByteStream("config.properties")) {
@@ -137,10 +147,13 @@ public class StoreImpl implements Store, ArchiveConstants {
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[] {}));
 
+        // For all image lists, add in dimensions of missing images
+        setMissingDimensions(book.getImages(), collection.getMissingImage());
+        setMissingDimensions(book.getCroppedImages(), collection.getMissingImage());
+
         List<AnnotatedPage> pages = book.getAnnotatedPages();
 
         // Handle permission and description in all languages
-
         for (String lang : collection.getAllSupportedLanguages()) {
             String perm_name = bookId + PERMISSION + lang + HTML_EXT;
             book.addPermission(loadItem(perm_name, bookStreams, Permission.class, errors), lang);
@@ -150,7 +163,6 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
 
         // Handle AoR annotations
-
         for (String name : content) {
             if (name.startsWith(bookId + AOR_ANNOTATION ) && name.endsWith(XML_EXT)) {
                 pages.add(loadItem(name, bookStreams, AnnotatedPage.class, errors));
@@ -158,6 +170,21 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
 
         return book;
+    }
+
+    private void setMissingDimensions(ImageList images, BookImage missingImage) {
+        if (missingImage == null || images == null) {
+            return;
+        }
+
+        for (BookImage image : images) {
+            if (image.isMissing()) {
+                image.setId(missingImage.getId());
+                image.setWidth(missingImage.getWidth());
+                image.setHeight(missingImage.getHeight());
+                image.setMissing(true);
+            }
+        }
     }
 
     @Override
@@ -569,13 +596,17 @@ public class StoreImpl implements Store, ArchiveConstants {
         // images.sort(BookImageComparator.instance());
 
         if (addMissing) {
-            int[] missingDimensions = base.getByteStreamGroup(collection).hasByteStream(MISSING_IMAGE) ? getImageDimensionsHack(Paths
-                    .get(base.getByteStreamGroup(collection).id()).resolve(MISSING_IMAGE).toString())
-                    : new int[] { 0, 0 };
+            int[] missingDimensions = getMissingImageDimensions(collection);
             addMissingImages(book, images, missingDimensions);
         }
 
         return images;
+    }
+
+    private int[] getMissingImageDimensions(String collection) throws IOException {
+        return base.getByteStreamGroup(collection).hasByteStream(MISSING_IMAGE) ? getImageDimensionsHack(Paths
+                .get(base.getByteStreamGroup(collection).id()).resolve(MISSING_IMAGE).toString())
+                : new int[] { 0, 0 };
     }
 
     /**
