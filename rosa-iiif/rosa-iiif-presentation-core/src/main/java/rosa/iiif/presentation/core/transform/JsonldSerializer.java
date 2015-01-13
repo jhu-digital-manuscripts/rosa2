@@ -4,7 +4,6 @@ import org.json.JSONException;
 import org.json.JSONWriter;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
-import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
@@ -26,7 +25,7 @@ import java.io.Writer;
 import java.util.List;
 
 // TODO handle multiple languages?
-public class JsonldSerializer implements PresentationSerializer {
+public class JsonldSerializer implements PresentationSerializer, IIIFNames {
     private static final String IIIF_PRESENTATION_CONTEXT = "http://iiif.io/api/presentation/2/context.json";
 
     public JsonldSerializer() {}
@@ -464,36 +463,36 @@ public class JsonldSerializer implements PresentationSerializer {
         writeIfNotNull("@id", service.getId(), jWriter);
         writeIfNotNull("profile", service.getProfile(), jWriter);
 
-        if (service instanceof IIIFImageService) {
-            IIIFImageService imageService = (IIIFImageService) service;
-
-            writeIfNotNull("height", imageService.getHeight(), jWriter);
-            writeIfNotNull("width", imageService.getWidth(), jWriter);
-
-            if (imageService.getTileHeight() != -1 || imageService.getTileWidth() != -1
-                    || imageService.getScaleFactors() != null) {
-                jWriter.key("tiles");
-                jWriter.array();
-                jWriter.object();
-
-                writeIfNotNull("width", imageService.getTileWidth(), jWriter);
-                writeIfNotNull("height", imageService.getTileHeight(), jWriter);
-                if (imageService.getScaleFactors() != null) {
-                    jWriter.key("scaleFactors");
-                    jWriter.array();
-                    StringBuilder sb = new StringBuilder();
-                    for (int i = 0; i < imageService.getScaleFactors().length; i++) {
-                        if (i != 0) {
-                            sb.append(',');
-                        }
-                        sb.append(imageService.getScaleFactors()[i]);
-                    }
-                    jWriter.endArray();
-                }
-                jWriter.endObject();
-                jWriter.endArray(); // TODO the hell is with this structure (its from the IIIF spec)??
-            }
-        }
+//        if (service instanceof IIIFImageService) {
+//            IIIFImageService imageService = (IIIFImageService) service;
+//
+//            writeIfNotNull("height", imageService.getHeight(), jWriter);
+//            writeIfNotNull("width", imageService.getWidth(), jWriter);
+//
+//            if (imageService.getTileHeight() != -1 || imageService.getTileWidth() != -1
+//                    || imageService.getScaleFactors() != null) {
+//                jWriter.key("tiles");
+//                jWriter.array();
+//                jWriter.object();
+//
+//                writeIfNotNull("width", imageService.getTileWidth(), jWriter);
+//                writeIfNotNull("height", imageService.getTileHeight(), jWriter);
+//                if (imageService.getScaleFactors() != null) {
+//                    jWriter.key("scaleFactors");
+//                    jWriter.array();
+//                    StringBuilder sb = new StringBuilder();
+//                    for (int i = 0; i < imageService.getScaleFactors().length; i++) {
+//                        if (i != 0) {
+//                            sb.append(',');
+//                        }
+//                        sb.append(imageService.getScaleFactors()[i]);
+//                    }
+//                    jWriter.endArray();
+//                }
+//                jWriter.endObject();
+//                jWriter.endArray(); // TODO the hell is with this structure (its from the IIIF spec)??
+//            }
+//        }
         jWriter.endObject();
     }
 

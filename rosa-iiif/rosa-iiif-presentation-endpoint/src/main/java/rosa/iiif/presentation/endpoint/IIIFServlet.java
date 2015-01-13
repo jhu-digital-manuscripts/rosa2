@@ -64,16 +64,6 @@ public class IIIFServlet extends HttpServlet {
         PresentationRequest presreq = parser.parsePresentationRequest(get_raw_path(req));
         String uri = req.getRequestURL().toString();
 
-        if (presreq == null) {
-            if (!service.handle_request(uri, os)) {
-                resp.sendError(HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + uri);
-            }
-        } else {
-            if (!service.handle_request(presreq, os)) {
-                resp.sendError(HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + uri);
-            }
-        }
-
         resp.setHeader("Access-Control-Allow-Origin", "*");
 
         if (want_json_ld_mime_type(req)) {
@@ -83,6 +73,16 @@ public class IIIFServlet extends HttpServlet {
             resp.addHeader(
                     "Link",
                     "<http://iiif.io/api/presentation/2/context.json>;rel=\"http://www.w3.org/ns/json-ld#context\";type=\"application/ld+json\"");
+        }
+
+        if (presreq == null) {
+            if (!service.handle_request(uri, os)) {
+                resp.sendError(HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + uri);
+            }
+        } else {
+            if (!service.handle_request(presreq, os)) {
+                resp.sendError(HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + uri);
+            }
         }
 
         resp.flushBuffer();

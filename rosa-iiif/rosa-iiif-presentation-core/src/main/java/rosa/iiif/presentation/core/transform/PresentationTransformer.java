@@ -13,6 +13,7 @@ import rosa.archive.model.aor.Position;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.model.Canvas;
+import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -35,7 +36,7 @@ import java.util.Map;
 import com.google.inject.Inject;
 
 // TODO handle HTML sanitization!
-public class PresentationTransformer {
+public class PresentationTransformer implements IIIFNames {
     private static final String DEFAULT_SEQUENCE_LABEL = "reading-order";
     private static final String PAGE_REGEX = "\\d{1,3}(r|v|R|V)";
     private static int annotation_counter = 0;
@@ -238,7 +239,10 @@ public class PresentationTransformer {
         canvas.setHeight(tooSmall ? height * 2 : height);
 
         // Set images to be the single image
-        canvas.setImages(Arrays.asList(imageResource(collection, book, image, canvas.getId())));
+        // Always needs to be at least 1 image with Mirador2
+        canvas.setImages(Arrays.asList(
+                image.isMissing() ? imageResource(collection, book, collection.getMissingImage(), canvas.getId()) :
+                        imageResource(collection, book, image, canvas.getId())));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
         List<Annotation> aorAnnotations = annotationsFromAoR(collection, book.getId(), canvas,
@@ -277,6 +281,9 @@ public class PresentationTransformer {
         AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "image/tiff");
         // Can set target when building Canvas (to the Canvas URI)?
         AnnotationTarget target = new AnnotationTarget(canvasId);
+
+        source.setService(new IIIFImageService(IIIF_IMAGE_CONTEXT, id_in_image_server, IIIF_IMAGE_PROFILE_LEVEL2,
+                -1, -1, -1, -1, null));
 
         ann.setDefaultSource(source);
         ann.setDefaultTarget(target);

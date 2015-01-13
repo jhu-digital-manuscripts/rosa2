@@ -179,7 +179,7 @@ public class StoreImpl implements Store, ArchiveConstants {
 
         for (BookImage image : images) {
             if (image.isMissing()) {
-                image.setId(missingImage.getId());
+//                image.setId(missingImage.getId());
                 image.setWidth(missingImage.getWidth());
                 image.setHeight(missingImage.getHeight());
                 image.setMissing(true);

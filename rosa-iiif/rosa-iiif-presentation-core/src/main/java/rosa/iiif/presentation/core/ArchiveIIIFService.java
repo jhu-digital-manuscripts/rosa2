@@ -32,7 +32,7 @@ public class ArchiveIIIFService implements IIIFService {
     private final PresentationTransformer transformer;
 
     // TODO Caches for intermediate objects and/or whole serialization
-    
+
     @Inject
     public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer) {
         this.store = store;
