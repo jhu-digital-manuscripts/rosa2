@@ -22,7 +22,6 @@ import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.multibindings.Multibinder;
-import rosa.archive.model.meta.MultilangMetadata;
 
 /**
  * Dependency injection bindings for Google Guice.
