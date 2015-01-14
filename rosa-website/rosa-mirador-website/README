@@ -1,0 +1,5 @@
+Java webapp wrapper for a demo website running mirador.
+
+Does not include mirador. Must build separately and copy build/mirador/* to
+src/main/webapp.
+
