@@ -14,12 +14,15 @@ import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
+import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
+import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Sequence;
+import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
 import rosa.iiif.presentation.model.annotation.Annotation;
@@ -472,4 +475,22 @@ public class PresentationTransformer implements IIIFNames {
         return new PresentationRequest(presentationId(collection, book), name, type);
     }
 
+    public Collection transform(BookCollection col) {
+        Collection result = new Collection();
+        
+        result.setLabel(col.getId(), "en");
+        
+        for (String book_id: col.books()) {
+            String manifest = requestFormatter.format(presentationRequest(col.getId(), book_id, null, PresentationRequestType.MANIFEST));
+            
+            Reference ref = new Reference();
+            ref.setType(SC_MANIFEST);
+            ref.setReference(manifest);
+            ref.setLabel(new TextValue(book_id, "en"));
+            
+            result.getManifests().add(ref);
+        }
+        
+        return result;
+    }
 }

@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -17,10 +18,13 @@ import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFImageService;
+import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationBase;
+import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.Service;
+import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
 import rosa.iiif.presentation.model.annotation.Annotation;
@@ -110,10 +114,20 @@ public class JsonldSerializerTest {
         collection.setId("CollectionId");
         collection.setType("sc:Collection");
         collection.setLabel("Collection label", "en");
-        collection.getManifests().add(createManifest());
-        collection.getManifests().add(createManifest());
+        collection.getManifests().add(createReference(IIIFNames.SC_MANIFEST));
+        collection.getManifests().add(createReference(IIIFNames.SC_MANIFEST));
 
         return collection;
+    }
+
+    private Reference createReference(String type) {
+        Reference ref = new Reference();
+        
+        ref.setReference(UUID.randomUUID().toString());
+        ref.setLabel(new TextValue("moo", "cow"));
+        ref.setType(type);
+        
+        return ref;
     }
 
     private Manifest createManifest() {
