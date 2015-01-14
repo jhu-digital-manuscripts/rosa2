@@ -80,7 +80,7 @@ public class PresentationTransformerTest {
 
     @Test
     public void buildSequenceTest() {
-        Sequence sequence = transformer.transform(createBookCollection(), createBook(), "reading-order");
+        Sequence sequence = transformer.sequence(createBookCollection(), createBook(), "reading-order");
         checkId(sequence.getId());
 
         assertNotNull("List of canvases was missing.", sequence.getCanvases());
@@ -95,7 +95,7 @@ public class PresentationTransformerTest {
 
     @Test
     public void transformerTest() {
-        Manifest manifest = transformer.transform(createBookCollection(), createBook());
+        Manifest manifest = transformer.manifest(createBookCollection(), createBook());
         checkId(manifest.getId());
 
         assertNotNull("List of sequences missing.", manifest.getSequences());
@@ -198,6 +198,7 @@ public class PresentationTransformerTest {
             checkTarget(t, false);
 
             String selectorContent = t.getSelector().content();
+            System.out.println(selectorContent);
             String[] parts = selectorContent.split(",");
             assertEquals(4, parts.length);
             assertEquals("0", parts[0]);
