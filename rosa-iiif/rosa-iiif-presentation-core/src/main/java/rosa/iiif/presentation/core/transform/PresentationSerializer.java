@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform;
 
 import org.json.JSONException;
+import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.Layer;
@@ -83,5 +84,14 @@ public interface PresentationSerializer {
      * @throws IOException
      */
     void write(Range range, OutputStream out)  throws IOException;
+
+    /**
+     * Write a IIIF annotation list to an output stream.
+     *
+     * @param annotationList IIIF presentation annotation list object
+     * @param os output stream to write to
+     * @throws IOException
+     */
+    void write(AnnotationList annotationList, OutputStream os) throws IOException;
 
 }

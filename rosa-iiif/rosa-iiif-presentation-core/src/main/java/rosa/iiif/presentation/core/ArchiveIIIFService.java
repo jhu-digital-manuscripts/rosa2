@@ -9,14 +9,15 @@ import com.github.jsonldjava.utils.JsonUtils;
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
-import rosa.archive.model.BookImage;
-import rosa.archive.model.ImageList;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
+import rosa.iiif.presentation.model.AnnotationList;
+import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
 
 import com.google.inject.Inject;
+import rosa.iiif.presentation.model.Sequence;
 
 /**
  * An implementation of the IIIF Presentation API that transforms objects from
@@ -71,7 +72,22 @@ public class ArchiveIIIFService implements IIIFService {
         }
     }
 
-    private boolean handle_sequence(String id, String name, OutputStream os) {
+    private boolean handle_sequence(String id, String name, OutputStream os) throws IOException {
+        BookCollection collection = get_collection_from_id(id);
+        Book book = get_book_from_id(id);
+
+        if (collection == null || book == null) {
+            return false;
+        }
+
+        Sequence seq = transformer.sequence(collection, book, name);
+
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        serializer.write(seq, out);
+
+        String prettyString = JsonUtils.toPrettyString(JsonUtils.fromString(out.toString("UTF-8")));
+        os.write(prettyString.getBytes("UTF-8"));
+
         return false;
     }
 
@@ -92,7 +108,7 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
-        Manifest man = transformer.transform(col, book);
+        Manifest man = transformer.manifest(col, book);
 
         ByteArrayOutputStream b = new ByteArrayOutputStream();
         serializer.write(man, b);
@@ -164,29 +180,40 @@ public class ArchiveIIIFService implements IIIFService {
 
     private boolean handle_canvas(String id, String name, OutputStream os) throws IOException {
         Book book = get_book_from_id(id);
+        BookCollection collection = get_collection_from_id(id);
 
-        if (book == null) {
+        if (book == null || collection == null) {
             return false;
         }
 
-        ImageList images = book.getImages();
-        BookImage canvas_image = null;
+        Canvas canvas = transformer.canvas(collection, book, name);
 
-        for (BookImage image : images.getImages()) {
-            if (image.getId().equals(name)) {
-                canvas_image = image;
-            }
-        }
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        serializer.write(canvas, out);
 
-        if (canvas_image == null) {
-            return false;
-        }
+        String prettyString = JsonUtils.toPrettyString(JsonUtils.fromString(out.toString("UTF-8")));
+        os.write(prettyString.getBytes("UTF-8"));
 
         return true;
     }
 
-    private boolean handle_annotation_list(String id, String name, OutputStream os) {
-        return false;
+    private boolean handle_annotation_list(String id, String name, OutputStream os) throws IOException {
+        BookCollection collection = get_collection_from_id(id);
+        Book book = get_book_from_id(id);
+
+        if (collection == null || book == null) {
+            return false;
+        }
+
+        AnnotationList list = transformer.otherContent(collection, book, name);
+
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        serializer.write(list, out);
+
+        String prettyString = JsonUtils.toPrettyString(JsonUtils.fromString(out.toString("UTF-8")));
+        os.write(prettyString.getBytes("UTF-8"));
+
+        return true;
     }
 
     private boolean handle_annotation(String id, String name, OutputStream os) {

@@ -78,6 +78,15 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
     }
 
     @Override
+    public void write(AnnotationList annotationList, OutputStream os) throws JSONException, IOException {
+        Writer writer = new OutputStreamWriter(os, "UTF-8");
+        JSONWriter jWriter = new JSONWriter(writer);
+
+        writeJsonld(annotationList, jWriter, true);
+        writer.flush();
+    }
+
+    @Override
     public void write(Range range, OutputStream os) throws JSONException, IOException {
         throw new UnsupportedOperationException("Not implemented.");
     }
@@ -243,7 +252,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
             jWriter.endArray();
         }
 
-        if (canvas.getOtherContent() != null) {
+        if (canvas.getOtherContent() != null && canvas.getOtherContent().size() > 0) {
             jWriter.key("otherContent").array();
             writeJsonld(canvas.getOtherContent(), jWriter, false);
             jWriter.endArray();
@@ -275,8 +284,9 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         writeIfNotNull("motivation", annotation.getMotivation(), jWriter);
 
         // TODO write target with the possibility of it being a specific resource
-        AnnotationTarget target = annotation.getDefaultTarget();
-        jWriter.key("on").value(target.getUri());
+        writeTarget(annotation, jWriter);
+//        AnnotationTarget target = annotation.getDefaultTarget();
+//        jWriter.key("on").value(target.getUri());
 
         jWriter.endObject();
     }
@@ -374,6 +384,22 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         if (source.isSpecificResource()) {
             writeSelector(source.getSelector(), jWriter);
         }
+    }
+
+    private void writeTarget(Annotation annotation, JSONWriter jWriter) throws JSONException {
+        AnnotationTarget target = annotation.getDefaultTarget();
+
+        if (target.isSpecificResource()) {
+            Selector selector = target.getSelector();
+            if (selector instanceof FragmentSelector) {
+                jWriter.key("on").value(target.getUri() + "#xywh=" + selector.content());
+            } else if (selector instanceof SvgSelector) {
+                writeSelector(target.getSelector(), jWriter);
+            }
+        } else {
+            jWriter.key("on").value(target.getUri());
+        }
+
     }
 
     private void writeSelector(Selector selector, JSONWriter jWriter) throws JSONException {

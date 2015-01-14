@@ -65,12 +65,47 @@ public class PresentationTransformer implements IIIFNames {
      * @param book book to transform
      * @return manifest
      */
-    public Manifest transform(BookCollection collection, Book book) {
+    public Manifest manifest(BookCollection collection, Book book) {
         return buildManifest(collection, book);
     }
 
-    public Sequence transform(BookCollection collection, Book book, String sequenceId) {
+    public Sequence sequence(BookCollection collection, Book book, String sequenceId) {
         return buildSequence(collection, book, sequenceId, book.getImages());
+    }
+
+    /**
+     * @param collection book collection holding the book
+     * @param book book containing the page
+     * @param page page to transform
+     * @return the Canvas representation of a page
+     */
+    public Canvas canvas(BookCollection collection, Book book, String page) {
+        // Look for the image representing 'page'
+        for (BookImage image : book.getImages()) {
+            if (image.getPage().equals(page)) {
+                return buildCanvas(collection, book, image);
+            }
+        }
+        // Return NULL if the page was not found in the list of images
+        return null;
+    }
+
+    /**
+     * Get 'other content' (non-images) annotations of a page in the form of
+     * an annotation list.
+     *
+     * @param collection book collection holding the book
+     * @param book book containing the page
+     * @param page page that has the annotation list
+     * @return the annotation list of a page
+     */
+    public AnnotationList otherContent(BookCollection collection, Book book, String page) {
+        Canvas canvas = canvas(collection, book, page);
+        if (canvas != null) {
+            return canvas.getOtherContent();
+        }
+
+        return null;
     }
 
     /**
