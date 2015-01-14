@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 import com.github.jsonldjava.utils.JsonUtils;
+
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -172,6 +173,8 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
+        serializer.write(transformer.transform(col), os);
+        
         return true;
     }
 

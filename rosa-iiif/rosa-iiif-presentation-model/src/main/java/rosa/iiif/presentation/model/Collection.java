@@ -14,27 +14,27 @@ import java.util.List;
 public class Collection extends PresentationBase implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private List<Collection> collections;
-    private List<Manifest> manifests;
+    private List<Reference> collections;
+    private List<Reference> manifests;
 
     public Collection() {
         collections = new ArrayList<>();
         manifests = new ArrayList<>();
     }
 
-    public List<Collection> getCollections() {
+    public List<Reference> getCollections() {
         return collections;
     }
 
-    public void setCollections(List<Collection> collections) {
+    public void setCollections(List<Reference> collections) {
         this.collections = collections;
     }
 
-    public List<Manifest> getManifests() {
+    public List<Reference> getManifests() {
         return manifests;
     }
 
-    public void setManifests(List<Manifest> manifests) {
+    public void setManifests(List<Reference> manifests) {
         this.manifests = manifests;
     }
 

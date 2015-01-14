@@ -2,6 +2,7 @@ package rosa.iiif.presentation.core.transform;
 
 import org.json.JSONException;
 import org.json.JSONWriter;
+
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
@@ -10,6 +11,7 @@ import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationBase;
 import rosa.iiif.presentation.model.Range;
+import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.annotation.Annotation;
@@ -117,8 +119,8 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         if (collection.getCollections().size() > 0) {
             jWriter.key("collections");
             jWriter.array();
-            for (Collection c : collection.getCollections()) {
-                writeJsonld(c, jWriter, false);
+            for (Reference ref : collection.getCollections()) {
+                writeJsonld(ref, jWriter);
             }
             jWriter.endArray();
         }
@@ -126,17 +128,21 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         if (collection.getManifests().size() > 0) {
             jWriter.key("manifests");
             jWriter.array();
-            for (Manifest man : collection.getManifests()) {
-                jWriter.object();
-
-                jWriter.key("@id").value(man.getId());
-                jWriter.key("@type").value(man.getType());
-                writeIfNotNull("label", man.getLabel("en"), jWriter);
-
-                jWriter.endObject();
+            for (Reference ref : collection.getManifests()) {
+                writeJsonld(ref, jWriter);
             }
             jWriter.endArray();
         }
+
+        jWriter.endObject();
+    }
+
+    private void writeJsonld(Reference ref, JSONWriter jWriter) {
+        jWriter.object();
+
+        jWriter.key("@id").value(ref.getReference());
+        jWriter.key("@type").value(ref.getType());
+        jWriter.key("label").value(ref.getLabel().getValue());
 
         jWriter.endObject();
     }
