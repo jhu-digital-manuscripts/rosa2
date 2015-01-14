@@ -63,12 +63,11 @@ public class Canvas extends PresentationBase implements Serializable {
     private int width;
 
     private List<Annotation> images;
-    private List<Annotation> otherContent;
+    private AnnotationList otherContent;
 
     public Canvas() {
         super();
         images = new ArrayList<>();
-        otherContent = new ArrayList<>();
 
         setType(IIIFNames.SC_CANVAS);
     }
@@ -97,11 +96,11 @@ public class Canvas extends PresentationBase implements Serializable {
         this.images = images;
     }
 
-    public List<Annotation> getOtherContent() {
+    public AnnotationList getOtherContent() {
         return otherContent;
     }
 
-    public void setOtherContent(List<Annotation> otherContent) {
+    public void setOtherContent(AnnotationList otherContent) {
         this.otherContent = otherContent;
     }
 

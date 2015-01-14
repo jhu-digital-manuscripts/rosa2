@@ -12,6 +12,7 @@ import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
+import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -247,7 +248,12 @@ public class PresentationTransformer implements IIIFNames {
         // Set 'other content' to be AoR transcriptions as IIIF annotations
         List<Annotation> aorAnnotations = annotationsFromAoR(collection, book.getId(), canvas,
                 book.getAnnotationPage(image.getPage()));
-        canvas.setOtherContent(aorAnnotations);
+
+        AnnotationList otherContent = new AnnotationList();
+        otherContent.setId(urlId(
+                collection.getId(), book.getId(), canvas.getLabel("en"), PresentationRequestType.ANNOTATION_LIST));
+        otherContent.setAnnotations(aorAnnotations);
+        canvas.setOtherContent(otherContent);
         // TODO add rosa transcriptions as annotations!
 
         return canvas;

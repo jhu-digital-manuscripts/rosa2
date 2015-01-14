@@ -2,6 +2,7 @@ package rosa.iiif.presentation.core.transform;
 
 import org.json.JSONException;
 import org.json.JSONWriter;
+import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -22,7 +23,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
-import java.util.List;
 
 // TODO handle multiple languages?
 public class JsonldSerializer implements PresentationSerializer, IIIFNames {
@@ -140,6 +140,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      *
      * @param manifest IIIF Presentation manifest
      * @param jWriter JSON-LD writer
+     * @param isRequested was this object requested directly?
      */
     private void writeJsonld(Manifest manifest, JSONWriter jWriter, boolean isRequested)
             throws JSONException {
@@ -182,6 +183,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      *
      * @param sequence the sequence
      * @param jWriter JSON-LD writer
+     * @param isRequested was this object requested directly?
      */
     private void writeJsonld(Sequence sequence, JSONWriter jWriter, boolean isRequested)
             throws JSONException {
@@ -215,6 +217,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      *
      * @param canvas the canvas
      * @param jWriter JSON-LD writer
+     * @param isRequested was this object requested directly?
      */
     private void writeJsonld(Canvas canvas, JSONWriter jWriter, boolean isRequested)
             throws JSONException {
@@ -234,11 +237,9 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
             jWriter.endArray();
         }
 
-        if (canvas.getOtherContent().size() > 0) {
-            String listId = canvas.getLabel("en"); // TODO tmp, need better way to get canvas label
-
+        if (canvas.getOtherContent() != null) {
             jWriter.key("otherContent").array();
-            writeAnnotationList(canvas.getOtherContent(), listId, jWriter, false);
+            writeJsonld(canvas.getOtherContent(), jWriter, false);
             jWriter.endArray();
         }
 
@@ -253,6 +254,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      *
      * @param annotation annotation
      * @param jWriter JSON-LD writer
+     * @param isRequested was this object requested directly?
      */
     private void writeJsonld(Annotation annotation, JSONWriter jWriter, boolean isRequested)
             throws JSONException {
@@ -260,7 +262,6 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
         addIiifContext(jWriter, isRequested);
         writeBaseData(annotation, jWriter);
-//        jWriter.key("@type").value(IIIFNames.OA_ANNOTATION);
 
         jWriter.key("resource");
         writeResource(annotation, jWriter);
@@ -276,23 +277,24 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
     /**
      * Write an annotation list as JSON-LD. This object contains references to
-     * annotations only.
+     * annotations only. Annotation lists are not embedded in a manifest, so the
+     * annotations contained within this annotation list is only included if
+     * the annotation list is requested separately.
      *
-     * @param annoList list of annotations
-     * @param id resolvable URL
+     * @param annoList annotation list object
      * @param jWriter JSON-LD writer
+     * @param isRequested was this object requested directly?
      */
-    private void writeAnnotationList(List<Annotation> annoList, String id,
-                                     JSONWriter jWriter, boolean isRequested) throws JSONException {
+    private void writeJsonld(AnnotationList annoList, JSONWriter jWriter, boolean isRequested)
+            throws JSONException {
         jWriter.object();
 
         addIiifContext(jWriter, isRequested);
-        jWriter.key("@id").value(id);
+        jWriter.key("@id").value(annoList.getId());
         jWriter.key("@type").value(IIIFNames.SC_ANNOTATION_LIST);
 
         if (isRequested) {
-            jWriter.key("resources");
-            jWriter.array();
+            jWriter.key("resources").array();
             for (Annotation anno : annoList) {
                 writeJsonld(anno, jWriter, false);
             }
