@@ -4,7 +4,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.github.jsonldjava.core.JsonLdUtils;
 import com.github.jsonldjava.utils.JsonUtils;
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
