@@ -14,6 +14,8 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
 import org.apache.commons.lang3.StringUtils;
+import org.w3c.dom.ls.LSInput;
+import org.w3c.dom.ls.LSResourceResolver;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
@@ -839,6 +841,7 @@ public class BookChecker extends AbstractArchiveChecker {
                     }
 
                     Validator validator = aorAnnotationSchema.newValidator();
+                    // TODO better caching of schema...
                     validator.setErrorHandler(new ErrorHandler() {
                         @Override
                         public void warning(SAXParseException e) throws SAXException {

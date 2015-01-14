@@ -13,8 +13,12 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.EntityResolver;
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+import org.xml.sax.ext.EntityResolver2;
+import rosa.archive.core.util.CachingUrlEntityResolver;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Location;
@@ -31,6 +35,8 @@ import rosa.archive.model.aor.XRef;
  *
  */
 public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
+    private static final CachingUrlEntityResolver entityResolver = new CachingUrlEntityResolver();
+
     @Override
     public AnnotatedPage read(InputStream is, final List<String> errors) throws IOException {
 
@@ -46,7 +52,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
 //            factory.setAttribute(JAXPConstants.JAXP_SCHEMA_LANGUAGE, JAXPConstants.W3C_XML_SCHEMA);
 
             DocumentBuilder builder = factory.newDocumentBuilder();
-
+            builder.setEntityResolver(entityResolver);
             Document doc = builder.parse(is);
             return buildPage(doc, errors);
 
