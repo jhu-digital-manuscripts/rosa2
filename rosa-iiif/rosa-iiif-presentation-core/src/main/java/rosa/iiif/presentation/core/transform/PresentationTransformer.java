@@ -134,6 +134,14 @@ public class PresentationTransformer implements IIIFNames {
         manifest.setViewingHint(ViewingHint.PAGED);
         transformMetadata(book, collection.getAllSupportedLanguages(), manifest);
 
+        // Set manifest thumbnail, set to thumbnail for default sequence
+        if (manifest.getSequences().size() > 0) {
+            Sequence defaultSequence = manifest.getSequences().get(manifest.getDefaultSequence());
+
+            manifest.setThumbnailUrl(defaultSequence.getThumbnailUrl());
+            manifest.setThumbnailService(defaultSequence.getThumbnailService());
+        }
+
         return manifest;
     }
 
@@ -221,7 +229,6 @@ public class PresentationTransformer implements IIIFNames {
             sequence.setLabel(label, lang);
         }
 
-
         List<Canvas> canvases = new ArrayList<>();
         int count = 0;
         boolean hasNotBeenSet = true;
@@ -239,6 +246,14 @@ public class PresentationTransformer implements IIIFNames {
             count++;
         }
         sequence.setCanvases(canvases);
+
+        // Set thumbnail for this sequence, set to the thumbnail for the start canvas
+        if (sequence.getCanvases().size() > 0) {
+            Canvas defaultCanvas = sequence.getCanvases().get(sequence.getStartCanvas());
+
+            sequence.setThumbnailUrl(defaultCanvas.getThumbnailUrl());
+            sequence.setThumbnailService(defaultCanvas.getThumbnailService());
+        }
 
         return sequence;
     }
@@ -293,6 +308,14 @@ public class PresentationTransformer implements IIIFNames {
         otherContent.setAnnotations(aorAnnotations);
         canvas.setOtherContent(otherContent);
         // TODO add rosa transcriptions as annotations!
+
+        // Add a thumbnail for this canvas, set to its default image
+        if (canvas.getImages().size() > 0) {
+            Annotation defaultImage = canvas.getImages().get(0);
+
+            canvas.setThumbnailUrl(defaultImage.getDefaultSource().getUri());
+            canvas.setThumbnailService(defaultImage.getDefaultSource().getService());
+        }
 
         return canvas;
     }
