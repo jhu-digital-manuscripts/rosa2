@@ -22,6 +22,7 @@ import org.xml.sax.SAXParseException;
 
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.serialize.SerializerSet;
+import rosa.archive.core.util.CachingUrlLSResourceResolver;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -55,6 +56,7 @@ import com.google.inject.Inject;
 public class BookChecker extends AbstractArchiveChecker {
     private static final String PAGE_PATTERN = "\\w*\\d+(r|v|R|V)";
     private static final String MANUSCRIPT = "manuscript";
+    private static final LSResourceResolver resourceResolver = new CachingUrlLSResourceResolver();
     private static Schema aorAnnotationSchema;
 
     @Inject
@@ -841,7 +843,8 @@ public class BookChecker extends AbstractArchiveChecker {
                     }
 
                     Validator validator = aorAnnotationSchema.newValidator();
-                    // TODO better caching of schema...
+                    validator.setResourceResolver(resourceResolver);
+
                     validator.setErrorHandler(new ErrorHandler() {
                         @Override
                         public void warning(SAXParseException e) throws SAXException {
