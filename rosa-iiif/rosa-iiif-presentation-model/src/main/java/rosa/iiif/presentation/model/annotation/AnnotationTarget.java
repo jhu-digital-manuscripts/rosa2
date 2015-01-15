@@ -42,30 +42,38 @@ public class AnnotationTarget implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        AnnotationTarget that = (AnnotationTarget) o;
-
-        if (selector != null ? !selector.equals(that.selector) : that.selector != null) return false;
-        if (uri != null ? !uri.equals(that.uri) : that.uri != null) return false;
-
-        return true;
-    }
-
-    @Override
     public int hashCode() {
-        int result = uri != null ? uri.hashCode() : 0;
-        result = 31 * result + (selector != null ? selector.hashCode() : 0);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((selector == null) ? 0 : selector.hashCode());
+        result = prime * result + ((uri == null) ? 0 : uri.hashCode());
         return result;
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (!(obj instanceof AnnotationTarget))
+            return false;
+        AnnotationTarget other = (AnnotationTarget) obj;
+        if (selector == null) {
+            if (other.selector != null)
+                return false;
+        } else if (!selector.equals(other.selector))
+            return false;
+        if (uri == null) {
+            if (other.uri != null)
+                return false;
+        } else if (!uri.equals(other.uri))
+            return false;
+        return true;
+    }
+
+    @Override
     public String toString() {
-        return "AnnotationTarget{" +
-                "uri='" + uri + '\'' +
-                ", selector=" + selector +
-                '}';
+        return "AnnotationTarget [uri=" + uri + ", selector=" + selector + "]";
     }
 }

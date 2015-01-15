@@ -1,6 +1,5 @@
 package rosa.iiif.presentation.model;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,14 +31,13 @@ import java.util.List;
  * Ranges are linked or embedded within the manifest in a structures field. It is a flat list of objects,
  * even if there is only one range.
  */
-public class Range extends PresentationBase implements Serializable {
+public class Range extends PresentationBase {
     private static final long serialVersionUID = 1L;
 
-    private ViewingDirection viewingDirection;
     private int startingCanvas;
 
     private List<String> canvases;
-    private List<Range> ranges;
+    private List<String> ranges;
 
     public Range() {
         canvases = new ArrayList<>();
@@ -70,48 +68,60 @@ public class Range extends PresentationBase implements Serializable {
         this.canvases = canvases;
     }
 
-    public List<Range> getRanges() {
+    public List<String> getRanges() {
         return ranges;
     }
 
-    public void setRanges(List<Range> ranges) {
+    public void setRanges(List<String> ranges) {
         this.ranges = ranges;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-
-        Range range = (Range) o;
-
-        if (startingCanvas != range.startingCanvas) return false;
-        if (canvases != null ? !canvases.equals(range.canvases) : range.canvases != null) return false;
-        if (ranges != null ? !ranges.equals(range.ranges) : range.ranges != null) return false;
-        if (viewingDirection != range.viewingDirection) return false;
-
-        return true;
-    }
-
-    @Override
     public int hashCode() {
+        final int prime = 31;
         int result = super.hashCode();
-        result = 31 * result + (viewingDirection != null ? viewingDirection.hashCode() : 0);
-        result = 31 * result + startingCanvas;
-        result = 31 * result + (canvases != null ? canvases.hashCode() : 0);
-        result = 31 * result + (ranges != null ? ranges.hashCode() : 0);
+        result = prime * result + ((canvases == null) ? 0 : canvases.hashCode());
+        result = prime * result + ((ranges == null) ? 0 : ranges.hashCode());
+        result = prime * result + startingCanvas;
         return result;
     }
 
     @Override
+    protected boolean canEqual(Object obj) {
+        return obj instanceof Range;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (!(obj instanceof Range))
+            return false;
+        Range other = (Range) obj;
+        
+        if (!other.canEqual(this)) {
+            return false;
+        }
+        
+        if (canvases == null) {
+            if (other.canvases != null)
+                return false;
+        } else if (!canvases.equals(other.canvases))
+            return false;
+        if (ranges == null) {
+            if (other.ranges != null)
+                return false;
+        } else if (!ranges.equals(other.ranges))
+            return false;
+        if (startingCanvas != other.startingCanvas)
+            return false;
+        return true;
+    }
+
+    @Override
     public String toString() {
-        return "Range{" +
-                super.toString() +
-                "viewingDirection=" + viewingDirection +
-                ", startingCanvas=" + startingCanvas +
-                ", canvases=" + canvases +
-                ", ranges=" + ranges +
-                '}';
+        return "Range [startingCanvas=" + startingCanvas + ", canvases=" + canvases + ", ranges=" + ranges + "]";
     }
 }

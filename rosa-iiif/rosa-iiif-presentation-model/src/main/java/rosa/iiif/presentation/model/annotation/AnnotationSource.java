@@ -12,7 +12,6 @@ public class AnnotationSource implements Serializable {
     protected String type;
     protected String format;
     protected Service service;
-
     protected String embeddedText;
     protected String embeddedLanguage;
 
@@ -120,46 +119,70 @@ public class AnnotationSource implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        AnnotationSource that = (AnnotationSource) o;
-
-        if (embeddedLanguage != null ? !embeddedLanguage.equals(that.embeddedLanguage) : that.embeddedLanguage != null)
-            return false;
-        if (embeddedText != null ? !embeddedText.equals(that.embeddedText) : that.embeddedText != null) return false;
-        if (format != null ? !format.equals(that.format) : that.format != null) return false;
-        if (selector != null ? !selector.equals(that.selector) : that.selector != null) return false;
-        if (service != null ? !service.equals(that.service) : that.service != null) return false;
-        if (type != null ? !type.equals(that.type) : that.type != null) return false;
-        if (uri != null ? !uri.equals(that.uri) : that.uri != null) return false;
-
-        return true;
-    }
-
-    @Override
     public int hashCode() {
-        int result = uri != null ? uri.hashCode() : 0;
-        result = 31 * result + (type != null ? type.hashCode() : 0);
-        result = 31 * result + (format != null ? format.hashCode() : 0);
-        result = 31 * result + (service != null ? service.hashCode() : 0);
-        result = 31 * result + (embeddedText != null ? embeddedText.hashCode() : 0);
-        result = 31 * result + (embeddedLanguage != null ? embeddedLanguage.hashCode() : 0);
-        result = 31 * result + (selector != null ? selector.hashCode() : 0);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((embeddedLanguage == null) ? 0 : embeddedLanguage.hashCode());
+        result = prime * result + ((embeddedText == null) ? 0 : embeddedText.hashCode());
+        result = prime * result + ((format == null) ? 0 : format.hashCode());
+        result = prime * result + ((selector == null) ? 0 : selector.hashCode());
+        result = prime * result + ((service == null) ? 0 : service.hashCode());
+        result = prime * result + ((type == null) ? 0 : type.hashCode());
+        result = prime * result + ((uri == null) ? 0 : uri.hashCode());
         return result;
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (!(obj instanceof AnnotationSource))
+            return false;
+        AnnotationSource other = (AnnotationSource) obj;
+        if (embeddedLanguage == null) {
+            if (other.embeddedLanguage != null)
+                return false;
+        } else if (!embeddedLanguage.equals(other.embeddedLanguage))
+            return false;
+        if (embeddedText == null) {
+            if (other.embeddedText != null)
+                return false;
+        } else if (!embeddedText.equals(other.embeddedText))
+            return false;
+        if (format == null) {
+            if (other.format != null)
+                return false;
+        } else if (!format.equals(other.format))
+            return false;
+        if (selector == null) {
+            if (other.selector != null)
+                return false;
+        } else if (!selector.equals(other.selector))
+            return false;
+        if (service == null) {
+            if (other.service != null)
+                return false;
+        } else if (!service.equals(other.service))
+            return false;
+        if (type == null) {
+            if (other.type != null)
+                return false;
+        } else if (!type.equals(other.type))
+            return false;
+        if (uri == null) {
+            if (other.uri != null)
+                return false;
+        } else if (!uri.equals(other.uri))
+            return false;
+        return true;
+    }
+
+    @Override
     public String toString() {
-        return "AnnotationSource{" +
-                "uri='" + uri + '\'' +
-                ", type='" + type + '\'' +
-                ", format='" + format + '\'' +
-                ", service=" + service +
-                ", embeddedText='" + embeddedText + '\'' +
-                ", embeddedLanguage='" + embeddedLanguage + '\'' +
-                ", selector=" + selector +
-                '}';
+        return "AnnotationSource [uri=" + uri + ", type=" + type + ", format=" + format + ", service=" + service
+                + ", embeddedText=" + embeddedText + ", embeddedLanguage=" + embeddedLanguage + ", selector="
+                + selector + "]";
     }
 }

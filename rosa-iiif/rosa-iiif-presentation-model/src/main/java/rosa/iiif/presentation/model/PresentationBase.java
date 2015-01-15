@@ -25,8 +25,11 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
      * Type of resource: Manifest, canvas, image content, etc
      */
     protected String type;
+    
     protected ViewingHint viewingHint;
-
+    
+    protected ViewingDirection viewingDirection;
+    
     // Descriptive Properties
     /**
      * Human readable label, name, or title. Plain text only.
@@ -35,7 +38,8 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
     /**
      * Long-form prose description, can include some basic HTML formatting.
      */
-    protected HtmlValue description;
+    protected HtmlValue description;     
+
     /**
      * URL that should follow the IIIF Image API syntax.
      */
@@ -256,79 +260,157 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
     public void setMetadata(Map<String, HtmlValue> metadata) {
         this.metadata = metadata;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        PresentationBase that = (PresentationBase) o;
-
-        if (attribution != null ? !attribution.equals(that.attribution) : that.attribution != null) return false;
-        if (context != null ? !context.equals(that.context) : that.context != null) return false;
-        if (description != null ? !description.equals(that.description) : that.description != null) return false;
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (label != null ? !label.equals(that.label) : that.label != null) return false;
-        if (license != null ? !license.equals(that.license) : that.license != null) return false;
-        if (logo != null ? !logo.equals(that.logo) : that.logo != null) return false;
-        if (metadata != null ? !metadata.equals(that.metadata) : that.metadata != null) return false;
-        if (relatedFormat != null ? !relatedFormat.equals(that.relatedFormat) : that.relatedFormat != null)
-            return false;
-        if (relatedUri != null ? !relatedUri.equals(that.relatedUri) : that.relatedUri != null) return false;
-        if (seeAlso != null ? !seeAlso.equals(that.seeAlso) : that.seeAlso != null) return false;
-        if (service != null ? !service.equals(that.service) : that.service != null) return false;
-        if (thumbnailService != null ? !thumbnailService.equals(that.thumbnailService) : that.thumbnailService != null)
-            return false;
-        if (thumbnailUrl != null ? !thumbnailUrl.equals(that.thumbnailUrl) : that.thumbnailUrl != null) return false;
-        if (type != null ? !type.equals(that.type) : that.type != null) return false;
-        if (viewingHint != null ? !viewingHint.equals(that.viewingHint) : that.viewingHint != null) return false;
-        if (within != null ? !within.equals(that.within) : that.within != null) return false;
-
-        return true;
+    
+    public ViewingDirection getViewingDirection() {
+        return viewingDirection;
     }
 
-    @Override
+    public void setViewingDirection(ViewingDirection viewingDirection) {
+        this.viewingDirection = viewingDirection;
+    }
+
+    /**
+     * Helper for subclasses.
+     * 
+     * @return hashCode
+     */
     public int hashCode() {
-        int result = context != null ? context.hashCode() : 0;
-        result = 31 * result + (id != null ? id.hashCode() : 0);
-        result = 31 * result + (type != null ? type.hashCode() : 0);
-        result = 31 * result + (viewingHint != null ? viewingHint.hashCode() : 0);
-        result = 31 * result + (label != null ? label.hashCode() : 0);
-        result = 31 * result + (description != null ? description.hashCode() : 0);
-        result = 31 * result + (thumbnailUrl != null ? thumbnailUrl.hashCode() : 0);
-        result = 31 * result + (thumbnailService != null ? thumbnailService.hashCode() : 0);
-        result = 31 * result + (attribution != null ? attribution.hashCode() : 0);
-        result = 31 * result + (license != null ? license.hashCode() : 0);
-        result = 31 * result + (logo != null ? logo.hashCode() : 0);
-        result = 31 * result + (seeAlso != null ? seeAlso.hashCode() : 0);
-        result = 31 * result + (service != null ? service.hashCode() : 0);
-        result = 31 * result + (relatedUri != null ? relatedUri.hashCode() : 0);
-        result = 31 * result + (relatedFormat != null ? relatedFormat.hashCode() : 0);
-        result = 31 * result + (within != null ? within.hashCode() : 0);
-        result = 31 * result + (metadata != null ? metadata.hashCode() : 0);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((attribution == null) ? 0 : attribution.hashCode());
+        result = prime * result + ((context == null) ? 0 : context.hashCode());
+        result = prime * result + ((description == null) ? 0 : description.hashCode());
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        result = prime * result + ((label == null) ? 0 : label.hashCode());
+        result = prime * result + ((license == null) ? 0 : license.hashCode());
+        result = prime * result + ((logo == null) ? 0 : logo.hashCode());
+        result = prime * result + ((metadata == null) ? 0 : metadata.hashCode());
+        result = prime * result + ((relatedFormat == null) ? 0 : relatedFormat.hashCode());
+        result = prime * result + ((relatedUri == null) ? 0 : relatedUri.hashCode());
+        result = prime * result + ((seeAlso == null) ? 0 : seeAlso.hashCode());
+        result = prime * result + ((service == null) ? 0 : service.hashCode());
+        result = prime * result + ((thumbnailService == null) ? 0 : thumbnailService.hashCode());
+        result = prime * result + ((thumbnailUrl == null) ? 0 : thumbnailUrl.hashCode());
+        result = prime * result + ((type == null) ? 0 : type.hashCode());
+        result = prime * result + ((viewingDirection == null) ? 0 : viewingDirection.hashCode());
+        result = prime * result + ((viewingHint == null) ? 0 : viewingHint.hashCode());
+        result = prime * result + ((within == null) ? 0 : within.hashCode());
         return result;
     }
 
+    protected boolean canEqual(Object obj) {
+        return (obj instanceof PresentationBase);
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (!(obj instanceof PresentationBase))
+            return false;
+        PresentationBase other = (PresentationBase) obj;
+        
+        if (!other.canEqual(this)) {
+            return false;
+        }
+        
+        if (attribution == null) {
+            if (other.attribution != null)
+                return false;
+        } else if (!attribution.equals(other.attribution))
+            return false;
+        if (context == null) {
+            if (other.context != null)
+                return false;
+        } else if (!context.equals(other.context))
+            return false;
+        if (description == null) {
+            if (other.description != null)
+                return false;
+        } else if (!description.equals(other.description))
+            return false;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        if (label == null) {
+            if (other.label != null)
+                return false;
+        } else if (!label.equals(other.label))
+            return false;
+        if (license == null) {
+            if (other.license != null)
+                return false;
+        } else if (!license.equals(other.license))
+            return false;
+        if (logo == null) {
+            if (other.logo != null)
+                return false;
+        } else if (!logo.equals(other.logo))
+            return false;
+        if (metadata == null) {
+            if (other.metadata != null)
+                return false;
+        } else if (!metadata.equals(other.metadata))
+            return false;
+        if (relatedFormat == null) {
+            if (other.relatedFormat != null)
+                return false;
+        } else if (!relatedFormat.equals(other.relatedFormat))
+            return false;
+        if (relatedUri == null) {
+            if (other.relatedUri != null)
+                return false;
+        } else if (!relatedUri.equals(other.relatedUri))
+            return false;
+        if (seeAlso == null) {
+            if (other.seeAlso != null)
+                return false;
+        } else if (!seeAlso.equals(other.seeAlso))
+            return false;
+        if (service == null) {
+            if (other.service != null)
+                return false;
+        } else if (!service.equals(other.service))
+            return false;
+        if (thumbnailService == null) {
+            if (other.thumbnailService != null)
+                return false;
+        } else if (!thumbnailService.equals(other.thumbnailService))
+            return false;
+        if (thumbnailUrl == null) {
+            if (other.thumbnailUrl != null)
+                return false;
+        } else if (!thumbnailUrl.equals(other.thumbnailUrl))
+            return false;
+        if (type == null) {
+            if (other.type != null)
+                return false;
+        } else if (!type.equals(other.type))
+            return false;
+        if (viewingDirection != other.viewingDirection)
+            return false;
+        if (viewingHint != other.viewingHint)
+            return false;
+        if (within == null) {
+            if (other.within != null)
+                return false;
+        } else if (!within.equals(other.within))
+            return false;
+        return true;
+    }
+    
     @Override
     public String toString() {
-        return "PresentationBase{" +
-                "context='" + context + '\'' +
-                ", id='" + id + '\'' +
-                ", type='" + type + '\'' +
-                ", viewingHint='" + viewingHint + '\'' +
-                ", label='" + label + '\'' +
-                ", description='" + description + '\'' +
-                ", thumbnailUrl='" + thumbnailUrl + '\'' +
-                ", thumbnailService=" + thumbnailService +
-                ", attribution='" + attribution + '\'' +
-                ", license='" + license + '\'' +
-                ", logo='" + logo + '\'' +
-                ", seeAlso='" + seeAlso + '\'' +
-                ", service='" + service + '\'' +
-                ", relatedUri='" + relatedUri + '\'' +
-                ", relatedFormat='" + relatedFormat + '\'' +
-                ", within='" + within + '\'' +
-                ", metadata=" + metadata +
-                '}';
+        return "PresentationBase [context=" + context + ", id=" + id + ", type=" + type + ", viewingHint="
+                + viewingHint + ", viewingDirection=" + viewingDirection + ", label=" + label + ", description="
+                + description + ", thumbnailUrl=" + thumbnailUrl + ", thumbnailService=" + thumbnailService
+                + ", attribution=" + attribution + ", license=" + license + ", logo=" + logo + ", seeAlso=" + seeAlso
+                + ", service=" + service + ", relatedUri=" + relatedUri + ", relatedFormat=" + relatedFormat
+                + ", within=" + within + ", metadata=" + metadata + "]";
     }
+
 }

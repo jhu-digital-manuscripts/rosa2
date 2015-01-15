@@ -1,13 +1,12 @@
 package rosa.iiif.presentation.model;
 
-import rosa.iiif.presentation.model.annotation.Annotation;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class AnnotationList extends PresentationBase implements Iterable<Annotation>, Serializable {
+import rosa.iiif.presentation.model.annotation.Annotation;
+
+public class AnnotationList extends PresentationBase implements Iterable<Annotation> {
     private static final long serialVersionUID = 1L;
 
     private List<Annotation> annotations;
@@ -37,30 +36,42 @@ public class AnnotationList extends PresentationBase implements Iterable<Annotat
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-
-        AnnotationList that = (AnnotationList) o;
-
-        if (annotations != null ? !annotations.equals(that.annotations) : that.annotations != null) return false;
-
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + ((annotations == null) ? 0 : annotations.hashCode());
+        return result;
+    }
+    
+    @Override
+    protected boolean canEqual(Object obj) {
+        return obj instanceof AnnotationList;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (!(obj instanceof AnnotationList))
+            return false;
+        AnnotationList other = (AnnotationList) obj;
+        
+        if (!other.canEqual(this)) {
+            return false;
+        }
+        
+        if (annotations == null) {
+            if (other.annotations != null)
+                return false;
+        } else if (!annotations.equals(other.annotations))
+            return false;
         return true;
     }
 
     @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + (annotations != null ? annotations.hashCode() : 0);
-        return result;
-    }
-
-    @Override
     public String toString() {
-        return "AnnotationList{" +
-                super.toString() +
-                "annotations=" + annotations +
-                '}';
+        return "AnnotationList [annotations=" + annotations + "]";
     }
 }

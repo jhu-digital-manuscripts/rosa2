@@ -19,30 +19,38 @@ public class TextValue {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        TextValue textValue = (TextValue) o;
-
-        if (language != null ? !language.equals(textValue.language) : textValue.language != null) return false;
-        if (value != null ? !value.equals(textValue.value) : textValue.value != null) return false;
-
-        return true;
-    }
-
-    @Override
     public int hashCode() {
-        int result = value != null ? value.hashCode() : 0;
-        result = 31 * result + (language != null ? language.hashCode() : 0);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((language == null) ? 0 : language.hashCode());
+        result = prime * result + ((value == null) ? 0 : value.hashCode());
         return result;
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (!(obj instanceof TextValue))
+            return false;
+        TextValue other = (TextValue) obj;
+        if (language == null) {
+            if (other.language != null)
+                return false;
+        } else if (!language.equals(other.language))
+            return false;
+        if (value == null) {
+            if (other.value != null)
+                return false;
+        } else if (!value.equals(other.value))
+            return false;
+        return true;
+    }
+
+    @Override
     public String toString() {
-        return "TextValue{" +
-                "value='" + value + '\'' +
-                ", language='" + language + '\'' +
-                '}';
+        return "TextValue [value=" + value + ", language=" + language + "]";
     }
 }

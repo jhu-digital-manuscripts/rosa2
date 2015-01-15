@@ -1,6 +1,5 @@
 package rosa.iiif.presentation.model;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +10,7 @@ import java.util.List;
  * Collections MUST have an id and type, and SHOULD have metadata, description,
  * and thumbnail. Other fields are optional.
  */
-public class Collection extends PresentationBase implements Serializable {
+public class Collection extends PresentationBase {
     private static final long serialVersionUID = 1L;
 
     private List<Reference> collections;
@@ -39,25 +38,44 @@ public class Collection extends PresentationBase implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-
-        Collection that = (Collection) o;
-
-        if (collections != null ? !collections.equals(that.collections) : that.collections != null) return false;
-        if (manifests != null ? !manifests.equals(that.manifests) : that.manifests != null) return false;
-
-        return true;
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + ((collections == null) ? 0 : collections.hashCode());
+        result = prime * result + ((manifests == null) ? 0 : manifests.hashCode());
+        return result;
     }
 
     @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + (collections != null ? collections.hashCode() : 0);
-        result = 31 * result + (manifests != null ? manifests.hashCode() : 0);
-        return result;
+    protected boolean canEqual(Object obj) {
+        return obj instanceof Collection;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (!(obj instanceof Collection))
+            return false;
+        Collection other = (Collection) obj;
+        
+        if (!other.canEqual(this)) {
+            return false;
+        }
+        
+        if (collections == null) {
+            if (other.collections != null)
+                return false;
+        } else if (!collections.equals(other.collections))
+            return false;
+        if (manifests == null) {
+            if (other.manifests != null)
+                return false;
+        } else if (!manifests.equals(other.manifests))
+            return false;
+        return true;
     }
 
     @Override

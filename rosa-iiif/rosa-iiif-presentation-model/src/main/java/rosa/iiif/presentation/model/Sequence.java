@@ -1,6 +1,5 @@
 package rosa.iiif.presentation.model;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -31,10 +30,9 @@ import java.util.List;
  * the basic information of label, @type and @id. The default sequence should be written out
  * in full within the manifest file, as below but must not have the @context property.
  */
-public class Sequence extends PresentationBase implements Iterable<Canvas>, Serializable {
+public class Sequence extends PresentationBase implements Iterable<Canvas> {
     private static final long serialVersionUID = 1L;
 
-    private ViewingDirection viewingDirection;
     private int startCanvas;
 
     private List<Canvas> canvases;
@@ -45,14 +43,6 @@ public class Sequence extends PresentationBase implements Iterable<Canvas>, Seri
         startCanvas = -1;
 
         setType(IIIFNames.SC_SEQUENCE);
-    }
-
-    public ViewingDirection getViewingDirection() {
-        return viewingDirection;
-    }
-
-    public void setViewingDirection(ViewingDirection viewingDirection) {
-        this.viewingDirection = viewingDirection;
     }
 
     public int getStartCanvas() {
@@ -77,36 +67,45 @@ public class Sequence extends PresentationBase implements Iterable<Canvas>, Seri
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-
-        Sequence canvases1 = (Sequence) o;
-
-        if (startCanvas != canvases1.startCanvas) return false;
-        if (canvases != null ? !canvases.equals(canvases1.canvases) : canvases1.canvases != null) return false;
-        if (viewingDirection != canvases1.viewingDirection) return false;
-
-        return true;
-    }
-
-    @Override
     public int hashCode() {
+        final int prime = 31;
         int result = super.hashCode();
-        result = 31 * result + (viewingDirection != null ? viewingDirection.hashCode() : 0);
-        result = 31 * result + startCanvas;
-        result = 31 * result + (canvases != null ? canvases.hashCode() : 0);
+        result = prime * result + ((canvases == null) ? 0 : canvases.hashCode());
+        result = prime * result + startCanvas;
         return result;
     }
 
     @Override
+    protected boolean canEqual(Object obj) {
+        return obj instanceof Sequence;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (!(obj instanceof Sequence))
+            return false;
+        Sequence other = (Sequence) obj;
+        
+        if (!other.canEqual(this)) {
+            return false;
+        }
+        
+        if (canvases == null) {
+            if (other.canvases != null)
+                return false;
+        } else if (!canvases.equals(other.canvases))
+            return false;
+        if (startCanvas != other.startCanvas)
+            return false;
+        return true;
+    }
+
+    @Override
     public String toString() {
-        return "Sequence{" +
-                super.toString() +
-                "viewingDirection=" + viewingDirection +
-                ", startCanvas=" + startCanvas +
-                ", canvases=" + canvases +
-                '}';
+        return "Sequence [startCanvas=" + startCanvas + ", canvases=" + canvases + "]";
     }
 }

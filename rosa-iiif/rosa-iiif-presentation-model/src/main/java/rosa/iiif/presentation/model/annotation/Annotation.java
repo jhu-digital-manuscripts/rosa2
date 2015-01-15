@@ -1,13 +1,12 @@
 package rosa.iiif.presentation.model.annotation;
 
-import rosa.iiif.presentation.model.IIIFNames;
-import rosa.iiif.presentation.model.PresentationBase;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Annotation extends PresentationBase implements Serializable {
+import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.PresentationBase;
+
+public class Annotation extends PresentationBase {
     private static final long serialVersionUID = 1L;
 
     protected String motivation;
@@ -103,42 +102,61 @@ public class Annotation extends PresentationBase implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-
-        Annotation that = (Annotation) o;
-
-        if (height != that.height) return false;
-        if (width != that.width) return false;
-        if (motivation != null ? !motivation.equals(that.motivation) : that.motivation != null) return false;
-        if (sources != null ? !sources.equals(that.sources) : that.sources != null) return false;
-        if (targets != null ? !targets.equals(that.targets) : that.targets != null) return false;
-
-        return true;
-    }
-
-    @Override
     public int hashCode() {
+        final int prime = 31;
         int result = super.hashCode();
-        result = 31 * result + (motivation != null ? motivation.hashCode() : 0);
-        result = 31 * result + width;
-        result = 31 * result + height;
-        result = 31 * result + (sources != null ? sources.hashCode() : 0);
-        result = 31 * result + (targets != null ? targets.hashCode() : 0);
+        result = prime * result + height;
+        result = prime * result + ((motivation == null) ? 0 : motivation.hashCode());
+        result = prime * result + ((sources == null) ? 0 : sources.hashCode());
+        result = prime * result + ((targets == null) ? 0 : targets.hashCode());
+        result = prime * result + width;
         return result;
     }
 
     @Override
+    protected boolean canEqual(Object obj) {
+        return obj instanceof Annotation;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (!(obj instanceof Annotation))
+            return false;
+        Annotation other = (Annotation) obj;
+        
+        if (!other.canEqual(this)) {
+            return false;
+        }
+        
+        if (height != other.height)
+            return false;
+        if (motivation == null) {
+            if (other.motivation != null)
+                return false;
+        } else if (!motivation.equals(other.motivation))
+            return false;
+        if (sources == null) {
+            if (other.sources != null)
+                return false;
+        } else if (!sources.equals(other.sources))
+            return false;
+        if (targets == null) {
+            if (other.targets != null)
+                return false;
+        } else if (!targets.equals(other.targets))
+            return false;
+        if (width != other.width)
+            return false;
+        return true;
+    }
+
+    @Override
     public String toString() {
-        return "Annotation{" +
-                super.toString() +
-                "motivation='" + motivation + '\'' +
-                ", width=" + width +
-                ", height=" + height +
-                ", sources=" + sources +
-                ", targets=" + targets +
-                '}';
+        return "Annotation [motivation=" + motivation + ", width=" + width + ", height=" + height + ", sources="
+                + sources + ", targets=" + targets + "]";
     }
 }

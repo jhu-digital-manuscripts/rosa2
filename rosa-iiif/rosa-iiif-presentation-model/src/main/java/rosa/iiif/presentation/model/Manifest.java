@@ -1,26 +1,27 @@
 package rosa.iiif.presentation.model;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Manifest extends PresentationBase implements Serializable {
+public class Manifest extends PresentationBase {
     private static final long serialVersionUID = 1L;
 
-    private ViewingDirection viewingDirection;
-    private List<Sequence> sequences;
-    private int defaultSequence;
-
+    private Sequence defaultSequence;    
+    private List<Reference> otherSequences;
+    private List<Range> ranges;
+    private List<Reference> otherRanges;
+    
     public Manifest() {
-        sequences = new ArrayList<>();
-        setType(IIIFNames.SC_MANIFEST);
+        this(null, null);
     }
 
-    public Manifest(ViewingDirection viewingDirection, List<Sequence> sequences, int defaultSequence) {
+    public Manifest(ViewingDirection viewingDirection, Sequence sequence) {
         this.viewingDirection = viewingDirection;
-        this.sequences = sequences;
-        this.defaultSequence = defaultSequence;
-
+        this.defaultSequence = sequence;
+        this.otherSequences = new ArrayList<>();
+        this.ranges = new ArrayList<>();
+        this.otherRanges = new ArrayList<>();
+        
         setType(IIIFNames.SC_MANIFEST);
     }
 
@@ -30,55 +31,97 @@ public class Manifest extends PresentationBase implements Serializable {
 
     public void setViewingDirection(ViewingDirection viewingDirection) {
         this.viewingDirection = viewingDirection;
+    
     }
 
-    public List<Sequence> getSequences() {
-        return sequences;
+    public List<Range> getRanges() {
+        return ranges;
     }
 
-    public void setSequences(List<Sequence> sequences) {
-        this.sequences = sequences;
+    public void setRanges(List<Range> ranges) {
+        this.ranges = ranges;
     }
 
-    public int getDefaultSequence() {
+    public List<Reference> getOtherRanges() {
+        return otherRanges;
+    }
+
+    public void setOtherRanges(List<Reference> otherRanges) {
+        this.otherRanges = otherRanges;
+    }
+
+    public List<Reference> getOtherSequences() {
+        return otherSequences;
+    }
+
+    public void setOtherSequences(List<Reference> sequences) {
+        this.otherSequences = sequences;
+    }
+
+    public Sequence getDefaultSequence() {
         return defaultSequence;
     }
 
-    public void setDefaultSequence(int defaultSequence) {
+    public void setDefaultSequence(Sequence defaultSequence) {
         this.defaultSequence = defaultSequence;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + ((defaultSequence == null) ? 0 : defaultSequence.hashCode());
+        result = prime * result + ((otherRanges == null) ? 0 : otherRanges.hashCode());
+        result = prime * result + ((otherSequences == null) ? 0 : otherSequences.hashCode());
+        result = prime * result + ((ranges == null) ? 0 : ranges.hashCode());
+        return result;
+    }
+    
+    @Override
+    protected boolean canEqual(Object obj) {
+        return obj instanceof Manifest;
+    }
 
-        Manifest manifest = (Manifest) o;
-
-        if (defaultSequence != manifest.defaultSequence) return false;
-        if (sequences != null ? !sequences.equals(manifest.sequences) : manifest.sequences != null) return false;
-        if (viewingDirection != manifest.viewingDirection) return false;
-
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (!(obj instanceof Manifest))
+            return false;
+        Manifest other = (Manifest) obj;
+        
+        if (!other.canEqual(this)) {
+            return false;
+        }
+        
+        if (defaultSequence == null) {
+            if (other.defaultSequence != null)
+                return false;
+        } else if (!defaultSequence.equals(other.defaultSequence))
+            return false;
+        if (otherRanges == null) {
+            if (other.otherRanges != null)
+                return false;
+        } else if (!otherRanges.equals(other.otherRanges))
+            return false;
+        if (otherSequences == null) {
+            if (other.otherSequences != null)
+                return false;
+        } else if (!otherSequences.equals(other.otherSequences))
+            return false;
+        if (ranges == null) {
+            if (other.ranges != null)
+                return false;
+        } else if (!ranges.equals(other.ranges))
+            return false;
         return true;
     }
 
     @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + (viewingDirection != null ? viewingDirection.hashCode() : 0);
-        result = 31 * result + (sequences != null ? sequences.hashCode() : 0);
-        result = 31 * result + defaultSequence;
-        return result;
-    }
-
-    @Override
     public String toString() {
-        return "Manifest{" +
-                super.toString() +
-                "viewingDirection=" + viewingDirection +
-                ", sequences=" + sequences +
-                ", defaultSequence=" + defaultSequence +
-                '}';
+        return "Manifest [defaultSequence=" + defaultSequence + ", otherSequences=" + otherSequences + ", ranges="
+                + ranges + ", otherRanges=" + otherRanges + "]";
     }
 }

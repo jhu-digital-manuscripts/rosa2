@@ -88,23 +88,28 @@ public class SvgSelector implements Selector, Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        SvgSelector that = (SvgSelector) o;
-
-        if (!Arrays.equals(points, that.points)) return false;
-        if (type != that.type) return false;
-
-        return true;
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + Arrays.deepHashCode(points);
+        result = prime * result + ((type == null) ? 0 : type.hashCode());
+        return result;
     }
 
     @Override
-    public int hashCode() {
-        int result = type != null ? type.hashCode() : 0;
-        result = 31 * result + (points != null ? Arrays.hashCode(points) : 0);
-        return result;
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (!(obj instanceof SvgSelector))
+            return false;
+        SvgSelector other = (SvgSelector) obj;
+        if (!Arrays.deepEquals(points, other.points))
+            return false;
+        if (type != other.type)
+            return false;
+        return true;
     }
 
     @Override

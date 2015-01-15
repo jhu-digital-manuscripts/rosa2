@@ -1,9 +1,8 @@
 package rosa.iiif.presentation.model;
 
-import java.io.Serializable;
 import java.util.Arrays;
 
-public class IIIFImageService extends Service implements Serializable {
+public class IIIFImageService extends Service {
     private static final long serialVersionUID = 1L;
 
     private int width;
@@ -69,42 +68,52 @@ public class IIIFImageService extends Service implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + height;
+        result = prime * result + Arrays.hashCode(scaleFactors);
+        result = prime * result + tileHeight;
+        result = prime * result + tileWidth;
+        result = prime * result + width;
+        return result;
+    }
+    
+    @Override
+    protected boolean canEqual(Object obj) {
+        return obj instanceof IIIFImageService;
+    }
 
-        IIIFImageService that = (IIIFImageService) o;
-
-        if (height != that.height) return false;
-        if (tileHeight != that.tileHeight) return false;
-        if (tileWidth != that.tileWidth) return false;
-        if (width != that.width) return false;
-        if (!Arrays.equals(scaleFactors, that.scaleFactors)) return false;
-
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (!(obj instanceof IIIFImageService))
+            return false;
+        IIIFImageService other = (IIIFImageService) obj;
+        
+        if (!other.canEqual(this)) {
+            return false;
+        }
+        
+        if (height != other.height)
+            return false;
+        if (!Arrays.equals(scaleFactors, other.scaleFactors))
+            return false;
+        if (tileHeight != other.tileHeight)
+            return false;
+        if (tileWidth != other.tileWidth)
+            return false;
+        if (width != other.width)
+            return false;
         return true;
     }
 
     @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + width;
-        result = 31 * result + height;
-        result = 31 * result + tileWidth;
-        result = 31 * result + tileHeight;
-        result = 31 * result + (scaleFactors != null ? Arrays.hashCode(scaleFactors) : 0);
-        return result;
-    }
-
-    @Override
     public String toString() {
-        return "IIIFImageService{" +
-                super.toString() +
-                "width=" + width +
-                ", height=" + height +
-                ", tileWidth=" + tileWidth +
-                ", tileHeight=" + tileHeight +
-                ", scaleFactors=" + Arrays.toString(scaleFactors) +
-                '}';
+        return "IIIFImageService [width=" + width + ", height=" + height + ", tileWidth=" + tileWidth + ", tileHeight="
+                + tileHeight + ", scaleFactors=" + Arrays.toString(scaleFactors) + "]";
     }
 }
