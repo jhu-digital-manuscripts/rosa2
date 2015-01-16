@@ -2,6 +2,8 @@ package rosa.iiif.presentation.core;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 import rosa.archive.core.Store;
@@ -108,7 +110,7 @@ public class ArchiveIIIFService implements IIIFService {
             man = transformer.manifest(col, book);
             updateCache(book.getId(), man);
         }
-        
+
         serializer.write(man, os);
 
         return true;
@@ -207,6 +209,10 @@ public class ArchiveIIIFService implements IIIFService {
     }
 
     private boolean handle_collection(String name, OutputStream os) throws IOException {
+        if (name.equals("top")) {
+            return handle_top_collection(os);
+        }
+
         BookCollection col = load_book_collection(name);
 
         if (col == null) {
@@ -225,6 +231,24 @@ public class ArchiveIIIFService implements IIIFService {
         return true;
     }
 
+    private boolean handle_top_collection(OutputStream os) throws IOException {
+        List<BookCollection> collections = new ArrayList<>();
+        for (String name : store.listBookCollections()) {
+            BookCollection col = store.loadBookCollection(name, null);
+            if (col != null) {
+                collections.add(col);
+            }
+        }
+
+        if (collections.isEmpty()) {
+            return false;
+        }
+
+        serializer.write(transformer.transform(collections), os);
+
+        return true;
+    }
+
     private boolean handle_canvas(String id, String name, OutputStream os) throws IOException {
         Book book = get_book_from_id(id);
         BookCollection collection = get_collection_from_id(id);
@@ -238,7 +262,7 @@ public class ArchiveIIIFService implements IIIFService {
         if (canvas == null) {
             return false;
         }
-        
+
         serializer.write(canvas, os);
 
         return true;

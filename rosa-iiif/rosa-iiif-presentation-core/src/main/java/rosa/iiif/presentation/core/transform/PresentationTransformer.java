@@ -530,7 +530,7 @@ public class PresentationTransformer implements IIIFNames {
     }
 
     private String presentationId(String collection, String book) {
-        return collection + "." + book;
+        return collection + (book == null || book.isEmpty() ? "" : "." + book);
     }
 
     private PresentationRequest presentationRequest(String collection, String book, String name,
@@ -540,8 +540,10 @@ public class PresentationTransformer implements IIIFNames {
 
     public Collection transform(BookCollection col) {
         Collection result = new Collection();
-        
+
+        result.setId(urlId(col.getId(), null, col.getId(), PresentationRequestType.COLLECTION));
         result.setLabel(col.getId(), "en");
+        result.setType(SC_COLLECTION);
         
         for (String book_id: col.books()) {
             String manifest = requestFormatter.format(presentationRequest(col.getId(), book_id, null, PresentationRequestType.MANIFEST));
@@ -554,6 +556,28 @@ public class PresentationTransformer implements IIIFNames {
             result.getManifests().add(ref);
         }
         
+        return result;
+    }
+
+    public Collection transform(List<BookCollection> collections) {
+        Collection result = new Collection();
+
+        result.setId(urlId("top", null, "top", PresentationRequestType.COLLECTION));
+        result.setLabel("top", "en");
+        result.setDescription("Top level collection, collecting all other collections in this repository.", "en");
+        result.setType(SC_COLLECTION);
+
+        List<Reference> refs = result.getCollections();
+        for (BookCollection col : collections) {
+            Reference r = new Reference();
+
+            r.setLabel(new TextValue(col.getId(), "en"));
+            r.setReference(urlId(col.getId(), null, col.getId(), PresentationRequestType.COLLECTION));
+            r.setType(SC_COLLECTION);
+
+            refs.add(r);
+        }
+
         return result;
     }
 }
