@@ -10,6 +10,8 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.meta.BiblioData;
+import rosa.archive.model.meta.MultilangMetadata;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.model.AnnotationList;
@@ -132,13 +134,23 @@ public class PresentationTransformer implements IIIFNames {
         manifest.setDefaultSequence(buildSequence(collection, book, DEFAULT_SEQUENCE_LABEL, book.getImages()));
         // setSequences(...) not used, as it sets references to other sequences
 
-        for (String lang : collection.getAllSupportedLanguages()) {
-            manifest.addAttribution(book.getPermission(lang).getPermission(), lang);
-            manifest.setLabel(book.getId(), lang);
-            manifest.setDescription("", lang);
+        MultilangMetadata mmd = book.getMultilangMetadata();
+        String lc = "en";
+
+        if (mmd == null) {
+            BookMetadata md = book.getBookMetadata(lc);
+            manifest.setLabel(md.getCommonName(), lc);
+            manifest.setDescription(md.getRepository() + ", " + md.getShelfmark(), lc);    
+        } else {    
+            BiblioData bd = mmd.getBiblioDataMap().get(lc);                
+            manifest.setLabel(bd.getCommonName(), lc);
+            manifest.setDescription(bd.getRepository() + ", " + bd.getShelfmark(), lc);                    
         }
+        
+        manifest.addAttribution(book.getPermission(lc).getPermission(), lc);
         manifest.setViewingHint(ViewingHint.PAGED);
-        transformMetadata(book, collection.getAllSupportedLanguages(), manifest);
+        
+        transformMetadata(book, new String[]{lc}, manifest);
 
         // Set manifest thumbnail, set to thumbnail for default sequence
         if (manifest.getDefaultSequence() != null) {
