@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT transcription (page, annotation)>
+<!ELEMENT page EMPTY>
+	<!ATTLIST page filename CDATA #REQUIRED>
+	<!ATTLIST page pagination CDATA #IMPLIED>
+	<!ATTLIST page signature CDATA #IMPLIED>
+	<!ATTLIST page reader CDATA #REQUIRED>
+	
+<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*)>	
+	<!ELEMENT marginalia (language*, translation?)>
+	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
+	<!ATTLIST marginalia date CDATA #IMPLIED>
+	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
+	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
+	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
+	 	<!ELEMENT language (position*)>
+			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
+				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
+					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
+						<!ELEMENT marginalia_text (#PCDATA)>
+						<!ELEMENT person EMPTY>
+							<!ATTLIST person name CDATA #REQUIRED>
+						<!ELEMENT book EMPTY>
+							<!ATTLIST book title CDATA #REQUIRED>
+						<!ELEMENT location EMPTY>
+							<!ATTLIST location name CDATA #REQUIRED>
+						<!ELEMENT X-ref EMPTY>
+							<!ATTLIST X-ref person CDATA #REQUIRED>
+							<!ATTLIST X-ref book_title CDATA #REQUIRED>
+						<!ELEMENT emphasis EMPTY> 
+							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
+							<!ATTLIST emphasis text CDATA #IMPLIED>
+		<!ELEMENT translation (#PCDATA)>
+	<!ELEMENT underline EMPTY>
+		<!ATTLIST underline method (chalk|pen) #REQUIRED>
+		<!ATTLIST underline type (straight|curved|dotted) #REQUIRED>
+		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST underline text CDATA #IMPLIED> 
+	<!ELEMENT symbol EMPTY>
+		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun) #REQUIRED>
+		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST symbol text CDATA #IMPLIED>
+	<!ELEMENT mark EMPTY>
+		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
+		<!ATTLIST mark method (chalk|pen) #REQUIRED>
+		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+		<!ATTLIST mark text CDATA #IMPLIED>
+			
+<!ENTITY agrave "à">
+<!ENTITY aacute "á">
+<!ENTITY atiled "ã">
+<!ENTITY egrave "è">
+<!ENTITY eacute "é">
+<!ENTITY ecirc "ê">
+<!ENTITY igrave "ì">
+<!ENTITY ograve "ò">
+<!ENTITY oacute "ó">
+<!ENTITY Ocirc "Ô">
+<!ENTITY euml "ë">

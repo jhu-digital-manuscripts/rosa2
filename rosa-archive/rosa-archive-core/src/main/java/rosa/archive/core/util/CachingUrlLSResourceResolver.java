@@ -7,12 +7,14 @@ import org.w3c.dom.ls.LSResourceResolver;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class CachingUrlLSResourceResolver implements LSResourceResolver {
     private static final String ENCODING = "UTF-8";
-    private static final int CACHE_MAX_SIZE = 100;
+    private static final int CACHE_MAX_SIZE = 1000;
 
     private ConcurrentHashMap<String, String> resourceCache;
 
@@ -27,7 +29,7 @@ public class CachingUrlLSResourceResolver implements LSResourceResolver {
             return new DOMInputImpl(publicId, systemId, baseURI, resourceCache.get(systemId), ENCODING);
         }
 
-        String data = null;
+        String data = getLocalCopy(systemId);
         try (InputStream in = new URL(systemId).openStream()) {
 
             data = IOUtils.toString(in, ENCODING);
@@ -41,5 +43,19 @@ public class CachingUrlLSResourceResolver implements LSResourceResolver {
         } catch (IOException e) {}
 
         return new DOMInputImpl(publicId, systemId, baseURI, data, ENCODING);
+    }
+
+    private String getLocalCopy(String systemId) {
+        try {
+            String[] parts = URLDecoder.decode(systemId, ENCODING).split("/");
+
+            try (InputStream in = getClass().getClassLoader().getResourceAsStream(parts[parts.length - 1])) {
+                if (in != null) {
+                    return IOUtils.toString(in, ENCODING);
+                }
+            } catch (IOException e) {}
+        } catch (UnsupportedEncodingException e) {}
+
+        return null;
     }
 }
