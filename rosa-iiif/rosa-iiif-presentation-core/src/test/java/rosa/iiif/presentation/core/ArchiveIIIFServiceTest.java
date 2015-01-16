@@ -44,7 +44,7 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         PresentationTransformer transformer = new PresentationTransformer(requestFormatter, imageFormatter,
                 imageIdMapper);
 
-        service = new ArchiveIIIFService(store, serializer, transformer);
+        service = new ArchiveIIIFService(store, serializer, transformer, 1000);
     }
     
     // TODO More extensive testing

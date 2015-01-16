@@ -1,10 +1,8 @@
 package rosa.iiif.presentation.core;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-
-import com.github.jsonldjava.utils.JsonUtils;
+import java.util.concurrent.ConcurrentHashMap;
 
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
@@ -13,10 +11,9 @@ import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
+import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
-
-import com.google.inject.Inject;
 import rosa.iiif.presentation.model.Sequence;
 
 /**
@@ -31,14 +28,15 @@ public class ArchiveIIIFService implements IIIFService {
     private final Store store;
     private final PresentationSerializer serializer;
     private final PresentationTransformer transformer;
-
-    // TODO Caches for intermediate objects and/or whole serialization
-
-    @Inject
-    public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer) {
+    private final ConcurrentHashMap<String, Object> cache;
+    private final int max_cache_size;
+    
+    public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer, int max_cache_size) {
         this.store = store;
         this.serializer = jsonld_serializer;
         this.transformer = transformer;
+        this.max_cache_size = max_cache_size;
+        this.cache = new ConcurrentHashMap<>();
     }
 
     @Override
@@ -82,11 +80,7 @@ public class ArchiveIIIFService implements IIIFService {
 
         Sequence seq = transformer.sequence(collection, book, name);
 
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.write(seq, out);
-
-        String prettyString = JsonUtils.toPrettyString(JsonUtils.fromString(out.toString("UTF-8")));
-        os.write(prettyString.getBytes("UTF-8"));
+        serializer.write(seq, os);
 
         return false;
     }
@@ -108,14 +102,14 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
-        Manifest man = transformer.manifest(col, book);
+        Manifest man = lookupCache(book.getId(), Manifest.class);
 
-        ByteArrayOutputStream b = new ByteArrayOutputStream();
-        serializer.write(man, b);
-
-        // TODO back to what it was (serialize directly to outputstream
-        String prettyJson = JsonUtils.toPrettyString(JsonUtils.fromString(b.toString("UTF-8")));
-        os.write(prettyJson.getBytes("UTF-8"));
+        if (man == null) {
+            man = transformer.manifest(col, book);
+            updateCache(book.getId(), man);
+        }
+        
+        serializer.write(man, os);
 
         return true;
     }
@@ -158,22 +152,75 @@ public class ArchiveIIIFService implements IIIFService {
         return parts[1];
     }
 
+    // Id of object in cache must be unique for class
+    
+    private String cache_key(String id, Class<?> type) {
+        return id + "," + type.getName();
+    }
+    
+    private <T> T lookupCache(String id, Class<T> type) {
+        return type.cast(cache.get(cache_key(id, type)));
+    }
+    
+    private void updateCache(String id, Object value) {
+        if (cache.size() > max_cache_size) {
+            cache.clear();
+        }
+        
+        cache.putIfAbsent(cache_key(id, value.getClass()), value);
+    }
+    
+    private BookCollection load_book_collection(String col_id) throws IOException {
+        BookCollection result = lookupCache(col_id, BookCollection.class);
+        
+        if (result == null) {
+            result = store.loadBookCollection(col_id, null);
+            updateCache(col_id, result);
+        }
+        
+        return result;
+    }
+    
+    private Book load_book(String col_id, String book_id) throws IOException {
+        Book result = lookupCache(book_id, Book.class);
+        
+        if (result == null) {
+            BookCollection col = load_book_collection(col_id);
+            
+            if (col == null) {
+                return null;
+            }
+            
+            result = store.loadBook(col, book_id, null);
+            updateCache(book_id, result);
+        }
+        
+        return result;
+    }
+    
     private BookCollection get_collection_from_id(String id) throws IOException {
-        return store.loadBookCollection(get_collection_id(id), null);
+        return load_book_collection(get_collection_id(id));
     }
 
     private Book get_book_from_id(String id) throws IOException {
-        return store.loadBook(store.loadBookCollection(get_collection_id(id), null), get_book_id(id), null);
+        return load_book(get_collection_id(id), get_book_id(id));
     }
 
     private boolean handle_collection(String name, OutputStream os) throws IOException {
-        BookCollection col = store.loadBookCollection(name, null);
+        BookCollection col = load_book_collection(name);
 
         if (col == null) {
             return false;
         }
 
-        serializer.write(transformer.transform(col), os);
+        Collection result = lookupCache(name, Collection.class); 
+
+        if (result == null) {
+            result = transformer.transform(col);
+            updateCache(name, result);
+        }
+        
+        serializer.write(result, os);
         
         return true;
     }
@@ -187,12 +234,12 @@ public class ArchiveIIIFService implements IIIFService {
         }
 
         Canvas canvas = transformer.canvas(collection, book, name);
-
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.write(canvas, out);
-
-        String prettyString = JsonUtils.toPrettyString(JsonUtils.fromString(out.toString("UTF-8")));
-        os.write(prettyString.getBytes("UTF-8"));
+        
+        if (canvas == null) {
+            return false;
+        }
+        
+        serializer.write(canvas, os);
 
         return true;
     }
@@ -206,12 +253,7 @@ public class ArchiveIIIFService implements IIIFService {
         }
 
         AnnotationList list = transformer.otherContent(collection, book, name);
-
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        serializer.write(list, out);
-
-        String prettyString = JsonUtils.toPrettyString(JsonUtils.fromString(out.toString("UTF-8")));
-        os.write(prettyString.getBytes("UTF-8"));
+        serializer.write(list, os);
 
         return true;
     }

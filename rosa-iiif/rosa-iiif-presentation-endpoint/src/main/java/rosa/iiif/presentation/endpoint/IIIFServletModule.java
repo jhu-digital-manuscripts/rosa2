@@ -38,7 +38,6 @@ public class IIIFServletModule extends ServletModule {
     @Override
     protected void configureServlets() {
         bind(PresentationTransformer.class);
-        bind(IIIFService.class).to(ArchiveIIIFService.class);
         bind(PresentationSerializer.class).to(JsonldSerializer.class);
         
         Names.bindProperties(binder(), loadProperties(SERVLET_CONFIG_PATH));
@@ -79,6 +78,11 @@ public class IIIFServletModule extends ServletModule {
         return result;
     }
 
+    @Provides
+    IIIFService providesIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer) {
+        return new ArchiveIIIFService(store, jsonld_serializer, transformer, 1000);
+    }
+    
     @Provides
     ImageIdMapper provideImageIdMapper(@Named("fsi.share.map") Map<String, String> fsi_share_map) {
         return new JhuFsiImageIdMapper(fsi_share_map);
