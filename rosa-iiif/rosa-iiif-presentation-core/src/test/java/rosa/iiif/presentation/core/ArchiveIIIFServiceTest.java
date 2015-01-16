@@ -50,8 +50,23 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
     // TODO More extensive testing
     
     @Test
-    public void testManifestRequest() throws IOException {
+    public void testLudwigXV7ManifestRequest() throws IOException {
         String id = VALID_COLLECTION + "." + VALID_BOOK_LUDWIGXV7;
+        PresentationRequest req = new PresentationRequest(id, null, PresentationRequestType.MANIFEST);
+        
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        assertTrue(service.handle_request(req, os));
+     
+        String result = new String(os.toByteArray(), "UTF-8");
+        
+        JSONObject json = new JSONObject(result);
+        
+        assertEquals("http://iiif.io/api/presentation/2/context.json", json.get("@context"));
+    }
+    
+    @Test
+    public void testFolgersHa2ManifestRequest() throws IOException {
+        String id = VALID_COLLECTION + "." + VALID_BOOK_FOLGERSHA2;
         PresentationRequest req = new PresentationRequest(id, null, PresentationRequestType.MANIFEST);
         
         ByteArrayOutputStream os = new ByteArrayOutputStream();
