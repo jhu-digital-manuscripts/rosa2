@@ -197,7 +197,7 @@ public class PresentationTransformerTest {
             checkTarget(t, false);
 
             String selectorContent = t.getSelector().content();
-            System.out.println(selectorContent);
+
             String[] parts = selectorContent.split(",");
             assertEquals(4, parts.length);
             assertEquals("0", parts[0]);
