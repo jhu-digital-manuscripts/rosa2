@@ -101,11 +101,19 @@ public class PresentationTransformer implements IIIFNames {
      */
     public AnnotationList otherContent(BookCollection collection, Book book, String page) {
         Canvas canvas = canvas(collection, book, page);
+        AnnotationList otherContent = new AnnotationList();
+
         if (canvas != null) {
-            return canvas.getOtherContent();
+            List<Annotation> aorAnnotations = annotationsFromAoR(collection, book.getId(), canvas,
+                    book.getAnnotationPage(page));
+
+            otherContent.setId(urlId(collection.getId(), book.getId(),
+                    getCanvasLabel(canvas, collection.getAllSupportedLanguages()),
+                    PresentationRequestType.ANNOTATION_LIST));
+            otherContent.setAnnotations(aorAnnotations);
         }
 
-        return null;
+        return otherContent;
     }
 
     /**
@@ -121,10 +129,8 @@ public class PresentationTransformer implements IIIFNames {
         manifest.setId(urlId(collection.getId(), book.getId(), null, PresentationRequestType.MANIFEST));
         manifest.setType(IIIFNames.SC_MANIFEST);
         manifest.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
-        manifest.setSequences(
-                Arrays.asList(buildSequence(collection, book, DEFAULT_SEQUENCE_LABEL, book.getImages()))
-        );
-        manifest.setDefaultSequence(0);
+        manifest.setDefaultSequence(buildSequence(collection, book, DEFAULT_SEQUENCE_LABEL, book.getImages()));
+        // setSequences(...) not used, as it sets references to other sequences
 
         for (String lang : collection.getAllSupportedLanguages()) {
             manifest.addAttribution(book.getPermission(lang).getPermission(), lang);
@@ -135,11 +141,9 @@ public class PresentationTransformer implements IIIFNames {
         transformMetadata(book, collection.getAllSupportedLanguages(), manifest);
 
         // Set manifest thumbnail, set to thumbnail for default sequence
-        if (manifest.getSequences().size() > 0) {
-            Sequence defaultSequence = manifest.getSequences().get(manifest.getDefaultSequence());
-
-            manifest.setThumbnailUrl(defaultSequence.getThumbnailUrl());
-            manifest.setThumbnailService(defaultSequence.getThumbnailService());
+        if (manifest.getDefaultSequence() != null) {
+            manifest.setThumbnailUrl(manifest.getDefaultSequence().getThumbnailUrl());
+            manifest.setThumbnailService(manifest.getDefaultSequence().getThumbnailService());
         }
 
         return manifest;
@@ -299,14 +303,15 @@ public class PresentationTransformer implements IIIFNames {
                         imageResource(collection, book, image, canvas.getId())));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
-        List<Annotation> aorAnnotations = annotationsFromAoR(collection, book.getId(), canvas,
-                book.getAnnotationPage(image.getPage()));
+        Reference otherContentRef = new Reference();
 
-        AnnotationList otherContent = new AnnotationList();
-        otherContent.setId(urlId(
-                collection.getId(), book.getId(), canvas.getLabel("en"), PresentationRequestType.ANNOTATION_LIST));
-        otherContent.setAnnotations(aorAnnotations);
-        canvas.setOtherContent(otherContent);
+        otherContentRef.setReference(urlId(collection.getId(), book.getId(),
+                getCanvasLabel(canvas, collection.getAllSupportedLanguages()), PresentationRequestType.ANNOTATION_LIST));
+        otherContentRef.setType(SC_ANNOTATION_LIST);
+        otherContentRef.setLabel(new TextValue("other content", "en")); // TODO temp
+
+        canvas.setOtherContent(Arrays.asList(otherContentRef));
+
         // TODO add rosa transcriptions as annotations!
 
         // Add a thumbnail for this canvas, set to its default image

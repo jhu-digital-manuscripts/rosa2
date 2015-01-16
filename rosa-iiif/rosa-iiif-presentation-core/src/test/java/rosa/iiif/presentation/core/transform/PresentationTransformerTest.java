@@ -27,6 +27,7 @@ import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Manifest;
+import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.annotation.Annotation;
@@ -98,12 +99,12 @@ public class PresentationTransformerTest {
         Manifest manifest = transformer.manifest(createBookCollection(), createBook());
         checkId(manifest.getId());
 
-        assertNotNull("List of sequences missing.", manifest.getSequences());
-        assertEquals("Wrong number of sequences.", 1, manifest.getSequences().size());
+        assertNotNull("Default sequence missing.", manifest.getDefaultSequence());
+        assertEquals("Wrong number of sequences.", 0, manifest.getOtherSequences().size());
         assertNotNull("Default sequence missing.", manifest.getDefaultSequence());
 
         // Test sequence
-        Sequence seq = manifest.getSequences().get(manifest.getDefaultSequence());
+        Sequence seq = manifest.getDefaultSequence();
         assertNotNull("No default sequence in Manifest.", seq);
         checkId(seq.getId());
         assertTrue(seq.getStartCanvas() != -1);
@@ -154,15 +155,13 @@ public class PresentationTransformerTest {
             assertNotNull("List of other content annotations is missing.",
                     c.getOtherContent()
             );
-            assertEquals("Wrong number of annotations from Annotated Pages.", 180, c.getOtherContent().size());
-            for (Annotation a : c.getOtherContent()) {
-                assertNotNull("AoR annotation is missing.", a);
-                checkId(a.getId());
+            assertEquals("Wrong number of annotations from Annotated Pages.", 1, c.getOtherContent().size());
+            for (Reference ref : c.getOtherContent()) {
+                assertNotNull("Reference to AoR annotation missing.", ref);
+                checkId(ref.getReference());
 
-                assertEquals("Incorrect motivation.", "sc:painting", a.getMotivation());
-                assertEquals("Transcription should have no width.", -1, a.getWidth());
-                assertEquals("Transcription should have no height.", -1, a.getHeight());
-                assertTrue("Transcription target should be specific resource.", a.getDefaultTarget().isSpecificResource());
+                assertEquals("sc:AnnotationList", ref.getType());
+                assertNotNull(ref.getLabel());
             }
         }
 

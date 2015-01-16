@@ -135,8 +135,16 @@ public class JsonldSerializerTest {
 
         manifest.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
         setBaseData(manifest);
-        for (int i = 0; i < 5; i++) {
-            manifest.getSequences().add(createSequence(i));
+
+        manifest.setDefaultSequence(createSequence(0));
+        for (int i = 1; i < 5; i++) {
+            Reference ref = new Reference();
+
+            ref.setType("sc:Sequence");
+            ref.setReference("ReferenceToSequence" + i);
+            ref.setLabel(new TextValue("This is a Label" + i, "en"));
+
+            manifest.getOtherSequences().add(ref);
         }
 
         return manifest;

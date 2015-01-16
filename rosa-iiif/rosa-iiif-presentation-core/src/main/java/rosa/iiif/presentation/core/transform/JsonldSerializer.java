@@ -166,24 +166,19 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         writeIfNotNull("viewingDirection",
                 manifest.getViewingDirection() != null ? manifest.getViewingDirection().getKeyword() : null, jWriter);
 
-        if (manifest.getSequences() != null) {
-            jWriter.key("sequences");
-            jWriter.array();
-            writeJsonld(manifest.getSequences().get(manifest.getDefaultSequence()), jWriter, false);
+        if (manifest.getDefaultSequence() == null && (manifest.getOtherSequences() == null
+                || manifest.getOtherSequences().isEmpty())) {
 
-            for (int i = 0; i < manifest.getSequences().size(); i++) {
-                // Maybe the default sequence is not the first sequence in the list?
-                if (i == manifest.getDefaultSequence()) {
-                    continue;
-                }
+        } else {
+            jWriter.key("sequences").array();
 
-                Sequence seq = manifest.getSequences().get(i);
-                jWriter.object();
-                jWriter.key("@id").value(seq.getId());
-                jWriter.key("@type").value(seq.getType());
-                writeIfNotNull("label", seq.getLabel("en"), jWriter);
-                jWriter.endObject();
+            if (manifest.getDefaultSequence() != null) {
+                writeJsonld(manifest.getDefaultSequence(), jWriter, false);
             }
+            for (Reference ref : manifest.getOtherSequences()) {
+                writeJsonld(ref, jWriter);
+            }
+
             jWriter.endArray();
         }
         jWriter.endObject();
@@ -254,7 +249,9 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
         if (canvas.getOtherContent() != null && canvas.getOtherContent().size() > 0) {
             jWriter.key("otherContent").array();
-            writeJsonld(canvas.getOtherContent(), jWriter, false);
+            for (Reference ref : canvas.getOtherContent()) {
+                writeJsonld(ref, jWriter);
+            }
             jWriter.endArray();
         }
 
@@ -448,7 +445,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
             for (String mKey : obj.getMetadata().keySet()) {
                 jWriter.object();
                 jWriter.key("label").value(mKey);
-                jWriter.key("value").value(obj.getMetadata().get(mKey).asString());
+                jWriter.key("value").value(obj.getMetadata().get(mKey).getValue());
                 jWriter.endObject();
             }
 
