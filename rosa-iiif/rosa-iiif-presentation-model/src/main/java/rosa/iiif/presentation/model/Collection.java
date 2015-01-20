@@ -19,6 +19,7 @@ public class Collection extends PresentationBase {
     public Collection() {
         collections = new ArrayList<>();
         manifests = new ArrayList<>();
+        setType(IIIFNames.SC_COLLECTION);
     }
 
     public List<Reference> getCollections() {
