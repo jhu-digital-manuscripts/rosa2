@@ -16,7 +16,7 @@ public class Underline extends Annotation implements Serializable {
 
     @Override
     public String toPrettyString() {
-        return null;
+        return "Underline (" + getReferringText() + ")";
     }
 
     public Underline(String referringText, String method, String type, String language) {

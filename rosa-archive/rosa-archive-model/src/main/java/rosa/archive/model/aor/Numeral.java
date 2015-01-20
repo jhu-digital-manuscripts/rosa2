@@ -16,6 +16,6 @@ public class Numeral extends Annotation implements Serializable {
 
     @Override
     public String toPrettyString() {
-        return null;
+        return "Numeral: (" + getReferringText() + ")";
     }
 }

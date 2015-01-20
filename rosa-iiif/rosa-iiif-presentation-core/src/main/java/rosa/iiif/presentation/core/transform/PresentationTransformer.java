@@ -94,7 +94,12 @@ public class PresentationTransformer implements IIIFNames {
         return null;
     }
 
+    public AnnotationList annotationList(BookCollection collection, Book book, String page, String listType) {
+        Canvas canvas = canvas(collection, book, page);
+        AnnotatedPage aPage = book.getAnnotationPage(page);
 
+        return annotationList(collection, book, canvas, aPage, AnnotationListType.getType(listType));
+    }
 
     /**
      * Transform a Book in the archive to a IIIF manifest.
@@ -567,13 +572,6 @@ public class PresentationTransformer implements IIIFNames {
 
 
         return null;
-    }
-
-    public AnnotationList annotationList(BookCollection collection, Book book, String page, String listType) {
-        Canvas canvas = canvas(collection, book, page);
-        AnnotatedPage aPage = book.getAnnotationPage(page);
-
-        return annotationList(collection, book, canvas, aPage, AnnotationListType.getType(listType));
     }
 
     private AnnotationList annotationList(BookCollection collection, Book book, Canvas canvas, AnnotatedPage aPage,

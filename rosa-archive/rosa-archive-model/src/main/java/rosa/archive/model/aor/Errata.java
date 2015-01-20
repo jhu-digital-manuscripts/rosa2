@@ -14,7 +14,7 @@ public class Errata extends Annotation implements Serializable {
 
     @Override
     public String toPrettyString() {
-        return null;
+        return "Errata: " + getReferringText() + " > " + amendedText;
     }
 
     public Errata(String copyText, String amendedText) {
