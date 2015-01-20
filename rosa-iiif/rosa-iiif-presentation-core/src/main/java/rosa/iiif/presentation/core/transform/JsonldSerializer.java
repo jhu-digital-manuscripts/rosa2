@@ -88,7 +88,11 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
     @Override
     public void write(Range range, OutputStream os) throws JSONException, IOException {
-        throw new UnsupportedOperationException("Not implemented.");
+        Writer writer = new OutputStreamWriter(os, "UTF-8");
+        JSONWriter jWriter = new JSONWriter(writer);
+
+        writeJsonld(range, jWriter, true);
+        writer.flush();
     }
 
     @Override
@@ -130,6 +134,34 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
             jWriter.array();
             for (Reference ref : collection.getManifests()) {
                 writeJsonld(ref, jWriter);
+            }
+            jWriter.endArray();
+        }
+
+        jWriter.endObject();
+    }
+    
+    private void writeJsonld(Range range, JSONWriter jWriter, boolean isRequested)
+            throws JSONException {
+        jWriter.object();
+
+        addIiifContext(jWriter, isRequested);
+        writeBaseData(range, jWriter);
+
+        if (!range.getCanvases().isEmpty()) {
+            jWriter.key("canvases");
+            jWriter.array();
+            for (String s : range.getCanvases()) {
+                jWriter.value(s);
+            }
+            jWriter.endArray();
+        }
+        
+        if (!range.getRanges().isEmpty()) {
+            jWriter.key("ranges");
+            jWriter.array();
+            for (String s : range.getRanges()) {
+                jWriter.value(s);
             }
             jWriter.endArray();
         }
@@ -181,6 +213,17 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
             jWriter.endArray();
         }
+        
+        if (!manifest.getRanges().isEmpty()) {
+            jWriter.key("structures").array();
+            
+            for (Range range: manifest.getRanges()) {
+                writeJsonld(range, jWriter, false);
+            }
+            
+            jWriter.endArray();
+        }
+        
         jWriter.endObject();
     }
 
