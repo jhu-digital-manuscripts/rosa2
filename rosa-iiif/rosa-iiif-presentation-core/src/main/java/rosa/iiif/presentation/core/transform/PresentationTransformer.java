@@ -22,6 +22,7 @@ import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
+import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.TextValue;
@@ -43,9 +44,19 @@ import com.google.inject.Inject;
 
 // TODO handle HTML sanitization!
 public class PresentationTransformer implements IIIFNames {
+    private static final String IMAGE_RANGE_MISC_ID = "misc";
+    private static final String IMAGE_RANGE_BODYMATTER_ID = "bodymatter";
+    private static final String IMAGE_RANGE_BINDING_ID = "binding";
+    private static final String IMAGE_RANGE_ENDMATTER_ID = "endmatter";
+    private static final String IMAGE_RANGE_FRONTMATTER_ID = "frontmatter";
     private static final String DEFAULT_SEQUENCE_LABEL = "reading-order";
     private static final String PAGE_REGEX = "\\d{1,3}(r|v|R|V)";
-    private static int annotation_counter = 0;
+    private static final String TOP_RANGE_ID = "top";
+    private static final String ILLUSTRATION_RANGE_TYPE = "illus";
+    private static final String IMAGE_RANGE_TYPE = "image";
+    private static final String TEXT_RANGE_TYPE = "text";
+    
+    private static int annotation_counter = 0;    
 
     private final IIIFRequestFormatter requestFormatter;
     private final rosa.iiif.image.core.IIIFRequestFormatter imageFormatter;
@@ -158,7 +169,169 @@ public class PresentationTransformer implements IIIFNames {
             manifest.setThumbnailService(manifest.getDefaultSequence().getThumbnailService());
         }
 
+        manifest.setRanges(buildTopRanges(collection, book));
+        
         return manifest;
+    }
+
+    private String constructRangeName(String type, String id) {
+        return type + "." + id;
+    }
+    
+    private String constructRangeURI(BookCollection col, Book book, String range_type, String range_id) {
+        return urlId(col.getId(), book.getId(), constructRangeName(range_type, range_id), PresentationRequestType.RANGE);
+    }
+    
+    private List<Range> buildTopRanges(BookCollection col, Book book) {
+        List<Range> result = new ArrayList<>();
+        
+        // TODO Looks like ranges need to be embedded
+        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, TOP_RANGE_ID)));
+        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_FRONTMATTER_ID)));
+        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_BODYMATTER_ID)));
+        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_ENDMATTER_ID)));
+        //result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_BINDING_ID)));
+        //result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_MISC_ID)));
+        
+//        result.add(buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, TOP_RANGE_ID)));
+//        result.add(buildRange(col, book, constructRangeName(TEXT_RANGE_TYPE, TOP_RANGE_ID)));
+        
+        return result;
+    }
+    
+     // TODO Better error handling in class
+    
+    // Range name is  RANGE_TYPE "." RANGE_ID
+    public Range buildRange(BookCollection col, Book book, String name) {
+        String[] parts = name.split("\\.");
+        
+        if (parts.length != 2) {
+            return null;
+        }
+        
+        String type = parts[0];
+        String id = parts[1];
+        
+        if (type.equals(ILLUSTRATION_RANGE_TYPE)) {
+            return buildIllustrationRange(col, book, id);
+        } else if (type.equals(IMAGE_RANGE_TYPE)) {
+            return buildImageRange(col, book, id);
+        } else if (type.equals(TEXT_RANGE_TYPE)) {
+            return buildTextRange(col, book, id);
+        } else {
+            return null;
+        }
+    }
+
+    private Range buildTextRange(BookCollection col, Book book, String range_id) {
+        Range result = new Range();
+        
+        if (range_id.equals(TOP_RANGE_ID)) {
+            result.setViewingHint(ViewingHint.TOP);
+            book.getMultilangMetadata();
+        } else {
+            
+        }
+
+        return result;
+    }
+
+    // TODO refactor image id parsing
+    
+    private Range buildImageRange(BookCollection col, Book book, String range_id) {
+        Range result = new Range();
+
+        result.setId(constructRangeURI(col, book, IMAGE_RANGE_TYPE, range_id));
+        
+        if (range_id.equals(TOP_RANGE_ID)) {
+            result.setViewingHint(ViewingHint.TOP);
+            result.setLabel(new TextValue("Image Type", "en"));
+            
+            List<String> ranges = new ArrayList<>();
+            
+            ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_FRONTMATTER_ID));
+            ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_BODYMATTER_ID));
+            ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_ENDMATTER_ID));
+            
+            // TODO Ranges must nest?
+            //ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_BINDING_ID));
+            //ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_MISC_ID));
+            
+            result.setRanges(ranges);
+        } else if (range_id.equals(IMAGE_RANGE_FRONTMATTER_ID)) {
+            result.setLabel(new TextValue("Front matter", "en"));
+
+            List<String> canvases = new ArrayList<>();
+            
+            for (BookImage image : book.getImages()) {
+                if (image.getId().contains("frontmatter")) {
+                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                }
+            }
+            
+            result.setCanvases(canvases);
+        } else if (range_id.equals(IMAGE_RANGE_ENDMATTER_ID)) {            
+            result.setLabel(new TextValue("End matter", "en"));
+            
+            List<String> canvases = new ArrayList<>();
+            
+            for (BookImage image : book.getImages()) {
+                if (image.getId().contains("endmatter")) {
+                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                }
+            }
+            
+            result.setCanvases(canvases);
+        } else if (range_id.equals(IMAGE_RANGE_BINDING_ID)) {
+            result.setLabel(new TextValue("Binding", "en"));
+            
+            List<String> canvases = new ArrayList<>();
+            
+            for (BookImage image : book.getImages()) {
+                if (image.getId().contains("binding")) {
+                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                }
+            }
+            
+            result.setCanvases(canvases);
+        } else if (range_id.equals(IMAGE_RANGE_BODYMATTER_ID)) {
+            result.setLabel(new TextValue("Body matter", "en"));
+            
+            List<String> canvases = new ArrayList<>();
+            
+            for (BookImage image : book.getImages()) {
+                if (image.getId().split("\\.").length == 3) {
+                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                }
+            }
+            
+            result.setCanvases(canvases);
+        } else if (range_id.equals(IMAGE_RANGE_MISC_ID)) {
+            result.setLabel(new TextValue("Misc", "en"));
+            List<String> canvases = new ArrayList<>();
+            
+            for (BookImage image : book.getImages()) {
+                if (image.getId().contains("misc")) {
+                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                }
+            }
+            
+            result.setCanvases(canvases);
+        }
+
+        return result;
+    }
+
+    private Range buildIllustrationRange(BookCollection col, Book book, String range_id) {
+        Range result = new Range();
+
+        if (range_id.equals(TOP_RANGE_ID)) {
+            result.setViewingHint(ViewingHint.TOP);
+        } else {
+            
+        }
+
+        return result;
     }
 
     /**
@@ -294,7 +467,7 @@ public class PresentationTransformer implements IIIFNames {
         // Images of bindings or misc images will be displayed as individuals
         // instead of openings
         // Canvas elements *should not* have viewing hint = paged?
-        if (image.getId().contains("misc") || image.getId().contains("binding")) {
+        if (image.getId().contains(IMAGE_RANGE_MISC_ID) || image.getId().contains(IMAGE_RANGE_BINDING_ID)) {
             canvas.setViewingHint(ViewingHint.NON_PAGED);
         }
 
