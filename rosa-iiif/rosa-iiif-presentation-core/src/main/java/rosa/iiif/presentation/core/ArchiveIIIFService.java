@@ -16,6 +16,7 @@ import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
+import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.Sequence;
 
 /**
@@ -87,8 +88,28 @@ public class ArchiveIIIFService implements IIIFService {
         return false;
     }
 
-    private boolean handle_range(String id, String name, OutputStream os) {
-        return false;
+    private boolean handle_range(String id, String name, OutputStream os) throws IOException {
+        BookCollection col = get_collection_from_id(id);
+
+        if (col == null) {
+            return false;
+        }
+
+        Book book = get_book_from_id(id);
+
+        if (book == null) {
+            return false;
+        }
+        
+        Range range = transformer.buildRange(col, book, name);
+        
+        if (range == null) {
+            return false;
+        }
+        
+        serializer.write(range, os);
+        
+        return true;
     }
 
     private boolean handle_manifest(String id, OutputStream os) throws IOException {

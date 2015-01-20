@@ -62,6 +62,8 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         JSONObject json = new JSONObject(result);
         
         assertEquals("http://iiif.io/api/presentation/2/context.json", json.get("@context"));
+        assertTrue(json.has("sequences"));
+        assertTrue(json.has("structures"));
     }
     
     @Test
@@ -76,6 +78,8 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         
         JSONObject json = new JSONObject(result);
         
-        assertEquals("http://iiif.io/api/presentation/2/context.json", json.get("@context"));
+        assertEquals("http://iiif.io/api/presentation/2/context.json", json.get("@context"));        
+        assertTrue(json.has("sequences"));
+        assertTrue(json.has("structures"));
     }
 }
