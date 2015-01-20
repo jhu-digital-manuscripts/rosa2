@@ -97,8 +97,12 @@ public class PresentationTransformer implements IIIFNames {
     public AnnotationList annotationList(BookCollection collection, Book book, String page, String listType) {
         Canvas canvas = canvas(collection, book, page);
         AnnotatedPage aPage = book.getAnnotationPage(page);
+        AnnotationListType type = AnnotationListType.getType(listType);
 
-        return annotationList(collection, book, canvas, aPage, AnnotationListType.getType(listType));
+        if (type == AnnotationListType.ALL) {
+            return annotationList(collection, book, canvas, aPage);
+        }
+        return annotationList(collection, book, canvas, aPage, type);
     }
 
     /**
@@ -298,14 +302,15 @@ public class PresentationTransformer implements IIIFNames {
                         imageResource(collection, book, image, canvas.getId())));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
-        for (AnnotationList list : otherContent(collection, book, canvas, book.getAnnotationPage(image.getPage()))) {
+        AnnotationList otherContent = annotationList(collection, book, canvas, book.getAnnotationPage(image.getPage()));
+        if (otherContent != null) {
             Reference ref = new Reference();
 
-            ref.setReference(list.getId());
-            ref.setType(SC_ANNOTATION_LIST);
-            ref.setLabel(list.getLabel());
+            ref.setReference(otherContent.getId());
+            ref.setLabel(otherContent.getLabel());
+            ref.setType(IIIFNames.SC_ANNOTATION_LIST);
 
-            canvas.getOtherContent().add(ref);
+            canvas.setOtherContent(Arrays.asList(ref));
         }
 
         // TODO add rosa transcriptions as annotations!
@@ -628,6 +633,20 @@ public class PresentationTransformer implements IIIFNames {
                 break;
         }
 
+        return list;
+    }
+
+    private AnnotationList annotationList(BookCollection collection, Book book, Canvas canvas, AnnotatedPage aPage) {
+        // TODO crappy
+        AnnotationList list = null;
+        for (AnnotationListType type : AnnotationListType.values()) {
+            AnnotationList l = annotationList(collection, book, canvas, aPage, type);
+            if (list == null) {
+                list = l;
+            } else {
+                list.getAnnotations().addAll(l.getAnnotations());
+            }
+        }
         return list;
     }
 

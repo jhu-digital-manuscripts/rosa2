@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.model;
 
 public enum AnnotationListType {
+    ALL,
     ILLUSTRATION,
     UNDERLINE,
     SYMBOL,
