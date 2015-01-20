@@ -15,10 +15,12 @@ import rosa.archive.model.meta.MultilangMetadata;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.model.AnnotationList;
+import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
@@ -92,31 +94,7 @@ public class PresentationTransformer implements IIIFNames {
         return null;
     }
 
-    /**
-     * Get 'other content' (non-images) annotations of a page in the form of
-     * an annotation list.
-     *
-     * @param collection book collection holding the book
-     * @param book book containing the page
-     * @param page page that has the annotation list
-     * @return the annotation list of a page
-     */
-    public AnnotationList otherContent(BookCollection collection, Book book, String page) {
-        Canvas canvas = canvas(collection, book, page);
-        AnnotationList otherContent = new AnnotationList();
 
-        if (canvas != null) {
-            List<Annotation> aorAnnotations = annotationsFromAoR(collection, book.getId(), canvas,
-                    book.getAnnotationPage(page));
-
-            otherContent.setId(urlId(collection.getId(), book.getId(),
-                    getCanvasLabel(canvas, collection.getAllSupportedLanguages()),
-                    PresentationRequestType.ANNOTATION_LIST));
-            otherContent.setAnnotations(aorAnnotations);
-        }
-
-        return otherContent;
-    }
 
     /**
      * Transform a Book in the archive to a IIIF manifest.
@@ -315,14 +293,15 @@ public class PresentationTransformer implements IIIFNames {
                         imageResource(collection, book, image, canvas.getId())));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
-        Reference otherContentRef = new Reference();
+        for (AnnotationList list : otherContent(collection, book, canvas, book.getAnnotationPage(image.getPage()))) {
+            Reference ref = new Reference();
 
-        otherContentRef.setReference(urlId(collection.getId(), book.getId(),
-                getCanvasLabel(canvas, collection.getAllSupportedLanguages()), PresentationRequestType.ANNOTATION_LIST));
-        otherContentRef.setType(SC_ANNOTATION_LIST);
-        otherContentRef.setLabel(new TextValue("other content", "en")); // TODO temp
+            ref.setReference(list.getId());
+            ref.setType(SC_ANNOTATION_LIST);
+            ref.setLabel(list.getLabel());
 
-        canvas.setOtherContent(Arrays.asList(otherContentRef));
+            canvas.getOtherContent().add(ref);
+        }
 
         // TODO add rosa transcriptions as annotations!
 
@@ -376,40 +355,26 @@ public class PresentationTransformer implements IIIFNames {
     }
 
     /**
-     * Transform the AoR transcription data into a list of annotations that
-     * are associated with a canvas
      *
+     *
+     * @param collection book collection holding the book
+     * @param book book containing the page
      * @param canvas the Canvas that will hold the annotations
      * @param aPage the annotated page containing the data
-     * @return annotated data as annotations
+     * @return other content, annotations on a page
      */
-    private List<Annotation> annotationsFromAoR(BookCollection collection, String book, Canvas canvas, AnnotatedPage aPage) {
-        List<Annotation> annotations = new ArrayList<>();
+    private List<AnnotationList> otherContent(BookCollection collection, Book book, Canvas canvas, AnnotatedPage aPage) {
+        List<AnnotationList> otherContent = new ArrayList<>();
 
-        if (aPage != null) {
-            annotation_counter = 0;
-
-            for (Marginalia marg : aPage.getMarginalia()) {
-                annotations.addAll(adaptMarginalia(collection, book, marg, canvas));
-            }
-            for (rosa.archive.model.aor.Annotation mark : aPage.getMarks()) {
-                annotations.add(adaptAnnotation(collection, book, mark, canvas));
-            }
-            for (rosa.archive.model.aor.Annotation symbol : aPage.getSymbols()) {
-                annotations.add(adaptAnnotation(collection, book, symbol, canvas));
-            }
-            for (rosa.archive.model.aor.Annotation underline : aPage.getUnderlines()) {
-                annotations.add(adaptAnnotation(collection, book, underline, canvas));
-            }
-            for (rosa.archive.model.aor.Annotation numeral : aPage.getNumerals()) {
-                annotations.add(adaptAnnotation(collection, book, numeral, canvas));
-            }
-            for (rosa.archive.model.aor.Annotation errata : aPage.getErrata()) {
-                annotations.add(adaptAnnotation(collection, book, errata, canvas));
+        for (AnnotationListType type : AnnotationListType.values()) {
+            AnnotationList list = annotationList(collection, book, canvas, aPage, type);
+            // Add this list to 'otherContent' if it exists and contains annotations
+            if (list != null && !list.getAnnotations().isEmpty()) {
+                otherContent.add(list);
             }
         }
 
-        return annotations;
+        return otherContent;
     }
 
     /**
@@ -591,5 +556,84 @@ public class PresentationTransformer implements IIIFNames {
         }
 
         return result;
+    }
+
+    private Layer layer(BookCollection collection, Book book, String name) {
+        Layer layer = new Layer();
+
+        layer.setType(SC_LAYER);
+        layer.setLabel("Layer for " + name, "en");
+
+
+
+        return null;
+    }
+
+    public AnnotationList annotationList(BookCollection collection, Book book, String page, String listType) {
+        Canvas canvas = canvas(collection, book, page);
+        AnnotatedPage aPage = book.getAnnotationPage(page);
+
+        return annotationList(collection, book, canvas, aPage, AnnotationListType.getType(listType));
+    }
+
+    private AnnotationList annotationList(BookCollection collection, Book book, Canvas canvas, AnnotatedPage aPage,
+                                          AnnotationListType listType) {
+        // Annotated page can be NULL if no transcriptions are present.
+        if (aPage == null) {
+            return null;
+        }
+        AnnotationList list = new AnnotationList();
+
+        String label = annotationListName(canvas.getLabel("en"), listType.toString().toLowerCase());
+        list.setId(urlId(collection.getId(), book.getId(), annotationListName(canvas.getLabel("en"),
+                listType.toString().toLowerCase()), PresentationRequestType.ANNOTATION_LIST));
+        list.setType(SC_ANNOTATION_LIST);
+        list.setDescription("Annotation list for " + listType.toString().toLowerCase() + " on page "
+                + canvas.getLabel("en"), "en");
+        list.setLabel(label, "en");
+
+        List<Annotation> annotations = list.getAnnotations();
+        switch (listType) {
+            case MARGINALIA:
+                for (Marginalia marg : aPage.getMarginalia()) {
+                    annotations.addAll(adaptMarginalia(collection, book.getId(), marg, canvas));
+                }
+                break;
+            case MARK:
+                for (rosa.archive.model.aor.Annotation ann : aPage.getMarks()) {
+                    annotations.add(adaptAnnotation(collection, book.getId(), ann, canvas));
+                }
+                break;
+            case SYMBOL:
+                for (rosa.archive.model.aor.Annotation ann : aPage.getSymbols()) {
+                    annotations.add(adaptAnnotation(collection, book.getId(), ann, canvas));
+                }
+                break;
+            case UNDERLINE:
+                for (rosa.archive.model.aor.Annotation ann : aPage.getUnderlines()) {
+                    annotations.add(adaptAnnotation(collection, book.getId(), ann, canvas));
+                }
+                break;
+            case NUMBERAL:
+                for (rosa.archive.model.aor.Annotation ann : aPage.getNumerals()) {
+                    annotations.add(adaptAnnotation(collection, book.getId(), ann, canvas));
+                }
+                break;
+            case ERRATA:
+                for (rosa.archive.model.aor.Annotation ann : aPage.getErrata()) {
+                    annotations.add(adaptAnnotation(collection, book.getId(), ann, canvas));
+                }
+                break;
+            case ILLUSTRATION:
+                break;
+            default:
+                break;
+        }
+
+        return list;
+    }
+
+    private String annotationListName(String page, String listType) {
+        return page + (listType == null ? "" : "." + listType);
     }
 }

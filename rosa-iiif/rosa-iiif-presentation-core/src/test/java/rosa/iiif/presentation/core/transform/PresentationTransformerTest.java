@@ -155,7 +155,7 @@ public class PresentationTransformerTest {
             assertNotNull("List of other content annotations is missing.",
                     c.getOtherContent()
             );
-            assertEquals("Wrong number of annotations from Annotated Pages.", 1, c.getOtherContent().size());
+            assertEquals("Wrong number of annotations from Annotated Pages.", 6, c.getOtherContent().size());
             for (Reference ref : c.getOtherContent()) {
                 assertNotNull("Reference to AoR annotation missing.", ref);
                 checkId(ref.getReference());

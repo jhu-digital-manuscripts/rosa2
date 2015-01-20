@@ -93,7 +93,11 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
     @Override
     public void write(Layer layer, OutputStream os) throws JSONException, IOException {
-        throw new UnsupportedOperationException("Not implemented.");
+        Writer writer = new OutputStreamWriter(os, "UTF-8");
+        JSONWriter jWriter = new JSONWriter(writer);
+
+        writeJsonld(layer, jWriter, true);
+        writer.flush();
     }
 
     /**
@@ -314,6 +318,27 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
             jWriter.endArray();
         }
         jWriter.endObject();
+    }
+
+    /**
+     * Write a layer as JSON-LD. This object holds a list of URIs referencing
+     * annotation lists.
+     *
+     * @param layer a IIIF presentation layer
+     * @param jWriter JSON-LD writer
+     * @param isRequested was this object requested directly?
+     */
+    private void writeJsonld(Layer layer, JSONWriter jWriter, boolean isRequested) {
+        jWriter.object();
+
+        addIiifContext(jWriter, isRequested);
+        writeBaseData(layer, jWriter);
+
+        jWriter.key("otherContent").array();
+        for (String uri : layer.getOtherContent()) {
+            jWriter.value(uri);
+        }
+        jWriter.endArray().endObject();
     }
 
     /**

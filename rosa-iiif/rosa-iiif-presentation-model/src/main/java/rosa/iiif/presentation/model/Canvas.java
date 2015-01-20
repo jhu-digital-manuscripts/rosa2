@@ -67,6 +67,7 @@ public class Canvas extends PresentationBase {
     public Canvas() {
         super();
         images = new ArrayList<>();
+        otherContent = new ArrayList<>();
 
         setType(IIIFNames.SC_CANVAS);
     }

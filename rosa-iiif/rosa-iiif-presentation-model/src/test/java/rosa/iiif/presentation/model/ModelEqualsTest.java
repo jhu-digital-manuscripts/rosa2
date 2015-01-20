@@ -30,12 +30,6 @@ public class ModelEqualsTest {
     }
     
     @Test
-    public void testExternalMedia() {
-        EqualsVerifier.forClass(ExternalMedia.class).allFieldsShouldBeUsed()
-                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
-    }
-    
-    @Test
     public void testHtmlValue() {
         EqualsVerifier.forClass(HtmlValue.class).allFieldsShouldBeUsed()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
