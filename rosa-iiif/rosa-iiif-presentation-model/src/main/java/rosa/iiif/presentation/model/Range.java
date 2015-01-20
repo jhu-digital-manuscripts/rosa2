@@ -42,6 +42,7 @@ public class Range extends PresentationBase {
     public Range() {
         canvases = new ArrayList<>();
         ranges = new ArrayList<>();
+        setType(IIIFNames.SC_RANGE);
     }
 
     public ViewingDirection getViewingDirection() {

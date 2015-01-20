@@ -11,6 +11,7 @@ public class Layer extends PresentationBase {
 
     public Layer() {
         this.otherContent = new ArrayList<>();
+        setType(IIIFNames.SC_LAYER);
     }
     
     public List<String> getOtherContent() {
