@@ -234,6 +234,10 @@ public class ArchiveIIIFService implements IIIFService {
     private boolean handle_top_collection(OutputStream os) throws IOException {
         List<BookCollection> collections = new ArrayList<>();
         for (String name : store.listBookCollections()) {
+            
+            if (name.equals("cdrom")) {
+                continue;
+            }
             BookCollection col = store.loadBookCollection(name, null);
             if (col != null) {
                 collections.add(col);
