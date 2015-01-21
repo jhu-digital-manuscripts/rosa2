@@ -160,7 +160,7 @@ public class PresentationTransformer implements IIIFNames {
             manifest.setThumbnailService(manifest.getDefaultSequence().getThumbnailService());
         }
 
-        manifest.setRanges(buildTopRanges(collection, book));
+//        manifest.setRanges(buildTopRanges(collection, book));
         
         return manifest;
     }
