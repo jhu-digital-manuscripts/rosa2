@@ -4,6 +4,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.CharacterNames;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
@@ -850,10 +851,6 @@ public class PresentationTransformer implements IIIFNames {
 
     private AnnotationList annotationList(BookCollection collection, Book book, Canvas canvas, AnnotatedPage aPage,
                                           AnnotationListType listType) {
-        // Annotated page can be NULL if no transcriptions are present.
-        if (aPage == null) {
-            return null;
-        }
         AnnotationList list = new AnnotationList();
 
         String label = annotationListName(canvas.getLabel("en"), listType.toString().toLowerCase());
@@ -865,6 +862,22 @@ public class PresentationTransformer implements IIIFNames {
         list.setLabel(label, "en");
 
         List<Annotation> annotations = list.getAnnotations();
+
+        // Illustrations annotations do not need Annotated Page TODO refactor to have less confusing returns
+        if (listType == AnnotationListType.ILLUSTRATION) {
+            Annotation ann = illustrationForPage(collection, book, canvas);
+            if (ann == null) {
+                return null;
+            }
+
+            annotations.add(ann);
+            return list;
+        }
+
+        // Annotated page can be NULL if no transcriptions are present.
+        if (aPage == null) {
+            return null;
+        }
         switch (listType) {
             case MARGINALIA:
                 for (Marginalia marg : aPage.getMarginalia()) {
@@ -896,8 +909,6 @@ public class PresentationTransformer implements IIIFNames {
                     annotations.add(adaptAnnotation(collection, book.getId(), ann, canvas));
                 }
                 break;
-            case ILLUSTRATION:
-                break;
             default:
                 break;
         }
@@ -905,17 +916,102 @@ public class PresentationTransformer implements IIIFNames {
         return list;
     }
 
+    private Annotation illustrationForPage(BookCollection collection, Book book, Canvas canvas) {
+        String page = canvas.getLabel("en");
+        if (book.getIllustrationTagging() == null) {
+            return null;
+        }
+
+        for (Illustration ill : book.getIllustrationTagging()) {
+            String illusPage = guessImage(book, ill.getPage()).getPage();
+            if (!illusPage.equals(page)) {
+                continue;
+            }
+
+            Annotation ann = new Annotation();
+            ann.setLabel("Illustration(s) on " + page, "en");
+            ann.setId(urlId(collection.getId(), book.getId(), "name", PresentationRequestType.ANNOTATION));
+            ann.setMotivation(SC_PAINTING);
+            ann.setType(OA_ANNOTATION);
+
+            CharacterNames names = collection.getCharacterNames();
+            IllustrationTitles titles = collection.getIllustrationTitles();
+
+            // Resolve character name IDs (should be done in archive layer)
+            StringBuilder sb_names = new StringBuilder();
+            for (String name_id : ill.getCharacters()) {
+                String name = names.getNameInLanguage(name_id, "en");
+
+                sb_names.append(name == null ? name_id : name);
+                if (!sb_names.toString().isEmpty()) {
+                    sb_names.append(", ");
+                } else {
+                    sb_names.append(' ');
+                }
+            }
+
+            // Resolve illustration title IDs (should be done in archive layer)
+            StringBuilder sb_titles = new StringBuilder();
+            for (String title_id : ill.getTitles()) {
+                String title = titles.getTitleById(title_id);
+
+                sb_titles.append(title == null ? title_id : title);
+                if (!sb_titles.toString().isEmpty()) {
+                    sb_titles.append(", ");
+                } else {
+                    sb_titles.append(' ');
+                }
+            }
+
+            String text = "<p><b>Illustration</b><br/>" +
+                    (ill.getTitles() == null || ill.getTitles().length == 0 ?
+                            "" : "  <i>titles</i>: " + sb_titles.toString()) +
+                    (ill.getTextualElement() == null || ill.getTextualElement().isEmpty() ?
+                            "" : "  <i>textual elements</i>: '" + ill.getTextualElement() + "'<br/>") +
+                    (ill.getCostume() == null || ill.getCostume().isEmpty() ?
+                            "" : "  <i>costume</i>: '" + ill.getCostume() + "'<br/>") +
+                    (ill.getInitials() == null || ill.getInitials().isEmpty() ?
+                        "" : "  <i>initials</i>: '" + ill.getInitials() + "'<br/>") +
+                    (ill.getObject() == null || ill.getObject().isEmpty() ?
+                            "" : "  <i>object</i>: '" + ill.getObject() + "'<br/>") +
+                    (ill.getLandscape() == null || ill.getLandscape().isEmpty() ?
+                            "" : "  <i>landscape</i>: '" + ill.getLandscape() + "'<br/>") +
+                    (ill.getArchitecture() == null || ill.getArchitecture().isEmpty() ?
+                            "" : "  <i>architecture</i>: '" + ill.getArchitecture() + "'<br/>") +
+                    (ill.getOther() == null || ill.getOther().isEmpty() ?
+                            "" : "  <i>other</i>: '" + ill.getObject() + "'<br/>") +
+                    (ill.getCharacters() == null || ill.getCharacters().length == 0 ?
+                            "" : "  <i>characters</i>: " + sb_names.toString()) +
+                    "</p>";
+
+            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html",
+                    text, "en"));
+            ann.setDefaultTarget(locationOnCanvas(canvas, Location.INTEXT));
+
+            return ann;
+        }
+
+        return null;
+    }
+
     private AnnotationList annotationList(BookCollection collection, Book book, Canvas canvas, AnnotatedPage aPage) {
-        // TODO crappy
-        AnnotationList list = null;
+        AnnotationList list = new AnnotationList();
+
         for (AnnotationListType type : AnnotationListType.values()) {
             AnnotationList l = annotationList(collection, book, canvas, aPage, type);
-            if (list == null) {
-                list = l;
-            } else {
+
+            if (l != null) {
                 list.getAnnotations().addAll(l.getAnnotations());
             }
         }
+        String type = AnnotationListType.ALL.toString().toLowerCase();
+        String name = annotationListName(canvas.getLabel("en"), type);
+
+        list.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION_LIST));
+        list.setType(SC_ANNOTATION_LIST);
+        list.setDescription("Annotation list for " + type + " on page " + canvas.getLabel("en"), "en");
+        list.setLabel(name, "en");
+
         return list;
     }
 

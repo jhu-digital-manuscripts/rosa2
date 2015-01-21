@@ -303,6 +303,11 @@ public class ArchiveIIIFService implements IIIFService {
 
         AnnotationList list = transformer.annotationList(collection, book, get_annotation_list_page(name),
                 get_annotation_list_id(name));
+
+        if (list == null) {
+            return false;
+        }
+
         serializer.write(list, os);
 
         return true;
