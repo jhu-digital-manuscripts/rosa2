@@ -4,6 +4,9 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.Illustration;
+import rosa.archive.model.IllustrationTagging;
+import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Location;
@@ -172,7 +175,7 @@ public class PresentationTransformer implements IIIFNames {
     private List<Range> buildTopRanges(BookCollection col, Book book) {
         List<Range> result = new ArrayList<>();
         
-        // TODO Looks like ranges need to be embedded
+        // TODO Looks like ranges need to be embedded, add nicer mechanism to generate all ranges
         result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, TOP_RANGE_ID)));
         result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_FRONTMATTER_ID)));
         result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_BODYMATTER_ID)));
@@ -182,6 +185,15 @@ public class PresentationTransformer implements IIIFNames {
         
 //        result.add(buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, TOP_RANGE_ID)));
 //        result.add(buildRange(col, book, constructRangeName(TEXT_RANGE_TYPE, TOP_RANGE_ID)));
+        
+        
+        Range range = buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, TOP_RANGE_ID));
+        int index = 0;
+        
+        while (range != null) {
+            result.add(range);    
+            range = buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, "" + index++));
+        }
         
         return result;
     }
@@ -210,17 +222,9 @@ public class PresentationTransformer implements IIIFNames {
         }
     }
 
+    // TODO
     private Range buildTextRange(BookCollection col, Book book, String range_id) {
-        Range result = new Range();
-        
-        if (range_id.equals(TOP_RANGE_ID)) {
-            result.setViewingHint(ViewingHint.TOP);
-            book.getMultilangMetadata();
-        } else {
-            
-        }
-
-        return result;
+        return null;
     }
 
     // TODO refactor image id parsing
@@ -308,14 +312,106 @@ public class PresentationTransformer implements IIIFNames {
 
         return result;
     }
+    
+    // TODO Put this image name stuff somewhere else
+    
 
+    public BookImage guessImage(Book book, String frag) {
+            frag = frag.trim();
+
+            if (frag.matches("\\d+")) {
+                    frag += "r";
+            }
+
+            if (frag.matches("\\d[rRvV]")) {
+                    frag = "00" + frag;
+            } else if (frag.matches("\\d\\d[rRvV]")) {
+                    frag = "0" + frag;
+            }
+
+            if (!frag.endsWith(".tif")) {
+                    frag += ".tif";
+            }
+
+            if (!frag.startsWith(book.getId())) {
+                    frag = book.getId() + "." + frag;
+            }
+
+            for (BookImage image: book.getImages()) {
+                if (image.getId().equalsIgnoreCase(frag)) {
+                    return image;
+                }
+            }
+
+            return null;
+    }
+
+    
     private Range buildIllustrationRange(BookCollection col, Book book, String range_id) {
+        IllustrationTagging tags = book.getIllustrationTagging();
+        
+        if (tags == null) {
+            return null;
+        }
+        
         Range result = new Range();
 
+        result.setId(constructRangeURI(col, book, ILLUSTRATION_RANGE_TYPE, range_id));
+        
         if (range_id.equals(TOP_RANGE_ID)) {
             result.setViewingHint(ViewingHint.TOP);
-        } else {
+            result.setLabel("Illustrations", "en");
             
+            List<String> ranges = new ArrayList<>();
+            
+            for (int i = 0; i < tags.size(); i++) {
+                ranges.add(constructRangeURI(col, book, ILLUSTRATION_RANGE_TYPE, "" + i));
+            }
+            
+            result.setRanges(ranges);
+        } else {            
+            int index;
+            
+            try {
+                index = Integer.parseInt(range_id);
+            } catch (NumberFormatException e) {
+                return null;
+            }
+            
+            if (index < 0 || index >= tags.size()) {
+                return null;
+            }
+            
+            Illustration illus = tags.getIllustrationData(index);
+            
+            IllustrationTitles titles = col.getIllustrationTitles();
+            
+            if (titles == null) {
+                return null;
+            }
+            
+            String label = "";
+            
+            for (String title_id: illus.getTitles()) {
+                String title = titles.getTitleById(title_id);
+                
+                if (title != null) {
+                    label += (label.isEmpty() ? "" : "; ") + title;
+                }
+            }
+            
+            List<String> canvases = new ArrayList<>();
+                        
+            BookImage image = guessImage(book, illus.getPage());
+
+            if (image == null) {
+                return null;
+            }
+            
+            canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+            
+            result.setLabel(label, "en");
+            result.setCanvases(canvases);
         }
 
         return result;
