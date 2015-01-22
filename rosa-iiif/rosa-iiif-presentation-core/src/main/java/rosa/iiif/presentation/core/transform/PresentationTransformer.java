@@ -865,12 +865,12 @@ public class PresentationTransformer implements IIIFNames {
 
         // Illustrations annotations do not need Annotated Page TODO refactor to have less confusing returns
         if (listType == AnnotationListType.ILLUSTRATION) {
-            Annotation ann = illustrationForPage(collection, book, canvas);
-            if (ann == null) {
+            List<Annotation> anns = illustrationForPage(collection, book, canvas);
+            if (anns == null || anns.isEmpty()) {
                 return null;
             }
 
-            annotations.add(ann);
+            annotations.addAll(anns);
             return list;
         }
 
@@ -916,21 +916,23 @@ public class PresentationTransformer implements IIIFNames {
         return list;
     }
 
-    private Annotation illustrationForPage(BookCollection collection, Book book, Canvas canvas) {
+    private List<Annotation> illustrationForPage(BookCollection collection, Book book, Canvas canvas) {
         String page = canvas.getLabel("en");
         if (book.getIllustrationTagging() == null) {
             return null;
         }
 
+        List<Annotation> anns = new ArrayList<>();
         for (Illustration ill : book.getIllustrationTagging()) {
             String illusPage = guessImage(book, ill.getPage()).getPage();
             if (!illusPage.equals(page)) {
                 continue;
             }
+            String anno_name = page + ".illustration_" + ill.getId();
 
             Annotation ann = new Annotation();
             ann.setLabel("Illustration(s) on " + page, "en");
-            ann.setId(urlId(collection.getId(), book.getId(), "name", PresentationRequestType.ANNOTATION));
+            ann.setId(urlId(collection.getId(), book.getId(), anno_name, PresentationRequestType.ANNOTATION));
             ann.setMotivation(SC_PAINTING);
             ann.setType(OA_ANNOTATION);
 
@@ -988,10 +990,10 @@ public class PresentationTransformer implements IIIFNames {
                     text, "en"));
             ann.setDefaultTarget(locationOnCanvas(canvas, Location.INTEXT));
 
-            return ann;
+            anns.add(ann);
         }
 
-        return null;
+        return anns;
     }
 
     private AnnotationList annotationList(BookCollection collection, Book book, Canvas canvas, AnnotatedPage aPage) {
