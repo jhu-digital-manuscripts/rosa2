@@ -30,19 +30,26 @@ public class CachingUrlLSResourceResolver implements LSResourceResolver {
         }
 
         String data = getLocalCopy(systemId);
-        try (InputStream in = new URL(systemId).openStream()) {
+        if (data != null) {
+            addToCache(systemId, data);
+        } else {
+            try (InputStream in = new URL(systemId).openStream()) {
 
-            data = IOUtils.toString(in, ENCODING);
+                data = IOUtils.toString(in, ENCODING);
+                addToCache(systemId, data);
 
-            if (resourceCache.size() >= CACHE_MAX_SIZE) {
-                resourceCache.clear();
-            }
-
-            resourceCache.putIfAbsent(systemId, data);
-
-        } catch (IOException e) {}
+            } catch (IOException e) {}
+        }
 
         return new DOMInputImpl(publicId, systemId, baseURI, data, ENCODING);
+    }
+
+    private void addToCache(String key, String data) {
+        if (resourceCache.size() >= CACHE_MAX_SIZE) {
+            resourceCache.clear();
+        }
+
+        resourceCache.putIfAbsent(key, data);
     }
 
     private String getLocalCopy(String systemId) {
