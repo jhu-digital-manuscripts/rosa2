@@ -3,8 +3,10 @@ package rosa.iiif.presentation.core.transform;
 import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.core.BaseArchiveTest;
+import rosa.archive.model.BookImage;
 import rosa.archive.model.aor.Location;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
@@ -34,34 +36,38 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     private static final String ENDPOINT_PREFIX = "/iiif";
     private static final int ENDPOINT_PORT = -1;
 
-    private PresentationTransformer transformer;
+
+    private PresentationTransformer presentationTransformer;
+    private AnnotationListTransformer annotationListTransformer;
 
     @Before
     public void setup() {
         Map<String, String> idMap = new HashMap<>();
         idMap.put(VALID_COLLECTION, "valid");
 
-        transformer = new PresentationTransformer(
-                new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT),
-                new rosa.iiif.image.core.IIIFRequestFormatter(
-                        ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX),
-                new JhuFsiImageIdMapper(idMap)
-        );
+        IIIFRequestFormatter presentationReqFormatter =
+                new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT);
+        rosa.iiif.image.core.IIIFRequestFormatter imageReqFormatter =
+                new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
+        ImageIdMapper idMapper = new JhuFsiImageIdMapper(idMap);
+
+        presentationTransformer = new PresentationTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
+        annotationListTransformer = new AnnotationListTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
     }
 
     @Test
     public void sequenceLudwigXV7Test() throws IOException {
-        checkSequence(transformer.sequence(loadValidCollection(), loadValidLudwigXV7(), "reading-order"));
+        checkSequence(presentationTransformer.sequence(loadValidCollection(), loadValidLudwigXV7(), "reading-order"));
     }
 
     @Test
     public void canvasLudwigXV7Test() throws IOException {
-        checkACanvas(transformer.canvas(loadValidCollection(), loadValidLudwigXV7(), "001v"));
+        checkACanvas(presentationTransformer.canvas(loadValidCollection(), loadValidLudwigXV7(), "001v"));
     }
 
     @Test
     public void manifestLudwigXV7Test() throws IOException {
-        Manifest manifest = transformer.manifest(loadValidCollection(), loadValidLudwigXV7());
+        Manifest manifest = presentationTransformer.transform(loadValidCollection(), loadValidLudwigXV7());
         checkId(manifest.getId());
         assertNotNull("Metadata for manifest is missing.", manifest.getMetadata());
         assertFalse("Metadata for manifest is empty.", manifest.getMetadata().isEmpty());
@@ -75,15 +81,15 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
     @Test
     public void annotationListLudwigXV7Test() throws IOException {
-        checkAnnotationList(transformer.annotationList(loadValidCollection(), loadValidLudwigXV7(), "002r", "all"));
+        checkAnnotationList(annotationListTransformer.transform(loadValidCollection(), loadValidLudwigXV7(), "002r", "all"));
     }
 
     @Test
     public void annotationListFolgersHa2Test() throws IOException {
-        checkAnnotationList(transformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "001r", "all"));
-        checkAnnotationList(transformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "001r", "symbol"));
-        checkAnnotationList(transformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "001r", "marginalia"));
-        checkAnnotationList(transformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "001r", "underline"));
+        checkAnnotationList(annotationListTransformer.transform(loadValidCollection(), loadValidFolgersHa2(), "001r", "all"));
+        checkAnnotationList(annotationListTransformer.transform(loadValidCollection(), loadValidFolgersHa2(), "001r", "symbol"));
+        checkAnnotationList(annotationListTransformer.transform(loadValidCollection(), loadValidFolgersHa2(), "001r", "marginalia"));
+        checkAnnotationList(annotationListTransformer.transform(loadValidCollection(), loadValidFolgersHa2(), "001r", "underline"));
     }
 
     private void checkSequence(Sequence seq) {
@@ -151,15 +157,15 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     @Test
     public void locationOnCanvasTest() {
         for (int i = 0; i < 10; i++) {
-            Canvas c = new Canvas();
+            BookImage c = new BookImage();
             c.setId("Canvas" + i);
             c.setWidth(1000);
             c.setHeight(1500);
 
-            checkTarget(transformer.locationOnCanvas(c, Location.RIGHT_MARGIN), false);
-            checkTarget(transformer.locationOnCanvas(c, Location.FULL_PAGE), true);
+            checkTarget(annotationListTransformer.locationOnCanvas(c, Location.RIGHT_MARGIN), false);
+            checkTarget(annotationListTransformer.locationOnCanvas(c, Location.FULL_PAGE), true);
 
-            AnnotationTarget t = transformer.locationOnCanvas(c, Location.HEAD);
+            AnnotationTarget t = annotationListTransformer.locationOnCanvas(c, Location.HEAD);
             checkTarget(t, false);
 
             String selectorContent = t.getSelector().content();

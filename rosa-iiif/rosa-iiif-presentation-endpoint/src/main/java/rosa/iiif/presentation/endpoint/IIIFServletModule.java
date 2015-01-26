@@ -19,6 +19,7 @@ import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFService;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
+import rosa.iiif.presentation.core.transform.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.JsonldSerializer;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
@@ -39,6 +40,7 @@ public class IIIFServletModule extends ServletModule {
     protected void configureServlets() {
         bind(PresentationTransformer.class);
         bind(PresentationSerializer.class).to(JsonldSerializer.class);
+        bind(AnnotationListTransformer.class);
         
         Names.bindProperties(binder(), loadProperties(SERVLET_CONFIG_PATH));
          
@@ -79,8 +81,9 @@ public class IIIFServletModule extends ServletModule {
     }
 
     @Provides
-    IIIFService providesIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer) {
-        return new ArchiveIIIFService(store, jsonld_serializer, transformer, 1000);
+    IIIFService providesIIIFService(Store store, PresentationSerializer jsonld_serializer,
+                                    PresentationTransformer transformer, AnnotationListTransformer annoListTransformer) {
+        return new ArchiveIIIFService(store, jsonld_serializer, transformer, annoListTransformer, 1000);
     }
     
     @Provides

@@ -9,6 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.iiif.presentation.core.transform.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.model.AnnotationList;
@@ -31,13 +32,17 @@ public class ArchiveIIIFService implements IIIFService {
     private final Store store;
     private final PresentationSerializer serializer;
     private final PresentationTransformer transformer;
+    private final AnnotationListTransformer annotationListTransformer;
     private final ConcurrentHashMap<String, Object> cache;
     private final int max_cache_size;
     
-    public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer, int max_cache_size) {
+    public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer,
+                              PresentationTransformer transformer, AnnotationListTransformer annotationListTransformer,
+                              int max_cache_size) {
         this.store = store;
         this.serializer = jsonld_serializer;
         this.transformer = transformer;
+        this.annotationListTransformer = annotationListTransformer;
         this.max_cache_size = max_cache_size;
         this.cache = new ConcurrentHashMap<>();
     }
@@ -128,7 +133,7 @@ public class ArchiveIIIFService implements IIIFService {
         Manifest man = lookupCache(book.getId(), Manifest.class);
 
         if (man == null) {
-            man = transformer.manifest(col, book);
+            man = transformer.transform(col, book);
             updateCache(book.getId(), man);
         }
 
@@ -240,14 +245,14 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
-        Collection result = lookupCache(name, Collection.class); 
+        Collection result = lookupCache(name, Collection.class);
 
-        if (result == null) {
-            result = transformer.transform(col);
-            updateCache(name, result);
-        }
-        
-        serializer.write(result, os);
+//        if (result == null) {
+//            result = transformer.transform(col);
+//            updateCache(name, result);
+//        }
+//
+//        serializer.write(result, os);
         
         return true;
     }
@@ -269,7 +274,7 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
-        serializer.write(transformer.transform(collections), os);
+//        serializer.write(transformer.transform(collections), os);
 
         return true;
     }
@@ -301,7 +306,7 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
-        AnnotationList list = transformer.annotationList(collection, book, get_annotation_list_page(name),
+        AnnotationList list = annotationListTransformer.transform(collection, book, get_annotation_list_page(name),
                 get_annotation_list_id(name));
 
         if (list == null) {
