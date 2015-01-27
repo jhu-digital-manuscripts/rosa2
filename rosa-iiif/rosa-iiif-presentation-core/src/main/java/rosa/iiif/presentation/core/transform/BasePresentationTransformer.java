@@ -26,27 +26,23 @@ public abstract class BasePresentationTransformer implements IIIFNames {
 
     protected IIIFRequestFormatter presRequestFormatter;
     protected rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter;
-    protected ImageIdMapper imageIdMapper;
     protected ArchiveNameParser nameParser;
 
     public BasePresentationTransformer(IIIFRequestFormatter presRequestFormatter,
                                        rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
-                                       ImageIdMapper imageIdMapper,
                                        ArchiveNameParser nameParser) {
         this.presRequestFormatter = presRequestFormatter;
         this.imageRequestFormatter = imageRequestFormatter;
-        this.imageIdMapper = imageIdMapper;
         this.nameParser = nameParser;
     }
 
     /**
-     * Handle the book's structured metadata and transform it into Manifest metadata.
+     * Handle the book's structured metadata and manifest it into Manifest metadata.
      *
      * @param book book
      * @param languages languages available
-     * @param manifest manifest to add the metadata
      */
-    protected void transformMetadata(Book book, String[] languages, Manifest manifest) {
+    protected Map<String, HtmlValue> transformMetadata(Book book, String[] languages) {
         Map<String, HtmlValue> map = new HashMap<>();
 
         for (String lang : languages) {
@@ -100,7 +96,7 @@ public abstract class BasePresentationTransformer implements IIIFNames {
             // TODO book texts
         }
 
-        manifest.setMetadata(map);
+        return map;
     }
 
     protected String urlId(String collection, String book, String name, PresentationRequestType type) {

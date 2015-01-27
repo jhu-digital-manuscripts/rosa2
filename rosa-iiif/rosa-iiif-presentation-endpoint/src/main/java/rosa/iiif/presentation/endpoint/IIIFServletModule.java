@@ -28,6 +28,7 @@ import com.google.inject.Provides;
 import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 import com.google.inject.servlet.ServletModule;
+import rosa.iiif.presentation.core.transform.RangeTransformer;
 
 /**
  * The servlet is configured by iiif-servlet.properties.
@@ -41,6 +42,7 @@ public class IIIFServletModule extends ServletModule {
         bind(PresentationTransformer.class);
         bind(PresentationSerializer.class).to(JsonldSerializer.class);
         bind(AnnotationListTransformer.class);
+        bind(RangeTransformer.class);
         
         Names.bindProperties(binder(), loadProperties(SERVLET_CONFIG_PATH));
          
@@ -82,8 +84,8 @@ public class IIIFServletModule extends ServletModule {
 
     @Provides
     IIIFService providesIIIFService(Store store, PresentationSerializer jsonld_serializer,
-                                    PresentationTransformer transformer, AnnotationListTransformer annoListTransformer) {
-        return new ArchiveIIIFService(store, jsonld_serializer, transformer, annoListTransformer, 1000);
+                                    PresentationTransformer transformer) {
+        return new ArchiveIIIFService(store, jsonld_serializer, transformer, 1000);
     }
     
     @Provides

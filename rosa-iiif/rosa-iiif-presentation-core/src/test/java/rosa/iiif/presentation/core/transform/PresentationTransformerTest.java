@@ -40,6 +40,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
     private PresentationTransformer presentationTransformer;
     private AnnotationListTransformer annotationListTransformer;
+    private RangeTransformer rangeTransformer;
 
     @Before
     public void setup() {
@@ -53,8 +54,9 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         ImageIdMapper idMapper = new JhuFsiImageIdMapper(idMap);
         ArchiveNameParser parser = new ArchiveNameParser();
 
+        rangeTransformer = new RangeTransformer(presentationReqFormatter, imageReqFormatter);
         presentationTransformer = new PresentationTransformer(presentationReqFormatter, imageReqFormatter, idMapper, parser);
-        annotationListTransformer = new AnnotationListTransformer(presentationReqFormatter, imageReqFormatter, idMapper, parser);
+        annotationListTransformer = new AnnotationListTransformer(presentationReqFormatter, imageReqFormatter, parser);
     }
 
     @Test
@@ -69,7 +71,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
     @Test
     public void manifestLudwigXV7Test() throws IOException {
-        Manifest manifest = presentationTransformer.transform(loadValidCollection(), loadValidLudwigXV7());
+        Manifest manifest = presentationTransformer.manifest(loadValidCollection(), loadValidLudwigXV7());
         checkId(manifest.getId());
         assertNotNull("Metadata for manifest is missing.", manifest.getMetadata());
         assertFalse("Metadata for manifest is empty.", manifest.getMetadata().isEmpty());

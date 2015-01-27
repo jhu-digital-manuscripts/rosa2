@@ -2,19 +2,19 @@ package rosa.iiif.presentation.core.transform;
 
 import com.google.inject.Inject;
 import rosa.archive.core.ArchiveNameParser;
-import rosa.archive.model.ImageType;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.Illustration;
-import rosa.archive.model.IllustrationTagging;
-import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
+import rosa.iiif.presentation.model.AnnotationList;
+import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.Canvas;
+import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Manifest;
@@ -34,16 +34,29 @@ import java.util.Arrays;
 import java.util.List;
 
 public class PresentationTransformer extends BasePresentationTransformer {
+    private ImageIdMapper imageIdMapper;
+    private RangeTransformer rangeTransformer;
+    private AnnotationListTransformer annoListTransformer;
 
     @Inject
     public PresentationTransformer(IIIFRequestFormatter presRequestFormatter,
                                    rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
-                                   ImageIdMapper imageIdMapper,
-                                   ArchiveNameParser nameParser) {
-        super(presRequestFormatter, imageRequestFormatter, imageIdMapper, nameParser);
+                                   ImageIdMapper imageIdMapper, ArchiveNameParser nameParser) {
+        super(presRequestFormatter, imageRequestFormatter, nameParser);
+        this.imageIdMapper = imageIdMapper;
+        this.annoListTransformer = new AnnotationListTransformer(presRequestFormatter, imageRequestFormatter, nameParser);
+        this.rangeTransformer = new RangeTransformer(presRequestFormatter, imageRequestFormatter);
     }
 
-    public Manifest transform(BookCollection collection, Book book) {
+    public Collection collection(BookCollection collection) {
+        return null;
+    }
+
+    public Collection topCollection(List<BookCollection> collections) {
+        return null;
+    }
+
+    public Manifest manifest(BookCollection collection, Book book) {
         return buildManifest(collection, book);
     }
 
@@ -54,7 +67,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
     /**
      * @param collection book collection holding the book
      * @param book book containing the page
-     * @param page page to transform
+     * @param page page to manifest
      * @return the Canvas representation of a page
      */
     public Canvas canvas(BookCollection collection, Book book, String page) {
@@ -68,32 +81,19 @@ public class PresentationTransformer extends BasePresentationTransformer {
         return null;
     }
 
-    public Range buildRange(BookCollection col, Book book, String name) {
-        String[] parts = name.split("\\.");
+    public Range buildRange(BookCollection collection, Book book, String name) {
+        return rangeTransformer.buildRange(collection, book, name);
+    }
 
-        if (parts.length != 2) {
-            return null;
-        }
-
-        String type = parts[0];
-        String id = parts[1];
-
-        if (type.equals(ILLUSTRATION_RANGE_TYPE)) {
-            return buildIllustrationRange(col, book, id);
-        } else if (type.equals(IMAGE_RANGE_TYPE)) {
-            return buildImageRange(col, book, id);
-        } else if (type.equals(TEXT_RANGE_TYPE)) {
-            return buildTextRange(col, book, id);
-        } else {
-            return null;
-        }
+    public AnnotationList annotationList(BookCollection collection, Book book, String page, String type) {
+        return annoListTransformer.transform(collection, book, page, type);
     }
 
     /**
      * Transform a Book in the archive to a IIIF manifest.
      *
      * @param collection book collection holding the book
-     * @param book book to transform
+     * @param book book to manifest
      * @return the manifest
      */
     private Manifest buildManifest(BookCollection collection, Book book) {
@@ -113,7 +113,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
         manifest.addAttribution(book.getPermission(lc).getPermission(), lc);
         manifest.setViewingHint(ViewingHint.PAGED);
 
-        transformMetadata(book, new String[]{lc}, manifest);
+        manifest.setMetadata(transformMetadata(book, new String[]{lc}));
 
         // Set manifest thumbnail, set to thumbnail for default sequence
         if (manifest.getDefaultSequence() != null) {
@@ -142,10 +142,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
         sequence.setId(urlId(collection.getId(), book.getId(), label, PresentationRequestType.SEQUENCE));
         sequence.setType(IIIFNames.SC_SEQUENCE);
         sequence.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
-
-        for (String lang : collection.getAllSupportedLanguages()) {
-            sequence.setLabel(label, lang);
-        }
+        sequence.setLabel(label, "en");
 
         List<Canvas> canvases = new ArrayList<>();
         int count = 0;
@@ -176,202 +173,6 @@ public class PresentationTransformer extends BasePresentationTransformer {
         return sequence;
     }
 
-    private String constructRangeName(String type, String id) {
-        return type + "." + id;
-    }
-
-    private String constructRangeURI(BookCollection col, Book book, String range_type, String range_id) {
-        return urlId(col.getId(), book.getId(), constructRangeName(range_type, range_id), PresentationRequestType.RANGE);
-    }
-
-    private List<Range> buildTopRanges(BookCollection col, Book book) {
-        List<Range> result = new ArrayList<>();
-
-        // TODO Looks like ranges need to be embedded, add nicer mechanism to generate all ranges
-        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, TOP_RANGE_ID)));
-        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_FRONTMATTER_ID)));
-        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_BODYMATTER_ID)));
-        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_ENDMATTER_ID)));
-        //result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_BINDING_ID)));
-        //result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_MISC_ID)));
-
-//        result.add(buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, TOP_RANGE_ID)));
-//        result.add(buildRange(col, book, constructRangeName(TEXT_RANGE_TYPE, TOP_RANGE_ID)));
-
-
-        Range range = buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, TOP_RANGE_ID));
-        int index = 0;
-
-        while (range != null) {
-            result.add(range);
-            range = buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, "" + index++));
-        }
-
-        return result;
-    }
-
-    // TODO Better error handling in class
-    // Range name is  RANGE_TYPE "." RANGE_ID
-
-    // TODO
-    private Range buildTextRange(BookCollection col, Book book, String range_id) {
-        return null;
-    }
-
-    // TODO refactor image id parsing
-    private Range buildImageRange(BookCollection col, Book book, String range_id) {
-        Range result = new Range();
-
-        result.setId(constructRangeURI(col, book, IMAGE_RANGE_TYPE, range_id));
-        List<String> uris = new ArrayList<>();
-
-        switch (range_id) {
-        case TOP_RANGE_ID:
-            result.setViewingHint(ViewingHint.TOP);
-            result.setLabel(new TextValue("Image Type", "en"));
-
-            uris.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_FRONTMATTER_ID));
-            uris.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_BODYMATTER_ID));
-            uris.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_ENDMATTER_ID));
-
-            // TODO Ranges must nest?
-            //ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_BINDING_ID));
-            //ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_MISC_ID));
-
-            result.setRanges(uris);
-            break;
-        case IMAGE_RANGE_FRONTMATTER_ID:
-            result.setLabel(new TextValue("Front matter", "en"));
-
-            for (BookImage image : book.getImages()) {
-                if (nameParser.type(image.getId()) == ImageType.FRONTMATTER) {
-                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
-                }
-            }
-
-            result.setCanvases(uris);
-            break;
-        case IMAGE_RANGE_ENDMATTER_ID:
-            result.setLabel(new TextValue("End matter", "en"));
-
-            for (BookImage image : book.getImages()) {
-                if (nameParser.type(image.getId()) == ImageType.ENDMATTER) {
-                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
-                }
-            }
-
-            result.setCanvases(uris);
-            break;
-        case IMAGE_RANGE_BINDING_ID:
-            result.setLabel(new TextValue("Binding", "en"));
-
-            for (BookImage image : book.getImages()) {
-                if (image.getId().contains("binding")) {
-                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
-                }
-            }
-
-            result.setCanvases(uris);
-            break;
-        case IMAGE_RANGE_BODYMATTER_ID:
-            result.setLabel(new TextValue("Body matter", "en"));
-
-            for (BookImage image : book.getImages()) {
-                if (image.getId().split("\\.").length == 3) {
-                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
-                }
-            }
-
-            result.setCanvases(uris);
-            break;
-        case IMAGE_RANGE_MISC_ID:
-            result.setLabel(new TextValue("Misc", "en"));
-
-            for (BookImage image : book.getImages()) {
-                if (image.getId().contains("misc")) {
-                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
-                }
-            }
-
-            result.setCanvases(uris);
-            break;
-        default:
-            break;
-        }
-
-        return result;
-    }
-
-    private Range buildIllustrationRange(BookCollection col, Book book, String range_id) {
-        IllustrationTagging tags = book.getIllustrationTagging();
-
-        if (tags == null) {
-            return null;
-        }
-
-        Range result = new Range();
-
-        result.setId(constructRangeURI(col, book, ILLUSTRATION_RANGE_TYPE, range_id));
-
-        if (range_id.equals(TOP_RANGE_ID)) {
-            result.setViewingHint(ViewingHint.TOP);
-            result.setLabel("Illustrations", "en");
-
-            List<String> ranges = new ArrayList<>();
-
-            for (int i = 0; i < tags.size(); i++) {
-                ranges.add(constructRangeURI(col, book, ILLUSTRATION_RANGE_TYPE, "" + i));
-            }
-
-            result.setRanges(ranges);
-        } else {
-            int index;
-
-            try {
-                index = Integer.parseInt(range_id);
-            } catch (NumberFormatException e) {
-                return null;
-            }
-
-            if (index < 0 || index >= tags.size()) {
-                return null;
-            }
-
-            Illustration illus = tags.getIllustrationData(index);
-
-            IllustrationTitles titles = col.getIllustrationTitles();
-
-            if (titles == null) {
-                return null;
-            }
-
-            String label = "";
-
-            for (String title_id: illus.getTitles()) {
-                String title = titles.getTitleById(title_id);
-
-                if (title != null) {
-                    label += (label.isEmpty() ? "" : "; ") + title;
-                }
-            }
-
-            List<String> canvases = new ArrayList<>();
-
-//            BookImage image = guessImage(book, illus.getPage());
-//
-//            if (image == null) {
-//                return null;
-//            }
-
-            canvases.add(urlId(col.getId(), book.getId(), nameParser.page(illus.getPage()), PresentationRequestType.CANVAS));
-
-            result.setLabel(label, "en");
-            result.setCanvases(canvases);
-        }
-
-        return result;
-    }
-
     /**
      * Transform an archive book image into a IIIF canvas.
      *
@@ -385,20 +186,15 @@ public class PresentationTransformer extends BasePresentationTransformer {
         Canvas canvas = new Canvas();
         canvas.setId(urlId(collection.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
         canvas.setType(IIIFNames.SC_CANVAS);
-        for (String lang : collection.getAllSupportedLanguages()) {
-            canvas.setLabel(image.getPage(), lang);
-        }
+        canvas.setLabel(image.getPage(), "en");
 
-        // Images of bindings or misc images will be displayed as individuals
-        // instead of openings
-        // Canvas elements *should not* have viewing hint = paged?
+        // Images of bindings or misc images will be displayed as individuals instead of openings
         if (image.getId().contains(IMAGE_RANGE_MISC_ID) || image.getId().contains(IMAGE_RANGE_BINDING_ID)) {
             canvas.setViewingHint(ViewingHint.NON_PAGED);
         }
 
         // If the image is less than 1200 px in either dimension, force the dimensions
-        // of the canvas to be double that of the image.
-        // TODO hack to prevent canvas dimensions from being ZERO
+        // of the canvas to be double that of the image. TODO hack to prevent canvas dimensions from being ZERO
         int width = image.getWidth() == 0 ? 1 : image.getWidth();
         int height = image.getHeight() == 0 ? 1 : image.getHeight();
 
@@ -406,8 +202,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
         canvas.setWidth(tooSmall ? width * 2 : width);
         canvas.setHeight(tooSmall ? height * 2 : height);
 
-        // Set images to be the single image
-        // Always needs to be at least 1 image with Mirador2
+        // Set images to be the single image. Always needs to be at least 1 image with Mirador2
         canvas.setImages(Arrays.asList(
                 image.isMissing() ? imageResource(collection, book, collection.getMissingImage(), canvas.getId()) :
                         imageResource(collection, book, image, canvas.getId())));
@@ -451,9 +246,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
         ann.setMotivation(IIIFNames.SC_PAINTING);
         ann.setType(IIIFNames.OA_ANNOTATION);
 
-        for (String lang : collection.getAllSupportedLanguages()) {
-            ann.setLabel(image.getPage(), lang);
-        }
+        ann.setLabel(image.getPage(), "en");
 
         String id_in_image_server = imageRequestFormatter.format(imageIdMapper.mapId(collection, book, image.getId()));
         AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "image/tiff");

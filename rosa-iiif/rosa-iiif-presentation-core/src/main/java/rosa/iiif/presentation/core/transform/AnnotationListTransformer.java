@@ -34,9 +34,8 @@ public class AnnotationListTransformer extends BasePresentationTransformer {
     @Inject
     public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter,
                                      rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
-                                     ImageIdMapper imageIdMapper,
                                      ArchiveNameParser nameParser) {
-        super(presRequestFormatter, imageRequestFormatter, imageIdMapper, nameParser);
+        super(presRequestFormatter, imageRequestFormatter, nameParser);
     }
 
     public AnnotationList transform(BookCollection collection, Book book, String page, String listType) {
