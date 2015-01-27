@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform;
 
 import com.google.inject.Inject;
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -33,8 +34,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer {
     @Inject
     public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter,
                                      rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
-                                     ImageIdMapper imageIdMapper) {
-        super(presRequestFormatter, imageRequestFormatter, imageIdMapper);
+                                     ImageIdMapper imageIdMapper,
+                                     ArchiveNameParser nameParser) {
+        super(presRequestFormatter, imageRequestFormatter, imageIdMapper, nameParser);
     }
 
     public AnnotationList transform(BookCollection collection, Book book, String page, String listType) {

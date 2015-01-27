@@ -1,6 +1,8 @@
 package rosa.iiif.presentation.core.transform;
 
 import com.google.inject.Inject;
+import rosa.archive.core.ArchiveNameParser;
+import rosa.archive.core.ImageType;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -38,8 +40,9 @@ public class PresentationTransformer extends BasePresentationTransformer {
     @Inject
     public PresentationTransformer(IIIFRequestFormatter presRequestFormatter,
                                    rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
-                                   ImageIdMapper imageIdMapper) {
-        super(presRequestFormatter, imageRequestFormatter, imageIdMapper);
+                                   ImageIdMapper imageIdMapper,
+                                   ArchiveNameParser nameParser) {
+        super(presRequestFormatter, imageRequestFormatter, imageIdMapper, nameParser);
     }
 
     public Manifest transform(BookCollection collection, Book book) {
@@ -104,18 +107,10 @@ public class PresentationTransformer extends BasePresentationTransformer {
         manifest.setDefaultSequence(buildSequence(collection, book, DEFAULT_SEQUENCE_LABEL, book.getImages()));
         // setSequences(...) not used, as it sets references to other sequences
 
-        MultilangMetadata mmd = book.getMultilangMetadata();
         String lc = "en";
-
-        if (mmd == null) {
-            BookMetadata md = book.getBookMetadata(lc);
-            manifest.setLabel(md.getCommonName(), lc);
-            manifest.setDescription(md.getRepository() + ", " + md.getShelfmark(), lc);
-        } else {
-            BiblioData bd = mmd.getBiblioDataMap().get(lc);
-            manifest.setLabel(bd.getCommonName(), lc);
-            manifest.setDescription(bd.getRepository() + ", " + bd.getShelfmark(), lc);
-        }
+        BookMetadata md = book.getBookMetadata(lc);
+        manifest.setLabel(md.getCommonName(), lc);
+        manifest.setDescription(md.getRepository() + ", " + md.getShelfmark(), lc);
 
         manifest.addAttribution(book.getPermission(lc).getPermission(), lc);
         manifest.setViewingHint(ViewingHint.PAGED);
@@ -230,81 +225,80 @@ public class PresentationTransformer extends BasePresentationTransformer {
         Range result = new Range();
 
         result.setId(constructRangeURI(col, book, IMAGE_RANGE_TYPE, range_id));
+        List<String> uris = new ArrayList<>();
 
-        if (range_id.equals(TOP_RANGE_ID)) {
+        switch (range_id) {
+        case TOP_RANGE_ID:
             result.setViewingHint(ViewingHint.TOP);
             result.setLabel(new TextValue("Image Type", "en"));
 
-            List<String> ranges = new ArrayList<>();
-
-            ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_FRONTMATTER_ID));
-            ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_BODYMATTER_ID));
-            ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_ENDMATTER_ID));
+            uris.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_FRONTMATTER_ID));
+            uris.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_BODYMATTER_ID));
+            uris.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_ENDMATTER_ID));
 
             // TODO Ranges must nest?
             //ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_BINDING_ID));
             //ranges.add(constructRangeURI(col, book, IMAGE_RANGE_TYPE, IMAGE_RANGE_MISC_ID));
 
-            result.setRanges(ranges);
-        } else if (range_id.equals(IMAGE_RANGE_FRONTMATTER_ID)) {
+            result.setRanges(uris);
+            break;
+        case IMAGE_RANGE_FRONTMATTER_ID:
             result.setLabel(new TextValue("Front matter", "en"));
 
-            List<String> canvases = new ArrayList<>();
-
             for (BookImage image : book.getImages()) {
-                if (image.getId().contains("frontmatter")) {
-                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                if (nameParser.type(image.getId()) == ImageType.FRONTMATTER) {
+                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
                 }
             }
 
-            result.setCanvases(canvases);
-        } else if (range_id.equals(IMAGE_RANGE_ENDMATTER_ID)) {
+            result.setCanvases(uris);
+            break;
+        case IMAGE_RANGE_ENDMATTER_ID:
             result.setLabel(new TextValue("End matter", "en"));
 
-            List<String> canvases = new ArrayList<>();
-
             for (BookImage image : book.getImages()) {
-                if (image.getId().contains("endmatter")) {
-                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                if (nameParser.type(image.getId()) == ImageType.ENDMATTER) {
+                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
                 }
             }
 
-            result.setCanvases(canvases);
-        } else if (range_id.equals(IMAGE_RANGE_BINDING_ID)) {
+            result.setCanvases(uris);
+            break;
+        case IMAGE_RANGE_BINDING_ID:
             result.setLabel(new TextValue("Binding", "en"));
-
-            List<String> canvases = new ArrayList<>();
 
             for (BookImage image : book.getImages()) {
                 if (image.getId().contains("binding")) {
-                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
                 }
             }
 
-            result.setCanvases(canvases);
-        } else if (range_id.equals(IMAGE_RANGE_BODYMATTER_ID)) {
+            result.setCanvases(uris);
+            break;
+        case IMAGE_RANGE_BODYMATTER_ID:
             result.setLabel(new TextValue("Body matter", "en"));
-
-            List<String> canvases = new ArrayList<>();
 
             for (BookImage image : book.getImages()) {
                 if (image.getId().split("\\.").length == 3) {
-                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
                 }
             }
 
-            result.setCanvases(canvases);
-        } else if (range_id.equals(IMAGE_RANGE_MISC_ID)) {
+            result.setCanvases(uris);
+            break;
+        case IMAGE_RANGE_MISC_ID:
             result.setLabel(new TextValue("Misc", "en"));
-            List<String> canvases = new ArrayList<>();
 
             for (BookImage image : book.getImages()) {
                 if (image.getId().contains("misc")) {
-                    canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+                    uris.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
                 }
             }
 
-            result.setCanvases(canvases);
+            result.setCanvases(uris);
+            break;
+        default:
+            break;
         }
 
         return result;

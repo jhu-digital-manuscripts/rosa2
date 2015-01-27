@@ -2,6 +2,7 @@ package rosa.iiif.presentation.core.transform;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.aor.Location;
@@ -50,9 +51,10 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         rosa.iiif.image.core.IIIFRequestFormatter imageReqFormatter =
                 new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
         ImageIdMapper idMapper = new JhuFsiImageIdMapper(idMap);
+        ArchiveNameParser parser = new ArchiveNameParser();
 
-        presentationTransformer = new PresentationTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
-        annotationListTransformer = new AnnotationListTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
+        presentationTransformer = new PresentationTransformer(presentationReqFormatter, imageReqFormatter, idMapper, parser);
+        annotationListTransformer = new AnnotationListTransformer(presentationReqFormatter, imageReqFormatter, idMapper, parser);
     }
 
     @Test

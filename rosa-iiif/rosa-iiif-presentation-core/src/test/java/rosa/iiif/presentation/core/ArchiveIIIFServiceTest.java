@@ -12,6 +12,7 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.transform.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.JsonldSerializer;
@@ -41,11 +42,12 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         rosa.iiif.image.core.IIIFRequestFormatter imageFormatter = new rosa.iiif.image.core.IIIFRequestFormatter(
                 scheme, host, port, image_prefix);
         ImageIdMapper imageIdMapper = new JhuFsiImageIdMapper(new HashMap<String, String>());
+        ArchiveNameParser parser = new ArchiveNameParser();
 
         PresentationTransformer transformer = new PresentationTransformer(requestFormatter, imageFormatter,
-                imageIdMapper);
+                imageIdMapper, parser);
         AnnotationListTransformer annoListTransformer = new AnnotationListTransformer(requestFormatter, imageFormatter,
-                imageIdMapper);
+                imageIdMapper, parser);
 
         service = new ArchiveIIIFService(store, serializer, transformer, annoListTransformer, 1000);
     }

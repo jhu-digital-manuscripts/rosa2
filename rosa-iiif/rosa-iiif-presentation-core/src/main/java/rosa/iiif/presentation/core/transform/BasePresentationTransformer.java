@@ -1,5 +1,6 @@
 package rosa.iiif.presentation.core.transform;
 
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
@@ -26,11 +27,16 @@ public abstract class BasePresentationTransformer implements IIIFNames {
     protected IIIFRequestFormatter presRequestFormatter;
     protected rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter;
     protected ImageIdMapper imageIdMapper;
+    protected ArchiveNameParser nameParser;
 
-    public BasePresentationTransformer(IIIFRequestFormatter presRequestFormatter, rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter, ImageIdMapper imageIdMapper) {
+    public BasePresentationTransformer(IIIFRequestFormatter presRequestFormatter,
+                                       rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
+                                       ImageIdMapper imageIdMapper,
+                                       ArchiveNameParser nameParser) {
         this.presRequestFormatter = presRequestFormatter;
         this.imageRequestFormatter = imageRequestFormatter;
         this.imageIdMapper = imageIdMapper;
+        this.nameParser = nameParser;
     }
 
     protected BookImage guessImage(Book book, String frag) {
