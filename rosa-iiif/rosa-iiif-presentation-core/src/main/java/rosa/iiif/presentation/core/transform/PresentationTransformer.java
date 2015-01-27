@@ -48,16 +48,6 @@ public class PresentationTransformer extends BasePresentationTransformer {
         this.rangeTransformer = new RangeTransformer(presRequestFormatter, imageRequestFormatter);
     }
 
-    // TODO
-    public Collection collection(BookCollection collection) {
-        return null;
-    }
-
-    // TODO
-    public Collection topCollection(List<BookCollection> collections) {
-        return null;
-    }
-
     public Manifest manifest(BookCollection collection, Book book) {
         return buildManifest(collection, book);
     }
@@ -89,6 +79,51 @@ public class PresentationTransformer extends BasePresentationTransformer {
 
     public AnnotationList annotationList(BookCollection collection, Book book, String page, String type) {
         return annoListTransformer.transform(collection, book, page, type);
+    }
+
+    public Collection collection(BookCollection collection) {
+        Collection col = new Collection();
+
+        col.setId(urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION));
+        col.setLabel(collection.getId(), "en");
+        col.setType(SC_COLLECTION);
+
+        List<Reference> refs = new ArrayList<>();
+        for (String title : collection.books()) {
+            Reference ref = new Reference();
+
+            ref.setType(SC_MANIFEST);
+            ref.setLabel(new TextValue(title, "en"));
+            ref.setReference(urlId(collection.getId(), title, null, PresentationRequestType.MANIFEST));
+
+            refs.add(ref);
+        }
+
+        col.setManifests(refs);
+        return col;
+    }
+
+    public Collection topCollection(List<BookCollection> collections) {
+        Collection col = new Collection();
+
+        col.setId(urlId("top", null, "top", PresentationRequestType.COLLECTION));
+        col.setLabel("top", "en");
+        col.setDescription("Top level collection bringing together all other collections in this archive.", "en");
+        col.setType(SC_COLLECTION);
+
+        List<Reference> cols = new ArrayList<>();
+        for (BookCollection c : collections) {
+            Reference ref = new Reference();
+
+            ref.setType(SC_COLLECTION);
+            ref.setLabel(new TextValue(c.getId(), "en"));
+            ref.setReference(urlId(c.getId(), null, c.getId(), PresentationRequestType.COLLECTION));
+            
+            cols.add(ref);
+        }
+
+        col.setCollections(cols);
+        return col;
     }
 
     /**
