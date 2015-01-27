@@ -140,7 +140,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer {
 
         List<Annotation> anns = new ArrayList<>();
         for (Illustration ill : book.getIllustrationTagging()) {
-            String illusPage = guessImage(book, ill.getPage()).getPage();
+            String illusPage = nameParser.page(ill.getPage());
             if (!illusPage.equals(page)) {
                 continue;
             }

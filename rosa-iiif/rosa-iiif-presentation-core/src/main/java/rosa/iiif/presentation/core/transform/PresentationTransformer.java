@@ -2,7 +2,7 @@ package rosa.iiif.presentation.core.transform;
 
 import com.google.inject.Inject;
 import rosa.archive.core.ArchiveNameParser;
-import rosa.archive.core.ImageType;
+import rosa.archive.model.ImageType;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -12,8 +12,6 @@ import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.meta.BiblioData;
-import rosa.archive.model.meta.MultilangMetadata;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.model.Canvas;
@@ -359,13 +357,13 @@ public class PresentationTransformer extends BasePresentationTransformer {
 
             List<String> canvases = new ArrayList<>();
 
-            BookImage image = guessImage(book, illus.getPage());
+//            BookImage image = guessImage(book, illus.getPage());
+//
+//            if (image == null) {
+//                return null;
+//            }
 
-            if (image == null) {
-                return null;
-            }
-
-            canvases.add(urlId(col.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+            canvases.add(urlId(col.getId(), book.getId(), nameParser.page(illus.getPage()), PresentationRequestType.CANVAS));
 
             result.setLabel(label, "en");
             result.setCanvases(canvases);
@@ -517,8 +515,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
 
         for (Illustration ill : book.getIllustrationTagging()) {
             // If one illustration is found for this page, there is at least 1 annotation
-            BookImage image = guessImage(book, page);
-            if (image != null && ill.getPage().equals(image.getPage())) {
+            if (ill.getPage().equals(nameParser.page(page))) {
                 return true;
             }
         }

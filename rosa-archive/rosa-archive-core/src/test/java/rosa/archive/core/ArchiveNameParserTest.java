@@ -2,6 +2,7 @@ package rosa.archive.core;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.model.ImageType;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

@@ -1,6 +1,7 @@
 package rosa.archive.core;
 
 import rosa.archive.model.BookImage;
+import rosa.archive.model.ImageType;
 
 public class ArchiveNameParser {
     private static final String DEFAULT_PAGE_REGEX = "\\d+(r|v|R|V)";

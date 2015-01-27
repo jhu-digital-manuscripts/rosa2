@@ -39,36 +39,6 @@ public abstract class BasePresentationTransformer implements IIIFNames {
         this.nameParser = nameParser;
     }
 
-    protected BookImage guessImage(Book book, String frag) {
-        frag = frag.trim();
-
-        if (frag.matches("\\d+")) {
-            frag += "r";
-        }
-
-        if (frag.matches("\\d[rRvV]")) {
-            frag = "00" + frag;
-        } else if (frag.matches("\\d\\d[rRvV]")) {
-            frag = "0" + frag;
-        }
-
-        if (!frag.endsWith(".tif")) {
-            frag += ".tif";
-        }
-
-        if (!frag.startsWith(book.getId())) {
-            frag = book.getId() + "." + frag;
-        }
-
-        for (BookImage image: book.getImages()) {
-            if (image.getId().equalsIgnoreCase(frag)) {
-                return image;
-            }
-        }
-
-        return null;
-    }
-
     /**
      * Handle the book's structured metadata and transform it into Manifest metadata.
      *
