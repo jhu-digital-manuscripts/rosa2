@@ -8,6 +8,7 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.ImageType;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
@@ -48,10 +49,12 @@ public class PresentationTransformer extends BasePresentationTransformer {
         this.rangeTransformer = new RangeTransformer(presRequestFormatter, imageRequestFormatter);
     }
 
+    // TODO
     public Collection collection(BookCollection collection) {
         return null;
     }
 
+    // TODO
     public Collection topCollection(List<BookCollection> collections) {
         return null;
     }
@@ -150,8 +153,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
         for (BookImage image : imageList) {
             canvases.add(buildCanvas(collection, book, image));
 
-            // Set the starting point in the sequence to the first page
-            // of printed material
+            // Set the starting point in the sequence to the first page of printed material
             String page = image.getPage();
             if (hasNotBeenSet && page.matches(PAGE_REGEX)) {
                 sequence.setStartCanvas(count);
@@ -189,7 +191,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
         canvas.setLabel(image.getPage(), "en");
 
         // Images of bindings or misc images will be displayed as individuals instead of openings
-        if (image.getId().contains(IMAGE_RANGE_MISC_ID) || image.getId().contains(IMAGE_RANGE_BINDING_ID)) {
+        if (nameParser.type(image) == ImageType.MISC || nameParser.type(image) == ImageType.BINDING) {
             canvas.setViewingHint(ViewingHint.NON_PAGED);
         }
 
@@ -204,7 +206,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
 
         // Set images to be the single image. Always needs to be at least 1 image with Mirador2
         canvas.setImages(Arrays.asList(
-                image.isMissing() ? imageResource(collection, book, collection.getMissingImage(), canvas.getId()) :
+                image.isMissing() ? imageResource(collection, null, collection.getMissingImage(), canvas.getId()) :
                         imageResource(collection, book, image, canvas.getId())));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
@@ -240,7 +242,8 @@ public class PresentationTransformer extends BasePresentationTransformer {
 
         Annotation ann = new Annotation();
 
-        ann.setId(urlId(collection.getId(), book.getId(), image.getPage(), PresentationRequestType.ANNOTATION));
+        ann.setId(urlId(collection.getId(), book == null ? "" : book.getId(), image.getPage(),
+                PresentationRequestType.ANNOTATION));
         ann.setWidth(image.getWidth());
         ann.setHeight(image.getHeight());
         ann.setMotivation(IIIFNames.SC_PAINTING);

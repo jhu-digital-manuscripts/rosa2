@@ -30,6 +30,6 @@ public class JhuFsiImageIdMapper implements ImageIdMapper {
             share = collection.getId();
         }
         
-        return  share + "/" + book.getId() + "/" + imageId;
+        return  share + (book == null ? "" : "/" + book.getId()) + "/" + imageId;
     }
 }
