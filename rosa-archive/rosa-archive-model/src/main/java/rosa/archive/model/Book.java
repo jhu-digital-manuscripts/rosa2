@@ -89,8 +89,19 @@ public class Book implements HasId, Serializable {
         this.cropInfo = cropInfo;
     }
 
+    /**
+     * Get the metadata for this book in the specified language.
+     *
+     * There are two ways that metadata can be stored in the archive. The old way of storing
+     * metadata requires one metadata file for each language supported, whereas the new format
+     * has a single metadata file containing all supported languages. This method will return
+     * the book metadata regardless of the metadata storage format.
+     *
+     * @param language language code
+     * @return book metadata in specified language
+     */
     public BookMetadata getBookMetadata(String language) {
-        if (multilangMetadata != null) {
+        if (multilangMetadata != null && multilangMetadata.supportsLanguage(language)) {
             BookMetadata metadata = new BookMetadata();
 
             metadata.setId(multilangMetadata.getId());
@@ -223,10 +234,6 @@ public class Book implements HasId, Serializable {
 
     public void setAnnotatedPages(List<AnnotatedPage> annotatedPages) {
         this.annotatedPages = annotatedPages;
-    }
-
-    public MultilangMetadata getMultilangMetadata() {
-        return multilangMetadata;
     }
 
     public void setMultilangMetadata(MultilangMetadata multilangMetadata) {

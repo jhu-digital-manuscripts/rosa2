@@ -136,6 +136,10 @@ public class MultilangMetadata implements HasId, Serializable {
         this.bookTexts = bookTexts;
     }
 
+    public boolean supportsLanguage(String langaugeCode) {
+        return biblioDataMap.containsKey(langaugeCode);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
