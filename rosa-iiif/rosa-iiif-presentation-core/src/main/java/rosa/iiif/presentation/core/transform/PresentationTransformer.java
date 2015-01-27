@@ -13,7 +13,6 @@ import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.model.AnnotationList;
-import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFImageService;
@@ -311,7 +310,7 @@ public class PresentationTransformer extends BasePresentationTransformer {
 
         for (Illustration ill : book.getIllustrationTagging()) {
             // If one illustration is found for this page, there is at least 1 annotation
-            if (ill.getPage().equals(nameParser.page(page))) {
+            if (nameParser.page(ill.getPage()).equals(page)) {
                 return true;
             }
         }
