@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import rosa.iiif.presentation.core.IIIFService;
-import rosa.iiif.presentation.core.transform.AnnotationListTransformer;
+import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 
 import com.google.inject.Injector;

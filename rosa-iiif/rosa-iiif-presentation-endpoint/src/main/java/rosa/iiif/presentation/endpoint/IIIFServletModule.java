@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import com.google.inject.TypeLiteral;
+import com.google.inject.multibindings.Multibinder;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.Store;
@@ -19,8 +21,11 @@ import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFService;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
-import rosa.iiif.presentation.core.transform.AnnotationListTransformer;
-import rosa.iiif.presentation.core.transform.JsonldSerializer;
+import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
+import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
+import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
+import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
+import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 
@@ -28,7 +33,10 @@ import com.google.inject.Provides;
 import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 import com.google.inject.servlet.ServletModule;
-import rosa.iiif.presentation.core.transform.RangeTransformer;
+import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
+import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
+import rosa.iiif.presentation.core.transform.Transformer;
+import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 
 /**
  * The servlet is configured by iiif-servlet.properties.
@@ -39,10 +47,21 @@ public class IIIFServletModule extends ServletModule {
 
     @Override
     protected void configureServlets() {
+        Multibinder<Transformer<?>> transformers = Multibinder.newSetBinder(binder(), new TypeLiteral<Transformer<?>>() {});
+
         bind(PresentationTransformer.class);
+        bind(CollectionTransformer.class);
+        bind(CanvasTransformer.class);
+        bind(SequenceTransformer.class);
+        transformers.addBinding().to(AnnotationListTransformer.class);
+        transformers.addBinding().to(RangeTransformer.class);
+        transformers.addBinding().to(CanvasTransformer.class);
+        transformers.addBinding().to(SequenceTransformer.class);
+        transformers.addBinding().to(ManifestTransformer.class);
+
+        bind(TransformerSet.class);
+
         bind(PresentationSerializer.class).to(JsonldSerializer.class);
-        bind(AnnotationListTransformer.class);
-        bind(RangeTransformer.class);
         
         Names.bindProperties(binder(), loadProperties(SERVLET_CONFIG_PATH));
          
