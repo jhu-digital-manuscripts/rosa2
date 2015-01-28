@@ -7,6 +7,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.json.JSONObject;
 import org.junit.Before;
@@ -14,10 +16,16 @@ import org.junit.Test;
 
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
-import rosa.iiif.presentation.core.transform.AnnotationListTransformer;
-import rosa.iiif.presentation.core.transform.JsonldSerializer;
+import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
+import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
+import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
+import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
+import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
-import rosa.iiif.presentation.core.transform.RangeTransformer;
+import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
+import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
+import rosa.iiif.presentation.core.transform.Transformer;
+import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 
@@ -45,10 +53,22 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         ImageIdMapper imageIdMapper = new JhuFsiImageIdMapper(new HashMap<String, String>());
         ArchiveNameParser parser = new ArchiveNameParser();
 
-        PresentationTransformer transformer = new PresentationTransformer(requestFormatter, imageFormatter,
-                imageIdMapper, parser);
-        AnnotationListTransformer annoListTransformer = new AnnotationListTransformer(requestFormatter, imageFormatter,
-                parser);
+        CollectionTransformer collectionTransformer = new CollectionTransformer(requestFormatter, parser);
+        CanvasTransformer canvasTransformer = new CanvasTransformer(requestFormatter, imageFormatter, parser, imageIdMapper);
+        SequenceTransformer sequenceTransformer = new SequenceTransformer(requestFormatter, parser, canvasTransformer);
+
+        Set<Transformer<?>> transformers = new HashSet<>();
+        transformers.add(new AnnotationListTransformer(requestFormatter, parser));
+        transformers.add(canvasTransformer);
+        transformers.add(sequenceTransformer);
+        transformers.add(new ManifestTransformer(requestFormatter, parser, sequenceTransformer));
+        transformers.add(new RangeTransformer(requestFormatter));
+
+        TransformerSet transformerSet = new TransformerSet(transformers);
+
+        PresentationTransformer transformer = new PresentationTransformer(requestFormatter, parser, transformerSet,
+                collectionTransformer);
+        AnnotationListTransformer annoListTransformer = new AnnotationListTransformer(requestFormatter, parser);
 
         service = new ArchiveIIIFService(store, serializer, transformer, 1000);
     }

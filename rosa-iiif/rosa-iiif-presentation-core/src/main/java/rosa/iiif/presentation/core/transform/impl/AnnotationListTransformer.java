@@ -1,4 +1,4 @@
-package rosa.iiif.presentation.core.transform;
+package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
 import rosa.archive.core.ArchiveNameParser;
@@ -15,7 +15,7 @@ import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
-import rosa.iiif.presentation.core.ImageIdMapper;
+import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -28,17 +28,19 @@ import rosa.iiif.presentation.model.selector.FragmentSelector;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AnnotationListTransformer extends BasePresentationTransformer {
+public class AnnotationListTransformer extends BasePresentationTransformer implements Transformer<AnnotationList> {
     private static int annotation_counter = 0;
 
     @Inject
     public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter,
-                                     rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
                                      ArchiveNameParser nameParser) {
-        super(presRequestFormatter, imageRequestFormatter, nameParser);
+        super(presRequestFormatter, nameParser);
     }
 
-    public AnnotationList transform(BookCollection collection, Book book, String page, String listType) {
+    public AnnotationList transform(BookCollection collection, Book book, String name) {
+        String page = get_annotation_list_page(name);
+        String listType = get_annotation_list_id(name);
+
         // TODO need better way of finding a page
         BookImage pageImage = getPageImage(book.getImages(), page);
         if (pageImage == null) {
@@ -52,6 +54,41 @@ public class AnnotationListTransformer extends BasePresentationTransformer {
             return annotationList(collection, book, pageImage, aPage);
         }
         return annotationList(collection, book, pageImage, aPage, type);
+    }
+
+    @Override
+    public Class<AnnotationList> getType() {
+        return AnnotationList.class;
+    }
+
+    private String[] split_id(String id) {
+        String[] parts = id.split("\\.");
+
+        if (parts.length != 2) {
+            return null;
+        }
+
+        return parts;
+    }
+
+    private String get_annotation_list_page(String name) {
+        String[] parts = split_id(name);
+
+        if (parts == null) {
+            return null;
+        }
+
+        return parts[0];
+    }
+
+    private String get_annotation_list_id(String name) {
+        String[] parts = split_id(name);
+
+        if (parts == null) {
+            return null;
+        }
+
+        return parts[1];
     }
 
     private BookImage getPageImage(ImageList images, String page) {
@@ -80,7 +117,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer {
 
         // Illustrations annotations do not need Annotated Page TODO refactor to have less confusing returns
         if (listType == AnnotationListType.ILLUSTRATION) {
-            List<Annotation> anns = illustrationForPage(collection, book, image);
+            List<Annotation> anns = illustrationsForPage(collection, book, image);
             if (anns == null || anns.isEmpty()) {
                 return null;
             }
@@ -131,7 +168,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer {
         return list;
     }
 
-    private List<Annotation> illustrationForPage(BookCollection collection, Book book, BookImage image) {
+    private List<Annotation> illustrationsForPage(BookCollection collection, Book book, BookImage image) {
         String page = image.getPage();
         if (book.getIllustrationTagging() == null) {
             return null;
@@ -210,6 +247,13 @@ public class AnnotationListTransformer extends BasePresentationTransformer {
         return anns;
     }
 
+    /**
+     * @param collection collection containing the book
+     * @param book book that contains this annotation list
+     * @param image image associated with this annotation list
+     * @param aPage AoR annotations
+     * @return top level annotation list for a page, containing all non-image annotations
+     */
     private AnnotationList annotationList(BookCollection collection, Book book, BookImage image, AnnotatedPage aPage) {
         AnnotationList list = new AnnotationList();
 

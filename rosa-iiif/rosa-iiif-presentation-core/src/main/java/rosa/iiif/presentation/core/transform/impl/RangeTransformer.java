@@ -1,7 +1,6 @@
-package rosa.iiif.presentation.core.transform;
+package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -12,7 +11,8 @@ import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageType;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
-import rosa.iiif.presentation.core.ImageIdMapper;
+import rosa.iiif.presentation.core.transform.Transformer;
+import rosa.iiif.presentation.core.transform.impl.BasePresentationTransformer;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.TextValue;
@@ -21,15 +21,15 @@ import rosa.iiif.presentation.model.ViewingHint;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RangeTransformer extends BasePresentationTransformer{
+public class RangeTransformer extends BasePresentationTransformer implements Transformer<Range> {
 
     @Inject
-    public RangeTransformer(IIIFRequestFormatter presRequestFormatter,
-                            rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter) {
-        super(presRequestFormatter, imageRequestFormatter, null);
+    public RangeTransformer(IIIFRequestFormatter presRequestFormatter) {
+        super(presRequestFormatter, null);
     }
 
-    public Range buildRange(BookCollection col, Book book, String name) {
+    @Override
+    public Range transform(BookCollection collection, Book book, String name) {
         String[] parts = name.split("\\.");
 
         if (parts.length != 2) {
@@ -40,14 +40,23 @@ public class RangeTransformer extends BasePresentationTransformer{
         String id = parts[1];
 
         if (type.equals(ILLUSTRATION_RANGE_TYPE)) {
-            return buildIllustrationRange(col, book, id);
+            return buildIllustrationRange(collection, book, id);
         } else if (type.equals(IMAGE_RANGE_TYPE)) {
-            return buildImageRange(col, book, id);
+            return buildImageRange(collection, book, id);
         } else if (type.equals(TEXT_RANGE_TYPE)) {
-            return buildTextRange(col, book, id);
+            return buildTextRange(collection, book, id);
         } else {
             return null;
         }
+    }
+
+    @Override
+    public Class<Range> getType() {
+        return Range.class;
+    }
+
+    private Range range(BookCollection col, Book book, String name) {
+        return transform(col, book, name);
     }
 
     private String constructRangeName(String type, String id) {
@@ -58,26 +67,26 @@ public class RangeTransformer extends BasePresentationTransformer{
         return urlId(col.getId(), book.getId(), constructRangeName(range_type, range_id), PresentationRequestType.RANGE);
     }
 
-    private List<Range> buildTopRanges(BookCollection col, Book book) {
+    public List<Range> topRanges(BookCollection col, Book book) {
         List<Range> result = new ArrayList<>();
 
         // TODO Looks like ranges need to be embedded, add nicer mechanism to generate all ranges
-        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, TOP_RANGE_ID)));
-        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_FRONTMATTER_ID)));
-        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_BODYMATTER_ID)));
-        result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_ENDMATTER_ID)));
-        //result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_BINDING_ID)));
-        //result.add(buildRange(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_MISC_ID)));
+        result.add(range(col, book, constructRangeName(IMAGE_RANGE_TYPE, TOP_RANGE_ID)));
+        result.add(range(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_FRONTMATTER_ID)));
+        result.add(range(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_BODYMATTER_ID)));
+        result.add(range(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_ENDMATTER_ID)));
+        //result.add(range(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_BINDING_ID)));
+        //result.add(range(col, book, constructRangeName(IMAGE_RANGE_TYPE, IMAGE_RANGE_MISC_ID)));
 
-//        result.add(buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, TOP_RANGE_ID)));
-        result.add(buildRange(col, book, constructRangeName(TEXT_RANGE_TYPE, TOP_RANGE_ID)));
+//        result.add(range(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, TOP_RANGE_ID)));
+        result.add(range(col, book, constructRangeName(TEXT_RANGE_TYPE, TOP_RANGE_ID)));
 
-        Range range = buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, TOP_RANGE_ID));
+        Range range = range(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, TOP_RANGE_ID));
         int index = 0;
 
         while (range != null) {
             result.add(range);
-            range = buildRange(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, "" + index++));
+            range = range(col, book, constructRangeName(ILLUSTRATION_RANGE_TYPE, "" + index++));
         }
 
         return result;

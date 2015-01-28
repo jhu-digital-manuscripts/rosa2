@@ -1,39 +1,77 @@
-package rosa.iiif.presentation.core.transform;
+package rosa.iiif.presentation.core.transform.impl;
 
+import com.google.inject.Inject;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
-import rosa.archive.model.BookImage;
+import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
-import rosa.iiif.presentation.core.ImageIdMapper;
-import rosa.iiif.presentation.model.*;
+import rosa.iiif.presentation.core.transform.Transformer;
+import rosa.iiif.presentation.model.HtmlValue;
+import rosa.iiif.presentation.model.Manifest;
+import rosa.iiif.presentation.model.PresentationRequestType;
+import rosa.iiif.presentation.model.ViewingDirection;
+import rosa.iiif.presentation.model.ViewingHint;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class BasePresentationTransformer implements IIIFNames {
-    protected static final String IMAGE_RANGE_MISC_ID = "misc";
-    protected static final String IMAGE_RANGE_BODYMATTER_ID = "bodymatter";
-    protected static final String IMAGE_RANGE_BINDING_ID = "binding";
-    protected static final String IMAGE_RANGE_ENDMATTER_ID = "endmatter";
-    protected static final String IMAGE_RANGE_FRONTMATTER_ID = "frontmatter";
-    protected static final String DEFAULT_SEQUENCE_LABEL = "reading-order";
-    protected static final String PAGE_REGEX = "\\d{1,3}(r|v|R|V)";
-    protected static final String TOP_RANGE_ID = "top";
-    protected static final String ILLUSTRATION_RANGE_TYPE = "illus";
-    protected static final String IMAGE_RANGE_TYPE = "image";
-    protected static final String TEXT_RANGE_TYPE = "text";
+public class ManifestTransformer extends BasePresentationTransformer implements Transformer<Manifest> {
+    private final SequenceTransformer sequenceTransformer;
 
-    protected IIIFRequestFormatter presRequestFormatter;
-    protected rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter;
-    protected ArchiveNameParser nameParser;
+    @Inject
+    public ManifestTransformer(IIIFRequestFormatter presRequestFormatter, ArchiveNameParser nameParser,
+                               SequenceTransformer sequenceTransformer) {
+        super(presRequestFormatter, nameParser);
+        this.sequenceTransformer = sequenceTransformer;
+    }
 
-    public BasePresentationTransformer(IIIFRequestFormatter presRequestFormatter,
-                                       rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
-                                       ArchiveNameParser nameParser) {
-        this.presRequestFormatter = presRequestFormatter;
-        this.imageRequestFormatter = imageRequestFormatter;
-        this.nameParser = nameParser;
+    @Override
+    public Manifest transform(BookCollection collection, Book book, String name) {
+        return buildManifest(collection, book);
+    }
+
+    @Override
+    public Class<Manifest> getType() {
+        return Manifest.class;
+    }
+
+    /**
+     * Transform a Book in the archive to a IIIF manifest.
+     *
+     * @param collection book collection holding the book
+     * @param book book to manifest
+     * @return the manifest
+     */
+    private Manifest buildManifest(BookCollection collection, Book book) {
+        Manifest manifest = new Manifest();
+
+        manifest.setId(urlId(collection.getId(), book.getId(), null, PresentationRequestType.MANIFEST));
+        manifest.setType(SC_MANIFEST);
+        manifest.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
+        manifest.setDefaultSequence(sequenceTransformer.transform(collection, book, DEFAULT_SEQUENCE_LABEL));
+        // setSequences(...) not used, as it sets references to other sequences
+
+        String lc = "en";
+        BookMetadata md = book.getBookMetadata(lc);
+        manifest.setLabel(md.getCommonName(), lc);
+        manifest.setDescription(md.getRepository() + ", " + md.getShelfmark(), lc);
+
+        manifest.addAttribution(book.getPermission(lc).getPermission(), lc);
+        manifest.setViewingHint(ViewingHint.PAGED);
+
+        manifest.setMetadata(transformMetadata(book, new String[]{lc}));
+
+        // Set manifest thumbnail, set to thumbnail for default sequence
+        if (manifest.getDefaultSequence() != null) {
+            manifest.setThumbnailUrl(manifest.getDefaultSequence().getThumbnailUrl());
+            manifest.setThumbnailService(manifest.getDefaultSequence().getThumbnailService());
+        }
+
+        // TODO ranges
+//        manifest.setRanges(rangeTransformer.buildTopRanges(collection, book));
+
+        return manifest;
     }
 
     /**
@@ -98,20 +136,4 @@ public abstract class BasePresentationTransformer implements IIIFNames {
 
         return map;
     }
-
-    protected String urlId(String collection, String book, String name, PresentationRequestType type) {
-        return presRequestFormatter.format(presentationRequest(collection, book, name, type));
-    }
-
-    private String presentationId(String collection, String book) {
-        return collection + (book == null || book.isEmpty() ? "" : "." + book);
-    }
-
-    private PresentationRequest presentationRequest(String collection, String book, String name,
-                                                    PresentationRequestType type) {
-        return new PresentationRequest(presentationId(collection, book), name, type);
-    }
-
-
-
 }

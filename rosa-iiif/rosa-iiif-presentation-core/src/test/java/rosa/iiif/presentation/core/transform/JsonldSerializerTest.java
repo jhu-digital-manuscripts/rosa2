@@ -14,6 +14,7 @@ import java.util.UUID;
 import org.junit.Before;
 import org.junit.Test;
 
+import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.HtmlValue;

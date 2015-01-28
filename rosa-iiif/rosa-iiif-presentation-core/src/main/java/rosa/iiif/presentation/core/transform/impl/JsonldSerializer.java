@@ -1,8 +1,9 @@
-package rosa.iiif.presentation.core.transform;
+package rosa.iiif.presentation.core.transform.impl;
 
 import org.json.JSONException;
 import org.json.JSONWriter;
 
+import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;

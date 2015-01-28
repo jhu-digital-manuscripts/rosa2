@@ -302,8 +302,7 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
-        AnnotationList list = transformer.annotationList(collection, book, get_annotation_list_page(name),
-                get_annotation_list_id(name));
+        AnnotationList list = transformer.annotationList(collection, book, name);
 
         if (list == null) {
             return false;
@@ -312,26 +311,6 @@ public class ArchiveIIIFService implements IIIFService {
         serializer.write(list, os);
 
         return true;
-    }
-
-    private String get_annotation_list_page(String name) {
-        String[] parts = split_id(name);
-
-        if (parts == null) {
-            return null;
-        }
-
-        return parts[0];
-    }
-
-    private String get_annotation_list_id(String name) {
-        String[] parts = split_id(name);
-
-        if (parts == null) {
-            return null;
-        }
-
-        return parts[1];
     }
 
     private boolean handle_annotation(String id, String name, OutputStream os) {
