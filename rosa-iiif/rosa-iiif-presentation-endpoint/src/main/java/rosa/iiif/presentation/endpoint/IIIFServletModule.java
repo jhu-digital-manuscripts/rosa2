@@ -21,13 +21,14 @@ import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFService;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
+import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
 import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
 import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
-import rosa.iiif.presentation.core.transform.PresentationTransformer;
+import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 
 import com.google.inject.Provides;
 import com.google.inject.name.Named;
@@ -49,7 +50,7 @@ public class IIIFServletModule extends ServletModule {
     protected void configureServlets() {
         Multibinder<Transformer<?>> transformers = Multibinder.newSetBinder(binder(), new TypeLiteral<Transformer<?>>() {});
 
-        bind(PresentationTransformer.class);
+        bind(PresentationTransformer.class).to(PresentationTransformerImpl.class);
         bind(CollectionTransformer.class);
         bind(CanvasTransformer.class);
         bind(SequenceTransformer.class);

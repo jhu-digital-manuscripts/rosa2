@@ -16,12 +16,13 @@ import org.junit.Test;
 
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
+import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
 import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
 import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
-import rosa.iiif.presentation.core.transform.PresentationTransformer;
+import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
 import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -66,9 +67,8 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
 
         TransformerSet transformerSet = new TransformerSet(transformers);
 
-        PresentationTransformer transformer = new PresentationTransformer(requestFormatter, parser, transformerSet,
+        PresentationTransformer transformer = new PresentationTransformerImpl(requestFormatter, parser, transformerSet,
                 collectionTransformer);
-        AnnotationListTransformer annoListTransformer = new AnnotationListTransformer(requestFormatter, parser);
 
         service = new ArchiveIIIFService(store, serializer, transformer, 1000);
     }

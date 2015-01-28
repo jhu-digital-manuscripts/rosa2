@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import rosa.iiif.presentation.core.IIIFService;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
-import rosa.iiif.presentation.core.transform.PresentationTransformer;
+import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 
 import com.google.inject.Injector;
 
@@ -20,7 +20,7 @@ public class IIIFServletConfigTest {
     public void testInjection() {
         Injector injector = new IIIFServletConfig().getInjector();
 
-        PresentationTransformer trans = injector.getInstance(PresentationTransformer.class);
+        PresentationTransformerImpl trans = injector.getInstance(PresentationTransformerImpl.class);
         assertNotNull("Failed to inject presentation transformer.", trans);
 
         AnnotationListTransformer listTrans = injector.getInstance(AnnotationListTransformer.class);

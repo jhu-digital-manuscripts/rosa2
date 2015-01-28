@@ -102,7 +102,7 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
         
-        Range range = transformer.buildRange(col, book, name);
+        Range range = transformer.range(col, book, name);
         
         if (range == null) {
             return false;

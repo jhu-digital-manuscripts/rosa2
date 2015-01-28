@@ -11,6 +11,7 @@ import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
 import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
+import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
 import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
 import rosa.iiif.presentation.core.transform.impl.TransformerSet;
@@ -45,7 +46,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     private static final int ENDPOINT_PORT = -1;
 
 
-    private PresentationTransformer presentationTransformer;
+    private PresentationTransformerImpl presentationTransformer;
 
     @Before
     public void setup() {
@@ -72,7 +73,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
         TransformerSet transformerSet = new TransformerSet(transformers);
 
-        presentationTransformer = new PresentationTransformer(presentationReqFormatter, parser, transformerSet, collectionTransformer);
+        presentationTransformer = new PresentationTransformerImpl(presentationReqFormatter, parser, transformerSet, collectionTransformer);
     }
 
     @Test
