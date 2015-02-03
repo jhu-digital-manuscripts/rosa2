@@ -4,12 +4,14 @@ import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.core.serialize.BookMetadataSerializer;
+import rosa.archive.core.serialize.BookReferenceSheetSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
 import rosa.archive.core.serialize.CropInfoSerializer;
 import rosa.archive.core.serialize.IllustrationTaggingSerializer;
 import rosa.archive.core.serialize.IllustrationTitlesSerializer;
 import rosa.archive.core.serialize.ImageListSerializer;
+import rosa.archive.core.serialize.ReferenceSheetSerializer;
 import rosa.archive.core.serialize.MultilangMetadataSerializer;
 import rosa.archive.core.serialize.NarrativeSectionsSerializer;
 import rosa.archive.core.serialize.NarrativeTaggingSerializer;
@@ -46,6 +48,8 @@ public class ArchiveCoreModule extends AbstractModule {
         serializers.addBinding().to(PermissionSerializer.class);
         serializers.addBinding().to(MultilangMetadataSerializer.class);
         serializers.addBinding().to(AORAnnotatedPageSerializer.class);
+        serializers.addBinding().to(ReferenceSheetSerializer.class);
+        serializers.addBinding().to(BookReferenceSheetSerializer.class);
         
         bind(SerializerSet.class);
         

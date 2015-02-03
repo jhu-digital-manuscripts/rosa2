@@ -71,6 +71,14 @@ public interface ArchiveConstants {
 
     static final String MISSING_PREFIX = "*";
 
+    // AoR Specific
+
+    static final String PEOPLE = "people.csv";
+
+    static final String LOCATIONS = "locations.csv";
+
+    static final String BOOKS = "books.csv";
+
     // File extensions
 
     static final String CSV_EXT = ".csv";

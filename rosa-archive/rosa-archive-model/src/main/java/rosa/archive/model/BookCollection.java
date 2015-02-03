@@ -24,6 +24,10 @@ public class BookCollection implements HasId, Serializable {
     private SHA1Checksum checksums;
     private BookImage missingImage;
 
+    private ReferenceSheet peopleRef;
+    private ReferenceSheet locationsRef;
+    private BookReferenceSheet booksRef;
+
     public BookCollection() {
         books = new String[0];
         languages = new String[0];
@@ -49,6 +53,30 @@ public class BookCollection implements HasId, Serializable {
 
     public void setBooks(String[] books) {
         this.books = books;
+    }
+
+    public ReferenceSheet getPeopleRef() {
+        return peopleRef;
+    }
+
+    public void setPeopleRef(ReferenceSheet peopleRef) {
+        this.peopleRef = peopleRef;
+    }
+
+    public ReferenceSheet getLocationsRef() {
+        return locationsRef;
+    }
+
+    public void setLocationsRef(ReferenceSheet locationsRef) {
+        this.locationsRef = locationsRef;
+    }
+
+    public BookReferenceSheet getBooksRef() {
+        return booksRef;
+    }
+
+    public void setBooksRef(BookReferenceSheet booksRef) {
+        this.booksRef = booksRef;
     }
 
     public CharacterNames getCharacterNames() {
@@ -130,6 +158,7 @@ public class BookCollection implements HasId, Serializable {
         BookCollection that = (BookCollection) o;
 
         if (!Arrays.equals(books, that.books)) return false;
+        if (booksRef != null ? !booksRef.equals(that.booksRef) : that.booksRef != null) return false;
         if (characterNames != null ? !characterNames.equals(that.characterNames) : that.characterNames != null)
             return false;
         if (checksums != null ? !checksums.equals(that.checksums) : that.checksums != null) return false;
@@ -137,10 +166,11 @@ public class BookCollection implements HasId, Serializable {
         if (illustrationTitles != null ? !illustrationTitles.equals(that.illustrationTitles) : that.illustrationTitles != null)
             return false;
         if (!Arrays.equals(languages, that.languages)) return false;
+        if (locationsRef != null ? !locationsRef.equals(that.locationsRef) : that.locationsRef != null) return false;
+        if (missingImage != null ? !missingImage.equals(that.missingImage) : that.missingImage != null) return false;
         if (narrativeSections != null ? !narrativeSections.equals(that.narrativeSections) : that.narrativeSections != null)
             return false;
-        if (missingImage != null ? !missingImage.equals(that.missingImage) : that.missingImage != null)
-            return false;
+        if (peopleRef != null ? !peopleRef.equals(that.peopleRef) : that.peopleRef != null) return false;
 
         return true;
     }
@@ -155,6 +185,9 @@ public class BookCollection implements HasId, Serializable {
         result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
         result = 31 * result + (checksums != null ? checksums.hashCode() : 0);
         result = 31 * result + (missingImage != null ? missingImage.hashCode() : 0);
+        result = 31 * result + (peopleRef != null ? peopleRef.hashCode() : 0);
+        result = 31 * result + (locationsRef != null ? locationsRef.hashCode() : 0);
+        result = 31 * result + (booksRef != null ? booksRef.hashCode() : 0);
         return result;
     }
 
@@ -168,7 +201,10 @@ public class BookCollection implements HasId, Serializable {
                 ", illustrationTitles=" + illustrationTitles +
                 ", narrativeSections=" + narrativeSections +
                 ", checksums=" + checksums +
-                ", missimgImage=" + missingImage +
+                ", missingImage=" + missingImage +
+                ", peopleRef=" + peopleRef +
+                ", locationsRef=" + locationsRef +
+                ", booksRef=" + booksRef +
                 '}';
     }
 }

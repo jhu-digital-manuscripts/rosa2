@@ -182,6 +182,25 @@ public class ModelEqualsAndHashCodeTest {
     }
 
     @Test
+    public void referenceSheetTest() {
+        EqualsVerifier
+                .forClass(ReferenceSheet.class)
+                .allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
+                .verify();
+    }
+
+    @Test
+    public void bookReferenceSheetTest() {
+        EqualsVerifier
+                .forClass(BookReferenceSheet.class)
+                .allFieldsShouldBeUsed()
+                .withRedefinedSuperclass()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
+                .verify();
+    }
+
+    @Test
     public void bookTest() {
         EqualsVerifier
                 .forClass(Book.class)

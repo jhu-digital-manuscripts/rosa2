@@ -32,6 +32,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.CropData;
@@ -41,6 +42,7 @@ import rosa.archive.model.HashAlgorithm;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
@@ -93,6 +95,10 @@ public class StoreImpl implements Store, ArchiveConstants {
                 errors));
         collection.setNarrativeSections(loadItem(NARRATIVE_SECTIONS, collectionGroup, NarrativeSections.class, errors));
         collection.setChecksum(loadItem(collectionId + SHA1SUM, collectionGroup, SHA1Checksum.class, errors));
+        // Add AoR collection data, if applicable
+        collection.setPeopleRef(loadItem(PEOPLE, collectionGroup, ReferenceSheet.class, errors));
+        collection.setLocationsRef(loadItem(LOCATIONS, collectionGroup, ReferenceSheet.class, errors));
+        collection.setBooksRef(loadItem(BOOKS, collectionGroup, BookReferenceSheet.class, errors));
 
         BookImage missing = new BookImage();
         missing.setId(MISSING_IMAGE);
