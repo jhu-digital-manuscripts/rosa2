@@ -17,6 +17,7 @@ import org.xml.sax.SAXException;
 
 import rosa.archive.core.util.CachingUrlEntityResolver;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
@@ -121,6 +122,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                     page.getSymbols().add(new Symbol(
                             annotation.getAttribute("text"),
                             annotation.getAttribute("name"),
+                            annotation.getAttribute("language"),
                             Location.valueOf(
                                     annotation.getAttribute("place").toUpperCase()
                             )
@@ -140,6 +142,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                 case "numeral":
                     page.getNumerals().add(new Numeral(
                             annotation.getAttribute("text"),
+                            null,
                             Location.valueOf(
                                     annotation.getAttribute("place").toUpperCase()
                             )
@@ -148,8 +151,18 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                     break;
                 case "errata":
                     page.getErrata().add(new Errata(
+                            annotation.getAttribute("language"),
                             annotation.getAttribute("copytext"),
                             annotation.getAttribute("amendedtext")
+                    ));
+                    break;
+                case "drawing":
+                    page.getDrawings().add(new Drawing(
+                            annotation.getAttribute("text"),
+                            Location.valueOf(annotation.getAttribute("place").toUpperCase()),
+                            annotation.getAttribute("name"),
+                            annotation.getAttribute("method"),
+                            annotation.getAttribute("language")
                     ));
                     break;
                 default:
@@ -195,7 +208,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                     langs.add(lang);
                     break;
                 case "translation":
-                    marg.setTranslation(el.getAttribute("translation_text"));
+                    marg.setTranslation(hasAttribute("translation_text", el) ?
+                            el.getAttribute("translation_text") : el.getTextContent());
                     break;
                 default:
                     break;
@@ -231,20 +245,23 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
             Element el = (Element) node;
             switch (el.getTagName()) {
                 case "person":
-                    people.add(el.getAttribute("person_name"));
+                    people.add(hasAttribute("name", el) ?
+                            el.getAttribute("name") : el.getAttribute("person_name"));
                     break;
                 case "book":
                     books.add(el.getAttribute("title"));
                     break;
                 case "location":
-                    locations.add(el.getAttribute("location_name"));
+                    locations.add(hasAttribute("name", el) ?
+                            el.getAttribute("name") : el.getAttribute("location_name"));
                     break;
                 case "marginalia_text":
                     pos.getTexts().add(el.getTextContent());
                     break;
                 case "emphasis":
                     underlines.add(new Underline(
-                            el.getAttribute("emphasis_text"),
+                            hasAttribute("text", el) ?
+                                    el.getAttribute("text") : el.getAttribute("emphasis_text"),
                             el.getAttribute("method"),
                             el.getAttribute("type"),
                             el.getAttribute("language"),
@@ -252,7 +269,9 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
                     ));
                     break;
                 case "X-ref":
-                    XRef xRef = new XRef(el.getAttribute("person"), el.getAttribute("title"));
+                    XRef xRef = new XRef(el.getAttribute("person"),
+                            hasAttribute("book_title", el) ?
+                                    el.getAttribute("book_title") : el.getAttribute("title"));
                     xRefs.add(xRef);
                     break;
                 default:
@@ -266,5 +285,9 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage> {
     @Override
     public Class<AnnotatedPage> getObjectType() {
         return AnnotatedPage.class;
+    }
+
+    private boolean hasAttribute(String attribute, Element el) {
+        return el.getAttribute(attribute) != null && !el.getAttribute(attribute).isEmpty();
     }
 }

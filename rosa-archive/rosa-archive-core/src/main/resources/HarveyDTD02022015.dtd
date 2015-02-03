@@ -7,7 +7,7 @@
 	<!ATTLIST page signature CDATA #IMPLIED>
 	<!ATTLIST page reader CDATA #REQUIRED>
 	
-<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*, numeral*, errata*)>	
+<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*, numeral*, errata*, drawing*)>	
 	<!ELEMENT marginalia (language*, translation?)>
 	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
 	<!ATTLIST marginalia date CDATA #IMPLIED>
@@ -45,7 +45,7 @@
 		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 		<!ATTLIST symbol text CDATA #IMPLIED>
 	<!ELEMENT mark EMPTY>
-		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|colon|comma|dash|diacritic|dot|equal_sign|est_mark|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
+		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|colon|comma|dash|diacritic|dot|double_vertical_bar|equal_sign|est_mark|hash|horizontal_bar|page_break|pen_trial|plus_sign|quotation_mark|scribble|semicolon|slash|straight_quotation_mark|tick|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
 		<!ATTLIST mark method (chalk|pen) #REQUIRED>
 		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
 		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
@@ -54,8 +54,15 @@
 	    <!ATTLIST numeral place (head|tail|left_margin|right_margin|intext) #REQUIRED>
 	    <!ATTLIST numeral text CDATA #IMPLIED>
 	<!ELEMENT errata EMPTY>
+	   <!ATTLIST errata language  (EN|EL|FR|IT|LA|ES) #REQUIRED>
 	   <!ATTLIST errata copytext CDATA #REQUIRED>
 	   <!ATTLIST errata amendedtext CDATA #REQUIRED>
+	<!ELEMENT drawing EMPTY>
+	   <!ATTLIST drawing name (face|manicule|map) #REQUIRED>
+	   <!ATTLIST drawing method (chalk|pen) #REQUIRED>
+	   <!ATTLIST drawing place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+	   <!ATTLIST drawing language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+	   <!ATTLIST drawing text CDATA #IMPLIED>
 	
 			
 

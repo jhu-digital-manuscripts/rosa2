@@ -87,9 +87,9 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertFalse(page.getMarks().contains(m3));
 
         // <symbol name="Sun" place="left_margin"/>
-        Symbol s1 = new Symbol("", "Sun", Location.LEFT_MARGIN);
+        Symbol s1 = new Symbol("", "Sun", "", Location.LEFT_MARGIN);
         // not present in document
-        Symbol s2 = new Symbol("fake text", "moo method", null);
+        Symbol s2 = new Symbol("fake text", "moo method", "lang", null);
         assertTrue(page.getSymbols().contains(s1));
         assertFalse(page.getSymbols().contains(s2));
 

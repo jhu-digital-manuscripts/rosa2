@@ -10,12 +10,14 @@ public abstract class Annotation implements Serializable {
 
     private String referringText;
     private Location location;
+    private String language;
 
     protected Annotation() {}
 
-    protected Annotation(String referringText, Location location) {
+    protected Annotation(String referringText, String language, Location location) {
         this.referringText = referringText;
         this.location = location;
+        this.language = language;
     }
 
     public String getReferringText() {
@@ -34,6 +36,14 @@ public abstract class Annotation implements Serializable {
         this.location = location;
     }
 
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
     public abstract String toPrettyString();
 
     @Override
@@ -43,6 +53,7 @@ public abstract class Annotation implements Serializable {
 
         Annotation that = (Annotation) o;
 
+        if (language != null ? !language.equals(that.language) : that.language != null) return false;
         if (location != that.location) return false;
         if (referringText != null ? !referringText.equals(that.referringText) : that.referringText != null)
             return false;
@@ -54,6 +65,7 @@ public abstract class Annotation implements Serializable {
     public int hashCode() {
         int result = referringText != null ? referringText.hashCode() : 0;
         result = 31 * result + (location != null ? location.hashCode() : 0);
+        result = 31 * result + (language != null ? language.hashCode() : 0);
         return result;
     }
 
@@ -62,6 +74,7 @@ public abstract class Annotation implements Serializable {
         return "Annotation{" +
                 "referringText='" + referringText + '\'' +
                 ", location=" + location +
+                ", language='" + language + '\'' +
                 '}';
     }
 }

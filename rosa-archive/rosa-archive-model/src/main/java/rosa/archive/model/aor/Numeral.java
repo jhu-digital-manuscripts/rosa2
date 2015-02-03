@@ -10,8 +10,8 @@ public class Numeral extends Annotation implements Serializable {
 
     public Numeral() {}
 
-    public Numeral(String referringText, Location location) {
-        super(referringText, location);
+    public Numeral(String referringText, String language, Location location) {
+        super(referringText, language, location);
     }
 
     @Override

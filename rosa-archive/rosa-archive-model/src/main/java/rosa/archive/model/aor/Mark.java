@@ -10,7 +10,6 @@ public class Mark extends Annotation implements Serializable {
 
     private String name;
     private String method;
-    private String language;
 
     public Mark() {}
 
@@ -20,10 +19,9 @@ public class Mark extends Annotation implements Serializable {
     }
 
     public Mark(String referringText, String name, String method, String language, Location location) {
-        super(referringText, location);
+        super(referringText, language, location);
         this.name = name;
         this.method = method;
-        this.language = language;
     }
 
     public String getName() {
@@ -42,14 +40,6 @@ public class Mark extends Annotation implements Serializable {
         this.method = method;
     }
 
-    public String getLanguage() {
-        return language;
-    }
-
-    public void setLanguage(String language) {
-        this.language = language;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -58,7 +48,6 @@ public class Mark extends Annotation implements Serializable {
 
         Mark mark = (Mark) o;
 
-        if (language != null ? !language.equals(mark.language) : mark.language != null) return false;
         if (method != null ? !method.equals(mark.method) : mark.method != null) return false;
         if (name != null ? !name.equals(mark.name) : mark.name != null) return false;
 
@@ -70,7 +59,6 @@ public class Mark extends Annotation implements Serializable {
         int result = super.hashCode();
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (method != null ? method.hashCode() : 0);
-        result = 31 * result + (language != null ? language.hashCode() : 0);
         return result;
     }
 
@@ -79,7 +67,6 @@ public class Mark extends Annotation implements Serializable {
         return "Mark{" +
                 "name='" + name + '\'' +
                 ", method='" + method + '\'' +
-                ", language='" + language + '\'' +
                 '}';
     }
 }
