@@ -1010,21 +1010,27 @@ public class BookChecker extends AbstractArchiveChecker {
                 for (MarginaliaLanguage lang : marg.getLanguages()) {
                     for (Position pos : lang.getPositions()) {
                         for (String book : pos.getBooks()) {
-                            if (!books.containsKey(book)) {
+                            if (book == null || book.isEmpty()) {
+                                warnings.add("Book reference is blank. [" + sig + ":Marginalia:" + pos.getPlace());
+                            } else if (!books.containsKey(book)) {
                                 warnings.add("Book reference found in annotation not present in reference sheets. " +
                                         "[" + sig + ":Marginalia:" + pos.getPlace() + ":" + book + "]");
                             }
                         }
 
                         for (String person : pos.getPeople()) {
-                            if (!people.containsKey(person)) {
+                            if (person == null || person.isEmpty()) {
+                                warnings.add("Person reference is blank. [" + sig + ":Marginalia:" + pos.getPlace());
+                            } else if (!people.containsKey(person)) {
                                 warnings.add("Person reference found in annotation not present in reference sheets. " +
                                         "[" + sig + ":Marginalia:" + pos.getPlace() + ":" + person + "]");
                             }
                         }
 
                         for (String loc : pos.getLocations()) {
-                            if (!locations.containsKey(loc)) {
+                            if (loc == null || loc.isEmpty()) {
+                                warnings.add("Location reference is blank. [" + sig + ":Marginalia:" + pos.getPlace());
+                            } else if (!locations.containsKey(loc)) {
                                 warnings.add("Location reference found in annotation not present in reference sheets. " +
                                         "[" + sig + ":Marginalia:" + pos.getPlace() + ":" + loc + "]");
                             }

@@ -7,7 +7,6 @@ import rosa.archive.model.BookReferenceSheet;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.Arrays;
 import java.util.List;
 
 public class BookReferenceSheetSerializer implements Serializer<BookReferenceSheet> {
@@ -23,17 +22,7 @@ public class BookReferenceSheetSerializer implements Serializer<BookReferenceShe
                 continue;
             }
 
-            reference.addValues(row[0]);
-            for (int i = 1; i < row.length; i++) {
-                if (i < 6) {
-                    reference.addValues(row[0]);
-                } else if (i == 6) {
-                    // Either a single author, or comma-separated list of authors
-                    reference.setAuthors(Arrays.asList(CSV.parse(row[i])));
-                } else if (i == 7) {
-                    reference.setFullTitle(row[i]);
-                }
-            }
+            reference.addValues(row[0], row);
         }
 
         return reference;

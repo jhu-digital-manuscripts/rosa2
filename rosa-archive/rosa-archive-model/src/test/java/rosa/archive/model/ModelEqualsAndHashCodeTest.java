@@ -195,7 +195,6 @@ public class ModelEqualsAndHashCodeTest {
         EqualsVerifier
                 .forClass(BookReferenceSheet.class)
                 .allFieldsShouldBeUsed()
-                .withRedefinedSuperclass()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
                 .verify();
     }

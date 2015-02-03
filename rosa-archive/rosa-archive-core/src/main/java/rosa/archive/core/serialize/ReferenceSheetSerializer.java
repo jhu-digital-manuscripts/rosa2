@@ -7,7 +7,6 @@ import rosa.archive.model.ReferenceSheet;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.Arrays;
 import java.util.List;
 
 public class ReferenceSheetSerializer implements Serializer<ReferenceSheet> {
@@ -26,7 +25,7 @@ public class ReferenceSheetSerializer implements Serializer<ReferenceSheet> {
             if (row.length == 1) {
                 reference.addValues(row[0]);
             } else {
-                reference.addValues(row[0], Arrays.copyOfRange(row, 1, row.length));
+                reference.addValues(row[0], row);
             }
         }
 

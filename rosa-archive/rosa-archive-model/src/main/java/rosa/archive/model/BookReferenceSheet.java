@@ -1,68 +1,50 @@
 package rosa.archive.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public final class BookReferenceSheet extends ReferenceSheet implements HasId, Serializable {
     private static final long serialVersionUID = 1L;
 
-    private List<String> authors;
-    private String fullTitle;
-
-    public BookReferenceSheet() {
-        super();
-    }
-
-    public List<String> getAuthors() {
-        return authors;
-    }
-
-    public void setAuthors(List<String> authors) {
-        this.authors = authors;
-    }
-
-    public String getFullTitle() {
-        return fullTitle;
-    }
-
-    public void setFullTitle(String fullTitle) {
-        this.fullTitle = fullTitle;
-    }
-
     @Override
-    public boolean canEqual(Object o) {
-        return (o instanceof BookReferenceSheet);
-    }
+    public List<String> getAlternates(String key) {
+        if (!hasAlternates(key)) {
+            return null;
+        }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof BookReferenceSheet)) return false;
-        if (!super.equals(o)) return false;
+        List<String> result = new ArrayList<>();
+        int len = getLine(key).size();
+        for (int i = 1; i < len; i++) {
+            if (i >= 6) {
+                continue;
+            }
 
-        BookReferenceSheet that = (BookReferenceSheet) o;
-        if (!that.canEqual(this)) return false;
+            String val = getCell(key, i);
+            if (val != null && !val.isEmpty()) {
+                result.add(val);
+            }
+        }
 
-        if (authors != null ? !authors.equals(that.authors) : that.authors != null) return false;
-        if (fullTitle != null ? !fullTitle.equals(that.fullTitle) : that.fullTitle != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + (authors != null ? authors.hashCode() : 0);
-        result = 31 * result + (fullTitle != null ? fullTitle.hashCode() : 0);
         return result;
     }
 
-    @Override
-    public String toString() {
-        return "BookReferenceSheet{" +
-                super.toString() +
-                "authors=" + authors +
-                ", fullTitle='" + fullTitle + '\'' +
-                '}';
+    public List<String> getAuthors(String key) {
+        String authors = getCell(key, 6);
+        if (authors == null || authors.isEmpty()) {
+            return null;
+        }
+
+        return Arrays.asList(authors.split(","));
+    }
+
+    public String getFullTitle(String key) {
+        String title = getCell(key, 7);
+        if (title == null || title.isEmpty()) {
+            return null;
+        }
+
+        return title;
     }
 }
