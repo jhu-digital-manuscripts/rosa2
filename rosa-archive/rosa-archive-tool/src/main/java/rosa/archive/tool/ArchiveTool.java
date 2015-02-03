@@ -221,6 +221,9 @@ public class ArchiveTool {
                     String[] collections =  store.listBookCollections();
                     if (collections != null) {
                         for (String collectionName : collections) {
+                            if (config.ignore(collectionName)) {
+                                continue;
+                            }
                             CollectionDerivative cDeriv = new CollectionDerivative(collectionName, report, store);
                             cDeriv.check(checkBits);
                         }
@@ -270,6 +273,9 @@ public class ArchiveTool {
                 report.println("Updating all checksums.");
                 try {
                     for (String col : store.listBookCollections()) {
+                        if (config.ignore(col)) {
+                            continue;
+                        }
                         CollectionDerivative cDeriv = new CollectionDerivative(col, report, store);
                         cDeriv.updateChecksum(force);
                     }
@@ -281,6 +287,9 @@ public class ArchiveTool {
             case 2:
                 // update checksums for the collection (plus all books?)
                 String collectionId = args[1];
+                if (config.ignore(collectionId)) {
+                    return;
+                }
                 report.println("Updating checksum for collection [" + collectionId + "]");
 
                 CollectionDerivative cDeriv = new CollectionDerivative(collectionId, report, store);
@@ -323,6 +332,9 @@ public class ArchiveTool {
             case 1:
                 try {
                     for (String collection : store.listBookCollections()) {
+                        if (config.ignore(collection)) {
+                            continue;
+                        }
                         for (String book : store.listBooks(collection)) {
                             report.println("Updating image list for book. [" + collection + ":" + book + "]");
                             BookDerivative bDeriv = new BookDerivative(collection, book, report, store);
@@ -374,6 +386,9 @@ public class ArchiveTool {
             case 1:
                 try {
                     for (String collection : store.listBookCollections()) {
+                        if (config.ignore(collection)) {
+                            continue;
+                        }
                         for (String book : store.listBooks(collection)) {
                             report.println("Cropping images for book [" + collection + ":" + book + "]");
                             CropDerivative deriv = new CropDerivative(collection, book, report, store);
