@@ -59,10 +59,6 @@ public class StoreImplTest extends BaseArchiveTest {
         assertTrue(store.check(loadValidCollection(), loadValidFolgersHa2(), false, errors, warnings));
         assertEquals(0, errors.size());
 
-        boolean check = store.check(loadValidCollection(), loadValidFolgersHa2(), false, errors, warnings);
-        for (String s : errors) {
-            System.out.println("  " + s);
-        }
         assertTrue(store.check(loadValidCollection(), loadValidFolgersHa2(), true, errors, warnings));
         assertEquals(0, errors.size());
     }
@@ -77,6 +73,9 @@ public class StoreImplTest extends BaseArchiveTest {
         assertNotNull(col.getIllustrationTitles());
         assertNotNull(col.getNarrativeSections());
         assertNotNull(col.getAllSupportedLanguages());
+        assertNotNull(col.getBooksRef());
+        assertNotNull(col.getLocationsRef());
+        assertNotNull(col.getPeopleRef());
     }
 
     @Test

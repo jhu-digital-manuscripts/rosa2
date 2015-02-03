@@ -26,6 +26,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.BookText;
@@ -39,8 +40,12 @@ import rosa.archive.model.ImageList;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
+import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.MarginaliaLanguage;
+import rosa.archive.model.aor.Position;
 import rosa.archive.model.meta.MultilangMetadata;
 import rosa.archive.model.redtag.Item;
 import rosa.archive.model.redtag.StructureColumn;
@@ -112,22 +117,19 @@ public class BookChecker extends AbstractArchiveChecker {
         check(book.getAutomaticNarrativeTagging(), book, bsg, errors, warnings);
         //   annotated pages
         check(book.getAnnotatedPages(), book, bsg, errors, warnings);
+        // Check AoR reference sheets
+        checkReferences(collection, book.getAnnotatedPages(), book, bsg, errors, warnings);
 
-        try {
-            // Check character_names and illustration_titles
-            check(
-                    book.getIllustrationTagging(), collection.getCharacterNames(),
-                    collection.getIllustrationTitles(), errors, warnings
-            );
+        // Check character_names and illustration_titles
+        check(
+                book.getIllustrationTagging(), collection.getCharacterNames(),
+                collection.getIllustrationTitles(), errors, warnings
+        );
 
-            // Check narrative_sections (automatic and manual)
-            check(book.getAutomaticNarrativeTagging(), collection.getNarrativeSections(), errors, warnings);
-            check(book.getManualNarrativeTagging(), collection.getNarrativeSections(), errors, warnings);
+        // Check narrative_sections (automatic and manual)
+        check(book.getAutomaticNarrativeTagging(), collection.getNarrativeSections(), errors, warnings);
+        check(book.getManualNarrativeTagging(), collection.getNarrativeSections(), errors, warnings);
 
-        } catch (IOException e) {
-            errors.add("Unable to check references to character_names, illustration_titles, " +
-                    "or narrative_sections.\n" + stacktrace(e));
-        }
         // check bit integrity
         if (checkBits) {
             checkAllBits(bsg, book, errors, warnings);
@@ -197,7 +199,7 @@ public class BookChecker extends AbstractArchiveChecker {
     private void check(String[] content, String bookId, List<String> errors, List<String> warnings) {
 
         for (String name : content) {
-            if (!name.startsWith(bookId + ".")) {
+            if (!name.startsWith(bookId + ".") && !name.contains("filemap")) {
                 errors.add("File does not start with manuscript ID. [" + name + "]");
             }
             if (name.contains(" ")) {
@@ -877,7 +879,7 @@ public class BookChecker extends AbstractArchiveChecker {
     }
 
     /**
-     * Guess the name of the image associated with a name.
+     * Guess the name of the image associated with a name. TODO take out when image names are abstracted
      *
      * @param name name of item to check
      * @param book book archive
@@ -920,11 +922,9 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param titles illustration titles
      * @param errors list of errors
      * @param warnings list of warnings
-     * @throws IOException
      */
     private void check(IllustrationTagging tagging, CharacterNames names, IllustrationTitles titles,
-                               List<String> errors, List<String> warnings)
-            throws IOException {
+                               List<String> errors, List<String> warnings) {
         if (tagging == null) {
             return;
         }
@@ -990,6 +990,49 @@ public class BookChecker extends AbstractArchiveChecker {
         // TODO
 
         attemptToRead(mm, bsg, errors, warnings);
+    }
+
+    private void checkReferences(BookCollection collection, List<AnnotatedPage> pages, Book parent, ByteStreamGroup bsg,
+                       List<String> errors, List<String> warnings) {
+
+        ReferenceSheet people = collection.getPeopleRef();
+        ReferenceSheet locations = collection.getLocationsRef();
+        BookReferenceSheet books = collection.getBooksRef();
+
+        if (people == null || locations == null || books == null) {
+            return;
+        }
+
+        for (AnnotatedPage page : pages) {
+            String sig = parent.getId() + ":" + page.getPage();
+
+            for (Marginalia marg : page.getMarginalia()) {
+                for (MarginaliaLanguage lang : marg.getLanguages()) {
+                    for (Position pos : lang.getPositions()) {
+                        for (String book : pos.getBooks()) {
+                            if (!books.containsKey(book)) {
+                                warnings.add("Book reference found in annotation not present in reference sheets. " +
+                                        "[" + sig + ":Marginalia:" + pos.getPlace() + ":" + book + "]");
+                            }
+                        }
+
+                        for (String person : pos.getPeople()) {
+                            if (!people.containsKey(person)) {
+                                warnings.add("Person reference found in annotation not present in reference sheets. " +
+                                        "[" + sig + ":Marginalia:" + pos.getPlace() + ":" + person + "]");
+                            }
+                        }
+
+                        for (String loc : pos.getLocations()) {
+                            if (!locations.containsKey(loc)) {
+                                warnings.add("Location reference found in annotation not present in reference sheets. " +
+                                        "[" + sig + ":Marginalia:" + pos.getPlace() + ":" + loc + "]");
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public final boolean containsDigit(String s){

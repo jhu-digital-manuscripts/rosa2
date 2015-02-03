@@ -57,7 +57,11 @@ public class ReferenceSheet implements HasId, Serializable {
         return values.keySet();
     }
 
-    public boolean containsAlternates(String key) {
+    /**
+     * @param key key
+     * @return are there any alternate values for this key?
+     */
+    public boolean hasAlternates(String key) {
         return values.containsKey(key) && values.get(key) != null && !values.get(key).isEmpty();
     }
 

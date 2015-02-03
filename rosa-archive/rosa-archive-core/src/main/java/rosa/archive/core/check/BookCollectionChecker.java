@@ -89,5 +89,13 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
         attemptToRead(names, bsg, errors, warnings);
         attemptToRead(titles, bsg, errors, warnings);
         attemptToRead(sections, bsg, errors, warnings);
+
+        if (collection.getBooksRef() != null || collection.getPeopleRef() != null
+                || collection.getLocationsRef() != null) {
+            // If any AoR data sheet is present, they all must be present
+            attemptToRead(collection.getBooksRef(), bsg, errors, warnings);
+            attemptToRead(collection.getPeopleRef(), bsg, errors, warnings);
+            attemptToRead(collection.getLocationsRef(), bsg, errors, warnings);
+        }
     }
 }
