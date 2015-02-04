@@ -5,17 +5,21 @@ package rosa.archive.tool.config;
  */
 public enum Flag {
 
-    CHECK_BITS("checkBits"),
-    SHOW_ERRORS("showErrors"),
-    FORCE("force");
+    CHECK_BITS("b", "checkBits"),
+    FORCE("f", "force");
 
-    private String display;
+    private String longName;
+    private String shortName;
 
-    public String display() {
-        return display;
+    public String longName() {
+        return longName;
+    }
+    public String shortName() {
+        return shortName;
     }
 
-    Flag(String display) {
-        this.display = display;
+    Flag(String shortName, String longName) {
+        this.longName = longName;
+        this.shortName = shortName;
     }
 }

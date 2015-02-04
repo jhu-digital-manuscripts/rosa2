@@ -14,6 +14,7 @@ import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
+import org.apache.commons.cli.UnrecognizedOptionException;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
@@ -62,26 +63,52 @@ public class ArchiveTool {
 
         ToolConfig config = injector.getInstance(ToolConfig.class);
 
-        // Set the valid options for the tool
+        CommandLineParser parser = new BasicParser();
         Options options = new Options();
-        
+
         options.addOption(OptionBuilder.withArgName("property=value")
                 .withDescription("set the path of the archive. A default value for this path" +
                         " is set in 'tool-config.properties'")
                 .hasArgs(2)
                 .withValueSeparator()
                 .create("D"));
-        options.addOption(new Option(Flag.SHOW_ERRORS.display(), false, "show all errors"));
-        options.addOption(new Option(
-                Flag.CHECK_BITS.display(), false, "check bit integrity of data in the archive"));
-        options.addOption("f", Flag.FORCE.display(), false, "force the operation to execute fully, without skipping data");
 
-        // Apache CLI to parse input args
-        CommandLineParser parser = new BasicParser();
-        CommandLine cmd = parser.parse(options, args);
+        // Set specific options TODO need a more generic way of getting "command"
+        switch (getCommand(args[0])) {
+        case LIST:
+            break;
+        case CHECK:
+            options.addOption(new Option(Flag.CHECK_BITS.shortName(),
+                    Flag.CHECK_BITS.longName(), false, "check bit integrity of data in the archive"));
+            break;
+        case UPDATE:
+            options.addOption(Flag.FORCE.shortName(), Flag.FORCE.longName(), false,
+                    "force the operation to execute fully, without skipping data");
+            break;
+        case UPDATE_IMAGE_LIST:
+            options.addOption(Flag.FORCE.shortName(), Flag.FORCE.longName(), false,
+                    "force the operation to execute fully, overwriting any current image list.");
+            break;
+        case CROP_IMAGES:
+            options.addOption(Flag.FORCE.shortName(), Flag.FORCE.longName(), false,
+                    "force the operation to execute fully, overwriting any current cropped images.");
+            break;
+        default:
+            break;
+        }
+
+        CommandLine cmd = null;
+        try {
+            cmd = parser.parse(options, args);
+        } catch (UnrecognizedOptionException e) {
+            System.out.println("Bad option found. [" + e.getOption() + "]");
+            System.exit(1);
+        } catch (ParseException e) {
+            System.out.println("Unable to parse command.");
+            System.exit(1);
+        }
 
         // Set archive path if the argument exists in the CLI command issued
-        ArchiveTool tool;
         if (cmd.hasOption("D") && cmd.getOptionProperties("D").getProperty("archive.path") != null) {
             config.setArchivePath(
                     cmd.getOptionProperties("D").getProperty("archive.path")
@@ -92,8 +119,17 @@ public class ArchiveTool {
         ByteStreamGroup base = new FSByteStreamGroup(config.getArchivePath());
         Store store = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
 
-        tool = new ArchiveTool(store, config, System.out);
+        ArchiveTool tool = new ArchiveTool(store, config);
         tool.run(cmd);
+    }
+
+    private static Command getCommand(String cmd) {
+        for (Command c : Command.values()) {
+            if (c.display().equals(cmd)) {
+                return c;
+            }
+        }
+        return null;
     }
 
     /**
@@ -105,19 +141,25 @@ public class ArchiveTool {
         String command = cmd.getArgs()[0];
 
         report.println("Archive: " + config.getArchivePath());
-        
-        if (command.equals(Command.LIST.display())) {
+
+        switch (getCommand(command)) {
+        case LIST:
             list(cmd);
-        } else if (command.equals(Command.CHECK.display())) {
+            break;
+        case CHECK:
             check(cmd);
-        } else if (command.equals(Command.UPDATE.display())) {
+            break;
+        case UPDATE:
             update(cmd);
-        } else if (command.equals(Command.UPDATE_IMAGE_LIST.display())) {
+            break;
+        case UPDATE_IMAGE_LIST:
             updateImageList(cmd);
-        } else if (command.equals(Command.CROP_IMAGES.display())) {
+            break;
+        case CROP_IMAGES:
             cropImages(cmd);
-        } else {
-            throw new RuntimeException("Unknown command");
+            break;
+        default:
+            throw new RuntimeException("Unknown command. [" + Arrays.toString(cmd.getArgs()) + "]");
         }
     }
 
@@ -131,13 +173,6 @@ public class ArchiveTool {
         e.printStackTrace(report);
     }
 
-    private void displayError(String title, List<String> errors) {
-        report.println("\n" + title);
-        for (String error : errors) {
-            report.println("  " + error);
-        }
-    }
-
     /**
      * List items in the archive according to the command arguments.
      *
@@ -145,7 +180,6 @@ public class ArchiveTool {
      */
     private void list(CommandLine cmd) {
         String[] args = cmd.getArgs();
-        boolean showErrors = cmd.hasOption(Flag.SHOW_ERRORS.display());
 
         List<String> errors = new ArrayList<>();
         switch (args.length) {
@@ -185,10 +219,6 @@ public class ArchiveTool {
                     } else {
                         report.println("Failed to read book. [" + args[1] + ":" + args[2] + "]");
                     }
-
-                    if (showErrors && !errors.isEmpty()) {
-                        displayError("Errors: ", errors);
-                    }
                 } catch (IOException e) {
                     displayError("Error: Unable to load book [" + args[1] + ":" + args[2] + "]", args, e);
                 }
@@ -196,11 +226,6 @@ public class ArchiveTool {
             default:
                 displayError("Too many arguments. USAGE: list [-options] <collectionId> <bookId>", args);
                 break;
-        }
-
-        if (!showErrors && !errors.isEmpty()) {
-            report.println("\nErrors were found while processing the command. Use the -showErrors flag " +
-                    "to display the errors.");
         }
     }
 
@@ -211,7 +236,7 @@ public class ArchiveTool {
      */
     private void check(CommandLine cmd) {
         String[] args = cmd.getArgs();
-        boolean checkBits = cmd.hasOption(Flag.CHECK_BITS.display());
+        boolean checkBits = cmd.hasOption(Flag.CHECK_BITS.longName()) || cmd.hasOption(Flag.CHECK_BITS.shortName());
 
         report.println("Checking...");
         switch (args.length) {
@@ -264,7 +289,7 @@ public class ArchiveTool {
      * @param cmd CLI command
      */
     private void update(CommandLine cmd) {
-        boolean force = cmd.hasOption(Flag.FORCE.display()) || cmd.hasOption("f");
+        boolean force = cmd.hasOption(Flag.FORCE.longName()) || cmd.hasOption("f");
         String[] args = cmd.getArgs();
 
         switch (args.length) {
@@ -325,7 +350,7 @@ public class ArchiveTool {
      * @param cmd CLI command
      */
     private void updateImageList(CommandLine cmd) {
-        boolean force = cmd.hasOption(Flag.FORCE.display()) || cmd.hasOption("f");
+        boolean force = cmd.hasOption(Flag.FORCE.longName()) || cmd.hasOption("f");
         String[] args = cmd.getArgs();
 
         switch (args.length) {
@@ -379,7 +404,7 @@ public class ArchiveTool {
      * @param cmd CLI command
      */
     private void cropImages(CommandLine cmd) {
-        boolean force = cmd.hasOption(Flag.FORCE.display()) || cmd.hasOption("f");
+        boolean force = cmd.hasOption(Flag.FORCE.longName()) || cmd.hasOption("f");
         String[] args = cmd.getArgs();
 
         switch (args.length) {
