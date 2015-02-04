@@ -21,6 +21,18 @@ public class CollectionDerivative extends AbstractDerivative {
         this.collection = collection;
     }
 
+    @Override
+    public void list() {
+        try {
+            report.println(collection);
+            for (String book : store.listBooks(collection)) {
+                report.println("  " + book);
+            }
+        } catch (IOException e) {
+            reportError("Failed to list books in collection. [" + collection + "]");
+        }
+    }
+
     /**
      * Update checksum values of the collection plus all books contained within
      * the collection.
@@ -105,6 +117,13 @@ public class CollectionDerivative extends AbstractDerivative {
                 reportError("Warnings: ", warnings);
                 warnings.clear();
             }
+        }
+    }
+
+    @Override
+    public void generateAndWriteImageList(boolean force) throws IOException {
+        for (String book : store.listBooks(collection)) {
+            store.generateAndWriteImageList(collection, book, force, null);
         }
     }
 

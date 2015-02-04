@@ -21,9 +21,13 @@ public abstract class AbstractDerivative {
         this.store = store;
     }
 
+    public abstract void list();
+
     public abstract void updateChecksum(boolean force) throws IOException;
 
     public abstract void check(boolean checkBits) throws IOException;
+
+    public abstract void generateAndWriteImageList(boolean force) throws IOException;
 
     protected void reportError(String message, Exception e) {
         report.println("  [Error] " + message);

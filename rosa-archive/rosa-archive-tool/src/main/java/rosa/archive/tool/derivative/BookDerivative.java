@@ -24,6 +24,21 @@ public class BookDerivative extends AbstractDerivative {
     }
 
     @Override
+    public void list() {
+        try {
+            BookCollection col = store.loadBookCollection(collection, null);
+            Book book = store.loadBook(col, this.book, null);
+
+            report.println(collection + ":" + this.book);
+            for (String item : book.getContent()) {
+                report.println("  " + item);
+            }
+        } catch (IOException e) {
+            reportError("Failed to list items in book. [" + collection + ":" + book + "]");
+        }
+    }
+
+    @Override
     public void updateChecksum(boolean force) throws IOException {
         List<String> errors = new ArrayList<>();
         store.updateChecksum(collection, book, force, errors);
@@ -55,6 +70,7 @@ public class BookDerivative extends AbstractDerivative {
         }
     }
 
+    @Override
     public void generateAndWriteImageList(boolean force) throws IOException {
         List<String> errors = new ArrayList<>();
         store.generateAndWriteImageList(collection, book, force, errors);

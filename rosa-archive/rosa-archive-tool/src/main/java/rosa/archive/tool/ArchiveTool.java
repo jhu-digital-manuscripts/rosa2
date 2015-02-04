@@ -2,9 +2,7 @@ package rosa.archive.tool;
 
 import java.io.IOException;
 import java.io.PrintStream;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
@@ -23,7 +21,6 @@ import rosa.archive.core.StoreImpl;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
-import rosa.archive.model.Book;
 import rosa.archive.tool.config.Command;
 import rosa.archive.tool.config.Flag;
 import rosa.archive.tool.config.ToolConfig;
@@ -132,323 +129,100 @@ public class ArchiveTool {
         return null;
     }
 
-    /**
-     * Run the command
-     *
-     * @param cmd CLI command
-     */
-    public void run(CommandLine cmd) {
-        String command = cmd.getArgs()[0];
-
-        report.println("Archive: " + config.getArchivePath());
-
-        switch (getCommand(command)) {
-        case LIST:
-            list(cmd);
-            break;
-        case CHECK:
-            check(cmd);
-            break;
-        case UPDATE:
-            update(cmd);
-            break;
-        case UPDATE_IMAGE_LIST:
-            updateImageList(cmd);
-            break;
-        case CROP_IMAGES:
-            cropImages(cmd);
-            break;
-        default:
-            throw new RuntimeException("Unknown command. [" + Arrays.toString(cmd.getArgs()) + "]");
-        }
-    }
-
     private void displayError(String message, String[] args) {
         report.println("Command: " + Arrays.toString(args));
         report.println(message);
     }
 
-    private void displayError(String message, String[] args, Exception e) {
-        displayError(message, args);
-        e.printStackTrace(report);
-    }
-
-    /**
-     * List items in the archive according to the command arguments.
-     *
-     * @param cmd CLI command
-     */
-    private void list(CommandLine cmd) {
-        String[] args = cmd.getArgs();
-
-        List<String> errors = new ArrayList<>();
-        switch (args.length) {
-            case 1:
-                // list
-                report.println("Collections: ");
-                try {
-                    String[] collectionNames = store.listBookCollections();
-                    for (String name : collectionNames) {
-                        report.println("  " + name);
-                    }
-                } catch (IOException e) {
-                    displayError("Error: Unable to read collection names.", args, e);
-                }
-                break;
-            case 2:
-                // list <collectionId>
-                report.println("Books in " + args[1]);
-                try {
-                    String[] books = store.listBooks(args[1]);
-                    for (String name : books) {
-                        report.println("  " + name);
-                    }
-                } catch (IOException e) {
-                    displayError("Error: Unable to read book names in collection [" + args[1] + "]", args, e);
-                }
-                break;
-            case 3:
-                // list <collectionId> <bookId>
-                report.println("Stuff in " + args[1] + ":" + args[2]);
-                try {
-                    Book book = store.loadBook(store.loadBookCollection(args[1], errors), args[2], errors);
-                    if (book != null) {
-                        for (String item : book.getContent()) {
-                            report.println("  " + item);
-                        }
-                    } else {
-                        report.println("Failed to read book. [" + args[1] + ":" + args[2] + "]");
-                    }
-                } catch (IOException e) {
-                    displayError("Error: Unable to load book [" + args[1] + ":" + args[2] + "]", args, e);
-                }
-                break;
-            default:
-                displayError("Too many arguments. USAGE: list [-options] <collectionId> <bookId>", args);
-                break;
-        }
-    }
-
-    /**
-     * Checks the data consistency and/or bit integrity of items in the archive.
-     *
-     * @param cmd CLI command
-     */
-    private void check(CommandLine cmd) {
-        String[] args = cmd.getArgs();
-        boolean checkBits = cmd.hasOption(Flag.CHECK_BITS.longName()) || cmd.hasOption(Flag.CHECK_BITS.shortName());
-
-        report.println("Checking...");
-        switch (args.length) {
-            case 1:
-                // check everything
-                try {
-                    String[] collections =  store.listBookCollections();
-                    if (collections != null) {
-                        for (String collectionName : collections) {
-                            if (config.ignore(collectionName)) {
-                                continue;
-                            }
-                            CollectionDerivative cDeriv = new CollectionDerivative(collectionName, report, store);
-                            cDeriv.check(checkBits);
-                        }
-                    }
-                } catch (IOException e) {
-                    displayError("Error: Unable to check archive.", args, e);
-                }
-                break;
-            case 2:
-                // check collection
-                CollectionDerivative cDeriv = new CollectionDerivative(args[1], report, store);
-                try {
-                    cDeriv.check(checkBits);
-                } catch (IOException e) {
-                    displayError("Error: Unable to check collection. [" + args[1] + "]", args, e);
-                }
-                break;
-            case 3:
-                // check book
-                BookDerivative bDeriv = new BookDerivative(args[1], args[2], report, store);
-                try {
-                    bDeriv.check(checkBits);
-                } catch (IOException e) {
-                    displayError("Error: Unable to load book. [" + args[1] + ":" + args[2] + "]", args, e);
-                }
-                break;
-            default:
-                displayError("Too many arguments. USAGE: check [-options] <collectionId> <bookId>", args);
-                break;
-        }
-
-        report.println("...complete");
-    }
-
-    /**
-     * Update checksum values in the archive.
-     *
-     * @param cmd CLI command
-     */
-    private void update(CommandLine cmd) {
-        boolean force = cmd.hasOption(Flag.FORCE.longName()) || cmd.hasOption("f");
+    private void run(CommandLine cmd) throws IOException {
         String[] args = cmd.getArgs();
 
         switch (args.length) {
-            case 1:
-                // update all checksums in all collections
-                report.println("Updating all checksums.");
-                try {
-                    for (String col : store.listBookCollections()) {
-                        if (config.ignore(col)) {
-                            continue;
-                        }
-                        CollectionDerivative cDeriv = new CollectionDerivative(col, report, store);
-                        cDeriv.updateChecksum(force);
-                    }
-                } catch (IOException e) {
-                    displayError("Unable to update checksums.", args, e);
+        case 1:
+            for (String collection : store.listBookCollections()) {
+                if (config.ignore(collection)) {
+                    continue;
                 }
-
-                break;
-            case 2:
-                // update checksums for the collection (plus all books?)
-                String collectionId = args[1];
-                if (config.ignore(collectionId)) {
-                    return;
-                }
-                report.println("Updating checksum for collection [" + collectionId + "]");
-
-                CollectionDerivative cDeriv = new CollectionDerivative(collectionId, report, store);
-                try {
-                    cDeriv.updateChecksum(force);
-                } catch (IOException e) {
-                    displayError("Failed to update checksums for collection. [" + collectionId + "]", args, e);
-                }
-
-                break;
-            case 3:
-                // update checksums only for the book
-                String bookId = args[2];
-                report.println("Updating checksums for book [" + args[1] + ":" + bookId + "]");
-
-                BookDerivative bDeriv = new BookDerivative(args[1], bookId, report, store);
-                try {
-                    bDeriv.updateChecksum(force);
-                } catch (IOException e) {
-                    displayError("Failed to update checksums. [" + args[1] + ":" + bookId + "]", args, e);
-                }
-
-                break;
-            default:
-                displayError("Too many arguments. USAGE: update [-options] <collectionId> <bookId>", args);
-                break;
+                handle_collection(cmd);
+            }
+            break;
+        case 2:
+            handle_collection(cmd);
+            break;
+        case 3:
+            handle_book(cmd);
+            break;
+        default:
+            displayError("Too many arguments. Usage: <command> [-options] <collectionId> <bookId>", args);
+            break;
         }
     }
 
-    /**
-     * Update / create image list for books in the archive.
-     *
-     * @param cmd CLI command
-     */
-    private void updateImageList(CommandLine cmd) {
-        boolean force = cmd.hasOption(Flag.FORCE.longName()) || cmd.hasOption("f");
+    private void handle_book(CommandLine cmd) throws IOException {
         String[] args = cmd.getArgs();
+        BookDerivative deriv = new BookDerivative(args[1], args[2], report, store);
 
-        switch (args.length) {
-            case 1:
-                try {
-                    for (String collection : store.listBookCollections()) {
-                        if (config.ignore(collection)) {
-                            continue;
-                        }
-                        for (String book : store.listBooks(collection)) {
-                            report.println("Updating image list for book. [" + collection + ":" + book + "]");
-                            BookDerivative bDeriv = new BookDerivative(collection, book, report, store);
-                            bDeriv.generateAndWriteImageList(force);
-                        }
-                    }
-                } catch (IOException e) {
-                    displayError("Failed to update image lists.", args, e);
-                }
-                break;
-            case 2:
-                try {
-                    for (String book : store.listBooks(args[1])) {
-                        report.println("Updating image list for book. [" + args[1] + ":" + book + "]");
-                        BookDerivative bDeriv = new BookDerivative(args[1], book, report, store);
-                        bDeriv.generateAndWriteImageList(force);
-                    }
-                } catch (IOException e) {
-                    displayError("Failed to update image lists. [" + args[1] + "]", args, e);
-                }
-                break;
-            case 3:
-                BookDerivative bDeriv = new BookDerivative(args[1], args[2], report, store);
-                try {
-                    report.println("Updating image list for book. [" + args[1] + ":" + args[2] + "]");
-                    bDeriv.generateAndWriteImageList(force);
-                } catch (IOException e) {
-                    displayError("Failed to update image list. [" + args[1] + ":" + args[2] + "]", args, e);
-                }
-                break;
-            default:
-                displayError("Too many arguments. Usage: update-image-list [-options] <collectionId> <bookId>", args);
-                break;
+        switch (getCommand(args[0])) {
+        case LIST:
+            deriv.list();
+            break;
+        case CHECK:
+            deriv.check(hasOption(cmd, Flag.CHECK_BITS));
+            break;
+        case UPDATE:
+            deriv.updateChecksum(hasOption(cmd, Flag.FORCE));
+            break;
+        case UPDATE_IMAGE_LIST:
+            deriv.generateAndWriteImageList(hasOption(cmd, Flag.FORCE));
+            break;
+        case CROP_IMAGES:
+            CropDerivative cDer = new CropDerivative(args[1], args[2], report, store);
+            cDer.cropImages(hasOption(cmd, Flag.FORCE));
+            break;
+        default:
+            displayError("Invalid command found.", args);
+            break;
         }
-
-        report.println("...complete");
     }
 
-    /**
-     * Crop book images in the archive and create *.images.crop.csv
-     *
-     * @param cmd CLI command
-     */
-    private void cropImages(CommandLine cmd) {
-        boolean force = cmd.hasOption(Flag.FORCE.longName()) || cmd.hasOption("f");
+    private void handle_collection(CommandLine cmd) throws IOException {
         String[] args = cmd.getArgs();
+        String[] cols = null;
 
-        switch (args.length) {
-            case 1:
-                try {
-                    for (String collection : store.listBookCollections()) {
-                        if (config.ignore(collection)) {
-                            continue;
-                        }
-                        for (String book : store.listBooks(collection)) {
-                            report.println("Cropping images for book [" + collection + ":" + book + "]");
-                            CropDerivative deriv = new CropDerivative(collection, book, report, store);
+        if (args.length == 1) {
+            // No collectionID listed, so do it for all collections
+            cols = store.listBookCollections();
+        } else {
+            cols = new String[] {args[1]};
+        }
 
-                            deriv.cropImages(force);
-                        }
-                    }
-                } catch (IOException e) {
-                    displayError("Failed to crop images.", args, e);
-                }
+        for (String col : cols) {
+            CollectionDerivative deriv = new CollectionDerivative(col, report, store);
+
+            switch (getCommand(args[0])) {
+            case LIST:
+                deriv.list();
                 break;
-            case 2:
-                try {
-                    for (String book : store.listBooks(args[1])) {
-                        report.println("Cropping images for book [" + args[1] + ":" + book + "]");
-                        CropDerivative deriv = new CropDerivative(args[1], book, report, store);
-
-                        deriv.cropImages(force);
-                    }
-                } catch (IOException e) {
-                    displayError("Failed to crop images. [" + args[1] + "]", args, e);
-                }
+            case CHECK:
+                deriv.check(hasOption(cmd, Flag.CHECK_BITS));
                 break;
-            case 3:
-                report.println("Cropping images for book. [" + args[1] + ":" + args[2] + "]");
-                CropDerivative deriv = new CropDerivative(args[1], args[2], report, store);
-                try {
-                    deriv.cropImages(force);
-                } catch (IOException e) {
-                    displayError("Failed to crop images. [" + args[1] + ":" + args[2] + "]", args, e);
-                }
+            case UPDATE:
+                deriv.updateChecksum(hasOption(cmd, Flag.FORCE));
+                break;
+            case UPDATE_IMAGE_LIST:
+                break;
+            case CROP_IMAGES:
+                CropDerivative cd = new CropDerivative(col, report, store);
+                cd.cropImages(hasOption(cmd, Flag.FORCE));
                 break;
             default:
-                displayError("Too many arguments. Usage: crop-images [-options] <collectionId> <bookId>", args);
+                displayError("Invalid command found.", args);
                 break;
+            }
         }
+    }
+
+    private boolean hasOption(CommandLine cmd, Flag flag) {
+        return cmd.hasOption(flag.longName()) || cmd.hasOption(flag.shortName());
     }
 }
