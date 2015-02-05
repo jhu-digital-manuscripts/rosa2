@@ -24,6 +24,13 @@ public class FileMapSerializer implements Serializer<FileMap>, ArchiveConstants 
 
         List<String> lines = IOUtils.readLines(is, UTF_8);
         for (String line : lines) {
+            // Ignore comments
+            if (line.startsWith("#")) {
+                continue;
+            } else if (line.contains("#")) {
+                line = line.substring(0, line.indexOf('#'));
+            }
+
             String[] parts = line.split(",");
             if (parts.length != 2) {
                 continue;
