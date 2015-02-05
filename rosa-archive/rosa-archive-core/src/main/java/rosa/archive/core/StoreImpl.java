@@ -8,6 +8,7 @@ import java.io.PrintStream;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -457,7 +458,9 @@ public class StoreImpl implements Store, ArchiveConstants {
                 if (sb.toString().equals(image)) {
                     continue;
                 }
-                bookStreams.renameByteStream(image, sb.toString());
+                if (!dryRun) {
+                    bookStreams.renameByteStream(image, sb.toString());
+                }
             }
             return;
         }
@@ -469,8 +472,85 @@ public class StoreImpl implements Store, ArchiveConstants {
                 continue;
             }
 
-            bookStreams.renameByteStream(image, newName);
+            if (!dryRun) {
+                bookStreams.renameByteStream(image, newName);
+            }
         }
+    }
+
+    // TODO clean up
+    @Override
+    public void renameTranscriptions(String collection, String book, List<String> errors) throws IOException {
+        errors = nonNullList(errors);
+
+        if (!base.hasByteStreamGroup(collection)) {
+            errors.add("Collection not found in directory. [" + base.id() + "]");
+            return;
+        } else if (!base.getByteStreamGroup(collection).hasByteStreamGroup(book)) {
+            errors.add("Book not found in collection. [" + collection + "]");
+            return;
+        }
+
+        ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
+        if (!bookStreams.hasByteStream(FILE_MAP)) {
+            errors.add("No file map found.");
+            return;
+        }
+
+        FileMap fileMap = loadItem(FILE_MAP, bookStreams, FileMap.class, errors);
+        for (String name : getTranscriptionsNames(bookStreams)) {
+            AnnotatedPage aPage = loadItem(name, bookStreams, AnnotatedPage.class, errors);
+            String referencePage = aPage.getPage();
+
+            String imageName = fileMap.getMap().get(referencePage);
+            System.out.println("  " + imageName);
+            if (imageName == null || imageName.isEmpty()) {
+                continue;
+            }
+
+            List<String> parts = new ArrayList<>(Arrays.asList(imageName.split("\\.")));
+            parts.add(1, "aor");
+
+            StringBuilder sb = new StringBuilder();
+            boolean isFirst = true;
+            for (String str : parts) {
+                if (isFirst) {
+                    isFirst = false;
+                } else {
+                    sb.append('.');
+                }
+                sb.append(str);
+            }
+            String command = "sed -i s/" + referencePage + "/" + imageName + "/ " + bookStreams.id() + "/" + name;
+            System.out.println(command);
+
+            Runtime runtime = Runtime.getRuntime();
+            Process proc = runtime.exec(command);
+
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            IOUtils.copy(proc.getErrorStream(), out);
+
+            String err = out.toString(UTF_8.name());
+            if (err != null && !err.isEmpty()) {
+                errors.add(err);
+            } else {
+                // If no errors, rename the transcription file
+                bookStreams.renameByteStream(name, sb.toString().replace(TIF_EXT, XML_EXT));
+            }
+        }
+    }
+
+    private List<String> getTranscriptionsNames(ByteStreamGroup bookStreams) throws IOException {
+        List<String> names = new ArrayList<>();
+
+        for (String name : bookStreams.listByteStreamNames()) {
+            if (name.endsWith(XML_EXT) && name.contains(AOR_ANNOTATION)) {
+                names.add(name);
+            }
+        }
+
+        Collections.sort(names);
+        return names;
     }
 
     /**

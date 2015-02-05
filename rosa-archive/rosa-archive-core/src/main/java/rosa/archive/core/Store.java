@@ -96,4 +96,6 @@ public interface Store {
     void validateXml(String collection, String book, List<String> errors) throws IOException;
 
     void renameImages(String collection, String book, boolean dryRun, boolean changeId, List<String> errors) throws IOException;
+
+    void renameTranscriptions(String collection, String book, List<String> errors) throws IOException;
 }

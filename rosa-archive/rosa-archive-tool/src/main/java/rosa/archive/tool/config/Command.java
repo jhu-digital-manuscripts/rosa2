@@ -12,7 +12,8 @@ public enum Command {
     CROP_IMAGES("crop-images"),
     FILE_MAP("file-map"),
     VALIDATE_XML("validate-xml"),
-    RENAME_IMAGES("rename-images");
+    RENAME_IMAGES("rename-images"),
+    RENAME_TRANSCRIPTIONS("rename-transcriptions");
 
     private String display;
 

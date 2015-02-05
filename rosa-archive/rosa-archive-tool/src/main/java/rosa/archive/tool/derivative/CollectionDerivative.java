@@ -162,4 +162,18 @@ public class CollectionDerivative extends AbstractDerivative {
             }
         }
     }
+
+    @Override
+    public void renameTranscriptions() throws IOException {
+        List<String> errors = new ArrayList<>();
+
+        for (String book : store.listBooks(collection)) {
+            report.println("Validating XML files for " + collection + ":" + book);
+            store.renameTranscriptions(collection, book, errors);
+
+            if (!errors.isEmpty()) {
+                reportError("Errors:", errors);
+            }
+        }
+    }
 }

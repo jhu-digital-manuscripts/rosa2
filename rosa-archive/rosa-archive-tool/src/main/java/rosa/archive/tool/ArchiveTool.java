@@ -193,6 +193,12 @@ public class ArchiveTool {
         case VALIDATE_XML:
             deriv.validateXml();
             break;
+        case RENAME_IMAGES:
+            deriv.renameImages(hasOption(cmd, Flag.DRY_RUN), hasOption(cmd, Flag.CHANGE_ID));
+            break;
+        case RENAME_TRANSCRIPTIONS:
+            deriv.renameTranscriptions();
+            break;
         default:
             displayError("Invalid command found.", args);
             break;
@@ -234,6 +240,9 @@ public class ArchiveTool {
                 break;
             case VALIDATE_XML:
                 deriv.validateXml();
+                break;
+            case RENAME_IMAGES:
+                deriv.renameImages(hasOption(cmd, Flag.DRY_RUN), hasOption(cmd, Flag.CHANGE_ID));
                 break;
             default:
                 displayError("Invalid command found.", args);

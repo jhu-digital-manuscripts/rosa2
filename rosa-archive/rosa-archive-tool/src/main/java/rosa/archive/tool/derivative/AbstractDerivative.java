@@ -33,6 +33,8 @@ public abstract class AbstractDerivative {
 
     public abstract void renameImages(boolean dry, boolean changeId) throws IOException;
 
+    public abstract void renameTranscriptions() throws IOException;
+
     protected void reportError(String message, Exception e) {
         report.println("  [Error] " + message);
         e.printStackTrace(report);
