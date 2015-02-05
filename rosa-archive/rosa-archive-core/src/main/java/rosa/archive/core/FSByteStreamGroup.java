@@ -199,4 +199,18 @@ public class FSByteStreamGroup implements ByteStreamGroup {
 
         Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
     }
+
+    @Override
+    public void renameByteStream(String originalStream, String targetStream) throws IOException {
+        if (!hasByteStream(originalStream)) {
+            return;
+        } else if (hasByteStream(targetStream)) {
+            return;
+        }
+
+        Path original = Paths.get(id()).resolve(originalStream);
+        Path target = Paths.get(id()).resolve(targetStream);
+
+        Files.move(original, target);
+    }
 }

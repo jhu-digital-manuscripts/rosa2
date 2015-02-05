@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
@@ -407,6 +406,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         writeItem(fileMap, bookStreams, FileMap.class, errors);
     }
 
+    @Override
     public void validateXml(String collection, String book, List<String> errors) throws IOException {
         errors = nonNullList(errors);
 
@@ -424,6 +424,52 @@ public class StoreImpl implements Store, ArchiveConstants {
             if (file.contains(AOR_ANNOTATION) && file.endsWith(XML_EXT)) {
                 bookChecker.validateAgainstSchema(file, bookStreams, errors, new ArrayList<String>());
             }
+        }
+    }
+
+    @Override
+    public void renameImages(String collection, String book, boolean dryRun, boolean changeId, List<String> errors)
+            throws IOException {
+        errors = nonNullList(errors);
+
+        if (!base.hasByteStreamGroup(collection)) {
+            errors.add("Collection not found in directory. [" + base.id() + "]");
+            return;
+        } else if (!base.getByteStreamGroup(collection).hasByteStreamGroup(book)) {
+            errors.add("Book not found in collection. [" + collection + "]");
+            return;
+        }
+
+        ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
+
+        if (!bookStreams.hasByteStream(FILE_MAP) && !changeId) {
+            errors.add("No file map found. Cannot change image names.");
+            return;
+        } else if (changeId) {
+            for (String image : getImageNames(bookStreams)) {
+                String[] parts = image.split("\\.");
+                StringBuilder sb = new StringBuilder(bookStreams.name());
+                for (int i = 1; i < parts.length; i++) {
+                    sb.append(parts[i]);
+                }
+
+                // Skip if the names are the same somehow
+                if (sb.toString().equals(image)) {
+                    continue;
+                }
+                bookStreams.renameByteStream(image, sb.toString());
+            }
+            return;
+        }
+
+        FileMap fileMap = loadItem(FILE_MAP, bookStreams, FileMap.class, errors);
+        for (String image : getImageNames(bookStreams)) {
+            String newName = fileMap.getMap().get(image);
+            if (newName == null || newName.isEmpty()) {
+                continue;
+            }
+
+            bookStreams.renameByteStream(image, newName);
         }
     }
 

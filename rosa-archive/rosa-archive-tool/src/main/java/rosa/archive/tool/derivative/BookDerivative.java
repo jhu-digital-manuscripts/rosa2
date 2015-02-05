@@ -91,6 +91,16 @@ public class BookDerivative extends AbstractDerivative {
         }
     }
 
+    @Override
+    public void renameImages(boolean dry, boolean changeId) throws IOException {
+        List<String> errors = new ArrayList<>();
+        store.renameImages(collection, book, dry, changeId, errors);
+
+        if (!errors.isEmpty()) {
+            reportError("Errors:", errors);
+        }
+    }
+
     public void generateFileMap() throws IOException {
         Scanner in = new Scanner(System.in);
 

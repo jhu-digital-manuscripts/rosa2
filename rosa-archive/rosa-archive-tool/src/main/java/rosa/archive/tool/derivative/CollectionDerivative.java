@@ -148,4 +148,18 @@ public class CollectionDerivative extends AbstractDerivative {
             }
         }
     }
+
+    @Override
+    public void renameImages(boolean dry, boolean changeId) throws IOException {
+        List<String> errors = new ArrayList<>();
+
+        for (String book : store.listBooks(collection)) {
+            report.println("Renaming images for " + collection + ":" + book);
+            store.renameImages(collection, book, dry, changeId, errors);
+
+            if (!errors.isEmpty()) {
+                reportError("Errors:", errors);
+            }
+        }
+    }
 }

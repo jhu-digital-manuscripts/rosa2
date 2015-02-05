@@ -11,7 +11,8 @@ public enum Command {
     UPDATE_IMAGE_LIST("update-image-list"),
     CROP_IMAGES("crop-images"),
     FILE_MAP("file-map"),
-    VALIDATE_XML("validate-xml");
+    VALIDATE_XML("validate-xml"),
+    RENAME_IMAGES("rename-images");
 
     private String display;
 

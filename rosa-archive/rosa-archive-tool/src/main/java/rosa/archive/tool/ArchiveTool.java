@@ -90,6 +90,14 @@ public class ArchiveTool {
             options.addOption(Flag.FORCE.shortName(), Flag.FORCE.longName(), false,
                     "force the operation to execute fully, overwriting any current cropped images.");
             break;
+        case RENAME_IMAGES:
+            options.addOption(Flag.DRY_RUN.shortName(), Flag.DRY_RUN.longName(), false,
+                    "do a dry run of the command. Execute and get output as if the command were run, but do not " +
+                            "commit any changes.");
+            options.addOption(Flag.CHANGE_ID.shortName(), Flag.CHANGE_ID.longName(), false,
+                    "indicate that the ID portion of the file names needs to be changed in order to match the" +
+                            " directory name.");
+            break;
         default:
             break;
         }

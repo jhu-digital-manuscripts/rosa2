@@ -128,4 +128,13 @@ public interface ByteStreamGroup {
     public void copyByteStream(String sourceStream, String targetStream, ByteStreamGroup targetGroup)
             throws IOException;
 
+    /**
+     * Rename a byte stream in this byte stream group. The contents of the byte stream are
+     * not touched, but it gets a new name.
+     *
+     * @param originalStream original name
+     * @param targetStream rename the original byte stream to this name
+     * @throws IOException
+     */
+    public void renameByteStream(String originalStream, String targetStream) throws IOException;
 }
