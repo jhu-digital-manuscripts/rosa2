@@ -503,7 +503,6 @@ public class StoreImpl implements Store, ArchiveConstants {
             String referencePage = aPage.getPage();
 
             String imageName = fileMap.getMap().get(referencePage);
-            System.out.println("  " + imageName);
             if (imageName == null || imageName.isEmpty()) {
                 continue;
             }
@@ -522,7 +521,6 @@ public class StoreImpl implements Store, ArchiveConstants {
                 sb.append(str);
             }
             String command = "sed -i s/" + referencePage + "/" + imageName + "/ " + bookStreams.id() + "/" + name;
-            System.out.println(command);
 
             Runtime runtime = Runtime.getRuntime();
             Process proc = runtime.exec(command);
