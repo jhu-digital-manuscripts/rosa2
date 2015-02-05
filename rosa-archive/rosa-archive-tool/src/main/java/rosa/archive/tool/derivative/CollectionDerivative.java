@@ -122,9 +122,30 @@ public class CollectionDerivative extends AbstractDerivative {
 
     @Override
     public void generateAndWriteImageList(boolean force) throws IOException {
+        List<String> errors = new ArrayList<>();
         for (String book : store.listBooks(collection)) {
-            store.generateAndWriteImageList(collection, book, force, null);
+            report.println("Generating image list for " + collection + ":" + book);
+            store.generateAndWriteImageList(collection, book, force, errors);
+
+            if (!errors.isEmpty()) {
+                reportError("Errors:", errors);
+            }
         }
+
+
     }
 
+    @Override
+    public void validateXml() throws IOException {
+        List<String> errors = new ArrayList<>();
+
+        for (String book : store.listBooks(collection)) {
+            report.println("Validating XML files for " + collection + ":" + book);
+            store.validateXml(collection, book, errors);
+
+            if (!errors.isEmpty()) {
+                reportError("Errors:", errors);
+            }
+        }
+    }
 }

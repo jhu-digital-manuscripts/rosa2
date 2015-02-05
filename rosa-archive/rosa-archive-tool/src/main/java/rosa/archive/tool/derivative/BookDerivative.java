@@ -81,6 +81,16 @@ public class BookDerivative extends AbstractDerivative {
         }
     }
 
+    @Override
+    public void validateXml() throws IOException {
+        List<String> errors = new ArrayList<>();
+        store.validateXml(collection, book, errors);
+
+        if (!errors.isEmpty()) {
+            reportError("Errors:", errors);
+        }
+    }
+
     public void generateFileMap() throws IOException {
         Scanner in = new Scanner(System.in);
 

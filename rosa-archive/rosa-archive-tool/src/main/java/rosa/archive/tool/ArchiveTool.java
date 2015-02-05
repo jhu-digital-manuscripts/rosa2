@@ -182,6 +182,9 @@ public class ArchiveTool {
         case FILE_MAP:
             deriv.generateFileMap();
             break;
+        case VALIDATE_XML:
+            deriv.validateXml();
+            break;
         default:
             displayError("Invalid command found.", args);
             break;
@@ -220,6 +223,10 @@ public class ArchiveTool {
                 break;
             case FILE_MAP:
                 displayError("Cannot generate file map for collections.", args);
+                break;
+            case VALIDATE_XML:
+                deriv.validateXml();
+                break;
             default:
                 displayError("Invalid command found.", args);
                 break;

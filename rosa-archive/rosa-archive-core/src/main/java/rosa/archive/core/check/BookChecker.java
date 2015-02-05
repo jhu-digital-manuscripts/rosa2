@@ -834,47 +834,49 @@ public class BookChecker extends AbstractArchiveChecker {
                 errors.add("Cannot find file. " + page.getId() + "]");
             } else {
 //                attemptToRead(page, bsg, errors, warnings);
-
-                try {
-                    if (aorAnnotationSchema == null) {
-                        URL schemaUrl = new URL(annotationSchemaUrl);
-                        SchemaFactory schemaFactory =
-                                SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-                        aorAnnotationSchema = schemaFactory.newSchema(schemaUrl);
-                    }
-
-                    Validator validator = aorAnnotationSchema.newValidator();
-                    validator.setResourceResolver(resourceResolver);
-
-                    validator.setErrorHandler(new ErrorHandler() {
-                        @Override
-                        public void warning(SAXParseException e) throws SAXException {
-                            warnings.add("[Warn: " + page.getId() + "] (" + e.getLineNumber() + ":"
-                                    + e.getColumnNumber() + "): " + e.getMessage());
-                        }
-
-                        @Override
-                        public void error(SAXParseException e) throws SAXException {
-                            errors.add("[Error: " + page.getId() + "] (" + e.getLineNumber() + ":"
-                                    + e.getColumnNumber() + "): " + e.getMessage());
-                        }
-
-                        @Override
-                        public void fatalError(SAXParseException e) throws SAXException {
-                            errors.add("[Fatal Error: " + page.getId() + "] (" + e.getLineNumber() + ":"
-                                    + e.getColumnNumber() + "): " + e.getMessage());
-                        }
-                    });
-
-                    Source source = new StreamSource(
-                            bsg.getByteStream(page.getId())
-                    );
-
-                    validator.validate(source);
-                } catch (SAXException | IOException e) {
-                    errors.add("[" + page.getId() + "] failed to validate.\n" + stacktrace(e));
-                }
+                validateAgainstSchema(page.getId(), bsg, errors, warnings);
             }
+        }
+    }
+
+    public void validateAgainstSchema(final String file, ByteStreamGroup bsg, final List<String> errors,
+                                      final List<String> warnings) {
+        try {
+            if (aorAnnotationSchema == null) {
+                URL schemaUrl = new URL(annotationSchemaUrl);
+                SchemaFactory schemaFactory =
+                        SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+                aorAnnotationSchema = schemaFactory.newSchema(schemaUrl);
+            }
+
+            Validator validator = aorAnnotationSchema.newValidator();
+            validator.setResourceResolver(resourceResolver);
+
+            validator.setErrorHandler(new ErrorHandler() {
+                @Override
+                public void warning(SAXParseException e) throws SAXException {
+                    warnings.add("[Warn: " + file + "] (" + e.getLineNumber() + ":"
+                            + e.getColumnNumber() + "): " + e.getMessage());
+                }
+
+                @Override
+                public void error(SAXParseException e) throws SAXException {
+                    errors.add("[Error: " + file + "] (" + e.getLineNumber() + ":"
+                            + e.getColumnNumber() + "): " + e.getMessage());
+                }
+
+                @Override
+                public void fatalError(SAXParseException e) throws SAXException {
+                    errors.add("[Fatal Error: " + file + "] (" + e.getLineNumber() + ":"
+                            + e.getColumnNumber() + "): " + e.getMessage());
+                }
+            });
+
+            Source source = new StreamSource(bsg.getByteStream(file));
+            validator.validate(source);
+
+        } catch (SAXException | IOException e) {
+            errors.add("[" + file + "] failed to validate.\n" + stacktrace(e));
         }
     }
 

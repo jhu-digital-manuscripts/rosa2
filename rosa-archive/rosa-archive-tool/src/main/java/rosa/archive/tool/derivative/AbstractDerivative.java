@@ -29,6 +29,8 @@ public abstract class AbstractDerivative {
 
     public abstract void generateAndWriteImageList(boolean force) throws IOException;
 
+    public abstract void validateXml() throws IOException;
+
     protected void reportError(String message, Exception e) {
         report.println("  [Error] " + message);
         e.printStackTrace(report);
