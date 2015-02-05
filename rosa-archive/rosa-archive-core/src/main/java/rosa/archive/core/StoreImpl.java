@@ -37,6 +37,7 @@ import rosa.archive.model.BookStructure;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
+import rosa.archive.model.FileMap;
 import rosa.archive.model.HasId;
 import rosa.archive.model.HashAlgorithm;
 import rosa.archive.model.IllustrationTagging;
@@ -151,7 +152,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         book.setMultilangMetadata(loadItem(bookId + ".description.xml", bookStreams, MultilangMetadata.class, errors));
 
         List<String> content = bookStreams.listByteStreamNames();
-        book.setContent(content.toArray(new String[] {}));
+        book.setContent(content.toArray(new String[]{}));
 
         // For all image lists, add in dimensions of missing images
         setMissingDimensions(book.getImages(), collection.getMissingImage());
@@ -383,6 +384,125 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
     }
 
+    @Override
+    public void generateFileMap(String collection, String book, String newId, boolean hasFrontCover, boolean hasBackCover,
+                                int numFrontmatter, int numEndmatter, int numMisc, List<String> errors) throws IOException {
+        errors = nonNullList(errors);
+
+        if (!base.hasByteStreamGroup(collection)) {
+            errors.add("Collection not found in directory. [" + base.id() + "]");
+            return;
+        } else if (!base.getByteStreamGroup(collection).hasByteStreamGroup(book)) {
+            errors.add("Book not found in collection. [" + collection + "]");
+            return;
+        }
+
+        ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
+
+        FileMap fileMap = generateFileMap(getImageNames(bookStreams), newId, numFrontmatter,
+                numEndmatter, numMisc, hasFrontCover, hasBackCover);
+        fileMap.setId(FILE_MAP);
+        
+        writeItem(fileMap, bookStreams, FileMap.class, errors);
+    }
+
+    /**
+     * @param bookStreams byte stream group for a book
+     * @return list of names of all images in the book
+     * @throws IOException
+     */
+    private List<String> getImageNames(ByteStreamGroup bookStreams) throws IOException{
+        List<String> filenames = new ArrayList<>();
+        for (String name : bookStreams.listByteStreamNames()) {
+            if (name.endsWith(TIF_EXT) && !name.startsWith(".")) {
+                filenames.add(name);
+            }
+        }
+
+        Collections.sort(filenames);
+        return filenames;
+    }
+
+    /**
+     * @param fileNames list of name of relevant files
+     * @param id files will be renamed using this ID
+     * @param frontmatter number of frontmatter pages
+     * @param endmatter number of endmatter pages
+     * @param misc number of misc pages
+     * @param hasFront does the book have a front cover?
+     * @param hasBack does the book have a back cover?
+     * @return list of CSV lines that can be written to a file
+     */
+    private FileMap generateFileMap(List<String> fileNames, String id, int frontmatter, int endmatter,
+                                    int misc, boolean hasFront, boolean hasBack) {
+        // assume front/back cover + pastedown!
+        Map<String, String> map = new HashMap<>();
+
+        if (hasFront) {
+            map.put(fileNames.get(0), id + IMG_FRONTCOVER);
+            map.put(fileNames.get(1), id + IMG_FRONTPASTEDOWN);
+        }
+
+        int total = fileNames.size();
+        int front_flyleaf_end = hasFront ? 2 + frontmatter : frontmatter;
+        int end_flyleaf_end = hasBack ? total - misc - 2 : total - misc;
+        int end_flyleaf_start = end_flyleaf_end - endmatter;
+
+        int nextseq = 1;
+        char nextrv = 'r';
+        int i;
+        for (i = hasFront ? 2 : 0; i < front_flyleaf_end; i++) {
+            map.put(fileNames.get(i), id + IMG_FRONT_FLYLEAF + String.format("%03d", nextseq) + nextrv + TIF_EXT);
+
+            if (nextrv == 'v') {
+                nextseq++;
+                nextrv = 'r';
+            } else {
+                nextrv = 'v';
+            }
+        }
+
+        nextseq = 1;
+        nextrv = 'r';
+        for (i = front_flyleaf_end; i < end_flyleaf_start; i++) {
+            map.put(fileNames.get(i), id + "." + String.format("%03d", nextseq) + nextrv + TIF_EXT);
+
+            if (nextrv == 'v') {
+                nextseq++;
+                nextrv = 'r';
+            } else {
+                nextrv = 'v';
+            }
+        }
+
+        nextseq = 1;
+        nextrv = 'r';
+        for (i = end_flyleaf_start; i < end_flyleaf_end; i++) {
+            map.put(fileNames.get(i), id + IMG_END_FLYLEAF + String.format("%03d", nextseq) + nextrv + TIF_EXT);
+
+            if (nextrv == 'v') {
+                nextseq++;
+                nextrv = 'r';
+            } else {
+                nextrv = 'v';
+            }
+        }
+
+        if (hasBack) {
+            map.put(fileNames.get(i++), id + IMG_ENDPASTEDOWN);
+            map.put(fileNames.get(i), id + IMG_BACKCOVER);
+        }
+
+        for (i = end_flyleaf_end + 2; i < total; i++) {
+            map.put(fileNames.get(i), id + ".misc.LABEL.tif");
+        }
+
+        FileMap fileMap = new FileMap();
+        fileMap.setMap(map);
+
+        return fileMap;
+    }
+
     /**
      * Inspect a list of images and add images that are missing.
      * 
@@ -575,8 +695,6 @@ public class StoreImpl implements Store, ArchiveConstants {
      *            collection name
      * @param book
      *            book name
-     * @param bookStreams
-     *            byte stream group containing the images
      * @return list of BookImages
      * @throws IOException
      */

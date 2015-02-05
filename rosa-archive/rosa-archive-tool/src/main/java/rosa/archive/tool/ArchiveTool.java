@@ -179,6 +179,9 @@ public class ArchiveTool {
             CropDerivative cDer = new CropDerivative(args[1], args[2], report, store);
             cDer.cropImages(hasOption(cmd, Flag.FORCE));
             break;
+        case FILE_MAP:
+            deriv.generateFileMap();
+            break;
         default:
             displayError("Invalid command found.", args);
             break;
@@ -215,6 +218,8 @@ public class ArchiveTool {
                 CropDerivative cd = new CropDerivative(col, report, store);
                 cd.cropImages(hasOption(cmd, Flag.FORCE));
                 break;
+            case FILE_MAP:
+                displayError("Cannot generate file map for collections.", args);
             default:
                 displayError("Invalid command found.", args);
                 break;

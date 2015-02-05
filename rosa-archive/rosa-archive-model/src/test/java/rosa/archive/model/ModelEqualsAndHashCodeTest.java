@@ -200,6 +200,15 @@ public class ModelEqualsAndHashCodeTest {
     }
 
     @Test
+    public void fileMapTest() {
+        EqualsVerifier
+                .forClass(FileMap.class)
+                .allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
+                .verify();
+    }
+
+    @Test
     public void bookTest() {
         EqualsVerifier
                 .forClass(Book.class)

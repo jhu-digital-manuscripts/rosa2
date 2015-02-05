@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
@@ -77,6 +78,36 @@ public class BookDerivative extends AbstractDerivative {
 
         if (!errors.isEmpty()) {
             reportError("Errors:", errors);
+        }
+    }
+
+    public void generateFileMap() throws IOException {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Has a frontcover + front pastedown image? (true|false) ");
+        boolean hasFrontCover = in.nextBoolean();
+        System.out.print("Has a back cover and back pastedown image? (true|false) ");
+        boolean hasBackCover = in.nextBoolean();
+
+        // Get number of front/end matter flyleaves
+        System.out.print("Number of frontmatter flyleaves: ");
+        int frontmatter = in.nextInt();
+
+        System.out.print("Number of endmatter flyleaves: ");
+        int endmatter = in.nextInt();
+
+        // Get number of misc images
+        System.out.print("Number of misc images: ");
+        int misc = in.nextInt();
+
+        System.out.print("Book ID: ");
+        String id = in.next();
+
+        List<String> errors = new ArrayList<>();
+        store.generateFileMap(collection, book, id, hasFrontCover, hasBackCover, frontmatter, endmatter, misc, errors);
+
+        if (!errors.isEmpty()) {
+            reportError("Errors: ", errors);
         }
     }
 

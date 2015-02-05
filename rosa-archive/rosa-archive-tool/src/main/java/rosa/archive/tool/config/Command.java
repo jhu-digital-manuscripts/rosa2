@@ -9,7 +9,8 @@ public enum Command {
     CHECK("check"),
     UPDATE("update"),
     UPDATE_IMAGE_LIST("update-image-list"),
-    CROP_IMAGES("crop-images");
+    CROP_IMAGES("crop-images"),
+    FILE_MAP("file-map");
 
     private String display;
 

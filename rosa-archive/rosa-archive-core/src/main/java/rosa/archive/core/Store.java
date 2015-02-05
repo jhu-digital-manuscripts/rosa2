@@ -89,10 +89,7 @@ public interface Store {
     void generateAndWriteCropList(String collection, String book, boolean force, List<String> errors) throws IOException;
 
     void cropImages(String collection, String book, boolean force, List<String> errors) throws IOException;
-    // TODO the following methods will not be in first iteration!
-    // updateBook(...)
-    // addBook(...)
-    // updateBaseData(...)?
-    // updateDerivedData(...)?
 
+    void generateFileMap(String collection, String book, String newId, boolean hasFrontCover, boolean hasBackCover,
+                         int numFrontmatter, int numEndmatter, int numMisc, List<String> errors) throws IOException;
 }

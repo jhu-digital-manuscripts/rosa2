@@ -52,6 +52,8 @@ public interface ArchiveConstants {
     static final String BNF_MD5SUM = ".bnf.MD5SUM";
 
     static final String AOR_ANNOTATION = ".aor";
+
+    static final String FILE_MAP = "filemap.csv";
     
     // Images names
 

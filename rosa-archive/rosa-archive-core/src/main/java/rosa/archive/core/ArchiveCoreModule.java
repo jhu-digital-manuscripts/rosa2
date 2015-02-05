@@ -8,6 +8,7 @@ import rosa.archive.core.serialize.BookReferenceSheetSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
 import rosa.archive.core.serialize.CropInfoSerializer;
+import rosa.archive.core.serialize.FileMapSerializer;
 import rosa.archive.core.serialize.IllustrationTaggingSerializer;
 import rosa.archive.core.serialize.IllustrationTitlesSerializer;
 import rosa.archive.core.serialize.ImageListSerializer;
@@ -50,6 +51,7 @@ public class ArchiveCoreModule extends AbstractModule {
         serializers.addBinding().to(AORAnnotatedPageSerializer.class);
         serializers.addBinding().to(ReferenceSheetSerializer.class);
         serializers.addBinding().to(BookReferenceSheetSerializer.class);
+        serializers.addBinding().to(FileMapSerializer.class);
         
         bind(SerializerSet.class);
         
