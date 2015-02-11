@@ -2,8 +2,6 @@ package rosa.archive.core;
 
 import java.nio.charset.Charset;
 
-// TODO Capitalize, normalize based on usage
-// TODO Not clear all of this needs to be here
 public interface ArchiveConstants {
     static final Charset UTF_8 = Charset.forName("UTF-8");
     

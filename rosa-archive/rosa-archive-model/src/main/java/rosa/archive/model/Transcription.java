@@ -3,7 +3,7 @@ package rosa.archive.model;
 import java.io.Serializable;
 
 /**
- * TODO write code to extract transcriptions for a specific page
+ *
  */
 public class Transcription implements HasId, Serializable {
     private static final long serialVersionUID = 1L;

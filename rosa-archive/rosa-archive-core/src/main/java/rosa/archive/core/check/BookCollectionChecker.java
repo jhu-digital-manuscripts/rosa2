@@ -7,9 +7,6 @@ import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.BookCollection;
-import rosa.archive.model.CharacterNames;
-import rosa.archive.model.IllustrationTitles;
-import rosa.archive.model.NarrativeSections;
 
 import com.google.inject.Inject;
 
@@ -72,7 +69,11 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
     }
 
     /**
+     * Two data sets available. For each set, if any single object is present,
+     * they must all be present.
      *
+     * Set 1: (character names, illustration titles, narrative sections)
+     * Set 2: (books reference sheet, people reference sheet, locations reference sheet)
      *
      * @param bsg byte stream group
      * @param collection parent collection
@@ -81,14 +82,13 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
      */
     private void check(BookCollection collection, ByteStreamGroup bsg, List<String> errors, List<String> warnings) {
 
-        CharacterNames names = collection.getCharacterNames();
-        IllustrationTitles titles = collection.getIllustrationTitles();
-        NarrativeSections sections = collection.getNarrativeSections();
-
-        // Make sure the things can be read
-        attemptToRead(names, bsg, errors, warnings);
-        attemptToRead(titles, bsg, errors, warnings);
-        attemptToRead(sections, bsg, errors, warnings);
+        if (collection.getCharacterNames() != null || collection.getIllustrationTitles() != null
+                || collection.getNarrativeSections() != null) {
+            // Make sure the things can be read
+            attemptToRead(collection.getCharacterNames(), bsg, errors, warnings);
+            attemptToRead(collection.getIllustrationTitles(), bsg, errors, warnings);
+            attemptToRead(collection.getNarrativeSections(), bsg, errors, warnings);
+        }
 
         if (collection.getBooksRef() != null || collection.getPeopleRef() != null
                 || collection.getLocationsRef() != null) {

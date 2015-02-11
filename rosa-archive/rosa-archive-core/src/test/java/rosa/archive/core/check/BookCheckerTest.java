@@ -59,7 +59,10 @@ public class BookCheckerTest extends BaseArchiveTest {
      */
     @Test
     public void loadFolgersAndCheckWithBits() throws Exception {
-//        fail("Test not implemented.");
+        boolean check = store.check(loadValidCollection(), loadValidFolgersHa2(), true, errors, warnings);
+        assertTrue(check);
+        assertTrue("There should be NO errors.", errors.isEmpty());
+//        assertTrue("Warnings list should be empty.", warnings.isEmpty());
     }
 
 }
