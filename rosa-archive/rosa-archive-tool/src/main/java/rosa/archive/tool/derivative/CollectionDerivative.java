@@ -138,13 +138,17 @@ public class CollectionDerivative extends AbstractDerivative {
     @Override
     public void validateXml() throws IOException {
         List<String> errors = new ArrayList<>();
+        List<String> warnings = new ArrayList<>();
 
         for (String book : store.listBooks(collection)) {
             report.println("Validating XML files for " + collection + ":" + book);
-            store.validateXml(collection, book, errors);
+            store.validateXml(collection, book, errors, warnings);
 
             if (!errors.isEmpty()) {
                 reportError("Errors:", errors);
+            }
+            if (!warnings.isEmpty()) {
+                reportError("Warnings:", warnings);
             }
         }
     }

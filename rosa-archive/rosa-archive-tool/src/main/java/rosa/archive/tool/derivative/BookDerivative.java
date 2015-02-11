@@ -42,6 +42,8 @@ public class BookDerivative extends AbstractDerivative {
     @Override
     public void updateChecksum(boolean force) throws IOException {
         List<String> errors = new ArrayList<>();
+
+        report.println("Updating checksum [" + collection + ":" + book + "]");
         store.updateChecksum(collection, book, force, errors);
 
         if (errors.size() > 0) {
@@ -58,6 +60,7 @@ public class BookDerivative extends AbstractDerivative {
         BookCollection col = store.loadBookCollection(collection, loadingErrors);
         Book b = col == null ? null : store.loadBook(col, book, loadingErrors);
         if (b != null) {
+            report.println("Checking book. [" + collection + ":" + book + "]");
             store.check(col, b, checkBits, errors, warnings);
         } else {
             report.println("Failed to read book. [" + collection + ":" + book + "]");
@@ -74,6 +77,7 @@ public class BookDerivative extends AbstractDerivative {
     @Override
     public void generateAndWriteImageList(boolean force) throws IOException {
         List<String> errors = new ArrayList<>();
+        report.println("Generating and writing image list. [" + collection + ":" + book + "]");
         store.generateAndWriteImageList(collection, book, force, errors);
 
         if (!errors.isEmpty()) {
@@ -84,7 +88,7 @@ public class BookDerivative extends AbstractDerivative {
     @Override
     public void validateXml() throws IOException {
         List<String> errors = new ArrayList<>();
-        store.validateXml(collection, book, errors);
+        store.validateXml(collection, book, errors, errors);
 
         if (!errors.isEmpty()) {
             reportError("Errors:", errors);
@@ -94,6 +98,7 @@ public class BookDerivative extends AbstractDerivative {
     @Override
     public void renameImages(boolean dry, boolean changeId) throws IOException {
         List<String> errors = new ArrayList<>();
+        report.println("Renaming images. [" + collection + ":" + book + "]");
         store.renameImages(collection, book, dry, changeId, errors);
 
         if (!errors.isEmpty()) {
@@ -104,6 +109,7 @@ public class BookDerivative extends AbstractDerivative {
     @Override
     public void renameTranscriptions() throws IOException {
         List<String> errors = new ArrayList<>();
+        report.println("Renaming AoR transcriptions. [" + collection + ":" + book + "]");
         store.renameTranscriptions(collection, book, errors);
 
         if (!errors.isEmpty()) {
@@ -140,5 +146,4 @@ public class BookDerivative extends AbstractDerivative {
             reportError("Errors: ", errors);
         }
     }
-
 }

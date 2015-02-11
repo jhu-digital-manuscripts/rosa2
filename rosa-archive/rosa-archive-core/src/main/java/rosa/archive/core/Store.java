@@ -93,7 +93,7 @@ public interface Store {
     void generateFileMap(String collection, String book, String newId, boolean hasFrontCover, boolean hasBackCover,
                          int numFrontmatter, int numEndmatter, int numMisc, List<String> errors) throws IOException;
 
-    void validateXml(String collection, String book, List<String> errors) throws IOException;
+    void validateXml(String collection, String book, List<String> errors, List<String> warnings) throws IOException;
 
     void renameImages(String collection, String book, boolean dryRun, boolean changeId, List<String> errors) throws IOException;
 

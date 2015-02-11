@@ -408,8 +408,9 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     @Override
-    public void validateXml(String collection, String book, List<String> errors) throws IOException {
+    public void validateXml(String collection, String book, List<String> errors, List<String> warnings) throws IOException {
         errors = nonNullList(errors);
+        warnings = nonNullList(warnings);
 
         if (!base.hasByteStreamGroup(collection)) {
             errors.add("Collection not found in directory. [" + base.id() + "]");
@@ -423,7 +424,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         for (String file : bookStreams.listByteStreamNames()) {
             // TODO could use file name abstraction
             if (file.contains(AOR_ANNOTATION) && file.endsWith(XML_EXT)) {
-                bookChecker.validateAgainstSchema(file, bookStreams, errors, new ArrayList<String>());
+                bookChecker.validateAgainstSchema(file, bookStreams, errors, warnings);
             }
         }
     }
@@ -538,11 +539,12 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
     }
 
+    // TODO abstract file names
     private List<String> getTranscriptionsNames(ByteStreamGroup bookStreams) throws IOException {
         List<String> names = new ArrayList<>();
 
         for (String name : bookStreams.listByteStreamNames()) {
-            if (name.endsWith(XML_EXT) && name.contains(AOR_ANNOTATION)) {
+            if (name.matches("\\d+\\.xml") && !name.contains(TRANSCRIPTION) && !name.contains("description")) {
                 names.add(name);
             }
         }
@@ -554,7 +556,7 @@ public class StoreImpl implements Store, ArchiveConstants {
     /**
      * @param bookStreams byte stream group for a book
      * @return list of names of all images in the book
-     * @throws IOException
+     * @throws IOException TODO abstract file names
      */
     private List<String> getImageNames(ByteStreamGroup bookStreams) throws IOException{
         List<String> filenames = new ArrayList<>();
