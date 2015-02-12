@@ -16,7 +16,7 @@ public class JhuFsiImageIdMapper implements ImageIdMapper {
     /**
      * BookCollection names are mapped to fsi share names using the provided Map.
      * 
-     * @param fsi_share_map
+     * @param fsi_share_map map relating archive names to names on the image server
      */
     public JhuFsiImageIdMapper(Map<String, String> fsi_share_map) {
         this.fsi_share_map = fsi_share_map;

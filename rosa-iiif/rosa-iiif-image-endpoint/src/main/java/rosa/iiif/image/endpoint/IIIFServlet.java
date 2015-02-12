@@ -43,6 +43,12 @@ public class IIIFServlet extends HttpServlet {
     private final IIIFResponseSerializer serializer;
     private final Map<String, String> image_id_aliases; // alias -> image id
 
+    /**
+     * Create a new IIIF servlet to handle IIIF image requests.
+     *
+     * @param service a service that knows how to handle requests
+     * @param image_id_aliases aliases
+     */
     @Inject
     public IIIFServlet(IIIFService service, @Named("image.aliases") Map<String, String> image_id_aliases) {
         this.service = service;

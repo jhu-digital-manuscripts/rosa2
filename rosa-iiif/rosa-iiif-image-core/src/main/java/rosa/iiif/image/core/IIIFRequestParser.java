@@ -44,6 +44,8 @@ public class IIIFRequestParser {
      *            must not be decoded and be valid
      * @return image info request
      * @throws IIIFException
+     *           if the path contains invalid encoding, or this is not
+     *           an image info request
      */
     public InfoRequest parseImageInfoRequest(String path) throws IIIFException {
         if (!UriUtil.isValidEncodedPath(path)) {
@@ -75,6 +77,8 @@ public class IIIFRequestParser {
      *            must not be decoded
      * @return image request
      * @throws IIIFException
+     *           if the request is not encoded correctly, or is otherwise
+     *           formatted incorrectly.
      */
     public ImageRequest parseImageRequest(String path) throws IIIFException {
         if (!UriUtil.isValidEncodedPath(path)) {

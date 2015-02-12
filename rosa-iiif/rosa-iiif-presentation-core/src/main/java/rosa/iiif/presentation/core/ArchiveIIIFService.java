@@ -33,7 +33,14 @@ public class ArchiveIIIFService implements IIIFService {
     private final PresentationTransformer transformer;
     private final ConcurrentHashMap<String, Object> cache;
     private final int max_cache_size;
-    
+
+    /**
+     *
+     * @param store the store to manipulate the archive
+     * @param jsonld_serializer serializer to write the response as json-ld
+     * @param transformer transformer to transform archive data to IIIF presentation data
+     * @param max_cache_size max number of objects to cache at a time
+     */
     public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer, int max_cache_size) {
         this.store = store;
         this.serializer = jsonld_serializer;

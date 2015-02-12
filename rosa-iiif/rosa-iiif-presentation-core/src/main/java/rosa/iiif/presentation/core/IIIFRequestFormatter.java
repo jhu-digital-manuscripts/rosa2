@@ -18,7 +18,7 @@ public class IIIFRequestFormatter {
     /**
      * @param scheme
      *            http or https
-     * @param host
+     * @param host the host
      * @param port
      *            -1 for default port
      * @param prefix
@@ -35,6 +35,12 @@ public class IIIFRequestFormatter {
         return scheme + "://" + host + (port == -1 || (scheme.equals("http") && port == 80) ? "" : ":" + port) + prefix + "/";
     }
 
+    /**
+     * Format the presentation request as a URI.
+     *
+     * @param req request
+     * @return URI formatted request
+     */
     public String format(PresentationRequest req) {
         PresentationRequestType type = req.getType();
 

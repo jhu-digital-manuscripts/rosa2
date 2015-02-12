@@ -16,6 +16,9 @@ public class Collection extends PresentationBase {
     private List<Reference> collections;
     private List<Reference> manifests;
 
+    /**
+     * Create an empty Collection.
+     */
     public Collection() {
         collections = new ArrayList<>();
         manifests = new ArrayList<>();

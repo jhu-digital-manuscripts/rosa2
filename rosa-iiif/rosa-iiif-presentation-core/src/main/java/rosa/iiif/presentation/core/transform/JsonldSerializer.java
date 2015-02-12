@@ -30,6 +30,9 @@ import java.io.Writer;
 public class JsonldSerializer implements PresentationSerializer, IIIFNames {
     private static final String IIIF_PRESENTATION_CONTEXT = "http://iiif.io/api/presentation/2/context.json";
 
+    /**
+     * Create a JsonldSerializer
+     */
     public JsonldSerializer() {}
 
     @Override

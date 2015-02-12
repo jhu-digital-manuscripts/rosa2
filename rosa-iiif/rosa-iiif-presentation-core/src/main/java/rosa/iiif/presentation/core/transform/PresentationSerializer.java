@@ -20,8 +20,8 @@ public interface PresentationSerializer {
      *
      * @param collection IIIF presentation collection object
      * @param out output stream to write to
-     * @throws JSONException
-     * @throws IOException
+     * @throws JSONException if the JSON output could not be written correctly
+     * @throws IOException if the output stream is not available
      */
     void write(Collection collection, OutputStream out) throws IOException;
 
@@ -30,8 +30,8 @@ public interface PresentationSerializer {
      *
      * @param manifest IIIF presentation manifest object
      * @param out output stream to write to
-     * @throws JSONException
-     * @throws IOException
+     * @throws JSONException if the JSON output could not be written correctly
+     * @throws IOException if the output stream is not available
      */
     void write(Manifest manifest, OutputStream out) throws IOException;
 
@@ -40,8 +40,8 @@ public interface PresentationSerializer {
      *
      * @param sequence IIIF presentation sequence object
      * @param out output stream to write to
-     * @throws JSONException
-     * @throws IOException
+     * @throws JSONException if the JSON output could not be written correctly
+     * @throws IOException if the output stream is not available
      */
     void write(Sequence sequence, OutputStream out) throws IOException;
 
@@ -50,8 +50,8 @@ public interface PresentationSerializer {
      *
      * @param canvas IIIF presentation canvas object
      * @param out output stream to write to
-     * @throws JSONException
-     * @throws IOException
+     * @throws JSONException if the JSON output could not be written correctly
+     * @throws IOException if the output stream is not available
      */
     void write(Canvas canvas, OutputStream out) throws IOException;
 
@@ -60,8 +60,8 @@ public interface PresentationSerializer {
      *
      * @param annotation IIIF presentation annotation object
      * @param out output stream to write to
-     * @throws JSONException
-     * @throws IOException
+     * @throws JSONException if the JSON output could not be written correctly
+     * @throws IOException if the output stream is not available
      */
     void write(Annotation annotation, OutputStream out) throws IOException;
 
@@ -70,8 +70,8 @@ public interface PresentationSerializer {
      *
      * @param layer IIIF presentation layer object
      * @param out output stream to write to
-     * @throws JSONException
-     * @throws IOException
+     * @throws JSONException if the JSON output could not be written correctly
+     * @throws IOException if the output stream is not available
      */
     void write(Layer layer, OutputStream out)  throws IOException;
 
@@ -80,8 +80,8 @@ public interface PresentationSerializer {
      *
      * @param range IIIF presentation range object
      * @param out output stream to write to
-     * @throws JSONException
-     * @throws IOException
+     * @throws JSONException if the JSON output could not be written correctly
+     * @throws IOException if the output stream is not available
      */
     void write(Range range, OutputStream out)  throws IOException;
 
@@ -90,7 +90,7 @@ public interface PresentationSerializer {
      *
      * @param annotationList IIIF presentation annotation list object
      * @param os output stream to write to
-     * @throws IOException
+     * @throws IOException if the output stream is not available
      */
     void write(AnnotationList annotationList, OutputStream os) throws IOException;
 

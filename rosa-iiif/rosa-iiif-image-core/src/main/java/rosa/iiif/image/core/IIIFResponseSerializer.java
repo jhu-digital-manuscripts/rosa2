@@ -22,6 +22,9 @@ import rosa.iiif.image.model.TileInfo;
  */
 public class IIIFResponseSerializer {
 
+    /**
+     * Create a new IIIFResponseSerializer
+     */
     public IIIFResponseSerializer() {
     }
 
@@ -43,6 +46,15 @@ public class IIIFResponseSerializer {
         out.endObject();
     }
 
+    /**
+     *
+     * @param info the image info
+     * @param os output stream to write the response
+     * @throws JSONException
+     *          if the JSON writer is not able to write JSON as requested
+     * @throws IOException
+     *          if the output stream not available
+     */
     public void writeJsonLd(ImageInfo info, OutputStream os) throws JSONException, IOException {
         Writer writer = new OutputStreamWriter(os, "UTF-8");
         JSONWriter out = new JSONWriter(writer);

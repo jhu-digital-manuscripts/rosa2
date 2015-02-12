@@ -19,6 +19,7 @@ public class IIIFRequestFormatter {
      * @param scheme
      *            http or https
      * @param host
+     *          the host
      * @param port
      *            -1 for default port
      * @param prefix
@@ -34,7 +35,7 @@ public class IIIFRequestFormatter {
     /**
      * Format an info request.
      * 
-     * @param req
+     * @param req request
      * @return URI for request
      */
     public String format(InfoRequest req) {
@@ -42,9 +43,9 @@ public class IIIFRequestFormatter {
     }
 
     /**
-     * Format an image request canonically acoording to the standard.
+     * Format an image request canonically according to the standard.
      * 
-     * @param req
+     * @param req request
      * @return URI for request
      */
     public String format(ImageRequest req) {
@@ -57,7 +58,7 @@ public class IIIFRequestFormatter {
     /**
      * Format an image id as a URI.
      * 
-     * @param image_id
+     * @param image_id image id
      * @return URI for image id
      */
     public String format(String image_id) {

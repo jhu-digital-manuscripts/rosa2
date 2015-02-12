@@ -10,6 +10,10 @@ public enum AnnotationListType {
     ERRATA,
     MARK;
 
+    /**
+     * @param name name to parse
+     * @return the annotation list type associated with the name
+     */
     public static AnnotationListType getType(String name) {
         for (AnnotationListType type : AnnotationListType.values()) {
             if (type.toString().equals(name.toUpperCase())) {

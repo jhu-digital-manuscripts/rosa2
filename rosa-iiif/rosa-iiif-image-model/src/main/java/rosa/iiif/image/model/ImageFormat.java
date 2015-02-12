@@ -1,5 +1,8 @@
 package rosa.iiif.image.model;
 
+/**
+ * Image formats and MIME types supported by the IIIF image service.
+ */
 public enum ImageFormat {
     JPG("jpg", "image/jpeg"), TIF("tif", "image/tiff"), PNG("png", "image/png"), GIF("gif", "image/gif"), 
         JP2("jp2", "image/jp2"), PDF("pdf", "application/pdf"), WEBP("webp", "image/webp");

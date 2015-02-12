@@ -7,7 +7,7 @@ public class UriUtil {
     /**
      * Return whether or not the given encoded path is a valid URI path. The path must start with '/'.
      * 
-     * @param s
+     * @param s string
      * @return status
      */
     public static boolean isValidEncodedPath(String s) {
@@ -25,7 +25,7 @@ public class UriUtil {
     }
 
     /**
-     * @param s
+     * @param s string
      * @return string encoded as a URI path segment
      */
     public static String encodePathSegment(String s) {
@@ -67,7 +67,7 @@ public class UriUtil {
     }
 
     /**
-     * @param segs
+     * @param segs segments to encode
      * @return relative encoded path consisting of given segments
      */
     public static String encodePathSegments(String... segs) {

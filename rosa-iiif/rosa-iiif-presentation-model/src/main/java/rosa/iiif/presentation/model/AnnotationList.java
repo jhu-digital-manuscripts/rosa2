@@ -11,6 +11,9 @@ public class AnnotationList extends PresentationBase implements Iterable<Annotat
 
     private List<Annotation> annotations;
 
+    /**
+     * Create an empty annotation list
+     */
     public AnnotationList() {
         super();
         annotations = new ArrayList<>();
@@ -26,6 +29,9 @@ public class AnnotationList extends PresentationBase implements Iterable<Annotat
         this.annotations = annotations;
     }
 
+    /**
+     * @return number of annotations in this list
+     */
     public int size() {
         return annotations.size();
     }

@@ -18,6 +18,9 @@ public class ImageInfo implements Serializable {
     private TileInfo[] tiles;
     private ImageServerProfile[] profiles;
 
+    /**
+     * Create a new empty ImageInfo.
+     */
     public ImageInfo() {
     }
 

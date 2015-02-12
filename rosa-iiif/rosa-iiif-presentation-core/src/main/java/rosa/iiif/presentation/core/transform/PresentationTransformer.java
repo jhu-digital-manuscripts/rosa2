@@ -68,6 +68,12 @@ public class PresentationTransformer implements IIIFNames {
     private final rosa.iiif.image.core.IIIFRequestFormatter imageFormatter;
     private final ImageIdMapper imageIdMapper;
 
+    /**
+     *
+     * @param requestFormatter service that can format presentation requests
+     * @param imageFormatter service that can format image requests
+     * @param imageIdMapper service that can map archive names to names on the image server
+     */
     @Inject
     public PresentationTransformer(IIIFRequestFormatter requestFormatter,
                                    rosa.iiif.image.core.IIIFRequestFormatter imageFormatter,
@@ -240,14 +246,15 @@ public class PresentationTransformer implements IIIFNames {
         
         String type = parts[0];
         String id = parts[1];
-        
-        if (type.equals(ILLUSTRATION_RANGE_TYPE)) {
+
+        switch (type) {
+        case ILLUSTRATION_RANGE_TYPE:
             return buildIllustrationRange(col, book, id);
-        } else if (type.equals(IMAGE_RANGE_TYPE)) {
+        case IMAGE_RANGE_TYPE:
             return buildImageRange(col, book, id);
-        } else if (type.equals(TEXT_RANGE_TYPE)) {
+        case TEXT_RANGE_TYPE:
             return buildTextRange(col, book, id);
-        } else {
+        default:
             return null;
         }
     }
@@ -690,29 +697,6 @@ public class PresentationTransformer implements IIIFNames {
         ann.setDefaultTarget(target);
 
         return ann;
-    }
-
-    /**
-     *
-     *
-     * @param collection book collection holding the book
-     * @param book book containing the page
-     * @param canvas the Canvas that will hold the annotations
-     * @param aPage the annotated page containing the data
-     * @return other content, annotations on a page
-     */
-    private List<AnnotationList> otherContent(BookCollection collection, Book book, Canvas canvas, AnnotatedPage aPage) {
-        List<AnnotationList> otherContent = new ArrayList<>();
-
-        for (AnnotationListType type : AnnotationListType.values()) {
-            AnnotationList list = annotationList(collection, book, canvas, aPage, type);
-            // Add this list to 'otherContent' if it exists and contains annotations
-            if (list != null && !list.getAnnotations().isEmpty()) {
-                otherContent.add(list);
-            }
-        }
-
-        return otherContent;
     }
 
     /**

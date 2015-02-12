@@ -5,8 +5,18 @@ public class PresentationRequest {
     private String id;
     private String name;
 
+    /**
+     * Create an empty PresentationRequest
+     */
     public PresentationRequest() {}
 
+    /**
+     * Create a PresentationRequests with data.
+     *
+     * @param id requested ID, including collection and book
+     * @param name requested name
+     * @param type requested type
+     */
     public PresentationRequest(String id, String name, PresentationRequestType type) {
         this.type = type;
         this.id = id;

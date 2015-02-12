@@ -48,7 +48,7 @@ public class FSIService implements IIIFService {
      * The base url must not end in '/' and should look something like
      * 'http://fsiserver.library.jhu.edu/server'.
      * 
-     * @param baseurl
+     * @param baseurl base URL
      * @param max_image_size
      *            maximum dimension of a returned image, -1 for unlimited
      * @param image_info_cache_size
@@ -56,7 +56,7 @@ public class FSIService implements IIIFService {
      */
     public FSIService(String baseurl, int max_image_size, int image_info_cache_size) {
         this.baseurl = baseurl;
-        this.image_info_cache = new ConcurrentHashMap<String, ImageInfo>(image_info_cache_size);
+        this.image_info_cache = new ConcurrentHashMap<>(image_info_cache_size);
         this.profile = new ImageServerProfile();
         this.max_image_size = max_image_size;
         this.image_info_cache_size = image_info_cache_size;
@@ -232,9 +232,9 @@ public class FSIService implements IIIFService {
     /**
      * Extract information from FSI XML. Set image width and height.
      * 
-     * @param is
-     * @param info
-     * @throws IIIFException
+     * @param is input stream
+     * @return image info
+     * @throws IIIFException if input stream is inaccessible
      */
     protected ImageInfo parse_image_info(InputStream is) throws IIIFException {
         ImageInfo result = new ImageInfo();
@@ -260,13 +260,7 @@ public class FSIService implements IIIFService {
             }
 
             return result;
-        } catch (ParserConfigurationException e) {
-            throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
-        } catch (SAXException e) {
-            throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
-        } catch (NumberFormatException e) {
-            throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
-        } catch (IOException e) {
+        } catch (ParserConfigurationException | SAXException | NumberFormatException | IOException e) {
             throw new IIIFException(e, HttpURLConnection.HTTP_INTERNAL_ERROR);
         }
     }

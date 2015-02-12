@@ -64,6 +64,9 @@ public class Canvas extends PresentationBase {
     private List<Annotation> images;
     private List<Reference> otherContent;
 
+    /**
+     * Create an empty Canvas.
+     */
     public Canvas() {
         super();
         images = new ArrayList<>();

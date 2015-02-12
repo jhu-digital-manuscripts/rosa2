@@ -14,9 +14,10 @@ public interface IIIFService {
      * Serialize the IIIF Presentation API object referenced by the given URI as
      * JSON-LD.
      * 
-     * @param uri
-     * @param os
+     * @param uri incoming URI to process
+     * @param os output stream to write to
      * @return whether or not the URI exists
+     * @throws java.io.IOException if the output stream is inaccessible
      */
     boolean handle_request(String uri, OutputStream os) throws IOException;
 
@@ -26,9 +27,10 @@ public interface IIIFService {
      * 
      * This method is used preferentially
      * 
-     * @param req
-     * @param os
+     * @param req presentation request, that contains information about the incoming request
+     * @param os output stream to write response
      * @return whether or not the URI exists
+     * @throws java.io.IOException if the output stream is inaccessible
      */
     boolean handle_request(PresentationRequest req, OutputStream os) throws IOException;
 }

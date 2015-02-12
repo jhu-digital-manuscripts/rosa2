@@ -28,6 +28,10 @@ public class IIIFServlet extends HttpServlet {
     private final IIIFService service;
     private final IIIFRequestParser parser;
 
+    /**
+     * Create a IIIF servlet for the IIIF presentation layer.
+     * @param service a IIIFService that knows how to handle requests
+     */
     @Inject
     public IIIFServlet(IIIFService service) {
         this.service = service;

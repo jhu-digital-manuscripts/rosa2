@@ -17,6 +17,9 @@ public class ImageRequest implements Serializable {
     private Quality quality;
     private Rotation rotation;
 
+    /**
+     * Create a new empty ImageRequest
+     */
     public ImageRequest() {
     }
 
