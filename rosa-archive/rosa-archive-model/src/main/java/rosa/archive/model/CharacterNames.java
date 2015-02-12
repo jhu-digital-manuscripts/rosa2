@@ -38,6 +38,7 @@ public class CharacterNames implements HasId, Serializable {
      *
      * @param language
      *          desired language
+     * @return set containing all names in a language
      */
     public Set<String> getAllNamesInLanguage(String language) {
         Set<String> namesInLanguage = new HashSet<>();

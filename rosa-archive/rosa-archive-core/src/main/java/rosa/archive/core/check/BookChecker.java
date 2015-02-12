@@ -63,11 +63,24 @@ public class BookChecker extends AbstractArchiveChecker {
     private static final LSResourceResolver resourceResolver = new CachingUrlLSResourceResolver();
     private static Schema aorAnnotationSchema;
 
+    /**
+     * @param serializers all required serializers
+     */
     @Inject
     BookChecker(SerializerSet serializers) {
         super(serializers);
     }
 
+    /**
+     *
+     * @param collection book collection
+     * @param book book to check
+     * @param bsg byte stream group of the book
+     * @param checkBits validate checksums for all items in the book?
+     * @param errors list of errors found while checking
+     * @param warnings list of warnings found while checking
+     * @return TRUE if the book validates with no errors, however, warnings may still exist
+     */
     public boolean checkContent(
             BookCollection collection, Book book, ByteStreamGroup bsg, boolean checkBits,
             List<String> errors, List<String> warnings) {
@@ -173,6 +186,8 @@ public class BookChecker extends AbstractArchiveChecker {
      *
      * @param bsg object wrapping all InputStreams for the archive
      * @param book book archive
+     * @param errors list of errors
+     * @param warnings list of warnings
      * @return list of errors found while performing check
      */
     protected List<String> checkAllBits(ByteStreamGroup bsg, Book book, List<String> errors, List<String> warnings) {
@@ -839,6 +854,14 @@ public class BookChecker extends AbstractArchiveChecker {
         }
     }
 
+    /**
+     * Validate a particular XML item against a known schema.
+     *
+     * @param file name of item to validate
+     * @param bsg byte stream group containing this item
+     * @param errors list of errors
+     * @param warnings list of warnings
+     */
     public void validateAgainstSchema(final String file, ByteStreamGroup bsg, final List<String> errors,
                                       final List<String> warnings) {
         try {
@@ -1043,6 +1066,10 @@ public class BookChecker extends AbstractArchiveChecker {
         }
     }
 
+    /**
+     * @param s a string
+     * @return does the string contain any numbers?
+     */
     public final boolean containsDigit(String s){
         boolean containsDigit = false;
 

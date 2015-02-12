@@ -27,17 +27,20 @@ public class MultilangMetadata implements HasId, Serializable {
     private int numberOfPages;
 
     /**
-     * Map ID -> BookText
-     * <text id=""> element
+     * Map ID -&gt; BookText
+     * &lt;text id=""&gt; element
      * OR
-     * <msItem n="">
+     * &lt;msItem n=""&gt;
      */
     private List<BookText> bookTexts;
     /**
-     * Map Language -> Bibliographic information
+     * Map Language -&gt; Bibliographic information
      */
     private Map<String, BiblioData> biblioDataMap;
 
+    /**
+     * Create empty MultilangMetadata
+     */
     public MultilangMetadata() {
         yearStart = -1;
         yearEnd = -1;

@@ -18,10 +18,16 @@ public class FSByteStreamGroup implements ByteStreamGroup {
 
     private Path base;
 
+    /** TODO should this be public?
+     * @param base base path of the byte stream group
+     */
     public FSByteStreamGroup(String base) {
         this(Paths.get(base));
     }
 
+    /**
+     * @param base base path of the byte stream group
+     */
     public FSByteStreamGroup(Path base) {
         this.base = base;
     }

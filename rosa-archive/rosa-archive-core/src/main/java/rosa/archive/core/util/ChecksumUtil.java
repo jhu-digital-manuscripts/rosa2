@@ -21,8 +21,8 @@ public class ChecksumUtil {
      * @param algorithm hashing algorithm to use
      * @return hash value as hex string
      *
-     * @throws java.io.IOException
-     * @throws java.security.NoSuchAlgorithmException
+     * @throws java.io.IOException input stream inaccessible
+     * @throws java.security.NoSuchAlgorithmException hash algorithm not supported
      */
     public static String calculateChecksum(InputStream in, HashAlgorithm algorithm)
             throws IOException, NoSuchAlgorithmException {

@@ -22,6 +22,9 @@ import rosa.archive.model.SHA1Checksum;
 public abstract class AbstractArchiveChecker implements ArchiveConstants {
     protected final SerializerSet serializers;
 
+    /**
+     * @param serializers set of all required serializers
+     */
     AbstractArchiveChecker(SerializerSet serializers) {
         this.serializers = serializers;
     }
@@ -117,6 +120,7 @@ public abstract class AbstractArchiveChecker implements ArchiveConstants {
      * @param checksumName name of checksum item in this group
      * @param errors list of errors
      * @param warnings list of warnings
+     * @return list of errors
      */
     protected List<String> checkStreams(ByteStreamGroup bsg, String checksumName,
                                         List<String> errors, List<String> warnings) {

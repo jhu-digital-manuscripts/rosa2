@@ -19,6 +19,9 @@ public class BookScene implements Serializable {
     private String startTranscription;
     private boolean correct;
 
+    /**
+     * Create empty BookScene
+     */
     public BookScene() {
         startLineOffset = -1;
         endLineOffset = -1;

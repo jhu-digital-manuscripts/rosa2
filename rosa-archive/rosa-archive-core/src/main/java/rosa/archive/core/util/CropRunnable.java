@@ -18,6 +18,13 @@ public class CropRunnable implements Runnable {
     private Path basePath;
     private String cropDir;
 
+    /**
+     * @param basePath base location of the book
+     * @param image image to crop
+     * @param crop crop information
+     * @param cropDir directory to save the cropped image
+     * @param errors list of errors
+     */
     public CropRunnable(String basePath, BookImage image, CropData crop, String cropDir, List<String> errors) {
         this.image = image;
         this.crop = crop;
@@ -54,6 +61,9 @@ public class CropRunnable implements Runnable {
         }
     }
 
+    /**
+     * @return the CLI command to Image Magick that does the actual cropping.
+     */
     protected String buildCommand() {
         // top, bottom, left, right
         int[] points = calcPoints();
@@ -73,6 +83,9 @@ public class CropRunnable implements Runnable {
                 + destination.toString();
     }
 
+    /**
+     * @return array (x, y, width, height)
+     */
     protected int[] calcPoints() {
         return new int[] {
                 (int) (image.getHeight() * crop.getTop()),

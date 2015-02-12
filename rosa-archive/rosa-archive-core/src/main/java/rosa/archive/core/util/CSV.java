@@ -106,7 +106,7 @@ public class CSV {
      *          reader
      * @return
      *          2D String array holding the CSV cell data
-     * @throws IOException
+     * @throws IOException if inaccessible
      */
     public static String[][] parseTable(Reader input) throws IOException {
         boolean quoted = false;
@@ -189,7 +189,7 @@ public class CSV {
      *          writer
      * @param table
      *          output data
-     * @throws IOException
+     * @throws IOException if inaccessible
      */
     public static void write(Writer out, String[]... table) throws IOException {
         for (String[] row : table) {

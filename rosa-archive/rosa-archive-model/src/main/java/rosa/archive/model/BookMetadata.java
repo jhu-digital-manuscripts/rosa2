@@ -29,6 +29,9 @@ public final class BookMetadata implements HasId, Serializable {
     private String material;
     private BookText[] texts;
 
+    /**
+     * Create empty BookMetadata.
+     */
     public BookMetadata() {
         yearStart = -1;
         yearEnd = -1;

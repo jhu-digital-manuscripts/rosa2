@@ -28,6 +28,9 @@ public class BookCollection implements HasId, Serializable {
     private ReferenceSheet locationsRef;
     private BookReferenceSheet booksRef;
 
+    /**
+     * Create an empty book collection. Is not persisted.
+     */
     public BookCollection() {
         books = new String[0];
         languages = new String[0];

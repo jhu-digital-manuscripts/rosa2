@@ -31,6 +31,9 @@ public class TranscriptionConverter {
 	private int nextlinenumber;
 	private String foliooverride;
 
+    /**
+     *
+     */
 	public TranscriptionConverter() {
 		this.warnings = new ArrayList<String>();
 		this.errors = new ArrayList<String>();
@@ -41,6 +44,11 @@ public class TranscriptionConverter {
 		this.foliooverride = folio;
 	}
 
+    /**
+     *
+     * @param out out
+     * @throws SAXException sax
+     */
 	public void startConversion(XMLWriter out) throws SAXException {
 		lastfolio = null;
 		lastcol = null;
@@ -54,21 +62,50 @@ public class TranscriptionConverter {
 		out.startElement("div");
 	}
 
+    /**
+     *
+     * @param infile
+     * @param charset
+     * @param out
+     * @throws IOException
+     * @throws SAXException
+     */
 	public void convert(File infile, String charset, XMLWriter out)
 			throws IOException, SAXException {
         convert(FileUtils.readFileToString(infile, charset), out);
 	}
 
+    /**
+     *
+     * @param out
+     * @throws SAXException
+     */
 	public void endConversion(XMLWriter out) throws SAXException {
 		out.endElement("div");
 		out.endDocument();
 	}
 
+    /**
+     *
+     * @param infile
+     * @param charset
+     * @param outfile
+     * @throws SAXException
+     * @throws IOException
+     */
 	public void convert(File infile, String charset, File outfile)
 			throws SAXException, IOException {
 		convert(infile, charset, new StreamResult(outfile));
 	}
 
+    /**
+     *
+     * @param infile
+     * @param charset
+     * @param result
+     * @throws SAXException
+     * @throws IOException
+     */
 	public void convert(File infile, String charset, StreamResult result)
 			throws SAXException, IOException {
 		convert(FileUtils.readFileToString(infile, charset), result);
@@ -81,7 +118,12 @@ public class TranscriptionConverter {
 	public List<String> getErrors() {
 		return errors;
 	}
-	
+
+    /**
+     *
+     * @param text
+     * @return
+     */
 	public List<List<Line>> parse(String text) {
 		// Hack for stupid text files
 		text = text.replaceAll("\r\n", "\n");
@@ -183,6 +225,13 @@ public class TranscriptionConverter {
 		return doc;
 	}
 
+    /**
+     *
+     * @param text
+     * @param result
+     * @throws SAXException
+     * @throws IOException
+     */
 	public void convert(String text, StreamResult result) throws SAXException,
 			IOException {
 
@@ -193,6 +242,13 @@ public class TranscriptionConverter {
 		endConversion(out);
 	}
 
+    /**
+     *
+     * @param text
+     * @param out
+     * @throws SAXException
+     * @throws IOException
+     */
 	public void convert(String text, XMLWriter out) throws SAXException,
 			IOException {
 
@@ -296,6 +352,11 @@ public class TranscriptionConverter {
 		}
 
 		// Remove tagged text
+
+        /**
+         *
+         * @param tag
+         */
 		public void strip(Tag tag) {
 			text = text.substring(0, tag.start) + text.substring(tag.end);
 			text = text.trim();
@@ -313,6 +374,12 @@ public class TranscriptionConverter {
 			return "[Line " + filelinenumber + "] " + text;
 		}
 
+        /**
+         *
+         * @param name
+         * @param anchorid
+         * @return
+         */
 		public Tag findAnchor(String name, String anchorid) {
 			for (Tag tag : tags) {
 				if (tag.name.equals(name) && tag.anchorid != null

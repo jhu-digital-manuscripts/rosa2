@@ -15,10 +15,13 @@ public class CharacterName implements Serializable {
 
     private String id;
     /**
-     * Map of language -> name
+     * Map of language to name
      */
     private Map<String, String> names;
 
+    /**
+     *
+     */
     public CharacterName() {
         this.names = new HashMap<>();
     }
@@ -31,6 +34,10 @@ public class CharacterName implements Serializable {
         this.id = id;
     }
 
+    /**
+     * @param language language code
+     * @return the name in the specified language
+     */
     public String getNameInLanguage(String language) {
         return names.get(language.toLowerCase());
     }
@@ -70,6 +77,10 @@ public class CharacterName implements Serializable {
         names.put(language, name);
     }
 
+    /**
+     * Add a name in the default language.
+     * @param name the name
+     */
     public void addName(String name) {
         addName(name, DEFAULT_LANGUAGE);
     }

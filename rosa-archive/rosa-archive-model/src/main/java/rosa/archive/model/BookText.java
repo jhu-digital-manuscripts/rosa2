@@ -19,6 +19,9 @@ public final class BookText implements Serializable {
     private String firstPage;
     private String lastPage;
 
+    /**
+     * Create empty BookText
+     */
     public BookText() {
         linesPerColumn = -1;
         columnsPerPage = -1;

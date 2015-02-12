@@ -16,6 +16,11 @@ public class CollectionDerivative extends AbstractDerivative {
 
     protected String collection;
 
+    /**
+     * @param collection the collection name
+     * @param report report to write to
+     * @param store store
+     */
     public CollectionDerivative(String collection, PrintStream report, Store store) {
         super(report, store);
         this.collection = collection;
@@ -46,7 +51,7 @@ public class CollectionDerivative extends AbstractDerivative {
      * </ul>
      *
      * @param force force update of all checksum values
-     * @throws IOException
+     * @throws IOException if collection is inaccessible
      */
     public void updateChecksum(boolean force) throws IOException {
         List<String> errors = new ArrayList<>();

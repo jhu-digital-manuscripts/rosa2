@@ -17,8 +17,10 @@ public interface Serializer<T> extends ArchiveConstants {
      * 
      * @param is
      *            input stream
+     * @param errors list of errors encountered while reading
      * @return object from persistent store
      * @throws java.io.IOException
+     *          if the input stream is inaccessible
      */
     T read(InputStream is, List<String> errors) throws IOException;
 
@@ -30,6 +32,7 @@ public interface Serializer<T> extends ArchiveConstants {
      * @param out
      *            output stream
      * @throws java.io.IOException
+     *          if the output stream is inaccessible
      */
     void write(T object, OutputStream out) throws IOException;
 

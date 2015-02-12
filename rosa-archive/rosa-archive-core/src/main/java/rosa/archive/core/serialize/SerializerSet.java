@@ -13,6 +13,9 @@ import com.google.inject.Inject;
 public class SerializerSet {
     private Map<Class<?>, Serializer<?>> map;
 
+    /**
+     * @param serializers set of serializers
+     */
     @Inject
     public SerializerSet(Set<Serializer<?>> serializers) {
         this.map = new HashMap<Class<?>, Serializer<?>>();
@@ -23,7 +26,8 @@ public class SerializerSet {
     }
     
     /**
-     * @param type
+     * @param type type of serializer to get
+     * @param <T> type
      * @return Serializer for type or null if it does not exist
      */
     @SuppressWarnings("unchecked")

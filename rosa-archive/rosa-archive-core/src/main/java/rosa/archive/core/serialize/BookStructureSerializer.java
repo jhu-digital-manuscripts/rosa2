@@ -25,6 +25,7 @@ import rosa.archive.model.redtag.StructurePageSide;
  * @see rosa.archive.model.BookStructure
  */
 public class BookStructureSerializer implements Serializer<BookStructure> {
+    // Too complex
     @Override
     public BookStructure read(InputStream is, List<String> errors) throws IOException {
         BookStructure structure = new BookStructure();

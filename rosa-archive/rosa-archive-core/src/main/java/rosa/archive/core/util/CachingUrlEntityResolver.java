@@ -11,12 +11,25 @@ import java.net.URL;
 import java.net.URLDecoder;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * An EntityResolver that can be used with an XML parser. This EntityResolver
+ * will cache external calls for entities, such as DTDs or Schema in memory.
+ * When a request for an entity reaches this entity resolver, it is the
+ * request is immediately filled if the requested URL is already present in
+ * cache. If it is not present in cache, it first checks a known location in
+ * local storage. If found here, it will be cached in memory. Finally, if these
+ * two locations do not have the requested URL, an call will be made over the
+ * network. The result will be cached for future use.
+ */
 public class CachingUrlEntityResolver implements EntityResolver {
     private static final String ENCODING = "UTF-8";
     private static final int CACHE_MAX_SIZE = 1000;
 
     private ConcurrentHashMap<String, String> entityCache;
 
+    /**
+     * Initialize the cache.
+     */
     public CachingUrlEntityResolver() {
         this.entityCache = new ConcurrentHashMap<>();
     }

@@ -21,6 +21,9 @@ public class BookImageComparator implements Comparator<BookImage> {
 
     private BookImageComparator() {}
 
+    /**
+     * @return the instance of this comparator
+     */
     public static BookImageComparator instance() {
         if (instance == null) {
             instance = new BookImageComparator();

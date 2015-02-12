@@ -13,10 +13,21 @@ public class BookImage implements Serializable {
     private int height;
     private boolean isMissing;
 
+    /**
+     * Create an empty BookImage
+     */
     public BookImage() {
         this(null, -1, -1, true);
     }
 
+    /**
+     * Create a BookImage with parameters.
+     *
+     * @param id ID
+     * @param width width in pixels
+     * @param height height in pixels
+     * @param isMissing is this image missing from the archive?
+     */
     public BookImage(String id, int width, int height, boolean isMissing) {
         this.id = id;
         this.width = width;
@@ -32,6 +43,10 @@ public class BookImage implements Serializable {
         this.id = id;
     }
 
+    /**
+     * TODO can be abstracted
+     * @return the page this image is associated with
+     */
     public String getPage() {
         String[] parts = id.split("\\.");
         StringBuilder sb = new StringBuilder();

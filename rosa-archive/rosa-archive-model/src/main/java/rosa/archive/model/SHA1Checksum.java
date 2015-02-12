@@ -15,10 +15,13 @@ public class SHA1Checksum implements HasId, Serializable {
 
     private String id;
     /**
-     * Archive item ID -> checksum
+     * Archive item ID mapped to checksum value
      */
     private Map<String, String> checksums;
 
+    /**
+     * Create empty checksum mapping
+     */
     public SHA1Checksum() {
         this.checksums = new HashMap<>();
     }

@@ -221,6 +221,7 @@
                 <version>${mvn.javadoc.version}</version>
                 <configuration>
                     <!-- Default configuration for all reports -->
+                    <excludePackageNames>rosa.archive.core.util</excludePackageNames>
                 </configuration>
                 <executions>
                     <execution>

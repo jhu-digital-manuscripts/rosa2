@@ -64,6 +64,12 @@ public class StoreImpl implements Store, ArchiveConstants {
     private final BookCollectionChecker collectionChecker;
     private final BookChecker bookChecker;
 
+    /**
+     * @param serializers object containing all required serializers
+     * @param bookChecker object that knows how to validate the contents of a book
+     * @param collectionChecker knows how to validate contents of a book collection
+     * @param base byte stream group representing the base of the archive
+     */
     @Inject
     public StoreImpl(SerializerSet serializers, BookChecker bookChecker, BookCollectionChecker collectionChecker,
             ByteStreamGroup base) {
@@ -970,7 +976,7 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @param errors
      *            list of errors found while calculating checksums
      * @return if checksums were updated and written successfully
-     * @throws IOException
+     * @throws IOException if a byte stream or byte stream group does not exist as expected
      */
     protected boolean updateChecksum(SHA1Checksum checksums, ByteStreamGroup bsg, boolean force, List<String> errors)
             throws IOException {
@@ -1016,6 +1022,18 @@ public class StoreImpl implements Store, ArchiveConstants {
         return success && writeItem(checksums, bsg, SHA1Checksum.class, errors);
     }
 
+    /**
+     * Write an archive model object to the archive, through the ByteStreamGroup that contains it.
+     * Items that are NULL will not be written. If an object uses a byte stream ID that already
+     * exists in the archive, the new object will overwrite it.
+     *
+     * @param item item to write to archive
+     * @param bsg the byte stream group that will hold the item
+     * @param type the archive model object type
+     * @param errors list of errors encountered while writing object
+     * @param <T> type
+     * @return true if write succeeded, false otherwise
+     */
     protected <T extends HasId> boolean writeItem(T item, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
         // No item to write
         if (item == null) {
@@ -1032,6 +1050,16 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
     }
 
+    /**
+     *
+     *
+     * @param name name of the item to load
+     * @param bsg byte stream group containing this item
+     * @param type archive model object type
+     * @param errors list of errors encountered while loading
+     * @param <T> type
+     * @return the item as an archive model object
+     */
     protected <T extends HasId> T loadItem(String name, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
         // The file does not exist
         if (!bsg.hasByteStream(name)) {

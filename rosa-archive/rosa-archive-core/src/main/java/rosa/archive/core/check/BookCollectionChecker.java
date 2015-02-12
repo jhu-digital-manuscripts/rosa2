@@ -15,11 +15,23 @@ import com.google.inject.Inject;
  */
 public class BookCollectionChecker extends AbstractArchiveChecker {
 
+    /**
+     * @param serializers all required serializers
+     */
     @Inject
     public BookCollectionChecker(SerializerSet serializers) {
         super(serializers);
     }
 
+    /**
+     *
+     * @param collection book collection to check
+     * @param bsg byte stream group of the collection
+     * @param checkBits validate the checksum values?
+     * @param errors list of errors
+     * @param warnings list of warnings
+     * @return TRUE if the collection validates
+     */
     public boolean checkContent(BookCollection collection, ByteStreamGroup bsg, boolean checkBits,
                                 List<String> errors, List<String> warnings) {
 

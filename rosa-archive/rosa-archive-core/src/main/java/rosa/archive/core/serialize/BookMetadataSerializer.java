@@ -195,17 +195,9 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
     }
 
     /**
-     * <note type="
-     * 
-     * @param type
-     *            ">
-     * @param text
-     *            </note> &lt;note type="
-     * @param type
-     *            "&gt;
-     * @param text
-     *            &lt;/note&gt;
-     * 
+     * Create a new &lt;note&gt; tag, with a 'type' attribute. The text
+     * content of this new tag is set to 'text'.
+     *
      * @param type
      *            type attribute
      * @param text
@@ -225,26 +217,19 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
 
     /**
      * Get the text value of the first element encountered with the specified
-     * name. If no tags exist within the base element (
-     * 
-     * @param el
-     *            ) with the name
-     * @param name
-     *            , then all <code>&lt;note&gt;</code> tags are searched. A
-     *            <code>&lt;note&gt;</code> tag is determined to match if
-     * @param name
-     *            matches the 'type' attribute.
-     * 
-     *            If both of these searches fails to find any matches, a value
-     *            of NULL is returned.
-     * 
-     *            Example: method call: .firstElementValue(someElement,
-     *            "commonName");
-     * 
-     *            If no <code>&lt;commonName&gt;</code> tags exist within
-     *            <em>someElement</em>, then this method will search for
-     *            <code>&lt;note type="commonName"&gt;</code>. The text content
-     *            of this tag will be returned if it is found.
+     * name. If no tags exist within the base element with the specified name,
+     * then all <code>&lt;note&gt;</code> tags are searched. A
+     * <code>&lt;note&gt;</code> tag is determined to match if 'name' matches
+     * the 'type' attribute.
+     *
+     * If both of these searches fails to find any matches, a value of NULL is
+     * returned.
+     *
+     * Example: method call: .firstElementValue(someElement, "commonName");
+     *
+     * If no <code>&lt;commonName&gt;</code> tags exist within <em>someElement</em>,
+     * then this method will search for <code>&lt;note type="commonName"&gt;</code>.
+     * The text content of this tag will be returned if it is found.
      * 
      * @param el
      *            search inside this element

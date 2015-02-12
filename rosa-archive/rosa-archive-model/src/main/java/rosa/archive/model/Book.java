@@ -49,6 +49,9 @@ public class Book implements HasId, Serializable {
 
     private List<AnnotatedPage> annotatedPages;
 
+    /**
+     * Create an empty Book. Not persisted.
+     */
     public Book() {
         this.permissions = new HashMap<>();
         this.metadataMap = new HashMap<>();
@@ -89,6 +92,12 @@ public class Book implements HasId, Serializable {
         this.cropInfo = cropInfo;
     }
 
+    /**
+     * Get book metadata in a particular language.
+     *
+     * @param language language code
+     * @return the book metadata
+     */
     public BookMetadata getBookMetadata(String language) {
         if (multilangMetadata != null) {
             BookMetadata metadata = new BookMetadata();
@@ -120,6 +129,12 @@ public class Book implements HasId, Serializable {
         return metadataMap.get(language);
     }
 
+    /**
+     * Add book metadata in a specific language.
+     *
+     * @param metadata metadata to add
+     * @param language language code
+     */
     public void addBookMetadata(BookMetadata metadata, String language) {
         metadataMap.put(language, metadata);
     }
@@ -182,10 +197,22 @@ public class Book implements HasId, Serializable {
         this.automaticNarrativeTagging = automaticNarrativeTagging;
     }
 
+    /**
+     * Add permission statement in a particular language.
+     *
+     * @param permission permission
+     * @param language langauge code
+     */
     public void addPermission(Permission permission, String language) {
         permissions.put(language, permission);
     }
 
+    /**
+     * Get the permission statement in a particular language.
+     *
+     * @param language language code
+     * @return the permission statement
+     */
     public Permission getPermission(String language) {
         return permissions.get(language);
     }
@@ -212,6 +239,12 @@ public class Book implements HasId, Serializable {
         return annotatedPages;
     }
 
+    /**
+     * Get AoR transcriptions for a particular page.
+     *
+     * @param page the page
+     * @return AoR transcription
+     */
     public AnnotatedPage getAnnotationPage(String page) {
         for (AnnotatedPage ap : annotatedPages) {
             if (ap.getId().contains(page)) {

@@ -12,12 +12,22 @@ import java.net.URL;
 import java.net.URLDecoder;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * An instance of LSResourceResolver to be used while validating XML
+ * against a schema. This resource resolver does not cache the schema,
+ * instead it caches any other external calls, such as DTDs. A cache hit
+ * will return immediately. If not in cache, local storage will be
+ * checked, or a network call will be made if necessary.
+ */
 public class CachingUrlLSResourceResolver implements LSResourceResolver {
     private static final String ENCODING = "UTF-8";
     private static final int CACHE_MAX_SIZE = 1000;
 
     private ConcurrentHashMap<String, String> resourceCache;
 
+    /**
+     * Initialize the cache.
+     */
     public CachingUrlLSResourceResolver() {
         this.resourceCache = new ConcurrentHashMap<>();
     }
