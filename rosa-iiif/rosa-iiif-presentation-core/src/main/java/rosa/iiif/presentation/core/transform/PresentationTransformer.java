@@ -88,6 +88,15 @@ public class PresentationTransformer implements IIIFNames {
         return buildManifest(collection, book);
     }
 
+    /**
+     * Build a sequence from data in a book and the collection that contains it,
+     * given the sequence's ID
+     *
+     * @param collection book collection holding the book
+     * @param book book
+     * @param sequenceId id of the sequence to build
+     * @return a IIIF sequence
+     */
     public Sequence sequence(BookCollection collection, Book book, String sequenceId) {
         return buildSequence(collection, book, sequenceId, book.getImages());
     }
@@ -109,6 +118,16 @@ public class PresentationTransformer implements IIIFNames {
         return null;
     }
 
+    /**
+     * Build an annotation list from data in a book and the collection that contains
+     * it, given the page associated with the list, and the type of data in the list.
+     *
+     * @param collection book collection
+     * @param book book
+     * @param page page associated with the list
+     * @param listType type of data in the list
+     * @return a IIIF annotation list
+     */
     public AnnotationList annotationList(BookCollection collection, Book book, String page, String listType) {
         Canvas canvas = canvas(collection, book, page);
         AnnotatedPage aPage = book.getAnnotationPage(page);
@@ -202,6 +221,16 @@ public class PresentationTransformer implements IIIFNames {
      // TODO Better error handling in class
     
     // Range name is  RANGE_TYPE "." RANGE_ID
+
+    /**
+     * Build a range specified by name from data in a book and the
+     * collection that contains it.
+     *
+     * @param col book collection
+     * @param book book
+     * @param name name of the range
+     * @return the IIIF range
+     */
     public Range buildRange(BookCollection col, Book book, String name) {
         String[] parts = name.split("\\.");
         
@@ -223,6 +252,15 @@ public class PresentationTransformer implements IIIFNames {
         }
     }
 
+    /**
+     * Build a layer specified by its name from data in a book and the collection
+     * that contains it.
+     *
+     * @param collection book collection
+     * @param book book
+     * @param name name of the layer
+     * @return a IIIF layer
+     */
     public Layer layer(BookCollection collection, Book book, String name) {
         Layer layer = new Layer();
 
@@ -255,7 +293,7 @@ public class PresentationTransformer implements IIIFNames {
         Range result = new Range();
 
         result.setId(constructRangeURI(col, book, IMAGE_RANGE_TYPE, range_id));
-        
+
         if (range_id.equals(TOP_RANGE_ID)) {
             result.setViewingHint(ViewingHint.TOP);
             result.setLabel(new TextValue("Image Type", "en"));
@@ -336,9 +374,8 @@ public class PresentationTransformer implements IIIFNames {
     }
     
     // TODO Put this image name stuff somewhere else
-    
 
-    public BookImage guessImage(Book book, String frag) {
+    private BookImage guessImage(Book book, String frag) {
             frag = frag.trim();
 
             if (frag.matches("\\d+")) {
@@ -816,6 +853,13 @@ public class PresentationTransformer implements IIIFNames {
         return new PresentationRequest(presentationId(collection, book), name, type);
     }
 
+    /**
+     * Transform a BookCollection object in the archive to a IIIF Collection
+     * object.
+     *
+     * @param col the archive BookCollection
+     * @return a IIIF collection
+     */
     public Collection transform(BookCollection col) {
         Collection result = new Collection();
 
@@ -837,6 +881,14 @@ public class PresentationTransformer implements IIIFNames {
         return result;
     }
 
+    /**
+     * Transform a list of book collections in the archive to a single IIIF
+     * collection object. This IIIF collection will represent a 'top' level
+     * collection.
+     *
+     * @param collections list of archive book collections
+     * @return a IIIF collection
+     */
     public Collection transform(List<BookCollection> collections) {
         Collection result = new Collection();
 
@@ -951,6 +1003,9 @@ public class PresentationTransformer implements IIIFNames {
             CharacterNames names = collection.getCharacterNames();
             IllustrationTitles titles = collection.getIllustrationTitles();
 
+            // ----- TODO abstract out this logic ------------------------------
+            // ----- Logic for resolving IDs against collection data should ----
+            // ----- be handled somewhere else. Archive core? ------------------
             // Resolve character name IDs (should be done in archive layer)
             StringBuilder sb_names = new StringBuilder();
             for (String name_id : ill.getCharacters()) {
@@ -976,6 +1031,7 @@ public class PresentationTransformer implements IIIFNames {
                     sb_titles.append(' ');
                 }
             }
+            // -----------------------------------------------------------------
 
             String text = "<p><b>Illustration</b><br/>" +
                     (ill.getTitles() == null || ill.getTitles().length == 0 ?

@@ -37,6 +37,9 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
     private PresentationTransformer transformer;
 
+    /**
+     * Set up a new PresentationTransformer with each test.
+     */
     @Before
     public void setup() {
         Map<String, String> idMap = new HashMap<>();
@@ -50,16 +53,28 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         );
     }
 
+    /**
+     * Generate sequence from LudwigXV7 and check validity.
+     * @throws IOException if collection and/or book not found
+     */
     @Test
     public void sequenceLudwigXV7Test() throws IOException {
         checkSequence(transformer.sequence(loadValidCollection(), loadValidLudwigXV7(), "reading-order"));
     }
 
+    /**
+     * Generate canvas from LudwigXV7 and check validity.
+     * @throws IOException if collection or book is not found
+     */
     @Test
     public void canvasLudwigXV7Test() throws IOException {
         checkACanvas(transformer.canvas(loadValidCollection(), loadValidLudwigXV7(), "001v"));
     }
 
+    /**
+     * Generate a manifest for LudwigXV7 and check validity.
+     * @throws IOException if collection or book is not found
+     */
     @Test
     public void manifestLudwigXV7Test() throws IOException {
         Manifest manifest = transformer.manifest(loadValidCollection(), loadValidLudwigXV7());
@@ -74,11 +89,19 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         checkSequence(manifest.getDefaultSequence());
     }
 
+    /**
+     * Generate annotation list from LudwigXV7 and check validity.
+     * @throws IOException if collection or book is not found
+     */
     @Test
     public void annotationListLudwigXV7Test() throws IOException {
         checkAnnotationList(transformer.annotationList(loadValidCollection(), loadValidLudwigXV7(), "002r", "all"));
     }
 
+    /**
+     * Generate annotation lists from FolgersHa2 and check validity.
+     * @throws IOException if collection or book is not found.
+     */
     @Test
     public void annotationListFolgersHa2Test() throws IOException {
         checkAnnotationList(transformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "001r", "all"));
@@ -87,8 +110,12 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         checkAnnotationList(transformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "001r", "underline"));
     }
 
+    /**
+     * Generate layers from FolgersHa2 and check validity.
+     * @throws IOException if collection or book is not found
+     */
     @Test
-    public void layerFolgersHa2002vTest() throws IOException {
+    public void layerFolgersHa2Test() throws IOException {
         checkLayer(transformer.layer(loadValidCollection(), loadValidFolgersHa2(), "all"));
         checkLayer(transformer.layer(loadValidCollection(), loadValidFolgersHa2(), "underline"));
         checkLayer(transformer.layer(loadValidCollection(), loadValidFolgersHa2(), "marginalia"));
