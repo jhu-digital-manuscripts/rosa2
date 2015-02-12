@@ -9,6 +9,7 @@ import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Sequence;
@@ -86,6 +87,13 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         checkAnnotationList(transformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "001r", "underline"));
     }
 
+    @Test
+    public void layerFolgersHa2002vTest() throws IOException {
+        checkLayer(transformer.layer(loadValidCollection(), loadValidFolgersHa2(), "all"));
+        checkLayer(transformer.layer(loadValidCollection(), loadValidFolgersHa2(), "underline"));
+        checkLayer(transformer.layer(loadValidCollection(), loadValidFolgersHa2(), "marginalia"));
+    }
+
     private void checkSequence(Sequence seq) {
         checkId(seq.getId());
         assertNotNull("List of canvases is missing from sequence.", seq.getCanvases());
@@ -122,9 +130,24 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         checkId(list.getId());
         checkTextValue(list.getLabel());
         assertEquals("Unexpected object type found.", IIIFNames.SC_ANNOTATION_LIST, list.getType());
+        assertNotNull("'within' property missing.", list.getWithin());
+        assertFalse("'within' property empty.", list.getWithin().isEmpty());
 
         for (Annotation ann : list) {
             checkAnnotation(ann);
+        }
+    }
+
+    private void checkLayer(Layer layer) {
+        assertNotNull("Layer does not exist.", layer);
+
+        checkId(layer.getId());
+        checkTextValue(layer.getLabel());
+        assertNotNull("Layer 'otherContents' is missing.", layer.getOtherContent());
+        assertFalse("Layer 'otherContent' is empty.", layer.getOtherContent().isEmpty());
+
+        for (String content : layer.getOtherContent()) {
+            checkId(content);
         }
     }
 

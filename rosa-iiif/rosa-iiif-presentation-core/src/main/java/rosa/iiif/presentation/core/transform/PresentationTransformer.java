@@ -223,6 +223,27 @@ public class PresentationTransformer implements IIIFNames {
         }
     }
 
+    public Layer layer(BookCollection collection, Book book, String name) {
+        Layer layer = new Layer();
+
+        layer.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.LAYER));
+        layer.setType(SC_LAYER);
+        layer.setLabel(name, "en");
+
+        if (AnnotationListType.getType(name) != null) {
+            List<String> otherContent = new ArrayList<>();
+            for (BookImage image : book.getImages()) {
+                String id = image.getId();
+
+                otherContent.add(urlId(collection.getId(), book.getId(), annotationListName(id, name),
+                        PresentationRequestType.LAYER));
+            }
+            layer.setOtherContent(otherContent);
+        }
+
+        return layer;
+    }
+
     // TODO
     private Range buildTextRange(BookCollection col, Book book, String range_id) {
         return null;
@@ -838,17 +859,6 @@ public class PresentationTransformer implements IIIFNames {
         return result;
     }
 
-    private Layer layer(BookCollection collection, Book book, String name) {
-        Layer layer = new Layer();
-
-        layer.setType(SC_LAYER);
-        layer.setLabel("Layer for " + name, "en");
-
-
-
-        return null;
-    }
-
     private AnnotationList annotationList(BookCollection collection, Book book, Canvas canvas, AnnotatedPage aPage,
                                           AnnotationListType listType) {
         AnnotationList list = new AnnotationList();
@@ -860,6 +870,8 @@ public class PresentationTransformer implements IIIFNames {
         list.setDescription("Annotation list for " + listType.toString().toLowerCase() + " on page "
                 + canvas.getLabel("en"), "en");
         list.setLabel(label, "en");
+        list.setWithin(urlId(collection.getId(), book.getId(), listType.toString().toLowerCase(),
+                PresentationRequestType.LAYER));
 
         List<Annotation> annotations = list.getAnnotations();
 
@@ -1013,6 +1025,7 @@ public class PresentationTransformer implements IIIFNames {
         list.setType(SC_ANNOTATION_LIST);
         list.setDescription("Annotation list for " + type + " on page " + canvas.getLabel("en"), "en");
         list.setLabel(name, "en");
+        list.setWithin(urlId(collection.getId(), book.getId(), "all", PresentationRequestType.LAYER));
 
         return list;
     }
