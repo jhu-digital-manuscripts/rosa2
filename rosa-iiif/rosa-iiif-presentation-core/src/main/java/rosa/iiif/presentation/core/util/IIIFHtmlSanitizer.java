@@ -6,16 +6,30 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-// TODO doesn't actually work...see test
 public class IIIFHtmlSanitizer {
     private Set<String> allowedTags;
     private Map<String, Set<String>> allowedAttributes;
+
+    private static final String HTML_ENTITY_REGEX = "[a-z]+|#[0-9]+|#x[0-9a-fA-F]+";
 
     private IIIFHtmlSanitizer() {
         allowedTags = new HashSet<>();
         allowedAttributes = new HashMap<>();
     }
 
+    /**
+     * @return a fresh IIIFHtmlSanitizer that, by default, recognizes no
+     *      tags or attributes
+     */
+    public static IIIFHtmlSanitizer newSanitizer() {
+        return new IIIFHtmlSanitizer();
+    }
+
+    /**
+     * @return
+     *          a new IIIFHtmlSanitizer that recognizes all tags and attributes
+     *          allowed under the IIIF Presentation API.
+     */
     public static IIIFHtmlSanitizer defaultSanitizer() {
         return new IIIFHtmlSanitizer()
                 .addTags("a", "b", "br", "i", "img", "p", "span")
@@ -23,6 +37,13 @@ public class IIIFHtmlSanitizer {
                 .addAttributes("img", "src", "alt");
     }
 
+    /**
+     * Sanitize an input string by keeping only those HTML tags and attributes
+     * specified, escaping all others
+     *
+     * @param html input string containing arbitrary HTML
+     * @return cleaned HTML
+     */
     public String sanitize(String html) {
         if (html == null) {
             throw new IllegalArgumentException("HTML cannot be NULL");
@@ -30,6 +51,13 @@ public class IIIFHtmlSanitizer {
         return simpleSanitize(html);
     }
 
+    /**
+     * Add one or more tags to this IIIFHtmlSanitizer to be recognized as
+     * valid tags. These tags will be allowed any sanitized output.
+     *
+     * @param tags one or more tags to be recognized as valid
+     * @return the updated IIIFHtmlSanitizer
+     */
     public IIIFHtmlSanitizer addTags(String ... tags) {
         if (tags == null || tags.length == 0) {
             throw new IllegalArgumentException("No tags specified.");
@@ -38,6 +66,15 @@ public class IIIFHtmlSanitizer {
         return this;
     }
 
+    /**
+     * Add one or more attributes associated with an HTML tag to be seen as
+     * valid. Any attribute not added to this sanitizer will be seen as
+     * invalid and will be removed in sanitized output.
+     *
+     * @param tag HTML tag
+     * @param attributes one or more attributes
+     * @return the updated IIIFHtmlSanitizer
+     */
     public IIIFHtmlSanitizer addAttributes(String tag, String ... attributes) {
         if (tag == null || attributes == null) {
             throw new IllegalArgumentException("Cannot have NULL tag or attributes.");
@@ -78,7 +115,7 @@ public class IIIFHtmlSanitizer {
              *  beginning.
              */
                 firstSegment = false;
-//                sanitized.append(SafeHtmlUtils.htmlEscapeAllowEntities(segment)); TODO
+                sanitized.append(htmlEscapeAllowEntities(segment));
                 continue;
             }
 
@@ -133,12 +170,10 @@ public class IIIFHtmlSanitizer {
                 sanitized.append('>');
 
                 // append the rest of the segment, escaping it
-//                sanitized.append(SafeHtmlUtils.htmlEscapeAllowEntities(
-//                        segment.substring(tagEnd + 1))); TODO
+                sanitized.append(htmlEscapeAllowEntities(segment.substring(tagEnd + 1)));
             } else {
                 // just escape the whole segment
-//                sanitized.append("&lt;").append(
-//                        SafeHtmlUtils.htmlEscapeAllowEntities(segment)); TODO
+                sanitized.append("&lt;").append(htmlEscapeAllowEntities(segment));
             }
         }
         return sanitized.toString();
@@ -158,7 +193,7 @@ public class IIIFHtmlSanitizer {
      * @param attr attribute string
      * @return map of attributes
      */
-    protected Map<String, String> getAttributes(String attr) {
+    private Map<String, String> getAttributes(String attr) {
         if (attr == null) {
             return null;
         }
@@ -188,8 +223,61 @@ public class IIIFHtmlSanitizer {
         return attrs;
     }
 
-    protected boolean isAllowed(String tag, String attribute) {
+    private boolean isAllowed(String tag, String attribute) {
         return allowedAttributes.containsKey(tag) && allowedAttributes.get(tag).contains(attribute);
+    }
+
+    private String htmlEscapeAllowEntities(String text) {
+        StringBuilder escaped = new StringBuilder();
+
+        boolean firstSegment = true;
+        for (String segment : text.split("&", -1)) {
+            if (firstSegment) {
+        /*
+         * The first segment is never part of an entity reference, so we always
+         * escape it.
+         * Note that if the input starts with an ampersand, we will get an empty
+         * segment before that.
+         */
+                firstSegment = false;
+
+                escaped.append(htmlEscape(segment));
+                continue;
+            }
+
+            int entityEnd = segment.indexOf(';');
+            if (entityEnd > 0 && segment.substring(0, entityEnd).matches(HTML_ENTITY_REGEX)) {
+                // Append the entity without escaping.
+                escaped.append("&").append(segment.substring(0, entityEnd + 1));
+                // Append the rest of the segment, escaped.
+                escaped.append(htmlEscape(segment.substring(entityEnd + 1)));
+            } else {
+                // The segment did not start with an entity reference, so escape the
+                // whole segment.
+                escaped.append("&amp;").append(htmlEscape(segment));
+            }
+        }
+
+        return escaped.toString();
+    }
+
+    private String htmlEscape(String s) {
+        if (s.contains("&")) {
+            s = s.replaceAll("&", "&amp;");
+        }
+        if (s.contains("<")) {
+            s = s.replaceAll("<", "&lt;");
+        }
+        if (s.contains(">")) {
+            s = s.replaceAll(">", "&gt;");
+        }
+        if (s.contains("\"")) {
+            s = s.replaceAll("\"", "&quot;");
+        }
+        if (s.contains("'")) {
+            s = s.replaceAll("'", "&#39;");
+        }
+        return s;
     }
 
 }
