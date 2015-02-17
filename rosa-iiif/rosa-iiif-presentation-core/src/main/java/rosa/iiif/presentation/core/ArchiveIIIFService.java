@@ -108,7 +108,7 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
         
-        Range range = transformer.buildRange(col, book, name);
+        Range range = transformer.range(col, book, name);
         
         if (range == null) {
             return false;
@@ -247,13 +247,13 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
-        Collection result = lookupCache(name, Collection.class); 
+        Collection result = lookupCache(name, Collection.class);
 
         if (result == null) {
-            result = transformer.transform(col);
+            result = transformer.collection(col);
             updateCache(name, result);
         }
-        
+
         serializer.write(result, os);
         
         return true;
@@ -276,7 +276,7 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
-        serializer.write(transformer.transform(collections), os);
+        serializer.write(transformer.topCollection(collections), os);
 
         return true;
     }
@@ -308,8 +308,7 @@ public class ArchiveIIIFService implements IIIFService {
             return false;
         }
 
-        AnnotationList list = transformer.annotationList(collection, book, get_annotation_list_page(name),
-                get_annotation_list_id(name));
+        AnnotationList list = transformer.annotationList(collection, book, name);
 
         if (list == null) {
             return false;

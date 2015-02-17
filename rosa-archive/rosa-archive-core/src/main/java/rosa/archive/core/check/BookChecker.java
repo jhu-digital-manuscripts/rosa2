@@ -102,15 +102,9 @@ public class BookChecker extends AbstractArchiveChecker {
         //   cropInfo
         check(book.getCropInfo(), book, bsg, errors, warnings);
 
-        boolean mustCheck = true;
         for (String lang : collection.getAllSupportedLanguages()) {
             //   bookMetadata
-            if (book.getMultilangMetadata() == null) {
-                check(book.getBookMetadata(lang), book, bsg, errors, warnings);
-            } else if (mustCheck) {
-                check(book.getMultilangMetadata(), book, bsg, errors, warnings);
-                mustCheck = false;
-            }
+            check(book.getBookMetadata(lang), book, bsg, errors, warnings);
             //   permissions
             check(book.getPermission(lang), book, bsg, errors, warnings);
         }
@@ -278,19 +272,19 @@ public class BookChecker extends AbstractArchiveChecker {
             errors.add("Metadata origin not set. [" + metadata.getId() + "]");
         }
         if (metadata.getNumberOfIllustrations() == -1) {
-            errors.add("Metadata number of illustrations not set. [" + metadata.getId() + "]");
+            warnings.add("Metadata number of illustrations not set. [" + metadata.getId() + "]");
         }
         if (metadata.getNumberOfPages() == -1) {
-            errors.add("Metadata number of pages/folios not set. [" + metadata.getId() + "]");
+            warnings.add("Metadata number of pages/folios not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getType())) {
-            errors.add("Metadata type not set. [" + metadata.getId() + "]");
+            warnings.add("Metadata type not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getCommonName())) {
             errors.add("Metadata common name not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getMaterial())) {
-            errors.add("Metadata material not set. [" + metadata.getId() + "]");
+            warnings.add("Metadata material not set. [" + metadata.getId() + "]");
         }
         if (metadata.getTexts() == null) {
             errors.add("Metadata texts not set. [" + metadata.getId() + "]");
@@ -299,12 +293,12 @@ public class BookChecker extends AbstractArchiveChecker {
         } else {
             for (BookText text : metadata.getTexts()) {
                 if (StringUtils.isBlank(text.getFirstPage())) {
-                    errors.add("Metadata text first page not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata text first page not set. [" + metadata.getId() + ":" + text.getId() + "]");
                 } else if (!text.getFirstPage().matches(PAGE_PATTERN) && metadata.getType().equalsIgnoreCase(MANUSCRIPT)) {
                     errors.add("Page has bad format. [" + metadata.getId() + ":" + text.getFirstPage() + "]");
                 }
                 if (StringUtils.isBlank(text.getLastPage())) {
-                    errors.add("Metadata text last page not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata text last page not set. [" + metadata.getId() + ":" + text.getId() + "]");
                 } else if (!text.getLastPage().matches(PAGE_PATTERN) && metadata.getType().equalsIgnoreCase(MANUSCRIPT)) {
                     errors.add("Page has bad format. [" + metadata.getId() + ":" + text.getLastPage() + "]");
                 }
@@ -312,24 +306,24 @@ public class BookChecker extends AbstractArchiveChecker {
                     warnings.add("Metadata text title not set. [" + metadata.getId() + ":" + text.getId() + "]");
                 }
                 if (text.getNumberOfIllustrations() == -1) {
-                    errors.add("Metadata number of illustrations not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata number of illustrations not set. [" + metadata.getId() + ":" + text.getId() + "]");
                 } else if (text.getNumberOfIllustrations() > metadata.getNumberOfIllustrations()) {
                     errors.add("Number of illustrations in text [" + text.getNumberOfIllustrations()
                             + "] is greater than the number if illustrations in the manuscript ["
                             + metadata.getNumberOfIllustrations() + "] {" + metadata.getId() + ":" + text.getId() + "}");
                 }
                 if (text.getNumberOfPages() == -1) {
-                    errors.add("Metadata number of pages not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata number of pages not set. [" + metadata.getId() + ":" + text.getId() + "]");
                 } else if (text.getNumberOfPages() > metadata.getNumberOfPages()) {
                     errors.add("Number of pages in text [" + text.getNumberOfPages() + "] exceeds number " +
                             "of pages in the manuscript [" + metadata.getNumberOfPages() + "] {"
                             + metadata.getId() + ":" + text.getId() + "}");
                 }
                 if (text.getColumnsPerPage() == -1) {
-                    errors.add("Metadata columns per page not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata columns per page not set. [" + metadata.getId() + ":" + text.getId() + "]");
                 }
                 if (text.getLinesPerColumn() == -1) {
-                    errors.add("Metadata lines per column not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata lines per column not set. [" + metadata.getId() + ":" + text.getId() + "]");
                 }
             }
         }

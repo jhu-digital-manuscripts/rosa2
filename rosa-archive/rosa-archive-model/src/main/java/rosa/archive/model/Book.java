@@ -99,7 +99,7 @@ public class Book implements HasId, Serializable {
      * @return the book metadata
      */
     public BookMetadata getBookMetadata(String language) {
-        if (multilangMetadata != null) {
+        if (multilangMetadata != null && multilangMetadata.supportsLanguage(language)) {
             BookMetadata metadata = new BookMetadata();
 
             metadata.setId(multilangMetadata.getId());
@@ -256,10 +256,6 @@ public class Book implements HasId, Serializable {
 
     public void setAnnotatedPages(List<AnnotatedPage> annotatedPages) {
         this.annotatedPages = annotatedPages;
-    }
-
-    public MultilangMetadata getMultilangMetadata() {
-        return multilangMetadata;
     }
 
     public void setMultilangMetadata(MultilangMetadata multilangMetadata) {
