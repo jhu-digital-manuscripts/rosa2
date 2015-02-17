@@ -9,6 +9,7 @@ import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
+import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.Sequence;
@@ -47,6 +48,11 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
     @Override
     public Range range(BookCollection collection, Book book, String name) {
         return transformers.getTransformer(Range.class).transform(collection, book, name);
+    }
+
+    @Override
+    public Layer layer(BookCollection collection, Book book, String name) {
+        return transformers.getTransformer(Layer.class).transform(collection, book, name);
     }
 
     @Override

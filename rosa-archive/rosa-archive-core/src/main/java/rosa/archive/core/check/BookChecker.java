@@ -269,7 +269,7 @@ public class BookChecker extends AbstractArchiveChecker {
             errors.add("Metadata repository not set. [" + metadata.getId() + "]");
         }
         if (StringUtils.isBlank(metadata.getOrigin())) {
-            errors.add("Metadata origin not set. [" + metadata.getId() + "]");
+            warnings.add("Metadata origin not set. [" + metadata.getId() + "]");
         }
         if (metadata.getNumberOfIllustrations() == -1) {
             warnings.add("Metadata number of illustrations not set. [" + metadata.getId() + "]");

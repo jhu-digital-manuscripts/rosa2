@@ -10,6 +10,7 @@ import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
 import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
+import rosa.iiif.presentation.core.transform.impl.LayerTransformer;
 import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
@@ -74,6 +75,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         transformers.add(sequenceTransformer);
         transformers.add(new ManifestTransformer(presentationReqFormatter, parser, sequenceTransformer));
         transformers.add(new RangeTransformer(presentationReqFormatter));
+        transformers.add(new LayerTransformer(presentationReqFormatter));
 
         TransformerSet transformerSet = new TransformerSet(transformers);
 
@@ -148,9 +150,9 @@ public class PresentationTransformerTest extends BaseArchiveTest {
      */
     @Test
     public void layerFolgersHa2Test() throws IOException {
-        checkLayer(transformer.layer(loadValidCollection(), loadValidFolgersHa2(), "all"));
-        checkLayer(transformer.layer(loadValidCollection(), loadValidFolgersHa2(), "underline"));
-        checkLayer(transformer.layer(loadValidCollection(), loadValidFolgersHa2(), "marginalia"));
+        checkLayer(presentationTransformer.layer(loadValidCollection(), loadValidFolgersHa2(), "all"));
+        checkLayer(presentationTransformer.layer(loadValidCollection(), loadValidFolgersHa2(), "underline"));
+        checkLayer(presentationTransformer.layer(loadValidCollection(), loadValidFolgersHa2(), "marginalia"));
     }
 
     private void checkSequence(Sequence seq) {

@@ -26,6 +26,7 @@ import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
 import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
+import rosa.iiif.presentation.core.transform.impl.LayerTransformer;
 import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
@@ -59,6 +60,7 @@ public class IIIFServletModule extends ServletModule {
         transformers.addBinding().to(CanvasTransformer.class);
         transformers.addBinding().to(SequenceTransformer.class);
         transformers.addBinding().to(ManifestTransformer.class);
+        transformers.addBinding().to(LayerTransformer.class);
 
         bind(TransformerSet.class);
 
