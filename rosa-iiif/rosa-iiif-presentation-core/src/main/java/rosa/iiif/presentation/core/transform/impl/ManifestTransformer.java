@@ -1,7 +1,6 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
@@ -20,9 +19,8 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
     private final SequenceTransformer sequenceTransformer;
 
     @Inject
-    public ManifestTransformer(IIIFRequestFormatter presRequestFormatter, ArchiveNameParser nameParser,
-                               SequenceTransformer sequenceTransformer) {
-        super(presRequestFormatter, nameParser);
+    public ManifestTransformer(IIIFRequestFormatter presRequestFormatter, SequenceTransformer sequenceTransformer) {
+        super(presRequestFormatter);
         this.sequenceTransformer = sequenceTransformer;
     }
 

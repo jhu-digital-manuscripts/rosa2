@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 import rosa.archive.model.Illustration;
@@ -24,7 +25,7 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
 
     @Inject
     public RangeTransformer(IIIFRequestFormatter presRequestFormatter) {
-        super(presRequestFormatter, null);
+        super(presRequestFormatter);
     }
 
     @Override
@@ -117,12 +118,12 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
                 // If specific range, return canvases for specific BookText text_id
                 result.setLabel("Text Type: " + range_id, lang_code);
 
-                String start_page = nameParser.page(text.getFirstPage());
-                String end_page = nameParser.page(text.getLastPage());
+                String start_page = text.getFirstPage();
+                String end_page = text.getLastPage();
 
                 List<String> canvases = new ArrayList<>();
                 for (BookImage image : book.getImages()) {
-                    String this_page = nameParser.page(image.getName());
+                    String this_page = image.getName();
                     // If this_page lies within the range of pages of this BookText, add it to the range
                     if (this_page.compareToIgnoreCase(start_page) >= 0
                             && this_page.compareToIgnoreCase(end_page) <= 0) {
@@ -139,7 +140,6 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
         return result;
     }
 
-    // TODO refactor image id parsing
     private Range buildImageRange(BookCollection col, Book book, String range_id) {
         Range result = new Range();
 
@@ -163,27 +163,27 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
                 break;
             case IMAGE_RANGE_FRONTMATTER_ID:
                 result.setLabel(new TextValue("Front matter", "en"));
-                addCanvasUris(col, book, ImageType.FRONTMATTER, uris);
+                addCanvasUris(col, book, BookImageLocation.FRONT_MATTER, uris);
                 result.setCanvases(uris);
                 break;
             case IMAGE_RANGE_ENDMATTER_ID:
                 result.setLabel(new TextValue("End matter", "en"));
-                addCanvasUris(col, book, ImageType.ENDMATTER, uris);
+                addCanvasUris(col, book, BookImageLocation.END_MATTER, uris);
                 result.setCanvases(uris);
                 break;
             case IMAGE_RANGE_BINDING_ID:
                 result.setLabel(new TextValue("Binding", "en"));
-                addCanvasUris(col, book, ImageType.BINDING, uris);
+                addCanvasUris(col, book, BookImageLocation.BINDING, uris);
                 result.setCanvases(uris);
                 break;
             case IMAGE_RANGE_BODYMATTER_ID:
                 result.setLabel(new TextValue("Body matter", "en"));
-                addCanvasUris(col, book, ImageType.TEXT, uris);
+                addCanvasUris(col, book, BookImageLocation.BODY_MATTER, uris);
                 result.setCanvases(uris);
                 break;
             case IMAGE_RANGE_MISC_ID:
                 result.setLabel(new TextValue("Misc", "en"));
-                addCanvasUris(col, book, ImageType.MISC, uris);
+                addCanvasUris(col, book, BookImageLocation.MISC, uris);
                 result.setCanvases(uris);
                 break;
             default:
@@ -193,11 +193,11 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
         return result;
     }
 
-    private void addCanvasUris(BookCollection collection, Book book, ImageType targetType, List<String> uris) {
+    private void addCanvasUris(BookCollection collection, Book book, BookImageLocation targetType, List<String> uris) {
         for (BookImage image : book.getImages()) {
-//            if (nameParser.type(image) == targetType) {
-//                uris.add(urlId(collection.getId(), book.getId(), image.getName(), PresentationRequestType.CANVAS));
-//            } TODO
+            if (image.getLocation() == targetType) {
+                uris.add(urlId(collection.getId(), book.getId(), image.getName(), PresentationRequestType.CANVAS));
+            }
         }
     }
 
@@ -255,7 +255,7 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
             }
 
             List<String> canvases = new ArrayList<>();
-            canvases.add(urlId(col.getId(), book.getId(), nameParser.page(illus.getPage()), PresentationRequestType.CANVAS));
+            canvases.add(urlId(col.getId(), book.getId(), illus.getPage(), PresentationRequestType.CANVAS));
 
             result.setLabel(label, "en");
             result.setCanvases(canvases);

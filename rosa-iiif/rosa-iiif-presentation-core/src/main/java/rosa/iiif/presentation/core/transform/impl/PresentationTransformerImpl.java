@@ -1,7 +1,6 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
@@ -22,10 +21,9 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
 
     @Inject
     public PresentationTransformerImpl(IIIFRequestFormatter presRequestFormatter,
-                                       ArchiveNameParser nameParser,
                                        TransformerSet transformers,
                                        CollectionTransformer collectionTransformer) {
-        super(presRequestFormatter, nameParser);
+        super(presRequestFormatter);
         this.transformers = transformers;
         this.collectionTransformer = collectionTransformer;
     }

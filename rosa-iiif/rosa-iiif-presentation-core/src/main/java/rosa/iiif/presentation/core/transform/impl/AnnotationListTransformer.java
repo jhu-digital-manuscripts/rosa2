@@ -1,7 +1,6 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -32,9 +31,8 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     private static int annotation_counter = 0;
 
     @Inject
-    public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter,
-                                     ArchiveNameParser nameParser) {
-        super(presRequestFormatter, nameParser);
+    public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter) {
+        super(presRequestFormatter);
     }
 
     public AnnotationList transform(BookCollection collection, Book book, String name) {
@@ -178,7 +176,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
 
         List<Annotation> anns = new ArrayList<>();
         for (Illustration ill : book.getIllustrationTagging()) {
-            String illusPage = nameParser.page(ill.getPage());
+            String illusPage = ill.getPage();
             if (!illusPage.equals(page)) {
                 continue;
             }

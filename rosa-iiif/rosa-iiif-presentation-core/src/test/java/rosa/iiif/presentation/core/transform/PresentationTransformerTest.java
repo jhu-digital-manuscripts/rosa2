@@ -2,7 +2,6 @@ package rosa.iiif.presentation.core.transform;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
@@ -63,23 +62,22 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         rosa.iiif.image.core.IIIFRequestFormatter imageReqFormatter =
                 new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
         ImageIdMapper idMapper = new JhuFsiImageIdMapper(idMap);
-        ArchiveNameParser parser = new ArchiveNameParser();
 
-        CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, parser, idMapper);
-        CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter, parser);
-        SequenceTransformer sequenceTransformer = new SequenceTransformer(presentationReqFormatter, parser, canvasTransformer);
+        CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
+        CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter);
+        SequenceTransformer sequenceTransformer = new SequenceTransformer(presentationReqFormatter, canvasTransformer);
 
         Set<Transformer<?>> transformers = new HashSet<>();
-        transformers.add(new AnnotationListTransformer(presentationReqFormatter, parser));
+        transformers.add(new AnnotationListTransformer(presentationReqFormatter));
         transformers.add(canvasTransformer);
         transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(presentationReqFormatter, parser, sequenceTransformer));
+        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer));
         transformers.add(new RangeTransformer(presentationReqFormatter));
         transformers.add(new LayerTransformer(presentationReqFormatter));
 
         TransformerSet transformerSet = new TransformerSet(transformers);
 
-        presentationTransformer = new PresentationTransformerImpl(presentationReqFormatter, parser, transformerSet, collectionTransformer);
+        presentationTransformer = new PresentationTransformerImpl(presentationReqFormatter, transformerSet, collectionTransformer);
     }
 
     /**

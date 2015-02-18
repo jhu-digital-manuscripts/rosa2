@@ -1,12 +1,11 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.Illustration;
-import rosa.archive.model.ImageType;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
@@ -30,9 +29,8 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
     @Inject
     public CanvasTransformer(IIIFRequestFormatter presRequestFormatter,
                              rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
-                             ArchiveNameParser nameParser,
                              ImageIdMapper idMapper) {
-        super(presRequestFormatter, nameParser);
+        super(presRequestFormatter);
         this.idMapper = idMapper;
         this.imageRequestFormatter = imageRequestFormatter;
     }
@@ -76,9 +74,9 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         canvas.setLabel(image.getName(), "en");
 
         // Images of bindings or misc images will be displayed as individuals instead of openings
-//        if (nameParser.type(image) == ImageType.MISC || nameParser.type(image) == ImageType.BINDING) {
-//            canvas.setViewingHint(ViewingHint.NON_PAGED);
-//        } TODO
+        if (image.getLocation() == BookImageLocation.MISC || image.getLocation() == BookImageLocation.BINDING) {
+            canvas.setViewingHint(ViewingHint.NON_PAGED);
+        }
 
         // If the image is less than 1200 px in either dimension, force the dimensions
         // of the canvas to be double that of the image. TODO hack to prevent canvas dimensions from being ZERO
@@ -196,7 +194,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
 
         for (Illustration ill : book.getIllustrationTagging()) {
             // If one illustration is found for this page, there is at least 1 annotation
-            if (nameParser.page(ill.getPage()).equals(page)) {
+            if (ill.getPage().equals(page)) {
                 return true;
             }
         }

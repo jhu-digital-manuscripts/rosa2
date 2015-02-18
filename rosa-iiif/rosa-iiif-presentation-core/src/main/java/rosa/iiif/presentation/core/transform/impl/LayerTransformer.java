@@ -19,7 +19,7 @@ public class LayerTransformer extends BasePresentationTransformer implements Tra
 
     @Inject
     public LayerTransformer(IIIFRequestFormatter presRequestFormatter) {
-        super(presRequestFormatter, null);
+        super(presRequestFormatter);
     }
 
     @Override

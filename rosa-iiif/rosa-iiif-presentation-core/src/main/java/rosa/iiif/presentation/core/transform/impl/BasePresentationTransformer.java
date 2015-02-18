@@ -1,6 +1,5 @@
 package rosa.iiif.presentation.core.transform.impl;
 
-import rosa.archive.core.ArchiveNameParser;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -20,12 +19,9 @@ public abstract class BasePresentationTransformer implements IIIFNames {
     protected static final String TEXT_RANGE_TYPE = "text";
 
     protected IIIFRequestFormatter presRequestFormatter;
-    protected ArchiveNameParser nameParser;
 
-    public BasePresentationTransformer(IIIFRequestFormatter presRequestFormatter,
-                                       ArchiveNameParser nameParser) {
+    public BasePresentationTransformer(IIIFRequestFormatter presRequestFormatter) {
         this.presRequestFormatter = presRequestFormatter;
-        this.nameParser = nameParser;
     }
 
     protected String urlId(String collection, String book, String name, PresentationRequestType type) {
