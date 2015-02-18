@@ -2,14 +2,16 @@ package rosa.archive.core;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.model.ImageType;
+import rosa.archive.model.BookImageLocation;
+import rosa.archive.model.BookImageRole;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class ArchiveNameParserTest {
     private final static String[] TEST_NAMES = {
-            "LudwigXV7.binding.frontcover.tif", "LudwigXV7.frontmatter.flyleaf.002r.tif",
+            "*LudwigXV7.binding.frontcover.tif", "*LudwigXV7.frontmatter.flyleaf.002r.tif",
             "LudwigXV7.frontmatter.flyleaf.002v.tif", "LudwigXV7.020r.tif", "LudwigXV7.020v.tif",
             "LudwigXV7.endmatter.001v.tif", "LudwigXV7.misc.greyscale.tif", "filemap.csv"
     };
@@ -22,45 +24,58 @@ public class ArchiveNameParserTest {
     }
 
     @Test
-    public void categoryTest() {
-        final ImageType[] expected = {
-                ImageType.FRONTCOVER, ImageType.FRONTMATTER,
-                ImageType.FRONTMATTER, ImageType.TEXT,
-                ImageType.TEXT, ImageType.ENDMATTER,
-                ImageType.MISC, ImageType.UNKNOWN
+    public void locationTest() {
+        BookImageLocation[] expected = {
+                BookImageLocation.BINDING, BookImageLocation.FRONT_MATTER,
+                BookImageLocation.FRONT_MATTER, BookImageLocation.BODY_MATTER, BookImageLocation.BODY_MATTER,
+                BookImageLocation.END_MATTER, BookImageLocation.MISC, null
         };
 
-        for (int i = 0; i < expected.length; i++) {
-            ImageType type = parser.type(TEST_NAMES[i]);
-
-            assertNotNull("No type found.", type);
-            assertEquals("Unexpected type found.", expected[i], type);
+        for (int i = 0; i < TEST_NAMES.length; i++) {
+            assertEquals("Unexpected location found.", expected[i], parser.location(TEST_NAMES[i]));
         }
     }
 
     @Test
-    public void pageTest() {
-        final String[] expected = {
-                null, "002r", "002v", "020r", "020v", "001v", null, null
+    public void roleTest() {
+        BookImageRole[] expected = {
+                BookImageRole.FRONT_COVER, null,
+                null, null, null,
+                null, null, null
         };
 
-        for (int i = 0; i < expected.length; i++) {
-            String page = parser.page(TEST_NAMES[i]);
-
-            assertEquals("Unexpected page found.", expected[i], page);
+        for (int i = 0; i < TEST_NAMES.length; i++) {
+            assertEquals("Unexpected role found.", expected[i], parser.role(TEST_NAMES[i]));
         }
     }
 
     @Test
-    public void bookIdTest() {
-        final String[] expected = {
-                "LudwigXV7", "LudwigXV7", "LudwigXV7", "LudwigXV7", "LudwigXV7", "LudwigXV7", "LudwigXV7", null
+    public void otherPageNumberingTest() {
+        String[] names = {
+                "LudwigXV7.frontmatter.flyleaf.002r.tif", "LudwigXV7.frontmatter.flyleaf.002v.tif",
+                "LudwigXV7.020r.tif", "LudwigXV7.020v.tif", "LudwigXV7.A1r.tif", "LudwigXV7.A2v.tif"
+        };
+        String[] expected = {
+                "front matter 2r", "front matter 2v", "20r", "20v", "A1r", "A2v"
         };
 
-        for (int i = 0; i < expected.length; i++) {
-            String id = parser.bookId(TEST_NAMES[i]);
+        for (int i = 0; i < names.length; i++) {
+            assertEquals("Unexpected short name found.", expected[i], parser.shortName(names[i]));
+        }
+    }
 
-            assertEquals("Unexpected book ID found.", expected[i], id);
+    @Test
+    public void checkIsMissingTest() {
+        boolean[] expected = {
+                true, true, false, false, false, false, false, false
+        };
+
+        for (int i = 0; i < TEST_NAMES.length; i++) {
+            if (expected[i]) {
+                assertTrue("Name should be marked as missing.", parser.isMissing(TEST_NAMES[i]));
+            } else {
+                assertFalse("Name should not be marked as missing.", parser.isMissing(TEST_NAMES[i]));
+            }
         }
     }
 

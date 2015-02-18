@@ -93,7 +93,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
 
     private BookImage getPageImage(ImageList images, String page) {
         for (BookImage image : images) {
-            if (image.getPage().equals(page)) {
+            if (image.getName().equals(page)) {
                 return image;
             }
         }
@@ -105,12 +105,12 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
                                           AnnotationListType listType) {
         AnnotationList list = new AnnotationList();
 
-        String label = annotationListName(image.getPage(), listType.toString().toLowerCase());
-        list.setId(urlId(collection.getId(), book.getId(), annotationListName(image.getPage(),
+        String label = annotationListName(image.getName(), listType.toString().toLowerCase());
+        list.setId(urlId(collection.getId(), book.getId(), annotationListName(image.getName(),
                 listType.toString().toLowerCase()), PresentationRequestType.ANNOTATION_LIST));
         list.setType(SC_ANNOTATION_LIST);
         list.setDescription("Annotation list for " + listType.toString().toLowerCase() + " on page "
-                + image.getPage(), "en");
+                + image.getName(), "en");
         list.setLabel(label, "en");
         list.setWithin(urlId(collection.getId(), book.getId(), listType.toString().toLowerCase(),
                 PresentationRequestType.LAYER));
@@ -171,7 +171,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     }
 
     private List<Annotation> illustrationsForPage(BookCollection collection, Book book, BookImage image) {
-        String page = image.getPage();
+        String page = image.getName();
         if (book.getIllustrationTagging() == null) {
             return null;
         }
@@ -267,11 +267,11 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
             }
         }
         String type = AnnotationListType.ALL.toString().toLowerCase();
-        String name = annotationListName(image.getPage(), type);
+        String name = annotationListName(image.getName(), type);
 
         list.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION_LIST));
         list.setType(SC_ANNOTATION_LIST);
-        list.setDescription("Annotation list for " + type + " on page " + image.getPage(), "en");
+        list.setDescription("Annotation list for " + type + " on page " + image.getName(), "en");
         list.setLabel(name, "en");
         list.setWithin(urlId(collection.getId(), book.getId(), "all", PresentationRequestType.LAYER));
 
@@ -292,7 +292,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     private Annotation adaptAnnotation(BookCollection collection, String book, rosa.archive.model.aor.Annotation anno,
                                        BookImage image) {
         Annotation a = new Annotation();
-        String annoName = image.getPage() + "_" + annotation_counter++;
+        String annoName = image.getName() + "_" + annotation_counter++;
 
         a.setId(urlId(collection.getId(), book, annoName, PresentationRequestType.ANNOTATION));
         a.setType(IIIFNames.OA_ANNOTATION);
@@ -327,7 +327,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         for (MarginaliaLanguage lang : marg.getLanguages()) {
             for (Position pos : lang.getPositions()) {
                 Annotation anno = new Annotation();
-                String label = image.getPage() + "_" + annotation_counter++;
+                String label = image.getName() + "_" + annotation_counter++;
 
                 anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
                 anno.setMotivation(IIIFNames.SC_PAINTING);

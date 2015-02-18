@@ -13,6 +13,11 @@ public class BookImage implements Serializable {
     private int height;
     private boolean isMissing;
 
+    private String name;
+    private BookImageLocation location;
+    private BookImageRole role;
+//    private char side; TODO if needed
+
     /**
      * Create an empty BookImage
      */
@@ -43,19 +48,28 @@ public class BookImage implements Serializable {
         this.id = id;
     }
 
-    /**
-     * TODO can be abstracted
-     * @return the page this image is associated with
-     */
-    public String getPage() {
-        String[] parts = id.split("\\.");
-        StringBuilder sb = new StringBuilder();
-        // Strip off book ID and file extension to get page name
-        for (int i = 1; i < (parts.length - 1); i++) {
-            sb.append(parts[i]);
-        }
+    public String getName() {
+        return name;
+    }
 
-        return sb.toString();
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public BookImageLocation getLocation() {
+        return location;
+    }
+
+    public void setLocation(BookImageLocation location) {
+        this.location = location;
+    }
+
+    public BookImageRole getRole() {
+        return role;
+    }
+
+    public void setRole(BookImageRole role) {
+        this.role = role;
     }
 
     public int getWidth() {
@@ -87,12 +101,15 @@ public class BookImage implements Serializable {
         if (this == o) return true;
         if (!(o instanceof BookImage)) return false;
 
-        BookImage bookImage = (BookImage) o;
+        BookImage image = (BookImage) o;
 
-        if (height != bookImage.height) return false;
-        if (isMissing != bookImage.isMissing) return false;
-        if (width != bookImage.width) return false;
-        if (id != null ? !id.equals(bookImage.id) : bookImage.id != null) return false;
+        if (height != image.height) return false;
+        if (isMissing != image.isMissing) return false;
+        if (width != image.width) return false;
+        if (id != null ? !id.equals(image.id) : image.id != null) return false;
+        if (location != image.location) return false;
+        if (name != null ? !name.equals(image.name) : image.name != null) return false;
+        if (role != image.role) return false;
 
         return true;
     }
@@ -103,6 +120,9 @@ public class BookImage implements Serializable {
         result = 31 * result + width;
         result = 31 * result + height;
         result = 31 * result + (isMissing ? 1 : 0);
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (location != null ? location.hashCode() : 0);
+        result = 31 * result + (role != null ? role.hashCode() : 0);
         return result;
     }
 
@@ -113,6 +133,9 @@ public class BookImage implements Serializable {
                 ", width=" + width +
                 ", height=" + height +
                 ", isMissing=" + isMissing +
+                ", name='" + name + '\'' +
+                ", location=" + location +
+                ", role=" + role +
                 '}';
     }
 }

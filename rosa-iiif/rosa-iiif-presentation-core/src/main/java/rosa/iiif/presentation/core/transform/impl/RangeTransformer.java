@@ -12,7 +12,6 @@ import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageType;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
-import rosa.iiif.presentation.core.transform.impl.BasePresentationTransformer;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.TextValue;
@@ -123,7 +122,7 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
 
                 List<String> canvases = new ArrayList<>();
                 for (BookImage image : book.getImages()) {
-                    String this_page = nameParser.page(image.getPage());
+                    String this_page = nameParser.page(image.getName());
                     // If this_page lies within the range of pages of this BookText, add it to the range
                     if (this_page.compareToIgnoreCase(start_page) >= 0
                             && this_page.compareToIgnoreCase(end_page) <= 0) {
@@ -196,9 +195,9 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
 
     private void addCanvasUris(BookCollection collection, Book book, ImageType targetType, List<String> uris) {
         for (BookImage image : book.getImages()) {
-            if (nameParser.type(image) == targetType) {
-                uris.add(urlId(collection.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
-            }
+//            if (nameParser.type(image) == targetType) {
+//                uris.add(urlId(collection.getId(), book.getId(), image.getName(), PresentationRequestType.CANVAS));
+//            } TODO
         }
     }
 

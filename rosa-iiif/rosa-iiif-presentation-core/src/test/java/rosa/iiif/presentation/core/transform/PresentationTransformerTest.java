@@ -97,7 +97,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
      */
     @Test
     public void canvasLudwigXV7Test() throws IOException {
-        checkACanvas(presentationTransformer.canvas(loadValidCollection(), loadValidLudwigXV7(), "001v"));
+        checkACanvas(presentationTransformer.canvas(loadValidCollection(), loadValidLudwigXV7(), "1v"));
     }
 
     /**
@@ -125,7 +125,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     @Test
     public void annotationListLudwigXV7Test() throws IOException {
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidLudwigXV7(), "002r.all"));
+                loadValidCollection(), loadValidLudwigXV7(), "2r.all"));
     }
 
     /**
@@ -135,13 +135,13 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     @Test
     public void annotationListFolgersHa2Test() throws IOException {
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidFolgersHa2(), "001r.all"));
+                loadValidCollection(), loadValidFolgersHa2(), "1r.all"));
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidFolgersHa2(), "001r.symbol"));
+                loadValidCollection(), loadValidFolgersHa2(), "1r.symbol"));
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidFolgersHa2(), "001r.marginalia"));
+                loadValidCollection(), loadValidFolgersHa2(), "1r.marginalia"));
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidFolgersHa2(), "001r.underline"));
+                loadValidCollection(), loadValidFolgersHa2(), "1r.underline"));
     }
 
     /**

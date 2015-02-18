@@ -1,10 +1,10 @@
 package rosa.archive.core;
 
-import rosa.archive.model.BookImage;
-import rosa.archive.model.ImageType;
+import rosa.archive.model.BookImageLocation;
+import rosa.archive.model.BookImageRole;
 
-public class ArchiveNameParser {
-    private static final String DEFAULT_PAGE_REGEX = "\\d+(r|v|R|V)";
+public class ArchiveNameParser implements ArchiveConstants {
+    private static final String DEFAULT_PAGE_REGEX = "[a-zA-Z]*\\d+(r|v|R|V)";
     private static final String DEFAULT_DELIMITER = "\\.";
 
     private final String delimiter;
@@ -20,41 +20,53 @@ public class ArchiveNameParser {
     }
 
     /**
-     * @param name name of an image in the archive
-     * @return the image type it belongs to
+     * Get the location of the book image from its archive ID. If an unknown name
+     * is encountered, NULL is returned.
+     *
+     * @param imageId ID of image in archive
+     * @return the location of the book image
      */
-    public ImageType type(String name) {
-        for (ImageType cat : ImageType.values()) {
-            if (name.toUpperCase().contains(cat.toString())) {
-                return cat;
+    public BookImageLocation location(String imageId) {
+        String[] parts = split_name(imageId);
+
+        if (parts.length < 3) {
+            return null;
+        }
+
+        String lococation = parts[1];
+        for (BookImageLocation loc : BookImageLocation.values()) {
+            if (loc.getInArchiveName().equals(lococation)) {
+                return loc;
             }
         }
-        if (page(name) != null) {
-            return ImageType.TEXT;
-        }
-        return ImageType.UNKNOWN;
-    }
 
-    public ImageType type(BookImage image) {
-        return type(image.getId());
+        if (parts.length == 3 && lococation.matches(page_regex)) {
+            return BookImageLocation.BODY_MATTER;
+        }
+
+        return null;
     }
 
     /**
-     * Get the page number of the image. Some image categories do not have page
-     * numbers, in which case, NULL will be returned.
+     * Get the role of the book image from its archive ID.
      *
-     * @param name name of an image in the archive
-     * @return the page number of the image, or NULL if not applicable
+     * @param imageId ID of image in archive
+     * @return the role of the book image
      */
-    public String page(String name) {
-        String[] parts = split_name(name);
+    public BookImageRole role(String imageId) {
+        String[] parts = split_name(imageId);
+        if (parts.length < 4) {
+            /*
+                Body matter images will have length == 3, other images
+                will have length > 3
+             */
+            return null;
+        }
 
-        for (String part : parts) {
-            if (part.matches(page_regex)) {
-                int n = Integer.parseInt(part.substring(0, part.length()-1));
-                char rv = part.charAt(part.length() - 1);
-
-                return String.format("%03d", n) + rv;
+        String role = parts[2];
+        for (BookImageRole r : BookImageRole.values()) {
+            if (r.getArchiveName().equals(role)) {
+                return r;
             }
         }
 
@@ -62,16 +74,61 @@ public class ArchiveNameParser {
     }
 
     /**
-     * @param name name of an image in the archive
-     * @return the ID of the book this image belongs to
+     * Get a short name, a human readable label.
+     *
+     * @param imageId ID of image in archive
+     * @return short name
      */
-    public String bookId(String name) {
-        String[] parts = split_name(name);
-        if (parts.length < 3) {
-            return null;
+    public String shortName(String imageId) {
+        BookImageRole role = role(imageId);
+        BookImageLocation location = location(imageId);
+        String page = page(imageId);
+
+        StringBuilder short_name = new StringBuilder();
+
+        if (location != null) {
+            short_name.append(location.getDisplay());
+            short_name.append(' ');
+        }
+        if (role != null) {
+            short_name.append(role.getDisplay());
+            short_name.append(' ');
+        }
+        if (page != null) {
+            short_name.append(page.replaceFirst("^0+(?!$)", ""));
         }
 
-        return parts[0];
+        return short_name.toString().trim();
+    }
+
+    /**
+     * Get the page number associated with an image in the archive. If the
+     * image is associated with a part of the book that does not have a
+     * page number (ex: front cover), NULL will be returned.
+     *
+     * @param imageId ID of image in archive
+     * @return the page associated with the image
+     */
+    public String page(String imageId) {
+        String[] parts = split_name(imageId);
+
+        for (String part : parts) {
+            if (part.matches(page_regex)) {
+                return part;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Does this name not have an associated image in the archive (is it missing)?
+     *
+     * @param imageId ID of image in archive
+     * @return is the image missing?
+     */
+    public boolean isMissing(String imageId) {
+        return imageId.startsWith(MISSING_PREFIX);
     }
 
     private String[] split_name(String name) {

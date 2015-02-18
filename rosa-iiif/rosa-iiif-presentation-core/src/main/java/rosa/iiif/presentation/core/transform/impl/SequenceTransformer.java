@@ -8,8 +8,6 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
-import rosa.iiif.presentation.core.transform.impl.BasePresentationTransformer;
-import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequestType;
@@ -60,8 +58,8 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
         int count = 0;
         boolean hasNotBeenSet = true;
         for (BookImage image : imageList) {
-            String page = image.getPage();
-            canvases.add(canvasTransformer.transform(collection, book, image.getPage()));
+            String page = image.getName();
+            canvases.add(canvasTransformer.transform(collection, book, image.getName()));
 
             // Set the starting point in the sequence to the first page of printed material
             if (hasNotBeenSet && page.matches(PAGE_REGEX)) {

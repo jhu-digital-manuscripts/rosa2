@@ -9,6 +9,7 @@ import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookImage;
@@ -18,6 +19,12 @@ import rosa.archive.model.ImageList;
  *
  */
 public class ImageListSerializer implements Serializer<ImageList> {
+    private final ArchiveNameParser parser;
+
+    public ImageListSerializer() {
+        parser = new ArchiveNameParser();
+    }
+
     @Override
     public ImageList read(InputStream is, List<String> errors) throws IOException {
         ImageList images = new ImageList();
@@ -26,41 +33,12 @@ public class ImageListSerializer implements Serializer<ImageList> {
         List<String> rows = IOUtils.readLines(is, UTF_8);
 
         for (String row : rows) {
-            String[] csvRow = CSV.parse(row);
+            BookImage image = buildBookImage(CSV.parse(row), errors);
 
-            BookImage image = new BookImage();
-
-            // Check for the "missing image" prefix.
-            // If present, remove the prefix from name before setting ID.
-            String id = csvRow[0];
-            boolean missing = id.startsWith(MISSING_PREFIX);
-
-            if (missing) {
-                id = id.substring(MISSING_PREFIX.length());
+            if (image != null) {
+                // Add image to the list!
+                imgList.add(image);
             }
-
-            image.setId(id);
-            image.setMissing(missing);
-
-            // Set image dimensions.
-            int width = 0;
-            int height = 0;
-
-            // Missing images may only have the ID column.
-            if (csvRow.length > 1) {
-                try {
-                    width = Integer.parseInt(csvRow[1]);
-                    height = Integer.parseInt(csvRow[2]);
-                } catch (NumberFormatException e) {
-                    errors.add("Error parsing image dimensions as integers: [" + Arrays.toString(csvRow) + "]");
-                    continue;
-                }
-            }
-            image.setWidth(width);
-            image.setHeight(height);
-
-            // Add image to the list!
-            imgList.add(image);
         }
 
         return images;
@@ -82,5 +60,42 @@ public class ImageListSerializer implements Serializer<ImageList> {
     @Override
     public Class<ImageList> getObjectType() {
         return ImageList.class;
+    }
+
+    private BookImage buildBookImage(String[] csvRow, List<String> errors) {
+        BookImage image = new BookImage();
+        // Check for the "missing image" prefix.
+        // If present, remove the prefix from name before setting ID.
+        String id = csvRow[0];
+        boolean missing = id.startsWith(MISSING_PREFIX);
+
+        if (missing) {
+            id = id.substring(MISSING_PREFIX.length());
+        }
+
+        image.setId(id);
+        image.setMissing(missing);
+        image.setLocation(parser.location(id));
+        image.setRole(parser.role(id));
+        image.setName(parser.shortName(id));
+
+        // Set image dimensions.
+        int width = 0;
+        int height = 0;
+
+        // Missing images may only have the ID column.
+        if (csvRow.length > 1) {
+            try {
+                width = Integer.parseInt(csvRow[1]);
+                height = Integer.parseInt(csvRow[2]);
+            } catch (NumberFormatException e) {
+                errors.add("Error parsing image dimensions as integers: [" + Arrays.toString(csvRow) + "]");
+                return null;
+            }
+        }
+        image.setWidth(width);
+        image.setHeight(height);
+
+        return image;
     }
 }

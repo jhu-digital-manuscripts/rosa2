@@ -47,7 +47,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
     public Canvas transform(BookCollection collection, Book book, String name) {
         // Look for the image representing 'page'
         for (BookImage image : book.getImages()) {
-            if (image.getPage().equals(name)) {
+            if (image.getName().equals(name)) {
                 return buildCanvas(collection, book, image);
             }
         }
@@ -71,14 +71,14 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
             return null;
         }
         Canvas canvas = new Canvas();
-        canvas.setId(urlId(collection.getId(), book.getId(), image.getPage(), PresentationRequestType.CANVAS));
+        canvas.setId(urlId(collection.getId(), book.getId(), image.getName(), PresentationRequestType.CANVAS));
         canvas.setType(SC_CANVAS);
-        canvas.setLabel(image.getPage(), "en");
+        canvas.setLabel(image.getName(), "en");
 
         // Images of bindings or misc images will be displayed as individuals instead of openings
-        if (nameParser.type(image) == ImageType.MISC || nameParser.type(image) == ImageType.BINDING) {
-            canvas.setViewingHint(ViewingHint.NON_PAGED);
-        }
+//        if (nameParser.type(image) == ImageType.MISC || nameParser.type(image) == ImageType.BINDING) {
+//            canvas.setViewingHint(ViewingHint.NON_PAGED);
+//        } TODO
 
         // If the image is less than 1200 px in either dimension, force the dimensions
         // of the canvas to be double that of the image. TODO hack to prevent canvas dimensions from being ZERO
@@ -127,14 +127,14 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
 
         Annotation ann = new Annotation();
 
-        ann.setId(urlId(collection.getId(), book == null ? "" : book.getId(), image.getPage(),
+        ann.setId(urlId(collection.getId(), book == null ? "" : book.getId(), image.getName(),
                 PresentationRequestType.ANNOTATION));
         ann.setWidth(image.getWidth());
         ann.setHeight(image.getHeight());
         ann.setMotivation(SC_PAINTING);
         ann.setType(OA_ANNOTATION);
 
-        ann.setLabel(image.getPage(), "en");
+        ann.setLabel(image.getName(), "en");
 
         String id_in_image_server = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId()));
         AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "image/tiff");
