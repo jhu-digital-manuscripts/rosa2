@@ -1,5 +1,6 @@
 package rosa.archive.core;
 
+import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookImageRole;
 
@@ -10,11 +11,20 @@ public class ArchiveNameParser implements ArchiveConstants {
     private final String delimiter;
     private final String page_regex;
 
+    /**
+     * Create an ArchiveNameParser with custom settings.
+     *
+     * @param page_regex regular expressions identifying pagination
+     * @param delimiter string used to delimit segments of an archive item name
+     */
     public ArchiveNameParser(String page_regex, String delimiter) {
         this.page_regex = page_regex == null ? DEFAULT_PAGE_REGEX : page_regex;
         this.delimiter = delimiter == null ? DEFAULT_DELIMITER : delimiter;
     }
 
+    /**
+     * Create an ArchiveNapeParser with default settings.
+     */
     public ArchiveNameParser() {
         this(null, null);
     }
@@ -33,14 +43,14 @@ public class ArchiveNameParser implements ArchiveConstants {
             return null;
         }
 
-        String lococation = parts[1];
+        String location = parts[1];
         for (BookImageLocation loc : BookImageLocation.values()) {
-            if (loc.getInArchiveName().equals(lococation)) {
+            if (loc.getInArchiveName().equals(location)) {
                 return loc;
             }
         }
 
-        if (parts.length == 3 && lococation.matches(page_regex)) {
+        if (parts.length == 3 && location.matches(page_regex)) {
             return BookImageLocation.BODY_MATTER;
         }
 
@@ -102,12 +112,12 @@ public class ArchiveNameParser implements ArchiveConstants {
     }
 
     /**
-     * Get the page number associated with an image in the archive. If the
-     * image is associated with a part of the book that does not have a
+     * Get the page number associated with an item in the archive. If the
+     * item is associated with a part of the book that does not have a
      * page number (ex: front cover), NULL will be returned.
      *
-     * @param imageId ID of image in archive
-     * @return the page associated with the image
+     * @param imageId ID of item in archive
+     * @return the page associated with the item
      */
     public String page(String imageId) {
         String[] parts = split_name(imageId);
@@ -129,6 +139,30 @@ public class ArchiveNameParser implements ArchiveConstants {
      */
     public boolean isMissing(String imageId) {
         return imageId.startsWith(MISSING_PREFIX);
+    }
+
+    /**
+     * Get the item type for an object in the archive from its name.
+     *
+     * @param name name if item in archive
+     * @return item type
+     */
+    public ArchiveItemType getArchiveItemType(String name) {
+        if (name.startsWith(".")) {
+            return null;
+        }
+
+        if (name.endsWith(TIF_EXT)) {
+            return ArchiveItemType.IMAGE;
+        }
+
+        for (ArchiveItemType type : ArchiveItemType.values()) {
+            if (name.contains(type.getIdentifier()) && name.endsWith(type.getFileExtension())) {
+                return type;
+            }
+        }
+
+        return null;
     }
 
     private String[] split_name(String name) {

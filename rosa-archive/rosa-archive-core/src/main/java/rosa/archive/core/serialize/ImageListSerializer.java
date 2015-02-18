@@ -51,7 +51,7 @@ public class ImageListSerializer implements Serializer<ImageList> {
         Collections.sort(images, BookImageComparator.instance());
 
         for (BookImage image : imageList) {
-            String line = image.isMissing() ? "*" : "";
+            String line = image.isMissing() ? MISSING_PREFIX : "";
             line += image.getId() + "," + image.getWidth() + "," + image.getHeight() + "\n";
             IOUtils.write(line, out, UTF_8);
         }
@@ -67,7 +67,7 @@ public class ImageListSerializer implements Serializer<ImageList> {
         // Check for the "missing image" prefix.
         // If present, remove the prefix from name before setting ID.
         String id = csvRow[0];
-        boolean missing = id.startsWith(MISSING_PREFIX);
+        boolean missing = parser.isMissing(id);
 
         if (missing) {
             id = id.substring(MISSING_PREFIX.length());

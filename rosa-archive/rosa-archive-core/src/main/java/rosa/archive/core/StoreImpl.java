@@ -17,8 +17,6 @@ import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -29,9 +27,12 @@ import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.core.util.CropRunnable;
+import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookImageLocation;
+import rosa.archive.model.BookImageRole;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.BookStructure;
@@ -59,6 +60,8 @@ import com.google.inject.Inject;
  *
  */
 public class StoreImpl implements Store, ArchiveConstants {
+    private static final ArchiveNameParser parser = new ArchiveNameParser();
+
     private final SerializerSet serializers;
     private final ByteStreamGroup base;
     private final BookCollectionChecker collectionChecker;
@@ -178,7 +181,7 @@ public class StoreImpl implements Store, ArchiveConstants {
 
         // Handle AoR annotations
         for (String name : content) {
-            if (name.startsWith(bookId + AOR_ANNOTATION ) && name.endsWith(XML_EXT)) {
+            if (parser.getArchiveItemType(name) == ArchiveItemType.TRANSCRIPTION_AOR) {
                 pages.add(loadItem(name, bookStreams, AnnotatedPage.class, errors));
             }
         }
@@ -515,7 +518,7 @@ public class StoreImpl implements Store, ArchiveConstants {
             }
 
             List<String> parts = new ArrayList<>(Arrays.asList(imageName.split("\\.")));
-            parts.add(1, "aor");
+            parts.add(1, ArchiveItemType.TRANSCRIPTION_AOR.getIdentifier());
 
             StringBuilder sb = new StringBuilder();
             boolean isFirst = true;
@@ -550,7 +553,9 @@ public class StoreImpl implements Store, ArchiveConstants {
         List<String> names = new ArrayList<>();
 
         for (String name : bookStreams.listByteStreamNames()) {
-            if (name.matches("\\d+\\.xml") && !name.contains(TRANSCRIPTION) && !name.contains("description")) {
+            ArchiveItemType type = parser.getArchiveItemType(name);
+            if (name.endsWith(XML_EXT) && type != ArchiveItemType.TRANSCRIPTION_ROSE
+                    && type != ArchiveItemType.DESCRIPTION && type != ArchiveItemType.DESCRIPTION_MULTILANG) {
                 names.add(name);
             }
         }
@@ -564,10 +569,10 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @return list of names of all images in the book
      * @throws IOException TODO abstract file names
      */
-    private List<String> getImageNames(ByteStreamGroup bookStreams) throws IOException{
+    private List<String> getImageNames(ByteStreamGroup bookStreams) throws IOException {
         List<String> filenames = new ArrayList<>();
         for (String name : bookStreams.listByteStreamNames()) {
-            if (name.endsWith(TIF_EXT) && !name.startsWith(".")) {
+            if (parser.getArchiveItemType(name) == ArchiveItemType.IMAGE) {
                 filenames.add(name);
             }
         }
@@ -692,21 +697,21 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
         // front/back covers can be missing
         BookImage img = images.get(0);
-        if (!img.getId().contains(IMG_FRONTCOVER)) {
+        if (img.getLocation() == BookImageLocation.BINDING && img.getRole() == BookImageRole.FRONT_COVER) {
             images.add(0, new BookImage(book + IMG_FRONTCOVER, missingDimensions[0], missingDimensions[1], true));
         }
         img = images.get(1);
-        if (!img.getId().contains(IMG_FRONTPASTEDOWN)) {
+        if (img.getLocation() == BookImageLocation.FRONT_MATTER && img.getRole() == BookImageRole.PASTEDOWN) {
             images.add(1, new BookImage(book + IMG_FRONTPASTEDOWN, missingDimensions[0], missingDimensions[1], true));
         }
         // front/back pastedown can be missing
         img = images.get(images.size() - 2);
-        if (!img.getId().contains(IMG_ENDPASTEDOWN)) {
+        if (img.getLocation() == BookImageLocation.END_MATTER && img.getRole() == BookImageRole.PASTEDOWN) {
             images.add(images.size(), new BookImage(book + IMG_ENDPASTEDOWN, missingDimensions[0],
                     missingDimensions[1], true));
         }
         img = images.get(images.size() - 1);
-        if (!img.getId().contains(IMG_BACKCOVER)) {
+        if (img.getLocation() == BookImageLocation.BINDING && img.getRole() == BookImageRole.BACK_COVER) {
             images.add(images.size(), new BookImage(book + IMG_BACKCOVER, missingDimensions[0], missingDimensions[1],
                     true));
         }
@@ -747,8 +752,6 @@ public class StoreImpl implements Store, ArchiveConstants {
      */
     private void addSkippedImages(List<BookImage> images, int[] missingDimensions) {
         Collections.sort(images, BookImageComparator.instance());
-        // Java8 only!
-        // images.sort(BookImageComparator.instance());
 
         List<BookImage> missing = new ArrayList<>();
         for (int i = 1; i < images.size(); i++) {
@@ -763,8 +766,8 @@ public class StoreImpl implements Store, ArchiveConstants {
                 continue;
             }
 
-            String f1 = findFolio(i1.getId());
-            String f2 = findFolio(i2.getId());
+            String f1 = parser.page(i1.getId());
+            String f2 = parser.page(i2.getId());
 
             if (StringUtils.isNotBlank(f1) && StringUtils.isNotBlank(f2)) {
                 String prefix1 = i1.getId().substring(0, i1.getId().length() - (f1 + TIF_EXT).length());
@@ -787,6 +790,7 @@ public class StoreImpl implements Store, ArchiveConstants {
                 // if seq1 > seq2
                 // list not sorted correctly
                 if (seq1 < seq2) {
+                    // Number of missing pages between two pages in the list, f1 and f2
                     int numMissing = (seq2 - seq1 - 1) * 2;
 
                     if (rv1 == 'r') {
@@ -816,27 +820,26 @@ public class StoreImpl implements Store, ArchiveConstants {
 
         images.addAll(missing);
         Collections.sort(images, BookImageComparator.instance());
-        // images.sort(BookImageComparator.instance());
     }
-
-    /**
-     * Find the folio designation from an image file name
-     * 
-     * @param filename
-     *            .
-     * @return folio number + side
-     */
-    public static String findFolio(String filename) {
-        Pattern p = Pattern.compile("(\\d+)(r|v)");
-        Matcher m = p.matcher(filename);
-
-        if (m.find()) {
-            int n = Integer.parseInt(m.group(1));
-            return String.format("%03d", n) + m.group(2);
-        } else {
-            return null;
-        }
-    }
+//
+//    /**
+//     * Find the folio designation from an image file name
+//     *
+//     * @param filename
+//     *            .
+//     * @return folio number + side
+//     */
+//    public static String findFolio(String filename) {
+//        Pattern p = Pattern.compile("(\\d+)(r|v)");
+//        Matcher m = p.matcher(filename);
+//
+//        if (m.find()) {
+//            int n = Integer.parseInt(m.group(1));
+//            return String.format("%03d", n) + m.group(2);
+//        } else {
+//            return null;
+//        }
+//    }
 
     /**
      * Take all images from
@@ -855,7 +858,7 @@ public class StoreImpl implements Store, ArchiveConstants {
             ByteStreamGroup bookStreams) throws IOException {
         List<BookImage> images = new ArrayList<>();
         for (String file : bookStreams.listByteStreamNames()) {
-            if (!file.startsWith(".") && file.endsWith(TIF_EXT)) {
+            if (parser.getArchiveItemType(file) == ArchiveItemType.IMAGE) {
 
                 String filepath = Paths.get(bookStreams.id()).resolve(file).toString();
                 int[] dimensions = getImageDimensionsHack(filepath);
