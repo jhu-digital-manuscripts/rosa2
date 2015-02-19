@@ -212,6 +212,13 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
     private BookScene createBookScene(String idinfo, String startinfo, String startlineoffsetinfo,
                                       String endinfo, String endlineoffsetinfo, String trans,
                                       List<String> errors, int line, boolean correct, int start_lecoy) {
+        /*
+            TODO need to reconcile 'startinfo' and 'endinfo' with folio file names.
+            'startinfo' and 'endinfo' refer folio location information about a scene.
+            These data include folio + column which may or may not match well with
+            actual folio image file names.
+         */
+
         // Initialize vars
         String id = null;
         String start_folio = null;
@@ -246,8 +253,7 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
             return null;
         }
 
-        if (!start_folio_col.matches("a|b|c|d")
-                || !end_folio_col.matches("a|b|c|d")) {
+        if (!start_folio_col.matches("a|b|c|d") || !end_folio_col.matches("a|b|c|d")) {
             errors.add("Line " + line + ": Malformed column: [" + start_folio_col + "][" + end_folio_col + "]");
             return null;
         }

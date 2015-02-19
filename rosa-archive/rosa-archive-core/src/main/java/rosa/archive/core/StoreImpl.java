@@ -431,8 +431,7 @@ public class StoreImpl implements Store, ArchiveConstants {
 
         ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
         for (String file : bookStreams.listByteStreamNames()) {
-            // TODO could use file name abstraction
-            if (file.contains(AOR_ANNOTATION) && file.endsWith(XML_EXT)) {
+            if (parser.getArchiveItemType(file) == ArchiveItemType.TRANSCRIPTION_AOR) {
                 bookChecker.validateAgainstSchema(file, bookStreams, errors, warnings);
             }
         }
@@ -548,7 +547,6 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
     }
 
-    // TODO abstract file names
     private List<String> getTranscriptionsNames(ByteStreamGroup bookStreams) throws IOException {
         List<String> names = new ArrayList<>();
 
@@ -567,7 +565,7 @@ public class StoreImpl implements Store, ArchiveConstants {
     /**
      * @param bookStreams byte stream group for a book
      * @return list of names of all images in the book
-     * @throws IOException TODO abstract file names
+     * @throws IOException
      */
     private List<String> getImageNames(ByteStreamGroup bookStreams) throws IOException {
         List<String> filenames = new ArrayList<>();
@@ -821,25 +819,6 @@ public class StoreImpl implements Store, ArchiveConstants {
         images.addAll(missing);
         Collections.sort(images, BookImageComparator.instance());
     }
-//
-//    /**
-//     * Find the folio designation from an image file name
-//     *
-//     * @param filename
-//     *            .
-//     * @return folio number + side
-//     */
-//    public static String findFolio(String filename) {
-//        Pattern p = Pattern.compile("(\\d+)(r|v)");
-//        Matcher m = p.matcher(filename);
-//
-//        if (m.find()) {
-//            int n = Integer.parseInt(m.group(1));
-//            return String.format("%03d", n) + m.group(2);
-//        } else {
-//            return null;
-//        }
-//    }
 
     /**
      * Take all images from

@@ -20,7 +20,7 @@ import rosa.archive.model.redtag.StructurePage;
 import rosa.archive.model.redtag.StructurePageSide;
 
 /**
- * Associated with Reduced Tagging.
+ * Associated with Reduced Tagging. TODO reconcile folio info with folio image file names
  *
  * @see rosa.archive.model.BookStructure
  */

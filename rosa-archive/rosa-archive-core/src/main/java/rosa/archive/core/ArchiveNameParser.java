@@ -4,8 +4,11 @@ import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookImageRole;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class ArchiveNameParser implements ArchiveConstants {
-    private static final String DEFAULT_PAGE_REGEX = "[a-zA-Z]*\\d+(r|v|R|V)";
+    private static final String DEFAULT_PAGE_REGEX = "([a-zA-Z]*)(\\d+)(r|v|R|V)";
     private static final String DEFAULT_DELIMITER = "\\.";
 
     private final String delimiter;
@@ -104,6 +107,7 @@ public class ArchiveNameParser implements ArchiveConstants {
             short_name.append(role.getDisplay());
             short_name.append(' ');
         }
+        // Strip leading zeros from page number
         if (page != null) {
             short_name.append(page.replaceFirst("^0+(?!$)", ""));
         }
