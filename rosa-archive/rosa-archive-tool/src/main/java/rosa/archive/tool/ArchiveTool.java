@@ -91,12 +91,14 @@ public class ArchiveTool {
                     "force the operation to execute fully, overwriting any current cropped images.");
             break;
         case RENAME_IMAGES:
-            options.addOption(Flag.DRY_RUN.shortName(), Flag.DRY_RUN.longName(), false,
-                    "do a dry run of the command. Execute and get output as if the command were run, but do not " +
-                            "commit any changes.");
             options.addOption(Flag.CHANGE_ID.shortName(), Flag.CHANGE_ID.longName(), false,
                     "indicate that the ID portion of the file names needs to be changed in order to match the" +
                             " directory name.");
+            options.addOption(Flag.REVERSE.shortName(), Flag.REVERSE.longName(), false,
+                    "Rename all images using the reverse relationship in the file map. The file map contains " +
+                            "two names delimited by a comma (one,two). If image renaming goes from one -> two, " +
+                            "then this option will reverse that relationship, going from two -> one. This will " +
+                            "have the effect of returning the images to their original names.");
             break;
         default:
             break;
@@ -122,7 +124,8 @@ public class ArchiveTool {
 
         // Create the tool and run the command
         ByteStreamGroup base = new FSByteStreamGroup(config.getArchivePath());
-        Store store = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
+        Store store = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class),
+                injector.getInstance(BookCollectionChecker.class), base);
 
         ArchiveTool tool = new ArchiveTool(store, config);
         tool.run(cmd);
@@ -194,7 +197,7 @@ public class ArchiveTool {
             deriv.validateXml();
             break;
         case RENAME_IMAGES:
-            deriv.renameImages(hasOption(cmd, Flag.DRY_RUN), hasOption(cmd, Flag.CHANGE_ID));
+            deriv.renameImages(hasOption(cmd, Flag.CHANGE_ID), hasOption(cmd, Flag.REVERSE));
             break;
         case RENAME_TRANSCRIPTIONS:
             deriv.renameTranscriptions();
@@ -242,7 +245,7 @@ public class ArchiveTool {
                 deriv.validateXml();
                 break;
             case RENAME_IMAGES:
-                deriv.renameImages(hasOption(cmd, Flag.DRY_RUN), hasOption(cmd, Flag.CHANGE_ID));
+                deriv.renameImages(hasOption(cmd, Flag.CHANGE_ID), hasOption(cmd, Flag.REVERSE));
                 break;
             default:
                 displayError("Invalid command found.", args);

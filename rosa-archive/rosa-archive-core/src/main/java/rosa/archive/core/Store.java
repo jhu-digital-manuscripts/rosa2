@@ -290,12 +290,14 @@ public interface Store {
      * @param book id of the book
      * @param dryRun .
      * @param changeId .
+     * @param reverse .
      * @param errors list of errors
      * @throws IOException
      *          if the collection or book do not exist, or if the Store fails
      *          to rename images
      */
-    void renameImages(String collection, String book, boolean dryRun, boolean changeId, List<String> errors) throws IOException;
+    void renameImages(String collection, String book, boolean changeId, boolean reverse, List<String> errors)
+            throws IOException;
 
     /**
      * Rename the AoR transcription files according to the file map. The files are renamed

@@ -11,9 +11,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -438,7 +440,7 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     @Override
-    public void renameImages(String collection, String book, boolean dryRun, boolean changeId, List<String> errors)
+    public void renameImages(String collection, String book, boolean changeId, boolean reverse, List<String> errors)
             throws IOException {
         errors = nonNullList(errors);
 
@@ -457,34 +459,62 @@ public class StoreImpl implements Store, ArchiveConstants {
             return;
         } else if (changeId) {
             for (String image : getImageNames(bookStreams)) {
-                String[] parts = image.split("\\.");
-                StringBuilder sb = new StringBuilder(bookStreams.name());
-                for (int i = 1; i < parts.length; i++) {
-                    sb.append(parts[i]);
-                }
+                String target = bookStreams.name() + image.substring(image.indexOf('.'));
 
                 // Skip if the names are the same somehow
-                if (sb.toString().equals(image)) {
+                if (target.equals(image)) {
                     continue;
                 }
-                if (!dryRun) {
-                    bookStreams.renameByteStream(image, sb.toString());
-                }
+
+                bookStreams.renameByteStream(image, target);
             }
             return;
         }
 
+        // TODO checking file map should happen in the BookChecker!
+        // This would involve including the file map in the Book model object
         FileMap fileMap = loadItem(FILE_MAP, bookStreams, FileMap.class, errors);
-        for (String image : getImageNames(bookStreams)) {
-            String newName = fileMap.getMap().get(image);
-            if (newName == null || newName.isEmpty()) {
+
+        List<String> dups = new ArrayList<>();
+        if (containsDuplicateValues(fileMap.getMap(), dups)) {
+            StringBuilder sb = new StringBuilder("Duplicate target names found.\n");
+            for (String s : dups) {
+                sb.append("  ");
+                sb.append(s);
+                sb.append("\n");
+            }
+
+            errors.add(sb.toString());
+            return;
+        }
+        for (String from : getImageNames(bookStreams)) {
+            String to = fileMap.getMap().get(from);
+            if (to == null || to.isEmpty()) {
                 continue;
             }
 
-            if (!dryRun) {
-                bookStreams.renameByteStream(image, newName);
+            if (reverse) {
+                bookStreams.renameByteStream(to, from);
+            } else {
+                bookStreams.renameByteStream(from, to);
             }
         }
+    }
+
+    private boolean containsDuplicateValues(Map<String, String> map, List<String> duplicates) {
+        duplicates = nonNullList(duplicates);
+        Set<String> valueSet = new HashSet<>();
+
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            if (valueSet.contains(entry.getValue())) {
+                duplicates.add(entry.getKey() + "," + entry.getValue());
+                continue;
+            }
+
+            valueSet.add(entry.getValue());
+        }
+
+        return !duplicates.isEmpty();
     }
 
     // TODO clean up

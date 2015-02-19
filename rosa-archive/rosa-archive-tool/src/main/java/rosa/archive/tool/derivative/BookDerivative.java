@@ -96,10 +96,10 @@ public class BookDerivative extends AbstractDerivative {
     }
 
     @Override
-    public void renameImages(boolean dry, boolean changeId) throws IOException {
+    public void renameImages(boolean changeId, boolean reverse) throws IOException {
         List<String> errors = new ArrayList<>();
         report.println("Renaming images. [" + collection + ":" + book + "]");
-        store.renameImages(collection, book, dry, changeId, errors);
+        store.renameImages(collection, book, changeId, reverse, errors);
 
         if (!errors.isEmpty()) {
             reportError("Errors:", errors);

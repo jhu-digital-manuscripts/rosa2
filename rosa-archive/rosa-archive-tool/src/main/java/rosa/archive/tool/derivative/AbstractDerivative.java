@@ -31,7 +31,7 @@ public abstract class AbstractDerivative {
 
     public abstract void validateXml() throws IOException;
 
-    public abstract void renameImages(boolean dry, boolean changeId) throws IOException;
+    public abstract void renameImages(boolean changeId, boolean reverse) throws IOException;
 
     public abstract void renameTranscriptions() throws IOException;
 
