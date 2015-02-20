@@ -169,6 +169,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         checkAnnotationList(presentationTransformer.annotationList(
                 loadValidCollection(), loadValidFolgersHa2(), "1r.underline"));
 
+        // Check for name-matching problem
         AnnotationList l1 = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "1r.all");
         AnnotationList l2 = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "11r.all");
 
@@ -180,7 +181,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         assertEquals("Unexpected number of annotations in 1r.all", 46, l1.size());
         assertEquals("Unexpected number of annotations in 11r.all", 74, l2.size());
 
-        AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "front%20matter%201r.all");
+        AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "front matter 1r.all");
         assertNotNull("Failed to create AnnotationList for front matter 1r", ll);
         assertTrue("Unexpected annotations found in annotation list for 'front matter 1r'", ll.getAnnotations().isEmpty());
     }

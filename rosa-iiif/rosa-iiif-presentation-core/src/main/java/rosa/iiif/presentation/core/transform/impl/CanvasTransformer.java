@@ -7,6 +7,7 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.iiif.image.core.UriUtil;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -93,7 +94,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
                         imageResource(collection, book, image, canvas.getId())));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
-        Reference otherContent = annotationList(collection, book, canvas.getLabel("en"));
+        Reference otherContent = annotationList(collection, book, image);
         if (otherContent != null) {
             canvas.setOtherContent(Arrays.asList(otherContent));
         }
@@ -151,17 +152,17 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
     /**
      * @param collection archive collection containing the book
      * @param book a book in the archive
-     * @param page the page of the book
+     * @param image the image of the page of the book
      * @return a reference to the annotation for a page
      */
-    private Reference annotationList(BookCollection collection, Book book, String page) {
-        if (!hasAnnotations(book, page)) {
+    private Reference annotationList(BookCollection collection, Book book, BookImage image) {
+        if (!hasAnnotations(book, image.getId())) {
             return null;
         }
 
         Reference ref = new Reference();
 
-        String name = page + ".all";
+        String name = image.getName() + ".all";
         ref.setReference(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION_LIST));
         ref.setLabel(new TextValue(name, "en"));
         ref.setType(SC_ANNOTATION_LIST);

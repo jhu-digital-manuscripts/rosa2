@@ -91,7 +91,6 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     }
 
     private BookImage getPageImage(ImageList images, String page) {
-        page = UriUtil.decodePathSegment(page);
         for (BookImage image : images) {
             if (image.getName().equals(page)) {
                 return image;
