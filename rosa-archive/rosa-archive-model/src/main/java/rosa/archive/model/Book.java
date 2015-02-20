@@ -247,7 +247,7 @@ public class Book implements HasId, Serializable {
      */
     public AnnotatedPage getAnnotationPage(String page) {
         for (AnnotatedPage ap : annotatedPages) {
-            if (ap.getId().contains(page)) {
+            if (ap.getPage().contains(page)) {
                 return ap;
             }
         }

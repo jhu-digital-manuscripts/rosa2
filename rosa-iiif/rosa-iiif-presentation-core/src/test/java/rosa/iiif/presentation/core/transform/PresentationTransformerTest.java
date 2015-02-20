@@ -36,6 +36,7 @@ import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
@@ -99,6 +100,33 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     }
 
     /**
+     * Generate canvases from FolgersHa2 and check validity. Ensure that
+     * references to annotation lists are OK.
+     * @throws IOException .
+     */
+    @Test
+    public void canvasFolgersHa2Test() throws IOException {
+        Canvas c1 = presentationTransformer.canvas(loadValidCollection(), loadValidFolgersHa2(), "1r");
+        Canvas c2 = presentationTransformer.canvas(loadValidCollection(), loadValidFolgersHa2(), "11r");
+
+        checkACanvas(c1);
+        checkACanvas(c2);
+
+        assertNotNull(c1.getOtherContent());
+        assertNotNull(c2.getOtherContent());
+        assertEquals(1, c1.getOtherContent().size());
+        assertEquals(1, c2.getOtherContent().size());
+
+        Reference r1 = c1.getOtherContent().get(0);
+        Reference r2 = c2.getOtherContent().get(0);
+
+        assertNotNull(r1);
+        assertNotNull(r2);
+
+        assertNotEquals(r1.getReference(), r2.getReference());
+    }
+
+    /**
      * Generate a manifest for LudwigXV7 and check validity.
      * @throws IOException if collection or book is not found
      */
@@ -140,6 +168,21 @@ public class PresentationTransformerTest extends BaseArchiveTest {
                 loadValidCollection(), loadValidFolgersHa2(), "1r.marginalia"));
         checkAnnotationList(presentationTransformer.annotationList(
                 loadValidCollection(), loadValidFolgersHa2(), "1r.underline"));
+
+        AnnotationList l1 = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "1r.all");
+        AnnotationList l2 = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "11r.all");
+
+        assertNotNull("Annotation list missing for 1r.all", l1);
+        assertNotNull("Annotation list missing for 11r.all", l2);
+        assertNotEquals("Annotation lists for 1r.all and 11r.all should NOT be equal.", l1, l2);
+        assertNotEquals("Annotation lists for 1r.all and 11r.all should have differnt sizes", l1.size(), l2.size());
+
+        assertEquals("Unexpected number of annotations in 1r.all", 46, l1.size());
+        assertEquals("Unexpected number of annotations in 11r.all", 74, l2.size());
+
+        AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "front%20matter%201r.all");
+        assertNotNull("Failed to create AnnotationList for front matter 1r", ll);
+        assertTrue("Unexpected annotations found in annotation list for 'front matter 1r'", ll.getAnnotations().isEmpty());
     }
 
     /**

@@ -13,6 +13,7 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
+import rosa.iiif.image.core.UriUtil;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
@@ -45,7 +46,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
             return null;
         }
 
-        AnnotatedPage aPage = book.getAnnotationPage(page);
+        AnnotatedPage aPage = book.getAnnotationPage(pageImage.getId());
         AnnotationListType type = AnnotationListType.getType(listType);
 
         if (type == AnnotationListType.ALL) {
@@ -90,6 +91,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     }
 
     private BookImage getPageImage(ImageList images, String page) {
+        page = UriUtil.decodePathSegment(page);
         for (BookImage image : images) {
             if (image.getName().equals(page)) {
                 return image;
