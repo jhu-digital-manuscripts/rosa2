@@ -29,8 +29,7 @@ public class Tool {
 
             stats.writeBookStats(Paths.get("."));
         } else if (command.equals("validate")) {
-            System.err.println("Not yet implemented");
-            System.exit(1);
+            XmlValidator.validate(args);
         } else {
             System.err.println("Invalid command\nUsage: stats|validate arg...");
             System.exit(1);
