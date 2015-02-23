@@ -100,6 +100,12 @@ public class ArchiveTool {
                             "then this option will reverse that relationship, going from two -> one. This will " +
                             "have the effect of returning the images to their original names.");
             break;
+        case RENAME_TRANSCRIPTIONS:
+            options.addOption(Flag.REVERSE.shortName(), Flag.REVERSE.longName(), false,
+                    "Rename all AoR transcription using the reverse relationship in the file map. The file map contains " +
+                            "two names delimited by a comma (one,two). If image renaming goes from one -> two, " +
+                            "then this option will reverse that relationship, going from two -> one. This will " +
+                            "have the effect of returning the images to their original names.");
         default:
             break;
         }
@@ -200,7 +206,7 @@ public class ArchiveTool {
             deriv.renameImages(hasOption(cmd, Flag.CHANGE_ID), hasOption(cmd, Flag.REVERSE));
             break;
         case RENAME_TRANSCRIPTIONS:
-            deriv.renameTranscriptions();
+            deriv.renameTranscriptions(hasOption(cmd, Flag.REVERSE));
             break;
         default:
             displayError("Invalid command found.", args);

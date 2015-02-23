@@ -64,7 +64,7 @@ public class StoreImplRenameImagesTest extends BaseArchiveTest {
 
     /**
      * All images are given a bad book ID in its name. They are then renamed to have
-     * the corrent book ID in its name.
+     * the correct book ID in its name.
      *
      * @throws IOException .
      */

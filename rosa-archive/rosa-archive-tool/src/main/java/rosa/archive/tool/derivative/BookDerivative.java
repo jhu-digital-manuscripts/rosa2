@@ -107,10 +107,10 @@ public class BookDerivative extends AbstractDerivative {
     }
 
     @Override
-    public void renameTranscriptions() throws IOException {
+    public void renameTranscriptions(boolean reverse) throws IOException {
         List<String> errors = new ArrayList<>();
         report.println("Renaming AoR transcriptions. [" + collection + ":" + book + "]");
-        store.renameTranscriptions(collection, book, errors);
+        store.renameTranscriptions(collection, book, reverse, errors);
 
         if (!errors.isEmpty()) {
             reportError("Errors:", errors);

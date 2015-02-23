@@ -475,16 +475,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         // This would involve including the file map in the Book model object
         FileMap fileMap = loadItem(FILE_MAP, bookStreams, FileMap.class, errors);
 
-        List<String> dups = new ArrayList<>();
-        if (containsDuplicateValues(fileMap.getMap(), dups)) {
-            StringBuilder sb = new StringBuilder("Duplicate target names found.\n");
-            for (String s : dups) {
-                sb.append("  ");
-                sb.append(s);
-                sb.append("\n");
-            }
-
-            errors.add(sb.toString());
+        if (containsDuplicateValues(fileMap.getMap(), errors)) {
             return;
         }
         for (String from : getImageNames(bookStreams)) {
@@ -501,25 +492,26 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
     }
 
-    private boolean containsDuplicateValues(Map<String, String> map, List<String> duplicates) {
-        duplicates = nonNullList(duplicates);
+    private boolean containsDuplicateValues(Map<String, String> map, List<String> errors) {
+        boolean hasDuplicates = false;
         Set<String> valueSet = new HashSet<>();
 
         for (Map.Entry<String, String> entry : map.entrySet()) {
             if (valueSet.contains(entry.getValue())) {
-                duplicates.add(entry.getKey() + "," + entry.getValue());
+                hasDuplicates = true;
+                errors.add("Duplicate entry: [" + entry.getKey() + "," + entry.getValue() + "]");
                 continue;
             }
 
             valueSet.add(entry.getValue());
         }
 
-        return !duplicates.isEmpty();
+        return hasDuplicates;
     }
 
     // TODO clean up
     @Override
-    public void renameTranscriptions(String collection, String book, List<String> errors) throws IOException {
+    public void renameTranscriptions(String collection, String book, boolean reverse, List<String> errors) throws IOException {
         errors = nonNullList(errors);
 
         if (!base.hasByteStreamGroup(collection)) {
@@ -537,11 +529,28 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
 
         FileMap fileMap = loadItem(FILE_MAP, bookStreams, FileMap.class, errors);
+
+        // Search for duplicates
+        if (containsDuplicateValues(fileMap.getMap(), errors)) {
+            return;
+        }
+
         for (String name : getTranscriptionsNames(bookStreams)) {
             AnnotatedPage aPage = loadItem(name, bookStreams, AnnotatedPage.class, errors);
             String referencePage = aPage.getPage();
 
-            String imageName = fileMap.getMap().get(referencePage);
+            String imageName = null;
+            if (reverse) {
+                // Set 'imageName' to the key for which the value is equal to 'referencePage'
+                for (Map.Entry<String, String> entry : fileMap.getMap().entrySet()) {
+                    if (entry.getValue().equals(referencePage)) {
+                        imageName = entry.getKey();
+                    }
+                }
+            } else {
+                imageName = fileMap.getMap().get(referencePage);
+            }
+
             if (imageName == null || imageName.isEmpty()) {
                 continue;
             }
@@ -559,6 +568,7 @@ public class StoreImpl implements Store, ArchiveConstants {
                 }
                 sb.append(str);
             }
+            // TODO will not work in Windows...
             String command = "sed -i s/" + referencePage + "/" + imageName + "/ " + bookStreams.id() + "/" + name;
 
             Runtime runtime = Runtime.getRuntime();

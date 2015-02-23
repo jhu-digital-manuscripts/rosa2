@@ -1,7 +1,5 @@
 package rosa.archive.tool.derivative;
 
-
-
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.List;
@@ -33,7 +31,7 @@ public abstract class AbstractDerivative {
 
     public abstract void renameImages(boolean changeId, boolean reverse) throws IOException;
 
-    public abstract void renameTranscriptions() throws IOException;
+    public abstract void renameTranscriptions(boolean reverse) throws IOException;
 
     protected void reportError(String message, Exception e) {
         report.println("  [Error] " + message);

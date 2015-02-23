@@ -288,9 +288,8 @@ public interface Store {
      *
      * @param collection id of the collection
      * @param book id of the book
-     * @param dryRun .
      * @param changeId .
-     * @param reverse .
+     * @param reverse use reverse relationship in file map?
      * @param errors list of errors
      * @throws IOException
      *          if the collection or book do not exist, or if the Store fails
@@ -306,9 +305,10 @@ public interface Store {
      *
      * @param collection id of the collection
      * @param book id of the book
+     * @param reverse use reverse relationship in file map?
      * @param errors list of errors found while renaming
      * @throws IOException
      *          if the collection or book do not exist
      */
-    void renameTranscriptions(String collection, String book, List<String> errors) throws IOException;
+    void renameTranscriptions(String collection, String book, boolean reverse, List<String> errors) throws IOException;
 }
