@@ -46,6 +46,38 @@ public class StoreImplRenameImagesTest extends BaseArchiveTest {
     }
 
     /**
+     * Successfully rename all images in FolgersHa2, then rename them back
+     * to their original names using the REVERSE flag.
+     *
+     * @throws IOException .
+     */
+    @Test
+    public void renameImagesReverseTest() throws IOException {
+        generateFileMap(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, "BOOK_ID", true, true, 10, 10, 1);
+
+        store.renameImages(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, false, false, errors);
+        assertTrue("Unexpected errors found.", errors.isEmpty());
+
+        store.renameImages(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, false, true, errors);
+        assertTrue("Unexpected errors found.", errors.isEmpty());
+
+        List<String> names =
+                base.getByteStreamGroup(VALID_COLLECTION).getByteStreamGroup(VALID_BOOK_FOLGERSHA2).listByteStreamNames();
+        checkImageIds("FolgersHa2", names);
+        int[] count = countPages(names);
+
+        assertEquals("Unexpected number of front matter pages found.", 7, count[0]);
+        assertEquals("Unexpected number of end matter pages found.", 7, count[2]);
+        assertEquals("Unexpected number of misc pages found.", 3, count[3]);
+
+        assertTrue(names.contains("FolgersHa2.frontmatter.flyleaf.003r.tif"));
+        assertTrue(names.contains("FolgersHa2.endmatter.flyleaf.002v.tif"));
+        assertTrue(names.contains("FolgersHa2.211v.tif"));
+        assertTrue("", names.contains("FolgersHa2.misc.foreedge.tif"));
+        assertTrue("", names.contains("FolgersHa2.misc.tail.tif"));
+    }
+
+    /**
      * Rename zero images if the file map contains multiple target names
      * with the same value. If the operation would succeed, then it would result in
      * multiple images being written to the same file name, ending with data loss.

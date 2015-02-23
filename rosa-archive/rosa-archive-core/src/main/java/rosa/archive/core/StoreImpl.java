@@ -479,16 +479,23 @@ public class StoreImpl implements Store, ArchiveConstants {
             return;
         }
         for (String from : getImageNames(bookStreams)) {
-            String to = fileMap.getMap().get(from);
+            String to = null;
+
+            if (reverse) {
+                for (Map.Entry<String, String> entry : fileMap.getMap().entrySet()) {
+                    if (entry.getValue().equals(from)) {
+                        to = entry.getKey();
+                    }
+                }
+            } else {
+                to = fileMap.getMap().get(from);
+            }
+
             if (to == null || to.isEmpty()) {
                 continue;
             }
 
-            if (reverse) {
-                bookStreams.renameByteStream(to, from);
-            } else {
-                bookStreams.renameByteStream(from, to);
-            }
+            bookStreams.renameByteStream(from, to);
         }
     }
 
@@ -535,8 +542,8 @@ public class StoreImpl implements Store, ArchiveConstants {
             return;
         }
 
-        for (String name : getTranscriptionsNames(bookStreams)) {
-            AnnotatedPage aPage = loadItem(name, bookStreams, AnnotatedPage.class, errors);
+        for (String originalName : getTranscriptionsNames(bookStreams)) {
+            AnnotatedPage aPage = loadItem(originalName, bookStreams, AnnotatedPage.class, errors);
             String referencePage = aPage.getPage();
 
             String imageName = null;
@@ -555,34 +562,29 @@ public class StoreImpl implements Store, ArchiveConstants {
                 continue;
             }
 
-            List<String> parts = new ArrayList<>(Arrays.asList(imageName.split("\\.")));
-            parts.add(1, ArchiveItemType.TRANSCRIPTION_AOR.getIdentifier());
+            // Change the 'filename' attribute of the <page> tag to point to the correct
+            // image name. Write the AnnotationPage back to file.
+            AnnotatedPage page = loadItem(originalName, bookStreams, AnnotatedPage.class, errors);
+            page.setPage(imageName);
+            writeItem(page, bookStreams, AnnotatedPage.class, errors);
 
-            StringBuilder sb = new StringBuilder();
-            boolean isFirst = true;
-            for (String str : parts) {
-                if (isFirst) {
-                    isFirst = false;
-                } else {
-                    sb.append('.');
-                }
-                sb.append(str);
-            }
-            // TODO will not work in Windows...
-            String command = "sed -i s/" + referencePage + "/" + imageName + "/ " + bookStreams.id() + "/" + name;
-
-            Runtime runtime = Runtime.getRuntime();
-            Process proc = runtime.exec(command);
-
-            ByteArrayOutputStream out = new ByteArrayOutputStream();
-            IOUtils.copy(proc.getErrorStream(), out);
-
-            String err = out.toString(UTF_8.name());
-            if (err != null && !err.isEmpty()) {
-                errors.add(err);
-            } else {
+            if (errors.isEmpty()) {
                 // If no errors, rename the transcription file
-                bookStreams.renameByteStream(name, sb.toString().replace(TIF_EXT, XML_EXT));
+                List<String> parts = new ArrayList<>(Arrays.asList(imageName.split("\\.")));
+                parts.add(1, ArchiveItemType.TRANSCRIPTION_AOR.getIdentifier());
+
+                StringBuilder sb = new StringBuilder();
+                boolean isFirst = true;
+                for (String str : parts) {
+                    if (isFirst) {
+                        isFirst = false;
+                    } else {
+                        sb.append('.');
+                    }
+                    sb.append(str);
+                }
+
+                bookStreams.renameByteStream(originalName, sb.toString().replace(TIF_EXT, XML_EXT));
             }
         }
     }
