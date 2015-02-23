@@ -7,18 +7,26 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
+
+import javax.swing.plaf.metal.MetalIconFactory;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 /**
  *
@@ -107,9 +115,59 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertNull(page);
     }
 
-    @Test (expected = UnsupportedOperationException.class)
+    @Test
     public void writeTest() throws IOException {
-        writeObjectAndGetContent(new AnnotatedPage());
+        AnnotatedPage page1 = loadResource(COLLECTION_NAME, BOOK_NAME, "FolgersHa2.aor.024r.xml");
+        assertNotNull(page1);
+
+        page1.setPage("FolgersHa2.000v.tif");
+
+        List<String> lines = writeObjectAndGetWrittenLines(page1);
+
+        assertNotNull(lines);
+        assertEquals(195, lines.size());
+        assertTrue(lines.get(1).startsWith("<transcription"));
+        assertTrue(lines.get(2).contains("filename=\"FolgersHa2.000v.tif\""));
+        assertFalse(lines.get(2).contains("filename=\"FolgersHa2.024r.tif\""));
+
+        int marginalia = 0, underlines = 0, symbols = 0, marks = 0, errata = 0, numerals = 0;
+        for (String line : lines) {
+            if (line.contains("<marginalia")) {
+                marginalia++;
+            } else if (line.contains("<underline")) {
+                underlines++;
+            } else if (line.contains("<symbol")) {
+                symbols++;
+            } else if (line.contains("<mark")) {
+                marks++;
+            } else if (line.contains("<errata")) {
+                errata++;
+            } else if (line.contains("<numeral")) {
+                numerals++;
+            }
+        }
+
+        assertEquals(19, marginalia);
+        assertEquals(34, underlines);
+        assertEquals(3, symbols);
+        assertEquals(32, marks);
+        assertEquals(0, errata);
+        assertEquals(0, numerals);
+    }
+
+    private Document getDocument(String path) throws IOException {
+        try {
+            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            InputStream in = getResourceAsStream(path);
+
+            Document doc = builder.parse(in);
+            in.close();
+
+            doc.normalizeDocument();
+            return doc;
+        } catch (ParserConfigurationException | SAXException e) {
+            throw new IOException("Failed to load XML.", e);
+        }
     }
 
 }
