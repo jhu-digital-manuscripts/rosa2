@@ -3,6 +3,7 @@ package rosa.archive.aor;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ import rosa.archive.model.aor.Underline;
  * Collect stats on AOR annotations and write them out as CSV spreadsheets.
  */
 public class AorStatsCollector {
+    private static final Charset CHARSET = Charset.forName("UTF-8");
     private final AORAnnotatedPageSerializer aor_serializer;
 
     // book id -> stats
@@ -261,14 +263,14 @@ public class AorStatsCollector {
     public void writeBookStats(Path output_dir) throws IOException {
         Path book_csv_path = output_dir.resolve("books.csv");
 
-        try (BufferedWriter out = Files.newBufferedWriter(book_csv_path)) {
+        try (BufferedWriter out = Files.newBufferedWriter(book_csv_path, CHARSET)) {
             write_book_stats(out, book_stats);
         }
 
         for (String book_id: book_stats.keySet()) {
             Path page_csv_path = output_dir.resolve(book_id + ".csv");
 
-            try (BufferedWriter out = Files.newBufferedWriter(page_csv_path)) {
+            try (BufferedWriter out = Files.newBufferedWriter(page_csv_path, CHARSET)) {
                 write_page_stats(out, page_stats.get(book_id));
             }
         }
