@@ -72,7 +72,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         transformers.add(new AnnotationListTransformer(presentationReqFormatter));
         transformers.add(canvasTransformer);
         transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer));
+        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer, new RangeTransformer(presentationReqFormatter)));
         transformers.add(new RangeTransformer(presentationReqFormatter));
         transformers.add(new LayerTransformer(presentationReqFormatter));
 

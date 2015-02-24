@@ -224,9 +224,11 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         
         if (!manifest.getRanges().isEmpty()) {
             jWriter.key("structures").array();
-            
+
             for (Range range: manifest.getRanges()) {
-                writeJsonld(range, jWriter, false);
+                if (range != null) { // TODO find out what is generating NULL ranges...
+                    writeJsonld(range, jWriter, false);
+                }
             }
             
             jWriter.endArray();

@@ -10,7 +10,6 @@ import rosa.archive.model.BookText;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
-import rosa.archive.model.ImageType;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.PresentationRequestType;

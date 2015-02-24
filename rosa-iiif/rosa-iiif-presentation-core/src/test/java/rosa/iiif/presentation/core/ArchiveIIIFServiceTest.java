@@ -60,7 +60,7 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         transformers.add(new AnnotationListTransformer(requestFormatter));
         transformers.add(canvasTransformer);
         transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(requestFormatter, sequenceTransformer));
+        transformers.add(new ManifestTransformer(requestFormatter, sequenceTransformer, new RangeTransformer(requestFormatter)));
         transformers.add(new RangeTransformer(requestFormatter));
 
         TransformerSet transformerSet = new TransformerSet(transformers);
