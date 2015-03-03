@@ -214,6 +214,18 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>rosa</groupId>
+                <artifactId>rosa-website-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>rosa</groupId>
+                <artifactId>rosa-website-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

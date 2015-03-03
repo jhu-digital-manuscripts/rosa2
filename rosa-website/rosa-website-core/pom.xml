@@ -26,6 +26,20 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Internal dependencies -->
+
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-archive-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-website-model</artifactId>
+        </dependency>
+
+        <!-- Testing dependencies -->
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
