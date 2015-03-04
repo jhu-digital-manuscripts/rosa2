@@ -13,3 +13,11 @@ core module
     * When to prepare the CSV data, build time? runtime on init?
   * Use Guice in server code, GIN in client code
 
+**ArchiveDataService**: load data from the archive into the website. Any call to this service from the website
+should cache the results. Use this service to front load data, store the website data in memory (or on file?)
+on website initialization to avoid dependency on the archive?
+
+  * Copy things into the webapp to maintain proper Google crawlability?
+  * BookDataCSV, CollectionCSV, IllustrationTitleCSV: pre-formatted CSVs to be displayed on screen
+    as is. These should be available somewhere for download.
+  * BookCollection, Book: load appropriate archive object on demand.
