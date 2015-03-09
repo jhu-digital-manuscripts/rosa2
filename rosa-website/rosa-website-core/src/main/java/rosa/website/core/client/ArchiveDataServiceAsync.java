@@ -12,7 +12,7 @@ import rosa.website.model.csv.IllustrationTitleCSV;
  */
 public interface ArchiveDataServiceAsync {
     void loadCollectionData(String collection, String lang, AsyncCallback<CollectionCSV> cb);
-    void loadCollectionBookData(String collection, AsyncCallback<BookDataCSV> cb);
+    void loadCollectionBookData(String collection, String lang, AsyncCallback<BookDataCSV> cb);
     void loadIllustrationTitles(String collection, AsyncCallback<IllustrationTitleCSV> cb);
     void loadBookCollection(String collection, AsyncCallback<BookCollection> cb);
     void loadBook(String collection, String book, AsyncCallback<Book> cb);

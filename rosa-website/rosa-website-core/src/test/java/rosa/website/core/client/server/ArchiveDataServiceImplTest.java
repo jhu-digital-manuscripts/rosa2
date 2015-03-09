@@ -5,6 +5,7 @@ import org.junit.Test;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.website.core.client.ArchiveDataService;
 import rosa.website.core.server.ArchiveDataServiceImpl;
+import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVEntry;
 import rosa.website.model.csv.CollectionCSV;
 import rosa.website.model.csv.IllustrationTitleCSV;
@@ -19,11 +20,19 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
 
     private ArchiveDataService service;
 
+    /**
+     *
+     */
     @Before
     public void setup() {
         service = new ArchiveDataServiceImpl(store);
     }
 
+    /**
+     * Test method for loading and creating the illustration titles CSV data.
+     *
+     * @throws IOException .
+     */
     @Test
     public void loadIllustrationTitlesTest() throws IOException {
         IllustrationTitleCSV ills = service.loadIllustrationTitles(VALID_COLLECTION);
@@ -36,6 +45,11 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
                 illustrationsAppearNoMoreThanTwice(ills));
     }
 
+    /**
+     * Test method for loading and creating the collection data CSV.
+     *
+     * @throws IOException .
+     */
     @Test
     public void loadCollectionCSVTest() throws IOException {
         CollectionCSV col = service.loadCollectionData(VALID_COLLECTION, "en");
@@ -79,6 +93,43 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
         assertEquals("Unexpected number of texts found.", "2", row.getValue(CollectionCSV.Column.TEXTS));
         assertEquals("Unexpected number of pages with exactly one illustration found.", "-1", row.getValue(CollectionCSV.Column.FOLIOS_ONE_ILLUS));
         assertEquals("Unexpected number of pages with more than one illustration found.", "-1", row.getValue(CollectionCSV.Column.FOLIOS_MORE_ILLUS));
+    }
+
+    /**
+     * Test method for collection book data CSV.
+     *
+     * @throws IOException .
+     */
+    @Test
+    public void loadCollectionBookDataTest() throws IOException {
+        BookDataCSV data = service.loadCollectionBookData(VALID_COLLECTION, "en");
+        assertNotNull("Collection data CSV missing.", data);
+        assertEquals("Unexpected data ID found.", VALID_COLLECTION, data.getId());
+        assertEquals(2, data.size());
+
+        CSVEntry row = data.getRow(0);
+        assertEquals("Unexpected book ID found.", "LudwigXV7", row.getValue(BookDataCSV.Column.ID));
+        assertEquals("Unexpected book repo found.", "J. Paul Getty Museum", row.getValue(BookDataCSV.Column.REPO));
+        assertEquals("Unexpected book shelfmark found.", "Ludwig XV 7", row.getValue(BookDataCSV.Column.SHELFMARK));
+        assertEquals("Unexpected book common name found", "Ludwig XV7", row.getValue(BookDataCSV.Column.COMMON_NAME));
+        assertEquals("unexpected book current location found.", "Los Angeles", row.getValue(BookDataCSV.Column.CURRENT_LOCATION));
+        assertEquals("Unexpected date found.", "15th century", row.getValue(BookDataCSV.Column.DATE));
+        assertEquals("Unexpected origin found.", "Paris, France", row.getValue(BookDataCSV.Column.ORIGIN));
+        assertEquals("Unexpected type found.", "manuscript", row.getValue(BookDataCSV.Column.TYPE));
+        assertEquals("Unexpected number of illustrations found.", "101", row.getValue(BookDataCSV.Column.NUM_ILLUS));
+        assertEquals("Unexpected number of pages found.", "135", row.getValue(BookDataCSV.Column.NUM_FOLIOS));
+
+        row = data.getRow(1);
+        assertEquals("Unexpected book ID found.", "FolgersHa2", row.getValue(BookDataCSV.Column.ID));
+        assertEquals("Unexpected book repo found.", "Folger Shakespeare Library", row.getValue(BookDataCSV.Column.REPO));
+        assertEquals("Unexpected book shelfmark found.", "H.a.2 (ms. content)", row.getValue(BookDataCSV.Column.SHELFMARK));
+        assertEquals("Unexpected book common name found", "Princeton's Facetie", row.getValue(BookDataCSV.Column.COMMON_NAME));
+        assertEquals("unexpected book current location found.", "Folger Shakespeare Library", row.getValue(BookDataCSV.Column.CURRENT_LOCATION));
+        assertEquals("Unexpected date found.", "1571", row.getValue(BookDataCSV.Column.DATE));
+        assertEquals("Unexpected origin found.", "", row.getValue(BookDataCSV.Column.ORIGIN));
+        assertEquals("Unexpected type found.", "", row.getValue(BookDataCSV.Column.TYPE));
+        assertEquals("Unexpected number of illustrations found.", "-1", row.getValue(BookDataCSV.Column.NUM_ILLUS));
+        assertEquals("Unexpected number of pages found.", "211", row.getValue(BookDataCSV.Column.NUM_FOLIOS));
     }
 
     private int countIllustrationsNotInTestData(IllustrationTitleCSV ills) {

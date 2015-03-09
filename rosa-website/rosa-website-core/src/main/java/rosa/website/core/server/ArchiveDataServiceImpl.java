@@ -48,13 +48,16 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public CollectionCSV loadCollectionData(String collection, String lang) throws IOException {
-        // collection_data.csv
+        // collection_data.csv | collection_data_fr.csv
         BookCollection col = archiveStore.loadBookCollection(collection, null);
 
         List<CSVEntry> entries = new ArrayList<>();
         for (String bookName : col.books()) {
             Book book = archiveStore.loadBook(col, bookName, null);
 
+            if (book == null) {
+                continue;
+            }
             BookMetadata md = book.getBookMetadata(lang);
             BookText rose = null;
 
@@ -94,17 +97,68 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             ));
         }
 
+        Collections.sort(entries, new Comparator<CSVEntry>() {
+            @Override
+            public int compare(CSVEntry o1, CSVEntry o2) {
+                return o1.getValue(CollectionCSV.Column.NAME)
+                        .compareToIgnoreCase(o2.getValue(CollectionCSV.Column.NAME));
+            }
+        });
+
         return new CollectionCSV(collection, entries);
     }
 
     @Override
-    public BookDataCSV loadCollectionBookData(String collection) throws IOException {
-        return null;
+    public BookDataCSV loadCollectionBookData(String collection, String lang) throws IOException {
+        // books.csv | books_fr.csv
+        BookCollection col = loadBookCollection(collection);
+
+        List<CSVEntry> entries = new ArrayList<>();
+        for (String bookName : col.books()) {
+            Book book = archiveStore.loadBook(col, bookName, null);
+            if (book == null) {
+                continue;
+            }
+
+            BookMetadata md = book.getBookMetadata(lang);
+            BookText rose = null;
+
+            for (BookText text : md.getTexts()) {
+                if (text != null && text.getId() != null && text.getId().equals("rose")) {
+                    rose = text;
+                }
+            }
+
+            boolean hasRose = rose != null;
+
+            entries.add(new CSVEntry(
+                    bookName,
+                    md.getRepository(),
+                    md.getShelfmark(),
+                    md.getCommonName(),
+                    md.getCurrentLocation(),
+                    md.getDate(),
+                    md.getOrigin(),
+                    md.getType(),
+                    String.valueOf(hasRose ? rose.getNumberOfIllustrations() : md.getNumberOfIllustrations()),
+                    String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages())
+            ));
+        }
+
+        Collections.sort(entries, new Comparator<CSVEntry>() {
+            @Override
+            public int compare(CSVEntry o1, CSVEntry o2) {
+                return o1.getValue(BookDataCSV.Column.COMMON_NAME)
+                        .compareToIgnoreCase(o2.getValue(BookDataCSV.Column.COMMON_NAME));
+            }
+        });
+
+        return new BookDataCSV(collection, entries);
     }
 
     @Override
     public IllustrationTitleCSV loadIllustrationTitles(String collection) throws IOException {
-        BookCollection col = archiveStore.loadBookCollection(collection, null);
+        BookCollection col = loadBookCollection(collection);
         IllustrationTitles titles = col.getIllustrationTitles();
 
         List<CSVEntry> entries = new ArrayList<>();

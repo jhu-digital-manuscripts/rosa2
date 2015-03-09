@@ -85,6 +85,10 @@ public class BookDataCSV implements Iterable<CSVEntry>, Serializable {
         return rows.get(row).getValue(column);
     }
 
+    public int size() {
+        return rows.size();
+    }
+
     @Override
     public Iterator<CSVEntry> iterator() {
         return rows.iterator();

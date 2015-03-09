@@ -33,7 +33,9 @@ import java.io.IOException;
 @RemoteServiceRelativePath("data")
 public interface ArchiveDataService extends RemoteService {
     /**
-     * Load data about a collection in the archive in CSV format.
+     * Load data about a collection in the archive in CSV format. Data is read from
+     * each book's description/metadata file to populate each column. The columns
+     * are sorted by book (common) name.
      *
      * @param collection book collection in the archive
      * @param lang language code
@@ -46,14 +48,16 @@ public interface ArchiveDataService extends RemoteService {
      * Load data about the books held within a collection in the archive.
      *
      * @param collection collection in the archive
+     * @param lang language code
      * @return book data
      * @throws IOException if the collection or any books within are not available
      */
-    BookDataCSV loadCollectionBookData(String collection) throws IOException;
+    BookDataCSV loadCollectionBookData(String collection, String lang) throws IOException;
 
     /**
      * Get data about illustrations in the collection with respect to book in
-     * the collection.
+     * the collection. Data is adapted from the collection's illustration_titles
+     * data and book data. The columns are sorted by page.
      *
      * @param collection collection in the archive
      * @return illustration titles
