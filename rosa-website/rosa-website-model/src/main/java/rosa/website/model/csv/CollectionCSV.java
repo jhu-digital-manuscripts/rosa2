@@ -88,6 +88,10 @@ public class CollectionCSV implements Iterable<CSVEntry>, Serializable {
         return getRow(row).getValue(header);
     }
 
+    public int size() {
+        return rows.size();
+    }
+
     @Override
     public Iterator<CSVEntry> iterator() {
         return rows.iterator();

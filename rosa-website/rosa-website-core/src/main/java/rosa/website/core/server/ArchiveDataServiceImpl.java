@@ -32,19 +32,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ArchiveDataServiceImpl extends RemoteServiceServlet implements ArchiveDataService {
-    // TODO proper logging...
     private static final Logger logger = Logger.getLogger("");
     private final Store archiveStore;
 
     @Inject
     public ArchiveDataServiceImpl(Store store) {
+        // TODO can i inject a store directly? or do i have to instantiate it manually?
         this.archiveStore = store;
     }
 
     @Override
     public void init() {
-        // TODO initialize the store and stuffs
-
+        // Servlet initialization if necessary
     }
 
     @Override
@@ -58,29 +57,44 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
             BookMetadata md = book.getBookMetadata(lang);
             BookText rose = null;
+
             for (BookText text : md.getTexts()) {
-                // TODO Needs to be abstracted out to distinguish rose/pizan/etc
-                if (text.getTextId().equals("rose")) {
+                if (text == null) {
+                    continue;
+                }
+                // TODO Needs to be abstracted out to distinguish rose/pizan/etc?
+                if (text.getId() != null && text.getId().equals("rose")) {
                     rose = text;
+                    break;
                 }
             }
 
-            boolean hasRose = rose == null;
-            int pagesWithOne = 0;
-            int pagesWithMore = 0;
+            boolean hasRose = rose != null;
+            int[] illusCount = countPagesWithIllustrations(book.getIllustrationTagging());
 
+            /*
+                Roman de la Rose collection counts only those book texts with the identifier 'rose' as only
+                those texts contain Roman de la Rose material.
+                Pizan and AoR do not care about this, and will count all book texts.
+             */
             entries.add(new CSVEntry(
                     bookName, md.getCommonName(), md.getOrigin(), md.getMaterial(),
-                    String.valueOf(hasRose ? -1 : rose.getNumberOfPages()), String.valueOf(md.getHeight()),
-                    String.valueOf(md.getWidth()), String.valueOf(hasRose ? -1 : rose.getLeavesPerGathering()),
-                    String.valueOf(hasRose ? -1 : rose.getLinesPerColumn()),
-                    String.valueOf(hasRose ? -1 : rose.getNumberOfIllustrations()),
-                    String.valueOf(md.getYearStart()), String.valueOf(md.getYearEnd()),
-                    String.valueOf(hasRose ? -1 : rose.getColumnsPerPage()),
-                    String.valueOf(md.getTexts().length), String.valueOf(pagesWithOne), String.valueOf(pagesWithMore)
+                    String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages()),
+                    String.valueOf(md.getHeight()),
+                    String.valueOf(md.getWidth()),
+                    String.valueOf(hasRose ? rose.getLeavesPerGathering() : -1),
+                    String.valueOf(hasRose ? rose.getLinesPerColumn() : -1),
+                    String.valueOf(hasRose ? rose.getNumberOfIllustrations() : -1),
+                    String.valueOf(md.getYearStart()),
+                    String.valueOf(md.getYearEnd()),
+                    String.valueOf(hasRose ? rose.getColumnsPerPage() : -1),
+                    String.valueOf(md.getTexts().length),
+                    String.valueOf(illusCount[0]),
+                    String.valueOf(illusCount[1])
             ));
         }
-        return null;
+
+        return new CollectionCSV(collection, entries);
     }
 
     @Override
@@ -259,15 +273,43 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         return sum;
     }
 
-    private int getNumberOfPagesWithOneIllustration(ImageList images, IllustrationTagging tagging) {
-        int count = 0;
+    /**
+     * Count the number of pages with one illustration and the number of pages
+     * with more than one illustration.
+     *
+     * @param tagging illustration tagging for a book
+     * @return array: {pages with one, pages with more than one}
+     */
+    private int[] countPagesWithIllustrations(IllustrationTagging tagging) {
+        if (tagging == null) {
+            return new int[] {-1, -1};
+        }
 
-        for (BookImage image : images) {
-            for (Illustration ill : tagging) {
+        int one = 0;
+        int more = 0;
 
+        // Counting number of illustrations per page
+        Map<String, Integer> page_count = new HashMap<>();
+        for (Illustration ill : tagging) {
+            String page = ill.getPage();
+
+            if (page_count.containsKey(page)) {
+                page_count.put(page, page_count.get(page) + 1);
+            } else {
+                page_count.put(page, 1);
             }
         }
 
-        return 0;
+        // Count number of pages with one/more illustrations. Any entry into the 'page_count' map
+        // will have at least one.
+        for (Map.Entry<String, Integer> entry : page_count.entrySet()) {
+            if (entry.getValue().equals(1)) {
+                one++;
+            } else {
+                more++;
+            }
+        }
+
+        return new int[] {one, more};
     }
 }

@@ -6,7 +6,7 @@ core module
   * some default widgets to hold data?
     * CSV display: columns must be sortable, provide link to a Google Doc
 
-  * load data from archive
+  * load data from archive (archive data service)
   * adapt to website model (CSVs)
     * Use apache commons CSV? custom CSV parsing in the archive core
     * Website model based off old idea of pre-prepared CSVs located in the WAR?
@@ -21,3 +21,8 @@ on website initialization to avoid dependency on the archive?
   * BookDataCSV, CollectionCSV, IllustrationTitleCSV: pre-formatted CSVs to be displayed on screen
     as is. These should be available somewhere for download.
   * BookCollection, Book: load appropriate archive object on demand.
+
+
+
+For mapping the same Place to multiple URL fragment prefixes:
+<http://stackoverflow.com/questions/10089964/places-that-share-all-but-prefix-or-how-to-use-placehistorymapperwithfactory>

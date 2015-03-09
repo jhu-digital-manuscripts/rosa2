@@ -36,6 +36,7 @@ public interface ArchiveDataService extends RemoteService {
      * Load data about a collection in the archive in CSV format.
      *
      * @param collection book collection in the archive
+     * @param lang language code
      * @return collection data
      * @throws IOException if the collection does not exist or is not available
      */
