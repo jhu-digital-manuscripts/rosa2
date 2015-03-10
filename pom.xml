@@ -30,6 +30,7 @@
 
         <!-- Dependency versions -->
         <guice.version>3.0</guice.version>
+        <gin.version>2.1.2</gin.version>
         <gwt.version>2.7.0</gwt.version>
         <jsonld-java.version>0.5.1</jsonld-java.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
@@ -75,6 +76,12 @@
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
                 <version>${guice.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.gwt.inject</groupId>
+                <artifactId>gin</artifactId>
+                <version>${gin.version}</version>
             </dependency>
 
             <dependency>

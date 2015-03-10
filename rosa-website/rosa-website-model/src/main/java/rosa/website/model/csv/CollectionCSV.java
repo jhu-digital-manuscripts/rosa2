@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Iterator;
 import java.util.List;
 
-public class CollectionCSV implements Iterable<CSVEntry>, Serializable {
+public class CollectionCSV implements CSVData<CollectionCSV.Column>, Serializable {
 
     // collection_data.csv
     public enum Column {
@@ -48,6 +48,12 @@ public class CollectionCSV implements Iterable<CSVEntry>, Serializable {
         this.rows = rows;
     }
 
+    @Override
+    public Column[] columns() {
+        return Column.values();
+    }
+
+    @Override
     public String getId() {
         return id;
     }
@@ -56,10 +62,12 @@ public class CollectionCSV implements Iterable<CSVEntry>, Serializable {
      * @param index row index
      * @return the specified row
      */
+    @Override
     public CSVEntry getRow(int index) {
         return rows.get(index);
     }
 
+    @Override
     public CSVEntry getRow(String id) {
         for (CSVEntry entry : rows) {
             if (entry.getValue(Column.ID).equals(id)) {
@@ -75,6 +83,7 @@ public class CollectionCSV implements Iterable<CSVEntry>, Serializable {
      * @param col column index
      * @return the cell value of the given row, column
      */
+    @Override
     public String getValue(int row, int col) {
         return getRow(row).getValue(col);
     }
@@ -84,10 +93,12 @@ public class CollectionCSV implements Iterable<CSVEntry>, Serializable {
      * @param header column header
      * @return the cell value of the given row and header
      */
+    @Override
     public String getValue(int row, Column header) {
         return getRow(row).getValue(header);
     }
 
+    @Override
     public int size() {
         return rows.size();
     }

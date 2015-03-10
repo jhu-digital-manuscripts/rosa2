@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Iterator;
 import java.util.List;
 
-public class IllustrationTitleCSV implements Iterable<CSVEntry>, Serializable {
+public class IllustrationTitleCSV implements CSVData<IllustrationTitleCSV.Column>, Serializable {
 
     public enum Column {
         LOCATION ("location"),
@@ -34,6 +34,12 @@ public class IllustrationTitleCSV implements Iterable<CSVEntry>, Serializable {
         this.rows = rows;
     }
 
+    @Override
+    public Column[] columns() {
+        return Column.values();
+    }
+
+    @Override
     public String getId() {
         return id;
     }
@@ -42,6 +48,7 @@ public class IllustrationTitleCSV implements Iterable<CSVEntry>, Serializable {
      * @param index row index
      * @return the specified row
      */
+    @Override
     public CSVEntry getRow(int index) {
         return rows.get(index);
     }
@@ -50,6 +57,7 @@ public class IllustrationTitleCSV implements Iterable<CSVEntry>, Serializable {
      * @param title title
      * @return entry by title
      */
+    @Override
     public CSVEntry getRow(String title) {
         for (CSVEntry entry : rows) {
             if (entry.getValue(Column.TITLE).equals(title)) {
@@ -65,6 +73,7 @@ public class IllustrationTitleCSV implements Iterable<CSVEntry>, Serializable {
      * @param col column index
      * @return the cell value of the given row, column
      */
+    @Override
     public String getValue(int row, int col) {
         return rows.get(row).getValue(col);
     }
@@ -74,10 +83,12 @@ public class IllustrationTitleCSV implements Iterable<CSVEntry>, Serializable {
      * @param column column header
      * @return the cell value of the given row and header
      */
+    @Override
     public String getValue(int row, Column column) {
         return rows.get(row).getValue(column);
     }
 
+    @Override
     public int size() {
         return rows.size();
     }
