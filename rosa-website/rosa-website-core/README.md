@@ -74,3 +74,9 @@ They can be declared in the core and used in the web site modules.
   * VIEW_WORKS("works") - CSV view
   * VIEW_TERMS("terms") - static page
   * VIEW_PROPER_NAMES("names") - static page
+
+
+
+Create custom RPC to return static HTML pages? The servlet would take a (String name) argument, tack on a file
+ending if needed and fetch the resource from the server. Return a simple String containing the HTML contents of
+the file.
