@@ -1,4 +1,4 @@
-package rosa.website.test.client.place;
+package rosa.website.core.client.place;
 
 import com.google.gwt.place.shared.Place;
 

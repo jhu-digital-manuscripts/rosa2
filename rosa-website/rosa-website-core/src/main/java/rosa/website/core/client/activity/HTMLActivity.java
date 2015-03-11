@@ -6,23 +6,23 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.StaticResourceServiceAsync;
-import rosa.website.core.client.place.TestPlace;
-import rosa.website.core.client.view.TestView;
+import rosa.website.core.client.place.HTMLPlace;
+import rosa.website.core.client.view.HTMLView;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class TestActivity implements Activity {
-    private static final Logger logger = Logger.getLogger(TestActivity.class.toString());
+public class HTMLActivity implements Activity {
+    private static final Logger logger = Logger.getLogger(HTMLActivity.class.toString());
 
     private String name;
-    private TestView view;
-    private StaticResourceServiceAsync service;
+    private StaticResourceServiceAsync staticResourceService;
+    private HTMLView view;
 
-    public TestActivity(TestPlace place, ClientFactory clientFactory) {
+    public HTMLActivity(HTMLPlace place, ClientFactory clientFactory) {
         this.name = place.getName();
-//        this.view = clientFactory.testView();
-        this.service = clientFactory.staticResourceService();
+        this.staticResourceService = clientFactory.staticResourceService();
+        this.view = clientFactory.htmlView();
     }
 
     @Override
@@ -37,22 +37,22 @@ public class TestActivity implements Activity {
 
     @Override
     public void onStop() {
-
+        view.clear();
     }
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         panel.setWidget(view);
 
-        service.getStaticHtml(name, null, new AsyncCallback<String>() {
+        staticResourceService.getStaticHtml(name, null, new AsyncCallback<String>() {
             @Override
-            public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to get resource.", caught);
+            public void onFailure(Throwable throwable) {
+                logger.log(Level.SEVERE, "Failed to retrieve static HTML page.", throwable);
             }
 
             @Override
-            public void onSuccess(String result) {
-                view.setHTML(result);
+            public void onSuccess(String s) {
+                view.setHTML(s);
             }
         });
     }

@@ -12,10 +12,11 @@ import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.web.bindery.event.shared.EventBus;
-import rosa.website.test.client.nav.RosaActivityMapper;
+import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.mvp.BaseActivityMapper;
 import rosa.website.test.client.nav.DefaultRosaHistoryMapper;
 import rosa.website.test.client.nav.RosaHistoryMapper;
-import rosa.website.test.client.place.HTMLPlace;
+import rosa.website.core.client.place.HTMLPlace;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -24,32 +25,31 @@ public class RosaWebsiteTest implements EntryPoint {
     private static final Logger logger = Logger.getLogger("");
 
     // Will be configured
-    private static final String[] htmlPlaces = {"home", "notHome"};
-    private static final String[] staticPlaces = {"one", "two"};
+    private static final String[] htmlPlaces = {"one", "two"};
 
     /**
      * This is the default place that will load when the application
      * first starts up. When there is no history token to read, this
      * is the place that will be displayed.
      */
-    private Place default_place = new HTMLPlace("home");
+    private Place default_place = new HTMLPlace("one");
 
     private SimplePanel main_content = new SimplePanel();
     private final DockLayoutPanel main = new DockLayoutPanel(Style.Unit.PX);
 
     @Override
     public void onModuleLoad() {
-        ClientFactory clientFactory = new ClientFactory(htmlPlaces);
+        ClientFactory clientFactory = new ClientFactory();
         EventBus eventBus = clientFactory.eventBus();
         final PlaceController placeController = clientFactory.placeController();
 
         // Start ActivityManager for main widget with ActivityMapper
-        ActivityMapper activity_mapper = new RosaActivityMapper(clientFactory);
+        ActivityMapper activity_mapper = new BaseActivityMapper(clientFactory);
         final ActivityManager activity_manager = new ActivityManager(activity_mapper, eventBus);
         activity_manager.setDisplay(main_content);
 
         DefaultRosaHistoryMapper history_mapper = GWT.create(DefaultRosaHistoryMapper.class);
-        RosaHistoryMapper appHistoryMapper = new RosaHistoryMapper(history_mapper, htmlPlaces, staticPlaces);
+        RosaHistoryMapper appHistoryMapper = new RosaHistoryMapper(history_mapper, htmlPlaces);
         final PlaceHistoryHandler history_handler = new PlaceHistoryHandler(appHistoryMapper);
         history_handler.register(placeController, eventBus, default_place);
 

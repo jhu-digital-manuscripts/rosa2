@@ -1,4 +1,4 @@
-package rosa.website.test.client.view;
+package rosa.website.core.client.view;
 
 import com.google.gwt.user.client.ui.IsWidget;
 

@@ -2,8 +2,8 @@ package rosa.website.test.client.nav;
 
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceHistoryMapper;
-import rosa.website.test.client.place.CSVDataPlace;
-import rosa.website.test.client.place.HTMLPlace;
+import rosa.website.core.client.place.CSVDataPlace;
+import rosa.website.core.client.place.HTMLPlace;
 
 import java.util.Arrays;
 import java.util.HashSet;

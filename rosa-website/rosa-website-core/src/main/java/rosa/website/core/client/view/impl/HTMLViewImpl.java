@@ -1,9 +1,9 @@
-package rosa.website.test.client.view.impl;
+package rosa.website.core.client.view.impl;
 
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.ScrollPanel;
-import rosa.website.test.client.view.HTMLView;
+import rosa.website.core.client.view.HTMLView;
 
 public class HTMLViewImpl extends Composite implements HTMLView {
 
