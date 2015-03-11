@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='RosaWebsiteTest'>
+    <inherits name='com.google.gwt.user.User' />
+
+    <inherits name="com.google.gwt.inject.Inject"/>
+    <inherits name="com.google.gwt.logging.Logging"/>
+    <inherits name="com.google.gwt.resources.Resources" />
+    <inherits name="com.google.gwt.activity.Activity"/>
+    <inherits name="com.google.gwt.place.Place"/>
+
+    <inherits name="rosa.website.core.RosaWebsiteCore"/>
+
+    <inherits name='com.google.gwt.user.theme.standard.Standard' />
+
+    <!-- Logging -->
+    <set-property name="gwt.logging.logLevel" value="FINE" />
+    <set-property name="gwt.logging.enabled" value="TRUE"/>
+    <set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
+
+    <entry-point class='rosa.website.test.client.RosaWebsiteTest' />
+
+    <source path='client' />
+    <source path='shared' />
+
+</module>

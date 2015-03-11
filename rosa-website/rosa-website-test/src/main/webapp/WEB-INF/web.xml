@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <!-- remote logging -->
+    <servlet>
+        <servlet-name>remoteLogging</servlet-name>
+        <servlet-class>com.google.gwt.logging.server.RemoteLoggingServiceImpl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>remoteLogging</servlet-name>
+        <url-pattern>/RosaWebsiteTest/remote_logging</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>resourceService</servlet-name>
+        <servlet-class>rosa.website.core.server.StaticResourceServiceImpl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>resourceService</servlet-name>
+        <url-pattern>/RosaWebsiteTest/resource</url-pattern>
+    </servlet-mapping>
+
+    <!-- Default page to serve -->
+    <welcome-file-list>
+        <welcome-file>RosaWebsiteTest.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
