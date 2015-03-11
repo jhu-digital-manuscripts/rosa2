@@ -26,7 +26,7 @@
         <mvn.javadoc.version>2.9.1</mvn.javadoc.version>
         <mvn.assembly.version>2.4.1</mvn.assembly.version>
 	    <mvn.jar.version>2.5</mvn.jar.version>
-        <mvn.gwt.plugin.version>2.6.1</mvn.gwt.plugin.version>
+        <mvn.gwt.plugin.version>2.7.0</mvn.gwt.plugin.version>
 
         <!-- Dependency versions -->
         <guice.version>3.0</guice.version>
