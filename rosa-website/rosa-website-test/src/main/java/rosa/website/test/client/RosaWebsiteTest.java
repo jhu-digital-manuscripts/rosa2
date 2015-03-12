@@ -13,9 +13,9 @@ import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.test.client.nav.DefaultRosaHistoryMapper;
 import rosa.website.core.client.mvp.RosaHistoryMapper;
-import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.test.client.nav.RosaActivityMapper;
 
 import java.util.logging.Level;
@@ -24,21 +24,32 @@ import java.util.logging.Logger;
 public class RosaWebsiteTest implements EntryPoint {
     private static final Logger logger = Logger.getLogger("");
 
-    // Will be configured
-    private static final String[] htmlPlaces = {"one", "two"};
-
     /**
      * This is the default place that will load when the application
      * first starts up. When there is no history token to read, this
      * is the place that will be displayed.
      */
-    private Place default_place = new HTMLPlace("one");
+    private Place default_place;
+    private String[] htmlPlaces;
 
     private SimplePanel main_content = new SimplePanel();
     private final DockLayoutPanel main = new DockLayoutPanel(Style.Unit.PX);
 
     @Override
     public void onModuleLoad() {
+        /*
+        Using an JS variable called 'config' embedded in the host HTML page:
+            var config = {
+                defaultPage: "one",
+                htmlPages: "one,two,three"
+            };
+        Dictionary config = Dictionary.getDictionary("config");
+
+        final String[] htmlPlaces = config.get("htmlPages").split(",");
+        default_place = new HTMLPlace(config.get("defaultPage"));
+        */
+        init();
+
         ClientFactory clientFactory = new ClientFactory();
         EventBus eventBus = clientFactory.eventBus();
         final PlaceController placeController = clientFactory.placeController();
@@ -65,5 +76,12 @@ public class RosaWebsiteTest implements EntryPoint {
                 placeController.goTo(default_place);
             }
         });
+    }
+
+    private void init() {
+        WebsiteConfig config = WebsiteConfig.INSTANCE;
+
+        htmlPlaces = config.htmlPages().split(",");
+        default_place = new HTMLPlace(config.defaultPage());
     }
 }

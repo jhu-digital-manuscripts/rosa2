@@ -28,7 +28,7 @@ public class StaticResourceServiceImpl extends RemoteServiceServlet implements S
         String file_name = prefix
                 + name + (lang != null && !lang.isEmpty() ? "_" + lang : "") + HTML_EXT;
 
-        logger.severe("Trying to retrieve resource. [" + file_name + "]");
+        logger.fine("Trying to retrieve resource. [" + file_name + "]");
 
         String result = null;
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(file_name)) {
