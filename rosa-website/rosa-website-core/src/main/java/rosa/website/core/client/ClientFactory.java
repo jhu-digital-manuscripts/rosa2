@@ -6,10 +6,8 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
-import rosa.website.core.client.view.TestView;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
-import rosa.website.core.client.view.impl.TestViewImpl;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

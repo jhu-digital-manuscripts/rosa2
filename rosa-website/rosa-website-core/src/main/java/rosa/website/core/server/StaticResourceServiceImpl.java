@@ -22,10 +22,13 @@ public class StaticResourceServiceImpl extends RemoteServiceServlet implements S
 
     @Override
     public String getStaticHtml(String name, String lang) {
+        if (name.endsWith(":")) {
+            name = name.replace(":", "");
+        }
         String file_name = prefix
                 + name + (lang != null && !lang.isEmpty() ? "_" + lang : "") + HTML_EXT;
 
-        logger.fine("Trying to retrieve resource. [" + file_name + "]");
+        logger.severe("Trying to retrieve resource. [" + file_name + "]");
 
         String result = null;
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(file_name)) {

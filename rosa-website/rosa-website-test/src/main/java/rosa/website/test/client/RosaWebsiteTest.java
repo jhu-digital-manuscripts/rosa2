@@ -13,10 +13,10 @@ import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.ClientFactory;
-import rosa.website.core.client.mvp.BaseActivityMapper;
 import rosa.website.test.client.nav.DefaultRosaHistoryMapper;
-import rosa.website.test.client.nav.RosaHistoryMapper;
+import rosa.website.core.client.mvp.RosaHistoryMapper;
 import rosa.website.core.client.place.HTMLPlace;
+import rosa.website.test.client.nav.RosaActivityMapper;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -44,7 +44,7 @@ public class RosaWebsiteTest implements EntryPoint {
         final PlaceController placeController = clientFactory.placeController();
 
         // Start ActivityManager for main widget with ActivityMapper
-        ActivityMapper activity_mapper = new BaseActivityMapper(clientFactory);
+        ActivityMapper activity_mapper = new RosaActivityMapper(clientFactory);
         final ActivityManager activity_manager = new ActivityManager(activity_mapper, eventBus);
         activity_manager.setDisplay(main_content);
 

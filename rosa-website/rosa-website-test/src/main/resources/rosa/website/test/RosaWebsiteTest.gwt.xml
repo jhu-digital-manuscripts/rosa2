@@ -7,6 +7,7 @@
     <inherits name="com.google.gwt.resources.Resources" />
     <inherits name="com.google.gwt.activity.Activity"/>
     <inherits name="com.google.gwt.place.Place"/>
+    <inherits name="com.google.gwt.http.HTTP"/>
 
     <inherits name="rosa.website.model.RosaWebsiteModel"/>
     <inherits name="rosa.website.core.RosaWebsiteCore"/>

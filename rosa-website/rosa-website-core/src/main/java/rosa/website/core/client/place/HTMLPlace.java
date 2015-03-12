@@ -19,12 +19,12 @@ public class HTMLPlace extends Place {
 
         @Override
         public HTMLPlace getPlace(String token) {
-            return new HTMLPlace("home");
+            return new HTMLPlace(token);
         }
 
         @Override
         public String getToken(HTMLPlace place) {
-            return "";
+            return place.getName();
         }
     }
 }
