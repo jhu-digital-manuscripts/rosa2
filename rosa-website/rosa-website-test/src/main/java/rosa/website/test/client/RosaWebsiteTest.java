@@ -18,6 +18,8 @@ import rosa.website.test.client.nav.DefaultRosaHistoryMapper;
 import rosa.website.core.client.mvp.RosaHistoryMapper;
 import rosa.website.test.client.nav.RosaActivityMapper;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -30,7 +32,9 @@ public class RosaWebsiteTest implements EntryPoint {
      * is the place that will be displayed.
      */
     private Place default_place;
+    private String collection;
     private String[] htmlPlaces;
+    private Map<String, String> csvPlaces;
 
     private SimplePanel main_content = new SimplePanel();
     private final DockLayoutPanel main = new DockLayoutPanel(Style.Unit.PX);
@@ -60,7 +64,7 @@ public class RosaWebsiteTest implements EntryPoint {
         activity_manager.setDisplay(main_content);
 
         DefaultRosaHistoryMapper history_mapper = GWT.create(DefaultRosaHistoryMapper.class);
-        RosaHistoryMapper appHistoryMapper = new RosaHistoryMapper(history_mapper, htmlPlaces);
+        RosaHistoryMapper appHistoryMapper = new RosaHistoryMapper(history_mapper, collection, htmlPlaces, csvPlaces);
         final PlaceHistoryHandler history_handler = new PlaceHistoryHandler(appHistoryMapper);
         history_handler.register(placeController, eventBus, default_place);
 
@@ -81,7 +85,18 @@ public class RosaWebsiteTest implements EntryPoint {
     private void init() {
         WebsiteConfig config = WebsiteConfig.INSTANCE;
 
+        collection = config.collection();
         htmlPlaces = config.htmlPages().split(",");
         default_place = new HTMLPlace(config.defaultPage());
+
+        String[] csvKeys = config.csvPageNames().split(",");
+        String[] csvData = config.csvDataNames().split(",");
+
+        csvPlaces = new HashMap<>();
+        if (csvKeys.length == csvData.length) {
+            for (int i = 0; i < csvKeys.length; i++) {
+                csvPlaces.put(csvKeys[i], csvData[i]);
+            }
+        }
     }
 }

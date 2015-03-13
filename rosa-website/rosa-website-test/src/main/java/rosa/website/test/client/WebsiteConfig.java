@@ -7,8 +7,11 @@ public interface WebsiteConfig extends Constants {
 
     static WebsiteConfig INSTANCE = GWT.create(WebsiteConfig.class);
 
+    String collection();
     String defaultPage();
     String htmlPages();
     String htmlPrefix();
+    String csvPageNames();
+    String csvDataNames();
 
 }

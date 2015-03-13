@@ -18,6 +18,7 @@ public class ClientFactory {
     private static EventBus event_bus = new SimpleEventBus();
     private static PlaceController place_controller = new PlaceController(event_bus);
     private final StaticResourceServiceAsync staticResourceService = GWT.create(StaticResourceService.class);
+    private final ArchiveDataServiceAsync archiveDataService = GWT.create(ArchiveDataService.class);
 
     private static HTMLView htmlView;
     private static CSVDataView csvDataView;
@@ -35,6 +36,10 @@ public class ClientFactory {
             logger.log(Level.WARNING, "Static resource service not found.");
         }
         return staticResourceService;
+    }
+
+    public ArchiveDataServiceAsync archiveDataService() {
+        return archiveDataService;
     }
 
     public HTMLView htmlView() {
