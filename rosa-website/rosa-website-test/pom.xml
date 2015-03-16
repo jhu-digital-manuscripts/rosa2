@@ -104,12 +104,10 @@
                 </executions>
 
                 <configuration>
-                    <webappDirectory>${build.outputDirectory}</webappDirectory>
+                    <!--<webappDirectory>${build.outputDirectory}</webappDirectory>-->
                     <runTarget>RosaWebsiteTest.html</runTarget>
                     <hostedWebapp>${project.build.directory}/${project.build.finalName}</hostedWebapp>
                     <modules>
-                        <!--<module>rosa.website.model.RosaWebsiteModel</module>-->
-                        <!--<module>rosa.website.core.RosaWebsiteCore</module>-->
                         <module>rosa.website.test.RosaWebsiteTest</module>
                     </modules>
                     <compileSourcesArtifacts>
