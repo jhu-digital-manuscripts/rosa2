@@ -45,12 +45,36 @@
 
         <dependency>
             <groupId>rosa</groupId>
+            <artifactId>rosa-archive-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-archive-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa</groupId>
             <artifactId>rosa-website-model</artifactId>
         </dependency>
 
         <dependency>
             <groupId>rosa</groupId>
             <artifactId>rosa-website-core</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>rosa</groupId>
+                    <artifactId>rosa-archive-model</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>rosa</groupId>
+                    <artifactId>rosa-archive-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>rosa</groupId>
+                    <artifactId>rosa-website-model</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -80,15 +104,20 @@
                 </executions>
 
                 <configuration>
+                    <webappDirectory>${build.outputDirectory}</webappDirectory>
                     <runTarget>RosaWebsiteTest.html</runTarget>
                     <hostedWebapp>${project.build.directory}/${project.build.finalName}</hostedWebapp>
                     <modules>
+                        <!--<module>rosa.website.model.RosaWebsiteModel</module>-->
+                        <!--<module>rosa.website.core.RosaWebsiteCore</module>-->
                         <module>rosa.website.test.RosaWebsiteTest</module>
                     </modules>
                     <compileSourcesArtifacts>
+                        <compileSourcesArtifact>rosa:rosa-archive-model</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa:rosa-archive-core</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-website-model</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-website-search</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-website-viewer</compileSourcesArtifact>
+                        <!--<compileSourcesArtifact>rosa:rosa-website-search</compileSourcesArtifact>-->
+                        <!--<compileSourcesArtifact>rosa:rosa-website-viewer</compileSourcesArtifact>-->
                         <compileSourcesArtifact>rosa:rosa-website-core</compileSourcesArtifact>
                     </compileSourcesArtifacts>
                 </configuration>

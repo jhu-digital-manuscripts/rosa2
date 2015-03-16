@@ -26,12 +26,12 @@
         <mvn.javadoc.version>2.9.1</mvn.javadoc.version>
         <mvn.assembly.version>2.4.1</mvn.assembly.version>
 	    <mvn.jar.version>2.5</mvn.jar.version>
-        <mvn.gwt.plugin.version>2.7.0</mvn.gwt.plugin.version>
+        <mvn.gwt.plugin.version>2.6.1</mvn.gwt.plugin.version>
 
         <!-- Dependency versions -->
         <guice.version>3.0</guice.version>
         <gin.version>2.1.2</gin.version>
-        <gwt.version>2.7.0</gwt.version>
+        <gwt.version>2.6.1</gwt.version>
         <jsonld-java.version>0.5.1</jsonld-java.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons-io.version>2.4</commons-io.version>

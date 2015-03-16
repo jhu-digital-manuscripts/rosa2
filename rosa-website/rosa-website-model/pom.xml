@@ -14,6 +14,7 @@
 
     <build>
         <plugins>
+<!--
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
@@ -27,7 +28,7 @@
                     </execution>
                 </executions>
             </plugin>
-
+-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -36,6 +37,7 @@
                         <id>attach-sources</id>
                         <phase>package</phase>
                         <goals>
+                            <!--<goal>aggregate</goal>-->
                             <goal>jar-no-fork</goal>
                         </goals>
                     </execution>

@@ -7,7 +7,9 @@ import java.util.Iterator;
 public class CSVEntry implements Iterable<String>, Serializable {
     private static final long serialVersionUID = 1L;
 
-    private final String[] values;
+    private String[] values;
+
+    public CSVEntry() {}
 
     /**
      * Create a new row in a CSV.
@@ -18,12 +20,16 @@ public class CSVEntry implements Iterable<String>, Serializable {
         this.values = values;
     }
 
+    public void setValues(String[] values) {
+        this.values = values;
+    }
+
     /**
      * @param column column index
      * @return the cell value for this row at column index.
      */
     public String getValue(int column) {
-        return values[column];
+        return values == null ? null : values[column];
     }
 
     /**
@@ -31,7 +37,7 @@ public class CSVEntry implements Iterable<String>, Serializable {
      * @return the cell value for this row at specified column
      */
     public String getValue(Enum<?> e) {
-        return values[e.ordinal()];
+        return values == null ? null : values[e.ordinal()];
     }
 
     @Override

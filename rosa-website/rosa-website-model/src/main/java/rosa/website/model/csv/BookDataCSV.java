@@ -1,6 +1,7 @@
 package rosa.website.model.csv;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -27,8 +28,12 @@ public class BookDataCSV implements CSVData<BookDataCSV.Column>, Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private final String id;
-    private final List<CSVEntry> rows;
+    private String id;
+    private List<CSVEntry> rows;
+
+    public BookDataCSV() {
+        this.rows = new ArrayList<>();
+    }
 
     /**
      * Create a new BookDataCSV.
@@ -39,6 +44,15 @@ public class BookDataCSV implements CSVData<BookDataCSV.Column>, Serializable {
     public BookDataCSV(String id, List<CSVEntry> rows) {
         this.id = id;
         this.rows = rows;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setRows(List<CSVEntry> rows) {
+        this.rows.clear();
+        this.rows.addAll(rows);
     }
 
     @Override
@@ -110,22 +124,26 @@ public class BookDataCSV implements CSVData<BookDataCSV.Column>, Serializable {
         if (this == o) return true;
         if (!(o instanceof BookDataCSV)) return false;
 
-        BookDataCSV that = (BookDataCSV) o;
+        BookDataCSV dataCSV = (BookDataCSV) o;
 
-        if (rows != null ? !rows.equals(that.rows) : that.rows != null) return false;
+        if (id != null ? !id.equals(dataCSV.id) : dataCSV.id != null) return false;
+        if (rows != null ? !rows.equals(dataCSV.rows) : dataCSV.rows != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return rows != null ? rows.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (rows != null ? rows.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "BookDataCSV{" +
-                "rows=" + rows +
+                "id='" + id + '\'' +
+                ", rows=" + rows +
                 '}';
     }
 }

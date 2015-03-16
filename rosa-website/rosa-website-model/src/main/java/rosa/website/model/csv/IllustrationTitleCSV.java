@@ -1,6 +1,7 @@
 package rosa.website.model.csv;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -20,8 +21,12 @@ public class IllustrationTitleCSV implements CSVData<IllustrationTitleCSV.Column
 
     private static final long serialVersionUID = 1L;
 
-    private final String id;
-    private final List<CSVEntry> rows;
+    private String id;
+    private List<CSVEntry> rows;
+
+    public IllustrationTitleCSV() {
+        this.rows = new ArrayList<>();
+    }
 
     /**
      * Create a new IllustrationTitleCSV.
@@ -32,6 +37,15 @@ public class IllustrationTitleCSV implements CSVData<IllustrationTitleCSV.Column
     public IllustrationTitleCSV(String id, List<CSVEntry> rows) {
         this.id = id;
         this.rows = rows;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setRows(List<CSVEntry> rows) {
+        this.rows.clear();
+        this.rows.addAll(rows);
     }
 
     @Override

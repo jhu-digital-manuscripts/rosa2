@@ -80,7 +80,7 @@
 
     <build>
         <plugins>
-<!--
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
@@ -88,13 +88,21 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>compile</goal>
-                            <goal>test</goal>
+                            <goal>source-jar</goal>
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+<!--
+                <configuration>
+                    <compileSourcesArtifacts>
+                        <sourcesArtifact>rosa:rosa-archive-model</sourcesArtifact>
+                        <sourcesArtifact>rosa:rosa-archive-core</sourcesArtifact>
+                        <sourcesArtifact>rosa:rosa-website-model</sourcesArtifact>
+                    </compileSourcesArtifacts>
+                </configuration>
 -->
+            </plugin>
+<!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -108,6 +116,7 @@
                     </execution>
                 </executions>
             </plugin>
+-->
         </plugins>
     </build>
 
