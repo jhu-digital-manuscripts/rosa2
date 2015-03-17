@@ -1,9 +1,17 @@
 package rosa.website.core.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import com.google.inject.Inject;
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 import org.apache.commons.lang3.math.NumberUtils;
+import rosa.archive.core.ArchiveCoreModule;
+import rosa.archive.core.ByteStreamGroup;
+import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.Store;
+import rosa.archive.core.StoreImpl;
+import rosa.archive.core.check.BookChecker;
+import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -31,25 +39,47 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+// TODO these methods seem to be called twice...
 public class ArchiveDataServiceImpl extends RemoteServiceServlet implements ArchiveDataService {
     private static final Logger logger = Logger.getLogger("");
-    private final Store archiveStore;
+    private static final String DEFAULT_LANGUAGE = "en";
+    private Store archiveStore;
 
-    @Inject
-    public ArchiveDataServiceImpl(Store store) {
-        // TODO can i inject a store directly? or do i have to instantiate it manually?
+    /**
+     * Use for testing.
+     *
+     * @param store a Store for accessing the archive.
+     */
+    ArchiveDataServiceImpl(Store store) {
         this.archiveStore = store;
+    }
+
+    public ArchiveDataServiceImpl() {
+
     }
 
     @Override
     public void init() {
-        // Servlet initialization if necessary
+        logger.info("Initializing ArchiveDataService.");
+        Injector injector = Guice.createInjector(new ArchiveCoreModule());
+
+        ByteStreamGroup base = new FSByteStreamGroup("/tmp/archive");
+        this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class),
+                injector.getInstance(BookCollectionChecker.class), base);
+        logger.info("Archive Store set.");
     }
 
     @Override
     public CollectionCSV loadCollectionData(String collection, String lang) throws IOException {
         // collection_data.csv | collection_data_fr.csv
-        BookCollection col = archiveStore.loadBookCollection(collection, null);
+        logger.info("Loading collection_data. [" + collection + ":" + lang + "]");
+        BookCollection col = loadBookCollection(collection);
+
+        if (col == null) {
+            logger.severe("No book collection found. [" + collection + "]");
+            return null;
+        }
+        lang = initLang(lang);
 
         List<CSVEntry> entries = new ArrayList<>();
         for (String bookName : col.books()) {
@@ -113,14 +143,24 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         // books.csv | books_fr.csv
         BookCollection col = loadBookCollection(collection);
 
+        if (col == null) {
+            logger.severe("No book collection found. [" + collection + "]");
+            return null;
+        }
+
+        lang = initLang(lang);
+
         List<CSVEntry> entries = new ArrayList<>();
         for (String bookName : col.books()) {
-            Book book = archiveStore.loadBook(col, bookName, null);
+            Book book = loadBook(col, bookName);
             if (book == null) {
                 continue;
             }
 
             BookMetadata md = book.getBookMetadata(lang);
+            if (md == null) {
+                continue;
+            }
             BookText rose = null;
 
             for (BookText text : md.getTexts()) {
@@ -159,6 +199,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     @Override
     public IllustrationTitleCSV loadIllustrationTitles(String collection) throws IOException {
         BookCollection col = loadBookCollection(collection);
+        if (col == null) {
+            logger.severe("Failed to load book collection.");
+            return null;
+        }
         IllustrationTitles titles = col.getIllustrationTitles();
 
         List<CSVEntry> entries = new ArrayList<>();
@@ -209,16 +253,50 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public BookCollection loadBookCollection(String collection) throws IOException {
-        return archiveStore.loadBookCollection(collection, null);
+        List<String> errors = new ArrayList<>();
+        BookCollection col = null;
+
+        try {
+            col = archiveStore.loadBookCollection(collection, errors);
+            checkErrors(errors);
+        } catch (Exception e) {
+            // TODO dont catch Exception...
+            logger.log(Level.SEVERE, "An error has occurred while loading a collection. [" + collection + "]", e);
+        }
+
+        logger.info("Book collection loaded. [" + collection + "]");
+        return col;
     }
 
     @Override
     public Book loadBook(String collection, String book) throws IOException {
-        return archiveStore.loadBook(
-                archiveStore.loadBookCollection(collection, null),
-                book,
-                null
-        );
+        return loadBook(loadBookCollection(collection), book);
+    }
+
+    private Book loadBook(BookCollection collection, String book) throws IOException {
+        List<String> errors = new ArrayList<>();
+        Book b = null;
+
+        try {
+            b = archiveStore.loadBook(collection, book, errors);
+            checkErrors(errors);
+        } catch (Exception e) {
+            // TODO dont catch Exception...
+            logger.log(Level.SEVERE, "An error has occurred while loading a book. [" + collection + ":" + book + "]", e);
+        }
+
+        return b;
+    }
+
+    private void checkErrors(List<String> errors) {
+        if (!errors.isEmpty()) {
+            StringBuilder sb = new StringBuilder("Error loading book collection.\n");
+            for (String s : errors) {
+                sb.append(s);
+                sb.append('\n');
+            }
+            logger.warning(sb.toString());
+        }
     }
 
     /**
@@ -365,5 +443,13 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
 
         return new int[] {one, more};
+    }
+
+    private String initLang(String lang) {
+        if (lang == null || lang.isEmpty()) {
+            return DEFAULT_LANGUAGE;
+        }
+
+        return lang;
     }
 }

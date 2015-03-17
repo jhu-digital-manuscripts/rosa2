@@ -27,4 +27,28 @@ public class HTMLPlace extends Place {
             return place.getName();
         }
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof HTMLPlace)) return false;
+
+        HTMLPlace htmlPlace = (HTMLPlace) o;
+
+        if (name != null ? !name.equals(htmlPlace.name) : htmlPlace.name != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return name != null ? name.hashCode() : 0;
+    }
+
+    @Override
+    public String toString() {
+        return "HTMLPlace{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

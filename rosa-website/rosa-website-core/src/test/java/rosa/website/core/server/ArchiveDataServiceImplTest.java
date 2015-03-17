@@ -1,4 +1,4 @@
-package rosa.website.core.client.server;
+package rosa.website.core.server;
 
 import org.junit.Before;
 import org.junit.Test;

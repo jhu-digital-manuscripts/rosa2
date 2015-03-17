@@ -65,6 +65,7 @@ public class CSVDataActivity implements Activity {
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        logger.info("Starting CSVDataActivity. Current state: " + place.toString());
         panel.setWidget(view);
 
         CsvType type = getType(place.getName());
@@ -115,6 +116,7 @@ public class CSVDataActivity implements Activity {
 
     private <T> void handleCsvData(CSVData<T> data) {
         // TODO
+        logger.fine("Done CSVDataActivity.\n" + data.toString());
         view.setData("Data found. " + data.toString());
     }
 

@@ -26,6 +26,16 @@
         <url-pattern>/RosaWebsiteTest/resource</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>archiveDataService</servlet-name>
+        <servlet-class>rosa.website.core.server.ArchiveDataServiceImpl</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>archiveDataService</servlet-name>
+        <url-pattern>/RosaWebsiteTest/data</url-pattern>
+    </servlet-mapping>
+
     <!-- Default page to serve -->
     <welcome-file-list>
         <welcome-file>RosaWebsiteTest.html</welcome-file>
