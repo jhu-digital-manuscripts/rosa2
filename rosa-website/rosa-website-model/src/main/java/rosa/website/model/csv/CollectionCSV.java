@@ -1,11 +1,9 @@
 package rosa.website.model.csv;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
-public class CollectionCSV implements CSVData<CollectionCSV.Column>, Serializable {
+public class CollectionCSV extends BaseCSVData<CollectionCSV.Column> implements CSVData<CollectionCSV.Column>, Serializable {
 
     // collection_data.csv
     public enum Column {
@@ -35,11 +33,8 @@ public class CollectionCSV implements CSVData<CollectionCSV.Column>, Serializabl
 
     private static final long serialVersionUID = 1L;
 
-    private String id;
-    private List<CSVEntry> rows;
-
     public CollectionCSV() {
-        this.rows = new ArrayList<>();
+        super();
     }
 
     /**
@@ -49,36 +44,12 @@ public class CollectionCSV implements CSVData<CollectionCSV.Column>, Serializabl
      * @param rows row data
      */
     public CollectionCSV(String id, List<CSVEntry> rows) {
-        this.id = id;
-        this.rows = rows;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public void setRows(List<CSVEntry> rows) {
-        this.rows.clear();
-        this.rows.addAll(rows);
+        super(id, rows);
     }
 
     @Override
     public Column[] columns() {
         return Column.values();
-    }
-
-    @Override
-    public String getId() {
-        return id;
-    }
-
-    /**
-     * @param index row index
-     * @return the specified row
-     */
-    @Override
-    public CSVEntry getRow(int index) {
-        return rows.get(index);
     }
 
     @Override
@@ -90,61 +61,6 @@ public class CollectionCSV implements CSVData<CollectionCSV.Column>, Serializabl
         }
 
         return null;
-    }
-
-    /**
-     * @param row row index
-     * @param col column index
-     * @return the cell value of the given row, column
-     */
-    @Override
-    public String getValue(int row, int col) {
-        return getRow(row).getValue(col);
-    }
-
-    /**
-     * @param row row index
-     * @param header column header
-     * @return the cell value of the given row and header
-     */
-    @Override
-    public String getValue(int row, Column header) {
-        return getRow(row).getValue(header);
-    }
-
-    @Override
-    public int size() {
-        return rows.size();
-    }
-
-    @Override
-    public List<CSVEntry> asList() {
-        return new ArrayList<>(rows);
-    }
-
-    @Override
-    public Iterator<CSVEntry> iterator() {
-        return rows.iterator();
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof CollectionCSV)) return false;
-
-        CollectionCSV that = (CollectionCSV) o;
-
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (rows != null ? !rows.equals(that.rows) : that.rows != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (rows != null ? rows.hashCode() : 0);
-        return result;
     }
 
     @Override

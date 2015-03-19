@@ -12,21 +12,16 @@ import rosa.archive.core.StoreImpl;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
-import rosa.archive.model.BookImage;
-import rosa.archive.model.BookImageLocation;
-import rosa.archive.model.BookMetadata;
-import rosa.archive.model.BookText;
-import rosa.archive.model.Illustration;
-import rosa.archive.model.IllustrationTagging;
-import rosa.archive.model.IllustrationTitles;
-import rosa.archive.model.ImageList;
+import rosa.archive.model.*;
 import rosa.website.core.client.ArchiveDataService;
 import rosa.website.model.csv.BookDataCSV;
+import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVEntry;
+import rosa.website.model.csv.CharacterNamesCSV;
 import rosa.website.model.csv.CollectionCSV;
+import rosa.website.model.csv.CsvType;
 import rosa.website.model.csv.IllustrationTitleCSV;
+import rosa.website.model.csv.NarrativeSectionsCSV;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -70,6 +65,26 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     }
 
     @Override
+    public CSVData loadCSVData(String collection, String lang, CsvType type) throws IOException {
+        logger.info("Loading CSV data. [" + collection + ":" + lang + ":" + type + "]");
+
+        switch (type) {
+            case COLLECTION_DATA:
+                return loadCollectionData(collection, lang);
+            case COLLECTION_BOOKS:
+                return loadCollectionBookData(collection, lang);
+            case ILLUSTRATIONS:
+                return loadIllustrationTitles(collection);
+            case CHARACTERS:
+                return loadCharacterNames(collection);
+            case NARRATIVE_SECTIONS:
+                return loadNarrativeSections(collection);
+            default:
+                throw new IllegalArgumentException("CSV type not found.");
+        }
+    }
+
+    @Override
     public CollectionCSV loadCollectionData(String collection, String lang) throws IOException {
         // collection_data.csv | collection_data_fr.csv
         logger.info("Loading collection_data. [" + collection + ":" + lang + "]");
@@ -79,7 +94,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             logger.severe("No book collection found. [" + collection + "]");
             return null;
         }
-        lang = initLang(lang);
+        lang = checkLang(lang);
 
         List<CSVEntry> entries = new ArrayList<>();
         for (String bookName : col.books()) {
@@ -148,7 +163,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             return null;
         }
 
-        lang = initLang(lang);
+        lang = checkLang(lang);
 
         List<CSVEntry> entries = new ArrayList<>();
         for (String bookName : col.books()) {
@@ -273,6 +288,47 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         return loadBook(loadBookCollection(collection), book);
     }
 
+    private CharacterNamesCSV loadCharacterNames(String collection) throws IOException {
+        logger.info("Loading character_names.csv for collection [" + collection + "]");
+        BookCollection col = loadBookCollection(collection);
+
+        List<CSVEntry> entries = new ArrayList<>();
+
+        CharacterNames names = col.getCharacterNames();
+        for (String id : names.getAllCharacterIds()) {
+            CharacterName name = names.getCharacterName(id);
+            entries.add(new CSVEntry(id, name.getNameInLanguage("en"), name.getNameInLanguage("fr")));
+        }
+
+        return new CharacterNamesCSV(names.getId(), entries);
+    }
+
+    private NarrativeSectionsCSV loadNarrativeSections(String collection) throws IOException {
+        logger.info("Loading narrative sections. [" + collection + "]");
+        BookCollection col = loadBookCollection(collection);
+
+        List<CSVEntry> entries = new ArrayList<>();
+        NarrativeSections sections = col.getNarrativeSections();
+
+        if (sections == null) {
+            return null;
+        }
+
+        for (NarrativeScene scene : sections.asScenes()) {
+            if (scene == null) {
+                continue;
+            }
+
+            entries.add(new CSVEntry(
+                    scene.getId(),
+                    scene.getDescription(),
+                    scene.getCriticalEditionStart() + "-" + scene.getCriticalEditionEnd()
+            ));
+        }
+
+        return new NarrativeSectionsCSV(sections.getId(), entries);
+    }
+
     private Book loadBook(BookCollection collection, String book) throws IOException {
         List<String> errors = new ArrayList<>();
         Book b = null;
@@ -286,17 +342,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
 
         return b;
-    }
-
-    private void checkErrors(List<String> errors) {
-        if (!errors.isEmpty()) {
-            StringBuilder sb = new StringBuilder("Error loading book collection.\n");
-            for (String s : errors) {
-                sb.append(s);
-                sb.append('\n');
-            }
-            logger.warning(sb.toString());
-        }
     }
 
     /**
@@ -445,11 +490,26 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         return new int[] {one, more};
     }
 
-    private String initLang(String lang) {
+    /**
+     * @param lang language code
+     * @return the valid language code
+     */
+    private String checkLang(String lang) {
         if (lang == null || lang.isEmpty()) {
             return DEFAULT_LANGUAGE;
         }
 
         return lang;
+    }
+
+    private void checkErrors(List<String> errors) {
+        if (!errors.isEmpty()) {
+            StringBuilder sb = new StringBuilder("Error loading book collection.\n");
+            for (String s : errors) {
+                sb.append(s);
+                sb.append('\n');
+            }
+            logger.warning(sb.toString());
+        }
     }
 }

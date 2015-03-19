@@ -71,6 +71,7 @@ public class RosaWebsiteTest implements EntryPoint {
         history_handler.handleCurrentHistory();
 
         main.add(main_content);
+        main.setSize("1000px", "600px");
         RootLayoutPanel.get().add(main);
 
         GWT.setUncaughtExceptionHandler(new GWT.UncaughtExceptionHandler() {

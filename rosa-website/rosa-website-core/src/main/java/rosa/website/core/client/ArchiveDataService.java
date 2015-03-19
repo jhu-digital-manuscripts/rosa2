@@ -5,7 +5,9 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.website.model.csv.BookDataCSV;
+import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
+import rosa.website.model.csv.CsvType;
 import rosa.website.model.csv.IllustrationTitleCSV;
 
 import java.io.IOException;
@@ -32,6 +34,7 @@ import java.io.IOException;
  */
 @RemoteServiceRelativePath("data")
 public interface ArchiveDataService extends RemoteService {
+    CSVData loadCSVData(String collection, String lang, CsvType type) throws IOException;
     /**
      * Load data about a collection in the archive in CSV format. Data is read from
      * each book's description/metadata file to populate each column. The columns

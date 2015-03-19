@@ -15,11 +15,16 @@ import java.util.logging.Logger;
 
 public class CsvWidget extends Composite {
     private static final Logger logger = Logger.getLogger(CsvWidget.class.toString());
-//    private static final Pattern NUM_PATTERN = Pattern.compile("^-?\\d+(\\.\\d+)?$");
+//    private static final Pattern NUM_PATTERN = Pattern.compile("^-?\\d+(\\.\\d+)?$");  // Does not work with GWT
+//    private static final RegExp NUM_REGEX = RegExp.compile("^-?\\d+(\\.\\d+)?$");   // Must inherit RegExp module in .gwt.xml, worth it?
+    private static final String NUM_REGEX = "^-?\\d+(\\.\\d+)?$";
 
     private final CellTable<CSVEntry> table;
     private final ListDataProvider<CSVEntry> dataProvider;
 
+    /**
+     * Create a new blank CsvWidget.
+     */
     public CsvWidget() {
         SimplePanel root = new SimplePanel();
 
@@ -41,7 +46,6 @@ public class CsvWidget extends Composite {
         ListHandler<CSVEntry> sortHandler = new ListHandler<CSVEntry>(dataProvider.getList()) {
             @Override
             public void onColumnSort(ColumnSortEvent event) {
-                logger.info("Column sort event!");
                 super.onColumnSort(event);
                 dataProvider.refresh();
             }
@@ -91,6 +95,13 @@ public class CsvWidget extends Composite {
             sortHandler.setComparator(column, new Comparator<CSVEntry>() {
                 @Override
                 public int compare(CSVEntry o1, CSVEntry o2) {
+                    String val1 = o1.getValue(col);
+                    String val2 = o2.getValue(col);
+
+                    if (val1.matches(NUM_REGEX) && val2.matches(NUM_REGEX)) {
+                        return Integer.parseInt(val1) - Integer.parseInt(val2);
+                    }
+
                     return o1.getValue(col).compareToIgnoreCase(o2.getValue(col));
                 }
             });

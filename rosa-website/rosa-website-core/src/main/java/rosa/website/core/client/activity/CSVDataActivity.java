@@ -11,6 +11,7 @@ import rosa.website.core.client.view.CSVDataView;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
+import rosa.website.model.csv.CsvType;
 import rosa.website.model.csv.IllustrationTitleCSV;
 
 import java.util.logging.Level;
@@ -18,18 +19,6 @@ import java.util.logging.Logger;
 
 public class CSVDataActivity implements Activity {
     private static final Logger logger = Logger.getLogger(CSVDataActivity.class.toString());
-
-    private enum CsvType {
-        COLLECTION_DATA("collection_data.csv"),
-        COLLECTION_BOOKS("books.csv"),
-        ILLUSTRATIONS("illustration_titles.csv");
-
-        private String key;
-
-        CsvType(String key) {
-            this.key = key;
-        }
-    }
 
     private final CSVDataPlace place;
     private CSVDataView view;
@@ -69,60 +58,71 @@ public class CSVDataActivity implements Activity {
         panel.setWidget(view);
 
         CsvType type = getType(place.getName());
-        switch (type) {
-            case COLLECTION_DATA:
-                service.loadCollectionData(place.getCollection(), null, new AsyncCallback<CollectionCSV>() {
-                    @Override
-                    public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, "Failed to load collection data.", caught);
-                    }
 
-                    @Override
-                    public void onSuccess(CollectionCSV result) {
-                        handleCsvData(result);
-                    }
-                });
-                break;
-            case COLLECTION_BOOKS:
-                service.loadCollectionBookData(place.getCollection(), null, new AsyncCallback<BookDataCSV>() {
-                    @Override
-                    public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, "Failed to load collection book data.", caught);
-                    }
+        service.loadCSVData(place.getCollection(), "en", type, new AsyncCallback<CSVData>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                logger.log(Level.SEVERE, "Failed to load CSV data.", caught);
+            }
 
-                    @Override
-                    public void onSuccess(BookDataCSV result) {
-                        handleCsvData(result);
-                    }
-                });
-                break;
-            case ILLUSTRATIONS:
-                service.loadIllustrationTitles(place.getCollection(), new AsyncCallback<IllustrationTitleCSV>() {
-                    @Override
-                    public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, "Failed to load illustration titles data.", caught);
-                    }
-
-                    @Override
-                    public void onSuccess(IllustrationTitleCSV result) {
-                        handleCsvData(result);
-                    }
-                });
-                break;
-            default:
-                break;
-        }
+            @Override
+            public void onSuccess(CSVData result) {
+                handleCsvData(result);
+            }
+        });
+//        switch (type) {
+//            case COLLECTION_DATA:
+//                service.loadCollectionData(place.getCollection(), null, new AsyncCallback<CollectionCSV>() {
+//                    @Override
+//                    public void onFailure(Throwable caught) {
+//                        logger.log(Level.SEVERE, "Failed to load collection data.", caught);
+//                    }
+//
+//                    @Override
+//                    public void onSuccess(CollectionCSV result) {
+//                        handleCsvData(result);
+//                    }
+//                });
+//                break;
+//            case COLLECTION_BOOKS:
+//                service.loadCollectionBookData(place.getCollection(), null, new AsyncCallback<BookDataCSV>() {
+//                    @Override
+//                    public void onFailure(Throwable caught) {
+//                        logger.log(Level.SEVERE, "Failed to load collection book data.", caught);
+//                    }
+//
+//                    @Override
+//                    public void onSuccess(BookDataCSV result) {
+//                        handleCsvData(result);
+//                    }
+//                });
+//                break;
+//            case ILLUSTRATIONS:
+//                service.loadIllustrationTitles(place.getCollection(), new AsyncCallback<IllustrationTitleCSV>() {
+//                    @Override
+//                    public void onFailure(Throwable caught) {
+//                        logger.log(Level.SEVERE, "Failed to load illustration titles data.", caught);
+//                    }
+//
+//                    @Override
+//                    public void onSuccess(IllustrationTitleCSV result) {
+//                        handleCsvData(result);
+//                    }
+//                });
+//                break;
+//            default:
+//                break;
+//        }
     }
 
     private void handleCsvData(CSVData data) {
-        // TODO
-        logger.fine("Done CSVDataActivity.\n" + data.toString());
+        logger.fine("Done CSVDataActivity.\n" + data.getId());
         view.setData(data);
     }
 
     private CsvType getType(String name) {
         for (CsvType type : CsvType.values()) {
-            if (type.key.equals(name)) {
+            if (type.getKey().equals(name)) {
                 return type;
             }
         }

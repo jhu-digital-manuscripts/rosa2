@@ -8,8 +8,6 @@ public interface CSVDataView extends IsWidget {
 
     }
 
-//    <T> void setData(CSVData<T> data);
-
     void clear();
 
     void setData(CSVData data);

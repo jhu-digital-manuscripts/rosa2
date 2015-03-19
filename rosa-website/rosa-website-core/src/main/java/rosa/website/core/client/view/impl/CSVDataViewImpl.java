@@ -8,11 +8,10 @@ import rosa.website.model.csv.CSVData;
 
 public class CSVDataViewImpl extends Composite implements CSVDataView {
 
-    private ScrollPanel root;
     private CsvWidget display;
 
     public CSVDataViewImpl() {
-        root = new ScrollPanel();
+        ScrollPanel root = new ScrollPanel();
         display = new CsvWidget();
 
         root.setWidget(display);

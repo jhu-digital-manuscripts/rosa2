@@ -75,6 +75,10 @@ public class CharacterNames implements HasId, Serializable {
         return names.keySet();
     }
 
+    public CharacterName getCharacterName(String id) {
+        return names.get(id);
+    }
+
     public void addCharacterName(CharacterName name) {
         names.put(name.getId(), name);
     }
