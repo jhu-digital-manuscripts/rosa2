@@ -1,27 +1,33 @@
 package rosa.website.core.client.view.impl;
 
 import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.user.client.ui.ScrollPanel;
 import rosa.website.core.client.view.CSVDataView;
+import rosa.website.core.client.widget.CsvWidget;
+import rosa.website.model.csv.CSVData;
 
 public class CSVDataViewImpl extends Composite implements CSVDataView {
 
-    private SimplePanel root;
+    private ScrollPanel root;
+    private CsvWidget display;
 
     public CSVDataViewImpl() {
-        root = new SimplePanel();
+        root = new ScrollPanel();
+        display = new CsvWidget();
+
+        root.setWidget(display);
+        root.setSize("100%", "100%");
 
         initWidget(root);
     }
 
     @Override
     public void clear() {
-        root.clear();
+        display.clear();
     }
 
     @Override
-    public void setData(String data) {
-        root.setWidget(new Label(data));
+    public void setData(CSVData data) {
+        display.setData(data);
     }
 }

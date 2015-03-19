@@ -118,6 +118,11 @@ public class CollectionCSV implements CSVData<CollectionCSV.Column>, Serializabl
     }
 
     @Override
+    public List<CSVEntry> asList() {
+        return new ArrayList<>(rows);
+    }
+
+    @Override
     public Iterator<CSVEntry> iterator() {
         return rows.iterator();
     }

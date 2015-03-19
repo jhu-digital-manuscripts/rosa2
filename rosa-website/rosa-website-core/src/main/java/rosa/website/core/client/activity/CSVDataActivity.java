@@ -114,10 +114,10 @@ public class CSVDataActivity implements Activity {
         }
     }
 
-    private <T> void handleCsvData(CSVData<T> data) {
+    private void handleCsvData(CSVData data) {
         // TODO
         logger.fine("Done CSVDataActivity.\n" + data.toString());
-        view.setData("Data found. " + data.toString());
+        view.setData(data);
     }
 
     private CsvType getType(String name) {

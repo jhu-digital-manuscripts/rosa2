@@ -108,6 +108,11 @@ public class IllustrationTitleCSV implements CSVData<IllustrationTitleCSV.Column
     }
 
     @Override
+    public List<CSVEntry> asList() {
+        return new ArrayList<>(rows);
+    }
+
+    @Override
     public Iterator<CSVEntry> iterator() {
         return rows.iterator();
     }

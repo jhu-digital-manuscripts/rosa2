@@ -110,6 +110,11 @@ public class BookDataCSV implements CSVData<BookDataCSV.Column>, Serializable {
     }
 
     @Override
+    public List<CSVEntry> asList() {
+        return new ArrayList<>(rows);
+    }
+
+    @Override
     public Column[] columns() {
         return Column.values();
     }
