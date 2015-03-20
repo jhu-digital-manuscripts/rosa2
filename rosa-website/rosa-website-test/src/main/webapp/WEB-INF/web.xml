@@ -29,6 +29,10 @@
     <servlet>
         <servlet-name>archiveDataService</servlet-name>
         <servlet-class>rosa.website.core.server.ArchiveDataServiceImpl</servlet-class>
+        <init-param>
+            <param-name>archive-path</param-name>
+            <param-value>/tmp/archive</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>

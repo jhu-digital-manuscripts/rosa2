@@ -58,7 +58,13 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         logger.info("Initializing ArchiveDataService.");
         Injector injector = Guice.createInjector(new ArchiveCoreModule());
 
-        ByteStreamGroup base = new FSByteStreamGroup("/tmp/archive");
+        String path = getServletConfig().getInitParameter("archive-path");
+        if (path == null || path.isEmpty()) {
+            logger.warning("'archive-path' not specified. Using default value [/mnt]");
+            path = "/mnt";
+        }
+
+        ByteStreamGroup base = new FSByteStreamGroup(path);
         this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class),
                 injector.getInstance(BookCollectionChecker.class), base);
         logger.info("Archive Store set.");
