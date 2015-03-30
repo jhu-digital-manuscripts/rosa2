@@ -10,6 +10,7 @@ import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CsvType;
+import rosa.website.rose.client.RosaHistoryConfig;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -54,8 +55,13 @@ public class CSVDataActivity implements Activity {
         logger.info("Starting CSVDataActivity. Current state: " + place.toString());
         panel.setWidget(view);
 
-        CsvType type = getType(place.getName());
+        CsvType type = RosaHistoryConfig.getCsvType(place.getName());
+        if (type == null) {
+            logger.warning("No CSV data associated associated with this place. " + place.toString());
+            return;
+        }
 
+        // TODO cache CSVData here?
         service.loadCSVData(place.getCollection(), "en", type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
@@ -72,15 +78,5 @@ public class CSVDataActivity implements Activity {
     private void handleCsvData(CSVData data) {
         logger.fine("Done CSVDataActivity.\n" + data.getId());
         view.setData(data);
-    }
-
-    private CsvType getType(String name) {
-        for (CsvType type : CsvType.values()) {
-            if (type.getKey().equals(name)) {
-                return type;
-            }
-        }
-
-        return null;
     }
 }

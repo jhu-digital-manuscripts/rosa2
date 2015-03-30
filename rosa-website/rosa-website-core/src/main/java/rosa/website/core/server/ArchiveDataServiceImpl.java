@@ -34,7 +34,7 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-// TODO these methods seem to be called twice...
+// TODO books/book collections must be cached
 public class ArchiveDataServiceImpl extends RemoteServiceServlet implements ArchiveDataService {
     private static final Logger logger = Logger.getLogger("");
     private static final String DEFAULT_LANGUAGE = "en";

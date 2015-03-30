@@ -16,14 +16,4 @@ public enum CsvType {
     public String getKey() {
         return key;
     }
-
-    public static CsvType getType(String type) {
-        for (CsvType t : CsvType.values()) {
-            if (t.key.equals(type)) {
-                return t;
-            }
-        }
-
-        return null;
-    }
 }
