@@ -9,15 +9,9 @@ import rosa.website.core.client.view.HTMLView;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class ClientFactory {
-    private static final Logger logger = Logger.getLogger(ClientFactory.class.toString());
-
     private static EventBus event_bus = new SimpleEventBus();
     private static PlaceController place_controller = new PlaceController(event_bus);
-    private final StaticResourceServiceAsync staticResourceService = GWT.create(StaticResourceService.class);
     private final ArchiveDataServiceAsync archiveDataService = GWT.create(ArchiveDataService.class);
 
     private static HTMLView htmlView;
@@ -29,13 +23,6 @@ public class ClientFactory {
 
     public PlaceController placeController() {
         return place_controller;
-    }
-
-    public StaticResourceServiceAsync staticResourceService() {
-        if (staticResourceService == null) {
-            logger.log(Level.WARNING, "Static resource service not found.");
-        }
-        return staticResourceService;
     }
 
     public ArchiveDataServiceAsync archiveDataService() {

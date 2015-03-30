@@ -1,13 +1,14 @@
 package rosa.website.core.client.place;
 
 import com.google.gwt.place.shared.Place;
-import com.google.gwt.place.shared.PlaceTokenizer;
 
 public class HTMLPlace extends Place {
 
+    private final String collection;
     private final String name;
 
-    public HTMLPlace(String name) {
+    public HTMLPlace(String collection, String name) {
+        this.collection = collection;
         this.name = name;
     }
 
@@ -15,17 +16,8 @@ public class HTMLPlace extends Place {
         return name;
     }
 
-    public static class Tokenizer implements PlaceTokenizer<HTMLPlace> {
-
-        @Override
-        public HTMLPlace getPlace(String token) {
-            return new HTMLPlace(token);
-        }
-
-        @Override
-        public String getToken(HTMLPlace place) {
-            return place.getName();
-        }
+    public String getCollection() {
+        return collection;
     }
 
     @Override
@@ -35,20 +27,23 @@ public class HTMLPlace extends Place {
 
         HTMLPlace htmlPlace = (HTMLPlace) o;
 
-        if (name != null ? !name.equals(htmlPlace.name) : htmlPlace.name != null) return false;
+        if (collection != null ? !collection.equals(htmlPlace.collection) : htmlPlace.collection != null) return false;
+        return !(name != null ? !name.equals(htmlPlace.name) : htmlPlace.name != null);
 
-        return true;
     }
 
     @Override
     public int hashCode() {
-        return name != null ? name.hashCode() : 0;
+        int result = collection != null ? collection.hashCode() : 0;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "HTMLPlace{" +
-                "name='" + name + '\'' +
+                "collection='" + collection + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }

@@ -39,6 +39,7 @@ public class CsvWidget extends Composite {
         initWidget(root);
     }
 
+    @SuppressWarnings("unchecked")
     public void setData(CSVData data) {
         clear();
 

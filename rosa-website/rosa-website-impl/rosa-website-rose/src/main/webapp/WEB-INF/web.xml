@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <!-- remote logging -->
+    <servlet>
+        <servlet-name>remoteLogging</servlet-name>
+        <servlet-class>com.google.gwt.logging.server.RemoteLoggingServiceImpl</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>remoteLogging</servlet-name>
+        <url-pattern>/RosaWebsiteRose/remote_logging</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>archiveDataService</servlet-name>
+        <servlet-class>rosa.website.core.server.ArchiveDataServiceImpl</servlet-class>
+        <init-param>
+            <param-name>archive-path</param-name>
+            <param-value>/tmp/archive</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>archiveDataService</servlet-name>
+        <url-pattern>/RosaWebsiteRose/data</url-pattern>
+    </servlet-mapping>
+
+    <!-- Default page to serve -->
+    <welcome-file-list>
+        <welcome-file>RosaWebsiteRose.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
