@@ -12,6 +12,27 @@
     <artifactId>rosa-website-impl-rose</artifactId>
     <packaging>war</packaging>
 
+    <profiles>
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <properties>
+                <archive.path>/tmp/archive</archive.path>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>rose</id>
+
+            <properties>
+                <archive.path>/mnt</archive.path>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
 
         <dependency>
@@ -34,13 +55,6 @@
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
             <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-dev</artifactId>
-            <version>${gwt.version}</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -104,7 +118,6 @@
                 </executions>
 
                 <configuration>
-                    <!--<webappDirectory>${build.outputDirectory}</webappDirectory>-->
                     <runTarget>RosaWebsiteTest.html</runTarget>
                     <hostedWebapp>${project.build.directory}/${project.build.finalName}</hostedWebapp>
                     <modules>
@@ -117,7 +130,27 @@
                         <compileSourcesArtifact>rosa:rosa-website-core</compileSourcesArtifact>
                     </compileSourcesArtifacts>
                 </configuration>
+            </plugin>
 
+            <!-- Maven war plugin : to provide resource filtering on web.xml -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${mvn.war.plugin.version}</version>
+
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <filtering>true</filtering>
+                            <directory>src/main/webapp</directory>
+                            <includes>
+                                <include>**/web.xml</include>
+                            </includes>
+                        </resource>
+                    </webResources>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+                </configuration>
             </plugin>
         </plugins>
     </build>

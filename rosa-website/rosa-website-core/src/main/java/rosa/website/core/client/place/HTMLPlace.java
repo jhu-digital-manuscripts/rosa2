@@ -4,20 +4,14 @@ import com.google.gwt.place.shared.Place;
 
 public class HTMLPlace extends Place {
 
-    private final String collection;
     private final String name;
 
-    public HTMLPlace(String collection, String name) {
-        this.collection = collection;
+    public HTMLPlace(String name) {
         this.name = name;
     }
 
     public String getName() {
         return name;
-    }
-
-    public String getCollection() {
-        return collection;
     }
 
     @Override
@@ -27,23 +21,19 @@ public class HTMLPlace extends Place {
 
         HTMLPlace htmlPlace = (HTMLPlace) o;
 
-        if (collection != null ? !collection.equals(htmlPlace.collection) : htmlPlace.collection != null) return false;
         return !(name != null ? !name.equals(htmlPlace.name) : htmlPlace.name != null);
 
     }
 
     @Override
     public int hashCode() {
-        int result = collection != null ? collection.hashCode() : 0;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        return result;
+        return name != null ? name.hashCode() : 0;
     }
 
     @Override
     public String toString() {
         return "HTMLPlace{" +
-                "collection='" + collection + '\'' +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 '}';
     }
 }

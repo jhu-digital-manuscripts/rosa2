@@ -31,10 +31,10 @@ public class RosaHistoryMapper extends BaseHistoryMapper {
         String[] parts = token.split(DELIMITER);
         if (RosaHistoryConfig.isValidHtmlPage(parts[0])) {
             logger.fine("Found history token for HTMLPlace.");
-            return new HTMLPlace(collection, parts[0]);
+            return new HTMLPlace(parts[0]);
         } else if (RosaHistoryConfig.isValidCsvPage(parts[0])) {
             logger.fine("Found history token for CSVDataPlace.");
-            return new CSVDataPlace(collection, parts[0]);
+            return new CSVDataPlace(parts[0]);
         }
 
         return super.getPlace(token);

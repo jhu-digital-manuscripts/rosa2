@@ -11,6 +11,7 @@ import rosa.website.core.client.view.CSVDataView;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CsvType;
 import rosa.website.rose.client.RosaHistoryConfig;
+import rosa.website.rose.client.WebsiteConfig;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -62,7 +63,7 @@ public class CSVDataActivity implements Activity {
         }
 
         // TODO cache CSVData here?
-        service.loadCSVData(place.getCollection(), "en", type, new AsyncCallback<CSVData>() {
+        service.loadCSVData(WebsiteConfig.INSTANCE.collection(), "en", type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, "Failed to load CSV data.", caught);

@@ -47,7 +47,7 @@ public class RosaWebsite implements EntryPoint {
         final String[] htmlPlaces = config.get("htmlPages").split(",");
         default_place = new HTMLPlace(config.get("defaultPage"));
         */
-        default_place = new HTMLPlace(WebsiteConfig.INSTANCE.collection(), WebsiteConfig.INSTANCE.defaultPage());
+        default_place = new HTMLPlace(WebsiteConfig.INSTANCE.defaultPage());
 
         ClientFactory clientFactory = new ClientFactory();
         EventBus eventBus = clientFactory.eventBus();

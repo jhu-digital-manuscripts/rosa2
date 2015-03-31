@@ -26,6 +26,7 @@
         <mvn.javadoc.version>2.9.1</mvn.javadoc.version>
         <mvn.assembly.version>2.4.1</mvn.assembly.version>
 	    <mvn.jar.version>2.5</mvn.jar.version>
+        <mvn.war.plugin.version>2.6</mvn.war.plugin.version>
         <mvn.gwt.plugin.version>${gwt.version}</mvn.gwt.plugin.version>
 
         <!-- Dependency versions -->
@@ -64,13 +65,6 @@
                 <artifactId>gwt-user</artifactId>
                 <version>${gwt.version}</version>
             </dependency>
-
-            <!--<dependency>-->
-                <!--<groupId>com.google.gwt</groupId>-->
-                <!--<artifactId>gwt-dev</artifactId>-->
-                <!--<version>${gwt.version}</version>-->
-            <!--</dependency>-->
-            <!-- ____________________________ -->
 
             <dependency>
                 <groupId>com.google.inject</groupId>
