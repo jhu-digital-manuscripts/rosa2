@@ -22,6 +22,9 @@ import rosa.website.model.csv.CollectionCSV;
 import rosa.website.model.csv.CsvType;
 import rosa.website.model.csv.IllustrationTitleCSV;
 import rosa.website.model.csv.NarrativeSectionsCSV;
+import rosa.website.model.select.BookSelectData;
+import rosa.website.model.select.BookSelectList;
+import rosa.website.model.select.SelectCategory;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -173,37 +176,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         List<CSVEntry> entries = new ArrayList<>();
         for (String bookName : col.books()) {
-            Book book = loadBook(col, bookName);
-            if (book == null) {
-                continue;
-            }
-
-            BookMetadata md = book.getBookMetadata(lang);
-            if (md == null) {
-                continue;
-            }
-            BookText rose = null;
-
-            for (BookText text : md.getTexts()) {
-                if (text != null && text.getId() != null && text.getId().equals("rose")) {
-                    rose = text;
-                }
-            }
-
-            boolean hasRose = rose != null;
-
-            entries.add(new CSVEntry(
-                    bookName,
-                    md.getRepository(),
-                    md.getShelfmark(),
-                    md.getCommonName(),
-                    md.getCurrentLocation(),
-                    md.getDate(),
-                    md.getOrigin(),
-                    md.getType(),
-                    String.valueOf(hasRose ? rose.getNumberOfIllustrations() : md.getNumberOfIllustrations()),
-                    String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages())
-            ));
+            entries.add(rowForBookData(loadBook(collection, bookName), lang));
         }
 
         Collections.sort(entries, new Comparator<CSVEntry>() {
@@ -215,6 +188,34 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         });
 
         return new BookDataCSV(collection, entries);
+    }
+
+    @Override
+    public BookSelectList getBookSelectionData(String collection, SelectCategory category, String lang)
+            throws IOException{
+        BookCollection col = loadBookCollection(collection);
+
+        if (col == null) {
+            logger.severe("No book collection found. [" + collection + "]");
+            return null;
+        }
+
+        lang = checkLang(lang);
+
+        List<BookSelectData> entries = new ArrayList<>();
+        for (String bookName : col.books()) {
+            Book book = loadBook(collection, bookName);
+
+            entries.add(new BookSelectData(
+                    rowForBookData(book, lang),
+                    book.getTranscription() != null,
+                    book.getIllustrationTagging() != null,
+                    book.getAutomaticNarrativeTagging() != null || book.getManualNarrativeTagging() != null,
+                    false // No bibliography in current books
+            ));
+        }
+        // Pre sort results?
+        return new BookSelectList(category, collection, entries);
     }
 
     @Override
@@ -333,6 +334,39 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
 
         return new NarrativeSectionsCSV(sections.getId(), entries);
+    }
+
+    private CSVEntry rowForBookData(Book book, String lang) throws IOException {
+        if (book == null) {
+            return null;
+        }
+
+        BookMetadata md = book.getBookMetadata(lang);
+        if (md == null) {
+            return null;
+        }
+        BookText rose = null;
+
+        for (BookText text : md.getTexts()) {
+            if (text != null && text.getId() != null && text.getId().equals("rose")) {
+                rose = text;
+            }
+        }
+
+        boolean hasRose = rose != null;
+
+        return new CSVEntry(
+                book.getId(),
+                md.getRepository(),
+                md.getShelfmark(),
+                md.getCommonName(),
+                md.getCurrentLocation(),
+                md.getDate(),
+                md.getOrigin(),
+                md.getType(),
+                String.valueOf(hasRose ? rose.getNumberOfIllustrations() : md.getNumberOfIllustrations()),
+                String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages())
+        );
     }
 
     private Book loadBook(BookCollection collection, String book) throws IOException {

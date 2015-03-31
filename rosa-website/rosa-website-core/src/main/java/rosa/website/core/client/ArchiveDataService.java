@@ -9,6 +9,8 @@ import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
 import rosa.website.model.csv.CsvType;
 import rosa.website.model.csv.IllustrationTitleCSV;
+import rosa.website.model.select.BookSelectList;
+import rosa.website.model.select.SelectCategory;
 
 import java.io.IOException;
 
@@ -56,6 +58,18 @@ public interface ArchiveDataService extends RemoteService {
      * @throws IOException if the collection or any books within are not available
      */
     BookDataCSV loadCollectionBookData(String collection, String lang) throws IOException;
+
+    /**
+     * Load data about the books held within a collection in the archive, useful
+     * for grouping them into categories for selection.
+     *
+     * @param collection collection in the archive
+     * @param category selection category
+     * @param lang language code
+     * @return book selection data
+     * @throws IOException if the collection or any books within are not available
+     */
+    BookSelectList getBookSelectionData(String collection, SelectCategory category, String lang) throws IOException;
 
     /**
      * Get data about illustrations in the collection with respect to book in
