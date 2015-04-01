@@ -4,18 +4,15 @@ import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
-import com.google.gwt.view.client.SingleSelectionModel;
-import com.google.gwt.view.client.TreeViewModel;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.BookSelectPlace;
 import rosa.website.core.client.view.BookSelectView;
-import rosa.website.core.client.widget.BookSelectionTreeViewModel;
-import rosa.website.model.select.BookInfo;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
 import rosa.website.rose.client.WebsiteConfig;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class BookSelectActivity implements Activity {
@@ -58,13 +55,13 @@ public class BookSelectActivity implements Activity {
                 new AsyncCallback<BookSelectList>() {
                     @Override
                     public void onFailure(Throwable caught) {
-
+                        logger.log(Level.SEVERE, "Failed to load book selection data.", caught);
                     }
 
                     @Override
                     public void onSuccess(BookSelectList result) {
-                        TreeViewModel browserModel = new BookSelectionTreeViewModel(result, category,
-                                new SingleSelectionModel<BookInfo>());
+                        result.setCategory(category);
+                        view.setData(result);
                     }
                 }
         );

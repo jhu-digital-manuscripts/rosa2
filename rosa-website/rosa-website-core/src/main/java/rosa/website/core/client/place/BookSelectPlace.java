@@ -21,6 +21,10 @@ public class BookSelectPlace extends Place {
     public static class Tokenizer implements PlaceTokenizer<BookSelectPlace> {
         @Override
         public BookSelectPlace getPlace(String token) {
+            if (token.endsWith(":") || token.endsWith(";")) {
+                token = token.substring(0, token.length() - 1);
+            }
+
             return new BookSelectPlace(SelectCategory.valueOf(token));
         }
 
