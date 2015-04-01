@@ -1,20 +1,36 @@
 package rosa.website.model.select;
 
+import java.io.Serializable;
 import java.util.Iterator;
 import java.util.List;
 
 /**
  * Similar to a BookDataCSV. More specific and tailored for use in book selection.
  */
-public class BookSelectList implements Iterable<BookSelectData> {
+public class BookSelectList implements Iterable<BookSelectData>, Serializable {
+    public static final long serialVersionUID = 1L;
 
-    private final String collection;
-    private final SelectCategory category;
-    private final List<BookSelectData> data;
+    private String collection;
+    private SelectCategory category;
+    private List<BookSelectData> data;
+
+    public BookSelectList() {}
 
     public BookSelectList(SelectCategory category, String collection, List<BookSelectData> data) {
         this.collection = collection;
         this.category = category;
+        this.data = data;
+    }
+
+    public void setCollection(String collection) {
+        this.collection = collection;
+    }
+
+    public void setCategory(SelectCategory category) {
+        this.category = category;
+    }
+
+    public void setData(List<BookSelectData> data) {
         this.data = data;
     }
 

@@ -69,7 +69,7 @@ public interface ArchiveDataService extends RemoteService {
      * @return book selection data
      * @throws IOException if the collection or any books within are not available
      */
-    BookSelectList getBookSelectionData(String collection, SelectCategory category, String lang) throws IOException;
+    BookSelectList loadBookSelectionData(String collection, SelectCategory category, String lang) throws IOException;
 
     /**
      * Get data about illustrations in the collection with respect to book in

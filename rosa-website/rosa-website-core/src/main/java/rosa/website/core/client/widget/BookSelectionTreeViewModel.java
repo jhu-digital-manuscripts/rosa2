@@ -10,6 +10,7 @@ import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.BookSelection;
 import rosa.website.model.select.SelectCategory;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,7 +27,7 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
     private final ListDataProvider<BookSelection> dataProvider;
     private final SelectionModel<BookInfo> selectionModel;
     private final DefaultSelectionEventManager<BookInfo> selectionManager =
-            DefaultSelectionEventManager.createCheckboxManager();
+            DefaultSelectionEventManager.createDefaultManager();
 
     public BookSelectionTreeViewModel(BookSelectList data, SelectCategory category,
                                       SelectionModel<BookInfo> selectionModel) {
@@ -34,33 +35,38 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
         this.category = category;
         this.selectionModel = selectionModel;
 
-
-
         // Set list for the data provider to wrap
-        this.dataProvider = new ListDataProvider<>();
+        this.dataProvider = new ListDataProvider<>(adaptBookSelectListToBookSelections(data));
     }
 
     @Override
     public <T> NodeInfo<?> getNodeInfo(T value) {
+
         if (value == null) {
             return new DefaultNodeInfo<>(dataProvider, new BookSelectionCell());
         } else if (value instanceof BookSelection) {
-            BookSelection selection = (BookSelection) value;
-
-            // From the selection, create the list of BookInfo
-        } else if (value instanceof BookInfo) {
-
+            return new DefaultNodeInfo<>(
+                    new ListDataProvider<>(getListFromBookSelection((BookSelection) value)),
+                    new BookInfoCell(),
+                    selectionModel,
+                    selectionManager,
+                    null
+            );
         }
 
-
-        return null;
+        // Unhandled type.
+        throw new IllegalArgumentException("Unsupported object type: " + value.getClass().getName());
     }
 
     @Override
     public boolean isLeaf(Object value) {
-        return false;
+        return value instanceof BookInfo;
     }
 
+    /**
+     * @param data CSV-like book data
+     * @return a list of sub-categories from which books can be selected
+     */
     private List<BookSelection> adaptBookSelectListToBookSelections(BookSelectList data) {
         Map<String, BookSelection> selections = new HashMap<>();
         for (BookSelectData entry : data) {
@@ -79,10 +85,36 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
             }
         }
 
-
-        return null;
+        List<BookSelection> selectionList = new ArrayList<>();
+        for (Map.Entry<String, BookSelection> entry : selections.entrySet()) {
+            selectionList.add(entry.getValue());
+        }
+        return selectionList;
     }
 
+    /**
+     * @param selection current selection
+     * @return a list of books in this selection
+     */
+    private List<BookInfo> getListFromBookSelection(BookSelection selection) {
+        List<BookInfo> infos = new ArrayList<>();
+
+        int count = 0;
+        for (BookSelectData bs : data) {
+            if (count++ > selection.getCount() || !selection.name.equals(getName(bs))) {
+                continue;
+            }
+
+            infos.add(new BookInfo(bs.repository() + ", " + bs.shelfmark(), bs.id()));
+        }
+
+        return infos;
+    }
+
+    /**
+     * @param data CSV-like book data
+     * @return the correct book 'name' for this category
+     */
     private String getName(BookSelectData data) {
         switch (category) {
             case ID:

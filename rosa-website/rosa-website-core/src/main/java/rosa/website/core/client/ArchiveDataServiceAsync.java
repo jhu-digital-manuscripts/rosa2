@@ -18,7 +18,7 @@ public interface ArchiveDataServiceAsync {
     void loadCSVData(String collection, String lang, CsvType type, AsyncCallback<CSVData> cb);
     void loadCollectionData(String collection, String lang, AsyncCallback<CollectionCSV> cb);
     void loadCollectionBookData(String collection, String lang, AsyncCallback<BookDataCSV> cb);
-    void getBookSelectionData(String collection, SelectCategory category, String lang, AsyncCallback<BookSelectList> cb);
+    void loadBookSelectionData(String collection, SelectCategory category, String lang, AsyncCallback<BookSelectList> cb);
     void loadIllustrationTitles(String collection, AsyncCallback<IllustrationTitleCSV> cb);
     void loadBookCollection(String collection, AsyncCallback<BookCollection> cb);
     void loadBook(String collection, String book, AsyncCallback<Book> cb);

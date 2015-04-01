@@ -1,13 +1,18 @@
 package rosa.website.model.select;
 
+import java.io.Serializable;
+
 /**
  * Contains specific book information. Bottom level node used in the CellBrowser
  * for selecting books.
  */
-public class BookInfo implements Comparable<BookInfo> {
+public final class BookInfo implements Comparable<BookInfo>, Serializable {
+    private static final long serialVersionUID = 1L;
 
-    public final String title;
-    public final String id;
+    public String title;
+    public String id;
+
+    public BookInfo() {}
 
     public BookInfo(String title, String id) {
         this.title = title;

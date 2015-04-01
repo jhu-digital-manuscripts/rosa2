@@ -3,16 +3,22 @@ package rosa.website.model.select;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVEntry;
 
+import java.io.Serializable;
+
 /**
  * Similar to a BookDataCSV row. Extended to include more data and tailored to
  * use in book selection.
  */
-public class BookSelectData {
-    private final CSVEntry data;
-    private final boolean hasTranscription;
-    private final boolean hasImageTagging;
-    private final boolean hasNarrativeTagging;
-    private final boolean hasBibliography;
+public class BookSelectData implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    private CSVEntry data;
+    private boolean hasTranscription;
+    private boolean hasImageTagging;
+    private boolean hasNarrativeTagging;
+    private boolean hasBibliography;
+
+    public BookSelectData() {}
 
     /**
      * Create a new BookSelectionData object backed by BookDataCSV
@@ -29,6 +35,26 @@ public class BookSelectData {
         this.hasTranscription = hasTranscription;
         this.hasImageTagging = hasImageTagging;
         this.hasNarrativeTagging = hasNarrativeTagging;
+        this.hasBibliography = hasBibliography;
+    }
+
+    public void setData(CSVEntry data) {
+        this.data = data;
+    }
+
+    public void setHasTranscription(boolean hasTranscription) {
+        this.hasTranscription = hasTranscription;
+    }
+
+    public void setHasImageTagging(boolean hasImageTagging) {
+        this.hasImageTagging = hasImageTagging;
+    }
+
+    public void setHasNarrativeTagging(boolean hasNarrativeTagging) {
+        this.hasNarrativeTagging = hasNarrativeTagging;
+    }
+
+    public void setHasBibliography(boolean hasBibliography) {
         this.hasBibliography = hasBibliography;
     }
 

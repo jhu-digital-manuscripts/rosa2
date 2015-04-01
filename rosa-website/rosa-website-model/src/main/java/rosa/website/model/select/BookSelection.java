@@ -1,15 +1,22 @@
 package rosa.website.model.select;
 
+import java.io.Serializable;
+
 /**
  * Intermediate set in selecting a particular book to read. After a user has selected
  * a top level selection category, the data is sorted into a list of values of that
  * category. The number of books with that same value is counted.
  */
-public class BookSelection implements Comparable<BookSelection> {
+public class BookSelection implements Comparable<BookSelection>, Serializable {
+    private static final long serialVersionUID = 1L;
 
-    public final SelectCategory category;
-    public final String name;
+    public SelectCategory category;
+    public String name;
     private int count;
+
+    public BookSelection() {
+        count = 1;
+    }
 
     /**
      * Create a new BookSelection

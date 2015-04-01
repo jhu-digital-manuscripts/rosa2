@@ -191,7 +191,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     }
 
     @Override
-    public BookSelectList getBookSelectionData(String collection, SelectCategory category, String lang)
+    public BookSelectList loadBookSelectionData(String collection, SelectCategory category, String lang)
             throws IOException{
         BookCollection col = loadBookCollection(collection);
 

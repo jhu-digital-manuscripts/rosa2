@@ -4,8 +4,10 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
+import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
+import rosa.website.core.client.view.impl.BookSelectViewImpl;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
 
@@ -16,6 +18,7 @@ public class ClientFactory {
 
     private static HTMLView htmlView;
     private static CSVDataView csvDataView;
+    private static BookSelectView bookSelectView;
 
     public EventBus eventBus() {
         return event_bus;
@@ -41,5 +44,12 @@ public class ClientFactory {
             csvDataView = new CSVDataViewImpl();
         }
         return csvDataView;
+    }
+
+    public BookSelectView bookSelectView() {
+        if (bookSelectView == null) {
+            bookSelectView = new BookSelectViewImpl();
+        }
+        return bookSelectView;
     }
 }

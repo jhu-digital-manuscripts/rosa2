@@ -11,6 +11,9 @@ import rosa.website.model.select.BookSelection;
 public class BookSelectionCell extends AbstractCell<BookSelection> {
     @Override
     public void render(Context context, BookSelection value, SafeHtmlBuilder sb) {
-        sb.appendEscaped(value.name + " (" + value.getCount() + ")");
+        sb.appendEscaped(value.name);
+        if (value.getCount() > 1) {
+            sb.appendEscaped(" (" + value.getCount() + ")");
+        }
     }
 }
