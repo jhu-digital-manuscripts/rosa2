@@ -66,7 +66,6 @@ public class CSVDataActivity implements Activity {
             return;
         }
 
-        // TODO cache CSVData here
         service.loadCSVData(WebsiteConfig.INSTANCE.collection(), "en", type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
