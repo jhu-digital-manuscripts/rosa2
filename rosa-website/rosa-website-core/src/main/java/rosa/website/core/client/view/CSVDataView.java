@@ -11,4 +11,6 @@ public interface CSVDataView extends IsWidget {
     void clear();
 
     void setData(CSVData data);
+
+    void setDescription(String description);
 }

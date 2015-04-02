@@ -2,6 +2,10 @@ package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.resources.client.ExternalTextResource;
+import com.google.gwt.resources.client.ResourceCallback;
+import com.google.gwt.resources.client.ResourceException;
+import com.google.gwt.resources.client.TextResource;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
@@ -62,7 +66,7 @@ public class CSVDataActivity implements Activity {
             return;
         }
 
-        // TODO cache CSVData here?
+        // TODO cache CSVData here
         service.loadCSVData(WebsiteConfig.INSTANCE.collection(), "en", type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
@@ -74,6 +78,25 @@ public class CSVDataActivity implements Activity {
                 handleCsvData(result);
             }
         });
+
+        ExternalTextResource resource = RosaHistoryConfig.getCsvDescription(place.getName());
+        if (resource != null) {
+            try {
+                resource.getText(new ResourceCallback<TextResource>() {
+                    @Override
+                    public void onError(ResourceException e) {
+                        logger.log(Level.SEVERE, "Failed to load CSV description.", e);
+                    }
+
+                    @Override
+                    public void onSuccess(TextResource resource) {
+                        view.setDescription(resource.getText());
+                    }
+                });
+            } catch (ResourceException e) {
+                logger.log(Level.SEVERE, "Failed to load CSV description.", e);
+            }
+        }
     }
 
     private void handleCsvData(CSVData data) {

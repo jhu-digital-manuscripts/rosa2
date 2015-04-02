@@ -10,7 +10,7 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
-import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.HTMLPlace;
@@ -31,7 +31,7 @@ public class RosaWebsite implements EntryPoint {
      */
     private Place default_place;
 
-    private SimplePanel main_content = new SimplePanel();
+    private ScrollPanel main_content = new ScrollPanel();
     private final DockLayoutPanel main = new DockLayoutPanel(Style.Unit.PX);
 
     @Override
