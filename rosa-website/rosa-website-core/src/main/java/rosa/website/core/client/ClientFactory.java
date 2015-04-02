@@ -3,9 +3,11 @@ package rosa.website.core.client;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
+import rosa.website.core.client.view.BookDescriptionView;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
+import rosa.website.core.client.view.impl.BookDescriptionViewImpl;
 import rosa.website.core.client.view.impl.BookSelectViewImpl;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
@@ -19,6 +21,7 @@ public class ClientFactory {
     private static HTMLView htmlView;
     private static CSVDataView csvDataView;
     private static BookSelectView bookSelectView;
+    private static BookDescriptionView bookDescriptionView;
 
     public EventBus eventBus() {
         return event_bus;
@@ -51,5 +54,12 @@ public class ClientFactory {
             bookSelectView = new BookSelectViewImpl();
         }
         return bookSelectView;
+    }
+
+    public BookDescriptionView bookDescriptionView() {
+        if (bookDescriptionView == null) {
+            bookDescriptionView = new BookDescriptionViewImpl();
+        }
+        return bookDescriptionView;
     }
 }
