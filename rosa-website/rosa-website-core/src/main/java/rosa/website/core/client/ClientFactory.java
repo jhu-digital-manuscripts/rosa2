@@ -12,11 +12,15 @@ import rosa.website.core.client.view.impl.BookSelectViewImpl;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
 
+import java.util.logging.Logger;
+
 public class ClientFactory {
+    private static final Logger logger = Logger.getLogger(ClientFactory.class.toString());
+    
     private static EventBus event_bus = new SimpleEventBus();
     private static PlaceController place_controller = new PlaceController(event_bus);
 //    private final ArchiveDataServiceAsync archiveDataService = GWT.create(ArchiveDataService.class);
-    private final ArchiveDataServiceAsync archiveDataService = CachingArchiveDataService.INSTANCE;
+    private static ArchiveDataServiceAsync archiveDataService = CachingArchiveDataService.INSTANCE;
 
     private static HTMLView htmlView;
     private static CSVDataView csvDataView;
@@ -58,7 +62,9 @@ public class ClientFactory {
 
     public BookDescriptionView bookDescriptionView() {
         if (bookDescriptionView == null) {
+            logger.info("Creating new book description view.");
             bookDescriptionView = new BookDescriptionViewImpl();
+            logger.info("New book description view made.");
         }
         return bookDescriptionView;
     }

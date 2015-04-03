@@ -66,9 +66,9 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
 
         // If token not already recognized, revert back to the default history token scheme
         // and try the default history mapper
-        if (!token.endsWith(DELIMITER)) {
-            token = token.concat(DELIMITER);
-        }
+//        if (!token.endsWith(DELIMITER)) {
+//            token = token.concat(DELIMITER);
+//        }
 
         logger.fine("Checking default history mapper.");
         return defaultHistoryMapper == null ? null : defaultHistoryMapper.getPlace(token.replaceAll(DELIMITER, COLON));

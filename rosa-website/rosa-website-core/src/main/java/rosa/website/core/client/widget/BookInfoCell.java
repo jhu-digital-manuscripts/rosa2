@@ -14,7 +14,7 @@ import rosa.website.model.select.BookInfo;
 public class BookInfoCell extends AbstractCell<BookInfo> {
     @Override
     public void render(Context context, BookInfo value, SafeHtmlBuilder sb) {
-        String url = URL.decode(GWT.getModuleBaseURL() + "#book;" + value.id);
+        String url = URL.decode(GWT.getHostPageBaseURL() + "#book;" + value.id);
 
         sb.appendHtmlConstant("<a href=\"" + url + "\">");
         sb.appendEscaped(value.title);
