@@ -45,6 +45,7 @@ public class Book implements HasId, Serializable {
 
     private Map<String, Permission> permissions;
     private Map<String, BookMetadata> metadataMap;
+    private Map<String, BookDescription> descriptionMap;
     private Transcription transcription;
 
     private List<AnnotatedPage> annotatedPages;
@@ -56,6 +57,7 @@ public class Book implements HasId, Serializable {
         this.permissions = new HashMap<>();
         this.metadataMap = new HashMap<>();
         this.annotatedPages = new ArrayList<>();
+        this.descriptionMap = new HashMap<>();
     }
 
     @Override
@@ -141,6 +143,14 @@ public class Book implements HasId, Serializable {
 
     public void setBookMetadata(Map<String, BookMetadata> metadataMap) {
         this.metadataMap = metadataMap;
+    }
+
+    public void addBookDescription(BookDescription description, String language) {
+        descriptionMap.put(language, description);
+    }
+
+    public BookDescription getBookDescription(String lang) {
+        return descriptionMap.get(lang);
     }
 
     public SHA1Checksum getChecksum() {
@@ -269,31 +279,32 @@ public class Book implements HasId, Serializable {
 
         Book book = (Book) o;
 
+        if (id != null ? !id.equals(book.id) : book.id != null) return false;
+        if (images != null ? !images.equals(book.images) : book.images != null) return false;
+        if (croppedImages != null ? !croppedImages.equals(book.croppedImages) : book.croppedImages != null)
+            return false;
+        if (cropInfo != null ? !cropInfo.equals(book.cropInfo) : book.cropInfo != null) return false;
         if (SHA1Checksum != null ? !SHA1Checksum.equals(book.SHA1Checksum) : book.SHA1Checksum != null) return false;
-        if (annotatedPages != null ? !annotatedPages.equals(book.annotatedPages) : book.annotatedPages != null)
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        if (!Arrays.equals(content, book.content)) return false;
+        if (bookStructure != null ? !bookStructure.equals(book.bookStructure) : book.bookStructure != null)
+            return false;
+        if (illustrationTagging != null ? !illustrationTagging.equals(book.illustrationTagging) : book.illustrationTagging != null)
+            return false;
+        if (manualNarrativeTagging != null ? !manualNarrativeTagging.equals(book.manualNarrativeTagging) : book.manualNarrativeTagging != null)
             return false;
         if (automaticNarrativeTagging != null ? !automaticNarrativeTagging.equals(book.automaticNarrativeTagging) : book.automaticNarrativeTagging != null)
             return false;
-        if (bookStructure != null ? !bookStructure.equals(book.bookStructure) : book.bookStructure != null)
-            return false;
-        if (!Arrays.equals(content, book.content)) return false;
-        if (cropInfo != null ? !cropInfo.equals(book.cropInfo) : book.cropInfo != null) return false;
-        if (croppedImages != null ? !croppedImages.equals(book.croppedImages) : book.croppedImages != null)
-            return false;
-        if (id != null ? !id.equals(book.id) : book.id != null) return false;
-        if (illustrationTagging != null ? !illustrationTagging.equals(book.illustrationTagging) : book.illustrationTagging != null)
-            return false;
-        if (images != null ? !images.equals(book.images) : book.images != null) return false;
-        if (manualNarrativeTagging != null ? !manualNarrativeTagging.equals(book.manualNarrativeTagging) : book.manualNarrativeTagging != null)
-            return false;
-        if (metadataMap != null ? !metadataMap.equals(book.metadataMap) : book.metadataMap != null) return false;
         if (multilangMetadata != null ? !multilangMetadata.equals(book.multilangMetadata) : book.multilangMetadata != null)
             return false;
         if (permissions != null ? !permissions.equals(book.permissions) : book.permissions != null) return false;
+        if (metadataMap != null ? !metadataMap.equals(book.metadataMap) : book.metadataMap != null) return false;
+        if (descriptionMap != null ? !descriptionMap.equals(book.descriptionMap) : book.descriptionMap != null)
+            return false;
         if (transcription != null ? !transcription.equals(book.transcription) : book.transcription != null)
             return false;
+        return !(annotatedPages != null ? !annotatedPages.equals(book.annotatedPages) : book.annotatedPages != null);
 
-        return true;
     }
 
     @Override
@@ -311,6 +322,7 @@ public class Book implements HasId, Serializable {
         result = 31 * result + (multilangMetadata != null ? multilangMetadata.hashCode() : 0);
         result = 31 * result + (permissions != null ? permissions.hashCode() : 0);
         result = 31 * result + (metadataMap != null ? metadataMap.hashCode() : 0);
+        result = 31 * result + (descriptionMap != null ? descriptionMap.hashCode() : 0);
         result = 31 * result + (transcription != null ? transcription.hashCode() : 0);
         result = 31 * result + (annotatedPages != null ? annotatedPages.hashCode() : 0);
         return result;
@@ -332,6 +344,7 @@ public class Book implements HasId, Serializable {
                 ", multilangMetadata=" + multilangMetadata +
                 ", permissions=" + permissions +
                 ", metadataMap=" + metadataMap +
+                ", descriptionMap=" + descriptionMap +
                 ", transcription=" + transcription +
                 ", annotatedPages=" + annotatedPages +
                 '}';

@@ -86,14 +86,19 @@ public class XMLUtil {
     /**
      * @param doc document
      * @param out output stream
+     * @param omitXmlDeclaration .
      */
-    public static void write(Document doc, OutputStream out) {
+    public static void write(Document doc, OutputStream out, boolean omitXmlDeclaration) {
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = null;
         try {
             transformer = transformerFactory.newTransformer();
 
-            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+            if (omitXmlDeclaration) {
+                transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+            } else {
+                transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+            }
             // Options to make it human readable
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             transformer.setOutputProperty(OutputPropertiesFactory.S_KEY_INDENT_AMOUNT, "4");

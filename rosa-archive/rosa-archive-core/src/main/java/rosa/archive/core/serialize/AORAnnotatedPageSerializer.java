@@ -91,7 +91,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         addDrawing(aPage.getDrawings(), annotationEl, doc);
 
         doc.normalizeDocument();
-        XMLUtil.write(doc, out);
+        XMLUtil.write(doc, out, false);
     }
 
     private void addUnderline(List<Underline> underlines, Element parent, Document doc) {

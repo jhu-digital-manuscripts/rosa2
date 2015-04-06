@@ -191,7 +191,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
                     doc));
         }
 
-        XMLUtil.write(doc, out);
+        XMLUtil.write(doc, out, false);
     }
 
     /**
