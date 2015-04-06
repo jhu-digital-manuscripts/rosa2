@@ -27,13 +27,9 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     private Book book;
 
     public BookDescriptionActivity(BookDescriptionPlace place, ClientFactory clientFactory) {
-        logger.info("Creating new book description activity.");
         this.bookName = place.getBook();
-        logger.info("Book name set. (" + bookName + ")");
         this.service = clientFactory.archiveDataService();
-        logger.info("Service set.");
         this.view = clientFactory.bookDescriptionView();
-        logger.info("Book description activity created successfully.");
     }
 
     @Override
@@ -73,8 +69,8 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     private void handleData(Book book) {
         this.book = book;
 
-        BookMetadata metadata = book.getBookMetadata("en");
-        view.setMetadata(metadata);
+        view.setMetadata(book.getBookMetadata("en"));
+        view.setDescription(book.getBookDescription("en"));
     }
 
     @Override

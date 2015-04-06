@@ -32,6 +32,8 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
     private static final String HI_TAG = "hi";
     private static final String LINE_BREAK_TAG = "lb";
 
+    private Element listTable;
+
     @Override
     public BookDescription read(InputStream is, List<String> errors) throws IOException {
 
@@ -66,6 +68,8 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
         if (list == null || list.getLength() != 1) {
             return null;
         }
+
+        listTable = doc.createElement("table");
 
         /*
             For each <note> tag, create a new topic. Subject is set to the 'rend'
@@ -161,12 +165,14 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
                         div.appendChild(adaptToHtmlLike(l.item(0), doc));
                     }
 
-                    Element ul = doc.createElement("ul");
-                    div.appendChild(ul);
+                    Element table = doc.createElement("table");
+                    Element tbody = doc.createElement("tbody");
+                    div.appendChild(table);
+                    table.appendChild(tbody);
 
                     NodeList list = el.getElementsByTagName(ITEM_TAG);
                     for (int i = 0; i < list.getLength(); i++) {
-                        ul.appendChild(adaptToHtmlLike(list.item(i), doc));
+                        tbody.appendChild(adaptToHtmlLike(list.item(i), doc));
                     }
 
                     return div;
@@ -177,13 +183,21 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
                     span.appendChild(doc.createTextNode(textContent(el)));
                     return span;
                 case ITEM_TAG:
-                    Element li = doc.createElement("li");
+                    String item = el.getAttribute("n");
+                    Element tr = doc.createElement("tr");
 
+                    if (item != null && !item.isEmpty()) {
+                        Element td = doc.createElement("td");
+                        tr.appendChild(td);
+                        td.appendChild(doc.createTextNode(item + " "));
+                    }
+                    Element td = doc.createElement("td");
+                    tr.appendChild(td);
                     for (Node n = node.getFirstChild(); n != null; n = n.getNextSibling()) {
-                        li.appendChild(adaptToHtmlLike(n, doc));
+                        td.appendChild(adaptToHtmlLike(n, doc));
                     }
 
-                    return li;
+                    return tr;
                 case LOCUS_TAG:
                     String from = el.getAttribute("from");
                     String to = el.getAttribute("to");
