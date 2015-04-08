@@ -11,7 +11,6 @@ import rosa.archive.model.BookDescription;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.OutputKeys;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -31,8 +30,6 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
     private static final String LOCUS_TAG = "locus";
     private static final String HI_TAG = "hi";
     private static final String LINE_BREAK_TAG = "lb";
-
-    private Element listTable;
 
     @Override
     public BookDescription read(InputStream is, List<String> errors) throws IOException {
@@ -68,8 +65,6 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
         if (list == null || list.getLength() != 1) {
             return null;
         }
-
-        listTable = doc.createElement("table");
 
         /*
             For each <note> tag, create a new topic. Subject is set to the 'rend'
