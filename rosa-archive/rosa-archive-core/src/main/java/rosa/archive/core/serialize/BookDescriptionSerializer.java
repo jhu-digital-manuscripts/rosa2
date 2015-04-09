@@ -92,6 +92,7 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
         return bookDescription;
     }
 
+    // TODO move this stuff to the website code! (it deals with display...)
     private String elementToString(Element el) {
         Document doc = XMLUtil.newDocument();
 

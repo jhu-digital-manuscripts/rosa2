@@ -61,7 +61,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         logger.info("Initializing ArchiveDataService.");
         Injector injector = Guice.createInjector(new ArchiveCoreModule());
 
-        String path = getServletConfig().getInitParameter("archive-path");
+        String path = getServletContext().getInitParameter("archive-path");
         if (path == null || path.isEmpty()) {
             logger.warning("'archive-path' not specified. Using default value [/mnt]");
             path = "/mnt";
