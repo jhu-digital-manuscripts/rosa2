@@ -125,7 +125,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         List<String> lines = writeObjectAndGetWrittenLines(page1);
 
         assertNotNull(lines);
-        assertEquals(195, lines.size());
+        assertEquals(194, lines.size());
         assertTrue(lines.get(1).startsWith("<transcription"));
         assertTrue(lines.get(2).contains("filename=\"FolgersHa2.000v.tif\""));
         assertFalse(lines.get(2).contains("filename=\"FolgersHa2.024r.tif\""));
