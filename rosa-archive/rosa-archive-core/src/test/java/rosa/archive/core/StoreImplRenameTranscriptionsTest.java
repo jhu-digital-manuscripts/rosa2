@@ -1,11 +1,16 @@
 package rosa.archive.core;
 
+import org.apache.commons.io.IOUtils;
 import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.ArchiveItemType;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertFalse;
@@ -65,7 +70,7 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
                 .listByteStreamNames();
         checkPages("FolgersHa2", names);
 
-        assertTrue(names.contains("FolgersHa2.aor.037v.xml"));
+        assertTrue(names.contains("FolgersHa2.037v.xml"));
         assertFalse(names.contains("FolgersHa2.aor.frontmatter.flyleaf.001v.xml"));
     }
 

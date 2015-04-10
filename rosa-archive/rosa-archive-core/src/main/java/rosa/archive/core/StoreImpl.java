@@ -563,30 +563,46 @@ public class StoreImpl implements Store, ArchiveConstants {
             if (imageName == null || imageName.isEmpty()) {
                 continue;
             }
-
+// TODO when reversing name changes, this still adds the .aor in the renamed file... (EX: 000000001.aor.xml)
             // Change the 'filename' attribute of the <page> tag to point to the correct
             // image name. Write the AnnotationPage back to file.
             AnnotatedPage page = loadItem(originalName, bookStreams, AnnotatedPage.class, errors);
             page.setPage(imageName);
             writeItem(page, bookStreams, AnnotatedPage.class, errors);
+//            String transcription = null;
+//            try (InputStream in = bookStreams.getByteStream(originalName)) {
+//                transcription = IOUtils.toString(in, "UTF-8");
+//                transcription = transcription.replaceAll(referencePage, imageName);
+//            }
+
 
             if (errors.isEmpty()) {
                 // If no errors, rename the transcription file
-                List<String> parts = new ArrayList<>(Arrays.asList(imageName.split("\\.")));
-                parts.add(1, ArchiveItemType.TRANSCRIPTION_AOR.getIdentifier());
+//                String newName = null;
+                if (reverse) {
+                    bookStreams.renameByteStream(originalName, imageName.replace(TIF_EXT, XML_EXT));
+//                    newName = imageName.replace(TIF_EXT, XML_EXT);
+                } else {
+                    List<String> parts = new ArrayList<>(Arrays.asList(imageName.split("\\.")));
+                    parts.add(1, ArchiveItemType.TRANSCRIPTION_AOR.getIdentifier());
 
-                StringBuilder sb = new StringBuilder();
-                boolean isFirst = true;
-                for (String str : parts) {
-                    if (isFirst) {
-                        isFirst = false;
-                    } else {
-                        sb.append('.');
+                    StringBuilder sb = new StringBuilder();
+                    boolean isFirst = true;
+                    for (String str : parts) {
+                        if (isFirst) {
+                            isFirst = false;
+                        } else {
+                            sb.append('.');
+                        }
+                        sb.append(str);
                     }
-                    sb.append(str);
+//                    newName = sb.toString().replace(TIF_EXT, XML_EXT);
+                    bookStreams.renameByteStream(originalName, sb.toString().replace(TIF_EXT, XML_EXT));
                 }
 
-                bookStreams.renameByteStream(originalName, sb.toString().replace(TIF_EXT, XML_EXT));
+//                if (transcription != null) {
+//                    try (OutputStream out = bookStreams.getOutputStream())
+//                }
             }
         }
     }

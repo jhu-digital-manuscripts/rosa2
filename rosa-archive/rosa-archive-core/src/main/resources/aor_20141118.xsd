@@ -194,6 +194,7 @@
         <xs:restriction base="xs:token">
           <xs:enumeration value="chalk"/>
           <xs:enumeration value="pen"/>
+          <xs:enumeration value="scoring"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -232,7 +233,6 @@
           <xs:enumeration value="Asterisk"/>
           <xs:enumeration value="Bisected_circle"/>
           <xs:enumeration value="Crown"/>
-          <xs:enumeration value="Crescent"/>
           <xs:enumeration value="JC"/>
           <xs:enumeration value="HT"/>
           <xs:enumeration value="LL"/>
@@ -299,6 +299,7 @@
           <xs:enumeration value="plus_sign"/>
           <xs:enumeration value="quotation_mark"/>
           <xs:enumeration value="scribble"/>
+          <xs:enumeration value="section_sign"/>
           <xs:enumeration value="semicolon"/>
           <xs:enumeration value="slash"/>
           <xs:enumeration value="straight_quotation_mark"/>
@@ -360,6 +361,18 @@
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
+    <xs:attribute name="language">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="EN"/>
+          <xs:enumeration value="EL"/>
+          <xs:enumeration value="FR"/>
+          <xs:enumeration value="IT"/>
+          <xs:enumeration value="LA"/>
+          <xs:enumeration value="ES"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
     <xs:attribute name="text"/>
   </xs:attributeGroup>
   <xs:element name="errata">
@@ -395,6 +408,7 @@
           <xs:enumeration value="face"/>
           <xs:enumeration value="manicule"/>
           <xs:enumeration value="map"/>
+          <xs:enumeration value="florilegium"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>

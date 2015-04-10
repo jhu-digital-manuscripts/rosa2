@@ -35,30 +35,31 @@
 							<!ATTLIST emphasis text CDATA #IMPLIED>
 		<!ELEMENT translation (#PCDATA)>
 	<!ELEMENT underline EMPTY>
-		<!ATTLIST underline method (chalk|pen) #REQUIRED>
+		<!ATTLIST underline method (chalk|pen|scoring) #REQUIRED>
 		<!ATTLIST underline type (straight|curved|dotted) #REQUIRED>
 		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 		<!ATTLIST underline text CDATA #IMPLIED> 
 	<!ELEMENT symbol EMPTY>
-		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Moon|Opposite_planets|Square|SS|Sun) #REQUIRED>
+		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|JC|HT|LL|Mars|Mercury|Moon|Opposite_planets|Square|SS|Sun) #REQUIRED>
 		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
 		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 		<!ATTLIST symbol text CDATA #IMPLIED>
 	<!ELEMENT mark EMPTY>
-		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|colon|comma|dash|diacritic|dot|double_vertical_bar|equal_sign|est_mark|hash|horizontal_bar|page_break|pen_trial|plus_sign|quotation_mark|scribble|semicolon|slash|straight_quotation_mark|tick|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
+		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|colon|comma|dash|diacritic|dot|double_vertical_bar|equal_sign|est_mark|hash|horizontal_bar|page_break|pen_trial|plus_sign|quotation_mark|scribble|section_sign|semicolon|slash|straight_quotation_mark|tick|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
 		<!ATTLIST mark method (chalk|pen) #REQUIRED>
 		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
 		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 		<!ATTLIST mark text CDATA #IMPLIED>
 	<!ELEMENT numeral (#PCDATA)>
 	    <!ATTLIST numeral place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+	    <!ATTLIST numeral language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 	    <!ATTLIST numeral text CDATA #IMPLIED>
 	<!ELEMENT errata EMPTY>
 	   <!ATTLIST errata language  (EN|EL|FR|IT|LA|ES) #REQUIRED>
 	   <!ATTLIST errata copytext CDATA #REQUIRED>
 	   <!ATTLIST errata amendedtext CDATA #REQUIRED>
 	<!ELEMENT drawing EMPTY>
-	   <!ATTLIST drawing name (face|manicule|map) #REQUIRED>
+	   <!ATTLIST drawing name (face|manicule|map|florilegium) #REQUIRED>
 	   <!ATTLIST drawing method (chalk|pen) #REQUIRED>
 	   <!ATTLIST drawing place (head|tail|left_margin|right_margin|intext) #REQUIRED>
 	   <!ATTLIST drawing language (EN|EL|FR|IT|LA|ES) #IMPLIED>
