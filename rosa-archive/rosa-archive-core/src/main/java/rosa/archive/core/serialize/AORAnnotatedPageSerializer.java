@@ -102,7 +102,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
 
         // validate written document against schema, only write to file if valid
         if (validate(doc, annotationSchemaUrl)) {
-            XMLUtil.write(doc, out);
+            XMLUtil.write(doc, out, false);
         } else {
             throw new IOException("Failed to write AoR transcription due to previously logged errors.");
         }
@@ -114,7 +114,6 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         if (dbf == null) {
             return false;
         }
-//        dbf.setNamespaceAware(true);
 
         Validator validator = dbf.getSchema().newValidator();
         validator.setResourceResolver(resourceResolver);
@@ -150,7 +149,6 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         }
 
         return errors.isEmpty();
-        XMLUtil.write(doc, out, false);
     }
 
     private void addUnderline(List<Underline> underlines, Element parent, Document doc) {
