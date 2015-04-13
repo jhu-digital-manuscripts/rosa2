@@ -3,20 +3,35 @@ package rosa.archive.core.serialize;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
 
+import org.xml.sax.SAXParseException;
 import rosa.archive.core.ArchiveConstants;
 import rosa.archive.core.util.CachingUrlEntityResolver;
+import rosa.archive.core.util.CachingUrlLSResourceResolver;
 import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Drawing;
@@ -33,7 +48,15 @@ import rosa.archive.model.aor.XRef;
 
 public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, ArchiveConstants,
         AORAnnotatedPageConstants {
+    private static final Logger logger = Logger.getLogger(AORAnnotatedPageSerializer.class.toString());
+
+    private static final int MAX_CACHE_SIZE = 100;
+    /** Caches Schema objects */
+    private static final ConcurrentHashMap<String, Schema> schemaCache = new ConcurrentHashMap<>();
+    /** Caches DTDs for reading */
     private static final CachingUrlEntityResolver entityResolver = new CachingUrlEntityResolver();
+    /** Caches DTDs for write validation TODO create a thing that is both an EntityResolver and LSResourceResolver...*/
+    private static final CachingUrlLSResourceResolver lsResourceResolver = new CachingUrlLSResourceResolver();
 
     @Override
     public AnnotatedPage read(InputStream is, final List<String> errors) throws IOException {
@@ -65,10 +88,10 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         if (doc == null) {
             throw new IOException("Failed to write annotated page.");
         }
-//        doc.setXmlStandalone(true);
+
         Element base = doc.createElement(TAG_TRANSCRIPTION);
-        base.setAttribute("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
-        base.setAttribute("xsi:noNamespaceSchemaLocation", annotationSchemaUrl);
+        base.setAttributeNS("http://www.w3.org/2001/XMLSchema-instance", "xsi:noNamespaceSchemaLocation",
+                annotationSchemaUrl);
 
         doc.appendChild(base);
 
@@ -88,7 +111,89 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         addDrawing(aPage.getDrawings(), annotationEl, doc);
 
         doc.normalizeDocument();
-        XMLUtil.write(doc, out);
+
+        // validate written document against schema, only write to file if valid
+
+        if (validate(doc, annotationSchemaUrl)) {
+            XMLUtil.write(doc, out);
+        } else {
+            throw new IOException("Failed to write AoR transcription due to previously logged errors.");
+        }
+    }
+
+    // TODO clean up...
+    private boolean validate(Document doc, String schemaUrl) throws IOException {
+        DocumentBuilderFactory dbf = newDocumentBuilderFactory(schemaUrl);
+
+        if (dbf == null) {
+            return false;
+        }
+        dbf.setNamespaceAware(true);
+
+        Validator validator = dbf.getSchema().newValidator();
+        validator.setResourceResolver(lsResourceResolver);
+
+        final Set<String> errors = new HashSet<>();
+        validator.setErrorHandler(new ErrorHandler() {
+            @Override
+            public void warning(SAXParseException e) throws SAXException {
+
+            }
+
+            @Override
+            public void error(SAXParseException e) throws SAXException {
+                String message = "[ERROR] writing AoR transcription. "  + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "):\n" + e.getMessage();
+                logger.log(Level.SEVERE, message);
+                errors.add(message);
+            }
+
+            @Override
+            public void fatalError(SAXParseException e) throws SAXException {
+                String message = "[FATAL ERROR] writing AoR transcription. "  + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "): \n" + e.getMessage();
+                logger.log(Level.SEVERE, message);
+                errors.add(message);
+            }
+        });
+
+        try {
+            validator.validate(new DOMSource(doc));
+        } catch (SAXException e) {
+            return false;
+        }
+
+        return errors.isEmpty();
+    }
+
+    private DocumentBuilderFactory newDocumentBuilderFactory(String schemaUrl) {
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+
+        Schema schema = null;
+        if (schemaCache.containsKey(schemaUrl)) {
+            schema = schemaCache.get(schemaUrl);
+        } else {
+            try {
+                URL url = new URL(schemaUrl);
+
+                SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+                schema = factory.newSchema(url);
+
+                if (schemaCache.size() > MAX_CACHE_SIZE) {
+                    schemaCache.clear();
+                }
+                schemaCache.putIfAbsent(schemaUrl, schema);
+
+            } catch (MalformedURLException | SAXException e) {
+                return null;
+            }
+        }
+
+        if (schema != null) {
+            dbf.setSchema(schema);
+        }
+
+        return dbf;
     }
 
     private void addUnderline(List<Underline> underlines, Element parent, Document doc) {

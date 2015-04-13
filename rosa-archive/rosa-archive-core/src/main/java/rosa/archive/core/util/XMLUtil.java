@@ -46,6 +46,7 @@ public class XMLUtil {
         return builder.newDocument();
     }
 
+    // TODO crappy place for a cache....
     public static Document newDocument(String schemaUrl) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
