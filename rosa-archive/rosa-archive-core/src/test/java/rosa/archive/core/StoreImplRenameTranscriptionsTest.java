@@ -1,16 +1,12 @@
 package rosa.archive.core;
 
-import org.apache.commons.io.IOUtils;
 import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.ArchiveItemType;
+import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertFalse;
@@ -48,6 +44,7 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
         assertTrue(names.contains("BOOK_ID.aor.frontmatter.flyleaf.001v.xml"));
         assertTrue(names.contains("BOOK_ID.aor.binding.frontcover.xml"));
         assertTrue(names.contains("BOOK_ID.aor.032v.xml"));
+        checkWithBookChecker(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
     }
 
     /**
@@ -72,6 +69,7 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
 
         assertTrue(names.contains("FolgersHa2.037v.xml"));
         assertFalse(names.contains("FolgersHa2.aor.frontmatter.flyleaf.001v.xml"));
+        checkWithBookChecker(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
     }
 
     /**
@@ -85,6 +83,12 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
 
         store.renameTranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, false, errors);
         assertFalse("Errors should occur, but were not encountered.", errors.isEmpty());
+        checkWithBookChecker(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
+    }
+
+    private boolean checkWithBookChecker(String collection, String book) throws IOException {
+        BookCollection col = store.loadBookCollection(collection, errors);
+        return store.check(col, store.loadBook(col, book, errors), false, errors, null);
     }
 
     private void checkPages(String expectedId, List<String> names) {

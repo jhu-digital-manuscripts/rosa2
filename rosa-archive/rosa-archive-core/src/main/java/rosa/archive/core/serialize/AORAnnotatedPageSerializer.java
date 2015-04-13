@@ -3,20 +3,28 @@ package rosa.archive.core.serialize;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.validation.Validator;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
 
+import org.xml.sax.SAXParseException;
 import rosa.archive.core.ArchiveConstants;
-import rosa.archive.core.util.CachingUrlEntityResolver;
+import rosa.archive.core.util.CachingUrlResourceResolver;
 import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Drawing;
@@ -33,7 +41,10 @@ import rosa.archive.model.aor.XRef;
 
 public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, ArchiveConstants,
         AORAnnotatedPageConstants {
-    private static final CachingUrlEntityResolver entityResolver = new CachingUrlEntityResolver();
+    private static final Logger logger = Logger.getLogger(AORAnnotatedPageSerializer.class.toString());
+
+    /** Caches DTDs for write validation */
+    private static final CachingUrlResourceResolver resourceResolver = new CachingUrlResourceResolver();
 
     @Override
     public AnnotatedPage read(InputStream is, final List<String> errors) throws IOException {
@@ -50,7 +61,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
 //            factory.setAttribute(JAXPConstants.JAXP_SCHEMA_LANGUAGE, JAXPConstants.W3C_XML_SCHEMA);
 
             DocumentBuilder builder = factory.newDocumentBuilder();
-            builder.setEntityResolver(entityResolver);
+            builder.setEntityResolver(resourceResolver);
             Document doc = builder.parse(is);
             return buildPage(doc, errors);
 
@@ -65,10 +76,10 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         if (doc == null) {
             throw new IOException("Failed to write annotated page.");
         }
-//        doc.setXmlStandalone(true);
+
         Element base = doc.createElement(TAG_TRANSCRIPTION);
-        base.setAttribute("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
-        base.setAttribute("xsi:noNamespaceSchemaLocation", annotationSchemaUrl);
+        base.setAttributeNS("http://www.w3.org/2001/XMLSchema-instance", "xsi:noNamespaceSchemaLocation",
+                annotationSchemaUrl);
 
         doc.appendChild(base);
 
@@ -88,6 +99,57 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         addDrawing(aPage.getDrawings(), annotationEl, doc);
 
         doc.normalizeDocument();
+
+        // validate written document against schema, only write to file if valid
+        if (validate(doc, annotationSchemaUrl)) {
+            XMLUtil.write(doc, out);
+        } else {
+            throw new IOException("Failed to write AoR transcription due to previously logged errors.");
+        }
+    }
+
+    private boolean validate(Document doc, String schemaUrl) throws IOException {
+        DocumentBuilderFactory dbf = XMLUtil.documentBuilderFactory(schemaUrl);
+
+        if (dbf == null) {
+            return false;
+        }
+//        dbf.setNamespaceAware(true);
+
+        Validator validator = dbf.getSchema().newValidator();
+        validator.setResourceResolver(resourceResolver);
+
+        final Set<String> errors = new HashSet<>();
+        validator.setErrorHandler(new ErrorHandler() {
+            @Override
+            public void warning(SAXParseException e) throws SAXException {
+
+            }
+
+            @Override
+            public void error(SAXParseException e) throws SAXException {
+                String message = "[ERROR] writing AoR transcription. "  + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "):\n" + e.getMessage();
+                logger.log(Level.SEVERE, message);
+                errors.add(message);
+            }
+
+            @Override
+            public void fatalError(SAXParseException e) throws SAXException {
+                String message = "[FATAL ERROR] writing AoR transcription. "  + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "): \n" + e.getMessage();
+                logger.log(Level.SEVERE, message);
+                errors.add(message);
+            }
+        });
+
+        try {
+            validator.validate(new DOMSource(doc));
+        } catch (SAXException e) {
+            return false;
+        }
+
+        return errors.isEmpty();
         XMLUtil.write(doc, out, false);
     }
 
