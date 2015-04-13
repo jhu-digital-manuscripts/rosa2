@@ -21,7 +21,7 @@ import org.xml.sax.SAXParseException;
 
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.serialize.SerializerSet;
-import rosa.archive.core.util.CachingUrlLSResourceResolver;
+import rosa.archive.core.util.CachingUrlResourceResolver;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -60,7 +60,7 @@ import com.google.inject.Inject;
 public class BookChecker extends AbstractArchiveChecker {
     private static final String PAGE_PATTERN = "\\w*\\d+(r|v|R|V)";
     private static final String MANUSCRIPT = "manuscript";
-    private static final LSResourceResolver resourceResolver = new CachingUrlLSResourceResolver();
+    private static final LSResourceResolver resourceResolver = new CachingUrlResourceResolver();
     private static Schema aorAnnotationSchema;
 
     /**

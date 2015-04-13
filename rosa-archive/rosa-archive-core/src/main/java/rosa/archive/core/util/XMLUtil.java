@@ -25,7 +25,7 @@ import java.net.URL;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- *
+ * TODO centralize more of the XML code? Instead of having crap done in a "Util" class...
  */
 public class XMLUtil {
     private static final int MAX_CACHE_SIZE = 100;
@@ -36,7 +36,7 @@ public class XMLUtil {
      */
     public static Document newDocument() {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = null;
+        DocumentBuilder builder;
         try {
             builder = dbf.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
@@ -46,11 +46,14 @@ public class XMLUtil {
         return builder.newDocument();
     }
 
-    // TODO crappy place for a cache....
-    public static Document newDocument(String schemaUrl) {
+    /**
+     * @param schemaUrl URL of schema to attach
+     * @return a document builder factory with a schema set
+     */
+    public static DocumentBuilderFactory documentBuilderFactory(String schemaUrl) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
-        Schema schema = null;
+        Schema schema;
         if (schemaCache.containsKey(schemaUrl)) {
             schema = schemaCache.get(schemaUrl);
         } else {
@@ -74,7 +77,20 @@ public class XMLUtil {
             dbf.setSchema(schema);
         }
 
-        DocumentBuilder builder = null;
+        return dbf;
+    }
+
+    /**
+     * @param schemaUrl URL of schema to attach to the document
+     * @return a new empty Document
+     */
+    public static Document newDocument(String schemaUrl) {
+        DocumentBuilderFactory dbf = documentBuilderFactory(schemaUrl);
+        if (dbf == null) {
+            return null;
+        }
+
+        DocumentBuilder builder;
         try {
             builder = dbf.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
@@ -90,7 +106,7 @@ public class XMLUtil {
      */
     public static void write(Document doc, OutputStream out) {
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer = null;
+        Transformer transformer;
         try {
             transformer = transformerFactory.newTransformer();
 

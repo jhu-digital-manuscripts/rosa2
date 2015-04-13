@@ -4,6 +4,9 @@ import com.sun.org.apache.xerces.internal.dom.DOMInputImpl;
 import org.apache.commons.io.IOUtils;
 import org.w3c.dom.ls.LSInput;
 import org.w3c.dom.ls.LSResourceResolver;
+import org.xml.sax.EntityResolver;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,16 +22,16 @@ import java.util.concurrent.ConcurrentHashMap;
  * will return immediately. If not in cache, local storage will be
  * checked, or a network call will be made if necessary.
  */
-public class CachingUrlLSResourceResolver implements LSResourceResolver {
+public class CachingUrlResourceResolver implements LSResourceResolver, EntityResolver {
     private static final String ENCODING = "UTF-8";
-    private static final int CACHE_MAX_SIZE = 1000;
+    private static final int CACHE_MAX_SIZE = 100;
 
     private ConcurrentHashMap<String, String> resourceCache;
 
     /**
      * Initialize the cache.
      */
-    public CachingUrlLSResourceResolver() {
+    public CachingUrlResourceResolver() {
         this.resourceCache = new ConcurrentHashMap<>();
     }
 
@@ -52,6 +55,31 @@ public class CachingUrlLSResourceResolver implements LSResourceResolver {
         }
 
         return new DOMInputImpl(publicId, systemId, baseURI, data, ENCODING);
+    }
+
+    @Override
+    public InputSource resolveEntity(String publicId, String systemId) throws SAXException, IOException {
+        InputSource is = new InputSource(systemId);
+
+        if (!resourceCache.containsKey(systemId)) {
+            URL url = new URL(systemId);
+
+            String i = getLocalCopy(systemId);
+            if (i == null) {
+                // Make network call only if local copy does not exist
+                i = IOUtils.toString(url, ENCODING);
+            }
+
+            if (resourceCache.size() > CACHE_MAX_SIZE) {
+                resourceCache.clear();
+            }
+
+            resourceCache.putIfAbsent(systemId, i);
+            is.setByteStream(IOUtils.toInputStream(i, ENCODING));
+        }
+
+        is.setByteStream(IOUtils.toInputStream(resourceCache.get(systemId), ENCODING));
+        return is;
     }
 
     private void addToCache(String key, String data) {

@@ -3,22 +3,16 @@ package rosa.archive.core.serialize;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.dom.DOMSource;
-import javax.xml.validation.Schema;
-import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
 import org.w3c.dom.Document;
@@ -30,8 +24,7 @@ import org.xml.sax.SAXException;
 
 import org.xml.sax.SAXParseException;
 import rosa.archive.core.ArchiveConstants;
-import rosa.archive.core.util.CachingUrlEntityResolver;
-import rosa.archive.core.util.CachingUrlLSResourceResolver;
+import rosa.archive.core.util.CachingUrlResourceResolver;
 import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Drawing;
@@ -50,13 +43,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         AORAnnotatedPageConstants {
     private static final Logger logger = Logger.getLogger(AORAnnotatedPageSerializer.class.toString());
 
-    private static final int MAX_CACHE_SIZE = 100;
-    /** Caches Schema objects */
-    private static final ConcurrentHashMap<String, Schema> schemaCache = new ConcurrentHashMap<>();
-    /** Caches DTDs for reading */
-    private static final CachingUrlEntityResolver entityResolver = new CachingUrlEntityResolver();
-    /** Caches DTDs for write validation TODO create a thing that is both an EntityResolver and LSResourceResolver...*/
-    private static final CachingUrlLSResourceResolver lsResourceResolver = new CachingUrlLSResourceResolver();
+    /** Caches DTDs for write validation */
+    private static final CachingUrlResourceResolver resourceResolver = new CachingUrlResourceResolver();
 
     @Override
     public AnnotatedPage read(InputStream is, final List<String> errors) throws IOException {
@@ -73,7 +61,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
 //            factory.setAttribute(JAXPConstants.JAXP_SCHEMA_LANGUAGE, JAXPConstants.W3C_XML_SCHEMA);
 
             DocumentBuilder builder = factory.newDocumentBuilder();
-            builder.setEntityResolver(entityResolver);
+            builder.setEntityResolver(resourceResolver);
             Document doc = builder.parse(is);
             return buildPage(doc, errors);
 
@@ -113,7 +101,6 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         doc.normalizeDocument();
 
         // validate written document against schema, only write to file if valid
-
         if (validate(doc, annotationSchemaUrl)) {
             XMLUtil.write(doc, out);
         } else {
@@ -121,17 +108,16 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         }
     }
 
-    // TODO clean up...
     private boolean validate(Document doc, String schemaUrl) throws IOException {
-        DocumentBuilderFactory dbf = newDocumentBuilderFactory(schemaUrl);
+        DocumentBuilderFactory dbf = XMLUtil.documentBuilderFactory(schemaUrl);
 
         if (dbf == null) {
             return false;
         }
-        dbf.setNamespaceAware(true);
+//        dbf.setNamespaceAware(true);
 
         Validator validator = dbf.getSchema().newValidator();
-        validator.setResourceResolver(lsResourceResolver);
+        validator.setResourceResolver(resourceResolver);
 
         final Set<String> errors = new HashSet<>();
         validator.setErrorHandler(new ErrorHandler() {
@@ -164,36 +150,6 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         }
 
         return errors.isEmpty();
-    }
-
-    private DocumentBuilderFactory newDocumentBuilderFactory(String schemaUrl) {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-
-        Schema schema = null;
-        if (schemaCache.containsKey(schemaUrl)) {
-            schema = schemaCache.get(schemaUrl);
-        } else {
-            try {
-                URL url = new URL(schemaUrl);
-
-                SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-                schema = factory.newSchema(url);
-
-                if (schemaCache.size() > MAX_CACHE_SIZE) {
-                    schemaCache.clear();
-                }
-                schemaCache.putIfAbsent(schemaUrl, schema);
-
-            } catch (MalformedURLException | SAXException e) {
-                return null;
-            }
-        }
-
-        if (schema != null) {
-            dbf.setSchema(schema);
-        }
-
-        return dbf;
     }
 
     private void addUnderline(List<Underline> underlines, Element parent, Document doc) {
