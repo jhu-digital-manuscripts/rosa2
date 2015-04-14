@@ -5,10 +5,12 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import rosa.website.core.client.view.BookDescriptionView;
 import rosa.website.core.client.view.BookSelectView;
+import rosa.website.core.client.view.BrowseBookView;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
 import rosa.website.core.client.view.impl.BookDescriptionViewImpl;
 import rosa.website.core.client.view.impl.BookSelectViewImpl;
+import rosa.website.core.client.view.impl.BrowseBookViewImpl;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
 
@@ -22,10 +24,11 @@ public class ClientFactory {
 //    private final ArchiveDataServiceAsync archiveDataService = GWT.create(ArchiveDataService.class);
     private static ArchiveDataServiceAsync archiveDataService = CachingArchiveDataService.INSTANCE;
 
-    private static HTMLView htmlView;
-    private static CSVDataView csvDataView;
-    private static BookSelectView bookSelectView;
-    private static BookDescriptionView bookDescriptionView;
+    private static HTMLView htmlView = new HTMLViewImpl();
+    private static CSVDataView csvDataView = new CSVDataViewImpl();
+    private static BookSelectView bookSelectView = new BookSelectViewImpl();
+    private static BookDescriptionView bookDescriptionView = new BookDescriptionViewImpl();
+    private static BrowseBookView browseBookView = new BrowseBookViewImpl();
 
     public EventBus eventBus() {
         return event_bus;
@@ -40,32 +43,22 @@ public class ClientFactory {
     }
 
     public HTMLView htmlView() {
-        if (htmlView == null) {
-            htmlView = new HTMLViewImpl();
-        }
         return htmlView;
     }
 
     public CSVDataView csvDataView() {
-        if (csvDataView == null) {
-            csvDataView = new CSVDataViewImpl();
-        }
         return csvDataView;
     }
 
     public BookSelectView bookSelectView() {
-        if (bookSelectView == null) {
-            bookSelectView = new BookSelectViewImpl();
-        }
         return bookSelectView;
     }
 
     public BookDescriptionView bookDescriptionView() {
-        if (bookDescriptionView == null) {
-            logger.info("Creating new book description view.");
-            bookDescriptionView = new BookDescriptionViewImpl();
-            logger.info("New book description view made.");
-        }
         return bookDescriptionView;
+    }
+
+    public BrowseBookView browseBookView() {
+        return browseBookView;
     }
 }
