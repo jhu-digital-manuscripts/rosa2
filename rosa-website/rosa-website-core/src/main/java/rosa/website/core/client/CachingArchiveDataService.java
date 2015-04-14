@@ -198,6 +198,11 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
         });
     }
 
+    @Override
+    public void loadPermissionStatement(String collection, String book, String lang, AsyncCallback<String> cb) {
+
+    }
+
     public void clearCache() {
         cache.clear();
     }

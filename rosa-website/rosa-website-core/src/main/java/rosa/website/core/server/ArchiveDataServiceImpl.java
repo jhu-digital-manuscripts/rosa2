@@ -34,13 +34,19 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-// TODO books/book collections must be cached
 public class ArchiveDataServiceImpl extends RemoteServiceServlet implements ArchiveDataService {
     private static final Logger logger = Logger.getLogger("");
     private static final String DEFAULT_LANGUAGE = "en";
+
+    private static final int MAX_CACHE_SIZE = 100;
+    private static final ConcurrentMap<String, Book> bookCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
+    private static final ConcurrentMap<String, BookCollection> collectionCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
+
     private Store archiveStore;
 
     /**
@@ -68,8 +74,8 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
 
         ByteStreamGroup base = new FSByteStreamGroup(path);
-        this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class),
-                injector.getInstance(BookCollectionChecker.class), base);
+        this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class),
+                injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
         logger.info("Archive Store set.");
     }
 
@@ -275,6 +281,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public BookCollection loadBookCollection(String collection) throws IOException {
+        if (collectionCache.containsKey(collection)) {
+            return collectionCache.get(collection);
+        }
+
         List<String> errors = new ArrayList<>();
         BookCollection col = null;
 
@@ -286,13 +296,33 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             logger.log(Level.SEVERE, "An error has occurred while loading a collection. [" + collection + "]", e);
         }
 
-        logger.info("Book collection loaded. [" + collection + "]");
+        if (collectionCache.size() >= MAX_CACHE_SIZE) {
+            collectionCache.clear();
+        }
+        collectionCache.putIfAbsent(collection, col);
+
         return col;
     }
 
     @Override
     public Book loadBook(String collection, String book) throws IOException {
-        return loadBook(loadBookCollection(collection), book);
+        String key = collection + "." + book;
+        if (bookCache.containsKey(key)) {
+            return bookCache.get(key);
+        }
+
+        Book b = loadBook(loadBookCollection(collection), book);
+        if (bookCache.size() >= MAX_CACHE_SIZE) {
+            bookCache.clear();
+        }
+        bookCache.putIfAbsent(key, b);
+
+        return b;
+    }
+
+    @Override
+    public String loadPermissionStatement(String collection, String book, String lang) throws IOException {
+        return loadBook(collection, book).getPermission(lang).getPermission();
     }
 
     private CharacterNamesCSV loadCharacterNames(String collection) throws IOException {

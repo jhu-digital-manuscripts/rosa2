@@ -100,4 +100,15 @@ public interface ArchiveDataService extends RemoteService {
      * @throws IOException if the collection or book are not available
      */
     Book loadBook(String collection, String book) throws IOException;
+
+    /**
+     * Get the permission statement regarding the use of a book.
+     *
+     * @param collection name of the collection
+     * @param book name of the book
+     * @param lang language code
+     * @return permission statement for use of the book
+     * @throws IOException .
+     */
+    String loadPermissionStatement(String collection, String book, String lang) throws IOException;
 }
