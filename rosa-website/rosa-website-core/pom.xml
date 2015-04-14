@@ -80,7 +80,6 @@
 
     <build>
         <plugins>
-
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
@@ -92,31 +91,7 @@
                         </goals>
                     </execution>
                 </executions>
-<!--
-                <configuration>
-                    <compileSourcesArtifacts>
-                        <sourcesArtifact>rosa:rosa-archive-model</sourcesArtifact>
-                        <sourcesArtifact>rosa:rosa-archive-core</sourcesArtifact>
-                        <sourcesArtifact>rosa:rosa-website-model</sourcesArtifact>
-                    </compileSourcesArtifacts>
-                </configuration>
--->
             </plugin>
-<!--
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
--->
         </plugins>
     </build>
 

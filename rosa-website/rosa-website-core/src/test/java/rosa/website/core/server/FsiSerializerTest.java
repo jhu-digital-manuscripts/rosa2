@@ -19,7 +19,10 @@ import java.io.StringReader;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.fail;
 
 public class FsiSerializerTest extends BaseArchiveTest {
     private FsiSerializer serializer;
@@ -41,7 +44,14 @@ public class FsiSerializerTest extends BaseArchiveTest {
         String result = out.toString();
 
         assertFalse("Results should not be empty.", result.isEmpty());
-        System.out.println(prettyPrintXml(result));
+
+        // Pages does not include the back cover
+        Document doc = parseDocString(result);
+        assertNotNull("XML Document not found.", doc);
+        assertEquals("Unexpected number of FSI plugins found.", 3, numberOfTags("PLUGIN", doc));
+        assertEquals("Unexpected number of images found.", 286, numberOfTags("Image", doc));
+        assertEquals("Unexpected number of FPX tags found.", 286, numberOfTags("FPX", doc));
+        assertEquals("Unexpected number of image source tags found.", 286, numberOfTags("Src", doc));
     }
 
     @Test
@@ -52,7 +62,31 @@ public class FsiSerializerTest extends BaseArchiveTest {
         String result = out.toString();
 
         assertFalse("Results should not be empty.", result.isEmpty());
-        System.out.println(prettyPrintXml(result));
+
+        // Showcase includes back cover
+        Document doc = parseDocString(result);
+        assertNotNull("XML Document not found.", doc);
+        assertEquals("Unexpected number of FSI plugins found.", 3, numberOfTags("PLUGIN", doc));
+        assertEquals("Unexpected number of images found.", 287, numberOfTags("Image", doc));
+        assertEquals("Unexpected number of FPX tags found.", 287, numberOfTags("FPX", doc));
+        assertEquals("Unexpected number of image source tags found.", 287, numberOfTags("Src", doc));
+    }
+
+    private int numberOfTags(String name, Document doc) {
+        return doc.getElementsByTagName(name).getLength();
+    }
+
+    private Document parseDocString(String xml) {
+        DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
+
+        try {
+            DocumentBuilder builder = builderFactory.newDocumentBuilder();
+            return builder.parse(new InputSource(new StringReader(xml)));
+
+        } catch (ParserConfigurationException | SAXException | IOException e) {
+            fail("Failed to parse XML string. \n[" + prettyPrintXml(xml) + "]");
+            return null;
+        }
     }
 
     private String prettyPrintXml(String xml) {

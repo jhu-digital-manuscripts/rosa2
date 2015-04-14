@@ -20,23 +20,35 @@ import javax.servlet.http.HttpServletResponse;
 import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URLDecoder;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Servlet will serve FSI XML configs for the 'pages' and 'showcase' viewers based on
+ * URL path. Required parameters: collection name, book name, fsi viewer type
+ *
+ * {@code servlet/collectionName/bookName/(pages|showcase)}
+ */
 public class FSIDataServlet extends HttpServlet {
     private static final Logger logger = Logger.getLogger(FSIDataServlet.class.toString());
+
+    private static final int MAX_CACHE_SIZE = 100;
+    private static final ConcurrentMap<String, Book> bookCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
+    private static final ConcurrentMap<String, BookCollection> collectionCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
+
     private static final String FSI_MAP_NAME = "fsi-share-map.properties";
 
-    private static final String PARAM_COLLECTION = "collection";
-    private static final String PARAM_BOOK = "book";
-    private static final String PARAM_FSI_TYPE = "fsi";
-    private static final String TYPE_PAGES = "pages";
-    private static final String TYPE_SHOWCASE = "showcase";
+    private static final String TYPE_PAGES = "pages.fsi";
+    private static final String TYPE_SHOWCASE = "showcase.fsi";
 
     private static final String XML_MIME_TYPE = "application/xml";
 
@@ -45,7 +57,8 @@ public class FSIDataServlet extends HttpServlet {
 
     @Override
     public void init() {
-        try (InputStream in = getClass().getResourceAsStream(FSI_MAP_NAME)) {
+
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream(FSI_MAP_NAME)) {
             Properties props = new Properties();
             props.load(in);
 
@@ -56,7 +69,7 @@ public class FSIDataServlet extends HttpServlet {
 
             serializer = new FsiSerializer(prop_map);
             logger.info("Loaded FSI share mapping. " + prop_map.toString());
-        } catch (IOException e) {
+        } catch (Exception e) {
             logger.log(Level.SEVERE, "Failed to load " + FSI_MAP_NAME, e);
         }
 
@@ -72,17 +85,26 @@ public class FSIDataServlet extends HttpServlet {
         }
 
         ByteStreamGroup base = new FSByteStreamGroup(path);
-        this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class),
-                injector.getInstance(BookCollectionChecker.class), base);
-        logger.info("Archive Store set.");
+        this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class),
+                injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
+        logger.info("Archive Store set. [" + path + "]");
     }
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // Extract parameters: collection, book, type
-        String collection = req.getParameter(PARAM_COLLECTION);
-        String bookName = req.getParameter(PARAM_BOOK);
-        String type = req.getParameter(PARAM_FSI_TYPE);
+
+        String path = URLDecoder.decode(req.getPathInfo(), "UTF-8");
+        if (path.startsWith("/")) {
+            path = path.substring(1);
+        }
+        String[] parts = path.split("/");
+
+        String collection = parts[0];
+        String bookName = parts[1];
+        String type = parts[2];
+
+        logger.info("Proceeding with parameters: {" + collection + ", " + bookName + ", " + type + "}");
 
         Book book = loadBook(collection, bookName);
 
@@ -114,6 +136,10 @@ public class FSIDataServlet extends HttpServlet {
     }
 
     private BookCollection loadBookCollection(String collection) throws IOException {
+        if (collectionCache.containsKey(collection)) {
+            return collectionCache.get(collection);
+        }
+
         List<String> errors = new ArrayList<>();
         BookCollection col = null;
 
@@ -124,12 +150,27 @@ public class FSIDataServlet extends HttpServlet {
             logger.log(Level.SEVERE, "An error has occurred while loading a collection. [" + collection + "]", e);
         }
 
-        logger.info("Book collection loaded. [" + collection + "]");
+        if (collectionCache.size() >= MAX_CACHE_SIZE) {
+            collectionCache.clear();
+        }
+        collectionCache.putIfAbsent(collection, col);
+
         return col;
     }
 
     private Book loadBook(String collection, String book) throws IOException {
-        return loadBook(loadBookCollection(collection), book);
+        String key = collection + "." + book;
+        if (bookCache.containsKey(key)) {
+            return bookCache.get(key);
+        }
+
+        Book b = loadBook(loadBookCollection(collection), book);
+        if (bookCache.size() >= MAX_CACHE_SIZE) {
+            bookCache.clear();
+        }
+        bookCache.putIfAbsent(key, b);
+
+        return b;
     }
 
     private Book loadBook(BookCollection collection, String book) throws IOException {

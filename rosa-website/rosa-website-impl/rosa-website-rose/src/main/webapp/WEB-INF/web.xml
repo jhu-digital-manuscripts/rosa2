@@ -39,7 +39,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>fsiService</servlet-name>
-        <url-pattern>/RosaWebsiteRose/fsi</url-pattern>
+        <url-pattern>/RosaWebsiteRose/fsi/*</url-pattern>
     </servlet-mapping>
 
     <context-param>
