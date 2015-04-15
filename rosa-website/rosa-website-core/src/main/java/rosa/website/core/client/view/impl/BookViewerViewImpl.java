@@ -4,16 +4,16 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.SimplePanel;
-import rosa.website.core.client.view.BrowseBookView;
+import rosa.website.core.client.view.BookViewerView;
 import rosa.website.core.client.widget.FsiViewer;
 
-public class BrowseBookViewImpl extends Composite implements BrowseBookView {
+public class BookViewerViewImpl extends Composite implements BookViewerView {
 
     private FlowPanel root;
     private SimplePanel permissionPanel;
     private FsiViewer flashViewer;
 
-    public BrowseBookViewImpl() {
+    public BookViewerViewImpl() {
         root = new FlowPanel();
         permissionPanel = new SimplePanel();
         flashViewer = new FsiViewer();

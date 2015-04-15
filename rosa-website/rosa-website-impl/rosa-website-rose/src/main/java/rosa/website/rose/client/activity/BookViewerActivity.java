@@ -8,8 +8,8 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
-import rosa.website.core.client.place.BrowseBookPlace;
-import rosa.website.core.client.view.BrowseBookView;
+import rosa.website.core.client.place.BookViewerPlace;
+import rosa.website.core.client.view.BookViewerView;
 import rosa.website.core.client.widget.FsiViewerHTMLBuilder;
 import rosa.website.core.client.widget.FsiViewerType;
 import rosa.website.rose.client.WebsiteConfig;
@@ -17,8 +17,8 @@ import rosa.website.rose.client.WebsiteConfig;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class BrowseBookActivity implements Activity {
-    private static final Logger logger = Logger.getLogger(BrowseBookActivity.class.toString());
+public class BookViewerActivity implements Activity {
+    private static final Logger logger = Logger.getLogger(BookViewerActivity.class.toString());
 
     private boolean useFlash;
     private String language;
@@ -26,16 +26,16 @@ public class BrowseBookActivity implements Activity {
     private String book;
     private FsiViewerType type;
 
-    private BrowseBookView view;
+    private BookViewerView view;
     private ArchiveDataServiceAsync service;
 
     private int current_selected_image = 1;
 
-    public BrowseBookActivity(BrowseBookPlace place, ClientFactory clientFactory) {
+    public BookViewerActivity(BookViewerPlace place, ClientFactory clientFactory) {
         this.useFlash = clientFactory.context().useFlash();
         this.language = clientFactory.context().getLanguage();
         this.service = clientFactory.archiveDataService();
-        this.view = clientFactory.browseBookView();
+        this.view = clientFactory.bookViewerView();
 
         this.book = place.getBook();
         this.type = getViewerType(place.getType());

@@ -12,7 +12,7 @@ import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.rose.client.activity.BookDescriptionActivity;
 import rosa.website.rose.client.activity.BookSelectActivity;
-import rosa.website.rose.client.activity.BrowseBookActivity;
+import rosa.website.rose.client.activity.BookViewerActivity;
 import rosa.website.rose.client.activity.CSVDataActivity;
 import rosa.website.rose.client.activity.HTMLActivity;
 
@@ -32,7 +32,7 @@ public class RosaActivityMapper extends BaseActivityMapper implements ActivityMa
         } else if (place instanceof BookDescriptionPlace) {
             return new BookDescriptionActivity((BookDescriptionPlace) place, clientFactory);
         } else if (place instanceof BrowseBookPlace) {
-            return new BrowseBookActivity((BrowseBookPlace) place, clientFactory);
+            return new BookViewerActivity((BrowseBookPlace) place, clientFactory);
         }
 
         // If custom activities are created by the web app, extend the BaseActivityMapper

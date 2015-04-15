@@ -5,12 +5,12 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import rosa.website.core.client.view.BookDescriptionView;
 import rosa.website.core.client.view.BookSelectView;
-import rosa.website.core.client.view.BrowseBookView;
+import rosa.website.core.client.view.BookViewerView;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
 import rosa.website.core.client.view.impl.BookDescriptionViewImpl;
 import rosa.website.core.client.view.impl.BookSelectViewImpl;
-import rosa.website.core.client.view.impl.BrowseBookViewImpl;
+import rosa.website.core.client.view.impl.BookViewerViewImpl;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
 
@@ -30,7 +30,7 @@ public class ClientFactory {
     private static CSVDataView csvDataView = new CSVDataViewImpl();
     private static BookSelectView bookSelectView = new BookSelectViewImpl();
     private static BookDescriptionView bookDescriptionView = new BookDescriptionViewImpl();
-    private static BrowseBookView browseBookView = new BrowseBookViewImpl();
+    private static BookViewerView bookViewerView = new BookViewerViewImpl();
 
     public AppContext context() {
         return context;
@@ -64,7 +64,7 @@ public class ClientFactory {
         return bookDescriptionView;
     }
 
-    public BrowseBookView browseBookView() {
-        return browseBookView;
+    public BookViewerView bookViewerView() {
+        return bookViewerView;
     }
 }

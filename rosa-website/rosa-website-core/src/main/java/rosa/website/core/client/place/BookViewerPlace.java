@@ -3,12 +3,12 @@ package rosa.website.core.client.place;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceTokenizer;
 
-public class BrowseBookPlace extends Place {
+public class BookViewerPlace extends Place {
 
     private String type;
     private String book;
 
-    public BrowseBookPlace(String type, String book) {
+    public BookViewerPlace(String type, String book) {
         this.type = type;
         this.book = book;
     }
@@ -22,14 +22,14 @@ public class BrowseBookPlace extends Place {
     }
 
     //    @Prefix("browse")
-    public static class Tokenizer implements PlaceTokenizer<BrowseBookPlace> {
+    public static class Tokenizer implements PlaceTokenizer<BookViewerPlace> {
         @Override
-        public BrowseBookPlace getPlace(String token) {
-            return new BrowseBookPlace("browse", token);
+        public BookViewerPlace getPlace(String token) {
+            return new BookViewerPlace("browse", token);
         }
 
         @Override
-        public String getToken(BrowseBookPlace place) {
+        public String getToken(BookViewerPlace place) {
             return place.getBook();
         }
     }
