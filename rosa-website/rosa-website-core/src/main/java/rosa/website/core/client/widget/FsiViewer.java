@@ -8,6 +8,8 @@ public class FsiViewer extends Composite {
     private FlowPanel root;
     private FlowPanel toolbar;
 
+    private String viewerId;
+
     public interface FSIPagesCallback {
         void pageChanged(int page);
 
@@ -35,13 +37,19 @@ public class FsiViewer extends Composite {
         root.clear();
     }
 
-    public void setHtml(String html) {
+    public void setHtml(String html, String viewerId) {
         if (root.getWidgetCount() > 0) {
             clear();
         }
+        this.viewerId = viewerId;
+
         HTML htmlWidget = new HTML(html);
         htmlWidget.setSize("100%", "100%");
         root.add(htmlWidget);
+    }
+
+    public void resize(String width, String height) {
+        changeViewerDimension(width, height, viewerId);
     }
 
     // Flash object must have fsipages id
@@ -83,6 +91,23 @@ public class FsiViewer extends Composite {
 
         if (fsiobj) {
             fsiobj.SetVariable(name, val);
+        }
+    }-*/;
+
+    private native void getViewerId() /*-{
+
+    }-*/;
+
+    private native void changeViewerDimension(String width, String height, String viewerId) /*-{
+        var children = $doc.getElementById(viewerId).getElementsByTagName('embed');
+
+        if (children && children[0]) {
+            if (width) {
+                children[0].setAttribute('width', width);
+            }
+            if (height) {
+                children[0].setAttribute('height', height);
+            }
         }
     }-*/;
 

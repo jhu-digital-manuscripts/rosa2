@@ -30,8 +30,8 @@ public class BookViewerViewImpl extends Composite implements BookViewerView {
     }
 
     @Override
-    public void setFlashViewer(String html) {
-        flashViewer.setHtml(html);
+    public void setFlashViewer(String html, String viewerId) {
+        flashViewer.setHtml(html, viewerId);
     }
 
     @Override
