@@ -199,8 +199,25 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     }
 
     @Override
-    public void loadPermissionStatement(String collection, String book, String lang, AsyncCallback<String> cb) {
+    public void loadPermissionStatement(String collection, String book, String lang, final AsyncCallback<String> cb) {
+        final String key = getKey(collection, book, lang, String.class);
+        if (inCache(key)) {
+            cb.onSuccess(fromCache(key, String.class));
+            return;
+        }
 
+        service.loadPermissionStatement(collection, book, lang, new AsyncCallback<String>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                cb.onFailure(caught);
+            }
+
+            @Override
+            public void onSuccess(String result) {
+                updateCache(key, result);
+                cb.onSuccess(result);
+            }
+        });
     }
 
     public void clearCache() {
