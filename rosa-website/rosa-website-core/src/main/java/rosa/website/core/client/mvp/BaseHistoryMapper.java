@@ -3,6 +3,7 @@ package rosa.website.core.client.mvp;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceHistoryMapper;
+import rosa.website.core.client.place.BrowseBookPlace;
 
 import java.util.logging.Logger;
 
@@ -64,11 +65,13 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
 
         token = URL.decode(token);
 
+        String[] parts = token.split(DELIMITER);
+        if (parts.length == 2 && (parts[0].equals("browse") || parts[0].equals("read"))) {
+            return new BrowseBookPlace(parts[0], parts[1]);
+        }
+
         // If token not already recognized, revert back to the default history token scheme
         // and try the default history mapper
-//        if (!token.endsWith(DELIMITER)) {
-//            token = token.concat(DELIMITER);
-//        }
 
         logger.fine("Checking default history mapper.");
         return defaultHistoryMapper == null ? null : defaultHistoryMapper.getPlace(token.replaceAll(DELIMITER, COLON));
@@ -76,6 +79,11 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
 
     @Override
     public String getToken(Place place) {
+        if (place instanceof BrowseBookPlace) {
+            BrowseBookPlace b = (BrowseBookPlace) place;
+            return b.getType() + DELIMITER + b.getBook();
+        }
+
         String token = defaultHistoryMapper.getToken(place).replaceAll(COLON, DELIMITER);
         if (token != null && token.endsWith(DELIMITER)) {
             token = token.substring(0, token.length() - 1);

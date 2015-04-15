@@ -20,19 +20,25 @@ import java.util.logging.Logger;
 public class BrowseBookActivity implements Activity {
     private static final Logger logger = Logger.getLogger(BrowseBookActivity.class.toString());
 
-// TODO need an application context for 'useFlash' state and language
     private boolean useFlash;
+    private String language;
+
     private String book;
+    private FsiViewerType type;
+
     private BrowseBookView view;
     private ArchiveDataServiceAsync service;
 
     private int current_selected_image = 1;
 
     public BrowseBookActivity(BrowseBookPlace place, ClientFactory clientFactory) {
-        this.useFlash = place.useFlash();
-        this.book = place.getBook();
-        this.view = clientFactory.browseBookView();
+        this.useFlash = clientFactory.context().useFlash();
+        this.language = clientFactory.context().getLanguage();
         this.service = clientFactory.archiveDataService();
+        this.view = clientFactory.browseBookView();
+
+        this.book = place.getBook();
+        this.type = getViewerType(place.getType());
     }
 
     @Override
@@ -58,18 +64,17 @@ public class BrowseBookActivity implements Activity {
         String fsi_xml_url = GWT.getModuleBaseURL() + "fsi/"
                 + collection
                 + "/" + book
-                + "/showcase.fsi";
-        logger.info("Using FSI XML: [" + fsi_xml_url + "]");
+                + "/" + type.getXmlId();
 
         String fsiHtml = new FsiViewerHTMLBuilder()
-                .book(collection, book, "en")
-                .type(FsiViewerType.SHOWCASE)
+                .book(collection, book, language)
+                .type(type)
                 .fsiBookData(URL.encode(fsi_xml_url))
                 .build();
 
         view.setFlashViewer(fsiHtml);
 
-        service.loadPermissionStatement(collection, book, "en", new AsyncCallback<String>() {
+        service.loadPermissionStatement(collection, book, language, new AsyncCallback<String>() {
             @Override
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, "Failed to load permission statement.", caught);
@@ -81,6 +86,22 @@ public class BrowseBookActivity implements Activity {
             }
         });
 
-        view.useFlash(true);
+        view.useFlash(useFlash);
+    }
+
+    private FsiViewerType getViewerType(String type) {
+        // TODO need a map for relationship: history token -> viewer type   instead of hard coding...
+        switch (type) {
+            case "browse":
+                return FsiViewerType.SHOWCASE;
+            case "read":
+                return FsiViewerType.PAGES;
+            case "pages":
+                return FsiViewerType.PAGES;
+            case "showcase":
+                return FsiViewerType.SHOWCASE;
+            default:
+                return null;
+        }
     }
 }

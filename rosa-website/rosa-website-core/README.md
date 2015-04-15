@@ -18,11 +18,18 @@ load data from the archive into the website. Any call to this service from the w
 should cache the results. Use this service to front load data, store the website data in memory (or on file?)
 on website initialization to avoid dependency on the archive?
 
+BookCollections and Books are cached here to prevent unnecessary trips to the archive. Other objects are
+cached inside the webapp to prevent unnecessary trips to the server.
+
   * Copy things into the webapp to maintain proper Google crawlability?
   * BookDataCSV, CollectionCSV, IllustrationTitleCSV: pre-formatted CSVs to be displayed on screen
     as is. These should be available somewhere for download.
   * BookCollection, Book: load appropriate archive object on demand.
 
+##FSI data servlet
+Service that reads a book and generates the configuration XMLs needed for the FSI flash viewer. These XMLs
+cannot be cached in the webapp because it is the FSI viewer itself that calls this service, not the webapp.
+The Books from which the XMLs are generated are cached, however.
 
 
 For mapping the same Place to multiple URL fragment prefixes:
@@ -37,9 +44,14 @@ They can be declared in the core and used in the web site modules.
   * GWT UIBinder for views?
   * GIN for DI
   * Navigation must keep old URL schemes. Fortunately, each web site "Action" seems to have a set prefix
+    (Tokenizers defined by Places can use the @Prefix("") annotation to specify its URL fragment prefix)
   * Places needed:
     * Display collection data as CSV (collection data, collection book data, illustration titles)
     * Be able to display arbitrary number of static HTML pages in main content area
+    * Display book description and metadata
+    * Select book by criteria
+    * Browse through a book by thumbnails and be able to view a single image that has been selected
+  * Activities need some site-specific information, so can be defined in the distinct website modules.
 
 ####Rose Actions
   * HOME("home") - static page
@@ -77,6 +89,3 @@ They can be declared in the core and used in the web site modules.
 
 
 
-Create custom RPC to return static HTML pages? The servlet would take a (String name) argument, tack on a file
-ending if needed and fetch the resource from the server. Return a simple String containing the HTML contents of
-the file.

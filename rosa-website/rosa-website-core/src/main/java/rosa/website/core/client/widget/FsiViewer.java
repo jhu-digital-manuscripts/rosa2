@@ -27,6 +27,10 @@ public class FsiViewer extends Composite {
         initWidget(root);
     }
 
+    public void setToolbarVisibility(boolean visible) {
+        toolbar.setVisible(visible);
+    }
+
     public void clear() {
         root.clear();
     }

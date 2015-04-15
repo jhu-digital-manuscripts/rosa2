@@ -18,6 +18,8 @@ import java.util.logging.Logger;
 
 public class ClientFactory {
     private static final Logger logger = Logger.getLogger(ClientFactory.class.toString());
+
+    private static AppContext context = new AppContext();
     
     private static EventBus event_bus = new SimpleEventBus();
     private static PlaceController place_controller = new PlaceController(event_bus);
@@ -29,6 +31,10 @@ public class ClientFactory {
     private static BookSelectView bookSelectView = new BookSelectViewImpl();
     private static BookDescriptionView bookDescriptionView = new BookDescriptionViewImpl();
     private static BrowseBookView browseBookView = new BrowseBookViewImpl();
+
+    public AppContext context() {
+        return context;
+    }
 
     public EventBus eventBus() {
         return event_bus;
