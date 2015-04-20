@@ -3,12 +3,12 @@ package rosa.website.core.client.widget;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.SimplePanel;
+
+import java.util.logging.Logger;
 
 public class FsiViewer extends Composite {
-    private FlowPanel root;
-    private FlowPanel toolbar;
-
-    private String viewerId;
+    private static final Logger logger = Logger.getLogger(FsiViewer.class.toString());
 
     public interface FSIPagesCallback {
         void pageChanged(int page);
@@ -20,8 +20,14 @@ public class FsiViewer extends Composite {
         void imageSelected(int image);
     }
 
+    private SimplePanel viewer;
+    private FlowPanel toolbar;
+
+    private String viewerId;
+
     public FsiViewer() {
-        root = new FlowPanel();
+        FlowPanel root = new FlowPanel();
+        viewer = new SimplePanel();
         toolbar = new FlowPanel();
 
         root.setSize("100%", "100%");
@@ -29,26 +35,27 @@ public class FsiViewer extends Composite {
         initWidget(root);
     }
 
-    public void setToolbarVisibility(boolean visible) {
+    public void setToolbarVisibile(boolean visible) {
         toolbar.setVisible(visible);
     }
 
     public void clear() {
-        root.clear();
+        viewer.clear();
+        viewerId = "";
     }
 
     public void setHtml(String html, String viewerId) {
-        if (root.getWidgetCount() > 0) {
-            clear();
-        }
         this.viewerId = viewerId;
+//        logger.info("Setting viewer HTML. [" + html + "]\n ID: " + viewerId);
 
         HTML htmlWidget = new HTML(html);
         htmlWidget.setSize("100%", "100%");
-        root.add(htmlWidget);
+
+        viewer.setWidget(htmlWidget);
     }
 
     public void resize(String width, String height) {
+//        logger.fine("Resizing viewer: [" + width + ", " + height + "]");
         changeViewerDimension(width, height, viewerId);
     }
 
@@ -94,19 +101,25 @@ public class FsiViewer extends Composite {
         }
     }-*/;
 
-    private native void getViewerId() /*-{
-
-    }-*/;
-
     private native void changeViewerDimension(String width, String height, String viewerId) /*-{
-        var children = $doc.getElementById(viewerId).getElementsByTagName('embed');
+        var fsiobj = $doc.all ? $doc.getElementById('fsishowcase') : $doc.fsishowcase;
 
-        if (children && children[0]) {
+        if (fsiobj) {
             if (width) {
-                children[0].setAttribute('width', width);
+                fsiobj.setAttribute('WIDTH', width);
             }
             if (height) {
-                children[0].setAttribute('height', height);
+                fsiobj.setAttribute('HEIGHT', height);
+            }
+
+            var children = $doc.getElementById(viewerId).getElementsByTagName('embed');
+            if (children && children[0]) {
+                if (width) {
+                    children[0].setAttribute('WIDTH', width);
+                }
+                if (height) {
+                    children[0].setAttribute('HEIGHT', height);
+                }
             }
         }
     }-*/;
