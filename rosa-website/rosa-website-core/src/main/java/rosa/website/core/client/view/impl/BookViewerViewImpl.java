@@ -8,6 +8,7 @@ import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.gwt.user.client.ui.SimplePanel;
 import rosa.website.core.client.view.BookViewerView;
 import rosa.website.core.client.widget.FsiViewer;
+import rosa.website.core.client.widget.FsiViewerType;
 
 public class BookViewerViewImpl extends Composite implements BookViewerView, RequiresResize {
 
@@ -40,8 +41,9 @@ public class BookViewerViewImpl extends Composite implements BookViewerView, Req
     }
 
     @Override
-    public void setFlashViewer(String html, String viewerId) {
-        flashViewer.setHtml(html, viewerId);
+    public void setFlashViewer(String html, FsiViewerType type) {
+        flashViewer.setHtml(html, type);
+        doResize();
     }
 
     @Override
@@ -52,19 +54,14 @@ public class BookViewerViewImpl extends Composite implements BookViewerView, Req
 
     @Override
     public void onResize() {
-        /*
-        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-            @Override
-            public void execute() {
-
-            }
-        });
-        */
-
         resizeTimer.schedule(100);
     }
 
     private void doResize() {
-        flashViewer.resize(getOffsetWidth() + "px", getOffsetHeight() + "px");
+        int width = getParent().getOffsetWidth();
+        // Subtract constant (30) for top/bottom margins on probable <p> in permissions
+        int height = getParent().getOffsetHeight() - permissionPanel.getOffsetHeight() - 30;
+
+        flashViewer.resize(width + "px", height + "px");
     }
 }

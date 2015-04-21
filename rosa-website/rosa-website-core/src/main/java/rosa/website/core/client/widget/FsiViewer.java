@@ -23,13 +23,15 @@ public class FsiViewer extends Composite {
     private SimplePanel viewer;
     private FlowPanel toolbar;
 
-    private String viewerId;
+    private FsiViewerType type;
 
     public FsiViewer() {
         FlowPanel root = new FlowPanel();
         viewer = new SimplePanel();
         toolbar = new FlowPanel();
 
+        root.add(toolbar);
+        root.add(viewer);
         root.setSize("100%", "100%");
 
         initWidget(root);
@@ -41,12 +43,11 @@ public class FsiViewer extends Composite {
 
     public void clear() {
         viewer.clear();
-        viewerId = "";
+        type = null;
     }
 
-    public void setHtml(String html, String viewerId) {
-        this.viewerId = viewerId;
-//        logger.info("Setting viewer HTML. [" + html + "]\n ID: " + viewerId);
+    public void setHtml(String html, FsiViewerType type) {
+        this.type = type;
 
         HTML htmlWidget = new HTML(html);
         htmlWidget.setSize("100%", "100%");
@@ -55,8 +56,7 @@ public class FsiViewer extends Composite {
     }
 
     public void resize(String width, String height) {
-//        logger.fine("Resizing viewer: [" + width + ", " + height + "]");
-        changeViewerDimension(width, height, viewerId);
+        changeViewerDimension(width, height, type.getViewerId());
     }
 
     // Flash object must have fsipages id
@@ -106,19 +106,19 @@ public class FsiViewer extends Composite {
 
         if (fsiobj) {
             if (width) {
-                fsiobj.setAttribute('WIDTH', width);
+                fsiobj.setAttribute('width', width);
             }
             if (height) {
-                fsiobj.setAttribute('HEIGHT', height);
+                fsiobj.setAttribute('height', height);
             }
 
             var children = $doc.getElementById(viewerId).getElementsByTagName('embed');
             if (children && children[0]) {
                 if (width) {
-                    children[0].setAttribute('WIDTH', width);
+                    children[0].setAttribute('width', width);
                 }
                 if (height) {
-                    children[0].setAttribute('HEIGHT', height);
+                    children[0].setAttribute('height', height);
                 }
             }
         }

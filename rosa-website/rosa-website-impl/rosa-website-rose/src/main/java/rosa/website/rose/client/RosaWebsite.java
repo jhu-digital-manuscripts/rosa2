@@ -5,9 +5,12 @@ import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style;
+import com.google.gwt.event.logical.shared.ResizeEvent;
+import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
@@ -66,8 +69,15 @@ public class RosaWebsite implements EntryPoint {
         history_handler.handleCurrentHistory();
 
         main.add(main_content);
-        main_content.setSize("1000px", "600px");
+        main_content.setSize(Window.getClientWidth() + "px", Window.getClientHeight() + "px");
         RootLayoutPanel.get().add(main);
+
+        Window.addResizeHandler(new ResizeHandler() {
+            @Override
+            public void onResize(ResizeEvent event) {
+                main_content.setSize(Window.getClientWidth() + "px", Window.getClientHeight() + "px");
+            }
+        });
 
         GWT.setUncaughtExceptionHandler(new GWT.UncaughtExceptionHandler() {
             @Override

@@ -72,7 +72,7 @@ public class BookViewerActivity implements Activity {
                 .fsiBookData(URL.encode(fsi_xml_url))
                 .build();
 
-        view.setFlashViewer(fsiHtml, type.getViewerId());
+        view.setFlashViewer(fsiHtml, type);
 
         service.loadPermissionStatement(collection, book, language, new AsyncCallback<String>() {
             @Override

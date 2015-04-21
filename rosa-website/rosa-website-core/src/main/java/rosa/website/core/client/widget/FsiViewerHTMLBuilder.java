@@ -146,6 +146,8 @@ public class FsiViewerHTMLBuilder {
         url_sb.append(tile_width);
         url_sb.append("&TileSizeY=");
         url_sb.append(tile_height);
+        url_sb.append("&InitialMouseMode=");
+        url_sb.append(1);                               // Set initial mouse mode to PAN
 
         if (collection != null && book != null) {
             url_sb.append("&plugins=notepad");
