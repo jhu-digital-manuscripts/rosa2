@@ -2,6 +2,8 @@ package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -28,6 +30,13 @@ public class BookViewerActivity implements Activity {
 
     private BookViewerView view;
     private ArchiveDataServiceAsync service;
+
+    private ScheduledCommand resizeCommand = new ScheduledCommand() {
+        @Override
+        public void execute() {
+            view.onResize();
+        }
+    };
 
     private int current_selected_image = 1;
 
@@ -87,6 +96,8 @@ public class BookViewerActivity implements Activity {
         });
 
         view.useFlash(useFlash);
+
+        Scheduler.get().scheduleDeferred(resizeCommand);
     }
 
     private FsiViewerType getViewerType(String type) {

@@ -41,11 +41,20 @@ public class FsiViewer extends Composite {
         toolbar.setVisible(visible);
     }
 
+    /**
+     * Clear contents of this viewer.
+     */
     public void clear() {
         viewer.clear();
         type = null;
     }
 
+    /**
+     * Set HTML of the flash image viewer.
+     *
+     * @param html HTML of viewer
+     * @param type type of viewer
+     */
     public void setHtml(String html, FsiViewerType type) {
         this.type = type;
 
@@ -55,6 +64,12 @@ public class FsiViewer extends Composite {
         viewer.setWidget(htmlWidget);
     }
 
+    /**
+     * Resize the viewer.
+     *
+     * @param width in pixels
+     * @param height in pixels
+     */
     public void resize(String width, String height) {
         changeViewerDimension(width, height, type.getViewerId());
     }
@@ -85,16 +100,9 @@ public class FsiViewer extends Composite {
         }
     }-*/;
 
-    private native void fsipagesSetVariable(String name, String val) /*-{
-        var fsiobj = $doc.all ? $doc.getElementById('fsipages') : $doc.fsipages;
+    private native void setVariable(String name, String value, String viewerId) /*-{
+        var fsiobj = $doc.getElementById(viewerId);
 
-        if (fsiobj) {
-            fsiobj.SetVariable(name, val);
-        }
-    }-*/;
-
-    private native void fsishowcaseSetVariable(String name, String val) /*-{
-        var fsiobj = $doc.all ? $doc.getElementById('fsishowcase') : $doc.fsishowcase;
 
         if (fsiobj) {
             fsiobj.SetVariable(name, val);
@@ -102,35 +110,39 @@ public class FsiViewer extends Composite {
     }-*/;
 
     private native void changeViewerDimension(String width, String height, String viewerId) /*-{
-        var fsiobj = $doc.all ? $doc.getElementById('fsishowcase') : $doc.fsishowcase;
+        var fsiobj = $doc.getElementById(viewerId);
 
         if (fsiobj) {
             if (width) {
-                fsiobj.setAttribute('width', width);
+                fsiobj.setAttribute('width', width+'px');
             }
             if (height) {
-                fsiobj.setAttribute('height', height);
+                fsiobj.setAttribute('height', height+'px');
             }
 
             var children = $doc.getElementById(viewerId).getElementsByTagName('embed');
             if (children && children[0]) {
                 if (width) {
-                    children[0].setAttribute('width', width);
+                    children[0].setAttribute('width', width+'px');
                 }
                 if (height) {
-                    children[0].setAttribute('height', height);
+                    children[0].setAttribute('height', height+'px');
                 }
             }
         }
     }-*/;
 
-    public void fsipagesGotoImage(int image) {
-        fsipagesSetVariable("newImageIndex", "" + image);
-        fsipagesSetVariable("FSICMD", "GotoPage");
+    public void fsiViewerGoToImage(int image) {
+        if (type == FsiViewerType.PAGES) {
+            setVariable("newImageIndex", String.valueOf(image), FsiViewerType.PAGES.getViewerId());
+            setVariable("FSICMD", "GotoPage", FsiViewerType.PAGES.getViewerId());
+        }
     }
 
-    public void fsishowcaseSelectImage(int image) {
-        fsishowcaseSetVariable("newImageIndex", "" + image);
-        fsishowcaseSetVariable("FSICMD", "SelectImage");
+    public void fsiSelectImage(int image) {
+        if (type == FsiViewerType.SHOWCASE) {
+            setVariable("newImageIndex", String.valueOf(image), FsiViewerType.SHOWCASE.getViewerId());
+            setVariable("FSICMD", "SelectImage", FsiViewerType.SHOWCASE.getViewerId());
+        }
     }
 }

@@ -104,8 +104,6 @@ public class FSIDataServlet extends HttpServlet {
         String bookName = parts[1];
         String type = parts[2];
 
-        logger.info("Proceeding with parameters: {" + collection + ", " + bookName + ", " + type + "}");
-
         Book book = loadBook(collection, bookName);
 
         resp.setContentType(XML_MIME_TYPE);

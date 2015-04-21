@@ -8,4 +8,5 @@ public interface BookViewerView extends IsWidget {
     void setPermissionStatement(String perm);
     void setFlashViewer(String html, FsiViewerType type);
     void useFlash(boolean useFlash);
+    void onResize();
 }
