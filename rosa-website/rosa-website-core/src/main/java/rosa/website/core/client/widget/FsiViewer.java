@@ -5,10 +5,7 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.SimplePanel;
 
-import java.util.logging.Logger;
-
 public class FsiViewer extends Composite {
-    private static final Logger logger = Logger.getLogger(FsiViewer.class.toString());
 
     public interface FSIPagesCallback {
         void pageChanged(int page);
@@ -21,24 +18,18 @@ public class FsiViewer extends Composite {
     }
 
     private SimplePanel viewer;
-    private FlowPanel toolbar;
 
     private FsiViewerType type;
 
+    /**  */
     public FsiViewer() {
         FlowPanel root = new FlowPanel();
         viewer = new SimplePanel();
-        toolbar = new FlowPanel();
 
-        root.add(toolbar);
         root.add(viewer);
         root.setSize("100%", "100%");
 
         initWidget(root);
-    }
-
-    public void setToolbarVisibile(boolean visible) {
-        toolbar.setVisible(visible);
     }
 
     /**

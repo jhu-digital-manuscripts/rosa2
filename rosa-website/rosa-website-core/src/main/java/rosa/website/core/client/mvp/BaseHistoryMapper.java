@@ -3,7 +3,8 @@ package rosa.website.core.client.mvp;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceHistoryMapper;
-import rosa.website.core.client.place.BookViewerPlace;
+import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.place.FSIViewerPlace;
 
 import java.util.logging.Logger;
 
@@ -35,17 +36,21 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
      */
     private final PlaceHistoryMapper defaultHistoryMapper;
 
+    private final ClientFactory clientFactory;
+
     /**
      * Create a new history mapper.
      *
      * @param defaultHistoryMapper fallback history handler
-     * @param collection collection name
+     * @param clientFactory .
      * @param DELIMITER delimiter character used in history tokens
      */
-    public BaseHistoryMapper(PlaceHistoryMapper defaultHistoryMapper, String collection, String DELIMITER) {
-        this.collection = collection;
+    public BaseHistoryMapper(PlaceHistoryMapper defaultHistoryMapper, ClientFactory clientFactory, String DELIMITER) {
+        this.clientFactory = clientFactory;
         this.DELIMITER = DELIMITER;
         this.defaultHistoryMapper = defaultHistoryMapper;
+
+        this.collection = clientFactory.context().getCollection();
     }
 
     /**
@@ -67,7 +72,12 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
 
         String[] parts = token.split(DELIMITER);
         if (parts.length == 2 && (parts[0].equals("browse") || parts[0].equals("read"))) {
-            return new BookViewerPlace(parts[0], parts[1]);
+            // Do this in ActivityMapper?
+            if (clientFactory.context().useFlash()) {
+                return new FSIViewerPlace(parts[0], parts[1]);
+            } else {
+                return null;
+            }
         }
 
         // If token not already recognized, revert back to the default history token scheme
@@ -79,8 +89,8 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
 
     @Override
     public String getToken(Place place) {
-        if (place instanceof BookViewerPlace) {
-            BookViewerPlace b = (BookViewerPlace) place;
+        if (place instanceof FSIViewerPlace) {
+            FSIViewerPlace b = (FSIViewerPlace) place;
             return b.getType() + DELIMITER + b.getBook();
         }
 

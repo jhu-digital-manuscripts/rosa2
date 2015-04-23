@@ -8,27 +8,30 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import rosa.archive.model.Book;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
-import rosa.website.core.client.place.BookViewerPlace;
-import rosa.website.core.client.view.BookViewerView;
+import rosa.website.core.client.place.FSIViewerPlace;
+import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.FsiViewerHTMLBuilder;
 import rosa.website.core.client.widget.FsiViewerType;
 import rosa.website.rose.client.WebsiteConfig;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class BookViewerActivity implements Activity {
-    private static final Logger logger = Logger.getLogger(BookViewerActivity.class.toString());
+public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
+    private static final Logger logger = Logger.getLogger(FSIViewerActivity.class.toString());
+    private static final String FSI_URL_PREFIX = GWT.getModuleBaseURL() + "fsi/";
 
-    private boolean useFlash;
     private String language;
 
     private String book;
     private FsiViewerType type;
 
-    private BookViewerView view;
+    private FSIViewerView view;
     private ArchiveDataServiceAsync service;
 
     private ScheduledCommand resizeCommand = new ScheduledCommand() {
@@ -38,10 +41,13 @@ public class BookViewerActivity implements Activity {
         }
     };
 
-    private int current_selected_image = 1;
+    private Book b;
 
-    public BookViewerActivity(BookViewerPlace place, ClientFactory clientFactory) {
-        this.useFlash = clientFactory.context().useFlash();
+    /**
+     * @param place state info
+     * @param clientFactory .
+     */
+    public FSIViewerActivity(FSIViewerPlace place, ClientFactory clientFactory) {
         this.language = clientFactory.context().getLanguage();
         this.service = clientFactory.archiveDataService();
         this.view = clientFactory.bookViewerView();
@@ -62,18 +68,39 @@ public class BookViewerActivity implements Activity {
 
     @Override
     public void onStop() {
-
+        logger.info("Activity stopped. (book='" + book + "', type='" + type + "')");
     }
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         panel.setWidget(view);
+        setupFlashViewer();
+    }
 
+    @Override
+    public String[] getExtraDataLabels(String page) {
+        if (b == null) {
+            return new String[0];
+        }
+
+        List<String> labels = new ArrayList<>();
+        if (b.getTranscription() != null) { // TODO for page
+            labels.add("Transcription");
+        }
+        // TODO transcription (Lecoy)
+        if (b.hasIllustrationTagging(page)) {
+            labels.add("Illustration descriptions");
+        }
+        if (b.hasNarrativeTagging(page)) {
+            labels.add("Narrative sections");
+        }
+
+        return new String[0];
+    }
+
+    private void setupFlashViewer() {
         String collection = WebsiteConfig.INSTANCE.collection();
-        String fsi_xml_url = GWT.getModuleBaseURL() + "fsi/"
-                + collection
-                + "/" + book
-                + "/" + type.getXmlId();
+        String fsi_xml_url = FSI_URL_PREFIX + collection + "/" + book + "/" + type.getXmlId();
 
         String fsiHtml = new FsiViewerHTMLBuilder()
                 .book(collection, book, language)
@@ -82,22 +109,32 @@ public class BookViewerActivity implements Activity {
                 .build();
 
         view.setFlashViewer(fsiHtml, type);
+        fetchBookData();
 
-        service.loadPermissionStatement(collection, book, language, new AsyncCallback<String>() {
+        if (type == FsiViewerType.SHOWCASE) {
+            view.addShowcaseToolbar();
+        } else if (type == FsiViewerType.PAGES) {
+            view.addPagesToolbar();
+        }
+    }
+
+    private void fetchBookData() {
+        service.loadBook(WebsiteConfig.INSTANCE.collection(), book, new AsyncCallback<Book>() {
             @Override
             public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load permission statement.", caught);
+                logger.log(Level.SEVERE, "Failed to load book.", caught);
             }
 
             @Override
-            public void onSuccess(String result) {
-                view.setPermissionStatement(result);
+            public void onSuccess(Book result) {
+                b = result;
+                view.setPermissionStatement(b.getPermission(language).getPermission());
+
+                // Schedule resize after permission statement is added in order to
+                // take its height into account
+                Scheduler.get().scheduleDeferred(resizeCommand);
             }
         });
-
-        view.useFlash(useFlash);
-
-        Scheduler.get().scheduleDeferred(resizeCommand);
     }
 
     private FsiViewerType getViewerType(String type) {

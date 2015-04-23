@@ -39,20 +39,14 @@ public class RosaWebsite implements EntryPoint {
 
     @Override
     public void onModuleLoad() {
-        /*
-        Using an JS variable called 'config' embedded in the host HTML page:
-            var config = {
-                defaultPage: "one",
-                htmlPages: "one,two,three"
-            };
-        Dictionary config = Dictionary.getDictionary("config");
-
-        final String[] htmlPlaces = config.get("htmlPages").split(",");
-        default_place = new HTMLPlace(config.get("defaultPage"));
-        */
         default_place = new HTMLPlace(WebsiteConfig.INSTANCE.defaultPage());
 
+        // Set initial state
         ClientFactory clientFactory = new ClientFactory();
+        clientFactory.context().setCollection(WebsiteConfig.INSTANCE.collection());
+        clientFactory.context().setUseFlash(clientSupportsFlash());
+        clientFactory.context().setLanguage("en");
+
         EventBus eventBus = clientFactory.eventBus();
         final PlaceController placeController = clientFactory.placeController();
 
@@ -62,7 +56,7 @@ public class RosaWebsite implements EntryPoint {
         activity_manager.setDisplay(main_content);
 
         DefaultRosaHistoryMapper history_mapper = GWT.create(DefaultRosaHistoryMapper.class);
-        RosaHistoryMapper appHistoryMapper = new RosaHistoryMapper(history_mapper);
+        RosaHistoryMapper appHistoryMapper = new RosaHistoryMapper(history_mapper, clientFactory);
         final PlaceHistoryHandler history_handler = new PlaceHistoryHandler(appHistoryMapper);
         history_handler.register(placeController, eventBus, default_place);
 
@@ -87,4 +81,8 @@ public class RosaWebsite implements EntryPoint {
             }
         });
     }
+
+    private native boolean clientSupportsFlash() /*-{
+        return typeof navigator.plugins['Shockwave Flash'] !== 'undefined';
+    }-*/;
 }

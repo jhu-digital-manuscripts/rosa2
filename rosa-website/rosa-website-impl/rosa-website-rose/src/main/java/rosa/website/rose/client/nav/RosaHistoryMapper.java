@@ -2,6 +2,7 @@ package rosa.website.rose.client.nav;
 
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceHistoryMapper;
+import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.rose.client.RosaHistoryConfig;
@@ -14,15 +15,13 @@ public class RosaHistoryMapper extends BaseHistoryMapper {
     private static final Logger logger = Logger.getLogger(RosaHistoryMapper.class.toString());
 
     /**
-     * Create a new history mapper.
-     *
-     * @param defaultHistoryMapper fallback history handler
+     * @param defaultHistoryMapper .
+     * @param clientFactory .
      */
-    public RosaHistoryMapper(PlaceHistoryMapper defaultHistoryMapper) {
+    public RosaHistoryMapper(PlaceHistoryMapper defaultHistoryMapper, ClientFactory clientFactory) {
         super(defaultHistoryMapper,
-                WebsiteConfig.INSTANCE.collection(),
-                WebsiteConfig.INSTANCE.historyDelimiter()
-        );
+                clientFactory,
+                WebsiteConfig.INSTANCE.historyDelimiter());
     }
 
     @Override
