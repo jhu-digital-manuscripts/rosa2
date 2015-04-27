@@ -13,6 +13,8 @@ import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.FSIViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
+import rosa.website.core.client.widget.FsiViewer.FSIPagesCallback;
+import rosa.website.core.client.widget.FsiViewer.FSIShowcaseCallback;
 import rosa.website.core.client.widget.FsiViewerHTMLBuilder;
 import rosa.website.core.client.widget.FsiViewerType;
 import rosa.website.rose.client.WebsiteConfig;
@@ -42,6 +44,45 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     };
 
     private Book b;
+    private int current_image_index;
+
+    /** Callback for FSI showcase view. */
+    private final FSIShowcaseCallback showcaseCallback = new FSIShowcaseCallback() {
+        @Override
+        public void imageSelected(int image) {
+            view.setGotoLabel(getImageName(image, b));
+        }
+    };
+
+    /** Callback for FSI pages view. */
+    private final FSIPagesCallback pagesCallback = new FSIPagesCallback() {
+        @Override
+        public void pageChanged(int page) {
+            // Update goto box  with label
+            current_image_index = page;
+
+            if (page == b.getImages().getImages().size()) {
+                view.setGotoLabel(getImageName(page, b));
+            } else {
+                StringBuilder sb = new StringBuilder();
+                if (page > 0) {
+                    sb.append(getImageName(page - 1, b));
+                    sb.append(',');
+                }
+                sb.append(getImageName(page, b));
+
+                view.setGotoLabel(sb.toString());
+            }
+
+            // Update transcription display thingy ('show extra' labels)
+        }
+
+        @Override
+        public void imageInfo(String info) {
+            current_image_index = getImageIndexFromPagesInfo(info);
+            view.setGotoLabel(getImageName(current_image_index, b));
+        }
+    };
 
     /**
      * @param place state info
@@ -54,6 +95,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
         this.book = place.getBook();
         this.type = getViewerType(place.getType());
+        this.current_image_index = 0;
     }
 
     @Override
@@ -84,7 +126,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         }
 
         List<String> labels = new ArrayList<>();
-        if (b.getTranscription() != null) { // TODO for page
+        if (b.getTranscription() != null) { // TODO per page
             labels.add("Transcription");
         }
         // TODO transcription (Lecoy)
@@ -95,7 +137,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
             labels.add("Narrative sections");
         }
 
-        return new String[0];
+        return labels.toArray(new String[labels.size()]);
     }
 
     private void setupFlashViewer() {
@@ -113,8 +155,10 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
         if (type == FsiViewerType.SHOWCASE) {
             view.addShowcaseToolbar();
+            view.setupFsiShowcaseCallback(showcaseCallback);
         } else if (type == FsiViewerType.PAGES) {
             view.addPagesToolbar();
+            view.setupFsiPagesCallback(pagesCallback);
         }
     }
 
@@ -137,8 +181,22 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         });
     }
 
+    /**
+     * @param index index of page in the book
+     * @param book .
+     * @return short name of a page by index, if it exists. Empty string, otherwise
+     */
+    private String getImageName(int index, Book book) {
+        if (book == null || book.getImages() == null || book.getImages().getImages() == null
+                || book.getImages().getImages().get(index) == null) {
+            return "";
+        }
+
+        return book.getImages().getImages().get(index).getName();
+    }
+
     private FsiViewerType getViewerType(String type) {
-        // TODO need a map for relationship: history token -> viewer type   instead of hard coding...
+        // TODO need a map for relationship: (history token -> viewer) type instead of hard coding...
         switch (type) {
             case "browse":
                 return FsiViewerType.SHOWCASE;
@@ -151,5 +209,27 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
             default:
                 return null;
         }
+    }
+
+    private int getImageIndexFromShowcaseInfo(String info) {
+        String marker = "ImageIndex=";
+        int i = info.indexOf(marker);
+
+        if (i == -1) {
+            return 0;
+        }
+
+        return Integer.parseInt(info.substring(i + marker.length()));
+    }
+
+    private int getImageIndexFromPagesInfo(String info) {
+        int result = getImageIndexFromShowcaseInfo(info) - 1;
+
+        if (result < 0) {
+            // TODO this should not happen
+            result = 0;
+        }
+
+        return result;
     }
 }

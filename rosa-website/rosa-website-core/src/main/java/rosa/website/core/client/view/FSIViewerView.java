@@ -4,6 +4,8 @@ import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
+import rosa.website.core.client.widget.FsiViewer.FSIPagesCallback;
+import rosa.website.core.client.widget.FsiViewer.FSIShowcaseCallback;
 import rosa.website.core.client.widget.FsiViewerType;
 
 public interface FSIViewerView extends IsWidget {
@@ -73,4 +75,8 @@ public interface FSIViewerView extends IsWidget {
      * Show the toolbar for the FSI showcase viewer.
      */
     void addShowcaseToolbar();
+
+    void setupFsiPagesCallback(FSIPagesCallback cb);
+
+    void setupFsiShowcaseCallback(FSIShowcaseCallback cb);
 }

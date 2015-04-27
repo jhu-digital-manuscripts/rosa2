@@ -13,6 +13,8 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.FsiViewer;
+import rosa.website.core.client.widget.FsiViewer.FSIPagesCallback;
+import rosa.website.core.client.widget.FsiViewer.FSIShowcaseCallback;
 import rosa.website.core.client.widget.FsiViewerType;
 
 public class FSIViewerViewImpl extends Composite implements FSIViewerView, RequiresResize {
@@ -41,6 +43,7 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
         toolbar = new FlowPanel();
 
         goTo = new TextBox();
+        goTo.setStylePrimaryName("GoTextBox");
         showExtra = new ListBox(false);
 
         showExtra.setVisibleItemCount(1);
@@ -105,6 +108,16 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
     @Override
     public void addShowcaseToolbar() {
         setupSharedToolbar();
+    }
+
+    @Override
+    public void setupFsiPagesCallback(FSIPagesCallback cb) {
+        flashViewer.setupFSIPagesCallback(cb);
+    }
+
+    @Override
+    public void setupFsiShowcaseCallback(FSIShowcaseCallback cb) {
+        flashViewer.setupFSIShowcaseCallback(cb);
     }
 
     private void doResize() {

@@ -72,7 +72,7 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
 
         String[] parts = token.split(DELIMITER);
         if (parts.length == 2 && (parts[0].equals("browse") || parts[0].equals("read"))) {
-            // Do this in ActivityMapper?
+            // TODO Do this in ActivityMapper?
             if (clientFactory.context().useFlash()) {
                 return new FSIViewerPlace(parts[0], parts[1]);
             } else {
