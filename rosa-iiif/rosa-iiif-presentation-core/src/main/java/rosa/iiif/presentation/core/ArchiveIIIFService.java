@@ -2,6 +2,7 @@ package rosa.iiif.presentation.core;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.nio.file.NoSuchFileException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -56,27 +57,32 @@ public class ArchiveIIIFService implements IIIFService {
 
     @Override
     public boolean handle_request(PresentationRequest req, OutputStream os) throws IOException {
-        switch (req.getType()) {
-        case ANNOTATION:
-            return handle_annotation(req.getId(), req.getName(), os);
-        case ANNOTATION_LIST:
-            return handle_annotation_list(req.getId(), req.getName(), os);
-        case CANVAS:
-            return handle_canvas(req.getId(), req.getName(), os);
-        case COLLECTION:
-            return handle_collection(req.getName(), os);
-        case CONTENT:
-            return handle_content(req.getId(), req.getName(), os);
-        case LAYER:
-            return handle_layer(req.getId(), req.getName(), os);
-        case MANIFEST:
-            return handle_manifest(req.getId(), os);
-        case RANGE:
-            return handle_range(req.getId(), req.getName(), os);
-        case SEQUENCE:
-            return handle_sequence(req.getId(), req.getName(), os);
-        default:
-            throw new IOException("Unknown type: " + req.getType());
+        try {
+            switch (req.getType()) {
+                case ANNOTATION:
+                    return handle_annotation(req.getId(), req.getName(), os);
+                case ANNOTATION_LIST:
+                    return handle_annotation_list(req.getId(), req.getName(), os);
+                case CANVAS:
+                    return handle_canvas(req.getId(), req.getName(), os);
+                case COLLECTION:
+                    return handle_collection(req.getName(), os);
+                case CONTENT:
+                    return handle_content(req.getId(), req.getName(), os);
+                case LAYER:
+                    return handle_layer(req.getId(), req.getName(), os);
+                case MANIFEST:
+                    return handle_manifest(req.getId(), os);
+                case RANGE:
+                    return handle_range(req.getId(), req.getName(), os);
+                case SEQUENCE:
+                    return handle_sequence(req.getId(), req.getName(), os);
+                default:
+                    throw new IOException("Unknown type: " + req.getType());
+            }
+        } catch (NoSuchFileException e) {
+            // TODO not the right place for this...
+            return false;
         }
     }
 
