@@ -31,8 +31,10 @@ public class RosaActivityMapper extends BaseActivityMapper implements ActivityMa
             return new BookSelectActivity((BookSelectPlace) place, clientFactory);
         } else if (place instanceof BookDescriptionPlace) {
             return new BookDescriptionActivity((BookDescriptionPlace) place, clientFactory);
-        } else if (place instanceof FSIViewerPlace) {
+        } else if (place instanceof FSIViewerPlace && clientFactory.context().useFlash()) {
             return new FSIViewerActivity((FSIViewerPlace) place, clientFactory);
+        } else if (place instanceof FSIViewerPlace) {
+            // TODO JS viewer activity
         }
 
         // If custom activities are created by the web app, extend the BaseActivityMapper

@@ -1,6 +1,7 @@
 package rosa.website.core.client.view;
 
 import com.google.gwt.event.dom.client.ChangeHandler;
+import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
@@ -41,7 +42,7 @@ public interface FSIViewerView extends IsWidget {
      * @param handler key press handler
      * @return HandlerRegistration object
      */
-    HandlerRegistration addGotoKeyPressHandler(KeyPressHandler handler);
+    HandlerRegistration addGotoKeyDownHandler(KeyDownHandler handler);
 
     /**
      * Add a (value) change handler to respond to changes in the selection
@@ -58,6 +59,11 @@ public interface FSIViewerView extends IsWidget {
      * @param label text to display
      */
     void setGotoLabel(String label);
+
+    /**
+     * @return text in the Goto text box
+     */
+    String getGotoText();
 
     /**
      * Add values to the 'Show extra data' control.
@@ -79,4 +85,16 @@ public interface FSIViewerView extends IsWidget {
     void setupFsiPagesCallback(FSIPagesCallback cb);
 
     void setupFsiShowcaseCallback(FSIShowcaseCallback cb);
+
+    /**
+     * For use with FSI pages
+     * @param image index
+     */
+    void fsiViewerGotoImage(int image);
+
+    /**
+     * For use with FSI showcase
+     * @param image index
+     */
+    void fsiViewerSelectImage(int image);
 }

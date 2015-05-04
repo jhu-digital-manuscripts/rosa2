@@ -1,6 +1,9 @@
 package rosa.website.core.client.view.impl;
 
 import com.google.gwt.event.dom.client.ChangeHandler;
+import com.google.gwt.event.dom.client.KeyDownEvent;
+import com.google.gwt.event.dom.client.KeyDownHandler;
+import com.google.gwt.event.dom.client.KeyPressEvent;
 import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.Timer;
@@ -73,13 +76,18 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
     }
 
     @Override
-    public HandlerRegistration addGotoKeyPressHandler(KeyPressHandler handler) {
-        return goTo.addKeyPressHandler(handler);
+    public HandlerRegistration addGotoKeyDownHandler(KeyDownHandler handler) {
+        return goTo.addKeyDownHandler(handler);
     }
 
     @Override
     public void setGotoLabel(String label) {
         goTo.setText(label);
+    }
+
+    @Override
+    public String getGotoText() {
+        return goTo.getText();
     }
 
     @Override
@@ -118,6 +126,16 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
     @Override
     public void setupFsiShowcaseCallback(FSIShowcaseCallback cb) {
         flashViewer.setupFSIShowcaseCallback(cb);
+    }
+
+    @Override
+    public void fsiViewerGotoImage(int image) {
+        flashViewer.fsiViewerGoToImage(image);
+    }
+
+    @Override
+    public void fsiViewerSelectImage(int image) {
+        flashViewer.fsiSelectImage(image);
     }
 
     private void doResize() {

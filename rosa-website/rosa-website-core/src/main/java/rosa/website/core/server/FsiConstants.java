@@ -19,8 +19,12 @@ public interface FsiConstants {
     String TAG_THUMB_FACE = "ThumbFace";
     String TAG_THUMB_ACTIVE_FACE = "ThumbActiveFace";
     String TAG_THUMB_SELECTED_FACE = "ThumbSelectedFace";
+    String TAG_ALLOWDOMAINS = "allowdomains";
+    String TAG_CALLBACK = "callback";
 
     String ATTR_SRC = "src";
     String ATTR_VALUE = "value";
     String ATTR_LABEL = "label";
+
+    String ALLOW_DOMAINS = "localhost,romandelarose.org,www.library.jhu.edu,*.library.jhu.edu";
 }

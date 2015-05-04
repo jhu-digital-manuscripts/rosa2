@@ -101,6 +101,14 @@ public class FsiSerializer implements FsiConstants {
         writer.writeEmptyElement(TAG_PLUGIN);
         writer.writeAttribute(ATTR_SRC, "resize");
 
+        writer.writeStartElement(TAG_PLUGIN);
+        writer.writeAttribute(ATTR_SRC, "jsbridge");
+        writer.writeAttribute(TAG_CALLBACK, "true");
+
+        writer.writeEmptyElement(TAG_ALLOWDOMAINS);
+        writer.writeAttribute(ATTR_VALUE, ALLOW_DOMAINS);
+        writer.writeEndElement();
+
         writer.writeEndElement(); // </PLUGINS>
 
         writer.writeStartElement(TAG_IMAGES);
@@ -193,6 +201,14 @@ public class FsiSerializer implements FsiConstants {
 
         writer.writeEmptyElement(TAG_PLUGIN);
         writer.writeAttribute(ATTR_SRC, "resize");
+
+        writer.writeStartElement(TAG_PLUGIN);
+        writer.writeAttribute(ATTR_SRC, "jsbridge");
+        writer.writeAttribute(TAG_CALLBACK, "true");
+
+        writer.writeEmptyElement(TAG_ALLOWDOMAINS);
+        writer.writeAttribute(ATTR_VALUE, ALLOW_DOMAINS);
+        writer.writeEndElement();
 
         writer.writeEndElement(); // </PLUGINS>
 

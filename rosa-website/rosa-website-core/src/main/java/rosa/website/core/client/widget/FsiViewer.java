@@ -93,10 +93,14 @@ public class FsiViewer extends Composite {
 
     private native void setVariable(String name, String value, String viewerId) /*-{
         var fsiobj = $doc.getElementById(viewerId);
-
+        if (viewerId == 'fsipages') {
+            fsiobj = $doc.fsipages;
+        } else if (viewerId == 'fsishowcase') {
+            fsiobj = $doc.fsishowcase;
+        }
 
         if (fsiobj) {
-            fsiobj.SetVariable(name, val);
+            fsiobj.SetVariable(name, value);
         }
     }-*/;
 

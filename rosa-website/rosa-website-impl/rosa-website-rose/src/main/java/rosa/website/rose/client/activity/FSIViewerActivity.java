@@ -4,11 +4,17 @@ import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import com.google.gwt.event.dom.client.KeyCodes;
+import com.google.gwt.event.dom.client.KeyDownEvent;
+import com.google.gwt.event.dom.client.KeyDownHandler;
+import com.google.gwt.event.dom.client.KeyPressEvent;
+import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.Book;
+import rosa.archive.model.BookImage;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.FSIViewerPlace;
@@ -148,6 +154,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                 .book(collection, book, language)
                 .type(type)
                 .fsiBookData(URL.encode(fsi_xml_url))
+                .debug(false)
                 .build();
 
         view.setFlashViewer(fsiHtml, type);
@@ -156,9 +163,33 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         if (type == FsiViewerType.SHOWCASE) {
             view.addShowcaseToolbar();
             view.setupFsiShowcaseCallback(showcaseCallback);
+            view.addGotoKeyDownHandler(new KeyDownHandler() {
+                @Override
+                public void onKeyDown(KeyDownEvent event) {
+                    if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
+                        int index = getImageIndex(view.getGotoText(), b);
+                        if (index >= 0) {
+//                            view.fsiViewerSelectImage(translateBookIndexToShowcaseIndex(index));
+                            view.fsiViewerSelectImage(index);
+                        }
+                    }
+                }
+            });
         } else if (type == FsiViewerType.PAGES) {
             view.addPagesToolbar();
             view.setupFsiPagesCallback(pagesCallback);
+            view.addGotoKeyDownHandler(new KeyDownHandler() {
+                @Override
+                public void onKeyDown(KeyDownEvent event) {
+                    if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
+                        int index = getImageIndex(view.getGotoText(), b);
+
+                        if (index >= 0) {
+                            view.fsiViewerGotoImage(index + 1);
+                        }
+                    }
+                }
+            });
         }
     }
 
@@ -193,6 +224,24 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         }
 
         return book.getImages().getImages().get(index).getName();
+    }
+
+    /**
+     * @param name name of image
+     * @param book .
+     * @return index of image in the book, if it exists. -1 otherwise.
+     */
+    private int getImageIndex(String name, Book book) {
+        if (book != null && book.getImages() != null && book.getImages().getImages() != null) {
+            for (int i = 0; i < book.getImages().getImages().size(); i++) {
+                BookImage image = book.getImages().getImages().get(i);
+                if (image.getName().equals(name)) {
+                    return i;
+                }
+            }
+        }
+
+        return -1;
     }
 
     private FsiViewerType getViewerType(String type) {
@@ -231,5 +280,29 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         }
 
         return result;
+    }
+
+    /**
+     * Ripped from old Rosa1 code
+     *
+     * @param bookindex .
+     * @return .
+     */
+    private int translateBookIndexToShowcaseIndex(int bookindex) {
+        int i = 0;
+
+        for (int j = 0; j < b.getImages().getImages().size(); j++) {
+            BookImage image = b.getImages().getImages().get(j);
+
+            if (--bookindex < 0) {
+                break;
+            }
+
+            if (!image.isMissing()) {
+                i++;
+            }
+        }
+
+        return i;
     }
 }

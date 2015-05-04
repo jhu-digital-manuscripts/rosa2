@@ -36,8 +36,6 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
      */
     private final PlaceHistoryMapper defaultHistoryMapper;
 
-    private final ClientFactory clientFactory;
-
     /**
      * Create a new history mapper.
      *
@@ -46,7 +44,6 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
      * @param DELIMITER delimiter character used in history tokens
      */
     public BaseHistoryMapper(PlaceHistoryMapper defaultHistoryMapper, ClientFactory clientFactory, String DELIMITER) {
-        this.clientFactory = clientFactory;
         this.DELIMITER = DELIMITER;
         this.defaultHistoryMapper = defaultHistoryMapper;
 
@@ -72,12 +69,7 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
 
         String[] parts = token.split(DELIMITER);
         if (parts.length == 2 && (parts[0].equals("browse") || parts[0].equals("read"))) {
-            // TODO Do this in ActivityMapper?
-            if (clientFactory.context().useFlash()) {
-                return new FSIViewerPlace(parts[0], parts[1]);
-            } else {
-                return null;
-            }
+            return new FSIViewerPlace(parts[0], parts[1]);
         }
 
         // If token not already recognized, revert back to the default history token scheme

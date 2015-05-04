@@ -24,6 +24,8 @@ public class FsiViewerHTMLBuilder {
     private int tile_height;
     private int initial_image_index; // FSI image index starts at 1
 
+    private boolean debug;
+
     /**
      * Create a new FsiViewerHTMLBuilder.
      */
@@ -35,6 +37,8 @@ public class FsiViewerHTMLBuilder {
         tile_width = 600;
         tile_height = 600;
         initial_image_index = 1;
+
+        debug = false;
     }
 
     /**
@@ -109,6 +113,15 @@ public class FsiViewerHTMLBuilder {
     }
 
     /**
+     * @param debug debug mode on/off
+     * @return this builder
+     */
+    public FsiViewerHTMLBuilder debug(boolean debug) {
+        this.debug = debug;
+        return this;
+    }
+
+    /**
      * This build will result in invalid HTML if the following have
      * not been specified: book, language code, viewer type, fsi_doc_path
      * (URL to XML config for the viewer)
@@ -148,6 +161,8 @@ public class FsiViewerHTMLBuilder {
         url_sb.append(tile_height);
         url_sb.append("&InitialMouseMode=");
         url_sb.append(1);                               // Set initial mouse mode to PAN
+        url_sb.append("&debug=");
+        url_sb.append(debug ? 1 : 0);                   // DEBUG == true (debug=1) ELSE (debug=0)
 
         if (collection != null && book != null) {
             url_sb.append("&plugins=notepad");

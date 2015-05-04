@@ -48,7 +48,7 @@ public class FsiSerializerTest extends BaseArchiveTest {
         // Pages does not include the back cover
         Document doc = parseDocString(result);
         assertNotNull("XML Document not found.", doc);
-        assertEquals("Unexpected number of FSI plugins found.", 3, numberOfTags("PLUGIN", doc));
+        assertEquals("Unexpected number of FSI plugins found.", 4, numberOfTags("PLUGIN", doc));
         assertEquals("Unexpected number of images found.", 286, numberOfTags("Image", doc));
         assertEquals("Unexpected number of FPX tags found.", 286, numberOfTags("FPX", doc));
         assertEquals("Unexpected number of image source tags found.", 286, numberOfTags("Src", doc));
@@ -66,7 +66,7 @@ public class FsiSerializerTest extends BaseArchiveTest {
         // Showcase includes back cover
         Document doc = parseDocString(result);
         assertNotNull("XML Document not found.", doc);
-        assertEquals("Unexpected number of FSI plugins found.", 3, numberOfTags("PLUGIN", doc));
+        assertEquals("Unexpected number of FSI plugins found.", 4, numberOfTags("PLUGIN", doc));
         assertEquals("Unexpected number of images found.", 287, numberOfTags("Image", doc));
         assertEquals("Unexpected number of FPX tags found.", 287, numberOfTags("FPX", doc));
         assertEquals("Unexpected number of image source tags found.", 287, numberOfTags("Src", doc));
