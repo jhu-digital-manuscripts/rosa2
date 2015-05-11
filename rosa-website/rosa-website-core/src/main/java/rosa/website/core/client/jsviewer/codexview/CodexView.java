@@ -72,8 +72,7 @@ public class CodexView extends Composite {
         IMAGE_BROWSER, PAGE_TURNER, IMAGE_VIEWER;
     }
 
-    public CodexView(ImageServer server, final CodexModel model,
-            final CodexController ctrl, ScrollPanel container) {
+    public CodexView(ImageServer server, final CodexModel model, final CodexController ctrl, ScrollPanel container) {
         this.main = new FlowPanel();
         this.model = model;
         this.ctrl = ctrl;
@@ -101,31 +100,29 @@ public class CodexView extends Composite {
 
         // Update thumbs when scrolling
 
-        final HandlerRegistration reg1 = container
-                .addScrollHandler(new ScrollHandler() {
-                    public void onScroll(ScrollEvent event) {
-                        displayVisibleThumbs();
-                    }
-                });
+        final HandlerRegistration reg1 = container.addScrollHandler(new ScrollHandler() {
+            public void onScroll(ScrollEvent event) {
+                displayVisibleThumbs();
+            }
+        });
 
-        final HandlerRegistration reg2 = Window
-                .addResizeHandler(new ResizeHandler() {
-                    int width = Window.getClientWidth();
-                    int height = Window.getClientHeight();
+        final HandlerRegistration reg2 = Window.addResizeHandler(new ResizeHandler() {
+            int width = Window.getClientWidth();
+            int height = Window.getClientHeight();
 
-                    public void onResize(ResizeEvent event) {
-                        int dx = event.getWidth() - width;
-                        int dy = event.getHeight() - height;
+            public void onResize(ResizeEvent event) {
+                int dx = event.getWidth() - width;
+                int dy = event.getHeight() - height;
 
-                        if (Math.abs(dx) > 100 || Math.abs(dy) > 100) {
-                            width = event.getWidth();
-                            height = event.getHeight();
+                if (Math.abs(dx) > 100 || Math.abs(dy) > 100) {
+                    width = event.getWidth();
+                    height = event.getHeight();
 
-                            calculateImageViewport();
-                            setup();
-                        }
-                    }
-                });
+                    calculateImageViewport();
+                    setup();
+                }
+            }
+        });
 
         // Remove handlers when widget no longer attached
 
@@ -196,15 +193,13 @@ public class CodexView extends Composite {
 
             if (left != null) {
                 thumb.setWidget(0, 0, left);
-                thumb.getCellFormatter().setAlignment(0, 0,
-                        HasHorizontalAlignment.ALIGN_RIGHT,
+                thumb.getCellFormatter().setAlignment(0, 0, HasHorizontalAlignment.ALIGN_RIGHT,
                         HasVerticalAlignment.ALIGN_MIDDLE);
             }
 
             if (right != null) {
                 thumb.setWidget(0, 1, right);
-                thumb.getCellFormatter().setAlignment(0, 1,
-                        HasHorizontalAlignment.ALIGN_LEFT,
+                thumb.getCellFormatter().setAlignment(0, 1, HasHorizontalAlignment.ALIGN_LEFT,
                         HasVerticalAlignment.ALIGN_MIDDLE);
             }
 
@@ -563,13 +558,7 @@ public class CodexView extends Composite {
     }
 
     private void setupImageBrowser() {
-        // Window.alert("dim " + content.getOffsetWidth() + " "
-        // + getOffsetHeight());
-
         main.clear();
-
-        // FlowPanel content = new FlowPanel();
-        // main.add(new ScrollPanel(content));
 
         for (int i = 0, n = model.numOpenings(); i < n; i++) {
             final CodexOpening opening = model.opening(i);

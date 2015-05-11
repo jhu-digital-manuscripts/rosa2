@@ -2,7 +2,6 @@ package rosa.website.core.client.view;
 
 import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
-import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
 import rosa.website.core.client.widget.FsiViewer.FSIPagesCallback;

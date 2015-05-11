@@ -154,7 +154,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                 .book(collection, book, language)
                 .type(type)
                 .fsiBookData(URL.encode(fsi_xml_url))
-                .debug(false)
+//                .debug(false)
                 .build();
 
         view.setFlashViewer(fsiHtml, type);
@@ -204,9 +204,6 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
             public void onSuccess(Book result) {
                 b = result;
                 view.setPermissionStatement(b.getPermission(language).getPermission());
-
-                // Schedule resize after permission statement is added in order to
-                // take its height into account
                 Scheduler.get().scheduleDeferred(resizeCommand);
             }
         });

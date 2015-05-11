@@ -15,6 +15,7 @@ import rosa.website.rose.client.activity.BookSelectActivity;
 import rosa.website.rose.client.activity.FSIViewerActivity;
 import rosa.website.rose.client.activity.CSVDataActivity;
 import rosa.website.rose.client.activity.HTMLActivity;
+import rosa.website.rose.client.activity.JSViewerActivity;
 
 public class RosaActivityMapper extends BaseActivityMapper implements ActivityMapper {
     public RosaActivityMapper(ClientFactory clientFactory) {
@@ -33,8 +34,8 @@ public class RosaActivityMapper extends BaseActivityMapper implements ActivityMa
             return new BookDescriptionActivity((BookDescriptionPlace) place, clientFactory);
         } else if (place instanceof FSIViewerPlace && clientFactory.context().useFlash()) {
             return new FSIViewerActivity((FSIViewerPlace) place, clientFactory);
-        } else if (place instanceof FSIViewerPlace) {
-            // TODO JS viewer activity
+        } else if (place instanceof FSIViewerPlace && !clientFactory.context().useFlash()) {
+            return new JSViewerActivity((FSIViewerPlace) place, clientFactory);
         }
 
         // If custom activities are created by the web app, extend the BaseActivityMapper

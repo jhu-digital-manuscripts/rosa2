@@ -220,6 +220,28 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
         });
     }
 
+    @Override
+    public void loadImageList(String collection, String book, final AsyncCallback<String> cb) {
+        final String key = getKey(collection, book, "", String.class);
+        if (inCache(key)) {
+            cb.onSuccess(fromCache(key, String.class));
+            return;
+        }
+
+        service.loadImageList(collection, book, new AsyncCallback<String>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                cb.onFailure(caught);
+            }
+
+            @Override
+            public void onSuccess(String result) {
+                updateCache(key, result);
+                cb.onSuccess(result);
+            }
+        });
+    }
+
     public void clearCache() {
         cache.clear();
     }

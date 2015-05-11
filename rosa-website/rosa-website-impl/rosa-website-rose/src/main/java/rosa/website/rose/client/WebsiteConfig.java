@@ -11,4 +11,5 @@ public interface WebsiteConfig extends Constants {
     String defaultPage();
     String htmlHistory();
     String csvHistory();
+    String fsiUrl();
 }

@@ -11,6 +11,7 @@ import rosa.archive.core.Store;
 import rosa.archive.core.StoreImpl;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.serialize.ImageListSerializer;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.*;
 import rosa.website.core.client.ArchiveDataService;
@@ -26,6 +27,7 @@ import rosa.website.model.select.BookSelectData;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,6 +48,8 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     private static final int MAX_CACHE_SIZE = 100;
     private static final ConcurrentMap<String, Book> bookCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
     private static final ConcurrentMap<String, BookCollection> collectionCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
+
+    private static final ImageListSerializer imageListSerializer = new ImageListSerializer();
 
     private Store archiveStore;
 
@@ -323,6 +327,20 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     @Override
     public String loadPermissionStatement(String collection, String book, String lang) throws IOException {
         return loadBook(collection, book).getPermission(lang).getPermission();
+    }
+
+    @Override
+    public String loadImageList(String collection, String book) throws IOException {
+        Book b = loadBook(collection, book);
+
+        if (b == null || b.getImages() == null || b.getImages().getImages() == null
+                || b.getImages().getImages().isEmpty()) {
+            return "";
+        }
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        imageListSerializer.write(b.getImages(), out);
+
+        return out.toString();
     }
 
     private CharacterNamesCSV loadCharacterNames(String collection) throws IOException {

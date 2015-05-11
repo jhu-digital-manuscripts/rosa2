@@ -5,6 +5,7 @@
 
     <!-- GIN (Gwt INjection using Guice) -->
     <inherits name="com.google.gwt.inject.Inject"/>
+    <inherits name='com.google.gwt.xml.XML'/>
 
     <inherits name="rosa.archive.RosaArchiveModel"/>
     <inherits name="rosa.archive.RosaArchiveCore"/>

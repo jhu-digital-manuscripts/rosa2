@@ -8,11 +8,13 @@ import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
+import rosa.website.core.client.view.JSViewerView;
 import rosa.website.core.client.view.impl.BookDescriptionViewImpl;
 import rosa.website.core.client.view.impl.BookSelectViewImpl;
 import rosa.website.core.client.view.impl.FSIViewerViewImpl;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
+import rosa.website.core.client.view.impl.JSViewerViewImpl;
 
 import java.util.logging.Logger;
 
@@ -31,6 +33,7 @@ public class ClientFactory {
     private static BookSelectView bookSelectView = new BookSelectViewImpl();
     private static BookDescriptionView bookDescriptionView = new BookDescriptionViewImpl();
     private static FSIViewerView FSIViewerView = new FSIViewerViewImpl();
+    private static JSViewerView jsViewerView = new JSViewerViewImpl();
 
     public AppContext context() {
         return context;
@@ -66,5 +69,9 @@ public class ClientFactory {
 
     public FSIViewerView bookViewerView() {
         return FSIViewerView;
+    }
+
+    public JSViewerView jsViewerView() {
+        return jsViewerView;
     }
 }

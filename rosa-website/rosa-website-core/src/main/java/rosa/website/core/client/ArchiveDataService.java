@@ -111,4 +111,14 @@ public interface ArchiveDataService extends RemoteService {
      * @throws IOException .
      */
     String loadPermissionStatement(String collection, String book, String lang) throws IOException;
+
+    /**
+     * Get the CSV image list of a book as a String.
+     *
+     * @param collection name of collection
+     * @param book name of book
+     * @return image list as a String
+     * @throws IOException .
+     */
+    String loadImageList(String collection, String book) throws IOException;
 }

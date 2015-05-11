@@ -23,4 +23,5 @@ public interface ArchiveDataServiceAsync {
     void loadBookCollection(String collection, AsyncCallback<BookCollection> cb);
     void loadBook(String collection, String book, AsyncCallback<Book> cb);
     void loadPermissionStatement(String collection, String book, String lang, AsyncCallback<String> cb);
+    void loadImageList(String collection, String book, AsyncCallback<String> cb);
 }

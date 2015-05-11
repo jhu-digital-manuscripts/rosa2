@@ -25,6 +25,7 @@ public class CSVDataActivity implements Activity {
 
     private final CSVDataPlace place;
     private CSVDataView view;
+    private String lang;
 
     private ArchiveDataServiceAsync service;
 
@@ -38,6 +39,7 @@ public class CSVDataActivity implements Activity {
         this.place = place;
         this.view = clientFactory.csvDataView();
         this.service = clientFactory.archiveDataService();
+        this.lang = clientFactory.context().getLanguage();
     }
 
     @Override
@@ -66,7 +68,7 @@ public class CSVDataActivity implements Activity {
             return;
         }
 
-        service.loadCSVData(WebsiteConfig.INSTANCE.collection(), "en", type, new AsyncCallback<CSVData>() {
+        service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, "Failed to load CSV data.", caught);
