@@ -44,8 +44,8 @@ public class RosaWebsite implements EntryPoint {
         // Set initial state
         ClientFactory clientFactory = new ClientFactory();
         clientFactory.context().setCollection(WebsiteConfig.INSTANCE.collection());
-//        clientFactory.context().setUseFlash(clientSupportsFlash());
-        clientFactory.context().setUseFlash(false);
+        clientFactory.context().setUseFlash(clientSupportsFlash());
+//        clientFactory.context().setUseFlash(false);
         clientFactory.context().setLanguage("en");
 
         EventBus eventBus = clientFactory.eventBus();

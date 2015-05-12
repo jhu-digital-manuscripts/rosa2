@@ -24,7 +24,7 @@ import rosa.website.core.client.jsviewer.codexview.RoseBook;
 import rosa.website.core.client.jsviewer.codexview.SimpleCodexController;
 import rosa.website.core.client.jsviewer.dynimg.FsiImageServer;
 import rosa.website.core.client.jsviewer.dynimg.ImageServer;
-import rosa.website.core.client.place.FSIViewerPlace;
+import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.JSViewerView;
 import rosa.website.rose.client.WebsiteConfig;
 
@@ -53,7 +53,7 @@ public class JSViewerActivity implements Activity {
 
     private int current_selected_index;
 
-    public JSViewerActivity(FSIViewerPlace place, ClientFactory clientFactory) {
+    public JSViewerActivity(BookViewerPlace place, ClientFactory clientFactory) {
         this.view = clientFactory.jsViewerView();
         this.archiveService = clientFactory.archiveDataService();
         this.book = place.getBook();

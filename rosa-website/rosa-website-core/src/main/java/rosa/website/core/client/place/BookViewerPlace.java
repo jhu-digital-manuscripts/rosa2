@@ -2,7 +2,7 @@ package rosa.website.core.client.place;
 
 import com.google.gwt.place.shared.Place;
 
-public class FSIViewerPlace extends Place {
+public class BookViewerPlace extends Place {
 
     private String type;
     private String book;
@@ -11,7 +11,7 @@ public class FSIViewerPlace extends Place {
      * @param type viewer type (pages, showcase)
      * @param book name of book
      */
-    public FSIViewerPlace(String type, String book) {
+    public BookViewerPlace(String type, String book) {
         this.type = type;
         this.book = book;
     }
@@ -29,7 +29,7 @@ public class FSIViewerPlace extends Place {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        FSIViewerPlace that = (FSIViewerPlace) o;
+        BookViewerPlace that = (BookViewerPlace) o;
 
         if (type != null ? !type.equals(that.type) : that.type != null) return false;
         return !(book != null ? !book.equals(that.book) : that.book != null);

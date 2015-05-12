@@ -7,8 +7,6 @@ import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
-import com.google.gwt.event.dom.client.KeyPressEvent;
-import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -17,7 +15,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
-import rosa.website.core.client.place.FSIViewerPlace;
+import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.FsiViewer.FSIPagesCallback;
 import rosa.website.core.client.widget.FsiViewer.FSIShowcaseCallback;
@@ -94,7 +92,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
      * @param place state info
      * @param clientFactory .
      */
-    public FSIViewerActivity(FSIViewerPlace place, ClientFactory clientFactory) {
+    public FSIViewerActivity(BookViewerPlace place, ClientFactory clientFactory) {
         this.language = clientFactory.context().getLanguage();
         this.service = clientFactory.archiveDataService();
         this.view = clientFactory.bookViewerView();
