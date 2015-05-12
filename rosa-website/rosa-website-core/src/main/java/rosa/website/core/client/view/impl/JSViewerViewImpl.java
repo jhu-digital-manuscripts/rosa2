@@ -56,14 +56,20 @@ public class JSViewerViewImpl extends Composite implements JSViewerView {
     }
 
     @Override
+    public void clear() {
+        root.remove(codexView);
+    }
+
+    @Override
     public void setPermissionStatement(String permission) {
         permissionPanel.setWidget(new HTML(permission));
     }
 
     @Override
-    public void setCodexView(ImageServer imageServer, CodexModel model, CodexController controller) {
+    public void setCodexView(ImageServer imageServer, CodexModel model, CodexController controller, Mode mode) {
         codexView = new CodexView(imageServer, model, controller, (ScrollPanel) this.getParent());
         root.insert(codexView, 0);
+        setViewerMode(mode);
     }
 
     @Override
@@ -71,7 +77,24 @@ public class JSViewerViewImpl extends Composite implements JSViewerView {
         codexView.setMode(mode);
         if (mode == Mode.PAGE_TURNER) {
             readerToolbar.setVisible(true);
+        } else {
+            readerToolbar.setVisible(false);
         }
+    }
+
+    @Override
+    public void setToolbarVisible(boolean visible) {
+        readerToolbar.setVisible(visible);
+    }
+
+    @Override
+    public void setGotoText(String text) {
+        goTo.setText(text);
+    }
+
+    @Override
+    public String getGotoText() {
+        return goTo.getText();
     }
 
     @Override
@@ -98,8 +121,4 @@ public class JSViewerViewImpl extends Composite implements JSViewerView {
     public HandlerRegistration addGoToKeyDownHandler(KeyDownHandler handler) {
         return goTo.addKeyDownHandler(handler);
     }
-
-    private native void console(String message) /*-{
-        console.log(message);
-    }-*/;
 }

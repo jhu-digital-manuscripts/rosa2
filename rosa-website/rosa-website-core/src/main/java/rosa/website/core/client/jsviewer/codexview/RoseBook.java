@@ -1,7 +1,5 @@
 package rosa.website.core.client.jsviewer.codexview;
 
-import com.google.gwt.core.client.GWT;
-import rosa.website.core.client.jsviewer.util.HttpGet;
 import rosa.website.core.client.jsviewer.util.Util;
 
 // TODO handle missing image
@@ -11,29 +9,29 @@ public class RoseBook {
     private final RoseImage[] images;
     private int opening_end;
 
-    public static void load(final String fsi_collection, String bookid,
-            final HttpGet.Callback<RoseBook> topcb) {
-        HttpGet.Callback<String> cb = new HttpGet.Callback<String>() {
-            public void failure(String error) {
-                topcb.failure(error);
-            }
+//    public static void load(final String fsi_collection, String bookid,
+//            final HttpGet.Callback<RoseBook> topcb) {
+//        HttpGet.Callback<String> cb = new HttpGet.Callback<String>() {
+//            public void failure(String error) {
+//                topcb.failure(error);
+//            }
+//
+//            public void success(String result) {
+//                topcb.success(new RoseBook(fsi_collection, result, ""));
+//            }
+//        };
+//
+//        String url = GWT.getModuleBaseURL() + "data/" + bookid + "/" + bookid
+//                + ".images.csv";
+//
+//        HttpGet.request(url, cb);
+//    }
 
-            public void success(String result) {
-                topcb.success(new RoseBook(fsi_collection, result));
-            }
-        };
-
-        String url = GWT.getModuleBaseURL() + "data/" + bookid + "/" + bookid
-                + ".images.csv";
-
-        HttpGet.request(url, cb);
+    public RoseBook(String fsi_collection, String csv, String missing_image_name) {
+        this(fsi_collection, Util.parseCSVTable(csv), missing_image_name);
     }
 
-    public RoseBook(String fsi_collection, String csv) {
-        this(fsi_collection, Util.parseCSVTable(csv));
-    }
-
-    public RoseBook(String fsi_collection, String[][] table) {
+    public RoseBook(String fsi_collection, String[][] table, String missing_image_name) {
         this.images = new RoseImage[table.length];
 
         opening_end = -1;
@@ -42,7 +40,7 @@ public class RoseBook {
             String[] row = table[i];
 
             if (row[0].startsWith("*")) {
-                images[i] = new RoseImage(row[0]);
+                images[i] = new RoseImage(row[0], missing_image_name);
             } else {
                 images[i] = new RoseImage(fsi_collection, row[0], Integer.parseInt(row[1]),
                         Integer.parseInt(row[2]));
@@ -129,9 +127,9 @@ public class RoseBook {
             this.missing = false;
         }
 
-        public RoseImage(String name) {
+        public RoseImage(String name, String missing_id) {
             this.name = name;
-            this.id = "rose/" + "missing_image.tif";
+            this.id = missing_id;
             this.missing = true;
             this.width = -1;
             this.height = -1;
