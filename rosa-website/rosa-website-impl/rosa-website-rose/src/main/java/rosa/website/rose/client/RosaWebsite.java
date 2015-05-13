@@ -16,7 +16,10 @@ import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.SidebarPresenter;
 import rosa.website.core.client.place.HTMLPlace;
+import rosa.website.core.client.view.SidebarView;
+import rosa.website.core.client.view.impl.SidebarViewImpl;
 import rosa.website.rose.client.nav.DefaultRosaHistoryMapper;
 import rosa.website.rose.client.nav.RosaActivityMapper;
 import rosa.website.rose.client.nav.RosaHistoryMapper;
@@ -26,6 +29,7 @@ import java.util.logging.Logger;
 
 public class RosaWebsite implements EntryPoint {
     private static final Logger logger = Logger.getLogger("");
+    private static final int SIDEBAR_WIDTH = 150;
 
     /**
      * This is the default place that will load when the application
@@ -36,6 +40,8 @@ public class RosaWebsite implements EntryPoint {
 
     private ScrollPanel main_content = new ScrollPanel();
     private final DockLayoutPanel main = new DockLayoutPanel(Style.Unit.PX);
+
+    private SidebarPresenter sidebarPresenter;
 
     @Override
     public void onModuleLoad() {
@@ -63,14 +69,17 @@ public class RosaWebsite implements EntryPoint {
 
         history_handler.handleCurrentHistory();
 
+        addSidebar(clientFactory);
         main.add(main_content);
-        main_content.setSize(Window.getClientWidth() + "px", Window.getClientHeight() + "px");
+
+        main_content.setSize((Window.getClientWidth() - SIDEBAR_WIDTH) + "px", Window.getClientHeight() + "px");
         RootLayoutPanel.get().add(main);
 
         Window.addResizeHandler(new ResizeHandler() {
             @Override
             public void onResize(ResizeEvent event) {
-                main_content.setSize(Window.getClientWidth() + "px", Window.getClientHeight() + "px");
+                main_content.setSize((Window.getClientWidth() - SIDEBAR_WIDTH) + "px", Window.getClientHeight() + "px");
+//                sidebarPresenter.resize(SIDEBAR_WIDTH + "px", Window.getClientHeight() + "px");
             }
         });
 
@@ -86,4 +95,12 @@ public class RosaWebsite implements EntryPoint {
     private native boolean clientSupportsFlash() /*-{
         return typeof navigator.plugins['Shockwave Flash'] !== 'undefined';
     }-*/;
+
+    private void addSidebar(ClientFactory clientFactory) {
+        SidebarView view = new SidebarViewImpl();
+        sidebarPresenter = new SidebarPresenter(view, clientFactory);
+        sidebarPresenter.resize(SIDEBAR_WIDTH + "px", Window.getClientHeight() + "px");
+
+        main.addWest(sidebarPresenter, SIDEBAR_WIDTH);
+    }
 }

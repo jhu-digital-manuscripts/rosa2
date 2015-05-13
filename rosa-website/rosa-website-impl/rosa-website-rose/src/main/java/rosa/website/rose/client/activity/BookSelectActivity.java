@@ -1,9 +1,12 @@
 package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import com.google.gwt.user.client.ui.Widget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.BookSelectPlace;
@@ -20,6 +23,7 @@ public class BookSelectActivity implements Activity {
 
     private final BookSelectView view;
     private final SelectCategory category;
+    private final String lang;
 
     private final ArchiveDataServiceAsync service;
 
@@ -27,6 +31,7 @@ public class BookSelectActivity implements Activity {
         this.view = clientFactory.bookSelectView();
         this.category = place.getCategory();
         this.service = clientFactory.archiveDataService();
+        this.lang = clientFactory.context().getLanguage();
     }
 
     @Override
@@ -45,13 +50,13 @@ public class BookSelectActivity implements Activity {
     }
 
     @Override
-    public void start(AcceptsOneWidget panel, EventBus eventBus) {
+    public void start(final AcceptsOneWidget panel, EventBus eventBus) {
         panel.setWidget(view);
 
         service.loadBookSelectionData(
                 WebsiteConfig.INSTANCE.collection(),
                 category,
-                "en",
+                lang,
                 new AsyncCallback<BookSelectList>() {
                     @Override
                     public void onFailure(Throwable caught) {
@@ -65,5 +70,12 @@ public class BookSelectActivity implements Activity {
                     }
                 }
         );
+
+        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+            @Override
+            public void execute() {
+                view.onResize();
+            }
+        });
     }
 }

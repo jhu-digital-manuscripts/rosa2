@@ -38,4 +38,16 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
 
         root.setWidget(browser);
     }
+
+    public void resize(String width, String height) {
+        root.setSize(width, height);
+    }
+
+    @Override
+    public void onResize() {
+        int width = this.getParent().getOffsetWidth();
+        int height = this.getParent().getOffsetHeight();
+
+        resize(width + "px", height + "px");
+    }
 }

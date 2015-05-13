@@ -1,0 +1,22 @@
+.SidebarHeader {
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.SidebarItem {
+   color: #FFFFFF;
+   margin-left: 1em;
+}
+
+.SidebarLastUpdated {
+   color: #FFFFFF;
+   font-size: smaller;
+   margin-top: 2em;
+}
+
+.SidebarSelected {
+  font-weight: bold;
+  color: #000000;
+  background-color: #FFFFCC;
+}
