@@ -19,6 +19,20 @@ public class SidebarPresenter implements SidebarView.Presenter {
         addProjectLinks();
     }
 
+    public void addBookLinks(String bookId) {
+        Map<String, String> links = new HashMap<>();
+
+        links.put("Description", "book;" + bookId);
+        links.put("Page turner", "read;" + bookId);
+        links.put("Browse images", "browse;" + bookId);
+
+        view.setBookLinks("Book", links);
+    }
+
+    public void clearBookLinks() {
+        view.clearBookLinks();
+    }
+
     private void addSiteNavLinks() {
         Map<String, String> nav_links = new HashMap<>();
 
@@ -68,4 +82,14 @@ public class SidebarPresenter implements SidebarView.Presenter {
     public Widget asWidget() {
         return view.asWidget();
     }
+
+//    TODO should this be handled here or in the AppController?
+//    @Override
+//    public void onBookSelect(BookSelectEvent event) {
+//        if (event.isSelected()) {
+//            addBookLinks(event.getBookId());
+//        } else {
+//            clearBookLinks();
+//        }
+//    }
 }

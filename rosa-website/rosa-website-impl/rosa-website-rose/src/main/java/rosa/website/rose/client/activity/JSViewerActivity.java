@@ -14,6 +14,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.jsviewer.codexview.CodexController;
 import rosa.website.core.client.jsviewer.codexview.CodexController.ChangeHandler;
 import rosa.website.core.client.jsviewer.codexview.CodexImage;
@@ -43,6 +44,7 @@ public class JSViewerActivity implements Activity {
 
     private JSViewerView view;
     private ArchiveDataServiceAsync archiveService;
+    private final com.google.web.bindery.event.shared.EventBus eventBus;
 
     private String collection;
     private String book;
@@ -56,6 +58,7 @@ public class JSViewerActivity implements Activity {
     public JSViewerActivity(BookViewerPlace place, ClientFactory clientFactory) {
         this.view = clientFactory.jsViewerView();
         this.archiveService = clientFactory.archiveDataService();
+        this.eventBus = clientFactory.eventBus();
         this.book = place.getBook();
         this.collection = clientFactory.context().getCollection();
         this.lang = clientFactory.context().getLanguage();
@@ -78,7 +81,7 @@ public class JSViewerActivity implements Activity {
 
     @Override
     public void onCancel() {
-
+        this.eventBus.fireEvent(new BookSelectEvent(false, book));
     }
 
     @Override
@@ -89,10 +92,12 @@ public class JSViewerActivity implements Activity {
             registration.removeHandler();
         }
         handlers.clear();
+        this.eventBus.fireEvent(new BookSelectEvent(false, book));
     }
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        this.eventBus.fireEvent(new BookSelectEvent(true, book));
         panel.setWidget(view);
         final String fsi_missing_image = fsi_share.get(collection) + "/missing_image.tif";
 

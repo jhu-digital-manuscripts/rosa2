@@ -7,9 +7,9 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
-import rosa.archive.model.BookMetadata;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.view.BookDescriptionView;
 import rosa.website.rose.client.WebsiteConfig;
@@ -23,6 +23,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     private final String bookName;
     private final ArchiveDataServiceAsync service;
     private final BookDescriptionView view;
+    private com.google.web.bindery.event.shared.EventBus eventBus;
 
     private Book book;
 
@@ -30,6 +31,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
         this.bookName = place.getBook();
         this.service = clientFactory.archiveDataService();
         this.view = clientFactory.bookDescriptionView();
+        this.eventBus = clientFactory.eventBus();
     }
 
     @Override
@@ -39,17 +41,17 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
     @Override
     public void onCancel() {
-
+        eventBus.fireEvent(new BookSelectEvent(false, bookName));
     }
 
     @Override
     public void onStop() {
-
+        eventBus.fireEvent(new BookSelectEvent(false, bookName));
     }
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
-        logger.info("Start book description activity. (" + bookName + ")");
+        this.eventBus.fireEvent(new BookSelectEvent(true, bookName));
         panel.setWidget(view);
 
         view.setPresenter(this);

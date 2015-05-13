@@ -28,6 +28,8 @@
 
     <entry-point class='rosa.website.rose.client.RosaWebsite' />
 
+    <extend-property name='locale' values='fr'/>
+
     <source path='client' />
     <!--<source path='shared' />-->
 

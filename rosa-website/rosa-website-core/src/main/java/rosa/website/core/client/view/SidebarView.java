@@ -17,6 +17,10 @@ public interface SidebarView extends IsWidget {
 
     void addSection(String title, Map<String, String> links);
 
+    void setBookLinks(String title, Map<String, String> links);
+
+    void clearBookLinks();
+
     void resize(String width, String height);
 
 }

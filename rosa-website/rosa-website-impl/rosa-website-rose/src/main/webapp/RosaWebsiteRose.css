@@ -1,3 +1,8 @@
+.base {
+    /*background-color: #3b6280;*/
+    background-color: white;
+}
+
 .SidebarHeader {
   color: #FFFFFF;
   font-weight: bold;

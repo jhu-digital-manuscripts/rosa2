@@ -15,6 +15,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.FsiViewer.FSIPagesCallback;
@@ -39,6 +40,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
     private FSIViewerView view;
     private ArchiveDataServiceAsync service;
+    private final com.google.web.bindery.event.shared.EventBus eventBus;
 
     private ScheduledCommand resizeCommand = new ScheduledCommand() {
         @Override
@@ -100,6 +102,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         this.book = place.getBook();
         this.type = getViewerType(place.getType());
         this.current_image_index = 0;
+        this.eventBus = clientFactory.eventBus();
     }
 
     @Override
@@ -109,16 +112,17 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
     @Override
     public void onCancel() {
-
+        this.eventBus.fireEvent(new BookSelectEvent(false, book));
     }
 
     @Override
     public void onStop() {
-        logger.info("Activity stopped. (book='" + book + "', type='" + type + "')");
+        this.eventBus.fireEvent(new BookSelectEvent(false, book));
     }
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        this.eventBus.fireEvent(new BookSelectEvent(true, book));
         panel.setWidget(view);
         setupFlashViewer();
     }

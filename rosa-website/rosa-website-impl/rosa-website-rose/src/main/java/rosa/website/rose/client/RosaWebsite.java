@@ -17,6 +17,10 @@ import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.SidebarPresenter;
+import rosa.website.core.client.event.BookSelectEvent;
+import rosa.website.core.client.event.FlashStatusChangeEvent;
+import rosa.website.core.client.event.LanguageChangeEvent;
+import rosa.website.core.client.mvp.AppController;
 import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.core.client.view.SidebarView;
 import rosa.website.core.client.view.impl.SidebarViewImpl;
@@ -51,7 +55,6 @@ public class RosaWebsite implements EntryPoint {
         ClientFactory clientFactory = new ClientFactory();
         clientFactory.context().setCollection(WebsiteConfig.INSTANCE.collection());
         clientFactory.context().setUseFlash(clientSupportsFlash());
-//        clientFactory.context().setUseFlash(false);
         clientFactory.context().setLanguage("en");
 
         EventBus eventBus = clientFactory.eventBus();
@@ -64,16 +67,21 @@ public class RosaWebsite implements EntryPoint {
 
         DefaultRosaHistoryMapper history_mapper = GWT.create(DefaultRosaHistoryMapper.class);
         RosaHistoryMapper appHistoryMapper = new RosaHistoryMapper(history_mapper, clientFactory);
+
         final PlaceHistoryHandler history_handler = new PlaceHistoryHandler(appHistoryMapper);
         history_handler.register(placeController, eventBus, default_place);
-
-        history_handler.handleCurrentHistory();
 
         addSidebar(clientFactory);
         main.add(main_content);
 
         main_content.setSize((Window.getClientWidth() - SIDEBAR_WIDTH) + "px", Window.getClientHeight() + "px");
+        main_content.addStyleName("base");
         RootLayoutPanel.get().add(main);
+
+        AppController appController = new AppController(sidebarPresenter, history_handler, clientFactory);
+        history_handler.handleCurrentHistory();
+
+        bind(eventBus, appController);
 
         Window.addResizeHandler(new ResizeHandler() {
             @Override
@@ -102,5 +110,11 @@ public class RosaWebsite implements EntryPoint {
         sidebarPresenter.resize(SIDEBAR_WIDTH + "px", Window.getClientHeight() + "px");
 
         main.addWest(sidebarPresenter, SIDEBAR_WIDTH);
+    }
+
+    private void bind(EventBus eventBus, AppController controller) {
+        eventBus.addHandler(FlashStatusChangeEvent.TYPE, controller);
+        eventBus.addHandler(LanguageChangeEvent.TYPE, controller);
+        eventBus.addHandler(BookSelectEvent.TYPE, controller);
     }
 }
