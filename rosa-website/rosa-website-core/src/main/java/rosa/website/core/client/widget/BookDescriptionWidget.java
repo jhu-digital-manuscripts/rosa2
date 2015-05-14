@@ -1,23 +1,18 @@
-package rosa.archive.core.serialize;
+package rosa.website.core.client.widget;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-import rosa.archive.core.util.XMLUtil;
-import rosa.archive.model.BookDescription;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.xml.client.Document;
+import com.google.gwt.xml.client.Element;
+import com.google.gwt.xml.client.Node;
+import com.google.gwt.xml.client.NodeList;
+import com.google.gwt.xml.client.XMLParser;
+import rosa.website.core.client.view.BookDescriptionView.Presenter;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.List;
-
-public class BookDescriptionSerializer implements Serializer<BookDescription> {
+public class BookDescriptionWidget extends Composite {
     private static final String DESCRIPTION_START_TAG = "notesStmt";
     private static final String TOPIC_TAG = "note";
     private static final String REND_ATTR = "rend";
@@ -31,75 +26,66 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
     private static final String HI_TAG = "hi";
     private static final String LINE_BREAK_TAG = "lb";
 
-    @Override
-    public BookDescription read(InputStream is, List<String> errors) throws IOException {
+    private Presenter presenter;
 
-        try {
-            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-            Document doc = builder.parse(is);
+    private final VerticalPanel root;
 
-            return buildDescription(doc);
-        } catch (ParserConfigurationException e) {
-            errors.add("Error configuring XML parser.");
-            throw new IOException(e);
-        } catch (SAXException e) {
-            errors.add("Error parsing XML.");
-            throw new IOException(e);
+    public BookDescriptionWidget() {
+        root = new VerticalPanel();
+        initWidget(root);
+    }
+
+    public void setDescription(String xml) {
+        if (isEmpty(xml)) {
+            root.add(new Label("No description found."));
+            return;
+        }
+
+        adaptToHtml(xml);
+    }
+
+    public void setPresenter(Presenter presenter) {
+        this.presenter = presenter;
+    }
+
+    public void clear() {
+        root.clear();
+    }
+
+    private void adaptToHtml(String xml) {
+        Document doc = XMLParser.parse(xml);
+
+        doc.normalize();
+        NodeList list = doc.getElementsByTagName(DESCRIPTION_START_TAG);
+        if (list == null || list.getLength() != 1) {
+            return;
+        }
+
+        /*
+            For each <note> tag, create a new topic. Subject is set to the 'rend'
+            attribute of the <note> tag. Content is set to an HTML adaptation of
+            the TEI contained within the <note>.
+        */
+        Element start = (Element) list.item(0);
+        NodeList notes = start.getElementsByTagName(TOPIC_TAG);
+        for (int i = 0; i < notes.getLength(); i++) {
+            Node n = notes.item(i);
+            if (n.getNodeType() != Node.ELEMENT_NODE) {
+                continue;
+            }
+
+            Element note = (Element) n;
+
+            Label title = new Label(note.getAttribute(REND_ATTR));
+            HTML description = new HTML(elementToString(note));
+
+            root.add(title);
+            root.add(description);
         }
     }
 
-    @Override
-    public void write(BookDescription object, OutputStream out) throws IOException {
-        throw new UnsupportedOperationException("Not implemented.");
-    }
-
-    @Override
-    public Class<BookDescription> getObjectType() {
-        return BookDescription.class;
-    }
-
-    private BookDescription buildDescription(Document doc) {
-
-
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        XMLUtil.write(doc, out, false);
-
-        BookDescription bookDescription = new BookDescription();
-        bookDescription.setDescription(out.toString());
-        return bookDescription;
-
-//        NodeList list = doc.getElementsByTagName(DESCRIPTION_START_TAG);
-//        if (list == null || list.getLength() != 1) {
-//            return null;
-//        }
-//
-//        /*
-//            For each <note> tag, create a new topic. Subject is set to the 'rend'
-//            attribute of the <note> tag. Content is set to an HTML adaptation of
-//            the TEI contained within the <note>.
-//        */
-//        Element start = (Element) list.item(0);
-//        NodeList notes = start.getElementsByTagName(TOPIC_TAG);
-//        for (int i = 0; i < notes.getLength(); i++) {
-//            Node n = notes.item(i);
-//            if (n.getNodeType() != Node.ELEMENT_NODE) {
-//                continue;
-//            }
-//
-//            Element note = (Element) n;
-//
-//            String topic = note.getAttribute(REND_ATTR);
-//            String description = elementToString(note);
-//
-//            if (topic != null && description != null) {
-//                bookDescription.asString().put(topic, description);
-//            }
-//        }
-    }
-
-    // TODO move this stuff to the website code! (it deals with display...)
     private String elementToString(Element el) {
-        Document doc = XMLUtil.newDocument();
+        Document doc = XMLParser.createDocument();
 
         if (el == null || doc == null) {
             return null;
@@ -111,10 +97,7 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
             root.appendChild(adaptToHtmlLike(n, doc));
         }
 
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        XMLUtil.write(doc, out, true);
-
-        return out.toString();
+        return doc.toString();
     }
 
     /**
@@ -127,7 +110,7 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
      * <li>&lt;list&gt; - convert element and content to &lt;ul&gt; and children</li>
      * <li>&lt;head&gt; - convert to span?</li>
      * <li>&lt;item&gt; - convert to &lt;li&gt;</li>
-     * <li>&lt;locus&gt; - grab text content</li>
+     * <li>&lt;locus&gt; - links to the 'from' and 'to' pages. If pure number, assume recto</li>
      * <li>&lt;hi rend="italics"&gt; - convert to &lt;span style="font-style: italic;"&gt;
      *     while preserving content</li>
      * <li>&lt;lb/&gt; - convert to &lt;br/&gt;</li>
@@ -203,7 +186,20 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
                     String from = el.getAttribute("from");
                     String to = el.getAttribute("to");
 
-                    return doc.createTextNode((from == null ? "" : from) + " - " + (to == null ? "" : to));
+                    Element locus = doc.createElement("span");
+
+                    Element from_link = createPageLink(from, doc);
+                    Element to_link = createPageLink(to, doc);
+
+                    if (from_link != null) {
+                        locus.appendChild(from_link);
+                    }
+                    locus.appendChild(doc.createTextNode(" - "));
+                    if (to_link != null) {
+                        locus.appendChild(to_link);
+                    }
+
+                    return locus;
                 case HI_TAG:
                     Element i = doc.createElement("span");
                     i.setAttribute("style", "font-style: italic;");
@@ -225,7 +221,54 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
     }
 
     private String textContent(Node node) {
-        return node.getTextContent().replaceAll("\\s+", " ");
+//        return node.getNodeValue().replaceAll("\\s+", " ");
+        return node == null ? "" : node.getNodeValue();
     }
 
+    // TODO Note: methods below ripped/adapted from BookMetadataWidget!!
+    /**
+     * @param page .
+     * @return link to read specified page, or a label if no such link exists
+     */
+    private Element createPageLink(String page, Document doc) {
+        if (isNotEmpty(page)) {
+            Element anchor = doc.createElement("a");
+
+            anchor.appendChild(doc.createTextNode(page));
+            if (isNumeric(page)) {
+                anchor.setAttribute("href",
+                        GWT.getHostPageBaseURL() + "#" + presenter.getPageUrlFragment(parseInt(page)));
+            } else if (isRectoVerso(page)) {
+                anchor.setAttribute("href", GWT.getHostPageBaseURL() + "#" + presenter.getPageUrlFragment(page));
+            }
+
+            return anchor;
+        }
+
+        return null;
+    }
+
+    private boolean isNotEmpty(String str) {
+        return !isEmpty(str);
+    }
+
+    private boolean isEmpty(String str) {
+        return str == null || str.isEmpty();
+    }
+
+    private boolean isRectoVerso(String page) {
+        return page.endsWith("r") || page.endsWith("v") || page.endsWith("R") || page.endsWith("V");
+    }
+
+    /**
+     * @param str .
+     * @return is this string a number
+     */
+    private native boolean isNumeric(String str) /*-{
+        return !isNaN(str);
+    }-*/;
+
+    private native int parseInt(String str) /*-{
+        return parseInt(str);
+    }-*/;
 }

@@ -1,12 +1,7 @@
 package rosa.archive.model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Prose description about a book.
@@ -42,14 +37,11 @@ public final class BookDescription implements HasId, Serializable {
     };
     private static final long serialVersionUID = 1L;
 
-    /** Map of topics to text (note 'rend' to text content). */
-    private Map<String, String> blocks;
+    private String description;
     private String id;
 
     /** Create a new BookDescription */
-    public BookDescription() {
-        this.blocks = new HashMap<>();
-    }
+    public BookDescription() {}
 
     @Override
     public String getId() {
@@ -61,24 +53,12 @@ public final class BookDescription implements HasId, Serializable {
         this.id = id;
     }
 
-    public Map<String, String> getBlocks() {
-        return blocks;
+    public String asString() {
+        return description;
     }
 
-    public void setBlocks(Map<String, String> blocks) {
-        this.blocks = blocks;
-    }
-
-    /** Get an ordered list of topics in this description. */
-    public List<String> getTopics() {
-        List<String> topics = new ArrayList<>(blocks.keySet());
-        Collections.sort(topics, topics_comparator);
-
-        return topics;
-    }
-
-    public String getDescription(String topic) {
-        return blocks.get(topic);
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
@@ -88,14 +68,14 @@ public final class BookDescription implements HasId, Serializable {
 
         BookDescription that = (BookDescription) o;
 
-        if (blocks != null ? !blocks.equals(that.blocks) : that.blocks != null) return false;
+        if (description != null ? !description.equals(that.description) : that.description != null) return false;
         return !(id != null ? !id.equals(that.id) : that.id != null);
 
     }
 
     @Override
     public int hashCode() {
-        int result = blocks != null ? blocks.hashCode() : 0;
+        int result = description != null ? description.hashCode() : 0;
         result = 31 * result + (id != null ? id.hashCode() : 0);
         return result;
     }
@@ -103,7 +83,7 @@ public final class BookDescription implements HasId, Serializable {
     @Override
     public String toString() {
         return "BookDescription{" +
-                "blocks=" + blocks +
+                "description=" + description +
                 ", id='" + id + '\'' +
                 '}';
     }
