@@ -140,7 +140,7 @@ public class BookDescriptionWidget extends Composite {
                     }
                     return p;
                 case MATERIAL_TAG:
-                    return doc.createTextNode(textContent(node));
+                    return adaptToHtmlLike(node.getFirstChild(), doc);
                 case LIST_TAG:
                     Element div = doc.createElement("div");
 
@@ -164,7 +164,7 @@ public class BookDescriptionWidget extends Composite {
                     Element span = doc.createElement("span");
 
                     span.setAttribute("style", "font-weight: bold;");
-                    span.appendChild(doc.createTextNode(textContent(el)));
+                    span.appendChild(adaptToHtmlLike(node.getFirstChild(), doc));
                     return span;
                 case ITEM_TAG:
                     String item = el.getAttribute("n");
@@ -214,15 +214,10 @@ public class BookDescriptionWidget extends Composite {
                     break;
             }
         } else if (node.getNodeType() == Node.TEXT_NODE) {
-            return doc.createTextNode(textContent(node));
+            return doc.createTextNode(node.getNodeValue());
         }
 
         return null;
-    }
-
-    private String textContent(Node node) {
-//        return node.getNodeValue().replaceAll("\\s+", " ");
-        return node == null ? "" : node.getNodeValue();
     }
 
     // TODO Note: methods below ripped/adapted from BookMetadataWidget!!

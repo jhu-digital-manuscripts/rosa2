@@ -9,10 +9,7 @@ import rosa.website.rose.client.RosaHistoryConfig;
 import rosa.website.rose.client.WebsiteConfig;
 import rosa.website.core.client.mvp.BaseHistoryMapper;
 
-import java.util.logging.Logger;
-
 public class RosaHistoryMapper extends BaseHistoryMapper {
-    private static final Logger logger = Logger.getLogger(RosaHistoryMapper.class.toString());
 
     /**
      * @param defaultHistoryMapper .
@@ -29,10 +26,8 @@ public class RosaHistoryMapper extends BaseHistoryMapper {
 
         String[] parts = token.split(DELIMITER);
         if (RosaHistoryConfig.isValidHtmlPage(parts[0])) {
-            logger.fine("Found history token for HTMLPlace.");
             return new HTMLPlace(parts[0]);
         } else if (RosaHistoryConfig.isValidCsvPage(parts[0])) {
-            logger.fine("Found history token for CSVDataPlace.");
             return new CSVDataPlace(parts[0]);
         }
 

@@ -4,16 +4,27 @@ import com.google.gwt.place.shared.Place;
 
 public class BookViewerPlace extends Place {
 
-    private String type;
-    private String book;
+    private final String type;
+    private final String book;
+    private final String page;
 
     /**
      * @param type viewer type (pages, showcase)
      * @param book name of book
      */
     public BookViewerPlace(String type, String book) {
+        this(type, book, null);
+    }
+
+    /**
+     * @param type viewer type
+     * @param book book id
+     * @param page page id
+     */
+    public BookViewerPlace(String type, String book, String page) {
         this.type = type;
         this.book = book;
+        this.page = page;
     }
 
     public String getBook() {
@@ -24,6 +35,10 @@ public class BookViewerPlace extends Place {
         return type;
     }
 
+    public String getPage() {
+        return page;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -32,7 +47,8 @@ public class BookViewerPlace extends Place {
         BookViewerPlace that = (BookViewerPlace) o;
 
         if (type != null ? !type.equals(that.type) : that.type != null) return false;
-        return !(book != null ? !book.equals(that.book) : that.book != null);
+        if (book != null ? !book.equals(that.book) : that.book != null) return false;
+        return !(page != null ? !page.equals(that.page) : that.page != null);
 
     }
 
@@ -40,14 +56,16 @@ public class BookViewerPlace extends Place {
     public int hashCode() {
         int result = type != null ? type.hashCode() : 0;
         result = 31 * result + (book != null ? book.hashCode() : 0);
+        result = 31 * result + (page != null ? page.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return "FSIViewerPlace{" +
+        return "BookViewerPlace{" +
                 "type='" + type + '\'' +
                 ", book='" + book + '\'' +
+                ", page='" + page + '\'' +
                 '}';
     }
 }

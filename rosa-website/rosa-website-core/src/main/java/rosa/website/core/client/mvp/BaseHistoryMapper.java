@@ -69,7 +69,14 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
 
         String[] parts = token.split(DELIMITER);
         if (parts.length == 2 && (parts[0].equals("browse") || parts[0].equals("read"))) {
-            return new BookViewerPlace(parts[0], parts[1]);
+            String frag = parts[1];
+
+            if (frag.contains(".")) {
+                int index = frag.indexOf('.');
+                return new BookViewerPlace(parts[0], frag.substring(0, index), parts[1]);
+            } else {
+                return new BookViewerPlace(parts[0], parts[1]);
+            }
         }
 
         // If token not already recognized, revert back to the default history token scheme
@@ -83,7 +90,14 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
     public String getToken(Place place) {
         if (place instanceof BookViewerPlace) {
             BookViewerPlace b = (BookViewerPlace) place;
-            return b.getType() + DELIMITER + b.getBook();
+            String token = b.getType() + DELIMITER;
+            if (b.getPage() == null || b.getPage().isEmpty()) {
+                token = token.concat(b.getBook());
+            } else {
+                token = token.concat(b.getPage());
+            }
+
+            return token;
         }
 
         String token = defaultHistoryMapper.getToken(place).replaceAll(COLON, DELIMITER);

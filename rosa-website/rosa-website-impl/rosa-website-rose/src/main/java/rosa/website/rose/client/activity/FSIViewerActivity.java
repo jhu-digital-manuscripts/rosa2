@@ -36,6 +36,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     private String language;
 
     private String book;
+    private String starterPage;
     private FsiViewerType type;
 
     private FSIViewerView view;
@@ -98,10 +99,10 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         this.language = clientFactory.context().getLanguage();
         this.service = clientFactory.archiveDataService();
         this.view = clientFactory.bookViewerView();
-
+        this.current_image_index = 0;
+        this.starterPage = place.getPage();
         this.book = place.getBook();
         this.type = getViewerType(place.getType());
-        this.current_image_index = 0;
         this.eventBus = clientFactory.eventBus();
     }
 
@@ -124,7 +125,27 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         this.eventBus.fireEvent(new BookSelectEvent(true, book));
         panel.setWidget(view);
-        setupFlashViewer();
+
+        service.loadBook(WebsiteConfig.INSTANCE.collection(), book, new AsyncCallback<Book>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                logger.log(Level.SEVERE, "Failed to load book.", caught);
+            }
+
+            @Override
+            public void onSuccess(Book result) {
+                b = result;
+                view.setPermissionStatement(b.getPermission(language).getPermission());
+                Scheduler.get().scheduleDeferred(resizeCommand);
+
+                if (starterPage != null && !starterPage.isEmpty()) {
+                    logger.info("Starting page: " + starterPage + " in book at index " + getImageIndex(starterPage, b));
+                    setupFlashViewer(getImageIndex(starterPage, b));
+                } else {
+                    setupFlashViewer(-1);
+                }
+            }
+        });
     }
 
     @Override
@@ -148,7 +169,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         return labels.toArray(new String[labels.size()]);
     }
 
-    private void setupFlashViewer() {
+    private void setupFlashViewer(int startPage) {
         String collection = WebsiteConfig.INSTANCE.collection();
         String fsi_xml_url = FSI_URL_PREFIX + collection + "/" + book + "/" + type.getXmlId();
 
@@ -156,11 +177,10 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                 .book(collection, book, language)
                 .type(type)
                 .fsiBookData(URL.encode(fsi_xml_url))
-//                .debug(false)
+                .initialImage(startPage == -1 ? 0 : startPage)
                 .build();
 
         view.setFlashViewer(fsiHtml, type);
-        fetchBookData();
 
         if (type == FsiViewerType.SHOWCASE) {
             view.addShowcaseToolbar();
@@ -171,7 +191,6 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                     if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
                         int index = getImageIndex(view.getGotoText(), b);
                         if (index >= 0) {
-//                            view.fsiViewerSelectImage(translateBookIndexToShowcaseIndex(index));
                             view.fsiViewerSelectImage(index);
                         }
                     }
@@ -193,22 +212,8 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                 }
             });
         }
-    }
 
-    private void fetchBookData() {
-        service.loadBook(WebsiteConfig.INSTANCE.collection(), book, new AsyncCallback<Book>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load book.", caught);
-            }
 
-            @Override
-            public void onSuccess(Book result) {
-                b = result;
-                view.setPermissionStatement(b.getPermission(language).getPermission());
-                Scheduler.get().scheduleDeferred(resizeCommand);
-            }
-        });
     }
 
     /**
@@ -234,7 +239,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         if (book != null && book.getImages() != null && book.getImages().getImages() != null) {
             for (int i = 0; i < book.getImages().getImages().size(); i++) {
                 BookImage image = book.getImages().getImages().get(i);
-                if (image.getName().equals(name)) {
+                if (image.getName().equals(name) || image.getId().equals(name)) {
                     return i;
                 }
             }

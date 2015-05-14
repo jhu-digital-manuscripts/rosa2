@@ -49,6 +49,7 @@ public class JSViewerActivity implements Activity {
     private String collection;
     private String book;
     private String lang;
+    private String starterPage;
     private Book b;
 
     private Mode viewerMode;
@@ -63,9 +64,8 @@ public class JSViewerActivity implements Activity {
         this.collection = clientFactory.context().getCollection();
         this.lang = clientFactory.context().getLanguage();
         this.viewerMode = getViewerMode(place.getType());
+        this.starterPage = place.getPage();
         this.handlers = new ArrayList<>();
-
-        getBook(book);
 
         fsi_share.put("rosecollection", "rose");
         fsi_share.put("pizancollection", "pizan");
@@ -81,24 +81,43 @@ public class JSViewerActivity implements Activity {
 
     @Override
     public void onCancel() {
-        this.eventBus.fireEvent(new BookSelectEvent(false, book));
+        finishActivity();
     }
 
     @Override
     public void onStop() {
-        view.clear();
-
-        for (HandlerRegistration registration : handlers) {
-            registration.removeHandler();
-        }
-        handlers.clear();
-        this.eventBus.fireEvent(new BookSelectEvent(false, book));
+        finishActivity();
     }
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         this.eventBus.fireEvent(new BookSelectEvent(true, book));
         panel.setWidget(view);
+
+
+        archiveService.loadBook(collection, book, new AsyncCallback<Book>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                logger.log(Level.SEVERE, "Failed to load book. [" + book + "]", caught);
+            }
+
+            @Override
+            public void onSuccess(Book result) {
+                b = result;
+
+                if (starterPage != null && !starterPage.isEmpty()) {
+                    current_selected_index = getImageIndex(starterPage, result);
+                    if (starterPage.endsWith("v") || starterPage.endsWith("V")) {
+                        current_selected_index++;
+                    }
+                }
+
+                createJSviewer();
+            }
+        });
+    }
+
+    private void createJSviewer() {
         final String fsi_missing_image = fsi_share.get(collection) + "/missing_image.tif";
 
         archiveService.loadImageList(collection, book, new AsyncCallback<String>() {
@@ -115,22 +134,10 @@ public class JSViewerActivity implements Activity {
             }
         });
 
-        archiveService.loadPermissionStatement(collection, book, lang, new AsyncCallback<String>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load permission statement. [" + collection + ":" + book + "]",
-                        caught);
-            }
-
-            @Override
-            public void onSuccess(String result) {
-                view.setPermissionStatement(result);
-            }
-        });
+        view.setPermissionStatement(b.getPermission(lang).getPermission());
     }
 
     private void setupView(final CodexModel model) {
-        logger.info("Setting up the viewer. (MODE:" + viewerMode + ")");
         final CodexController controller = new SimpleCodexController(model);
         ImageServer server = new FsiImageServer(WebsiteConfig.INSTANCE.fsiUrl());
 
@@ -258,30 +265,26 @@ public class JSViewerActivity implements Activity {
         }
     }
 
-    private void getBook(String name) {
-        archiveService.loadBook(collection, name, new AsyncCallback<Book>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load book. [" + book + "]", caught);
-            }
-
-            @Override
-            public void onSuccess(Book result) {
-                b = result;
-            }
-        });
-    }
-
     private int getImageIndex(String name, Book book) {
         if (book != null && book.getImages() != null && book.getImages().getImages() != null) {
             for (int i = 0; i < book.getImages().getImages().size(); i++) {
                 BookImage image = book.getImages().getImages().get(i);
-                if (image.getName().equals(name)) {
+                if (image.getName().equals(name) || image.getId().equals(name)) {
                     return i;
                 }
             }
         }
 
         return -1;
+    }
+
+    private void finishActivity() {
+        view.clear();
+
+        for (HandlerRegistration registration : handlers) {
+            registration.removeHandler();
+        }
+        handlers.clear();
+        this.eventBus.fireEvent(new BookSelectEvent(false, book));
     }
 }

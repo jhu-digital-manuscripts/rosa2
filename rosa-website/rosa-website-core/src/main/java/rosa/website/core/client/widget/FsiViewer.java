@@ -118,10 +118,10 @@ public class FsiViewer extends Composite {
             var children = $doc.getElementById(viewerId).getElementsByTagName('embed');
             if (children && children[0]) {
                 if (width) {
-                    children[0].setAttribute('width', width+'px');
+                    children[0].setAttribute('width', width);
                 }
                 if (height) {
-                    children[0].setAttribute('height', height+'px');
+                    children[0].setAttribute('height', height);
                 }
             }
         }

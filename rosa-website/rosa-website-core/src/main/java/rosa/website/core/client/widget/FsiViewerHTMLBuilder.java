@@ -108,7 +108,7 @@ public class FsiViewerHTMLBuilder {
      * @return this builder
      */
     public FsiViewerHTMLBuilder initialImage(int index) {
-        this.initial_image_index = index;
+        this.initial_image_index = index + 1;
         return this;
     }
 
