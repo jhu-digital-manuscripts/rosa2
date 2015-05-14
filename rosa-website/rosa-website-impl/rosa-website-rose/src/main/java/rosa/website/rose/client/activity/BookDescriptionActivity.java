@@ -1,7 +1,6 @@
 package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
@@ -21,6 +20,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     private static final Logger logger = Logger.getLogger(BookDescriptionActivity.class.toString());
 
     private final String bookName;
+    private final String language;
     private final ArchiveDataServiceAsync service;
     private final BookDescriptionView view;
     private com.google.web.bindery.event.shared.EventBus eventBus;
@@ -29,6 +29,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
     public BookDescriptionActivity(BookDescriptionPlace place, ClientFactory clientFactory) {
         this.bookName = place.getBook();
+        this.language = clientFactory.context().getLanguage();
         this.service = clientFactory.archiveDataService();
         this.view = clientFactory.bookDescriptionView();
         this.eventBus = clientFactory.eventBus();
@@ -41,12 +42,12 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
     @Override
     public void onCancel() {
-        eventBus.fireEvent(new BookSelectEvent(false, bookName));
+        finishActivity();
     }
 
     @Override
     public void onStop() {
-        eventBus.fireEvent(new BookSelectEvent(false, bookName));
+        finishActivity();
     }
 
     @Override
@@ -68,25 +69,35 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
         });
     }
 
-    private void handleData(Book book) {
-        this.book = book;
-
-        view.setMetadata(book.getBookMetadata("en"));
-        view.setDescription(book.getBookDescription("en"));
-    }
-
     @Override
-    public String getPageUrl(String page) {
+    public String getPageUrlFragment(String page) {
         if (book == null) {
             return null;
         }
 
         for (BookImage image : book.getImages()) {
             if (image.getName().equals(page)) {
-                return GWT.getHostPageBaseURL() + "#read;" + image.getId();
+                return "read;" + image.getId();
             }
         }
 
         return null;
+    }
+
+    @Override
+    public String getPageUrlFragment(int page) {
+        return getPageUrlFragment(page + "r");
+    }
+
+    private void handleData(Book book) {
+        this.book = book;
+
+        view.setMetadata(book.getBookMetadata(language));
+        view.setDescription(book.getBookDescription(language));
+    }
+
+    private void finishActivity() {
+        view.clear();
+        eventBus.fireEvent(new BookSelectEvent(false, bookName));
     }
 }

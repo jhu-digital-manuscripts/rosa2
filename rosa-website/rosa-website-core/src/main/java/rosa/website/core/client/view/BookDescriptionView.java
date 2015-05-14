@@ -10,7 +10,13 @@ public interface BookDescriptionView extends IsWidget{
          * @param page page short name
          * @return URL to view the page
          */
-        String getPageUrl(String page);
+        String getPageUrlFragment(String page);
+
+        /**
+         * @param page page number (not index!)
+         * @return URL to view the page, assume recto of page number
+         */
+        String getPageUrlFragment(int page);
     }
 
     void clear();

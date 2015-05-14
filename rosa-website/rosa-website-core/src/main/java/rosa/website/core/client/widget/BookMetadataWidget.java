@@ -1,16 +1,18 @@
 package rosa.website.core.client.widget;
 
-import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
+import com.google.gwt.user.client.ui.Hyperlink;
 import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.Widget;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 import rosa.website.core.client.view.BookDescriptionView.Presenter;
 
 public class BookMetadataWidget extends Composite {
+    private static final Label EMPTY_LABEL = new Label("");
     private Presenter presenter;
 
     private BookMetadata metadata;
@@ -119,13 +121,9 @@ public class BookMetadataWidget extends Composite {
 
             // Range
             HorizontalPanel rangePanel = new HorizontalPanel();
-            if (isNotEmpty(text.getFirstPage())) {
-                rangePanel.add(new Anchor(text.getFirstPage(), presenter.getPageUrl(text.getFirstPage())));
-            }
+            rangePanel.add(createPageLink(text.getFirstPage()));
             rangePanel.add(new Label(" - "));
-            if (isNotEmpty(text.getLastPage())) {
-                rangePanel.add(new Anchor(text.getLastPage(), presenter.getPageUrl(text.getLastPage())));
-            }
+            rangePanel.add(createPageLink(text.getLastPage()));
             textsTable.setWidget(i, 1, rangePanel);
 
             // Folios
@@ -138,6 +136,24 @@ public class BookMetadataWidget extends Composite {
                 textsTable.setText(i, 3, String.valueOf(text.getNumberOfIllustrations()));
             }
         }
+
+        root.add(textsTable);
+    }
+
+    /**
+     * @param page .
+     * @return link to read specified page, or a label if no such link exists
+     */
+    private Widget createPageLink(String page) {
+        if (isNotEmpty(page)) {
+            if (isNumeric(page)) {
+                return new Hyperlink(page, presenter.getPageUrlFragment(parseInt(page)));
+            } else if (isRectoVerso(page)) {
+                return new Hyperlink(page, presenter.getPageUrlFragment(page));
+            }
+        }
+
+        return EMPTY_LABEL;
     }
 
     private boolean isNotEmpty(String str) {
@@ -147,4 +163,20 @@ public class BookMetadataWidget extends Composite {
     private boolean isEmpty(String str) {
         return str == null || str.isEmpty();
     }
+
+    private boolean isRectoVerso(String page) {
+        return page.endsWith("r") || page.endsWith("v") || page.endsWith("R") || page.endsWith("V");
+    }
+
+    /**
+     * @param str .
+     * @return is this string a number
+     */
+    private native boolean isNumeric(String str) /*-{
+        return !isNaN(str);
+    }-*/;
+
+    private native int parseInt(String str) /*-{
+        return parseInt(str);
+    }-*/;
 }
