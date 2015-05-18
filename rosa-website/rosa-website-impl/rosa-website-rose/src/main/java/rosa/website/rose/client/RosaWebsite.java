@@ -7,6 +7,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.event.logical.shared.ResizeHandler;
+import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
@@ -51,6 +52,8 @@ public class RosaWebsite implements EntryPoint {
     public void onModuleLoad() {
         default_place = new HTMLPlace(WebsiteConfig.INSTANCE.defaultPage());
 
+        main.addStyleName("Main");
+
         // Set initial state
         ClientFactory clientFactory = new ClientFactory();
         clientFactory.context().setCollection(WebsiteConfig.INSTANCE.collection());
@@ -75,7 +78,7 @@ public class RosaWebsite implements EntryPoint {
         main.add(main_content);
 
         main_content.setSize((Window.getClientWidth() - SIDEBAR_WIDTH) + "px", Window.getClientHeight() + "px");
-        main_content.addStyleName("base");
+        main_content.addStyleName("Content");
         RootLayoutPanel.get().add(main);
 
         AppController appController = new AppController(sidebarPresenter, history_handler, clientFactory);

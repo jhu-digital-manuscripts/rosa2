@@ -23,6 +23,8 @@ public class SidebarViewImpl extends Composite implements SidebarView {
 
     public SidebarViewImpl() {
         SimpleLayoutPanel root = new SimpleLayoutPanel();
+        root.addStyleName("Sidebar");
+
         this.bookPanel = new FlowPanel();
         this.sidebar_links = new ArrayList<>();
         this.book_links = new ArrayList<>();
@@ -33,7 +35,6 @@ public class SidebarViewImpl extends Composite implements SidebarView {
 
         bookPanel.setVisible(false);
 
-        root.addStyleName("base");
         initWidget(root);
     }
 
@@ -44,25 +45,13 @@ public class SidebarViewImpl extends Composite implements SidebarView {
 
     @Override
     public void addSection(String title, Map<String, String> links) {
-        if (title != null && !title.isEmpty()) {
-            HTML header = new HTML(title);
-            header.addStyleName("SidebarHeader");
-
-            content.add(new HTML(title));
-        }
-
+        addHeader(title, content);
         addLinks(links, sidebar_links, content);
     }
 
     @Override
     public void setBookLinks(String title, Map<String, String> links) {
-        if (title != null && !title.isEmpty()) {
-            HTML header = new HTML(title);
-            header.addStyleName("SidebarHeader");
-
-            bookPanel.add(header);
-        }
-
+        addHeader(title, bookPanel);
         addLinks(links, book_links, bookPanel);
         bookPanel.setVisible(true);
     }
@@ -78,6 +67,17 @@ public class SidebarViewImpl extends Composite implements SidebarView {
         content.setSize(width, height);
     }
 
+    private void addHeader(String header, HasWidgets container) {
+        if (header == null || header.isEmpty()) {
+            return;
+        }
+
+        HTML h = new HTML(header);
+        h.setStylePrimaryName("SidebarHeader");
+
+        container.add(h);
+    }
+
     private void addLinks(Map<String, String> links, List<Hyperlink> list, HasWidgets container) {
         if (links == null) {
             return;
@@ -85,8 +85,7 @@ public class SidebarViewImpl extends Composite implements SidebarView {
 
         for (Entry<String, String> entry : links.entrySet()) {
             Hyperlink link = new Hyperlink(entry.getKey(), entry.getValue());
-            link.setWidth("100%");
-            link.addStyleName("SidebarItem");
+            link.setStylePrimaryName("SidebarItem");
 
             list.add(link);
             container.add(link);
