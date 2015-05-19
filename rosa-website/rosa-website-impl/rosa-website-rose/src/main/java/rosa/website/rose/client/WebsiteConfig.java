@@ -7,6 +7,7 @@ public interface WebsiteConfig extends Constants {
     WebsiteConfig INSTANCE = GWT.create(WebsiteConfig.class);
 
     String collection();
+    String fsiShare();
     String historyDelimiter();
     String defaultPage();
     String htmlHistory();

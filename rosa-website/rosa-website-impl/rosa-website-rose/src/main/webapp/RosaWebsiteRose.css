@@ -3,27 +3,10 @@
     background-color: white;
 }
 
-/* TODO: Take advantage of class support */
+/* TODO: Take advantage of class support
 @external SidebarItem, Search, ContentHeader, LoadingDialog, ImageDescriptionHeader, SidebarSelected, gwt-TabLayoutPanelTabs, ContentTitle, BookDescriptionTextData, TranscriptionUnavailableError,SidebarLastUpdated, ResultSnippet, BookDescriptionDataName, TranscriptionRubric, ImageDescriptionLabel, BookPicker-header, DataTable, BookPicker-list, Tooltip, Main, TranscriptionInitial, Header, NarrativeSectionsHeader, TranscriptionExtraHeader, ResultField, BookDescription, BookPicker, Content, GoTextBox, TranscriptionDel, BookDescriptionHeader, Home, BookDescriptionData, Transcription, NarrativeSections, TranscriptionExpan, Sidebar, Toolbar, ResultsNav, TranscriptionAdd, Bibliography, ImageDescription, SidebarHeader, TranscriptionLecoy, TranscriptionExtra, ImageViewportThumbSelection, ImageViewportThumb, CodexBrowserView-Thumb, CodexBrowserView-Toolbar, WebImage, WebImage-Loading;
+*/
 
-a:link {
-  color: #FFFFFF;
-  font-weight: normal;
-}
-
-a:visited {
-  color: #FFFFFF;
-  font-weight: normal;
-}
-
-a:hover {
-  color:#B8924B;
-  font-weight: normal;
-}
-
-a:active {
- color: #666666;
-}
 
 .Main {
   background-color: #3b6280;
@@ -89,6 +72,7 @@ a:active {
 
 .SidebarItem {
    color: #FFFFFF;
+   width: 100%;
    margin-left: 1em;
 }
 
@@ -348,4 +332,23 @@ a:hover.Tooltip span {
 
 .WebImage-Loading {
     background-color: black;
+}
+
+a:link {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+a:visited {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+a:hover {
+  color:#B8924B;
+  font-weight: normal;
+}
+
+a:active {
+ color: #666666;
 }

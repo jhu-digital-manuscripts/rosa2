@@ -37,6 +37,7 @@ public class AppController implements FlashStatusChangeEventHandler, LangaugeCha
     @Override
     public void onLanguageChange(LanguageChangeEvent event) {
         // Update context
+
         clientFactory.context().setLanguage(event.getLanguage());
         historyHandler.handleCurrentHistory();
     }

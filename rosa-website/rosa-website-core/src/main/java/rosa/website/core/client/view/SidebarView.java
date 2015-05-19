@@ -7,8 +7,11 @@ import java.util.Map;
 public interface SidebarView extends IsWidget {
 
     interface Presenter extends IsWidget {
-
+        void setUseFlash(boolean useFlash);
+        String getCurrentToken();
     }
+
+    void setPresenter(Presenter presenter);
 
     /**
      * @param nav_links map defining the LINK NAME to LINK TARGET

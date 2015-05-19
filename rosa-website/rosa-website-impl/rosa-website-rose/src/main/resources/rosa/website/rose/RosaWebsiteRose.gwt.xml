@@ -30,6 +30,8 @@
     <entry-point class='rosa.website.rose.client.RosaWebsite' />
 
     <extend-property name='locale' values='fr'/>
+    <extend-property name='locale' values='en'/>
+    <set-property-fallback name="locale" value="en"/>
 
     <source path='client' />
     <!--<source path='shared' />-->

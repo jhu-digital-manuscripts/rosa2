@@ -10,6 +10,7 @@ import java.util.Set;
 
 /**
  * Contains mappings to get dynamic resources from history tokens.
+ * TODO lots of repeated strings....
  */
 public class RosaHistoryConfig {
     private static final WebsiteConfig CONFIG = WebsiteConfig.INSTANCE;

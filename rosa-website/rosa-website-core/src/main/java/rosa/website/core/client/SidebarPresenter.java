@@ -1,6 +1,8 @@
 package rosa.website.core.client;
 
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.Widget;
+import rosa.website.core.client.event.FlashStatusChangeEvent;
 import rosa.website.core.client.view.SidebarView;
 import rosa.website.model.select.SelectCategory;
 
@@ -10,10 +12,13 @@ import java.util.Map;
 // TODO i18n
 public class SidebarPresenter implements SidebarView.Presenter {
     private SidebarView view;
+    private ClientFactory clientFactory;
 
     public SidebarPresenter(SidebarView view, ClientFactory clientFactory) {
         this.view = view;
+        this.clientFactory = clientFactory;
 
+        view.setPresenter(this);
         addSiteNavLinks();
         addBookSelectLinks();
         addProjectLinks();
@@ -81,6 +86,16 @@ public class SidebarPresenter implements SidebarView.Presenter {
     @Override
     public Widget asWidget() {
         return view.asWidget();
+    }
+
+    @Override
+    public void setUseFlash(boolean useFlash) {
+        clientFactory.eventBus().fireEvent(new FlashStatusChangeEvent(useFlash));
+    }
+
+    @Override
+    public String getCurrentToken() {
+        return History.getToken();
     }
 
 //    TODO should this be handled here or in the AppController?
