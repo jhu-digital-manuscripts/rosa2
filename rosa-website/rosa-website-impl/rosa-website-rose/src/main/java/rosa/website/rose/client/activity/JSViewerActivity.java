@@ -117,6 +117,18 @@ public class JSViewerActivity implements Activity {
         });
     }
 
+    public String getCurrentPage() {
+        if (b == null || b.getImages() == null || b.getImages().getImages() == null) {
+            return null;
+        }
+
+        if (b.getImages().getImages().size() < current_selected_index) {
+            return null;
+        }
+
+        return b.getImages().getImages().get(current_selected_index).getId();
+    }
+
     private void createJSviewer() {
         final String fsi_missing_image = fsi_share.get(collection) + "/missing_image.tif";
 

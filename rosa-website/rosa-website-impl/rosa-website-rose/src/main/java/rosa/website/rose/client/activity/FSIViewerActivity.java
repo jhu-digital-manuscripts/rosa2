@@ -169,6 +169,10 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         return labels.toArray(new String[labels.size()]);
     }
 
+    public String getCurrentPage() {
+        return getImageName(current_image_index, b);
+    }
+
     private void setupFlashViewer(int startPage) {
         String collection = WebsiteConfig.INSTANCE.collection();
         String fsi_xml_url = FSI_URL_PREFIX + collection + "/" + book + "/" + type.getXmlId();
