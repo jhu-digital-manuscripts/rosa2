@@ -159,6 +159,7 @@ public class SidebarViewImpl extends Composite implements SidebarView {
     private void addFlashSelector() {
         addHeader("Feature", featuresPanel);
         final CheckBox useFlash = new CheckBox("Flash");
+        useFlash.addStyleName("SidebarItem");
         featuresPanel.add(useFlash);
 
         handlers.add(useFlash.addValueChangeHandler(new ValueChangeHandler<Boolean>() {

@@ -16,6 +16,7 @@ import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.HeaderPresenter;
 import rosa.website.core.client.SidebarPresenter;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.event.FlashStatusChangeEvent;
@@ -33,6 +34,7 @@ import java.util.logging.Logger;
 public class RosaWebsite implements EntryPoint {
     private static final Logger logger = Logger.getLogger("");
     private static final int SIDEBAR_WIDTH = 150;
+    private static final int HEADER_HEIGHT = 96;
 
     /**
      * This is the default place that will load when the application
@@ -79,6 +81,7 @@ public class RosaWebsite implements EntryPoint {
         final PlaceHistoryHandler history_handler = new PlaceHistoryHandler(appHistoryMapper);
         history_handler.register(placeController, eventBus, default_place);
 
+        main.addNorth(new HeaderPresenter(clientFactory), HEADER_HEIGHT);
         addSidebar(clientFactory);
         main.add(main_content);
 

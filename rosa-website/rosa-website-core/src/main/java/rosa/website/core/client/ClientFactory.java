@@ -8,12 +8,14 @@ import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
+import rosa.website.core.client.view.HeaderView;
 import rosa.website.core.client.view.JSViewerView;
 import rosa.website.core.client.view.impl.BookDescriptionViewImpl;
 import rosa.website.core.client.view.impl.BookSelectViewImpl;
 import rosa.website.core.client.view.impl.FSIViewerViewImpl;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
+import rosa.website.core.client.view.impl.HeaderViewImpl;
 import rosa.website.core.client.view.impl.JSViewerViewImpl;
 
 import java.util.logging.Logger;
@@ -26,6 +28,8 @@ public class ClientFactory {
     private static EventBus event_bus = new SimpleEventBus();
     private static PlaceController place_controller = new PlaceController(event_bus);
     private static ArchiveDataServiceAsync archiveDataService = CachingArchiveDataService.INSTANCE;
+
+    private static HeaderView headerView = new HeaderViewImpl();
 
     private static HTMLView htmlView = new HTMLViewImpl();
     private static CSVDataView csvDataView = new CSVDataViewImpl();
@@ -72,5 +76,9 @@ public class ClientFactory {
 
     public JSViewerView jsViewerView() {
         return jsViewerView;
+    }
+
+    public HeaderView headerView() {
+        return headerView;
     }
 }
