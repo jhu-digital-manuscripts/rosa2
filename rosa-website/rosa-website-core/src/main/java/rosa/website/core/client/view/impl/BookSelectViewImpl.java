@@ -23,12 +23,13 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public void setData(BookSelectList data) {
         root.clear();
         TreeViewModel browserModel = new BookSelectionTreeViewModel(data, data.getCategory(),
                 new SingleSelectionModel<BookInfo>());
 
-        CellBrowser browser = new CellBrowser.Builder(browserModel, null)
+        CellBrowser browser = new CellBrowser.Builder(browserModel, null) // this builder constructor uses unchecked operation
 //                .loadingIndicator(null)
                 .build();
 

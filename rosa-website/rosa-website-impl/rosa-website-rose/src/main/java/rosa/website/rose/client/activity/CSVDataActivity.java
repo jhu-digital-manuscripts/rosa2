@@ -2,6 +2,7 @@ package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.resources.client.ExternalTextResource;
 import com.google.gwt.resources.client.ResourceCallback;
 import com.google.gwt.resources.client.ResourceException;
@@ -20,6 +21,9 @@ import rosa.website.rose.client.WebsiteConfig;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Activity for displaying CSV data in table form.
+ */
 public class CSVDataActivity implements Activity {
     private static final Logger logger = Logger.getLogger(CSVDataActivity.class.toString());
 
@@ -39,7 +43,7 @@ public class CSVDataActivity implements Activity {
         this.place = place;
         this.view = clientFactory.csvDataView();
         this.service = clientFactory.archiveDataService();
-        this.lang = clientFactory.context().getLanguage();
+        this.lang = LocaleInfo.getCurrentLocale().getLocaleName();
     }
 
     @Override
@@ -49,7 +53,7 @@ public class CSVDataActivity implements Activity {
 
     @Override
     public void onCancel() {
-
+        view.clear();
     }
 
     @Override
@@ -101,7 +105,6 @@ public class CSVDataActivity implements Activity {
     }
 
     private void handleCsvData(CSVData data) {
-        logger.fine("Done CSVDataActivity.\n" + data.getId());
         view.setData(data);
     }
 }

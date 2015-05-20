@@ -7,7 +7,6 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.event.logical.shared.ResizeHandler;
-import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
@@ -20,7 +19,6 @@ import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.SidebarPresenter;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.event.FlashStatusChangeEvent;
-import rosa.website.core.client.event.LanguageChangeEvent;
 import rosa.website.core.client.mvp.AppController;
 import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.core.client.view.SidebarView;
@@ -58,10 +56,17 @@ public class RosaWebsite implements EntryPoint {
         ClientFactory clientFactory = new ClientFactory();
         clientFactory.context().setCollection(WebsiteConfig.INSTANCE.collection());
         clientFactory.context().setUseFlash(clientSupportsFlash());
-        clientFactory.context().setLanguage(LocaleInfo.getCurrentLocale().getLocaleName());
 
         EventBus eventBus = clientFactory.eventBus();
         final PlaceController placeController = clientFactory.placeController();
+
+        GWT.setUncaughtExceptionHandler(new GWT.UncaughtExceptionHandler() {
+            @Override
+            public void onUncaughtException(Throwable e) {
+                logger.log(Level.SEVERE, "Uncaught exception.", e);
+                placeController.goTo(default_place);
+            }
+        });
 
         // Start ActivityManager for main widget with ActivityMapper
         ActivityMapper activity_mapper = new RosaActivityMapper(clientFactory);
@@ -90,15 +95,6 @@ public class RosaWebsite implements EntryPoint {
             @Override
             public void onResize(ResizeEvent event) {
                 main_content.setSize((Window.getClientWidth() - SIDEBAR_WIDTH) + "px", Window.getClientHeight() + "px");
-//                sidebarPresenter.resize(SIDEBAR_WIDTH + "px", Window.getClientHeight() + "px");
-            }
-        });
-
-        GWT.setUncaughtExceptionHandler(new GWT.UncaughtExceptionHandler() {
-            @Override
-            public void onUncaughtException(Throwable e) {
-                logger.log(Level.SEVERE, "Uncaught exception.", e);
-                placeController.goTo(default_place);
             }
         });
     }
@@ -117,7 +113,6 @@ public class RosaWebsite implements EntryPoint {
 
     private void bind(EventBus eventBus, AppController controller) {
         eventBus.addHandler(FlashStatusChangeEvent.TYPE, controller);
-        eventBus.addHandler(LanguageChangeEvent.TYPE, controller);
         eventBus.addHandler(BookSelectEvent.TYPE, controller);
     }
 }

@@ -2,6 +2,7 @@ package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.Book;
@@ -29,7 +30,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
     public BookDescriptionActivity(BookDescriptionPlace place, ClientFactory clientFactory) {
         this.bookName = place.getBook();
-        this.language = clientFactory.context().getLanguage();
+        this.language = LocaleInfo.getCurrentLocale().getLocaleName();
         this.service = clientFactory.archiveDataService();
         this.view = clientFactory.bookDescriptionView();
         this.eventBus = clientFactory.eventBus();

@@ -9,12 +9,14 @@ import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.http.client.URL;
+import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
@@ -31,6 +33,7 @@ import java.util.logging.Logger;
 
 public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     private static final Logger logger = Logger.getLogger(FSIViewerActivity.class.toString());
+    private static final Labels labels = Labels.INSTANCE;
     private static final String FSI_URL_PREFIX = GWT.getModuleBaseURL() + "fsi/";
 
     private String language;
@@ -96,7 +99,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
      * @param clientFactory .
      */
     public FSIViewerActivity(BookViewerPlace place, ClientFactory clientFactory) {
-        this.language = clientFactory.context().getLanguage();
+        this.language = LocaleInfo.getCurrentLocale().getLocaleName();
         this.service = clientFactory.archiveDataService();
         this.view = clientFactory.bookViewerView();
         this.current_image_index = 0;
@@ -139,7 +142,6 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                 Scheduler.get().scheduleDeferred(resizeCommand);
 
                 if (starterPage != null && !starterPage.isEmpty()) {
-                    logger.info("Starting page: " + starterPage + " in book at index " + getImageIndex(starterPage, b));
                     setupFlashViewer(getImageIndex(starterPage, b));
                 } else {
                     setupFlashViewer(-1);
@@ -156,14 +158,14 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
         List<String> labels = new ArrayList<>();
         if (b.getTranscription() != null) { // TODO per page
-            labels.add("Transcription");
+            labels.add(Labels.INSTANCE.transcription());
         }
         // TODO transcription (Lecoy)
         if (b.hasIllustrationTagging(page)) {
-            labels.add("Illustration descriptions");
+            labels.add(Labels.INSTANCE.illustrationDescription());
         }
         if (b.hasNarrativeTagging(page)) {
-            labels.add("Narrative sections");
+            labels.add(Labels.INSTANCE.narrativeSections());
         }
 
         return labels.toArray(new String[labels.size()]);
@@ -227,7 +229,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
      */
     private String getImageName(int index, Book book) {
         if (book == null || book.getImages() == null || book.getImages().getImages() == null
-                || book.getImages().getImages().get(index) == null) {
+                || book.getImages().getImages().size() < index || book.getImages().getImages().get(index) == null) {
             return "";
         }
 
@@ -290,27 +292,27 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         return result;
     }
 
-    /**
-     * Ripped from old Rosa1 code
-     *
-     * @param bookindex .
-     * @return .
-     */
-    private int translateBookIndexToShowcaseIndex(int bookindex) {
-        int i = 0;
-
-        for (int j = 0; j < b.getImages().getImages().size(); j++) {
-            BookImage image = b.getImages().getImages().get(j);
-
-            if (--bookindex < 0) {
-                break;
-            }
-
-            if (!image.isMissing()) {
-                i++;
-            }
-        }
-
-        return i;
-    }
+//    /**
+//     * Ripped from old Rosa1 code
+//     *
+//     * @param bookindex .
+//     * @return .
+//     */
+//    private int translateBookIndexToShowcaseIndex(int bookindex) {
+//        int i = 0;
+//
+//        for (int j = 0; j < b.getImages().getImages().size(); j++) {
+//            BookImage image = b.getImages().getImages().get(j);
+//
+//            if (--bookindex < 0) {
+//                break;
+//            }
+//
+//            if (!image.isMissing()) {
+//                i++;
+//            }
+//        }
+//
+//        return i;
+//    }
 }

@@ -28,8 +28,12 @@ public class BookViewerActivity implements Activity, FlashStatusChangeEventHandl
     private AcceptsOneWidget container;
     private EventBus eventBus;
 
-    private String page;
-
+    /**
+     * Create a new BookViewerActivity.
+     *
+     * @param place initial state
+     * @param clientFactory .
+     */
     public BookViewerActivity(BookViewerPlace place, ClientFactory clientFactory) {
         this.fsiActivity = new FSIViewerActivity(place, clientFactory);
         this.jsActivity = new JSViewerActivity(place, clientFactory);
@@ -38,7 +42,6 @@ public class BookViewerActivity implements Activity, FlashStatusChangeEventHandl
 
         this.useFlash = clientFactory.context().useFlash();
         this.handlers = new ArrayList<>();
-        // Add this activity
     }
 
     @Override

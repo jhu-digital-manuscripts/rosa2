@@ -2,12 +2,10 @@ package rosa.website.core.client;
 
 public class AppContext {
     private boolean useFlash;
-    private String language;
     private String collection;
 
     public AppContext() {
         useFlash = true;
-        language = "en";
     }
 
     public boolean useFlash() {
@@ -16,14 +14,6 @@ public class AppContext {
 
     public void setUseFlash(boolean useFlash) {
         this.useFlash = useFlash;
-    }
-
-    public String getLanguage() {
-        return language;
-    }
-
-    public void setLanguage(String language) {
-        this.language = language;
     }
 
     public String getCollection() {

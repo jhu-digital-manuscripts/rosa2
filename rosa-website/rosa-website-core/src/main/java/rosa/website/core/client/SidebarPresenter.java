@@ -9,10 +9,10 @@ import rosa.website.model.select.SelectCategory;
 import java.util.HashMap;
 import java.util.Map;
 
-// TODO i18n
 public class SidebarPresenter implements SidebarView.Presenter {
     private SidebarView view;
     private ClientFactory clientFactory;
+    private final Labels labels = Labels.INSTANCE;
 
     public SidebarPresenter(SidebarView view, ClientFactory clientFactory) {
         this.view = view;
@@ -27,11 +27,11 @@ public class SidebarPresenter implements SidebarView.Presenter {
     public void addBookLinks(String bookId) {
         Map<String, String> links = new HashMap<>();
 
-        links.put("Description", "book;" + bookId);
-        links.put("Page turner", "read;" + bookId);
-        links.put("Browse images", "browse;" + bookId);
+        links.put(labels.description(), "book;" + bookId);
+        links.put(labels.pageTurner(), "read;" + bookId);
+        links.put(labels.browseImages(), "browse;" + bookId);
 
-        view.setBookLinks("Book", links);
+        view.setBookLinks(labels.book(), links);
     }
 
     public void clearBookLinks() {
@@ -41,12 +41,12 @@ public class SidebarPresenter implements SidebarView.Presenter {
     private void addSiteNavLinks() {
         Map<String, String> nav_links = new HashMap<>();
 
-        nav_links.put("Rose summary", "rose");
-        nav_links.put("Extant manuscripts", "corpus");
-        nav_links.put("Collection spreadsheet", "data");
-        nav_links.put("Narrative sections", "sections");
-        nav_links.put("Illustration titles", "illustrations");
-        nav_links.put("Character names", "chars");
+        nav_links.put(labels.roseHistory(), "rose");
+        nav_links.put(labels.roseCorpus(), "corpus");
+        nav_links.put(labels.collectionData(), "data");
+        nav_links.put(labels.narrativeSections(), "sections");
+        nav_links.put(labels.illustrationTitles(), "illustrations");
+        nav_links.put(labels.characterNames(), "chars");
 
         view.setSiteNavigationLinks(nav_links);
     }
@@ -54,29 +54,29 @@ public class SidebarPresenter implements SidebarView.Presenter {
     private void addBookSelectLinks() {
         Map<String, String> links = new HashMap<>();
 
-        links.put("Repository", "select;" + SelectCategory.REPOSITORY);
-        links.put("Common name", "select;" + SelectCategory.COMMON_NAME);
-        links.put("Current location", "select;" + SelectCategory.LOCATION);
-        links.put("Date", "select;" + SelectCategory.DATE);
-        links.put("Origin", "select;" + SelectCategory.ORIGIN);
-        links.put("Type", "select;" + SelectCategory.TYPE);
-        links.put("Illustrations", "select;" + SelectCategory.NUM_ILLUSTRATIONS);
-        links.put("Folios", "select;" + SelectCategory.NUM_FOLIOS);
-        links.put("Transcription", "select;" + SelectCategory.TRANSCRIPTION);
+        links.put(labels.repository(), "select;" + SelectCategory.REPOSITORY);
+        links.put(labels.commonName(), "select;" + SelectCategory.COMMON_NAME);
+        links.put(labels.currentLocation(), "select;" + SelectCategory.LOCATION);
+        links.put(labels.date(), "select;" + SelectCategory.DATE);
+        links.put(labels.origin(), "select;" + SelectCategory.ORIGIN);
+        links.put(labels.type(), "select;" + SelectCategory.TYPE);
+        links.put(labels.numIllustrations(), "select;" + SelectCategory.NUM_ILLUSTRATIONS);
+        links.put(labels.numFolios(), "select;" + SelectCategory.NUM_FOLIOS);
+        links.put(labels.transcription(), "select;" + SelectCategory.TRANSCRIPTION);
 
-        view.addSection("Select book by", links);
+        view.addSection(labels.selectBookBy(), links);
     }
 
     private void addProjectLinks() {
         Map<String, String> links = new HashMap<>();
 
-        links.put("Terms and conditions", "terms");
-        links.put("Partners", "partners");
-        links.put("Project history", "project");
-        links.put("Donation", "donation");
-        links.put("Contact us", "contact");
+        links.put(labels.termsAndConditions(), "terms");
+        links.put(labels.partners(), "partners");
+        links.put(labels.projectHistory(), "project");
+        links.put(labels.donation(), "donation");
+        links.put(labels.contactUs(), "contact");
 
-        view.addSection("Project", links);
+        view.addSection(labels.project(), links);
     }
 
     public void resize(String width, String height) {

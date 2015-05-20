@@ -8,6 +8,7 @@ import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.event.shared.HandlerRegistration;
+import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.Book;
@@ -48,7 +49,6 @@ public class JSViewerActivity implements Activity {
 
     private String collection;
     private String book;
-    private String lang;
     private String starterPage;
     private Book b;
 
@@ -62,11 +62,11 @@ public class JSViewerActivity implements Activity {
         this.eventBus = clientFactory.eventBus();
         this.book = place.getBook();
         this.collection = clientFactory.context().getCollection();
-        this.lang = clientFactory.context().getLanguage();
         this.viewerMode = getViewerMode(place.getType());
         this.starterPage = place.getPage();
         this.handlers = new ArrayList<>();
 
+        // TODO this code is for a specific website. Do not need the whole map!
         fsi_share.put("rosecollection", "rose");
         fsi_share.put("pizancollection", "pizan");
         fsi_share.put("aorcollection", "aor");
@@ -146,7 +146,7 @@ public class JSViewerActivity implements Activity {
             }
         });
 
-        view.setPermissionStatement(b.getPermission(lang).getPermission());
+        view.setPermissionStatement(b.getPermission(LocaleInfo.getCurrentLocale().getLocaleName()).getPermission());
     }
 
     private void setupView(final CodexModel model) {

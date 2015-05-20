@@ -4,9 +4,9 @@ import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
-import com.google.gwt.user.client.ui.Widget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.BookSelectPlace;
@@ -18,20 +18,27 @@ import rosa.website.rose.client.WebsiteConfig;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Activity for selecting books by sorting through criteria.
+ */
 public class BookSelectActivity implements Activity {
     private static final Logger logger = Logger.getLogger(BookSelectActivity.class.toString());
 
     private final BookSelectView view;
     private final SelectCategory category;
-    private final String lang;
 
     private final ArchiveDataServiceAsync service;
 
+    /**
+     * Create a new BookSelectActivity
+     *
+     * @param place initial state of activity
+     * @param clientFactory .
+     */
     public BookSelectActivity(BookSelectPlace place, ClientFactory clientFactory) {
         this.view = clientFactory.bookSelectView();
         this.category = place.getCategory();
         this.service = clientFactory.archiveDataService();
-        this.lang = clientFactory.context().getLanguage();
     }
 
     @Override
@@ -56,7 +63,7 @@ public class BookSelectActivity implements Activity {
         service.loadBookSelectionData(
                 WebsiteConfig.INSTANCE.collection(),
                 category,
-                lang,
+                LocaleInfo.getCurrentLocale().getLocaleName(),
                 new AsyncCallback<BookSelectList>() {
                     @Override
                     public void onFailure(Throwable caught) {

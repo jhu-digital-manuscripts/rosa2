@@ -9,7 +9,6 @@ import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.CheckBox;
 import com.google.gwt.user.client.ui.Composite;
@@ -20,6 +19,7 @@ import com.google.gwt.user.client.ui.Hyperlink;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.SimpleLayoutPanel;
 import com.google.gwt.user.client.ui.Widget;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.SidebarView;
 
 import java.util.ArrayList;
@@ -28,28 +28,32 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class SidebarViewImpl extends Composite implements SidebarView {
+    private final Labels labels = Labels.INSTANCE;
     private Presenter presenter;
 
     private final FlowPanel content;
+    private final FlowPanel navPanel;
     private final FlowPanel bookPanel;
-    private final FlowPanel localePanel;
+    private final FlowPanel featuresPanel;
 
     private List<Hyperlink> sidebar_links;  // Use for selection?
     private List<HandlerRegistration> handlers;
 
     public SidebarViewImpl() {
         SimpleLayoutPanel root = new SimpleLayoutPanel();
+        content = new FlowPanel();
         root.addStyleName("Sidebar");
 
-        this.content = new FlowPanel();
+        this.navPanel = new FlowPanel();
         this.bookPanel = new FlowPanel();
-        this.localePanel = new FlowPanel();
+        this.featuresPanel = new FlowPanel();
         this.sidebar_links = new ArrayList<>();
         this.handlers = new ArrayList<>();
 
         root.setWidget(content);
+        content.add(navPanel);
         content.add(bookPanel);
-        content.add(localePanel);
+        content.add(featuresPanel);
 
         bookPanel.setVisible(false);
 
@@ -63,6 +67,7 @@ public class SidebarViewImpl extends Composite implements SidebarView {
                 }
             }
         }));
+
         addLanguageLinks();
         addFlashSelector();
 
@@ -76,13 +81,13 @@ public class SidebarViewImpl extends Composite implements SidebarView {
 
     @Override
     public void setSiteNavigationLinks(Map<String, String> nav_links) {
-        addLinks(nav_links, content);
+        addLinks(nav_links, navPanel);
     }
 
     @Override
     public void addSection(String title, Map<String, String> links) {
-        addHeader(title, content);
-        addLinks(links, content);
+        addHeader(title, navPanel);
+        addLinks(links, navPanel);
     }
 
     @Override
@@ -111,40 +116,50 @@ public class SidebarViewImpl extends Composite implements SidebarView {
     }
 
     public void addLanguageLinks() {
-        addHeader("Language", localePanel);
+        addHeader(labels.language(), featuresPanel);
 
-        final Label en = new Label("English");
+        final Label en = new Label(labels.english());
         en.addStyleName("SidebarItem");
+        final Label fr = new Label(labels.french());
+        fr.addStyleName("SidebarItem");
+
+        if (LocaleInfo.getCurrentLocale().getLocaleName().equals("en")) {
+            fr.addStyleName("link");
+        } else {
+            en.addStyleName("link");
+        }
+
         en.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
                 if (!LocaleInfo.getCurrentLocale().getLocaleName().equals("en")) {
                     String token = presenter.getCurrentToken();
                     Window.Location.assign(GWT.getHostPageBaseURL() + (token.isEmpty() ? "" : "#" + token));
+                    fr.removeStyleName("link");
+                    en.addStyleName("link");
                 }
             }
         });
-
-        final Label fr = new Label("French");
-        fr.addStyleName("SidebarItem");
         fr.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
                 if (!LocaleInfo.getCurrentLocale().getLocaleName().equals("fr")) {
                     String token = presenter.getCurrentToken();
                     Window.Location.assign(GWT.getHostPageBaseURL() + "?locale=fr" + (token.isEmpty() ? "" : "#" + token));
+                    fr.addStyleName("link");
+                    en.removeStyleName("link");
                 }
             }
         });
 
-        localePanel.add(en);
-        localePanel.add(fr);
+        featuresPanel.add(en);
+        featuresPanel.add(fr);
     }
 
     private void addFlashSelector() {
-        addHeader("Feature", content);
+        addHeader("Feature", featuresPanel);
         final CheckBox useFlash = new CheckBox("Flash");
-        content.add(useFlash);
+        featuresPanel.add(useFlash);
 
         handlers.add(useFlash.addValueChangeHandler(new ValueChangeHandler<Boolean>() {
             @Override

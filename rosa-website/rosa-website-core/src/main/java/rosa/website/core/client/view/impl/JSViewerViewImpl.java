@@ -10,6 +10,7 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.jsviewer.codexview.CodexController;
 import rosa.website.core.client.jsviewer.codexview.CodexModel;
 import rosa.website.core.client.jsviewer.codexview.CodexView;
@@ -18,6 +19,7 @@ import rosa.website.core.client.jsviewer.dynimg.ImageServer;
 import rosa.website.core.client.view.JSViewerView;
 
 public class JSViewerViewImpl extends Composite implements JSViewerView {
+    private Labels labels = Labels.INSTANCE;
 
     private FlowPanel root;
     private FlowPanel readerToolbar;
@@ -35,10 +37,10 @@ public class JSViewerViewImpl extends Composite implements JSViewerView {
         root = new FlowPanel();
 
         readerToolbar = new FlowPanel();
-        first = new Button("First");
-        last = new Button("Last");
-        prev = new Button("Previous");
-        next = new Button("Next");
+        first = new Button(labels.first());
+        last = new Button(labels.last());
+        prev = new Button(labels.previous());
+        next = new Button(labels.next());
         goTo = new TextBox();
 
         readerToolbar.add(first);

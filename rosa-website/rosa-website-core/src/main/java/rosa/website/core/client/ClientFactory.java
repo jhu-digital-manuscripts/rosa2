@@ -25,7 +25,6 @@ public class ClientFactory {
     
     private static EventBus event_bus = new SimpleEventBus();
     private static PlaceController place_controller = new PlaceController(event_bus);
-//    private final ArchiveDataServiceAsync archiveDataService = GWT.create(ArchiveDataService.class);
     private static ArchiveDataServiceAsync archiveDataService = CachingArchiveDataService.INSTANCE;
 
     private static HTMLView htmlView = new HTMLViewImpl();
