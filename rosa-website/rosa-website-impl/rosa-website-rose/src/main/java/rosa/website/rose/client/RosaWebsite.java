@@ -33,7 +33,7 @@ import java.util.logging.Logger;
 
 public class RosaWebsite implements EntryPoint {
     private static final Logger logger = Logger.getLogger("");
-    private static final int SIDEBAR_WIDTH = 150;
+    private static final int SIDEBAR_WIDTH = 180;
     private static final int HEADER_HEIGHT = 96;
 
     /**
@@ -85,7 +85,8 @@ public class RosaWebsite implements EntryPoint {
         addSidebar(clientFactory);
         main.add(main_content);
 
-        main_content.setSize((Window.getClientWidth() - SIDEBAR_WIDTH) + "px", Window.getClientHeight() + "px");
+        main_content.setSize((Window.getClientWidth() - SIDEBAR_WIDTH) + "px",
+                (Window.getClientHeight() - HEADER_HEIGHT) + "px");
         main_content.addStyleName("Content");
         RootLayoutPanel.get().add(main);
 
@@ -97,7 +98,9 @@ public class RosaWebsite implements EntryPoint {
         Window.addResizeHandler(new ResizeHandler() {
             @Override
             public void onResize(ResizeEvent event) {
-                main_content.setSize((Window.getClientWidth() - SIDEBAR_WIDTH) + "px", Window.getClientHeight() + "px");
+                main_content.setSize(
+                        (Window.getClientWidth() - SIDEBAR_WIDTH) + "px",
+                        (Window.getClientHeight() - HEADER_HEIGHT) + "px");
             }
         });
     }
@@ -109,7 +112,7 @@ public class RosaWebsite implements EntryPoint {
     private void addSidebar(ClientFactory clientFactory) {
         SidebarView view = new SidebarViewImpl();
         sidebarPresenter = new SidebarPresenter(view, clientFactory);
-        sidebarPresenter.resize(SIDEBAR_WIDTH + "px", Window.getClientHeight() + "px");
+        sidebarPresenter.resize((SIDEBAR_WIDTH - 18) + "px", "");
 
         main.addWest(sidebarPresenter, SIDEBAR_WIDTH);
     }

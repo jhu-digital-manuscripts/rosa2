@@ -24,6 +24,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     private final String language;
     private final ArchiveDataServiceAsync service;
     private final BookDescriptionView view;
+    // TODO need to keep this eventBus, or use the one on .start()?
     private com.google.web.bindery.event.shared.EventBus eventBus;
 
     private Book book;

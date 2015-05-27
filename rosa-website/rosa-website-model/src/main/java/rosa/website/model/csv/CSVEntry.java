@@ -29,7 +29,11 @@ public class CSVEntry implements Iterable<String>, Serializable {
      * @return the cell value for this row at column index.
      */
     public String getValue(int column) {
-        return values == null ? null : values[column];
+        if (values == null || values.length < column) {
+            return null;
+        }
+
+        return values[column];
     }
 
     /**
@@ -37,7 +41,10 @@ public class CSVEntry implements Iterable<String>, Serializable {
      * @return the cell value for this row at specified column
      */
     public String getValue(Enum<?> e) {
-        return values == null ? null : values[e.ordinal()];
+        if (e == null) {
+            return null;
+        }
+        return getValue(e.ordinal());
     }
 
     @Override

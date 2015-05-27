@@ -80,52 +80,52 @@ public class BookSelectData implements Serializable {
 
     /** @return the book's ID */
     public String id() {
-        return data.getValue(BookDataCSV.Column.ID);
+        return data == null ? null : data.getValue(BookDataCSV.Column.ID);
     }
 
     /** @return the book's repository */
     public String repository() {
-        return data.getValue(BookDataCSV.Column.REPO);
+        return data == null ? null : data.getValue(BookDataCSV.Column.REPO);
     }
 
     /** @return the book's current shelf mark */
     public String shelfmark() {
-        return data.getValue(BookDataCSV.Column.SHELFMARK);
+        return data == null ? null : data.getValue(BookDataCSV.Column.SHELFMARK);
     }
 
     /** @return the book's common name */
     public String commonName() {
-        return data.getValue(BookDataCSV.Column.COMMON_NAME);
+        return data == null ? null : data.getValue(BookDataCSV.Column.COMMON_NAME);
     }
 
     /** @return the book's current location */
     public String currentLocation() {
-        return data.getValue(BookDataCSV.Column.CURRENT_LOCATION);
+        return data == null ? null : data.getValue(BookDataCSV.Column.CURRENT_LOCATION);
     }
 
     /** @return the book's publication date (EX: 1561, 16th century, etc) */
     public String date() {
-        return data.getValue(BookDataCSV.Column.DATE);
+        return data == null ? null : data.getValue(BookDataCSV.Column.DATE);
     }
 
     /** @return the place of the book's origin (EX: Paris, France) */
     public String origin() {
-        return data.getValue(BookDataCSV.Column.ORIGIN);
+        return data == null ? null : data.getValue(BookDataCSV.Column.ORIGIN);
     }
 
     /** @return the book's type (manuscript, printed book, etc) */
     public String type() {
-        return data.getValue(BookDataCSV.Column.TYPE);
+        return data == null ? null : data.getValue(BookDataCSV.Column.TYPE);
     }
 
     /** @return the number of illustrations in the book */
     public String numberOfIllustrations() {
-        return data.getValue(BookDataCSV.Column.NUM_ILLUS);
+        return data == null ? null : data.getValue(BookDataCSV.Column.NUM_ILLUS);
     }
 
     /** @return the number of pages in the book */
     public String numberOfFolios() {
-        return data.getValue(BookDataCSV.Column.NUM_FOLIOS);
+        return data == null ? null : data.getValue(BookDataCSV.Column.NUM_FOLIOS);
     }
 
     @Override

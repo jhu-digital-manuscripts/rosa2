@@ -34,6 +34,10 @@
   vertical-align: top;
 }
 
+.vspace {
+  margin: 1em 0em;
+}
+
 .Content {
   color: #FFFFFF;
   vertical-align: top;
@@ -75,7 +79,7 @@
 
 .SidebarItem {
    color: #FFFFFF;
-   width: 100%;
+   /*width: 100%;*/
    margin-left: 1em;
 }
 
@@ -89,6 +93,10 @@
   font-weight: bold;
   color: #000000;
   background-color: #FFFFCC;
+}
+
+.SidebarSelected a {
+  color: #000000;
 }
 
 .ContentHeader {

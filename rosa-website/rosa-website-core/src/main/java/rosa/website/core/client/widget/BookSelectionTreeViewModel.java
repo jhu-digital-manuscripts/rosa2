@@ -68,6 +68,10 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
      * @return a list of sub-categories from which books can be selected
      */
     private List<BookSelection> adaptBookSelectListToBookSelections(BookSelectList data) {
+        if (data == null) {
+            throw new NullPointerException("BookSelectionTreeViewModel cannot wrap a NULL list.");
+        }
+
         Map<String, BookSelection> selections = new HashMap<>();
         for (BookSelectData entry : data) {
             String name = getName(entry);
@@ -116,6 +120,10 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
      * @return the correct book 'name' for this category
      */
     private String getName(BookSelectData data) {
+        if (data == null) {
+            return null;
+        }
+
         switch (category) {
             case ID:
                 return data.id();
@@ -135,6 +143,8 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
                 return data.numberOfIllustrations();
             case NUM_FOLIOS:
                 return data.numberOfFolios();
+            case TRANSCRIPTION:
+                return String.valueOf(data.hasTranscription());
             default:
                 return null;
         }

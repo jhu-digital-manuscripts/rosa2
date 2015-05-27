@@ -18,9 +18,11 @@ public class HeaderViewImpl extends Composite implements HeaderView {
 
         banner_img = new Image(GWT.getModuleBaseURL() + "banner_image1.gif");
         banner_img.setAltText("banner");
+        banner_img.addStyleName("link");
 
         banner_txt = new Image(GWT.getModuleBaseURL() + "banner_text.jpg");
         banner_txt.setAltText("Roman de la Rose Digital Library");
+        banner_txt.addStyleName("link");
 
         root.add(banner_img);
         root.add(banner_txt);

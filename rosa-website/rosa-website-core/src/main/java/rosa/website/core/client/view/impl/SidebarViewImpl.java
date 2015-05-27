@@ -17,7 +17,7 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Hyperlink;
 import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.SimpleLayoutPanel;
+import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.Widget;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.SidebarView;
@@ -40,9 +40,9 @@ public class SidebarViewImpl extends Composite implements SidebarView {
     private List<HandlerRegistration> handlers;
 
     public SidebarViewImpl() {
-        SimpleLayoutPanel root = new SimpleLayoutPanel();
+        ScrollPanel root = new ScrollPanel();
         content = new FlowPanel();
-        root.addStyleName("Sidebar");
+        content.addStyleName("Sidebar");
 
         this.navPanel = new FlowPanel();
         this.bookPanel = new FlowPanel();
@@ -51,11 +51,12 @@ public class SidebarViewImpl extends Composite implements SidebarView {
         this.handlers = new ArrayList<>();
 
         root.setWidget(content);
-        content.add(navPanel);
         content.add(bookPanel);
+        content.add(navPanel);
         content.add(featuresPanel);
 
         bookPanel.setVisible(false);
+        bookPanel.addStyleName("vspace");
 
         handlers.add(this.addAttachHandler(new Handler() {
             @Override
@@ -115,7 +116,8 @@ public class SidebarViewImpl extends Composite implements SidebarView {
         content.setSize(width, height);
     }
 
-    public void addLanguageLinks() {
+    // TODO what if a site requires different languages?
+    private void addLanguageLinks() {
         addHeader(labels.language(), featuresPanel);
 
         final Label en = new Label(labels.english());
@@ -160,6 +162,7 @@ public class SidebarViewImpl extends Composite implements SidebarView {
         addHeader("Feature", featuresPanel);
         final CheckBox useFlash = new CheckBox("Flash");
         useFlash.addStyleName("SidebarItem");
+        useFlash.setValue(true, false);
         featuresPanel.add(useFlash);
 
         handlers.add(useFlash.addValueChangeHandler(new ValueChangeHandler<Boolean>() {

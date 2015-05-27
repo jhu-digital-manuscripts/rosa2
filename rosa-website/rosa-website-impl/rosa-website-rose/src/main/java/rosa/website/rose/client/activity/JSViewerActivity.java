@@ -40,7 +40,7 @@ import java.util.logging.Logger;
 public class JSViewerActivity implements Activity {
     private static final Logger logger = Logger.getLogger(JSViewerActivity.class.toString());
 
-    private Map<String, String> fsi_share = new HashMap<>();  // TODO configure this using 'fsi-share-map.properties'
+    private Map<String, String> fsi_share = new HashMap<>();  // TODO configure this using 'fsi-share-map.properties' see TODO below (in constructor)
     private List<HandlerRegistration> handlers;
 
     private JSViewerView view;
@@ -56,6 +56,13 @@ public class JSViewerActivity implements Activity {
 
     private int current_selected_index;
 
+    /**
+     * Create a new JSViewerActivity. This will setup a new JavaScript viewer
+     * instance with the information given in the initial state.
+     *
+     * @param place initial state
+     * @param clientFactory .
+     */
     public JSViewerActivity(BookViewerPlace place, ClientFactory clientFactory) {
         this.view = clientFactory.jsViewerView();
         this.archiveService = clientFactory.archiveDataService();
