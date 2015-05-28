@@ -25,7 +25,6 @@ import rosa.website.model.csv.IllustrationTitleCSV;
 import rosa.website.model.csv.NarrativeSectionsCSV;
 import rosa.website.model.select.BookSelectData;
 import rosa.website.model.select.BookSelectList;
-import rosa.website.model.select.BookSelection;
 import rosa.website.model.select.SelectCategory;
 
 import java.io.ByteArrayOutputStream;
@@ -47,10 +46,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     private static final String DEFAULT_LANGUAGE = "en";
 
     private static final int MAX_CACHE_SIZE = 1000;
-    private static final ConcurrentMap<String, Book> bookCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
-    private static final ConcurrentMap<String, BookCollection> collectionCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
-
-    private static final ConcurrentMap<String, Object> objectCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
+    private final ConcurrentMap<String, Object> objectCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
 
     private static final ImageListSerializer imageListSerializer = new ImageListSerializer();
 
@@ -84,19 +80,22 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class),
                 injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
         logger.info("Archive Store set.");
-
+/*
         String[] collections = {"rosecollection", "pizancollection", "aorcollection"};
         try {
             for (String collectionName : collections) {
+                logger.info("Caching book collection: (" + collectionName + ")");
                 BookCollection col = loadBookCollection(collectionName);     // the load method will cache
 
                 for (String bookName : col.books()) {
+                    logger.info("Caching book: (" + bookName + ")");
                     loadBook(col, bookName);        // this load will cache the book
                 }
             }
         } catch (IOException e) {
             logger.warning("Failed to initialize collection/book caches.");
         }
+*/
     }
 
     @Override
@@ -123,6 +122,11 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     public CollectionCSV loadCollectionData(String collection, String lang) throws IOException {
         // collection_data.csv | collection_data_fr.csv
         logger.info("Loading collection_data. [" + collection + ":" + lang + "]");
+        String key = CollectionCSV.class + "." + collection + "." + lang;
+        if (objectCache.containsKey(key)) {
+            return (CollectionCSV) objectCache.get(key);
+        }
+
         BookCollection col = loadBookCollection(collection);
 
         if (col == null) {
@@ -133,54 +137,59 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         List<CSVEntry> entries = new ArrayList<>();
         for (String bookName : col.books()) {
-            Book book = archiveStore.loadBook(col, bookName, null);
+            Book book = loadBook(col, bookName);
 
             if (book == null) {
                 continue;
             }
-            BookMetadata md = book.getBookMetadata(lang);
-            BookText rose = null;
 
-            if (md.getTexts() == null) {
-                continue;
-            }
+            if (book.getBookMetadata(lang) != null) {
+                BookMetadata md = book.getBookMetadata(lang);
+                BookText rose = null;
 
-            for (BookText text : md.getTexts()) {
-                if (text == null) {
-                    continue;
+                if (md.getTexts() != null) {
+                    for (BookText text : md.getTexts()) {
+                        if (text == null) {
+                            continue;
+                        }
+                        // TODO Needs to be abstracted out to distinguish rose/pizan/etc?
+                        if (text.getId() != null && text.getId().equals("rose")) {
+                            rose = text;
+                            break;
+                        }
+                    }
                 }
-                // TODO Needs to be abstracted out to distinguish rose/pizan/etc?
-                if (text.getId() != null && text.getId().equals("rose")) {
-                    rose = text;
-                    break;
-                }
-            }
 
-            boolean hasRose = rose != null;
-            int[] illusCount = countPagesWithIllustrations(book.getIllustrationTagging());
+                boolean hasRose = rose != null;
+                int[] illusCount = countPagesWithIllustrations(book.getIllustrationTagging());
 
             /*
                 Roman de la Rose collection counts only those book texts with the identifier 'rose' as only
                 those texts contain Roman de la Rose material.
                 Pizan and AoR do not care about this, and will count all book texts.
              */
-            entries.add(new CSVEntry(
-                    bookName, md.getCommonName(), md.getOrigin(), md.getMaterial(),
-                    String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages()),
-                    String.valueOf(md.getHeight()),
-                    String.valueOf(md.getWidth()),
-                    String.valueOf(hasRose ? rose.getLeavesPerGathering() : -1),
-                    String.valueOf(hasRose ? rose.getLinesPerColumn() : -1),
-                    String.valueOf(hasRose ? rose.getNumberOfIllustrations() : -1),
-                    String.valueOf(md.getYearStart()),
-                    String.valueOf(md.getYearEnd()),
-                    String.valueOf(hasRose ? rose.getColumnsPerPage() : -1),
-                    String.valueOf(md.getTexts().length),
-                    String.valueOf(illusCount[0]),
-                    String.valueOf(illusCount[1])
-            ));
+                entries.add(new CSVEntry(
+                        bookName, md.getCommonName(), md.getOrigin(), md.getMaterial(),
+                        String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages()),
+                        String.valueOf(md.getHeight()),
+                        String.valueOf(md.getWidth()),
+                        String.valueOf(hasRose ? rose.getLeavesPerGathering() : -1),
+                        String.valueOf(hasRose ? rose.getLinesPerColumn() : -1),
+                        String.valueOf(hasRose ? rose.getNumberOfIllustrations() : md.getNumberOfIllustrations()),
+                        String.valueOf(md.getYearStart()),
+                        String.valueOf(md.getYearEnd()),
+                        String.valueOf(hasRose ? rose.getColumnsPerPage() : -1),
+                        String.valueOf(md.getTexts() == null ? 0 : md.getTexts().length),
+                        String.valueOf(illusCount[0]),
+                        String.valueOf(illusCount[1])
+                ));
+            } else {
+                // If there is no metadata, add a row with only the book's name
+                entries.add(new CSVEntry(
+                        bookName, "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
+                ));
+            }
         }
-        logger.info("Before sort Entries: " + entries);
 
         Collections.sort(entries, new Comparator<CSVEntry>() {
             @Override
@@ -197,8 +206,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                         .compareToIgnoreCase(o2.getValue(CollectionCSV.Column.NAME));
             }
         });
+        CollectionCSV result = new CollectionCSV(collection, entries);
 
-        return new CollectionCSV(collection, entries);
+        updateCache(key, result);
+        return result;
     }
 
     @Override
@@ -219,7 +230,12 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         List<CSVEntry> entries = new ArrayList<>();
         for (String bookName : col.books()) {
-            entries.add(rowForBookData(loadBook(collection, bookName), lang));
+            Book book = loadBook(collection, bookName);
+            if (book == null) {
+                continue;
+            }
+
+            entries.add(rowForBookData(book, lang));
         }
 
         Collections.sort(entries, new Comparator<CSVEntry>() {
@@ -262,6 +278,9 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         List<BookSelectData> entries = new ArrayList<>();
         for (String bookName : col.books()) {
             Book book = loadBook(collection, bookName);
+            if (book == null) {
+                continue;
+            }
 
             entries.add(new BookSelectData(
                     rowForBookData(book, lang),
@@ -280,6 +299,11 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public IllustrationTitleCSV loadIllustrationTitles(String collection) throws IOException {
+        String key = IllustrationTitleCSV.class + "." + collection;
+        if (objectCache.containsKey(key)) {
+            return (IllustrationTitleCSV) objectCache.get(key);
+        }
+
         BookCollection col = loadBookCollection(collection);
         if (col == null) {
             logger.severe("Failed to load book collection.");
@@ -310,7 +334,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                     String.valueOf(frequency)
             ));
         }
-        logger.info("Before sort Entries: " + entries);
 
         // Sort entries by location
         Collections.sort(entries, new Comparator<CSVEntry>() {
@@ -339,13 +362,16 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             }
         });
 
-        return new IllustrationTitleCSV(titles.getId(), entries);
+        IllustrationTitleCSV result = new IllustrationTitleCSV(titles.getId(), entries);
+        updateCache(key, result);
+
+        return result;
     }
 
     @Override
     public BookCollection loadBookCollection(String collection) throws IOException {
-        if (collectionCache.containsKey(collection)) {
-            return collectionCache.get(collection);
+        if (objectCache.containsKey(collection)) {
+            return (BookCollection) objectCache.get(collection);
         }
 
         List<String> errors = new ArrayList<>();
@@ -355,10 +381,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             col = archiveStore.loadBookCollection(collection, errors);
             checkErrors(errors);
 
-            if (collectionCache.size() >= MAX_CACHE_SIZE) {
-                collectionCache.clear();
-            }
-            collectionCache.putIfAbsent(collection, col);
+            updateCache(collection, col);
         } catch (Exception e) {
             // TODO dont catch Exception...
             logger.log(Level.SEVERE, "An error has occurred while loading a collection. [" + collection + "]", e);
@@ -379,6 +402,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public String loadImageList(String collection, String book) throws IOException {
+        String key = ImageList.class + "." + collection + "." + book;
+        if (objectCache.containsKey(key)) {
+            return (String) objectCache.get(key);
+        }
         Book b = loadBook(collection, book);
 
         if (b == null || b.getImages() == null || b.getImages().getImages() == null
@@ -388,6 +415,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         imageListSerializer.write(b.getImages(), out);
 
+        updateCache(key, out.toString());
         return out.toString();
     }
 
@@ -437,39 +465,42 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             return null;
         }
 
-        BookMetadata md = book.getBookMetadata(lang);
-        if (md == null) {
-            return null;
-        }
-        BookText rose = null;
+        if (book.getBookMetadata(lang) != null) {
+            BookMetadata md = book.getBookMetadata(lang);
+            BookText rose = null;
 
-        for (BookText text : md.getTexts()) {
-            if (text != null && text.getId() != null && text.getId().equals("rose")) {
-                rose = text;
+            for (BookText text : md.getTexts()) {
+                if (text != null && text.getId() != null && text.getId().equals("rose")) {
+                    rose = text;
+                }
             }
+
+            boolean hasRose = rose != null;
+
+            return new CSVEntry(
+                    book.getId(),
+                    md.getRepository(),
+                    md.getShelfmark(),
+                    md.getCommonName(),
+                    md.getCurrentLocation(),
+                    md.getDate(),
+                    md.getOrigin(),
+                    md.getType(),
+                    String.valueOf(hasRose ? rose.getNumberOfIllustrations() : md.getNumberOfIllustrations()),
+                    String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages())
+            );
+        } else {
+            return new CSVEntry(book.getId(), "", "", "", "", "", "", "", "", "");
         }
 
-        boolean hasRose = rose != null;
-
-        return new CSVEntry(
-                book.getId(),
-                md.getRepository(),
-                md.getShelfmark(),
-                md.getCommonName(),
-                md.getCurrentLocation(),
-                md.getDate(),
-                md.getOrigin(),
-                md.getType(),
-                String.valueOf(hasRose ? rose.getNumberOfIllustrations() : md.getNumberOfIllustrations()),
-                String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages())
-        );
     }
 
     private Book loadBook(BookCollection collection, String book) throws IOException {
         String key = collection.getId() + "." + book;
-        if (bookCache.containsKey(key)) {
-            return bookCache.get(key);
+        if (objectCache.containsKey(key)) {
+            return (Book) objectCache.get(key);
         }
+
         List<String> errors = new ArrayList<>();
         Book b = null;
 
@@ -477,10 +508,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             b = archiveStore.loadBook(collection, book, errors);
             checkErrors(errors);
 
-            if (bookCache.size() >= MAX_CACHE_SIZE) {
-                bookCache.clear();
-            }
-            bookCache.putIfAbsent(key, b);
+            updateCache(key, b);
         } catch (Exception e) {
             // TODO dont catch Exception...
             logger.log(Level.SEVERE, "An error has occurred while loading a book. [" + collection + ":" + book + "]", e);
@@ -503,7 +531,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         for (String name : collection.books()) {
             try {
-                Book book = archiveStore.loadBook(collection, name, null);
+                Book book = loadBook(collection, name);
                 if (book == null || book.getIllustrationTagging() == null) {
                     continue;
                 }
@@ -658,7 +686,18 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
     }
 
+    /**
+     * Update the object cache with a new object. Do nothing if either the key or
+     * value is NULL.
+     *
+     * @param key .
+     * @param value .
+     */
     private void updateCache(String key, Object value) {
+        if (key == null || value == null) {
+            return;
+        }
+
         if (objectCache.size() > MAX_CACHE_SIZE) {
             objectCache.clear();
         }
