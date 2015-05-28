@@ -97,6 +97,9 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
     }
 
     /**
+     * Based on selection criteria in the BookSelection input, look through
+     * the data list to find all matching books.
+     *
      * @param selection current selection
      * @return a list of books in this selection
      */
@@ -105,11 +108,14 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
 
         int count = 0;
         for (BookSelectData bs : data) {
-            if (count++ > selection.getCount() || !selection.name.equals(getName(bs))) {
-                continue;
+            if (selection.name.equals(getName(bs))) {
+                infos.add(new BookInfo(bs.repository() + ", " + bs.shelfmark(), bs.id()));
+                count++;
             }
 
-            infos.add(new BookInfo(bs.repository() + ", " + bs.shelfmark(), bs.id()));
+            if (count >= selection.getCount()) {
+                break;
+            }
         }
 
         return infos;

@@ -90,9 +90,9 @@ public class BookViewerActivity implements Activity, FlashStatusChangeEventHandl
             );
 
             jsActivity.onStop();
-            fsiActivity.start(container, eventBus);
-
             jsActivity = null;
+
+            fsiActivity.start(container, eventBus);
         } else {
             jsActivity = new JSViewerActivity(
                     new BookViewerPlace(initialPlace.getType(), initialPlace.getBook(), fsiActivity.getCurrentPage()),
@@ -100,9 +100,9 @@ public class BookViewerActivity implements Activity, FlashStatusChangeEventHandl
             );
 
             fsiActivity.onStop();
-            jsActivity.start(container, eventBus);
-
             fsiActivity = null;
+
+            jsActivity.start(container, eventBus);
         }
     }
 

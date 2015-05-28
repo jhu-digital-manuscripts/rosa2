@@ -26,15 +26,18 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
     @SuppressWarnings("unchecked")
     public void setData(BookSelectList data) {
         root.clear();
+
+        console("Setting data.");
         TreeViewModel browserModel = new BookSelectionTreeViewModel(data, data.getCategory(),
                 new SingleSelectionModel<BookInfo>());
+        console("TreeViewModel created. Building CellBrowser.");
 
         CellBrowser browser = new CellBrowser.Builder(browserModel, null) // this builder constructor uses unchecked operation
 //                .loadingIndicator(null)
                 .build();
 
         browser.setSize("100%", "100%");
-
+        console("CellBrowser created.");
 
 
         root.setWidget(browser);
@@ -51,4 +54,8 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
 
         resize(width + "px", height + "px");
     }
+
+    private native void console(String message) /*-{
+        console.log(message);
+    }-*/;
 }
