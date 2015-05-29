@@ -52,15 +52,23 @@ public class BookViewerActivity implements Activity, FlashStatusChangeEventHandl
     @Override
     public void onCancel() {
         clearHandlers();
-        fsiActivity.onCancel();
-        jsActivity.onCancel();
+        if (fsiActivity != null) {
+            fsiActivity.onCancel();
+        }
+        if (jsActivity != null) {
+            jsActivity.onCancel();
+        }
     }
 
     @Override
     public void onStop() {
         clearHandlers();
-        fsiActivity.onStop();
-        jsActivity.onStop();
+        if (fsiActivity != null) {
+            fsiActivity.onStop();
+        }
+        if (jsActivity != null) {
+            jsActivity.onStop();
+        }
     }
 
     @Override
@@ -78,7 +86,7 @@ public class BookViewerActivity implements Activity, FlashStatusChangeEventHandl
 
     @Override
     public void onFlashStatusChange(FlashStatusChangeEvent event) {
-        if (event.status() == useFlash /*|| container == null || eventBus == null*/) {
+        if (event.status() == useFlash) {
             return;
         }
 
@@ -108,7 +116,10 @@ public class BookViewerActivity implements Activity, FlashStatusChangeEventHandl
 
     private void clearHandlers() {
         for (HandlerRegistration h : handlers) {
-            h.removeHandler();
+            if (h != null) {
+                h.removeHandler();
+            }
         }
+        handlers.clear();
     }
 }

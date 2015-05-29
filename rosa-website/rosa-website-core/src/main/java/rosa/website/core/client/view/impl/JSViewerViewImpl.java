@@ -19,8 +19,6 @@ import rosa.website.core.client.jsviewer.dynimg.ImageServer;
 import rosa.website.core.client.view.JSViewerView;
 
 public class JSViewerViewImpl extends Composite implements JSViewerView {
-    private Labels labels = Labels.INSTANCE;
-
     private FlowPanel root;
     private FlowPanel readerToolbar;
     private SimplePanel permissionPanel;
@@ -33,10 +31,13 @@ public class JSViewerViewImpl extends Composite implements JSViewerView {
 
     private CodexView codexView;
 
+    /**  */
     public JSViewerViewImpl() {
         root = new FlowPanel();
 
         readerToolbar = new FlowPanel();
+
+        Labels labels = Labels.INSTANCE;
         first = new Button(labels.first());
         last = new Button(labels.last());
         prev = new Button(labels.previous());
@@ -58,17 +59,16 @@ public class JSViewerViewImpl extends Composite implements JSViewerView {
     }
 
     @Override
-    public void clear() {
-        root.remove(codexView);
-    }
-
-    @Override
     public void setPermissionStatement(String permission) {
         permissionPanel.setWidget(new HTML(permission));
     }
 
     @Override
     public void setCodexView(ImageServer imageServer, CodexModel model, CodexController controller, Mode mode) {
+        if (codexView != null) {
+            codexView.removeFromParent();
+        }
+
         codexView = new CodexView(imageServer, model, controller, (ScrollPanel) this.getParent());
         root.insert(codexView, 0);
         setViewerMode(mode);

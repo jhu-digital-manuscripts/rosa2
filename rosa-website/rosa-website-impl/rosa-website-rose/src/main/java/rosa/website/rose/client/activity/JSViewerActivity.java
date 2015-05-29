@@ -41,7 +41,6 @@ public class JSViewerActivity implements Activity {
     private static final Logger logger = Logger.getLogger(JSViewerActivity.class.toString());
 
     private Map<String, String> fsi_share = new HashMap<>();  // TODO configure this using 'fsi-share-map.properties' see TODO below (in constructor)
-    private List<HandlerRegistration> handlers;
 
     private JSViewerView view;
     private ArchiveDataServiceAsync archiveService;
@@ -71,7 +70,6 @@ public class JSViewerActivity implements Activity {
         this.collection = clientFactory.context().getCollection();
         this.viewerMode = getViewerMode(place.getType());
         this.starterPage = place.getPage();
-        this.handlers = new ArrayList<>();
 
         // TODO this code is for a specific website. Do not need the whole map!
         fsi_share.put("rosecollection", "rose");
@@ -162,35 +160,35 @@ public class JSViewerActivity implements Activity {
 
         view.setCodexView(server, model, controller, viewerMode);
 
-        handlers.add(view.addFirstClickHandler(new ClickHandler() {
+        view.addFirstClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
                 controller.gotoOpening(model.opening(0));
             }
-        }));
+        });
 
-        handlers.add(view.addLastClickHandler(new ClickHandler() {
+        view.addLastClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
                 controller.gotoOpening(model.opening(model.numOpenings() - 1));
             }
-        }));
+        });
 
-        handlers.add(view.addNextClickHandler(new ClickHandler() {
+        view.addNextClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
                 controller.gotoNextOpening();
             }
-        }));
+        });
 
-        handlers.add(view.addPrevClickHandler(new ClickHandler() {
+        view.addPrevClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
                 controller.gotoPreviousOpening();
             }
-        }));
+        });
 
-        handlers.add(view.addGoToKeyDownHandler(new KeyDownHandler() {
+        view.addGoToKeyDownHandler(new KeyDownHandler() {
             @Override
             public void onKeyDown(KeyDownEvent event) {
                 if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
@@ -225,7 +223,7 @@ public class JSViewerActivity implements Activity {
                     }
                 }
             }
-        }));
+        });
 
         controller.addChangeHandler(new ChangeHandler() {
             @Override
@@ -298,12 +296,6 @@ public class JSViewerActivity implements Activity {
     }
 
     private void finishActivity() {
-        view.clear();
-
-        for (HandlerRegistration registration : handlers) {
-            registration.removeHandler();
-        }
-        handlers.clear();
         this.eventBus.fireEvent(new BookSelectEvent(false, book));
     }
 }

@@ -11,7 +11,6 @@ import rosa.website.core.client.jsviewer.codexview.CodexView.Mode;
 import rosa.website.core.client.jsviewer.dynimg.ImageServer;
 
 public interface JSViewerView extends IsWidget {
-    void clear();
     void setPermissionStatement(String permission);
     void setCodexView(ImageServer imageServer, CodexModel model, CodexController controller, Mode mode);
     void setViewerMode(CodexView.Mode mode);
