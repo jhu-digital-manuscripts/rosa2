@@ -21,6 +21,7 @@
 
             <properties>
                 <archive.path>/tmp/archive</archive.path>
+                <gwt.output.style>pretty</gwt.output.style>
             </properties>
         </profile>
 
@@ -29,6 +30,7 @@
 
             <properties>
                 <archive.path>/mnt</archive.path>
+                <gwt.output.style>obf</gwt.output.style>
             </properties>
         </profile>
     </profiles>
@@ -118,6 +120,7 @@
                 </executions>
 
                 <configuration>
+                    <style>${gwt.output.style}</style>
                     <runTarget>RosaWebsiteTest.html</runTarget>
                     <hostedWebapp>${project.build.directory}/${project.build.finalName}</hostedWebapp>
                     <modules>

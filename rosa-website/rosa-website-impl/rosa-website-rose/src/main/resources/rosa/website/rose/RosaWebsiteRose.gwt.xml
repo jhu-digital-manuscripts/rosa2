@@ -19,7 +19,7 @@
     <inherits name="rosa.website.model.RosaWebsiteModel"/>
     <inherits name="rosa.website.core.RosaWebsiteCore"/>
 
-    <!--<inherits name='com.google.gwt.user.theme.standard.Standard' />-->
+    <inherits name='com.google.gwt.user.theme.chrome.Chrome' />
     <stylesheet src="../RosaWebsiteRose.css"/>
 
     <!-- Logging -->
@@ -32,6 +32,9 @@
     <extend-property name='locale' values='fr'/>
     <extend-property name='locale' values='en'/>
     <set-property-fallback name="locale" value="en"/>
+
+    <!-- TODO Remove in order to obfuscate CSS class names -->
+    <set-configuration-property name="CssResource.style" value="${gwt.output.style}"/>
 
     <source path='client' />
     <!--<source path='shared' />-->

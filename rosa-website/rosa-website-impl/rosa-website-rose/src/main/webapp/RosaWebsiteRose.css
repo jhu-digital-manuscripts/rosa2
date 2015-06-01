@@ -189,6 +189,10 @@
   font-weight: bold;
 }
 
+.BookDescriptionContent {
+  margin: 1em;
+}
+
 .ImageDescription {
   color: black;
   background-color: white;
