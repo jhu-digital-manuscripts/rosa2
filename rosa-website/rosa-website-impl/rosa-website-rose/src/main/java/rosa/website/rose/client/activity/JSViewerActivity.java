@@ -7,7 +7,6 @@ import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.EventBus;
-import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
@@ -30,25 +29,21 @@ import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.JSViewerView;
 import rosa.website.rose.client.WebsiteConfig;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class JSViewerActivity implements Activity {
     private static final Logger logger = Logger.getLogger(JSViewerActivity.class.toString());
 
-    private Map<String, String> fsi_share = new HashMap<>();  // TODO configure this using 'fsi-share-map.properties' see TODO below (in constructor)
-
     private JSViewerView view;
     private ArchiveDataServiceAsync archiveService;
     private final com.google.web.bindery.event.shared.EventBus eventBus;
 
-    private String collection;
-    private String book;
-    private String starterPage;
+    private final String collection;
+    private final String fsi_share;
+    private final String book;
+    private final String starterPage;
     private Book b;
 
     private Mode viewerMode;
@@ -68,13 +63,9 @@ public class JSViewerActivity implements Activity {
         this.eventBus = clientFactory.eventBus();
         this.book = place.getBook();
         this.collection = clientFactory.context().getCollection();
+        this.fsi_share = WebsiteConfig.INSTANCE.fsiShare();
         this.viewerMode = getViewerMode(place.getType());
         this.starterPage = place.getPage();
-
-        // TODO this code is for a specific website. Do not need the whole map!
-        fsi_share.put("rosecollection", "rose");
-        fsi_share.put("pizancollection", "pizan");
-        fsi_share.put("aorcollection", "aor");
 
         current_selected_index = 0;
     }
@@ -98,7 +89,6 @@ public class JSViewerActivity implements Activity {
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         this.eventBus.fireEvent(new BookSelectEvent(true, book));
         panel.setWidget(view);
-
 
         archiveService.loadBook(collection, book, new AsyncCallback<Book>() {
             @Override
@@ -135,7 +125,7 @@ public class JSViewerActivity implements Activity {
     }
 
     private void createJSviewer() {
-        final String fsi_missing_image = fsi_share.get(collection) + "/missing_image.tif";
+        final String fsi_missing_image = fsi_share + "/missing_image.tif";
 
         archiveService.loadImageList(collection, book, new AsyncCallback<String>() {
             @Override
@@ -146,7 +136,7 @@ public class JSViewerActivity implements Activity {
 
             @Override
             public void onSuccess(String result) {
-                RoseBook roseBook = new RoseBook(fsi_share.get(collection), result, fsi_missing_image);
+                RoseBook roseBook = new RoseBook(fsi_share, result, fsi_missing_image);
                 setupView(roseBook.model());
             }
         });
