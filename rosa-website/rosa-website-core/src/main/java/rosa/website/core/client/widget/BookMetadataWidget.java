@@ -28,6 +28,7 @@ public class BookMetadataWidget extends Composite {
      */
     public BookMetadataWidget() {
         root = new FlowPanel();
+        root.setStylePrimaryName("BookDescription");
 
         metadataTable = new FlexTable();
         textsTable = new FlexTable();
@@ -97,6 +98,12 @@ public class BookMetadataWidget extends Composite {
 
         // TODO illustration description
 
+        metadataTable.addStyleName("BookDescriptionData");
+        for (int i = 0; i < metadataTable.getRowCount(); i++) {
+            metadataTable.getCellFormatter().addStyleName(i, 0, "BookDescriptionDataName");
+            metadataTable.getCellFormatter().addStyleName(i, 2, "BookDescriptionDataName");
+        }
+
         root.add(metadataTable);
         drawBookTexts(metadata.getTexts());
     }
@@ -136,6 +143,9 @@ public class BookMetadataWidget extends Composite {
                 textsTable.setText(i, 3, String.valueOf(text.getNumberOfIllustrations()));
             }
         }
+
+        textsTable.setStylePrimaryName("BookDescriptionTextData");
+        textsTable.getRowFormatter().setStylePrimaryName(0, "BookDescriptionDataName");
 
         root.add(textsTable);
     }

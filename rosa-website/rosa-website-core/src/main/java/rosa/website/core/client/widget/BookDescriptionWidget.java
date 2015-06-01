@@ -77,7 +77,10 @@ public class BookDescriptionWidget extends Composite {
             Element note = (Element) n;
 
             Label title = new Label(note.getAttribute(REND_ATTR));
+            title.setStylePrimaryName("BookDescriptionHeader");
+
             HTML description = new HTML(elementToString(note));
+            description.addStyleName("BookDescriptionContent");
 
             root.add(title);
             root.add(description);

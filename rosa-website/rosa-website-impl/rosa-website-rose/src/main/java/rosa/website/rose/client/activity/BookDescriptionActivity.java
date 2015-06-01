@@ -29,6 +29,10 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
     private Book book;
 
+    /**
+     * @param place initial state
+     * @param clientFactory .
+     */
     public BookDescriptionActivity(BookDescriptionPlace place, ClientFactory clientFactory) {
         this.bookName = place.getBook();
         this.language = LocaleInfo.getCurrentLocale().getLocaleName();
