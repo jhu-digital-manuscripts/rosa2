@@ -4,6 +4,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.ImageList;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
@@ -221,14 +222,14 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     }
 
     @Override
-    public void loadImageList(String collection, String book, final AsyncCallback<String> cb) {
+    public void loadImageListAsString(String collection, String book, final AsyncCallback<String> cb) {
         final String key = getKey(collection, book, "", String.class);
         if (inCache(key)) {
             cb.onSuccess(fromCache(key, String.class));
             return;
         }
 
-        service.loadImageList(collection, book, new AsyncCallback<String>() {
+        service.loadImageListAsString(collection, book, new AsyncCallback<String>() {
             @Override
             public void onFailure(Throwable caught) {
                 cb.onFailure(caught);
@@ -236,6 +237,28 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
 
             @Override
             public void onSuccess(String result) {
+                updateCache(key, result);
+                cb.onSuccess(result);
+            }
+        });
+    }
+
+    @Override
+    public void loadImageList(String collection, String book, final AsyncCallback<ImageList> cb) {
+        final String key = getKey(collection, book, "", ImageList.class);
+        if (inCache(key)) {
+            cb.onSuccess(fromCache(key, ImageList.class));
+            return;
+        }
+
+        service.loadImageList(collection, book, new AsyncCallback<ImageList>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                cb.onFailure(caught);
+            }
+
+            @Override
+            public void onSuccess(ImageList result) {
                 updateCache(key, result);
                 cb.onSuccess(result);
             }

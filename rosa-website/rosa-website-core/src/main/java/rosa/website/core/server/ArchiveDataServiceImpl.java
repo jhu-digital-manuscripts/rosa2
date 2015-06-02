@@ -401,8 +401,8 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     }
 
     @Override
-    public String loadImageList(String collection, String book) throws IOException {
-        String key = ImageList.class + "." + collection + "." + book;
+    public String loadImageListAsString(String collection, String book) throws IOException {
+        String key = ImageList.class + "." + String.class + "." + collection + "." + book;
         if (objectCache.containsKey(key)) {
             return (String) objectCache.get(key);
         }
@@ -417,6 +417,23 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         updateCache(key, out.toString());
         return out.toString();
+    }
+
+    @Override
+    public ImageList loadImageList(String collection, String book) throws IOException {
+        String key = ImageList.class + "." + collection + "." + book;
+        if (objectCache.containsKey(key)) {
+            return (ImageList) objectCache.get(key);
+        }
+        Book b = loadBook(collection, book);
+
+        if (b == null || b.getImages() == null || b.getImages().getImages() == null
+                || b.getImages().getImages().isEmpty()) {
+            return null;
+        }
+
+        updateCache(key, b.getImages());
+        return b.getImages();
     }
 
     private CharacterNamesCSV loadCharacterNames(String collection) throws IOException {

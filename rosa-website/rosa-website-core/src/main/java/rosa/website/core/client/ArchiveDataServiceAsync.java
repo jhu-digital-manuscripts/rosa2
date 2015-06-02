@@ -3,6 +3,7 @@ package rosa.website.core.client;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.ImageList;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
@@ -23,5 +24,6 @@ public interface ArchiveDataServiceAsync {
     void loadBookCollection(String collection, AsyncCallback<BookCollection> cb);
     void loadBook(String collection, String book, AsyncCallback<Book> cb);
     void loadPermissionStatement(String collection, String book, String lang, AsyncCallback<String> cb);
-    void loadImageList(String collection, String book, AsyncCallback<String> cb);
+    void loadImageListAsString(String collection, String book, AsyncCallback<String> cb);
+    void loadImageList(String collection, String book, AsyncCallback<ImageList> cb);
 }

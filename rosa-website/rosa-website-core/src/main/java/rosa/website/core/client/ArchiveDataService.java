@@ -4,6 +4,7 @@ import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.ImageList;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
@@ -120,5 +121,15 @@ public interface ArchiveDataService extends RemoteService {
      * @return image list as a String
      * @throws IOException .
      */
-    String loadImageList(String collection, String book) throws IOException;
+    String loadImageListAsString(String collection, String book) throws IOException;
+
+    /**
+     * Get the CSV image list of a book.
+     *
+     * @param collection name of collection
+     * @param book name of book
+     * @return image list as a String
+     * @throws IOException .
+     */
+    ImageList loadImageList(String collection, String book) throws IOException;
 }

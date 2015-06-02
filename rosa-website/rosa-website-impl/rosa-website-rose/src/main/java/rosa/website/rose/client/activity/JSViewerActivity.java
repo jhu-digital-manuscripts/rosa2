@@ -10,8 +10,8 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
-import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.ImageList;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.event.BookSelectEvent;
@@ -44,7 +44,8 @@ public class JSViewerActivity implements Activity {
     private final String fsi_share;
     private final String book;
     private final String starterPage;
-    private Book b;
+    // TODO only need ImageList and Permission
+    private ImageList images;
 
     private Mode viewerMode;
 
@@ -68,6 +69,8 @@ public class JSViewerActivity implements Activity {
         this.starterPage = place.getPage();
 
         current_selected_index = 0;
+
+
     }
 
     @Override
@@ -90,15 +93,15 @@ public class JSViewerActivity implements Activity {
         this.eventBus.fireEvent(new BookSelectEvent(true, book));
         panel.setWidget(view);
 
-        archiveService.loadBook(collection, book, new AsyncCallback<Book>() {
+        archiveService.loadImageList(collection, book, new AsyncCallback<ImageList>() {
             @Override
             public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load book. [" + book + "]", caught);
+                logger.log(Level.SEVERE, "Failed to load image list.", caught);
             }
 
             @Override
-            public void onSuccess(Book result) {
-                b = result;
+            public void onSuccess(ImageList result) {
+                images = result;
 
                 if (starterPage != null && !starterPage.isEmpty()) {
                     current_selected_index = getImageIndex(starterPage, result);
@@ -113,21 +116,17 @@ public class JSViewerActivity implements Activity {
     }
 
     public String getCurrentPage() {
-        if (b == null || b.getImages() == null || b.getImages().getImages() == null) {
+        if (images == null || images.getImages() == null || images.getImages().size() < current_selected_index) {
             return null;
         }
 
-        if (b.getImages().getImages().size() < current_selected_index) {
-            return null;
-        }
-
-        return b.getImages().getImages().get(current_selected_index).getId();
+        return images.getImages().get(current_selected_index).getId();
     }
 
     private void createJSviewer() {
         final String fsi_missing_image = fsi_share + "/missing_image.tif";
 
-        archiveService.loadImageList(collection, book, new AsyncCallback<String>() {
+        archiveService.loadImageListAsString(collection, book, new AsyncCallback<String>() {
             @Override
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, "Failed to load image list for book. [" + collection + ":" + book + "]",
@@ -138,10 +137,24 @@ public class JSViewerActivity implements Activity {
             public void onSuccess(String result) {
                 RoseBook roseBook = new RoseBook(fsi_share, result, fsi_missing_image);
                 setupView(roseBook.model());
+                setPermission();
             }
         });
+    }
 
-        view.setPermissionStatement(b.getPermission(LocaleInfo.getCurrentLocale().getLocaleName()).getPermission());
+    private void setPermission() {
+        archiveService.loadPermissionStatement(collection, book, LocaleInfo.getCurrentLocale().getLocaleName(),
+                new AsyncCallback<String>() {
+                    @Override
+                    public void onFailure(Throwable caught) {
+                        logger.log(Level.SEVERE, "Failed to get book permission statement.", caught);
+                    }
+
+                    @Override
+                    public void onSuccess(String result) {
+                        view.setPermissionStatement(result);
+                    }
+                });
     }
 
     private void setupView(final CodexModel model) {
@@ -182,7 +195,7 @@ public class JSViewerActivity implements Activity {
             @Override
             public void onKeyDown(KeyDownEvent event) {
                 if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                    int index = getImageIndex(view.getGotoText(), b);
+                    int index = getImageIndex(view.getGotoText(), images);
 
                     /*
                         This hack gets around a bug in the original website where a user inputs
@@ -272,10 +285,11 @@ public class JSViewerActivity implements Activity {
         }
     }
 
-    private int getImageIndex(String name, Book book) {
-        if (book != null && book.getImages() != null && book.getImages().getImages() != null) {
-            for (int i = 0; i < book.getImages().getImages().size(); i++) {
-                BookImage image = book.getImages().getImages().get(i);
+    private int getImageIndex(String name, ImageList images) {
+        if (images != null && images.getImages() != null) {
+            List<BookImage> list = images.getImages();
+            for (int i = 0; i < list.size(); i++) {
+                BookImage image = list.get(i);
                 if (image.getName().equals(name) || image.getId().equals(name)) {
                     return i;
                 }
