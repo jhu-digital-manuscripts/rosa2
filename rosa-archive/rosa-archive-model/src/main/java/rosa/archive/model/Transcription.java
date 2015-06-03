@@ -23,12 +23,12 @@ public class Transcription implements HasId, Serializable {
         this.id = id;
     }
 
-    public String getContent() {
+    public String getXML() {
         return content;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setXML(String xml) {
+        this.content = xml;
     }
 
     @Override

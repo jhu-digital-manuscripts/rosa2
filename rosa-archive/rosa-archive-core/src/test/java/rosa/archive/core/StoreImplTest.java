@@ -87,6 +87,8 @@ public class StoreImplTest extends BaseArchiveTest {
         assertNotNull(book.getIllustrationTagging());
         assertNotNull(book.getBookMetadata("en"));
         assertNotNull(book.getBookMetadata("fr"));
+        assertNotNull(book.getBookDescription("en"));
+        assertNotNull(book.getBookDescription("fr"));
         assertNotNull(book.getContent());
         assertNotNull(book.getCropInfo());
         assertNotNull(book.getChecksum());

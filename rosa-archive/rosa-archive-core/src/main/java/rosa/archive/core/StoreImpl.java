@@ -32,6 +32,7 @@ import rosa.archive.core.util.CropRunnable;
 import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookImageRole;
@@ -179,6 +180,7 @@ public class StoreImpl implements Store, ArchiveConstants {
             
             String descr_name = bookId + DESCRIPTION + lang + XML_EXT;
             book.addBookMetadata(loadItem(descr_name, bookStreams, BookMetadata.class, errors), lang);
+            book.addBookDescription(loadItem(descr_name, bookStreams, BookDescription.class, errors), lang);
         }
 
         // Handle AoR annotations
