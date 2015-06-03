@@ -53,7 +53,7 @@ public final class BookDescription implements HasId, Serializable {
         this.id = id;
     }
 
-    public String asString() {
+    public String getXML() {
         return description;
     }
 

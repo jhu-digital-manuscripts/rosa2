@@ -24,7 +24,7 @@ public class TranscriptionXmlSerializer implements Serializer<Transcription> {
         }
 
         Transcription transcription = new Transcription();
-        transcription.setContent(content.toString());
+        transcription.setXML(content.toString());
 
         return transcription;
     }

@@ -27,8 +27,8 @@ public class TranscriptionXmlSerializerTest extends BaseSerializerTest<Transcrip
         Transcription transcription = loadResource(COLLECTION_NAME, BOOK_NAME, "LudwigXV7.transcription.xml", errors);
 
         assertNotNull(transcription);
-        assertNotNull(transcription.getContent());
-        assertTrue(transcription.getContent().length() > 0);
+        assertNotNull(transcription.getXML());
+        assertTrue(transcription.getXML().length() > 0);
         assertTrue(errors.isEmpty());
     }
 
