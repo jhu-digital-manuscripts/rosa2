@@ -2,6 +2,7 @@ package rosa.website.core.client.view.impl;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.cellview.client.CellBrowser;
+import com.google.gwt.user.cellview.client.HasKeyboardSelectionPolicy.KeyboardSelectionPolicy;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.view.client.SingleSelectionModel;
@@ -38,7 +39,7 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
 //                .loadingIndicator(null)
                 .resources(css)
                 .build();
-
+        browser.setKeyboardSelectionPolicy(KeyboardSelectionPolicy.BOUND_TO_SELECTION);
         browser.setSize("100%", "100%");
 
         root.setWidget(browser);

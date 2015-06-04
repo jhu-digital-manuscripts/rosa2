@@ -25,7 +25,7 @@ public class BookDescriptionSerializerTest extends BaseSerializerTest<BookDescri
         BookDescription description = loadResource(COLLECTION_NAME, BOOK_NAME, testFile);
         assertNotNull("Failed to load description.", description);
 
-        assertNotNull(description.asString());
+        assertNotNull(description.getXML());
 //        List<String> topics = description.getTopics();
 //        assertNotNull("Failed to get list of topics.", topics);
 //        assertEquals("Unexpected number of topics found.", 11, topics.size());

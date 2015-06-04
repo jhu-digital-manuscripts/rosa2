@@ -37,7 +37,7 @@ public class BookDescriptionViewImpl extends Composite implements BookDescriptio
 
     @Override
     public void setDescription(BookDescription description) {
-        descriptionWidget.setDescription(description.asString());
+        descriptionWidget.setDescription(description.getXML());
     }
 
     @Override

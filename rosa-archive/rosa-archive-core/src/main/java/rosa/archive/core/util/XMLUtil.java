@@ -2,6 +2,7 @@ package rosa.archive.core.util;
 
 import com.sun.org.apache.xml.internal.serializer.OutputPropertiesFactory;
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -40,7 +41,7 @@ public class XMLUtil {
         try {
             builder = dbf.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            return null;
+            throw new RuntimeException(e);
         }
 
         return builder.newDocument();
@@ -133,36 +134,21 @@ public class XMLUtil {
         }
     }
 
-    /**
-     * @param doc document
-     * @param out output stream
-     * @param omitXmlDeclaration .
-     */
-    public static void write(Document doc, OutputStream out, boolean omitXmlDeclaration) {
-        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer;
-        try {
-            transformer = transformerFactory.newTransformer();
+    public static void removeChildren(Node parent) {
+        for (;;) {
+            Node n = parent.getFirstChild();
 
-            if (omitXmlDeclaration) {
-                transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
-            } else {
-                transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+            if (n == null) {
+                break;
             }
-            // Options to make it human readable
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer.setOutputProperty(OutputPropertiesFactory.S_KEY_INDENT_AMOUNT, "4");
-        } catch (TransformerConfigurationException e) {
-            return;
+
+            parent.removeChild(n);
         }
+    }
 
-        Source xmlSource = new DOMSource(doc);
-        Result result = new StreamResult(out);
-
-        try {
-            transformer.transform(xmlSource, result);
-        } catch (TransformerException e) {
-            return;
+    public static void removeChildren(Document doc) {
+        if (doc.getDocumentElement() != null ) {
+            removeChildren(doc.getDocumentElement());
         }
     }
 
