@@ -2,7 +2,6 @@ package rosa.archive.core.util;
 
 import com.sun.org.apache.xml.internal.serializer.OutputPropertiesFactory;
 import org.w3c.dom.Document;
-import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -133,23 +132,4 @@ public class XMLUtil {
             return;
         }
     }
-
-    public static void removeChildren(Node parent) {
-        for (;;) {
-            Node n = parent.getFirstChild();
-
-            if (n == null) {
-                break;
-            }
-
-            parent.removeChild(n);
-        }
-    }
-
-    public static void removeChildren(Document doc) {
-        if (doc.getDocumentElement() != null ) {
-            removeChildren(doc.getDocumentElement());
-        }
-    }
-
 }

@@ -13,8 +13,16 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 
 public class TranscriptionSplitterTest extends BaseArchiveTest {
+
+    /**
+     * Load valid book LudwigXV7 from the test archive and split the transcription
+     * XML. For each page that has a transcription, there should be an associated
+     * XML fragment in the resulting Map.
+     *
+     * @throws IOException .
+     */
     @Test
-    public void test() throws IOException {
+    public void splitTranscriptionLudwigXV7() throws IOException {
         String transcription = loadLudwigTranscription();
         Map<String, String> map = TranscriptionSplitter.split(transcription);
 
@@ -41,10 +49,5 @@ public class TranscriptionSplitterTest extends BaseArchiveTest {
         assertFalse("Transcription string missing.", transcription.getXML().isEmpty());
 
         return transcription.getXML();
-    }
-
-    private int numPagesLudwig() throws IOException {
-        Book book = loadValidLudwigXV7();
-        return book.getImages().getImages().size();
     }
 }

@@ -31,10 +31,22 @@ public class TranscriptionSplitter {
     private static DocumentBuilder docBuilder;
 
     /**
-     * Split up the transcription XML into fragments according to page and column.
+     * Split up the transcription XML into fragments according to page and column. All
+     * XML fragments are kept as Strings.
+     *
+     * The map produced by this method will contain entries that relate page number/folio
+     * [short name?](ex: 135r) to the XML fragment representing the transcription on
+     * that page. The XML fragment SHOULD start with a &lt;cb&gt; tag, indicating the
+     * first column on that page. Any other columns will also be marked with the same
+     * tag.
+     *
+     * Note that the transcription may be recorded in couplets and new columns
+     * might split couplets. This results in a &lt;cb&gt; tag marking a new column
+     * inside a &lt;lg&gt; couplet tag. Anyone parsing these XML fragments will have
+     * to take this into consideration.
      *
      * @param xml original transcription XML containing all transcriptions
-     * @return map of page.column TO transcription XML fragment
+     * @return map of page TO transcription XML fragment
      */
     public static Map<String, String> split(String xml) {
         Map<String, String> map = new HashMap<>();
@@ -45,7 +57,7 @@ public class TranscriptionSplitter {
         }
         doc.normalizeDocument();
 
-        // Find the index of each <pb> tag
+        // Find the index of each top level <pb> tag
         List<Integer> pbs = new ArrayList<>();
         NodeList all_nodes = doc.getDocumentElement().getChildNodes();
         for (int i = 0; i < all_nodes.getLength(); i++) {
@@ -77,23 +89,28 @@ public class TranscriptionSplitter {
                 continue;
             }
 
-            Node column_start = all_nodes.item(start + 1);
-            if (column_start.getNodeName().equals("cb")) {
-                page = page.concat(getAttribute("n", column_start));
-                start++;
-            }
+            // Will not work generally, as the direct sibling node will probably
+            // be an empty '#text' node
+//            Node column_start = all_nodes.item(start + 1);
+//            if (column_start.getNodeName().equals("cb")) {
+//                page = page.concat(getAttribute("n", column_start));
+//                start++;
+//            }
 
             for (int i = start + 1; i < end; i++) {
                 fragment.getDocumentElement().appendChild(fragment.importNode(all_nodes.item(i), true));
             }
 
-            System.out.println(page + " -> " + toString(fragment));
             map.put(page, toString(fragment));
         }
 
         return map;
     }
 
+    /**
+     * @param filename page name
+     * @return standard form
+     */
     private static String findPage(String filename) {
         Matcher m = pagePattern.matcher(filename);
 
@@ -101,7 +118,7 @@ public class TranscriptionSplitter {
             int n = Integer.parseInt(m.group(1));
             return String.format("%03d", n) + m.group(2);
         } else {
-            System.err.println("Failed to find page. [" + filename + "]");
+            log.warning("Failed to find page while splitting transcriptions. [" + filename + "]");
             return null;
         }
     }
@@ -110,6 +127,12 @@ public class TranscriptionSplitter {
         return node.getAttributes().getNamedItem(attribute).getNodeValue();
     }
 
+    /**
+     * Parse a String containing XML.
+     *
+     * @param xml XML as a String
+     * @return XML Document
+     */
     private static Document readXml(String xml) {
         try {
             if (docBuilder == null) {
@@ -124,6 +147,12 @@ public class TranscriptionSplitter {
         return null;
     }
 
+    /**
+     * Print an XML Document to a String.
+     *
+     * @param doc document to print
+     * @return String form of document
+     */
     private static String toString(Document doc) {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         XMLUtil.write(doc, out, true);
