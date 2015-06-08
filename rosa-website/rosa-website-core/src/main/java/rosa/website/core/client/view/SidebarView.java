@@ -1,12 +1,14 @@
 package rosa.website.core.client.view;
 
 import com.google.gwt.user.client.ui.IsWidget;
+import rosa.website.core.client.event.BookSelectEventHandler;
+import rosa.website.core.client.event.FlashStatusChangeEventHandler;
 
 import java.util.Map;
 
 public interface SidebarView extends IsWidget {
 
-    interface Presenter extends IsWidget {
+    interface Presenter extends IsWidget, BookSelectEventHandler, FlashStatusChangeEventHandler {
         void setUseFlash(boolean useFlash);
         String getCurrentToken();
     }
@@ -44,5 +46,12 @@ public interface SidebarView extends IsWidget {
      * @param height .
      */
     void resize(String width, String height);
+
+    /**
+     *
+     * @param label Label to appear in the UI
+     * @param languageCode langauge code
+     */
+    void addLanguageLink(String label, final String languageCode);
 
 }

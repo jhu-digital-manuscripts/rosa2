@@ -1,7 +1,10 @@
-package rosa.website.core.client;
+package rosa.website.rose.client;
 
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.Widget;
+import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.Labels;
+import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.event.FlashStatusChangeEvent;
 import rosa.website.core.client.view.SidebarView;
 import rosa.website.model.select.SelectCategory;
@@ -22,6 +25,7 @@ public class SidebarPresenter implements SidebarView.Presenter {
         addSiteNavLinks();
         addBookSelectLinks();
         addProjectLinks();
+        addLanguageLinks();
     }
 
     public void addBookLinks(String bookId) {
@@ -79,6 +83,11 @@ public class SidebarPresenter implements SidebarView.Presenter {
         view.addSection(labels.project(), links);
     }
 
+    private void addLanguageLinks() {
+        view.addLanguageLink("English", "en");
+        view.addLanguageLink("Français", "fr");
+    }
+
     public void resize(String width, String height) {
         view.resize(width, height);
     }
@@ -98,13 +107,20 @@ public class SidebarPresenter implements SidebarView.Presenter {
         return History.getToken();
     }
 
-//    TODO should this be handled here or in the AppController?
-//    @Override
-//    public void onBookSelect(BookSelectEvent event) {
-//        if (event.isSelected()) {
-//            addBookLinks(event.getBookId());
-//        } else {
-//            clearBookLinks();
-//        }
-//    }
+// ------------------------------------------------------------------------------------------
+// ----- Can be centralized in some app controller ------------------------------------------
+// ------------------------------------------------------------------------------------------
+    @Override
+    public void onBookSelect(BookSelectEvent event) {
+        if (event.isSelected()) {
+            addBookLinks(event.getBookId());
+        } else {
+            clearBookLinks();
+        }
+    }
+
+    @Override
+    public void onFlashStatusChange(FlashStatusChangeEvent event) {
+        clientFactory.context().setUseFlash(event.status());
+    }
 }

@@ -8,4 +8,5 @@ public interface HeaderView extends IsWidget {
     }
 
     void setPresenter(Presenter presenter);
+    void addHeaderImage(String imageUrl, String altText);
 }

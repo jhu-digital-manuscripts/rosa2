@@ -16,11 +16,8 @@ import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.ClientFactory;
-import rosa.website.core.client.HeaderPresenter;
-import rosa.website.core.client.SidebarPresenter;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.event.FlashStatusChangeEvent;
-import rosa.website.core.client.mvp.AppController;
 import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.core.client.view.SidebarView;
 import rosa.website.core.client.view.impl.SidebarViewImpl;
@@ -90,10 +87,9 @@ public class RosaWebsite implements EntryPoint {
         main_content.addStyleName("Content");
         RootLayoutPanel.get().add(main);
 
-        AppController appController = new AppController(sidebarPresenter, history_handler, clientFactory);
         history_handler.handleCurrentHistory();
 
-        bind(eventBus, appController);
+        bind(eventBus, sidebarPresenter);
 
         Window.addResizeHandler(new ResizeHandler() {
             @Override
@@ -117,8 +113,8 @@ public class RosaWebsite implements EntryPoint {
         main.addWest(sidebarPresenter, SIDEBAR_WIDTH);
     }
 
-    private void bind(EventBus eventBus, AppController controller) {
-        eventBus.addHandler(FlashStatusChangeEvent.TYPE, controller);
-        eventBus.addHandler(BookSelectEvent.TYPE, controller);
+    private void bind(EventBus eventBus, SidebarPresenter presenter) {
+        eventBus.addHandler(FlashStatusChangeEvent.TYPE, presenter);
+        eventBus.addHandler(BookSelectEvent.TYPE, presenter);
     }
 }
