@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <!-- remote logging -->
+    <servlet>
+        <servlet-name>remoteLogging</servlet-name>
+        <servlet-class>com.google.gwt.logging.server.RemoteLoggingServiceImpl</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>remoteLogging</servlet-name>
+        <url-pattern>/RosaWebsiteRose/remote_logging</url-pattern>
+    </servlet-mapping>
+
+    <!-- Archive data service -->
+    <servlet>
+        <servlet-name>archiveDataService</servlet-name>
+        <servlet-class>rosa.website.core.server.ArchiveDataServiceImpl</servlet-class>
+        <!--<init-param>
+            <param-name>archive-path</param-name>
+            <param-value>${archive.path}</param-value>
+        </init-param>-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>archiveDataService</servlet-name>
+        <url-pattern>/RosaWebsitePizan/data</url-pattern>
+    </servlet-mapping>
+
+    <!-- FSI data service -->
+    <servlet>
+        <servlet-name>fsiService</servlet-name>
+        <servlet-class>rosa.website.core.server.FSIDataServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fsiService</servlet-name>
+        <url-pattern>/RosaWebsitePizan/fsi/*</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>archive-path</param-name>
+        <param-value>${archive.path}</param-value>
+    </context-param>
+
+    <!-- Filters -->
+    <filter>
+        <filter-name>CacheFilter</filter-name>
+        <filter-class>rosa.website.core.server.CacheFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CacheFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- Default page to serve -->
+    <welcome-file-list>
+        <welcome-file>RosaWebsitePizan.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>

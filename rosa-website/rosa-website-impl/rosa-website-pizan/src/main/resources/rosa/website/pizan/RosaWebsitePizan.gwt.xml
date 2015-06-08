@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='RosaWebsitePizan'>
+    <inherits name='com.google.gwt.user.User' />
+
+    <inherits name="com.google.gwt.inject.Inject"/>
+    <inherits name="com.google.gwt.logging.Logging"/>
+    <inherits name="com.google.gwt.resources.Resources" />
+    <!-- Activities and Places history mechanism -->
+    <inherits name="com.google.gwt.activity.Activity"/>
+    <inherits name="com.google.gwt.place.Place"/>
+    <!-- HTTP stuff, including making HTTP requests, encoding/decoding URLs -->
+    <inherits name="com.google.gwt.http.HTTP"/>
+
+    <!-- Constants + internationalization -->
+    <inherits name="com.google.gwt.i18n.I18N"/>
+
+    <inherits name="rosa.archive.RosaArchiveModel"/>
+    <inherits name="rosa.archive.RosaArchiveCore"/>
+    <inherits name="rosa.website.model.RosaWebsiteModel"/>
+    <inherits name="rosa.website.core.RosaWebsiteCore"/>
+
+    <inherits name='com.google.gwt.user.theme.chrome.Chrome' />
+    <stylesheet src="../RosaWebsitePizan.css"/>
+
+    <!-- Logging -->
+    <set-property name="gwt.logging.logLevel" value="FINE" />
+    <set-property name="gwt.logging.enabled" value="TRUE"/>
+    <set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
+
+    <entry-point class='rosa.website.pizan.client.RosaWebsite' />
+
+    <extend-property name='locale' values='fr'/>
+    <extend-property name='locale' values='en'/>
+    <set-property-fallback name="locale" value="en"/>
+
+    <!-- TODO Remove in order to obfuscate CSS class names -->
+    <set-configuration-property name="CssResource.style" value="${gwt.output.style}"/>
+
+    <source path='client' />
+    <!--<source path='shared' />-->
+
+</module>
