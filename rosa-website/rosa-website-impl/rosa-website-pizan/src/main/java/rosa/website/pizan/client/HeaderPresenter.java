@@ -20,8 +20,7 @@ public class HeaderPresenter implements Presenter, IsWidget {
         this.view = clientFactory.headerView();
         view.setPresenter(this);
 
-        view.addHeaderImage(GWT.getModuleBaseURL() + "banner_image1.gif", "");
-        view.addHeaderImage(GWT.getModuleBaseURL() + "banner_text.jpg", "Roman de la Rose Digital Library");
+        view.addHeaderImage(GWT.getModuleBaseURL() + "header-5.jpg", "Christine de Pizan Digital Scriptorium");
     }
 
     @Override

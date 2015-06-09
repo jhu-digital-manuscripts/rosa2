@@ -1,53 +1,101 @@
-.base {
-    /*background-color: #3b6280;*/
-    background-color: white;
+/* TODO: Take advantage of class support */
+@external SidebarItem, Search, ContentHeader, LoadingDialog, ImageDescriptionHeader, SidebarSelected, ContentTitle, BookDescriptionTextData, TranscriptionUnavailableError,SidebarLastUpdated, ResultSnippet, BookDescriptionDataName, TranscriptionRubric, ImageDescriptionLabel, BookPicker-header, DataTable, BookPicker-list, Tooltip, Main, TranscriptionInitial, Header, NarrativeSectionsHeader, TranscriptionExtraHeader, ResultField, BookDescription, BookPicker, Content, GoTextBox, TranscriptionDel, BookDescriptionHeader, Home, BookDescriptionData, Transcription, NarrativeSections, TranscriptionExpan, Sidebar, Toolbar, ResultsNav, TranscriptionAdd, Bibliography, ImageDescription, SidebarHeader, TranscriptionLecoy, TranscriptionExtra, ImageViewportThumbSelection, ImageViewportThumb, CodexBrowserView-Thumb, CodexBrowserView-Toolbar, WebImage, WebImage-Loading, HeaderMenu, HeaderProjectMenu, Footer, MainContentScroll;
+
+a:link {
+  color: #000000;
+  font-weight: normal;
 }
 
-/* TODO: Take advantage of class support
-@external SidebarItem, Search, ContentHeader, LoadingDialog, ImageDescriptionHeader, SidebarSelected, gwt-TabLayoutPanelTabs, ContentTitle, BookDescriptionTextData, TranscriptionUnavailableError,SidebarLastUpdated, ResultSnippet, BookDescriptionDataName, TranscriptionRubric, ImageDescriptionLabel, BookPicker-header, DataTable, BookPicker-list, Tooltip, Main, TranscriptionInitial, Header, NarrativeSectionsHeader, TranscriptionExtraHeader, ResultField, BookDescription, BookPicker, Content, GoTextBox, TranscriptionDel, BookDescriptionHeader, Home, BookDescriptionData, Transcription, NarrativeSections, TranscriptionExpan, Sidebar, Toolbar, ResultsNav, TranscriptionAdd, Bibliography, ImageDescription, SidebarHeader, TranscriptionLecoy, TranscriptionExtra, ImageViewportThumbSelection, ImageViewportThumb, CodexBrowserView-Thumb, CodexBrowserView-Toolbar, WebImage, WebImage-Loading;
-*/
-.link {
-  cursor: pointer;
-  text-decoration: underline;
+a:visited {
+  font-weight: normal;
+}
+
+a:hover {
+  color:#B8924B;
+  font-weight: normal;
+}
+
+a:active {
+ color: #666666;
 }
 
 .Main {
-  background-color: #3b6280;
+  color: #000000;
+  background-color: #c6c285;
 }
 
 .Header	{
-  background-color: #234774;
   border-bottom: 2px solid #000000;
+}
+
+.Footer {
+  background-color: #c6c285;
 }
 
 .Header img {
   float: left;
 }
 
-.Sidebar {
-  color: #FFFFFF;
-  padding: 5px;
-  text-align: left;
-  background-color: #234774;
-  border-right: 2px solid #000000;
-  border-bottom: 2px solid #000000;
-  vertical-align: top;
+.HeaderMenu {
+    
 }
 
-.vspace {
-  margin: 1em 0em;
+.HeaderMenu td {
+  font-size: larger;
+  font-weight: bold;
+  padding-left: 1em;
+  cursor: pointer;
+}
+
+.HeaderMenu td:active {
+  background-color: #FFFFFF;
+}
+
+.HeaderMenu td:hover {
+  background-color: #FFFFFF;
+}
+
+.HeaderProjectMenu {
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.HeaderProjectMenu td:active {
+  background-color: #f7f7f7;
+}
+
+.HeaderProjectMenu td:hover {
+  background-color: #f7f7f7;
+}
+
+.Sidebar {
+  color: #000000;
+  background-color: #f7f7f7;
+  padding: 18px 5px;
+  text-align: left;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  vertical-align: top;
 }
 
 .Content {
-  color: #FFFFFF;
+  color: #000000;
+  background-color: #FFFFFF;
   vertical-align: top;
   padding: 5px;
+  margin: 1em;
+}
+
+.MainContentScroll {
+  margin-left: 1em;
+  background-color: #FFFFFF;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
 }
 
 .Search {
-  float: left;
+  border-top: 1px solid #000000;
   margin-left: 1em;
-  margin-top: 1em;
 }
 
 .Search input {
@@ -68,23 +116,18 @@
 }
 
 .SidebarHeader {
-  color: #FFFFFF;
+  color: #000000;
   font-weight: bold;
   margin-top: 1em;
 }
 
-.BookPanel {
-  margin: 1em 0em;
-}
-
 .SidebarItem {
-   color: #FFFFFF;
-   /*width: 100%;*/
+   color: #000000;
    margin-left: 1em;
 }
 
 .SidebarLastUpdated {
-   color: #FFFFFF;
+   color: #000000;
    font-size: smaller;
    margin-top: 2em;
 }
@@ -95,22 +138,18 @@
   background-color: #FFFFCC;
 }
 
-.SidebarSelected a {
-  color: #000000;
-}
-
 .ContentHeader {
-  color: #FFFFFF;
+  color: #000000;
   font-weight: bold;
 }
 
 .ResultField {
-  color: #FFFFFF;
+  color: #000000;
   font-weight: bold;
 }
 
 .ResultSnippet {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .ResultsNav {
@@ -118,7 +157,7 @@
 }
 
 .ContentTitle {
-  color: #FFFFFF;
+  color: #000000;
   text-align: left;
   font-weight: bold;
   font-size: 1.2em;
@@ -126,19 +165,10 @@
 }
 
 .Home {
-  background-image: url(/app/home_bkgd_flowers.jpg);
-  background-repeat: no-repeat;
-  width: 657px;
-  height: 642px;
   font-size: 12px;
   font-style: normal;
   line-height: 16px;
   font-variant: normal;
-  color: #000000;
-}
-
-.Home div {
-  padding: 10px 20px 20px 90px;
 }
 
 .Home a {
@@ -162,7 +192,7 @@
  }
 
 .BookDescription table {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .BookDescriptionData {
@@ -187,10 +217,6 @@
 
 .BookDescriptionHeader {
   font-weight: bold;
-}
-
-.BookDescriptionContent {
-  margin: 1em;
 }
 
 .ImageDescription {
@@ -284,7 +310,7 @@ a.Tooltip span {
 
 /* position: absolute would popup, but positioning hard */
 a:hover.Tooltip span {
-  display: block;
+  display: block; 
   z-index: 2;
   font-weight: normal;
   border: 1px solid #C3D9FF;
@@ -347,23 +373,4 @@ a:hover.Tooltip span {
 
 .WebImage-Loading {
     background-color: black;
-}
-
-a:link {
-  color: #FFFFFF;
-  font-weight: normal;
-}
-
-a:visited {
-  color: #FFFFFF;
-  font-weight: normal;
-}
-
-a:hover {
-  color:#B8924B;
-  font-weight: normal;
-}
-
-a:active {
- color: #666666;
 }
