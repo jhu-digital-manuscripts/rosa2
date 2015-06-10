@@ -5,10 +5,14 @@ import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.place.shared.Place;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.mvp.BaseActivityMapper;
+import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.place.BookSelectPlace;
+import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.place.HTMLPlace;
+import rosa.website.pizan.client.activity.BookDescriptionActivity;
 import rosa.website.pizan.client.activity.BookSelectActivity;
+import rosa.website.pizan.client.activity.BookViewerActivity;
 import rosa.website.pizan.client.activity.CSVDataActivity;
 import rosa.website.pizan.client.activity.HTMLActivity;
 
@@ -25,13 +29,11 @@ public class RosaActivityMapper extends BaseActivityMapper implements ActivityMa
             return new CSVDataActivity((CSVDataPlace) place, clientFactory);
         } else if (place instanceof BookSelectPlace) {
             return new BookSelectActivity((BookSelectPlace) place, clientFactory);
+        } else if (place instanceof BookDescriptionPlace) {
+            return new BookDescriptionActivity((BookDescriptionPlace) place, clientFactory);
+        } else if (place instanceof BookViewerPlace) {
+            return new BookViewerActivity((BookViewerPlace) place, clientFactory);
         }
-//        else if (place instanceof BookDescriptionPlace) {
-//            return new BookDescriptionActivity((BookDescriptionPlace) place, clientFactory);
-//        }
-//        else if (place instanceof BookViewerPlace) {
-//            return new BookViewerActivity((BookViewerPlace) place, clientFactory);
-//        }
 
         // If custom activities are created by the web app, extend the BaseActivityMapper
         // and override its getActivity method.
