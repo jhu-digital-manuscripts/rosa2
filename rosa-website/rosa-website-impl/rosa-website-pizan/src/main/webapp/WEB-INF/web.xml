@@ -13,7 +13,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>remoteLogging</servlet-name>
-        <url-pattern>/RosaWebsiteRose/remote_logging</url-pattern>
+        <url-pattern>/RosaWebsitePizan/remote_logging</url-pattern>
     </servlet-mapping>
 
     <!-- Archive data service -->

@@ -29,7 +29,6 @@
 
     <entry-point class='rosa.website.pizan.client.RosaWebsite' />
 
-    <extend-property name='locale' values='fr'/>
     <extend-property name='locale' values='en'/>
     <set-property-fallback name="locale" value="en"/>
 

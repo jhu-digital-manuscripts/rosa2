@@ -5,8 +5,10 @@ import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.place.shared.Place;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.mvp.BaseActivityMapper;
+import rosa.website.core.client.place.BookSelectPlace;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.place.HTMLPlace;
+import rosa.website.pizan.client.activity.BookSelectActivity;
 import rosa.website.pizan.client.activity.CSVDataActivity;
 import rosa.website.pizan.client.activity.HTMLActivity;
 
@@ -21,12 +23,13 @@ public class RosaActivityMapper extends BaseActivityMapper implements ActivityMa
             return new HTMLActivity((HTMLPlace) place, clientFactory);
         } else if (place instanceof CSVDataPlace) {
             return new CSVDataActivity((CSVDataPlace) place, clientFactory);
+        } else if (place instanceof BookSelectPlace) {
+            return new BookSelectActivity((BookSelectPlace) place, clientFactory);
         }
-//        else if (place instanceof BookSelectPlace) {
-//            return new BookSelectActivity((BookSelectPlace) place, clientFactory);
-//        } else if (place instanceof BookDescriptionPlace) {
+//        else if (place instanceof BookDescriptionPlace) {
 //            return new BookDescriptionActivity((BookDescriptionPlace) place, clientFactory);
-//        } else if (place instanceof BookViewerPlace) {
+//        }
+//        else if (place instanceof BookViewerPlace) {
 //            return new BookViewerActivity((BookViewerPlace) place, clientFactory);
 //        }
 
