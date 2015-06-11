@@ -3,6 +3,7 @@ package rosa.website.core.client;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
+import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.core.client.view.BookDescriptionView;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.view.FSIViewerView;
@@ -10,6 +11,7 @@ import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
 import rosa.website.core.client.view.HeaderView;
 import rosa.website.core.client.view.JSViewerView;
+import rosa.website.core.client.view.impl.AdvancedSearchViewImpl;
 import rosa.website.core.client.view.impl.BookDescriptionViewImpl;
 import rosa.website.core.client.view.impl.BookSelectViewImpl;
 import rosa.website.core.client.view.impl.FSIViewerViewImpl;
@@ -37,6 +39,7 @@ public class ClientFactory {
     private static BookDescriptionView bookDescriptionView = new BookDescriptionViewImpl();
     private static FSIViewerView FSIViewerView = new FSIViewerViewImpl();
     private static JSViewerView jsViewerView = new JSViewerViewImpl();
+    private static AdvancedSearchView advancedSearchView = new AdvancedSearchViewImpl();
 
     public AppContext context() {
         return context;
@@ -80,5 +83,9 @@ public class ClientFactory {
 
     public HeaderView headerView() {
         return headerView;
+    }
+
+    public AdvancedSearchView advancedSearchView() {
+        return advancedSearchView;
     }
 }
