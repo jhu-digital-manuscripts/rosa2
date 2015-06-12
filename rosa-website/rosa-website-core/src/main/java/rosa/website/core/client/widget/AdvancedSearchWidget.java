@@ -69,6 +69,8 @@ public class AdvancedSearchWidget extends Composite {
         root.add(bookRestrictionWidget);
         root.add(searchButton);
 
+        bind();
+
         initWidget(root);
     }
 
@@ -81,15 +83,14 @@ public class AdvancedSearchWidget extends Composite {
         });
     }
 
+    /**
+     * Clear all data from this widget.
+     */
     public void clear() {
         queryOperations = null;
         queryFields = null;
         queriesTable.clear();
     }
-
-    private native void console(String message) /*-{
-        console.log(message);
-    }-*/;
 
     public void setAvailableOperations(String[] ops) {
         this.queryOperations = ops;
@@ -130,6 +131,8 @@ public class AdvancedSearchWidget extends Composite {
         row.addClickRemoveHandler(removeButtonClickHandler);
         row.addKeyPressHandler(searchBoxKeyPressHandler);
         row.setRemoveButtonText(removeButtonText);
+
+        row.setFocus(true);
     }
 
     /**
@@ -171,7 +174,7 @@ public class AdvancedSearchWidget extends Composite {
      *
      * @param books book names
      */
-    public void addBooksToResetrictionList(BookInfo ... books) {
+    public void addBooksToRestrictionList(BookInfo... books) {
         bookRestrictionWidget.addBooks(books);
     }
 

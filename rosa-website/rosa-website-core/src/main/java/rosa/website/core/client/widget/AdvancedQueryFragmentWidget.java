@@ -64,14 +64,12 @@ public class AdvancedQueryFragmentWidget extends Composite {
      * @param operations
      */
     public void setOperations(String[] operations) {
-        if (operations == null || operation == null) {
-            return;
-        } else if (operation.getItemCount() > 0) {
-            operation.clear();
-        }
+        operation.clear();
 
-        for (String op : operations) {
-            operation.addItem(op);
+        if (operations != null) {
+            for (String op : operations) {
+                operation.addItem(op);
+            }
         }
     }
 
@@ -95,14 +93,12 @@ public class AdvancedQueryFragmentWidget extends Composite {
      * @param searchFields
      */
     public void setSearchFields(String[] searchFields) {
-        if (searchFields == null || field == null) {
-            return;
-        } else if (field.getItemCount() > 0) {
-            field.clear();
-        }
+        field.clear();
 
-        for (String f : searchFields) {
-            field.addItem(f);
+        if (searchFields != null) {
+            for (String f : searchFields) {
+                field.addItem(f);
+            }
         }
     }
 
@@ -172,5 +168,12 @@ public class AdvancedQueryFragmentWidget extends Composite {
      */
     public HandlerRegistration addClickRemoveHandler(ClickHandler handler) {
         return remove.addClickHandler(handler);
+    }
+
+    /**
+     * @param hasFocus bring focus to this widget?
+     */
+    public void setFocus(boolean hasFocus) {
+        term.setFocus(hasFocus);
     }
 }

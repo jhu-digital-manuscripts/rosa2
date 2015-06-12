@@ -48,6 +48,18 @@ public class BookPickerWidget extends Composite {
         display.setVisibleItemCount(5);
         display.setVisible(false);
 
+        clearButton.setVisible(false);
+
+        root.add(bookPicker);
+        root.add(display);
+        root.add(clearButton);
+
+        bind();
+
+        initWidget(root);
+    }
+
+    private void bind() {
         bookPicker.addChangeHandler(new ChangeHandler() {
             @Override
             public void onChange(ChangeEvent event) {
@@ -78,22 +90,19 @@ public class BookPickerWidget extends Composite {
             }
         });
 
+
         clearButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                for (int i = 1; i < display.getItemCount(); i++) {
-                    display.setItemSelected(i, true);
-//                    bookPicker.addItem(display.getItemText(i), display.getValue(i));
-//                    display.removeItem(i);
+                while (display.getItemCount() > 1) {
+                    bookPicker.addItem(display.getItemText(1), display.getValue(1));
+                    display.removeItem(1);
                 }
+
+                display.setVisible(false);
+                clearButton.setVisible(false);
             }
         });
-
-        root.add(bookPicker);
-        root.add(display);
-        root.add(clearButton);
-
-        initWidget(root);
     }
 
     /**

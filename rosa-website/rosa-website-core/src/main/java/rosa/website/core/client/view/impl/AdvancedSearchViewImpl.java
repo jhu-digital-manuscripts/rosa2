@@ -10,6 +10,7 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
 
     private AdvancedSearchWidget searchWidget;
 
+    /**  */
     public AdvancedSearchViewImpl() {
         FlowPanel root = new FlowPanel();
 
@@ -32,35 +33,40 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
 
     @Override
     public void addBooksToRestrictionList(BookInfo ... books) {
-        searchWidget.addBooksToResetrictionList(books);
+        searchWidget.addBooksToRestrictionList(books);
     }
 
+    @Override
     public void setClearBooksButtonText(String text) {
         searchWidget.setClearBooksButtonText(text);
     }
 
     @Override
-    public void setFakeSearchModel() {
-        searchWidget.setAddFieldButtonText("Add Field");
-        searchWidget.setSearchButtonText("Search");
-        searchWidget.setRemoveButtonText("Remove");
+    public void setRemoveButtonText(String text) {
+        searchWidget.setRemoveButtonText(text);
+    }
 
-        BookInfo[] books = new BookInfo[10];
-        for (int i = 0; i < 10; i++) {
-            books[i] = new BookInfo("Book " + i, "Book" + i);
-        }
-        searchWidget.addBooksToResetrictionList(books);
+    public void setAvailableSearchFields(String[] fields) {
+        searchWidget.setAvailableFields(fields);
+    }
 
-        String[] availableOps = {"AND", "OR"};
-        String[] availableFields = {"Field 1", "Field 2", "Field 3", "Field 4"};
-        searchWidget.setAvailableFields(availableFields);
-        searchWidget.setAvailableOperations(availableOps);
+    public void setAvailableSearchOperations(String[] operations) {
+        searchWidget.setAvailableOperations(operations);
+    }
 
-        searchWidget.addQueryField();
+    public void addQueryField() {
         searchWidget.addQueryField();
     }
 
-    private native void console(String message) /*-{
-        console.log(message);
-    }-*/;
+    @Override
+    public void addQueryField(String initialTerm, int selectedOperation, int selectedField) {
+        searchWidget.addQueryField(initialTerm, selectedOperation, selectedField);
+    }
+
+    @Override
+    public void clear() {
+        searchWidget.clear();
+    }
+
+    // TODO add search results stuff
 }
