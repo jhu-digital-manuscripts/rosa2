@@ -1,7 +1,10 @@
 package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.AdvancedSearchPlace;
@@ -64,5 +67,17 @@ public class SearchActivity implements Activity {
         view.addQueryField();
         view.addQueryField();
         view.addQueryField();
+
+        view.addSearchButtonClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                String query = view.getSearchQuery();       // This query string will have to be URL encoded first
+                if (query == null || query.isEmpty()) {
+                    Window.alert("No search will happen because no search query was found.");
+                } else {
+                    Window.alert("A search will happen now. Token: #" + view.getSearchQuery());
+                }
+            }
+        });
     }
 }

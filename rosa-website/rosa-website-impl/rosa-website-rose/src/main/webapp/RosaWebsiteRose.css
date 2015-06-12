@@ -58,6 +58,19 @@
   margin-left: 5px;
 }
 
+.Search .BookList {
+  padding: 25px 5px;
+}
+
+.Search .BookList select {
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.Search .BookList button {
+  margin: 0px;
+}
+
 .GoTextBox {
   width: 15em;
 }

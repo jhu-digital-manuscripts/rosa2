@@ -1,9 +1,12 @@
 package rosa.website.core.client.view;
 
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
 import rosa.website.model.select.BookInfo;
 
 public interface AdvancedSearchView extends IsWidget {
+
     /**
      * Set the display text for the "add field" button.
      *
@@ -74,4 +77,14 @@ public interface AdvancedSearchView extends IsWidget {
      * Clear all data from this view.
      */
     void clear();
+
+    /**
+     * Define the behavior when the search button is clicked.
+     *
+     * @param handler click handler
+     * @return .
+     */
+    HandlerRegistration addSearchButtonClickHandler(ClickHandler handler);
+
+    String getSearchQuery();
 }

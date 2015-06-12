@@ -20,6 +20,7 @@ import rosa.website.model.select.BookInfo;
  * restricted to a set list of books.
  */
 public class AdvancedSearchWidget extends Composite {
+    private static final int INITIAL_OFFSET = 0;
 
     private final FlexTable queriesTable;
 
@@ -92,10 +93,12 @@ public class AdvancedSearchWidget extends Composite {
         queriesTable.clear();
     }
 
+    // TODO change String to Enum
     public void setAvailableOperations(String[] ops) {
         this.queryOperations = ops;
     }
 
+    // TODO change String to Enum
     public void setAvailableFields(String[] fields) {
         this.queryFields = fields;
     }
@@ -186,6 +189,59 @@ public class AdvancedSearchWidget extends Composite {
      */
     public HandlerRegistration addSearchButtonClickHandler(ClickHandler handler) {
         return searchButton.addClickHandler(handler);
+    }
+
+    public String getSearchToken() {
+        return buildQuery();
+    }
+
+    private String buildQuery() {
+        StringBuilder query = new StringBuilder();
+
+        for (int i = 0; i < queriesTable.getRowCount(); i++) {
+            if (!(queriesTable.getWidget(i, 0) instanceof AdvancedQueryFragmentWidget)) {
+                continue;
+            }
+
+            AdvancedQueryFragmentWidget row = (AdvancedQueryFragmentWidget) queriesTable.getWidget(i, 0);
+
+            if (isNotBlank(row.getSearchTerm()) && isNotBlank(row.getField())) {
+                query.append(row.getField());
+                query.append(';');
+                query.append(row.getSearchTerm());
+                query.append(';');
+            }
+        }
+
+        // If no search terms were entered, dump out early
+        if (isBlank(query.toString())) {
+            return null;
+        }
+
+        String[] books = bookRestrictionWidget.getRestrictedBookIds();
+        if (books != null && books.length > 0) {
+            query.append("BOOK;");
+            for (String book : books) {
+                if (isBlank(book)) {
+                    continue;
+                }
+
+                query.append(book);
+                query.append(';');
+            }
+        }
+
+        query.append(INITIAL_OFFSET);
+
+        return query.toString();
+    }
+
+    private boolean isBlank(String val) {
+        return val == null || val.isEmpty();
+    }
+
+    private boolean isNotBlank(String val) {
+        return !isBlank(val);
     }
 
     // TODO build search query, use search model/API

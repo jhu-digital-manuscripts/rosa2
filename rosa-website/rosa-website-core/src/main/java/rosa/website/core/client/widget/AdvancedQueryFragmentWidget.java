@@ -60,6 +60,7 @@ public class AdvancedQueryFragmentWidget extends Composite {
 
     /**
      * Set the list of boolean operations that operate on this query.
+     * TODO change to Enum
      *
      * @param operations
      */
@@ -68,7 +69,7 @@ public class AdvancedQueryFragmentWidget extends Composite {
 
         if (operations != null) {
             for (String op : operations) {
-                operation.addItem(op);
+                operation.addItem(op, op);
             }
         }
     }
@@ -77,7 +78,7 @@ public class AdvancedQueryFragmentWidget extends Composite {
         operation.setSelectedIndex(index);
     }
 
-    // TODO change to Enum from search API?
+    // TODO change to Enum from search API
     public void setSelectedOperation(String selected) {
         for (int i = 0; i < operation.getItemCount(); i++) {
             if (operation.getItemText(i).equals(selected)) {
@@ -89,6 +90,7 @@ public class AdvancedQueryFragmentWidget extends Composite {
 
     /**
      * Set the list of field restrictions that can be placed on this query fragment.
+     * TODO change to Enum
      *
      * @param searchFields
      */
@@ -97,7 +99,7 @@ public class AdvancedQueryFragmentWidget extends Composite {
 
         if (searchFields != null) {
             for (String f : searchFields) {
-                field.addItem(f);
+                field.addItem(f, f);
             }
         }
     }
@@ -106,7 +108,7 @@ public class AdvancedQueryFragmentWidget extends Composite {
         field.setSelectedIndex(index);
     }
 
-    // TODO change to Enum from search API?
+    // TODO change to Enum from search API
     public void setSelectedSearchField(String selected) {
         for (int i = 0; i < field.getItemCount(); i++) {
             if (field.getItemText(i).equals(selected)) {
@@ -137,14 +139,14 @@ public class AdvancedQueryFragmentWidget extends Composite {
      * @return the boolean operation associated with this query
      */
     public String getOperation() {
-        return isFirst ? "AND" : operation.getItemText(operation.getSelectedIndex());
+        return isFirst ? "AND" : operation.getValue(operation.getSelectedIndex());
     }
 
     /**
      * @return the field to restrict the search
      */
     public String getField() {
-        return field.getItemText(field.getSelectedIndex());
+        return field.getValue(field.getSelectedIndex());
     }
 
     /**

@@ -1,5 +1,7 @@
 package rosa.website.core.client.view.impl;
 
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import rosa.website.core.client.view.AdvancedSearchView;
@@ -17,6 +19,8 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
         this.searchWidget = new AdvancedSearchWidget();
 
         root.add(searchWidget);
+
+        root.setStylePrimaryName("Search");
 
         initWidget(root);
     }
@@ -66,6 +70,16 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
     @Override
     public void clear() {
         searchWidget.clear();
+    }
+
+    @Override
+    public HandlerRegistration addSearchButtonClickHandler(ClickHandler handler) {
+        return searchWidget.addSearchButtonClickHandler(handler);
+    }
+
+    @Override
+    public String getSearchQuery() {
+        return searchWidget.getSearchToken();
     }
 
     // TODO add search results stuff

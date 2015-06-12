@@ -24,7 +24,7 @@ import java.util.List;
  * picked more than once.
  *
  * A book can be removed from the user selected list by clicking on
- * the book, which will be returned to the picker list.
+ * the book, which will be returned to the picker list. TODO list should be sorted always
  */
 public class BookPickerWidget extends Composite {
 
@@ -53,6 +53,8 @@ public class BookPickerWidget extends Composite {
         root.add(bookPicker);
         root.add(display);
         root.add(clearButton);
+
+        root.setStylePrimaryName("BookList");
 
         bind();
 
