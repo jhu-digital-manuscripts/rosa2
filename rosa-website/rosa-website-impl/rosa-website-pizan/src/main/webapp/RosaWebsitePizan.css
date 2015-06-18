@@ -40,6 +40,10 @@ a:active {
     
 }
 
+.Header .Search {
+  float: right;
+}
+
 .HeaderMenu td {
   font-size: larger;
   font-weight: bold;
@@ -94,8 +98,7 @@ a:active {
 }
 
 .Search {
-  border-top: 1px solid #000000;
-  margin-left: 1em;
+  margin: 1em;
 }
 
 .Search input {

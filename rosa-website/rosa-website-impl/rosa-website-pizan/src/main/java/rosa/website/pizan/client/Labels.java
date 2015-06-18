@@ -31,4 +31,8 @@ public interface Labels extends Constants {
     String termsAndConditions();
     String contactUs();
 
+    String search();
+    String advancedSearch();
+
+    String headerAlt();
 }
