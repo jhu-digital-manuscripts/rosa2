@@ -24,6 +24,10 @@
   float: left;
 }
 
+.Header .Search {
+  float: right;
+}
+
 .Sidebar {
   color: #FFFFFF;
   padding: 5px;
@@ -46,8 +50,7 @@
 
 .Search {
   float: left;
-  margin-left: 1em;
-  margin-top: 1em;
+  margin: 1em;
 }
 
 .Search input {

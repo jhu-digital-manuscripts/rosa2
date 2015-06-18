@@ -34,6 +34,8 @@ public class BasicSearchWidget extends Composite {
         root.add(searchButton);
         root.add(advancedSearchLink);
 
+        root.setStylePrimaryName("Search");
+
         initWidget(root);
     }
 
@@ -66,7 +68,7 @@ public class BasicSearchWidget extends Composite {
     }
 
     /**
-     * Set a link hyperlink to another place in this application. Often,
+     * Set a hyperlink to another place in this application. Often,
      * this link is used to point to an "advanced search"
      *
      * @param displayText text to display
@@ -78,4 +80,20 @@ public class BasicSearchWidget extends Composite {
         advancedSearchLink.setVisible(true);
     }
 
+    /**
+     * Set a hyperlink to another place in this application and give it a CSS
+     * class.
+     *
+     * @param displayText text to display
+     * @param historyToken target history token
+     * @param primaryStyleName primary style name
+     */
+    public void setHyperlink(String displayText, String historyToken, String primaryStyleName) {
+        setHyperlink(displayText, historyToken);
+        advancedSearchLink.setStylePrimaryName(primaryStyleName);
+    }
+
+    public String getText() {
+        return searchBox.getText();
+    }
 }
