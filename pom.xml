@@ -13,6 +13,7 @@
         <module>rosa-archive</module>
         <module>rosa-iiif</module>
         <module>rosa-website</module>
+	<module>rosa-search</module>
     </modules>
 
     <properties>
@@ -174,6 +175,24 @@
                 <groupId>rosa</groupId>
                 <artifactId>rosa-iiif-presentation-core</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+
+	    <dependency>
+              <groupId>rosa.search</groupId>
+              <artifactId>rosa-search</artifactId>
+              <version>${project.version}</version>
+            </dependency>
+
+	    <dependency>
+              <groupId>rosa.search</groupId>
+              <artifactId>rosa-search-core</artifactId>
+              <version>${project.version}</version>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>rosa.search</groupId>
+              <artifactId>rosa-search-model</artifactId>
+              <version>${project.version}</version>
             </dependency>
 
         </dependencies>
