@@ -272,6 +272,47 @@ public class Book implements HasId, Serializable {
         this.multilangMetadata = multilangMetadata;
     }
 
+    
+    /**
+     * Guess name of image from fragment.
+     * 
+     * @param frag
+     * @return image id or null
+     */
+    public String guessImageName(String frag) {
+            frag = frag.trim();
+
+            if (frag.matches("\\d+")) {
+                    frag += "r";
+            }
+
+            if (frag.matches("\\d[rRvV]")) {
+                    frag = "00" + frag;
+            } else if (frag.matches("\\d\\d[rRvV]")) {
+                    frag = "0" + frag;
+            }
+
+            if (!frag.endsWith(".tif")) {
+                    frag += ".tif";
+            }
+
+            if (!frag.startsWith(id)) {
+                    frag = id + "." + frag;
+            }
+
+            if (images == null) {
+                return null;
+            }
+            
+            for (BookImage image: images) {
+                if (image.getId().equalsIgnoreCase(frag)) {
+                    return image.getId();
+                }
+            }
+
+            return null;
+    }
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

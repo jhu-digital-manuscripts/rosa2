@@ -63,6 +63,24 @@ public class IllustrationTagging implements HasId, Iterable<Illustration>, Seria
         return -1;
     }
 
+    
+    /**
+     * @return indices of Illustrations on an image in a book
+     */
+    public List<Integer> findImageIndices(Book book, String image_id) {
+        List<Integer> result = new ArrayList<Integer>();
+
+        for (int i = 0; i < data.size(); i++) {
+            String s = book.guessImageName(data.get(i).getPage());
+
+            if (s != null && s.equals(image_id)) {
+                result.add(i);
+            }
+        }
+
+        return result;
+    }
+    
     @Override
     public Iterator<Illustration> iterator() {
         return new Iterator<Illustration>() {
