@@ -36,7 +36,7 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
     private ArchiveIIIFService service;
 
     @Before
-    public void setupArchiveStore() throws URISyntaxException, IOException {
+    public void setupArchiveStore() throws Exception {
         super.setupArchiveStore();
         
         JsonldSerializer serializer = new JsonldSerializer();
