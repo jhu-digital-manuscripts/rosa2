@@ -4,8 +4,6 @@ import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookImageRole;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class ArchiveNameParser implements ArchiveConstants {
     private static final String DEFAULT_PAGE_REGEX = "([a-zA-Z]*)(\\d+)(r|v|R|V)";

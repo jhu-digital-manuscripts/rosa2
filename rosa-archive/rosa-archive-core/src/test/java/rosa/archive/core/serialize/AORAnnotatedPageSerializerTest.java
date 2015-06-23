@@ -23,7 +23,6 @@ import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 
-import javax.swing.plaf.metal.MetalIconFactory;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;

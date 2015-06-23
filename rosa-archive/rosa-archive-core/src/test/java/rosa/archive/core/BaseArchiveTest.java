@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -53,7 +52,7 @@ public abstract class BaseArchiveTest {
     protected StoreImpl store;
 
     @Before
-    public void setupArchiveStore() throws URISyntaxException, IOException {
+    public void setupArchiveStore() throws Exception {
         Path tmp = tempFolder.newFolder().toPath();
         
         ResourceUtil.copyResource(getClass(), "/archive", tmp);
