@@ -3,3 +3,17 @@ Java webapp wrapper for a demo website running mirador.
 Does not include mirador. Must build separately and copy build/mirador/* to
 src/main/webapp.
 
+##INSTALL LOCALLY
+ - `git clone https://github.com/IIIF/m2.git`
+       <br>&ensp;&ensp;&ensp;&ensp;Clone the iiif/m2 Github repository.
+ - `npm install`
+       <br>&ensp;&ensp;&ensp;&ensp;Install necessary modules.
+ - `bower install`
+       <br>&ensp;&ensp;&ensp;&ensp;Install other dependencies.
+ - `grunt`
+       <br>&ensp;&ensp;&ensp;&ensp;Run the JS build tool. Once this is done, the fully built application will reside in the build/ directory.
+ - Copy `index.html` and `build/` directory to the server.
+
+If the npm, bower, or grunt commands fail, try deleting the `node_modeuls/` directory and starting from step 2 again.
+
+If Mirador2 has already been installed, to update, grab the latest code (run `git pull` to get the latest development code), then `grunt`
