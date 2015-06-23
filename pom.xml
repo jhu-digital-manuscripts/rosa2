@@ -12,8 +12,8 @@
     <modules>
         <module>rosa-archive</module>
         <module>rosa-iiif</module>
+        <module>rosa-search</module>
         <module>rosa-website</module>
-	    <module>rosa-search</module>
     </modules>
 
     <properties>
