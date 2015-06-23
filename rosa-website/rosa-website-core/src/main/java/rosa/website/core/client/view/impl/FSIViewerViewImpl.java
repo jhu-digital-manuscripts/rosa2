@@ -1,10 +1,7 @@
 package rosa.website.core.client.view.impl;
 
 import com.google.gwt.event.dom.client.ChangeHandler;
-import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
-import com.google.gwt.event.dom.client.KeyPressEvent;
-import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Composite;
@@ -21,7 +18,6 @@ import rosa.website.core.client.widget.FsiViewer.FSIShowcaseCallback;
 import rosa.website.core.client.widget.FsiViewerType;
 
 public class FSIViewerViewImpl extends Composite implements FSIViewerView, RequiresResize {
-    private Presenter presenter;
 
     private Timer resizeTimer = new Timer() {
         @Override

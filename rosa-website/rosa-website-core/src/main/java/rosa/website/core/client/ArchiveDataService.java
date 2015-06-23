@@ -37,7 +37,15 @@ import java.io.IOException;
  */
 @RemoteServiceRelativePath("data")
 public interface ArchiveDataService extends RemoteService {
+    /**
+     * @param collection book collection name
+     * @param lang desired language
+     * @param type type of CSV to return
+     * @return CSV data
+     * @throws IOException .
+     */
     CSVData loadCSVData(String collection, String lang, CsvType type) throws IOException;
+
     /**
      * Load data about a collection in the archive in CSV format. Data is read from
      * each book's description/metadata file to populate each column. The columns

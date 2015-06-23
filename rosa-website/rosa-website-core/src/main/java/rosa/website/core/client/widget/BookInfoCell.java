@@ -2,7 +2,6 @@ package rosa.website.core.client.widget;
 
 import com.google.gwt.cell.client.AbstractCell;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.http.client.URL;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import rosa.website.model.select.BookInfo;
 
@@ -14,7 +13,7 @@ import rosa.website.model.select.BookInfo;
 public class BookInfoCell extends AbstractCell<BookInfo> {
     @Override
     public void render(Context context, BookInfo value, SafeHtmlBuilder sb) {
-        String url = URL.decode(GWT.getHostPageBaseURL() + "#book;" + value.id);
+        String url = GWT.getHostPageBaseURL() + "#book;" + value.id;
 
         sb.appendHtmlConstant("<a href=\"" + url + "\">");
         sb.appendEscaped(value.title);

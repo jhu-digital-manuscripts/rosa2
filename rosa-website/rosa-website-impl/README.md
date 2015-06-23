@@ -49,6 +49,13 @@ Various resources are needed for the code to work.
 * Webapp folder for web.xml, crossdomain.xml, module CSS and module HTML
 * HTML pages should be placed somewhere, either in resources or webapp folder
 
+## web.xml
+Several items MUST be included in the `web.xml`
+
+* The welcome-file should be set to the GWT module HTML page
+* A context-param must be included: archive-path, with a value equal to the desired archive path
+* FsiServlet, ArchiveDataServlet, and remote_logging servlet must all be made visible
+
 ##Adding new page
 A new page in this site needs several classes created before it can be added to the web application.
 

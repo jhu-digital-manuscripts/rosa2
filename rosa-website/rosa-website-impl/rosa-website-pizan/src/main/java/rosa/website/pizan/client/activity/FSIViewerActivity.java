@@ -33,7 +33,6 @@ import java.util.logging.Logger;
 
 public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     private static final Logger logger = Logger.getLogger(FSIViewerActivity.class.toString());
-    private static final Labels labels = Labels.INSTANCE;
     private static final String FSI_URL_PREFIX = GWT.getModuleBaseURL() + "fsi/";
 
     private String language;

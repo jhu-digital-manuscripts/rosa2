@@ -13,6 +13,7 @@ public class BookDescriptionViewImpl extends Composite implements BookDescriptio
     private BookMetadataWidget metadataWidget;
     private BookDescriptionWidget descriptionWidget;
 
+    /**  */
     public BookDescriptionViewImpl() {
         FlowPanel root = new FlowPanel();
         metadataWidget = new BookMetadataWidget();

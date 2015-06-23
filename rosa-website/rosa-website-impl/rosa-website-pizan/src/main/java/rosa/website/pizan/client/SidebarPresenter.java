@@ -86,7 +86,12 @@ public class SidebarPresenter implements SidebarView.Presenter {
         view.addSection(labels.project(), links);
     }
 
-
+    /**
+     * Resize this widget.
+     *
+     * @param width .
+     * @param height .
+     */
     public void resize(String width, String height) {
         view.resize(width, height);
     }

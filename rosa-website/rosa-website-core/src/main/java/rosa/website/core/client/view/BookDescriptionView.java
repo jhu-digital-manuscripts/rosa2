@@ -19,6 +19,9 @@ public interface BookDescriptionView extends IsWidget{
         String getPageUrlFragment(int page);
     }
 
+    /**
+     * Clear this view.
+     */
     void clear();
     void setMetadata(BookMetadata metadata);
     void setDescription(BookDescription description);

@@ -111,7 +111,7 @@ public class SidebarViewImpl extends Composite implements SidebarView {
 
         for (Widget w : bookPanel) {
             if (w instanceof Hyperlink) {
-                sidebar_links.remove((Hyperlink) w);
+                sidebar_links.remove(w);
             }
         }
 

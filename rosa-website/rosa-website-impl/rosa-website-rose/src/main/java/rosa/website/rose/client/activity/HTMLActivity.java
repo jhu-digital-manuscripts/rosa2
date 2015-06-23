@@ -21,6 +21,10 @@ public class HTMLActivity implements Activity {
     private String name;
     private HTMLView view;
 
+    /**
+     * @param place initial state
+     * @param clientFactory .
+     */
     public HTMLActivity(HTMLPlace place, ClientFactory clientFactory) {
         this.name = place.getName();
         this.view = clientFactory.htmlView();

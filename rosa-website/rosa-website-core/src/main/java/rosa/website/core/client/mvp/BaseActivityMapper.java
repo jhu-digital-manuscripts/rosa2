@@ -12,6 +12,9 @@ public abstract class BaseActivityMapper implements ActivityMapper {
 
     protected ClientFactory clientFactory;
 
+    /**
+     * @param clientFactory .
+     */
     public BaseActivityMapper(ClientFactory clientFactory) {
         this.clientFactory = clientFactory;
     }

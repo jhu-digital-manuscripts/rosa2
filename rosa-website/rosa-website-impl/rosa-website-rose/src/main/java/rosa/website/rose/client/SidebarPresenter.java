@@ -17,6 +17,10 @@ public class SidebarPresenter implements SidebarView.Presenter {
     private ClientFactory clientFactory;
     private final Labels labels = Labels.INSTANCE;
 
+    /**
+     * @param view SidebarView
+     * @param clientFactory .
+     */
     public SidebarPresenter(SidebarView view, ClientFactory clientFactory) {
         this.view = view;
         this.clientFactory = clientFactory;
@@ -28,6 +32,11 @@ public class SidebarPresenter implements SidebarView.Presenter {
         addLanguageLinks();
     }
 
+    /**
+     * Add links to read a book with the specified ID.
+     *
+     * @param bookId book ID
+     */
     public void addBookLinks(String bookId) {
         Map<String, String> links = new HashMap<>();
 
@@ -38,6 +47,9 @@ public class SidebarPresenter implements SidebarView.Presenter {
         view.setBookLinks(labels.book(), links);
     }
 
+    /**
+     * Clear book reading links when book is no longer selected.
+     */
     public void clearBookLinks() {
         view.clearBookLinks();
     }
@@ -88,6 +100,12 @@ public class SidebarPresenter implements SidebarView.Presenter {
         view.addLanguageLink("Français", "fr");
     }
 
+    /**
+     * Resize this widget
+     *
+     * @param width .
+     * @param height .
+     */
     public void resize(String width, String height) {
         view.resize(width, height);
     }

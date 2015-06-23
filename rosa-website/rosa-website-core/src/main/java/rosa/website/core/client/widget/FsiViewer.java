@@ -66,6 +66,10 @@ public class FsiViewer extends Composite {
     }
 
     // Flash object must have fsipages id
+
+    /**
+     * @param cb FSIPagesCallback
+     */
     public native void setupFSIPagesCallback(FSIPagesCallback cb) /*-{
          $wnd.fsipages_DoFSCommand = function (fsievent, args) {
              switch (fsievent) {
@@ -81,6 +85,10 @@ public class FsiViewer extends Composite {
      }-*/;
 
     // Flash object must have fsishowcase id
+
+    /**
+     * @param cb FSIShowcaseCallback
+     */
     public native void setupFSIShowcaseCallback(FSIShowcaseCallback cb) /*-{
         $wnd.fsishowcase_DoFSCommand = function (fsievent, args) {
             switch (fsievent) {
@@ -127,6 +135,11 @@ public class FsiViewer extends Composite {
         }
     }-*/;
 
+    /**
+     * Tell the FSI pages widget to go to the specified page.
+     *
+     * @param image index
+     */
     public void fsiViewerGoToImage(int image) {
         if (type == FsiViewerType.PAGES) {
             setVariable("newImageIndex", String.valueOf(image), FsiViewerType.PAGES.getViewerId());
@@ -134,6 +147,11 @@ public class FsiViewer extends Composite {
         }
     }
 
+    /**
+     * Tell the FSI Showcase that a page has been selected.
+     *
+     * @param image image index
+     */
     public void fsiSelectImage(int image) {
         if (type == FsiViewerType.SHOWCASE) {
             setVariable("newImageIndex", String.valueOf(image), FsiViewerType.SHOWCASE.getViewerId());

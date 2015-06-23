@@ -7,6 +7,9 @@ import com.google.gwt.place.shared.Prefix;
 public class BookDescriptionPlace extends Place {
     private final String book;
 
+    /**
+     * @param book book ID
+     */
     public BookDescriptionPlace(String book) {
         this.book = book;
     }

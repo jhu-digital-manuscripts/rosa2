@@ -30,6 +30,9 @@ public class BookDescriptionWidget extends Composite {
 
     private final VerticalPanel root;
 
+    /**
+     * Create a new BookDescriptionWidget
+     */
     public BookDescriptionWidget() {
         root = new VerticalPanel();
         initWidget(root);
@@ -48,6 +51,9 @@ public class BookDescriptionWidget extends Composite {
         this.presenter = presenter;
     }
 
+    /**
+     * Clear contents.
+     */
     public void clear() {
         root.clear();
     }

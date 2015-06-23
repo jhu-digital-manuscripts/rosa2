@@ -9,6 +9,9 @@ public class BookSelectPlace extends Place {
 
     private final SelectCategory category;
 
+    /**
+     * @param category book selection category
+     */
     public BookSelectPlace(SelectCategory category) {
         this.category = category;
     }

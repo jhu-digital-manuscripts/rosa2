@@ -15,8 +15,6 @@ import java.util.logging.Logger;
 
 public class CsvWidget extends Composite {
     private static final Logger logger = Logger.getLogger(CsvWidget.class.toString());
-//    private static final Pattern NUM_PATTERN = Pattern.compile("^-?\\d+(\\.\\d+)?$");  // Does not work with GWT
-//    private static final RegExp NUM_REGEX = RegExp.compile("^-?\\d+(\\.\\d+)?$");   // Must inherit RegExp module in .gwt.xml, worth it?
     private static final String NUM_REGEX = "^-?\\d+(\\.\\d+)?$";
 
     private final CellTable<CSVEntry> table;

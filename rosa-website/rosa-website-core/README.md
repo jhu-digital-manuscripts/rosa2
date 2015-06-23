@@ -1,5 +1,5 @@
 #core module
-_TODO: move VIEWER code to separate module, goth FSI viewer and built-in JS viewer._
+_TODO: move VIEWER code to separate module, both FSI viewer and built-in JS viewer._
 
   * history handling? (provide activities/places)
     * See rosa.gwt.common.client.Action (for Roman de la Rose website. There is an equivalent for Pizan)
@@ -56,39 +56,8 @@ They can be declared in the core and used in the web site modules.
     * Search/advanced search. Display results if query is not blank
   * Activities need some site-specific information, so can be defined in the distinct website modules.
 
-####Rose Actions
-  * HOME("home") - static page
-  * SEARCH("search")
-  * BROWSE_BOOK("browse")
-  * SELECT_BOOK("select")
-  * READ_BOOK("read")
-  * VIEW_BOOK("book")
-  * VIEW_NARRATIVE_SECTIONS("sections") - CSV view
-  * VIEW_PARTNERS("partners") - static page
-  * VIEW_ROSE_HISTORY("rose") - static page
-  * VIEW_PROJECT_HISTORY("project") - static page
-  * VIEW_CONTACT("contact") - static page
-  * VIEW_CORPUS("corpus") - CSV view
-  * VIEW_TERMS("terms") - static page
-  * VIEW_DONATION("donation") - static page
-  * VIEW_COLLECTION_DATA("data") - CSV view
-  * VIEW_CHARACTER_NAMES("chars") - CSV view
-  * VIEW_ILLUSTRATION_TITLES("illustrations") - CSV view
-  * VIEW_BOOK_BIB("bib") ??
 
-####Pizan Actions
-  * HOME("home") - static page
-  * SEARCH("search")
-  * BROWSE_BOOK("browse")
-  * SELECT_BOOK("select")
-  * READ_BOOK("read")
-  * VIEW_BOOK("book")
-  * VIEW_PARTNERS("partners") - static page
-  * VIEW_PIZAN("pizan") - static page
-  * VIEW_CONTACT("contact") - static page
-  * VIEW_WORKS("works") - CSV view
-  * VIEW_TERMS("terms") - static page
-  * VIEW_PROPER_NAMES("names") - static page
+
 
 
 

@@ -4,10 +4,10 @@ import com.google.gwt.user.client.ui.IsWidget;
 import rosa.website.model.csv.CSVData;
 
 public interface CSVDataView extends IsWidget {
-    public interface Presenter {
 
-    }
-
+    /**
+     * Clear data.
+     */
     void clear();
 
     void setData(CSVData data);

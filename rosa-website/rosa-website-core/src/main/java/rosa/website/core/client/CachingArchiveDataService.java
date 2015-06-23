@@ -17,6 +17,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
+/**
+ * An implementation of the ArchiveDataServiceAsync interface that caches all
+ * RPC calls requesting data.
+ */
 public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     private static final Logger logger = Logger.getLogger(CachingArchiveDataService.class.toString());
     public static final CachingArchiveDataService INSTANCE = new CachingArchiveDataService();

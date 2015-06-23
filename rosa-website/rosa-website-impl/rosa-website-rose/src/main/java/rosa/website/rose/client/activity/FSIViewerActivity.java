@@ -33,7 +33,6 @@ import java.util.logging.Logger;
 
 public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     private static final Logger logger = Logger.getLogger(FSIViewerActivity.class.toString());
-    private static final Labels labels = Labels.INSTANCE;
     private static final String FSI_URL_PREFIX = GWT.getModuleBaseURL() + "fsi/";
 
     private String language;
@@ -255,7 +254,6 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     }
 
     private FsiViewerType getViewerType(String type) {
-        // TODO need a map for relationship: (history token -> viewer) type instead of hard coding...
         switch (type) {
             case "browse":
                 return FsiViewerType.SHOWCASE;
@@ -291,28 +289,4 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
         return result;
     }
-
-//    /**
-//     * Ripped from old Rosa1 code
-//     *
-//     * @param bookindex .
-//     * @return .
-//     */
-//    private int translateBookIndexToShowcaseIndex(int bookindex) {
-//        int i = 0;
-//
-//        for (int j = 0; j < b.getImages().getImages().size(); j++) {
-//            BookImage image = b.getImages().getImages().get(j);
-//
-//            if (--bookindex < 0) {
-//                break;
-//            }
-//
-//            if (!image.isMissing()) {
-//                i++;
-//            }
-//        }
-//
-//        return i;
-//    }
 }

@@ -5,6 +5,9 @@ import com.google.gwt.place.shared.Place;
 public class CSVDataPlace extends Place {
     private final String name;
 
+    /**
+     * @param name name of CSV
+     */
     public CSVDataPlace(String name) {
         this.name = name;
     }

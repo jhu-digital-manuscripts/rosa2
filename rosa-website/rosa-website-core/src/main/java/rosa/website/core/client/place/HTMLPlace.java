@@ -3,9 +3,11 @@ package rosa.website.core.client.place;
 import com.google.gwt.place.shared.Place;
 
 public class HTMLPlace extends Place {
-
     private final String name;
 
+    /**
+     * @param name name of HTML to use
+     */
     public HTMLPlace(String name) {
         this.name = name;
     }

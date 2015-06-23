@@ -11,6 +11,10 @@ import rosa.website.core.client.widget.FsiViewerType;
 public interface FSIViewerView extends IsWidget {
 
     interface Presenter {
+        /**
+         * @param page page in consideration
+         * @return array of extra data available that can be displayed
+         */
         String[] getExtraDataLabels(String page);
     }
 

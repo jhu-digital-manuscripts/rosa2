@@ -13,6 +13,7 @@ public class CSVDataViewImpl extends Composite implements CSVDataView {
     private CsvWidget display;
     private SimplePanel description;
 
+    /**  */
     public CSVDataViewImpl() {
         FlowPanel root = new FlowPanel();
         display = new CsvWidget();

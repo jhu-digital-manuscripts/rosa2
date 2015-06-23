@@ -29,6 +29,11 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
     private final DefaultSelectionEventManager<BookInfo> selectionManager =
             DefaultSelectionEventManager.createDefaultManager();
 
+    /**
+     * @param data .
+     * @param category .
+     * @param selectionModel .
+     */
     public BookSelectionTreeViewModel(BookSelectList data, SelectCategory category,
                                       SelectionModel<BookInfo> selectionModel) {
         this.data = data;
