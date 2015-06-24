@@ -139,6 +139,24 @@
                 <version>20140107</version>
             </dependency>
 
+	    <dependency>
+	      <groupId>org.apache.lucene</groupId>
+	      <artifactId>lucene-core</artifactId>
+	      <version>5.2.1</version>
+	    </dependency>
+	    
+	    <dependency>
+	      <groupId>org.apache.lucene</groupId>
+	      <artifactId>lucene-highlighter</artifactId>
+	      <version>5.2.1</version>
+	    </dependency>
+		
+	    <dependency>
+	      <groupId>org.apache.lucene</groupId>
+	      <artifactId>lucene-analyzers-common</artifactId>
+	      <version>5.2.1</version>
+	    </dependency>
+
             <!-- Testing dependencies -->
 
             <dependency>

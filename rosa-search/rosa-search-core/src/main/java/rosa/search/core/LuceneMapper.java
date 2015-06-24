@@ -4,8 +4,10 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.regex.Pattern;
 
 import org.apache.lucene.analysis.Analyzer;
@@ -184,6 +186,9 @@ public class LuceneMapper {
             return query;
         }
     }
+
+    // TODO Consider using SimpleQueryParser so fuzzy searchers etc are
+    // supported?
 
     private Query create_lucene_query(SearchField sf, SearchFieldType type,
             String query) {
@@ -471,11 +476,10 @@ public class LuceneMapper {
         }
 
         Transcription trans = book.getTranscription();
-        
+
         if (trans != null) {
             // TODO
-            
-            
+
         }
     }
 
@@ -506,11 +510,38 @@ public class LuceneMapper {
 
     public String getSearchFieldNameFromLuceneField(String lucene_field) {
         int i = lucene_field.lastIndexOf('.');
-        
+
         if (i == -1) {
             return lucene_field;
         }
-        
+
         return lucene_field.substring(0, i);
+    }
+
+    /**
+     * @param query
+     * @return Return the names of lucene field used by this query
+     */
+    public Set<String> getLuceneFields(rosa.search.model.Query query) {
+        Set<String> result = new HashSet<>();
+        get_lucene_fields(result, query);
+        return result;
+    }
+
+    private void get_lucene_fields(Set<String> result,
+            rosa.search.model.Query query) {
+        if (query.isOperation()) {
+            for (rosa.search.model.Query kid: query.children()) {
+                get_lucene_fields(result, kid);
+            }
+        } else {
+            SearchField sf = search_field_map.get(query.getTerm().getField());
+
+            if (sf != null) {
+                for (SearchFieldType type: sf.getFieldTypes()) {
+                    result.add(getLuceneField(sf, type));
+                }
+            }
+        }
     }
 }

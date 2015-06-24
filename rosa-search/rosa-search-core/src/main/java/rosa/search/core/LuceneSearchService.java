@@ -3,7 +3,6 @@ package rosa.search.core;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.logging.Level;
@@ -179,13 +178,7 @@ public class LuceneSearchService implements SearchService {
 
             Highlighter hilighter = new Highlighter(new QueryScorer(q));
 
-            Set<Term> q_terms = new HashSet<>();
-            q.extractTerms(q_terms);
-
-            Set<String> q_fields = new HashSet<>();
-            for (Term term: q_terms) {
-                q_fields.add(term.field());
-            }
+            Set<String> q_fields = mapper.getLuceneFields(query);
 
             SearchMatch[] matches = new SearchMatch[hits.scoreDocs.length
                     - hits_offset];
