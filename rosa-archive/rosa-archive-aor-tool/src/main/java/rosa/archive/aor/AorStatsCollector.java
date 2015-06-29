@@ -7,7 +7,10 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -49,9 +52,11 @@ public class AorStatsCollector {
         int books;
         int people;
         int locations;
+        Map<String, Integer> marginalia_vocab;
 
         public Stats(String id) {
             this.id = id;
+            this.marginalia_vocab = new HashMap<>();
         }
 
         public void add(Stats s) {
@@ -68,11 +73,36 @@ public class AorStatsCollector {
             books += s.books;
             people += s.people;
             locations += s.locations;
+
+            update_vocab(marginalia_vocab, s.marginalia_vocab);
         }
 
         @Override
         public int compareTo(Stats s) {
             return id.compareTo(s.id);
+        }
+    }
+
+    private static void update_vocab(Map<String, Integer> vocab, String word,
+            int count) {
+        if (vocab.containsKey(word)) {
+            vocab.put(word, vocab.get(word) + count);
+        } else {
+            vocab.put(word, 1);
+        }
+    }
+
+    private static void update_vocab(Map<String, Integer> vocab,
+            Collection<String> words) {
+        for (String word: words) {
+            update_vocab(vocab, word, 1);
+        }
+    }
+
+    private static void update_vocab(Map<String, Integer> vocab1,
+            Map<String, Integer> vocab2) {
+        for (String word: vocab2.keySet()) {
+            update_vocab(vocab1, word, vocab2.get(word));
         }
     }
 
@@ -150,8 +180,10 @@ public class AorStatsCollector {
     }
 
     private void collect_stats(AnnotatedPage ap, Stats bs) {
+        List<String> marginalia_words = get_marginalia_words(ap);
+
         bs.marginalia += ap.getMarginalia().size();
-        bs.marginalia_words += count_marginalia_words(ap);
+        bs.marginalia_words += marginalia_words.size();
         bs.underlines += ap.getUnderlines().size();
         bs.underline_words += count_underline_words(ap);
         bs.marks += ap.getMarks().size();
@@ -163,13 +195,30 @@ public class AorStatsCollector {
         bs.books += count_marginalia_books(ap);
         bs.people += count_marginalia_people(ap);
         bs.locations += count_marginalia_locations(ap);
+
+        update_vocab(bs.marginalia_vocab, marginalia_words);
+    }
+
+    private List<String> get_marginalia_words(AnnotatedPage ap) {
+        List<String> words = new ArrayList<>();
+
+        for (Marginalia m: ap.getMarginalia()) {
+            for (MarginaliaLanguage ml: m.getLanguages()) {
+                for (Position p: ml.getPositions()) {
+                    for (String text: p.getTexts()) {
+                        words.addAll(Arrays.asList(parse_text(text)));
+                    }
+                }
+            }
+        }
+
+        return words;
     }
 
     private int count_marginalia_books(AnnotatedPage ap) {
         int count = 0;
 
         for (Marginalia m: ap.getMarginalia()) {
-
             for (MarginaliaLanguage ml: m.getLanguages()) {
                 for (Position p: ml.getPositions()) {
                     count += p.getBooks().size();
@@ -240,39 +289,81 @@ public class AorStatsCollector {
         return count;
     }
 
-    private int count_marginalia_words(AnnotatedPage ap) {
-        int count = 0;
-
-        for (Marginalia m: ap.getMarginalia()) {
-            for (MarginaliaLanguage ml: m.getLanguages()) {
-                for (Position p: ml.getPositions()) {
-                    for (String text: p.getTexts()) {
-                        count += count_words(text);
-                    }
-                }
-            }
-        }
-
-        return count;
+    // Turns text into words and punctation.
+    private String[] parse_text(String text) {
+        text = text.trim().replaceAll("\\p{Punct}", " $0 ");
+        
+        return text.trim().split("\\s+");
     }
 
     private int count_words(String text) {
-        return text.trim().split("\\s+").length;
+        return parse_text(text).length;
     }
 
     public void writeBookStats(Path output_dir) throws IOException {
         Path book_csv_path = output_dir.resolve("books.csv");
 
-        try (BufferedWriter out = Files.newBufferedWriter(book_csv_path, CHARSET)) {
+        try (BufferedWriter out = Files.newBufferedWriter(book_csv_path,
+                CHARSET)) {
             write_book_stats(out, book_stats);
         }
 
         for (String book_id: book_stats.keySet()) {
             Path page_csv_path = output_dir.resolve(book_id + ".csv");
 
-            try (BufferedWriter out = Files.newBufferedWriter(page_csv_path, CHARSET)) {
+            try (BufferedWriter out = Files.newBufferedWriter(page_csv_path,
+                    CHARSET)) {
                 write_page_stats(out, page_stats.get(book_id));
             }
+        }
+
+        // Write marginalia vocab over all books and for each book
+
+        Path books_vocab_csv_path = output_dir.resolve("marginalia_vocab.csv");
+
+        Map<String, Integer> marginalia_vocab = new HashMap<>();
+
+        for (String book_id: book_stats.keySet()) {
+            Stats stats = book_stats.get(book_id);
+
+            update_vocab(marginalia_vocab, stats.marginalia_vocab);
+
+            Path pages_vocab_csv_path = output_dir.resolve(book_id
+                    + "_marginalia_vocab.csv");
+
+            try (BufferedWriter out = Files.newBufferedWriter(
+                    pages_vocab_csv_path, CHARSET)) {
+                write_vocab(out, stats.marginalia_vocab);
+            }
+        }
+
+        try (BufferedWriter out = Files.newBufferedWriter(books_vocab_csv_path,
+                CHARSET)) {
+            write_vocab(out, marginalia_vocab);
+        }
+    }
+
+    private void write_vocab(BufferedWriter out,
+            final Map<String, Integer> vocab) throws IOException {
+        out.write("word");
+        out.write(',');
+        out.write("count");
+        out.write('\n');
+
+        // Sort by frequency
+        List<String> words = new ArrayList<>(vocab.keySet());
+
+        Collections.sort(words, new Comparator<String>() {
+            public int compare(String w1, String w2) {
+                return vocab.get(w1).compareTo(vocab.get(w2));
+            }
+        });
+
+        for (String word: words) {
+            out.write(word);
+            out.write(',');
+            out.write(String.valueOf(vocab.get(word)));
+            out.write('\n');
         }
     }
 
@@ -307,13 +398,13 @@ public class AorStatsCollector {
 
         out.write(String.valueOf(s.marks));
         out.write(',');
-        
+
         out.write(String.valueOf(s.mark_words));
         out.write(',');
 
         out.write(String.valueOf(s.symbols));
         out.write(',');
-        
+
         out.write(String.valueOf(s.symbol_words));
         out.write(',');
 
@@ -341,8 +432,9 @@ public class AorStatsCollector {
             write_row(out, stats.get(book_id));
         }
     }
-    
-    private void write_header_row(BufferedWriter out, String first_cell) throws IOException {
+
+    private void write_header_row(BufferedWriter out, String first_cell)
+            throws IOException {
         out.write(first_cell);
         out.write(",marginalia,marginalia_words,underlines,underline_words,marks,mark_words,symbols,symbol_words,drawings,numerals,books,people,locations");
         out.newLine();
