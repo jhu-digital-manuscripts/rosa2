@@ -1,7 +1,9 @@
 package rosa.archive.core;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
@@ -96,5 +98,22 @@ public class StoreImplTest extends BaseArchiveTest {
         assertNotNull(book.getPermission("en"));
         assertNotNull(book.getPermission("fr"));
         assertNotNull(book.getImages());
+    }
+
+    /**
+     * Try to load a collection that is not in the archive. The operation should
+     * complete and return NULL with no exceptions thrown.
+     *
+     * NOTE: the built in loadCollection() method already does a NotNull assertion
+     * before returning. Must use store.loadBookCollection() instead.
+     *
+     * @throws IOException .
+     */
+    @Test
+    public void testLoadCollectionNotInArchive() throws IOException {
+        List<String> errors = new ArrayList<>();
+
+        assertNull("Result should be NULL.", store.loadBookCollection("INVALID COLLECTION", errors));
+        assertEquals("There should be exactly ONE error.", 1, errors.size());
     }
 }

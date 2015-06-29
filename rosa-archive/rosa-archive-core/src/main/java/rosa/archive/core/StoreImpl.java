@@ -99,6 +99,11 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public BookCollection loadBookCollection(String collectionId, List<String> errors) throws IOException {
         errors = nonNullList(errors);
+        if (!base.hasByteStreamGroup(collectionId)) {
+            errors.add("Collection not found in archive. [" + collectionId + "]");
+            return null;
+        }
+
         ByteStreamGroup collectionGroup = base.getByteStreamGroup(collectionId);
         BookCollection collection = new BookCollection();
 
@@ -140,6 +145,11 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public Book loadBook(BookCollection collection, String bookId, List<String> errors) throws IOException {
         errors = nonNullList(errors);
+        if (!base.hasByteStreamGroup(collection.getId())) {
+            errors.add("Collection not found in archive. [" + collection.getId() + "]");
+            return null;
+        }
+
         ByteStreamGroup byteStreams = base.getByteStreamGroup(collection.getId());
 
         if (!byteStreams.hasByteStreamGroup(bookId)) {
