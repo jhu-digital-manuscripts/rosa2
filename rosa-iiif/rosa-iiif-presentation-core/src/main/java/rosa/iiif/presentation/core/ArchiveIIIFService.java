@@ -57,32 +57,27 @@ public class ArchiveIIIFService implements IIIFService {
 
     @Override
     public boolean handle_request(PresentationRequest req, OutputStream os) throws IOException {
-        try {
-            switch (req.getType()) {
-                case ANNOTATION:
-                    return handle_annotation(req.getId(), req.getName(), os);
-                case ANNOTATION_LIST:
-                    return handle_annotation_list(req.getId(), req.getName(), os);
-                case CANVAS:
-                    return handle_canvas(req.getId(), req.getName(), os);
-                case COLLECTION:
-                    return handle_collection(req.getName(), os);
-                case CONTENT:
-                    return handle_content(req.getId(), req.getName(), os);
-                case LAYER:
-                    return handle_layer(req.getId(), req.getName(), os);
-                case MANIFEST:
-                    return handle_manifest(req.getId(), os);
-                case RANGE:
-                    return handle_range(req.getId(), req.getName(), os);
-                case SEQUENCE:
-                    return handle_sequence(req.getId(), req.getName(), os);
-                default:
-                    throw new IOException("Unknown type: " + req.getType());
-            }
-        } catch (NoSuchFileException e) {
-            // TODO not the right place for this...
-            return false;
+        switch (req.getType()) {
+            case ANNOTATION:
+                return handle_annotation(req.getId(), req.getName(), os);
+            case ANNOTATION_LIST:
+                return handle_annotation_list(req.getId(), req.getName(), os);
+            case CANVAS:
+                return handle_canvas(req.getId(), req.getName(), os);
+            case COLLECTION:
+                return handle_collection(req.getName(), os);
+            case CONTENT:
+                return handle_content(req.getId(), req.getName(), os);
+            case LAYER:
+                return handle_layer(req.getId(), req.getName(), os);
+            case MANIFEST:
+                return handle_manifest(req.getId(), os);
+            case RANGE:
+                return handle_range(req.getId(), req.getName(), os);
+            case SEQUENCE:
+                return handle_sequence(req.getId(), req.getName(), os);
+            default:
+                throw new IOException("Unknown type: " + req.getType());
         }
     }
 
@@ -199,6 +194,10 @@ public class ArchiveIIIFService implements IIIFService {
     }
     
     private void updateCache(String id, Object value) {
+        if (id == null || value == null) {
+            return;
+        }
+
         if (cache.size() > max_cache_size) {
             cache.clear();
         }
