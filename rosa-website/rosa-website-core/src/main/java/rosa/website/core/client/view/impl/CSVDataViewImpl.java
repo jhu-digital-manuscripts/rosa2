@@ -5,18 +5,18 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.SimplePanel;
 import rosa.website.core.client.view.CSVDataView;
-import rosa.website.core.client.widget.CsvWidget;
+import rosa.website.core.client.widget.CSVWidget;
 import rosa.website.model.csv.CSVData;
 
 public class CSVDataViewImpl extends Composite implements CSVDataView {
 
-    private CsvWidget display;
+    private CSVWidget display;
     private SimplePanel description;
 
     /**  */
     public CSVDataViewImpl() {
         FlowPanel root = new FlowPanel();
-        display = new CsvWidget();
+        display = new CSVWidget();
         description = new SimplePanel();
 
         root.add(description);

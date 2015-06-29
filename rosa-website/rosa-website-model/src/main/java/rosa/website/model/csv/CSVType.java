@@ -1,6 +1,6 @@
 package rosa.website.model.csv;
 
-public enum CsvType {
+public enum CSVType {
     COLLECTION_DATA("collection_data.csv"),
     COLLECTION_BOOKS("books.csv"),
     ILLUSTRATIONS("illustration_titles.csv"),
@@ -10,7 +10,7 @@ public enum CsvType {
 
     private String key;
 
-    CsvType(String key) {
+    CSVType(String key) {
         this.key = key;
     }
 

@@ -20,7 +20,7 @@ import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVEntry;
 import rosa.website.model.csv.CharacterNamesCSV;
 import rosa.website.model.csv.CollectionCSV;
-import rosa.website.model.csv.CsvType;
+import rosa.website.model.csv.CSVType;
 import rosa.website.model.csv.IllustrationTitleCSV;
 import rosa.website.model.csv.NarrativeSectionsCSV;
 import rosa.website.model.select.BookSelectData;
@@ -78,7 +78,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     }
 
     @Override
-    public CSVData loadCSVData(String collection, String lang, CsvType type) throws IOException {
+    public CSVData loadCSVData(String collection, String lang, CSVType type) throws IOException {
         logger.info("Loading CSV data. [" + collection + ":" + lang + ":" + type + "]");
 
         switch (type) {

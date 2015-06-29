@@ -8,7 +8,7 @@ import rosa.archive.model.ImageList;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
-import rosa.website.model.csv.CsvType;
+import rosa.website.model.csv.CSVType;
 import rosa.website.model.csv.IllustrationTitleCSV;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
@@ -38,7 +38,7 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     }
 
     @Override
-    public void loadCSVData(String collection, String lang, CsvType type, final AsyncCallback<CSVData> cb) {
+    public void loadCSVData(String collection, String lang, CSVType type, final AsyncCallback<CSVData> cb) {
         final String key = getKey(collection, type.toString(), lang, CSVData.class);
 
         CSVData data = fromCache(key, CSVData.class);

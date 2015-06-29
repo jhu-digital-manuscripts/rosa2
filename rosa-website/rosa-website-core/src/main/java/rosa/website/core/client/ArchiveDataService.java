@@ -8,7 +8,7 @@ import rosa.archive.model.ImageList;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
-import rosa.website.model.csv.CsvType;
+import rosa.website.model.csv.CSVType;
 import rosa.website.model.csv.IllustrationTitleCSV;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
@@ -44,7 +44,7 @@ public interface ArchiveDataService extends RemoteService {
      * @return CSV data
      * @throws IOException .
      */
-    CSVData loadCSVData(String collection, String lang, CsvType type) throws IOException;
+    CSVData loadCSVData(String collection, String lang, CSVType type) throws IOException;
 
     /**
      * Load data about a collection in the archive in CSV format. Data is read from

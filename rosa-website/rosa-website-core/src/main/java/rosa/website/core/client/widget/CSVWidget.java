@@ -13,8 +13,8 @@ import rosa.website.model.csv.CSVEntry;
 import java.util.Comparator;
 import java.util.logging.Logger;
 
-public class CsvWidget extends Composite {
-    private static final Logger logger = Logger.getLogger(CsvWidget.class.toString());
+public class CSVWidget extends Composite {
+    private static final Logger logger = Logger.getLogger(CSVWidget.class.toString());
     private static final String NUM_REGEX = "^-?\\d+(\\.\\d+)?$";
 
     private final CellTable<CSVEntry> table;
@@ -23,7 +23,7 @@ public class CsvWidget extends Composite {
     /**
      * Create a new blank CsvWidget.
      */
-    public CsvWidget() {
+    public CSVWidget() {
         SimplePanel root = new SimplePanel();
 
         this.table = new CellTable<>();

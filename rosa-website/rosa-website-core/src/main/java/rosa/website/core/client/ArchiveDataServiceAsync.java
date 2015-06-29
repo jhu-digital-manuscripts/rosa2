@@ -7,7 +7,7 @@ import rosa.archive.model.ImageList;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
-import rosa.website.model.csv.CsvType;
+import rosa.website.model.csv.CSVType;
 import rosa.website.model.csv.IllustrationTitleCSV;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
@@ -16,7 +16,7 @@ import rosa.website.model.select.SelectCategory;
  * Async interface pair with {@link rosa.website.core.client.ArchiveDataService}
  */
 public interface ArchiveDataServiceAsync {
-    void loadCSVData(String collection, String lang, CsvType type, AsyncCallback<CSVData> cb);
+    void loadCSVData(String collection, String lang, CSVType type, AsyncCallback<CSVData> cb);
     void loadCollectionData(String collection, String lang, AsyncCallback<CollectionCSV> cb);
     void loadCollectionBookData(String collection, String lang, AsyncCallback<BookDataCSV> cb);
     void loadBookSelectionData(String collection, SelectCategory category, String lang, AsyncCallback<BookSelectList> cb);

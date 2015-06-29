@@ -14,7 +14,7 @@ import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.model.csv.CSVData;
-import rosa.website.model.csv.CsvType;
+import rosa.website.model.csv.CSVType;
 import rosa.website.pizan.client.HistoryConfig;
 import rosa.website.pizan.client.WebsiteConfig;
 
@@ -66,7 +66,7 @@ public class CSVDataActivity implements Activity {
         logger.info("Starting CSVDataActivity. Current state: " + place.toString());
         panel.setWidget(view);
 
-        CsvType type = HistoryConfig.getCsvType(place.getName());
+        CSVType type = HistoryConfig.getCsvType(place.getName());
         if (type == null) {
             logger.warning("No CSV data associated associated with this place. " + place.toString());
             return;
