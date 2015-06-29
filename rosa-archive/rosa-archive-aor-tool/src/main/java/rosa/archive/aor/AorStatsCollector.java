@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
+import rosa.archive.core.util.CSV;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
@@ -360,7 +361,7 @@ public class AorStatsCollector {
         });
 
         for (String word: words) {
-            out.write(word);
+            out.write(CSV.escape(word));
             out.write(',');
             out.write(String.valueOf(vocab.get(word)));
             out.write('\n');
