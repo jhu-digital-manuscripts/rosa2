@@ -11,6 +11,7 @@ import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
 import rosa.website.core.client.view.HeaderView;
 import rosa.website.core.client.view.JSViewerView;
+import rosa.website.core.client.view.SidebarView;
 import rosa.website.core.client.view.impl.AdvancedSearchViewImpl;
 import rosa.website.core.client.view.impl.BookDescriptionViewImpl;
 import rosa.website.core.client.view.impl.BookSelectViewImpl;
@@ -19,12 +20,9 @@ import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
 import rosa.website.core.client.view.impl.HeaderViewImpl;
 import rosa.website.core.client.view.impl.JSViewerViewImpl;
-
-import java.util.logging.Logger;
+import rosa.website.core.client.view.impl.SidebarViewImpl;
 
 public class ClientFactory {
-    private static final Logger logger = Logger.getLogger(ClientFactory.class.toString());
-
     private static AppContext context = new AppContext();
     
     private static EventBus event_bus = new SimpleEventBus();
@@ -39,6 +37,7 @@ public class ClientFactory {
     private static BookDescriptionView bookDescriptionView = new BookDescriptionViewImpl();
     private static FSIViewerView FSIViewerView = new FSIViewerViewImpl();
     private static JSViewerView jsViewerView = new JSViewerViewImpl();
+    private static SidebarView sidebarView = new SidebarViewImpl();
     private static AdvancedSearchView advancedSearchView = new AdvancedSearchViewImpl();
 
     public AppContext context() {
@@ -83,6 +82,10 @@ public class ClientFactory {
 
     public HeaderView headerView() {
         return headerView;
+    }
+
+    public SidebarView sidebarView() {
+        return sidebarView;
     }
 
     public AdvancedSearchView advancedSearchView() {

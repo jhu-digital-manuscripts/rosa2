@@ -106,8 +106,7 @@ public class RosaWebsite implements EntryPoint {
     }-*/;
 
     private void addSidebar(ClientFactory clientFactory) {
-        SidebarView view = new SidebarViewImpl();
-        sidebarPresenter = new SidebarPresenter(view, clientFactory);
+        sidebarPresenter = new SidebarPresenter(clientFactory);
         sidebarPresenter.resize((SIDEBAR_WIDTH - 18) + "px", "");
 
         main.addWest(sidebarPresenter, SIDEBAR_WIDTH);

@@ -18,11 +18,10 @@ public class SidebarPresenter implements SidebarView.Presenter {
     private final Labels labels = Labels.INSTANCE;
 
     /**
-     * @param view SidebarView
      * @param clientFactory .
      */
-    public SidebarPresenter(SidebarView view, ClientFactory clientFactory) {
-        this.view = view;
+    public SidebarPresenter(ClientFactory clientFactory) {
+        this.view = clientFactory.sidebarView();
         this.clientFactory = clientFactory;
 
         view.setPresenter(this);
