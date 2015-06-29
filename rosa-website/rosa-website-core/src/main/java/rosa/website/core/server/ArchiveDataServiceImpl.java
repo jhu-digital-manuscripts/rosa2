@@ -30,7 +30,6 @@ import rosa.website.model.select.SelectCategory;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -61,10 +60,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         this.archiveStore = store;
     }
 
-    public ArchiveDataServiceImpl() {
-
-    }
-
     @Override
     public void init() {
         logger.info("Initializing ArchiveDataService.");
@@ -80,22 +75,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class),
                 injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
         logger.info("Archive Store set.");
-/*
-        String[] collections = {"rosecollection", "pizancollection", "aorcollection"};
-        try {
-            for (String collectionName : collections) {
-                logger.info("Caching book collection: (" + collectionName + ")");
-                BookCollection col = loadBookCollection(collectionName);     // the load method will cache
-
-                for (String bookName : col.books()) {
-                    logger.info("Caching book: (" + bookName + ")");
-                    loadBook(col, bookName);        // this load will cache the book
-                }
-            }
-        } catch (IOException e) {
-            logger.warning("Failed to initialize collection/book caches.");
-        }
-*/
     }
 
     @Override
@@ -123,8 +102,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         // collection_data.csv | collection_data_fr.csv
         logger.info("Loading collection_data. [" + collection + ":" + lang + "]");
         String key = CollectionCSV.class + "." + collection + "." + lang;
-        if (objectCache.containsKey(key)) {
-            return (CollectionCSV) objectCache.get(key);
+
+        Object obj = objectCache.get(key);
+        if (obj != null) {
+            return (CollectionCSV) obj;
         }
 
         BookCollection col = loadBookCollection(collection);
@@ -216,8 +197,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     public BookDataCSV loadCollectionBookData(String collection, String lang) throws IOException {
         // books.csv | books_fr.csv
         final String key = BookDataCSV.class.toString() + "." + collection + "." + lang;
-        if (objectCache.containsKey(key)) {
-            return (BookDataCSV) objectCache.get(key);
+
+        Object obj = objectCache.get(key);
+        if (obj != null) {
+            return (BookDataCSV) obj;
         }
         BookCollection col = loadBookCollection(collection);
 
@@ -263,8 +246,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     public BookSelectList loadBookSelectionData(String collection, SelectCategory category, String lang)
             throws IOException{
         String key = BookSelectList.class.toString() + "." + collection + "." + category + "." + lang;
-        if (objectCache.containsKey(key)) {
-            return (BookSelectList) objectCache.get(key);
+
+        Object list = objectCache.get(key);
+        if (list != null) {
+            return (BookSelectList) list;
         }
         BookCollection col = loadBookCollection(collection);
 
@@ -300,8 +285,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     @Override
     public IllustrationTitleCSV loadIllustrationTitles(String collection) throws IOException {
         String key = IllustrationTitleCSV.class + "." + collection;
-        if (objectCache.containsKey(key)) {
-            return (IllustrationTitleCSV) objectCache.get(key);
+
+        Object csv = objectCache.get(key);
+        if (csv != null) {
+            return (IllustrationTitleCSV) csv;
         }
 
         BookCollection col = loadBookCollection(collection);
@@ -370,8 +357,9 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public BookCollection loadBookCollection(String collection) throws IOException {
-        if (objectCache.containsKey(collection)) {
-            return (BookCollection) objectCache.get(collection);
+        Object obj = objectCache.get(collection);
+        if (obj != null) {
+            return (BookCollection) obj;
         }
 
         List<String> errors = new ArrayList<>();
@@ -403,8 +391,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     @Override
     public String loadImageListAsString(String collection, String book) throws IOException {
         String key = ImageList.class + "." + String.class + "." + collection + "." + book;
-        if (objectCache.containsKey(key)) {
-            return (String) objectCache.get(key);
+
+        Object str = objectCache.get(key);
+        if (str != null) {
+            return (String) str;
         }
         Book b = loadBook(collection, book);
 
@@ -422,8 +412,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     @Override
     public ImageList loadImageList(String collection, String book) throws IOException {
         String key = ImageList.class + "." + collection + "." + book;
-        if (objectCache.containsKey(key)) {
-            return (ImageList) objectCache.get(key);
+
+        Object list = objectCache.get(key);
+        if (list != null) {
+            return (ImageList) list;
         }
         Book b = loadBook(collection, book);
 
@@ -438,6 +430,13 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     private CharacterNamesCSV loadCharacterNames(String collection) throws IOException {
         logger.info("Loading character_names.csv for collection [" + collection + "]");
+        String key = CharacterNamesCSV.class + "." + collection;
+
+        Object obj = objectCache.get(key);
+        if (obj != null) {
+            return (CharacterNamesCSV) obj;
+        }
+
         BookCollection col = loadBookCollection(collection);
 
         List<CSVEntry> entries = new ArrayList<>();
@@ -448,11 +447,21 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             entries.add(new CSVEntry(id, name.getNameInLanguage("en"), name.getNameInLanguage("fr")));
         }
 
-        return new CharacterNamesCSV(names.getId(), entries);
+        CharacterNamesCSV csv = new CharacterNamesCSV(names.getId(), entries);
+        updateCache(key, csv);
+
+        return csv;
     }
 
     private NarrativeSectionsCSV loadNarrativeSections(String collection) throws IOException {
         logger.info("Loading narrative sections. [" + collection + "]");
+        String key = NarrativeSectionsCSV.class + "." + collection;
+
+        Object obj = objectCache.get(key);
+        if (obj != null) {
+            return (NarrativeSectionsCSV) obj;
+        }
+
         BookCollection col = loadBookCollection(collection);
 
         List<CSVEntry> entries = new ArrayList<>();
@@ -474,7 +483,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             ));
         }
 
-        return new NarrativeSectionsCSV(sections.getId(), entries);
+        NarrativeSectionsCSV csv = new NarrativeSectionsCSV(sections.getId(), entries);
+        updateCache(key, csv);
+
+        return csv;
     }
 
     private CSVEntry rowForBookData(Book book, String lang) throws IOException {
@@ -514,8 +526,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     private Book loadBook(BookCollection collection, String book) throws IOException {
         String key = collection.getId() + "." + book;
-        if (objectCache.containsKey(key)) {
-            return (Book) objectCache.get(key);
+
+        Object obj = objectCache.get(key);
+        if (obj != null) {
+            return (Book) obj;
         }
 
         List<String> errors = new ArrayList<>();
@@ -576,7 +590,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                         if (positions.containsKey(title)) {
                             positions.get(title).add(this_position);
                         } else {
-                            positions.put(title, new ArrayList<>(Arrays.asList(this_position)));
+                            positions.put(title, new ArrayList<>(Collections.singletonList(this_position)));
                         }
                     }
                 }

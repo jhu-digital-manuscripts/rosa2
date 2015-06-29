@@ -22,7 +22,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLDecoder;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -134,12 +133,12 @@ public class FSIDataServlet extends HttpServlet {
     }
 
     private BookCollection loadBookCollection(String collection) throws IOException {
-        if (collectionCache.containsKey(collection)) {
-            return collectionCache.get(collection);
+        BookCollection col = collectionCache.get(collection);
+        if (col != null) {
+            return col;
         }
 
         List<String> errors = new ArrayList<>();
-        BookCollection col = null;
 
         try {
             col = archiveStore.loadBookCollection(collection, errors);
@@ -158,11 +157,13 @@ public class FSIDataServlet extends HttpServlet {
 
     private Book loadBook(String collection, String book) throws IOException {
         String key = collection + "." + book;
-        if (bookCache.containsKey(key)) {
-            return bookCache.get(key);
+
+        Book b = bookCache.get(key);
+        if (b != null) {
+            return b;
         }
 
-        Book b = loadBook(loadBookCollection(collection), book);
+        b = loadBook(loadBookCollection(collection), book);
         if (bookCache.size() >= MAX_CACHE_SIZE) {
             bookCache.clear();
         }

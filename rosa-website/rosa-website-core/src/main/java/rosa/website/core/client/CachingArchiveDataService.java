@@ -20,6 +20,9 @@ import java.util.logging.Logger;
 /**
  * An implementation of the ArchiveDataServiceAsync interface that caches all
  * RPC calls requesting data.
+ *
+ * NOTE a HashMap is used instead of the usual ConcurrentHashMap because
+ * there is no GWT emulation of a ConcurrentHashMap.
  */
 public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     private static final Logger logger = Logger.getLogger(CachingArchiveDataService.class.toString());
@@ -37,9 +40,11 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     @Override
     public void loadCSVData(String collection, String lang, CsvType type, final AsyncCallback<CSVData> cb) {
         final String key = getKey(collection, type.toString(), lang, CSVData.class);
-        if (inCache(key)) {
+
+        CSVData data = fromCache(key, CSVData.class);
+        if (data != null) {
             logger.info("Found CSVData in cache (" + key + ") -> {" + cb.toString() + "}");
-            cb.onSuccess(fromCache(key, CSVData.class));
+            cb.onSuccess(data);
             return;
         }
 
@@ -61,7 +66,9 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     @Override
     public void loadCollectionData(String collection, String lang, final AsyncCallback<CollectionCSV> cb) {
         final String key = getKey(collection, "", lang, CollectionCSV.class);
-        if (inCache(key)) {
+
+        CollectionCSV data = fromCache(key, CollectionCSV.class);
+        if (data != null) {
             logger.info("Found collection data in cache. (" + key + ")");
             cb.onSuccess(fromCache(key, CollectionCSV.class));
             return;
@@ -85,7 +92,9 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     @Override
     public void loadCollectionBookData(String collection, String lang, final AsyncCallback<BookDataCSV> cb) {
         final String key = getKey(collection, "", lang, BookDataCSV.class);
-        if (inCache(key)) {
+
+        BookDataCSV data = fromCache(key, BookDataCSV.class);
+        if (data != null) {
             logger.info("Found collection book data in cache. (" + key + ")");
             cb.onSuccess(fromCache(key, BookDataCSV.class));
             return;
@@ -110,7 +119,9 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     public void loadBookSelectionData(String collection, SelectCategory category, String lang,
                                       final AsyncCallback<BookSelectList> cb) {
         final String key = getKey(collection, category.toString(), lang, BookSelectList.class);
-        if (inCache(key)) {
+
+        BookSelectList data = fromCache(key, BookSelectList.class);
+        if (data != null) {
             logger.info("Found book selection data in cache. (" + key + ")");
             cb.onSuccess(fromCache(key, BookSelectList.class));
             return;
@@ -134,7 +145,9 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     @Override
     public void loadIllustrationTitles(String collection, final AsyncCallback<IllustrationTitleCSV> cb) {
         final String key = getKey(collection, "illustration_titles.csv", "", IllustrationTitleCSV.class);
-        if (inCache(key)) {
+
+        IllustrationTitleCSV data = fromCache(key, IllustrationTitleCSV.class);
+        if (data != null) {
             logger.info("Illustration titles CSV found in cache. (" + key + ")");
             cb.onSuccess(fromCache(key, IllustrationTitleCSV.class));
             return;
@@ -158,7 +171,9 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     @Override
     public void loadBookCollection(String collection, final AsyncCallback<BookCollection> cb) {
         final String key = getKey(collection, "", "", BookCollection.class);
-        if (inCache(key)) {
+
+        BookCollection data = fromCache(key, BookCollection.class);
+        if (data != null) {
             logger.info("Found BookCollection in cache. (" + key + ")");
             cb.onSuccess(fromCache(key, BookCollection.class));
             return;
@@ -182,7 +197,9 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     @Override
     public void loadBook(String collection, String book, final AsyncCallback<Book> cb) {
         final String key = getKey(collection, book, "", Book.class);
-        if (inCache(key)) {
+
+        Book data = fromCache(key, Book.class);
+        if (data != null) {
             logger.info("Book found in cache. (" + key + ")");
             cb.onSuccess(fromCache(key, Book.class));
             return;
@@ -206,7 +223,9 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     @Override
     public void loadPermissionStatement(String collection, String book, String lang, final AsyncCallback<String> cb) {
         final String key = getKey(collection, book, lang, String.class);
-        if (inCache(key)) {
+
+        String data = fromCache(key, String.class);
+        if (data != null) {
             cb.onSuccess(fromCache(key, String.class));
             return;
         }
@@ -228,7 +247,9 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     @Override
     public void loadImageListAsString(String collection, String book, final AsyncCallback<String> cb) {
         final String key = getKey(collection, book, "", String.class);
-        if (inCache(key)) {
+
+        String data = fromCache(key, String.class);
+        if (data != null) {
             cb.onSuccess(fromCache(key, String.class));
             return;
         }
@@ -250,7 +271,9 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     @Override
     public void loadImageList(String collection, String book, final AsyncCallback<ImageList> cb) {
         final String key = getKey(collection, book, "", ImageList.class);
-        if (inCache(key)) {
+
+        ImageList data = fromCache(key, ImageList.class);
+        if (data != null) {
             cb.onSuccess(fromCache(key, ImageList.class));
             return;
         }
@@ -269,16 +292,13 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
         });
     }
 
+    /**  */
     public void clearCache() {
         cache.clear();
     }
 
     private <T> String getKey(String collection, String name, String lang, Class<T> type) {
         return collection + ";" + name + ";" + lang + ";" + type.getName();
-    }
-
-    private boolean inCache(String key) {
-        return cache.containsKey(key);
     }
 
     @SuppressWarnings("unchecked")
