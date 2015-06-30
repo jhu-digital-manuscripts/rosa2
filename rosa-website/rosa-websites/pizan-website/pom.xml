@@ -22,6 +22,7 @@
             <properties>
                 <archive.path>/tmp/archive</archive.path>
                 <gwt.output.style>pretty</gwt.output.style>
+                <gwt.log.level>INFO</gwt.log.level>
             </properties>
         </profile>
 
@@ -31,6 +32,7 @@
             <properties>
                 <archive.path>/mnt</archive.path>
                 <gwt.output.style>obf</gwt.output.style>
+                <gwt.log.level>SEVERE</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
             </properties>
         </profile>
     </profiles>

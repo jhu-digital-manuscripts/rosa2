@@ -23,7 +23,7 @@
     <stylesheet src="../RosaWebsiteRose.css"/>
 
     <!-- Logging -->
-    <set-property name="gwt.logging.logLevel" value="FINE" />
+    <set-property name="gwt.logging.logLevel" value="${gwt.log.level}" />
     <set-property name="gwt.logging.enabled" value="TRUE"/>
     <set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
 
