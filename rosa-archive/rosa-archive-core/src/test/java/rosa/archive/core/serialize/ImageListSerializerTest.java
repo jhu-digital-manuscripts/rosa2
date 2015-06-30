@@ -11,7 +11,10 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookImageLocation;
+import rosa.archive.model.BookImageRole;
 import rosa.archive.model.ImageList;
 
 /**
@@ -19,9 +22,12 @@ import rosa.archive.model.ImageList;
  */
 public class ImageListSerializerTest extends BaseSerializerTest<ImageList> {
 
+    private ArchiveNameParser parser;
+
     @Before
     public void setup() {
         serializer = new ImageListSerializer();
+        parser = new ArchiveNameParser();
     }
 
     @Test
@@ -37,6 +43,8 @@ public class ImageListSerializerTest extends BaseSerializerTest<ImageList> {
         BookImage missingImage = imgList.get(0);
         assertNotNull(missingImage);
         assertEquals("LudwigXV7.binding.frontcover.tif", missingImage.getId());
+        assertEquals(BookImageLocation.BINDING, missingImage.getLocation());
+        assertEquals(BookImageRole.FRONT_COVER, missingImage.getRole());
         assertEquals(3, missingImage.getWidth());
         assertEquals(3, missingImage.getHeight());
         assertFalse(missingImage.isMissing());
@@ -45,6 +53,7 @@ public class ImageListSerializerTest extends BaseSerializerTest<ImageList> {
         BookImage image = imgList.get(80);
         assertNotNull(image);
         assertEquals("LudwigXV7.036r.tif", image.getId());
+        assertEquals(BookImageLocation.BODY_MATTER, image.getLocation());
         assertEquals(3, image.getWidth());
         assertEquals(3, image.getHeight());
         assertFalse(image.isMissing());
@@ -80,6 +89,9 @@ public class ImageListSerializerTest extends BaseSerializerTest<ImageList> {
             BookImage image = new BookImage();
 
             image.setId(names[i]);
+            image.setName(parser.shortName(names[i]));
+            image.setLocation(parser.location(names[i]));
+            image.setRole(parser.role(names[i]));
             image.setWidth(100 + i);
             image.setHeight(200 + i);
 

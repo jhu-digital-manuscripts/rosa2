@@ -753,6 +753,9 @@ public class StoreImpl implements Store, ArchiveConstants {
             for (String name : requiredPages) {
                 BookImage image = new BookImage();
                 image.setId(name);
+                image.setName(parser.shortName(name));
+                image.setLocation(parser.location(name));
+                image.setRole(parser.role(name));
                 image.setWidth(missingDimensions[0]);
                 image.setHeight(missingDimensions[1]);
                 image.setMissing(true);
@@ -914,15 +917,17 @@ public class StoreImpl implements Store, ArchiveConstants {
 
                 BookImage img = new BookImage();
                 img.setId(file);
+                img.setName(parser.shortName(file));
+                img.setLocation(parser.location(file));
+                img.setRole(parser.role(file));
                 img.setWidth(dimensions[0]);
                 img.setHeight(dimensions[1]);
                 img.setMissing(false);
-
+                System.out.println(img.toString());
                 images.add(img);
             }
         }
         Collections.sort(images, BookImageComparator.instance());
-        // images.sort(BookImageComparator.instance());
 
         if (addMissing) {
             int[] missingDimensions = getMissingImageDimensions(collection);

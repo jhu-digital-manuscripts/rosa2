@@ -54,10 +54,6 @@ public class CharacterNames implements HasId, Serializable {
 
         return namesInLanguage;
     }
-    
-    public CharacterName getCharacterName(String id) {
-        return names.get(id);
-    }
 
     /**
      * Get the name of a character in a specific language. If the character name's ID
@@ -77,6 +73,10 @@ public class CharacterNames implements HasId, Serializable {
 
     public Set<String> getAllCharacterIds() {
         return names.keySet();
+    }
+
+    public CharacterName getCharacterName(String id) {
+        return names.get(id);
     }
 
     public void addCharacterName(CharacterName name) {

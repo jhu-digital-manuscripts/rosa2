@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='RosaWebsiteCore'>
+    <!-- Inherit the core Web Toolkit stuff.                        -->
+    <inherits name='com.google.gwt.user.User' />
+
+    <!-- GIN (Gwt INjection using Guice) -->
+    <inherits name="com.google.gwt.inject.Inject"/>
+    <inherits name='com.google.gwt.xml.XML'/>
+
+    <inherits name="rosa.archive.RosaArchiveModel"/>
+    <inherits name="rosa.archive.RosaArchiveCore"/>
+    <inherits name="rosa.website.model.RosaWebsiteModel"/>
+
+    <!-- Logging -->
+    <set-property name="gwt.logging.logLevel" value="FINE" />
+    <set-property name="gwt.logging.enabled" value="TRUE"/>
+    <set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
+
+    <inherits name='com.google.gwt.user.theme.standard.Standard' />
+    <source path='client' />
+    <source path='shared' />
+
+</module>

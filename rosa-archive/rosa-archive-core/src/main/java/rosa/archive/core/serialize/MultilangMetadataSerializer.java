@@ -135,7 +135,7 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
             }
         }
 
-        XMLUtil.write(doc, out);
+        XMLUtil.write(doc, out, false);
     }
 
     private MultilangMetadata buildMetadata(Document doc) {

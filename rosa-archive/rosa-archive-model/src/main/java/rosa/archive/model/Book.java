@@ -191,12 +191,48 @@ public class Book implements HasId, Serializable {
         this.illustrationTagging = illustrationTagging;
     }
 
+    /**
+     * @param page page short name
+     * @return does the book have illustration tagging for the specified page?
+     */
+    public boolean hasIllustrationTagging(String page) {
+        if (illustrationTagging != null) {
+            for (int i = 0; i < illustrationTagging.size(); i++) {
+                if (illustrationTagging.getIllustrationData(i).getPage().equals(page)) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
     public NarrativeTagging getManualNarrativeTagging() {
         return manualNarrativeTagging;
     }
 
     public void setManualNarrativeTagging(NarrativeTagging manualNarrativeTagging) {
         this.manualNarrativeTagging = manualNarrativeTagging;
+    }
+
+    public boolean hasNarrativeTagging(String page) {
+        if (manualNarrativeTagging != null) {
+            for (BookScene scene : manualNarrativeTagging.getScenes()) {
+                if (scene.getStartPage().compareToIgnoreCase(page) <= 0 &&
+                        scene.getEndPage().compareToIgnoreCase(page) >= 0) {
+                    return true;
+                }
+            }
+        } else if (automaticNarrativeTagging != null) {
+            for (BookScene scene : automaticNarrativeTagging.getScenes()) {
+                if (scene.getStartPage().compareToIgnoreCase(page) <= 0 &&
+                        scene.getEndPage().compareToIgnoreCase(page) >= 0) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     public NarrativeTagging getAutomaticNarrativeTagging() {

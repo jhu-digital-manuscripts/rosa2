@@ -34,6 +34,11 @@ public class StoreImplImageListsTest extends BaseArchiveTest {
         List<String> lines = Files.readAllLines(imageListPath, Charset.forName("UTF-8"));
         assertNotNull(lines);
         assertEquals(expected.length, lines.size());
+
+//        for (String str : lines) {
+//            System.out.println(str);
+//        }
+
         for (int i = 0; i < lines.size(); i++) {
             String line = lines.get(i);
 
@@ -127,6 +132,8 @@ public class StoreImplImageListsTest extends BaseArchiveTest {
      * If a book archive has zero images, an image list will be generated. It
      * will contain only those six required images, which will be labeled as
      * missing.
+     *
+     * @throws Exception .
      */
     @Test
     public void testGenImageListWithNoImages() throws Exception {
