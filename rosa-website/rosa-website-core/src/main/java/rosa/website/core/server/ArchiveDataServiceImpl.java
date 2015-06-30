@@ -51,6 +51,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     private Store archiveStore;
 
+    /** No-arg constructor needed to make GWT RPC work. */
     public ArchiveDataServiceImpl() {}
 
     /**
@@ -248,13 +249,12 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     public BookSelectList loadBookSelectionData(String collection, SelectCategory category, String lang)
             throws IOException{
         String key = BookSelectList.class.toString() + "." + collection + "." + category + "." + lang;
-logger.info("Trying to get book selection list for [" + key + "]");
+
         Object list = objectCache.get(key);
         if (list != null) {
-    logger.info("Found in cache.");
             return (BookSelectList) list;
         }
-logger.info("Book selection list not found in cache.");
+
         BookCollection col = loadBookCollection(collection);
 
         if (col == null) {

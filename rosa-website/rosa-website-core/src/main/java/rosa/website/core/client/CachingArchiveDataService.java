@@ -119,8 +119,7 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     public void loadBookSelectionData(String collection, SelectCategory category, String lang,
                                       final AsyncCallback<BookSelectList> cb) {
         final String key = getKey(collection, category.toString(), lang, BookSelectList.class);
-logger.info("Looking for [" + key + "]");
-logger.info("Using service. " + service.toString());
+
         Object data = cache.get(key);
         if (data != null) {
             logger.info("Found book selection data in cache. (" + key + ")");
@@ -132,13 +131,11 @@ logger.info("Using service. " + service.toString());
         service.loadBookSelectionData(collection, category, lang, new AsyncCallback<BookSelectList>() {
             @Override
             public void onFailure(Throwable caught) {
-                logger.severe("Server RPC call failed.");
                 cb.onFailure(caught);
             }
 
             @Override
             public void onSuccess(BookSelectList result) {
-                logger.severe("Server RPC call succeeded!!!");
                 updateCache(key, result);
                 cb.onSuccess(result);
             }
