@@ -11,11 +11,10 @@
   <packaging>pom</packaging>
   
   <modules>
-    <module>rosa-mirador-website</module>
     <module>rosa-website-model</module>
     <module>rosa-website-search</module>
     <module>rosa-website-viewer</module>
     <module>rosa-website-core</module>
-    <module>rosa-website-impl</module>
+    <module>rosa-websites</module>
   </modules>
 </project>
