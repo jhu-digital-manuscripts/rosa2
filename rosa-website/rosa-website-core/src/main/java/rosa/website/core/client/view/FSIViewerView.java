@@ -4,9 +4,9 @@ import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
-import rosa.website.core.client.widget.FsiViewer.FSIPagesCallback;
-import rosa.website.core.client.widget.FsiViewer.FSIShowcaseCallback;
-import rosa.website.core.client.widget.FsiViewerType;
+import rosa.website.core.client.widget.FSIViewer.FSIPagesCallback;
+import rosa.website.core.client.widget.FSIViewer.FSIShowcaseCallback;
+import rosa.website.core.client.widget.FSIViewerType;
 
 public interface FSIViewerView extends IsWidget {
 
@@ -31,7 +31,7 @@ public interface FSIViewerView extends IsWidget {
      * @param html .
      * @param type showcase|pages
      */
-    void setFlashViewer(String html, FsiViewerType type);
+    void setFlashViewer(String html, FSIViewerType type);
 
     /**
      * Called on a window resize event.

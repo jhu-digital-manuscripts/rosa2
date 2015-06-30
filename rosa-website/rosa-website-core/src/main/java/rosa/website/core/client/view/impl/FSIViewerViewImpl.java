@@ -12,10 +12,10 @@ import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import rosa.website.core.client.view.FSIViewerView;
-import rosa.website.core.client.widget.FsiViewer;
-import rosa.website.core.client.widget.FsiViewer.FSIPagesCallback;
-import rosa.website.core.client.widget.FsiViewer.FSIShowcaseCallback;
-import rosa.website.core.client.widget.FsiViewerType;
+import rosa.website.core.client.widget.FSIViewer;
+import rosa.website.core.client.widget.FSIViewer.FSIPagesCallback;
+import rosa.website.core.client.widget.FSIViewer.FSIShowcaseCallback;
+import rosa.website.core.client.widget.FSIViewerType;
 
 public class FSIViewerViewImpl extends Composite implements FSIViewerView, RequiresResize {
 
@@ -27,7 +27,7 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
     };
 
     private SimplePanel permissionPanel;
-    private FsiViewer flashViewer;
+    private FSIViewer flashViewer;
     private FlowPanel toolbar;
     // Controls: (page controls) first, last, next, previous, *goto.
     // *Show: transcriptions, transcriptions (lecoy), illustrations descriptions
@@ -38,7 +38,7 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
     public FSIViewerViewImpl() {
         FlowPanel root = new FlowPanel();
         permissionPanel = new SimplePanel();
-        flashViewer = new FsiViewer();
+        flashViewer = new FSIViewer();
         toolbar = new FlowPanel();
 
         goTo = new TextBox();
@@ -61,7 +61,7 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
     }
 
     @Override
-    public void setFlashViewer(String html, FsiViewerType type) {
+    public void setFlashViewer(String html, FSIViewerType type) {
         flashViewer.setHtml(html, type);
         doResize();
     }

@@ -24,15 +24,15 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
-public class FsiSerializerTest extends BaseArchiveTest {
-    private FsiSerializer serializer;
+public class FSISerializerTest extends BaseArchiveTest {
+    private FSISerializer serializer;
 
     @Before
     public void setup() {
         Map<String, String> fsi_share_map = new HashMap<>();
         fsi_share_map.put("valid", "valid");
 
-        serializer = new FsiSerializer(fsi_share_map);
+        serializer = new FSISerializer(fsi_share_map);
     }
 
     @Test

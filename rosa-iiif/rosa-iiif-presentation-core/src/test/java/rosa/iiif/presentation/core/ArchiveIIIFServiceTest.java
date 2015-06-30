@@ -5,7 +5,6 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -50,7 +49,7 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         IIIFRequestFormatter requestFormatter = new IIIFRequestFormatter(scheme, host, pres_prefix, port);
         rosa.iiif.image.core.IIIFRequestFormatter imageFormatter = new rosa.iiif.image.core.IIIFRequestFormatter(
                 scheme, host, port, image_prefix);
-        ImageIdMapper imageIdMapper = new JhuFsiImageIdMapper(new HashMap<String, String>());
+        ImageIdMapper imageIdMapper = new JhuFSIImageIdMapper(new HashMap<String, String>());
 
         CollectionTransformer collectionTransformer = new CollectionTransformer(requestFormatter);
         CanvasTransformer canvasTransformer = new CanvasTransformer(requestFormatter, imageFormatter, imageIdMapper);

@@ -2,14 +2,14 @@ package rosa.website.core.client.widget;
 
 import com.google.gwt.http.client.URL;
 
-public class FsiViewerHTMLBuilder {
+public class FSIViewerHTMLBuilder {
     private static final String DEFAULT_FSI_SERVER = "http://fsiserver.library.jhu.edu/";
     private static final String PLUGINSPAGE = "http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash";
     private static final String FLASH_CODEBASE = "http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,65,0";
     private static final String MIME_TYPE = "application/x-shockwave-flash";
     private static final String DEFAULT_CLASSID = "clsid:D27CDB6E-AE6D-11cf-96B8-444553540000";
 
-    private FsiViewerType type;
+    private FSIViewerType type;
 
     private String fsi_server_url;
     private String fsi_doc_path;
@@ -29,7 +29,7 @@ public class FsiViewerHTMLBuilder {
     /**
      * Create a new FsiViewerHTMLBuilder.
      */
-    public FsiViewerHTMLBuilder() {
+    public FSIViewerHTMLBuilder() {
         fsi_server_url = DEFAULT_FSI_SERVER;
 
         viewer_height = "600";
@@ -45,7 +45,7 @@ public class FsiViewerHTMLBuilder {
      * @param type type of viewer to build (showcase, pages)
      * @return this builder
      */
-    public FsiViewerHTMLBuilder type(FsiViewerType type) {
+    public FSIViewerHTMLBuilder type(FSIViewerType type) {
         this.type = type;
         return this;
     }
@@ -54,7 +54,7 @@ public class FsiViewerHTMLBuilder {
      * @param fsi_server_url URL to the FSI image server
      * @return this builder
      */
-    public FsiViewerHTMLBuilder fsiServerUrl(String fsi_server_url) {
+    public FSIViewerHTMLBuilder fsiServerUrl(String fsi_server_url) {
         this.fsi_server_url = fsi_server_url;
         return this;
     }
@@ -63,7 +63,7 @@ public class FsiViewerHTMLBuilder {
      * @param fsi_doc_path URL pointing to a book specific FSI configuration document
      * @return this builder
      */
-    public FsiViewerHTMLBuilder fsiBookData(String fsi_doc_path) {
+    public FSIViewerHTMLBuilder fsiBookData(String fsi_doc_path) {
         this.fsi_doc_path = fsi_doc_path;
         return this;
     }
@@ -74,7 +74,7 @@ public class FsiViewerHTMLBuilder {
      * @param languageCode language code to display text
      * @return this builder
      */
-    public FsiViewerHTMLBuilder book(String collection, String book, String languageCode) {
+    public FSIViewerHTMLBuilder book(String collection, String book, String languageCode) {
         this.collection = collection;
         this.book = book;
         this.language_code = languageCode;
@@ -86,7 +86,7 @@ public class FsiViewerHTMLBuilder {
      * @param height height of viewer
      * @return this builder
      */
-    public FsiViewerHTMLBuilder viewerSize(String width, String height) {
+    public FSIViewerHTMLBuilder viewerSize(String width, String height) {
         this.viewer_width = width;
         this.viewer_height = height;
         return this;
@@ -97,7 +97,7 @@ public class FsiViewerHTMLBuilder {
      * @param height tile height in pixels
      * @return this builder
      */
-    public FsiViewerHTMLBuilder tileSize(int width, int height) {
+    public FSIViewerHTMLBuilder tileSize(int width, int height) {
         this.tile_width = width;
         this.tile_height = height;
         return this;
@@ -107,7 +107,7 @@ public class FsiViewerHTMLBuilder {
      * @param index index of first image to display
      * @return this builder
      */
-    public FsiViewerHTMLBuilder initialImage(int index) {
+    public FSIViewerHTMLBuilder initialImage(int index) {
         this.initial_image_index = index + 1;
         return this;
     }
@@ -116,7 +116,7 @@ public class FsiViewerHTMLBuilder {
      * @param debug debug mode on/off
      * @return this builder
      */
-    public FsiViewerHTMLBuilder debug(boolean debug) {
+    public FSIViewerHTMLBuilder debug(boolean debug) {
         this.debug = debug;
         return this;
     }

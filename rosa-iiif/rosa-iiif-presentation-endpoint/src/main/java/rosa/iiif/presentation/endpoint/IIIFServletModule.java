@@ -20,7 +20,7 @@ import rosa.iiif.presentation.core.ArchiveIIIFService;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFService;
 import rosa.iiif.presentation.core.ImageIdMapper;
-import rosa.iiif.presentation.core.JhuFsiImageIdMapper;
+import rosa.iiif.presentation.core.JhuFSIImageIdMapper;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
@@ -112,7 +112,7 @@ public class IIIFServletModule extends ServletModule {
     
     @Provides
     ImageIdMapper provideImageIdMapper(@Named("fsi.share.map") Map<String, String> fsi_share_map) {
-        return new JhuFsiImageIdMapper(fsi_share_map);
+        return new JhuFSIImageIdMapper(fsi_share_map);
     }
     
     @Provides

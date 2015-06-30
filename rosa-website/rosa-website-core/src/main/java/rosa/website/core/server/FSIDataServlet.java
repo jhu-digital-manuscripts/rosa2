@@ -52,7 +52,7 @@ public class FSIDataServlet extends HttpServlet {
     private static final String XML_MIME_TYPE = "application/xml";
 
     private Store archiveStore;
-    private FsiSerializer serializer;
+    private FSISerializer serializer;
 
     @Override
     public void init() {
@@ -66,7 +66,7 @@ public class FSIDataServlet extends HttpServlet {
                 prop_map.put(key, props.getProperty(key));
             }
 
-            serializer = new FsiSerializer(prop_map);
+            serializer = new FSISerializer(prop_map);
             logger.info("Loaded FSI share mapping. " + prop_map.toString());
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Failed to load " + FSI_MAP_NAME, e);

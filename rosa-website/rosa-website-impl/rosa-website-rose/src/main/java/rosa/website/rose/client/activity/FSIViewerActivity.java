@@ -20,10 +20,10 @@ import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
-import rosa.website.core.client.widget.FsiViewer.FSIPagesCallback;
-import rosa.website.core.client.widget.FsiViewer.FSIShowcaseCallback;
-import rosa.website.core.client.widget.FsiViewerHTMLBuilder;
-import rosa.website.core.client.widget.FsiViewerType;
+import rosa.website.core.client.widget.FSIViewer.FSIPagesCallback;
+import rosa.website.core.client.widget.FSIViewer.FSIShowcaseCallback;
+import rosa.website.core.client.widget.FSIViewerHTMLBuilder;
+import rosa.website.core.client.widget.FSIViewerType;
 import rosa.website.rose.client.WebsiteConfig;
 
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
     private String book;
     private String starterPage;
-    private FsiViewerType type;
+    private FSIViewerType type;
 
     private FSIViewerView view;
     private ArchiveDataServiceAsync service;
@@ -178,7 +178,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         String collection = WebsiteConfig.INSTANCE.collection();
         String fsi_xml_url = FSI_URL_PREFIX + collection + "/" + book + "/" + type.getXmlId();
 
-        String fsiHtml = new FsiViewerHTMLBuilder()
+        String fsiHtml = new FSIViewerHTMLBuilder()
                 .book(collection, book, language)
                 .type(type)
                 .fsiBookData(URL.encode(fsi_xml_url))
@@ -187,7 +187,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
         view.setFlashViewer(fsiHtml, type);
 
-        if (type == FsiViewerType.SHOWCASE) {
+        if (type == FSIViewerType.SHOWCASE) {
             view.addShowcaseToolbar();
             view.setupFsiShowcaseCallback(showcaseCallback);
             view.addGotoKeyDownHandler(new KeyDownHandler() {
@@ -201,7 +201,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                     }
                 }
             });
-        } else if (type == FsiViewerType.PAGES) {
+        } else if (type == FSIViewerType.PAGES) {
             view.addPagesToolbar();
             view.setupFsiPagesCallback(pagesCallback);
             view.addGotoKeyDownHandler(new KeyDownHandler() {
@@ -253,16 +253,16 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         return -1;
     }
 
-    private FsiViewerType getViewerType(String type) {
+    private FSIViewerType getViewerType(String type) {
         switch (type) {
             case "browse":
-                return FsiViewerType.SHOWCASE;
+                return FSIViewerType.SHOWCASE;
             case "read":
-                return FsiViewerType.PAGES;
+                return FSIViewerType.PAGES;
             case "pages":
-                return FsiViewerType.PAGES;
+                return FSIViewerType.PAGES;
             case "showcase":
-                return FsiViewerType.SHOWCASE;
+                return FSIViewerType.SHOWCASE;
             default:
                 return null;
         }

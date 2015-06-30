@@ -23,7 +23,7 @@ import rosa.website.core.client.jsviewer.codexview.CodexOpening;
 import rosa.website.core.client.jsviewer.codexview.CodexView.Mode;
 import rosa.website.core.client.jsviewer.codexview.RoseBook;
 import rosa.website.core.client.jsviewer.codexview.SimpleCodexController;
-import rosa.website.core.client.jsviewer.dynimg.FsiImageServer;
+import rosa.website.core.client.jsviewer.dynimg.FSIImageServer;
 import rosa.website.core.client.jsviewer.dynimg.ImageServer;
 import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.JSViewerView;
@@ -159,7 +159,7 @@ public class JSViewerActivity implements Activity {
 
     private void setupView(final CodexModel model) {
         final CodexController controller = new SimpleCodexController(model);
-        ImageServer server = new FsiImageServer(WebsiteConfig.INSTANCE.fsiUrl());
+        ImageServer server = new FSIImageServer(WebsiteConfig.INSTANCE.fsiUrl());
 
         view.setCodexView(server, model, controller, viewerMode);
 

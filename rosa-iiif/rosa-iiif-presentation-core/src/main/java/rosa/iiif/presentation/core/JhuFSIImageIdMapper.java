@@ -10,7 +10,7 @@ import java.util.Map;
  * an image on the JHU FSI image server, given its location in the JHU
  * archive. An image id is FSI Share Name '/' Book Id '/' Image Id. 
  */
-public class JhuFsiImageIdMapper implements ImageIdMapper {
+public class JhuFSIImageIdMapper implements ImageIdMapper {
     private final Map<String, String> fsi_share_map;
 
     /**
@@ -18,7 +18,7 @@ public class JhuFsiImageIdMapper implements ImageIdMapper {
      * 
      * @param fsi_share_map map relating archive names to names on the image server
      */
-    public JhuFsiImageIdMapper(Map<String, String> fsi_share_map) {
+    public JhuFSIImageIdMapper(Map<String, String> fsi_share_map) {
         this.fsi_share_map = fsi_share_map;
     }
 

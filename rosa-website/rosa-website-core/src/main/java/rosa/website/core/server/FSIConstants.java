@@ -1,6 +1,6 @@
 package rosa.website.core.server;
 
-public interface FsiConstants {
+public interface FSIConstants {
     String TAG_FSI_PARAMETER = "fsi_parameter";
     String TAG_PLUGINS = "PLUGINS";
     String TAG_PLUGIN = "PLUGIN";

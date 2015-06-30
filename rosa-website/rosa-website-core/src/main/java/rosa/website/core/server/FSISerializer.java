@@ -10,7 +10,7 @@ import javax.xml.stream.XMLStreamWriter;
 import java.io.OutputStream;
 import java.util.Map;
 
-public class FsiSerializer implements FsiConstants {
+public class FSISerializer implements FSIConstants {
     private static final String UTF8 = "UTF-8";
 
     private Map<String, String> fsi_shares;
@@ -18,7 +18,7 @@ public class FsiSerializer implements FsiConstants {
     /**
      * @param fsi_shares mapping archive collection IDs to FSI share names
      */
-    public FsiSerializer(Map<String, String> fsi_shares) {
+    public FSISerializer(Map<String, String> fsi_shares) {
         this.fsi_shares = fsi_shares;
     }
 

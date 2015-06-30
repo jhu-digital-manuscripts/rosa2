@@ -5,7 +5,7 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.SimplePanel;
 
-public class FsiViewer extends Composite {
+public class FSIViewer extends Composite {
 
     public interface FSIPagesCallback {
         void pageChanged(int page);
@@ -19,10 +19,10 @@ public class FsiViewer extends Composite {
 
     private SimplePanel viewer;
 
-    private FsiViewerType type;
+    private FSIViewerType type;
 
     /**  */
-    public FsiViewer() {
+    public FSIViewer() {
         FlowPanel root = new FlowPanel();
         viewer = new SimplePanel();
 
@@ -46,7 +46,7 @@ public class FsiViewer extends Composite {
      * @param html HTML of viewer
      * @param type type of viewer
      */
-    public void setHtml(String html, FsiViewerType type) {
+    public void setHtml(String html, FSIViewerType type) {
         this.type = type;
 
         HTML htmlWidget = new HTML(html);
@@ -74,11 +74,11 @@ public class FsiViewer extends Composite {
          $wnd.fsipages_DoFSCommand = function (fsievent, args) {
              switch (fsievent) {
                  case "ImageInfo":
-                     cb.@rosa.website.core.client.widget.FsiViewer.FSIPagesCallback::imageInfo(Ljava/lang/String;)(args);
+                     cb.@rosa.website.core.client.widget.FSIViewer.FSIPagesCallback::imageInfo(Ljava/lang/String;)(args);
                      break;
 
                  case "onPagesPageChanged":
-                     cb.@rosa.website.core.client.widget.FsiViewer.FSIPagesCallback::pageChanged(I)(args);
+                     cb.@rosa.website.core.client.widget.FSIViewer.FSIPagesCallback::pageChanged(I)(args);
                      break;
              }
          }
@@ -93,7 +93,7 @@ public class FsiViewer extends Composite {
         $wnd.fsishowcase_DoFSCommand = function (fsievent, args) {
             switch (fsievent) {
                 case "ImageSelected":
-                    cb.@rosa.website.core.client.widget.FsiViewer.FSIShowcaseCallback::imageSelected(I)(args);
+                    cb.@rosa.website.core.client.widget.FSIViewer.FSIShowcaseCallback::imageSelected(I)(args);
                     break;
             }
         }
@@ -141,9 +141,9 @@ public class FsiViewer extends Composite {
      * @param image index
      */
     public void fsiViewerGoToImage(int image) {
-        if (type == FsiViewerType.PAGES) {
-            setVariable("newImageIndex", String.valueOf(image), FsiViewerType.PAGES.getViewerId());
-            setVariable("FSICMD", "GotoPage", FsiViewerType.PAGES.getViewerId());
+        if (type == FSIViewerType.PAGES) {
+            setVariable("newImageIndex", String.valueOf(image), FSIViewerType.PAGES.getViewerId());
+            setVariable("FSICMD", "GotoPage", FSIViewerType.PAGES.getViewerId());
         }
     }
 
@@ -153,9 +153,9 @@ public class FsiViewer extends Composite {
      * @param image image index
      */
     public void fsiSelectImage(int image) {
-        if (type == FsiViewerType.SHOWCASE) {
-            setVariable("newImageIndex", String.valueOf(image), FsiViewerType.SHOWCASE.getViewerId());
-            setVariable("FSICMD", "SelectImage", FsiViewerType.SHOWCASE.getViewerId());
+        if (type == FSIViewerType.SHOWCASE) {
+            setVariable("newImageIndex", String.valueOf(image), FSIViewerType.SHOWCASE.getViewerId());
+            setVariable("FSICMD", "SelectImage", FSIViewerType.SHOWCASE.getViewerId());
         }
     }
 }

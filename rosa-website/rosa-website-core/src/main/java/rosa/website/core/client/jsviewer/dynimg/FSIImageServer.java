@@ -2,10 +2,10 @@ package rosa.website.core.client.jsviewer.dynimg;
 
 import com.google.gwt.http.client.URL;
 
-public final class FsiImageServer extends ImageServer {
+public final class FSIImageServer extends ImageServer {
 	private final String baseurl;
 
-	public FsiImageServer(String baseurl) {
+	public FSIImageServer(String baseurl) {
 		this.baseurl = baseurl;
 	}
 
