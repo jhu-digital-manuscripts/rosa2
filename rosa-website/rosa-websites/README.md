@@ -56,6 +56,29 @@ Several items MUST be included in the `web.xml`
 * A context-param must be included: archive-path, with a value equal to the desired archive path
 * FsiServlet, ArchiveDataServlet, and remote_logging servlet must all be made visible
 
+## WebsiteConfig.properties
+
+```
+fsiUrl=http://fsiserver.library.jhu.edu/server
+
+collection = rosecollection
+fsiShare=rose
+historyDelimiter=;
+
+defaultPage=home
+
+htmlHistory=contact,donation,home,partners,project,rose,terms
+csvHistory=corpus,data,sections,illustrations,chars
+```
+
+* *htmlHistory* those history tokens used for static HTML pages
+* *csvHistory* those history tokens used for displaying CSV data
+* *fsiUrl* URL of the FSI image server
+* *collection* name of the collection in the archive
+* *fsiShare* name of the collection on the FSI server
+* *historyDelimiter* delimiting character used in history tokens
+
+
 ##Adding new page
 A new page in this site needs several classes created before it can be added to the web application.
 
