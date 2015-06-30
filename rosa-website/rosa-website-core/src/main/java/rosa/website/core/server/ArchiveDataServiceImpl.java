@@ -15,6 +15,8 @@ import rosa.archive.core.serialize.ImageListSerializer;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.*;
 import rosa.website.core.client.ArchiveDataService;
+import rosa.website.model.view.BookDescriptionViewModel;
+import rosa.website.model.view.FSIViewerModel;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVRow;
@@ -359,8 +361,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         return result;
     }
 
-    @Override
-    public BookCollection loadBookCollection(String collection) throws IOException {
+    private BookCollection loadBookCollection(String collection) throws IOException {
         Object obj = objectCache.get(collection);
         if (obj != null) {
             return (BookCollection) obj;
@@ -382,8 +383,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         return col;
     }
 
-    @Override
-    public Book loadBook(String collection, String book) throws IOException {
+    private Book loadBook(String collection, String book) throws IOException {
         return loadBook(loadBookCollection(collection), book);
     }
 
@@ -430,6 +430,54 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         updateCache(key, b.getImages());
         return b.getImages();
+    }
+
+    @Override
+    public FSIViewerModel loadFSIViewerModel(String collection, String book, String language) throws IOException {
+        logger.info("Loading FSI model.");
+        String key = FSIViewerModel.class + "." + collection + "." + book + "." + language;
+
+        Object obj = objectCache.get(key);
+        if (obj != null) {
+            return (FSIViewerModel) obj;
+        }
+
+        Book b = loadBook(collection, book);
+
+        FSIViewerModel model = FSIViewerModel.Builder.newBuilder()
+                .permission(b.getPermission(language))
+                .images(b.getImages())
+                .transcription(b.getTranscription())
+                .illustrationTagging(b.getIllustrationTagging())
+                .narrativeTagging(b.getManualNarrativeTagging() == null ?
+                        b.getAutomaticNarrativeTagging() : b.getManualNarrativeTagging())
+                .build();
+        updateCache(key, model);
+
+        return model;
+    }
+
+    @Override
+    public BookDescriptionViewModel loadBookDescriptionModel(String collection, String book, String language)
+            throws IOException {
+        logger.info("Loading FSI model.");
+        String key = BookDescriptionViewModel.class + "." + collection + "." + book + "." + language;
+
+        Object obj = objectCache.get(key);
+        if (obj != null) {
+            return (BookDescriptionViewModel) obj;
+        }
+
+        Book b = loadBook(collection, book);
+
+        BookDescriptionViewModel model = new BookDescriptionViewModel(
+                b.getBookDescription(language),
+                b.getBookMetadata(language),
+                b.getImages()
+        );
+        updateCache(key, model);
+
+        return model;
     }
 
     private CharacterNamesCSV loadCharacterNames(String collection) throws IOException {

@@ -2,9 +2,9 @@ package rosa.website.core.client;
 
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
 import rosa.archive.model.ImageList;
+import rosa.website.model.view.BookDescriptionViewModel;
+import rosa.website.model.view.FSIViewerModel;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CollectionCSV;
@@ -92,25 +92,6 @@ public interface ArchiveDataService extends RemoteService {
     IllustrationTitleCSV loadIllustrationTitles(String collection) throws IOException;
 
     /**
-     * Load a BookCollection object from the archive.
-     *
-     * @param collection name of the book collection
-     * @return the book collection
-     * @throws IOException if the collection is unavailable
-     */
-    BookCollection loadBookCollection(String collection) throws IOException;
-
-    /**
-     * Load a Book object from a particular collection.
-     *
-     * @param collection name of the collection
-     * @param book name of the book
-     * @return the book
-     * @throws IOException if the collection or book are not available
-     */
-    Book loadBook(String collection, String book) throws IOException;
-
-    /**
      * Get the permission statement regarding the use of a book.
      *
      * @param collection name of the collection
@@ -140,4 +121,26 @@ public interface ArchiveDataService extends RemoteService {
      * @throws IOException .
      */
     ImageList loadImageList(String collection, String book) throws IOException;
+
+    /**
+     * Get the data model for the FSI flash viewer for a book.
+     *
+     * @param collection name of collection
+     * @param book name of book
+     * @param language language to return data
+     * @return model object for the FSI flash viewer
+     * @throws IOException .
+     */
+    FSIViewerModel loadFSIViewerModel(String collection, String book, String language) throws IOException;
+
+    /**
+     * Get the data model for the book description view for a book.
+     *
+     * @param collection name of collection
+     * @param book name of book
+     * @param language language to return the data
+     * @return data model object
+     * @throws IOException .
+     */
+    BookDescriptionViewModel loadBookDescriptionModel(String collection, String book, String language) throws IOException;
 }

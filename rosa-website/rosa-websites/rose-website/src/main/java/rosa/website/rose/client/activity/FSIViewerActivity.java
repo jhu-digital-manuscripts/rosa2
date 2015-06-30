@@ -12,7 +12,6 @@ import com.google.gwt.http.client.URL;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
-import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
@@ -24,6 +23,7 @@ import rosa.website.core.client.widget.FSIViewer.FSIPagesCallback;
 import rosa.website.core.client.widget.FSIViewer.FSIShowcaseCallback;
 import rosa.website.core.client.widget.FSIViewerHTMLBuilder;
 import rosa.website.core.client.widget.FSIViewerType;
+import rosa.website.model.view.FSIViewerModel;
 import rosa.website.rose.client.WebsiteConfig;
 
 import java.util.ArrayList;
@@ -52,14 +52,14 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         }
     };
 
-    private Book b;
+    private FSIViewerModel model;
     private int current_image_index;
 
     /** Callback for FSI showcase view. */
     private final FSIShowcaseCallback showcaseCallback = new FSIShowcaseCallback() {
         @Override
         public void imageSelected(int image) {
-            view.setGotoLabel(getImageName(image, b));
+            view.setGotoLabel(getImageName(image));
         }
     };
 
@@ -70,15 +70,15 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
             // Update goto box  with label
             current_image_index = page;
 
-            if (page == b.getImages().getImages().size()) {
-                view.setGotoLabel(getImageName(page, b));
+            if (page == model.getImages().getImages().size()) {
+                view.setGotoLabel(getImageName(page));
             } else {
                 StringBuilder sb = new StringBuilder();
                 if (page > 0) {
-                    sb.append(getImageName(page - 1, b));
+                    sb.append(getImageName(page - 1));
                     sb.append(',');
                 }
-                sb.append(getImageName(page, b));
+                sb.append(getImageName(page));
 
                 view.setGotoLabel(sb.toString());
             }
@@ -89,7 +89,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         @Override
         public void imageInfo(String info) {
             current_image_index = getImageIndexFromPagesInfo(info);
-            view.setGotoLabel(getImageName(current_image_index, b));
+            view.setGotoLabel(getImageName(current_image_index));
         }
     };
 
@@ -128,20 +128,21 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         this.eventBus.fireEvent(new BookSelectEvent(true, book));
         panel.setWidget(view);
 
-        service.loadBook(WebsiteConfig.INSTANCE.collection(), book, new AsyncCallback<Book>() {
+        service.loadFSIViewerModel(WebsiteConfig.INSTANCE.collection(), book, language,
+                new AsyncCallback<FSIViewerModel>() {
             @Override
             public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load book.", caught);
+                logger.log(Level.SEVERE, "Failed to load FSI data.");
             }
 
             @Override
-            public void onSuccess(Book result) {
-                b = result;
-                view.setPermissionStatement(b.getPermission(language).getPermission());
+            public void onSuccess(FSIViewerModel result) {
+                model = result;
+                view.setPermissionStatement(result.getPermission().getPermission());
                 Scheduler.get().scheduleDeferred(resizeCommand);
 
                 if (starterPage != null && !starterPage.isEmpty()) {
-                    setupFlashViewer(getImageIndex(starterPage, b));
+                    setupFlashViewer(getImageIndex(starterPage));
                 } else {
                     setupFlashViewer(-1);
                 }
@@ -151,19 +152,19 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
     @Override
     public String[] getExtraDataLabels(String page) {
-        if (b == null) {
+        if (model == null) {
             return new String[0];
         }
 
         List<String> labels = new ArrayList<>();
-        if (b.getTranscription() != null) { // TODO per page
+        if (model.hasTranscription(page)) { // TODO per page
             labels.add(Labels.INSTANCE.transcription());
         }
         // TODO transcription (Lecoy)
-        if (b.hasIllustrationTagging(page)) {
+        if (model.hasIllustrationTagging(page)) {
             labels.add(Labels.INSTANCE.illustrationDescription());
         }
-        if (b.hasNarrativeTagging(page)) {
+        if (model.hasNarrativeTagging(page)) {
             labels.add(Labels.INSTANCE.narrativeSections());
         }
 
@@ -171,7 +172,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     }
 
     public String getCurrentPage() {
-        return getImageName(current_image_index, b);
+        return getImageName(current_image_index);
     }
 
     private void setupFlashViewer(int startPage) {
@@ -194,7 +195,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                 @Override
                 public void onKeyDown(KeyDownEvent event) {
                     if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                        int index = getImageIndex(view.getGotoText(), b);
+                        int index = getImageIndex(view.getGotoText());
                         if (index >= 0) {
                             view.fsiViewerSelectImage(index);
                         }
@@ -208,7 +209,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                 @Override
                 public void onKeyDown(KeyDownEvent event) {
                     if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                        int index = getImageIndex(view.getGotoText(), b);
+                        int index = getImageIndex(view.getGotoText());
 
                         if (index >= 0) {
                             view.fsiViewerGotoImage(index + 1);
@@ -223,27 +224,25 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
 
     /**
      * @param index index of page in the book
-     * @param book .
      * @return short name of a page by index, if it exists. Empty string, otherwise
      */
-    private String getImageName(int index, Book book) {
-        if (book == null || book.getImages() == null || book.getImages().getImages() == null
-                || book.getImages().getImages().size() < index || book.getImages().getImages().get(index) == null) {
+    private String getImageName(int index) {
+        if (book == null || model.getImages() == null || model.getImages().getImages() == null
+                || model.getImages().getImages().size() < index || model.getImages().getImages().get(index) == null) {
             return "";
         }
 
-        return book.getImages().getImages().get(index).getName();
+        return model.getImages().getImages().get(index).getName();
     }
 
     /**
      * @param name name of image
-     * @param book .
      * @return index of image in the book, if it exists. -1 otherwise.
      */
-    private int getImageIndex(String name, Book book) {
-        if (book != null && book.getImages() != null && book.getImages().getImages() != null) {
-            for (int i = 0; i < book.getImages().getImages().size(); i++) {
-                BookImage image = book.getImages().getImages().get(i);
+    private int getImageIndex(String name) {
+        if (book != null && model.getImages() != null && model.getImages().getImages() != null) {
+            for (int i = 0; i < model.getImages().getImages().size(); i++) {
+                BookImage image = model.getImages().getImages().get(i);
                 if (image.getName().equals(name) || image.getId().equals(name)) {
                     return i;
                 }

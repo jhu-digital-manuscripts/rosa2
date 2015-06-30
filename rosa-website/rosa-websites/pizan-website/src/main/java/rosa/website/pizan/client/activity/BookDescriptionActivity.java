@@ -5,13 +5,13 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
-import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.view.BookDescriptionView;
+import rosa.website.model.view.BookDescriptionViewModel;
 import rosa.website.pizan.client.WebsiteConfig;
 
 import java.util.logging.Level;
@@ -27,7 +27,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     // TODO need to keep this eventBus, or use the one on .start()?
     private com.google.web.bindery.event.shared.EventBus eventBus;
 
-    private Book book;
+    private BookDescriptionViewModel model;
 
     /**
      * @param place initial state
@@ -60,28 +60,32 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         this.eventBus.fireEvent(new BookSelectEvent(true, bookName));
         panel.setWidget(view);
-
         view.setPresenter(this);
-        service.loadBook(WebsiteConfig.INSTANCE.collection(), bookName, new AsyncCallback<Book>() {
+
+        service.loadBookDescriptionModel(WebsiteConfig.INSTANCE.collection(), bookName, language,
+                new AsyncCallback<BookDescriptionViewModel>() {
             @Override
             public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load book with the archive data service.", caught);
+                logger.log(Level.SEVERE, "Failed to load book description. ["
+                        + WebsiteConfig.INSTANCE.collection() + "," + bookName + "]");
             }
 
             @Override
-            public void onSuccess(Book result) {
-                handleData(result);
+            public void onSuccess(BookDescriptionViewModel result) {
+                model = result;
+                view.setMetadata(result.getMetadata());
+                view.setDescription(result.getProse());
             }
         });
     }
 
     @Override
     public String getPageUrlFragment(String page) {
-        if (book == null) {
+        if (model == null || model.getImages()== null) {
             return null;
         }
 
-        for (BookImage image : book.getImages()) {
+        for (BookImage image : model.getImages()) {
             if (image.getName().equals(page)) {
                 return "read;" + image.getId();
             }
@@ -93,13 +97,6 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     @Override
     public String getPageUrlFragment(int page) {
         return getPageUrlFragment(page + "r");
-    }
-
-    private void handleData(Book book) {
-        this.book = book;
-
-        view.setMetadata(book.getBookMetadata(language));
-        view.setDescription(book.getBookDescription(language));
     }
 
     private void finishActivity() {

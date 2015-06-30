@@ -2,9 +2,9 @@ package rosa.website.core.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
 import rosa.archive.model.ImageList;
+import rosa.website.model.view.BookDescriptionViewModel;
+import rosa.website.model.view.FSIViewerModel;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVType;
@@ -169,58 +169,6 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     }
 
     @Override
-    public void loadBookCollection(String collection, final AsyncCallback<BookCollection> cb) {
-        final String key = getKey(collection, "", "", BookCollection.class);
-
-        Object data = cache.get(key);
-        if (data != null) {
-            logger.info("Found BookCollection in cache. (" + key + ")");
-            cb.onSuccess((BookCollection) cache.get(key));
-            return;
-        }
-
-        logger.info("Book collection not found in cache. Loading from data service. (" + key + ")");
-        service.loadBookCollection(collection, new AsyncCallback<BookCollection>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                cb.onFailure(caught);
-            }
-
-            @Override
-            public void onSuccess(BookCollection result) {
-                updateCache(key, result);
-                cb.onSuccess(result);
-            }
-        });
-    }
-
-    @Override
-    public void loadBook(String collection, String book, final AsyncCallback<Book> cb) {
-        final String key = getKey(collection, book, "", Book.class);
-
-        Object data = cache.get(key);
-        if (data != null) {
-            logger.info("Book found in cache. (" + key + ")");
-            cb.onSuccess((Book) cache.get(key));
-            return;
-        }
-
-        logger.info("Book not found in cache. Loading from data service. (" + key + ")");
-        service.loadBook(collection, book, new AsyncCallback<Book>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                cb.onFailure(caught);
-            }
-
-            @Override
-            public void onSuccess(Book result) {
-                updateCache(key, result);
-                cb.onSuccess(result);
-            }
-        });
-    }
-
-    @Override
     public void loadPermissionStatement(String collection, String book, String lang, final AsyncCallback<String> cb) {
         final String key = getKey(collection, book, lang, String.class);
 
@@ -286,6 +234,55 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
 
             @Override
             public void onSuccess(ImageList result) {
+                updateCache(key, result);
+                cb.onSuccess(result);
+            }
+        });
+    }
+
+    @Override
+    public void loadFSIViewerModel(String collection, String book, String language, final AsyncCallback<FSIViewerModel> cb) {
+        final String key = getKey(collection, book, "", FSIViewerModel.class);
+
+        Object data = cache.get(key);
+        if (data != null) {
+            cb.onSuccess((FSIViewerModel) data);
+            return;
+        }
+
+        service.loadFSIViewerModel(collection, book, language, new AsyncCallback<FSIViewerModel>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                cb.onFailure(caught);
+            }
+
+            @Override
+            public void onSuccess(FSIViewerModel result) {
+                updateCache(key, result);
+                cb.onSuccess(result);
+            }
+        });
+    }
+
+    @Override
+    public void loadBookDescriptionModel(String collection, String book, String language,
+                                         final AsyncCallback<BookDescriptionViewModel> cb) {
+        final String key = getKey(collection, book, language, BookDescriptionViewModel.class);
+
+        Object data = cache.get(key);
+        if (data != null) {
+            cb.onSuccess((BookDescriptionViewModel) data);
+            return;
+        }
+
+        service.loadBookDescriptionModel(collection, book, language, new AsyncCallback<BookDescriptionViewModel>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                cb.onFailure(caught);
+            }
+
+            @Override
+            public void onSuccess(BookDescriptionViewModel result) {
                 updateCache(key, result);
                 cb.onSuccess(result);
             }

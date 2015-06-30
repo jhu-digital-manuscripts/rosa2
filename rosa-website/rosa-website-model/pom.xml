@@ -12,23 +12,15 @@
     <artifactId>rosa-website-model</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-archive-model</artifactId>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
-<!--
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>gwt-maven-plugin</artifactId>
-                <version>${mvn.gwt.plugin.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>test</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
--->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -37,7 +29,6 @@
                         <id>attach-sources</id>
                         <phase>package</phase>
                         <goals>
-                            <!--<goal>aggregate</goal>-->
                             <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
