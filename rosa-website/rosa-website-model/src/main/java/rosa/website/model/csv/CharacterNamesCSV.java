@@ -23,7 +23,7 @@ public class CharacterNamesCSV extends BaseCSVData<CharacterNamesCSV.Column> imp
         super();
     }
 
-    public CharacterNamesCSV(String id, List<CSVEntry> rows) {
+    public CharacterNamesCSV(String id, List<CSVRow> rows) {
         super(id, rows);
     }
 
@@ -33,8 +33,8 @@ public class CharacterNamesCSV extends BaseCSVData<CharacterNamesCSV.Column> imp
     }
 
     @Override
-    public CSVEntry getRow(String id) {
-        for (CSVEntry entry : rows) {
+    public CSVRow getRow(String id) {
+        for (CSVRow entry : rows) {
             if (entry.getValue(Column.NAME).equals(id)) {
                 return entry;
             }

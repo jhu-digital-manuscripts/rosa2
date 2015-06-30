@@ -1,7 +1,7 @@
 package rosa.website.model.select;
 
 import rosa.website.model.csv.BookDataCSV;
-import rosa.website.model.csv.CSVEntry;
+import rosa.website.model.csv.CSVRow;
 
 import java.io.Serializable;
 
@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class BookSelectData implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private CSVEntry data;
+    private CSVRow data;
     private boolean hasTranscription;
     private boolean hasImageTagging;
     private boolean hasNarrativeTagging;
@@ -29,7 +29,7 @@ public class BookSelectData implements Serializable {
      * @param hasNarrativeTagging .
      * @param hasBibliography .
      */
-    public BookSelectData(CSVEntry data, boolean hasTranscription, boolean hasImageTagging,
+    public BookSelectData(CSVRow data, boolean hasTranscription, boolean hasImageTagging,
                           boolean hasNarrativeTagging, boolean hasBibliography) {
         this.data = data;
         this.hasTranscription = hasTranscription;
@@ -38,7 +38,7 @@ public class BookSelectData implements Serializable {
         this.hasBibliography = hasBibliography;
     }
 
-    public void setData(CSVEntry data) {
+    public void setData(CSVRow data) {
         this.data = data;
     }
 

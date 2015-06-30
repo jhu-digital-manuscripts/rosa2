@@ -43,7 +43,7 @@ public class CollectionCSV extends BaseCSVData<CollectionCSV.Column> implements 
      * @param id id
      * @param rows row data
      */
-    public CollectionCSV(String id, List<CSVEntry> rows) {
+    public CollectionCSV(String id, List<CSVRow> rows) {
         super(id, rows);
     }
 
@@ -53,8 +53,8 @@ public class CollectionCSV extends BaseCSVData<CollectionCSV.Column> implements 
     }
 
     @Override
-    public CSVEntry getRow(String id) {
-        for (CSVEntry entry : rows) {
+    public CSVRow getRow(String id) {
+        for (CSVRow entry : rows) {
             if (entry.getValue(Column.ID).equals(id)) {
                 return entry;
             }

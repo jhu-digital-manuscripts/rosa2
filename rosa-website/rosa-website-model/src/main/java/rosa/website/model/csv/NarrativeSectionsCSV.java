@@ -19,7 +19,7 @@ public class NarrativeSectionsCSV extends BaseCSVData<NarrativeSectionsCSV.Colum
         super();
     }
 
-    public NarrativeSectionsCSV(String id, List<CSVEntry> rows) {
+    public NarrativeSectionsCSV(String id, List<CSVRow> rows) {
         super(id, rows);
     }
 
@@ -29,8 +29,8 @@ public class NarrativeSectionsCSV extends BaseCSVData<NarrativeSectionsCSV.Colum
     }
 
     @Override
-    public CSVEntry getRow(String id) {
-        for (CSVEntry entry : rows) {
+    public CSVRow getRow(String id) {
+        for (CSVRow entry : rows) {
             if (entry.getValue(Column.ID).equals(id)) {
                 return entry;
             }

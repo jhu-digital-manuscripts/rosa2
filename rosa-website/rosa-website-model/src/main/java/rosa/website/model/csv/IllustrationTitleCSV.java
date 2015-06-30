@@ -29,7 +29,7 @@ public class IllustrationTitleCSV extends BaseCSVData<IllustrationTitleCSV.Colum
      * @param id id
      * @param rows row data
      */
-    public IllustrationTitleCSV(String id, List<CSVEntry> rows) {
+    public IllustrationTitleCSV(String id, List<CSVRow> rows) {
         super(id, rows);
     }
 
@@ -43,8 +43,8 @@ public class IllustrationTitleCSV extends BaseCSVData<IllustrationTitleCSV.Colum
      * @return entry by title
      */
     @Override
-    public CSVEntry getRow(String title) {
-        for (CSVEntry entry : rows) {
+    public CSVRow getRow(String title) {
+        for (CSVRow entry : rows) {
             if (entry.getValue(Column.TITLE).equals(title)) {
                 return entry;
             }

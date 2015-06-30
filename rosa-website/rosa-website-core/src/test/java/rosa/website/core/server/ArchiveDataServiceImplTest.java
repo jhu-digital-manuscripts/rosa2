@@ -4,9 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.website.core.client.ArchiveDataService;
-import rosa.website.core.server.ArchiveDataServiceImpl;
 import rosa.website.model.csv.BookDataCSV;
-import rosa.website.model.csv.CSVEntry;
+import rosa.website.model.csv.CSVRow;
 import rosa.website.model.csv.CollectionCSV;
 import rosa.website.model.csv.IllustrationTitleCSV;
 
@@ -56,7 +55,7 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
         assertNotNull("Collection CSV data missing.", col);
         assertEquals("Unexpected number of rows found.", 2, col.size());
 
-        CSVEntry row = col.getRow(0);
+        CSVRow row = col.getRow(0);
         assertNotNull("Row missing for index '0'", row);
         assertEquals("Unexpected book ID found.", "LudwigXV7", row.getValue(CollectionCSV.Column.ID));
         assertEquals("Unexpected book name found.", "Ludwig XV7", row.getValue(CollectionCSV.Column.NAME));
@@ -107,7 +106,7 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
         assertEquals("Unexpected data ID found.", VALID_COLLECTION, data.getId());
         assertEquals(2, data.size());
 
-        CSVEntry row = data.getRow(0);
+        CSVRow row = data.getRow(0);
         assertEquals("Unexpected book ID found.", "LudwigXV7", row.getValue(BookDataCSV.Column.ID));
         assertEquals("Unexpected book repo found.", "J. Paul Getty Museum", row.getValue(BookDataCSV.Column.REPO));
         assertEquals("Unexpected book shelfmark found.", "Ludwig XV 7", row.getValue(BookDataCSV.Column.SHELFMARK));
@@ -134,7 +133,7 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
 
     private int countIllustrationsNotInTestData(IllustrationTitleCSV ills) {
         int count = 0;
-        for (CSVEntry entry : ills) {
+        for (CSVRow entry : ills) {
             if (entry.getValue(IllustrationTitleCSV.Column.LOCATION).equals("-1")) {
                 count++;
             }
@@ -147,7 +146,7 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
      * book collection's 'illustration_titles.csv'
      */
     private boolean illustrationsAppearNoMoreThanTwice(IllustrationTitleCSV ills) {
-        for (CSVEntry entry : ills) {
+        for (CSVRow entry : ills) {
             int freq = Integer.parseInt(entry.getValue(IllustrationTitleCSV.Column.FREQUENCY));
 
             if (freq > 2) {

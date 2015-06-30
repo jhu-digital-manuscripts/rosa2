@@ -11,7 +11,7 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
 import rosa.website.core.client.ArchiveDataService;
 import rosa.website.model.csv.BookDataCSV;
-import rosa.website.model.csv.CSVEntry;
+import rosa.website.model.csv.CSVRow;
 import rosa.website.model.csv.CollectionCSV;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
@@ -164,7 +164,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
         assertNotNull("Collection ID missing.", collectionCSV.getId());
         assertEquals("Unexpected number of rows found.", 1, collectionCSV.size());
 
-        CSVEntry row = collectionCSV.getRow(0);
+        CSVRow row = collectionCSV.getRow(0);
         assertNotNull(row);
         for (int i = 0; i < collectionCSV.columns().length; i++) {
             if (i == 0) {

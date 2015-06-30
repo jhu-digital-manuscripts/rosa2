@@ -4,19 +4,19 @@ import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class CSVEntry implements Iterable<String>, Serializable {
+public class CSVRow implements Iterable<String>, Serializable {
     private static final long serialVersionUID = 1L;
 
     private String[] values;
 
-    public CSVEntry() {}
+    public CSVRow() {}
 
     /**
      * Create a new row in a CSV.
      *
      * @param values values of each cell
      */
-    public CSVEntry(String ... values) {
+    public CSVRow(String... values) {
         this.values = values;
     }
 
@@ -55,9 +55,9 @@ public class CSVEntry implements Iterable<String>, Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof CSVEntry)) return false;
+        if (!(o instanceof CSVRow)) return false;
 
-        CSVEntry strings = (CSVEntry) o;
+        CSVRow strings = (CSVRow) o;
 
         if (!Arrays.equals(values, strings.values)) return false;
 

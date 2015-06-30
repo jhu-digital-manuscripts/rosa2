@@ -17,7 +17,7 @@ import rosa.archive.model.*;
 import rosa.website.core.client.ArchiveDataService;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
-import rosa.website.model.csv.CSVEntry;
+import rosa.website.model.csv.CSVRow;
 import rosa.website.model.csv.CharacterNamesCSV;
 import rosa.website.model.csv.CollectionCSV;
 import rosa.website.model.csv.CSVType;
@@ -118,7 +118,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
         lang = checkLang(lang);
 
-        List<CSVEntry> entries = new ArrayList<>();
+        List<CSVRow> entries = new ArrayList<>();
         for (String bookName : col.books()) {
             Book book = loadBook(col, bookName);
 
@@ -151,7 +151,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                 those texts contain Roman de la Rose material.
                 Pizan and AoR do not care about this, and will count all book texts.
              */
-                entries.add(new CSVEntry(
+                entries.add(new CSVRow(
                         bookName, md.getCommonName(), md.getOrigin(), md.getMaterial(),
                         String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages()),
                         String.valueOf(md.getHeight()),
@@ -168,15 +168,15 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                 ));
             } else {
                 // If there is no metadata, add a row with only the book's name
-                entries.add(new CSVEntry(
+                entries.add(new CSVRow(
                         bookName, "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
                 ));
             }
         }
 
-        Collections.sort(entries, new Comparator<CSVEntry>() {
+        Collections.sort(entries, new Comparator<CSVRow>() {
             @Override
-            public int compare(CSVEntry o1, CSVEntry o2) {
+            public int compare(CSVRow o1, CSVRow o2) {
                 if (o1 == null && o2 != null) { // first is NULL
                     return -1;
                 } else if (o1 != null && o2 == null) { // second is NULL
@@ -213,7 +213,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         lang = checkLang(lang);
 
-        List<CSVEntry> entries = new ArrayList<>();
+        List<CSVRow> entries = new ArrayList<>();
         for (String bookName : col.books()) {
             Book book = loadBook(collection, bookName);
             if (book == null) {
@@ -223,9 +223,9 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             entries.add(rowForBookData(book, lang));
         }
 
-        Collections.sort(entries, new Comparator<CSVEntry>() {
+        Collections.sort(entries, new Comparator<CSVRow>() {
             @Override
-            public int compare(CSVEntry o1, CSVEntry o2) {
+            public int compare(CSVRow o1, CSVRow o2) {
                 if (o1 == null && o2 != null) { // first is NULL
                     return -1;
                 } else if (o1 != null && o2 == null) { // second is NULL
@@ -302,7 +302,7 @@ logger.info("Book selection list not found in cache.");
         }
         IllustrationTitles titles = col.getIllustrationTitles();
 
-        List<CSVEntry> entries = new ArrayList<>();
+        List<CSVRow> entries = new ArrayList<>();
         Map<String, List<Integer>> positions = new HashMap<>();
         Map<String, Integer> frequencies = new HashMap<>();
 
@@ -319,7 +319,7 @@ logger.info("Book selection list not found in cache.");
                 average_position = positions.get(title) == null ? -1 : sum(positions.get(title)) / frequency;
             }
 
-            entries.add(new CSVEntry(
+            entries.add(new CSVRow(
                     String.valueOf(average_position),
                     title,
                     String.valueOf(frequency)
@@ -327,9 +327,9 @@ logger.info("Book selection list not found in cache.");
         }
 
         // Sort entries by location
-        Collections.sort(entries, new Comparator<CSVEntry>() {
+        Collections.sort(entries, new Comparator<CSVRow>() {
             @Override
-            public int compare(CSVEntry o1, CSVEntry o2) {
+            public int compare(CSVRow o1, CSVRow o2) {
                 if (o1 == null && o2 != null) { // first is NULL
                     return -1;
                 } else if (o1 != null && o2 == null) { // second is NULL
@@ -443,12 +443,12 @@ logger.info("Book selection list not found in cache.");
 
         BookCollection col = loadBookCollection(collection);
 
-        List<CSVEntry> entries = new ArrayList<>();
+        List<CSVRow> entries = new ArrayList<>();
 
         CharacterNames names = col.getCharacterNames();
         for (String id : names.getAllCharacterIds()) {
             CharacterName name = names.getCharacterName(id);
-            entries.add(new CSVEntry(id, name.getNameInLanguage("en"), name.getNameInLanguage("fr")));
+            entries.add(new CSVRow(id, name.getNameInLanguage("en"), name.getNameInLanguage("fr")));
         }
 
         CharacterNamesCSV csv = new CharacterNamesCSV(names.getId(), entries);
@@ -468,7 +468,7 @@ logger.info("Book selection list not found in cache.");
 
         BookCollection col = loadBookCollection(collection);
 
-        List<CSVEntry> entries = new ArrayList<>();
+        List<CSVRow> entries = new ArrayList<>();
         NarrativeSections sections = col.getNarrativeSections();
 
         if (sections == null) {
@@ -480,7 +480,7 @@ logger.info("Book selection list not found in cache.");
                 continue;
             }
 
-            entries.add(new CSVEntry(
+            entries.add(new CSVRow(
                     scene.getId(),
                     scene.getDescription(),
                     scene.getCriticalEditionStart() + "-" + scene.getCriticalEditionEnd()
@@ -493,7 +493,7 @@ logger.info("Book selection list not found in cache.");
         return csv;
     }
 
-    private CSVEntry rowForBookData(Book book, String lang) throws IOException {
+    private CSVRow rowForBookData(Book book, String lang) throws IOException {
         if (book == null) {
             return null;
         }
@@ -510,7 +510,7 @@ logger.info("Book selection list not found in cache.");
 
             boolean hasRose = rose != null;
 
-            return new CSVEntry(
+            return new CSVRow(
                     book.getId(),
                     md.getRepository(),
                     md.getShelfmark(),
@@ -523,7 +523,7 @@ logger.info("Book selection list not found in cache.");
                     String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages())
             );
         } else {
-            return new CSVEntry(book.getId(), "", "", "", "", "", "", "", "", "");
+            return new CSVRow(book.getId(), "", "", "", "", "", "", "", "", "");
         }
 
     }

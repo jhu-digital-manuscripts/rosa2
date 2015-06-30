@@ -36,7 +36,7 @@ public class BookDataCSV extends BaseCSVData<BookDataCSV.Column> implements CSVD
      * @param id id
      * @param rows row data
      */
-    public BookDataCSV(String id, List<CSVEntry> rows) {
+    public BookDataCSV(String id, List<CSVRow> rows) {
         super(id, rows);
     }
 
@@ -45,8 +45,8 @@ public class BookDataCSV extends BaseCSVData<BookDataCSV.Column> implements CSVD
      * @return entry by ID
      */
     @Override
-    public CSVEntry getRow(String id) {
-        for (CSVEntry entry : rows) {
+    public CSVRow getRow(String id) {
+        for (CSVRow entry : rows) {
             if (entry.getValue(Column.ID).equals(id)) {
                 return entry;
             }

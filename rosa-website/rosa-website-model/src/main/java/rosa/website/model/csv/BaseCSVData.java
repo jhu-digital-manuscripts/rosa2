@@ -9,14 +9,14 @@ public abstract class BaseCSVData <T extends Enum> implements CSVData<T>, Serial
     private static final long serialVersionUID = 1L;
 
     protected String id;
-    protected List<CSVEntry> rows;
+    protected List<CSVRow> rows;
 
     /** Empty constructor for GWT compatibility */
     BaseCSVData() {
         this.rows = new ArrayList<>();
     }
 
-    BaseCSVData(String id, List<CSVEntry> rows) {
+    BaseCSVData(String id, List<CSVRow> rows) {
         this.id = id;
         this.rows = rows;
     }
@@ -25,7 +25,7 @@ public abstract class BaseCSVData <T extends Enum> implements CSVData<T>, Serial
         this.id = id;
     }
 
-    protected void setRows(List<CSVEntry> rows) {
+    protected void setRows(List<CSVRow> rows) {
         this.rows = rows;
     }
 
@@ -35,7 +35,7 @@ public abstract class BaseCSVData <T extends Enum> implements CSVData<T>, Serial
     }
 
     @Override
-    public CSVEntry getRow(int index) {
+    public CSVRow getRow(int index) {
         return rows.get(index);
     }
 
@@ -48,8 +48,8 @@ public abstract class BaseCSVData <T extends Enum> implements CSVData<T>, Serial
      * @return the row with associated ID
      */
     @Override
-    public CSVEntry getRow(String id) {
-        for (CSVEntry entry : rows) {
+    public CSVRow getRow(String id) {
+        for (CSVRow entry : rows) {
             if (entry.getValue(0).equals(id)) {
                 return entry;
             }
@@ -68,12 +68,12 @@ public abstract class BaseCSVData <T extends Enum> implements CSVData<T>, Serial
     }
 
     @Override
-    public List<CSVEntry> asList() {
+    public List<CSVRow> asList() {
         return new ArrayList<>(rows);
     }
 
     @Override
-    public Iterator<CSVEntry> iterator() {
+    public Iterator<CSVRow> iterator() {
         return rows.iterator();
     }
 

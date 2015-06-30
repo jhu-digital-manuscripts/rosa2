@@ -8,7 +8,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.view.client.ListDataProvider;
 import rosa.website.model.csv.CSVData;
-import rosa.website.model.csv.CSVEntry;
+import rosa.website.model.csv.CSVRow;
 
 import java.util.Comparator;
 import java.util.logging.Logger;
@@ -17,8 +17,8 @@ public class CSVWidget extends Composite {
     private static final Logger logger = Logger.getLogger(CSVWidget.class.toString());
     private static final String NUM_REGEX = "^-?\\d+(\\.\\d+)?$";
 
-    private final CellTable<CSVEntry> table;
-    private final ListDataProvider<CSVEntry> dataProvider;
+    private final CellTable<CSVRow> table;
+    private final ListDataProvider<CSVRow> dataProvider;
 
     /**
      * Create a new blank CsvWidget.
@@ -42,7 +42,7 @@ public class CSVWidget extends Composite {
         clear();
 
         dataProvider.setList(data.asList());
-        ListHandler<CSVEntry> sortHandler = new ListHandler<CSVEntry>(dataProvider.getList()) {
+        ListHandler<CSVRow> sortHandler = new ListHandler<CSVRow>(dataProvider.getList()) {
             @Override
             public void onColumnSort(ColumnSortEvent event) {
                 super.onColumnSort(event);
@@ -64,7 +64,7 @@ public class CSVWidget extends Composite {
         }
     }
 
-    private void createColumns(CSVData  data, ColumnSortEvent.ListHandler<CSVEntry> sortHandler) {
+    private void createColumns(CSVData  data, ColumnSortEvent.ListHandler<CSVRow> sortHandler) {
         if (data.columns() == null) {
             logger.warning("CSV data has no columns assigned.");
             return;
@@ -75,9 +75,9 @@ public class CSVWidget extends Composite {
                 continue;
             }
 
-            TextColumn<CSVEntry> column = new TextColumn<CSVEntry>() {
+            TextColumn<CSVRow> column = new TextColumn<CSVRow>() {
                 @Override
-                public String getValue(CSVEntry entry) {
+                public String getValue(CSVRow entry) {
                     String val = entry.getValue(col);
 
                     // Report blank for missing or null-like values to display nicely
@@ -91,9 +91,9 @@ public class CSVWidget extends Composite {
             column.setSortable(true);
             table.addColumn(column, col.toString());
 
-            sortHandler.setComparator(column, new Comparator<CSVEntry>() {
+            sortHandler.setComparator(column, new Comparator<CSVRow>() {
                 @Override
-                public int compare(CSVEntry o1, CSVEntry o2) {
+                public int compare(CSVRow o1, CSVRow o2) {
                     String val1 = o1.getValue(col);
                     String val2 = o2.getValue(col);
 
