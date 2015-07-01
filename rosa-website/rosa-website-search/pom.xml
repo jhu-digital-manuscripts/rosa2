@@ -40,7 +40,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>${mvn.gwt.plugin.version}</version>
+
                 <executions>
                     <execution>
                         <goals>
@@ -55,6 +55,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
+
                 <executions>
                     <execution>
                         <id>attach-sources</id>

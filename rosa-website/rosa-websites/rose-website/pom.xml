@@ -110,7 +110,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>${mvn.gwt.plugin.version}</version>
 
                 <executions>
                     <execution>
@@ -141,7 +140,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>${mvn.war.plugin.version}</version>
 
                 <configuration>
                     <webResources>

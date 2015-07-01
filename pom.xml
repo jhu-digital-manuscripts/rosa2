@@ -29,6 +29,7 @@
 	    <mvn.jar.version>2.5</mvn.jar.version>
         <mvn.war.plugin.version>2.6</mvn.war.plugin.version>
         <mvn.gwt.plugin.version>${gwt.version}</mvn.gwt.plugin.version>
+        <mvn.source.plugin.version>2.4</mvn.source.plugin.version>
 
         <!-- Dependency versions -->
         <guice.version>3.0</guice.version>
@@ -268,12 +269,51 @@
     </dependencyManagement>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>${mvn.enforcer.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${mvn.compiler.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${mvn.javadoc.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${mvn.source.plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>gwt-maven-plugin</artifactId>
+                    <version>${mvn.gwt.plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${mvn.war.plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <!-- Maven enforcer plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>${mvn.enforcer.version}</version>
+
                 <executions>
                     <execution>
                         <id>enforce-versions</id>
@@ -295,7 +335,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${mvn.compiler.version}</version>
+
                 <configuration>
                     <source>${mvn.compiler.source}</source>
                     <target>${mvn.compiler.target}</target>
@@ -306,7 +346,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${mvn.javadoc.version}</version>
                 <configuration>
                     <!-- Default configuration for all reports -->
                     <excludePackageNames>rosa.archive.core.util,rosa.iiif.presentation.core.util</excludePackageNames>
