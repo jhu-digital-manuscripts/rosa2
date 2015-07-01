@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>rosa-website-impl-parent</artifactId>
+        <artifactId>rosa-websites</artifactId>
         <groupId>rosa</groupId>
         <version>2.0.0-SNAPSHOT</version>
     </parent>
@@ -32,7 +32,7 @@
             <properties>
                 <archive.path>/mnt</archive.path>
                 <gwt.output.style>obf</gwt.output.style>
-                <gwt.log.level>SEVERE</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
+                <gwt.log.level>WARNING</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
             </properties>
         </profile>
     </profiles>
