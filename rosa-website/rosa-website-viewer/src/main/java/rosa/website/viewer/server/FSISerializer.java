@@ -1,4 +1,4 @@
-package rosa.website.core.server;
+package rosa.website.viewer.server;
 
 import rosa.archive.model.Book;
 import rosa.archive.model.BookImage;

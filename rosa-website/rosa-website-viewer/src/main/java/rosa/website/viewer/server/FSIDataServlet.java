@@ -1,4 +1,4 @@
-package rosa.website.core.server;
+package rosa.website.viewer.server;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;

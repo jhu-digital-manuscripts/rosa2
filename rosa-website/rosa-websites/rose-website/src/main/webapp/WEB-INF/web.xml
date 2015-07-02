@@ -34,7 +34,7 @@
     <!-- FSI data service -->
     <servlet>
         <servlet-name>fsiService</servlet-name>
-        <servlet-class>rosa.website.core.server.FSIDataServlet</servlet-class>
+        <servlet-class>rosa.website.viewer.server.FSIDataServlet</servlet-class>
         <load-on-startup>2</load-on-startup>
     </servlet>
     <servlet-mapping>

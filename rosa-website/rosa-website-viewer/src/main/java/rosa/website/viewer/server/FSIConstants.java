@@ -1,4 +1,4 @@
-package rosa.website.core.server;
+package rosa.website.viewer.server;
 
 public interface FSIConstants {
     String TAG_FSI_PARAMETER = "fsi_parameter";
