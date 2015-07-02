@@ -135,7 +135,7 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
     }
 
     private void doResize() {
-        int width = getParent().getOffsetWidth();
+        int width = getParent().getOffsetWidth() - 80;
         int height = getParent().getOffsetHeight()
                 - permissionPanel.getOffsetHeight() - 32    // Subtract constant for top/bottom margins on probable <p> in permissions
                 - toolbar.getOffsetHeight();

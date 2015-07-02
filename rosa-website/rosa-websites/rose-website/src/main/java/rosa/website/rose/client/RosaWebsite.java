@@ -82,23 +82,12 @@ public class RosaWebsite implements EntryPoint {
         addSidebar(clientFactory);
         main.add(main_content);
 
-        main_content.setSize((Window.getClientWidth() - SIDEBAR_WIDTH) + "px",
-                (Window.getClientHeight() - HEADER_HEIGHT) + "px");
         main_content.addStyleName("Content");
         RootLayoutPanel.get().add(main);
 
         history_handler.handleCurrentHistory();
 
         bind(eventBus, sidebarPresenter);
-
-        Window.addResizeHandler(new ResizeHandler() {
-            @Override
-            public void onResize(ResizeEvent event) {
-                main_content.setSize(
-                        (Window.getClientWidth() - SIDEBAR_WIDTH) + "px",
-                        (Window.getClientHeight() - HEADER_HEIGHT) + "px");
-            }
-        });
     }
 
     private native boolean clientSupportsFlash() /*-{
