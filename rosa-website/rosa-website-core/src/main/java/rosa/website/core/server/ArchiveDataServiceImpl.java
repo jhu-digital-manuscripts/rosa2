@@ -361,32 +361,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         return result;
     }
 
-    private BookCollection loadBookCollection(String collection) throws IOException {
-        Object obj = objectCache.get(collection);
-        if (obj != null) {
-            return (BookCollection) obj;
-        }
-
-        List<String> errors = new ArrayList<>();
-        BookCollection col = null;
-
-        try {
-            col = archiveStore.loadBookCollection(collection, errors);
-            checkErrors(errors);
-
-            updateCache(collection, col);
-        } catch (Exception e) {
-            // TODO dont catch Exception...
-            logger.log(Level.SEVERE, "An error has occurred while loading a collection. [" + collection + "]", e);
-        }
-
-        return col;
-    }
-
-    private Book loadBook(String collection, String book) throws IOException {
-        return loadBook(loadBookCollection(collection), book);
-    }
-
     @Override
     public String loadPermissionStatement(String collection, String book, String lang) throws IOException {
         return loadBook(collection, book).getPermission(lang).getPermission();
@@ -480,6 +454,32 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         return model;
     }
 
+    private BookCollection loadBookCollection(String collection) throws IOException {
+        Object obj = objectCache.get(collection);
+        if (obj != null) {
+            return (BookCollection) obj;
+        }
+
+        List<String> errors = new ArrayList<>();
+        BookCollection col = null;
+
+        try {
+            col = archiveStore.loadBookCollection(collection, errors);
+            checkErrors(errors);
+
+            updateCache(collection, col);
+        } catch (Exception e) {
+            // TODO dont catch Exception...
+            logger.log(Level.SEVERE, "An error has occurred while loading a collection. [" + collection + "]", e);
+        }
+
+        return col;
+    }
+
+    private Book loadBook(String collection, String book) throws IOException {
+        return loadBook(loadBookCollection(collection), book);
+    }
+
     private CharacterNamesCSV loadCharacterNames(String collection) throws IOException {
         logger.info("Loading character_names.csv for collection [" + collection + "]");
         String key = CharacterNamesCSV.class + "." + collection;
@@ -567,13 +567,19 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                     md.getDate(),
                     md.getOrigin(),
                     md.getType(),
-                    String.valueOf(hasRose ? rose.getNumberOfIllustrations() : md.getNumberOfIllustrations()),
-                    String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages())
+                    String.valueOf(hasRose ?
+                            nonNegative(rose.getNumberOfIllustrations()) : nonNegative(md.getNumberOfIllustrations())),
+                    String.valueOf(hasRose ?
+                            nonNegative(rose.getNumberOfPages()) : nonNegative(md.getNumberOfPages()))
             );
         } else {
             return new CSVRow(book.getId(), "", "", "", "", "", "", "", "", "");
         }
 
+    }
+
+    private int nonNegative(int num) {
+        return num < 0 ? 0 : num;
     }
 
     private Book loadBook(BookCollection collection, String book) throws IOException {
@@ -604,7 +610,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
      * Find the number of times each illustration in the collection is used through
      * all of the books in the collection.
      *
-     * @param positions map associating illustration titles with all positions it has in books
+     * @param positions map associating illustration titles with all positions (page index) it has in books
      * @param frequency map associating illustration titles with the frequency it appears in books
      * @param collection the collection of books
      */

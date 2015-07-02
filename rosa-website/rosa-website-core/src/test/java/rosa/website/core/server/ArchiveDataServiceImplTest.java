@@ -127,7 +127,7 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
         assertEquals("Unexpected date found.", "1571", row.getValue(BookDataCSV.Column.DATE));
         assertEquals("Unexpected origin found.", "", row.getValue(BookDataCSV.Column.ORIGIN));
         assertEquals("Unexpected type found.", "", row.getValue(BookDataCSV.Column.TYPE));
-        assertEquals("Unexpected number of illustrations found.", "-1", row.getValue(BookDataCSV.Column.NUM_ILLUS));
+        assertEquals("Unexpected number of illustrations found.", "0", row.getValue(BookDataCSV.Column.NUM_ILLUS));
         assertEquals("Unexpected number of pages found.", "211", row.getValue(BookDataCSV.Column.NUM_FOLIOS));
     }
 
