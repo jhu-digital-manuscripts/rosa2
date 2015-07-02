@@ -52,6 +52,7 @@ public class CSVWidget extends Composite {
         createColumns(data, sortHandler);
 
         table.addColumnSortHandler(sortHandler);
+        table.setPageSize(data.size());
         table.flush();
     }
 
