@@ -15,6 +15,7 @@ import rosa.archive.model.ImageList;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.event.BookSelectEvent;
+import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController.ChangeHandler;
 import rosa.website.viewer.client.jsviewer.codexview.CodexImage;
@@ -90,6 +91,7 @@ public class JSViewerActivity implements Activity {
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        LoadingPanel.INSTANCE.show();
         this.eventBus.fireEvent(new BookSelectEvent(true, book));
         panel.setWidget(view);
 
@@ -97,6 +99,7 @@ public class JSViewerActivity implements Activity {
             @Override
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, "Failed to load image list.", caught);
+                LoadingPanel.INSTANCE.hide();
             }
 
             @Override
@@ -111,6 +114,7 @@ public class JSViewerActivity implements Activity {
                 }
 
                 createJSviewer();
+                LoadingPanel.INSTANCE.hide();
             }
         });
     }
@@ -301,5 +305,6 @@ public class JSViewerActivity implements Activity {
 
     private void finishActivity() {
         this.eventBus.fireEvent(new BookSelectEvent(false, book));
+        LoadingPanel.INSTANCE.hide();
     }
 }

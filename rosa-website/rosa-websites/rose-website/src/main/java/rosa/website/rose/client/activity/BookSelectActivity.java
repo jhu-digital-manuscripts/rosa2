@@ -11,6 +11,7 @@ import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.BookSelectPlace;
 import rosa.website.core.client.view.BookSelectView;
+import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
 import rosa.website.rose.client.WebsiteConfig;
@@ -48,17 +49,18 @@ public class BookSelectActivity implements Activity {
 
     @Override
     public void onCancel() {
-
+        LoadingPanel.INSTANCE.hide();
     }
 
     @Override
     public void onStop() {
-
+        LoadingPanel.INSTANCE.hide();
     }
 
     @Override
     public void start(final AcceptsOneWidget panel, EventBus eventBus) {
         panel.setWidget(view);
+        LoadingPanel.INSTANCE.show();
 
         service.loadBookSelectionData(
                 WebsiteConfig.INSTANCE.collection(),
@@ -68,10 +70,12 @@ public class BookSelectActivity implements Activity {
                     @Override
                     public void onFailure(Throwable caught) {
                         logger.log(Level.SEVERE, "Failed to load book selection data.", caught);
+                        LoadingPanel.INSTANCE.hide();
                     }
 
                     @Override
                     public void onSuccess(BookSelectList result) {
+                        LoadingPanel.INSTANCE.hide();
                         result.setCategory(category);
                         view.setData(result);
                     }

@@ -13,6 +13,7 @@ import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.view.CSVDataView;
+import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVType;
 import rosa.website.rose.client.RosaHistoryConfig;
@@ -54,11 +55,13 @@ public class CSVDataActivity implements Activity {
     @Override
     public void onCancel() {
         view.clear();
+        LoadingPanel.INSTANCE.hide();
     }
 
     @Override
     public void onStop() {
         view.clear();
+        LoadingPanel.INSTANCE.hide();
     }
 
     @Override
@@ -72,15 +75,18 @@ public class CSVDataActivity implements Activity {
             return;
         }
 
+        LoadingPanel.INSTANCE.show();
         service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, "Failed to load CSV data.", caught);
+                LoadingPanel.INSTANCE.hide();
             }
 
             @Override
             public void onSuccess(CSVData result) {
                 handleCsvData(result);
+                LoadingPanel.INSTANCE.hide();
             }
         });
 

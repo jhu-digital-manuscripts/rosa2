@@ -19,6 +19,7 @@ import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
+import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewerHTMLBuilder;
@@ -116,15 +117,18 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     @Override
     public void onCancel() {
         this.eventBus.fireEvent(new BookSelectEvent(false, book));
+        LoadingPanel.INSTANCE.hide();
     }
 
     @Override
     public void onStop() {
         this.eventBus.fireEvent(new BookSelectEvent(false, book));
+        LoadingPanel.INSTANCE.hide();
     }
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        LoadingPanel.INSTANCE.show();
         this.eventBus.fireEvent(new BookSelectEvent(true, book));
         panel.setWidget(view);
 
@@ -133,6 +137,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
             @Override
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, "Failed to load FSI data.");
+                LoadingPanel.INSTANCE.hide();
             }
 
             @Override
@@ -146,6 +151,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                 } else {
                     setupFlashViewer(-1);
                 }
+                LoadingPanel.INSTANCE.hide();
             }
         });
     }

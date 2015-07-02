@@ -11,6 +11,7 @@ import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.view.BookDescriptionView;
+import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.model.view.BookDescriptionViewModel;
 import rosa.website.pizan.client.WebsiteConfig;
 
@@ -58,6 +59,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        LoadingPanel.INSTANCE.show();
         this.eventBus.fireEvent(new BookSelectEvent(true, bookName));
         panel.setWidget(view);
         view.setPresenter(this);
@@ -68,6 +70,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, "Failed to load book description. ["
                         + WebsiteConfig.INSTANCE.collection() + "," + bookName + "]");
+                LoadingPanel.INSTANCE.hide();
             }
 
             @Override
@@ -75,6 +78,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
                 model = result;
                 view.setMetadata(result.getMetadata());
                 view.setDescription(result.getProse());
+                LoadingPanel.INSTANCE.hide();
             }
         });
     }
@@ -102,5 +106,6 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     private void finishActivity() {
         view.clear();
         eventBus.fireEvent(new BookSelectEvent(false, bookName));
+        LoadingPanel.INSTANCE.hide();
     }
 }

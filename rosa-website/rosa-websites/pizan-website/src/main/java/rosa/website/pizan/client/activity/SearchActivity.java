@@ -9,6 +9,7 @@ import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.view.AdvancedSearchView;
+import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.model.select.BookInfo;
 
 public class SearchActivity implements Activity {
@@ -33,18 +34,22 @@ public class SearchActivity implements Activity {
     @Override
     public void onCancel() {
         view.clear();
+        LoadingPanel.INSTANCE.hide();
     }
 
     @Override
     public void onStop() {
         view.clear();
+        LoadingPanel.INSTANCE.hide();
     }
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        LoadingPanel.INSTANCE.show();
         panel.setWidget(view);
 
         setFakeSearchModel();
+        LoadingPanel.INSTANCE.hide();
     }
 
     private void setFakeSearchModel() {
