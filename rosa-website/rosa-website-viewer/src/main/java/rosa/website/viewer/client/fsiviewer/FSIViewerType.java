@@ -1,4 +1,4 @@
-package rosa.website.core.client.widget;
+package rosa.website.viewer.client.fsiviewer;
 
 public enum FSIViewerType {
     PAGES("fsipages", "pages.fsi"), // Book view (show openings)

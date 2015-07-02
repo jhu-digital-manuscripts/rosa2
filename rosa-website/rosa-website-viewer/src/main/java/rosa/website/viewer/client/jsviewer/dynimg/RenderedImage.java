@@ -1,4 +1,4 @@
-package rosa.website.core.client.jsviewer.dynimg;
+package rosa.website.viewer.client.jsviewer.dynimg;
 
 /**
  * Image rendered by an image server.

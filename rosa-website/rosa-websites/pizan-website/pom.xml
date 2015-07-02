@@ -78,6 +78,11 @@
 
         <dependency>
             <groupId>rosa</groupId>
+            <artifactId>rosa-website-viewer</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa</groupId>
             <artifactId>rosa-website-core</artifactId>
             <exclusions>
                 <exclusion>
@@ -91,6 +96,10 @@
                 <exclusion>
                     <groupId>rosa</groupId>
                     <artifactId>rosa-website-model</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>rosa</groupId>
+                    <artifactId>rosa-website-viewer</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -131,6 +140,7 @@
                         <compileSourcesArtifact>rosa:rosa-archive-model</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-archive-core</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-website-model</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa:rosa-website-viewer</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-website-core</compileSourcesArtifact>
                     </compileSourcesArtifacts>
                 </configuration>

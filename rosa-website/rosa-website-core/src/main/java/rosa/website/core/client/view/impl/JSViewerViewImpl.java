@@ -11,11 +11,11 @@ import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import rosa.website.core.client.Labels;
-import rosa.website.core.client.jsviewer.codexview.CodexController;
-import rosa.website.core.client.jsviewer.codexview.CodexModel;
-import rosa.website.core.client.jsviewer.codexview.CodexView;
-import rosa.website.core.client.jsviewer.codexview.CodexView.Mode;
-import rosa.website.core.client.jsviewer.dynimg.ImageServer;
+import rosa.website.viewer.client.jsviewer.codexview.CodexController;
+import rosa.website.viewer.client.jsviewer.codexview.CodexModel;
+import rosa.website.viewer.client.jsviewer.codexview.CodexView;
+import rosa.website.viewer.client.jsviewer.codexview.CodexView.Mode;
+import rosa.website.viewer.client.jsviewer.dynimg.ImageServer;
 import rosa.website.core.client.view.JSViewerView;
 
 public class JSViewerViewImpl extends Composite implements JSViewerView {

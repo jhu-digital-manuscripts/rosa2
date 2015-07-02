@@ -17,6 +17,7 @@
     <inherits name="rosa.archive.RosaArchiveModel"/>
     <inherits name="rosa.archive.RosaArchiveCore"/>
     <inherits name="rosa.website.model.RosaWebsiteModel"/>
+    <inherits name="rosa.website.viewer.RosaWebsiteViewer"/>
     <inherits name="rosa.website.core.RosaWebsiteCore"/>
 
     <inherits name='com.google.gwt.user.theme.chrome.Chrome' />

@@ -1,4 +1,4 @@
-package rosa.website.core.client.jsviewer.codexview;
+package rosa.website.viewer.client.jsviewer.codexview;
 
 public interface CodexOpening {
     String label();

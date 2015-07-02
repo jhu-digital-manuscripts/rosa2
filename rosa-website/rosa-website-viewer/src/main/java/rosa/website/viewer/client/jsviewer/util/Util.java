@@ -1,4 +1,4 @@
-package rosa.website.core.client.jsviewer.util;
+package rosa.website.viewer.client.jsviewer.util;
 
 import com.google.gwt.xml.client.Element;
 import com.google.gwt.xml.client.Node;

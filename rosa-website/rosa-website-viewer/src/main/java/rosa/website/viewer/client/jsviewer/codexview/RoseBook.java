@@ -1,6 +1,6 @@
-package rosa.website.core.client.jsviewer.codexview;
+package rosa.website.viewer.client.jsviewer.codexview;
 
-import rosa.website.core.client.jsviewer.util.Util;
+import rosa.website.viewer.client.jsviewer.util.Util;
 
 // TODO handle missing image
 // TODO  handle cropping, could crop dynamically???

@@ -1,4 +1,4 @@
-package rosa.website.core.client.jsviewer.codexview;
+package rosa.website.viewer.client.jsviewer.codexview;
 
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
@@ -35,10 +35,10 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.StackLayoutPanel;
 import com.google.gwt.user.client.ui.Widget;
-import rosa.website.core.client.jsviewer.codexview.CodexController.ChangeHandler;
-import rosa.website.core.client.jsviewer.dynimg.ImageServer;
-import rosa.website.core.client.jsviewer.dynimg.ImageViewport;
-import rosa.website.core.client.jsviewer.dynimg.WebImage;
+import rosa.website.viewer.client.jsviewer.codexview.CodexController.ChangeHandler;
+import rosa.website.viewer.client.jsviewer.dynimg.ImageServer;
+import rosa.website.viewer.client.jsviewer.dynimg.ImageViewport;
+import rosa.website.viewer.client.jsviewer.dynimg.WebImage;
 
 import java.util.List;
 

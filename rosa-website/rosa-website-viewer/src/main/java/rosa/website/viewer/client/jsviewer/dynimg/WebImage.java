@@ -1,4 +1,4 @@
-package rosa.website.core.client.jsviewer.dynimg;
+package rosa.website.viewer.client.jsviewer.dynimg;
 
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.ImageElement;

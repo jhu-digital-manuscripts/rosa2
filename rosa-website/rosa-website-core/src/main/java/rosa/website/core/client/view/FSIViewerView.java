@@ -4,9 +4,9 @@ import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
-import rosa.website.core.client.widget.FSIViewer.FSIPagesCallback;
-import rosa.website.core.client.widget.FSIViewer.FSIShowcaseCallback;
-import rosa.website.core.client.widget.FSIViewerType;
+import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
+import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
+import rosa.website.viewer.client.fsiviewer.FSIViewerType;
 
 public interface FSIViewerView extends IsWidget {
 

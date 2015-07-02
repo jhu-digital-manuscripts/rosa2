@@ -1,4 +1,4 @@
-package rosa.website.core.client.widget;
+package rosa.website.viewer.client.fsiviewer;
 
 import com.google.gwt.http.client.URL;
 

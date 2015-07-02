@@ -19,10 +19,10 @@ import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
-import rosa.website.core.client.widget.FSIViewer.FSIPagesCallback;
-import rosa.website.core.client.widget.FSIViewer.FSIShowcaseCallback;
-import rosa.website.core.client.widget.FSIViewerHTMLBuilder;
-import rosa.website.core.client.widget.FSIViewerType;
+import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
+import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
+import rosa.website.viewer.client.fsiviewer.FSIViewerHTMLBuilder;
+import rosa.website.viewer.client.fsiviewer.FSIViewerType;
 import rosa.website.model.view.FSIViewerModel;
 import rosa.website.pizan.client.WebsiteConfig;
 

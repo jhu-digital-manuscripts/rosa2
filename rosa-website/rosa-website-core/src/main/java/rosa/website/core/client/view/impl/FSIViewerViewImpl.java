@@ -12,10 +12,10 @@ import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import rosa.website.core.client.view.FSIViewerView;
-import rosa.website.core.client.widget.FSIViewer;
-import rosa.website.core.client.widget.FSIViewer.FSIPagesCallback;
-import rosa.website.core.client.widget.FSIViewer.FSIShowcaseCallback;
-import rosa.website.core.client.widget.FSIViewerType;
+import rosa.website.viewer.client.fsiviewer.FSIViewer;
+import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
+import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
+import rosa.website.viewer.client.fsiviewer.FSIViewerType;
 
 public class FSIViewerViewImpl extends Composite implements FSIViewerView, RequiresResize {
 

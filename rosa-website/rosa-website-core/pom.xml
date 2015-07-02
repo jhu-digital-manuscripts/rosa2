@@ -48,6 +48,11 @@
             <artifactId>rosa-website-model</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-website-viewer</artifactId>
+        </dependency>
+
         <!-- Testing dependencies -->
 
         <dependency>

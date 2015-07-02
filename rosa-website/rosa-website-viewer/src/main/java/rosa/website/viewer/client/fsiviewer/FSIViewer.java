@@ -1,4 +1,4 @@
-package rosa.website.core.client.widget;
+package rosa.website.viewer.client.fsiviewer;
 
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
@@ -74,11 +74,11 @@ public class FSIViewer extends Composite {
          $wnd.fsipages_DoFSCommand = function (fsievent, args) {
              switch (fsievent) {
                  case "ImageInfo":
-                     cb.@rosa.website.core.client.widget.FSIViewer.FSIPagesCallback::imageInfo(Ljava/lang/String;)(args);
+                     cb.@rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback::imageInfo(Ljava/lang/String;)(args);
                      break;
 
                  case "onPagesPageChanged":
-                     cb.@rosa.website.core.client.widget.FSIViewer.FSIPagesCallback::pageChanged(I)(args);
+                     cb.@rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback::pageChanged(I)(args);
                      break;
              }
          }
@@ -93,7 +93,7 @@ public class FSIViewer extends Composite {
         $wnd.fsishowcase_DoFSCommand = function (fsievent, args) {
             switch (fsievent) {
                 case "ImageSelected":
-                    cb.@rosa.website.core.client.widget.FSIViewer.FSIShowcaseCallback::imageSelected(I)(args);
+                    cb.@rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback::imageSelected(I)(args);
                     break;
             }
         }

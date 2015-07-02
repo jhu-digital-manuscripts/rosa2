@@ -1,4 +1,4 @@
-package rosa.website.core.client.jsviewer.codexview;
+package rosa.website.viewer.client.jsviewer.codexview;
 
 import com.google.gwt.animation.client.Animation;
 import com.google.gwt.dom.client.Element;

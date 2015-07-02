@@ -1,4 +1,4 @@
-package rosa.website.core.client.jsviewer.dynimg;
+package rosa.website.viewer.client.jsviewer.dynimg;
 
 
 // TODO use doubles to help rounding issues?
