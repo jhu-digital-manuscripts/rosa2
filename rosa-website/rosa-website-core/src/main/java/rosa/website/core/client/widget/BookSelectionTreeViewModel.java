@@ -11,6 +11,7 @@ import rosa.website.model.select.BookSelection;
 import rosa.website.model.select.SelectCategory;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -98,6 +99,8 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
         for (Map.Entry<String, BookSelection> entry : selections.entrySet()) {
             selectionList.add(entry.getValue());
         }
+        Collections.sort(selectionList);
+
         return selectionList;
     }
 
@@ -122,6 +125,7 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
                 break;
             }
         }
+        Collections.sort(infos);
 
         return infos;
     }

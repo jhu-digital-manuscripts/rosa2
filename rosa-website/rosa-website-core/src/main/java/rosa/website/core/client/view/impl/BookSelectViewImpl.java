@@ -14,6 +14,7 @@ import rosa.website.model.select.BookInfo;
 import rosa.website.model.select.BookSelectList;
 
 public class BookSelectViewImpl extends Composite implements BookSelectView {
+    private static final int DEFAULT_WIDTH = 600;       // pixels
 
     private SimplePanel root;
 
@@ -36,11 +37,14 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
 
         BookSelectionBrowserResources css = GWT.create(BookSelectionBrowserResources.class);
         CellBrowser browser = new CellBrowser.Builder(browserModel, null) // this builder constructor uses unchecked operation
-//                .loadingIndicator(null)
+                .pageSize(Integer.MAX_VALUE)                    // Set page size absurdly high to prevent paging
                 .resources(css)
                 .build();
         browser.setKeyboardSelectionPolicy(KeyboardSelectionPolicy.BOUND_TO_SELECTION);
         browser.setSize("100%", "100%");
+
+        int parent_width = getParent() == null ? DEFAULT_WIDTH : getParent().getOffsetWidth() - 30;
+        browser.setDefaultColumnWidth(parent_width / 2);
 
         root.setWidget(browser);
     }
@@ -57,8 +61,8 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
 
     @Override
     public void onResize() {
-        int width = this.getParent().getOffsetWidth();
-        int height = this.getParent().getOffsetHeight();
+        int width = this.getParent().getOffsetWidth() - 50;
+        int height = this.getParent().getOffsetHeight() - 40;
 
         resize(width + "px", height + "px");
     }
