@@ -1,5 +1,6 @@
 package rosa.website.core.client.widget;
 
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.ColumnSortEvent;
 import com.google.gwt.user.cellview.client.ColumnSortEvent.ListHandler;
@@ -26,7 +27,9 @@ public class CSVWidget extends Composite {
     public CSVWidget() {
         SimplePanel root = new SimplePanel();
 
-        this.table = new CellTable<>();
+        CellTable.Resources css = GWT.create(CSVCellTableResources.class);
+
+        this.table = new CellTable<>(Integer.MAX_VALUE, css);
         this.dataProvider = new ListDataProvider<>();
 
         dataProvider.addDataDisplay(table);

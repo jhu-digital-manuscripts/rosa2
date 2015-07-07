@@ -125,7 +125,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         for (String bookName : col.books()) {
             Book book = loadBook(col, bookName);
 
-            if (book == null) {
+            if (book == null || book.getId().contains(".ignore")) {
                 continue;
             }
 
@@ -219,7 +219,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         List<CSVRow> entries = new ArrayList<>();
         for (String bookName : col.books()) {
             Book book = loadBook(collection, bookName);
-            if (book == null) {
+            if (book == null || book.getId().contains(".ignore")) {
                 continue;
             }
 
@@ -269,7 +269,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         List<BookSelectData> entries = new ArrayList<>();
         for (String bookName : col.books()) {
             Book book = loadBook(collection, bookName);
-            if (book == null) {
+            if (book == null || book.getId().contains(".ignore")) {
                 continue;
             }
 
