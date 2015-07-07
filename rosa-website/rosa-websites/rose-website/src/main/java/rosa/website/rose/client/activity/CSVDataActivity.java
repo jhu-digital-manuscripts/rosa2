@@ -3,6 +3,8 @@ package rosa.website.rose.client.activity;
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
+import com.google.gwt.place.shared.Place;
+import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.resources.client.ExternalTextResource;
 import com.google.gwt.resources.client.ResourceCallback;
 import com.google.gwt.resources.client.ResourceException;
@@ -14,18 +16,21 @@ import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVType;
 import rosa.website.rose.client.RosaHistoryConfig;
 import rosa.website.rose.client.WebsiteConfig;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
  * Activity for displaying CSV data in table form.
  */
-public class CSVDataActivity implements Activity {
+public class CSVDataActivity implements Activity, CSVDataView.Presenter {
     private static final Logger logger = Logger.getLogger(CSVDataActivity.class.toString());
 
     private final CSVDataPlace place;
@@ -33,6 +38,7 @@ public class CSVDataActivity implements Activity {
     private String lang;
 
     private ArchiveDataServiceAsync service;
+    private PlaceController placeController;
 
     /**
      * Create a new CSVDataActivity.
@@ -45,6 +51,7 @@ public class CSVDataActivity implements Activity {
         this.view = clientFactory.csvDataView();
         this.service = clientFactory.archiveDataService();
         this.lang = LocaleInfo.getCurrentLocale().getLocaleName();
+        this.placeController = clientFactory.placeController();
     }
 
     @Override
@@ -68,6 +75,9 @@ public class CSVDataActivity implements Activity {
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         logger.info("Starting CSVDataActivity. Current state: " + place.toString());
         panel.setWidget(view);
+        view.setPresenter(this);
+
+        LoadingPanel.INSTANCE.show();
 
         CSVType type = RosaHistoryConfig.getCsvType(place.getName());
         if (type == null) {
@@ -75,7 +85,7 @@ public class CSVDataActivity implements Activity {
             return;
         }
 
-        LoadingPanel.INSTANCE.show();
+        final Map<Enum, String> links = getPossibleLinks(type);
         service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
@@ -85,7 +95,7 @@ public class CSVDataActivity implements Activity {
 
             @Override
             public void onSuccess(CSVData result) {
-                handleCsvData(result);
+                view.setData(result, links);
                 LoadingPanel.INSTANCE.hide();
             }
         });
@@ -110,7 +120,20 @@ public class CSVDataActivity implements Activity {
         }
     }
 
-    private void handleCsvData(CSVData data) {
-        view.setData(data);
+    private Map<Enum, String> getPossibleLinks(CSVType type) {
+        Map<Enum, String> map = new HashMap<>();
+
+        switch (type) {
+            case COLLECTION_BOOKS:
+                map.put(BookDataCSV.Column.ID, "book");
+                return map;
+            default:
+                return null;
+        }
+    }
+
+    @Override
+    public void goTo(Place place) {
+        placeController.goTo(place);
     }
 }

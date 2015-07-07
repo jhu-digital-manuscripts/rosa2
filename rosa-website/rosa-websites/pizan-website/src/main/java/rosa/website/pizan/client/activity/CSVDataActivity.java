@@ -3,6 +3,8 @@ package rosa.website.pizan.client.activity;
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
+import com.google.gwt.place.shared.Place;
+import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.resources.client.ExternalTextResource;
 import com.google.gwt.resources.client.ResourceCallback;
 import com.google.gwt.resources.client.ResourceException;
@@ -19,13 +21,14 @@ import rosa.website.model.csv.CSVType;
 import rosa.website.pizan.client.HistoryConfig;
 import rosa.website.pizan.client.WebsiteConfig;
 
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
  * Activity for displaying CSV data in table form.
  */
-public class CSVDataActivity implements Activity {
+public class CSVDataActivity implements Activity, CSVDataView.Presenter {
     private static final Logger logger = Logger.getLogger(CSVDataActivity.class.toString());
 
     private final CSVDataPlace place;
@@ -33,6 +36,7 @@ public class CSVDataActivity implements Activity {
     private String lang;
 
     private ArchiveDataServiceAsync service;
+    private PlaceController placeController;
 
     /**
      * Create a new CSVDataActivity.
@@ -45,6 +49,7 @@ public class CSVDataActivity implements Activity {
         this.view = clientFactory.csvDataView();
         this.service = clientFactory.archiveDataService();
         this.lang = LocaleInfo.getCurrentLocale().getLocaleName();
+        this.placeController = clientFactory.placeController();
     }
 
     @Override
@@ -69,6 +74,7 @@ public class CSVDataActivity implements Activity {
         LoadingPanel.INSTANCE.show();
         logger.info("Starting CSVDataActivity. Current state: " + place.toString());
         panel.setWidget(view);
+        view.setPresenter(this);
 
         CSVType type = HistoryConfig.getCsvType(place.getName());
         if (type == null) {
@@ -85,10 +91,14 @@ public class CSVDataActivity implements Activity {
 
             @Override
             public void onSuccess(CSVData result) {
-                handleCsvData(result);
+                handleCsvData(result, null);
                 LoadingPanel.INSTANCE.hide();
             }
         });
+    }
+
+    private void handleCsvData(CSVData data, Map<Enum, String> links) {
+        view.setData(data, links);
 
         ExternalTextResource resource = HistoryConfig.getCsvDescription(place.getName());
         if (resource != null) {
@@ -110,7 +120,8 @@ public class CSVDataActivity implements Activity {
         }
     }
 
-    private void handleCsvData(CSVData data) {
-        view.setData(data);
+    @Override
+    public void goTo(Place place) {
+        placeController.goTo(place);
     }
 }

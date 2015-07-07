@@ -8,6 +8,8 @@ import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.widget.CSVWidget;
 import rosa.website.model.csv.CSVData;
 
+import java.util.Map;
+
 public class CSVDataViewImpl extends Composite implements CSVDataView {
 
     private CSVWidget display;
@@ -33,8 +35,18 @@ public class CSVDataViewImpl extends Composite implements CSVDataView {
     }
 
     @Override
+    public void setPresenter(Presenter presenter) {
+        display.setPresenter(presenter);
+    }
+
+    @Override
     public void setData(CSVData data) {
         display.setData(data);
+    }
+
+    @Override
+    public void setData(CSVData data, Map<Enum, String> links) {
+        display.setData(data, links);
     }
 
     @Override
