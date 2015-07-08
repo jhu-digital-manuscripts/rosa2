@@ -1,12 +1,16 @@
 package rosa.website.core.client.view.impl;
 
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
+import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
@@ -18,7 +22,7 @@ import rosa.website.viewer.client.jsviewer.codexview.CodexView.Mode;
 import rosa.website.viewer.client.jsviewer.dynimg.ImageServer;
 import rosa.website.core.client.view.JSViewerView;
 
-public class JSViewerViewImpl extends Composite implements JSViewerView {
+public class JSViewerViewImpl extends Composite implements JSViewerView, RequiresResize {
     private FlowPanel root;
     private FlowPanel readerToolbar;
     private SimplePanel permissionPanel;
@@ -30,6 +34,13 @@ public class JSViewerViewImpl extends Composite implements JSViewerView {
     private TextBox goTo;
 
     private CodexView codexView;
+
+    private Timer resizeTimer = new Timer() {
+        @Override
+        public void run() {
+            doResize();
+        }
+    };
 
     /**  */
     public JSViewerViewImpl() {
@@ -72,6 +83,13 @@ public class JSViewerViewImpl extends Composite implements JSViewerView {
         codexView = new CodexView(imageServer, model, controller, (ScrollPanel) this.getParent());
         root.insert(codexView, 0);
         setViewerMode(mode);
+
+        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+            @Override
+            public void execute() {
+                doResize();
+            }
+        });
     }
 
     @Override
@@ -122,5 +140,17 @@ public class JSViewerViewImpl extends Composite implements JSViewerView {
     @Override
     public HandlerRegistration addGoToKeyDownHandler(KeyDownHandler handler) {
         return goTo.addKeyDownHandler(handler);
+    }
+
+    @Override
+    public void onResize() {
+        resizeTimer.schedule(100);
+    }
+
+    private void doResize() {   // TODO take image aspect ratio into account, so image isn't squished!
+        int width = getOffsetWidth() - 30;
+        int height = getOffsetHeight() - 30;
+
+        codexView.setSize(width + "px", height + "px");
     }
 }
