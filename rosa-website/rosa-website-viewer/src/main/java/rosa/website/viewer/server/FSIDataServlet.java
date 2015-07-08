@@ -2,6 +2,7 @@ package rosa.website.viewer.server;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.google.inject.Singleton;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
@@ -37,6 +38,7 @@ import java.util.logging.Logger;
  *
  * {@code servlet/collectionName/bookName/(pages|showcase)}
  */
+@Singleton
 public class FSIDataServlet extends HttpServlet {
     private static final Logger logger = Logger.getLogger(FSIDataServlet.class.toString());
 
@@ -77,7 +79,7 @@ public class FSIDataServlet extends HttpServlet {
         logger.info("Initializing FSIDataService.");
         Injector injector = Guice.createInjector(new ArchiveCoreModule());
 
-        String path = getServletContext().getInitParameter("archive-path");
+        String path = getServletContext().getInitParameter("archive.path");
         if (path == null || path.isEmpty()) {
             logger.warning("'archive-path' not specified. Using default value [/mnt]");
             path = "/mnt";

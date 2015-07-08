@@ -1,5 +1,7 @@
 package rosa.website.core.server;
 
+import com.google.inject.Singleton;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -15,6 +17,7 @@ import java.util.Date;
  * Lifted from the Rosa1 CacheFilter.
  * https://raw.githubusercontent.com/jhu-digital-manuscripts/rosa/master/rosa-website-common/src/main/java/rosa/gwt/common/server/CacheFilter.java
  */
+@Singleton
 public class CacheFilter implements Filter {
     private static final long YEAR = 31556926000l;
     private static final long WEEK = 604800000;

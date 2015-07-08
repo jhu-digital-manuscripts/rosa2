@@ -32,8 +32,8 @@
         </dependency>
 
         <dependency>
-            <groupId>com.google.gwt.inject</groupId>
-            <artifactId>gin</artifactId>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-servlet</artifactId>
         </dependency>
 
         <!-- Internal dependencies -->
@@ -51,6 +51,16 @@
         <dependency>
             <groupId>rosa</groupId>
             <artifactId>rosa-website-viewer</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa.search</groupId>
+            <artifactId>rosa-search-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa.search</groupId>
+            <artifactId>rosa-search-core</artifactId>
         </dependency>
 
         <!-- Testing dependencies -->

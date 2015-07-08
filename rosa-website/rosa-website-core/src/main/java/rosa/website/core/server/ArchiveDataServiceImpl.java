@@ -1,18 +1,12 @@
 package rosa.website.core.server;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import com.google.inject.Guice;
-import com.google.inject.Injector;
+import com.google.inject.Inject;
+import com.google.inject.Singleton;
+import com.google.inject.name.Named;
 import org.apache.commons.lang3.math.NumberUtils;
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.Store;
-import rosa.archive.core.StoreImpl;
-import rosa.archive.core.check.BookChecker;
-import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.ImageListSerializer;
-import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.*;
 import rosa.website.core.client.ArchiveDataService;
 import rosa.website.model.view.BookDescriptionViewModel;
@@ -32,6 +26,7 @@ import rosa.website.model.select.SelectCategory;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -42,6 +37,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+@Singleton
 public class ArchiveDataServiceImpl extends RemoteServiceServlet implements ArchiveDataService {
     private static final Logger logger = Logger.getLogger("");
     private static final String DEFAULT_LANGUAGE = "en";
@@ -56,6 +52,12 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     /** No-arg constructor needed to make GWT RPC work. */
     public ArchiveDataServiceImpl() {}
 
+    @Inject
+    public ArchiveDataServiceImpl(StoreProvider storeProvider, @Named("archive.path") String archivePath) {
+        logger.info("Starting ArchiveDataService with archive at path (" + archivePath + ")");
+        this.archiveStore = storeProvider.getStore(archivePath);
+    }
+
     /**
      * Use for testing.
      *
@@ -68,18 +70,23 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     @Override
     public void init() {
         logger.info("Initializing ArchiveDataService.");
-        Injector injector = Guice.createInjector(new ArchiveCoreModule());
-
-        String path = getServletContext().getInitParameter("archive-path");
-        if (path == null || path.isEmpty()) {
-            logger.warning("'archive-path' not specified. Using default value [/mnt]");
-            path = "/mnt";
+        try {
+            logger.info("Collections in archive: " + Arrays.toString(archiveStore.listBookCollections()));
+        } catch (IOException e) {
+            logger.log(Level.SEVERE, "Failed to get book collection names in archive.", e);
         }
+//        Injector injector = Guice.createInjector(new ArchiveCoreModule());
 
-        ByteStreamGroup base = new FSByteStreamGroup(path);
-        this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class),
-                injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
-        logger.info("Archive Store set.");
+//        String path = getServletContext().getInitParameter("archive-path");
+//        if (path == null || path.isEmpty()) {
+//            logger.warning("'archive-path' not specified. Using default value [/mnt]");
+//            path = "/mnt";
+//        }
+
+//        ByteStreamGroup base = new FSByteStreamGroup(path);
+//        this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class),
+//                injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
+//        logger.info("Archive Store set.");
     }
 
     @Override
