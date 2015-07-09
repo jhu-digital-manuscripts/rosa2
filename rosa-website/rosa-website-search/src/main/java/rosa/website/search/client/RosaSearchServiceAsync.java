@@ -1,4 +1,4 @@
-package rosa.website.core.client;
+package rosa.website.search.client;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import rosa.search.model.Query;

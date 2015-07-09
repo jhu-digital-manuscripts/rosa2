@@ -7,7 +7,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Image;
 import rosa.website.core.client.view.HeaderView;
-import rosa.website.core.client.widget.BasicSearchWidget;
+import rosa.website.search.client.widget.BasicSearchWidget;
 
 public class HeaderViewImpl extends Composite implements HeaderView {
     private final FlowPanel root;

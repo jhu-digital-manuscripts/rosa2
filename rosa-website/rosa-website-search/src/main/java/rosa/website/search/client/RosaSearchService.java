@@ -1,4 +1,4 @@
-package rosa.website.core.client;
+package rosa.website.search.client;
 
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import rosa.search.model.Query;

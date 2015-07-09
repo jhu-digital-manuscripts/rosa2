@@ -27,31 +27,45 @@
         </dependency>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-servlet</artifactId>
+        </dependency>
+
+        <!-- Internal dependencies -->
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-archive-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-archive-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa.search</groupId>
+            <artifactId>rosa-search-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa.search</groupId>
+            <artifactId>rosa-search-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-website-model</artifactId>
         </dependency>
 
     </dependencies>
 
     <build>
         <plugins>
-
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>gwt-maven-plugin</artifactId>
-
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>test</goal>
-                            <!--<goal>generateAsync</goal>-->
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -61,12 +75,11 @@
                         <id>attach-sources</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 

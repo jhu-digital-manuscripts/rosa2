@@ -5,8 +5,8 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import rosa.website.core.client.view.AdvancedSearchView;
-import rosa.website.core.client.widget.AdvancedSearchWidget;
 import rosa.website.model.select.BookInfo;
+import rosa.website.search.client.widget.AdvancedSearchWidget;
 
 public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchView {
 

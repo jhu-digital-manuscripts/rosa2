@@ -9,8 +9,11 @@
 
     <inherits name="rosa.archive.RosaArchiveModel"/>
     <inherits name="rosa.archive.RosaArchiveCore"/>
+    <inherits name="rosa.search.RosaSearchModel"/>
+    <inherits name="rosa.search.RosaArchiveSearch"/>
     <inherits name="rosa.website.model.RosaWebsiteModel"/>
     <inherits name="rosa.website.viewer.RosaWebsiteViewer"/>
+    <inherits name="rosa.website.search.RosaWebsiteSearch"/>
 
     <!-- Logging -->
     <set-property name="gwt.logging.logLevel" value="FINE" />

@@ -54,13 +54,13 @@
         </dependency>
 
         <dependency>
-            <groupId>rosa.search</groupId>
-            <artifactId>rosa-search-model</artifactId>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-website-search</artifactId>
         </dependency>
 
         <dependency>
             <groupId>rosa.search</groupId>
-            <artifactId>rosa-search-core</artifactId>
+            <artifactId>rosa-search-model</artifactId>
         </dependency>
 
         <!-- Testing dependencies -->

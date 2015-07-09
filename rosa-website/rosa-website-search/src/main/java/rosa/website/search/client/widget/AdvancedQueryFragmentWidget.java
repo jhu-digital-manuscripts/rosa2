@@ -1,4 +1,4 @@
-package rosa.website.core.client.widget;
+package rosa.website.search.client.widget;
 
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyPressHandler;
