@@ -18,43 +18,6 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <!--&lt;!&ndash; remote logging &ndash;&gt;-->
-    <!--<servlet>-->
-        <!--<servlet-name>remoteLogging</servlet-name>-->
-        <!--<servlet-class>com.google.gwt.logging.server.RemoteLoggingServiceImpl</servlet-class>-->
-        <!--<load-on-startup>0</load-on-startup>-->
-    <!--</servlet>-->
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>remoteLogging</servlet-name>-->
-        <!--<url-pattern>/RosaWebsiteRose/remote_logging</url-pattern>-->
-    <!--</servlet-mapping>-->
-
-    <!--&lt;!&ndash; Archive data service &ndash;&gt;-->
-    <!--<servlet>-->
-        <!--<servlet-name>archiveDataService</servlet-name>-->
-        <!--<servlet-class>rosa.website.core.server.ArchiveDataServiceImpl</servlet-class>-->
-        <!--&lt;!&ndash;<init-param>-->
-            <!--<param-name>archive-path</param-name>-->
-            <!--<param-value>${archive.path}</param-value>-->
-        <!--</init-param>&ndash;&gt;-->
-        <!--<load-on-startup>1</load-on-startup>-->
-    <!--</servlet>-->
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>archiveDataService</servlet-name>-->
-        <!--<url-pattern>/RosaWebsiteRose/data</url-pattern>-->
-    <!--</servlet-mapping>-->
-
-    <!--&lt;!&ndash; FSI data service &ndash;&gt;-->
-    <!--<servlet>-->
-        <!--<servlet-name>fsiService</servlet-name>-->
-        <!--<servlet-class>rosa.website.viewer.server.FSIDataServlet</servlet-class>-->
-        <!--<load-on-startup>2</load-on-startup>-->
-    <!--</servlet>-->
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>fsiService</servlet-name>-->
-        <!--<url-pattern>/RosaWebsiteRose/fsi/*</url-pattern>-->
-    <!--</servlet-mapping>-->
-
     <context-param>
         <param-name>archive.path</param-name>
         <param-value>${archive.path}</param-value>
@@ -64,18 +27,6 @@
         <param-value>RosaWebsiteRose</param-value>
     </context-param>
 
-    <!-- Filters -->
-    <!--<filter>-->
-        <!--<filter-name>CacheFilter</filter-name>-->
-        <!--<filter-class>rosa.website.core.server.CacheFilter</filter-class>-->
-    <!--</filter>-->
-
-    <!--<filter-mapping>-->
-        <!--<filter-name>CacheFilter</filter-name>-->
-        <!--<url-pattern>/*</url-pattern>-->
-    <!--</filter-mapping>-->
-
-    <!-- Default page to serve -->
     <welcome-file-list>
         <welcome-file>RosaWebsiteRose.html</welcome-file>
     </welcome-file-list>

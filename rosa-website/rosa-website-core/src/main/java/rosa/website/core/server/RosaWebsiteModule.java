@@ -29,12 +29,8 @@ public class RosaWebsiteModule extends ServletModule {
         serve(buildUrlSegment("data")).with(ArchiveDataServiceImpl.class);
         serve(buildUrlSegment("fsi/*")).with(FSIDataServlet.class);
 
-        log.info("Data RPC bound. [" + buildUrlSegment("data"));
-        log.info("FSI RPC bound. [" + buildUrlSegment("fsi/*"));
-    }
-
-    private String buildUrlSegment(String path) {
-        return "/" + moduleName() + "/" + path;
+        log.info("Data RPC bound. [" + buildUrlSegment("data") + "]");
+        log.info("FSI RPC bound. [" + buildUrlSegment("fsi/*") + "]");
     }
 
     @Provides @Named(PARAM_ARCHIVE_PATH)
@@ -45,6 +41,10 @@ public class RosaWebsiteModule extends ServletModule {
     @Provides @Named(PARAM_MODULE_NAME)
     public String moduleName() {
         return getServletContext().getInitParameter(PARAM_MODULE_NAME);
+    }
+
+    private String buildUrlSegment(String path) {
+        return "/" + moduleName() + "/" + path;
     }
 
 }

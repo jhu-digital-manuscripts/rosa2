@@ -26,7 +26,6 @@ import rosa.website.model.select.SelectCategory;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -52,9 +51,14 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     /** No-arg constructor needed to make GWT RPC work. */
     public ArchiveDataServiceImpl() {}
 
+    /**
+     * Constructor used by Guice.
+     *
+     * @param storeProvider .
+     * @param archivePath .
+     */
     @Inject
     public ArchiveDataServiceImpl(StoreProvider storeProvider, @Named("archive.path") String archivePath) {
-        logger.info("Starting ArchiveDataService with archive at path (" + archivePath + ")");
         this.archiveStore = storeProvider.getStore(archivePath);
     }
 
@@ -69,24 +73,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public void init() {
-        logger.info("Initializing ArchiveDataService.");
-        try {
-            logger.info("Collections in archive: " + Arrays.toString(archiveStore.listBookCollections()));
-        } catch (IOException e) {
-            logger.log(Level.SEVERE, "Failed to get book collection names in archive.", e);
-        }
-//        Injector injector = Guice.createInjector(new ArchiveCoreModule());
 
-//        String path = getServletContext().getInitParameter("archive-path");
-//        if (path == null || path.isEmpty()) {
-//            logger.warning("'archive-path' not specified. Using default value [/mnt]");
-//            path = "/mnt";
-//        }
-
-//        ByteStreamGroup base = new FSByteStreamGroup(path);
-//        this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class),
-//                injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
-//        logger.info("Archive Store set.");
     }
 
     @Override
