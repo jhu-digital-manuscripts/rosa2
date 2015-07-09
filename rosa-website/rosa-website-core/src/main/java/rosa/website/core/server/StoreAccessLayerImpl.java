@@ -70,6 +70,11 @@ public class StoreAccessLayerImpl implements StoreAccessLayer {
         return b;
     }
 
+    @Override
+    public Store store() {
+        return store;
+    }
+
     private Book loadBook(BookCollection collection, String book) throws IOException {
         List<String> errors = new ArrayList<>();
         Book b = null;

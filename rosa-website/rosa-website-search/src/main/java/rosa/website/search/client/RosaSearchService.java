@@ -5,6 +5,8 @@ import rosa.search.model.Query;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
 
+import java.io.IOException;
+
 /**
  * RPC service for searching the rosa archives.
  *
@@ -27,5 +29,5 @@ import rosa.search.model.SearchResult;
  */
 @RemoteServiceRelativePath("search")
 public interface RosaSearchService {
-    SearchResult search(Query query, SearchOptions options);
+    SearchResult search(Query query, SearchOptions options) throws IOException;
 }

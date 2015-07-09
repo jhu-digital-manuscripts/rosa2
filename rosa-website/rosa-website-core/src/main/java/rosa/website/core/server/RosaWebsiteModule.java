@@ -26,12 +26,14 @@ public class RosaWebsiteModule extends ServletModule {
     private static final String PARAM_MODULE_NAME = "module.name";
     private static final String PARAM_ARCHIVE_PATH = "archive.path";
     private static final String PARAM_INDEX_PATH = "search.index.path";
+    private static final String PARAM_COLLECTION_NAME = "collection.name";
 
     @Override
     protected void configureServlets() {
         log.info("Using module name: [" + moduleName() + "]");
         log.info("Using archive path: [" + archivePath() + "]");
         log.info("Using search index path: [" + searchIndexPath() + "]");
+        log.info("On collection: [" + collectionName() + "]");
 
         bind(StoreProvider.class);
         bind(StoreAccessLayer.class).to(StoreAccessLayerImpl.class);
@@ -62,6 +64,11 @@ public class RosaWebsiteModule extends ServletModule {
     @Provides @Named(PARAM_MODULE_NAME)
     public String moduleName() {
         return getServletContext().getInitParameter(PARAM_MODULE_NAME);
+    }
+
+    @Provides @Named(PARAM_COLLECTION_NAME)
+    public String collectionName() {
+        return getServletContext().getInitParameter(PARAM_COLLECTION_NAME);
     }
 
     @Provides
