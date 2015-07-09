@@ -5,7 +5,6 @@ import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 import com.google.inject.servlet.ServletModule;
-import rosa.archive.core.Store;
 import rosa.search.core.LuceneSearchService;
 import rosa.search.core.SearchService;
 import rosa.website.viewer.server.FSISerializer;
@@ -35,6 +34,7 @@ public class RosaWebsiteModule extends ServletModule {
         log.info("Using search index path: [" + searchIndexPath() + "]");
 
         bind(StoreProvider.class);
+        bind(StoreAccessLayer.class).to(StoreAccessLayerImpl.class);
         bind(RemoteLoggingServiceImpl.class).in(Singleton.class);
 
         filter(buildUrlSegment("data")).through(CacheFilter.class);

@@ -24,7 +24,10 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
      */
     @Before
     public void setup() {
-        service = new ArchiveDataServiceImpl(store);
+        StoreAccessLayer accessLayer = new StoreAccessLayerImpl(
+                new StoreProvider(serializers, bookChecker, collectionChecker), base.id()
+        );
+        service = new ArchiveDataServiceImpl(accessLayer);
     }
 
     /**

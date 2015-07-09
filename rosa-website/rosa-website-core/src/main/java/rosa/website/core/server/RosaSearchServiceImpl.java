@@ -3,8 +3,6 @@ package rosa.website.core.server;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-import com.google.inject.name.Named;
-import rosa.archive.core.Store;
 import rosa.search.core.SearchService;
 import rosa.search.model.Query;
 import rosa.search.model.SearchOptions;
@@ -17,13 +15,12 @@ import java.util.logging.Logger;
 public class RosaSearchServiceImpl extends RemoteServiceServlet implements RosaSearchService {
     private static final Logger log = Logger.getLogger(RosaSearchServiceImpl.class.toString());
 
-    private Store archiveStore;
+    private StoreAccessLayer store;
     private SearchService searchService;
 
     @Inject
-    private RosaSearchServiceImpl(StoreProvider storeProvider, @Named("archive.path") String archivePath,
-                                  SearchService searchService) {
-        this.archiveStore = storeProvider.getStore(archivePath);
+    private RosaSearchServiceImpl(StoreAccessLayer store, SearchService searchService) {
+        this.store = store;
         this.searchService = searchService;
     }
 

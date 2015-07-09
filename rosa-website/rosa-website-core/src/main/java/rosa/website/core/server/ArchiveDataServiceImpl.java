@@ -3,9 +3,7 @@ package rosa.website.core.server;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-import com.google.inject.name.Named;
 import org.apache.commons.lang3.math.NumberUtils;
-import rosa.archive.core.Store;
 import rosa.archive.core.serialize.ImageListSerializer;
 import rosa.archive.model.*;
 import rosa.website.core.client.ArchiveDataService;
@@ -46,7 +44,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     private static final ImageListSerializer imageListSerializer = new ImageListSerializer();
 
-    private Store archiveStore;
+    private StoreAccessLayer archiveStore;
 
     /** No-arg constructor needed to make GWT RPC work. */
     public ArchiveDataServiceImpl() {}
@@ -54,20 +52,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     /**
      * Constructor used by Guice.
      *
-     * @param storeProvider .
-     * @param archivePath .
+     * @param store store access layer
      */
     @Inject
-    public ArchiveDataServiceImpl(StoreProvider storeProvider, @Named("archive.path") String archivePath) {
-        this.archiveStore = storeProvider.getStore(archivePath);
-    }
-
-    /**
-     * Use for testing.
-     *
-     * @param store a Store for accessing the archive.
-     */
-    ArchiveDataServiceImpl(Store store) {
+    public ArchiveDataServiceImpl(StoreAccessLayer store) {
         this.archiveStore = store;
     }
 
@@ -117,7 +105,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         List<CSVRow> entries = new ArrayList<>();
         for (String bookName : col.books()) {
-            Book book = loadBook(col, bookName);
+            Book book = loadBook(collection, bookName);
 
             if (book == null || book.getId().contains(".ignore")) {
                 continue;
@@ -357,7 +345,12 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public String loadPermissionStatement(String collection, String book, String lang) throws IOException {
-        return loadBook(collection, book).getPermission(lang).getPermission();
+        Book b = loadBook(collection, book);
+        if (b == null) {
+            return null;
+        }
+
+        return b.getPermission(lang).getPermission();
     }
 
     @Override
@@ -411,6 +404,9 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
 
         Book b = loadBook(collection, book);
+        if (b == null) {
+            return null;
+        }
 
         FSIViewerModel model = FSIViewerModel.Builder.newBuilder()
                 .permission(b.getPermission(language))
@@ -437,6 +433,9 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
 
         Book b = loadBook(collection, book);
+        if (b == null) {
+            return null;
+        }
 
         BookDescriptionViewModel model = new BookDescriptionViewModel(
                 b.getBookDescription(language),
@@ -449,19 +448,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     }
 
     private BookCollection loadBookCollection(String collection) throws IOException {
-        Object obj = objectCache.get(collection);
-        if (obj != null) {
-            return (BookCollection) obj;
-        }
-
-        List<String> errors = new ArrayList<>();
         BookCollection col = null;
 
         try {
-            col = archiveStore.loadBookCollection(collection, errors);
-            checkErrors(errors);
-
-            updateCache(collection, col);
+            col = archiveStore.collection(collection);
         } catch (Exception e) {
             // TODO dont catch Exception...
             logger.log(Level.SEVERE, "An error has occurred while loading a collection. [" + collection + "]", e);
@@ -471,7 +461,12 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     }
 
     private Book loadBook(String collection, String book) throws IOException {
-        return loadBook(loadBookCollection(collection), book);
+        try {
+            return archiveStore.book(collection, book);
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "An error occurred while loading a book. [" + collection + ":" + book + "]", e);
+            return null;
+        }
     }
 
     private CharacterNamesCSV loadCharacterNames(String collection) throws IOException {
@@ -576,30 +571,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         return num < 0 ? 0 : num;
     }
 
-    private Book loadBook(BookCollection collection, String book) throws IOException {
-        String key = collection.getId() + "." + book;
-
-        Object obj = objectCache.get(key);
-        if (obj != null) {
-            return (Book) obj;
-        }
-
-        List<String> errors = new ArrayList<>();
-        Book b = null;
-
-        try {
-            b = archiveStore.loadBook(collection, book, errors);
-            checkErrors(errors);
-
-            updateCache(key, b);
-        } catch (Exception e) {
-            // TODO dont catch Exception...
-            logger.log(Level.SEVERE, "An error has occurred while loading a book. [" + collection + ":" + book + "]", e);
-        }
-
-        return b;
-    }
-
     /**
      * Find the number of times each illustration in the collection is used through
      * all of the books in the collection.
@@ -614,7 +585,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         for (String name : collection.books()) {
             try {
-                Book book = loadBook(collection, name);
+                Book book = loadBook(collection.getId(), name);
                 if (book == null || book.getIllustrationTagging() == null) {
                     continue;
                 }
@@ -756,17 +727,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
 
         return lang;
-    }
-
-    private void checkErrors(List<String> errors) {
-        if (!errors.isEmpty()) {
-            StringBuilder sb = new StringBuilder("Error loading book collection.\n");
-            for (String s : errors) {
-                sb.append(s);
-                sb.append('\n');
-            }
-            logger.warning(sb.toString());
-        }
     }
 
     /**

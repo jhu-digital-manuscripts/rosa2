@@ -23,7 +23,7 @@ public class StoreProvider {
     private BookCollectionChecker bookCollectionChecker;
 
     @Inject
-    private StoreProvider(SerializerSet serializerSet, BookChecker bookChecker, BookCollectionChecker bookCollectionChecker) {
+    public StoreProvider(SerializerSet serializerSet, BookChecker bookChecker, BookCollectionChecker bookCollectionChecker) {
         this.serializerSet = serializerSet;
         this.bookChecker = bookChecker;
         this.bookCollectionChecker = bookCollectionChecker;
