@@ -1,18 +1,12 @@
-package rosa.website.viewer.server;
+package rosa.website.core.server;
 
-import com.google.inject.Guice;
-import com.google.inject.Injector;
+import com.google.inject.Inject;
 import com.google.inject.Singleton;
-import rosa.archive.core.ArchiveCoreModule;
-import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.FSByteStreamGroup;
+import com.google.inject.name.Named;
 import rosa.archive.core.Store;
-import rosa.archive.core.StoreImpl;
-import rosa.archive.core.check.BookChecker;
-import rosa.archive.core.check.BookCollectionChecker;
-import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.website.viewer.server.FSISerializer;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,13 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URLDecoder;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.logging.Level;
@@ -46,8 +36,6 @@ public class FSIDataServlet extends HttpServlet {
     private static final ConcurrentMap<String, Book> bookCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
     private static final ConcurrentMap<String, BookCollection> collectionCache = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
 
-    private static final String FSI_MAP_NAME = "fsi-share-map.properties";
-
     private static final String TYPE_PAGES = "pages.fsi";
     private static final String TYPE_SHOWCASE = "showcase.fsi";
 
@@ -56,39 +44,16 @@ public class FSIDataServlet extends HttpServlet {
     private Store archiveStore;
     private FSISerializer serializer;
 
+    @Inject
+    public FSIDataServlet(StoreProvider storeProvider, @Named("archive.path") String archivePath,
+                          FSISerializer serializer) {
+        this.serializer = serializer;
+        this.archiveStore = storeProvider.getStore(archivePath);
+    }
+
     @Override
     public void init() {
 
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream(FSI_MAP_NAME)) {
-            Properties props = new Properties();
-            props.load(in);
-
-            Map<String, String> prop_map = new HashMap<>();
-            for (String key : props.stringPropertyNames()) {
-                prop_map.put(key, props.getProperty(key));
-            }
-
-            serializer = new FSISerializer(prop_map);
-            logger.info("Loaded FSI share mapping. " + prop_map.toString());
-        } catch (Exception e) {
-            logger.log(Level.SEVERE, "Failed to load " + FSI_MAP_NAME, e);
-        }
-
-
-        // setup the Store to point at the archive
-        logger.info("Initializing FSIDataService.");
-        Injector injector = Guice.createInjector(new ArchiveCoreModule());
-
-        String path = getServletContext().getInitParameter("archive.path");
-        if (path == null || path.isEmpty()) {
-            logger.warning("'archive-path' not specified. Using default value [/mnt]");
-            path = "/mnt";
-        }
-
-        ByteStreamGroup base = new FSByteStreamGroup(path);
-        this.archiveStore = new StoreImpl(injector.getInstance(SerializerSet.class),
-                injector.getInstance(BookChecker.class), injector.getInstance(BookCollectionChecker.class), base);
-        logger.info("Archive Store set. [" + path + "]");
     }
 
     @Override

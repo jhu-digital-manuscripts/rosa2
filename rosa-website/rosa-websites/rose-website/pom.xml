@@ -21,6 +21,7 @@
 
             <properties>
                 <archive.path>/tmp/archive</archive.path>
+                <search.index.path>/tmp/lucene</search.index.path>
                 <gwt.output.style>pretty</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>
             </properties>
@@ -31,6 +32,7 @@
 
             <properties>
                 <archive.path>/mnt</archive.path>
+                <search.index.path>/tmp/lucene</search.index.path> <!-- TODO change to real location -->
                 <gwt.output.style>obf</gwt.output.style>
                 <gwt.log.level>WARNING</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
             </properties>

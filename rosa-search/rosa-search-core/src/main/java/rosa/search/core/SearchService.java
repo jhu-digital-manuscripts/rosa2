@@ -13,7 +13,7 @@ import rosa.search.model.SearchResult;
  * 
  * Implementations must be MT safe.
  */
-interface SearchService {
+public interface SearchService {
     /**
      * Execute a search against the index. The search options determine how many
      * matches and what matches in the list of total results will be returned.

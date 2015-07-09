@@ -5,20 +5,34 @@ import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
 import com.google.inject.servlet.ServletModule;
-import rosa.website.viewer.server.FSIDataServlet;
+import rosa.archive.core.Store;
+import rosa.search.core.LuceneSearchService;
+import rosa.search.core.SearchService;
+import rosa.website.viewer.server.FSISerializer;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class RosaWebsiteModule extends ServletModule {
     private static final Logger log = Logger.getLogger(RosaWebsiteModule.class.toString());
 
+    private static final String FSI_MAP_NAME = "fsi-share-map.properties";
+
     private static final String PARAM_MODULE_NAME = "module.name";
     private static final String PARAM_ARCHIVE_PATH = "archive.path";
+    private static final String PARAM_INDEX_PATH = "search.index.path";
 
     @Override
     protected void configureServlets() {
         log.info("Using module name: [" + moduleName() + "]");
         log.info("Using archive path: [" + archivePath() + "]");
+        log.info("Using search index path: [" + searchIndexPath() + "]");
 
         bind(StoreProvider.class);
         bind(RemoteLoggingServiceImpl.class).in(Singleton.class);
@@ -28,9 +42,16 @@ public class RosaWebsiteModule extends ServletModule {
         serve(buildUrlSegment("remote_logging")).with(RemoteLoggingServiceImpl.class);
         serve(buildUrlSegment("data")).with(ArchiveDataServiceImpl.class);
         serve(buildUrlSegment("fsi/*")).with(FSIDataServlet.class);
+        serve(buildUrlSegment("search")).with(RosaSearchServiceImpl.class);
 
         log.info("Data RPC bound. [" + buildUrlSegment("data") + "]");
         log.info("FSI RPC bound. [" + buildUrlSegment("fsi/*") + "]");
+        log.info("Search RPC bound. [" + buildUrlSegment("search") + "]");
+    }
+
+    @Provides @Named(PARAM_INDEX_PATH)
+    public String searchIndexPath() {
+        return getServletContext().getInitParameter(PARAM_INDEX_PATH);
     }
 
     @Provides @Named(PARAM_ARCHIVE_PATH)
@@ -41,6 +62,35 @@ public class RosaWebsiteModule extends ServletModule {
     @Provides @Named(PARAM_MODULE_NAME)
     public String moduleName() {
         return getServletContext().getInitParameter(PARAM_MODULE_NAME);
+    }
+
+    @Provides
+    public SearchService searchService() {
+        try {
+            return new LuceneSearchService(Paths.get(searchIndexPath()));
+        } catch (IOException e) {
+            log.log(Level.SEVERE, "Failed to initialize search service.", e);
+            return null;
+        }
+    }
+
+    @Provides
+    public FSISerializer fsiSerializer() {
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream(FSI_MAP_NAME)) {
+            Properties props = new Properties();
+            props.load(in);
+
+            Map<String, String> prop_map = new HashMap<>();
+            for (String key : props.stringPropertyNames()) {
+                prop_map.put(key, props.getProperty(key));
+            }
+
+            log.info("Loaded FSI share mapping. " + prop_map.toString());
+            return new FSISerializer(prop_map);
+        } catch (Exception e) {
+            log.log(Level.SEVERE, "Failed to load " + FSI_MAP_NAME, e);
+            return null;
+        }
     }
 
     private String buildUrlSegment(String path) {

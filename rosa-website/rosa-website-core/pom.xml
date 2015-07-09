@@ -63,6 +63,11 @@
             <artifactId>rosa-search-model</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>rosa.search</groupId>
+            <artifactId>rosa-search-core</artifactId>
+        </dependency>
+
         <!-- Testing dependencies -->
 
         <dependency>

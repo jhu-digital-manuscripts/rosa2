@@ -26,6 +26,10 @@
         <param-name>module.name</param-name>
         <param-value>RosaWebsiteRose</param-value>
     </context-param>
+    <context-param>
+        <param-name>search.index.path</param-name>
+        <param-value>${search.index.path}</param-value>
+    </context-param>
 
     <welcome-file-list>
         <welcome-file>RosaWebsiteRose.html</welcome-file>

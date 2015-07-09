@@ -27,6 +27,10 @@
         <param-name>module.name</param-name>
         <param-value>RosaWebsitePizan</param-value>
     </context-param>
+    <context-param>
+        <param-name>search.index.path</param-name>
+        <param-value>${search.index.path}</param-value>
+    </context-param>
 
     <!-- Default page to serve -->
     <welcome-file-list>
