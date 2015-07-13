@@ -219,7 +219,7 @@ public class AdvancedSearchWidget extends Composite {
         }
 
         String[] books = bookRestrictionWidget.getRestrictedBookIds();
-        if (books != null && books.length > 0) {
+        if (books != null && books.length > 1) {
             query.append("BOOK;");
             for (String book : books) {
                 if (isBlank(book)) {

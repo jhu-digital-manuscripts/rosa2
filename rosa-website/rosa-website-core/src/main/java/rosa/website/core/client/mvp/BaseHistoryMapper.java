@@ -4,6 +4,7 @@ import com.google.gwt.http.client.URL;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceHistoryMapper;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.place.BookViewerPlace;
 
 import java.util.logging.Logger;
@@ -77,6 +78,8 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
             } else {
                 return new BookViewerPlace(parts[0], parts[1]);
             }
+        } else if (parts.length == 1 && parts[0].equals("search")) {
+            return new AdvancedSearchPlace(null);
         }
 
         // If token not already recognized, revert back to the default history token scheme
