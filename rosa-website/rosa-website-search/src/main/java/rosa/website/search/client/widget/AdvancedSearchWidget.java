@@ -11,7 +11,9 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTMLTable.Cell;
+import rosa.search.model.QueryOperation;
 import rosa.website.model.select.BookInfo;
+import rosa.website.search.client.SearchCategory;
 
 /**
  * AdvancedSearchWidget lets a user build a complex search query through the UI.
@@ -32,8 +34,8 @@ public class AdvancedSearchWidget extends Composite {
     private final KeyPressHandler searchBoxKeyPressHandler;
 
     private String removeButtonText;
-    private String[] queryOperations;
-    private String[] queryFields;
+    private QueryOperation[] queryOperations;
+    private SearchCategory[] queryFields;
 
     /**
      * Create a new AdvancedSearchWidget
@@ -93,13 +95,11 @@ public class AdvancedSearchWidget extends Composite {
         queriesTable.clear();
     }
 
-    // TODO change String to Enum
-    public void setAvailableOperations(String[] ops) {
+    public void setAvailableOperations(QueryOperation[] ops) {
         this.queryOperations = ops;
     }
 
-    // TODO change String to Enum
-    public void setAvailableFields(String[] fields) {
+    public void setAvailableFields(SearchCategory[] fields) {
         this.queryFields = fields;
     }
 
@@ -124,9 +124,9 @@ public class AdvancedSearchWidget extends Composite {
             row.setSelectedOperation(selectedOperation);
         }
         // Add restriction fields
-        row.setSearchFields(queryFields);
+        row.setSearchCategories(queryFields);
         if (selectedField != -1) {
-            row.setSelectedSearchField(selectedField);
+            row.setSelectedSearchCategory(selectedField);
         }
         // Set initial search term, if applicable
         row.setSearchTerm(initialTerm);
@@ -192,10 +192,10 @@ public class AdvancedSearchWidget extends Composite {
     }
 
     public String getSearchToken() {
-        return buildQuery();
+        return buildSearchToken();
     }
 
-    private String buildQuery() {
+    private String buildSearchToken() {
         StringBuilder query = new StringBuilder();
 
         for (int i = 0; i < queriesTable.getRowCount(); i++) {
@@ -205,8 +205,8 @@ public class AdvancedSearchWidget extends Composite {
 
             AdvancedQueryFragmentWidget row = (AdvancedQueryFragmentWidget) queriesTable.getWidget(i, 0);
 
-            if (isNotBlank(row.getSearchTerm()) && isNotBlank(row.getField())) {
-                query.append(row.getField());
+            if (isNotBlank(row.getSearchTerm()) && row.getCategory() != null) {
+                query.append(row.getCategory());
                 query.append(';');
                 query.append(row.getSearchTerm());
                 query.append(';');

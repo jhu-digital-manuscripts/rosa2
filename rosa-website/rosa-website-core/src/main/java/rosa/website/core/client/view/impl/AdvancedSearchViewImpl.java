@@ -51,11 +51,11 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
     }
 
     public void setAvailableSearchFields(String[] fields) {
-        searchWidget.setAvailableFields(fields);
+//        searchWidget.setAvailableFields(fields);
     }
 
     public void setAvailableSearchOperations(String[] operations) {
-        searchWidget.setAvailableOperations(operations);
+//        searchWidget.setAvailableOperations(operations);
     }
 
     public void addQueryField() {

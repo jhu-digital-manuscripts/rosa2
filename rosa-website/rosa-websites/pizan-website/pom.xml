@@ -156,8 +156,8 @@
                     <compileSourcesArtifacts>
                         <compileSourcesArtifact>rosa:rosa-archive-model</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-archive-core</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-search-model</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-search-core</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.search:rosa-search-model</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.search:rosa-search-core</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-website-model</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-website-viewer</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-website-search</compileSourcesArtifact>

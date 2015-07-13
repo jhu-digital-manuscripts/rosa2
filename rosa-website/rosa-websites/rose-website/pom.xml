@@ -63,62 +63,54 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Project dependencies -->
+
         <dependency>
             <groupId>rosa</groupId>
             <artifactId>rosa-archive-model</artifactId>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>rosa</groupId>
             <artifactId>rosa-archive-core</artifactId>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>rosa.search</groupId>
             <artifactId>rosa-search-model</artifactId>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>rosa.search</groupId>
             <artifactId>rosa-search-core</artifactId>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>rosa</groupId>
             <artifactId>rosa-website-model</artifactId>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>rosa</groupId>
             <artifactId>rosa-website-viewer</artifactId>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>rosa</groupId>
             <artifactId>rosa-website-search</artifactId>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>rosa</groupId>
             <artifactId>rosa-website-core</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>rosa</groupId>
-                    <artifactId>rosa-archive-model</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>rosa</groupId>
-                    <artifactId>rosa-archive-core</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>rosa</groupId>
-                    <artifactId>rosa-website-model</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>rosa</groupId>
-                    <artifactId>rosa-website-viewer</artifactId>
-                </exclusion>
-            </exclusions>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -156,8 +148,8 @@
                     <compileSourcesArtifacts>
                         <compileSourcesArtifact>rosa:rosa-archive-model</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-archive-core</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-search-model</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-search-core</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.search:rosa-search-model</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.search:rosa-search-core</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-website-model</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-website-viewer</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa:rosa-website-search</compileSourcesArtifact>

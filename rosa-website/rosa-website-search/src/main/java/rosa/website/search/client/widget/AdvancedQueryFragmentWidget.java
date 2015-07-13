@@ -8,6 +8,8 @@ import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.web.bindery.event.shared.HandlerRegistration;
+import rosa.search.model.QueryOperation;
+import rosa.website.search.client.SearchCategory;
 
 /**
  * Represents the UI element of a single search query fragment. Multiple
@@ -22,7 +24,7 @@ public class AdvancedQueryFragmentWidget extends Composite {
     private boolean isFirst;
 
     private final ListBox operation;
-    private final ListBox field;
+    private final ListBox category;
 
     private final TextBox term;
 
@@ -42,34 +44,33 @@ public class AdvancedQueryFragmentWidget extends Composite {
         Grid main = new Grid(1, 4);
 
         this.operation = new ListBox();
-        this.field = new ListBox();
+        this.category = new ListBox();
         this.term = new TextBox();
         this.remove = new Button();
 
         if (!isFirst) {
             main.setWidget(0, 0, operation);
         }
-        main.setWidget(0, 1, field);
+        main.setWidget(0, 1, category);
         main.setWidget(0, 2, term);
         main.setWidget(0, 3, remove);
 
         initWidget(main);
 
-        field.setSelectedIndex(0);
+        category.setSelectedIndex(0);
     }
 
     /**
      * Set the list of boolean operations that operate on this query.
-     * TODO change to Enum
      *
-     * @param operations
+     * @param operations .
      */
-    public void setOperations(String[] operations) {
+    public void setOperations(QueryOperation[] operations) {
         operation.clear();
 
         if (operations != null) {
-            for (String op : operations) {
-                operation.addItem(op, op);
+            for (QueryOperation op : operations) {
+                operation.addItem(op.toString(), op.toString());
             }
         }
     }
@@ -78,10 +79,9 @@ public class AdvancedQueryFragmentWidget extends Composite {
         operation.setSelectedIndex(index);
     }
 
-    // TODO change to Enum from search API
-    public void setSelectedOperation(String selected) {
+    public void setSelectedOperation(QueryOperation selected) {
         for (int i = 0; i < operation.getItemCount(); i++) {
-            if (operation.getItemText(i).equals(selected)) {
+            if (QueryOperation.valueOf(operation.getItemText(i)).equals(selected)) {
                 setSelectedOperation(i);
                 break;
             }
@@ -89,30 +89,28 @@ public class AdvancedQueryFragmentWidget extends Composite {
     }
 
     /**
-     * Set the list of field restrictions that can be placed on this query fragment.
-     * TODO change to Enum
+     * Set the list of category restrictions that can be placed on this query fragment.
      *
-     * @param searchFields
+     * @param searchFields .
      */
-    public void setSearchFields(String[] searchFields) {
-        field.clear();
+    public void setSearchCategories(SearchCategory[] searchFields) {
+        category.clear();
 
         if (searchFields != null) {
-            for (String f : searchFields) {
-                field.addItem(f, f);
+            for (SearchCategory f : searchFields) {
+                category.addItem(f.toString(), f.toString());
             }
         }
     }
 
-    public void setSelectedSearchField(int index) {
-        field.setSelectedIndex(index);
+    public void setSelectedSearchCategory(int index) {
+        category.setSelectedIndex(index);
     }
 
-    // TODO change to Enum from search API
-    public void setSelectedSearchField(String selected) {
-        for (int i = 0; i < field.getItemCount(); i++) {
-            if (field.getItemText(i).equals(selected)) {
-                setSelectedSearchField(i);
+    public void setSelectedSearchCategory(SearchCategory selected) {
+        for (int i = 0; i < category.getItemCount(); i++) {
+            if (SearchCategory.valueOf(category.getItemText(i)).equals(selected)) {
+                setSelectedSearchCategory(i);
                 break;
             }
         }
@@ -138,15 +136,15 @@ public class AdvancedQueryFragmentWidget extends Composite {
     /**
      * @return the boolean operation associated with this query
      */
-    public String getOperation() {
-        return isFirst ? "AND" : operation.getValue(operation.getSelectedIndex());
+    public QueryOperation getOperation() {
+        return QueryOperation.valueOf(isFirst ? "AND" : operation.getValue(operation.getSelectedIndex()));
     }
 
     /**
-     * @return the field to restrict the search
+     * @return the category to restrict the search
      */
-    public String getField() {
-        return field.getValue(field.getSelectedIndex());
+    public SearchCategory getCategory() {
+        return SearchCategory.valueOf(category.getValue(category.getSelectedIndex()));
     }
 
     /**
