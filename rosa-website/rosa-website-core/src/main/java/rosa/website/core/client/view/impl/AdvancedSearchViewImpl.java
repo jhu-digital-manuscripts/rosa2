@@ -4,8 +4,10 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
+import rosa.search.model.QueryOperation;
 import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.model.select.BookInfo;
+import rosa.website.search.client.SearchCategory;
 import rosa.website.search.client.widget.AdvancedSearchWidget;
 
 public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchView {
@@ -50,12 +52,12 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
         searchWidget.setRemoveButtonText(text);
     }
 
-    public void setAvailableSearchFields(String[] fields) {
-//        searchWidget.setAvailableFields(fields);
+    public void setAvailableSearchFields(SearchCategory[] fields) {
+        searchWidget.setAvailableFields(fields);
     }
 
-    public void setAvailableSearchOperations(String[] operations) {
-//        searchWidget.setAvailableOperations(operations);
+    public void setAvailableSearchOperations(QueryOperation[] operations) {
+        searchWidget.setAvailableOperations(operations);
     }
 
     public void addQueryField() {

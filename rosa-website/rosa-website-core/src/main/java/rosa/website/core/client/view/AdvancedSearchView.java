@@ -3,7 +3,9 @@ package rosa.website.core.client.view;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
+import rosa.search.model.QueryOperation;
 import rosa.website.model.select.BookInfo;
+import rosa.website.search.client.SearchCategory;
 
 public interface AdvancedSearchView extends IsWidget {
 
@@ -48,7 +50,7 @@ public interface AdvancedSearchView extends IsWidget {
      *
      * @param fields .
      */
-    void setAvailableSearchFields(String[] fields);
+    void setAvailableSearchFields(SearchCategory[] fields);
 
     /**
      * Set the operations available in this widget. The user can choose
@@ -57,7 +59,7 @@ public interface AdvancedSearchView extends IsWidget {
      *
      * @param operations .
      */
-    void setAvailableSearchOperations(String[] operations);
+    void setAvailableSearchOperations(QueryOperation[] operations);
 
     /**
      * Add an empty query field.

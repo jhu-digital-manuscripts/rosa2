@@ -56,6 +56,7 @@ public class AdvancedQueryFragmentWidget extends Composite {
         main.setWidget(0, 3, remove);
 
         initWidget(main);
+        operation.setVisible(false);
 
         category.setSelectedIndex(0);
     }
@@ -98,7 +99,7 @@ public class AdvancedQueryFragmentWidget extends Composite {
 
         if (searchFields != null) {
             for (SearchCategory f : searchFields) {
-                category.addItem(f.toString(), f.toString());
+                category.addItem(f.getDisplay(), f.toString());
             }
         }
     }

@@ -243,7 +243,4 @@ public class AdvancedSearchWidget extends Composite {
     private boolean isNotBlank(String val) {
         return !isBlank(val);
     }
-
-    // TODO build search query, use search model/API
-    // TODO build history token from query
 }
