@@ -11,6 +11,8 @@ import com.google.web.bindery.event.shared.HandlerRegistration;
 import rosa.search.model.QueryOperation;
 import rosa.website.search.client.SearchCategory;
 
+import java.util.Map;
+
 /**
  * Represents the UI element of a single search query fragment. Multiple
  * AdvancedQueryWidgets can be combined to create a UI that can build a
@@ -22,6 +24,8 @@ import rosa.website.search.client.SearchCategory;
  */
 public class AdvancedQueryFragmentWidget extends Composite {
     private boolean isFirst;
+
+    private Map<SearchCategory, String> searchCategoryLabels;
 
     private final ListBox operation;
     private final ListBox category;
@@ -99,9 +103,17 @@ public class AdvancedQueryFragmentWidget extends Composite {
 
         if (searchFields != null) {
             for (SearchCategory f : searchFields) {
-                category.addItem(f.getDisplay(), f.toString());
+                if (searchCategoryLabels == null) {
+                    category.addItem(f.toString(), f.toString());
+                } else {
+                    category.addItem(searchCategoryLabels.get(f), f.toString());
+                }
             }
         }
+    }
+
+    public void setSearchCategoryLabels(Map<SearchCategory, String> searchCategoryLabels) {
+        this.searchCategoryLabels = searchCategoryLabels;
     }
 
     public void setSelectedSearchCategory(int index) {

@@ -195,6 +195,12 @@ public class AdvancedSearchWidget extends Composite {
         return buildSearchToken();
     }
 
+    /**
+     * If a search term contains a delimiter character ';', it will be "escaped" with
+     * a '-', to become '-;'
+     *
+     * @return String search token
+     */
     private String buildSearchToken() {
         StringBuilder query = new StringBuilder();
 
@@ -205,10 +211,11 @@ public class AdvancedSearchWidget extends Composite {
 
             AdvancedQueryFragmentWidget row = (AdvancedQueryFragmentWidget) queriesTable.getWidget(i, 0);
 
+            // CATEGORY;(escaped search term)
             if (isNotBlank(row.getSearchTerm()) && row.getCategory() != null) {
                 query.append(row.getCategory());
                 query.append(';');
-                query.append(row.getSearchTerm());
+                query.append(row.getSearchTerm().replaceAll("(;|-)", "-$1"));
                 query.append(';');
             }
         }
