@@ -7,7 +7,6 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.ListBox;
 import rosa.website.model.select.BookInfo;
 
 import java.util.ArrayList;
@@ -24,12 +23,12 @@ import java.util.List;
  * picked more than once.
  *
  * A book can be removed from the user selected list by clicking on
- * the book, which will be returned to the picker list. TODO list should be sorted always
+ * the book, which will be returned to the picker list.
  */
 public class BookPickerWidget extends Composite {
 
-    private final ListBox bookPicker;
-    private final ListBox display;
+    private final SortedListBox bookPicker;
+    private final SortedListBox restrictedBooks;
     private final Button clearButton;
 
     /**
@@ -38,20 +37,19 @@ public class BookPickerWidget extends Composite {
     public BookPickerWidget() {
         FlowPanel root = new FlowPanel();
 
-        this.bookPicker = new ListBox(false);
-        this.display = new ListBox(false);
+        this.bookPicker = new SortedListBox(false, true);
+        this.restrictedBooks = new SortedListBox(true, false);
         this.clearButton = new Button();
 
-        bookPicker.addItem("Restrict by book");
+        bookPicker.addItem("Restrict By Book");     // TODO i18n
 
-        display.addItem("");
-        display.setVisibleItemCount(5);
-        display.setVisible(false);
+        restrictedBooks.setVisibleItemCount(5);
+        restrictedBooks.setVisible(false);
 
         clearButton.setVisible(false);
 
         root.add(bookPicker);
-        root.add(display);
+        root.add(restrictedBooks);
         root.add(clearButton);
 
         root.setStylePrimaryName("BookList");
@@ -67,26 +65,26 @@ public class BookPickerWidget extends Composite {
             public void onChange(ChangeEvent event) {
                 int index = bookPicker.getSelectedIndex();
 
-                display.addItem(bookPicker.getItemText(index), bookPicker.getValue(index));
+                restrictedBooks.addItemSorted(bookPicker.getItemText(index), bookPicker.getValue(index));
                 bookPicker.removeItem(index);
 
-                if (display.getItemCount() == 2) {
-                    display.setVisible(true);
+                if (restrictedBooks.getItemCount() > 0) {
+                    restrictedBooks.setVisible(true);
                     clearButton.setVisible(true);
                 }
             }
         });
 
-        display.addChangeHandler(new ChangeHandler() {
+        restrictedBooks.addChangeHandler(new ChangeHandler() {
             @Override
             public void onChange(ChangeEvent event) {
-                int index = display.getSelectedIndex();
+                int index = restrictedBooks.getSelectedIndex();
 
-                bookPicker.addItem(display.getItemText(index), display.getValue(index));
-                display.removeItem(index);
+                bookPicker.addItemSorted(restrictedBooks.getItemText(index), restrictedBooks.getValue(index));
+                restrictedBooks.removeItem(index);
 
-                if (display.getItemCount() == 1) {
-                    display.setVisible(false);
+                if (restrictedBooks.getItemCount() == 0) {
+                    restrictedBooks.setVisible(false);
                     clearButton.setVisible(false);
                 }
             }
@@ -96,12 +94,12 @@ public class BookPickerWidget extends Composite {
         clearButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                while (display.getItemCount() > 1) {
-                    bookPicker.addItem(display.getItemText(1), display.getValue(1));
-                    display.removeItem(1);
+                while (restrictedBooks.getItemCount() > 0) {
+                    bookPicker.addItemSorted(restrictedBooks.getItemText(0), restrictedBooks.getValue(0));
+                    restrictedBooks.removeItem(0);
                 }
 
-                display.setVisible(false);
+                restrictedBooks.setVisible(false);
                 clearButton.setVisible(false);
             }
         });
@@ -112,14 +110,34 @@ public class BookPickerWidget extends Composite {
      *
      * @param books book info
      */
-    public void addBooks(BookInfo ... books) {
+    public void addBooks(BookInfo... books) {
         if (books == null) {
             return;
         }
 
         for (BookInfo book : books) {
-            bookPicker.addItem(book.title, book.id);
+            bookPicker.addItemSorted(book.title, book.id);
         }
+    }
+
+    /**
+     * Set a list of books as restricted. If any of the books already exists in
+     * the selection list, remove them first.
+     *
+     * @param books .
+     */
+    public void setBooksAsRestricted(BookInfo... books) {
+        if (books == null) {
+            return;
+        }
+
+        for (BookInfo book : books) {
+            removeFromBookPickerList(book);
+            restrictedBooks.addItemSorted(book.title, book.id);
+        }
+
+        restrictedBooks.setVisible(true);
+        clearButton.setVisible(true);
     }
 
     /**
@@ -128,8 +146,8 @@ public class BookPickerWidget extends Composite {
     public String[] getRestrictedBookIds() {
         List<String> ids = new ArrayList<>();
 
-        for (int i = 0; i < display.getItemCount(); i++) {
-            ids.add(display.getValue(i));
+        for (int i = 0; i < restrictedBooks.getItemCount(); i++) {
+            ids.add(restrictedBooks.getValue(i));
         }
 
         return ids.toArray(new String[ids.size()]);
@@ -137,5 +155,20 @@ public class BookPickerWidget extends Composite {
 
     public void setClearButtonText(String text) {
         clearButton.setText(text);
+    }
+
+    public void clearLists() {
+        restrictedBooks.clear();
+        bookPicker.clear();
+    }
+
+    private void removeFromBookPickerList(BookInfo book) {
+        for (int i = 0; i < bookPicker.getItemCount(); i++) {
+            if (bookPicker.getItemText(i).equals(book.title)
+                    && bookPicker.getValue(i).equals(book.id)) {
+                bookPicker.removeItem(i);
+                return;
+            }
+        }
     }
 }

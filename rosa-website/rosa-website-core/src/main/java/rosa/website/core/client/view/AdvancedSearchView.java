@@ -45,6 +45,14 @@ public interface AdvancedSearchView extends IsWidget {
     void addBooksToRestrictionList(BookInfo... books);
 
     /**
+     * Select these books to restrict search results. The books do not have
+     * to be added to the book restriction list beforehand.
+     *
+     * @param books .
+     */
+    void setBooksAsRestricted(BookInfo... books);
+
+    /**
      * Set the search fields available in this widget. The user can choose
      * from these fields to restrict query results.
      *

@@ -93,6 +93,7 @@ public class AdvancedSearchWidget extends Composite {
         queryOperations = null;
         queryFields = null;
         queriesTable.clear();
+        bookRestrictionWidget.clearLists();
     }
 
     public void setAvailableOperations(QueryOperation[] ops) {
@@ -179,6 +180,10 @@ public class AdvancedSearchWidget extends Composite {
      */
     public void addBooksToRestrictionList(BookInfo... books) {
         bookRestrictionWidget.addBooks(books);
+    }
+
+    public void setBooksAsRestricted(BookInfo... books) {
+        bookRestrictionWidget.setBooksAsRestricted(books);
     }
 
     /**

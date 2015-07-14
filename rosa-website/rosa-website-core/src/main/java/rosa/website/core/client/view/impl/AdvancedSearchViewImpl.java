@@ -43,6 +43,11 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
     }
 
     @Override
+    public void setBooksAsRestricted(BookInfo... books) {
+        searchWidget.setBooksAsRestricted(books);
+    }
+
+    @Override
     public void setClearBooksButtonText(String text) {
         searchWidget.setClearBooksButtonText(text);
     }

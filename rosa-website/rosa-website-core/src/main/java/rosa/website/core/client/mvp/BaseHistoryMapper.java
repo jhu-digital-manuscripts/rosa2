@@ -80,13 +80,15 @@ public abstract class BaseHistoryMapper implements PlaceHistoryMapper {
             }
         } else if (parts.length == 1 && parts[0].equals("search")) {
             return new AdvancedSearchPlace(null);
+        } else if (parts[0].equals("search")) {
+            return new AdvancedSearchPlace(token.substring(7));
         }
 
         // If token not already recognized, revert back to the default history token scheme
         // and try the default history mapper
 
         logger.fine("Checking default history mapper.");
-        return defaultHistoryMapper == null ? null : defaultHistoryMapper.getPlace(token.replaceAll(DELIMITER, COLON));
+        return defaultHistoryMapper == null ? null : defaultHistoryMapper.getPlace(token.replace(DELIMITER, COLON));
     }
 
     @Override
