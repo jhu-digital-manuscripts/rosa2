@@ -2,47 +2,62 @@ package rosa.website.search.client;
 
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
+import rosa.search.model.QueryTerm;
 import rosa.search.model.SearchFields;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 import java.util.logging.Logger;
 
 public class RosaQueryUtil implements QueryUtil {
     private static final Logger LOG = Logger.getLogger(RosaQueryUtil.class.toString());
-
     private static final String DELIMITER = ";";
+
+    @Override
+    public Query toQuery(String token) {
+        List<QueryTerm> terms = queryParts(token);
+
+        List<Query> top = new ArrayList<>();
+        for (QueryTerm term : terms) {
+            top.add(adaptToSearchFields(SearchCategory.category(term.getField()), term.getValue()));
+        }
+        top.add(restrictByBooks(bookRestrictionList(token)));
+
+        return new Query(QueryOperation.AND, top.toArray(new Query[top.size()]));
+    }
 
     // #search;ALL;1234;POETRY;qwer-;rewq;RUBRIC;asdf;ALL;lkhj;BOOK;Marne3,AssembleeNationale1230,CodGall80;0
     @Override
-    public Map<SearchCategory, String> queryParts(String token) {
+    public List<QueryTerm> queryParts(String token) {
         if (token == null || token.isEmpty()) {
             return null;
         }
         token = token.replaceAll("(-;)", ";").replaceAll("(--)", "-");
 
-        Map<SearchCategory, String> map = new HashMap<>();
+        List<QueryTerm> queries = new ArrayList<>();
         String[] parts = token.split(DELIMITER);
 
         SearchCategory current_category = null;
 
-        for (int i = 0; i < parts.length; i++) {
+        for (int i = 0; i < parts.length; i+=2) {
             SearchCategory category = SearchCategory.category(parts[i]);
             if (category != null && (i+1 < parts.length)) {
                 current_category = category;
-                map.put(current_category, parts[++i]);
+                queries.add(new QueryTerm(category.toString(), parts[i + 1]));
             } else if (parts[i].equals("BOOK")) {
+                // Ignore Books
                 break;
-            } else if (category == null) {
-                String term = map.get(current_category) + ";" + parts[i];
-                map.put(current_category, term);
+            } else if (category == null && current_category != null) {
+                // If first position is ever not a SearchCategory, then the previous term most
+                // likely ended with a semi-colon. Append this current term to the last one.
+                QueryTerm lastQuery = queries.remove(queries.size() - 1);
+                queries.add(
+                        new QueryTerm(current_category.toString(), lastQuery.getValue() + ";" + parts[i--])
+                );
             }
         }
 
-        return map;
+        return queries;
     }
 
     @Override
@@ -62,7 +77,7 @@ public class RosaQueryUtil implements QueryUtil {
         int index = token.lastIndexOf(';');
 
         if (index > -1) {
-            String offset = token.substring(index);
+            String offset = token.substring(index + 1);
             try {
                 return Integer.parseInt(offset);
             } catch (NumberFormatException e) {
@@ -71,19 +86,6 @@ public class RosaQueryUtil implements QueryUtil {
         }
 
         return 0;
-    }
-
-    @Override
-    public Query toQuery(String token) {
-        Map<SearchCategory, String> terms = queryParts(token);
-
-        List<Query> top = new ArrayList<>();
-        for (Entry<SearchCategory, String> entry : terms.entrySet()) {
-            top.add(adaptToSearchFields(entry.getKey(), entry.getValue()));
-        }
-        top.add(restrictByBooks(bookRestrictionList(token)));
-
-        return new Query(QueryOperation.AND, top.toArray(new Query[top.size()]));
     }
 
     /**

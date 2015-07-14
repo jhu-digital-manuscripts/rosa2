@@ -1,8 +1,9 @@
 package rosa.website.search.client;
 
 import rosa.search.model.Query;
+import rosa.search.model.QueryTerm;
 
-import java.util.Map;
+import java.util.List;
 
 public interface QueryUtil {
     /**
@@ -15,28 +16,18 @@ public interface QueryUtil {
      */
     Query toQuery(String token);
 
-//    /**
-//     * Get the search token from a search service query. This query uses terms
-//     * recognized by the search service that must be adapted into fields seen
-//     * in the user interface. The resulting token is usable in the history
-//     * fragment.
-//     *
-//     * @param query search service query
-//     * @return the search token
-//     */
-//    String toToken(Query query);
-
     /**
      * Separate a string search token, that has been used as a history fragment,
-     * into a map containing SearchCategories and search terms.
+     * into a list of query terms, each containing the search category and search
+     * term.
      *
      * Example token:
      *      ALL;1234;POETRY;qwer-;rewq;RUBRIC;asdf;ALL;lkhj;BOOK;Marne3,AssembleeNationale1230,CodGall80;0
      *
      * @param token string search token
-     * @return map of SearchCategories -&gt; search term
+     * @return list of search terms
      */
-    Map<SearchCategory, String> queryParts(String token);
+    List<QueryTerm> queryParts(String token);
 
     /**
      * Get all of the books by which a search will be restricted from the search
