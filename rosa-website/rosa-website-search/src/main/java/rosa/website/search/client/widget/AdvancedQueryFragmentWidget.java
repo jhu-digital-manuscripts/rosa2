@@ -9,7 +9,7 @@ import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.web.bindery.event.shared.HandlerRegistration;
 import rosa.search.model.QueryOperation;
-import rosa.website.search.client.SearchCategory;
+import rosa.website.search.client.model.SearchCategory;
 
 import java.util.Map;
 

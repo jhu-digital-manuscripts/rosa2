@@ -24,7 +24,7 @@ import rosa.website.model.select.BookInfo;
 import rosa.website.pizan.client.WebsiteConfig;
 import rosa.website.search.client.QueryUtil;
 import rosa.website.search.client.RosaQueryUtil;
-import rosa.website.search.client.SearchCategory;
+import rosa.website.search.client.model.SearchCategory;
 
 import java.util.ArrayList;
 import java.util.List;

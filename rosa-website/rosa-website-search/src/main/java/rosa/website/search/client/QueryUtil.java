@@ -2,6 +2,7 @@ package rosa.website.search.client;
 
 import rosa.search.model.Query;
 import rosa.search.model.QueryTerm;
+import rosa.search.model.SearchMatch;
 
 import java.util.List;
 
@@ -45,4 +46,10 @@ public interface QueryUtil {
      * @return integer offset of the search results
      */
     int offset(String token);
+
+    String getPageID(SearchMatch match);
+
+    String getCollectionID(SearchMatch match);
+
+    String getBookID(SearchMatch match);
 }

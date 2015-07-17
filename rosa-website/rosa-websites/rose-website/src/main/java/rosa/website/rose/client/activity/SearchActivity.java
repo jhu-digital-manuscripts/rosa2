@@ -5,13 +5,18 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
+import rosa.search.model.SearchMatch;
+import rosa.search.model.SearchOptions;
+import rosa.search.model.SearchResult;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.FSIUtil;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -24,7 +29,10 @@ import rosa.website.model.select.BookInfo;
 import rosa.website.rose.client.WebsiteConfig;
 import rosa.website.search.client.QueryUtil;
 import rosa.website.search.client.RosaQueryUtil;
-import rosa.website.search.client.SearchCategory;
+import rosa.website.core.client.RosaSearchServiceAsync;
+import rosa.website.search.client.model.SearchCategory;
+import rosa.website.search.client.model.SearchMatchModel;
+import rosa.website.search.client.model.SearchResultModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,10 +42,16 @@ import java.util.logging.Logger;
 public class SearchActivity implements Activity {
     private static final Logger LOG = Logger.getLogger(SearchActivity.class.toString());
     private static final QueryUtil QUERY_UTIL = new RosaQueryUtil();
+    private static final int MATCH_COUNT = 20;// Number of matches to return from search service. Can be used with paging.
+    private static final int THUMB_WIDTH = 64;
+    private static final int THUMB_HEIGHT = 64;
 
     private final AdvancedSearchPlace place;
     private final AdvancedSearchView view;
     private final ArchiveDataServiceAsync archiveDataService;
+    private final RosaSearchServiceAsync searchService;
+
+    private String resumeToken = null;     // For use in paging
 
     /**
      * @param place initial search state
@@ -47,6 +61,7 @@ public class SearchActivity implements Activity {
         this.place = place;
         this.view = clientFactory.advancedSearchView();
         this.archiveDataService = clientFactory.archiveDataService();
+        this.searchService = clientFactory.searchService();
     }
 
     @Override
@@ -71,6 +86,8 @@ public class SearchActivity implements Activity {
         LoadingPanel.INSTANCE.show();
         panel.setWidget(view);
 
+        initView();
+
         String collection = WebsiteConfig.INSTANCE.collection();
         String lang = LocaleInfo.getCurrentLocale().getLocaleName();
 
@@ -92,11 +109,11 @@ public class SearchActivity implements Activity {
         });
     }
 
-    private void setSearchModel(CollectionCSV data) {
-        view.setAddFieldButtonText("Add Field");
-        view.setSearchButtonText("Search");
-        view.setRemoveButtonText("Remove");
-        view.setClearBooksButtonText("Clear");
+    private void initView() {
+        view.setAddFieldButtonText(Labels.INSTANCE.addSearchField());
+        view.setSearchButtonText(Labels.INSTANCE.search());
+        view.setRemoveButtonText(Labels.INSTANCE.removeSearchField());
+        view.setClearBooksButtonText(Labels.INSTANCE.clearTextBox());
 
         view.setAvailableSearchFields(SearchCategory.values());
         view.setAvailableSearchOperations(QueryOperation.values());
@@ -105,24 +122,26 @@ public class SearchActivity implements Activity {
             @Override
             public void onClick(ClickEvent event) {
                 String query = view.getSearchQuery();       // This query string will have to be URL encoded first
-                if (query == null || query.isEmpty()) {
-                    Window.alert("No search will happen because no search query was found.");
-                } else {
-                    Window.alert("A search will happen now. Token: #" + view.getSearchQuery());
+                if (query != null && !query.isEmpty()) {
+                    LOG.info("A search will happen now. Token: #" + view.getSearchQuery());
+                    // Do search
+                    performSearch(query);
                 }
             }
         });
+    }
 
+    private void setSearchModel(CollectionCSV data) {
         List<BookInfo> books = new ArrayList<>();
         for (CSVRow row : data) {
             books.add(new BookInfo(row.getValue(Column.NAME), row.getValue(Column.ID)));
         }
         view.addBooksToRestrictionList(books.toArray(new BookInfo[books.size()]));
 
-        init(books);
+        setData(books);
     }
 
-    private void init(List<BookInfo> books) {
+    private void setData(List<BookInfo> books) {
         if (place == null || place.getSearchToken() == null || place.getSearchToken().isEmpty()) {
             view.addQueryField();
             view.addQueryField();
@@ -146,6 +165,8 @@ public class SearchActivity implements Activity {
                 view.setBooksAsRestricted(bookInfo);
             }
         }
+
+        performSearch(place.getSearchToken());
     }
 
     private BookInfo getBook(String book, List<BookInfo> books) {
@@ -157,5 +178,46 @@ public class SearchActivity implements Activity {
         }
 
         return null;
+    }
+
+    private void performSearch(String searchToken) {
+        Query query = QUERY_UTIL.toQuery(searchToken);
+        SearchOptions options = new SearchOptions(QUERY_UTIL.offset(searchToken), MATCH_COUNT, resumeToken);
+
+        if (query == null) {
+            return;
+        }
+
+        LOG.info("Performing search. [" + searchToken + "]");
+        searchService.search(query, options, new AsyncCallback<SearchResult>() {
+            @Override
+            public void onFailure(Throwable caught) {
+                LOG.log(Level.SEVERE, "Search failed.", caught);
+            }
+
+            @Override
+            public void onSuccess(SearchResult result) {
+                view.setResults(adaptSearchResults(result));
+            }
+        });
+    }
+
+    private SearchResultModel adaptSearchResults(SearchResult result) {
+        SearchResultModel model = new SearchResultModel(result);
+
+        for (SearchMatch match : result.getMatches()) {
+            model.addSearchMatch(new SearchMatchModel(match,
+                    FSIUtil.getFSIImageUrl(
+                            WebsiteConfig.INSTANCE.fsiShare(),
+                            QUERY_UTIL.getBookID(match),
+                            QUERY_UTIL.getPageID(match),
+                            THUMB_WIDTH,
+                            THUMB_HEIGHT,
+                            WebsiteConfig.INSTANCE.fsiUrl()
+                    )
+            ));
+        }
+
+        return model;
     }
 }

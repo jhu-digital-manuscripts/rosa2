@@ -1,4 +1,4 @@
-package rosa.website.search.client;
+package rosa.website.search.client.model;
 
 import rosa.search.model.SearchFields;
 

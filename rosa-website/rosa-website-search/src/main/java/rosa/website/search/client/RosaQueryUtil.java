@@ -4,6 +4,8 @@ import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
 import rosa.search.model.SearchFields;
+import rosa.search.model.SearchMatch;
+import rosa.website.search.client.model.SearchCategory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,10 @@ public class RosaQueryUtil implements QueryUtil {
 
     @Override
     public Query toQuery(String token) {
+        if (token == null || token.isEmpty() || token.equals("NULL")) {
+            return null;
+        }
+
         List<QueryTerm> terms = queryParts(token);
 
         List<Query> top = new ArrayList<>();
@@ -86,6 +92,24 @@ public class RosaQueryUtil implements QueryUtil {
         }
 
         return 0;
+    }
+
+    @Override
+    public String getPageID(SearchMatch match) {
+        String[] parts = match.getId().split(";");
+        return parts.length == 3 ? parts[2] : null;
+    }
+
+    @Override
+    public String getCollectionID(SearchMatch match) {
+        String[] parts = match.getId().split(";");
+        return parts.length > 1 ? parts[1] : null;
+    }
+
+    @Override
+    public String getBookID(SearchMatch match) {
+        String[] parts = match.getId().split(";");
+        return parts.length > 0 ? parts[0] : null;
     }
 
     /**

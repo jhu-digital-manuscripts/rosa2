@@ -7,20 +7,27 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import rosa.search.model.QueryOperation;
 import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.model.select.BookInfo;
-import rosa.website.search.client.SearchCategory;
+import rosa.website.search.client.model.SearchCategory;
+import rosa.website.search.client.model.SearchResultModel;
 import rosa.website.search.client.widget.AdvancedSearchWidget;
+import rosa.website.search.client.widget.SearchResultsWidget;
 
 public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchView {
+    private int thumbWidth = 100;
+    private int thumbHeight = 100;
 
     private AdvancedSearchWidget searchWidget;
+    private SearchResultsWidget searchResults;
 
     /**  */
     public AdvancedSearchViewImpl() {
         FlowPanel root = new FlowPanel();
 
         this.searchWidget = new AdvancedSearchWidget();
+        this.searchResults = new SearchResultsWidget();
 
         root.add(searchWidget);
+        root.add(searchResults);
 
         root.setStylePrimaryName("Search");
 
@@ -77,6 +84,7 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
     @Override
     public void clear() {
         searchWidget.clear();
+        searchResults.clear();
     }
 
     @Override
@@ -89,5 +97,9 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
         return searchWidget.getSearchToken();
     }
 
-    // TODO add search results stuff
+    @Override
+    public void setResults(SearchResultModel model) {
+        searchResults.setData(model);
+    }
+
 }

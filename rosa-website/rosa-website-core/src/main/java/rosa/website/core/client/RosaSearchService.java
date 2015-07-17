@@ -1,5 +1,6 @@
-package rosa.website.search.client;
+package rosa.website.core.client;
 
+import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import rosa.search.model.Query;
 import rosa.search.model.SearchOptions;
@@ -28,6 +29,6 @@ import java.io.IOException;
  * }
  */
 @RemoteServiceRelativePath("search")
-public interface RosaSearchService {
+public interface RosaSearchService extends RemoteService {
     SearchResult search(Query query, SearchOptions options) throws IOException;
 }

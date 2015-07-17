@@ -13,7 +13,7 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTMLTable.Cell;
 import rosa.search.model.QueryOperation;
 import rosa.website.model.select.BookInfo;
-import rosa.website.search.client.SearchCategory;
+import rosa.website.search.client.model.SearchCategory;
 
 /**
  * AdvancedSearchWidget lets a user build a complex search query through the UI.

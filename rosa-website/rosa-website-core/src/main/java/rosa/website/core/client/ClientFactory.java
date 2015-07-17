@@ -1,5 +1,6 @@
 package rosa.website.core.client;
 
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
@@ -28,6 +29,7 @@ public class ClientFactory {
     private static EventBus event_bus = new SimpleEventBus();
     private static PlaceController place_controller = new PlaceController(event_bus);
     private static ArchiveDataServiceAsync archiveDataService = CachingArchiveDataService.INSTANCE;
+    private static RosaSearchServiceAsync searchService = GWT.create(RosaSearchService.class);
 
     private static HeaderView headerView = new HeaderViewImpl();
 
@@ -54,6 +56,10 @@ public class ClientFactory {
 
     public ArchiveDataServiceAsync archiveDataService() {
         return archiveDataService;
+    }
+
+    public RosaSearchServiceAsync searchService() {
+        return searchService;
     }
 
     public HTMLView htmlView() {

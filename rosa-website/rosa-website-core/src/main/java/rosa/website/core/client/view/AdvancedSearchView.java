@@ -5,7 +5,8 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
 import rosa.search.model.QueryOperation;
 import rosa.website.model.select.BookInfo;
-import rosa.website.search.client.SearchCategory;
+import rosa.website.search.client.model.SearchCategory;
+import rosa.website.search.client.model.SearchResultModel;
 
 public interface AdvancedSearchView extends IsWidget {
 
@@ -97,4 +98,6 @@ public interface AdvancedSearchView extends IsWidget {
     HandlerRegistration addSearchButtonClickHandler(ClickHandler handler);
 
     String getSearchQuery();
+
+    void setResults(SearchResultModel model);
 }

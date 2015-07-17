@@ -6,6 +6,7 @@
     <!-- GIN (Gwt INjection using Guice) -->
     <inherits name="com.google.gwt.inject.Inject"/>
     <inherits name='com.google.gwt.xml.XML'/>
+    <inherits name="com.google.gwt.http.HTTP"/> <!-- To get access to gwt URL utils -->
 
     <inherits name="rosa.archive.RosaArchiveModel"/>
     <inherits name="rosa.archive.RosaArchiveCore"/>
