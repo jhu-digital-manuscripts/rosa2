@@ -87,13 +87,27 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     @Override
     public String[] listBookCollections() throws IOException {
-        return base.listByteStreamGroupNames().toArray(new String[] {});
+        List<String> names = base.listByteStreamGroupNames();
+        for (int i = 0; i < names.size(); i++) {
+            if (names.get(i).contains(".ignore")) {
+                names.remove(i--);
+            }
+        }
+        return names.toArray(new String[names.size()]);
     }
 
     @Override
     public String[] listBooks(String collectionId) throws IOException {
         ByteStreamGroup collection = base.getByteStreamGroup(collectionId);
-        return collection.listByteStreamGroupNames().toArray(new String[] {});
+        List<String> names = collection.listByteStreamGroupNames();
+
+        for (int i = 0; i < names.size(); i++) {
+            if (names.get(i).contains(".ignore")) {
+                names.remove(i--);
+            }
+        }
+
+        return names.toArray(new String[names.size()]);
     }
 
     @Override

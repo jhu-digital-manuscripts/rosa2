@@ -7,6 +7,8 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,6 +22,7 @@ import rosa.archive.model.BookCollection;
  * Test StoreImpl functionality not tested elsewhere.
  */
 public class StoreImplTest extends BaseArchiveTest {
+    private static Path b;
     @Test
     public void testListCollections() throws IOException {
         String[] collections = store.listBookCollections();
@@ -27,6 +30,24 @@ public class StoreImplTest extends BaseArchiveTest {
         assertNotNull(collections);
         assertEquals(1, collections.length);
         assertEquals(VALID_COLLECTION, collections[0]);
+    }
+
+    /**
+     * Add a new 'collection' to the temp archive called 'incomplete.ignore'
+     * This collection should be ignored when all collections are being listed
+     * by the store.
+     *
+     * @throws IOException .
+     */
+    @Test
+    public void listCollectionsIgnoreTest() throws IOException {
+        Files.createDirectory(basePath.resolve("incomplete.ignore"));
+
+        assertEquals(2, base.listByteStreamGroupNames().size());
+        assertTrue(base.listByteStreamGroupNames().contains("incomplete.ignore"));
+
+        testListCollections();
+        assertFalse(Arrays.asList(store.listBookCollections()).contains("incomplete.ignore"));
     }
 
     @Test
@@ -39,6 +60,24 @@ public class StoreImplTest extends BaseArchiveTest {
         assertEquals(2, list.size());
         assertTrue(list.contains(VALID_BOOK_FOLGERSHA2));
         assertTrue(list.contains(VALID_BOOK_LUDWIGXV7));
+    }
+
+    /**
+     * Add a new book to the valid collection called 'incomplete.ignore'. This book
+     * should be be included in the books list for the valid collection when the
+     * listBooks method is called.
+     *
+     * @throws IOException .
+     */
+    @Test
+    public void listBooksIgnoreTest() throws IOException {
+        Files.createDirectory(basePath.resolve(VALID_COLLECTION).resolve("incomplete.ignore"));
+
+        assertEquals(3, base.getByteStreamGroup(VALID_COLLECTION).listByteStreamGroupNames().size());
+        assertTrue(base.getByteStreamGroup(VALID_COLLECTION).listByteStreamGroupNames().contains("incomplete.ignore"));
+
+        testListBooks();
+        assertFalse(Arrays.asList(store.listBooks(VALID_COLLECTION)).contains("incomplete.ignore"));
     }
 
     @Test
