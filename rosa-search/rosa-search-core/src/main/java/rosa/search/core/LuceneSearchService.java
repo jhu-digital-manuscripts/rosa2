@@ -262,6 +262,7 @@ public class LuceneSearchService implements SearchService {
                     }
                 }
 
+                logger.info("Updating index for: [" + collection_id + ":" + book_id + "]");
                 for (Document doc: mapper.createDocuments(col, book)) {
                     writer.updateDocument(
                             new Term(lucene_id_field, getId(doc)), doc);

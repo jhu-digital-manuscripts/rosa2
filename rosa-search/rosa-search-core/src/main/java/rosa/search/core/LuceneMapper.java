@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 import org.apache.lucene.analysis.Analyzer;
@@ -66,6 +67,8 @@ import rosa.search.model.SearchFields;
  * Lucene queries.
  */
 public class LuceneMapper {
+    private static final Logger logger = Logger.getLogger(LuceneMapper.class.toString());
+
     private final Analyzer english_analyzer;
     private final Analyzer french_analyzer;
     private final Analyzer imagename_analyzer;
@@ -257,12 +260,15 @@ public class LuceneMapper {
         // Create document for each image
 
         ImageList images = book.getImages();
+        if (images.getImages() == null) {
+            logger.warning("No image list found. [" + col.getId() + ":" + book.getId() + "]");
+        } else {
+            for (BookImage image : images.getImages()) {
+                Document doc = new Document();
 
-        for (BookImage image: images.getImages()) {
-            Document doc = new Document();
-
-            index(doc, col, book, image);
-            result.add(doc);
+                index(doc, col, book, image);
+                result.add(doc);
+            }
         }
 
         return result;
