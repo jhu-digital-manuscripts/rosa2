@@ -15,17 +15,29 @@ public class SearchMatchModel extends SearchMatch implements Serializable {
 
     private SearchMatch match;
     private String imageUrl;
+    private String targetUrl;
+    private String display;
 
     /** No-arg constructor for GWT */
     private SearchMatchModel() {}
 
-    public SearchMatchModel(SearchMatch match, String imageUrl) {
+    public SearchMatchModel(SearchMatch match, String imageUrl, String targetUrl, String display) {
         this.match = match;
         this.imageUrl = imageUrl;
+        this.targetUrl = targetUrl;
+        this.display = display;
     }
 
     public String getId() {
         return match.getId();
+    }
+
+    public String getTargetUrl() {
+        return targetUrl;
+    }
+
+    public String getDisplay() {
+        return display;
     }
 
     public List<String> getContext() {
@@ -45,7 +57,10 @@ public class SearchMatchModel extends SearchMatch implements Serializable {
         SearchMatchModel that = (SearchMatchModel) o;
 
         if (match != null ? !match.equals(that.match) : that.match != null) return false;
-        return !(imageUrl != null ? !imageUrl.equals(that.imageUrl) : that.imageUrl != null);
+        if (imageUrl != null ? !imageUrl.equals(that.imageUrl) : that.imageUrl != null) return false;
+        if (targetUrl != null ? !targetUrl.equals(that.targetUrl) : that.targetUrl != null) return false;
+        return !(display != null ? !display.equals(that.display) : that.display != null);
+
     }
 
     @Override
@@ -53,11 +68,14 @@ public class SearchMatchModel extends SearchMatch implements Serializable {
         int result = super.hashCode();
         result = 31 * result + (match != null ? match.hashCode() : 0);
         result = 31 * result + (imageUrl != null ? imageUrl.hashCode() : 0);
+        result = 31 * result + (targetUrl != null ? targetUrl.hashCode() : 0);
+        result = 31 * result + (display != null ? display.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return "SearchMatchModel{" + "match=" + match + ", imageUrl='" + imageUrl + '\'' + '}';
+        return "SearchMatchModel{" + "match=" + match + ", imageUrl='" + imageUrl + '\'' +
+                ", targetUrl='" + targetUrl + '\'' + ", display='" + display + '\'' + '}';
     }
 }

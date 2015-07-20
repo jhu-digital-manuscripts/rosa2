@@ -1,6 +1,7 @@
 package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
@@ -20,11 +21,11 @@ import rosa.website.core.client.Labels;
 import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.model.csv.BookDataCSV;
+import rosa.website.model.csv.BookDataCSV.Column;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVRow;
 import rosa.website.model.csv.CSVType;
-import rosa.website.model.csv.CollectionCSV;
-import rosa.website.model.csv.CollectionCSV.Column;
 import rosa.website.model.select.BookInfo;
 import rosa.website.rose.client.WebsiteConfig;
 import rosa.website.search.client.QueryUtil;
@@ -52,6 +53,7 @@ public class SearchActivity implements Activity {
     private final RosaSearchServiceAsync searchService;
 
     private String resumeToken = null;     // For use in paging
+    private BookDataCSV collection;
 
     /**
      * @param place initial search state
@@ -91,7 +93,7 @@ public class SearchActivity implements Activity {
         String collection = WebsiteConfig.INSTANCE.collection();
         String lang = LocaleInfo.getCurrentLocale().getLocaleName();
 
-        archiveDataService.loadCSVData(collection, lang, CSVType.COLLECTION_DATA, new AsyncCallback<CSVData>() {
+        archiveDataService.loadCSVData(collection, lang, CSVType.COLLECTION_BOOKS, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
                 LOG.log(Level.SEVERE, "Failed to get book data.", caught);
@@ -99,8 +101,8 @@ public class SearchActivity implements Activity {
 
             @Override
             public void onSuccess(CSVData result) {
-                if (result instanceof CollectionCSV) {
-                    setSearchModel((CollectionCSV) result);
+                if (result instanceof BookDataCSV) {
+                    setSearchModel((BookDataCSV) result);
                 } else {
                     LOG.log(Level.SEVERE, "Cannot initialize search widget, bad data returned from server.");
                 }
@@ -131,10 +133,13 @@ public class SearchActivity implements Activity {
         });
     }
 
-    private void setSearchModel(CollectionCSV data) {
+    private void setSearchModel(BookDataCSV data) {
+        this.collection = data;
+        LOG.info("Books csv:\n" + data.toString());
+
         List<BookInfo> books = new ArrayList<>();
         for (CSVRow row : data) {
-            books.add(new BookInfo(row.getValue(Column.NAME), row.getValue(Column.ID)));
+            books.add(new BookInfo(row.getValue(Column.COMMON_NAME), row.getValue(Column.ID)));
         }
         view.addBooksToRestrictionList(books.toArray(new BookInfo[books.size()]));
 
@@ -206,18 +211,44 @@ public class SearchActivity implements Activity {
         SearchResultModel model = new SearchResultModel(result);
 
         for (SearchMatch match : result.getMatches()) {
-            model.addSearchMatch(new SearchMatchModel(match,
-                    FSIUtil.getFSIImageUrl(
-                            WebsiteConfig.INSTANCE.fsiShare(),
-                            QUERY_UTIL.getBookID(match),
-                            QUERY_UTIL.getPageID(match),
-                            THUMB_WIDTH,
-                            THUMB_HEIGHT,
-                            WebsiteConfig.INSTANCE.fsiUrl()
-                    )
-            ));
+            String pageId = QUERY_UTIL.getPageID(match);
+            String bookId = QUERY_UTIL.getBookID(match);
+
+            String fsiUrl;
+            String targetUrl = GWT.getHostPageBaseURL();
+
+            if (pageId == null || pageId.isEmpty()) {
+                targetUrl += "#book;" + bookId;
+                fsiUrl = null;
+            } else {
+                targetUrl += "#read;" + pageId;
+                fsiUrl = FSIUtil.getFSIImageUrl(
+                        WebsiteConfig.INSTANCE.fsiShare(),
+                        bookId,
+                        pageId,
+                        THUMB_WIDTH,
+                        THUMB_HEIGHT,
+                        WebsiteConfig.INSTANCE.fsiUrl()
+                );
+            }
+
+            model.addSearchMatch(new SearchMatchModel(match, fsiUrl, targetUrl, getDisplayName(bookId, pageId)));
         }
 
         return model;
+    }
+
+    private String getDisplayName(String bookId, String pageId) {
+        if (pageId != null) {
+            CSVRow row = collection.getRow(bookId);
+
+            if (row != null) {
+                return pageId + ": "
+                        + row.getValue(Column.REPO) + " "
+                        + row.getValue(Column.SHELFMARK);
+            }
+        }
+
+        return bookId;
     }
 }
