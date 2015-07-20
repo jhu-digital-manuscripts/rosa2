@@ -10,13 +10,13 @@ public class SearchMatchCell extends AbstractCell<SearchMatchModel> {
 
     @Override
     public void render(Context context, SearchMatchModel value, SafeHtmlBuilder sb) {
-        console(value.toString());
         String url = GWT.getHostPageBaseURL() + "#read;" + value.getId();
 
+        sb.appendHtmlConstant("<div class=\"Result\">");
         if (value.getImageUrl() != null && !value.getImageUrl().isEmpty()) {
             sb.appendHtmlConstant("<img style=\"float:left\" src=\"");
             sb.appendEscaped(value.getImageUrl());
-            sb.appendHtmlConstant(">");
+            sb.appendHtmlConstant("\">");
         }
 
         sb.appendHtmlConstant("<table>");
@@ -27,15 +27,12 @@ public class SearchMatchCell extends AbstractCell<SearchMatchModel> {
         sb.appendEscaped(value.getId());
         sb.appendHtmlConstant("</a></td></tr>");
 
-        sb.appendHtmlConstant("<tr><td>");
         for (String searchContext : value.getContext()) {
+            sb.appendHtmlConstant("<tr><td>");
             sb.append(SafeHtmlUtils.fromTrustedString(searchContext));
+            sb.appendHtmlConstant("</td></tr>");
         }
 
-        sb.appendHtmlConstant("</td></tr></table>");
+        sb.appendHtmlConstant("</table></div>");
     }
-
-    private native void console(String message) /*-{
-        console.log(message);
-    }-*/;
 }

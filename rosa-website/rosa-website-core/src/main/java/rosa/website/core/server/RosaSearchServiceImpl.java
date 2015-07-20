@@ -58,8 +58,8 @@ public class RosaSearchServiceImpl extends RemoteServiceServlet implements RosaS
     public SearchResult search(Query query, SearchOptions options) throws IOException {
         log.info("Performing search on the server.");
         SearchResult result = searchService.search(query, options);
-        log.info("Result found: " + result.toString());
-
+        log.info("Result found: Total= " + result.getTotal() + ", offset= "
+                + result.getOffset() + ", resume token= " + result.getResumeToken());
 
         return result;
     }

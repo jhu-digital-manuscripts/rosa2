@@ -20,7 +20,7 @@ public class FSIUtil {
         }
 
         return imageServer
-                + "server?type=image&"
+                + "?type=image&"
                 + "source="
                 + URL.encodeQueryString(share + "/" + book + "/" + image)
                 + "&width="

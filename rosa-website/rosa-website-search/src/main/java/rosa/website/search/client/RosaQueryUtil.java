@@ -27,9 +27,17 @@ public class RosaQueryUtil implements QueryUtil {
         for (QueryTerm term : terms) {
             top.add(adaptToSearchFields(SearchCategory.category(term.getField()), term.getValue()));
         }
-        top.add(restrictByBooks(bookRestrictionList(token)));
 
-        return new Query(QueryOperation.AND, top.toArray(new Query[top.size()]));
+        String[] bookList = bookRestrictionList(token);
+        if (bookList != null && bookList.length > 0) {
+            top.add(restrictByBooks(bookRestrictionList(token)));
+        }
+
+        if (top.size() == 1) {
+            return top.get(0);
+        } else {
+            return new Query(QueryOperation.AND, top.toArray(new Query[top.size()]));
+        }
     }
 
     // #search;ALL;1234;POETRY;qwer-;rewq;RUBRIC;asdf;ALL;lkhj;BOOK;Marne3,AssembleeNationale1230,CodGall80;0
@@ -47,13 +55,14 @@ public class RosaQueryUtil implements QueryUtil {
 
         for (int i = 0; i < parts.length; i+=2) {
             SearchCategory category = SearchCategory.category(parts[i]);
-            if (category != null && (i+1 < parts.length)) {
+            if (category != null) {
                 current_category = category;
                 queries.add(new QueryTerm(category.toString(), parts[i + 1]));
             } else if (parts[i].equals("BOOK")) {
                 // Ignore Books
                 break;
-            } else if (category == null && current_category != null) {
+            } else if (current_category != null && (i + 1 < parts.length)) {
+                // Category is always NULL here
                 // If first position is ever not a SearchCategory, then the previous term most
                 // likely ended with a semi-colon. Append this current term to the last one.
                 QueryTerm lastQuery = queries.remove(queries.size() - 1);
@@ -101,13 +110,13 @@ public class RosaQueryUtil implements QueryUtil {
     }
 
     @Override
-    public String getCollectionID(SearchMatch match) {
+    public String getBookID(SearchMatch match) {
         String[] parts = match.getId().split(";");
         return parts.length > 1 ? parts[1] : null;
     }
 
     @Override
-    public String getBookID(SearchMatch match) {
+    public String getCollectionID(SearchMatch match) {
         String[] parts = match.getId().split(";");
         return parts.length > 0 ? parts[0] : null;
     }
@@ -141,7 +150,9 @@ public class RosaQueryUtil implements QueryUtil {
      * @return query
      */
     private Query restrictByBooks(String[] books) {
-        if (books.length == 1) {
+        if (books == null || books.length == 0) {
+            return null;
+        } else if (books.length == 1) {
             return new Query(SearchFields.BOOK_ID, books[0]);
         }
 

@@ -113,6 +113,12 @@ table {
   margin-left: 5px;
 }
 
+.Search .Result {
+  height: 64px;
+  margin: 5px 50px 5px 5px;
+  float: left;
+}
+
 .GoTextBox {
   width: 15em;
 }
