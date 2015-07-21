@@ -3,10 +3,15 @@ package rosa.website.core.client.view;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
+import com.google.gwt.view.client.RangeChangeEvent;
+import com.google.gwt.view.client.RangeChangeEvent.Handler;
 import rosa.search.model.QueryOperation;
 import rosa.website.model.select.BookInfo;
 import rosa.website.search.client.model.SearchCategory;
+import rosa.website.search.client.model.SearchMatchModel;
 import rosa.website.search.client.model.SearchResultModel;
+
+import java.util.List;
 
 public interface AdvancedSearchView extends IsWidget {
 
@@ -99,5 +104,33 @@ public interface AdvancedSearchView extends IsWidget {
 
     String getSearchQuery();
 
-    void setResults(SearchResultModel model);
+    /**
+     * Define behavior of the results list on range change. This handler activates
+     * whenever the user changes the display range of the results list by clicking
+     * the 'next' button or 'previous' button or selects a particular results page.
+     *
+     * @param handler .
+     */
+    HandlerRegistration addRangeChangeHandler(RangeChangeEvent.Handler handler);
+
+    /**
+     * Set the visible range of data in the results list. This will trigger a
+     * {@link RangeChangeEvent} which will be  handled by the range change handler
+     * set in {@link #addRangeChangeHandler(Handler)}.
+     *
+     * @param start start of range
+     * @param length length of range
+     */
+    void setVisibleRange(int start, int length);
+
+    void setPageSize(int pageSize);
+
+    void setRowData(int start, List<SearchMatchModel> data);
+
+    /**
+     * Set the total number of rows the results list will contain.
+     *
+     * @param count .
+     */
+    void setRowCount(int count);
 }

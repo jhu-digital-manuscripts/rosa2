@@ -11,6 +11,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTMLTable.Cell;
+import com.google.gwt.view.client.RangeChangeEvent;
 import rosa.search.model.QueryOperation;
 import rosa.website.model.select.BookInfo;
 import rosa.website.search.client.model.SearchCategory;
@@ -231,7 +232,7 @@ public class AdvancedSearchWidget extends Composite {
         }
 
         String[] books = bookRestrictionWidget.getRestrictedBookIds();
-        if (books != null && books.length > 1) {
+        if (books != null && books.length > 0) {
             query.append("BOOK;");
             for (String book : books) {
                 if (isBlank(book)) {

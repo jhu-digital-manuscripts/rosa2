@@ -5,9 +5,12 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import com.google.gwt.view.client.RangeChangeEvent;
+import com.google.gwt.view.client.RangeChangeEvent.Handler;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
@@ -55,6 +58,8 @@ public class SearchActivity implements Activity {
     private String resumeToken = null;     // For use in paging
     private BookDataCSV collection;
 
+    private HandlerRegistration rangeChangeHandler;
+
     /**
      * @param place initial search state
      * @param clientFactory .
@@ -88,6 +93,7 @@ public class SearchActivity implements Activity {
         LoadingPanel.INSTANCE.show();
         panel.setWidget(view);
 
+        view.clear();
         initView();
 
         String collection = WebsiteConfig.INSTANCE.collection();
@@ -135,9 +141,9 @@ public class SearchActivity implements Activity {
 
     private void setSearchModel(BookDataCSV data) {
         this.collection = data;
-        LOG.info("Books csv:\n" + data.toString());
 
         List<BookInfo> books = new ArrayList<>();
+        books.add(new BookInfo("Restrict by book:", null));
         for (CSVRow row : data) {
             books.add(new BookInfo(row.getValue(Column.COMMON_NAME), row.getValue(Column.ID)));
         }
@@ -185,26 +191,46 @@ public class SearchActivity implements Activity {
         return null;
     }
 
-    private void performSearch(String searchToken) {
-        Query query = QUERY_UTIL.toQuery(searchToken);
-        SearchOptions options = new SearchOptions(QUERY_UTIL.offset(searchToken), MATCH_COUNT, resumeToken);
+    private void performSearch(final String searchToken) {
+        if (rangeChangeHandler != null) {
+            rangeChangeHandler.removeHandler();
+        }
+
+        final Query query = QUERY_UTIL.toQuery(searchToken);
+        resumeToken = null;
 
         if (query == null) {
             return;
         }
 
-        LOG.info("Performing search. [" + searchToken + "]");
-        searchService.search(query, options, new AsyncCallback<SearchResult>() {
+        rangeChangeHandler = view.addRangeChangeHandler(new Handler() {
             @Override
-            public void onFailure(Throwable caught) {
-                LOG.log(Level.SEVERE, "Search failed.", caught);
-            }
+            public void onRangeChange(RangeChangeEvent event) {
+                final int start = event.getNewRange().getStart();
+                int length = event.getNewRange().getLength();
 
-            @Override
-            public void onSuccess(SearchResult result) {
-                view.setResults(adaptSearchResults(result));
+                SearchOptions options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length), resumeToken);
+
+                searchService.search(query, options, new AsyncCallback<SearchResult>() {
+                    @Override
+                    public void onFailure(Throwable caught) {
+                        LOG.log(Level.SEVERE, "Search failed.", caught);
+                    }
+
+                    @Override
+                    public void onSuccess(SearchResult result) {
+                        SearchResultModel model = adaptSearchResults(result);
+
+                        resumeToken = model.getResumeToken();
+                        view.setRowCount((int) model.getTotal());  // NOTE: casting long to int can result in data loss
+                        view.setRowData(start, model.getMatchList());
+                    }
+                });
             }
         });
+
+        LOG.info("Performing search. [" + searchToken + "]");
+        view.setVisibleRange(0, MATCH_COUNT);
     }
 
     private SearchResultModel adaptSearchResults(SearchResult result) {

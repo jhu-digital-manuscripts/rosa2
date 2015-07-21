@@ -4,13 +4,17 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.view.client.RangeChangeEvent.Handler;
 import rosa.search.model.QueryOperation;
 import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.model.select.BookInfo;
 import rosa.website.search.client.model.SearchCategory;
+import rosa.website.search.client.model.SearchMatchModel;
 import rosa.website.search.client.model.SearchResultModel;
 import rosa.website.search.client.widget.AdvancedSearchWidget;
 import rosa.website.search.client.widget.SearchResultsWidget;
+
+import java.util.List;
 
 public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchView {
     private int thumbWidth = 100;
@@ -98,8 +102,28 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
     }
 
     @Override
-    public void setResults(SearchResultModel model) {
-        searchResults.setData(model);
+    public HandlerRegistration addRangeChangeHandler(Handler handler) {
+        return searchResults.addRangeChangeHandler(handler);
+    }
+
+    @Override
+    public void setVisibleRange(int start, int length) {
+        searchResults.setVisibleRange(start, length);
+    }
+
+    @Override
+    public void setPageSize(int pageSize) {
+        searchResults.setPageSize(pageSize);
+    }
+
+    @Override
+    public void setRowData(int start, List<SearchMatchModel> data) {
+        searchResults.setRowData(start, data);
+    }
+
+    @Override
+    public void setRowCount(int count) {
+        searchResults.setRowCount(count);
     }
 
 }
