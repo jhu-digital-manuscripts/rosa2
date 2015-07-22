@@ -11,12 +11,13 @@ import com.google.gwt.place.shared.Prefix;
 public class AdvancedSearchPlace extends Place {
 
     private final String searchToken;
+    private final String resumeToken;
 
     /**
      * Create a new AdvancedSearchPlace with no search token.
      */
     public AdvancedSearchPlace() {
-        this.searchToken = null;
+        this(null, null);
     }
 
     /**
@@ -25,11 +26,20 @@ public class AdvancedSearchPlace extends Place {
      * @param searchToken .
      */
     public AdvancedSearchPlace(String searchToken) {
+        this(searchToken, null);
+    }
+
+    public AdvancedSearchPlace(String searchToken, String resumeToken) {
         this.searchToken = searchToken;
+        this.resumeToken = resumeToken;
     }
 
     public String getSearchToken() {
         return searchToken;
+    }
+
+    public String getResumeToken() {
+        return resumeToken;
     }
 
     @Prefix("search")
@@ -56,19 +66,23 @@ public class AdvancedSearchPlace extends Place {
 
         AdvancedSearchPlace that = (AdvancedSearchPlace) o;
 
-        return !(searchToken != null ? !searchToken.equals(that.searchToken) : that.searchToken != null);
+        if (searchToken != null ? !searchToken.equals(that.searchToken) : that.searchToken != null) return false;
+        return !(resumeToken != null ? !resumeToken.equals(that.resumeToken) : that.resumeToken != null);
 
     }
 
     @Override
     public int hashCode() {
-        return searchToken != null ? searchToken.hashCode() : 0;
+        int result = searchToken != null ? searchToken.hashCode() : 0;
+        result = 31 * result + (resumeToken != null ? resumeToken.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
         return "AdvancedSearchPlace{" +
                 "searchToken='" + searchToken + '\'' +
+                ", resumeToken='" + resumeToken + '\'' +
                 '}';
     }
 }

@@ -9,6 +9,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -83,6 +84,21 @@ public class RosaQueryUtilTest {
     public void offsetTest() {
         int offset = adapter.offset(token);
         assertEquals("Unexpected offset number found.", 25, offset);
+    }
+
+    @Test
+    public void newOffsetTest() {
+        String nt = adapter.changeOffset(token, 50);
+
+        assertNotNull(nt);
+        assertNotEquals("Original and new values should not be the same.", token, nt);
+        assertTrue("New token should end with new offset value.", nt.endsWith(";" + String.valueOf(50)));
+
+        nt = adapter.changeOffset("ALL;LudwigXV7;0", 20);
+
+        assertNotNull(nt);
+        assertNotEquals("Original and new values should not be the same.", "ALL;LudwigXV7;0", nt);
+        assertTrue("New token should end with new offset value.", nt.endsWith(";" + String.valueOf(20)));
     }
 
 }

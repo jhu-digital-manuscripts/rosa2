@@ -7,6 +7,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.LocaleInfo;
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.gwt.view.client.RangeChangeEvent;
@@ -177,6 +178,7 @@ public class SearchActivity implements Activity {
             }
         }
 
+        LOG.info("Setting initial data. " + place.toString());
         performSearch(place.getSearchToken());
     }
 
@@ -219,8 +221,10 @@ public class SearchActivity implements Activity {
 
                     @Override
                     public void onSuccess(SearchResult result) {
-                        SearchResultModel model = adaptSearchResults(result);
+                        // Update history token, but do not navigate away
+                        History.newItem("search;" + QUERY_UTIL.changeOffset(searchToken, start), false);
 
+                        SearchResultModel model = adaptSearchResults(result);
                         resumeToken = model.getResumeToken();
                         view.setRowCount((int) model.getTotal());  // NOTE: casting long to int can result in data loss
                         view.setRowData(start, model.getMatchList());
@@ -229,8 +233,10 @@ public class SearchActivity implements Activity {
             }
         });
 
-        LOG.info("Performing search. [" + searchToken + "]");
-        view.setVisibleRange(0, MATCH_COUNT);
+        // Note on using the BACK button, this will use the original value stored in the Place
+        // Switch to using history token directly?
+        LOG.info("Performing search. [" + searchToken + "]  {" + this + "}");
+        view.setVisibleRange(QUERY_UTIL.offset(searchToken), MATCH_COUNT);
     }
 
     private SearchResultModel adaptSearchResults(SearchResult result) {

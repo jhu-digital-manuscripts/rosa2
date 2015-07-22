@@ -47,6 +47,13 @@ public interface QueryUtil {
      */
     int offset(String token);
 
+    /**
+     * @param searchToken original search token
+     * @param newOffset new offset value
+     * @return new search token with a different offset
+     */
+    String changeOffset(String searchToken, int newOffset);
+
     String getPageID(SearchMatch match);
 
     String getCollectionID(SearchMatch match);

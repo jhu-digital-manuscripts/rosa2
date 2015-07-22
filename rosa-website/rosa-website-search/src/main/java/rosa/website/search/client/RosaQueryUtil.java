@@ -104,6 +104,23 @@ public class RosaQueryUtil implements QueryUtil {
     }
 
     @Override
+    public String changeOffset(String searchToken, int newOffset) {
+        int index = searchToken.lastIndexOf(';');
+
+        if (newOffset < 0) {
+            LOG.severe("New offset value cannot be less than 0.");
+            return searchToken;
+        }
+
+        if (index > -1) {
+            return searchToken.substring(0, index+1) + newOffset;
+        } else {
+            LOG.severe("Malformed search token. [" + searchToken + "]");
+            return searchToken;
+        }
+    }
+
+    @Override
     public String getPageID(SearchMatch match) {
         String[] parts = match.getId().split(";");
         return parts.length == 3 ? parts[2] : null;
