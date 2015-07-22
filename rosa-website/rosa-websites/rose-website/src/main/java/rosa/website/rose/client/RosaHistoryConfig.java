@@ -51,7 +51,6 @@ public class RosaHistoryConfig {
      * @return external text resource, or NULL if name not found
      */
     public static ExternalTextResource getHtml(String history) {
-        // TODO make more dynamic or interact with config? Cache these resources (here or in the Activity)?
         switch (history) {
             case "contact":
                 return HTMLS.contactHtml();
@@ -81,7 +80,7 @@ public class RosaHistoryConfig {
         switch (history) {
             case "chars":
                 return HTMLS.characterNamesHtml();
-            case "corpus":
+            case "data":                              // TODO "corpus" -> extant manuscripts
                 return HTMLS.collectionDataHtml();
             case "illustrations":
                 return HTMLS.illustrationTitlesHtml();
