@@ -7,8 +7,6 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -18,13 +16,6 @@ import java.util.Map;
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.Marginalia;
-import rosa.archive.model.aor.MarginaliaLanguage;
-import rosa.archive.model.aor.Mark;
-import rosa.archive.model.aor.Position;
-import rosa.archive.model.aor.Symbol;
-import rosa.archive.model.aor.Underline;
-
 /**
  * Collect stats on AOR annotations and write them out as CSV spreadsheets.
  */
@@ -37,75 +28,6 @@ public class AorStatsCollector {
 
     // book id -> page stats
     private final Map<String, List<Stats>> page_stats;
-
-    private static class Stats implements Comparable<Stats> {
-        String id;
-        int marginalia;
-        int marginalia_words;
-        int underlines;
-        int underline_words;
-        int marks;
-        int mark_words;
-        int symbols;
-        int symbol_words;
-        int drawings;
-        int numerals;
-        int books;
-        int people;
-        int locations;
-        Map<String, Integer> marginalia_vocab;
-
-        public Stats(String id) {
-            this.id = id;
-            this.marginalia_vocab = new HashMap<>();
-        }
-
-        public void add(Stats s) {
-            marginalia += s.marginalia;
-            marginalia_words += s.marginalia_words;
-            underlines += s.underlines;
-            underline_words += s.underline_words;
-            marks += s.marks;
-            mark_words += s.mark_words;
-            symbols += s.symbols;
-            symbol_words += s.symbol_words;
-            drawings += s.drawings;
-            numerals += s.numerals;
-            books += s.books;
-            people += s.people;
-            locations += s.locations;
-
-            update_vocab(marginalia_vocab, s.marginalia_vocab);
-        }
-
-        @Override
-        public int compareTo(Stats s) {
-            return id.compareTo(s.id);
-        }
-    }
-
-    private static void update_vocab(Map<String, Integer> vocab, String word,
-            int count) {
-        if (vocab.containsKey(word)) {
-            vocab.put(word, vocab.get(word) + count);
-        } else {
-            vocab.put(word, 1);
-        }
-    }
-
-    private static void update_vocab(Map<String, Integer> vocab,
-            Collection<String> words) {
-        for (String word: words) {
-            update_vocab(vocab, word, 1);
-        }
-    }
-
-    private static void update_vocab(Map<String, Integer> vocab1,
-            Map<String, Integer> vocab2) {
-        for (String word: vocab2.keySet()) {
-            update_vocab(vocab1, word, vocab2.get(word));
-        }
-    }
 
     public AorStatsCollector() {
         this.aor_serializer = new AORAnnotatedPageSerializer();
@@ -156,8 +78,7 @@ public class AorStatsCollector {
 
         // Collect page stats and add to list
 
-        Stats ps = new Stats(page_id);
-        collect_stats(ap, ps);
+        Stats ps = AorTranscriptionAdapter.adaptAnnotatedPage(ap, page_id);
 
         List<Stats> ps_list = page_stats.get(book_id);
 
@@ -178,127 +99,6 @@ public class AorStatsCollector {
         }
 
         bs.add(ps);
-    }
-
-    private void collect_stats(AnnotatedPage ap, Stats bs) {
-        List<String> marginalia_words = get_marginalia_words(ap);
-
-        bs.marginalia += ap.getMarginalia().size();
-        bs.marginalia_words += marginalia_words.size();
-        bs.underlines += ap.getUnderlines().size();
-        bs.underline_words += count_underline_words(ap);
-        bs.marks += ap.getMarks().size();
-        bs.mark_words += count_mark_words(ap);
-        bs.symbols += ap.getSymbols().size();
-        bs.symbol_words += count_symbol_words(ap);
-        bs.drawings += ap.getDrawings().size();
-        bs.numerals += ap.getNumerals().size();
-        bs.books += count_marginalia_books(ap);
-        bs.people += count_marginalia_people(ap);
-        bs.locations += count_marginalia_locations(ap);
-
-        update_vocab(bs.marginalia_vocab, marginalia_words);
-    }
-
-    private List<String> get_marginalia_words(AnnotatedPage ap) {
-        List<String> words = new ArrayList<>();
-
-        for (Marginalia m: ap.getMarginalia()) {
-            for (MarginaliaLanguage ml: m.getLanguages()) {
-                for (Position p: ml.getPositions()) {
-                    for (String text: p.getTexts()) {
-                        words.addAll(Arrays.asList(parse_text(text)));
-                    }
-                }
-            }
-        }
-
-        return words;
-    }
-
-    private int count_marginalia_books(AnnotatedPage ap) {
-        int count = 0;
-
-        for (Marginalia m: ap.getMarginalia()) {
-            for (MarginaliaLanguage ml: m.getLanguages()) {
-                for (Position p: ml.getPositions()) {
-                    count += p.getBooks().size();
-                }
-            }
-        }
-
-        return count;
-    }
-
-    private int count_marginalia_people(AnnotatedPage ap) {
-        int count = 0;
-
-        for (Marginalia m: ap.getMarginalia()) {
-
-            for (MarginaliaLanguage ml: m.getLanguages()) {
-                for (Position p: ml.getPositions()) {
-                    count += p.getPeople().size();
-                }
-            }
-        }
-
-        return count;
-    }
-
-    private int count_marginalia_locations(AnnotatedPage ap) {
-        int count = 0;
-
-        for (Marginalia m: ap.getMarginalia()) {
-
-            for (MarginaliaLanguage ml: m.getLanguages()) {
-                for (Position p: ml.getPositions()) {
-                    count += p.getLocations().size();
-                }
-            }
-        }
-
-        return count;
-    }
-
-    private int count_underline_words(AnnotatedPage ap) {
-        int count = 0;
-
-        for (Underline ul: ap.getUnderlines()) {
-            count += count_words(ul.getReferringText());
-        }
-
-        return count;
-    }
-
-    private int count_mark_words(AnnotatedPage ap) {
-        int count = 0;
-
-        for (Mark m: ap.getMarks()) {
-            count += count_words(m.getReferringText());
-        }
-
-        return count;
-    }
-
-    private int count_symbol_words(AnnotatedPage ap) {
-        int count = 0;
-
-        for (Symbol s: ap.getSymbols()) {
-            count += count_words(s.getReferringText());
-        }
-
-        return count;
-    }
-
-    // Turns text into words and punctation.
-    private String[] parse_text(String text) {
-        text = text.trim().replaceAll("\\p{Punct}", " $0 ");
-        
-        return text.trim().split("\\s+");
-    }
-
-    private int count_words(String text) {
-        return parse_text(text).length;
     }
 
     public void writeBookStats(Path output_dir) throws IOException {
@@ -327,7 +127,7 @@ public class AorStatsCollector {
         for (String book_id: book_stats.keySet()) {
             Stats stats = book_stats.get(book_id);
 
-            update_vocab(marginalia_vocab, stats.marginalia_vocab);
+            AoRVocabUtil.updateVocab(marginalia_vocab, stats.marginalia_vocab);
 
             Path pages_vocab_csv_path = output_dir.resolve(book_id
                     + "_marginalia_vocab.csv");
