@@ -15,8 +15,7 @@ public class Tool {
         switch (command) {
             case "stats":
                 if (args.length < 2) {
-                    System.err.println("Usage: stats aor_book_dir...");
-                    System.exit(1);
+                    exitOnError("Usage: stats aor_book_dir...");
                 }
 
                 AorStatsCollector stats = new AorStatsCollector();
@@ -30,13 +29,24 @@ public class Tool {
 
                 stats.writeBookStats(Paths.get("."));
                 break;
+            case "git-stats":
+                if (args.length < 2) {
+                    exitOnError("Usage: git-stats <repository_url>");
+                }
+
+
+                break;
             case "validate":
                 XmlValidator.validate(args);
                 break;
             default:
-                System.err.println("Invalid command\nUsage: stats|validate arg...");
-                System.exit(1);
+                exitOnError("Invalid command\nUsage: stats|git-stats|validate arg...");
                 break;
         }
+    }
+
+    private static void exitOnError(String message) {
+        System.err.println(message);
+        System.exit(1);
     }
 }

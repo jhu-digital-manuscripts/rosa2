@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -21,7 +22,7 @@ import rosa.archive.model.aor.AnnotatedPage;
  */
 public class AorStatsCollector {
     private static final Charset CHARSET = Charset.forName("UTF-8");
-    private final AORAnnotatedPageSerializer aor_serializer;
+    private static final AORAnnotatedPageSerializer aor_serializer = new AORAnnotatedPageSerializer();
 
     // book id -> stats
     private final Map<String, Stats> book_stats;
@@ -29,8 +30,36 @@ public class AorStatsCollector {
     // book id -> page stats
     private final Map<String, List<Stats>> page_stats;
 
+    /**
+     * @param xmlPath fully qualified path to AOR page transcription
+     * @return AOR annotated page
+     * @throws IOException .
+     */
+    public static AnnotatedPage readAorPage(String xmlPath) throws IOException {
+        List<String> errors = new ArrayList<>();
+        AnnotatedPage page;
+
+        try(InputStream in = Files.newInputStream(Paths.get(xmlPath))) {
+            try {
+                page = aor_serializer.read(in, errors);
+            } catch (IOException e) {
+                System.err.println("Skipping " + xmlPath + " due to error: " + e.getMessage());
+                return null;
+            }
+        }
+
+        if (errors.size() > 0) {
+            System.err.println("Errors reading " + xmlPath);
+
+            for (String err : errors) {
+                System.err.println(err);
+            }
+        }
+
+        return page;
+    }
+
     public AorStatsCollector() {
-        this.aor_serializer = new AORAnnotatedPageSerializer();
         this.book_stats = new HashMap<>();
         this.page_stats = new HashMap<>();
     }
@@ -54,26 +83,9 @@ public class AorStatsCollector {
 
     private void collect_stats(String book_id, String page_id, Path xml_path)
             throws IOException {
-        List<String> errors = new ArrayList<>();
-
-        AnnotatedPage ap;
-
-        try (InputStream is = Files.newInputStream(xml_path)) {
-            try {
-                ap = aor_serializer.read(is, errors);
-            } catch (IOException e) {
-                System.err.println("Skipping " + xml_path + " error:"
-                        + e.getMessage());
-                return;
-            }
-        }
-
-        if (errors.size() > 0) {
-            System.err.println("Errors reading " + xml_path);
-
-            for (String error: errors) {
-                System.err.println(error);
-            }
+        AnnotatedPage ap = readAorPage(xml_path.toString());
+        if (ap == null) {
+            return;
         }
 
         // Collect page stats and add to list
