@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.TimeZone;
 
 public class GitCommit implements Comparable<GitCommit> {
-    private static final SimpleDateFormat ISO_8601_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ssZ");
+    private final SimpleDateFormat ISO_8601_FORMAT;
 
     final String id;
     final Date date;
@@ -19,6 +19,9 @@ public class GitCommit implements Comparable<GitCommit> {
         this.timeZone = timeZone;
         this.author = author;
         this.message = message;
+
+        ISO_8601_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ssZ");
+        ISO_8601_FORMAT.setTimeZone(timeZone);
     }
 
     public String getISO8601Date() {

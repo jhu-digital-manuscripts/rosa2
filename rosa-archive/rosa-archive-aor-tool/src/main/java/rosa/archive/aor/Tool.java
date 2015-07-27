@@ -34,7 +34,9 @@ public class Tool {
                     exitOnError("Usage: git-stats <repository_url>");
                 }
 
-
+                GitStatCollector gitStatCollector = new GitStatCollector("aor");
+                gitStatCollector.run(args);
+                
                 break;
             case "validate":
                 XmlValidator.validate(args);

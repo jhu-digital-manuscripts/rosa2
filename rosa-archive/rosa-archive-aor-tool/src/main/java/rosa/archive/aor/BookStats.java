@@ -34,4 +34,31 @@ public class BookStats {
         bookStats.add(pageStats);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        BookStats bookStats = (BookStats) o;
+
+        if (collectionId != null ? !collectionId.equals(bookStats.collectionId) : bookStats.collectionId != null)
+            return false;
+        return statsMap.equals(bookStats.statsMap);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = collectionId != null ? collectionId.hashCode() : 0;
+        result = 31 * result + statsMap.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "BookStats{" +
+                "collectionId='" + collectionId + '\'' +
+                ", statsMap=" + statsMap +
+                '}';
+    }
 }
