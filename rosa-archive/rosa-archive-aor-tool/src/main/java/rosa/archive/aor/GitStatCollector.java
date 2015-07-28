@@ -252,7 +252,7 @@ public class GitStatCollector {
 
     private void writeSingleCommit(BufferedWriter out, GitCommit commit, boolean writeHeader) throws IOException {
         if (writeHeader) {
-            out.write("commit_id,date,author,message");
+            out.write("commit_id,date,author,email,message");
             out.newLine();
         }
 
@@ -269,6 +269,9 @@ public class GitStatCollector {
         out.write(commit.author);
         out.write(',');
 
+        out.write(commit.email);
+        out.write(',');
+
         // Strip trailing newLines if applicable
         if (commit.message.endsWith(System.lineSeparator())) {
             out.write(CSV.escape(commit.message.substring(0,
@@ -282,7 +285,7 @@ public class GitStatCollector {
     private void writeSingleGitStat(BufferedWriter out, String commitId, BookStats stats,
                                     boolean writeHeader) throws IOException {
         if (writeHeader) {
-            write_header_row(out, "commid_id,book");
+            write_header_row(out, "commit_id,book");
         }
 
         List<String> books = new ArrayList<>(stats.statsMap.keySet());

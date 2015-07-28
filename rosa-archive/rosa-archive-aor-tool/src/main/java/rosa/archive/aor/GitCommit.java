@@ -40,19 +40,17 @@ public class GitCommit implements Comparable<GitCommit> {
         // Order by date, for those commits made on the same day, sort by ID
         if (this.calendar.compareTo(other.calendar) != 0) {
             return this.calendar.compareTo(other.calendar);
-        }
-
-        if (this.date.compareTo(other.date) != 0) {
+        } else if (this.date.compareTo(other.date) != 0) {
             return this.date.compareTo(other.date);
-        }
-
-        if (this.id.compareTo(other.id) != 0) {
+        } else if (this.id.compareTo(other.id) != 0) {
             return this.id.compareTo(other.id);
+        } else if (this.author.compareTo(other.author) != 0) {
+            return this.author.compareTo(other.author);
+        } else if (this.email.compareTo(other.email) != 0) {
+            return this.email.compareTo(other.email);
+        } else {
+            return this.message.compareTo(other.message);
         }
-
-
-
-        return 0;
     }
 
     @Override
