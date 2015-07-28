@@ -15,6 +15,7 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
+import rosa.archive.core.util.CSV;
 import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.BufferedWriter;
@@ -30,27 +31,22 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 public class GitStatCollector {
     private static final Charset CHARSET = Charset.forName("UTF-8");
-    /** Options for opening a file to write, create if it does not already exist, append to existing file. */
+    // Options for opening a file to write, create if it does not already exist, append to existing file.
     private static final OpenOption[] WRITE_APPEND_OPTION = {StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.APPEND};
     // List of files and directories to ignore
     private static final String[] IGNORE_NAMES = {"XMLschema", ".git", "README.md"};
 
     private final Set<String> ignore;
     private final String collection;
-    // Commit ID -> book stats
-    private Map<GitCommit, BookStats> commitMap;
 
     public GitStatCollector(String collection) {
         this.ignore = new HashSet<>(Arrays.asList(IGNORE_NAMES));
-        this.commitMap = new HashMap<>();
         this.collection = collection;
     }
 
@@ -70,9 +66,6 @@ public class GitStatCollector {
             }
         } catch (ParseException e) {
             System.err.println("Failed to parser command. " + e.getMessage());
-        } catch (IOException e) {
-            System.err.println("Command failed.");
-            e.printStackTrace();
         }
     }
 
@@ -81,117 +74,80 @@ public class GitStatCollector {
      *
      * @param repositoryUrl Github URL of the repository
      */
-    protected void collectGitStats(String repositoryUrl) throws IOException {
-        Path current = Paths.get(".");
-        Path localRepo = Files.createTempDirectory("git_tmp");
+    protected void collectGitStats(String repositoryUrl) {
+        Path localRepo = null;
+        try {
+            Path current = Paths.get(".");
+            localRepo = Files.createTempDirectory("git_tmp");
 
-        // Force delete of repo directory and all subdirectories on JVM exit
-        FileUtils.forceDeleteOnExit(localRepo.toFile());
+            // Force delete of repo directory and all subdirectories on JVM exit
+            FileUtils.forceDeleteOnExit(localRepo.toFile());
 
-        // Get list of all commits
-        //   Parse list to generate a 'commits.csv'
-        System.out.print("Cloning git repo [" + repositoryUrl + "]");
+            // Get list of all commits
+            //   Parse list to generate a 'commits.csv'
+            System.out.print("Cloning git repo [" + repositoryUrl + "]");
 
-        CloneCommand cloner = Git.cloneRepository()
-                .setURI(repositoryUrl)
-                .setDirectory(localRepo.toFile());
-        try (Git aorGit = cloner.call()) {
-            System.out.println("\t\tDONE\n");
-            Ref head = aorGit.getRepository().getRef("refs/heads/master");
+            CloneCommand cloner = Git.cloneRepository()
+                    .setURI(repositoryUrl)
+                    .setDirectory(localRepo.toFile());
+            try (Git aorGit = cloner.call()) {
+                System.out.println("\t\tDONE\n");
+                Ref head = aorGit.getRepository().getRef("refs/heads/master");
 
-            // a RevWalk allows to walk over commits based on some filtering that is defined
-            try (RevWalk walk = new RevWalk(aorGit.getRepository())) {
-                RevCommit commit = walk.parseCommit(head.getObjectId());
-                System.out.println("Start-Commit: " + commit + "\n");
+                // a RevWalk allows to walk over commits based on some filtering that is defined
+                try (RevWalk walk = new RevWalk(aorGit.getRepository())) {
+                    RevCommit commit = walk.parseCommit(head.getObjectId());
+                    System.out.println("Start-Commit: " + commit + "\n");
 
-                // for each commit
-                //   Generate the books.csv, appended to previous
-                walk.markStart(commit); // Start at most recent commit, working backward in time
-                int count = 0;
-                for (RevCommit rev : walk) {
-                    count++;
-                    GitCommit gcom = new GitCommit(
-                            rev.getId().getName(),
-                            rev.getAuthorIdent().getWhen(),
-                            rev.getAuthorIdent().getTimeZone(),
-                            rev.getAuthorIdent().getName(),
-                            rev.getFullMessage()
-                    );
-                    System.out.print("Processing commit: " + gcom.id + " | " + gcom.getISO8601Date() + " | " + gcom.author + "\t\t");
+                    // for each commit
+                    //   Generate the books.csv, appended to previous
+                    walk.markStart(commit); // Start at most recent commit, working backward in time
+                    int count = 0;
+                    for (RevCommit rev : walk) {
+                        count++;
+                        GitCommit gcom = new GitCommit(
+                                rev.getId().getName(),
+                                rev.getAuthorIdent().getWhen(),
+                                rev.getAuthorIdent().getTimeZone(),
+                                rev.getAuthorIdent().getName(),
+                                rev.getAuthorIdent().getEmailAddress(),
+                                rev.getFullMessage()
+                        );
+                        System.out.print("Processing commit [" + count + "]: " + gcom.id + " | "
+                                + gcom.getISO8601Date() + " | " + gcom.author + " | ");
 
-                    CheckoutCommand checkout = aorGit.checkout().setName(gcom.id);
+                        CheckoutCommand checkout = aorGit.checkout().setName(gcom.id);
 
-                    checkout.call();        // Perform the checkout
-                    CheckoutResult result = checkout.getResult(); // Check status, modified list, etc
+                        checkout.call();        // Perform the checkout
+                        CheckoutResult result = checkout.getResult(); // Check status, modified list, etc
 
-                    if (result.getStatus() == Status.OK) {
-//                        BookStats stats = collectBookStats(localRepo);
-//                        if (stats != null) {
-//                            commitMap.put(gcom, stats);
-//                        }
-                        System.out.println("OK [" + result.getModifiedList().size() + "] modifications.");
-                        // TODO write results to file
-                    } else {
-                        System.err.println("CHECKOUT FAILED [" + result.getStatus() + "]");
+                        if (result.getStatus() == Status.OK) {
+                            long totalMem = Runtime.getRuntime().totalMemory();
+                            long maxMem = Runtime.getRuntime().maxMemory();
+                            System.out.println("OK [" + result.getModifiedList().size() + "] modifications. | Memory usage: "
+                                    + totalMem + " / " + maxMem);
+                            BookStats stats = collectBookStats(localRepo);
+                            if (stats != null) {
+                                writeGitStats(gcom, stats, current);
+                            }
+                        } else {
+                            System.err.println("CHECKOUT FAILED [" + result.getStatus() + "]");
+                        }
                     }
+                    System.out.println("Found commits: " + count);
+                    walk.dispose();
                 }
-                System.out.println("Found commits: " + count);
 
-                walk.dispose();
+            } catch (GitAPIException e) {
+                System.err.println("Failed to clone repository.");
             }
-
-        } catch (GitAPIException e) {
-            System.err.println("Failed to clone repository.");
-        }
-
-
-//        for (Entry<GitCommit, BookStats> entry : commitMap.entrySet()) {
-//            System.out.println(entry.getKey() + " ::: " + entry.getValue());
-//        }
-
-
-        System.out.println("\nDeleting local repository. [" + localRepo.toString() + "]");
-        FileUtils.forceDelete(localRepo.toFile());
-    }
-
-    /**
-     * Write out entire data set once it has been collected.
-     *
-     * @param output destination path
-     */
-    public void writeGitStats(Path output) {
-        Path booksCsvPath = output.resolve("books.csv");
-        Path commitsCsvPath = output.resolve("commits.csv");
-
-        try (BufferedWriter out = Files.newBufferedWriter(commitsCsvPath, CHARSET)) {
-            writeCommitStats(out);
         } catch (IOException e) {
-            System.err.println("Failed to write commits.csv");
-        }
-
-        try (BufferedWriter out = Files.newBufferedWriter(booksCsvPath, CHARSET)) {
-            writeGitStats(out);
-        } catch (IOException e) {
-            System.err.println("Failed to write books.csv");
-        }
-    }
-
-    private void writeGitStats(GitCommit commit, BookStats stats, Path output) {
-        Path booksCsvPath = output.resolve("books.csv");
-        Path commitsCsvPath = output.resolve("commits.csv");
-
-        boolean isFirst = Files.exists(booksCsvPath);
-        try (BufferedWriter out = Files.newBufferedWriter(booksCsvPath, CHARSET, WRITE_APPEND_OPTION)) {
-            writeSingleGitStat(out, commit.id, stats, isFirst);
-        } catch (IOException e) {
-            System.err.println("Failed to write to books.csv on commit [" + commit.id + "]");
-        }
-
-        isFirst = Files.exists(commitsCsvPath);
-        try (BufferedWriter out = Files.newBufferedWriter(commitsCsvPath, CHARSET, WRITE_APPEND_OPTION)) {
-            writeSingleCommit(out, commit, isFirst);
-        } catch (IOException e) {
-            System.err.println("Failed to write to commits.csv on commit [" + commit.id + "]");
+            System.err.println("Failed to read files. " + e.getMessage());
+        } finally {
+            if (localRepo != null) {
+                System.out.println("\nDeleting local repository. [" + localRepo.toString() + "]");
+                FileUtils.deleteQuietly(localRepo.toFile());
+            }
         }
     }
 
@@ -275,24 +231,32 @@ public class GitStatCollector {
         return filename.substring(0, end);
     }
 
+    private void writeGitStats(GitCommit commit, BookStats stats, Path output) {
+        Path booksCsvPath = output.resolve("books.csv");
+        Path commitsCsvPath = output.resolve("commits.csv");
+
+        boolean isFirst = !Files.exists(booksCsvPath);
+        try (BufferedWriter out = Files.newBufferedWriter(booksCsvPath, CHARSET, WRITE_APPEND_OPTION)) {
+            writeSingleGitStat(out, commit.id, stats, isFirst);
+        } catch (IOException e) {
+            System.err.println("Failed to write to books.csv on commit [" + commit.id + "]");
+        }
+
+        isFirst = !Files.exists(commitsCsvPath);
+        try (BufferedWriter out = Files.newBufferedWriter(commitsCsvPath, CHARSET, WRITE_APPEND_OPTION)) {
+            writeSingleCommit(out, commit, isFirst);
+        } catch (IOException e) {
+            System.err.println("Failed to write to commits.csv on commit [" + commit.id + "]");
+        }
+    }
+
     private void writeSingleCommit(BufferedWriter out, GitCommit commit, boolean writeHeader) throws IOException {
         if (writeHeader) {
             out.write("commit_id,date,author,message");
             out.newLine();
         }
-    }
 
-    private void writeCommitStats(BufferedWriter out) throws IOException {
-        // Sort commits by date before writing
-        List<GitCommit> commits = new ArrayList<>(commitMap.keySet());
-        Collections.sort(commits);
-
-        out.write("commit_id,date,author,message");
-        out.newLine();
-
-        for (GitCommit commit : commits) {
-            writeCommitRow(out, commit);
-        }
+        writeCommitRow(out, commit);
     }
 
     private void writeCommitRow(BufferedWriter out, GitCommit commit) throws IOException {
@@ -305,28 +269,14 @@ public class GitStatCollector {
         out.write(commit.author);
         out.write(',');
 
-        out.write(commit.message);
-        out.newLine();
-    }
-
-    private void writeGitStats(BufferedWriter writer) throws IOException {
-        write_header_row(writer, "commit_id,book");
-
-        // Sort commits by date before writing
-        List<GitCommit> commits = new ArrayList<>(commitMap.keySet());
-        Collections.sort(commits);
-
-        for (GitCommit commit : commits) {
-            BookStats stats = commitMap.get(commit);
-
-            // Sort book titles before writing
-            List<String> books = new ArrayList<>(stats.statsMap.keySet());
-            Collections.sort(books);
-
-            for (String book : books) {
-                write_row(writer, stats.statsMap.get(book), commit.id);
-            }
+        // Strip trailing newLines if applicable
+        if (commit.message.endsWith(System.lineSeparator())) {
+            out.write(CSV.escape(commit.message.substring(0,
+                    commit.message.length() - System.lineSeparator().length())));
+        } else {
+            out.write(CSV.escape(commit.message));
         }
+        out.newLine();
     }
 
     private void writeSingleGitStat(BufferedWriter out, String commitId, BookStats stats,
@@ -357,10 +307,10 @@ public class GitStatCollector {
         out.write(s.id);
         out.write(',');
 
-        out.write(s.totalAnnotations());
+        out.write(String.valueOf(s.totalAnnotations()));
         out.write(',');
 
-        out.write(s.totalWords());
+        out.write(String.valueOf(s.totalWords()));
         out.write(',');
 
         out.write(String.valueOf(s.marginalia));
