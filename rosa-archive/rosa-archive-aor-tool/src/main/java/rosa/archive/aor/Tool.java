@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 public class Tool {
     public static void main(String[] args) throws Exception {
         if (args.length < 1) {
-            System.err.println("Usage: stats|validate arg...");
+            System.err.println("Usage: stats|git-stats|validate arg...");
             System.exit(1);
         }
 
