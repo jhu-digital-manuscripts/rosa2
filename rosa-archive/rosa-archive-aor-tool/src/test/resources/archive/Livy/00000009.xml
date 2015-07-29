@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../Harvey/XML/Harveyschema17102014.xsd"> <!--JG: association with local xsd works, but problems with GitHub hosting a schema-->
+
+    <page filename="00000009.tif" signature="a2r" reader="Harvey" />
+    <annotation>
+        
+        <underline method="pen" type="straight" language="LA" text="LATENT homines" />
+        <underline method="pen" type="straight" language="LA" text="hominum uirtus lat&ecirc;re non potest" />
+        <underline method="pen" type="straight" language="LA" text="Liuius hic" />
+        <underline method="pen" type="straight" language="LA" text="historiae cognitionem &amp; cultum in praecipuis bonis semper" />
+        <underline method="pen" type="straight" language="LA" text="manarum diuinum explicatorem" />
+        <underline method="pen" type="straight" language="LA" text="ad ducentos emendasse locos" />
+        <underline method="pen" type="straight" language="LA" text="Liuium ipsum nitidiorem" />
+        <underline method="pen" type="straight" language="LA" text="qu&agrave;m ex alia ulla" />
+        <underline method="pen" type="straight" language="LA" text="Liuianae ubertatis, &amp; rerum" />
+        
+        <symbol name="SS" place="right_margin" />
+        <symbol name="SS" place="right_margin" />
+        
+        <mark name="dot" method="pen" place="intext" /> <!-- diuulgaretur illico -->
+        <mark name="dot" method="pen" place="intext" /> <!-- mihi, a -->
+        <mark name="dash" method="pen" place="right_margin" /> <!-- instauran -->
+        <mark name="dash" method="pen" place="right_margin" /> <!-- Ro -->
+        <mark name="equal_sign" method="pen" place="left_margin" /> 
+        <mark name="dot" method="pen" place="intext" /> <!-- uiderentur statui -->
+    </annotation>
+</transcription>
+        

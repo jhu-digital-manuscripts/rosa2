@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/User1/Documents/GitHub/AORCLONEJG/XMLschema/Harveyschema17102014.xsd">
+    
+    <page filename="00000012.tif" signature="[a3v]" reader="Harvey" />
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>Mensura[e] { Romanorum. Graecorum. </marginalia_text>
+                </position>
+            </language>
+            <translation>Measures of the Romans of the Greeks.</translation>
+        </marginalia>
+        
+        <underline method="pen" type="straight"  language="LA" text="LIQVORVM MENSVRAE"/>
+        <underline method="pen" type="straight"  language="LA" text="ARIDORVM"/>
+        
+        <mark name="plus_sign" method="pen" place="head" text="MENSVRAE"/>
+    </annotation>

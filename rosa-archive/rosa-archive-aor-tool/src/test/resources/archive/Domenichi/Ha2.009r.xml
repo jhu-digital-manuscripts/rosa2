@@ -1,0 +1,199 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
+
+<transcription>
+    <page filename="Ha2.009r.tif" pagination="337" reader="Harvey"/>	<!-- ABO 13right -->
+    <annotation>
+        
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>
+                      Pontano, mirabilmente piaceuole.
+                    </marginalia_text>
+                	<person name="Giovanni Pontano"/>
+                </position>
+            </language>
+        </marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="head" book_orientation="0">
+    				<marginalia_text>
+    					) Vita Eutuchi.
+    				</marginalia_text>
+    				<person name="Eutuchus"/> <!-- Another creation of Harvey's  --> 
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="right_margin" book_orientation="0">
+    				<marginalia_text>
+    					Amore, non Inuidia.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					Barlandus varia ex Pontano. 
+    				</marginalia_text>
+    				<person name="Adrianus Barlandus"/>
+    				<person name="Giovanni Pontano"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					Continual | emproouement of eueri part. 
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					vno, come superiore &agrave; tutti.
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					) { Giulio [secon]do
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="left_margin" book_orientation="90">
+    				<marginalia_text>
+    					Not the talnes, or lownes; but the worthines, or vnworthines ma[ke]s, or marres.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="right_margin" book_orientation="90">
+    				<marginalia_text>
+    					Solo mihi vita est, in dictis emphasis; actis
+    					Dexteritas; rerum copia; laetus agon. }
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="right_margin" book_orientation="270">
+    				<marginalia_text>
+    					Aurei saeculi, heroiciq[ue] mundi instaurator;
+    					Eutuchus dica[m], an Chrysotechnus?
+    				</marginalia_text>
+    				<person name="Eutuchus"/>
+    				<person name="Chrysotechnus"/>
+    			</position>
+    		</language>
+    	</marginalia>
+        
+        
+        <!-- Underlines -->
+        
+    	<underline method="pen" type="straight" language="IT" text="daua la pappa a un"/>
+    	<underline method="pen" type="straight" language="IT" text="si raffreddasse all'aria"/>
+    	<underline method="pen" type="straight" language="IT" text="con gli scherzi tentare"/>
+    	<underline method="pen" type="straight" language="IT" text="l'animo del bambino"/>
+    	<underline method="pen" type="straight" language="IT" text="la scodella fuor"/>
+    	<underline method="pen" type="straight" language="IT" text="tosto, huomo"/>
+    	<underline method="pen" type="straight" language="IT" text="mangia questa pappa"/>
+    	<underline method="pen" type="straight" language="IT" text="questo bambino non la uuol"/>
+    	<underline method="pen" type="straight" language="IT" text="la scodella di"/>
+    	<underline method="pen" type="straight" language="IT" text="con terribil grido"/>
+    	<underline method="pen" type="straight" language="IT" text="sua scudella"/>
+    	<underline method="pen" type="straight" language="IT" text="uillania"/>
+    	<underline method="pen" type="straight" language="IT" text="ladro"/>
+    	<underline method="pen" type="straight" language="IT" text="assassino, ghiotto"/>
+    	<underline method="pen" type="straight" language="IT" text="impiccato"/>
+    	<underline method="pen" type="straight" language="IT" text="&amp; moltre altre"/>
+    	<underline method="pen" type="straight" language="IT" text="egli si rideua"/>
+    	<underline method="pen" type="straight" language="IT" text="rendere la scodella"/>
+    	<underline method="pen" type="straight" language="IT" text="finche non hebbe mangiato la pappa"/>
+    	<underline method="pen" type="straight" language="IT" text="non hauere mangiato mai co[n]"/>
+    	<underline method="pen" type="straight" language="IT" text="allhora, alle uillanie di"/>
+    	<underline method="pen" type="straight" language="IT" text="quella donna"/>
+    	<underline method="pen" type="straight" language="IT" text="Parasitico"/>
+    	<underline method="pen" type="straight" language="IT" text="dalla Rouere"/>
+    	<underline method="pen" type="straight" language="IT" text="nipote di Papa Giulio secondo"/>
+    	<underline method="pen" type="straight" language="IT" text="speranza, &amp; pieno di tanta cortesia, &amp; magnanimit&agrave;"/>
+    	<underline method="pen" type="straight" language="IT" text="quanto alcuno altro mai del Collegio de'"/>
+    	<underline method="pen" type="straight" language="IT" text="di ridergli in uiso"/>
+    	<underline method="pen" type="straight" language="IT" text="spalle"/>
+    	<underline method="pen" type="straight" language="IT" text="sedere nel luogo suo"/>
+    	<underline method="pen" type="straight" language="IT" text="che more[n]do"/>
+    	<underline method="pen" type="straight" language="IT" text="egli nel"/>
+    	<underline method="pen" type="straight" language="IT" text="la morte"/>
+    	<underline method="pen" type="straight" language="IT" text="la uita di Sisto"/>
+    	<underline method="pen" type="straight" language="IT" text="nipote"/>
+    	<underline method="pen" type="straight" language="IT" text="lui del Papa"/>
+    	<underline method="pen" type="straight" language="IT" text="herede"/>
+    	<underline method="pen" type="straight" language="IT" text="ma no[n]"/>
+    	<underline method="pen" type="straight" language="IT" text="della virt&ugrave; dell'animo, ne dell'altre ottime sue parti."/>
+    
+        
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        
+        <symbol name="Sun" place="right_margin"/>
+    	<symbol name="SS" place="right_margin"/>
+    	<symbol name="SS" place="tail"/>
+    	<symbol name="JC" place="tail"/>
+        
+        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	
+    	<!-- Right margin -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- pappa a un -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- per es-->
+    	<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- questa pappa: -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Vdendo -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- ella la -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- do -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- uilla- -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- pero le -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- maggior -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- quel -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- magna -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- Cardi -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- fio -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Sisto -->
+    	
+    	
+    	<!-- Left margin -->
+    	<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- re della sua -->
+    
+    	<!-- Intext -->
+    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- sfacciato.] -->
+    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="magnanimit&agrave;" />
+    	<mark name="quotation_mark" method="pen" place="intext" language="IT" text="diridergli"/>
+    	<mark name="straight_quotation_mark" method="pen" place="intext" language="IT" text="spalle"/>
+    	<mark name="dot" method="pen" place="intext"/> <!-- grandezza, fu -->
+    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="morte"/>
+    	<mark name="dot" method="pen" place="intext"/> <!-- Papa, dal -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- Galeotto, ma -->
+    	
+    	<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Middle of page to the left -->
+    	
+
+    </annotation>
+</transcription>

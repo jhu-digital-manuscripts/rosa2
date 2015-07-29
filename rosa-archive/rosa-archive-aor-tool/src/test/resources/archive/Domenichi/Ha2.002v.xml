@@ -1,0 +1,120 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
+
+<transcription>
+    <page filename="Ha2.002v.tif" pagination="324" reader="Harvey" />   <!-- ABO 007left -->
+    <annotation>
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>Venus, virorum pestilentissima pastis.</marginalia_text>
+                    <person name="Venus"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="left_margin" book_orientation="90">
+                    <marginalia_text> Socrates omnes mortales ludebat propter vanitatem:
+                        Democritus omnes philosophos ridebat propter inscitiam: Diogenes omnes
+                        viros contemnebat propter ignauiam: Momus omnes Deos carpebat propter
+                        aliquam</marginalia_text>
+                    <person name="Socrates"/>
+                    <person name="Democritus"/>
+                    <person name="Diogenes of Sinope"/>
+                    <person name="Momus"/>
+                    <emphasis method="pen" text="Socrates"/>
+                    <emphasis method="pen" text="Democritus"/>
+                    <emphasis method="pen" text="Diogenes"/>
+                    <emphasis method="pen" text="Momus"/>
+                </position>
+                <position place="tail" book_orientation="90"> 
+                    <marginalia_text>imperfectionem.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="right_margin" book_orientation="270">
+                    <marginalia_text> Solus sibi sapiens Socrates: solus sibi peritus,
+                        Democritus: Solus
+                        <!-- The rest of this annotation is cut off in the scan due to the folded page -->
+                    </marginalia_text>
+                    <person name="Socrates"/>
+                    <person name="Democritus"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="tail" book_orientation="0">
+                    <marginalia_text> Quisq[ue] magnus, Philautus. </marginalia_text>
+                    <person name="Philautus"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position place="tail" book_orientation="0">
+                    <marginalia_text>Merrie gentlemen.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+
+        <!-- Underlines -->
+        <underline method="pen" type="straight" language="IT" text="giouinetto staffiere"/>
+        <underline method="pen" type="straight" language="IT" text="era pregna."/>
+        <underline method="pen" type="straight" language="IT" text="un uecchio"/>
+        <underline method="pen" type="straight" language="IT" text="cerusico ben uestito"/>
+        <underline method="pen" type="straight" language="IT" text="grande Astrologo"/>
+        <underline method="pen" type="straight" language="IT" text="conosceua la mano"/>
+        <underline method="pen" type="straight" language="IT" text="hauesse auuenire"/>
+        <underline method="pen" type="straight" language="IT" text="molte cose, che a costei erano incontrate"/>
+        <underline method="pen" type="straight" language="IT" text="uera del passato"/>
+        <underline method="pen" type="straight" language="IT" text="del presente"/>
+        <underline method="pen" type="straight" language="IT" text="dell'auuenire"/>
+        <underline method="pen" type="straight" language="IT" text="prima alcuni"/>
+        <underline method="pen" type="straight" language="IT" text="guardar la mano"/>
+        <underline method="pen" type="straight" language="IT" text="dare colore alla"/>
+        <underline method="pen" type="straight" language="IT" text="che loro indouinaua"/>
+        <underline method="pen" type="straight" language="IT" text="astrologar gli altri"/>
+        <underline method="pen" type="straight" language="IT" text="ella d'essere astrologata"/>
+        <underline method="pen" type="straight" language="IT" text="molte cose uere a lei accadute"/>
+        <underline method="pen" type="straight" language="IT" text="una cosa importante"/>
+        <underline method="pen" type="straight" language="IT" text="siete grauida, soggiunse il Vinitiano"/>
+        <underline method="pen" type="straight" language="IT" text="oh costei cominci&ograve; saltare, &amp;"/>
+        <underline method="pen" type="straight" language="IT" text="perche ella non"/>
+        <underline method="pen" type="straight" language="IT" text="no[n] s&ograve; piu oltre"/>
+        <underline method="pen" type="straight" language="IT" text="diuenuta in uiso"/>
+        <underline method="pen" type="straight" language="IT" text="una bracia di fuoco"/>
+        <underline method="pen" type="straight" language="IT" text="guardaua tutti"/>
+        <underline method="pen" type="straight" language="IT" text="Barba medico"/>
+        <underline method="pen" type="straight" language="IT" text="in bagno"/>
+        <underline method="pen" type="straight" language="IT" text="Gentilhuomo Genouese"/>
+        <underline method="pen" type="straight" language="IT" text="sfilato"/>
+        <underline method="pen" type="straight" language="IT" text="si rispose"/>
+        <underline method="pen" type="straight" language="IT" text="Oh poueretta"/>
+        <underline method="pen" type="straight" language="IT" text="uoi presa la imbeccata"/>
+        <underline method="pen" type="straight" language="IT" text="gridarono tutti quei"/>
+        <underline method="pen" type="straight" language="IT" text="gentilhuomini"/>
+        <underline method="pen" type="straight" language="IT" text="Auerroe"/>
+        <underline method="pen" type="straight" language="IT" text="cose possibile impregnare per tal uia?"/>
+        <underline method="pen" type="straight" language="IT" text="tutta smaritta, &amp; disperata se n'and&ograve; in"/>
+
+
+        <!-- Symbols -->
+        <symbol name="Sun" place="head"/>
+
+        <!-- Marks -->
+        <mark name="plus_sign" method="pen" place="intext" language="IT" text="Astrologo"/>
+        <mark name="plus_sign" method="pen" place="intext" language="IT" text="mano"/>
+        <mark name="plus_sign" method="pen" place="intext" language="IT" text="mano"/>
+        <mark name="dot" method="pen" place="intext"/>
+        <mark name="quotation_mark" method="pen" place="intext" language="IT" text="oh costei"/>
+        <mark name="quotation_mark" method="pen" place="intext" language="IT" text="Oh poueretta"/>
+        <mark name="plus_sign" method="pen" place="intext" language="IT" text="possibile"/>
+        <mark name="plus_sign" method="pen" place="right_margin"/>
+    </annotation>
+</transcription>

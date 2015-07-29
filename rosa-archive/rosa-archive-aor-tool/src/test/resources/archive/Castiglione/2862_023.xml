@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+    
+    <page filename="2862_023.tif" reader="Harvey" signature="Aiir"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>
+                        Occasione, che mosse l'Authore a comporre il praesente libro del Cortegiano
+                    </marginalia_text>  <!--JG: Use book element here to tak the 'Book of the Courtier'-->
+                </position>
+            </language>
+            <translation>
+                The occasion which moved the author to compose this book of the courtier
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>
+                        lode della Marchesa di Pescara
+                    </marginalia_text>
+                    <person name="Vittoria Colonna"/>
+                </position>
+            </language>
+            <translation>
+                The praise of the Marchioness of Pescara
+            </translation>
+        </marginalia> <!--JG: Just a suggestion: separate the various components of the XML (e.g. marginalia, underline, symbols) by whitespace. This greatly improves the 'readability' of the transcriptions-->
+        <underline method="pen" type="straight" text="possono" language="IT"/> <!-- I'm not sure if this is the best way of 
+            capturing this - it's not exactly a vertical line!--> <!--JG: please put text attribute after the language attribute. Let's discuss the vertical line once I've seen the image-->
+    </annotation>
+</transcription>

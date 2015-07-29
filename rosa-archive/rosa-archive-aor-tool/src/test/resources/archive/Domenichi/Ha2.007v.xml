@@ -1,0 +1,198 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
+
+<transcription>
+    <page filename="Ha2.007v.tif" pagination="334" reader="Harvey"/>	<!-- ABO 12left -->
+    <annotation>
+        
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>
+                      Vita Euscopi.
+                    </marginalia_text>
+                	<person name="Euscopus"/>
+                </position>
+            </language>
+        </marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="head" book_orientation="0">
+    				<marginalia_text>
+    					nihil vanum.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="left_margin" book_orientation="0">
+    				<marginalia_text>
+    					Vita energetica.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="left_margin" book_orientation="0">
+    				<marginalia_text>
+    					Janus in fronte.
+    				</marginalia_text>
+    				<person name="Janus"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					ridicolo. )
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					( Linea recta scopi. }
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					Sagitta Apollinis.
+    					Jaculu[m] Cephali.
+    				</marginalia_text>
+    				<person name="Apollo"/>
+    				<person name="Cephalus"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					Cauallo cosmocriti[c]o.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					( &Ocirc; curae in terris animae. }
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					All is right, as a Rams horne.
+    					A pamflet of Lidgate.
+    				</marginalia_text>
+    				<location name="Lidgate"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="left_margin" book_orientation="90">
+    				<marginalia_text>
+    					Sola mihi vita est, scire optima maxima mundi;
+    					Hoc agere ante omnes; spicula viua loqui. }
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="left_margin" book_orientation="90">
+    				<marginalia_text>
+    					&#x3c4;&#x1f78; &#x3b3;&#x3c1;&#x1fd6;&#x3c6;&#x3bf;&#x3bd; <!-- to grifon -->
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="left_margin" book_orientation="270">
+    				<marginalia_text>
+    					All things ar right as the Crab goeth forward. 
+    					An other devise of Lidgat.
+    				</marginalia_text>
+    				<location name="Lidgate"/>
+    			</position>
+    		</language>
+    	</marginalia>
+        
+        <!-- Underlines -->
+        
+        <underline method="pen" type="straight" language="IT" text="huomo Tedesco"/>
+    	<underline method="pen" type="straight" language="IT" text="starnut&igrave;"/>
+    	<underline method="pen" type="straight" language="IT" text="inginocchiossi co'"/>
+    	<underline method="pen" type="straight" language="IT" text="mise a ridere"/>
+    	<underline method="pen" type="straight" language="IT" text="mio cauallo f&agrave;"/>
+    	<underline method="pen" type="straight" language="IT" text="uede qualche puttana"/>
+    	<underline method="pen" type="straight" language="IT" text="la donna facetamente"/>
+    	<underline method="pen" type="straight" language="IT" text="huomo da bene"/>
+    	<underline method="pen" type="straight" language="IT" text="uolete romperui il collo"/>
+    	<underline method="pen" type="straight" language="IT" text="le contrade sono piene di puttane"/>
+    	<underline method="pen" type="straight" language="IT" text="tornateui a casa"/>
+    	<underline method="pen" type="straight" language="IT" text="caro di capitar male"/>
+    	<underline method="pen" type="straight" language="IT" text="cauallo infuriato"/>
+    	<underline method="pen" type="straight" language="IT" text="donna, che"/>
+    	<underline method="pen" type="straight" language="IT" text="paura d'una"/>
+    	<underline method="pen" type="straight" language="IT" text="e' uede qualche bagascia"/>
+    	<underline method="pen" type="straight" language="IT" text="fa le pazzie"/>
+    	<underline method="pen" type="straight" language="IT" text="donne da bene"/>
+    	<underline method="pen" type="straight" language="IT" text="fiuto le dishoneste puttane, &amp;"/>
+    	<underline method="pen" type="straight" language="IT" text="Detto questo se n'and&ograve;"/>
+    	<underline method="pen" type="straight" language="IT" text="Motto discortese"/>
+    	<underline method="pen" type="straight" language="IT" text="molto leggieri"/>
+    	<underline method="pen" type="straight" language="IT" text="molti motteggi"/>
+    	<underline method="pen" type="straight" language="IT" text="noia a una bella fanciulla"/>
+    	<underline method="pen" type="straight" language="IT" text="&amp; no[n] poteua"/>
+    	
+    
+        
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        
+        <symbol name="Sun" place="head"/>
+        
+        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	
+    	<!-- Right margin -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- face- -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- rom -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- put -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- do -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- qua -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- po -->
+    	
+    	
+    	<!-- Left margin -->
+    	<mark name="vertical_bar" method="pen" place="left_margin"/> <!-- cio ... Il -->
+    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- perui -->
+    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- bagascia -->
+    
+    	<!-- Intext -->
+    	<mark name="horizontal_bar" method="pen" place="intext"/> <!-- It looks like there's a small bar above co', following inginocchiossi -->
+    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- la donna face- -->
+    	<mark name="plus_sign" method="pen" place="intext"/> <!-- uolete rom -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- acqua, la quale -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- ne, & tra gli -->
+
+    </annotation>
+</transcription>

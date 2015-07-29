@@ -43,11 +43,11 @@ public class GitStatCollector {
     private static final String[] IGNORE_NAMES = {"XMLschema", ".git", "README.md"};
 
     private final Set<String> ignore;
-    private final String collection;
+    private String output;
 
-    public GitStatCollector(String collection) {
+    public GitStatCollector() {
         this.ignore = new HashSet<>(Arrays.asList(IGNORE_NAMES));
-        this.collection = collection;
+        output = ".";
     }
 
     public void run(String[] args) {
@@ -69,6 +69,10 @@ public class GitStatCollector {
         }
     }
 
+    public void setOutputDirectory(String outputDirectory) {
+        this.output = outputDirectory;
+    }
+
     /**
      * Collect stats for a collection on Github across all commits.
      *
@@ -77,7 +81,7 @@ public class GitStatCollector {
     protected void collectGitStats(String repositoryUrl) {
         Path localRepo = null;
         try {
-            Path current = Paths.get(".");
+            Path current = Paths.get(output);
             localRepo = Files.createTempDirectory("git_tmp");
 
             // Force delete of repo directory and all subdirectories on JVM exit
@@ -157,7 +161,7 @@ public class GitStatCollector {
      * @param localRepo as Path
      * @return .
      */
-    private BookStats collectBookStats(Path localRepo) {
+    protected BookStats collectBookStats(Path localRepo) {
         BookStats bookStats;
         // Walk all book directories
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(localRepo, new Filter<Path>() {
@@ -166,7 +170,7 @@ public class GitStatCollector {
                 return !ignore.contains(entry.getFileName().toString());
             }
         })) {
-            bookStats = new BookStats(collection);
+            bookStats = new BookStats();
 
             for (Path bookPath : ds) {
                 statsForBook(bookPath, bookStats);

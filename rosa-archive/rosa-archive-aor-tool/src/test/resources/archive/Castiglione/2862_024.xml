@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+    
+    <page filename="2862_024.tif" reader="Harvey" signature="Aiiv"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        Glihuomini sempre cupidi di nouit&agrave;.
+                    </marginalia_text>                    
+                </position>
+            </language>
+            <translation>
+                Men always desire novelty <!--JG: End translations with a period (or with whatever punctuation mark Harvey is using)-->
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        M. Alfonso Ariosto. <!-- I don't know who this is --> <!--JG: Probably this was Alfonso, the duke of Ferrara?-->
+                    </marginalia_text>
+                    <person name="Alfonso Ariosto"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        Duca Juliano de Medici.
+                    </marginalia_text>
+                    <person name="Giuliano di Lorenzo de' Medici"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        Cardinal Bibiena.
+                    </marginalia_text>
+                    <person name="Bernardo Dovizi"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        S. Ottauian Fregoso.
+                    </marginalia_text>
+                    <person name="Ottaviano Fregoso"/>
+                </position>
+            </language>
+        </marginalia> <!--JG: Just a suggestion: separate the various components of the XML (e.g. marginalia, underline, symbols) by whitespace. This greatly improves the 'readability' of the transcriptions-->
+        <underline method="pen" type="straight" text="huomo &agrave; nostri tempi rarissimo, magnanimo, religioso, 
+            pieno di bont&agrave;, d'ingegno, prudenza, et cortesia et ueramente amico d'homore" language="IT"/> <!--JG: Idem-->
+        <mark name="plus_sign" method="chalk" place="left_margin"/>
+    </annotation>
+</transcription>

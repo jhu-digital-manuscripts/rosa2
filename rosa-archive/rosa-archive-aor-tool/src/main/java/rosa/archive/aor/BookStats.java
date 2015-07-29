@@ -8,12 +8,10 @@ import java.util.Map;
  */
 public class BookStats {
 
-    final String collectionId;
     // Book ID -> book stats
     final Map<String, Stats> statsMap;
 
-    public BookStats(String collectionId) {
-        this.collectionId = collectionId;
+    public BookStats() {
         this.statsMap = new HashMap<>();
     }
 
@@ -39,26 +37,18 @@ public class BookStats {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        BookStats bookStats = (BookStats) o;
-
-        if (collectionId != null ? !collectionId.equals(bookStats.collectionId) : bookStats.collectionId != null)
-            return false;
-        return statsMap.equals(bookStats.statsMap);
+        BookStats stats = (BookStats) o;
+        return statsMap.equals(stats.statsMap);
 
     }
 
     @Override
     public int hashCode() {
-        int result = collectionId != null ? collectionId.hashCode() : 0;
-        result = 31 * result + statsMap.hashCode();
-        return result;
+        return statsMap.hashCode();
     }
 
     @Override
     public String toString() {
-        return "BookStats{" +
-                "collectionId='" + collectionId + '\'' +
-                ", statsMap=" + statsMap +
-                '}';
+        return "BookStats{" + "statsMap=" + statsMap + '}';
     }
 }

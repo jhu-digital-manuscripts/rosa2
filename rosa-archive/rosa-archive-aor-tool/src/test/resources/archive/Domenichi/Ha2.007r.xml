@@ -1,0 +1,204 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
+
+<transcription>
+    <page filename="Ha2.007r.tif" pagination="333" reader="Harvey"/>	<!-- ABO 11right -->
+    <annotation>
+        
+        <!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="head" book_orientation="0">
+    				<marginalia_text>
+    					Vita Chrysotechni. 
+    					(nidus phoenicis: plenus aromatum Orientis (.) 
+    				</marginalia_text>
+    				<person name="Chrysotechnus"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="right_margin" book_orientation="0">
+    				<marginalia_text>
+    					scite.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					nota. vae proditorib[us].
+    				</marginalia_text>
+    				<emphasis method="pen" text="proditorib[us]"/>
+    				<emphasis method="pen"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="head" book_orientation="0">
+    				<marginalia_text>
+    					Mnemosini notabili.  
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="IT">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					discreto, et profondo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					ridicolo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian" anchor_text="Giudeo">
+    		<language ident="IT">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					( Giudeo sabatista. )
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					Hebreo apodemico.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					Apes, parvu[m] animal, nec formosu[m]: sed m[o]llificu[m].
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="left_margin" book_orientation="90">
+    				<marginalia_text>
+    					non curo corporis quantitatem, sed animi: nec externam qualitatem veneror, sed
+    					interna
+    				</marginalia_text>
+    				<emphasis method="pen" text="curo"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="right_margin" book_orientation="270">
+    				<marginalia_text>
+    					Sola mihi vita est, ars viuida, seria virtus,
+    					Feruida Sedulitas, vnica Dexteritas. }
+    				</marginalia_text>
+    				<emphasis method="chalk"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="right_margin" book_orientation="270">
+    				<marginalia_text>
+    					Sine scientia, et valore,
+    					omnia turpia
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+        
+        <!-- Underlines -->
+        
+    	<underline method="pen" type="straight" language="IT" text="cose inanimate"/>
+    	<underline method="pen" type="straight" language="IT" text="piu ferme"/>
+    	<underline method="pen" type="straight" language="IT" text="sospetto"/>
+    	<underline method="pen" type="straight" language="IT" text="uento"/>
+    	<underline method="pen" type="straight" language="IT" text="la lealt&agrave;"/>
+    	<underline method="pen" type="straight" language="IT" text="primo"/>
+    	<underline method="pen" type="straight" language="IT" text="donde poi"/>
+    	<underline method="pen" type="straight" language="IT" text="l'altro"/>
+    	<underline method="pen" type="straight" language="IT" text="onde non uegga"/>
+    	<underline method="pen" type="straight" language="IT" text="la terza"/>
+    	<underline method="pen" type="straight" language="IT" text="una uolta"/>
+    	<underline method="pen" type="straight" language="IT" text="non ui ritorna"/>
+    	<underline method="pen" type="straight" language="IT" text="Piero Fracani"/>
+    	<underline method="pen" type="straight" language="IT" text="medico eccellentissimo"/>
+    	<underline method="pen" type="straight" language="IT" text="Giudeo"/>
+    	<underline method="pen" type="straight" language="IT" text="di sabato"/>
+    	<underline method="pen" type="straight" language="IT" text="humilmente si raccomand&ograve;"/>
+    	<underline method="pen" type="straight" language="IT" text="che fusse sabato"/>
+    	<underline method="pen" type="straight" language="IT" text="lauorare, per esser la lor festa"/>
+    	<underline method="pen" type="straight" language="IT" text="hauer patientia fino"/>
+    	<underline method="pen" type="straight" language="IT" text="ostinati Giudei, per guardare il sabato"/>
+    	<underline method="pen" type="straight" language="IT" text="cauare il lor fratello fuor del cesso"/>
+    	<underline method="pen" type="straight" language="IT" text="la Domenica"/>
+    	<underline method="pen" type="straight" language="IT" text="la festa de' Christiani"/>
+    	<underline method="pen" type="straight" language="IT" text="furono sforzati ubbidire"/>
+    	<underline method="pen" type="straight" language="IT" text="Giudeo stette nel puzzo, &amp; nel pericolo due giorni, &amp; due"/>
+    	<underline method="pen" type="straight" language="IT" text="la ostination"/>
+    	<underline method="pen" type="straight" language="IT" text="seguono la lettera"/>
+    	<underline method="pen" type="straight" language="IT" text="laquale uccide"/>
+    	<underline method="pen" type="straight" language="IT" text="di leuare il uelo dal uiso di Mose"/>
+    	<underline method="pen" type="straight" language="IT" text="per non uedere"/>
+    	<underline method="pen" type="straight" language="IT" text="ci&ograve; che u'&egrave; sotto"/>
+    	<underline method="pen" type="straight" language="IT" text="loro compassione"/>
+    	
+    
+        
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        
+        <symbol name="Sun" place="head"/>
+        
+        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	
+    	<mark name="equal_sign" method="pen" place="head"/> 
+    	
+    	<!-- Right margin -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- Fra -->
+    	<mark name="comma" method="pen" place="right_margin"/> <!-- non entra -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- scia -->
+    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- haueua- -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- Domeni" -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!--me -->
+    	<mark name="plus_sign" method="pen" place="right_margin"/> <!-- la- -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- sop -->
+    	
+    	<!-- Left margin -->
+    	<mark name="bracket" method="pen" place="left_margin"/> <!-- ro uso ... cani da -->
+    	<mark name="bracket" method="pen" place="left_margin"/> <!-- quale ... dere -->
+    
+    	<!-- Intext -->
+    	<mark name="comma" method="pen" place="intext"/> <!-- uso il -->
+    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="sospetto"/>
+    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="lealt&agrave;"/>
+    	<mark name="vertical_bar" method="pen" place="intext"/> <!-- parta: -->
+    	<mark name="equal_sign" method="pen" place="intext"/> <!-- non -->
+    	<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Vertical chalk mark in first paragraph -->
+    	<mark name="vertical_bar" method="pen" place="intext"/> <!-- l'uscita: -->
+    	<mark name="equal_sign" method="pen" place="intext"/> <!-- non -->
+    	<mark name="vertical_bar" method="pen" place="intext"/> <!-- ritorna. -->
+    	<mark name="plus_sign" method="pen" place="intext" language="IT"  text="Sentenza"/>
+    	<mark name="equal_sign" method="pen" place="intext"/> <!-- medico eccellentissimo -->
+    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="sabato"/>
+    	<mark name="dot" method="pen" place="intext"/> <!-- notti, accioche -->
+    	<mark name="plus_sign" method="pen" place="intext" language="IT"  text="lettera"/>
+    	<mark name="straight_quotation_mark" method="pen" place="intext" language="IT" text="uelo"/>
+    	<mark name="plus_sign" method="pen" place="intext" language="IT"  text="sotto"/>
+    	
+    	
+    </annotation>
+</transcription>

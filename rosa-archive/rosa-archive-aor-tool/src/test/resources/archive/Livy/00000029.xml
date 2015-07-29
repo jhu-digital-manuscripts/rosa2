@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+	
+	<page filename="00000029.tif" pagination="7" reader="Harvey" /> <!-- scan 29 in ABO -->
+	<annotation>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text> Raptae a Romanis Sabinae: corrupta a Sabinis Romana. 
+					Hinc captum ipsum Capitolium </marginalia_text> <!-- do we record the name of these women? And of the Capitol? -->
+				</position>
+			</language>
+			<translation>The Sabine women were raped by the Romans; the Roman [state] was  
+			perverted by the Sabine women. On this account the Capitol itself was taken.
+			</translation>
+		</marginalia>
+				
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text> ( Coloniarum antiquus politismus. Unde res Romana primum propagata, et munita.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The ancient policy of colonies, from which the Roman state was first extended and fortified.
+		 	</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">		
+					<marginalia_text> ( Coloniae Romuleae. Egregium strategema. </marginalia_text>
+					<person name="Romulus" />
+				</position>
+			</language>
+			<translation>The colonies of Romulus. An excellent stratagem.</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="English_secretary" anchor_text="Consilio etiam additus dolus"> <!--different reading date? -->
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">		
+					<marginalia_text> Consilio additus Dolus.</marginalia_text>
+				</position>
+			</language>
+			<translation>Deliberation coupled with deceit</translation>
+		</marginalia>
+
+		<marginalia hand="English_secretary"> <!--different reading date? -->
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">		
+					<marginalia_text>Tarpeia, virgo vestalis, Capitolii proditrix.</marginalia_text>
+					<person name="Tarpeia" />
+				</position>
+			</language>
+			<translation>Tarpeia, a Vestal virgin, the betrayer of the Capitol</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">		
+					<marginalia_text>Foeminae, multorum stratagematu[m] instrumenta.</marginalia_text>
+				</position>
+			</language>
+			<translation>Women, the instruments for many stratagems</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">		
+					<marginalia_text>Sabini, plus re, qu&amp;m specie: facinoribus, qu&amp;m
+					minis saeuiores. Falle fallentes, non est fraus: sed dolus bonus.</marginalia_text>
+				</position>
+			</language>
+			<translation>The Sabines were very fierce, more in practice than in
+			appearance, and through actions rather than threats. It is not a crime, but a good ploy
+			to deceive those who are deceiving</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian" anchor_text="ab Sabinis Mentius Curtius, ab Romanis Hostius Hostilius">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">		
+					<marginalia_text>Curtius, et Hostilius,</marginalia_text> 
+					<person name="Curtius" />
+					<person name="Hostius Hostilius" />
+					</position></language>
+			<language ident="EN">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text> two brave men.</marginalia_text>
+				</position>
+			</language>
+			<translation>Curtius and Hostilius</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">		
+					<marginalia_text>Generosa virtus Hostii Hostilii: regnum nepoti praeparans,
+					Tullo Hostilio. Multi valent pristina maiorum merita. Nec dubium est, Romulum,
+					praeclarosq[ue] Romanos talem stripem honorasse. Pauci inclyti viri: Hostius
+					primae notae</marginalia_text>
+					<person name="Hostius Hostilius" />
+					<person name="Romulus" />
+					<person name="Tullus Hostilius" />
+				</position></language>
+			<translation>Hostius Hostilius' virtue was noble and prepared the reign for
+			grandson, Tullus Hostilius. The early merits of ancestors have great influence. And there
+			is no doubt that Romulus and the illustrious Romans honoured such a grand lineage. There
+			were few famous men; Hostius was of the highest distinction</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">		
+					<marginalia_text>Romulus, a volorous King; an worthie to be the founder of that
+					conquering state. His principal vertues, prudence, &amp; valour: his secundarie
+					vertues, temperance, &amp; iustice. The first, Roman qualities in deed: the other,
+					in shewe.</marginalia_text>
+					<person name="Romulus" />
+				</position></language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">		
+					<marginalia_text>Maxim&egrave; omnium conducit perpetua consilii et virtutis;
+					virtutis, et consilii observatio. Ut utro[que] passim invalescit res Romana.
+					Antiqui non caru&ecirc;re stratagematis in utramq[ue] partem. Dolus, an vitus,
+					quis in hoste requirat?</marginalia_text>
+					<X-ref person="Virgil" book_title="Aeneid"/>
+				</position></language>
+			<translation>Most beneficial of all is a permanent study of strategy and excellence,
+			of excellence and strategy. As the Roman state everywhere gains in strenght through both of these. The Ancients
+			were not without strategems for both sides. Who asks whether it was deception or bravery when it concerns the 
+			enemy?</translation><!--According toBO, the last sentence is a quote from Aeneid II, 390.-->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">		
+					<marginalia_text>perite, et solide</marginalia_text>
+				</position>
+			</language>
+			<translation>Skilfully and solidly</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">		
+					<marginalia_text>Prius ictum, qu&agrave;m dictum</marginalia_text>
+				</position></language>
+			<translation>truck before told</translation>
+		</marginalia> <!--In ABO this annotation is joined with previous one, and seen as 1 reader's intervention -->
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">		
+					<marginalia_text>s[upr]a</marginalia_text>
+				</position></language>
+		</marginalia>
+		
+		<underline method="pen" type="straight" language="LA" text="primum omnium Romae" />
+		<underline method="pen" type="straight" language="LA" text="nec irritam conditoris" />
+		<underline method="pen" type="straight" language="LA" text="laturos eò spolia posteros" />
+		<underline method="pen" type="straight" language="LA" text="nec multitudine" />
+		<underline method="pen" type="straight" language="LA" text="bina postea" />
+		<underline method="pen" type="straight" language="LA" text="opima parta sunt spolia: adeo rara eius fortuna decoris fuit" />
+		<underline method="pen" type="straight" language="LA" text="Antemnatium" />
+		<underline method="pen" type="straight" language="LA" text="per occasione ac solitudine hostilter in fines Romanos incursionem" />
+		<underline method="pen" type="straight" language="LA" text="raptim &amp; ad hos" />
+		<underline method="pen" type="straight" language="LA" text="palantes in agris oppressit" />
+		<underline method="pen" type="straight" language="LA" text="igitur primo impetu" />
+		<underline method="pen" type="straight" language="LA" text="oppidum captum, dupliciq[ue] victoria ouante" />
+		<underline method="pen" type="straight" language="LA" text="Hersilia coniunx" />
+		<underline method="pen" type="straight" language="LA" text="parentibus earu[m] det" />
+		<underline method="pen" type="straight" language="LA" text="rem coalescere cõcordia posse" />
+		<underline method="pen" type="straight" language="LA" text="contra Curstuminos" />
+		<underline method="pen" type="straight" language="LA" text="minus etia" />
+		<underline method="pen" type="straight" language="LA" text="aliensis cladibus" />
+		<underline method="pen" type="straight" language="LA" text="certaminis fuit" />
+		<underline method="pen" type="straight" language="LA" text="coloniae missae" />
+		<underline method="pen" type="straight" language="LA" text="ubertatem terrae" />
+		<underline method="pen" type="straight" language="LA" text="Nouissimum ab Sabinis" />
+		<underline method="pen" type="straight" language="LA" text="id maximum" />
+		<underline method="pen" type="straight" language="LA" text="nihil eniem per iram aut cupiditatem" />
+		<underline method="pen" type="straight" language="LA" text="oftenderunt" />
+		<underline method="pen" type="straight" language="LA" text="quam intuleru[n]t: co[n]silio etiam additus dolut" />
+		<underline method="pen" type="straight" language="LA" text="Tarpeius Romanae" />
+		<underline method="pen" type="straight" language="LA" text="huius filia[m] virgine[m]" />
+		<underline method="pen" type="straight" language="LA" text="Tatius" />
+		<underline method="pen" type="straight" language="LA" text="armatos in arcem" />
+		<underline method="pen" type="straight" language="LA" text="aqua[m] fortè" />
+		<underline method="pen" type="straight" language="LA" text="petitum" />
+		<underline method="pen" type="straight" language="LA" text="obrutam armis necauere" />
+		<underline method="pen" type="straight" language="LA" text="vi capta" />
+		<underline method="pen" type="straight" language="LA" text="prodendi exempli" />
+		<underline method="pen" type="straight" language="LA" text="quid usqua[m] fidum proditori esset" />
+		<underline method="pen" type="straight" language="LA" text="aureas armillas magni" />
+		<underline method="pen" type="straight" language="LA" text="brachio laevo, gemmatosq[ue]" />
+		<underline method="pen" type="straight" language="LA" text="specie annulos" />
+		<underline method="pen" type="straight" language="LA" text="pepigisse eam" />
+		<underline method="pen" type="straight" language="LA" text="in sinistris manibus" />
+		<underline method="pen" type="straight" language="LA" text="scuta illi" />
+		<underline method="pen" type="straight" language="LA" text="aureis donis" />
+		<underline method="pen" type="straight" language="LA" text="ex pacto trandendi, quod in sinistris" />
+		<underline method="pen" type="straight" language="LA" text="directo arma" />
+		<underline method="pen" type="straight" language="LA" text="fraude visam" />
+		<underline method="pen" type="straight" language="LA" text="sua ipsam perempta[m] mercede" />
+		<underline method="pen" type="straight" language="LA" text="arcem Sabini" />
+		<underline method="pen" type="straight" language="LA" text="Romanus exercitus" />
+		<underline method="pen" type="straight" language="LA" text="cupiditate recuperandae arcis stimulante animos" />
+		<underline method="pen" type="straight" language="LA" text="principes utrinq[ue] pugna[m]" />
+		<underline method="pen" type="straight" language="LA" text="Sabinis Metius" />
+		<underline method="pen" type="straight" language="LA" text="Romanis Hostius" />
+		<underline method="pen" type="straight" language="LA" text="Romana[m] iniquo loco" />
+		<underline method="pen" type="straight" language="LA" text="animo atq[ue] audacia" />
+		<underline method="pen" type="straight" language="LA" text="Hostius cecidit" />
+		<underline method="pen" type="straight" language="LA" text="Romana inclinatur" />
+		<underline method="pen" type="straight" language="LA" text="Romulus &amp; ipse turba fugientium" />
+		<underline method="pen" type="straight" language="LA" text="ad coelum tolle[n]s" />
+		<underline method="pen" type="straight" language="LA" text="tuis" />
+		<underline method="pen" type="straight" language="LA" text="auibus" />
+		<underline method="pen" type="straight" language="LA" text="prima urbi fundamenta" />
+		<underline method="pen" type="straight" language="LA" text="scelere emptam" />
+		<underline method="pen" type="straight" language="LA" text="deme terrorem Romanis, fugamq[ue] foedam" />
+		<underline method="pen" type="straight" language="LA" text="templum Statori Ioui, quod monimentum" />
+		<underline method="pen" type="straight" language="LA" text="tue praesenti ope seruatam" />
+		<underline method="pen" type="straight" language="LA" text="Jupiter optimus maximus resistere atq[ue] itrare pugna[m]" />
+		<underline method="pen" type="straight" language="LA" text="coelesti uoce iussi. ipse ad primores Romulus prouolat" />
+		<underline method="pen" type="straight" language="LA" text="Mertius Curtius ab" />
+		<underline method="pen" type="straight" language="LA" text="arce decurrerat" />
+		<underline method="pen" type="straight" language="LA" text="effusos egerat" />
+		<underline method="pen" type="straight" language="LA" text="Vicimus perfidos hospites, imbelles hostes" />
+		<underline method="pen" type="straight" language="LA" text="uirgines rapere, aliud pugnare cum uiris" />
+		<underline method="pen" type="straight" language="LA" text="haec gloriantem" />
+		<underline method="pen" type="straight" language="LA" text="globo ferocissimorum iuuvenu[m] Romulus impetum facit. ex quo tum" />
+		<underline method="pen" type="straight" language="LA" text="eo pelli facilius" />
+		<underline method="pen" type="straight" language="LA" text="alia Romana acies audacia regis accensa, fundit Sabinos" />
+		<underline method="pen" type="straight" language="LA" text="in paludem" />
+		<underline method="pen" type="straight" language="LA" text="co[n]iecit" />
+		<underline method="pen" type="straight" language="LA" text="auerteratq[ue]" />
+		<underline method="pen" type="straight" language="LA" text="tanti periculo viri" />
+		<underline method="pen" type="straight" language="LA" text="fauore multorum addito animo, euadit" />
+		<underline method="pen" type="straight" language="LA" text="redintegrant praeliu[m]" />
+		<underline method="pen" type="straight" language="LA" text="res Romana erat superior" />
+		<underline method="pen" type="straight" language="LA" text="Sabinae" />
+		<underline method="pen" type="straight" language="LA" text="quarum ex iniuria bellum" />
+		<underline method="pen" type="straight" language="LA" text="victo malis" />
+		<underline method="pen" type="straight" language="LA" text="pauore, ausae se inter tela uolantia inferre" />
+		<underline method="pen" type="straight" language="LA" text="dirimere infestas acies" />
+		<underline method="pen" type="straight" language="LA" text="hinc patres, hinc uiros orantes" />
+		
+		<symbol name="SS" place="left_margin" />
+		<symbol name="JC" place="left_margin" />
+		<symbol name="SS" place="left_margin" /> <!-- hinc -->
+		<symbol name="SS" place="right_margin" /> <!-- auda- -->
+		<symbol name="SS" place="right_margin" /> <!-- Romu- -->
+		
+		<mark name="bracket" method="pen" place="head" />
+		<mark name="equal_sign" method="pen" place="left_margin" />
+		<mark name="equal_sign" method="pen" place="head" language="LA" text="primum" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="rara" />
+		<mark name="equal_sign" method="pen" place="intext" language="LA" text="occasione[m]" />
+		<mark name="equal_sign" method="pen" place="intext" language="LA" text="raptim" />
+		<mark name="equal_sign" method="pen" place="intext" language="LA" text="coalescere co[n]cordia" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="minus" />
+		
+		
+		<mark name="equal_sign" method="pen" place="intext" text="coloniae missae" />
+		<mark name="bracket" method="pen" place="intext" /> 
+		<mark name="plus_sign" method="pen" place="intext" />
+		<mark name="apostrophe" method="pen" place="intext" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="maximum" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="iram" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="oftenderunt" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="intuleru[n]t" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="co[n]silio" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="dolus" />
+		<mark name="equal_sign" method="pen" place="intext" />
+		<mark name="equal_sign" method="pen" place="intext" language="LA" text="necauere" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="fidum" />
+		<mark name="quotation_mark" method="pen" place="intext" language="LA" text="laeuo" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="in sinistris manibus" />
+		<mark name="plus_sign" method="pen" place="intext" />
+		<mark name="plus_sign" method="pen" place="intext" />
+		<mark name="plus_sign" method="pen" place="intext" />
+		<mark name="comma" method="pen" place="intext" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="Principes" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="iniquo" />
+		<mark name="equal_sign" method="pen" place="intext" language="LA" text="animo" />
+		<mark name="equal_sign" method="pen" place="intext" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="Statori" />
+		<mark name="plus_sign" method="pen" place="intext" />
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="Vicimus" />
+		<mark name="quotation_mark" method="pen" place="intext" language="LA" text="virgines"  />
+		<mark name="comma" method="pen" place="intext" /> <!-- gloriantem cum -->
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="globo" />
+		<mark name="equal_sign" method="pen" place="intext" language="LA" text="impetum" />
+		<mark name="plus_sign" method="pen" place="intext" />
+		<mark name="equal_sign" method="pen" place="intext" language="LA" text="audacia" />
+		<mark name="comma" method="pen" place="intext" /> <!-- sese strepitu -->
+		<mark name="comma" method="pen" place="intext" />
+		<mark name="equal_sign" method="pen" place="intext" language="LA" text="tanti periculo viri" />
+		<mark name="plus_sign" method="pen" place="intext" />
+		<mark name="plus_sign" method="pen" place="intext" />
+		<mark name="vertical_bar" method="pen" place="intext" />
+		
+		<mark name="equal_sign" method="pen" place="left_margin"/>
+		<mark name="plus_sign" method="pen" place="left_margin"/>
+		<mark name="triple_dash" method="pen" place="left_margin" /> <!-- actum est -->
+		<mark name="quotation_mark" method="pen" place="left_margin" />
+		<mark name="plus_sign" method="pen" place="left_margin" />
+		<mark name="bracket" method="pen" place="left_margin" language="LA" text="Principes utrinq[ue] cieba[n]t:
+		ab Sabinis Metius Curtius; ab Romanis Hostius Hostilius. hic rem Romana[m] iniquo loco
+		ad prima signa animo atq[ue] audacia sustinebat" />
+		<mark name="plus_sign" method="pen" place="left_margin" />
+		<mark name="plus_sign" method="pen" place="left_margin" />
+		<mark name="plus_sign" method="pen" place="left_margin" />
+		<mark name="equal_sign" method="pen" place="left_margin" />
+		<mark name="plus_sign" method="pen" place="left_margin" />
+		<mark name="plus_sign" method="pen" place="left_margin" />
+		<mark name="equal_sign" method="pen" place="left_margin" />
+		<mark name="bracket" method="pen" place="left_margin" language="LA" text="Tum Sabinae mulieres,
+			quarum ex iniuria bellum ortum erat; crinibus passis, scissa que ueste,
+			victo malis muliebri pauore, ausae se inter tela volantia inferre; ex transuerso
+			impetu facto, dirimere infestats acies, dirimere iras: hinc patres, hinc uiros orantes,
+			ne se" />
+		<mark name="dash" method="pen" place="right_margin"/> <!--condi-->
+		<mark name="equal_sign" method="pen" place="right_margin" />
+		<mark name="plus_sign" method="pen" place="right_margin" />
+		<mark name="dash" method="pen" place="right_margin"/> <!--freque[]-->
+		<mark name="dash" method="pen" place="right_margin"/> <!--Sa-->
+		<mark name="vertical_bar" method="pen" place="right_margin"/> <!--dolus-->
+		<mark name="plus_sign" method="pen" place="right_margin"/>
+		<mark name="dash" method="pen" place="right_margin"/> <!--Ro-->
+		<mark name="dash" method="pen" place="right_margin"/> <!--auda-->
+		<mark name="dash" method="pen" place="right_margin"/> <!--ue-->
+		<mark name="dash" method="pen" place="right_margin"/> <!--prae-->
+		<mark name="dash" method="pen" place="right_margin"/> <!--re-->
+		<mark name="dash" method="pen" place="right_margin"/> <!--Me-->
+	
+	</annotation>
+</transcription>
+		

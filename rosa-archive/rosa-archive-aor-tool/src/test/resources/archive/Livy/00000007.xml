@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transcription> 
+    <page filename="00000007.tif" signature="title page" reader="Harvey" />
+    <annotation>
+        <marginalia hand="Italian" date="1568"> <!-- Unsure about hand -->
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>Gabriel Haruejus. Mense Julio. Anno. 1568.</marginalia_text>
+                    <person name="Gabriel Harvey"></person>
+                </position>               
+            </language>
+            <translation>Gabriel Harvey. In the month of July, of the year 1568.</translation>
+        </marginalia>
+        <marginalia hand="Italian" other_reader="Francis Massij" >
+            <language ident="EN">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>Francis Massij</marginalia_text>
+                    <person name="Francis Massij"></person>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="English_secretary"> <!-- See in Stern, could also be early Italic hand-->
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>Laurentii Vallae adversus Livium argutissima Disputatio.
+                    post Glareani Annotatione[m].</marginalia_text>
+                    <person name="Lorenzo Valla"/>
+                    <person name="Livy"/>
+                    <person name="Heinrich Glarean"/> <!-- Check, not entirely sure about this -->
+                </position>
+            </language>
+            <translation>The most eloquent argument of Lorenzo Valla against Livy. After the comment of Glarean </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>Arte, et vi[r]tute</marginalia_text>
+                </position>                           
+            </language>
+            <language ident="EL">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>GREEK </marginalia_text> <!-- Chris, please have a look at this Greek text-->
+                </position>
+            </language>
+            <translation> With skill and excellence. [GREEK] </translation> <!-- Chris, I'd be grateful if you could translate the Greek as well-->
+        </marginalia>
+        <marginalia hand="Italian" date="1568">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>Ex dono D[ono]ris Henrici Harveij. A.1568.</marginalia_text><!-- The scribbling beneath this marginal note is not captured-->
+                    <person name="Henricus Harvey"/>
+                    <emphasis method="pen" text="1568"/>
+                </position>
+            </language>
+            <translation>From the gift of the grantor Henricus Harvey. Anno 1568.</translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                        <marginalia_text>Acceptissima semper Munera sunt, Auctor quae preciosa facit.</marginalia_text>
+                        <X-ref person="Ovid" book_title="Heriodes"/>
+                </position>
+            </language>
+            <translation>Always most acceptable are the gifts, which the giver makes precious.</translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>Mature consilio, et strenua actione.</marginalia_text>
+                </position>
+            </language>
+            <translation>By a mature decision and vigorous action </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="tail" book_orientation="0">
+                    <marginalia_text>Gabrielis Harueij</marginalia_text>
+                    <person name="Gabriel Harvey"></person>
+                </position>
+            </language>
+        </marginalia>        
+          
+        <underline method="pen" type="straight" language="LA" text="de mensuris, ponderibus, req[ue] nummaria Romanorum" />
+        <underline method="pen" type="straight" language="LA" text="pecuniae ad nostri temporis"/> 
+        <underline method="pen" type="straight" language="LA" text="origine urbis Romae"/>
+        <underline method="pen" type="straight" language="LA" text="TABVLA conconionum atq[ue]"/>
+        <underline method="pen" type="straight" language="LA" text="L. FLORI Epitomae"/>
+        <underline method="pen" type="straight" language="LA" text="argumenti loco esse"/>
+        <underline method="pen" type="straight" language="LA" text="BREVE compendium, sive argumentum totius Romanae historiae ab Vrbe condita"/>
+        <underline method="pen" type="straight" language="LA" text="RATIO temporum eorum"/>
+        <underline method="pen" type="straight" language="LA" text="Doctorum virorum"/>
+        <underline method="pen" type="straight" language="LA" text="Annotationes, Glareani annotationibus"/>
+        <underline method="pen" type="straight" language="LA" text="CHRONOLOGIA Henrici Glareani, ab"/>
+        <underline method="pen" type="straight" language="LA" text="Eiusdem Chronologia, in alphabeticum ordinem"/>
+        <underline method="pen" type="straight" language="LA" text="RERVM"/>
+        <underline method="pen" type="straight" language="LA" text="uerborum"/>
+        <underline method="pen" type="straight" language="LA" text="autore memorabilium locuplissimus"/>
+    
+        <symbol name="SS" place="intext" />
+        <symbol name="SS" place="right_margin"/>
+    
+        <mark name="X_sign" method="pen" place="right_margin"/>
+        <mark name="plus_sign" method="pen" place="left_margin"/>
+        <mark name="plus_sign" method="pen" place="right_margin"/>
+        <mark name="plus_sign" method="pen" place="left_margin" language="LA" text="Item, Annorum series, iuxta Regum, 
+            Consulum, Tribunorum, &amp;. successiones, diligenter in margine annotata."/>
+        <mark name="bracket" method="pen" place="left_margin"/>
+        <mark name="plus_sign" method="pen" place="left_margin"/> 
+    
+    </annotation>    
+</transcription>

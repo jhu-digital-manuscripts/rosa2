@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="Ha2.027v.tif" pagination="374" reader="Harvey"/>	<!-- ABO 032left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="IT">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Eccellentissimo del mondo: et singolarissimo 
+                      			</marginalia_text>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        				<position place="left_margin" book_orientation="0">
+        					<marginalia_text>
+        						del suo Tempo.
+        					</marginalia_text>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+        			</language>
+        		</marginalia>
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+        				<position place="left_margin" book_orientation="0">
+        					<marginalia_text>
+        						&Ocirc; digniore: o viliore.
+        					</marginalia_text>
+        				</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Aulicoru[m] decentiss[im]us pragmaticorum subtilissimus:
+    						industrioru[m] trioru[m] diligentiss[im]us omniu[m] facil&egrave;
+    						tam pra[e]stantiss[imus] qu&agrave;m candidissimus.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) Tutto per il meglio.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Enteleches
+    					</marginalia_text>
+    					<person name="Enteleches"/>
+    				</position>
+    			</language>
+    			<language ident="EL">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						ἐν ἀχμῆ, <!-- Greek: en axme -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						et Euschemon in flor&eacute;: nunq[uam] sua[e] oblitus dignitatis. <!-- The 'o' in Euschemon has a circumflex on it. We should add a lowercase ocirc to the special characters in the schema. -->
+    					</marginalia_text>
+    					<person name="Euschemon"/>
+    				</position>
+    			</language>
+    		</marginalia>
+       
+    		<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="teneua le gambe all'erta"/>
+    		<underline method="pen" type="straight" language="IT" text="la moglie"/>
+    		<underline method="pen" type="straight" language="IT" text="seruenti uostre"/>
+    		<underline method="pen" type="straight" language="IT" text="tengan matto,"/>
+    		<underline method="pen" type="straight" language="IT" text="moglie mia?"/>
+    		<underline method="pen" type="straight" language="IT" text="star dritto"/>
+    		<underline method="pen" type="straight" language="IT" text="uirt&ugrave; de' contrari, che"/>
+    		<underline method="pen" type="straight" language="IT" text="rouerscio"/>
+    		<underline method="pen" type="straight" language="IT" text="te ne dar dunque"/>
+    		<underline method="pen" type="straight" language="IT" text="fa il simile ancho tu"/>
+    		<underline method="pen" type="straight" language="IT" text="sciocco"/>
+    		<underline method="pen" type="straight" language="IT" text="Thomaso Guadagni mercante"/>
+    		<underline method="pen" type="straight" language="IT" text="guadagnato"/>
+    		<underline method="pen" type="straight" language="IT" text="prestare a"/>
+    		<underline method="pen" type="straight" language="IT" text="Re di Francia cinquecento mila scudi per uolta"/>
+    		<underline method="pen" type="straight" language="IT" text="qualche memoria di se"/>
+    		<underline method="pen" type="straight" language="IT" text="uno Spedale per"/>
+    		<underline method="pen" type="straight" language="IT" text="ammalati"/>
+    		<underline method="pen" type="straight" language="IT" text="sua forma"/>
+    		<underline method="pen" type="straight" language="IT" text="qualunque amico"/>
+    		<underline method="pen" type="straight" language="IT" text="co[n]siglio gioueuole a tal sua muraglia"/>
+    		<underline method="pen" type="straight" language="IT" text="buon giudicio nell'architettura"/>
+    		<underline method="pen" type="straight" language="IT" text="considerare ogni parte del suo spedale, gli"/>
+    		<underline method="pen" type="straight" language="IT" text="bene, disse"/>
+    		<underline method="pen" type="straight" language="IT" text="quanto quello, che &egrave; nella"/>
+    		<underline method="pen" type="straight" language="IT" text="Tant'&egrave;"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="right_margin"/>
+    		<symbol name="SS" place="left_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- drit -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- dun -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- gioue -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- co[n] -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- piace -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- architettura -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- pare. -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- no -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- re -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- che queste -->
+    		<mark name="horizontal_bar" method="pen" place="left_margin"/> <!-- Alche tosto -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="Guadagni"/>
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="guadagnato"/>
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="cinquecento"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- uolta, uolendo -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- morte, diede -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- ammalati, come -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- grandezza, ogni -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- architettura -->
+
+    </annotation>
+</transcription>

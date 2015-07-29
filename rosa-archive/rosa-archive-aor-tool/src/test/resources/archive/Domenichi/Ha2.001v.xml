@@ -1,0 +1,174 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
+
+<transcription>
+    <page filename="Ha2.001v.tif" pagination="322" reader="Harvey"/>    <!-- ABO 006left -->
+    <annotation>
+        <!-- Marginalia -->
+            <!--Head and intext-->
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>Non cura, sed remedium. [-] q[ue] iam nunc.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>Recta linea statim ferit metam: seu</marginalia_text> 
+                </position>
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>theorica[m], seu practicam.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>ridicolo.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>
+                        ) Quicquid alij aut languent; Eudromus semper alacer, et firmus.
+                    </marginalia_text>
+                    <person name="Eudromus"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>
+                    Interpocula, aut epulas nunq[uam] hebetior Eutrapelus,
+                    </marginalia_text>
+                    <person name="Eutrapelus"/>
+                </position>
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>sed semper viuidior.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>discretamente.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>Sit sua gloria, non mea.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>Vilis conuiua, qui hebescit vino, aut cibo.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="tail" book_orientation="0">
+                    <marginalia_text>
+                        Qui non est homo omnium horarum,
+                        asinus est exceptarum horarum.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+
+            <!--Left margin, orientation 270-->
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position place="left_margin" book_orientation="270">
+                    <marginalia_text>
+                        Force your industrie, according to your
+                        conceit: choose not so manie instigations
+                        of heaven.
+                        </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <!--Right margin, orientation 270-->
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position place="right_margin" book_orientation="270">
+                    <marginalia_text>
+                        Euerie his saying, &amp; doing beginnes, proceedes, &amp; endes with a Plaudite.
+                        </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>
+                        [dote]
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <!-- Underlines-->
+        <underline method="pen" type="straight" language="IT" text="fisico eccellentissimo &amp; medico di Pio IIII"/>
+        <underline method="pen" type="straight" language="IT" text="uecchio"/>
+        <underline method="pen" type="straight" language="IT" text="moglie giouane"/>
+        <underline method="pen" type="straight" language="IT" text="facendo il suo bisogno, ella lo strascinaua"/>
+        <underline method="pen" type="straight" language="IT" text="montare adosso"/>
+        <underline method="pen" type="straight" language="IT" text="ueniua a dire nulla"/>
+        <underline method="pen" type="straight" language="IT" text="mont&ograve; ella disopra"/>
+        <underline method="pen" type="straight" language="IT" text="alla china"/>
+        <underline method="pen" type="straight" language="IT" text="all'erta"/>
+        <underline method="pen" type="straight" language="IT" text="e honesto quanto la materia comporta"/>
+        <underline method="pen" type="straight" language="IT" text="penato otto d&igrave;, o piu a"/>
+        <underline method="pen" type="straight" language="IT" text="un fante m'ha promesso gi&agrave; un me"/>
+        <underline method="pen" type="straight" language="IT" text="ca[m]po di Fiore"/>
+        <underline method="pen" type="straight" language="IT" text="Lasciuo."/>
+        <underline method="pen" type="straight" language="IT" text="fatto a una femina molte uolte"/>
+        <underline method="pen" type="straight" language="IT" text="piu caro"/>
+        <underline method="pen" type="straight" language="IT" text="se io proprio l'hauessi fatto"/>
+        <underline method="pen" type="straight" language="IT" text="era uago delle"/>
+        <underline method="pen" type="straight" language="IT" text="cani delle"/>
+        <underline method="pen" type="straight" language="IT" text="Vn certo huomo"/>
+        <underline method="pen" type="straight" language="IT" text="per moglie"/>
+        <underline method="pen" type="straight" language="IT" text="quale era specchio a tutte l'altre"/>
+        <underline method="pen" type="straight" language="IT" text="in casa"/>
+        <underline method="pen" type="straight" language="IT" text="conuiti"/>
+        <underline method="pen" type="straight" language="IT" text="nelle piazze"/>
+        <underline method="pen" type="straight" language="IT" text="in gelosia che"/>
+        <underline method="pen" type="straight" language="IT" text="amasse piu uno altro, che"/>
+        <underline method="pen" type="straight" language="IT" text="riccame[n]te uestita"/>
+        
+        
+        <!-- Symbols -->
+        <symbol name="Sun" place="left_margin"/>
+        
+        <!-- Marks -->
+        <mark name="dot" method="pen" place="head" language="IT" text="Pesciatino"/>
+        <mark name="bracket" method="pen" place="left_margin"/>
+        <mark name="dash" method="pen" place="right_margin"/>
+        <mark name="dash" method="pen" place="right_margin"/>
+        <mark name="bracket" method="pen" place="left_margin"/>
+        <mark name="apostrophe" method="pen" place="intext" language="IT" text="all'erta"/>
+        <mark name="dash" method="pen" place="right_margin"/>
+        <mark name="bracket" method="pen" place="left_margin"/>
+        <mark name="quotation_mark" method="pen" place="left_margin"/>
+        <mark name="dot" method="pen" place="intext"/>
+        <mark name="quotation_mark" method="pen" place="right_margin"/>
+        <mark name="plus_sign" method="pen" place="intext" language="IT" text="io proprio"/>
+        <mark name="plus_sign" method="pen" place="left_margin"/>
+        <mark name="dot" method="pen" place="intext"/>
+        <mark name="dash" method="pen" place="right_margin"/>
+        <mark name="quotation_mark" method="pen" place="intext"/>
+        <mark name="dot" method="pen" place="intext"/>
+        <mark name="plus_sign" method="pen" place="intext" language="IT" text="specchio"/>
+        <mark name="plus_sign" method="pen" place="intext" language="IT" text="in gelosia"/>
+        <mark name="dot" method="pen" place="intext"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="Ha2.023v.tif" pagination="366" reader="Harvey"/>	<!-- ABO 028left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Sublimanda[e] natura[e], Artis, Exercitationis Vnic[-] <!-- Original source needed-->
+                    					Magister Ca[e]sar.
+                      			</marginalia_text>
+            				<person name="Julius Caesar"/>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Nisi qu&ograve;d Eudromus, Singularis artifex, 
+    						vult superare ipsu[m] Ca[e]sarem.
+    					</marginalia_text>
+    					<person name="Eudromus"/>
+    					<person name="Julius Caesar"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Qui Ca[e]sarem nouit, et Hoc agit, habet magisterium
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Non est in Varia Historia momentum; sed <!--JG: I'd put sed in the other part of the marginalia-->
+    					</marginalia_text>
+    				</position>
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						in vna, eademq[ue] Industria, semper
+    						singulari, pla[e]ru[n]q[ue] admirabili.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+          		<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="270">
+    					<marginalia_text>
+    						[--] pra[e]ceptor singularis: aut si quis actor illo dignior	<!-- Second line visible of gutter marginalia. -->   
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="staffe per la mia chinea"/>
+    		<underline method="pen" type="straight" language="IT" text="poiche uoi fate saluar le staffe"/>
+    		<underline method="pen" type="straight" language="IT" text="saluar la cauezza per Sere Acconcio"/>
+    		<underline method="pen" type="straight" language="IT" text="tanti meriti se ne mostra"/>
+    		<underline method="pen" type="straight" language="IT" text="Grandissime risa si"/>
+    		<underline method="pen" type="straight" language="IT" text="mordace"/>
+    		<underline method="pen" type="straight" language="IT" text="nondimeno arguto motto"/>
+    		<underline method="pen" type="straight" language="IT" text="pronto, et non pensato"/>
+    		<underline method="pen" type="straight" language="IT" text="loro odiato per li suoi tristi costumi"/>
+    		<underline method="pen" type="straight" language="IT" text="essere improviso"/>
+    		<underline method="pen" type="straight" language="IT" text="Duca Alessandro"/>
+    		<underline method="pen" type="straight" language="IT" text="brauo cane"/>
+    		<underline method="pen" type="straight" language="IT" text="terribile"/>
+    		<underline method="pen" type="straight" language="IT" text="Amor mio"/>
+    		<underline method="pen" type="straight" language="IT" text="traditore"/>
+    		<underline method="pen" type="straight" language="IT" text="mordeua"/>
+    		<underline method="pen" type="straight" language="IT" text="pisciaua addosso"/>
+    		<underline method="pen" type="straight" language="IT" text="per le sue virt&ugrave; era odiato da tutti"/>
+    		<underline method="pen" type="straight" language="IT" text="grato al principe, sopportato da ogniuno"/>
+    		<underline method="pen" type="straight" language="IT" text="Duca mal contento"/>
+    		<underline method="pen" type="straight" language="IT" text="Francesco Berni"/>
+    		<underline method="pen" type="straight" language="IT" text="il mio Amore &egrave; morto"/>
+    		<underline method="pen" type="straight" language="IT" text="uno epitaffio"/>
+    		<underline method="pen" type="straight" language="IT" text="se il Berna"/>
+    			
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="right_margin"/>
+    		<symbol name="SS" place="left_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- staf -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Ac -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Ac -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- leuaro -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- dispetto -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Ber -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- sotter -->
+	    	
+	    	<!-- Left margin -->
+    		<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- concio -->
+    		<mark name="horizontal_bar" method="pen" place="left_margin"/> <!-- ti, & dalla -->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- ua, e in -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- ua ... ri, -->
+    		
+	    	<!-- Intext -->
+	    	<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark middle of page on right side -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="arguto"/>
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="pronto"/>
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- loro odiato -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Acutissimo"/>
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="improuiso"/>
+    		<mark name="equal_sign" method="pen" place="intext"/> <!-- improuiso.] -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- brauo cane -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Amor"/>
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- sue virtu -->
+    		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark middle of page near bottom.-->
+    		<mark name="equal_sign" method="pen" place="intext"/> <!-- odiato -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- disse M. Francesco -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- mio Amore -->
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- uno epitaffo -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- Berna, poi -->
+    		
+    </annotation>
+</transcription>

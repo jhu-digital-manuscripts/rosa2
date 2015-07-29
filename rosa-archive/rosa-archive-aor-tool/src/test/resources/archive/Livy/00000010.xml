@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../Harvey/XML/Harveyschema17102014.xsd"> 
+    <page filename="00000010.tif" signature="[a2v]" reader="Harvey" />
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>1.</marginalia_text>
+                </position>
+            </language>        
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>2.</marginalia_text>
+                </position>
+            </language>        
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>3.</marginalia_text>
+                </position>
+            </language>        
+        </marginalia>
+        
+        
+        <underline method="pen" type="straight" language="LA" text="ego solus, qui" />
+        <underline method="pen" type="straight" language="LA" text="doctos omnes" />
+        <underline method="pen" type="straight" language="LA" text="in hoc dies noctes q[ue]; incumbant, elaborent, sudent" />
+        <underline method="pen" type="straight" language="LA" text="maxim&egrave; historicos" />
+        <underline method="pen" type="straight" language="LA" text="una re nihil utilius hominum generi" />
+        <underline method="pen" type="straight" language="LA" text="nihil sibijpsi praeclarius facere" />
+        <underline method="pen" type="straight" language="LA" text="simul ueteres disciplinas caput attollere coepisse: artium usum bonarum" />
+        <underline method="pen" type="straight" language="LA" text="musas" />
+        <underline method="pen" type="straight" language="LA" text="coniunctis manibus" />
+        <underline method="pen" type="straight" language="LA" text="coniunctis animis" />
+        <underline method="pen" type="straight" language="LA" text="humani generis uiniculum benuolentia"/>
+        <underline method="pen" type="straight" language="LA" text="illa aurea felixq[ue]"/>
+        <underline method="pen" type="straight" language="LA" text="mod&ograve; linquis sauere"/>
+        <underline method="pen" type="straight" language="LA" text="etiam liberalitate"/>
+        <underline method="pen" type="straight" language="LA" text="omni re gerenda duo requirantur"/>
+        <underline method="pen" type="straight" language="LA" text="voluntas"/>
+        <underline method="pen" type="straight" language="LA" text="facultas, nec altera sine altera quiqua[m] possit efficere" />
+        <underline method="pen" type="straight" language="LA" text="ista duo co[n]iungenda" />
+        <underline method="pen" type="straight" language="LA" text="Voluntas in bonis doctisq[ue]" />
+        <underline method="pen" type="straight" language="LA" text="diuitibus facultas" />
+        <underline method="pen" type="straight" language="LA" text="dijs erunt &amps; hominibus inuisi" />
+        <underline method="pen" type="straight" language="LA" text="rerum cognoscere causus" />
+        <underline method="pen" type="straight" language="LA" text="alium qui recta" />
+        <underline method="pen" type="straight" language="LA" text="non consultis ipse" />
+        <underline method="pen" type="straight" language="LA" text="voces contemnere" />
+        <underline method="pen" type="straight" language="LA" text="inuisus diuis, &amp; inutilis" />
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark name="quotation_mark" method="pen" place="left_margin"/> 
+        <mark name="bracket" method="pen" place="left_margin"/>
+        
+        <mark name="dash" method="pen" place="right_margin"/> <!-- om -->
+        <mark name="quotation_mark" method="pen" place="right_margin"/> <!-- om -->
+        <mark name="dash" method="pen" place="right_margin"/> <!-- pie -->
+        <mark name="dash" method="pen" place="right_margin"/> <!-- uo -->
+        
+        <mark name="dot" method="pen" place="intext"/> <!-- cuiusquam, ut-->
+        <mark name="dot" method="pen" place="intext"/> <!-- historicos, qua-->
+        <mark name="plus_sign" method="pen" place="intext"/> <!-- artium, usum-->
+        <mark name="dot" method="pen" place="intext"/> <!-- opera[m], spero-->
+        <mark name="dot" method="pen" place="intext"/> <!-- primum, deinde-->
+        <mark name="dot" method="pen" place="intext"/> <!-- artes, in-->
+        <mark name="dot" method="pen" place="intext"/> <!-- rati, paucissimi-->
+        <!--JG: accent above minus in the penultimate line-->
+        <mark name="equal_sign" method="pen" place="intext"/> <!-- felix-->
+        <mark name="equal_sign" method="pen" place="intext"/> <!-- orbi est -->
+        
+    </annotation>
+</transcription>

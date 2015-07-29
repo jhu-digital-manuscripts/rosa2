@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+    
+    <page filename="2862_023.tif" reader="Harvey" signature="Aiiir"/>
+        <annotation>
+            <marginalia hand="Italian">
+                <language ident="IT">
+                    <position place="right_margin" book_orientation="0">
+                        <marginalia_text>
+                            la fortuna contraria alla uirt&ugrave;
+                        </marginalia_text>
+                    </position>
+                </language>
+                <translation>
+                    Fortune contrasted with virtue
+                </translation>
+            </marginalia>
+            <marginalia hand="Italian">
+                <language ident="IT">
+                    <position place="right_margin" book_orientation="0">
+                        <marginalia_text>
+                            Rafaello Michel'Angelo Pittori illustri.
+                        </marginalia_text> <!--JG: use the person element to tag the people in this marginal note-->
+                        <emphasis method="pen" type="straight" text="Pittori"/> <!--JG: This is no emphasis, but a stylistic feature of Harvey and the way in which he connects the 's' to a 't'-->
+                    </position>
+                </language>
+                <translation>
+                    Raphael Michaelangelo famous painters <!--JG: The translations translations should be optimized for clarity and “usability”. Therefore, translations follow modern standards of interpunction and the use of capitals. Also, the translations include the standardized names-->
+                </translation>
+            </marginalia>
+            <underline method="pen" type="straight" language="IT" text="tenuto"/>
+            <!-- apparent deletion of 'io' --> <!--JG: I don't really know what to do with this, it doesn't really look like a strikethrough. If this occurs more often in this book, we might want to capture this, though-->
+        </annotation>
+</transcription>

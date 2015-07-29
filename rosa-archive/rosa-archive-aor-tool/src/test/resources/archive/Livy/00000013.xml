@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/User1/Documents/GitHub/AORCLONEJG/XMLschema/Harveyschema17102014.xsd">
+    
+    <page filename="00000013.tif" signature="[a4r]" reader="Harvey" />
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>
+                        Catalogus illustrium virorum in Romana Historia. Ex Aurelio Victore seriatim transcriptus. 
+                        (Licet idem ille liber aliis attributus, praesertim Cornelio Nepoti, et Plino Caecilio.)
+                        Meorum unus mnemonicorum elenchorum. Proca, rex Albanoru[m]. Romulus, Romanoru[m] rex I. 
+                        Numa Pompilius, Rom[anorum] rex 2. Tullus Hostilius, Rom[anorum] rex 3. 
+                    </marginalia_text>
+                    <person name="Aurelius Victor"/>
+                    <person name="Cornelius Nepos"/>
+                    <person name="Pliny the Younger"/>
+                    <person name="Procas"/>
+                    <person name="Romulus"/>
+                    <person name="Numa Pompilius"/>
+                    <person name="Tullus Hostilius"/>
+                    <book title="De Viris Illustribus"/> <!-- One of the books written by Aurelius Victor-->
+                </position>    
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>            
+                        Horatii, et Curiatii. Metius Fufetius. ( Ancus Marcius, Rom[anorum] 
+                        rex 4. Tarquinius Priscus, Rom[anorum] rex V. Servius Tullius, 
+                        rex 6. Tullia. Tarquinius Superbus, Rom[anorum] rex 7. ( Tarquinius Collatinus, et Lucretia uxor. Junius Brutus, Romanoru[m]( Consul I. Horatius Cocles. 
+                        Mutius Scaevola. ( Claelia virgo. Fabii trecentisex. L. Valerius Poblicola. ( Aulus Posthumius dictator. Quinctius Cincinnatus, dictator. 
+                        ( Menenius Agrippa Lanatus. Marcius Coriolanus. ( Licinius Stolo. Virginius Centurio. ( Aesculapius Romam advectus; anguis specie. M. Furius Camillus. 
+                        ( Manlius Capitolinus. Cornelius Cossus. Decius pater. Decius filius. ( Valerius Corvinus. Spurius Posthumius. Papyrius Cursor. Fabius Rullianus. 
+                        Curius Dentatus. Appius Claudius Caecus. ( Pyrrhus, rex Epeirotarum. Fabricius. Decius Mus. ( Appius Claudius Caudex. C. Duilius. ( Atilius Calatinus. 
+                        Atilius Regulus. Lutatius Catulus. Annibal, Carthaginensis dux. Q. Fabius Maximus. Cunctator. P. Scipio Nasica. M. Claudius Marcellus. 
+                        Livia Claudia, virgo Vestalis. Porcius Cato Censorius. Claudius Nero; et Asdrubal frater Annibalis. P. Cornelius Scipio Africanus. 
+                        M. Livius Salinator. Quinctius Flaminius. alias Flaminius. Fulvius Nobilior. L. Scipio Asiaticus. ( Antiochus, rex Syriae. Cn. 
+                        Manlius Vulso. Paulus Aemylius Macedonicus. ( Tiberius Sempronius Gracchus. P. Scipio Aemilianus. ( C. Hostilius Mancinus. 
+                        L. Mummius Achaicus. ( Q. Caecilius Metellus Macedonicus. Q. Caecilius Metellus Numidicus. Q. Metellus Pius. 
+                        ( Tiberius Gracchus. Caius Gracchus. M. Livius Drusus. Marius pater. Marius filius. ( Cornelius Cinna. Flavius Fimbria. Viriatus Lusitanus. 
+                    </marginalia_text>  
+                    <person name="Publius Horatius"/> <!-- Check other names of the Horatius' and Curiatius' triplets -->
+                    <person name="Metius Fufetius"/>
+                    <person name="Ancus Marcius"/>
+                    <person name="Tarquinius Priscus"/>
+                    <person name="Servius Tullius"/>
+                    <person name="Tullia"/>
+                    <person name="Tarquinus Superbus"/>
+                    <person name="Tarquinius Collatinus"/>
+                    <person name="Lucretia"/>
+                    <person name="Lucius Junius Brutus"/>
+                    <person name="Horatius Cocles"/>
+                    <person name="Mutius Scaevola"/>
+                    <person name="Claelia"/>
+                    <person name="Lucius Valerius Poblicola"/>
+                    <person name="Quinctius Cincinnatus"/>
+                    <person name="Menenius Agrippa Lanatus"/>
+                    <person name="Marcius Coriolanus"/>
+                    <person name="Licinius Stolo"/>
+                    <person name="Virginius Centurio"/>
+                    <person name="Aesculapius"/>
+                    <person name="Marcus Furius Camillus"/>
+                    <person name="Manlius Capitolinus"/>
+                    <person name="Cornelius Cossus"/>
+                    <person name="Trajan Decius" />
+                    <person name="Herennius Etruscus Decius"/>
+                    <person name="Valerius Corvinus"/>
+                    <person name="Spurius Postumius"/>
+                    <person name="Papyrius Cursor"/>
+                    <person name="Fabius Rullianus"/>
+                    <person name="Curius Dentatus"/>
+                    <person name="Appius Claudius Caecus"/>
+                    <person name="Pyrrhus of Epirus"/>
+                    <person name="Gaius Fabricius Luscinus"/>
+                    <person name="Publius Decius Mus" />
+                    <person name="Appius Claudius Caudex"/>
+                    <person name="Gaius Duilius"/>
+                    <person name="Atilius Calatinus"/>
+                    <person name="Atilius Regulus"/>
+                    <person name="Lutatius Catulus"/>
+                    <person name="Hannibal"/>
+                    <person name="Quintus Fabius Maximus Cunctator"/>
+                    <person name="Publius Scipio Nasica"/>
+                    <person name="Marcus Claudius Marcellus" />
+                    <person name="Livia Claudia"/>
+                    <person name="Cato the Elder"/> <!--Porcius Cato Censorius-->
+                    <person name="Claudius Nero"/>
+                    <person name="Hasdrubal" />
+                    <person name="Scipio Africanus"/>
+                    <person name="Marcus Livius Salinator"/>
+                    <person name="Quinctius Flaminius"/>
+                    <person name="Fulvius Nobilior"/>
+                    <person name="Lucius Scipio Asiaticus"/>
+                    <person name="Antiochus III the Great"/>
+                    <person name="Gnaeus Manlius Vulso" />
+                    <person name="Paulus Aemilius Macedonicus"/>
+                    <person name="Tiberius Sempronius Gracchus"/>
+                    <person name="Publius Scipio Aemilianus"/>
+                    <person name="Gaius Hostilius Mancinus"/>
+                    <person name="Lucius Mummius Achaicus"/>
+                    <person name="Quintus Caecilius Metellus Macedonicus"/>
+                    <person name="Quintus Caecilius Metellus Numidicus"/>
+                    <person name="Quintus Metellus Pius"/>
+                    <person name="Tiberius Gracchus"/>
+                    <person name="Gaius Gracchus"/>
+                    <person name="Marcus Livius Drusus"/>
+                    <person name="Gaius Marius"/>
+                    <person name="Gaius Marius the Younger"/>
+                    <person name="Lucius Cornelius Cinna"/>
+                    <person name="Flavius Fimbria"/>
+                    <person name="Viriatus Lusitanus"/>
+                </position>
+                <position place="tail" book_orientation="0">
+                    <marginalia_text>
+                       ) M. Aemilius Scaurus. L. Appulcius Saturnius. L. Licinius Lucullus. L. Cornelius Sulla. Mithradates, rex Ponti. 
+                        Cn. Pompeius Magnus. Atq[ue] hi illustrium Romanoru[m] praestantissimi. nisi quod in antiquo Additamento, hi etiam celebrantur illustres viri. 
+                        Julius Caesar. Octavianus Caesar. Cato Praetorius. M. Tullius Cicero. Marcus Brutus. C. Cassius Longinus. Sextus Pompeius. Marcus Antonius. 
+                        Cleopatra regina. In excellentissima Romanae Reip[ublicae] historia, ecce illustrium iam tum virorum selectissimi: praesertim suorum omnium fortissimi, 
+                        atq[ue] prudentissimi. Nec ullus fer&egrave; mnemonicus elenchus, altiori dignus impressione. Tanti ubiq[ue] momenti, ista praeclara nomina. 
+                        In quibus, quaedam totius Romanae historiae ars memorativa conspicue repraesentatur.
+                    </marginalia_text>
+                    
+                    <person name="Marcus Aemilius Scaurus"/>
+                    <person name="Lucius Appulcius Saturnius"/>
+                    <person name="Lucius Licinius Lucullus"/>
+                    <person name="Lucius Cornelius Sulla"/>
+                    <person name="Mithridates VI of Pontus" />
+                    <person name="Pompey the Great"/>
+                    <person name="Julius Caesar"/>
+                    <person name="Augustus"/> <!-- Octavian -->
+                    <person name="Cato Praetorius"/>
+                    <person name="Cicero"/>
+                    <person name="Brutus"/> <!-- Marcus Junius Brutus -->
+                    <person name="Gaius Cassius Longinus"/>
+                    <person name="Sextus Pompey"/>
+                    <person name="Mark Antony"/>
+                    <person name="Cleopatra"/>
+            </position>                     
+            </language>
+            <translation>A catalogue of famous men in Roman history, copied sequentially from Aurelius Victor. 
+            (Although the very same book has been attributed to others, especially Cornelius Nepos and Pliny the Younger.) 
+            This is one of my lists for memory. Procas, king of the people of Alba Longa. Romulus, the first king of the Romans. 
+            Numa Pompilius, the second king of the Romans. Tullus Hostilius, the third king of the Romans. 
+            The [three] Horatii, and [three] Curiatii. Metius Fufetius. Ancus Marcius, the fourth king of the Romans. 
+            Tarquinius Priscus, the fifth king of the Romans. Servius Tullius, the sixth king of the Romans. Tullia. Tarquinius Superbus, the seventh king of the Romans. 
+            Tarquinius Collatinus, and his wife Lucretia. Junius Brutus, the first consul of the Romans. Horatius Cocles. Mutius Scaevola. The virgin Claelia. The 306 Fabii. 
+            Lucius Valerius Poblicola. The dictator Aulus Postumius. The dictator Quinctius Cincinnatus. Menenius Agrippa Lanatus. Marcius Coriolanus. Licinius Stolo. 
+            Virginius Centurio. Aesculapius brought to Rome, in the guise of a snake. M. Furius Camillus. Manlius Capitolinus. Cornelius Cossus. Decius, father. 
+            Decius, son. Valerius Corvinus. Spurius Postumius. Papyrius Cursor. Fabius Rullianus. Curius Dentatus. Appius Claudius Caecus. Pyrrhus, king of the people of Epirus. 
+            Fabricius. Decius Mus. Appius Claudius Caudex. Gaius Duilius. Atilius Calatinus. Atilius Regulus. Lutatius Catulus. Hannibal, the Carthagian leader. 
+            Quintus Fabius Maximus, Cunctator. Publius Scipio Nasica. Marcus Claudius Marcellus. Livia Claudia, Vestal virgin. Porcius Cato Censorius [Cato the Elder]. 
+            Claudius Nero; and Hasdrubal, Hannibal’s brother. Publius Cornelius Scipio Africanus. Marcus Livius Salinator. Quinctius Flaminius, also called Flaminius. 
+            Fulvius Nobilior. Lucius Scipio Asiaticus. Antiochus, king of Syria. Gnaeus Manlius Vulso. Paulus Aemilius Macedonicus. Tiberius Sempronius Gracchus. 
+            Publius Scipio Aemilianus. Gaius Hostilius Mancinus. Lucius Mummius Achaicus. Quintus Caecilius Metellus Macedonicus. Quintus Caecilius Metellus Numidicus. 
+            Quintus Metellus Pius. Tiberius Gracchus. Gaius Gracchus. Marcus Livius Drusus. Marius father. Marius son. Cornelius Cinna. Flavius Fimbria. Viriatus Lusitanus. 
+            Marcus Aemilius Scaurus. Lucius Appulcius Saturnius. Lucius Licinius Lucullus. Lucius Cornelius Sulla. Mithridates, king of Pontus. Pompey the Great. 
+            And these are the most outstanding of the famous Romans, except that in an ancient Supplement also the following famous men are praised: Julius Caesar; Octavian; 
+            Cato Praetorius; Marcus Tullius Cicero; Marcus Brutus; Gaius Cassius Longinus; Sextus Pompey; Mark Antony; Queen Cleopatra. These then are the most exquisite men, 
+            already famous at that time in the superior history of the Roman Republic, especially the bravest and most sagacious of all of them. Hardly any other memory list 
+            deserves a deeper imprint. So great and universal is the importance of those brilliant names. In a remarkable way they exhibit a sort of art of memory of the entire 
+            Roman history.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text> { Celeberrimorum Romanorum aureus Catalogus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A golden list of the most famous Romans.</translation>
+        </marginalia>
+               
+        
+        <underline method="pen" type="straight" language="LA" text="GRAECAE LIQVORVM"/>
+        <underline method="pen" type="straight" language="LA" text="ARIDORVM MENSVRAE"/>
+        <underline method="pen" type="straight" language="LA" text="RVSTICAE MENSVRAE"/>
+        
+    </annotation>

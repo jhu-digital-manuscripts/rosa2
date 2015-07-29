@@ -1,0 +1,189 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
+
+<transcription>
+    <page filename="Ha2.008v.tif" pagination="336" reader="Harvey"/>	<!-- ABO 13left -->
+    <annotation>
+        
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>
+                      Vita Astrophili.
+                    </marginalia_text>
+                	<person name="Astrophil"/>
+                </position>
+            </language>
+        </marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="left_margin" book_orientation="0">
+    				<marginalia_text>
+    					Elixir vitae, Industria
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					Problema ridicolo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="intext" book_orientation="0">
+    				<marginalia_text>
+    					Euerie day better, &amp; better.
+    				</marginalia_text>
+    				<emphasis method="pen" text="Euerie"/>
+    				<emphasis method="pen" text="better, &amp; better"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian" anchor_text="Pontano">
+    		<language ident="IT">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					{ Pontano, nato a piaceuolezze.
+    				</marginalia_text>
+    				<person name="Giovanni Pontano"/>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position place="tail" book_orientation="0">
+    				<marginalia_text>
+    					) philosophus, philautus.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="left_margin" book_orientation="90">
+    				<marginalia_text>
+    					[mih]i vita est, essentia quinta valoris;
+    					[-]s, virtus, praxis multiplicata potens. } 
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position place="right_margin" book_orientation="90">
+    				<marginalia_text>
+    					Manie [bigg] [??] are little worth: &amp; manie little men of great valour: 
+    					<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED -->
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="right_margin" book_orientation="270">
+    				<marginalia_text>
+    					tota in toto. res enim cum
+    				</marginalia_text>
+    			</position>
+    			<position place="intext" book_orientation="270">
+    				<marginalia_text>
+    					Euschemosyne,    <!-- These do not seem to be names of people, as the first is Greek for "decorum," however I can't figure out "Fronismo," although the Greek root seems easy enough to guess. -->
+    					et
+    					Fronismo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="left_margin" book_orientation="0">
+    				<marginalia_text>
+    					2.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	   	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position place="left_margin" book_orientation="0">
+    				<marginalia_text>
+    					3.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+        
+        <!-- Underlines -->
+        
+        <underline method="pen" type="straight" language="IT" text="tuttauia messere"/>
+    	<underline method="pen" type="straight" language="IT" text="quella riuerentia"/>
+    	<underline method="pen" type="straight" language="IT" text="messa"/>
+    	<underline method="pen" type="straight" language="IT" text="canto rozo"/>
+    	<underline method="pen" type="straight" language="IT" text="uillanesco"/>
+    	<underline method="pen" type="straight" language="IT" text="altra donna"/>
+    	<underline method="pen" type="straight" language="IT" text="nudo all'altare"/>
+    	<underline method="pen" type="straight" language="IT" text="esser uestito"/>
+    	<underline method="pen" type="straight" language="IT" text="la terza"/>
+    	<underline method="pen" type="straight" language="IT" text="egli era morto"/>
+    	<underline method="pen" type="straight" language="IT" text="sulla bara"/>
+    	<underline method="pen" type="straight" language="IT" text="i suoi uicini"/>
+    	<underline method="pen" type="straight" language="IT" text="frate"/>
+    	<underline method="pen" type="straight" language="IT" text="ignudo"/>
+    	<underline method="pen" type="straight" language="IT" text="no fussi morto"/>
+    	<underline method="pen" type="straight" language="IT" text="mi riderei molto di"/>
+    	<underline method="pen" type="straight" language="IT" text="queste pazzie de' miei"/>
+    	<underline method="pen" type="straight" language="IT" text="queste tre donne habbia uinta la"/>
+    	<underline method="pen" type="straight" language="IT" text="ingegnose quistioni"/>
+    	<underline method="pen" type="straight" language="IT" text="le balie"/>
+    	<underline method="pen" type="straight" language="IT" text="cantar delle"/>
+    	<underline method="pen" type="straight" language="IT" text="il Pontano"/>
+    	<underline method="pen" type="straight" language="IT" text="mirabilmente piaceuole in esprimere"/>
+    	<underline method="pen" type="straight" language="IT" text="d'eloquentia, &amp; di dottrina con"/>
+    	<underline method="pen" type="straight" language="IT" text="egli sia nato solamente a"/>
+    	<underline method="pen" type="straight" language="IT" text="piaceuolezze"/>
+    	
+    
+        
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        
+        <symbol name="Sun" place="head"/>
+    	<symbol name="Sun" place="head"/>
+    	<symbol name="JC" place="intext"/>
+    	<symbol name="SS" place="left_margin"/>
+        
+        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	
+    	<!-- Right margin -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- co -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- don -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- mira -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- pia -->
+    	<mark name="dash" method="pen" place="right_margin"/> <!-- caminan -->
+    	
+    	<!-- Left margin -->
+    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- bilmente -->
+    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- ceuolezze -->
+    
+    	<!-- Intext -->
+    	<mark name="vertical_bar" method="pen" place="intext"/> <!-- uillanesco; l'altra -->
+    	<mark name="vertical_bar" method="pen" place="intext"/> <!-- uestito. Ma la terza -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- frate, & l'altro -->
+    	<mark name="dot" method="pen" place="intext"/> <!-- l'offerta, disse -->
+    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="tre donne"/>
+    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- quistioni.] -->
+    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- Sogliono -->
+    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="Pontano"/>
+    	<mark name="equal_sign" method="pen" place="intext" /> <!-- fu mira -->
+    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="nato"/>
+    	<mark name="equal_sign" method="pen" place="intext" /> <!-- solamente -->
+    	
+    	<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Middle of page to the left -->
+    	<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Bottom of page to the left -->
+
+    </annotation>
+</transcription>

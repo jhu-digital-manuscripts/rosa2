@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/User1/Documents/GitHub/AORCLONEJG/XMLschema/Harveyschema17102014.xsd">
+    
+    <page filename="00000020.tif" signature="[a7v]" reader="Harvey"  />
+    <annotation>
+        <!-- Accent above 'historia' -->
+        <underline method="pen" type="straight" language="LA" text="origine urbis Romae"/>
+        <underline method="pen" type="straight" language="LA" text="de illis populis &amp; regibus, qui tunc deinceps"/>
+        <underline method="pen" type="straight" language="LA" text="paucis fieri"/>
+        <underline method="pen" type="straight" language="LA" text="&agrave; qu&agrave; paruis initijs urbs Roma originem traxerit"/>
+        <underline method="pen" type="straight" language="LA" text="ut nihil illi par, aut secundum, in"/>
+        <underline method="pen" type="straight" language="LA" text="Romanae igitur urbis regionem"/>
+        <underline method="pen" type="straight" language="LA" text="primi omnium"/>
+        <underline method="pen" type="straight" language="LA" text="Aborigenes, duce Oenotro"/>
+        <underline method="pen" type="straight" language="LA" text="ex Arcadia"/>
+        <underline method="pen" type="straight" language="LA" text="Pelasgi, &amp;"/>
+        <underline method="pen" type="straight" language="LA" text="ex Thessalia"/>
+        <underline method="pen" type="straight" language="LA" text="Aboriginum"/>
+        <underline method="pen" type="straight" language="LA" text="autem regem Saturnum fuisse"/>
+        <underline method="pen" type="straight" language="LA" text="Cretae imperaret"/>
+        <underline method="pen" type="straight" language="LA" text="cultum uinearum"/>
+        <underline method="pen" type="straight" language="LA" text="falcis"/>
+        
+        <mark name="plus_sign" method="pen" place="intext"/> <!-- D. Petri -->
+        <mark name="equal_sign" method="pen" place="intext"/> <!-- Romae -->
+        <mark name="plus_sign" method="pen" place="intext"/> <!-- regionem Siculi -->
+        <mark name="plus_sign" method="pen" place="intext"/> <!-- Aborigenes -->
+        <mark name="apostrophe" method="pen" place="intext"/> <!-- vague mark, above last letter of Arcadia -->
+        <mark name="plus_sign" method="pen" place="intext"/> <!-- deinde Pelasgi -->
+        
+        <mark name="dash" method="pen" place="right_margin"/> <!-- fie -->
+        <mark name="dash" method="pen" place="right_margin"/> <!-- intel-->
+        <mark name="equal_sign" method="pen" place="right_margin"/> <!-- creue- -->
+        <mark name="equal_sign" method="pen" place="left_margin"/>
+        
+    </annotation>
+</transcription>

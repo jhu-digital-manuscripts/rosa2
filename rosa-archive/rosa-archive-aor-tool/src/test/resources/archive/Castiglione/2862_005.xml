@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<<<<<<< HEAD
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+=======
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+>>>>>>> FETCH_HEAD
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+    
+    <page filename="2862_005.tif" reader="Harvey"/>
+    <annotation>
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position place="head" book_orientation="0">
+                        <marginalia_text>
+                            Gabrielis Haruey
+                        </marginalia_text>
+                        <person name="Gabriel Harvey"/>
+                    </position>
+                </language>
+            </marginalia>
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position place="right_margin" book_orientation="0">
+                        <marginalia_text>
+                            GH.
+                        </marginalia_text>
+                        <person name="Gabriel Harvey"/>
+                    </position>
+                </language>
+            </marginalia>
+        </annotation>
+</transcription>
+                            
+                     
+    

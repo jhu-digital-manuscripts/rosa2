@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/User1/Documents/GitHub/AORCLONEJG/XMLschema/Harveyschema17102014.xsd">
+    
+    <page filename="00000014.tif" signature="[a4v]" reader="Harvey" />
+    <annotation>
+        <underline method="pen" type="straight" language="LA" text="PONDERVM VARIETAS"/>
+        <underline method="pen" type="straight" language="LA" text="nona parte grauius"/>
+        <underline method="pen" type="straight" language="LA" text="mel uino tertia fer&egrave;"/>
+        <underline method="pen" type="straight" language="LA" text="Aqua proxim&egrave; ad uinum pondere"/>
+        <underline method="pen" type="straight" language="LA" text="auena, far hordeo, triticum farre"/>
+        <underline method="pen" type="straight" language="LA" text="triticum tritico grauius"/>
+        
+        <mark name="equal_sign" method="pen" place="right_margin"/>
+        <mark name="dot" method="pen" place="intext"/> <!-- reperitur, at- -->
+    </annotation>
+</transcription>

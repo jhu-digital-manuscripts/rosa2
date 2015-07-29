@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="Ha2.024v.tif" pagination="372" reader="Harvey"/>	<!-- ABO 029left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					For arts, &amp; Vertues the best qualified man aliue:
+                      			</marginalia_text>
+            				<emphasis method="pen" type="straight" text="arts, &amp; Vertues the best qualified man aliue"/>
+            			</position>
+        				<position place="left_margin" book_orientation="0">
+        					<marginalia_text>
+        						for vigour &amp;
+        					</marginalia_text>
+        					<emphasis method="pen" type="straight" text="vigour"/>
+        				</position>
+        				<position place="intext" book_orientation="0">
+        					<marginalia_text>
+        						industrie, absolutely incomparable: for ciuil,
+        					</marginalia_text>
+        					<emphasis method="pen" type="straight" text="industrie, absolutely incomparable: for ciuil"/>
+        				</position>
+        				<position place="left_margin" book_orientation="0">
+        					<marginalia_text>
+        						politique, &amp; martial perfections, or anie courtlie complements,
+        						the most singular of [the] finest gentleme[n], or brauest men.
+        					</marginalia_text>
+        					<emphasis method="pen" type="straight" text="politique"/>
+        					<emphasis method="pen" type="straight" text="perfections"/>
+        					<emphasis method="pen" type="straight" text="complements"/>
+        					<emphasis method="pen" type="straight" text="most singular"/>
+        				</position>
+        				<position place="intext" book_orientation="0">
+        					<marginalia_text>
+        						At all essay[e]s of importance, <!--JG: Yeah, I think this is an 'e' -->
+        					</marginalia_text>
+        					<emphasis method="pen" type="straight" text="At all essayes of importance"/>
+        				</position>
+        				<position place="left_margin" book_orientation="0">
+        					<marginalia_text>
+        						or valu, the nimblest, &amp; dispatchfullest of all men.
+        					</marginalia_text>
+        					<emphasis method="pen" type="straight" text="nimblest"/>
+        					<emphasis method="pen" type="straight" text="of all men"/>
+        				</position>
+        			</language>
+        		</marginalia>
+        
+        		<marginalia hand="Italian">
+        			<language ident="IT">
+        				<position place="intext" book_orientation="0">
+        					<marginalia_text>
+        						ridicolo.
+        					</marginalia_text>
+        				</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Huc etiam Eudoxi continua articulorum, sensuumq[ue] agitatio.
+    					</marginalia_text>
+    					<person name="Eudoxus"/>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+        
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						The summe of Summes, &amp; the great sermon of Ecclesiastes; to be merrie, &amp; Wise. 
+    					</marginalia_text>
+    					<book title="Ecclesiastes"/>
+    				</position>
+    			</language>
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						Ca[e]tera vanitas.
+    					</marginalia_text>
+    					<emphasis method="pen" type="straight" text="vanitas"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<!-- MISSING TEXT: ILLEGIBLE DUE TO BENT PAGE. ORIGINAL SOURCE NEEDED-->
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="270">
+    					<marginalia_text>
+    						 Asclepiadis cautela[e].	<!-- Visible lines from marginalia hidden in gutter. -->
+    					</marginalia_text>
+					<person name="Asclepius"/>    					
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="un pezzo"/>
+    		<underline method="pen" type="straight" language="IT" text="paghisi"/>
+    		<underline method="pen" type="straight" language="IT" text="Risero gli"/>
+    		<underline method="pen" type="straight" language="IT" text="intelligente"/>
+    		<underline method="pen" type="straight" language="IT" text="non piu sottile d'intelletto, che si bisognasse"/>
+    		<underline method="pen" type="straight" language="IT" text="andranno in paradiso, hanno"/>
+    		<underline method="pen" type="straight" language="IT" text="tutti del pari, in"/>
+    		<underline method="pen" type="straight" language="IT" text="contadino"/>
+    		<underline method="pen" type="straight" language="IT" text="pari d'un dottore"/>
+    		<underline method="pen" type="straight" language="IT" text="in cielo non regna ambitione"/>
+    		<underline method="pen" type="straight" language="IT" text="gradi sono"/>
+    		<underline method="pen" type="straight" language="IT" text="secondo i meriti e"/>
+    		<underline method="pen" type="straight" language="IT" text="meritato piu d'un dottore"/>
+    		<underline method="pen" type="straight" language="IT" text="birro piu"/>
+    		<underline method="pen" type="straight" language="IT" text="far&agrave; garbuglio"/>
+    		<underline method="pen" type="straight" language="IT" text="Rise la gentildonna"/>
+    		<underline method="pen" type="straight" language="IT" text="della sciocchezza"/>
+    		<underline method="pen" type="straight" language="IT" text="non replic&ograve; altro"/>
+    		<underline method="pen" type="straight" language="IT" text="meritaua altra"/>
+    		<underline method="pen" type="straight" language="IT" text="grandi insalate di borana"/>
+    		<underline method="pen" type="straight" language="IT" text="allegra cuore"/>
+	       
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        	        
+	    	<symbol name="Sun" place="head"/>
+    		<symbol name="JC" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- in -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- capita -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Cate -->
+	    	
+	    	<!-- Left margin -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- ragione .. & -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- na; in cielo -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- [Non meritaua -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- cuore -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="dot" method="pen" place="intext"/> <!-- suo, & -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- bene, da -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- bisognasse, se -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- sedia, e -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- meritato piu -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- dottore, e un birro -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- colui, andandosene -->
+    		<mark name="equal_sign" method="pen" place="intext"/> <!-- non replico'  -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="borana"/>
+    		
+
+    </annotation>
+</transcription>

@@ -1,0 +1,180 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
+
+<transcription>
+<page filename="Ha2.003v.tif" pagination="326" reader="Harvey"/>	<!-- ABO 008left -->
+    <annotation>
+    <!-- Marginalia -->
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>
+                        At non legit quotidi&egrave; rarissima mundi ingenia: -   <!-- marginalia continues: Domenichi_008right, right, - et spiritus omnium viuidissimos. -->
+                    </marginalia_text>
+                    <emphasis method="chalk"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>
+                        pazzo sauio. )
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        Quales Eutrapelus quotidi&egrave; 
+                    </marginalia_text>
+                    <person name="Eutrapelus"/>
+                </position>
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>
+                        legit singulares auctores: Eunapiu[m],
+                    </marginalia_text>
+                    <person name="Eunapius"/>
+                    <emphasis method="chalk"/>
+                </position>
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        cu[m] Tacito: Philostratum, cum Iuliano: Zuingeri theatrum,
+                    </marginalia_text>
+                    <person name="Tacitus"/>
+                    <person name="Philostratus"/>
+                    <person name="Julian"/>
+                    <person name="Theodor Zwinger"/>
+                    <emphasis method="chalk"/>
+                </position>
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>
+                        cum Gandino: Bartasium, cu[m] Rabelaesio
+                    </marginalia_text>
+                    <person name="Alberto Gandino"/>
+                    <person name="Guillaume Du Bartas"/>
+                    <person name="Francois Rabelais"/>
+                </position>
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        Theocriti Idyllion 
+                        I. cu[m] 
+                        Bionis, et Adonidis Epitaphio.                       
+                    </marginalia_text>
+                    <person name="Theocritus"/>
+                    <person name="Bion of Smyrna"/>
+                    <book title="The Idylls"/>
+                    <book title="Epitaph of Adonis"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>
+                        | ( Economico.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>
+                        Scoggin bad [the] King beggan Office: &amp; he shoold want no moonie. <!-- This line is perplexing to me. -->
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        Tria scuta         
+                        heroica,
+                        Homeri, Hesiodi, Virgilij:
+                    </marginalia_text>
+                    <person name="Homer"/>
+                    <person name="Hesiod"/>
+                    <person name="Virgil"/>
+                    <emphasis method="pen"/>
+                </position>
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        cum septima die Bartasij.
+                    </marginalia_text>
+                    <person name="Guillaume Du Bartas"/>
+                </position>
+                <position place="tail" book_orientation="0">
+                    <marginalia_text>
+                       Canticu[m] Canticorum Salomonis: cu[m] Iobi Behemoth, et Leuiathan.
+                    </marginalia_text>
+                    <person name="Solomon"/>
+                    <book title="Song of Songs"/>
+                    <book title="Book of Job"/>
+                    
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="right_margin" book_orientation="90">
+                    <marginalia_text>
+                        Eiusdem panis quotidianus, Martialis, et Heiuodus =   <!-- Marginalia continues: Domenichi_008right, left_margin, 'cum duobus argutissimis poetis, Ausonio, et Politiano.'-->
+                    </marginalia_text>       
+                    <person name="Martial"/>
+                    <person name="John Heywood"/>
+                </position>
+            </language>
+        </marginalia>
+        
+    <!-- Underlines -->
+        <underline method="pen" type="straight" language="IT" text="un bracco"/>
+        <underline method="pen" type="straight" language="IT" text="che era mastino."/>
+        <underline method="pen" type="straight" language="IT" text="sauio alle sue spese"/>
+        <underline method="pen" type="straight" language="IT" text="fai come il pecorino da Dicomano"/>
+        <underline method="pen" type="straight" language="IT" text="fauelli poco, &amp; male"/>
+        <underline method="pen" type="straight" language="IT" text="cominci&ograve; alla porta a belare"/>
+        <underline method="pen" type="straight" language="IT" text="antico uulgatisimo"/>
+        <underline method="pen" type="straight" language="IT" text="Dolendosi Massimiano"/>
+        <underline method="pen" type="straight" language="IT" text="d'ogni memoria"/>
+        <underline method="pen" type="straight" language="IT" text="delle poche entrate, ch'egli"/>
+        <underline method="pen" type="straight" language="IT" text="non ui fate una uolta cancellier, lasciando la"/>
+        <underline method="pen" type="straight" language="IT" text="uoi mettereste insieme gran quantit&agrave; di denari"/>
+        <underline method="pen" type="straight" language="IT" text="pompa de- cancellieri"/>
+        <underline method="pen" type="straight" language="IT" text="Gottifredo Re di Gierusale[m]"/>
+        <underline method="pen" type="straight" language="IT" text="donare molte cose a quel"/>
+        <underline method="pen" type="straight" language="IT" text="senza alcuno orname[n]to reale"/>
+        <underline method="pen" type="straight" language="IT" text="cosi gran Capitano"/>
+        <underline method="pen" type="straight" language="IT" text="sopra tutto l'Orie[n]te"/>
+        <underline method="pen" type="straight" language="IT" text="sedere in terra senza"/>
+        <underline method="pen" type="straight" language="IT" text="messosi a ridere"/>
+        
+    <!-- Symbols -->
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="JC" place="intext"/>
+        
+    <!-- Marks -->
+        <mark name="dot" method="pen" place="intext"/>
+        <mark name="dot" method="pen" place="intext"/> <!-- male, tratto -->
+        <mark name="plus_sign" method="pen" place="intext" language="IT" text="poche"/>
+        <mark name="plus_sign" method="pen" place="intext" language="IT" text="volta cancellier"/>
+        <mark name="dash" method="pen" place="right_margin"/> <!-- can -->
+        <mark name="dot" method="pen" place="intext"/> <!-- denari, uolle -->
+        <mark name="plus_sign" method="pen" place="intext" text="cancellieri"/>
+        <mark name="plus_sign" method="pen" place="intext"/>
+        <mark name="bracket" method="pen" place="left_margin" language="LA" text="Homeri, Hesiodi, Virgilij"/>
+        <mark name="dot" method="pen" place="intext"/> <!-- over uicini -->
+        <mark name="dash" method="pen" place="right_margin"/> <!-- hauen -->
+        <mark name="dash" method="pen" place="right_margin"/> <!-- rea -->
+        <mark name="dot" method="pen" place="intext"/> <!-- le, si -->
+        <mark name="dot" method="pen" place="intext"/> <!-- Orie[n]te, si -->
+        <mark name="dot" method="pen" place="intext"/> <!-- loro, egli -->
+        <mark name="comma" method="pen" place="intext"/> <!-- fusse si -->
+        <mark name="bracket" method="pen" place="left_margin"/> <!-- Bracketing his own annotation Homeri, Hesiodi, etc. -->
+        
+    </annotation>
+</transcription>  

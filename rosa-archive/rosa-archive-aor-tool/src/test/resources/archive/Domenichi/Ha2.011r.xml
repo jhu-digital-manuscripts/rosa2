@@ -1,0 +1,184 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
+
+<transcription>
+	<page filename="Ha2.011r.tif" pagination="341" reader="Harvey"/>	<!-- ABO Scan 15right -->
+		    <annotation>
+		        
+		        <!-- Marginalia -->
+		        	<marginalia hand="Italian">
+		            		<language ident="LA">
+		                		<position place="head" book_orientation="0">
+		                    			<marginalia_text>
+		                      			Vita Chrysotechni iterum.
+		             			</marginalia_text>
+		                			<person name="Chrysotechnus"/>
+		                		</position>
+		            		</language>
+		        	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					pares cum paribus.
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					s[upr]a
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					No[n] curo speciem, sed individuu[m].
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					alioqui leonina societas.
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="IT">
+		    			<position place="intext" book_orientation="0">
+		    				<marginalia_text>
+		    					Laura del Petrarca.
+		    				</marginalia_text>
+		    				<person name="Laura"/> <!-- Laura from Petrarch's Canzoniere -->
+		    				<person name="Petrarch"/>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="tail" book_orientation="0"> 
+		    				<marginalia_text>
+		    					Proa[e]resius, instar omnium Aulicoru[m],	
+		    					aut Oratorum Mundi.			
+		    				</marginalia_text>
+		    				<person name="Proaeresius"/>
+		    				<emphasis method="chalk"/>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="left_margin" book_orientation="90">
+		    				<marginalia_text>
+		    					Vnicismus non ab extra, sed ab intra. Sibi quisq[ue] bibliotheca, et
+		    					Aula regia. Discant &agrave; me Auliti:  non ego ab Aulicis.
+		    				</marginalia_text>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		    	<marginalia hand="Italian">
+		    		<language ident="LA">
+		    			<position place="right_margin" book_orientation="90">
+		    				<marginalia_text>
+		    					{ Artis apex; [virtus] adamantina virtus; aurea praxis; 	<!-- First virtus is crossed out. How should I mark this? --> 
+		    					Arcanorum acies vnica, vita mea est.
+		    				</marginalia_text>
+		    				<emphasis method="chalk"/>
+		    			</position>
+		    		</language>
+		    	</marginalia>
+		        
+		        
+		        <!-- Underlines --> <!--JG: Chris, if text attribute is used, language attribute should be used as well! Also please check your other files for this!-->
+		        
+		        
+		    	<underline method="pen" type="straight" language="IT" text="non mi ponga un pi&egrave; addosso"/>
+		    	<underline method="pen" type="straight" language="IT" text="mia uita, &amp; la nostra amicitia"/>
+		    	<underline method="pen" type="straight" language="IT" text="fra i pari"/>
+		    	<underline method="pen" type="straight" language="IT" text="disaguaglianza la rompe"/>
+		    	<underline method="pen" type="straight" language="IT" text="grandi, &amp; piccioli"/>
+		    	<underline method="pen" type="straight" language="IT" text="chiamare amicitia"/>
+		    	<underline method="pen" type="straight" language="IT" text="donna Bolognese, la quale"/>
+		    	<underline method="pen" type="straight" language="IT" text="di prudentia"/>
+		    	<underline method="pen" type="straight" language="IT" text="di ricchezze"/>
+		    	<underline method="pen" type="straight" language="IT" text="la nobilit&agrave; del"/>
+		    	<underline method="pen" type="straight" language="IT" text="non cedeua ad alcuna"/>
+		    	<underline method="pen" type="straight" language="IT" text="piu liberale della sua pudicitia di quel"/>
+		    	<underline method="pen" type="straight" language="IT" text="d'argutie, et di facetie co[n]uenieni a gentildo[n]na"/>
+		    	<underline method="pen" type="straight" language="IT" text="era di uerno"/>
+		    	<underline method="pen" type="straight" language="IT" text="cose d'amore"/>
+		    	<underline method="pen" type="straight" language="IT" text="leggendosi il Petrarca, &amp;"/>
+		    	<underline method="pen" type="straight" language="IT" text="Tennemi Amore anni vent' uno ardendo"/> <!--JG: uent instead of vent-->
+		    	<underline method="pen" type="straight" language="IT" text="hauer' amato Mado[n]na Laura"/>
+		    	<underline method="pen" type="straight" language="IT" text="donna da lui molto celebrata, anni venti uno"/>
+		    	<underline method="pen" type="straight" language="IT" text="vita, &amp; dop&ograve; morte di lei altri dieci anni"/>
+		    	<underline method="pen" type="straight" language="IT" text="castamente"/>
+		    	<underline method="pen" type="straight" language="IT" text="buona intentione"/>
+		    	<underline method="pen" type="straight" language="IT" text="alcun frutto d'amore"/>
+		    	<underline method="pen" type="straight" language="IT" text="stesse tanto tempo innamorato in darno"/>
+		    	<underline method="pen" type="straight" language="IT" text="ci&ograve; negaua quasi"/>
+		    	<underline method="pen" type="straight" language="IT" text="mille uolte a' suoi"/>
+		    	<underline method="pen" type="straight" language="IT" text="colto amoroso piacere di Madonna"/>
+		    	<underline method="pen" type="straight" language="IT" text="sue rime"/>
+		    	<underline method="pen" type="straight" language="IT" text="modesto amatore"/>
+		    	<underline method="pen" type="straight" language="IT" text="nieghi sopra tutto"/>
+		    	<underline method="pen" type="straight" language="IT" text="per castissima, &amp; sauissima"/>
+		    	<underline method="pen" type="straight" language="IT" text="donna sempre lodi"/>
+		    	<underline method="pen" type="straight" language="IT" text="detta gentildonna"/>
+		    
+		        
+		        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+		        
+		    	<symbol name="SS" place="head"/>
+		    	<symbol name="SS" place="head"/>
+		    	<symbol name="SS" place="right_margin"/>
+		        
+		        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+		    	
+		    	<!-- Right margin -->
+		    	<mark name="plus_sign" method="pen" place="right_margin"/> <!-- un -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- ami -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- pu -->
+		    	<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- abon -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- abon -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- ra --> 
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- ue -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- Mado[n] -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- d'a --> 
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- col -->
+		    	<mark name="dash" method="pen" place="right_margin"/> <!-- affer --> 
+		    	
+		    	<!-- Left margin -->
+		    	<mark name="bracket" method="pen" place="left_margin"/> <!-- ro...la -->
+		    	<mark name="bracket" method="pen" place="left_margin"/>  <!-- dere ... pero -->
+		    	<mark name="bracket" method="pen" place="left_margin"/> <!-- era ... donna -->
+		    
+		    	<!-- Intext -->
+		    	<mark name="dot" method="pen" place="intext"/> <!-- addosso, perche  -->
+		    	<mark name="plus_sign" method="pen" place="intext"/> <!-- i pari  -->
+		    	<mark name="dot" method="pen" place="intext"/> <!-- amicitia, &  -->
+		    	<mark name="plus_sign" method="pen" place="intext"/> <!-- rompe. -->
+		    	<mark name="plus_sign" method="pen" place="intext"/> <!-- citia.] -->
+		    	<mark name="quotation_mark" method="pen" place="intext"/> <!-- Bolognese  -->
+		    	<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- sua pu  -->
+		    	<mark name="circumflex" method="pen" place="intext"/> <!-- argutie  -->
+		    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="amore"/>
+		    	<mark name="dot" method="pen" place="intext"/> <!-- amore, &  -->
+		    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="amato"/>
+		    	<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- castamente  --> <!--JG: I'd put castamente in text attribute here-->
+		    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="modesto"/>
+		    	<mark name="dot" method="pen" place="intext"/> <!-- tutti, & lei -->
+		    	<mark name="plus_sign" method="pen" place="intext"/> <!-- & sauissima -->
+
+    </annotation>
+</transcription>

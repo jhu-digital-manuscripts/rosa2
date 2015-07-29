@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="Ha2.026r.tif" pagination="37E" reader="Harvey"/>	<!-- ABO 030right -->
+    	<annotation>		<!-- The pagination for this page seems strange. I can't tell if Harvey added something to the number or not. --> <!--JG: It could be that Harvey tried to change it, I do see ink which can be part of the 'e' or 's' of communes. Anyway, the pagination attribute follows the printed number, so 37E is OK-->
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					S'oli sunt pra[e]gnantissimi Loci Communes: et 
+                      				</marginalia_text>
+            			</position>
+        				<position place="right_margin" book_orientation="0">
+        					<marginalia_text>
+        						pauca[e] pra[e]potentes materia[e],
+        						qua[e] a[e]dificant egregiu[m] pragmaticu[m].
+        					</marginalia_text>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						N&eacute; quis fallatur  pomposis )
+    						) professoru[m] pollicitationibus:
+    						qua[e] tandem &egrave; libris ingens spes,
+    						cum sapientissimi Papa[e], post 
+    					</marginalia_text>
+    				</position>
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						omnia auctoru[m] monumenta peruolutata, nihil
+    						iudicarint malus, aut sua meditatione dignius,
+    						quam Homerum, Horatium, Martialem?
+    					</marginalia_text>
+    					<person name="Homer"/>
+    					<person name="Horace"/>
+    					<person name="Martial"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Strategema. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						G.R. non credebat Deo; sed credebat Proditori. 
+    					</marginalia_text>
+    					<person name="G.R."/>	<!-- Do you have any idea who this might be? --> <!--JG: Nope... Put a comment: Expert advice needed!-->
+    				</position>
+    			</language>
+    		</marginalia>
+        
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="270">
+    					<marginalia_text>
+    						Erg&ograve; statim perlustranda omnia monumenta: penetrandi potiss[im]u[m]
+    						Loci Communes: et sola curanda personaru[m], reru[m], actionu[m] potentiss[im]a.
+    					</marginalia_text>
+    					<!-- Chalk mark looks like it's a smudge from the facing page. --><!--JG: Agree!-->
+    				</position>
+    			</language>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="assediaua Siena"/>
+    		<underline method="pen" type="straight" language="IT" text="presa de' forti"/>
+    		<underline method="pen" type="straight" language="IT" text="Santaccio da"/>
+    		<underline method="pen" type="straight" language="IT" text="haurebbe dato loro Chiusi, se"/>
+    		<underline method="pen" type="straight" language="IT" text="fossero presentati alle mura"/>
+    		<underline method="pen" type="straight" language="IT" text="i due Signori"/>
+    		<underline method="pen" type="straight" language="IT" text="tramare la cosa"/>
+    		<underline method="pen" type="straight" language="IT" text="pareua riuscibile"/>
+    		<underline method="pen" type="straight" language="IT" text="d'andare a Chiusi"/>
+    		<underline method="pen" type="straight" language="IT" text="numero di caualli &amp; di fanti"/>
+    		<underline method="pen" type="straight" language="IT" text="detto Santaccio"/>
+    		<underline method="pen" type="straight" language="IT" text="che gli trad&igrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="in una imboscata"/>
+    		<underline method="pen" type="straight" language="IT" text="capitarono male"/>
+    		<underline method="pen" type="straight" language="IT" text="morto il"/>
+    		<underline method="pen" type="straight" language="IT" text="prigione il Signore"/>
+    		<underline method="pen" type="straight" language="IT" text="genti sualigiate, &amp;"/>
+    		<underline method="pen" type="straight" language="IT" text="nuoua a"/>
+    		<underline method="pen" type="straight" language="IT" text="Papa Giulio terzo"/>
+    		<underline method="pen" type="straight" language="IT" text="o pazzi"/>
+    		<underline method="pen" type="straight" language="IT" text="non credeuano in Dio"/>
+    		<underline method="pen" type="straight" language="IT" text="son fidati d'un Santaccio"/>
+    		<underline method="pen" type="straight" language="IT" text="Arguto"/>
+    		<underline method="pen" type="straight" language="IT" text="amico"/>
+    		<underline method="pen" type="straight" language="IT" text="giuoca[n]do a primiera"/>
+    		<underline method="pen" type="straight" language="IT" text="il quinto vole[n]do finire il giuoco"/>
+    		<underline method="pen" type="straight" language="IT" text="a 18 giuli di resto"/>
+    		<underline method="pen" type="straight" language="IT" text="nobile, &amp; magnifico, essendogli"/>
+    		<underline method="pen" type="straight" language="IT" text="pi&ugrave; da fastidio mosso"/>
+    		<underline method="pen" type="straight" language="IT" text="habbiate cura"/>
+    		<underline method="pen" type="straight" language="IT" text="non"/>
+    		<underline method="pen" type="straight" language="IT" text="me ne guarder&ograve;"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+    		<symbol name="Mars" place="head"/>
+	    	<symbol name="SS" place="left_margin"/>
+    		<symbol name="Mercury" place="right_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- Asca -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- fosse -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Asca -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- cura -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="plus_sign" method="pen" place="left_margin"/> <!-- la qual -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- nuoua -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- tutto ... & -->
+		    
+	    	<!-- Intext -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- Cornia, fu -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- nio, da -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Santaccio"/>
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- dato loro --> <!--JG: I'd put dato in text attribute-->
+    		<mark name="dot" method="pen" place="intext"/> <!-- riuscibile, si -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- detto Santaccio -->
+    		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark in middle of page -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="imboscata"/>
+    		<mark name="equal_sign" method="pen" place="intext" language="IT" text="morto"/>
+    		<mark name="equal_sign" method="pen" place="intext"/> <!-- prigione il -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- Roma, il -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- Giulio terzo -->
+    		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="pazzi"/>
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- un Santaccio -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Arguto"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- miglio, & -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- a primiera -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- tenere, un giouane -->
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- non fallire -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- guardero' --> <!--JG: I'd put guardero in text attribute-->
+    		
+    		
+
+    </annotation>
+</transcription>

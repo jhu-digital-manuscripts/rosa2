@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141023.xsd">
+
+	<page filename="Ha2.028r.tif" pagination="375" reader="Harvey"/>	<!-- ABO 032right -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Ad omnia Opposita: non querela, sed
+                      			</marginalia_text>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        				<position place="right_margin" book_orientation="0">
+        					<marginalia_text>
+        						medela.
+        					</marginalia_text>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						With Sir Francis ) Veres
+    					</marginalia_text>
+    					<person name="Francis Veres"/>
+    				</position>
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) Falantadowndidle.	<!-- This seems to be the correct order, though I'm not sure. -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						Tutt-tutt a figg: quoth A. O.	<!-- No clue who this could be. Any ideas? -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						penetrante.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						sed Viuo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Epigramma.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Nihil vnq[uam] turpe, indecorum, aut non 
+    					</marginalia_text>
+    				</position>
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						plan&egrave; decentissimu[m].
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Pro, et Contra. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						) Solus Eutrapelus, sui 
+    						summi Scopi semper obseruantissimus.
+    					</marginalia_text>
+    					<person name="Eutrapelus"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						Omnia mundissima, et pulcherrima: Singula candidiss[im]a et gratiasiss[im]a.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+        
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="270">
+    					<marginalia_text>
+    						Quod non valet Simplex, valet compositum.
+    						Vt aqua composita: et clypeus septemplex.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="&egrave; piccolo"/>
+    		<underline method="pen" type="straight" language="IT" text="O perche"/>
+    		<underline method="pen" type="straight" language="IT" text="il Guadagni"/>
+    		<underline method="pen" type="straight" language="IT" text="tutti quelli"/>
+    		<underline method="pen" type="straight" language="IT" text="uoi hauete fatto impouerire"/>
+    		<underline method="pen" type="straight" language="IT" text="non c'e'"/>
+    		<underline method="pen" type="straight" language="IT" text="luogo pei mezi"/>
+    		<underline method="pen" type="straight" language="IT" text="come arguta"/>
+    		<underline method="pen" type="straight" language="IT" text="mosse a riso"/>
+    		<underline method="pen" type="straight" language="IT" text="entrare in"/>
+    		<underline method="pen" type="straight" language="IT" text="Pronta"/>
+    		<underline method="pen" type="straight" language="IT" text="pericolo botossi di"/>
+    		<underline method="pen" type="straight" language="IT" text="frate de' serui"/>
+    		<underline method="pen" type="straight" language="IT" text="sodisfece il boto"/>
+    		<underline method="pen" type="straight" language="IT" text="se ne usc&igrave; di l&agrave; a poco"/>
+    		<underline method="pen" type="straight" language="IT" text="non ti uergogni"/>
+    		<underline method="pen" type="straight" language="IT" text="esserti sfratato"/>
+    		<underline method="pen" type="straight" language="IT" text="N&ograve;,"/>
+    		<underline method="pen" type="straight" language="IT" text="rendermi frate"/>
+    		<underline method="pen" type="straight" language="IT" text="l'h&ograve; sodisfatto"/>
+    		<underline method="pen" type="straight" language="IT" text="douerui stare tutto il tempo della"/>
+    		<underline method="pen" type="straight" language="IT" text="Rise l'amico"/>
+    		<underline method="pen" type="straight" language="IT" text="la scusa, che migliore"/>
+    		<underline method="pen" type="straight" language="IT" text="della sua pazzia"/>
+    		<underline method="pen" type="straight" language="IT" text="Scusa di poco"/>
+    		<underline method="pen" type="straight" language="IT" text="no[n] molto pratico fuor"/>
+    		<underline method="pen" type="straight" language="IT" text="casa sua"/>
+    		<underline method="pen" type="straight" language="IT" text="ge[n]tildo[n]na forestiera"/>
+    		<underline method="pen" type="straight" language="IT" text="ma[n]giaua brauame[n]te"/>
+    		<underline method="pen" type="straight" language="IT" text="pieno la scodella di bocconi de[n]tro et"/>
+    		<underline method="pen" type="straight" language="IT" text="fare arrossire il"/>
+    		<underline method="pen" type="straight" language="IT" text="uoi ui"/>
+    		<underline method="pen" type="straight" language="IT" text="molto"/>
+    		<underline method="pen" type="straight" language="IT" text="pu[n]gersi"/>
+    		<underline method="pen" type="straight" language="IT" text="mi bisogna meno"/>
+    		<underline method="pen" type="straight" language="IT" text="inco[n]tro si brauo combattente"/>
+    		<underline method="pen" type="straight" language="IT" text="Porcacchi"/>
+    		<underline method="pen" type="straight" language="IT" text="ufficioso"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="JC" place="intext"/>
+    		<symbol name="SS" place="right_margin"/>
+    		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="plus_sign" method="pen" place="right_margin"/> <!-- non c'e' -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- ri -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- bo -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- fan -->
+    		<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- No, che -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- haue[n] -->
+    		<mark name="straight_quotation_mark" method="pen" place="right_margin"/> <!-- gia no[n] -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- stare tutto -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- tauo -->
+    		<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- d'intorno -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- dis -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- pu[n]gersi il -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- haue[n] -->
+    		
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- dagni ... so  -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- Ge[n]til'huomo ... do -->
+    		
+	    	<!-- Intext -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="piccolo"/>
+    		<mark name="comma" method="pen" place="intext"/> <!-- perche disse -->
+    		<mark name="equal_sign" method="pen" place="intext"/> <!-- impouerire -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- come arguta -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Pronta"/>
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- esserti sfratato -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- sua a desinare -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- accorta, -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- brauamente -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- giouane dis -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="pu[n]gersi"/>
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- brauo combattente -->
+    		<mark name="equal_sign" method="pen" place="intext"/> <!-- molto ufficioso -->
+    		
+    </annotation>
+</transcription>

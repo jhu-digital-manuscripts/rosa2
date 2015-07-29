@@ -34,7 +34,7 @@ public class Tool {
                     exitOnError("Usage: git-stats <repository_url>");
                 }
 
-                GitStatCollector gitStatCollector = new GitStatCollector("aor");
+                GitStatCollector gitStatCollector = new GitStatCollector();
                 gitStatCollector.run(args);
                 
                 break;

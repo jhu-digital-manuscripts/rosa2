@@ -1,0 +1,146 @@
+<?xml version="1.0" standalone="no" ?>
+
+<!DOCTYPE transcription SYSTEM "DTD10-10-2014.dtd">
+
+<transcription>
+    <page filename="Ha2.001r.tif" reader="Harvey" pagination="323"/>	<!-- ABO 005right -->
+    <annotation>
+            
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position place="head" book_orientation="0">
+                        <marginalia_text> Romae [XXX] Athenoru[m] populares humores, regies mundi sententias, regulasq[ue] corrupere
+                        </marginalia_text>
+                        <location name="Rome"/>
+                        <location name="Athens"/>
+                    </position>
+                </language>
+            </marginalia>
+            
+            <marginalia hand="Italian" anchor_text="Garbato.">
+                <language ident="IT">
+                    <position place="intext" book_orientation="0">
+                        <marginalia_text>ridicolo</marginalia_text>
+                    </position>
+                </language>
+            </marginalia>	
+            
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position place="left_margin" book_orientation="270">
+                        <marginalia_text> = Canonista: pragmatista. Ex occulto; stratagematista; apophthegmatista
+                            Emblematista: Epigrammatista</marginalia_text>
+                    </position>
+                </language>
+            </marginalia>
+            
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position place="intext" book_orientation="0">
+                        <marginalia_text> Ante omnes auctores, politicus Bodini:  
+						</marginalia_text>
+                        <person name="Jean Bodin"/>
+                        <emphasis method="pen" text="politicus Bodini" />
+						</position>
+					<position place="right_margin" book_orientation="0">	
+						<marginalia_text>Jureconsult[i]s Vigelij: pragmaticus speculatoris:</marginalia_text>
+						<person name="Nicolaus Vigel" />
+						<emphasis method="pen" text="Jureconsult[i]s Vigelij: pragmaticus speculatoris" /> 
+					</position>
+					<position place="intext" book_orientation="0">
+					<marginalia_text>strategematicus Gandini: apophthegmaticus Zuingeri. Prudententiss[imi] </marginalia_text>
+					<person name="Alberto Gandino" />
+                    <person name="Theodor Zwinger" />	
+					<emphasis method="pen" text="strategematicus Gandini: apophthegmaticus Zuingeri" />
+					</position>
+                    <position place="right_margin" book_orientation="0">
+                        <marginalia_text>auctores, maximique necessarij.</marginalia_text>
+                    </position>
+                </language>
+            </marginalia>
+            
+			<marginalia hand="Italian">
+				<language ident="LA">
+					<position place="intext" book_orientation="0">
+						<marginalia_text>s[upr]a</marginalia_text>
+					</position>
+				</language>
+			</marginalia>
+			
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position place="intext" book_orientation="0">
+                        <marginalia_text>Classicis auctoribus addo Bartasium, ob divinum furore[m]: Rabelaesiu[m]</marginalia_text>
+						<person name="Guillaume Du Bartas" />
+                        <person name="Francois Rabelais" />
+                    </position>
+                    <position place="right_margin" book_orientation="0">
+                        <marginalia_text>, ob humanu[m]: Chauceru[m], ob mixtu[m].</marginalia_text>
+                        <person name="Geoffrey Chaucer" />
+                    </position>	
+                </language>
+            </marginalia>
+            
+            <marginalia hand="Italian">
+                <language ident="IT">
+                    <position place="intext" book_orientation="0">
+                        <marginalia_text>ridicolo.</marginalia_text> 
+                    </position> 
+                </language>
+            </marginalia>
+            
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position place="tail" book_orientation="0">
+                        <marginalia_text> ) Malo Chaucerum, qua[m] Petrarcha[m]; Boccatium, aut Ariostum Rabelaesium, quam Aretinum.</marginalia_text>
+                        <person name="Francesco Petrarca" />
+                        <person name="Francois Rabelais" />	
+                        <person name="Pietro Aretino" />
+                        <person name="Lodovico Ariosto" />	
+                        <person name="Geoffrey Chaucer" />
+                        <person name="Giovanni Boccaccio" />				
+                    </position>
+                </language>
+            </marginalia>
+            
+            
+            <!-- Underlines -->
+            <underline method="pen" type="straight" language="IT" text="le tagli;&ograve; il collo, &amp; le gambe"/>
+            <underline method="pen" type="straight" language="IT" text="una donna"/>
+            <underline method="pen" type="straight" language="IT" text="con mani, &amp; co[n] piedi"/>
+            <underline method="pen" type="straight" language="IT" text="di calor naturale &amp; di quelle circonstantie, che si"/>
+            <underline method="pen" type="straight" language="IT" text="disaggio senza frutto alcuno"/>
+            <underline method="pen" type="straight" language="IT" text="doue noi restiamo, doman da sera finiremo"/>
+            <underline method="pen" type="straight" language="IT" text="Garbato."/>
+            <underline method="pen" type="straight" language="IT" text="per moglie una fanciulletta fresca"/>
+            <underline method="pen" type="straight" language="IT" text="faccioti io male"/>
+            <underline method="pen" type="straight" language="IT" text="tutta accorta per"/>
+            <underline method="pen" type="straight" language="IT" text="guardate pure di non fare male a uoi"/>
+            <underline method="pen" type="straight" language="IT" text="la pagaua di doppioni"/>
+            <underline method="pen" type="straight" language="IT" text="semplice huomo"/>
+            <underline method="pen" type="straight" language="IT" text="undici mesi"/>
+            <underline method="pen" type="straight" language="IT" text="una astuta donna"/>
+            <underline method="pen" type="straight" language="IT" text="l'Asina porta uno anno"/>
+            <underline method="pen" type="straight" language="IT" text="donna undici mesi"/>
+            
+            <symbol name="Sun" place="head"/>
+            
+            <mark name="plus_sign" method="pen" place="intext" language="IT" text="Moscouito."/>	
+            <mark name="plus_sign" method="pen" place="intext" language="IT" text="calor naturale"/>
+            <mark name="dot" method="pen" place="intext"/>
+            <mark name="dot" method="pen" place="intext"/>
+            <mark name="plus_sign" method="pen" place="intext" language="IT" text="male"/>
+            <mark name="dot" method="pen" place="intext"/>	
+            <mark name="plus_sign" method="pen" place="intext" language="IT" text="Asina"/>
+			<mark name="plus_sign" method="pen" place="right_margin"/>
+            <mark name="plus_sign" method="pen" place="intext" language="IT" text="anno"/>
+            <mark name="apostrophe" method="pen" place="intext"/>
+            <mark name="equal_sign" method="pen" place="left_margin"/>
+			<mark name="bracket" method="pen" place="left_margin" />
+			<mark name="bracket" method="pen" place="left_margin" />
+			<mark name="bracket" method="pen" place="left_margin" />
+			<mark name="bracket" method="pen" place="left_margin" />
+			<mark name="quotation_mark" method="pen" place="right_margin" />
+            
+    </annotation>
+</transcription>

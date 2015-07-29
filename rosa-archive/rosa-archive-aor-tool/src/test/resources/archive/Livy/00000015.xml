@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/User1/Documents/GitHub/AORCLONEJG/XMLschema/Harveyschema17102014.xsd">
+    
+    <page filename="00000015.tif" pagination="a5" signature="recto" reader="Harvey"  />
+    <annotation>
+        <marginalia hand="Italian" anchor_text="assis"> <!--Check: Is this Harvey's hand?-->
+            <language ident="LA">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text> As.</marginalia_text>
+                </position>
+            </language>
+            <translation> Unit. </translation>
+        </marginalia>
+        
+        <underline method="pen" type="straight" language="LA" text="MEDICIS Maxim&egrave; fuerunt in usu"/>
+        <underline method="pen" type="straight" language="LA" text="Salcum metallis"/>
+        <underline method="pen" type="straight" language="LA" text="PONDERIBVS ROMANIS"/>
+        <underline method="pen" type="straight" language="LA" text="Libra"/>
+        <underline method="pen" type="straight" language="LA" text="&amp; pondo &amp; as dicitur, sive assis"/>
+        <underline method="pen" type="straight" language="LA" text="minora pondera"/>
+        <underline method="pen" type="straight" language="LA" text="maiora minimum"/>
+        <underline method="pen" type="straight" language="LA" text="Librae"/>
+        <underline method="pen" type="straight" language="LA" text="uncia"/>
+        <underline method="pen" type="straight" language="LA" text="sextans"/>
+        <underline method="pen" type="straight" language="LA" text="quadrans"/>
+        <underline method="pen" type="straight" language="LA" text="triens"/>
+        <underline method="pen" type="straight" language="LA" text="quincunx"/>
+        <underline method="pen" type="straight" language="LA" text="semis"/>
+        <underline method="pen" type="straight" language="LA" text="selibra"/>
+        <underline method="pen" type="straight" language="LA" text="septunx"/>
+        <underline method="pen" type="straight" language="LA" text="bes"/>
+        <underline method="pen" type="straight" language="LA" text="dodrans"/>
+        <underline method="pen" type="straight" language="LA" text="dextans"/>
+        <underline method="pen" type="straight" language="LA" text="Danarius"/>
+        <underline method="pen" type="straight" language="LA" text="victoriatos"/>
+        <underline method="pen" type="straight" language="LA" text="scriptula III"/>
+        <underline method="pen" type="straight" language="LA" text="Corn. Celsus"/>
+        
+        <mark name="horizontal_bar" method="pen" place="left_margin"/> <!-- Librae -->
+                    
+        
+        
+        
+    </annotation>
+</transcription>
