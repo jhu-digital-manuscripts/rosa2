@@ -12,9 +12,15 @@ import org.eclipse.jgit.api.CheckoutResult.Status;
 import org.eclipse.jgit.api.CloneCommand;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
+import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.diff.DiffEntry.ChangeType;
+import org.eclipse.jgit.lib.ObjectId;
+import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
+import org.eclipse.jgit.treewalk.CanonicalTreeParser;
+import rosa.archive.aor.GitCommit.Builder;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.aor.AnnotatedPage;
 
@@ -41,6 +47,8 @@ public class GitStatCollector {
     private static final OpenOption[] WRITE_APPEND_OPTION = {StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.APPEND};
     // List of files and directories to ignore
     private static final String[] IGNORE_NAMES = {"XMLschema", ".git", "README.md"};
+
+    private static final String COMMITS_HEADER = "commit_id,parent_id,date,author,email,message,added,modfied,deleted,renamed,copied";
 
     private final Set<String> ignore;
     private String output;
@@ -98,61 +106,124 @@ public class GitStatCollector {
                 System.out.println("\t\tDONE\n");
                 Ref head = aorGit.getRepository().getRef("refs/heads/master");
 
-                // a RevWalk allows to walk over commits based on some filtering that is defined
-                try (RevWalk walk = new RevWalk(aorGit.getRepository())) {
-                    RevCommit commit = walk.parseCommit(head.getObjectId());
-                    System.out.println("Start-Commit: " + commit + "\n");
-
-                    // for each commit
-                    //   Generate the books.csv, appended to previous
-                    walk.markStart(commit); // Start at most recent commit, working backward in time
-                    int count = 0;
-                    for (RevCommit rev : walk) {
-                        count++;
-                        GitCommit gcom = new GitCommit(
-                                rev.getId().getName(),
-                                rev.getAuthorIdent().getWhen(),
-                                rev.getAuthorIdent().getTimeZone(),
-                                rev.getAuthorIdent().getName(),
-                                rev.getAuthorIdent().getEmailAddress(),
-                                rev.getFullMessage()
-                        );
-                        System.out.print("Processing commit [" + count + "]: " + gcom.id + " | "
-                                + gcom.getISO8601Date() + " | " + gcom.author + " | ");
-
-                        CheckoutCommand checkout = aorGit.checkout().setName(gcom.id);
-
-                        checkout.call();        // Perform the checkout
-                        CheckoutResult result = checkout.getResult(); // Check status, modified list, etc
-
-                        if (result.getStatus() == Status.OK) {
-                            long totalMem = Runtime.getRuntime().totalMemory();
-                            long maxMem = Runtime.getRuntime().maxMemory();
-                            System.out.println("OK [" + result.getModifiedList().size() + "] modifications. | Memory usage: "
-                                    + totalMem + " / " + maxMem);
-                            BookStats stats = collectBookStats(localRepo);
-                            if (stats != null) {
-                                writeGitStats(gcom, stats, current);
-                            }
-                        } else {
-                            System.err.println("CHECKOUT FAILED [" + result.getStatus() + "]");
-                        }
-                    }
-                    System.out.println("Found commits: " + count);
-                    walk.dispose();
-                }
+                walkCommitTree(aorGit, head, localRepo, current);
 
             } catch (GitAPIException e) {
                 System.err.println("Failed to clone repository.");
             }
         } catch (IOException e) {
             System.err.println("Failed to read files. " + e.getMessage());
+            e.printStackTrace();
         } finally {
             if (localRepo != null) {
                 System.out.println("\nDeleting local repository. [" + localRepo.toString() + "]");
                 FileUtils.deleteQuietly(localRepo.toFile());
             }
         }
+    }
+
+    private void walkCommitTree(Git aorGit, Ref head, Path localRepo, Path outputPath)
+            throws GitAPIException, IOException {
+        // a RevWalk allows to walk over commits based on some filtering that is defined
+        try (RevWalk walk = new RevWalk(aorGit.getRepository())) {
+            RevCommit commit = walk.parseCommit(head.getObjectId());
+            System.out.println("Start-Commit: " + commit + "\n");
+
+            // for each commit
+            //   Generate the books.csv, appended to previous
+            walk.markStart(commit); // Start at most recent commit, working backward in time
+            int count = 0;
+            for (RevCommit rev : walk) {
+                count++;
+                CheckoutCommand checkout = aorGit.checkout().setName(rev.getId().getName());
+                checkout.call();
+
+                CheckoutResult result = checkout.getResult(); // Check status, modified list, etc
+
+                // Hack to jam all parent commit IDs into a single String
+                // TODO more fully represent ancestor commits - (more than 1 parent for merges)
+//                StringBuilder parents = new StringBuilder();
+//                for (int i = 0; i < rev.getParentCount(); i++) {
+//                    if (i != 0) {
+//                        parents.append(',');
+//                    }
+//                    parents.append(rev.getParent(i));
+//                }
+
+                GitCommit gcom = Builder.newBuilder()
+                        .id(rev.getId().getName())
+                        // NOTE: Could contain more than 1 parent commit, this will only display the first parent.
+                        .parentCommit(rev.getParentCount() > 0 ? rev.getParent(0).getId().getName() : "")
+                        .date(rev.getAuthorIdent().getWhen())
+                        .timeZone(rev.getAuthorIdent().getTimeZone())
+                        .author(rev.getAuthorIdent().getName())
+                        .email(rev.getAuthorIdent().getEmailAddress())
+                        .message(rev.getFullMessage())
+                        .diffs(diffs(rev, aorGit))
+                        .build();
+
+                System.out.print("Processing commit [" + count + "]: " + gcom.id + " | "
+                        + gcom.getISO8601Date() + " | " + gcom.author + " | " + gcom.getFilesCount(ChangeType.ADD) + " | ");
+
+                if (result.getStatus() == Status.OK) {
+                    long totalMem = Runtime.getRuntime().totalMemory();
+                    long maxMem = Runtime.getRuntime().maxMemory();
+                    System.out.println("OK [" + result.getModifiedList().size() + "] modifications. | Memory usage: "
+                            + totalMem + " / " + maxMem);
+                    BookStats stats = collectBookStats(localRepo);
+                    if (stats != null) {
+                        writeGitStats(gcom, stats, outputPath);
+                    }
+                } else {
+                    System.err.println("CHECKOUT FAILED [" + result.getStatus() + "]");
+                }
+            }
+            System.out.println("Found commits: " + count);
+            walk.dispose();
+        }
+    }
+
+    /**
+     * Get a list of all changes made in this commit. This is done by listing all
+     * differences between the parent commits and the current commit. Each difference
+     * is recorded in a {@link DiffEntry} object, which marks each file changed with
+     * the type of change made.
+     *
+     * @param currentRev current commit
+     * @param aorGit Git object
+     * @return list of all diffs
+     * @throws GitAPIException .
+     * @throws IOException .
+     */
+    private List<DiffEntry> diffs(RevCommit currentRev, Git aorGit) throws GitAPIException, IOException {
+        List<DiffEntry> allDiffs = new ArrayList<>();
+        ObjectId currentId = aorGit.getRepository().resolve(currentRev.getId().getName() + "^{tree}");
+
+        ObjectReader reader = aorGit.getRepository().newObjectReader();
+        CanonicalTreeParser currentTreeParser = new CanonicalTreeParser();
+        for (int i = 0; i < currentRev.getParentCount(); i++) {
+            ObjectId parentId = aorGit.getRepository().resolve(currentRev.getParent(i).getId().getName() + "^{tree}");
+
+            try {
+                CanonicalTreeParser parentTreeParser = new CanonicalTreeParser();
+
+                currentTreeParser.reset(reader, currentId);
+                parentTreeParser.reset(reader, parentId);
+
+                List<DiffEntry> diffs = aorGit.diff()
+                        .setNewTree(currentTreeParser)
+                        .setOldTree(parentTreeParser)
+                        .call();
+
+                if (diffs != null) {
+                    allDiffs.addAll(diffs);
+                }
+            } catch (GitAPIException | IOException e) {
+                System.err.println("Failed to calculate diffs. [" + parentId.name() + " -> " + currentId.name() + "]");
+            }
+        }
+
+        return allDiffs;
     }
 
     /**
@@ -256,7 +327,7 @@ public class GitStatCollector {
 
     private void writeSingleCommit(BufferedWriter out, GitCommit commit, boolean writeHeader) throws IOException {
         if (writeHeader) {
-            out.write("commit_id,date,author,email,message");
+            out.write(COMMITS_HEADER);
             out.newLine();
         }
 
@@ -265,6 +336,9 @@ public class GitStatCollector {
 
     private void writeCommitRow(BufferedWriter out, GitCommit commit) throws IOException {
         out.write(commit.id);
+        out.write(',');
+
+        out.write(commit.parentCommit);
         out.write(',');
 
         out.write(commit.getISO8601Date());
@@ -283,6 +357,22 @@ public class GitStatCollector {
         } else {
             out.write(CSV.escape(commit.message));
         }
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesCount(ChangeType.ADD)));
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesCount(ChangeType.MODIFY)));
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesCount(ChangeType.DELETE)));
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesCount(ChangeType.RENAME)));
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesCount(ChangeType.COPY)));
+
         out.newLine();
     }
 
