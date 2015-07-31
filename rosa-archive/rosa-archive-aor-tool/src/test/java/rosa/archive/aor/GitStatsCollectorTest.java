@@ -20,8 +20,8 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 public class GitStatsCollectorTest {
-    private static final int BOOKS_COLUMNS = 22;
-    private static final int COMMITS_COLUMNS = 11;
+    private static final int BOOKS_COLUMNS = 23;
+    private static final int COMMITS_COLUMNS = 12;
 
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
@@ -210,6 +210,10 @@ commit_id,book,total,total_words,marginalia,marginalia_words,underlines,underlin
                 17, stats.statsMap.get("Castiglione").totalAnnotations());
         assertEquals("Unexpected number of annotations found for Livy.",
                 1587, stats.statsMap.get("Livy").totalAnnotations());
+
+        assertEquals("Unexpected number of unreadable pages.", 33, stats.getNumberOfUnreadablePages("Domenichi"));
+        assertEquals("Unexpected number of unreadable pages.", 9, stats.getNumberOfUnreadablePages("Livy"));
+        assertEquals("Unexpected number of unreadable pages.", 1, stats.getNumberOfUnreadablePages("Castiglione"));
     }
 
 }

@@ -305,18 +305,25 @@ public class GitStatCollector {
             String bookId = bookPath.getFileName().toString();
 
             for (Path pagePath : ds) {
-                AnnotatedPage annotatedPage = AorStatsCollector.readAorPage(pagePath.toString());
-                if (annotatedPage == null) {
-                    continue;
-                }
-
                 String pageId = getPageId(pagePath.getFileName().toString());
-                Stats pageStats = AorTranscriptionAdapter.adaptAnnotatedPage(annotatedPage, pageId);
 
-                // TODO Plug in here to generate individual page stats
-                // TODO vocab
+                try {
+                    AnnotatedPage annotatedPage = AorStatsCollector.readAorPage(pagePath.toString());
+                    if (annotatedPage == null) {
+                        targetBookStats.addUnreadablePage(bookId, pageId);
+                        continue;
+                    }
 
-                targetBookStats.addPageStats(bookId, pageStats);
+                    Stats pageStats = AorTranscriptionAdapter.adaptAnnotatedPage(annotatedPage, pageId);
+
+                    // TODO Plug in here to generate individual page stats
+                    // TODO vocab
+
+                    targetBookStats.addPageStats(bookId, pageStats);
+                } catch (IOException e) {
+                    // Failed to read or parse page
+                    targetBookStats.addUnreadablePage(bookId, pageId);
+                }
             }
 
         } catch (Exception e) {

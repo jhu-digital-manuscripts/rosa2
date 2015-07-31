@@ -19,7 +19,7 @@ public class GitStatsWriter {
     private static final Charset CHARSET = Charset.forName("UTF-8");
     // Options for opening a file to write, create if it does not already exist, append to existing file.
     private static final OpenOption[] WRITE_APPEND_OPTION = {StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.APPEND};
-    private static final String COMMITS_HEADER = "commit_id,parent_id,date,author,email,message,added,modified,deleted,renamed,copied";
+    private static final String COMMITS_HEADER = "commit_id,parent_id,date,author,email,message,added,modified,deleted,renamed,copied,unreadable";
 
     private final String OUTPUT_BOOKS;
     private final String OUTPUT_COMMITS;
@@ -54,7 +54,7 @@ public class GitStatsWriter {
      */
     public void writeGitStats(GitCommit commit, BookStats stats) {
         writeOnlyStats(commit, stats);
-        writeOnlyCommit(commit);
+        writeOnlyCommit(commit, stats.getNumberOfUnreadablePages());
     }
 
     /**
@@ -79,27 +79,28 @@ public class GitStatsWriter {
      *
      * @param commit git commit info
      */
-    public void writeOnlyCommit(GitCommit commit) {
+    public void writeOnlyCommit(GitCommit commit, int unreadablePages) {
         Path commitsCsvPath = output.resolve(OUTPUT_COMMITS);
 
         boolean isFirst = !Files.exists(commitsCsvPath);
         try (BufferedWriter out = Files.newBufferedWriter(commitsCsvPath, CHARSET, WRITE_APPEND_OPTION)) {
-            writeSingleCommit(out, commit, isFirst);
+            writeSingleCommit(out, commit, unreadablePages, isFirst);
         } catch (IOException e) {
             System.err.println("Failed to write to commits.csv on commit [" + commit.id + "]");
         }
     }
 
-    private void writeSingleCommit(BufferedWriter out, GitCommit commit, boolean writeHeader) throws IOException {
+    private void writeSingleCommit(BufferedWriter out, GitCommit commit, int unreadablePages,
+                                   boolean writeHeader) throws IOException {
         if (writeHeader) {
             out.write(COMMITS_HEADER);
             out.newLine();
         }
 
-        writeCommitRow(out, commit);
+        writeCommitRow(out, commit, unreadablePages);
     }
 
-    private void writeCommitRow(BufferedWriter out, GitCommit commit) throws IOException {
+    private void writeCommitRow(BufferedWriter out, GitCommit commit, int unreadable) throws IOException {
         out.write(commit.id);
         out.write(',');
 
@@ -151,7 +152,7 @@ public class GitStatsWriter {
         Collections.sort(books);
 
         for (String book : books) {
-            write_row(out, stats.statsMap.get(book), commit);
+            write_row(out, stats.statsMap.get(book), commit, stats.getNumberOfUnreadablePages(book));
         }
     }
 
@@ -159,11 +160,11 @@ public class GitStatsWriter {
         out.write(first_cell);
         out.write(",total,total_words,marginalia,marginalia_words,underlines,underline_words," +
                 "marks,mark_words,symbols,symbol_words,drawings,numerals,books,people,locations" +
-                ",added,modified,deleted,renamed,copied");
+                ",added,modified,deleted,renamed,copied,unreadable");
         out.newLine();
     }
 
-    private void write_row(BufferedWriter out, Stats s, GitCommit commit) throws IOException {
+    private void write_row(BufferedWriter out, Stats s, GitCommit commit, int unreadablePages) throws IOException {
         out.write(commit.id);
         out.write(',');
 
@@ -228,6 +229,9 @@ public class GitStatsWriter {
         out.write(',');
 
         out.write(String.valueOf(commit.getFilesChangedForBook(s.id, ChangeType.COPY)));
+        out.write(',');
+
+        out.write(String.valueOf(unreadablePages));
         out.newLine();
     }
 
