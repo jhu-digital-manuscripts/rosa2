@@ -75,7 +75,7 @@ commit_id,book,total,total_words,marginalia,marginalia_words,underlines,underlin
             assertEquals("Unexpected ID found.", "734231ce89165661a4ad4c103a0f3b33ef0b61dc", row[0]);
             assertEquals("Unexpected book name found.", "Castiglione", row[1]);
             assertEquals("Unexpected number of annotations found.", "7", row[2]);
-            assertEquals("Unexpected number of annotated words found.", "39", row[3]);
+            assertEquals("Unexpected number of annotated words found.", "26", row[3]);
 
         }
 

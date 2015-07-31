@@ -27,7 +27,7 @@ public class AoRVocabUtil {
 
     // Turn text into words and punctuation
     public static String[] parse_text(String text) {
-        text = text.trim().replaceAll("\\p{Punct}", " $0 ");
+        text = text.trim().replaceAll("\\p{Punct}", " ");
 
         return text.trim().split("\\s+");
     }
