@@ -138,7 +138,9 @@ public class GitStatsWriter {
         out.write(',');
 
         out.write(String.valueOf(commit.getFilesCount(ChangeType.COPY)));
+        out.write(',');
 
+        out.write(String.valueOf(unreadable));
         out.newLine();
     }
 
