@@ -104,16 +104,16 @@ public class GitStatsWriter {
         out.write(commit.id);
         out.write(',');
 
-        out.write(commit.parentCommit);
+        out.write(CSV.escape(commit.parentCommits));
         out.write(',');
 
-        out.write(commit.getISO8601Date());
+        out.write(CSV.escape(commit.getISO8601Date()));
         out.write(',');
 
-        out.write(commit.author);
+        out.write(CSV.escape(commit.author));
         out.write(',');
 
-        out.write(commit.email);
+        out.write(CSV.escape(commit.email));
         out.write(',');
 
         // Strip trailing newLines if applicable

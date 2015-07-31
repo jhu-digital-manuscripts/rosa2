@@ -80,7 +80,7 @@ public class GitCommit implements Comparable<GitCommit> {
     private final Calendar calendar;
 
     final String id;
-    final String parentCommit;
+    final String parentCommits;
     final Date date;
     final TimeZone timeZone;
     final String author;
@@ -88,10 +88,10 @@ public class GitCommit implements Comparable<GitCommit> {
     final String message;
     final List<DiffEntry> diffs;
 
-    public GitCommit(String id, String parentCommit, Date date, TimeZone timeZone, String author,
+    public GitCommit(String id, String parentCommits, Date date, TimeZone timeZone, String author,
                      String email, String message, List<DiffEntry> diffs) {
         this.id = id;
-        this.parentCommit = parentCommit;
+        this.parentCommits = parentCommits;
         this.date = date;
         this.timeZone = timeZone;
         this.author = author;
@@ -156,8 +156,8 @@ public class GitCommit implements Comparable<GitCommit> {
             return this.calendar.compareTo(other.calendar);
         } else if (this.date.compareTo(other.date) != 0) {
             return this.date.compareTo(other.date);
-        } else if (this.parentCommit.compareTo(other.parentCommit) != 0) {
-            return this.parentCommit.compareTo(other.parentCommit);
+        } else if (this.parentCommits.compareTo(other.parentCommits) != 0) {
+            return this.parentCommits.compareTo(other.parentCommits);
         } else if (this.id.compareTo(other.id) != 0) {
             return this.id.compareTo(other.id);
         } else if (this.author.compareTo(other.author) != 0) {
@@ -167,17 +167,6 @@ public class GitCommit implements Comparable<GitCommit> {
         } else {
             return this.message.compareTo(other.message);
         }
-    }
-
-    private int compareLists(List<String> list1, List<String> list2) {
-        int last = list1.size() < list2.size() ? list1.size() : list2.size();
-        for (int i = 0; i < last; i++) {
-            if (list1.get(i).compareTo(list2.get(i)) != 0) {
-                return list1.get(i).compareTo(list2.get(i));
-            }
-        }
-
-        return list1.size() - list2.size();
     }
 
     @Override
@@ -191,7 +180,7 @@ public class GitCommit implements Comparable<GitCommit> {
             return false;
         if (calendar != null ? !calendar.equals(commit.calendar) : commit.calendar != null) return false;
         if (id != null ? !id.equals(commit.id) : commit.id != null) return false;
-        if (parentCommit != null ? !parentCommit.equals(commit.parentCommit) : commit.parentCommit != null)
+        if (parentCommits != null ? !parentCommits.equals(commit.parentCommits) : commit.parentCommits != null)
             return false;
         if (date != null ? !date.equals(commit.date) : commit.date != null) return false;
         if (timeZone != null ? !timeZone.equals(commit.timeZone) : commit.timeZone != null) return false;
@@ -207,7 +196,7 @@ public class GitCommit implements Comparable<GitCommit> {
         int result = ISO_8601_FORMAT != null ? ISO_8601_FORMAT.hashCode() : 0;
         result = 31 * result + (calendar != null ? calendar.hashCode() : 0);
         result = 31 * result + (id != null ? id.hashCode() : 0);
-        result = 31 * result + (parentCommit != null ? parentCommit.hashCode() : 0);
+        result = 31 * result + (parentCommits != null ? parentCommits.hashCode() : 0);
         result = 31 * result + (date != null ? date.hashCode() : 0);
         result = 31 * result + (timeZone != null ? timeZone.hashCode() : 0);
         result = 31 * result + (author != null ? author.hashCode() : 0);
@@ -221,7 +210,7 @@ public class GitCommit implements Comparable<GitCommit> {
     public String toString() {
         return "GitCommit{" +
                 ", id='" + id + '\'' +
-                ", parentCommit='" + parentCommit + '\'' +
+                ", parentCommits='" + parentCommits + '\'' +
                 ", date=" + date +
                 ", timeZone=" + timeZone +
                 ", author='" + author + '\'' +

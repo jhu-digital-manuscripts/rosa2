@@ -185,11 +185,18 @@ public class GitStatCollector {
                 CheckoutResult result = checkout.getResult(); // Check status, modified list, etc
 
                 // TODO more fully represent ancestor commits - (more than 1 parent for merges)
+                StringBuilder parents = new StringBuilder("");
+                for (int i = 0; i < rev.getParentCount(); i++) {
+                    if (i != 0) {
+                        parents.append(',');
+                    }
+                    parents.append(rev.getParent(i).getId().getName());
+                }
 
                 GitCommit gcom = Builder.newBuilder()
                         .id(rev.getId().getName())
                         // NOTE: Could contain more than 1 parent commit, this will only display the first parent.
-                        .parentCommit(rev.getParentCount() > 0 ? rev.getParent(0).getId().getName() : "")
+                        .parentCommit(parents.toString())
                         .date(rev.getAuthorIdent().getWhen())
                         .timeZone(rev.getAuthorIdent().getTimeZone())
                         .author(rev.getAuthorIdent().getName())
