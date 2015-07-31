@@ -11,6 +11,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.PrintStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
@@ -19,6 +20,10 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 public class GitStatsCollectorTest {
+    private static final int BOOKS_COLUMNS = 17;
+    private static final int COMMITS_COLUMNS = 11;
+
+    private ByteArrayOutputStream out;
 
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
@@ -28,12 +33,49 @@ public class GitStatsCollectorTest {
 
     @Before
     public void setup() throws Exception {
+        out = new ByteArrayOutputStream();
+
         collector = new GitStatCollector();
+        collector.setReport(new PrintStream(out));
+        collector.setError(new PrintStream(out));
 
         Path temp = tempFolder.newFolder().toPath();
         ResourceUtil.copyResource(getClass(), "/archive", temp);
 
         basePath = temp.resolve("archive");
+    }
+
+    /**
+     * Gather statistics for only the most recent commit.
+     *
+     * books.csv should have 4 rows (3 books + header)
+     * commits.csv should have 2 rows (1 commit + header)
+     *
+     * @throws Exception
+     */
+    @Test
+    public void collectGitStatsMostRecentTest() throws Exception {
+        Path output = basePath.getParent();
+
+        collector.setOutputDirectory(output.toString());
+        collector.collectGitStats("https://github.com/jabrah/test-transcriptions.git", true);
+
+        assertTrue("books.csv not found.", Files.exists(output.resolve("books.csv")));
+        assertTrue("commits.csv not found.", Files.exists(output.resolve("commits.csv")));
+
+        try (InputStreamReader reader = new InputStreamReader(Files.newInputStream(output.resolve("books.csv")))) {
+            String[][] table = CSV.parseTable(reader);
+
+            assertEquals("Unexpected number of rows.", 4, table.length);
+            assertEquals("Unexpected number of columns.", BOOKS_COLUMNS, table[0].length);
+        }
+
+        try (InputStreamReader reader = new InputStreamReader(Files.newInputStream(output.resolve("commits.csv")))) {
+            String[][] table = CSV.parseTable(reader);
+
+            assertEquals("Unexpected number of rows.", 2, table.length);
+            assertEquals("Unexpected number of columns.", COMMITS_COLUMNS, table[0].length);
+        }
     }
 
     @Test
@@ -42,7 +84,7 @@ public class GitStatsCollectorTest {
 
         // Do stats collection on test repository
         collector.setOutputDirectory(output.toString());
-        collector.collectGitStats("https://github.com/jabrah/test-transcriptions.git");
+        collector.collectGitStats("https://github.com/jabrah/test-transcriptions.git", false);
 
         // Check output files
         assertTrue("books.csv not found.", Files.exists(output.resolve("books.csv")));
@@ -78,7 +120,7 @@ public class GitStatsCollectorTest {
 //print(table);
             assertNotNull(table);
             assertEquals("Unexpected number of rows.", 8, table.length);
-            assertEquals("Unexpected number of columns", 11, table[0].length);
+            assertEquals("Unexpected number of columns", COMMITS_COLUMNS, table[0].length);
         }
     }
 
@@ -90,7 +132,7 @@ public class GitStatsCollectorTest {
 
             assertNotNull(table);
             assertEquals("Unexpected number of rows.", 15, table.length);
-            assertEquals("Unexpected number of columns", 17, table[0].length);
+            assertEquals("Unexpected number of columns", BOOKS_COLUMNS, table[0].length);
         }
     }
 

@@ -24,11 +24,11 @@ import rosa.archive.aor.GitCommit.Builder;
 import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
+import java.io.PrintStream;
 import java.nio.file.DirectoryStream;
 import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -43,11 +43,16 @@ public class GitStatCollector {
     private String output;
 
     private GitStatsWriter writer;
+    private PrintStream report;
+    private PrintStream error;
 
     private final Filter<Path> BOOK_FILES_FILTER;
     private final Filter<Path> COLLECTION_BOOKS_FILTER;
 
     public GitStatCollector() {
+        this.report = System.out;
+        this.error = System.err;
+
         this.ignore = new HashSet<>(Arrays.asList(IGNORE_NAMES));
         output = ".";
 
@@ -68,6 +73,26 @@ public class GitStatCollector {
     }
 
     /**
+     * Set the stream to report messages. If no PrintStream
+     * is set through this method, it will default to System.out
+     * 
+     * @param report PrintStream
+     */
+    public void setReport(PrintStream report) {
+        this.report = report;
+    }
+
+    /**
+     * Set the stream to report errors. If no PrintStream is set 
+     * through this method, it will default to System.err
+     * 
+     * @param error PrintStream
+     */
+    public void setError(PrintStream error) {
+        this.error = error;
+    }
+
+    /**
      * Set the directory for output files. Used mostly for testing.
      *
      * @param outputDirectory .
@@ -83,15 +108,15 @@ public class GitStatCollector {
         CommandLineParser cliParser = new BasicParser();
 
         try {
-            System.out.println("Gathering git stats.");
+            report.println("Gathering git stats.");
             CommandLine cmd = cliParser.parse(options, args);
 
-            System.out.println(cmd.getArgList().toString());
+            report.println(cmd.getArgList().toString());
             if (cmd.getArgs().length == 2) {
-                collectGitStats(cmd.getArgs()[1]);
+                collectGitStats(cmd.getArgs()[1], false);
             }
         } catch (ParseException e) {
-            System.err.println("Failed to parser command. " + e.getMessage());
+            error.println("Failed to parser command. " + e.getMessage());
         }
     }
 
@@ -99,8 +124,11 @@ public class GitStatCollector {
      * Collect stats for a collection on Github across all commits.
      *
      * @param repositoryUrl Github URL of the repository
+     * @param onlyMostRecent collect stats for only most recent commit? Setting this to
+     *                       FALSE will collect stats for all commits. Setting this to
+     *                       TRUE will collect stats for only the most recent commit.
      */
-    protected void collectGitStats(String repositoryUrl) {
+    protected void collectGitStats(String repositoryUrl, boolean onlyMostRecent) {
         Path localRepo = null;
         writer = new GitStatsWriter(output);
 
@@ -113,37 +141,37 @@ public class GitStatCollector {
 
             // Get list of all commits
             //   Parse list to generate a 'commits.csv'
-            System.out.print("Cloning git repo [" + repositoryUrl + "]");
+            report.print("Cloning git repo [" + repositoryUrl + "]");
 
             CloneCommand cloner = Git.cloneRepository()
                     .setURI(repositoryUrl)
                     .setDirectory(localRepo.toFile());
             try (Git aorGit = cloner.call()) {
-                System.out.println("\t\tDONE\n");
+                report.println("\t\tDONE\n");
                 Ref head = aorGit.getRepository().getRef("refs/heads/master");
 
-                walkCommitTree(aorGit, head, localRepo);
+                walkCommitTree(aorGit, head, localRepo, onlyMostRecent);
 
             } catch (GitAPIException e) {
-                System.err.println("Failed to clone repository.");
+                error.println("Failed to clone repository.");
             }
         } catch (IOException e) {
-            System.err.println("Failed to read files. " + e.getMessage());
+            error.println("Failed to read files. " + e.getMessage());
             e.printStackTrace();
         } finally {
             if (localRepo != null) {
-                System.out.println("\nDeleting local repository. [" + localRepo.toString() + "]");
+                report.println("\nDeleting local repository. [" + localRepo.toString() + "]");
                 FileUtils.deleteQuietly(localRepo.toFile());
             }
         }
     }
 
-    private void walkCommitTree(Git aorGit, Ref head, Path localRepo)
+    private void walkCommitTree(Git aorGit, Ref head, Path localRepo, final boolean onlyMostRecent)
             throws GitAPIException, IOException {
         // a RevWalk allows to walk over commits based on some filtering that is defined
         try (RevWalk walk = new RevWalk(aorGit.getRepository())) {
             RevCommit commit = walk.parseCommit(head.getObjectId());
-            System.out.println("Start-Commit: " + commit + "\n");
+            report.println("Start-Commit: " + commit + "\n");
 
             // for each commit
             //   Generate the books.csv, appended to previous
@@ -156,15 +184,7 @@ public class GitStatCollector {
 
                 CheckoutResult result = checkout.getResult(); // Check status, modified list, etc
 
-                // Hack to jam all parent commit IDs into a single String
                 // TODO more fully represent ancestor commits - (more than 1 parent for merges)
-//                StringBuilder parents = new StringBuilder();
-//                for (int i = 0; i < rev.getParentCount(); i++) {
-//                    if (i != 0) {
-//                        parents.append(',');
-//                    }
-//                    parents.append(rev.getParent(i));
-//                }
 
                 GitCommit gcom = Builder.newBuilder()
                         .id(rev.getId().getName())
@@ -178,7 +198,7 @@ public class GitStatCollector {
                         .diffs(diffs(rev, aorGit))
                         .build();
 
-                System.out.print("Processing commit [" + count + "]: " + gcom.id + " | "
+                report.print("Processing commit [" + count + "]: " + gcom.id + " | "
                         + gcom.getISO8601Date() + " | " + gcom.author + " | "
                         + gcom.getFilesCount(ChangeType.ADD) + " additions | ");
 
@@ -186,17 +206,22 @@ public class GitStatCollector {
                     long totalMem = Runtime.getRuntime().totalMemory();
                     long maxMem = Runtime.getRuntime().maxMemory();
 
-                    System.out.println("CHECKOUT OK | Memory usage: " + totalMem + " / " + maxMem);
+                    report.println("CHECKOUT OK | Memory usage: " + totalMem + " / " + maxMem);
 
                     BookStats stats = collectBookStats(localRepo);
                     if (stats != null) {
                         writer.writeGitStats(gcom, stats);
                     }
                 } else {
-                    System.err.println("CHECKOUT FAILED [" + result.getStatus() + "]");
+                    error.println("CHECKOUT FAILED [" + result.getStatus() + "]");
+                }
+
+                // If this flag is TRUE, bail out after first iteration
+                if (onlyMostRecent) {
+                    break;
                 }
             }
-            System.out.println("Found commits: " + count);
+            report.println("Found commits: " + count);
             walk.dispose();
         }
     }
@@ -238,8 +263,8 @@ public class GitStatCollector {
                     allDiffs.addAll(diffs);
                 }
             } catch (GitAPIException | IOException e) {
-                System.err.println("  - Failed to calculate diffs. [" + parentId.name()
-                        + " -> " + currentId.name() + "]");
+                error.println("  - Failed to calculate diffs. [" + parentId.name() + " -> "
+                        + currentId.name() + "]");
             }
         }
 
@@ -264,7 +289,7 @@ public class GitStatCollector {
 
             return bookStats;
         } catch (Exception e) {
-            System.err.println("Could not read books in the collection.");
+            error.println("Could not read books in the collection.");
             return null;
         }
     }
@@ -295,7 +320,7 @@ public class GitStatCollector {
             }
 
         } catch (Exception e) {
-            System.err.println("Failed to read stats for book. [" + bookPath + "]");
+            error.println("Failed to read stats for book. [" + bookPath + "]");
         }
     }
 
