@@ -126,6 +126,29 @@ public class GitCommit implements Comparable<GitCommit> {
         return count;
     }
 
+    public int getFilesChangedForBook(String book, ChangeType type) {
+        int count = 0;
+
+        for (DiffEntry diff : diffs) {
+            if (diff.getChangeType() != type) {
+                continue;
+            }
+
+            String file;
+            if (type == ChangeType.DELETE) {
+                file = diff.getOldPath();
+            } else {
+                file = diff.getNewPath();
+            }
+
+            if (file.startsWith(book)) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
     @Override
     public int compareTo(GitCommit other) {
         // Order by date, for those commits made on the same day, sort by ID

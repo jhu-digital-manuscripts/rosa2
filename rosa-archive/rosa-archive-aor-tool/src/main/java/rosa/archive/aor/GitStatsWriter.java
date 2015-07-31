@@ -19,7 +19,7 @@ public class GitStatsWriter {
     private static final Charset CHARSET = Charset.forName("UTF-8");
     // Options for opening a file to write, create if it does not already exist, append to existing file.
     private static final OpenOption[] WRITE_APPEND_OPTION = {StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.APPEND};
-    private static final String COMMITS_HEADER = "commit_id,parent_id,date,author,email,message,added,modfied,deleted,renamed,copied";
+    private static final String COMMITS_HEADER = "commit_id,parent_id,date,author,email,message,added,modified,deleted,renamed,copied";
 
     private final String OUTPUT_BOOKS;
     private final String OUTPUT_COMMITS;
@@ -68,7 +68,7 @@ public class GitStatsWriter {
 
         boolean isFirst = !Files.exists(booksCsvPath);
         try (BufferedWriter out = Files.newBufferedWriter(booksCsvPath, CHARSET, WRITE_APPEND_OPTION)) {
-            writeSingleGitStat(out, commit.id, stats, isFirst);
+            writeSingleGitStat(out, commit, stats, isFirst);
         } catch (IOException e) {
             System.err.println("Failed to write to books.csv on commit [" + commit.id + "]");
         }
@@ -141,7 +141,7 @@ public class GitStatsWriter {
         out.newLine();
     }
 
-    public void writeSingleGitStat(BufferedWriter out, String commitId, BookStats stats,
+    public void writeSingleGitStat(BufferedWriter out, GitCommit commit, BookStats stats,
                                     boolean writeHeader) throws IOException {
         if (writeHeader) {
             write_header_row(out, "commit_id,book");
@@ -151,19 +151,20 @@ public class GitStatsWriter {
         Collections.sort(books);
 
         for (String book : books) {
-            write_row(out, stats.statsMap.get(book), commitId);
+            write_row(out, stats.statsMap.get(book), commit);
         }
     }
 
     private void write_header_row(BufferedWriter out, String first_cell) throws IOException {
         out.write(first_cell);
         out.write(",total,total_words,marginalia,marginalia_words,underlines,underline_words," +
-                "marks,mark_words,symbols,symbol_words,drawings,numerals,books,people,locations");
+                "marks,mark_words,symbols,symbol_words,drawings,numerals,books,people,locations" +
+                ",added,modified,deleted,renamed,copied");
         out.newLine();
     }
 
-    private void write_row(BufferedWriter out, Stats s, String commitId) throws IOException {
-        out.write(commitId);
+    private void write_row(BufferedWriter out, Stats s, GitCommit commit) throws IOException {
+        out.write(commit.id);
         out.write(',');
 
         out.write(s.id);
@@ -212,6 +213,21 @@ public class GitStatsWriter {
         out.write(',');
 
         out.write(String.valueOf(s.locations));
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesChangedForBook(s.id, ChangeType.ADD)));
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesChangedForBook(s.id, ChangeType.MODIFY)));
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesChangedForBook(s.id, ChangeType.DELETE)));
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesChangedForBook(s.id, ChangeType.RENAME)));
+        out.write(',');
+
+        out.write(String.valueOf(commit.getFilesChangedForBook(s.id, ChangeType.COPY)));
         out.newLine();
     }
 

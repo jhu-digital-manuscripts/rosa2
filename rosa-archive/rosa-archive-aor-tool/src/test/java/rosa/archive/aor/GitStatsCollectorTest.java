@@ -20,10 +20,8 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 public class GitStatsCollectorTest {
-    private static final int BOOKS_COLUMNS = 17;
+    private static final int BOOKS_COLUMNS = 22;
     private static final int COMMITS_COLUMNS = 11;
-
-    private ByteArrayOutputStream out;
 
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
@@ -33,7 +31,7 @@ public class GitStatsCollectorTest {
 
     @Before
     public void setup() throws Exception {
-        out = new ByteArrayOutputStream();
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
 
         collector = new GitStatCollector();
         collector.setReport(new PrintStream(out));
@@ -68,6 +66,17 @@ public class GitStatsCollectorTest {
 
             assertEquals("Unexpected number of rows.", 4, table.length);
             assertEquals("Unexpected number of columns.", BOOKS_COLUMNS, table[0].length);
+
+            String[] row = table[1];
+            /*
+commit_id,book,total,total_words,marginalia,marginalia_words,underlines,underline_words,marks,mark_words,symbols,symbol_words,drawings,numerals,books,people,locations,added,modified,deleted,renamed,copied
+,,7,39,7,39,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0
+             */
+            assertEquals("Unexpected ID found.", "734231ce89165661a4ad4c103a0f3b33ef0b61dc", row[0]);
+            assertEquals("Unexpected book name found.", "Castiglione", row[1]);
+            assertEquals("Unexpected number of annotations found.", "7", row[2]);
+            assertEquals("Unexpected number of annotated words found.", "39", row[3]);
+
         }
 
         try (InputStreamReader reader = new InputStreamReader(Files.newInputStream(output.resolve("commits.csv")))) {
@@ -75,6 +84,20 @@ public class GitStatsCollectorTest {
 
             assertEquals("Unexpected number of rows.", 2, table.length);
             assertEquals("Unexpected number of columns.", COMMITS_COLUMNS, table[0].length);
+
+            String[] row = table[1];
+
+            assertEquals("Unexpected ID found.", "734231ce89165661a4ad4c103a0f3b33ef0b61dc", row[0]);
+            assertEquals("Unexpected parent ID found.", "e3cfd1f281de07530ad26c7fdb0a4e53aadead4c", row[1]);
+            assertEquals("Unexpected date found.", "2015-07-30T03:24:47-0400", row[2]);
+            assertEquals("Unexpected name found.", "jabrah", row[3]);
+            assertEquals("Unexpected email found.", "jabrah23@gmail.com", row[4]);
+            assertEquals("Unexpected message found.", "Delete Ha2.001r.xml", row[5]);
+            assertEquals("Unexpected number of added files found.", "0", row[6]);
+            assertEquals("Unexpected number of modified files found.", "0", row[7]);
+            assertEquals("Unexpected number of deleted files found.", "1", row[8]);
+            assertEquals("Unexpected number of renamed files found.", "0", row[9]);
+            assertEquals("Unexpected number of copied files found.", "0", row[10]);
         }
     }
 
@@ -121,6 +144,20 @@ public class GitStatsCollectorTest {
             assertNotNull(table);
             assertEquals("Unexpected number of rows.", 8, table.length);
             assertEquals("Unexpected number of columns", COMMITS_COLUMNS, table[0].length);
+
+            String[] row = table[1];        // Get first data row
+
+            assertEquals("Unexpected ID found.", "734231ce89165661a4ad4c103a0f3b33ef0b61dc", row[0]);
+            assertEquals("Unexpected parent ID found.", "e3cfd1f281de07530ad26c7fdb0a4e53aadead4c", row[1]);
+            assertEquals("Unexpected date found.", "2015-07-30T03:24:47-0400", row[2]);
+            assertEquals("Unexpected name found.", "jabrah", row[3]);
+            assertEquals("Unexpected email found.", "jabrah23@gmail.com", row[4]);
+            assertEquals("Unexpected message found.", "Delete Ha2.001r.xml", row[5]);
+            assertEquals("Unexpected number of added files found.", "0", row[6]);
+            assertEquals("Unexpected number of modified files found.", "0", row[7]);
+            assertEquals("Unexpected number of deleted files found.", "1", row[8]);
+            assertEquals("Unexpected number of renamed files found.", "0", row[9]);
+            assertEquals("Unexpected number of copied files found.", "0", row[10]);
         }
     }
 
