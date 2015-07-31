@@ -52,6 +52,24 @@ public class GitStatsCollectorTest {
         checkBooksCsv(output.resolve("books.csv"));
     }
 
+    /**
+     * Init both output files with dummy data, then run {@link #collectGitStatsTest()}.
+     * This will generate new and valid output that should overwrite all initialized
+     * data.
+     *
+     * @throws Exception
+     */
+    @Test
+    public void collectGitStatsTwiceTest() throws Exception {
+        String init_data = "stuff to initialize initialize a data file.";
+        Path output = basePath.getParent();
+
+        Files.write(output.resolve("books.csv"), init_data.getBytes());
+        Files.write(output.resolve("commits.csv"), init_data.getBytes());
+
+        collectGitStatsTest();
+    }
+
     private void checkCommitsCsv(Path pathToCsv) throws IOException {
         assertTrue("File not found.", Files.exists(pathToCsv));
 

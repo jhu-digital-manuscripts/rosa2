@@ -21,41 +21,59 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import rosa.archive.aor.GitCommit.Builder;
-import rosa.archive.core.util.CSV;
 import rosa.archive.model.aor.AnnotatedPage;
 
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.file.DirectoryStream;
 import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.Files;
-import java.nio.file.OpenOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 public class GitStatCollector {
-    private static final Charset CHARSET = Charset.forName("UTF-8");
-    // Options for opening a file to write, create if it does not already exist, append to existing file.
-    private static final OpenOption[] WRITE_APPEND_OPTION = {StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.APPEND};
     // List of files and directories to ignore
     private static final String[] IGNORE_NAMES = {"XMLschema", ".git", "README.md"};
-
-    private static final String COMMITS_HEADER = "commit_id,parent_id,date,author,email,message,added,modfied,deleted,renamed,copied";
 
     private final Set<String> ignore;
     private String output;
 
+    private GitStatsWriter writer;
+
+    private final Filter<Path> BOOK_FILES_FILTER;
+    private final Filter<Path> COLLECTION_BOOKS_FILTER;
+
     public GitStatCollector() {
         this.ignore = new HashSet<>(Arrays.asList(IGNORE_NAMES));
         output = ".";
+
+        BOOK_FILES_FILTER = new Filter<Path>() {
+            @Override
+            public boolean accept(Path entry) throws IOException {
+                String filename = entry.getFileName().toString();
+                return filename.endsWith(".xml") && !ignore.contains(filename);
+            }
+        };
+
+        COLLECTION_BOOKS_FILTER = new Filter<Path>() {
+            @Override
+            public boolean accept(Path entry) throws IOException {
+                return !ignore.contains(entry.getFileName().toString());
+            }
+        };
+    }
+
+    /**
+     * Set the directory for output files. Used mostly for testing.
+     *
+     * @param outputDirectory .
+     */
+    public void setOutputDirectory(String outputDirectory) {
+        this.output = outputDirectory;
     }
 
     public void run(String[] args) {
@@ -77,10 +95,6 @@ public class GitStatCollector {
         }
     }
 
-    public void setOutputDirectory(String outputDirectory) {
-        this.output = outputDirectory;
-    }
-
     /**
      * Collect stats for a collection on Github across all commits.
      *
@@ -88,8 +102,10 @@ public class GitStatCollector {
      */
     protected void collectGitStats(String repositoryUrl) {
         Path localRepo = null;
+        writer = new GitStatsWriter(output);
+
         try {
-            Path current = Paths.get(output);
+            writer.cleanOutputDir();
             localRepo = Files.createTempDirectory("git_tmp");
 
             // Force delete of repo directory and all subdirectories on JVM exit
@@ -106,7 +122,7 @@ public class GitStatCollector {
                 System.out.println("\t\tDONE\n");
                 Ref head = aorGit.getRepository().getRef("refs/heads/master");
 
-                walkCommitTree(aorGit, head, localRepo, current);
+                walkCommitTree(aorGit, head, localRepo);
 
             } catch (GitAPIException e) {
                 System.err.println("Failed to clone repository.");
@@ -122,7 +138,7 @@ public class GitStatCollector {
         }
     }
 
-    private void walkCommitTree(Git aorGit, Ref head, Path localRepo, Path outputPath)
+    private void walkCommitTree(Git aorGit, Ref head, Path localRepo)
             throws GitAPIException, IOException {
         // a RevWalk allows to walk over commits based on some filtering that is defined
         try (RevWalk walk = new RevWalk(aorGit.getRepository())) {
@@ -163,16 +179,18 @@ public class GitStatCollector {
                         .build();
 
                 System.out.print("Processing commit [" + count + "]: " + gcom.id + " | "
-                        + gcom.getISO8601Date() + " | " + gcom.author + " | " + gcom.getFilesCount(ChangeType.ADD) + " | ");
+                        + gcom.getISO8601Date() + " | " + gcom.author + " | "
+                        + gcom.getFilesCount(ChangeType.ADD) + " additions | ");
 
                 if (result.getStatus() == Status.OK) {
                     long totalMem = Runtime.getRuntime().totalMemory();
                     long maxMem = Runtime.getRuntime().maxMemory();
-                    System.out.println("OK [" + result.getModifiedList().size() + "] modifications. | Memory usage: "
-                            + totalMem + " / " + maxMem);
+
+                    System.out.println("CHECKOUT OK | Memory usage: " + totalMem + " / " + maxMem);
+
                     BookStats stats = collectBookStats(localRepo);
                     if (stats != null) {
-                        writeGitStats(gcom, stats, outputPath);
+                        writer.writeGitStats(gcom, stats);
                     }
                 } else {
                     System.err.println("CHECKOUT FAILED [" + result.getStatus() + "]");
@@ -202,7 +220,8 @@ public class GitStatCollector {
         ObjectReader reader = aorGit.getRepository().newObjectReader();
         CanonicalTreeParser currentTreeParser = new CanonicalTreeParser();
         for (int i = 0; i < currentRev.getParentCount(); i++) {
-            ObjectId parentId = aorGit.getRepository().resolve(currentRev.getParent(i).getId().getName() + "^{tree}");
+            ObjectId parentId = aorGit.getRepository().resolve(
+                    currentRev.getParent(i).getId().getName() + "^{tree}");
 
             try {
                 CanonicalTreeParser parentTreeParser = new CanonicalTreeParser();
@@ -219,7 +238,8 @@ public class GitStatCollector {
                     allDiffs.addAll(diffs);
                 }
             } catch (GitAPIException | IOException e) {
-                System.err.println("Failed to calculate diffs. [" + parentId.name() + " -> " + currentId.name() + "]");
+                System.err.println("  - Failed to calculate diffs. [" + parentId.name()
+                        + " -> " + currentId.name() + "]");
             }
         }
 
@@ -235,12 +255,7 @@ public class GitStatCollector {
     protected BookStats collectBookStats(Path localRepo) {
         BookStats bookStats;
         // Walk all book directories
-        try (DirectoryStream<Path> ds = Files.newDirectoryStream(localRepo, new Filter<Path>() {
-            @Override
-            public boolean accept(Path entry) throws IOException {
-                return !ignore.contains(entry.getFileName().toString());
-            }
-        })) {
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(localRepo, COLLECTION_BOOKS_FILTER)) {
             bookStats = new BookStats();
 
             for (Path bookPath : ds) {
@@ -261,13 +276,7 @@ public class GitStatCollector {
      * @param targetBookStats object to store results
      */
     private void statsForBook(Path bookPath, BookStats targetBookStats) {
-        try (DirectoryStream<Path> ds = Files.newDirectoryStream(bookPath, new Filter<Path>() {
-            @Override
-            public boolean accept(Path entry) throws IOException {
-                String filename = entry.getFileName().toString();
-                return filename.endsWith(".xml") && !ignore.contains(filename);
-            }
-        })) {
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(bookPath, BOOK_FILES_FILTER)) {
             String bookId = bookPath.getFileName().toString();
 
             for (Path pagePath : ds) {
@@ -304,150 +313,6 @@ public class GitStatCollector {
         }
 
         return filename.substring(0, end);
-    }
-
-    private void writeGitStats(GitCommit commit, BookStats stats, Path output) {
-        Path booksCsvPath = output.resolve("books.csv");
-        Path commitsCsvPath = output.resolve("commits.csv");
-
-        boolean isFirst = !Files.exists(booksCsvPath);
-        try (BufferedWriter out = Files.newBufferedWriter(booksCsvPath, CHARSET, WRITE_APPEND_OPTION)) {
-            writeSingleGitStat(out, commit.id, stats, isFirst);
-        } catch (IOException e) {
-            System.err.println("Failed to write to books.csv on commit [" + commit.id + "]");
-        }
-
-        isFirst = !Files.exists(commitsCsvPath);
-        try (BufferedWriter out = Files.newBufferedWriter(commitsCsvPath, CHARSET, WRITE_APPEND_OPTION)) {
-            writeSingleCommit(out, commit, isFirst);
-        } catch (IOException e) {
-            System.err.println("Failed to write to commits.csv on commit [" + commit.id + "]");
-        }
-    }
-
-    private void writeSingleCommit(BufferedWriter out, GitCommit commit, boolean writeHeader) throws IOException {
-        if (writeHeader) {
-            out.write(COMMITS_HEADER);
-            out.newLine();
-        }
-
-        writeCommitRow(out, commit);
-    }
-
-    private void writeCommitRow(BufferedWriter out, GitCommit commit) throws IOException {
-        out.write(commit.id);
-        out.write(',');
-
-        out.write(commit.parentCommit);
-        out.write(',');
-
-        out.write(commit.getISO8601Date());
-        out.write(',');
-
-        out.write(commit.author);
-        out.write(',');
-
-        out.write(commit.email);
-        out.write(',');
-
-        // Strip trailing newLines if applicable
-        if (commit.message.endsWith(System.lineSeparator())) {
-            out.write(CSV.escape(commit.message.substring(0,
-                    commit.message.length() - System.lineSeparator().length())));
-        } else {
-            out.write(CSV.escape(commit.message));
-        }
-        out.write(',');
-
-        out.write(String.valueOf(commit.getFilesCount(ChangeType.ADD)));
-        out.write(',');
-
-        out.write(String.valueOf(commit.getFilesCount(ChangeType.MODIFY)));
-        out.write(',');
-
-        out.write(String.valueOf(commit.getFilesCount(ChangeType.DELETE)));
-        out.write(',');
-
-        out.write(String.valueOf(commit.getFilesCount(ChangeType.RENAME)));
-        out.write(',');
-
-        out.write(String.valueOf(commit.getFilesCount(ChangeType.COPY)));
-
-        out.newLine();
-    }
-
-    private void writeSingleGitStat(BufferedWriter out, String commitId, BookStats stats,
-                                    boolean writeHeader) throws IOException {
-        if (writeHeader) {
-            write_header_row(out, "commit_id,book");
-        }
-
-        List<String> books = new ArrayList<>(stats.statsMap.keySet());
-        Collections.sort(books);
-
-        for (String book : books) {
-            write_row(out, stats.statsMap.get(book), commitId);
-        }
-    }
-
-    private void write_header_row(BufferedWriter out, String first_cell) throws IOException {
-        out.write(first_cell);
-        out.write(",total,total_words,marginalia,marginalia_words,underlines,underline_words," +
-                "marks,mark_words,symbols,symbol_words,drawings,numerals,books,people,locations");
-        out.newLine();
-    }
-
-    private void write_row(BufferedWriter out, Stats s, String commitId) throws IOException {
-        out.write(commitId);
-        out.write(',');
-
-        out.write(s.id);
-        out.write(',');
-
-        out.write(String.valueOf(s.totalAnnotations()));
-        out.write(',');
-
-        out.write(String.valueOf(s.totalWords()));
-        out.write(',');
-
-        out.write(String.valueOf(s.marginalia));
-        out.write(',');
-
-        out.write(String.valueOf(s.marginalia_words));
-        out.write(',');
-
-        out.write(String.valueOf(s.underlines));
-        out.write(',');
-
-        out.write(String.valueOf(s.underline_words));
-        out.write(',');
-
-        out.write(String.valueOf(s.marks));
-        out.write(',');
-
-        out.write(String.valueOf(s.mark_words));
-        out.write(',');
-
-        out.write(String.valueOf(s.symbols));
-        out.write(',');
-
-        out.write(String.valueOf(s.symbol_words));
-        out.write(',');
-
-        out.write(String.valueOf(s.drawings));
-        out.write(',');
-
-        out.write(String.valueOf(s.numerals));
-        out.write(',');
-
-        out.write(String.valueOf(s.books));
-        out.write(',');
-
-        out.write(String.valueOf(s.people));
-        out.write(',');
-
-        out.write(String.valueOf(s.locations));
-        out.newLine();
     }
 
 }
