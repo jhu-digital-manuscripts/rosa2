@@ -3,6 +3,7 @@ package rosa.archive.aor;
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.io.FileUtils;
@@ -108,7 +109,7 @@ public class GitStatCollector {
         }
 
         Options options = new Options();
-        // Empty for now
+        options.addOption(new Option("L", "latest", false, "Grab the latest statistics from a git repository."));
 
         CommandLineParser cliParser = new BasicParser();
 
@@ -117,17 +118,11 @@ public class GitStatCollector {
             CommandLine cmd = cliParser.parse(options, args);
 
             switch (cmd.getArgs()[0]) {
-                case "stats":
-                    if (cmd.getArgs().length < 3) {
-                        report.println("Gathering latest stats.");
-                        collectGitStats(cmd.getArgs()[1], true);
-                    }
-
-                    break;
                 case "git-stats":
-                    if (cmd.getArgs().length == 2) {
-                        report.println("Gathering git stats.");
-                        report.println(cmd.getArgList().toString());
+                    report.println("Gathering git stats.");
+                    if (cmd.hasOption('L') || cmd.hasOption("latest")) {
+                        collectGitStats(cmd.getArgs()[1], true);
+                    } else if (cmd.getArgs().length == 2) {
                         collectGitStats(cmd.getArgs()[1], false);
                     }
 

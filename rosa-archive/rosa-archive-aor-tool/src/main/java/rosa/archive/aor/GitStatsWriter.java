@@ -247,7 +247,7 @@ public class GitStatsWriter {
     }
 
     /**
-     * Aggregate vocabulary stats across all books, in all categories.
+     * Write a vocab map to file.
      *
      * @param out output
      * @param vocabMap all stats

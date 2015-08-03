@@ -9,13 +9,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
-import rosa.archive.core.util.CSV;
 import rosa.archive.model.aor.AnnotatedPage;
 /**
  * Collect stats on AOR annotations and write them out as CSV spreadsheets.
@@ -115,6 +113,8 @@ public class AorStatsCollector {
 
     public void writeBookStats(Path output_dir) throws IOException {
         Path book_csv_path = output_dir.resolve("books.csv");
+        GitStatsWriter writer = new GitStatsWriter(output_dir);
+        writer.cleanOutputDir();
 
         try (BufferedWriter out = Files.newBufferedWriter(book_csv_path,
                 CHARSET)) {
@@ -129,8 +129,6 @@ public class AorStatsCollector {
                 write_page_stats(out, page_stats.get(book_id));
             }
         }
-
-        GitStatsWriter writer = new GitStatsWriter(output_dir);
 
         BookStats allStats = new BookStats();
         allStats.statsMap.putAll(book_stats);
@@ -166,29 +164,29 @@ public class AorStatsCollector {
 //        }
     }
 
-    private void write_vocab(BufferedWriter out,
-            final Map<String, Integer> vocab) throws IOException {
-        out.write("word");
-        out.write(',');
-        out.write("count");
-        out.write('\n');
-
-        // Sort by frequency
-        List<String> words = new ArrayList<>(vocab.keySet());
-
-        Collections.sort(words, new Comparator<String>() {
-            public int compare(String w1, String w2) {
-                return vocab.get(w1).compareTo(vocab.get(w2));
-            }
-        });
-
-        for (String word: words) {
-            out.write(CSV.escape(word));
-            out.write(',');
-            out.write(String.valueOf(vocab.get(word)));
-            out.write('\n');
-        }
-    }
+//    private void write_vocab(BufferedWriter out,
+//            final Map<String, Integer> vocab) throws IOException {
+//        out.write("word");
+//        out.write(',');
+//        out.write("count");
+//        out.write('\n');
+//
+//        // Sort by frequency
+//        List<String> words = new ArrayList<>(vocab.keySet());
+//
+//        Collections.sort(words, new Comparator<String>() {
+//            public int compare(String w1, String w2) {
+//                return vocab.get(w1).compareTo(vocab.get(w2));
+//            }
+//        });
+//
+//        for (String word: words) {
+//            out.write(CSV.escape(word));
+//            out.write(',');
+//            out.write(String.valueOf(vocab.get(word)));
+//            out.write('\n');
+//        }
+//    }
 
     private void write_page_stats(BufferedWriter out, List<Stats> list)
             throws IOException {
