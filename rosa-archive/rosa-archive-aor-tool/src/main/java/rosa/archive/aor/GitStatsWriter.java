@@ -6,6 +6,8 @@ import rosa.archive.core.util.CSV;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.nio.file.DirectoryStream;
+import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.Files;
 import java.nio.file.OpenOption;
 import java.nio.file.Path;
@@ -13,7 +15,10 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class GitStatsWriter {
     private static final Charset CHARSET = Charset.forName("UTF-8");
@@ -30,6 +35,10 @@ public class GitStatsWriter {
         this(output, "books.csv", "commits.csv");
     }
 
+    public GitStatsWriter(Path path) {
+        this(path.toString());
+    }
+
     public GitStatsWriter(String outputDir, String statsFilename, String commitsFilename) {
         this.OUTPUT_BOOKS = statsFilename;
         this.OUTPUT_COMMITS = commitsFilename;
@@ -43,6 +52,28 @@ public class GitStatsWriter {
         } catch (IOException e) {
             System.err.println("Failed to clean output directory.");
         }
+
+        // Delete all vocab files
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(output, new Filter<Path>() {
+            @Override
+            public boolean accept(Path entry) throws IOException {
+                String name = entry.getFileName().toString();
+                return name.contains("vocab")
+                        || name.contains("marginalia")
+                        || name.contains("underline")
+                        || name.contains("mark")
+                        || name.contains("symbol");
+            }
+        })) {
+
+            for (Path path : ds) {
+                Files.deleteIfExists(path);
+            }
+
+        } catch (IOException e) {
+            System.err.println("Failed to clean vocabulary stats files.");
+        }
+
     }
 
     /**
@@ -87,6 +118,161 @@ public class GitStatsWriter {
             writeSingleCommit(out, commit, unreadablePages, isFirst);
         } catch (IOException e) {
             System.err.println("Failed to write to commits.csv on commit [" + commit.id + "]");
+        }
+    }
+
+    /**
+     * Write out all vocabulary related stats. Total words used in all annotation types
+     * across all books, words used in only marginalia, words underlined, words
+     * associated with symbols, and words associated with marks.
+     *
+     * @param stats stats of repository aggregated by book
+     */
+    public void writeVocab(BookStats stats) {
+        writeBooksVocab(output, stats);
+        writeMarginaliaVocab(output, stats);
+        writeUnderlineVocab(output, stats);
+        writeMarkedVocab(output, stats);
+        writeSymbolVocab(output, stats);
+    }
+
+    private void writeBooksVocab(Path output, BookStats stats) {
+        Vocab total = new Vocab();
+        // Aggregate vocab stats from all books
+        for (Entry<String, Stats> entry : stats.statsMap.entrySet()) {
+            total.update(entry.getValue().marginalia_vocab);
+            total.update(entry.getValue().underlines_vocab);
+            total.update(entry.getValue().marks_vocab);
+            total.update(entry.getValue().symbols_vocab);
+        }
+
+        writeVocabAllLanguages("vocab", output, total);
+    }
+
+    /**
+     * Aggregate marginalia vocab stats across all books.
+     *
+     * @param output output directory
+     * @param stats all stats
+     */
+    private void writeMarginaliaVocab(Path output, BookStats stats) {
+        Vocab total = new Vocab();
+
+        for (Entry<String, Stats> entry : stats.statsMap.entrySet()) {
+            total.update(entry.getValue().marginalia_vocab);
+        }
+
+        writeVocabAllLanguages("marginalia", output, total);
+    }
+
+    /**
+     * Aggregate underlined vocab stats across all books.
+     *
+     * @param output output directory
+     * @param stats all stats
+     */
+    private void writeUnderlineVocab(Path output, BookStats stats) {
+        Vocab total = new Vocab();
+
+        for (Entry<String, Stats> entry : stats.statsMap.entrySet()) {
+            total.update(entry.getValue().underlines_vocab);
+        }
+
+        writeVocabAllLanguages("underlines", output, total);
+    }
+
+    /**
+     * Aggregate marked vocab stats across all books.
+     *
+     * @param output output directory
+     * @param stats all stats
+     */
+    private void writeMarkedVocab(Path output, BookStats stats) {
+        Vocab total = new Vocab();
+
+        for (Entry<String, Stats> entry : stats.statsMap.entrySet()) {
+            total.update(entry.getValue().marks_vocab);
+        }
+
+        writeVocabAllLanguages("marks", output, total);
+    }
+
+    /**
+     * Aggregate symbol vocab stats across all books.
+     *
+     * @param output output directory
+     * @param stats all stats
+     */
+    private void writeSymbolVocab(Path output, BookStats stats) {
+        Vocab total = new Vocab();
+
+        for (Entry<String, Stats> entry : stats.statsMap.entrySet()) {
+            total.update(entry.getValue().symbols_vocab);
+        }
+
+        writeVocabAllLanguages("symbols", output, total);
+    }
+
+    /**
+     * For all vocab, print separate files for words of different languages.
+     *
+     * @param filePrefix file prefix
+     * @param output output directory
+     * @param vocab stats
+     */
+    private void writeVocabAllLanguages(String filePrefix, Path output, Vocab vocab) {
+        for (String lang : vocab.getLanguages()) {
+            if (lang == null || lang.isEmpty()) {
+                // TODO NOTE: Ignore all vocab that has no language code associated
+                continue;
+            }
+
+            String outputName = filePrefix + (isEnglish(lang) ? "" : "_" + lang) + ".csv";
+
+            try (BufferedWriter out = Files.newBufferedWriter(
+                    output.resolve(outputName), CHARSET, WRITE_APPEND_OPTION)) {
+
+                writeVocab(out, vocab.getVocab(lang));
+
+            } catch (IOException e) {
+                System.err.println("Failed to write vocab file. [" + outputName + "]");
+            }
+        }
+    }
+
+    private boolean isEnglish(String langCode) {
+        return langCode != null && (
+                langCode.equals("en") || langCode.equals("EN")
+                );
+    }
+
+    /**
+     * Aggregate vocabulary stats across all books, in all categories.
+     *
+     * @param out output
+     * @param vocabMap all stats
+     * @throws IOException .
+     */
+    private void writeVocab(BufferedWriter out, final Map<String, Integer> vocabMap) throws IOException {
+        out.write("word,frequency");
+        out.newLine();
+
+        List<String> wordsForSort = new ArrayList<>(vocabMap.keySet());
+        // Sort by frequency
+        Collections.sort(wordsForSort, new Comparator<String>() {
+            @Override
+            public int compare(String s1, String s2) {
+                return vocabMap.get(s1).compareTo(vocabMap.get(s2));
+            }
+        });
+
+        for (String word : wordsForSort) {
+            out.write(CSV.escape(word));
+            out.write(',');
+
+            out.write(String.valueOf(vocabMap.get(word)));
+            out.newLine();
+            // TODO include a page # reference?
         }
     }
 

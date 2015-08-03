@@ -1,8 +1,5 @@
 package rosa.archive.aor;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Stats implements Comparable<Stats> {
     final String id;
     int marginalia;
@@ -18,11 +15,18 @@ public class Stats implements Comparable<Stats> {
     int books;
     int people;
     int locations;
-    Map<String, Integer> marginalia_vocab;
+
+    Vocab marginalia_vocab;
+    Vocab underlines_vocab;
+    Vocab marks_vocab;
+    Vocab symbols_vocab;
 
     public Stats(String id) {
         this.id = id;
-        this.marginalia_vocab = new HashMap<>();
+        this.marginalia_vocab = new Vocab();
+        this.underlines_vocab = new Vocab();
+        this.marks_vocab = new Vocab();
+        this.symbols_vocab = new Vocab();
     }
 
     public void add(Stats s) {
@@ -40,7 +44,10 @@ public class Stats implements Comparable<Stats> {
         people += s.people;
         locations += s.locations;
 
-        AoRVocabUtil.updateVocab(marginalia_vocab, s.marginalia_vocab);
+        marginalia_vocab.update(s.marginalia_vocab);
+        underlines_vocab.update(s.underlines_vocab);
+        marks_vocab.update(s.marks_vocab);
+        symbols_vocab.update(s.symbols_vocab);
     }
 
     public int totalAnnotations() {

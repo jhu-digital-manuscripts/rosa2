@@ -12,6 +12,7 @@ public class Tool {
 
         String command = args[0];
 
+        GitStatCollector statCollector = new GitStatCollector();
         switch (command) {
             case "stats":
                 if (args.length < 2) {
@@ -34,8 +35,7 @@ public class Tool {
                     exitOnError("Usage: git-stats <repository_url>");
                 }
 
-                GitStatCollector gitStatCollector = new GitStatCollector();
-                gitStatCollector.run(args);
+                statCollector.run(args);
                 
                 break;
             case "validate":

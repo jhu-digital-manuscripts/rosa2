@@ -90,7 +90,7 @@ public class AorStatsCollector {
 
         // Collect page stats and add to list
 
-        Stats ps = AorTranscriptionAdapter.adaptAnnotatedPage(ap, page_id);
+        Stats ps = AorStatsAdapter.adaptAnnotatedPage(ap, page_id);
 
         List<Stats> ps_list = page_stats.get(book_id);
 
@@ -130,30 +130,40 @@ public class AorStatsCollector {
             }
         }
 
+        GitStatsWriter writer = new GitStatsWriter(output_dir);
+
+        BookStats allStats = new BookStats();
+        allStats.statsMap.putAll(book_stats);
+
+        writer.writeVocab(allStats);
         // Write marginalia vocab over all books and for each book
 
-        Path books_vocab_csv_path = output_dir.resolve("marginalia_vocab.csv");
-
-        Map<String, Integer> marginalia_vocab = new HashMap<>();
-
-        for (String book_id: book_stats.keySet()) {
-            Stats stats = book_stats.get(book_id);
-
-            AoRVocabUtil.updateVocab(marginalia_vocab, stats.marginalia_vocab);
-
-            Path pages_vocab_csv_path = output_dir.resolve(book_id
-                    + "_marginalia_vocab.csv");
-
-            try (BufferedWriter out = Files.newBufferedWriter(
-                    pages_vocab_csv_path, CHARSET)) {
-                write_vocab(out, stats.marginalia_vocab);
-            }
-        }
-
-        try (BufferedWriter out = Files.newBufferedWriter(books_vocab_csv_path,
-                CHARSET)) {
-            write_vocab(out, marginalia_vocab);
-        }
+//        Path books_vocab_csv_path = output_dir.resolve("marginalia_vocab.csv");
+//
+//        Map<String, Integer> marginalia_vocab = new HashMap<>();
+//
+//        Vocab total = new Vocab();
+//        for (String book_id: book_stats.keySet()) {
+//            Stats stats = book_stats.get(book_id);
+//
+//            total.update(stats.marginalia_vocab);
+//
+//            Path pages_vocab_csv_path = output_dir.resolve(book_id
+//                    + "_marginalia_vocab.csv");
+//
+//
+//
+//            try (BufferedWriter out = Files.newBufferedWriter(
+//                    pages_vocab_csv_path, CHARSET)) {
+//
+//                write_vocab(out, stats.marginalia_vocab);
+//            }
+//        }
+//
+//        try (BufferedWriter out = Files.newBufferedWriter(books_vocab_csv_path,
+//                CHARSET)) {
+//            write_vocab(out, marginalia_vocab);
+//        }
     }
 
     private void write_vocab(BufferedWriter out,

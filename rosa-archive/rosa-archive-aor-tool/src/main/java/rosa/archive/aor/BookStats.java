@@ -76,17 +76,17 @@ public class BookStats {
         if (o == null || getClass() != o.getClass()) return false;
 
         BookStats stats = (BookStats) o;
-        return statsMap.equals(stats.statsMap);
+        return statsMap.equals(stats.statsMap) && unreadablePagesMap.equals(stats.unreadablePagesMap);
 
     }
 
     @Override
     public int hashCode() {
-        return statsMap.hashCode();
+        return 31 * statsMap.hashCode() + unreadablePagesMap.hashCode();
     }
 
     @Override
     public String toString() {
-        return "BookStats{" + "statsMap=" + statsMap + '}';
+        return "BookStats{" + "statsMap=" + statsMap + ", unreadablePagesMap=" + unreadablePagesMap + '}';
     }
 }

@@ -8,6 +8,8 @@ import rosa.archive.core.ResourceUtil;
 import rosa.archive.core.util.CSV;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileFilter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -61,6 +63,15 @@ public class GitStatsCollectorTest {
         assertTrue("books.csv not found.", Files.exists(output.resolve("books.csv")));
         assertTrue("commits.csv not found.", Files.exists(output.resolve("commits.csv")));
 
+        int numCSV = output.toFile().listFiles(new FileFilter() {
+            @Override
+            public boolean accept(File pathname) {
+                return pathname.getName().endsWith(".csv");
+            }
+        }).length;
+
+        assertEquals("Unexpected number of files generated.", 15, numCSV);
+
         try (InputStreamReader reader = new InputStreamReader(Files.newInputStream(output.resolve("books.csv")))) {
             String[][] table = CSV.parseTable(reader);
 
@@ -68,10 +79,7 @@ public class GitStatsCollectorTest {
             assertEquals("Unexpected number of columns.", BOOKS_COLUMNS, table[0].length);
 
             String[] row = table[1];
-            /*
-commit_id,book,total,total_words,marginalia,marginalia_words,underlines,underline_words,marks,mark_words,symbols,symbol_words,drawings,numerals,books,people,locations,added,modified,deleted,renamed,copied
-,,7,39,7,39,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0
-             */
+
             assertEquals("Unexpected ID found.", "734231ce89165661a4ad4c103a0f3b33ef0b61dc", row[0]);
             assertEquals("Unexpected book name found.", "Castiglione", row[1]);
             assertEquals("Unexpected number of annotations found.", "7", row[2]);

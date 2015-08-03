@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class AorTranscriptionAdapter {
+public class AorStatsAdapter {
 
     public static Stats adaptAnnotatedPage(AnnotatedPage ap, String pageId) {
         Stats bs = new Stats(pageId);
@@ -32,9 +32,69 @@ public class AorTranscriptionAdapter {
         bs.people += count_marginalia_people(ap);
         bs.locations += count_marginalia_locations(ap);
 
-        AoRVocabUtil.updateVocab(bs.marginalia_vocab, marginalia_words);
+        bs.marginalia_vocab = getMarginaliaWords(ap);
+        bs.underlines_vocab = getUnderlinedWords(ap);
+        bs.marks_vocab = getMarkedWords(ap);
+        bs.symbols_vocab = getSymbolWords(ap);
 
         return bs;
+    }
+
+    private static Vocab getMarginaliaWords(AnnotatedPage page) {
+        Vocab vocab = new Vocab();
+
+        for (Marginalia marg : page.getMarginalia()) {
+            for (MarginaliaLanguage lang : marg.getLanguages()) {
+                for (Position pos : lang.getPositions()) {
+                    for (String text : pos.getTexts()) {
+                        vocab.update(lang.getLang(), Arrays.asList(AoRVocabUtil.parse_text(text)));
+                    }
+                }
+            }
+        }
+
+        return vocab;
+    }
+
+    private static Vocab getUnderlinedWords(AnnotatedPage page) {
+        Vocab vocab = new Vocab();
+
+        for (Underline underline : page.getUnderlines()) {
+            vocab.update(
+                    underline.getLanguage(),
+                    Arrays.asList(AoRVocabUtil.parse_text(underline.getReferringText()))
+            );
+        }
+
+        return vocab;
+    }
+
+    private static Vocab getMarkedWords(AnnotatedPage page) {
+        Vocab vocab = new Vocab();
+
+        for (Mark mark : page.getMarks()) {
+            // TODO can associate words with certain Marks
+            vocab.update(
+                    mark.getLanguage(),
+                    Arrays.asList(AoRVocabUtil.parse_text(mark.getReferringText()))
+            );
+        }
+
+        return vocab;
+    }
+
+    private static Vocab getSymbolWords(AnnotatedPage page) {
+        Vocab vocab = new Vocab();
+
+        for (Symbol symbol : page.getSymbols()) {
+            // TODO can associate words with certain Symbols
+            vocab.update(
+                    symbol.getLanguage(),
+                    Arrays.asList(AoRVocabUtil.parse_text(symbol.getReferringText()))
+            );
+        }
+
+        return vocab;
     }
 
     private static List<String> get_marginalia_words(AnnotatedPage ap) {

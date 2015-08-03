@@ -102,19 +102,42 @@ public class GitStatCollector {
     }
 
     public void run(String[] args) {
+        if (args == null || args.length == 0) {
+            error.println("No command found.");
+            return;
+        }
+
         Options options = new Options();
         // Empty for now
 
         CommandLineParser cliParser = new BasicParser();
 
         try {
-            report.println("Gathering git stats.");
+            System.out.println("Parsing command. ");
             CommandLine cmd = cliParser.parse(options, args);
 
-            report.println(cmd.getArgList().toString());
-            if (cmd.getArgs().length == 2) {
-                collectGitStats(cmd.getArgs()[1], false);
+            switch (cmd.getArgs()[0]) {
+                case "stats":
+                    if (cmd.getArgs().length < 3) {
+                        report.println("Gathering latest stats.");
+                        collectGitStats(cmd.getArgs()[1], true);
+                    }
+
+                    break;
+                case "git-stats":
+                    if (cmd.getArgs().length == 2) {
+                        report.println("Gathering git stats.");
+                        report.println(cmd.getArgList().toString());
+                        collectGitStats(cmd.getArgs()[1], false);
+                    }
+
+                    break;
+                default:
+                    error.println(cmd.getArgs()[0] + " is not a valid command.");
+                    break;
             }
+
+
         } catch (ParseException e) {
             error.println("Failed to parser command. " + e.getMessage());
         }
@@ -184,7 +207,8 @@ public class GitStatCollector {
 
                 CheckoutResult result = checkout.getResult(); // Check status, modified list, etc
 
-                // TODO more fully represent ancestor commits - (more than 1 parent for merges)
+                // Represent ancestor commits - (more than 1 parent for merges)
+                // Smash all parent IDs together in a comma separated list, correctly escaped when written
                 StringBuilder parents = new StringBuilder("");
                 for (int i = 0; i < rev.getParentCount(); i++) {
                     if (i != 0) {
@@ -218,6 +242,9 @@ public class GitStatCollector {
                     BookStats stats = collectBookStats(localRepo);
                     if (stats != null) {
                         writer.writeGitStats(gcom, stats);
+                        if (onlyMostRecent) {
+                            writer.writeVocab(stats);
+                        }
                     }
                 } else {
                     error.println("CHECKOUT FAILED [" + result.getStatus() + "]");
@@ -311,17 +338,19 @@ public class GitStatCollector {
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(bookPath, BOOK_FILES_FILTER)) {
             String bookId = bookPath.getFileName().toString();
 
+            // For each page in the book
             for (Path pagePath : ds) {
                 String pageId = getPageId(pagePath.getFileName().toString());
 
                 try {
+                    // Read page, then collect stats
                     AnnotatedPage annotatedPage = AorStatsCollector.readAorPage(pagePath.toString());
                     if (annotatedPage == null) {
                         targetBookStats.addUnreadablePage(bookId, pageId);
                         continue;
                     }
 
-                    Stats pageStats = AorTranscriptionAdapter.adaptAnnotatedPage(annotatedPage, pageId);
+                    Stats pageStats = AorStatsAdapter.adaptAnnotatedPage(annotatedPage, pageId);
 
                     // TODO Plug in here to generate individual page stats
                     // TODO vocab
