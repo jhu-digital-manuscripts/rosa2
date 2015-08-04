@@ -190,20 +190,25 @@ public class AorStatsCollector {
 
     private void write_page_stats(BufferedWriter out, List<Stats> list)
             throws IOException {
-        write_header_row(out, "page");
+        write_header_row(out, "page,id");
 
         // TODO Assume sorting puts them in order...
 
         Collections.sort(list);
 
         for (Stats stats: list) {
-            write_row(out, stats);
+            write_row(out, stats, true);
         }
     }
 
-    private void write_row(BufferedWriter out, Stats s) throws IOException {
+    private void write_row(BufferedWriter out, Stats s, boolean writeIndex) throws IOException {
         out.write(s.id);
         out.write(',');
+
+        if (writeIndex) {
+            out.write(String.valueOf(s.pageIndex()));
+            out.write(',');
+        }
 
         out.write(String.valueOf(s.marginalia));
         out.write(',');
@@ -250,7 +255,7 @@ public class AorStatsCollector {
         write_header_row(out, "book");
 
         for (String book_id: stats.keySet()) {
-            write_row(out, stats.get(book_id));
+            write_row(out, stats.get(book_id), false);
         }
     }
 

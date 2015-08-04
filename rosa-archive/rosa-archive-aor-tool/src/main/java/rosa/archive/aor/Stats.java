@@ -1,6 +1,11 @@
 package rosa.archive.aor;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Stats implements Comparable<Stats> {
+    private static final Pattern MANUSCRIPT_PATTERN = Pattern.compile("^(.+\\.)(\\d+)(r|v|R|V)$");
+
     final String id;
     int marginalia;
     int marginalia_words;
@@ -21,12 +26,16 @@ public class Stats implements Comparable<Stats> {
     Vocab marks_vocab;
     Vocab symbols_vocab;
 
+    private Matcher manuscriptMatcher;
+
     public Stats(String id) {
         this.id = id;
         this.marginalia_vocab = new Vocab();
         this.underlines_vocab = new Vocab();
         this.marks_vocab = new Vocab();
         this.symbols_vocab = new Vocab();
+
+        this.manuscriptMatcher = MANUSCRIPT_PATTERN.matcher(id);
     }
 
     public void add(Stats s) {
@@ -48,6 +57,42 @@ public class Stats implements Comparable<Stats> {
         underlines_vocab.update(s.underlines_vocab);
         marks_vocab.update(s.marks_vocab);
         symbols_vocab.update(s.symbols_vocab);
+    }
+
+    /**
+     * If ID refers to a single page in a book, guess the index of the page based off
+     * its ID. Return -1 if the page ID format is unknown or this Stats refers to a
+     * book instead of a page.
+     *
+     * @return index of page in a book, or -1 if index is of unknown form
+     *         or this refers to a book.
+     */
+    public int pageIndex() {
+        if (id.contains("_") && containsDigits(id.substring(id.lastIndexOf('_')))) {
+            // Castiglione, Castiglione_Newberry, and Frontinus
+            return Integer.parseInt(id.substring(id.lastIndexOf('_') + 1, id.length()));
+        } else if (manuscriptMatcher.find()) {
+            int index = Integer.parseInt(manuscriptMatcher.group(2)) * 2;
+            if (manuscriptMatcher.group(3).equals("r") || manuscriptMatcher.group(3).equals("R")) {
+                index --;
+            }
+            return index;
+        } else {
+            try {
+                return Integer.parseInt(id);
+            } catch (NumberFormatException e) {
+                return -1;
+            }
+        }
+    }
+
+    private boolean containsDigits(String s) {
+        for (int i = 0; i < s.length(); i++) {
+            if (Character.isDigit(s.charAt(i))) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public int totalAnnotations() {
