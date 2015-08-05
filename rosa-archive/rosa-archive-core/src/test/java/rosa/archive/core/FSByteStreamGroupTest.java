@@ -2,6 +2,7 @@ package rosa.archive.core;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
@@ -16,6 +17,45 @@ import org.junit.Test;
  * TODO Test all methods
  */
 public class FSByteStreamGroupTest extends BaseArchiveTest {
+
+    @Test
+    public void resolveNameTest() throws IOException {
+        String[] test = {"valid", "character_names.csv", "LudwigXV7.001r.tif", "LudwigXV7.description_en.xml",
+                         "fakeName"};
+        // Test at collection level
+        checkResolvedName(base.resolveName(test[0]), base.id(), test[0]);
+
+        // Test in a collection
+        ByteStreamGroup collectionGroup = base.getByteStreamGroup(VALID_COLLECTION);
+        String[] expected = {null, "character_names.csv", null, null, null};
+        for (int i = 0; i < test.length; i++) {
+            String t = test[i];
+            String expect = expected[i];
+
+            checkResolvedName(collectionGroup.resolveName(t), collectionGroup.id(), expect);
+        }
+
+        // Test in a book
+        ByteStreamGroup bookGroup = collectionGroup.getByteStreamGroup(VALID_BOOK_LUDWIGXV7);
+        String[] expected1 = {null, null, "LudwigXV7.001r.tif", "LudwigXV7.description_en.xml", null};
+        for (int i = 0; i < test.length; i++) {
+            String t = test[i];
+            String expect = expected1[i];
+
+            checkResolvedName(bookGroup.resolveName(t), bookGroup.id(), expect);
+        }
+
+    }
+
+    private void checkResolvedName(String result, String expectedPrefix, String expectedName) {
+        if (expectedName != null) {
+            assertNotNull(result);
+            assertTrue("Unexpected prefix.", result.startsWith(expectedPrefix));
+            assertTrue("Unexpected file name.", result.endsWith(expectedName));
+        } else {
+            assertNull(result);
+        }
+    }
   
     @Test
     public void zeroByteStreamsAtTop() throws IOException {

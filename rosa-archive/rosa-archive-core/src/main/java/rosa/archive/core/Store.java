@@ -311,4 +311,17 @@ public interface Store {
      *          if the collection or book do not exist
      */
     void renameTranscriptions(String collection, String book, boolean reverse, List<String> errors) throws IOException;
+
+    /**
+     * For those books with per page transcriptions in text files, convert these
+     * text files into a single TEI transcription file.
+     *
+     * @param collection id of the collection
+     * @param book id of the book
+     * @param errors list of errors
+     * @param warnings list of warnings
+     * @throws IOException .
+     */
+    void generateTEITranscriptions(String collection, String book, List<String> errors,
+                                   List<String> warnings) throws IOException;
 }

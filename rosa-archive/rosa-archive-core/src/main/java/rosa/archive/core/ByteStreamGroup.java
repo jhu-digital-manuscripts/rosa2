@@ -13,30 +13,41 @@ public interface ByteStreamGroup {
     /**
      * @return the fully qualified ID of the byte stream group
      */
-    public String id();
+    String id();
 
     /**
      * @return simple name
      */
-    public String name();
+    String name();
+
+    /**
+     * Get the fully qualified path of a child node of this byte stream
+     * group. If the given childName does not exist as within this group,
+     * NULL is returned.
+     *
+     * @param childName name of child node
+     * @return fully qualified name, or NULL if child name does not exist.
+     * @throws NullPointerException if childName is NULL
+     */
+    String resolveName(String childName);
 
     /**
      * @return number of byte streams contained in this group
      * @throws IOException if the base of the byte stream group cannot be accessed
      */
-    public int numberOfByteStreams() throws IOException;
+    int numberOfByteStreams() throws IOException;
 
     /**
      * @return number of sub groups contained in this group
      * @throws IOException if the base of the byte stream group cannot be accessed
      */
-    public int numberOfByteStreamGroups() throws IOException;
+    int numberOfByteStreamGroups() throws IOException;
 
     /**
      * @return list of ByteStream IDs
      * @throws IOException if the base of the byte stream group cannot be accessed
      */
-    public List<String> listByteStreamIds() throws IOException;
+    List<String> listByteStreamIds() throws IOException;
 
     /**
      * @return list of ByteStream names
@@ -44,7 +55,7 @@ public interface ByteStreamGroup {
      *          if the base of the byte stream group cannot be accessed
      *          or a byte stream in this group is inaccessible
      */
-    public List<String> listByteStreamNames() throws IOException;
+    List<String> listByteStreamNames() throws IOException;
 
     /**
      * @return list of the fully qualified identifiers of the sub groups contained
@@ -53,7 +64,7 @@ public interface ByteStreamGroup {
      *          if the base of the byte stream group cannot be accessed or
      *          a byte stream group in this group is inaccessible
      */
-    public List<String> listByteStreamGroupIds() throws IOException;
+    List<String> listByteStreamGroupIds() throws IOException;
 
     /**
      * @return list of the names of the sub groups contained in this group
@@ -61,7 +72,7 @@ public interface ByteStreamGroup {
      *          if the base of the byte stream group cannot be accessed or
      *          a byte stream group in this group is inaccessible
      */
-    public List<String> listByteStreamGroupNames() throws IOException;
+    List<String> listByteStreamGroupNames() throws IOException;
 
     /**
      * @return list of the byte stream (sub)groups contained in this group
@@ -69,19 +80,19 @@ public interface ByteStreamGroup {
      *          if the base of the byte stream group cannot be accessed or
      *          a byte stream group in this group is inaccessible
      */
-    public List<ByteStreamGroup> listByteStreamGroups() throws IOException;
+    List<ByteStreamGroup> listByteStreamGroups() throws IOException;
 
     /**
      * @param name name of a byte stream
      * @return does this byte stream group contain the named byte stream?
      */
-    public boolean hasByteStream(String name);
+    boolean hasByteStream(String name);
 
     /**
      * @param name name of a byte stream group
      * @return does this byte stream group contain the named byte stream (sub)group?
      */
-    public boolean hasByteStreamGroup(String name);
+    boolean hasByteStreamGroup(String name);
 
     /**
      * @param name name of a byte stream
@@ -90,7 +101,7 @@ public interface ByteStreamGroup {
      *          if the base of the byte stream group cannot be accessed or
      *          the byte stream is inaccessible
      */
-    public InputStream getByteStream(String name) throws IOException;
+    InputStream getByteStream(String name) throws IOException;
 
     /**
      * @param name name of a byte stream
@@ -99,19 +110,19 @@ public interface ByteStreamGroup {
      *          if the base of the byte stream group cannot be accessed or
      *          the byte stream is inaccessible
      */
-    public OutputStream getOutputStream(String name) throws IOException;
+    OutputStream getOutputStream(String name) throws IOException;
 
     /**
      * @param name name of a byte stream group
      * @return the named byte stream (sub)group
      */
-    public ByteStreamGroup getByteStreamGroup(String name);
+    ByteStreamGroup getByteStreamGroup(String name);
 
     /**
      * @param streamName name of byte stream of interest
      * @return last time the source of a byte stream was modified
      */
-    public long getLastModified(String streamName);
+    long getLastModified(String streamName);
 
     /**
      * Create a new byte stream group relative to this group.
@@ -122,7 +133,7 @@ public interface ByteStreamGroup {
      *          if the base of the byte stream group cannot be accessed or
      *          a byte stream group in this group is inaccessible
      */
-    public ByteStreamGroup newByteStreamGroup(String name) throws IOException;
+    ByteStreamGroup newByteStreamGroup(String name) throws IOException;
 
     /**
      * Copy a byte stream from this group to the target group. The copied stream will
@@ -134,7 +145,7 @@ public interface ByteStreamGroup {
      *          if the base of the byte stream group cannot be accessed or
      *          the byte stream or target group is inaccessible
      */
-    public void copyByteStream(String sourceStream, ByteStreamGroup targetGroup) throws IOException;
+    void copyByteStream(String sourceStream, ByteStreamGroup targetGroup) throws IOException;
 
     /**
      * Copy a byte stream from this byte stream group to the target byte stream group. Rename
@@ -148,7 +159,7 @@ public interface ByteStreamGroup {
      *          the byte streams or target group are inaccessible
      *
      */
-    public void copyByteStream(String sourceStream, String targetStream, ByteStreamGroup targetGroup)
+    void copyByteStream(String sourceStream, String targetStream, ByteStreamGroup targetGroup)
             throws IOException;
 
     /**
@@ -161,5 +172,5 @@ public interface ByteStreamGroup {
      *          if the base of the byte stream group cannot be accessed or
      *          the byte streams are inaccessible
      */
-    public void renameByteStream(String originalStream, String targetStream) throws IOException;
+    void renameByteStream(String originalStream, String targetStream) throws IOException;
 }

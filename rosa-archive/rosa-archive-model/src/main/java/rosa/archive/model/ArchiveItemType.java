@@ -14,6 +14,7 @@ public enum ArchiveItemType {
     REDUCED_TAGGING_TXT("redtag", "txt"),
     IMAGE_TAGGING("imagetag", "csv"),
     TRANSCRIPTION_ROSE("transcription", "xml"),
+    TRANSCRIPTION_ROSE_TEXT("transcription", "txt"),
     TRANSCRIPTION_AOR("aor", "xml"),
     PERMISSION("permission_", "html");
 

@@ -117,6 +117,23 @@ public class BookDerivative extends AbstractDerivative {
         }
     }
 
+    public void convertTranscriptionTexts() throws IOException {
+        List<String> errors = new ArrayList<>();
+        List<String> warnings = new ArrayList<>();
+
+        store.generateTEITranscriptions(collection, book, errors, warnings);
+
+        if (!warnings.isEmpty()) {
+            reportError("Warning:", warnings);
+        }
+        if (!errors.isEmpty()) {
+            reportError("Errors:", errors);
+        }
+
+    }
+
+
+
     public void generateFileMap() throws IOException {
         Scanner in = new Scanner(System.in);
 

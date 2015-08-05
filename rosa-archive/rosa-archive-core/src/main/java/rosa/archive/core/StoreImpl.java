@@ -1,6 +1,7 @@
 package rosa.archive.core;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -23,12 +24,15 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
+import org.xml.sax.SAXException;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.core.util.CropRunnable;
+import rosa.archive.core.util.TranscriptionConverter;
+import rosa.archive.core.util.XMLWriter;
 import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -58,6 +62,8 @@ import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.meta.MultilangMetadata;
 
 import com.google.inject.Inject;
+
+import javax.xml.transform.stream.StreamResult;
 
 /**
  *
@@ -593,19 +599,11 @@ public class StoreImpl implements Store, ArchiveConstants {
             AnnotatedPage page = loadItem(originalName, bookStreams, AnnotatedPage.class, errors);
             page.setPage(imageName);
             writeItem(page, bookStreams, AnnotatedPage.class, errors);
-//            String transcription = null;
-//            try (InputStream in = bookStreams.getByteStream(originalName)) {
-//                transcription = IOUtils.toString(in, "UTF-8");
-//                transcription = transcription.replaceAll(referencePage, imageName);
-//            }
-
 
             if (errors.isEmpty()) {
                 // If no errors, rename the transcription file
-//                String newName = null;
                 if (reverse) {
                     bookStreams.renameByteStream(originalName, imageName.replace(TIF_EXT, XML_EXT));
-//                    newName = imageName.replace(TIF_EXT, XML_EXT);
                 } else {
                     List<String> parts = new ArrayList<>(Arrays.asList(imageName.split("\\.")));
                     parts.add(1, ArchiveItemType.TRANSCRIPTION_AOR.getIdentifier());
@@ -620,15 +618,83 @@ public class StoreImpl implements Store, ArchiveConstants {
                         }
                         sb.append(str);
                     }
-//                    newName = sb.toString().replace(TIF_EXT, XML_EXT);
+
                     bookStreams.renameByteStream(originalName, sb.toString().replace(TIF_EXT, XML_EXT));
                 }
-
-//                if (transcription != null) {
-//                    try (OutputStream out = bookStreams.getOutputStream())
-//                }
             }
         }
+    }
+
+    @Override
+    public void generateTEITranscriptions(String collection, String book, List<String> errors,
+                                          List<String> warnings) throws IOException {
+        TranscriptionConverter converter = new TranscriptionConverter();
+        XMLWriter xmlWriter = null;
+
+        if (!base.hasByteStreamGroup(collection)
+                || !base.getByteStreamGroup(collection).hasByteStreamGroup(book)) {
+            errors.add("Book not found. [" + collection + ":" + book + "]");
+            return;
+        }
+        ByteStreamGroup bookStreams = base.getByteStreamGroup(collection).getByteStreamGroup(book);
+
+        errors = nonNullList(errors);
+        Book b = loadBook(loadBookCollection(collection, errors), book, errors);
+
+        List<String> filenames = getTranscriptionFileNames(b);
+        for (String transcriptionFilename : filenames) {
+            if (!bookStreams.hasByteStream(transcriptionFilename)) {
+                // Skip if transcription not found in archive
+                continue;
+            }
+
+            String folio = parser.page(transcriptionFilename);
+            converter.setFolioOverride(folio);
+
+            converter.getWarnings().clear();
+            converter.getErrors().clear();
+
+            try {
+                if (xmlWriter == null) {
+                    xmlWriter = new XMLWriter(new StreamResult(
+                            bookStreams.getOutputStream(book + ".transcription.xml")));
+                    converter.startConversion(xmlWriter);
+                }
+
+                String filePath = bookStreams.resolveName(transcriptionFilename);
+                converter.convert(new File(filePath), "Latin1", xmlWriter);
+            } catch (SAXException e) {
+                errors.add("Error converting transcription. [" + transcriptionFilename + "]");
+            }
+
+            warnings.addAll(converter.getWarnings());
+            errors.addAll(converter.getErrors());
+        }
+
+        if (xmlWriter != null) {
+            try {
+                converter.endConversion(xmlWriter);
+            } catch (SAXException e) {
+                throw new IOException("Failed to close transcription converter.");
+            }
+        }
+    }
+
+    private List<String> getTranscriptionFileNames(Book book) {
+        List<String> list = new ArrayList<>();
+
+        for (String name : book.getContent()) {
+            if (isTranscription(name)) {
+                list.add(name);
+            }
+        }
+
+        Collections.sort(list);
+        return list;
+    }
+
+    private boolean isTranscription(String name) {
+        return parser.getArchiveItemType(name) == ArchiveItemType.TRANSCRIPTION_ROSE_TEXT;
     }
 
     private List<String> getTranscriptionsNames(ByteStreamGroup bookStreams) throws IOException {

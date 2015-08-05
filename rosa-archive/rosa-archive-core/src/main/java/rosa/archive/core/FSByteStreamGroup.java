@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.DirectoryStream;
+import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -18,7 +19,7 @@ public class FSByteStreamGroup implements ByteStreamGroup {
 
     private Path base;
 
-    /** TODO should this be public?
+    /**
      * @param base base path of the byte stream group
      */
     public FSByteStreamGroup(String base) {
@@ -46,6 +47,15 @@ public class FSByteStreamGroup implements ByteStreamGroup {
     @Override
     public String name() {
         return base.getFileName().toString();
+    }
+
+    @Override
+    public String resolveName(String childName) {
+        if (hasByteStream(childName) || hasByteStreamGroup(childName)) {
+            return id() + FileSystems.getDefault().getSeparator() + childName;
+        } else {
+            return null;
+        }
     }
 
     @Override
