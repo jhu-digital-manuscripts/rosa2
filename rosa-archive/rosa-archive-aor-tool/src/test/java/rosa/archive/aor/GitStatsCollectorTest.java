@@ -70,7 +70,7 @@ public class GitStatsCollectorTest {
             }
         }).length;
 
-        assertEquals("Unexpected number of files generated.", 15, numCSV);
+        assertEquals("Unexpected number of files generated.", 11, numCSV);
 
         try (InputStreamReader reader = new InputStreamReader(Files.newInputStream(output.resolve("books.csv")))) {
             String[][] table = CSV.parseTable(reader);

@@ -48,6 +48,7 @@ public class GitStatsWriter {
     public void cleanOutputDir() {
         try {
             Files.deleteIfExists(output.resolve(OUTPUT_BOOKS));
+            Files.deleteIfExists(output.resolve("books-latest.csv"));
             Files.deleteIfExists(output.resolve(OUTPUT_COMMITS));
         } catch (IOException e) {
             System.err.println("Failed to clean output directory.");
@@ -129,25 +130,26 @@ public class GitStatsWriter {
      * @param stats stats of repository aggregated by book
      */
     public void writeVocab(BookStats stats) {
-        writeBooksVocab(output, stats);
+//        writeBooksVocab(output, stats);
         writeMarginaliaVocab(output, stats);
         writeUnderlineVocab(output, stats);
         writeMarkedVocab(output, stats);
         writeSymbolVocab(output, stats);
     }
 
-    private void writeBooksVocab(Path output, BookStats stats) {
-        Vocab total = new Vocab();
-        // Aggregate vocab stats from all books
-        for (Entry<String, Stats> entry : stats.statsMap.entrySet()) {
-            total.update(entry.getValue().marginalia_vocab);
-            total.update(entry.getValue().underlines_vocab);
-            total.update(entry.getValue().marks_vocab);
-            total.update(entry.getValue().symbols_vocab);
-        }
-
-        writeVocabAllLanguages("vocab", output, total);
-    }
+    // TODO need to write aggregation of vocab from all annotation types? (might not make sense)
+//    private void writeBooksVocab(Path output, BookStats stats) {
+//        Vocab total = new Vocab();
+//        // Aggregate vocab stats from all books
+//        for (Entry<String, Stats> entry : stats.statsMap.entrySet()) {
+//            total.update(entry.getValue().marginalia_vocab);
+//            total.update(entry.getValue().underlines_vocab);
+//            total.update(entry.getValue().marks_vocab);
+//            total.update(entry.getValue().symbols_vocab);
+//        }
+//
+//        writeVocabAllLanguages("all", output, total);
+//    }
 
     /**
      * Aggregate marginalia vocab stats across all books.
@@ -227,7 +229,7 @@ public class GitStatsWriter {
                 continue;
             }
 
-            String outputName = filePrefix + (isEnglish(lang) ? "" : "_" + lang) + ".csv";
+            String outputName = "vocab_" + filePrefix + "_" + lang + ".csv";
 
             try (BufferedWriter out = Files.newBufferedWriter(
                     output.resolve(outputName), CHARSET, WRITE_APPEND_OPTION)) {
@@ -238,12 +240,6 @@ public class GitStatsWriter {
                 System.err.println("Failed to write vocab file. [" + outputName + "]");
             }
         }
-    }
-
-    private boolean isEnglish(String langCode) {
-        return langCode != null && (
-                langCode.equals("en") || langCode.equals("EN")
-                );
     }
 
     /**
