@@ -16,16 +16,37 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
-//    private TranscriptionXmlSerializer transcriptionXmlSerializer;
-//
-//    private List<String> errors;
-//    private List<String> warnings;
+
+    private List<String> errors;
+    private List<String> warnings;
 
     @Before
     public void setup() {
-//        errors = new ArrayList<>();
-//        warnings = new ArrayList<>();
-//        transcriptionXmlSerializer = new TranscriptionXmlSerializer();
+        errors = new ArrayList<>();
+        warnings = new ArrayList<>();
+    }
+
+    /**
+     * Test the TEI transcription generation on book 'FolgersHa2'. This book
+     * contains no text transcription files, nor TEI transcription files.
+     * No transcription files should be created because of this. The call to
+     * the store should return before creating any new files with no warnings
+     * or errors.
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void dontGenerateTranscriptionFolgersHa2() throws Exception {
+        Path bookPath = getBookPath(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
+        Path transcriptionPath = bookPath.resolve("FolgersHa2.transcription.xml");
+
+        assertFalse("No transcription file should exist.", Files.exists(transcriptionPath));
+
+        store.generateTEITranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, errors, warnings);
+
+        assertFalse("No transcription file should have been written.", Files.exists(transcriptionPath));
+        assertTrue("Errors found.", errors.isEmpty());
+        assertTrue("Warnings found.", warnings.isEmpty());
     }
 
     /**
@@ -42,67 +63,12 @@ public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
      */
     @Test
     public void generateTranscriptionLudwigTest() throws Exception {
-//        ByteStreamGroup bookGroup = base.getByteStreamGroup(VALID_COLLECTION)
-//                .getByteStreamGroup(VALID_BOOK_LUDWIGXV7);
-//        Transcription original = getTranscription(bookGroup);
-//        original.setXML(original.getXML().replaceAll("\\s+", " "));
-//        original.setXML(original.getXML().replaceAll("> <", "><"));
-//
-//        store.generateTEITranscriptions(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, errors, warnings);
-//        Transcription result = getTranscription(bookGroup);
-//        result.setXML(result.getXML().replaceAll("\\s+", " "));
-//        result.setXML(result.getXML().replaceAll("> <", "><"));
-//
-//        System.out.println("Original: " + original.getXML().length());
-//        System.out.println("Result:   " + result.getXML().length());
-//
-//        final int start = 23200;
-//        final int end = start + 200;
-//        for (int i = start; i < end; i++) {
-//            System.out.print(original.getXML().charAt(i));
-//        }
-//        System.out.println();
-//        for (int i = start; i < end; i++) {
-////            if (i >= 23224) {
-////                System.out.print(result.getXML().charAt(i + 5));
-////            } else {
-//                System.out.print(result.getXML().charAt(i));
-////            }
-//        }
-//
-//        System.out.println("\n");
-//        for (int i = 0; i < original.getXML().length(); i++) {
-//            char o = original.getXML().charAt(i);
-//            char r = result.getXML().charAt(i);
-//
-//            if (i == 23224) {
-//                // known difference
-//                continue;
-//            }
-//            if (i > 23224) {
-//                r = result.getXML().charAt(i + 5);
-//            }
-//
-//            if (o != r) {
-//                System.out.println(i);
-//                break;
-//            }
-//        }
-
-                TranscriptionXmlSerializer serializer = new TranscriptionXmlSerializer();
+        TranscriptionXmlSerializer serializer = new TranscriptionXmlSerializer();
 
         Path bookPath = getBookPath(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
         Path transcriptionPath = bookPath.resolve("LudwigXV7.transcription.xml");
 
-        List<String> errors = new ArrayList<>();
-        List<String> warnings = new ArrayList<>();
-
         store.generateTEITranscriptions(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, errors, warnings);
-
-//        System.out.println("Warnings:");
-//        for (String s : warnings) {
-//            System.out.println("  " + s);
-//        }
 
         assertTrue("Errors were found.", errors.isEmpty());
 //        assertTrue("Warnings were found.", warnings.isEmpty());
@@ -119,16 +85,5 @@ public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
         // TODO check for valid TEI
 
     }
-
-//    private Transcription getTranscription(ByteStreamGroup bookGroup) throws IOException {
-//        Transcription trans = null;
-//        try (InputStream in = bookGroup.getByteStream(bookGroup.name() + ".transcription.xml")) {
-//            trans = transcriptionXmlSerializer.read(in, errors);
-//            assertTrue("Errors encountered while reading original transcription.", errors.isEmpty());
-//            assertNotNull(trans);
-//        }
-//
-//        return trans;
-//    }
 
 }

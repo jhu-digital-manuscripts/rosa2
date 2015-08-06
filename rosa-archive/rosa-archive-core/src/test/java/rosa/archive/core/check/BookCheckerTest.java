@@ -34,6 +34,14 @@ public class BookCheckerTest extends BaseArchiveTest {
         boolean check = store.check(loadValidCollection(), loadValidLudwigXV7(), false, errors, warnings);
         // testBook data contains references to many images that do not exist in the test directory.
         // these will all appear as errors!
+        System.out.println("Warning:");
+        for (String s : warnings) {
+            System.out.println("  " + s);
+        }
+        System.out.println("Errors:");
+        for (String s : errors) {
+            System.out.println("  " + s);
+        }
         assertTrue(check);
         assertTrue("There should be NO errors.", errors.isEmpty());
         assertTrue("Warnings list should be empty.", warnings.isEmpty());

@@ -642,6 +642,10 @@ public class StoreImpl implements Store, ArchiveConstants {
         Book b = loadBook(loadBookCollection(collection, errors), book, errors);
 
         List<String> filenames = getTranscriptionFileNames(b);
+        if (filenames == null || filenames.isEmpty()) {
+            return;
+        }
+
         for (String transcriptionFilename : filenames) {
             if (!bookStreams.hasByteStream(transcriptionFilename)) {
                 // Skip if transcription not found in archive

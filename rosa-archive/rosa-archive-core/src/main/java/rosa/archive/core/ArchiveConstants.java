@@ -3,91 +3,93 @@ package rosa.archive.core;
 import java.nio.charset.Charset;
 
 public interface ArchiveConstants {
-    static final Charset UTF_8 = Charset.forName("UTF-8");
+    Charset UTF_8 = Charset.forName("UTF-8");
     
     // AoR annotation schema and dtd
 
-    static final String annotationSchemaUrl = "http://www.livesandletters.ac.uk/schema/aor_20141118.xsd";
+    String annotationSchemaUrl = "http://www.livesandletters.ac.uk/schema/aor_20141118.xsd";
 
-    static final String annotationDtdUrl = "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd";
+    String TEI_SCHEMA_URL = "http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_ms.xsd";
+
+    String annotationDtdUrl = "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd";
 
     // Bytestream names
 
-    static final String ILLUSTRATION_TITLES = "illustration_titles.csv";
+    String ILLUSTRATION_TITLES = "illustration_titles.csv";
 
-    static final String NARRATIVE_SECTIONS = "narrative_sections.csv";
+    String NARRATIVE_SECTIONS = "narrative_sections.csv";
 
-    static final String CHARACTER_NAMES = "character_names.csv";
+    String CHARACTER_NAMES = "character_names.csv";
 
-    static final String MISSING_IMAGE = "missing_image.tif";
+    String MISSING_IMAGE = "missing_image.tif";
 
-    static final String CROP = ".crop.txt";
+    String CROP = ".crop.txt";
 
-    static final String IMAGES = ".images.csv";
+    String IMAGES = ".images.csv";
 
-    static final String IMAGES_CROP = ".images.crop.csv";
+    String IMAGES_CROP = ".images.crop.csv";
 
-    static final String IMAGE_TAGGING = ".imagetag.csv";
+    String IMAGE_TAGGING = ".imagetag.csv";
 
-    static final String NARRATIVE_TAGGING = ".nartag.csv";
+    String NARRATIVE_TAGGING = ".nartag.csv";
 
-    static final String NARRATIVE_TAGGING_MAN = ".nartag.txt";
+    String NARRATIVE_TAGGING_MAN = ".nartag.txt";
 
-    static final String REDUCED_TAGGING = ".redtag.txt";
+    String REDUCED_TAGGING = ".redtag.txt";
 
-    static final String SHA1SUM = ".SHA1SUM";
+    String SHA1SUM = ".SHA1SUM";
 
-    static final String TRANSCRIPTION = ".transcription";
+    String TRANSCRIPTION = ".transcription";
 
-    static final String DESCRIPTION = ".description_";
+    String DESCRIPTION = ".description_";
 
-    static final String PERMISSION = ".permission_";
+    String PERMISSION = ".permission_";
 
-    static final String BNF_FILEMAP = ".bnf.filemap.csv";
+    String BNF_FILEMAP = ".bnf.filemap.csv";
 
-    static final String BNF_FOLIATION = ".bnf.foliation.xml";
+    String BNF_FOLIATION = ".bnf.foliation.xml";
 
-    static final String BNF_MD5SUM = ".bnf.MD5SUM";
+    String BNF_MD5SUM = ".bnf.MD5SUM";
 
-    static final String AOR_ANNOTATION = ".aor";
+    String AOR_ANNOTATION = ".aor";
 
-    static final String FILE_MAP = "filemap.csv";
+    String FILE_MAP = "filemap.csv";
     
     // Images names
 
-    static final String IMG_FRONTCOVER = ".binding.frontcover.tif";
+    String IMG_FRONTCOVER = ".binding.frontcover.tif";
 
-    static final String IMG_BACKCOVER = ".binding.backcover.tif";
+    String IMG_BACKCOVER = ".binding.backcover.tif";
 
-    static final String IMG_FRONTPASTEDOWN = ".frontmatter.pastedown.tif";
+    String IMG_FRONTPASTEDOWN = ".frontmatter.pastedown.tif";
 
-    static final String IMG_ENDPASTEDOWN = ".endmatter.pastedown.tif";
+    String IMG_ENDPASTEDOWN = ".endmatter.pastedown.tif";
 
-    static final String IMG_FRONT_FLYLEAF = ".frontmatter.flyleaf.";
+    String IMG_FRONT_FLYLEAF = ".frontmatter.flyleaf.";
 
-    static final String IMG_END_FLYLEAF = ".endmatter.flyleaf.";
+    String IMG_END_FLYLEAF = ".endmatter.flyleaf.";
 
-    static final String CROPPED_DIR = "cropped";
+    String CROPPED_DIR = "cropped";
 
-    static final String MISSING_PREFIX = "*";
+    String MISSING_PREFIX = "*";
 
     // AoR Specific
 
-    static final String PEOPLE = "people.csv";
+    String PEOPLE = "people.csv";
 
-    static final String LOCATIONS = "locations.csv";
+    String LOCATIONS = "locations.csv";
 
-    static final String BOOKS = "books.csv";
+    String BOOKS = "books.csv";
 
     // File extensions
 
-    static final String CSV_EXT = ".csv";
+    String CSV_EXT = ".csv";
 
-    static final String XML_EXT = ".xml";
+    String XML_EXT = ".xml";
     
-    static final String HTML_EXT = ".html";
+    String HTML_EXT = ".html";
 
-    static final String TXT_EXT = ".txt";
+    String TXT_EXT = ".txt";
 
-    static final String TIF_EXT = ".tif";
+    String TIF_EXT = ".tif";
 }

@@ -1,6 +1,7 @@
 package rosa.archive.core.check;
 
 import java.io.IOException;
+import java.io.StringReader;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,6 +43,7 @@ import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.SHA1Checksum;
+import rosa.archive.model.Transcription;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
@@ -61,7 +63,9 @@ public class BookChecker extends AbstractArchiveChecker {
     private static final String PAGE_PATTERN = "\\w*\\d+(r|v|R|V)";
     private static final String MANUSCRIPT = "manuscript";
     private static final LSResourceResolver resourceResolver = new CachingUrlResourceResolver();
+
     private static Schema aorAnnotationSchema;
+    private static Schema teiSchema;
 
     /**
      * @param serializers all required serializers
@@ -126,6 +130,8 @@ public class BookChecker extends AbstractArchiveChecker {
         check(book.getAnnotatedPages(), book, bsg, errors, warnings);
         // Check AoR reference sheets
         checkReferences(collection, book.getAnnotatedPages(), book, bsg, errors, warnings);
+        // Check transcription
+//        validateTranscription(book.getTranscription(), errors, warnings);
 
         // Check character_names and illustration_titles
         check(
@@ -796,7 +802,7 @@ public class BookChecker extends AbstractArchiveChecker {
             }
             if (guessImageName(scene.getEndPage(), parent) == null) {
                 errors.add("Could not find end page of scene. ["
-                        + scene.getId() + " : "  + scene.getEndPage() + "]");
+                        + scene.getId() + " : " + scene.getEndPage() + "]");
             }
         }
 
@@ -894,6 +900,57 @@ public class BookChecker extends AbstractArchiveChecker {
 
         } catch (SAXException | IOException e) {
             errors.add("[" + file + "] failed to validate.\n" + stacktrace(e));
+        }
+    }
+
+    /**
+     * Validate
+     *
+     * @param transcription .
+     * @param errors list of errors
+     * @param warnings list of warnings
+     */
+    public void validateTranscription(Transcription transcription, final List<String> errors,
+                                      final List<String> warnings) {
+
+        // Validate transcription as TEI
+        final String file = transcription.getId();
+        try {
+            if (teiSchema == null) {
+                URL schemaUrl = new URL(TEI_SCHEMA_URL);
+                SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+                teiSchema = schemaFactory.newSchema(schemaUrl);
+            }
+
+            Validator validator = teiSchema.newValidator();
+            validator.setResourceResolver(resourceResolver);
+
+            validator.setErrorHandler(new ErrorHandler() {
+                @Override
+                public void warning(SAXParseException e) throws SAXException {
+                    warnings.add("[Warn: " + file + "] (" + e.getLineNumber() + ":"
+                            + e.getColumnNumber() + "): " + e.getMessage());
+                }
+
+                @Override
+                public void error(SAXParseException e) throws SAXException {
+                    errors.add("[Error: " + file + "] (" + e.getLineNumber() + ":"
+                            + e.getColumnNumber() + "): " + e.getMessage());
+                }
+
+                @Override
+                public void fatalError(SAXParseException e) throws SAXException {
+                    errors.add("[Fatal Error: " + file + "] (" + e.getLineNumber() + ":"
+                            + e.getColumnNumber() + "): " + e.getMessage());
+                }
+            });
+
+//            Source source = new StreamSource(bsg.getByteStream(transcription.getId()));
+            Source source = new StreamSource(new StringReader(transcription.getXML()));
+            validator.validate(source);
+
+        } catch (SAXException | IOException e) {
+            errors.add("[" + transcription.getId() + "] failed to validate.\n" + stacktrace(e));
         }
     }
 
