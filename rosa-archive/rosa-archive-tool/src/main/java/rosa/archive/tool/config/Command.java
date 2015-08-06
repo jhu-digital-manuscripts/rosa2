@@ -13,7 +13,8 @@ public enum Command {
     FILE_MAP("file-map"),
     VALIDATE_XML("validate-xml"),
     RENAME_IMAGES("rename-images"),
-    RENAME_TRANSCRIPTIONS("rename-transcriptions");
+    RENAME_TRANSCRIPTIONS("rename-transcriptions"),
+    GENERATE_TEI("generate-tei");
 
     private String display;
 

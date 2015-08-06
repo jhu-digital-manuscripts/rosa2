@@ -106,6 +106,10 @@ public class ArchiveTool {
                             "two names delimited by a comma (one,two). If image renaming goes from one -> two, " +
                             "then this option will reverse that relationship, going from two -> one. This will " +
                             "have the effect of returning the images to their original names.");
+            break;
+        case GENERATE_TEI:
+            // No options
+            break;
         default:
             break;
         }
@@ -207,6 +211,9 @@ public class ArchiveTool {
             break;
         case RENAME_TRANSCRIPTIONS:
             deriv.renameTranscriptions(hasOption(cmd, Flag.REVERSE));
+            break;
+        case GENERATE_TEI:
+            deriv.convertTranscriptionTexts();
             break;
         default:
             displayError("Invalid command found.", args);
