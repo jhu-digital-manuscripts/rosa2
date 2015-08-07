@@ -1,10 +1,13 @@
 package rosa.archive.core;
 
+import com.google.inject.Inject;
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import rosa.archive.model.Transcription;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,7 +18,10 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+
 public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
+    @Inject
+    private BookChecker bookChecker;
 
     private List<String> errors;
     private List<String> warnings;
@@ -77,12 +83,30 @@ public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
         try (InputStream in = Files.newInputStream(transcriptionPath)) {
             Transcription trans = serializer.read(in, errors);
 
+            int start = 2000;
+            int end = start + 500;
+            System.out.println();
+            for (int i = start; i < end; i++) {
+                System.out.print(trans.getXML().charAt(i));
+            }
+            System.out.println();
+
             assertNotNull("Transcription XML unreadable.", trans);
             assertNotNull("Text not readable.", trans.getXML());
             assertFalse("Text was blank.", trans.getXML().isEmpty());
+
+            // TODO check for valid TEI
+//            bookChecker.validateTranscription(trans, errors, warnings);
+
+            System.out.println("\n\nErrors:");
+            for (String err : errors) {
+                System.out.println("  " + err);
+            }
+
+            assertTrue("Errors found.", errors.isEmpty());
         }
 
-        // TODO check for valid TEI
+
 
     }
 

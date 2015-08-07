@@ -31,17 +31,12 @@ public class BookCheckerTest extends BaseArchiveTest {
     @Test
     public void loadLudwigAndCheckWithoutBits() throws Exception {
         // Use testCollection and testBook from the base class
+        store.generateTEITranscriptions(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, errors, warnings);
+        assertTrue(errors.isEmpty());
+        warnings.clear();
+
         boolean check = store.check(loadValidCollection(), loadValidLudwigXV7(), false, errors, warnings);
-        // testBook data contains references to many images that do not exist in the test directory.
-        // these will all appear as errors!
-        System.out.println("Warning:");
-        for (String s : warnings) {
-            System.out.println("  " + s);
-        }
-        System.out.println("Errors:");
-        for (String s : errors) {
-            System.out.println("  " + s);
-        }
+
         assertTrue(check);
         assertTrue("There should be NO errors.", errors.isEmpty());
         assertTrue("Warnings list should be empty.", warnings.isEmpty());
@@ -55,6 +50,11 @@ public class BookCheckerTest extends BaseArchiveTest {
     @Test
     public void loadLudwigAndCheckWithBits() throws Exception {
         // Use testCollection and testBook from the base class
+        store.generateTEITranscriptions(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, errors, warnings);
+        store.updateChecksum(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, false, errors);
+        assertTrue(errors.isEmpty());
+        warnings.clear();
+
         boolean check = store.check(loadValidCollection(), loadValidLudwigXV7(), true, errors, warnings);
         assertTrue(check);
         assertTrue("There should be NO errors.", errors.isEmpty());

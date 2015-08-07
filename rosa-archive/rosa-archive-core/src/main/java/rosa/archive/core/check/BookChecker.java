@@ -131,7 +131,7 @@ public class BookChecker extends AbstractArchiveChecker {
         // Check AoR reference sheets
         checkReferences(collection, book.getAnnotatedPages(), book, bsg, errors, warnings);
         // Check transcription
-//        validateTranscription(book.getTranscription(), errors, warnings);
+        validateTranscription(book.getTranscription(), errors, warnings);
 
         // Check character_names and illustration_titles
         check(
@@ -912,6 +912,10 @@ public class BookChecker extends AbstractArchiveChecker {
      */
     public void validateTranscription(Transcription transcription, final List<String> errors,
                                       final List<String> warnings) {
+
+        if (transcription == null) {
+            return;
+        }
 
         // Validate transcription as TEI
         final String file = transcription.getId();

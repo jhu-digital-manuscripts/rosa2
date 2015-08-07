@@ -23,6 +23,10 @@ import java.util.regex.Pattern;
  * Both errors and warnings are logged
  */
 public class TranscriptionConverter {
+    // TODO schema location must change to the custom TEI schema....
+    private static final String TEI_NAMESPACE_URI = "http://www.tei-c.org/ns/1.0";
+    private static final String TEI_SCHEMA_URI = "http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_ms.xsd";
+
 	private String lastfolio;
 	private String lastcol;
 	private List<String> warnings;
@@ -77,10 +81,52 @@ public class TranscriptionConverter {
 		errors.clear();
 
 		out.startDocument();
-// TODO redo start of document to include proper xml namespace declarations, teiHeader, etc
+        createTEITop(out);
+
 		out.attribute("type", "ms");
 		out.startElement("div");
 	}
+
+    /**
+     * This method will provide proper TEI header content in order for the
+     * document to validate. This will result in all transcription data
+     * being placed in /TEI/text/body (XPath). All of these tags must be
+     * closed when the document is complete.
+     *
+     * @param out xml writer
+     * @throws SAXException .
+     */
+    private void createTEITop(XMLWriter out) throws SAXException {
+        out.attribute("xmlns", TEI_NAMESPACE_URI);
+        out.attribute("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
+        out.attribute("xsi:schemaLocation", TEI_NAMESPACE_URI + "    " + TEI_SCHEMA_URI);
+        out.startElement("TEI");
+
+        out.startElement("teiHeader");
+        out.startElement("fileDesc");
+
+        out.startElement("titleStmt");
+        out.startElement("title");
+        out.endElement("title");
+        out.endElement("titleStmt");
+
+        out.startElement("publicationStmt");
+        out.startElement("distributor");
+        out.endElement("distributor");
+        out.endElement("publicationStmt");
+
+        out.startElement("sourceDesc");
+        out.startElement("p");
+        out.endElement("p");
+        out.endElement("sourceDesc");
+
+        out.endElement("fileDesc");
+        out.endElement("teiHeader");
+
+        out.startElement("text");
+        out.startElement("body");
+
+    }
 
 	public void convert(File infile, String charset, XMLWriter out) throws IOException, SAXException {
 		ByteBuffer buf = read(infile, 0, (int) infile.length());
@@ -90,7 +136,10 @@ public class TranscriptionConverter {
 	}
 
 	public void endConversion(XMLWriter out) throws SAXException {
-		out.endElement("div"); // TODO redo end to close proper TEI tags
+		out.endElement("div");
+        out.endElement("body");
+        out.endElement("text");
+        out.endElement("TEI");
 		out.endDocument();
 	}
 
@@ -659,13 +708,11 @@ public class TranscriptionConverter {
 						val = val == null ? "" : val;
 
 						out.attribute("type", "miniature");
-						out.startElement("div");
 
 						out.startElement("figure");
 						out.startElement("head");
 						convertText(t.text, line, false, out);
 						out.endElement("head");
-						out.endElement("figure");
 
 						for (String s : val.split(",")) {
 							s = s.trim();
@@ -678,16 +725,16 @@ public class TranscriptionConverter {
 							}
 						}
 
-						out.endElement("div");
+                        out.endElement("figure");
 					}
 					break;
 				case RUBRIC:
 					tag = line.tags.get(0);
 
-					out.startElement("l");
-					out.attribute("rend", "rubric");
-					out.startElement("hi");
-					convertText(tag.text, line, false, out);
+                    out.startElement("l");
+                    out.attribute("rend", "rubric");
+                    out.startElement("hi");
+                    convertText(tag.text, line, false, out);
 					out.endElement("hi");
 
 					for (int i = 1; i < line.tags.size(); i++) {
@@ -701,10 +748,10 @@ public class TranscriptionConverter {
 				case ANNOTATION:
 					tag = line.tags.get(0);
 
-					out.startElement("l");
-					out.attribute("type", "scribalAnnotation");
-					out.startElement("note");
-					convertText(tag.text, line, false, out);
+                    out.startElement("l");
+                    out.attribute("type", "scribalAnnotation");
+                    out.startElement("note");
+                    convertText(tag.text, line, false, out);
 					out.endElement("note");
 					out.endElement("l");
 					break;
@@ -826,10 +873,18 @@ public class TranscriptionConverter {
 	}
 
 	private void convertNormalLine(Line line, XMLWriter out) throws IOException, SAXException {
+        /*
+         TODO 'rhyme' attribute is not included in any of the community supported TEI schema
 
-		if (line.brokenrhyme) {
-			out.attribute("rhyme", "X");
-		}
+         this attribute exists within the full TEI spec within the "verse" module. This module
+         does not seem to be included in the major community schema. A TEI schema can be customized
+         to include this module.
+
+         For the community supported schema, see http://www.tei-c.org/release/xml/tei/custom/schema/xsd/
+         */
+//		if (line.brokenrhyme) {
+//			out.attribute("rhyme", "X");
+//		}
 		out.startElement("l");
 
 		int offset = 0;

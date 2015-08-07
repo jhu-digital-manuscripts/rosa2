@@ -8,7 +8,6 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,7 +21,6 @@ import rosa.archive.model.BookCollection;
  * Test StoreImpl functionality not tested elsewhere.
  */
 public class StoreImplTest extends BaseArchiveTest {
-    private static Path b;
     @Test
     public void testListCollections() throws IOException {
         String[] collections = store.listBookCollections();
@@ -84,6 +82,10 @@ public class StoreImplTest extends BaseArchiveTest {
     public void testCheckers() throws Exception {
         List<String> errors = new ArrayList<>();
         List<String> warnings = new ArrayList<>();
+
+        store.generateTEITranscriptions(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, errors, warnings);
+        store.updateChecksum(loadValidCollection(), loadValidLudwigXV7(), false, errors);
+        assertTrue(errors.isEmpty());
 
         assertTrue(store.check(loadValidCollection(), false, errors, warnings));
         assertEquals(0, errors.size());
