@@ -106,6 +106,7 @@ public class BookChecker extends AbstractArchiveChecker {
         //   cropInfo
         check(book.getCropInfo(), book, bsg, errors, warnings);
 
+        checkTEIDescriptions(bsg, errors, warnings);
         for (String lang : collection.getAllSupportedLanguages()) {
             //   bookMetadata
             check(book.getBookMetadata(lang), book, bsg, errors, warnings);
@@ -131,7 +132,7 @@ public class BookChecker extends AbstractArchiveChecker {
         // Check AoR reference sheets
         checkReferences(collection, book.getAnnotatedPages(), book, bsg, errors, warnings);
         // Check transcription
-        validateTranscription(book.getTranscription(), errors, warnings);
+        checkTranscription(book.getTranscription(), errors, warnings);
 
         // Check character_names and illustration_titles
         check(
@@ -910,15 +911,35 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param errors list of errors
      * @param warnings list of warnings
      */
-    public void validateTranscription(Transcription transcription, final List<String> errors,
-                                      final List<String> warnings) {
+    public void checkTranscription(Transcription transcription, final List<String> errors,
+                                   final List<String> warnings) {
 
         if (transcription == null) {
             return;
         }
 
-        // Validate transcription as TEI
-        final String file = transcription.getId();
+        validateTEI(
+                transcription.getId(),
+                new StreamSource(new StringReader(transcription.getXML())),
+                errors,
+                warnings
+        );
+    }
+
+    public void checkTEIDescriptions(ByteStreamGroup bookGroup, final List<String> errors, final List<String> warnings) {
+        try {
+            for (String file : bookGroup.listByteStreamNames()) {
+                if (file.contains("description_")) {
+                    validateTEI(file, new StreamSource(bookGroup.getByteStream(file)), errors, warnings);
+                }
+            }
+        } catch (IOException e) {
+            errors.add("Failed to check TEI descriptions.");
+        }
+    }
+
+    private void validateTEI(final String id, Source xmlSource, final List<String> errors, final List<String> warnings) {
+        // Validate as TEI
         try {
             if (teiSchema == null) {
                 URL schemaUrl = new URL(TEI_SCHEMA_URL);
@@ -932,29 +953,27 @@ public class BookChecker extends AbstractArchiveChecker {
             validator.setErrorHandler(new ErrorHandler() {
                 @Override
                 public void warning(SAXParseException e) throws SAXException {
-                    warnings.add("[Warn: " + file + "] (" + e.getLineNumber() + ":"
+                    warnings.add("[Warn: " + id + "] (" + e.getLineNumber() + ":"
                             + e.getColumnNumber() + "): " + e.getMessage());
                 }
 
                 @Override
                 public void error(SAXParseException e) throws SAXException {
-                    errors.add("[Error: " + file + "] (" + e.getLineNumber() + ":"
+                    errors.add("[Error: " + id + "] (" + e.getLineNumber() + ":"
                             + e.getColumnNumber() + "): " + e.getMessage());
                 }
 
                 @Override
                 public void fatalError(SAXParseException e) throws SAXException {
-                    errors.add("[Fatal Error: " + file + "] (" + e.getLineNumber() + ":"
+                    errors.add("[Fatal Error: " + id + "] (" + e.getLineNumber() + ":"
                             + e.getColumnNumber() + "): " + e.getMessage());
                 }
             });
 
-//            Source source = new StreamSource(bsg.getByteStream(transcription.getId()));
-            Source source = new StreamSource(new StringReader(transcription.getXML()));
-            validator.validate(source);
+            validator.validate(xmlSource);
 
         } catch (SAXException | IOException e) {
-            errors.add("[" + transcription.getId() + "] failed to validate.\n" + stacktrace(e));
+            errors.add("[" + id + "] failed to validate.\n" + stacktrace(e));
         }
     }
 

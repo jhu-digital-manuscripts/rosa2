@@ -96,7 +96,7 @@ public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
             assertFalse("Text was blank.", trans.getXML().isEmpty());
 
             // TODO check for valid TEI
-//            bookChecker.validateTranscription(trans, errors, warnings);
+//            bookChecker.checkTranscription(trans, errors, warnings);
 
             System.out.println("\n\nErrors:");
             for (String err : errors) {
