@@ -318,4 +318,26 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         service.clear();
     }
 
+    /**
+     * Search for a specific string of text that appears in the transcription of
+     * the text in LudwigXV7. This text appears on folio 013r only, so the
+     * search service should return only a single match.
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testSearchTranscription() throws Exception {
+        service.update(store, VALID_COLLECTION);
+
+        SearchResult result = service.search(
+                new Query(SearchFields.TRANSCRIPTION_TEXT, "Tout adés la ou il rendoit"),
+                null
+        );
+
+        assertNotNull(result);
+        assertEquals("There should be only 1 match.", 1, result.getMatches().length);
+        assertEquals("Unexpected search match ID found.",
+                "valid;LudwigXV7;LudwigXV7.013r.tif", result.getMatches()[0].getId());
+    }
+
 }

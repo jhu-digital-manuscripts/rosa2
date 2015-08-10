@@ -5,6 +5,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+import rosa.archive.model.Transcription;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -29,6 +30,24 @@ public class TranscriptionSplitter {
     private static final Pattern pagePattern = Pattern.compile("(\\d+)(r|v)");
 
     private static DocumentBuilder docBuilder;
+
+    /**
+     * Split up transcription data for a book into fragments according to page and
+     * column.
+     *
+     * {@see #split(String)}
+     *
+     * @param transcription transcription object from a book
+     * @return transcription text split per page
+     */
+    public static Map<String, String> split(Transcription transcription) {
+        if (transcription == null
+                || transcription.getXML() == null || transcription.getXML().isEmpty()) {
+            return null;
+        }
+
+        return split(transcription.getXML());
+    }
 
     /**
      * Split up the transcription XML into fragments according to page and column. All

@@ -3,11 +3,13 @@ package rosa.search.core;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
@@ -35,6 +37,7 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 import org.xml.sax.helpers.XMLReaderFactory;
 
+import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookDescription;
@@ -182,8 +185,11 @@ public class LuceneMapper {
             BooleanQuery query = new BooleanQuery();
 
             for (SearchFieldType type: sf.getFieldTypes()) {
-                query.add(create_lucene_query(sf, type, term.getValue()),
-                        Occur.SHOULD);
+                Query q = create_lucene_query(sf, type, term.getValue());
+
+                if (q != null) {
+                    query.add(q, Occur.SHOULD);
+                }
             }
 
             return query;
@@ -243,6 +249,15 @@ public class LuceneMapper {
         }
     }
 
+    /**
+     * Create and index Lucene documents for a given book within a book
+     * collection.
+     *
+     * @param col BookCollection object
+     * @param book Book object
+     * @return list of documents representing the book
+     * @throws IOException
+     */
     public List<Document> createDocuments(BookCollection col, Book book)
             throws IOException {
         List<Document> result = new ArrayList<>();
@@ -258,6 +273,7 @@ public class LuceneMapper {
         }
 
         // Create document for each image
+        Map<String, String> transcriptionMap = TranscriptionSplitter.split(book.getTranscription());
 
         ImageList images = book.getImages();
         if (images.getImages() == null) {
@@ -266,7 +282,8 @@ public class LuceneMapper {
             for (BookImage image : images.getImages()) {
                 Document doc = new Document();
 
-                index(doc, col, book, image);
+                index(doc, col, book, image,
+                        transcriptionMap != null ? transcriptionMap.get(getStandardPage(image)) : null);
                 result.add(doc);
             }
         }
@@ -274,8 +291,27 @@ public class LuceneMapper {
         return result;
     }
 
-    private static String xml_to_text(InputSource src) throws SAXException,
-            IOException {
+    // TODO need better way of getting standard name... refer to how it is done in the transcription splitter
+    private String getStandardPage(BookImage image) {
+        String start = image.getName();
+        if (start.length() == 2) {
+            return "00" + start;
+        } else if (start.length() == 3) {
+            return "0" + start;
+        } else {
+            return start;
+        }
+    }
+
+    /**
+     * Parse an XML document and return all textual content in a String.
+     *
+     * @param src source XML
+     * @return String of all textual content
+     * @throws SAXException .
+     * @throws IOException .
+     */
+    private static String xml_to_text(InputSource src) throws SAXException, IOException {
         XMLReader r = XMLReaderFactory.createXMLReader();
         final StringBuilder result = new StringBuilder();
 
@@ -284,7 +320,6 @@ public class LuceneMapper {
                     throws SAXException {
                 result.append(text, offset, len);
             }
-
         });
 
         r.parse(src);
@@ -316,8 +351,8 @@ public class LuceneMapper {
                             doc,
                             SearchFields.DESCRIPTION_TEXT,
                             type,
-                            xml_to_text(new InputSource(new StringReader(desc
-                                    .getXML()))));
+                            xml_to_text(new InputSource(new StringReader(desc.getXML())))
+                    );
                 }
             }
         } catch (SAXException e) {
@@ -326,8 +361,27 @@ public class LuceneMapper {
         }
     }
 
-    private void index(Document doc, BookCollection col, Book book,
-            BookImage image) {
+    /**
+     * Index all information relevant for one page in the book.
+     *
+     * The information indexed here includes:
+     * <ul>
+     * <li>image ID</li>
+     * <li>image short name</li>
+     * <li>descriptions of any illustrations that appear on page</li>
+     * <li>character names of those characters that appear in the text on page</li>
+     * <li>narrative sections</li>
+     * <li>transcription text for this page</li>
+     * </ul>
+     *
+     * @param doc Lucene document
+     * @param col BookCollection obj
+     * @param book Book obj
+     * @param image this image
+     * @param transcriptiongFragment XML fragment
+     */
+    private void index(Document doc, BookCollection col, Book book, BookImage image,
+                       String transcriptiongFragment) {
         add_field(doc, SearchFields.ID,
                 SearchUtil.createId(col.getId(), book.getId(), image.getId()));
         add_field(doc, SearchFields.COLLECTION_ID, col.getId());
@@ -365,7 +419,8 @@ public class LuceneMapper {
                 for (String title_id: illus.getTitles()) {
                     String title = titles.getTitleById(title_id);
 
-                    if (title_id == null) {
+//                    if (title_id == null) {
+                    if (title_id != null) {
                         title_field.append(title_id);
                         title_field.append(", ");
                     } else {
@@ -424,17 +479,19 @@ public class LuceneMapper {
                         image.getId())) {
 
                     if (scene.getStartTranscription() != null) {
-                        trans_field
-                                .append(scene.getStartTranscription() + ", ");
+                        trans_field.append(scene.getStartTranscription());
+                        trans_field.append(", ");
                     }
 
-                    sectionids_field.append(scene.getId() + " ");
+                    sectionids_field.append(scene.getId());
+                    sectionids_field.append(" ");
 
                     int secindex = narsecs.findIndexOfSceneById(scene.getId());
 
                     if (secindex != -1) {
                         NarrativeScene ns = narsecs.asScenes().get(secindex);
-                        sectiondesc_field.append(ns.getDescription() + ", ");
+                        sectiondesc_field.append(ns.getDescription());
+                        sectiondesc_field.append(", ");
                     }
                 }
             }
@@ -460,7 +517,7 @@ public class LuceneMapper {
         StructurePageSide side = findReducedTaggingSide(book, image.getId());
 
         if (side != null) {
-            StringBuffer rubrics = new StringBuffer();
+            StringBuilder rubrics = new StringBuilder();
 
             for (StructureColumn c: side.columns()) {
                 for (Item item: c.getItems()) {
@@ -470,7 +527,8 @@ public class LuceneMapper {
                         // Remove / used to indicate abbreviations
                         rubric = rubric.replaceAll("/", "");
 
-                        rubrics.append(rubric + ", ");
+                        rubrics.append(rubric);
+                        rubrics.append(", ");
                     }
                 }
             }
@@ -481,11 +539,14 @@ public class LuceneMapper {
             }
         }
 
-        Transcription trans = book.getTranscription();
-
-        if (trans != null) {
-            // TODO
-
+        // Index transcription text that appears on this page
+        if (transcriptiongFragment != null) {
+            try {
+                indexTranscriptionFragment(transcriptiongFragment, doc);
+            } catch (SAXException | IOException e) {
+                logger.log(Level.SEVERE, "Failed to parse transcription fragment. ["
+                        + image.getName() + "]", e);
+            }
         }
     }
 
@@ -525,7 +586,7 @@ public class LuceneMapper {
     }
 
     /**
-     * @param query
+     * @param query .
      * @return Return the names of lucene field used by this query
      */
     public Set<String> getLuceneFields(rosa.search.model.Query query) {
@@ -548,6 +609,36 @@ public class LuceneMapper {
                     result.add(getLuceneField(sf, type));
                 }
             }
+        }
+    }
+
+    private TranscriptionXMLReader transcriptionXMLReader = new TranscriptionXMLReader();
+
+    private void indexTranscriptionFragment(String transcription, Document doc) throws SAXException, IOException {
+        XMLReader xmlReader = XMLReaderFactory.createXMLReader();
+
+        transcriptionXMLReader.clear();
+        xmlReader.setContentHandler(transcriptionXMLReader);
+
+        xmlReader.parse(new InputSource(new StringReader(transcription)));
+
+        add_field(doc, SearchFields.TRANSCRIPTION_TEXT, transcriptionXMLReader.getPoetry());
+
+        if (transcriptionXMLReader.hasCatchphrase()) {
+            add_field(doc, SearchFields.TRANSCRIPTION_TEXT, transcriptionXMLReader.getCatchphrase());
+        }
+        if (transcriptionXMLReader.hasRubric()) {
+            add_field(doc, SearchFields.TRANSCRIPTION_RUBRIC, transcriptionXMLReader.getRubric());
+        }
+        if (transcriptionXMLReader.hasIllus()) {
+            add_field(doc, SearchFields.TRANSCRIPTION_TEXT, transcriptionXMLReader.getIllustration());
+        }
+
+        add_field(doc, SearchFields.TRANSCRIPTION_LECOY, transcriptionXMLReader.getLecoy());
+        add_field(doc, SearchFields.TRANSCRIPTION_TEXT, transcriptionXMLReader.getLine());
+
+        if (transcriptionXMLReader.hasNote()) {
+            add_field(doc, SearchFields.TRANSCRIPTION_NOTE, transcriptionXMLReader.getNote());
         }
     }
 }
