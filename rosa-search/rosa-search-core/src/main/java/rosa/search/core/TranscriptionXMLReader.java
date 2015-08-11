@@ -4,6 +4,16 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+/**
+ * A SAX content handler that will parse Roman de la Rose XML transcription
+ * fragments to pull important data. Primarily used when indexing these
+ * transcriptions. As this handler parses XML, it will record text content
+ * for various categories such as poetry, lecoy, illustrations, etc which
+ * can be retrieved when parsing is complete.
+ *
+ * The stored data is maintained between parsing different documents or
+ * cleared using the {@link #clear()} method if the data should not be saved.
+ */
 public class TranscriptionXMLReader extends DefaultHandler {
 
     private StringBuffer poetry;
@@ -17,10 +27,6 @@ public class TranscriptionXMLReader extends DefaultHandler {
     private StringBuffer current = null;
 
     public TranscriptionXMLReader() {
-        clear();
-    }
-
-    public void clear() {
         poetry = new StringBuffer();
         line = new StringBuffer();
         lecoy = new StringBuffer();
@@ -28,8 +34,19 @@ public class TranscriptionXMLReader extends DefaultHandler {
         catchphrase = new StringBuffer();
         illus = new StringBuffer();
         note = new StringBuffer();
+    }
 
-        current = new StringBuffer();
+    /**
+     * Clear any saved text data generated parsing a document.
+     */
+    public void clear() {
+        poetry.delete(0, poetry.length());
+        line.delete(0, line.length());
+        lecoy.delete(0, lecoy.length());
+        rubric.delete(0, rubric.length());
+        catchphrase.delete(0, catchphrase.length());
+        illus.delete(0, illus.length());
+        note.delete(0, note.length());
     }
 
     public String getPoetry() {

@@ -86,7 +86,11 @@ public class LuceneMapper {
     // Search field name -> search field
     private final Map<String, SearchField> search_field_map;
 
+    private TranscriptionXMLReader transcriptionXMLReader;
+
     public LuceneMapper() {
+        this.transcriptionXMLReader = new TranscriptionXMLReader();
+
         this.english_analyzer = new EnglishAnalyzer();
         this.french_analyzer = new FrenchAnalyzer();
         this.string_analyzer = new WhitespaceAnalyzer();
@@ -609,8 +613,6 @@ public class LuceneMapper {
             }
         }
     }
-
-    private TranscriptionXMLReader transcriptionXMLReader = new TranscriptionXMLReader();
 
     private void indexTranscriptionFragment(String transcription, Document doc) throws SAXException, IOException {
         XMLReader xmlReader = XMLReaderFactory.createXMLReader();
