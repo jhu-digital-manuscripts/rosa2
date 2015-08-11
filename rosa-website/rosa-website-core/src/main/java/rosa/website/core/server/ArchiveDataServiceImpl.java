@@ -5,6 +5,7 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import org.apache.commons.lang3.math.NumberUtils;
 import rosa.archive.core.serialize.ImageListSerializer;
+import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.*;
 import rosa.website.core.client.ArchiveDataService;
 import rosa.website.model.view.BookDescriptionViewModel;
@@ -47,7 +48,8 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     private StoreAccessLayer archiveStore;
 
     /** No-arg constructor needed to make GWT RPC work. */
-    public ArchiveDataServiceImpl() {}
+    @SuppressWarnings("unused")
+    ArchiveDataServiceImpl() {}
 
     /**
      * Constructor used by Guice.
@@ -421,7 +423,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         FSIViewerModel model = FSIViewerModel.Builder.newBuilder()
                 .permission(b.getPermission(language))
                 .images(b.getImages())
-                .transcription(b.getTranscription())
+                .transcriptions(TranscriptionSplitter.split(b.getTranscription()))
                 .illustrationTagging(b.getIllustrationTagging())
                 .narrativeTagging(b.getManualNarrativeTagging() == null ?
                         b.getAutomaticNarrativeTagging() : b.getManualNarrativeTagging())

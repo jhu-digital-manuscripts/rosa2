@@ -7,11 +7,10 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
-import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.gwt.user.client.ui.SimplePanel;
-import com.google.gwt.user.client.ui.TextBox;
 import rosa.website.core.client.view.FSIViewerView;
+import rosa.website.core.client.widget.ViewerControlsWidget;
 import rosa.website.viewer.client.fsiviewer.FSIViewer;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
@@ -28,26 +27,16 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
 
     private SimplePanel permissionPanel;
     private FSIViewer flashViewer;
-    private FlowPanel toolbar;
-    // Controls: (page controls) first, last, next, previous, *goto.
-    // *Show: transcriptions, transcriptions (lecoy), illustrations descriptions
-    private TextBox goTo;
-    private ListBox showExtra;
+    private ViewerControlsWidget viewerControlsWidget;
 
     /** Create a new BookViewerView */
     public FSIViewerViewImpl() {
         FlowPanel root = new FlowPanel();
         permissionPanel = new SimplePanel();
         flashViewer = new FSIViewer();
-        toolbar = new FlowPanel();
+        viewerControlsWidget = new ViewerControlsWidget();
 
-        goTo = new TextBox();
-        goTo.setStylePrimaryName("GoTextBox");
-        showExtra = new ListBox(false);
-
-        showExtra.setVisibleItemCount(1);
-
-        root.add(toolbar);
+        root.add(viewerControlsWidget);
         root.add(flashViewer);
         root.add(permissionPanel);
         root.setSize("100%", "100%");
@@ -73,45 +62,44 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
 
     @Override
     public HandlerRegistration addGotoKeyDownHandler(KeyDownHandler handler) {
-        return goTo.addKeyDownHandler(handler);
+        return viewerControlsWidget.addGotoKeyDownHandler(handler);
     }
 
     @Override
     public void setGotoLabel(String label) {
-        goTo.setText(label);
+        viewerControlsWidget.setGotoLabel(label);
     }
 
     @Override
     public String getGotoText() {
-        return goTo.getText();
+        return viewerControlsWidget.getGotoText();
     }
 
     @Override
-    public void addShowExtraLabels(String... data) {
-        showExtra.clear();
+    public void setShowExtraLabels(String... data) {
+        viewerControlsWidget.setShowExtraLabels(data);
+    }
 
-        if (data == null) {
-            return;
-        }
-        for (String str : data) {
-            showExtra.addItem(str);
-        }
+    @Override
+    public String getSelectedShowExtra() {
+        return viewerControlsWidget.getSelected();
     }
 
     @Override
     public HandlerRegistration addShowExtraChangeHandler(ChangeHandler handler) {
-        return showExtra.addChangeHandler(handler);
+        return viewerControlsWidget.addShowExtraChangeHandler(handler);
     }
 
     @Override
     public void addPagesToolbar() {
         setupSharedToolbar();
-        toolbar.add(showExtra);
+        viewerControlsWidget.setShowExtraVisible(true);
     }
 
     @Override
     public void addShowcaseToolbar() {
         setupSharedToolbar();
+        viewerControlsWidget.setShowExtraVisible(false);
     }
 
     @Override
@@ -138,16 +126,16 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
         int width = getParent().getOffsetWidth() - 80;
         int height = getParent().getOffsetHeight()
                 - permissionPanel.getOffsetHeight() - 32    // Subtract constant for top/bottom margins on probable <p> in permissions
-                - toolbar.getOffsetHeight();
+                - viewerControlsWidget.getOffsetHeight();
 
         flashViewer.resize(width + "px", height + "px");
     }
 
     /**
-     * Shared controls for both FSI flash viewer and JS viewer:
+     * Shared controls for both FSI flash viewer pages and showcase view
      *   Goto page, show: transcription, transcription(Lecoy), illustration descriptions, etc
      */
     private void setupSharedToolbar() {
-        toolbar.add(goTo);
+        viewerControlsWidget.setVisible(true);
     }
 }

@@ -5,15 +5,13 @@ import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
-import rosa.archive.model.Transcription;
 
 import java.io.Serializable;
+import java.util.Map;
 
 /**
  * Container for book model objects that are relevant to the
  * FSI flash viewer.
- *
- * TODO should we depend on archive-model here?
  */
 public class FSIViewerModel implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -25,7 +23,7 @@ public class FSIViewerModel implements Serializable {
 
         private Permission permission;
         private ImageList images;
-        private Transcription transcription;
+        private Map<String, String> transcriptionMap;
         private IllustrationTagging illustrationTagging;
         private NarrativeTagging narrativeTagging;
 
@@ -41,8 +39,8 @@ public class FSIViewerModel implements Serializable {
             return this;
         }
 
-        public Builder transcription(Transcription transcription) {
-            this.transcription = transcription;
+        public Builder transcriptions(Map<String, String> transcriptionMap) {
+            this.transcriptionMap = transcriptionMap;
             return this;
         }
 
@@ -57,30 +55,32 @@ public class FSIViewerModel implements Serializable {
         }
 
         public FSIViewerModel build() {
-            return new FSIViewerModel(permission, images, transcription, illustrationTagging, narrativeTagging);
+            return new FSIViewerModel(permission, images, transcriptionMap, illustrationTagging, narrativeTagging);
         }
     }
 
     private Permission permission;
     private ImageList images;
-    private Transcription transcription;
+    private Map<String, String> transcriptionMap;
     private IllustrationTagging illustrationTagging;
     private NarrativeTagging narrativeTagging;
 
-    public FSIViewerModel() {}
+    /** No-arg constructor for GWT RPC serialization */
+    @SuppressWarnings("unused")
+    FSIViewerModel() {}
 
     /**
      * @param permission permission statements, includes other languages if applicable
      * @param images image list
-     * @param transcription transcriptions, if available
+     * @param transcriptionMap transcriptions, separated by page, if available
      * @param illustrationTagging illustration tagging
      * @param narrativeTagging narrative tagging
      */
-    public FSIViewerModel(Permission permission, ImageList images, Transcription transcription,
+    FSIViewerModel(Permission permission, ImageList images, Map<String, String> transcriptionMap,
                           IllustrationTagging illustrationTagging, NarrativeTagging narrativeTagging) {
         this.permission = permission;
         this.images = images;
-        this.transcription = transcription;
+        this.transcriptionMap = transcriptionMap;
         this.illustrationTagging = illustrationTagging;
         this.narrativeTagging = narrativeTagging;
     }
@@ -89,44 +89,24 @@ public class FSIViewerModel implements Serializable {
         return permission;
     }
 
-    public void setPermission(Permission permission) {
-        this.permission = permission;
-    }
-
     public ImageList getImages() {
         return images;
     }
 
-    public void setImages(ImageList images) {
-        this.images = images;
-    }
-
-    public Transcription getTranscription() {
-        return transcription;
-    }
-
-    public void setTranscription(Transcription transcription) {
-        this.transcription = transcription;
+    public String getTranscription(String page) {
+        return transcriptionMap.get(page);
     }
 
     public IllustrationTagging getIllustrationTagging() {
         return illustrationTagging;
     }
 
-    public void setIllustrationTagging(IllustrationTagging illustrationTagging) {
-        this.illustrationTagging = illustrationTagging;
-    }
-
     public NarrativeTagging getNarrativeTagging() {
         return narrativeTagging;
     }
 
-    public void setNarrativeTagging(NarrativeTagging narrativeTagging) {
-        this.narrativeTagging = narrativeTagging;
-    }
-
     public boolean hasTranscription(String page) {
-        return false; // TODO needs to be split by page first
+        return transcriptionMap.containsKey(page); // TODO may need to massage page into a standard form
     }
 
     public boolean hasIllustrationTagging(String page) {
@@ -163,7 +143,7 @@ public class FSIViewerModel implements Serializable {
 
         if (permission != null ? !permission.equals(that.permission) : that.permission != null) return false;
         if (images != null ? !images.equals(that.images) : that.images != null) return false;
-        if (transcription != null ? !transcription.equals(that.transcription) : that.transcription != null)
+        if (transcriptionMap != null ? !transcriptionMap.equals(that.transcriptionMap) : that.transcriptionMap != null)
             return false;
         if (illustrationTagging != null ? !illustrationTagging.equals(that.illustrationTagging) : that.illustrationTagging != null)
             return false;
@@ -175,7 +155,7 @@ public class FSIViewerModel implements Serializable {
     public int hashCode() {
         int result = permission != null ? permission.hashCode() : 0;
         result = 31 * result + (images != null ? images.hashCode() : 0);
-        result = 31 * result + (transcription != null ? transcription.hashCode() : 0);
+        result = 31 * result + (transcriptionMap != null ? transcriptionMap.hashCode() : 0);
         result = 31 * result + (illustrationTagging != null ? illustrationTagging.hashCode() : 0);
         result = 31 * result + (narrativeTagging != null ? narrativeTagging.hashCode() : 0);
         return result;
@@ -186,7 +166,7 @@ public class FSIViewerModel implements Serializable {
         return "FSIViewerModel{" +
                 "permission=" + permission +
                 ", images=" + images +
-                ", transcription=" + transcription +
+                ", transcriptionMap=" + transcriptionMap +
                 ", illustrationTagging=" + illustrationTagging +
                 ", narrativeTagging=" + narrativeTagging +
                 '}';

@@ -4,12 +4,15 @@ import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import com.google.gwt.event.dom.client.ChangeEvent;
+import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.i18n.client.LocaleInfo;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.BookImage;
@@ -28,11 +31,36 @@ import rosa.website.model.view.FSIViewerModel;
 import rosa.website.rose.client.WebsiteConfig;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
+public class FSIViewerActivity implements Activity {
+
+    public enum DisplayCategory {   // TODO move to website model
+        NONE(Labels.INSTANCE.show()),
+        TRANSCRIPTION(Labels.INSTANCE.transcription()),
+        LECOY(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]"),
+        ILLUSTRATION(Labels.INSTANCE.illustrationDescription()),
+        NARRATIVE(Labels.INSTANCE.narrativeSections());
+
+        DisplayCategory(String display) {
+            this.display = display;
+        }
+
+        public final String display;
+
+        public static DisplayCategory category(String label) {
+            for (DisplayCategory c : DisplayCategory.values()) {
+                if (c.display.equals(label)) {
+                    return c;
+                }
+            }
+            return null;
+        }
+    }
+
     private static final Logger logger = Logger.getLogger(FSIViewerActivity.class.toString());
     private static final String FSI_URL_PREFIX = GWT.getModuleBaseURL() + "fsi/";
 
@@ -56,11 +84,40 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     private FSIViewerModel model;
     private int current_image_index;
 
+    private final ChangeHandler showExtraChangeHandler = new ChangeHandler() {
+        @Override
+        public void onChange(ChangeEvent event) {
+            DisplayCategory category = DisplayCategory.category(view.getSelectedShowExtra());
+            if (category == null) {
+                return;
+            }
+            Window.alert("Will display [" + view.getSelectedShowExtra() + "]");
+            switch (category) {
+                case TRANSCRIPTION:
+                    // Display transcriptions for all pages/columns
+                    break;
+                case LECOY:
+                    // Display Lecoy
+                    break;
+                case ILLUSTRATION:
+                    // Display illustration descriptions
+                    break;
+                case NARRATIVE:
+                    // Display narrative sections
+                    break;
+                case NONE:      // Fall through to default
+                default:
+                    break;
+            }
+        }
+    };
+
     /** Callback for FSI showcase view. */
     private final FSIShowcaseCallback showcaseCallback = new FSIShowcaseCallback() {
         @Override
         public void imageSelected(int image) {
             view.setGotoLabel(getImageName(image));
+            view.setShowExtraLabels(getExtraDataLabels(getImageName(image)));
         }
     };
 
@@ -85,12 +142,23 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
             }
 
             // Update transcription display thingy ('show extra' labels)
+            List<String> page1 = new ArrayList<>(
+                    Arrays.asList(getExtraDataLabels(getImageName(page - 1)))
+            );
+            String[] page2 = getExtraDataLabels(page);
+            for (String label : page2) {
+                if (!page1.contains(label)) {
+                    page1.add(label);
+                }
+            }
+            view.setShowExtraLabels(page1.toArray(new String[page1.size()]));
         }
 
         @Override
         public void imageInfo(String info) {
             current_image_index = getImageIndexFromPagesInfo(info);
             view.setGotoLabel(getImageName(current_image_index));
+            view.setShowExtraLabels(getExtraDataLabels(getImageName(current_image_index)));
         }
     };
 
@@ -156,17 +224,22 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         });
     }
 
-    @Override
-    public String[] getExtraDataLabels(String page) {
+    public String[] getExtraDataLabels(int page) {
+        return getExtraDataLabels(getImageName(page));
+    }
+
+    private String[] getExtraDataLabels(String page) {
         if (model == null) {
-            return new String[0];
+            return new String[] {Labels.INSTANCE.show()};
         }
 
         List<String> labels = new ArrayList<>();
-        if (model.hasTranscription(page)) { // TODO per page
+        labels.add(Labels.INSTANCE.show());
+
+        if (model.hasTranscription(page)) {
             labels.add(Labels.INSTANCE.transcription());
+            labels.add(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]");
         }
-        // TODO transcription (Lecoy)
         if (model.hasIllustrationTagging(page)) {
             labels.add(Labels.INSTANCE.illustrationDescription());
         }
@@ -182,6 +255,9 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
     }
 
     private void setupFlashViewer(int startPage) {
+        if (startPage == -1) {
+            startPage = 0;
+        }
         String collection = WebsiteConfig.INSTANCE.collection();
         String fsi_xml_url = FSI_URL_PREFIX + collection + "/" + book + "/" + type.getXmlId();
 
@@ -189,7 +265,7 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
                 .book(collection, book, language)
                 .type(type)
                 .fsiBookData(URL.encode(fsi_xml_url))
-                .initialImage(startPage == -1 ? 0 : startPage)
+                .initialImage(startPage)
                 .build();
 
         view.setFlashViewer(fsiHtml, type);
@@ -197,6 +273,10 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         if (type == FSIViewerType.SHOWCASE) {
             view.addShowcaseToolbar();
             view.setupFsiShowcaseCallback(showcaseCallback);
+
+            // Set labels in the "show extra" dropdown
+            view.setShowExtraLabels(getExtraDataLabels(startPage));
+
             view.addGotoKeyDownHandler(new KeyDownHandler() {
                 @Override
                 public void onKeyDown(KeyDownEvent event) {
@@ -211,6 +291,24 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
         } else if (type == FSIViewerType.PAGES) {
             view.addPagesToolbar();
             view.setupFsiPagesCallback(pagesCallback);
+
+            // Set labels in the "show extra" dropdown
+            if (startPage > 0) {
+                List<String> page1 = new ArrayList<>(
+                        Arrays.asList(getExtraDataLabels(getImageName(startPage - 1)))
+                );
+                String[] page2 = getExtraDataLabels(startPage);
+                for (String label : page2) {
+                    if (!page1.contains(label)) {
+                        page1.add(label);
+                    }
+                }
+                view.setShowExtraLabels(page1.toArray(new String[page1.size()]));
+            } else {
+                view.setShowExtraLabels(getExtraDataLabels(startPage));
+            }
+
+
             view.addGotoKeyDownHandler(new KeyDownHandler() {
                 @Override
                 public void onKeyDown(KeyDownEvent event) {
@@ -225,7 +323,9 @@ public class FSIViewerActivity implements Activity, FSIViewerView.Presenter {
             });
         }
 
-
+        // Define behavior for the dropdown. Different values correspond to displaying
+        // different data in a popup
+        view.addShowExtraChangeHandler(showExtraChangeHandler);
     }
 
     /**

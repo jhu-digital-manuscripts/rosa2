@@ -1,5 +1,6 @@
 package rosa.website.core.client.view;
 
+import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
@@ -28,6 +29,10 @@ public interface JSViewerView extends IsWidget {
     void setToolbarVisible(boolean visible);
     void setGotoText(String text);
     String getGotoText();
+
+    void setShowExtraLabels(String ... data);
+    HandlerRegistration addShowExtraChangeHandler(ChangeHandler handler);
+    String getSelectedShowExtra();
 
     /**
      * Set the behavior of clicks on the 'first' button.

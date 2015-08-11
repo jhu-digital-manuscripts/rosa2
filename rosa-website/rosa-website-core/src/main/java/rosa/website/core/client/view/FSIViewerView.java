@@ -10,14 +10,6 @@ import rosa.website.viewer.client.fsiviewer.FSIViewerType;
 
 public interface FSIViewerView extends IsWidget {
 
-    interface Presenter {
-        /**
-         * @param page page in consideration
-         * @return array of extra data available that can be displayed
-         */
-        String[] getExtraDataLabels(String page);
-    }
-
     /**
      * Display permission statement for use of data.
      *
@@ -73,7 +65,9 @@ public interface FSIViewerView extends IsWidget {
      *
      * @param data labels to add
      */
-    void addShowExtraLabels(String... data);
+    void setShowExtraLabels(String... data);
+
+    String getSelectedShowExtra();
 
     /**
      * Show the toolbar for the FSI pages (page turner) viewer.

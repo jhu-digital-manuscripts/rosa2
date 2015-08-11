@@ -2,6 +2,7 @@ package rosa.website.core.client.view.impl;
 
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
@@ -15,6 +16,7 @@ import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import rosa.website.core.client.Labels;
+import rosa.website.core.client.widget.ViewerControlsWidget;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
 import rosa.website.viewer.client.jsviewer.codexview.CodexModel;
 import rosa.website.viewer.client.jsviewer.codexview.CodexView;
@@ -32,6 +34,8 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
     private Button prev;
     private Button next;
     private TextBox goTo;
+
+    private ViewerControlsWidget viewerControlsWidget;
 
     private CodexView codexView;
 
@@ -54,12 +58,16 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
         prev = new Button(labels.previous());
         next = new Button(labels.next());
         goTo = new TextBox();
+        viewerControlsWidget = new ViewerControlsWidget();
+
+        viewerControlsWidget.setGoToVisible(false);
 
         readerToolbar.add(first);
         readerToolbar.add(prev);
         readerToolbar.add(goTo);
         readerToolbar.add(next);
         readerToolbar.add(last);
+        readerToolbar.add(viewerControlsWidget);
 
         root.add(readerToolbar);
 
@@ -115,6 +123,21 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
     @Override
     public String getGotoText() {
         return goTo.getText();
+    }
+
+    @Override
+    public void setShowExtraLabels(String... data) {
+        viewerControlsWidget.setShowExtraLabels(data);
+    }
+
+    @Override
+    public HandlerRegistration addShowExtraChangeHandler(ChangeHandler handler) {
+        return viewerControlsWidget.addShowExtraChangeHandler(handler);
+    }
+
+    @Override
+    public String getSelectedShowExtra() {
+        return viewerControlsWidget.getSelected();
     }
 
     @Override
