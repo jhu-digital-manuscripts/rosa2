@@ -3,7 +3,6 @@ package rosa.search.core;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -53,7 +52,6 @@ import rosa.archive.model.ImageList;
 import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
-import rosa.archive.model.Transcription;
 import rosa.archive.model.redtag.Item;
 import rosa.archive.model.redtag.Rubric;
 import rosa.archive.model.redtag.StructureColumn;
@@ -378,10 +376,10 @@ public class LuceneMapper {
      * @param col BookCollection obj
      * @param book Book obj
      * @param image this image
-     * @param transcriptiongFragment XML fragment
+     * @param transcriptionFragment XML fragment
      */
     private void index(Document doc, BookCollection col, Book book, BookImage image,
-                       String transcriptiongFragment) {
+                       String transcriptionFragment) {
         add_field(doc, SearchFields.ID,
                 SearchUtil.createId(col.getId(), book.getId(), image.getId()));
         add_field(doc, SearchFields.COLLECTION_ID, col.getId());
@@ -540,9 +538,9 @@ public class LuceneMapper {
         }
 
         // Index transcription text that appears on this page
-        if (transcriptiongFragment != null) {
+        if (transcriptionFragment != null) {
             try {
-                indexTranscriptionFragment(transcriptiongFragment, doc);
+                indexTranscriptionFragment(transcriptionFragment, doc);
             } catch (SAXException | IOException e) {
                 logger.log(Level.SEVERE, "Failed to parse transcription fragment. ["
                         + image.getName() + "]", e);

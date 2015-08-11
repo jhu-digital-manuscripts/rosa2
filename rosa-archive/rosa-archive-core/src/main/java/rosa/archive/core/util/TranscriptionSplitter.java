@@ -120,10 +120,33 @@ public class TranscriptionSplitter {
                 fragment.getDocumentElement().appendChild(fragment.importNode(all_nodes.item(i), true));
             }
 
-            map.put(page, toString(fragment));
+            addToMap(page, fragment, map);
         }
 
         return map;
+    }
+
+    private static void addToMap(String page, Document toAdd, Map<String, String> pageMap) {
+        if (toAdd == null || pageMap == null) {
+            return;
+        }
+
+        // Simply add the document to map if the page is not present
+        if (!pageMap.containsKey(page)) {
+            pageMap.put(page, toString(toAdd));
+            return;
+        }
+
+        // Page already exists in the map, must smush 2 XML fragments together
+        Document original = readXml(pageMap.get(page));
+        if (original == null) {
+            // Failed to parse first page fragment
+            pageMap.put(page, toString(toAdd));
+            return;
+        }
+
+        original.adoptNode(toAdd.getDocumentElement());
+        pageMap.put(page, toString(original));
     }
 
     /**

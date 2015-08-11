@@ -9,8 +9,10 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 public class TranscriptionSplitterTest extends BaseArchiveTest {
 
@@ -27,15 +29,13 @@ public class TranscriptionSplitterTest extends BaseArchiveTest {
         Map<String, String> map = TranscriptionSplitter.split(transcription);
 
         assertNotNull("Results map is empty.", map);
-//        System.out.println();
-//        System.out.println(map.size());
-//        System.out.println(numPagesLudwig());
-//        System.out.println("024r -> " + map.get("024r"));
-//        System.out.println();
+        assertEquals("Unexpected number of pages.", 172, map.size());
 
         for (Entry<String, String> entry : map.entrySet()) {
             assertNotNull("NULL key", entry.getKey());
             assertFalse("Empty key", entry.getKey().isEmpty());
+            // Check key, should be one to three digits followed by 'r' or 'v'
+            assertTrue("Unexpected key format", entry.getKey().matches("^(\\d{1,3})(r|v)$"));
             assertNotNull("NULL value", entry.getValue());
             assertFalse("Empty value", entry.getValue().isEmpty());
         }
