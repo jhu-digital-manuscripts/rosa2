@@ -61,7 +61,17 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public void init() {
-
+        try {
+            logger.info("Initializing data.");
+            for (String col : archiveStore.store().listBookCollections()) {
+                for (String book : archiveStore.store().listBooks(col)) {
+                    archiveStore.book(col, book);
+                }
+            }
+            logger.info("Initializing done.");
+        } catch (IOException e) {
+            logger.warning("Failed to initialize.");
+        }
     }
 
     @Override
