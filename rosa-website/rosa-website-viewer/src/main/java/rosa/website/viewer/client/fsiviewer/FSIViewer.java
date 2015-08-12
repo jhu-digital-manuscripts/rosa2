@@ -26,8 +26,8 @@ public class FSIViewer extends Composite {
         FlowPanel root = new FlowPanel();
         viewer = new SimplePanel();
 
+        root.addStyleName("float-left");
         root.add(viewer);
-        root.setSize("100%", "100%");
 
         initWidget(root);
     }

@@ -9,6 +9,7 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.user.client.ui.Widget;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.ViewerControlsWidget;
 import rosa.website.viewer.client.fsiviewer.FSIViewer;
@@ -27,6 +28,7 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
 
     private SimplePanel permissionPanel;
     private FSIViewer flashViewer;
+    private SimplePanel transcriptionPanel;
     private ViewerControlsWidget viewerControlsWidget;
 
     /** Create a new BookViewerView */
@@ -34,12 +36,18 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
         FlowPanel root = new FlowPanel();
         permissionPanel = new SimplePanel();
         flashViewer = new FSIViewer();
+        transcriptionPanel = new SimplePanel();
         viewerControlsWidget = new ViewerControlsWidget();
+
+        transcriptionPanel.setStylePrimaryName("Transcription");
 
         root.add(viewerControlsWidget);
         root.add(flashViewer);
+        root.add(transcriptionPanel);
         root.add(permissionPanel);
         root.setSize("100%", "100%");
+
+        permissionPanel.addStyleName("float-left");
 
         initWidget(root);
     }
@@ -122,8 +130,20 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
         flashViewer.fsiSelectImage(image);
     }
 
+    @Override
+    public void showExtra(Widget widget) {
+        if (widget == null) {
+            transcriptionPanel.clear();
+            transcriptionPanel.setVisible(false);
+        } else {
+            transcriptionPanel.setWidget(widget);
+            transcriptionPanel.setVisible(true);
+        }
+    }
+
     private void doResize() {
-        int width = getParent().getOffsetWidth() - 80;
+        int width = getParent().getOffsetWidth() - 100
+                - (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
         int height = getParent().getOffsetHeight()
                 - permissionPanel.getOffsetHeight() - 32    // Subtract constant for top/bottom margins on probable <p> in permissions
                 - viewerControlsWidget.getOffsetHeight();

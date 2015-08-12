@@ -12,7 +12,6 @@ import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.BookImage;
@@ -23,6 +22,7 @@ import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.core.client.widget.TranscriptionViewer;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewerHTMLBuilder;
@@ -91,24 +91,46 @@ public class FSIViewerActivity implements Activity {
             if (category == null) {
                 return;
             }
-            Window.alert("Will display [" + view.getSelectedShowExtra() + "]");
+
+            //   Generate array of String labels to label each tab
+            String[] selectedPages = view.getGotoText().split(",");
+
+            boolean lecoy = true;
             switch (category) {
                 case TRANSCRIPTION:
+                    lecoy = false;
                     // Display transcriptions for all pages/columns
-                    break;
+                    // Fall through
                 case LECOY:
                     // Display Lecoy
+
+                    //   Generate array of Strings holding XML fragments for each relevant page
+                    List<String> list = new ArrayList<>();
+                    for (String page : selectedPages) {
+                        list.add(model.getTranscription(page));
+                    }
+
+                    //   Create display widget and add it to view
+                    view.showExtra(TranscriptionViewer.createTranscriptionViewer(
+                            list.toArray(new String[list.size()]), selectedPages, lecoy
+                    ));
                     break;
                 case ILLUSTRATION:
                     // Display illustration descriptions
+
+                    view.showExtra(TranscriptionViewer.createIllustrationTaggingViewer(
+                            selectedPages, model.getIllustrationTagging()));
                     break;
                 case NARRATIVE:
                     // Display narrative sections
                     break;
                 case NONE:      // Fall through to default
                 default:
+                    view.showExtra(null);
                     break;
             }
+
+            view.onResize();
         }
     };
 
@@ -118,6 +140,7 @@ public class FSIViewerActivity implements Activity {
         public void imageSelected(int image) {
             view.setGotoLabel(getImageName(image));
             view.setShowExtraLabels(getExtraDataLabels(getImageName(image)));
+            view.showExtra(null);
         }
     };
 
@@ -152,6 +175,7 @@ public class FSIViewerActivity implements Activity {
                 }
             }
             view.setShowExtraLabels(page1.toArray(new String[page1.size()]));
+            view.showExtra(null);
         }
 
         @Override
@@ -159,6 +183,7 @@ public class FSIViewerActivity implements Activity {
             current_image_index = getImageIndexFromPagesInfo(info);
             view.setGotoLabel(getImageName(current_image_index));
             view.setShowExtraLabels(getExtraDataLabels(getImageName(current_image_index)));
+            view.showExtra(null);
         }
     };
 
@@ -326,6 +351,7 @@ public class FSIViewerActivity implements Activity {
         // Define behavior for the dropdown. Different values correspond to displaying
         // different data in a popup
         view.addShowExtraChangeHandler(showExtraChangeHandler);
+        view.showExtra(null);
     }
 
     /**
