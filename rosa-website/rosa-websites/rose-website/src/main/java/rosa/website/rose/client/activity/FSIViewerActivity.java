@@ -87,50 +87,7 @@ public class FSIViewerActivity implements Activity {
     private final ChangeHandler showExtraChangeHandler = new ChangeHandler() {
         @Override
         public void onChange(ChangeEvent event) {
-            DisplayCategory category = DisplayCategory.category(view.getSelectedShowExtra());
-            if (category == null) {
-                return;
-            }
-
-            //   Generate array of String labels to label each tab
-            String[] selectedPages = view.getGotoText().split(",");
-
-            boolean lecoy = true;
-            switch (category) {
-                case TRANSCRIPTION:
-                    lecoy = false;
-                    // Display transcriptions for all pages/columns
-                    // Fall through
-                case LECOY:
-                    // Display Lecoy
-
-                    //   Generate array of Strings holding XML fragments for each relevant page
-                    List<String> list = new ArrayList<>();
-                    for (String page : selectedPages) {
-                        list.add(model.getTranscription(page));
-                    }
-
-                    //   Create display widget and add it to view
-                    view.showExtra(TranscriptionViewer.createTranscriptionViewer(
-                            list.toArray(new String[list.size()]), selectedPages, lecoy
-                    ));
-                    break;
-                case ILLUSTRATION:
-                    // Display illustration descriptions
-
-                    view.showExtra(TranscriptionViewer.createIllustrationTaggingViewer(
-                            selectedPages, model.getIllustrationTagging()));
-                    break;
-                case NARRATIVE:
-                    // Display narrative sections
-                    break;
-                case NONE:      // Fall through to default
-                default:
-                    view.showExtra(null);
-                    break;
-            }
-
-            view.onResize();
+            handleShowExtra();
         }
     };
 
@@ -139,8 +96,7 @@ public class FSIViewerActivity implements Activity {
         @Override
         public void imageSelected(int image) {
             view.setGotoLabel(getImageName(image));
-            view.setShowExtraLabels(getExtraDataLabels(getImageName(image)));
-            view.showExtra(null);
+            setupShowExtra(image, false);
         }
     };
 
@@ -165,25 +121,14 @@ public class FSIViewerActivity implements Activity {
             }
 
             // Update transcription display thingy ('show extra' labels)
-            List<String> page1 = new ArrayList<>(
-                    Arrays.asList(getExtraDataLabels(getImageName(page - 1)))
-            );
-            String[] page2 = getExtraDataLabels(page);
-            for (String label : page2) {
-                if (!page1.contains(label)) {
-                    page1.add(label);
-                }
-            }
-            view.setShowExtraLabels(page1.toArray(new String[page1.size()]));
-            view.showExtra(null);
+            setupShowExtra(page, true);
         }
 
         @Override
         public void imageInfo(String info) {
             current_image_index = getImageIndexFromPagesInfo(info);
             view.setGotoLabel(getImageName(current_image_index));
-            view.setShowExtraLabels(getExtraDataLabels(getImageName(current_image_index)));
-            view.showExtra(null);
+            setupShowExtra(current_image_index, false);
         }
     };
 
@@ -227,26 +172,26 @@ public class FSIViewerActivity implements Activity {
 
         service.loadFSIViewerModel(WebsiteConfig.INSTANCE.collection(), book, language,
                 new AsyncCallback<FSIViewerModel>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load FSI data.");
-                LoadingPanel.INSTANCE.hide();
-            }
+                    @Override
+                    public void onFailure(Throwable caught) {
+                        logger.log(Level.SEVERE, "Failed to load FSI data.");
+                        LoadingPanel.INSTANCE.hide();
+                    }
 
-            @Override
-            public void onSuccess(FSIViewerModel result) {
-                model = result;
-                view.setPermissionStatement(result.getPermission().getPermission());
-                Scheduler.get().scheduleDeferred(resizeCommand);
+                    @Override
+                    public void onSuccess(FSIViewerModel result) {
+                        model = result;
+                        view.setPermissionStatement(result.getPermission().getPermission());
+                        Scheduler.get().scheduleDeferred(resizeCommand);
 
-                if (starterPage != null && !starterPage.isEmpty()) {
-                    setupFlashViewer(getImageIndex(starterPage));
-                } else {
-                    setupFlashViewer(-1);
-                }
-                LoadingPanel.INSTANCE.hide();
-            }
-        });
+                        if (starterPage != null && !starterPage.isEmpty()) {
+                            setupFlashViewer(getImageIndex(starterPage));
+                        } else {
+                            setupFlashViewer(-1);
+                        }
+                        LoadingPanel.INSTANCE.hide();
+                    }
+                });
     }
 
     public String[] getExtraDataLabels(int page) {
@@ -294,13 +239,14 @@ public class FSIViewerActivity implements Activity {
                 .build();
 
         view.setFlashViewer(fsiHtml, type);
+        view.addShowExtraChangeHandler(showExtraChangeHandler);
 
         if (type == FSIViewerType.SHOWCASE) {
             view.addShowcaseToolbar();
             view.setupFsiShowcaseCallback(showcaseCallback);
 
             // Set labels in the "show extra" dropdown
-            view.setShowExtraLabels(getExtraDataLabels(startPage));
+            setupShowExtra(startPage, false);
 
             view.addGotoKeyDownHandler(new KeyDownHandler() {
                 @Override
@@ -318,21 +264,7 @@ public class FSIViewerActivity implements Activity {
             view.setupFsiPagesCallback(pagesCallback);
 
             // Set labels in the "show extra" dropdown
-            if (startPage > 0) {
-                List<String> page1 = new ArrayList<>(
-                        Arrays.asList(getExtraDataLabels(getImageName(startPage - 1)))
-                );
-                String[] page2 = getExtraDataLabels(startPage);
-                for (String label : page2) {
-                    if (!page1.contains(label)) {
-                        page1.add(label);
-                    }
-                }
-                view.setShowExtraLabels(page1.toArray(new String[page1.size()]));
-            } else {
-                view.setShowExtraLabels(getExtraDataLabels(startPage));
-            }
-
+            setupShowExtra(startPage, true);
 
             view.addGotoKeyDownHandler(new KeyDownHandler() {
                 @Override
@@ -347,11 +279,68 @@ public class FSIViewerActivity implements Activity {
                 }
             });
         }
+    }
 
-        // Define behavior for the dropdown. Different values correspond to displaying
-        // different data in a popup
-        view.addShowExtraChangeHandler(showExtraChangeHandler);
-        view.showExtra(null);
+    private void setupShowExtra(int page, boolean opening) {
+        List<String> page1 = new ArrayList<>(Arrays.asList(getExtraDataLabels(page)));
+
+        if (opening) {
+            String[] page2 = getExtraDataLabels(page - 1);
+            for (String label : page2) {
+                if (!page1.contains(label)) {
+                    page1.add(label);
+                }
+            }
+        }
+        view.setShowExtraLabels(page1.toArray(new String[page1.size()]));
+        handleShowExtra();
+    }
+
+    private void handleShowExtra() {
+        DisplayCategory category = DisplayCategory.category(view.getSelectedShowExtra());
+        if (category == null) {
+            return;
+        }
+
+        //   Generate array of String labels to label each tab
+        String[] selectedPages = view.getGotoText().split(",");
+
+        boolean lecoy = true;
+        switch (category) {
+            case TRANSCRIPTION:
+                lecoy = false;
+                // Display transcriptions for all pages/columns
+                // Fall through
+            case LECOY:
+                // Display Lecoy
+
+                //   Generate array of Strings holding XML fragments for each relevant page
+                List<String> list = new ArrayList<>();
+                for (String page : selectedPages) {
+                    list.add(model.getTranscription(page));
+                }
+
+                //   Create display widget and add it to view
+                view.showExtra(TranscriptionViewer.createTranscriptionViewer(
+                        list.toArray(new String[list.size()]), selectedPages, lecoy
+                ));
+                break;
+            case ILLUSTRATION:
+                // Display illustration descriptions
+
+                view.showExtra(TranscriptionViewer.createIllustrationTaggingViewer(
+                        selectedPages, model.getIllustrationTagging()));
+                break;
+            case NARRATIVE:
+                // Display narrative sections
+                break;
+            case NONE:      // Fall through to default
+            default:
+                view.showExtra(null);
+                break;
+        }
+
+        view.onResize();
     }
 
     /**
