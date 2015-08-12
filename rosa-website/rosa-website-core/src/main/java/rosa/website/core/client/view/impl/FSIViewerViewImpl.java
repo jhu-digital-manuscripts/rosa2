@@ -89,6 +89,11 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
     }
 
     @Override
+    public void setSelectedShowExtra(String selected) {
+        viewerControlsWidget.setSelectedShowExtra(selected);
+    }
+
+    @Override
     public String getSelectedShowExtra() {
         return viewerControlsWidget.getSelected();
     }

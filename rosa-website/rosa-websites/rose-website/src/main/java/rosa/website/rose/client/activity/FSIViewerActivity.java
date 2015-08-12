@@ -83,10 +83,17 @@ public class FSIViewerActivity implements Activity {
 
     private FSIViewerModel model;
     private int current_image_index;
+    private DisplayCategory showExtraCategory;
 
     private final ChangeHandler showExtraChangeHandler = new ChangeHandler() {
         @Override
         public void onChange(ChangeEvent event) {
+            DisplayCategory category = DisplayCategory.category(view.getSelectedShowExtra());
+            if (category == null) {
+                return;
+            }
+
+            showExtraCategory = category;
             handleShowExtra();
         }
     };
@@ -145,6 +152,8 @@ public class FSIViewerActivity implements Activity {
         this.book = place.getBook();
         this.type = getViewerType(place.getType());
         this.eventBus = clientFactory.eventBus();
+
+        this.showExtraCategory = DisplayCategory.NONE;
     }
 
     @Override
@@ -297,21 +306,21 @@ public class FSIViewerActivity implements Activity {
     }
 
     private void handleShowExtra() {
-        DisplayCategory category = DisplayCategory.category(view.getSelectedShowExtra());
-        if (category == null) {
+        if (showExtraCategory == null) {
             return;
         }
-
         //   Generate array of String labels to label each tab
         String[] selectedPages = view.getGotoText().split(",");
 
         boolean lecoy = true;
-        switch (category) {
+        switch (showExtraCategory) {
             case TRANSCRIPTION:
+                view.setSelectedShowExtra(Labels.INSTANCE.transcription());
                 lecoy = false;
                 // Display transcriptions for all pages/columns
                 // Fall through
             case LECOY:
+                view.setSelectedShowExtra(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]");
                 // Display Lecoy
 
                 //   Generate array of Strings holding XML fragments for each relevant page
@@ -326,16 +335,20 @@ public class FSIViewerActivity implements Activity {
                 ));
                 break;
             case ILLUSTRATION:
+                view.setSelectedShowExtra(Labels.INSTANCE.illustrationDescription());
                 // Display illustration descriptions
 
                 view.showExtra(TranscriptionViewer.createIllustrationTaggingViewer(
                         selectedPages, model.getIllustrationTagging()));
                 break;
             case NARRATIVE:
+                view.setSelectedShowExtra(Labels.INSTANCE.narrativeSections());
                 // Display narrative sections
                 break;
-            case NONE:      // Fall through to default
+            case NONE:
+                // Fall through to default
             default:
+                view.setSelectedShowExtra(Labels.INSTANCE.show());
                 view.showExtra(null);
                 break;
         }

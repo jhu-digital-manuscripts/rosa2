@@ -68,6 +68,8 @@ public interface FSIViewerView extends IsWidget {
      */
     void setShowExtraLabels(String... data);
 
+    void setSelectedShowExtra(String selected);
+
     String getSelectedShowExtra();
 
     /**

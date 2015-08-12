@@ -70,6 +70,16 @@ public class ViewerControlsWidget extends Composite {
         }
     }
 
+    public void setSelectedShowExtra(String selected) {
+        for (int i = 0; i < showExtraListBox.getItemCount(); i++) {
+            if (showExtraListBox.getItemText(i).equals(selected)
+                    || showExtraListBox.getValue(i).equals(selected)) {
+                showExtraListBox.setSelectedIndex(i);
+                break;
+            }
+        }
+    }
+
     public HandlerRegistration addShowExtraChangeHandler(ChangeHandler handler) {
         return showExtraListBox.addChangeHandler(handler);
     }
