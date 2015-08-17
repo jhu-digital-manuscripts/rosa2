@@ -2,6 +2,7 @@ package rosa.website.core.client.widget;
 
 import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.safehtml.shared.HtmlSanitizer;
 import com.google.gwt.safehtml.shared.SimpleHtmlSanitizer;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
@@ -39,6 +40,7 @@ import java.util.logging.Logger;
  */
 public class TranscriptionViewer {
     private static final Logger LOGGER = Logger.getLogger(TranscriptionViewer.class.toString());
+    private static final HtmlSanitizer HTML_SANITIZER = SimpleHtmlSanitizer.getInstance();
 
     /**
      *
@@ -192,7 +194,7 @@ public class TranscriptionViewer {
                 sb.append("<p>");
 
                 sb.append("<span class=\"ImageDescriptionLabel\">");
-                sb.append(SimpleHtmlSanitizer.sanitizeHtml(scene.getId()));
+                sb.append(HTML_SANITIZER.sanitize(scene.getId()).asString());
                 sb.append(' ');
                 sb.append(scene.isCorrect() ? ":" : "?");
                 sb.append("</span><br/>");
@@ -203,12 +205,12 @@ public class TranscriptionViewer {
 
                 NarrativeScene s = sections.asScenes().get(sections.findIndexOfSceneById(scene.getId()));
                 if (s.getDescription() != null && !s.getDescription().isEmpty()) {
-                    sb.append(SimpleHtmlSanitizer.sanitizeHtml(s.getDescription()));
+                    sb.append(HTML_SANITIZER.sanitize(s.getDescription()).asString());
                 }
                 if (s.getCriticalEditionStart() > 0) {
                     sb.append("<span class=\"TranscriptionLecoy\">");
                     sb.append(" L");
-                    sb.append(SimpleHtmlSanitizer.sanitizeHtml(String.valueOf(s.getCriticalEditionStart())));
+                    sb.append(HTML_SANITIZER.sanitize(String.valueOf(s.getCriticalEditionStart())).asString());
                     sb.append("</span>");
                 }
                 sb.append("</p>");
@@ -261,8 +263,8 @@ public class TranscriptionViewer {
         }
 
         sb.append("<span class=\"ImageDescriptionLabel\">");
-        sb.append(SimpleHtmlSanitizer.sanitizeHtml(label));
-        sb.append("</span>");
+        sb.append(HTML_SANITIZER.sanitize(label).asString());
+        sb.append(": </span>");
 
         sb.append("<span class=\"ImageDescriptionText\">");
         boolean isFirst = true;
@@ -271,7 +273,7 @@ public class TranscriptionViewer {
                 sb.append(", ");
             }
 
-            sb.append(SimpleHtmlSanitizer.sanitizeHtml(str));
+            sb.append(HTML_SANITIZER.sanitize(str).asString());
             isFirst = false;
         }
         sb.append("</span>");
