@@ -15,6 +15,7 @@ import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.Widget;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.widget.ViewerControlsWidget;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
@@ -28,6 +29,7 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
     private FlowPanel root;
     private FlowPanel readerToolbar;
     private SimplePanel permissionPanel;
+    private SimplePanel transcriptionPanel;
 
     private Button first;
     private Button last;
@@ -49,6 +51,9 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
     /**  */
     public JSViewerViewImpl() {
         root = new FlowPanel();
+
+        transcriptionPanel = new SimplePanel();
+        root.add(transcriptionPanel);
 
         readerToolbar = new FlowPanel();
 
@@ -136,8 +141,24 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
     }
 
     @Override
+    public void setSelectedShowExtra(String selected) {
+        viewerControlsWidget.setSelectedShowExtra(selected);
+    }
+
+    @Override
     public String getSelectedShowExtra() {
         return viewerControlsWidget.getSelected();
+    }
+
+    @Override
+    public void showExtra(Widget widget) {
+        if (widget == null) {
+            transcriptionPanel.clear();
+            transcriptionPanel.setVisible(false);
+        } else {
+            transcriptionPanel.setWidget(widget);
+            transcriptionPanel.setVisible(true);
+        }
     }
 
     @Override
@@ -171,8 +192,11 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
     }
 
     private void doResize() {   // TODO take image aspect ratio into account, so image isn't squished!
-        int width = getOffsetWidth() - 30;
-        int height = getOffsetHeight() - 30;
+        int width = getOffsetWidth() - 30
+                - (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
+        int height = getOffsetHeight() - 30
+                - permissionPanel.getOffsetHeight()
+                - readerToolbar.getOffsetHeight();
 
         codexView.setSize(width + "px", height + "px");
     }

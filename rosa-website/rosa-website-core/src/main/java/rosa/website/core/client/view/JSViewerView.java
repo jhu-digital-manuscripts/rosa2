@@ -5,6 +5,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
+import com.google.gwt.user.client.ui.Widget;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
 import rosa.website.viewer.client.jsviewer.codexview.CodexModel;
 import rosa.website.viewer.client.jsviewer.codexview.CodexView;
@@ -32,7 +33,9 @@ public interface JSViewerView extends IsWidget {
 
     void setShowExtraLabels(String ... data);
     HandlerRegistration addShowExtraChangeHandler(ChangeHandler handler);
+    void setSelectedShowExtra(String selected);
     String getSelectedShowExtra();
+    void showExtra(Widget widget);
 
     /**
      * Set the behavior of clicks on the 'first' button.
