@@ -344,6 +344,8 @@ public class FSIViewerActivity implements Activity {
             case NARRATIVE:
                 view.setSelectedShowExtra(Labels.INSTANCE.narrativeSections());
                 // Display narrative sections
+                view.showExtra(TranscriptionViewer.createNarrativeTaggingViewer(selectedPages,
+                        model.getNarrativeTagging(), model.getNarrativeSections()));
                 break;
             case NONE:
                 // Fall through to default

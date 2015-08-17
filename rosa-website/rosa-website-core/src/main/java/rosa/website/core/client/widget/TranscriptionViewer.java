@@ -13,13 +13,20 @@ import com.google.gwt.xml.client.Element;
 import com.google.gwt.xml.client.Node;
 import com.google.gwt.xml.client.XMLParser;
 import com.google.gwt.xml.client.impl.DOMParseException;
+import rosa.archive.model.BookScene;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
+import rosa.archive.model.NarrativeScene;
+import rosa.archive.model.NarrativeSections;
+import rosa.archive.model.NarrativeTagging;
 import rosa.website.core.client.Labels;
 import rosa.website.core.shared.ImageNameParser;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -32,10 +39,6 @@ import java.util.logging.Logger;
  */
 public class TranscriptionViewer {
     private static final Logger LOGGER = Logger.getLogger(TranscriptionViewer.class.toString());
-
-    public static String transcriptionUnavalableLabel = "";
-    public static String illustrationLabel = "";
-    public static String catchphraseLabel = "";
 
     /**
      *
@@ -62,12 +65,12 @@ public class TranscriptionViewer {
 
                     displayTranscription(tabs, htmldoc, null, name, doc.getDocumentElement(), lecoy);
                 } catch (DOMParseException e) {
-                    tabs.add(new Label(transcriptionUnavalableLabel), name);
+                    tabs.add(new Label(Labels.INSTANCE.transcriptionUnavailable()), name);
                     LOGGER.log(Level.SEVERE, "Error parsing XML", e);
                 }
 
             } else {
-                tabs.add(new Label(transcriptionUnavalableLabel), name);
+                tabs.add(new Label(Labels.INSTANCE.transcriptionUnavailable()), name);
             }
         }
 
@@ -101,6 +104,118 @@ public class TranscriptionViewer {
         }
 
         return display;
+    }
+
+    public static TabLayoutPanel createNarrativeTaggingViewer(String[] selectedPages,
+                                                              NarrativeTagging tagging, NarrativeSections sections) {
+        if (sections == null || tagging == null
+                || selectedPages == null || selectedPages.length == 0) {
+            LOGGER.warning("No data found while looking for narrative tagging.");
+            return null;
+        }
+
+        TabLayoutPanel display = new TabLayoutPanel(1.5, Unit.EM);
+        display.addStyleName("Transcription");
+
+        for (String page : selectedPages) {
+            narrativeTagging(page, tagging, sections, display);
+        }
+
+        return display;
+    }
+
+    private static void narrativeTagging(String page, NarrativeTagging tagging,
+                                         NarrativeSections sections, TabLayoutPanel container) {
+        if (page == null || page.isEmpty()) {
+            LOGGER.warning("No page given, so no matching narrative tagging can be found.");
+            return;
+        }
+        page = ImageNameParser.toStandardName(page);
+        boolean isRecto = page.endsWith("r") || page.endsWith("R");
+
+        // Column -> list of scenes
+        Map<String, List<BookScene>> columnMap = new HashMap<>();
+        if (isRecto) {
+            columnMap.put("c", new ArrayList<BookScene>());
+            columnMap.put("d", new ArrayList<BookScene>());
+        } else {
+            columnMap.put("a", new ArrayList<BookScene>());
+            columnMap.put("b", new ArrayList<BookScene>());
+        }
+
+        // Map scenes on this page to appropriate columns
+        for (BookScene scene : tagging) {
+            String start = ImageNameParser.toStandardName(scene.getStartPage());
+            String end = ImageNameParser.toStandardName(scene.getEndPage());
+
+            // If page falls within scene range
+            if (page.compareToIgnoreCase(start) > 0 && page.compareToIgnoreCase(end) < 0) {
+                if (isRecto) {
+                    columnMap.get("c").add(scene);
+                    columnMap.get("d").add(scene);
+                } else {
+                    columnMap.get("a").add(scene);
+                    columnMap.get("b").add(scene);
+                }
+            } else if (page.compareToIgnoreCase(start) == 0) {
+                if (isRecto && scene.getStartPageCol().equals("d")) {
+                    columnMap.get("d").add(scene);
+                } else if (!isRecto && scene.getStartPageCol().equals("b")) {
+                    columnMap.get("b").add(scene);
+                } else if (isRecto) {
+                    columnMap.get("c").add(scene);
+                    columnMap.get("d").add(scene);
+                } else {
+                    columnMap.get("a").add(scene);
+                    columnMap.get("b").add(scene);
+                }
+            } else if (page.compareToIgnoreCase(end) == 0) {
+                if (isRecto && scene.getEndPageCol().equals("c")) {
+                    columnMap.get("c").add(scene);
+                } else if (!isRecto && scene.getEndPageCol().equals("a")) {
+                    columnMap.get("a").add(scene);
+                } else if (isRecto) {
+                    columnMap.get("c").add(scene);
+                    columnMap.get("d").add(scene);
+                } else {
+                    columnMap.get("a").add(scene);
+                    columnMap.get("b").add(scene);
+                }
+            }
+        }
+
+        for (Entry<String, List<BookScene>> entry : columnMap.entrySet()) {
+            final String tabName = page + "." + entry.getKey();     // page.column
+
+            StringBuilder sb = new StringBuilder();
+            for (BookScene scene : entry.getValue()) {
+                sb.append("<p>");
+
+                sb.append("<span class=\"ImageDescriptionLabel\">");
+                sb.append(SimpleHtmlSanitizer.sanitizeHtml(scene.getId()));
+                sb.append(' ');
+                sb.append(scene.isCorrect() ? ":" : "?");
+                sb.append("</span><br/>");
+
+                if (sections.findIndexOfSceneById(scene.getId()) > sections.asScenes().size()) {
+                    continue;
+                }
+
+                NarrativeScene s = sections.asScenes().get(sections.findIndexOfSceneById(scene.getId()));
+                if (s.getDescription() != null && !s.getDescription().isEmpty()) {
+                    sb.append(SimpleHtmlSanitizer.sanitizeHtml(s.getDescription()));
+                }
+                if (s.getCriticalEditionStart() > 0) {
+                    sb.append("<span class=\"TranscriptionLecoy\">");
+                    sb.append(" L");
+                    sb.append(SimpleHtmlSanitizer.sanitizeHtml(String.valueOf(s.getCriticalEditionStart())));
+                    sb.append("</span>");
+                }
+                sb.append("</p>");
+            }
+
+            container.add(new ScrollPanel(new HTML(sb.toString())), tabName);
+        }
     }
 
     /**
@@ -297,12 +412,12 @@ public class TranscriptionViewer {
 
             switch (name) {
                 case "div":
-                    display.appendChild(span(htmldoc, illustrationLabel + ": ", "TranscriptionExtraHeader"));
+                    display.appendChild(span(htmldoc, Labels.INSTANCE.illustration() + ": ", "TranscriptionExtraHeader"));
                     display.appendChild(span(htmldoc, n, "TranscriptionExtra"));
                     display.appendChild(htmldoc.createBRElement());
                     break;
                 case "fw":
-                    display.appendChild(span(htmldoc, catchphraseLabel + ": ", "TranscriptionExtraHeader"));
+                    display.appendChild(span(htmldoc, Labels.INSTANCE.catchphrase() + ": ", "TranscriptionExtraHeader"));
                     display.appendChild(span(htmldoc, n, "TranscriptionExtra"));
                     display.appendChild(htmldoc.createBRElement());
                     break;
@@ -363,74 +478,4 @@ public class TranscriptionViewer {
         }
     }
 
-//    private void displayIllustrationKeywordsOnRight(final Panel container) {
-//        int recto = -1;
-//        int verso = -1;
-//
-//        ImageTagging illus = book.illustrations();
-//
-//        if (illus == null) {
-//            String illusurl = GWT.getHostPageBaseURL() + DATA_PATH + book.illustrationsPath();
-//
-//            loadingdialog.display();
-//
-//            HttpGet.request(illusurl, new HttpGet.Callback<String>() {
-//                public void failure(String error) {
-//                    loadingdialog.error(error);
-//                }
-//
-//                public void success(String result) {
-//                    loadingdialog.hide();
-//                    book.setIllustrations(result);
-//
-//                    if (book.illustrations() != null) {
-//                        displayIllustrationKeywordsOnRight(container);
-//                    }
-//                }
-//            });
-//        } else {
-//            if (Book.isRectoImage(selectedImageIndex)) {
-//                recto = selectedImageIndex;
-//
-//                if (recto > 0) {
-//                    verso = selectedImageIndex - 1;
-//                }
-//            } else {
-//                if (selectedImageIndex + 1 < book.numImages()) {
-//                    recto = selectedImageIndex + 1;
-//                }
-//
-//                verso = selectedImageIndex;
-//            }
-//
-//            TabLayoutPanel tabpanel = new TabLayoutPanel(1.5, Unit.EM);
-//            tabpanel.addStyleName("ImageDescription");
-//
-//            if (verso != -1) {
-//                displayIllustrationKeywords(tabpanel, verso);
-//            }
-//
-//            if (recto != -1) {
-//                displayIllustrationKeywords(tabpanel, recto);
-//            }
-//
-//            if (tabpanel.getWidgetCount() > 0) {
-//                tabpanel.selectTab(0);
-//                container.add(tabpanel);
-//            }
-//        }
-//    }
-//
-//    private void displayIllustrationKeywords(TabLayoutPanel tabpanel, int image) {
-//        ImageTagging illus = book.illustrations();
-//
-//        int count = 1;
-//        List<Integer> indexes = illus.findImageIndexes(image);
-//
-//        for (int i : indexes) {
-//            String name = Book.shortImageName(book.imageName(image))
-//                    + (indexes.size() > 1 ? " " + count++ : "");
-//            tabpanel.add(new ScrollPanel(illus.displayImage(i)), name);
-//        }
-//    }
 }

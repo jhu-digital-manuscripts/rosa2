@@ -415,6 +415,11 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             return (FSIViewerModel) obj;
         }
 
+        BookCollection col = loadBookCollection(collection);
+        if (col == null) {
+            return null;
+        }
+
         Book b = loadBook(collection, book);
         if (b == null) {
             return null;
@@ -427,6 +432,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                 .illustrationTagging(b.getIllustrationTagging())
                 .narrativeTagging(b.getManualNarrativeTagging() == null ?
                         b.getAutomaticNarrativeTagging() : b.getManualNarrativeTagging())
+                .narrativeSections(col.getNarrativeSections())
                 .build();
         updateCache(key, model);
 

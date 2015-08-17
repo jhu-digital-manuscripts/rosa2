@@ -3,6 +3,7 @@ package rosa.website.model.view;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 
@@ -26,6 +27,7 @@ public class FSIViewerModel implements Serializable {
         private Map<String, String> transcriptionMap;
         private IllustrationTagging illustrationTagging;
         private NarrativeTagging narrativeTagging;
+        private NarrativeSections narrativeSections;
 
         private Builder() {}
 
@@ -54,8 +56,14 @@ public class FSIViewerModel implements Serializable {
             return this;
         }
 
+        public Builder narrativeSections(NarrativeSections sections) {
+            this.narrativeSections = sections;
+            return this;
+        }
+
         public FSIViewerModel build() {
-            return new FSIViewerModel(permission, images, transcriptionMap, illustrationTagging, narrativeTagging);
+            return new FSIViewerModel(permission, images, transcriptionMap, illustrationTagging,
+                    narrativeTagging, narrativeSections);
         }
     }
 
@@ -64,6 +72,7 @@ public class FSIViewerModel implements Serializable {
     private Map<String, String> transcriptionMap;
     private IllustrationTagging illustrationTagging;
     private NarrativeTagging narrativeTagging;
+    private NarrativeSections narrativeSections;
 
     /** No-arg constructor for GWT RPC serialization */
     @SuppressWarnings("unused")
@@ -75,14 +84,17 @@ public class FSIViewerModel implements Serializable {
      * @param transcriptionMap transcriptions, separated by page, if available
      * @param illustrationTagging illustration tagging
      * @param narrativeTagging narrative tagging
+     *
      */
     FSIViewerModel(Permission permission, ImageList images, Map<String, String> transcriptionMap,
-                          IllustrationTagging illustrationTagging, NarrativeTagging narrativeTagging) {
+                          IllustrationTagging illustrationTagging, NarrativeTagging narrativeTagging,
+                   NarrativeSections narrativeSections) {
         this.permission = permission;
         this.images = images;
         this.transcriptionMap = transcriptionMap;
         this.illustrationTagging = illustrationTagging;
         this.narrativeTagging = narrativeTagging;
+        this.narrativeSections = narrativeSections;
     }
 
     public Permission getPermission() {
@@ -103,6 +115,10 @@ public class FSIViewerModel implements Serializable {
 
     public NarrativeTagging getNarrativeTagging() {
         return narrativeTagging;
+    }
+
+    public NarrativeSections getNarrativeSections() {
+        return narrativeSections;
     }
 
     public boolean hasTranscription(String page) {
@@ -147,7 +163,9 @@ public class FSIViewerModel implements Serializable {
             return false;
         if (illustrationTagging != null ? !illustrationTagging.equals(that.illustrationTagging) : that.illustrationTagging != null)
             return false;
-        return !(narrativeTagging != null ? !narrativeTagging.equals(that.narrativeTagging) : that.narrativeTagging != null);
+        if (narrativeTagging != null ? !narrativeTagging.equals(that.narrativeTagging) : that.narrativeTagging != null)
+            return false;
+        return !(narrativeSections != null ? !narrativeSections.equals(that.narrativeSections) : that.narrativeSections != null);
 
     }
 
@@ -158,6 +176,7 @@ public class FSIViewerModel implements Serializable {
         result = 31 * result + (transcriptionMap != null ? transcriptionMap.hashCode() : 0);
         result = 31 * result + (illustrationTagging != null ? illustrationTagging.hashCode() : 0);
         result = 31 * result + (narrativeTagging != null ? narrativeTagging.hashCode() : 0);
+        result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
         return result;
     }
 
@@ -169,6 +188,7 @@ public class FSIViewerModel implements Serializable {
                 ", transcriptionMap=" + transcriptionMap +
                 ", illustrationTagging=" + illustrationTagging +
                 ", narrativeTagging=" + narrativeTagging +
+                ", narrativeSections=" + narrativeSections +
                 '}';
     }
 }
