@@ -250,50 +250,57 @@ public class FSIViewerActivity implements Activity {
         view.setFlashViewer(fsiHtml, type);
         view.addShowExtraChangeHandler(showExtraChangeHandler);
 
-        if (type == FSIViewerType.SHOWCASE) {
-            view.addShowcaseToolbar();
-            view.setupFsiShowcaseCallback(showcaseCallback);
+        switch (type) {
+            case SHOWCASE:
+                view.addShowcaseToolbar();
+                view.setupFsiShowcaseCallback(showcaseCallback);
 
-            // Set labels in the "show extra" dropdown
-            setupShowExtra(startPage, false);
+                // Set labels in the "show extra" dropdown
+                setupShowExtra(startPage, false);
 
-            view.addGotoKeyDownHandler(new KeyDownHandler() {
-                @Override
-                public void onKeyDown(KeyDownEvent event) {
-                    if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                        int index = getImageIndex(view.getGotoText());
-                        if (index >= 0) {
-                            view.fsiViewerSelectImage(index);
+                view.addGotoKeyDownHandler(new KeyDownHandler() {
+                    @Override
+                    public void onKeyDown(KeyDownEvent event) {
+                        if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
+                            int index = getImageIndex(view.getGotoText());
+                            if (index >= 0) {
+                                view.fsiViewerSelectImage(index);
+                            }
                         }
                     }
-                }
-            });
-        } else if (type == FSIViewerType.PAGES) {
-            view.addPagesToolbar();
-            view.setupFsiPagesCallback(pagesCallback);
+                });
 
-            // Set labels in the "show extra" dropdown
-            setupShowExtra(startPage, true);
+                break;
+            case PAGES:
+                view.addPagesToolbar();
+                view.setupFsiPagesCallback(pagesCallback);
 
-            view.addGotoKeyDownHandler(new KeyDownHandler() {
-                @Override
-                public void onKeyDown(KeyDownEvent event) {
-                    if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                        int index = getImageIndex(view.getGotoText());
+                // Set labels in the "show extra" dropdown
+                setupShowExtra(startPage, true);
 
-                        if (index >= 0) {
-                            view.fsiViewerGotoImage(index + 1);
+                view.addGotoKeyDownHandler(new KeyDownHandler() {
+                    @Override
+                    public void onKeyDown(KeyDownEvent event) {
+                        if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
+                            int index = getImageIndex(view.getGotoText());
+
+                            if (index >= 0) {
+                                view.fsiViewerGotoImage(index + 1);
+                            }
                         }
                     }
-                }
-            });
+                });
+
+                break;
+            default:
+                throw new RuntimeException("Unknown FSI viewer mode.");
         }
     }
 
     private void setupShowExtra(int page, boolean opening) {
         List<String> page1 = new ArrayList<>(Arrays.asList(getExtraDataLabels(page)));
 
-        if (opening) {
+        if (opening && page > 0) {
             String[] page2 = getExtraDataLabels(page - 1);
             for (String label : page2) {
                 if (!page1.contains(label)) {
@@ -366,8 +373,14 @@ public class FSIViewerActivity implements Activity {
      */
     private String getImageName(int index) {
         if (book == null || model.getImages() == null || model.getImages().getImages() == null
-                || model.getImages().getImages().size() < index || model.getImages().getImages().get(index) == null) {
+                || model.getImages().getImages().size() < index
+                || model.getImages().getImages().get(index) == null) {
             return "";
+        }
+        if (index < 0) {
+            index = 0;
+        } else if (index >= model.getImages().getImages().size()) {
+            index = model.getImages().getImages().size() - 1;
         }
 
         return model.getImages().getImages().get(index).getName();

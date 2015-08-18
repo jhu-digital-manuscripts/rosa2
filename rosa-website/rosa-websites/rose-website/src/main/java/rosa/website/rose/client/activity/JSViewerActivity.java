@@ -75,8 +75,7 @@ public class JSViewerActivity implements Activity {
     private final String fsi_share;
     private final String book;
     private final String starterPage;
-    // TODO only need ImageList and Permission
-    private ImageList images;
+
     private FSIViewerModel model;
 
     private Mode viewerMode;
@@ -119,11 +118,6 @@ public class JSViewerActivity implements Activity {
         showExtraCategory = DisplayCategory.NONE;
     }
 
-    public JSViewerActivity(FSIViewerModel model, BookViewerPlace place, ClientFactory clientFactory) {
-        this(place, clientFactory);
-        this.model = model;
-    }
-
     @Override
     public String mayStop() {
         return null;
@@ -156,10 +150,9 @@ public class JSViewerActivity implements Activity {
                     @Override
                     public void onSuccess(FSIViewerModel result) {
                         model = result;
-                        images = result.getImages();
 
                         if (starterPage != null && !starterPage.isEmpty()) {
-                            current_selected_index = getImageIndex(starterPage, images);
+                            current_selected_index = getImageIndex(starterPage);
                             if (starterPage.endsWith("v") || starterPage.endsWith("V")) {
                                 current_selected_index++;
                             }
@@ -174,6 +167,11 @@ public class JSViewerActivity implements Activity {
     }
 
     public String getCurrentPage() {
+        if (model == null) {
+            return null;
+        }
+        ImageList images = model.getImages();
+
         if (images == null || images.getImages() == null || images.getImages().size() < current_selected_index) {
             return null;
         }
@@ -237,7 +235,7 @@ public class JSViewerActivity implements Activity {
             @Override
             public void onKeyDown(KeyDownEvent event) {
                 if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                    int index = getImageIndex(view.getGotoText(), images);
+                    int index = getImageIndex(view.getGotoText());
 
                     /*
                         This hack gets around a bug in the original website where a user inputs
@@ -326,7 +324,7 @@ public class JSViewerActivity implements Activity {
     private void setupShowExtra(int page, boolean opening) {
         List<String> page1 = new ArrayList<>(Arrays.asList(getExtraDataLabels(page)));
 
-        if (opening) {
+        if (opening && page > 0) {
             String[] page2 = getExtraDataLabels(page - 1);
             for (String label : page2) {
                 if (!page1.contains(label)) {
@@ -430,7 +428,9 @@ public class JSViewerActivity implements Activity {
         }
     }
 
-    private int getImageIndex(String name, ImageList images) {
+    private int getImageIndex(String name) {
+        ImageList images = model.getImages();
+
         if (images != null && images.getImages() != null) {
             List<BookImage> list = images.getImages();
             for (int i = 0; i < list.size(); i++) {
@@ -450,8 +450,14 @@ public class JSViewerActivity implements Activity {
      */
     private String getImageName(int index) {
         if (book == null || model.getImages() == null || model.getImages().getImages() == null
-                || model.getImages().getImages().size() < index || model.getImages().getImages().get(index) == null) {
+                || model.getImages().getImages().size() < index
+                || model.getImages().getImages().get(index) == null) {
             return "";
+        }
+        if (index < 0) {
+            index = 0;
+        } else if (index >= model.getImages().getImages().size()) {
+            index = model.getImages().getImages().size() - 1;
         }
 
         return model.getImages().getImages().get(index).getName();
