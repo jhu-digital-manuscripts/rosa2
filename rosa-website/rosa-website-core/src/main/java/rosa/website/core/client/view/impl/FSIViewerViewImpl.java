@@ -147,6 +147,10 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
     }
 
     private void doResize() {
+        if (getParent() == null || permissionPanel == null || viewerControlsWidget == null) {
+            return;
+        }
+
         int width = getParent().getOffsetWidth() - 100
                 - (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
         int height = getParent().getOffsetHeight()

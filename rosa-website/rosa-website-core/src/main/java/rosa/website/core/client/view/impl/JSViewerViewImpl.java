@@ -51,6 +51,8 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
     /**  */
     public JSViewerViewImpl() {
         root = new FlowPanel();
+        root.setSize("100%", "100%");
+        root.addStyleName("JSViewerRoot");
 
         transcriptionPanel = new SimplePanel();
         root.add(transcriptionPanel);
@@ -192,12 +194,16 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
     }
 
     private void doResize() {   // TODO take image aspect ratio into account, so image isn't squished!
+        if (permissionPanel == null || readerToolbar == null) {
+            return;
+        }
+
         int width = getOffsetWidth() - 30
                 - (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
         int height = getOffsetHeight() - 30
                 - permissionPanel.getOffsetHeight()
                 - readerToolbar.getOffsetHeight();
 
-        codexView.setSize(width + "px", height + "px");
+        codexView.resize(width, height);
     }
 }

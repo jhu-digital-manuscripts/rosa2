@@ -19,10 +19,7 @@ import com.google.gwt.event.dom.client.TouchMoveHandler;
 import com.google.gwt.event.dom.client.TouchStartEvent;
 import com.google.gwt.event.dom.client.TouchStartHandler;
 import com.google.gwt.event.logical.shared.AttachEvent;
-import com.google.gwt.event.logical.shared.ResizeEvent;
-import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.AbsolutePanel;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
@@ -69,7 +66,7 @@ public class CodexView extends Composite {
     private int drag_x, drag_y;
 
     public enum Mode {
-        IMAGE_BROWSER, PAGE_TURNER, IMAGE_VIEWER;
+        IMAGE_BROWSER, PAGE_TURNER, IMAGE_VIEWER
     }
 
     public CodexView(ImageServer server, final CodexModel model, final CodexController ctrl, ScrollPanel container) {
@@ -96,31 +93,11 @@ public class CodexView extends Composite {
             }
         });
 
-        calculateImageViewport();
-
         // Update thumbs when scrolling
 
         final HandlerRegistration reg1 = container.addScrollHandler(new ScrollHandler() {
             public void onScroll(ScrollEvent event) {
                 displayVisibleThumbs();
-            }
-        });
-
-        final HandlerRegistration reg2 = Window.addResizeHandler(new ResizeHandler() {
-            int width = Window.getClientWidth();
-            int height = Window.getClientHeight();
-
-            public void onResize(ResizeEvent event) {
-                int dx = event.getWidth() - width;
-                int dy = event.getHeight() - height;
-
-                if (Math.abs(dx) > 100 || Math.abs(dy) > 100) {
-                    width = event.getWidth();
-                    height = event.getHeight();
-
-                    calculateImageViewport();
-                    setup();
-                }
             }
         });
 
@@ -130,7 +107,6 @@ public class CodexView extends Composite {
             public void onAttachOrDetach(AttachEvent event) {
                 if (!event.isAttached()) {
                     reg1.removeHandler();
-                    reg2.removeHandler();
                 }
             }
         });
@@ -138,29 +114,11 @@ public class CodexView extends Composite {
         initWidget(main);
     }
 
-    private void calculateImageViewport() {
-        // TODO pass hints from constructor?
-        int avail_width = container.getOffsetWidth() - 20;
-        int avail_height = container.getOffsetHeight() - 60;
+    public void resize(int width, int height) {
+        image_viewport_width = width;
+        image_viewport_height = height;
 
-        if (avail_width < 300) {
-            avail_width = 300;
-        }
-
-        if (avail_height < 200) {
-            avail_height = 200;
-        }
-
-        if (avail_width > 2000) {
-            avail_width = 2000;
-        }
-
-        if (avail_height > 1000) {
-            avail_height = 1000;
-        }
-
-        image_viewport_width = avail_width;
-        image_viewport_height = avail_height;
+        setup();
     }
 
     private static class Thumb extends Composite {
@@ -455,16 +413,6 @@ public class CodexView extends Composite {
         turnPage(ctrl.getOpening());
     }
 
-    public int getUsedWidth() {
-        if (mode == Mode.PAGE_TURNER) {
-            FocusPanel focus = (FocusPanel) main.getWidget(0);
-            AbsolutePanel display = (AbsolutePanel) focus.getWidget();
-            return display.getOffsetWidth();
-        } else {
-            return main.getOffsetWidth();
-        }
-    }
-
     // TODO page turn animation, see ScrollAnimation
 
     private void turnPage(final CodexOpening opening) {
@@ -473,10 +421,8 @@ public class CodexView extends Composite {
 
         int page_size = round100(image_viewport_width / 2);
 
-        WebImage verso = opening.verso() == null ? null : server
-                .renderToSquare(opening.verso(), page_size);
-        WebImage recto = opening.recto() == null ? null : server
-                .renderToSquare(opening.recto(), page_size);
+        WebImage verso = opening.verso() == null ? null : server.renderToSquare(opening.verso(), page_size);
+        WebImage recto = opening.recto() == null ? null : server.renderToSquare(opening.recto(), page_size);
 
         int verso_width, verso_height, recto_width, recto_height;
 
@@ -605,4 +551,8 @@ public class CodexView extends Composite {
         super.onLoad();
         updateThumbsAfterLayout();
     }
+
+    private native void console(String message) /*-{
+        console.log(message);
+    }-*/;
 }

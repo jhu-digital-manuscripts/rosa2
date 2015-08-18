@@ -76,4 +76,6 @@ public interface JSViewerView extends IsWidget {
      * @return handler registration for later de-registration of this handler
      */
     HandlerRegistration addGoToKeyDownHandler(KeyDownHandler handler);
+
+    void onResize();
 }
