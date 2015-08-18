@@ -320,7 +320,9 @@ public class FSIViewerActivity implements Activity {
                 // Display transcriptions for all pages/columns
                 // Fall through
             case LECOY:
-                view.setSelectedShowExtra(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]");
+                if (lecoy) {
+                    view.setSelectedShowExtra(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]");
+                }
                 // Display Lecoy
 
                 //   Generate array of Strings holding XML fragments for each relevant page

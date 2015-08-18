@@ -147,30 +147,30 @@ public class JSViewerActivity implements Activity {
 
         archiveService.loadFSIViewerModel(collection, book, LocaleInfo.getCurrentLocale().getLocaleName(),
                 new AsyncCallback<FSIViewerModel>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load image list.", caught);
-                LoadingPanel.INSTANCE.hide();
-            }
-
-            @Override
-            public void onSuccess(FSIViewerModel result) {
-                model = result;
-                images = result.getImages();
-
-                if (starterPage != null && !starterPage.isEmpty()) {
-                    current_selected_index = getImageIndex(starterPage, images);
-                    if (starterPage.endsWith("v") || starterPage.endsWith("V")) {
-                        current_selected_index++;
+                    @Override
+                    public void onFailure(Throwable caught) {
+                        logger.log(Level.SEVERE, "Failed to load image list.", caught);
+                        LoadingPanel.INSTANCE.hide();
                     }
-                }
 
-                createJSviewer();
+                    @Override
+                    public void onSuccess(FSIViewerModel result) {
+                        model = result;
+                        images = result.getImages();
 
-                view.setPermissionStatement(result.getPermission().getPermission());
-                LoadingPanel.INSTANCE.hide();
-            }
-        });
+                        if (starterPage != null && !starterPage.isEmpty()) {
+                            current_selected_index = getImageIndex(starterPage, images);
+                            if (starterPage.endsWith("v") || starterPage.endsWith("V")) {
+                                current_selected_index++;
+                            }
+                        }
+
+                        createJSviewer();
+
+                        view.setPermissionStatement(result.getPermission().getPermission());
+                        LoadingPanel.INSTANCE.hide();
+                    }
+                });
     }
 
     public String getCurrentPage() {
@@ -353,7 +353,9 @@ public class JSViewerActivity implements Activity {
                 // Display transcriptions for all pages/columns
                 // Fall through
             case LECOY:
-                view.setSelectedShowExtra(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]");
+                if (lecoy) {
+                    view.setSelectedShowExtra(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]");
+                }
                 // Display Lecoy
 
                 //   Generate array of Strings holding XML fragments for each relevant page
@@ -388,7 +390,7 @@ public class JSViewerActivity implements Activity {
                 break;
         }
 
-//        view.onResize();
+        view.onResize();
     }
 
     public String[] getExtraDataLabels(int page) {
