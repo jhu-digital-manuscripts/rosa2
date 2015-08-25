@@ -40,4 +40,10 @@ public interface WebsiteConfig extends Constants {
      * @return FSI URL
      */
     String fsiUrl();
+
+    /**
+     * @return should Google analytics be tracked?
+     */
+    @DefaultBooleanValue(false)
+    boolean trackAnalytics();
 }

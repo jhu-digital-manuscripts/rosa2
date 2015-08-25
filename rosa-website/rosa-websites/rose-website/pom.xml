@@ -24,6 +24,7 @@
                 <search.index.path>/tmp/lucene</search.index.path>
                 <gwt.output.style>pretty</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>
+                <analytics.status>false</analytics.status>
             </properties>
         </profile>
 
@@ -35,6 +36,7 @@
                 <search.index.path>/var/tmp/lucene</search.index.path>
                 <gwt.output.style>obf</gwt.output.style>
                 <gwt.log.level>WARNING</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
+                <analytics.status>false</analytics.status>
             </properties>
         </profile>
     </profiles>
