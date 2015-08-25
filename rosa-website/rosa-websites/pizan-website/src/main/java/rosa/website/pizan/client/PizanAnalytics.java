@@ -1,21 +1,15 @@
-package rosa.website.rose.client;
+package rosa.website.pizan.client;
 
 import rosa.website.core.client.Analytics;
 
 import java.util.List;
 
-public class RoseAnalytics extends Analytics {
+public class PizanAnalytics extends Analytics {
 
     private enum Action {
-        VIEW_NARRATIVE_SECTIONS("sections", "Page", "view", "narrative sections"),
-        VIEW_ROSE_HISTORY("rose", "Page", "view", "rose history"),
-        VIEW_PROJECT_HISTORY("project", "Page", "view", "project history"),
-        VIEW_CORPUS("corpus", "Page", "view", "corpus"),
-        VIEW_DONATION("donation", "Page", "view", "donation"),
-        VIEW_COLLECTION_DATA("data", "Page", "view", "collection data"),
-        VIEW_CHARACTER_NAMES("chars", "Page", "view", "char names"),
-        VIEW_ILLUSTRATION_TITLES("illustrations", "Page", "view", "illus titles"),
-        VIEW_BOOK_BIB("bib", "Page", "view", "bib"),
+        VIEW_PIZAN("pizan", "Page", "view", "christine de pizan"),
+        VIEW_WORKS("works", "Page", "view", "works"),
+        VIEW_PROPER_NAMES("names", "Page", "view", "proper names"),
         NONE("", "", "", "");
 
         final String prefix;
@@ -41,7 +35,7 @@ public class RoseAnalytics extends Analytics {
         }
     }
 
-    public static final RoseAnalytics INSTANCE = new RoseAnalytics();
+    public static final PizanAnalytics INSTANCE = new PizanAnalytics();
 
     @Override
     protected void trackOther(String action, String bookid, List<String> args) {

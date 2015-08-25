@@ -13,4 +13,6 @@ public interface WebsiteConfig extends Constants {
     String htmlHistory();
     String csvHistory();
     String fsiUrl();
+    @DefaultBooleanValue(false)
+    boolean trackAnalytics();
 }

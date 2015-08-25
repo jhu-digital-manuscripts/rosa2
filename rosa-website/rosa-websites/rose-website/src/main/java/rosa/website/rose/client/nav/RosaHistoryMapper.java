@@ -37,7 +37,7 @@ public class RosaHistoryMapper extends BaseHistoryMapper {
         if (WebsiteConfig.INSTANCE.trackAnalytics()) {
             triggerAnalytics(token);
         }
-        
+
         if (RosaHistoryConfig.isValidHtmlPage(parts[0])) {
             return new HTMLPlace(parts[0]);
         } else if (RosaHistoryConfig.isValidCsvPage(parts[0])) {
