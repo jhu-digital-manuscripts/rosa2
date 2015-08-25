@@ -23,6 +23,7 @@ import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.core.client.widget.TranscriptionViewer;
+import rosa.website.core.shared.ImageNameParser;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewerHTMLBuilder;
@@ -215,7 +216,7 @@ public class FSIViewerActivity implements Activity {
         List<String> labels = new ArrayList<>();
         labels.add(Labels.INSTANCE.show());
 
-        if (model.hasTranscription(page)) {
+        if (model.hasTranscription(ImageNameParser.toStandardName(page))) {
             labels.add(Labels.INSTANCE.transcription());
             labels.add(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]");
         }
@@ -332,10 +333,25 @@ public class FSIViewerActivity implements Activity {
                 }
                 // Display Lecoy
 
+                boolean hasAnyTranscription = false;
+                for (String page : selectedPages) {
+                    if (model.hasTranscription(ImageNameParser.toStandardName(page))) {
+                        hasAnyTranscription = true;
+                        break;
+                    }
+                }
+
+                // Display nothing and hide UI elements if no transcription is available
+                if (!hasAnyTranscription) {
+                    showExtraCategory = DisplayCategory.NONE;
+                    handleShowExtra();
+                    return;
+                }
+
                 //   Generate array of Strings holding XML fragments for each relevant page
                 List<String> list = new ArrayList<>();
                 for (String page : selectedPages) {
-                    list.add(model.getTranscription(page));
+                    list.add(model.getTranscription(ImageNameParser.toStandardName(page)));
                 }
 
                 //   Create display widget and add it to view
@@ -344,6 +360,20 @@ public class FSIViewerActivity implements Activity {
                 ));
                 break;
             case ILLUSTRATION:
+                boolean hasAnyIllustration = false;
+                for (String page : selectedPages) {
+                    if (model.hasIllustrationTagging(page)) {
+                        hasAnyIllustration = true;
+                        break;
+                    }
+                }
+
+                if (!hasAnyIllustration) {
+                    showExtraCategory = DisplayCategory.NONE;
+                    handleShowExtra();
+                    return;
+                }
+
                 view.setSelectedShowExtra(Labels.INSTANCE.illustrationDescription());
                 // Display illustration descriptions
 

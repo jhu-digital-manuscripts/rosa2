@@ -150,7 +150,7 @@ public class TranscriptionViewer {
             String start = ImageNameParser.toStandardName(scene.getStartPage());
             String end = ImageNameParser.toStandardName(scene.getEndPage());
 
-            // If page falls within scene range
+            // If page falls within scene range TODO seems to be wrong...
             if (page.compareToIgnoreCase(start) > 0 && page.compareToIgnoreCase(end) < 0) {
                 if (isRecto) {
                     columnMap.get("c").add(scene);
@@ -239,14 +239,30 @@ public class TranscriptionViewer {
                 StringBuilder sb = new StringBuilder("<p>");
 
                 addIllustrationKeywords(sb, Labels.INSTANCE.illustrationTitles(), ill.getTitles());
-                addIllustrationKeywords(sb, Labels.INSTANCE.textualElements(), ill.getTextualElement());
-                addIllustrationKeywords(sb, Labels.INSTANCE.initials(), ill.getInitials());
-                addIllustrationKeywords(sb, Labels.INSTANCE.characterNames(), ill.getCharacters());
-                addIllustrationKeywords(sb, Labels.INSTANCE.costume(), ill.getCostume());
-                addIllustrationKeywords(sb, Labels.INSTANCE.objects(), ill.getObject());
-                addIllustrationKeywords(sb, Labels.INSTANCE.landscape(), ill.getLandscape());
-                addIllustrationKeywords(sb, Labels.INSTANCE.architecture(), ill.getArchitecture());
-                addIllustrationKeywords(sb, Labels.INSTANCE.other(), ill.getOther());
+                if (isNotEmpty(ill.getTextualElement())) {
+                    addIllustrationKeywords(sb, Labels.INSTANCE.textualElements(), ill.getTextualElement());
+                }
+                if (isNotEmpty(ill.getInitials())) {
+                    addIllustrationKeywords(sb, Labels.INSTANCE.initials(), ill.getInitials());
+                }
+                if (isNotEmpty(ill.getCharacters())) {
+                    addIllustrationKeywords(sb, Labels.INSTANCE.characterNames(), ill.getCharacters());
+                }
+                if (isNotEmpty(ill.getCostume())) {
+                    addIllustrationKeywords(sb, Labels.INSTANCE.costume(), ill.getCostume());
+                }
+                if (isNotEmpty(ill.getObject())) {
+                    addIllustrationKeywords(sb, Labels.INSTANCE.objects(), ill.getObject());
+                }
+                if (isNotEmpty(ill.getLandscape())) {
+                    addIllustrationKeywords(sb, Labels.INSTANCE.landscape(), ill.getLandscape());
+                }
+                if (isNotEmpty(ill.getArchitecture())) {
+                    addIllustrationKeywords(sb, Labels.INSTANCE.architecture(), ill.getArchitecture());
+                }
+                if (isNotEmpty(ill.getOther())) {
+                    addIllustrationKeywords(sb, Labels.INSTANCE.other(), ill.getOther());
+                }
 
                 sb.append("</p>");
 
@@ -255,6 +271,36 @@ public class TranscriptionViewer {
         }
 
         return descriptions.toArray(new String[descriptions.size()]);
+    }
+
+    /**
+     * Return TRUE if the array is not NULL and contains one or more non-empty string.
+     *
+     * @param strings array of strings
+     * @return does this array have data?
+     */
+    private static boolean isNotEmpty(String[] strings) {
+        if (strings == null || strings.length == 0) {
+            return false;
+        }
+
+        boolean isNotEmpty = false;
+        for (String str : strings) {
+            if (isNotEmpty(str)) {
+                isNotEmpty = true;
+                break;
+            }
+        }
+
+        return isNotEmpty;
+    }
+
+    private static boolean isNotEmpty(String str) {
+        return !isEmpty(str);
+    }
+
+    private static boolean isEmpty(String str) {
+        return str == null || str.isEmpty();
     }
 
     private static void addIllustrationKeywords(StringBuilder sb, String label, String ... text) {

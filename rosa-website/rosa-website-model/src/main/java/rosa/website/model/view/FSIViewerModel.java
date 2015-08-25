@@ -9,6 +9,7 @@ import rosa.archive.model.Permission;
 
 import java.io.Serializable;
 import java.util.Map;
+import java.util.logging.Logger;
 
 /**
  * Container for book model objects that are relevant to the
@@ -122,7 +123,7 @@ public class FSIViewerModel implements Serializable {
     }
 
     public boolean hasTranscription(String page) {
-        return transcriptionMap.containsKey(page); // TODO may need to massage page into a standard form
+        return transcriptionMap.containsKey(page);
     }
 
     public boolean hasIllustrationTagging(String page) {
