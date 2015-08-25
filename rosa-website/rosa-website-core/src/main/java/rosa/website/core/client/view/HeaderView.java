@@ -1,6 +1,7 @@
 package rosa.website.core.client.view;
 
 import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
 
@@ -32,6 +33,8 @@ public interface HeaderView extends IsWidget {
      * @return .
      */
     HandlerRegistration addSearchClickHandler(ClickHandler handler);
+
+    HandlerRegistration addSearchKeyPressHandler(KeyPressHandler handler);
 
     /**
      * Add a link to "advanced search" in the header.

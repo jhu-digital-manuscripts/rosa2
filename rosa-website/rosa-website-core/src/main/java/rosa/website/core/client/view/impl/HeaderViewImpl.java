@@ -2,6 +2,7 @@ package rosa.website.core.client.view.impl;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
@@ -60,6 +61,11 @@ public class HeaderViewImpl extends Composite implements HeaderView {
     @Override
     public HandlerRegistration addSearchClickHandler(ClickHandler handler) {
         return searchWidget.addSearchButtonClickHandler(handler);
+    }
+
+    @Override
+    public HandlerRegistration addSearchKeyPressHandler(KeyPressHandler handler) {
+        return searchWidget.addSearchTextBoxKeyPressHandler(handler);
     }
 
     @Override

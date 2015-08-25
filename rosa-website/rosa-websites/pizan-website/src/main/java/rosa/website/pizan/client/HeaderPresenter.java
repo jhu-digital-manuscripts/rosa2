@@ -3,6 +3,9 @@ package rosa.website.pizan.client;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.dom.client.KeyCodes;
+import com.google.gwt.event.dom.client.KeyPressEvent;
+import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
@@ -33,6 +36,20 @@ public class HeaderPresenter implements Presenter, IsWidget {
             public void onClick(ClickEvent event) {
                 String searchToken = view.getSearchToken();
 
+                if (searchToken != null && !searchToken.isEmpty()) {
+                    clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
+                }
+            }
+        });
+
+        view.addSearchKeyPressHandler(new KeyPressHandler() {
+            @Override
+            public void onKeyPress(KeyPressEvent event) {
+                if (event.getUnicodeCharCode() != KeyCodes.KEY_ENTER) {
+                    return;
+                }
+
+                String searchToken = view.getSearchToken();
                 if (searchToken != null && !searchToken.isEmpty()) {
                     clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
                 }

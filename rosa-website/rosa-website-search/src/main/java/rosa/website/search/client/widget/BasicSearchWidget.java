@@ -1,6 +1,7 @@
 package rosa.website.search.client.widget;
 
 import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
@@ -56,6 +57,17 @@ public class BasicSearchWidget extends Composite {
      */
     public HandlerRegistration addSearchButtonClickHandler(ClickHandler handler) {
         return searchButton.addClickHandler(handler);
+    }
+
+    /**
+     * Add a handler to the search text box to deal with key presses from
+     * the keyboard.
+     *
+     * @param handler .
+     * @return .
+     */
+    public HandlerRegistration addSearchTextBoxKeyPressHandler(KeyPressHandler handler) {
+        return searchBox.addKeyPressHandler(handler);
     }
 
     /**
