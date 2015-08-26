@@ -43,7 +43,7 @@ public class PizanAnalytics extends Analytics {
 
         switch (a) {
             default:
-                trackEvent(a.category, a.actionName, a.label);
+                doTrack(a.category, a.actionName, a.label, -1);
                 break;
             case NONE:
                 break;

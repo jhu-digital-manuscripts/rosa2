@@ -22,19 +22,6 @@ public abstract class Analytics {
         VIEW_CONTACT("contact", "Page", "view"),
         VIEW_TERMS("terms", "Page", "view"),
         NONE("", "", "");
-//        VIEW_NARRATIVE_SECTIONS("sections"),
-//        VIEW_ROSE_HISTORY("rose"),
-//        VIEW_PROJECT_HISTORY("project"),
-//        VIEW_CORPUS("corpus"),
-//        VIEW_DONATION("donation"),
-//        VIEW_COLLECTION_DATA("data"),
-//        VIEW_CHARACTER_NAMES("chars"),
-//        VIEW_ILLUSTRATION_TITLES("illustrations"),
-//        VIEW_BOOK_BIB("bib"),
-
-//        VIEW_PIZAN("pizan"),
-//        VIEW_WORKS("works"),
-//        VIEW_PROPER_NAMES("names")
 
         final String prefix;
         final String category;
