@@ -205,17 +205,6 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
                 - permissionPanel.getOffsetHeight()
                 - readerToolbar.getOffsetHeight();
 
-        console(
-                "Current size: " + codexView.getOffsetWidth() + "x" + codexView.getOffsetHeight() + " px\n"
-                + "offsetWidth: " + getOffsetWidth() + "\n"
-                + "transcription width: " + (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0) + "\n"
-                + "new size: " + width + "x" + height + " px"
-        );
-
         codexView.resize(width, height);
     }
-
-    private native void console(String message) /*-{
-        console.log(message);
-    }-*/;
 }
