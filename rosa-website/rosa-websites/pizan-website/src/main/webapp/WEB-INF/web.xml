@@ -31,6 +31,10 @@
         <param-name>search.index.path</param-name>
         <param-value>${search.index.path}</param-value>
     </context-param>
+    <context-param>
+        <param-name>collection.name</param-name>
+        <param-value>pizancollection</param-value>
+    </context-param>
 
     <!-- Default page to serve -->
     <welcome-file-list>

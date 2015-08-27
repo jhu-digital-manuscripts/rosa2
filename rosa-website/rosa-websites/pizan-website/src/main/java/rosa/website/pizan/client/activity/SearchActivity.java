@@ -1,30 +1,43 @@
 package rosa.website.pizan.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import com.google.gwt.view.client.RangeChangeEvent;
+import com.google.gwt.view.client.RangeChangeEvent.Handler;
+import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
+import rosa.search.model.SearchMatch;
+import rosa.search.model.SearchOptions;
+import rosa.search.model.SearchResult;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.FSIUtil;
+import rosa.website.core.client.Labels;
+import rosa.website.core.client.RosaSearchServiceAsync;
 import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.model.csv.BookDataCSV;
+import rosa.website.model.csv.BookDataCSV.Column;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVRow;
 import rosa.website.model.csv.CSVType;
-import rosa.website.model.csv.CollectionCSV;
-import rosa.website.model.csv.CollectionCSV.Column;
 import rosa.website.model.select.BookInfo;
 import rosa.website.pizan.client.WebsiteConfig;
 import rosa.website.search.client.QueryUtil;
 import rosa.website.search.client.RosaQueryUtil;
 import rosa.website.search.client.model.SearchCategory;
+import rosa.website.search.client.model.SearchMatchModel;
+import rosa.website.search.client.model.SearchResultModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,10 +47,19 @@ import java.util.logging.Logger;
 public class SearchActivity implements Activity {
     private static final Logger LOG = Logger.getLogger(SearchActivity.class.toString());
     private static final QueryUtil QUERY_UTIL = new RosaQueryUtil();
+    private static final int MATCH_COUNT = 20;// Number of matches to return from search service. Can be used with paging.
+    private static final int THUMB_WIDTH = 64;
+    private static final int THUMB_HEIGHT = 64;
 
     private final AdvancedSearchPlace place;
     private final AdvancedSearchView view;
     private final ArchiveDataServiceAsync archiveDataService;
+    private final RosaSearchServiceAsync searchService;
+
+    private String resumeToken = null;     // For use in paging
+    private BookDataCSV collection;
+
+    private HandlerRegistration rangeChangeHandler;
 
     /**
      * @param place initial search state
@@ -47,6 +69,7 @@ public class SearchActivity implements Activity {
         this.place = place;
         this.view = clientFactory.advancedSearchView();
         this.archiveDataService = clientFactory.archiveDataService();
+        this.searchService = clientFactory.searchService();
     }
 
     @Override
@@ -71,10 +94,13 @@ public class SearchActivity implements Activity {
         LoadingPanel.INSTANCE.show();
         panel.setWidget(view);
 
+        view.clear();
+        initView();
+
         String collection = WebsiteConfig.INSTANCE.collection();
         String lang = LocaleInfo.getCurrentLocale().getLocaleName();
 
-        archiveDataService.loadCSVData(collection, lang, CSVType.COLLECTION_DATA, new AsyncCallback<CSVData>() {
+        archiveDataService.loadCSVData(collection, lang, CSVType.COLLECTION_BOOKS, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
                 LOG.log(Level.SEVERE, "Failed to get book data.", caught);
@@ -82,8 +108,8 @@ public class SearchActivity implements Activity {
 
             @Override
             public void onSuccess(CSVData result) {
-                if (result instanceof CollectionCSV) {
-                    setSearchModel((CollectionCSV) result);
+                if (result instanceof BookDataCSV) {
+                    setSearchModel((BookDataCSV) result);
                 } else {
                     LOG.log(Level.SEVERE, "Cannot initialize search widget, bad data returned from server.");
                 }
@@ -92,11 +118,11 @@ public class SearchActivity implements Activity {
         });
     }
 
-    private void setSearchModel(CollectionCSV data) {
-        view.setAddFieldButtonText("Add Field");
-        view.setSearchButtonText("Search");
-        view.setRemoveButtonText("Remove");
-        view.setClearBooksButtonText("Clear");
+    private void initView() {
+        view.setAddFieldButtonText(Labels.INSTANCE.addSearchField());
+        view.setSearchButtonText(Labels.INSTANCE.search());
+        view.setRemoveButtonText(Labels.INSTANCE.removeSearchField());
+        view.setClearBooksButtonText(Labels.INSTANCE.clearTextBox());
 
         view.setAvailableSearchFields(SearchCategory.values());
         view.setAvailableSearchOperations(QueryOperation.values());
@@ -105,24 +131,29 @@ public class SearchActivity implements Activity {
             @Override
             public void onClick(ClickEvent event) {
                 String query = view.getSearchQuery();       // This query string will have to be URL encoded first
-                if (query == null || query.isEmpty()) {
-                    Window.alert("No search will happen because no search query was found.");
-                } else {
-                    Window.alert("A search will happen now. Token: #" + view.getSearchQuery());
+                if (query != null && !query.isEmpty()) {
+                    LOG.info("A search will happen now. Token: #" + view.getSearchQuery());
+                    // Do search
+                    performSearch(query);
                 }
             }
         });
+    }
+
+    private void setSearchModel(BookDataCSV data) {
+        this.collection = data;
 
         List<BookInfo> books = new ArrayList<>();
+        books.add(new BookInfo("Restrict by book:", null));
         for (CSVRow row : data) {
-            books.add(new BookInfo(row.getValue(Column.NAME), row.getValue(Column.ID)));
+            books.add(new BookInfo(row.getValue(Column.COMMON_NAME), row.getValue(Column.ID)));
         }
         view.addBooksToRestrictionList(books.toArray(new BookInfo[books.size()]));
 
-        init(books);
+        setData(books);
     }
 
-    private void init(List<BookInfo> books) {
+    private void setData(List<BookInfo> books) {
         if (place == null || place.getSearchToken() == null || place.getSearchToken().isEmpty()) {
             view.addQueryField();
             view.addQueryField();
@@ -146,6 +177,86 @@ public class SearchActivity implements Activity {
                 view.setBooksAsRestricted(bookInfo);
             }
         }
+
+        LOG.info("Setting initial data. " + place.toString());
+        performSearch(place.getSearchToken());
+    }
+
+    private void performSearch(final String searchToken) {
+        if (rangeChangeHandler != null) {
+            rangeChangeHandler.removeHandler();
+        }
+
+        final Query query = QUERY_UTIL.toQuery(searchToken);
+        resumeToken = null;
+
+        if (query == null) {
+            return;
+        }
+
+        rangeChangeHandler = view.addRangeChangeHandler(new Handler() {
+            @Override
+            public void onRangeChange(RangeChangeEvent event) {
+                final int start = event.getNewRange().getStart();
+                int length = event.getNewRange().getLength();
+
+                SearchOptions options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length), resumeToken);
+
+                searchService.search(query, options, new AsyncCallback<SearchResult>() {
+                    @Override
+                    public void onFailure(Throwable caught) {
+                        LOG.log(Level.SEVERE, "Search failed.", caught);
+                    }
+
+                    @Override
+                    public void onSuccess(SearchResult result) {
+                        // Update history token, but do not navigate away
+                        History.newItem("search;" + QUERY_UTIL.changeOffset(searchToken, start), false);
+
+                        SearchResultModel model = adaptSearchResults(result);
+                        resumeToken = model.getResumeToken();
+                        view.setRowCount((int) model.getTotal());  // NOTE: casting long to int can result in data loss
+                        view.setRowData(start, model.getMatchList());
+                    }
+                });
+            }
+        });
+
+        // Note on using the BACK button, this will use the original value stored in the Place
+        // Switch to using history token directly?
+        LOG.info("Performing search. [" + searchToken + "]  {" + this + "}");
+        view.setVisibleRange(QUERY_UTIL.offset(searchToken), MATCH_COUNT);
+    }
+
+    private SearchResultModel adaptSearchResults(SearchResult result) {
+        SearchResultModel model = new SearchResultModel(result);
+
+        for (SearchMatch match : result.getMatches()) {
+            String pageId = QUERY_UTIL.getPageID(match);
+            String bookId = QUERY_UTIL.getBookID(match);
+
+            String fsiUrl;
+            String targetUrl = GWT.getHostPageBaseURL();
+
+            if (pageId == null || pageId.isEmpty()) {
+                targetUrl += "#book;" + bookId;
+                fsiUrl = null;
+            } else {
+                targetUrl += "#read;" + pageId;
+                fsiUrl = FSIUtil.getFSIImageUrl(
+                        WebsiteConfig.INSTANCE.fsiShare(),
+                        bookId,
+                        pageId,
+                        THUMB_WIDTH,
+                        THUMB_HEIGHT,
+                        WebsiteConfig.INSTANCE.fsiUrl()
+                );
+            }
+
+            model.addSearchMatch(new SearchMatchModel(match, fsiUrl, targetUrl, getDisplayName(bookId, pageId)));
+        }
+
+        return model;
     }
 
     private BookInfo getBook(String book, List<BookInfo> books) {
@@ -156,5 +267,19 @@ public class SearchActivity implements Activity {
         }
 
         return null;
+    }
+
+    private String getDisplayName(String bookId, String pageId) {
+        if (pageId != null) {
+            CSVRow row = collection.getRow(bookId);
+
+            if (row != null) {
+                return pageId + ": "
+                        + row.getValue(Column.REPO) + " "
+                        + row.getValue(Column.SHELFMARK);
+            }
+        }
+
+        return bookId;
     }
 }
