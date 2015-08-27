@@ -14,6 +14,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,7 +44,7 @@ public class TranscriptionSplitter {
     public static Map<String, String> split(Transcription transcription) {
         if (transcription == null
                 || transcription.getXML() == null || transcription.getXML().isEmpty()) {
-            return null;
+            return Collections.emptyMap();
         }
 
         return split(transcription.getXML());

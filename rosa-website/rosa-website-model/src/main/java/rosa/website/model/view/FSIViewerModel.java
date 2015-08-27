@@ -107,7 +107,11 @@ public class FSIViewerModel implements Serializable {
     }
 
     public String getTranscription(String page) {
-        return transcriptionMap.get(page);
+        if (transcriptionMap != null) {
+            return transcriptionMap.get(page);
+        } else {
+            return null;
+        }
     }
 
     public IllustrationTagging getIllustrationTagging() {
@@ -123,7 +127,7 @@ public class FSIViewerModel implements Serializable {
     }
 
     public boolean hasTranscription(String page) {
-        return transcriptionMap.containsKey(page);
+        return transcriptionMap != null && transcriptionMap.containsKey(page);
     }
 
     public boolean hasIllustrationTagging(String page) {

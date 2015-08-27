@@ -14,6 +14,9 @@ public class ImageNameParser {
      * @throws NullPointerException if {@param page} is NULL
      */
     public static String toStandardName(String page) {
+        if (page == null) {
+            return null;
+        }
         String[] parts = page.replaceAll(" ", ".").split("\\.");
 
         StringBuilder sb = new StringBuilder();
