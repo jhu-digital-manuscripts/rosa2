@@ -25,7 +25,9 @@
 }
 
 .Header .Search {
-  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .Sidebar {
