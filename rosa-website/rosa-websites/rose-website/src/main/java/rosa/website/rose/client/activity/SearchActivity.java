@@ -60,6 +60,7 @@ public class SearchActivity implements Activity {
     private BookDataCSV collection;
 
     private HandlerRegistration rangeChangeHandler;
+    private HandlerRegistration searchButtonHandler;
 
     /**
      * @param place initial search state
@@ -72,6 +73,18 @@ public class SearchActivity implements Activity {
         this.searchService = clientFactory.searchService();
     }
 
+    private void finishActivity() {
+        if (rangeChangeHandler != null) {
+            rangeChangeHandler.removeHandler();
+        }
+        if (searchButtonHandler != null) {
+            searchButtonHandler.removeHandler();
+        }
+
+        view.clear();
+        LoadingPanel.INSTANCE.hide();
+    }
+
     @Override
     public String mayStop() {
         return null;
@@ -79,14 +92,12 @@ public class SearchActivity implements Activity {
 
     @Override
     public void onCancel() {
-        view.clear();
-        LoadingPanel.INSTANCE.hide();
+        finishActivity();
     }
 
     @Override
     public void onStop() {
-        view.clear();
-        LoadingPanel.INSTANCE.hide();
+        finishActivity();
     }
 
     @Override
@@ -127,7 +138,7 @@ public class SearchActivity implements Activity {
         view.setAvailableSearchFields(SearchCategory.values());
         view.setAvailableSearchOperations(QueryOperation.values());
 
-        view.addSearchButtonClickHandler(new ClickHandler() {
+        searchButtonHandler = view.addSearchButtonClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
                 String query = view.getSearchQuery();       // This query string will have to be URL encoded first
@@ -211,7 +222,13 @@ public class SearchActivity implements Activity {
                 final int start = event.getNewRange().getStart();
                 int length = event.getNewRange().getLength();
 
-                SearchOptions options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length), resumeToken);
+                // Use resume token only if progressing forward in search results
+                SearchOptions options;
+                if (QUERY_UTIL.offset(searchToken) < start) {
+                    options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length), resumeToken);
+                } else {
+                    options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length), null);
+                }
 
                 searchService.search(query, options, new AsyncCallback<SearchResult>() {
                     @Override
@@ -222,7 +239,9 @@ public class SearchActivity implements Activity {
                     @Override
                     public void onSuccess(SearchResult result) {
                         // Update history token, but do not navigate away
-                        History.newItem("search;" + QUERY_UTIL.changeOffset(searchToken, start), false);
+                        if (QUERY_UTIL.offset(searchToken) != start) {
+                            History.newItem("search;" + QUERY_UTIL.changeOffset(searchToken, start), false);
+                        }
 
                         SearchResultModel model = adaptSearchResults(result);
                         resumeToken = model.getResumeToken();
@@ -236,6 +255,8 @@ public class SearchActivity implements Activity {
         // Note on using the BACK button, this will use the original value stored in the Place
         // Switch to using history token directly?
         LOG.info("Performing search. [" + searchToken + "]  {" + this + "}");
+        // Setting visible range will trigger a RangeChangeEvent, picked up by the newly defined
+        // RangeChangeHandler
         view.setVisibleRange(QUERY_UTIL.offset(searchToken), MATCH_COUNT);
     }
 
