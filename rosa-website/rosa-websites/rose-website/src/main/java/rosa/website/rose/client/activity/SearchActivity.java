@@ -57,7 +57,7 @@ public class SearchActivity implements Activity {
     private final RosaSearchServiceAsync searchService;
 
     private String resumeToken = null;     // For use in paging
-    private BookDataCSV collection;
+    private BookDataCSV bookDataCSV;
 
     private HandlerRegistration rangeChangeHandler;
     private HandlerRegistration searchButtonHandler;
@@ -152,7 +152,7 @@ public class SearchActivity implements Activity {
     }
 
     private void setSearchModel(BookDataCSV data) {
-        this.collection = data;
+        this.bookDataCSV = data;
 
         List<BookInfo> books = new ArrayList<>();
         books.add(new BookInfo("Restrict by book:", null));
@@ -216,9 +216,13 @@ public class SearchActivity implements Activity {
             return;
         }
 
+        /*
+            Search is done inside this RangeChangeHandler
+        */
         rangeChangeHandler = view.addRangeChangeHandler(new Handler() {
             @Override
             public void onRangeChange(RangeChangeEvent event) {
+                // Results range (start, length)
                 final int start = event.getNewRange().getStart();
                 int length = event.getNewRange().getLength();
 
@@ -252,14 +256,16 @@ public class SearchActivity implements Activity {
             }
         });
 
-        // Note on using the BACK button, this will use the original value stored in the Place
-        // Switch to using history token directly?
         LOG.info("Performing search. [" + searchToken + "]  {" + this + "}");
         // Setting visible range will trigger a RangeChangeEvent, picked up by the newly defined
-        // RangeChangeHandler
+        // RangeChangeHandler. This performs the initial search.
         view.setVisibleRange(QUERY_UTIL.offset(searchToken), MATCH_COUNT);
     }
 
+    /**
+     * @param result search result
+     * @return Search results adapted to a form that can be displayed
+     */
     private SearchResultModel adaptSearchResults(SearchResult result) {
         SearchResultModel model = new SearchResultModel(result);
 
@@ -291,9 +297,16 @@ public class SearchActivity implements Activity {
         return model;
     }
 
+    /**
+     * Get the name of a book as it should be displayed in the search results.
+     *
+     * @param bookId book
+     * @param pageId page
+     * @return .
+     */
     private String getDisplayName(String bookId, String pageId) {
         if (pageId != null) {
-            CSVRow row = collection.getRow(bookId);
+            CSVRow row = bookDataCSV.getRow(bookId);
 
             if (row != null) {
                 return pageId + ": "

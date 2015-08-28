@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 
 /**
  * An implementation of the ArchiveDataServiceAsync interface that caches all
- * RPC calls requesting data.
+ * RPC calls requesting data. This class caches RPC results in the client.
  *
  * NOTE a HashMap is used instead of the usual ConcurrentHashMap because
  * there is no GWT emulation of a ConcurrentHashMap.

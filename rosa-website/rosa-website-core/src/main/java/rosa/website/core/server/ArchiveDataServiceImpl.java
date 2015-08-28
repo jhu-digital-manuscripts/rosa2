@@ -471,7 +471,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         try {
             col = archiveStore.collection(collection);
         } catch (Exception e) {
-            // TODO dont catch Exception...
             logger.log(Level.SEVERE, "An error has occurred while loading a collection. [" + collection + "]", e);
         }
 

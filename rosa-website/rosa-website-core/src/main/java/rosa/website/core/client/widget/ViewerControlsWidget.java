@@ -8,6 +8,10 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextBox;
 
+/**
+ * Some extra controls that can be used along side a viewer (FSI or JS).
+ * This widget contains a text box and a drop down list.
+ */
 public class ViewerControlsWidget extends Composite {
 
     // Controls: (page controls) first, last, next, previous, *goto.
