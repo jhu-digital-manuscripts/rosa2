@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class StoreAccessLayerImpl implements StoreAccessLayer {
     private static final Logger LOG = Logger.getLogger(StoreAccessLayerImpl.class.toString());
 
-    private static final int MAX_CACHE_SIZE = 100;
+    private static final int MAX_CACHE_SIZE = 2000;
     private static final ConcurrentMap<String, Book> BOOK_CACHE = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
     private static final ConcurrentMap<String, BookCollection> COLLECTION_CACHE = new ConcurrentHashMap<>(MAX_CACHE_SIZE);
 
