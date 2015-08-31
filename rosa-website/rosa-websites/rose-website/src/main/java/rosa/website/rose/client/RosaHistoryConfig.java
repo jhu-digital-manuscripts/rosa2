@@ -52,6 +52,8 @@ public class RosaHistoryConfig {
      */
     public static ExternalTextResource getHtml(String history) {
         switch (history) {
+            case "corpus":
+                return HTMLS.extantManuscriptsHtml();
             case "contact":
                 return HTMLS.contactHtml();
             case "donation":

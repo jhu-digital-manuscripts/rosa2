@@ -8,6 +8,9 @@ import com.google.gwt.resources.client.TextResource;
 public interface RosaHtml extends ClientBundle {
     RosaHtml INSTANCE = GWT.create(RosaHtml.class);
 
+    @ClientBundle.Source("html/extant_manuscripts.html")
+    ExternalTextResource extantManuscriptsHtml();
+
     /**
      * @return HTML content of "character names" csv page.
      */
