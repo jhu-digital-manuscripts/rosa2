@@ -15,7 +15,6 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasWidgets;
-import com.google.gwt.user.client.ui.Hyperlink;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.Widget;
@@ -40,7 +39,7 @@ public class SidebarViewImpl extends Composite implements SidebarView {
     private final Map<String, Label> languages;
     private final FlowPanel langPanel;
 
-    private List<Hyperlink> sidebar_links;  // Use for selection?
+    private List<HTML> links;
     private List<HandlerRegistration> handlers;
 
     /**  */
@@ -53,7 +52,7 @@ public class SidebarViewImpl extends Composite implements SidebarView {
         this.bookPanel = new FlowPanel();
         this.featuresPanel = new FlowPanel();
         this.langPanel = new FlowPanel();
-        this.sidebar_links = new ArrayList<>();
+        this.links = new ArrayList<>();
         this.handlers = new ArrayList<>();
         this.languages = new HashMap<>();
 
@@ -110,8 +109,8 @@ public class SidebarViewImpl extends Composite implements SidebarView {
         bookPanel.setVisible(false);
 
         for (Widget w : bookPanel) {
-            if (w instanceof Hyperlink) {
-                sidebar_links.remove(w);
+            if (w instanceof HTML) {
+                links.remove(w);
             }
         }
 
@@ -199,25 +198,28 @@ public class SidebarViewImpl extends Composite implements SidebarView {
         }
 
         for (final Entry<String, String> entry : links.entrySet()) {
-            Hyperlink link = new Hyperlink(entry.getKey(), entry.getValue());
+            HTML l = new HTML(entry.getKey());
 
-            link.setStylePrimaryName("SidebarItem");
-            handlers.add(link.addClickHandler(new ClickHandler() {
+            l.setStylePrimaryName("SidebarItem");
+            l.addStyleName("link");
+            l.addClickHandler(new ClickHandler() {
                 @Override
                 public void onClick(ClickEvent event) {
                     unselectAll();
                     ((Widget) event.getSource()).addStyleName("SidebarSelected");
-                }
-            }));
 
-            sidebar_links.add(link);
-            container.add(link);
+                    Window.Location.assign(GWT.getHostPageBaseURL() + "#" + entry.getValue());
+                }
+            });
+
+            this.links.add(l);
+            container.add(l);
         }
     }
 
     private void unselectAll() {
-        for (Hyperlink link : sidebar_links) {
-            link.removeStyleName("SidebarSelected");
+        for (HTML l : links) {
+            l.removeStyleName("SidebarSelected");
         }
     }
 }
