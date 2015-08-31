@@ -10,6 +10,7 @@ import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.view.client.ListDataProvider;
+import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.view.CSVDataView.Presenter;
 import rosa.website.model.csv.CSVData;
@@ -135,6 +136,12 @@ public class CSVWidget extends Composite {
                         switch (links.get(col)) {       // TODO this kind of sucks, since it needs to know about site implementation
                             case "book":
                                 presenter.goTo(new BookDescriptionPlace(object.getValue(col)));
+                                break;
+                            case "search;NARRATIVE_SECTION":
+                                String token = "NARRATIVE_SECTION;"
+                                        + object.getValue(col).toLowerCase().replaceAll("\\s+", "")
+                                        + ";0";
+                                presenter.goTo(new AdvancedSearchPlace(token));
                                 break;
                             default:
                                 break;
