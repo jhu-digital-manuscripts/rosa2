@@ -115,7 +115,9 @@ public class FSIViewerActivity implements Activity {
             // Update goto box  with label
             current_image_index = page;
 
-            if (page == model.getImages().getImages().size()) {
+            if (model != null && model.getImages() != null
+                    && model.getImages().getImages() != null
+                    && page == model.getImages().getImages().size()) {
                 view.setGotoLabel(getImageName(page));
             } else {
                 StringBuilder sb = new StringBuilder();
