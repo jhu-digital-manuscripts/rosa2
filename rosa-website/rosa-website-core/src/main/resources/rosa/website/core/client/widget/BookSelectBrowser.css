@@ -26,11 +26,13 @@
 }
 
 .cellBrowserEvenItem {
+  cursor: pointer;
   padding: 8px;
   zoom: 1;
 }
 
 .cellBrowserOddItem {
+  cursor: pointer;
   padding: 8px;
   zoom: 1;
 }
