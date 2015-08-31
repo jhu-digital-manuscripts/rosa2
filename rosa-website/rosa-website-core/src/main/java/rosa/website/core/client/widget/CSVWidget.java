@@ -110,6 +110,16 @@ public class CSVWidget extends Composite {
         }
     }
 
+    /**
+     * Create table columns for the CSV data.
+     *
+     * When creating links in a column, the column FieldUpdater must be updated before
+     * a link will be recognized. A 'case' in the switch should be added.
+     *
+     * @param data CSV data
+     * @param sortHandler .
+     * @param links map of column enum to history prefix
+     */
     private void createColumns(CSVData  data, ColumnSortEvent.ListHandler<CSVRow> sortHandler,
                                final Map<Enum, String> links) {
         if (data.columns() == null) {
