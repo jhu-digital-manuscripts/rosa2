@@ -1,6 +1,7 @@
 package rosa.website.core.client.widget;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
@@ -239,11 +240,19 @@ public class BookDescriptionWidget extends Composite {
             Element anchor = doc.createElement("a");
 
             anchor.appendChild(doc.createTextNode(page));
+            String locale = LocaleInfo.getCurrentLocale().getLocaleName();
+            boolean needsLocale = !locale.equalsIgnoreCase("en");
+
             if (isNumeric(page)) {
                 anchor.setAttribute("href",
-                        GWT.getHostPageBaseURL() + "#" + presenter.getPageUrlFragment(parseInt(page)));
+                        GWT.getHostPageBaseURL()
+                                + (needsLocale ? "?locale=" + locale : "") + "#"
+                                + presenter.getPageUrlFragment(parseInt(page)));
             } else if (isRectoVerso(page)) {
-                anchor.setAttribute("href", GWT.getHostPageBaseURL() + "#" + presenter.getPageUrlFragment(page));
+                anchor.setAttribute("href", 
+                        GWT.getHostPageBaseURL()
+                                + (needsLocale ? "?locale=" + locale : "") + "#"
+                                + presenter.getPageUrlFragment(page));
             }
 
             return anchor;

@@ -219,7 +219,18 @@ public class SidebarViewImpl extends Composite implements SidebarView {
                     unselectAll();
                     ((Widget) event.getSource()).addStyleName("SidebarSelected");
 
-                    Window.Location.assign(GWT.getHostPageBaseURL() + "#" + entry.getValue());
+                    StringBuilder url_sb = new StringBuilder(GWT.getHostPageBaseURL());
+
+                    String locale = LocaleInfo.getCurrentLocale().getLocaleName();
+                    if (!locale.equalsIgnoreCase("en")) {
+                        url_sb.append("?locale=");
+                        url_sb.append(locale);
+                    }
+
+                    url_sb.append("#");
+                    url_sb.append(entry.getValue());
+
+                    Window.Location.assign(url_sb.toString());
                 }
             });
 
