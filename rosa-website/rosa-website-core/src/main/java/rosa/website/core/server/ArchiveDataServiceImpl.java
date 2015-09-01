@@ -8,6 +8,7 @@ import rosa.archive.core.serialize.ImageListSerializer;
 import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.*;
 import rosa.website.core.client.ArchiveDataService;
+import rosa.website.model.csv.CollectionDisplayCSV;
 import rosa.website.model.view.BookDescriptionViewModel;
 import rosa.website.model.view.FSIViewerModel;
 import rosa.website.model.csv.BookDataCSV;
@@ -82,7 +83,8 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         switch (type) {
             case COLLECTION_DATA:
-                return loadCollectionData(collection, lang);
+//                return loadCollectionData(collection, lang);
+                return loadCollectionSpreadsheet(collection, lang);
             case COLLECTION_BOOKS:
                 return loadCollectionBookData(collection, lang);
             case ILLUSTRATIONS:
@@ -239,6 +241,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         updateCache(key, result);
 
         return result;
+    }
+
+    private CollectionDisplayCSV loadCollectionSpreadsheet(String collection, String lang) throws IOException {
+        return new CollectionDisplayCSV(loadCollectionData(collection, lang));
     }
 
     @Override

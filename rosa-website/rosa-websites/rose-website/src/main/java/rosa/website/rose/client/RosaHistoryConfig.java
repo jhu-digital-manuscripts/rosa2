@@ -105,10 +105,10 @@ public class RosaHistoryConfig {
      */
     public static CSVType getCsvType(String history) {
         switch (history) {
-            case "corpus":
-                return CSVType.COLLECTION_DATA;
+//            case "corpus":
+//                return CSVType.COLLECTION_DATA;
             case "data":
-                return CSVType.COLLECTION_BOOKS;
+                return CSVType.COLLECTION_DATA;
             case "illustrations":
                 return CSVType.ILLUSTRATIONS;
             case "chars":

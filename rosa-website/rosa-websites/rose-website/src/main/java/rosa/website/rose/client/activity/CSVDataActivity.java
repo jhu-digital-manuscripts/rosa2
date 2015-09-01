@@ -16,9 +16,9 @@ import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.widget.LoadingPanel;
-import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVType;
+import rosa.website.model.csv.CollectionDisplayCSV;
 import rosa.website.model.csv.IllustrationTitleCSV;
 import rosa.website.model.csv.NarrativeSectionsCSV;
 import rosa.website.rose.client.RosaHistoryConfig;
@@ -127,7 +127,8 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
 
         switch (type) {
             case COLLECTION_BOOKS:
-                map.put(BookDataCSV.Column.ID, "book");
+//                map.put(BookDataCSV.Column.ID, "book");
+                map.put(CollectionDisplayCSV.Column.NAME, "book");
                 return map;
             case NARRATIVE_SECTIONS:
                 map.put(NarrativeSectionsCSV.Column.ID, "search;NARRATIVE_SECTION");
