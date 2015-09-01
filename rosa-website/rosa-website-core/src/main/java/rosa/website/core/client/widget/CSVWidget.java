@@ -143,14 +143,21 @@ public class CSVWidget extends Composite {
                 column.setFieldUpdater(new FieldUpdater<CSVRow, String>() {
                     @Override
                     public void update(int index, CSVRow object, String value) {
+                        String token;
                         switch (links.get(col)) {       // TODO this kind of sucks, since it needs to know about site implementation
                             case "book":
                                 presenter.goTo(new BookDescriptionPlace(object.getValue(col)));
                                 break;
                             case "search;NARRATIVE_SECTION":
-                                String token = "NARRATIVE_SECTION;"
+                                token = "NARRATIVE_SECTION;"
                                         + object.getValue(col).toLowerCase().replaceAll("\\s+", "")
                                         + ";0";
+                                presenter.goTo(new AdvancedSearchPlace(token));
+                                break;
+                            case "search;ILLUSTRATION_TITLE":
+                                token = "ILLUSTRATION_TITLE;\""
+                                        + object.getValue(col)
+                                        + "\";0";
                                 presenter.goTo(new AdvancedSearchPlace(token));
                                 break;
                             default:
