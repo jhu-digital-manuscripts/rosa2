@@ -143,7 +143,7 @@ public class SearchActivity implements Activity {
             public void onClick(ClickEvent event) {
                 String query = view.getSearchQuery();       // This query string will have to be URL encoded first
                 if (query != null && !query.isEmpty()) {
-                    LOG.info("A search will happen now. Token: #" + view.getSearchQuery());
+                    History.newItem("search;" + view.getSearchQuery(), false);
                     // Do search
                     performSearch(query);
                 }

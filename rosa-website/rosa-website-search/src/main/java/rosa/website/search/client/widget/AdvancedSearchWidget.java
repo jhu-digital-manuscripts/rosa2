@@ -11,7 +11,6 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTMLTable.Cell;
-import com.google.gwt.view.client.RangeChangeEvent;
 import rosa.search.model.QueryOperation;
 import rosa.website.model.select.BookInfo;
 import rosa.website.search.client.model.SearchCategory;
@@ -221,7 +220,13 @@ public class AdvancedSearchWidget extends Composite {
             if (isNotBlank(row.getSearchTerm()) && row.getCategory() != null) {
                 query.append(row.getCategory());
                 query.append(';');
-                query.append(row.getSearchTerm().replaceAll("(;|-)", "-$1"));
+
+                String term = row.getSearchTerm().replaceAll("(;|-)", "-$1").replaceAll("\\s+", " ");
+                if (term.contains(" ")) {
+                    term = '"' + term + '"';
+                }
+
+                query.append(term);
                 query.append(';');
             }
         }
