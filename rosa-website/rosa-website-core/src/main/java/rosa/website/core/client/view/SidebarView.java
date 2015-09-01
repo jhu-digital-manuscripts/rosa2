@@ -3,17 +3,27 @@ package rosa.website.core.client.view;
 import com.google.gwt.user.client.ui.IsWidget;
 import rosa.website.core.client.event.BookSelectEventHandler;
 import rosa.website.core.client.event.FlashStatusChangeEventHandler;
+import rosa.website.core.client.event.SidebarItemSelectedEventHandler;
 
 import java.util.Map;
 
 public interface SidebarView extends IsWidget {
 
-    interface Presenter extends IsWidget, BookSelectEventHandler, FlashStatusChangeEventHandler {
+    interface Presenter extends IsWidget, BookSelectEventHandler, FlashStatusChangeEventHandler,
+            SidebarItemSelectedEventHandler {
         void setUseFlash(boolean useFlash);
         String getCurrentToken();
     }
 
     void setPresenter(Presenter presenter);
+
+    /**
+     * Set a sidebar item as selected by changing its style. Sidebar item
+     * is identified using its own text.
+     *
+     * @param item item text
+     */
+    void selectItem(String item);
 
     /**
      * @param nav_links map defining the LINK NAME to LINK TARGET
@@ -50,7 +60,7 @@ public interface SidebarView extends IsWidget {
     /**
      *
      * @param label Label to appear in the UI
-     * @param languageCode langauge code
+     * @param languageCode language code
      */
     void addLanguageLink(String label, final String languageCode);
 

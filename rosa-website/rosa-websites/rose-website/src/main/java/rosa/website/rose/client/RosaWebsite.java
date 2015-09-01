@@ -15,6 +15,7 @@ import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.event.FlashStatusChangeEvent;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.rose.client.nav.DefaultRosaHistoryMapper;
 import rosa.website.rose.client.nav.RosaActivityMapper;
@@ -99,5 +100,6 @@ public class RosaWebsite implements EntryPoint {
     private void bind(EventBus eventBus, SidebarPresenter presenter) {
         eventBus.addHandler(FlashStatusChangeEvent.TYPE, presenter);
         eventBus.addHandler(BookSelectEvent.TYPE, presenter);
+        eventBus.addHandler(SidebarItemSelectedEvent.TYPE, presenter);
     }
 }

@@ -19,6 +19,7 @@ import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -255,6 +256,14 @@ public class FSIViewerActivity implements Activity {
 
         switch (type) {
             case SHOWCASE:
+                // Highlight the 'browse images' sidebar item
+                Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+                    @Override
+                    public void execute() {
+                        eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.browseImages()));
+                    }
+                });
+
                 view.addShowcaseToolbar();
                 view.setupFsiShowcaseCallback(showcaseCallback);
 
@@ -275,6 +284,14 @@ public class FSIViewerActivity implements Activity {
 
                 break;
             case PAGES:
+                // Highlight the 'page turner' sidebar item
+                Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+                    @Override
+                    public void execute() {
+                        eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.pageTurner()));
+                    }
+                });
+
                 view.addPagesToolbar();
                 view.setupFsiPagesCallback(pagesCallback);
 

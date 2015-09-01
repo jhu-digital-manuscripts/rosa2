@@ -87,6 +87,17 @@ public class SidebarViewImpl extends Composite implements SidebarView {
     }
 
     @Override
+    public void selectItem(String item) {
+        unselectAll();
+
+        for (HTML link : links) {
+            if (link.getHTML().equals(item)) {
+                link.addStyleName("SidebarSelected");
+            }
+        }
+    }
+
+    @Override
     public void setSiteNavigationLinks(Map<String, String> nav_links) {
         addLinks(nav_links, navPanel);
     }

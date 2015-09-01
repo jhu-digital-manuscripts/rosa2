@@ -5,6 +5,7 @@ import com.google.gwt.user.client.ui.Widget;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.event.FlashStatusChangeEvent;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.view.SidebarView;
 import rosa.website.model.select.SelectCategory;
 
@@ -125,5 +126,10 @@ public class SidebarPresenter implements SidebarView.Presenter {
     @Override
     public void onFlashStatusChange(FlashStatusChangeEvent event) {
         clientFactory.context().setUseFlash(event.status());
+    }
+
+    @Override
+    public void onSelected(SidebarItemSelectedEvent event) {
+        view.selectItem(event.selectedItem);
     }
 }

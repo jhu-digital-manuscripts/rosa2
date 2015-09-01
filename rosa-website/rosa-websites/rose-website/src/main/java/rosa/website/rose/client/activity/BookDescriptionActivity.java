@@ -1,6 +1,8 @@
 package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -8,7 +10,9 @@ import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.BookImage;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.view.BookDescriptionView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -58,11 +62,18 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     }
 
     @Override
-    public void start(AcceptsOneWidget panel, EventBus eventBus) {
+    public void start(AcceptsOneWidget panel, final EventBus eventBus) {
         LoadingPanel.INSTANCE.show();
         this.eventBus.fireEvent(new BookSelectEvent(true, bookName));
         panel.setWidget(view);
         view.setPresenter(this);
+
+        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+            @Override
+            public void execute() {
+                eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.description()));
+            }
+        });
 
         service.loadBookDescriptionModel(WebsiteConfig.INSTANCE.collection(), bookName, language,
                 new AsyncCallback<BookDescriptionViewModel>() {
