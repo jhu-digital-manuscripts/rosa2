@@ -425,11 +425,20 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             return null;
         }
 
+        Map<String, String> illusTitles = new HashMap<>();
+        if (col.getIllustrationTitles() != null) {
+            IllustrationTitles titles = col.getIllustrationTitles();
+            for (String id : titles.getAllIds()) {
+                illusTitles.put(id, titles.getTitleById(id));
+            }
+        }
+
         FSIViewerModel model = FSIViewerModel.Builder.newBuilder()
                 .permission(b.getPermission(language))
                 .images(b.getImages())
                 .transcriptions(TranscriptionSplitter.split(b.getTranscription()))
                 .illustrationTagging(b.getIllustrationTagging())
+                .illustrationTitles(illusTitles)
                 .narrativeTagging(b.getManualNarrativeTagging() == null ?
                         b.getAutomaticNarrativeTagging() : b.getManualNarrativeTagging())
                 .narrativeSections(col.getNarrativeSections())

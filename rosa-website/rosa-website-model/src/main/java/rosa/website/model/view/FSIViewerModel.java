@@ -9,7 +9,6 @@ import rosa.archive.model.Permission;
 
 import java.io.Serializable;
 import java.util.Map;
-import java.util.logging.Logger;
 
 /**
  * Container for book model objects that are relevant to the
@@ -27,6 +26,7 @@ public class FSIViewerModel implements Serializable {
         private ImageList images;
         private Map<String, String> transcriptionMap;
         private IllustrationTagging illustrationTagging;
+        private Map<String, String> illustrationTitles;
         private NarrativeTagging narrativeTagging;
         private NarrativeSections narrativeSections;
 
@@ -52,6 +52,11 @@ public class FSIViewerModel implements Serializable {
             return this;
         }
 
+        public Builder illustrationTitles(Map<String, String> illustrationTitles) {
+            this.illustrationTitles = illustrationTitles;
+            return this;
+        }
+
         public Builder narrativeTagging(NarrativeTagging narrativeTagging) {
             this.narrativeTagging = narrativeTagging;
             return this;
@@ -64,7 +69,7 @@ public class FSIViewerModel implements Serializable {
 
         public FSIViewerModel build() {
             return new FSIViewerModel(permission, images, transcriptionMap, illustrationTagging,
-                    narrativeTagging, narrativeSections);
+                    illustrationTitles, narrativeTagging, narrativeSections);
         }
     }
 
@@ -72,6 +77,7 @@ public class FSIViewerModel implements Serializable {
     private ImageList images;
     private Map<String, String> transcriptionMap;
     private IllustrationTagging illustrationTagging;
+    private Map<String, String> illustrationTitles;
     private NarrativeTagging narrativeTagging;
     private NarrativeSections narrativeSections;
 
@@ -88,12 +94,13 @@ public class FSIViewerModel implements Serializable {
      *
      */
     FSIViewerModel(Permission permission, ImageList images, Map<String, String> transcriptionMap,
-                          IllustrationTagging illustrationTagging, NarrativeTagging narrativeTagging,
-                   NarrativeSections narrativeSections) {
+                          IllustrationTagging illustrationTagging, Map<String, String> illustrationTitles,
+                          NarrativeTagging narrativeTagging, NarrativeSections narrativeSections) {
         this.permission = permission;
         this.images = images;
         this.transcriptionMap = transcriptionMap;
         this.illustrationTagging = illustrationTagging;
+        this.illustrationTitles = illustrationTitles;
         this.narrativeTagging = narrativeTagging;
         this.narrativeSections = narrativeSections;
     }
@@ -116,6 +123,10 @@ public class FSIViewerModel implements Serializable {
 
     public IllustrationTagging getIllustrationTagging() {
         return illustrationTagging;
+    }
+
+    public Map<String, String> getIllustrationTitles() {
+        return illustrationTitles;
     }
 
     public NarrativeTagging getNarrativeTagging() {
