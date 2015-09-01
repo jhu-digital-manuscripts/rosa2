@@ -1,6 +1,8 @@
 package rosa.website.pizan.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
@@ -14,7 +16,9 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController.ChangeHandler;
@@ -253,6 +257,12 @@ public class JSViewerActivity implements Activity {
 
         switch (viewerMode) {
             case PAGE_TURNER:
+                Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+                    @Override
+                    public void execute() {
+                        eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.pageTurner()));
+                    }
+                });
                 int index = current_selected_index / 2;
 
                 if (index < model.numOpenings()) {
@@ -265,6 +275,13 @@ public class JSViewerActivity implements Activity {
             case IMAGE_BROWSER:
                 break;
             case IMAGE_VIEWER:
+                Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+                    @Override
+                    public void execute() {
+                        eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.browseImages()));
+                    }
+                });
+
                 if (current_selected_index < model.numImages()) {
                     controller.setView(model.image(current_selected_index));
                 } else {

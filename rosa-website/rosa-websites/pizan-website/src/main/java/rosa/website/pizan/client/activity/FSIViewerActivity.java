@@ -19,6 +19,7 @@ import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -268,6 +269,13 @@ public class FSIViewerActivity implements Activity {
             view.addShowcaseToolbar();
             view.setupFsiShowcaseCallback(showcaseCallback);
 
+            Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+                @Override
+                public void execute() {
+                    eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.browseImages()));
+                }
+            });
+
             // Set labels in the "show extra" dropdown
             view.setShowExtraLabels(getExtraDataLabels(startPage));
 
@@ -285,6 +293,13 @@ public class FSIViewerActivity implements Activity {
         } else if (type == FSIViewerType.PAGES) {
             view.addPagesToolbar();
             view.setupFsiPagesCallback(pagesCallback);
+
+            Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+                @Override
+                public void execute() {
+                    eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.pageTurner()));
+                }
+            });
 
             // Set labels in the "show extra" dropdown
             if (startPage > 0) {
