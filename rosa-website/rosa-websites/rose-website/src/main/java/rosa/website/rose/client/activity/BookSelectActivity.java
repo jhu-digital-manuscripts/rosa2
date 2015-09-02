@@ -10,6 +10,7 @@ import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.BookSelectPlace;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -63,6 +64,8 @@ public class BookSelectActivity implements Activity {
         panel.setWidget(view);
         LoadingPanel.INSTANCE.show();
 
+        eventBus.fireEvent(new SidebarItemSelectedEvent(getLabel(category)));
+
         view.setHeaderText(getHeader(category));
         service.loadBookSelectionData(
                 WebsiteConfig.INSTANCE.collection(),
@@ -96,45 +99,44 @@ public class BookSelectActivity implements Activity {
         Labels labels = Labels.INSTANCE;
 
         String header = labels.selectBook();
+
+        String label = getLabel(category);
+        if (!label.isEmpty()) {
+            header += ": " + label;
+        }
+
+        return header;
+    }
+
+    private String getLabel(SelectCategory category) {
+        Labels labels = Labels.INSTANCE;
         switch (category) {
             case REPOSITORY:
-                header += ": " + labels.repository();
-                break;
+                return labels.repository();
             case SHELFMARK:
-                header += ": " + labels.shelfmark();
-                break;
+                return labels.shelfmark();
             case COMMON_NAME:
-                header += ": " + labels.commonName();
-                break;
+                return labels.commonName();
             case LOCATION:
-                header += ": " + labels.currentLocation();
-                break;
+                return labels.currentLocation();
             case DATE:
-                header += ": " + labels.date();
-                break;
+                return labels.date();
             case ORIGIN:
-                header += ": " + labels.origin();
-                break;
+                return labels.origin();
             case TYPE:
-                header += ": " + labels.type();
-                break;
+                return labels.type();
             case NUM_ILLUSTRATIONS:
-                header += ": " + labels.numIllustrations();
-                break;
+                return labels.numIllustrations();
             case NUM_FOLIOS:
-                header += ": " + labels.numFolios();
-                break;
+                return labels.numFolios();
             case TRANSCRIPTION:
-                header += ": " + labels.transcription();
-                break;
+                return labels.transcription();
             case BIBLIOGRAPHY:
             case NARRATIVE_TAGGING:
             case ILLUSTRATION_TAGGING:
             case ID:
             default:
-                break;
+                return "";
         }
-
-        return header;
     }
 }
