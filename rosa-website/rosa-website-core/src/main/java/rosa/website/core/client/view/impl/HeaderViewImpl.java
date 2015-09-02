@@ -75,7 +75,20 @@ public class HeaderViewImpl extends Composite implements HeaderView {
 
     @Override
     public String getSearchToken() {
-        // TODO use search categories from search API
-        return "ALL;" + searchWidget.getText() + ";0";
+        return "ALL;" + escaped(searchWidget.getText()) + ";0";
+    }
+
+    private String escaped(String str) {
+        if (str == null || str.isEmpty()) {
+            return "";
+        }
+
+        str = str.replaceAll("\\\"", "\"\"");
+
+        if (str.contains(",") || str.contains("\"") || str.contains("\n") || str.contains(" ")) {
+            return "\"" + str + "\"";
+        } else {
+            return str;
+        }
     }
 }
