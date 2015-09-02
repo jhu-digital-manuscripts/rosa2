@@ -22,6 +22,7 @@ import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.FSIUtil;
 import rosa.website.core.client.Labels;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -104,6 +105,8 @@ public class SearchActivity implements Activity {
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
         LoadingPanel.INSTANCE.show();
         panel.setWidget(view);
+
+        eventBus.fireEvent(new SidebarItemSelectedEvent("NULL"));
 
         view.clear();
         initView();
