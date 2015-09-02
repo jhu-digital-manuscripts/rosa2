@@ -126,8 +126,8 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
         Map<Enum, String> map = new HashMap<>();
 
         switch (type) {
+            case COLLECTION_DATA:
             case COLLECTION_BOOKS:
-//                map.put(BookDataCSV.Column.ID, "book");
                 map.put(CollectionDisplayCSV.Column.NAME, "book");
                 return map;
             case NARRATIVE_SECTIONS:

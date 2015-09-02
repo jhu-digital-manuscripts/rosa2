@@ -1,5 +1,7 @@
 package rosa.website.model.csv;
 
+import rosa.website.model.csv.CollectionCSV.Column;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +50,7 @@ public class CollectionDisplayCSV extends BaseCSVData<CollectionDisplayCSV.Colum
                     + row.getValue(CollectionCSV.Column.HEIGHT);
 
             rows.add(new CSVRow(
-                    row.getValue(CollectionCSV.Column.NAME),
+                    row.getValue(CollectionCSV.Column.ID),
                     date.contains("null") || date.contains("NULL") ? "" : date,
                     row.getValue(CollectionCSV.Column.NUM_FOLIOS),
                     row.getValue(CollectionCSV.Column.NUM_ILLUS),

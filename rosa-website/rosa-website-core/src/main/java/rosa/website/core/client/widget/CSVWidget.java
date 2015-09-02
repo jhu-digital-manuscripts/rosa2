@@ -146,7 +146,9 @@ public class CSVWidget extends Composite {
                         String token;
                         switch (links.get(col)) {       // TODO this kind of sucks, since it needs to know about site implementation
                             case "book":
-                                presenter.goTo(new BookDescriptionPlace(object.getValue(col)));
+                                presenter.goTo(new BookDescriptionPlace(
+                                        escaped(object.getValue(col)))
+                                );
                                 break;
                             case "search;NARRATIVE_SECTION":
                                 token = "NARRATIVE_SECTION;"
@@ -155,9 +157,9 @@ public class CSVWidget extends Composite {
                                 presenter.goTo(new AdvancedSearchPlace(token));
                                 break;
                             case "search;ILLUSTRATION_TITLE":
-                                token = "ILLUSTRATION_TITLE;\""
-                                        + object.getValue(col)
-                                        + "\";0";
+                                token = "ILLUSTRATION_TITLE;"
+                                        + escaped(object.getValue(col))
+                                        + ";0";
                                 presenter.goTo(new AdvancedSearchPlace(token));
                                 break;
                             default:
@@ -198,6 +200,20 @@ public class CSVWidget extends Composite {
                     return o1.getValue(col).compareToIgnoreCase(o2.getValue(col));
                 }
             });
+        }
+    }
+
+    private String escaped(String str) {
+        if (str == null) {
+            return "";
+        }
+
+        str = str.replaceAll("\\\"", "\"\"");
+
+        if (str.contains(",") || str.contains("\"") || str.contains("\n") || str.contains(" ")) {
+            return "\"" + str + "\"";
+        } else {
+            return str;
         }
     }
 }
