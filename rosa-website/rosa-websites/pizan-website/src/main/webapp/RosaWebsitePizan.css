@@ -1,6 +1,11 @@
 /* TODO: Take advantage of class support */
 @external SidebarItem, Search, ContentHeader, LoadingDialog, ImageDescriptionHeader, SidebarSelected, ContentTitle, BookDescriptionTextData, TranscriptionUnavailableError,SidebarLastUpdated, ResultSnippet, BookDescriptionDataName, TranscriptionRubric, ImageDescriptionLabel, BookPicker-header, DataTable, BookPicker-list, Tooltip, Main, TranscriptionInitial, Header, NarrativeSectionsHeader, TranscriptionExtraHeader, ResultField, BookDescription, BookPicker, Content, GoTextBox, TranscriptionDel, BookDescriptionHeader, Home, BookDescriptionData, Transcription, NarrativeSections, TranscriptionExpan, Sidebar, Toolbar, ResultsNav, TranscriptionAdd, Bibliography, ImageDescription, SidebarHeader, TranscriptionLecoy, TranscriptionExtra, ImageViewportThumbSelection, ImageViewportThumb, CodexBrowserView-Thumb, CodexBrowserView-Toolbar, WebImage, WebImage-Loading, HeaderMenu, HeaderProjectMenu, Footer, MainContentScroll;
 
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 a:link {
   color: #000000;
   font-weight: normal;
