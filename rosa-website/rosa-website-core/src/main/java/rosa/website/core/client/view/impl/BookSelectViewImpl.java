@@ -44,8 +44,9 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
     public void setData(BookSelectList data) {
         selectionPanel.clear();
 
+        SingleSelectionModel<BookInfo> selectionModel = new SingleSelectionModel<>();
         TreeViewModel browserModel = new BookSelectionTreeViewModel(data, data.getCategory(),
-                new SingleSelectionModel<BookInfo>());
+                selectionModel);
 
         BookSelectionBrowserResources css = GWT.create(BookSelectionBrowserResources.class);
         CellBrowser browser = new CellBrowser.Builder(browserModel, null) // this builder constructor uses unchecked operation
@@ -54,9 +55,12 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
                 .build();
         browser.setKeyboardSelectionPolicy(KeyboardSelectionPolicy.BOUND_TO_SELECTION);
         browser.setSize("100%", "100%");
+        browser.setMinimumColumnWidth(400);
 
         int parent_width = getParent() == null ? DEFAULT_WIDTH : getParent().getOffsetWidth() - 30;
         browser.setDefaultColumnWidth(parent_width / 2);
+
+        browser.getRootTreeNode().setChildOpen(0, true, false);
 
         selectionPanel.setWidget(browser);
     }
