@@ -4,9 +4,12 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.cellview.client.CellBrowser;
 import com.google.gwt.user.cellview.client.HasKeyboardSelectionPolicy.KeyboardSelectionPolicy;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.view.client.SingleSelectionModel;
 import com.google.gwt.view.client.TreeViewModel;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.widget.BookSelectionBrowserResources;
 import rosa.website.core.client.widget.BookSelectionTreeViewModel;
@@ -16,11 +19,20 @@ import rosa.website.model.select.BookSelectList;
 public class BookSelectViewImpl extends Composite implements BookSelectView {
     private static final int DEFAULT_WIDTH = 600;       // pixels
 
-    private SimplePanel root;
+    private SimplePanel selectionPanel;
+    private Label header;
 
     /**  */
     public BookSelectViewImpl() {
-        root = new SimplePanel();
+        FlowPanel root = new FlowPanel();
+        selectionPanel = new SimplePanel();
+        header = new Label(Labels.INSTANCE.selectBook());
+
+        header.setWidth("100%");
+        header.addStyleName("ContentTitle");
+
+        root.add(header);
+        root.add(selectionPanel);
 
         root.setSize("100%", "100%");
 
@@ -30,7 +42,7 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
     @Override
     @SuppressWarnings("unchecked")
     public void setData(BookSelectList data) {
-        root.clear();
+        selectionPanel.clear();
 
         TreeViewModel browserModel = new BookSelectionTreeViewModel(data, data.getCategory(),
                 new SingleSelectionModel<BookInfo>());
@@ -46,7 +58,12 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
         int parent_width = getParent() == null ? DEFAULT_WIDTH : getParent().getOffsetWidth() - 30;
         browser.setDefaultColumnWidth(parent_width / 2);
 
-        root.setWidget(browser);
+        selectionPanel.setWidget(browser);
+    }
+
+    @Override
+    public void setHeaderText(String text) {
+        header.setText(text);
     }
 
     /**
@@ -56,13 +73,13 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
      * @param height units included
      */
     public void resize(String width, String height) {
-        root.setSize(width, height);
+        selectionPanel.setSize(width, height);
     }
 
     @Override
     public void onResize() {
         int width = this.getParent().getOffsetWidth() - 50;
-        int height = this.getParent().getOffsetHeight() - 40;
+        int height = this.getParent().getOffsetHeight() - header.getOffsetHeight() - 40;
 
         resize(width + "px", height + "px");
     }

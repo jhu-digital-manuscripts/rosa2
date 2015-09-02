@@ -7,4 +7,5 @@ import rosa.website.model.select.BookSelectList;
 public interface BookSelectView extends IsWidget, RequiresResize {
 
     void setData(BookSelectList data);
+    void setHeaderText(String text);
 }

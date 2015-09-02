@@ -9,6 +9,7 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.place.BookSelectPlace;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -62,6 +63,7 @@ public class BookSelectActivity implements Activity {
         panel.setWidget(view);
         LoadingPanel.INSTANCE.show();
 
+        view.setHeaderText(getHeader(category));
         service.loadBookSelectionData(
                 WebsiteConfig.INSTANCE.collection(),
                 category,
@@ -88,5 +90,51 @@ public class BookSelectActivity implements Activity {
                 view.onResize();
             }
         });
+    }
+
+    private String getHeader(SelectCategory category) {
+        Labels labels = Labels.INSTANCE;
+
+        String header = labels.selectBook();
+        switch (category) {
+            case REPOSITORY:
+                header += ": " + labels.repository();
+                break;
+            case SHELFMARK:
+                header += ": " + labels.shelfmark();
+                break;
+            case COMMON_NAME:
+                header += ": " + labels.commonName();
+                break;
+            case LOCATION:
+                header += ": " + labels.currentLocation();
+                break;
+            case DATE:
+                header += ": " + labels.date();
+                break;
+            case ORIGIN:
+                header += ": " + labels.origin();
+                break;
+            case TYPE:
+                header += ": " + labels.type();
+                break;
+            case NUM_ILLUSTRATIONS:
+                header += ": " + labels.numIllustrations();
+                break;
+            case NUM_FOLIOS:
+                header += ": " + labels.numFolios();
+                break;
+            case TRANSCRIPTION:
+                header += ": " + labels.transcription();
+                break;
+            case BIBLIOGRAPHY:
+            case NARRATIVE_TAGGING:
+            case ILLUSTRATION_TAGGING:
+            case ID:
+            default:
+                break;
+        }
+
+        return header;
     }
 }
