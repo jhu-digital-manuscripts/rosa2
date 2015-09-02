@@ -421,12 +421,11 @@ public class LuceneMapper {
                 for (String title_id: illus.getTitles()) {
                     String title = titles.getTitleById(title_id);
 
-//                    if (title_id == null) {
-                    if (title_id != null) {
-                        title_field.append(title_id);
+                    if (title != null && !title.isEmpty()) {
+                        title_field.append(title);
                         title_field.append(", ");
                     } else {
-                        title_field.append(title);
+                        title_field.append(title_id);
                         title_field.append(", ");
                     }
                 }
