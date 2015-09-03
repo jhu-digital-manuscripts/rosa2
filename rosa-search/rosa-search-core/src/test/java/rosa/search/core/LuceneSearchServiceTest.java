@@ -340,4 +340,50 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
                 "valid;LudwigXV7;LudwigXV7.013r.tif", result.getMatches()[0].getId());
     }
 
+    /**
+     * Test a search on query that is a mix of String and Text queries.
+     *
+     * There are some search categories that a user can pick in the UI
+     * that map to multiple Lucene search fields. In these cases, it
+     * is possible that a Lucene search would consist of a combination
+     * of phrase and exact searches.
+     *
+     * It MUST be the case that all fields can be searched at the same time,
+     * without error. In the case of searching for a phrase over a simple
+     * String search field, nothing should happen.
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void testMixedQuerySearch() throws Exception {
+        service.update(store, VALID_COLLECTION);
+
+        // Test and ID
+        {
+            Query query = new Query(
+                    QueryOperation.OR,
+                    new Query(SearchFields.BOOK_ID, "LudwigXV7"),
+                    new Query(SearchFields.TRANSCRIPTION_TEXT, "LudwigXV7")
+            );
+            // Should match once for book, once for each image name
+            SearchResult result = service.search(query, null);
+
+            assertNotNull("No result found.", result);
+            assertEquals("Unexpected number of results found.", 289, result.getTotal());
+        }
+
+        // Test a general phrase
+        {
+            Query query = new Query(
+                    QueryOperation.OR,
+                    new Query(SearchFields.BOOK_ID, "Tout adés la ou il rendoit"),
+                    new Query(SearchFields.TRANSCRIPTION_TEXT, "Tout adés la ou il rendoit")
+            );
+            SearchResult result = service.search(query, null);
+
+            assertNotNull("No result found.", result);
+            assertEquals("Unexpected number of results found.", 1, result.getTotal());
+        }
+    }
+
 }

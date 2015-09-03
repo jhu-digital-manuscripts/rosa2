@@ -26,9 +26,11 @@ import org.apache.lucene.document.Field.Store;
 import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexableField;
+import org.apache.lucene.index.Term;
 import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.Query;
+import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.util.QueryBuilder;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -216,7 +218,8 @@ public class LuceneMapper {
         case OLD_FRENCH:
             return builder.createPhraseQuery(lucene_field, query);
         case STRING:
-            return builder.createPhraseQuery(lucene_field, query);
+            // Cannot do a phrase search on a String field.
+            return new TermQuery(new Term(lucene_field, query));
         default:
             return null;
         }
