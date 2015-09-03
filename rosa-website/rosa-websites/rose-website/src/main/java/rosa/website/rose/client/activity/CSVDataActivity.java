@@ -13,6 +13,7 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -88,6 +89,7 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
         }
 
         final Map<Enum, String> links = getPossibleLinks(type);
+        final String[] headers = getHeaders(type);
         service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
@@ -97,7 +99,7 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
 
             @Override
             public void onSuccess(CSVData result) {
-                view.setData(result, links);
+                view.setData(result, links, headers);
                 LoadingPanel.INSTANCE.hide();
             }
         });
@@ -139,6 +141,34 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
             default:
                 return null;
         }
+    }
+
+    private String[] getHeaders(CSVType type) {
+        Labels labels = Labels.INSTANCE;
+        switch (type) {
+            case COLLECTION_DATA:
+            case COLLECTION_BOOKS:
+                return new String[] {
+                        labels.name(),
+                        labels.date(),
+                        labels.folios(),
+                        labels.numIllustrationsShort(),
+                        labels.colsPerFolio(),
+                        labels.linesPerColumn(),
+                        labels.dimensions(),
+                        labels.leavesPerGathering(),
+                        labels.foliosWithGreaterThanOneIllustration()
+                };
+            case ILLUSTRATIONS:
+                return new String[] {labels.position(), labels.illustrationTitle(), labels.frequency()};
+            case CHARACTERS:
+                return new String[] {labels.name(), labels.french(), labels.english()};
+            case NARRATIVE_SECTIONS:
+                return new String[] {labels.identifier(), labels.description(), labels.lecoy()};
+            default:
+                break;
+        }
+        return null;
     }
 
     @Override

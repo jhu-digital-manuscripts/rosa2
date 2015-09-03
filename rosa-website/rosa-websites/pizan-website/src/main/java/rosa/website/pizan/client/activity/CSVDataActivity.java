@@ -97,8 +97,9 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
         });
     }
 
+    // TODO must add CSV column headers
     private void handleCsvData(CSVData data, Map<Enum, String> links) {
-        view.setData(data, links);
+        view.setData(data, links, null);
 
         ExternalTextResource resource = HistoryConfig.getCsvDescription(place.getName());
         if (resource != null) {

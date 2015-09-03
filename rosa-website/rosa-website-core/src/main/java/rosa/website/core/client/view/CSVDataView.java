@@ -45,7 +45,7 @@ public interface CSVDataView extends IsWidget {
      *
      * <em>More behavior must be defined in the CSVWidget, this should change in
      * the future.</em>
-     * {@link rosa.website.core.client.widget.CSVWidget#createColumns(CSVData, ListHandler, Map)}
+     * {@link rosa.website.core.client.widget.CSVWidget#createColumns(CSVData, ListHandler, Map, String...)}
      *
      * EXAMPLE:
      * In the 'collection spreadsheet', the column holding book IDs contains links that
@@ -56,8 +56,9 @@ public interface CSVDataView extends IsWidget {
      *
      * @param data CSV data to display
      * @param links possible links in table, Column enum -&gt; history fragment prefix
+     * @param headers column headers, optional
      */
-    void setData(CSVData data, Map<Enum, String> links);
+    void setData(CSVData data, Map<Enum, String> links, String[] headers);
 
     void setDescription(String description);
 }

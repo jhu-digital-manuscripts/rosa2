@@ -45,8 +45,8 @@ public class CSVDataViewImpl extends Composite implements CSVDataView {
     }
 
     @Override
-    public void setData(CSVData data, Map<Enum, String> links) {
-        display.setData(data, links);
+    public void setData(CSVData data, Map<Enum, String> links, String[] headers) {
+        display.setData(data, links, headers);
     }
 
     @Override

@@ -54,26 +54,18 @@ public class CSVWidget extends Composite {
 
     @SuppressWarnings("unchecked")
     public void setData(CSVData data) {
-        clear();
+        setData(data, null);
+    }
 
-        dataProvider.setList(data.asList());
-        ListHandler<CSVRow> sortHandler = new ListHandler<CSVRow>(dataProvider.getList()) {
-            @Override
-            public void onColumnSort(ColumnSortEvent event) {
-                super.onColumnSort(event);
-                dataProvider.refresh();
-            }
-        };
-        createColumns(data, sortHandler, null);
-
-        table.addColumnSortHandler(sortHandler);
-        table.setPageSize(data.size());
-        table.flush();
+    @SuppressWarnings("unchecked")
+    public void setData(CSVData data, Map<Enum, String> links) {
+        setData(data, links, null);
     }
 
     /**
      * Set the CSV data to be displayed. Also force hyperlinks in the data by specifying
-     * columns and the target history token to be linked from that column.
+     * columns and the target history token to be linked from that column. Column headers
+     * can also be specified.
      *
      * Example: say you want the ID column data to link to the "book" place in the app.
      * The links map would contain the mapping ID -&gt; book. The ID column data would
@@ -81,9 +73,10 @@ public class CSVWidget extends Composite {
      *
      * @param data data
      * @param links links, force a column of data to be hyperlinked to place in the app
+     * @param headers column headers
      */
     @SuppressWarnings("unchecked")
-    public void setData(CSVData data, Map<Enum, String> links) {
+    public void setData(CSVData data, Map<Enum, String> links, String[] headers) {
         clear();
 
         dataProvider.setList(data.asList());
@@ -94,7 +87,7 @@ public class CSVWidget extends Composite {
                 dataProvider.refresh();
             }
         };
-        createColumns(data, sortHandler, links);
+        createColumns(data, sortHandler, links, headers);
 
         table.addColumnSortHandler(sortHandler);
         table.setPageSize(data.size());
@@ -119,13 +112,23 @@ public class CSVWidget extends Composite {
      * @param data CSV data
      * @param sortHandler .
      * @param links map of column enum to history prefix
+     * @param headers array of column headers
      */
     private void createColumns(CSVData  data, ColumnSortEvent.ListHandler<CSVRow> sortHandler,
-                               final Map<Enum, String> links) {
+                               final Map<Enum, String> links, String ... headers) {
         if (data.columns() == null) {
             logger.warning("CSV data has no columns assigned.");
             return;
         }
+
+        // If no headers are specified, or not the right number are specified
+        if (headers == null || headers.length != data.columns().length) {
+            headers = new String[data.columns().length];
+            for (int i = 0; i < data.columns().length; i++) {
+                headers[i] = data.columns()[i].toString();
+            }
+        }
+
         for (final Enum col : data.columns()) {
             if (col == null) {
                 logger.warning("NULL column detected.");
@@ -185,7 +188,7 @@ public class CSVWidget extends Composite {
             }
 
             column.setSortable(true);
-            table.addColumn(column, col.toString());
+            table.addColumn(column, headers[col.ordinal()]);
 
             sortHandler.setComparator(column, new Comparator<CSVRow>() {
                 @Override
