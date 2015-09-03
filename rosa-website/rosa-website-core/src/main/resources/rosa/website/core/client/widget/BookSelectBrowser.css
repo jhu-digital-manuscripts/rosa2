@@ -27,13 +27,13 @@
 
 .cellBrowserEvenItem {
   cursor: pointer;
-  padding: 8px;
+  padding: 3px;
   zoom: 1;
 }
 
 .cellBrowserOddItem {
   cursor: pointer;
-  padding: 8px;
+  padding: 3px;
   zoom: 1;
 }
 
@@ -42,19 +42,15 @@
   color: black;
 }
 
-@sprite .cellBrowserSelectedItem {
-  gwt-image: 'cellBrowserSelectedBackground';
+.cellBrowserSelectedItem {
   background-color: #628cd5;
-  background-repeat: repeat-x;
   color: black;
   height: auto;
   overflow: hidden;
 }
 
-@sprite .cellBrowserOpenItem {
-  gwt-image: 'cellBrowserOpenBackground';
+.cellBrowserOpenItem {
   background-color: #7b7b7b;
-  background-repeat: repeat-x;
   color: white;
   height: auto;
   overflow: hidden;
