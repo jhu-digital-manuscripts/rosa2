@@ -175,7 +175,7 @@ public class CSVWidget extends Composite {
                         String val = entry.getValue(col);
 
                         // Report blank for missing or null-like values to display nicely
-                        if (val == null || val.equals("-1")) {
+                        if (val == null || val.equals("-1") || val.equals("-1x-1")) {
                             return "";
                         }
 
