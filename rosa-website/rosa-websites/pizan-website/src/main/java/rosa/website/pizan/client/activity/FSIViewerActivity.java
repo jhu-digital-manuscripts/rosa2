@@ -268,6 +268,7 @@ public class FSIViewerActivity implements Activity {
         if (type == FSIViewerType.SHOWCASE) {
             view.addShowcaseToolbar();
             view.setupFsiShowcaseCallback(showcaseCallback);
+            view.setHeader(Labels.INSTANCE.browseImages() + ": " + model.getTitle());
 
             Scheduler.get().scheduleDeferred(new ScheduledCommand() {
                 @Override
@@ -298,6 +299,7 @@ public class FSIViewerActivity implements Activity {
         } else if (type == FSIViewerType.PAGES) {
             view.addPagesToolbar();
             view.setupFsiPagesCallback(pagesCallback);
+            view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
 
             Scheduler.get().scheduleDeferred(new ScheduledCommand() {
                 @Override

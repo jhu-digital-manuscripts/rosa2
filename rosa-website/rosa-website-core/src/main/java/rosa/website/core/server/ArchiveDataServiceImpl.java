@@ -439,7 +439,16 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             }
         }
 
+        String title;
+        BookMetadata metadata = b.getBookMetadata(language);
+        if (metadata != null) {
+            title = metadata.getRepository() + ", " + metadata.getCommonName();
+        } else {
+            title = b.getId();
+        }
+
         FSIViewerModel model = FSIViewerModel.Builder.newBuilder()
+                .title(title)
                 .permission(b.getPermission(language))
                 .images(b.getImages())
                 .transcriptions(TranscriptionSplitter.split(b.getTranscription()))

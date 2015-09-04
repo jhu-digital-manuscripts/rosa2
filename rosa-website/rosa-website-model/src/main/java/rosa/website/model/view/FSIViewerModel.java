@@ -22,6 +22,7 @@ public class FSIViewerModel implements Serializable {
             return new Builder();
         }
 
+        private String title;
         private Permission permission;
         private ImageList images;
         private Map<String, String> transcriptionMap;
@@ -31,6 +32,11 @@ public class FSIViewerModel implements Serializable {
         private NarrativeSections narrativeSections;
 
         private Builder() {}
+
+        public Builder title(String title) {
+            this.title = title;
+            return this;
+        }
 
         public Builder permission(Permission permission) {
             this.permission = permission;
@@ -68,11 +74,12 @@ public class FSIViewerModel implements Serializable {
         }
 
         public FSIViewerModel build() {
-            return new FSIViewerModel(permission, images, transcriptionMap, illustrationTagging,
+            return new FSIViewerModel(title, permission, images, transcriptionMap, illustrationTagging,
                     illustrationTitles, narrativeTagging, narrativeSections);
         }
     }
 
+    private String title;
     private Permission permission;
     private ImageList images;
     private Map<String, String> transcriptionMap;
@@ -86,16 +93,20 @@ public class FSIViewerModel implements Serializable {
     FSIViewerModel() {}
 
     /**
+     *
+     * @param title display title
      * @param permission permission statements, includes other languages if applicable
      * @param images image list
      * @param transcriptionMap transcriptions, separated by page, if available
      * @param illustrationTagging illustration tagging
+     * @param illustrationTitles illustration titles
      * @param narrativeTagging narrative tagging
-     *
+     * @param narrativeSections narrative sections
      */
-    FSIViewerModel(Permission permission, ImageList images, Map<String, String> transcriptionMap,
+    FSIViewerModel(String title, Permission permission, ImageList images, Map<String, String> transcriptionMap,
                           IllustrationTagging illustrationTagging, Map<String, String> illustrationTitles,
                           NarrativeTagging narrativeTagging, NarrativeSections narrativeSections) {
+        this.title = title;
         this.permission = permission;
         this.images = images;
         this.transcriptionMap = transcriptionMap;
@@ -103,6 +114,10 @@ public class FSIViewerModel implements Serializable {
         this.illustrationTitles = illustrationTitles;
         this.narrativeTagging = narrativeTagging;
         this.narrativeSections = narrativeSections;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public Permission getPermission() {

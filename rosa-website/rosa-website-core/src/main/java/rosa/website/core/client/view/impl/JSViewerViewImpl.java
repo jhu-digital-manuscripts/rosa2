@@ -11,6 +11,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
@@ -27,6 +28,7 @@ import rosa.website.core.client.view.JSViewerView;
 
 public class JSViewerViewImpl extends Composite implements JSViewerView, RequiresResize {
     private FlowPanel root;
+    private Label header;
     private FlowPanel readerToolbar;
     private SimplePanel permissionPanel;
     private SimplePanel transcriptionPanel;
@@ -53,6 +55,11 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
         root = new FlowPanel();
         root.setSize("100%", "100%");
         root.addStyleName("JSViewerRoot");
+
+        header = new Label();
+        header.setStylePrimaryName("ContentTitle");
+        header.setWidth("100%");
+        root.add(header);
 
         transcriptionPanel = new SimplePanel();
         transcriptionPanel.setStylePrimaryName("Transcription");
@@ -83,6 +90,11 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
         root.add(permissionPanel);
 
         initWidget(root);
+    }
+
+    @Override
+    public void setHeader(String header) {
+        this.header.setText(header);
     }
 
     @Override

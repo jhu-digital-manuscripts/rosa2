@@ -11,6 +11,8 @@ import rosa.website.viewer.client.fsiviewer.FSIViewerType;
 
 public interface FSIViewerView extends IsWidget {
 
+    void setHeader(String text);
+
     /**
      * Display permission statement for use of data.
      *

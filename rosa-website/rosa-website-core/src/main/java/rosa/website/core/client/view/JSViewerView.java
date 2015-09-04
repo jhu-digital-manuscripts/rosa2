@@ -13,6 +13,7 @@ import rosa.website.viewer.client.jsviewer.codexview.CodexView.Mode;
 import rosa.website.viewer.client.jsviewer.dynimg.ImageServer;
 
 public interface JSViewerView extends IsWidget {
+    void setHeader(String header);
     void setPermissionStatement(String permission);
 
     /**

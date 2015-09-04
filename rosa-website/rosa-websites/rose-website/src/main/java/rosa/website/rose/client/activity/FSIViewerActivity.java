@@ -266,6 +266,7 @@ public class FSIViewerActivity implements Activity {
 
                 view.addShowcaseToolbar();
                 view.setupFsiShowcaseCallback(showcaseCallback);
+                view.setHeader(Labels.INSTANCE.browseImages() + ": " + model.getTitle());
 
                 // Set labels in the "show extra" dropdown
                 setupShowExtra(startPage, false);
@@ -299,6 +300,7 @@ public class FSIViewerActivity implements Activity {
 
                 view.addPagesToolbar();
                 view.setupFsiPagesCallback(pagesCallback);
+                view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
 
                 // Set labels in the "show extra" dropdown
                 setupShowExtra(startPage, true);

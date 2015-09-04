@@ -323,6 +323,7 @@ public class JSViewerActivity implements Activity {
 
                 setupShowExtra(current_selected_index, true);
 
+                view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
                 break;
             case IMAGE_BROWSER:
                 break;
@@ -341,6 +342,8 @@ public class JSViewerActivity implements Activity {
                 }
 
                 setupShowExtra(current_selected_index, false);
+
+                view.setHeader(Labels.INSTANCE.browseImages() + ": " + model.getTitle());
                 break;
             default:
                 view.setToolbarVisible(false);
