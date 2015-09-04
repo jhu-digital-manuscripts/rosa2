@@ -41,7 +41,9 @@ import rosa.website.search.client.model.SearchMatchModel;
 import rosa.website.search.client.model.SearchResultModel;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -137,6 +139,7 @@ public class SearchActivity implements Activity {
         view.setSearchButtonText(Labels.INSTANCE.search());
         view.setRemoveButtonText(Labels.INSTANCE.removeSearchField());
         view.setClearBooksButtonText(Labels.INSTANCE.clearTextBox());
+        view.setSearchFieldLabels(getCategoryLabels());
 
         view.setAvailableSearchFields(SearchCategory.values());
         view.setAvailableSearchOperations(QueryOperation.values());
@@ -319,5 +322,56 @@ public class SearchActivity implements Activity {
         }
 
         return bookId;
+    }
+
+    private Map<SearchCategory, String> getCategoryLabels() {
+        Map<SearchCategory, String> labels = new HashMap<>();
+
+        for (SearchCategory cat : SearchCategory.values()) {
+            String label = null;
+            switch (cat) {
+                case POETRY:
+                    label = Labels.INSTANCE.linesOfVerse();
+                    break;
+                case RUBRIC:
+                    label = Labels.INSTANCE.rubric();
+                    break;
+                case ILLUSTRATION_TITLE:
+                    label = Labels.INSTANCE.illustrationTitles();
+                    break;
+                case LECOY:
+                    label = Labels.INSTANCE.lecoy();
+                    break;
+                case NOTE:
+                    label = Labels.INSTANCE.criticalNote();
+                    break;
+                case ILLUSTRATION_CHAR:
+                    label = Labels.INSTANCE.illustrationChar();
+                    break;
+                case ILLUSTRATION_KEYWORDS:
+                    label = Labels.INSTANCE.illustrationKeywords();
+                    break;
+                case DESCRIPTION:
+                    label = Labels.INSTANCE.bookDescription();
+                    break;
+                case IMAGE:
+                    label = Labels.INSTANCE.imageName();
+                    break;
+                case NARRATIVE_SECTION:
+                    label = Labels.INSTANCE.narrativeSections();
+                    break;
+                case ALL:
+                    label = Labels.INSTANCE.allFields();
+                    break;
+                default:
+                    break;
+            }
+
+            if (label != null && !label.isEmpty()) {
+                labels.put(cat, label);
+            }
+        }
+
+        return labels;
     }
 }

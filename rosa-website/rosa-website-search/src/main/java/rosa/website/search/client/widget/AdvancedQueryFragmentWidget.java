@@ -103,8 +103,8 @@ public class AdvancedQueryFragmentWidget extends Composite {
 
         if (searchFields != null) {
             for (SearchCategory f : searchFields) {
-                if (searchCategoryLabels == null) {
-                    category.addItem(f.toString(), f.toString());
+                if (searchCategoryLabels == null || !searchCategoryLabels.containsKey(f)) {
+                    category.addItem(f.toString());
                 } else {
                     category.addItem(searchCategoryLabels.get(f), f.toString());
                 }

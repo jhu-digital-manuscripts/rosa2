@@ -15,6 +15,8 @@ import rosa.search.model.QueryOperation;
 import rosa.website.model.select.BookInfo;
 import rosa.website.search.client.model.SearchCategory;
 
+import java.util.Map;
+
 /**
  * AdvancedSearchWidget lets a user build a complex search query through the UI.
  * Query fragments can have individual search field restrictions and are composed
@@ -36,6 +38,8 @@ public class AdvancedSearchWidget extends Composite {
     private String removeButtonText;
     private QueryOperation[] queryOperations;
     private SearchCategory[] queryFields;
+
+    private Map<SearchCategory, String> labels;
 
     /**
      * Create a new AdvancedSearchWidget
@@ -104,6 +108,10 @@ public class AdvancedSearchWidget extends Composite {
         this.queryFields = fields;
     }
 
+    public void setSearchFieldLabels(Map<SearchCategory, String> labels) {
+        this.labels = labels;
+    }
+
     /**
      * Add a new query row to this widget allowing for another search query
      * fragment that has its own restrictions that will be composed with all
@@ -125,6 +133,9 @@ public class AdvancedSearchWidget extends Composite {
             row.setSelectedOperation(selectedOperation);
         }
         // Add restriction fields
+        if (labels != null && !labels.isEmpty()) {
+            row.setSearchCategoryLabels(labels);
+        }
         row.setSearchCategories(queryFields);
         if (selectedField != -1) {
             row.setSelectedSearchCategory(selectedField);

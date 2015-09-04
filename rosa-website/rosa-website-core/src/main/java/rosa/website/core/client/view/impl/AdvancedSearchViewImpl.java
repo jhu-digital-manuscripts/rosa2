@@ -15,6 +15,7 @@ import rosa.website.search.client.widget.AdvancedSearchWidget;
 import rosa.website.search.client.widget.SearchResultsWidget;
 
 import java.util.List;
+import java.util.Map;
 
 public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchView {
     private int thumbWidth = 100;
@@ -68,14 +69,22 @@ public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchV
         searchWidget.setRemoveButtonText(text);
     }
 
+    @Override
     public void setAvailableSearchFields(SearchCategory[] fields) {
         searchWidget.setAvailableFields(fields);
     }
 
+    @Override
+    public void setSearchFieldLabels(Map<SearchCategory, String> labels) {
+        searchWidget.setSearchFieldLabels(labels);
+    }
+
+    @Override
     public void setAvailableSearchOperations(QueryOperation[] operations) {
         searchWidget.setAvailableOperations(operations);
     }
 
+    @Override
     public void addQueryField() {
         searchWidget.addQueryField();
     }

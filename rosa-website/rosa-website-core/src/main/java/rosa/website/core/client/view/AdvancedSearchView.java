@@ -12,6 +12,7 @@ import rosa.website.search.client.model.SearchMatchModel;
 import rosa.website.search.client.model.SearchResultModel;
 
 import java.util.List;
+import java.util.Map;
 
 public interface AdvancedSearchView extends IsWidget {
 
@@ -65,6 +66,8 @@ public interface AdvancedSearchView extends IsWidget {
      * @param fields .
      */
     void setAvailableSearchFields(SearchCategory[] fields);
+
+    void setSearchFieldLabels(Map<SearchCategory, String> labels);
 
     /**
      * Set the operations available in this widget. The user can choose
