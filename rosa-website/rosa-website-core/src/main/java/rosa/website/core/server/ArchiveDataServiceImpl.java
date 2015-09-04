@@ -511,13 +511,23 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
 
         BookCollection col = loadBookCollection(collection);
+        if (col == null) {
+            logger.severe("Failed to load book collection. (" + collection + ")");
+            return new CharacterNamesCSV();
+        }
 
         List<CSVRow> entries = new ArrayList<>();
 
         CharacterNames names = col.getCharacterNames();
         for (String id : names.getAllCharacterIds()) {
             CharacterName name = names.getCharacterName(id);
-            entries.add(new CSVRow(id, name.getNameInLanguage("en"), name.getNameInLanguage("fr")));
+
+            String siteName = name.getNameInLanguage("site name");
+            if (siteName == null || siteName.isEmpty()) {
+                siteName = id;
+            }
+
+            entries.add(new CSVRow(siteName, name.getNameInLanguage("en"), name.getNameInLanguage("fr")));
         }
 
         CharacterNamesCSV csv = new CharacterNamesCSV(names.getId(), entries);
