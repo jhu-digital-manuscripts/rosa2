@@ -201,6 +201,10 @@ public class JSViewerActivity implements Activity {
         });
     }
 
+    private native boolean isNumeric(String str) /*-{
+        return !isNaN(str);
+    }-*/;
+
     private void setupView(final CodexModel codexModel) {
         final CodexController controller = new SimpleCodexController(codexModel);
         ImageServer server = new FSIImageServer(WebsiteConfig.INSTANCE.fsiUrl());
@@ -239,7 +243,12 @@ public class JSViewerActivity implements Activity {
             @Override
             public void onKeyDown(KeyDownEvent event) {
                 if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                    int index = getImageIndex(view.getGotoText());
+                    String tryThis = view.getGotoText();
+                    if (isNumeric(tryThis)) {
+                        tryThis += "r";
+                    }
+
+                    int index = getImageIndex(tryThis);
 
                     /*
                         This hack gets around a bug in the original website where a user inputs

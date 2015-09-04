@@ -274,7 +274,12 @@ public class FSIViewerActivity implements Activity {
                     @Override
                     public void onKeyDown(KeyDownEvent event) {
                         if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                            int index = getImageIndex(view.getGotoText());
+                            String tryThis = view.getGotoText();
+                            if (isNumeric(tryThis)) {
+                                tryThis += "r";
+                            }
+
+                            int index = getImageIndex(tryThis);
                             if (index >= 0) {
                                 view.fsiViewerSelectImage(index);
                             }
@@ -302,7 +307,12 @@ public class FSIViewerActivity implements Activity {
                     @Override
                     public void onKeyDown(KeyDownEvent event) {
                         if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                            int index = getImageIndex(view.getGotoText());
+                            String tryThis = view.getGotoText();
+                            if (isNumeric(tryThis)) {
+                                tryThis += "r";
+                            }
+
+                            int index = getImageIndex(tryThis);
 
                             if (index >= 0) {
                                 view.fsiViewerGotoImage(index + 1);
@@ -488,4 +498,8 @@ public class FSIViewerActivity implements Activity {
 
         return result;
     }
+
+    private native boolean isNumeric(String str) /*-{
+        return !isNaN(str);
+    }-*/;
 }

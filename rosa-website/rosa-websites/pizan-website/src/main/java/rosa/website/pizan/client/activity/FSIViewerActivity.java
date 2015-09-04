@@ -197,26 +197,26 @@ public class FSIViewerActivity implements Activity {
 
         service.loadFSIViewerModel(WebsiteConfig.INSTANCE.collection(), book, language,
                 new AsyncCallback<FSIViewerModel>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load FSI data.");
-                LoadingPanel.INSTANCE.hide();
-            }
+                    @Override
+                    public void onFailure(Throwable caught) {
+                        logger.log(Level.SEVERE, "Failed to load FSI data.");
+                        LoadingPanel.INSTANCE.hide();
+                    }
 
-            @Override
-            public void onSuccess(FSIViewerModel result) {
-                model = result;
-                view.setPermissionStatement(result.getPermission().getPermission());
-                Scheduler.get().scheduleDeferred(resizeCommand);
+                    @Override
+                    public void onSuccess(FSIViewerModel result) {
+                        model = result;
+                        view.setPermissionStatement(result.getPermission().getPermission());
+                        Scheduler.get().scheduleDeferred(resizeCommand);
 
-                if (starterPage != null && !starterPage.isEmpty()) {
-                    setupFlashViewer(getImageIndex(starterPage));
-                } else {
-                    setupFlashViewer(-1);
-                }
-                LoadingPanel.INSTANCE.hide();
-            }
-        });
+                        if (starterPage != null && !starterPage.isEmpty()) {
+                            setupFlashViewer(getImageIndex(starterPage));
+                        } else {
+                            setupFlashViewer(-1);
+                        }
+                        LoadingPanel.INSTANCE.hide();
+                    }
+                });
     }
 
     public String[] getExtraDataLabels(int page) {
@@ -283,7 +283,12 @@ public class FSIViewerActivity implements Activity {
                 @Override
                 public void onKeyDown(KeyDownEvent event) {
                     if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                        int index = getImageIndex(view.getGotoText());
+                        String tryThis = view.getGotoText();
+                        if (isNumeric(tryThis)) {
+                            tryThis += "r";
+                        }
+
+                        int index = getImageIndex(tryThis);
                         if (index >= 0) {
                             view.fsiViewerSelectImage(index);
                         }
@@ -322,8 +327,12 @@ public class FSIViewerActivity implements Activity {
                 @Override
                 public void onKeyDown(KeyDownEvent event) {
                     if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                        int index = getImageIndex(view.getGotoText());
+                        String tryThis = view.getGotoText();
+                        if (isNumeric(tryThis)) {
+                            tryThis += "r";
+                        }
 
+                        int index = getImageIndex(tryThis);
                         if (index >= 0) {
                             view.fsiViewerGotoImage(index + 1);
                         }
@@ -402,4 +411,8 @@ public class FSIViewerActivity implements Activity {
 
         return result;
     }
+
+    private native boolean isNumeric(String str) /*-{
+        return !isNaN(str);
+    }-*/;
 }

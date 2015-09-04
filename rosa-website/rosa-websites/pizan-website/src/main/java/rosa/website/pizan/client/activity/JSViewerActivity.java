@@ -203,7 +203,12 @@ public class JSViewerActivity implements Activity {
             @Override
             public void onKeyDown(KeyDownEvent event) {
                 if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                    int index = getImageIndex(view.getGotoText(), images);
+                    String tryThis = view.getGotoText();
+                    if (isNumeric(tryThis)) {
+                        tryThis += "r";
+                    }
+
+                    int index = getImageIndex(tryThis, images);
 
                     /*
                         This hack gets around a bug in the original website where a user inputs
@@ -324,4 +329,8 @@ public class JSViewerActivity implements Activity {
         this.eventBus.fireEvent(new BookSelectEvent(false, book));
         LoadingPanel.INSTANCE.hide();
     }
+
+    private native boolean isNumeric(String str) /*-{
+        return !isNaN(str);
+    }-*/;
 }
