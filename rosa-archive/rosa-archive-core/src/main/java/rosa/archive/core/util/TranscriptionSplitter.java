@@ -65,6 +65,8 @@ public class TranscriptionSplitter {
      * inside a &lt;lg&gt; couplet tag. Anyone parsing these XML fragments will have
      * to take this into consideration.
      *
+     * TODO begs for a SAX implementation, instead of DOM
+     *
      * @param xml original transcription XML containing all transcriptions
      * @return map of page TO transcription XML fragment
      */
@@ -79,7 +81,19 @@ public class TranscriptionSplitter {
 
         // Find the index of each top level <pb> tag
         List<Integer> pbs = new ArrayList<>();
-        NodeList all_nodes = doc.getDocumentElement().getChildNodes();
+
+        NodeList bodyList = doc.getDocumentElement().getElementsByTagName("body");
+        if (bodyList == null || bodyList.getLength() != 1) {
+            log.warning("Cannot parse transcription data. Invalid XML structure. " +
+                    "(There should be exactly one <body> tag)");
+            return map;
+        }
+
+        NodeList all_nodes = bodyList.item(0).getChildNodes();
+        if (all_nodes.getLength() == 1) {
+            all_nodes = all_nodes.item(0).getChildNodes();
+        }
+
         for (int i = 0; i < all_nodes.getLength(); i++) {
             Node n = all_nodes.item(i);
 
