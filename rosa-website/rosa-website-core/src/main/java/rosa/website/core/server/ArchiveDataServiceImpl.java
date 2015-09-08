@@ -9,6 +9,7 @@ import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.*;
 import rosa.website.core.client.ArchiveDataService;
 import rosa.website.model.csv.CollectionDisplayCSV;
+import rosa.website.model.select.DataStatus;
 import rosa.website.model.view.BookDescriptionViewModel;
 import rosa.website.model.view.FSIViewerModel;
 import rosa.website.model.csv.BookDataCSV;
@@ -247,6 +248,15 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         return new CollectionDisplayCSV(loadCollectionData(collection, lang));
     }
 
+    /**
+     * {@link #getTranscriptionStatus(Book)}
+     *
+     * @param collection collection in the archive
+     * @param category selection category
+     * @param lang language code
+     * @return .
+     * @throws IOException .
+     */
     @Override
     public BookSelectList loadBookSelectionData(String collection, SelectCategory category, String lang)
             throws IOException{
@@ -278,7 +288,8 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                     book.getTranscription() != null,
                     book.getIllustrationTagging() != null,
                     book.getAutomaticNarrativeTagging() != null || book.getManualNarrativeTagging() != null,
-                    false // No bibliography in current books
+                    false, // No bibliography in current books
+                    getTranscriptionStatus(book)
             ));
         }
         // Pre sort results?
@@ -673,6 +684,36 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                 logger.log(Level.SEVERE, "Failed to load book. [" + name + "]: ", e);
             }
         }
+    }
+
+    /**
+     * @param book book loaded from archive
+     * @return does this book have transcriptions for every page?
+     */
+    private DataStatus getTranscriptionStatus(Book book) {
+        if (book.getTranscription() == null || book.getTranscription().getXML().isEmpty()
+                || book.getImages() == null) {
+            return DataStatus.NONE;
+        }
+
+        Map<String, String> transcriptionMap = TranscriptionSplitter.split(
+                book.getTranscription().getXML()
+        );
+        if (transcriptionMap == null) {
+            return DataStatus.NONE;
+        }
+
+        boolean hasAtLeastOne = false;
+        for (BookImage image : book.getImages()) {
+            // If page is not found among transcriptions
+            if (!transcriptionMap.containsKey(image.getName()) && hasAtLeastOne) {
+                return DataStatus.PARTIAL;
+            }
+
+            hasAtLeastOne = true;
+        }
+
+        return DataStatus.FULL;
     }
 
     /**

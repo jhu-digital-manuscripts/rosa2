@@ -18,6 +18,8 @@ public class BookSelectData implements Serializable {
     private boolean hasNarrativeTagging;
     private boolean hasBibliography;
 
+    private DataStatus transcriptionStatus;
+
     public BookSelectData() {}
 
     /**
@@ -30,12 +32,13 @@ public class BookSelectData implements Serializable {
      * @param hasBibliography .
      */
     public BookSelectData(CSVRow data, boolean hasTranscription, boolean hasImageTagging,
-                          boolean hasNarrativeTagging, boolean hasBibliography) {
+                          boolean hasNarrativeTagging, boolean hasBibliography, DataStatus transcriptionStatus) {
         this.data = data;
         this.hasTranscription = hasTranscription;
         this.hasImageTagging = hasImageTagging;
         this.hasNarrativeTagging = hasNarrativeTagging;
         this.hasBibliography = hasBibliography;
+        this.transcriptionStatus = transcriptionStatus;
     }
 
     public void setData(CSVRow data) {
@@ -56,6 +59,10 @@ public class BookSelectData implements Serializable {
 
     public void setHasBibliography(boolean hasBibliography) {
         this.hasBibliography = hasBibliography;
+    }
+
+    public DataStatus transcriptionStatus() {
+        return transcriptionStatus;
     }
 
     /** @return Does this book have transcriptions? */

@@ -4,10 +4,12 @@ import com.google.gwt.view.client.DefaultSelectionEventManager;
 import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.SelectionModel;
 import com.google.gwt.view.client.TreeViewModel;
+import rosa.website.core.client.Labels;
 import rosa.website.model.select.BookInfo;
 import rosa.website.model.select.BookSelectData;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.BookSelection;
+import rosa.website.model.select.DataStatus;
 import rosa.website.model.select.SelectCategory;
 
 import java.util.ArrayList;
@@ -159,9 +161,29 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
             case NUM_FOLIOS:
                 return data.numberOfFolios();
             case TRANSCRIPTION:
-                return String.valueOf(data.hasTranscription());
+                return getTranscriptionStatus(data.transcriptionStatus());
             default:
                 return null;
         }
+    }
+
+    private String getTranscriptionStatus(DataStatus status) {
+        if (status == null) {
+            return Labels.INSTANCE.none();
+        }
+        String display;
+        switch (status) {
+            case NONE:
+            default:
+                display = Labels.INSTANCE.none();
+                break;
+            case PARTIAL:
+                display = Labels.INSTANCE.partial();
+                break;
+            case FULL:
+                display = Labels.INSTANCE.complete();
+        }
+
+        return display;
     }
 }
