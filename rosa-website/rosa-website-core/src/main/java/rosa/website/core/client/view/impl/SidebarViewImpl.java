@@ -98,6 +98,22 @@ public class SidebarViewImpl extends Composite implements SidebarView {
     }
 
     @Override
+    public void addHelpLink(final String url) {
+        Label help = new Label(Labels.INSTANCE.help());
+        navPanel.add(help);
+
+        help.setStylePrimaryName("SidebarItem");
+        help.addStyleName("link");
+
+        handlers.add(help.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+                Window.open(url, "help", "toolbar=yes,menubar=no,scrollbars=yes,resizable=yes");
+            }
+        }));
+    }
+
+    @Override
     public void setSiteNavigationLinks(Map<String, String> nav_links) {
         addLinks(nav_links, navPanel);
     }
@@ -219,16 +235,21 @@ public class SidebarViewImpl extends Composite implements SidebarView {
                     unselectAll();
                     ((Widget) event.getSource()).addStyleName("SidebarSelected");
 
-                    StringBuilder url_sb = new StringBuilder(GWT.getHostPageBaseURL());
+                    StringBuilder url_sb = new StringBuilder();
+                    if (entry.getValue().startsWith("http")) {
+                        url_sb.append(entry.getValue());
+                    } else {
+                        url_sb.append(GWT.getHostPageBaseURL());
 
-                    String locale = LocaleInfo.getCurrentLocale().getLocaleName();
-                    if (!locale.equalsIgnoreCase("en")) {
-                        url_sb.append("?locale=");
-                        url_sb.append(locale);
+                        String locale = LocaleInfo.getCurrentLocale().getLocaleName();
+                        if (!locale.equalsIgnoreCase("en")) {
+                            url_sb.append("?locale=");
+                            url_sb.append(locale);
+                        }
+
+                        url_sb.append("#");
+                        url_sb.append(entry.getValue());
                     }
-
-                    url_sb.append("#");
-                    url_sb.append(entry.getValue());
 
                     Window.Location.assign(url_sb.toString());
                 }

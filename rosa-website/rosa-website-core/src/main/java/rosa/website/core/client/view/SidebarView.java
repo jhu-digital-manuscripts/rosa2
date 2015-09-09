@@ -25,6 +25,8 @@ public interface SidebarView extends IsWidget {
      */
     void selectItem(String item);
 
+    void addHelpLink(String url);
+
     /**
      * @param nav_links map defining the LINK NAME to LINK TARGET
      */

@@ -65,6 +65,7 @@ public class SidebarPresenter implements SidebarView.Presenter {
         nav_links.put(labels.characterNames(), "chars");
 
         view.setSiteNavigationLinks(nav_links);
+        view.addHelpLink(RosaHistoryConfig.getHelpUrl());
     }
 
     private void addBookSelectLinks() {
@@ -86,6 +87,7 @@ public class SidebarPresenter implements SidebarView.Presenter {
     private void addProjectLinks() {
         Map<String, String> links = new HashMap<>();
 
+        links.put(labels.blog(), "http://romandelarose.blogspot.com");
         links.put(labels.termsAndConditions(), "terms");
         links.put(labels.partners(), "partners");
         links.put(labels.projectHistory(), "project");

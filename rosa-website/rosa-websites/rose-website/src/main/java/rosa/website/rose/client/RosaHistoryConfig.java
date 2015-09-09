@@ -1,5 +1,7 @@
 package rosa.website.rose.client;
 
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.resources.client.ExternalTextResource;
 import com.google.gwt.resources.client.TextResource;
 import rosa.website.model.csv.CSVType;
@@ -18,6 +20,11 @@ public class RosaHistoryConfig {
 
     private static Set<String> htmlPages;
     private static Set<String> csvPages;
+
+    public static String getHelpUrl() {
+        String locale = LocaleInfo.getCurrentLocale().getLocaleName();
+        return GWT.getHostPageBaseURL() + "help/help_" + locale + ".html";
+    }
 
     /**
      * @param history history token
