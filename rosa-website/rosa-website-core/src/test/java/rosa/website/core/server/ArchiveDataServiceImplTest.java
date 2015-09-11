@@ -40,9 +40,12 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
         IllustrationTitleCSV ills = service.loadIllustrationTitles(VALID_COLLECTION);
         assertNotNull("No illustration titles CSV found.", ills);
 
-        assertEquals("Unexpected number of illustrations found.", 321, ills.size());
-        assertEquals("Exactly '210' illustrations should not be present in test data.", 210,
-                countIllustrationsNotInTestData(ills));
+        // Only those illustrations that appear in Ludwig will show up in this list
+        assertEquals("Unexpected number of illustrations found.", 111, ills.size());
+
+        // Illustrations not included simply do not appear.
+//        assertEquals("Exactly '210' illustrations should not be present in test data.", 210,
+//                countIllustrationsNotInTestData(ills));
         assertTrue("Illustrations should appear no more than twice in the test data.",
                 illustrationsAppearNoMoreThanTwice(ills));
     }

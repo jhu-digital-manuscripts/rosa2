@@ -332,11 +332,13 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                 average_position = positions.get(title) == null ? -1 : sum(positions.get(title)) / frequency;
             }
 
-            entries.add(new CSVRow(
-                    String.valueOf(average_position),
-                    title,
-                    String.valueOf(frequency)
-            ));
+            if (average_position != -1) {
+                entries.add(new CSVRow(
+                        String.valueOf(average_position),
+                        title,
+                        String.valueOf(frequency)
+                ));
+            }
         }
 
         // Sort entries by location
@@ -701,14 +703,17 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             // If page is not found among transcriptions
             if (book.getTranscription().getXML().contains(image.getName()) && hasAtLeastOne) {
                 // TODO should have transcriptions in the model already split? done on model load
-//                    !transcriptionMap.containsKey(image.getName()) && hasAtLeastOne) {
                 return DataStatus.PARTIAL;
             }
 
             hasAtLeastOne = true;
         }
 
-        return DataStatus.FULL;
+        if (hasAtLeastOne) {
+            return DataStatus.FULL;
+        } else {
+            return DataStatus.NONE;
+        }
     }
 
     /**
