@@ -696,17 +696,12 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             return DataStatus.NONE;
         }
 
-        Map<String, String> transcriptionMap = TranscriptionSplitter.split(
-                book.getTranscription().getXML()
-        );
-        if (transcriptionMap == null) {
-            return DataStatus.NONE;
-        }
-
         boolean hasAtLeastOne = false;
         for (BookImage image : book.getImages()) {
             // If page is not found among transcriptions
-            if (!transcriptionMap.containsKey(image.getName()) && hasAtLeastOne) {
+            if (book.getTranscription().getXML().contains(image.getName()) && hasAtLeastOne) {
+                // TODO should have transcriptions in the model already split? done on model load
+//                    !transcriptionMap.containsKey(image.getName()) && hasAtLeastOne) {
                 return DataStatus.PARTIAL;
             }
 
