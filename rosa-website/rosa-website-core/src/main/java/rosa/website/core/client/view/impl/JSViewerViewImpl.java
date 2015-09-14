@@ -66,6 +66,8 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
         root.add(transcriptionPanel);
 
         readerToolbar = new FlowPanel();
+        readerToolbar.addStyleName("float-left");
+        readerToolbar.setWidth("100%");
 
         Labels labels = Labels.INSTANCE;
         first = new Button(labels.first());
@@ -87,6 +89,8 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
         root.add(readerToolbar);
 
         permissionPanel = new SimplePanel();
+        permissionPanel.addStyleName("float-left");
+        permissionPanel.setWidth("100%");
         root.add(permissionPanel);
 
         initWidget(root);
@@ -109,7 +113,8 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
         }
 
         codexView = new CodexView(imageServer, model, controller, (ScrollPanel) this.getParent());
-        root.insert(codexView, 0);
+        codexView.addStyleName("float-left");
+        root.insert(codexView, 1);
         setViewerMode(mode);
 
         Scheduler.get().scheduleDeferred(new ScheduledCommand() {
