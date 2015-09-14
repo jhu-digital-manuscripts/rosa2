@@ -4,11 +4,13 @@ import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.Timer;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RequiresResize;
+import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import rosa.website.core.client.view.FSIViewerView;
@@ -164,11 +166,21 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
 
         int width = getParent().getOffsetWidth() - 100
                 - (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
-        int height = getParent().getOffsetHeight()
-                - 30        // Content area padding. Shouldnt really be here....
-                - header.getOffsetHeight()
-                - permissionPanel.getOffsetHeight() - 32    // Subtract constant for top/bottom margins on probable <p> in permissions
+
+        int height = getParent().getOffsetHeight() - 30
                 - viewerControlsWidget.getOffsetHeight();
+        int scrollOffset = 0;
+        if (Window.getClientHeight() > 768) {
+            height = height
+                    - header.getOffsetHeight()
+                    - permissionPanel.getOffsetHeight() - 32;    // Subtract constant for top/bottom margins on probable <p> in permissions
+        } else {
+            scrollOffset = header.getOffsetHeight() + 15;
+        }
+
+        if (getParent() instanceof ScrollPanel) {
+            ((ScrollPanel) getParent()).setVerticalScrollPosition(scrollOffset);
+        }
 
         flashViewer.resize(width + "px", height + "px");
     }
