@@ -165,6 +165,8 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
         int width = getParent().getOffsetWidth() - 100
                 - (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
         int height = getParent().getOffsetHeight()
+                - 30        // Content area padding. Shouldnt really be here....
+                - header.getOffsetHeight()
                 - permissionPanel.getOffsetHeight() - 32    // Subtract constant for top/bottom margins on probable <p> in permissions
                 - viewerControlsWidget.getOffsetHeight();
 

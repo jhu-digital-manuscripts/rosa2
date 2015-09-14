@@ -219,6 +219,7 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
         int width = getOffsetWidth() - 30
                 - (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
         int height = getOffsetHeight() - 30
+                - header.getOffsetHeight()
                 - permissionPanel.getOffsetHeight()
                 - readerToolbar.getOffsetHeight();
 
