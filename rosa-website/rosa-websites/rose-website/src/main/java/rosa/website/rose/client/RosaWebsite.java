@@ -8,6 +8,7 @@ import com.google.gwt.dom.client.Style;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
@@ -58,6 +59,14 @@ public class RosaWebsite implements EntryPoint {
         GWT.setUncaughtExceptionHandler(new GWT.UncaughtExceptionHandler() {
             @Override
             public void onUncaughtException(Throwable e) {
+                Window.alert(
+                        "An error has occurred. Please report this to contactus@romandelarose.org\n"
+                        + "Any information that would let us recreate the error would be helpful to include, "
+                        + "such as what you were doing immediately before the error, your browser and "
+                        + "browser version, the URL you were visiting, and/or your operating system and "
+                        + "operating system version.\n"
+                        + "Internal error: " + e.getMessage()
+                );
                 logger.log(Level.SEVERE, "Uncaught exception.", e);
                 placeController.goTo(default_place);
             }

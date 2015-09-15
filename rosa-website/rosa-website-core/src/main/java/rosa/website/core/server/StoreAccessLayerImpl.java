@@ -47,7 +47,9 @@ public class StoreAccessLayerImpl implements StoreAccessLayer {
         if (COLLECTION_CACHE.size() >= MAX_CACHE_SIZE) {
             COLLECTION_CACHE.clear();
         }
-        COLLECTION_CACHE.putIfAbsent(collection, col);
+        if (collection != null && col != null) {
+            COLLECTION_CACHE.putIfAbsent(collection, col);
+        }
 
         return col;
     }
@@ -65,7 +67,10 @@ public class StoreAccessLayerImpl implements StoreAccessLayer {
         if (BOOK_CACHE.size() >= MAX_CACHE_SIZE) {
             BOOK_CACHE.clear();
         }
-        BOOK_CACHE.putIfAbsent(key, b);
+
+        if (b != null) {
+            BOOK_CACHE.putIfAbsent(key, b);
+        }
 
         return b;
     }

@@ -11,6 +11,8 @@ import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
+import com.google.gwt.place.shared.PlaceController;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.BookImage;
@@ -20,6 +22,7 @@ import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.event.SidebarItemSelectedEvent;
+import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.core.client.widget.TranscriptionViewer;
 import rosa.website.core.shared.ImageNameParser;
@@ -74,6 +77,7 @@ public class JSViewerActivity implements Activity {
     private JSViewerView view;
     private ArchiveDataServiceAsync archiveService;
     private final com.google.web.bindery.event.shared.EventBus eventBus;
+    private final PlaceController placeController;
 
     private final String collection;
     private final String fsi_share;
@@ -112,6 +116,7 @@ public class JSViewerActivity implements Activity {
         this.view = clientFactory.jsViewerView();
         this.archiveService = clientFactory.archiveDataService();
         this.eventBus = clientFactory.eventBus();
+        this.placeController = clientFactory.placeController();
         this.book = place.getBook();
         this.collection = clientFactory.context().getCollection();
         this.fsi_share = WebsiteConfig.INSTANCE.fsiShare();
@@ -153,6 +158,12 @@ public class JSViewerActivity implements Activity {
 
                     @Override
                     public void onSuccess(FSIViewerModel result) {
+                        if (result == null) {
+                            Window.alert("An error has occurred, Book not found. [" + book + "]");
+                            placeController.goTo(new HTMLPlace(WebsiteConfig.INSTANCE.defaultPage()));
+                            return;
+                        }
+
                         model = result;
 
                         if (starterPage != null && !starterPage.isEmpty()) {
@@ -164,7 +175,9 @@ public class JSViewerActivity implements Activity {
 
                         createJSviewer();
 
-                        view.setPermissionStatement(result.getPermission().getPermission());
+                        if (result.getPermission() != null && result.getPermission().getPermission() != null) {
+                            view.setPermissionStatement(result.getPermission().getPermission());
+                        }
                         LoadingPanel.INSTANCE.hide();
                     }
                 });

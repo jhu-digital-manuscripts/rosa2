@@ -206,7 +206,10 @@ public class FSIViewerActivity implements Activity {
                     @Override
                     public void onSuccess(FSIViewerModel result) {
                         model = result;
-                        view.setPermissionStatement(result.getPermission().getPermission());
+
+                        if (result.getPermission() != null && result.getPermission().getPermission() != null) {
+                            view.setPermissionStatement(result.getPermission().getPermission());
+                        }
                         Scheduler.get().scheduleDeferred(resizeCommand);
 
                         if (starterPage != null && !starterPage.isEmpty()) {
