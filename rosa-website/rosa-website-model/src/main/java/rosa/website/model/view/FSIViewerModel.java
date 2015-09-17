@@ -28,7 +28,6 @@ public class FSIViewerModel implements Serializable {
         private ImageList images;
         private Map<String, String> transcriptionMap;
         private IllustrationTagging illustrationTagging;
-        private Map<String, String> illustrationTitles;
         private NarrativeTagging narrativeTagging;
         private NarrativeSections narrativeSections;
 
@@ -59,11 +58,6 @@ public class FSIViewerModel implements Serializable {
             return this;
         }
 
-        public Builder illustrationTitles(Map<String, String> illustrationTitles) {
-            this.illustrationTitles = illustrationTitles;
-            return this;
-        }
-
         public Builder narrativeTagging(NarrativeTagging narrativeTagging) {
             this.narrativeTagging = narrativeTagging;
             return this;
@@ -76,7 +70,7 @@ public class FSIViewerModel implements Serializable {
 
         public FSIViewerModel build() {
             return new FSIViewerModel(title, permission, images, transcriptionMap, illustrationTagging,
-                    illustrationTitles, narrativeTagging, narrativeSections);
+                     narrativeTagging, narrativeSections);
         }
     }
 
@@ -85,7 +79,6 @@ public class FSIViewerModel implements Serializable {
     private ImageList images;
     private Map<String, String> transcriptionMap;
     private IllustrationTagging illustrationTagging;
-    private Map<String, String> illustrationTitles;
     private NarrativeTagging narrativeTagging;
     private NarrativeSections narrativeSections;
 
@@ -102,19 +95,17 @@ public class FSIViewerModel implements Serializable {
      * @param images image list
      * @param transcriptionMap transcriptions, separated by page, if available
      * @param illustrationTagging illustration tagging
-     * @param illustrationTitles illustration titles
      * @param narrativeTagging narrative tagging
      * @param narrativeSections narrative sections
      */
     FSIViewerModel(String title, Permission permission, ImageList images, Map<String, String> transcriptionMap,
-                          IllustrationTagging illustrationTagging, Map<String, String> illustrationTitles,
-                          NarrativeTagging narrativeTagging, NarrativeSections narrativeSections) {
+                          IllustrationTagging illustrationTagging, NarrativeTagging narrativeTagging,
+                          NarrativeSections narrativeSections) {
         this.title = title;
         this.permission = permission;
         this.images = images;
         this.transcriptionMap = transcriptionMap;
         this.illustrationTagging = illustrationTagging;
-        this.illustrationTitles = illustrationTitles;
         this.narrativeTagging = narrativeTagging;
         this.narrativeSections = narrativeSections;
 
@@ -170,10 +161,6 @@ public class FSIViewerModel implements Serializable {
         return illustrationTagging;
     }
 
-    public Map<String, String> getIllustrationTitles() {
-        return illustrationTitles;
-    }
-
     public NarrativeTagging getNarrativeTagging() {
         return narrativeTagging;
     }
@@ -218,6 +205,8 @@ public class FSIViewerModel implements Serializable {
 
         FSIViewerModel that = (FSIViewerModel) o;
 
+        if (needsRV != that.needsRV) return false;
+        if (title != null ? !title.equals(that.title) : that.title != null) return false;
         if (permission != null ? !permission.equals(that.permission) : that.permission != null) return false;
         if (images != null ? !images.equals(that.images) : that.images != null) return false;
         if (transcriptionMap != null ? !transcriptionMap.equals(that.transcriptionMap) : that.transcriptionMap != null)
@@ -232,24 +221,28 @@ public class FSIViewerModel implements Serializable {
 
     @Override
     public int hashCode() {
-        int result = permission != null ? permission.hashCode() : 0;
+        int result = title != null ? title.hashCode() : 0;
+        result = 31 * result + (permission != null ? permission.hashCode() : 0);
         result = 31 * result + (images != null ? images.hashCode() : 0);
         result = 31 * result + (transcriptionMap != null ? transcriptionMap.hashCode() : 0);
         result = 31 * result + (illustrationTagging != null ? illustrationTagging.hashCode() : 0);
         result = 31 * result + (narrativeTagging != null ? narrativeTagging.hashCode() : 0);
         result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
+        result = 31 * result + (needsRV ? 1 : 0);
         return result;
     }
 
     @Override
     public String toString() {
         return "FSIViewerModel{" +
-                "permission=" + permission +
+                "title='" + title + '\'' +
+                ", permission=" + permission +
                 ", images=" + images +
                 ", transcriptionMap=" + transcriptionMap +
                 ", illustrationTagging=" + illustrationTagging +
                 ", narrativeTagging=" + narrativeTagging +
                 ", narrativeSections=" + narrativeSections +
+                ", needsRV=" + needsRV +
                 '}';
     }
 }

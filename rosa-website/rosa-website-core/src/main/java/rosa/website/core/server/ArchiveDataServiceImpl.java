@@ -444,29 +444,45 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             return null;
         }
 
-        Map<String, String> illusTitles = new HashMap<>();
-        if (col.getIllustrationTitles() != null) {
-            IllustrationTitles titles = col.getIllustrationTitles();
-            for (String id : titles.getAllIds()) {
-                illusTitles.put(id, titles.getTitleById(id));
+        // Come up with human readable book title
+        String bookTitle;
+        BookMetadata metadata = b.getBookMetadata(language);
+        if (metadata != null) {
+            bookTitle = metadata.getRepository() + ", " + metadata.getCommonName();
+        } else {
+            bookTitle = b.getId();
+        }
+
+        IllustrationTitles allTitles = col.getIllustrationTitles();
+        CharacterNames allNames = col.getCharacterNames();
+        IllustrationTagging illustrationTagging = b.getIllustrationTagging();
+        for (Illustration ill : illustrationTagging) {
+
+            // Replace all character IDs with character names in appropriate language
+            String[] chars = ill.getCharacters();
+            for (int i = 0; i < chars.length; i++) {
+                String name = allNames.getNameInLanguage(chars[i], language);
+                if (name != null && !name.isEmpty()) {
+                    chars[i] = name;
+                }
+            }
+
+            // Replace all illustration title IDs with illustration title
+            String[] titles = ill.getTitles();
+            for (int i = 0; i < titles.length; i++) {
+                String title = allTitles.getTitleById(titles[i]);
+                if (title != null && !title.isEmpty()) {
+                    titles[i] = title;
+                }
             }
         }
 
-        String title;
-        BookMetadata metadata = b.getBookMetadata(language);
-        if (metadata != null) {
-            title = metadata.getRepository() + ", " + metadata.getCommonName();
-        } else {
-            title = b.getId();
-        }
-
         FSIViewerModel model = FSIViewerModel.Builder.newBuilder()
-                .title(title)
+                .title(bookTitle)
                 .permission(b.getPermission(language))
                 .images(b.getImages())
                 .transcriptions(TranscriptionSplitter.split(b.getTranscription()))
                 .illustrationTagging(b.getIllustrationTagging())
-                .illustrationTitles(illusTitles)
                 .narrativeTagging(b.getManualNarrativeTagging() == null ?
                         b.getAutomaticNarrativeTagging() : b.getManualNarrativeTagging())
                 .narrativeSections(col.getNarrativeSections())

@@ -445,7 +445,7 @@ public class JSViewerActivity implements Activity {
                 // Display illustration descriptions
 
                 view.showExtra(TranscriptionViewer.createIllustrationTaggingViewer(
-                        selectedPages, model.getIllustrationTitles(), model.getIllustrationTagging()));
+                        selectedPages, model.getIllustrationTagging()));
                 break;
             case NARRATIVE:
                 view.setSelectedShowExtra(Labels.INSTANCE.narrativeSections());

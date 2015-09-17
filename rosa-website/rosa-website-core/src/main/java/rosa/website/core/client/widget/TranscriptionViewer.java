@@ -87,7 +87,7 @@ public class TranscriptionViewer {
      * @param illustrations illustration tagging data
      * @return a Widget displaying the relevant illustration data
      */
-    public static TabLayoutPanel createIllustrationTaggingViewer(String[] selectedPages, Map<String, String> titles,
+    public static TabLayoutPanel createIllustrationTaggingViewer(String[] selectedPages,
                                                                  IllustrationTagging illustrations) {
         if (selectedPages == null || selectedPages.length == 0) {
             return null;
@@ -99,7 +99,7 @@ public class TranscriptionViewer {
         for (String page : selectedPages) {
             int count = 1;
 
-            for (String content : getIllustrationDescriptions(page, titles, illustrations)) {
+            for (String content : getIllustrationDescriptions(page, illustrations)) {
                 String tabLabel = page + " " + count++;
                 display.add(new ScrollPanel(new HTML(content)), tabLabel);
             }
@@ -228,8 +228,7 @@ public class TranscriptionViewer {
      * @param illustrations Illustration Tagging
      * @return array of Strings of HTML content
      */
-    private static String[] getIllustrationDescriptions(String page, Map<String, String> titles,
-                                                        IllustrationTagging illustrations) {
+    private static String[] getIllustrationDescriptions(String page, IllustrationTagging illustrations) {
         List<String> descriptions = new ArrayList<>();
 
         for (int i = 0; i < illustrations.size(); i++) {
@@ -239,15 +238,7 @@ public class TranscriptionViewer {
                     ImageNameParser.toStandardName(page))) {
                 StringBuilder sb = new StringBuilder("<p>");
 
-                // Substitute numeric title IDs with actual titles
-                StringBuilder titles_sb = new StringBuilder();
-                for (String title : ill.getTitles()) {
-                    if (titles.containsKey(title)) {
-                        titles_sb.append(titles.get(title));
-                        titles_sb.append(' ');
-                    }
-                }
-                addIllustrationKeywords(sb, Labels.INSTANCE.illustrationTitles(), titles_sb.toString().trim());
+                addIllustrationKeywords(sb, Labels.INSTANCE.illustrationTitles(), ill.getTitles());
                 if (isNotEmpty(ill.getTextualElement())) {
                     addIllustrationKeywords(sb, Labels.INSTANCE.textualElements(), ill.getTextualElement());
                 }
