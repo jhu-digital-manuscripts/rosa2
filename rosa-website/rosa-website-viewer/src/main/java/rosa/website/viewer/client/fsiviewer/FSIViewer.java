@@ -143,6 +143,7 @@ public class FSIViewer extends Composite {
     public void fsiViewerGoToImage(int image) {
         if (type == FSIViewerType.PAGES) {
             setVariable("newImageIndex", String.valueOf(image), FSIViewerType.PAGES.getViewerId());
+            // TODO During above step, something goes wrong. Happens during the SetVariable call
             setVariable("FSICMD", "GotoPage", FSIViewerType.PAGES.getViewerId());
         }
     }

@@ -289,7 +289,7 @@ public class FSIViewerActivity implements Activity {
                     public void onKeyDown(KeyDownEvent event) {
                         if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
                             String tryThis = view.getGotoText();
-                            if (isNumeric(tryThis)) {
+                            if (needsRV(tryThis)) {
                                 tryThis += "r";
                             }
 
@@ -323,7 +323,7 @@ public class FSIViewerActivity implements Activity {
                     public void onKeyDown(KeyDownEvent event) {
                         if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
                             String tryThis = view.getGotoText();
-                            if (isNumeric(tryThis)) {
+                            if (needsRV(tryThis)) {
                                 tryThis += "r";
                             }
 
@@ -468,7 +468,8 @@ public class FSIViewerActivity implements Activity {
         if (book != null && model.getImages() != null && model.getImages().getImages() != null) {
             for (int i = 0; i < model.getImages().getImages().size(); i++) {
                 BookImage image = model.getImages().getImages().get(i);
-                if (image.getName().equals(name) || image.getId().equals(name)) {
+                if (image.getName().equalsIgnoreCase(name)
+                        || image.getId().equalsIgnoreCase(name)) {
                     return i;
                 }
             }
@@ -514,7 +515,8 @@ public class FSIViewerActivity implements Activity {
         return result;
     }
 
-    private native boolean isNumeric(String str) /*-{
-        return !isNaN(str);
-    }-*/;
+    private boolean needsRV(String str) {
+        return model.imagesNeedRV() &&
+                !(str.endsWith("r") || str.endsWith("R") || str.endsWith("v") || str.endsWith("V"));
+    }
 }

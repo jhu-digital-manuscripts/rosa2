@@ -214,9 +214,10 @@ public class JSViewerActivity implements Activity {
         });
     }
 
-    private native boolean isNumeric(String str) /*-{
-        return !isNaN(str);
-    }-*/;
+    private boolean needsRV(String str) {
+        return model.imagesNeedRV() &&
+                !(str.endsWith("r") || str.endsWith("R") || str.endsWith("v") || str.endsWith("V"));
+    }
 
     private void setupView(final CodexModel codexModel) {
         final CodexController controller = new SimpleCodexController(codexModel);
@@ -257,7 +258,7 @@ public class JSViewerActivity implements Activity {
             public void onKeyDown(KeyDownEvent event) {
                 if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
                     String tryThis = view.getGotoText();
-                    if (isNumeric(tryThis)) {
+                    if (needsRV(tryThis)) {
                         tryThis += "r";
                     }
 

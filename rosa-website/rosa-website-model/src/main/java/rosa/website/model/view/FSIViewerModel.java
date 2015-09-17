@@ -1,5 +1,6 @@
 package rosa.website.model.view;
 
+import rosa.archive.model.BookImage;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.ImageList;
@@ -88,6 +89,8 @@ public class FSIViewerModel implements Serializable {
     private NarrativeTagging narrativeTagging;
     private NarrativeSections narrativeSections;
 
+    private boolean needsRV;
+
     /** No-arg constructor for GWT RPC serialization */
     @SuppressWarnings("unused")
     FSIViewerModel() {}
@@ -114,6 +117,17 @@ public class FSIViewerModel implements Serializable {
         this.illustrationTitles = illustrationTitles;
         this.narrativeTagging = narrativeTagging;
         this.narrativeSections = narrativeSections;
+
+        this.needsRV = false;
+        if (images != null && images.getImages() != null) {
+            for (BookImage img : images.getImages()) {
+                String name = img.getName();
+                if (name.endsWith("r") || name.endsWith("R") || name.endsWith("v") || name.endsWith("V")) {
+                    this.needsRV = true;
+                    break;
+                }
+            }
+        }
     }
 
     public String getTitle() {
@@ -126,6 +140,22 @@ public class FSIViewerModel implements Serializable {
 
     public ImageList getImages() {
         return images;
+    }
+
+    /**
+     * Manuscripts will often name pages according to folio number plus a side
+     * designation, 'r' or 'v' standing for recto or verso of the folio. This is
+     * not always the case, however. Some books will use simple page numbers, like
+     * those found in a book, where each page side will represent distinct numbers.
+     *
+     * First four pages:
+     * EX1 - 1r, 1v, 2r, 2v
+     * EX2 - 1, 2, 3, 4
+     *
+     * @return does this book require page names that end in 'r' or 'v'?
+     */
+    public boolean imagesNeedRV() {
+        return needsRV;
     }
 
     public String getTranscription(String page) {
