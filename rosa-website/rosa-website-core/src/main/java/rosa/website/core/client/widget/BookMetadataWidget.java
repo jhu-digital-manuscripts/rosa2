@@ -9,13 +9,16 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Widget;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.BookDescriptionView.Presenter;
+import rosa.website.model.select.DataStatus;
+import rosa.website.model.view.BookDescriptionViewModel;
 
 public class BookMetadataWidget extends Composite {
     private static final Label EMPTY_LABEL = new Label("");
     private Presenter presenter;
 
-    private BookMetadata metadata;
+    private BookDescriptionViewModel model;
 
     private FlowPanel root;
 
@@ -40,11 +43,8 @@ public class BookMetadataWidget extends Composite {
         this.presenter = presenter;
     }
 
-    /**
-     * @param metadata structured metadata describing a book
-     */
-    public void setData(BookMetadata metadata) {
-        this.metadata = metadata;
+    public void setData(BookDescriptionViewModel model) {
+        this.model = model;
         draw();
     }
 
@@ -60,43 +60,46 @@ public class BookMetadataWidget extends Composite {
 
     private void draw() {
         metadataTable.clear();
+        BookMetadata metadata = model.getMetadata();
         if (metadata == null) {
             return;
         }
 
         if (isNotEmpty(metadata.getCurrentLocation())) {
-            metadataTable.setText(0, 0, "Current Location:");
+            metadataTable.setText(0, 0, Labels.INSTANCE.currentLocation());
             metadataTable.setText(0, 1, metadata.getCurrentLocation());
         }
 
         if (metadata.getNumberOfPages() != -1) {
-            metadataTable.setText(0, 2, "Folios:");
+            metadataTable.setText(0, 2, Labels.INSTANCE.folios());
             metadataTable.setText(0, 3, String.valueOf(metadata.getNumberOfPages()));
         }
 
         if (isNotEmpty(metadata.getType())) {
-            metadataTable.setText(1, 0, "Type:");
+            metadataTable.setText(1, 0, Labels.INSTANCE.type());
             metadataTable.setText(1, 1, metadata.getType());
         }
 
         if (metadata.getNumberOfIllustrations() != -1) {
-            metadataTable.setText(1, 2, "Illustrations:");
+            metadataTable.setText(1, 2, Labels.INSTANCE.illustrations());
             metadataTable.setText(1, 3, String.valueOf(metadata.getNumberOfIllustrations()));
         }
 
         if (isNotEmpty(metadata.getDate())) {
-            metadataTable.setText(2, 0, "Date:");
+            metadataTable.setText(2, 0, Labels.INSTANCE.date());
             metadataTable.setText(2, 1, metadata.getDate());
         }
 
-        // TODO transcriptions
+        metadataTable.setText(2, 2, Labels.INSTANCE.transcription());
+        metadataTable.setText(2, 3, getStatusString(model.getTranscriptionStatus()));
 
         if (isNotEmpty(metadata.getOrigin())) {
-            metadataTable.setText(3, 0, "Origin:");
+            metadataTable.setText(3, 0, Labels.INSTANCE.origin());
             metadataTable.setText(3, 1, metadata.getOrigin());
         }
 
-        // TODO illustration description
+        metadataTable.setText(3, 2, Labels.INSTANCE.illustrationDescription());
+        metadataTable.setText(3, 3, getStatusString(model.getIllustrationDescriptionStatus()));
 
         metadataTable.addStyleName("BookDescriptionData");
         for (int i = 0; i < metadataTable.getRowCount(); i++) {
@@ -189,4 +192,20 @@ public class BookMetadataWidget extends Composite {
     private native int parseInt(String str) /*-{
         return parseInt(str);
     }-*/;
+
+    private String getStatusString(DataStatus status) {
+        if (status == null) {
+            status = DataStatus.NONE;
+        }
+
+        switch (status) {
+            default:
+            case NONE:
+                return Labels.INSTANCE.none();
+            case PARTIAL:
+                return Labels.INSTANCE.partial();
+            case FULL:
+                return Labels.INSTANCE.complete();
+        }
+    }
 }

@@ -7,6 +7,7 @@ import rosa.archive.model.BookMetadata;
 import rosa.website.core.client.view.BookDescriptionView;
 import rosa.website.core.client.widget.BookDescriptionWidget;
 import rosa.website.core.client.widget.BookMetadataWidget;
+import rosa.website.model.view.BookDescriptionViewModel;
 
 public class BookDescriptionViewImpl extends Composite implements BookDescriptionView {
 
@@ -32,16 +33,13 @@ public class BookDescriptionViewImpl extends Composite implements BookDescriptio
     }
 
     @Override
-    public void setMetadata(BookMetadata metadata) {
-        metadataWidget.setData(metadata);
-    }
-
-    @Override
-    public void setDescription(BookDescription description) {
-        if (description == null) {
-            return;
+    public void setModel(BookDescriptionViewModel model) {
+        if (model.getMetadata() != null) {
+            metadataWidget.setData(model);
         }
-        descriptionWidget.setDescription(description.getXML());
+        if (model.getProse() != null && model.getProse().getXML() != null) {
+            descriptionWidget.setDescription(model.getProse().getXML());
+        }
     }
 
     @Override

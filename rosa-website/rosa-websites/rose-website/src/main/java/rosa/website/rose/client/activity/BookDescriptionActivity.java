@@ -88,8 +88,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
                     public void onSuccess(BookDescriptionViewModel result) {
                         model = result;
 
-                        view.setMetadata(result.getMetadata());
-                        view.setDescription(result.getProse());
+                        view.setModel(result);
                         LoadingPanel.INSTANCE.hide();
                     }
                 });

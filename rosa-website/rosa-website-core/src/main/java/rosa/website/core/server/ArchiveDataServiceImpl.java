@@ -511,7 +511,9 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         BookDescriptionViewModel model = new BookDescriptionViewModel(
                 b.getBookDescription(language),
                 b.getBookMetadata(language),
-                b.getImages()
+                b.getImages(),
+                getTranscriptionStatus(b),
+                getIllusDescStatus(b)
         );
         updateCache(key, model);
 
@@ -716,13 +718,18 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         boolean hasAtLeastOne = false;
         for (BookImage image : book.getImages()) {
-            // If page is not found among transcriptions
-            if (book.getTranscription().getXML().contains(image.getName()) && hasAtLeastOne) {
-                // TODO should have transcriptions in the model already split? done on model load
-                return DataStatus.PARTIAL;
+            if (image.getLocation() == BookImageLocation.BODY_MATTER) {
+                // If page is not found among transcriptions
+                if (!hasAtLeastOne && book.getTranscription().getXML().contains(image.getName())) {
+                    // If there exists transcription for this page, mark that at least
+                    // one transcription exists
+                    hasAtLeastOne = true;
+                } else if (hasAtLeastOne && !book.getTranscription().getXML().contains(image.getName())) {
+                    // If at least one page has a transcription, but none was found
+                    // for this page
+                    return DataStatus.PARTIAL;
+                }
             }
-
-            hasAtLeastOne = true;
         }
 
         if (hasAtLeastOne) {
@@ -730,6 +737,26 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         } else {
             return DataStatus.NONE;
         }
+    }
+
+    /**
+     * Check the whether illustration descriptions are available for
+     * some, all, or no illustrations in a book.
+     *
+     * Illustration tagging is currently the only way to determine that
+     * an illustration is present in a book. It must be assumed that
+     * they are complete, as there is no mechanism for telling otherwise.
+     *
+     * @param book book object
+     * @return what is the status of illustration description coverage
+     */
+    private DataStatus getIllusDescStatus(Book book) {
+        if (book == null || book.getIllustrationTagging() == null
+                || book.getImages() == null) {
+            return DataStatus.NONE;
+        }
+
+        return DataStatus.FULL;
     }
 
     /**

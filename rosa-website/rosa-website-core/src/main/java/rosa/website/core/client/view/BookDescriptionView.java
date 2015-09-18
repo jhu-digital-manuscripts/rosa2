@@ -3,6 +3,7 @@ package rosa.website.core.client.view;
 import com.google.gwt.user.client.ui.IsWidget;
 import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookMetadata;
+import rosa.website.model.view.BookDescriptionViewModel;
 
 public interface BookDescriptionView extends IsWidget{
     interface Presenter {
@@ -23,7 +24,6 @@ public interface BookDescriptionView extends IsWidget{
      * Clear this view.
      */
     void clear();
-    void setMetadata(BookMetadata metadata);
-    void setDescription(BookDescription description);
+    void setModel(BookDescriptionViewModel model);
     void setPresenter(Presenter presenter);
 }
