@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import rosa.archive.core.BaseArchiveTest;
-import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
@@ -24,8 +23,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyList;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.when;
 
@@ -251,5 +248,24 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
             assertNotNull("Data list cannot be NULL.", data.asList());
             assertEquals("Unexpected number of rows found.", 0, data.asList().size());
         }
+    }
+
+    /**
+     * Make sure that the service call goes through with no error when the book
+     * has no illustration tagging.
+     *
+     * {@link ArchiveDataService#loadFSIViewerModel(String, String, String)}
+     *
+     * @throws IOException .
+     */
+    @Test
+    public void getFSIViewerModelWithNoIllustrations() throws IOException {
+        Book fakeBook = loadValidLudwigXV7();
+        fakeBook.setIllustrationTagging(null);
+
+        when(mockStore.collection(anyString())).thenReturn(loadValidCollection());
+        when(mockStore.book(anyString(), anyString())).thenReturn(fakeBook);
+
+        service.loadFSIViewerModel("any collection", "any book", "en");
     }
 }

@@ -456,23 +456,26 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         IllustrationTitles allTitles = col.getIllustrationTitles();
         CharacterNames allNames = col.getCharacterNames();
         IllustrationTagging illustrationTagging = b.getIllustrationTagging();
-        for (Illustration ill : illustrationTagging) {
 
-            // Replace all character IDs with character names in appropriate language
-            String[] chars = ill.getCharacters();
-            for (int i = 0; i < chars.length; i++) {
-                String name = allNames.getNameInLanguage(chars[i], language);
-                if (name != null && !name.isEmpty()) {
-                    chars[i] = name;
+        if (illustrationTagging != null && allTitles != null && allNames != null) {
+            for (Illustration ill : illustrationTagging) {
+
+                // Replace all character IDs with character names in appropriate language
+                String[] chars = ill.getCharacters();
+                for (int i = 0; i < chars.length; i++) {
+                    String name = allNames.getNameInLanguage(chars[i], language);
+                    if (name != null && !name.isEmpty()) {
+                        chars[i] = name;
+                    }
                 }
-            }
 
-            // Replace all illustration title IDs with illustration title
-            String[] titles = ill.getTitles();
-            for (int i = 0; i < titles.length; i++) {
-                String title = allTitles.getTitleById(titles[i]);
-                if (title != null && !title.isEmpty()) {
-                    titles[i] = title;
+                // Replace all illustration title IDs with illustration title
+                String[] titles = ill.getTitles();
+                for (int i = 0; i < titles.length; i++) {
+                    String title = allTitles.getTitleById(titles[i]);
+                    if (title != null && !title.isEmpty()) {
+                        titles[i] = title;
+                    }
                 }
             }
         }

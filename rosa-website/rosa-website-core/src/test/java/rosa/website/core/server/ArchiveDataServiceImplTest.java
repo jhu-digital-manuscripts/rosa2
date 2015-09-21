@@ -137,16 +137,6 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
         assertEquals("Unexpected number of pages found.", "211", row.getValue(BookDataCSV.Column.NUM_FOLIOS));
     }
 
-    private int countIllustrationsNotInTestData(IllustrationTitleCSV ills) {
-        int count = 0;
-        for (CSVRow entry : ills) {
-            if (entry.getValue(IllustrationTitleCSV.Column.LOCATION).equals("-1")) {
-                count++;
-            }
-        }
-        return count;
-    }
-
     /**
      * Illustrations can appear more than once if they have multiple entries in the
      * book collection's 'illustration_titles.csv'
