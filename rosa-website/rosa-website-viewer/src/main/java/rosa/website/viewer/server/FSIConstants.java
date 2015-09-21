@@ -26,5 +26,5 @@ public interface FSIConstants {
     String ATTR_VALUE = "value";
     String ATTR_LABEL = "label";
 
-    String ALLOW_DOMAINS = "localhost,romandelarose.org,www.library.jhu.edu,*.library.jhu.edu";
+    String ALLOW_DOMAINS = "localhost,romandelarose.org,rosetest.library.jhu.edu";
 }
