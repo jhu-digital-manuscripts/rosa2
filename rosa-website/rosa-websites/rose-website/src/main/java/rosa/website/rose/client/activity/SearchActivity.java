@@ -162,7 +162,7 @@ public class SearchActivity implements Activity {
         this.bookDataCSV = data;
 
         List<BookInfo> books = new ArrayList<>();
-        books.add(new BookInfo("Restrict by book:", null));
+        books.add(new BookInfo(Labels.INSTANCE.restrictByBook(), null));
         for (CSVRow row : data) {
             books.add(new BookInfo(row.getValue(Column.COMMON_NAME), row.getValue(Column.ID)));
         }
