@@ -17,13 +17,19 @@ public class SearchMatchCell extends AbstractCell<SearchMatchModel> {
             sb.appendHtmlConstant("\">");
         }
 
-        sb.appendHtmlConstant("<table>");
+        sb.appendHtmlConstant("<table><tr><td>");
 
-        sb.appendHtmlConstant("<tr><td><a href=\"");
-        sb.appendEscaped(value.getTargetUrl());
-        sb.appendHtmlConstant("\">");
-        sb.appendEscaped(value.getDisplay());
-        sb.appendHtmlConstant("</a></td></tr>");
+        if (value.getTargetUrl() != null && !value.getTargetUrl().isEmpty()) {
+            sb.appendHtmlConstant("<a href=\"");
+            sb.appendEscaped(value.getTargetUrl());
+            sb.appendHtmlConstant("\">");
+            sb.appendEscaped(value.getDisplay());
+            sb.appendHtmlConstant("</a>");
+        } else {
+            sb.appendEscaped(value.getDisplay());
+        }
+
+        sb.appendHtmlConstant("</td></tr>");
 
         for (String searchContext : value.getContext()) {
             sb.appendHtmlConstant("<tr><td>");

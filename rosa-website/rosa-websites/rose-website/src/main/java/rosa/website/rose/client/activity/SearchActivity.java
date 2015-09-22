@@ -15,6 +15,7 @@ import com.google.gwt.view.client.RangeChangeEvent.Handler;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
+import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
@@ -297,7 +298,10 @@ public class SearchActivity implements Activity {
                 );
             }
 
-            model.addSearchMatch(new SearchMatchModel(match, fsiUrl, targetUrl, getDisplayName(bookId, pageId)));
+            relabelContexts(match);
+            model.addSearchMatch(new SearchMatchModel(
+                    match, fsiUrl, targetUrl, getDisplayName(bookId, pageId)
+            ));
         }
 
         return model;
@@ -323,6 +327,111 @@ public class SearchActivity implements Activity {
 
         return bookId;
     }
+
+    /**
+     * Replace search category enums with human readable text.
+     *
+     * @param match a single search result containing context texts.
+     */
+    private void relabelContexts(SearchMatch match) {
+        for (int i = 0; i < match.getContext().size(); i++) {
+            String newContext = replaceCategoryEnum(match.getContext().remove(i));
+            match.getContext().add(i, newContext);
+        }
+    }
+
+    private String replaceCategoryEnum(String context) {
+
+        if (context != null && !context.isEmpty()) {
+            for (SearchFields fields : SearchFields.values()) {
+                if (context.contains(fields.toString()) && fields != SearchFields.ID) {
+                    context = context.replace(fields.toString(), getFieldString(fields));
+                }
+            }
+        }
+
+        return context;
+    }
+
+    private String getFieldString(SearchFields field) {
+        StringBuilder fieldLabel = new StringBuilder("<span style=\"font-style:italic\">");
+
+        switch (field) {
+            case COLLECTION_ID:
+                fieldLabel.append("collection");
+                break;
+            case BOOK_ID:
+                fieldLabel.append(Labels.INSTANCE.book());
+                break;
+            case IMAGE_NAME:
+                fieldLabel.append(Labels.INSTANCE.imageName());
+                break;
+            case TRANSCRIPTION_TEXT:
+                fieldLabel.append(Labels.INSTANCE.transcription());
+                break;
+            case TRANSCRIPTION_RUBRIC:
+                fieldLabel.append(Labels.INSTANCE.rubric());
+                break;
+            case TRANSCRIPTION_LECOY:
+                fieldLabel.append(Labels.INSTANCE.lecoy());
+                break;
+            case TRANSCRIPTION_NOTE:
+                fieldLabel.append(Labels.INSTANCE.criticalNote());
+                break;
+            case DESCRIPTION_TEXT:
+                fieldLabel.append(Labels.INSTANCE.bookDescription());
+                break;
+            case ILLUSTRATION_TITLE:
+                fieldLabel.append(Labels.INSTANCE.illustrationTitle());
+                break;
+            case ILLUSTRATION_CHAR:
+                fieldLabel.append(Labels.INSTANCE.illustrationChar());
+                break;
+            case ILLUSTRATION_KEYWORD:
+                fieldLabel.append(Labels.INSTANCE.illustrationKeywords());
+                break;
+            case NARRATIVE_SECTION_ID:
+            case NARRATIVE_SECTION_DESCRIPTION:
+                fieldLabel.append(Labels.INSTANCE.narrativeSections());
+                break;
+            default:
+                fieldLabel.append(field.toString());
+                break;
+        }
+
+        fieldLabel.append("</span>");
+
+        return fieldLabel.toString();
+    }
+
+//    private String getCategoryString(SearchCategory category) {
+//        switch (category) {
+//            case POETRY:
+//                return Labels.INSTANCE.linesOfVerse();
+//            case RUBRIC:
+//                return Labels.INSTANCE.rubric();
+//            case ILLUSTRATION_TITLE:
+//                return Labels.INSTANCE.illustrationTitle();
+//            case LECOY:
+//                return Labels.INSTANCE.lecoy();
+//            case NOTE:
+//                return Labels.INSTANCE.criticalNote();
+//            case ILLUSTRATION_CHAR:
+//                return Labels.INSTANCE.illustrationChar();
+//            case ILLUSTRATION_KEYWORDS:
+//                return Labels.INSTANCE.illustrationKeywords();
+//            case DESCRIPTION:
+//                return Labels.INSTANCE.description();
+//            case IMAGE:
+//                return Labels.INSTANCE.imageName();
+//            case NARRATIVE_SECTION:
+//                return Labels.INSTANCE.narrativeSections();
+//            case ALL:
+//                return Labels.INSTANCE.allFields();
+//            default:
+//                return category.toString();
+//        }
+//    }
 
     private Map<SearchCategory, String> getCategoryLabels() {
         Map<SearchCategory, String> labels = new HashMap<>();
