@@ -14,6 +14,7 @@ import rosa.website.model.select.SelectCategory;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -101,10 +102,29 @@ public class BookSelectionTreeViewModel implements TreeViewModel {
         for (Map.Entry<String, BookSelection> entry : selections.entrySet()) {
             selectionList.add(entry.getValue());
         }
-        Collections.sort(selectionList);
+        Collections.sort(selectionList, new Comparator<BookSelection>() {
+            @Override
+            public int compare(BookSelection o1, BookSelection o2) {
+                if (o1.category != o2.category) {
+                    return o1.category.compareTo(o2.category);
+                } else if (isNumeric(o1.name) && isNumeric(o2.name)) {
+                    return compareAsNumbers(o1.name, o2.name);
+                } else {
+                    return o1.name.compareTo(o2.name);
+                }
+            }
+        });
 
         return selectionList;
     }
+
+    private native int compareAsNumbers(String s1, String s2) /*-{
+        return s1 - s2;
+    }-*/;
+
+    private native boolean isNumeric(String str) /*-{
+        return !isNaN(str);
+    }-*/;
 
     /**
      * Based on selection criteria in the BookSelection input, look through
