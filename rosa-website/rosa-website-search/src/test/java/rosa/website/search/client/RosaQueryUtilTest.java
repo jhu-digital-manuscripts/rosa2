@@ -49,7 +49,7 @@ public class RosaQueryUtilTest {
 
     @Test
     public void toQueryTest() {
-        Query query = adapter.toQuery(token);
+        Query query = adapter.toQuery(token, "rosecollection");
 
         assertNotNull(query);
         assertTrue("Top level should have children", query.children() != null);
@@ -64,12 +64,22 @@ public class RosaQueryUtilTest {
 
     @Test
     public void simpleToQueryTest() {
-        Query query = adapter.toQuery("ALL;LudwigXV7;0");
+        Query query = adapter.toQuery("ALL;LudwigXV7;0", "rosecollection");
 
         assertNotNull(query);
         assertTrue("Top level query should be an operation.", query.isOperation());
-        assertEquals("Top level query should be OR operation.", QueryOperation.OR, query.getOperation());
-        assertEquals("Unexpected number of child queries.", 14, query.children().length);
+        assertEquals("Top level query should be AND operation.", QueryOperation.AND, query.getOperation());
+        assertEquals("Unexpected number of child queries.", 2, query.children().length);
+
+        Query child = query.children()[0];
+        assertTrue("First child query should be an operation.", child.isOperation());
+        assertEquals("First child query should be OR operation.", QueryOperation.OR, child.getOperation());
+        assertEquals("Unexpected number of child queries.", 14, child.children().length);
+
+        child = query.children()[1];
+        assertTrue("Second child should be term.", child.isTerm());
+        assertEquals("Second child should be collection ID", "COLLECTION_ID", child.getTerm().getField());
+        assertEquals("Second child should be for 'rosecollection'", "rosecollection", child.getTerm().getValue());
     }
 
     @Test

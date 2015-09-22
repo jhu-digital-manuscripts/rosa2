@@ -16,7 +16,7 @@ public class RosaQueryUtil implements QueryUtil {
     private static final String DELIMITER = ";";
 
     @Override
-    public Query toQuery(String token) {
+    public Query toQuery(String token, String collectionId) {
         if (token == null || token.isEmpty() || token.equals("NULL")) {
             return null;
         }
@@ -31,6 +31,11 @@ public class RosaQueryUtil implements QueryUtil {
         String[] bookList = bookRestrictionList(token);
         if (bookList != null && bookList.length > 0) {
             top.add(restrictByBooks(bookRestrictionList(token)));
+        }
+
+        // Restrict results to a single collection, if specified
+        if (collectionId != null && !collectionId.isEmpty()) {
+            top.add(new Query(SearchFields.COLLECTION_ID, collectionId));
         }
 
         if (top.size() == 1) {

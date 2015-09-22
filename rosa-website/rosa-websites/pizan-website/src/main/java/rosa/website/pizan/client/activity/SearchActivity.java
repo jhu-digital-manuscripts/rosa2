@@ -198,7 +198,7 @@ public class SearchActivity implements Activity {
             rangeChangeHandler.removeHandler();
         }
 
-        final Query query = QUERY_UTIL.toQuery(searchToken);
+        final Query query = QUERY_UTIL.toQuery(searchToken, WebsiteConfig.INSTANCE.collection());
         resumeToken = null;
 
         if (query == null) {

@@ -13,9 +13,10 @@ public interface QueryUtil {
      * of being used in the {@link rosa.search.core.SearchService}
      *
      * @param token string token
+     * @param collectionId id of collection to restrict results
      * @return the query
      */
-    Query toQuery(String token);
+    Query toQuery(String token, String collectionId);
 
     /**
      * Separate a string search token, that has been used as a history fragment,
