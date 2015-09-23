@@ -236,29 +236,38 @@ public class BookDescriptionWidget extends Composite {
      * @return link to read specified page, or a label if no such link exists
      */
     private Element createPageLink(String page, Document doc) {
-        if (isNotEmpty(page)) {
-            Element anchor = doc.createElement("a");
+        Element el = null;
 
-            anchor.appendChild(doc.createTextNode(page));
+        if (isNotEmpty(page)) {
             String locale = LocaleInfo.getCurrentLocale().getLocaleName();
             boolean needsLocale = !locale.equalsIgnoreCase("en");
 
-            if (isNumeric(page)) {
-                anchor.setAttribute("href",
-                        GWT.getHostPageBaseURL()
-                                + (needsLocale ? "?locale=" + locale : "") + "#"
-                                + presenter.getPageUrlFragment(parseInt(page)));
-            } else if (isRectoVerso(page)) {
-                anchor.setAttribute("href", 
-                        GWT.getHostPageBaseURL()
-                                + (needsLocale ? "?locale=" + locale : "") + "#"
-                                + presenter.getPageUrlFragment(page));
+            String href = null;
+            if (isRectoVerso(page)) {
+                href = GWT.getHostPageBaseURL()
+                        + (needsLocale ? "?locale=" + locale : "") + "#"
+                        + presenter.getPageUrlFragment(page);
+            } else if (shouldLink(page)) {
+                href = GWT.getHostPageBaseURL()
+                        + (needsLocale ? "?locale=" + locale : "") + "#"
+                        + (isNumeric(page) ? presenter.getPageUrlFragment(parseInt(page))
+                                : presenter.getPageUrlFragment(page));
             }
 
-            return anchor;
+            if (href == null || href.endsWith("null")) {
+                el = doc.createElement("span");
+                el.appendChild(doc.createTextNode(page));
+
+
+            } else {
+                el = doc.createElement("a");
+                el.appendChild(doc.createTextNode(page));
+
+                el.setAttribute("href", href);
+            }
         }
 
-        return null;
+        return el;
     }
 
     private boolean isNotEmpty(String str) {
@@ -277,6 +286,10 @@ public class BookDescriptionWidget extends Composite {
      * @param str .
      * @return is this string a number
      */
+    private native boolean shouldLink(String str) /*-{
+        return /^(\w*)(\d+)(r|v)?$/.test(str);
+    }-*/;
+
     private native boolean isNumeric(String str) /*-{
         return !isNaN(str);
     }-*/;

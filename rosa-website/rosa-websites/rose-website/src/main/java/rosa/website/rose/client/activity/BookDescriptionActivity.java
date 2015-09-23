@@ -97,7 +97,11 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     @Override
     public String getPageUrlFragment(String page) {
         if (model == null || model.getImages() == null) {
+            logger.warning("No image list found when trying to get image URL fragment.");
             return null;
+        }
+        if (!page.endsWith("r") || !page.endsWith("v")) {
+            page += "r";
         }
 
         for (BookImage image : model.getImages()) {
@@ -106,6 +110,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
             }
         }
 
+        logger.warning("Image URL could not be found. (" + page + ")");
         return null;
     }
 
