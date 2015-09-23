@@ -27,6 +27,7 @@ import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.core.shared.ImageNameParser;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.BookDataCSV.Column;
 import rosa.website.model.csv.CSVData;
@@ -319,7 +320,7 @@ public class SearchActivity implements Activity {
             CSVRow row = bookDataCSV.getRow(bookId);
 
             if (row != null) {
-                return pageId + ": "
+                return ImageNameParser.toStandardName(pageId) + ": "
                         + row.getValue(Column.REPO) + " "
                         + row.getValue(Column.SHELFMARK);
             }
@@ -403,35 +404,6 @@ public class SearchActivity implements Activity {
 
         return fieldLabel.toString();
     }
-
-//    private String getCategoryString(SearchCategory category) {
-//        switch (category) {
-//            case POETRY:
-//                return Labels.INSTANCE.linesOfVerse();
-//            case RUBRIC:
-//                return Labels.INSTANCE.rubric();
-//            case ILLUSTRATION_TITLE:
-//                return Labels.INSTANCE.illustrationTitle();
-//            case LECOY:
-//                return Labels.INSTANCE.lecoy();
-//            case NOTE:
-//                return Labels.INSTANCE.criticalNote();
-//            case ILLUSTRATION_CHAR:
-//                return Labels.INSTANCE.illustrationChar();
-//            case ILLUSTRATION_KEYWORDS:
-//                return Labels.INSTANCE.illustrationKeywords();
-//            case DESCRIPTION:
-//                return Labels.INSTANCE.description();
-//            case IMAGE:
-//                return Labels.INSTANCE.imageName();
-//            case NARRATIVE_SECTION:
-//                return Labels.INSTANCE.narrativeSections();
-//            case ALL:
-//                return Labels.INSTANCE.allFields();
-//            default:
-//                return category.toString();
-//        }
-//    }
 
     private Map<SearchCategory, String> getCategoryLabels() {
         Map<SearchCategory, String> labels = new HashMap<>();

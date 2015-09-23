@@ -21,16 +21,18 @@
   cursor: pointer;
   zoom: 1;
   float: left;
-  margin: 10px;
+  margin: 4px 10px;
   width: 45%;
+  height: 75px;
 }
 
 .cellListOddItem {
   cursor: pointer;
   zoom: 1;
   float: left;
-  margin: 10px;
+  margin: 4px 10px;
   width: 45%;
+  height: 75px;
 }
 
 .cellListKeyboardSelectedItem {
