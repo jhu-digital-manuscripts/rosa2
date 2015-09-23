@@ -18,6 +18,7 @@ import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.Widget;
+import rosa.website.core.client.Console;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.SidebarView;
 
@@ -90,9 +91,11 @@ public class SidebarViewImpl extends Composite implements SidebarView {
     public void selectItem(String item) {
         unselectAll();
 
-        for (HTML link : links) {
-            if (link.getHTML().equals(item)) {
-                link.addStyleName("SidebarSelected");
+        if (item != null) {
+            for (HTML link : links) {
+                if (link.getHTML().equals(item)) {
+                    link.addStyleName("SidebarSelected");
+                }
             }
         }
     }

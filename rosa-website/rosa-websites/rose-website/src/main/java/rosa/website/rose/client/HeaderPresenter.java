@@ -9,9 +9,11 @@ import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
+import com.google.web.bindery.event.shared.EventBus;
 import rosa.archive.core.util.CSV;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.view.HeaderView;
 import rosa.website.core.client.view.HeaderView.Presenter;
@@ -19,11 +21,13 @@ import rosa.website.core.client.view.HeaderView.Presenter;
 public class HeaderPresenter implements Presenter, IsWidget {
 
     private final HeaderView view;
+    private final EventBus eventBus;
 
     /**
      * @param clientFactory .
      */
     public HeaderPresenter(final ClientFactory clientFactory) {
+        this.eventBus = clientFactory.eventBus();
         final Labels labels = Labels.INSTANCE;
 
         this.view = clientFactory.headerView();
@@ -68,6 +72,7 @@ public class HeaderPresenter implements Presenter, IsWidget {
 
     @Override
     public void goHome() {
+        eventBus.fireEvent(new SidebarItemSelectedEvent(null));
         History.newItem("home");
     }
 
