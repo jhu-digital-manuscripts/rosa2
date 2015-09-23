@@ -18,7 +18,6 @@ import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.Widget;
-import rosa.website.core.client.Console;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.SidebarView;
 
@@ -111,7 +110,7 @@ public class SidebarViewImpl extends Composite implements SidebarView {
         handlers.add(help.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                Window.open(url, "help", "toolbar=yes,menubar=no,scrollbars=yes,resizable=yes");
+                Window.open(url, "_blank", "toolbar=yes,menubar=no,scrollbars=yes,resizable=yes");
             }
         }));
     }
@@ -239,7 +238,9 @@ public class SidebarViewImpl extends Composite implements SidebarView {
                     ((Widget) event.getSource()).addStyleName("SidebarSelected");
 
                     StringBuilder url_sb = new StringBuilder();
+                    boolean external = false;
                     if (entry.getValue().startsWith("http")) {
+                        external = true;
                         url_sb.append(entry.getValue());
                     } else {
                         url_sb.append(GWT.getHostPageBaseURL());
@@ -254,7 +255,11 @@ public class SidebarViewImpl extends Composite implements SidebarView {
                         url_sb.append(entry.getValue());
                     }
 
-                    Window.Location.assign(url_sb.toString());
+                    if (external) {
+                        Window.open(url_sb.toString(), "_blank", "");
+                    } else {
+                        Window.Location.assign(url_sb.toString());
+                    }
                 }
             });
 
