@@ -100,7 +100,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
             logger.warning("No image list found when trying to get image URL fragment.");
             return null;
         }
-        if (!page.endsWith("r") || !page.endsWith("v")) {
+        if (!page.endsWith("r") && !page.endsWith("v")) {
             page += "r";
         }
 
@@ -110,7 +110,6 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
             }
         }
 
-        logger.warning("Image URL could not be found. (" + page + ")");
         return null;
     }
 

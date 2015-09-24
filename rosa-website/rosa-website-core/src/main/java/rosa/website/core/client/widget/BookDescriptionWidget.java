@@ -242,28 +242,23 @@ public class BookDescriptionWidget extends Composite {
             String locale = LocaleInfo.getCurrentLocale().getLocaleName();
             boolean needsLocale = !locale.equalsIgnoreCase("en");
 
+            String url = GWT.getHostPageBaseURL() + (needsLocale ? "?locale=" + locale : "") + "#";
             String href = null;
             if (isRectoVerso(page)) {
-                href = GWT.getHostPageBaseURL()
-                        + (needsLocale ? "?locale=" + locale : "") + "#"
-                        + presenter.getPageUrlFragment(page);
+                href = presenter.getPageUrlFragment(page);
             } else if (shouldLink(page)) {
-                href = GWT.getHostPageBaseURL()
-                        + (needsLocale ? "?locale=" + locale : "") + "#"
-                        + (isNumeric(page) ? presenter.getPageUrlFragment(parseInt(page))
+                href = (isNumeric(page) ? presenter.getPageUrlFragment(parseInt(page))
                                 : presenter.getPageUrlFragment(page));
             }
 
             if (href == null || href.endsWith("null")) {
                 el = doc.createElement("span");
                 el.appendChild(doc.createTextNode(page));
-
-
             } else {
                 el = doc.createElement("a");
                 el.appendChild(doc.createTextNode(page));
 
-                el.setAttribute("href", href);
+                el.setAttribute("href", url + href);
             }
         }
 
@@ -282,12 +277,8 @@ public class BookDescriptionWidget extends Composite {
         return page.endsWith("r") || page.endsWith("v") || page.endsWith("R") || page.endsWith("V");
     }
 
-    /**
-     * @param str .
-     * @return is this string a number
-     */
     private native boolean shouldLink(String str) /*-{
-        return /^(\w*)(\d+)(r|v)?$/.test(str);
+        return /^[a-zA-Z]*(\d+)(r|v)?$/.test(str);
     }-*/;
 
     private native boolean isNumeric(String str) /*-{

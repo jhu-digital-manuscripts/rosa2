@@ -159,10 +159,13 @@ public class BookMetadataWidget extends Composite {
      */
     private Widget createPageLink(String page) {
         if (isNotEmpty(page)) {
-            if (isNumeric(page)) {
-                return new Hyperlink(page, presenter.getPageUrlFragment(parseInt(page)));
-            } else if (isRectoVerso(page)) {
-                return new Hyperlink(page, presenter.getPageUrlFragment(page));
+            String href = isNumeric(page) ?
+                    presenter.getPageUrlFragment(parseInt(page)) : presenter.getPageUrlFragment(page);
+
+            if (href != null && !href.endsWith("null")) {
+                return new Hyperlink(page, href);
+            } else {
+                return new Label(page);
             }
         }
 
@@ -175,10 +178,6 @@ public class BookMetadataWidget extends Composite {
 
     private boolean isEmpty(String str) {
         return str == null || str.isEmpty();
-    }
-
-    private boolean isRectoVerso(String page) {
-        return page.endsWith("r") || page.endsWith("v") || page.endsWith("R") || page.endsWith("V");
     }
 
     /**
