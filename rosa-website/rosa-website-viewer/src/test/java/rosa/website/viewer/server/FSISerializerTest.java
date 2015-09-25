@@ -8,7 +8,6 @@ import org.xml.sax.SAXException;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.Book;
-import rosa.website.viewer.server.FSISerializer;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

@@ -174,7 +174,13 @@ public class FSISerializer implements FSIConstants {
         writer.writeAttribute(ATTR_VALUE, "000000");
 
         writer.writeEmptyElement(TAG_LAYOUT);
-        writer.writeAttribute(ATTR_VALUE, "outside");
+        writer.writeAttribute(ATTR_VALUE, "float");
+
+        writer.writeEmptyElement(TAG_DRAG_MENU_WIDTH);
+        writer.writeAttribute(ATTR_VALUE, "15");
+
+        writer.writeEmptyElement(TAG_DRAG_BAR_WIDTH);
+        writer.writeAttribute(ATTR_VALUE, "15");
 
         writer.writeEmptyElement(TAG_BACKGROUND_ALPHA);
         writer.writeAttribute(ATTR_VALUE, "75");

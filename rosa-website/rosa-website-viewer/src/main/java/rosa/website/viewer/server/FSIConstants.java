@@ -21,6 +21,9 @@ public interface FSIConstants {
     String TAG_THUMB_SELECTED_FACE = "ThumbSelectedFace";
     String TAG_ALLOWDOMAINS = "allowdomains";
     String TAG_CALLBACK = "callback";
+    String TAG_INITIALSIZE = "InitialSize";
+    String TAG_DRAG_MENU_WIDTH = "DragMenuWidth";
+    String TAG_DRAG_BAR_WIDTH = "DragBarWidth";
 
     String ATTR_SRC = "src";
     String ATTR_VALUE = "value";

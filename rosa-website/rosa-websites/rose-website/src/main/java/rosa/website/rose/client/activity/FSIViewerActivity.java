@@ -13,6 +13,7 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.place.shared.PlaceController;
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
@@ -295,6 +296,7 @@ public class FSIViewerActivity implements Activity {
 
                             int index = getImageIndex(tryThis);
                             if (index >= 0) {
+                                updateHistory("browse;", index);
                                 view.fsiViewerSelectImage(index);
                             }
                         }
@@ -328,8 +330,8 @@ public class FSIViewerActivity implements Activity {
                             }
 
                             int index = getImageIndex(tryThis);
-
                             if (index >= 0) {
+                                updateHistory("read;", index);
                                 view.fsiViewerGotoImage(index + 1);
                             }
                         }
@@ -439,6 +441,15 @@ public class FSIViewerActivity implements Activity {
         }
 
         view.onResize();
+    }
+
+    private void updateHistory(String prefix, int imageIndex) {
+        if (imageIndex == -1) {
+            return;
+        }
+
+        String imageId = model.getImages().getImages().get(imageIndex).getId();
+        History.newItem(prefix + imageId, false);
     }
 
     /**
