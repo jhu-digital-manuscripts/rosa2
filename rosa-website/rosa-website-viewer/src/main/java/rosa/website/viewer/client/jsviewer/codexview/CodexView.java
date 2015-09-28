@@ -115,6 +115,7 @@ public class CodexView extends Composite {
     }
 
     public void resize(int width, int height) {
+        // TODO doesn't really work...
         image_viewport_width = width;
         image_viewport_height = height;
 

@@ -6,7 +6,6 @@ import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
@@ -42,13 +41,6 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
     private ViewerControlsWidget viewerControlsWidget;
 
     private CodexView codexView;
-
-    private Timer resizeTimer = new Timer() {
-        @Override
-        public void run() {
-            doResize();
-        }
-    };
 
     /**  */
     public JSViewerViewImpl() {
@@ -208,16 +200,15 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
 
     @Override
     public void onResize() {
-        resizeTimer.schedule(100);
+
     }
 
-    private void doResize() {   // TODO take image aspect ratio into account, so image isn't squished!
+    private void doResize() {
         if (permissionPanel == null || readerToolbar == null) {
             return;
         }
 
-        int width = getOffsetWidth() - 30
-                - (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
+        int width = getOffsetWidth() - 30 - (300);  // 300 px for approximate width of transcription window + margins
         int height = getOffsetHeight() - 30
                 - header.getOffsetHeight()
                 - permissionPanel.getOffsetHeight()
