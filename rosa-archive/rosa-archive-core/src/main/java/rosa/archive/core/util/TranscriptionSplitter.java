@@ -71,8 +71,6 @@ public class TranscriptionSplitter {
      * @return map of page TO transcription XML fragment
      */
     public static Map<String, String> split(String xml) {
-        Map<String, String> map = new HashMap<>();
-
         Document doc = readXml(xml);
         if (doc == null) {
             return null;
@@ -86,12 +84,22 @@ public class TranscriptionSplitter {
         if (bodyList == null || bodyList.getLength() != 1) {
             log.warning("Cannot parse transcription data. Invalid XML structure. " +
                     "(There should be exactly one <body> tag)");
-            return map;
+            return new HashMap<>();
         }
 
         NodeList all_nodes = bodyList.item(0).getChildNodes();
         if (all_nodes.getLength() == 1) {
             all_nodes = all_nodes.item(0).getChildNodes();
+        } else if (all_nodes.getLength() > 1){
+            for (int i = 0; i < all_nodes.getLength(); i++) {
+                Node n = all_nodes.item(i);
+
+                if (n.getNodeName().equalsIgnoreCase("div")) {
+                    all_nodes = all_nodes.item(i).getChildNodes();
+                    break;
+                }
+            }
+
         }
 
         for (int i = 0; i < all_nodes.getLength(); i++) {
@@ -102,16 +110,26 @@ public class TranscriptionSplitter {
             }
         }
 
-        /*
-            Split the original XML document up according to <pb> tags
+        return slitByPage(pbs.toArray(new Integer[pbs.size()]), all_nodes);
+    }
 
-            NOTE: There is some odd cases in the transcription.xml where the designation
-            for a new column on a page appears inside of an <lg> tag, if a couplet
-            happens to fall across two columns. This case is not handled here.
-         */
-        for (int index = 0; index < pbs.size() - 1; index++) {
-            int start = pbs.get(index);
-            int end = pbs.get(index + 1);
+    /**
+     * Split the original XML document up according to <pb> tags
+     *
+     * NOTE: There is some odd cases in the transcription.xml where the designation
+     * for a new column on a page appears inside of an <lg> tag, if a couplet
+     * happens to fall across two columns. This case is not handled here.
+     *
+     * @param pbs list of indexes (line number) where &lt;pb&gt; tags can be found.
+     * @param all_nodes all child nodes of the base &lt;div&gt; tag inside the body.
+     * @return a map of pages -&gt; xml fragments
+     */
+    private static Map<String, String> slitByPage(Integer[] pbs, NodeList all_nodes) {
+        Map<String, String> map = new HashMap<>();
+
+        for (int index = 0; index < pbs.length - 1; index++) {
+            int start = pbs[index];
+            int end = pbs[index + 1];
 
             Document fragment = XMLUtil.newDocument();
             fragment.appendChild(fragment.createElement("div"));
@@ -122,14 +140,6 @@ public class TranscriptionSplitter {
             if (page == null) {
                 continue;
             }
-
-            // Will not work generally, as the direct sibling node will probably
-            // be an empty '#text' node
-//            Node column_start = all_nodes.item(start + 1);
-//            if (column_start.getNodeName().equals("cb")) {
-//                page = page.concat(getAttribute("n", column_start));
-//                start++;
-//            }
 
             for (int i = start + 1; i < end; i++) {
                 fragment.getDocumentElement().appendChild(fragment.importNode(all_nodes.item(i), true));
