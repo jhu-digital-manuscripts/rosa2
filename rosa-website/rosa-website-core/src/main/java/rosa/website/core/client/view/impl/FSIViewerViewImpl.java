@@ -56,6 +56,7 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
         root.setSize("100%", "100%");
 
         permissionPanel.addStyleName("float-left");
+        permissionPanel.setWidth("100%");
 
         initWidget(root);
     }
