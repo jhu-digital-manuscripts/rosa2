@@ -160,7 +160,7 @@ public class FSIViewerHTMLBuilder {
         url_sb.append("&TileSizeY=");
         url_sb.append(tile_height);
         url_sb.append("&InitialMouseMode=");
-        url_sb.append(1);                               // Set initial mouse mode to PAN
+        url_sb.append(0);                               // Set initial mouse mode to PAN
         url_sb.append("&debug=");
         url_sb.append(debug ? 1 : 0);                   // DEBUG == true (debug=1) ELSE (debug=0)
 
