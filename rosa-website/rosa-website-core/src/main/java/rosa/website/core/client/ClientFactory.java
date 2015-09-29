@@ -33,15 +33,6 @@ public class ClientFactory {
 
     private static HeaderView headerView = new HeaderViewImpl();
 
-    private static HTMLView htmlView = new HTMLViewImpl();
-    private static CSVDataView csvDataView = new CSVDataViewImpl();
-    private static BookSelectView bookSelectView = new BookSelectViewImpl();
-    private static BookDescriptionView bookDescriptionView = new BookDescriptionViewImpl();
-    private static FSIViewerView FSIViewerView = new FSIViewerViewImpl();
-    private static JSViewerView jsViewerView = new JSViewerViewImpl();
-    private static SidebarView sidebarView = new SidebarViewImpl();
-    private static AdvancedSearchView advancedSearchView = new AdvancedSearchViewImpl();
-
     public AppContext context() {
         return context;
     }
@@ -63,27 +54,27 @@ public class ClientFactory {
     }
 
     public HTMLView htmlView() {
-        return htmlView;
+        return new HTMLViewImpl();
     }
 
     public CSVDataView csvDataView() {
-        return csvDataView;
+        return new CSVDataViewImpl();
     }
 
     public BookSelectView bookSelectView() {
-        return bookSelectView;
+        return new BookSelectViewImpl();
     }
 
     public BookDescriptionView bookDescriptionView() {
-        return bookDescriptionView;
+        return new BookDescriptionViewImpl();
     }
 
     public FSIViewerView bookViewerView() {
-        return FSIViewerView;
+        return new FSIViewerViewImpl();
     }
 
     public JSViewerView jsViewerView() {
-        return jsViewerView;
+        return new JSViewerViewImpl();
     }
 
     public HeaderView headerView() {
@@ -91,10 +82,10 @@ public class ClientFactory {
     }
 
     public SidebarView sidebarView() {
-        return sidebarView;
+        return new SidebarViewImpl();
     }
 
     public AdvancedSearchView advancedSearchView() {
-        return advancedSearchView;
+        return new AdvancedSearchViewImpl();
     }
 }
