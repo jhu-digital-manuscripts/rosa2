@@ -6,12 +6,10 @@ import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.model.Book;
 import rosa.archive.model.Transcription;
 
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -59,13 +57,80 @@ public class TranscriptionSplitterTest extends BaseArchiveTest {
 
     @Test
     public void testMorgan() throws IOException {
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Morgan948.transcription.xml")) {
+//        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Morgan948.transcription.xml")) {
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Douce195.transcription.xml")) {
             String xml = IOUtils.toString(in, "UTF-8");
             assertNotNull("No XML found.", xml);
 
             Map<String, String> xmlMap = TranscriptionSplitter.split(xml);
             assertNotNull("XML failed to split.", xmlMap);
-            assertEquals("Unexpected number of pages found.", 227, xmlMap.size());
+
+//            for (int i = 1; i < 157; i++) {
+//
+//                String recto = i + "r";
+//                String verso = i + "v";
+//                if (i < 10) {
+//                    recto = "00" + recto;
+//                    verso = "00" + verso;
+//                } else if (i < 100) {
+//                    recto = "0" + recto;
+//                    verso = "0" + verso;
+//                }
+//
+//                if (xmlMap.containsKey(recto)) {
+//                    System.out.println(recto);
+//                } else {
+//                    System.out.println("**" + recto);
+//                }
+//
+//                if (xmlMap.containsKey(verso)) {
+//                    System.out.println(verso);
+//                } else {
+//                    System.out.println("**" + verso);
+//                }
+//            }
+
+//            System.out.println(xmlMap.get("001r"));
+
+            assertEquals("Unexpected number of pages found.", 312, xmlMap.size());
         }
     }
+
+    @Test
+    public void test() throws Exception {
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Douce195.transcription.xml")) {
+//            String xml = IOUtils.toString(in, "UTF-8");
+//            assertNotNull("No XML found.", xml);
+
+            SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
+            SAXSplitter handler = new SAXSplitter();
+
+            parser.parse(in, handler);
+
+            Map<String, String> map = handler.getPageMap();
+
+            for (int i = 1; i < 157; i++) {
+
+                String recto = i + "r";
+                String verso = i + "v";
+
+                if (map.containsKey(recto)) {
+                    System.out.println(recto);
+                } else {
+                    System.out.println("**" + recto);
+                }
+
+                if (map.containsKey(verso)) {
+                    System.out.println(verso);
+                } else {
+                    System.out.println("**" + verso);
+                }
+            }
+        }
+    }
+
+//    @Test
+//    public void testMorganHasAllPages() throws IOException {
+//
+//    }
 }

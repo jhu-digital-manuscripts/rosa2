@@ -65,8 +65,6 @@ public class TranscriptionSplitter {
      * inside a &lt;lg&gt; couplet tag. Anyone parsing these XML fragments will have
      * to take this into consideration.
      *
-     * TODO begs for a SAX implementation, instead of DOM
-     *
      * @param xml original transcription XML containing all transcriptions
      * @return map of page TO transcription XML fragment
      */
@@ -101,6 +99,8 @@ public class TranscriptionSplitter {
             }
 
         }
+
+        // TODO need to account for <pb> tags inside of <lg> tags
 
         for (int i = 0; i < all_nodes.getLength(); i++) {
             Node n = all_nodes.item(i);
