@@ -13,6 +13,7 @@ import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.widget.BookSelectionBrowserResources;
 import rosa.website.core.client.widget.BookSelectionTreeViewModel;
+import rosa.website.core.client.widget.RosaCellBrowser;
 import rosa.website.model.select.BookInfo;
 import rosa.website.model.select.BookSelectList;
 
@@ -40,7 +41,6 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public void setData(BookSelectList data) {
         selectionPanel.clear();
 
@@ -49,20 +49,27 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
                 selectionModel);
 
         BookSelectionBrowserResources css = GWT.create(BookSelectionBrowserResources.class);
-        CellBrowser browser = new CellBrowser.Builder(browserModel, null) // this builder constructor uses unchecked operation
-                .pageSize(Integer.MAX_VALUE)                    // Set page size absurdly high to prevent paging
-                .resources(css)
-                .build();
+        final RosaCellBrowser browser = new RosaCellBrowser(
+                new CellBrowser.Builder<>(browserModel, null)
+                        .pageSize(Integer.MAX_VALUE)
+                        .resources(css)
+        );
+
         browser.setKeyboardSelectionPolicy(KeyboardSelectionPolicy.BOUND_TO_SELECTION);
         browser.setSize("100%", "100%");
-        browser.setMinimumColumnWidth(400);
 
         int parent_width = getParent() == null ? DEFAULT_WIDTH : getParent().getOffsetWidth() - 30;
         browser.setDefaultColumnWidth(parent_width / 2);
+        browser.setMinimumColumnWidth(300);
 
+        // Open 2nd tier of browser by selecting first item
         browser.getRootTreeNode().setChildOpen(0, true, false);
 
+        // Add cell browser to view
         selectionPanel.setWidget(browser);
+
+        browser.setFirstColumnWidth(400.0);
+        browser.hideLastDivider();
     }
 
     @Override
