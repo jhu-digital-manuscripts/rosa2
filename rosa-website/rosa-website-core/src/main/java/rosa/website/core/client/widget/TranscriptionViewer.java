@@ -461,9 +461,29 @@ public class TranscriptionViewer {
             switch (name) {
                 case "div":
                     display.appendChild(span(htmldoc, Labels.INSTANCE.illustration() + ": ", "TranscriptionExtraHeader"));
-                    display.appendChild(span(htmldoc, n, "TranscriptionExtra"));
+
+                    boolean first = true;
+                    for (Node child = n.getFirstChild(); child != null; child = child.getNextSibling()) {
+                        // Skip <figure> since it does not render correctly.
+                        if (child.getNodeName().equals("figure")) {
+                            String toAppend = first ? extractText(child) : ", " + extractText(child);
+                            display.appendChild(span(htmldoc, toAppend, "TranscriptionExtra"));
+                        } else {
+                            if (!first) {
+                                display.appendChild(span(htmldoc, ", ", "TranscriptionExtra"));
+                            }
+                            display.appendChild(span(htmldoc, child, "TranscriptionExtra"));
+                        }
+
+                        first = false;
+                    }
+
                     display.appendChild(htmldoc.createBRElement());
                     break;
+                case "figure":
+                    display.appendChild(span(htmldoc, Labels.INSTANCE.illustration() + ": ", "TranscriptionExtraHeader"));
+                    display.appendChild(span(htmldoc, extractText(n), "TranscriptionExtra"));
+                    display.appendChild(htmldoc.createBRElement());
                 case "fw":
                     display.appendChild(span(htmldoc, Labels.INSTANCE.catchphrase() + ": ", "TranscriptionExtraHeader"));
                     display.appendChild(span(htmldoc, n, "TranscriptionExtra"));

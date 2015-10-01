@@ -25,18 +25,24 @@ public class SAXSplitter extends DefaultHandler {
     private boolean inHeader = false;
 
     @Override
-    public void startDocument() throws SAXException {
-
-    }
-
-    @Override
     public void endDocument() throws SAXException {
         // Transcription XML SHOULD end with </div>. Add it if it does not.
-        if (!currentFragment.toString().endsWith("</div>")) {
-            currentFragment.append("</div>");
+        String frag = escapeEntities(currentFragment.toString().trim());
+        if (!frag.endsWith("</div>")) {
+            frag += "</div>";
         }
 
-        pageMap.put(currentPage, currentFragment.toString());
+        pageMap.put(currentPage, frag);
+    }
+
+    private String escapeEntities(String str) {
+        if (str.contains("&")) {
+            if (!str.contains(";") || str.indexOf("&") > str.indexOf(";")) {
+                str = str.replace("&", "&amp;");
+            }
+        }
+
+        return str;
     }
 
     @Override
@@ -49,8 +55,14 @@ public class SAXSplitter extends DefaultHandler {
                 // Page designation
                 // End current fragment and write to map
                 if (currentFragment != null) {
+                    if (inLG) {
+                        currentFragment.append("</lg>");
+                    }
                     currentFragment.append("</div>");
-                    pageMap.put(currentPage, currentFragment.toString());
+                    pageMap.put(
+                            currentPage,
+                            escapeEntities(currentFragment.toString().replaceAll("\n", ""))
+                    );
                 }
                 // Start new fragment, must account for <pb> inside <lg> tags
                 Matcher m = pagePattern.matcher(attributes.getValue("n"));
@@ -78,9 +90,9 @@ public class SAXSplitter extends DefaultHandler {
                     }
 
                     currentFragment = new StringBuilder(previous);
-                    if (inLG) {
-                        currentFragment.append("</lg>");
-                    }
+//                    if (inLG) {
+//                        currentFragment.append("</lg>");
+//                    }
                 } else {
                     currentFragment = new StringBuilder("<div type=\"ms\">");
                 }

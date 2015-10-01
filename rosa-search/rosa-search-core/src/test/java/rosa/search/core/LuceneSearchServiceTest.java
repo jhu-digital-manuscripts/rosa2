@@ -5,7 +5,13 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyList;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
+import java.io.InputStream;
 import java.util.Arrays;
 
 import org.junit.After;
@@ -15,7 +21,10 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 
 import rosa.archive.core.BaseArchiveTest;
+import rosa.archive.core.Store;
+import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchFields;
@@ -384,6 +393,23 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
             assertNotNull("No result found.", result);
             assertEquals("Unexpected number of results found.", 1, result.getTotal());
         }
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void test() throws Exception {
+        Store fakeStore = mock(Store.class);
+
+        Book b = loadValidLudwigXV7();
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Douce195.transcription.xml")) {
+            b.setTranscription(new TranscriptionXmlSerializer().read(in, null));
+        }
+
+        when(fakeStore.loadBookCollection(anyString(), anyList())).thenReturn(loadValidCollection());
+        when(fakeStore.loadBook(any(BookCollection.class), anyString(), anyList())).thenReturn(b);
+
+        service.update(fakeStore, VALID_COLLECTION);
+
     }
 
 }

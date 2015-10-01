@@ -94,10 +94,15 @@ public class TranscriptionXMLReader extends DefaultHandler {
     }
 
     @Override
+    public void startDocument() throws SAXException {
+        clear();
+    }
+
+    @Override
     public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
         String val;
 
-        switch (localName) {
+        switch (qName) {
             case "note":
                 val = getValue(atts, "type");
 
@@ -155,7 +160,7 @@ public class TranscriptionXMLReader extends DefaultHandler {
             case "desc":
                 break;
             default:
-                System.err.println("Not handled " + localName);
+                System.err.println("Not handled " + qName);
                 break;
         }
     }
@@ -170,12 +175,12 @@ public class TranscriptionXMLReader extends DefaultHandler {
 
     private static String getValue(Attributes atts, String name) {
         for (int i = 0; i < atts.getLength(); i++) {
-            if (atts.getLocalName(i).equals(name)) {
+            if (atts.getQName(i).equals(name)) {
                 return atts.getValue(i);
             }
         }
 
         return null;
     }
-    
+
 }
