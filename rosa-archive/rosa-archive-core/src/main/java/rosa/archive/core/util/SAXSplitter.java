@@ -9,9 +9,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class SAXSplitter extends DefaultHandler {
     private Logger logger = Logger.getLogger(SAXSplitter.class.toString());
+    private Pattern pagePattern = Pattern.compile("^([a-zA-Z]*)(\\d+)(r|v)$");
 
     private Map<String, String> pageMap = new HashMap<>();
 
@@ -28,7 +31,11 @@ public class SAXSplitter extends DefaultHandler {
 
     @Override
     public void endDocument() throws SAXException {
-        currentFragment.append("</div>");
+        // Transcription XML SHOULD end with </div>. Add it if it does not.
+        if (!currentFragment.toString().endsWith("</div>")) {
+            currentFragment.append("</div>");
+        }
+
         pageMap.put(currentPage, currentFragment.toString());
     }
 
@@ -46,8 +53,37 @@ public class SAXSplitter extends DefaultHandler {
                     pageMap.put(currentPage, currentFragment.toString());
                 }
                 // Start new fragment, must account for <pb> inside <lg> tags
-                currentFragment = new StringBuilder("<div type=\"ms\">");
-                currentPage = attributes.getValue("n");
+                Matcher m = pagePattern.matcher(attributes.getValue("n"));
+                if (m.find()) {
+                    currentPage = m.group(1)
+                            + String.format("%03d", Integer.parseInt(m.group(2)))
+                            + m.group(3);
+                } else {
+                    currentPage = attributes.getValue("n");
+                }
+
+                // TODO could have simply
+                // Check if new page == old page, if true, continue using old
+                // StringBuilder. Then overwrite old value.
+                if (pageMap.containsKey(currentPage)) {
+                    /*
+                        It is possible that there is a <pb> page designation for every
+                        <cb> column designation. In this case, a page fragment may already
+                        exist in the pageMap. The next fragment should be added to that
+                        pre-existing fragment, instead of overwriting it.
+                     */
+                    String previous = pageMap.get(currentPage);
+                    if (previous.endsWith("</div>")) {
+                        previous = previous.substring(0, previous.length() - 6);
+                    }
+
+                    currentFragment = new StringBuilder(previous);
+                    if (inLG) {
+                        currentFragment.append("</lg>");
+                    }
+                } else {
+                    currentFragment = new StringBuilder("<div type=\"ms\">");
+                }
 
                 currentFragment.append("<pb n=\"");
                 currentFragment.append(currentPage);
@@ -96,6 +132,7 @@ public class SAXSplitter extends DefaultHandler {
             case "pb":
                 break;
             case "":
+            case "TEI":
             case "text":
             case "body":
                 break;
