@@ -5,12 +5,14 @@ import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
+import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.SidebarItemSelectedEvent;
+import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.place.BookSelectPlace;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -24,13 +26,14 @@ import java.util.logging.Logger;
 /**
  * Activity for selecting books by sorting through criteria.
  */
-public class BookSelectActivity implements Activity {
+public class BookSelectActivity implements Activity, BookSelectView.Presenter {
     private static final Logger logger = Logger.getLogger(BookSelectActivity.class.toString());
 
     private final BookSelectView view;
     private final SelectCategory category;
 
     private final ArchiveDataServiceAsync service;
+    private final PlaceController placeController;
 
     /**
      * Create a new BookSelectActivity
@@ -42,6 +45,12 @@ public class BookSelectActivity implements Activity {
         this.view = clientFactory.bookSelectView();
         this.category = place.getCategory();
         this.service = clientFactory.archiveDataService();
+        this.placeController = clientFactory.placeController();
+    }
+
+    @Override
+    public void goToDescription(String id) {
+        placeController.goTo(new BookDescriptionPlace(id));
     }
 
     @Override
@@ -63,6 +72,7 @@ public class BookSelectActivity implements Activity {
     public void start(final AcceptsOneWidget panel, EventBus eventBus) {
         panel.setWidget(view);
         LoadingPanel.INSTANCE.show();
+        view.setPresenter(this);
 
         eventBus.fireEvent(new SidebarItemSelectedEvent(getLabel(category)));
 

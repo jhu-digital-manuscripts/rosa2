@@ -7,6 +7,8 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.view.client.SelectionChangeEvent;
+import com.google.gwt.view.client.SelectionChangeEvent.Handler;
 import com.google.gwt.view.client.SingleSelectionModel;
 import com.google.gwt.view.client.TreeViewModel;
 import rosa.website.core.client.Labels;
@@ -22,6 +24,7 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
 
     private SimplePanel selectionPanel;
     private Label header;
+    private Presenter presenter;
 
     /**  */
     public BookSelectViewImpl() {
@@ -44,7 +47,7 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
     public void setData(BookSelectList data) {
         selectionPanel.clear();
 
-        SingleSelectionModel<BookInfo> selectionModel = new SingleSelectionModel<>();
+        final SingleSelectionModel<BookInfo> selectionModel = new SingleSelectionModel<>();
         TreeViewModel browserModel = new BookSelectionTreeViewModel(data, data.getCategory(),
                 selectionModel);
 
@@ -70,11 +73,23 @@ public class BookSelectViewImpl extends Composite implements BookSelectView {
 
         browser.setFirstColumnWidth(400.0);
         browser.hideLastDivider();
+
+        selectionModel.addSelectionChangeHandler(new Handler() {
+            @Override
+            public void onSelectionChange(SelectionChangeEvent event) {
+                presenter.goToDescription(selectionModel.getSelectedObject().id);
+            }
+        });
     }
 
     @Override
     public void setHeaderText(String text) {
         header.setText(text);
+    }
+
+    @Override
+    public void setPresenter(Presenter presenter) {
+        this.presenter = presenter;
     }
 
     /**

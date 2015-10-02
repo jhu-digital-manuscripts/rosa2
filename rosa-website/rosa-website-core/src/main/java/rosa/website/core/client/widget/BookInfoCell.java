@@ -12,6 +12,11 @@ import rosa.website.model.select.BookInfo;
  * book.
  */
 public class BookInfoCell extends AbstractCell<BookInfo> {
+
+    public BookInfoCell() {
+        super("click", "keydown");
+    }
+
     @Override
     public void render(Context context, BookInfo value, SafeHtmlBuilder sb) {
         StringBuilder url = new StringBuilder(GWT.getHostPageBaseURL());
