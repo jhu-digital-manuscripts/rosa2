@@ -5,6 +5,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -33,16 +34,6 @@ public class SAXSplitter extends DefaultHandler {
         }
 
         pageMap.put(currentPage, frag);
-    }
-
-    private String escapeEntities(String str) {
-        if (str.contains("&")) {
-            if (!str.contains(";") || str.indexOf("&") > str.indexOf(";")) {
-                str = str.replace("&", "&amp;");
-            }
-        }
-
-        return str;
     }
 
     @Override
@@ -90,9 +81,6 @@ public class SAXSplitter extends DefaultHandler {
                     }
 
                     currentFragment = new StringBuilder(previous);
-//                    if (inLG) {
-//                        currentFragment.append("</lg>");
-//                    }
                 } else {
                     currentFragment = new StringBuilder("<div type=\"ms\">");
                 }
@@ -125,16 +113,6 @@ public class SAXSplitter extends DefaultHandler {
                     currentFragment.append('>');
                 }
                 break;
-        }
-    }
-
-    private void writeAttributes(Attributes attributes) {
-        for (int i = 0; i < attributes.getLength(); i++) {
-            currentFragment.append(' ');
-            currentFragment.append(attributes.getQName(i));
-            currentFragment.append("=\"");
-            currentFragment.append(attributes.getValue(i));
-            currentFragment.append("\" ");
         }
     }
 
@@ -171,7 +149,7 @@ public class SAXSplitter extends DefaultHandler {
         }
         // Record characters in current fragment
         for (int i = 0; i < length; i++) {
-            currentFragment.append(String.valueOf(ch[i + start]));
+            currentFragment.append(escape(ch[i + start]));
         }
     }
 
@@ -191,6 +169,53 @@ public class SAXSplitter extends DefaultHandler {
     public void fatalError(SAXParseException e) throws SAXException {
         logger.log(Level.SEVERE, "[FATAL ERROR] (" + e.getPublicId() + ":" + e.getSystemId() + ") Error at " +
                 "line " + e.getLineNumber() + ", col " + e.getColumnNumber(), e);
+    }
+
+    private void writeAttributes(Attributes attributes) {
+        for (int i = 0; i < attributes.getLength(); i++) {
+            currentFragment.append(' ');
+            currentFragment.append(attributes.getQName(i));
+            currentFragment.append("=\"");
+            currentFragment.append(escape(attributes.getValue(i)));
+            currentFragment.append("\" ");
+        }
+    }
+
+    private String escapeEntities(String str) {
+        if (str.contains("&")) {
+            if (!str.contains(";") || str.indexOf("&") > str.indexOf(";")) {
+                str = str.replace("&", "&amp;");
+            }
+        }
+
+        return str;
+    }
+
+    private String escape(String str) {
+        StringBuilder sb = new StringBuilder();
+        for (char c : str.toCharArray()) {
+            sb.append(escape(c));
+        }
+
+        return sb.toString();
+    }
+
+    private String escape(char c) {
+
+        switch (c) {
+            case '<':
+                return "&lt;";
+            case '>':
+                return "&gt;";
+            case '\"':
+                return "&quot;";
+            case '\'':
+                return "&#039;";
+            case '&':
+                return "&amp;";
+        }
+
+        return String.valueOf(c);
     }
 
     public Map<String, String> getPageMap() {

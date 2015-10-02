@@ -397,7 +397,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
 
     @Test
     @SuppressWarnings("unchecked")
-    public void test() throws Exception {
+    public void testUpdateDouce() throws Exception {
         Store fakeStore = mock(Store.class);
 
         Book b = loadValidLudwigXV7();
@@ -410,6 +410,38 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
 
         service.update(fakeStore, VALID_COLLECTION);
 
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void testUpdateMorgan() throws Exception {
+        Store fakeStore = mock(Store.class);
+
+        Book b = loadValidLudwigXV7();
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Morgan948.transcription.xml")) {
+            b.setTranscription(new TranscriptionXmlSerializer().read(in, null));
+        }
+
+        when(fakeStore.loadBookCollection(anyString(), anyList())).thenReturn(loadValidCollection());
+        when(fakeStore.loadBook(any(BookCollection.class), anyString(), anyList())).thenReturn(b);
+
+        service.update(fakeStore, VALID_COLLECTION);
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void testUpdateWalters() throws Exception {
+        Store fakeStore = mock(Store.class);
+
+        Book b = loadValidLudwigXV7();
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Walters143.transcription.xml")) {
+            b.setTranscription(new TranscriptionXmlSerializer().read(in, null));
+        }
+
+        when(fakeStore.loadBookCollection(anyString(), anyList())).thenReturn(loadValidCollection());
+        when(fakeStore.loadBook(any(BookCollection.class), anyString(), anyList())).thenReturn(b);
+
+        service.update(fakeStore, VALID_COLLECTION);
     }
 
 }
