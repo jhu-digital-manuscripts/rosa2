@@ -17,8 +17,8 @@ public class Symbol extends Annotation implements Serializable {
         return "Symbol: " + name + " (" + getReferringText() + ")";
     }
 
-    public Symbol(String referringText, String name, String language, Location location) {
-        super(referringText, language, location);
+    public Symbol(String id, String referringText, String name, String language, Location location) {
+        super(id, referringText, language, location);
         this.name = name;
     }
 
