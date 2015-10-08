@@ -77,9 +77,9 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals("acommodato", e.getAmendedText());
 
         // <mark name="plus_sign" method="pen" place="intext" language="IT" text="Arguto"/>
-        Mark m1 = new Mark("FolgersHa2.036r.tif_36", "Arguto", "plus_sign", "pen", "IT", Location.INTEXT);
+        Mark m1 = new Mark("FolgersHa2.036r.tif_mark_36", "Arguto", "plus_sign", "pen", "IT", Location.INTEXT);
         // <mark name="dash" method="pen" place="right_margin"/>
-        Mark m2 = new Mark("FolgersHa2.036r.tif_2", "", "dash", "pen", "", Location.RIGHT_MARGIN);
+        Mark m2 = new Mark("FolgersHa2.036r.tif_mark_2", "", "dash", "pen", "", Location.RIGHT_MARGIN);
         // fake mark
         Mark m3 = new Mark("id", "fake text", "moo", "method", "lang", null);
 
@@ -88,14 +88,14 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertFalse(page.getMarks().contains(m3));
 
         // <symbol name="Sun" place="left_margin"/>
-        Symbol s1 = new Symbol("FolgersHa2.036r.tif_1", "", "Sun", "", Location.LEFT_MARGIN);
+        Symbol s1 = new Symbol("FolgersHa2.036r.tif_symbol_1", "", "Sun", "", Location.LEFT_MARGIN);
         // not present in document
         Symbol s2 = new Symbol("id", "fake text", "moo method", "lang", null);
         assertTrue(page.getSymbols().contains(s1));
         assertFalse(page.getSymbols().contains(s2));
 
         // <underline method="pen" type="straight" language="IT" text="Arguto, &amp;"/>
-        Underline u1 = new Underline("FolgersHa2.036r.tif_26", "Arguto, &", "pen", "straight", "IT");
+        Underline u1 = new Underline("FolgersHa2.036r.tif_underline_26", "Arguto, &", "pen", "straight", "IT");
         // fake underline
         Underline u2 = new Underline("id", "fake text", "moomethod", "asdf", "lang");
         assertTrue(page.getUnderlines().contains(u1));
