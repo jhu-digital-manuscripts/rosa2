@@ -2,11 +2,13 @@ package rosa.iiif.presentation.core.transform;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFSIImageIdMapper;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
+import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
 import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.LayerTransformer;
@@ -67,9 +69,10 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
         CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter);
         SequenceTransformer sequenceTransformer = new SequenceTransformer(presentationReqFormatter, canvasTransformer);
+        AnnotationTransformer annotationTransformer = new AnnotationTransformer(presentationReqFormatter, new ArchiveNameParser());
 
         Set<Transformer<?>> transformers = new HashSet<>();
-        transformers.add(new AnnotationListTransformer(presentationReqFormatter));
+        transformers.add(new AnnotationListTransformer(presentationReqFormatter, annotationTransformer));
         transformers.add(canvasTransformer);
         transformers.add(sequenceTransformer);
         transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer, new RangeTransformer(presentationReqFormatter)));
@@ -176,14 +179,33 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         assertNotNull("Annotation list missing for 1r.all", l1);
         assertNotNull("Annotation list missing for 11r.all", l2);
         assertNotEquals("Annotation lists for 1r.all and 11r.all should NOT be equal.", l1, l2);
-        assertNotEquals("Annotation lists for 1r.all and 11r.all should have differnt sizes", l1.size(), l2.size());
+        assertNotEquals("Annotation lists for 1r.all and 11r.all should have different sizes", l1.size(), l2.size());
 
         assertEquals("Unexpected number of annotations in 1r.all", 46, l1.size());
         assertEquals("Unexpected number of annotations in 11r.all", 74, l2.size());
 
-        AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "front matter 1r.all");
-        assertNotNull("Failed to create AnnotationList for front matter 1r", ll);
-        assertTrue("Unexpected annotations found in annotation list for 'front matter 1r'", ll.getAnnotations().isEmpty());
+        {
+            AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "front matter 1r.all");
+            assertNotNull("Failed to create AnnotationList for front matter 1r", ll);
+            assertTrue("Unexpected annotations found in annotation list for 'front matter 1r'", ll.getAnnotations().isEmpty());
+        }
+
+        {
+            AnnotationList ll = presentationTransformer.annotationList(
+                    loadValidCollection(), loadValidFolgersHa2(), "1r.all");
+            assertNotNull("Failed to create AnnotationList for '1r'", ll);
+
+            int marg_count = 0;
+            for (int i = 0; i < ll.size(); i++) {
+                Annotation a = ll.getAnnotations().get(i);
+                if (a.getId().contains("marginalia")) {
+                    marg_count++;
+                    System.out.println(a.getId() + " :::: " + a.getDefaultSource().getEmbeddedText().replaceAll("\\n", "<br>"));
+                }
+            }
+            assertEquals("Unexpected number of marginalia found.", 12, marg_count);
+
+        }
     }
 
     /**

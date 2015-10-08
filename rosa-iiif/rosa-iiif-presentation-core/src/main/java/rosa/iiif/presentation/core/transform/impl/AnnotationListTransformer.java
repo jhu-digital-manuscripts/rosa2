@@ -13,7 +13,6 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
-import rosa.iiif.image.core.UriUtil;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
@@ -31,9 +30,13 @@ import java.util.List;
 public class AnnotationListTransformer extends BasePresentationTransformer implements Transformer<AnnotationList> {
     private static int annotation_counter = 0;
 
+    private AnnotationTransformer annotationTransformer;
+
     @Inject
-    public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter) {
+    public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter,
+                                     AnnotationTransformer annotationTransformer) {
         super(presRequestFormatter);
+        this.annotationTransformer = annotationTransformer;
     }
 
     public AnnotationList transform(BookCollection collection, Book book, String name) {
@@ -291,14 +294,15 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     private Annotation adaptAnnotation(BookCollection collection, String book, rosa.archive.model.aor.Annotation anno,
                                        BookImage image) {
         Annotation a = new Annotation();
-        String annoName = image.getName() + "_" + annotation_counter++;
+        String annoName =  anno.getId() == null || anno.getId().isEmpty() ?
+                image.getName() + "_" + annotation_counter++ : anno.getId();
 
         a.setId(urlId(collection.getId(), book, annoName, PresentationRequestType.ANNOTATION));
         a.setType(IIIFNames.OA_ANNOTATION);
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.setDefaultSource(new AnnotationSource(
                 "URI", IIIFNames.DC_TEXT, "text/html", anno.toPrettyString(), "en"
-        )); // TODO ask about this, we might not need to make these resolvable
+        )); // TODO ask about this, we might not need to make these resolvable (annotation content)
 
         a.setDefaultTarget(locationOnCanvas(image, anno.getLocation()));
 
@@ -323,21 +327,33 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
      */
     private List<Annotation> adaptMarginalia(BookCollection collection, String book, Marginalia marg, BookImage image) {
         List<Annotation> annotations = new ArrayList<>();
+        int lang_count = 0;
+
         for (MarginaliaLanguage lang : marg.getLanguages()) {
+            int pos_count = 0;
+
             for (Position pos : lang.getPositions()) {
                 Annotation anno = new Annotation();
-                String label = image.getName() + "_" + annotation_counter++;
 
-                anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
+                String transcription_id = marg.getId() + "_" + lang_count + "_" + pos_count;
+                String actual_id = marg.getId() == null || marg.getId().isEmpty() ?
+                        image.getName() + "_" + annotation_counter++ : transcription_id;
+
+                String transcription_text = pos.getTexts().toString().replaceAll("\\s+", " ");
+
+                anno.setId(urlId(collection.getId(), book, actual_id, PresentationRequestType.ANNOTATION)); // TODO name
                 anno.setMotivation(IIIFNames.SC_PAINTING);
                 anno.setDefaultSource(new AnnotationSource(
-                        "URI", IIIFNames.DC_TEXT, "text/html",
-                        pos.getTexts().toString(), lang.getLang()
-                )); // TODO ask about this, we might not need to make these resolvable
+                        "URI", IIIFNames.DC_TEXT, "text/html", transcription_text, lang.getLang()
+                )); // TODO ask about this, we might not need to make these resolvable (annotation content)
                 anno.setDefaultTarget(locationOnCanvas(image, pos.getPlace()));
 
                 annotations.add(anno);
+
+                pos_count++;
             }
+
+            lang_count++;
         }
 
         return annotations;
