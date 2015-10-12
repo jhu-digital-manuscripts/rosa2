@@ -2,6 +2,7 @@ package rosa.archive.core.check;
 
 import java.io.IOException;
 import java.io.StringReader;
+import java.lang.reflect.Array;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -849,9 +850,32 @@ public class BookChecker extends AbstractArchiveChecker {
             if (!bsg.hasByteStream(page.getId())) {
                 errors.add("Cannot find file. " + page.getId() + "]");
             } else {
-//                attemptToRead(page, bsg, errors, warnings);
                 validateAgainstSchema(page.getId(), bsg, errors, warnings);
             }
+
+            // Make sure that the transcription file name matches the associated image name:
+            // FolgersHa2.aor.033v.xml must match with FolgersHa2.033v.tif
+            //     OR
+            // 0000033v.xml must match with 0000033v.tif
+//            System.out.println("Checking transcription name vs image name. [" + page.getId() + " / " + page.getPage() + "]");
+            if (page.getId().contains("aor")) {
+                String[] nameParts = page.getId().replaceAll("\\.aor", "").split("\\.");
+                String[] imageParts = page.getPage().split("\\.");
+
+                if (nameParts.length < 2 || imageParts.length < 2) {
+                    errors.add("Transcription name or associated image name has invalid format.");
+                } else if (!nameParts[nameParts.length - 2].equals(imageParts[imageParts.length - 2])) {
+                    errors.add("Transcription name does not match image name. ["
+                            + page.getId() + " / " + page.getPage() + "]");
+                }
+            } else {
+                if (!page.getId().equals(page.getPage())) {
+                    errors.add("Transcription name does not match image name. ["
+                            + page.getId() + " / " + page.getPage() + "]");
+                }
+            }
+
+
         }
     }
 
