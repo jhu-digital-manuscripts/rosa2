@@ -3,6 +3,7 @@ package rosa.archive.tool;
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
 
+import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.tool.config.ToolConfig;
 
 import java.io.IOException;
@@ -16,6 +17,8 @@ public class ToolModule extends AbstractModule {
 
     @Override
     protected void configure() {
+
+        bind(AORAnnotatedPageSerializer.class);
 
         // Properties
         Names.bindProperties(binder(), getProperties());

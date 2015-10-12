@@ -14,7 +14,8 @@ public enum Command {
     VALIDATE_XML("validate-xml"),
     RENAME_IMAGES("rename-images"),
     RENAME_TRANSCRIPTIONS("rename-transcriptions"),
-    GENERATE_TEI("generate-tei");
+    GENERATE_TEI("generate-tei"),
+    CHECK_AOR("check-aor");
 
     private String display;
 

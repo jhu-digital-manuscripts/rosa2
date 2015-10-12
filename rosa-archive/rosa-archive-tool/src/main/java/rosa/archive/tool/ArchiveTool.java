@@ -38,6 +38,7 @@ public class ArchiveTool {
     private final ToolConfig config;
     private final Store store;
     private final PrintStream report;
+    private final AORTranscriptionChecker aorTranscriptionChecker;
 
     public ArchiveTool(Store store, ToolConfig config) {
         this(store, config, System.out);
@@ -47,6 +48,7 @@ public class ArchiveTool {
         this.store = store;
         this.config = config;
         this.report = report;
+        this.aorTranscriptionChecker = new AORTranscriptionChecker();
     }
 
     @SuppressWarnings("static-access")
@@ -215,6 +217,9 @@ public class ArchiveTool {
         case GENERATE_TEI:
             deriv.convertTranscriptionTexts();
             break;
+        case CHECK_AOR:
+            aorTranscriptionChecker.run(args[1], true, report);
+            break;
         default:
             displayError("Invalid command found.", args);
             break;
@@ -259,6 +264,9 @@ public class ArchiveTool {
                 break;
             case RENAME_IMAGES:
                 deriv.renameImages(hasOption(cmd, Flag.CHANGE_ID), hasOption(cmd, Flag.REVERSE));
+                break;
+            case CHECK_AOR:
+                aorTranscriptionChecker.run(args[1], false, report);
                 break;
             default:
                 displayError("Invalid command found.", args);
