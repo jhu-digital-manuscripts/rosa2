@@ -50,6 +50,12 @@
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
+    <xs:attribute name="marginalia_id"/>
+    <xs:attribute name="marginalia_continues_to"/>
+    <xs:attribute name="marginalia_continues_from"/>
+    <xs:attribute name="marginalia_to_transcription"/>
+    <xs:attribute name="marginalia_from_transcription"/>
+    <xs:attribute name="book_id"/>
     <xs:attribute name="date"/>
     <xs:attribute name="other_reader"/>
     <xs:attribute name="topic">
@@ -95,6 +101,7 @@
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="location"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="X-ref"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="emphasis"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="internal_ref"/>
       </xs:sequence>
       <xs:attributeGroup ref="attlist.position"/>
     </xs:complexType>
@@ -156,6 +163,19 @@
   <xs:attributeGroup name="attlist.X-ref">
     <xs:attribute name="person" use="required"/>
     <xs:attribute name="book_title" use="required"/>
+    <xs:attribute name="language">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="EN"/>
+          <xs:enumeration value="EL"/>
+          <xs:enumeration value="FR"/>
+          <xs:enumeration value="IT"/>
+          <xs:enumeration value="LA"/>
+          <xs:enumeration value="ES"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="text"/>
   </xs:attributeGroup>
   <xs:element name="emphasis">
     <xs:complexType>
@@ -181,6 +201,27 @@
       </xs:simpleType>
     </xs:attribute>
     <xs:attribute name="text"/>
+  </xs:attributeGroup>
+  <xs:element name="internal_ref">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="target"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.internal_ref"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.internal_ref">
+    <xs:attribute name="text" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="target">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.target"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.target">
+    <xs:attribute name="filename" use="required"/>
+    <xs:attribute name="book_id" use="required"/>
+    <xs:attribute name="text" use="required"/>
   </xs:attributeGroup>
   <xs:element name="translation" type="xs:string"/>
   <xs:element name="underline">
@@ -240,9 +281,11 @@
           <xs:enumeration value="Mercury"/>
           <xs:enumeration value="Moon"/>
           <xs:enumeration value="Opposite_planets"/>
+          <xs:enumeration value="Saturn"/>
           <xs:enumeration value="Square"/>
           <xs:enumeration value="SS"/>
           <xs:enumeration value="Sun"/>
+          <xs:enumeration value="Venus"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -254,6 +297,7 @@
           <xs:enumeration value="left_margin"/>
           <xs:enumeration value="right_margin"/>
           <xs:enumeration value="intext"/>
+          <xs:enumeration value="full_page"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -327,6 +371,7 @@
           <xs:enumeration value="left_margin"/>
           <xs:enumeration value="right_margin"/>
           <xs:enumeration value="intext"/>
+          <xs:enumeration value="full_page"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -358,6 +403,7 @@
           <xs:enumeration value="left_margin"/>
           <xs:enumeration value="right_margin"/>
           <xs:enumeration value="intext"/>
+          <xs:enumeration value="full_page"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -428,6 +474,7 @@
           <xs:enumeration value="left_margin"/>
           <xs:enumeration value="right_margin"/>
           <xs:enumeration value="intext"/>
+          <xs:enumeration value="full_page"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>

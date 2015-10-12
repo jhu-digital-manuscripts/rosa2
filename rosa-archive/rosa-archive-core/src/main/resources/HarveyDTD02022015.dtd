@@ -10,13 +10,19 @@
 <!ELEMENT annotation (marginalia*, underline*, symbol*, mark*, numeral*, errata*, drawing*)>	
 	<!ELEMENT marginalia (language*, translation?)>
 	<!ATTLIST marginalia hand (English_secretary|Italian) #REQUIRED>
+	<!ATTLIST marginalia marginalia_id CDATA #IMPLIED>
+	<!ATTLIST marginalia marginalia_continues_to CDATA #IMPLIED>
+	<!ATTLIST marginalia marginalia_continues_from CDATA #IMPLIED>
+	<!ATTLIST marginalia marginalia_to_transcription CDATA #IMPLIED>
+	<!ATTLIST marginalia marginalia_from_transcription CDATA #IMPLIED>
+	<!ATTLIST marginalia book_id CDATA #IMPLIED>
 	<!ATTLIST marginalia date CDATA #IMPLIED>
 	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
 	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED> 
 	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
 	 	<!ELEMENT language (position*)>
 			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES) #REQUIRED> 
-				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*)>
+				<!ELEMENT position (marginalia_text*, person*, book*, location*, X-ref*, emphasis*, internal_ref*)>
 					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
 					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
 						<!ELEMENT marginalia_text (#PCDATA)>
@@ -29,10 +35,18 @@
 						<!ELEMENT X-ref EMPTY>
 							<!ATTLIST X-ref person CDATA #REQUIRED>
 							<!ATTLIST X-ref book_title CDATA #REQUIRED>
+							<!ATTLIST X-ref language (EN|EL|FR|IT|LA|ES) #IMPLIED>
+							<!ATTLIST X-ref text CDATA #IMPLIED>
 						<!ELEMENT emphasis EMPTY> 
 							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
 							<!ATTLIST emphasis type (straight|curved|dotted) #REQUIRED>
 							<!ATTLIST emphasis text CDATA #IMPLIED>
+						<!ELEMENT internal_ref (target+)> 
+						    <!ATTLIST internal_ref text CDATA #REQUIRED>
+						          <!ELEMENT target EMPTY>
+						              <!ATTLIST target filename CDATA #REQUIRED>
+						              <!ATTLIST target book_id CDATA #REQUIRED>
+						              <!ATTLIST target text CDATA #REQUIRED>
 		<!ELEMENT translation (#PCDATA)>
 	<!ELEMENT underline EMPTY>
 		<!ATTLIST underline method (chalk|pen|scoring) #REQUIRED>
@@ -40,18 +54,18 @@
 		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 		<!ATTLIST underline text CDATA #IMPLIED> 
 	<!ELEMENT symbol EMPTY>
-		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|JC|HT|LL|Mars|Mercury|Moon|Opposite_planets|Square|SS|Sun) #REQUIRED>
-		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|JC|HT|LL|Mars|Mercury|Moon|Opposite_planets|Saturn|Square|SS|Sun|Venus) #REQUIRED>
+		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
 		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 		<!ATTLIST symbol text CDATA #IMPLIED>
 	<!ELEMENT mark EMPTY>
 		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|colon|comma|dash|diacritic|dot|double_vertical_bar|equal_sign|est_mark|hash|horizontal_bar|page_break|pen_trial|plus_sign|quotation_mark|scribble|section_sign|semicolon|slash|straight_quotation_mark|tick|tilde|triple_dash|vertical_bar|X_sign) #REQUIRED>
 		<!ATTLIST mark method (chalk|pen) #REQUIRED>
-		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
 		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 		<!ATTLIST mark text CDATA #IMPLIED>
 	<!ELEMENT numeral (#PCDATA)>
-	    <!ATTLIST numeral place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+	    <!ATTLIST numeral place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
 	    <!ATTLIST numeral language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 	    <!ATTLIST numeral text CDATA #IMPLIED>
 	<!ELEMENT errata EMPTY>
@@ -61,7 +75,7 @@
 	<!ELEMENT drawing EMPTY>
 	   <!ATTLIST drawing name (face|manicule|map|florilegium) #REQUIRED>
 	   <!ATTLIST drawing method (chalk|pen) #REQUIRED>
-	   <!ATTLIST drawing place (head|tail|left_margin|right_margin|intext) #REQUIRED>
+	   <!ATTLIST drawing place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
 	   <!ATTLIST drawing language (EN|EL|FR|IT|LA|ES) #IMPLIED>
 	   <!ATTLIST drawing text CDATA #IMPLIED>
 	
