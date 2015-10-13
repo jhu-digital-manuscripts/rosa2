@@ -18,6 +18,7 @@ public class ToolModule extends AbstractModule {
     @Override
     protected void configure() {
 
+        bind(AORTranscriptionChecker.class);
         bind(AORAnnotatedPageSerializer.class);
 
         // Properties

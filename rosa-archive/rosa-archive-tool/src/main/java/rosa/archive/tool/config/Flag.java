@@ -8,7 +8,8 @@ public enum Flag {
     CHECK_BITS("b", "checkBits"),
     FORCE("f", "force"),
     CHANGE_ID("I", "change-id"),
-    REVERSE("R", "reverse");
+    REVERSE("R", "reverse"),
+    SPREADSHEET_DIR("S", "spreadsheet-dir");
 
     private String longName;
     private String shortName;

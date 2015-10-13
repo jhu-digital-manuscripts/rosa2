@@ -38,7 +38,7 @@ public class ArchiveTool {
     private final ToolConfig config;
     private final Store store;
     private final PrintStream report;
-    private final AORTranscriptionChecker aorTranscriptionChecker;
+    private AORTranscriptionChecker aorTranscriptionChecker;
 
     public ArchiveTool(Store store, ToolConfig config) {
         this(store, config, System.out);
@@ -48,7 +48,6 @@ public class ArchiveTool {
         this.store = store;
         this.config = config;
         this.report = report;
-        this.aorTranscriptionChecker = new AORTranscriptionChecker();
     }
 
     @SuppressWarnings("static-access")
@@ -109,6 +108,11 @@ public class ArchiveTool {
                             "then this option will reverse that relationship, going from two -> one. This will " +
                             "have the effect of returning the images to their original names.");
             break;
+        case CHECK_AOR:
+            options.addOption(Flag.SPREADSHEET_DIR.shortName(), Flag.SPREADSHEET_DIR.longName(), true,
+                    "Specifies the directory in which the reference spreadsheets exist. " +
+                            "Books.xlsx, People.xlsx, Locations.xlsx");
+            break;
         case GENERATE_TEI:
             // No options
             break;
@@ -140,6 +144,8 @@ public class ArchiveTool {
                 injector.getInstance(BookCollectionChecker.class), base);
 
         ArchiveTool tool = new ArchiveTool(store, config);
+        tool.aorTranscriptionChecker = injector.getInstance(AORTranscriptionChecker.class);
+
         tool.run(cmd);
     }
 
@@ -218,7 +224,8 @@ public class ArchiveTool {
             deriv.convertTranscriptionTexts();
             break;
         case CHECK_AOR:
-            aorTranscriptionChecker.run(args[1], true, report);
+            String sheet_dir = cmd.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
+            aorTranscriptionChecker.run(args[1], true, sheet_dir, report);
             break;
         default:
             displayError("Invalid command found.", args);
@@ -266,7 +273,8 @@ public class ArchiveTool {
                 deriv.renameImages(hasOption(cmd, Flag.CHANGE_ID), hasOption(cmd, Flag.REVERSE));
                 break;
             case CHECK_AOR:
-                aorTranscriptionChecker.run(args[1], false, report);
+                String sheet_dir = cmd.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
+                aorTranscriptionChecker.run(args[1], false, sheet_dir, report);
                 break;
             default:
                 displayError("Invalid command found.", args);

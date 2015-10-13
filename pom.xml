@@ -36,6 +36,7 @@
         <gin.version>2.1.2</gin.version>
         <gwt.version>2.6.1</gwt.version>
         <jsonld-java.version>0.5.1</jsonld-java.version>
+        <apache.poi.version>3.13</apache.poi.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons-io.version>2.4</commons-io.version>
         <commons-codec.version>1.9</commons-codec.version>
@@ -102,6 +103,18 @@
                 <groupId>com.github.jsonld-java</groupId>
                 <artifactId>jsonld-java</artifactId>
                 <version>${jsonld-java.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${apache.poi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${apache.poi.version}</version>
             </dependency>
 
             <dependency>
