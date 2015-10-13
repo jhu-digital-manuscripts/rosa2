@@ -30,18 +30,34 @@ public class AORTranscriptionChecker {
     private class MultiValue {
         final String primary;
         final Set<String> alternates;
+        final Set<String> lowerCase;
 
         public MultiValue(String primary) {
             this.primary = primary;
             this.alternates = new HashSet<>();
+            this.lowerCase = new HashSet<>();
         }
 
         void addAlternate(String alt) {
             alternates.add(alt);
+            lowerCase.add(alt.toLowerCase());
         }
 
         boolean hasValue(String val) {
             return primary.equals(val) || alternates.contains(val);
+        }
+
+        boolean hasValueIgnoreCase(String val) {
+            return primary.toLowerCase().equals(val.toLowerCase())
+                    || lowerCase.contains(val.toLowerCase());
+        }
+
+        /**
+         * @param val value to check
+         * @return is val equal to primary, ignoring case
+         */
+        boolean isValueIgnoreCase(String val) {
+            return primary.toLowerCase().equals(val.toLowerCase());
         }
     }
 
@@ -252,30 +268,58 @@ public class AORTranscriptionChecker {
         }
 
         boolean good = false;
+        boolean changeCapitalization = false;
         boolean isAlternate = false;
+        boolean isAlternateChangeCapitalization = false;
 
         int alternateRow = -1;
+        String spreadsheetId = null;
         for (int i = 0; i < reference.size(); i++) {
             MultiValue val = reference.get(i);
 
+            // Find the 'toCheck' string with different conditions
             if (toCheck.equals(val.primary)) {
+                // Check ID exact
                 good = true;
                 break;
+            } else if (val.isValueIgnoreCase(toCheck)) {
+                // Check ID ignore case
+                changeCapitalization = true;
+                spreadsheetId = val.primary;
+                break;
             } else if (val.hasValue(toCheck)) {
+                // Check alternate spellings exact
                 isAlternate = true;
                 alternateRow = i;
+                spreadsheetId = val.primary;
+                break;
+            } else if (val.hasValueIgnoreCase(toCheck)) {
+                // Check alternate spellings ignore case
+                isAlternateChangeCapitalization = true;
+                alternateRow = i;
+                spreadsheetId = val.primary;
+                break;
             }
         }
 
+        // Print relevant error messages
         if (!good) {
             report.print("  " + reportPrefix);
             report.print(" [" + toCheck + "] was not found in spreadsheet. ");
-        }
-        if (isAlternate) {
-            report.print("  " + reportPrefix);
-            report.print(" [" + toCheck + "] was found as an alternate spelling on row (" + alternateRow + ")");
-        }
-        if (!good || isAlternate) {
+
+            if (changeCapitalization) {
+                report.print(" was found with different capitalization. (spreadsheetID=" + spreadsheetId + ")");
+            }
+            if (isAlternate) {
+                report.print(" [" + toCheck + "] was found as an alternate spelling on row ("
+                        + alternateRow + ") under ID (spreadsheetID=" + spreadsheetId + ")");
+            }
+            if (isAlternateChangeCapitalization) {
+                report.print(" [" + toCheck + "] was found as an alternate spelling on row ("
+                        + alternateRow + ") with different capitalization under ID (spreadsheetID="
+                        + spreadsheetId + ")");
+            }
+
             report.println();
         }
     }
