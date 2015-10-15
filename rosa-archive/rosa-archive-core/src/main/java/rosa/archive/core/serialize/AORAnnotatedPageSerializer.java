@@ -244,14 +244,14 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                         Element e = newElement(TAG_BOOK, posEl, doc);
                         setAttribute(e, ATTR_TITLE, book);
                     }
+                    for (String location : pos.getLocations()) {
+                        Element e = newElement(TAG_LOCATION, posEl, doc);
+                        setAttribute(e, ATTR_NAME, location);
+                    }
                     for (XRef xRef : pos.getxRefs()) {
                         Element e = newElement(TAG_X_REF, posEl, doc);
                         setAttribute(e, ATTR_PERSON, xRef.getPerson());
                         setAttribute(e, ATTR_BOOK_TITLE, xRef.getTitle());
-                    }
-                    for (String location : pos.getLocations()) {
-                        Element e = newElement(TAG_LOCATION, posEl, doc);
-                        setAttribute(e, ATTR_NAME, location);
                     }
                     for (Underline underline : pos.getEmphasis()) {
                         Element e = newElement(TAG_EMPHASIS, posEl, doc);
@@ -260,6 +260,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                         setAttribute(e, ATTR_TYPE, underline.getType());
                         setAttribute(e, ATTR_LANGUAGE, underline.getLanguage());
                     }
+                    // TODO add <internal_ref>
                 }
             }
 

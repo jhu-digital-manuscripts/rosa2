@@ -178,8 +178,8 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         assertNotEquals("Annotation lists for 1r.all and 11r.all should NOT be equal.", l1, l2);
         assertNotEquals("Annotation lists for 1r.all and 11r.all should have differnt sizes", l1.size(), l2.size());
 
-        assertEquals("Unexpected number of annotations in 1r.all", 46, l1.size());
-        assertEquals("Unexpected number of annotations in 11r.all", 74, l2.size());
+        assertEquals("Unexpected number of annotations in 1r.all", 9, l1.size());
+        assertEquals("Unexpected number of annotations in 11r.all", 12, l2.size());
 
         AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "front matter 1r.all");
         assertNotNull("Failed to create AnnotationList for front matter 1r", ll);

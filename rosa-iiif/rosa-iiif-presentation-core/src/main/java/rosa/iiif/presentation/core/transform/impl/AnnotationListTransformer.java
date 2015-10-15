@@ -13,7 +13,6 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
-import rosa.iiif.image.core.UriUtil;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
@@ -137,21 +136,22 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
                     annotations.addAll(adaptMarginalia(collection, book.getId(), marg, image));
                 }
                 break;
-            case MARK:
-                for (rosa.archive.model.aor.Annotation ann : aPage.getMarks()) {
-                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-                }
-                break;
+//            case MARK:
+//                for (rosa.archive.model.aor.Annotation ann : aPage.getMarks()) {
+//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
+//                }
+//                break;
             case SYMBOL:
                 for (rosa.archive.model.aor.Annotation ann : aPage.getSymbols()) {
                     annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
                 }
                 break;
-            case UNDERLINE:
-                for (rosa.archive.model.aor.Annotation ann : aPage.getUnderlines()) {
-                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-                }
-                break;
+//            // Underlines will not become annotations.
+//            case UNDERLINE:
+//                for (rosa.archive.model.aor.Annotation ann : aPage.getUnderlines()) {
+//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
+//                }
+//                break;
             case NUMBERAL:
                 for (rosa.archive.model.aor.Annotation ann : aPage.getNumerals()) {
                     annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
@@ -297,7 +297,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         a.setType(IIIFNames.OA_ANNOTATION);
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.setDefaultSource(new AnnotationSource(
-                "URI", IIIFNames.DC_TEXT, "text/html", anno.toPrettyString(), "en"
+                "URI", IIIFNames.DC_TEXT, "text/html",
+                anno.toPrettyString(),
+                (anno.getLanguage() != null && !anno.getLanguage().isEmpty() ? anno.getLanguage() : "en")
         )); // TODO ask about this, we might not need to make these resolvable
 
         a.setDefaultTarget(locationOnCanvas(image, anno.getLocation()));
@@ -324,23 +326,116 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     private List<Annotation> adaptMarginalia(BookCollection collection, String book, Marginalia marg, BookImage image) {
         List<Annotation> annotations = new ArrayList<>();
         for (MarginaliaLanguage lang : marg.getLanguages()) {
-            for (Position pos : lang.getPositions()) {
-                Annotation anno = new Annotation();
-                String label = image.getName() + "_" + annotation_counter++;
+//            for (Position pos : lang.getPositions()) {
+//                Annotation anno = new Annotation();
+//                String label = image.getName() + "_" + annotation_counter++;
+//
+//                anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
+//                anno.setMotivation(IIIFNames.SC_PAINTING);
+//                anno.setDefaultSource(new AnnotationSource(
+//                        "URI", IIIFNames.DC_TEXT, "text/html",
+//                        pos.getTexts().toString(), lang.getLang()
+//                ));
+//                anno.setDefaultTarget(locationOnCanvas(image, pos.getPlace()));
+//
+//                annotations.add(anno);
+//            }
+            Annotation anno = new Annotation();
+            String label = image.getName() + "_" + annotation_counter++;
 
-                anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
-                anno.setMotivation(IIIFNames.SC_PAINTING);
-                anno.setDefaultSource(new AnnotationSource(
-                        "URI", IIIFNames.DC_TEXT, "text/html",
-                        pos.getTexts().toString(), lang.getLang()
-                )); // TODO ask about this, we might not need to make these resolvable
-                anno.setDefaultTarget(locationOnCanvas(image, pos.getPlace()));
+            anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
+            anno.setMotivation(IIIFNames.SC_PAINTING);
+            anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
+                    marginaliaToDisplayHtml(marg), lang.getLang()
+            ));
+//            anno.setDefaultTarget(locationOnCanvas(image, pos.getPlace()));
+            anno.setDefaultTarget(locationOnCanvas(image, Location.FULL_PAGE)); // TODO actual position(s)
 
-                annotations.add(anno);
-            }
+            annotations.add(anno);
         }
 
         return annotations;
+    }
+
+    private String marginaliaToDisplayHtml(Marginalia marg) {
+
+
+        String transcription = null;
+        List<String> people = new ArrayList<>();
+        List<String> books = new ArrayList<>();
+        List<String> locs = new ArrayList<>();
+        // TODO X-refs
+//        List<String> emphasis = new ArrayList<>();
+
+        for (MarginaliaLanguage lang : marg.getLanguages()) {
+            for (Position pos : lang.getPositions()) {
+                transcription = listToString(pos.getTexts());
+                people.addAll(pos.getPeople());
+                books.addAll(pos.getBooks());
+                locs.addAll(pos.getLocations());
+
+//                for (Underline u : pos.getEmphasis()) {
+//                    emphasis.add(u.toPrettyString());
+//                }
+            }
+        }
+
+        StringBuilder sb = new StringBuilder("<div>");
+        sb.append("<p style=\"font-weight:bold;\">");
+        sb.append(transcription);
+        sb.append("</p>");
+
+        if (marg.getTranslation() != null && !marg.getTranslation().isEmpty()) {
+            sb.append("<p style=\"font-style:italic;\">[");
+            sb.append(marg.getTranslation());
+            sb.append("]</p>");
+        }
+
+        if (!people.isEmpty()) {
+            sb.append("<p>People: ");
+            for (int i = 0; i < people.size(); i++) {
+                if (i > 0) {
+                    sb.append(", ");
+                }
+                // TODO Will be a link eventually!
+                sb.append(people.get(i));
+            }
+            sb.append("</p>");
+        }
+
+        if (!books.isEmpty()) {
+            sb.append("<p>Books: ");
+            for (int i = 0; i < books.size(); i++) {
+                if (i > 0) {
+                    sb.append(", ");
+                }
+                sb.append(books.get(i));
+            }
+            sb.append("</p>");
+        }
+
+        if (!locs.isEmpty()) {
+            sb.append("<p>Locations: ");
+            for (int i = 0; i < locs.size(); i++) {
+                if (i > 0) {
+                    sb.append(", ");
+                }
+                sb.append(locs.get(i));
+            }
+            sb.append("</p>");
+        }
+
+        sb.append("</div>");
+        return sb.toString();
+    }
+
+    private String listToString(List<String> list) {
+        StringBuilder sb = new StringBuilder();
+        for (String str : list) {
+            sb.append(str);
+            sb.append(' ');
+        }
+        return sb.toString();
     }
 
     /**
@@ -350,7 +445,11 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
      * @param location location on the canvas
      * @return the annotation target
      */
-    protected AnnotationTarget locationOnCanvas(BookImage image, Location location) {
+    protected AnnotationTarget locationOnCanvas(BookImage image, Location ... location) {
+        if (location == null || location.length == 0) {
+            return new AnnotationTarget(image.getId(), null);
+        }
+
         double margin_guess = 0.10;
 
         int x = 0;
@@ -360,31 +459,37 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
 
         AnnotationTarget target = new AnnotationTarget(image.getId());
 
-        switch (location) {
-            case HEAD:
-                h = (int) (image.getHeight() * margin_guess);
-                break;
-            case TAIL:
-                y = (int) (image.getHeight() * (1 - margin_guess));
-                h = (int) (image.getHeight() * margin_guess);
-                break;
-            case LEFT_MARGIN:
-                w = (int) (image.getWidth() * margin_guess);
-                break;
-            case RIGHT_MARGIN:
-                x = (int) (image.getWidth() * (1 - margin_guess));
-                w = (int) (image.getWidth() * margin_guess);
-                break;
-            case INTEXT:
-                x = (int) (image.getWidth() * margin_guess);
-                y = (int) (image.getHeight() * margin_guess);
-                w = (int) (image.getWidth() * (1 - 2 * margin_guess));
-                h = (int) (image.getHeight() * (1 - 2 * margin_guess));
-                break;
-            case FULL_PAGE:
-                return new AnnotationTarget(image.getId(), null);
-            default:
-                throw new IllegalArgumentException("Invalid Location. [" + location + "]");
+        // This will overwrite the previous locations...
+        for (Location loc : location) {
+            switch (loc) {
+                case HEAD:
+                    h = (int) (image.getHeight() * margin_guess);
+                    break;
+                case TAIL:
+                    y = (int) (image.getHeight() * (1 - margin_guess));
+                    h = (int) (image.getHeight() * margin_guess);
+                    break;
+                case LEFT_MARGIN:
+                    w = (int) (image.getWidth() * margin_guess);
+                    break;
+                case RIGHT_MARGIN:
+                    x = (int) (image.getWidth() * (1 - margin_guess));
+                    w = (int) (image.getWidth() * margin_guess);
+                    break;
+                case INTEXT:
+                    x = (int) (image.getWidth() * margin_guess);
+                    y = (int) (image.getHeight() * margin_guess);
+                    w = (int) (image.getWidth() * (1 - 2 * margin_guess));
+                    h = (int) (image.getHeight() * (1 - 2 * margin_guess));
+                    break;
+                case FULL_PAGE:
+                    // Where Full Page shouldn't need to have a region defined,
+                    // Return the full page region because Mirador is misbehaving........................... :)
+//                    return new AnnotationTarget(image.getId(), null);
+                    break;
+                default:
+                    throw new IllegalArgumentException("Invalid Location. [" + loc + "]");
+            }
         }
 
         target.setSelector(new FragmentSelector(x, y, w, h));
