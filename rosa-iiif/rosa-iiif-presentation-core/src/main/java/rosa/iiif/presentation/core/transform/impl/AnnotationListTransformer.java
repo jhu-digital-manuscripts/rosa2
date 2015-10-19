@@ -325,42 +325,27 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
      */
     private List<Annotation> adaptMarginalia(BookCollection collection, String book, Marginalia marg, BookImage image) {
         List<Annotation> annotations = new ArrayList<>();
-        for (MarginaliaLanguage lang : marg.getLanguages()) {
-//            for (Position pos : lang.getPositions()) {
-//                Annotation anno = new Annotation();
-//                String label = image.getName() + "_" + annotation_counter++;
-//
-//                anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
-//                anno.setMotivation(IIIFNames.SC_PAINTING);
-//                anno.setDefaultSource(new AnnotationSource(
-//                        "URI", IIIFNames.DC_TEXT, "text/html",
-//                        pos.getTexts().toString(), lang.getLang()
-//                ));
-//                anno.setDefaultTarget(locationOnCanvas(image, pos.getPlace()));
-//
-//                annotations.add(anno);
-//            }
-            Annotation anno = new Annotation();
-            String label = image.getName() + "_" + annotation_counter++;
 
-            anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
-            anno.setMotivation(IIIFNames.SC_PAINTING);
-            anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
-                    marginaliaToDisplayHtml(marg), lang.getLang()
-            ));
-//            anno.setDefaultTarget(locationOnCanvas(image, pos.getPlace()));
-            anno.setDefaultTarget(locationOnCanvas(image, Location.FULL_PAGE)); // TODO actual position(s)
+        String lang = marg.getLanguages() != null && marg.getLanguages().size() > 0
+                ? marg.getLanguages().get(0).getLang() : "en";
 
-            annotations.add(anno);
-        }
+        Annotation anno = new Annotation();
+        String label = image.getName() + "_" + annotation_counter++;
+
+        anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
+        anno.setMotivation(IIIFNames.SC_PAINTING);
+        anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
+                marginaliaToDisplayHtml(marg), lang));
+        anno.setDefaultTarget(locationOnCanvas(image, Location.FULL_PAGE)); // TODO actual position(s)
+
+        annotations.add(anno);
 
         return annotations;
     }
 
     private String marginaliaToDisplayHtml(Marginalia marg) {
 
-
-        String transcription = null;
+        String transcription = "";
         List<String> people = new ArrayList<>();
         List<String> books = new ArrayList<>();
         List<String> locs = new ArrayList<>();
@@ -369,30 +354,34 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
 
         for (MarginaliaLanguage lang : marg.getLanguages()) {
             for (Position pos : lang.getPositions()) {
-                transcription = listToString(pos.getTexts());
+                transcription += listToString(pos.getTexts());
                 people.addAll(pos.getPeople());
                 books.addAll(pos.getBooks());
                 locs.addAll(pos.getLocations());
 
+                /*
+                    TODO emphasis: perhaps find the emphasized text in transcription
+                    and underline it?
+                 */
 //                for (Underline u : pos.getEmphasis()) {
-//                    emphasis.add(u.toPrettyString());
+//                    emphasis.add(u.getReferringText());
 //                }
             }
         }
 
         StringBuilder sb = new StringBuilder("<div>");
-        sb.append("<p style=\"font-weight:bold;\">");
+        sb.append("<p>");
         sb.append(transcription);
         sb.append("</p>");
 
         if (marg.getTranslation() != null && !marg.getTranslation().isEmpty()) {
-            sb.append("<p style=\"font-style:italic;\">[");
+            sb.append("<p class=\"italic\">[");
             sb.append(marg.getTranslation());
             sb.append("]</p>");
         }
 
         if (!people.isEmpty()) {
-            sb.append("<p>People: ");
+            sb.append("<p><span class=\"emphasize\">People:</span> ");
             for (int i = 0; i < people.size(); i++) {
                 if (i > 0) {
                     sb.append(", ");
@@ -404,7 +393,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         }
 
         if (!books.isEmpty()) {
-            sb.append("<p>Books: ");
+            sb.append("<p><span class=\"emphasize\">Books:</span> ");
             for (int i = 0; i < books.size(); i++) {
                 if (i > 0) {
                     sb.append(", ");
@@ -415,7 +404,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         }
 
         if (!locs.isEmpty()) {
-            sb.append("<p>Locations: ");
+            sb.append("<p><span class=\"emphasize\">Locations:</span> ");
             for (int i = 0; i < locs.size(); i++) {
                 if (i > 0) {
                     sb.append(", ");
