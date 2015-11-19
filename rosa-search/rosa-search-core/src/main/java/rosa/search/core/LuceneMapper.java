@@ -54,6 +54,16 @@ import rosa.archive.model.ImageList;
 import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
+import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Drawing;
+import rosa.archive.model.aor.Errata;
+import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.MarginaliaLanguage;
+import rosa.archive.model.aor.Mark;
+import rosa.archive.model.aor.Numeral;
+import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.Symbol;
+import rosa.archive.model.aor.Underline;
 import rosa.archive.model.redtag.Item;
 import rosa.archive.model.redtag.Rubric;
 import rosa.archive.model.redtag.StructureColumn;
@@ -287,8 +297,13 @@ public class LuceneMapper {
             for (BookImage image : images.getImages()) {
                 Document doc = new Document();
 
+                // Index Rose transcriptions
                 index(doc, col, book, image,
                         transcriptionMap != null ? transcriptionMap.get(getStandardPage(image)) : null);
+
+                // Index AoR transcriptions
+                index(doc, col, book, image, book.getAnnotationPage(getStandardPage(image)));
+
                 result.add(doc);
             }
         }
@@ -552,6 +567,136 @@ public class LuceneMapper {
                         + image.getName() + "]", e);
             }
         }
+    }
+
+    /**
+     * Index all information about the AoR transcriptions.
+     *
+     * <ul>
+     * <li>image ID</li>
+     * <li>image short name</li>
+     * <li>reader</li>
+     * <li>pagination</li>
+     * <li>signature</li>
+     * <li>underlined text</li>
+     * <li>symbols</li>
+     * <li>marks</li>
+     * <li>marginalia translation</li>
+     * <li>marginalia transcription?</li>
+     * <li>marginalia references to books, both internal to corpus and external</li>
+     * <li>marginalia references to people</li>
+     * <li>marginalia references to locations</li>
+     * <li>errata</li>
+     * <li>drawing</li>
+     * <li>numerals</li>
+     * </ul>
+     *
+     * @param doc Lucene document
+     * @param col BookCollection obj
+     * @param book Book obj
+     * @param image this image
+     * @param annotatedPage transcriptions of AoR annotations on this page
+     */
+    private void index(Document doc, BookCollection col, Book book, BookImage image, AnnotatedPage annotatedPage) {
+        add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image.getId()));
+        add_field(doc, SearchFields.COLLECTION_ID, col.getId());
+        add_field(doc, SearchFields.BOOK_ID, book.getId());
+        add_field(doc, SearchFields.IMAGE_NAME, image.getName());
+
+        add_field(doc, SearchFields.AOR_READER, annotatedPage.getReader());
+        add_field(doc, SearchFields.AOR_PAGINATION, annotatedPage.getPagination());
+        add_field(doc, SearchFields.AOR_SIGNATURE, annotatedPage.getSignature());
+
+        // Symbols
+        StringBuilder toIndex = new StringBuilder();
+        for (Symbol s : annotatedPage.getSymbols()) {
+            toIndex.append(s.getName());
+            toIndex.append(' ');
+        }
+        add_field(doc, SearchFields.AOR_SYMBOLS, toIndex.toString());
+
+        // Marks
+        toIndex = new StringBuilder();
+        for (Mark m : annotatedPage.getMarks()) {
+            toIndex.append(m.getName());
+            toIndex.append(' ');
+        }
+        add_field(doc, SearchFields.AOR_MARKS, toIndex.toString());
+
+        // Errata
+        toIndex = new StringBuilder();
+        for (Errata e : annotatedPage.getErrata()) {
+            toIndex.append(e.getCopyText());
+            toIndex.append(' ');
+            toIndex.append(e.getAmendedText());
+            toIndex.append(' ');
+        }
+        add_field(doc, SearchFields.AOR_ERRATA, toIndex.toString());
+
+        // Drawing
+        toIndex = new StringBuilder();
+        for (Drawing d : annotatedPage.getDrawings()) {
+            toIndex.append(d.getName());
+            toIndex.append(' ');
+        }
+        add_field(doc, SearchFields.AOR_DRAWINGS, toIndex.toString());
+
+        // Numeral
+        toIndex = new StringBuilder();
+        for (Numeral n : annotatedPage.getNumerals()) {
+            toIndex.append(n.getReferringText());
+            toIndex.append(' ');
+        }
+
+        // Underlines
+        StringBuilder underlines = new StringBuilder();
+        for (Underline u : annotatedPage.getUnderlines()) {
+            if (u.getReferringText() != null && !u.getReferringText().isEmpty()) {
+                underlines.append(u.getReferringText());
+                underlines.append(' ');
+            }
+        }
+
+        // Marginalia
+        StringBuilder transcription = new StringBuilder();
+        StringBuilder translation = new StringBuilder();
+        StringBuilder books = new StringBuilder();
+        StringBuilder people = new StringBuilder();
+        StringBuilder locations = new StringBuilder();
+        for (Marginalia m : annotatedPage.getMarginalia()) {
+            translation.append(m.getTranslation());
+            translation.append(' ');
+
+            for (MarginaliaLanguage lang : m.getLanguages()) {
+                for (Position pos : lang.getPositions()) {
+                    transcription.append(listToString(pos.getTexts()));
+                    books.append(listToString(pos.getBooks()));
+                    people.append(listToString(pos.getPeople()));
+                    locations.append(listToString(pos.getLocations()));
+
+                    for (Underline u : pos.getEmphasis()) {
+                        underlines.append(u.getReferringText());
+                        underlines.append(' ');
+                    }
+                }
+            }
+        }
+
+        add_field(doc, SearchFields.AOR_UNDERLINES, underlines.toString());
+        add_field(doc, SearchFields.AOR_MARGINALIA_TRANSCRIPTIONS, transcription.toString());
+        add_field(doc, SearchFields.AOR_MARGINALIA_TRANSLATIONS, translation.toString());
+        add_field(doc, SearchFields.AOR_MARGINALIA_BOOKS, books.toString());
+        add_field(doc, SearchFields.AOR_MARGINALIA_PEOPLE, people.toString());
+        add_field(doc, SearchFields.AOR_MARGINALIA_LOCATIONS, locations.toString());
+    }
+
+    private String listToString(List<String> list) {
+        StringBuilder sb = new StringBuilder();
+        for (String str : list) {
+            sb.append(str.trim());
+            sb.append(' ');
+        }
+        return sb.toString();
     }
 
     // Find the page side from the reduced tagging corresponding to an image id
