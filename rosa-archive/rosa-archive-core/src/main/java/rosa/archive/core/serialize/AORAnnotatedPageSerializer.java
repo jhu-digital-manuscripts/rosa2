@@ -29,12 +29,14 @@ import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Errata;
+import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
@@ -480,6 +482,25 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                                     el.getAttribute(ATTR_BOOK_TITLE) : el.getAttribute(ATTR_TITLE));
                     xRefs.add(xRef);
                     break;
+                case TAG_INTERNAL_REF:
+                    InternalReference ref = new InternalReference();
+                    ref.setText(el.getAttribute(ATTR_TEXT));
+
+                    // Build targets
+                    NodeList children = el.getChildNodes();
+                    for (int j = 0; j < children.getLength(); j++) {
+                        if (children.item(i).getNodeType() == Node.ELEMENT_NODE) {
+                            Element child = (Element) children.item(i);
+
+                            if (child.getNodeName().equals(TAG_TARGET)) {
+                                ref.addTargets(new ReferenceTarget(
+                                        child.getAttribute(ATTR_FILENAME),
+                                        child.getAttribute(ATTR_BOOK_ID),
+                                        child.getAttribute(ATTR_TEXT)
+                                ));
+                            }
+                        }
+                    }
                 default:
                     break;
             }
