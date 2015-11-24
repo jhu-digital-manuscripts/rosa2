@@ -15,7 +15,7 @@ public class Position implements Serializable {
     List<String> locations;
     List<XRef> xRefs;
     List<Underline> emphasis;
-    List<InternalReference> references;
+    List<InternalReference> internalRefs;
 
     public Position() {
         texts = new ArrayList<>();
@@ -24,7 +24,7 @@ public class Position implements Serializable {
         locations = new ArrayList<>();
         xRefs = new ArrayList<>();
         emphasis = new ArrayList<>();
-        references = new ArrayList<>();
+        internalRefs = new ArrayList<>();
     }
 
     public List<String> getTexts() {
@@ -91,12 +91,12 @@ public class Position implements Serializable {
         this.xRefs = xRefs;
     }
 
-    public List<InternalReference> getReferences() {
-        return references;
+    public List<InternalReference> getInternalRefs() {
+        return internalRefs;
     }
 
-    public void setReferences(List<InternalReference> references) {
-        this.references = references;
+    public void setInternalRefs(List<InternalReference> internalRefs) {
+        this.internalRefs = internalRefs;
     }
 
     @Override
@@ -114,7 +114,7 @@ public class Position implements Serializable {
         if (locations != null ? !locations.equals(position.locations) : position.locations != null) return false;
         if (xRefs != null ? !xRefs.equals(position.xRefs) : position.xRefs != null) return false;
         if (emphasis != null ? !emphasis.equals(position.emphasis) : position.emphasis != null) return false;
-        return !(references != null ? !references.equals(position.references) : position.references != null);
+        return !(internalRefs != null ? !internalRefs.equals(position.internalRefs) : position.internalRefs != null);
 
     }
 
@@ -128,7 +128,7 @@ public class Position implements Serializable {
         result = 31 * result + (locations != null ? locations.hashCode() : 0);
         result = 31 * result + (xRefs != null ? xRefs.hashCode() : 0);
         result = 31 * result + (emphasis != null ? emphasis.hashCode() : 0);
-        result = 31 * result + (references != null ? references.hashCode() : 0);
+        result = 31 * result + (internalRefs != null ? internalRefs.hashCode() : 0);
         return result;
     }
 
@@ -143,7 +143,7 @@ public class Position implements Serializable {
                 ", locations=" + locations +
                 ", xRefs=" + xRefs +
                 ", emphasis=" + emphasis +
-                ", references=" + references +
+                ", internalRefs=" + internalRefs +
                 '}';
     }
 }

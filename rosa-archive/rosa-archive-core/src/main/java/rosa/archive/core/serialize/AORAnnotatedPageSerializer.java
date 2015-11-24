@@ -262,7 +262,17 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                         setAttribute(e, ATTR_TYPE, underline.getType());
                         setAttribute(e, ATTR_LANGUAGE, underline.getLanguage());
                     }
-                    // TODO add <internal_ref>
+                    for (InternalReference ref : pos.getInternalRefs()) {
+                        Element e = newElement(TAG_INTERNAL_REF, posEl, doc);
+                        setAttribute(e, ATTR_TEXT, ref.getText());
+
+                        for (ReferenceTarget target : ref.getTargets()) {
+                            Element et = newElement(TAG_TARGET, e, doc);
+                            setAttribute(et, ATTR_FILENAME, target.getFilename());
+                            setAttribute(et, ATTR_BOOK_ID, target.getBookId());
+                            setAttribute(et, ATTR_TEXT, target.getText());
+                        }
+                    }
                 }
             }
 
@@ -442,6 +452,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         List<XRef> xRefs = pos.getxRefs();
         List<String> locations = pos.getLocations();
         List<Underline> underlines = pos.getEmphasis();
+        List<InternalReference> internalRefs = pos.getInternalRefs();
 
         NodeList list = position.getChildNodes();
         for (int i = 0; i < list.getLength(); i++) {
@@ -488,19 +499,30 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
 
                     // Build targets
                     NodeList children = el.getChildNodes();
-                    for (int j = 0; j < children.getLength(); j++) {
-                        if (children.item(i).getNodeType() == Node.ELEMENT_NODE) {
-                            Element child = (Element) children.item(i);
+                    if (children == null) {
+                        System.err.println("No targets found for this reference.");
+                        break;
+                    }
 
-                            if (child.getNodeName().equals(TAG_TARGET)) {
-                                ref.addTargets(new ReferenceTarget(
-                                        child.getAttribute(ATTR_FILENAME),
-                                        child.getAttribute(ATTR_BOOK_ID),
-                                        child.getAttribute(ATTR_TEXT)
-                                ));
-                            }
+                    for (int j = 0; j < children.getLength(); j++) {
+                        Node n = children.item(j);
+                        if (n == null || n.getNodeType() != Node.ELEMENT_NODE) {
+                            continue;
+                        }
+
+                        Element child = (Element) n;
+
+                        if (child.getTagName().equals(TAG_TARGET)) {
+                            ReferenceTarget t = new ReferenceTarget(
+                                    child.getAttribute(ATTR_FILENAME),
+                                    child.getAttribute(ATTR_BOOK_ID),
+                                    child.getAttribute(ATTR_TEXT)
+                            );
+                            ref.addTargets(t);
                         }
                     }
+
+                    internalRefs.add(ref);
                 default:
                     break;
             }

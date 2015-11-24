@@ -4,6 +4,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
 
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
+import rosa.archive.core.serialize.FileMapSerializer;
 import rosa.archive.tool.config.ToolConfig;
 
 import java.io.IOException;
@@ -20,6 +21,7 @@ public class ToolModule extends AbstractModule {
 
         bind(AORTranscriptionChecker.class);
         bind(AORAnnotatedPageSerializer.class);
+        bind(FileMapSerializer.class);
 
         // Properties
         Names.bindProperties(binder(), getProperties());

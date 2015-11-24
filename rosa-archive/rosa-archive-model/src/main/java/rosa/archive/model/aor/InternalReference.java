@@ -58,7 +58,7 @@ public class InternalReference implements Serializable {
 
     public void addTargets(ReferenceTarget ... targets) {
         if (targets != null) {
-            this.targets = Arrays.asList(targets);
+            this.targets.addAll(Arrays.asList(targets));
         }
     }
 
