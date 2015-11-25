@@ -271,7 +271,11 @@ public class AORTranscriptionChecker {
 
                     String prefix = "Page [" + annotatedPage.getPage() + "]";
                     for (String book : pos.getBooks()) {
-                        checkString(book, booksList, prefix + " books - ", report);
+                        if (isEmpty(book)) {
+                            report.println("  [" + annotatedPage.getPage() + "] Found invalid book: Empty title");
+                        } else {
+                            checkString(book, booksList, prefix + " books - ", report);
+                        }
                     }
 
                     for (String person : pos.getPeople()) {
