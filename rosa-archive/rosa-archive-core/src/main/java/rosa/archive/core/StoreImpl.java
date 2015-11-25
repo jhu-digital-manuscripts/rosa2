@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -58,7 +59,7 @@ import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.Permission;
 import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.Transcription;
-import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.*;
 import rosa.archive.model.meta.MultilangMetadata;
 
 import com.google.inject.Inject;
@@ -75,6 +76,8 @@ public class StoreImpl implements Store, ArchiveConstants {
     private final ByteStreamGroup base;
     private final BookCollectionChecker collectionChecker;
     private final BookChecker bookChecker;
+
+    private FileMap directoryMap;
 
     /**
      * @param serializers object containing all required serializers
@@ -571,6 +574,8 @@ public class StoreImpl implements Store, ArchiveConstants {
 
         // Search for duplicates
         if (containsDuplicateValues(fileMap.getMap(), errors)) {
+            // If duplicate entries are found in the file map, DO NOT proceed,
+            // As  it will result in overwritten files and loss of data
             return;
         }
 
@@ -578,6 +583,7 @@ public class StoreImpl implements Store, ArchiveConstants {
             AnnotatedPage aPage = loadItem(originalName, bookStreams, AnnotatedPage.class, errors);
             String referencePage = aPage.getPage();
 
+            // Get new name
             String imageName = null;
             if (reverse) {
                 // Set 'imageName' to the key for which the value is equal to 'referencePage'
@@ -598,6 +604,10 @@ public class StoreImpl implements Store, ArchiveConstants {
             // image name. Write the AnnotationPage back to file.
             AnnotatedPage page = loadItem(originalName, bookStreams, AnnotatedPage.class, errors);
             page.setPage(imageName);
+            renameInternalReferences(base.getByteStreamGroup(collection), bookStreams, page, fileMap, reverse, errors);
+            // Must also modify any <internal_ref>s found. Their targets contain references
+            // To other transcription files in other directories
+            // Both the target file and named directory must be renamed
             writeItem(page, bookStreams, AnnotatedPage.class, errors);
 
             if (errors.isEmpty()) {
@@ -623,6 +633,100 @@ public class StoreImpl implements Store, ArchiveConstants {
                 }
             }
         }
+    }
+
+    private void renameInternalReferences(ByteStreamGroup collection, ByteStreamGroup book, AnnotatedPage aPage,
+                                          FileMap currentFileMap, boolean reverse, List<String> errors) throws IOException {
+        if (collection == null || book == null || aPage == null || currentFileMap == null) {
+            return;
+        }
+        if (directoryMap == null) {
+            loadDirectoryMap();
+        }
+
+        errors = nonNullList(errors);
+
+        for (Marginalia marg : aPage.getMarginalia()) {
+            for (MarginaliaLanguage lang : marg.getLanguages()) {
+                for (Position pos : lang.getPositions()) {
+                    for (InternalReference ref : pos.getInternalRefs()) {
+                        for (ReferenceTarget target : ref.getTargets()) {
+                            // Make sure the reference target exists
+                            String targetBook = target.getBookId();
+                            String targetFile = target.getFilename();
+
+                            if (!collection.hasByteStreamGroup(targetBook)) {
+                                // Original book name not found, check directory map
+                                targetBook = transformName(targetBook, directoryMap, true);
+                                if (!collection.hasByteStreamGroup(targetBook)) {
+                                    errors.add("[" + aPage.getId() + "] Internal reference points to a book that" +
+                                            " was not found in the archive. (" + targetBook + ")");
+                                    continue;
+                                }
+                            }
+
+                            if (!target.getBookId().equals(targetBook)) {
+                                target.setBookId(targetBook);
+                            }
+
+                            // Target book found, load file map
+                            ByteStreamGroup targetBSG = collection.getByteStreamGroup(targetBook);
+                            if (!targetBSG.hasByteStream(FILE_MAP)) {
+                                errors.add("Source: [" + aPage.getId() + "] Internal reference targets a book with" +
+                                        " no file map. Cannot transform names.");
+                                continue;
+                            }
+
+                            // WIll load a FileMap every time a <target> is encountered.......must be smarter about these loads
+                            FileMap targetFilemap = loadItem(FILE_MAP, targetBSG, FileMap.class, null);
+                            String newFile = transformName(targetFile, targetFilemap, false);
+
+                            if (!newFile.equals(targetFile)) {
+                                target.setFilename(newFile);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    private void loadDirectoryMap() throws IOException {
+        // TODO really crappy...
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("dir-map.csv")) {
+            directoryMap = serializers.getSerializer(FileMap.class).read(in, null);
+        }
+    }
+
+    /**
+     * Look for a name within a file map and return the mapped name. This method will attempt to
+     * look in both directions for a mapping if requested:
+     *
+     * original -> target
+     *   AND
+     * target -> original
+     *
+     * The original name itself will be returned if no mapping is found.
+     *
+     * @param name name to transform
+     * @param fileMap file map containing name mappings
+     * @param twoway attempt to find target -> original relation
+     * @return transformed name
+     */
+    private String transformName(String name, FileMap fileMap, boolean twoway) {
+        Map<String, String> map = fileMap.getMap();
+        if (map.containsKey(name)) {
+            return map.get(name);
+        } else if (twoway){
+            for (Map.Entry<String, String> entry: map.entrySet()) {
+                if (entry.getValue().equals(name)) {
+                    return entry.getKey();
+                }
+            }
+        }
+
+        return name;
     }
 
     @Override
