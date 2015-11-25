@@ -208,6 +208,7 @@ public class AORTranscriptionChecker {
                 try (InputStream xmlIn = Files.newInputStream(xmlPath)) {
 
                     AnnotatedPage aorPage = serializer.read(xmlIn, errors);
+                    aorPage.setId(transcriptionName);
 
                     if (!errors.isEmpty()) {
                         report.println("  Errors for transcription [" + transcriptionName + ":");
@@ -272,7 +273,7 @@ public class AORTranscriptionChecker {
                     String prefix = "Page [" + annotatedPage.getPage() + "]";
                     for (String book : pos.getBooks()) {
                         if (isEmpty(book)) {
-                            report.println("  [" + annotatedPage.getPage() + "] Found invalid book: Empty title");
+                            report.println("  [" + annotatedPage.getId() + "] Found invalid book: Empty title");
                         } else {
                             checkString(book, booksList, prefix + " books - ", report);
                         }
@@ -399,7 +400,7 @@ public class AORTranscriptionChecker {
 
                             // Check Book ID
                             if (isEmpty(bookId)) {
-                                report.println("  Internal reference book_id is blank. (" + aPage.getPage() + ")"
+                                report.println("  [" + aPage.getId() + "]Internal reference book_id is blank. "
                                         + target.toString());
                                 continue;
                             }
@@ -408,8 +409,8 @@ public class AORTranscriptionChecker {
                                 // If names don't exist, first apply the git-archive mapping and recheck
                                 desiredPath = colPath.resolve(tryFileMap(bookId));
                                 if (!Files.exists(desiredPath) || !Files.isDirectory(desiredPath)) {
-                                    report.println("  Internal reference target book_id is invalid or does not exist " +
-                                            "(" + bookId + ")");
+                                    report.println("  [" + aPage.getId() + "] Internal reference target " +
+                                            "book_id is invalid or does not exist (" + bookId + ")");
                                     // Might as well continue, since the file cannot be searched for...
                                     continue;
                                 }
@@ -418,19 +419,19 @@ public class AORTranscriptionChecker {
 
                             // Check filename
                             if (isEmpty(filename)) {
-                                report.println("  [" + aPage.getPage() + "] Internal reference 'filename' is " +
+                                report.println("  [" + aPage.getId() + "] Internal reference 'filename' is " +
                                         "blank. " + target.toString());
                                 return;
                             }
                             if (!filename.endsWith(".xml")) {
                                 // Must be an XML target
-                                report.println("  [" + aPage.getPage() + "] Internal reference filename is " +
-                                        "invalid: must target an XML transcription. (" + filename + ")");
+                                report.println("  [" + aPage.getId() + "] Internal reference filename is " +
+                                        "invalid: must target an XML transcription. (filename=\"" + filename + "\")");
                             } else {
                                 Path desiredFile = desiredPath.resolve(filename);
                                 if (!Files.exists(desiredFile)) {
                                     // File must exist...
-                                    report.println("  [" + aPage.getPage() + "] Internal reference filename is " +
+                                    report.println("  [" + aPage.getId() + "] Internal reference filename is " +
                                             "invalid: file does not exist. (" + bookId + "/" + filename + ")");
                                 }
                             }
