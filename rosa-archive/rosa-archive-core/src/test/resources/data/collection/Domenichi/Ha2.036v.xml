@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+
+	<page filename="Ha2.036v.tif" pagination="392" reader="Harvey"/>	<!-- ABO 041left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					{ a good commencement to you. { Haue at you.
+                    					{ I salute you. To your health. hartie commendations.
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        		</marginalia>    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						placet vobis, vt
+    						intret? Magister, ad oppositu[m]: pone dextra[m] manu[m] in manu
+    						magistri: velitis, iubeatis Quirites.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Are you pleased that it be entered? Master, stand opposite. Place your right hand in the <!-- CG: These seem to be phrases from some sort of ceremony. -->
+    				hand of the master: if you wish, you may command the citizens.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Ridiculous.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Ca[e]sar oratione fluentissimus;
+    						actione fluentior.
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Caesar was most fluent in speech, in action he was even more fluent.
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						In eloquentissimorum professorum Oratione nihil deest, nisi Oratio.
+    						In maximorum Negociatorum actione, nisi actio.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				In the speech of the most eloquent professors nothing is wanting, except speech.
+    				In the action of the greatest traders nothing is wanting, except action. 
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="270">
+    					<marginalia_text>
+    						Nescit Ouidij Metamorphoses, qui nescit perpetrare Miracula.
+    					</marginalia_text>
+    					<person name="Ovid"/>
+    					<book title="Metamorphoses"/>
+    				</position>
+    			</language>
+    			<translation>
+    				He who does not know to accomplished miracles, does not know Ovid's 'Metamorphoses'.
+    			</translation>
+    		</marginalia>
+    		
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="il Francese"/>
+    		<underline method="pen" type="straight" language="IT" text="gagliardamente beuuto"/>
+    		<underline method="pen" type="straight" language="IT" text="riscaldandosi nel uino"/>
+    		<underline method="pen" type="straight" language="IT" text="Spagnuolo"/>
+    		<underline method="pen" type="straight" language="IT" text="gibet a uous"/>
+    		<underline method="pen" type="straight" language="IT" text="Lo Spagnuolo"/>
+    		<underline method="pen" type="straight" language="IT" text="fierame[n]te pungere"/>
+    		<underline method="pen" type="straight" language="IT" text="gibet"/>
+    		<underline method="pen" type="straight" language="IT" text="s'impiccano i mal"/>
+    		<underline method="pen" type="straight" language="IT" text="a uoi che"/>
+    		<underline method="pen" type="straight" language="IT" text="meritate"/>
+    		<underline method="pen" type="straight" language="IT" text="fatto un cattiuo scherzo"/>
+    		<underline method="pen" type="straight" language="IT" text="Signor Duca"/>
+    		<underline method="pen" type="straight" language="IT" text="Capita[n] Fiorentino"/>
+    		<underline method="pen" type="straight" language="IT" text="huomo di poco ardire, &amp; di manco ualore"/>
+    		<underline method="pen" type="straight" language="IT" text="Nini Romano"/>
+    		<underline method="pen" type="straight" language="IT" text="tanto infretta"/>
+    		<underline method="pen" type="straight" language="IT" text="burlarlo"/>
+    		<underline method="pen" type="straight" language="IT" text="uoi Capitano"/>
+    		<underline method="pen" type="straight" language="IT" text="passato da San Piero"/>
+    		<underline method="pen" type="straight" language="IT" text="in atto di marauiglia"/>
+    		<underline method="pen" type="straight" language="IT" text="Si"/>
+    		<underline method="pen" type="straight" language="IT" text="sete assicurato a passare"/>
+    		<underline method="pen" type="straight" language="IT" text="morti tanti castroni"/>
+    		<underline method="pen" type="straight" language="IT" text="uilt&agrave; &amp; di codardia"/>
+    		<underline method="pen" type="straight" language="IT" text="Bartolomeo di Poggio."/>
+    		<underline method="pen" type="straight" language="IT" text="pedante insolente, &amp; di poca creanza"/>
+    		<underline method="pen" type="straight" language="IT" text="maggior parte d'essi sono"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- Spagnuo -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- quel -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- fat -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- scher -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- cor -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- trot -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- ta[n] -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- pas -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- assi -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- il qual  -->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- castroni?  -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- Era un pedante -->
+    		
+	    	<!-- Intext -->
+	    	<mark name="dot" method="pen" place="intext"/> <!-- Spagnuolo, &  -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- insolente, pre -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- Monsignore gibet -->
+    		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark in first paragraph --> 
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Spagnuolo"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- tori, leuatosi -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- la meritate -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- ualore, ta[n] -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- sono disse -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- creanza, come -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- sono, il -->
+    </annotation>
+</transcription>

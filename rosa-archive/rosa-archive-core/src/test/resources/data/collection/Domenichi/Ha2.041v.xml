@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.041v.tif" pagination="402" reader="Harvey"/>	<!-- ABO 46left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Facil&egrave; omnes libros peruolutat Eudromus pro suis 
+						vnius axiozelis Locis: qui nec multi sunt,
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						nec Longi: sed exquisitissima tot auctorum
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Mnemosyna, et soli omnium bibliotecharum Thesauri.
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Sua[e] occulta[e] proprietatis Arcana: et (
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) vnica Eudromi autopraxia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Eudromus easily skims through all books for his worthwhile passages, 
+				which are neither many, nor long, but the most exquisite memorials
+				of so many authors, and only the treasures of all libraries. The mystery
+				of the hidden and unique character of Eudromus is autopraxia. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						argut&egrave;.
+					</marginalia_text>
+				</position>
+			</language>			
+			<translation>
+				Ridiculous. Cleverly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Vulgaria, aut minuta obit&egrave;r pra[e]termittit:
+						grammatica, philologica,
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						phantastica, ociosa omnia: sola curat
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						energetica,
+					</marginalia_text>
+				</position>
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						egregia, pra[e]potentia. Ne ipsa quidem 
+						rara suo serio studio dignatur, nisi quatenus
+						pra[e]valida. Merus maximorum delectus.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				He casts aside vulgar or small matters: grammar, philology, all imaginary
+				and superfluous things. He cares only for energetic, extraordinary, 
+				and very powerful activities. He does not even consider rare things themselves
+				worthy of serious study, unless they are somehow very important.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Statim percurritur, quicquid est in Calcagnino, Rhodigino, aut Carrdano singulare. <!--JG: Chris, are you sure 'Carrdano' was spelled with two 'r's?-->
+					</marginalia_text>
+					<person name="Caelius Calcagninus"/>
+					<person name="Caelius Rhodiginus"/>
+					<person name="Girolamo Cardano"/>
+				</position>
+			</language>
+			<translation>
+				Whatever is singular in Caelius Calcagninus, Caelius Rhodiginus or Girolamo Cardano, is run through at once. <!--JG: One would expect gerund + sum (sense of obligation) here-->
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="il misero"/>
+		<underline method="pen" type="straight" language="IT" text="pose a correre per quel"/>
+		<underline method="pen" type="straight" language="IT" text="giunta alla sponda"/>
+		<underline method="pen" type="straight" language="IT" text="rest&ograve;, &amp; torn&ograve; di nuouo"/>
+		<underline method="pen" type="straight" language="IT" text="ancho la terza uolta"/>
+		<underline method="pen" type="straight" language="IT" text="non ti uuoi gettar"/>
+		<underline method="pen" type="straight" language="IT" text="Gia tre"/>
+		<underline method="pen" type="straight" language="IT" text="ancho sai spiccar"/>
+		<underline method="pen" type="straight" language="IT" text="pigliateuelo uoi alle quattro"/>
+		<underline method="pen" type="straight" language="IT" text="uenuto capriccio"/>
+		<underline method="pen" type="straight" language="IT" text="diue[n]tare un letteruto"/>
+		<underline method="pen" type="straight" language="IT" text="raun&ograve; una bellissima libreria"/>
+		<underline method="pen" type="straight" language="IT" text="uend&egrave; di molte"/>
+		<underline method="pen" type="straight" language="IT" text="senza mai fare profitto alcuno"/>
+		<underline method="pen" type="straight" language="IT" text="co[n]uertite molte uacche in un sol bue"/>
+		<underline method="pen" type="straight" language="IT" text="alle mani uno Spagnuolo"/>
+		<underline method="pen" type="straight" language="IT" text="tocc&ograve; una coltellata"/>
+		<underline method="pen" type="straight" language="IT" text="al Re Alfonso a querelarsene"/>
+		<underline method="pen" type="straight" language="IT" text="la ferita non era data a lui"/>
+		<underline method="pen" type="straight" language="IT" text="ma a sua Maest&agrave;"/>
+		<underline method="pen" type="straight" language="IT" text="Spagnuolo"/>
+		<underline method="pen" type="straight" language="IT" text="stato ingiurato"/>
+		<underline method="pen" type="straight" language="IT" text="il Re"/>
+		<underline method="pen" type="straight" language="IT" text="comer del uiscotto se parecer&agrave;"/>
+		<underline method="pen" type="straight" language="IT" text="Biasimauasi senza alcuna misericordia"/>
+		<underline method="pen" type="straight" language="IT" text="una Tragedia da"/>
+		
+		
+		<underline method="chalk" type="straight" language="IT" text="un letteruto"/>
+		<underline method="chalk" type="straight" language="IT" text="molte uacche in un sol bue"/>
+		<underline method="chalk" type="straight" language="IT" text="alcuna misericordia una Tragedia"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="right_margin"/>
+		<symbol name="JC" place="intext"/>
+
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- mes -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- uo -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- uac -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Napoleta -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- es -->
+		
+	    	<!-- Left margin -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- lhora -->  
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- pouero huomo -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- ma; che la -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="dot" method="pen" place="intext"/> <!-- gratia, & -->
+		<mark name="dot" method="pen" place="intext"/> <!-- medesimo -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="quattro"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark --> 
+	    	<mark name="dot" method="pen" place="intext"/> <!-- letteruto, e -->
+		<mark name="dot" method="pen" place="intext"/> <!-- ma, che la ferita -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Maest&agrave;"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- gentilmente, al -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- se parecera' -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- alcuna misericordia -->
+		<mark name="dot" method="pen" place="intext"/> <!-- huomini, i quali -->
+
+    </annotation>
+</transcription>

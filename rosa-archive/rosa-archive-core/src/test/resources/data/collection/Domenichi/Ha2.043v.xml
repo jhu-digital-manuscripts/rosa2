@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.043v.tif" pagination="406" reader="Harvey"/>	<!-- ABO 48left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Vt Totum fiat agillimum, requiritur Singularum partium
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						continua agitatio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Continuous exercise is required in all singular parts in order to make the whole most agile.  
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Epitome totius iuris.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The epitome of a totalizing law.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) Hic ben&egrave;: Ille optim&egrave;: sed melius
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						adhuc, meliusq[ue] requirit[u]r.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				) This is well; that is best; but one still seeks better and better.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						giue mee not a Wife, but Life.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( Orator Angelus:
+					</marginalia_text>
+					<person name="Angelus Furius"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Actor Furius: vt ipse Enteleches.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				( Angelus, the orator; Furius, the actor; as he himself is Actualization.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Microcosmus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Microcosm.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) Totus est spiritus, et mera industria Eutrapelus: et
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						tamen ludus, iocusq[ue] pra[e] ipso Enteleche.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				) Eutrapelus is all spirit and pure industry: and yet
+				sport and jest precede actualization itself. 		
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						dextr&egrave;
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Talis Censura Sanazarij, i[nfr]a, 417. 
+					</marginalia_text>
+					<person name="Jacopo Sannazaro"/>
+					<internal_ref text="i[nfr]a,">
+						<target filename="Ha2.049r.xml" book_id="FolgersHa2" text="417"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				A similar judgment from Sannazaro, below, p. 417.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian" marginalia_id="Ha2.043v_0001" marginalia_continues_from="Ha2.044r_0001" marginalia_from_transcription="Ha2.044r.xml" book_id="FolgersHa2">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						<!-- Continued from facing page, left margin, Ha2.044r. -->
+						vt faciat pars qua[e]q[ue] rotantis Olympi, Purius, atq[ue] minus: libat, auisq[ue] volat.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				that every part values rotating Olympus more chastely and less. He drinks and flies away as a bird. <!-- Unclear. --> <!--JG: 'that every part of Olympus revolving creates more chastely or less: he drinks and flies away as a bird'? Still unclear to me though-->
+			</translation>
+		</marginalia>
+		
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="leggi della natura"/>
+		<underline method="pen" type="straight" language="IT" text="gli altri quel"/>
+		<underline method="pen" type="straight" language="IT" text="uorrei, che fusse fatto a"/>
+		<underline method="pen" type="straight" language="IT" text="andar mancando"/>
+		<underline method="pen" type="straight" language="IT" text="darti moglie"/>
+		<underline method="pen" type="straight" language="IT" text="bisticciando"/>
+		<underline method="pen" type="straight" language="IT" text="datemi meglio"/>
+		<underline method="pen" type="straight" language="IT" text="mostri esser debole"/>
+		<underline method="pen" type="straight" language="IT" text="gagliardo, che Hercole"/>
+		<underline method="pen" type="straight" language="IT" text="una sfera sulle spalle"/>
+		<underline method="pen" type="straight" language="IT" text="uno appamondo"/>
+		<underline method="pen" type="straight" language="IT" text="Poeta magro"/>
+		<underline method="pen" type="straight" language="IT" text="due suoi epigra[m]mi"/>
+		<underline method="pen" type="straight" language="IT" text="persona giuditiosa"/>
+		<underline method="pen" type="straight" language="IT" text="tali Catullo"/>
+		<underline method="pen" type="straight" language="IT" text="Catullo non ne fece un mezo tale"/>
+		<underline method="pen" type="straight" language="IT" text="che due come questi"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="f&ograve; a gli altri quel che uorrei"/>
+		<underline method="chalk" type="straight" language="IT" text="moglie"/>
+		<underline method="chalk" type="straight" language="IT" text="datemi meglio"/>
+		<underline method="chalk" type="straight" language="IT" text="gagliardo, che Hercole"/>
+		<underline method="chalk" type="straight" language="IT" text="una sfera sulle spalle"/>
+		<underline method="chalk" type="straight" language="IT" text="uno appamondo"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="left_margin"/>
+		<symbol name="JC" place="intext" language="LA" text="Epitome totius iuris."/>
+	
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- secon -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- al -->
+		
+	    	<!-- Left margin -->
+	    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- dole leggi -->
+		<mark name="horizontal_bar" method="pen" place="left_margin"/> <!-- se egli, Hercole --> 
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- ne ... uno -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- che due -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="datemi meglio"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- meglio -->
+	    	<mark name="dot" method="pen" place="intext"/> <!-- stanchezza, voltosi -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="una sfera sulle spalle"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="appamondo"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- appamondo -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="epigr[m]mi"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- Colle, & -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Catullo"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark --> 
+		<mark name="dot" method="pen" place="intext"/> <!-- tale, non -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="che due come questi"/> 
+
+    </annotation>
+</transcription>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+    
+    <page filename="00000023.tif" reader="Harvey" signature="B.iij.[r]" pagination="11"/>
+    <annotation>
+        
+        <marginalia hand="Italian" anchor_text="comitibus Morauiae">
+            <language ident="LA">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>
+                        Morauius vt s[upr]a, i[nfr]a.
+                    </marginalia_text>
+                    <person name="James Stewart 1st Earl of Moray"/>
+                    <internal_ref text="s[upr]a">
+                        <target filename="00000015.xml" book_id="PrincetonRB16th11" text="[3]"/>
+                    </internal_ref>
+                    <internal_ref text="i[nfr]a">
+                        <target filename="00000028.xml" book_id="PrincetonRB16th11" text="[16]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Moravius, as above, below.
+            </translation>
+        </marginalia>
+        
+        <underline method="pen" type="straight" language="LA" text="Comitibus Morauiae"/>
+        <underline method="pen" type="straight" language="LA" text="postea Prorex"/>
+        <underline method="pen" type="straight" language="LA" text="&amp; ipse occisus est) Huntleiae"/>
+        
+    </annotation>
+</transcription>

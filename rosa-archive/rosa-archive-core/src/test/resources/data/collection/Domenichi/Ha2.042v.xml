@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.042v.tif" pagination="404" reader="Harvey"/>	<!-- ABO 47left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Nihil in animo, aut corpore permittatur impurum, aut inualidum: sed curandum, vt sint solida,
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						nitidaq[ue] singula.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing impure or weak is permitted in the soul or body, but one must see that they are solid and shining singular things. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) Nihil in tota vita, aut ali[a] ) actionum parte infirmu[m], aut corruptum: sed
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						strenua, consta[n]tiaq[ue] omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No weak or corrupt activity in the whole of one's life or in any of its parts, but all things vigorous and constant. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Corruptela[e] ista[e] inficiu[n]t animu[m]: infirmant corpus:
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						extenuant statu[m]: omnia deniq[ue] bona Labefactant. (
+						Effoeminata omnia viros emasculant:
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						robustos eneruant mollia.
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Qua[m]uis Luxuries effoetum corpus
+					</marginalia_text>
+				</position>
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						tradit senectuti. Vnd&egrave; vitanda[e] mali
+						Cuiusq[ue] occasiuncula[e]. Principijs obsta.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Such corruption infects the soul, weakens the body, and diminishes one's condition. In short, it undermines
+				all good things. All effiminate matters emasculate men, and soft things enervate the robust. Luxury exceedingly 
+				betrays the tired body in old age. Whence every opportunity for evil must be avoided. Oppose the origins of evil. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						argut&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( descant. )
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Medicus profitetur Hippocratem, non Petrarcham.
+					</marginalia_text>
+					<person name="Hippocrates"/>
+					<person name="Petrarch"/>
+				</position>
+			</language>
+			<translation>
+				The doctor professes to be Hippocrates, not Petrarch.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( Roma. Papa. s[upr]a, 199. )
+					</marginalia_text>
+					<location name="Rome"/>
+				</position>
+			</language>
+			<translation>
+				Rome. The pope. Above, p. 199.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Sapit, qui absolut&egrave; corruptelas contemnit, ab omniq[ue] abhorret
+						Luxurie.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whoever condemns absolutely corruption and abhors every luxury truly knows.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="uolentieri alla morte"/>
+		<underline method="pen" type="straight" language="IT" text="non pare"/>
+		<underline method="pen" type="straight" language="IT" text="che gli bastino due piedi"/>
+		<underline method="pen" type="straight" language="IT" text="Gouernatore di Spoleti"/>
+		<underline method="pen" type="straight" language="IT" text="maggior uentura del mo[n]do"/>
+		<underline method="pen" type="straight" language="IT" text="usc&igrave; di Roma"/>
+		<underline method="pen" type="straight" language="IT" text="ui torna legato"/>
+		<underline method="pen" type="straight" language="IT" text="Allude"/>
+		<underline method="pen" type="straight" language="IT" text="di purgato giudicio"/>
+		<underline method="pen" type="straight" language="IT" text="recitare alcuno de' suoi sonetti il"/>
+		<underline method="pen" type="straight" language="IT" text="dirgliene de gli altri a uicenda"/>
+		<underline method="pen" type="straight" language="IT" text="me hoggimai non"/>
+		<underline method="pen" type="straight" language="IT" text="che cose d'Avicenna"/>
+		<underline method="pen" type="straight" language="IT" text="Bisticcio"/>
+		<underline method="pen" type="straight" language="IT" text="che 'l Teuere dopo"/>
+		<underline method="pen" type="straight" language="IT" text="guisa di uittorioso &amp; trionfante"/>
+		<underline method="pen" type="straight" language="IT" text="riempiendola di marauiglia"/>
+		<underline method="pen" type="straight" language="IT" text="Romani doueuano"/>
+		<underline method="pen" type="straight" language="IT" text="far la pace"/>
+		<underline method="pen" type="straight" language="IT" text="Domenedio"/>
+		<underline method="pen" type="straight" language="IT" text="Papa Paolo"/>
+		<underline method="pen" type="straight" language="IT" text="Re Filippo"/>
+		<underline method="pen" type="straight" language="IT" text="biasimaua gl'Italiani"/>
+		<underline method="pen" type="straight" language="IT" text="come mali Christiani"/>
+		<underline method="pen" type="straight" language="IT" text="non andauano ad acco[m]pagnare"/>
+		<underline method="pen" type="straight" language="IT" text="santissimo sacramento"/>
+				
+				
+		<underline method="chalk" type="straight" language="IT" text="Gouernatore, &amp; ui torna legato"/>
+		<underline method="chalk" type="straight" language="IT" text="altro che cose d'Auicenna"/>
+		<underline method="chalk" type="straight" language="IT" text="Romani doueuano essi prima far la pace con M. Domenedio, che Papa Paolo col Re Filippo"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="right_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ueni -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Go -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Cordoue -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- giu -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ri -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- nobilis -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- va[n]ta -->
+		
+	    	<!-- Left margin -->
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- maggior -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- maggior ... uernatore -->
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- dirgliene -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- altro --> 
+		<mark name="horizontal_bar" method="chalk" place="left_margin"/> <!-- Chalk mark, beside Vedendo -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- poueri ... Domenedio -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="dot" method="pen" place="intext"/> <!--  Roma, disse -->
+		<mark name="dot" method="pen" place="intext"/> <!--  mo[n]do, da -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- Roma Go -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="legato"/>  
+	    	<mark name="comma" method="pen" place="intext"/> <!-- dicio a recitare -->
+		<mark name="equal_sign" method="pen" place="intext" language="IT" text="sonetti"/>
+		<mark name="comma" method="pen" place="intext"/> <!-- sonetti il -->
+		<mark name="equal_sign" method="pen" place="intext"/> <!--altri a uicenda -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="che cose d'Avicenna"/> 
+		<mark name="comma" method="pen" place="intext"/> <!-- spirito un -->
+		<mark name="dot" method="pen" place="intext"/> <!--  trionfante, riempiendola -->
+		<mark name="comma" method="pen" place="intext"/> <!-- disse questi -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark -->
+		<mark name="dot" method="pen" place="intext"/> <!--  Domenedio, che -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- Filippo -->  
+		<mark name="dot" method="pen" place="intext"/> <!--  Christiani, i quali -->
+
+    </annotation>
+</transcription>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.046r.tif" pagination="411" reader="Harvey"/>	<!-- ABO 50right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Natura, Ars, Exercitatio, quanta potest extendi
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						vlla vi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nature, art, exercise: how much it can be extended with force. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Bona animi, corporis,
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) fortuna[e], quovis
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						modo
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						multiplicanda. Singula corporis membra
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						decenti&ugrave;s componenda, qu&agrave;m alioru[m]:
+						omnesq[ue] totius hominis ) partes ) ad exquisitiorem perfectionem
+						) redigenda[e],
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) qu&agrave;m vllus alter pra[e]sentium
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						pra[e] se fert. Pra[e]sertim vultus,
+					</marginalia_text>
+				</position>
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						) vox, gestus, tota actio[que]
+						quicquid deniq[ue] commendat virum.
+						Sed quasi inaffectat&egrave;: et semper omniu[m] facillim&egrave;.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The good things of the soul, body, and fortune, must be multiplied in whatever manner.
+				The singular members of the body must be composed more appropriately than those of others,
+				and all the parts of the complete man must be brought to a perfection more exquisite than any other present man.
+				particularly the face, voice, gesture, and in short, whatever complete action that distinguishes the man. 
+				But it must always be as if effortless and the easiest thing in the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Il veleno dello argomento.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						s[upr]a, 172.
+						Pro, et Contra. vt subtilis doctor contra doctorem angelicum.
+					</marginalia_text>
+					<person name="Duns Scotus"/>
+					<person name="Thomas Aquinas"/>
+				</position>
+			</language>
+			<translation>
+				The venom of the argument. Above, page 672.
+				For and against, like the Subtle Doctor against the Angelic Doctor.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						dextr&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						distinctio urbana.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An urbane distinction.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						argut&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Statim discitur, aut fit, cum Hoc agitur. Proprium quarto modo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				One immediately learns, or becomes, when This is done. Proper to the fourth way.
+			</translation>
+		</marginalia>
+		
+	
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="amazzare una gallina"/>
+		<underline method="pen" type="straight" language="IT" text="uicino alla morte"/>
+		<underline method="pen" type="straight" language="IT" text="poteua piu menar le guancie"/>
+		<underline method="pen" type="straight" language="IT" text="gallina"/>
+		<underline method="pen" type="straight" language="IT" text="figlio mio caro"/>
+		<underline method="pen" type="straight" language="IT" text="ponimela al culo"/>
+		<underline method="pen" type="straight" language="IT" text="terr&agrave; caldo"/>
+		<underline method="pen" type="straight" language="IT" text="nello studio di Pisa"/>
+		<underline method="pen" type="straight" language="IT" text="argomenti all'altro"/>
+		<underline method="pen" type="straight" language="IT" text="sosteneua le conclusioni"/>
+		<underline method="pen" type="straight" language="IT" text="piu stringato de gli altri"/>
+		<underline method="pen" type="straight" language="IT" text="come l'ultimo era il peggior"/>
+		<underline method="pen" type="straight" language="IT" text="tutti gli altri"/>
+		<underline method="pen" type="straight" language="IT" text="Dottor di leggi eccellentissimo"/>
+		<underline method="pen" type="straight" language="IT" text="questo ui ha punto piu a dentro"/>
+		<underline method="pen" type="straight" language="IT" text="Horatio Toscanella"/>
+		<underline method="pen" type="straight" language="IT" text="fusse peggio"/>
+		<underline method="pen" type="straight" language="IT" text="la moglie troppo"/>
+		<underline method="pen" type="straight" language="IT" text="brutta"/>
+		<underline method="pen" type="straight" language="IT" text="filosoficamente"/>
+		<underline method="pen" type="straight" language="IT" text="l'ha bella ha"/>
+		<underline method="pen" type="straight" language="IT" text="brutta, mal di fianchi"/>
+		<underline method="pen" type="straight" language="IT" text="sei tu bugiardo"/>
+		<underline method="pen" type="straight" language="IT" text="il sofistico"/>
+		<underline method="pen" type="straight" language="IT" text="io dica il uero"/>
+		<underline method="pen" type="straight" language="IT" text="son bugiardo"/>
+		<underline method="pen" type="straight" language="IT" text="che sono per farui conoscere"/>
+		<underline method="pen" type="straight" language="IT" text="che io non sono"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="mi terr&agrave; caldo"/>
+		<underline method="chalk" type="straight" language="IT" text="l'ultimo era il peggior"/>
+		<underline method="chalk" type="straight" language="IT" text="questo ui ha punto piu a"/>
+		<underline method="chalk" type="straight" language="IT" text="Horatio Toscanella"/>
+		<underline method="chalk" type="straight" language="IT" text="l'ha bella ha mal"/>
+		<underline method="chalk" type="straight" language="IT" text="brutta, mal di fianchi"/>
+		<underline method="chalk" type="straight" language="IT" text="ch'io dica il uero, se son bugiardo"/>		
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="left_margin"/>
+		
+		<!-- Marks -->	
+		
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- gal -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- parec -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- culo -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ha -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- piu a -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- littera -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- peg -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- son bu --> 
+		
+		
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- nanzi ... che mi -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- Aretino ... dentro -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- brutta ... testa -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- giardo ... re -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="dot" method="pen" place="intext"/> <!-- cotta, disse -->
+		<mark name="dot" method="pen" place="intext"/> <!--  mio, -->
+	    <mark name="dot" method="pen" place="intext"/> <!-- scolari, & -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="argomenti"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="stringato"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- ultimo -->
+		<mark name="dot" method="pen" place="intext"/> <!-- altri, disse -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- punto piu -->
+		<mark name="X_sign" method="pen" place="intext"/> <!-- dentro -->
+		<mark name="dot" method="pen" place="intext"/> <!-- virtuoso, quale -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="moglie"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="bella"/>
+		<mark name="equal_sign" method="pen" place="intext" language="IT" text="mal"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- testa, & -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="brutta"/>
+		<mark name="equal_sign" method="pen" place="intext" language="IT" text="mal"/>
+		<mark name="comma" method="pen" place="intext"/> <!-- cortese a -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="bugiardo"/>
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="sofistico"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="uero"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+
+    </annotation>
+</transcription>

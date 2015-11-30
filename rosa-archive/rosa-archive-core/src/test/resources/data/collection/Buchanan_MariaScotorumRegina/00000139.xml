@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+    
+    <page filename="00000139.tif" reader="Harvey"  pagination="end page"/>
+    <annotation>
+        
+        <marginalia hand="Italian" date="1577">
+            <language ident="EN">
+                <position place="tail" book_orientation="0">
+                    <marginalia_text>
+                        G Buchanan
+                        august. 1577.
+                    </marginalia_text>
+                    <person name="George Buchanan"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <mark name="horizontal_bar" method="pen" place="intext" language="EN" text="G Buchanan"/>
+        
+    </annotation>
+</transcription>
+        

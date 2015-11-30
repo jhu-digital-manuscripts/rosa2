@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.068v.tif" pagination="456" reader="Harvey" signature="[Ff4v]"/>	<!-- ABO 73left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Theurgorum lautissimus: Oratorum promptissimus:
+						actorum efficacissimus.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						hominu[m] dulcissimus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The most noble of theurgists, the most ready of orators,
+				the most efficient of actors. The sweetest of men. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Spiritus Julij incessans et infinitus.
+						Quaq[ue] hora, magis adhuc magisq[ue] acer.
+					</marginalia_text>
+						<!-- CG: Unsure of identity of this "Julius." -->
+				</position>
+			</language>
+			<translation>
+				The spirit of Julius is unceasing and unlimited.
+				At whatever time, more and more keener still. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						argut&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( Omnium facil&egrave; expeditissimus: in loquendo,
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						scribe[ndo,] agendo in quouis sermone,
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						aut opere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Easily most ready in all things: in speaking, writing, and performing
+				
+				in any discourse or work.
+				
+				<!-- Second part, gutter marginalia. -->
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian" anchor_text="tuo Padre">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( tuo padre. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Your father.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( argut&egrave;. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Semper Tuissimus.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight" text="Semper Tuissimus."/> 
+				</position>
+			</language>
+			<translation>
+				Always entirely yours.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Parergon.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A supplement.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Per se paucissimi florent: per accidens plurimi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Few flourish on their own, many flourish by accident.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Non qu&agrave;, sed qu&ograve;: Machiauellus.
+						Non qu&ograve;, sed qu&agrave;: Lipsius.
+					</marginalia_text>
+					<person name="Machiavelli"/>
+					<person name="Lipsius"/>
+				</position>
+			</language>
+			<translation>
+				Not why, but how: Machiavelli.
+				Not how, but why: Lipsius.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Fundamentalis Logicus, et Mathematicus, Physicus, et Politicus;
+						facil&egrave; esse potest
+					</marginalia_text>
+				</position>
+				<position place="tail" book_orientation="270">
+					<marginalia_text>
+						omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Fundamental is logic, mathematics, physics, and politics; one can easily be all things.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="co 'l Simonetta"/>
+		<underline method="pen" type="straight" language="IT" text="leuar l'Eucaristia"/>
+		<underline method="pen" type="straight" language="IT" text="a nascondersi"/>
+		<underline method="pen" type="straight" language="IT" text="per non uedere il sacramento"/>
+		<underline method="pen" type="straight" language="IT" text="al Simonetta"/>
+		<underline method="pen" type="straight" language="IT" text="il quale uolendo"/>
+		<underline method="pen" type="straight" language="IT" text="far ridere i Rettori"/>
+		<underline method="pen" type="straight" language="IT" text="del Tosetto"/>
+		<underline method="pen" type="straight" language="IT" text="heretico"/>
+		<underline method="pen" type="straight" language="IT" text="buono essempio"/>
+		<underline method="pen" type="straight" language="IT" text="per sospetto del"/>
+		<underline method="pen" type="straight" language="IT" text="esser heretico manifesto"/>
+		<underline method="pen" type="straight" language="IT" text="non creda in Christo"/>
+		<underline method="pen" type="straight" language="IT" text="mi uergognaua"/>
+		<underline method="pen" type="straight" language="IT" text="Domenedio mi uedesse in compagnia del Simonetta"/>
+		<underline method="pen" type="straight" language="IT" text="uitij son"/>
+		<underline method="pen" type="straight" language="IT" text="Tosetto diede"/>
+		<underline method="pen" type="straight" language="IT" text="Padre fu muratore"/>
+		<underline method="pen" type="straight" language="IT" text="prontamente"/>
+		<underline method="pen" type="straight" language="IT" text="tuo Padre"/>
+		<underline method="pen" type="straight" language="IT" text="portaua la calcina, &amp; le pietre al"/>
+		<underline method="pen" type="straight" language="IT" text="ne' frati non son buone"/>
+		<underline method="pen" type="straight" language="IT" text="sdegnato un frate"/>
+		<underline method="pen" type="straight" language="IT" text="quali son queste buone lettere"/>
+		<underline method="pen" type="straight" language="IT" text="cose, che appartenga al fatto"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="Sun" place="left_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- douen -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Rettori su 'l -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- essem -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- chia -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Per -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- rispo -->
+		
+	    	<!-- Left margin -->
+	    <mark name="plus_sign" method="pen" place="left_margin"/> <!-- lo heretico -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- non ... cui -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- tuo Padre -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: sospetto -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- troppo grandi -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- buona lettere -->
+	    <mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: rispondo -->
+		<mark name="dot" method="pen" place="intext"/> <!-- rispondo, perche -->
+		<mark name="equal_sign" method="pen" place="intext"/> <!-- appartenga -->
+		<mark name="plus_sign" method="pen" place="tail"/> <!-- fatto tuo -->
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.039v.tif" pagination="398" reader="Harvey"/>	<!-- ABO 44left -->
+	<annotation>
+		<!-- Marginalia -->
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Vnici ars, et Virtus specifica, 
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						appropriata, Singularis.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The art of the unique man, and the specific and appropriate virtus of the singular man.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Singula
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						pura,
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						et nitida: incorrupta, et strenua.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Individual things pure and clear; uncorrupted and vigorous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Totum forte: et partes valida[e].
+						Nihil fractum, aut languidum; aut vllo modo tepidum.					
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Strong everywhere and powerful in each part.
+				Nothing broken, or languid, or in any way tepid.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						s[upr]a.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Animus, optimus Medicus Corporis: et
+						maximus Faber fortuna[e]. Ni degener.
+					</marginalia_text>
+					<emphasis method="pen" type="straight" text="Animus"/>
+					<emphasis method="pen" type="straight" text="Corporis"/>
+					<emphasis method="pen" type="straight" text="fortuna[e]"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The mind is the best doctor of the body and the greatest craftsman of fortune. Unless it is degenerate.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Miseret me mei, Si Fortius violentior: aut Ramus illustrior: aut Lipsius securior:
+						aut Tycho peritior: aut Draco 
+						validior: aut Bartasius diuinior 
+						vllo modo.
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+					<person name="Petrus Ramus"/>
+					<person name="Lipsius"/>
+					<person name="Tycho Brahe"/>
+					<person name="Draco"/>
+					<person name="Guillaume Du Bartas"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				I pity myself if, in any way, Fortius is more violent, Ramus more illustrious, 
+				Lipsius more secure, Tycho more experienced, Draco more powerful, or Du Bartas more divine.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Animus est, qui facit foelicem, aut miserum.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The mind is that which makes one either happy or wretched.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Euthymia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Euthymia.
+			</translation>
+		</marginalia>
+		
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="l'huomo parla"/>
+		<underline method="pen" type="straight" language="IT" text="de' fatti d'altri"/> 
+		<underline method="pen" type="straight" language="IT" text="che de' suoi"/>
+		<underline method="pen" type="straight" language="IT" text="del Duca di Ferrara"/>
+		<underline method="pen" type="straight" language="IT" text="uero gentil'huomo"/>
+		<underline method="pen" type="straight" language="IT" text="grandissimo, fortunatissimo"/>
+		<underline method="pen" type="straight" language="IT" text="che ne boglio fare"/>
+		<underline method="pen" type="straight" language="IT" text="che non &egrave; disieggio"/>
+		<underline method="pen" type="straight" language="IT" text="Sciocco bene"/>
+		<underline method="pen" type="straight" language="IT" text="sessanta anni, &amp; piu"/>
+		<underline method="pen" type="straight" language="IT" text="una gentildonna di"/>
+		<underline method="pen" type="straight" language="IT" text="giouane"/>
+		<underline method="pen" type="straight" language="IT" text="non per&ograve; molta"/>
+		<underline method="pen" type="straight" language="IT" text="ne spessa fatica"/>
+		<underline method="pen" type="straight" language="IT" text="si ritiraua"/>
+		<underline method="pen" type="straight" language="IT" text="hauia recebida carta del Toledo"/>
+		<underline method="pen" type="straight" language="IT" text="che se agliasse ay por algunos dias"/>
+		<underline method="pen" type="straight" language="IT" text="fare di molte quaresime, &amp; uigilie non commandate"/>
+		<underline method="pen" type="straight" language="IT" text="alla pouera giovane"/>
+		<underline method="pen" type="straight" language="IT" text="pure una festa"/>
+		<underline method="pen" type="straight" language="IT" text="che un carnouale intero"/>
+		<underline method="pen" type="straight" language="IT" text="dell'inganno del marito"/>
+		<underline method="pen" type="straight" language="IT" text="sauia ch'era"/>
+		<underline method="pen" type="straight" language="IT" text="dissimul&ograve; gran tempo"/>
+		<underline method="pen" type="straight" language="IT" text="somiera giouane"/>
+		<underline method="pen" type="straight" language="IT" text="un somier uecchio"/>
+		<underline method="pen" type="straight" language="IT" text="hauerla calpesta un pezzo"/>
+		<underline method="pen" type="straight" language="IT" text="se ne smont&ograve; senza fare altro"/>
+		<underline method="pen" type="straight" language="IT" text="giouane al pazzo marito"/>
+		<underline method="pen" type="straight" language="IT" text="ah Segnor"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="de' fatti d'altri, che"/>
+		<underline method="chalk" type="straight" language="IT" text="che hauia recebida carta de Toledo, &amp; che gli era menester che se agliasse ay por algunos dias"/>
+		<underline method="chalk" type="straight" language="IT" text="molte quaresime, &amp;"/>
+		<underline method="chalk" type="straight" language="IT" text="giouane, senza"/>
+		<underline method="chalk" type="straight" language="IT" text="un carnouale intero"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		
+		<!-- Marks -->	
+		
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/>
+		<mark name="dash" method="pen" place="right_margin"/>
+		
+	    	<!-- Left margin -->
+	    	<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- do, & che -->
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- non commadata -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="altri"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- d'altri -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="uero"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- ottimo -->
+	    	<mark name="dot" method="pen" place="intext"/> <!-- principe, disse -->
+		<mark name="dot" method="pen" place="intext"/> <!-- mio, ma -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!--Sciocco bene -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- recebida carta -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="algunos"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="quaresime"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="inganno"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- sorte, si -->
+		<mark name="straight_quotation_mark" method="pen" place="intext" language="IT" text="dissimul&ograve;"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="un sommier uecchio"/>
+		
+
+    </annotation>
+</transcription>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+
+	<page filename="Ha2.035r.tif" pagination="389" reader="Harvey"/>	<!-- ABO 039right -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Sir John Skinner, when he speakes of mee, calles
+                    					mee the great scholler.
+                      			</marginalia_text>
+            				<person name="John Skinner"/>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						distinctio arguta. apophthegma iuridicum -
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				A clever distinction. A legal aphorism.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Phi malus, et Lippus: totus malus ergo Philippus.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Phi is bad, and so is Lippus: thus Phillipus is completely bad.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						) Sir John Wooddes opinion of mee, greater &amp; higher, the[n] Sir Jon Skinners.
+    					</marginalia_text>
+    					<person name="John Wood"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Omne aurum non est, -
+    						Epigramma. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				All is not gold, -	<!-- CG: Incomplete proverb. Probably "Omne aurum non est, quod radiat." -->
+    				Epigram.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) Tanta[e] expectationi satis faciendu[m]  
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position place="right_margin" book_orientation="0">
+    					<marginalia_text>
+    						Seri&ograve;.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Something must be earnestly done that is satisfactory of such great anticipation.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						non haberi, sed esse. Tycho.	
+    					</marginalia_text>
+    					<person name="Tycho Brahe"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Not to be possessed, but to be. Tycho.
+    			</translation>
+    		</marginalia>
+    		
+        
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						{ Doctor Baro the Frenchman told Monsieur Bodin, that beside mie learning,
+    						I was All spirit. Antonie de Corro the Spaniard was woont to salute mee,
+    					</marginalia_text>
+    					<person name="Peter Baro"/>
+    					<person name="Jean Bodin"/>
+    					<person name="Antonio del Corro"/>
+    				</position>
+    			</language>
+    			<language ident="LA">
+    				<position place="tail" book_orientation="90">
+    					<marginalia_text>
+    						Magnanime Domine.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Noble Lord.
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="270">
+    					<marginalia_text>
+    						Summa animi, Corporisq[ue] contentio,
+    						nimis adhuc est remissa.    						
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				The highest exercise of mind and body has been too relaxed thus far. 
+    			</translation>
+    		</marginalia>
+    		
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="minacciato, &amp; fattogli paura"/>
+    		<underline method="pen" type="straight" language="IT" text="uolergli gettare"/>
+    		<underline method="pen" type="straight" language="IT" text="sempre sullo scherzare"/>
+    		<underline method="pen" type="straight" language="IT" text="mettendolo in burla"/>
+    		<underline method="pen" type="straight" language="IT" text="perdonatemi"/>
+    		<underline method="pen" type="straight" language="IT" text="non &egrave; il tribunale, doue io h&ograve; a"/>
+    		<underline method="pen" type="straight" language="IT" text="al magistrato della paura"/>
+    		<underline method="pen" type="straight" language="IT" text="uoi siete"/>
+    		<underline method="pen" type="straight" language="IT" text="ufficiali della Torre"/>
+    		<underline method="pen" type="straight" language="IT" text="Scherzaua a fidanza"/>
+    		<underline method="pen" type="straight" language="IT" text="galant'huomo, &amp; molto litterato"/>
+    		<underline method="pen" type="straight" language="IT" text="haueua figliuoli"/>
+    		<underline method="pen" type="straight" language="IT" text="pensasse alla risposta, che"/>
+    		<underline method="pen" type="straight" language="IT" text="gli replic&ograve; la sua"/>
+    		<underline method="pen" type="straight" language="IT" text="non n'h&ograve; nessuno"/>
+    		<underline method="pen" type="straight" language="IT" text="i tre figliuoli ch'io"/>
+    		<underline method="pen" type="straight" language="IT" text="reputo per nulla"/>
+    		<underline method="pen" type="straight" language="IT" text="uno"/>
+    		<underline method="pen" type="straight" language="IT" text="fa il sauio"/>
+    		<underline method="pen" type="straight" language="IT" text="maggior pazzo; che uiua"/>
+    		<underline method="pen" type="straight" language="IT" text="stima bello, &amp; &egrave; brutto"/>
+    		<underline method="pen" type="straight" language="IT" text="il brauo, e 'l ualente"/>
+    		<underline method="pen" type="straight" language="IT" text="figliuoli somiglino i padri"/>
+    		<underline method="pen" type="straight" language="IT" text="Dante Alighieri"/>
+    		<underline method="pen" type="straight" language="IT" text="appresso a diuersi Signori"/>
+    		<underline method="pen" type="straight" language="IT" text="ancho mor&igrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="corte di Guido da Pole[n]ta"/>
+    		<underline method="pen" type="straight" language="IT" text="Signore di Rauenna"/>
+    		<underline method="pen" type="straight" language="IT" text="piacere"/>
+    		<underline method="pen" type="straight" language="IT" text="facete &amp; pronte risposte di Dante, &amp;"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+    		<symbol name="SS" place="right_margin"/>
+    		<symbol name="JC" place="right_margin"/>
+    		<symbol name="SS" place="right_margin"/>
+    		<symbol name="SS" place="left_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- scher -->
+    		<mark name="comma" method="pen" place="right_margin"/> <!-- Signori -->
+    		<mark name="bracket" method="pen" place="right_margin"/> <!-- siete .. fidanza.] -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- doma[n] -->
+    		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- perche uno -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- ce ui -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- Il -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- coni -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- te[n] -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- Signo -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- zare ... gli -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- reputo .. nelle -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- in ... facete -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="plus_sign" method="pen" place="intext"/> <!-- sempre -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- non e' -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- comparire, io -->
+    		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark in first paragraph -->
+    		<mark name="dot" method="pen" place="intext"/> <!--uoi -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- della paura -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- paura, & -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- famigliare, s'egli -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- nessuno, perche -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="tre"/>
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- per nulla -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- hauessi, perche -->
+    		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="sauio"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- sauio, & -->
+    		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="bello"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- bello, & -->
+    		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="brauo"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- ualente, & -->
+    		<mark name="equal_sign" method="pen" place="intext"/> <!-- animo.] -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Dante"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- Italia, & -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="pronte"/>
+    		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark at end of text -->
+    		
+    </annotation>
+</transcription>

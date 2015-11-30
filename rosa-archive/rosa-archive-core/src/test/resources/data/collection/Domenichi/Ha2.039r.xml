@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.039r.tif" pagination="397" reader="Harvey"/>	<!-- ABO 43right -->
+	<annotation>
+		<!-- Marginalia -->
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Tutto per il meglio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Everything for the best.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Non querela, sed re medium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Not a complaint, but the center of the thing.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Tyros roring Megg: 
+					</marginalia_text>
+					<book title="Tyro's Roaring Meg"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						vnius diei
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Opusculum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Tyros roring Megg: a trifle for one day.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						{ Mihi placet ingenium.
+						Libri 7. Qu&ograve; legendus 
+						est sa[e]pius: cum
+						supplemento Porcatij:
+					</marginalia_text>
+					<person name="Tommaso Porcacchi"/>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						quo etia[m] delector.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I enjoy natural talent.
+				Seven books, which must be frequently read with Porcacchi's addition, which I also enjoy.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						dextr&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						paradosso.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Paradox.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						( Nihil molle, aut vanu[m].
+						Tam expedit&egrave;, qu&agrave;m Solid&egrave;: et contr&agrave;.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Nothing soft or vain.
+				As expedient as it is solid: and contrary.
+			</translation>
+		</marginalia>
+			
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Mei proprij auctores, Gandinus, et Weccherus: 
+					</marginalia_text>
+					<person name="Marcantonio Gandino"/>
+					<person name="Johannes Jacob Wecker"/>
+				</position>
+				<position place="head" book_orientation="90"> 
+					<marginalia_text>
+						Speculator, et Domenicus. Spiritus meissimi.
+					</marginalia_text>
+					<person name="Guillaume Durand"/> <!-- Most likely the Speculator. -->
+					<person name="Lodovico Domenichi"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				My own authors: Marcantonio Gandino, Johannes Jacob Wecker, the Speculator, and Lodovico Domenichi.
+				My most personal spirits.
+			</translation>
+		</marginalia>
+		
+
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						In euerie word, life, &amp; vigour: in euerie act, life, &amp; valour:
+						euen in eueri  aspecte, life, &amp; powre. Euerie breath of 
+						Eutrapelus, is ethereal, &amp; Jouial. No spirit so full of
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="tail" book_orientation="90">
+					<marginalia_text>
+						life, &amp; puissance.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+				
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="SETTIMO NVOVAMENTE"/>
+		<underline method="pen" type="straight" language="IT" text="intorno al danno, che Roma hauea"/>
+		<underline method="pen" type="straight" language="IT" text="d'inondatione del Teuere"/>
+		<underline method="pen" type="straight" language="IT" text="molto scientiato"/>
+		<underline method="pen" type="straight" language="IT" text="tenuto rarissimo"/>
+		<underline method="pen" type="straight" language="IT" text="del motteggiare"/>
+		<underline method="pen" type="straight" language="IT" text="Romani deurebbono"/>
+		<underline method="pen" type="straight" language="IT" text="Teuere stesse sempre ammalato"/>
+		<underline method="pen" type="straight" language="IT" text="esce del letto"/>
+		<underline method="pen" type="straight" language="IT" text="gran danno"/>
+		<underline method="pen" type="straight" language="IT" text="arguto, &amp;"/>
+		<underline method="pen" type="straight" language="IT" text="della sua mala fortuna"/>
+		<underline method="pen" type="straight" language="IT" text="tanta calamit&agrave;, che"/>
+		<underline method="pen" type="straight" language="IT" text="d'hauere hauuta la raccomandatione dell'anima"/>
+		<underline method="pen" type="straight" language="IT" text="gran buona macchia d'olio"/>
+		<underline method="pen" type="straight" language="IT" text="l'olio santo anchora"/>
+		<underline method="pen" type="straight" language="IT" text="Mordace"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="stesse sempre ammalato"/>
+		<underline method="chalk" type="straight" language="IT" text="&amp; perche S. Iacopo io? soggiunse"/>
+		<underline method="chalk" type="straight" language="IT" text="esce del letto fa un gran danno"/>
+		<underline method="chalk" type="straight" language="IT" text="raccomandatione dell'anima"/>
+		
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="Sun" place="right_margin"/>
+		
+		<!-- Marks -->
+		
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- compassio -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Mes -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- amma -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- udi -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- soggiun -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- gran dan --> 
+		<mark name="dash" method="pen" place="right_margin"/> <!-- dan -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ra -->
+		
+		
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- garbo ... compagnia  -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- se ... no -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- ridotto .. dandogli -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- so ... lio -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Large smudged bar --> 
+	    	<mark name="plus_sign" method="pen" place="intext" language="IT" text="Teuere"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- tenuto rarissimo -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- del motteggiare -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="motteggiare"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- motteggiare, disse -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Teuere"/>
+		<mark name="equal_sign" method="pen" place="intext"/> <!-- sempre amma -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- esce -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- esce del letto -->
+		<mark name="comma" method="pen" place="intext"/> <!-- letto fa -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="arguto"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="dell'anima"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- & l'o -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Mordace"/>
+		<mark name="quotation_mark" method="pen" place="intext"/>
+		<mark name="vertical_bar" method="pen" place="tail"/>
+		
+
+    </annotation>
+</transcription>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.069v.tif" pagination="458" reader="Harvey"/>	<!-- ABO 74left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Grata breuitas: varietas: nouitas.
+						Inexpectata, gratiora.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Agreeable brevity, variety, novelty.
+				Unexpected things are more pleasing.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Omne tulit punctu[m], qui miscuit vtile dulci: ut hi.
+					</marginalia_text>
+					<X-ref person="Horace" book_title="Ars poetica" language="LA" text="Omne tulit punctum, qui miscuit vtile dulci"/>
+				</position>
+			</language>
+			<translation>
+				"He who mixed the useful with the sweet won every point," as these men did.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Nec Jureconsultus carere potest Sylua Nuptiali: nec Rabela[e]sio hodierna dexteritas.
+					</marginalia_text>
+					<person name="Francois Rabelais"/>
+					<book title="Sylva nuptialis"/>
+				</position>
+			</language>
+			<translation>
+				A lawyer cannot be without the Sylva Nuptialis; nor can skillfulness these days be without Rabelais.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Giouanni
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						ad Oppositum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Contrary John. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Omnes Historia[e] in historia vnius Ca[e]saris: =
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						= imm&ograve; infra vnum omnes: Cuius (
+						summa laus, horribilis uigila[n]tia, dilige[n]tia, Celeritas
+						proprius super omnes vigor.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				All the things of History are found in the history of Caesar alone: 
+				or rather, all things are beneath one man, whose great renown,
+				terrible vigilance, diligence, speed, and vigor surpass all. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Nullum pra[e]gnantius, aut viuidius supplementu[m] Domenichi, qu&agrave;m Manlij Loci Communes;
+						et Apologia Herodoti: cum stratagematis etiam Gandini.
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<person name="Marcantonio Gandino"/>
+					<book title="Loci communes"/>
+					<book title="Apologie pour Hérodote"/>
+					<book title="Stratagemata"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Nothing is a more pregnant or more vivid supplement to Domenichi than the Common Places of Manlius,
+				as well as the Apology for Herodotus, together with Gandino's Strategems.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Nihil magis decet maximos spiritus, qu&agrave;m ingenuitas, et modestia, ciuilitas, et humanitas:    
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="intext" book_orientation="270">
+					<marginalia_text>
+						tam
+					</marginalia_text>
+				</position>
+				<position place="tail" book_orientation="270">
+					<marginalia_text>
+						amabilis,
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="270">
+					<marginalia_text>
+						qu&agrave;m alacris.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is more proper for the greatest spirits than ingenuiy and modesty, civility and humanity:
+				to be as amiable as one is eager.
+			</translation>
+		</marginalia>		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="270">
+					<marginalia_text>
+						Cantemus Domino Canticum Novum.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<language ident="IT">
+				<position place="left_margin" book_orientation="270">
+					<marginalia_text>
+						Novita del Vnico.
+					</marginalia_text>
+					<person name="Bernardo Accolti"/>
+				</position>
+			</language>
+			<translation>
+				Let us sing a new song to the Lord. Something new from Bernardo Accolti.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="alle parole"/>
+		<underline method="pen" type="straight" language="IT" text="non al senso"/>
+		<underline method="pen" type="straight" language="IT" text="ch'egli era Cassandra"/>
+		<underline method="pen" type="straight" language="IT" text="indouinaua le cose a uenire"/>
+		<underline method="pen" type="straight" language="IT" text="non gli eran credute"/>
+		<underline method="pen" type="straight" language="IT" text="argutamente &amp; mordacemente"/>
+		<underline method="pen" type="straight" language="IT" text="molti tuoi. Aiaci Oilei"/>
+		<underline method="pen" type="straight" language="IT" text="Aiace Oileo"/>
+		<underline method="pen" type="straight" language="IT" text="usato con Cassandra"/>
+		<underline method="pen" type="straight" language="IT" text="un'arguta risposta"/>
+		<underline method="pen" type="straight" language="IT" text="Remigio"/>
+		<underline method="pen" type="straight" language="IT" text="disputando publicamente"/>
+		<underline method="pen" type="straight" language="IT" text="la uittoria della Catedra"/>
+		<underline method="pen" type="straight" language="IT" text="gran fusto d'huomo"/>
+		<underline method="pen" type="straight" language="IT" text="a incalzar"/>
+		<underline method="pen" type="straight" language="IT" text="uoce altera"/>
+		<underline method="pen" type="straight" language="IT" text="uincere in cotesto tuono"/>
+		<underline method="pen" type="straight" language="IT" text="uno scambio"/>
+		<underline method="pen" type="straight" language="IT" text="ti uincer&agrave; di rumori"/>
+		<underline method="pen" type="straight" language="IT" text="io confondo"/>
+		<underline method="pen" type="straight" language="IT" text="pianamente con le ragioni"/>
+		<underline method="pen" type="straight" language="IT" text="motti, come"/>
+		<underline method="pen" type="straight" language="IT" text="nelle parole"/>
+		<underline method="pen" type="straight" language="IT" text="nelle cose"/>
+		<underline method="pen" type="straight" language="IT" text="con le parole"/>
+		<underline method="pen" type="straight" language="IT" text="son dubbiose"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="SS" place="head"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- fi -->
+		<mark name="comma" method="pen" place="right_margin"/> <!-- parlare -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- con uo -->
+		
+	    <!-- Left margin -->
+	    <mark name="bracket" method="pen" place="left_margin"/> <!-- i ... tre -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: rispondendo -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: Re -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Priamo, uolendo -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="argutamente &amp; mordacemente"/>
+	    <mark name="vertical_bar" method="pen" place="intext"/> <!-- Oilei. Aiace -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- nerua. -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="arguta"/>
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- Catedra. Perche -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- tuono -->
+		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- di rumori -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: rumori -->
+		<mark name="dot" method="pen" place="intext"/> <!-- rumori, come -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- end of 'alacris' marginalia -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="le ragioni"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- ragioni -->
+		<mark name="equal_sign" method="pen" place="intext"/> <!-- come nel -->
+		<mark name="comma" method="pen" place="intext"/> <!-- detto consistono -->
+
+    </annotation>
+</transcription>

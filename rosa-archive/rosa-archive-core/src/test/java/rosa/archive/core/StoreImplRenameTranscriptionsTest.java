@@ -53,24 +53,24 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
      *
      * @throws IOException .
      */
-    @Test
-    public void renameTranscriptionsReverseTest() throws IOException {
-        generateFileMap(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, "BOOK_ID", true, true, 10, 10, 1);
-
-        store.renameTranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, false, errors);
-        assertTrue("Unexpected errors found.", errors.isEmpty());
-
-        store.renameTranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, true, errors);
-        assertTrue("Unexpected errors found.", errors.isEmpty());
-
-        List<String> names = base.getByteStreamGroup(VALID_COLLECTION).getByteStreamGroup(VALID_BOOK_FOLGERSHA2)
-                .listByteStreamNames();
-        checkPages("FolgersHa2", names);
-
-        assertTrue(names.contains("FolgersHa2.037v.xml"));
-        assertFalse(names.contains("FolgersHa2.aor.frontmatter.flyleaf.001v.xml"));
-        checkWithBookChecker(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
-    }
+//    @Test
+//    public void renameTranscriptionsReverseTest() throws IOException {
+//        generateFileMap(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, "BOOK_ID", true, true, 10, 10, 1);
+//
+//        store.renameTranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, false, errors);
+//        assertTrue("Unexpected errors found.", errors.isEmpty());
+//
+//        store.renameTranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, true, errors);
+//        assertTrue("Unexpected errors found.", errors.isEmpty());
+//
+//        List<String> names = base.getByteStreamGroup(VALID_COLLECTION).getByteStreamGroup(VALID_BOOK_FOLGERSHA2)
+//                .listByteStreamNames();
+//        checkPages("FolgersHa2", names);
+//
+//        assertTrue(names.contains("FolgersHa2.037v.xml"));
+//        assertFalse(names.contains("FolgersHa2.aor.frontmatter.flyleaf.001v.xml"));
+//        checkWithBookChecker(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
+//    }
 
     /**
      * Does not rename any items due to duplicate values in the file map.

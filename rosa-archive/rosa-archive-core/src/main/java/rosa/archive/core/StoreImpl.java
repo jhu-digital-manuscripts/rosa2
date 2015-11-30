@@ -17,7 +17,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -555,6 +554,10 @@ public class StoreImpl implements Store, ArchiveConstants {
     @Override
     public void renameTranscriptions(String collection, String book, boolean reverse, List<String> errors) throws IOException {
         errors = nonNullList(errors);
+        if (reverse) {
+            errors.add("Reverse transform not yet supported");
+            return;
+        }
 
         if (!base.hasByteStreamGroup(collection)) {
             errors.add("Collection not found in directory. [" + base.id() + "]");
@@ -635,6 +638,29 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
     }
 
+    /**
+     * Modify the given AoR annotated page by changing names given in the
+     * internal references tags from using original git file/directory names
+     * to using the archive names.
+     *
+     * Cases to look for:
+     *  BookID = git name; XML file = git name
+     *      - rename BookID, rename file
+     *  BookID = git name; XML file = archive name
+     *      - rename BookID, keep file
+     *  BookID = archive name; XML file = git name (should be the case in most or all references)
+     *      - keep BookID, rename file
+     *  BookID = archive name; XML file = archive name
+     *      - keep BookId, keep file
+     *
+     * @param collection ByteStreamGroup for collection
+     * @param book ByteStreamGroup for book
+     * @param aPage AoR transcribed page
+     * @param currentFileMap file map of current book
+     * @param reverse reverse the operation by changing names from archive name to git name?
+     * @param errors list of errors
+     * @throws IOException .
+     */
     private void renameInternalReferences(ByteStreamGroup collection, ByteStreamGroup book, AnnotatedPage aPage,
                                           FileMap currentFileMap, boolean reverse, List<String> errors) throws IOException {
         if (collection == null || book == null || aPage == null || currentFileMap == null) {
@@ -653,7 +679,6 @@ public class StoreImpl implements Store, ArchiveConstants {
                         for (ReferenceTarget target : ref.getTargets()) {
                             // Make sure the reference target exists
                             String targetBook = target.getBookId();
-                            String targetFile = target.getFilename();
 
                             if (!collection.hasByteStreamGroup(targetBook)) {
                                 // Original book name not found, check directory map
@@ -665,7 +690,9 @@ public class StoreImpl implements Store, ArchiveConstants {
                                 }
                             }
 
-                            if (!target.getBookId().equals(targetBook)) {
+                            // Change BookID if it is not already its archive name
+                            if (!target.getBookId().equals(targetBook)
+                                    && directoryMap.getMap().containsValue(targetBook)) {
                                 target.setBookId(targetBook);
                             }
 
@@ -677,12 +704,24 @@ public class StoreImpl implements Store, ArchiveConstants {
                                 continue;
                             }
 
-                            // WIll load a FileMap every time a <target> is encountered.......must be smarter about these loads
-                            FileMap targetFilemap = loadItem(FILE_MAP, targetBSG, FileMap.class, null);
-                            String newFile = transformName(targetFile, targetFilemap, false);
+                            // Rename target file name as needed
+                            String targetFile = target.getFilename().replace(XML_EXT, TIF_EXT);
 
-                            if (!newFile.equals(targetFile)) {
-                                target.setFilename(newFile);
+                            String newFileName;
+                            if (targetBSG.id().equals(book.id())) {
+                                newFileName = transformName(targetFile, currentFileMap, false);
+                            } else {
+                                // WIll load a FileMap every time a <target> is encountered.......must be smarter about these loads
+                                FileMap targetFilemap = loadItem(FILE_MAP, targetBSG, FileMap.class, null);
+                                newFileName = transformName(targetFile, targetFilemap, false);
+                            }
+
+                            // File map actually maps image files. These names are related to transcription
+                            // files, but do not exactly match.
+                            newFileName = imageToTranscriptionName(newFileName);
+
+                            if (!newFileName.equals(targetFile)) {
+                                target.setFilename(newFileName);
                             }
                         }
                     }
@@ -692,9 +731,27 @@ public class StoreImpl implements Store, ArchiveConstants {
 
     }
 
+    private String imageToTranscriptionName(String name) {
+        List<String> parts = new ArrayList<>(Arrays.asList(name.split("\\.")));
+        parts.add(1, ArchiveItemType.TRANSCRIPTION_AOR.getIdentifier());
+
+        StringBuilder sb = new StringBuilder();
+        boolean isFirst = true;
+        for (String str : parts) {
+            if (isFirst) {
+                isFirst = false;
+            } else {
+                sb.append('.');
+            }
+            sb.append(str);
+        }
+
+        return sb.toString().replace(TIF_EXT, XML_EXT);
+    }
+
     private void loadDirectoryMap() throws IOException {
         // TODO really crappy...
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("dir-map.csv")) {
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("rosa/archive/dir-map.csv")) {
             directoryMap = serializers.getSerializer(FileMap.class).read(in, null);
         }
     }
@@ -715,6 +772,10 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @return transformed name
      */
     private String transformName(String name, FileMap fileMap, boolean twoway) {
+        if (fileMap == null) {
+            return name;
+        }
+
         Map<String, String> map = fileMap.getMap();
         if (map.containsKey(name)) {
             return map.get(name);

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.067r.tif" pagination="453" reader="Harvey" signature="F3[r]"/>	<!-- ABO 71right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Cui est ingenium, non deest infinita copia Iocoru[m]. Nec ulli
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						apud Porcacum, aut Domenicu[m], qui non facil&egrave;
+					</marginalia_text>
+					<person name="Tommaso Porcacchi"/>
+					<person name="Lodovico Domenichi"/>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) possunt
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						arte
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						superari.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				For whoever has genius, an infinite abundance of jokes should not be wanting. Nor are there
+				any in Porcacchi or Domenichi who can be easily overcome by art.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Conuito di Guazzo.
+					</marginalia_text>
+					<person name="Stefano Guazzo"/>
+					<book title="The civil conversation"/>
+				</position>
+			</language>
+			<translation>
+				Guazzo's dinner party.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Deo: Regi: Tibi ipsi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				For God, the kingdom, and you yourself.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						sals&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Wittily.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian" anchor_text="decima">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Decima Excrementorum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A tenth of the excrement.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian" anchor_text="alle coltellate">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( Monomachia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Single combat.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Stratagema.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A stratagem.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Sum brauados haue good luck.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Diuina, regia, propria diligentia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Diligence: divine, royal, and one's own.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Maxima scire, et optima perficere; hoc est proficere. Sparta Euscopi.
+					</marginalia_text>
+					<person name="Euscopus"/>
+					<location name="Sparta"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				To know the greatest things and to accomplish the best; this is accomplishment. Euscopus' Sparta. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="90">
+					<marginalia_text>
+						Regia, et diuina professio; scire, dicere; 
+						agere optima: semper pergere.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A royal and divine profession: to know and to speak; to perform the best things; to always go forward.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="la uesica"/>
+		<underline method="pen" type="straight" language="IT" text="mendicarla da Lardo"/>
+		<underline method="pen" type="straight" language="IT" text="Boldone"/>
+		<underline method="pen" type="straight" language="IT" text="star senza cena"/>
+		<underline method="pen" type="straight" language="IT" text="rispose M. Furio Camillo"/>
+		<underline method="pen" type="straight" language="IT" text="uesica"/>
+		<underline method="pen" type="straight" language="IT" text="'l lardo"/>
+		<underline method="pen" type="straight" language="IT" text="'l boldone"/>
+		<underline method="pen" type="straight" language="IT" text="cacciatore, non"/>
+		<underline method="pen" type="straight" language="IT" text="restate herede"/>
+		<underline method="pen" type="straight" language="IT" text="d'altro"/>
+		<underline method="pen" type="straight" language="IT" text="de' talloni"/>
+		<underline method="pen" type="straight" language="IT" text="Risero quiui"/>
+		<underline method="pen" type="straight" language="IT" text="furon replicati"/>
+		<underline method="pen" type="straight" language="IT" text="altri motti acutissimi"/>
+		<underline method="pen" type="straight" language="IT" text="io cominciando"/>
+		<underline method="pen" type="straight" language="IT" text="tanto gran gusto"/>
+		<underline method="pen" type="straight" language="IT" text="porchetta"/>
+		<underline method="pen" type="straight" language="IT" text="trascuraggine, lasciati uscir di mente"/>
+		<underline method="pen" type="straight" language="IT" text="Sacerdote di Gioue"/>
+		<underline method="pen" type="straight" language="IT" text="Aristofane"/>
+		<underline method="pen" type="straight" language="IT" text="persone religiose"/>
+		<underline method="pen" type="straight" language="IT" text="portauano piu offerte al tempio"/>
+		<underline method="pen" type="straight" language="IT" text="spelonca"/>
+		<underline method="pen" type="straight" language="IT" text="orinare, e scaricare"/>
+		<underline method="pen" type="straight" language="IT" text="Pigliate la decima di"/>
+		<underline method="pen" type="straight" language="IT" text="coteste offerte"/>
+		<underline method="pen" type="straight" language="IT" text="sfidati due bulli"/>
+		<underline method="pen" type="straight" language="IT" text="alle coltellate su 'l"/>
+		<underline method="pen" type="straight" language="IT" text="del combattere"/>
+		<underline method="pen" type="straight" language="IT" text="l'uno d'essi animosamente"/>
+		<underline method="pen" type="straight" language="IT" text="l'altro piu di due hore"/>
+		<underline method="pen" type="straight" language="IT" text="indugi&ograve; a comparire"/>
+		<underline method="pen" type="straight" language="IT" text="fu molto"/>
+		<underline method="pen" type="straight" language="IT" text="fosse indugiato"/>
+		<underline method="pen" type="straight" language="IT" text="robe in barca"/>
+		<underline method="pen" type="straight" language="IT" text="morto questo gaglioffo"/>
+		<underline method="pen" type="straight" language="IT" text="immantinente fuggire"/>
+		<underline method="pen" type="straight" language="IT" text="tanto terrore all'auuersario"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="la decima di coteste offerte"/>
+		<underline method="chalk" type="straight" language="IT" text="accioche com'har&ograve;"/>
+		<underline method="chalk" type="straight" language="IT" text="questo galgioffo, io possa immantinente fuggire"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="left_margin"/> <!--sloppy SS symbol-->
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="JC" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- sara' a ba -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- fu -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- quel -->
+		<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- Aristofa -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Aristofa -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- offerte al -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- d'u -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- se non per -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- pau -->
+		
+	    	<!-- Left margin -->
+	    <mark name="quotation_mark" method="pen" place="left_margin" language="IT" text="la uesica"/> 
+		<mark name="equal_sign" method="pen" place="left_margin"/> <!-- carla da Lardo -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- ron replicati -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- na ... Pigliate -->
+		<mark name="X_sign" method="pen" place="left_margin"/> <!-- no stato -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- morto questo -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Boldone, e -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- boldone: ma -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- talloni. Risero -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="Risero"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="motti acutissimi"/>
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- acutissimi: ma -->
+	    <mark name="comma" method="pen" place="intext"/> <!-- piu quel -->
+		<mark name="dot" method="pen" place="intext"/> <!-- porchetta, me -->
+		<mark name="equal_sign" method="pen" place="intext"/> <!-- piu offerte -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- orinare -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="decima"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- coteste offerte -->
+		<mark name="dot" method="pen" place="intext"/> <!-- offerte, che -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="del combattere"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- combattere, l'uno -->
+		<mark name="dot" method="pen" place="intext"/> <!-- uenire, dicendo -->
+		<mark name="dot" method="pen" place="intext"/> <!-- rispose, percioche -->
+		<mark name="dot" method="pen" place="intext"/> <!-- barca, accioche -->		
+		<mark name="quotation_mark" method="pen" place="tail"/> <!-- Unknown mark/ Backwards quotation symbol -->
+
+    </annotation>
+</transcription>
