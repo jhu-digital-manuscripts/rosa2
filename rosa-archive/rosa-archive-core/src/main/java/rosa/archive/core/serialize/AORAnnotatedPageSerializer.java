@@ -563,8 +563,12 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
     }
 */
     private void setAttribute(Element tag, String attribute, String value) {
+        boolean alwaysWrite = attribute.equals(ATTR_AMENDEDTEXT) || attribute.equals(ATTR_COPYTEXT)
+                || (tag.getTagName().equalsIgnoreCase("x-ref") && attribute.equals(ATTR_PERSON))
+                || (tag.getTagName().equals("internal_ref") && attribute.equals(ATTR_TEXT))
+                || (tag.getTagName().equals("target") && attribute.equals(ATTR_TEXT));
         // Dumb hack to force writing of specific attributes even if empty...
-        if ((attribute.equals(ATTR_AMENDEDTEXT) || attribute.equals(ATTR_COPYTEXT))) {
+        if (alwaysWrite) {
             tag.setAttribute(attribute, value == null ? "" : value);
         } else if (value != null && !value.isEmpty()) {
             tag.setAttribute(attribute, value);
