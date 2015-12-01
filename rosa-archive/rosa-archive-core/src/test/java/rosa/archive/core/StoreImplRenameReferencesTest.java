@@ -119,12 +119,7 @@ public class StoreImplRenameReferencesTest {
         List<String> errors = new ArrayList<>();
 
         store.renameTranscriptions(VALID_COLLECTION, BOOK_DOMENICHI, false, errors);
-
-        for (String s : errors) {
-            System.out.println("  " + s);
-        }
         assertTrue("Errors were found while renaming.", errors.isEmpty());
-
 
         // Make sure all transcriptions have been renamed
         List<String> filesInBook = base.getByteStreamGroup(VALID_COLLECTION)
@@ -151,6 +146,7 @@ public class StoreImplRenameReferencesTest {
                     for (Position pos : lang.getPositions()) {
                         for (InternalReference ref : pos.getInternalRefs()) {
                             for (ReferenceTarget target : ref.getTargets()) {
+//                                printTarget(target);
                                 assertNotNull("Target book id is NULL.", target.getBookId());
                                 assertFalse("Target book id is empty.", target.getBookId().isEmpty());
                                 assertNotNull("Target filename is NULL.", target.getFilename());
@@ -178,6 +174,76 @@ public class StoreImplRenameReferencesTest {
         }
 
         assertEquals("Unexpected number of Folgers references", 43, folgers_count);
+        assertEquals("Unexpected number of PrincetonRB16th11 references", 2, princeton_count);
+    }
+
+    /**
+     * Rename transcriptions in book: Buchanan_MariaScotorumRegina. There are
+     * TWO internal references that must also be renamed. Final name for this
+     * book is 'PrincetonRB16th11'
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void renameBuchananTranscriptionsTest() throws Exception {
+        List<String> errors = new ArrayList<>();
+
+        store.renameTranscriptions(VALID_COLLECTION, BOOK_BUCHANAN, false, errors);
+        assertTrue("Errors were found while renaming.", errors.isEmpty());
+
+        // Make sure all transcriptions have been renamed
+        List<String> filesInBook = base.getByteStreamGroup(VALID_COLLECTION)
+                .getByteStreamGroup(BOOK_BUCHANAN)
+                .listByteStreamNames();
+        for (String file : filesInBook) {
+            if (file.endsWith(".xml")) {
+                assertTrue("Unexpected prefix for transcription. (" + file + ")",
+                        file.startsWith("PrincetonRB16th11.aor."));
+            }
+        }
+
+        // Load file maps
+        Map<String, FileMap> filemaps = loadFileMaps();
+
+        int folgers_count = 0;
+        int princeton_count = 0;
+        // Make sure all <internal_ref>s have been changed appropriately
+        List<AnnotatedPage> pages = getPages(BOOK_BUCHANAN);
+        for (AnnotatedPage page : pages) {
+            assertNotNull("NULL page.", page);
+
+            for (Marginalia marg : page.getMarginalia()) {
+                for (MarginaliaLanguage lang : marg.getLanguages()) {
+                    for (Position pos : lang.getPositions()) {
+                        for (InternalReference ref : pos.getInternalRefs()) {
+                            for (ReferenceTarget target : ref.getTargets()) {
+//                                printTarget(target);
+                                assertNotNull("Target book id is NULL.", target.getBookId());
+                                assertFalse("Target book id is empty.", target.getBookId().isEmpty());
+                                assertNotNull("Target filename is NULL.", target.getFilename());
+                                assertFalse("Target filename is empty.", target.getFilename().isEmpty());
+
+                                assertTrue("Unexpected Book ID found. (" + target.getBookId() + ")",
+                                        filemaps.get(DIRECTORY_MAP).getMap().containsValue(target.getBookId()));
+                                assertTrue("Unexpected filename found. (" + target.getFilename() + ")",
+                                        target.getFilename().startsWith("PrincetonRB16th11.aor.") &&
+                                                target.getFilename().endsWith(".xml"));
+
+                                if (target.getBookId().startsWith("Folgers")) {
+                                    folgers_count++;
+                                } else if (target.getBookId().startsWith("Princeton")) {
+                                    princeton_count++;
+                                } else {
+                                    fail("Unexpected book id found. (" + target.getBookId() + ")");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        assertEquals("Unexpected number of Folgers references", 0, folgers_count);
         assertEquals("Unexpected number of PrincetonRB16th11 references", 2, princeton_count);
     }
 
@@ -238,6 +304,19 @@ public class StoreImplRenameReferencesTest {
         assertTrue("Unexpected errors found while loading file maps.", errors.isEmpty());
 
         return map;
+    }
+
+    // For debugging
+    private void printTarget(ReferenceTarget target) {
+        System.out.println(
+                "<target book_id=\""
+                        + target.getBookId()
+                        + "\" filename=\""
+                        + target.getFilename()
+                        + "\" text=\""
+                        + target.getText()
+                        + "\" />"
+        );
     }
 
 }
