@@ -31,7 +31,8 @@ import rosa.iiif.image.model.SizeType;
  * TODO Eventually make an IT that is enabled on the command line.
  */
 public class FSIServiceTest {
-    private FSIService server = new FSIService("http://fsiserver.library.jhu.edu/server", 1000, 100);
+    private FSIService server = new FSIService("http://fsiserver.library.jhu.edu/server", 1000, 1000, 1000,
+            new int[] {1,2,4}, 100);
     private String test_image_id = "rose/Douce195/Douce195.001r.tif";
     private int test_image_width = 3732;
     private int test_image_height = 5742;
