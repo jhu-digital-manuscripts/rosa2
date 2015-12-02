@@ -20,6 +20,8 @@ public interface AORAnnotatedPageConstants {
     String TAG_LOCATION = "location";
     String TAG_EMPHASIS = "emphasis";
     String TAG_TRANSLATION = "translation";
+    String TAG_INTERNAL_REF = "internal_ref";
+    String TAG_TARGET = "target";
 
     String ATTR_FILENAME = "filename";
     String ATTR_PAGINATION = "pagination";
@@ -47,5 +49,6 @@ public interface AORAnnotatedPageConstants {
     String ATTR_LOCATION_NAME = "location_name";
     String ATTR_BOOK_TITLE = "book_title";
     String ATTR_EMPHASIS_TEXT = "emphasis_text";
+    String ATTR_BOOK_ID = "book_id";
 
 }

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.057r.tif" pagination="433" reader="Harvey"/>	<!-- ABO 61right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Tua Tibi Praxis aurea:	(
+					</marginalia_text>
+					<book title="Aurea praxis"/>
+				</position>
+				<position place="tail" book_orientation="90">
+					<marginalia_text>
+						Mihi mea Entelechia adamantina. }
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				For you, your Golden praxis: for me, my adamantine actualization.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						( Domenichi, singolare Coregiano. )
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+				</position>
+			</language>
+			<translation>
+				Domenichi, a singular courtier.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Et si vel copia narrationum, vel ipsa Iocandi facultas qua[e]ritur; 
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Piu vno, che Cento.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				However either an abundance of narratives, or the faculty itself of jesting, is required; better one, than one hundred.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="right_margin" book_orientation="90">
+					<marginalia_text>
+						{ Make most of such Examples, as may serue for Mines of Inuention;
+						Mirrours of Elocution; &amp; fountains of pleasant deuises. The finest platforms.
+					</marginalia_text>
+					<emphasis method="pen" type="straight" text="Make most"/>
+					<emphasis method="pen" type="straight" text="Mines of"/>
+					<emphasis method="pen" type="straight" text="Mirrours of"/>
+					<emphasis method="pen" type="straight" text="fountains of"/>
+					<emphasis method="pen" type="straight" text="finest platforms"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="lingua Greca"/>
+		<underline method="pen" type="straight" language="IT" text="Latina"/>
+		<underline method="pen" type="straight" language="IT" text="nostra"/>
+		<underline method="pen" type="straight" language="IT" text="quali imitando gli"/>
+		<underline method="pen" type="straight" language="IT" text="recar giouamento"/>
+		<underline method="pen" type="straight" language="IT" text="co' precetti da"/>
+		<underline method="pen" type="straight" language="IT" text="aperta la strada da"/>
+		<underline method="pen" type="straight" language="IT" text="formarne in"/>
+		<underline method="pen" type="straight" language="IT" text="auiso necessario"/>
+		<underline method="pen" type="straight" language="IT" text="scriuer l'historia"/>
+		<underline method="pen" type="straight" language="IT" text="mai non condusse questo pensiero a fine"/>
+		<underline method="pen" type="straight" language="IT" text="per sue lettere"/>
+		<underline method="pen" type="straight" language="IT" text="a bocca"/>
+		<underline method="pen" type="straight" language="IT" text="disegno di uolerlo fare"/>
+		<underline method="pen" type="straight" language="IT" text="morte immatura a"/>
+		<underline method="pen" type="straight" language="IT" text="M D L X I I I I"/>
+		<underline method="pen" type="straight" language="IT" text="questo suo libro delle facetie"/>
+		<underline method="pen" type="straight" language="IT" text="uolte in Fiorenza"/>
+		<underline method="pen" type="straight" language="IT" text="due in Vinetia"/>
+		<underline method="pen" type="straight" language="IT" text="una in Padoua"/>
+		<underline method="pen" type="straight" language="IT" text="senza quel discorso"/>
+		<underline method="pen" type="straight" language="IT" text="Io"/>
+		<underline method="pen" type="straight" language="IT" text="buon Domenichi uisse"/>
+		<underline method="pen" type="straight" language="IT" text="honorai"/>
+		<underline method="pen" type="straight" language="IT" text="certa uniuersal cognition di belle cose"/>
+		<underline method="pen" type="straight" language="IT" text="una singolar facilit&agrave; d'ottimi costumi"/>
+		<underline method="pen" type="straight" language="IT" text="in lui ammiraua"/>
+		<underline method="pen" type="straight" language="IT" text="di celebrar"/>
+		<underline method="pen" type="straight" language="IT" text="il suo nome"/>
+		<underline method="pen" type="straight" language="IT" text="la sesta uolta questo"/>
+		<underline method="pen" type="straight" language="IT" text="supplire"/>
+		<underline method="pen" type="straight" language="IT" text="una parte di"/>
+		<underline method="pen" type="straight" language="IT" text="forse interamente harebbe sodisfatto"/>
+		<underline method="pen" type="straight" language="IT" text="Mouomi a questo"/>
+		<underline method="pen" type="straight" language="IT" text="poca aggiunta di motti"/>
+		<underline method="pen" type="straight" language="IT" text="quali h&ograve; per capriccio"/>
+		<underline method="pen" type="straight" language="IT" text="uolta raccolti"/>
+		<underline method="pen" type="straight" language="IT" text="quali a lui fatto"/>
+		<underline method="pen" type="straight" language="IT" text="libero dono, secondo"/>
+		<underline method="pen" type="straight" language="IT" text="in Fiorenza"/>
+		<underline method="pen" type="straight" language="IT" text="in Roma"/>
+		<underline method="pen" type="straight" language="IT" text="libri in Vinetia"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="recar giouamento: &amp; co' precetti da"/>
+		<underline method="chalk" type="straight" language="IT" text="harebbono a lui aperta la"/>
+		<underline method="chalk" type="straight" language="IT" text="per una singolar facilit&agrave; d'ottimi costumi"/>
+		<underline method="chalk" type="straight" language="IT" text="per capriccio"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		<symbol name="SS" place="head"/>
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="Bisected_circle" place="right_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- discor -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ho -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- pre -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- suppli -->
+		
+	    	<!-- Left margin -->
+	    <mark name="bracket" method="pen" place="left_margin"/> <!-- in ... harebbono -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- natura ... so -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- hauuti ... all'hora -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="co' precetti"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="strada"/>
+	    <mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="scriuer l'historia"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- fine, se -->
+		<mark name="dot" method="pen" place="intext"/> <!-- natura, & -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Fiorenza"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Vinetia"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Padoua"/>
+		<mark name="equal_sign" method="pen" place="intext"/> <!-- senza -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- so; Io che -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- universal -->
+		<mark name="dot" method="pen" place="intext"/> <!-- haueua, per -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- singolar -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- ammiraua -->
+		<mark name="semicolon" method="pen" place="intext"/> <!-- ammiraua & -->
+		<mark name="dot" method="pen" place="intext"/> <!-- portaua, & -->
+		<mark name="comma" method="pen" place="intext"/> <!-- morto piagno -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="la sesta uolta"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- uoluto suppli -->
+		<mark name="dot" method="pen" place="intext"/> <!-- quello, a -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="motti"/>
+		<mark name="apostrophe" method="pen" place="intext"/> <!-- ti, che pongo -->
+		<mark name="dot" method="pen" place="intext"/> <!-- libro, i -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- per capric -->
+		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- uolta raccolti -->
+		<mark name="dot" method="pen" place="intext"/> <!-- raccolti, & -->
+		<mark name="comma" method="pen" place="intext"/> <!-- promesso se -->
+		<mark name="dot" method="pen" place="intext"/> <!-- haueua, trouando -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- i miei libri -->
+
+    </annotation>
+</transcription>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.066r.tif" pagination="451" reader="Harvey" signature="Ff2[r]"/>	<!-- ABO 70right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Mera alacritas, celeritas, violentia, constantia.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Pure eagerness, quickness, aggressiveness, perseverance.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						( ridicolo.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Nescia virtus stare Loco: solusq[ue]
+						pudor non vincere cunctos. )
+					</marginalia_text>
+					<X-ref person="Lucan" book_title="Pharsalia" language="LA" text="Nescia virtus stare loco"/>
+				</position>
+			</language>
+			<translation>
+				"The virtue of not knowing how to stay in one place,"
+				and the decency of not conquering all together.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Utrunq[ue] conuenit, Et sibi sapere, et alijs: nec se, nec mundu[m] despicere. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is appropriate to know both one's self and others and not to disdain one's self nor the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Nemo cuiusq[uam] mundana[e] facultatis satis practicus: vt nec sua[e]
+						ipsius persona[e]. Quam in quotidiana Praxi maxim&egrave; desidero, praxis
+					</marginalia_text>
+				</position>
+				<position place="tail" book_orientation="270">
+					<marginalia_text>
+						est.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No one is practical enough with any wordly skill; likewise, neither are they practiced enough
+				with their very own persona. That which I most desire in daily praxis is praxis.	
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="quel poco di studio, c'h&ograve; fatto"/>
+		<underline method="pen" type="straight" language="IT" text="alle leggi fino"/>
+		<underline method="pen" type="straight" language="IT" text="forme de' testamenti antichi"/>
+		<underline method="pen" type="straight" language="IT" text="l'eccellente M. Lattantio"/>
+		<underline method="pen" type="straight" language="IT" text="testamento d'un Porcello, assai ridicolo"/>
+		<underline method="pen" type="straight" language="IT" text="TESTAMENTO di Marco Grugno"/>
+		<underline method="pen" type="straight" language="IT" text="Porcello"/>
+		<underline method="pen" type="straight" language="IT" text="Magiro cuoco"/>
+		<underline method="pen" type="straight" language="IT" text="mattonato. Porcel"/>
+		<underline method="pen" type="straight" language="IT" text="uoglio uccidere"/>
+		<underline method="pen" type="straight" language="IT" text="Corocotta Porcello"/>
+		<underline method="pen" type="straight" language="IT" text="Messer lo cuoco"/>
+		<underline method="pen" type="straight" language="IT" text="gratia perdonatemi"/>
+		<underline method="pen" type="straight" language="IT" text="chieggo la uita in dono"/>
+		<underline method="pen" type="straight" language="IT" text="Magiro cuoco"/>
+		<underline method="pen" type="straight" language="IT" text="il coltellaccio di cucina"/>
+		<underline method="pen" type="straight" language="IT" text="cauar le budella a questo"/>
+		<underline method="pen" type="straight" language="IT" text="il porcel fu preso"/>
+		<underline method="pen" type="straight" language="IT" text="copia di cimette di rosmarini"/>
+		<underline method="pen" type="straight" language="IT" text="canella, &amp; di garofoli"/>
+		<underline method="pen" type="straight" language="IT" text="d'hauere a morire"/>
+		<underline method="pen" type="straight" language="IT" text="un'hora di tempo"/>
+		<underline method="pen" type="straight" language="IT" text="lasciasse fare testamento"/>
+		<underline method="pen" type="straight" language="IT" text="Porcello"/>
+		<underline method="pen" type="straight" language="IT" text="due suoi parenti per lasciar loro"/>
+		<underline method="pen" type="straight" language="IT" text="Messer Padre"/>
+		<underline method="pen" type="straight" language="IT" text="Verrin di Lardo"/>
+		<underline method="pen" type="straight" language="IT" text="trenta moggi di ghiande"/>
+		<underline method="pen" type="straight" language="IT" text="mia Madonna madre Scrofa"/>
+		<underline method="pen" type="straight" language="IT" text="truogoli d'imbratto"/>
+		<underline method="pen" type="straight" language="IT" text="mia sorella Cioncherina"/>
+		<underline method="pen" type="straight" language="IT" text="moggi d'orzo"/>
+		<underline method="pen" type="straight" language="IT" text="resto de' miei mobili"/>
+		<underline method="pen" type="straight" language="IT" text="le sestole"/>
+		<underline method="pen" type="straight" language="IT" text="la testa"/>
+		<underline method="pen" type="straight" language="IT" text="gli orecchi"/>
+		<underline method="pen" type="straight" language="IT" text="Auuocati"/>
+		<underline method="pen" type="straight" language="IT" text="la lingua"/>
+		<underline method="pen" type="straight" language="IT" text="babuassi"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="ch'io ui chieggo la uita in dono"/>
+		
+		<!-- Symbols -->
+		<symbol name="LL" place="head"/>
+		<symbol name="SS" place="right_margin" language="IT" text="quel poco di studio, c'h&ograve; fatto"/>
+		<symbol name="JC" place="right_margin"/>
+		<symbol name="HT" place="right_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- an -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ridicolo -->
+		<mark name="horizontal_bar" method="pen" place="right_margin"/> <!--un che scriua; continues into printed text-->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- mia, gua -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- gra -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Ma -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/>
+		<mark name="quotation_mark" method="pen" place="right_margin"/>
+		<mark name="quotation_mark" method="pen" place="right_margin"/>
+		<mark name="quotation_mark" method="pen" place="right_margin"/>
+		
+	    	<!-- Left margin -->
+	    <mark name="X_sign" method="pen" place="left_margin"/> <!-- Grugno -->
+		<mark name="vertical_bar" method="pen" place="left_margin"/> <!-- Magiro ... sta -->
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- tia perdonatemi -->
+		<mark name="double_vertical_bar" method="pen" place="left_margin"/>
+		<mark name="double_vertical_bar" method="pen" place="left_margin"/>
+		<mark name="double_vertical_bar" method="pen" place="left_margin"/>
+		<mark name="double_vertical_bar" method="pen" place="left_margin"/>
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- ta ... recchi -->		
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="dot" method="pen" place="intext"/> <!-- qui, fra -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="testamenti"/>
+	    <mark name="dot" method="pen" place="intext"/> <!-- uedere, ho -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- d'un Porcello -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Grugno"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: Percioche -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- dere. Corocotta -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="uita"/>
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- dono. Ma -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- cello. Subito -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="il porcel fu preso"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="hora"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="lasciasse fare testamento"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: testamento -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- testamento. Chiamo' -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- disse. Lascio -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: Cioncherina -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: moggi d'orzo -->
+		<mark name="comma" method="pen" place="intext"/> <!-- mobili lascio -->
+		<mark name="dot" method="pen" place="intext"/> <!-- calzolai, a -->
+		<mark name="dot" method="pen" place="intext"/> <!-- testa, a -->
+		<mark name="dot" method="pen" place="intext"/> <!-- recchi, a -->
+		<mark name="dot" method="pen" place="intext"/> <!-- lingua, a -->
+		<mark name="quotation_mark" method="pen" place="tail"/> <!-- recchi --> <!-- CG: Strange quotation mark; possibly a symbol. -->
+					
+    </annotation>
+</transcription>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+
+	<page filename="Ha2.015v.tif" pagination="350" reader="Harvey"/>	<!-- ABO 020left -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+        				<position place="head" book_orientation="0">
+        					<marginalia_text>
+	        					Quicquid, vna erratum est vice, proxima vice
+	        					corrigatur curios&egrave;.
+        					</marginalia_text>
+        				</position>
+        			</language>
+        			<translation>
+        				Whatever has been mistaken with turn, by the next turn
+        				it is carefully corrected.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="head" book_orientation="0">
+    					<marginalia_text>
+    						( Elogium Ironicum. )
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				( Ironic saying. )
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						( Magnum corpus, parvum ingenium.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				( Large body, puny character.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) Adhuc erectior		
+    					</marginalia_text>
+    				</position>
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						animus: et ingeniu[m] semper pra[e]sentius.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				) Thus far mind is more elevated: and natural character is always more present.	
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Barland.
+    					</marginalia_text>
+    					<person name="Adriaan van Baerland"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Adrianus Barlandus.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Ridiculous.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) Infinita[e] Libroru[m] nuga[e]. Omnia vulgaria, pra[e]ter cursum Singularis viri, 
+    					</marginalia_text>
+    				</position>
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						aspirantis ad maximam rerum scientia[m],
+    						et inco[m]parabile[m] actionem.
+    					</marginalia_text>
+    				</position>
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Continu&egrave; Sibi quisq[ue] excitandus. )	
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				) Infinite are the trifles of books. All common things are irrelvant to the path of the Singular man,
+    				aspiring to the greatest knowledge of things and to incomparable deeds.
+    				Everyone must continuously be stimulated by themselves. ) 
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Solus virum agit, qui ipsa 
+    						Artium, professionumq[ue] opera operatur:
+    						eademq[ue] in mundo vtilissima.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				A man acts alone, who devotes his work to just the arts and professions: 
+    				though they are most useful in the world.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						A fine Gnomist, &amp; apothegmist: a braue Epigrammist, &amp;
+    						Emblemmist. A singular Aphorist.
+    						The onlie Stratagemist in the world.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>    	
+    		
+    		<marginalia hand="Italian" marginalia_id="Ha2.015v_0001" marginalia_continues_from="Ha2.016r_0001" book_id="FolgersHa2" marginalia_from_transcription="Ha2.016r.xml">
+    			<language ident="EN">
+    				<position place="right_margin" book_orientation="270">
+    					<marginalia_text>
+    						<!-- Continued from facing page, left margin, Ha2.016r -->
+    						gallant conceits for their owne supremacie, &amp; the pompe of spiritual pastors:
+    					</marginalia_text>
+    				</position>
+    				<position place="intext" book_orientation="270">
+    					<marginalia_text>
+    						the notablest
+    					</marginalia_text>
+    				</position>
+    				<position place="tail" book_orientation="270">
+    					<marginalia_text>
+    						fooles-paradise
+    					</marginalia_text>
+    				</position>
+    				<position place="intext" book_orientation="270">
+    					<marginalia_text>
+    						in the
+    					</marginalia_text>
+    				</position>
+    				<position place="tail" book_orientation="270">
+    					<marginalia_text>
+    						World.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="IT">
+    				<position place="intext" book_orientation="270">
+    					<marginalia_text>
+    						Basta.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Enough!
+    				<!-- CG: Missing text added. -->
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<!-- Underlines -->
+    		
+    		<underline method="pen" type="straight" language="IT" text="uirtuosa, &amp;"/>
+    		<underline method="pen" type="straight" language="IT" text="gli &egrave; peccato"/>
+    		<underline method="pen" type="straight" language="IT" text="non sia abbruciata"/>
+    		<underline method="pen" type="straight" language="IT" text="le ceneri"/>
+    		<underline method="pen" type="straight" language="IT" text="memoria"/>
+    		<underline method="pen" type="straight" language="IT" text="grande"/>
+    		<underline method="pen" type="straight" language="IT" text="sciocco"/>
+    		<underline method="pen" type="straight" language="IT" text="case grandi"/>
+    		<underline method="pen" type="straight" language="IT" text="dal mezo in su"/>
+    		<underline method="pen" type="straight" language="IT" text="non s'habitano"/>
+    		<underline method="pen" type="straight" language="IT" text="La moglie d'un"/>
+    		<underline method="pen" type="straight" language="IT" text="s'impicc&ograve; a un fico"/>
+    		<underline method="pen" type="straight" language="IT" text="un dipintore"/>
+    		<underline method="pen" type="straight" language="IT" text="un ramo di quel fico"/>
+    		<underline method="pen" type="straight" language="IT" text="habbia una pianta"/>
+    		<underline method="pen" type="straight" language="IT" text="Empio e inhumano"/>
+    		<underline method="pen" type="straight" language="IT" text="dare per moglie una"/>
+    		<underline method="pen" type="straight" language="IT" text="un poco soprafatta"/>
+    		<underline method="pen" type="straight" language="IT" text="hauete studiato, &egrave; bene"/>
+    		<underline method="pen" type="straight" language="IT" text="non mi diletto d'anticaglie"/>
+    		<underline method="pen" type="straight" language="IT" text="uoleua una piu giouane"/>
+    		<underline method="pen" type="straight" language="IT" text="bellissimo ingegno"/>
+    		<underline method="pen" type="straight" language="IT" text="un bel mattonato"/>
+    		<underline method="pen" type="straight" language="IT" text="difficult&agrave; di mattoni"/>
+    		<underline method="pen" type="straight" language="IT" text="Oh fate"/>
+    		<underline method="pen" type="straight" language="IT" text="suo parente matticcio"/>
+	       
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- d'intellet -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- s'habitano. -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- il Castiglio -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="circumflex" method="pen" place="left_margin"/> <!-- gna, ... che -->
+    		<mark name="circumflex" method="pen" place="left_margin"/> <!-- memoria -->
+    		<mark name="circumflex" method="pen" place="left_margin"/> <!-- Milanese -->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- co sopra fatta -->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- toni. Oh fate -->
+		    
+	    	<!-- Intext -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- sia abbruciata, -->
+    		<mark name="vertical_bar" method="pen" place="intext"/> <!-- memoria. E un'altra -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- to, disse, le case -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- compagno, corse -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="soprafatta"/>
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- M. Simone.] -->
+    		<mark name="horizontal_bar" method="pen" place="intext"/> <!-- mattonato -->
+
+    </annotation>
+</transcription>

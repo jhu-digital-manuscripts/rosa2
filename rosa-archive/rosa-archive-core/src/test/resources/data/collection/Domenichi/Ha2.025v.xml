@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+
+	<page filename="Ha2.025v.tif" pagination="370" reader="Harvey"/>	<!-- ABO 030left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Mea[e] vnius professiones, partim positiua[e], partim
+                    					scholastica[e]: sed maxim&egrave; omnium pragmatica[e]. 
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        			<translation>
+        				One part of my profession is positive, another part is scholastic, but in all parts it is pragmatic.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Definitiones, et diuisiones, &egrave; positiua 
+    					</marginalia_text>
+    				</position>
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						methodo. Oppositiones, et distintiones &egrave;
+    					</marginalia_text>
+    				</position>
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						scholastica Subtilitate. Arcana mundi, (
+    					</marginalia_text>
+    				</position>
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) &egrave; profundissimis olim veteratoribus,
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						et potentissmis hodi&egrave; nouatoribus.
+    						Egregiorum Pragmaticoru[m] doctores, non
+    					</marginalia_text>
+    				</position>
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Cuiacius, aut Ra[e]uardus: sed Bodinus Politicus,
+    					</marginalia_text>
+    					<person name="Jacques Cujas"/>
+    					<person name="Jacobus Raevardus"/>
+    					<person name="Jean Bodin"/>
+    				</position>
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						et Vegetius cum Hopperi vera
+    					</marginalia_text>
+    					<person name="Vegetius"/>
+    					<person name="Joachim Hoppers"/>
+    				</position>
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						) Iurisprudentia:
+    						Bartholus, et Baldus subtiles professores:
+    						Maranta, et Durandus terribiles Pragmatici: cum
+    						Locupletissimo Bertachino, qui est vnus instar Om[nium]
+    							<!-- Marginalia finishes in gutter. -->
+    					</marginalia_text>
+    					<person name="Bartolus de Saxoferrato"/>
+    					<person name="Baldus de Ubaldis"/>
+    					<person name="Roberto Maranta"/>
+    					<person name="Guillaume Durand"/>
+    					<person name="Giovanni Bertachini"/>
+    					<book title="Seduardus sive de vera iurisprudentia"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Definitions and divisions come from positive method. Oppositions and distinctions come from
+    				scholastic subtlety. The secrets of the world once came from the most profound old men, and	
+    				today from the most capable young men. The doctors of distinguished pragmatic studies are not
+    				Cujas or Raevardus, but Bodin, the politican, and Vegetius, together with Hopper's True Study of Law.
+    				Bartolus and Baldo are subtle professors; Maranta and Durandus are venerable pragmatic men, 
+    				together with Bertachini, most richly supplied, who is one equal to all others.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						odioso. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Hateful.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						epigramma.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Epigram.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						argut&egrave;. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				 Cleverly.
+    			</translation>
+    		</marginalia>
+        
+        
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+        				<position place="right_margin" book_orientation="270">
+        					<marginalia_text>
+        						Ubi illa qua[e] faciunt actorem omnium dignissimum: virum statim
+        						diuitem, honoratum, ex se, et per se magnum?  Ah quando?
+        					</marginalia_text>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+        			</language>
+        			<translation>
+        				Where are those things which make a most worthy actor of all: at once a rich and honourable man, great from and through himself? Ah, when?
+        			</translation>
+        		</marginalia>
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="Andaua uno"/>
+    		<underline method="pen" type="straight" language="IT" text="la uolt&ograve; il canto,"/>
+    		<underline method="pen" type="straight" language="IT" text="mia mula uuole andare in qu&agrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="Nuouo pescie"/>
+    		<underline method="pen" type="straight" language="IT" text="Saluestro Bottigella"/>
+    		<underline method="pen" type="straight" language="IT" text="cortigiano eccellentissimo"/>
+    		<underline method="pen" type="straight" language="IT" text="un gran Signore"/>
+    		<underline method="pen" type="straight" language="IT" text="qual parti"/>
+    		<underline method="pen" type="straight" language="IT" text="hauer' un principe"/>
+    		<underline method="pen" type="straight" language="IT" text="quelle che mancano a uoi"/>
+    		<underline method="pen" type="straight" language="IT" text="Morde"/>
+    		<underline method="pen" type="straight" language="IT" text="ammazzare un suo lauoratore"/>
+    		<underline method="pen" type="straight" language="IT" text="la risposta"/>
+    		<underline method="pen" type="straight" language="IT" text="procurate per uoi"/>
+    		<underline method="pen" type="straight" language="IT" text="Non"/>
+    		<underline method="pen" type="straight" language="IT" text="l&agrave; a pochi"/>
+    		<underline method="pen" type="straight" language="IT" text="preso"/>
+    		<underline method="pen" type="straight" language="IT" text="mozogli il capo"/>
+    		<underline method="pen" type="straight" language="IT" text="Iacopetto impiccato"/> 
+    		<underline method="pen" type="straight" language="IT" text="L'uno, &amp; l'altro hebbe"/>
+    		<underline method="pen" type="straight" language="IT" text="suo douere"/>
+    		<underline method="pen" type="straight" language="IT" text="due partiti alle"/>
+    		<underline method="pen" type="straight" language="IT" text="un nobile"/>
+    		<underline method="pen" type="straight" language="IT" text="un ignobile"/>
+    		<underline method="pen" type="straight" language="IT" text="auanzaua"/>
+    		<underline method="pen" type="straight" language="IT" text="pigliate quel che uiene"/>
+    		<underline method="pen" type="straight" language="IT" text="lasciate"/>
+    		<underline method="pen" type="straight" language="IT" text="se ne u&agrave;"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="JC" place="intext"/>
+    		<symbol name="JC" place="left_margin"/>
+    		<symbol name="Sun" place="right_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="dash" method="pen" place="right_margin"/> <!-- Signo -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- amaz -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- auan -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- re .. quelle -->
+    		<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- quelle che -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- maritare ... quel -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="dot" method="pen" place="intext"/> <!-- mulla, e arriuato  -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- pescie.] -->
+    		<mark name="comma" method="pen" place="intext"/> <!-- eccellentissimo domandato -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- principe -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Morde"/>    	
+    		<mark name="comma" method="pen" place="intext"/> <!-- lauoratore da-->
+    		<mark name="dot" method="pen" place="intext"/> <!-- Bolognese il quale -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- per uoi -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- Giouanni, doue -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- capo, & -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- maritare, & -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- impoueriua, & -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- zaua, ne -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- ri, il quale -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- che uiene -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- uiene, & -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- se ne va. -->
+
+    </annotation>
+</transcription>

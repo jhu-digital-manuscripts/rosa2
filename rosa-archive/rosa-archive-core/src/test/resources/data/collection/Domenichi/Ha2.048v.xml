@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.048v.tif" pagination="416" reader="Harvey"/>	<!-- ABO 53left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						The Baker of Bononia, &amp; owr Martin Marr-Prelate, 
+					</marginalia_text>
+					<person name="Baker of Bologna"/> <!-- CG: This is some anonymous Bolognese baker who wrote a letter to the pope, but I thought I'd add him anyways. --> <!--JG: Makes sense to me!-->
+					<person name="Martin Marprelate"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						two good od fellows, made it 
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						a pollicie, to iest at reu[e]rend Fathers, &amp; all solemne Ceremonies.
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						As matters of show, not of bonde,
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						or valour, The stratagem of sum
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						greater politicians
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						in flore.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				In bloom.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Pende a Teipso: quicquid contra.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Depend on yourself, whatever is against you.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Verus valor insuperabilis. Virescit la[e]sus. 
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				True unbeatable valor. It grows from being wounded.
+			</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Eutrapeli ironia, inexpugnabilis.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				The irony of Eutrapelus is unconquerable.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						The Falantadowndidle of Sir Francis Vere to the Earle of Essex. / <!-- See: http://books.google.co.uk/books?id=Gt8VAAAAYAAJ&pg=PA397&lpg=PA397&dq=Falanta+down+diddle&source=bl&ots=9sY0GNmTia&sig=KrMaf-DaBD84jHVXbg-T8zqiaws&hl=en&sa=X&ei=VbBcVJmSNcWM7Aax4oCIDg&redir_esc=y#v=onepage&q=Falanta%20down%20diddle&f=false-->
+					</marginalia_text>
+					<person name="Francis Vere"/>
+					<person name="Robert Devereux"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="uidero un pazzo"/>
+		<underline method="pen" type="straight" language="IT" text="oh non ha egli"/>
+		<underline method="pen" type="straight" language="IT" text="una gabbia da rinchiuder"/>
+		<underline method="pen" type="straight" language="IT" text="questi bestioni"/>
+		<underline method="pen" type="straight" language="IT" text="si"/>
+		<underline method="pen" type="straight" language="IT" text="rinchiusi, ne mai"/>
+		<underline method="pen" type="straight" language="IT" text="potrebbono uscire"/>
+		<underline method="pen" type="straight" language="IT" text="bene andassero fino alle Indie nuoue di Portogallo"/>
+		<underline method="pen" type="straight" language="IT" text="Giocaua a dadi"/>
+		<underline method="pen" type="straight" language="IT" text="caualiere Spagnuolo"/>
+		<underline method="pen" type="straight" language="IT" text="perdeua"/>
+		<underline method="pen" type="straight" language="IT" text="inclinato a bestemmiare molto"/>
+		<underline method="pen" type="straight" language="IT" text="gran pena, che u'era posta per bando"/>
+		<underline method="pen" type="straight" language="IT" text="coprendo la gran colera, ch'egli"/>
+		<underline method="pen" type="straight" language="IT" text="beso"/>
+		<underline method="pen" type="straight" language="IT" text="mi S. Pilado"/>
+		<underline method="pen" type="straight" language="IT" text="Empio"/>
+		<underline method="pen" type="straight" language="IT" text="certi corsali uicino a Pauia"/>
+		<underline method="pen" type="straight" language="IT" text="mandarono sotto sopra ogni"/>
+		<underline method="pen" type="straight" language="IT" text="contadino con la moglie in cima d'una altissima"/>
+		<underline method="pen" type="straight" language="IT" text="uisto da uno di que' Turchi"/>
+		<underline method="pen" type="straight" language="IT" text="haurebbe speso il tempo in uano"/>
+		<underline method="pen" type="straight" language="IT" text="tiraua delle coltellate all'aria"/>
+		<underline method="pen" type="straight" language="IT" text="quel semplice huomo"/>
+		<underline method="pen" type="straight" language="IT" text="tagiare M. lo Turchio"/>
+		<underline method="pen" type="straight" language="IT" text="chamo me ne scendo be"/>
+		<underline method="pen" type="straight" language="IT" text="Goffo, &amp; degno di compassione"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="potrebbono uscire, se bene andassero fino alle Indie nuoue di Portogallo"/>
+		<underline method="chalk" type="straight" language="IT" text="la mano del mi S. Pilado"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Barto -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Ri -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- nuo -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- uo -->
+		
+	    	<!-- Left margin -->
+	    <mark name="quotation_mark" method="pen" place="left_margin"/> <!-- potrebbono -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- la mano -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- ne scendo be -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="dot" method="pen" place="intext"/> <!-- grosso, & -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Empio"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!--corsali-->
+	    <mark name="dot" method="pen" place="intext"/> <!-- Calauria, scorsero  -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Turchi"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- compassione -->
+
+    </annotation>
+</transcription>

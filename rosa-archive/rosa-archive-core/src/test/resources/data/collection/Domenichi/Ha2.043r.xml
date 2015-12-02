@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.043r.tif" pagination="405" reader="Harvey"/>	<!-- ABO 47right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Libro 7. delli giuochi.
+					</marginalia_text>
+					<book title="De giuocchi discorso"/>
+				</position>
+			</language>
+			<translation>
+				Book 7 of the games.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Romana[e] autoritatis
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						valor.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The value of Roman authority.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						s[upr]a / argut&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Above. Cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) Domat omnia virtus. Domat virtutem
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Venus.
+					</marginalia_text>
+					<person name="Venus"/>
+				</position>
+			</language>
+			<translation>
+				Virtue conquers all. Venus conquers virtue.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Veneratio antiqua[e] dignitatis. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The veneration of ancient dignity.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						(&egrave; priapo Virg.)
+					</marginalia_text>
+					<person name="Virgil"/>
+				</position>
+			</language>
+			<translation>
+				It's a Virgilian priapus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						dext&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Moderatus Bacchus corroborat: immoderatus eneruat.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A moderate amount of Bacchus fortifies; an immoderate amount weakens.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						scit&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Knowingly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						risoluto, come Epitteto.
+					</marginalia_text>
+					<person name="Epictetus"/>
+				</position>
+			</language>
+			<translation>
+				Resolute, like Epictetus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Vita prima linea hominum: Mors vltima linea rerum.
+					</marginalia_text>
+					<X-ref person="Horace" book_title="Epistles" language="LA" text="Mors vltima linea rerum est"/>
+				</position>
+			</language>
+			<translation>
+				Life is the first boundary of man: "Death is the ultimate boundary of things." 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Nuda Marij maiestas terruit homicidas. 
+					</marginalia_text>
+					<person name="Gaius Marius"/>
+				</position>
+			</language>
+			<translation>
+				The naked majesty of Marius terrified the murderers.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						s[upr]a /
+					</marginalia_text>
+					<internal_ref text="s[upr]a">
+						<target filename="Ha2.036v.xml" book_id="FolgersHa2" text="[392]"/> <!--Francesce-->
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						mordace.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Biting.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Vino corrigitur: vino corrumpitur a[e]tas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				One improves with wine; age is corrupted by wine.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Ca[e]sar Cibi, Vini, somni parcissimus: Veneris
+						etiam, nisi politica[e]. Quanto magis, Enteleches.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Caesar is most sparing in food, wine, and sleep: and even in love,
+				unless it was political. He is much greater in accomplishment. 
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="270">
+					<marginalia_text>
+						Venerandi Pontificis augusta maiestas obstupefecit Carnifices.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The august majesty of the venerable pope paralyzed the murderers.
+			</translation>
+		</marginalia>
+		
+	
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="di Spagna"/>
+		<underline method="pen" type="straight" language="IT" text="la nobilt&agrave; suole"/>
+		<underline method="pen" type="straight" language="IT" text="qui no[n] ha bisogno di co[m]pagnia"/>
+		<underline method="pen" type="straight" language="IT" text="u&agrave; per terra d'amici"/>
+		<underline method="pen" type="straight" language="IT" text="Punge sul uiuo"/>
+		<underline method="pen" type="straight" language="IT" text="Lodaua uno"/>
+		<underline method="pen" type="straight" language="IT" text="di rarissime uirt&ugrave;"/>
+		<underline method="pen" type="straight" language="IT" text="sua Signora:la quale"/>
+		<underline method="pen" type="straight" language="IT" text="da cinqua[n]ta"/>
+		<underline method="pen" type="straight" language="IT" text="giouane bella, &amp; fresca"/>
+		<underline method="pen" type="straight" language="IT" text="dama &egrave; sorella della Sibilla Cumana"/>
+		<underline method="pen" type="straight" language="IT" text="ella &egrave; sul fiore"/>
+		<underline method="pen" type="straight" language="IT" text="del uino"/>
+		<underline method="pen" type="straight" language="IT" text="sauiamente"/>
+		<underline method="pen" type="straight" language="IT" text="l'infermit&agrave; &egrave; principio"/>
+		<underline method="pen" type="straight" language="IT" text="morte &egrave; fine della infermit&agrave;"/>
+		<underline method="pen" type="straight" language="IT" text="si daua al Diauolo"/>
+		<underline method="pen" type="straight" language="IT" text="per disperarsi"/>
+		<underline method="pen" type="straight" language="IT" text="gli era fuggita la"/>
+		<underline method="pen" type="straight" language="IT" text="la cercaua"/>
+		<underline method="pen" type="straight" language="IT" text="litterato, &amp; discreto"/>
+		<underline method="pen" type="straight" language="IT" text="non t'affaticar tanto"/>
+		<underline method="pen" type="straight" language="IT" text="tribulare fuor di proposito"/>
+		<underline method="pen" type="straight" language="IT" text="le donne sono"/>
+		<underline method="pen" type="straight" language="IT" text="le doglie del mal Francese"/>
+		<underline method="pen" type="straight" language="IT" text="ritornano da"/>
+		<underline method="pen" type="straight" language="IT" text="quando altri non le desidera"/>
+		<underline method="pen" type="straight" language="IT" text="patiua ancho del mal Francese"/>
+		<underline method="pen" type="straight" language="IT" text="nominato per ruffiano"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="ma del uino"/>
+		<underline method="chalk" type="straight" language="IT" text="l'infermit&agrave; &egrave; principio della"/>
+		<underline method="chalk" type="straight" language="IT" text="infermit&agrave;"/>
+		<underline method="chalk" type="straight" language="IT" text="del mal Francese, le quali ritornano"/>
+		<underline method="chalk" type="straight" language="IT" text="quando altri non le desidera"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- co[m]pa -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- co[m]pa -->
+		<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- co[m]pa -->
+		<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- Venus-->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- cinqua[n] -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- l'infer -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- di -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- da se --> 
+		<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- sciagurato --> 
+		
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- cio ... gnia -->
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- Sibilla --> 
+		<mark name="bracket" method="pen" place="left_margin" language="IT" text="Dice sauiamente il S. Casimiro Accurso: che l'infermit&agrave; &egrave; principio della morte, &amp; la morte &egrave; fine della infermit&agrave;."/> 
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- infermita ... un certo -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="comma" method="pen" place="intext"/> <!-- fastidito gli -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="d'amici"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="sul uiuo"/>
+		<mark name="straight_quotation_mark" method="pen" place="intext" language="IT" text="cinqua[n]ta"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Sibilla Cumana"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="del uino"/>
+	    	<mark name="dot" method="pen" place="intext"/> <!-- morte, & -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- Chalk mark -->
+		<mark name="comma" method="pen" place="intext"/> <!-- sperarsi perche -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="ritornano"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- stesse, e -->
+
+    </annotation>
+</transcription>

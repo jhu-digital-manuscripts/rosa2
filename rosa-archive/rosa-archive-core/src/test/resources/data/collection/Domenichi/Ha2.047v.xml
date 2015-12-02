@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.047v.tif" pagination="414" reader="Harvey"/>	<!-- ABO 52left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Gascoignes Steele Glasse. Greenes quipp for
+						an vpstart
+					</marginalia_text>
+					<person name="George Gascoigne"/>
+					<person name="Robert Greene"/>
+					<book title="The Steele Glas"/>
+					<book title="Quip for an Upstart Courtier"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						courtier.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Satura[e] Persij.
+					</marginalia_text>
+					<person name="Persius"/>
+					<book title="Persius' Satires"/>
+				</position>
+			</language>
+			<translation>
+				The Satires of Persius.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Satyra Vagnoni, in Sylua nuptiali.
+						Specula Mundi adamantina.
+					</marginalia_text>
+					<book title="Sylva nuptialis"/>
+				</position>
+			</language>
+			<translation>
+				The Satire of Vagnonus, in the Sylva nuptiali.	<!-- CG: I can't figure out what the 'Satyra Vagnoni' is. -->
+				An adamantine mirror of the world.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Apologie pour Herodote.
+					</marginalia_text>
+					<book title="Apologie pour Hérodote"/>
+					<emphasis method="pen" type="straight" text="Apologie pour Herodote."/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Aretini dialogi capriciosi.
+					</marginalia_text>
+					<person name="Pietro Aretino"/>
+					<book title="Capricciosi et piacevoli ragionamenti"/>
+					<emphasis method="pen" type="straight" text="dialogi capriciosi"/>
+				</position>
+			</language>
+			<translation>
+				The Apology for Herodotus. Aretino's whimsical dialogues.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						dext&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EN">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						descant.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully. Descant.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						The parts of the Connicatching Art. New tricks of cousnage.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						familiare.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Familiar.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Diuina pa[e]dia Salis, et Lucis: serpentis, et Columbi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The divine education of salt and light, of the serpent and the dove.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						{ Vos estis sal terra[e]; et lux mundi.
+						Prudentes, vt serpentes; candidi, vt columbi.
+					</marginalia_text>
+					<X-ref person="Matthew" book_title="Gospel of Matthew" language="LA" text="vos estis sal terrae; vos estis lux mundi "/>
+				</position>
+			</language>
+			<translation>
+				"You are the salt of the earth and the light of the world."
+				As prudent as serpents, as candid as doves.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Neopragmatica: et neochrematistica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Neopragmatism and neochrematism.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="Reuerendo M."/>
+		<underline method="pen" type="straight" language="IT" text="intorno a costumi de gli antichi"/>
+		<underline method="pen" type="straight" language="IT" text="Furio Camillo"/>
+		<underline method="pen" type="straight" language="IT" text="figliuol maschio"/>
+		<underline method="pen" type="straight" language="IT" text="Furio Camillo"/>
+		<underline method="pen" type="straight" language="IT" text="una sua fanciullina molto"/>
+		<underline method="pen" type="straight" language="IT" text="Camilla"/>
+		<underline method="pen" type="straight" language="IT" text="Furio"/>
+		<underline method="pen" type="straight" language="IT" text="tratto Furio, &amp; Camilla"/>
+		<underline method="pen" type="straight" language="IT" text="scherzando il Palantieri"/>
+		<underline method="pen" type="straight" language="IT" text="Voi da uoi siete"/>
+		<underline method="pen" type="straight" language="IT" text="le donne furie, &amp;"/>
+		<underline method="pen" type="straight" language="IT" text="siete Furia, &amp; Camilla"/>
+		<underline method="pen" type="straight" language="IT" text="argutissmamente"/>
+		<underline method="pen" type="straight" language="IT" text="sopra"/>
+		<underline method="pen" type="straight" language="IT" text="l'ingegno do[n]nesco"/>
+		<underline method="pen" type="straight" language="IT" text="le Donne son furie"/>
+		<underline method="pen" type="straight" language="IT" text="i preti Diauoli, come"/>
+		<underline method="pen" type="straight" language="IT" text="portan le corna"/>
+		<underline method="pen" type="straight" language="IT" text="che qu&igrave; habbiamo"/>
+		<underline method="pen" type="straight" language="IT" text="l'Inferno bello"/>
+		<underline method="pen" type="straight" language="IT" text="gentil'huomo, il quale non era nato di legittimo"/>
+		<underline method="pen" type="straight" language="IT" text="matrimonio"/>
+		<underline method="pen" type="straight" language="IT" text="muli"/>
+		<underline method="pen" type="straight" language="IT" text="mai di qu&igrave; in uostra compagnia"/>
+		<underline method="pen" type="straight" language="IT" text="vegga de' muli"/>
+		<underline method="pen" type="straight" language="IT" text="un mal fregio a trauerso"/>
+		<underline method="pen" type="straight" language="IT" text="faceua il Rodomonte in"/>
+		<underline method="pen" type="straight" language="IT" text="che fregio fusse"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="Sun" place="left_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- fu -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- l'In -->
+		
+	    	<!-- Left margin -->
+	    <mark name="quotation_mark" method="pen" place="left_margin"/> <!-- tra giunta -->
+		<mark name="bracket" method="pen" place="left_margin" language="IT" text="Se le Donne son furie, come uoi dite; e i preti Diauoli, come io credo, per che port an le corna, lodiamo Dio che qu&igrave; habbiomo l'Inferno bello &amp; fatto"/>
+		<mark name="bracket" method="pen" place="left_margin"/> <!--  compagno ... ga -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="dot" method="pen" place="intext"/> <!-- mani, & -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Camilla, gli -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Furio, che -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Camilla, -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="le donne furie"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="argutissmamente"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="preti"/>
+	    <mark name="dot" method="pen" place="intext"/> <!-- corna, lodiamo -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- muli -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Rodomonte"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- Roma, ogni -->
+
+    </annotation>
+</transcription>

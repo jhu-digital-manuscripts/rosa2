@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.052r.tif" pagination="423" reader="Harvey"/>	<!-- ABO 56right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Dexteritas pragmatica, et ingenium in esse.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Pragmatic skill and natural talent in its essence. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Medice cura teipsum, nimis est serum.
+					</marginalia_text>
+					<X-ref person="Luke" book_title="Gospel of Luke" language="LA" text="Medice cura te ipsum"/>
+				</position>
+			</language>
+			<translation>
+				"Physician, heal thyself"; it is too late.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( Viuida[e] applicationes ad Obiecta occurrentia. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Lively applications for present occurences.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Alia adhuc, atq[ue] alia
+						pragmateia. Quicquid est facultatis in
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						summis facultatibus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing but pragmaticism now. Whatever faculty is in the greatest faculties. <!-- CG: Hard to translate. Specialist help required. -->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Quod est, viuit: quod fuit, (
+						mortuum est.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				That which is, is alive; that which was, has died.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian" marginalia_id="Ha2.052r_0001" marginalia_continues_from="Ha2.051v_0001" marginalia_from_transcription="Ha2.051v.xml" book_id="FolgersHa2">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						omnia, antiqua, et neoterica, ad pra[e]sentes personas, res ante oculas positas, et
+						instantes Occasiones. Atq[ue] it&agrave; ex alienis facere tua: ex veteribus, noua.
+							<!-- Continued from facing page, right margin, Ha2.051v  -->
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				[transform] all [their readings], whether ancient or modern, for people present today, placing those things before your eyes, and 
+				in present circumstances. And so they make foreign things yours, and old things new.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Edmundus Campianus ediscebat Domenicum ad vnguem: et hoc uno
+						a[e]quabat Tobiam; Mattha[e]um pra[e]gnantibus facetijs; alioqui	<!-- CG: Not sure who this Tobias is. Specialist help required.-->
+					</marginalia_text>
+					<person name="Edmund Campion"/>
+					<person name="Lodovico Domenichi"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="tail" book_orientation="270">
+					<marginalia_text>
+						lepidiorem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Edmund Campion learned Domenichi by heart. And by this alone he equaled Tobias;
+				he equaled Matthew with pregnant wit, who in other respects was more charming. 
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="darui un bacio"/>
+		<underline method="pen" type="straight" language="IT" text="subito che io"/>
+		<underline method="pen" type="straight" language="IT" text="entrato dentro"/>
+		<underline method="pen" type="straight" language="IT" text="Oracolo d'Apoline"/>
+		<underline method="pen" type="straight" language="IT" text="medico"/>
+		<underline method="pen" type="straight" language="IT" text="quiui si mise"/>
+		<underline method="pen" type="straight" language="IT" text="al letto"/>
+		<underline method="pen" type="straight" language="IT" text="cominci&ograve;"/>
+		<underline method="pen" type="straight" language="IT" text="ristorarsi"/>
+		<underline method="pen" type="straight" language="IT" text="domenica egli fu sano"/>
+		<underline method="pen" type="straight" language="IT" text="medico morto"/>
+		<underline method="pen" type="straight" language="IT" text="osseru&ograve; molto bene la promessa del bacio"/>
+		<underline method="pen" type="straight" language="IT" text="il mio Sig. Luca"/>
+		<underline method="pen" type="straight" language="IT" text="un motto,"/>
+		<underline method="pen" type="straight" language="IT" text="intorno al ritratto"/>
+		<underline method="pen" type="straight" language="IT" text="d'una sua Signora"/>
+		<underline method="pen" type="straight" language="IT" text="inuaghita d'un giouane"/>
+		<underline method="pen" type="straight" language="IT" text="Cesare"/>
+		<underline method="pen" type="straight" language="IT" text="uoleua udire"/>
+		<underline method="pen" type="straight" language="IT" text="ne uedere alcuno altro"/>
+		<underline method="pen" type="straight" language="IT" text="pare molto a proposito"/>
+		<underline method="pen" type="straight" language="LA" text="QUIA CAESARIS SUM"/>
+		<underline method="pen" type="straight" language="IT" text="n'haueua non poco sospetto"/>
+		<underline method="pen" type="straight" language="IT" text="ahime"/>
+		<underline method="pen" type="straight" language="IT" text="punture son queste"/>
+		<underline method="pen" type="straight" language="IT" text="Il Filetto huomo"/>
+		<underline method="pen" type="straight" language="IT" text="un seruidorino Romanesco"/>
+		<underline method="pen" type="straight" language="IT" text="con una cortigiana"/>
+		<underline method="pen" type="straight" language="IT" text="de' fichi in"/>
+		<underline method="pen" type="straight" language="IT" text="aperti dinanzi"/>
+		<underline method="pen" type="straight" language="IT" text="gli interi"/>
+		<underline method="pen" type="straight" language="IT" text="alla Signora"/>
+		<underline method="pen" type="straight" language="IT" text="un medesimo piatto"/>
+		<underline method="pen" type="straight" language="IT" text="non"/>
+		<underline method="pen" type="straight" language="IT" text="fatto a caso"/>
+		<underline method="pen" type="straight" language="IT" text="che capriccio"/>
+		<underline method="pen" type="straight" language="IT" text="il mio Alessandro"/>
+		<underline method="pen" type="straight" language="IT" text="non sapete uoi"/>
+		<underline method="pen" type="straight" language="IT" text="le Donne mangiano"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="Honofrio cominci&ograve; a ristorarsi, tal che la domenica egli fu sano, &amp; il medico morto"/>
+		<underline method="chalk" type="straight" language="IT" text="osseru&ograve; molto bene a promessa"/>
+		<underline method="chalk" type="straight" language="IT" text="quella Signora era inuaghita"/>
+		<underline method="chalk" type="straight" language="IT" text="chiamaua il S. Cesare, di maniera"/>
+		<underline method="chalk" type="straight" language="LA" text="NOLI ME TANGERE"/>
+		<underline method="chalk" type="straight" language="LA" text="CAESARIS SUM"/>
+		<underline method="chalk" type="straight" language="IT" text="erano aperti dinanzi al padrone"/>
+		<underline method="chalk" type="straight" language="IT" text="gli interi"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- il me -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- ME TAN -->
+		
+	    	<!-- Left margin -->
+	    <mark name="plus_sign" method="pen" place="left_margin"/> <!-- ristorarsi -->
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- quella Signora -->
+		<mark name="plus_sign" method="pen" place="left_margin" language="IT" text="punture son queste"/>
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- fanciullo ... alla -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="quotation_mark" method="pen" place="head"/> <!-- un bacio -->
+		<mark name="dot" method="pen" place="intext"/> <!-- ristorarsi, & -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="sano"/>
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="medico morto"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- del bacio -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="inuaghita"/>
+	    <mark name="dot" method="pen" place="intext"/> <!-- altro, gli -->
+		<mark name="dot" method="pen" place="intext"/> <!-- gere, quia -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- Caesaris -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- ahime -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- son queste? -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="aperti"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- padrone, & -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="interi"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- Signora, ma -->
+		<mark name="dot" method="pen" place="intext"/> <!-- caso, gli -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="capriccio"/>
+
+    </annotation>
+</transcription>

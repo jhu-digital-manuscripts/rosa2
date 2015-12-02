@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+
+	<page filename="Ha2.022v.tif" pagination="368" reader="Harvey"/>	<!-- ABO 027left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					Vir non est, qui non est semper Totus.
+                      			</marginalia_text>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        			</language>
+        			<translation>
+        				He who is not always complete is not a man.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Is plan&egrave; vir est, qui est viroru[m] solus.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Therefore he who is apart from men is fully a man. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Guazzo.
+    					</marginalia_text>
+    					<person name="Stefano Guazzo"/>
+    				</position>
+    			</language>
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						candidissim&egrave;.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Stefano Guazzo. Most purely.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						Virtus, dux ducum: Fortuna Comes Comitum.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Virtue, duke of dukes: Fortune, Earl of Earls. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="0">
+    					<marginalia_text>
+    						Nunq[uam] obliuiscendum Artis, aut Virtutis:
+    						et Tui ipsius semper recordandu[m] ante Omnia.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				You must never be forgetful of Art and Virtue:
+    				and you must always be mindful of you yourself before all other things.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						nec nimiu[m], nec parum: sed satis. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Neither too much, nor too little: but enough.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						) ( A.B. Comes est Fortuna[e]: sed nondum Dux Virtutis	<!-- CG: Advice needed: who might A.B. be?-->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				) ( A.B. is Fortune's Earl: but not yet Virtue's Duke.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Vir non est, qui non est semper pra[e]sens animo, corpore, statu. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				He who is not always present in mind, body, and place is not a man.
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="90">
+    					<marginalia_text>
+    						Quantum fieri, aut dici potest. Sed hodi&egrave;: et semper hodi&egrave;.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				So much as can be said or done. By today, and always today.
+    			</translation>
+    		</marginalia>
+        
+        
+	    	<!-- Underlines -->
+	        
+    		<underline method="pen" type="straight" language="IT" text="fusse lodata"/>
+    		<underline method="pen" type="straight" language="IT" text="uno, il quale o per istudio di"/>
+    		<underline method="pen" type="straight" language="IT" text="di uanit&agrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="di leggierezza"/>
+    		<underline method="pen" type="straight" language="IT" text="Madonna Honorata"/>
+    		<underline method="pen" type="straight" language="IT" text="uoi leuate la uanit&agrave;"/>
+    		<underline method="pen" type="straight" language="IT" text="rimarr&agrave; piu loro"/>
+    		<underline method="pen" type="straight" language="IT" text="Modesta"/>
+    		<underline method="pen" type="straight" language="IT" text="piena di carne"/>
+    		<underline method="pen" type="straight" language="IT" text="tanta carnaccia"/>
+    		<underline method="pen" type="straight" language="IT" text="uoglio coprire coteste ossa uostre spogliate affatto di sugo, &amp;"/>
+    		<underline method="pen" type="straight" language="IT" text="la Marchesana"/>
+    		<underline method="pen" type="straight" language="IT" text="non la pelle, &amp; lossa"/>
+    		<underline method="pen" type="straight" language="IT" text="l'altro era uitioso"/>
+    		<underline method="pen" type="straight" language="IT" text="difetto di natura"/>
+    		<underline method="pen" type="straight" language="IT" text="per&ograve; scusabile"/>
+    		<underline method="pen" type="straight" language="IT" text="hauea di finissimi uini"/>
+    		<underline method="pen" type="straight" language="IT" text="ottimo Greco"/>
+    		<underline method="pen" type="straight" language="IT" text="senza risponder mai nulla"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="SS" place="left_margin"/> <!-- Looks like an SS beneath marginalia "solus" --> <!-- Yep, well spotted-->
+    		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark name="bracket" method="pen" place="right_margin"/> <!-- era.. uir -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- acco -->
+    		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- uolete uoi -->
+    		<mark name="dash" method="pen" place="right_margin"/> <!-- cote -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark name="horizontal_bar" method="pen" place="left_margin"/> <!-- le donne -->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- fare Signora -->
+    		<mark name="straight_quotation_mark" method="pen" place="left_margin"/> <!-- ste ossa -->
+    		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- ottimo -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="comma" method="pen" place="intext"/> <!-- ualore era -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- meritaua, ui fu -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- uno -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- di uanita -->
+    		<mark name="quotation_mark" method="pen" place="intext"/> <!-- la uanita -->
+    		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Modesta"/>
+    		<mark name="dot" method="pen" place="intext"/> <!-- di carne, per -->
+    		<mark name="plus_sign" method="pen" place="intext"/> <!-- era uitioso -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- estremi, ma difetto -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- di natura, & -->
+    		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- scusabile.] -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- bicchiere, il quale -->
+
+    </annotation>
+</transcription>

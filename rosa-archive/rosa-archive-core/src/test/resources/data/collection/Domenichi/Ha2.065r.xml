@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.065r.tif" pagination="449" reader="Harvey"/>	<!-- ABO 69right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Quid prudentia[e], aut fortitudinis?
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						quantu[m] valoris?
+						Veteru[m] excessibus plus cumulatur:
+						hodierni defectus nusq[uam] supplentur. 
+						Quod opus no[n] est, asse carum est.
+					</marginalia_text>
+					<X-ref person="Seneca" book_title="Epistles" language="LA" text="Quod opus non est, asse carum est."/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				What of prudence or fortitude? How much is valor?
+				It grows more with the excesses of the ancients,
+				today's defects are never supplied. <!-- CG: Unsure of translation, specialist help required. -->
+				"What you do not want is dear at a farthing." 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						sals&egrave; ad mensam
+						non philosophicam.
+					</marginalia_text>
+					<X-ref person="Anonymous" book_title="Mensa philosophica"/>
+				</position>
+			</language>
+			<translation>
+				Wittily, according to an unphilosophical measure.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( O migliore; o niente. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Either better, or nothing at all.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						apt&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Appropriately.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Quid h&icirc;c, illic 
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						subtile,
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						aut
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						profundum? quid mirabile, aut potens? quid singulare,
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						aut
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						rarum?
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Nam
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						vbiq[ue] vulgarium rerum satis, superq[ue]. (
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				What is subtle here or profound there? What is amazing or powerful? What is singular or exceptional?
+				Indeed everywhere there are enough vulgar matteres, actually beyond enough. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Quod nimium est, adhuc abundat:
+						quod parum est, adhuc deficit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever is excessive, still overflows;
+				whatever is insufficient, is still left wanting. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Multi canales scholasticaru[m] regularu[m]: pauca[e] concha[e] pragmaticaru[m] maximarum.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Many are the canals of scholastic rules, but few are the holy-water fonts of pragmatic maxims. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Deo uero dedicatissima creatura:
+						summo Regi addictissimus
+						subditus: ca[e]teris, ut decet,
+						officiosus:
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="tail" book_orientation="270">
+					<marginalia_text>
+						sibi ipsi, 
+						ut refert,
+						intentissimus, Eutrapelus.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus: truly a creature most dedicated to God,
+				a subordinate most devoted to the highest kingdom;
+				he is dutiful to others, as is proper,
+				and as concerns himself, most strict.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="in grande honore. Quiui una uolta fra l'altre ragionandosi alla tauola di Cane de' dishonesti ma[n]giatori, Vguccione uecchio miserabile disse"/>
+		<underline method="pen" type="straight" language="IT" text="in sua giouent&ugrave;"/>
+		<underline method="pen" type="straight" language="IT" text="mangiare a una"/>
+		<underline method="pen" type="straight" language="IT" text="due paia di capponi"/>
+		<underline method="pen" type="straight" language="IT" text="altrettante starne"/>
+		<underline method="pen" type="straight" language="IT" text="quarto di capretto"/>
+		<underline method="pen" type="straight" language="IT" text="petto di uitello ripieno"/>
+		<underline method="pen" type="straight" language="IT" text="molto arguto"/>
+		<underline method="pen" type="straight" language="IT" text="essendo uoi giouane"/>
+		<underline method="pen" type="straight" language="IT" text="essendo uecchio"/>
+		<underline method="pen" type="straight" language="IT" text="desinar solo"/>
+		<underline method="pen" type="straight" language="IT" text="citt&agrave; intere"/>
+		<underline method="pen" type="straight" language="IT" text="Cipriano Maiuoli"/>
+		<underline method="pen" type="straight" language="IT" text="Crocicchieri"/>
+		<underline method="pen" type="straight" language="IT" text="cortese &amp; faceto"/>
+		<underline method="pen" type="straight" language="IT" text="mio singolare"/>
+		<underline method="pen" type="straight" language="IT" text="argutamente"/>
+		<underline method="pen" type="straight" language="IT" text="che la moglie di"/>
+		<underline method="pen" type="straight" language="IT" text="ruinar la casa di"/>
+		<underline method="pen" type="straight" language="IT" text="che contrastaua co[n]"/>
+		<underline method="pen" type="straight" language="IT" text="Va in malhora"/>
+		<underline method="pen" type="straight" language="IT" text="subito"/>
+		<underline method="pen" type="straight" language="IT" text="casa di suo patrone"/>
+		<underline method="pen" type="straight" language="IT" text="l'har&agrave; pessima"/>
+		<underline method="pen" type="straight" language="IT" text="Testamento"/>
+		<underline method="pen" type="straight" language="IT" text="Signor Galeazzo Bouio"/>
+		<underline method="pen" type="straight" language="IT" text="d'altissimo intelletto"/>
+		<underline method="pen" type="straight" language="IT" text="d'inestimabile cortesia"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="uecchio miserabile"/>
+		<underline method="chalk" type="straight" language="IT" text="essendo uecchio sdentato"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="right_margin"/>
+		<symbol name="JC" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ragionan -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Vguc -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- so -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- al -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- un'huo -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- portan -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- quell'huo -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- uolta -->
+		<mark name="horizontal_bar" method="pen" place="right_margin"/> <!-- Cipriano uolta -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- inestimabile -->
+		
+	    	<!-- Left margin -->
+	    <mark name="bracket" method="pen" place="left_margin"/> <!-- leua ... huomo -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- poiche ... un -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- tosi ... t'hara' -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- due paia -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="molto arguto"/>
+	    <mark name="comma" method="pen" place="intext"/> <!-- sdentato u'hauete -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- citta intere -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="argutamente"/>
+		<mark name="equal_sign" method="pen" place="intext" language="IT" text="Va in malhora"/>
+		<mark name="comma" method="pen" place="intext"/> <!-- me subito -->
+		<mark name="equal_sign" method="pen" place="intext" language="IT" text="l'har&agrave; pessima"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- presta -->
+		<mark name="comma" method="pen" place="intext"/> <!-- Domino uilla -->
+		
+		<!-- Diacritic -->
+		<mark name="diacritic" method="pen" place="intext" language="IT" text="u'hauete mangiata a"/>
+
+    </annotation>
+</transcription>

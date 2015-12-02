@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.058v.tif" pagination="436" reader="Harvey"/>	<!-- ABO 63left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Multi sapiunt in genere: pauci in specie:
+							<!-- Continues on facing page, head, Ha2.059r. -->
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Many people know things generally, but few know things in the particular:
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Motti.
+					</marginalia_text>
+					<emphasis method="pen" type="dotted" text="Motti"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Witty remarks.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						{ He that knowes the Best,
+						Knowes also the rest.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Festiui, argutiq[ue] ingenij Efficiens, Temperantia: Materia, a[e]quitas, nulli iniuriosa: Forma
+						interna, Prudentia; externa, Fortitudo: Finis, propria La[e]tita, et a[e]stimatio; cum Cuiusq[ue]
+						delectatione, et nullius
+					</marginalia_text>
+					<emphasis method="pen" type="straight" text="Temperantia"/>
+					<emphasis method="pen" type="straight" text="a[e]quitas"/>
+					<emphasis method="pen" type="straight" text="Prudentia"/>
+					<emphasis method="pen" type="straight" text="Fortitudo"/>
+					<emphasis method="pen" type="straight" text="propria La[e]titia, et a[e]stimatio"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="intext" book_orientation="90">
+					<marginalia_text>
+						offensione.
+						Ha[e] Causa[e]
+						ciuiliu[m]
+						Iocoru[m].
+						Et ha[e]c mea Ars
+						scit&egrave; iocandi.
+					</marginalia_text>
+					<emphasis method="pen" type="straight" text="Ha[e] Causa[e]"/>
+					<emphasis method="pen" type="straight" text="mea Ars"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The efficient cause of a jovial and clever character is Temperance; the material cause 
+				is equity, in no way injurious; the internal form is Prudence; the external form is Strength; 
+				the final cause is one's own happiness and esteem; and with amusement and no displeasure.
+				These are the causes of playful civility. And this is my art of joking skillfuly. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Instar omnium in Rhetoricis; Ironia; Paradoxum; hyperbole: aposiopesis; addubitatio; permissio;
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="tail" book_orientation="270">
+					<marginalia_text>
+						concessio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An example for all in terms of Rhetoric, irony, paradox, hyperbole, ellipsis, aporia, permissio, concessio.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="o sdegno"/>
+		<underline method="pen" type="straight" language="IT" text="co 'l sospetto"/>
+		<underline method="pen" type="straight" language="IT" text="prouocando &amp; rispondendo insieme"/>
+		<underline method="pen" type="straight" language="IT" text="diuidendo"/>
+		<underline method="pen" type="straight" language="IT" text="diffinendo: argutamente"/>
+		<underline method="pen" type="straight" language="IT" text="attribuendo altrui ci&ograve; che gli sta"/>
+		<underline method="pen" type="straight" language="IT" text="l'apostrofe"/>
+		<underline method="pen" type="straight" language="IT" text="alcuni altri capi tali"/>
+		<underline method="pen" type="straight" language="IT" text="non esser tedioso"/>
+		<underline method="pen" type="straight" language="IT" text="da auuertire"/>
+		<underline method="pen" type="straight" language="IT" text="le suddette maniere di motti"/>
+		<underline method="pen" type="straight" language="IT" text="motteggiamo altrui"/>
+		<underline method="pen" type="straight" language="IT" text="motteggiamo noi stessi"/>
+		<underline method="pen" type="straight" language="IT" text="alcuni motti fra"/>
+		<underline method="pen" type="straight" language="IT" text="parranno freddi"/>
+		<underline method="pen" type="straight" language="IT" text="non saranno senza artificio"/>
+		<underline method="pen" type="straight" language="IT" text="l'intitoli per arguto"/>
+		<underline method="pen" type="straight" language="IT" text="mordace"/>
+		<underline method="pen" type="straight" language="IT" text="lasciuo"/>
+		<underline method="pen" type="straight" language="IT" text="freddo"/>
+		<underline method="pen" type="straight" language="IT" text="sciocco"/>
+		<underline method="pen" type="straight" language="IT" text="alle facetie, &amp;"/>
+		<underline method="pen" type="straight" language="IT" text="alla distintion de gli altri"/>
+		<underline method="pen" type="straight" language="IT" text="che diffusamente n'hanno"/>
+		<underline method="pen" type="straight" language="IT" text="Achille cortesissimo"/>
+		<underline method="pen" type="straight" language="IT" text="pochi motti"/>
+		<underline method="pen" type="straight" language="IT" text="l'argutie uostre"/>
+		<underline method="pen" type="straight" language="IT" text="il bello intelletto"/>
+		<underline method="pen" type="straight" language="IT" text="Leone di Costantinopoli"/>
+		<underline method="pen" type="straight" language="IT" text="sofista molto acuto"/>
+		<underline method="pen" type="straight" language="IT" text="confortar gli Atheniesi alla pace"/>
+		<underline method="pen" type="straight" language="IT" text="con le quistioni intrinsiche l'un"/>
+		<underline method="pen" type="straight" language="IT" text="mosse riso a ogniuno"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="io l'intitoli per arguto, per mordace"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		<symbol name="SS" place="head"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- prouo -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- l'apo -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- tedio -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- motteggia -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- artifi -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- aspettar -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- aspet -->
+		
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="argutamente"/>
+	    <mark name="comma" method="pen" place="intext"/> <!-- so, lascio -->
+		<mark name="comma" method="pen" place="intext"/> <!-- motti, tanto -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- stessi. Possono -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="motti"/>
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="parranno freddi"/> 
+		<mark name="dot" method="pen" place="intext"/> <!-- cio, come -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="arguto"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="mordace"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="lasciuo"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="freddo"/>
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- sciocco. Del -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="distintion"/>
+		<mark name="comma" method="pen" place="intext"/> <!-- capi io -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="pochi motti"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="l'argutie"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- pezzi, tosto -->
+		<mark name="vertical_bar" method="pen" place="tail"/> <!-- separates marginalia -->
+
+    </annotation>
+</transcription>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.056r.tif" pagination="431" reader="Harvey"/>	<!-- ABO 60right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Pro,
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						et Contr&agrave;. Qui no[n] potest ) capere, capiatur.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				For and against. Whoever is unable to grasp things shall himself be grasped.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						= Natura Beatis Omnibus esse dedit, si quis cognouerit vti.
+					</marginalia_text>
+					<X-ref person="Claudian" book_title="In Rufinum" language="LA" text="Natura Beatis Omnibus esse dedit, si quis cognouerit vti."/>
+				</position>
+			</language>
+			<translation>
+				"Nature gave happiness to all, if they but knew how to use it."
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Pro octauo libro ) Domenici, mihi ) est quartus Guatij; vald&egrave; etiam salsus,
+						et argutus: nec quicq[uid] festiuius.
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<person name="Stefano Guazzo"/>
+					<book title="The civil conversation"/>
+					<emphasis method="pen" type="straight" text="Pro octauo"/>
+					<emphasis method="pen" type="straight" text="quartus Guatij"/>
+				</position>
+			</language>
+			<translation>
+				For me Guazzo's fourth book comes before Domenichi's eighth book;
+				it is also very witty and clever, but not as lively.  
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Dulci narratore nihil dulcius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is sweeter than a sweet narrator.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						La forma della ciuil et giouial Conuersatione,
+						del Guazzo. l. 4. Conuito nobil, e generoso.
+					</marginalia_text>
+					<person name="Stefano Guazzo"/>
+					<book title="The civil conversation"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Mensa Philosophica: in utroq[ue] genere pra[e]gnans,
+						tam Ethico, qu&amp;m Physico: et vrbana[e], aulica[e]q[ue]
+						Vita[e] commodissima. Deipnosophista.
+					</marginalia_text>
+					<book title="Mensa philosophica"/>
+					<book title="Deipnosophistae"/>
+				</position>
+			</language>
+			<translation>
+				The form of civil and jovial conversation in Guazzo, book four. A noble and generous gathering.
+				The Mensa Philosophica: in both cases pregnant with Ethics and Physics and things most suitable for
+				the urbane and courtly life. A dinner-party philosopher.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						La fantasia, perpetua minera dell'arguta, e piaceuole Inuentione.
+						La scienza del mondo: e l'arte de gli huomini: gran intelligenza del Panurgo.
+					</marginalia_text>
+					<person name="Panurge"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="pen" type="straight" text="La fantasia"/>
+					<emphasis method="pen" type="straight" text="perpetua minera"/>
+					<emphasis method="pen" type="straight" text="scienza del mondo"/>
+					<emphasis method="pen" type="straight" text="huomini"/>
+				</position>
+			</language>
+			<translation>
+				Fantasy, a perpetual mine of clever and pleasant invention.
+				The science of the world and the art of men: the great intelligence of Panurge.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						ablutus flumine uiuo.
+					</marginalia_text>
+					<X-ref person="Macrobius" book_title="Saturnalia" language="LA" text="ablutus flumine vivo"/>
+					<emphasis method="pen" type="straight" text="fluminie uiuo"/>
+				</position>
+			</language>
+			<translation>
+				Cleansed by a living river.	
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						The first, second, &amp; third part of Connicatching;
+						merrie Stories of odd feats, shifts, and
+						Coosenages: like the Courtesan practises, &amp;
+						impostures, in Aretins Dialoghi Capricciosi.
+						For pranks, shifts, &amp; suttleties of the world in
+						esse; no where more, then in those Dialogues of
+						Aretin; [the] Apologie for Herodote; the
+						Connicatching Art; &amp; the finest Jests.
+					</marginalia_text>
+					<person name="Pietro Aretino"/>
+					<book title="A Notable Discovery of Coosnage"/>
+					<book title="The Second Part of Conny-catching"/>
+					<book title="The Thirde and Last Part of Conny-Catching"/>
+					<book title="Capricciosi et piacevoli ragionamenti"/>
+					<book title="Apologie pour Hérodote"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Paucis Genius Theutatis.
+					</marginalia_text>
+					<person name="Mercury"/>
+				</position>
+			</language>
+			<translation>
+				The small genius of Mercury [Theuth].
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Id Domenichus in Facetijs; quod Gandinus in Stratagematis.
+						Vterq[ue] dignus, qui ad vnguem habeatur.
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<person name="Marcantonio Gandino"/>
+					<book title="Facetie, motti, et burle di diversi signori et persone private"/>
+					<book title="Stratagemata"/>
+				</position>
+			</language>
+			<translation>
+				As Domenichi in his book of jokes, so Gandino in his book of stratagems.
+				Both worthy to be memorized by heart.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						The daie is lost, when Sum part is not emprooued,
+						external, or internal: sum action, priuate,
+						or publique: sum good, proffitable, pleasant.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="io mi rido"/>
+		<underline method="pen" type="straight" language="IT" text="d'ingannar me"/>
+		<underline method="pen" type="straight" language="IT" text="che ti riuenderei"/>
+		<underline method="pen" type="straight" language="IT" text="cento uolte in sul mercato"/>
+		<underline method="pen" type="straight" language="IT" text="questo"/>
+		<underline method="pen" type="straight" language="IT" text="non darebbe il cuore di poter fare a me"/>
+		<underline method="pen" type="straight" language="IT" text="piu di dugento de"/>
+		<underline method="pen" type="straight" language="IT" text="tanto poco uali"/>
+		<underline method="pen" type="straight" language="IT" text="FINE DELLE FACETIE"/>
+		<underline method="pen" type="straight" language="IT" text="i motti raccolti"/>
+		<underline method="pen" type="straight" language="IT" text="Thomaso Porcacchi"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="se bene io ti portassi in su piu di dugento"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="left_margin"/>
+
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- riuende -->
+		<mark name="bracket" method="pen" place="right_margin"/> <!-- de ... de -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- DI M. -->
+		
+	    	<!-- Left margin -->
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- disse io -->
+	    <mark name="bracket" method="pen" place="left_margin"/> <!-- rei ... mercati -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="head" language="IT" text="io mi rido"/>
+	    <mark name="quotation_mark" method="pen" place="intext"/> <!-- ingannar me -->
+		<mark name="comma" method="pen" place="intext"/> <!-- me che -->
+		<mark name="equal_sign" method="pen" place="intext"/> <!-- cento -->
+		<mark name="comma" method="pen" place="intext"/> <!-- mecato, questo -->
+		<mark name="equal_sign" method="pen" place="intext"/> <!-- dugento -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="FACETIE"/>
+		<mark name="equal_sign" method="pen" place="intext"/> <!-- motti -->
+
+    </annotation>
+</transcription>

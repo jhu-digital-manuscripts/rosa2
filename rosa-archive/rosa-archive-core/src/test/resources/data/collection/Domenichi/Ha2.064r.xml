@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.064r.tif" pagination="447" reader="Harvey"/>	<!-- ABO 68right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						La via del mezzo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The middle path.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Veritas odium parit. vt s[upr]a, 437.
+					</marginalia_text>
+					<internal_ref text="s[upr]a">
+						<target filename="Ha2.059r.xml" book_id="FolgersHa2" text="437"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Truth begets hatred. As above, pg. 437. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Veritas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Truth.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Adulatio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Flattery.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Discretio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Discretion.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						giudicioso.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Judicious.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						260. s[upr]a. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Pg. 260, above.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Il diuino Apollonio Tianeo.
+					</marginalia_text>
+					<person name="Apollonius of Tyana"/>
+				</position>
+			</language>
+			<translation>
+				The divine Apollonius of Tyana.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Distinctio discretionis, optima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An excellent distinction in discretion.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Contr&agrave; Machiauelli politismum.
+					</marginalia_text>
+					<person name="Machiavelli"/>
+				</position>
+			</language>
+			<translation>
+				Against the politics of Machiavelli.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Malo discretionis speculu[m] chalybeum, qu&agrave;m adulationis cristallinu[m].
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				I prefer the iron mirror of discretion than the crystalline mirror of flattery.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="90">
+					<marginalia_text>
+						Libri, vt opes, non sunt in tua potestate: sed oportet
+						peritum esse suam Bibliothecam. 
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Books, as with riches, are not in your power: but it is necessary
+				to be experienced in one's Library.
+			</translation>
+		</marginalia>
+				
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Orationis ad Reginam temperatus stilus. s[upr]a, 134.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The mild style of the oration to the Queen. [See] above, pg. 134.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="uerso la tauola"/>
+		<underline method="pen" type="straight" language="IT" text="linea diritta dal filo della"/>
+		<underline method="pen" type="straight" language="IT" text="elegantemente quella parte"/>
+		<underline method="pen" type="straight" language="IT" text="occult&ograve; la deformit&agrave; dell'occhio nell'ombra della tauola"/>
+		<underline method="pen" type="straight" language="IT" text="tutti tre"/>
+		<underline method="pen" type="straight" language="IT" text="&amp; l'uno dietro"/>
+		<underline method="pen" type="straight" language="IT" text="present&ograve; il suo quadro"/>
+		<underline method="pen" type="straight" language="IT" text="di Polignoto"/>
+		<underline method="pen" type="straight" language="IT" text="si conturb&ograve;"/>
+		<underline method="pen" type="straight" language="IT" text="esser si brutto, &amp;"/>
+		<underline method="pen" type="straight" language="IT" text="collericamente di corte"/>
+		<underline method="pen" type="straight" language="IT" text="maligna libert&agrave; haueua"/>
+		<underline method="pen" type="straight" language="IT" text="all'arte, c'hauer"/>
+		<underline method="pen" type="straight" language="IT" text="alla dignit&agrave; reale"/>
+		<underline method="pen" type="straight" language="IT" text="di Scoppa piacque"/>
+		<underline method="pen" type="straight" language="IT" text="grandemente"/>
+		<underline method="pen" type="straight" language="IT" text="piu fresca et&agrave;, nella"/>
+		<underline method="pen" type="straight" language="IT" text="d'esser uccellato"/>
+		<underline method="pen" type="straight" language="IT" text="troppo imprudente adulatione"/>
+		<underline method="pen" type="straight" language="IT" text="L'adulatione &egrave;"/>
+		<underline method="pen" type="straight" language="IT" text="costare a chi"/>
+		<underline method="pen" type="straight" language="IT" text="come adulatore"/>
+		<underline method="pen" type="straight" language="IT" text="Diocle"/>
+		<underline method="pen" type="straight" language="IT" text="suo ritratto"/>
+		<underline method="pen" type="straight" language="IT" text="sodisfece egregiamente a tutti i cortigiani"/>
+		<underline method="pen" type="straight" language="IT" text="especialmente ad Antigono"/>
+		<underline method="pen" type="straight" language="IT" text="modestia di Diocle nell'hauer"/>
+		<underline method="pen" type="straight" language="IT" text="della riputation dell'arte"/>
+		<underline method="pen" type="straight" language="IT" text="mancar di moderato giudicio, per"/>
+		<underline method="pen" type="straight" language="IT" text="non parer discortese"/>
+		<underline method="pen" type="straight" language="IT" text="difetto dell'effigie"/>
+		<underline method="pen" type="straight" language="IT" text="sempre piu scarso"/>
+		<underline method="pen" type="straight" language="IT" text="Antigono gli don&ograve; quattro talenti"/>
+		<underline method="pen" type="straight" language="IT" text="ritenne honoratamente"/>
+		<underline method="pen" type="straight" language="IT" text="tutte le cose"/>
+		<underline method="pen" type="straight" language="IT" text="solo la uia del mezo &egrave; di salute"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="L'adulatione &egrave; dolce"/>
+		<underline method="chalk" type="straight" language="IT" text="cose sola la uia del mezo &egrave; di salute"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="SS" place="tail"/>
+		<symbol name="Opposite_planets" place="tail" language="LA" text="Pg. 260, above."/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="horizontal_bar" method="pen" place="right_margin"/>
+		<mark name="horizontal_bar" method="pen" place="right_margin"/>
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- adulatione del -->
+		<mark name="horizontal_bar" method="pen" place="right_margin"/>
+		<mark name="dash" method="pen" place="right_margin"/> <!--espe-->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- giu -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ri -->
+		<mark name="dash" method="pen" place="right_margin"/> <!--  tut -->
+		
+	    	<!-- Left margin -->
+	    <mark name="bracket" method="pen" place="left_margin"/> <!-- gnoto ... mal -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- modestia ... difetto -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- tenne ... te le -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- tauola. Il --> 
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="tutti tre"/>
+		<mark name="dot" method="pen" place="intext"/> <!--  Antigono, & -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Polignoto"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- trattato, & -->
+		<mark name="dot" method="pen" place="intext"/> <!-- regno, dicendo -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="libert&agrave;"/>		
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- reale. La tauola -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Scoppa"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="comma" method="pen" place="intext"/> <!-- uiso parendogli -->
+		<mark name="dot" method="pen" place="intext"/> <!-- pittore, & -->		
+		<mark name="dot" method="pen" place="intext"/> <!-- chi-->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- sfacciato. Allhora -->		
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Diocle"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- sodisfece -->
+		<mark name="comma" method="pen" place="intext"/> <!-- Antigono riconoscendo -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="modestia"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="moderato"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- quattro talenti -->
+		<mark name="comma" method="pen" place="intext"/> <!-- talenti & -->		
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="dot" method="pen" place="intext"/> <!-- corte, dicendo -->	
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="sola la uia del mezo &egrave; di salute"/>
+	  		
+		<!-- Numerals -->
+		<numeral place="left_margin">2.</numeral> <!--JG: Can this be linked to underlined text?-->
+		<numeral place="left_margin">3.</numeral> <!--JG: Idem?-->
+
+    </annotation>
+</transcription>

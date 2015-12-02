@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+
+	<page filename="Ha2.014v.tif" pagination="348" reader="Harvey"/>	<!-- ABO  019left -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			               <position place="head" book_orientation="0">
+                    				<marginalia_text>
+                    					( A connicatching tric[k]: but good enough for such a good one.) 
+                    				</marginalia_text>
+            			               </position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position place="head" book_orientation="0">
+    					<marginalia_text>
+    						 Coosenage.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position place="intext" book_orientation="0">
+    					<marginalia_text>
+    						ridicolo. ) 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Ridiculous. )
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Sa[e]p&egrave; ignauescit, qui non Semper (
+    						ignescit.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				He who does not always burn with passion often becomes spiritless. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="tail" book_orientation="0">
+    					<marginalia_text>
+    						Focus perennis.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				An everlasting fireplace. 
+    			</translation>
+    		</marginalia>
+        
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						Vnicus mundi Orator, et pragmaticus, sempre mellitus, aut saccharatus:
+    						pla[e]runq[ue] diamargaritatus, aut diamoschatus: sa[e]p&egrave; viua ambrosia,	<!-- Terms unclear.-->
+    						et nectar de Coelo.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				The unique and pragmatic Orator of the world is always honey-sweet or sugar-sweet:    				
+    				[plaerunque diamargaritatus] or thoroughly musky: often, living ambrosia and nectar from heaven.		
+    				<!-- CG: I am at a loss with diamargaritatus. The Greek root word itself has something to do with pearls,
+    					but I have the feeling this refers to some sort of processed extract from a plant or something. --> 
+    				<!-- CG: Apparently moschatus is a reference to the sweet seeds of a particular plant from India. The 'dia' functions
+    				as an intensifier. -->
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="left_margin" book_orientation="90">
+    					<marginalia_text>
+    						Et Orpheo dulcior: et lautior Proa[e]resio: et Bartasio
+    						diuinior, qui superat omnes Theologos. 	
+    					</marginalia_text>
+    					<person name="Orpheus"/>
+    					<person name="Proaeresius"/>
+    					<person name="Guillaume Du Bartas"/>
+    				</position>
+    			</language>
+    			<translation>
+    				And sweeter with Orpheus: and more elegant with Proaeresius: and more divine 
+    				with Barthas, who surpasses all Theologians.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position place="right_margin" book_orientation="270"> 
+    					<marginalia_text>
+    						Totus Mundus est paradisus philosophi: qua[e]uis negociatio,
+    						triumphus.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				<!-- CG: Missing text added. -->
+    			</translation>
+    		</marginalia>
+    		
+    		
+        
+	    	<!-- Underlines -->
+	        
+	    	<underline method="pen" type="straight" language="IT" text="donato uno scudo"/>
+    		<underline method="pen" type="straight" language="IT" text="s'ella gli daua"/>
+    		<underline method="pen" type="straight" language="IT" text="intese dello scudo"/>
+    		<underline method="pen" type="straight" language="IT" text="innamorato di"/> <!--JG: I'd include 'siete' -->
+    		<underline method="pen" type="straight" language="IT" text="uenite stasera"/>
+    		<underline method="pen" type="straight" language="IT" text="indorare un grosso di"/>
+    		<underline method="pen" type="straight" language="IT" text="uno scudo"/>
+    		<underline method="pen" type="straight" language="IT" text="apparecchiati buoni marzapani, confettioni"/> 
+    		<underline method="pen" type="dotted" language="IT" text="La mattina"/> 
+    		<underline method="pen" type="dotted" language="IT" text="si leua"/> 
+    		<underline method="pen" type="straight" language="IT" text="hauer certa facenda"/>
+    		<underline method="pen" type="straight" language="IT" text="dal collo il falso"/>
+    		<underline method="pen" type="straight" language="IT" text="io non h&ograve; molti denari, serbatemi"/>
+    		<underline method="pen" type="straight" language="IT" text="scudo, che io porto al collo per diuotione"/>
+    		<underline method="pen" type="straight" language="IT" text="a due d&igrave; mi uerranno denari"/>
+    		<underline method="pen" type="straight" language="IT" text="non lo mostrate"/>
+    		<underline method="pen" type="straight" language="IT" text="ne sarei uccellato"/>
+    		<underline method="pen" type="straight" language="IT" text="buona donna"/>
+    		<underline method="pen" type="straight" language="IT" text="promettendo serbarglielo"/>
+    		<underline method="pen" type="straight" language="IT" text="due giorni"/>
+    		<underline method="pen" type="straight" language="IT" text="gli otto"/>
+    		<underline method="pen" type="straight" language="IT" text="cambiare lo scudo, ella lo"/>
+    		<underline method="pen" type="straight" language="IT" text="che egli era"/>
+    		<underline method="pen" type="straight" language="IT" text="grosso indorato"/>
+    		<underline method="pen" type="straight" language="IT" text="mal contenta"/>
+    		<underline method="pen" type="straight" language="IT" text="al Commessario di Pisa"/>
+    		<underline method="pen" type="straight" language="IT" text="le risa"/>
+    		<underline method="pen" type="straight" language="IT" text="auttorit&aacute; sopra gli scolari"/>
+    		<underline method="pen" type="straight" language="IT" text="al Rettor loro"/>
+    		<underline method="pen" type="straight" language="IT" text="grosso indorato"/>
+    		<underline method="pen" type="straight" language="IT" text="parecchi soldi"/>
+    		<underline method="pen" type="straight" language="IT" text="fanciulle se non sei quattrini"/>
+	       
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+    		
+    		<symbol name="JC" place="left_margin"/>
+    		<symbol name="SS" place="left_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	
+	    	<!-- Left margin -->
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- indorare un grosso --> 
+    		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- le rise -->
+    		<mark name="bracket" method="pen" place="left_margin"/> <!-- un... le se -->
+		    
+	    	<!-- Intext -->
+	    	<mark name="plus_sign" method="pen" place="intext"/> <!-- un grosso -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- lo scudo, ella -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- Pisa, il quale -->
+    		<mark name="dot" method="pen" place="intext"/> <!-- parecchi soldi, & -->
+
+    </annotation>
+</transcription>

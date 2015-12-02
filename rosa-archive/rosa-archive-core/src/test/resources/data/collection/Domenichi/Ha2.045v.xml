@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.045v.tif" pagination="410" reader="Harvey"/>	<!-- ABO 50left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Arcana qua[e]dam ex Angeli Furij diuinis operibus,
+					</marginalia_text>
+					<person name="Angelus Furius"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Euschemosyne, et Entelechia. Qua[e] sunt aurea Eutrapeli specula: ( 
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						et pra[e]gnantissima mundi practica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Refinement and Actualization are some of the secrets from the divine works of Angelus Furius.
+				They are the golden mirrors of Eutrapelus and the most pregnant practice of the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( not a clock, but a mock.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						amoroso, et ridicolo.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Loving and ridiculous.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Flamma Sine fumo. A[e]therea
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						dia[e]ta, ars, actio: singula, omnia exquisita.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Fire without smoke. Art and action, a heavenly diet: all singular and exquisite things.
+			</translation>
+		</marginalia>		
+		<marginalia hand="Italian">
+			<language ident="ES">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Todos es nada.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All for naught.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Sine quotidiana Totius exercitatione,
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						continuaq[ue] partium agitatione; deflorescit
+						vitalis vigor, ipsaq[ue] he[b]escit entelechia: res
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						omniu[m] reru[m] potentissima.
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Labor omnia vincit: sed heroicus.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Without daily exercise of the whole, and continual movement of every part, 
+				one's vital vigor wanes, and actualization itself, the most potent thing of all things,
+				becomes feeble. Work conquers all, but only heroic work.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						press&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Firmly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Leui pollice grauissima. Arcanu[m]
+						Eutrapeli Emblema.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The most serious matter with a light touch. The hidden emblem of Eutrapelus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Domat omnia Virtus: sed Virtus heroica: et Nescia stare loco.
+					</marginalia_text>
+					<X-ref person="Lucan" book_title="Pharsalia" language="LA" text="Nescia stare loco"/>
+				</position>
+			</language>
+			<translation>
+				Virtue conquers all things, but only heroic virtue. And "his virtue not knowing how to stand in one place."
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="Do[n] Cornelio"/>
+		<underline method="pen" type="straight" language="IT" text="horiuolo"/>
+		<underline method="pen" type="straight" language="IT" text="sonaua a rouescio"/>
+		<underline method="pen" type="straight" language="IT" text="argutamente bisticiando"/>
+		<underline method="pen" type="straight" language="IT" text="horiuolo, ma erraiuolo"/>
+		<underline method="pen" type="straight" language="IT" text="sposo nouello"/>
+		<underline method="pen" type="straight" language="IT" text="Anima mia dolcissima"/>
+		<underline method="pen" type="straight" language="IT" text="noi prima fare"/>
+		<underline method="pen" type="straight" language="IT" text="quel modo"/>
+		<underline method="pen" type="straight" language="IT" text="desinare"/>
+		<underline method="pen" type="straight" language="IT" text="cuor mio"/>
+		<underline method="pen" type="straight" language="IT" text="come piace a uoi"/>
+		<underline method="pen" type="straight" language="IT" text="poi desiniamo"/>
+		<underline method="pen" type="straight" language="IT" text="un Portoghese"/>
+		<underline method="pen" type="straight" language="IT" text="professione di letterato"/>
+		<underline method="pen" type="straight" language="IT" text="di Giouenale"/>
+		<underline method="pen" type="straight" language="IT" text="non l'intendendo"/>
+		<underline method="pen" type="straight" language="IT" text="entender Iuuenal"/>
+		<underline method="pen" type="straight" language="IT" text="menester de ser hombre noiado"/>
+		<underline method="pen" type="straight" language="IT" text="uno Spagnuolo"/>
+		<underline method="pen" type="straight" language="IT" text="opera alla posterit&agrave;"/>
+		<underline method="pen" type="straight" language="IT" text="uerso la groppa"/>
+		<underline method="pen" type="straight" language="IT" text="merced caualga mucchio"/>
+		<underline method="pen" type="straight" language="IT" text="sentendosi punto"/>
+		<underline method="pen" type="straight" language="IT" text="mordacissimo rispose"/>
+		<underline method="pen" type="straight" language="IT" text="coprir la croce"/>
+		<underline method="pen" type="straight" language="IT" text="costoro parlano prima"/>
+		<underline method="pen" type="straight" language="IT" text="pensan poi"/>
+		
+		
+		<underline method="chalk" type="straight" language="IT" text="non &egrave; horiuolo, ma erraiuolo"/>
+		<underline method="chalk" type="straight" language="IT" text="mio, come piace a uoi, &amp; poi desiniamo"/>
+		<underline method="chalk" type="straight" language="IT" text="che por entender Iuuenal"/>
+		<underline method="chalk" type="straight" language="IT" text="alla posterit&agrave;"/>
+		<underline method="chalk" type="straight" language="IT" text="coprir la croce"/>
+		<underline method="chalk" type="straight" language="IT" text="parlano prima, &amp; pensan poi"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- mo -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- grandis -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Italia -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- mer -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ar -->
+		
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- horiuolo ... ciando -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- quel ... domandato -->
+		<mark name="plus_sign" method="pen" place="left_margin" language="IT" text="coprir la croce"/> 
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- costoro -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="erraiuolo"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- erraiuolo -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- anima mia -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="cuor"/>
+	    	<mark name="dot" method="pen" place="intext"/> <!-- intendendo, rispose -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- noiado -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="alla posterit&agrave;"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="groppa"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- punto, ar -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- pensan poi -->
+		
+    </annotation>
+</transcription>

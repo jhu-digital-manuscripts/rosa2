@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.042r.tif" pagination="403" reader="Harvey"/>	<!-- ABO 46right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Quid potes, plus qu&agrave;m alij? Quid habes excellentius alijs?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				What can you do more than others? What have you more excellently than others?
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Magna Mundi qua[e]stio, et perpetua censura. =
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The great question of the world, and perpetual judgment.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						scit&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Knowingly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						questa Tragedia non era di Lodouico Dolce.
+					</marginalia_text>
+					<person name="Lodovico Dolce"/>
+				</position>
+			</language>
+			<translation>
+				This tragedy was not Lodovico Dolce's.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Tot Secretorum, paucissima axiozela, aut mome[n]tosa.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				So many secrets, so few worthwhile, or else momentary.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						pungente, sul viuo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Biting, lively.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						argut&gt;
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) Percurrit omnes Locos Communes Eudromus:
+					</marginalia_text>
+					<person name="Eudromus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						et Sola selegit ) potentissima.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Eudromus runs through every commonplace, and only selects the most useful.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						descant.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Ociantur scholastici: nugantur professores. Meras
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						artium, facultatumq[ue]
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Πραγματείας
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						curat Eudromus: vultq[ue]
+						viris pra[e]stare virilibus effectis.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>
+				Scholars loll about: professors trifle. Eudromus is interested in pure practical activity 
+				of skills and abilities: and he wants to surpass men with manly accomplishments.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						In magno Zuingeri theatro, no[n] magna Singulariu[m] obseruationu[m] copia.
+					</marginalia_text>
+					<person name="Theodor Zwinger"/>
+					<book title="Theatrum vitae humanae"/>
+				</position>
+			</language>
+			<translation>
+				In Zwinger's great theater, there is not a great abundance of singular observations.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="era nessuna, di quelle parti"/>
+		<underline method="pen" type="straight" language="IT" text="esser il principio"/>
+		<underline method="pen" type="straight" language="IT" text="e 'l fine della tragedia"/>
+		<underline method="pen" type="straight" language="IT" text="terribile"/>
+		<underline method="pen" type="straight" language="IT" text="miserabile"/>
+		<underline method="pen" type="straight" language="IT" text="habbiate un poco risguardo"/>
+		<underline method="pen" type="straight" language="IT" text="siate si facili a giudicare"/>
+		<underline method="pen" type="straight" language="IT" text="questa tragedia habbia"/>
+		<underline method="pen" type="straight" language="IT" text="benissimo una delle due"/>
+		<underline method="pen" type="straight" language="IT" text="miserabile"/>
+		<underline method="pen" type="straight" language="IT" text="si duro cuore"/>
+		<underline method="pen" type="straight" language="IT" text="habbia compassione"/>
+		<underline method="pen" type="straight" language="IT" text="all'ignoranza dell'autore"/>
+		<underline method="pen" type="straight" language="IT" text="Girolamo Gualteruzzi"/>
+		<underline method="pen" type="straight" language="IT" text="sue ragioni"/>
+		<underline method="pen" type="straight" language="IT" text="dinanzi al Giudice"/>
+		<underline method="pen" type="straight" language="IT" text="bugiardo"/>
+		<underline method="pen" type="straight" language="IT" text="Signor Tale"/>
+		<underline method="pen" type="straight" language="IT" text="puo far testimonianza"/>
+		<underline method="pen" type="straight" language="IT" text="era uero"/>
+		<underline method="pen" type="straight" language="IT" text="si"/>
+		<underline method="pen" type="straight" language="IT" text="rendere il Vostro"/>
+		<underline method="pen" type="straight" language="IT" text="non u'affaticate"/>
+		<underline method="pen" type="straight" language="IT" text="Voi uoleste rendere l'honore"/>
+		<underline method="pen" type="straight" language="IT" text="non ve ne rimarrebbe punto per Voi"/>
+		<underline method="pen" type="straight" language="IT" text="cenaua molto per tempo"/>
+		<underline method="pen" type="straight" language="IT" text="o Voi"/>
+		<underline method="pen" type="straight" language="IT" text="buon'hora"/>
+		<underline method="pen" type="straight" language="IT" text="cena a buon'hora, non cena alla mala hora"/>
+		<underline method="pen" type="straight" language="IT" text="Bisticcio arguto"/>
+		<underline method="pen" type="straight" language="IT" text="uecchio decrepito"/>
+		<underline method="pen" type="straight" language="IT" text="portare le gruccie"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="dice esser il principio"/>
+		<underline method="chalk" type="straight" language="IT" text="fine"/>
+		<underline method="chalk" type="straight" language="IT" text="miserabile"/>
+		<underline method="chalk" type="straight" language="IT" text="il miserabile"/>
+		<underline method="chalk" type="straight" language="IT" text="che se Voi uoleste rendere l'honore a quante persone l'hauete tolte, non ve ne rimarrebbe punto per Voi"/>
+				
+		<!-- Symbols -->
+		<symbol name="Sun" place="left_margin"/>
+		<symbol name="JC" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- di -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- terribi --> 
+		<mark name="dash" method="pen" place="right_margin"/> <!-- terribi -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- com -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- giu -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- atteso --> 
+		<mark name="dash" method="pen" place="right_margin"/> <!-- di -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- bu -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- deb -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- l'hono -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- l'hono -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- non cena -->
+				
+	    	<!-- Left margin -->
+	    	<mark name="bracket" method="pen" place="left_margin"/> <!-- sa ... pagnia  -->
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- quale fusse --> 
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- non ... be -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- buon ... alla -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="terribile"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="miserabile"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="miserabile"/>
+	    	<mark name="dot" method="pen" place="intext"/> <!-- miserabile, atteso -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- habbia compassione -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Giudice, il -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="rendre il Vostro"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Voi uoleste rendere l'honore"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- hauete tolte -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="punto"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- tempo, gli -->
+		<mark name="comma" method="pen" place="intext"/> <!-- egli chi -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Bisticcio arguto"/>
+		<mark name="comma" method="pen" place="intext"/> <!-- Arezzo disse -->
+
+    </annotation>
+</transcription>

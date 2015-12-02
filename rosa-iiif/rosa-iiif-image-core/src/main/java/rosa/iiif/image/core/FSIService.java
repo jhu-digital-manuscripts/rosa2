@@ -7,7 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentHashMap;;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -51,10 +51,14 @@ public class FSIService implements IIIFService {
      * @param baseurl base URL
      * @param max_image_size
      *            maximum dimension of a returned image, -1 for unlimited
+     * @param tile_width width of tiles in px
+     * @param tile_height height of tiles in px
+     * @param scale_factors scale factors
      * @param image_info_cache_size
      *            number of image info lookup responses to cache
      */
-    public FSIService(String baseurl, int max_image_size, int image_info_cache_size) {
+    public FSIService(String baseurl, int max_image_size, int tile_width, int tile_height,
+                      int[] scale_factors, int image_info_cache_size) {
         this.baseurl = baseurl;
         this.image_info_cache = new ConcurrentHashMap<>(image_info_cache_size);
         this.profile = new ImageServerProfile();
@@ -68,11 +72,10 @@ public class FSIService implements IIIFService {
         profile.setQualities(Quality.COLOR, Quality.GRAY);
         
         this.tile_info = new TileInfo();
-        tile_info.setWidth(max_image_size);
-        tile_info.setHeight(max_image_size);
-        
-        // TODO What should this be set to?
-        tile_info.setScaleFactors(4);
+        tile_info.setWidth(tile_width);
+        tile_info.setHeight(tile_height);
+
+        tile_info.setScaleFactors(scale_factors);
     }
 
     public String performURL(ImageRequest req) throws IIIFException {

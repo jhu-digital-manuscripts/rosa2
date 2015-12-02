@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.063v.tif" pagination="446" reader="Harvey"/>	<!-- ABO 68left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Historia egregia, et singularis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A distinguished and singular history.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						discretamente.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Discreetly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						) Non est
+						doctus, qui non est sua bibliotheca.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whoever is not in his library is not learned.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Noster etiam Proteus in quaslibet formas conuertibilis eodem die:
+						ter, decies, vicies, centies; quoties, quotiesque opus.
+					</marginalia_text>
+					<person name="Proteus"/>
+				</position>
+			</language>
+			<translation>
+				Likwise our Proteus is changeable into whatever forms on the same day:
+				three times, ten times, twenty times, one hundred times; as often as is useful.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="90">
+					<marginalia_text>
+						Mutata ratione, aut occasione; mutanda opinio, affectio, actio.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				In the case of a changed reason or occasion, an opinion, purpose, and action must be changed.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="prouedere al difetto di questo Re"/>
+		<underline method="pen" type="straight" language="IT" text="sodisfare al"/>
+		<underline method="pen" type="straight" language="IT" text="l'adulation manifesta"/>
+		<underline method="pen" type="straight" language="IT" text="libera profession di uoler"/>
+		<underline method="pen" type="straight" language="IT" text="molto gioueuole"/>
+		<underline method="pen" type="straight" language="IT" text="uno stil di mezo"/>
+		<underline method="pen" type="straight" language="IT" text="questi due estremi"/>
+		<underline method="pen" type="straight" language="IT" text="temperato"/>
+		<underline method="pen" type="straight" language="IT" text="tre pittori"/>
+		<underline method="pen" type="straight" language="IT" text="scuola d'Apelle"/>
+		<underline method="pen" type="straight" language="IT" text="a ritrarre il Re Antigono del naturale"/>
+		<underline method="pen" type="straight" language="IT" text="Polignoto"/>
+		<underline method="pen" type="straight" language="IT" text="Scopa"/>
+		<underline method="pen" type="straight" language="IT" text="Diocle"/>
+		<underline method="pen" type="straight" language="IT" text="separatamente fece il suo quadro"/>
+		<underline method="pen" type="straight" language="IT" text="Polignoto"/>
+		<underline method="pen" type="straight" language="IT" text="ceruel bizarro"/>
+		<underline method="pen" type="straight" language="IT" text="non uoleua che si burlasse dell'occhio"/>
+		<underline method="pen" type="straight" language="IT" text="conto di rispetto"/>
+		<underline method="pen" type="straight" language="IT" text="strada battuta"/>
+		<underline method="pen" type="straight" language="IT" text="facendo Antgono, come"/>
+		<underline method="pen" type="straight" language="IT" text="l'occhio cauato, di"/>
+		<underline method="pen" type="straight" language="IT" text="Scopa non"/>
+		<underline method="pen" type="straight" language="IT" text="d'andare al uero"/>
+		<underline method="pen" type="straight" language="IT" text="fare ingiuria all'arte"/>
+		<underline method="pen" type="straight" language="IT" text="con rughe et sentimenti"/>
+		<underline method="pen" type="straight" language="IT" text="minor uecchiezza"/>
+		<underline method="pen" type="straight" language="IT" text="ritirandolo a quell'et&agrave;"/>
+		<underline method="pen" type="straight" language="IT" text="anchor non haueua riceuuto"/>
+		<underline method="pen" type="straight" language="IT" text="con due occhi a giudicio"/>
+		<underline method="pen" type="straight" language="IT" text="similissimo all'effigie di quel tempo"/>
+		<underline method="pen" type="straight" language="IT" text="uia da superare"/>
+		<underline method="pen" type="straight" language="IT" text="buona gratia del Re, con"/>
+		<underline method="pen" type="straight" language="IT" text="Diocle"/>
+		<underline method="pen" type="straight" language="IT" text="riuoltato nella fantasia la medesima difficult&agrave;"/>
+		<underline method="pen" type="straight" language="IT" text="medesimi rispetti"/>
+		<underline method="pen" type="straight" language="IT" text="uolle scherzar"/>
+		<underline method="pen" type="straight" language="IT" text="andando troppo alla libera"/>
+		<underline method="pen" type="straight" language="IT" text="meno adularlo"/>
+		<underline method="pen" type="straight" language="IT" text="salutifera uia del mezo"/>
+		<underline method="pen" type="straight" language="IT" text="congiettura dell'honore"/>
+		<underline method="pen" type="straight" language="IT" text="minor campo di poter mostrar la"/>
+		<underline method="pen" type="straight" language="IT" text="con la guancia dritta"/>
+			
+		<underline method="chalk" type="straight" language="IT" text="Polignoto"/>
+		<underline method="chalk" type="straight" language="IT" text="Scopa non"/>
+		<underline method="chalk" type="straight" language="IT" text="Diocle hauendo"/>
+		<underline method="chalk" type="straight" language="IT" text="uia del mezo"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		<symbol name="SS" place="tail"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- uo -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- sen -->		
+		
+	    	<!-- Left margin -->
+	    <mark name="bracket" method="pen" place="left_margin"/> <!-- che ... troppo -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- ri ... di -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- Scopa ... uia -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="l'adulation"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- libera profession -->
+		<mark name="dot" method="pen" place="intext"/> <!-- verita', e' -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="uno stil di mezo"/>
+	    <mark name="equal_sign" method="pen" place="intext" language="IT" text="temperato"/>
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- temperato. Furono -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: concorrenza -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="tre pittori"/>
+		<mark name="equal_sign" method="pen" place="intext" language="IT" text="scuola d'Apelle"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- Re Antigono -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: Polignoto -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="ceruel bizarro"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- alcuno, & -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- uiuo. Scopa -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: Scopa -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!-- dell'arte. Ma -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: Diocle -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- riuoltato -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Polignoto, e i -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Scopa, non -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="scherzar"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- libera, ne -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="meno adularlo"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="uia del mezo"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: del mezo -->
+		<mark name="dot" method="pen" place="intext"/> <!-- honore, stringendosi -->
+		
+		<!-- Numerals -->
+		<numeral place="left_margin">I.</numeral>
+		<numeral place="left_margin">2.</numeral>
+		<numeral place="left_margin">3.</numeral>
+
+    </annotation>
+</transcription>

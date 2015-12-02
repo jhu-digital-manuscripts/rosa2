@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.055r.tif" pagination="429" reader="Harvey"/>	<!-- ABO 59right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Vlysse, et Diomede, l'inuention, et execution.
+					</marginalia_text>
+					<person name="Ulysses"/>
+					<person name="Diomedes"/>
+				</position>
+			</language>
+			<translation>
+				Ulysses and Diomedes, invention and implementation.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						s[upr]a /
+					</marginalia_text>
+					<internal_ref text="s[upr]a">
+						<target filename="Ha2.024r.xml" book_id="FolgersHa2" text="[367]"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						dextr&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Infinita vis arguti ingenij,
+						et pragmatica[e] subtilitatis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The infinite power of natural wit and pragmatic subtlety. 			
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Ad argutum ingenium plus valet ipsa Ars Elenctica, cum Axiomatibus Beda[e]:
+						dictis A[e]sopi, Diogenis, Aristippi: Epigrammatis Martialis, et Heiuodi:
+						Satyris Persij, et Politicis Lipsij: Regulis 
+					</marginalia_text>
+					<person name="Bede"/>
+					<person name="Aesop"/>
+					<person name="Diogenes of Sinope"/>
+					<person name="Aristippus"/>
+					<person name="Martial"/>
+					<person name="John Heywood"/>
+					<person name="Persius"/>
+					<person name="Lipsius"/>
+					<book title="Axiomata philosophica Venerabilis Bedae"/>
+					<book title="Persius' Satires"/>
+					<book title="Politicorum sive Civilis doctrinae libri sex"/>					
+				</position>
+				<position place="tail" book_orientation="180">
+					<marginalia_text>
+						Stynna[e] breuissim&egrave;; Brocardicis Kauferi, et Damasi, pro, et Contra:
+					</marginalia_text>
+					<person name="Johannes de Stynna"/>
+					<person name="Guilelmus Damasus"/>
+					<book title="Speculator abbreviatus"/>
+					<book title="Brocarda"/>
+				</position>
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Distinctionibus Bartholi. Singula ad vnguem, ad vnguem. Panis quotidianus.
+					</marginalia_text>
+					<person name="Bartolus de Saxoferrato"/>
+					<book title="Distinctiones"/>
+				</position>
+			</language>
+			<translation>
+				It is more useful for the clever man to know the actual art of refutation, with the axioms of Bede,
+				with the sayings of Aesop, of Diogenes, and of Aristippus; with the epigrams of Martial and Heywood;
+				with the Satires of Persius, and the Politics of Lipsius; with the briefest rules of Stynna; with the legal
+				maxims of Kaufer and Damasus, both for and against;	<!-- CG: I can't figure out who this Kaufer is. Specialist help needed. -->
+				with the distinctions of Bartholus. Singular things to be memorized by heart. One's daily bread.
+			</translation>
+		</marginalia>
+
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="gratiossisima Madonna"/>
+		<underline method="pen" type="straight" language="IT" text="Laura Battiferra, occorse"/>
+		<underline method="pen" type="straight" language="IT" text="che questa coppia di Do[n]ne singulari se"/>
+		<underline method="pen" type="straight" language="IT" text="gentil'huomini"/>
+		<underline method="pen" type="straight" language="IT" text="f&ugrave; uno, che facendo"/>
+		<underline method="pen" type="straight" language="IT" text="saccente"/>
+		<underline method="pen" type="straight" language="IT" text="l'hebbe alquanto rimirate"/>
+		<underline method="pen" type="straight" language="IT" text="non pigliate scandalo"/>
+		<underline method="pen" type="straight" language="IT" text="in fattura tua"/>
+		<underline method="pen" type="straight" language="IT" text="Madonna Laura"/>
+		<underline method="pen" type="straight" language="IT" text="piaceuolmente"/>
+		<underline method="pen" type="straight" language="IT" text="galant'huomo"/>
+		<underline method="pen" type="straight" language="LA" text="auerte oculos tuos, ne uideant uanitatem"/>
+		<underline method="pen" type="straight" language="IT" text="homiciatto, per farsi conuerso"/>
+		<underline method="pen" type="straight" language="IT" text="riccorre delle schegge con un Asinello"/>
+		<underline method="pen" type="straight" language="IT" text="s'essercitasse nella patientia"/>
+		<underline method="pen" type="straight" language="IT" text="nell'humilt&agrave;"/>
+		<underline method="pen" type="straight" language="IT" text="massa di schegge"/>
+		<underline method="pen" type="straight" language="IT" text="era caricato"/>
+		<underline method="pen" type="straight" language="IT" text="il piccolo Asinetto"/>
+		<underline method="pen" type="straight" language="IT" text="altra scheggia grande, &amp;"/>
+		<underline method="pen" type="straight" language="IT" text="garzone la patienza, brontolando"/>
+		<underline method="pen" type="straight" language="IT" text="che diauolo pensi"/>
+		<underline method="pen" type="straight" language="IT" text="tu scorticar quest'Asino"/>
+		<underline method="pen" type="straight" language="IT" text="non sei"/>
+		<underline method="pen" type="straight" language="IT" text="anchor frate"/>
+		<underline method="pen" type="straight" language="IT" text="non hauer discrettione"/>
+		<underline method="pen" type="straight" language="IT" text="sono infiniti discretissimi"/>
+				
+		<underline method="chalk" type="straight" language="LA" text="Delecasti me domine in fattura tua"/>
+		<underline method="chalk" type="straight" language="LA" text="auerte oculos tuos, ne uideant uanitatem"/>
+		<underline method="chalk" type="straight" language="IT" text="s'essercitasse nella patientia"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Bat -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- sin -->
+		<mark name="comma" method="pen" place="right_margin"/> <!-- di me -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- De -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- scrittura De -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- cari -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ha -->
+		
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Battiferra"/>
+	    <mark name="dot" method="pen" place="intext"/> <!-- Batifera, occorse -->
+		<mark name="comma" method="pen" place="intext"/> <!-- scrittura, De -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="in fattura tua"/>
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="piaceuolmente"/>
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="galant'huomo"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- auerte -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="uanitatem"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- uanitatem -->
+		<mark name="dot" method="pen" place="intext"/> <!-- conuerso, lo -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Asnillo, accio -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="s'essercitasse nella patientia"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- Asinetto, quegli -->
+		<mark name="dot" method="pen" place="intext"/> <!-- Asinetto, perche -->
+		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- che diauolo -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- non ha -->
+		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- infinit discre -->
+		<mark name="plus_sign" method="pen" place="tail"/> <!-- discrettione -->
+		<mark name="plus_sign" method="pen" place="tail" language="IT" text="sono infiniti discretissimi"/> 
+
+    </annotation>
+</transcription>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.067v.tif" pagination="454" reader="Harvey" signature="[F3v]"/>	<!-- ABO 72left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						The finest of men: &amp; the discreetest of
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						all other.
+						Or
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						so: or Eutrapelus scornes himself.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( Temperantia ,et modestia
+					</marginalia_text>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						cum
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Primis: sed Entelechia, et Euschemosyne ante omnes.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Temperance and modesty with first things, but Actualization and Refinement before all things.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Reason, reason, reason: euer to the point,
+						as rowndly, as is possible.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Repletion, &amp; venerie, cheife Causes of diseases: Exercises, vsed with discretion,
+						Causes of health. Noman sturres euerie part enowgh.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Sol anima mundi: actio anima solis. Sol maxim&egrave; mouens, max[im&egrave;]
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="intext" book_orientation="270">
+					<marginalia_text>
+						uidetur quiescere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The sun is the soul of the world; action is the soul of the sun. By moving most, the sun seems most at rest.  
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="che i motti ancho"/>
+		<underline method="pen" type="straight" language="IT" text="giouamento"/>
+		<underline method="pen" type="straight" language="IT" text="Motteggiasi"/>
+		<underline method="pen" type="straight" language="IT" text="su 'l danno"/>
+		<underline method="pen" type="straight" language="IT" text="fingendo di procacciare l'utile"/>
+		<underline method="pen" type="straight" language="IT" text="gentil'huomo compito"/>
+		<underline method="pen" type="straight" language="IT" text="uera riputation dell'honore"/>
+		<underline method="pen" type="straight" language="IT" text="question fatta"/>
+		<underline method="pen" type="straight" language="IT" text="dato molte ferite a"/>
+		<underline method="pen" type="straight" language="IT" text="prestasse un cauallo"/>
+		<underline method="pen" type="straight" language="IT" text="fuggirsene in terra"/>
+		<underline method="pen" type="straight" language="IT" text="che i nimici lo cercauano"/>
+		<underline method="pen" type="straight" language="IT" text="poi dar loro una querela per caso pensato"/>
+		<underline method="pen" type="straight" language="IT" text="con garbo si scherza"/>
+		<underline method="pen" type="straight" language="IT" text="il contrario di quel"/>
+		<underline method="pen" type="straight" language="IT" text="aspettiamo"/>
+		<underline method="pen" type="straight" language="IT" text="Fra Succhiello"/>
+		<underline method="pen" type="straight" language="IT" text="molto burleuol predicatore"/>
+		<underline method="pen" type="straight" language="IT" text="predicato in"/>
+		<underline method="pen" type="straight" language="IT" text="Operai dissero di non"/>
+		<underline method="pen" type="straight" language="IT" text="prima non faceua"/>
+		<underline method="pen" type="straight" language="IT" text="un'altra predica"/>
+		<underline method="pen" type="straight" language="IT" text="rendendo la ragione a' suoi uditori"/>
+		<underline method="pen" type="straight" language="IT" text="facesse quella predica di piu"/>
+		<underline method="pen" type="straight" language="IT" text="quello stendardo"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="uera riputation dell'honore"/>
+		<underline method="chalk" type="straight" language="IT" text="Signore Erasmo"/>
+		<underline method="chalk" type="straight" language="IT" text="buona: perche potresti poi dar loro una querela"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="left_margin" language="IT" text="uera riputation dell'honore"/>
+		<symbol name="JC" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ricorren -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- haue -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- fe -->
+		
+	    	<!-- Head/Intext/Tail -->
+		<mark name="vertical_bar" method="pen" place="intext"/> <!--  ci recano -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: una querela -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="garbo"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="contrario"/>
+	    <mark name="dot" method="pen" place="intext"/> <!-- aspettiamo, -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="burleuol predicatore"/>
+
+    </annotation>
+</transcription>

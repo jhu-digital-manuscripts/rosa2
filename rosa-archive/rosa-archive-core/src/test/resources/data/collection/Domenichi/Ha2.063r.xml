@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.063r.tif" pagination="445" reader="Harvey"/>	<!-- ABO 67right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Nihil magis subtilizat
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						ingenium, qu&agrave;m
+					</marginalia_text>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Logica Iureconsultorum, et dia[e]ta Theurgorum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing makes genius more subtle than than the logic of jurisprudence and the diet of theurgy.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						Diuina[e] Entelechia[e], et Ironia[e] quotidiana alimenta.
+						Cu[m] his etiam Salium, apophthegmatum, epigrammatum, gnomaru[m],
+						regularu[m] ( delitijs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The daily sustenance of divine actualization and irony. And with these, the delights found in witticisms, aphorisms,
+				epigrams, maxims, and principles.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						the naturallists: Viues the artists; &amp; then Ramus.
+							<!-- Continued from facing page, right margin, Ha2.062v -->
+					</marginalia_text>
+					<person name="Juan Luis Vives"/>
+					<person name="Petrus Ramus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( argutamente.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Vnus respectus absoluit: alter condemnat.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A single aspect absolves, another condemns.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Mnemosini de tre Pittori eccellenti.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Quorum pessimus, qui Optimus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Memorials of three excellent painters.
+				Out of whom, whoever is the best is the worst.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="tail" book_orientation="90">
+					<marginalia_text>
+						Knowledg,
+						method,
+					</marginalia_text>
+				</position>
+				<position place="right_margin" book_orientation="90">
+					<marginalia_text>
+						&amp; practis refine all.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="Trappolina"/>
+		<underline method="pen" type="straight" language="IT" text="giuocare"/>
+		<underline method="pen" type="straight" language="IT" text="trappola con"/>
+		<underline method="pen" type="straight" language="IT" text="Dottore molto"/>
+		<underline method="pen" type="straight" language="IT" text="Antigono Re"/>
+		<underline method="pen" type="straight" language="IT" text="perduto un'occhio per una"/>
+		<underline method="pen" type="straight" language="IT" text="fieramente si sdegnaua, quando"/>
+		<underline method="pen" type="straight" language="IT" text="parlaua della diformit&agrave;"/>
+		<underline method="pen" type="straight" language="IT" text="la priuation di quell'occhio"/>
+		<underline method="pen" type="straight" language="IT" text="morir Theocrito da"/>
+		<underline method="pen" type="straight" language="IT" text="a burlarlo"/>
+		<underline method="pen" type="straight" language="IT" text="di perdonargli"/>
+		<underline method="pen" type="straight" language="IT" text="Theocrito in disgratia"/>
+		<underline method="pen" type="straight" language="IT" text="sentendo il giuramento fatto"/>
+		<underline method="pen" type="straight" language="IT" text="perdono, pur"/>
+		<underline method="pen" type="straight" language="IT" text="della clementia del Re"/>
+		<underline method="pen" type="straight" language="IT" text="innanzi agli occhi"/>
+		<underline method="pen" type="straight" language="IT" text="un'occhio solo"/>
+		<underline method="pen" type="straight" language="IT" text="atto d'ucellar loro, &amp; lui"/>
+		<underline method="pen" type="straight" language="IT" text="innanzi all'occhio"/>
+		<underline method="pen" type="straight" language="IT" text="non ci &egrave; uerso"/>
+		<underline method="pen" type="straight" language="IT" text="hauere speranza di salute"/>
+		<underline method="pen" type="straight" language="IT" text="l'acerbit&agrave; del"/>
+		<underline method="pen" type="straight" language="IT" text="Il resto t'&egrave; ben perdonato"/>
+		<underline method="pen" type="straight" language="IT" text="ma non gi&agrave; questo"/>
+		<underline method="pen" type="straight" language="IT" text="fece morire"/>
+		<underline method="pen" type="straight" language="IT" text="uccellare, &amp; mordere i difetti de' Principi"/>
+		<underline method="pen" type="straight" language="IT" text="questo Re Antigono"/>
+		<underline method="pen" type="straight" language="IT" text="per sua virt&ugrave; hebbe tante uittorie"/>
+		<underline method="pen" type="straight" language="IT" text="pittore eccellente"/>
+		<underline method="pen" type="straight" language="IT" text="seppe molto ben"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="agli occhi"/>
+		<underline method="chalk" type="straight" language="IT" text="all'occhio: disse"/>
+		<underline method="chalk" type="straight" language="IT" text="Il resto t'&egrave; ben perdonato: ma non gi&agrave; questo"/>
+		
+		<!-- Symbols -->
+		<symbol name="JC" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- poten -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Pado -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- fe -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- uerso che -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Anti -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- discon -->
+		
+	    	<!-- Left margin -->
+	    <mark name="bracket" method="pen" place="left_margin" language="IT" text="Giuoc&ograve; egli con questo motto sopra il dubbio, potendosi intendere cosi della Trappolina gentildonna Padouana, come del giuocare a trappola con le carte: di che quel Dottore molto si dilettaua"/> 
+		<mark name="plus_sign" method="pen" place="left_margin" language="IT" text="Theocrito da"/> 
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- che innanzi -->
+		<mark name="equal_sign" method="pen" place="left_margin"/> <!-- io possa -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="Trappolina"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- a trappola -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- si dilettaua -->
+	    <mark name="dot" method="pen" place="intext"/> <!-- solo, riuolto -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="ma non gi&agrave; questo"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="mordere"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- tante uittorie -->
+		<mark name="dot" method="pen" place="intext"/> <!-- uittorie, non -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- un pittore -->
+
+    </annotation>
+</transcription>

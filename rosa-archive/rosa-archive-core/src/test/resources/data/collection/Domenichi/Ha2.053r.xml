@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.053r.tif" pagination="425" reader="Harvey"/>	<!-- ABO 57right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Homo omnium horaru[m]: philosophus ad omnia quare: 
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) actor ad Singula
+						dexterrimus: ad omnia Maturimus. Primo Prior:
+						postremo posterior: vnus instar omnium.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A man for all seasons: a philosopher therefore for all things;
+				a most capable actor for singular matters: most timely in all things.
+				Ahead in the beginning, last at the end; one worth all the rest.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						&agrave; pari.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				From similar propositions.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						s[upr]a /
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( His duobus,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						La Corte, la sorte.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Illis duobus millibus,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						La Corte, La morte.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				With these two: court and fate;
+				With those two thousand: court and death.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						argut&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.	
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						) Semper ad apices Eutrapelus, et ad puncta punctorum.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus is always at his best and at the point of points. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						The onlie surprising Witt, toung, hand,
+						foote, &amp; sowle of the World.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Quicquid dici, aut fieri oportet, id esto Summum bonum. 
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Whatever needs to be said or done, let it be for the highest good.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Aristotelis technis Oeconomicis. Gandinus nullo modo potest carere. 
+					</marginalia_text>
+					<person name="Aristotle"/>
+					<person name="Marcantonio Gandino"/>
+					<book title="Economics"/>
+				</position>
+			</language>
+			<translation>
+				With the techniques of Aristotle's Economics, Gandino could lack nothing at all.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Nec potest Juresconsulti Domenicus, carere Sylua Nuptiali. 
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<book title="Sylva nuptialis"/>
+				</position>
+			</language>
+			<translation>
+				Nor could Domenichi lack anything in law with the Sylva Nuptialis.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="punto perdersi"/>
+		<underline method="pen" type="straight" language="IT" text="subito soggiunse"/>
+		<underline method="pen" type="straight" language="IT" text="ma ne"/>
+		<underline method="pen" type="straight" language="IT" text="la uostra se u'and&ograve;"/>
+		<underline method="pen" type="straight" language="IT" text="parere essaudita"/>
+		<underline method="pen" type="straight" language="IT" text="huomo mordacissimo un"/>
+		<underline method="pen" type="straight" language="IT" text="sua maledica"/>
+		<underline method="pen" type="straight" language="IT" text="perche co[n]forta[n]dolo il Medico"/>
+		<underline method="pen" type="straight" language="IT" text="perche chi me l'ha fatto"/>
+		<underline method="pen" type="straight" language="IT" text="perche si conosca"/>
+		<underline method="pen" type="straight" language="IT" text="doue non me lo uedendo me"/>
+		<underline method="pen" type="straight" language="IT" text="farebbe un'altro"/>
+		<underline method="pen" type="straight" language="IT" text="recandosi l'inuito a supremo fauore"/>
+		<underline method="pen" type="straight" language="IT" text="gentildonna fusse innamorata"/>
+		<underline method="pen" type="straight" language="IT" text="non sapeua trattenerla con altro che dimandarle importunamente"/>
+		<underline method="pen" type="straight" language="IT" text="cagione, perche ella piu lui che altri hauesse"/>
+		<underline method="pen" type="straight" language="IT" text="per cagione d'amore"/>
+		<underline method="pen" type="straight" language="IT" text="fastidiata dalla lunga, &amp; fastidiosa"/>
+		<underline method="pen" type="straight" language="IT" text="del uano amante"/>
+		<underline method="pen" type="straight" language="IT" text="hauendomi imposto"/>
+		<underline method="pen" type="straight" language="IT" text="ch'io danzi sempre con persone da non dar gli sospetto"/>
+		<underline method="pen" type="straight" language="IT" text="fabricare un palazzo"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="essaudita"/>
+		<underline method="chalk" type="straight" language="IT" text="sapeua trattenerla con altro"/>
+		<underline method="chalk" type="straight" language="IT" text="sempre con persone da non dar gli sospetto"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="left_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- morda -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- co[n]for -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Cote -->
+		<mark name="plus_sign" method="pen" place="right_margin"/> <!-- me ne -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- supre -->
+		<mark name="quotation_mark" method="pen" place="right_margin"/> <!-- la ca -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- co -->
+		
+	    	<!-- Left margin -->
+	    <mark name="bracket" method="pen" place="left_margin"/> <!-- to ... mio -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- sto ... farebbe -->
+		<mark name="plus_sign" method="pen" place="left_margin" language="IT" text="non sapeua trattenerla con altro che dimandarle importunamente"/>
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- tildonna -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- cio ... gli -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="plus_sign" method="pen" place="head" language="IT" text="punto perdersi"/>
+	    <mark name="quotation_mark" method="pen" place="intext"/> <!-- essaudita -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- conosca -->
+		<mark name="equal_sign" method="pen" place="intext"/> <!-- farebbe un'altro -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- un'altro -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="d'amore"/>
+		<mark name="straight_quotation_mark" method="pen" place="intext" language="IT" text="uano"/>
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- sospetto -->
+
+    </annotation>
+</transcription>

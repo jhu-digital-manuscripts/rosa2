@@ -7,10 +7,14 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
+import rosa.archive.core.serialize.FileMapSerializer;
+import rosa.archive.model.FileMap;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.ReferenceTarget;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,6 +27,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class AORTranscriptionChecker {
@@ -62,6 +67,7 @@ public class AORTranscriptionChecker {
     }
 
     private final AORAnnotatedPageSerializer serializer;
+    private final FileMapSerializer fileMapSerializer;
 
     private Path peoplePath;
     private Path booksPath;
@@ -71,10 +77,13 @@ public class AORTranscriptionChecker {
     private List<MultiValue> booksList;
     private List<MultiValue> locationsList;
 
+    private FileMap gitArchiveMap;
+
     @Inject
-    public AORTranscriptionChecker(AORAnnotatedPageSerializer serializer)
+    public AORTranscriptionChecker(AORAnnotatedPageSerializer serializer, FileMapSerializer fileMapSerializer)
             throws IOException {
         this.serializer = serializer;
+        this.fileMapSerializer = fileMapSerializer;
     }
 
     /**
@@ -110,6 +119,12 @@ public class AORTranscriptionChecker {
      * MUST be a recognized "standard" name, which serves as an index in the
      * spreadsheet. This tool will check all references against the spreadsheets.
      *
+     * The marginalia can also contain references to other transcribed pages in the
+     * corpus. These "internal references" must follow certain rules in order to
+     * be useful. The targets of these references must cite a valid transcription
+     * file that ends with a '.xml' file extension and exists within the specified
+     * book. The book ID must match the name of a book directory.
+     *
      * @param path path to check
      * @param isBook is this path a book?
      * @param spreadsheetDirectory directory holding reference spreadsheets
@@ -126,6 +141,8 @@ public class AORTranscriptionChecker {
             booksPath = Paths.get(path).resolve("Books.xlsx");
             locationsPath = Paths.get(path).resolve("Locations.xlsx");
         }
+
+        gitArchiveMap = loadDirectoryMap();
 
         if (isBook) {
             doBook(path, report);
@@ -150,7 +167,7 @@ public class AORTranscriptionChecker {
         })) {
 
             for (Path p : ds) {
-                doBook(p.toString(), report);
+                doBook(p.toString(), path, report);
             }
 
         } catch (IOException e) {
@@ -160,13 +177,18 @@ public class AORTranscriptionChecker {
 
     }
 
+    private void doBook(String bookPath, PrintStream report) {
+        Path book = Paths.get(bookPath);
+        doBook(bookPath, book.getParent().toString(), report);
+    }
+
     /**
      * Run data consistency check on AoR transcriptions in this path.
      *
      * @param bookPath path of book
      * @param report PrintStream to record output
      */
-    private void doBook(String bookPath, PrintStream report) {
+    private void doBook(String bookPath, String collectionPath, PrintStream report) {
         report.println("Reading transcriptions for book. [" + bookPath + "]");
 
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(Paths.get(bookPath), new Filter<Path>() {
@@ -186,6 +208,7 @@ public class AORTranscriptionChecker {
                 try (InputStream xmlIn = Files.newInputStream(xmlPath)) {
 
                     AnnotatedPage aorPage = serializer.read(xmlIn, errors);
+                    aorPage.setId(transcriptionName);
 
                     if (!errors.isEmpty()) {
                         report.println("  Errors for transcription [" + transcriptionName + ":");
@@ -209,6 +232,8 @@ public class AORTranscriptionChecker {
                         }
 
                         checkAgainstSpreadsheets(aorPage, report);
+
+                        checkInternalRefs(aorPage, collectionPath, report);
                     }
 
                 } catch (IOException e) {
@@ -247,7 +272,11 @@ public class AORTranscriptionChecker {
 
                     String prefix = "Page [" + annotatedPage.getPage() + "]";
                     for (String book : pos.getBooks()) {
-                        checkString(book, booksList, prefix + " books - ", report);
+                        if (isEmpty(book)) {
+                            report.println("  [" + annotatedPage.getId() + "] Found invalid book: Empty title");
+                        } else {
+                            checkString(book, booksList, prefix + " books - ", report);
+                        }
                     }
 
                     for (String person : pos.getPeople()) {
@@ -354,6 +383,105 @@ public class AORTranscriptionChecker {
         }
 
         return list;
+    }
+
+    private void checkInternalRefs(AnnotatedPage aPage, String collection, PrintStream report) {
+        Path colPath = Paths.get(collection);
+
+        for (Marginalia marg : aPage.getMarginalia()) {
+            for (MarginaliaLanguage lang : marg.getLanguages()) {
+                for (Position pos : lang.getPositions()) {
+                    for (InternalReference ref : pos.getInternalRefs()) {
+                        for (ReferenceTarget target : ref.getTargets()) {
+                            String bookId = target.getBookId();
+                            String filename = target.getFilename();
+
+//                            System.out.println("  #### Internal reference target found: " + target.toString());
+
+                            // Check Book ID
+                            if (isEmpty(bookId)) {
+                                report.println("  [" + aPage.getId() + "]Internal reference book_id is blank. "
+                                        + target.toString());
+                                continue;
+                            }
+                            Path desiredPath = colPath.resolve(bookId);
+                            if (!Files.exists(desiredPath) || !Files.isDirectory(desiredPath)) {
+                                // If names don't exist, first apply the git-archive mapping and recheck
+                                desiredPath = colPath.resolve(tryFileMap(bookId));
+                                if (!Files.exists(desiredPath) || !Files.isDirectory(desiredPath)) {
+                                    report.println("  [" + aPage.getId() + "] Internal reference target " +
+                                            "book_id is invalid or does not exist (" + bookId + ")");
+                                    // Might as well continue, since the file cannot be searched for...
+                                    continue;
+                                }
+                                // TODO add warning here
+                            }
+
+                            // Check filename
+                            if (isEmpty(filename)) {
+                                report.println("  [" + aPage.getId() + "] Internal reference 'filename' is " +
+                                        "blank. " + target.toString());
+                                return;
+                            }
+                            if (!filename.endsWith(".xml")) {
+                                // Must be an XML target
+                                report.println("  [" + aPage.getId() + "] Internal reference filename is " +
+                                        "invalid: must target an XML transcription. (filename=\"" + filename + "\")");
+                            } else {
+                                Path desiredFile = desiredPath.resolve(filename);
+                                if (!Files.exists(desiredFile)) {
+                                    // File must exist...
+                                    report.println("  [" + aPage.getId() + "] Internal reference filename is " +
+                                            "invalid: file does not exist. (" + bookId + "/" + filename + ")");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * The data might have it that the BOOK_ID is actually the name of the book in
+     * our archive, as opposed to the name of the book in the AoR Git repo. Attempt
+     * to reconcile these names.
+     *
+     * @param toTransform String to transform using mapping
+     * @return transformed directory name
+     */
+    private String tryFileMap(String toTransform) {
+        if (gitArchiveMap == null) {
+            return null;
+        }
+
+        for (Entry<String, String> entry: gitArchiveMap.getMap().entrySet()) {
+            if (entry.getValue().equals(toTransform)) {
+                return entry.getKey();
+            }
+        }
+
+        return null;
+    }
+
+    private FileMap loadDirectoryMap() {
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("dir-map.csv")) {
+            List<String> errors = new ArrayList<>();
+
+            FileMap map = fileMapSerializer.read(in, errors);
+
+            if (!errors.isEmpty()) {
+                System.err.println("Error reading file map relating git directories and archive directories:");
+                for (String err : errors) {
+                    System.out.println("  " + err);
+                }
+            }
+
+            return map;
+        } catch (IOException e) {
+            System.err.println("Failed to load file map relating git directories and archive directories.");
+            return null;
+        }
     }
 
     private boolean isEmpty(String str) {

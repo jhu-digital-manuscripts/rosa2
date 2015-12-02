@@ -15,6 +15,7 @@ public class Position implements Serializable {
     List<String> locations;
     List<XRef> xRefs;
     List<Underline> emphasis;
+    List<InternalReference> internalRefs;
 
     public Position() {
         texts = new ArrayList<>();
@@ -23,6 +24,7 @@ public class Position implements Serializable {
         locations = new ArrayList<>();
         xRefs = new ArrayList<>();
         emphasis = new ArrayList<>();
+        internalRefs = new ArrayList<>();
     }
 
     public List<String> getTexts() {
@@ -89,6 +91,14 @@ public class Position implements Serializable {
         this.xRefs = xRefs;
     }
 
+    public List<InternalReference> getInternalRefs() {
+        return internalRefs;
+    }
+
+    public void setInternalRefs(List<InternalReference> internalRefs) {
+        this.internalRefs = internalRefs;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -97,15 +107,15 @@ public class Position implements Serializable {
         Position position = (Position) o;
 
         if (orientation != position.orientation) return false;
-        if (books != null ? !books.equals(position.books) : position.books != null) return false;
-        if (emphasis != null ? !emphasis.equals(position.emphasis) : position.emphasis != null) return false;
-        if (locations != null ? !locations.equals(position.locations) : position.locations != null) return false;
-        if (people != null ? !people.equals(position.people) : position.people != null) return false;
-        if (place != null ? !place.equals(position.place) : position.place != null) return false;
+        if (place != position.place) return false;
         if (texts != null ? !texts.equals(position.texts) : position.texts != null) return false;
+        if (people != null ? !people.equals(position.people) : position.people != null) return false;
+        if (books != null ? !books.equals(position.books) : position.books != null) return false;
+        if (locations != null ? !locations.equals(position.locations) : position.locations != null) return false;
         if (xRefs != null ? !xRefs.equals(position.xRefs) : position.xRefs != null) return false;
+        if (emphasis != null ? !emphasis.equals(position.emphasis) : position.emphasis != null) return false;
+        return !(internalRefs != null ? !internalRefs.equals(position.internalRefs) : position.internalRefs != null);
 
-        return true;
     }
 
     @Override
@@ -118,13 +128,14 @@ public class Position implements Serializable {
         result = 31 * result + (locations != null ? locations.hashCode() : 0);
         result = 31 * result + (xRefs != null ? xRefs.hashCode() : 0);
         result = 31 * result + (emphasis != null ? emphasis.hashCode() : 0);
+        result = 31 * result + (internalRefs != null ? internalRefs.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
         return "Position{" +
-                "place='" + place + '\'' +
+                "place=" + place +
                 ", orientation=" + orientation +
                 ", texts=" + texts +
                 ", people=" + people +
@@ -132,6 +143,7 @@ public class Position implements Serializable {
                 ", locations=" + locations +
                 ", xRefs=" + xRefs +
                 ", emphasis=" + emphasis +
+                ", internalRefs=" + internalRefs +
                 '}';
     }
 }

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.062v.tif" pagination="444" reader="Harvey"/>	<!-- ABO 67left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Dia[e]ta ingenij, et Exercitum agilitatis;
+						Panis quotidianus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A diet of ingenuity and exercise of agility are one's daily bread.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						argut&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						&AElig;therea[e] dieta[e] ingenium a[e]therum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The ethereal genius of an ethereal diet.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						apt&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Appropriately.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						Theurgorum subtilis, pura, illuminata,
+						et quasi angelica dia[e]ta.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The subtle, pure, illuminated, and almost angelic diet of theurgy.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Fons ingenij semper clarus, nitidusq[ue] conseruandus: quem bestia[e] solent tot sordidis
+						fumis obscurare. Sic Pythagoras, et Plato, duo rari, et diuini philosophi, suos omnes
+						docuerunt esse lautissim&egrave; abstinentes. Sic Apollonij Tyana[e]i, post magoru[m] secreta; 
+					</marginalia_text>
+					<person name="Pythagoras"/>
+					<person name="Plato"/>
+					<person name="Apollonius of Tyana"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="intext" book_orientation="90">
+					<marginalia_text>
+						singulare miraculu[m], Temperantia: virtutis radix, et ingenij fons.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The source of genius must always be kept clear and bright, which beasts usually obscure entirely with foul smoke.
+				Thus Pythagoras and Plato, two rare and divine philosophers, taught all of their students to be most finely self-restrained. 
+				Thus Apollonius of Tyana, after the secrets of the wise-men; Temperance is a singular miracle, 
+				the root of virtue, and the source of genius. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="right_margin" book_orientation="90">
+					<marginalia_text>
+						Epictetus owt of his owne judgment woold refine the Moralists: Vrso
+						<!-- Continues on facing page, left margin, Ha2.063r -->
+					</marginalia_text>
+					<person name="Epictetus"/>
+					<person name="Urso of Salerno"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="pane &amp; uino"/>
+		<underline method="pen" type="straight" language="IT" text="discreti"/>
+		<underline method="pen" type="straight" language="IT" text="uoglion passare traghetto"/>
+		<underline method="pen" type="straight" language="IT" text="gli altri"/>
+		<underline method="pen" type="straight" language="IT" text="Due auocati"/>
+		<underline method="pen" type="straight" language="IT" text="innanzi al giudice"/>
+		<underline method="pen" type="straight" language="IT" text="Catulo"/>
+		<underline method="pen" type="straight" language="IT" text="le sue ragioni per"/>
+		<underline method="pen" type="straight" language="IT" text="giustitia: &amp;"/>
+		<underline method="pen" type="straight" language="IT" text="pregiudicio"/>
+		<underline method="pen" type="straight" language="IT" text="Filippo di"/>
+		<underline method="pen" type="straight" language="IT" text="tacer Catulo"/>
+		<underline method="pen" type="straight" language="IT" text="scherzando sopra 'l nome"/>
+		<underline method="pen" type="straight" language="IT" text="dir cagniuolo"/>
+		<underline method="pen" type="straight" language="IT" text="atterrar le ragioni"/>
+		<underline method="pen" type="straight" language="IT" text="abbai"/>
+		<underline method="pen" type="straight" language="IT" text="l'acutezza del morso"/>
+		<underline method="pen" type="straight" language="IT" text="della metafora"/>
+		<underline method="pen" type="straight" language="IT" text="ueggo"/>
+		<underline method="pen" type="straight" language="IT" text="ladro"/>
+		<underline method="pen" type="straight" language="IT" text="Ragionauasi in"/>
+		<underline method="pen" type="straight" language="IT" text="d'un Dottore"/>
+		<underline method="pen" type="straight" language="IT" text="dar moglie"/>
+		<underline method="pen" type="straight" language="IT" text="restasse herede"/>
+		<underline method="pen" type="straight" language="IT" text="gentilmente"/>
+		<underline method="pen" type="straight" language="IT" text="parola ambigua"/>
+		<underline method="pen" type="straight" language="IT" text="questo eccellente"/>
+		<underline method="pen" type="straight" language="IT" text="per moglie alcuna"/>
+		<underline method="pen" type="straight" language="IT" text="Trappolina"/>
+		<underline method="pen" type="straight" language="IT" text="tutte le cose del"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="Trappolina: la quale"/>
+		
+		<!-- Symbols -->
+		<symbol name="JC" place="intext"/>
+		<symbol name="JC" place="intext"/>
+		
+		<!-- Marks -->			
+	    	<!-- Left margin -->
+	    <mark name="equal_sign" method="pen" place="left_margin"/> <!-- discreti -->
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- ladro. -->
+		<mark name="quotation_mark" method="pen" place="left_margin"/> <!-- Trappolina: -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- compagni. -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: giustitia -->
+		<mark name="vertical_bar" method="chalk" place="intext"/> <!-- chalk mark: Cane? -->
+		<mark name="semicolon" method="pen" place="intext"/> <!-- Catulo & -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="d'un Dottore"/>
+	    <mark name="dot" method="pen" place="intext"/> <!-- moglie, accioche -->
+		<mark name="dot" method="pen" place="intext"/> <!-- herede, non -->
+		<mark name="dot" method="pen" place="intext"/> <!-- conuenirsegli, Monsignor -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="questo eccellente"/>
+
+    </annotation>
+</transcription>

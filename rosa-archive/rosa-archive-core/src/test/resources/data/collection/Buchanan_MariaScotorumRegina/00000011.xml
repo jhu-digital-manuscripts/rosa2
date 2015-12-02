@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+    
+    <page filename="00000011.tif" reader="Harvey" pagination="Title Page"/>
+    <annotation>
+        
+        <marginalia hand="Italian" date="1571">
+            <language ident="LA">
+                <position place="head" book_orientation="0">
+                    <marginalia_text>
+                        Gabrielis Harveij.
+                        1571.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                    <emphasis method="pen" type="straight" text="1571"/>
+                </position>
+            </language>
+            <translation>Gabriel Harvey</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>
+                        GH.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position place="intext" book_orientation="0">
+                    <marginalia_text>
+                        Confer the Queene Moothers Legendary in French.
+                    </marginalia_text>
+                    <person name="Mary of Guise"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position place="tail" book_orientation="0">
+                    <marginalia_text>
+                        Georgij Buchanani Inuectiva.
+                    </marginalia_text>
+                    <person name="George Buchanan"/>
+                </position>
+            </language>
+            <translation> George Buchanan's attacks. </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="unknown">
+            <language ident="EN">
+                <position place="tail" book_orientation="0">
+                    <marginalia_text>
+                        H.3.17.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        
+    </annotation>
+</transcription>

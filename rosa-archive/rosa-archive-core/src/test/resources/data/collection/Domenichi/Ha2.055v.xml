@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.055v.tif" pagination="430" reader="Harvey"/>	<!-- ABO 60left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						Ha[e] nuga[e]
+					</marginalia_text>
+					<emphasis method="pen" type="straight" text="Ha[e] nuga[e]"/>
+				</position>
+				<position place="left_margin" book_orientation="0">
+					<marginalia_text>
+						Seria ducent.
+					</marginalia_text>
+					<emphasis method="pen" type="straight" text="Seria"/>
+				</position>
+			</language>
+			<translation>
+				These serious trifles shall lead you.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian" anchor_text="Paolo dell'Ottonaio">
+			<language ident="EN">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Canon Ottonaio, one of his mirrours,
+					</marginalia_text>
+					<person name="Paolo dell'Ottonaio"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						s[upr]a.
+					</marginalia_text>
+					<internal_ref text="s[upr]a">
+						<target filename="Ha2.030v.xml" book_id="FolgersHa2" text="[380]"/>
+						<target filename="Ha2.031r.xml" book_id="FolgersHa2" text="[381]"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Domenicus, et Gandinus; Gandinus, et Domenicus, sa[e]p&egrave;, sa[e]pi&ugrave;s, sa[e]pissim&egrave;.:
+						nunc coniuntu, nunc diuisim: mod&ograve; toti, mod&ograve; singulares partes.
+						Illis proximi, Manlij Loci communes; et Apologia Herodoti. Quatuor
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<person name="Marcantonio Gandino"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<book title="Loci communes"/>
+					<book title="Apologie pour Hérodote"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="tail" book_orientation="90">
+					<marginalia_text>
+						Eutrapeli
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Spiritus Familiares.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Domenichi and Gandino, Gandino and Domenichi: often, more frequently, most frequently,
+				now together, now separately; now as a whole, now in their singular parts.
+				Closest to these: Manlius' Common Places, and the Apology for Herodotus.
+				The four familiar spirits for Eutrapelus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="tail" book_orientation="90">
+					<marginalia_text>
+						Alij quatuor, Philologia pictorij; et Mensa Philosophia. 
+						Guatij, pra[e]sertim quartus: et Aula Ciuilis Elocutionis.
+					</marginalia_text>
+					<person name="Stefano Guazzo"/>
+					<book title="Mensa philosophica"/>
+					<book title="The civil conversation"/>
+				</position>
+			</language>
+			<translation>
+				Four other things: the Philogia Pictorii and the Mensa philosophia. <!-- CG: Can't figure out the Philologia Pictorij. Specialist help required. -->
+				Guazzo's work, especially the fourth book: and the Aula Civilis Elocutionis. <!-- CG: Also not sure of what the Aula Civilis Elocutionis is. The Book of the Courtier? -->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						Horum Elementorum Quinta Essentia et delicia[e] humani ingenij, Eunapius; id est,						
+					</marginalia_text>
+					<person name="Eunapius"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position place="intext" book_orientation="270">
+					<marginalia_text>
+						Proa[e]resius, Proa[e]resius, Proa[e]resius. Cum Juliani Caeserib[us] et Misopogone. 
+					</marginalia_text>
+					<person name="Proaeresius"/>
+					<person name="Julian"/>
+					<book title="Misopogon"/>
+					<book title="Caesars"/>
+				</position>
+			</language>
+			<translation>
+				Eunapius is the quintessence of these elements and the delight of human ingenuity; that is,
+				Proaeresius, Proaeresius, Proaeresius. With Julian's Caesars and his Misopogon.  
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="il R. Don"/>
+		<underline method="pen" type="straight" language="IT" text="contrario all'Ippocresia"/>
+		<underline method="pen" type="straight" language="IT" text="specchio di bont&agrave;"/>
+		<underline method="pen" type="straight" language="IT" text="&amp; discretione"/>
+		<underline method="pen" type="straight" language="IT" text="Il Capitan"/>
+		<underline method="pen" type="straight" language="IT" text="Paolo dell'Ottonaio"/>
+		<underline method="pen" type="straight" language="IT" text="piaceuolissimi"/>
+		<underline method="pen" type="straight" language="IT" text="un buon"/>
+		<underline method="pen" type="straight" language="IT" text="boccone dinanzi"/>
+		<underline method="pen" type="straight" language="IT" text="occasione di ragionare"/>
+		<underline method="pen" type="straight" language="IT" text="questo boccone m'affoghi"/>
+		<underline method="pen" type="straight" language="IT" text="cosi se lo mangiaua"/>
+		<underline method="pen" type="straight" language="IT" text="uolta fatto cosi"/>
+		<underline method="pen" type="straight" language="IT" text="piacendo a M. Paolo piu quella burla"/>
+		<underline method="pen" type="straight" language="IT" text="tirato a se il piatto"/>
+		<underline method="pen" type="straight" language="IT" text="non giurate"/>
+		<underline method="pen" type="straight" language="IT" text="che io ui credo"/>
+		<underline method="pen" type="straight" language="IT" text="prima archibusata che si tira ui possa"/>
+		<underline method="pen" type="straight" language="IT" text="giuro piu da soldato"/>
+		<underline method="pen" type="straight" language="IT" text="conuento di Frati"/>
+		<underline method="pen" type="straight" language="IT" text="l'Abbate"/>
+		<underline method="pen" type="straight" language="IT" text="il Camarlingo"/>
+		<underline method="pen" type="straight" language="IT" text="un Monaco burleuole in"/>
+		<underline method="pen" type="straight" language="IT" text="Nouitio che"/>
+		<underline method="pen" type="straight" language="IT" text="fatemi questo Latino"/>
+		<underline method="pen" type="straight" language="IT" text="che non istaua bene"/>
+		<underline method="pen" type="straight" language="IT" text="elegantemente fatto"/>
+		<underline method="pen" type="straight" language="IT" text="ch'egli stia bene"/>
+		<underline method="pen" type="straight" language="LA" text="Ait Latro ad Latronem"/>
+		<underline method="pen" type="straight" language="IT" text="Vn sospettoso"/>
+		
+		<underline method="chalk" type="straight" language="IT" text="obbietto contrario all'Ippocresia, &amp; specchio di bont&agrave;"/>
+		<underline method="chalk" type="straight" language="IT" text="Capitano che io ui credo, &amp; se pur"/>
+		<underline method="chalk" type="straight" language="IT" text="la prima achibusta che si tira"/>
+		<underline method="chalk" type="straight" language="LA" text="Ait Latro ad Latronem"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="intext"/>
+		<symbol name="SS" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- boc -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- ragiona -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- giura -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- Mona -->
+		
+	    	<!-- Head/Intext/Tail -->
+		<mark name="comma" method="pen" place="intext"/> <!-- Fiorenza, ob- -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- specchio -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="&amp; discretione"/>
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="piaceuolissimi"/>
+	    <mark name="dot" method="pen" place="intext"/> <!-- piaceuolissimi, & -->
+		<mark name="dot" method="pen" place="intext"/> <!-- diceua, uedete -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="questo"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- disse, non -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="non giurate"/>
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="che io ui credo"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- credo, & -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- prima archibusata -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="l'Abbate"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- dire, rispose -->
+		<mark name="plus_sign" method="pen" place="intext" language="LA" text="Latro"/>
+		<mark name="comma" method="pen" place="intext"/> <!-- Barlacchia, disse -->
+
+    </annotation>
+</transcription>

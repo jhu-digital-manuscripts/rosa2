@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141118.xsd">
+	
+	<page filename="Ha2.054r.tif" pagination="427" reader="Harvey"/>	<!-- ABO 58right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="head" book_orientation="0">
+					<marginalia_text>
+						{ Questa, e quella Mattina.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				This and that morning.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						dextr&egrave;, et argut&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully and cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						( Tutto vn, come Sole. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All one, as the sun.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Familiares Spiritus ad unguem, Domine fac totum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Familiar spirits by heart; O Lord, make it complete. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						sals&egrave;.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Wittily.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Homo varia[e] lectionis; homo nullius Elocutionis, et Memoria[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The man of varied reading; the man of no speech or memory. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Economico.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Economical.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position place="intext" book_orientation="0">
+					<marginalia_text>
+						Infinite platformes, mirrours, mines, fountains, in a Little.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position place="tail" book_orientation="0">
+					<marginalia_text>
+						{ Questa, e quella sera
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				This and that evening.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="right_margin" book_orientation="270">
+					<marginalia_text>
+						{ Questa mattina &ograve; Domenichi, &ograve; Gandino: Quella Mattina, &ograve; Gandino, &ograve; Domenichi.
+						{ Questa sera &ograve; Enchiridio di apothegmi, e prouerbi; &ograve; Loci communi di Manlio.
+						Quella sera &ograve; Loci communi di Manlio; &ograve; Enchiridio d'apothegmi, e prouerbi.
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<person name="Marcantonio Gandino"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<book title="Enchiridion of Epictetus"/>
+					<book title="Loci communes"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				This morning either Domenichi or Gandino; the next morning, either Gandino or Domenichi.
+				This evening either the Enchiridion of aphorisms and proverbs, or the common places of Manlius.
+				The next evening either the common places of Manlius or the Enchiridion of aphorisms and proverbs.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian" marginalia_id="Ha2.054r_0001" marginalia_continues_from="Ha2.053v_0001" marginalia_from_transcription="Ha2.053v.xml" book_id="FolgersHa2">
+			<language ident="EN">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						<!-- Continued from facing page, right margin, Ha2.053v -->
+						&amp; coniurer of the World. The onlie surpriser of men, &amp; things.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position place="left_margin" book_orientation="90">
+					<marginalia_text>
+						Ars, et Virtus hyperbolica. diuina Magia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Art and excessive virtue. Divine magic.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline method="pen" type="straight" language="IT" text="huomo dozzinale, &amp; uile"/>
+		<underline method="pen" type="straight" language="IT" text="ouero un castrone"/>
+		<underline method="pen" type="straight" language="IT" text="lo fece tacere"/>
+		<underline method="pen" type="straight" language="IT" text="infinite risa"/>
+		<underline method="pen" type="straight" language="IT" text="Giouane nella pittura di grande speranza"/>
+		<underline method="pen" type="straight" language="IT" text="altro Pittore"/>
+		<underline method="pen" type="straight" language="IT" text="solito a imbriacarsi uolentieri"/>
+		<underline method="pen" type="straight" language="IT" text="dipignere era cruda"/>
+		<underline method="pen" type="straight" language="IT" text="percioche tu sei auezzo"/>
+		<underline method="pen" type="straight" language="IT" text="a cuocere la tua nel uino"/>
+		<underline method="pen" type="straight" language="IT" text="uno auaro con"/>
+		<underline method="pen" type="straight" language="IT" text="uendesse"/>
+		<underline method="pen" type="straight" language="IT" text="le sue scarpe uecchie"/>
+		<underline method="pen" type="straight" language="IT" text="piaceuolmente rispose"/>
+		<underline method="pen" type="straight" language="IT" text="mente per la gola chiunque"/>
+		<underline method="pen" type="straight" language="IT" text="che uoi le comperate"/>
+		<underline method="pen" type="straight" language="IT" text="che uoi le uendete"/>
+		<underline method="pen" type="straight" language="IT" text="co[n] sicurt&agrave; in cucina"/>
+		<underline method="pen" type="straight" language="IT" text="serua faceua cert'uoua"/>
+		<underline method="pen" type="straight" language="IT" text="maritate"/>
+		<underline method="pen" type="straight" language="IT" text="haueua maritato una sua figliuola"/>
+		<underline method="pen" type="straight" language="IT" text="di motteggiarla"/>
+		<underline method="pen" type="straight" language="IT" text="Mona Fabiana"/>
+		<underline method="pen" type="straight" language="IT" text="maritar l'uoua, che le figliuole"/>
+		<underline method="pen" type="straight" language="IT" text="ond'ella riuoltateseli"/>
+
+		<underline method="chalk" type="straight" language="IT" text="cuocere la tua nel uino"/>
+
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- gen  -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- uen -->
+		<mark name="bracket" method="pen" place="right_margin"/> <!-- chiun ... comperate -->
+		<mark name="dash" method="pen" place="right_margin"/> <!-- entratose -->
+		
+	    	<!-- Left margin -->
+	    <mark name="plus_sign" method="pen" place="left_margin"/> <!-- sta risposta -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- e ... uezzo -->
+		<mark name="quotation_mark" method="pen" place="left_margin" language="IT" text="le sue scarpe uecchie"/> 
+		<mark name="plus_sign" method="pen" place="left_margin"/> <!-- la serua -->
+		<mark name="bracket" method="pen" place="left_margin"/> <!-- biana ... maritar -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark name="quotation_mark" method="pen" place="head"/> <!-- huomo dozzinale -->
+		<mark name="comma" method="pen" place="intext"/> <!-- uile si -->
+		<mark name="dot" method="pen" place="intext"/> <!-- castrone, delle -->
+		<mark name="dot" method="pen" place="intext"/> <!-- pelliccia, & -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="infinite risa"/>
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- scuno. -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- nella pit -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- imbriacarsi -->
+		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- era cruda -->
+	    <mark name="dot" method="pen" place="intext"/> <!-- cruda, rispose -->
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- nel uino -->
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="a cuocere la tua nel uino"/>
+		<mark name="plus_sign" method="pen" place="intext"/> <!-- uen -->
+		<mark name="quotation_mark" method="pen" place="intext"/> <!-- piaceuolmente -->
+		<mark name="dot" method="pen" place="intext"/> <!-- rispose, e' -->
+		<mark name="plus_sign" method="pen" place="intext" language="IT" text="uoi le uendete"/>
+		<mark name="quotation_mark" method="pen" place="intext" language="IT" text="uoi le uendete"/>
+		<mark name="dot" method="pen" place="intext"/> <!-- gliare, & -->
+		<mark name="straight_quotation_mark" method="pen" place="intext"/> <!-- motteggiarla -->
+		<mark name="dot" method="pen" place="intext"/> <!-- figliuole, ond'ella -->
+
+    </annotation>
+</transcription>
