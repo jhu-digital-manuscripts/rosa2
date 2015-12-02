@@ -68,8 +68,8 @@ public class FSIService implements IIIFService {
         profile.setQualities(Quality.COLOR, Quality.GRAY);
         
         this.tile_info = new TileInfo();
-        tile_info.setWidth(max_image_size);
-        tile_info.setHeight(max_image_size);
+        tile_info.setWidth(256);
+        tile_info.setHeight(256);
         
         // TODO What should this be set to?
         tile_info.setScaleFactors(4);
