@@ -71,8 +71,8 @@ public class FSIService implements IIIFService {
         tile_info.setWidth(256);
         tile_info.setHeight(256);
         
-        // TODO What should this be set to?
-        tile_info.setScaleFactors(4);
+        // TODO: Determine these somehow
+        tile_info.setScaleFactors(1, 2, 4);
     }
 
     public String performURL(ImageRequest req) throws IIIFException {
