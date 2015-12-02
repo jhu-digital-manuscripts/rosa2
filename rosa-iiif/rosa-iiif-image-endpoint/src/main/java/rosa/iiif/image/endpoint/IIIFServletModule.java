@@ -57,6 +57,6 @@ public class IIIFServletModule extends ServletModule {
 
     @Provides
     protected IIIFService provideImageService(@Named("fsi.url") String fsi_url) {
-        return new FSIService(fsi_url, 1000, 1000);
+        return new FSIService(fsi_url, -1, 1000);
     }
 }
