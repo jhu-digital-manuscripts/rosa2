@@ -57,11 +57,13 @@ import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Errata;
+import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.redtag.Item;
@@ -302,7 +304,7 @@ public class LuceneMapper {
                         transcriptionMap != null ? transcriptionMap.get(getStandardPage(image)) : null);
 
                 // Index AoR transcriptions
-                index(doc, col, book, image, book.getAnnotationPage(getStandardPage(image)));
+                index(doc, col, book, image, book.getAnnotationPage(image.getId()));
 
                 result.add(doc);
             }
@@ -586,10 +588,13 @@ public class LuceneMapper {
      * <li>marginalia references to books, both internal to corpus and external</li>
      * <li>marginalia references to people</li>
      * <li>marginalia references to locations</li>
+     * <li>marginalia internal references (references within this corpus)</li>
      * <li>errata</li>
      * <li>drawing</li>
      * <li>numerals</li>
      * </ul>
+     *
+     * TODO handle different languages better?
      *
      * @param doc Lucene document
      * @param col BookCollection obj
@@ -598,6 +603,9 @@ public class LuceneMapper {
      * @param annotatedPage transcriptions of AoR annotations on this page
      */
     private void index(Document doc, BookCollection col, Book book, BookImage image, AnnotatedPage annotatedPage) {
+        if (annotatedPage == null) {
+            return;
+        }
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image.getId()));
         add_field(doc, SearchFields.COLLECTION_ID, col.getId());
         add_field(doc, SearchFields.BOOK_ID, book.getId());
@@ -663,6 +671,7 @@ public class LuceneMapper {
         StringBuilder books = new StringBuilder();
         StringBuilder people = new StringBuilder();
         StringBuilder locations = new StringBuilder();
+        StringBuilder internalRefs = new StringBuilder();
         for (Marginalia m : annotatedPage.getMarginalia()) {
             translation.append(m.getTranslation());
             translation.append(' ');
@@ -678,6 +687,15 @@ public class LuceneMapper {
                         underlines.append(u.getReferringText());
                         underlines.append(' ');
                     }
+
+                    for (InternalReference internalRef : pos.getInternalRefs()) {
+                        for (ReferenceTarget target : internalRef.getTargets()) {
+                            internalRefs.append(target.getBookId());
+                            internalRefs.append(' ');
+                            internalRefs.append(target.getFilename());
+                            internalRefs.append(' ');
+                        }
+                    }
                 }
             }
         }
@@ -688,6 +706,7 @@ public class LuceneMapper {
         add_field(doc, SearchFields.AOR_MARGINALIA_BOOKS, books.toString());
         add_field(doc, SearchFields.AOR_MARGINALIA_PEOPLE, people.toString());
         add_field(doc, SearchFields.AOR_MARGINALIA_LOCATIONS, locations.toString());
+        add_field(doc, SearchFields.AOR_MARGINALIA_INTERNAL_REFS, internalRefs.toString());
     }
 
     private String listToString(List<String> list) {
