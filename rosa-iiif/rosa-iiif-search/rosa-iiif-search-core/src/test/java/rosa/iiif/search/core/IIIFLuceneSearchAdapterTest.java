@@ -24,8 +24,8 @@ public class IIIFLuceneSearchAdapterTest {
         IIIFSearchRequest request = new IIIFSearchRequest("");
         Query result = adapter.iiifToLuceneQuery(request);
 
-        assertNotNull(result);
-        System.out.println(result.toString());
+        assertNotNull("Resulting Query obj was NULL.", result);
+        assertEquals("Unexpected Query found.", new Query(QueryOperation.AND), result);
     }
 
     @Test

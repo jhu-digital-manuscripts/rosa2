@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.search.model.Query;
+import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
@@ -69,5 +70,17 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
         assertNotNull("Search result was NULL.", result);
         assertEquals("Unexpected number of results found.", 1, result.getTotal());
         assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().endsWith("FolgersHa2.036v.tif"));
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testBlankQuery() throws Exception {
+        service.search(new Query(), null);
+    }
+
+    @Test
+    public void testNoSearchTermQuery() throws Exception {
+        SearchResult result = service.search(new Query(QueryOperation.AND), null);
+        assertNotNull("Result was NULL.", result);
+        assertEquals("Unexpected number of results found.", 0, result.getTotal());
     }
 }
