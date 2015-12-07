@@ -21,11 +21,9 @@ public enum SearchFields implements SearchField {
     NARRATIVE_SECTION_DESCRIPTION(SearchFieldType.ENGLISH),
 
     // AOR related search fields TODO handle other languages better
-    AOR_ALL(SearchFieldType.ENGLISH),  // other langs
     AOR_READER(SearchFieldType.STRING),
     AOR_PAGINATION(SearchFieldType.STRING),
     AOR_SIGNATURE(SearchFieldType.STRING),
-    AOR_MARGINALIA_ALL(SearchFieldType.ENGLISH),  // other langs
     AOR_MARGINALIA_BOOKS(SearchFieldType.ENGLISH),
     AOR_MARGINALIA_PEOPLE(SearchFieldType.ENGLISH),
     AOR_MARGINALIA_LOCATIONS(SearchFieldType.ENGLISH),

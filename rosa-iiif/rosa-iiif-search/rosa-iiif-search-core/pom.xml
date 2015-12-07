@@ -9,20 +9,23 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>search-model</artifactId>
+    <artifactId>rosa-iiif-search-core</artifactId>
 
     <dependencies>
 
-        <!-- Testing dependencies -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-iiif-search-model</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>nl.jqno.equalsverifier</groupId>
-            <artifactId>equalsverifier</artifactId>
-            <scope>test</scope>
+            <groupId>rosa.search</groupId>
+            <artifactId>rosa-search-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa.search</groupId>
+            <artifactId>rosa-search-core</artifactId>
         </dependency>
 
     </dependencies>

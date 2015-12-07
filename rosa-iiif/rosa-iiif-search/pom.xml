@@ -14,9 +14,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>search-model</module>
-        <module>search-core</module>
-        <module>search-endpoint</module>
+        <module>rosa-iiif-search-model</module>
+        <module>rosa-iiif-search-core</module>
+        <module>rosa-iiif-search-endpoint</module>
     </modules>
 
 </project>
