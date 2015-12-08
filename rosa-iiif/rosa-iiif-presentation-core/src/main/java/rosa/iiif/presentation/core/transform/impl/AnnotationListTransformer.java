@@ -324,43 +324,31 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
      * split into potentially several locations. Currently, each piece is treated
      * as a new and separate IIIF annotation. TODO these pieces must be linked somehow
      *
+     * Marginalia ID structure:
+     *
+     *
      * @param marg AoR marginalia
      * @param image the canvas
      * @return list of annotations
      */
     private List<Annotation> adaptMarginalia(BookCollection collection, String book, Marginalia marg, BookImage image) {
         List<Annotation> annotations = new ArrayList<>();
-        int lang_count = 0;
 
-//        String lang = marg.getLanguages() != null && marg.getLanguages().size() > 0
-//                ? marg.getLanguages().get(0).getLang() : "en";
+        String lang = marg.getLanguages() != null && marg.getLanguages().size() > 0
+                ? marg.getLanguages().get(0).getLang() : "en";
 
-        for (MarginaliaLanguage lang : marg.getLanguages()) {
-            int pos_count = 0;
+        Annotation anno = new Annotation();
 
-            for (Position pos : lang.getPositions()) {
-                Annotation anno = new Annotation();
-//                String label = image.getName() + "_" + annotation_counter++;
+        String actual_id = marg.getId() == null || marg.getId().isEmpty() ?
+                image.getName() + "_" + annotation_counter++ : marg.getId();
 
-                String transcription_id = marg.getId() + "_" + lang_count + "_" + pos_count;
-                String actual_id = marg.getId() == null || marg.getId().isEmpty() ?
-                        image.getName() + "_" + annotation_counter++ : transcription_id;
+        anno.setId(urlId(collection.getId(), book, actual_id, PresentationRequestType.ANNOTATION)); // TODO name
+        anno.setMotivation(IIIFNames.SC_PAINTING);
+        anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
+                marginaliaToDisplayHtml(marg), lang));
+        anno.setDefaultTarget(locationOnCanvas(image, Location.FULL_PAGE)); // TODO actual position(s)
 
-                String transcription_text = pos.getTexts().toString().replaceAll("\\s+", " ");
-
-                anno.setId(urlId(collection.getId(), book, actual_id, PresentationRequestType.ANNOTATION)); // TODO name
-                
-//                anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
-                anno.setMotivation(IIIFNames.SC_PAINTING);
-                anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
-                        marginaliaToDisplayHtml(marg), lang.getLang()));
-                anno.setDefaultTarget(locationOnCanvas(image, Location.FULL_PAGE)); // TODO actual position(s)
-
-                annotations.add(anno);
-                pos_count++;
-            }
-            lang_count++;
-        }
+        annotations.add(anno);
 
         return annotations;
     }
@@ -382,8 +370,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
                 locs.addAll(pos.getLocations());
 
                 /*
-                    TODO emphasis: perhaps find the emphasized text in transcription
-                    and underline it?
+                    TODO emphasis: perhaps find the emphasized text in transcription and underline it?
                  */
 //                for (Underline u : pos.getEmphasis()) {
 //                    emphasis.add(u.getReferringText());

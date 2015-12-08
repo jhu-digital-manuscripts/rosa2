@@ -311,6 +311,20 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         return page;
     }
 
+    /**
+     * As annotations are read, IDs are assigned to them depending on annotation
+     * type and ordering within the transcription XML.
+     *
+     * For all annotation types, the ID will be structures as:
+     *      page-id_annotation-type_annotation-number(s)
+     *
+     * TODO Annotation ID structure should be defined externally
+     * Example:
+     *      FolgersHa2.024r.tif_underline_3
+     *
+     * @param annotationEl annotation XML element
+     * @param page result AnnotatedPage
+     */
     private void readAnnotations(Element annotationEl, AnnotatedPage page) {
 
         NodeList children = annotationEl.getChildNodes();
