@@ -1,10 +1,12 @@
 package rosa.iiif.search.core;
 
 import rosa.iiif.search.model.IIIFSearchRequest;
+import rosa.iiif.search.model.IIIFSearchResult;
 import rosa.iiif.search.model.SearchCategory;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchFields;
+import rosa.search.model.SearchResult;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +72,43 @@ public class IIIFLuceneSearchAdapter {
 
 
         return new Query(QueryOperation.AND, top_query.toArray(new Query[top_query.size()]));
+    }
+
+    /**
+     * Transform a Lucene search result into a IIIF search result. The Lucene
+     * search result is structured contains the offset, total # results, and
+     * an array of SearchMatches
+     *
+     * Lucene result match will contain an ID of the format:
+     *      collection_name;book_name;page_id
+     *
+     * This is enough information to build the URI of the appropriate IIIF
+     * Presentation canvas on which the annotation sits. Building the URI
+     * of the annotation will be another matter....
+     * // TODO need to be able to re-build the full annotation
+     *
+     * The context gives a small snippet of text surrounding the search hit.
+     *
+     * ----- NOTE ------------------------------------------------------------
+     * In its current state, the search match does not give enough information
+     * to build the IIIF results annotation list.
+     *
+     * The easiest thing to do would be to include the annotation ID in the
+     * search match ID. From there, it would be simple to find the ID in the
+     * archive model and pull out that annotation.
+     *      This would involve merging branch: annotation-ids
+     *
+     *
+     *
+     * @param result lucene result
+     * @return IIIF compatible result
+     *
+     * @see SearchResult
+     * @see rosa.search.model.SearchMatch
+     */
+    public IIIFSearchResult luceneResultToIIIF(SearchResult result) {
+
+        return null;
     }
 
 
