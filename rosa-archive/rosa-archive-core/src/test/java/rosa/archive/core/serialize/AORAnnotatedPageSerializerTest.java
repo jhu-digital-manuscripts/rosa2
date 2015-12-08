@@ -7,25 +7,18 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import org.w3c.dom.Document;
-import org.xml.sax.SAXException;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
 /**
  *
@@ -84,26 +77,27 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals("acommodato", e.getAmendedText());
 
         // <mark name="plus_sign" method="pen" place="intext" language="IT" text="Arguto"/>
-        Mark m1 = new Mark("Arguto", "plus_sign", "pen", "IT", Location.INTEXT);
+        Mark m1 = new Mark("FolgersHa2.036r.tif_mark_36", "Arguto", "plus_sign", "pen", "IT", Location.INTEXT);
         // <mark name="dash" method="pen" place="right_margin"/>
-        Mark m2 = new Mark("", "dash", "pen", "", Location.RIGHT_MARGIN);
+        Mark m2 = new Mark("FolgersHa2.036r.tif_mark_2", "", "dash", "pen", "", Location.RIGHT_MARGIN);
         // fake mark
-        Mark m3 = new Mark("fake text", "moo", "method", "lang", null);
+        Mark m3 = new Mark("id", "fake text", "moo", "method", "lang", null);
+
         assertTrue(page.getMarks().contains(m1));
         assertTrue(page.getMarks().contains(m2));
         assertFalse(page.getMarks().contains(m3));
 
         // <symbol name="Sun" place="left_margin"/>
-        Symbol s1 = new Symbol("", "Sun", "", Location.LEFT_MARGIN);
+        Symbol s1 = new Symbol("FolgersHa2.036r.tif_symbol_1", "", "Sun", "", Location.LEFT_MARGIN);
         // not present in document
-        Symbol s2 = new Symbol("fake text", "moo method", "lang", null);
+        Symbol s2 = new Symbol("id", "fake text", "moo method", "lang", null);
         assertTrue(page.getSymbols().contains(s1));
         assertFalse(page.getSymbols().contains(s2));
 
         // <underline method="pen" type="straight" language="IT" text="Arguto, &amp;"/>
-        Underline u1 = new Underline("Arguto, &", "pen", "straight", "IT");
+        Underline u1 = new Underline("FolgersHa2.036r.tif_underline_26", "Arguto, &", "pen", "straight", "IT");
         // fake underline
-        Underline u2 = new Underline("fake text", "moomethod", "asdf", "lang");
+        Underline u2 = new Underline("id", "fake text", "moomethod", "asdf", "lang");
         assertTrue(page.getUnderlines().contains(u1));
         assertFalse(page.getUnderlines().contains(u2));
     }
@@ -154,19 +148,19 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals(0, numerals);
     }
 
-    private Document getDocument(String path) throws IOException {
-        try {
-            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-            InputStream in = getResourceAsStream(path);
-
-            Document doc = builder.parse(in);
-            in.close();
-
-            doc.normalizeDocument();
-            return doc;
-        } catch (ParserConfigurationException | SAXException e) {
-            throw new IOException("Failed to load XML.", e);
-        }
-    }
+//    private Document getDocument(String path) throws IOException {
+//        try {
+//            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+//            InputStream in = getResourceAsStream(path);
+//
+//            Document doc = builder.parse(in);
+//            in.close();
+//
+//            doc.normalizeDocument();
+//            return doc;
+//        } catch (ParserConfigurationException | SAXException e) {
+//            throw new IOException("Failed to load XML.", e);
+//        }
+//    }
 
 }

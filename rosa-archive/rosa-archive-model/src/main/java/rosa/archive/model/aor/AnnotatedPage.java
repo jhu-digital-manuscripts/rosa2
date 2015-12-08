@@ -4,7 +4,9 @@ import rosa.archive.model.HasId;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 /**
  *
@@ -43,6 +45,57 @@ public class AnnotatedPage implements HasId, Serializable {
     @Override
     public void setId(String id) {
         this.id = id;
+    }
+
+    public Annotation getAnnotation(String id) {
+        List<Class<? extends Annotation>> types =
+                Arrays.asList(Marginalia.class, Mark.class, Symbol.class, Underline.class,
+                        Numeral.class, Drawing.class, Errata.class);
+
+        for (Class c : types) {
+            Annotation a = getAnnotation(id, c);
+            if (a != null) {
+                return a;
+            }
+        }
+
+        return null;
+    }
+
+    @SuppressWarnings("unchecked")
+    public <T extends Annotation> T getAnnotation(String id, Class<T> type) {
+        Annotation ann = null;
+        if (type.equals(Marginalia.class)) {
+            ann = getAnnotation(id, getMarginalia());
+        } else if (type.equals(Mark.class)) {
+            ann = getAnnotation(id, getMarks());
+        } else if (type.equals(Symbol.class)) {
+            ann = getAnnotation(id, getSymbols());
+        } else if (type.equals(Underline.class)) {
+            ann = getAnnotation(id, getUnderlines());
+        } else if (type.equals(Numeral.class)) {
+            ann = getAnnotation(id, getNumerals());
+        } else if (type.equals(Drawing.class)) {
+            ann = getAnnotation(id, getDrawings());
+        } else if (type.equals(Errata.class)) {
+            ann = getAnnotation(id, getErrata());
+        }
+
+        if (ann != null) {
+            return (T) ann;
+        } else {
+            return null;
+        }
+    }
+
+    private Annotation getAnnotation(String id, List<? extends Annotation> annotations) {
+        for (Annotation ann : annotations) {
+            if (ann.getId().equals(id)) {
+                return ann;
+            }
+        }
+
+        return null;
     }
 
     public String getPage() {

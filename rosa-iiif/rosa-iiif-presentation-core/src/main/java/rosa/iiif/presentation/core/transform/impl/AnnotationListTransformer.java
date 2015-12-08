@@ -30,9 +30,13 @@ import java.util.List;
 public class AnnotationListTransformer extends BasePresentationTransformer implements Transformer<AnnotationList> {
     private static int annotation_counter = 0;
 
+    private AnnotationTransformer annotationTransformer;
+
     @Inject
-    public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter) {
+    public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter,
+                                     AnnotationTransformer annotationTransformer) {
         super(presRequestFormatter);
+        this.annotationTransformer = annotationTransformer;
     }
 
     public AnnotationList transform(BookCollection collection, Book book, String name) {
@@ -152,16 +156,16 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
 //                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
 //                }
 //                break;
-            case NUMBERAL:
-                for (rosa.archive.model.aor.Annotation ann : aPage.getNumerals()) {
-                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-                }
-                break;
-            case ERRATA:
-                for (rosa.archive.model.aor.Annotation ann : aPage.getErrata()) {
-                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-                }
-                break;
+//            case NUMBERAL:
+//                for (rosa.archive.model.aor.Annotation ann : aPage.getNumerals()) {
+//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
+//                }
+//                break;
+//            case ERRATA:
+//                for (rosa.archive.model.aor.Annotation ann : aPage.getErrata()) {
+//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
+//                }
+//                break;
             default:
                 break;
         }
@@ -291,7 +295,8 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     private Annotation adaptAnnotation(BookCollection collection, String book, rosa.archive.model.aor.Annotation anno,
                                        BookImage image) {
         Annotation a = new Annotation();
-        String annoName = image.getName() + "_" + annotation_counter++;
+        String annoName =  anno.getId() == null || anno.getId().isEmpty() ?
+                image.getName() + "_" + annotation_counter++ : anno.getId();
 
         a.setId(urlId(collection.getId(), book, annoName, PresentationRequestType.ANNOTATION));
         a.setType(IIIFNames.OA_ANNOTATION);
@@ -325,20 +330,37 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
      */
     private List<Annotation> adaptMarginalia(BookCollection collection, String book, Marginalia marg, BookImage image) {
         List<Annotation> annotations = new ArrayList<>();
+        int lang_count = 0;
 
-        String lang = marg.getLanguages() != null && marg.getLanguages().size() > 0
-                ? marg.getLanguages().get(0).getLang() : "en";
+//        String lang = marg.getLanguages() != null && marg.getLanguages().size() > 0
+//                ? marg.getLanguages().get(0).getLang() : "en";
 
-        Annotation anno = new Annotation();
-        String label = image.getName() + "_" + annotation_counter++;
+        for (MarginaliaLanguage lang : marg.getLanguages()) {
+            int pos_count = 0;
 
-        anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
-        anno.setMotivation(IIIFNames.SC_PAINTING);
-        anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
-                marginaliaToDisplayHtml(marg), lang));
-        anno.setDefaultTarget(locationOnCanvas(image, Location.FULL_PAGE)); // TODO actual position(s)
+            for (Position pos : lang.getPositions()) {
+                Annotation anno = new Annotation();
+//                String label = image.getName() + "_" + annotation_counter++;
 
-        annotations.add(anno);
+                String transcription_id = marg.getId() + "_" + lang_count + "_" + pos_count;
+                String actual_id = marg.getId() == null || marg.getId().isEmpty() ?
+                        image.getName() + "_" + annotation_counter++ : transcription_id;
+
+                String transcription_text = pos.getTexts().toString().replaceAll("\\s+", " ");
+
+                anno.setId(urlId(collection.getId(), book, actual_id, PresentationRequestType.ANNOTATION)); // TODO name
+                
+//                anno.setId(urlId(collection.getId(), book, label, PresentationRequestType.ANNOTATION)); // TODO name
+                anno.setMotivation(IIIFNames.SC_PAINTING);
+                anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
+                        marginaliaToDisplayHtml(marg), lang.getLang()));
+                anno.setDefaultTarget(locationOnCanvas(image, Location.FULL_PAGE)); // TODO actual position(s)
+
+                annotations.add(anno);
+                pos_count++;
+            }
+            lang_count++;
+        }
 
         return annotations;
     }
