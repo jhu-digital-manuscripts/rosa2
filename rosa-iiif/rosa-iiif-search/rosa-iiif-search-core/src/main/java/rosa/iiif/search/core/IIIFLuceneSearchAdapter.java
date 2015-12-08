@@ -34,7 +34,7 @@ public class IIIFLuceneSearchAdapter {
      */
     public Query iiifToLuceneQuery(IIIFSearchRequest iiifReq) {
         // This will generate independent queries for each word...
-        List<Query> top = new ArrayList<>();
+        List<Query> top_query = new ArrayList<>();
         for (String queryTerm : iiifReq.queryTerms) {
             if (queryTerm == null || queryTerm.isEmpty()) {
                 continue;
@@ -47,10 +47,29 @@ public class IIIFLuceneSearchAdapter {
                 children.add(new Query(luceneFields, getSearchTerm(queryTerm)));
             }
 
-            top.add(new Query(QueryOperation.OR, children.toArray(new Query[children.size()])));
+            top_query.add(new Query(QueryOperation.OR, children.toArray(new Query[children.size()])));
         }
 
-        return new Query(QueryOperation.AND, top.toArray(new Query[top.size()]));
+        /*
+            Here, the rest of the parameters would be added to the query (motivation, date, user, box).
+
+            In this specific case, motivation will be the same for all annotations that are being
+            searched and will be omitted.
+
+            The other parameters will not be searched for either, as no data is stored related
+            to them. No user data, no time-stamp, location data is not precise enough for a box
+            restriction.
+
+            TODO to make this more general
+            consider a generalized map: String (parameter) -> String[] (query terms)
+            Parameters can be related (or the same as) Lucene fields. These can then be iterated
+            over to generate the Lucene query.
+         */
+
+
+
+
+        return new Query(QueryOperation.AND, top_query.toArray(new Query[top_query.size()]));
     }
 
 

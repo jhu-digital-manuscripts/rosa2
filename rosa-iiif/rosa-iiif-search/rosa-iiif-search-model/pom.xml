@@ -18,6 +18,11 @@
             <artifactId>rosa-search-model</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-iiif-presentation-model</artifactId>
+        </dependency>
+
         <!-- Testing dependencies -->
         <dependency>
             <groupId>junit</groupId>

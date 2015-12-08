@@ -9,6 +9,8 @@ import java.util.List;
  * Current version: SearchAPI 0.9
  *
  * http://search.iiif.io/api/search/0.9/#request
+ *
+ * TODO refactor. Instead of individual fields here, use a map String (parameter) -> String[] (query tokens)?
  */
 public class IIIFSearchRequest implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -124,23 +126,28 @@ public class IIIFSearchRequest implements Serializable {
         return rectangles.toArray(new Rectangle[rectangles.size()]);
     }
 
+//    protected boolean canEqual(Object obj) {
+//        return obj instanceof IIIFSearchRequest;
+//    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        IIIFSearchRequest that = (IIIFSearchRequest) o;
+        IIIFSearchRequest request = (IIIFSearchRequest) o;
 
+        if (page != request.page) return false;
         // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(queryTerms, that.queryTerms)) return false;
+        if (!Arrays.equals(queryTerms, request.queryTerms)) return false;
         // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(motivations, that.motivations)) return false;
+        if (!Arrays.equals(motivations, request.motivations)) return false;
         // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(dates, that.dates)) return false;
+        if (!Arrays.equals(dates, request.dates)) return false;
         // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(users, that.users)) return false;
+        if (!Arrays.equals(users, request.users)) return false;
         // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        return Arrays.equals(box, that.box);
+        return Arrays.equals(box, request.box);
 
     }
 
@@ -151,6 +158,7 @@ public class IIIFSearchRequest implements Serializable {
         result = 31 * result + (dates != null ? Arrays.hashCode(dates) : 0);
         result = 31 * result + (users != null ? Arrays.hashCode(users) : 0);
         result = 31 * result + (box != null ? Arrays.hashCode(box) : 0);
+        result = 31 * result + page;
         return result;
     }
 
@@ -162,6 +170,7 @@ public class IIIFSearchRequest implements Serializable {
                 ", dates=" + Arrays.toString(dates) +
                 ", users=" + Arrays.toString(users) +
                 ", box=" + Arrays.toString(box) +
+                ", page=" + page +
                 '}';
     }
 }
