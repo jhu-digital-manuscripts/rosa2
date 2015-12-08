@@ -69,7 +69,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
         CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter);
         SequenceTransformer sequenceTransformer = new SequenceTransformer(presentationReqFormatter, canvasTransformer);
-        AnnotationTransformer annotationTransformer = new AnnotationTransformer(presentationReqFormatter, new ArchiveNameParser());
+        AnnotationTransformer annotationTransformer = new AnnotationTransformer(presentationReqFormatter);
 
         Set<Transformer<?>> transformers = new HashSet<>();
         transformers.add(new AnnotationListTransformer(presentationReqFormatter, annotationTransformer));
@@ -181,7 +181,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         assertNotEquals("Annotation lists for 1r.all and 11r.all should NOT be equal.", l1, l2);
         assertNotEquals("Annotation lists for 1r.all and 11r.all should have different sizes", l1.size(), l2.size());
 
-        assertEquals("Unexpected number of annotations in 1r.all", 13, l1.size());
+        assertEquals("Unexpected number of annotations in 1r.all", 9, l1.size());
         assertEquals("Unexpected number of annotations in 11r.all", 12, l2.size());
 
         {
@@ -200,10 +200,9 @@ public class PresentationTransformerTest extends BaseArchiveTest {
                 Annotation a = ll.getAnnotations().get(i);
                 if (a.getId().contains("marginalia")) {
                     marg_count++;
-//                    System.out.println(a.getId() + " :::: " + a.getDefaultSource().getEmbeddedText().replaceAll("\\n", "<br>"));
                 }
             }
-            assertEquals("Unexpected number of marginalia found.", 12, marg_count);
+            assertEquals("Unexpected number of marginalia found.", 8, marg_count);
 
         }
     }
