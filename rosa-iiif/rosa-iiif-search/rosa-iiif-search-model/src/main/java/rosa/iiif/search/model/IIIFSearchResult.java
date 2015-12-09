@@ -128,10 +128,8 @@ public class IIIFSearchResult extends AnnotationList implements Serializable, II
 
         if (total != that.total) return false;
         if (startIndex != that.startIndex) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(ignored, that.ignored)) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(hits, that.hits)) return false;
+        if (!Arrays.deepEquals(ignored, that.ignored)) return false;
+        if (!Arrays.deepEquals(hits, that.hits)) return false;
         if (next != null ? !next.equals(that.next) : that.next != null) return false;
         if (prev != null ? !prev.equals(that.prev) : that.prev != null) return false;
         if (first != null ? !first.equals(that.first) : that.first != null) return false;
@@ -143,8 +141,8 @@ public class IIIFSearchResult extends AnnotationList implements Serializable, II
     public int hashCode() {
         int result = super.hashCode();
         result = 31 * result + (int) (total ^ (total >>> 32));
-        result = 31 * result + (ignored != null ? Arrays.hashCode(ignored) : 0);
-        result = 31 * result + (hits != null ? Arrays.hashCode(hits) : 0);
+        result = 31 * result + (ignored != null ? Arrays.deepHashCode(ignored) : 0);
+        result = 31 * result + (hits != null ? Arrays.deepHashCode(hits) : 0);
         result = 31 * result + (int) (startIndex ^ (startIndex >>> 32));
         result = 31 * result + (next != null ? next.hashCode() : 0);
         result = 31 * result + (prev != null ? prev.hashCode() : 0);

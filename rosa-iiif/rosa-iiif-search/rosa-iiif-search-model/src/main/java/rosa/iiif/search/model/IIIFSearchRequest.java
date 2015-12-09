@@ -138,26 +138,21 @@ public class IIIFSearchRequest implements Serializable {
         IIIFSearchRequest request = (IIIFSearchRequest) o;
 
         if (page != request.page) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(queryTerms, request.queryTerms)) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(motivations, request.motivations)) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(dates, request.dates)) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(users, request.users)) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        return Arrays.equals(box, request.box);
+        if (!Arrays.deepEquals(queryTerms, request.queryTerms)) return false;
+        if (!Arrays.deepEquals(motivations, request.motivations)) return false;
+        if (!Arrays.deepEquals(dates, request.dates)) return false;
+        if (!Arrays.deepEquals(users, request.users)) return false;
+        return Arrays.deepEquals(box, request.box);
 
     }
 
     @Override
     public int hashCode() {
-        int result = queryTerms != null ? Arrays.hashCode(queryTerms) : 0;
-        result = 31 * result + (motivations != null ? Arrays.hashCode(motivations) : 0);
-        result = 31 * result + (dates != null ? Arrays.hashCode(dates) : 0);
-        result = 31 * result + (users != null ? Arrays.hashCode(users) : 0);
-        result = 31 * result + (box != null ? Arrays.hashCode(box) : 0);
+        int result = queryTerms != null ? Arrays.deepHashCode(queryTerms) : 0;
+        result = 31 * result + (motivations != null ? Arrays.deepHashCode(motivations) : 0);
+        result = 31 * result + (dates != null ? Arrays.deepHashCode(dates) : 0);
+        result = 31 * result + (users != null ? Arrays.deepHashCode(users) : 0);
+        result = 31 * result + (box != null ? Arrays.deepHashCode(box) : 0);
         result = 31 * result + page;
         return result;
     }

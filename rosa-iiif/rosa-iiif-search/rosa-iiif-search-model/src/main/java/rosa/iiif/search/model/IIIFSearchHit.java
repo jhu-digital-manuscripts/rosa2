@@ -29,8 +29,7 @@ public class IIIFSearchHit implements Serializable {
 
         IIIFSearchHit that = (IIIFSearchHit) o;
 
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(annotations, that.annotations)) return false;
+        if (!Arrays.deepEquals(annotations, that.annotations)) return false;
         if (matching != null ? !matching.equals(that.matching) : that.matching != null) return false;
         if (before != null ? !before.equals(that.before) : that.before != null) return false;
         return !(after != null ? !after.equals(that.after) : that.after != null);
@@ -39,7 +38,7 @@ public class IIIFSearchHit implements Serializable {
 
     @Override
     public int hashCode() {
-        int result = annotations != null ? Arrays.hashCode(annotations) : 0;
+        int result = annotations != null ? Arrays.deepHashCode(annotations) : 0;
         result = 31 * result + (matching != null ? matching.hashCode() : 0);
         result = 31 * result + (before != null ? before.hashCode() : 0);
         result = 31 * result + (after != null ? after.hashCode() : 0);
