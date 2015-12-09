@@ -14,10 +14,9 @@ import java.util.Arrays;
  */
 public class IIIFSearchResult extends AnnotationList implements Serializable, IIIFSearchNames, IIIFNames {
     private static final long serialVersionUID = 1L;
-    private static final String WITHIN_TYPE = "sc:Layer";
 
     /** Total number of results found. Useful with paging. */
-    public int total;
+    private long total;
 
     /**
      * Ignored parameters.
@@ -26,28 +25,92 @@ public class IIIFSearchResult extends AnnotationList implements Serializable, II
      * three parameters 'date', 'user', 'box' are optional. Any ignored parameter
      * must be reported here.
      */
-    public String[] ignored;
+    private String[] ignored;
 
     /** List of 'hits' information containing context for results. */
-    public IIIFSearchHit[] hits;
+    private IIIFSearchHit[] hits;
 
     // Info for paging
     /** Index of the first result in this page within the total */
-    public int startIndex;
+    private long startIndex;
 
     // URIs for navigating results paging
     /** URI of next page of results */
-    public String next;
+    private String next;
     /** URI of previous page of results */
-    public String prev;
+    private String prev;
     /** URI of first results page */
-    public String first;
+    private String first;
     /** URI of last results page */
-    public String last;
+    private String last;
 
     public IIIFSearchResult() {
         super();
         setContext(SEARCH_CONTEXT);
+    }
+
+    public long getTotal() {
+        return total;
+    }
+
+    public void setTotal(long total) {
+        this.total = total;
+    }
+
+    public String[] getIgnored() {
+        return ignored;
+    }
+
+    public void setIgnored(String[] ignored) {
+        this.ignored = ignored;
+    }
+
+    public IIIFSearchHit[] getHits() {
+        return hits;
+    }
+
+    public void setHits(IIIFSearchHit[] hits) {
+        this.hits = hits;
+    }
+
+    public long getStartIndex() {
+        return startIndex;
+    }
+
+    public void setStartIndex(long startIndex) {
+        this.startIndex = startIndex;
+    }
+
+    public String getNext() {
+        return next;
+    }
+
+    public void setNext(String next) {
+        this.next = next;
+    }
+
+    public String getPrev() {
+        return prev;
+    }
+
+    public void setPrev(String prev) {
+        this.prev = prev;
+    }
+
+    public String getFirst() {
+        return first;
+    }
+
+    public void setFirst(String first) {
+        this.first = first;
+    }
+
+    public String getLast() {
+        return last;
+    }
+
+    public void setLast(String last) {
+        this.last = last;
     }
 
     @Override
@@ -62,10 +125,6 @@ public class IIIFSearchResult extends AnnotationList implements Serializable, II
         if (!super.equals(o)) return false;
 
         IIIFSearchResult that = (IIIFSearchResult) o;
-
-        if (!that.canEqual(this)) {
-            return false;
-        }
 
         if (total != that.total) return false;
         if (startIndex != that.startIndex) return false;
@@ -83,10 +142,10 @@ public class IIIFSearchResult extends AnnotationList implements Serializable, II
     @Override
     public int hashCode() {
         int result = super.hashCode();
-        result = 31 * result + total;
+        result = 31 * result + (int) (total ^ (total >>> 32));
         result = 31 * result + (ignored != null ? Arrays.hashCode(ignored) : 0);
         result = 31 * result + (hits != null ? Arrays.hashCode(hits) : 0);
-        result = 31 * result + startIndex;
+        result = 31 * result + (int) (startIndex ^ (startIndex >>> 32));
         result = 31 * result + (next != null ? next.hashCode() : 0);
         result = 31 * result + (prev != null ? prev.hashCode() : 0);
         result = 31 * result + (first != null ? first.hashCode() : 0);
