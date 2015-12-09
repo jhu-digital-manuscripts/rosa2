@@ -55,6 +55,7 @@ import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.InternalReference;
@@ -304,7 +305,7 @@ public class LuceneMapper {
                         transcriptionMap != null ? transcriptionMap.get(getStandardPage(image)) : null);
 
                 // Index AoR transcriptions
-                index(doc, col, book, image, book.getAnnotationPage(image.getId()));
+                index(col, book, image, book.getAnnotationPage(image.getId()), result);
 
                 result.add(doc);
             }
@@ -596,117 +597,223 @@ public class LuceneMapper {
      *
      * TODO handle different languages better?
      *
-     * @param doc Lucene document
      * @param col BookCollection obj
      * @param book Book obj
      * @param image this image
      * @param annotatedPage transcriptions of AoR annotations on this page
+     * @param result resulting list of indexed documents
      */
-    private void index(Document doc, BookCollection col, Book book, BookImage image, AnnotatedPage annotatedPage) {
+    private void index(BookCollection col, Book book, BookImage image, AnnotatedPage annotatedPage,
+                       List<Document> result) {
         if (annotatedPage == null) {
             return;
         }
-        add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image.getId()));
-        add_field(doc, SearchFields.COLLECTION_ID, col.getId());
-        add_field(doc, SearchFields.BOOK_ID, book.getId());
-        add_field(doc, SearchFields.IMAGE_NAME, image.getName());
 
-        add_field(doc, SearchFields.AOR_READER, annotatedPage.getReader());
-        add_field(doc, SearchFields.AOR_PAGINATION, annotatedPage.getPagination());
-        add_field(doc, SearchFields.AOR_SIGNATURE, annotatedPage.getSignature());
+        Document pageDoc = new Document();
+
+        add_field(pageDoc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image.getId()));
+        add_field(pageDoc, SearchFields.COLLECTION_ID, col.getId());
+        add_field(pageDoc, SearchFields.BOOK_ID, book.getId());
+        add_field(pageDoc, SearchFields.IMAGE_NAME, image.getName());
+
+        add_field(pageDoc, SearchFields.AOR_READER, annotatedPage.getReader());
+        add_field(pageDoc, SearchFields.AOR_PAGINATION, annotatedPage.getPagination());
+        add_field(pageDoc, SearchFields.AOR_SIGNATURE, annotatedPage.getSignature());
 
         // Symbols
-        StringBuilder toIndex = new StringBuilder();
         for (Symbol s : annotatedPage.getSymbols()) {
-            toIndex.append(s.getName());
-            toIndex.append(' ');
+            if (shouldIndex(s)) {
+                result.add(docForTranscription(col, book, image.getId(), s));
+            }
         }
-        add_field(doc, SearchFields.AOR_SYMBOLS, toIndex.toString());
 
         // Marks
-        toIndex = new StringBuilder();
         for (Mark m : annotatedPage.getMarks()) {
-            toIndex.append(m.getName());
-            toIndex.append(' ');
+            if (shouldIndex(m)) {
+                result.add(docForTranscription(col, book, image.getId(), m));
+            }
         }
-        add_field(doc, SearchFields.AOR_MARKS, toIndex.toString());
 
         // Errata
-        toIndex = new StringBuilder();
         for (Errata e : annotatedPage.getErrata()) {
-            toIndex.append(e.getCopyText());
-            toIndex.append(' ');
-            toIndex.append(e.getAmendedText());
-            toIndex.append(' ');
+            if (shouldIndex(e)) {
+                result.add(docForTranscription(col, book, image.getId(), e));
+            }
         }
-        add_field(doc, SearchFields.AOR_ERRATA, toIndex.toString());
 
         // Drawing
-        toIndex = new StringBuilder();
         for (Drawing d : annotatedPage.getDrawings()) {
-            toIndex.append(d.getName());
-            toIndex.append(' ');
+            if (shouldIndex(d)) {
+                result.add(docForTranscription(col, book, image.getId(), d));
+            }
         }
-        add_field(doc, SearchFields.AOR_DRAWINGS, toIndex.toString());
 
         // Numeral
-        toIndex = new StringBuilder();
         for (Numeral n : annotatedPage.getNumerals()) {
-            toIndex.append(n.getReferringText());
-            toIndex.append(' ');
+            if (shouldIndex(n)) {
+                result.add(docForTranscription(col, book, image.getId(), n));
+            }
         }
 
         // Underlines
-        StringBuilder underlines = new StringBuilder();
         for (Underline u : annotatedPage.getUnderlines()) {
-            if (u.getReferringText() != null && !u.getReferringText().isEmpty()) {
-                underlines.append(u.getReferringText());
-                underlines.append(' ');
+            if (shouldIndex(u)) {
+                result.add(docForTranscription(col, book, image.getId(), u));
             }
         }
 
         // Marginalia
+        for (Marginalia m : annotatedPage.getMarginalia()) {
+            result.add(docForTranscription(col, book, image.getId(), m));
+        }
+    }
+
+    private boolean isEmpty(String str) {
+        return str == null || str.isEmpty();
+    }
+
+    private boolean shouldIndex(Annotation anno) {
+        if (isEmpty(anno.getId())) {
+            return false;
+        }
+
+        if (anno instanceof Symbol) {
+            Symbol symbol = (Symbol) anno;
+            return !isEmpty(symbol.getName());
+        } else if (anno instanceof Drawing) {
+            Drawing d = (Drawing) anno;
+            return !isEmpty(d.getName());
+        } else if (anno instanceof Errata) {
+            Errata e = (Errata) anno;
+            return !isEmpty(e.getCopyText()) && !isEmpty(e.getAmendedText());
+        } else if (anno instanceof Mark) {
+            return !isEmpty(((Mark) anno).getName());
+        } else if (anno instanceof Numeral) {
+            return !isEmpty(anno.getReferringText());
+        } else if (anno instanceof Underline) {
+            return !isEmpty(anno.getReferringText());
+        } else if (anno instanceof Marginalia) {
+            return true; // TODO maybe fill this out eventually...
+        }
+
+        return false;
+    }
+
+    private Document docForTranscription(BookCollection col, Book book, String image, Symbol symbol) {
+        Document doc = new Document();
+
+        add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, symbol.getId()));
+        add_field(doc, SearchFields.AOR_SYMBOLS, symbol.getName());
+
+        return doc;
+    }
+
+    private Document docForTranscription(BookCollection col, Book book, String image, Drawing drawing) {
+        Document doc = new Document();
+
+        add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, drawing.getId()));
+        add_field(doc, SearchFields.AOR_DRAWINGS, drawing.getName());
+
+        return doc;
+    }
+
+    private Document docForTranscription(BookCollection col, Book book, String image, Errata errata) {
+        Document doc = new Document();
+
+        add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, errata.getId()));
+        add_field(doc, SearchFields.AOR_ERRATA, errata.getAmendedText() + " " + errata.getCopyText());
+
+        return doc;
+    }
+
+    private Document docForTranscription(BookCollection col, Book book, String image, Mark mark) {
+        Document doc = new Document();
+
+        add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, mark.getId()));
+        add_field(doc, SearchFields.AOR_MARKS, mark.getName());
+
+        return doc;
+    }
+
+    private Document docForTranscription(BookCollection col, Book book, String image, Numeral numeral) {
+        Document doc = new Document();
+
+        add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, numeral.getId()));
+        add_field(doc, SearchFields.AOR_NUMERALS, numeral.getReferringText());
+
+        return doc;
+    }
+
+    private Document docForTranscription(BookCollection col, Book book, String image, Underline underline) {
+        Document doc = new Document();
+
+        add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, underline.getId()));
+        add_field(doc, SearchFields.AOR_UNDERLINES, underline.getReferringText());
+
+        return doc;
+    }
+
+    private Document docForTranscription(BookCollection col, Book book, String image, Marginalia marg) {
+        Document doc = new Document();
+
+        add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, marg.getId()));
+        if (!isEmpty(marg.getReferringText())) {
+            add_field(doc, SearchFields.AOR_UNDERLINES, marg.getReferringText());
+        }
+
         StringBuilder transcription = new StringBuilder();
-        StringBuilder translation = new StringBuilder();
         StringBuilder books = new StringBuilder();
         StringBuilder people = new StringBuilder();
         StringBuilder locations = new StringBuilder();
         StringBuilder internalRefs = new StringBuilder();
-        for (Marginalia m : annotatedPage.getMarginalia()) {
-            translation.append(m.getTranslation());
-            translation.append(' ');
+        StringBuilder underlines = new StringBuilder();
 
-            for (MarginaliaLanguage lang : m.getLanguages()) {
-                for (Position pos : lang.getPositions()) {
-                    transcription.append(listToString(pos.getTexts()));
-                    books.append(listToString(pos.getBooks()));
-                    people.append(listToString(pos.getPeople()));
-                    locations.append(listToString(pos.getLocations()));
+        for (MarginaliaLanguage lang : marg.getLanguages()) {
+            for (Position pos : lang.getPositions()) {
+                transcription.append(listToString(pos.getTexts()));
+                books.append(listToString(pos.getBooks()));
+                people.append(listToString(pos.getPeople()));
+                locations.append(listToString(pos.getLocations()));
 
-                    for (Underline u : pos.getEmphasis()) {
-                        underlines.append(u.getReferringText());
-                        underlines.append(' ');
-                    }
+                for (Underline u : pos.getEmphasis()) {
+                    underlines.append(u.getReferringText());
+                    underlines.append(' ');
+                }
 
-                    for (InternalReference internalRef : pos.getInternalRefs()) {
-                        for (ReferenceTarget target : internalRef.getTargets()) {
-                            internalRefs.append(target.getBookId());
-                            internalRefs.append(' ');
-                            internalRefs.append(target.getFilename());
-                            internalRefs.append(' ');
-                        }
+                for (InternalReference internalRef : pos.getInternalRefs()) {
+                    for (ReferenceTarget target : internalRef.getTargets()) {
+                        internalRefs.append(target.getBookId());
+                        internalRefs.append(' ');
+                        internalRefs.append(target.getFilename());
+                        internalRefs.append(' ');
                     }
                 }
             }
         }
 
-        add_field(doc, SearchFields.AOR_UNDERLINES, underlines.toString());
-        add_field(doc, SearchFields.AOR_MARGINALIA_TRANSCRIPTIONS, transcription.toString());
-        add_field(doc, SearchFields.AOR_MARGINALIA_TRANSLATIONS, translation.toString());
-        add_field(doc, SearchFields.AOR_MARGINALIA_BOOKS, books.toString());
-        add_field(doc, SearchFields.AOR_MARGINALIA_PEOPLE, people.toString());
-        add_field(doc, SearchFields.AOR_MARGINALIA_LOCATIONS, locations.toString());
-        add_field(doc, SearchFields.AOR_MARGINALIA_INTERNAL_REFS, internalRefs.toString());
+        if (!isEmpty(underlines.toString())) {
+            add_field(doc, SearchFields.AOR_UNDERLINES, underlines.toString());
+        }
+        if (!isEmpty(transcription.toString())) {
+            add_field(doc, SearchFields.AOR_MARGINALIA_TRANSCRIPTIONS, transcription.toString());
+        }
+        if (!isEmpty(marg.getTranslation())) {
+            add_field(doc, SearchFields.AOR_MARGINALIA_TRANSLATIONS, marg.getTranslation());
+        }
+        if (!isEmpty(book.toString())) {
+            add_field(doc, SearchFields.AOR_MARGINALIA_BOOKS, books.toString());
+        }
+        if (!isEmpty(people.toString())) {
+            add_field(doc, SearchFields.AOR_MARGINALIA_PEOPLE, people.toString());
+        }
+        if (!isEmpty(locations.toString())) {
+            add_field(doc, SearchFields.AOR_MARGINALIA_LOCATIONS, locations.toString());
+        }
+        if (!isEmpty(internalRefs.toString())) {
+            add_field(doc, SearchFields.AOR_MARGINALIA_INTERNAL_REFS, internalRefs.toString());
+        }
+
+        return doc;
     }
 
     private String listToString(List<String> list) {

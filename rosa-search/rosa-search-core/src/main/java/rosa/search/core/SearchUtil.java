@@ -20,6 +20,10 @@ public class SearchUtil {
     public static String createId(String collection, String book, String image) {
         return collection + ID_SEPARATOR + book + ID_SEPARATOR + image;
     }
+
+    public static String createId(String collection, String book, String image, String annoName) {
+        return createId(collection, book, image) + ID_SEPARATOR + annoName;
+    }
     
     public static boolean isBookId(String id) {
         return id.split(ID_SEPARATOR).length == 2;

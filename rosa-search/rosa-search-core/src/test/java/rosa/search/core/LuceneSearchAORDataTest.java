@@ -44,7 +44,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
             SearchResult result = service.search(query, null);
 
             assertNotNull("Search result was NULL", result);
-            assertEquals("Unexpected number of results found.", 37, result.getTotal());
+            assertEquals("Unexpected number of results found.", 40, result.getTotal());
         }
 
         {
@@ -56,7 +56,8 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
 
             for (SearchMatch m : result.getMatches()) {
                 assertTrue("Unexpected ID found.",
-                        m.getId().endsWith("FolgersHa2.029r.tif") || m.getId().endsWith("FolgersHa2.026r.tif"));
+                        m.getId().endsWith("FolgersHa2.029r.tif_symbol_1") ||
+                                m.getId().endsWith("FolgersHa2.026r.tif_symbol_1"));
             }
         }
     }
@@ -69,7 +70,8 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
 
         assertNotNull("Search result was NULL.", result);
         assertEquals("Unexpected number of results found.", 1, result.getTotal());
-        assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().endsWith("FolgersHa2.036v.tif"));
+        assertTrue("Unexpected result ID found.",
+                result.getMatches()[0].getId().endsWith("FolgersHa2.036v.tif_marginalia_2"));
     }
 
     @Test(expected = NullPointerException.class)
