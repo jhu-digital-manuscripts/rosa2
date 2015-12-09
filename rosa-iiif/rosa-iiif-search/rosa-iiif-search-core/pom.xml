@@ -24,8 +24,20 @@
         </dependency>
 
         <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-iiif-presentation-core</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>rosa.search</groupId>
             <artifactId>rosa-search-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>rosa-archive-core</artifactId>
+            <type>test-jar</type>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

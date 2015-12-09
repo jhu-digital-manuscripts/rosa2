@@ -1,15 +1,26 @@
 package rosa.iiif.search.core;
 
+import rosa.archive.core.Store;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
+import rosa.archive.core.util.Annotations;
+import rosa.iiif.presentation.model.annotation.Annotation;
+import rosa.iiif.search.model.IIIFSearchHit;
 import rosa.iiif.search.model.IIIFSearchRequest;
 import rosa.iiif.search.model.IIIFSearchResult;
 import rosa.iiif.search.model.SearchCategory;
+import rosa.search.core.SearchUtil;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchFields;
+import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Adapt Lucene search results into JSON-LD that follows the IIIF Search API
@@ -25,8 +36,19 @@ import java.util.List;
  *   - (http://search.iiif.io/api/search/0.9/#response)
  */
 public class IIIFLuceneSearchAdapter {
+    private static final int max_cache_size = 1000;
 
-    public IIIFLuceneSearchAdapter() {}
+    private AnnotationTransformer annotationTransformer;
+    private Store archiveStore;
+
+    private final ConcurrentHashMap<String, Object> cache;
+
+    public IIIFLuceneSearchAdapter(AnnotationTransformer annotationTransformer, Store archiveStore) {
+        this.annotationTransformer = annotationTransformer;
+        this.archiveStore = archiveStore;
+
+        this.cache = new ConcurrentHashMap<>(max_cache_size);
+    }
 
     /**
      * Transform a IIIF search request to a Lucene search query.
@@ -80,25 +102,12 @@ public class IIIFLuceneSearchAdapter {
      * an array of SearchMatches
      *
      * Lucene result match will contain an ID of the format:
-     *      collection_name;book_name;page_id
+     *      collection_name;book_name;page_id;(annotation_id)
      *
-     * This is enough information to build the URI of the appropriate IIIF
-     * Presentation canvas on which the annotation sits. Building the URI
-     * of the annotation will be another matter....
-     * // TODO need to be able to re-build the full annotation
+     * From this ID, the annotation can be retrieved from the archive and
+     * transformed into IIIF format.
      *
      * The context gives a small snippet of text surrounding the search hit.
-     *
-     * ----- NOTE ------------------------------------------------------------
-     * In its current state, the search match does not give enough information
-     * to build the IIIF results annotation list.
-     *
-     * The easiest thing to do would be to include the annotation ID in the
-     * search match ID. From there, it would be simple to find the ID in the
-     * archive model and pull out that annotation.
-     *      This would involve merging branch: annotation-ids
-     *
-     *
      *
      * @param result lucene result
      * @return IIIF compatible result
@@ -106,12 +115,88 @@ public class IIIFLuceneSearchAdapter {
      * @see SearchResult
      * @see rosa.search.model.SearchMatch
      */
-    public IIIFSearchResult luceneResultToIIIF(SearchResult result) {
+    public IIIFSearchResult luceneResultToIIIF(SearchResult result) throws IOException {
+        IIIFSearchResult iiifResult = new IIIFSearchResult();
 
-        return null;
+        iiifResult.setTotal(result.getTotal());
+        iiifResult.setStartIndex(result.getOffset());
+
+        // Create List<iiif annotation>
+        List<Annotation> annotations = iiifResult.getAnnotations();
+        List<IIIFSearchHit> hits = new ArrayList<>();
+        for (SearchMatch match : result.getMatches()) {
+            // Create the Annotation from Match
+            //   Get archive annotation from match ID using Annotations util class
+            String matchId = match.getId();
+
+            BookCollection col = getCollection(matchId);
+            Book book = getBook(matchId);
+            rosa.archive.model.aor.Annotation archiveAnno = getArchiveAnnotation(matchId);
+
+            //   Transform archive anno -> iiif anno using AnnotationTransformer
+            annotations.add(annotationTransformer.transform(col, book, archiveAnno));
+            hits.addAll(getContextHits(match.getContext(), matchId));
+        }
+
+        iiifResult.setHits(hits.toArray(new IIIFSearchHit[hits.size()]));
+
+        return iiifResult;
     }
 
+    protected List<IIIFSearchHit> getContextHits(List<String> contexts, String matchId) {
+        List<IIIFSearchHit> hits = new ArrayList<>();
+        String[] associatedAnnos = new String[] {getAnnotationId(matchId)};
 
+        // Create Hit objects from the context
+        for (String context : contexts) {
+            String tmp = context.toLowerCase();     // In case <B> appears instead of <b>
+            int start = tmp.indexOf("<b>");
+            int end = 0;
+            while (start >= 0 && start < tmp.length()) {
+                String hit_before = context.substring((end == 0 ? end : end+4), start);
+//                System.out.printf("(%d,%d)[%s] :: ", (end == 0 ? end : end+4), start, hit_before);
+                end = tmp.indexOf("</b>", start);
+                String hit_match = context.substring(start + 3, end);   // Must get rid of starting <b>
+//                System.out.printf("(%d,%d)[%s] :: ", start+3, end, hit_match);
+                start = tmp.indexOf("<b>", end);
+
+                String hit_after;
+                if (start > context.length() || start < 0) {
+                    hit_after = context.substring(end + 4);             // Must get rid of starting </b>
+                } else {
+                    hit_after = context.substring(end + 4, start);      // Must get rid of starting </b>
+                }
+//                System.out.printf("(%d,%d)[%s]\n", end+4, start, hit_after);
+
+                hits.add(new IIIFSearchHit(associatedAnnos, hit_match, hit_before, hit_after));
+            }
+        }
+
+        int i = 0;
+        while (i < hits.size() - 1) {
+            IIIFSearchHit hit1 = hits.get(i);
+            IIIFSearchHit hit2 = hits.get(i + 1);
+
+            if (isEmpty(hit1.after) && isEmpty(hit2.before)) {
+                // If (after hit1) == (before hit2) == (blank), then merge the 2 hits
+                hits.remove(hit1);
+                hits.remove(hit2);
+                hits.add(i, new IIIFSearchHit(
+                        associatedAnnos, (hit1.matching + " " + hit2.matching), hit1.before, hit2.after
+                ));
+
+                i--;
+            }
+
+            i++;
+        }
+
+        return hits;
+    }
+
+    private boolean isEmpty(String str) {
+        return str == null || str.isEmpty() || str.matches("^\\s+$");
+    }
 
     /**
      * TODO for now, assume ALL category. this will change when faceted search is implemented
@@ -130,5 +215,96 @@ public class IIIFLuceneSearchAdapter {
      */
     private String getSearchTerm(String queryFrag) {
         return queryFrag;
+    }
+
+    // ----- Name parsing -----
+
+    private String getAnnotationCollection(String matchId) {
+        return SearchUtil.getCollectionFromId(matchId);
+    }
+
+    private String getAnnotationBook(String matchId) {
+        return SearchUtil.getBookFromId(matchId);
+    }
+
+    private String getAnnotationPage(String matchId) {
+        return SearchUtil.getImageFromId(matchId);
+    }
+
+    private String getAnnotationId(String matchId) {
+        return SearchUtil.getAnnotationFromId(matchId);
+    }
+
+    // ----- Caching -----
+
+    private String cache_key(String id, Class<?> type) {
+        return id + "," + type.getName();
+    }
+
+    private <T> T lookupCache(String id, Class<T> type) {
+        return type.cast(cache.get(cache_key(id, type)));
+    }
+
+    private void updateCache(String id, Object value) {
+        if (id == null || value == null) {
+            return;
+        }
+
+        if (cache.size() > max_cache_size) {
+            cache.clear();
+        }
+
+        cache.putIfAbsent(cache_key(id, value.getClass()), value);
+    }
+
+    private BookCollection getCollection(String matchId) throws IOException {
+        String col_id = getAnnotationCollection(matchId);
+        BookCollection result = lookupCache(col_id, BookCollection.class);
+
+        if (result == null) {
+            result = archiveStore.loadBookCollection(col_id, null);
+            updateCache(col_id, result);
+        }
+
+        return result;
+    }
+
+    private Book getBook(String matchId) throws IOException {
+        String col_id = getAnnotationCollection(matchId);
+        String book_id = getAnnotationBook(matchId);
+
+        Book result = lookupCache(book_id, Book.class);
+
+        if (result == null) {
+            BookCollection col = getCollection(col_id);
+
+            if (col == null) {
+                return null;
+            }
+
+            result = archiveStore.loadBook(col, book_id, null);
+            updateCache(book_id, result);
+        }
+
+        return result;
+    }
+
+    private rosa.archive.model.aor.Annotation getArchiveAnnotation(String matchId) throws IOException {
+        String annoId = getAnnotationId(matchId);
+
+        rosa.archive.model.aor.Annotation anno = lookupCache(annoId, rosa.archive.model.aor.Annotation.class);
+
+        if (anno == null) {
+            Book book = getBook(matchId);
+
+            if (book == null) {
+                return null;
+            }
+
+            anno = Annotations.getArchiveAnnotation(book, annoId);
+            updateCache(annoId, rosa.archive.model.aor.Annotation.class);
+        }
+
+        return anno;
     }
 }

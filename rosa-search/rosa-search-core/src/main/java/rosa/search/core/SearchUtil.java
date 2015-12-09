@@ -33,6 +33,10 @@ public class SearchUtil {
         return id.split(ID_SEPARATOR).length == 3;
     }
 
+    public static boolean isAnnotationId(String id) {
+        return id.split(ID_SEPARATOR).length == 4;
+    }
+
     public static String getCollectionFromId(String id) {
         return get_id_part(id, 0);
     }
@@ -43,5 +47,9 @@ public class SearchUtil {
 
     public static String getImageFromId(String id) {
         return get_id_part(id, 2);
+    }
+
+    public static String getAnnotationFromId(String id) {
+        return get_id_part(id, 3);
     }
 }

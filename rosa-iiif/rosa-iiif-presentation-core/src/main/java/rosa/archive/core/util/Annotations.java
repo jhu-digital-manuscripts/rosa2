@@ -1,4 +1,4 @@
-package rosa.iiif.presentation.core.util;
+package rosa.archive.core.util;
 
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
 import rosa.archive.model.Book;
@@ -28,6 +28,11 @@ public class Annotations implements AORAnnotatedPageConstants {
      */
     public static Annotation getArchiveAnnotation(Book book, String annoName) {
         AnnotatedPage annotatedPage = book.getAnnotationPage(getPage(annoName));
+//        System.out.printf("Getting annotations for page (%s)[%s]\n", annoName, getPage(annoName));
+        if (annotatedPage == null) {
+            logger.severe("Failed to get annotated page.");
+            return null;
+        }
 
         int id = getPrimaryNumber(annoName);
         if (id < 0) {

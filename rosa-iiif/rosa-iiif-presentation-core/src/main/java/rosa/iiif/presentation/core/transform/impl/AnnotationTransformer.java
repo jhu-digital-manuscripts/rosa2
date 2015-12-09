@@ -15,7 +15,7 @@ import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
-import rosa.iiif.presentation.core.util.Annotations;
+import rosa.archive.core.util.Annotations;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.annotation.Annotation;
