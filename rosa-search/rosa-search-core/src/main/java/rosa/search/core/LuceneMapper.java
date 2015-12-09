@@ -622,49 +622,37 @@ public class LuceneMapper {
 
         // Symbols
         for (Symbol s : annotatedPage.getSymbols()) {
-            if (shouldIndex(s)) {
-                result.add(docForTranscription(col, book, image.getId(), s));
-            }
+            docForTranscription(col, book, image.getId(), s, result);
         }
 
         // Marks
         for (Mark m : annotatedPage.getMarks()) {
-            if (shouldIndex(m)) {
-                result.add(docForTranscription(col, book, image.getId(), m));
-            }
+            docForTranscription(col, book, image.getId(), m, result);
         }
 
         // Errata
         for (Errata e : annotatedPage.getErrata()) {
-            if (shouldIndex(e)) {
-                result.add(docForTranscription(col, book, image.getId(), e));
-            }
+            docForTranscription(col, book, image.getId(), e, result);
         }
 
         // Drawing
         for (Drawing d : annotatedPage.getDrawings()) {
-            if (shouldIndex(d)) {
-                result.add(docForTranscription(col, book, image.getId(), d));
-            }
+            docForTranscription(col, book, image.getId(), d, result);
         }
 
         // Numeral
         for (Numeral n : annotatedPage.getNumerals()) {
-            if (shouldIndex(n)) {
-                result.add(docForTranscription(col, book, image.getId(), n));
-            }
+            docForTranscription(col, book, image.getId(), n, result);
         }
 
         // Underlines
         for (Underline u : annotatedPage.getUnderlines()) {
-            if (shouldIndex(u)) {
-                result.add(docForTranscription(col, book, image.getId(), u));
-            }
+            docForTranscription(col, book, image.getId(), u, result);
         }
 
         // Marginalia
         for (Marginalia m : annotatedPage.getMarginalia()) {
-            result.add(docForTranscription(col, book, image.getId(), m));
+            docForTranscription(col, book, image.getId(), m, result);
         }
     }
 
@@ -672,88 +660,86 @@ public class LuceneMapper {
         return str == null || str.isEmpty();
     }
 
-    private boolean shouldIndex(Annotation anno) {
-        if (isEmpty(anno.getId())) {
-            return false;
+    private void docForTranscription(BookCollection col, Book book, String image, Symbol symbol,
+                                         List<Document> result) {
+        if (isEmpty(symbol.getName())) {
+            return;
         }
-
-        if (anno instanceof Symbol) {
-            Symbol symbol = (Symbol) anno;
-            return !isEmpty(symbol.getName());
-        } else if (anno instanceof Drawing) {
-            Drawing d = (Drawing) anno;
-            return !isEmpty(d.getName());
-        } else if (anno instanceof Errata) {
-            Errata e = (Errata) anno;
-            return !isEmpty(e.getCopyText()) && !isEmpty(e.getAmendedText());
-        } else if (anno instanceof Mark) {
-            return !isEmpty(((Mark) anno).getName());
-        } else if (anno instanceof Numeral) {
-            return !isEmpty(anno.getReferringText());
-        } else if (anno instanceof Underline) {
-            return !isEmpty(anno.getReferringText());
-        } else if (anno instanceof Marginalia) {
-            return true; // TODO maybe fill this out eventually...
-        }
-
-        return false;
-    }
-
-    private Document docForTranscription(BookCollection col, Book book, String image, Symbol symbol) {
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, symbol.getId()));
         add_field(doc, SearchFields.AOR_SYMBOLS, symbol.getName());
 
-        return doc;
+        result.add(doc);
     }
 
-    private Document docForTranscription(BookCollection col, Book book, String image, Drawing drawing) {
+    private void docForTranscription(BookCollection col, Book book, String image, Drawing drawing,
+                                         List<Document> result) {
+        if (isEmpty(drawing.getName())) {
+            return;
+        }
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, drawing.getId()));
         add_field(doc, SearchFields.AOR_DRAWINGS, drawing.getName());
 
-        return doc;
+        result.add(doc);
     }
 
-    private Document docForTranscription(BookCollection col, Book book, String image, Errata errata) {
+    private void docForTranscription(BookCollection col, Book book, String image, Errata errata,
+                                         List<Document> result) {
+        if (isEmpty(errata.getAmendedText()) || isEmpty(errata.getCopyText())) {
+            return;
+        }
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, errata.getId()));
         add_field(doc, SearchFields.AOR_ERRATA, errata.getAmendedText() + " " + errata.getCopyText());
 
-        return doc;
+        result.add(doc);
     }
 
-    private Document docForTranscription(BookCollection col, Book book, String image, Mark mark) {
+    private void docForTranscription(BookCollection col, Book book, String image, Mark mark,
+                                         List<Document> result) {
+        if (isEmpty(mark.getName())) {
+            return;
+        }
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, mark.getId()));
         add_field(doc, SearchFields.AOR_MARKS, mark.getName());
 
-        return doc;
+        result.add(doc);
     }
 
-    private Document docForTranscription(BookCollection col, Book book, String image, Numeral numeral) {
+    private void docForTranscription(BookCollection col, Book book, String image, Numeral numeral,
+                                         List<Document> result) {
+        if (isEmpty(numeral.getReferringText())) {
+            return;
+        }
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, numeral.getId()));
         add_field(doc, SearchFields.AOR_NUMERALS, numeral.getReferringText());
 
-        return doc;
+        result.add(doc);
     }
 
-    private Document docForTranscription(BookCollection col, Book book, String image, Underline underline) {
+    private void docForTranscription(BookCollection col, Book book, String image, Underline underline,
+                                         List<Document> result) {
+        if (isEmpty(underline.getReferringText())) {
+            return;
+        }
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, underline.getId()));
         add_field(doc, SearchFields.AOR_UNDERLINES, underline.getReferringText());
 
-        return doc;
+        result.add(doc);
     }
 
-    private Document docForTranscription(BookCollection col, Book book, String image, Marginalia marg) {
+    private void docForTranscription(BookCollection col, Book book, String image, Marginalia marg,
+                                         List<Document> result) {
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, marg.getId()));
@@ -813,7 +799,7 @@ public class LuceneMapper {
             add_field(doc, SearchFields.AOR_MARGINALIA_INTERNAL_REFS, internalRefs.toString());
         }
 
-        return doc;
+        result.add(doc);
     }
 
     private String listToString(List<String> list) {
