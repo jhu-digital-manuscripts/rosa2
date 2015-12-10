@@ -14,11 +14,24 @@ import java.util.logging.Logger;
 public class Annotations implements AORAnnotatedPageConstants {
     private static final Logger logger = Logger.getLogger(Annotations.class.toString());
     private static final String ANNOTATION_ILLUSTRATION = "illustration";
+    private static final String ANNOTATION_ID_SEPARATOR = "_";
+
+    /**
+     * An annotation ID consists of the page on which the annotation lives, the type
+     * of the annotation (underline, marginalia, etc), and its index on the page.
+     *
+     * @param page ID of page
+     * @param annotationType type = (underline|symbol|marginalia|mark|drawing|numeral|errata)
+     * @param index the index of the annotation on the page
+     * @return annotation ID
+     */
+    public static String annotationId(String page, String annotationType, int index) {
+        return page + ANNOTATION_ID_SEPARATOR + annotationType + ANNOTATION_ID_SEPARATOR + index;
+    }
 
     /**
      * Get the archive annotation that was named. TODO should test
      *
-     * TODO Annotation ID structure should be defined externally
      * Annotation ID structure should be:
      *      page-id_annotation-type_number
      *
