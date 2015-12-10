@@ -108,9 +108,11 @@ public class IIIFLuceneSearchAdapter {
      * transformed into IIIF format.
      *
      * The context gives a small snippet of text surrounding the search hit.
+     * This context is handled with {@link #getContextHits(List, String)}
      *
      * @param result lucene result
      * @return IIIF compatible result
+     * @throws IOException possible exception if the archive is unavailable
      *
      * @see SearchResult
      * @see rosa.search.model.SearchMatch
@@ -143,6 +145,54 @@ public class IIIFLuceneSearchAdapter {
         return iiifResult;
     }
 
+    /**
+     * Translate the search results contexts into IIIF form.
+     *
+     * Search results from Lucene return with an ID and a set of strings that set the
+     * context of the search match. In these context strings, those words that were
+     * matched are bolded using HTML &lt;b&gt; tags. Surrounding text is present to give
+     * the match some context. These strings must be transformed into a form used by IIIF
+     * results.
+     *
+     * Search results in IIIF are formatted according to the (new/WIP) sc:Hit object. In
+     * this form, the search context can use an oa:TextQuoteSelector, which hold the
+     * matching words in a parameter (match|exact) and holds surrounding contextual text
+     * in separate parameters (before|prefix) and (after|suffix).
+     *
+     * When translating, all text surrounded by HTML 'b' tags are put in the 'matching'
+     * parameter, while preceding text is put in the 'before' parameter and proceeding
+     * text is put in the 'after' parameter.
+     *
+     * EX:
+     * {@code
+     *   Lucene context: "This is a <b>matching string</b> with context"
+     *   IIIF Hit: {
+     *       match: "matching string",
+     *       before: "This is a ",
+     *       after: " with context"
+     *   }
+     * }
+     *
+     * One minor complication is the possibility that if sequential words are matched,
+     * Lucene will often surround the individual words with HTML 'b' tags, instead of
+     * the phrase: EX: {@code A string <b>with</b> <b>multiple</b> matches}. In this case,
+     * consecutive bolded words should be detected and be put together in the same IIIF
+     * 'match' parameter, instead of separate IIIF hits.
+     *
+     * EX:
+     * {@code
+     *   Lucene context: "This is a <b>matching</b> <b>string</b> with context"
+     *   IIIF Hit: {
+     *       match: "matching string",
+     *       before: "This is a ",
+     *       after: " with context"
+     *   }
+     * }
+     *
+     * @param contexts list of search contexts
+     * @param matchId ID field from a search match
+     * @return a list of IIIF Hits
+     */
     protected List<IIIFSearchHit> getContextHits(List<String> contexts, String matchId) {
         List<IIIFSearchHit> hits = new ArrayList<>();
         String[] associatedAnnos = new String[] {getAnnotationId(matchId)};
@@ -154,19 +204,16 @@ public class IIIFLuceneSearchAdapter {
             int end = 0;
             while (start >= 0 && start < tmp.length()) {
                 String hit_before = context.substring((end == 0 ? end : end+4), start);
-//                System.out.printf("(%d,%d)[%s] :: ", (end == 0 ? end : end+4), start, hit_before);
                 end = tmp.indexOf("</b>", start);
-                String hit_match = context.substring(start + 3, end);   // Must get rid of starting <b>
-//                System.out.printf("(%d,%d)[%s] :: ", start+3, end, hit_match);
+                String hit_match = context.substring(start + 3, end);
                 start = tmp.indexOf("<b>", end);
 
                 String hit_after;
                 if (start > context.length() || start < 0) {
-                    hit_after = context.substring(end + 4);             // Must get rid of starting </b>
+                    hit_after = context.substring(end + 4);
                 } else {
-                    hit_after = context.substring(end + 4, start);      // Must get rid of starting </b>
+                    hit_after = context.substring(end + 4, start);
                 }
-//                System.out.printf("(%d,%d)[%s]\n", end+4, start, hit_after);
 
                 hits.add(new IIIFSearchHit(associatedAnnos, hit_match, hit_before, hit_after));
             }
