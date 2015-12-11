@@ -64,7 +64,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
         List<IIIFSearchHit> expected = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
-            String[] ID = new String[] {"FolgersHa2.009r.tif_symbol_"+i};
+            String[] ID = new String[] {"http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/annotation/FolgersHa2.009r.tif_symbol_"+i};
             expected.add(new IIIFSearchHit(ID, "fdsa", "asdf ", " asdf"));
             expected.add(new IIIFSearchHit(ID, "fdsa", "sfad ", " JFIO ifsa I"));
         }
@@ -83,12 +83,12 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
             IIIFSearchHit{annotations=[null], matching='ifsa', before=' JFIO ', after=''}
          */
         List<IIIFSearchHit> expected = Arrays.asList(
-                new IIIFSearchHit(new String[] {null}, "fdsa fdas", "asdf ", " asdf"),
-                new IIIFSearchHit(new String[] {null}, "fdsa", "sfad ", " JFIO "),
-                new IIIFSearchHit(new String[] {null}, "ifsa", " JFIO ", "")
+                new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "fdsa fdas", "asdf ", " asdf"),
+                new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "fdsa", "sfad ", " JFIO "),
+                new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "ifsa", " JFIO ", "")
         );
 
-        List<IIIFSearchHit> hits = adapter.getContextHits(testList, "ID");
+        List<IIIFSearchHit> hits = adapter.getContextHits(testList, "ID", "COLLECTION", "BOOK");
         assertNotNull("Hits is NULL.", hits);
         assertFalse("Hits is empty/contains no hits.", hits.isEmpty());
         assertEquals("Unexpected list of IIIFSearchHits found.", expected, hits);

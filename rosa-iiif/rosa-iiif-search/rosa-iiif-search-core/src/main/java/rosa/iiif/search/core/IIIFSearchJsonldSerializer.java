@@ -4,6 +4,7 @@ import org.json.JSONException;
 import org.json.JSONWriter;
 import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
 import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
@@ -131,12 +132,23 @@ public class IIIFSearchJsonldSerializer extends JsonldSerializer implements IIIF
             }
         } else {
             writer.key("on").object().key("@id").value(target.getUri());
-
+            writeWithin(target, writer);
             writer.endObject();
         }
     }
 
     private void writeWithin(AnnotationTarget target, JSONWriter writer) {
+        Reference ref = target.getParentRef();
+        if (ref == null) {
+            return;
+        }
 
+        writer.key("within").object();
+
+        writer.key("@id").value(ref.getReference());
+        writer.key("type").value(ref.getType());
+        writer.key("label").value(ref.getLabel());
+
+        writer.endObject();
     }
 }

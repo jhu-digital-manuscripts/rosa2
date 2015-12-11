@@ -117,7 +117,7 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
      * transformed into IIIF format.
      *
      * The context gives a small snippet of text surrounding the search hit.
-     * This context is handled with {@link #getContextHits(List, String)}
+     * This context is handled with {@link #getContextHits(List, String, String, String)}
      *
      * @param result lucene result
      * @return IIIF compatible result
@@ -129,6 +129,7 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
     public IIIFSearchResult luceneResultToIIIF(SearchResult result) throws IOException {
         IIIFSearchResult iiifResult = new IIIFSearchResult();
 
+        // TODO search API URI IDs
         iiifResult.setTotal(result.getTotal());
         iiifResult.setStartIndex(result.getOffset());
 
@@ -144,9 +145,13 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
             Book book = getBook(matchId);
             if (book == null) {
                 // TODO log if this happens
-                return null;
+                continue;
             }
             rosa.archive.model.aor.Annotation archiveAnno = getArchiveAnnotation(matchId);
+            if (archiveAnno == null) {
+                continue;
+            }
+            archiveAnno.setId(SearchUtil.getAnnotationFromId(matchId));
 
             //   Transform archive anno -> iiif anno using AnnotationTransformer
             Annotation presentationAnno = annotationTransformer.transform(col, book, archiveAnno);
@@ -158,10 +163,18 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
             presentationAnno.getDefaultTarget().setParentRef(parentRef);
 
             annotations.add(presentationAnno);
-            hits.addAll(getContextHits(match.getContext(), matchId));
+            hits.addAll(getContextHits(match.getContext(), matchId, col.getId(), book.getId()));
         }
 
         iiifResult.setHits(hits.toArray(new IIIFSearchHit[hits.size()]));
+
+        /*
+            TODO URIs for paging:
+            First
+            last
+            next
+            prev
+         */
 
         return iiifResult;
     }
@@ -236,9 +249,12 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
      * @param matchId ID field from a search match
      * @return a list of IIIF Hits
      */
-    protected List<IIIFSearchHit> getContextHits(List<String> contexts, String matchId) {
+    protected List<IIIFSearchHit> getContextHits(List<String> contexts, String matchId,
+                                                 String collection, String book) {
         List<IIIFSearchHit> hits = new ArrayList<>();
-        String[] associatedAnnos = new String[] {getAnnotationId(matchId)};
+        String[] associatedAnnos = new String[] {
+                urlId(collection, book, getAnnotationId(matchId), PresentationRequestType.ANNOTATION)
+        };
 
         // Create Hit objects from the context
         for (String context : contexts) {
@@ -333,9 +349,9 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
         return SearchUtil.getBookFromId(matchId);
     }
 
-    private String getAnnotationPage(String matchId) {
-        return SearchUtil.getImageFromId(matchId);
-    }
+//    private String getAnnotationPage(String matchId) {
+//        return SearchUtil.getImageFromId(matchId);
+//    }
 
     private String getAnnotationId(String matchId) {
         return SearchUtil.getAnnotationFromId(matchId);
