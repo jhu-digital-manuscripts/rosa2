@@ -36,4 +36,12 @@ public class ModelEqualsTest {
                 .verify();
     }
 
+    @Test
+    public void testHitSelector() {
+        EqualsVerifier.forClass(HitSelector.class).allFieldsShouldBeUsed()
+                .suppress(Warning.NONFINAL_FIELDS)
+                .usingGetClass()
+                .verify();
+    }
+
 }

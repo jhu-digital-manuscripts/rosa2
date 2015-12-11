@@ -30,9 +30,11 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
         SearchService luceneSearchService = new LuceneSearchService(tmpfolder.newFolder().toPath());
         luceneSearchService.update(store, VALID_COLLECTION);
 
+        IIIFRequestFormatter requestFormatter = new IIIFRequestFormatter("SCHEME", "HOST", "PREFIX", 80);
         IIIFLuceneSearchAdapter adapter = new IIIFLuceneSearchAdapter(
-                new AnnotationTransformer(new IIIFRequestFormatter("SCHEME", "HOST", "PREFIX", 80)),
-                store
+                new AnnotationTransformer(requestFormatter),
+                store,
+                requestFormatter
         );
 
         this.service = new RosaIIIFSearchService(luceneSearchService, adapter);

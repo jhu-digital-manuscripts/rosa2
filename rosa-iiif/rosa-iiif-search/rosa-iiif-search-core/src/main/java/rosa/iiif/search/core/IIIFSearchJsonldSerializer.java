@@ -5,6 +5,11 @@ import org.json.JSONWriter;
 import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.annotation.Annotation;
+import rosa.iiif.presentation.model.annotation.AnnotationTarget;
+import rosa.iiif.presentation.model.selector.FragmentSelector;
+import rosa.iiif.presentation.model.selector.Selector;
+import rosa.iiif.presentation.model.selector.SvgSelector;
+import rosa.iiif.search.model.IIIFSearchHit;
 import rosa.iiif.search.model.IIIFSearchNames;
 import rosa.iiif.search.model.IIIFSearchResult;
 
@@ -40,16 +45,27 @@ public class IIIFSearchJsonldSerializer extends JsonldSerializer implements IIIF
 
         addIiifContext(writer, isRequested);
         writeBaseData(result, writer);
-        writer.key("@id").value(result.getId());
-        writer.key("@type").value(IIIFNames.SC_ANNOTATION_LIST);
 
         writer.key("within").object();
         writer.key("type").value(SC_LAYER);
         writer.key("total").value(result.getTotal());
 
-        writer.key("ignored").array()
-                .value("date").value("user").value("box")
-                .endArray();
+        // TODO make IGNORED param configurable
+        writer.key("ignored").array();
+        for (String ig : result.getIgnored()) {
+            writer.value(ig);
+        }
+        writer.endArray();
+
+        // TODO must generate/retrieve First/Last URIs
+        writeIfNotNull("first", result.getFirst(), writer);
+        writeIfNotNull("last", result.getLast(), writer);
+
+        writer.endObject();      // end 'WITHIN'
+
+        writeIfNotNull("next", result.getNext(), writer);
+        writeIfNotNull("prev", result.getPrev(), writer);
+        writeIfNotNull("startIndex", result.getStartIndex(), writer);
 
         if (isRequested) {
             writer.key("resources").array();
@@ -58,6 +74,69 @@ public class IIIFSearchJsonldSerializer extends JsonldSerializer implements IIIF
             }
             writer.endArray();
         }
+
+        // Create "hits" obj
+        if (result.getHits() != null) {
+            writer.key("hits").array();
+            for (IIIFSearchHit hit : result.getHits()) {
+                writeJsonld(hit, writer);
+            }
+            writer.endArray();
+        }
+
         writer.endObject();
+    }
+
+    private void writeJsonld(IIIFSearchHit hit, JSONWriter writer) {
+        if (hit == null) {
+            return;
+        }
+        writer.object();
+
+        writer.key("type").value(SEARCH_HIT);
+        writer.key("annotations").array();
+        for (String anno : hit.annotations) {
+            writer.value(anno);     // TODO ensure these are URIs
+        }
+        writer.endArray();
+
+        writeIfNotNull("match", hit.matching, writer);
+        writeIfNotNull("before", hit.before, writer);
+        writeIfNotNull("after", hit.after, writer);
+
+        writer.endObject();
+    }
+
+    /**
+     * Modify existing behavior when writing out AoR annotations to JSON by
+     * including a modified "on" parameter that includes a "within" property
+     * to specify the parent objects.
+     *
+     * @param annotation annotation
+     * @param writer JSON writer
+     * @throws JSONException .
+     */
+    @Override
+    protected void writeTarget(Annotation annotation, JSONWriter writer) throws JSONException {
+        AnnotationTarget target = annotation.getDefaultTarget();
+
+        if (target.isSpecificResource()) {
+            Selector selector = target.getSelector();
+            if (selector instanceof FragmentSelector) {
+                writer.key("on").object().key("@id").value(target.getUri() + "#xywh=" + selector.content());
+                writeWithin(target, writer);
+                writer.endObject();
+            } else if (selector instanceof SvgSelector) {
+                writeSelector(target.getSelector(), writer);
+            }
+        } else {
+            writer.key("on").object().key("@id").value(target.getUri());
+
+            writer.endObject();
+        }
+    }
+
+    private void writeWithin(AnnotationTarget target, JSONWriter writer) {
+
     }
 }

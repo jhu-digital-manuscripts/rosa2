@@ -36,7 +36,8 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
         IIIFRequestFormatter requestFormatter = new IIIFRequestFormatter(scheme, host, pres_prefix, port);
 
-        this.adapter = new IIIFLuceneSearchAdapter(new AnnotationTransformer(requestFormatter), store);
+        this.adapter = new IIIFLuceneSearchAdapter(new AnnotationTransformer(requestFormatter), store,
+                requestFormatter);
     }
 
     @Test

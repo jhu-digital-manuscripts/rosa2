@@ -3,8 +3,14 @@ package rosa.iiif.search.core;
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.archive.core.util.Annotations;
+import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.PresentationRequest;
+import rosa.iiif.presentation.model.PresentationRequestType;
+import rosa.iiif.presentation.model.Reference;
+import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.search.model.IIIFSearchHit;
 import rosa.iiif.search.model.IIIFSearchRequest;
@@ -35,16 +41,19 @@ import java.util.concurrent.ConcurrentHashMap;
  * - Search results from the search service TO a format specified in the IIIF Search API
  *   - (http://search.iiif.io/api/search/0.9/#response)
  */
-public class IIIFLuceneSearchAdapter {
+public class IIIFLuceneSearchAdapter implements IIIFNames {
     private static final int max_cache_size = 1000;
 
     private AnnotationTransformer annotationTransformer;
+    private IIIFRequestFormatter presReqFormatter;
     private Store archiveStore;
 
     private final ConcurrentHashMap<String, Object> cache;
 
-    public IIIFLuceneSearchAdapter(AnnotationTransformer annotationTransformer, Store archiveStore) {
+    public IIIFLuceneSearchAdapter(AnnotationTransformer annotationTransformer, Store archiveStore,
+                                   IIIFRequestFormatter presReqFormatter) {
         this.annotationTransformer = annotationTransformer;
+        this.presReqFormatter = presReqFormatter;
         this.archiveStore = archiveStore;
 
         this.cache = new ConcurrentHashMap<>(max_cache_size);
@@ -133,10 +142,22 @@ public class IIIFLuceneSearchAdapter {
 
             BookCollection col = getCollection(matchId);
             Book book = getBook(matchId);
+            if (book == null) {
+                // TODO log if this happens
+                return null;
+            }
             rosa.archive.model.aor.Annotation archiveAnno = getArchiveAnnotation(matchId);
 
             //   Transform archive anno -> iiif anno using AnnotationTransformer
-            annotations.add(annotationTransformer.transform(col, book, archiveAnno));
+            Annotation presentationAnno = annotationTransformer.transform(col, book, archiveAnno);
+            // Set presentation annotation parent reference
+            Reference parentRef = new Reference(
+                    urlId(col.getId(), book.getId(), null, PresentationRequestType.MANIFEST),
+                    new TextValue(book.getBookMetadata("en").getCommonName(), "en"),
+                    SC_MANIFEST);        // TODO proper language support here
+            presentationAnno.getDefaultTarget().setParentRef(parentRef);
+
+            annotations.add(presentationAnno);
             hits.addAll(getContextHits(match.getContext(), matchId));
         }
 
@@ -150,7 +171,7 @@ public class IIIFLuceneSearchAdapter {
      *
      * Search results from Lucene return with an ID and a set of strings that set the
      * context of the search match. In these context strings, those words that were
-     * matched are bolded using HTML &lt;b&gt; tags. Surrounding text is present to give
+     * matched are bold using HTML &lt;b&gt; tags. Surrounding text is present to give
      * the match some context. These strings must be transformed into a form used by IIIF
      * results.
      *
@@ -176,7 +197,7 @@ public class IIIFLuceneSearchAdapter {
      * One minor complication is the possibility that if sequential words are matched,
      * Lucene will often surround the individual words with HTML 'b' tags, instead of
      * the phrase: EX: {@code A string <b>with</b> <b>multiple</b> matches}. In this case,
-     * consecutive bolded words should be detected and be put together in the same IIIF
+     * consecutive bold words should be detected and be put together in the same IIIF
      * 'match' parameter, instead of separate IIIF hits.
      *
      * EX:
@@ -186,6 +207,28 @@ public class IIIFLuceneSearchAdapter {
      *       match: "matching string",
      *       before: "This is a ",
      *       after: " with context"
+     *   }
+     * }
+     *
+     * TODO: Selectors
+     * If multiple Hits are found for the same annotation, they should both be included
+     * in the same IIIFSearchHit object, but as separate selectors.
+     *
+     * EX:
+     * {@code
+     *   Lucene context: "This context has <b>multiple</b> separate <b>matching</b> parts"
+     *   IIIF Hit: {
+     *       annotations: [ annoId ],
+     *       selectors: [{
+     *              match: "multiple",
+     *              before: "This context has ",
+     *              after: " separate "
+     *          },{
+     *              match: "matching",
+     *              before: " separate ",
+     *              after: " parts"
+     *          }
+     *       ]
      *   }
      * }
      *
@@ -262,6 +305,22 @@ public class IIIFLuceneSearchAdapter {
      */
     private String getSearchTerm(String queryFrag) {
         return queryFrag;
+    }
+
+    // ----- URI parsing -----
+
+    // TODO Shared code with BasePresentationTransformer. Externalize!
+    protected String urlId(String collection, String book, String name, PresentationRequestType type) {
+        return presReqFormatter.format(presentationRequest(collection, book, name, type));
+    }
+
+    private String presentationId(String collection, String book) {
+        return collection + (book == null || book.isEmpty() ? "" : "." + book);
+    }
+
+    private PresentationRequest presentationRequest(String collection, String book, String name,
+                                                    PresentationRequestType type) {
+        return new PresentationRequest(presentationId(collection, book), name, type);
     }
 
     // ----- Name parsing -----

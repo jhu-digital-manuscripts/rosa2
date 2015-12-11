@@ -457,7 +457,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         }
     }
 
-    private void writeTarget(Annotation annotation, JSONWriter jWriter) throws JSONException {
+    protected void writeTarget(Annotation annotation, JSONWriter jWriter) throws JSONException {
         AnnotationTarget target = annotation.getDefaultTarget();
 
         if (target.isSpecificResource()) {
@@ -473,7 +473,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
     }
 
-    private void writeSelector(Selector selector, JSONWriter jWriter) throws JSONException {
+    protected void writeSelector(Selector selector, JSONWriter jWriter) throws JSONException {
         jWriter.key("selector");
         jWriter.object();
         writeIfNotNull("@context", selector.context(), jWriter);
@@ -601,14 +601,14 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         jWriter.endObject();
     }
 
-    private void writeIfNotNull(String key, Object value, JSONWriter jWriter)
+    protected void writeIfNotNull(String key, Object value, JSONWriter jWriter)
             throws JSONException {
         if (value != null && !value.toString().equals("")) {
             jWriter.key(key).value(value.toString());
         }
     }
 
-    private void writeIfNotNull(String key, int value, JSONWriter jWriter) throws JSONException {
+    protected void writeIfNotNull(String key, int value, JSONWriter jWriter) throws JSONException {
         if (value != -1) {
             jWriter.key(key).value(value);
         }
