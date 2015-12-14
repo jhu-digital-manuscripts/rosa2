@@ -7,4 +7,6 @@ import java.io.IOException;
 
 public interface IIIFSearchService {
     IIIFSearchResult search(IIIFSearchRequest request) throws IOException;
+    void update() throws IOException;
+    void shutdown() throws IOException;
 }

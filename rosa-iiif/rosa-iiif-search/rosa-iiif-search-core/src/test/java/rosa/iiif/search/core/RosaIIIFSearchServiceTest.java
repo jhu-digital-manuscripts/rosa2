@@ -37,7 +37,7 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
                 requestFormatter
         );
 
-        this.service = new RosaIIIFSearchService(luceneSearchService, adapter);
+        this.service = new RosaIIIFSearchService(store, luceneSearchService, adapter, "valid");
     }
 
     /**
