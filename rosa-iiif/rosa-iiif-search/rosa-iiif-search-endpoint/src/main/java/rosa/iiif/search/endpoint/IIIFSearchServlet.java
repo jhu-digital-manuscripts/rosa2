@@ -54,7 +54,9 @@ public class IIIFSearchServlet extends HttpServlet {
             logger.log(Level.SEVERE, "Failed to update index for IIIF search service.", e);
         }
     }
-
+/*
+TODO Need to pick apart the PATH to determine the object in which to search
+ */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String query = req.getParameter(PARAM_Q);
