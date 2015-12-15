@@ -48,7 +48,7 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
      */
     @Test
     public void validSearchTest() throws Exception {
-        IIIFSearchResult result = service.search(new IIIFSearchRequest("Sun"));
+        IIIFSearchResult result = service.search(new IIIFSearchRequest("", "Sun"));
 
         assertNotNull("Result is NULL.", result);
         assertEquals("Unexpected number of results found.", 44, result.getTotal());

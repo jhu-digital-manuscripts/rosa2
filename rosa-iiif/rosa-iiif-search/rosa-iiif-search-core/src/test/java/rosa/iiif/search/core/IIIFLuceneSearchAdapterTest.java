@@ -42,7 +42,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
     @Test
     public void blankIiifToLuceneQueryTest() {
-        IIIFSearchRequest request = new IIIFSearchRequest("");
+        IIIFSearchRequest request = new IIIFSearchRequest("", "");
         Query result = adapter.iiifToLuceneQuery(request);
 
         assertNotNull("Resulting Query obj was NULL.", result);
@@ -51,7 +51,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
     @Test
     public void iiifToLuceneQueryTest() {
-        IIIFSearchRequest request = new IIIFSearchRequest("Moo cow");
+        IIIFSearchRequest request = new IIIFSearchRequest("", "Moo cow");
         Query result = adapter.iiifToLuceneQuery(request);
 
         assertNotNull("Resulting Lucene query was NULL.", result);

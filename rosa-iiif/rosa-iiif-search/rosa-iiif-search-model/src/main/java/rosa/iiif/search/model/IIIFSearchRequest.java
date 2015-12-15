@@ -15,6 +15,11 @@ import java.util.List;
 public class IIIFSearchRequest implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     *
+     */
+    public final String objectId;
+
     public final String[] queryTerms;
 
     /**
@@ -40,7 +45,8 @@ public class IIIFSearchRequest implements Serializable {
     /** TODO should results page be included here?? */
     public final int page;
 
-    public IIIFSearchRequest(String q, String motivations, String dates, String users, String box, int page) {
+    public IIIFSearchRequest(String objectId, String q, String motivations, String dates, String users, String box, int page) {
+        this.objectId = objectId;
         this.queryTerms = toArray(q);
         this.motivations = toArray(motivations);
         this.dates = toArray(dates);
@@ -49,37 +55,40 @@ public class IIIFSearchRequest implements Serializable {
         this.page = page;
     }
 
-    public IIIFSearchRequest(String q, String motivations, int page) {
-        this(q, motivations, null, null, null, page);
+    public IIIFSearchRequest(String objectId, String q, String motivations, int page) {
+        this(objectId, q, motivations, null, null, null, page);
     }
 
     /**
      * Construct a new IIIFSearchRequest with dates, users, box(es) ignored.
      *
+     * @param objectId the IIIF ID of the object within which to search
      * @param q query terms
      * @param motivations motivations
      */
-    public IIIFSearchRequest(String q, String motivations) {
-        this(q, motivations, 0);
+    public IIIFSearchRequest(String objectId, String q, String motivations) {
+        this(objectId, q, motivations, 0);
     }
 
     /**
      * Construct a new IIIFSearchRequest
      *
+     * @param objectId the IIIF ID of the object within which to search
      * @param q query terms
      * @param page requested results page
      */
-    public IIIFSearchRequest(String q, int page) {
-        this(q, null, page);
+    public IIIFSearchRequest(String objectId, String q, int page) {
+        this(objectId, q, null, page);
     }
 
     /**
      * Construct a new IIIFSearchRequest with ONLY query terms.
      *
+     * @param objectId the IIIF ID of the object within which to search
      * @param q query terms
      */
-    public IIIFSearchRequest(String q) {
-        this(q, 0);
+    public IIIFSearchRequest(String objectId, String q) {
+        this(objectId, q, 0);
     }
 
     /**
@@ -135,20 +144,22 @@ public class IIIFSearchRequest implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        IIIFSearchRequest request = (IIIFSearchRequest) o;
+        IIIFSearchRequest that = (IIIFSearchRequest) o;
 
-        if (page != request.page) return false;
-        if (!Arrays.deepEquals(queryTerms, request.queryTerms)) return false;
-        if (!Arrays.deepEquals(motivations, request.motivations)) return false;
-        if (!Arrays.deepEquals(dates, request.dates)) return false;
-        if (!Arrays.deepEquals(users, request.users)) return false;
-        return Arrays.deepEquals(box, request.box);
+        if (page != that.page) return false;
+        if (objectId != null ? !objectId.equals(that.objectId) : that.objectId != null) return false;
+        if (!Arrays.deepEquals(queryTerms, that.queryTerms)) return false;
+        if (!Arrays.deepEquals(motivations, that.motivations)) return false;
+        if (!Arrays.deepEquals(dates, that.dates)) return false;
+        if (!Arrays.deepEquals(users, that.users)) return false;
+        return Arrays.deepEquals(box, that.box);
 
     }
 
     @Override
     public int hashCode() {
-        int result = queryTerms != null ? Arrays.deepHashCode(queryTerms) : 0;
+        int result = objectId != null ? objectId.hashCode() : 0;
+        result = 31 * result + (queryTerms != null ? Arrays.deepHashCode(queryTerms) : 0);
         result = 31 * result + (motivations != null ? Arrays.deepHashCode(motivations) : 0);
         result = 31 * result + (dates != null ? Arrays.deepHashCode(dates) : 0);
         result = 31 * result + (users != null ? Arrays.deepHashCode(users) : 0);
@@ -160,7 +171,8 @@ public class IIIFSearchRequest implements Serializable {
     @Override
     public String toString() {
         return "IIIFSearchRequest{" +
-                "queryTerms=" + Arrays.toString(queryTerms) +
+                "objectId='" + objectId + '\'' +
+                ", queryTerms=" + Arrays.toString(queryTerms) +
                 ", motivations=" + Arrays.toString(motivations) +
                 ", dates=" + Arrays.toString(dates) +
                 ", users=" + Arrays.toString(users) +
