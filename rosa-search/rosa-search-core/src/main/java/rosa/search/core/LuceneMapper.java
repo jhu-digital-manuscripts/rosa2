@@ -668,6 +668,9 @@ public class LuceneMapper {
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, symbol.getId()));
+        add_field(doc, SearchFields.COLLECTION_ID, col.getId());
+        add_field(doc, SearchFields.BOOK_ID, book.getId());
+        add_field(doc, SearchFields.IMAGE_NAME, image);
         add_field(doc, SearchFields.AOR_SYMBOLS, symbol.getName());
 
         result.add(doc);
@@ -681,6 +684,9 @@ public class LuceneMapper {
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, drawing.getId()));
+        add_field(doc, SearchFields.COLLECTION_ID, col.getId());
+        add_field(doc, SearchFields.BOOK_ID, book.getId());
+        add_field(doc, SearchFields.IMAGE_NAME, image);
         add_field(doc, SearchFields.AOR_DRAWINGS, drawing.getName());
 
         result.add(doc);
@@ -694,6 +700,9 @@ public class LuceneMapper {
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, errata.getId()));
+        add_field(doc, SearchFields.COLLECTION_ID, col.getId());
+        add_field(doc, SearchFields.BOOK_ID, book.getId());
+        add_field(doc, SearchFields.IMAGE_NAME, image);
         add_field(doc, SearchFields.AOR_ERRATA, errata.getAmendedText() + " " + errata.getCopyText());
 
         result.add(doc);
@@ -707,6 +716,9 @@ public class LuceneMapper {
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, mark.getId()));
+        add_field(doc, SearchFields.COLLECTION_ID, col.getId());
+        add_field(doc, SearchFields.BOOK_ID, book.getId());
+        add_field(doc, SearchFields.IMAGE_NAME, image);
         add_field(doc, SearchFields.AOR_MARKS, mark.getName());
 
         result.add(doc);
@@ -720,6 +732,9 @@ public class LuceneMapper {
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, numeral.getId()));
+        add_field(doc, SearchFields.COLLECTION_ID, col.getId());
+        add_field(doc, SearchFields.BOOK_ID, book.getId());
+        add_field(doc, SearchFields.IMAGE_NAME, image);
         add_field(doc, SearchFields.AOR_NUMERALS, numeral.getReferringText());
 
         result.add(doc);
@@ -733,6 +748,9 @@ public class LuceneMapper {
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, underline.getId()));
+        add_field(doc, SearchFields.COLLECTION_ID, col.getId());
+        add_field(doc, SearchFields.BOOK_ID, book.getId());
+        add_field(doc, SearchFields.IMAGE_NAME, image);
         add_field(doc, SearchFields.AOR_UNDERLINES, underline.getReferringText());
 
         result.add(doc);
@@ -743,6 +761,10 @@ public class LuceneMapper {
         Document doc = new Document();
 
         add_field(doc, SearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, marg.getId()));
+        add_field(doc, SearchFields.COLLECTION_ID, col.getId());
+        add_field(doc, SearchFields.BOOK_ID, book.getId());
+        add_field(doc, SearchFields.IMAGE_NAME, image);
+
         if (!isEmpty(marg.getReferringText())) {
             add_field(doc, SearchFields.AOR_UNDERLINES, marg.getReferringText());
         }

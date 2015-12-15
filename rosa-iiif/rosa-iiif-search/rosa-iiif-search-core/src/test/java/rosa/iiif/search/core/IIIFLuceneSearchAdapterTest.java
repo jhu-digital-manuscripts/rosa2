@@ -5,6 +5,8 @@ import org.junit.Test;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
+import rosa.iiif.presentation.model.PresentationRequest;
+import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.search.model.IIIFSearchHit;
 import rosa.iiif.search.model.IIIFSearchRequest;
 import rosa.iiif.search.model.IIIFSearchResult;
@@ -42,16 +44,16 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
     @Test
     public void blankIiifToLuceneQueryTest() {
-        IIIFSearchRequest request = new IIIFSearchRequest("", "");
+        IIIFSearchRequest request = new IIIFSearchRequest(mockRequest(), "");
         Query result = adapter.iiifToLuceneQuery(request);
 
         assertNotNull("Resulting Query obj was NULL.", result);
-        assertEquals("Unexpected Query found.", new Query(QueryOperation.AND), result);
+        assertEquals("Unexpected Query found.", expectedBlankQuery(), result);
     }
 
     @Test
     public void iiifToLuceneQueryTest() {
-        IIIFSearchRequest request = new IIIFSearchRequest("", "Moo cow");
+        IIIFSearchRequest request = new IIIFSearchRequest(mockRequest(), "Moo cow");
         Query result = adapter.iiifToLuceneQuery(request);
 
         assertNotNull("Resulting Lucene query was NULL.", result);
@@ -113,11 +115,23 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
         return new SearchResult(10L, 50L, matches.toArray(new SearchMatch[matches.size()]), "");
     }
 
+    private Query expectedBlankQuery() {
+        return new Query(
+                QueryOperation.AND,
+                new Query(SearchFields.ID, "moo;cow;Bessy")
+        );
+    }
+
+    private PresentationRequest mockRequest() {
+        return new PresentationRequest("moo.cow", "Bessy", PresentationRequestType.CANVAS);
+    }
+
     private Query expectedQuery() {
         return new Query(
                 QueryOperation.AND,
                 allQuery("Moo"),
-                allQuery("cow")
+                allQuery("cow"),
+                new Query(SearchFields.ID, "moo;cow;Bessy")
         );
     }
 

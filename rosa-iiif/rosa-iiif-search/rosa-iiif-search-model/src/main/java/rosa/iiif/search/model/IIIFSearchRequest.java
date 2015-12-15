@@ -1,5 +1,7 @@
 package rosa.iiif.search.model;
 
+import rosa.iiif.presentation.model.PresentationRequest;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,7 +20,7 @@ public class IIIFSearchRequest implements Serializable {
     /**
      *
      */
-    public final String objectId;
+    public final PresentationRequest objectId;
 
     public final String[] queryTerms;
 
@@ -45,8 +47,8 @@ public class IIIFSearchRequest implements Serializable {
     /** TODO should results page be included here?? */
     public final int page;
 
-    public IIIFSearchRequest(String objectId, String q, String motivations, String dates, String users, String box, int page) {
-        this.objectId = objectId;
+    public IIIFSearchRequest(PresentationRequest object, String q, String motivations, String dates, String users, String box, int page) {
+        this.objectId = object;
         this.queryTerms = toArray(q);
         this.motivations = toArray(motivations);
         this.dates = toArray(dates);
@@ -55,40 +57,40 @@ public class IIIFSearchRequest implements Serializable {
         this.page = page;
     }
 
-    public IIIFSearchRequest(String objectId, String q, String motivations, int page) {
-        this(objectId, q, motivations, null, null, null, page);
+    public IIIFSearchRequest(PresentationRequest object, String q, String motivations, int page) {
+        this(object, q, motivations, null, null, null, page);
     }
 
     /**
      * Construct a new IIIFSearchRequest with dates, users, box(es) ignored.
      *
-     * @param objectId the IIIF ID of the object within which to search
+     * @param object the IIIF ID of the object within which to search
      * @param q query terms
      * @param motivations motivations
      */
-    public IIIFSearchRequest(String objectId, String q, String motivations) {
-        this(objectId, q, motivations, 0);
+    public IIIFSearchRequest(PresentationRequest object, String q, String motivations) {
+        this(object, q, motivations, 0);
     }
 
     /**
      * Construct a new IIIFSearchRequest
      *
-     * @param objectId the IIIF ID of the object within which to search
+     * @param object the IIIF ID of the object within which to search
      * @param q query terms
      * @param page requested results page
      */
-    public IIIFSearchRequest(String objectId, String q, int page) {
-        this(objectId, q, null, page);
+    public IIIFSearchRequest(PresentationRequest object, String q, int page) {
+        this(object, q, null, page);
     }
 
     /**
      * Construct a new IIIFSearchRequest with ONLY query terms.
      *
-     * @param objectId the IIIF ID of the object within which to search
+     * @param object the IIIF ID of the object within which to search
      * @param q query terms
      */
-    public IIIFSearchRequest(String objectId, String q) {
-        this(objectId, q, 0);
+    public IIIFSearchRequest(PresentationRequest object, String q) {
+        this(object, q, 0);
     }
 
     /**

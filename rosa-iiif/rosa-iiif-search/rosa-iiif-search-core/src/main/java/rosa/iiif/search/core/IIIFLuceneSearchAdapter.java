@@ -99,8 +99,18 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
             over to generate the Lucene query.
          */
 
-
-
+        // Restrict query based on requested object
+        PresentationRequest req = iiifReq.objectId;
+        switch (iiifReq.objectId.getType()) {
+            case CANVAS:
+                top_query.add(new Query(SearchFields.IMAGE_NAME, getCanvasName(req)));
+            case MANIFEST:
+                top_query.add(new Query(SearchFields.BOOK_ID, getManifestName(req)));
+            case COLLECTION:
+                top_query.add(new Query(SearchFields.COLLECTION_ID, getCollectionName(req)));
+            default:
+                break;
+        }
 
         return new Query(QueryOperation.AND, top_query.toArray(new Query[top_query.size()]));
     }
@@ -129,7 +139,7 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
     public IIIFSearchResult luceneResultToIIIF(SearchResult result) throws IOException {
         IIIFSearchResult iiifResult = new IIIFSearchResult();
 
-        // TODO search API URI IDs
+        // TODO assign proper search API (URI) IDs
         iiifResult.setTotal(result.getTotal());
         iiifResult.setStartIndex(result.getOffset());
 
@@ -278,24 +288,24 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
             }
         }
 
-        int i = 0;
-        while (i < hits.size() - 1) {
-            IIIFSearchHit hit1 = hits.get(i);
-            IIIFSearchHit hit2 = hits.get(i + 1);
-
-            if (isEmpty(hit1.after) && isEmpty(hit2.before)) {
-                // If (after hit1) == (before hit2) == (blank), then merge the 2 hits
-                hits.remove(hit1);
-                hits.remove(hit2);
-                hits.add(i, new IIIFSearchHit(
-                        associatedAnnos, (hit1.matching + " " + hit2.matching), hit1.before, hit2.after
-                ));
-
-                i--;
-            }
-
-            i++;
-        }
+//        int i = 0;
+//        while (i < hits.size() - 1) {
+//            IIIFSearchHit hit1 = hits.get(i);
+//            IIIFSearchHit hit2 = hits.get(i + 1);
+//
+//            if (isEmpty(hit1.after) && isEmpty(hit2.before) && !hit1.matching.equals("tif")) {
+//                // If (after hit1) == (before hit2) == (blank), then merge the 2 hits
+//                hits.remove(hit1);
+//                hits.remove(hit2);
+//                hits.add(i, new IIIFSearchHit(
+//                        associatedAnnos, (hit1.matching + " " + hit2.matching), hit1.before, hit2.after
+//                ));
+//
+//                i--;
+//            }
+//
+//            i++;
+//        }
 
         return hits;
     }
@@ -321,6 +331,37 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
      */
     private String getSearchTerm(String queryFrag) {
         return queryFrag;
+    }
+
+    // -----  -----
+
+    private String getCollectionName(PresentationRequest request) {
+        switch (request.getType()) {
+            case COLLECTION:
+                return request.getName();
+            default:
+                String[] parts = request.getId().split("\\.");
+                return parts[0];
+        }
+    }
+
+    private String getManifestName(PresentationRequest request) {
+        switch (request.getType()) {
+            case COLLECTION:
+                return null;
+            default:
+                String[] parts = request.getId().split("\\.");
+                return parts[1];
+        }
+    }
+
+    private String getCanvasName(PresentationRequest request) {
+        switch (request.getType()) {
+            case CANVAS:
+                return request.getName();
+            default:
+                return null;
+        }
     }
 
     // ----- URI parsing -----

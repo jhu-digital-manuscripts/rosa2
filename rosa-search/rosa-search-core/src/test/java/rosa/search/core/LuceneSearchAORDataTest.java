@@ -85,4 +85,23 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
         assertNotNull("Result was NULL.", result);
         assertEquals("Unexpected number of results found.", 0, result.getTotal());
     }
+
+    @Test
+    public void testSearchIDQuery() throws Exception {
+        SearchResult result = service.search(new Query(SearchFields.ID, "valid;FolgersHa2;FolgersHa2.001r.tif"), null);
+
+        assertNotNull("Result is NULL.", result);
+        assertEquals("Unexpected number of results.", 1, result.getTotal());
+        System.out.println(result);
+    }
+
+//    @Test
+//    public void testSearechIDAndSymbol() throws Exception {
+//        SearchResult result = service.search(new Query(QueryOperation.AND,
+//                new Query(SearchFields.ID, "valid;FolgersHa2;FolgersHa2.001r.tif"),
+//                new Query(SearchFields.AOR_SYMBOLS, "sun")
+//        ), null);
+//
+//        System.out.println(result);
+//    }
 }

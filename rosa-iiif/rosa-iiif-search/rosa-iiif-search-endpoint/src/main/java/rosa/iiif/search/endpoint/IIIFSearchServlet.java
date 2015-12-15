@@ -3,6 +3,8 @@ package rosa.iiif.search.endpoint;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
+import rosa.iiif.presentation.core.IIIFRequestParser;
+import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.search.core.IIIFSearchJsonldSerializer;
 import rosa.iiif.search.core.IIIFSearchService;
 import rosa.iiif.search.model.IIIFSearchRequest;
@@ -13,6 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.net.HttpURLConnection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -32,16 +35,19 @@ public class IIIFSearchServlet extends HttpServlet {
 //    private static final String PARAM_BOX = "box";
 
     private IIIFSearchService searchService;
+    private IIIFRequestParser requestParser;
     private IIIFSearchJsonldSerializer serializer;
     private String[] ignoredParams;
 
     @Inject
     public IIIFSearchServlet(IIIFSearchService searchService, IIIFSearchJsonldSerializer serializer,
-                             @Named("ignored.parameters") String[] ignoredParams) {
+                             @Named("ignored.parameters") String[] ignoredParams,
+                             IIIFRequestParser requestParser) {
         logger.info("Creating IIIF search servlet. ");
         this.searchService = searchService;
         this.serializer = serializer;
         this.ignoredParams = ignoredParams;
+        this.requestParser = requestParser;
     }
 
     @Override
@@ -54,9 +60,7 @@ public class IIIFSearchServlet extends HttpServlet {
             logger.log(Level.SEVERE, "Failed to update index for IIIF search service.", e);
         }
     }
-/*
-TODO Need to pick apart the PATH to determine the object in which to search
- */
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String query = req.getParameter(PARAM_Q);
@@ -82,22 +86,46 @@ TODO Need to pick apart the PATH to determine the object in which to search
                             "rel=\"http://www.w3.org/ns/json-ld#context\";type=\"application/ld+json\"");
         }
 
-        IIIFSearchRequest searchRequest;
-        if (page < 0) {
-            searchRequest = new IIIFSearchRequest(query, motivation);
-        } else {
-            searchRequest = new IIIFSearchRequest(query, motivation, page);
-        }
+        // Get IIIF object ID from request path
+        PresentationRequest r =
+                requestParser.parsePresentationRequest(get_raw_path(req).replace("/search", ""));
 
-        IIIFSearchResult result = searchService.search(searchRequest);
-        result.setIgnored(ignoredParams);
-        serializer.write(result, resp.getOutputStream());
+        if (r == null || r.getType() == null) {
+            // No or invalid ID was found in URI
+            resp.sendError(HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + req.getRequestURL().toString());
+        } else {
+            // Good ID found, do search
+            IIIFSearchRequest searchRequest;
+            if (page < 0) {
+                searchRequest = new IIIFSearchRequest(r, query, motivation);
+            } else {
+                searchRequest = new IIIFSearchRequest(r, query, motivation, page);
+            }
+
+            IIIFSearchResult result = searchService.search(searchRequest);
+            result.setIgnored(ignoredParams);
+            serializer.write(result, resp.getOutputStream());
+        }
 
         resp.flushBuffer();
     }
 
+// ----- Some methods taken from rosa.iiif.presentation.endpoint.IIIFServlet -----
+
     private boolean want_json_ld_mime_type(HttpServletRequest req) {
         String accept = req.getHeader("Accept");
         return accept != null && accept.contains(JSON_LD_MIME_TYPE);
+    }
+
+    private String get_raw_path(HttpServletRequest req) throws ServletException {
+        String context = req.getContextPath();
+        StringBuffer sb = req.getRequestURL();
+        int i = sb.indexOf(context);
+
+        if (i == -1) {
+            throw new ServletException("Cannot find " + context + " in " + sb);
+        }
+
+        return sb.substring(i + context.length());
     }
 }
