@@ -85,7 +85,8 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
             IIIFSearchHit{annotations=[null], matching='ifsa', before=' JFIO ', after=''}
          */
         List<IIIFSearchHit> expected = Arrays.asList(
-                new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "fdsa fdas", "asdf ", " asdf"),
+                new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "fdsa", "asdf ", " "),
+                new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "fdas", " ", " asdf"),
                 new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "fdsa", "sfad ", " JFIO "),
                 new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "ifsa", " JFIO ", "")
         );
@@ -118,7 +119,9 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
     private Query expectedBlankQuery() {
         return new Query(
                 QueryOperation.AND,
-                new Query(SearchFields.ID, "moo;cow;Bessy")
+                new Query(SearchFields.IMAGE_NAME, "Bessy"),
+                new Query(SearchFields.BOOK_ID, "cow"),
+                new Query(SearchFields.COLLECTION_ID, "moo")
         );
     }
 
@@ -131,7 +134,9 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
                 QueryOperation.AND,
                 allQuery("Moo"),
                 allQuery("cow"),
-                new Query(SearchFields.ID, "moo;cow;Bessy")
+                new Query(SearchFields.IMAGE_NAME, "Bessy"),
+                new Query(SearchFields.BOOK_ID, "cow"),
+                new Query(SearchFields.COLLECTION_ID, "moo")
         );
     }
 

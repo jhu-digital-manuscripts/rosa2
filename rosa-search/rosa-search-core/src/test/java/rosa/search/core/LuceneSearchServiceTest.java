@@ -13,6 +13,7 @@ import static org.mockito.Mockito.when;
 
 import java.io.InputStream;
 import java.util.Arrays;
+import java.util.Map;
 
 import org.junit.After;
 import org.junit.Before;
@@ -23,8 +24,10 @@ import org.junit.rules.TemporaryFolder;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.core.Store;
 import rosa.archive.core.serialize.TranscriptionXmlSerializer;
+import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.aor.AnnotatedPage;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchFields;
@@ -92,9 +95,21 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         assertNotNull(result);
 
         Book book2 = loadBook(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
-        int num_book2_images = book2.getImages().getImages().size();
+        int num_book2_image_refs = book2.getImages().getImages().size();
+        for (AnnotatedPage page : book2.getAnnotatedPages()) {
+            num_book2_image_refs +=
+                    page.getDrawings().size()
+                    + page.getMarginalia().size()
+                    + page.getUnderlines().size()
+                    + page.getSymbols().size()
+                    + page.getErrata().size()
+                    + page.getMarks().size()
+                    + page.getNumerals().size();
+        }
 
-        assertEquals(2 + num_book1_images + num_book2_images, result.getTotal());
+//        assertEquals(2 + num_book1_images + num_book2_images, result.getTotal());
+        // # images per book + a reference for each annotation
+        assertEquals(2 + num_book1_images + num_book2_image_refs, result.getTotal());
     }
 
     @Test
@@ -106,10 +121,10 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
                 "1r"), null);
 
         assertNotNull(result);
-        assertEquals(6, result.getTotal());
-        assertEquals(6, result.getMatches().length);
+        assertEquals(48, result.getTotal());
+        assertEquals(30, result.getMatches().length);
         assertEquals(0, result.getOffset());
-        assertNull(result.getResumeToken());
+        assertNotNull(result.getResumeToken());
 
         for (SearchMatch match: result.getMatches()) {
             String image = SearchUtil.getImageFromId(match.getId());
