@@ -16,6 +16,7 @@ import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFSIImageIdMapper;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.search.core.IIIFLuceneSearchAdapter;
+import rosa.iiif.search.core.IIIFSearchRequestFormatter;
 import rosa.iiif.search.core.IIIFSearchService;
 import rosa.iiif.search.core.RosaIIIFSearchService;
 import rosa.search.core.LuceneSearchService;
@@ -55,8 +56,8 @@ public class IIIFSearchModule extends ServletModule {
     @Provides
     protected IIIFLuceneSearchAdapter getLuceneAdapter(AnnotationTransformer annotationTransformer,
                                                        Store archiveStore,
-                                                       IIIFRequestFormatter presentationReqFormatter) {
-        return new IIIFLuceneSearchAdapter(annotationTransformer, archiveStore, presentationReqFormatter);
+                                                       IIIFSearchRequestFormatter reqFormatter) {
+        return new IIIFLuceneSearchAdapter(annotationTransformer, archiveStore, reqFormatter);
     }
 
     @Provides
@@ -68,10 +69,20 @@ public class IIIFSearchModule extends ServletModule {
 
     @Provides
     protected IIIFSearchService provideIIIFSearchService(@Named("collection.id") String collectionId,
-                                                      SearchService searchService, IIIFLuceneSearchAdapter adapter,
-                                                      Store store) {
+                                                         SearchService searchService,
+                                                         IIIFLuceneSearchAdapter adapter,
+                                                         Store store,
+                                                         IIIFSearchRequestFormatter requestFormatter) {
         logger.info("Creating IIIF search service. (collection: " + collectionId + ")");
-        return new RosaIIIFSearchService(store, searchService, adapter, collectionId);
+        return new RosaIIIFSearchService(store, searchService, adapter, collectionId, requestFormatter);
+    }
+
+    @Provides
+    protected IIIFSearchRequestFormatter provideSearchRequestFormatter(@Named("iiif.search.scheme") String scheme,
+                                                                       @Named("iiif.search.host") String host,
+                                                                       @Named("iiif.search.prefix") String prefix,
+                                                                       @Named("iiif.search.port") int port) {
+        return new IIIFSearchRequestFormatter(scheme, host, prefix, port);
     }
 
     @Provides
@@ -87,13 +98,13 @@ public class IIIFSearchModule extends ServletModule {
         return new IIIFRequestFormatter(scheme, host, prefix, port);
     }
 
-    @Provides
-    rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme,
-                                                                           @Named("iiif.image.host") String host,
-                                                                           @Named("iiif.image.prefix") String prefix,
-                                                                           @Named("iiif.image.port") int port) {
-        return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
-    }
+//    @Provides
+//    rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme,
+//                                                                           @Named("iiif.image.host") String host,
+//                                                                           @Named("iiif.image.prefix") String prefix,
+//                                                                           @Named("iiif.image.port") int port) {
+//        return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
+//    }
 
     @Provides
     @Named("fsi.share.map")

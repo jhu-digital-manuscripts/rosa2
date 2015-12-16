@@ -5,7 +5,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import rosa.archive.core.BaseArchiveTest;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
@@ -32,14 +31,14 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
         SearchService luceneSearchService = new LuceneSearchService(tmpfolder.newFolder().toPath());
         luceneSearchService.update(store, VALID_COLLECTION);
 
-        IIIFRequestFormatter requestFormatter = new IIIFRequestFormatter("SCHEME", "HOST", "PREFIX", 80);
+        IIIFSearchRequestFormatter requestFormatter = new IIIFSearchRequestFormatter("SCHEME", "HOST", "PREFIX", 80);
         IIIFLuceneSearchAdapter adapter = new IIIFLuceneSearchAdapter(
                 new AnnotationTransformer(requestFormatter),
                 store,
                 requestFormatter
         );
 
-        this.service = new RosaIIIFSearchService(store, luceneSearchService, adapter, "valid");
+        this.service = new RosaIIIFSearchService(store, luceneSearchService, adapter, "valid", requestFormatter);
     }
 
     /**

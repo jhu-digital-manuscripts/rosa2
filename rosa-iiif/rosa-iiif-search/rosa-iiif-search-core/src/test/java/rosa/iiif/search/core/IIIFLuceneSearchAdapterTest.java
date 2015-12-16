@@ -36,7 +36,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
         int port = 80;
         String pres_prefix = "/pres";
 
-        IIIFRequestFormatter requestFormatter = new IIIFRequestFormatter(scheme, host, pres_prefix, port);
+        IIIFSearchRequestFormatter requestFormatter = new IIIFSearchRequestFormatter(scheme, host, pres_prefix, port);
 
         this.adapter = new IIIFLuceneSearchAdapter(new AnnotationTransformer(requestFormatter), store,
                 requestFormatter);

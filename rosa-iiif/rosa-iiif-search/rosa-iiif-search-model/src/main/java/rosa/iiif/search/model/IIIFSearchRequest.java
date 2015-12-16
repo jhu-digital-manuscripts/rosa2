@@ -18,6 +18,17 @@ public class IIIFSearchRequest implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
+     * A IIIF Search is initiated within a particular IIIF object. This object is
+     * identified here by its request in the IIIF Presentation API, which contains
+     *
+     * <ul>
+     * <li>Object type - Collection, Manifest, Canvas, etc</li>
+     * <li>Object identifier - This field does not apply to collections. For a Manifest,
+     *     this will contain the manifest ID plus its parent collection. For a Canvas,
+     *     this will contain the parent collection + manifest ID</li>
+     * <li>Object name - name of object. This field does not apply to Manifests. Names
+     *     will appear for collections, canvases, annotations, etc</li>
+     * </ul>
      *
      */
     public final PresentationRequest objectId;
@@ -44,7 +55,7 @@ public class IIIFSearchRequest implements Serializable {
      */
     public final Rectangle[] box;
 
-    /** TODO should results page be included here?? */
+    /** Results page to retrieve, if applicable */
     public final int page;
 
     public IIIFSearchRequest(PresentationRequest object, String q, String motivations, String dates, String users, String box, int page) {
