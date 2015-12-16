@@ -73,10 +73,12 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 (anno.getLanguage() != null && !anno.getLanguage().isEmpty() ? anno.getLanguage() : "en")
         ));
 
-        a.setDefaultTarget(locationOnCanvas(
+        AnnotationTarget target = locationOnCanvas(
                 getPageImage(book.getImages(), getAnnotationPage(anno.getId())),
-                anno.getLocation())
-        );
+                Location.FULL_PAGE);
+        target.setUri(urlId(collection.getId(), book.getId(), target.getUri(), PresentationRequestType.CANVAS));
+
+        a.setDefaultTarget(target);
 
         for (String lang : collection.getAllSupportedLanguages()) {
             a.setLabel(anno.getId(), lang);
@@ -111,10 +113,14 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
                 marginaliaToDisplayHtml(marg), lang));
 
-        anno.setDefaultTarget(locationOnCanvas(
+        AnnotationTarget target = locationOnCanvas(
                 getPageImage(book.getImages(), getAnnotationPage(marg.getId())),
-                Location.FULL_PAGE)
-        ); // TODO actual position(s)
+                Location.FULL_PAGE);
+        target.setUri(urlId(collection.getId(), book.getId(), target.getUri(), PresentationRequestType.CANVAS));
+
+        anno.setDefaultTarget(target); // TODO actual position(s)
+
+        anno.setLabel(marg.getId(), "en");
 
         return anno;
     }

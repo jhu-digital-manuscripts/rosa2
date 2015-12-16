@@ -56,7 +56,7 @@ public class IIIFSearchModule extends ServletModule {
     @Provides
     protected IIIFLuceneSearchAdapter getLuceneAdapter(AnnotationTransformer annotationTransformer,
                                                        Store archiveStore,
-                                                       IIIFSearchRequestFormatter reqFormatter) {
+                                                       @Named("formatter.presentation") IIIFRequestFormatter reqFormatter) {
         return new IIIFLuceneSearchAdapter(annotationTransformer, archiveStore, reqFormatter);
     }
 
@@ -90,7 +90,7 @@ public class IIIFSearchModule extends ServletModule {
         return new JhuFSIImageIdMapper(fsi_share_map);
     }
 
-    @Provides
+    @Provides @Named("formatter.presentation")
     IIIFRequestFormatter providePresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme,
                                                              @Named("iiif.pres.host") String host,
                                                              @Named("iiif.pres.prefix") String prefix,

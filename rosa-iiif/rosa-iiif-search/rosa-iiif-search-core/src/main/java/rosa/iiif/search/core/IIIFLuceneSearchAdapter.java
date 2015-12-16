@@ -3,6 +3,7 @@ package rosa.iiif.search.core;
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.archive.core.util.Annotations;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -44,13 +45,13 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
     private static final int max_cache_size = 1000;
 
     private AnnotationTransformer annotationTransformer;
-    private IIIFSearchRequestFormatter presReqFormatter;
+    private IIIFRequestFormatter presReqFormatter;
     private Store archiveStore;
 
     private final ConcurrentHashMap<String, Object> cache;
 
     public IIIFLuceneSearchAdapter(AnnotationTransformer annotationTransformer, Store archiveStore,
-                                   IIIFSearchRequestFormatter presReqFormatter) {
+                                   IIIFRequestFormatter presReqFormatter) {
         this.annotationTransformer = annotationTransformer;
         this.presReqFormatter = presReqFormatter;
         this.archiveStore = archiveStore;
@@ -164,6 +165,9 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
 
             //   Transform archive anno -> iiif anno using AnnotationTransformer
             Annotation presentationAnno = annotationTransformer.transform(col, book, archiveAnno);
+
+
+
             // Set presentation annotation parent reference
             Reference parentRef = new Reference(
                     urlId(col.getId(), book.getId(), null, PresentationRequestType.MANIFEST),
