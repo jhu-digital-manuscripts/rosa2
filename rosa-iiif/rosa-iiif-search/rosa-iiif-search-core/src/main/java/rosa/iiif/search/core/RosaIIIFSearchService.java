@@ -1,6 +1,7 @@
 package rosa.iiif.search.core;
 
 import rosa.archive.core.Store;
+import rosa.iiif.search.model.IIIFSearchHit;
 import rosa.iiif.search.model.IIIFSearchRequest;
 import rosa.iiif.search.model.IIIFSearchResult;
 import rosa.iiif.search.model.Rectangle;
@@ -8,6 +9,10 @@ import rosa.search.core.SearchService;
 import rosa.search.model.SearchOptions;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.logging.Logger;
 
 public class RosaIIIFSearchService implements IIIFSearchService {
@@ -44,7 +49,7 @@ public class RosaIIIFSearchService implements IIIFSearchService {
 
         // TODO do fields: prev, next, first, last where applicable
 
-        return result;
+        return pruneResults(request, result);
     }
 
     @Override
@@ -97,6 +102,9 @@ public class RosaIIIFSearchService implements IIIFSearchService {
      * @return a single String of rectangles, separated by spaces, formatted: x,y,w,h
      */
     private String arrayToString(Rectangle[] arr) {
+        if (arr == null || arr.length == 0) {
+            return "";
+        }
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < arr.length; i++) {
             if (i != 0) {
@@ -113,5 +121,53 @@ public class RosaIIIFSearchService implements IIIFSearchService {
         return sb.toString();
     }
 
+    /**
+     * Attempt to prune results, getting rid of those matches present only to constrain
+     * the results to a particular object.
+     *
+     * @param request .
+     * @param result .
+     * @return .
+     */
+    private IIIFSearchResult pruneResults(IIIFSearchRequest request, IIIFSearchResult result) {
+        IIIFSearchResult pruned = new IIIFSearchResult();
+
+        pruned.setTotal(result.getTotal());
+        pruned.setIgnored(result.getIgnored());
+        pruned.setStartIndex(result.getStartIndex());
+        pruned.setNext(result.getNext());
+        pruned.setPrev(result.getPrev());
+        pruned.setFirst(result.getFirst());
+        pruned.setLast(result.getLast());
+
+        pruned.setLabel(result.getLabel());
+        pruned.setAnnotations(result.getAnnotations());
+
+        Set<String> toPrune = new HashSet<>();
+        switch (request.objectId.getType()) {
+            case CANVAS:
+                toPrune.add(request.objectId.getName());
+            case MANIFEST:
+                String[] parts = request.objectId.getId().split("\\.");
+                toPrune.add(parts[0]);
+                toPrune.add(parts[1]);
+                break;
+            case COLLECTION:
+                toPrune.add(request.objectId.getName());
+                break;
+            default:
+                break;
+        }
+
+        List<IIIFSearchHit> list = new ArrayList<>();
+        for (IIIFSearchHit hit : result.getHits()) {
+            if (!toPrune.contains(hit.matching)) {
+                list.add(hit);
+            }
+        }
+        pruned.setHits(list.toArray(new IIIFSearchHit[list.size()]));
+
+        return pruned;
+    }
 
 }

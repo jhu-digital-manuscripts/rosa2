@@ -54,7 +54,7 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
 
         assertNotNull("Result is NULL.", result);
         assertEquals("Unexpected number of results found.", 44, result.getTotal());
-        assertEquals("Unexpected number of Hits found.", 88, result.getHits().length);
+        assertEquals("Unexpected number of Hits found.", 44, result.getHits().length);
 
         int marg_count = 0;
         int symbol_count = 0;
@@ -66,8 +66,8 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
             }
         }
 
-        assertEquals("Unexpected number of symbols found.", 80, symbol_count);
-        assertEquals("Unexpected number of marginalia found.", 8, marg_count);
+        assertEquals("Unexpected number of symbols found.", 40, symbol_count);
+        assertEquals("Unexpected number of marginalia found.", 4, marg_count);
     }
 
     @Test
