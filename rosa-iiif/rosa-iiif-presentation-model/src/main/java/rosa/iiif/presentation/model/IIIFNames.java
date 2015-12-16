@@ -6,6 +6,9 @@ public interface IIIFNames {
     String IIIF_IMAGE_CONTEXT = "http://iiif.io/api/image/2/context.json";
     String IIIF_IMAGE_PROFILE_LEVEL2 = "http://iiif.io/api/image/2/profiles/level2.json";
 
+    String IIIF_SEARCH_CONTEXT = "http://iiif.io/api/search/0/context.json";
+    String IIIF_SEARCH_PROFILE = "http://iiif.io/api/search/0/search";
+
     String SC_ANNOTATION_LIST = "sc:AnnotationList";
     String SC_CANVAS = "sc:Canvas";
     String SC_COLLECTION = "sc:Collection";

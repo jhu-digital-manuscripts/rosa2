@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -18,7 +19,7 @@ import java.util.List;
 public class LayerTransformer extends BasePresentationTransformer implements Transformer<Layer>, IIIFNames {
 
     @Inject
-    public LayerTransformer(IIIFRequestFormatter presRequestFormatter) {
+    public LayerTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter) {
         super(presRequestFormatter);
     }
 

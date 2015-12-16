@@ -47,6 +47,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     private static final String ENDPOINT_SCHEME = "http";
     private static final String ENDPOINT_HOST = "example.org";
     private static final String ENDPOINT_PREFIX = "/iiif";
+    private static final String SEARCH_PREFIX = "/search";
     private static final int ENDPOINT_PORT = -1;
 
 
@@ -62,6 +63,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
         IIIFRequestFormatter presentationReqFormatter =
                 new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT);
+        IIIFRequestFormatter searchFormatter = new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, SEARCH_PREFIX, ENDPOINT_PORT);
         rosa.iiif.image.core.IIIFRequestFormatter imageReqFormatter =
                 new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
         ImageIdMapper idMapper = new JhuFSIImageIdMapper(idMap);
@@ -75,7 +77,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         transformers.add(new AnnotationListTransformer(presentationReqFormatter, annotationTransformer));
         transformers.add(canvasTransformer);
         transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer, new RangeTransformer(presentationReqFormatter)));
+        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer, new RangeTransformer(presentationReqFormatter), searchFormatter));
         transformers.add(new RangeTransformer(presentationReqFormatter));
         transformers.add(new LayerTransformer(presentationReqFormatter));
 

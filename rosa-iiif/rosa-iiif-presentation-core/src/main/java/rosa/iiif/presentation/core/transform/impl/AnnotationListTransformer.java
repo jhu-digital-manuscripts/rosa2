@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -21,7 +22,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     private AnnotationTransformer annotationTransformer;
 
     @Inject
-    public AnnotationListTransformer(IIIFRequestFormatter presRequestFormatter,
+    public AnnotationListTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter,
                                      AnnotationTransformer annotationTransformer) {
         super(presRequestFormatter);
         this.annotationTransformer = annotationTransformer;

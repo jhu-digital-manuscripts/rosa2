@@ -121,8 +121,19 @@ public class IIIFServletModule extends ServletModule {
         return new JhuFSIImageIdMapper(fsi_share_map);
     }
     
-    @Provides
-    IIIFRequestFormatter providePresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme, @Named("iiif.pres.host") String host, @Named("iiif.pres.prefix") String prefix, @Named("iiif.pres.port") int port) {
+    @Provides @Named("formatter.presentation")
+    IIIFRequestFormatter providePresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme,
+                                                             @Named("iiif.pres.host") String host,
+                                                             @Named("iiif.pres.prefix") String prefix,
+                                                             @Named("iiif.pres.port") int port) {
+        return new IIIFRequestFormatter(scheme, host, prefix, port);
+    }
+
+    @Provides @Named("formatter.search")
+    IIIFRequestFormatter provideSearchRequestFormatter(@Named("iiif.search.scheme") String scheme,
+                                                       @Named("iiif.search.host") String host,
+                                                       @Named("iiif.search.prefix") String prefix,
+                                                       @Named("iiif.search.port") int port) {
         return new IIIFRequestFormatter(scheme, host, prefix, port);
     }
     

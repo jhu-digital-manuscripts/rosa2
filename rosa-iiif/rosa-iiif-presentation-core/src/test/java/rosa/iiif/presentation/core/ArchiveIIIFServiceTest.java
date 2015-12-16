@@ -47,8 +47,10 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         int port = 80;
         String pres_prefix = "/pres";
         String image_prefix = "/image";
+        String search_prefix = "/search";
 
         IIIFRequestFormatter requestFormatter = new IIIFRequestFormatter(scheme, host, pres_prefix, port);
+        IIIFRequestFormatter searchFormatter = new IIIFRequestFormatter(scheme, host, search_prefix, port);
         rosa.iiif.image.core.IIIFRequestFormatter imageFormatter = new rosa.iiif.image.core.IIIFRequestFormatter(
                 scheme, host, port, image_prefix);
         ImageIdMapper imageIdMapper = new JhuFSIImageIdMapper(new HashMap<String, String>());
@@ -62,7 +64,7 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         transformers.add(new AnnotationListTransformer(requestFormatter, annotationTransformer));
         transformers.add(canvasTransformer);
         transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(requestFormatter, sequenceTransformer, new RangeTransformer(requestFormatter)));
+        transformers.add(new ManifestTransformer(requestFormatter, sequenceTransformer, new RangeTransformer(requestFormatter), searchFormatter));
         transformers.add(new RangeTransformer(requestFormatter));
 
         TransformerSet transformerSet = new TransformerSet(transformers);

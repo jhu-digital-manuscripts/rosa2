@@ -206,6 +206,18 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         writeIfNotNull("viewingDirection",
                 manifest.getViewingDirection() != null ? manifest.getViewingDirection().getKeyword() : null, jWriter);
 
+        /*
+        "service": {
+            "@context": "http://iiif.io/api/search/0/context.json",
+            "@id": "http://example.org/services/identifier/search",
+            "profile": "http://iiif.io/api/search/0/search"
+          }
+         */
+        // TODO do this right
+        if (manifest.getSearchService() != null) {
+            writeService(manifest.getSearchService(), jWriter);
+        }
+
         if (manifest.getDefaultSequence() == null && (manifest.getOtherSequences() == null
                 || manifest.getOtherSequences().isEmpty())) {
 

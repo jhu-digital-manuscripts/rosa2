@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -30,7 +31,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         AORAnnotatedPageConstants {
 
     @Inject
-    public AnnotationTransformer(IIIFRequestFormatter presRequestFormatter) {
+    public AnnotationTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter) {
         super(presRequestFormatter);
     }
 
