@@ -67,7 +67,10 @@ public class IIIFSearchServlet extends HttpServlet {
         String motivation = req.getParameter(PARAM_MOTIVATION);
         int page = -1;
         try {
-            page = Integer.parseInt(req.getParameter(PARAM_PAGE));
+            String p = req.getParameter(PARAM_PAGE);
+            if (p != null && !p.isEmpty()) {
+                page = Integer.parseInt(req.getParameter(PARAM_PAGE));
+            }
         } catch (NumberFormatException e) {
             logger.warning("'page' parameter not a number. [" + req.getParameter(PARAM_PAGE) + "]");
         }
