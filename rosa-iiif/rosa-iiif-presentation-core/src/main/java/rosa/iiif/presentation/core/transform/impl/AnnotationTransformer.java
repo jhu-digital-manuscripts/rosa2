@@ -2,6 +2,7 @@ package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -30,9 +31,13 @@ import java.util.List;
 public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
         AORAnnotatedPageConstants {
 
+    private ArchiveNameParser nameParser;
+
     @Inject
-    public AnnotationTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter) {
+    public AnnotationTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter,
+                                 ArchiveNameParser nameParser) {
         super(presRequestFormatter);
+        this.nameParser = nameParser;
     }
 
     @Override
@@ -76,7 +81,12 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         AnnotationTarget target = locationOnCanvas(
                 getPageImage(book.getImages(), getAnnotationPage(anno.getId())),
                 Location.FULL_PAGE);
-        target.setUri(urlId(collection.getId(), book.getId(), target.getUri(), PresentationRequestType.CANVAS));
+        target.setUri(urlId(
+                collection.getId(),
+                book.getId(),
+                getAnnotationPage(anno.getId()),
+                PresentationRequestType.CANVAS
+        ));
 
         a.setDefaultTarget(target);
 
@@ -116,7 +126,12 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         AnnotationTarget target = locationOnCanvas(
                 getPageImage(book.getImages(), getAnnotationPage(marg.getId())),
                 Location.FULL_PAGE);
-        target.setUri(urlId(collection.getId(), book.getId(), target.getUri(), PresentationRequestType.CANVAS));
+        target.setUri(urlId(
+                collection.getId(),
+                book.getId(),
+                getAnnotationPage(anno.getId()),
+                PresentationRequestType.CANVAS
+        ));
 
         anno.setDefaultTarget(target); // TODO actual position(s)
 
@@ -278,7 +293,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     private String getAnnotationPage(String name) {
-        return split_id(name)[0];
+        if (name.contains("_")) {
+            name = name.split("_")[0];
+        }
+        return nameParser.shortName(split_id(name)[0]);
     }
 
     private String[] split_id(String id) {

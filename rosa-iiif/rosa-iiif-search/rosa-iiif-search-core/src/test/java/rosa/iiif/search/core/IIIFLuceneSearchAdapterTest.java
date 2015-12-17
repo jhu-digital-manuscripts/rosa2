@@ -2,8 +2,8 @@ package rosa.iiif.search.core;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
@@ -38,7 +38,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
         IIIFSearchRequestFormatter requestFormatter = new IIIFSearchRequestFormatter(scheme, host, pres_prefix, port);
 
-        this.adapter = new IIIFLuceneSearchAdapter(new AnnotationTransformer(requestFormatter), store,
+        this.adapter = new IIIFLuceneSearchAdapter(new AnnotationTransformer(requestFormatter, new ArchiveNameParser()), store,
                 requestFormatter);
     }
 

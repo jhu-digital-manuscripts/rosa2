@@ -4,6 +4,7 @@ import com.google.inject.Provides;
 import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 import com.google.inject.servlet.ServletModule;
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.Store;
 import rosa.archive.core.StoreImpl;
@@ -38,6 +39,7 @@ public class IIIFSearchModule extends ServletModule {
     @Override
     protected void configureServlets() {
         logger.info("Configuring IIIF Search servlet.");
+        bind(ArchiveNameParser.class);
         bind(IIIFRequestParser.class);
         bind(AnnotationTransformer.class);
 

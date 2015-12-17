@@ -4,10 +4,12 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
+import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.search.model.IIIFSearchHit;
 import rosa.iiif.search.model.IIIFSearchRequest;
 import rosa.iiif.search.model.IIIFSearchResult;
@@ -31,9 +33,9 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
         SearchService luceneSearchService = new LuceneSearchService(tmpfolder.newFolder().toPath());
         luceneSearchService.update(store, VALID_COLLECTION);
 
-        IIIFSearchRequestFormatter requestFormatter = new IIIFSearchRequestFormatter("SCHEME", "HOST", "PREFIX", 80);
+        IIIFSearchRequestFormatter requestFormatter = new IIIFSearchRequestFormatter("SCHEME", "HOST", "/PREFIX", 80);
         IIIFLuceneSearchAdapter adapter = new IIIFLuceneSearchAdapter(
-                new AnnotationTransformer(requestFormatter),
+                new AnnotationTransformer(requestFormatter, new ArchiveNameParser()),
                 store,
                 requestFormatter
         );
@@ -75,6 +77,17 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
         IIIFSearchResult result = service.search(new IIIFSearchRequest(
                 new PresentationRequest("valid.FolgersHa2", "FolgersHa2.004r.tif", PresentationRequestType.CANVAS), "sun"
         ));
+
+        for (IIIFSearchHit hit : result.getHits()) {
+            System.out.println(hit.annotations[0]);
+        }
+
+        System.out.println();
+
+        for (Annotation ann : result.getAnnotations()) {
+            System.out.println("  " + ann.getId());
+            System.out.println("    " + ann.getDefaultTarget().getUri());
+        }
 
         assertNotNull("Result is NULL", result);
         assertEquals("Unexpected number of results.", 4, result.getTotal());

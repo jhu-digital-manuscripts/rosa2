@@ -71,7 +71,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
         CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter);
         SequenceTransformer sequenceTransformer = new SequenceTransformer(presentationReqFormatter, canvasTransformer);
-        AnnotationTransformer annotationTransformer = new AnnotationTransformer(presentationReqFormatter);
+        AnnotationTransformer annotationTransformer = new AnnotationTransformer(presentationReqFormatter, new ArchiveNameParser());
 
         Set<Transformer<?>> transformers = new HashSet<>();
         transformers.add(new AnnotationListTransformer(presentationReqFormatter, annotationTransformer));

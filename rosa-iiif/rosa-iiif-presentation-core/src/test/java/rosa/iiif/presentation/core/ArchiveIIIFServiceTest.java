@@ -58,7 +58,7 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         CollectionTransformer collectionTransformer = new CollectionTransformer(requestFormatter);
         CanvasTransformer canvasTransformer = new CanvasTransformer(requestFormatter, imageFormatter, imageIdMapper);
         SequenceTransformer sequenceTransformer = new SequenceTransformer(requestFormatter, canvasTransformer);
-        AnnotationTransformer annotationTransformer = new AnnotationTransformer(requestFormatter);
+        AnnotationTransformer annotationTransformer = new AnnotationTransformer(requestFormatter, new ArchiveNameParser());
 
         Set<Transformer<?>> transformers = new HashSet<>();
         transformers.add(new AnnotationListTransformer(requestFormatter, annotationTransformer));
