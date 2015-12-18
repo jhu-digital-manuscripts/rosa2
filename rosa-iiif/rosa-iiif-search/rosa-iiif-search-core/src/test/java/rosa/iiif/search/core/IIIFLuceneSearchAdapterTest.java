@@ -132,8 +132,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
     private Query expectedQuery() {
         return new Query(
                 QueryOperation.AND,
-                allQuery("Moo"),
-                allQuery("cow"),
+                allQuery("Moo cow"),
                 new Query(SearchFields.IMAGE_NAME, "Bessy"),
                 new Query(SearchFields.BOOK_ID, "cow"),
                 new Query(SearchFields.COLLECTION_ID, "moo")

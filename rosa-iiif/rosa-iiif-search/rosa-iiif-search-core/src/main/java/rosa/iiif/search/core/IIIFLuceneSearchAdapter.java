@@ -68,19 +68,21 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
     public Query iiifToLuceneQuery(IIIFSearchRequest iiifReq) {
         // This will generate independent queries for each word...
         List<Query> top_query = new ArrayList<>();
-        for (String queryTerm : iiifReq.queryTerms) {
-            if (queryTerm == null || queryTerm.isEmpty()) {
-                continue;
+
+        StringBuilder query = new StringBuilder();
+        for (int i = 0; i < iiifReq.queryTerms.length; i++) {
+            if (i != 0) {
+                query.append(' ');
             }
+            query.append(iiifReq.queryTerms[i]);
+        }
 
-            SearchCategory category = getSearchCategory(queryTerm);
-
-            List<Query> children = new ArrayList<>();
-            for (SearchFields luceneFields : category.luceneFields) {
-                children.add(new Query(luceneFields, getSearchTerm(queryTerm)));
+        if (!query.toString().isEmpty()) {
+            List<Query> searchQuery = new ArrayList<>();
+            for (SearchFields luceneField : SearchCategory.ALL.luceneFields) {
+                searchQuery.add(new Query(luceneField, query.toString().trim()));
             }
-
-            top_query.add(new Query(QueryOperation.OR, children.toArray(new Query[children.size()])));
+            top_query.add(new Query(QueryOperation.OR, searchQuery.toArray(new Query[searchQuery.size()])));
         }
 
         /*

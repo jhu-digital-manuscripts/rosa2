@@ -78,17 +78,6 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
                 new PresentationRequest("valid.FolgersHa2", "FolgersHa2.004r.tif", PresentationRequestType.CANVAS), "sun"
         ));
 
-        for (IIIFSearchHit hit : result.getHits()) {
-            System.out.println(hit.annotations[0]);
-        }
-
-        System.out.println();
-
-        for (Annotation ann : result.getAnnotations()) {
-            System.out.println("  " + ann.getId());
-            System.out.println("    " + ann.getDefaultTarget().getUri());
-        }
-
         assertNotNull("Result is NULL", result);
         assertEquals("Unexpected number of results.", 4, result.getTotal());
     }
