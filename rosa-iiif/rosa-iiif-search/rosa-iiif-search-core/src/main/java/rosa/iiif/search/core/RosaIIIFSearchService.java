@@ -159,13 +159,15 @@ public class RosaIIIFSearchService implements IIIFSearchService {
                 break;
         }
 
-        List<IIIFSearchHit> list = new ArrayList<>();
-        for (IIIFSearchHit hit : result.getHits()) {
-            if (!toPrune.contains(hit.matching)) {
-                list.add(hit);
+        if (result.getHits() != null) {
+            List<IIIFSearchHit> list = new ArrayList<>();
+            for (IIIFSearchHit hit : result.getHits()) {
+                if (!toPrune.contains(hit.matching)) {
+                    list.add(hit);
+                }
             }
+            pruned.setHits(list.toArray(new IIIFSearchHit[list.size()]));
         }
-        pruned.setHits(list.toArray(new IIIFSearchHit[list.size()]));
 
         return pruned;
     }
