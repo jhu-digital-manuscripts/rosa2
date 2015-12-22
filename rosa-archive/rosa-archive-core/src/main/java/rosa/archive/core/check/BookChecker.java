@@ -1,8 +1,8 @@
 package rosa.archive.core.check;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.StringReader;
-import java.lang.reflect.Array;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -63,10 +63,12 @@ import com.google.inject.Inject;
 public class BookChecker extends AbstractArchiveChecker {
     private static final String PAGE_PATTERN = "\\w*\\d+(r|v|R|V)";
     private static final String MANUSCRIPT = "manuscript";
+    private static final String DESCRIPTION_SCHEMA_LOCATION = "rosa-book-description.xsd";
     private static final LSResourceResolver resourceResolver = new CachingUrlResourceResolver();
 
     private static Schema aorAnnotationSchema;
     private static Schema teiSchema;
+    private static Schema desecriptionSchema;
 
     /**
      * @param serializers all required serializers
@@ -108,6 +110,9 @@ public class BookChecker extends AbstractArchiveChecker {
         check(book.getCropInfo(), book, bsg, errors, warnings);
 
         checkTEIDescriptions(bsg, errors, warnings);
+        // Check newer style metadata XML
+        check(book.getMultilangMetadata(), bsg, errors, warnings);
+
         for (String lang : collection.getAllSupportedLanguages()) {
             //   bookMetadata
             check(book.getBookMetadata(lang), book, bsg, errors, warnings);
@@ -225,6 +230,55 @@ public class BookChecker extends AbstractArchiveChecker {
                 // Code taken from Rosa1 project, BaseDerivative#checkFilenames(archive)
                 errors.add("Unknown file. [" + name + "]");
             }
+        }
+    }
+
+    private void check(MultilangMetadata metadata, ByteStreamGroup bsg, final List<String> errors,
+                       final List<String> warnings) {
+        if (metadata == null) {
+            return;
+        }
+        final String file = metadata.getId();
+        if (desecriptionSchema == null) {
+            SchemaFactory schemaFactory =
+                    SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+
+            schemaFactory.setErrorHandler(null);
+
+            try (InputStream in = getClass().getClassLoader().getResourceAsStream(DESCRIPTION_SCHEMA_LOCATION)) {
+                desecriptionSchema = schemaFactory.newSchema(new StreamSource(in));
+            } catch (IOException | SAXException e) {
+                errors.add("Failed to load description schema (rosa-book-description.xsd)\n" + stacktrace(e));
+            }
+        }
+
+        Validator validator = desecriptionSchema.newValidator();
+        validator.setResourceResolver(resourceResolver);
+
+        validator.setErrorHandler(new ErrorHandler() {
+            @Override
+            public void warning(SAXParseException e) throws SAXException {
+                warnings.add("[Warn: " + file + "] (" + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "): " + e.getMessage());
+            }
+
+            @Override
+            public void error(SAXParseException e) throws SAXException {
+                errors.add("[Error: " + file + "] (" + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "): " + e.getMessage());
+            }
+
+            @Override
+            public void fatalError(SAXParseException e) throws SAXException {
+                errors.add("[Fatal Error: " + file + "] (" + e.getLineNumber() + ":"
+                        + e.getColumnNumber() + "): " + e.getMessage());
+            }
+        });
+
+        try {
+            validator.validate(new StreamSource(bsg.getByteStream(file)));
+        } catch (IOException | SAXException e) {
+            errors.add("Failed to validate file (" + file + ")");
         }
     }
 
@@ -1097,22 +1151,6 @@ public class BookChecker extends AbstractArchiveChecker {
                         + "] not found in narrative_sections.");
             }
         }
-    }
-
-    private void check(MultilangMetadata mm, Book parent, ByteStreamGroup bsg, List<String> errors,
-                       List<String> warnings) {
-        if (mm == null) {
-            return;
-        }
-
-        if (!isInArchive(mm.getId(), parent.getContent())) {
-            errors.add("Multi-language metadata not found in archive. [" + parent.getId()
-                    + ":" + mm.getId() + "]");
-        }
-
-        // TODO
-
-        attemptToRead(mm, bsg, errors, warnings);
     }
 
     private void checkReferences(BookCollection collection, List<AnnotatedPage> pages, Book parent, ByteStreamGroup bsg,

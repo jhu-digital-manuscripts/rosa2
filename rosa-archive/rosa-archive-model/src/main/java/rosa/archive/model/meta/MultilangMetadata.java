@@ -26,6 +26,9 @@ public class MultilangMetadata implements HasId, Serializable {
     private int numberOfIllustrations;
     private int numberOfPages;
 
+    private String licenseUrl;
+    private String licenseLogo;
+
     /**
      * Map ID -&gt; BookText
      * &lt;text id=""&gt; element
@@ -143,6 +146,22 @@ public class MultilangMetadata implements HasId, Serializable {
         return biblioDataMap.containsKey(langaugeCode);
     }
 
+    public String getLicenseUrl() {
+        return licenseUrl;
+    }
+
+    public void setLicenseUrl(String licenseUrl) {
+        this.licenseUrl = licenseUrl;
+    }
+
+    public String getLicenseLogo() {
+        return licenseLogo;
+    }
+
+    public void setLicenseLogo(String licenseLogo) {
+        this.licenseLogo = licenseLogo;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -150,20 +169,20 @@ public class MultilangMetadata implements HasId, Serializable {
 
         MultilangMetadata that = (MultilangMetadata) o;
 
+        if (yearStart != that.yearStart) return false;
+        if (yearEnd != that.yearEnd) return false;
+        if (width != that.width) return false;
         if (height != that.height) return false;
         if (numberOfIllustrations != that.numberOfIllustrations) return false;
         if (numberOfPages != that.numberOfPages) return false;
-        if (width != that.width) return false;
-        if (yearEnd != that.yearEnd) return false;
-        if (yearStart != that.yearStart) return false;
-        if (biblioDataMap != null ? !biblioDataMap.equals(that.biblioDataMap) : that.biblioDataMap != null)
-            return false;
-        if (bookTexts != null ? !bookTexts.equals(that.bookTexts) : that.bookTexts != null) return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (dimensionUnits != null ? !dimensionUnits.equals(that.dimensionUnits) : that.dimensionUnits != null)
             return false;
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (licenseUrl != null ? !licenseUrl.equals(that.licenseUrl) : that.licenseUrl != null) return false;
+        if (licenseLogo != null ? !licenseLogo.equals(that.licenseLogo) : that.licenseLogo != null) return false;
+        if (bookTexts != null ? !bookTexts.equals(that.bookTexts) : that.bookTexts != null) return false;
+        return !(biblioDataMap != null ? !biblioDataMap.equals(that.biblioDataMap) : that.biblioDataMap != null);
 
-        return true;
     }
 
     @Override
@@ -176,6 +195,8 @@ public class MultilangMetadata implements HasId, Serializable {
         result = 31 * result + height;
         result = 31 * result + numberOfIllustrations;
         result = 31 * result + numberOfPages;
+        result = 31 * result + (licenseUrl != null ? licenseUrl.hashCode() : 0);
+        result = 31 * result + (licenseLogo != null ? licenseLogo.hashCode() : 0);
         result = 31 * result + (bookTexts != null ? bookTexts.hashCode() : 0);
         result = 31 * result + (biblioDataMap != null ? biblioDataMap.hashCode() : 0);
         return result;
@@ -192,6 +213,8 @@ public class MultilangMetadata implements HasId, Serializable {
                 ", height=" + height +
                 ", numberOfIllustrations=" + numberOfIllustrations +
                 ", numberOfPages=" + numberOfPages +
+                ", licenseUrl='" + licenseUrl + '\'' +
+                ", licenseLogo='" + licenseLogo + '\'' +
                 ", bookTexts=" + bookTexts +
                 ", biblioDataMap=" + biblioDataMap +
                 '}';

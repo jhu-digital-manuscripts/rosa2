@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="license"/>
+        <xs:element minOccurs="0" ref="totalPages"/>
+        <xs:element minOccurs="0" ref="dimensions"/>
+        <xs:element minOccurs="0" ref="dates"/>
+        <xs:element ref="texts"/>
+        <xs:element ref="bibliographies"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="license">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="url"/>
+        <xs:element minOccurs="0" ref="logo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="url" type="xs:anyURI"/>
+  <xs:element name="logo" type="xs:anyURI"/>
+  <xs:element name="totalPages" type="xs:integer"/>
+  <xs:element name="dimensions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="width"/>
+        <xs:element ref="height"/>
+      </xs:sequence>
+      <xs:attribute name="units" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="width" type="xs:integer"/>
+  <xs:element name="height" type="xs:integer"/>
+  <xs:element name="dates">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="startDate"/>
+        <xs:element ref="endDate"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="startDate" type="xs:integer"/>
+  <xs:element name="endDate" type="xs:integer"/>
+  <xs:element name="texts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="text"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="textId"/>
+        <xs:element ref="pages"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="textId" type="xs:NCName"/>
+  <xs:element name="pages">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:integer">
+          <xs:attribute name="end" use="required" type="xs:string"/>
+          <xs:attribute name="start" use="required" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bibliographies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="bibliography"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bibliography">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="commonName"/>
+        <xs:element minOccurs="0" ref="dateLabel"/>
+        <xs:element ref="currentLocation"/>
+        <xs:element ref="repository"/>
+        <xs:element ref="shelfmark"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="authors"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="detail"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="note"/>
+      </xs:sequence>
+      <xs:attribute name="lang" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="commonName" type="xs:string"/>
+  <xs:element name="dateLabel" type="xs:string"/>
+  <xs:element name="currentLocation" type="xs:string"/>
+  <xs:element name="repository" type="xs:string"/>
+  <xs:element name="shelfmark" type="xs:string"/>
+  <xs:element name="authors" type="xs:string"/>
+  <xs:element name="detail" type="xs:string"/>
+  <xs:element name="note" type="xs:string"/>
+</xs:schema>

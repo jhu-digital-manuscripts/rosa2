@@ -70,6 +70,15 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
         Element root = doc.createElement("book");
         doc.appendChild(root);
 
+        if (metadata.getLicenseUrl() != null) {
+            Element license  = doc.createElement("license");
+
+            valueElement("url", metadata.getLicenseUrl(), license, doc);
+            if (metadata.getLicenseLogo() != null) {
+                valueElement("logo", metadata.getLicenseLogo(), license, doc);
+            }
+        }
+
         valueElement("illustrations", metadata.getNumberOfIllustrations(), root, doc);
         valueElement("totalPages", metadata.getNumberOfPages(), root, doc);
 
@@ -153,6 +162,13 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
 
         metadata.setBookTexts(getBookTexts(top));
         metadata.setBiblioDataMap(getBibliographies(top));
+
+        NodeList licenseList = top.getElementsByTagName("license");
+        if (licenseList.getLength() == 1 && licenseList.item(0).getNodeType() == Node.ELEMENT_NODE) {
+            Element licenseElement = (Element) licenseList.item(0);
+            metadata.setLicenseUrl(text("url", licenseElement));
+            metadata.setLicenseLogo(text("logo", licenseElement));
+        }
 
         return metadata;
     }

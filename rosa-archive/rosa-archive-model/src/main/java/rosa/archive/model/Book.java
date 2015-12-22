@@ -94,6 +94,18 @@ public class Book implements HasId, Serializable {
         this.cropInfo = cropInfo;
     }
 
+    public String getLicenseUrl() {
+        return multilangMetadata != null ? multilangMetadata.getLicenseUrl() : null;
+    }
+
+    public String getLicenseLogoUrl() {
+        return multilangMetadata != null ? multilangMetadata.getLicenseLogo() : null;
+    }
+
+    public MultilangMetadata getMultilangMetadata() {
+        return multilangMetadata;
+    }
+
     /**
      * Get book metadata in a particular language.
      *
