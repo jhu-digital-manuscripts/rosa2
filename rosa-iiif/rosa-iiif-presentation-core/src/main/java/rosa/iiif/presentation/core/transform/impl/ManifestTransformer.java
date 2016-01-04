@@ -60,7 +60,12 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         manifest.setDescription(md.getRepository() + ", " + md.getShelfmark(), lc);
 
         Rights preziRights = new Rights();
-        // TODO add license / logo
+        if (book.getLicenseUrl() != null) {
+            preziRights.setLicenseUris(new String[] {book.getLicenseUrl()});
+        }
+        if (book.getLicenseLogoUrl() != null) {
+            preziRights.setLogoUris(new String[] {book.getLicenseLogoUrl()});
+        }
         preziRights.addAttribution(book.getPermission(lc).getPermission(), lc);
 
         manifest.setRights(preziRights);
