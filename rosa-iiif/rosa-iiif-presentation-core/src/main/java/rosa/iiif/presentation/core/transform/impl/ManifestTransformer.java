@@ -9,9 +9,7 @@ import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequestType;
-import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.Rights;
-import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
 
@@ -20,14 +18,14 @@ import java.util.Map;
 
 public class ManifestTransformer extends BasePresentationTransformer implements Transformer<Manifest> {
     private final SequenceTransformer sequenceTransformer;
-    private final RangeTransformer rangeTransformer;
+//    private final RangeTransformer rangeTransformer;
 
     @Inject
     public ManifestTransformer(IIIFRequestFormatter presRequestFormatter, SequenceTransformer sequenceTransformer,
                                RangeTransformer rangeTransformer) {
         super(presRequestFormatter);
         this.sequenceTransformer = sequenceTransformer;
-        this.rangeTransformer = rangeTransformer;
+//        this.rangeTransformer = rangeTransformer;
     }
 
     @Override
