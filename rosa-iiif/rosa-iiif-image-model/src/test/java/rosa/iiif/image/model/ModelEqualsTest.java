@@ -59,4 +59,10 @@ public class ModelEqualsTest {
         EqualsVerifier.forClass(TileInfo.class).allFieldsShouldBeUsed()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
     }
+
+    @Test
+    public void testRights() {
+        EqualsVerifier.forClass(Rights.class).allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
+    }
 }

@@ -17,6 +17,7 @@ public class ImageInfo implements Serializable {
     private ComplianceLevel compliance;
     private TileInfo[] tiles;
     private ImageServerProfile[] profiles;
+    private Rights rights;
 
     /**
      * Create a new empty ImageInfo.
@@ -119,69 +120,65 @@ public class ImageInfo implements Serializable {
         this.profiles = profiles;
     }
 
+    public Rights getRights() {
+        return rights;
+    }
+
+    public void setRights(Rights rights) {
+        this.rights = rights;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ImageInfo)) return false;
+
+        ImageInfo imageInfo = (ImageInfo) o;
+
+        if (width != imageInfo.width) return false;
+        if (height != imageInfo.height) return false;
+        if (image_id != null ? !image_id.equals(imageInfo.image_id) : imageInfo.image_id != null) return false;
+        if (image_uri != null ? !image_uri.equals(imageInfo.image_uri) : imageInfo.image_uri != null) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        if (!Arrays.equals(formats, imageInfo.formats)) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        if (!Arrays.equals(qualities, imageInfo.qualities)) return false;
+        if (!Arrays.equals(sizes, imageInfo.sizes)) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        if (!Arrays.equals(services, imageInfo.services)) return false;
+        if (compliance != imageInfo.compliance) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        if (!Arrays.equals(tiles, imageInfo.tiles)) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        if (!Arrays.equals(profiles, imageInfo.profiles)) return false;
+        return !(rights != null ? !rights.equals(imageInfo.rights) : imageInfo.rights != null);
+
+    }
+
     @Override
     public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((compliance == null) ? 0 : compliance.hashCode());
-        result = prime * result + Arrays.hashCode(formats);
-        result = prime * result + height;
-        result = prime * result + ((image_id == null) ? 0 : image_id.hashCode());
-        result = prime * result + ((image_uri == null) ? 0 : image_uri.hashCode());
-        result = prime * result + Arrays.hashCode(profiles);
-        result = prime * result + Arrays.hashCode(qualities);
-        result = prime * result + Arrays.hashCode(services);
-        result = prime * result + Arrays.hashCode(sizes);
-        result = prime * result + Arrays.hashCode(tiles);
-        result = prime * result + width;
+        int result = image_id != null ? image_id.hashCode() : 0;
+        result = 31 * result + (image_uri != null ? image_uri.hashCode() : 0);
+        result = 31 * result + width;
+        result = 31 * result + height;
+        result = 31 * result + (formats != null ? Arrays.hashCode(formats) : 0);
+        result = 31 * result + (qualities != null ? Arrays.hashCode(qualities) : 0);
+        result = 31 * result + (sizes != null ? Arrays.hashCode(sizes) : 0);
+        result = 31 * result + (services != null ? Arrays.hashCode(services) : 0);
+        result = 31 * result + (compliance != null ? compliance.hashCode() : 0);
+        result = 31 * result + (tiles != null ? Arrays.hashCode(tiles) : 0);
+        result = 31 * result + (profiles != null ? Arrays.hashCode(profiles) : 0);
+        result = 31 * result + (rights != null ? rights.hashCode() : 0);
         return result;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (!(obj instanceof ImageInfo))
-            return false;
-        ImageInfo other = (ImageInfo) obj;
-        if (compliance != other.compliance)
-            return false;
-        if (!Arrays.equals(formats, other.formats))
-            return false;
-        if (height != other.height)
-            return false;
-        if (image_id == null) {
-            if (other.image_id != null)
-                return false;
-        } else if (!image_id.equals(other.image_id))
-            return false;
-        if (image_uri == null) {
-            if (other.image_uri != null)
-                return false;
-        } else if (!image_uri.equals(other.image_uri))
-            return false;
-        if (!Arrays.equals(profiles, other.profiles))
-            return false;
-        if (!Arrays.equals(qualities, other.qualities))
-            return false;
-        if (!Arrays.equals(services, other.services))
-            return false;
-        if (!Arrays.equals(sizes, other.sizes))
-            return false;
-        if (!Arrays.equals(tiles, other.tiles))
-            return false;
-        if (width != other.width)
-            return false;
-        return true;
-    }
-
-    @Override
     public String toString() {
-        return "ImageInfo [image_id=" + image_id + ", image_url=" + image_uri + ", width=" + width + ", height="
-                + height + ", formats=" + Arrays.toString(formats) + ", qualities=" + Arrays.toString(qualities)
-                + ", sizes=" + Arrays.toString(sizes) + ", services=" + Arrays.toString(services) + ", compliance="
-                + compliance + ", tiles=" + Arrays.toString(tiles) + ", profiles=" + Arrays.toString(profiles) + "]";
+        return "ImageInfo{" + "image_id='" + image_id + "', image_uri='" + image_uri +
+                "', width=" + width + ", height=" + height + ", formats=" + Arrays.toString(formats) +
+                ", qualities=" + Arrays.toString(qualities) + ", sizes=" + Arrays.toString(sizes) +
+                ", services=" + Arrays.toString(services) + ", compliance=" + compliance +
+                ", tiles=" + Arrays.toString(tiles) + ", profiles=" + Arrays.toString(profiles) +
+                ", rights=" + rights + '}';
     }
 }
