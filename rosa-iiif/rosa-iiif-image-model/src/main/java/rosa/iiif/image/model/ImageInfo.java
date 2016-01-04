@@ -139,18 +139,13 @@ public class ImageInfo implements Serializable {
         if (height != imageInfo.height) return false;
         if (image_id != null ? !image_id.equals(imageInfo.image_id) : imageInfo.image_id != null) return false;
         if (image_uri != null ? !image_uri.equals(imageInfo.image_uri) : imageInfo.image_uri != null) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(formats, imageInfo.formats)) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(qualities, imageInfo.qualities)) return false;
+        if (!Arrays.deepEquals(formats, imageInfo.formats)) return false;
+        if (!Arrays.deepEquals(qualities, imageInfo.qualities)) return false;
         if (!Arrays.equals(sizes, imageInfo.sizes)) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(services, imageInfo.services)) return false;
+        if (!Arrays.deepEquals(services, imageInfo.services)) return false;
         if (compliance != imageInfo.compliance) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(tiles, imageInfo.tiles)) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(profiles, imageInfo.profiles)) return false;
+        if (!Arrays.deepEquals(tiles, imageInfo.tiles)) return false;
+        if (!Arrays.deepEquals(profiles, imageInfo.profiles)) return false;
         return !(rights != null ? !rights.equals(imageInfo.rights) : imageInfo.rights != null);
 
     }
@@ -167,7 +162,7 @@ public class ImageInfo implements Serializable {
         result = 31 * result + (services != null ? Arrays.hashCode(services) : 0);
         result = 31 * result + (compliance != null ? compliance.hashCode() : 0);
         result = 31 * result + (tiles != null ? Arrays.hashCode(tiles) : 0);
-        result = 31 * result + (profiles != null ? Arrays.hashCode(profiles) : 0);
+        result = 31 * result + (profiles != null ? Arrays.deepHashCode(profiles) : 0);
         result = 31 * result + (rights != null ? rights.hashCode() : 0);
         return result;
     }
