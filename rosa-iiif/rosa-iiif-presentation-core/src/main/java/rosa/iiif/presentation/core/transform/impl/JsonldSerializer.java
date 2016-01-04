@@ -13,6 +13,7 @@ import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationBase;
 import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.Reference;
+import rosa.iiif.presentation.model.Rights;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.annotation.Annotation;
@@ -537,9 +538,44 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         }
 
         // Rights info
-        writeIfNotNull("license", obj.getLicense(), jWriter);
-        writeIfNotNull("attribution", obj.getAttribution("en"), jWriter);
-        writeIfNotNull("logo", obj.getLogo(), jWriter);
+        Rights preziRights = obj.getRights();
+        if (preziRights != null) {
+            if (preziRights.hasMultipleLicenses()) {
+                // Array of license URIs
+                jWriter.key("license").array();
+                for (String uri : preziRights.getLicenseUris()) {
+                    jWriter.value(uri);
+                }
+                jWriter.endArray();
+            } else if (preziRights.hasOneLicense()) {
+                writeIfNotNull("license", obj.getRights().getFirstLicense(), jWriter);
+            }
+
+            writeIfNotNull("attribution", preziRights.getAttribution("en"), jWriter);
+
+            if (preziRights.hasMultipleLogos()) {
+                jWriter.key("logo").array();
+                for (String logo : preziRights.getLogoUris()) {
+                    if (preziRights.hasLogoService()) {
+                        jWriter.object().key("@id").value(logo);
+                        writeService(preziRights.getLogoService(), jWriter);
+                        jWriter.endObject();
+                    } else {
+                        jWriter.value(logo);
+                    }
+                }
+                jWriter.endArray();
+            } else if (preziRights.hasOneLogo()) {
+                if (preziRights.hasLogoService()) {
+                    jWriter.key("logo").object();
+                    jWriter.key("@id").value(preziRights.getFirstLogo());
+                    writeService(preziRights.getLogoService(), jWriter);
+                    jWriter.endObject();
+                } else {
+                    writeIfNotNull("logo", preziRights.getFirstLogo(), jWriter);
+                }
+            }
+        }
 
         // Links
         if (obj.getRelatedUri() != null) {

@@ -10,6 +10,7 @@ import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Range;
+import rosa.iiif.presentation.model.Rights;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
@@ -60,7 +61,11 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         manifest.setLabel(md.getCommonName(), lc);
         manifest.setDescription(md.getRepository() + ", " + md.getShelfmark(), lc);
 
-        manifest.addAttribution(book.getPermission(lc).getPermission(), lc);
+        Rights preziRights = new Rights();
+        // TODO add license / logo
+        preziRights.addAttribution(book.getPermission(lc).getPermission(), lc);
+
+        manifest.setRights(preziRights);
         manifest.setViewingHint(ViewingHint.PAGED);
 
         manifest.setMetadata(transformMetadata(book, new String[]{lc}));

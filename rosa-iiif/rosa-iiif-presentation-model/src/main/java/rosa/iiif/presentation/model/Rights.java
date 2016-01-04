@@ -2,6 +2,8 @@ package rosa.iiif.presentation.model;
 
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Contains rights and license information.
@@ -15,7 +17,7 @@ public class Rights implements Serializable {
      * value may contain simple HTML, using only the a, b, br, i, img, p and span tags, as
      * described in the HTML Markup in Property Values section of the Presentation API.
      */
-    private String attribution;
+    private Map<String, HtmlValue> attributionMap;
 
     /**
      * One or more URLs of an external resource that describes the license or rights statement
@@ -30,22 +32,58 @@ public class Rights implements Serializable {
      */
     private String[] logoUris;
 
-    public Rights() {}
+    /**
+     * An image service reference, if available. It is recommended that this service be a IIIF
+     * image service.
+     */
+    private Service logoService;
 
-    public String getAttribution() {
-        return attribution;
+    public Rights() {
+        this.attributionMap = new HashMap<>();
     }
 
-    public void setAttribution(String attribution) {
-        this.attribution = attribution;
+    public void setAttributionMap(Map<String, HtmlValue> attributionMap) {
+        this.attributionMap = attributionMap;
+    }
+
+    public Map<String, HtmlValue> getAttributionMap() {
+        return attributionMap;
+    }
+
+    public boolean hasAttribution() {
+        return attributionMap != null && !attributionMap.isEmpty();
+    }
+
+    public boolean hasAttribution(String lang) {
+        return hasAttribution() && attributionMap.containsKey(lang);
+    }
+
+    public void addAttribution(String text, String lang) {
+        attributionMap.put(lang, new HtmlValue(text, lang));
+    }
+
+    public String getAttribution(String lang) {
+        return attributionMap.get(lang).getValue();
     }
 
     public String[] getLicenseUris() {
         return licenseUris;
     }
 
+    public boolean hasOneLicense() {
+        return licenseUris != null && licenseUris.length == 1;
+    }
+
+    public boolean hasMultipleLicenses() {
+        return licenseUris != null && licenseUris.length > 1;
+    }
+
     public void setLicenseUris(String[] licenseUris) {
         this.licenseUris = licenseUris;
+    }
+
+    public String getFirstLicense() {
+        return isEmpty(licenseUris) ? null : licenseUris[0];
     }
 
     public String[] getLogoUris() {
@@ -60,8 +98,24 @@ public class Rights implements Serializable {
         return isEmpty(logoUris) ? null : logoUris[0];
     }
 
-    public String getFirstLicense() {
-        return isEmpty(licenseUris) ? null : licenseUris[0];
+    public boolean hasOneLogo() {
+        return logoUris != null && logoUris.length == 1;
+    }
+
+    public boolean hasMultipleLogos() {
+        return logoUris != null && logoUris.length > 1;
+    }
+
+    public Service getLogoService() {
+        return logoService;
+    }
+
+    public void setLogoService(Service logoService) {
+        this.logoService = logoService;
+    }
+
+    public boolean hasLogoService() {
+        return logoService != null;
     }
 
     private boolean isEmpty(Object[] arr) {
@@ -75,24 +129,27 @@ public class Rights implements Serializable {
 
         Rights rights = (Rights) o;
 
-        if (attribution != null ? !attribution.equals(rights.attribution) : rights.attribution != null) return false;
+        if (attributionMap != null ? !attributionMap.equals(rights.attributionMap) : rights.attributionMap != null)
+            return false;
         // Probably incorrect - comparing Object[] arrays with Arrays.equals
         if (!Arrays.equals(licenseUris, rights.licenseUris)) return false;
         // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        return Arrays.equals(logoUris, rights.logoUris);
+        if (!Arrays.equals(logoUris, rights.logoUris)) return false;
+        return !(logoService != null ? !logoService.equals(rights.logoService) : rights.logoService != null);
     }
 
     @Override
     public int hashCode() {
-        int result = attribution != null ? attribution.hashCode() : 0;
+        int result = attributionMap != null ? attributionMap.hashCode() : 0;
         result = 31 * result + (licenseUris != null ? Arrays.hashCode(licenseUris) : 0);
         result = 31 * result + (logoUris != null ? Arrays.hashCode(logoUris) : 0);
+        result = 31 * result + (logoService != null ? logoService.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return "Rights{attribution='" + attribution + "', licenseUris=" + Arrays.toString(licenseUris) +
-                ", logoUris=" + Arrays.toString(logoUris) + '}';
+        return "Rights{attributionMap='" + attributionMap + "', licenseUris=" + Arrays.toString(licenseUris) +
+                ", logoUris=" + Arrays.toString(logoUris) + "logoService=" + logoService + '}';
     }
 }

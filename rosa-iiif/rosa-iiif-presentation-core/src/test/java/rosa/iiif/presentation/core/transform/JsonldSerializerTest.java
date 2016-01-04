@@ -23,6 +23,7 @@ import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationBase;
 import rosa.iiif.presentation.model.Reference;
+import rosa.iiif.presentation.model.Rights;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.TextValue;
@@ -193,15 +194,18 @@ public class JsonldSerializerTest {
         obj.setDescription("This is a description. It can have minimal HTML markup.", "en");
         obj.setThumbnailUrl("THUMBNAIL_URL");
         obj.setThumbnailService(createIiifService());
-        obj.setAttribution(new HtmlValue("This is the attribution."));
-        obj.setLicense("URL_TO_LICENSE");
-        obj.setLogo("URL_TO_LICENSE_LOGO");
         obj.setSeeAlso("Do not see also.");
         obj.setService(null);
         obj.setRelatedUri("URL_TO_RELATED_RESOURCE");
         obj.setRelatedFormat("text/plain");
         obj.setWithin("ParentId");
         obj.setMetadata(createMetadata());
+
+        Rights preziRights = new Rights();
+        preziRights.addAttribution("This is the attribution.", "en");
+        preziRights.setLicenseUris(new String[] {"URL_TO_LICENSE"});
+        preziRights.setLogoUris(new String[] {"URL_TO_LICENSE_LOGO"});
+        obj.setRights(preziRights);
     }
 
     private Map<String, HtmlValue> createMetadata() {
