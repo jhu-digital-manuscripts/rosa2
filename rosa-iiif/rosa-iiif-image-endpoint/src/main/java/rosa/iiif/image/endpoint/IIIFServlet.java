@@ -21,6 +21,7 @@ import rosa.iiif.image.core.IIIFException;
 import rosa.iiif.image.core.IIIFRequestParser;
 import rosa.iiif.image.core.IIIFResponseSerializer;
 import rosa.iiif.image.core.IIIFService;
+import rosa.iiif.image.core.UriUtil;
 import rosa.iiif.image.model.ImageInfo;
 import rosa.iiif.image.model.ImageRequest;
 import rosa.iiif.image.model.InfoFormat;
@@ -30,6 +31,7 @@ import rosa.iiif.image.model.RequestType;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
+import rosa.iiif.image.model.Rights;
 
 /**
  * Implement the IIIF Image API version 2.0, http://iiif.io/api/image/2.0/
@@ -42,6 +44,7 @@ public class IIIFServlet extends HttpServlet {
     private final IIIFRequestParser parser;
     private final IIIFResponseSerializer serializer;
     private final Map<String, String> image_id_aliases; // alias -> image id
+    private final Map<String, Rights> rights_map;
 
     /**
      * Create a new IIIF servlet to handle IIIF image requests.
@@ -50,11 +53,13 @@ public class IIIFServlet extends HttpServlet {
      * @param image_id_aliases aliases
      */
     @Inject
-    public IIIFServlet(IIIFService service, @Named("image.aliases") Map<String, String> image_id_aliases) {
+    public IIIFServlet(IIIFService service, @Named("image.aliases") Map<String, String> image_id_aliases,
+                       @Named("rights") Map<String, Rights> rights_map) {
         this.service = service;
         this.serializer = new IIIFResponseSerializer();
         this.parser = new IIIFRequestParser();
         this.image_id_aliases = image_id_aliases;
+        this.rights_map = rights_map;
     }
 
     private void report_error(HttpServletResponse resp, IIIFException e) throws IOException {
@@ -136,6 +141,9 @@ public class IIIFServlet extends HttpServlet {
                 }
 
                 ImageInfo info = service.perform(inforeq);
+
+                String collection = UriUtil.decodePathSegments(inforeq.getImageId())[0];
+                info.setRights(rights_map.get(collection));
 
                 resp.setHeader("Access-Control-Allow-Origin", "*");
 

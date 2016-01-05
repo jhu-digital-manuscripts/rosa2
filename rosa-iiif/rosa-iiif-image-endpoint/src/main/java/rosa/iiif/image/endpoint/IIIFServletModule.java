@@ -2,6 +2,9 @@ package rosa.iiif.image.endpoint;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -14,6 +17,7 @@ import com.google.inject.Provides;
 import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 import com.google.inject.servlet.ServletModule;
+import rosa.iiif.image.model.Rights;
 
 /**
  * The servlet is configured by iiif-servlet.properties and image aliases are
@@ -22,6 +26,7 @@ import com.google.inject.servlet.ServletModule;
 public class IIIFServletModule extends ServletModule {
     private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
     private static final String IMAGE_ALIASES_PATH = "/image-aliases.properties";
+    private static final String RIGHTS_CONFIG_PATH = "/rights.properties";
 
     @Override
     protected void configureServlets() {
@@ -54,6 +59,33 @@ public class IIIFServletModule extends ServletModule {
         }
 
         return result;
+    }
+
+    @Provides
+    @Named("rights")
+    protected Map<String, Rights> provideRightsMap() {
+        Map<String, Rights> map = new HashMap<>();
+
+        try {
+            if (Files.exists(Paths.get(getClass().getResource(RIGHTS_CONFIG_PATH).toURI()))) {
+                Properties props = loadProperties(RIGHTS_CONFIG_PATH);
+
+                String id = props.getProperty("id");
+                if (id != null && !id.isEmpty()) {
+                    Rights rights = new Rights();
+
+                    rights.setLicenseUris(new String[] {props.getProperty("license")});
+                    rights.setLogoUris(new String[] {props.getProperty("logo")});
+                    rights.setAttribution(props.getProperty("attribution"));
+
+                    map.put(id, rights);
+                }
+            }
+        } catch (URISyntaxException e) {
+            throw new RuntimeException("Malformed URI to rights properties file.");
+        }
+
+        return map;
     }
 
     @Provides

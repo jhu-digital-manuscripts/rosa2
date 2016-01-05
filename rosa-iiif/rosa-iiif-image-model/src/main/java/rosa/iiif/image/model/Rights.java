@@ -30,6 +30,10 @@ public class Rights implements Serializable {
      */
     private String[] logoUris;
 
+    private String logoServiceProfile;
+    private String logoServiceId;
+    private String logoServiceContext;
+
     public Rights() {}
 
     public String getAttribution() {
@@ -64,6 +68,30 @@ public class Rights implements Serializable {
         return isEmpty(licenseUris) ? null : licenseUris[0];
     }
 
+    public String getLogoServiceProfile() {
+        return logoServiceProfile;
+    }
+
+    public void setLogoServiceProfile(String logoServiceProfile) {
+        this.logoServiceProfile = logoServiceProfile;
+    }
+
+    public String getLogoServiceId() {
+        return logoServiceId;
+    }
+
+    public void setLogoServiceId(String logoServiceId) {
+        this.logoServiceId = logoServiceId;
+    }
+
+    public String getLogoServiceContext() {
+        return logoServiceContext;
+    }
+
+    public void setLogoServiceContext(String logoServiceContext) {
+        this.logoServiceContext = logoServiceContext;
+    }
+
     private boolean isEmpty(Object[] arr) {
         return arr == null || arr.length == 0;
     }
@@ -76,10 +104,13 @@ public class Rights implements Serializable {
         Rights rights = (Rights) o;
 
         if (attribution != null ? !attribution.equals(rights.attribution) : rights.attribution != null) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(licenseUris, rights.licenseUris)) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        return Arrays.equals(logoUris, rights.logoUris);
+        if (!Arrays.deepEquals(licenseUris, rights.licenseUris)) return false;
+        if (!Arrays.deepEquals(logoUris, rights.logoUris)) return false;
+        if (logoServiceProfile != null ? !logoServiceProfile.equals(rights.logoServiceProfile) : rights.logoServiceProfile != null)
+            return false;
+        if (logoServiceId != null ? !logoServiceId.equals(rights.logoServiceId) : rights.logoServiceId != null)
+            return false;
+        return !(logoServiceContext != null ? !logoServiceContext.equals(rights.logoServiceContext) : rights.logoServiceContext != null);
     }
 
     @Override
@@ -87,12 +118,21 @@ public class Rights implements Serializable {
         int result = attribution != null ? attribution.hashCode() : 0;
         result = 31 * result + (licenseUris != null ? Arrays.hashCode(licenseUris) : 0);
         result = 31 * result + (logoUris != null ? Arrays.hashCode(logoUris) : 0);
+        result = 31 * result + (logoServiceProfile != null ? logoServiceProfile.hashCode() : 0);
+        result = 31 * result + (logoServiceId != null ? logoServiceId.hashCode() : 0);
+        result = 31 * result + (logoServiceContext != null ? logoServiceContext.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return "Rights{attribution='" + attribution + "', licenseUris=" + Arrays.toString(licenseUris) +
-                ", logoUris=" + Arrays.toString(logoUris) + '}';
+        return "Rights{" +
+                "attribution='" + attribution + '\'' +
+                ", licenseUris=" + Arrays.toString(licenseUris) +
+                ", logoUris=" + Arrays.toString(logoUris) +
+                ", logoServiceProfile='" + logoServiceProfile + '\'' +
+                ", logoServiceId='" + logoServiceId + '\'' +
+                ", logoServiceContext='" + logoServiceContext + '\'' +
+                '}';
     }
 }

@@ -14,6 +14,7 @@ import rosa.iiif.image.model.ImageInfo;
 import rosa.iiif.image.model.ImageServerProfile;
 import rosa.iiif.image.model.ImageServerSupports;
 import rosa.iiif.image.model.Quality;
+import rosa.iiif.image.model.Rights;
 import rosa.iiif.image.model.ServiceReference;
 import rosa.iiif.image.model.TileInfo;
 
@@ -42,6 +43,7 @@ public class IIIFResponseSerializer {
         write_json_ld(info.getTiles(), out);
         write_json_ld(info.getCompliance(), info.getProfiles(), out);
         write_json_ld(info.getServices(), out);
+        write_json_ld(info.getRights(), out);
 
         out.endObject();
     }
@@ -207,5 +209,77 @@ public class IIIFResponseSerializer {
         }
 
         out.endArray();
+    }
+
+    private void write_json_ld(Rights rights, JSONWriter out) {
+        if (rights == null) {
+            return;
+        }
+
+        if (rights.getAttribution() != null && !rights.getAttribution().isEmpty()) {
+            out.key("attribution").value(rights.getAttribution());
+        }
+
+        writeIfNotNull("license", rights.getLicenseUris(), out);
+        writeLogo(rights, out);
+    }
+
+    private boolean hasService(Rights rights) {
+        return !isEmpty(rights.getLogoServiceContext())
+                && !isEmpty(rights.getLogoServiceId())
+                && !isEmpty(rights.getLogoServiceProfile());
+    }
+
+    private boolean isEmpty(String str) {
+        return str == null || str.isEmpty();
+    }
+
+    private void writeIfNotNull(String key, String[] values, JSONWriter out) {
+        if (values == null || values.length == 0) {
+            return;
+        }
+
+        out.key(key);
+        if (values.length == 1) {
+            out.value(values[0]);
+        } else {
+            out.array();
+            for (String str : values) {
+                out.value(str);
+            }
+            out.endArray();
+        }
+    }
+
+    private void writeLogo(Rights rights, JSONWriter out) {
+        if (rights.getLogoUris() == null || rights.getLogoUris().length == 0) {
+            return;
+        }
+
+        if (hasService(rights)) {
+            out.key("logo");
+            if (rights.getLogoUris().length > 1) {
+                out.array();
+            }
+
+            for (String str : rights.getLogoUris()) {
+                out.object();
+                out.key("@id").value(str);
+
+                out.key("service").object();
+                out.key("@context").value(rights.getLogoServiceContext());
+                out.key("@id").value(rights.getLogoServiceId());
+                out.key("profile").value(rights.getLogoServiceProfile());
+
+                out.endObject().endObject();
+            }
+
+            if (rights.getLogoUris().length > 1) {
+                out.endArray();
+            }
+
+        } else {
+            writeIfNotNull("logo", rights.getLogoUris(), out);
+        }
     }
 }
