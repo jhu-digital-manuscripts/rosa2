@@ -32,7 +32,7 @@
         <mvn.source.plugin.version>2.4</mvn.source.plugin.version>
 
         <!-- Dependency versions -->
-        <guice.version>3.0</guice.version>
+        <guice.version>4.0</guice.version>
         <gin.version>2.1.2</gin.version>
         <gwt.version>2.7.0</gwt.version>
         <jsonld-java.version>0.5.1</jsonld-java.version>
