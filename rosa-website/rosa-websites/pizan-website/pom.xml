@@ -29,14 +29,14 @@
         </profile>
 
         <profile>
-            <id>rose</id>
+            <id>production</id>
 
             <properties>
-                <archive.path>/mnt</archive.path>
-                <search.index.path>/var/tmp/lucene</search.index.path>
-                <gwt.output.style>obf</gwt.output.style>
-                <gwt.log.level>SEVERE</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
-                <analytics.status>false</analytics.status>
+              <archive.path>/mnt</archive.path>
+              <search.index.path>webapps/pizan/WEB-INF/lucene</search.index.path>
+              <gwt.output.style>obf</gwt.output.style>
+              <gwt.log.level>SEVERE</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
+              <analytics.status>false</analytics.status>
             </properties>
         </profile>
     </profiles>
