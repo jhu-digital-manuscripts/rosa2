@@ -1,6 +1,5 @@
 package rosa.archive.core.util;
 
-import com.sun.org.apache.xml.internal.serializer.OutputPropertiesFactory;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -118,7 +117,7 @@ public class XMLUtil {
             }
             // Options to make it human readable
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            transformer.setOutputProperty(OutputPropertiesFactory.S_KEY_INDENT_AMOUNT, "4");
+            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
         } catch (TransformerConfigurationException e) {
             return;
         }
