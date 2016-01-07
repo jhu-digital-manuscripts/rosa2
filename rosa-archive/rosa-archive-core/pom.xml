@@ -75,6 +75,11 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
 
+	<dependency>
+          <groupId>com.twelvemonkeys.imageio</groupId>
+          <artifactId>imageio-tiff</artifactId>
+	</dependency>
+
        <!-- Test dependencies -->
 
        <dependency>
