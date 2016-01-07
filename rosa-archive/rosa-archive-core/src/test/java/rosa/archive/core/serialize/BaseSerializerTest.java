@@ -30,7 +30,7 @@ public abstract class BaseSerializerTest<T extends HasId> {
     /**
      * @param path path of test resource
      * @return resource as an InputStream
-     * @throws IOException .
+     * @throws IOException
      */
     public InputStream getResourceAsStream(String path) throws IOException {
         return getClass().getClassLoader().getResourceAsStream(path);
@@ -43,7 +43,7 @@ public abstract class BaseSerializerTest<T extends HasId> {
      * @param name path of test resource
      * @param errors list to store errors found while loading resource
      * @return the object
-     * @throws IOException .
+     * @throws IOException
      */
     public T loadResource(String collection, String book, String name, List<String> errors) throws IOException {
         assertNotNull("Serializer not set.", serializer);
@@ -69,7 +69,7 @@ public abstract class BaseSerializerTest<T extends HasId> {
      * @param book name of book
      * @param name path of test resource
      * @return the object
-     * @throws IOException .
+     * @throws IOException
      */
     public T loadResource(String collection, String book, String name) throws IOException {
         return loadResource(collection, book, name, new ArrayList<String>());
@@ -78,7 +78,7 @@ public abstract class BaseSerializerTest<T extends HasId> {
     /**
      * @param object object to write
      * @return list of all lines written
-     * @throws IOException .
+     * @throws IOException
      */
     public List<String> writeObjectAndGetWrittenLines(T object) throws IOException {
         String output = writeObjectAndGetContent(object);
@@ -88,7 +88,7 @@ public abstract class BaseSerializerTest<T extends HasId> {
     /**
      * @param object object to write
      * @return a String containing all written content
-     * @throws IOException .
+     * @throws IOException
      */
     public String writeObjectAndGetContent(T object) throws IOException {
         try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {

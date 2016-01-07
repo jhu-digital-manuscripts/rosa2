@@ -659,7 +659,7 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @param currentFileMap file map of current book
      * @param reverse reverse the operation by changing names from archive name to git name?
      * @param errors list of errors
-     * @throws IOException .
+     * @throws IOException
      */
     private void renameInternalReferences(ByteStreamGroup collection, ByteStreamGroup book, AnnotatedPage aPage,
                                           FileMap currentFileMap, boolean reverse, List<String> errors) throws IOException {

@@ -94,7 +94,7 @@ public class TranscriptionConverter {
      * closed when the document is complete.
      *
      * @param out xml writer
-     * @throws SAXException .
+     * @throws SAXException
      */
     private void createTEITop(XMLWriter out) throws SAXException {
         out.attribute("xmlns", TEI_NAMESPACE_URI);

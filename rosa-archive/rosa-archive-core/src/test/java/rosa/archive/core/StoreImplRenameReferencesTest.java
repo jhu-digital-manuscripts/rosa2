@@ -112,7 +112,7 @@ public class StoreImplRenameReferencesTest {
      * Rename the AoR transcriptions in Domenichi. Basically, the prefix 'Folgers'
      * should be added to all files, as specified in the Domenichi file map.
      *
-     * @throws Exception .
+     * @throws Exception
      */
     @Test
     public void renameDomenichiTranscriptionsTest() throws Exception {
@@ -182,7 +182,7 @@ public class StoreImplRenameReferencesTest {
      * TWO internal references that must also be renamed. Final name for this
      * book is 'PrincetonRB16th11'
      *
-     * @throws Exception .
+     * @throws Exception
      */
     @Test
     public void renameBuchananTranscriptionsTest() throws Exception {
@@ -253,7 +253,7 @@ public class StoreImplRenameReferencesTest {
      *
      * @param book name of book
      * @return list of AnnotatedPage objects
-     * @throws IOException .
+     * @throws IOException
      */
     private List<AnnotatedPage> getPages(String book) throws IOException {
         assertTrue("Book not found.", base.getByteStreamGroup(VALID_COLLECTION).hasByteStreamGroup(book));

@@ -133,7 +133,7 @@ public class StoreImplImageListsTest extends BaseArchiveTest {
      * will contain only those six required images, which will be labeled as
      * missing.
      *
-     * @throws Exception .
+     * @throws Exception
      */
     @Test
     public void testGenImageListWithNoImages() throws Exception {
