@@ -1,6 +1,5 @@
 package rosa.archive.core.util;
 
-import com.sun.org.apache.xerces.internal.dom.DOMInputImpl;
 import org.apache.commons.io.IOUtils;
 import org.w3c.dom.ls.LSInput;
 import org.w3c.dom.ls.LSResourceResolver;
@@ -24,7 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class CachingUrlResourceResolver implements LSResourceResolver, EntityResolver {
     private static final String ENCODING = "UTF-8";
-    private static final int CACHE_MAX_SIZE = 100;
+    private static final int CACHE_MAX_SIZE = 1000;
 
     private ConcurrentHashMap<String, String> resourceCache;
 
@@ -39,7 +38,7 @@ public class CachingUrlResourceResolver implements LSResourceResolver, EntityRes
     public LSInput resolveResource(String type, String namespaceURI, String publicId, String systemId, String baseURI) {
         // Return immediately if systemId is already present in cache
         if (resourceCache.containsKey(systemId)) {
-            return new DOMInputImpl(publicId, systemId, baseURI, resourceCache.get(systemId), ENCODING);
+            return new RosaLSInput(publicId, systemId, baseURI, resourceCache.get(systemId), ENCODING);
         }
 
         String data = getLocalCopy(systemId);
@@ -54,7 +53,7 @@ public class CachingUrlResourceResolver implements LSResourceResolver, EntityRes
             } catch (IOException e) {}
         }
 
-        return new DOMInputImpl(publicId, systemId, baseURI, data, ENCODING);
+        return new RosaLSInput(publicId, systemId, baseURI, data, ENCODING);
     }
 
     @Override

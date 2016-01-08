@@ -1,9 +1,9 @@
 package rosa.archive.aor;
 
-import com.sun.org.apache.xerces.internal.dom.DOMInputImpl;
 import org.apache.commons.io.IOUtils;
 import org.w3c.dom.ls.LSInput;
 import org.w3c.dom.ls.LSResourceResolver;
+import rosa.archive.core.util.RosaLSInput;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,6 +12,12 @@ import java.net.URL;
 import java.net.URLDecoder;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * NOTE: this is a copy of rosa.archive.core.util.CachingUrlResourceResolver
+ *
+ * This one is used because (for some reason) there is no dependency on the
+ * rosa.archive.core module.
+ */
 public class CachingUrlLSResourceResolver implements LSResourceResolver {
     private static final String ENCODING = "UTF-8";
     private static final int CACHE_MAX_SIZE = 1000;
@@ -26,7 +32,7 @@ public class CachingUrlLSResourceResolver implements LSResourceResolver {
     public LSInput resolveResource(String type, String namespaceURI, String publicId, String systemId, String baseURI) {
         // Return immediately if systemId is already present in cache
         if (resourceCache.containsKey(systemId)) {
-            return new DOMInputImpl(publicId, systemId, baseURI, resourceCache.get(systemId), ENCODING);
+            return new RosaLSInput(publicId, systemId, baseURI, resourceCache.get(systemId), ENCODING);
         }
 
         String data = getLocalCopy(systemId);
@@ -41,7 +47,7 @@ public class CachingUrlLSResourceResolver implements LSResourceResolver {
             } catch (IOException e) {}
         }
 
-        return new DOMInputImpl(publicId, systemId, baseURI, data, ENCODING);
+        return new RosaLSInput(publicId, systemId, baseURI, data, ENCODING);
     }
 
     private void addToCache(String key, String data) {
