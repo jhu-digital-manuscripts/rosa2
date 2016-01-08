@@ -227,6 +227,9 @@ public class ArchiveTool {
             String sheet_dir = cmd.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
             aorTranscriptionChecker.run(args[1], true, sheet_dir, report);
             break;
+        case SEPARATE_TEI_METADATA:
+            TEIDescriptionConverter.run(cmd, config, report);
+            break;
         default:
             displayError("Invalid command found.", args);
             break;
@@ -275,6 +278,9 @@ public class ArchiveTool {
             case CHECK_AOR:
                 String sheet_dir = cmd.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
                 aorTranscriptionChecker.run(args[1], false, sheet_dir, report);
+                break;
+            case SEPARATE_TEI_METADATA:
+                TEIDescriptionConverter.run(cmd, config, report);
                 break;
             default:
                 displayError("Invalid command found.", args);
