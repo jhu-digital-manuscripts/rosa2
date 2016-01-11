@@ -4,17 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>rosa-archive-parent</artifactId>
-        <groupId>rosa</groupId>
+        <groupId>rosa.archive</groupId>
         <version>2.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>rosa-archive-tool</artifactId>
+    <groupId>rosa.archive</groupId>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>rosa</groupId>
+            <groupId>rosa.archive</groupId>
             <artifactId>rosa-archive-core</artifactId>
         </dependency>
 

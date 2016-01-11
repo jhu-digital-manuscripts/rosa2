@@ -200,68 +200,68 @@
             <!-- Internal dependencies -->
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.archive</groupId>
                 <artifactId>rosa-archive-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.archive</groupId>
                 <artifactId>rosa-archive-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.archive</groupId>
                 <artifactId>rosa-archive-core</artifactId>
                 <version>${project.version}</version>
-		        <type>test-jar</type>
+	        <type>test-jar</type>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.iiif</groupId>
                 <artifactId>rosa-iiif-image-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.iiif</groupId>
                 <artifactId>rosa-iiif-image-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.iiif</groupId>
                 <artifactId>rosa-iiif-presentation-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.iiif</groupId>
                 <artifactId>rosa-iiif-presentation-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.website</groupId>
                 <artifactId>rosa-website-search</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.website</groupId>
                 <artifactId>rosa-website-viewer</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.website</groupId>
                 <artifactId>rosa-website-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.website</groupId>
                 <artifactId>rosa-website-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -270,7 +270,7 @@
                   <groupId>rosa.search</groupId>
                   <artifactId>rosa-search</artifactId>
                   <version>${project.version}</version>
-                </dependency>
+            </dependency>
 
             <dependency>
                   <groupId>rosa.search</groupId>
