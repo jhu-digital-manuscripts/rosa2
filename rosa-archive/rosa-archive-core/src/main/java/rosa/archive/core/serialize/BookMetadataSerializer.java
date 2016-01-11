@@ -353,12 +353,13 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             Element el = (Element) nodes.item(i);
             BookText text = new BookText();
 
+            text.setId(String.valueOf(i));
             text.setLinesPerColumn(getInteger(el, MetadataTextsLinesPerColTag));
             text.setColumnsPerPage(getInteger(el, MetadataTextsColsPerPageTag));
             text.setLeavesPerGathering(getInteger(el, MetadataTextsLeavesPerGatheringTag));
             text.setNumberOfIllustrations(getInteger(el, MetadataNumIllustrationsTag));
             text.setNumberOfPages(getInteger(el, MetadataTextsNumPagesTag));
-            text.setId(getString(el, MetadataTextsIdTag));
+            text.setTextId(getString(el, MetadataTextsIdTag));
             text.setTitle(getString(el, MetadataTextsTitleTag));
 
             NodeList locii = el.getElementsByTagName(MetadataTextsLocusTag);

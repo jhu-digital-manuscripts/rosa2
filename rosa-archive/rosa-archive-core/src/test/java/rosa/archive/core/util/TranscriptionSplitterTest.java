@@ -34,7 +34,7 @@ public class TranscriptionSplitterTest extends BaseArchiveTest {
      * XML. For each page that has a transcription, there should be an associated
      * XML fragment in the resulting Map.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void splitTranscriptionLudwigXV7() throws IOException {

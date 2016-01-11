@@ -320,7 +320,7 @@ public interface Store {
      * @param book id of the book
      * @param errors list of errors
      * @param warnings list of warnings
-     * @throws IOException .
+     * @throws IOException
      */
     void generateTEITranscriptions(String collection, String book, List<String> errors,
                                    List<String> warnings) throws IOException;

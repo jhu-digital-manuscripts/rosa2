@@ -4,6 +4,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="license"/>
+        <xs:element minOccurs="0" ref="illustrations"/>
         <xs:element minOccurs="0" ref="totalPages"/>
         <xs:element minOccurs="0" ref="dimensions"/>
         <xs:element minOccurs="0" ref="dates"/>
@@ -22,6 +23,7 @@
   </xs:element>
   <xs:element name="url" type="xs:anyURI"/>
   <xs:element name="logo" type="xs:anyURI"/>
+  <xs:element name="illustrations" type="xs:integer"/>
   <xs:element name="totalPages" type="xs:integer"/>
   <xs:element name="dimensions">
     <xs:complexType>
@@ -29,7 +31,7 @@
         <xs:element ref="width"/>
         <xs:element ref="height"/>
       </xs:sequence>
-      <xs:attribute name="units" use="required" type="xs:NCName"/>
+      <xs:attribute name="units" use="required" type="xs:string"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="width" type="xs:integer"/>
@@ -57,12 +59,16 @@
         <xs:element ref="title"/>
         <xs:element ref="textId"/>
         <xs:element ref="pages" minOccurs="0"/>
+        <xs:element ref="illustrations" minOccurs="0"/>
+        <xs:element ref="linesPerColumn" minOccurs="0"/>
+        <xs:element ref="leavesPerGathering" minOccurs="0"/>
+        <xs:element ref="columnsPerPage" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="id" use="required" type="xs:string"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="title" type="xs:string"/>
-  <xs:element name="textId" type="xs:NCName"/>
+  <xs:element name="textId" type="xs:string"/>
   <xs:element name="pages">
     <xs:complexType>
       <xs:simpleContent>
@@ -73,6 +79,9 @@
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
+  <xs:element name="linesPerColumn" type="xs:integer"/>
+  <xs:element name="leavesPerGathering" type="xs:integer"/>
+  <xs:element name="columnsPerPage" type="xs:integer"/>
   <xs:element name="bibliographies">
     <xs:complexType>
       <xs:sequence>
@@ -86,15 +95,17 @@
         <xs:element ref="title" minOccurs="0"/>
         <xs:element ref="commonName"/>
         <xs:element minOccurs="0" ref="dateLabel"/>
+        <xs:element minOccurs="0" ref="type"/>
+        <xs:element minOccurs="0" ref="material"/>
         <xs:element minOccurs="0" ref="origin"/>
         <xs:element ref="currentLocation"/>
         <xs:element ref="repository"/>
-        <xs:element ref="shelfmark"/>
+        <xs:element minOccurs="0" ref="shelfmark"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="author"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="detail"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="note"/>
       </xs:sequence>
-      <xs:attribute name="lang" use="required" type="xs:NCName"/>
+      <xs:attribute name="lang" use="required" type="xs:string"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="commonName" type="xs:string"/>
@@ -103,6 +114,8 @@
   <xs:element name="currentLocation" type="xs:string"/>
   <xs:element name="repository" type="xs:string"/>
   <xs:element name="shelfmark" type="xs:string"/>
+  <xs:element name="material" type="xs:string"/>
+  <xs:element name="type" type="xs:string"/>
   <xs:element name="author" type="xs:string"/>
   <xs:element name="detail" type="xs:string"/>
   <xs:element name="note" type="xs:string"/>

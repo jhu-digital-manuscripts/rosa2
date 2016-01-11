@@ -39,7 +39,7 @@ public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
      * the store should return before creating any new files with no warnings
      * or errors.
      *
-     * @throws Exception .
+     * @throws Exception
      */
     @Test
     public void dontGenerateTranscriptionFolgersHa2() throws Exception {
@@ -65,7 +65,7 @@ public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
      * method. This in turn relies on the {@link rosa.archive.core.util.TranscriptionConverter}
      * class and the {@link rosa.archive.core.util.XMLWriter} class.
      *
-     * @throws Exception .
+     * @throws Exception
      */
     @Test
     public void generateTranscriptionLudwigTest() throws Exception {

@@ -136,7 +136,8 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
                             continue;
                         }
                         // TODO Needs to be abstracted out to distinguish rose/pizan/etc?
-                        if (text.getId() != null && text.getId().equals("rose")) {
+                        if ((text.getId() != null && text.getId().equals("rose"))
+                                || (text.getTextId() != null && text.getTextId().equals("rose"))) {
                             rose = text;
                             break;
                         }
@@ -625,7 +626,9 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             BookText rose = null;
 
             for (BookText text : md.getTexts()) {
-                if (text != null && text.getId() != null && text.getId().equals("rose")) {
+                if (text != null &&
+                        ((text.getId() != null && text.getId().equals("rose"))
+                        || (text.getTextId() != null && text.getTextId().equals("rose")))) {
                     rose = text;
                 }
             }

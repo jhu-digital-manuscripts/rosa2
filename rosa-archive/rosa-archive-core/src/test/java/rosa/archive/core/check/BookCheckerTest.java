@@ -68,6 +68,9 @@ public class BookCheckerTest extends BaseArchiveTest {
     @Test
     public void loadFolgersAndCheckWithBits() throws Exception {
         boolean check = store.check(loadValidCollection(), loadValidFolgersHa2(), true, errors, warnings);
+        for (String s : errors) {
+            System.out.println( s);
+        }
         assertTrue(check);
         assertTrue("There should be NO errors.", errors.isEmpty());
 //        assertTrue("Warnings list should be empty.", warnings.isEmpty());

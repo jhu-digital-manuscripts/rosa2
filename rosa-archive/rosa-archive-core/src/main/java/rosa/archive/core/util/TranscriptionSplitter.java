@@ -23,10 +23,10 @@ public class TranscriptionSplitter {
      * Split up transcription data for a book into fragments according to page and
      * column.
      *
-     * {@see #split(String)}
-     *
      * @param transcription transcription object from a book
      * @return transcription text split per page
+     * 
+     * @see #split(String)
      */
     public static Map<String, String> split(Transcription transcription) {
         if (transcription == null

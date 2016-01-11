@@ -32,7 +32,7 @@
         <mvn.source.plugin.version>2.4</mvn.source.plugin.version>
 
         <!-- Dependency versions -->
-        <guice.version>3.0</guice.version>
+        <guice.version>4.0</guice.version>
         <gin.version>2.1.2</gin.version>
         <gwt.version>2.7.0</gwt.version>
         <jsonld-java.version>0.5.1</jsonld-java.version>
@@ -171,6 +171,12 @@
               <version>5.2.1</version>
             </dependency>
 
+	    <dependency>
+              <groupId>com.twelvemonkeys.imageio</groupId>
+              <artifactId>imageio-tiff</artifactId>
+              <version>3.2.1</version>
+	    </dependency>
+
             <!-- Testing dependencies -->
 
             <dependency>
@@ -194,68 +200,68 @@
             <!-- Internal dependencies -->
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.archive</groupId>
                 <artifactId>rosa-archive-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.archive</groupId>
                 <artifactId>rosa-archive-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.archive</groupId>
                 <artifactId>rosa-archive-core</artifactId>
                 <version>${project.version}</version>
-		        <type>test-jar</type>
+	        <type>test-jar</type>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.iiif</groupId>
                 <artifactId>rosa-iiif-image-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.iiif</groupId>
                 <artifactId>rosa-iiif-image-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.iiif</groupId>
                 <artifactId>rosa-iiif-presentation-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.iiif</groupId>
                 <artifactId>rosa-iiif-presentation-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.website</groupId>
                 <artifactId>rosa-website-search</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.website</groupId>
                 <artifactId>rosa-website-viewer</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.website</groupId>
                 <artifactId>rosa-website-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>rosa</groupId>
+                <groupId>rosa.website</groupId>
                 <artifactId>rosa-website-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -264,7 +270,7 @@
                   <groupId>rosa.search</groupId>
                   <artifactId>rosa-search</artifactId>
                   <version>${project.version}</version>
-                </dependency>
+            </dependency>
 
             <dependency>
                   <groupId>rosa.search</groupId>

@@ -1,11 +1,13 @@
 package rosa.archive.core;
 
+import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
@@ -21,7 +23,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import org.xml.sax.SAXException;
@@ -63,6 +64,7 @@ import rosa.archive.model.meta.MultilangMetadata;
 
 import com.google.inject.Inject;
 
+import javax.imageio.ImageIO;
 import javax.xml.transform.stream.StreamResult;
 
 /**
@@ -659,7 +661,7 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @param currentFileMap file map of current book
      * @param reverse reverse the operation by changing names from archive name to git name?
      * @param errors list of errors
-     * @throws IOException .
+     * @throws IOException
      */
     private void renameInternalReferences(ByteStreamGroup collection, ByteStreamGroup book, AnnotatedPage aPage,
                                           FileMap currentFileMap, boolean reverse, List<String> errors) throws IOException {
@@ -1161,8 +1163,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         for (String file : bookStreams.listByteStreamNames()) {
             if (parser.getArchiveItemType(file) == ArchiveItemType.IMAGE) {
 
-                String filepath = Paths.get(bookStreams.id()).resolve(file).toString();
-                int[] dimensions = getImageDimensionsHack(filepath);
+                int[] dimensions = getImageDimensions(Paths.get(bookStreams.id()).resolve(file));
 
                 BookImage img = new BookImage();
                 img.setId(file);
@@ -1187,8 +1188,8 @@ public class StoreImpl implements Store, ArchiveConstants {
     }
 
     private int[] getMissingImageDimensions(String collection) throws IOException {
-        return base.getByteStreamGroup(collection).hasByteStream(MISSING_IMAGE) ? getImageDimensionsHack(Paths
-                .get(base.getByteStreamGroup(collection).id()).resolve(MISSING_IMAGE).toString())
+        return base.getByteStreamGroup(collection).hasByteStream(MISSING_IMAGE) ? getImageDimensions(Paths
+                .get(base.getByteStreamGroup(collection).id()).resolve(MISSING_IMAGE))
                 : new int[] { 0, 0 };
     }
 
@@ -1210,44 +1211,60 @@ public class StoreImpl implements Store, ArchiveConstants {
         return last;
     }
 
+//    /**
+//     * Code adapted from original rosa archive tool, now uses Apache Commons IO
+//     * instead of custom byte array wrapper class.
+//     * 
+//     * @param path
+//     *            file path of image
+//     * @return array: [width, height]
+//     * @throws IOException
+//     */
+//    private static int[] getImageDimensionsHack(String path) throws IOException {
+//
+//        String[] cmd = new String[] { "identify", "-ping", "-format", "%w %h ", path + "[0]" };
+//        Process p = Runtime.getRuntime().exec(cmd);
+//
+//        try {
+//            if (p.waitFor() != 0) {
+//                byte[] byteArray = IOUtils.toByteArray(p.getErrorStream());
+//                String err = new String(byteArray, "UTF-8");
+//
+//                throw new IOException("Failed to run on " + path + ": " + err);
+//            }
+//
+//            byte[] buff = IOUtils.toByteArray(p.getInputStream());
+//            String result = new String(buff, "UTF-8");
+//
+//            String[] s = result.trim().split("\\s+");
+//            if (s.length != 2) {
+//                throw new IOException("Invalid result " + result + " on " + path);
+//            }
+//
+//            return new int[] { Integer.parseInt(s[0]), Integer.parseInt(s[1].trim()) };
+//        } catch (NumberFormatException e) {
+//            throw new IOException("Invalid result.");
+//        } catch (InterruptedException e) {
+//            throw new IOException(e);
+//        } finally {
+//            p.destroy();
+//        }
+//    }
+    
     /**
-     * Code adapted from original rosa archive tool, now uses Apache Commons IO
-     * instead of custom byte array wrapper class.
-     * 
      * @param path
      *            file path of image
      * @return array: [width, height]
      * @throws IOException
      */
-    private static int[] getImageDimensionsHack(String path) throws IOException {
-
-        String[] cmd = new String[] { "identify", "-ping", "-format", "%w %h ", path + "[0]" };
-        Process p = Runtime.getRuntime().exec(cmd);
-
-        try {
-            if (p.waitFor() != 0) {
-                byte[] byteArray = IOUtils.toByteArray(p.getErrorStream());
-                String err = new String(byteArray, "UTF-8");
-
-                throw new IOException("Failed to run on " + path + ": " + err);
-            }
-
-            byte[] buff = IOUtils.toByteArray(p.getInputStream());
-            String result = new String(buff, "UTF-8");
-
-            String[] s = result.trim().split("\\s+");
-            if (s.length != 2) {
-                throw new IOException("Invalid result " + result + " on " + path);
-            }
-
-            return new int[] { Integer.parseInt(s[0]), Integer.parseInt(s[1].trim()) };
-        } catch (NumberFormatException e) {
-            throw new IOException("Invalid result.");
-        } catch (InterruptedException e) {
-            throw new IOException(e);
-        } finally {
-            p.destroy();
+    private static int[] getImageDimensions(Path path) throws IOException {
+        BufferedImage img = ImageIO.read(path.toFile());
+        
+        if (img == null) {
+            throw new IOException("Failed to load image: " + path);
         }
+        
+        return new int[] {img.getWidth(), img.getHeight()};
     }
 
     /**

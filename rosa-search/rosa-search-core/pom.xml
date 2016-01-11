@@ -19,12 +19,12 @@
     </dependency>
     
     <dependency>
-      <groupId>rosa</groupId>
+      <groupId>rosa.archive</groupId>
       <artifactId>rosa-archive-model</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>rosa</groupId>
+      <groupId>rosa.archive</groupId>
       <artifactId>rosa-archive-core</artifactId>
     </dependency>
 
@@ -58,7 +58,7 @@
     </dependency>
 
     <dependency>
-      <groupId>rosa</groupId>
+      <groupId>rosa.archive</groupId>
       <artifactId>rosa-archive-core</artifactId>
       <type>test-jar</type>
       <scope>test</scope>

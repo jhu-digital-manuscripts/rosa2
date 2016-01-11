@@ -28,7 +28,7 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
     /**
      * Rename all AoR transcriptions according to a file map.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void renameTranscriptionsNormalTest() throws IOException {
@@ -75,7 +75,7 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
     /**
      * Does not rename any items due to duplicate values in the file map.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void dontRenameWithBadFileMap() throws IOException {

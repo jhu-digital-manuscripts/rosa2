@@ -15,7 +15,8 @@ public enum Command {
     RENAME_IMAGES("rename-images"),
     RENAME_TRANSCRIPTIONS("rename-transcriptions"),
     GENERATE_TEI("generate-tei"),
-    CHECK_AOR("check-aor");
+    CHECK_AOR("check-aor"),
+    SEPARATE_TEI_METADATA("separate-tei-metadata");
 
     private String display;
 

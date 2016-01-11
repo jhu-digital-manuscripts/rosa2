@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>rosa-websites</artifactId>
-        <groupId>rosa</groupId>
+        <groupId>rosa.website</groupId>
         <version>2.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -29,11 +29,11 @@
         </profile>
 
         <profile>
-            <id>rose</id>
+            <id>production</id>
 
             <properties>
                 <archive.path>/mnt</archive.path>
-                <search.index.path>/var/tmp/lucene</search.index.path>
+                <search.index.path>webapps/rose/WEB-INF/lucene</search.index.path>
                 <gwt.output.style>obf</gwt.output.style>
                 <gwt.log.level>WARNING</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
                 <analytics.status>false</analytics.status>
@@ -68,13 +68,13 @@
         <!-- Project dependencies -->
 
         <dependency>
-            <groupId>rosa</groupId>
+            <groupId>rosa.archive</groupId>
             <artifactId>rosa-archive-model</artifactId>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
-            <groupId>rosa</groupId>
+            <groupId>rosa.archive</groupId>
             <artifactId>rosa-archive-core</artifactId>
             <scope>compile</scope>
         </dependency>
@@ -92,25 +92,25 @@
         </dependency>
 
         <dependency>
-            <groupId>rosa</groupId>
+            <groupId>rosa.website</groupId>
             <artifactId>rosa-website-model</artifactId>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
-            <groupId>rosa</groupId>
+            <groupId>rosa.website</groupId>
             <artifactId>rosa-website-viewer</artifactId>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
-            <groupId>rosa</groupId>
+            <groupId>rosa.website</groupId>
             <artifactId>rosa-website-search</artifactId>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
-            <groupId>rosa</groupId>
+            <groupId>rosa.website</groupId>
             <artifactId>rosa-website-core</artifactId>
             <scope>compile</scope>
         </dependency>
@@ -148,14 +148,14 @@
                         <module>rosa.website.rose.RosaWebsiteRose</module>
                     </modules>
                     <compileSourcesArtifacts>
-                        <compileSourcesArtifact>rosa:rosa-archive-model</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-archive-core</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.archive:rosa-archive-model</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.archive:rosa-archive-core</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.search:rosa-search-model</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.search:rosa-search-core</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-website-model</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-website-viewer</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-website-search</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa:rosa-website-core</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.website:rosa-website-model</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.website:rosa-website-viewer</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.website:rosa-website-search</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.website:rosa-website-core</compileSourcesArtifact>
                     </compileSourcesArtifacts>
                 </configuration>
             </plugin>

@@ -35,7 +35,7 @@ public class StoreImplTest extends BaseArchiveTest {
      * This collection should be ignored when all collections are being listed
      * by the store.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void listCollectionsIgnoreTest() throws IOException {
@@ -65,7 +65,7 @@ public class StoreImplTest extends BaseArchiveTest {
      * should be be included in the books list for the valid collection when the
      * listBooks method is called.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void listBooksIgnoreTest() throws IOException {
@@ -148,7 +148,7 @@ public class StoreImplTest extends BaseArchiveTest {
      * NOTE: the built in loadCollection() method already does a NotNull assertion
      * before returning. Must use store.loadBookCollection() instead.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void testLoadCollectionNotInArchive() throws IOException {

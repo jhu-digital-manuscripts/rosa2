@@ -20,6 +20,10 @@ import static org.junit.Assert.assertTrue;
 public class MultilangMetadataSerializerTest extends BaseSerializerTest<MultilangMetadata> {
     private final static String bigXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
             "<book>\n" +
+            "    <license>\n" +
+            "        <url/>\n" +
+            "        <logo/>\n" +
+            "    </license>\n" +
             "    <illustrations>10</illustrations>\n" +
             "    <totalPages>8</totalPages>\n" +
             "    <dimensions units=\"mm\">\n" +

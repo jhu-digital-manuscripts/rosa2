@@ -70,14 +70,11 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
         Element root = doc.createElement("book");
         doc.appendChild(root);
 
-        if (metadata.getLicenseUrl() != null) {
-            Element license  = doc.createElement("license");
+        Element license  = doc.createElement("license");
+        root.appendChild(license);
 
-            valueElement("url", metadata.getLicenseUrl(), license, doc);
-            if (metadata.getLicenseLogo() != null) {
-                valueElement("logo", metadata.getLicenseLogo(), license, doc);
-            }
-        }
+        valueElement("url", metadata.getLicenseUrl() == null ? "" : metadata.getLicenseUrl(), license, doc);
+        valueElement("logo", metadata.getLicenseLogo() == null ? "" : metadata.getLicenseLogo(), license, doc);
 
         valueElement("illustrations", metadata.getNumberOfIllustrations(), root, doc);
         valueElement("totalPages", metadata.getNumberOfPages(), root, doc);
@@ -110,8 +107,8 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
 
             valueElement("illustrations", t.getNumberOfIllustrations(), text, doc);
             valueElement("linesPerColumn", t.getLinesPerColumn(), text, doc);
-            valueElement("columnsPerPage", t.getColumnsPerPage(), text, doc);
             valueElement("leavesPerGathering", t.getLeavesPerGathering(), text, doc);
+            valueElement("columnsPerPage", t.getColumnsPerPage(), text, doc);
         }
 
         Element bibs = doc.createElement("bibliographies");
@@ -124,20 +121,20 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
             bib.setAttribute("lang", lang);
 
             valueElement("title", data.getTitle(), bib, doc);
+            valueElement("commonName", data.getCommonName(), bib, doc);
             valueElement("dateLabel", data.getDateLabel(), bib, doc);
             valueElement("type", data.getType(), bib, doc);
-            valueElement("commonName", data.getCommonName(), bib, doc);
             valueElement("material", data.getMaterial(), bib, doc);
             valueElement("origin", data.getOrigin(), bib, doc);
             valueElement("currentLocation", data.getCurrentLocation(), bib, doc);
             valueElement("repository", data.getRepository(), bib, doc);
             valueElement("shelfmark", data.getShelfmark(), bib, doc);
 
-            for (String detail : data.getDetails()) {
-                valueElement("detail", detail, bib, doc);
-            }
             for (String author : data.getAuthors()) {
                 valueElement("author", author, bib, doc);
+            }
+            for (String detail : data.getDetails()) {
+                valueElement("detail", detail, bib, doc);
             }
             for (String note : data.getNotes()) {
                 valueElement("note", note, bib, doc);
