@@ -21,7 +21,6 @@ import rosa.iiif.image.core.IIIFException;
 import rosa.iiif.image.core.IIIFRequestParser;
 import rosa.iiif.image.core.IIIFResponseSerializer;
 import rosa.iiif.image.core.IIIFService;
-import rosa.iiif.image.core.UriUtil;
 import rosa.iiif.image.model.ImageInfo;
 import rosa.iiif.image.model.ImageRequest;
 import rosa.iiif.image.model.InfoFormat;
@@ -142,7 +141,7 @@ public class IIIFServlet extends HttpServlet {
 
                 ImageInfo info = service.perform(inforeq);
 
-                String collection = UriUtil.decodePathSegments(inforeq.getImageId())[0];
+                String collection = inforeq.getImageId().split("/")[0];
                 info.setRights(rights_map.get(collection));
 
                 resp.setHeader("Access-Control-Allow-Origin", "*");
