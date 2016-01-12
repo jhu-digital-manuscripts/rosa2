@@ -361,7 +361,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
      * without error. In the case of searching for a phrase over a simple
      * String search field, nothing should happen.
      *
-     * @throws Exception .
+     * @throws Exception
      */
     @Test
     public void testMixedQuerySearch() throws Exception {

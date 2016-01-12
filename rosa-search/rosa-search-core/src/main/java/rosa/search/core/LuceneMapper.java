@@ -313,8 +313,8 @@ public class LuceneMapper {
      *
      * @param src source XML
      * @return String of all textual content
-     * @throws SAXException .
-     * @throws IOException .
+     * @throws SAXException
+     * @throws IOException
      */
     private static String xml_to_text(InputSource src) throws SAXException, IOException {
         XMLReader r = XMLReaderFactory.createXMLReader();
