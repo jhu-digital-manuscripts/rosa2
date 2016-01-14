@@ -12,8 +12,6 @@ import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Rights;
-import rosa.iiif.presentation.model.Range;
-import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
@@ -34,6 +32,7 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         super(presRequestFormatter);
         this.sequenceTransformer = sequenceTransformer;
         this.rangeTransformer = rangeTransformer;
+        this.searchUrlFormatter = searchUrlFormatter;
     }
 
     @Override
