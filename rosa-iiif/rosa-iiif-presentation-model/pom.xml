@@ -15,17 +15,23 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>rosa.search</groupId>
+            <artifactId>rosa-search-model</artifactId>
+        </dependency>
+
         <!-- Testing dependencies -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
 
-	<dependency>
-	  <groupId>nl.jqno.equalsverifier</groupId>
-	  <artifactId>equalsverifier</artifactId>
-	  <scope>test</scope>
-	</dependency>
+        <dependency>
+            <groupId>nl.jqno.equalsverifier</groupId>
+            <artifactId>equalsverifier</artifactId>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
     
