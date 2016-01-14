@@ -115,7 +115,7 @@ public class IIIFSearchJsonldSerializer extends JsonldSerializer implements IIIF
      *
      * @param annotation annotation
      * @param writer JSON writer
-     * @throws JSONException .
+     * @throws JSONException
      */
     @Override
     protected void writeTarget(Annotation annotation, JSONWriter writer) throws JSONException {

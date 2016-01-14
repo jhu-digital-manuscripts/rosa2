@@ -213,7 +213,7 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
      * text is put in the 'after' parameter.
      *
      * EX:
-     * {@code
+     * <pre>
      *   Lucene context: "This is a <b>matching string</b> with context"
      *   IIIF Hit: {
      *       match: "matching string",
@@ -221,7 +221,8 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
      *       after: " with context"
      *   }
      * }
-     *
+     * </pre>
+     * 
      * One minor complication is the possibility that if sequential words are matched,
      * Lucene will often surround the individual words with HTML 'b' tags, instead of
      * the phrase: EX: {@code A string <b>with</b> <b>multiple</b> matches}. In this case,
@@ -229,22 +230,22 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
      * 'match' parameter, instead of separate IIIF hits.
      *
      * EX:
-     * {@code
+     * <pre>
      *   Lucene context: "This is a <b>matching</b> <b>string</b> with context"
      *   IIIF Hit: {
      *       match: "matching string",
      *       before: "This is a ",
      *       after: " with context"
      *   }
-     * }
+     * </pre>
      *
      * TODO: Selectors
      * If multiple Hits are found for the same annotation, they should both be included
      * in the same IIIFSearchHit object, but as separate selectors.
      *
-     * EX:
-     * {@code
+     * <pre>
      *   Lucene context: "This context has <b>multiple</b> separate <b>matching</b> parts"
+     *   
      *   IIIF Hit: {
      *       annotations: [ annoId ],
      *       selectors: [{
@@ -258,8 +259,8 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
      *          }
      *       ]
      *   }
-     * }
-     *
+     * </pre>
+     * 
      * @param contexts list of search contexts
      * @param matchId ID field from a search match
      * @return a list of IIIF Hits
