@@ -74,7 +74,7 @@ public class RosaQueryUtilTest {
         Query child = query.children()[0];
         assertTrue("First child query should be an operation.", child.isOperation());
         assertEquals("First child query should be OR operation.", QueryOperation.OR, child.getOperation());
-        assertEquals("Unexpected number of child queries.", 14, child.children().length);
+        assertEquals("Unexpected number of child queries.", 29, child.children().length);
 
         child = query.children()[1];
         assertTrue("Second child should be term.", child.isTerm());

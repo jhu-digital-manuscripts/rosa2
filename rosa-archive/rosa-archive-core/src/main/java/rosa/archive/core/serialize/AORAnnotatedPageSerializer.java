@@ -24,6 +24,7 @@ import org.xml.sax.SAXException;
 
 import org.xml.sax.SAXParseException;
 import rosa.archive.core.ArchiveConstants;
+import rosa.archive.core.util.Annotations;
 import rosa.archive.core.util.CachingUrlResourceResolver;
 import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.aor.AnnotatedPage;
@@ -311,6 +312,20 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         return page;
     }
 
+    /**
+     * As annotations are read, IDs are assigned to them depending on annotation
+     * type and ordering within the transcription XML.
+     *
+     * For all annotation types, the ID will be structures as:
+     *      page-id_annotation-type_annotation-number(s)
+     *
+     * Example:
+     *      FolgersHa2.024r.tif_underline_3
+     *
+     * @param annotationEl annotation XML element
+     * @param page result AnnotatedPage
+     * @see rosa.archive.core.util.Annotations#annotationId(String, String, int)
+     */
     private void readAnnotations(Element annotationEl, AnnotatedPage page) {
 
         NodeList children = annotationEl.getChildNodes();
@@ -323,12 +338,14 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             Element annotation = (Element) child;
             switch (annotation.getTagName()) {
                 case TAG_MARGINALIA:
-                    page.getMarginalia().add(
-                            buildMarginalia(annotation)
-                    );
+                    Marginalia marg = buildMarginalia(annotation, page.getPage());
+                    marg.setId(Annotations.annotationId(page.getPage(), TAG_MARGINALIA, page.getMarginalia().size()));
+
+                    page.getMarginalia().add(marg);
                     break;
                 case TAG_UNDERLINE:
                     page.getUnderlines().add(new Underline(
+                            Annotations.annotationId(page.getPage(), TAG_UNDERLINE, page.getUnderlines().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_TYPE),
@@ -338,6 +355,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_SYMBOL:
                     page.getSymbols().add(new Symbol(
+                            Annotations.annotationId(page.getPage(), TAG_SYMBOL, page.getSymbols().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_LANGUAGE),
@@ -348,6 +366,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_MARK:
                     page.getMarks().add(new Mark(
+                            Annotations.annotationId(page.getPage(), TAG_MARK, page.getMarks().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
@@ -359,6 +378,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_NUMERAL:
                     page.getNumerals().add(new Numeral(
+                            Annotations.annotationId(page.getPage(), TAG_NUMERAL, page.getNumerals().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             null,
                             Location.valueOf(
@@ -369,6 +389,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_ERRATA:
                     page.getErrata().add(new Errata(
+                            Annotations.annotationId(page.getPage(), TAG_ERRATA, page.getErrata().size()),
                             annotation.getAttribute(ATTR_LANGUAGE),
                             annotation.getAttribute(ATTR_COPYTEXT),
                             annotation.getAttribute(ATTR_AMENDEDTEXT)
@@ -376,6 +397,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_DRAWING:
                     page.getDrawings().add(new Drawing(
+                            Annotations.annotationId(page.getPage(), TAG_DRAWING, page.getDrawings().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             Location.valueOf(annotation.getAttribute(ATTR_PLACE).toUpperCase()),
                             annotation.getAttribute(ATTR_NAME),
@@ -389,7 +411,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         }
     }
 
-    private Marginalia buildMarginalia(Element annotation) {
+    private Marginalia buildMarginalia(Element annotation, String page) {
         Marginalia marg = new Marginalia();
 
         marg.setDate(annotation.getAttribute(ATTR_DATE));
@@ -420,7 +442,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             continue;
                         }
 
-                        p.add(buildPosition((Element) posNode));
+                        p.add(buildPosition((Element) posNode, page));
                     }
 
                     langs.add(lang);
@@ -437,7 +459,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         return marg;
     }
 
-    private Position buildPosition(Element position) {
+    private Position buildPosition(Element position, String page) {
         Position pos = new Position();
         pos.setPlace(Location.valueOf(position.getAttribute(ATTR_PLACE).toUpperCase().trim()));
 
@@ -478,7 +500,18 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     pos.getTexts().add(el.getTextContent());
                     break;
                 case TAG_EMPHASIS:
-                    underlines.add(new Underline(
+                    StringBuilder id = new StringBuilder(page);
+                    id.append('_');
+                    id.append(TAG_EMPHASIS);
+                    id.append('_');
+
+                    if (pos.getEmphasis() != null) {
+                        id.append(pos.getEmphasis().size() + 1);
+                    } else {
+                        id.append('0');
+                    }
+
+                    underlines.add(new Underline(id.toString(),
                             hasAttribute(ATTR_TEXT, el) ?
                                     el.getAttribute(ATTR_TEXT) : el.getAttribute(ATTR_EMPHASIS_TEXT),
                             el.getAttribute(ATTR_METHOD),

@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import com.google.inject.TypeLiteral;
 import com.google.inject.multibindings.Multibinder;
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.Store;
@@ -23,6 +24,7 @@ import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFSIImageIdMapper;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
+import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
 import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
@@ -49,12 +51,16 @@ public class IIIFServletModule extends ServletModule {
 
     @Override
     protected void configureServlets() {
+        bind(ArchiveNameParser.class);
+
         Multibinder<Transformer<?>> transformers = Multibinder.newSetBinder(binder(), new TypeLiteral<Transformer<?>>() {});
 
         bind(PresentationTransformer.class).to(PresentationTransformerImpl.class);
         bind(CollectionTransformer.class);
         bind(CanvasTransformer.class);
         bind(SequenceTransformer.class);
+        bind(AnnotationTransformer.class);
+        transformers.addBinding().to(AnnotationTransformer.class);
         transformers.addBinding().to(AnnotationListTransformer.class);
         transformers.addBinding().to(RangeTransformer.class);
         transformers.addBinding().to(CanvasTransformer.class);
@@ -115,8 +121,19 @@ public class IIIFServletModule extends ServletModule {
         return new JhuFSIImageIdMapper(fsi_share_map);
     }
     
-    @Provides
-    IIIFRequestFormatter providePresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme, @Named("iiif.pres.host") String host, @Named("iiif.pres.prefix") String prefix, @Named("iiif.pres.port") int port) {
+    @Provides @Named("formatter.presentation")
+    IIIFRequestFormatter providePresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme,
+                                                             @Named("iiif.pres.host") String host,
+                                                             @Named("iiif.pres.prefix") String prefix,
+                                                             @Named("iiif.pres.port") int port) {
+        return new IIIFRequestFormatter(scheme, host, prefix, port);
+    }
+
+    @Provides @Named("formatter.search")
+    IIIFRequestFormatter provideSearchRequestFormatter(@Named("iiif.search.scheme") String scheme,
+                                                       @Named("iiif.search.host") String host,
+                                                       @Named("iiif.search.prefix") String prefix,
+                                                       @Named("iiif.search.port") int port) {
         return new IIIFRequestFormatter(scheme, host, prefix, port);
     }
     

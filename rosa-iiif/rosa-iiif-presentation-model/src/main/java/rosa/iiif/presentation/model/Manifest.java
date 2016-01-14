@@ -10,7 +10,9 @@ public class Manifest extends PresentationBase {
     private List<Reference> otherSequences;
     private List<Range> ranges;
     private List<Reference> otherRanges;
-    
+
+    private Service searchService;
+
     public Manifest() {
         this(null, null);
     }
@@ -23,6 +25,14 @@ public class Manifest extends PresentationBase {
         this.otherRanges = new ArrayList<>();
         
         setType(IIIFNames.SC_MANIFEST);
+    }
+// TODO move this to PresentationBase, give it support for multiple services
+    public Service getSearchService() {
+        return searchService;
+    }
+
+    public void setSearchService(Service searchService) {
+        this.searchService = searchService;
     }
 
     public ViewingDirection getViewingDirection() {
@@ -70,6 +80,7 @@ public class Manifest extends PresentationBase {
     public int hashCode() {
         final int prime = 31;
         int result = super.hashCode();
+        result = prime * result + ((searchService == null) ? 0 : searchService.hashCode());
         result = prime * result + ((defaultSequence == null) ? 0 : defaultSequence.hashCode());
         result = prime * result + ((otherRanges == null) ? 0 : otherRanges.hashCode());
         result = prime * result + ((otherSequences == null) ? 0 : otherSequences.hashCode());
@@ -95,7 +106,11 @@ public class Manifest extends PresentationBase {
         if (!other.canEqual(this)) {
             return false;
         }
-        
+        if (searchService == null) {
+            if (other.searchService != null)
+                return false;
+        } else if (!searchService.equals(other.searchService))
+            return false;
         if (defaultSequence == null) {
             if (other.defaultSequence != null)
                 return false;

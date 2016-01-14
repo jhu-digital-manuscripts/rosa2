@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
@@ -8,8 +9,12 @@ import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Manifest;
+import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Rights;
+import rosa.iiif.presentation.model.Range;
+import rosa.iiif.presentation.model.Sequence;
+import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
 
@@ -18,14 +23,17 @@ import java.util.Map;
 
 public class ManifestTransformer extends BasePresentationTransformer implements Transformer<Manifest> {
     private final SequenceTransformer sequenceTransformer;
-//    private final RangeTransformer rangeTransformer;
+    private final RangeTransformer rangeTransformer;
+    private final IIIFRequestFormatter searchUrlFormatter;
 
     @Inject
-    public ManifestTransformer(IIIFRequestFormatter presRequestFormatter, SequenceTransformer sequenceTransformer,
-                               RangeTransformer rangeTransformer) {
+    public ManifestTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter,
+                               SequenceTransformer sequenceTransformer,
+                               RangeTransformer rangeTransformer,
+                               @Named("formatter.search") IIIFRequestFormatter searchUrlFormatter) {
         super(presRequestFormatter);
         this.sequenceTransformer = sequenceTransformer;
-//        this.rangeTransformer = rangeTransformer;
+        this.rangeTransformer = rangeTransformer;
     }
 
     @Override
@@ -81,6 +89,17 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
 
         // TODO ranges
 //        manifest.setRanges(rangeTransformer.topRanges(collection, book));
+
+        // Add search service
+        manifest.setSearchService(new Service(
+                IIIF_SEARCH_CONTEXT,
+                searchUrlFormatter.format(
+                        new PresentationRequest(
+                                collection.getId()+"."+book.getId(),
+                                null,
+                                PresentationRequestType.MANIFEST)),
+                IIIF_SEARCH_PROFILE
+        ));
 
         return manifest;
     }

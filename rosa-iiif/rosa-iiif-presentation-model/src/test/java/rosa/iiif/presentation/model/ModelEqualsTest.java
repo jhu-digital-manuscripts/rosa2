@@ -5,6 +5,11 @@ import org.junit.Test;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
+import rosa.iiif.presentation.model.search.HitSelector;
+import rosa.iiif.presentation.model.search.IIIFSearchHit;
+import rosa.iiif.presentation.model.search.IIIFSearchRequest;
+import rosa.iiif.presentation.model.search.IIIFSearchResult;
+import rosa.iiif.presentation.model.search.Rectangle;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 import rosa.iiif.presentation.model.selector.SvgSelector;
 import nl.jqno.equalsverifier.EqualsVerifier;
@@ -123,6 +128,44 @@ public class ModelEqualsTest {
     public void testSvgSelector() {
         EqualsVerifier.forClass(SvgSelector.class).allFieldsShouldBeUsed()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
+    }
+
+    @Test
+    public void testIIIFSearchRequest() {
+        EqualsVerifier.forClass(IIIFSearchRequest.class).allFieldsShouldBeUsed()
+                .usingGetClass()
+//                .suppress(Warning.NONFINAL_FIELDS, Warning.STRICT_INHERITANCE)
+                .verify();
+    }
+
+    @Test
+    public void testRectangle() {
+        EqualsVerifier.forClass(Rectangle.class).allFieldsShouldBeUsed()
+                .usingGetClass()
+                .verify();
+    }
+
+    @Test
+    public void testIIIFSearchHit() {
+        EqualsVerifier.forClass(IIIFSearchHit.class).allFieldsShouldBeUsed()
+                .usingGetClass()
+                .verify();
+    }
+
+    @Test
+    public void testIIIFSearchResult() {
+        EqualsVerifier.forClass(IIIFSearchResult.class).allFieldsShouldBeUsed()
+                .suppress(Warning.NONFINAL_FIELDS)
+                .usingGetClass()
+                .verify();
+    }
+
+    @Test
+    public void testHitSelector() {
+        EqualsVerifier.forClass(HitSelector.class).allFieldsShouldBeUsed()
+                .suppress(Warning.NONFINAL_FIELDS)
+                .usingGetClass()
+                .verify();
     }
 
     @Test

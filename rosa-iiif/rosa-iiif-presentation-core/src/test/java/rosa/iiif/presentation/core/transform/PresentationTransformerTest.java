@@ -2,11 +2,13 @@ package rosa.iiif.presentation.core.transform;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFSIImageIdMapper;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
+import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
 import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.LayerTransformer;
@@ -45,6 +47,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     private static final String ENDPOINT_SCHEME = "http";
     private static final String ENDPOINT_HOST = "example.org";
     private static final String ENDPOINT_PREFIX = "/iiif";
+    private static final String SEARCH_PREFIX = "/search";
     private static final int ENDPOINT_PORT = -1;
 
 
@@ -60,6 +63,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
         IIIFRequestFormatter presentationReqFormatter =
                 new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT);
+        IIIFRequestFormatter searchFormatter = new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, SEARCH_PREFIX, ENDPOINT_PORT);
         rosa.iiif.image.core.IIIFRequestFormatter imageReqFormatter =
                 new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
         ImageIdMapper idMapper = new JhuFSIImageIdMapper(idMap);
@@ -67,12 +71,13 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
         CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter);
         SequenceTransformer sequenceTransformer = new SequenceTransformer(presentationReqFormatter, canvasTransformer);
+        AnnotationTransformer annotationTransformer = new AnnotationTransformer(presentationReqFormatter, new ArchiveNameParser());
 
         Set<Transformer<?>> transformers = new HashSet<>();
-        transformers.add(new AnnotationListTransformer(presentationReqFormatter));
+        transformers.add(new AnnotationListTransformer(presentationReqFormatter, annotationTransformer));
         transformers.add(canvasTransformer);
         transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer, new RangeTransformer(presentationReqFormatter)));
+        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer, new RangeTransformer(presentationReqFormatter), searchFormatter));
         transformers.add(new RangeTransformer(presentationReqFormatter));
         transformers.add(new LayerTransformer(presentationReqFormatter));
 
@@ -176,14 +181,32 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         assertNotNull("Annotation list missing for 1r.all", l1);
         assertNotNull("Annotation list missing for 11r.all", l2);
         assertNotEquals("Annotation lists for 1r.all and 11r.all should NOT be equal.", l1, l2);
-        assertNotEquals("Annotation lists for 1r.all and 11r.all should have differnt sizes", l1.size(), l2.size());
+        assertNotEquals("Annotation lists for 1r.all and 11r.all should have different sizes", l1.size(), l2.size());
 
         assertEquals("Unexpected number of annotations in 1r.all", 9, l1.size());
         assertEquals("Unexpected number of annotations in 11r.all", 12, l2.size());
 
-        AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "front matter 1r.all");
-        assertNotNull("Failed to create AnnotationList for front matter 1r", ll);
-        assertTrue("Unexpected annotations found in annotation list for 'front matter 1r'", ll.getAnnotations().isEmpty());
+        {
+            AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "front matter 1r.all");
+            assertNotNull("Failed to create AnnotationList for front matter 1r", ll);
+            assertTrue("Unexpected annotations found in annotation list for 'front matter 1r'", ll.getAnnotations().isEmpty());
+        }
+
+        {
+            AnnotationList ll = presentationTransformer.annotationList(
+                    loadValidCollection(), loadValidFolgersHa2(), "1r.all");
+            assertNotNull("Failed to create AnnotationList for '1r'", ll);
+
+            int marg_count = 0;
+            for (int i = 0; i < ll.size(); i++) {
+                Annotation a = ll.getAnnotations().get(i);
+                if (a.getId().contains("marginalia")) {
+                    marg_count++;
+                }
+            }
+            assertEquals("Unexpected number of marginalia found.", 8, marg_count);
+
+        }
     }
 
     /**

@@ -1,5 +1,6 @@
 package rosa.iiif.presentation.model.annotation;
 
+import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.selector.Selector;
 
 import java.io.Serializable;
@@ -9,6 +10,7 @@ public class AnnotationTarget implements Serializable {
 
     protected String uri;
     protected Selector selector;
+    protected Reference parentRef;
 
     public AnnotationTarget() {}
 
@@ -19,6 +21,14 @@ public class AnnotationTarget implements Serializable {
     public AnnotationTarget(String uri, Selector selector) {
         this.uri = uri;
         this.selector = selector;
+    }
+
+    public Reference getParentRef() {
+        return parentRef;
+    }
+
+    public void setParentRef(Reference parentRef) {
+        this.parentRef = parentRef;
     }
 
     public String getUri() {
@@ -41,39 +51,38 @@ public class AnnotationTarget implements Serializable {
         return selector != null;
     }
 
+    public boolean canEqual(Object o) {
+        return o instanceof AnnotationTarget;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || !(o instanceof AnnotationTarget)) return false;
+
+        AnnotationTarget that = (AnnotationTarget) o;
+        if (!that.canEqual(this)) return false;
+
+        if (uri != null ? !uri.equals(that.uri) : that.uri != null) return false;
+        if (selector != null ? !selector.equals(that.selector) : that.selector != null) return false;
+        return !(parentRef != null ? !parentRef.equals(that.parentRef) : that.parentRef != null);
+
+    }
+
     @Override
     public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((selector == null) ? 0 : selector.hashCode());
-        result = prime * result + ((uri == null) ? 0 : uri.hashCode());
+        int result = uri != null ? uri.hashCode() : 0;
+        result = 31 * result + (selector != null ? selector.hashCode() : 0);
+        result = 31 * result + (parentRef != null ? parentRef.hashCode() : 0);
         return result;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (!(obj instanceof AnnotationTarget))
-            return false;
-        AnnotationTarget other = (AnnotationTarget) obj;
-        if (selector == null) {
-            if (other.selector != null)
-                return false;
-        } else if (!selector.equals(other.selector))
-            return false;
-        if (uri == null) {
-            if (other.uri != null)
-                return false;
-        } else if (!uri.equals(other.uri))
-            return false;
-        return true;
-    }
-
-    @Override
     public String toString() {
-        return "AnnotationTarget [uri=" + uri + ", selector=" + selector + "]";
+        return "AnnotationTarget{" +
+                "uri='" + uri + '\'' +
+                ", selector=" + selector +
+                ", parentRef=" + parentRef +
+                '}';
     }
 }

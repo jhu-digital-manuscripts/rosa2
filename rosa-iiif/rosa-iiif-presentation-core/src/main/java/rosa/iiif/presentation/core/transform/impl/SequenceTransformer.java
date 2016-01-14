@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -20,7 +21,7 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
     private CanvasTransformer canvasTransformer;
 
     @Inject
-    public SequenceTransformer(IIIFRequestFormatter presRequestFormatter, CanvasTransformer canvasTransformer) {
+    public SequenceTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter, CanvasTransformer canvasTransformer) {
         super(presRequestFormatter);
         this.canvasTransformer = canvasTransformer;
     }

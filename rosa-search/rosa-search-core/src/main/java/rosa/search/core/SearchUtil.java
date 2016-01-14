@@ -20,6 +20,10 @@ public class SearchUtil {
     public static String createId(String collection, String book, String image) {
         return collection + ID_SEPARATOR + book + ID_SEPARATOR + image;
     }
+
+    public static String createId(String collection, String book, String image, String annoName) {
+        return createId(collection, book, image) + ID_SEPARATOR + annoName;
+    }
     
     public static boolean isBookId(String id) {
         return id.split(ID_SEPARATOR).length == 2;
@@ -27,6 +31,10 @@ public class SearchUtil {
 
     public static boolean isImageId(String id) {
         return id.split(ID_SEPARATOR).length == 3;
+    }
+
+    public static boolean isAnnotationId(String id) {
+        return id.split(ID_SEPARATOR).length == 4;
     }
 
     public static String getCollectionFromId(String id) {
@@ -39,5 +47,9 @@ public class SearchUtil {
 
     public static String getImageFromId(String id) {
         return get_id_part(id, 2);
+    }
+
+    public static String getAnnotationFromId(String id) {
+        return get_id_part(id, 3);
     }
 }

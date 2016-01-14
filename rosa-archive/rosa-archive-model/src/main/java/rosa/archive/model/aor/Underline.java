@@ -18,14 +18,14 @@ public class Underline extends Annotation implements Serializable {
         return "Underline (" + getReferringText() + ")";
     }
 
-    public Underline(String referringText, String method, String type, String language) {
-        super(referringText, language, Location.INTEXT);
+    public Underline(String id, String referringText, String method, String type, String language) {
+        super(id, referringText, language, Location.INTEXT);
         this.method = method;
         this.type = type;
     }
 
-    public Underline(String referringText, String method, String type, String language, Location location) {
-        super(referringText, language, location);
+    public Underline(String id, String referringText, String method, String type, String language, Location location) {
+        super(id, referringText, language, location);
         this.method = method;
         this.type = type;
     }

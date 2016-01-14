@@ -13,6 +13,14 @@ public class Reference implements Serializable {
     private TextValue label;
     private String type;
 
+    public Reference() {}
+
+    public Reference(String ref, TextValue label, String type) {
+        this.ref = ref;
+        this.label = label;
+        this.type = type;
+    }
+
     public String getReference() {
         return ref;
     }

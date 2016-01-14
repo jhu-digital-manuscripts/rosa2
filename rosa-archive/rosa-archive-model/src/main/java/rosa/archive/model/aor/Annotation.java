@@ -8,16 +8,26 @@ import java.io.Serializable;
 public abstract class Annotation implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    private String id;
     private String referringText;
     private Location location;
     private String language;
 
     protected Annotation() {}
 
-    protected Annotation(String referringText, String language, Location location) {
+    protected Annotation(String id, String referringText, String language, Location location) {
+        this.id = id;
         this.referringText = referringText;
         this.location = location;
         this.language = language;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getReferringText() {
@@ -53,17 +63,18 @@ public abstract class Annotation implements Serializable {
 
         Annotation that = (Annotation) o;
 
-        if (language != null ? !language.equals(that.language) : that.language != null) return false;
-        if (location != that.location) return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (referringText != null ? !referringText.equals(that.referringText) : that.referringText != null)
             return false;
+        if (location != that.location) return false;
+        return !(language != null ? !language.equals(that.language) : that.language != null);
 
-        return true;
     }
 
     @Override
     public int hashCode() {
-        int result = referringText != null ? referringText.hashCode() : 0;
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (referringText != null ? referringText.hashCode() : 0);
         result = 31 * result + (location != null ? location.hashCode() : 0);
         result = 31 * result + (language != null ? language.hashCode() : 0);
         return result;
@@ -72,7 +83,8 @@ public abstract class Annotation implements Serializable {
     @Override
     public String toString() {
         return "Annotation{" +
-                "referringText='" + referringText + '\'' +
+                "id='" + id + '\'' +
+                ", referringText='" + referringText + '\'' +
                 ", location=" + location +
                 ", language='" + language + '\'' +
                 '}';

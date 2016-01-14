@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -23,7 +24,7 @@ import java.util.List;
 public class RangeTransformer extends BasePresentationTransformer implements Transformer<Range> {
 
     @Inject
-    public RangeTransformer(IIIFRequestFormatter presRequestFormatter) {
+    public RangeTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter) {
         super(presRequestFormatter);
     }
 

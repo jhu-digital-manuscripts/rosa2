@@ -116,7 +116,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      * @param included is this context included in the final document?
      * @throws JSONException
      */
-    private void addIiifContext(JSONWriter jWriter, boolean included) throws JSONException {
+    protected void addIiifContext(JSONWriter jWriter, boolean included) throws JSONException {
         if (included) {
             jWriter.key("@context").value(IIIF_PRESENTATION_CONTEXT);
         }
@@ -206,6 +206,18 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         writeBaseData(manifest, jWriter);
         writeIfNotNull("viewingDirection",
                 manifest.getViewingDirection() != null ? manifest.getViewingDirection().getKeyword() : null, jWriter);
+
+        /*
+        "service": {
+            "@context": "http://iiif.io/api/search/0/context.json",
+            "@id": "http://example.org/services/identifier/search",
+            "profile": "http://iiif.io/api/search/0/search"
+          }
+         */
+        // TODO do this right
+        if (manifest.getSearchService() != null) {
+            writeService(manifest.getSearchService(), jWriter);
+        }
 
         if (manifest.getDefaultSequence() == null && (manifest.getOtherSequences() == null
                 || manifest.getOtherSequences().isEmpty())) {
@@ -322,7 +334,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      * @param jWriter JSON-LD writer
      * @param isRequested was this object requested directly?
      */
-    private void writeJsonld(Annotation annotation, JSONWriter jWriter, boolean isRequested)
+    protected void writeJsonld(Annotation annotation, JSONWriter jWriter, boolean isRequested)
             throws JSONException {
         jWriter.object();
 
@@ -458,7 +470,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         }
     }
 
-    private void writeTarget(Annotation annotation, JSONWriter jWriter) throws JSONException {
+    protected void writeTarget(Annotation annotation, JSONWriter jWriter) throws JSONException {
         AnnotationTarget target = annotation.getDefaultTarget();
 
         if (target.isSpecificResource()) {
@@ -474,7 +486,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
     }
 
-    private void writeSelector(Selector selector, JSONWriter jWriter) throws JSONException {
+    protected void writeSelector(Selector selector, JSONWriter jWriter) throws JSONException {
         jWriter.key("selector");
         jWriter.object();
         writeIfNotNull("@context", selector.context(), jWriter);
@@ -504,7 +516,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      * @param <T> type
      * @throws JSONException
      */
-    private <T extends PresentationBase> void writeBaseData(T obj, JSONWriter jWriter)
+    protected  <T extends PresentationBase> void writeBaseData(T obj, JSONWriter jWriter)
             throws JSONException {
         jWriter.key("@id").value(obj.getId());
         jWriter.key("@type").value(obj.getType());
@@ -637,14 +649,14 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         jWriter.endObject();
     }
 
-    private void writeIfNotNull(String key, Object value, JSONWriter jWriter)
+    protected void writeIfNotNull(String key, Object value, JSONWriter jWriter)
             throws JSONException {
         if (value != null && !value.toString().equals("")) {
             jWriter.key(key).value(value.toString());
         }
     }
 
-    private void writeIfNotNull(String key, int value, JSONWriter jWriter) throws JSONException {
+    protected void writeIfNotNull(String key, int value, JSONWriter jWriter) throws JSONException {
         if (value != -1) {
             jWriter.key(key).value(value);
         }
