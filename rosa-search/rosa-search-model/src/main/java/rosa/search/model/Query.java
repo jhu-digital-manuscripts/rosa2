@@ -24,7 +24,7 @@ public class Query implements Serializable {
         this.op = null;
     }
 
-    public Query(SearchFields term_field, String term_value) {
+    public Query(SearchField term_field, String term_value) {
         this(new QueryTerm(term_field.getFieldName(), term_value));
     }
 
