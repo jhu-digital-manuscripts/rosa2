@@ -118,9 +118,9 @@ public class AdvancedSearchWidget extends Composite {
      * other fragments visible in this widget.
      *
      * @param initialTerm search term to appear in the text box, if applicable
-     * @param selectedOperation index of selected operation in {@param availableOperations},
+     * @param selectedOperation index of selected operation in availableOperations,
      *                          or -1 if nothing is selected
-     * @param selectedField index of selected field in {@param availableFields}, or -1 if
+     * @param selectedField index of selected field in availableFields, or -1 if
      *                      nothing is selected
      */
     public void addQueryField(String initialTerm, int selectedOperation, int selectedField) {
