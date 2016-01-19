@@ -4,6 +4,7 @@ import org.junit.Test;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
+import rosa.website.search.client.model.SearchCategory;
 
 import java.util.List;
 
@@ -72,9 +73,10 @@ public class RosaQueryUtilTest {
         assertEquals("Unexpected number of child queries.", 2, query.children().length);
 
         Query child = query.children()[0];
+
         assertTrue("First child query should be an operation.", child.isOperation());
         assertEquals("First child query should be OR operation.", QueryOperation.OR, child.getOperation());
-        assertEquals("Unexpected number of child queries.", 29, child.children().length);
+        assertEquals("Unexpected number of child queries.", SearchCategory.ALL.getFields().length, child.children().length);
 
         child = query.children()[1];
         assertTrue("Second child should be term.", child.isTerm());

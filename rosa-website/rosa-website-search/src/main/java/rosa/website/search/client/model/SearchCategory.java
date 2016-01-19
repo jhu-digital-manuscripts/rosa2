@@ -20,7 +20,8 @@ public enum SearchCategory {
     DESCRIPTION(SearchFields.DESCRIPTION_TEXT),
     IMAGE(SearchFields.IMAGE_NAME),
     NARRATIVE_SECTION(SearchFields.NARRATIVE_SECTION_ID, SearchFields.NARRATIVE_SECTION_DESCRIPTION),
-    ALL(SearchFields.values());
+    ALL(SearchFields.TRANSCRIPTION_TEXT, SearchFields.TRANSCRIPTION_RUBRIC, SearchFields.ILLUSTRATION_TITLE, SearchFields.TRANSCRIPTION_LECOY, SearchFields.TRANSCRIPTION_NOTE, SearchFields.ILLUSTRATION_CHAR,
+            SearchFields.ILLUSTRATION_KEYWORD, SearchFields.DESCRIPTION_TEXT, SearchFields.IMAGE_NAME, SearchFields.NARRATIVE_SECTION_ID, SearchFields.NARRATIVE_SECTION_DESCRIPTION);
 
     private SearchFields[] fields;
 
