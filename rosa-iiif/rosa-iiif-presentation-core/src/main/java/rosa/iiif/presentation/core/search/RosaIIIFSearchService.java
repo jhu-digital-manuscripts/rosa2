@@ -1,20 +1,16 @@
 package rosa.iiif.presentation.core.search;
 
+import java.io.IOException;
+import java.util.logging.Logger;
+
 import rosa.archive.core.Store;
-import rosa.iiif.presentation.model.PresentationRequestType;
-import rosa.iiif.presentation.model.search.IIIFSearchHit;
 import rosa.iiif.presentation.model.search.IIIFSearchRequest;
 import rosa.iiif.presentation.model.search.IIIFSearchResult;
 import rosa.iiif.presentation.model.search.Rectangle;
 import rosa.search.core.SearchService;
+import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.logging.Logger;
+import rosa.search.model.SearchResult;
 
 public class RosaIIIFSearchService implements IIIFSearchService {
     private static final Logger logger = Logger.getLogger(RosaIIIFSearchService.class.toString());
@@ -43,14 +39,15 @@ public class RosaIIIFSearchService implements IIIFSearchService {
         options.setOffset(request.page);
         options.setMatchCount(Integer.MAX_VALUE);
 
-        IIIFSearchResult result = adapter.luceneResultToIIIF(
-                searchService.search(adapter.iiifToLuceneQuery(request), options)
-        );
+        SearchResult sr = searchService.search(adapter.iiifToLuceneQuery(request), options);
+        
+        IIIFSearchResult result = adapter.luceneResultToIIIF(sr);
         result.setId(requestFormatter.format(request));
 
+                        
         // TODO do fields: prev, next, first, last where applicable
 
-        return pruneResults(request, result);
+        return result;
     }
 
     @Override
@@ -121,56 +118,4 @@ public class RosaIIIFSearchService implements IIIFSearchService {
         }
         return sb.toString();
     }
-
-    /**
-     * Attempt to prune results, getting rid of those matches present only to constrain
-     * the results to a particular object.
-     *
-     * @param request .
-     * @param result .
-     * @return .
-     */
-    private IIIFSearchResult pruneResults(IIIFSearchRequest request, IIIFSearchResult result) {
-        IIIFSearchResult pruned = new IIIFSearchResult();
-
-        pruned.setTotal(result.getTotal());
-        pruned.setIgnored(result.getIgnored());
-        pruned.setStartIndex(result.getStartIndex());
-        pruned.setNext(result.getNext());
-        pruned.setPrev(result.getPrev());
-        pruned.setFirst(result.getFirst());
-        pruned.setLast(result.getLast());
-
-        pruned.setLabel(result.getLabel());
-        pruned.setAnnotations(result.getAnnotations());
-
-        Set<String> toPrune = new HashSet<>();
-        switch (request.objectId.getType()) {
-            case CANVAS:
-                toPrune.add(request.objectId.getName());
-            case MANIFEST:
-                String[] parts = request.objectId.getId().split("\\.");
-                toPrune.add(parts[0]);
-                toPrune.add(parts[1]);
-                break;
-            case COLLECTION:
-                toPrune.add(request.objectId.getName());
-                break;
-            default:
-                break;
-        }
-
-        if (result.getHits() != null) {
-            List<IIIFSearchHit> list = new ArrayList<>();
-            for (IIIFSearchHit hit : result.getHits()) {
-                if (!toPrune.contains(hit.matching)) {
-                    list.add(hit);
-                }
-            }
-            pruned.setHits(list.toArray(new IIIFSearchHit[list.size()]));
-        }
-
-        return pruned;
-    }
-
 }

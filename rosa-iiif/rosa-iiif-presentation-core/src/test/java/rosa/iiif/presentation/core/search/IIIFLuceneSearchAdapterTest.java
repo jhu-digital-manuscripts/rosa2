@@ -78,7 +78,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
     @Test
     public void getContextHitsTest() {
-        List<String> testList = Arrays.asList("asdf <b>fdsa</b> <b>fdas</b> asdf", "sfad <b>fdsa</b> JFIO <b>ifsa</b>");
+        List<String> testList = Arrays.asList(SearchFields.ANNOTATION_TEXT.name(), "asdf <B>fdsa</B> <B>fdas</B> asdf", SearchFields.ANNOTATION_TEXT.name(), "sfad <B>fdsa</B> JFIO <B>ifsa</B>");
 
         /*
             IIIFSearchHit{annotations=[null], matching='fdsa fdas', before='asdf ', after=' asdf'},
@@ -92,7 +92,13 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
                 new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "ifsa", " JFIO ", "")
         );
 
+        System.err.println(expected);
+        System.err.println();
+        
         List<IIIFSearchHit> hits = adapter.getContextHits(testList, "ID", "COLLECTION", "BOOK");
+        
+        System.err.println(hits);
+        
         assertNotNull("Hits is NULL.", hits);
         assertFalse("Hits is empty/contains no hits.", hits.isEmpty());
         assertEquals("Unexpected list of IIIFSearchHits found.", expected, hits);
@@ -110,7 +116,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
         for (int i = 0; i < 4; i++) {
             matches.add(new SearchMatch(
                     "valid;FolgersHa2;FolgersHa2.009r.tif;FolgersHa2.009r.tif_symbol_" + i,
-                    Arrays.asList("asdf <b>fdsa</b> asdf", "sfad <b>fdsa</b> JFIO ifsa I")
+                    Arrays.asList(SearchFields.ANNOTATION_TEXT.name(), "asdf <B>fdsa</B> asdf", SearchFields.ANNOTATION_TEXT.name(), "sfad <B>fdsa</B> JFIO ifsa I")
             ));
         }
 
@@ -143,21 +149,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
     private Query allQuery(String term) {
         return new Query(
                 QueryOperation.OR,
-                new Query(SearchFields.AOR_READER, term),
-                new Query(SearchFields.AOR_PAGINATION, term),
-                new Query(SearchFields.AOR_SIGNATURE, term),
-                new Query(SearchFields.AOR_MARGINALIA_BOOKS, term),
-                new Query(SearchFields.AOR_MARGINALIA_PEOPLE, term),
-                new Query(SearchFields.AOR_MARGINALIA_LOCATIONS, term),
-                new Query(SearchFields.AOR_MARGINALIA_TRANSCRIPTIONS, term),
-                new Query(SearchFields.AOR_MARGINALIA_TRANSLATIONS, term),
-                new Query(SearchFields.AOR_MARGINALIA_INTERNAL_REFS, term),
-                new Query(SearchFields.AOR_MARKS, term),
-                new Query(SearchFields.AOR_SYMBOLS, term),
-                new Query(SearchFields.AOR_UNDERLINES, term),
-                new Query(SearchFields.AOR_ERRATA, term),
-                new Query(SearchFields.AOR_DRAWINGS, term),
-                new Query(SearchFields.AOR_NUMERALS, term)
+                new Query(SearchFields.ANNOTATION_TEXT, term)
         );
     }
 

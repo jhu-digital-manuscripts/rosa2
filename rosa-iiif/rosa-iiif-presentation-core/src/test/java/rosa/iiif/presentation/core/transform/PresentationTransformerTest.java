@@ -107,7 +107,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     /**
      * Generate canvases from FolgersHa2 and check validity. Ensure that
      * references to annotation lists are OK.
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void canvasFolgersHa2Test() throws IOException {

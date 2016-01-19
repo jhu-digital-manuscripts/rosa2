@@ -1,11 +1,16 @@
 package rosa.iiif.presentation.core.search;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+
 import rosa.archive.core.Store;
+import rosa.archive.core.util.Annotations;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
-import rosa.archive.core.util.Annotations;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
@@ -15,18 +20,13 @@ import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.search.IIIFSearchHit;
 import rosa.iiif.presentation.model.search.IIIFSearchRequest;
 import rosa.iiif.presentation.model.search.IIIFSearchResult;
-import rosa.iiif.presentation.model.search.SearchCategory;
 import rosa.search.core.SearchUtil;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
+import rosa.search.model.SearchField;
 import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Adapt Lucene search results into JSON-LD that follows the IIIF Search API
@@ -79,9 +79,11 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
 
         if (!query.toString().isEmpty()) {
             List<Query> searchQuery = new ArrayList<>();
-            for (SearchFields luceneField : SearchCategory.ALL.luceneFields) {
+            
+            for (SearchField luceneField : new SearchField[]{SearchFields.ANNOTATION_TEXT}) {
                 searchQuery.add(new Query(luceneField, query.toString().trim()));
             }
+            
             top_query.add(new Query(QueryOperation.OR, searchQuery.toArray(new Query[searchQuery.size()])));
         }
 
@@ -178,6 +180,7 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
             presentationAnno.getDefaultTarget().setParentRef(parentRef);
 
             annotations.add(presentationAnno);
+            
             hits.addAll(getContextHits(match.getContext(), matchId, col.getId(), book.getId()));
         }
 
@@ -268,20 +271,32 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
     protected List<IIIFSearchHit> getContextHits(List<String> contexts, String matchId,
                                                  String collection, String book) {
         List<IIIFSearchHit> hits = new ArrayList<>();
+        
         String[] associatedAnnos = new String[] {
                 urlId(collection, book, getAnnotationId(matchId), PresentationRequestType.ANNOTATION)
         };
 
-        // Create Hit objects from the context
-        for (String context : contexts) {
-            String tmp = context.toLowerCase();     // In case <B> appears instead of <b>
-            int start = tmp.indexOf("<b>");
+        // TODO Does not deal with nested <B>
+        
+        final String start_tag = "<B>";
+        final String end_tag = "</B>";
+        
+        for (int i = 0; i < contexts.size();) {
+            String field = contexts.get(i++);
+            String context = contexts.get(i++);
+            
+            if (!field.equals(SearchFields.ANNOTATION_TEXT.name())) {
+                continue;
+            }
+            
+            int start = context.indexOf(start_tag);
             int end = 0;
-            while (start >= 0 && start < tmp.length()) {
+            
+            while (start >= 0 && start < context.length()) {
                 String hit_before = context.substring((end == 0 ? end : end+4), start);
-                end = tmp.indexOf("</b>", start);
+                end = context.indexOf(end_tag, start);
                 String hit_match = context.substring(start + 3, end);
-                start = tmp.indexOf("<b>", end);
+                start = context.indexOf(start_tag, end);
 
                 String hit_after;
                 if (start > context.length() || start < 0) {
@@ -294,53 +309,10 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
             }
         }
 
-//        int i = 0;
-//        while (i < hits.size() - 1) {
-//            IIIFSearchHit hit1 = hits.get(i);
-//            IIIFSearchHit hit2 = hits.get(i + 1);
-//
-//            if (isEmpty(hit1.after) && isEmpty(hit2.before) && !hit1.matching.equals("tif")) {
-//                // If (after hit1) == (before hit2) == (blank), then merge the 2 hits
-//                hits.remove(hit1);
-//                hits.remove(hit2);
-//                hits.add(i, new IIIFSearchHit(
-//                        associatedAnnos, (hit1.matching + " " + hit2.matching), hit1.before, hit2.after
-//                ));
-//
-//                i--;
-//            }
-//
-//            i++;
-//        }
 
         return hits;
     }
-
-    private boolean isEmpty(String str) {
-        return str == null || str.isEmpty() || str.matches("^\\s+$");
-    }
-
-    /**
-     * TODO for now, assume ALL category. this will change when faceted search is implemented
-     *
-     * @param queryFragment query fragment in question
-     * @return search category associated with the fragment
-     */
-    private SearchCategory getSearchCategory(String queryFragment) {
-        return SearchCategory.ALL;
-    }
-
-    /**
-     * TODO for now, just return the fragment. this may change when faceted search is implemented
-     * @param queryFrag part of query term from request
-     * @return keyword to search for
-     */
-    private String getSearchTerm(String queryFrag) {
-        return queryFrag;
-    }
-
-    // -----  -----
-
+    
     private String getCollectionName(PresentationRequest request) {
         switch (request.getType()) {
             case COLLECTION:

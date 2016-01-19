@@ -46,13 +46,15 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
      * Search for the term "Sun" in the test data. There should be 44 instances found,
      * 40 of them from Symbols, 4 from Marginalia.
      *
-     * @throws Exception .
+     * @throws Exception
      */
     @Test
     public void validCollectionSearchTest() throws Exception {
         IIIFSearchResult result = service.search(new IIIFSearchRequest(
                 new PresentationRequest(null, VALID_COLLECTION, PresentationRequestType.COLLECTION), "Sun"));
 
+        System.err.println(result);
+        
         assertNotNull("Result is NULL.", result);
         assertEquals("Unexpected number of results found.", 44, result.getTotal());
         assertEquals("Unexpected number of Hits found.", 44, result.getHits().length);
