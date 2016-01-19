@@ -8,6 +8,8 @@ import org.junit.rules.TemporaryFolder;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
+import rosa.search.model.SearchField;
+import rosa.search.model.SearchFieldGroup;
 import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
@@ -40,7 +42,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
     @Test
     public void testSearchAORSymbol() throws Exception {
         {
-            Query query = new Query(SearchFields.AOR_SYMBOLS, "Sun");
+            Query query =  new Query(QueryOperation.AND, new Query(SearchFields.ANNOTATION_TEXT, "Sun"), new Query(SearchFields.TYPE, SearchFieldGroup.ANNOTATION_SYMBOL.name()));
             SearchResult result = service.search(query, null);
 
             assertNotNull("Search result was NULL", result);
@@ -48,7 +50,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
         }
 
         {
-            Query query = new Query(SearchFields.AOR_SYMBOLS, "Mars");
+            Query query = new Query(SearchFields.ANNOTATION_TEXT, "Mars");
             SearchResult result = service.search(query, null);
 
             assertNotNull("Search results was NULL.", result);
@@ -64,7 +66,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
 
     @Test
     public void testSearchMarginaliaTranslation() throws Exception {
-        Query query = new Query(SearchFields.AOR_MARGINALIA_TRANSLATIONS,
+        Query query = new Query(SearchFields.ANNOTATION_TEXT,
                 "if you wish, you may command the citizens.");
         SearchResult result = service.search(query, null);
 

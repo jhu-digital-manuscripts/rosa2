@@ -17,10 +17,14 @@ import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.core.LowerCaseFilter;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
+import org.apache.lucene.analysis.el.GreekAnalyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
+import org.apache.lucene.analysis.es.SpanishAnalyzer;
 import org.apache.lucene.analysis.fr.FrenchAnalyzer;
+import org.apache.lucene.analysis.it.ItalianAnalyzer;
 import org.apache.lucene.analysis.miscellaneous.PerFieldAnalyzerWrapper;
 import org.apache.lucene.analysis.pattern.PatternTokenizer;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field.Store;
 import org.apache.lucene.document.StringField;
@@ -55,7 +59,6 @@ import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
 import rosa.archive.model.NarrativeTagging;
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.InternalReference;
@@ -75,6 +78,7 @@ import rosa.archive.model.redtag.StructurePageSide;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
 import rosa.search.model.SearchField;
+import rosa.search.model.SearchFieldGroup;
 import rosa.search.model.SearchFieldType;
 import rosa.search.model.SearchFields;
 
@@ -87,6 +91,10 @@ public class LuceneMapper {
 
     private final Analyzer english_analyzer;
     private final Analyzer french_analyzer;
+    private final Analyzer italian_analyzer;
+    private final Analyzer spanish_analyzer;
+    private final Analyzer greek_analyzer;
+    private final Analyzer latin_analyzer;
     private final Analyzer imagename_analyzer;
     private final Analyzer string_analyzer;
     private final Analyzer main_analyzer;
@@ -108,8 +116,14 @@ public class LuceneMapper {
 
         this.english_analyzer = new EnglishAnalyzer();
         this.french_analyzer = new FrenchAnalyzer();
+        this.greek_analyzer = new GreekAnalyzer();
+        this.italian_analyzer = new ItalianAnalyzer();
+        this.spanish_analyzer = new SpanishAnalyzer();
         this.string_analyzer = new WhitespaceAnalyzer();
-
+        
+        // TODO Wrong. At least do latin stopwords.
+        this.latin_analyzer = new StandardAnalyzer();
+        
         // Tokenizes on spaces and . while removing excess 0's
         // TODO r/v?
         this.imagename_analyzer = new Analyzer() {
@@ -160,6 +174,14 @@ public class LuceneMapper {
             return french_analyzer;
         case STRING:
             return string_analyzer;
+        case SPANISH:
+            return spanish_analyzer;
+        case ITALIAN:
+            return italian_analyzer;
+        case GREEK:
+            return greek_analyzer;
+        case LATIN:
+            return latin_analyzer;
         default:
             return null;
         }
@@ -184,8 +206,6 @@ public class LuceneMapper {
             return create_lucene_query(query.getTerm());
         }
     }
-
-    // TODO old french complications etc.
 
     private Query create_lucene_query(QueryTerm term) {
         SearchField sf = search_field_map.get(term.getField());
@@ -238,6 +258,7 @@ public class LuceneMapper {
         }
     }
 
+    // TODO Only use this when we do not know the language!!    
     private void add_field(Document doc, SearchField sf, String value) {
         for (SearchFieldType type: sf.getFieldTypes()) {
             doc.add(create_field(getLuceneField(sf, type), type, value));
@@ -252,13 +273,9 @@ public class LuceneMapper {
     private IndexableField create_field(String name, SearchFieldType type,
             String value) {
         switch (type) {
-        case ENGLISH:
-            return new TextField(name, value, Store.YES);
-        case FRENCH:
+        case ENGLISH: case FRENCH: case OLD_FRENCH: case SPANISH:case LATIN: case ITALIAN: case GREEK:
             return new TextField(name, value, Store.YES);
         case IMAGE_NAME:
-            return new TextField(name, value, Store.YES);
-        case OLD_FRENCH:
             return new TextField(name, value, Store.YES);
         case STRING:
             return new StringField(name, value, Store.YES);
@@ -363,12 +380,7 @@ public class LuceneMapper {
                 BookDescription desc = book.getBookDescription(lc);
 
                 if (desc != null) {
-                    SearchFieldType type = SearchFieldType.ENGLISH;
-
-                    // TODO Need Constants for LCs
-                    if (lc.equals("fr")) {
-                        type = SearchFieldType.FRENCH;
-                    }
+                    SearchFieldType type = get_search_field_type_for_lang(lc);
 
                     add_field(
                             doc,
@@ -616,9 +628,9 @@ public class LuceneMapper {
         add_field(pageDoc, SearchFields.BOOK_ID, book.getId());
         add_field(pageDoc, SearchFields.IMAGE_NAME, image.getName());
 
-        add_field(pageDoc, SearchFields.AOR_READER, annotatedPage.getReader());
-        add_field(pageDoc, SearchFields.AOR_PAGINATION, annotatedPage.getPagination());
-        add_field(pageDoc, SearchFields.AOR_SIGNATURE, annotatedPage.getSignature());
+        add_field(pageDoc, SearchFields.ANNOTATION_AUTHOR, annotatedPage.getReader());
+        add_field(pageDoc, SearchFields.ANNOTATION_TARGET, annotatedPage.getPagination());
+        add_field(pageDoc, SearchFields.ANNOTATION_TARGET, annotatedPage.getSignature());
 
         // Symbols
         for (Symbol s : annotatedPage.getSymbols()) {
@@ -656,13 +668,13 @@ public class LuceneMapper {
         }
     }
 
-    private boolean isEmpty(String str) {
+    private boolean is_empty(String str) {
         return str == null || str.isEmpty();
     }
 
     private void docForTranscription(BookCollection col, Book book, String image, Symbol symbol,
                                          List<Document> result) {
-        if (isEmpty(symbol.getName())) {
+        if (is_empty(symbol.getName())) {
             return;
         }
         Document doc = new Document();
@@ -671,14 +683,16 @@ public class LuceneMapper {
         add_field(doc, SearchFields.COLLECTION_ID, col.getId());
         add_field(doc, SearchFields.BOOK_ID, book.getId());
         add_field(doc, SearchFields.IMAGE_NAME, image);
-        add_field(doc, SearchFields.AOR_SYMBOLS, symbol.getName());
+        add_field(doc, SearchFields.ANNOTATION_TEXT, SearchFieldType.ENGLISH, symbol.getName());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION.name());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION_SYMBOL.name());
 
         result.add(doc);
     }
 
     private void docForTranscription(BookCollection col, Book book, String image, Drawing drawing,
                                          List<Document> result) {
-        if (isEmpty(drawing.getName())) {
+        if (is_empty(drawing.getName())) {
             return;
         }
         Document doc = new Document();
@@ -687,14 +701,16 @@ public class LuceneMapper {
         add_field(doc, SearchFields.COLLECTION_ID, col.getId());
         add_field(doc, SearchFields.BOOK_ID, book.getId());
         add_field(doc, SearchFields.IMAGE_NAME, image);
-        add_field(doc, SearchFields.AOR_DRAWINGS, drawing.getName());
+        add_field(doc, SearchFields.ANNOTATION_TEXT, SearchFieldType.ENGLISH, drawing.getName());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION.name());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION_DRAWING.name());
 
         result.add(doc);
     }
 
     private void docForTranscription(BookCollection col, Book book, String image, Errata errata,
                                          List<Document> result) {
-        if (isEmpty(errata.getAmendedText()) || isEmpty(errata.getCopyText())) {
+        if (is_empty(errata.getAmendedText()) || is_empty(errata.getCopyText())) {
             return;
         }
         Document doc = new Document();
@@ -703,14 +719,16 @@ public class LuceneMapper {
         add_field(doc, SearchFields.COLLECTION_ID, col.getId());
         add_field(doc, SearchFields.BOOK_ID, book.getId());
         add_field(doc, SearchFields.IMAGE_NAME, image);
-        add_field(doc, SearchFields.AOR_ERRATA, errata.getAmendedText() + " " + errata.getCopyText());
+        add_field(doc, SearchFields.ANNOTATION_TEXT, SearchFieldType.ENGLISH, errata.getAmendedText() + " " + errata.getCopyText());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION.name());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION_ERRATA.name());
 
         result.add(doc);
     }
 
     private void docForTranscription(BookCollection col, Book book, String image, Mark mark,
                                          List<Document> result) {
-        if (isEmpty(mark.getName())) {
+        if (is_empty(mark.getName())) {
             return;
         }
         Document doc = new Document();
@@ -719,14 +737,16 @@ public class LuceneMapper {
         add_field(doc, SearchFields.COLLECTION_ID, col.getId());
         add_field(doc, SearchFields.BOOK_ID, book.getId());
         add_field(doc, SearchFields.IMAGE_NAME, image);
-        add_field(doc, SearchFields.AOR_MARKS, mark.getName());
+        add_field(doc, SearchFields.ANNOTATION_TEXT, SearchFieldType.ENGLISH, mark.getName());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION.name());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION_MARK.name());
 
         result.add(doc);
     }
 
     private void docForTranscription(BookCollection col, Book book, String image, Numeral numeral,
                                          List<Document> result) {
-        if (isEmpty(numeral.getReferringText())) {
+        if (is_empty(numeral.getReferringText())) {
             return;
         }
         Document doc = new Document();
@@ -735,14 +755,19 @@ public class LuceneMapper {
         add_field(doc, SearchFields.COLLECTION_ID, col.getId());
         add_field(doc, SearchFields.BOOK_ID, book.getId());
         add_field(doc, SearchFields.IMAGE_NAME, image);
-        add_field(doc, SearchFields.AOR_NUMERALS, numeral.getReferringText());
+        
+        // TODO Use correct lang
+        add_field(doc, SearchFields.ANNOTATION_TEXT, SearchFieldType.ENGLISH, numeral.getReferringText());
+        
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION.name());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION_NUMERAL.name());
 
         result.add(doc);
     }
 
     private void docForTranscription(BookCollection col, Book book, String image, Underline underline,
                                          List<Document> result) {
-        if (isEmpty(underline.getReferringText())) {
+        if (is_empty(underline.getReferringText())) {
             return;
         }
         Document doc = new Document();
@@ -751,11 +776,36 @@ public class LuceneMapper {
         add_field(doc, SearchFields.COLLECTION_ID, col.getId());
         add_field(doc, SearchFields.BOOK_ID, book.getId());
         add_field(doc, SearchFields.IMAGE_NAME, image);
-        add_field(doc, SearchFields.AOR_UNDERLINES, underline.getReferringText());
+        
+        // TODO User correct lang
+        add_field(doc, SearchFields.ANNOTATION_TEXT, SearchFieldType.ENGLISH, underline.getReferringText());
+        
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION.name());
+        add_field(doc, SearchFields.TYPE, SearchFieldGroup.ANNOTATION_UNDERLINE.name());
 
         result.add(doc);
     }
 
+    private SearchFieldType get_search_field_type_for_lang(String lc) {
+        lc = lc.toLowerCase();
+        
+        if (lc.equals("en")) {
+            return SearchFieldType.ENGLISH;
+        } else if (lc.equals("fr")) {
+            return SearchFieldType.FRENCH;
+        } else if (lc.equals("el")) {
+            return SearchFieldType.GREEK;
+        } else if (lc.equals("it")) {
+            return SearchFieldType.ITALIAN;
+        } else if (lc.equals("la")) {
+            return SearchFieldType.LATIN;
+        } else if (lc.equals("es")) {
+            return SearchFieldType.SPANISH;
+        } else {
+            return null;
+        }
+    }
+    
     private void docForTranscription(BookCollection col, Book book, String image, Marginalia marg,
                                          List<Document> result) {
         Document doc = new Document();
@@ -765,66 +815,55 @@ public class LuceneMapper {
         add_field(doc, SearchFields.BOOK_ID, book.getId());
         add_field(doc, SearchFields.IMAGE_NAME, image);
 
-        if (!isEmpty(marg.getReferringText())) {
-            add_field(doc, SearchFields.AOR_UNDERLINES, marg.getReferringText());
+        if (!is_empty(marg.getReferringText())) {
+            // TODO Use correct lang
+            add_field(doc, SearchFields.ANNOTATION_TEXT, SearchFieldType.ENGLISH, marg.getReferringText());
         }
 
         StringBuilder transcription = new StringBuilder();
-        StringBuilder books = new StringBuilder();
-        StringBuilder people = new StringBuilder();
-        StringBuilder locations = new StringBuilder();
-        StringBuilder internalRefs = new StringBuilder();
-        StringBuilder underlines = new StringBuilder();
-
+        StringBuilder notes = new StringBuilder();
+        
+        SearchFieldType marg_lang_type = SearchFieldType.ENGLISH;
+        
         for (MarginaliaLanguage lang : marg.getLanguages()) {
+            marg_lang_type = get_search_field_type_for_lang(lang.getLang());
+            
             for (Position pos : lang.getPositions()) {
-                transcription.append(listToString(pos.getTexts()));
-                books.append(listToString(pos.getBooks()));
-                people.append(listToString(pos.getPeople()));
-                locations.append(listToString(pos.getLocations()));
-
-                for (Underline u : pos.getEmphasis()) {
-                    underlines.append(u.getReferringText());
-                    underlines.append(' ');
-                }
+                transcription.append(to_string(pos.getTexts()));
+                
+                notes.append(to_string(pos.getBooks()));
+                notes.append(to_string(pos.getPeople()));
+                notes.append(to_string(pos.getLocations()));
 
                 for (InternalReference internalRef : pos.getInternalRefs()) {
                     for (ReferenceTarget target : internalRef.getTargets()) {
-                        internalRefs.append(target.getBookId());
-                        internalRefs.append(' ');
-                        internalRefs.append(target.getFilename());
-                        internalRefs.append(' ');
+                        notes.append(target.getBookId());
+                        notes.append(' ');
+                        notes.append(target.getFilename());
+                        notes.append(' ');
                     }
                 }
+                
+                pos.getTexts();
             }
         }
-
-        if (!isEmpty(underlines.toString())) {
-            add_field(doc, SearchFields.AOR_UNDERLINES, underlines.toString());
+        
+        if (transcription.length() > 0) {
+            add_field(doc, SearchFields.ANNOTATION_TEXT, marg_lang_type, transcription.toString());
         }
-        if (!isEmpty(transcription.toString())) {
-            add_field(doc, SearchFields.AOR_MARGINALIA_TRANSCRIPTIONS, transcription.toString());
+        
+        if (!is_empty(marg.getTranslation())) {
+            add_field(doc, SearchFields.ANNOTATION_TEXT, SearchFieldType.ENGLISH, marg.getTranslation());
         }
-        if (!isEmpty(marg.getTranslation())) {
-            add_field(doc, SearchFields.AOR_MARGINALIA_TRANSLATIONS, marg.getTranslation());
-        }
-        if (!isEmpty(book.toString())) {
-            add_field(doc, SearchFields.AOR_MARGINALIA_BOOKS, books.toString());
-        }
-        if (!isEmpty(people.toString())) {
-            add_field(doc, SearchFields.AOR_MARGINALIA_PEOPLE, people.toString());
-        }
-        if (!isEmpty(locations.toString())) {
-            add_field(doc, SearchFields.AOR_MARGINALIA_LOCATIONS, locations.toString());
-        }
-        if (!isEmpty(internalRefs.toString())) {
-            add_field(doc, SearchFields.AOR_MARGINALIA_INTERNAL_REFS, internalRefs.toString());
+        
+        if (notes.length() > 0) {
+            add_field(doc, SearchFields.ANNOTATION_NOTE, SearchFieldType.ENGLISH, notes.toString());
         }
 
         result.add(doc);
     }
 
-    private String listToString(List<String> list) {
+    private String to_string(List<String> list) {
         StringBuilder sb = new StringBuilder();
         for (String str : list) {
             sb.append(str.trim());
