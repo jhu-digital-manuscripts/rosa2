@@ -98,6 +98,7 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
             texts.appendChild(text);
 
             text.setAttribute("id", t.getId());
+            valueElement("language", t.getLanguage(), text, doc);
             valueElement("title", t.getTitle(), text, doc);
             valueElement("textId", t.getTextId(), text, doc);
 
@@ -191,6 +192,7 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
             text.setFirstPage(getAttribute("start", "pages", textEl));
             text.setLastPage(getAttribute("end", "pages", textEl));
             text.setTitle(text("title", textEl));
+            text.setLanguage(text("language", textEl));
 
             textList.add(text);
         }

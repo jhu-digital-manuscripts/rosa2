@@ -36,6 +36,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest<Multilan
             "    </dates>\n" +
             "    <texts>\n" +
             "        <text id=\"1\">\n" +
+            "            <language>fr</language>\n" +
             "            <title>title</title>\n" +
             "            <textId>rose</textId>\n" +
             "            <pages end=\"100r\" start=\"1r\">100</pages>\n" +
@@ -45,6 +46,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest<Multilan
             "            <leavesPerGathering>4</leavesPerGathering>\n" +
             "        </text>\n" +
             "        <text id=\"2\">\n" +
+            "            <language>fr</language>\n" +
             "            <title>title</title>\n" +
             "            <textId>not rose</textId>\n" +
             "            <pages end=\"300r\" start=\"100v\">200</pages>\n" +
@@ -242,6 +244,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest<Multilan
         t1.setLinesPerColumn(2);
         t1.setColumnsPerPage(3);
         t1.setLeavesPerGathering(4);
+        t1.setLanguage("fr");
         metadata.getBookTexts().add(t1);
 
         BookText t2 = new BookText();
@@ -255,6 +258,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest<Multilan
         t2.setLinesPerColumn(0);
         t2.setColumnsPerPage(0);
         t2.setLeavesPerGathering(0);
+        t2.setLanguage("fr");
         metadata.getBookTexts().add(t2);
 
         BiblioData d2 = new BiblioData();

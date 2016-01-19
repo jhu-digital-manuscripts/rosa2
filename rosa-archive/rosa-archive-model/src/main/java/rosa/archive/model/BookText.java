@@ -19,6 +19,8 @@ public final class BookText implements Serializable {
     private String firstPage;
     private String lastPage;
 
+    private String language;
+
     /**
      * Create empty BookText
      */
@@ -102,25 +104,41 @@ public final class BookText implements Serializable {
         this.lastPage = lastPage;
     }
 
+    public String getTextId() {
+        return textId;
+    }
+
+    public void setTextId(String textId) {
+        this.textId = textId;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof BookText)) return false;
 
-        BookText bookText = (BookText) o;
+        BookText text = (BookText) o;
 
-        if (columnsPerPage != bookText.columnsPerPage) return false;
-        if (leavesPerGathering != bookText.leavesPerGathering) return false;
-        if (linesPerColumn != bookText.linesPerColumn) return false;
-        if (numberOfIllustrations != bookText.numberOfIllustrations) return false;
-        if (numberOfPages != bookText.numberOfPages) return false;
-        if (firstPage != null ? !firstPage.equals(bookText.firstPage) : bookText.firstPage != null) return false;
-        if (id != null ? !id.equals(bookText.id) : bookText.id != null) return false;
-        if (lastPage != null ? !lastPage.equals(bookText.lastPage) : bookText.lastPage != null) return false;
-        if (textId != null ? !textId.equals(bookText.textId) : bookText.textId != null) return false;
-        if (title != null ? !title.equals(bookText.title) : bookText.title != null) return false;
+        if (linesPerColumn != text.linesPerColumn) return false;
+        if (columnsPerPage != text.columnsPerPage) return false;
+        if (leavesPerGathering != text.leavesPerGathering) return false;
+        if (numberOfIllustrations != text.numberOfIllustrations) return false;
+        if (numberOfPages != text.numberOfPages) return false;
+        if (id != null ? !id.equals(text.id) : text.id != null) return false;
+        if (textId != null ? !textId.equals(text.textId) : text.textId != null) return false;
+        if (title != null ? !title.equals(text.title) : text.title != null) return false;
+        if (firstPage != null ? !firstPage.equals(text.firstPage) : text.firstPage != null) return false;
+        if (lastPage != null ? !lastPage.equals(text.lastPage) : text.lastPage != null) return false;
+        return !(language != null ? !language.equals(text.language) : text.language != null);
 
-        return true;
     }
 
     @Override
@@ -135,15 +153,8 @@ public final class BookText implements Serializable {
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (firstPage != null ? firstPage.hashCode() : 0);
         result = 31 * result + (lastPage != null ? lastPage.hashCode() : 0);
+        result = 31 * result + (language != null ? language.hashCode() : 0);
         return result;
-    }
-
-    public String getTextId() {
-        return textId;
-    }
-
-    public void setTextId(String textId) {
-        this.textId = textId;
     }
 
     @Override
@@ -159,6 +170,7 @@ public final class BookText implements Serializable {
                 ", title='" + title + '\'' +
                 ", firstPage='" + firstPage + '\'' +
                 ", lastPage='" + lastPage + '\'' +
+                ", language='" + language + '\'' +
                 '}';
     }
 }
