@@ -4,6 +4,7 @@ import org.apache.commons.cli.CommandLine;
 import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.core.serialize.MultilangMetadataSerializer;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookText;
 import rosa.archive.model.meta.BiblioData;
 import rosa.archive.model.meta.MultilangMetadata;
 import rosa.archive.tool.config.ToolConfig;
@@ -115,7 +116,11 @@ public class TEIDescriptionConverter {
             mm.setYearStart(metadata.getYearStart());
             mm.setYearEnd(metadata.getYearEnd());
 
-            mm.setBookTexts(Arrays.asList(metadata.getTexts()));
+            List<BookText> texts = new ArrayList<>(Arrays.asList(metadata.getTexts()));
+            for (BookText text : texts) {
+                text.setLanguage("fr");
+            }
+            mm.setBookTexts(texts);
 
             BiblioData bib = new BiblioData();
             bib.setCommonName(metadata.getCommonName());
