@@ -256,7 +256,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
      * @param category selection category
      * @param lang language code
      * @return .
-     * @throws IOException .
+     * @throws IOException
      */
     @Override
     public BookSelectList loadBookSelectionData(String collection, SelectCategory category, String lang)

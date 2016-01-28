@@ -38,7 +38,7 @@ public interface CSVDataView extends IsWidget {
      * work if trying to link outside.
      *
      * If links should be displayed in this table, it is possible to identify them in
-     * {@param links}. This parameter maps a column enumeration to a history fragment
+     * links. This parameter maps a column enumeration to a history fragment
      * prefix, which will point to another place in the website. The final history token
      * will be a combination of the mapped history prefix and the cell value in the
      * column.
@@ -50,7 +50,7 @@ public interface CSVDataView extends IsWidget {
      * EXAMPLE:
      * In the 'collection spreadsheet', the column holding book IDs contains links that
      * will navigate to the description of that book. Along with the CSVData, a map
-     * with a single entry is passed as the {@param links} parameter.
+     * with a single entry is passed as the links parameter.
      * <ul><li>Column.ID -&gt; book</li></ul>
      * This link will navigate to: {@code baseURL#book;<bookId>}
      *

@@ -42,7 +42,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param lang desired language
      * @param type type of CSV to return
      * @return CSV data
-     * @throws IOException .
+     * @throws IOException
      */
     CSVData loadCSVData(String collection, String lang, CSVType type) throws IOException;
 
@@ -98,7 +98,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param book name of the book
      * @param lang language code
      * @return permission statement for use of the book
-     * @throws IOException .
+     * @throws IOException
      */
     String loadPermissionStatement(String collection, String book, String lang) throws IOException;
 
@@ -108,7 +108,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param collection name of collection
      * @param book name of book
      * @return image list as a String
-     * @throws IOException .
+     * @throws IOException
      */
     String loadImageListAsString(String collection, String book) throws IOException;
 
@@ -118,7 +118,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param collection name of collection
      * @param book name of book
      * @return image list as a String
-     * @throws IOException .
+     * @throws IOException
      */
     ImageList loadImageList(String collection, String book) throws IOException;
 
@@ -129,7 +129,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param book name of book
      * @param language language to return data
      * @return model object for the FSI flash viewer
-     * @throws IOException .
+     * @throws IOException
      */
     FSIViewerModel loadFSIViewerModel(String collection, String book, String language) throws IOException;
 
@@ -140,7 +140,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param book name of book
      * @param language language to return the data
      * @return data model object
-     * @throws IOException .
+     * @throws IOException
      */
     BookDescriptionViewModel loadBookDescriptionModel(String collection, String book, String language) throws IOException;
 }
