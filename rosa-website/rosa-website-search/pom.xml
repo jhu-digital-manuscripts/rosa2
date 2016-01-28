@@ -70,6 +70,21 @@
             <artifactId>rosa-website-model</artifactId>
         </dependency>
 
+	<!-- Test dependencies -->
+	
+	<dependency>
+	  <groupId>rosa.archive</groupId>
+	  <artifactId>rosa-archive-core</artifactId>
+	  <type>test-jar</type>
+	  <scope>test</scope>
+	</dependency>
+
+	<dependency>
+	  <groupId>org.mockito</groupId>
+	  <artifactId>mockito-all</artifactId>
+	  <scope>test</scope>
+	</dependency>
+
     </dependencies>
 
     <build>

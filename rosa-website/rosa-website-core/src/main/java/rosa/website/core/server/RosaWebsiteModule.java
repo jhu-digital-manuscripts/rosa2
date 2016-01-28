@@ -7,6 +7,7 @@ import com.google.inject.name.Named;
 import com.google.inject.servlet.ServletModule;
 import rosa.search.core.LuceneSearchService;
 import rosa.search.core.SearchService;
+import rosa.website.search.WebsiteLuceneMapper;
 import rosa.website.viewer.server.FSISerializer;
 
 import java.io.IOException;
@@ -74,7 +75,7 @@ public class RosaWebsiteModule extends ServletModule {
     @Provides
     public SearchService searchService() {
         try {
-            return new LuceneSearchService(Paths.get(searchIndexPath()));
+            return new LuceneSearchService(Paths.get(searchIndexPath()), new WebsiteLuceneMapper());
         } catch (IOException e) {
             log.log(Level.SEVERE, "Failed to initialize search service.", e);
             return null;

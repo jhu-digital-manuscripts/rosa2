@@ -3,9 +3,9 @@ package rosa.website.search.client;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
-import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.website.search.client.model.SearchCategory;
+import rosa.website.search.client.model.WebsiteSearchFields;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ public class RosaQueryUtil implements QueryUtil {
 
         // Restrict results to a single collection, if specified
         if (collectionId != null && !collectionId.isEmpty()) {
-            top.add(new Query(SearchFields.COLLECTION_ID, collectionId));
+            top.add(new Query(WebsiteSearchFields.COLLECTION_ID, collectionId));
         }
 
         if (top.size() == 1) {
@@ -157,7 +157,7 @@ public class RosaQueryUtil implements QueryUtil {
         }
 
         List<Query> top = new ArrayList<>();
-        for (SearchFields field : category.getFields()) {
+        for (WebsiteSearchFields field : category.getFields()) {
             top.add(new Query(field, queryTerm));
         }
 
@@ -175,12 +175,12 @@ public class RosaQueryUtil implements QueryUtil {
         if (books == null || books.length == 0) {
             return null;
         } else if (books.length == 1) {
-            return new Query(SearchFields.BOOK_ID, books[0]);
+            return new Query(WebsiteSearchFields.BOOK_ID, books[0]);
         }
 
         List<Query> top = new ArrayList<>();
         for (String book : books) {
-            top.add(new Query(SearchFields.BOOK_ID, book));
+            top.add(new Query(WebsiteSearchFields.BOOK_ID, book));
         }
 
         return new Query(QueryOperation.OR, top.toArray(new Query[top.size()]));
