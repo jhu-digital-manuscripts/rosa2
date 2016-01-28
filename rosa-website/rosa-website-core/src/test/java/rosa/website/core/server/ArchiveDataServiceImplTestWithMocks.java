@@ -51,7 +51,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      * the #loadCollectionData should also return NULL without throwing any
      * exceptions. A SEVERE log message will appear.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadCollectionDataWithNullCollectionTest() throws IOException {
@@ -66,7 +66,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      * the name of a book that does not exist in the archive. The resulting collection
      * CSV should exist (not be NULL), but have no rows.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadCollectionDataWithInvalidBook() throws IOException {
@@ -84,7 +84,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      * collection, which contains only a single book. The resulting CSV should
      * contain only a single row representing that book.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadCollectionDataWhenCollectionHasOneBook() throws IOException {
@@ -109,7 +109,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      * one book. This book is missing the 'BookTexts' in its metadata. The resulting
      * CSV should have one row.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadCollectionDataWithBookMissingTexts() throws IOException {
@@ -138,7 +138,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      * with it. The resulting CSV should exist with a row representing the book,
      * but the row will contain only the book's name.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadCollectionDataWithMissingMetadata() throws IOException {
@@ -176,7 +176,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      * exist in the archive. This service call should return NULL without
      * throwing any exceptions.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadCollectionBookDataWithBadCollection() throws IOException {
@@ -191,7 +191,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      * exist. Since the bad book is the only book in this collection, the
      * CSV should have 0 rows.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadCollectionBookDataWithBadBook() throws IOException {
@@ -212,7 +212,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      * Book selection data is loaded for some criteria for a collection that
      * does not exist in the archive. NULL should be returned with no error.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void bookSelectionDataWithBadCollection() throws IOException {
@@ -228,7 +228,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      * Since this mock collection will contain only the bad book, the resulting
      * list should contain no entries.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void bookSelectionDataWithBadBook() throws IOException {
@@ -256,7 +256,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      *
      * {@link ArchiveDataService#loadFSIViewerModel(String, String, String)}
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void getFSIViewerModelWithNoIllustrations() throws IOException {
