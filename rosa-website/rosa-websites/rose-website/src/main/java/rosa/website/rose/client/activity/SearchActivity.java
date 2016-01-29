@@ -1,5 +1,12 @@
 package rosa.website.rose.client.activity;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -12,10 +19,10 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.gwt.view.client.RangeChangeEvent;
 import com.google.gwt.view.client.RangeChangeEvent.Handler;
+
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
-import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
@@ -23,6 +30,7 @@ import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.FSIUtil;
 import rosa.website.core.client.Labels;
+import rosa.website.core.client.RosaSearchServiceAsync;
 import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.view.AdvancedSearchView;
@@ -37,17 +45,10 @@ import rosa.website.model.select.BookInfo;
 import rosa.website.rose.client.WebsiteConfig;
 import rosa.website.search.client.QueryUtil;
 import rosa.website.search.client.RosaQueryUtil;
-import rosa.website.core.client.RosaSearchServiceAsync;
 import rosa.website.search.client.model.SearchCategory;
 import rosa.website.search.client.model.SearchMatchModel;
 import rosa.website.search.client.model.SearchResultModel;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import rosa.website.search.client.model.WebsiteSearchFields;
 
 public class SearchActivity implements Activity {
     private static final Logger LOG = Logger.getLogger(SearchActivity.class.toString());
@@ -344,8 +345,8 @@ public class SearchActivity implements Activity {
     private String replaceCategoryEnum(String context) {
 
         if (context != null && !context.isEmpty()) {
-            for (SearchFields fields : SearchFields.values()) {
-                if (context.contains(fields.toString()) && fields != SearchFields.ID) {
+            for (WebsiteSearchFields fields : WebsiteSearchFields.values()) {
+                if (context.contains(fields.toString()) && fields != WebsiteSearchFields.ID) {
                     context = context.replace(fields.toString(), getFieldString(fields));
                 }
             }
@@ -354,7 +355,7 @@ public class SearchActivity implements Activity {
         return context;
     }
 
-    private String getFieldString(SearchFields field) {
+    private String getFieldString(WebsiteSearchFields field) {
         StringBuilder fieldLabel = new StringBuilder("<span style=\"font-style:italic\">");
 
         switch (field) {

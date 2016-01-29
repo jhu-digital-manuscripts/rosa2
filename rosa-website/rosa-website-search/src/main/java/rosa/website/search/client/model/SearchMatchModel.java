@@ -19,6 +19,7 @@ public class SearchMatchModel extends SearchMatch implements Serializable {
     private String display;
 
     /** No-arg constructor for GWT */
+    @SuppressWarnings("unused")
     private SearchMatchModel() {}
 
     public SearchMatchModel(SearchMatch match, String imageUrl, String targetUrl, String display) {

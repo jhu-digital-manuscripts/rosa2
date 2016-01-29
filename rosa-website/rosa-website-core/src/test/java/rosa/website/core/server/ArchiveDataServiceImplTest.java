@@ -33,7 +33,7 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
     /**
      * Test method for loading and creating the illustration titles CSV data.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadIllustrationTitlesTest() throws IOException {
@@ -53,7 +53,7 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
     /**
      * Test method for loading and creating the collection data CSV.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadCollectionCSVTest() throws IOException {
@@ -103,7 +103,7 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
     /**
      * Test method for collection book data CSV.
      *
-     * @throws IOException .
+     * @throws IOException
      */
     @Test
     public void loadCollectionBookDataTest() throws IOException {

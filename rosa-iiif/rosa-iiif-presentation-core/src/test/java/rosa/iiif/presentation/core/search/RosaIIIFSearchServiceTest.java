@@ -29,7 +29,7 @@ public class RosaIIIFSearchServiceTest extends BaseArchiveTest {
     public void setup() throws Exception {
         setupArchiveStore();
 
-        SearchService luceneSearchService = new LuceneSearchService(tmpfolder.newFolder().toPath());
+        SearchService luceneSearchService = new LuceneSearchService(tmpfolder.newFolder().toPath(), new AnnotationLuceneMapper());
         luceneSearchService.update(store, VALID_COLLECTION);
 
         IIIFSearchRequestFormatter requestFormatter = new IIIFSearchRequestFormatter("SCHEME", "HOST", "/PREFIX", 80);

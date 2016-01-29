@@ -11,7 +11,7 @@ public class ImageNameParser {
      * @param page page name that includes page number and recto/verso designation
      *             EX: #r, ##v, etc
      * @return standard format with three digit page number: ###r OR ###v
-     * @throws NullPointerException if {@param page} is NULL
+     * @throws NullPointerException if page is NULL
      */
     public static String toStandardName(String page) {
         if (page == null) {

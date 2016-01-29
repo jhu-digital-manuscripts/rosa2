@@ -1,8 +1,18 @@
 package rosa.iiif.presentation.core.search;
 
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
@@ -13,18 +23,8 @@ import rosa.iiif.presentation.model.search.IIIFSearchRequest;
 import rosa.iiif.presentation.model.search.IIIFSearchResult;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
-import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
 
 public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
@@ -78,7 +78,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
     @Test
     public void getContextHitsTest() {
-        List<String> testList = Arrays.asList(SearchFields.ANNOTATION_TEXT.name(), "asdf <B>fdsa</B> <B>fdas</B> asdf", SearchFields.ANNOTATION_TEXT.name(), "sfad <B>fdsa</B> JFIO <B>ifsa</B>");
+        List<String> testList = Arrays.asList(AnnotationSearchFields.TEXT.name(), "asdf <B>fdsa</B> <B>fdas</B> asdf", AnnotationSearchFields.TEXT.name(), "sfad <B>fdsa</B> JFIO <B>ifsa</B>");
 
         /*
             IIIFSearchHit{annotations=[null], matching='fdsa fdas', before='asdf ', after=' asdf'},
@@ -116,7 +116,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
         for (int i = 0; i < 4; i++) {
             matches.add(new SearchMatch(
                     "valid;FolgersHa2;FolgersHa2.009r.tif;FolgersHa2.009r.tif_symbol_" + i,
-                    Arrays.asList(SearchFields.ANNOTATION_TEXT.name(), "asdf <B>fdsa</B> asdf", SearchFields.ANNOTATION_TEXT.name(), "sfad <B>fdsa</B> JFIO ifsa I")
+                    Arrays.asList(AnnotationSearchFields.TEXT.name(), "asdf <B>fdsa</B> asdf", AnnotationSearchFields.TEXT.name(), "sfad <B>fdsa</B> JFIO ifsa I")
             ));
         }
 
@@ -126,9 +126,9 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
     private Query expectedBlankQuery() {
         return new Query(
                 QueryOperation.AND,
-                new Query(SearchFields.IMAGE_NAME, "Bessy"),
-                new Query(SearchFields.BOOK_ID, "cow"),
-                new Query(SearchFields.COLLECTION_ID, "moo")
+                new Query(AnnotationSearchFields.IMAGE, "Bessy"),
+                new Query(AnnotationSearchFields.BOOK, "cow"),
+                new Query(AnnotationSearchFields.COLLECTION, "moo")
         );
     }
 
@@ -140,16 +140,16 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
         return new Query(
                 QueryOperation.AND,
                 allQuery("Moo cow"),
-                new Query(SearchFields.IMAGE_NAME, "Bessy"),
-                new Query(SearchFields.BOOK_ID, "cow"),
-                new Query(SearchFields.COLLECTION_ID, "moo")
+                new Query(AnnotationSearchFields.IMAGE, "Bessy"),
+                new Query(AnnotationSearchFields.BOOK, "cow"),
+                new Query(AnnotationSearchFields.COLLECTION, "moo")
         );
     }
 
     private Query allQuery(String term) {
         return new Query(
                 QueryOperation.OR,
-                new Query(SearchFields.ANNOTATION_TEXT, term)
+                new Query(AnnotationSearchFields.TEXT, term)
         );
     }
 

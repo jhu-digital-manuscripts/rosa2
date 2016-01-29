@@ -18,6 +18,7 @@ public class SearchResultModel implements Serializable {
     private List<SearchMatchModel> matches;
 
     /** No-arg constructor for GWT */
+    @SuppressWarnings("unused")
     private SearchResultModel() {}
 
     public SearchResultModel(SearchResult result) {

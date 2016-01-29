@@ -19,6 +19,7 @@
     <inherits name="rosa.website.model.RosaWebsiteModel"/>
     <inherits name="rosa.website.viewer.RosaWebsiteViewer"/>
     <inherits name="rosa.website.core.RosaWebsiteCore"/>
+    <inherits name="rosa.website.search.RosaWebsiteSearch"/>
 
     <inherits name='com.google.gwt.user.theme.chrome.Chrome' />
     <stylesheet src="../RosaWebsiteRose.css"/>

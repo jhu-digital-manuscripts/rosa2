@@ -1,4 +1,4 @@
-package rosa.search.core;
+package rosa.website.search;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -20,17 +20,19 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
+import rosa.search.core.LuceneMapper;
+import rosa.search.core.SearchUtil;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchFieldType;
-import rosa.search.model.SearchFields;
+import rosa.website.search.client.model.WebsiteSearchFields;
 
-public class LuceneMapperTest {
+public class WebsiteLuceneMapperTest {
     private LuceneMapper mapper;
 
     @Before
     public void setup() {
-        mapper = new LuceneMapper();
+        mapper = new WebsiteLuceneMapper();
     }
 
     /**
@@ -40,12 +42,12 @@ public class LuceneMapperTest {
     public void testCreateTermQuery() {
         String bookid = "moo";
 
-        Query query = new Query(SearchFields.BOOK_ID, bookid);
+        Query query = new Query(WebsiteSearchFields.BOOK_ID, bookid);
 
         org.apache.lucene.search.Query result = mapper.createLuceneQuery(query);
 
-        String lucene_field = mapper.getLuceneField(SearchFields.BOOK_ID,
-                SearchFields.BOOK_ID.getFieldTypes()[0]);
+        String lucene_field = mapper.getLuceneField(WebsiteSearchFields.BOOK_ID,
+                WebsiteSearchFields.BOOK_ID.getFieldTypes()[0]);
         org.apache.lucene.search.Query expected = new TermQuery(new Term(
                 lucene_field, bookid));
 
@@ -59,16 +61,16 @@ public class LuceneMapperTest {
     public void testCreateQueryWithOddCharacters() {
         Query query;
 
-        query = new Query(SearchFields.TRANSCRIPTION_TEXT, "");
+        query = new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, "");
         mapper.createLuceneQuery(query);
 
-        query = new Query(SearchFields.TRANSCRIPTION_TEXT, ":");
+        query = new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, ":");
         mapper.createLuceneQuery(query);
 
-        query = new Query(SearchFields.TRANSCRIPTION_TEXT, ":as\"");
+        query = new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, ":as\"");
         mapper.createLuceneQuery(query);
 
-        query = new Query(SearchFields.TRANSCRIPTION_TEXT,
+        query = new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT,
                 "//\\3*3\'w;:  #$52%");
         mapper.createLuceneQuery(query);
     }
@@ -82,16 +84,16 @@ public class LuceneMapperTest {
         String title = "Cow chews cud.";
 
         Query query = new Query(QueryOperation.AND, new Query(
-                SearchFields.BOOK_ID, bookid), new Query(
-                SearchFields.ILLUSTRATION_TITLE, title));
+                WebsiteSearchFields.BOOK_ID, bookid), new Query(
+                WebsiteSearchFields.ILLUSTRATION_TITLE, title));
 
         org.apache.lucene.search.Query result = mapper.createLuceneQuery(query);
 
         String bookid_lucene_field = mapper.getLuceneField(
-                SearchFields.BOOK_ID, SearchFields.BOOK_ID.getFieldTypes()[0]);
+                WebsiteSearchFields.BOOK_ID, WebsiteSearchFields.BOOK_ID.getFieldTypes()[0]);
         String title_lucene_field = mapper.getLuceneField(
-                SearchFields.ILLUSTRATION_TITLE,
-                SearchFields.ILLUSTRATION_TITLE.getFieldTypes()[0]);
+                WebsiteSearchFields.ILLUSTRATION_TITLE,
+                WebsiteSearchFields.ILLUSTRATION_TITLE.getFieldTypes()[0]);
 
         BooleanQuery expected = new BooleanQuery();
         expected.add(new TermQuery(new Term(bookid_lucene_field, bookid)),
@@ -134,8 +136,8 @@ public class LuceneMapperTest {
 
         List<Document> results = mapper.createDocuments(col, book);
 
-        String lucene_id_field = mapper.getLuceneField(SearchFields.ID,
-                SearchFields.ID.getFieldTypes()[0]);
+        String lucene_id_field = mapper.getLuceneField(WebsiteSearchFields.ID,
+                WebsiteSearchFields.ID.getFieldTypes()[0]);
 
         for (Document doc: results) {
             String doc_id = doc.get(lucene_id_field);
@@ -170,32 +172,32 @@ public class LuceneMapperTest {
         assertEquals(1 + images.getImages().size(), results.size());
     }
 
-    private String get_lucene_field(SearchFields sf) {
+    private String get_lucene_field(WebsiteSearchFields sf) {
         assertEquals(1, sf.getFieldTypes().length);
 
         return mapper.getLuceneField(sf, sf.getFieldTypes()[0]);
     }
 
-    private String get_lucene_field(SearchFields sf, SearchFieldType type) {
+    private String get_lucene_field(WebsiteSearchFields sf, SearchFieldType type) {
         return mapper.getLuceneField(sf, type);
     }
 
-    private String get_field(Document doc, SearchFields sf) {
+    private String get_field(Document doc, WebsiteSearchFields sf) {
         return doc.get(get_lucene_field(sf));
     }
 
-    private String get_field(Document doc, SearchFields sf, SearchFieldType type) {
+    private String get_field(Document doc, WebsiteSearchFields sf, SearchFieldType type) {
         return doc.get(get_lucene_field(sf, type));
     }
 
-    private void check_field(SearchFields sf, String expected, Document doc) {
+    private void check_field(WebsiteSearchFields sf, String expected, Document doc) {
         String lucene_field = get_lucene_field(sf);
 
         assertEquals(1, doc.getFields(lucene_field).length);
         assertEquals(expected, get_field(doc, sf));
     }
 
-    private void check_field(SearchFields sf, SearchFieldType type,
+    private void check_field(WebsiteSearchFields sf, SearchFieldType type,
             String expected, Document doc) {
         String lucene_field = get_lucene_field(sf, type);
 
@@ -205,25 +207,25 @@ public class LuceneMapperTest {
 
     private void check_image(BookCollection col, Book book, BookImage image,
             Document doc) {
-        check_field(SearchFields.ID,
+        check_field(WebsiteSearchFields.ID,
                 SearchUtil.createId(col.getId(), book.getId(), image.getId()),
                 doc);
-        check_field(SearchFields.BOOK_ID, book.getId(), doc);
-        check_field(SearchFields.COLLECTION_ID, col.getId(), doc);
+        check_field(WebsiteSearchFields.BOOK_ID, book.getId(), doc);
+        check_field(WebsiteSearchFields.COLLECTION_ID, col.getId(), doc);
     }
 
     private void check_book(BookCollection col, Book book, Document doc) {
-        check_field(SearchFields.ID,
+        check_field(WebsiteSearchFields.ID,
                 SearchUtil.createId(col.getId(), book.getId()), doc);
-        check_field(SearchFields.BOOK_ID, book.getId(), doc);
-        check_field(SearchFields.COLLECTION_ID, col.getId(), doc);
+        check_field(WebsiteSearchFields.BOOK_ID, book.getId(), doc);
+        check_field(WebsiteSearchFields.COLLECTION_ID, col.getId(), doc);
 
         BookDescription desc_en = book.getBookDescription("en");
 
         if (desc_en != null) {
             String text = desc_en.getXML().replace("<desc>", "")
                     .replace("</desc>", "");
-            check_field(SearchFields.DESCRIPTION_TEXT, SearchFieldType.ENGLISH,
+            check_field(WebsiteSearchFields.DESCRIPTION_TEXT, SearchFieldType.ENGLISH,
                     text, doc);
         }
 
@@ -232,7 +234,7 @@ public class LuceneMapperTest {
         if (desc_fr != null) {
             String text = desc_fr.getXML().replace("<desc>", "")
                     .replace("</desc>", "");
-            check_field(SearchFields.DESCRIPTION_TEXT, SearchFieldType.FRENCH,
+            check_field(WebsiteSearchFields.DESCRIPTION_TEXT, SearchFieldType.FRENCH,
                     text, doc);
         }
     }

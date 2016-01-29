@@ -24,7 +24,6 @@ import rosa.search.core.SearchUtil;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchField;
-import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
 
@@ -80,7 +79,7 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
         if (!query.toString().isEmpty()) {
             List<Query> searchQuery = new ArrayList<>();
             
-            for (SearchField luceneField : new SearchField[]{SearchFields.ANNOTATION_TEXT}) {
+            for (SearchField luceneField : new SearchField[]{AnnotationSearchFields.TEXT}) {
                 searchQuery.add(new Query(luceneField, query.toString().trim()));
             }
             
@@ -107,11 +106,11 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
         PresentationRequest req = iiifReq.objectId;
         switch (iiifReq.objectId.getType()) {
             case CANVAS:
-                top_query.add(new Query(SearchFields.IMAGE_NAME, getCanvasName(req)));
+                top_query.add(new Query(AnnotationSearchFields.IMAGE, getCanvasName(req)));
             case MANIFEST:
-                top_query.add(new Query(SearchFields.BOOK_ID, getManifestName(req)));
+                top_query.add(new Query(AnnotationSearchFields.BOOK, getManifestName(req)));
             case COLLECTION:
-                top_query.add(new Query(SearchFields.COLLECTION_ID, getCollectionName(req)));
+                top_query.add(new Query(AnnotationSearchFields.COLLECTION, getCollectionName(req)));
             default:
                 break;
         }
@@ -285,7 +284,7 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
             String field = contexts.get(i++);
             String context = contexts.get(i++);
             
-            if (!field.equals(SearchFields.ANNOTATION_TEXT.name())) {
+            if (!field.equals(AnnotationSearchFields.TEXT.name())) {
                 continue;
             }
             

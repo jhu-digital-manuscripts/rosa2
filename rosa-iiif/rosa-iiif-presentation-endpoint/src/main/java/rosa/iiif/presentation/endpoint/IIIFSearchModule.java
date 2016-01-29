@@ -9,6 +9,7 @@ import rosa.archive.core.Store;
 import rosa.iiif.presentation.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFRequestParser;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
+import rosa.iiif.presentation.core.search.AnnotationLuceneMapper;
 import rosa.iiif.presentation.core.search.IIIFLuceneSearchAdapter;
 import rosa.iiif.presentation.core.search.IIIFSearchRequestFormatter;
 import rosa.iiif.presentation.core.search.IIIFSearchService;
@@ -43,7 +44,7 @@ public class IIIFSearchModule extends ServletModule {
     @Provides
     protected SearchService provideLuceneSearchService(@Named("search.index.path") String indexPath)
             throws IOException {
-        return new LuceneSearchService(Paths.get(indexPath));
+        return new LuceneSearchService(Paths.get(indexPath), new AnnotationLuceneMapper());
     }
 
     @Provides

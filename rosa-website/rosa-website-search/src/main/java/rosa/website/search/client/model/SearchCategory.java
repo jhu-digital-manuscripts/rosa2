@@ -1,31 +1,29 @@
 package rosa.website.search.client.model;
 
-import rosa.search.model.SearchFields;
-
 /**
  * Represents a category by which a search can be restricted.
- * These categories map directly to {@link rosa.search.model.SearchFields} which
+ * These categories map directly to {@link WebsiteSearchFields} which
  * are used in the search service.
  *
  * Enum names come from the old rosa1 UserFields used in its Lucene search widget.
  */
 public enum SearchCategory {
-    POETRY(SearchFields.TRANSCRIPTION_TEXT),
-    RUBRIC(SearchFields.TRANSCRIPTION_RUBRIC),
-    ILLUSTRATION_TITLE(SearchFields.ILLUSTRATION_TITLE),
-    LECOY(SearchFields.TRANSCRIPTION_LECOY),
-    NOTE(SearchFields.TRANSCRIPTION_NOTE),
-    ILLUSTRATION_CHAR(SearchFields.ILLUSTRATION_CHAR),
-    ILLUSTRATION_KEYWORDS(SearchFields.ILLUSTRATION_KEYWORD),
-    DESCRIPTION(SearchFields.DESCRIPTION_TEXT),
-    IMAGE(SearchFields.IMAGE_NAME),
-    NARRATIVE_SECTION(SearchFields.NARRATIVE_SECTION_ID, SearchFields.NARRATIVE_SECTION_DESCRIPTION),
-    ALL(SearchFields.TRANSCRIPTION_TEXT, SearchFields.TRANSCRIPTION_RUBRIC, SearchFields.ILLUSTRATION_TITLE, SearchFields.TRANSCRIPTION_LECOY, SearchFields.TRANSCRIPTION_NOTE, SearchFields.ILLUSTRATION_CHAR,
-            SearchFields.ILLUSTRATION_KEYWORD, SearchFields.DESCRIPTION_TEXT, SearchFields.IMAGE_NAME, SearchFields.NARRATIVE_SECTION_ID, SearchFields.NARRATIVE_SECTION_DESCRIPTION);
+    POETRY(WebsiteSearchFields.TRANSCRIPTION_TEXT),
+    RUBRIC(WebsiteSearchFields.TRANSCRIPTION_RUBRIC),
+    ILLUSTRATION_TITLE(WebsiteSearchFields.ILLUSTRATION_TITLE),
+    LECOY(WebsiteSearchFields.TRANSCRIPTION_LECOY),
+    NOTE(WebsiteSearchFields.TRANSCRIPTION_NOTE),
+    ILLUSTRATION_CHAR(WebsiteSearchFields.ILLUSTRATION_CHAR),
+    ILLUSTRATION_KEYWORDS(WebsiteSearchFields.ILLUSTRATION_KEYWORD),
+    DESCRIPTION(WebsiteSearchFields.DESCRIPTION_TEXT),
+    IMAGE(WebsiteSearchFields.IMAGE_NAME),
+    NARRATIVE_SECTION(WebsiteSearchFields.NARRATIVE_SECTION_ID, WebsiteSearchFields.NARRATIVE_SECTION_DESCRIPTION),
+    ALL(WebsiteSearchFields.TRANSCRIPTION_TEXT, WebsiteSearchFields.TRANSCRIPTION_RUBRIC, WebsiteSearchFields.ILLUSTRATION_TITLE, WebsiteSearchFields.TRANSCRIPTION_LECOY, WebsiteSearchFields.TRANSCRIPTION_NOTE, WebsiteSearchFields.ILLUSTRATION_CHAR,
+            WebsiteSearchFields.ILLUSTRATION_KEYWORD, WebsiteSearchFields.DESCRIPTION_TEXT, WebsiteSearchFields.IMAGE_NAME, WebsiteSearchFields.NARRATIVE_SECTION_ID, WebsiteSearchFields.NARRATIVE_SECTION_DESCRIPTION);
 
-    private SearchFields[] fields;
+    private WebsiteSearchFields[] fields;
 
-    SearchCategory(SearchFields... fields) {
+    SearchCategory(WebsiteSearchFields... fields) {
         this.fields = fields;
     }
 
@@ -34,7 +32,7 @@ public enum SearchCategory {
      *
      * @return array of search fields
      */
-    public SearchFields[] getFields() {
+    public WebsiteSearchFields[] getFields() {
         return fields;
     }
 

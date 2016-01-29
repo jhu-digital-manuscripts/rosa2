@@ -1,22 +1,21 @@
-package rosa.search.core;
+package rosa.iiif.presentation.core.search;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+
 import rosa.archive.core.BaseArchiveTest;
+import rosa.search.core.LuceneSearchService;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
-import rosa.search.model.SearchField;
-import rosa.search.model.SearchFieldGroup;
-import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
 public class LuceneSearchAORDataTest extends BaseArchiveTest {
     private LuceneSearchService service;
@@ -28,7 +27,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
     public void setupArchiveStore() throws Exception {
         super.setupArchiveStore();
 
-        service = new LuceneSearchService(tmpfolder.newFolder().toPath());
+        service = new LuceneSearchService(tmpfolder.newFolder().toPath(), new AnnotationLuceneMapper());
         service.update(store, VALID_COLLECTION);
     }
 
@@ -42,7 +41,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
     @Test
     public void testSearchAORSymbol() throws Exception {
         {
-            Query query =  new Query(QueryOperation.AND, new Query(SearchFields.ANNOTATION_TEXT, "Sun"), new Query(SearchFields.TYPE, SearchFieldGroup.ANNOTATION_SYMBOL.name()));
+            Query query =  new Query(QueryOperation.AND, new Query(AnnotationSearchFields.TEXT, "Sun"), new Query(AnnotationSearchFields.TYPE, AnnotationType.SYMBOL.name()));
             SearchResult result = service.search(query, null);
 
             assertNotNull("Search result was NULL", result);
@@ -50,7 +49,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
         }
 
         {
-            Query query = new Query(SearchFields.ANNOTATION_TEXT, "Mars");
+            Query query = new Query(AnnotationSearchFields.TEXT, "Mars");
             SearchResult result = service.search(query, null);
 
             assertNotNull("Search results was NULL.", result);
@@ -66,7 +65,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
 
     @Test
     public void testSearchMarginaliaTranslation() throws Exception {
-        Query query = new Query(SearchFields.ANNOTATION_TEXT,
+        Query query = new Query(AnnotationSearchFields.TEXT,
                 "if you wish, you may command the citizens.");
         SearchResult result = service.search(query, null);
 
@@ -90,7 +89,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
 
     @Test
     public void testSearchIDQuery() throws Exception {
-        SearchResult result = service.search(new Query(SearchFields.ID, "valid;FolgersHa2;FolgersHa2.001r.tif"), null);
+        SearchResult result = service.search(new Query(AnnotationSearchFields.ID, "valid;FolgersHa2;FolgersHa2.001r.tif;FolgersHa2.001r.tif_marginalia_0"), null);
 
         assertNotNull("Result is NULL.", result);
         assertEquals("Unexpected number of results.", 1, result.getTotal());

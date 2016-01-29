@@ -28,7 +28,7 @@ import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.search.model.Query;
-import rosa.search.model.SearchFields;
+import rosa.search.model.SearchField;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
@@ -49,8 +49,8 @@ public class LuceneSearchService implements SearchService {
     private final LuceneMapper mapper;
     private final String lucene_id_field;
 
-    public LuceneSearchService(Path path) throws IOException {
-        this.mapper = new LuceneMapper();
+    public LuceneSearchService(Path path, LuceneMapper mapper) throws IOException {
+        this.mapper = mapper;
         this.dir = FSDirectory.open(path);
 
         // Create index if it does not exist
@@ -58,8 +58,11 @@ public class LuceneSearchService implements SearchService {
         }
 
         this.searcher_manager = new SearcherManager(dir, null);
-        this.lucene_id_field = mapper.getLuceneField(SearchFields.ID,
-                SearchFields.ID.getFieldTypes()[0]);
+        
+        SearchField id_field = mapper.getIdentifierSearchField();
+        
+        this.lucene_id_field = mapper.getLuceneField(id_field,
+                id_field.getFieldTypes()[0]);
     }
 
     private IndexWriter get_index_writer(boolean create) throws IOException {
@@ -229,7 +232,7 @@ public class LuceneSearchService implements SearchService {
         }
     }
 
-    public String getId(Document doc) {
+    private String get_id(Document doc) {
         return doc.get(lucene_id_field);
     }
 
@@ -264,8 +267,14 @@ public class LuceneSearchService implements SearchService {
 
                 logger.info("Updating index for: [" + collection_id + ":" + book_id + "]");
                 for (Document doc: mapper.createDocuments(col, book)) {
-                    writer.updateDocument(
-                            new Term(lucene_id_field, getId(doc)), doc);
+                    String id = get_id(doc);
+                    
+                    if (id == null) {
+                        logger.severe("Document does not have id: [" + collection_id + ":" + book_id + "]");
+                        continue;
+                    }
+                    
+                    writer.updateDocument(new Term(lucene_id_field, id), doc);
                 }
             }
 

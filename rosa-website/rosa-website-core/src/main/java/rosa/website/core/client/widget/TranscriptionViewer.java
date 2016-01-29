@@ -48,7 +48,7 @@ public class TranscriptionViewer {
      * @param transnames array of labels for the XML fragments
      * @param lecoy .
      * @return a Widget displaying the data
-     * @throws NullPointerException if {@param transxml} or if {@param transnames} is NULL
+     * @throws NullPointerException if transxml or if transnames is NULL
      */
     public static TabLayoutPanel createTranscriptionViewer(String[] transxml, final String[] transnames,
                                                            boolean lecoy) {

@@ -7,8 +7,10 @@ public class SortedListBox extends ListBox {
     private final boolean hasLabel;
 
     public SortedListBox(boolean isMultipleSelect, boolean hasLabel) {
-        super(isMultipleSelect);
+        super();
         this.hasLabel = hasLabel;
+        
+        setMultipleSelect(isMultipleSelect);
     }
 
     public void addItemSorted(String item, String value) {

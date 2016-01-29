@@ -1,4 +1,4 @@
-package rosa.search.core;
+package rosa.website.search;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -13,7 +13,6 @@ import static org.mockito.Mockito.when;
 
 import java.io.InputStream;
 import java.util.Arrays;
-import java.util.Map;
 
 import org.junit.After;
 import org.junit.Before;
@@ -24,21 +23,21 @@ import org.junit.rules.TemporaryFolder;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.core.Store;
 import rosa.archive.core.serialize.TranscriptionXmlSerializer;
-import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
-import rosa.archive.model.aor.AnnotatedPage;
+import rosa.search.core.LuceneSearchService;
+import rosa.search.core.SearchUtil;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
-import rosa.search.model.SearchFields;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
+import rosa.website.search.client.model.WebsiteSearchFields;
 
 /**
  * Evaluate service against test data from rosa-archive-core.
  */
-public class LuceneSearchServiceTest extends BaseArchiveTest {
+public class WebsiteLuceneSearchServiceTest extends BaseArchiveTest {
     private LuceneSearchService service;
 
     @Rule
@@ -48,7 +47,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
     public void setupArchiveStore() throws Exception {
         super.setupArchiveStore();
 
-        service = new LuceneSearchService(tmpfolder.newFolder().toPath());
+        service = new LuceneSearchService(tmpfolder.newFolder().toPath(), new WebsiteLuceneMapper());
     }
 
     @After
@@ -68,7 +67,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
 
         // Check that the book is not indexed
 
-        Query book_query = new Query(SearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7);
+        Query book_query = new Query(WebsiteSearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7);
 
         result = service.search(book_query, null);
         assertNotNull(result);
@@ -89,27 +88,16 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         int num_book1_images = book1.getImages().getImages().size();
 
         assertEquals(num_book1_images + 1, result.getTotal());
-
-        result = service.search(new Query(SearchFields.COLLECTION_ID,
+        
+        result = service.search(new Query(WebsiteSearchFields.COLLECTION_ID,
                 VALID_COLLECTION), new SearchOptions());
         assertNotNull(result);
 
         Book book2 = loadBook(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
-        int num_book2_image_refs = book2.getImages().getImages().size();
-        for (AnnotatedPage page : book2.getAnnotatedPages()) {
-            num_book2_image_refs +=
-                    page.getDrawings().size()
-                    + page.getMarginalia().size()
-                    + page.getUnderlines().size()
-                    + page.getSymbols().size()
-                    + page.getErrata().size()
-                    + page.getMarks().size()
-                    + page.getNumerals().size();
-        }
+        
+        int num_book2_images = book2.getImages().getImages().size();
 
-//        assertEquals(2 + num_book1_images + num_book2_images, result.getTotal());
-        // # images per book + a reference for each annotation
-        assertEquals(2 + num_book1_images + num_book2_image_refs, result.getTotal());
+        assertEquals(2 + num_book1_images + num_book2_images, result.getTotal());
     }
 
     @Test
@@ -117,14 +105,13 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         service.update(store, VALID_COLLECTION);
 
         // 1r should match all 1r folios including frontmatter and endmatter
-        SearchResult result = service.search(new Query(SearchFields.IMAGE_NAME,
+        SearchResult result = service.search(new Query(WebsiteSearchFields.IMAGE_NAME,
                 "1r"), null);
 
         assertNotNull(result);
-        assertEquals(48, result.getTotal());
-        assertEquals(30, result.getMatches().length);
+        assertEquals(6, result.getTotal());        
         assertEquals(0, result.getOffset());
-        assertNotNull(result.getResumeToken());
+        assertNull(result.getResumeToken());
 
         for (SearchMatch match: result.getMatches()) {
             String image = SearchUtil.getImageFromId(match.getId());
@@ -139,7 +126,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
     public void testSearchResume() throws Exception {
         service.update(store, VALID_COLLECTION);
 
-        Query query = new Query(SearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7);
+        Query query = new Query(WebsiteSearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7);
         Book book = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
         int num_book_images = book.getImages().getImages().size();
         int total_matches = num_book_images + 1;
@@ -190,7 +177,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
     public void testSearchResumeNoToken() throws Exception {
         service.update(store, VALID_COLLECTION);
 
-        Query query = new Query(SearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7);
+        Query query = new Query(WebsiteSearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7);
         Book book = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
         int num_book_images = book.getImages().getImages().size();
         int total_matches = num_book_images + 1;
@@ -249,7 +236,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         // Search only matches English
         {
             SearchResult result = service.search(new Query(
-                    SearchFields.DESCRIPTION_TEXT, "morocco"), null);
+                    WebsiteSearchFields.DESCRIPTION_TEXT, "morocco"), null);
 
             assertNotNull(result);
             assertEquals(1, result.getTotal());
@@ -263,14 +250,14 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
             String field = match.getContext().get(0);
             String context = match.getContext().get(1);
 
-            assertEquals(SearchFields.DESCRIPTION_TEXT.getFieldName(), field);
+            assertEquals(WebsiteSearchFields.DESCRIPTION_TEXT.getFieldName(), field);
             assertTrue(context.contains("morocco"));
         }
 
         // Search only matches French French
         {
             SearchResult result = service.search(new Query(
-                    SearchFields.DESCRIPTION_TEXT, "supprimée"), null);
+                    WebsiteSearchFields.DESCRIPTION_TEXT, "supprimée"), null);
 
             assertNotNull(result);
             assertEquals(1, result.getTotal());
@@ -284,7 +271,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
             String field = match.getContext().get(0);
             String context = match.getContext().get(1);
 
-            assertEquals(SearchFields.DESCRIPTION_TEXT.getFieldName(), field);
+            assertEquals(WebsiteSearchFields.DESCRIPTION_TEXT.getFieldName(), field);
             assertTrue(context.contains("supprimée"));
         }
 
@@ -295,8 +282,8 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         service.update(store, VALID_COLLECTION);
 
         SearchResult result = service.search(new Query(QueryOperation.AND,
-                new Query(SearchFields.ILLUSTRATION_CHAR, "Faim"), new Query(
-                        SearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7)), null);
+                new Query(WebsiteSearchFields.ILLUSTRATION_CHAR, "Faim"), new Query(
+                        WebsiteSearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7)), null);
 
         assertNotNull(result);
         assertEquals(1, result.getTotal());
@@ -312,9 +299,9 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
             String field = match.getContext().get(i++);
             String context = match.getContext().get(i++);
 
-            if (field.equals(SearchFields.BOOK_ID.getFieldName())) {
+            if (field.equals(WebsiteSearchFields.BOOK_ID.getFieldName())) {
                 assertTrue(context.contains(VALID_BOOK_LUDWIGXV7));
-            } else if (field.equals(SearchFields.ILLUSTRATION_CHAR
+            } else if (field.equals(WebsiteSearchFields.ILLUSTRATION_CHAR
                     .getFieldName())) {
                 assertTrue(context.contains("Faim"));
             } else {
@@ -328,7 +315,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         service.update(store, VALID_COLLECTION);
 
         SearchResult result = service.search(new Query(
-                SearchFields.COLLECTION_ID, "Moo"), null);
+                WebsiteSearchFields.COLLECTION_ID, "Moo"), null);
 
         assertNotNull(result);
         assertEquals(0, result.getTotal());
@@ -354,7 +341,7 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         service.update(store, VALID_COLLECTION);
 
         SearchResult result = service.search(
-                new Query(SearchFields.TRANSCRIPTION_TEXT, "Tout adés la ou il rendoit"),
+                new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, "Tout adés la ou il rendoit"),
                 null
         );
 
@@ -386,8 +373,8 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         {
             Query query = new Query(
                     QueryOperation.OR,
-                    new Query(SearchFields.BOOK_ID, "LudwigXV7"),
-                    new Query(SearchFields.TRANSCRIPTION_TEXT, "LudwigXV7")
+                    new Query(WebsiteSearchFields.BOOK_ID, "LudwigXV7"),
+                    new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, "LudwigXV7")
             );
             // Should match once for book, once for each image name
             SearchResult result = service.search(query, null);
@@ -400,8 +387,8 @@ public class LuceneSearchServiceTest extends BaseArchiveTest {
         {
             Query query = new Query(
                     QueryOperation.OR,
-                    new Query(SearchFields.BOOK_ID, "Tout adés la ou il rendoit"),
-                    new Query(SearchFields.TRANSCRIPTION_TEXT, "Tout adés la ou il rendoit")
+                    new Query(WebsiteSearchFields.BOOK_ID, "Tout adés la ou il rendoit"),
+                    new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, "Tout adés la ou il rendoit")
             );
             SearchResult result = service.search(query, null);
 

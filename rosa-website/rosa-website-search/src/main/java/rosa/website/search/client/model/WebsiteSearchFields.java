@@ -1,11 +1,15 @@
-package rosa.search.model;
+package rosa.website.search.client.model;
+
+
+import rosa.search.model.SearchField;
+import rosa.search.model.SearchFieldType;
 
 /**
  * Available search fields.
  */
 
 // TODO Doc each field.
-public enum SearchFields implements SearchField {
+public enum WebsiteSearchFields implements SearchField {
     ID(SearchFieldType.STRING),
     COLLECTION_ID(SearchFieldType.STRING),
     BOOK_ID(SearchFieldType.STRING),
@@ -19,19 +23,12 @@ public enum SearchFields implements SearchField {
     ILLUSTRATION_CHAR(SearchFieldType.OLD_FRENCH),
     ILLUSTRATION_KEYWORD(SearchFieldType.ENGLISH),
     NARRATIVE_SECTION_ID(SearchFieldType.STRING),
-    NARRATIVE_SECTION_DESCRIPTION(SearchFieldType.ENGLISH),
-    TYPE(SearchFieldType.STRING),
+    NARRATIVE_SECTION_DESCRIPTION(SearchFieldType.ENGLISH);
 
-    ANNOTATION_AUTHOR(SearchFieldType.STRING),
-    ANNOTATION_TARGET(SearchFieldType.STRING),
-    ANNOTATION_TEXT(SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.LATIN),
-    ANNOTATION_NOTE(SearchFieldType.ENGLISH),
-    ANNOTATION_HTML(SearchFieldType.STRING),
-    ANNOTATION_MOTIVATION(SearchFieldType.STRING),;
-    
+
     private final SearchFieldType[] types;
 
-    SearchFields(SearchFieldType... types) {
+    WebsiteSearchFields(SearchFieldType... types) {
         this.types = types;
     }
 

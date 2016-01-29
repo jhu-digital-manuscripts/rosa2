@@ -1,4 +1,4 @@
-package rosa.search.core;
+package rosa.website.search;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
