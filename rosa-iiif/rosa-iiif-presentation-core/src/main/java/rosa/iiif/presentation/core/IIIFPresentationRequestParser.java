@@ -7,7 +7,7 @@ import rosa.iiif.presentation.model.PresentationRequestType;
 /**
  * Parse a IIIF Presentation API according to the recommended URI patterns.
  */
-public class IIIFRequestParser {
+public class IIIFPresentationRequestParser {
     private PresentationRequestType parse_type(String keyword) {
         for (PresentationRequestType type : PresentationRequestType.values()) {
             if (type.getKeyword().equals(keyword)) {

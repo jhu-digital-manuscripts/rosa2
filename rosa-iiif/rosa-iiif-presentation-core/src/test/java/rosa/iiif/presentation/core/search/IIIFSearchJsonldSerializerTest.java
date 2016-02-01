@@ -18,7 +18,7 @@ import java.util.List;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 
-public class SearchJsonldSerializerTest {
+public class IIIFSearchJsonldSerializerTest {
     private IIIFSearchJsonldSerializer serializer;
 
     @Before

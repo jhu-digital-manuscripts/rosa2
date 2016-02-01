@@ -7,8 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import com.google.inject.Provides;
 import com.google.inject.TypeLiteral;
 import com.google.inject.multibindings.Multibinder;
+import com.google.inject.name.Named;
+import com.google.inject.name.Names;
+import com.google.inject.servlet.ServletModule;
+
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
@@ -17,12 +22,17 @@ import rosa.archive.core.StoreImpl;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
-import rosa.iiif.presentation.core.ArchiveIIIFService;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
-import rosa.iiif.presentation.core.IIIFService;
+import rosa.iiif.presentation.core.ArchiveIIIFPresentationService;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestParser;
+import rosa.iiif.presentation.core.IIIFPresentationService;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFSIImageIdMapper;
+import rosa.iiif.presentation.core.search.IIIFSearchService;
+import rosa.iiif.presentation.core.search.LuceneIIIFSearchService;
+import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
+import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
@@ -30,29 +40,23 @@ import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
 import rosa.iiif.presentation.core.transform.impl.LayerTransformer;
 import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
-import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
-
-import com.google.inject.Provides;
-import com.google.inject.name.Named;
-import com.google.inject.name.Names;
-import com.google.inject.servlet.ServletModule;
 import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
 import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
-import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 
 /**
  * The servlet is configured by iiif-servlet.properties.
  */
-public class IIIFServletModule extends ServletModule {
+public class IIIFPresentationServletModule extends ServletModule {
     private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
     private static final String FSI_SHARE_MAP_CONFIG_PATH = "/fsi-share-map.properties";
 
     @Override
     protected void configureServlets() {
         bind(ArchiveNameParser.class);
-
+        bind(IIIFPresentationRequestParser.class);
+        
         Multibinder<Transformer<?>> transformers = Multibinder.newSetBinder(binder(), new TypeLiteral<Transformer<?>>() {});
 
         bind(PresentationTransformer.class).to(PresentationTransformerImpl.class);
@@ -74,7 +78,7 @@ public class IIIFServletModule extends ServletModule {
         
         Names.bindProperties(binder(), loadProperties(SERVLET_CONFIG_PATH));
          
-        serve("/*").with(IIIFServlet.class);
+        serve("/*").with(IIIFPresentationServlet.class);
     }
 
     private Properties loadProperties(String path) {
@@ -90,7 +94,7 @@ public class IIIFServletModule extends ServletModule {
     }
 
     @Provides
-    protected Store provideStore(@Named("archive.path") String archive_path, SerializerSet serializers,
+    Store provideStore(@Named("archive.path") String archive_path, SerializerSet serializers,
             BookChecker bookChecker, BookCollectionChecker collectionChecker) {
         ByteStreamGroup base = new FSByteStreamGroup(Paths.get(archive_path));
         return new StoreImpl(serializers, bookChecker, collectionChecker, base);
@@ -98,7 +102,7 @@ public class IIIFServletModule extends ServletModule {
 
     @Provides
     @Named("fsi.share.map")
-    protected Map<String, String> provideImageAlises() {
+    Map<String, String> provideImageAlises() {
         Map<String, String> result = new HashMap<String, String>();
 
         Properties props = loadProperties(FSI_SHARE_MAP_CONFIG_PATH);
@@ -111,9 +115,9 @@ public class IIIFServletModule extends ServletModule {
     }
 
     @Provides
-    IIIFService providesIIIFService(Store store, PresentationSerializer jsonld_serializer,
+    IIIFPresentationService providesIIIFPresentationService(Store store, PresentationSerializer jsonld_serializer,
                                     PresentationTransformer transformer) {
-        return new ArchiveIIIFService(store, jsonld_serializer, transformer, 1000);
+        return new ArchiveIIIFPresentationService(store, jsonld_serializer, transformer, 1000);
     }
     
     @Provides
@@ -122,23 +126,25 @@ public class IIIFServletModule extends ServletModule {
     }
     
     @Provides @Named("formatter.presentation")
-    IIIFRequestFormatter providePresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme,
+    IIIFPresentationRequestFormatter provideIIIFPresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme,
                                                              @Named("iiif.pres.host") String host,
                                                              @Named("iiif.pres.prefix") String prefix,
                                                              @Named("iiif.pres.port") int port) {
-        return new IIIFRequestFormatter(scheme, host, prefix, port);
-    }
-
-    @Provides @Named("formatter.search")
-    IIIFRequestFormatter provideSearchRequestFormatter(@Named("iiif.search.scheme") String scheme,
-                                                       @Named("iiif.search.host") String host,
-                                                       @Named("iiif.search.prefix") String prefix,
-                                                       @Named("iiif.search.port") int port) {
-        return new IIIFRequestFormatter(scheme, host, prefix, port);
+        return new IIIFPresentationRequestFormatter(scheme, host, prefix, port);
     }
     
     @Provides
     rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme, @Named("iiif.image.host") String host, @Named("iiif.image.prefix") String prefix, @Named("iiif.image.port") int port) {
         return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
+    }
+    
+    @Provides
+    IIIFSearchService provideIIIFSearchService(@Named("iiif.pres.search.index") String index_path,
+            @Named("formatter.presentation") IIIFPresentationRequestFormatter requestFormatter) {
+        try {
+            return new LuceneIIIFSearchService(Paths.get(index_path), requestFormatter);
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to create LuceneIIIFSearchService", e);
+        }
     }
 }

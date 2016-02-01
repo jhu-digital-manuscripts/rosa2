@@ -16,6 +16,7 @@ import org.junit.Test;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
+import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
@@ -25,7 +26,6 @@ import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
 import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
-import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
@@ -33,8 +33,8 @@ import rosa.iiif.presentation.model.PresentationRequestType;
 /**
  * Evaluate service against test data from rosa-archive-core.
  */
-public class ArchiveIIIFServiceTest extends BaseArchiveTest {
-    private ArchiveIIIFService service;
+public class ArchiveIIIFPresentationServiceTest extends BaseArchiveTest {
+    private ArchiveIIIFPresentationService service;
 
     @Before
     public void setupArchiveStore() throws Exception {
@@ -49,8 +49,8 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         String image_prefix = "/image";
         String search_prefix = "/search";
 
-        IIIFRequestFormatter requestFormatter = new IIIFRequestFormatter(scheme, host, pres_prefix, port);
-        IIIFRequestFormatter searchFormatter = new IIIFRequestFormatter(scheme, host, search_prefix, port);
+        IIIFPresentationRequestFormatter requestFormatter = new IIIFPresentationRequestFormatter(scheme, host, pres_prefix, port);
+
         rosa.iiif.image.core.IIIFRequestFormatter imageFormatter = new rosa.iiif.image.core.IIIFRequestFormatter(
                 scheme, host, port, image_prefix);
         ImageIdMapper imageIdMapper = new JhuFSIImageIdMapper(new HashMap<String, String>());
@@ -64,7 +64,7 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         transformers.add(new AnnotationListTransformer(requestFormatter, annotationTransformer));
         transformers.add(canvasTransformer);
         transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(requestFormatter, sequenceTransformer, new RangeTransformer(requestFormatter), searchFormatter));
+        transformers.add(new ManifestTransformer(requestFormatter, sequenceTransformer, new RangeTransformer(requestFormatter)));
         transformers.add(new RangeTransformer(requestFormatter));
 
         TransformerSet transformerSet = new TransformerSet(transformers);
@@ -72,7 +72,7 @@ public class ArchiveIIIFServiceTest extends BaseArchiveTest {
         PresentationTransformer transformer = new PresentationTransformerImpl(requestFormatter, transformerSet,
                 collectionTransformer);
 
-        service = new ArchiveIIIFService(store, serializer, transformer, 1000);
+        service = new ArchiveIIIFPresentationService(store, serializer, transformer, 1000);
     }
     
     // TODO More extensive testing

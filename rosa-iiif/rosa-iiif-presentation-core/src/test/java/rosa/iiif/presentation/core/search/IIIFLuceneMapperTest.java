@@ -17,7 +17,10 @@ import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
 
-public class LuceneSearchAORDataTest extends BaseArchiveTest {
+/**
+ * Test IIIFLuceneMapper behavior when used by LuceneSearchService.
+ */
+public class IIIFLuceneMapperTest extends BaseArchiveTest {
     private LuceneSearchService service;
 
     @Rule
@@ -27,7 +30,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
     public void setupArchiveStore() throws Exception {
         super.setupArchiveStore();
 
-        service = new LuceneSearchService(tmpfolder.newFolder().toPath(), new AnnotationLuceneMapper());
+        service = new LuceneSearchService(tmpfolder.newFolder().toPath(), new IIIFSearchLuceneMapper());
         service.update(store, VALID_COLLECTION);
     }
 
@@ -41,7 +44,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
     @Test
     public void testSearchAORSymbol() throws Exception {
         {
-            Query query =  new Query(QueryOperation.AND, new Query(AnnotationSearchFields.TEXT, "Sun"), new Query(AnnotationSearchFields.TYPE, AnnotationType.SYMBOL.name()));
+            Query query =  new Query(QueryOperation.AND, new Query(IIIFSearchFields.TEXT, "Sun"), new Query(IIIFSearchFields.TYPE, IIIFSearchFieldType.SYMBOL.name()));
             SearchResult result = service.search(query, null);
 
             assertNotNull("Search result was NULL", result);
@@ -49,7 +52,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
         }
 
         {
-            Query query = new Query(AnnotationSearchFields.TEXT, "Mars");
+            Query query = new Query(IIIFSearchFields.TEXT, "Mars");
             SearchResult result = service.search(query, null);
 
             assertNotNull("Search results was NULL.", result);
@@ -65,7 +68,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
 
     @Test
     public void testSearchMarginaliaTranslation() throws Exception {
-        Query query = new Query(AnnotationSearchFields.TEXT,
+        Query query = new Query(IIIFSearchFields.TEXT,
                 "if you wish, you may command the citizens.");
         SearchResult result = service.search(query, null);
 
@@ -89,7 +92,7 @@ public class LuceneSearchAORDataTest extends BaseArchiveTest {
 
     @Test
     public void testSearchIDQuery() throws Exception {
-        SearchResult result = service.search(new Query(AnnotationSearchFields.ID, "valid;FolgersHa2;FolgersHa2.001r.tif;FolgersHa2.001r.tif_marginalia_0"), null);
+        SearchResult result = service.search(new Query(IIIFSearchFields.ID, "valid;FolgersHa2;FolgersHa2.001r.tif;FolgersHa2.001r.tif_marginalia_0"), null);
 
         assertNotNull("Result is NULL.", result);
         assertEquals("Unexpected number of results.", 1, result.getTotal());

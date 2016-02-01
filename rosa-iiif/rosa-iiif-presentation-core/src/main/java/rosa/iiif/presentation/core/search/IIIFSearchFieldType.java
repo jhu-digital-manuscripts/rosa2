@@ -1,5 +1,5 @@
 package rosa.iiif.presentation.core.search;
 
-public enum AnnotationType {
+public enum IIIFSearchFieldType {
     SYMBOL, MARK, UNDERLINE, MARGINALIA, DRAWING, ERRATA, NUMERAL
 }

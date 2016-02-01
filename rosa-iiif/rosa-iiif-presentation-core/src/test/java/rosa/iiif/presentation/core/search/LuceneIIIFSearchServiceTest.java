@@ -11,11 +11,12 @@ import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
 
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
-import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.search.IIIFSearchHit;
@@ -26,27 +27,75 @@ import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
 
-public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
-    private IIIFLuceneSearchAdapter adapter;
+public class LuceneIIIFSearchServiceTest extends BaseArchiveTest {
+
+    private LuceneIIIFSearchService service;
+
+    @Rule
+    public TemporaryFolder tmpfolder = new TemporaryFolder();
 
     @Before
-    public void setup() {
+    public void setup() throws Exception {
+        setupArchiveStore();
+
         String scheme = "http";
         String host = "serenity.dkc.jhu.edu";
         int port = 80;
         String pres_prefix = "/pres";
 
-        IIIFSearchRequestFormatter requestFormatter = new IIIFSearchRequestFormatter(scheme, host, pres_prefix, port);
+        IIIFPresentationRequestFormatter requestFormatter = new IIIFPresentationRequestFormatter(scheme, host, pres_prefix, port);
 
-        this.adapter = new IIIFLuceneSearchAdapter(new AnnotationTransformer(requestFormatter, new ArchiveNameParser()), store,
-                requestFormatter);
+        service = new LuceneIIIFSearchService(tmpfolder.newFolder().toPath(), requestFormatter);
+        service.update(store, VALID_COLLECTION);
+    }
+
+    /**
+     * Search for the term "Sun" in the test data. There should be 44 instances found,
+     * 40 of them from Symbols, 4 from Marginalia.
+     *
+     * @throws Exception
+     */
+    @Test
+    public void validCollectionSearchTest() throws Exception {
+        IIIFSearchResult result = service.search(new IIIFSearchRequest(
+                new PresentationRequest(null, VALID_COLLECTION, PresentationRequestType.COLLECTION), "Sun"));
+
+        assertNotNull("Result is NULL.", result);
+        assertEquals("Unexpected number of results found.", 44, result.getTotal());
+        assertEquals("Unexpected number of Hits found.", 44, result.getHits().length);
+
+        int marg_count = 0;
+        int symbol_count = 0;
+        for (IIIFSearchHit hit : result.getHits()) {
+            if (hit.annotations[0].contains("marginalia")) {
+                marg_count++;
+            } else if (hit.annotations[0].contains("symbol")) {
+                symbol_count++;
+            }
+        }
+
+        assertEquals("Unexpected number of symbols found.", 40, symbol_count);
+        assertEquals("Unexpected number of marginalia found.", 4, marg_count);
     }
 
     @Test
+    public void validFolgersPage4rSunTest() throws Exception {
+        IIIFSearchResult result = service.search(new IIIFSearchRequest(
+                new PresentationRequest("valid.FolgersHa2", "FolgersHa2.004r.tif", PresentationRequestType.CANVAS), "sun"
+        ));
+
+        assertNotNull("Result is NULL", result);
+        assertEquals("Unexpected number of results.", 4, result.getTotal());
+    }
+    
+    
+    // TODO redo these tests.
+    
+    @Test
     public void blankIiifToLuceneQueryTest() {
         IIIFSearchRequest request = new IIIFSearchRequest(mockRequest(), "");
-        Query result = adapter.iiifToLuceneQuery(request);
+        Query result = service.iiifToLuceneQuery(request);
 
         assertNotNull("Resulting Query obj was NULL.", result);
         Assert.assertEquals("Unexpected Query found.", expectedBlankQuery(), result);
@@ -55,7 +104,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
     @Test
     public void iiifToLuceneQueryTest() {
         IIIFSearchRequest request = new IIIFSearchRequest(mockRequest(), "Moo cow");
-        Query result = adapter.iiifToLuceneQuery(request);
+        Query result = service.iiifToLuceneQuery(request);
 
         assertNotNull("Resulting Lucene query was NULL.", result);
         Assert.assertEquals("Unexpected result found", expectedQuery(), result);
@@ -63,7 +112,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
     @Test
     public void luceneResultToIIIFTest() throws Exception {
-        IIIFSearchResult result = adapter.luceneResultToIIIF(mockSearchResult());
+        IIIFSearchResult result = service.luceneResultToIIIF(mockSearchResult());
 
         List<IIIFSearchHit> expected = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
@@ -78,7 +127,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
 
     @Test
     public void getContextHitsTest() {
-        List<String> testList = Arrays.asList(AnnotationSearchFields.TEXT.name(), "asdf <B>fdsa</B> <B>fdas</B> asdf", AnnotationSearchFields.TEXT.name(), "sfad <B>fdsa</B> JFIO <B>ifsa</B>");
+        List<String> testList = Arrays.asList(IIIFSearchFields.TEXT.name(), "asdf <B>fdsa</B> <B>fdas</B> asdf", IIIFSearchFields.TEXT.name(), "sfad <B>fdsa</B> JFIO <B>ifsa</B>");
 
         /*
             IIIFSearchHit{annotations=[null], matching='fdsa fdas', before='asdf ', after=' asdf'},
@@ -92,17 +141,13 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
                 new IIIFSearchHit(new String[] {"http://serenity.dkc.jhu.edu/pres/COLLECTION.BOOK/annotation/null"}, "ifsa", " JFIO ", "")
         );
 
-        System.err.println(expected);
-        System.err.println();
-        
-        List<IIIFSearchHit> hits = adapter.getContextHits(testList, "ID", "COLLECTION", "BOOK");
-        
-        System.err.println(hits);
+        List<IIIFSearchHit> hits = service.getContextHits(testList, "ID", "COLLECTION", "BOOK");
         
         assertNotNull("Hits is NULL.", hits);
         assertFalse("Hits is empty/contains no hits.", hits.isEmpty());
         assertEquals("Unexpected list of IIIFSearchHits found.", expected, hits);
     }
+
 
     /**
      * Create fake search results based on page: FolgersHa2.009r.tif
@@ -116,7 +161,7 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
         for (int i = 0; i < 4; i++) {
             matches.add(new SearchMatch(
                     "valid;FolgersHa2;FolgersHa2.009r.tif;FolgersHa2.009r.tif_symbol_" + i,
-                    Arrays.asList(AnnotationSearchFields.TEXT.name(), "asdf <B>fdsa</B> asdf", AnnotationSearchFields.TEXT.name(), "sfad <B>fdsa</B> JFIO ifsa I")
+                    Arrays.asList(IIIFSearchFields.TEXT.name(), "asdf <B>fdsa</B> asdf", IIIFSearchFields.TEXT.name(), "sfad <B>fdsa</B> JFIO ifsa I")
             ));
         }
 
@@ -126,9 +171,9 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
     private Query expectedBlankQuery() {
         return new Query(
                 QueryOperation.AND,
-                new Query(AnnotationSearchFields.IMAGE, "Bessy"),
-                new Query(AnnotationSearchFields.BOOK, "cow"),
-                new Query(AnnotationSearchFields.COLLECTION, "moo")
+                new Query(IIIFSearchFields.IMAGE, "Bessy"),
+                new Query(IIIFSearchFields.BOOK, "cow"),
+                new Query(IIIFSearchFields.COLLECTION, "moo")
         );
     }
 
@@ -140,17 +185,18 @@ public class IIIFLuceneSearchAdapterTest extends BaseArchiveTest {
         return new Query(
                 QueryOperation.AND,
                 allQuery("Moo cow"),
-                new Query(AnnotationSearchFields.IMAGE, "Bessy"),
-                new Query(AnnotationSearchFields.BOOK, "cow"),
-                new Query(AnnotationSearchFields.COLLECTION, "moo")
+                new Query(IIIFSearchFields.IMAGE, "Bessy"),
+                new Query(IIIFSearchFields.BOOK, "cow"),
+                new Query(IIIFSearchFields.COLLECTION, "moo")
         );
     }
 
     private Query allQuery(String term) {
         return new Query(
                 QueryOperation.OR,
-                new Query(AnnotationSearchFields.TEXT, term)
+                new Query(IIIFSearchFields.TEXT, term)
         );
     }
+    
 
 }

@@ -15,7 +15,7 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.archive.core.util.Annotations;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -34,7 +34,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     private ArchiveNameParser nameParser;
 
     @Inject
-    public AnnotationTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter,
+    public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
                                  ArchiveNameParser nameParser) {
         super(presRequestFormatter);
         this.nameParser = nameParser;

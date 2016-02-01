@@ -1,15 +1,17 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+import java.util.Arrays;
+
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
+
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.iiif.image.core.UriUtil;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.Canvas;
@@ -22,14 +24,12 @@ import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 
-import java.util.Arrays;
-
 public class CanvasTransformer extends BasePresentationTransformer implements Transformer<Canvas> {
     private ImageIdMapper idMapper;
     private rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter;
 
     @Inject
-    public CanvasTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter,
+    public CanvasTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
                              rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
                              ImageIdMapper idMapper) {
         super(presRequestFormatter);

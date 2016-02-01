@@ -2,7 +2,6 @@ package rosa.iiif.presentation.core;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.nio.file.NoSuchFileException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -27,14 +26,17 @@ import rosa.iiif.presentation.model.Sequence;
  * The IIIF presentation identifiers are "collection.book" where collection is
  * the name of a collection and book is an identifier of a book in the named
  * collection.
+ * 
+ * Objects are loaded from the archive and transformed into IIIF Presentation objects and then serialized.
+ * To improve performance some objects are cached in memory.
  */
-public class ArchiveIIIFService implements IIIFService {
+public class ArchiveIIIFPresentationService implements IIIFPresentationService {
     private final Store store;
     private final PresentationSerializer serializer;
     private final PresentationTransformer transformer;
     private final ConcurrentHashMap<String, Object> cache;
     private final int max_cache_size;
-
+    
     /**
      *
      * @param store the store to manipulate the archive
@@ -42,7 +44,7 @@ public class ArchiveIIIFService implements IIIFService {
      * @param transformer transformer to transform archive data to IIIF presentation data
      * @param max_cache_size max number of objects to cache at a time
      */
-    public ArchiveIIIFService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer, int max_cache_size) {
+    public ArchiveIIIFPresentationService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer, int max_cache_size) {
         this.store = store;
         this.serializer = jsonld_serializer;
         this.transformer = transformer;
@@ -322,26 +324,6 @@ public class ArchiveIIIFService implements IIIFService {
         serializer.write(list, os);
 
         return true;
-    }
-
-    private String get_annotation_list_page(String name) {
-        String[] parts = split_id(name);
-
-        if (parts == null) {
-            return null;
-        }
-
-        return parts[0];
-    }
-
-    private String get_annotation_list_id(String name) {
-        String[] parts = split_id(name);
-
-        if (parts == null) {
-            return null;
-        }
-
-        return parts[1];
     }
 
     private boolean handle_annotation(String id, String name, OutputStream os) {

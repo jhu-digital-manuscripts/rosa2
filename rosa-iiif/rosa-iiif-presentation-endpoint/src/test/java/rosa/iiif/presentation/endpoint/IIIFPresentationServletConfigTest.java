@@ -1,16 +1,16 @@
 package rosa.iiif.presentation.endpoint;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import rosa.iiif.presentation.core.IIIFService;
+import com.google.inject.Injector;
+
+import rosa.iiif.presentation.core.IIIFPresentationService;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 
-import com.google.inject.Injector;
-
-public class IIIFServletConfigTest {
+public class IIIFPresentationServletConfigTest {
 
     /**
      * Ensure that expected objects can be injected.
@@ -18,7 +18,7 @@ public class IIIFServletConfigTest {
      */
     @Test
     public void testInjection() {
-        Injector injector = new IIIFServletConfig().getInjector();
+        Injector injector = new IIIFPresentationServletConfig().getInjector();
 
         PresentationTransformerImpl trans = injector.getInstance(PresentationTransformerImpl.class);
         assertNotNull("Failed to inject presentation transformer.", trans);
@@ -26,10 +26,10 @@ public class IIIFServletConfigTest {
         AnnotationListTransformer listTrans = injector.getInstance(AnnotationListTransformer.class);
         assertNotNull("Failed to inject annotation list transformer.", listTrans);
         
-        IIIFService service = injector.getInstance(IIIFService.class);
+        IIIFPresentationService service = injector.getInstance(IIIFPresentationService.class);
         assertNotNull("Failed to inject IIIF Service.", service);
 
-        IIIFServlet servlet = injector.getInstance(IIIFServlet.class);
+        IIIFPresentationServlet servlet = injector.getInstance(IIIFPresentationServlet.class);
         assertNotNull("Failed to inject IIIF Servlet.", servlet);
     }
 }

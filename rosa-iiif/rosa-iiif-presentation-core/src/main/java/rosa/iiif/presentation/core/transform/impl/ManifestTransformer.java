@@ -1,11 +1,15 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
+
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Manifest;
@@ -16,23 +20,17 @@ import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class ManifestTransformer extends BasePresentationTransformer implements Transformer<Manifest> {
     private final SequenceTransformer sequenceTransformer;
     private final RangeTransformer rangeTransformer;
-    private final IIIFRequestFormatter searchUrlFormatter;
 
     @Inject
-    public ManifestTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter,
+    public ManifestTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
                                SequenceTransformer sequenceTransformer,
-                               RangeTransformer rangeTransformer,
-                               @Named("formatter.search") IIIFRequestFormatter searchUrlFormatter) {
+                               RangeTransformer rangeTransformer) {
         super(presRequestFormatter);
         this.sequenceTransformer = sequenceTransformer;
         this.rangeTransformer = rangeTransformer;
-        this.searchUrlFormatter = searchUrlFormatter;
     }
 
     @Override
@@ -92,7 +90,7 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         // Add search service
         manifest.setSearchService(new Service(
                 IIIF_SEARCH_CONTEXT,
-                searchUrlFormatter.format(
+                presRequestFormatter.format(
                         new PresentationRequest(
                                 collection.getId()+"."+book.getId(),
                                 null,

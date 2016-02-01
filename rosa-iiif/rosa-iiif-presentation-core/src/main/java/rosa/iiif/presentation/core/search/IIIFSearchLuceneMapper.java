@@ -29,16 +29,19 @@ import rosa.search.model.SearchField;
 import rosa.search.model.SearchFieldType;
 
 
-public class AnnotationLuceneMapper extends BaseLuceneMapper {
-    private static final Logger logger = Logger.getLogger(AnnotationLuceneMapper.class.toString());
+/**
+ * Index and create queries for data which becomes IIIF Presentation Annotations.
+ */
+public class IIIFSearchLuceneMapper extends BaseLuceneMapper {
+    private static final Logger logger = Logger.getLogger(IIIFSearchLuceneMapper.class.toString());
     
-    public AnnotationLuceneMapper() {
-        super(AnnotationSearchFields.values());
+    public IIIFSearchLuceneMapper() {
+        super(IIIFSearchFields.values());
     }
 
     @Override
     public SearchField getIdentifierSearchField() {
-        return AnnotationSearchFields.ID;
+        return IIIFSearchFields.ID;
     }
     
     /**
@@ -64,6 +67,8 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
             for (BookImage image : images.getImages()) {
                 // AoR transcription
                 index(col, book, image, book.getAnnotationPage(image.getId()), result);
+                
+                // TODO index other data
             }
         }
 
@@ -106,16 +111,6 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
         if (annotatedPage == null) {
             return;
         }
-
-        Document pageDoc = new Document();
-
-        addField(pageDoc, AnnotationSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image.getId()));
-        addField(pageDoc, AnnotationSearchFields.COLLECTION, col.getId());
-        addField(pageDoc, AnnotationSearchFields.BOOK, book.getId());
-        addField(pageDoc, AnnotationSearchFields.IMAGE, image.getName());
-        addField(pageDoc, AnnotationSearchFields.AUTHOR, annotatedPage.getReader());
-        addField(pageDoc, AnnotationSearchFields.TARGET, annotatedPage.getPagination());
-        addField(pageDoc, AnnotationSearchFields.TARGET, annotatedPage.getSignature());
 
         // Symbols
         for (Symbol s : annotatedPage.getSymbols()) {
@@ -164,12 +159,12 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
         }
         Document doc = new Document();
 
-        addField(doc, AnnotationSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, symbol.getId()));
-        addField(doc, AnnotationSearchFields.COLLECTION, col.getId());
-        addField(doc, AnnotationSearchFields.BOOK, book.getId());
-        addField(doc, AnnotationSearchFields.IMAGE, image);
-        addField(doc, AnnotationSearchFields.TEXT, SearchFieldType.ENGLISH, symbol.getName());
-        addField(doc, AnnotationSearchFields.TYPE, AnnotationType.SYMBOL.name());
+        addField(doc, IIIFSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, symbol.getId()));
+        addField(doc, IIIFSearchFields.COLLECTION, col.getId());
+        addField(doc, IIIFSearchFields.BOOK, book.getId());
+        addField(doc, IIIFSearchFields.IMAGE, image);
+        addField(doc, IIIFSearchFields.TEXT, SearchFieldType.ENGLISH, symbol.getName());
+        addField(doc, IIIFSearchFields.TYPE, IIIFSearchFieldType.SYMBOL.name());
 
         result.add(doc);
     }
@@ -181,12 +176,12 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
         }
         Document doc = new Document();
 
-        addField(doc, AnnotationSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, drawing.getId()));
-        addField(doc, AnnotationSearchFields.COLLECTION, col.getId());
-        addField(doc, AnnotationSearchFields.BOOK, book.getId());
-        addField(doc, AnnotationSearchFields.IMAGE, image);
-        addField(doc, AnnotationSearchFields.TEXT, SearchFieldType.ENGLISH, drawing.getName());
-                addField(doc, AnnotationSearchFields.TYPE, AnnotationType.DRAWING.name());
+        addField(doc, IIIFSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, drawing.getId()));
+        addField(doc, IIIFSearchFields.COLLECTION, col.getId());
+        addField(doc, IIIFSearchFields.BOOK, book.getId());
+        addField(doc, IIIFSearchFields.IMAGE, image);
+        addField(doc, IIIFSearchFields.TEXT, SearchFieldType.ENGLISH, drawing.getName());
+                addField(doc, IIIFSearchFields.TYPE, IIIFSearchFieldType.DRAWING.name());
 
         result.add(doc);
     }
@@ -198,12 +193,12 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
         }
         Document doc = new Document();
 
-        addField(doc, AnnotationSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, errata.getId()));
-        addField(doc, AnnotationSearchFields.COLLECTION, col.getId());
-        addField(doc, AnnotationSearchFields.BOOK, book.getId());
-        addField(doc, AnnotationSearchFields.IMAGE, image);
-        addField(doc, AnnotationSearchFields.TEXT, SearchFieldType.ENGLISH, errata.getAmendedText() + " " + errata.getCopyText());
-        addField(doc, AnnotationSearchFields.TYPE, AnnotationType.ERRATA.name());
+        addField(doc, IIIFSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, errata.getId()));
+        addField(doc, IIIFSearchFields.COLLECTION, col.getId());
+        addField(doc, IIIFSearchFields.BOOK, book.getId());
+        addField(doc, IIIFSearchFields.IMAGE, image);
+        addField(doc, IIIFSearchFields.TEXT, SearchFieldType.ENGLISH, errata.getAmendedText() + " " + errata.getCopyText());
+        addField(doc, IIIFSearchFields.TYPE, IIIFSearchFieldType.ERRATA.name());
 
         result.add(doc);
     }
@@ -215,12 +210,12 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
         }
         Document doc = new Document();
 
-        addField(doc, AnnotationSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, mark.getId()));
-        addField(doc, AnnotationSearchFields.COLLECTION, col.getId());
-        addField(doc, AnnotationSearchFields.BOOK, book.getId());
-        addField(doc, AnnotationSearchFields.IMAGE, image);
-        addField(doc, AnnotationSearchFields.TEXT, SearchFieldType.ENGLISH, mark.getName());
-        addField(doc, AnnotationSearchFields.TYPE, AnnotationType.MARK.name());
+        addField(doc, IIIFSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, mark.getId()));
+        addField(doc, IIIFSearchFields.COLLECTION, col.getId());
+        addField(doc, IIIFSearchFields.BOOK, book.getId());
+        addField(doc, IIIFSearchFields.IMAGE, image);
+        addField(doc, IIIFSearchFields.TEXT, SearchFieldType.ENGLISH, mark.getName());
+        addField(doc, IIIFSearchFields.TYPE, IIIFSearchFieldType.MARK.name());
 
         result.add(doc);
     }
@@ -232,15 +227,15 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
         }
         Document doc = new Document();
 
-        addField(doc, AnnotationSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, numeral.getId()));
-        addField(doc, AnnotationSearchFields.COLLECTION, col.getId());
-        addField(doc, AnnotationSearchFields.BOOK, book.getId());
-        addField(doc, AnnotationSearchFields.IMAGE, image);
+        addField(doc, IIIFSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, numeral.getId()));
+        addField(doc, IIIFSearchFields.COLLECTION, col.getId());
+        addField(doc, IIIFSearchFields.BOOK, book.getId());
+        addField(doc, IIIFSearchFields.IMAGE, image);
         
         // TODO Use correct lang
-        addField(doc, AnnotationSearchFields.TEXT, SearchFieldType.ENGLISH, numeral.getReferringText());
+        addField(doc, IIIFSearchFields.TEXT, SearchFieldType.ENGLISH, numeral.getReferringText());
         
-        addField(doc, AnnotationSearchFields.TYPE, AnnotationType.NUMERAL.name());
+        addField(doc, IIIFSearchFields.TYPE, IIIFSearchFieldType.NUMERAL.name());
 
         result.add(doc);
     }
@@ -252,15 +247,15 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
         }
         Document doc = new Document();
 
-        addField(doc, AnnotationSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, underline.getId()));
-        addField(doc, AnnotationSearchFields.COLLECTION, col.getId());
-        addField(doc, AnnotationSearchFields.BOOK, book.getId());
-        addField(doc, AnnotationSearchFields.IMAGE, image);
+        addField(doc, IIIFSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, underline.getId()));
+        addField(doc, IIIFSearchFields.COLLECTION, col.getId());
+        addField(doc, IIIFSearchFields.BOOK, book.getId());
+        addField(doc, IIIFSearchFields.IMAGE, image);
         
         // TODO User correct lang
-        addField(doc, AnnotationSearchFields.TEXT, SearchFieldType.ENGLISH, underline.getReferringText());
+        addField(doc, IIIFSearchFields.TEXT, SearchFieldType.ENGLISH, underline.getReferringText());
         
-        addField(doc, AnnotationSearchFields.TYPE, AnnotationType.UNDERLINE.name());
+        addField(doc, IIIFSearchFields.TYPE, IIIFSearchFieldType.UNDERLINE.name());
 
         result.add(doc);
     }
@@ -269,14 +264,14 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
                                          List<Document> result) {
         Document doc = new Document();
 
-        addField(doc, AnnotationSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, marg.getId()));
-        addField(doc, AnnotationSearchFields.COLLECTION, col.getId());
-        addField(doc, AnnotationSearchFields.BOOK, book.getId());
-        addField(doc, AnnotationSearchFields.IMAGE, image);
+        addField(doc, IIIFSearchFields.ID, SearchUtil.createId(col.getId(), book.getId(), image, marg.getId()));
+        addField(doc, IIIFSearchFields.COLLECTION, col.getId());
+        addField(doc, IIIFSearchFields.BOOK, book.getId());
+        addField(doc, IIIFSearchFields.IMAGE, image);
         
         if (!is_empty(marg.getReferringText())) {
             // TODO Use correct lang
-            addField(doc, AnnotationSearchFields.TEXT, SearchFieldType.ENGLISH, marg.getReferringText());
+            addField(doc, IIIFSearchFields.TEXT, SearchFieldType.ENGLISH, marg.getReferringText());
         }
 
         StringBuilder transcription = new StringBuilder();
@@ -308,15 +303,15 @@ public class AnnotationLuceneMapper extends BaseLuceneMapper {
         }
         
         if (transcription.length() > 0) {
-            addField(doc, AnnotationSearchFields.TEXT, marg_lang_type, transcription.toString());
+            addField(doc, IIIFSearchFields.TEXT, marg_lang_type, transcription.toString());
         }
         
         if (!is_empty(marg.getTranslation())) {
-            addField(doc, AnnotationSearchFields.TEXT, SearchFieldType.ENGLISH, marg.getTranslation());
+            addField(doc, IIIFSearchFields.TEXT, SearchFieldType.ENGLISH, marg.getTranslation());
         }
         
         if (notes.length() > 0) {
-            addField(doc, AnnotationSearchFields.NOTE, SearchFieldType.ENGLISH, notes.toString());
+            addField(doc, IIIFSearchFields.TEXT, SearchFieldType.ENGLISH, notes.toString());
         }
 
         result.add(doc);

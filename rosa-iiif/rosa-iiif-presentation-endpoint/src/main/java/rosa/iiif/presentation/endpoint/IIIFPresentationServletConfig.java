@@ -1,13 +1,14 @@
 package rosa.iiif.presentation.endpoint;
 
+import rosa.archive.core.ArchiveCoreModule;
+
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.servlet.GuiceServletContextListener;
-import rosa.archive.core.ArchiveCoreModule;
 
-public class IIIFSearchConfig extends GuiceServletContextListener {
+public class IIIFPresentationServletConfig extends GuiceServletContextListener {
     @Override
     protected Injector getInjector() {
-        return Guice.createInjector(new IIIFSearchModule(), new ArchiveCoreModule());
+        return Guice.createInjector(new ArchiveCoreModule(), new IIIFPresentationServletModule());
     }
 }

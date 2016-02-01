@@ -8,23 +8,19 @@ import rosa.search.model.SearchFieldType;
  */
 
 // TODO Doc each field.
-public enum AnnotationSearchFields implements SearchField {
+public enum IIIFSearchFields implements SearchField {
     ID(SearchFieldType.STRING),
     COLLECTION(SearchFieldType.STRING),
     BOOK(SearchFieldType.STRING),
     IMAGE(SearchFieldType.STRING),
     TYPE(SearchFieldType.STRING),
-    AUTHOR(SearchFieldType.STRING),
-    TARGET(SearchFieldType.STRING),
     TEXT(SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
-    NOTE(SearchFieldType.ENGLISH),
-    HTML_RENDER(SearchFieldType.STRING),
-    MOTIVATION(SearchFieldType.STRING);
+    HTML_RENDER(SearchFieldType.STRING);
     
     private final SearchFieldType[] types;
 
     
-    AnnotationSearchFields(SearchFieldType... types) {
+    IIIFSearchFields(SearchFieldType... types) {
         this.types = types;
     }
 

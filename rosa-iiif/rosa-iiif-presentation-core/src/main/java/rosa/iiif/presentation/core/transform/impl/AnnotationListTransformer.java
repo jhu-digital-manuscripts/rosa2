@@ -8,7 +8,7 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Marginalia;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.AnnotationListType;
@@ -22,7 +22,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
     private AnnotationTransformer annotationTransformer;
 
     @Inject
-    public AnnotationListTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter,
+    public AnnotationListTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
                                      AnnotationTransformer annotationTransformer) {
         super(presRequestFormatter);
         this.annotationTransformer = annotationTransformer;
