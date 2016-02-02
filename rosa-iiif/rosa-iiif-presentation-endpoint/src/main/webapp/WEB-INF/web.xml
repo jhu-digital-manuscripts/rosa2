@@ -10,7 +10,7 @@
   </filter-mapping>
   
   <listener>
-    <listener-class>rosa.iiif.presentation.endpoint.IIIFServletConfig</listener-class>
+    <listener-class>rosa.iiif.presentation.endpoint.IIIFPresentationServletConfig</listener-class>
   </listener>
 
 </web-app>
