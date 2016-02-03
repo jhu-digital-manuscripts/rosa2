@@ -14,8 +14,7 @@ public enum IIIFSearchFields implements SearchField {
     BOOK(SearchFieldType.STRING),
     IMAGE(SearchFieldType.STRING),
     TYPE(SearchFieldType.STRING),
-    TEXT(SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
-    HTML_RENDER(SearchFieldType.STRING);
+    TEXT(SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN);
     
     private final SearchFieldType[] types;
 
