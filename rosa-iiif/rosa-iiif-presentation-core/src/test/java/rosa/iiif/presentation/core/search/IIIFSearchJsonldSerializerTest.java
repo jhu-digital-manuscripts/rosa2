@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.search;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import rosa.iiif.presentation.core.search.IIIFSearchJsonldSerializer;
 import rosa.iiif.presentation.model.Reference;
@@ -18,6 +19,7 @@ import java.util.List;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 
+@Ignore
 public class IIIFSearchJsonldSerializerTest {
     private IIIFSearchJsonldSerializer serializer;
 

@@ -28,8 +28,8 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestParser;
 import rosa.iiif.presentation.core.IIIFPresentationService;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFSIImageIdMapper;
-import rosa.iiif.presentation.core.search.IIIFSearchService;
-import rosa.iiif.presentation.core.search.LuceneIIIFSearchService;
+import rosa.iiif.presentation.core.jhsearch.JHSearchService;
+import rosa.iiif.presentation.core.jhsearch.LuceneJHSearchService;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -139,10 +139,10 @@ public class IIIFPresentationServletModule extends ServletModule {
     }
     
     @Provides
-    IIIFSearchService provideIIIFSearchService(@Named("iiif.pres.search.index") String index_path,
+    JHSearchService provideJHSearchService(@Named("iiif.pres.search.index") String index_path,
             @Named("formatter.presentation") IIIFPresentationRequestFormatter requestFormatter) {
         try {
-            return new LuceneIIIFSearchService(Paths.get(index_path), requestFormatter);
+            return new LuceneJHSearchService(Paths.get(index_path), requestFormatter);
         } catch (IOException e) {
             throw new RuntimeException("Failed to create LuceneIIIFSearchService", e);
         }

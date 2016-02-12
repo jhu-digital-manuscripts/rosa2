@@ -3,8 +3,6 @@ package rosa.iiif.presentation.core;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import com.google.inject.Inject;
-
 import rosa.iiif.image.core.UriUtil;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
@@ -62,12 +60,11 @@ public class IIIFPresentationRequestFormatter {
         }
     }
     
-
-    // TODO Doesn't this need "/search" appended?
     public String format(IIIFSearchRequest request) {
         StringBuilder uri = new StringBuilder(format(request.objectId));
 
-        uri.append("?q=");
+        // TODO FIX
+        uri.append("/search?q=");
         uri.append(arrayToString(request.queryTerms));
 
         if (!arrayEmpty(request.motivations)) {

@@ -13,7 +13,6 @@ import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.annotation.Annotation;
-import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.search.IIIFSearchHit;
 import rosa.iiif.presentation.model.search.IIIFSearchRequest;
@@ -23,13 +22,12 @@ import rosa.search.core.LuceneSearchService;
 import rosa.search.core.SearchUtil;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
-import rosa.search.model.SearchField;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
 
 
-// TODO doc
+// TODO Incomplete. Needs refactoring, documentation, and more testing.
 
 public class LuceneIIIFSearchService extends LuceneSearchService implements IIIFSearchService, IIIFNames {
     private static final String[] IGNORED =  new String[] {"date", "user", "box"};
@@ -127,27 +125,32 @@ public class LuceneIIIFSearchService extends LuceneSearchService implements IIIF
      * @return a Lucene query
      */
     protected Query iiifToLuceneQuery(IIIFSearchRequest iiifReq) {
-        // This will generate independent queries for each word...
         List<Query> top_query = new ArrayList<>();
+        
+        // TODO Rethink and redo all query parsing.
+        
+        String query = String.join(" ", iiifReq.queryTerms);
 
-        StringBuilder query = new StringBuilder();
-        for (int i = 0; i < iiifReq.queryTerms.length; i++) {
-            if (i != 0) {
-                query.append(' ');
-            }
-            query.append(iiifReq.queryTerms[i]);
-        }
-
-        if (!query.toString().isEmpty()) {
-            List<Query> searchQuery = new ArrayList<>();
+        List<String> terms = new ArrayList<>();
+        
+        for (String part: query.split("&")) {
+            part = part.trim();
             
-            for (SearchField luceneField : new SearchField[]{IIIFSearchFields.TEXT}) {
-                searchQuery.add(new Query(luceneField, query.toString().trim()));
+            if (!part.isEmpty()) {
+                terms.add(part);
             }
-            
-            top_query.add(new Query(QueryOperation.OR, searchQuery.toArray(new Query[searchQuery.size()])));
         }
-
+        
+        Query text_query = new Query(QueryOperation.AND, new Query[terms.size()]);
+        
+        for (int i = 0; i < terms.size(); i++) {
+            text_query.children()[i] = new Query(IIIFSearchFields.TEXT, terms.get(i));
+        }
+        
+        top_query.add(text_query);
+        
+        // TODO Handle not having viable search
+        
         /*
             Here, the rest of the parameters would be added to the query (motivation, date, user, box).
 
@@ -166,18 +169,23 @@ public class LuceneIIIFSearchService extends LuceneSearchService implements IIIF
 
         // Restrict query based on requested object
         PresentationRequest req = iiifReq.objectId;
+        
         switch (iiifReq.objectId.getType()) {
             case CANVAS:
                 top_query.add(new Query(IIIFSearchFields.IMAGE, getCanvasName(req)));
             case MANIFEST:
                 top_query.add(new Query(IIIFSearchFields.BOOK, getManifestName(req)));
+                break;
             case COLLECTION:
                 top_query.add(new Query(IIIFSearchFields.COLLECTION, getCollectionName(req)));
+                break;
             default:
                 break;
         }
 
-        return new Query(QueryOperation.AND, top_query.toArray(new Query[top_query.size()]));
+        Query result = new Query(QueryOperation.AND, top_query.toArray(new Query[]{}));
+        
+        return result;
     }
 
     /**
@@ -220,32 +228,25 @@ public class LuceneIIIFSearchService extends LuceneSearchService implements IIIF
             String canvas_id = gen_uri(collection_id, book_id, getImageId(matchId), PresentationRequestType.CANVAS);
             String manifest_id = gen_uri(collection_id, book_id, null, PresentationRequestType.MANIFEST);
             
-            // TODO Need human readable text for label?
-            Reference manifest_ref = new Reference(manifest_id, new TextValue(book_id, "en"), SC_MANIFEST); 
+            // TODO Use new facility for returning field values in match
+            // String[] labels = lookup(match, IIIFSearchFields.LABEL, IIIFSearchFields.TARGET_LABEL);
+            
+            // Reference manifest_ref = new Reference(manifest_id, new TextValue(labels[1], "en"), SC_MANIFEST); 
             
             Annotation anno = new Annotation();
             
             anno.setId(annotation_id);
             anno.setType(IIIFNames.OA_ANNOTATION);
             anno.setMotivation(IIIFNames.SC_PAINTING);
-
-            // TODO User friendly label.
-            anno.setLabel(annotation_id, "en");
+            
+            // anno.setLabel(labels[0], "en");
             
             AnnotationTarget target = new AnnotationTarget();
+            
             target.setUri(canvas_id);
-            target.setParentRef(manifest_ref);            
+            // target.setParentRef(manifest_ref);            
             
             anno.setDefaultTarget(target);
-
-            // TODO Needed? Get from search service with new method? Just use match context?
-            String html = "";
-                    
-            anno.setDefaultSource(new AnnotationSource(
-                    "URI", IIIFNames.DC_TEXT, "text/html",
-                    html,
-                    "en")
-            );
             
             annotations.add(anno);
             

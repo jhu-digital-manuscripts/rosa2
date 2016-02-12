@@ -6,7 +6,7 @@ import rosa.archive.core.Store;
 import rosa.iiif.presentation.model.search.IIIFSearchRequest;
 import rosa.iiif.presentation.model.search.IIIFSearchResult;
 
-// TODO doc
+// TODO doc, combine with presentation service?
 public interface IIIFSearchService {
     IIIFSearchResult search(IIIFSearchRequest request) throws IOException;
     
