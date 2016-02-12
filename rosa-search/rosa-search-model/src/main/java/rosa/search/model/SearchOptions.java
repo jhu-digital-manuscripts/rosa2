@@ -17,7 +17,7 @@ import java.io.Serializable;
  */
 public class SearchOptions implements Serializable {
     private static final long serialVersionUID = 1L;
-    private static final int DEFAULT_MAX_MATCHES = 30;
+    private static final int DEFAULT_MATCH_COUNT = 30;
 
     private long offset;
     private int match_count;
@@ -25,7 +25,7 @@ public class SearchOptions implements Serializable {
 
     public SearchOptions() {
         this.offset = 0;
-        this.match_count = DEFAULT_MAX_MATCHES;
+        this.match_count = DEFAULT_MATCH_COUNT;
     }
 
     public SearchOptions(long offset, int match_count, String resume_token) {
@@ -57,7 +57,7 @@ public class SearchOptions implements Serializable {
 
     public void setMatchCount(int matches) {
         if (matches < 0) {
-            matches = 0;
+            matches = DEFAULT_MATCH_COUNT;
         }
 
         this.match_count = matches;

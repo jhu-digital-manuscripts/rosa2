@@ -26,7 +26,7 @@ public interface SearchService {
      * @throws IOException
      */
     SearchResult search(Query query, SearchOptions opts) throws IOException;
-
+    
     /**
      * Index the collection indicated. Existing content in the index with same
      * identifier will be replaced.

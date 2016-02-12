@@ -6,21 +6,25 @@ import java.util.List;
 /**
  * Represents the match of an object in an index against a query. The optional
  * context of the match is a list of search field name, html pairs. The html
- * contains formatted text that matched the query.
+ * contains formatted text that matched the query. The values array contains
+ * search field name, search field value pairs for the document which matched
+ * the object.
  */
 public class SearchMatch implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String id;
     private List<String> context;
+    private List<String> values;
 
     public SearchMatch() {
-        this(null, null);
+        this(null, null, null);
     }
 
-    public SearchMatch(String id, List<String> context) {
+    public SearchMatch(String id, List<String> context, List<String> values) {
         this.id = id;
         this.context = context;
+        this.values = values;
     }
 
     public String getId() {
@@ -29,6 +33,10 @@ public class SearchMatch implements Serializable {
 
     public List<String> getContext() {
         return context;
+    }
+    
+    public List<String> getValues() {
+        return values;
     }
 
     @Override
@@ -41,7 +49,9 @@ public class SearchMatch implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((context == null) ? 0 : context.hashCode());
+        result = prime * result + ((values == null) ? 0 : values.hashCode());
         result = prime * result + ((id == null) ? 0 : id.hashCode());
+
         return result;
     }
 
@@ -59,6 +69,11 @@ public class SearchMatch implements Serializable {
                 return false;
         } else if (!context.equals(other.context))
             return false;
+        if (values == null) {
+            if (other.values != null)
+                return false;
+        } else if (!values.equals(other.values))
+            return false;        
         if (id == null) {
             if (other.id != null)
                 return false;

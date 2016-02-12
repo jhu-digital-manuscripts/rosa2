@@ -12,7 +12,6 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.IndexWriterConfig.OpenMode;
-import org.apache.lucene.index.IndexableField;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.ScoreDoc;
@@ -33,16 +32,12 @@ import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
 
-// TODO Where/how/if to deal with things like character variants and spelling variants?// 
-
 /**
- * 
- * 
- *
+ * Implementation of the search service using Lucene. It relies on the LuceneMapper abstraction to handle
+ * some of the details of creating lucene queries and indexing.
  */
 public class LuceneSearchService implements SearchService {
-    private final static Logger logger = Logger
-            .getLogger(LuceneSearchService.class.getName());
+    private final static Logger logger = Logger.getLogger(LuceneSearchService.class.getName());
 
     private final Directory dir;
     private final SearcherManager searcher_manager;
@@ -58,11 +53,10 @@ public class LuceneSearchService implements SearchService {
         }
 
         this.searcher_manager = new SearcherManager(dir, null);
-        
+
         SearchField id_field = mapper.getIdentifierSearchField();
-        
-        this.lucene_id_field = mapper.getLuceneField(id_field,
-                id_field.getFieldTypes()[0]);
+
+        this.lucene_id_field = mapper.getLuceneField(id_field, id_field.getFieldTypes()[0]);
     }
 
     private IndexWriter get_index_writer(boolean create) throws IOException {
@@ -83,8 +77,7 @@ public class LuceneSearchService implements SearchService {
         if (last == null) {
             return null;
         } else {
-            return String.valueOf(last.doc) + "," + String.valueOf(last.score)
-                    + "," + String.valueOf(last.shardIndex);
+            return String.valueOf(last.doc) + "," + String.valueOf(last.score) + "," + String.valueOf(last.shardIndex);
         }
     }
 
@@ -106,19 +99,17 @@ public class LuceneSearchService implements SearchService {
         }
     }
 
-    private List<String> get_match_context(Highlighter hilighter, Document doc,
-            Set<String> q_fields) throws IOException {
+    private List<String> get_match_context(Highlighter hilighter, Document doc, Set<String> context_fields)
+            throws IOException {
         List<String> context = new ArrayList<>();
 
-        for (IndexableField field: doc) {
-            if (field.fieldType().stored() && q_fields.contains(field.name())) {
+        for (String lucene_field : context_fields) {
+            for (String value : doc.getValues(lucene_field)) {
                 try {
-                    String s = hilighter.getBestFragment(mapper.getAnalyzer(),
-                            field.name(), field.stringValue());
+                    String s = hilighter.getBestFragment(mapper.getAnalyzer(), lucene_field, value);
 
                     if (s != null) {
-                        context.add(mapper
-                                .getSearchFieldNameFromLuceneField(field.name()));
+                        context.add(mapper.getSearchFieldNameFromLuceneField(lucene_field));
                         context.add(s);
                     }
                 } catch (InvalidTokenOffsetsException e) {
@@ -131,8 +122,7 @@ public class LuceneSearchService implements SearchService {
     }
 
     @Override
-    public SearchResult search(Query query, SearchOptions opts)
-            throws IOException {
+    public SearchResult search(Query query, SearchOptions opts) throws IOException {
         searcher_manager.maybeRefresh();
 
         IndexSearcher searcher = searcher_manager.acquire();
@@ -140,6 +130,11 @@ public class LuceneSearchService implements SearchService {
         try {
             org.apache.lucene.search.Query q = mapper.createLuceneQuery(query);
 
+            if (q == null) {
+                // TODO Throw invalid argument exception?
+                return new SearchResult();
+            }
+            
             if (opts == null) {
                 opts = new SearchOptions();
             }
@@ -160,8 +155,7 @@ public class LuceneSearchService implements SearchService {
                     // TODO Do multiple small searches instead?
 
                     if (offset > Integer.MAX_VALUE) {
-                        throw new IllegalStateException("Offset too large: "
-                                + offset);
+                        throw new IllegalStateException("Offset too large: " + offset);
                     }
 
                     hits = searcher.search(q, (int) offset + opts.getMatchCount());
@@ -171,8 +165,7 @@ public class LuceneSearchService implements SearchService {
                 ScoreDoc after = parse_resume_token(resume_token);
 
                 if (after == null) {
-                    throw new IllegalArgumentException("Invalid resume token: "
-                            + opts.getResumeToken());
+                    throw new IllegalArgumentException("Invalid resume token: " + opts.getResumeToken());
                 }
 
                 hits = searcher.searchAfter(after, q, opts.getMatchCount());
@@ -181,20 +174,21 @@ public class LuceneSearchService implements SearchService {
 
             Highlighter hilighter = new Highlighter(new QueryScorer(q));
 
-            Set<String> q_fields = mapper.getLuceneFields(query);
+            Set<String> query_context_fields = mapper.getLuceneContextFields(query);
 
-            SearchMatch[] matches = new SearchMatch[hits.scoreDocs.length
-                    - hits_offset];
+            SearchMatch[] matches = new SearchMatch[hits.scoreDocs.length - hits_offset];
 
             for (int i = hits_offset; i < hits.scoreDocs.length; i++) {
-                Document doc = searcher.doc(hits.scoreDocs[i].doc);
+                int doc_id = hits.scoreDocs[i].doc;
+
+                Document doc = searcher.doc(doc_id);
 
                 String id = doc.get(lucene_id_field);
 
-                List<String> context = get_match_context(hilighter, doc,
-                        q_fields);
+                List<String> context = get_match_context(hilighter, doc, query_context_fields);
+                List<String> values = get_match_values(doc);
 
-                matches[i - hits_offset] = new SearchMatch(id, context);
+                matches[i - hits_offset] = new SearchMatch(id, context, values);
             }
 
             ScoreDoc last;
@@ -208,10 +202,25 @@ public class LuceneSearchService implements SearchService {
 
             resume_token = create_resume_token(last);
 
-            return new SearchResult(offset, total, matches, resume_token);
+            return new SearchResult(offset, total, matches, resume_token, q.toString());
         } finally {
             searcher_manager.release(searcher);
         }
+    }
+
+    private List<String> get_match_values(Document doc) {
+        List<String> values = new ArrayList<>();
+
+        for (SearchField sf : mapper.getIncludeValueSearchFields()) {
+            String lucene_field = mapper.getLuceneField(sf, sf.getFieldTypes()[0]);
+
+            for (String value : doc.getValues(lucene_field)) {
+                values.add(sf.getFieldName());
+                values.add(value);
+            }
+        }
+
+        return values;
     }
 
     @Override
@@ -227,8 +236,7 @@ public class LuceneSearchService implements SearchService {
         try {
             searcher_manager.close();
         } catch (IOException e) {
-            logger.log(Level.WARNING,
-                    "Error shutting down LuceneSearchService", e);
+            logger.log(Level.WARNING, "Error shutting down LuceneSearchService", e);
         }
     }
 
@@ -241,18 +249,17 @@ public class LuceneSearchService implements SearchService {
         try (IndexWriter writer = get_index_writer(false)) {
             List<String> errors = new ArrayList<>();
 
-            BookCollection col = store
-                    .loadBookCollection(collection_id, errors);
+            BookCollection col = store.loadBookCollection(collection_id, errors);
 
             if (errors.size() > 0) {
                 logger.warning("Errors loading collection: " + collection_id);
 
-                for (String error: errors) {
+                for (String error : errors) {
                     logger.warning("  " + error);
                 }
             }
 
-            for (String book_id: col.books()) {
+            for (String book_id : col.books()) {
                 errors.clear();
 
                 Book book = store.loadBook(col, book_id, errors);
@@ -260,20 +267,20 @@ public class LuceneSearchService implements SearchService {
                 if (errors.size() > 0) {
                     logger.warning("Errors loading book: " + book_id);
 
-                    for (String error: errors) {
+                    for (String error : errors) {
                         logger.warning("  " + error);
                     }
                 }
 
                 logger.info("Updating index for: [" + collection_id + ":" + book_id + "]");
-                for (Document doc: mapper.createDocuments(col, book)) {
+                for (Document doc : mapper.createDocuments(col, book)) {
                     String id = get_id(doc);
-                    
+
                     if (id == null) {
                         logger.severe("Document does not have id: [" + collection_id + ":" + book_id + "]");
                         continue;
                     }
-                    
+
                     writer.updateDocument(new Term(lucene_id_field, id), doc);
                 }
             }
