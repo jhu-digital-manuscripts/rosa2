@@ -1,6 +1,6 @@
 package rosa.iiif.presentation.core.transform.impl;
 
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
@@ -18,9 +18,9 @@ public abstract class BasePresentationTransformer implements IIIFNames {
     protected static final String IMAGE_RANGE_TYPE = "image";
     protected static final String TEXT_RANGE_TYPE = "text";
 
-    protected IIIFRequestFormatter presRequestFormatter;
+    protected IIIFPresentationRequestFormatter presRequestFormatter;
 
-    public BasePresentationTransformer(IIIFRequestFormatter presRequestFormatter) {
+    public BasePresentationTransformer(IIIFPresentationRequestFormatter presRequestFormatter) {
         this.presRequestFormatter = presRequestFormatter;
     }
 

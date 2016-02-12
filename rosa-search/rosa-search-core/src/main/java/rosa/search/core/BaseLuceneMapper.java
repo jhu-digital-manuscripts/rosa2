@@ -1,7 +1,9 @@
 package rosa.search.core;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
@@ -25,11 +27,11 @@ import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexableField;
 import org.apache.lucene.index.Term;
+import org.apache.lucene.queryparser.simple.SimpleQueryParser;
 import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
-import org.apache.lucene.util.QueryBuilder;
 
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
@@ -41,7 +43,6 @@ import rosa.search.model.SearchFieldType;
  * Lucene queries.
  */
 public abstract class BaseLuceneMapper implements LuceneMapper {
-
     private final Analyzer english_analyzer;
     private final Analyzer french_analyzer;
     private final Analyzer italian_analyzer;
@@ -52,15 +53,17 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     private final Analyzer string_analyzer;
     private final Analyzer main_analyzer;
 
-    // TODO No special handling for old french spelling or character name variants
+    // TODO No special handling for old french spelling or character name
+    // variants
 
     // Lucene field name -> search field type
     private final Map<String, SearchFieldType> lucene_field_map;
 
     // Search field name -> search field
     private final Map<String, SearchField> search_field_map;
+    private final List<SearchField> included_search_fields;
+    private final List<SearchField> context_search_fields;
 
-    
     public BaseLuceneMapper(SearchField... fields) {
         this.english_analyzer = new EnglishAnalyzer();
         this.french_analyzer = new FrenchAnalyzer();
@@ -68,10 +71,10 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         this.italian_analyzer = new ItalianAnalyzer();
         this.spanish_analyzer = new SpanishAnalyzer();
         this.string_analyzer = new WhitespaceAnalyzer();
-        
+
         // TODO Wrong. At least do latin stopwords.
         this.latin_analyzer = new StandardAnalyzer();
-        
+
         // Tokenizes on spaces and . while removing excess 0's
         // TODO r/v?
         this.imagename_analyzer = new Analyzer() {
@@ -91,10 +94,10 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
 
         Map<String, Analyzer> analyzer_map = new HashMap<>();
 
-        for (SearchField sf: fields) {
+        for (SearchField sf : fields) {
             search_field_map.put(sf.getFieldName(), sf);
 
-            for (SearchFieldType type: sf.getFieldTypes()) {
+            for (SearchFieldType type : sf.getFieldTypes()) {
                 String lucene_field = getLuceneField(sf, type);
 
                 lucene_field_map.put(lucene_field, type);
@@ -102,8 +105,20 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
             }
         }
 
-        this.main_analyzer = new PerFieldAnalyzerWrapper(string_analyzer,
-                analyzer_map);
+        this.main_analyzer = new PerFieldAnalyzerWrapper(string_analyzer, analyzer_map);
+
+        this.included_search_fields = new ArrayList<>();
+        this.context_search_fields = new ArrayList<>();
+
+        for (SearchField sf : fields) {
+            if (sf.includeValue()) {
+                included_search_fields.add(sf);
+            }
+
+            if (sf.isContext()) {
+                context_search_fields.add(sf);
+            }
+        }
     }
 
     public String getLuceneField(SearchField sf, SearchFieldType type) {
@@ -142,11 +157,14 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     public Query createLuceneQuery(rosa.search.model.Query query) {
         if (query.isOperation()) {
             BooleanQuery result = new BooleanQuery();
-            Occur occur = query.getOperation() == QueryOperation.AND ? Occur.MUST
-                    : Occur.SHOULD;
+            Occur occur = query.getOperation() == QueryOperation.AND ? Occur.MUST : Occur.SHOULD;
 
-            for (rosa.search.model.Query kid: query.children()) {
-                result.add(createLuceneQuery(kid), occur);
+            for (rosa.search.model.Query kid : query.children()) {
+                Query kid_query = createLuceneQuery(kid);
+
+                if (kid_query != null) {
+                    result.add(kid_query, occur);
+                }
             }
 
             return result;
@@ -155,21 +173,45 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         }
     }
 
+    @Override
+    public Query createLuceneQuery(String query) {
+        try {
+            return createLuceneQuery(QueryParser.parseQuery(query));
+        } catch (ParseException e) {
+        }
+
+        BooleanQuery result = new BooleanQuery();
+
+        for (SearchField sf : context_search_fields) {
+            for (SearchFieldType type : sf.getFieldTypes()) {
+                Query q = create_lucene_query(sf, type, query);
+
+                if (q != null) {
+                    result.add(q, Occur.SHOULD);
+                }
+            }
+        }
+
+        return result;
+    }
+
     private Query create_lucene_query(QueryTerm term) {
+        if (term == null) {
+            return null;
+        }
+        
         SearchField sf = search_field_map.get(term.getField());
 
         if (sf == null) {
-            // TODO
             return null;
         }
 
         if (sf.getFieldTypes().length == 1) {
-            return create_lucene_query(sf, sf.getFieldTypes()[0],
-                    term.getValue());
+            return create_lucene_query(sf, sf.getFieldTypes()[0], term.getValue());
         } else {
             BooleanQuery query = new BooleanQuery();
 
-            for (SearchFieldType type: sf.getFieldTypes()) {
+            for (SearchFieldType type : sf.getFieldTypes()) {
                 Query q = create_lucene_query(sf, type, term.getValue());
 
                 if (q != null) {
@@ -181,60 +223,50 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         }
     }
 
-    // TODO Consider using SimpleQueryParser so fuzzy searchers etc are
-    // supported?
-
-    private Query create_lucene_query(SearchField sf, SearchFieldType type,
-            String query) {
+    private Query create_lucene_query(SearchField sf, SearchFieldType type, String query) {
         String lucene_field = getLuceneField(sf, type);
-        QueryBuilder builder = new QueryBuilder(main_analyzer);
 
-        switch (type) {
-        case ENGLISH:
-            return builder.createPhraseQuery(lucene_field, query);
-        case FRENCH:
-            return builder.createPhraseQuery(lucene_field, query);
-        case IMAGE_NAME:
-            return builder.createPhraseQuery(lucene_field, query);
-        case OLD_FRENCH:
-            return builder.createPhraseQuery(lucene_field, query);
-        case STRING:
-            // Cannot do a phrase search on a String field.
+        SimpleQueryParser parser = new SimpleQueryParser(main_analyzer, lucene_field);
+
+        if (type == SearchFieldType.STRING) {
             return new TermQuery(new Term(lucene_field, query));
-        default:
-            return null;
+        } else {
+            return parser.parse(query);
         }
     }
 
-    // TODO Only use this when we do not know the language!!    
-    protected void addField(Document doc, SearchField sf, String value) {
-        for (SearchFieldType type: sf.getFieldTypes()) {
-            doc.add(create_field(getLuceneField(sf, type), type, value));
+    protected void addField(Document doc, SearchField sf, SearchFieldType type, String value) {
+        if (value == null) {
+            return;
         }
-    }
 
-    protected void addField(Document doc, SearchField sf, SearchFieldType type,
-            String value) {
+        value = value.trim();
+
+        if (value.isEmpty()) {
+            return;
+        }
+
         doc.add(create_field(getLuceneField(sf, type), type, value));
     }
 
-    private IndexableField create_field(String name, SearchFieldType type,
-            String value) {
-        switch (type) {
-        case ENGLISH: case FRENCH: case OLD_FRENCH: case SPANISH:case LATIN: case ITALIAN: case GREEK:
-            return new TextField(name, value, Store.YES);
-        case IMAGE_NAME:
-            return new TextField(name, value, Store.YES);
-        case STRING:
+    // Add field for each type. Use sparingly.
+    protected void addField(Document doc, SearchField sf, String value) {
+        for (SearchFieldType type : sf.getFieldTypes()) {
+            addField(doc, sf, type, value);
+        }
+    }
+
+    private IndexableField create_field(String name, SearchFieldType type, String value) {
+        if (type == SearchFieldType.STRING) {
             return new StringField(name, value, Store.YES);
-        default:
-            return null;
+        } else {
+            return new TextField(name, value, Store.YES);
         }
     }
 
     protected SearchFieldType getSearchFieldTypeForLang(String lc) {
         lc = lc.toLowerCase();
-        
+
         if (lc.equals("en")) {
             return SearchFieldType.ENGLISH;
         } else if (lc.equals("fr")) {
@@ -251,7 +283,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
             return null;
         }
     }
-    
+
     public String getSearchFieldNameFromLuceneField(String lucene_field) {
         int i = lucene_field.lastIndexOf('.');
 
@@ -262,26 +294,29 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         return lucene_field.substring(0, i);
     }
 
-    public Set<String> getLuceneFields(rosa.search.model.Query query) {
+    public Set<String> getLuceneContextFields(rosa.search.model.Query query) {
         Set<String> result = new HashSet<>();
-        get_lucene_fields(result, query);
+        get_lucene_context_fields(result, query);
         return result;
     }
 
-    private void get_lucene_fields(Set<String> result,
-            rosa.search.model.Query query) {
+    private void get_lucene_context_fields(Set<String> result, rosa.search.model.Query query) {
         if (query.isOperation()) {
-            for (rosa.search.model.Query kid: query.children()) {
-                get_lucene_fields(result, kid);
+            for (rosa.search.model.Query kid : query.children()) {
+                get_lucene_context_fields(result, kid);
             }
         } else {
             SearchField sf = search_field_map.get(query.getTerm().getField());
 
-            if (sf != null) {
-                for (SearchFieldType type: sf.getFieldTypes()) {
+            if (sf != null && sf.isContext()) {
+                for (SearchFieldType type : sf.getFieldTypes()) {
                     result.add(getLuceneField(sf, type));
                 }
             }
         }
-    }    
+    }
+
+    public List<SearchField> getIncludeValueSearchFields() {
+        return included_search_fields;
+    }
 }

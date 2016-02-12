@@ -81,7 +81,7 @@ public class WebsiteLuceneMapperTest {
     @Test
     public void testCreateBooleanQuery() {
         String bookid = "moo";
-        String title = "Cow chews cud.";
+        String title = "\"Cow chews cud.\"";
 
         Query query = new Query(QueryOperation.AND, new Query(
                 WebsiteSearchFields.BOOK_ID, bookid), new Query(
@@ -98,6 +98,7 @@ public class WebsiteLuceneMapperTest {
         BooleanQuery expected = new BooleanQuery();
         expected.add(new TermQuery(new Term(bookid_lucene_field, bookid)),
                 Occur.MUST);
+        
         PhraseQuery expected_title_query = new PhraseQuery();
         expected_title_query.add(new Term(title_lucene_field, "cow"));
         expected_title_query.add(new Term(title_lucene_field, "chew"));

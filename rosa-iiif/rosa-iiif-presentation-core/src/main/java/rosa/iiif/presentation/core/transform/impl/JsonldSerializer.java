@@ -341,8 +341,10 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         addIiifContext(jWriter, isRequested);
         writeBaseData(annotation, jWriter);
 
-        jWriter.key("resource");
-        writeResource(annotation, jWriter);
+        if (!annotation.getSources().isEmpty()) {
+            jWriter.key("resource");
+            writeResource(annotation, jWriter);
+        }
 
         writeIfNotNull("motivation", annotation.getMotivation(), jWriter);
 

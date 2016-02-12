@@ -143,26 +143,38 @@ public class StoreImpl implements Store, ArchiveConstants {
         collection.setLocationsRef(loadItem(LOCATIONS, collectionGroup, ReferenceSheet.class, errors));
         collection.setBooksRef(loadItem(BOOKS, collectionGroup, BookReferenceSheet.class, errors));
 
-        BookImage missing = new BookImage();
-        missing.setId(MISSING_IMAGE);
-        missing.setMissing(false);
-
-        int[] missingDimensions = getMissingImageDimensions(collectionId);
-        missing.setWidth(missingDimensions[0]);
-        missing.setHeight(missingDimensions[1]);
-
-        collection.setMissingImage(missing);
-
-        // Languages from configuration.
         Properties props = new Properties();
         try (InputStream configIn = collectionGroup.getByteStream("config.properties")) {
             props.load(configIn);
         }
+        
         String langs = props.getProperty("languages");
         if (langs != null) {
             collection.setLanguages(langs.split(","));
         }
+        
+        if (collectionGroup.hasByteStream(MISSING_IMAGE)) {
+            String height_prop = "missing_image.height";
+            String width_prop = "missing_image.width";
+            
+            if (!props.containsKey(width_prop) || !props.containsKey(height_prop)) {
+                errors.add("Missing properties: " + width_prop + ", " + height_prop);
+            } else {
+                BookImage missing = new BookImage();
+                missing.setId(MISSING_IMAGE);
+                missing.setMissing(false);
 
+                try {
+                    missing.setWidth(Integer.parseInt(props.getProperty(width_prop)));
+                    missing.setHeight(Integer.parseInt(props.getProperty(height_prop)));
+                } catch (NumberFormatException e) {
+                    errors.add("Failed to parse missing image dimensions in config.properties");
+                }
+
+                collection.setMissingImage(missing);                
+            }
+        }
+        
         return collection;
     }
 

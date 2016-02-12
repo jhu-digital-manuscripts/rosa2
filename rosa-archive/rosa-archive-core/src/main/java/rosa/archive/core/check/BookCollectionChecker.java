@@ -60,9 +60,9 @@ public class BookCollectionChecker extends AbstractArchiveChecker {
             }
         }
 
-        if (!bsg.hasByteStream(MISSING_IMAGE)) {
-            errors.add("[" + MISSING_IMAGE + "] missing.");
-        }
+//        if (!bsg.hasByteStream(MISSING_IMAGE)) {
+//            errors.add("[" + MISSING_IMAGE + "] missing.");
+//        }
 
         //   character_names and illustration_titles and narrative_sections
         check(collection, bsg, errors, warnings);

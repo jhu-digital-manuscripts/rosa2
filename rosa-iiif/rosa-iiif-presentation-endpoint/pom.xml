@@ -10,6 +10,36 @@
   <artifactId>rosa-iiif-presentation-endpoint</artifactId>
   <packaging>war</packaging>
 
+    <profiles>
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <properties>
+                <iiif.pres.search.index>/tmp/lucene</iiif.pres.search.index>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>production</id>
+
+            <properties>
+                <iiif.pres.search.index>webapps/iiif-pres/WEB-INF/lucene</iiif.pres.search.index>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>    
+      <resources>
+	<resource>
+	  <directory>src/main/resources</directory>
+	  <filtering>true</filtering>
+	</resource>
+      </resources>
+    </build>
+  
  <dependencies>
     <dependency>
       <artifactId>servlet-api</artifactId>

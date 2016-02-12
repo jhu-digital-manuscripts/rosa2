@@ -11,7 +11,7 @@ import rosa.archive.model.BookText;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Range;
@@ -24,7 +24,7 @@ import java.util.List;
 public class RangeTransformer extends BasePresentationTransformer implements Transformer<Range> {
 
     @Inject
-    public RangeTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter) {
+    public RangeTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter) {
         super(presRequestFormatter);
     }
 

@@ -3,10 +3,13 @@ package rosa.iiif.presentation.core.transform.impl;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import rosa.archive.model.BookCollection;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.Collection;
+import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
+import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.TextValue;
 
 import java.util.ArrayList;
@@ -15,7 +18,7 @@ import java.util.List;
 public class CollectionTransformer extends BasePresentationTransformer {
 
     @Inject
-    public CollectionTransformer(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter) {
+    public CollectionTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter) {
         super(presRequestFormatter);
     }
 
@@ -38,6 +41,9 @@ public class CollectionTransformer extends BasePresentationTransformer {
         }
 
         col.setManifests(refs);
+        
+        // TODO Set search service
+
         return col;
     }
 

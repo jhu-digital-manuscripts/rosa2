@@ -7,8 +7,8 @@ import org.junit.Test;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 
-public class IIIFRequestParserTest {
-    private IIIFRequestParser parser = new IIIFRequestParser();
+public class IIIFPresentationRequestParserTest {
+    private IIIFPresentationRequestParser parser = new IIIFPresentationRequestParser();
     
     @Test
     public void testParseMalformedPresentationRequest() {

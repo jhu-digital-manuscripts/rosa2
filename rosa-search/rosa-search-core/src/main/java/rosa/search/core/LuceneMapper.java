@@ -45,20 +45,28 @@ public interface LuceneMapper {
      */
     String getSearchFieldNameFromLuceneField(String name);
 
-    
     /**
      * Transform a search query into a lucene query.
      * 
      * @param query
-     * @return Lucene query 
+     * @return Lucene query or null on failure
      */
     org.apache.lucene.search.Query createLuceneQuery(Query query);
 
+    
+    /**
+     * Create a lucene query from a string no matter what the contents of the string.
+     * 
+     * @param query
+     * @return Lucene query or null if query string has no terms.
+     */
+    org.apache.lucene.search.Query createLuceneQuery(String query);
+    
     /**
      * @param query .
-     * @return Return the names of lucene field used by this query
+     * @return Return the names of lucene field used by this query which should be included in context
      */
-    Set<String> getLuceneFields(Query query);
+    Set<String> getLuceneContextFields(Query query);
 
     /**
      * Create and index Lucene documents for a given book within a book
@@ -70,4 +78,9 @@ public interface LuceneMapper {
      * @throws IOException
      */
     List<Document> createDocuments(BookCollection col, Book book) throws IOException;
+
+    /**
+     * Return search fields whose values should be included in search results.
+     */
+    List<SearchField> getIncludeValueSearchFields();
 }

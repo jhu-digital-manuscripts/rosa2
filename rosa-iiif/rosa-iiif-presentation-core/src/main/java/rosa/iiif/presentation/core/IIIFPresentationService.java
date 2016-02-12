@@ -8,7 +8,7 @@ import rosa.iiif.presentation.model.PresentationRequest;
 /**
  * Represents the IIIF Presentation API.
  */
-public interface IIIFService {
+public interface IIIFPresentationService {
 
     /**
      * Serialize the IIIF Presentation API object referenced by the given URI as
@@ -17,10 +17,10 @@ public interface IIIFService {
      * @param uri incoming URI to process
      * @param os output stream to write to
      * @return whether or not the URI exists
-     * @throws java.io.IOException if the output stream is inaccessible
+     * @throws java.io.IOException
      */
     boolean handle_request(String uri, OutputStream os) throws IOException;
-
+        
     /**
      * Serialize the IIIF Presentation API object referenced by the given
      * request.
@@ -30,7 +30,7 @@ public interface IIIFService {
      * @param req presentation request, that contains information about the incoming request
      * @param os output stream to write response
      * @return whether or not the URI exists
-     * @throws java.io.IOException if the output stream is inaccessible
+     * @throws java.io.IOException
      */
     boolean handle_request(PresentationRequest req, OutputStream os) throws IOException;
 }

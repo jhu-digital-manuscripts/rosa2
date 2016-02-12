@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
@@ -21,7 +21,7 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
     private TransformerSet transformers;
 
     @Inject
-    public PresentationTransformerImpl(@Named("formatter.presentation") IIIFRequestFormatter presRequestFormatter,
+    public PresentationTransformerImpl(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
                                        TransformerSet transformers,
                                        CollectionTransformer collectionTransformer) {
         super(presRequestFormatter);

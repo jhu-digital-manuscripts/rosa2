@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuFSIImageIdMapper;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
@@ -47,7 +47,6 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     private static final String ENDPOINT_SCHEME = "http";
     private static final String ENDPOINT_HOST = "example.org";
     private static final String ENDPOINT_PREFIX = "/iiif";
-    private static final String SEARCH_PREFIX = "/search";
     private static final int ENDPOINT_PORT = -1;
 
 
@@ -61,9 +60,8 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         Map<String, String> idMap = new HashMap<>();
         idMap.put(VALID_COLLECTION, "valid");
 
-        IIIFRequestFormatter presentationReqFormatter =
-                new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT);
-        IIIFRequestFormatter searchFormatter = new IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, SEARCH_PREFIX, ENDPOINT_PORT);
+        IIIFPresentationRequestFormatter presentationReqFormatter =
+                new IIIFPresentationRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT);
         rosa.iiif.image.core.IIIFRequestFormatter imageReqFormatter =
                 new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
         ImageIdMapper idMapper = new JhuFSIImageIdMapper(idMap);
@@ -77,7 +75,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         transformers.add(new AnnotationListTransformer(presentationReqFormatter, annotationTransformer));
         transformers.add(canvasTransformer);
         transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer, new RangeTransformer(presentationReqFormatter), searchFormatter));
+        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer, new RangeTransformer(presentationReqFormatter)));
         transformers.add(new RangeTransformer(presentationReqFormatter));
         transformers.add(new LayerTransformer(presentationReqFormatter));
 

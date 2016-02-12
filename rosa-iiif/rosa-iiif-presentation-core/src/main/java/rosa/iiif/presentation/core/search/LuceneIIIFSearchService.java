@@ -1,62 +1,122 @@
 package rosa.iiif.presentation.core.search;
 
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 
 import rosa.archive.core.Store;
-import rosa.archive.core.util.Annotations;
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
-import rosa.iiif.presentation.core.IIIFRequestFormatter;
-import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.annotation.Annotation;
+import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.search.IIIFSearchHit;
 import rosa.iiif.presentation.model.search.IIIFSearchRequest;
 import rosa.iiif.presentation.model.search.IIIFSearchResult;
+import rosa.iiif.presentation.model.search.Rectangle;
+import rosa.search.core.LuceneSearchService;
 import rosa.search.core.SearchUtil;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
-import rosa.search.model.SearchField;
 import rosa.search.model.SearchMatch;
+import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
 
-/**
- * Adapt Lucene search results into JSON-LD that follows the IIIF Search API
- * (http://search.iiif.io/api/search/0.9/)
- *
- * Must be able to transform:
- *
- * - HTTP GET request formatted as specified in the IIIF Search API TO a Lucene
- * query that can be handed to the search service.
- *   - (http://search.iiif.io/api/search/0.9/#request)
- *
- * - Search results from the search service TO a format specified in the IIIF Search API
- *   - (http://search.iiif.io/api/search/0.9/#response)
- */
-public class IIIFLuceneSearchAdapter implements IIIFNames {
-    private static final int max_cache_size = 1000;
 
-    private AnnotationTransformer annotationTransformer;
-    private IIIFRequestFormatter presReqFormatter;
-    private Store archiveStore;
+// TODO Incomplete. Needs refactoring, documentation, and more testing.
 
-    private final ConcurrentHashMap<String, Object> cache;
+public class LuceneIIIFSearchService extends LuceneSearchService implements IIIFSearchService, IIIFNames {
+    private static final String[] IGNORED =  new String[] {"date", "user", "box"};
+    
+    private final IIIFPresentationRequestFormatter requestFormatter;
 
-    public IIIFLuceneSearchAdapter(AnnotationTransformer annotationTransformer, Store archiveStore,
-                                   IIIFRequestFormatter presReqFormatter) {
-        this.annotationTransformer = annotationTransformer;
-        this.presReqFormatter = presReqFormatter;
-        this.archiveStore = archiveStore;
-
-        this.cache = new ConcurrentHashMap<>(max_cache_size);
+    public LuceneIIIFSearchService(Path index, IIIFPresentationRequestFormatter requestFormatter) throws IOException {
+        super(index, new IIIFSearchLuceneMapper());
+        
+        this.requestFormatter = requestFormatter;
     }
+
+    @Override
+    public IIIFSearchResult search(IIIFSearchRequest request) throws IOException {
+        SearchOptions options = new SearchOptions();
+        options.setOffset(request.page);
+        options.setMatchCount(Integer.MAX_VALUE);
+
+        SearchResult sr = search(iiifToLuceneQuery(request), options);
+        
+        IIIFSearchResult result = luceneResultToIIIF(sr);
+        result.setId(requestFormatter.format(request));
+
+        result.setIgnored(IGNORED);
+                        
+        // TODO do fields: prev, next, first, last where applicable
+
+        return result;
+    }
+
+    /**
+     * @param newPage new results page number
+     * @param original original request to copy
+     * @return a copy of the original request with the results page modified
+     */
+    public IIIFSearchRequest copyChangePage(int newPage, IIIFSearchRequest original) {
+        return new IIIFSearchRequest(
+                original.objectId,
+                arrayToString(original.queryTerms),
+                arrayToString(original.motivations),
+                arrayToString(original.dates),
+                arrayToString(original.users),
+                arrayToString(original.box),
+                newPage
+        );
+    }
+
+    /**
+     * @param arr array of string values
+     * @return a single String composed of all values in the original array
+     *         separated by spaces
+     */
+    private String arrayToString(String[] arr) {
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < arr.length; i++) {
+            if (i != 0) {
+                sb.append(" ");
+            }
+            sb.append(arr[i]);
+        }
+
+        return sb.toString();
+    }
+
+    /**
+     * @param arr array of rectangles
+     * @return a single String of rectangles, separated by spaces, formatted: x,y,w,h
+     */
+    private String arrayToString(Rectangle[] arr) {
+        if (arr == null || arr.length == 0) {
+            return "";
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < arr.length; i++) {
+            if (i != 0) {
+                sb.append(" ");
+            }
+            sb.append(String.valueOf(arr[i].x));
+            sb.append(',');
+            sb.append(String.valueOf(arr[i].y));
+            sb.append(',');
+            sb.append(String.valueOf(arr[i].width));
+            sb.append(',');
+            sb.append(String.valueOf(arr[i].height));
+        }
+        return sb.toString();
+    }
+    
 
     /**
      * Transform a IIIF search request to a Lucene search query.
@@ -64,28 +124,33 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
      * @param iiifReq IIIF Search request
      * @return a Lucene query
      */
-    public Query iiifToLuceneQuery(IIIFSearchRequest iiifReq) {
-        // This will generate independent queries for each word...
+    protected Query iiifToLuceneQuery(IIIFSearchRequest iiifReq) {
         List<Query> top_query = new ArrayList<>();
+        
+        // TODO Rethink and redo all query parsing.
+        
+        String query = String.join(" ", iiifReq.queryTerms);
 
-        StringBuilder query = new StringBuilder();
-        for (int i = 0; i < iiifReq.queryTerms.length; i++) {
-            if (i != 0) {
-                query.append(' ');
-            }
-            query.append(iiifReq.queryTerms[i]);
-        }
-
-        if (!query.toString().isEmpty()) {
-            List<Query> searchQuery = new ArrayList<>();
+        List<String> terms = new ArrayList<>();
+        
+        for (String part: query.split("&")) {
+            part = part.trim();
             
-            for (SearchField luceneField : new SearchField[]{AnnotationSearchFields.TEXT}) {
-                searchQuery.add(new Query(luceneField, query.toString().trim()));
+            if (!part.isEmpty()) {
+                terms.add(part);
             }
-            
-            top_query.add(new Query(QueryOperation.OR, searchQuery.toArray(new Query[searchQuery.size()])));
         }
-
+        
+        Query text_query = new Query(QueryOperation.AND, new Query[terms.size()]);
+        
+        for (int i = 0; i < terms.size(); i++) {
+            text_query.children()[i] = new Query(IIIFSearchFields.TEXT, terms.get(i));
+        }
+        
+        top_query.add(text_query);
+        
+        // TODO Handle not having viable search
+        
         /*
             Here, the rest of the parameters would be added to the query (motivation, date, user, box).
 
@@ -104,18 +169,23 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
 
         // Restrict query based on requested object
         PresentationRequest req = iiifReq.objectId;
+        
         switch (iiifReq.objectId.getType()) {
             case CANVAS:
-                top_query.add(new Query(AnnotationSearchFields.IMAGE, getCanvasName(req)));
+                top_query.add(new Query(IIIFSearchFields.IMAGE, getCanvasName(req)));
             case MANIFEST:
-                top_query.add(new Query(AnnotationSearchFields.BOOK, getManifestName(req)));
+                top_query.add(new Query(IIIFSearchFields.BOOK, getManifestName(req)));
+                break;
             case COLLECTION:
-                top_query.add(new Query(AnnotationSearchFields.COLLECTION, getCollectionName(req)));
+                top_query.add(new Query(IIIFSearchFields.COLLECTION, getCollectionName(req)));
+                break;
             default:
                 break;
         }
 
-        return new Query(QueryOperation.AND, top_query.toArray(new Query[top_query.size()]));
+        Query result = new Query(QueryOperation.AND, top_query.toArray(new Query[]{}));
+        
+        return result;
     }
 
     /**
@@ -139,50 +209,51 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
      * @see SearchResult
      * @see rosa.search.model.SearchMatch
      */
-    public IIIFSearchResult luceneResultToIIIF(SearchResult result) throws IOException {
+    protected IIIFSearchResult luceneResultToIIIF(SearchResult result) throws IOException {
         IIIFSearchResult iiifResult = new IIIFSearchResult();
 
         // TODO assign proper search API (URI) IDs
         iiifResult.setTotal(result.getTotal());
         iiifResult.setStartIndex(result.getOffset());
 
-        // Create List<iiif annotation>
         List<Annotation> annotations = iiifResult.getAnnotations();
         List<IIIFSearchHit> hits = new ArrayList<>();
+        
         for (SearchMatch match : result.getMatches()) {
-            // Create the Annotation from Match
-            //   Get archive annotation from match ID using Annotations util class
             String matchId = match.getId();
-
-            BookCollection col = getCollection(matchId);
-            Book book = getBook(matchId);
-            if (book == null) {
-                // TODO log if this happens
-                continue;
-            }
-            rosa.archive.model.aor.Annotation archiveAnno = getArchiveAnnotation(matchId);
-            if (archiveAnno == null) {
-                continue;
-            }
-            archiveAnno.setId(SearchUtil.getAnnotationFromId(matchId));
-
-            //   Transform archive anno -> iiif anno using AnnotationTransformer
-            Annotation presentationAnno = annotationTransformer.transform(col, book, archiveAnno);
-
-
-
-            // Set presentation annotation parent reference
-            Reference parentRef = new Reference(
-                    urlId(col.getId(), book.getId(), null, PresentationRequestType.MANIFEST),
-                    new TextValue(book.getBookMetadata("en").getCommonName(), "en"),
-                    SC_MANIFEST);        // TODO proper language support here
-            presentationAnno.getDefaultTarget().setParentRef(parentRef);
-
-            annotations.add(presentationAnno);
+            String collection_id = getCollectionId(matchId);
+            String book_id = getBookId(matchId);
             
-            hits.addAll(getContextHits(match.getContext(), matchId, col.getId(), book.getId()));
+            String annotation_id = gen_uri(collection_id, book_id, getAnnotationId(matchId), PresentationRequestType.ANNOTATION);
+            String canvas_id = gen_uri(collection_id, book_id, getImageId(matchId), PresentationRequestType.CANVAS);
+            String manifest_id = gen_uri(collection_id, book_id, null, PresentationRequestType.MANIFEST);
+            
+            // TODO Use new facility for returning field values in match
+            // String[] labels = lookup(match, IIIFSearchFields.LABEL, IIIFSearchFields.TARGET_LABEL);
+            
+            // Reference manifest_ref = new Reference(manifest_id, new TextValue(labels[1], "en"), SC_MANIFEST); 
+            
+            Annotation anno = new Annotation();
+            
+            anno.setId(annotation_id);
+            anno.setType(IIIFNames.OA_ANNOTATION);
+            anno.setMotivation(IIIFNames.SC_PAINTING);
+            
+            // anno.setLabel(labels[0], "en");
+            
+            AnnotationTarget target = new AnnotationTarget();
+            
+            target.setUri(canvas_id);
+            // target.setParentRef(manifest_ref);            
+            
+            anno.setDefaultTarget(target);
+            
+            annotations.add(anno);
+            
+            hits.addAll(getContextHits(match.getContext(), matchId, collection_id, book_id));
         }
 
+        // TODO Just use array list?
         iiifResult.setHits(hits.toArray(new IIIFSearchHit[hits.size()]));
 
         /*
@@ -272,7 +343,7 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
         List<IIIFSearchHit> hits = new ArrayList<>();
         
         String[] associatedAnnos = new String[] {
-                urlId(collection, book, getAnnotationId(matchId), PresentationRequestType.ANNOTATION)
+                gen_uri(collection, book, getAnnotationId(matchId), PresentationRequestType.ANNOTATION)
         };
 
         // TODO Does not deal with nested <B>
@@ -284,7 +355,7 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
             String field = contexts.get(i++);
             String context = contexts.get(i++);
             
-            if (!field.equals(AnnotationSearchFields.TEXT.name())) {
+            if (!field.equals(IIIFSearchFields.TEXT.name())) {
                 continue;
             }
             
@@ -341,11 +412,8 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
         }
     }
 
-    // ----- URI parsing -----
-
-    // TODO Shared code with BasePresentationTransformer. Externalize!
-    protected String urlId(String collection, String book, String name, PresentationRequestType type) {
-        return presReqFormatter.format(presentationRequest(collection, book, name, type));
+    private String gen_uri(String collection, String book, String name, PresentationRequestType type) {
+        return requestFormatter.format(presentationRequest(collection, book, name, type));
     }
 
     private String presentationId(String collection, String book) {
@@ -357,94 +425,26 @@ public class IIIFLuceneSearchAdapter implements IIIFNames {
         return new PresentationRequest(presentationId(collection, book), name, type);
     }
 
-    // ----- Name parsing -----
-
-    private String getAnnotationCollection(String matchId) {
+    private String getCollectionId(String matchId) {
         return SearchUtil.getCollectionFromId(matchId);
     }
 
-    private String getAnnotationBook(String matchId) {
+    private String getBookId(String matchId) {
         return SearchUtil.getBookFromId(matchId);
     }
-
-//    private String getAnnotationPage(String matchId) {
-//        return SearchUtil.getImageFromId(matchId);
-//    }
+    
+    private String getImageId(String matchId) {
+        return SearchUtil.getImageFromId(matchId);
+    }
 
     private String getAnnotationId(String matchId) {
         return SearchUtil.getAnnotationFromId(matchId);
     }
 
-    // ----- Caching -----
-
-    private String cache_key(String id, Class<?> type) {
-        return id + "," + type.getName();
-    }
-
-    private <T> T lookupCache(String id, Class<T> type) {
-        return type.cast(cache.get(cache_key(id, type)));
-    }
-
-    private void updateCache(String id, Object value) {
-        if (id == null || value == null) {
-            return;
+    @Override
+    public void update(Store store) throws IOException {
+        for (String col: store.listBookCollections()) {
+            update(store, col);
         }
-
-        if (cache.size() > max_cache_size) {
-            cache.clear();
-        }
-
-        cache.putIfAbsent(cache_key(id, value.getClass()), value);
-    }
-
-    private BookCollection getCollection(String matchId) throws IOException {
-        String col_id = getAnnotationCollection(matchId);
-        BookCollection result = lookupCache(col_id, BookCollection.class);
-
-        if (result == null) {
-            result = archiveStore.loadBookCollection(col_id, null);
-            updateCache(col_id, result);
-        }
-
-        return result;
-    }
-
-    private Book getBook(String matchId) throws IOException {
-        String col_id = getAnnotationCollection(matchId);
-        String book_id = getAnnotationBook(matchId);
-
-        Book result = lookupCache(book_id, Book.class);
-
-        if (result == null) {
-            BookCollection col = getCollection(col_id);
-
-            if (col == null) {
-                return null;
-            }
-
-            result = archiveStore.loadBook(col, book_id, null);
-            updateCache(book_id, result);
-        }
-
-        return result;
-    }
-
-    private rosa.archive.model.aor.Annotation getArchiveAnnotation(String matchId) throws IOException {
-        String annoId = getAnnotationId(matchId);
-
-        rosa.archive.model.aor.Annotation anno = lookupCache(annoId, rosa.archive.model.aor.Annotation.class);
-
-        if (anno == null) {
-            Book book = getBook(matchId);
-
-            if (book == null) {
-                return null;
-            }
-
-            anno = Annotations.getArchiveAnnotation(book, annoId);
-            updateCache(annoId, rosa.archive.model.aor.Annotation.class);
-        }
-
-        return anno;
     }
 }
