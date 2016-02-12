@@ -41,4 +41,14 @@ public enum WebsiteSearchFields implements SearchField {
     public String getFieldName() {
         return name();
     }
+
+    @Override
+    public boolean isContext() {
+        return true;
+    }
+
+    @Override
+    public boolean includeValue() {
+        return false;
+    }
 }

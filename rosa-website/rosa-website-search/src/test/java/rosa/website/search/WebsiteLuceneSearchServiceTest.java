@@ -341,7 +341,7 @@ public class WebsiteLuceneSearchServiceTest extends BaseArchiveTest {
         service.update(store, VALID_COLLECTION);
 
         SearchResult result = service.search(
-                new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, "Tout adés la ou il rendoit"),
+                new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, "\"Tout adés la ou il rendoit\""),
                 null
         );
 
@@ -387,8 +387,8 @@ public class WebsiteLuceneSearchServiceTest extends BaseArchiveTest {
         {
             Query query = new Query(
                     QueryOperation.OR,
-                    new Query(WebsiteSearchFields.BOOK_ID, "Tout adés la ou il rendoit"),
-                    new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, "Tout adés la ou il rendoit")
+                    new Query(WebsiteSearchFields.BOOK_ID, "\"Tout adés la ou il rendoit\""),
+                    new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, "\"Tout adés la ou il rendoit\"")
             );
             SearchResult result = service.search(query, null);
 
