@@ -41,6 +41,7 @@
         <commons-io.version>2.4</commons-io.version>
         <commons-codec.version>1.9</commons-codec.version>
         <commons-cli.version>1.2</commons-cli.version>
+	<lucene.version>5.2.1</lucene.version>
     </properties>
 
     <dependencyManagement>
@@ -156,20 +157,26 @@
             <dependency>
               <groupId>org.apache.lucene</groupId>
               <artifactId>lucene-core</artifactId>
-              <version>5.2.1</version>
+              <version>${lucene.version}</version>
             </dependency>
 
             <dependency>
               <groupId>org.apache.lucene</groupId>
               <artifactId>lucene-highlighter</artifactId>
-              <version>5.2.1</version>
+              <version>${lucene.version}</version>
             </dependency>
 
             <dependency>
               <groupId>org.apache.lucene</groupId>
               <artifactId>lucene-analyzers-common</artifactId>
-              <version>5.2.1</version>
+              <version>${lucene.version}</version>
             </dependency>
+
+	    <dependency>
+	      <groupId>org.apache.lucene</groupId>
+	      <artifactId>lucene-queryparser</artifactId>
+	      <version>${lucene.version}</version>
+	    </dependency>
 
 	    <dependency>
               <groupId>com.twelvemonkeys.imageio</groupId>
