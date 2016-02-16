@@ -16,6 +16,17 @@ public interface JHSearchService {
     public static String RESUME_PARAM = "r";
     public static String MAX_MATCHES_PARAM = "m";
     
+    /**
+     * May throw IllegalArgumentException to indicate a query or other parameter cannot be understood.
+     * 
+     * @param req
+     * @param query
+     * @param offset
+     * @param max
+     * @param os
+     * @throws IOException
+     * @throws IllegalArgumentException
+     */
     void handle_request(PresentationRequest req, String query, int offset, int max, OutputStream os) throws IOException, IllegalArgumentException;
 
     void handle_request(PresentationRequest req, String query, String resume, int max, OutputStream os)
