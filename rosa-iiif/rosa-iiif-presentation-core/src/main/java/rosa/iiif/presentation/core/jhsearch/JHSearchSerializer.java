@@ -50,7 +50,10 @@ public class JHSearchSerializer implements IIIFNames {
         writer.endObject();
     }
 
-    // Callback to get html?
+    // TODO Add label to SearchField?
+    private String get_field_label(String field) {
+        return field.substring(0, 1).toUpperCase() + field.substring(1);
+    }
     
     private void writeJsonld(SearchMatch match, JSONWriter writer) {
         writer.object();
@@ -62,7 +65,7 @@ public class JHSearchSerializer implements IIIFNames {
             String field = context.get(i++);
             String html = context.get(i++);
             
-            context_html.append("<p><b>" + field + ":</b>" + html + "</p>");
+            context_html.append("<b>" + get_field_label(field) + ":</b> " + html + "<br>");
         }
 
         List<String> values = match.getValues();
