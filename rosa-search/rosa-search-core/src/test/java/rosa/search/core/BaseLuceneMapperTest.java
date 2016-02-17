@@ -20,7 +20,7 @@ public class BaseLuceneMapperTest {
 
     enum SearchFields implements SearchField {
         ID(false, false, SearchFieldType.STRING), BOOK(false, true, SearchFieldType.STRING), TEXT(true, true,
-                SearchFieldType.ENGLISH, SearchFieldType.FRENCH);
+                SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.LATIN);
 
         private final SearchFieldType[] types;
         private final boolean context;

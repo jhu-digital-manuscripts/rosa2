@@ -18,6 +18,7 @@ import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
+import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
 
 public class LuceneJHSearchServiceTest extends BaseArchiveTest {
@@ -77,6 +78,16 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
 
         assertNotNull("Search result was NULL", result);
         assertEquals("Unexpected number of results found.", 1, result.getTotal());
+    }
+    
+    @Test
+    public void testStemLatin() throws Exception {
+        Query query = new Query(JHSearchFields.MARGINALIA, "maximus");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL", result);
+        
+        assertEquals("Unexpected number of results found.", 9, result.getTotal());
     }
 
     @Test
