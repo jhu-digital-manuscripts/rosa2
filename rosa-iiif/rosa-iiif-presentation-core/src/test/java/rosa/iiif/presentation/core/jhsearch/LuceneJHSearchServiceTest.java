@@ -86,7 +86,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
 
         assertNotNull("Search result was NULL.", result);
         assertEquals("Unexpected number of results found.", 1, result.getTotal());
-        assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("FolgersHa2.036v.tif"));
+        assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("36v"));
     }
 
     @Test(expected = IllegalArgumentException.class)

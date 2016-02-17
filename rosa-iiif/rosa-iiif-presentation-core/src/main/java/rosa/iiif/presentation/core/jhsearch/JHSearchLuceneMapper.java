@@ -147,7 +147,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
         String collection_id = get_uri(col.getId(), null, col.getId(), PresentationRequestType.COLLECTION);
         String manifest_id = get_uri(col.getId(), book.getId(), null, PresentationRequestType.MANIFEST);
-        String canvas_id = get_uri(col.getId(), book.getId(), image.getId(), PresentationRequestType.CANVAS);
+        String canvas_id = get_uri(col.getId(), book.getId(), image.getName(), PresentationRequestType.CANVAS);
         
         addField(doc, JHSearchFields.COLLECTION_ID, collection_id);
         
@@ -260,7 +260,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         return sb.toString();
     }
     
-    // TODO Duplicated from BasePresentationTransformer
+    // TODO Duplicated from BasePresentationTransformer. Must be put into separate service.
     
     private String get_uri(String collection, String book, String name, PresentationRequestType type) {
         return formatter.format(get_request(collection, book, name, type));
