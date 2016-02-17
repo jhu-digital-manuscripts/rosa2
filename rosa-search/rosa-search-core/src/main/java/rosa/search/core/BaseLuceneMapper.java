@@ -155,6 +155,14 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     }
 
     public Query createLuceneQuery(rosa.search.model.Query query) {
+        if (query.getOperation() == null && query.getTerm() == null) {
+            throw new IllegalArgumentException("Query must have operation or term");
+        }
+        
+        if (query.isOperation() && query.children().length == 0) {
+            throw new IllegalArgumentException("Query operation must have children");
+        }
+        
         if (query.isOperation()) {
             BooleanQuery result = new BooleanQuery();
             Occur occur = query.getOperation() == QueryOperation.AND ? Occur.MUST : Occur.SHOULD;
@@ -184,11 +192,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
 
         for (SearchField sf : context_search_fields) {
             for (SearchFieldType type : sf.getFieldTypes()) {
-                Query q = create_lucene_query(sf, type, query);
-
-                if (q != null) {
-                    result.add(q, Occur.SHOULD);
-                }
+                result.add(create_lucene_query(sf, type, query), Occur.SHOULD);
             }
         }
 
@@ -196,14 +200,10 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     }
 
     private Query create_lucene_query(QueryTerm term) {
-        if (term == null) {
-            return null;
-        }
-        
         SearchField sf = search_field_map.get(term.getField());
 
         if (sf == null) {
-            return null;
+            throw new IllegalArgumentException("Unknown field: " + term.getField());
         }
 
         if (sf.getFieldTypes().length == 1) {
@@ -212,11 +212,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
             BooleanQuery query = new BooleanQuery();
 
             for (SearchFieldType type : sf.getFieldTypes()) {
-                Query q = create_lucene_query(sf, type, term.getValue());
-
-                if (q != null) {
-                    query.add(q, Occur.SHOULD);
-                }
+                query.add(create_lucene_query(sf, type, term.getValue()), Occur.SHOULD);
             }
 
             return query;
