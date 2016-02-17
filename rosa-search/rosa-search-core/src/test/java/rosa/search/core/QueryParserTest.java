@@ -87,4 +87,14 @@ public class QueryParserTest {
     public void testParseInvalidRandomString() throws ParseException {
         QueryParser.parseQuery("cow: mammal!");
     }
+    
+    @Test(expected = ParseException.class)
+    public void testInputAfterTerm() throws ParseException {
+        QueryParser.parseQuery("cow:'mammal' title:'moo'");
+    }
+    
+    @Test(expected = ParseException.class)
+    public void testInputAfterOp() throws ParseException {
+        QueryParser.parseQuery("(cow:'mammal' | title:'moo') blah:'blah'");
+    }
 }
