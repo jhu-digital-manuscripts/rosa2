@@ -24,6 +24,7 @@ public abstract class BasePresentationTransformer implements IIIFNames {
         this.presRequestFormatter = presRequestFormatter;
     }
 
+    // This needs to be pulled out into a separate service with sensible methods
     protected String urlId(String collection, String book, String name, PresentationRequestType type) {
         return presRequestFormatter.format(presentationRequest(collection, book, name, type));
     }

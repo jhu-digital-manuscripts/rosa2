@@ -47,11 +47,12 @@ public interface LuceneMapper {
 
     /**
      * Transform a search query into a lucene query.
+     * Throw an IllegalArgumentException if the query cannot be handled, perhaps because of an unknown field name.
      * 
      * @param query
-     * @return Lucene query or null on failure
+     * @return Lucene query
      */
-    org.apache.lucene.search.Query createLuceneQuery(Query query);
+    org.apache.lucene.search.Query createLuceneQuery(Query query) throws IllegalArgumentException;
 
     
     /**

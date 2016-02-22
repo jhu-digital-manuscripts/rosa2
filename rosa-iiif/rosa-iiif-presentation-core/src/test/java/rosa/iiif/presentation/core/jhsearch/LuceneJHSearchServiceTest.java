@@ -18,12 +18,13 @@ import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
+import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
 
 public class LuceneJHSearchServiceTest extends BaseArchiveTest {
     private LuceneJHSearchService service;
     private IIIFPresentationRequestFormatter formatter;
-    
+
     @Rule
     public TemporaryFolder tmpfolder = new TemporaryFolder();
 
@@ -37,7 +38,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
         String pres_prefix = "/pres";
 
         formatter = new IIIFPresentationRequestFormatter(scheme, host, pres_prefix, port);
-        
+
         service = new LuceneJHSearchService(tmpfolder.newFolder().toPath(), formatter);
         service.update(store, VALID_COLLECTION);
     }
@@ -50,7 +51,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
     }
 
     @Test
-    public void testSearchSymbol() throws Exception {
+    public void testSearchSymbolSun() throws Exception {
 
         Query query = new Query(JHSearchFields.SYMBOL, "Sun");
         SearchResult result = service.search(query, null);
@@ -60,27 +61,53 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
     }
 
     @Test
+    public void testSearchSymbolMars() throws Exception {
+
+        Query query = new Query(JHSearchFields.SYMBOL, "Mars");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL", result);
+        assertEquals("Unexpected number of results found.", 2, result.getTotal());
+    }
+
+    @Test
+    public void testSearchSymbolAndMarginalia() throws Exception {
+        Query query = new Query(QueryOperation.AND, new Query(JHSearchFields.SYMBOL, "Mars"),
+                new Query(JHSearchFields.MARGINALIA, "Homer"));
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL", result);
+        assertEquals("Unexpected number of results found.", 1, result.getTotal());
+    }
+    
+    @Test
+    public void testStemLatin() throws Exception {
+        Query query = new Query(JHSearchFields.MARGINALIA, "maximus");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL", result);
+        
+        assertEquals("Unexpected number of results found.", 9, result.getTotal());
+    }
+
+    @Test
     public void testSearchMarginaliaTranslationPhrase() throws Exception {
         Query query = new Query(JHSearchFields.MARGINALIA, "\"if you wish, you may command the citizens.\"");
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL.", result);
         assertEquals("Unexpected number of results found.", 1, result.getTotal());
-        assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("FolgersHa2.036v.tif"));
+        assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("36v"));
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void testBlankQuery() throws Exception {
-        SearchResult result = service.search(new Query(), null);
-        assertNotNull("Result was NULL.", result);
-        assertEquals("Unexpected number of results found.", 0, result.getTotal());
+        service.search(new Query(), null);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void testNoSearchTermQuery() throws Exception {
-        SearchResult result = service.search(new Query(QueryOperation.AND), null);
-        assertNotNull("Result was NULL.", result);
-        assertEquals("Unexpected number of results found.", 0, result.getTotal());
+        service.search(new Query(QueryOperation.AND), null);
     }
 
     @Test
@@ -89,7 +116,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
         PresentationRequest req = new PresentationRequest("valid.FolgersHa2", null, PresentationRequestType.MANIFEST);
 
         String query = "symbol:'Sun'";
-        
+
         service.handle_request(req, query, 0, os);
 
         String result_json = os.toString("UTF-8");
@@ -99,5 +126,10 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
         assertTrue(result_json.contains("\"context\":"));
         assertTrue(result_json.contains("\"manifest\":"));
         assertTrue(result_json.contains("\"object\":"));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testUnknownField() throws Exception {
+        service.search(new Query("unknown", "moo"), null);
     }
 }

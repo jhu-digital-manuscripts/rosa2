@@ -13,6 +13,7 @@ import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.core.LowerCaseFilter;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
+import org.apache.lucene.analysis.core.WhitespaceTokenizer;
 import org.apache.lucene.analysis.el.GreekAnalyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.es.SpanishAnalyzer;
@@ -20,7 +21,6 @@ import org.apache.lucene.analysis.fr.FrenchAnalyzer;
 import org.apache.lucene.analysis.it.ItalianAnalyzer;
 import org.apache.lucene.analysis.miscellaneous.PerFieldAnalyzerWrapper;
 import org.apache.lucene.analysis.pattern.PatternTokenizer;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field.Store;
 import org.apache.lucene.document.StringField;
@@ -33,6 +33,7 @@ import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 
+import rosa.lucene.la.LatinStemFilter;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
 import rosa.search.model.SearchField;
@@ -72,8 +73,15 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         this.spanish_analyzer = new SpanishAnalyzer();
         this.string_analyzer = new WhitespaceAnalyzer();
 
-        // TODO Wrong. At least do latin stopwords.
-        this.latin_analyzer = new StandardAnalyzer();
+        this.latin_analyzer = new Analyzer() {
+            @Override
+            protected TokenStreamComponents createComponents(String fieldName) {
+                Tokenizer source = new WhitespaceTokenizer();
+                LatinStemFilter result = new LatinStemFilter(source);
+              
+              return new TokenStreamComponents(source, result);
+            }
+        };
 
         // Tokenizes on spaces and . while removing excess 0's
         // TODO r/v?
@@ -155,6 +163,14 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     }
 
     public Query createLuceneQuery(rosa.search.model.Query query) {
+        if (query.getOperation() == null && query.getTerm() == null) {
+            throw new IllegalArgumentException("Query must have operation or term");
+        }
+        
+        if (query.isOperation() && query.children().length == 0) {
+            throw new IllegalArgumentException("Query operation must have children");
+        }
+        
         if (query.isOperation()) {
             BooleanQuery result = new BooleanQuery();
             Occur occur = query.getOperation() == QueryOperation.AND ? Occur.MUST : Occur.SHOULD;
@@ -184,11 +200,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
 
         for (SearchField sf : context_search_fields) {
             for (SearchFieldType type : sf.getFieldTypes()) {
-                Query q = create_lucene_query(sf, type, query);
-
-                if (q != null) {
-                    result.add(q, Occur.SHOULD);
-                }
+                result.add(create_lucene_query(sf, type, query), Occur.SHOULD);
             }
         }
 
@@ -196,14 +208,10 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     }
 
     private Query create_lucene_query(QueryTerm term) {
-        if (term == null) {
-            return null;
-        }
-        
         SearchField sf = search_field_map.get(term.getField());
 
         if (sf == null) {
-            return null;
+            throw new IllegalArgumentException("Unknown field: " + term.getField());
         }
 
         if (sf.getFieldTypes().length == 1) {
@@ -212,11 +220,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
             BooleanQuery query = new BooleanQuery();
 
             for (SearchFieldType type : sf.getFieldTypes()) {
-                Query q = create_lucene_query(sf, type, term.getValue());
-
-                if (q != null) {
-                    query.add(q, Occur.SHOULD);
-                }
+                query.add(create_lucene_query(sf, type, term.getValue()), Occur.SHOULD);
             }
 
             return query;

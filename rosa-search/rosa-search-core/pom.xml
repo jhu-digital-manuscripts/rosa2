@@ -47,7 +47,12 @@
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-queryparser</artifactId>
     </dependency>
-	    
+
+    <dependency>
+      <groupId>rosa</groupId>
+      <artifactId>lucene-latin-stemmer</artifactId>
+    </dependency>
+
     <!-- Test dependencies -->
     
     <dependency>

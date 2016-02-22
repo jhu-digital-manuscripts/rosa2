@@ -27,19 +27,34 @@ public class QueryParser {
      * @throws ParseException
      */
     public static Query parseQuery(ParserInput input) throws ParseException {
+       return parseQuery(input, true);
+    }
+    
+    private static Query parseQuery(ParserInput input, boolean forbid_trailing_input) throws ParseException {
         ParserUtil.skipWhitespace(input);
 
         char c = input.peek();
-
+        Query query;
+        
         if (c == '(') {
-            return parseOperation(input);
+            query = parseOperation(input);
         } else {
-            return parseTerm(input);
+            query = parseTerm(input);
         }
+        
+        if (forbid_trailing_input) {
+            ParserUtil.skipWhitespace(input);
+            
+            if (input.more()) {
+                throw new ParseException(input, "Extra content after end of Query.");
+            }
+        }
+        
+        return query;
     }
     
     public static Query parseQuery(CharSequence s) throws ParseException {
-        return parseQuery(new CharSequenceParserInput(s));
+        return parseQuery(new CharSequenceParserInput(s), true);
     }
 
     private static Query parseOperation(ParserInput input) throws ParseException {
@@ -47,7 +62,7 @@ public class QueryParser {
             throw new ParseException(input, "operation", "Operation must start with '('");
         }
 
-        Query q1 = parseQuery(input);
+        Query q1 = parseQuery(input, false);
 
         ParserUtil.skipWhitespace(input);
         char c = input.next();
@@ -61,7 +76,7 @@ public class QueryParser {
             throw new ParseException(input, "operation", "Invalid operation. Must be & or |");
         }
 
-        Query q2 = parseQuery(input);
+        Query q2 = parseQuery(input, false);
 
         ParserUtil.skipWhitespace(input);
 
@@ -86,7 +101,7 @@ public class QueryParser {
             
             if (c != ')' && !Character.isWhitespace(c)) {
                 throw new ParseException(input, "term",
-                        " must succeeded by have ) or whitespace");
+                        " must succeeded by ) or whitespace");
             }
         }
 
