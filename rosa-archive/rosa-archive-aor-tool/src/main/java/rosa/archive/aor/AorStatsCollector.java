@@ -31,7 +31,7 @@ public class AorStatsCollector {
     /**
      * @param xmlPath fully qualified path to AOR page transcription
      * @return AOR annotated page
-     * @throws IOException .
+     * @throws IOException
      */
     public static AnnotatedPage readAorPage(String xmlPath) throws IOException {
         List<String> errors = new ArrayList<>();

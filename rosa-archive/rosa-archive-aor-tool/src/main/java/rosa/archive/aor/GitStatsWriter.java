@@ -247,7 +247,7 @@ public class GitStatsWriter {
      *
      * @param out output
      * @param vocabMap all stats
-     * @throws IOException .
+     * @throws IOException
      */
     private void writeVocab(BufferedWriter out, final Map<String, Integer> vocabMap) throws IOException {
         out.write("word,frequency");

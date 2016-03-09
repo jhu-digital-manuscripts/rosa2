@@ -1,25 +1,25 @@
 package rosa.archive.aor;
 
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.TemporaryFolder;
-import rosa.archive.core.ResourceUtil;
-import rosa.archive.core.util.CSV;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.io.PrintStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
+
+import rosa.archive.core.ResourceUtil;
+import rosa.archive.core.util.CSV;
 
 public class GitStatsCollectorTest {
     private static final int BOOKS_COLUMNS = 23;
@@ -178,16 +178,6 @@ public class GitStatsCollectorTest {
             assertNotNull(table);
             assertEquals("Unexpected number of rows.", 15, table.length);
             assertEquals("Unexpected number of columns", BOOKS_COLUMNS, table[0].length);
-        }
-    }
-
-    private void print(String[][] table) {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        try {
-            CSV.write(new OutputStreamWriter(out), table);
-            System.out.println(out);
-        } catch (IOException e) {
-            System.err.println("Failed to write table.");
         }
     }
 
