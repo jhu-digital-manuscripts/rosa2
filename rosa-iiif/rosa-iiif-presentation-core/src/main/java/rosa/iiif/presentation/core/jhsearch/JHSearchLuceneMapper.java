@@ -163,14 +163,16 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
     private void index(BookCollection col, Book book, BookImage image, Symbol symbol, Document doc) {
         addField(doc, JHSearchFields.SYMBOL, SearchFieldType.STRING, symbol.getName());
+        addField(doc, JHSearchFields.SYMBOL, get_lang(symbol), symbol.getReferencedText());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Drawing drawing, Document doc) {
         addField(doc, JHSearchFields.DRAWING, SearchFieldType.STRING, drawing.getName());
+        addField(doc, JHSearchFields.DRAWING, get_lang(drawing), drawing.getReferencedText());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Errata errata, Document doc) {
-        SearchFieldType type = getSearchFieldTypeForLang(errata.getLanguage());
+        SearchFieldType type = get_lang(errata);
         
         addField(doc, JHSearchFields.ERRATA, type, errata.getAmendedText());
         addField(doc, JHSearchFields.ERRATA, type, errata.getReferencedText());
@@ -182,7 +184,10 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
     }
 
     private void index(BookCollection col, Book book, BookImage image, Numeral numeral, Document doc) {
-        addField(doc, JHSearchFields.NUMERAL, get_lang(numeral), numeral.getReferencedText());
+        SearchFieldType type = get_lang(numeral);
+        
+        addField(doc, JHSearchFields.NUMERAL, type, numeral.getReferencedText());
+        addField(doc, JHSearchFields.NUMERAL, type, numeral.getNumeral());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Underline underline, Document doc) {
@@ -218,21 +223,10 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
             for (Position pos : lang.getPositions()) {
                 transcription.append(to_string(pos.getTexts()));
 
-                // TODO Variants 
+                // TODO Variants?
                 notes.append(to_string(pos.getBooks()));
                 notes.append(to_string(pos.getPeople()));
                 notes.append(to_string(pos.getLocations()));
-
-                for (InternalReference internalRef : pos.getInternalRefs()) {
-                    for (ReferenceTarget target : internalRef.getTargets()) {
-                        notes.append(target.getBookId());
-                        notes.append(' ');
-                        notes.append(target.getFilename());
-                        notes.append(' ');
-                    }
-                }
-
-                pos.getTexts();
             }
         }
 
