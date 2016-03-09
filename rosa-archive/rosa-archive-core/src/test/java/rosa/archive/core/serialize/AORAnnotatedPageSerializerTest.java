@@ -73,7 +73,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         // errata
         Errata e = page.getErrata().get(0);
         assertNotNull(e);
-        assertEquals("cacommodato", e.getCopyText());
+        assertEquals("cacommodato", e.getReferencedText());
         assertEquals("acommodato", e.getAmendedText());
 
         // <mark name="plus_sign" method="pen" place="intext" language="IT" text="Arguto"/>

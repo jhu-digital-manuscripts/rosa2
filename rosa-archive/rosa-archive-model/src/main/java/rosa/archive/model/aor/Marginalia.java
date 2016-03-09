@@ -14,7 +14,6 @@ public class Marginalia extends Annotation implements Serializable {
     private String date;
     private String otherReader;
     private String topic;
-    private String anchorText;
     private String translation;
     private List<MarginaliaLanguage> languages;
 
@@ -54,14 +53,6 @@ public class Marginalia extends Annotation implements Serializable {
         this.topic = topic;
     }
 
-    public String getAnchorText() {
-        return anchorText;
-    }
-
-    public void setAnchorText(String anchorText) {
-        this.anchorText = anchorText;
-    }
-
     public String getTranslation() {
         return translation;
     }
@@ -98,7 +89,6 @@ public class Marginalia extends Annotation implements Serializable {
 
         Marginalia that = (Marginalia) o;
 
-        if (anchorText != null ? !anchorText.equals(that.anchorText) : that.anchorText != null) return false;
         if (date != null ? !date.equals(that.date) : that.date != null) return false;
         if (hand != null ? !hand.equals(that.hand) : that.hand != null) return false;
         if (languages != null ? !languages.equals(that.languages) : that.languages != null) return false;
@@ -116,7 +106,6 @@ public class Marginalia extends Annotation implements Serializable {
         result = 31 * result + (date != null ? date.hashCode() : 0);
         result = 31 * result + (otherReader != null ? otherReader.hashCode() : 0);
         result = 31 * result + (topic != null ? topic.hashCode() : 0);
-        result = 31 * result + (anchorText != null ? anchorText.hashCode() : 0);
         result = 31 * result + (translation != null ? translation.hashCode() : 0);
         result = 31 * result + (languages != null ? languages.hashCode() : 0);
         return result;
@@ -129,7 +118,6 @@ public class Marginalia extends Annotation implements Serializable {
                 ", date='" + date + '\'' +
                 ", otherReader='" + otherReader + '\'' +
                 ", topic='" + topic + '\'' +
-                ", anchorText='" + anchorText + '\'' +
                 ", translation='" + translation + '\'' +
                 ", languages=" + languages +
                 '}';

@@ -15,7 +15,7 @@ public class Mark extends Annotation implements Serializable {
 
     @Override
     public String toPrettyString() {
-        return "Mark: " + name + " (" + getReferringText() + ")";
+        return "Mark: " + name + " (" + getReferencedText() + ")";
     }
 
     public Mark(String id, String referringText, String name, String method, String language, Location location) {

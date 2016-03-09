@@ -9,15 +9,15 @@ public abstract class Annotation implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String id;
-    private String referringText;
+    private String text;
     private Location location;
     private String language;
 
     protected Annotation() {}
 
-    protected Annotation(String id, String referringText, String language, Location location) {
+    protected Annotation(String id, String refText, String language, Location location) {
         this.id = id;
-        this.referringText = referringText;
+        this.text = refText;
         this.location = location;
         this.language = language;
     }
@@ -30,12 +30,12 @@ public abstract class Annotation implements Serializable {
         this.id = id;
     }
 
-    public String getReferringText() {
-        return referringText;
+    public String getReferencedText() {
+        return text;
     }
 
-    public void setReferringText(String referringText) {
-        this.referringText = referringText;
+    public void setReferencedText(String refText) {
+        this.text = refText;
     }
 
     public Location getLocation() {
@@ -64,7 +64,7 @@ public abstract class Annotation implements Serializable {
         Annotation that = (Annotation) o;
 
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (referringText != null ? !referringText.equals(that.referringText) : that.referringText != null)
+        if (text != null ? !text.equals(that.text) : that.text != null)
             return false;
         if (location != that.location) return false;
         return !(language != null ? !language.equals(that.language) : that.language != null);
@@ -74,7 +74,7 @@ public abstract class Annotation implements Serializable {
     @Override
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (referringText != null ? referringText.hashCode() : 0);
+        result = 31 * result + (text != null ? text.hashCode() : 0);
         result = 31 * result + (location != null ? location.hashCode() : 0);
         result = 31 * result + (language != null ? language.hashCode() : 0);
         return result;
@@ -84,7 +84,7 @@ public abstract class Annotation implements Serializable {
     public String toString() {
         return "Annotation{" +
                 "id='" + id + '\'' +
-                ", referringText='" + referringText + '\'' +
+                ", referringText='" + text + '\'' +
                 ", location=" + location +
                 ", language='" + language + '\'' +
                 '}';
