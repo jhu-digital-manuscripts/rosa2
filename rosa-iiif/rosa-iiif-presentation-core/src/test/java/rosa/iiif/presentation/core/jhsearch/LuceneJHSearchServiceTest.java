@@ -41,7 +41,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
         service = new LuceneJHSearchService(tmpfolder.newFolder().toPath(), formatter);
         service.update(store, VALID_COLLECTION);
     }
-
+    
     @After
     public void cleanup() {
         if (service != null) {
@@ -107,6 +107,26 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
         assertNotNull("Search result was NULL.", result);
         assertEquals("Unexpected number of results found.", 1, result.getTotal());
         assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("7r"));
+    }
+    
+    @Test
+    public void testSearchMarginaliaXRef() throws Exception {
+        Query query = new Query(JHSearchFields.CROSS_REFERENCE, "Erasmus");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL.", result);
+        assertEquals("Unexpected number of results found.", 1, result.getTotal());
+        assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("1v"));
+    }
+    
+    @Test
+    public void testSearchMarginaliaEmphasis() throws Exception {
+        Query query = new Query(JHSearchFields.EMPHASIS, "Bodini");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL.", result);
+        assertEquals("Unexpected number of results found.", 1, result.getTotal());
+        assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("1r"));
     }
 
     @Test(expected = IllegalArgumentException.class)

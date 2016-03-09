@@ -15,15 +15,14 @@ import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Errata;
-import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
-import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
+import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -137,10 +136,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         result.add(doc);
     }
 
-    private boolean is_empty(String str) {
-        return str == null || str.isEmpty();
-    }
-
     // Create document with generic annotation info
     private Document create_document(AnnotatedPage page, BookCollection col, Book book, BookImage image) {
         Document doc = new Document();
@@ -214,6 +209,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
         StringBuilder transcription = new StringBuilder();
         StringBuilder notes = new StringBuilder();
+        StringBuilder emphasis = new StringBuilder();
+        StringBuilder xrefs = new StringBuilder();
 
         SearchFieldType marg_lang_type = SearchFieldType.ENGLISH;
 
@@ -227,20 +224,28 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
                 notes.append(to_string(pos.getBooks()));
                 notes.append(to_string(pos.getPeople()));
                 notes.append(to_string(pos.getLocations()));
+                
+                for (Underline ul : pos.getEmphasis()) {
+                    emphasis.append(ul.getReferencedText() + " ");
+                }
+                
+                for (XRef xref : pos.getxRefs()) {
+                    if (xref.getPerson() != null) {
+                        xrefs.append(xref.getPerson() + " ");
+                    }
+                    
+                    if (xref.getTitle() != null) {
+                        xrefs.append(xref.getTitle() + " ");
+                    }
+                }
             }
         }
 
-        if (transcription.length() > 0) {
-            addField(doc, JHSearchFields.MARGINALIA, marg_lang_type, transcription.toString());
-        }
-
-        if (!is_empty(marg.getTranslation())) {
-            addField(doc, JHSearchFields.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
-        }
-
-        if (notes.length() > 0) {
-            addField(doc, JHSearchFields.MARGINALIA, SearchFieldType.ENGLISH, notes.toString());
-        }        
+        addField(doc, JHSearchFields.MARGINALIA, marg_lang_type, transcription.toString());
+        addField(doc, JHSearchFields.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
+        addField(doc, JHSearchFields.MARGINALIA, SearchFieldType.ENGLISH, notes.toString());
+        addField(doc, JHSearchFields.CROSS_REFERENCE, SearchFieldType.ENGLISH, xrefs.toString());
+        addField(doc, JHSearchFields.EMPHASIS, marg_lang_type, emphasis.toString());
     }
 
     private String to_string(List<String> list) {
