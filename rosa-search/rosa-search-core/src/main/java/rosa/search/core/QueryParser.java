@@ -17,11 +17,11 @@ import rosa.search.model.QueryOperation;
  * 
  * Grammar:
  * <pre>
- * Query -> Term | "(" Query (Operation Query)+ ")"
+ * Query -> Term | "(" Query (Operation Query)+ ")" [Must use same operation]
  * Operation -> "&" | "|"
  * Term -> Field ~ ":" ~ Value
  * Field -> [\w_-]+
- * Value -> "'" ~ .* ~ "'" (backslash is escape character)
+ * Value -> "'" ~ .* ~ "'" [Backslash is escape character]
  * </pre>
  */
 public class QueryParser {

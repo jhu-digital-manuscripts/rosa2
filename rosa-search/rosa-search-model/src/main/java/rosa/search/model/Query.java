@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**
  * A query is a tree whose leaves are terms and inner nodes are logical
- * operations.
+ * operations that combine children together.
  */
 public class Query implements Serializable {
     private static final long serialVersionUID = 1L;
