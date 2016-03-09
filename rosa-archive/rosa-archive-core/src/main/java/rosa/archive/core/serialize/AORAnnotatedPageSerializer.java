@@ -21,8 +21,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
-
 import org.xml.sax.SAXParseException;
+
 import rosa.archive.core.ArchiveConstants;
 import rosa.archive.core.util.Annotations;
 import rosa.archive.core.util.CachingUrlResourceResolver;
@@ -190,6 +190,9 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             Element n = newElement(TAG_NUMERAL, parent, doc);
             setAttribute(n, ATTR_TEXT, numeral.getReferencedText());
             setAttribute(n, ATTR_PLACE, numeral.getLocation().toString().toLowerCase());
+            if (numeral.getNumeral() != null) {
+                n.setTextContent(numeral.getNumeral());
+            }
         }
     }
 
@@ -380,6 +383,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     page.getNumerals().add(new Numeral(
                             Annotations.annotationId(page.getPage(), TAG_NUMERAL, page.getNumerals().size()),
                             annotation.getAttribute(ATTR_TEXT),
+                            annotation.getTextContent(),
                             null,
                             Location.valueOf(
                                     annotation.getAttribute(ATTR_PLACE).toUpperCase()
