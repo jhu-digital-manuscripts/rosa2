@@ -172,21 +172,21 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
     private void index(BookCollection col, Book book, BookImage image, Errata errata, Document doc) {
         SearchFieldType type = getSearchFieldTypeForLang(errata.getLanguage());
         
-        addField(doc, JHSearchFields.ERRATA, type,
-                errata.getAmendedText() + " " + errata.getCopyText());
+        addField(doc, JHSearchFields.ERRATA, type, errata.getAmendedText());
+        addField(doc, JHSearchFields.ERRATA, type, errata.getReferencedText());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Mark mark, Document doc) {
         addField(doc, JHSearchFields.MARK, SearchFieldType.STRING, mark.getName());
-        addField(doc, JHSearchFields.MARK, get_lang(mark), mark.getReferringText());
+        addField(doc, JHSearchFields.MARK, get_lang(mark), mark.getReferencedText());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Numeral numeral, Document doc) {
-        addField(doc, JHSearchFields.NUMERAL, get_lang(numeral), numeral.getReferringText());
+        addField(doc, JHSearchFields.NUMERAL, get_lang(numeral), numeral.getReferencedText());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Underline underline, Document doc) {
-        addField(doc, JHSearchFields.UNDERLINE, get_lang(underline), underline.getReferringText());
+        addField(doc, JHSearchFields.UNDERLINE, get_lang(underline), underline.getReferencedText());
     }
 
     private SearchFieldType get_lang(Annotation a) {
@@ -205,9 +205,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
     }
     
     private void index(BookCollection col, Book book, BookImage image, Marginalia marg, Document doc) {
-        if (!is_empty(marg.getReferringText())) {
-            addField(doc, JHSearchFields.MARGINALIA, get_lang(marg), marg.getReferringText());
-        }
+        addField(doc, JHSearchFields.MARGINALIA, get_lang(marg), marg.getReferencedText());
 
         StringBuilder transcription = new StringBuilder();
         StringBuilder notes = new StringBuilder();
