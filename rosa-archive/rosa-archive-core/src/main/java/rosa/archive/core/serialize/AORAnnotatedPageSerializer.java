@@ -157,7 +157,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
     private void addUnderline(List<Underline> underlines, Element parent, Document doc) {
         for (Underline underline : underlines) {
             Element u = newElement(TAG_UNDERLINE, parent, doc);
-            setAttribute(u, ATTR_TEXT, underline.getReferringText());
+            setAttribute(u, ATTR_TEXT, underline.getReferencedText());
             setAttribute(u, ATTR_METHOD, underline.getMethod());
             setAttribute(u, ATTR_TYPE, underline.getType());
             setAttribute(u, ATTR_LANGUAGE, underline.getLanguage());
@@ -167,7 +167,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
     private void addSymbol(List<Symbol> symbols, Element parent, Document doc) {
         for (Symbol symbol : symbols) {
             Element s = newElement(TAG_SYMBOL, parent, doc);
-            setAttribute(s, ATTR_TEXT, symbol.getReferringText());
+            setAttribute(s, ATTR_TEXT, symbol.getReferencedText());
             setAttribute(s, ATTR_NAME, symbol.getName());
             setAttribute(s, ATTR_LANGUAGE, symbol.getLanguage());
             setAttribute(s, ATTR_PLACE, symbol.getLocation().toString().toLowerCase());
@@ -177,7 +177,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
     private void addMark(List<Mark> marks, Element parent, Document doc) {
         for (Mark mark : marks) {
             Element m = newElement(TAG_MARK, parent, doc);
-            setAttribute(m, ATTR_TEXT, mark.getReferringText());
+            setAttribute(m, ATTR_TEXT, mark.getReferencedText());
             setAttribute(m, ATTR_NAME, mark.getName());
             setAttribute(m, ATTR_METHOD, mark.getMethod());
             setAttribute(m, ATTR_LANGUAGE, mark.getLanguage());
@@ -188,7 +188,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
     private void addNumeral(List<Numeral> numerals, Element parent, Document doc) {
         for (Numeral numeral : numerals) {
             Element n = newElement(TAG_NUMERAL, parent, doc);
-            setAttribute(n, ATTR_TEXT, numeral.getReferringText());
+            setAttribute(n, ATTR_TEXT, numeral.getReferencedText());
             setAttribute(n, ATTR_PLACE, numeral.getLocation().toString().toLowerCase());
         }
     }
@@ -197,7 +197,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         for (Errata errata : erratas) {
             Element e = newElement(TAG_ERRATA, parent, doc);
             setAttribute(e, ATTR_LANGUAGE, errata.getLanguage());
-            setAttribute(e, ATTR_COPYTEXT, errata.getCopyText());
+            setAttribute(e, ATTR_COPYTEXT, errata.getReferencedText());
             setAttribute(e, ATTR_AMENDEDTEXT, errata.getAmendedText());
         }
     }
@@ -205,7 +205,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
     private void addDrawing(List<Drawing> drawings, Element parent, Document doc) {
         for (Drawing drawing : drawings) {
             Element d = newElement(TAG_DRAWING, parent, doc);
-            setAttribute(d, ATTR_TEXT, drawing.getReferringText());
+            setAttribute(d, ATTR_TEXT, drawing.getReferencedText());
             setAttribute(d, ATTR_PLACE, drawing.getLocation().toString().toLowerCase());
             setAttribute(d, ATTR_NAME, drawing.getName());
             setAttribute(d, ATTR_METHOD, drawing.getMethod());
@@ -221,7 +221,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             setAttribute(margEl, ATTR_HAND, marginalia.getHand());
             setAttribute(margEl, ATTR_OTHER_READER, marginalia.getOtherReader());
             setAttribute(margEl, ATTR_TOPIC, marginalia.getTopic());
-            setAttribute(margEl, ATTR_ANCHOR_TEXT, marginalia.getAnchorText());
+            setAttribute(margEl, ATTR_ANCHOR_TEXT, marginalia.getReferencedText());
 
             for (MarginaliaLanguage lang : marginalia.getLanguages()) {
                 Element langEl = newElement(TAG_LANGUAGE, margEl, doc);
@@ -258,7 +258,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     }
                     for (Underline underline : pos.getEmphasis()) {
                         Element e = newElement(TAG_EMPHASIS, posEl, doc);
-                        setAttribute(e, ATTR_TEXT, underline.getReferringText());
+                        setAttribute(e, ATTR_TEXT, underline.getReferencedText());
                         setAttribute(e, ATTR_METHOD, underline.getMethod());
                         setAttribute(e, ATTR_TYPE, underline.getType());
                         setAttribute(e, ATTR_LANGUAGE, underline.getLanguage());
@@ -418,7 +418,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         marg.setHand(annotation.getAttribute(ATTR_HAND));
         marg.setOtherReader(annotation.getAttribute(ATTR_OTHER_READER));
         marg.setTopic(annotation.getAttribute(ATTR_TOPIC));
-        marg.setAnchorText(annotation.getAttribute(ATTR_ANCHOR_TEXT));
+        marg.setReferencedText(annotation.getAttribute(ATTR_ANCHOR_TEXT));
 
         List<MarginaliaLanguage> langs = marg.getLanguages();
         NodeList children = annotation.getChildNodes();

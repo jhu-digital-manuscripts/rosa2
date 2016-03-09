@@ -1,5 +1,8 @@
 package rosa.search.core;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 
@@ -14,11 +17,11 @@ import rosa.search.model.QueryOperation;
  * 
  * Grammar:
  * <pre>
- * Query -> Term | "(" Query Operation Query ")"
+ * Query -> Term | "(" Query (Operation Query)+ ")" [Must use same operation]
  * Operation -> "&" | "|"
  * Term -> Field ~ ":" ~ Value
  * Field -> [\w_-]+
- * Value -> "'" ~ .* ~ "'" (backslash is escape character)
+ * Value -> "'" ~ .* ~ "'" [Backslash is escape character]
  * </pre>
  */
 public class QueryParser {
@@ -62,29 +65,47 @@ public class QueryParser {
             throw new ParseException(input, "operation", "Operation must start with '('");
         }
 
-        Query q1 = parseQuery(input, false);
-
-        ParserUtil.skipWhitespace(input);
-        char c = input.next();
+        List<Query> subqueries =  new ArrayList<>();
+        
+        subqueries.add(parseQuery(input, false));
+        
         QueryOperation op = null;
-
-        if (c == '&') {
-            op = QueryOperation.AND;
-        } else if (c == '|') {
-            op = QueryOperation.OR;
-        } else {
-            throw new ParseException(input, "operation", "Invalid operation. Must be & or |");
+        
+        for (;;) {
+            ParserUtil.skipWhitespace(input);
+            
+            if (!input.more()) {
+                throw new ParseException(input, "operation", "Operation must end with )");
+            }
+            
+            char c = input.next();
+            
+            if (c == '&') {
+                if (op != null && op != QueryOperation.AND) {
+                    throw new ParseException(input, "operation", "Operation must be &");
+                }
+                
+                op = QueryOperation.AND;
+            } else if (c == '|') {
+                if (op != null && op != QueryOperation.OR) {
+                    throw new ParseException(input, "operation", "Operation must be |");
+                }
+                
+                op = QueryOperation.OR;
+            } else if (c == ')') {
+                break;
+            } else {
+                throw new ParseException(input, "operation", "Invalid operation. Must be & or |");
+            }
+            
+            subqueries.add(parseQuery(input, false));
         }
-
-        Query q2 = parseQuery(input, false);
-
-        ParserUtil.skipWhitespace(input);
-
-        if (input.next() != ')') {
-            throw new ParseException(input, "operation", "Operation must end with ')'");
+        
+        if (subqueries.size() == 0) {
+            throw new ParseException(input, "operation", "Invalid operation. Must have at least two queries.");
         }
-
-        return new Query(op, q1, q2);
+        
+        return new Query(op, subqueries.toArray(new Query[]{}));
     }
 
     private static Query parseTerm(ParserInput input) throws ParseException {
@@ -96,14 +117,15 @@ public class QueryParser {
 
         String value = ParserUtil.parseString(input);
 
-        if (input.more()) {
-            char c = input.peek();
-            
-            if (c != ')' && !Character.isWhitespace(c)) {
-                throw new ParseException(input, "term",
-                        " must succeeded by ) or whitespace");
-            }
-        }
+        // TODO
+//        if (input.more()) {
+//            char c = input.peek();
+//            
+//            if (c != ')' && !Character.isWhitespace(c)) {
+//                throw new ParseException(input, "term",
+//                        " must succeeded by ) or whitespace");
+//            }
+//        }
 
         return new Query(field, value);
     }

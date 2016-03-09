@@ -62,7 +62,7 @@ public class AorStatsAdapter {
         for (Underline underline : page.getUnderlines()) {
             vocab.update(
                     underline.getLanguage(),
-                    Arrays.asList(AoRVocabUtil.parse_text(underline.getReferringText()))
+                    Arrays.asList(AoRVocabUtil.parse_text(underline.getReferencedText()))
             );
         }
 
@@ -76,7 +76,7 @@ public class AorStatsAdapter {
             // TODO can associate words with certain Marks
             vocab.update(
                     mark.getLanguage(),
-                    Arrays.asList(AoRVocabUtil.parse_text(mark.getReferringText()))
+                    Arrays.asList(AoRVocabUtil.parse_text(mark.getReferencedText()))
             );
         }
 
@@ -90,7 +90,7 @@ public class AorStatsAdapter {
             // TODO can associate words with certain Symbols
             vocab.update(
                     symbol.getLanguage(),
-                    Arrays.asList(AoRVocabUtil.parse_text(symbol.getReferringText()))
+                    Arrays.asList(AoRVocabUtil.parse_text(symbol.getReferencedText()))
             );
         }
 
@@ -161,7 +161,7 @@ public class AorStatsAdapter {
         int count = 0;
 
         for (Underline ul: ap.getUnderlines()) {
-            count += AoRVocabUtil.count_words(ul.getReferringText());
+            count += AoRVocabUtil.count_words(ul.getReferencedText());
         }
 
         return count;
@@ -171,7 +171,7 @@ public class AorStatsAdapter {
         int count = 0;
 
         for (Mark m: ap.getMarks()) {
-            count += AoRVocabUtil.count_words(m.getReferringText());
+            count += AoRVocabUtil.count_words(m.getReferencedText());
         }
 
         return count;
@@ -181,7 +181,7 @@ public class AorStatsAdapter {
         int count = 0;
 
         for (Symbol s: ap.getSymbols()) {
-            count += AoRVocabUtil.count_words(s.getReferringText());
+            count += AoRVocabUtil.count_words(s.getReferencedText());
         }
 
         return count;

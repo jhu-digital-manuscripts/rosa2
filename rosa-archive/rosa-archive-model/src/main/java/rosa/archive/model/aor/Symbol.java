@@ -15,7 +15,7 @@ public class Symbol extends Annotation implements Serializable {
     @Override
     public String toPrettyString() {
         return name
-                + (getReferringText() != null && !getReferringText().isEmpty() ? " " + getReferringText() : "")
+                + (getReferencedText() != null && !getReferencedText().isEmpty() ? " " + getReferencedText() : "")
                 + " (" + getLocation() + ")";
     }
 

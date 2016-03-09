@@ -59,6 +59,27 @@ public class QueryParserTest {
 
         assertEquals(expected, result);
     }
+    
+
+    @Test
+    public void testParseNestedQuery3() throws ParseException {
+        Query result = QueryParser.parseQuery("(title:'cow'|title:'farm'|description:'good bovine')");
+        Query expected = new Query(QueryOperation.OR,
+                new Query("title", "cow"), new Query("title", "farm"),
+                new Query("description", "good bovine"));
+
+        assertEquals(expected, result);
+    }
+    
+    @Test(expected = ParseException.class)
+    public void testParseInvalidNestedQuery() throws ParseException {
+        QueryParser.parseQuery("(title:'cow'|title:'farm'|description:'good bovine'|)");
+    }
+    
+    @Test(expected = ParseException.class)
+    public void testParseInvalidNestedQueryDifferentOps() throws ParseException {
+        QueryParser.parseQuery("(title:'cow'|title:'farm'&description:'good bovine')");
+    }
 
     @Test
     public void testEscapingTermValue() throws ParseException {
@@ -80,12 +101,12 @@ public class QueryParserTest {
 
     @Test(expected = ParseException.class)
     public void testParseInvalidNested() throws ParseException {
-        QueryParser.parseQuery("( f:'v' & g:'g'");
+        QueryParser.parseQuery("( f:'v' &g:'g'");
     }
     
     @Test(expected = ParseException.class)
     public void testParseInvalidRandomString() throws ParseException {
-        QueryParser.parseQuery("cow: mammal!");
+        QueryParser.parseQuery("cow: mammal!  ");
     }
     
     @Test(expected = ParseException.class)

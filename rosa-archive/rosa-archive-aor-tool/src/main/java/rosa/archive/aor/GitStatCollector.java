@@ -264,8 +264,8 @@ public class GitStatCollector {
      * @param currentRev current commit
      * @param aorGit Git object
      * @return list of all diffs
-     * @throws GitAPIException .
-     * @throws IOException .
+     * @throws GitAPIException
+     * @throws IOException
      */
     private List<DiffEntry> diffs(RevCommit currentRev, Git aorGit) throws GitAPIException, IOException {
         List<DiffEntry> allDiffs = new ArrayList<>();

@@ -10,24 +10,17 @@ public class Errata extends Annotation implements Serializable {
 
     private String amendedText;
 
-    public Errata() {}
+    public Errata() {
+    }
 
     @Override
     public String toPrettyString() {
-        return "Errata: " + getReferringText() + " > " + amendedText;
+        return "Errata: " + getReferencedText() + " > " + amendedText;
     }
 
     public Errata(String id, String language, String copyText, String amendedText) {
         super(id, copyText, language, Location.INTEXT);
         this.amendedText = amendedText;
-    }
-
-    public String getCopyText() {
-        return getReferringText();
-    }
-
-    public void setCopyText(String copyText) {
-        setReferringText(copyText);
     }
 
     public String getAmendedText() {
@@ -40,13 +33,17 @@ public class Errata extends Annotation implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        if (!super.equals(o))
+            return false;
 
         Errata errata = (Errata) o;
 
-        if (amendedText != null ? !amendedText.equals(errata.amendedText) : errata.amendedText != null) return false;
+        if (amendedText != null ? !amendedText.equals(errata.amendedText) : errata.amendedText != null)
+            return false;
 
         return true;
     }
@@ -60,9 +57,6 @@ public class Errata extends Annotation implements Serializable {
 
     @Override
     public String toString() {
-        return "Errata{" +
-                "copyText='" + getCopyText() + '\'' +
-                "amendedText='" + amendedText + '\'' +
-                '}';
+        return "Errata{" + "copyText='" + getReferencedText() + '\'' + "amendedText='" + amendedText + '\'' + '}';
     }
 }
