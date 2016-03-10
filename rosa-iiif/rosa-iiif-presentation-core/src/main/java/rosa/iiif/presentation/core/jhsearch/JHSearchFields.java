@@ -16,11 +16,13 @@ public enum JHSearchFields implements SearchField {
     MANIFEST_LABEL(false, true, SearchFieldType.STRING),
     MARGINALIA(true, false, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
     UNDERLINE(true, false, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    EMPHASIS(true, false, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
     ERRATA(true, false,SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
-    MARK(true, false,SearchFieldType.STRING,SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
-    SYMBOL(true, false,SearchFieldType.STRING),
-    NUMERAL(true,false,SearchFieldType.STRING),
-    DRAWING(true,false,SearchFieldType.STRING),
+    MARK(true, false,SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    SYMBOL(true, false,SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    NUMERAL(true,false,SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    DRAWING(true,false,SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    CROSS_REFERENCE(true,false,SearchFieldType.ENGLISH),
     IMAGE_NAME(true, false,SearchFieldType.IMAGE_NAME);
 
     private final SearchFieldType[] types;
