@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import rosa.archive.model.ReferenceSheet;
 
@@ -44,5 +45,14 @@ public class ReferenceSheetSerializerTest extends BaseSerializerTest<ReferenceSh
     @Test (expected = UnsupportedOperationException.class)
     public void writeTest() throws IOException {
         serializer.write(null, null);
+    }
+
+    @Override
+    @Ignore
+    public void roundTripTest() throws IOException {}
+
+    @Override
+    protected ReferenceSheet createObject() {
+        return null;
     }
 }

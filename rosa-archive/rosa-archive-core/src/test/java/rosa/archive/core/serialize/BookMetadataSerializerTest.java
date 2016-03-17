@@ -68,12 +68,16 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         assertEquals("                        <locus from=\"Page 0\" to=\"Page 1\">Page 0-Page 1</locus>",
                     lines.get(28));
         assertEquals("                        <note type=\"linesPerColumn\">45</note>",
-                    lines.get(50));
+                    lines.get(53));
+    }
+
+    @Override
+    protected BookMetadata createObject() {
+        return createMetadata();
     }
 
     private BookMetadata createMetadata() {
         BookMetadata metadata = new BookMetadata();
-        metadata.setId("Test.ID");
 
         metadata.setCommonName("Common Name");
         metadata.setTitle("Title");

@@ -222,6 +222,11 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest<Multilan
         }
     }
 
+    @Override
+    protected MultilangMetadata createObject() {
+        return createMetadata();
+    }
+
     private MultilangMetadata createMetadata() {
         MultilangMetadata metadata = new MultilangMetadata();
 
@@ -232,6 +237,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest<Multilan
         metadata.setHeight(200);
         metadata.setYearStart(1900);
         metadata.setYearEnd(1950);
+//        metadata.setLicenseUrl("http://example.org/license");
 
         BookText t1 = new BookText();
         t1.setId("1");

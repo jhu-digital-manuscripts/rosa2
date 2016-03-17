@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import rosa.archive.model.BookDescription;
 
@@ -41,5 +42,16 @@ public class BookDescriptionSerializerTest extends BaseSerializerTest<BookDescri
     @Test(expected = UnsupportedOperationException.class)
     public void writeTest() throws IOException {
         serializer.write(null, null);
+    }
+
+    @Ignore
+    @Override
+    public void roundTripTest() throws IOException {
+
+    }
+
+    @Override
+    protected BookDescription createObject() {
+        return null;
     }
 }

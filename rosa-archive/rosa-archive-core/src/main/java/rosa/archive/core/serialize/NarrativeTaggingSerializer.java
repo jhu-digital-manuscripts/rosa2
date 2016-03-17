@@ -113,7 +113,7 @@ public class NarrativeTaggingSerializer implements Serializer<NarrativeTagging> 
 
             BookScene scene = createBookScene(
                     csv[0], csv[1], csv[2], csv[3], csv[4], csv[5], errors, lineCount,
-                    Boolean.parseBoolean(csv[6]), Integer.parseInt(csv[7])
+                    Integer.parseInt(csv[6]) == 1, Integer.parseInt(csv[7])
             );
 
             if (scene != null) {

@@ -68,6 +68,11 @@ public class ImageListSerializerTest extends BaseSerializerTest<ImageList> {
         assertTrue(lines.contains("*LudwigXV7.binding.backcover.tif,109,209"));
     }
 
+    @Override
+    protected ImageList createObject() {
+        return createImageList();
+    }
+
     private ImageList createImageList() {
         String[] names = {
                 "LudwigXV7.001r.tif",

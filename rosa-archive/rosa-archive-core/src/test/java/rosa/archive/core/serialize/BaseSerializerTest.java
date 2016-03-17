@@ -1,5 +1,6 @@
 package rosa.archive.core.serialize;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,7 +11,9 @@ import java.util.List;
 import org.junit.Test;
 import rosa.archive.model.HasId;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  *
@@ -26,6 +29,24 @@ public abstract class BaseSerializerTest<T extends HasId> {
 
     @Test
     public abstract void writeTest() throws IOException;
+
+    @Test
+    public void roundTripTest() throws IOException {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        T original = createObject();
+
+        serializer.write(original, out);
+
+        ByteArrayInputStream in = new ByteArrayInputStream(out.toByteArray());
+        List<String> errors = new ArrayList<>();
+
+        T result = serializer.read(in, errors);
+
+        assertTrue("Unexpected errors found while reading.", errors.isEmpty());
+        assertEquals("Result and original were not equal.", original, result);
+    }
+
+    protected abstract T createObject();
 
     /**
      * @param path path of test resource

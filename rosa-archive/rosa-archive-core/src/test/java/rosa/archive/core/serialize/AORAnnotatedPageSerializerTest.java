@@ -6,8 +6,12 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import org.junit.Before;
@@ -16,7 +20,10 @@ import org.junit.Test;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Location;
+import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
+import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 
@@ -146,6 +153,82 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals(32, marks);
         assertEquals(0, errata);
         assertEquals(0, numerals);
+    }
+
+//    /**
+//     * Test the serializer's reading and writing functions together. Given a known AnnotationPage
+//     * object, the serializer is used to write the object and to read back the written object.
+//     * The resulting object MUST be equal to the original object.
+//     *
+//     * @throws Exception reading/writing can both throw IOExceptions
+//     */
+//    @Test
+//    @Override
+//    public void roundTripTest() throws IOException {
+//        AnnotatedPage page = createPage();
+//        ByteArrayOutputStream out = new ByteArrayOutputStream();
+//
+//        serializer.write(page, out);
+//
+//        ByteArrayInputStream in = new ByteArrayInputStream(out.toByteArray());
+//        List<String> errors = new ArrayList<>();
+//
+//        AnnotatedPage read = serializer.read(in, errors);
+//
+//        assertTrue("Unexpected errors found while deserializing.", errors.isEmpty());
+//        assertNotNull("Deserialized page is NULL.", read);
+//        assertTrue("Deserialized page not equal to original page.", page.equals(read));
+//    }
+
+    // Note IDs of annotations take special values based of Page#, annotation type, and annotation order
+    @Override
+    protected AnnotatedPage createObject() {
+        AnnotatedPage page = new AnnotatedPage();
+
+        page.setPage("1");
+        page.setPagination("???");
+        page.setReader("JUnit");
+        page.setSignature("~~Signature~~");
+
+        page.setMarks(Arrays.asList(
+                new Mark("1_mark_0", "", "plus_sign", "pen", "EN", Location.HEAD),
+                new Mark("1_mark_1", "", "plus_sign", "pen", "EN", Location.HEAD),
+                new Mark("1_mark_2", "", "pen_trial", "pen", "EN", Location.HEAD)
+        ));
+        page.setSymbols(Arrays.asList(
+                new Symbol("1_symbol_0", "", "Mars", "EN", Location.RIGHT_MARGIN),
+                new Symbol("1_symbol_1", "", "Mars", "EN", Location.RIGHT_MARGIN),
+                new Symbol("1_symbol_2", "", "Sun", "EN", Location.LEFT_MARGIN)
+        ));
+        page.setErrata(Collections.singletonList(new Errata("1_errata_0", "EN", "error text", "good text")));
+
+        List<Marginalia> margs = new ArrayList<>();
+        page.setMarginalia(margs);
+
+        Marginalia m1 = new Marginalia();
+        m1.setTranslation("Marginalia 1 translation");
+        m1.setLocation(Location.TAIL);
+        m1.setId("1_marginalia_0");
+
+        List<MarginaliaLanguage> langs = new ArrayList<>();
+        m1.setLanguages(langs);
+
+        MarginaliaLanguage l1 = new MarginaliaLanguage();
+        l1.setLang("EN");
+
+        List<Position> poss = new ArrayList<>();
+        l1.setPositions(poss);
+
+        Position pos = new Position();
+        poss.add(pos);
+
+        pos.setOrientation(0);
+        pos.setPlace(Location.INTEXT);
+        pos.setTexts(Collections.singletonList("Text of Marginalia in pos1"));
+        pos.setPeople(Arrays.asList("Jim", "Sayeed", "Mark"));
+        pos.setBooks(Arrays.asList("Dune", "Foundation", "Hyperion"));
+
+        return page;
     }
 
 //    private Document getDocument(String path) throws IOException {

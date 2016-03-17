@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.redtag.StructureColumn;
@@ -62,6 +63,17 @@ public class BookStructureSerializerTest extends BaseSerializerTest<BookStructur
     @Test (expected = UnsupportedOperationException.class)
     public void writeTest() throws IOException {
         writeObjectAndGetContent(new BookStructure());
+    }
+
+    @Override
+    @Ignore
+    public void roundTripTest() throws IOException {
+
+    }
+
+    @Override
+    protected BookStructure createObject() {
+        return null;
     }
 
 }

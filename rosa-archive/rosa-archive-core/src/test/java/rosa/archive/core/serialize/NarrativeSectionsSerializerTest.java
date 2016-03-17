@@ -47,6 +47,11 @@ public class NarrativeSectionsSerializerTest extends BaseSerializerTest<Narrativ
         writeObjectAndGetContent(createNarrativeSections());
     }
 
+    @Override
+    protected NarrativeSections createObject() {
+        return createNarrativeSections();
+    }
+
     /**
      * @return a NarrativeSections object to test the write method
      */

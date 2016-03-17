@@ -1,5 +1,6 @@
 package rosa.archive.core.serialize;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.BookReferenceSheet;
@@ -34,5 +35,16 @@ public class BookReferenceSerializerTest extends BaseSerializerTest<BookReferenc
     @Test(expected = UnsupportedOperationException.class)
     public void writeTest() throws IOException {
         serializer.write(null, null);
+    }
+
+    @Ignore
+    @Override
+    public void roundTripTest() throws IOException {
+
+    }
+
+    @Override
+    public BookReferenceSheet createObject() {
+        return null;
     }
 }

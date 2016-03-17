@@ -38,16 +38,7 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest<Illustr
     @Test
     public void writeTest() throws IOException {
         // Setup IllustrationTitles object
-        IllustrationTitles titles = new IllustrationTitles();
-        titles.setId("IllustrationTitles");
-
-        Map<String, String> titlesMap = new HashMap<>();
-        for (int i = 0; i < 10; i++) {
-            titlesMap.put("ID" + i, "Illustration Title [" + i + "]");
-        }
-        titlesMap.put("ID3", "Title 2");
-        titlesMap.put("ID8", "Title 1, Title 2, Title 3");
-        titles.setData(titlesMap);
+        IllustrationTitles titles = createObject();
 
         // Write the object and get all written lines
         List<String> lines = writeObjectAndGetWrittenLines(titles);
@@ -59,6 +50,22 @@ public class IllustrationTitlesSerializerTest extends BaseSerializerTest<Illustr
         assertTrue(lines.contains("ID3,Title 2"));
         assertTrue(lines.contains("ID8,\"Title 1, Title 2, Title 3\""));
         assertTrue(lines.contains("ID1,Illustration Title [1]"));
+    }
+
+    @Override
+    protected IllustrationTitles createObject() {
+        IllustrationTitles titles = new IllustrationTitles();
+//        titles.setId("IllustrationTitles");
+
+        Map<String, String> titlesMap = new HashMap<>();
+        for (int i = 0; i < 10; i++) {
+            titlesMap.put("ID" + i, "Illustration Title [" + i + "]");
+        }
+        titlesMap.put("ID3", "Title 2");
+        titlesMap.put("ID8", "Title 1, Title 2, Title 3");
+        titles.setData(titlesMap);
+
+        return titles;
     }
 
 }

@@ -74,13 +74,18 @@ public class NarrativeTaggingSerializerTest extends BaseSerializerTest<Narrative
         writeObjectAndGetContent(createNartag());
     }
 
+    @Override
+    protected NarrativeTagging createObject() {
+        return createNartag();
+    }
+
     /**
      * @return a NarrativeTagging object to test the write method
      */
     private NarrativeTagging createNartag() {
         NarrativeTagging tagging = new NarrativeTagging();
 
-        tagging.setId("NarrativeTaggingID");
+//        tagging.setId("NarrativeTaggingID");
 
         List<BookScene> scenes = tagging.getScenes();
         for (int i = 0; i < 10; i++) {

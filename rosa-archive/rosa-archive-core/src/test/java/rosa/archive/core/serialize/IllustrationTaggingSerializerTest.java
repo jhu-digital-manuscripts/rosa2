@@ -65,13 +65,18 @@ public class IllustrationTaggingSerializerTest extends BaseSerializerTest<Illust
         assertTrue(lines.contains("IllID8,Page 8,\"Title1,Title2\",TextualElement,,\"char1,char2\",,,,,OtherOtherOther"));
     }
 
+    @Override
+    protected IllustrationTagging createObject() {
+        return createTagging();
+    }
+
     /**
      * @return an IllustrationTagging object to test the write method.
      */
     private IllustrationTagging createTagging() {
         IllustrationTagging tagging = new IllustrationTagging();
 
-        tagging.setId("TaggingID");
+//        tagging.setId("TaggingID");
         for (int i = 0; i < 10; i++) {
             Illustration ill = new Illustration();
             ill.setId("IllID" + i);
@@ -80,6 +85,11 @@ public class IllustrationTaggingSerializerTest extends BaseSerializerTest<Illust
             ill.setTextualElement("TextualElement");
             ill.setCharacters(new String[] {"char1", "char2"});
             ill.setOther("OtherOtherOther");
+            ill.setObject("");
+            ill.setCostume("");
+            ill.setInitials("");
+            ill.setLandscape("");
+            ill.setArchitecture("");
 
             tagging.addIllustrationData(ill);
         }

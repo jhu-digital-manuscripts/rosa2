@@ -51,6 +51,11 @@ public class CharacterNamesSerializerTest extends BaseSerializerTest<CharacterNa
         assertTrue(lines.contains("id4,,name44,n4"));
     }
 
+    @Override
+    protected CharacterNames createObject() {
+        return createCharacterNames();
+    }
+
     private CharacterNames createCharacterNames() {
         CharacterNames names = new CharacterNames();
 
@@ -77,6 +82,7 @@ public class CharacterNamesSerializerTest extends BaseSerializerTest<CharacterNa
 
         CharacterName n4 = new CharacterName();
         n4.setId("id4");
+        n4.addName("", "site name");
         n4.addName("name4", "en");
         n4.addName("n4", "en");
         n4.addName("name44", "fr");

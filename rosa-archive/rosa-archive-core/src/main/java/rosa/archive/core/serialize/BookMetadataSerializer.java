@@ -147,9 +147,9 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         msDesc.appendChild(msIdentifier);
 
         // <settlement>
-        Element origin = doc.createElement(MetadataOriginTag);
+        Element origin = doc.createElement(MetadataCurrentLocationTag);
         msIdentifier.appendChild(origin);
-        origin.appendChild(doc.createTextNode(metadata.getOrigin()));
+        origin.appendChild(doc.createTextNode(metadata.getCurrentLocation()));
 
         // <repository>
         Element repository = doc.createElement(MetadataRepositoryTag);
@@ -178,6 +178,10 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             locus.setAttribute(MetadataTextsFirstPageTag, text.getFirstPage());
             locus.setAttribute(MetadataTextsLastPageTag, text.getLastPage());
             locus.appendChild(doc.createTextNode(text.getFirstPage() + "-" + text.getLastPage()));
+
+            Element textTitle = doc.createElement(MetadataTextsTitleTag);
+            msItem.appendChild(textTitle);
+            textTitle.appendChild(doc.createTextNode(text.getTitle()));
 
             msItem.appendChild(note(MetadataTextsIdTag, text.getId(), doc));
             msItem.appendChild(note(MetadataTextsNumPagesTag, String.valueOf(text.getNumberOfPages()), doc));
@@ -274,6 +278,27 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         return getIntegerQuietly(getString(el, name));
     }
 
+    private String getAttribute(Element el, String elementName, String attribute) {
+        NodeList list = el.getElementsByTagName(elementName);
+
+        // No XML tag with specified name.
+        if (list.getLength() == 0) {
+            // First check if there is a <note> tag with 'type' attribute equal
+            // to specified name
+            NodeList notes = el.getElementsByTagName("note");
+
+            if (notes == null) {
+                return null;
+            }
+
+            // in read() method, create a Map<String, String> (type attribute ->
+            // textContent)?
+            return  ((Element) notes.item(0)).getAttribute(attribute);
+        }
+
+        return ((Element) list.item(0)).getAttribute(attribute);
+    }
+
     /**
      * Parse a string as an integer. Will not throw an exception in the event of
      * a parsing error, instead it will return the value of -1. A parsing error
@@ -325,7 +350,8 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         metadata.setMaterial(getString(top, MetadataMaterialTag));
         metadata.setType(getString(top, MetadataTypeTag));
         metadata.setDimensions((metadata.getWidth() == -1 || metadata.getHeight() == -1) ? "" : metadata.getWidth()
-                + "x" + metadata.getHeight() + "mm");
+                + "x" + metadata.getHeight());
+        metadata.setDimensionUnits(metadata.getWidth() == -1 ? "" : getAttribute(top, MetadataHeightTag, "unit"));
 
         NodeList measureElement = top.getElementsByTagName(MetadataMeasureTag);
         if (measureElement.getLength() > 0) {
@@ -353,13 +379,14 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             Element el = (Element) nodes.item(i);
             BookText text = new BookText();
 
-            text.setId(String.valueOf(i));
+//            text.setId(String.valueOf(i));
+            text.setId(getString(el, MetadataTextsIdTag));
             text.setLinesPerColumn(getInteger(el, MetadataTextsLinesPerColTag));
             text.setColumnsPerPage(getInteger(el, MetadataTextsColsPerPageTag));
             text.setLeavesPerGathering(getInteger(el, MetadataTextsLeavesPerGatheringTag));
             text.setNumberOfIllustrations(getInteger(el, MetadataNumIllustrationsTag));
             text.setNumberOfPages(getInteger(el, MetadataTextsNumPagesTag));
-            text.setTextId(getString(el, MetadataTextsIdTag));
+//            text.setTextId(getString(el, MetadataTextsIdTag));
             text.setTitle(getString(el, MetadataTextsTitleTag));
 
             NodeList locii = el.getElementsByTagName(MetadataTextsLocusTag);

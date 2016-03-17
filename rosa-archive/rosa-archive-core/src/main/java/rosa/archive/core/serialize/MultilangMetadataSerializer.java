@@ -164,8 +164,12 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
         NodeList licenseList = top.getElementsByTagName("license");
         if (licenseList.getLength() == 1 && licenseList.item(0).getNodeType() == Node.ELEMENT_NODE) {
             Element licenseElement = (Element) licenseList.item(0);
-            metadata.setLicenseUrl(text("url", licenseElement));
-            metadata.setLicenseLogo(text("logo", licenseElement));
+
+            String url = text("url", licenseElement);
+            metadata.setLicenseUrl(url.equals("") ? null : url);
+
+            String logo = text("logo", licenseElement);
+            metadata.setLicenseLogo(logo.equals("") ? null : logo);
         }
 
         return metadata;
@@ -183,6 +187,7 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
         for (Element textEl : getElementsInList("text", texts)) {
             BookText text = new BookText();
 
+            text.setId(textEl.getAttribute("id"));
             text.setTextId(text("textId", textEl));
             text.setColumnsPerPage(number("columnsPerPage", textEl));
             text.setLeavesPerGathering(number("leavesPerGathering", textEl));

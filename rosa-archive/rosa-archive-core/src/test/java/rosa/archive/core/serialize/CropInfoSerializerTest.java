@@ -50,6 +50,11 @@ public class CropInfoSerializerTest extends BaseSerializerTest<CropInfo> {
         assertTrue(lines.contains("LudwigXV7.136v.tif 0.055427 0.063510 0.040833 0.045833"));
     }
 
+    @Override
+    protected CropInfo createObject() {
+        return createCropInfo();
+    }
+
     /**
      * @return a CropInfo object to test the write method
      */

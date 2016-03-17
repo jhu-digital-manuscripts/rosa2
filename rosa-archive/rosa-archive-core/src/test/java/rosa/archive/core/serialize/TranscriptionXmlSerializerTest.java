@@ -1,6 +1,7 @@
 package rosa.archive.core.serialize;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import rosa.archive.model.Transcription;
 
@@ -35,6 +36,15 @@ public class TranscriptionXmlSerializerTest extends BaseSerializerTest<Transcrip
     @Test (expected = UnsupportedOperationException.class)
     public void writeTest() throws IOException {
         writeObjectAndGetContent(new Transcription());
+    }
+
+    @Override
+    @Ignore
+    public void roundTripTest() throws IOException {}
+
+    @Override
+    protected Transcription createObject() {
+        return null;
     }
 
 }
