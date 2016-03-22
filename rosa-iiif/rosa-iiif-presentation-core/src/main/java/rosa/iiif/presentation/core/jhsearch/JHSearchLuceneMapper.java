@@ -11,6 +11,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.Drawing;
@@ -214,28 +215,55 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
         SearchFieldType marg_lang_type = SearchFieldType.ENGLISH;
 
+        ReferenceSheet peopleRefs = col.getPeopleRef();
+        ReferenceSheet bookRefs = col.getBooksRef();
+        ReferenceSheet locationRefs = col.getLocationsRef();
+
         for (MarginaliaLanguage lang : marg.getLanguages()) {
             marg_lang_type = getSearchFieldTypeForLang(lang.getLang());
 
             for (Position pos : lang.getPositions()) {
                 transcription.append(to_string(pos.getTexts()));
 
-                // TODO Variants?
-                notes.append(to_string(pos.getBooks()));
-                notes.append(to_string(pos.getPeople()));
-                notes.append(to_string(pos.getLocations()));
-                
-                for (Underline ul : pos.getEmphasis()) {
-                    emphasis.append(ul.getReferencedText() + " ");
-                }
-                
+                //Index <person> tags + variants
+                StringBuilder people = new StringBuilder("People: ");
+                pos.getPeople().forEach(person -> {
+                    people.append(person).append(" ");
+                    if (peopleRefs != null && peopleRefs.hasAlternates(person)) {
+                        peopleRefs.getAlternates(person).forEach(alt -> people.append(alt).append(" "));
+                    }
+                });
+                notes.append(people.toString());
+
+                // Index <book> tags + variants
+                StringBuilder books = new StringBuilder("Books: ");
+                pos.getBooks().forEach(bookRef -> {
+                    books.append(bookRef).append(" ");
+                    if (bookRefs != null && bookRefs.hasAlternates(bookRef)) {
+                        bookRefs.getAlternates(bookRef).forEach(alt -> books.append(alt).append(" "));
+                    }
+                });
+                notes.append(books.toString());
+
+                // Index <location> tags + variants
+                StringBuilder locs = new StringBuilder("Locations: ");
+                pos.getLocations().forEach(location -> {
+                    locs.append(location).append(" ");
+                    if (locationRefs != null && locationRefs.hasAlternates(location)) {
+                        locationRefs.getAlternates(location).forEach(alt -> locs.append(alt).append(" "));
+                    }
+                });
+                notes.append(locs.toString());
+
+                pos.getEmphasis().forEach(underline -> emphasis.append(underline.getReferencedText()).append(" "));
+
                 for (XRef xref : pos.getxRefs()) {
                     if (xref.getPerson() != null) {
-                        xrefs.append(xref.getPerson() + " ");
+                        xrefs.append(xref.getPerson()).append(" ");
                     }
-                    
+
                     if (xref.getTitle() != null) {
-                        xrefs.append(xref.getTitle() + " ");
+                        xrefs.append(xref.getTitle()).append(" ");
                     }
                 }
             }
