@@ -42,9 +42,15 @@ public class IIIFPresentationRequestParser {
                 return null;
             }
         } else if (parts.length == 3) {
+            PresentationRequestType type = parse_type(parts[1]);
+            
+            if (type == null || type == PresentationRequestType.MANIFEST || type == PresentationRequestType.COLLECTION) {
+                return null;
+            }
+            
             req.setId(parts[0]);
-            req.setType(parse_type(parts[1]));
-            req.setName(parts[2]);
+            req.setType(type);
+            req.setName(parts[2]);            
         } else {
             return null;
         }

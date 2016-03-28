@@ -16,6 +16,7 @@ public class IIIFPresentationRequestParserTest {
         assertNull(parser.parsePresentationRequest(""));
         assertNull(parser.parsePresentationRequest("lkj;lka../a;/z'"));
         assertNull(parser.parsePresentationRequest("%2F/;"));
+        assertNull(parser.parsePresentationRequest("/rosecollection.Douce195/manifest/jhsearch"));
     }
     
     @Test
@@ -27,7 +28,6 @@ public class IIIFPresentationRequestParserTest {
         expected = new PresentationRequest("rosecollection.Douce195", null, PresentationRequestType.MANIFEST);       
         assertEquals(expected, result);
        
-       
         result = parser.parsePresentationRequest("/collection/rosecollection");
         expected = new PresentationRequest(null, "rosecollection", PresentationRequestType.COLLECTION);       
         assertEquals(expected, result);
@@ -38,6 +38,6 @@ public class IIIFPresentationRequestParserTest {
         
         result = parser.parsePresentationRequest("/moo/sequence/blah");
         expected = new PresentationRequest("moo", "blah", PresentationRequestType.SEQUENCE);       
-        assertEquals(expected, result);
+        assertEquals(expected, result);        
     }    
 }
