@@ -1,17 +1,18 @@
 package rosa.archive.core.serialize;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
-import org.junit.Before;
-import org.junit.Test;
-import rosa.archive.model.BookReferenceSheet;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+
+import rosa.archive.model.BookReferenceSheet;
 
 public class BookReferenceSerializerTest extends BaseSerializerTest<BookReferenceSheet> {
     @Before
