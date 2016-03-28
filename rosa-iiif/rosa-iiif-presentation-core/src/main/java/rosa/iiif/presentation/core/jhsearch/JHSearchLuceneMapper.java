@@ -42,13 +42,13 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
     private final IIIFPresentationRequestFormatter formatter;
     
     public JHSearchLuceneMapper(IIIFPresentationRequestFormatter formatter) {
-        super(JHSearchFields.values());
+        super(JHSearchField.values());
         this.formatter = formatter;
     }
 
     @Override
     public SearchField getIdentifierSearchField() {
-        return JHSearchFields.OBJECT_ID;
+        return JHSearchField.OBJECT_ID;
     }
 
     /**
@@ -145,49 +145,49 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         String manifest_id = get_uri(col.getId(), book.getId(), null, PresentationRequestType.MANIFEST);
         String canvas_id = get_uri(col.getId(), book.getId(), image.getName(), PresentationRequestType.CANVAS);
         
-        addField(doc, JHSearchFields.COLLECTION_ID, collection_id);
+        addField(doc, JHSearchField.COLLECTION_ID, collection_id);
         
-        addField(doc, JHSearchFields.OBJECT_ID, canvas_id);
-        addField(doc, JHSearchFields.OBJECT_TYPE, IIIFNames.SC_CANVAS);
-        addField(doc, JHSearchFields.OBJECT_LABEL, image.getName());
+        addField(doc, JHSearchField.OBJECT_ID, canvas_id);
+        addField(doc, JHSearchField.OBJECT_TYPE, IIIFNames.SC_CANVAS);
+        addField(doc, JHSearchField.OBJECT_LABEL, image.getName());
         
-        addField(doc, JHSearchFields.MANIFEST_ID, manifest_id);        
-        addField(doc, JHSearchFields.MANIFEST_LABEL, book.getBookMetadata("en").getCommonName());
+        addField(doc, JHSearchField.MANIFEST_ID, manifest_id);        
+        addField(doc, JHSearchField.MANIFEST_LABEL, book.getBookMetadata("en").getCommonName());
         
         return doc;
     }
 
     private void index(BookCollection col, Book book, BookImage image, Symbol symbol, Document doc) {
-        addField(doc, JHSearchFields.SYMBOL, SearchFieldType.STRING, symbol.getName());
-        addField(doc, JHSearchFields.SYMBOL, get_lang(symbol), symbol.getReferencedText());
+        addField(doc, JHSearchField.SYMBOL, SearchFieldType.STRING, symbol.getName());
+        addField(doc, JHSearchField.SYMBOL, get_lang(symbol), symbol.getReferencedText());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Drawing drawing, Document doc) {
-        addField(doc, JHSearchFields.DRAWING, SearchFieldType.STRING, drawing.getName());
-        addField(doc, JHSearchFields.DRAWING, get_lang(drawing), drawing.getReferencedText());
+        addField(doc, JHSearchField.DRAWING, SearchFieldType.STRING, drawing.getName());
+        addField(doc, JHSearchField.DRAWING, get_lang(drawing), drawing.getReferencedText());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Errata errata, Document doc) {
         SearchFieldType type = get_lang(errata);
         
-        addField(doc, JHSearchFields.ERRATA, type, errata.getAmendedText());
-        addField(doc, JHSearchFields.ERRATA, type, errata.getReferencedText());
+        addField(doc, JHSearchField.ERRATA, type, errata.getAmendedText());
+        addField(doc, JHSearchField.ERRATA, type, errata.getReferencedText());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Mark mark, Document doc) {
-        addField(doc, JHSearchFields.MARK, SearchFieldType.STRING, mark.getName());
-        addField(doc, JHSearchFields.MARK, get_lang(mark), mark.getReferencedText());
+        addField(doc, JHSearchField.MARK, SearchFieldType.STRING, mark.getName());
+        addField(doc, JHSearchField.MARK, get_lang(mark), mark.getReferencedText());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Numeral numeral, Document doc) {
         SearchFieldType type = get_lang(numeral);
         
-        addField(doc, JHSearchFields.NUMERAL, type, numeral.getReferencedText());
-        addField(doc, JHSearchFields.NUMERAL, type, numeral.getNumeral());
+        addField(doc, JHSearchField.NUMERAL, type, numeral.getReferencedText());
+        addField(doc, JHSearchField.NUMERAL, type, numeral.getNumeral());
     }
 
     private void index(BookCollection col, Book book, BookImage image, Underline underline, Document doc) {
-        addField(doc, JHSearchFields.UNDERLINE, get_lang(underline), underline.getReferencedText());
+        addField(doc, JHSearchField.UNDERLINE, get_lang(underline), underline.getReferencedText());
     }
 
     private SearchFieldType get_lang(Annotation a) {
@@ -206,7 +206,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
     }
     
     private void index(BookCollection col, Book book, BookImage image, Marginalia marg, Document doc) {
-        addField(doc, JHSearchFields.MARGINALIA, get_lang(marg), marg.getReferencedText());
+        addField(doc, JHSearchField.MARGINALIA, get_lang(marg), marg.getReferencedText());
 
         StringBuilder transcription = new StringBuilder();
         StringBuilder notes = new StringBuilder();
@@ -269,11 +269,11 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
             }
         }
 
-        addField(doc, JHSearchFields.MARGINALIA, marg_lang_type, transcription.toString());
-        addField(doc, JHSearchFields.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
-        addField(doc, JHSearchFields.MARGINALIA, SearchFieldType.ENGLISH, notes.toString());
-        addField(doc, JHSearchFields.CROSS_REFERENCE, SearchFieldType.ENGLISH, xrefs.toString());
-        addField(doc, JHSearchFields.EMPHASIS, marg_lang_type, emphasis.toString());
+        addField(doc, JHSearchField.MARGINALIA, marg_lang_type, transcription.toString());
+        addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
+        addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, notes.toString());
+        addField(doc, JHSearchField.CROSS_REFERENCE, SearchFieldType.ENGLISH, xrefs.toString());
+        addField(doc, JHSearchField.EMPHASIS, marg_lang_type, emphasis.toString());
     }
 
     private String to_string(List<String> list) {
