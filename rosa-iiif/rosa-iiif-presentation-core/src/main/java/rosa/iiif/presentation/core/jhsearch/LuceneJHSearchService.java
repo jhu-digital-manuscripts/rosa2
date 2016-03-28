@@ -66,9 +66,9 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         String req_url = formatter.format(req);
         
         if (req.getType() == PresentationRequestType.COLLECTION) {
-            restrict_query = new Query(JHSearchFields.COLLECTION_ID, req_url);
+            restrict_query = new Query(JHSearchField.COLLECTION_ID, req_url);
         } else if (req.getType() == PresentationRequestType.MANIFEST) {
-            restrict_query = new Query(JHSearchFields.MANIFEST_ID, req_url);
+            restrict_query = new Query(JHSearchField.MANIFEST_ID, req_url);
         }
         
         if (restrict_query != null) {
@@ -94,5 +94,10 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         for (String col: store.listBookCollections()) {
             update(store, col);
         }
+    }
+
+    @Override
+    public void handle_info_request(PresentationRequest req, OutputStream os) throws IOException {
+        serializer.write(JHSearchField.values(), os);
     }
 }

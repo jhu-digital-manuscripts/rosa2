@@ -133,10 +133,23 @@ public class IIIFPresentationServlet extends HttpServlet {
         OutputStream os = resp.getOutputStream();
         String raw_path = get_raw_path(req);
 
-        // Request is either a IIF Presentation object or a search within that
-        // object
+        // Request is either for a IIF Presentation object, a search within that object, or search info
 
-        if (raw_path.endsWith(JHSearchService.RESOURCE_PATH)) {
+        if (raw_path.endsWith(JHSearchService.INFO_RESOURCE_PATH)) {
+            // Search info request
+
+            raw_path = raw_path.substring(0, raw_path.length() - JHSearchService.INFO_RESOURCE_PATH.length());
+
+            // Must follow recommended URI pattern
+            
+            PresentationRequest presreq = parser.parsePresentationRequest(raw_path);
+
+            if (presreq == null) {
+                send_error(resp, HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + req.getRequestURL());
+            }
+            
+            searchService.handle_info_request(presreq, os);
+        } else if (raw_path.endsWith(JHSearchService.RESOURCE_PATH)) {
             // Search request
 
             raw_path = raw_path.substring(0, raw_path.length() - JHSearchService.RESOURCE_PATH.length());
@@ -145,8 +158,7 @@ public class IIIFPresentationServlet extends HttpServlet {
             int offset = get_int_param(req, JHSearchService.OFFSET_PARAM, 0);
             String resume = req.getParameter(JHSearchService.RESUME_PARAM);
 
-            // Only search requests on object following recommended URI pattern
-            // are supported.
+            // Must follow recommended URI pattern
 
             PresentationRequest presreq = parser.parsePresentationRequest(raw_path);
 
@@ -168,7 +180,7 @@ public class IIIFPresentationServlet extends HttpServlet {
         } else {
             // Check if request follows recommended URI pattern
 
-            PresentationRequest presreq = parser.parsePresentationRequest(get_raw_path(req));
+            PresentationRequest presreq = parser.parsePresentationRequest(raw_path);
             String uri = req.getRequestURL().toString();
 
             if (presreq == null) {

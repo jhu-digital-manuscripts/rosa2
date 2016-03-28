@@ -60,7 +60,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
     @Test
     public void testSearchSymbolSun() throws Exception {
 
-        Query query = new Query(JHSearchFields.SYMBOL, "Sun");
+        Query query = new Query(JHSearchField.SYMBOL, "Sun");
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL", result);
@@ -70,7 +70,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
     @Test
     public void testSearchSymbolMars() throws Exception {
 
-        Query query = new Query(JHSearchFields.SYMBOL, "Mars");
+        Query query = new Query(JHSearchField.SYMBOL, "Mars");
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL", result);
@@ -79,8 +79,8 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
 
     @Test
     public void testSearchSymbolAndMarginalia() throws Exception {
-        Query query = new Query(QueryOperation.AND, new Query(JHSearchFields.SYMBOL, "Mars"),
-                new Query(JHSearchFields.MARGINALIA, "Homer"));
+        Query query = new Query(QueryOperation.AND, new Query(JHSearchField.SYMBOL, "Mars"),
+                new Query(JHSearchField.MARGINALIA, "Homer"));
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL", result);
@@ -89,7 +89,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
     
     @Test
     public void testStemLatin() throws Exception {
-        Query query = new Query(JHSearchFields.MARGINALIA, "maximus");
+        Query query = new Query(JHSearchField.MARGINALIA, "maximus");
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL", result);
@@ -99,7 +99,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
 
     @Test
     public void testSearchMarginaliaTranslationPhrase() throws Exception {
-        Query query = new Query(JHSearchFields.MARGINALIA, "\"if you wish, you may command the citizens.\"");
+        Query query = new Query(JHSearchField.MARGINALIA, "\"if you wish, you may command the citizens.\"");
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL.", result);
@@ -109,7 +109,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
     
     @Test
     public void testSearchMarginaliaAnchorText() throws Exception {
-        Query query = new Query(JHSearchFields.MARGINALIA, "Giudeo");
+        Query query = new Query(JHSearchField.MARGINALIA, "Giudeo");
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL.", result);
@@ -119,7 +119,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
     
     @Test
     public void testSearchMarginaliaXRef() throws Exception {
-        Query query = new Query(JHSearchFields.CROSS_REFERENCE, "Erasmus");
+        Query query = new Query(JHSearchField.CROSS_REFERENCE, "Erasmus");
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL.", result);
@@ -129,7 +129,7 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
     
     @Test
     public void testSearchMarginaliaEmphasis() throws Exception {
-        Query query = new Query(JHSearchFields.EMPHASIS, "Bodini");
+        Query query = new Query(JHSearchField.EMPHASIS, "Bodini");
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL.", result);
@@ -163,6 +163,21 @@ public class LuceneJHSearchServiceTest extends BaseArchiveTest {
         assertTrue(result_json.contains("\"context\":"));
         assertTrue(result_json.contains("\"manifest\":"));
         assertTrue(result_json.contains("\"object\":"));
+    }
+    
+    
+    @Test
+    public void testHandleInfoRequest() throws Exception {
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        PresentationRequest req = new PresentationRequest("valid.FolgersHa2", null, PresentationRequestType.MANIFEST);
+
+        service.handle_info_request(req, os);
+
+        String result_json = os.toString("UTF-8");
+
+        // TODO More full checks by actually parsing json structure
+        assertTrue(result_json.contains("\"fields\":"));
+        assertTrue(result_json.contains("\"default-fields\":"));
     }
 
     @Test(expected = IllegalArgumentException.class)

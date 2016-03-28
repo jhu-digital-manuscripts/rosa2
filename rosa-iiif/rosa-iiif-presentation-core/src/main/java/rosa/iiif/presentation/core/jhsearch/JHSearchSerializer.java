@@ -23,6 +23,58 @@ public class JHSearchSerializer implements IIIFNames {
         writeJsonld(request_url, query, result, jWriter);
         writer.flush();
     }
+    
+    public void write(JHSearchField[] fields, OutputStream os) throws IOException {
+        Writer os_writer = new OutputStreamWriter(os, "UTF-8");
+        JSONWriter writer = new JSONWriter(os_writer);
+
+        writer.object();
+        writer.key("fields").array();
+        
+        for (JHSearchField sf: fields) {
+            if (sf.isExposed()) {
+                writer.object();
+                writer.key("name").value(sf.getFieldName());
+                writer.key("label").value(sf.getLabel());
+                writer.key("description").value(sf.getDescription());
+                
+                String[] pairs = sf.getValueLabelPairs();
+                
+                if (pairs != null && pairs.length > 0) {
+                    writer.key("values").array();
+                    
+                    for (int i = 0; i < pairs.length; ) {
+                        String value = pairs[i++];
+                        String label = pairs[i++];
+                        
+                        writer.object();
+                        writer.key("value").value(value);
+                        writer.key("label").value(label);
+                        writer.endObject();
+                    }
+                    
+                    writer.endArray();
+                }
+                
+                writer.endObject();
+            }
+        }
+        
+        writer.endArray();
+        
+        
+        writer.key("default-fields").array();
+        for (JHSearchField sf: fields) {
+            if (sf.isExposed()) {
+                writer.value(sf.getFieldName());
+            }
+        }
+        writer.endArray();
+        
+        writer.endObject();
+        
+        os_writer.flush();
+    }
 
     private void writeJsonld(String request_url, String query, SearchResult result, JSONWriter writer) {
         writer.object();
@@ -79,13 +131,13 @@ public class JHSearchSerializer implements IIIFNames {
             String field = values.get(i++);
             String value = values.get(i++);
             
-            if (field.equals(JHSearchFields.OBJECT_TYPE.getFieldName())) {
+            if (field.equals(JHSearchField.OBJECT_TYPE.getFieldName())) {
                 object_type = value;
-            } else if (field.equals(JHSearchFields.OBJECT_LABEL.getFieldName())) {
+            } else if (field.equals(JHSearchField.OBJECT_LABEL.getFieldName())) {
                 object_label = value;
-            } else if (field.equals(JHSearchFields.MANIFEST_ID.getFieldName())) {
+            } else if (field.equals(JHSearchField.MANIFEST_ID.getFieldName())) {
                 manifest_id = value;
-            } else if (field.equals(JHSearchFields.MANIFEST_LABEL.getFieldName())) {
+            } else if (field.equals(JHSearchField.MANIFEST_LABEL.getFieldName())) {
                 manifest_label = value;
             }
         }
