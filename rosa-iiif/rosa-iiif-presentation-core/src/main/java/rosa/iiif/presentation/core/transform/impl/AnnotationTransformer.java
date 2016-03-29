@@ -27,6 +27,7 @@ import rosa.iiif.presentation.model.selector.FragmentSelector;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
         AORAnnotatedPageConstants {
@@ -67,6 +68,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             return adaptMarginalia(collection, book, (Marginalia) anno);
         }
 
+        String locationIcon = locationToHtml(anno.getLocation());
+
         Annotation a = new Annotation();
 
         a.setId(urlId(collection.getId(), book.getId(), anno.getId(), PresentationRequestType.ANNOTATION));
@@ -74,7 +77,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.setDefaultSource(new AnnotationSource(
                 "URI", IIIFNames.DC_TEXT, "text/html",
-                anno.toPrettyString(),
+                locationIcon + " " + anno.toPrettyString(),
                 (anno.getLanguage() != null && !anno.getLanguage().isEmpty() ? anno.getLanguage() : "en")
         ));
 
@@ -166,6 +169,15 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
 
         StringBuilder sb = new StringBuilder("<div>");
+
+        // Add icon for position(s) on page
+        List<Location> positions = new ArrayList<>();
+        marg.getLanguages().forEach(lang -> lang.getPositions().stream()
+                        .map(Position::getPlace)
+                        .forEach(positions::add)
+        );
+        sb.append(locationToHtml(positions.toArray(new Location[positions.size()])));
+
         sb.append("<p>");
         sb.append(transcription);
         sb.append("</p>");
@@ -221,7 +233,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
      * @param location location on the canvas
      * @return the annotation target
      */
-    protected AnnotationTarget locationOnCanvas(BookImage image, Location... location) {
+    private AnnotationTarget locationOnCanvas(BookImage image, Location... location) {
         if (location == null || location.length == 0) {
             return new AnnotationTarget(image.getId(), null);
         }
@@ -273,6 +285,47 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return target;
     }
 
+    String locationToHtml(Location ... locations) {
+        if (locations == null || locations.length == 0) {
+            return "";
+        }
+
+        StringBuilder result = new StringBuilder("<i class=\"aor-icon ");
+
+        // For each distinct location value, append appropriate CSS class
+        Stream.of(locations)
+                .distinct()
+                .map(this::locationToClass)
+                .forEach(result::append);
+
+        result.append("\">");
+        // Add 'inner' icon if any part is in-text
+        if (Stream.of(locations).anyMatch(loc -> loc.equals(Location.INTEXT))) {
+            result.append("<i class=\"inner\"></i>");
+        }
+        result.append("</i>");
+        return result.toString();
+    }
+
+    private String locationToClass(Location location) {
+        switch (location) {
+            default:
+                return "";
+            case HEAD:
+                return "side-top ";
+            case TAIL:
+                return "side-bottom ";
+            case LEFT_MARGIN:
+                return "side-left ";
+            case RIGHT_MARGIN:
+                return "side-right ";
+            case INTEXT:
+                return "side-within ";
+            case FULL_PAGE:
+                return "full-page ";
+        }
+    }
+
     private String listToString(List<String> list) {
         StringBuilder sb = new StringBuilder();
         for (String str : list) {
@@ -303,7 +356,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return id.split("_");
     }
 
-    public List<Annotation> illustrationsForPage(BookCollection collection, Book book, BookImage image) {
+    List<Annotation> illustrationsForPage(BookCollection collection, Book book, BookImage image) {
         String page = image.getName();
         if (book.getIllustrationTagging() == null) {
             return null;
