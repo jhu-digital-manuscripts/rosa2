@@ -91,6 +91,7 @@ public class ArchiveIIIFPresentationServiceTest extends BaseArchiveTest {
         
         assertEquals("http://iiif.io/api/presentation/2/context.json", json.get("@context"));
         assertTrue(json.has("sequences"));
+        assertTrue(result.contains("otherContent"));
 //        assertTrue(json.has("structures"));
     }
     

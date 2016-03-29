@@ -3,8 +3,13 @@ package rosa.iiif.presentation.core.transform.impl;
 import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.core.ArchiveNameParser;
+import rosa.archive.core.BaseArchiveTest;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
 import rosa.archive.model.aor.Location;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.model.annotation.Annotation;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +20,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-public class AnnotationTransformerTest {
+public class AnnotationTransformerTest extends BaseArchiveTest {
 
     private AnnotationTransformer transformer;
 
@@ -27,11 +32,42 @@ public class AnnotationTransformerTest {
         );
     }
 
-//    @Test
-//    public void illustrationsTest() {
-//
-//    }
-//
+    /**
+     * Test method {@link AnnotationTransformer#illustrationsForPage(BookCollection, Book, BookImage)}
+     * Using test collection and Ludwig book on page 1r
+     */
+    @Test
+    public void illustrationsTest() throws Exception {
+        final String TARGET_PAGE_ID = "LudwigXV7.001r.tif";
+
+        BookCollection collection = loadValidCollection();
+        Book book = loadValidLudwigXV7();
+
+        // Using faked "page 1r" BookImage
+        {
+            BookImage page = new BookImage(TARGET_PAGE_ID, 3, 3, false);
+            page.setName("1r");
+
+            List<Annotation> annotations = transformer.illustrationsForPage(collection, book, page);
+            assertNotNull(annotations);
+            assertEquals("Unexpected number of annotations found.", 2, annotations.size());
+        }
+
+        // Using actual BookImage
+        {
+            book.getImages().getImages().stream()
+                    .filter(image -> image.getId().equals(TARGET_PAGE_ID))
+                    .findFirst()
+                    .ifPresent(image -> {
+                        List<Annotation> annotations = transformer.illustrationsForPage(collection, book, image);
+
+                        assertNotNull(annotations);
+                        assertEquals("Unexpected number of annotations found.", 2, annotations.size());
+                    });
+        }
+
+    }
+
     @Test
     public void locationToHtmlNoLocationTest() {
         String result = transformer.locationToHtml();
