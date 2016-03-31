@@ -157,7 +157,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
      * @return a reference to the annotation for a page
      */
     private Reference annotationList(BookCollection collection, Book book, BookImage image) {
-        if (!hasAnnotations(book, image.getName())) {
+        if (!hasAnnotations(book, image.getName()) && !hasAnnotations(book, image.getId())) {
             return null;
         }
 
