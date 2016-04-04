@@ -43,7 +43,7 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
     public void setup() {
         MockitoAnnotations.initMocks(this);
 
-        service = new ArchiveDataServiceImpl(mockStore);
+        service = new ArchiveDataServiceImpl(mockStore, "valid");
     }
 
     /**

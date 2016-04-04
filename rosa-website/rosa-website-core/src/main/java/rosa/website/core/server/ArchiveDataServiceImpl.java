@@ -3,6 +3,7 @@ package rosa.website.core.server;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
+import com.google.inject.name.Named;
 import org.apache.commons.lang3.math.NumberUtils;
 import rosa.archive.core.serialize.ImageListSerializer;
 import rosa.archive.core.util.TranscriptionSplitter;
@@ -48,6 +49,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     private static final ImageListSerializer imageListSerializer = new ImageListSerializer();
 
     private StoreAccessLayer archiveStore;
+    private String collection;
 
     /** No-arg constructor needed to make GWT RPC work. */
     @SuppressWarnings("unused")
@@ -59,18 +61,18 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
      * @param store store access layer
      */
     @Inject
-    public ArchiveDataServiceImpl(StoreAccessLayer store) {
+    ArchiveDataServiceImpl(StoreAccessLayer store, @Named("collection.name") String collection) {
         this.archiveStore = store;
+        this.collection = collection;
     }
 
     @Override
     public void init() {
         try {
-            logger.info("Initializing data.");
-            for (String col : archiveStore.store().listBookCollections()) {
-                for (String book : archiveStore.store().listBooks(col)) {
-                    archiveStore.book(col, book);
-                }
+            logger.info("Initializing data. Collection: (" + collection + ")");
+            for (String book : archiveStore.store().listBooks(collection)) {
+                logger.info("  - Caching book [" + book + "]");
+                archiveStore.book(collection, book);
             }
             logger.info("Initializing done.");
         } catch (IOException e) {
