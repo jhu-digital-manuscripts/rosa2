@@ -2,7 +2,12 @@ package rosa.iiif.presentation.model;
 
 public enum AnnotationListType {
     ALL,
+
+    // Rose specific
     ILLUSTRATION,
+    ROSE_TRANSCRIPTION,
+
+    // AOR specific
     UNDERLINE,
     SYMBOL,
     MARGINALIA,

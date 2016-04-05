@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
+import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -27,6 +28,7 @@ import rosa.iiif.presentation.model.selector.FragmentSelector;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
 public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
@@ -354,6 +356,35 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
     private String[] split_id(String id) {
         return id.split("_");
+    }
+
+    // TODO need better way of getting standard name... refer to how it is done in the transcription splitter
+    // Ripped from WebsiteLuceneMapper#getStandardPage(String)
+    private String getStandardPage(BookImage image) {
+        String start = image.getName();
+        if (start.length() == 2) {
+            return "00" + start;
+        } else if (start.length() == 3) {
+            return "0" + start;
+        } else {
+            return start;
+        }
+    }
+
+    // TODO stub for rose transcription -> annotation transform
+    List<Annotation> roseTranscriptionOnPage(BookCollection collection, Book book, BookImage image) {
+        if (image == null) {
+            return null;
+        }
+        String page = getStandardPage(image);
+
+
+        // TODO only want to do this once, not once PER PAGE
+        Map<String, String> transcriptionMap = TranscriptionSplitter.split(book.getTranscription());
+
+
+
+        return null;
     }
 
     List<Annotation> illustrationsForPage(BookCollection collection, Book book, BookImage image) {
