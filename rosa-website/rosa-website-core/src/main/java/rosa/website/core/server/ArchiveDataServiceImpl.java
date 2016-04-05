@@ -389,12 +389,12 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public String loadImageListAsString(String collection, String book) throws IOException {
-        String key = ImageList.class + "." + String.class + "." + collection + "." + book;
-
-        Object str = objectCache.get(key);
-        if (str != null) {
-            return (String) str;
-        }
+//        String key = ImageList.class + "." + String.class + "." + collection + "." + book;
+//
+//        Object str = objectCache.get(key);
+//        if (str != null) {
+//            return (String) str;
+//        }
         Book b = loadBook(collection, book);
 
         if (b == null || b.getImages() == null || b.getImages().getImages() == null
@@ -404,18 +404,18 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         imageListSerializer.write(b.getImages(), out);
 
-        updateCache(key, out.toString());
+//        updateCache(key, out.toString());
         return out.toString();
     }
 
     @Override
     public ImageList loadImageList(String collection, String book) throws IOException {
-        String key = ImageList.class + "." + collection + "." + book;
-
-        Object list = objectCache.get(key);
-        if (list != null) {
-            return (ImageList) list;
-        }
+//        String key = ImageList.class + "." + collection + "." + book;
+//
+//        Object list = objectCache.get(key);
+//        if (list != null) {
+//            return (ImageList) list;
+//        }
         Book b = loadBook(collection, book);
 
         if (b == null || b.getImages() == null || b.getImages().getImages() == null
@@ -423,7 +423,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             return null;
         }
 
-        updateCache(key, b.getImages());
+//        updateCache(key, b.getImages());
         return b.getImages();
     }
 
