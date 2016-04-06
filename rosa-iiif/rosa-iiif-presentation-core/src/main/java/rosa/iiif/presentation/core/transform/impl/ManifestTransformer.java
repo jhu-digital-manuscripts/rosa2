@@ -85,6 +85,9 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
             manifest.setThumbnailService(manifest.getDefaultSequence().getThumbnailService());
         }
 
+        // Set 'within' property to point this manifest to its parent collection
+        manifest.setWithin(urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION));
+
         // TODO ranges
 //        manifest.setRanges(rangeTransformer.topRanges(collection, book));
 
