@@ -436,34 +436,60 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 }
             }
 
-            String text = "<p><b>Illustration</b><br/>" +
-                    (ill.getTitles() == null || ill.getTitles().length == 0 ?
-                            "" : "  <i>titles</i>: " + sb_titles.toString()) +
-                    (ill.getTextualElement() == null || ill.getTextualElement().isEmpty() ?
-                            "" : "  <i>textual elements</i>: '" + ill.getTextualElement() + "'<br/>") +
-                    (ill.getCostume() == null || ill.getCostume().isEmpty() ?
-                            "" : "  <i>costume</i>: '" + ill.getCostume() + "'<br/>") +
-                    (ill.getInitials() == null || ill.getInitials().isEmpty() ?
-                            "" : "  <i>initials</i>: '" + ill.getInitials() + "'<br/>") +
-                    (ill.getObject() == null || ill.getObject().isEmpty() ?
-                            "" : "  <i>object</i>: '" + ill.getObject() + "'<br/>") +
-                    (ill.getLandscape() == null || ill.getLandscape().isEmpty() ?
-                            "" : "  <i>landscape</i>: '" + ill.getLandscape() + "'<br/>") +
-                    (ill.getArchitecture() == null || ill.getArchitecture().isEmpty() ?
-                            "" : "  <i>architecture</i>: '" + ill.getArchitecture() + "'<br/>") +
-                    (ill.getOther() == null || ill.getOther().isEmpty() ?
-                            "" : "  <i>other</i>: '" + ill.getObject() + "'<br/>") +
-                    (ill.getCharacters() == null || ill.getCharacters().length == 0 ?
-                            "" : "  <i>characters</i>: " + sb_names.toString()) +
-                    "</p>";
+            StringBuilder html = new StringBuilder("<p class=\"annotation-title\">Illustration</p>");
 
-            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", text, "en"));
+            if (isNotEmpty(ill.getTitles())) {
+                html.append("<p><span class=\"bold\">Titles:</span> ")
+                        .append(sb_titles.toString()).append("</p>");
+            }
+            if (isNotEmpty(ill.getCharacters())) {
+                html.append("<p><span class=\"bold\">Characters:</span> ")
+                        .append(sb_names.toString()).append("</p>");
+            }
+            if (isNotEmpty(ill.getTextualElement())) {
+                html.append("<p><span class=\"bold\">Textual Elements:</span> ")
+                        .append(ill.getTextualElement()).append("</p>");
+            }
+            if (isNotEmpty(ill.getCostume())) {
+                html.append("<p><span class=\"bold\">Costume:</span> ")
+                        .append(ill.getCostume()).append("</p>");
+            }
+            if (isNotEmpty(ill.getInitials())) {
+                html.append("<p><span class=\"bold\">Initials:</span> ")
+                        .append(ill.getInitials()).append("</p>");
+            }
+            if (isNotEmpty(ill.getObject())) {
+                html.append("<p><span class=\"bold\">Object:</span> ")
+                        .append(ill.getObject()).append("</p>");
+            }
+            if (isNotEmpty(ill.getLandscape())) {
+                html.append("<p><span class=\"bold\">Landscape:</span> ")
+                        .append(ill.getLandscape()).append("</p>");
+            }
+            if (isNotEmpty(ill.getArchitecture())) {
+                html.append("<p><span class=\"bold\">Architecture:</span> ")
+                        .append(ill.getArchitecture()).append("</p>");
+            }
+            if (isNotEmpty(ill.getOther())) {
+                html.append("<p><span class=\"bold\">Other:</span> ")
+                        .append(ill.getOther()).append("</p>");
+            }
+
+            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", html.toString(), "en"));
             ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
 
             anns.add(ann);
         }
 
         return anns;
+    }
+
+    private boolean isNotEmpty(String[] str) {
+        return str != null && str.length > 0;
+    }
+
+    private boolean isNotEmpty(String str) {
+        return str != null && !str.isEmpty();
     }
 
 }
