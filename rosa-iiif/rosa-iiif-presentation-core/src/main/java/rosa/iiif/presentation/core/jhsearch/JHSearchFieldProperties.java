@@ -68,4 +68,10 @@ interface JHSearchFieldProperties {
     static final String DRAWING_DESCRIPTION = "Drawings or diagrams.";
     static final String CROSS_REFERENCE_LABEL = "Cross Reference";
     static final String CROSS_REFERENCE_DESCRIPTION = "";
+    static final String TRANSCRIPTION_LABEL = "Transcription";
+    static final String TRANSCRIPTION_DESCRIPTION = "";
+    static final String ILLUSTRATION_LABEL = "Transcription";
+    static final String ILLUSTRATION_DESCRIPTION = "Description of illustrations";
+    static final String DESCRIPTION_LABEL = "Description";
+    static final String DESCRIPTION_DESCRIPTION = "";
 }

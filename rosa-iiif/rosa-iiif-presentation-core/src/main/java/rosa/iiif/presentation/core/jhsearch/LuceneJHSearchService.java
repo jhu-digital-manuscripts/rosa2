@@ -96,8 +96,39 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         }
     }
 
+    // TODO Hack to return search fields based on collection
+    
+    private static final JHSearchField[] ROSE_PIZAN_FIELDS = {
+            JHSearchField.DESCRIPTION,
+            JHSearchField.TRANSCRIPTION,
+            JHSearchField.ILLUSTRATION, 
+            JHSearchField.IMAGE_NAME
+    };
+    
+    private static final JHSearchField[] AOR_FIELDS = {
+            JHSearchField.MARGINALIA,
+            JHSearchField.UNDERLINE,
+            JHSearchField.EMPHASIS,
+            JHSearchField.ERRATA,
+            JHSearchField.MARK,
+            JHSearchField.SYMBOL,
+            JHSearchField.NUMERAL,
+            JHSearchField.DRAWING,
+            JHSearchField.CROSS_REFERENCE
+    };
+    
     @Override
     public void handle_info_request(PresentationRequest req, OutputStream os) throws IOException {
-        serializer.write(JHSearchField.values(), os);
+        JHSearchField[] fields;
+        
+        if (req.getId().contains("rose") || req.getId().contains("pizan")) {
+            fields = ROSE_PIZAN_FIELDS;
+        } else if (req.getId().contains("aor")) {
+            fields = AOR_FIELDS;
+        } else {
+            fields = JHSearchField.values();
+        }
+        
+        serializer.write(fields, os);    
     }
 }
