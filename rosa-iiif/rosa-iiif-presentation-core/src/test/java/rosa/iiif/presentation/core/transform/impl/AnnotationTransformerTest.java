@@ -32,6 +32,25 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
         );
     }
 
+    @Test
+    public void transcriptionTest() throws Exception {
+        final String TARGET_PAGE_ID = "LudwigXV7.001v.tif";
+
+        BookCollection collection = loadValidCollection();
+        Book book = loadValidLudwigXV7();
+
+        BookImage page = new BookImage(TARGET_PAGE_ID, 3, 3, false);
+        page.setName("1r");
+
+        System.out.println(Arrays.toString("one\ntwo".split("\\n")));
+        System.out.println("<l>Quiconques cuide ne qui die<milestone n=\"11\" ed=\"lecoy\" unit=\"line\"/>".startsWith("<l>"));
+
+        List<Annotation> annotations = transformer.roseTranscriptionOnPage(collection, book, page);
+        assertNotNull(annotations);
+        assertEquals(1, annotations.size());
+        System.out.println(annotations.get(0).getDefaultSource().getEmbeddedText());
+    }
+
     /**
      * Test method {@link AnnotationTransformer#illustrationsForPage(BookCollection, Book, BookImage)}
      * Using test collection and Ludwig book on page 1r

@@ -7,7 +7,6 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.Marginalia;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
@@ -117,6 +116,15 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
 
             annotations.addAll(anns);
             return list;
+        } else if (listType == AnnotationListType.ROSE_TRANSCRIPTION) {
+            // Transcriptions formatted for Rose/Pizan
+            List<Annotation> anns = annotationTransformer.roseTranscriptionOnPage(collection, book, image);
+            if (anns == null || anns.isEmpty()) {
+                return null;
+            }
+
+            annotations.addAll(anns);
+            return list;
         }
 
         // Annotated page can be NULL if no transcriptions are present.
@@ -125,14 +133,10 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         }
         switch (listType) {
             case MARGINALIA:
-                for (Marginalia marg : aPage.getMarginalia()) {
-                    annotations.add(annotationTransformer.transform(collection, book, marg));
-                }
+                aPage.getMarginalia().forEach(marg ->  annotations.add(annotationTransformer.transform(collection, book, marg)) );
                 break;
             case SYMBOL:
-                for (rosa.archive.model.aor.Annotation ann : aPage.getSymbols()) {
-                    annotations.add(annotationTransformer.transform(collection, book, ann));
-                }
+                aPage.getSymbols().forEach(symb -> annotations.add(annotationTransformer.transform(collection, book, symb)) );
                 break;
 //            case MARK:
 //                for (rosa.archive.model.aor.Annotation ann : aPage.getMarks()) {

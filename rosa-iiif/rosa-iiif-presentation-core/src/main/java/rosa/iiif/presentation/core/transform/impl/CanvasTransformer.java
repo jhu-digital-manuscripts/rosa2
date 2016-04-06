@@ -1,6 +1,6 @@
 package rosa.iiif.presentation.core.transform.impl;
 
-import java.util.Arrays;
+import java.util.Collections;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
@@ -90,14 +90,14 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         canvas.setHeight(tooSmall ? height * 2 : height);
 
         // Set images to be the single image. Always needs to be at least 1 image with Mirador2
-        canvas.setImages(Arrays.asList(
+        canvas.setImages(Collections.singletonList(
                 image.isMissing() ? imageResource(collection, null, collection.getMissingImage(), canvas.getId()) :
                         imageResource(collection, book, image, canvas.getId())));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
         Reference otherContent = annotationList(collection, book, image);
         if (otherContent != null) {
-            canvas.setOtherContent(Arrays.asList(otherContent));
+            canvas.setOtherContent(Collections.singletonList(otherContent));
         }
 
         // TODO add rosa transcriptions as annotations!
@@ -157,9 +157,9 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
      * @return a reference to the annotation for a page
      */
     private Reference annotationList(BookCollection collection, Book book, BookImage image) {
-        if (!hasAnnotations(book, image.getName()) && !hasAnnotations(book, image.getId())) {
-            return null;
-        }
+//        if (!hasAnnotations(book, image.getName()) && !hasAnnotations(book, image.getId())) {
+//            return null;
+//        }
 
         Reference ref = new Reference();
 
@@ -202,7 +202,8 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         }
 
         // No illustrations were found, so there no annotations were found for this page
-        return false;
+        // Look for transcriptions
+        return book.getTranscription() != null && book.getTranscription().getXML() != null && book.getTranscription().getXML().contains(page);
     }
 
 }

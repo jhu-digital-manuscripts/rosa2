@@ -4,6 +4,8 @@ import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
+import rosa.archive.core.util.RoseTranscriptionAdapter;
+import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -26,7 +28,9 @@ import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
 public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
@@ -356,6 +360,52 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return id.split("_");
     }
 
+    // TODO need better way of getting standard name... refer to how it is done in the transcription splitter
+    // Ripped from WebsiteLuceneMapper#getStandardPage(String)
+    private String getStandardPage(BookImage image) {
+        String start = image.getName();
+        if (start.length() == 2) {
+            return "00" + start;
+        } else if (start.length() == 3) {
+            return "0" + start;
+        } else {
+            return start;
+        }
+    }
+
+    // TODO stub for rose transcription -> annotation transform
+    List<Annotation> roseTranscriptionOnPage(BookCollection collection, Book book, BookImage image) {
+        if (image == null) {
+            return null;
+        }
+        String page = getStandardPage(image);
+        String name = image.getName() + ".transcription";
+
+        // TODO only want to do this once, not once PER PAGE
+        Map<String, String> transcriptionMap = TranscriptionSplitter.split(book.getTranscription());
+
+        String transcription = transcriptionMap.get(page);
+
+        if (transcription == null || transcription.isEmpty()) {
+            return null;
+        }
+
+        RoseTranscriptionAdapter adapter = new RoseTranscriptionAdapter();
+        transcription = adapter.toHtml(transcription, page);
+
+        Annotation ann = new Annotation();
+
+        ann.setLabel("Transcription for page " + page, "en");
+        ann.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION));
+        ann.setMotivation(SC_PAINTING);
+        ann.setType(OA_ANNOTATION);
+
+        ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
+        ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", transcription, "en"));
+
+        return Collections.singletonList(ann);
+    }
+
     List<Annotation> illustrationsForPage(BookCollection collection, Book book, BookImage image) {
         String page = image.getName();
         if (book.getIllustrationTagging() == null) {
@@ -405,34 +455,60 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 }
             }
 
-            String text = "<p><b>Illustration</b><br/>" +
-                    (ill.getTitles() == null || ill.getTitles().length == 0 ?
-                            "" : "  <i>titles</i>: " + sb_titles.toString()) +
-                    (ill.getTextualElement() == null || ill.getTextualElement().isEmpty() ?
-                            "" : "  <i>textual elements</i>: '" + ill.getTextualElement() + "'<br/>") +
-                    (ill.getCostume() == null || ill.getCostume().isEmpty() ?
-                            "" : "  <i>costume</i>: '" + ill.getCostume() + "'<br/>") +
-                    (ill.getInitials() == null || ill.getInitials().isEmpty() ?
-                            "" : "  <i>initials</i>: '" + ill.getInitials() + "'<br/>") +
-                    (ill.getObject() == null || ill.getObject().isEmpty() ?
-                            "" : "  <i>object</i>: '" + ill.getObject() + "'<br/>") +
-                    (ill.getLandscape() == null || ill.getLandscape().isEmpty() ?
-                            "" : "  <i>landscape</i>: '" + ill.getLandscape() + "'<br/>") +
-                    (ill.getArchitecture() == null || ill.getArchitecture().isEmpty() ?
-                            "" : "  <i>architecture</i>: '" + ill.getArchitecture() + "'<br/>") +
-                    (ill.getOther() == null || ill.getOther().isEmpty() ?
-                            "" : "  <i>other</i>: '" + ill.getObject() + "'<br/>") +
-                    (ill.getCharacters() == null || ill.getCharacters().length == 0 ?
-                            "" : "  <i>characters</i>: " + sb_names.toString()) +
-                    "</p>";
+            StringBuilder html = new StringBuilder("<p class=\"annotation-title\">Illustration</p>");
 
-            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", text, "en"));
+            if (isNotEmpty(ill.getTitles())) {
+                html.append("<p><span class=\"bold\">Titles:</span> ")
+                        .append(sb_titles.toString()).append("</p>");
+            }
+            if (isNotEmpty(ill.getCharacters())) {
+                html.append("<p><span class=\"bold\">Characters:</span> ")
+                        .append(sb_names.toString()).append("</p>");
+            }
+            if (isNotEmpty(ill.getTextualElement())) {
+                html.append("<p><span class=\"bold\">Textual Elements:</span> ")
+                        .append(ill.getTextualElement()).append("</p>");
+            }
+            if (isNotEmpty(ill.getCostume())) {
+                html.append("<p><span class=\"bold\">Costume:</span> ")
+                        .append(ill.getCostume()).append("</p>");
+            }
+            if (isNotEmpty(ill.getInitials())) {
+                html.append("<p><span class=\"bold\">Initials:</span> ")
+                        .append(ill.getInitials()).append("</p>");
+            }
+            if (isNotEmpty(ill.getObject())) {
+                html.append("<p><span class=\"bold\">Object:</span> ")
+                        .append(ill.getObject()).append("</p>");
+            }
+            if (isNotEmpty(ill.getLandscape())) {
+                html.append("<p><span class=\"bold\">Landscape:</span> ")
+                        .append(ill.getLandscape()).append("</p>");
+            }
+            if (isNotEmpty(ill.getArchitecture())) {
+                html.append("<p><span class=\"bold\">Architecture:</span> ")
+                        .append(ill.getArchitecture()).append("</p>");
+            }
+            if (isNotEmpty(ill.getOther())) {
+                html.append("<p><span class=\"bold\">Other:</span> ")
+                        .append(ill.getOther()).append("</p>");
+            }
+
+            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", html.toString(), "en"));
             ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
 
             anns.add(ann);
         }
 
         return anns;
+    }
+
+    private boolean isNotEmpty(String[] str) {
+        return str != null && str.length > 0;
+    }
+
+    private boolean isNotEmpty(String str) {
+        return str != null && !str.isEmpty();
     }
 
 }
