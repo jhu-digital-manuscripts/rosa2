@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
+import rosa.archive.core.util.RoseTranscriptionAdapter;
 import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -27,6 +28,7 @@ import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
@@ -377,14 +379,31 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             return null;
         }
         String page = getStandardPage(image);
-
+        String name = image.getName() + ".transcription";
 
         // TODO only want to do this once, not once PER PAGE
         Map<String, String> transcriptionMap = TranscriptionSplitter.split(book.getTranscription());
 
+        String transcription = transcriptionMap.get(page);
 
+        if (transcription == null || transcription.isEmpty()) {
+            return null;
+        }
 
-        return null;
+        RoseTranscriptionAdapter adapter = new RoseTranscriptionAdapter();
+        transcription = adapter.toHtml(transcription, page);
+
+        Annotation ann = new Annotation();
+
+        ann.setLabel("Transcription for page " + page, "en");
+        ann.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION));
+        ann.setMotivation(SC_PAINTING);
+        ann.setType(OA_ANNOTATION);
+
+        ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
+        ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", transcription, "en"));
+
+        return Collections.singletonList(ann);
     }
 
     List<Annotation> illustrationsForPage(BookCollection collection, Book book, BookImage image) {
