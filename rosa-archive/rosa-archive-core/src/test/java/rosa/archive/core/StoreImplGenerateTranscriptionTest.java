@@ -77,31 +77,14 @@ public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
         store.generateTEITranscriptions(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, errors, warnings);
 
         assertTrue("Errors were found.", errors.isEmpty());
-//        assertTrue("Warnings were found.", warnings.isEmpty());
 
         assertTrue("Transcription XML file missing.", Files.exists(transcriptionPath));
         try (InputStream in = Files.newInputStream(transcriptionPath)) {
             Transcription trans = serializer.read(in, errors);
 
-            int start = 2000;
-            int end = start + 500;
-            System.out.println();
-            for (int i = start; i < end; i++) {
-                System.out.print(trans.getXML().charAt(i));
-            }
-            System.out.println();
-
             assertNotNull("Transcription XML unreadable.", trans);
             assertNotNull("Text not readable.", trans.getXML());
             assertFalse("Text was blank.", trans.getXML().isEmpty());
-
-            // TODO check for valid TEI
-//            bookChecker.checkTranscription(trans, errors, warnings);
-
-            System.out.println("\n\nErrors:");
-            for (String err : errors) {
-                System.out.println("  " + err);
-            }
 
             assertTrue("Errors found.", errors.isEmpty());
         }
