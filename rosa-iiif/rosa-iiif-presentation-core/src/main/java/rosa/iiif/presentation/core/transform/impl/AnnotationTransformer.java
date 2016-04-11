@@ -153,8 +153,9 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         List<String> people = new ArrayList<>();
         List<String> books = new ArrayList<>();
         List<String> locs = new ArrayList<>();
-        // TODO X-refs
-//        List<String> emphasis = new ArrayList<>();
+
+        // Left, top, right, bottom
+        boolean[] orientation = new boolean[4];
 
         for (MarginaliaLanguage lang : marg.getLanguages()) {
             for (Position pos : lang.getPositions()) {
@@ -163,12 +164,21 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 books.addAll(pos.getBooks());
                 locs.addAll(pos.getLocations());
 
-                /*
-                    TODO emphasis: perhaps find the emphasized text in transcription and underline it?
-                 */
-//                for (Underline u : pos.getEmphasis()) {
-//                    emphasis.add(u.getReferringText());
-//                }
+                // No default case. If orientation is not 0, 90, 180, 270 then do nothing
+                switch (pos.getOrientation()) {
+                    case 0:
+                        orientation[1] = true;
+                        break;
+                    case 90:
+                        orientation[0] = true;
+                        break;
+                    case 180:
+                        orientation[3] = true;
+                        break;
+                    case 270:
+                        orientation[2] = true;
+                        break;
+                }
             }
         }
 
@@ -180,7 +190,23 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                         .map(Position::getPlace)
                         .forEach(positions::add)
         );
+
+        // Add span container for icons + orientation arrows (only for marginalia)
+        sb.append("<span class=\"aor-icon-container\">");
+        if (orientation[0]) {   // Left orientation
+            sb.append("<i class=\"orientation arrow-left\"></i>");
+        }
+        if (orientation[1]) {   // Up orientation
+            sb.append("<i class=\"orientation arrow-top\"></i>");
+        }
         sb.append(locationToHtml(positions.toArray(new Location[positions.size()])));
+        if (orientation[2]) {   // Right orientation
+            sb.append("<i class=\"orientation arrow-right\"></i>");
+        }
+        if (orientation[3]) {   // Down orientation
+            sb.append("<i class=\"orientation arrow-bottom\"></i>");
+        }
+        sb.append("</span>");
 
         sb.append("<p>");
         sb.append(transcription);
