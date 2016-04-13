@@ -2,8 +2,12 @@ package rosa.archive.core.serialize;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -103,7 +107,7 @@ public abstract class BaseSerializerTest<T extends HasId> {
      */
     public List<String> writeObjectAndGetWrittenLines(T object) throws IOException {
         String output = writeObjectAndGetContent(object);
-        return Arrays.asList(output.split("\\n"));
+        return Arrays.asList(output.split(System.lineSeparator()));
     }
 
     /**

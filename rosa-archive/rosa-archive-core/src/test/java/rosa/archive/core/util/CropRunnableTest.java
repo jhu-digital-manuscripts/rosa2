@@ -7,6 +7,7 @@ import rosa.archive.core.util.CropRunnable;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.CropData;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,7 +58,17 @@ public class CropRunnableTest {
 
     @Test
     public void buildCommandTest() {
-        String expected = "convert /fake/IMAGE -crop 800x800+100+100 +repage /fake/cropped/IMAGE";
+        String expected = "convert " +
+                File.separator +
+                "fake" +
+                File.separator +
+                "IMAGE -crop 800x800+100+100 +repage " +
+                File.separator +
+                "fake" +
+                File.separator +
+                "cropped" +
+                File.separator +
+                "IMAGE";
         assertEquals(expected, runnable.buildCommand());
     }
 

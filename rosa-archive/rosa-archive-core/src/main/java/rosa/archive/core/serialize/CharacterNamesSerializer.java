@@ -73,7 +73,7 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
 
     @Override
     public void write(CharacterNames names, OutputStream out) throws IOException {
-        final String header = "ID,Site name,French variant,English name\n";
+        final String header = "ID,Site name,French variant,English name" + System.lineSeparator();
         IOUtils.write(header, out, UTF_8);
 
         for (String id : names.getAllCharacterIds()) {
@@ -88,7 +88,7 @@ public class CharacterNamesSerializer implements Serializer<CharacterNames> {
             sb.append(CSV.escape(names.getNameInLanguage(id, "fr")));
             sb.append(',');
             sb.append(CSV.escape(names.getNameInLanguage(id, "en")));
-            sb.append('\n');
+            sb.append(System.lineSeparator());
 
             IOUtils.write(sb, out, UTF_8);
         }

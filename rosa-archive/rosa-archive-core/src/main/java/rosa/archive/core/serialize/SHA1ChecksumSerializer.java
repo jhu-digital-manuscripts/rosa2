@@ -40,7 +40,7 @@ public class SHA1ChecksumSerializer implements Serializer<SHA1Checksum> {
         Map<String, String> checksums = object.checksums();
 
         for (String id : checksums.keySet()) {
-            String lineToWrite = checksums.get(id) + "  " + id + "\n";
+            String lineToWrite = checksums.get(id) + "  " + id + System.lineSeparator();
             IOUtils.write(lineToWrite, out, UTF_8);
         }
     }

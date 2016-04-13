@@ -52,7 +52,7 @@ public class ImageListSerializer implements Serializer<ImageList> {
 
         for (BookImage image : imageList) {
             String line = image.isMissing() ? MISSING_PREFIX : "";
-            line += image.getId() + "," + image.getWidth() + "," + image.getHeight() + "\n";
+            line += image.getId() + "," + image.getWidth() + "," + image.getHeight() + System.lineSeparator();
             IOUtils.write(line, out, UTF_8);
         }
     }

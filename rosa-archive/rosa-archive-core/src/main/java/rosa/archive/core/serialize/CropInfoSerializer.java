@@ -53,7 +53,7 @@ public class CropInfoSerializer implements Serializer<CropInfo> {
         for (CropData crop : info) {
             String line = crop.getId() + " " + String.format("%03f", crop.getLeft()) + " "
                     + String.format("%03f", crop.getRight()) + " " + String.format("%03f", crop.getTop()) + " "
-                    + String.format("%03f", crop.getBottom()) + "\n";
+                    + String.format("%03f", crop.getBottom()) + System.lineSeparator();
             IOUtils.write(line, out, UTF_8);
         }
 

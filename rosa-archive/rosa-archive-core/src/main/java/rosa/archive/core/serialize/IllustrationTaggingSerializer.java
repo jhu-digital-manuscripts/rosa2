@@ -63,7 +63,8 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
 
     @Override
     public void write(IllustrationTagging tagging, OutputStream out) throws IOException {
-        final String header = "id,Folio,Illustration title,Textual elements,Initials,Characters,Costume,Objects,Landscape,Architecture,Other\n";
+        final String header = "id,Folio,Illustration title,Textual elements,Initials,Characters,Costume,Objects,Landscape,Architecture,Other"
+                + System.lineSeparator();
         IOUtils.write(header, out, UTF_8);
 
         for (Illustration ill : tagging) {
@@ -78,7 +79,7 @@ public class IllustrationTaggingSerializer implements Serializer<IllustrationTag
                     + CSV.escape(ill.getObject()) + ','
                     + CSV.escape(ill.getLandscape()) + ','
                     + CSV.escape(ill.getArchitecture()) + ','
-                    + CSV.escape(ill.getOther()) + '\n';
+                    + CSV.escape(ill.getOther()) + System.lineSeparator();
 
             IOUtils.write(line, out, UTF_8);
         }

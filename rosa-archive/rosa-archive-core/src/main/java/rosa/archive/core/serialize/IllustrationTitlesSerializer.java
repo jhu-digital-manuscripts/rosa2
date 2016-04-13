@@ -52,11 +52,11 @@ public class IllustrationTitlesSerializer implements Serializer<IllustrationTitl
 
     @Override
     public void write(IllustrationTitles titles, OutputStream out) throws IOException {
-        final String header = "Id,Title\n";
+        final String header = "Id,Title" + System.lineSeparator();
         IOUtils.write(header, out, UTF_8);
 
         for (String id : titles.getAllIds()) {
-            String line = id + ',' + CSV.escape(titles.getTitleById(id)) + '\n';
+            String line = id + ',' + CSV.escape(titles.getTitleById(id)) + System.lineSeparator();
             IOUtils.write(line, out, UTF_8);
         }
 

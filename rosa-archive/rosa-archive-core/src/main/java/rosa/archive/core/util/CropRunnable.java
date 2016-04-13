@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+import org.apache.commons.io.IOUtils;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.CropData;
 
@@ -57,7 +58,13 @@ public class CropRunnable implements Runnable {
         }
 
         if (success != 0) {
-            errors.add("Error in cropping images. [" + cmd + "]");
+            try {
+                ByteArrayOutputStream out = new ByteArrayOutputStream();
+                IOUtils.copy(p.getErrorStream(), out);
+                errors.add("Error in cropping images. [" + cmd + "]: " + out.toString());
+            } catch (IOException e) {
+                System.err.println("Failed to get errors.");
+            }
         }
     }
 

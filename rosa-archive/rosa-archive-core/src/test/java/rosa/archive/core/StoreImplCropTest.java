@@ -46,6 +46,8 @@ public class StoreImplCropTest extends BaseArchiveTest {
      * cropped and put to the cropped/ directory. The error will state that for
      * one image, no cropping information will exist. This image will be
      * directly copied to the cropped/ directory.
+     *
+     * TODO ImageMagick does not play well with Windows! convert needs to change to <full_path>\\convert.exe, and TIFF support still sucks
      * 
      * @throws IOException
      */
