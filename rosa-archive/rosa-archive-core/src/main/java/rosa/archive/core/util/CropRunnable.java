@@ -1,15 +1,16 @@
 package rosa.archive.core.util;
 
-import java.io.ByteArrayOutputStream;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.io.PrintStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-import org.apache.commons.io.IOUtils;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.CropData;
+
+import javax.imageio.ImageIO;
 
 public class CropRunnable implements Runnable {
     private BookImage image;
@@ -37,63 +38,47 @@ public class CropRunnable implements Runnable {
 
     @Override
     public void run() {
+        Path sourcePath = basePath.resolve(image.getId());
+        Path destPath = basePath.resolve(cropDir).resolve(image.getId());
 
-        String cmd = buildCommand();
-        int success = 0;
-        Process p = null;
+        BufferedImage im;
+
         try {
-            p = Runtime.getRuntime().exec(cmd);
-            // Java8 only
-//            success = p.waitFor(60, TimeUnit.SECONDS);
-            // Java7
-            success = p.waitFor();
-        } catch (IOException | InterruptedException e) {
-            ByteArrayOutputStream out = new ByteArrayOutputStream();
-            e.printStackTrace(new PrintStream(out));
-            errors.add("Failed to crop image. [" + cmd + "]\n" + out.toString());
-        } finally {
-            if (p != null) {
-                p.destroy();
-            }
+            im = ImageIO.read(Files.newInputStream(sourcePath));
+        } catch (IOException e) {
+            errors.add("Failed to read image. [" + basePath.toString() + "]");
+            return;
         }
 
-        if (success != 0) {
-            try {
-                ByteArrayOutputStream out = new ByteArrayOutputStream();
-                IOUtils.copy(p.getErrorStream(), out);
-                errors.add("Error in cropping images. [" + cmd + "]: " + out.toString());
-            } catch (IOException e) {
-                System.err.println("Failed to get errors.");
-            }
+        // Check image dimensions against BookImage
+        if (image.getWidth() != im.getWidth() || image.getHeight() != im.getHeight()) {
+            errors.add("Image dimensions from Book does not match actual image dimensions.");
         }
-    }
 
-    /**
-     * @return the CLI command to Image Magick that does the actual cropping.
-     */
-    protected String buildCommand() {
-        // top, bottom, left, right
         int[] points = calcPoints();
 
-        int cropWidth = points[3] - points[2];
-        int cropHeight = points[1] - points[0];
+        int x = points[2];
+        int y = points[0];
+        int w = points[3] - points[2];
+        int h = points[1] - points[0];
 
-        Path source = basePath.resolve(image.getId());
-        Path destination = basePath.resolve(cropDir).resolve(image.getId());
+        try {
+            // Create crop directory if it does not already exist
+            if (!Files.exists(basePath.resolve(cropDir))) {
+                Files.createDirectory(basePath.resolve(cropDir));
+            }
 
-        // convert <source_image>: -crop WIDTHxHEIGHT+X+Y +repage <target_image>
-        return "convert "
-                + source.toString() + " -crop "
-                + cropWidth + "x" + cropHeight
-                + "+" + points[2] + "+" + points[0]
-                + " +repage "
-                + destination.toString();
+            ImageIO.write(im.getSubimage(x, y, w, h), "tif", Files.newOutputStream(destPath));
+
+        } catch (IOException e) {
+            errors.add("Failed to write cropped image to file. [" + destPath.toString() + "]");
+        }
     }
 
     /**
-     * @return array (x, y, width, height)
+     * @return array (top, bottom, left, right)
      */
-    protected int[] calcPoints() {
+    int[] calcPoints() {
         return new int[] {
                 (int) (image.getHeight() * crop.getTop()),
                 (int) (image.getHeight() - (image.getHeight() * crop.getBottom())),

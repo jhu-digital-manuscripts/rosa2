@@ -3,40 +3,50 @@ package rosa.archive.core.util;
 import org.junit.Before;
 import org.junit.Test;
 
-import rosa.archive.core.util.CropRunnable;
+import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.CropData;
 
-import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  *
  */
-public class CropRunnableTest {
+public class CropRunnableTest extends BaseArchiveTest {
+    private static final String IMAGE_ID = "FolgersHa2.001r.tif";
 
-    private CropRunnable runnable;
+    private CropData crop;
+    private BookImage image;
+
+    private Path bookPath;
+    private List<String> errors;
 
     @Before
     public void setup() {
-        BookImage image = new BookImage();
-        image.setId("IMAGE");
-        image.setWidth(1000);
-        image.setHeight(1000);
+        image = new BookImage();
+        image.setId(IMAGE_ID);
+        image.setWidth(3);
+        image.setHeight(3);
 
-        CropData crop = new CropData();
-        crop.setId("IMAGE");
+        crop = new CropData();
+        crop.setId(IMAGE_ID);
         crop.setTop(0.1);
         crop.setBottom(0.1);
         crop.setLeft(0.1);
         crop.setRight(0.1);
 
-        List<String> errors = new ArrayList<>();
-        runnable = new CropRunnable("/fake/", image, crop, "cropped", errors);
+        bookPath = basePath.resolve(VALID_COLLECTION).resolve(VALID_BOOK_FOLGERSHA2);
+        errors = new ArrayList<>();
+
+
     }
 
     /**
@@ -46,6 +56,9 @@ public class CropRunnableTest {
      */
     @Test
     public void fourCornersTest() {
+        image = new BookImage(IMAGE_ID, 1000, 1000, false);
+        CropRunnable runnable = new CropRunnable(bookPath.toString(), image, crop, "cropped", errors);
+
         int[] corners = runnable.calcPoints();
 
         assertNotNull(corners);
@@ -57,19 +70,18 @@ public class CropRunnableTest {
     }
 
     @Test
-    public void buildCommandTest() {
-        String expected = "convert " +
-                File.separator +
-                "fake" +
-                File.separator +
-                "IMAGE -crop 800x800+100+100 +repage " +
-                File.separator +
-                "fake" +
-                File.separator +
-                "cropped" +
-                File.separator +
-                "IMAGE";
-        assertEquals(expected, runnable.buildCommand());
+    public void cropTest() {
+        CropRunnable runnable = new CropRunnable(bookPath.toString(), image, crop, "cropped", errors);
+
+        Path expectedCropPath = bookPath.resolve("cropped").resolve(IMAGE_ID);
+
+        assertTrue("Source image doesn't exist.", Files.exists(bookPath.resolve(IMAGE_ID)));
+        assertFalse("Target image should NOT already exist.", Files.exists(expectedCropPath));
+
+        runnable.run();
+
+        assertTrue("Errors were found while cropping image.", errors.isEmpty());
+        assertTrue("Cropped image not found.", Files.exists(expectedCropPath));
     }
 
 }
