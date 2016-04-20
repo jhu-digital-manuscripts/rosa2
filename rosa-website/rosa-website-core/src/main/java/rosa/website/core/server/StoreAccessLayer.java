@@ -6,7 +6,9 @@ import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
 
-public interface StoreAccessLayer {
+interface StoreAccessLayer {
+    boolean hasCollection(String name);
+    boolean hasBook(String collection, String book);
     BookCollection collection(String collection) throws IOException;
     Book book(String collection, String book) throws IOException;
     Store store();

@@ -8,6 +8,7 @@ import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -29,10 +30,35 @@ public class StoreAccessLayerImpl implements StoreAccessLayer {
     }
 
     @Override
+    public boolean hasCollection(String name) {
+        try {
+            return Arrays.asList(store.listBookCollections()).contains(name);
+        } catch (IOException e) {
+            LOG.log(Level.SEVERE, "Failed to get collection list.");
+            return false;
+        }
+    }
+
+    @Override
+    public boolean hasBook(String collection, String book) {
+        try {
+            return hasCollection(collection) && Arrays.asList(store.listBooks(collection)).contains(book);
+        } catch (IOException e) {
+            LOG.log(Level.SEVERE, "Failed to get book list for collection (" + collection + ")");
+            return false;
+        }
+    }
+
+    @Override
     public BookCollection collection(String collection) throws IOException {
         BookCollection col = COLLECTION_CACHE.get(collection);
         if (col != null) {
             return col;
+        }
+
+        if (!hasCollection(collection)) {
+            LOG.log(Level.SEVERE, "Could not find collection (" + collection + ")");
+            return null;
         }
 
         List<String> errors = new ArrayList<>();
@@ -61,6 +87,11 @@ public class StoreAccessLayerImpl implements StoreAccessLayer {
         Book b = BOOK_CACHE.get(key);
         if (b != null) {
             return b;
+        }
+
+        if (!hasBook(collection, book)) {
+            LOG.log(Level.SEVERE, "Could not find book (" + book + ") in collection (" + collection + ")");
+            return null;
         }
 
         b = loadBook(collection(collection), book);

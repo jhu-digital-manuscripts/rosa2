@@ -69,6 +69,11 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     @Override
     public void init() {
         try {
+            if (!archiveStore.hasCollection(collection)) {
+                logger.log(Level.SEVERE, "Couldn't find configured collection. (" + collection + ")");
+                return;
+            }
+
             logger.info("Initializing data. Collection: (" + collection + ")");
             for (String book : archiveStore.store().listBooks(collection)) {
                 logger.info("  - Caching book [" + book + "]");
