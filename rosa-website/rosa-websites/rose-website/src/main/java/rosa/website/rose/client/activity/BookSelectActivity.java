@@ -61,11 +61,13 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
     @Override
     public void onCancel() {
         LoadingPanel.INSTANCE.hide();
+        view.clearErrors();
     }
 
     @Override
     public void onStop() {
         LoadingPanel.INSTANCE.hide();
+        view.clearErrors();
     }
 
     @Override
@@ -84,7 +86,9 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
                 new AsyncCallback<BookSelectList>() {
                     @Override
                     public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, "Failed to load book selection data.", caught);
+                        String msg = "Failed to load book selection data. [" + category.toString() + "]";
+                        logger.log(Level.SEVERE, msg, caught);
+                        view.addErrorMessage(msg);
                         LoadingPanel.INSTANCE.hide();
                     }
 

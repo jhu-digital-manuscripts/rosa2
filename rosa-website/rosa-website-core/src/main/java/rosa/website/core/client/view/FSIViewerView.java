@@ -3,13 +3,12 @@ package rosa.website.core.client.view;
 import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewerType;
 
-public interface FSIViewerView extends IsWidget {
+public interface FSIViewerView extends ErrorWidget {
 
     void setHeader(String text);
 

@@ -2,12 +2,11 @@ package rosa.website.core.client.view;
 
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.user.cellview.client.ColumnSortEvent.ListHandler;
-import com.google.gwt.user.client.ui.IsWidget;
 import rosa.website.model.csv.CSVData;
 
 import java.util.Map;
 
-public interface CSVDataView extends IsWidget {
+public interface CSVDataView extends ErrorWidget {
 
     interface Presenter {
         void goTo(Place place);

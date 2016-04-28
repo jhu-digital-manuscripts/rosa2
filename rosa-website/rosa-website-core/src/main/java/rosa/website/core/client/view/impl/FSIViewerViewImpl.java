@@ -5,7 +5,6 @@ import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
@@ -13,6 +12,7 @@ import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
+import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.ViewerControlsWidget;
 import rosa.website.viewer.client.fsiviewer.FSIViewer;
@@ -20,7 +20,7 @@ import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewerType;
 
-public class FSIViewerViewImpl extends Composite implements FSIViewerView, RequiresResize {
+public class FSIViewerViewImpl extends ErrorComposite implements FSIViewerView, RequiresResize {
 
     private Timer resizeTimer = new Timer() {
         @Override
@@ -37,6 +37,8 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
 
     /** Create a new BookViewerView */
     public FSIViewerViewImpl() {
+        super();
+
         FlowPanel root = new FlowPanel();
         header = new Label();
         permissionPanel = new SimplePanel();
@@ -49,6 +51,7 @@ public class FSIViewerViewImpl extends Composite implements FSIViewerView, Requi
         header.setWidth("100%");
 
         root.add(header);
+        root.add(errorPanel);
         root.add(viewerControlsWidget);
         root.add(flashViewer);
         root.add(transcriptionPanel);

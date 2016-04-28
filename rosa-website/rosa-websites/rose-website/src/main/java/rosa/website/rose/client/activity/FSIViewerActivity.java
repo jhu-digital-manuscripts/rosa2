@@ -193,14 +193,17 @@ public class FSIViewerActivity implements Activity {
                 new AsyncCallback<FSIViewerModel>() {
                     @Override
                     public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, "Failed to load FSI data.");
+                        String msg = "An error has occurred, Book not found. ["
+                                + WebsiteConfig.INSTANCE.collection() + ":" + book + "]";
+                        logger.log(Level.SEVERE, msg, caught);
+                        view.addErrorMessage(msg);
                         LoadingPanel.INSTANCE.hide();
                     }
 
                     @Override
                     public void onSuccess(FSIViewerModel result) {
                         if (result == null) {
-                            Window.alert("An error has occurred, Book not found. [" + book + "]");
+                            view.addErrorMessage("An error has occurred, Book not found. [" + book + "]");
                             placeController.goTo(new HTMLPlace(WebsiteConfig.INSTANCE.defaultPage()));
                             return;
                         }

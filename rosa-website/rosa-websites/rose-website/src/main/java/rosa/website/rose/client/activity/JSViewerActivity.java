@@ -152,7 +152,9 @@ public class JSViewerActivity implements Activity {
                 new AsyncCallback<FSIViewerModel>() {
                     @Override
                     public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, "Failed to load image list.", caught);
+                        String msg = "An error has occurred, Image list not found. [" + book + "]";
+                        logger.log(Level.SEVERE, msg, caught);
+                        view.addErrorMessage(msg);
                         LoadingPanel.INSTANCE.hide();
                     }
 

@@ -64,6 +64,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     @Override
     public void start(AcceptsOneWidget panel, final EventBus eventBus) {
         LoadingPanel.INSTANCE.show();
+        view.clearErrors();
         this.eventBus.fireEvent(new BookSelectEvent(true, bookName));
         panel.setWidget(view);
         view.setPresenter(this);
@@ -79,8 +80,12 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
                 new AsyncCallback<BookDescriptionViewModel>() {
                     @Override
                     public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, "Failed to load book description. ["
-                                + WebsiteConfig.INSTANCE.collection() + "," + bookName + "]");
+                        String msg = "Failed to load book description. [" + WebsiteConfig.INSTANCE.collection()
+                                + "," + bookName + "]";
+
+                        view.addErrorMessage(msg);
+                        logger.log(Level.SEVERE, msg);
+
                         LoadingPanel.INSTANCE.hide();
                     }
 
@@ -98,6 +103,7 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     public String getPageUrlFragment(String page) {
         if (model == null || model.getImages() == null) {
             logger.warning("No image list found when trying to get image URL fragment.");
+            view.addErrorMessage("Could not find image list for this book.");
             return null;
         }
         if (!page.endsWith("r") && !page.endsWith("v")) {

@@ -1,8 +1,6 @@
 package rosa.website.core.client.view;
 
-import com.google.gwt.user.client.ui.IsWidget;
-
-public interface HTMLView extends IsWidget {
+public interface HTMLView extends ErrorWidget {
     void setHTML(String html);
 
     /**

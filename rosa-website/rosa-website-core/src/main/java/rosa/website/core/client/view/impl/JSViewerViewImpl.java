@@ -7,7 +7,6 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
@@ -17,6 +16,7 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import rosa.website.core.client.Labels;
+import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.widget.ViewerControlsWidget;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
 import rosa.website.viewer.client.jsviewer.codexview.CodexModel;
@@ -25,7 +25,7 @@ import rosa.website.viewer.client.jsviewer.codexview.CodexView.Mode;
 import rosa.website.viewer.client.jsviewer.dynimg.ImageServer;
 import rosa.website.core.client.view.JSViewerView;
 
-public class JSViewerViewImpl extends Composite implements JSViewerView, RequiresResize {
+public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, RequiresResize {
     private FlowPanel root;
     private Label header;
     private FlowPanel readerToolbar;
@@ -44,6 +44,8 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
 
     /**  */
     public JSViewerViewImpl() {
+        super();
+
         root = new FlowPanel();
         root.setSize("100%", "100%");
         root.addStyleName("JSViewerRoot");
@@ -52,6 +54,8 @@ public class JSViewerViewImpl extends Composite implements JSViewerView, Require
         header.setStylePrimaryName("ContentTitle");
         header.setWidth("100%");
         root.add(header);
+
+        root.add(errorPanel);
 
         transcriptionPanel = new SimplePanel();
         transcriptionPanel.setStylePrimaryName("Transcription");

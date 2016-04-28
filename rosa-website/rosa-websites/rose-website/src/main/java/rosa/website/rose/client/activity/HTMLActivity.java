@@ -57,7 +57,9 @@ public class HTMLActivity implements Activity {
                 resource.getText(new ResourceCallback<TextResource>() {
                     @Override
                     public void onError(ResourceException e) {
-                        logger.log(Level.SEVERE, "Failed to retrieve external text resource.", e);
+                        String msg = "Failed to retrieve external text resource. [" + name + "]";
+                        logger.log(Level.SEVERE, msg, e);
+                        view.addErrorMessage(msg);
                     }
 
                     @Override

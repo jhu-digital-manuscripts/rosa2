@@ -9,8 +9,6 @@ import rosa.website.model.csv.CSVRow;
 import rosa.website.model.csv.CollectionCSV;
 import rosa.website.model.csv.IllustrationTitleCSV;
 
-import java.io.IOException;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -32,11 +30,9 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
 
     /**
      * Test method for loading and creating the illustration titles CSV data.
-     *
-     * @throws IOException
      */
     @Test
-    public void loadIllustrationTitlesTest() throws IOException {
+    public void loadIllustrationTitlesTest() throws Exception {
         IllustrationTitleCSV ills = service.loadIllustrationTitles(VALID_COLLECTION);
         assertNotNull("No illustration titles CSV found.", ills);
 
@@ -52,11 +48,9 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
 
     /**
      * Test method for loading and creating the collection data CSV.
-     *
-     * @throws IOException
      */
     @Test
-    public void loadCollectionCSVTest() throws IOException {
+    public void loadCollectionCSVTest() throws Exception {
         CollectionCSV col = service.loadCollectionData(VALID_COLLECTION, "en");
         assertNotNull("Collection CSV data missing.", col);
         assertEquals("Unexpected number of rows found.", 2, col.size());
@@ -102,11 +96,9 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
 
     /**
      * Test method for collection book data CSV.
-     *
-     * @throws IOException
      */
     @Test
-    public void loadCollectionBookDataTest() throws IOException {
+    public void loadCollectionBookDataTest() throws Exception {
         BookDataCSV data = service.loadCollectionBookData(VALID_COLLECTION, "en");
         assertNotNull("Collection data CSV missing.", data);
         assertEquals("Unexpected data ID found.", VALID_COLLECTION, data.getId());

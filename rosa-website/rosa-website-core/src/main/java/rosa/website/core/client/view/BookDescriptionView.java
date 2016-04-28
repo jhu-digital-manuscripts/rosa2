@@ -1,11 +1,8 @@
 package rosa.website.core.client.view;
 
-import com.google.gwt.user.client.ui.IsWidget;
-import rosa.archive.model.BookDescription;
-import rosa.archive.model.BookMetadata;
 import rosa.website.model.view.BookDescriptionViewModel;
 
-public interface BookDescriptionView extends IsWidget{
+public interface BookDescriptionView extends ErrorWidget {
     interface Presenter {
         /**
          * @param page page short name

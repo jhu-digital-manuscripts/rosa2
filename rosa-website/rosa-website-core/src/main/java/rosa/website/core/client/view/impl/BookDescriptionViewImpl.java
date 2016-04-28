@@ -1,25 +1,26 @@
 package rosa.website.core.client.view.impl;
 
-import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
-import rosa.archive.model.BookDescription;
-import rosa.archive.model.BookMetadata;
 import rosa.website.core.client.view.BookDescriptionView;
+import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.widget.BookDescriptionWidget;
 import rosa.website.core.client.widget.BookMetadataWidget;
 import rosa.website.model.view.BookDescriptionViewModel;
 
-public class BookDescriptionViewImpl extends Composite implements BookDescriptionView {
+public class BookDescriptionViewImpl extends ErrorComposite implements BookDescriptionView {
 
     private BookMetadataWidget metadataWidget;
     private BookDescriptionWidget descriptionWidget;
 
     /**  */
     public BookDescriptionViewImpl() {
+        super();
+
         FlowPanel root = new FlowPanel();
         metadataWidget = new BookMetadataWidget();
         descriptionWidget = new BookDescriptionWidget();
 
+        root.add(errorPanel);
         root.add(metadataWidget);
         root.add(descriptionWidget);
 
@@ -30,6 +31,7 @@ public class BookDescriptionViewImpl extends Composite implements BookDescriptio
     public void clear() {
         metadataWidget.clear();
         descriptionWidget.clear();
+        clearErrors();
     }
 
     @Override

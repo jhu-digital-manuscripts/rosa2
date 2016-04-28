@@ -4,7 +4,6 @@ import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
 import rosa.website.viewer.client.jsviewer.codexview.CodexModel;
@@ -12,7 +11,7 @@ import rosa.website.viewer.client.jsviewer.codexview.CodexView;
 import rosa.website.viewer.client.jsviewer.codexview.CodexView.Mode;
 import rosa.website.viewer.client.jsviewer.dynimg.ImageServer;
 
-public interface JSViewerView extends IsWidget {
+public interface JSViewerView extends ErrorWidget {
     void setHeader(String header);
     void setPermissionStatement(String permission);
 

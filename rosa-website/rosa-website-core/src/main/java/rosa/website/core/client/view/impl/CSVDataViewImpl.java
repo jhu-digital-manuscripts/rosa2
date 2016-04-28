@@ -2,28 +2,31 @@ package rosa.website.core.client.view.impl;
 
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
-import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import rosa.website.core.client.view.CSVDataView;
+import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.widget.CSVWidget;
 import rosa.website.model.csv.CSVData;
 
 import java.util.Map;
 
-public class CSVDataViewImpl extends Composite implements CSVDataView {
+public class CSVDataViewImpl extends ErrorComposite implements CSVDataView {
 
     private CSVWidget display;
     private SimplePanel description;
 
     /**  */
     public CSVDataViewImpl() {
+        super();
+
         FlowPanel root = new FlowPanel();
         display = new CSVWidget();
         description = new SimplePanel();
 
+        root.add(errorPanel);
         root.add(description);
         root.add(display);
         root.setSize("100%", "100%");
@@ -35,6 +38,7 @@ public class CSVDataViewImpl extends Composite implements CSVDataView {
     public void clear() {
         display.clear();
         description.clear();
+        clearErrors();
     }
 
     @Override

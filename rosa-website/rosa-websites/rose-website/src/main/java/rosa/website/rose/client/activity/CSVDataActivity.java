@@ -93,7 +93,9 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
         service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load CSV data.", caught);
+                String msg = "Failed to load CSV data.";
+                logger.log(Level.SEVERE, msg, caught);
+                view.addErrorMessage(msg);
                 LoadingPanel.INSTANCE.hide();
             }
 
@@ -110,7 +112,9 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
                 resource.getText(new ResourceCallback<TextResource>() {
                     @Override
                     public void onError(ResourceException e) {
-                        logger.log(Level.SEVERE, "Failed to load CSV description.", e);
+                        String msg = "Failed to load CSV description.";
+                        logger.log(Level.SEVERE, msg, e);
+                        view.addErrorMessage(msg);
                     }
 
                     @Override
