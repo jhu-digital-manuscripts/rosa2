@@ -399,3 +399,9 @@ a:hover.Tooltip span {
 .WebImage-Loading {
     background-color: black;
 }
+
+.error {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FF4545;
+}

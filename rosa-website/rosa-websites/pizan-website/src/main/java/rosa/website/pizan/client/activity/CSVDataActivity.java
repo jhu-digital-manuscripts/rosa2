@@ -71,6 +71,8 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        final String error = "Failed to load CSV data.";
+
         LoadingPanel.INSTANCE.show();
         logger.info("Starting CSVDataActivity. Current state: " + place.toString());
         panel.setWidget(view);
@@ -85,14 +87,21 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
         service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load CSV data.", caught);
+                logger.log(Level.SEVERE, error, caught);
+                view.addErrorMessage(error);
                 LoadingPanel.INSTANCE.hide();
             }
 
             @Override
             public void onSuccess(CSVData result) {
-                handleCsvData(result, null);
+                if (result == null) {
+                    logger.severe(error);
+                    view.addErrorMessage(error);
+                    return;
+                }
+
                 LoadingPanel.INSTANCE.hide();
+                handleCsvData(result, null);
             }
         });
     }

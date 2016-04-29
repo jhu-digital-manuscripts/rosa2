@@ -33,7 +33,7 @@
     </context-param>
     <context-param>
         <param-name>collection.name</param-name>
-        <param-value>pizancollection</param-value>
+        <param-value>${collection.name}</param-value>
     </context-param>
 
     <!-- Default page to serve -->

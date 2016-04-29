@@ -2,19 +2,17 @@ package rosa.website.core.client.view;
 
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.view.client.RangeChangeEvent;
 import com.google.gwt.view.client.RangeChangeEvent.Handler;
 import rosa.search.model.QueryOperation;
 import rosa.website.model.select.BookInfo;
 import rosa.website.search.client.model.SearchCategory;
 import rosa.website.search.client.model.SearchMatchModel;
-import rosa.website.search.client.model.SearchResultModel;
 
 import java.util.List;
 import java.util.Map;
 
-public interface AdvancedSearchView extends IsWidget {
+public interface AdvancedSearchView extends ErrorWidget {
 
     /**
      * Set the display text for the "add field" button.

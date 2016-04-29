@@ -63,7 +63,11 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
     @Override
     public void start(AcceptsOneWidget panel, final EventBus eventBus) {
+        final String msg = "Failed to load book description. [" + WebsiteConfig.INSTANCE.collection()
+                + "," + bookName + "]";
+
         LoadingPanel.INSTANCE.show();
+        view.clearErrors();
         this.eventBus.fireEvent(new BookSelectEvent(true, bookName));
         panel.setWidget(view);
         view.setPresenter(this);
@@ -77,21 +81,28 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
         service.loadBookDescriptionModel(WebsiteConfig.INSTANCE.collection(), bookName, language,
                 new AsyncCallback<BookDescriptionViewModel>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, "Failed to load book description. ["
-                        + WebsiteConfig.INSTANCE.collection() + "," + bookName + "]");
-                LoadingPanel.INSTANCE.hide();
-            }
+                    @Override
+                    public void onFailure(Throwable caught) {
+                        view.addErrorMessage(msg);
+                        logger.log(Level.SEVERE, msg);
 
-            @Override
-            public void onSuccess(BookDescriptionViewModel result) {
-                model = result;
+                        LoadingPanel.INSTANCE.hide();
+                    }
 
-                view.setModel(result);
-                LoadingPanel.INSTANCE.hide();
-            }
-        });
+                    @Override
+                    public void onSuccess(BookDescriptionViewModel result) {
+                        model = result;
+                        LoadingPanel.INSTANCE.hide();
+
+                        if (result == null) {
+                            view.addErrorMessage(msg);
+                            logger.log(Level.SEVERE, msg);
+                            return;
+                        }
+
+                        view.setModel(result);
+                    }
+                });
     }
 
     @Override

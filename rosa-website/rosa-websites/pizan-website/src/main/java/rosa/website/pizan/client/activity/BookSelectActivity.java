@@ -50,15 +50,19 @@ public class BookSelectActivity implements Activity {
     @Override
     public void onCancel() {
         LoadingPanel.INSTANCE.hide();
+        view.clearErrors();
     }
 
     @Override
     public void onStop() {
         LoadingPanel.INSTANCE.hide();
+        view.clearErrors();
     }
 
     @Override
     public void start(final AcceptsOneWidget panel, EventBus eventBus) {
+        final String error = "Failed to load book selection data. [" + category + "]";
+
         LoadingPanel.INSTANCE.show();
         panel.setWidget(view);
 
@@ -69,15 +73,23 @@ public class BookSelectActivity implements Activity {
                 new AsyncCallback<BookSelectList>() {
                     @Override
                     public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, "Failed to load book selection data.", caught);
+                        logger.log(Level.SEVERE, error, caught);
+                        view.addErrorMessage(error);
                         LoadingPanel.INSTANCE.hide();
                     }
 
                     @Override
                     public void onSuccess(BookSelectList result) {
+                        LoadingPanel.INSTANCE.hide();
+
+                        if (result == null) {
+                            logger.log(Level.SEVERE, error);
+                            view.addErrorMessage(error);
+                            return;
+                        }
+
                         result.setCategory(category);
                         view.setData(result);
-                        LoadingPanel.INSTANCE.hide();
                     }
                 }
         );

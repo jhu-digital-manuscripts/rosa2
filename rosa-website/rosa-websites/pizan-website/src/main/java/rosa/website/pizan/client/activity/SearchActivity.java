@@ -102,6 +102,8 @@ public class SearchActivity implements Activity {
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
+        final String error = "Failed to get book data.";
+
         LoadingPanel.INSTANCE.show();
         panel.setWidget(view);
 
@@ -114,11 +116,18 @@ public class SearchActivity implements Activity {
         archiveDataService.loadCSVData(collection, lang, CSVType.COLLECTION_BOOKS, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
-                LOG.log(Level.SEVERE, "Failed to get book data.", caught);
+                LOG.log(Level.SEVERE, error, caught);
+                view.addErrorMessage(error);
             }
 
             @Override
             public void onSuccess(CSVData result) {
+                if (result == null) {
+                    LOG.severe(error);
+                    view.addErrorMessage(error);
+                    return;
+                }
+
                 if (result instanceof BookDataCSV) {
                     setSearchModel((BookDataCSV) result);
                 } else {

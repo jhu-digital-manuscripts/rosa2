@@ -2,22 +2,21 @@ package rosa.website.core.client.view.impl;
 
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
-import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.view.client.RangeChangeEvent.Handler;
 import rosa.search.model.QueryOperation;
 import rosa.website.core.client.view.AdvancedSearchView;
+import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.model.select.BookInfo;
 import rosa.website.search.client.model.SearchCategory;
 import rosa.website.search.client.model.SearchMatchModel;
-import rosa.website.search.client.model.SearchResultModel;
 import rosa.website.search.client.widget.AdvancedSearchWidget;
 import rosa.website.search.client.widget.SearchResultsWidget;
 
 import java.util.List;
 import java.util.Map;
 
-public class AdvancedSearchViewImpl extends Composite implements AdvancedSearchView {
+public class AdvancedSearchViewImpl extends ErrorComposite implements AdvancedSearchView {
     private int thumbWidth = 100;
     private int thumbHeight = 100;
 
