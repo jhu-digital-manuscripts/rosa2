@@ -73,6 +73,11 @@ public class RosaSearchServiceImpl extends RemoteServiceServlet implements RosaS
     }
 
     private void update() {
+        if (!storeAccess.hasCollection(collection)) {
+            log.severe("Collection not found in archive. [" + collection + "]");
+            return;
+        }
+
         try {
             log.info("Updating search index for collection [" + collection + "]");
             searchService.update(storeAccess.store(), collection);

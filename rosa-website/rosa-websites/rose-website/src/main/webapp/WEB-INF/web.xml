@@ -32,7 +32,7 @@
     </context-param>
     <context-param>
         <param-name>collection.name</param-name>
-        <param-value>rosecollection</param-value>
+        <param-value>${collection.name}</param-value>
     </context-param>
 
     <welcome-file-list>

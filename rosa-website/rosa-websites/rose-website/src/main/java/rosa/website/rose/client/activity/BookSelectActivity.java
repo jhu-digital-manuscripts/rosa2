@@ -72,6 +72,8 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
 
     @Override
     public void start(final AcceptsOneWidget panel, EventBus eventBus) {
+        final String msg = "Failed to load book selection data. [" + category.toString() + "]";
+
         panel.setWidget(view);
         LoadingPanel.INSTANCE.show();
         view.setPresenter(this);
@@ -86,7 +88,6 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
                 new AsyncCallback<BookSelectList>() {
                     @Override
                     public void onFailure(Throwable caught) {
-                        String msg = "Failed to load book selection data. [" + category.toString() + "]";
                         logger.log(Level.SEVERE, msg, caught);
                         view.addErrorMessage(msg);
                         LoadingPanel.INSTANCE.hide();
@@ -95,6 +96,11 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
                     @Override
                     public void onSuccess(BookSelectList result) {
                         LoadingPanel.INSTANCE.hide();
+                        if (result == null) {
+                            logger.severe(msg);
+                            view.addErrorMessage(msg);
+                            return;
+                        }
                         result.setCategory(category);
                         view.setData(result);
                     }

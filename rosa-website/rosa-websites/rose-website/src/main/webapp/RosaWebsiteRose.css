@@ -389,5 +389,11 @@ a:hover {
 }
 
 a:active {
- color: #666666;
+  color: #666666;
+}
+
+.error {
+  color: #FF4545;
+  font-size: 18px;
+  font-weight: bold;
 }

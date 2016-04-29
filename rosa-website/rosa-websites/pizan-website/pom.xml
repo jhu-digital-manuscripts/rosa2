@@ -20,7 +20,7 @@
             </activation>
 
             <properties>
-                <archive.path>/tmp/archive</archive.path>
+                <archive.path>/mnt</archive.path>
                 <search.index.path>/tmp/lucene</search.index.path>
                 <gwt.output.style>pretty</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>

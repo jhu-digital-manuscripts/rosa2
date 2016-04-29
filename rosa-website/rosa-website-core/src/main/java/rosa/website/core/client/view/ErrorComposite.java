@@ -20,7 +20,10 @@ public class ErrorComposite extends Composite implements ErrorWidget {
         }
 
         for (String str : msg) {
-            errorPanel.add(new Label(str));
+            Label label = new Label(str);
+            label.addStyleName("error");
+
+            errorPanel.add(label);
         }
     }
 

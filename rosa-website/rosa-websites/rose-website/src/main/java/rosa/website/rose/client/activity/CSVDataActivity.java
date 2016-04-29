@@ -36,6 +36,9 @@ import java.util.logging.Logger;
 public class CSVDataActivity implements Activity, CSVDataView.Presenter {
     private static final Logger logger = Logger.getLogger(CSVDataActivity.class.toString());
 
+    private static final String CSV_LOAD_ERROR_MSG = "Failed to load CSV data.";
+    private static final String CSV_DATA_NOT_FOUND = "Data not found.";
+
     private final CSVDataPlace place;
     private CSVDataView view;
     private String lang;
@@ -93,16 +96,20 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
         service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
-                String msg = "Failed to load CSV data.";
-                logger.log(Level.SEVERE, msg, caught);
-                view.addErrorMessage(msg);
+                logger.log(Level.SEVERE, CSV_LOAD_ERROR_MSG, caught);
+                view.addErrorMessage(CSV_LOAD_ERROR_MSG);
                 LoadingPanel.INSTANCE.hide();
             }
 
             @Override
             public void onSuccess(CSVData result) {
-                view.setData(result, links, headers);
                 LoadingPanel.INSTANCE.hide();
+                if (result == null) { // Error
+                    view.addErrorMessage(CSV_DATA_NOT_FOUND);
+                    logger.severe(CSV_DATA_NOT_FOUND);
+                    return;
+                }
+                view.setData(result, links, headers);
             }
         });
 
