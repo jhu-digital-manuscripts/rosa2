@@ -63,6 +63,9 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
     @Override
     public void start(AcceptsOneWidget panel, final EventBus eventBus) {
+        final String msg = "Failed to load book description. [" + WebsiteConfig.INSTANCE.collection()
+                + "," + bookName + "]";
+
         LoadingPanel.INSTANCE.show();
         view.clearErrors();
         this.eventBus.fireEvent(new BookSelectEvent(true, bookName));
@@ -80,9 +83,6 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
                 new AsyncCallback<BookDescriptionViewModel>() {
                     @Override
                     public void onFailure(Throwable caught) {
-                        String msg = "Failed to load book description. [" + WebsiteConfig.INSTANCE.collection()
-                                + "," + bookName + "]";
-
                         view.addErrorMessage(msg);
                         logger.log(Level.SEVERE, msg);
 
@@ -92,9 +92,15 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
                     @Override
                     public void onSuccess(BookDescriptionViewModel result) {
                         model = result;
+                        LoadingPanel.INSTANCE.hide();
+
+                        if (result == null) {
+                            view.addErrorMessage(msg);
+                            logger.log(Level.SEVERE, msg);
+                            return;
+                        }
 
                         view.setModel(result);
-                        LoadingPanel.INSTANCE.hide();
                     }
                 });
     }

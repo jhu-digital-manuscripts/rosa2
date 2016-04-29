@@ -5,10 +5,12 @@ import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
+import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.place.BookSelectPlace;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.widget.LoadingPanel;
@@ -22,13 +24,14 @@ import java.util.logging.Logger;
 /**
  * Activity for selecting books by sorting through criteria.
  */
-public class BookSelectActivity implements Activity {
+public class BookSelectActivity implements Activity, BookSelectView.Presenter {
     private static final Logger logger = Logger.getLogger(BookSelectActivity.class.toString());
 
     private final BookSelectView view;
     private final SelectCategory category;
 
     private final ArchiveDataServiceAsync service;
+    private final PlaceController placeController;
 
     /**
      * Create a new BookSelectActivity
@@ -40,6 +43,7 @@ public class BookSelectActivity implements Activity {
         this.view = clientFactory.bookSelectView();
         this.category = place.getCategory();
         this.service = clientFactory.archiveDataService();
+        this.placeController = clientFactory.placeController();
     }
 
     @Override
@@ -65,6 +69,7 @@ public class BookSelectActivity implements Activity {
 
         LoadingPanel.INSTANCE.show();
         panel.setWidget(view);
+        view.setPresenter(this);
 
         service.loadBookSelectionData(
                 WebsiteConfig.INSTANCE.collection(),
@@ -100,5 +105,10 @@ public class BookSelectActivity implements Activity {
                 view.onResize();
             }
         });
+    }
+
+    @Override
+    public void goToDescription(String id) {
+        placeController.goTo(new BookDescriptionPlace(id));
     }
 }

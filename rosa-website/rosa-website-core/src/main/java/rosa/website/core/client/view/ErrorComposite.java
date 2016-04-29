@@ -15,7 +15,7 @@ public class ErrorComposite extends Composite implements ErrorWidget {
 
     @Override
     public void addErrorMessage(String... msg) {
-        if (msg == null) {
+        if (msg == null || errorPanel == null) {
             return;
         }
 
@@ -29,6 +29,8 @@ public class ErrorComposite extends Composite implements ErrorWidget {
 
     @Override
     public void clearErrors() {
-        errorPanel.clear();
+        if (errorPanel != null) {
+            errorPanel.clear();
+        }
     }
 }
