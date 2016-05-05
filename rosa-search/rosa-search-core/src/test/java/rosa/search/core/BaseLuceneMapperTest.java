@@ -16,11 +16,13 @@ import rosa.search.model.SearchField;
 import rosa.search.model.SearchFieldType;
 
 public class BaseLuceneMapperTest {
-    BaseLuceneMapper mapper;
+    private BaseLuceneMapper mapper;
 
-    enum SearchFields implements SearchField {
-        ID(false, false, SearchFieldType.STRING), BOOK(false, true, SearchFieldType.STRING), TEXT(true, true,
-                SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.LATIN);
+    private enum SearchFields implements SearchField {
+        ID(false, false, SearchFieldType.STRING),
+//        BOOK(false, true, SearchFieldType.STRING),
+        TEXT(true, true, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.LATIN),
+        FR_TEXT(true, true, SearchFieldType.OLD_FRENCH);
 
         private final SearchFieldType[] types;
         private final boolean context;
@@ -101,5 +103,20 @@ public class BaseLuceneMapperTest {
         
         assertTrue(lucene_query.contains("TEXT.ENGLISH:\"good cow\""));
         assertTrue(lucene_query.contains("TEXT.FRENCH:\"good cow\""));
+    }
+
+    @Test
+    public void testOldFrenchSpelling() {
+        org.apache.lucene.search.Query result = mapper.createLuceneQuery(
+                new Query(SearchFields.FR_TEXT, "bessie, bessje, and bessye are the same cow.")
+        );
+
+        String lucene_query = result.toString();
+
+        assertNotNull(result);
+
+        assertTrue(lucene_query.contains("besi"));
+        assertFalse(lucene_query.contains("besy"));
+        assertFalse(lucene_query.contains("besj"));
     }
 }

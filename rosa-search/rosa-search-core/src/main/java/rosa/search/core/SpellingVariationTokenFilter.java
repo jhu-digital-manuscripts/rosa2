@@ -36,7 +36,7 @@ public class SpellingVariationTokenFilter extends TokenFilter {
     }
 
     @Override
-    public boolean incrementToken() throws IOException {
+    public final boolean incrementToken() throws IOException {
         if (input.incrementToken()) {
             for (Entry<String, Set<String>> entry : spellingEquivalence.entrySet()) {
                 String key = entry.getKey();
@@ -59,8 +59,8 @@ public class SpellingVariationTokenFilter extends TokenFilter {
         int in_len = termAtt.length();
         int var_len = variant.length();
 
-        for (int i = 0; i < in_len - var_len; i++) {
-            char[] in_frag = Arrays.copyOfRange(in_buff, i, var_len);
+        for (int i = 0; i < in_len - var_len + 1; i++) {
+            char[] in_frag = Arrays.copyOfRange(in_buff, i, i + var_len);
 
             // If this fragment matches the variant, replace it with 'replacement'
             if (Arrays.equals(in_frag, var_buff)) {
@@ -71,5 +71,17 @@ public class SpellingVariationTokenFilter extends TokenFilter {
                 termAtt.append(prefix).append(replacement).append(suffix);
             }
         }
+    }
+
+    /**
+     * Simple replacement using Strings. Slower than using char arrays.
+     *
+     * @param replacement replacement string
+     * @param variant variant string to be replaced
+     */
+    private void doReplace2(String replacement, String variant) {
+        String in_buff = new String(termAtt.buffer(), 0, termAtt.length());
+        termAtt.setEmpty();
+        termAtt.append(in_buff.trim().replace(variant, replacement));
     }
 }
