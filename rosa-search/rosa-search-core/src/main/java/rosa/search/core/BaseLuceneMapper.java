@@ -46,6 +46,7 @@ import rosa.search.model.SearchFieldType;
 public abstract class BaseLuceneMapper implements LuceneMapper {
     private final Analyzer english_analyzer;
     private final Analyzer french_analyzer;
+    private final Analyzer old_french_analyzer;
     private final Analyzer italian_analyzer;
     private final Analyzer spanish_analyzer;
     private final Analyzer greek_analyzer;
@@ -68,6 +69,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     public BaseLuceneMapper(SearchField... fields) {
         this.english_analyzer = new EnglishAnalyzer();
         this.french_analyzer = new FrenchAnalyzer();
+        this.old_french_analyzer = new OldFrenchAnalyzer();
         this.greek_analyzer = new GreekAnalyzer();
         this.italian_analyzer = new ItalianAnalyzer();
         this.spanish_analyzer = new SpanishAnalyzer();
@@ -142,7 +144,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         case IMAGE_NAME:
             return imagename_analyzer;
         case OLD_FRENCH:
-            return french_analyzer;
+            return old_french_analyzer;
         case STRING:
             return string_analyzer;
         case SPANISH:

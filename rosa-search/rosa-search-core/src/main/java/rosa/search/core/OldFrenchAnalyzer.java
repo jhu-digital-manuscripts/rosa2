@@ -38,6 +38,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -53,15 +54,23 @@ import java.util.Set;
 public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
 
     /** File containing default French stopwords. */
-    public final static String DEFAULT_STOPWORD_FILE = "french_stop.txt";
+    private final static String DEFAULT_STOPWORD_FILE = "french_stop.txt";
 
     /** Default set of articles for ElisionFilter */
-    public static final CharArraySet DEFAULT_ARTICLES = CharArraySet.unmodifiableSet(
+    private static final CharArraySet DEFAULT_ARTICLES = CharArraySet.unmodifiableSet(
             new CharArraySet(
                     Arrays.asList(
                             "l", "m", "t", "qu", "n", "s", "j", "d", "c", "jusqu", "quoiqu", "lorsqu", "puisqu"
-                    ), true)
-    );
+                    ), true));
+
+    private static final Map<String, Set<String>> DEFAULT_SPELLING_MAP = new HashMap<>();
+
+    static {
+        DEFAULT_SPELLING_MAP.put("i", new HashSet<>(Arrays.asList("j", "y")));
+        DEFAULT_SPELLING_MAP.put("v", Collections.singleton("u"));
+        DEFAULT_SPELLING_MAP.put("c", new HashSet<>(Arrays.asList("q", "k", "cc")));
+        DEFAULT_SPELLING_MAP.put("s", new HashSet<>(Arrays.asList("\u00E7", "ss", "z")));
+    }
 
     /**
      * Contains words that should be indexed but not stemmed.
@@ -117,8 +126,7 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      *          a stemming exclusion set
      */
     public OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet) {
-        this(stopwords, stemExclusionSet, Collections.emptyMap());
-
+        this(stopwords, stemExclusionSet, DEFAULT_SPELLING_MAP);
     }
 
     /**
