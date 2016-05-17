@@ -51,7 +51,7 @@ import java.util.Set;
  *
  * {@link org.apache.lucene.analysis.fr.FrenchAnalyzer}
  */
-public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
+class OldFrenchAnalyzer extends StopwordAnalyzerBase {
 
     /** File containing default French stopwords. */
     private final static String DEFAULT_STOPWORD_FILE = "french_stop.txt";
@@ -103,7 +103,7 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
     /**
      * Builds an analyzer with the default stop words ({@link #getDefaultStopSet}).
      */
-    public OldFrenchAnalyzer() {
+    OldFrenchAnalyzer() {
         this(OldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET);
     }
 
@@ -113,7 +113,7 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param stopwords
      *          a stopword set
      */
-    public OldFrenchAnalyzer(CharArraySet stopwords){
+    private OldFrenchAnalyzer(CharArraySet stopwords){
         this(stopwords, CharArraySet.EMPTY_SET);
     }
 
@@ -125,7 +125,7 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param stemExclusionSet
      *          a stemming exclusion set
      */
-    public OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet) {
+    private OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet) {
         this(stopwords, stemExclusionSet, DEFAULT_SPELLING_MAP);
     }
 
@@ -139,7 +139,7 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param spellingEquivalenceTable
      *          a table of equivalent spelling relations
      */
-    public OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
+    private OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
                              Map<String, Set<String>> spellingEquivalenceTable) {
         // NOTE: using Collections.emptyMap() gives an unmodifiable empty map
         this(stopwords, stemExclusionSet, spellingEquivalenceTable, Collections.emptyMap());
@@ -157,13 +157,28 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param nameVariantsTable
      *          a table of name variants
      */
-    public OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
+    private OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
                             Map<String, Set<String>> spellingEquivalenceTable,
                             Map<String, Set<String>> nameVariantsTable) {
         super(stopwords);
         this.excltable = CharArraySet.unmodifiableSet(CharArraySet.copy(stemExclusionSet));
-        this.spellingEquivalenceTable = spellingEquivalenceTable == null ? new HashMap<>() : spellingEquivalenceTable;
-        this.nameVariantsTable = nameVariantsTable == null ? new HashMap<>() : nameVariantsTable;
+        this.spellingEquivalenceTable = spellingEquivalenceTable == null ? new HashMap<>() : new HashMap<>(spellingEquivalenceTable);
+        this.nameVariantsTable = nameVariantsTable == null ? new HashMap<>() : new HashMap<>(nameVariantsTable);
+    }
+
+    /**
+     * Registers a name to be associated with other variants. These name variants will then be
+     * normalized when tokens are indexed.
+     *
+     * @param normalized key word
+     * @param variants variants that will be normalized out
+     */
+    void addNameVariant(String normalized, String... variants) {
+        if (variants == null || variants.length == 0) {
+            return;
+        }
+
+        nameVariantsTable.put(normalized, new HashSet<>(Arrays.asList(variants)));
     }
 
     /**
@@ -174,12 +189,14 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * Somewhat simplified from stock Lucene FrenchAnalyzer implementation, since
      * this particular implementation does not need to worry about Lucene version.
      *
-     * @return {@link org.apache.lucene.analysis.Analyzer.TokenStreamComponents}
-     *         built from a {@link StandardTokenizer} filtered with
-     *         {@link StandardFilter}, {@link ElisionFilter},
-     *         {@link LowerCaseFilter}, {@link StopFilter},
-     *         {@link SetKeywordMarkerFilter} if a stem exclusion set is
-     *         provided, and {@link FrenchLightStemFilter}
+     * First operation is to filter name variants. In the rosa archive, some names
+     * can have slightly different versions for (old) French, English, etc. These
+     * name variants are normalized before any other filtering occurs.
+     *
+     * The last operation on the tokens is to normalize any oddities in spelling
+     * in Old French.
+     *
+     * @return a TokenStreamComponent that has undergone filtering
      */
     @Override
     protected TokenStreamComponents createComponents(String fieldName) {

@@ -131,6 +131,10 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         }
     }
 
+    protected void addNameVariant(String name_id, String... variants) {
+        ((OldFrenchAnalyzer) this.old_french_analyzer).addNameVariant(name_id, variants);
+    }
+
     public String getLuceneField(SearchField sf, SearchFieldType type) {
         return sf.getFieldName() + "." + type.name();
     }

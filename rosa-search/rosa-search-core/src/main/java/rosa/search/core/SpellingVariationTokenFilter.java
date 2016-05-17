@@ -7,7 +7,6 @@ import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -28,22 +27,15 @@ public class SpellingVariationTokenFilter extends TokenFilter {
         this.spellingEquivalence = spellingEquivalence;
     }
 
-    public void addSpellingVariant(String key, String ... variants) {
-        if (spellingEquivalence == null || variants == null || variants.length == 0) {
-            return;
-        }
-        spellingEquivalence.put(key, new HashSet<>(Arrays.asList(variants)));
-    }
-
     @Override
     public final boolean incrementToken() throws IOException {
         if (input.incrementToken()) {
             for (Entry<String, Set<String>> entry : spellingEquivalence.entrySet()) {
                 String key = entry.getKey();
 
-                for (String variant : entry.getValue()) {
-                    doReplace(key, variant);
-                }
+                entry.getValue().stream()
+                        .filter(var -> var != null && var.length() > 0)
+                        .forEach(variant -> doReplace(key, variant));
             }
 
             return true;
@@ -60,12 +52,18 @@ public class SpellingVariationTokenFilter extends TokenFilter {
         int var_len = variant.length();
 
         for (int i = 0; i < in_len - var_len + 1; i++) {
+            // Skip if current char does not match first char of variant
+            if (in_buff[i] != var_buff[0]) {
+                continue;
+            }
+
             char[] in_frag = Arrays.copyOfRange(in_buff, i, i + var_len);
 
             // If this fragment matches the variant, replace it with 'replacement'
             if (Arrays.equals(in_frag, var_buff)) {
                 String prefix = new String(Arrays.copyOfRange(in_buff, 0, i));
                 String suffix = new String(Arrays.copyOfRange(in_buff, i + var_len, in_len));
+                i += var_len - 1;
 
                 termAtt.setEmpty();
                 termAtt.append(prefix).append(replacement).append(suffix);

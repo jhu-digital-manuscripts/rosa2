@@ -6,6 +6,7 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -72,6 +73,9 @@ public class WebsiteLuceneMapper extends BaseLuceneMapper {
             throws IOException {
         List<Document> result = new ArrayList<>();
 
+        // Must first feed the Old French analyzer the list of name variants from 'character_names.csv' in collection
+        setupNameVariants(col);
+
         // Create document for book
 
         {
@@ -101,6 +105,23 @@ public class WebsiteLuceneMapper extends BaseLuceneMapper {
         }
 
         return result;
+    }
+
+    private void setupNameVariants(BookCollection col) {
+        CharacterNames names = col.getCharacterNames();
+
+        if (names != null) {
+            for (String name_id : names.getAllCharacterIds()) {
+                CharacterName name = names.getCharacterName(name_id);
+                if (name == null) {
+                    continue;
+                }
+                // Add the set of name variants to correct analyzers to be normalized
+                Set<String> vars = name.getAllNames();
+                addNameVariant(name_id, vars.toArray(new String[vars.size()]));
+            }
+        }
+        // Website code does not care about AOR reference sheets
     }
 
     // TODO need better way of getting standard name... refer to how it is done in the transcription splitter
