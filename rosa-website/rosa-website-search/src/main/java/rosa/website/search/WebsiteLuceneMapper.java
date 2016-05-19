@@ -4,6 +4,8 @@ package rosa.website.search;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -46,6 +48,7 @@ import rosa.website.search.client.model.WebsiteSearchFields;
 
 public class WebsiteLuceneMapper extends BaseLuceneMapper {
     private static final Logger logger = Logger.getLogger(WebsiteLuceneMapper.class.toString());
+    private static final String NAME_KEY = "Site name";
 
     private TranscriptionXMLReader transcriptionXMLReader;
     
@@ -107,6 +110,12 @@ public class WebsiteLuceneMapper extends BaseLuceneMapper {
         return result;
     }
 
+    /**
+     * Contains some code specific to Roman de la Rose data 'character_names.csv'
+     * which assumes the reference name is in column called "Site name"
+     *
+     * @param col book collection
+     */
     private void setupNameVariants(BookCollection col) {
         CharacterNames names = col.getCharacterNames();
 
@@ -117,11 +126,30 @@ public class WebsiteLuceneMapper extends BaseLuceneMapper {
                     continue;
                 }
                 // Add the set of name variants to correct analyzers to be normalized
-                Set<String> vars = name.getAllNames();
-                addNameVariant(name_id, vars.toArray(new String[vars.size()]));
+                String key = name.getNameInLanguage(NAME_KEY);
+
+                // Some of these entries might be comma separated values...
+                Set<String> vars = new HashSet<>();
+                for (String str : name.getAllNames()) {
+                    // Ignore this name if it should be used for the reference replacement
+                    if (str == null || str.length() == 0 || str.equals(key)) {
+                        continue;
+                    }
+
+                    if (str.contains(",")) {
+                        String[] parts = str.split(",");
+                        for (int i = 0; i < parts.length; i++) {
+                            parts[i] = parts[i].trim();
+                        }
+
+                        vars.addAll(Arrays.asList(parts));
+                    } else {
+                        vars.add(str);
+                    }
+                }
+                addNameVariant(key, vars.toArray(new String[vars.size()]));
             }
         }
-        // Website code does not care about AOR reference sheets
     }
 
     // TODO need better way of getting standard name... refer to how it is done in the transcription splitter

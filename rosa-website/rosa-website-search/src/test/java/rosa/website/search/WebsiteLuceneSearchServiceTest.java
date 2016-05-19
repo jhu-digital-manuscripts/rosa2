@@ -39,6 +39,7 @@ import rosa.website.search.client.model.WebsiteSearchFields;
  */
 public class WebsiteLuceneSearchServiceTest extends BaseArchiveTest {
     private LuceneSearchService service;
+    private WebsiteLuceneMapper mapper;
 
     @Rule
     public TemporaryFolder tmpfolder = new TemporaryFolder();
@@ -47,7 +48,8 @@ public class WebsiteLuceneSearchServiceTest extends BaseArchiveTest {
     public void setupArchiveStore() throws Exception {
         super.setupArchiveStore();
 
-        service = new LuceneSearchService(tmpfolder.newFolder().toPath(), new WebsiteLuceneMapper());
+        mapper = new WebsiteLuceneMapper();
+        service = new LuceneSearchService(tmpfolder.newFolder().toPath(), mapper);
     }
 
     @After
@@ -444,6 +446,23 @@ public class WebsiteLuceneSearchServiceTest extends BaseArchiveTest {
         when(fakeStore.loadBook(any(BookCollection.class), anyString(), anyList())).thenReturn(b);
 
         service.update(fakeStore, VALID_COLLECTION);
+    }
+
+    @Test
+    public void testNameVariant() throws Exception {
+        service.update(store, VALID_COLLECTION);
+
+        testQueryVariants("L'Amans", "Lover");
+        testQueryVariants("L'Amans", "Amant");
+    }
+
+    private void testQueryVariants(String reference, String variant) {
+        org.apache.lucene.search.Query ref = mapper.createLuceneQuery(
+                new Query(WebsiteSearchFields.ILLUSTRATION_CHAR, reference));
+        org.apache.lucene.search.Query var = mapper.createLuceneQuery(
+                new Query(WebsiteSearchFields.ILLUSTRATION_CHAR, variant));
+
+        assertEquals("Queries should be equivalent", ref, var);
     }
 
 }

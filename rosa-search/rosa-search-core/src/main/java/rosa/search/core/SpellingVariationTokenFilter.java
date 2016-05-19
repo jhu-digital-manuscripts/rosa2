@@ -15,22 +15,28 @@ import java.util.Set;
  * Token filter used to normalize spelling variation.
  */
 public class SpellingVariationTokenFilter extends TokenFilter {
-    private final Map<String, Set<String>> spellingEquivalence;
+    /**
+     * Map containing character or string equivalencies that should be normalized.
+     *  Key: (String) reference
+     *  Value: (Set&lt;String&gt;) set of variants that are equivalent and will be replaced by
+     *          the reference/key.
+     */
+    private final Map<String, Set<String>> equivalenceTable;
     private final CharTermAttribute termAtt = addAttribute(CharTermAttribute.class);
 
     public SpellingVariationTokenFilter(TokenStream input) {
         this(input, new HashMap<>());
     }
 
-    public SpellingVariationTokenFilter(TokenStream input, Map<String, Set<String>> spellingEquivalence) {
+    public SpellingVariationTokenFilter(TokenStream input, Map<String, Set<String>> equivalenceTable) {
         super(input);
-        this.spellingEquivalence = spellingEquivalence;
+        this.equivalenceTable = equivalenceTable;
     }
 
     @Override
     public final boolean incrementToken() throws IOException {
         if (input.incrementToken()) {
-            for (Entry<String, Set<String>> entry : spellingEquivalence.entrySet()) {
+            for (Entry<String, Set<String>> entry : equivalenceTable.entrySet()) {
                 String key = entry.getKey();
 
                 entry.getValue().stream()
@@ -50,6 +56,28 @@ public class SpellingVariationTokenFilter extends TokenFilter {
 
         int in_len = termAtt.length();
         int var_len = variant.length();
+
+        for (int i = 0; i < in_len; i++) {
+            in_buff[i] = Character.toLowerCase(in_buff[i]);
+        }
+        for (int i = 0; i < var_len; i++) {
+            var_buff[i] = Character.toLowerCase(var_buff[i]);
+        }
+
+        /*
+         * Do no replacements if the current token is equal to the replacement term.
+         * Shortcuts the case where a name variant appears within its reference
+         * replacement.
+         *
+         * EX:
+         * Reference: L'Amans
+         * Variant:   Amans
+         *
+         * Without this check, the token "L'Amans" would be replaced with "L'L'Amans"
+         */
+        if (termAtt.toString().equals("null") || termAtt.toString().equals(replacement.toLowerCase())) {
+            return;
+        }
 
         for (int i = 0; i < in_len - var_len + 1; i++) {
             // Skip if current char does not match first char of variant
