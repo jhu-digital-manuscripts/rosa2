@@ -5,27 +5,17 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyList;
-import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
-import java.io.InputStream;
 import java.util.Arrays;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.ClassRule;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 
 import rosa.archive.core.BaseSearchTest;
-import rosa.archive.core.Store;
-import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
 import rosa.search.core.LuceneSearchService;
 import rosa.search.core.SearchUtil;
 import rosa.search.model.Query;
@@ -57,50 +47,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
         if (service != null) {
             service.shutdown();
         }
-    }
-
-    /**
-     * Index the valid collection and check that expected number of images and
-     * books are indexed.
-     */
-    @Test
-    @Ignore
-    public void testUpdateValidCollection() throws Exception {
-        SearchResult result;
-
-        // Check that the book is not indexed
-
-        Query book_query = new Query(WebsiteSearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7);
-
-        result = service.search(book_query, null);
-        assertNotNull(result);
-
-        assertEquals(0, result.getTotal());
-
-        // Index the collection
-
-        service.update(store, VALID_COLLECTION);
-
-        // Confirm expected counts
-
-        result = service.search(book_query, null);
-        assertNotNull(result);
-
-        Book book1 = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
-
-        int num_book1_images = book1.getImages().getImages().size();
-
-        assertEquals(num_book1_images + 1, result.getTotal());
-        
-        result = service.search(new Query(WebsiteSearchFields.COLLECTION_ID,
-                VALID_COLLECTION), new SearchOptions());
-        assertNotNull(result);
-
-        Book book2 = loadBook(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
-        
-        int num_book2_images = book2.getImages().getImages().size();
-
-        assertEquals(2 + num_book1_images + num_book2_images, result.getTotal());
     }
 
     @Test
@@ -305,8 +251,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
 
     @Test
     public void testSearchNoMatches() throws Exception {
-//        service.update(store, VALID_COLLECTION);
-
         SearchResult result = service.search(new Query(
                 WebsiteSearchFields.COLLECTION_ID, "Moo"), null);
 
@@ -315,12 +259,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
         assertEquals(0, result.getMatches().length);
         assertEquals(0, result.getOffset());
         assertNull(result.getResumeToken());
-    }
-
-    @Test
-    @Ignore
-    public void testClear() throws Exception {
-        service.clear();
     }
 
     /**
@@ -332,8 +270,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
      */
     @Test
     public void testSearchTranscription() throws Exception {
-//        service.update(store, VALID_COLLECTION);
-
         SearchResult result = service.search(
                 new Query(WebsiteSearchFields.TRANSCRIPTION_TEXT, "\"Tout adés la ou il rendoit\""),
                 null
@@ -361,8 +297,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
      */
     @Test
     public void testMixedQuerySearch() throws Exception {
-//        service.update(store, VALID_COLLECTION);
-
         // Test and ID
         {
             Query query = new Query(
@@ -391,62 +325,10 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
         }
     }
 
-    @Ignore
-    @Test
-    @SuppressWarnings("unchecked")
-    public void testUpdateDouce() throws Exception {
-        Store fakeStore = mock(Store.class);
 
-        Book b = loadValidLudwigXV7();
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Douce195.transcription.xml")) {
-            b.setTranscription(new TranscriptionXmlSerializer().read(in, null));
-        }
-
-        when(fakeStore.loadBookCollection(anyString(), anyList())).thenReturn(loadValidCollection());
-        when(fakeStore.loadBook(any(BookCollection.class), anyString(), anyList())).thenReturn(b);
-
-        service.update(fakeStore, VALID_COLLECTION);
-
-    }
-
-    @Ignore
-    @Test
-    @SuppressWarnings("unchecked")
-    public void testUpdateMorgan() throws Exception {
-        Store fakeStore = mock(Store.class);
-
-        Book b = loadValidLudwigXV7();
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Morgan948.transcription.xml")) {
-            b.setTranscription(new TranscriptionXmlSerializer().read(in, null));
-        }
-
-        when(fakeStore.loadBookCollection(anyString(), anyList())).thenReturn(loadValidCollection());
-        when(fakeStore.loadBook(any(BookCollection.class), anyString(), anyList())).thenReturn(b);
-
-        service.update(fakeStore, VALID_COLLECTION);
-    }
-
-    @Ignore
-    @Test
-    @SuppressWarnings("unchecked")
-    public void testUpdateWalters() throws Exception {
-        Store fakeStore = mock(Store.class);
-
-        Book b = loadValidLudwigXV7();
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Walters143.transcription.xml")) {
-            b.setTranscription(new TranscriptionXmlSerializer().read(in, null));
-        }
-
-        when(fakeStore.loadBookCollection(anyString(), anyList())).thenReturn(loadValidCollection());
-        when(fakeStore.loadBook(any(BookCollection.class), anyString(), anyList())).thenReturn(b);
-
-        service.update(fakeStore, VALID_COLLECTION);
-    }
 
     @Test
     public void testNameVariant() throws Exception {
-//        service.update(store, VALID_COLLECTION);
-
         testQueryVariants("L'Amans", "Lover");
         testQueryVariants("L'Amans", "Amant");
     }
