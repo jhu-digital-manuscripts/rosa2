@@ -93,46 +93,26 @@ public class WebsiteSearchStatefulTest extends BaseArchiveTest {
         service.clear();
     }
 
+    /*
+     * Following three tests update the search index with several transcription
+     * files. Each of these transcriptions have slightly different structure
+     * (because TEI is so flexible).
+     * The tests make sure that these different structures are indexed correctly.
+     */
+
     @Test
-    @SuppressWarnings("unchecked")
-    public void testUpdateDouce() throws Exception {
-        Store fakeStore = mock(Store.class);
-
-        Book b = loadValidLudwigXV7();
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Douce195.transcription.xml")) {
-            b.setTranscription(new TranscriptionXmlSerializer().read(in, null));
-        }
-
-        when(fakeStore.loadBookCollection(anyString(), anyList())).thenReturn(loadValidCollection());
-        when(fakeStore.loadBook(any(BookCollection.class), anyString(), anyList())).thenReturn(b);
-
-        service.update(fakeStore, VALID_COLLECTION);
-
+    public void testUpdateDifferentTranscriptions() throws Exception {
+        updateWithDifferentTranscription("Douce195.transcription.xml");
+        updateWithDifferentTranscription("Morgan948.transcription.xml");
+        updateWithDifferentTranscription("Walters143.transcription.xml");
     }
 
-    @Test
     @SuppressWarnings("unchecked")
-    public void testUpdateMorgan() throws Exception {
+    private void updateWithDifferentTranscription(String transcriptionFile) throws Exception {
         Store fakeStore = mock(Store.class);
 
         Book b = loadValidLudwigXV7();
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Morgan948.transcription.xml")) {
-            b.setTranscription(new TranscriptionXmlSerializer().read(in, null));
-        }
-
-        when(fakeStore.loadBookCollection(anyString(), anyList())).thenReturn(loadValidCollection());
-        when(fakeStore.loadBook(any(BookCollection.class), anyString(), anyList())).thenReturn(b);
-
-        service.update(fakeStore, VALID_COLLECTION);
-    }
-
-    @Test
-    @SuppressWarnings("unchecked")
-    public void testUpdateWalters() throws Exception {
-        Store fakeStore = mock(Store.class);
-
-        Book b = loadValidLudwigXV7();
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("Walters143.transcription.xml")) {
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream(transcriptionFile)) {
             b.setTranscription(new TranscriptionXmlSerializer().read(in, null));
         }
 
