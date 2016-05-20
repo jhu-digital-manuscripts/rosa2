@@ -10,11 +10,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.json.JSONObject;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import rosa.archive.core.ArchiveNameParser;
-import rosa.archive.core.BaseArchiveTest;
+import rosa.archive.core.BaseSearchTest;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
@@ -33,13 +33,11 @@ import rosa.iiif.presentation.model.PresentationRequestType;
 /**
  * Evaluate service against test data from rosa-archive-core.
  */
-public class ArchiveIIIFPresentationServiceTest extends BaseArchiveTest {
-    private ArchiveIIIFPresentationService service;
+public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
+    private static ArchiveIIIFPresentationService service;
 
-    @Before
-    public void setupArchiveStore() throws Exception {
-        super.setupArchiveStore();
-        
+    @BeforeClass
+    public static void setup() throws Exception {
         JsonldSerializer serializer = new JsonldSerializer();
 
         String scheme = "http";
@@ -47,7 +45,7 @@ public class ArchiveIIIFPresentationServiceTest extends BaseArchiveTest {
         int port = 80;
         String pres_prefix = "/pres";
         String image_prefix = "/image";
-        String search_prefix = "/search";
+//        String search_prefix = "/search";
 
         IIIFPresentationRequestFormatter requestFormatter = new IIIFPresentationRequestFormatter(scheme, host, pres_prefix, port);
 

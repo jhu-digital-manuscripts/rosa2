@@ -74,7 +74,7 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param serializers all required serializers
      */
     @Inject
-    BookChecker(SerializerSet serializers) {
+    public BookChecker(SerializerSet serializers) {
         super(serializers);
     }
 
