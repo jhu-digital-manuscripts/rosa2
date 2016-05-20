@@ -157,7 +157,6 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
 
         String result_json = os.toString("UTF-8");
 
-        // TODO More full checks by actually parsing json structure
         assertTrue(result_json.contains("\"total\":37"));
         assertTrue(result_json.contains("\"context\":"));
         assertTrue(result_json.contains("\"manifest\":"));
@@ -174,7 +173,6 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
 
         String result_json = os.toString("UTF-8");
 
-        // TODO More full checks by actually parsing json structure
         assertTrue(result_json.contains("\"fields\":"));
         assertTrue(result_json.contains("\"default-fields\":"));
     }
@@ -191,6 +189,8 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
      *
      * The result Strings will NOT be exactly the same. While the object/manifest will be
      * the same, the context will be different.
+     *
+     * TODO re-enable when there is correct handling of name variants in AOR
      *
      * @throws Exception
      */

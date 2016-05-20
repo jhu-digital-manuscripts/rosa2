@@ -50,19 +50,33 @@ public class SpellingVariationTokenFilter extends TokenFilter {
         }
     }
 
+    private boolean equalsIgnoreCase(char[] a, char[] a2) {
+        if (a==a2)
+            return true;
+        if (a==null || a2==null)
+            return false;
+
+        int length = a.length;
+        if (a2.length != length)
+            return false;
+
+        for (int i=0; i<length; i++)
+            if (!equalsIgnoreCase(a[i], a2[i]))
+                return false;
+
+        return true;
+    }
+
+    private boolean equalsIgnoreCase(char a, char b) {
+        return Character.toLowerCase(a) == Character.toLowerCase(b);
+    }
+
     private void doReplace(String replacement, String variant) {
         char[] in_buff = termAtt.buffer();
         char[] var_buff = variant.toCharArray();
 
         int in_len = termAtt.length();
         int var_len = variant.length();
-
-        for (int i = 0; i < in_len; i++) {
-            in_buff[i] = Character.toLowerCase(in_buff[i]);
-        }
-        for (int i = 0; i < var_len; i++) {
-            var_buff[i] = Character.toLowerCase(var_buff[i]);
-        }
 
         /*
          * Do no replacements if the current token is equal to the replacement term.
@@ -75,20 +89,15 @@ public class SpellingVariationTokenFilter extends TokenFilter {
          *
          * Without this check, the token "L'Amans" would be replaced with "L'L'Amans"
          */
-        if (termAtt.toString().equals("null") || termAtt.toString().equals(replacement.toLowerCase())) {
+        if (termAtt.toString().equals("null") || termAtt.toString().equalsIgnoreCase(replacement)) {
             return;
         }
 
         for (int i = 0; i < in_len - var_len + 1; i++) {
-            // Skip if current char does not match first char of variant
-            if (in_buff[i] != var_buff[0]) {
-                continue;
-            }
-
             char[] in_frag = Arrays.copyOfRange(in_buff, i, i + var_len);
 
             // If this fragment matches the variant, replace it with 'replacement'
-            if (Arrays.equals(in_frag, var_buff)) {
+            if (equalsIgnoreCase(in_frag, var_buff)) {
                 String prefix = new String(Arrays.copyOfRange(in_buff, 0, i));
                 String suffix = new String(Arrays.copyOfRange(in_buff, i + var_len, in_len));
                 i += var_len - 1;
@@ -106,8 +115,10 @@ public class SpellingVariationTokenFilter extends TokenFilter {
      * @param variant variant string to be replaced
      */
     private void doReplace2(String replacement, String variant) {
-        String in_buff = new String(termAtt.buffer(), 0, termAtt.length());
-        termAtt.setEmpty();
-        termAtt.append(in_buff.trim().replace(variant, replacement));
+        if (!termAtt.toString().equals(replacement) && termAtt.toString().contains(variant)) {
+            String in_buff = new String(termAtt.buffer(), 0, termAtt.length());
+            termAtt.setEmpty();
+            termAtt.append(in_buff.trim().toLowerCase().replace(variant.toLowerCase(), replacement));
+        }
     }
 }
