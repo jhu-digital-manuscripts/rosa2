@@ -41,7 +41,7 @@ public class SpellingVariationTokenFilter extends TokenFilter {
 
                 entry.getValue().stream()
                         .filter(var -> var != null && var.length() > 0)
-                        .forEach(variant -> doReplace(key, variant));
+                        .forEach(variant -> doReplace2(key, variant));
             }
 
             return true;
@@ -115,8 +115,8 @@ public class SpellingVariationTokenFilter extends TokenFilter {
      * @param variant variant string to be replaced
      */
     private void doReplace2(String replacement, String variant) {
-        if (!termAtt.toString().equals(replacement) && termAtt.toString().contains(variant)) {
-            String in_buff = new String(termAtt.buffer(), 0, termAtt.length());
+        String in_buff = new String(termAtt.buffer(), 0, termAtt.length());
+        if (!in_buff.equalsIgnoreCase(replacement) && in_buff.contains(variant)) {
             termAtt.setEmpty();
             termAtt.append(in_buff.trim().toLowerCase().replace(variant.toLowerCase(), replacement));
         }
