@@ -7,7 +7,20 @@ import com.google.inject.name.Named;
 import org.apache.commons.lang3.math.NumberUtils;
 import rosa.archive.core.serialize.ImageListSerializer;
 import rosa.archive.core.util.TranscriptionSplitter;
-import rosa.archive.model.*;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
+import rosa.archive.model.BookImageLocation;
+import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookText;
+import rosa.archive.model.CharacterName;
+import rosa.archive.model.CharacterNames;
+import rosa.archive.model.Illustration;
+import rosa.archive.model.IllustrationTagging;
+import rosa.archive.model.IllustrationTitles;
+import rosa.archive.model.ImageList;
+import rosa.archive.model.NarrativeScene;
+import rosa.archive.model.NarrativeSections;
 import rosa.website.core.client.ArchiveDataService;
 import rosa.website.model.csv.CollectionDisplayCSV;
 import rosa.website.model.select.DataStatus;
@@ -394,12 +407,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
     @Override
     public String loadImageListAsString(String collection, String book) throws IOException {
-//        String key = ImageList.class + "." + String.class + "." + collection + "." + book;
-//
-//        Object str = objectCache.get(key);
-//        if (str != null) {
-//            return (String) str;
-//        }
         Book b = loadBook(collection, book);
 
         if (b == null || b.getImages() == null || b.getImages().getImages() == null
@@ -409,18 +416,11 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         imageListSerializer.write(b.getImages(), out);
 
-//        updateCache(key, out.toString());
         return out.toString();
     }
 
     @Override
     public ImageList loadImageList(String collection, String book) throws IOException {
-//        String key = ImageList.class + "." + collection + "." + book;
-//
-//        Object list = objectCache.get(key);
-//        if (list != null) {
-//            return (ImageList) list;
-//        }
         Book b = loadBook(collection, book);
 
         if (b == null || b.getImages() == null || b.getImages().getImages() == null
@@ -428,7 +428,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
             return null;
         }
 
-//        updateCache(key, b.getImages());
         return b.getImages();
     }
 
@@ -580,6 +579,22 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
             entries.add(new CSVRow(siteName, name.getNameInLanguage("en"), name.getNameInLanguage("fr")));
         }
+
+        Collections.sort(entries, new Comparator<CSVRow>() {
+            @Override
+            public int compare(CSVRow o1, CSVRow o2) {
+                if (o1 == null && o2 != null) { // first is NULL
+                    return -1;
+                } else if (o1 != null && o2 == null) { // second is NULL
+                    return 1;
+                } else if (o1 == null) { // both are NULL
+                    return 0;
+                }
+
+                return o1.getValue(CharacterNamesCSV.Column.NAME)
+                        .compareToIgnoreCase(o2.getValue(CharacterNamesCSV.Column.NAME));
+            }
+        });
 
         CharacterNamesCSV csv = new CharacterNamesCSV(names.getId(), entries);
         updateCache(key, csv);
