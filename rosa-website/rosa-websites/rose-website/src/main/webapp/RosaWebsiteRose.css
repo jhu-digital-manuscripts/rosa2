@@ -105,6 +105,10 @@
    margin-left: 1em;
 }
 
+.SidebarItem.link:hover {
+  color: #b8924b;
+}
+
 .SidebarLastUpdated {
    color: #FFFFFF;
    font-size: smaller;
