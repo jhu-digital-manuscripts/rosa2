@@ -407,6 +407,12 @@ public class AORTranscriptionChecker {
                             Path desiredPath = colPath.resolve(bookId);
                             if (!Files.exists(desiredPath) || !Files.isDirectory(desiredPath)) {
                                 // If names don't exist, first apply the git-archive mapping and recheck
+                                String mappedPath = tryFileMap(bookId);
+                                if (mappedPath == null || mappedPath.isEmpty()) {
+                                    report.println("  [" + aPage.getId() + "] Cannot check internal references. " +
+                                            "book_id is invalid or does not exist. (" + bookId + ")");
+                                    return;
+                                }
                                 desiredPath = colPath.resolve(tryFileMap(bookId));
                                 if (!Files.exists(desiredPath) || !Files.isDirectory(desiredPath)) {
                                     report.println("  [" + aPage.getId() + "] Internal reference target " +
