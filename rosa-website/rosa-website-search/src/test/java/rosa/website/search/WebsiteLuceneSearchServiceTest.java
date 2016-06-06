@@ -6,6 +6,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
+import java.nio.file.Path;
 import java.util.Arrays;
 
 import org.junit.AfterClass;
@@ -38,7 +39,10 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
     @BeforeClass
     public static void setup() throws Exception {
         mapper = new WebsiteLuceneMapper();
-        service = new LuceneSearchService(tmpfolder.newFolder().toPath(), mapper);
+        Path indexPath = tmpfolder.newFolder().toPath();
+        service = new LuceneSearchService(indexPath, mapper);
+        System.out.println("[WebsiteLuceneSearchServiceTest#beforeClass] " +
+                "Setting up search index.\n\t\ttemp folder: " + indexPath.toString());
         service.update(store, VALID_COLLECTION);
     }
 
@@ -175,6 +179,7 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
     @Test
     public void testSearchDescription() throws Exception {
         // Search only matches English
+        System.out.println("[WebsiteLuceneSearchServiceTest#testSearchDescription] ");
         {
             SearchResult result = service.search(new Query(
                     WebsiteSearchFields.DESCRIPTION_TEXT, "morocco"), null);
@@ -197,8 +202,11 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
 
         // Search only matches French French
         {
-            SearchResult result = service.search(new Query(
-                    WebsiteSearchFields.DESCRIPTION_TEXT, "supprimée"), null);
+            Query q = new Query(WebsiteSearchFields.DESCRIPTION_TEXT, "supprimée");
+            System.out.println("Testing query:: \t\t" + q.toString());
+            SearchResult result = service.search(q, null);
+
+            System.out.println("Search results:: \t\t" + result.toString());
 
             assertNotNull(result);
             assertEquals(1, result.getTotal());
@@ -211,6 +219,8 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
             assertEquals(2, match.getContext().size());
             String field = match.getContext().get(0);
             String context = match.getContext().get(1);
+
+            System.out.println(context);
 
             assertEquals(WebsiteSearchFields.DESCRIPTION_TEXT.getFieldName(), field);
             assertTrue(context.contains("supprimée"));
