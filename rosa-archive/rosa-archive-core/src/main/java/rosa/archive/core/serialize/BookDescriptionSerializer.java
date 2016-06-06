@@ -12,6 +12,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 public class BookDescriptionSerializer implements Serializer<BookDescription> {
@@ -48,7 +49,12 @@ public class BookDescriptionSerializer implements Serializer<BookDescription> {
         XMLUtil.write(doc, out, false);
 
         BookDescription bookDescription = new BookDescription();
-        bookDescription.setDescription(out.toString());
+        try {
+            bookDescription.setDescription(out.toString("UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            // If UTF-8 is not supported for whatever reason, fall back to system default
+            bookDescription.setDescription(out.toString());
+        }
         return bookDescription;
     }
 
