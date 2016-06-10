@@ -16,6 +16,7 @@ import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.view.BookDescriptionView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.view.BookDescriptionViewModel;
 import rosa.website.rose.client.WebsiteConfig;
 
@@ -85,7 +86,9 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
                     public void onFailure(Throwable caught) {
                         view.addErrorMessage(msg);
                         logger.log(Level.SEVERE, msg);
-
+                        if (caught instanceof RosaConfigurationException) {
+                            view.addErrorMessage(caught.getMessage());
+                        }
                         LoadingPanel.INSTANCE.hide();
                     }
 

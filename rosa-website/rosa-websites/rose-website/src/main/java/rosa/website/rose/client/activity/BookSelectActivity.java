@@ -16,6 +16,7 @@ import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.place.BookSelectPlace;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
 import rosa.website.rose.client.WebsiteConfig;
@@ -90,6 +91,9 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
                     public void onFailure(Throwable caught) {
                         logger.log(Level.SEVERE, msg, caught);
                         view.addErrorMessage(msg);
+                        if (caught instanceof RosaConfigurationException) {
+                            view.addErrorMessage(caught.getMessage());
+                        }
                         LoadingPanel.INSTANCE.hide();
                     }
 

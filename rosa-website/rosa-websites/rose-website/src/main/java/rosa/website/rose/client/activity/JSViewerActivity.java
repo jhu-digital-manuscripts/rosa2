@@ -26,6 +26,7 @@ import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.core.client.widget.TranscriptionViewer;
 import rosa.website.core.shared.ImageNameParser;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.view.FSIViewerModel;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController.ChangeHandler;
@@ -155,6 +156,9 @@ public class JSViewerActivity implements Activity {
                         String msg = "An error has occurred, Image list not found. [" + book + "]";
                         logger.log(Level.SEVERE, msg, caught);
                         view.addErrorMessage(msg);
+                        if (caught instanceof RosaConfigurationException) {
+                            view.addErrorMessage(caught.getMessage());
+                        }
                         LoadingPanel.INSTANCE.hide();
                     }
 

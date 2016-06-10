@@ -36,6 +36,7 @@ import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.core.shared.ImageNameParser;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.csv.BookDataCSV;
 import rosa.website.model.csv.BookDataCSV.Column;
 import rosa.website.model.csv.CSVData;
@@ -126,6 +127,9 @@ public class SearchActivity implements Activity {
             public void onFailure(Throwable caught) {
                 LOG.log(Level.SEVERE, error, caught);
                 view.addErrorMessage(error);
+                if (caught instanceof RosaConfigurationException) {
+                    view.addErrorMessage(caught.getMessage());
+                }
             }
 
             @Override

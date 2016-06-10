@@ -17,6 +17,7 @@ import rosa.website.core.client.Labels;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVType;
 import rosa.website.model.csv.CollectionDisplayCSV;
@@ -98,6 +99,9 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, CSV_LOAD_ERROR_MSG, caught);
                 view.addErrorMessage(CSV_LOAD_ERROR_MSG);
+                if (caught instanceof RosaConfigurationException) {
+                    view.addErrorMessage("  " + caught.getMessage());
+                }
                 LoadingPanel.INSTANCE.hide();
             }
 

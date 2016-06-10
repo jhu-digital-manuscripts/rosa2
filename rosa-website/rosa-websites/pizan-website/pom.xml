@@ -22,7 +22,7 @@
             <properties>
                 <archive.path>/mnt</archive.path>
                 <collection.name>pizancollection</collection.name>
-                <search.index.path>/tmp/lucene</search.index.path>
+                <search.index.path>webapps/pizan/WEB-INF/lucene</search.index.path>
                 <gwt.output.style>pretty</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>
                 <analytics.status>false</analytics.status>

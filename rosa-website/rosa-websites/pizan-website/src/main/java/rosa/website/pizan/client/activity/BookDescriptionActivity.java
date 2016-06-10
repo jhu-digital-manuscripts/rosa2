@@ -16,6 +16,7 @@ import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.view.BookDescriptionView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.view.BookDescriptionViewModel;
 import rosa.website.pizan.client.WebsiteConfig;
 
@@ -85,7 +86,9 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
                     public void onFailure(Throwable caught) {
                         view.addErrorMessage(msg);
                         logger.log(Level.SEVERE, msg);
-
+                        if (caught instanceof RosaConfigurationException) {
+                            view.addErrorMessage(caught.getMessage());
+                        }
                         LoadingPanel.INSTANCE.hide();
                     }
 
@@ -107,8 +110,13 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
 
     @Override
     public String getPageUrlFragment(String page) {
-        if (model == null || model.getImages()== null) {
+        if (model == null || model.getImages() == null) {
+            logger.warning("No image list found when trying to get image URL fragment.");
+            view.addErrorMessage("Could not find image list for this book.");
             return null;
+        }
+        if (!page.endsWith("r") && !page.endsWith("v")) {
+            page += "r";
         }
 
         for (BookImage image : model.getImages()) {
@@ -126,8 +134,8 @@ public class BookDescriptionActivity implements Activity, BookDescriptionView.Pr
     }
 
     private void finishActivity() {
+        LoadingPanel.INSTANCE.hide();
         view.clear();
         eventBus.fireEvent(new BookSelectEvent(false, bookName));
-        LoadingPanel.INSTANCE.hide();
     }
 }

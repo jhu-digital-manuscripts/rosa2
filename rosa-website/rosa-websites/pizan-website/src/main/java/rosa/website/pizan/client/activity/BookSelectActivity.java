@@ -10,10 +10,13 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.Labels;
+import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.place.BookSelectPlace;
 import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
 import rosa.website.pizan.client.WebsiteConfig;
@@ -47,6 +50,11 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
     }
 
     @Override
+    public void goToDescription(String id) {
+        placeController.goTo(new BookDescriptionPlace(id));
+    }
+
+    @Override
     public String mayStop() {
         return null;
     }
@@ -65,12 +73,15 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
 
     @Override
     public void start(final AcceptsOneWidget panel, EventBus eventBus) {
-        final String error = "Failed to load book selection data. [" + category + "]";
+        final String msg = "Failed to load book selection data. [" + category.toString() + "]";
 
-        LoadingPanel.INSTANCE.show();
         panel.setWidget(view);
+        LoadingPanel.INSTANCE.show();
         view.setPresenter(this);
 
+        eventBus.fireEvent(new SidebarItemSelectedEvent(getLabel(category)));
+
+        view.setHeaderText(getHeader(category));
         service.loadBookSelectionData(
                 WebsiteConfig.INSTANCE.collection(),
                 category,
@@ -78,8 +89,11 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
                 new AsyncCallback<BookSelectList>() {
                     @Override
                     public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, error, caught);
-                        view.addErrorMessage(error);
+                        logger.log(Level.SEVERE, msg, caught);
+                        view.addErrorMessage(msg);
+                        if (caught instanceof RosaConfigurationException) {
+                            view.addErrorMessage(caught.getMessage());
+                        }
                         LoadingPanel.INSTANCE.hide();
                     }
 
@@ -88,8 +102,8 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
                         LoadingPanel.INSTANCE.hide();
 
                         if (result == null) {
-                            logger.log(Level.SEVERE, error);
-                            view.addErrorMessage(error);
+                            logger.severe(msg);
+                            view.addErrorMessage(msg);
                             return;
                         }
 
@@ -107,8 +121,48 @@ public class BookSelectActivity implements Activity, BookSelectView.Presenter {
         });
     }
 
-    @Override
-    public void goToDescription(String id) {
-        placeController.goTo(new BookDescriptionPlace(id));
+    private String getHeader(SelectCategory category) {
+        Labels labels = Labels.INSTANCE;
+
+        String header = labels.selectBook();
+
+        String label = getLabel(category);
+        if (!label.isEmpty()) {
+            header += ": " + label;
+        }
+
+        return header;
+    }
+
+    private String getLabel(SelectCategory category) {
+        Labels labels = Labels.INSTANCE;
+        switch (category) {
+            case REPOSITORY:
+                return labels.repository();
+            case SHELFMARK:
+                return labels.shelfmark();
+            case COMMON_NAME:
+                return labels.commonName();
+            case LOCATION:
+                return labels.currentLocation();
+            case DATE:
+                return labels.date();
+            case ORIGIN:
+                return labels.origin();
+            case TYPE:
+                return labels.type();
+            case NUM_ILLUSTRATIONS:
+                return labels.numIllustrations();
+            case NUM_FOLIOS:
+                return labels.numFolios();
+            case TRANSCRIPTION:
+                return labels.transcription();
+            case BIBLIOGRAPHY:
+            case NARRATIVE_TAGGING:
+            case ILLUSTRATION_TAGGING:
+            case ID:
+            default:
+                return "";
+        }
     }
 }

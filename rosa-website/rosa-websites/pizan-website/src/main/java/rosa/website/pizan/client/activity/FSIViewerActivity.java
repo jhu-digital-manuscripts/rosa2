@@ -4,6 +4,8 @@ import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import com.google.gwt.event.dom.client.ChangeEvent;
+import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
@@ -11,7 +13,7 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.place.shared.PlaceController;
-import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.BookImage;
@@ -24,6 +26,9 @@ import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.place.HTMLPlace;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.core.client.widget.TranscriptionViewer;
+import rosa.website.core.shared.ImageNameParser;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewerHTMLBuilder;
@@ -31,10 +36,36 @@ import rosa.website.viewer.client.fsiviewer.FSIViewerType;
 import rosa.website.model.view.FSIViewerModel;
 import rosa.website.pizan.client.WebsiteConfig;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class FSIViewerActivity implements Activity {
+
+    public enum DisplayCategory {   // TODO move to website model
+        NONE(Labels.INSTANCE.show()),
+        TRANSCRIPTION(Labels.INSTANCE.transcription()),
+        LECOY(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]"),
+        ILLUSTRATION(Labels.INSTANCE.illustrationDescription()),
+        NARRATIVE(Labels.INSTANCE.narrativeSections());
+
+        DisplayCategory(String display) {
+            this.display = display;
+        }
+
+        public final String display;
+
+        public static DisplayCategory category(String label) {
+            for (DisplayCategory c : DisplayCategory.values()) {
+                if (c.display.equals(label)) {
+                    return c;
+                }
+            }
+            return null;
+        }
+    }
 
     private static final Logger logger = Logger.getLogger(FSIViewerActivity.class.toString());
     private static final String FSI_URL_PREFIX = GWT.getModuleBaseURL() + "fsi/";
@@ -59,6 +90,20 @@ public class FSIViewerActivity implements Activity {
 
     private FSIViewerModel model;
     private int current_image_index;
+    private DisplayCategory showExtraCategory;
+
+    private final ChangeHandler showExtraChangeHandler = new ChangeHandler() {
+        @Override
+        public void onChange(ChangeEvent event) {
+            DisplayCategory category = DisplayCategory.category(view.getSelectedShowExtra());
+            if (category == null) {
+                return;
+            }
+
+            showExtraCategory = category;
+            handleShowExtra();
+        }
+    };
 
     /** Callback for FSI showcase view. */
     private final FSIShowcaseCallback showcaseCallback = new FSIShowcaseCallback() {
@@ -75,7 +120,9 @@ public class FSIViewerActivity implements Activity {
             // Update goto box  with label
             current_image_index = page;
 
-            if (page == model.getImages().getImages().size()) {
+            if (model != null && model.getImages() != null
+                    && model.getImages().getImages() != null
+                    && page == model.getImages().getImages().size()) {
                 view.setGotoLabel(getImageName(page));
             } else {
                 StringBuilder sb = new StringBuilder();
@@ -87,12 +134,16 @@ public class FSIViewerActivity implements Activity {
 
                 view.setGotoLabel(sb.toString());
             }
+
+            // Update transcription display thingy ('show extra' labels)
+            setupShowExtra(page, true);
         }
 
         @Override
         public void imageInfo(String info) {
             current_image_index = getImageIndexFromPagesInfo(info);
             view.setGotoLabel(getImageName(current_image_index));
+            setupShowExtra(current_image_index, false);
         }
     };
 
@@ -110,6 +161,8 @@ public class FSIViewerActivity implements Activity {
         this.type = getViewerType(place.getType());
         this.eventBus = clientFactory.eventBus();
         this.placeController = clientFactory.placeController();
+
+        this.showExtraCategory = DisplayCategory.NONE;
     }
 
     @Override
@@ -139,14 +192,20 @@ public class FSIViewerActivity implements Activity {
                 new AsyncCallback<FSIViewerModel>() {
                     @Override
                     public void onFailure(Throwable caught) {
-                        logger.log(Level.SEVERE, "Failed to load FSI data.");
+                        String msg = "An error has occurred, Book not found. ["
+                                + WebsiteConfig.INSTANCE.collection() + ":" + book + "]";
+                        logger.log(Level.SEVERE, msg, caught);
+                        view.addErrorMessage(msg);
+                        if (caught instanceof RosaConfigurationException) {
+                            view.addErrorMessage(caught.getMessage());
+                        }
                         LoadingPanel.INSTANCE.hide();
                     }
 
                     @Override
                     public void onSuccess(FSIViewerModel result) {
                         if (result == null) {
-                            Window.alert("An error has occurred, Book not found. [" + book + "]");
+                            view.addErrorMessage("An error has occurred, Book not found. [" + book + "]");
                             placeController.goTo(new HTMLPlace(WebsiteConfig.INSTANCE.defaultPage()));
                             return;
                         }
@@ -165,6 +224,32 @@ public class FSIViewerActivity implements Activity {
                         LoadingPanel.INSTANCE.hide();
                     }
                 });
+    }
+
+    public String[] getExtraDataLabels(int page) {
+        return getExtraDataLabels(getImageName(page));
+    }
+
+    private String[] getExtraDataLabels(String page) {
+        if (model == null) {
+            return new String[] {Labels.INSTANCE.show()};
+        }
+
+        List<String> labels = new ArrayList<>();
+        labels.add(Labels.INSTANCE.show());
+
+        if (model.hasTranscription(ImageNameParser.toStandardName(page))) {
+            labels.add(Labels.INSTANCE.transcription());
+            labels.add(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]");
+        }
+        if (model.hasIllustrationTagging(page)) {
+            labels.add(Labels.INSTANCE.illustrationDescription());
+        }
+        if (model.hasNarrativeTagging(page)) {
+            labels.add(Labels.INSTANCE.narrativeSections());
+        }
+
+        return labels.toArray(new String[labels.size()]);
     }
 
     public String getCurrentPage() {
@@ -186,70 +271,190 @@ public class FSIViewerActivity implements Activity {
                 .build();
 
         view.setFlashViewer(fsiHtml, type);
+        view.addShowExtraChangeHandler(showExtraChangeHandler);
 
-        if (type == FSIViewerType.SHOWCASE) {
-            view.addShowcaseToolbar();
-            view.setupFsiShowcaseCallback(showcaseCallback);
-            view.setHeader(Labels.INSTANCE.browseImages() + ": " + model.getTitle());
+        switch (type) {
+            case SHOWCASE:
+                // Highlight the 'browse images' sidebar item
+                Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+                    @Override
+                    public void execute() {
+                        eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.browseImages()));
+                    }
+                });
 
-            Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-                @Override
-                public void execute() {
-                    eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.browseImages()));
-                }
-            });
+                view.addShowcaseToolbar();
+                view.setupFsiShowcaseCallback(showcaseCallback);
+                view.setHeader(Labels.INSTANCE.browseImages() + ": " + model.getTitle());
 
-            // Show nothing in the "show extra" drop down
-            view.setShowExtraLabels((String) null);
-//            view.showExtra(null);
+                // Set labels in the "show extra" dropdown
+                setupShowExtra(startPage, false);
 
-            view.addGotoKeyDownHandler(new KeyDownHandler() {
-                @Override
-                public void onKeyDown(KeyDownEvent event) {
-                    if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                        String tryThis = view.getGotoText();
-                        if (isNumeric(tryThis)) {
-                            tryThis += "r";
-                        }
+                view.addGotoKeyDownHandler(new KeyDownHandler() {
+                    @Override
+                    public void onKeyDown(KeyDownEvent event) {
+                        if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
+                            String tryThis = view.getGotoText();
+                            if (needsRV(tryThis)) {
+                                tryThis += "r";
+                            }
 
-                        int index = getImageIndex(tryThis);
-                        if (index >= 0) {
-                            view.fsiViewerSelectImage(index);
+                            int index = getImageIndex(tryThis);
+                            if (index >= 0) {
+                                updateHistory("browse;", index);
+                                view.fsiViewerSelectImage(index);
+                            }
                         }
                     }
-                }
-            });
-        } else if (type == FSIViewerType.PAGES) {
-            view.addPagesToolbar();
-            view.setupFsiPagesCallback(pagesCallback);
-            view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
+                });
 
-            Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-                @Override
-                public void execute() {
-                    eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.pageTurner()));
-                }
-            });
+                break;
+            case PAGES:
+                // Highlight the 'page turner' sidebar item
+                Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+                    @Override
+                    public void execute() {
+                        eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.pageTurner()));
+                    }
+                });
 
-            view.addGotoKeyDownHandler(new KeyDownHandler() {
-                @Override
-                public void onKeyDown(KeyDownEvent event) {
-                    if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                        String tryThis = view.getGotoText();
-                        if (isNumeric(tryThis)) {
-                            tryThis += "r";
-                        }
+                view.addPagesToolbar();
+                view.setupFsiPagesCallback(pagesCallback);
+                view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
 
-                        int index = getImageIndex(tryThis);
-                        if (index >= 0) {
-                            view.fsiViewerGotoImage(index + 1);
+                // Set labels in the "show extra" dropdown
+                setupShowExtra(startPage, true);
+
+                view.addGotoKeyDownHandler(new KeyDownHandler() {
+                    @Override
+                    public void onKeyDown(KeyDownEvent event) {
+                        if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
+                            String tryThis = view.getGotoText();
+                            if (needsRV(tryThis)) {
+                                tryThis += "r";
+                            }
+
+                            int index = getImageIndex(tryThis);
+                            if (index >= 0) {
+                                updateHistory("read;", index);
+                                view.fsiViewerGotoImage(index + 1);
+                            }
                         }
                     }
+                });
+
+                break;
+            default:
+                throw new RuntimeException("Unknown FSI viewer mode.");
+        }
+    }
+
+    private void setupShowExtra(int page, boolean opening) {
+        List<String> page1 = new ArrayList<>(Arrays.asList(getExtraDataLabels(page)));
+
+        if (opening && page > 0) {
+            String[] page2 = getExtraDataLabels(page - 1);
+            for (String label : page2) {
+                if (!page1.contains(label)) {
+                    page1.add(label);
                 }
-            });
+            }
+        }
+        view.setShowExtraLabels(page1.toArray(new String[page1.size()]));
+        handleShowExtra();
+    }
+
+    private void handleShowExtra() {
+        if (showExtraCategory == null) {
+            return;
+        }
+        //   Generate array of String labels to label each tab
+        String[] selectedPages = view.getGotoText().split(",");
+
+        boolean lecoy = true;
+        switch (showExtraCategory) {
+            case TRANSCRIPTION:
+                view.setSelectedShowExtra(Labels.INSTANCE.transcription());
+                lecoy = false;
+                // Display transcriptions for all pages/columns
+                // Fall through
+            case LECOY:
+                if (lecoy) {
+                    view.setSelectedShowExtra(Labels.INSTANCE.transcription() + "[" + Labels.INSTANCE.lecoy() + "]");
+                }
+                // Display Lecoy
+
+                boolean hasAnyTranscription = false;
+                for (String page : selectedPages) {
+                    if (model.hasTranscription(ImageNameParser.toStandardName(page))) {
+                        hasAnyTranscription = true;
+                        break;
+                    }
+                }
+
+                // Display nothing and hide UI elements if no transcription is available
+                if (!hasAnyTranscription) {
+                    showExtraCategory = DisplayCategory.NONE;
+                    handleShowExtra();
+                    return;
+                }
+
+                //   Generate array of Strings holding XML fragments for each relevant page
+                List<String> list = new ArrayList<>();
+                for (String page : selectedPages) {
+                    list.add(model.getTranscription(ImageNameParser.toStandardName(page)));
+                }
+
+                //   Create display widget and add it to view
+                view.showExtra(TranscriptionViewer.createTranscriptionViewer(
+                        list.toArray(new String[list.size()]), selectedPages, lecoy
+                ));
+                break;
+            case ILLUSTRATION:
+                boolean hasAnyIllustration = false;
+                for (String page : selectedPages) {
+                    if (model.hasIllustrationTagging(page)) {
+                        hasAnyIllustration = true;
+                        break;
+                    }
+                }
+
+                if (!hasAnyIllustration) {
+                    showExtraCategory = DisplayCategory.NONE;
+                    handleShowExtra();
+                    return;
+                }
+
+                view.setSelectedShowExtra(Labels.INSTANCE.illustrationDescription());
+                // Display illustration descriptions
+
+                view.showExtra(TranscriptionViewer.createIllustrationTaggingViewer(
+                        selectedPages, model.getIllustrationTagging()));
+                break;
+            case NARRATIVE:
+                view.setSelectedShowExtra(Labels.INSTANCE.narrativeSections());
+                // Display narrative sections
+                view.showExtra(TranscriptionViewer.createNarrativeTaggingViewer(selectedPages,
+                        model.getNarrativeTagging(), model.getNarrativeSections()));
+                break;
+            case NONE:
+                // Fall through to default
+            default:
+                view.setSelectedShowExtra(Labels.INSTANCE.show());
+                view.showExtra(null);
+                break;
         }
 
+        view.onResize();
+    }
 
+    private void updateHistory(String prefix, int imageIndex) {
+        if (imageIndex == -1) {
+            return;
+        }
+
+        String imageId = model.getImages().getImages().get(imageIndex).getId();
+        History.newItem(prefix + imageId, false);
     }
 
     /**
@@ -258,8 +463,14 @@ public class FSIViewerActivity implements Activity {
      */
     private String getImageName(int index) {
         if (book == null || model.getImages() == null || model.getImages().getImages() == null
-                || model.getImages().getImages().size() < index || model.getImages().getImages().get(index) == null) {
+                || model.getImages().getImages().size() < index
+                || model.getImages().getImages().get(index) == null) {
             return "";
+        }
+        if (index < 0) {
+            index = 0;
+        } else if (index >= model.getImages().getImages().size()) {
+            index = model.getImages().getImages().size() - 1;
         }
 
         return model.getImages().getImages().get(index).getName();
@@ -273,7 +484,8 @@ public class FSIViewerActivity implements Activity {
         if (book != null && model.getImages() != null && model.getImages().getImages() != null) {
             for (int i = 0; i < model.getImages().getImages().size(); i++) {
                 BookImage image = model.getImages().getImages().get(i);
-                if (image.getName().equals(name) || image.getId().equals(name)) {
+                if (image.getName().equalsIgnoreCase(name)
+                        || image.getId().equalsIgnoreCase(name)) {
                     return i;
                 }
             }
@@ -318,7 +530,8 @@ public class FSIViewerActivity implements Activity {
         return result;
     }
 
-    private native boolean isNumeric(String str) /*-{
-        return !isNaN(str);
-    }-*/;
+    private boolean needsRV(String str) {
+        return model.imagesNeedRV() &&
+                !(str.endsWith("r") || str.endsWith("R") || str.endsWith("v") || str.endsWith("V"));
+    }
 }

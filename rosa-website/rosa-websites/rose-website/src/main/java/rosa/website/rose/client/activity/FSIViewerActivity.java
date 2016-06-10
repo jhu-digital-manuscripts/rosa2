@@ -14,7 +14,6 @@ import com.google.gwt.http.client.URL;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.History;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.BookImage;
@@ -29,6 +28,7 @@ import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.core.client.widget.TranscriptionViewer;
 import rosa.website.core.shared.ImageNameParser;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIPagesCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewer.FSIShowcaseCallback;
 import rosa.website.viewer.client.fsiviewer.FSIViewerHTMLBuilder;
@@ -197,6 +197,9 @@ public class FSIViewerActivity implements Activity {
                                 + WebsiteConfig.INSTANCE.collection() + ":" + book + "]";
                         logger.log(Level.SEVERE, msg, caught);
                         view.addErrorMessage(msg);
+                        if (caught instanceof RosaConfigurationException) {
+                            view.addErrorMessage(caught.getMessage());
+                        }
                         LoadingPanel.INSTANCE.hide();
                     }
 

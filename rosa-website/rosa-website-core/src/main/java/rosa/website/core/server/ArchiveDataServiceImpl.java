@@ -22,6 +22,7 @@ import rosa.archive.model.ImageList;
 import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
 import rosa.website.core.client.ArchiveDataService;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.csv.CollectionDisplayCSV;
 import rosa.website.model.select.DataStatus;
 import rosa.website.model.view.BookDescriptionViewModel;
@@ -98,6 +99,12 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         }
     }
 
+    private void assertValidCollection(String collection) throws RosaConfigurationException {
+        if (!archiveStore.hasCollection(collection)) {
+            throw new RosaConfigurationException("collection", collection);
+        }
+    }
+
     @Override
     public CSVData loadCSVData(String collection, String lang, CSVType type) throws IOException {
         logger.info("Loading CSV data. [" + collection + ":" + lang + ":" + type + "]");
@@ -140,6 +147,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         List<CSVRow> entries = new ArrayList<>();
         for (String bookName : col.books()) {
+            if (!archiveStore.hasBook(collection, bookName)) {
+                continue;
+            }
+
             Book book = loadBook(collection, bookName);
 
             if (book == null || book.getId().contains(".ignore")) {
@@ -236,6 +247,10 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         List<CSVRow> entries = new ArrayList<>();
         for (String bookName : col.books()) {
+            if (!archiveStore.hasBook(collection, bookName)) {
+                continue;
+            }
+
             Book book = loadBook(collection, bookName);
             if (book == null || book.getId().contains(".ignore")) {
                 continue;
@@ -411,7 +426,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         if (b == null || b.getImages() == null || b.getImages().getImages() == null
                 || b.getImages().getImages().isEmpty()) {
-            return "";
+            throw new RosaConfigurationException("Image list", "book", book);
         }
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         imageListSerializer.write(b.getImages(), out);
@@ -425,7 +440,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
 
         if (b == null || b.getImages() == null || b.getImages().getImages() == null
                 || b.getImages().getImages().isEmpty()) {
-            return null;
+            throw new RosaConfigurationException("Image list", "book", book);
         }
 
         return b.getImages();
@@ -531,6 +546,7 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     }
 
     private BookCollection loadBookCollection(String collection) throws IOException {
+        assertValidCollection(collection);
         BookCollection col = null;
 
         try {
@@ -543,6 +559,11 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     }
 
     private Book loadBook(String collection, String book) throws IOException {
+        assertValidCollection(collection);
+        if (!archiveStore.hasBook(collection, book)) {
+            throw new RosaConfigurationException("book", book);
+        }
+
         try {
             return archiveStore.book(collection, book);
         } catch (Exception e) {

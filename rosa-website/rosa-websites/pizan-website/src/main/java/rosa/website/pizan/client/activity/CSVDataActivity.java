@@ -13,14 +13,20 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
+import rosa.website.core.client.Labels;
 import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.widget.LoadingPanel;
+import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.csv.CSVData;
 import rosa.website.model.csv.CSVType;
+import rosa.website.model.csv.CollectionDisplayCSV;
+import rosa.website.model.csv.IllustrationTitleCSV;
+import rosa.website.model.csv.NarrativeSectionsCSV;
 import rosa.website.pizan.client.HistoryConfig;
 import rosa.website.pizan.client.WebsiteConfig;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -30,6 +36,9 @@ import java.util.logging.Logger;
  */
 public class CSVDataActivity implements Activity, CSVDataView.Presenter {
     private static final Logger logger = Logger.getLogger(CSVDataActivity.class.toString());
+
+    private static final String CSV_LOAD_ERROR_MSG = "Failed to load CSV data.";
+    private static final String CSV_DATA_NOT_FOUND = "Data not found.";
 
     private final CSVDataPlace place;
     private CSVDataView view;
@@ -71,12 +80,11 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
 
     @Override
     public void start(AcceptsOneWidget panel, EventBus eventBus) {
-        final String error = "Failed to load CSV data.";
-
-        LoadingPanel.INSTANCE.show();
         logger.info("Starting CSVDataActivity. Current state: " + place.toString());
         panel.setWidget(view);
         view.setPresenter(this);
+
+        LoadingPanel.INSTANCE.show();
 
         CSVType type = HistoryConfig.getCsvType(place.getName());
         if (type == null) {
@@ -84,31 +92,30 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
             return;
         }
 
+        final Map<Enum, String> links = getPossibleLinks(type);
+        final String[] headers = getHeaders(type);
         service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<CSVData>() {
             @Override
             public void onFailure(Throwable caught) {
-                logger.log(Level.SEVERE, error, caught);
-                view.addErrorMessage(error);
+                logger.log(Level.SEVERE, CSV_LOAD_ERROR_MSG, caught);
+                view.addErrorMessage(CSV_LOAD_ERROR_MSG);
+                if (caught instanceof RosaConfigurationException) {
+                    view.addErrorMessage("  " + caught.getMessage());
+                }
                 LoadingPanel.INSTANCE.hide();
             }
 
             @Override
             public void onSuccess(CSVData result) {
-                if (result == null) {
-                    logger.severe(error);
-                    view.addErrorMessage(error);
+                LoadingPanel.INSTANCE.hide();
+                if (result == null) { // Error
+                    view.addErrorMessage(CSV_DATA_NOT_FOUND);
+                    logger.severe(CSV_DATA_NOT_FOUND);
                     return;
                 }
-
-                LoadingPanel.INSTANCE.hide();
-                handleCsvData(result, null);
+                view.setData(result, links, headers);
             }
         });
-    }
-
-    // TODO must add CSV column headers
-    private void handleCsvData(CSVData data, Map<Enum, String> links) {
-        view.setData(data, links, null);
 
         ExternalTextResource resource = HistoryConfig.getCsvDescription(place.getName());
         if (resource != null) {
@@ -116,7 +123,9 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
                 resource.getText(new ResourceCallback<TextResource>() {
                     @Override
                     public void onError(ResourceException e) {
-                        logger.log(Level.SEVERE, "Failed to load CSV description.", e);
+                        String msg = "Failed to load CSV description.";
+                        logger.log(Level.SEVERE, msg, e);
+                        view.addErrorMessage(msg);
                     }
 
                     @Override
@@ -128,6 +137,53 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
                 logger.log(Level.SEVERE, "Failed to load CSV description.", e);
             }
         }
+    }
+
+    private Map<Enum, String> getPossibleLinks(CSVType type) {
+        Map<Enum, String> map = new HashMap<>();
+
+        switch (type) {
+            case COLLECTION_DATA:
+            case COLLECTION_BOOKS:
+                map.put(CollectionDisplayCSV.Column.NAME, "book");
+                return map;
+            case NARRATIVE_SECTIONS:
+                map.put(NarrativeSectionsCSV.Column.ID, "search;NARRATIVE_SECTION");
+                return map;
+            case ILLUSTRATIONS:
+                map.put(IllustrationTitleCSV.Column.TITLE, "search;ILLUSTRATION_TITLE");
+                return map;
+            default:
+                return null;
+        }
+    }
+
+    private String[] getHeaders(CSVType type) {
+        Labels labels = Labels.INSTANCE;
+        switch (type) {
+            case COLLECTION_DATA:
+            case COLLECTION_BOOKS:
+                return new String[] {
+                        labels.name(),
+                        labels.date(),
+                        labels.folios(),
+                        labels.numIllustrationsShort(),
+                        labels.colsPerFolio(),
+                        labels.linesPerColumn(),
+                        labels.dimensions(),
+                        labels.leavesPerGathering(),
+                        labels.foliosWithGreaterThanOneIllustration()
+                };
+            case ILLUSTRATIONS:
+                return new String[] {labels.position(), labels.illustrationTitle(), labels.frequency()};
+            case CHARACTERS:
+                return new String[] {labels.name(), labels.french(), labels.english()};
+            case NARRATIVE_SECTIONS:
+                return new String[] {labels.identifier(), labels.description(), labels.lecoy()};
+            default:
+                break;
+        }
+        return null;
     }
 
     @Override
