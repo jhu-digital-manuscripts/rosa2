@@ -2,6 +2,27 @@
     /*background-color: #3b6280;*/
     background-color: white;
 }
+a:link {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+a:visited {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+a:hover {
+  color:#B8924B;
+  font-weight: normal;
+}
+
+a:active {
+  color: #666666;
+}
+.text-black {
+  color: black;
+}
 
 /* TODO: Take advantage of class support
 @external SidebarItem, Search, ContentHeader, LoadingDialog, ImageDescriptionHeader, SidebarSelected, gwt-TabLayoutPanelTabs, ContentTitle, BookDescriptionTextData, TranscriptionUnavailableError,SidebarLastUpdated, ResultSnippet, BookDescriptionDataName, TranscriptionRubric, ImageDescriptionLabel, BookPicker-header, DataTable, BookPicker-list, Tooltip, Main, TranscriptionInitial, Header, NarrativeSectionsHeader, TranscriptionExtraHeader, ResultField, BookDescription, BookPicker, Content, GoTextBox, TranscriptionDel, BookDescriptionHeader, Home, BookDescriptionData, Transcription, NarrativeSections, TranscriptionExpan, Sidebar, Toolbar, ResultsNav, TranscriptionAdd, Bibliography, ImageDescription, SidebarHeader, TranscriptionLecoy, TranscriptionExtra, ImageViewportThumbSelection, ImageViewportThumb, CodexBrowserView-Thumb, CodexBrowserView-Toolbar, WebImage, WebImage-Loading;
@@ -152,7 +173,7 @@
 }
 
 .Home {
-  background-image: url(/app/home_bkgd_flowers.jpg);
+  background-image: url(RosaWebsiteRose/home_bkgd_flowers.jpg);
   background-repeat: no-repeat;
   width: 657px;
   height: 642px;
@@ -375,25 +396,6 @@ a:hover.Tooltip span {
 
 .WebImage-Loading {
     background-color: black;
-}
-
-a:link {
-  color: #FFFFFF;
-  font-weight: normal;
-}
-
-a:visited {
-  color: #FFFFFF;
-  font-weight: normal;
-}
-
-a:hover {
-  color:#B8924B;
-  font-weight: normal;
-}
-
-a:active {
-  color: #666666;
 }
 
 .error {

@@ -37,6 +37,11 @@
   zoom: 1;
 }
 
+.cellBrowserOddItem:hover,
+.cellBrowserEvenItem:hover {
+  opacity: 0.75;
+}
+
 .cellBrowserKeyboardSelectedItem {
   background: #ffc;
   color: black;
