@@ -44,7 +44,7 @@ public class HeaderPresenter implements Presenter, IsWidget {
                 String searchToken = view.getSearchToken();
 
                 // Only go to search place if there is something in the search box.
-                if (searchToken != null && !searchToken.isEmpty()) {
+                if (searchToken != null && !searchToken.trim().isEmpty()) {
                     clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
                 }
             }
@@ -58,7 +58,7 @@ public class HeaderPresenter implements Presenter, IsWidget {
                 }
 
                 String searchToken = view.getSearchToken();
-                if (searchToken != null && !searchToken.isEmpty()) {
+                if (searchToken != null && !searchToken.trim().isEmpty()) {
                     clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
                 }
             }

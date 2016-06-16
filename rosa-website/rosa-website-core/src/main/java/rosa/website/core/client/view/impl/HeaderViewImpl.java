@@ -50,7 +50,12 @@ public class HeaderViewImpl extends Composite implements HeaderView {
         image.addStyleName("link");
         image.addClickHandler(goHomeClickHandler);
 
-        root.add(image);
+        if (root.getWidgetCount() > 1) {
+            root.insert(image, root.getWidgetCount() - 1);
+        } else {
+            root.add(image);
+        }
+
     }
 
     @Override

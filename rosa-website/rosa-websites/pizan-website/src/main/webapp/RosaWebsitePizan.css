@@ -53,6 +53,8 @@ a:active {
   position: absolute;
   top: 0px;
   right: 0px;
+  padding: 10px 20px;
+  background-color: #c6c285;
 }
 
 .HeaderMenu td {
@@ -241,6 +243,10 @@ table {
 
 .BookDescriptionHeader {
   font-weight: bold;
+}
+
+.BookList {
+  margin: 10px 5px;
 }
 
 .ImageDescription {

@@ -40,7 +40,7 @@ public class HeaderPresenter implements Presenter, IsWidget {
             public void onClick(ClickEvent event) {
                 String searchToken = view.getSearchToken();
 
-                if (searchToken != null && !searchToken.isEmpty()) {
+                if (searchToken != null && !searchToken.trim().isEmpty()) {
                     clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
                 }
             }
@@ -54,7 +54,7 @@ public class HeaderPresenter implements Presenter, IsWidget {
                 }
 
                 String searchToken = view.getSearchToken();
-                if (searchToken != null && !searchToken.isEmpty()) {
+                if (searchToken != null && !searchToken.trim().isEmpty()) {
                     clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
                 }
             }
