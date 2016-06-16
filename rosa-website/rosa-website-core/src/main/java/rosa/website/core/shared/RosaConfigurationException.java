@@ -2,8 +2,8 @@ package rosa.website.core.shared;
 
 public class RosaConfigurationException extends RuntimeException {
 
-    private final String propertyName;
-    private final String value;
+    private String propertyName;
+    private String value;
 
     public RosaConfigurationException() {
         super();
