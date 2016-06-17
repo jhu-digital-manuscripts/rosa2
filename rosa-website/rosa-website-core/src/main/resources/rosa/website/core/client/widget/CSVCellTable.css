@@ -38,6 +38,7 @@
 .cellTableHeader {
   background-color: #FFFFFF;
   border-bottom: 2px solid #6f7277;
+  width: 100px;
   padding: 3px 15px;
   text-align: left;
   color: #4b4a4a;

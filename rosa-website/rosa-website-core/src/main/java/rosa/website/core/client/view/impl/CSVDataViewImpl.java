@@ -4,7 +4,6 @@ import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
-import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import rosa.website.core.client.view.CSVDataView;
@@ -57,6 +56,7 @@ public class CSVDataViewImpl extends ErrorComposite implements CSVDataView {
     public void setData(CSVData data, Map<Enum, String> links, String[] headers) {
         display.setData(data, links, headers);
         resetPosition();
+        resizeTable();
     }
 
     @Override
@@ -64,6 +64,7 @@ public class CSVDataViewImpl extends ErrorComposite implements CSVDataView {
         this.description.clear();
         this.description.setWidget(new HTML(description));
         resetPosition();
+        resizeTable();
     }
 
     private void resetPosition() {
@@ -75,5 +76,22 @@ public class CSVDataViewImpl extends ErrorComposite implements CSVDataView {
                 }
             }
         });
+    }
+
+    private void resizeTable() {
+        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+            @Override
+            public void execute() {
+                String[] sizes = determineTableSize();
+                display.resize(sizes[0], sizes[1]);
+            }
+        });
+    }
+
+    private String[] determineTableSize() {
+        return new String[] {
+                getOffsetWidth() + "px",
+                (getParent().getOffsetHeight() - this.description.getOffsetHeight() - 75) + "px"
+        };
     }
 }

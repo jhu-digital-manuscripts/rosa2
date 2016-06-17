@@ -8,6 +8,7 @@ import com.google.gwt.user.cellview.client.ColumnSortEvent;
 import com.google.gwt.user.cellview.client.ColumnSortEvent.ListHandler;
 import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.view.client.ListDataProvider;
 import rosa.website.core.client.place.AdvancedSearchPlace;
@@ -23,6 +24,8 @@ import java.util.logging.Logger;
 public class CSVWidget extends Composite {
     private static final Logger logger = Logger.getLogger(CSVWidget.class.toString());
     private static final String NUM_REGEX = "^-?\\d+(\\.\\d+)?$";
+
+    private final ScrollPanel top;
 
     private final CellTable<CSVRow> table;
     private final ListDataProvider<CSVRow> dataProvider;
@@ -45,7 +48,8 @@ public class CSVWidget extends Composite {
         root.setSize("100%", "100%");
         root.setWidget(table);
 
-        initWidget(root);
+        top = new ScrollPanel(root);
+        initWidget(top);
     }
 
     public void setPresenter(Presenter presenter) {
@@ -101,6 +105,10 @@ public class CSVWidget extends Composite {
         for (int i = table.getColumnCount() - 1; i >= 0; i--) {
             table.removeColumn(i);
         }
+    }
+
+    public void resize(String width, String height) {
+        top.setSize(width, height);
     }
 
     /**
