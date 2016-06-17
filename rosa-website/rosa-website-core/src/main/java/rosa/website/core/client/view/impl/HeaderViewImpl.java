@@ -7,6 +7,7 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Image;
+import rosa.website.core.client.Console;
 import rosa.website.core.client.view.HeaderView;
 import rosa.website.search.client.widget.BasicSearchWidget;
 
@@ -80,7 +81,12 @@ public class HeaderViewImpl extends Composite implements HeaderView {
 
     @Override
     public String getSearchToken() {
-        return "ALL;" + escaped(searchWidget.getText()) + ";0";
+        String searchTerm = searchWidget.getText();
+        if (searchTerm == null || searchTerm.trim().isEmpty()) {
+            return null;
+        }
+
+        return "ALL;" + escaped(searchTerm.trim()) + ";0";
     }
 
     private String escaped(String str) {
