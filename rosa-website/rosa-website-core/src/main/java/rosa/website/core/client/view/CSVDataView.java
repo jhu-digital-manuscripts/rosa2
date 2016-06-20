@@ -1,5 +1,7 @@
 package rosa.website.core.client.view;
 
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.user.cellview.client.ColumnSortEvent.ListHandler;
 import rosa.website.model.csv.CSVData;
@@ -60,4 +62,25 @@ public interface CSVDataView extends ErrorWidget {
     void setData(CSVData data, Map<Enum, String> links, String[] headers);
 
     void setDescription(String description);
+
+    /**
+     * Add a link separate from the description HTML. This link will be placed between
+     * the description and the data table.
+     *
+     * @param label human readable label to be displayed to user
+     * @param target target URL
+     * @param downloadFileName OPTIONAL file name if link to be used for download
+     */
+    void addLink(String label, String target, String downloadFileName);
+
+    /**
+     * Add an interactive link for an action that does not necessarily have a target
+     * URL. For example, add a link that lets a user download some data from the server
+     * using the GWT RPC service.
+     *
+     * @param label human readable label to be displayed to user
+     * @param handler handles mouse click events on this link
+     * @return handler registration object
+     */
+    HandlerRegistration addLink(String label, ClickHandler handler);
 }

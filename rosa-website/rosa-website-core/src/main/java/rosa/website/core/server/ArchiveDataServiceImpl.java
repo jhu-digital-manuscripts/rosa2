@@ -39,6 +39,9 @@ import rosa.website.model.select.BookSelectData;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -103,6 +106,11 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
         if (!archiveStore.hasCollection(collection)) {
             throw new RosaConfigurationException("collection", collection);
         }
+    }
+
+    @Override
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
     }
 
     @Override

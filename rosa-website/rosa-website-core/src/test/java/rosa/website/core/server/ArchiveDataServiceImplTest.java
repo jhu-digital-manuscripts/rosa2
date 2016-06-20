@@ -10,6 +10,7 @@ import rosa.website.model.csv.CollectionCSV;
 import rosa.website.model.csv.IllustrationTitleCSV;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -92,6 +93,24 @@ public class ArchiveDataServiceImplTest extends BaseArchiveTest {
         assertEquals("Unexpected number of texts found.", "2", row.getValue(CollectionCSV.Column.TEXTS));
         assertEquals("Unexpected number of pages with exactly one illustration found.", "-1", row.getValue(CollectionCSV.Column.FOLIOS_ONE_ILLUS));
         assertEquals("Unexpected number of pages with more than one illustration found.", "-1", row.getValue(CollectionCSV.Column.FOLIOS_MORE_ILLUS));
+    }
+
+    @Test
+    public void testCSVStringify() throws Exception {
+        final String expected = "ID,NAME,ORIGIN,MATERIAL,NUM_FOLIOS,HEIGHT,WIDTH,LEAVES_PER_GATHERING," +
+                "LINES_PER_COLUMN,NUM_ILLUS,DATE_START,DATE_END,COLUMNS_PER_FOLIO,TEXTS,FOLIOS_ONE_ILLUS," +
+                "FOLIOS_MORE_ILLUS\n" +
+                "LudwigXV7,Ludwig XV7,Paris, France,Parchment,135,370,260,8,44,101,1400,1500,2,1,79,10\n" +
+                "FolgersHa2,Princeton's Facetie,,,211,110,160,-1,-1,-1,1571,1571,-1,2,-1,-1\n";
+
+        CollectionCSV collectionCSV = service.loadCollectionData(VALID_COLLECTION, "en");
+        assertNotNull("Collection CSV data missing.", collectionCSV);
+
+        String stringVersion = collectionCSV.stringify();
+        assertNotNull("Collection CSV could not be stringified.", stringVersion);
+        assertFalse("Collection CSV stringify was blank.", stringVersion.isEmpty());
+
+        assertEquals("Unexpected stringify.", expected, stringVersion);
     }
 
     /**

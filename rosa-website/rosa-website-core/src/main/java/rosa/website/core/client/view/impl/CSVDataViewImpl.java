@@ -2,8 +2,14 @@ package rosa.website.core.client.view.impl;
 
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
+import com.google.gwt.dom.client.ParagraphElement;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.shared.HandlerRegistration;
+import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.Panel;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import rosa.website.core.client.view.CSVDataView;
@@ -15,19 +21,24 @@ import java.util.Map;
 
 public class CSVDataViewImpl extends ErrorComposite implements CSVDataView {
 
+    private Panel linkPanel;
     private CSVWidget display;
     private SimplePanel description;
+
+    private CSVData data;
 
     /**  */
     public CSVDataViewImpl() {
         super();
 
         FlowPanel root = new FlowPanel();
+        linkPanel = new FlowPanel(ParagraphElement.TAG);
         display = new CSVWidget();
         description = new SimplePanel();
 
         root.add(errorPanel);
         root.add(description);
+        root.add(linkPanel);
         root.add(display);
         root.setSize("100%", "100%");
 
@@ -65,6 +76,23 @@ public class CSVDataViewImpl extends ErrorComposite implements CSVDataView {
         this.description.setWidget(new HTML(description));
         resetPosition();
         resizeTable();
+    }
+
+    public void addLink(String label, String target, String downloadFileName) {
+        Anchor link = new Anchor(label);
+        link.setHref(target);
+        link.setTarget("_blank");
+        if (downloadFileName != null && !downloadFileName.isEmpty()) {
+            link.getElement().setAttribute("download", downloadFileName);
+        }
+        linkPanel.add(link);
+    }
+
+    public HandlerRegistration addLink(String label, ClickHandler handler) {
+        Label link = new Label(label);
+        link.setStyleName("link");
+        linkPanel.add(link);
+        return link.addClickHandler(handler);
     }
 
     private void resetPosition() {

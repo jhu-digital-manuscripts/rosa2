@@ -2,6 +2,7 @@ package rosa.website.rose.client.activity;
 
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.event.shared.EventBus;
+import com.google.gwt.http.client.URL;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceController;
@@ -114,6 +115,7 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
                     return;
                 }
                 view.setData(result, links, headers);
+                doStuff(result);
             }
         });
 
@@ -136,6 +138,32 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
             } catch (ResourceException e) {
                 logger.log(Level.SEVERE, "Failed to load CSV description.", e);
             }
+        }
+    }
+
+    private void doStuff(CSVData data) {
+        /**
+         * Collection (#data) -> Download CSV
+         * Narrative Sections (#sections) -> View in Google Docs
+         */
+        switch (place.getName()) {
+            case "data":            // Download CSV data
+//                String blob = createObjectURL(view.getData().stringify());
+//                if (blob != null && !blob.isEmpty()) {
+////                    view.addLink(Labels.INSTANCE.download(), /*"data:application/csv;charset=UTF-8," + */blob);
+//                }
+
+                view.addLink(
+                        Labels.INSTANCE.download(),
+                        "data:application/csv;charset=UTF-8;" + URL.encode(data.stringify()),
+                        "collection_data.csv"
+                        );
+                break;
+            case "sections":        // View in Google Docs (direct link)
+                view.addLink(Labels.INSTANCE.viewInGoogleDocs(),
+                        "https://docs.google.com/spreadsheets/d/12OeUrKRYIEwS-OnqRyZ5vkD2to32M-qESdqPVVuDDqM/edit?pub=1&pref=2&pli=1",
+                        null);
+                break;
         }
     }
 

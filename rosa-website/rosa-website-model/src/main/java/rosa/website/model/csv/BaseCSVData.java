@@ -34,6 +34,10 @@ public abstract class BaseCSVData <T extends Enum> implements CSVData<T>, Serial
         return id;
     }
 
+    protected String columnDisplay(T col) {
+        return col.toString();
+    }
+
     @Override
     public CSVRow getRow(int index) {
         return rows.get(index);
@@ -80,6 +84,34 @@ public abstract class BaseCSVData <T extends Enum> implements CSVData<T>, Serial
     @Override
     public int size() {
         return rows.size();
+    }
+
+    @Override
+    public String stringify() {
+        StringBuilder result = new StringBuilder();
+
+        T[] columns = columns();
+        int num_cols = columns.length;
+        // Add headers
+        for (int i = 0; i < num_cols; i++) {
+            result.append(columnDisplay(columns[i]));
+            if (i < num_cols - 1) {
+                result.append(',');
+            }
+        }
+        result.append('\n');
+
+        for (CSVRow row : rows) {
+            for (int i = 0; i < num_cols; i++) {
+                result.append(row.getValue(columns[i]));
+                if (i < num_cols - 1) {
+                    result.append(',');
+                }
+            }
+            result.append('\n');
+        }
+
+        return result.toString();
     }
 
     @Override

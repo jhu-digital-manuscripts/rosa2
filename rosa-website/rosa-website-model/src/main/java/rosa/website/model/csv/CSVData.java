@@ -13,4 +13,5 @@ public interface CSVData <T extends Enum> extends Iterable<CSVRow>, Serializable
     int size();
 
     List<CSVRow> asList();
+    String stringify();
 }
