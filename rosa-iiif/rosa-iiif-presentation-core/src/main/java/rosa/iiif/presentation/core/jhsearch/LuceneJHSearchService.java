@@ -114,7 +114,12 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             JHSearchField.SYMBOL,
             JHSearchField.NUMERAL,
             JHSearchField.DRAWING,
-            JHSearchField.CROSS_REFERENCE
+            JHSearchField.CROSS_REFERENCE,
+            JHSearchField.BOOK,
+            JHSearchField.PEOPLE,
+            JHSearchField.PLACE,
+            JHSearchField.METHOD,
+            JHSearchField.LANGUAGE,
     };
     
     @Override
