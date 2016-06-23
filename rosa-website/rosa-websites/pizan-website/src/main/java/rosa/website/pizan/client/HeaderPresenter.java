@@ -1,24 +1,18 @@
 package rosa.website.pizan.client;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
-import com.google.gwt.event.dom.client.KeyCodes;
-import com.google.gwt.event.dom.client.KeyPressEvent;
-import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.*;
 import rosa.website.core.client.event.SidebarItemSelectedEvent;
-import rosa.website.core.client.place.AdvancedSearchPlace;
-import rosa.website.core.client.view.HeaderView;
-import rosa.website.core.client.view.HeaderView.Presenter;
+import rosa.website.core.client.view.HeaderViewNoSearch;
+import rosa.website.core.client.view.HeaderViewNoSearch.Presenter;
 
 public class HeaderPresenter implements Presenter, IsWidget {
 
-    private final HeaderView view;
+    private final HeaderViewNoSearch view;
     private final EventBus eventBus;
 
     /**
@@ -28,37 +22,37 @@ public class HeaderPresenter implements Presenter, IsWidget {
         this.eventBus = clientFactory.eventBus();
         final Labels labels = Labels.INSTANCE;
 
-        this.view = clientFactory.headerView();
+        this.view = clientFactory.headerViewNoSearch();
         view.setPresenter(this);
 
         view.addHeaderImage(GWT.getModuleBaseURL() + "header-5.jpg", labels.headerAlt());
 
-        view.setSearchButtonText(labels.search());
-        view.addAdvancedSearchLink(labels.advancedSearch(), "search;");
-        view.addSearchClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                String searchToken = view.getSearchToken();
-
-                if (searchToken != null && !searchToken.trim().isEmpty()) {
-                    clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
-                }
-            }
-        });
-
-        view.addSearchKeyPressHandler(new KeyPressHandler() {
-            @Override
-            public void onKeyPress(KeyPressEvent event) {
-                if (event.getUnicodeCharCode() != KeyCodes.KEY_ENTER) {
-                    return;
-                }
-
-                String searchToken = view.getSearchToken();
-                if (searchToken != null && !searchToken.trim().isEmpty()) {
-                    clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
-                }
-            }
-        });
+//        view.setSearchButtonText(labels.search());
+//        view.addAdvancedSearchLink(labels.advancedSearch(), "search;");
+//        view.addSearchClickHandler(new ClickHandler() {
+//            @Override
+//            public void onClick(ClickEvent event) {
+//                String searchToken = view.getSearchToken();
+//
+//                if (searchToken != null && !searchToken.trim().isEmpty()) {
+//                    clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
+//                }
+//            }
+//        });
+//
+//        view.addSearchKeyPressHandler(new KeyPressHandler() {
+//            @Override
+//            public void onKeyPress(KeyPressEvent event) {
+//                if (event.getUnicodeCharCode() != KeyCodes.KEY_ENTER) {
+//                    return;
+//                }
+//
+//                String searchToken = view.getSearchToken();
+//                if (searchToken != null && !searchToken.trim().isEmpty()) {
+//                    clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
+//                }
+//            }
+//        });
     }
 
     @Override

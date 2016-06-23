@@ -5,13 +5,8 @@ import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
 
-public interface HeaderView extends IsWidget {
-    interface Presenter {
-        /**
-         * Tell the presenter to go to the "home" place.
-         */
-        void goHome();
-    }
+public interface HeaderViewWithSearch extends IsWidget {
+    interface Presenter extends HeaderViewNoSearch.Presenter {}
 
     void setPresenter(Presenter presenter);
 

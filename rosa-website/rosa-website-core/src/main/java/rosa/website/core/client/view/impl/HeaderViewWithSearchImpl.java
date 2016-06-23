@@ -7,10 +7,10 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Image;
-import rosa.website.core.client.view.HeaderView;
+import rosa.website.core.client.view.HeaderViewWithSearch;
 import rosa.website.search.client.widget.BasicSearchWidget;
 
-public class HeaderViewImpl extends Composite implements HeaderView {
+public class HeaderViewWithSearchImpl extends Composite implements HeaderViewWithSearch {
     private final FlowPanel root;
     private final BasicSearchWidget searchWidget;
 
@@ -26,7 +26,7 @@ public class HeaderViewImpl extends Composite implements HeaderView {
     };
 
     /**  */
-    public HeaderViewImpl() {
+    public HeaderViewWithSearchImpl() {
         root = new FlowPanel();
         searchWidget = new BasicSearchWidget();
 

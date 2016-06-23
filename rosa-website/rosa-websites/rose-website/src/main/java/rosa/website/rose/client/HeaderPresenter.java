@@ -10,17 +10,16 @@ import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
-import rosa.archive.core.util.CSV;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.AdvancedSearchPlace;
-import rosa.website.core.client.view.HeaderView;
-import rosa.website.core.client.view.HeaderView.Presenter;
+import rosa.website.core.client.view.HeaderViewWithSearch;
+import rosa.website.core.client.view.HeaderViewWithSearch.Presenter;
 
 public class HeaderPresenter implements Presenter, IsWidget {
 
-    private final HeaderView view;
+    private final HeaderViewWithSearch view;
     private final EventBus eventBus;
 
     /**
@@ -30,7 +29,7 @@ public class HeaderPresenter implements Presenter, IsWidget {
         this.eventBus = clientFactory.eventBus();
         final Labels labels = Labels.INSTANCE;
 
-        this.view = clientFactory.headerView();
+        this.view = clientFactory.headerViewWithSearch();
         view.setPresenter(this);
 
         view.addHeaderImage(GWT.getModuleBaseURL() + "banner_text.jpg", "Roman de la Rose Digital Library");
