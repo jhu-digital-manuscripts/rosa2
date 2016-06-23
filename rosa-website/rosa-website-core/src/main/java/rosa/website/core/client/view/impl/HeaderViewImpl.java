@@ -94,9 +94,9 @@ public class HeaderViewImpl extends Composite implements HeaderView {
             return "";
         }
 
-        str = str.replaceAll("\\\"", "\"\"");
+//        str = str.replaceAll("\\\"", "\"\"");
 
-        if (str.contains(",") || str.contains("\"") || str.contains("\n") || str.contains(" ")) {
+        if (str.contains(",") || str.contains("\"") || str.contains("\n") /*|| str.contains(" ")*/) {
             return "\"" + str + "\"";
         } else {
             return str;
