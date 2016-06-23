@@ -7,7 +7,6 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Image;
-import rosa.website.core.client.Console;
 import rosa.website.core.client.view.HeaderView;
 import rosa.website.search.client.widget.BasicSearchWidget;
 
@@ -94,11 +93,13 @@ public class HeaderViewImpl extends Composite implements HeaderView {
             return "";
         }
 
-//        str = str.replaceAll("\\\"", "\"\"");
-
-        if (str.contains(",") || str.contains("\"") || str.contains("\n") /*|| str.contains(" ")*/) {
+        if (str.contains(",") || str.contains("\n")) {
             return "\"" + str + "\"";
-        } else {
+        }
+//        else if (str.length() > 3 && (str.substring(1, str.length() - 2).contains("\""))) {
+//
+//        }
+        else {
             return str;
         }
     }
