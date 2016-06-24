@@ -32,33 +32,6 @@ public class HeaderPresenter implements Presenter, IsWidget {
         view.addHeaderImage(GWT.getModuleBaseURL() + "header-5.jpg", labels.headerAlt());
         addSiteNavLinks();
         addProjectLinks();
-
-//        view.setSearchButtonText(labels.search());
-//        view.addAdvancedSearchLink(labels.advancedSearch(), "search;");
-//        view.addSearchClickHandler(new ClickHandler() {
-//            @Override
-//            public void onClick(ClickEvent event) {
-//                String searchToken = view.getSearchToken();
-//
-//                if (searchToken != null && !searchToken.trim().isEmpty()) {
-//                    clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
-//                }
-//            }
-//        });
-//
-//        view.addSearchKeyPressHandler(new KeyPressHandler() {
-//            @Override
-//            public void onKeyPress(KeyPressEvent event) {
-//                if (event.getUnicodeCharCode() != KeyCodes.KEY_ENTER) {
-//                    return;
-//                }
-//
-//                String searchToken = view.getSearchToken();
-//                if (searchToken != null && !searchToken.trim().isEmpty()) {
-//                    clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
-//                }
-//            }
-//        });
     }
 
     @Override
