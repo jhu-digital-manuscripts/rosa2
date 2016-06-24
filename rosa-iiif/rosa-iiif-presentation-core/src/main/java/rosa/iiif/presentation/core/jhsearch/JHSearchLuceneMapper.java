@@ -338,6 +338,18 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         	if (lang != null) {
         		langs.add(lang.toLowerCase());
         	}
+        	
+        	// Handle additional languages in Marginalia
+        	
+        	if (a instanceof Marginalia) {
+        		for (MarginaliaLanguage ml: Marginalia.class.cast(a).getLanguages()) {
+        			lang = ml.getLang();
+                	
+                	if (lang != null) {
+                		langs.add(lang.toLowerCase());
+                	}
+        		}
+        	}
         });
         
         langs.forEach(lc -> {
@@ -483,30 +495,30 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
                 // Index <person> tags + variants
 
                 pos.getPeople().forEach(person -> {
-                    people.append(person).append(" ");
+                	addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, person);
                     
                     if (peopleRefs != null && peopleRefs.hasAlternates(person)) {
-                        peopleRefs.getAlternates(person).forEach(alt -> people.append(alt).append(" "));
+                        peopleRefs.getAlternates(person).forEach(alt -> addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, alt));
                     }
                 });
 
                 // Index <book> tags + variants
 
                 pos.getBooks().forEach(bookRef -> {
-                    books.append(bookRef).append(" ");
+                	addField(doc, JHSearchField.BOOK, SearchFieldType.ENGLISH, bookRef);
                     
                     if (bookRefs != null && bookRefs.hasAlternates(bookRef)) {
-                        bookRefs.getAlternates(bookRef).forEach(alt -> books.append(alt).append(" "));
+                        bookRefs.getAlternates(bookRef).forEach(alt -> addField(doc, JHSearchField.BOOK, SearchFieldType.ENGLISH, alt));
                     }
                 });
 
                 // Index <location> tags + variants
 
                 pos.getLocations().forEach(location -> {
-                    places.append(location).append(" ");
+                	addField(doc, JHSearchField.PLACE, SearchFieldType.ENGLISH, location);
                     
                     if (locationRefs != null && locationRefs.hasAlternates(location)) {
-                        locationRefs.getAlternates(location).forEach(alt -> places.append(alt).append(" "));
+                        locationRefs.getAlternates(location).forEach(alt -> addField(doc, JHSearchField.PLACE, SearchFieldType.ENGLISH, alt));
                     }
                 });
 
@@ -527,9 +539,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         
         addField(doc, JHSearchField.MARGINALIA, marg_lang_type, transcription.toString());
         addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
-        addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, people.toString());
-        addField(doc, JHSearchField.PLACE, SearchFieldType.ENGLISH, places.toString());
-        addField(doc, JHSearchField.BOOK, SearchFieldType.ENGLISH, books.toString());
         addField(doc, JHSearchField.CROSS_REFERENCE, SearchFieldType.ENGLISH, xrefs.toString());
         addField(doc, JHSearchField.EMPHASIS, marg_lang_type, emphasis.toString());
     }
