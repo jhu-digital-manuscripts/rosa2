@@ -10,7 +10,11 @@ import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.view.HeaderViewNoSearch;
 import rosa.website.core.client.view.HeaderViewNoSearch.Presenter;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class HeaderPresenter implements Presenter, IsWidget {
+    private Labels labels = Labels.INSTANCE;
 
     private final HeaderViewNoSearch view;
     private final EventBus eventBus;
@@ -26,6 +30,8 @@ public class HeaderPresenter implements Presenter, IsWidget {
         view.setPresenter(this);
 
         view.addHeaderImage(GWT.getModuleBaseURL() + "header-5.jpg", labels.headerAlt());
+        addSiteNavLinks();
+        addProjectLinks();
 
 //        view.setSearchButtonText(labels.search());
 //        view.addAdvancedSearchLink(labels.advancedSearch(), "search;");
@@ -65,4 +71,21 @@ public class HeaderPresenter implements Presenter, IsWidget {
         eventBus.fireEvent(new SidebarItemSelectedEvent(null));
         History.newItem("home");
     }
+
+    private void addProjectLinks() {
+        Map<String, String> links = new HashMap<>();
+
+        links.put(labels.partners(), "partners");
+        links.put(labels.termsAndConditions(), "terms");
+        links.put(labels.contactUs(), "contact");
+
+        view.addNavMenu(labels.project(), links);
+    }
+    private void addSiteNavLinks() {
+        view.addNavLink("home", "home");
+        view.addNavLink(labels.whoIsPizan(), "pizan");
+        view.addNavLink(labels.works(), "works");
+        view.addNavLink(labels.properNames(), "names");
+    }
+
 }

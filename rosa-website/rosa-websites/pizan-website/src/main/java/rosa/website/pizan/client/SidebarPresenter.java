@@ -25,9 +25,7 @@ public class SidebarPresenter implements SidebarView.Presenter {
         this.clientFactory = clientFactory;
 
         view.setPresenter(this);
-        addSiteNavLinks();
         addBookSelectLinks();
-        addProjectLinks();
     }
 
     /**
@@ -50,16 +48,6 @@ public class SidebarPresenter implements SidebarView.Presenter {
         view.clearBookLinks();
     }
 
-    private void addSiteNavLinks() {
-        Map<String, String> nav_links = new HashMap<>();
-
-        nav_links.put(labels.whoIsPizan(), "pizan");
-        nav_links.put(labels.works(), "works");
-        nav_links.put(labels.properNames(), "names");
-
-        view.setSiteNavigationLinks(nav_links);
-    }
-
     private void addBookSelectLinks() {
         Map<String, String> links = new HashMap<>();
 
@@ -74,16 +62,6 @@ public class SidebarPresenter implements SidebarView.Presenter {
         links.put(labels.transcription(), "select;" + SelectCategory.TRANSCRIPTION);
 
         view.addSection(labels.selectBookBy(), links);
-    }
-
-    private void addProjectLinks() {
-        Map<String, String> links = new HashMap<>();
-
-        links.put(labels.partners(), "partners");
-        links.put(labels.termsAndConditions(), "terms");
-        links.put(labels.contactUs(), "contact");
-
-        view.addSection(labels.project(), links);
     }
 
     /**

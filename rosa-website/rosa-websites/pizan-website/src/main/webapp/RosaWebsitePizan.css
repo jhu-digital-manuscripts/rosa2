@@ -35,6 +35,16 @@ a:active {
 
 .Header	{
   border-bottom: 2px solid #000000;
+  background-color: #c6c285;
+}
+
+.Header table {
+  background-color: #c6c285;
+}
+
+.Header a {
+  font-size: 20px;
+  margin-left: 40px;
 }
 
 .Footer {
@@ -46,7 +56,7 @@ a:active {
 }
 
 .HeaderMenu {
-    
+    background: #c6c285;
 }
 
 .Header .Search {
@@ -57,18 +67,18 @@ a:active {
   background-color: #c6c285;
 }
 
-.HeaderMenu td {
+.HeaderMenu .item {
   font-size: larger;
   font-weight: bold;
   padding-left: 1em;
   cursor: pointer;
 }
 
-.HeaderMenu td:active {
+.HeaderMenu .item:active {
   background-color: #FFFFFF;
 }
 
-.HeaderMenu td:hover {
+.HeaderMenu .item:hover {
   background-color: #FFFFFF;
 }
 

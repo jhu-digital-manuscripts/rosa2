@@ -4,14 +4,20 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
+import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Image;
+import com.google.gwt.user.client.ui.Panel;
 import rosa.website.core.client.view.HeaderViewWithSearch;
 import rosa.website.search.client.widget.BasicSearchWidget;
 
+import java.util.Map;
+
 public class HeaderViewWithSearchImpl extends Composite implements HeaderViewWithSearch {
-    private final FlowPanel root;
+    private final FlowPanel bannerPanel;
+    private final Panel navPanel;
     private final BasicSearchWidget searchWidget;
 
     private Presenter presenter;
@@ -27,12 +33,17 @@ public class HeaderViewWithSearchImpl extends Composite implements HeaderViewWit
 
     /**  */
     public HeaderViewWithSearchImpl() {
-        root = new FlowPanel();
+        Panel root = new FlowPanel();
         searchWidget = new BasicSearchWidget();
+        bannerPanel = new FlowPanel();
+        navPanel = new HorizontalPanel();
 
         root.setStylePrimaryName("Header");
 
-        root.add(searchWidget);
+        bannerPanel.add(searchWidget);
+
+        root.add(bannerPanel);
+        root.add(navPanel);
 
         initWidget(root);
     }
@@ -50,10 +61,10 @@ public class HeaderViewWithSearchImpl extends Composite implements HeaderViewWit
         image.addStyleName("link");
         image.addClickHandler(goHomeClickHandler);
 
-        if (root.getWidgetCount() > 1) {
-            root.insert(image, root.getWidgetCount() - 1);
+        if (bannerPanel.getWidgetCount() > 1) {
+            bannerPanel.insert(image, bannerPanel.getWidgetCount() - 1);
         } else {
-            root.add(image);
+            bannerPanel.add(image);
         }
 
     }
@@ -86,6 +97,18 @@ public class HeaderViewWithSearchImpl extends Composite implements HeaderViewWit
         }
 
         return "ALL;" + escaped(searchTerm.trim()) + ";0";
+    }
+
+    @Override
+    public void addNavLink(String label, String target) {
+        Anchor link = new Anchor(label, target);
+        link.addStyleName("headerLink");
+        navPanel.add(new Anchor(label, target));
+    }
+
+    @Override
+    public void addNavMenu(String topLabel, Map<String, String> subMenu) {
+
     }
 
     private String escaped(String str) {

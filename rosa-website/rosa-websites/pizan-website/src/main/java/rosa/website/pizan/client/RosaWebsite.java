@@ -33,7 +33,7 @@ import java.util.logging.Logger;
 public class RosaWebsite implements EntryPoint {
     private static final Logger logger = Logger.getLogger("");
     private static final int SIDEBAR_WIDTH = 180;
-    private static final int HEADER_HEIGHT = 120;
+    private static final int HEADER_HEIGHT = 145;
 
     /**
      * This is the default place that will load when the application
