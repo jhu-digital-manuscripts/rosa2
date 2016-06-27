@@ -2,12 +2,14 @@ package rosa.website.search;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -17,6 +19,7 @@ import org.junit.rules.TemporaryFolder;
 
 import rosa.archive.core.BaseSearchTest;
 import rosa.archive.model.Book;
+import rosa.archive.model.BookImage;
 import rosa.search.core.LuceneSearchService;
 import rosa.search.core.SearchUtil;
 import rosa.search.model.Query;
@@ -24,6 +27,7 @@ import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
+import rosa.search.model.SortOrder;
 import rosa.website.search.client.model.WebsiteSearchFields;
 
 /**
@@ -60,7 +64,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
         assertNotNull(result);
         assertEquals(6, result.getTotal());        
         assertEquals(0, result.getOffset());
-        assertNull(result.getResumeToken());
 
         for (SearchMatch match: result.getMatches()) {
             String image = SearchUtil.getImageFromId(match.getId());
@@ -70,9 +73,9 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
         }
 
     }
-
+    
     @Test
-    public void testSearchResume() throws Exception {
+    public void testSearchResumeUsingOffset() throws Exception {
         Query query = new Query(WebsiteSearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7);
         Book book = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
         int num_book_images = book.getImages().getImages().size();
@@ -109,63 +112,56 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
 
             offset = opts.getOffset() + result.getMatches().length;
 
-            if (offset == total_matches) {
-                assertNull(result.getResumeToken());
-            } else {
-                assertNotNull(result.getResumeToken());
-            }
-
             opts.setOffset(offset);
-            opts.setResumeToken(result.getResumeToken());
         }
     }
     
+    /**
+     * Test that index sorting orders results in expected order.
+     * 
+     * @throws Exceptionj
+     */
     @Test
-    public void testSearchResumeNoToken() throws Exception {
-        Query query = new Query(WebsiteSearchFields.BOOK_ID, VALID_BOOK_LUDWIGXV7);
-        Book book = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
-        int num_book_images = book.getImages().getImages().size();
-        int total_matches = num_book_images + 1;
+    public void testSearchWithIndexingOrder() throws Exception {
+        Query query = new Query(WebsiteSearchFields.ILLUSTRATION_KEYWORD, "tunic Pygmalion");
 
+        List<BookImage> images = loadBook(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7).getImages().getImages();
+        
         SearchOptions opts = new SearchOptions();
+        opts.setSortOrder(SortOrder.RELEVANCE);
+        SearchResult relevance_result = service.search(query, opts);
 
-        opts.setMatchCount(total_matches);
-        SearchResult expected_result = service.search(query, opts);
-
-        assertEquals(total_matches, expected_result.getTotal());
-        assertEquals(total_matches, expected_result.getMatches().length);
-
-        opts.setMatchCount(50);
-
-        for (long offset = 0; offset < total_matches;) {
-            SearchResult result = service.search(query, opts);
-            assertEquals(total_matches, result.getTotal());
-
-            int expected_num_matches = opts.getMatchCount();
-
-            if (offset + opts.getMatchCount() > total_matches) {
-                expected_num_matches = total_matches - (int) offset;
-            }
-
-            assertEquals(expected_num_matches, result.getMatches().length);
-            assertEquals(offset, result.getOffset());
-
-            SearchMatch[] expected_matches = Arrays.copyOfRange(
-                    expected_result.getMatches(), (int) offset, (int) offset
-                            + expected_num_matches);
-
-            assertArrayEquals(expected_matches, result.getMatches());
-
-            offset = opts.getOffset() + result.getMatches().length;
-
-            if (offset == total_matches) {
-                assertNull(result.getResumeToken());
-            } else {
-                assertNotNull(result.getResumeToken());
-            }
-
-            opts.setOffset(offset);
-            // Resume token not set
+        assertEquals(8, relevance_result.getTotal());
+        assertEquals(8, relevance_result.getMatches().length);
+        
+        
+        opts.setSortOrder(SortOrder.INDEX);
+        SearchResult index_result = service.search(query, opts);
+        
+        assertEquals(8, index_result.getTotal());
+        assertEquals(8, index_result.getMatches().length);
+ 
+        // Check that relevance and index give same matches, but different order
+        
+        assertTrue(new HashSet<>(Arrays.asList(relevance_result.getMatches())).equals(new HashSet<>(Arrays.asList(index_result.getMatches()))));
+        assertFalse(index_result.getMatches()[0].equals(relevance_result.getMatches()[0]));
+        
+        // Check that index order matches image order
+        int last_image_index = -1;
+        
+        next: for (SearchMatch m: index_result.getMatches()) { 
+        	String image_id = SearchUtil.getImageFromId(m.getId());
+        	
+        	for (int i = 0; i < images.size(); i++) {
+        		if (images.get(i).getId().equals(image_id)) {
+        			
+        			assertTrue(i > last_image_index);
+        			last_image_index = i;
+        			continue next;
+        		}
+        	}
+        	
+        	assertTrue("Bad image id", false);
         }
     }
 
@@ -185,7 +181,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
             assertEquals(1, result.getTotal());
             assertEquals(1, result.getMatches().length);
             assertEquals(0, result.getOffset());
-            assertNull(result.getResumeToken());
 
             SearchMatch match = result.getMatches()[0];
 
@@ -206,7 +201,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
             assertEquals(1, result.getTotal());
             assertEquals(1, result.getMatches().length);
             assertEquals(0, result.getOffset());
-            assertNull(result.getResumeToken());
 
             SearchMatch match = result.getMatches()[0];
 
@@ -230,7 +224,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
         assertEquals(1, result.getTotal());
         assertEquals(1, result.getMatches().length);
         assertEquals(0, result.getOffset());
-        assertNull(result.getResumeToken());
 
         SearchMatch match = result.getMatches()[0];
 
@@ -260,7 +253,6 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
         assertEquals(0, result.getTotal());
         assertEquals(0, result.getMatches().length);
         assertEquals(0, result.getOffset());
-        assertNull(result.getResumeToken());
     }
 
     /**

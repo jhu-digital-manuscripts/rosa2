@@ -474,9 +474,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         addField(doc, JHSearchField.MARGINALIA, get_lang(marg), marg.getReferencedText());
 
         StringBuilder transcription = new StringBuilder();
-        StringBuilder people = new StringBuilder();
-        StringBuilder places = new StringBuilder();
-        StringBuilder books = new StringBuilder();
         StringBuilder emphasis = new StringBuilder();
         StringBuilder xrefs = new StringBuilder();
 

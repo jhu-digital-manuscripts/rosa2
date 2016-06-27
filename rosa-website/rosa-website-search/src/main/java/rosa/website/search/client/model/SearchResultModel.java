@@ -34,10 +34,6 @@ public class SearchResultModel implements Serializable {
         return result.getTotal();
     }
 
-    public String getResumeToken() {
-        return result.getResumeToken();
-    }
-
     public List<SearchMatchModel> getMatchList() {
         return matches;
     }

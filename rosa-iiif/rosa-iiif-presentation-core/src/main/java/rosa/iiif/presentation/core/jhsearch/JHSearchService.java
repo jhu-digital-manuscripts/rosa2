@@ -14,7 +14,7 @@ public interface JHSearchService {
     public static String INFO_RESOURCE_PATH = "/jhsearch/info.json";
     public static String QUERY_PARAM = "q";
     public static String OFFSET_PARAM = "o";
-    public static String RESUME_PARAM = "r";
+    public static String SORT_ORDER_PARAM = "so";
     public static String MAX_MATCHES_PARAM = "m";
     
     /**
@@ -25,22 +25,16 @@ public interface JHSearchService {
      * @param query
      * @param offset
      * @param max
+     * @param sort_order
      * @param os
      * @throws IOException
      * @throws IllegalArgumentException
      */
-    void handle_request(PresentationRequest req, String query, int offset, int max, OutputStream os) throws IOException, IllegalArgumentException;
-
-    void handle_request(PresentationRequest req, String query, String resume, int max, OutputStream os)
-            throws IOException, IllegalArgumentException;
-
-    default void handle_request(PresentationRequest req, String query, int offset, OutputStream os) throws IOException {
-        handle_request(req, query, offset, -1, os);
-    }
-
-    default void handle_request(PresentationRequest req, String query, String resume, OutputStream os)
-            throws IOException {
-        handle_request(req, query, resume, -1, os);
+    void handle_request(PresentationRequest req, String query, int offset, int max, String sort_order, OutputStream os) throws IOException, IllegalArgumentException;
+    
+    
+    default void handle_request(PresentationRequest req, String query, int offset, OutputStream os) throws IOException, IllegalArgumentException {
+    	handle_request(req, query, offset, -1, null, os);
     }
     
     /**

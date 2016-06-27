@@ -1,5 +1,10 @@
 package rosa.website.pizan.client.activity;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -12,6 +17,7 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.gwt.view.client.RangeChangeEvent;
 import com.google.gwt.view.client.RangeChangeEvent.Handler;
+
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
@@ -39,11 +45,6 @@ import rosa.website.search.client.model.SearchCategory;
 import rosa.website.search.client.model.SearchMatchModel;
 import rosa.website.search.client.model.SearchResultModel;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class SearchActivity implements Activity {
     private static final Logger LOG = Logger.getLogger(SearchActivity.class.toString());
     private static final QueryUtil QUERY_UTIL = new RosaQueryUtil();
@@ -56,7 +57,6 @@ public class SearchActivity implements Activity {
     private final ArchiveDataServiceAsync archiveDataService;
     private final RosaSearchServiceAsync searchService;
 
-    private String resumeToken = null;     // For use in paging
     private BookDataCSV collection;
 
     private HandlerRegistration rangeChangeHandler;
@@ -208,7 +208,6 @@ public class SearchActivity implements Activity {
         }
 
         final Query query = QUERY_UTIL.toQuery(searchToken, WebsiteConfig.INSTANCE.collection());
-        resumeToken = null;
 
         if (query == null) {
             return;
@@ -220,13 +219,7 @@ public class SearchActivity implements Activity {
                 final int start = event.getNewRange().getStart();
                 int length = event.getNewRange().getLength();
 
-                // Use resume token only if progressing forward in search results
-                SearchOptions options;
-                if (QUERY_UTIL.offset(searchToken) < start) {
-                    options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length), resumeToken);
-                } else {
-                    options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length), null);
-                }
+                SearchOptions options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length));
 
                 searchService.search(query, options, new AsyncCallback<SearchResult>() {
                     @Override
@@ -242,7 +235,6 @@ public class SearchActivity implements Activity {
                         }
 
                         SearchResultModel model = adaptSearchResults(result);
-                        resumeToken = model.getResumeToken();
                         view.setRowCount((int) model.getTotal());  // NOTE: casting long to int can result in data loss
                         view.setRowData(start, model.getMatchList());
                     }

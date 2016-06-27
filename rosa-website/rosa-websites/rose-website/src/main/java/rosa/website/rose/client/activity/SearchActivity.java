@@ -62,7 +62,6 @@ public class SearchActivity implements Activity {
     private final ArchiveDataServiceAsync archiveDataService;
     private final RosaSearchServiceAsync searchService;
 
-    private String resumeToken = null;     // For use in paging
     private BookDataCSV bookDataCSV;
 
     private HandlerRegistration rangeChangeHandler;
@@ -226,7 +225,6 @@ public class SearchActivity implements Activity {
         }
 
         final Query query = QUERY_UTIL.toQuery(searchToken, WebsiteConfig.INSTANCE.collection());
-        resumeToken = null;
 
         if (query == null) {
             return;
@@ -242,13 +240,7 @@ public class SearchActivity implements Activity {
                 final int start = event.getNewRange().getStart();
                 int length = event.getNewRange().getLength();
 
-                // Use resume token only if progressing forward in search results
-                SearchOptions options;
-                if (QUERY_UTIL.offset(searchToken) < start) {
-                    options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length), resumeToken);
-                } else {
-                    options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length), null);
-                }
+                SearchOptions options = new SearchOptions(start, (length == 0 ? MATCH_COUNT : length));
 
                 searchService.search(query, options, new AsyncCallback<SearchResult>() {
                     @Override
@@ -264,7 +256,6 @@ public class SearchActivity implements Activity {
                         }
 
                         SearchResultModel model = adaptSearchResults(result);
-                        resumeToken = model.getResumeToken();
                         view.setRowCount((int) model.getTotal());  // NOTE: casting long to int can result in data loss
                         view.setRowData(start, model.getMatchList());
                     }
