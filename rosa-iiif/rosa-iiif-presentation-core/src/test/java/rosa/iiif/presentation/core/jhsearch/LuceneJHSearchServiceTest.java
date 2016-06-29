@@ -117,6 +117,62 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     }
     
     @Test
+    public void testSearchLanguage() throws Exception {
+        Query query = new Query(JHSearchField.LANGUAGE, "it");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL.", result);
+        assertEquals("Unexpected number of results found.", 76, result.getTotal());
+    }
+    
+    @Test
+    public void testSearchLanguageInMarginalia() throws Exception {
+        Query query = new Query(JHSearchField.LANGUAGE, "la");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL.", result);
+        assertEquals("Unexpected number of results found.", 74, result.getTotal());
+    }
+    
+    @Test
+    public void testSearchMethod() throws Exception {
+        Query query = new Query(JHSearchField.METHOD, "chalk");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL.", result);
+        assertEquals("Unexpected number of results found.", 27, result.getTotal());
+    }    
+    
+    @Test
+    public void testSearchBook() throws Exception {
+        Query query = new Query(JHSearchField.BOOK, "\"Theatrum vitae humane\"");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL.", result);
+        assertEquals("Unexpected number of results found.", 1, result.getTotal());
+        assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("3v"));
+    }
+    
+    @Test
+    public void testSearchPlaces() throws Exception {
+        Query query = new Query(JHSearchField.PLACE, "Athens");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL.", result);
+        assertEquals("Unexpected number of results found.", 1, result.getTotal());
+        assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("1r"));
+    }
+    
+    @Test
+    public void testSearchPeople() throws Exception {
+        Query query = new Query(JHSearchField.PEOPLE, "Theodor Zwinger");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL.", result);
+        assertEquals("Unexpected number of results found.", 2, result.getTotal());
+    }
+    
+    @Test
     public void testSearchMarginaliaXRef() throws Exception {
         Query query = new Query(JHSearchField.CROSS_REFERENCE, "Erasmus");
         SearchResult result = service.search(query, null);
@@ -208,7 +264,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
             service.handle_request(req, query, 0, out);
 
             String result = out.toString();
-            System.out.println(result.replaceAll(",", "\n"));
+            
             assertNotNull(result);
             assertFalse("Result was empty.", result.isEmpty());
             assertTrue("Unexpected number of matches returned.", result.contains("\"total\":1"));
@@ -245,6 +301,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
      * @throws Exception
      */
     @Test
+    @Ignore
     public void testSpellingVariantWithNullReference() throws Exception {
         BookCollection mockCollection = loadValidCollection();
         mockCollection.setBooksRef(null);

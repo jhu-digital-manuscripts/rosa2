@@ -11,9 +11,6 @@ import java.io.Serializable;
  * 
  * The offset is the position of the first match which the search service should
  * return in the list of total results.
- * 
- * The resume token is used to efficiently resume a search. Using a resume token
- * is more efficient than an offset.
  */
 public class SearchOptions implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -21,22 +18,30 @@ public class SearchOptions implements Serializable {
 
     private long offset;
     private int match_count;
-    private String resume_token;
+    private SortOrder sort_order;
 
     public SearchOptions() {
         this.offset = 0;
         this.match_count = DEFAULT_MATCH_COUNT;
+        this.sort_order = SortOrder.RELEVANCE;
     }
 
-    public SearchOptions(long offset, int match_count, String resume_token) {
+    public SearchOptions(long offset, int match_count) {
         this.offset = offset;
         this.match_count = match_count;
-        this.resume_token = resume_token;
+        this.sort_order = SortOrder.RELEVANCE;
+    }
+    
+    public SearchOptions(long offset, int match_count, SortOrder sort_order) {
+        this.offset = offset;
+        this.match_count = match_count;
+        this.sort_order = sort_order;
     }
 
     public SearchOptions(SearchOptions opts) {
         this.offset = opts.offset;
         this.match_count = opts.match_count;
+        this.sort_order = opts.sort_order;
     }
 
     public long getOffset() {
@@ -62,19 +67,19 @@ public class SearchOptions implements Serializable {
 
         this.match_count = matches;
     }
-
-    public String getResumeToken() {
-        return resume_token;
+    
+    public SortOrder getSortOrder() {
+    	return sort_order;
     }
-
-    public void setResumeToken(String resume_token) {
-        this.resume_token = resume_token;
+    
+    public void setSortOrder(SortOrder sort_order) {
+    	this.sort_order = sort_order;
     }
 
     @Override
     public String toString() {
         return "SearchOptions [offset=" + offset + ", match_count="
-                + match_count + ", resume_token=" + resume_token + "]";
+                + match_count + ", sort_order=" + sort_order + "]";
     }
 
     @Override
@@ -82,9 +87,8 @@ public class SearchOptions implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + match_count;
+        result = prime * result + + ((sort_order == null) ? 0 : sort_order.hashCode());
         result = prime * result + (int) (offset ^ (offset >>> 32));
-        result = prime * result
-                + ((resume_token == null) ? 0 : resume_token.hashCode());
         return result;
     }
 
@@ -99,12 +103,9 @@ public class SearchOptions implements Serializable {
         SearchOptions other = (SearchOptions) obj;
         if (match_count != other.match_count)
             return false;
+        if (sort_order != other.sort_order)
+            return false;        
         if (offset != other.offset)
-            return false;
-        if (resume_token == null) {
-            if (other.resume_token != null)
-                return false;
-        } else if (!resume_token.equals(other.resume_token))
             return false;
         return true;
     }

@@ -14,8 +14,8 @@ import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.IndexWriterConfig.OpenMode;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.SearcherManager;
+import org.apache.lucene.search.Sort;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.highlight.Highlighter;
 import org.apache.lucene.search.highlight.InvalidTokenOffsetsException;
@@ -31,6 +31,7 @@ import rosa.search.model.SearchField;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
+import rosa.search.model.SortOrder;
 
 /**
  * Implementation of the search service using Lucene. It relies on the LuceneMapper abstraction to handle
@@ -71,32 +72,6 @@ public class LuceneSearchService implements SearchService {
         iwc.setRAMBufferSizeMB(256);
 
         return new IndexWriter(dir, iwc);
-    }
-
-    private String create_resume_token(ScoreDoc last) {
-        if (last == null) {
-            return null;
-        } else {
-            return String.valueOf(last.doc) + "," + String.valueOf(last.score) + "," + String.valueOf(last.shardIndex);
-        }
-    }
-
-    private ScoreDoc parse_resume_token(String s) {
-        if (s == null) {
-            return null;
-        }
-
-        String[] parts = s.split(",");
-
-        try {
-            int doc = Integer.parseInt(parts[0]);
-            float score = Float.parseFloat(parts[1]);
-            int shard = Integer.parseInt(parts[2]);
-
-            return new ScoreDoc(doc, score, shard);
-        } catch (NumberFormatException e) {
-            return null;
-        }
     }
 
     private List<String> get_match_context(Highlighter hilighter, Document doc, Set<String> context_fields)
@@ -140,38 +115,33 @@ public class LuceneSearchService implements SearchService {
             }
 
             long offset = opts.getOffset();
-            String resume_token = opts.getResumeToken();
 
             TopDocs hits;
             int hits_offset;
 
-            if (resume_token == null) {
-                // Degrade to retrieving all matches up to last requested.
-
-                if (offset == 0) {
-                    hits = searcher.search(q, opts.getMatchCount());
-                    hits_offset = 0;
-                } else {
-                    // TODO Do multiple small searches instead?
-
-                    if (offset > Integer.MAX_VALUE) {
-                        throw new IllegalStateException("Offset too large: " + offset);
-                    }
-
-                    hits = searcher.search(q, (int) offset + opts.getMatchCount());
-                    hits_offset = (int) offset;
-                }
+            SortOrder sort_order = opts.getSortOrder();
+            Sort lucene_order;
+            
+            if (opts.getSortOrder() == SortOrder.INDEX) {
+            	lucene_order  = Sort.INDEXORDER;
             } else {
-                ScoreDoc after = parse_resume_token(resume_token);
-
-                if (after == null) {
-                    throw new IllegalArgumentException("Invalid resume token: " + opts.getResumeToken());
-                }
-
-                hits = searcher.searchAfter(after, q, opts.getMatchCount());
-                hits_offset = 0;
+            	lucene_order = Sort.RELEVANCE;
             }
+            
+            if (offset == 0) {
 
+            	hits = searcher.search(q, opts.getMatchCount(), lucene_order);
+            	hits_offset = 0;
+            } else {
+            	if (offset > Integer.MAX_VALUE) {
+                	// TODO Do multiple small searches instead?
+            		throw new IllegalStateException("Offset too large: " + offset);
+            	}
+
+            	hits = searcher.search(q, (int) offset + opts.getMatchCount(), lucene_order);
+            	hits_offset = (int) offset;
+            }
+           
             Highlighter hilighter = new Highlighter(new QueryScorer(q));
 
             Set<String> query_context_fields = mapper.getLuceneContextFields(query);
@@ -191,18 +161,10 @@ public class LuceneSearchService implements SearchService {
                 matches[i - hits_offset] = new SearchMatch(id, context, values);
             }
 
-            ScoreDoc last;
             long total = hits.totalHits;
+            
 
-            if (matches.length > 0 && offset + matches.length < total) {
-                last = hits.scoreDocs[hits.scoreDocs.length - 1];
-            } else {
-                last = null;
-            }
-
-            resume_token = create_resume_token(last);
-
-            return new SearchResult(offset, total, matches, resume_token, q.toString());
+            return new SearchResult(offset, total, matches, sort_order, q.toString());
         } finally {
             searcher_manager.release(searcher);
         }

@@ -16,6 +16,7 @@ import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
+import rosa.search.model.SortOrder;
 
 public class LuceneJHSearchService extends LuceneSearchService implements JHSearchService {
     private final JHSearchSerializer serializer;
@@ -29,23 +30,20 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
     }
 
     @Override
-    public void handle_request(PresentationRequest req, String query, int offset, int max, OutputStream os)
+    public void handle_request(PresentationRequest req, String query, int offset, int max, String sort_order, OutputStream os)
             throws IOException {
 
         SearchOptions opts = new SearchOptions();
         opts.setMatchCount(max);
         opts.setOffset(offset);
         
-        handle_request(req, query, opts, os);
-    }
-
-    @Override
-    public void handle_request(PresentationRequest req, String query, String resume, int max, OutputStream os)
-            throws IOException {
-
-        SearchOptions opts = new SearchOptions();
-        opts.setMatchCount(max);
-        opts.setResumeToken(resume);
+        if (sort_order != null) {
+        	try {
+        		opts.setSortOrder(SortOrder.valueOf(sort_order.toUpperCase()));
+        	} catch (IllegalArgumentException e) {
+        		throw new IllegalArgumentException("Unknown sort order: " + sort_order); 
+        	}
+        }
         
         handle_request(req, query, opts, os);
     }
@@ -56,7 +54,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         try {
             search_query = QueryParser.parseQuery(query);
         } catch (ParseException e) {
-            throw new IllegalArgumentException("Query error: " + e.getMessage()); 
+        	throw new IllegalArgumentException("Query error: " + e.getMessage()); 
         }
         
         Query restrict_query = null;
@@ -77,13 +75,15 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         
         SearchResult result = search(search_query, opts);
 
-        String url = req_url + RESOURCE_PATH + "?q=" + URLEncoder.encode(query, "UTF-8") + "&m=" + opts.getMatchCount();
+        // TODO Put URL generation elsewhere
         
-        if (opts.getResumeToken() == null) {
-            url += "&o=" + opts.getOffset();
-        } else {
-            url += "&r=" + URLEncoder.encode(opts.getResumeToken(), "UTF-8");
+        String url = req_url + RESOURCE_PATH + "?" + JHSearchService.QUERY_PARAM + "=" + URLEncoder.encode(query, "UTF-8") + "&" + JHSearchService.MAX_MATCHES_PARAM + "=" + opts.getMatchCount();
+        
+        if (opts.getSortOrder() != null) {
+            url += "&" + JHSearchService.SORT_ORDER_PARAM + "=" + URLEncoder.encode(opts.getSortOrder().name().toLowerCase(), "UTF-8");
         }
+        
+        url += "&" + JHSearchService.OFFSET_PARAM + "=" + opts.getOffset();
         
         serializer.write(url, query, result, os);
     }
@@ -114,7 +114,12 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             JHSearchField.SYMBOL,
             JHSearchField.NUMERAL,
             JHSearchField.DRAWING,
-            JHSearchField.CROSS_REFERENCE
+            JHSearchField.CROSS_REFERENCE,
+            JHSearchField.BOOK,
+            JHSearchField.PEOPLE,
+            JHSearchField.PLACE,
+            JHSearchField.METHOD,
+            JHSearchField.LANGUAGE,
     };
     
     @Override

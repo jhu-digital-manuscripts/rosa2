@@ -1,12 +1,10 @@
 package rosa.archive.model.aor;
 
-import rosa.archive.model.HasId;
-
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
+
+import rosa.archive.model.HasId;
 
 /**
  *
@@ -14,6 +12,8 @@ import java.util.Set;
 public class AnnotatedPage implements HasId, Serializable {
     private static final long serialVersionUID = 1L;
 
+    // TODO Just keep list of annotations and filter by type as needed?
+    
     private String id;
     private String page;
     private String reader;
@@ -47,58 +47,48 @@ public class AnnotatedPage implements HasId, Serializable {
         this.id = id;
     }
 
+    // TODO Cannot have stream because no support in GWT yet
+//    public Stream<? extends Annotation> stream() {
+//    	return Stream.of(marginalia.stream(), marks.stream(), symbols.stream(), underlines.stream(), numerals.stream(),
+//    				errata.stream(), drawings.stream()).reduce(Stream::concat).orElseGet(Stream::empty);
+//    }
+//    
+//    public Annotation getAnnotation(String id) {
+//    	return stream().filter(a -> a.getId().equals(id)).findFirst().get();
+//    }
+
+    public List<Annotation> getAnnotations() {
+    	List<Annotation> result = new ArrayList<>();
+    	
+    	result.addAll(marginalia);
+    	result.addAll(marks);
+    	result.addAll(symbols);
+    	result.addAll(underlines);
+    	result.addAll(numerals);
+    	result.addAll(errata);
+    	result.addAll(drawings);
+    	
+    	return result;
+    }
+ 
     public Annotation getAnnotation(String id) {
-        List<Class<? extends Annotation>> types =
-                Arrays.asList(Marginalia.class, Mark.class, Symbol.class, Underline.class,
-                        Numeral.class, Drawing.class, Errata.class);
-
-        for (Class c : types) {
-            Annotation a = getAnnotation(id, c);
-            if (a != null) {
-                return a;
-            }
-        }
-
-        return null;
-    }
-
+    	for (Annotation a: getAnnotations()) {
+    		if (a.getId().equals(id)) {
+    			return a;
+    		}
+    	}
+    	
+    	return null;
+	}
+    
+    // TODO Cannot use type.cast because of lack of GWT support
+    
     @SuppressWarnings("unchecked")
-    public <T extends Annotation> T getAnnotation(String id, Class<T> type) {
-        Annotation ann = null;
-        if (type.equals(Marginalia.class)) {
-            ann = getAnnotation(id, getMarginalia());
-        } else if (type.equals(Mark.class)) {
-            ann = getAnnotation(id, getMarks());
-        } else if (type.equals(Symbol.class)) {
-            ann = getAnnotation(id, getSymbols());
-        } else if (type.equals(Underline.class)) {
-            ann = getAnnotation(id, getUnderlines());
-        } else if (type.equals(Numeral.class)) {
-            ann = getAnnotation(id, getNumerals());
-        } else if (type.equals(Drawing.class)) {
-            ann = getAnnotation(id, getDrawings());
-        } else if (type.equals(Errata.class)) {
-            ann = getAnnotation(id, getErrata());
-        }
-
-        if (ann != null) {
-            return (T) ann;
-        } else {
-            return null;
-        }
+	public <T extends Annotation> T getAnnotation(String id, Class<T> type) {
+    	return (T) getAnnotation(id);
     }
 
-    private Annotation getAnnotation(String id, List<? extends Annotation> annotations) {
-        for (Annotation ann : annotations) {
-            if (ann.getId().equals(id)) {
-                return ann;
-            }
-        }
-
-        return null;
-    }
-
-    public String getPage() {
+	public String getPage() {
         return page;
     }
 

@@ -12,7 +12,7 @@ public class SearchResult implements Serializable {
     private long offset;
     private long total;
     private SearchMatch[] matches;
-    private String resume_token;
+    private SortOrder sort_order;
     private String debug;
 
     public SearchResult() {
@@ -20,16 +20,16 @@ public class SearchResult implements Serializable {
     }
 
     public SearchResult(long offset, long total, SearchMatch[] matches,
-            String resume_token) {
-        this(offset, total, matches, resume_token, null);
+            SortOrder sort_order) {
+        this(offset, total, matches, sort_order, null);
     }
     
     public SearchResult(long offset, long total, SearchMatch[] matches,
-            String resume_token, String debug) {
+            SortOrder sort_order, String debug) {
         this.offset = offset;
         this.total = total;
         this.matches = matches;
-        this.resume_token = resume_token;
+        this.sort_order = sort_order;
         this.debug = debug;
     }
 
@@ -53,18 +53,15 @@ public class SearchResult implements Serializable {
         this.debug = debug;
     }
 
-    /**
-     * @return token used to resume the search after the last match returned
-     */
-    public String getResumeToken() {
-        return resume_token;
+    public SortOrder getSortOrder() {
+        return sort_order;
     }
 
     @Override
     public String toString() {
         return "SearchResult [offset=" + offset + ", total=" + total
-                + ", matches=" + Arrays.toString(matches) + ", resume_token="
-                + resume_token +  ", debug=" + debug + "]";
+                + ", matches=" + Arrays.toString(matches) + ", sort_order="
+                + sort_order +  ", debug=" + debug + "]";
     }
 
     @Override
@@ -74,7 +71,7 @@ public class SearchResult implements Serializable {
         result = prime * result + Arrays.hashCode(matches);
         result = prime * result + (int) (offset ^ (offset >>> 32));
         result = prime * result
-                + ((resume_token == null) ? 0 : resume_token.hashCode());
+                + ((sort_order == null) ? 0 : sort_order.hashCode());
         result = prime * result
                 + ((debug == null) ? 0 : debug.hashCode());        
         result = prime * result + (int) (total ^ (total >>> 32));
@@ -94,10 +91,7 @@ public class SearchResult implements Serializable {
             return false;
         if (offset != other.offset)
             return false;
-        if (resume_token == null) {
-            if (other.resume_token != null)
-                return false;
-        } else if (!resume_token.equals(other.resume_token))
+        if (sort_order != other.sort_order)
             return false;
         if (debug == null) {
             if (other.debug != null)

@@ -3,8 +3,10 @@ package rosa.iiif.presentation.core.jhsearch;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -325,6 +327,58 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         page.getNumerals().forEach(a -> index(col, book, image, a, doc));
         page.getMarginalia().forEach(a -> index(col, book, image, a, doc));
         page.getUnderlines().forEach(a -> index(col, book, image, a, doc));
+        
+        // Index languages used
+        
+        Set<String> langs = new HashSet<>();
+        
+        page.getAnnotations().forEach(a -> {
+        	String lang = a.getLanguage();
+        	
+        	if (lang != null) {
+        		langs.add(lang.toLowerCase());
+        	}
+        	
+        	// Handle additional languages in Marginalia
+        	
+        	if (a instanceof Marginalia) {
+        		for (MarginaliaLanguage ml: Marginalia.class.cast(a).getLanguages()) {
+        			lang = ml.getLang();
+                	
+                	if (lang != null) {
+                		langs.add(lang.toLowerCase());
+                	}
+        		}
+        	}
+        });
+        
+        langs.forEach(lc -> {
+        	addField(doc, JHSearchField.LANGUAGE, lc);	
+        });
+        
+        // Index method used
+        
+        Set<String> methods = new HashSet<>();
+        
+        page.getUnderlines().forEach(a -> {
+        	String method = a.getMethod();
+        	
+        	if (a != null) {
+        		methods.add(method.toLowerCase());
+        	}
+        });
+        
+        page.getMarks().forEach(a -> {
+        	String method = a.getMethod();
+        	
+        	if (a != null) {
+        		methods.add(method.toLowerCase());
+        	}
+        });
+        
+        methods.forEach(method -> {
+        	addField(doc, JHSearchField.METHOD, method);	
+        });        
     }
     
     // Create document to index a canvas
@@ -344,6 +398,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         addField(doc, JHSearchField.MANIFEST_ID, manifest_id);
         addField(doc, JHSearchField.MANIFEST_LABEL, book.getBookMetadata("en").getCommonName());
 
+        
         return doc;
     }
 
@@ -419,7 +474,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         addField(doc, JHSearchField.MARGINALIA, get_lang(marg), marg.getReferencedText());
 
         StringBuilder transcription = new StringBuilder();
-        StringBuilder notes = new StringBuilder();
         StringBuilder emphasis = new StringBuilder();
         StringBuilder xrefs = new StringBuilder();
 
@@ -436,34 +490,35 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
                 transcription.append(to_string(pos.getTexts()));
 
                 // Index <person> tags + variants
-                StringBuilder people = new StringBuilder("People: ");
+
                 pos.getPeople().forEach(person -> {
-                    people.append(person).append(" ");
+                	addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, person);
+                    
                     if (peopleRefs != null && peopleRefs.hasAlternates(person)) {
-                        peopleRefs.getAlternates(person).forEach(alt -> people.append(alt).append(" "));
+                        peopleRefs.getAlternates(person).forEach(alt -> addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, alt));
                     }
                 });
-                notes.append(people.toString());
 
                 // Index <book> tags + variants
-                StringBuilder books = new StringBuilder("Books: ");
+
                 pos.getBooks().forEach(bookRef -> {
-                    books.append(bookRef).append(" ");
+                	addField(doc, JHSearchField.BOOK, SearchFieldType.ENGLISH, bookRef);
+                    
                     if (bookRefs != null && bookRefs.hasAlternates(bookRef)) {
-                        bookRefs.getAlternates(bookRef).forEach(alt -> books.append(alt).append(" "));
+                        bookRefs.getAlternates(bookRef).forEach(alt -> addField(doc, JHSearchField.BOOK, SearchFieldType.ENGLISH, alt));
                     }
                 });
-                notes.append(books.toString());
 
                 // Index <location> tags + variants
-                StringBuilder locs = new StringBuilder("Locations: ");
+
                 pos.getLocations().forEach(location -> {
-                    locs.append(location).append(" ");
+                	addField(doc, JHSearchField.PLACE, SearchFieldType.ENGLISH, location);
+                    
                     if (locationRefs != null && locationRefs.hasAlternates(location)) {
-                        locationRefs.getAlternates(location).forEach(alt -> locs.append(alt).append(" "));
+                        locationRefs.getAlternates(location).forEach(alt -> addField(doc, JHSearchField.PLACE, SearchFieldType.ENGLISH, alt));
                     }
                 });
-                notes.append(locs.toString());
+
 
                 pos.getEmphasis().forEach(underline -> emphasis.append(underline.getReferencedText()).append(" "));
 
@@ -478,10 +533,9 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
                 }
             }
         }
-
+        
         addField(doc, JHSearchField.MARGINALIA, marg_lang_type, transcription.toString());
         addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
-        addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, notes.toString());
         addField(doc, JHSearchField.CROSS_REFERENCE, SearchFieldType.ENGLISH, xrefs.toString());
         addField(doc, JHSearchField.EMPHASIS, marg_lang_type, emphasis.toString());
     }

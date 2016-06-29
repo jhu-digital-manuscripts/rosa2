@@ -27,6 +27,11 @@ public enum JHSearchField implements SearchField, JHSearchFieldProperties {
     TRANSCRIPTION(true, false, true, TRANSCRIPTION_LABEL, TRANSCRIPTION_DESCRIPTION, SearchFieldType.OLD_FRENCH, SearchFieldType.ENGLISH),
     ILLUSTRATION(true, false, true, ILLUSTRATION_LABEL, ILLUSTRATION_DESCRIPTION, SearchFieldType.ENGLISH),
     DESCRIPTION(true, false, true, DESCRIPTION_LABEL, DESCRIPTION_DESCRIPTION, SearchFieldType.ENGLISH),
+    LANGUAGE(false, false, true, LANGUAGE_LABEL, LANGUAGE_DESCRIPTION, LANGUAGE_VALUES, SearchFieldType.STRING),
+    BOOK(true, false,true, BOOK_LABEL, BOOK_DESCRIPTION, SearchFieldType.ENGLISH),
+    PEOPLE(true, false, true, PEOPLE_LABEL, PEOPLE_DESCRIPTION, SearchFieldType.ENGLISH),
+    PLACE(true, false, true, PLACE_LABEL, PLACE_DESCRIPTION, SearchFieldType.ENGLISH),
+    METHOD(false, false, true, METHOD_LABEL, METHOD_DESCRIPTION, METHOD_VALUES, SearchFieldType.STRING),    
     ;
     
      // TODO Move some of this to SearchField?

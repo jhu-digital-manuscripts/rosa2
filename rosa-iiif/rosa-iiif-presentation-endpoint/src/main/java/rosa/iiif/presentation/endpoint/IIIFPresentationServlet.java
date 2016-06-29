@@ -156,7 +156,8 @@ public class IIIFPresentationServlet extends HttpServlet {
 
             String query = req.getParameter(JHSearchService.QUERY_PARAM);
             int offset = get_int_param(req, JHSearchService.OFFSET_PARAM, 0);
-            String resume = req.getParameter(JHSearchService.RESUME_PARAM);
+            int max = get_int_param(req, JHSearchService.MAX_MATCHES_PARAM, -1);
+            String sort_order = req.getParameter(JHSearchService.SORT_ORDER_PARAM);
 
             // Must follow recommended URI pattern
 
@@ -165,14 +166,8 @@ public class IIIFPresentationServlet extends HttpServlet {
             if (presreq == null) {
                 send_error(resp, HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + req.getRequestURL());
             } else {
-                // If resume token given, use it and ignore offset.
-
                 try {
-                    if (resume == null) {
-                        searchService.handle_request(presreq, query, offset, os);
-                    } else {
-                        searchService.handle_request(presreq, query, resume, os);
-                    }
+                	searchService.handle_request(presreq, query, offset, max, sort_order, os);
                 } catch (IllegalArgumentException e) {
                     send_error(resp, HttpURLConnection.HTTP_BAD_REQUEST, e.getMessage());   
                 }

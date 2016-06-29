@@ -74,4 +74,25 @@ interface JHSearchFieldProperties {
     static final String ILLUSTRATION_DESCRIPTION = "Description of illustrations";
     static final String DESCRIPTION_LABEL = "Description";
     static final String DESCRIPTION_DESCRIPTION = "";
+    static final String LANGUAGE_LABEL ="Language";
+    static final String LANGUAGE_DESCRIPTION = "";
+    static final String[] LANGUAGE_VALUES = { 
+    			"en", "English", 
+    			"es", "Spanish", 
+    			"it", "Italian", 
+    			"el", "Greek", 
+    			"la", "Latin", 
+    			"fr", "French"
+    };
+    static final String BOOK_LABEL = "Book";
+    static final String BOOK_DESCRIPTION = "Books mentioned in marginalia.";
+    static final String PEOPLE_LABEL = "People";
+    static final String PEOPLE_DESCRIPTION = "People mentioned in marginalia.";
+    static final String PLACE_LABEL = "Place";
+    static final String PLACE_DESCRIPTION = "Places mentioned in marginalia.";    
+    static final String METHOD_LABEL = "Method";
+    static final String METHOD_DESCRIPTION = "Implement used to create mark or underline.";
+    static final String[] METHOD_VALUES = { 
+    		"pen", "Pen", "chalk", "Chalk"
+    };
 }

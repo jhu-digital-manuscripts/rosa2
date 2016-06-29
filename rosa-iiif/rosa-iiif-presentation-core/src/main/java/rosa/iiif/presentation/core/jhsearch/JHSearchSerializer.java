@@ -86,8 +86,8 @@ public class JHSearchSerializer implements IIIFNames {
         writer.key("query").value(query);
         writer.key("debug").value(result.getDebugMessage());
         
-        if (result.getResumeToken() != null) {
-            writer.key("resume").value(result.getResumeToken());
+        if (result.getSortOrder() != null) {
+            writer.key("sort_order").value(result.getSortOrder().name().toLowerCase());
         }
 
         writer.key("offset").value(result.getOffset());
