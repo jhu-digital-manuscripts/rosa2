@@ -32,6 +32,7 @@ public class HeaderPresenter implements Presenter, IsWidget {
         view.addHeaderImage(GWT.getModuleBaseURL() + "header-5.jpg", labels.headerAlt());
         addSiteNavLinks();
         addProjectLinks();
+        addHelp();
     }
 
     @Override
@@ -55,10 +56,14 @@ public class HeaderPresenter implements Presenter, IsWidget {
         view.addNavMenu(labels.project(), links);
     }
     private void addSiteNavLinks() {
-        view.addNavLink("home", "home");
+        view.addNavLink("Home", "home");
         view.addNavLink(labels.whoIsPizan(), "pizan");
         view.addNavLink(labels.works(), "works");
         view.addNavLink(labels.properNames(), "names");
+    }
+
+    private void addHelp() {
+        view.addNavLink("Help", GWT.getHostPageBaseURL() + "/help/help_en.html");
     }
 
 }

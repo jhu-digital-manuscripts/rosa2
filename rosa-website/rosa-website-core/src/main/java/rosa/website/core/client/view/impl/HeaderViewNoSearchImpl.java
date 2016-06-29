@@ -4,6 +4,7 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.History;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Image;
@@ -70,14 +71,24 @@ public class HeaderViewNoSearchImpl extends Composite implements HeaderViewNoSea
 
     @Override
     public void addNavLink(String label, final String target) {
-        MenuItem item = new MenuItem(label, new Command() {
-            @Override
-            public void execute() {
-                History.newItem(target);
-            }
-        });
-        item.addStyleName("item");
+        MenuItem item;
+        if (target.startsWith("http://")) { // TODO crappy
+            item = new MenuItem(label, new Command() {
+                @Override
+                public void execute() {
+                    Window.open(target, "_blank", "disabled");
+                }
+            });
+        } else {
+            item = new MenuItem(label, new Command() {
+                @Override
+                public void execute() {
+                    History.newItem(target);
+                }
+            });
+        }
 
+        item.addStyleName("item");
         navPanel.addItem(item);
     }
 
