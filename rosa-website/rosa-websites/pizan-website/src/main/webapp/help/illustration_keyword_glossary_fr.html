@@ -1,0 +1,369 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Bibliothèque numérique du Roman de la Rose - Aide - Glossaire</title>
+
+
+    
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <script language="JavaScript">
+            function getChildById( sId , dParentElement, sChildNodeTagName )
+            {
+                if (!sId || typeof(sId) !='string' ) { return null; };
+                if (!sChildNodeTagName || typeof(sChildNodeTagName) !='string' ) { sChildNodeTagName = '*' };
+            
+                if( typeof(dParentElement) =='string')
+                {
+                    dParentElement = document.getElementById(dParentElement);
+                };
+            
+                if( !dParentElement || ( dParentElement!=document && !dParentElement.nodeType ) )
+                {
+                    dParentElement = document;
+                };
+            
+                var dCollection = (dParentElement.all || dParentElement.getElementsByTagName('*'));                
+                var dNamedItem = dCollection.namedItem(sId);
+                
+                if(!dNamedItem && window.opera )
+                {
+                    /*yep, stupid Opera fail again!*/
+                    for(var i=0,j=dCollection.length;i<j;i++)
+                    {
+                        if(dCollection[i]['id'] == sId)
+                        {
+                            dNamedItem = dCollection[i];
+                            break;
+                        };
+                    };
+                };
+                
+                return ( dNamedItem[0] || dNamedItem );
+            };
+                
+            function toggleDisplay(me)
+            {
+            
+                if (me.style.display=="block"){
+                    me.style.display="none";
+                }
+                else {
+                    me.style.display="block";
+                }
+            };
+        </script>
+        <style type="text/css">                
+            dd {
+                position: relative;
+                left: 40px;
+            }
+            
+            #image {
+                display: none;
+            }
+            
+            .term {
+                text-decoration: underline;
+            }        
+        </style></head><body>
+        
+
+            <div id="header">
+<h1><i>Roman de la Rose</i> Aide de la Bibliothèque numérique</h1>
+</div>
+
+            <div id="content">
+                <div id="left">
+<a href="help_fr.html#books">Visualiser les livres</a>|
+<a href="help_fr.html#search">Recherche</a>|
+<a href="help_fr.html#bookmarks">Marque-Pages</a>|
+<a href="help_fr.html#glossary">Glossaire</a>
+                </div>
+
+
+                <div id="right">
+
+                    <h3 id="top">Glossaire des mots-clés d'illustrations</h3>
+					
+                    <p> Voici un glossaire illustré de termes utilisés comme mots-clés pour les illustrations des manuscrits. 
+						Les définitions proviennent pour la plupart de l'ouvrage <em>Se vêtir au Moyen Age</em>, de Françoise Piponnier 
+						et Perrine Mane (Société nouvelle Adam Biro, Paris, 1995). D'autres sont tirées ou inspirées du <em>Nouveau Petit Robert 
+						de la langue française</em>, 2008. 
+						
+						C'est à l'aide de la traduction anglaise de ces termes, lorsqu'elle existe, que se conduisent les recherches d'illustrations sur ce site. 
+						Les mots-clés à utiliser ont été mis entre parenthèses lorsqu'ils diffèrent du terme en français. 
+						
+						Ce glossaire étant loin d'être exhaustif, votre contribution et vos corrections sont les bienvenues.</p>
+
+                    
+                    <h4>Costumes et accessoires</h4>
+                    
+                    <dl>
+                        
+                        <div id="almuce">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'almuce'))">Aumusse</span></dt>
+                            <dd> Coiffure en forme de capuchon long, doublée de fourrure; d'abord portée par 
+                                des laïcs des deux sexes puis exclusivement par les ecclésiastiques. <a href="illustration_keyword_glossary_en.html#almuce">Anglais: Almuce</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Almuce-Douce332folio149v-ann.jpg" alt="Douce 332: folio 149v">
+                            </div>
+                        </div>
+                    
+                        <div id="cowl">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'cowl'))">Barbette</span></dt>
+                            <dd> Vêtement porté par les religieuses, veuves ou femmes âgées, attaché sur la tête, couvrant le col et encadrant le visage. <a href="illustration_keyword_glossary_en.html#cowl">Anglais: Cowl</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Cowl-Douce195folio 87r-ann.jpg" alt="Douce 195: folio 87r">
+                            </div>
+                        </div>
+						
+                        <div id="bourrelet">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'bourrelet'))">Bourrelet</span></dt>
+                            <dd> Couronne d'étoffe rembourrée coiffée par les enfants pour les protéger des heurts ou insérée dans 
+                                les chaperons masculins, au XVe siècle, pour leur donner du volume. <a href="illustration_keyword_glossary_en.html#bourrelet">Anglais: Bourrelet</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Bourrelet-FerrellRosefolio5r-ann.jpg" alt="Ferrell Rose: folio 5r">
+                            </div>
+                        </div>
+
+                        <div id="chaperon">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'chaperon'))">Chaperon</span></dt>
+                            <dd> A l'origine, capuchon enveloppant la tête et les épaules et encadrant le visage dans une ouverture
+								appelée "visagière"; sa pointe ou cornette prend parfois des dimensions très importantes. Au XVe siècle,
+								la mode masculine veut que la tête soit introduite dans la visagière; le collet du chaperon est alors dressé
+								en crête ou drapé sur la tête, souvent sur un bourrelet. La cornette peut être enroulée autour du cou ou 
+								de la tête. <a href="illustration_keyword_glossary_en.html#chaperon">Anglais: Chaperon</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Chaperon-Francais12595folio31r-ann.jpg" alt="BnF fr. 12595: folio 31r">
+                            </div>                                                        
+                        </div>
+
+                        <div id="chasuble">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'chasuble'))">Chasuble</span></dt>
+                            <dd> Vêtement liturgique de dessus porté par le prêtre; de coupe circulaire, elle est pourvue d'une ouverture
+								 centrale pour passer la tête. L'évêque la revêt sur une dalmatique. <a href="illustration_keyword_glossary_en.html#chasuble">Anglais: Chasuble</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Chasuble_mitre_crozier-Francais12595folio139r-ann.jpg" alt="BnF fr. 12595: folio 139r">
+                            </div>                            
+                        </div>
+                        
+                        <div id="hose">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'hose'))">Chausses</span></dt>
+                            <dd>Bas, de matériaux divers, faisant partie du costume masculin. <a href="illustration_keyword_glossary_en.html#hose">Anglais: Hose</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Doublet_hose-Douce195folio23r-ann.jpg" alt="Douce 195: folio 23r">
+                            </div>
+                        </div>
+
+                        <div id="cornettes">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'cornettes'))">Cornettes</span></dt>
+                            <dd> Pointes aux extrémités de manches féminines au XIVe siècle (<a href="illustration_keyword_glossary_en.html#cornettes">Anglais: Cornettes</a>), et des chaperons aux XIVe et XVe siècles (<a href="illustration_keyword_glossary_en.html#liripipe">Anglais: Liripipe</a>).</dd>
+                            <div id="image"><img src="images/glossary/Cornettes-UC1380folio5v-ann.jpg" alt="UC 1380: folio 5v">
+                            </div>
+                        </div>
+
+                        <div id="cote-hardie">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'cote-hardie'))">Cote (Cotte) hardie</span></dt>
+                            <dd> Surcot porté aux XIVe siècle et début du XVe siècle. Les versions féminines étaient 
+                                des vêtements de dessus ajustés. <a href="illustration_keyword_glossary_en.html#cote-hardie">Anglais: Cote hardie</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Cote hardie-LudwigXV7folio2r-ann.jpg" alt="Ludwig XV7: folio 2r">
+                            </div>
+                        </div>
+
+                        <div id="crozier">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'crozier'))">Crosse</span></dt>                            
+                            <dd>(Crozier) Bâton à l'extrémité supérieure recourbée, signe de dignité épiscopale. <a href="illustration_keyword_glossary_en.html#crozier">Anglais: Crozier</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Chasuble_mitre_crozier-Francais12595folio139r-ann.jpg" alt="BnF fr. 12595: folio 139r">
+                            </div>
+                        </div>
+
+                        <div id="dagging">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'dagging'))">Franges</span></dt>
+                            <dd>Rebords découpés,  selon diverses formes, fréquents sur les vêtements du XIVe et du début du XIVe siècles. <a href="illustration_keyword_glossary_en.html#dagging">Anglais: Dagging</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Dagging_cotehardie-Ferrellfolio5r-ann.jpg" alt="Ferrell Rose: folio 5r">
+                            </div>
+                        </div>
+
+						<div id="houppelande">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'houppelande'))">Houppelande</span></dt>
+                            <dd> Vêtement de dessus ample, à manches volumineuses. Portées longue ou à mi-jambe, la houppelande masculine
+								est ouverte devant. La houppelande féminine, toujours longue et fermée devant peut être pourvue d'une traîne.
+								Ce vêtement, introduit en 1360, est tombé en désuétude vers 1430. <a href="illustration_keyword_glossary_en.html#houppelande">Anglais: Houppelande</a></dd>
+                            <div id="image">                                
+                                <img src="images/glossary/Houppelande-LudwigXV7folio7r-ann.jpg" alt="Ludwig XV7: folio 7r">
+                            </div>
+                        </div>
+						
+                        <div id="houce">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'houce'))">Housse</span></dt>
+                            <dd> L'un des éléments de la "robe" de plusieurs garnements, pourvue de manches flottantes
+                                ou "ailes" et de "languettes" à l'encolure". Porté de la fin du XIIIe siècle jusqu'à la fin du XIVe siècle. <a href="illustration_keyword_glossary_en.html#houce">Anglais: Houce</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Houce-UC1380folio1r-ann.jpg" alt="UC 1380: folio 1r">
+                            </div>
+                        </div>
+
+                        <div id="mantle">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'mantle'))">Manteau</span></dt>
+                            <dd>(Mantel) Vêtement de dessus taillé en rotonde, entièrement fendu, fermé sur l'épaule ou 
+                                devant. Porté par les deux sexes. <a href="illustration_keyword_glossary_en.html#mantle">Anglais: Mantle</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Mantle-FerrellRosefolio24v-ann.jpg" alt="Ferrell Rose: folio 24v">
+                            </div>
+                        </div>
+
+                        <div id="mi-parti">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'mi-parti'))">Mi-parti</span></dt>
+                            <dd> Divisé en deux moitiés égales mais dissemblables. Se dit d'un vêtement dont les deux moitiés, dans 
+								 le sens vertical, ne sont pas de la même étoffe. A la fin du Moyen Âge, le terme "parti" est plus souvent
+								 employé pour désigner des partitions plus complexes du vêtement, inspirées par celles des armoiries.
+								 Vêtement à la mode à la fin du XIIe siècle puis de nouveau à partir des années 1320. <a href="illustration_keyword_glossary_en.html#mi-parti">Anglais: Mi-parti</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Mi-parti-UC1380folio17r-ann.jpg" alt="UC 1380 folio 17r">
+                            </div>
+                        </div>
+
+                        <div id="mitre">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'mitre'))">Mitre</span></dt>
+                            <dd> Coiffure liturgique de l'évêque. <a href="illustration_keyword_glossary_en.html#mitre">Anglais: Mitre</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Chasuble_mitre_crozier-Francais12595folio139r-ann.jpg" alt="BnF fr. 12595: folio 139r">
+                            </div>
+                        </div>
+						
+						<div id="doublet">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'doublet'))">Pourpoint</span></dt>
+                            <dd> Vêtement masculin ajusté couvrant le buste et les hanches, constitué à l'origine
+								de plusieurs épaisseurs d'étoffe entre lesquelles un rembourrage de soie ou de coton est retenu par 
+								des surpiqûres. D'abord vêtement de dessous, porté ultérieurement comme vêtement de dessus. <a href="illustration_keyword_glossary_en.html#doublet">Anglais: Doublet</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Doublet_hose-Douce195folio23r-ann.jpg" alt="Douce 195: folio 23r">
+                            </div>
+                        </div>
+
+                        <div id="gown-or-robe">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'gown-or-robe'))">Robe</span></dt>
+                            <dd> Vêtement de dessus à manches. <a href="illustration_keyword_glossary_en.html#gown">Anglais: Gown</a></dd>
+                            <div id="image">                                
+                                <img src="images/glossary/Gown-Morgan948folio6r-ann.jpg" alt="Morgan 948: folio 6r">
+                            </div>
+                        </div>
+						
+                        <div id="surcote-ouverte">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'surcote-ouverte'))">Surcot ouvert</span></dt>
+                            <dd> L'un des éléments de la robe de plusieurs garnements, dont les emmanchures très largement 
+								échancrées laissent apparaître la cotte et, parfois, son laçage latéral. Vêtement symbolisant le rang aristocratique
+								des femmes du XVIe siècle. <a href="illustration_keyword_glossary_en.html#surcote-ouverte">Anglais: Surcot(e) ouvert(e)</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Surcote ouverte-Douce332folio7r-ann.jpg" alt="Douce 332: folio 7r">
+                            </div>
+                        </div>
+
+                        <div id="surplice">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'surplice'))">Surplis</span></dt>
+                            <dd> Vêtement de toile fine porté par les membres du clergé à l'église en-dehors 
+                                des cérémonies liturgiques, ou au-dehors lors des processions. <a href="illustration_keyword_glossary_en.html#surplice">Anglais: Surplice</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Surplice-Walters143folio110v-ann.jpg" alt="Walters 143: folio 110v">
+                            </div>
+                        </div>
+
+                        <div id="tunic">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'tunic'))">Tunique</span></dt>
+                            <dd> Terme utilisé pour désigner un vêtement de forme simple. <a href="illustration_keyword_glossary_en.html#tunic">Anglais: Tunic</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Tunic-SeldenSupra57folio6v-ann.jpg" alt="Selden Supra 57: folio 6v">
+                            </div>
+                        </div>
+
+                    </dl>
+                        
+                    <h4>Armes et armures</h4>
+                    
+                    <dl>
+						
+						<div id="crossbow">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'crossbow'))">Arbalète</span></dt>
+						    <dd> Arme de trait, arc d'acier monté sur un fût qui se bande à l'aide d'un mécanisme. <a href="illustration_keyword_glossary_en.html#crossbow">Anglais: Crossbow</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Crossbow-Morganfolio41v-ann.jpg" alt="Morgan 948: folio 41v">
+                            </div>
+                        </div>
+						
+                        <div id="bascinet">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'bascinet'))">Bassinet</span></dt>
+                            <dd> Calotte de fer que les hommes d'armes portaient sous le casque au XIIIe siècle. Casque intégral du XIVe siècle. <a href="illustration_keyword_glossary_en.html#bascinet">Anglais: Bascinet</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Bascinet-UC1380folio137v-ann.jpg" alt="UC 1380: folio 137v">
+                            </div>
+                        </div>
+                                                
+                        <div id="warhammer">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'warhammer'))">Bec de corbin, ou bec de faucon</span></dt>
+                            <dd>Arme d’hast dont le fer est constitué d’un  marteau d’une part, et d’un croc (bec) de l’autre. <a href="illustration_keyword_glossary_en.html#warhammer">Anglais: Warhammer</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/WarhammerDouce195folio27v-ann.jpg" alt="Douce 195: folio 27v">
+                            </div>
+                        </div>
+                        
+                        <div id="camail">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'camail'))">Camail</span></dt>
+                            <dd>Pièce de mailles (portée sur ou sous le casque) protégeant le cou et les épaules. <a href="illustration_keyword_glossary_en.html#camail">Anglais: Camail</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Camail_aventail-Douce332folio143r-ann.jpg" alt="Douce 332: folio 143r">
+                            </div>
+                        </div>
+
+                        <div id="halberd">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'halberd'))">Hallebarde</span></dt>
+                            <dd> Arme d'hast à longue hampe, munie d'un fer tranchant et pointu et de deux fers latéraux
+                                ou ailes, l'une en forme de croissant, l'autre en pointe. <a href="illustration_keyword_glossary_en.html#halberd">Anglais: Halberd</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Halberd-Douce195folio86v-ann.jpg" alt="Douce 195: folio 86v">
+                            </div>
+                        </div>
+
+                        <div id="hauberk">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'hauberk'))">Haubert</span></dt>
+                            <dd> Pièce d'armure couvrant à l'origine la tête, le cou et les épaules, 
+                                composées de "mailles treslies" fines. <a href="illustration_keyword_glossary_en.html#hauberk">Anglais: Haubergeon ou hauberk</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Hauberk-Douce195folio21v-ann.jpg" alt="Douce 195: folio 21v">
+                            </div>
+                        </div>
+                        
+
+                        <div id="mail">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'mail'))">Maille</span></dt>
+                            <dd>(Mail) A l'origine, plaque de métal forgé fixée sur le vêtement de guerre pour le renforcer.
+                                Mailles treslies: anneaux de fer tréfilé entrelacés. <a href="illustration_keyword_glossary_en.html#mail">Anglais: Mail</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Mail-Walters143folio101v-ann.jpg" alt="Walters 143: folio 101v">
+                            </div>
+                        </div>
+                        
+
+                        <div id="plates">
+                            <dt><span class="term" onclick="toggleDisplay(getChildById('image', 'plates'))">Plates</span></dt>
+                            <dd> Eléments de fer forgé souvent aciéré, découpés par les armuriers pour renforcer les divers éléments
+                                des tenues de guerre. <a href="illustration_keyword_glossary_en.html#plates">Anglais: Plates</a></dd>
+                            <div id="image">
+                                <img src="images/glossary/Plates-Douce195folio65v-ann.jpg" alt="Douce 195: folio 65v">
+                            </div>
+                        </div>
+               
+                        
+                    </dl>
+
+                    <p class="top">
+                        <a href="#top">[retour en haut de page]</a>
+                    </p>
+
+                    
+                </div>
+
+        </div>
+    </body></html>
