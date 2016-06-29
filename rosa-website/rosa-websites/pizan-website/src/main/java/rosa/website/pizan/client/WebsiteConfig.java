@@ -15,4 +15,6 @@ public interface WebsiteConfig extends Constants {
     String fsiUrl();
     @DefaultBooleanValue(false)
     boolean trackAnalytics();
+    @DefaultStringValue("left")
+    String sideBarLocation();
 }

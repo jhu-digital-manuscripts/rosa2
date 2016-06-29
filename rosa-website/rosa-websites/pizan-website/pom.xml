@@ -139,6 +139,7 @@
                     <modules>
                         <module>rosa.website.pizan.RosaWebsitePizan</module>
                     </modules>
+                    <copyWebapp>true</copyWebapp>
                     <compileSourcesArtifacts>
                         <compileSourcesArtifact>rosa.archive:rosa-archive-model</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.archive:rosa-archive-core</compileSourcesArtifact>

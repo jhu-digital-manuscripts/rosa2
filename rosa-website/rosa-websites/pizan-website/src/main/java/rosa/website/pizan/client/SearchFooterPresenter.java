@@ -1,39 +1,23 @@
-package rosa.website.rose.client;
+package rosa.website.pizan.client;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyPressEvent;
 import com.google.gwt.event.dom.client.KeyPressHandler;
-import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
-import com.google.web.bindery.event.shared.EventBus;
 import rosa.website.core.client.ClientFactory;
-import rosa.website.core.client.Labels;
-import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.AdvancedSearchPlace;
-import rosa.website.core.client.view.HeaderViewWithSearch;
-import rosa.website.core.client.view.HeaderViewWithSearch.Presenter;
+import rosa.website.core.client.view.SearchFooterView;
 
-public class HeaderPresenter implements Presenter, IsWidget {
+public class SearchFooterPresenter implements SearchFooterView.Presenter, IsWidget {
+    private static final Labels labels = Labels.INSTANCE;
 
-    private final HeaderViewWithSearch view;
-    private final EventBus eventBus;
+    private final SearchFooterView view;
 
-    /**
-     * @param clientFactory .
-     */
-    public HeaderPresenter(final ClientFactory clientFactory) {
-        this.eventBus = clientFactory.eventBus();
-        final Labels labels = Labels.INSTANCE;
-
-        this.view = clientFactory.headerViewWithSearch();
-        view.setPresenter(this);
-
-        view.addHeaderImage(GWT.getModuleBaseURL() + "banner_text.jpg", "Roman de la Rose Digital Library");
-        view.addHeaderImage(GWT.getModuleBaseURL() + "banner_image1.gif", "");
+    public SearchFooterPresenter(final ClientFactory clientFactory) {
+        this.view = clientFactory.searchFooterView();
 
         view.setSearchButtonText(labels.search());
         view.addAdvancedSearchLink(labels.advancedSearch(), "search;");
@@ -42,7 +26,6 @@ public class HeaderPresenter implements Presenter, IsWidget {
             public void onClick(ClickEvent event) {
                 String searchToken = view.getSearchToken();
 
-                // Only go to search place if there is something in the search box.
                 if (searchToken != null && !searchToken.trim().isEmpty()) {
                     clientFactory.placeController().goTo(new AdvancedSearchPlace(searchToken));
                 }
@@ -68,11 +51,4 @@ public class HeaderPresenter implements Presenter, IsWidget {
     public Widget asWidget() {
         return view.asWidget();
     }
-
-    @Override
-    public void goHome() {
-        eventBus.fireEvent(new SidebarItemSelectedEvent(null));
-        History.newItem("home");
-    }
-
 }

@@ -1,62 +1,22 @@
 package rosa.website.core.client.view.impl;
 
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.Image;
-import rosa.website.core.client.Console;
-import rosa.website.core.client.view.HeaderView;
+import rosa.website.core.client.view.SearchFooterView;
 import rosa.website.search.client.widget.BasicSearchWidget;
 
-public class HeaderViewImpl extends Composite implements HeaderView {
-    private final FlowPanel root;
+public class SearchFooterViewImpl extends Composite implements SearchFooterView {
     private final BasicSearchWidget searchWidget;
 
-    private Presenter presenter;
-
-    private final ClickHandler goHomeClickHandler = new ClickHandler() {
-        @Override
-        public void onClick(ClickEvent event) {
-            if (presenter != null) {
-                presenter.goHome();
-            }
-        }
-    };
-
-    /**  */
-    public HeaderViewImpl() {
-        root = new FlowPanel();
+    public SearchFooterViewImpl() {
+        FlowPanel root = new FlowPanel();
         searchWidget = new BasicSearchWidget();
-
-        root.setStylePrimaryName("Header");
-
         root.add(searchWidget);
 
         initWidget(root);
-    }
-
-    @Override
-    public void setPresenter(Presenter presenter) {
-        this.presenter = presenter;
-    }
-
-    @Override
-    public void addHeaderImage(String imageUrl, String altText) {
-        Image image = new Image(imageUrl);
-
-        image.setAltText(altText);
-        image.addStyleName("link");
-        image.addClickHandler(goHomeClickHandler);
-
-        if (root.getWidgetCount() > 1) {
-            root.insert(image, root.getWidgetCount() - 1);
-        } else {
-            root.add(image);
-        }
-
     }
 
     @Override
@@ -92,11 +52,7 @@ public class HeaderViewImpl extends Composite implements HeaderView {
     private String escaped(String str) {
         if (str == null || str.isEmpty()) {
             return "";
-        }
-
-        str = str.replaceAll("\\\"", "\"\"");
-
-        if (str.contains(",") || str.contains("\"") || str.contains("\n") || str.contains(" ")) {
+        } else if (str.contains(",") || str.contains("\n")) {
             return "\"" + str + "\"";
         } else {
             return str;

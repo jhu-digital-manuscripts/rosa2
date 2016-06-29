@@ -5,23 +5,8 @@ import com.google.gwt.event.dom.client.KeyPressHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
 
-public interface HeaderView extends IsWidget {
-    interface Presenter {
-        /**
-         * Tell the presenter to go to the "home" place.
-         */
-        void goHome();
-    }
-
-    void setPresenter(Presenter presenter);
-
-    /**
-     * Add an image to the header.
-     *
-     * @param imageUrl URL of desired image
-     * @param altText alt text of image
-     */
-    void addHeaderImage(String imageUrl, String altText);
+public interface SearchFooterView extends IsWidget {
+    public interface Presenter {}
 
     void setSearchButtonText(String text);
 

@@ -10,8 +10,10 @@ import rosa.website.core.client.view.BookSelectView;
 import rosa.website.core.client.view.FSIViewerView;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.HTMLView;
-import rosa.website.core.client.view.HeaderView;
+import rosa.website.core.client.view.HeaderViewWithSearch;
+import rosa.website.core.client.view.HeaderViewNoSearch;
 import rosa.website.core.client.view.JSViewerView;
+import rosa.website.core.client.view.SearchFooterView;
 import rosa.website.core.client.view.SidebarView;
 import rosa.website.core.client.view.impl.AdvancedSearchViewImpl;
 import rosa.website.core.client.view.impl.BookDescriptionViewImpl;
@@ -19,8 +21,10 @@ import rosa.website.core.client.view.impl.BookSelectViewImpl;
 import rosa.website.core.client.view.impl.FSIViewerViewImpl;
 import rosa.website.core.client.view.impl.CSVDataViewImpl;
 import rosa.website.core.client.view.impl.HTMLViewImpl;
-import rosa.website.core.client.view.impl.HeaderViewImpl;
+import rosa.website.core.client.view.impl.HeaderViewNoSearchImpl;
+import rosa.website.core.client.view.impl.HeaderViewWithSearchImpl;
 import rosa.website.core.client.view.impl.JSViewerViewImpl;
+import rosa.website.core.client.view.impl.SearchFooterViewImpl;
 import rosa.website.core.client.view.impl.SidebarViewImpl;
 
 public class ClientFactory {
@@ -31,7 +35,9 @@ public class ClientFactory {
     private static ArchiveDataServiceAsync archiveDataService = CachingArchiveDataService.INSTANCE;
     private static RosaSearchServiceAsync searchService = GWT.create(RosaSearchService.class);
 
-    private static HeaderView headerView = new HeaderViewImpl();
+    private static HeaderViewWithSearch headerViewWithSearch = new HeaderViewWithSearchImpl();
+    private static HeaderViewNoSearch headerViewNoSearch = new HeaderViewNoSearchImpl();
+    private static SearchFooterView searchFooterView = new SearchFooterViewImpl();
 
     public AppContext context() {
         return context;
@@ -77,8 +83,12 @@ public class ClientFactory {
         return new JSViewerViewImpl();
     }
 
-    public HeaderView headerView() {
-        return headerView;
+    public HeaderViewWithSearch headerViewWithSearch() {
+        return headerViewWithSearch;
+    }
+
+    public HeaderViewNoSearch headerViewNoSearch() {
+        return headerViewNoSearch;
     }
 
     public SidebarView sidebarView() {
@@ -87,5 +97,9 @@ public class ClientFactory {
 
     public AdvancedSearchView advancedSearchView() {
         return new AdvancedSearchViewImpl();
+    }
+
+    public SearchFooterView searchFooterView() {
+        return searchFooterView;
     }
 }

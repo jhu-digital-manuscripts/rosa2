@@ -1,0 +1,147 @@
+
+body {
+background: #ede9de;
+font-family: Arial, sans-serif;
+font-size: 13px;
+padding: 0;
+margin: 0;
+color: #444;
+line-height: 17px;
+}
+
+img { border-bottom: 2 px solid; color: #111; }
+a { color: #336699; }
+a:hover { text-decoration: none; color : #000; }
+
+h3 { border-bottom: 1px dotted #aaa; color: #666; padding-bottom: 4px; margin: 14px 0 7px 0; font-weight: 100; font-size: 22px;}
+h3 a { text-decoration: none; font-size: 22px; }
+h3 a:hover { color: #333; }
+
+
+#header {
+height: 70px;
+width: auto;
+}
+
+#header h1 {
+color: #000000;
+font-size: 30px;
+font-weight: 600;
+padding: 15px 0 15px 30px;
+}
+
+
+#header h1 a {
+color: #fff;
+text-decoration: none;
+}
+#header h1 a:hover {
+color: #111;
+text-decoration: none;
+}
+
+#header h2 {
+font-size: 16px;
+color: #eee;
+padding: 9px 0 0 33px;
+}
+
+.top {display:block;
+}
+
+
+p {margin: 5px 0 5px 0; }
+
+.topic a { border-bottom: 1px dotted #800000; color: #000000; padding-bottom: 4px; margin: 14px 0 7px 0; font-weight: 100; font-size: 22px; display: block;}
+
+#content { 
+padding: 0 20px;
+}
+
+#right  {
+margin-top: 20px;
+font-size: 12px;
+text-align: justify;
+}
+
+#left {
+
+}
+
+#left a {
+font-weight: 600;
+text-decoration: none;
+font-size: 14px;
+padding: 1em;
+}
+#left a:hover { color : #b73f40; }
+
+
+#right h3 { color: #111; margin: 10px 0 7px 0;}
+#right h4 { font-size: 12px;  padding: 5px 0 5px 0; color: #111;}
+
+.section{
+font-style: italic;
+text-size: 14px;
+color: #111;
+}
+
+#subtitle{
+font-style: italic;
+}
+
+/* image hover*/
+a.screen, a.screen:visited { color:#800000; position:relative; z-index:1;}
+
+a.screen b { 
+position:absolute; visibility:hidden; /* hide the image */
+width:100px; /* give it a width */
+height:0; /* no height to solve an Opera bug that 
+             makes it selectable when hidden */
+left:0; /* position:the image */
+bottom:-150px;
+}
+
+a.screen:hover {
+text-decoration:none; 
+border:0; /* needed for this to work in IE */ 
+z-index:1000;
+}
+
+a.screen:hover b {
+visibility:visible; /* make the image visible */
+height:150px; /* now give it a height */
+cursor:pointer; /* for IE */
+z-index:500; 
+}
+
+a.screen:hover b img {
+border:0; /* remove the link border */
+}
+/* =======================*/
+
+/* glossary styles*/
+
+
+dt {font-weight: bold; color: #b73f40; } 
+dl { padding: 1em; } 
+
+
+/*=====================*/
+
+#footer {
+font-size: 11px;
+color: #999;
+text-align: center;
+padding: 10px 0;
+margin: 70px 0 0 0;
+border-top: 1px dotted #aaa;
+}
+
+#footer a { 
+color: #999;
+}
+#footer a:hover {
+color: #000; 
+text-decoration: underline; 
+}

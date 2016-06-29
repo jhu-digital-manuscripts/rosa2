@@ -5,12 +5,9 @@ import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style;
-import com.google.gwt.event.logical.shared.ResizeEvent;
-import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
@@ -20,8 +17,6 @@ import rosa.website.core.client.event.BookSelectEvent;
 import rosa.website.core.client.event.FlashStatusChangeEvent;
 import rosa.website.core.client.event.SidebarItemSelectedEvent;
 import rosa.website.core.client.place.HTMLPlace;
-import rosa.website.core.client.view.SidebarView;
-import rosa.website.core.client.view.impl.SidebarViewImpl;
 import rosa.website.pizan.client.nav.DefaultRosaHistoryMapper;
 import rosa.website.pizan.client.nav.RosaActivityMapper;
 import rosa.website.pizan.client.nav.RosaHistoryMapper;
@@ -33,7 +28,8 @@ import java.util.logging.Logger;
 public class RosaWebsite implements EntryPoint {
     private static final Logger logger = Logger.getLogger("");
     private static final int SIDEBAR_WIDTH = 180;
-    private static final int HEADER_HEIGHT = 120;
+    private static final int HEADER_HEIGHT = 145;
+    private static final int FOOTER_HEIGHT = 50;
 
     /**
      * This is the default place that will load when the application
@@ -80,7 +76,9 @@ public class RosaWebsite implements EntryPoint {
         final PlaceHistoryHandler history_handler = new PlaceHistoryHandler(appHistoryMapper);
         history_handler.register(placeController, eventBus, default_place);
 
+        // Add header, footer, sidebar, content
         main.addNorth(new HeaderPresenter(clientFactory), HEADER_HEIGHT);
+        main.addSouth(new SearchFooterPresenter(clientFactory), FOOTER_HEIGHT);
         addSidebar(clientFactory);
         main.add(main_content);
 
@@ -100,7 +98,12 @@ public class RosaWebsite implements EntryPoint {
         sidebarPresenter = new SidebarPresenter(clientFactory);
         sidebarPresenter.resize((SIDEBAR_WIDTH - 18) + "px", "");
 
-        main.addWest(sidebarPresenter, SIDEBAR_WIDTH);
+        String location = WebsiteConfig.INSTANCE.sideBarLocation();
+        if (location != null && !location.isEmpty() && location.equalsIgnoreCase("right")) {
+            main.addEast(sidebarPresenter, SIDEBAR_WIDTH);
+        } else {
+            main.addWest(sidebarPresenter, SIDEBAR_WIDTH);
+        }
     }
 
     private void bind(EventBus eventBus, SidebarPresenter presenter) {
