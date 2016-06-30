@@ -91,7 +91,7 @@ public class SidebarPresenter implements SidebarView.Presenter {
         links.put(labels.termsAndConditions(), "terms");
         links.put(labels.partners(), "partners");
         links.put(labels.projectHistory(), "project");
-        links.put(labels.donation(), "donation");
+//        links.put(labels.donation(), "donation");
         links.put(labels.contactUs(), "contact");
 
         view.addSection(labels.project(), links);
