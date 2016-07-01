@@ -15,7 +15,6 @@ import org.apache.lucene.analysis.core.LowerCaseFilter;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.analysis.core.WhitespaceTokenizer;
 import org.apache.lucene.analysis.el.GreekAnalyzer;
-import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.es.SpanishAnalyzer;
 import org.apache.lucene.analysis.fr.FrenchAnalyzer;
 import org.apache.lucene.analysis.it.ItalianAnalyzer;
@@ -35,6 +34,7 @@ import org.apache.lucene.search.TermQuery;
 
 import rosa.lucene.la.LatinStemFilter;
 import rosa.search.core.analyzer.OldFrenchAnalyzer;
+import rosa.search.core.analyzer.RosaEnglishAnalyzer;
 import rosa.search.core.analyzer.RosaLanguageAnalyzers;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
@@ -104,7 +104,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     public BaseLuceneMapper(SearchField... fields) {
         this(
                 new RosaLanguageAnalyzers.Builder()
-                        .englishAnalyzer(new EnglishAnalyzer())
+                        .englishAnalyzer(new RosaEnglishAnalyzer())
                         .frenchAnalyzer(new FrenchAnalyzer())
                         .oldFrenchAnalyzer(new OldFrenchAnalyzer())
                         .greekAnalyzer(new GreekAnalyzer())
@@ -124,7 +124,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     }
 
     protected void addNameVariant(String name_id, String... variants) {
-        ((OldFrenchAnalyzer) languageAnalyzers.getAnalyzer(SearchFieldType.OLD_FRENCH)).addNameVariant(name_id, variants);
+        ((OldFrenchAnalyzer) languageAnalyzers.oldFrenchAnalyzer()).addNameVariant(name_id, variants);
     }
 
     public String getLuceneField(SearchField sf, SearchFieldType type) {
@@ -137,8 +137,22 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
                 return imagename_analyzer;
             case STRING:
                 return string_analyzer;
-            default:    // DEFAULT: check language analyzers
-                return languageAnalyzers.getAnalyzer(type);
+            case ENGLISH:
+                return languageAnalyzers.englishAnalyzer();
+            case FRENCH:
+                return languageAnalyzers.frenchAnalyzer();
+            case OLD_FRENCH:
+                return languageAnalyzers.oldFrenchAnalyzer();
+            case ITALIAN:
+                return languageAnalyzers.italianAnalyzer();
+            case GREEK:
+                return languageAnalyzers.greekAnalyzer();
+            case SPANISH:
+                return languageAnalyzers.spanishAnalyzer();
+            case LATIN:
+                return languageAnalyzers.latinAnalyzer();
+            default:
+                return null;
         }
     }
 

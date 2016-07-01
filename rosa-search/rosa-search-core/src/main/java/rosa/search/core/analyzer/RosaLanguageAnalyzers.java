@@ -88,4 +88,32 @@ public class RosaLanguageAnalyzers {
         analyzerMap.put(type, analyzer);
     }
 
+    public Analyzer englishAnalyzer() {
+        return analyzerMap.get(SearchFieldType.ENGLISH);
+    }
+
+    public Analyzer frenchAnalyzer() {
+        return analyzerMap.get(SearchFieldType.FRENCH);
+    }
+
+    public Analyzer oldFrenchAnalyzer() {
+        return analyzerMap.get(SearchFieldType.OLD_FRENCH);
+    }
+
+    public Analyzer italianAnalyzer() {
+        return analyzerMap.get(SearchFieldType.ITALIAN);
+    }
+
+    public Analyzer spanishAnalyzer() {
+        return analyzerMap.get(SearchFieldType.SPANISH);
+    }
+
+    public Analyzer greekAnalyzer() {
+        return analyzerMap.get(SearchFieldType.GREEK);
+    }
+
+    public Analyzer latinAnalyzer() {
+        return analyzerMap.get(SearchFieldType.LATIN);
+    }
+
 }

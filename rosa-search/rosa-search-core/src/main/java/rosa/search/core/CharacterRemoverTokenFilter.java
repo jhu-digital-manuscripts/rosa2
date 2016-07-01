@@ -38,7 +38,7 @@ public class CharacterRemoverTokenFilter extends TokenFilter {
     }
 
     @Override
-    public boolean incrementToken() throws IOException {
+    public final boolean incrementToken() throws IOException {
         if (input.incrementToken()) {
             char[] buffer = termAtt.buffer();
             charsToRemove.stream().forEach(character -> doRemove(character, buffer));
