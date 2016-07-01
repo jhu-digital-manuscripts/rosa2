@@ -23,7 +23,8 @@ public class BaseLuceneMapperTest {
 //        BOOK(false, true, SearchFieldType.STRING),
         TEXT(true, true, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.LATIN),
         EN_TEXT(true, true, SearchFieldType.ENGLISH),
-        FR_TEXT(true, true, SearchFieldType.OLD_FRENCH);
+        FR_TEXT(true, true, SearchFieldType.OLD_FRENCH),
+        REMOVAL(true, true, SearchFieldType.ENGLISH);
 
         private final SearchFieldType[] types;
         private final boolean context;

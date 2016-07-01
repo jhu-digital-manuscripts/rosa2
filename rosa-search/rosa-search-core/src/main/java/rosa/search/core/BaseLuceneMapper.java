@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 import org.apache.lucene.analysis.Analyzer;
@@ -34,6 +36,8 @@ import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 
 import rosa.lucene.la.LatinStemFilter;
+import rosa.search.core.analyzer.OldFrenchAnalyzer;
+import rosa.search.core.analyzer.RosaLanguageAnalyzers;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
 import rosa.search.model.SearchField;
@@ -44,52 +48,23 @@ import rosa.search.model.SearchFieldType;
  * Lucene queries.
  */
 public abstract class BaseLuceneMapper implements LuceneMapper {
-    private final Analyzer english_analyzer;
-    private final Analyzer french_analyzer;
-    private final Analyzer old_french_analyzer;
-    private final Analyzer italian_analyzer;
-    private final Analyzer spanish_analyzer;
-    private final Analyzer greek_analyzer;
-    private final Analyzer latin_analyzer;
+    private final RosaLanguageAnalyzers languageAnalyzers;
     private final Analyzer imagename_analyzer;
     private final Analyzer string_analyzer;
     private final Analyzer main_analyzer;
-
-    // TODO No special handling for old french spelling or character name
-    // variants
-
-    // Lucene field name -> search field type
-    private final Map<String, SearchFieldType> lucene_field_map;
 
     // Search field name -> search field
     private final Map<String, SearchField> search_field_map;
     private final List<SearchField> included_search_fields;
     private final List<SearchField> context_search_fields;
 
-    public BaseLuceneMapper(SearchField... fields) {
-        this.english_analyzer = new EnglishAnalyzer();
-        this.french_analyzer = new FrenchAnalyzer();
-        this.old_french_analyzer = new OldFrenchAnalyzer();
-        this.greek_analyzer = new GreekAnalyzer();
-        this.italian_analyzer = new ItalianAnalyzer();
-        this.spanish_analyzer = new SpanishAnalyzer();
+    public BaseLuceneMapper(RosaLanguageAnalyzers languageAnalyzers, SearchField... fields) {
+        this.languageAnalyzers = languageAnalyzers;
+
         this.string_analyzer = new WhitespaceAnalyzer();
 
-        this.latin_analyzer = new Analyzer() {
-            @Override
-            protected TokenStreamComponents createComponents(String fieldName) {
-                Tokenizer source = new WhitespaceTokenizer();
-                LatinStemFilter result = new LatinStemFilter(source);
-              
-              return new TokenStreamComponents(source, result);
-            }
-        };
-
-        // Tokenizes on spaces and . while removing excess 0's
-        // TODO r/v?
-        this.imagename_analyzer = new Analyzer() {
+        this.imagename_analyzer = new Analyzer() { // TODO r/v
             Pattern pattern = Pattern.compile("\\s+|^0*|\\.0*");
-
             @Override
             protected TokenStreamComponents createComponents(String arg0) {
                 Tokenizer tokenizer = new PatternTokenizer(pattern, -1);
@@ -99,7 +74,6 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
             }
         };
 
-        this.lucene_field_map = new HashMap<>();
         this.search_field_map = new HashMap<>();
 
         Map<String, Analyzer> analyzer_map = new HashMap<>();
@@ -109,8 +83,6 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
 
             for (SearchFieldType type : sf.getFieldTypes()) {
                 String lucene_field = getLuceneField(sf, type);
-
-                lucene_field_map.put(lucene_field, type);
                 analyzer_map.put(lucene_field, get_analyzer(type));
             }
         }
@@ -131,8 +103,30 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         }
     }
 
+    public BaseLuceneMapper(SearchField... fields) {
+        this(
+                new RosaLanguageAnalyzers.Builder()
+                        .englishAnalyzer(new EnglishAnalyzer())
+                        .frenchAnalyzer(new FrenchAnalyzer())
+                        .oldFrenchAnalyzer(new OldFrenchAnalyzer())
+                        .greekAnalyzer(new GreekAnalyzer())
+                        .italianAnalyzer(new ItalianAnalyzer())
+                        .spanishAnalyzer(new SpanishAnalyzer())
+                        .latinAnalyzer(new Analyzer() {
+                            @Override
+                            protected TokenStreamComponents createComponents(String fieldName) {
+                                Tokenizer source = new WhitespaceTokenizer();
+                                LatinStemFilter result = new LatinStemFilter(source);
+
+                                return new TokenStreamComponents(source, result);
+                            }
+                        })
+                        .build(),
+                fields);
+    }
+
     protected void addNameVariant(String name_id, String... variants) {
-        ((OldFrenchAnalyzer) this.old_french_analyzer).addNameVariant(name_id, variants);
+        ((OldFrenchAnalyzer) languageAnalyzers.getAnalyzer(SearchFieldType.OLD_FRENCH)).addNameVariant(name_id, variants);
     }
 
     public String getLuceneField(SearchField sf, SearchFieldType type) {
@@ -141,26 +135,12 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
 
     private Analyzer get_analyzer(SearchFieldType type) {
         switch (type) {
-        case ENGLISH:
-            return english_analyzer;
-        case FRENCH:
-            return french_analyzer;
-        case IMAGE_NAME:
-            return imagename_analyzer;
-        case OLD_FRENCH:
-            return old_french_analyzer;
-        case STRING:
-            return string_analyzer;
-        case SPANISH:
-            return spanish_analyzer;
-        case ITALIAN:
-            return italian_analyzer;
-        case GREEK:
-            return greek_analyzer;
-        case LATIN:
-            return latin_analyzer;
-        default:
-            return null;
+            case IMAGE_NAME:
+                return imagename_analyzer;
+            case STRING:
+                return string_analyzer;
+            default:    // DEFAULT: check language analyzers
+                return languageAnalyzers.getAnalyzer(type);
         }
     }
 
@@ -200,6 +180,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         try {
             return createLuceneQuery(QueryParser.parseQuery(query));
         } catch (ParseException e) {
+            Logger.getLogger(getClass().toString()).log(Level.SEVERE, "Failed to create query. [" + query + "]");
         }
 
         BooleanQuery result = new BooleanQuery();
@@ -277,20 +258,21 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     protected SearchFieldType getSearchFieldTypeForLang(String lc) {
         lc = lc.toLowerCase();
 
-        if (lc.equals("en")) {
-            return SearchFieldType.ENGLISH;
-        } else if (lc.equals("fr")) {
-            return SearchFieldType.FRENCH;
-        } else if (lc.equals("el")) {
-            return SearchFieldType.GREEK;
-        } else if (lc.equals("it")) {
-            return SearchFieldType.ITALIAN;
-        } else if (lc.equals("la")) {
-            return SearchFieldType.LATIN;
-        } else if (lc.equals("es")) {
-            return SearchFieldType.SPANISH;
-        } else {
-            return null;
+        switch (lc) {
+            case "en":
+                return SearchFieldType.ENGLISH;
+            case "fr":
+                return SearchFieldType.FRENCH;
+            case "el":
+                return SearchFieldType.GREEK;
+            case "it":
+                return SearchFieldType.ITALIAN;
+            case "la":
+                return SearchFieldType.LATIN;
+            case "es":
+                return SearchFieldType.SPANISH;
+            default:
+                return null;
         }
     }
 

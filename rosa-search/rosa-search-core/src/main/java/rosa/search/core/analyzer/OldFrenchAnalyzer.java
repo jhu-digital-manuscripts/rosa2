@@ -1,4 +1,4 @@
-package rosa.search.core;
+package rosa.search.core.analyzer;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
@@ -31,6 +31,7 @@ import org.apache.lucene.analysis.util.ElisionFilter;
 import org.apache.lucene.analysis.util.StopwordAnalyzerBase;
 import org.apache.lucene.analysis.util.WordlistLoader;
 import org.apache.lucene.util.IOUtils;
+import rosa.search.core.SpellingVariationTokenFilter;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -51,7 +52,7 @@ import java.util.Set;
  *
  * {@link org.apache.lucene.analysis.fr.FrenchAnalyzer}
  */
-class OldFrenchAnalyzer extends StopwordAnalyzerBase {
+public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
 
     /** File containing default French stopwords. */
     private final static String DEFAULT_STOPWORD_FILE = "french_stop.txt";
@@ -103,7 +104,7 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
     /**
      * Builds an analyzer with the default stop words ({@link #getDefaultStopSet}).
      */
-    OldFrenchAnalyzer() {
+    public OldFrenchAnalyzer() {
         this(OldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET);
     }
 
@@ -173,7 +174,7 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param normalized key word
      * @param variants variants that will be normalized out
      */
-    void addNameVariant(String normalized, String... variants) {
+    public void addNameVariant(String normalized, String... variants) {
         if (variants == null || variants.length == 0) {
             return;
         }
