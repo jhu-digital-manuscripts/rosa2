@@ -6,8 +6,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 import org.apache.lucene.analysis.Analyzer;
@@ -180,7 +178,6 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         try {
             return createLuceneQuery(QueryParser.parseQuery(query));
         } catch (ParseException e) {
-            Logger.getLogger(getClass().toString()).log(Level.SEVERE, "Failed to create query. [" + query + "]");
         }
 
         BooleanQuery result = new BooleanQuery();

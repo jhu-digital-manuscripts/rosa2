@@ -129,7 +129,6 @@ public class BaseLuceneMapperTest {
         );
 
         String lucene_query = result.toString();
-        System.out.println(lucene_query);
 
         assertNotNull(result);
 
