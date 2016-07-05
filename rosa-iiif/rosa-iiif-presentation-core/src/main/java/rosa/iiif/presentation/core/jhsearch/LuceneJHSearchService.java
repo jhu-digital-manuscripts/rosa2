@@ -120,6 +120,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             JHSearchField.PLACE,
             JHSearchField.METHOD,
             JHSearchField.LANGUAGE,
+            JHSearchField.MARGINALIA_LANGUAGE
     };
     
     @Override

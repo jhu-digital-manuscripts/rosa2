@@ -3,17 +3,17 @@ package rosa.iiif.presentation.core.jhsearch;
 // TODO Load from properties file?
 
 interface JHSearchFieldProperties {
-    static final String MARGINALIA_LABEL = "Marginalia";
-    static final String MARGINALIA_DESCRIPTION = "Notes written by a reader";
-    static final String UNDERLINE_LABEL = "Underline";
-    static final String UNDERLINE_DESCRIPTION = "Words or phrases in the printed text that have been underlined.";
-    static final String EMPHASIS_LABEL = "Emphasis";
-    static final String EMPHASIS_DESCRIPTION = "Words or phrases within the readers marginal notes that have been underlined or otherwise emphasized.";
-    static final String ERRATA_LABEL = "Errata";
-    static final String ERRATA_DESCRIPTION = "Corrections made by a reader to the printed text.";
-    static final String MARK_LABEL = "Mark";
-    static final String MARK_DESCRIPTION = "Pen marks made on a page that may not have consistent abstract meaning. Those marks not covered by 'Symbol'";
-    static final String[] MARK_VALUES = {
+    String MARGINALIA_LABEL = "Marginalia";
+    String MARGINALIA_DESCRIPTION = "Notes written by a reader";
+    String UNDERLINE_LABEL = "Underline";
+    String UNDERLINE_DESCRIPTION = "Words or phrases in the printed text that have been underlined.";
+    String EMPHASIS_LABEL = "Emphasis";
+    String EMPHASIS_DESCRIPTION = "Words or phrases within the readers marginal notes that have been underlined or otherwise emphasized.";
+    String ERRATA_LABEL = "Errata";
+    String ERRATA_DESCRIPTION = "Corrections made by a reader to the printed text.";
+    String MARK_LABEL = "Mark";
+    String MARK_DESCRIPTION = "Pen marks made on a page that may not have consistent abstract meaning. Those marks not covered by 'Symbol'";
+    String[] MARK_VALUES = {
             "apostrophe", "Apostrophe",
              "box", "Box",
              "bracket", "Bracket",
@@ -43,9 +43,9 @@ interface JHSearchFieldProperties {
              "vertical_bar", "Vertical Bar",
              "sign", "Sign"
     };
-    static final String SYMBOL_LABEL = "Symbol";
-    static final String SYMBOL_DESCRIPTION = "Simple drawings that carry some abstract and consistent meaning.";
-    static final String[] SYMBOL_VALUES = {
+    String SYMBOL_LABEL = "Symbol";
+    String SYMBOL_DESCRIPTION = "Simple drawings that carry some abstract and consistent meaning.";
+    String[] SYMBOL_VALUES = {
              "Asterisk", "Asterisk",
              "Bisectedcircle", "Bisectedcircle",
              "Crown", "Crown",
@@ -62,21 +62,21 @@ interface JHSearchFieldProperties {
              "Sun", "Sun",
              "Venus", "Venus"
     };
-    static final String NUMERAL_LABEL = "Numeral";
-    static final String NUMERAL_DESCRIPTION = "Numbers written in the book.";
-    static final String DRAWING_LABEL = "Drawing";
-    static final String DRAWING_DESCRIPTION = "Drawings or diagrams.";
-    static final String CROSS_REFERENCE_LABEL = "Cross Reference";
-    static final String CROSS_REFERENCE_DESCRIPTION = "";
-    static final String TRANSCRIPTION_LABEL = "Transcription";
-    static final String TRANSCRIPTION_DESCRIPTION = "";
-    static final String ILLUSTRATION_LABEL = "Transcription";
-    static final String ILLUSTRATION_DESCRIPTION = "Description of illustrations";
-    static final String DESCRIPTION_LABEL = "Description";
-    static final String DESCRIPTION_DESCRIPTION = "";
-    static final String LANGUAGE_LABEL ="Language";
-    static final String LANGUAGE_DESCRIPTION = "";
-    static final String[] LANGUAGE_VALUES = { 
+    String NUMERAL_LABEL = "Numeral";
+    String NUMERAL_DESCRIPTION = "Numbers written in the book.";
+    String DRAWING_LABEL = "Drawing";
+    String DRAWING_DESCRIPTION = "Drawings or diagrams.";
+    String CROSS_REFERENCE_LABEL = "Cross Reference";
+    String CROSS_REFERENCE_DESCRIPTION = "";
+    String TRANSCRIPTION_LABEL = "Transcription";
+    String TRANSCRIPTION_DESCRIPTION = "";
+    String ILLUSTRATION_LABEL = "Transcription";
+    String ILLUSTRATION_DESCRIPTION = "Description of illustrations";
+    String DESCRIPTION_LABEL = "Description";
+    String DESCRIPTION_DESCRIPTION = "";
+    String LANGUAGE_LABEL ="Language";
+    String LANGUAGE_DESCRIPTION = "";
+    String[] LANGUAGE_VALUES = { 
     			"en", "English", 
     			"es", "Spanish", 
     			"it", "Italian", 
@@ -84,15 +84,17 @@ interface JHSearchFieldProperties {
     			"la", "Latin", 
     			"fr", "French"
     };
-    static final String BOOK_LABEL = "Book";
-    static final String BOOK_DESCRIPTION = "Books mentioned in marginalia.";
-    static final String PEOPLE_LABEL = "People";
-    static final String PEOPLE_DESCRIPTION = "People mentioned in marginalia.";
-    static final String PLACE_LABEL = "Place";
-    static final String PLACE_DESCRIPTION = "Places mentioned in marginalia.";    
-    static final String METHOD_LABEL = "Method";
-    static final String METHOD_DESCRIPTION = "Implement used to create mark or underline.";
-    static final String[] METHOD_VALUES = { 
+    String MARG_LANGUAGE_LABEL = "Marginalia language";
+    String MARG_LANGUAGE_DESCRIPTION = "Marginalia text in a single language.";
+    String BOOK_LABEL = "Book";
+    String BOOK_DESCRIPTION = "Books mentioned in marginalia.";
+    String PEOPLE_LABEL = "People";
+    String PEOPLE_DESCRIPTION = "People mentioned in marginalia.";
+    String PLACE_LABEL = "Place";
+    String PLACE_DESCRIPTION = "Places mentioned in marginalia.";    
+    String METHOD_LABEL = "Method";
+    String METHOD_DESCRIPTION = "Implement used to create mark or underline.";
+    String[] METHOD_VALUES = { 
     		"pen", "Pen", "chalk", "Chalk"
     };
 }

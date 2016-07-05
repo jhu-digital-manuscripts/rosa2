@@ -8,6 +8,7 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyListOf;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Matchers.eq;
+import static org.mockito.Matchers.matches;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -29,6 +30,7 @@ import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
+import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
 
 public class LuceneJHSearchServiceTest extends BaseSearchTest {
@@ -132,6 +134,15 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
 
         assertNotNull("Search result was NULL.", result);
         assertEquals("Unexpected number of results found.", 74, result.getTotal());
+    }
+
+    @Test
+    public void test() throws Exception {
+        Query query = new Query(JHSearchField.MARGINALIA_LANGUAGE, "it");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search results was NULL.", result);
+        assertEquals("Unexpected number of results found.", 56, result.getTotal());
     }
     
     @Test

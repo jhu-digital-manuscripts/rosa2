@@ -28,6 +28,7 @@ public enum JHSearchField implements SearchField, JHSearchFieldProperties {
     ILLUSTRATION(true, false, true, ILLUSTRATION_LABEL, ILLUSTRATION_DESCRIPTION, SearchFieldType.ENGLISH),
     DESCRIPTION(true, false, true, DESCRIPTION_LABEL, DESCRIPTION_DESCRIPTION, SearchFieldType.ENGLISH),
     LANGUAGE(false, false, true, LANGUAGE_LABEL, LANGUAGE_DESCRIPTION, LANGUAGE_VALUES, SearchFieldType.STRING),
+    MARGINALIA_LANGUAGE(false, false, true, MARG_LANGUAGE_LABEL, MARG_LANGUAGE_DESCRIPTION, LANGUAGE_VALUES, SearchFieldType.STRING),
     BOOK(true, false,true, BOOK_LABEL, BOOK_DESCRIPTION, SearchFieldType.ENGLISH),
     PEOPLE(true, false, true, PEOPLE_LABEL, PEOPLE_DESCRIPTION, SearchFieldType.ENGLISH),
     PLACE(true, false, true, PLACE_LABEL, PLACE_DESCRIPTION, SearchFieldType.ENGLISH),

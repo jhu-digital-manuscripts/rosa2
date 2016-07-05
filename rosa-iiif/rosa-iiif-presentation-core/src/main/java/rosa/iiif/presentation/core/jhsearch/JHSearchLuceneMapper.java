@@ -316,8 +316,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
      *            this image
      * @param page
      *            transcriptions of AoR annotations on this page
-     * @param result
-     *            resulting list of indexed documents
      */
     private void index(BookCollection col, Book book, BookImage image, Document doc, AnnotatedPage page) {
         page.getSymbols().forEach(a -> index(col, book, image, a, doc));
@@ -328,9 +326,10 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         page.getMarginalia().forEach(a -> index(col, book, image, a, doc));
         page.getUnderlines().forEach(a -> index(col, book, image, a, doc));
         
-        // Index languages used
+        // Index languages used and breaking out marginalia specifically
         
         Set<String> langs = new HashSet<>();
+        Set<String> marg_langs = new HashSet<>();
         
         page.getAnnotations().forEach(a -> {
         	String lang = a.getLanguage();
@@ -347,14 +346,14 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
                 	
                 	if (lang != null) {
                 		langs.add(lang.toLowerCase());
+                        marg_langs.add(lang.toLowerCase());
                 	}
         		}
         	}
         });
-        
-        langs.forEach(lc -> {
-        	addField(doc, JHSearchField.LANGUAGE, lc);	
-        });
+
+        langs.forEach(lc -> addField(doc, JHSearchField.LANGUAGE, lc));     // Index languages with all annotations
+        marg_langs.forEach(lc -> addField(doc, JHSearchField.MARGINALIA_LANGUAGE, lc));      // Index languages within marginalia only
         
         // Index method used
         
@@ -375,10 +374,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         		methods.add(method.toLowerCase());
         	}
         });
-        
-        methods.forEach(method -> {
-        	addField(doc, JHSearchField.METHOD, method);	
-        });        
+
+        methods.forEach(method -> addField(doc, JHSearchField.METHOD, method));
     }
     
     // Create document to index a canvas
