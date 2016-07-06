@@ -135,7 +135,6 @@ public class HandlingTranscriberMarksTest {
 
     @Test
     public void testEnglishSpelling() {
-
         checkSpellings(
                 "bessie, bessje, and bessye are the same cow.",
                 SearchFields.EN_TEXT,
@@ -143,13 +142,12 @@ public class HandlingTranscriberMarksTest {
                 null,
                 false
         );
-        System.out.println("########################################");
         checkSpellings(
                 "bessie, be[ss]je, and [bess]ye are the same cow.",
                 SearchFields.EN_TEXT,
                 new String[] {"bessi", "bessy", "bessj"},
                 null,
-                true
+                false
         );
     }
 

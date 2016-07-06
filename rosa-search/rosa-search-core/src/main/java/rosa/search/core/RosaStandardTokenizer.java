@@ -142,29 +142,13 @@ public class RosaStandardTokenizer extends Tokenizer {
                 offsetAtt.setOffset(correctOffset(start), correctOffset(start+termAtt.length()));
                 typeAtt.setType(StandardTokenizer.TOKEN_TYPES[tokenType]);
 
-                System.out.print(
-                        "(" + (skippedPositions+1) + ", " + correctOffset(scanner.yychar()) + ", " + correctOffset(scanner.yychar() + termAtt.length()) +
-                        ") :: TYPE = " + StandardTokenizer.TOKEN_TYPES[tokenType] +
-                        " :: "
-                );
-                for (int i = 0; i < termAtt.length(); i++) {
-                    System.out.print(termAtt.charAt(i));
-                }
-                System.out.println(" :: YYLENGTH = " + scanner.yylength() +
-                        " :: '" + scanner.yycharat(start) + ":" + scanner.yycharat(scanner.yylength()) + "' :: " +
-                        Arrays.toString(termAtt.buffer())
-                );
-
                 char delimiter = scanner.yycharat(scanner.yylength());
                 if (delimiter == '[' || delimiter == ']') {
                     inWordWithMark = true;
                     sb.append(termAtt.buffer(), 0, termAtt.length());
-                    System.out.println(sb.toString());
                     continue;
                 } else if (inWordWithMark) {
-                    inWordWithMark = false;
                     sb.append(termAtt.buffer(), 0, termAtt.length());
-                    System.out.println(sb.toString());
                 }
                 if (sb.length() > 0) {
                     termAtt.setEmpty().append(sb);
