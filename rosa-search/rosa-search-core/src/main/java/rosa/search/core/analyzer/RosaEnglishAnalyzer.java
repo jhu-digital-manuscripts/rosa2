@@ -34,7 +34,7 @@ import org.apache.lucene.analysis.util.CharArraySet;
 import org.apache.lucene.analysis.util.StopwordAnalyzerBase;
 
 /**
- * {@link Analyzer} for English.
+ * {@link Analyzer} for English. Copy of Lucene class, with the class made non-final.
  */
 public class RosaEnglishAnalyzer extends StopwordAnalyzerBase {
     private final CharArraySet stemExclusionSet;

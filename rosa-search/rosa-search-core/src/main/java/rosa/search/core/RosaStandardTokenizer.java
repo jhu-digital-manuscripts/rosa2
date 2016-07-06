@@ -11,8 +11,20 @@ import org.apache.lucene.analysis.tokenattributes.TypeAttribute;
 import org.apache.lucene.util.AttributeFactory;
 
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
+/**
+ * Copy of Lucene {@link StandardTokenizer} that is able to ignore a set of
+ * characters. These ignored characters are no longer considered to be token
+ * delimiters.
+ *
+ * This class uses the same {@link StandardTokenizerImpl} to tokenize the data.
+ * After the data string has been tokenized, this class inspects each token to
+ * see if the character that is ONE place after the token (end delimiter) is
+ * supposed to be ignored. If so, then the current token and next token are
+ * concatenated, made into a single token.
+ */
 public class RosaStandardTokenizer extends Tokenizer {
     /** A private instance of the JFlex-constructed scanner */
     private StandardTokenizerImpl scanner;
@@ -84,26 +96,35 @@ public class RosaStandardTokenizer extends Tokenizer {
         return maxTokenLength;
     }
 
+    private Set<Character> toIgnore;
+
     /**
      * Creates a new instance of the {@link org.apache.lucene.analysis.standard.StandardTokenizer}.  Attaches
      * the <code>input</code> to the newly created JFlex scanner.
 
      * See http://issues.apache.org/jira/browse/LUCENE-1068
      */
-    public RosaStandardTokenizer() {
-        init();
+    public RosaStandardTokenizer(char... toIgnore) {
+        init(toIgnore);
     }
 
     /**
      * Creates a new StandardTokenizer with a given {@link org.apache.lucene.util.AttributeFactory}
      */
-    public RosaStandardTokenizer(AttributeFactory factory) {
+    public RosaStandardTokenizer(AttributeFactory factory, char... toIgnore) {
         super(factory);
-        init();
+        init(toIgnore);
     }
 
-    private void init() {
+    private void init(char... toRemove) {
         this.scanner = new StandardTokenizerImpl(input);
+
+        this.toIgnore = new HashSet<>();
+        if (toRemove != null) {
+            for (char c : toRemove) {
+                this.toIgnore.add(c);
+            }
+        }
     }
 
     // this tokenizer generates three attributes:
@@ -116,11 +137,6 @@ public class RosaStandardTokenizer extends Tokenizer {
 
     StringBuilder sb = new StringBuilder();
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see org.apache.lucene.analysis.TokenStream#next()
-     */
     @Override
     public final boolean incrementToken() throws IOException {
         clearAttributes();
@@ -143,7 +159,9 @@ public class RosaStandardTokenizer extends Tokenizer {
                 typeAtt.setType(StandardTokenizer.TOKEN_TYPES[tokenType]);
 
                 char delimiter = scanner.yycharat(scanner.yylength());
-                if (delimiter == '[' || delimiter == ']') {
+                // If character one place past this token (token end delimiter) is supposed to
+                // be ignored, join this token with the next token
+                if (toIgnore.contains(delimiter)) {
                     inWordWithMark = true;
                     sb.append(termAtt.buffer(), 0, termAtt.length());
                     continue;

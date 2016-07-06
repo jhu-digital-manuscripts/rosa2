@@ -5,7 +5,6 @@ import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -24,37 +23,36 @@ public class CharacterRemoverTokenFilter extends TokenFilter {
      * @param input
      */
     public CharacterRemoverTokenFilter(TokenStream input) {
-        this(input, new Character[0]);
+        this(input, new char[0]);
     }
 
-    public CharacterRemoverTokenFilter(TokenStream input, Character ... toRemove) {
+    public CharacterRemoverTokenFilter(TokenStream input, char... toRemove) {
         super(input);
 
+        charsToRemove = new HashSet<>();
         if (toRemove != null) {
-            charsToRemove = new HashSet<>(Arrays.asList(toRemove));
-        } else {
-            charsToRemove = new HashSet<>();
+            for (char c : toRemove) {
+                charsToRemove.add(c);
+            }
         }
     }
 
     @Override
     public final boolean incrementToken() throws IOException {
         if (input.incrementToken()) {
-            char[] buffer = termAtt.buffer();
-            charsToRemove.stream().forEach(character -> doRemove(character, buffer));
+            doRemove(termAtt.buffer(), 0, termAtt.length());
             return true;
         } else {
             return false;
         }
     }
 
-    private void doRemove(char toRemove, char[] currentBuffer) {
-        int len = termAtt.length();
+    private void doRemove(char[] currentBuffer, int offset, int length) {
         int count = 0;
-        char[] newBuffer = new char[len];
+        char[] newBuffer = new char[length];
 
-        for (int i = 0; i < len; i++) {
-            if (currentBuffer[i] == toRemove) {
+        for (int i = offset; i < length; i++) {
+            if (charsToRemove.contains(currentBuffer[i])) {
                 // Skip element if char is found.
                 count++;
                 i++;
@@ -63,7 +61,7 @@ public class CharacterRemoverTokenFilter extends TokenFilter {
             newBuffer[i - count] = currentBuffer[i];
         }
 
-        termAtt.copyBuffer(newBuffer, 0, len - count);
-        termAtt.resizeBuffer(len - count);
+        termAtt.copyBuffer(newBuffer, 0, length - count);
+        termAtt.resizeBuffer(length - count);
     }
 }

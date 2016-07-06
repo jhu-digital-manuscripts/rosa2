@@ -3,27 +3,23 @@ package rosa.search.core.analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.standard.StandardFilter;
-import org.apache.lucene.analysis.util.CharTokenizer;
 import rosa.search.core.CharacterRemoverTokenFilter;
 import rosa.search.core.RosaStandardTokenizer;
 
+/**
+ * Extension of {@link RosaEnglishAnalyzer} that is able to ignore a set of characters
+ * during indexing. Indexed data is
+ */
 public class RosaMarkedEnglishAnalyzer extends RosaEnglishAnalyzer {
-    private final Character[] charsToRemove;
+    private final char[] toRemove;
 
     public RosaMarkedEnglishAnalyzer(char ... toRemove) {
-        if (toRemove != null) {
-            charsToRemove = new Character[toRemove.length];
-            for (int i = 0; i < toRemove.length; i++) {
-                charsToRemove[i] = toRemove[i];
-            }
-        } else {
-            charsToRemove = null;
-        }
+        this.toRemove = toRemove != null ? toRemove : new char[0];
     }
 
     @Override
     protected TokenStreamComponents createComponents(String fieldName) {
-        Tokenizer source = new RosaStandardTokenizer();
+        Tokenizer source = new RosaStandardTokenizer(toRemove);
         final TokenStream result = buildResultTokenStream(new StandardFilter(source));
 
         return new TokenStreamComponents(source, result);
@@ -32,19 +28,11 @@ public class RosaMarkedEnglishAnalyzer extends RosaEnglishAnalyzer {
     @Override
     protected TokenStream buildResultTokenStream(TokenStream result) {
         // Can chain more token filters here
-        if (charsToRemove != null && charsToRemove.length > 0) {
-            result = new CharacterRemoverTokenFilter(result, charsToRemove);
+        if (toRemove.length > 0) {
+            result = new CharacterRemoverTokenFilter(result, toRemove);
         }
         result = super.buildResultTokenStream(result);
         return result;
-    }
-
-    public static class TranscriberMarkTokenizer extends CharTokenizer {
-
-        @Override
-        protected boolean isTokenChar(int c) {
-            return c != '[' && c != ']';
-        }
     }
 
 }
