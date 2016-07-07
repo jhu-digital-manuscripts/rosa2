@@ -5,9 +5,14 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
-import rosa.search.core.analyzer.OldFrenchAnalyzer;
+import rosa.search.core.analyzer.MarkedOldFrenchAnalyzer;
 import rosa.search.core.analyzer.RosaLanguageAnalyzers;
 import rosa.search.core.analyzer.RosaMarkedEnglishAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedFrenchAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedGreekAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedItalianAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedLatinAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedSpanishAnalyzer;
 import rosa.search.model.Query;
 import rosa.search.model.SearchField;
 import rosa.search.model.SearchFieldType;
@@ -21,14 +26,15 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 public class HandlingTranscriberMarksTest {
+    private static final char[] EXCLUDE_LIST = { '[', ']', 'w' };
     private BaseLuceneMapper mapper;
 
     private enum SearchFields implements SearchField {
         ID(false, false, SearchFieldType.STRING),
-//        BOOK(false, true, SearchFieldType.STRING),
         TEXT(true, true, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.LATIN),
         EN_TEXT(true, true, SearchFieldType.ENGLISH),
-        FR_TEXT(true, true, SearchFieldType.OLD_FRENCH),
+        FR_TEXT(true, true, SearchFieldType.FRENCH),
+        FR_OL_TEXT(true, true, SearchFieldType.OLD_FRENCH),
         REMOVAL(true, true, SearchFieldType.ENGLISH);
 
         private final SearchFieldType[] types;
@@ -65,8 +71,13 @@ public class HandlingTranscriberMarksTest {
     @Before
     public void setup() {
         final RosaLanguageAnalyzers languageAnalyzers = new RosaLanguageAnalyzers.Builder()
-                .englishAnalyzer(new RosaMarkedEnglishAnalyzer('[', ']', 'w'))
-                .oldFrenchAnalyzer(new OldFrenchAnalyzer())
+                .englishAnalyzer(new RosaMarkedEnglishAnalyzer(EXCLUDE_LIST))
+                .frenchAnalyzer(new RosaMarkedFrenchAnalyzer(EXCLUDE_LIST))
+                .oldFrenchAnalyzer(new MarkedOldFrenchAnalyzer(EXCLUDE_LIST))
+                .greekAnalyzer(new RosaMarkedGreekAnalyzer(EXCLUDE_LIST))
+                .italianAnalyzer(new RosaMarkedItalianAnalyzer(EXCLUDE_LIST))
+                .spanishAnalyzer(new RosaMarkedSpanishAnalyzer(EXCLUDE_LIST))
+                .latinAnalyzer(new RosaMarkedLatinAnalyzer(EXCLUDE_LIST))
                 .build();
 
         mapper = new BaseLuceneMapper(languageAnalyzers, SearchFields.values()) {
@@ -102,7 +113,7 @@ public class HandlingTranscriberMarksTest {
         String lucene_query = result.toString();
 
         assertTrue(lucene_query.contains("TEXT.ENGLISH:\"good co\""));
-        assertTrue(lucene_query.contains("TEXT.FRENCH:\"good cow\""));
+        assertTrue(lucene_query.contains("TEXT.FRENCH:\"good co\""));
     }
 
     @Test
@@ -114,22 +125,25 @@ public class HandlingTranscriberMarksTest {
         String lucene_query = result.toString();
 
         assertTrue(lucene_query.contains("TEXT.ENGLISH:\"good co\""));
-        assertTrue(lucene_query.contains("TEXT.FRENCH:\"good cow\""));
+        assertTrue(lucene_query.contains("TEXT.FRENCH:\"good co\""));
     }
 
     @Test
     public void testOldFrenchSpelling() {
-        org.apache.lucene.search.Query result = mapper.createLuceneQuery(
-                new Query(SearchFields.FR_TEXT, "bessie, bessje, and bessye are the same cow.")
+        checkSpellings(
+                "bessie, bessje, and bessye are the same cow.",
+                SearchFields.FR_OL_TEXT,
+                new String[] {"OLD_FRENCH:besi"},
+                new String[] {"OLD_FRENCH:besy", "OLD_FRENCH:besj"},
+                false
         );
-
-        String lucene_query = result.toString();
-
-        assertNotNull(result);
-
-        assertTrue(lucene_query.contains("besi"));
-        assertFalse(lucene_query.contains("besy"));
-        assertFalse(lucene_query.contains("besj"));
+        checkSpellings(
+                "bessie, be[ss]je, and [bess]ye are the same cow.",
+                SearchFields.FR_OL_TEXT,
+                new String[] {"OLD_FRENCH:besi"},
+                new String[] {"OLD_FRENCH:besy", "OLD_FRENCH:besj", "cow"},
+                false
+        );
     }
 
     @Test
@@ -146,7 +160,26 @@ public class HandlingTranscriberMarksTest {
                 SearchFields.EN_TEXT,
                 new String[] {"bessi", "bessy", "bessj"},
                 null,
-                true
+                false
+        );
+    }
+
+    @Test
+    public void testFrenchSpelling() {
+        checkSpellings(
+                "bessie, bessje, and bessye are the same cow.",
+                SearchFields.FR_TEXT,
+                new String[] {"FR_TEXT.FRENCH:bes", "FR_TEXT.FRENCH:besj", "FR_TEXT.FRENCH:besy"},
+                null,
+                false
+        );
+
+        checkSpellings(
+                "bessie, be[ss]je, and [bess]ye are the same cow.",
+                SearchFields.FR_TEXT,
+                new String[] {"FR_TEXT.FRENCH:bes", "FR_TEXT.FRENCH:besj", "FR_TEXT.FRENCH:besy"},
+                null,
+                false
         );
     }
 

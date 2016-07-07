@@ -6,15 +6,10 @@ import org.apache.lucene.analysis.standard.StandardFilter;
 import rosa.search.core.CharacterRemoverTokenFilter;
 import rosa.search.core.RosaStandardTokenizer;
 
-/**
- * Extension of {@link RosaEnglishAnalyzer} that is able to ignore a set of characters
- * during indexing. If a character is normally a word boundary delimiter and is specified
- * here as an ignored character, tokens will no longer be split on them.
- */
-public class RosaMarkedEnglishAnalyzer extends RosaEnglishAnalyzer {
+public class MarkedOldFrenchAnalyzer extends OldFrenchAnalyzer {
     private final char[] toRemove;
 
-    public RosaMarkedEnglishAnalyzer(char ... toRemove) {
+    public MarkedOldFrenchAnalyzer(char... toRemove) {
         this.toRemove = toRemove != null ? toRemove : new char[0];
     }
 
@@ -26,9 +21,7 @@ public class RosaMarkedEnglishAnalyzer extends RosaEnglishAnalyzer {
         return new TokenStreamComponents(source, result);
     }
 
-    @Override
     protected TokenStream buildResultTokenStream(TokenStream result) {
-        // Can chain more token filters here
         if (toRemove.length > 0) {
             result = new CharacterRemoverTokenFilter(result, toRemove);
         }

@@ -13,7 +13,6 @@ import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.core.LowerCaseFilter;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
-import org.apache.lucene.analysis.core.WhitespaceTokenizer;
 import org.apache.lucene.analysis.el.GreekAnalyzer;
 import org.apache.lucene.analysis.es.SpanishAnalyzer;
 import org.apache.lucene.analysis.fr.FrenchAnalyzer;
@@ -32,10 +31,10 @@ import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 
-import rosa.lucene.la.LatinStemFilter;
 import rosa.search.core.analyzer.OldFrenchAnalyzer;
 import rosa.search.core.analyzer.RosaEnglishAnalyzer;
 import rosa.search.core.analyzer.RosaLanguageAnalyzers;
+import rosa.search.core.analyzer.RosaLatinAnalyzer;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
 import rosa.search.model.SearchField;
@@ -110,15 +109,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
                         .greekAnalyzer(new GreekAnalyzer())
                         .italianAnalyzer(new ItalianAnalyzer())
                         .spanishAnalyzer(new SpanishAnalyzer())
-                        .latinAnalyzer(new Analyzer() {
-                            @Override
-                            protected TokenStreamComponents createComponents(String fieldName) {
-                                Tokenizer source = new WhitespaceTokenizer();
-                                LatinStemFilter result = new LatinStemFilter(source);
-
-                                return new TokenStreamComponents(source, result);
-                            }
-                        })
+                        .latinAnalyzer(new RosaLatinAnalyzer())
                         .build(),
                 fields);
     }

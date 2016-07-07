@@ -202,7 +202,12 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
     @Override
     protected TokenStreamComponents createComponents(String fieldName) {
         final Tokenizer source = new StandardTokenizer();
-        TokenStream result = new StandardFilter(source);
+        TokenStream result = buildResultTokenStream(new StandardFilter(source));
+
+        return new TokenStreamComponents(source, result);
+    }
+
+    protected TokenStream buildResultTokenStream(TokenStream result) {
         if (!nameVariantsTable.isEmpty())
             result = new SpellingVariationTokenFilter(result, nameVariantsTable);
         result = new ElisionFilter(result, DEFAULT_ARTICLES);
@@ -213,7 +218,7 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
         result = new FrenchLightStemFilter(result);
         if (!spellingEquivalenceTable.isEmpty())
             result = new SpellingVariationTokenFilter(result, spellingEquivalenceTable);
-        return new TokenStreamComponents(source, result);
+        return result;
     }
 
 }
