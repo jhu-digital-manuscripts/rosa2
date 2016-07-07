@@ -13,10 +13,6 @@ import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.core.LowerCaseFilter;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
-import org.apache.lucene.analysis.el.GreekAnalyzer;
-import org.apache.lucene.analysis.es.SpanishAnalyzer;
-import org.apache.lucene.analysis.fr.FrenchAnalyzer;
-import org.apache.lucene.analysis.it.ItalianAnalyzer;
 import org.apache.lucene.analysis.miscellaneous.PerFieldAnalyzerWrapper;
 import org.apache.lucene.analysis.pattern.PatternTokenizer;
 import org.apache.lucene.document.Document;
@@ -31,10 +27,14 @@ import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 
+import rosa.search.core.analyzer.RosaFrenchAnalyzer;
+import rosa.search.core.analyzer.RosaGreekAnalyzer;
+import rosa.search.core.analyzer.RosaItalianAnalyzer;
 import rosa.search.core.analyzer.RosaOldFrenchAnalyzer;
 import rosa.search.core.analyzer.RosaEnglishAnalyzer;
 import rosa.search.core.analyzer.RosaLanguageAnalyzers;
 import rosa.search.core.analyzer.RosaLatinAnalyzer;
+import rosa.search.core.analyzer.RosaSpanishAnalyzer;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
 import rosa.search.model.SearchField;
@@ -104,11 +104,11 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         this(
                 new RosaLanguageAnalyzers.Builder()
                         .englishAnalyzer(new RosaEnglishAnalyzer())
-                        .frenchAnalyzer(new FrenchAnalyzer())
+                        .frenchAnalyzer(new RosaFrenchAnalyzer())
                         .oldFrenchAnalyzer(new RosaOldFrenchAnalyzer())
-                        .greekAnalyzer(new GreekAnalyzer())
-                        .italianAnalyzer(new ItalianAnalyzer())
-                        .spanishAnalyzer(new SpanishAnalyzer())
+                        .greekAnalyzer(new RosaGreekAnalyzer())
+                        .italianAnalyzer(new RosaItalianAnalyzer())
+                        .spanishAnalyzer(new RosaSpanishAnalyzer())
                         .latinAnalyzer(new RosaLatinAnalyzer())
                         .build(),
                 fields);

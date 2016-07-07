@@ -45,6 +45,14 @@ import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.search.core.BaseLuceneMapper;
+import rosa.search.core.analyzer.RosaLanguageAnalyzers;
+import rosa.search.core.analyzer.RosaMarkedEnglishAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedFrenchAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedGreekAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedItalianAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedLatinAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedOldFrenchAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedSpanishAnalyzer;
 import rosa.search.model.SearchField;
 import rosa.search.model.SearchFieldType;
 
@@ -56,12 +64,22 @@ import rosa.search.model.SearchFieldType;
  * Annotations.
  */
 public class JHSearchLuceneMapper extends BaseLuceneMapper {
+    private static final char[] EXCLUSION_LIST = {'[', ']'};
     private static final Logger logger = Logger.getLogger(JHSearchLuceneMapper.class.toString());
 
     private final IIIFPresentationRequestFormatter formatter;
 
     public JHSearchLuceneMapper(IIIFPresentationRequestFormatter formatter) {
-        super(JHSearchField.values());
+        super(new RosaLanguageAnalyzers.Builder()
+                .englishAnalyzer(new RosaMarkedEnglishAnalyzer(EXCLUSION_LIST))
+                .frenchAnalyzer(new RosaMarkedFrenchAnalyzer(EXCLUSION_LIST))
+                .oldFrenchAnalyzer(new RosaMarkedOldFrenchAnalyzer(EXCLUSION_LIST))
+                .greekAnalyzer(new RosaMarkedGreekAnalyzer(EXCLUSION_LIST))
+                .italianAnalyzer(new RosaMarkedItalianAnalyzer(EXCLUSION_LIST))
+                .spanishAnalyzer(new RosaMarkedSpanishAnalyzer(EXCLUSION_LIST))
+                .latinAnalyzer(new RosaMarkedLatinAnalyzer(EXCLUSION_LIST))
+                .build(),
+                JHSearchField.values());
         this.formatter = formatter;
     }
 
@@ -316,8 +334,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
      *            this image
      * @param page
      *            transcriptions of AoR annotations on this page
-     * @param result
-     *            resulting list of indexed documents
      */
     private void index(BookCollection col, Book book, BookImage image, Document doc, AnnotatedPage page) {
         page.getSymbols().forEach(a -> index(col, book, image, a, doc));

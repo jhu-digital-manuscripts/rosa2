@@ -92,8 +92,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         SearchResult result = service.search(query, null);
 
         assertNotNull("Search result was NULL", result);
-        
-        assertEquals("Unexpected number of results found.", 9, result.getTotal());
+        assertEquals("Unexpected number of results found.", 10, result.getTotal());
     }
 
     @Test
@@ -105,7 +104,19 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         assertEquals("Unexpected number of results found.", 1, result.getTotal());
         assertTrue("Unexpected result ID found.", result.getMatches()[0].getId().contains("36v"));
     }
-    
+
+    @Test
+    public void testSearchMarginaliaForTranscriberMarks() throws Exception {
+        Query query = new Query(JHSearchField.MARGINALIA, "supra");
+        SearchResult result = service.search(query, null);
+
+        assertNotNull("Search result was NULL.", result);
+
+        assertEquals(15, result.getTotal());
+        assertTrue("Unexpected context found.", result.getMatches()[0].getContext().contains("s[upr]<B>a</B> / dilemma. ("));
+        assertTrue("Unexpected context found.", result.getMatches()[1].getContext().contains("a learned Greek wine. pure Greek. s[upr]<B>a</B> / 53. i[nfr]a, 399."));
+    }
+
     @Test
     public void testSearchMarginaliaAnchorText() throws Exception {
         Query query = new Query(JHSearchField.MARGINALIA, "Giudeo");
