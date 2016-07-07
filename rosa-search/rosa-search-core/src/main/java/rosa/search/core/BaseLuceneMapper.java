@@ -31,7 +31,7 @@ import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 
-import rosa.search.core.analyzer.OldFrenchAnalyzer;
+import rosa.search.core.analyzer.RosaOldFrenchAnalyzer;
 import rosa.search.core.analyzer.RosaEnglishAnalyzer;
 import rosa.search.core.analyzer.RosaLanguageAnalyzers;
 import rosa.search.core.analyzer.RosaLatinAnalyzer;
@@ -105,7 +105,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
                 new RosaLanguageAnalyzers.Builder()
                         .englishAnalyzer(new RosaEnglishAnalyzer())
                         .frenchAnalyzer(new FrenchAnalyzer())
-                        .oldFrenchAnalyzer(new OldFrenchAnalyzer())
+                        .oldFrenchAnalyzer(new RosaOldFrenchAnalyzer())
                         .greekAnalyzer(new GreekAnalyzer())
                         .italianAnalyzer(new ItalianAnalyzer())
                         .spanishAnalyzer(new SpanishAnalyzer())
@@ -115,7 +115,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
     }
 
     protected void addNameVariant(String name_id, String... variants) {
-        ((OldFrenchAnalyzer) languageAnalyzers.oldFrenchAnalyzer()).addNameVariant(name_id, variants);
+        ((RosaOldFrenchAnalyzer) languageAnalyzers.oldFrenchAnalyzer()).addNameVariant(name_id, variants);
     }
 
     public String getLuceneField(SearchField sf, SearchFieldType type) {

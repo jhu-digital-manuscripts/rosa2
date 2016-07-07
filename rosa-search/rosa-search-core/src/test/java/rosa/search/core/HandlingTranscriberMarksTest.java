@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
-import rosa.search.core.analyzer.MarkedOldFrenchAnalyzer;
+import rosa.search.core.analyzer.RosaMarkedOldFrenchAnalyzer;
 import rosa.search.core.analyzer.RosaLanguageAnalyzers;
 import rosa.search.core.analyzer.RosaMarkedEnglishAnalyzer;
 import rosa.search.core.analyzer.RosaMarkedFrenchAnalyzer;
@@ -73,7 +73,7 @@ public class HandlingTranscriberMarksTest {
         final RosaLanguageAnalyzers languageAnalyzers = new RosaLanguageAnalyzers.Builder()
                 .englishAnalyzer(new RosaMarkedEnglishAnalyzer(EXCLUDE_LIST))
                 .frenchAnalyzer(new RosaMarkedFrenchAnalyzer(EXCLUDE_LIST))
-                .oldFrenchAnalyzer(new MarkedOldFrenchAnalyzer(EXCLUDE_LIST))
+                .oldFrenchAnalyzer(new RosaMarkedOldFrenchAnalyzer(EXCLUDE_LIST))
                 .greekAnalyzer(new RosaMarkedGreekAnalyzer(EXCLUDE_LIST))
                 .italianAnalyzer(new RosaMarkedItalianAnalyzer(EXCLUDE_LIST))
                 .spanishAnalyzer(new RosaMarkedSpanishAnalyzer(EXCLUDE_LIST))

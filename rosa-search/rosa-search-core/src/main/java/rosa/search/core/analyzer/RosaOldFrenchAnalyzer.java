@@ -52,7 +52,7 @@ import java.util.Set;
  *
  * {@link org.apache.lucene.analysis.fr.FrenchAnalyzer}
  */
-public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
+public class RosaOldFrenchAnalyzer extends StopwordAnalyzerBase {
 
     /** File containing default French stopwords. */
     private final static String DEFAULT_STOPWORD_FILE = "french_stop.txt";
@@ -85,7 +85,7 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @return an unmodifiable instance of the default stop-words set.
      */
     public static CharArraySet getDefaultStopSet(){
-        return OldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET;
+        return RosaOldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET;
     }
 
     private static class DefaultSetHolder {
@@ -104,8 +104,8 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
     /**
      * Builds an analyzer with the default stop words ({@link #getDefaultStopSet}).
      */
-    public OldFrenchAnalyzer() {
-        this(OldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET);
+    public RosaOldFrenchAnalyzer() {
+        this(RosaOldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET);
     }
 
     /**
@@ -114,7 +114,7 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param stopwords
      *          a stopword set
      */
-    private OldFrenchAnalyzer(CharArraySet stopwords){
+    private RosaOldFrenchAnalyzer(CharArraySet stopwords){
         this(stopwords, CharArraySet.EMPTY_SET);
     }
 
@@ -126,7 +126,7 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param stemExclusionSet
      *          a stemming exclusion set
      */
-    private OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet) {
+    private RosaOldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet) {
         this(stopwords, stemExclusionSet, DEFAULT_SPELLING_MAP);
     }
 
@@ -140,8 +140,8 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param spellingEquivalenceTable
      *          a table of equivalent spelling relations
      */
-    private OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
-                             Map<String, Set<String>> spellingEquivalenceTable) {
+    private RosaOldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
+                                  Map<String, Set<String>> spellingEquivalenceTable) {
         // NOTE: using Collections.emptyMap() gives an unmodifiable empty map
         this(stopwords, stemExclusionSet, spellingEquivalenceTable, Collections.emptyMap());
     }
@@ -158,9 +158,9 @@ public class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param nameVariantsTable
      *          a table of name variants
      */
-    private OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
-                            Map<String, Set<String>> spellingEquivalenceTable,
-                            Map<String, Set<String>> nameVariantsTable) {
+    private RosaOldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
+                                  Map<String, Set<String>> spellingEquivalenceTable,
+                                  Map<String, Set<String>> nameVariantsTable) {
         super(stopwords);
         this.excltable = CharArraySet.unmodifiableSet(CharArraySet.copy(stemExclusionSet));
         this.spellingEquivalenceTable = spellingEquivalenceTable == null ? new HashMap<>() : new HashMap<>(spellingEquivalenceTable);

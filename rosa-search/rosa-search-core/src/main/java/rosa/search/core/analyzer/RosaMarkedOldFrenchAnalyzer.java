@@ -6,10 +6,10 @@ import org.apache.lucene.analysis.standard.StandardFilter;
 import rosa.search.core.CharacterRemoverTokenFilter;
 import rosa.search.core.RosaStandardTokenizer;
 
-public class MarkedOldFrenchAnalyzer extends OldFrenchAnalyzer {
+public class RosaMarkedOldFrenchAnalyzer extends RosaOldFrenchAnalyzer {
     private final char[] toRemove;
 
-    public MarkedOldFrenchAnalyzer(char... toRemove) {
+    public RosaMarkedOldFrenchAnalyzer(char... toRemove) {
         this.toRemove = toRemove != null ? toRemove : new char[0];
     }
 
