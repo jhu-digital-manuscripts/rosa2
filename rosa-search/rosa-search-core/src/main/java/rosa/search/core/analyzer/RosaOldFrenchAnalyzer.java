@@ -1,4 +1,4 @@
-package rosa.search.core;
+package rosa.search.core.analyzer;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
@@ -31,6 +31,7 @@ import org.apache.lucene.analysis.util.ElisionFilter;
 import org.apache.lucene.analysis.util.StopwordAnalyzerBase;
 import org.apache.lucene.analysis.util.WordlistLoader;
 import org.apache.lucene.util.IOUtils;
+import rosa.search.core.SpellingVariationTokenFilter;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -51,7 +52,7 @@ import java.util.Set;
  *
  * {@link org.apache.lucene.analysis.fr.FrenchAnalyzer}
  */
-class OldFrenchAnalyzer extends StopwordAnalyzerBase {
+public class RosaOldFrenchAnalyzer extends StopwordAnalyzerBase {
 
     /** File containing default French stopwords. */
     private final static String DEFAULT_STOPWORD_FILE = "french_stop.txt";
@@ -84,7 +85,7 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @return an unmodifiable instance of the default stop-words set.
      */
     public static CharArraySet getDefaultStopSet(){
-        return OldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET;
+        return RosaOldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET;
     }
 
     private static class DefaultSetHolder {
@@ -103,8 +104,8 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
     /**
      * Builds an analyzer with the default stop words ({@link #getDefaultStopSet}).
      */
-    OldFrenchAnalyzer() {
-        this(OldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET);
+    public RosaOldFrenchAnalyzer() {
+        this(RosaOldFrenchAnalyzer.DefaultSetHolder.DEFAULT_STOP_SET);
     }
 
     /**
@@ -113,7 +114,7 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param stopwords
      *          a stopword set
      */
-    private OldFrenchAnalyzer(CharArraySet stopwords){
+    private RosaOldFrenchAnalyzer(CharArraySet stopwords){
         this(stopwords, CharArraySet.EMPTY_SET);
     }
 
@@ -125,7 +126,7 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param stemExclusionSet
      *          a stemming exclusion set
      */
-    private OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet) {
+    private RosaOldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet) {
         this(stopwords, stemExclusionSet, DEFAULT_SPELLING_MAP);
     }
 
@@ -139,8 +140,8 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param spellingEquivalenceTable
      *          a table of equivalent spelling relations
      */
-    private OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
-                             Map<String, Set<String>> spellingEquivalenceTable) {
+    private RosaOldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
+                                  Map<String, Set<String>> spellingEquivalenceTable) {
         // NOTE: using Collections.emptyMap() gives an unmodifiable empty map
         this(stopwords, stemExclusionSet, spellingEquivalenceTable, Collections.emptyMap());
     }
@@ -157,9 +158,9 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param nameVariantsTable
      *          a table of name variants
      */
-    private OldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
-                            Map<String, Set<String>> spellingEquivalenceTable,
-                            Map<String, Set<String>> nameVariantsTable) {
+    private RosaOldFrenchAnalyzer(CharArraySet stopwords, CharArraySet stemExclusionSet,
+                                  Map<String, Set<String>> spellingEquivalenceTable,
+                                  Map<String, Set<String>> nameVariantsTable) {
         super(stopwords);
         this.excltable = CharArraySet.unmodifiableSet(CharArraySet.copy(stemExclusionSet));
         this.spellingEquivalenceTable = spellingEquivalenceTable == null ? new HashMap<>() : new HashMap<>(spellingEquivalenceTable);
@@ -173,7 +174,7 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
      * @param normalized key word
      * @param variants variants that will be normalized out
      */
-    void addNameVariant(String normalized, String... variants) {
+    public void addNameVariant(String normalized, String... variants) {
         if (variants == null || variants.length == 0) {
             return;
         }
@@ -201,7 +202,12 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
     @Override
     protected TokenStreamComponents createComponents(String fieldName) {
         final Tokenizer source = new StandardTokenizer();
-        TokenStream result = new StandardFilter(source);
+        TokenStream result = buildResultTokenStream(new StandardFilter(source));
+
+        return new TokenStreamComponents(source, result);
+    }
+
+    protected TokenStream buildResultTokenStream(TokenStream result) {
         if (!nameVariantsTable.isEmpty())
             result = new SpellingVariationTokenFilter(result, nameVariantsTable);
         result = new ElisionFilter(result, DEFAULT_ARTICLES);
@@ -212,7 +218,7 @@ class OldFrenchAnalyzer extends StopwordAnalyzerBase {
         result = new FrenchLightStemFilter(result);
         if (!spellingEquivalenceTable.isEmpty())
             result = new SpellingVariationTokenFilter(result, spellingEquivalenceTable);
-        return new TokenStreamComponents(source, result);
+        return result;
     }
 
 }
