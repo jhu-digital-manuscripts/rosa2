@@ -98,8 +98,6 @@ public class LuceneSearchService implements SearchService {
 
     @Override
     public SearchResult search(Query query, SearchOptions opts) throws IOException {
-        searcher_manager.maybeRefresh();
-
         IndexSearcher searcher = searcher_manager.acquire();
 
         try {
