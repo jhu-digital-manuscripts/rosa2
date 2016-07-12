@@ -96,7 +96,8 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         }
     }
 
-    // TODO Hack to return search fields based on collection
+    // TODO Hack to return search fields based on collection.
+    // TODO Refactor to make search service per collection?
     
     private static final JHSearchField[] ROSE_PIZAN_FIELDS = {
             JHSearchField.DESCRIPTION,
@@ -107,20 +108,20 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
     
     private static final JHSearchField[] AOR_FIELDS = {
             JHSearchField.MARGINALIA,
-            JHSearchField.UNDERLINE,
-            JHSearchField.EMPHASIS,
-            JHSearchField.ERRATA,
-            JHSearchField.MARK,
             JHSearchField.SYMBOL,
-            JHSearchField.NUMERAL,
-            JHSearchField.DRAWING,
-            JHSearchField.CROSS_REFERENCE,
+            JHSearchField.UNDERLINE,
+            JHSearchField.MARK,
             JHSearchField.BOOK,
             JHSearchField.PEOPLE,
             JHSearchField.PLACE,
-            JHSearchField.METHOD,
             JHSearchField.LANGUAGE,
-            JHSearchField.MARGINALIA_LANGUAGE
+            JHSearchField.MARGINALIA_LANGUAGE,
+            JHSearchField.NUMERAL,
+            JHSearchField.DRAWING,
+            JHSearchField.ERRATA,            
+            JHSearchField.EMPHASIS,
+            JHSearchField.CROSS_REFERENCE,
+            JHSearchField.METHOD,
     };
     
     @Override
