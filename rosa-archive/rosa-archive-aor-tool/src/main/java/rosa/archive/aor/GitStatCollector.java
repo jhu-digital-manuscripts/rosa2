@@ -339,7 +339,7 @@ public class GitStatCollector {
 
                 try {
                     // Read page, then collect stats
-                    AnnotatedPage annotatedPage = AorStatsCollector.readAorPage(pagePath.toString());
+                    AnnotatedPage annotatedPage = Util.readAorPage(pagePath.toString());
                     if (annotatedPage == null) {
                         targetBookStats.addUnreadablePage(bookId, pageId);
                         continue;

@@ -2,60 +2,27 @@ package rosa.archive.aor;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.model.aor.AnnotatedPage;
 /**
  * Collect stats on AOR annotations and write them out as CSV spreadsheets.
  */
 public class AorStatsCollector {
     private static final Charset CHARSET = Charset.forName("UTF-8");
-    private static final AORAnnotatedPageSerializer aor_serializer = new AORAnnotatedPageSerializer();
 
     // book id -> stats
     private final Map<String, Stats> book_stats;
 
     // book id -> page stats
     private final Map<String, List<Stats>> page_stats;
-
-    /**
-     * @param xmlPath fully qualified path to AOR page transcription
-     * @return AOR annotated page
-     * @throws IOException
-     */
-    public static AnnotatedPage readAorPage(String xmlPath) throws IOException {
-        List<String> errors = new ArrayList<>();
-        AnnotatedPage page;
-
-        try(InputStream in = Files.newInputStream(Paths.get(xmlPath))) {
-            try {
-                page = aor_serializer.read(in, errors);
-            } catch (IOException e) {
-                System.err.println("Skipping " + xmlPath + " due to error: " + e.getMessage());
-                return null;
-            }
-        }
-
-        if (errors.size() > 0) {
-            System.err.println("Errors reading " + xmlPath);
-
-            for (String err : errors) {
-                System.err.println(err);
-            }
-        }
-
-        return page;
-    }
 
     public AorStatsCollector() {
         this.book_stats = new HashMap<>();
@@ -81,7 +48,7 @@ public class AorStatsCollector {
 
     private void collect_stats(String book_id, String page_id, Path xml_path)
             throws IOException {
-        AnnotatedPage ap = readAorPage(xml_path.toString());
+        AnnotatedPage ap = Util.readAorPage(xml_path.toString());
         if (ap == null) {
             return;
         }

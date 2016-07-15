@@ -3,6 +3,9 @@ package rosa.archive.aor;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Per page or book stats.
+ */
 public class Stats implements Comparable<Stats> {
     private static final Pattern MANUSCRIPT_PATTERN = Pattern.compile("^(.+\\.)(\\d+)(r|v|R|V)$");
 
