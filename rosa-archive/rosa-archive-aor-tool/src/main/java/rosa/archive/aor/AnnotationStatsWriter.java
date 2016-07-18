@@ -23,7 +23,7 @@ import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 
 public class AnnotationStatsWriter {
-	private class AnnotationStats {
+	protected class AnnotationStats {
 
 		String text;
 		String translation;
@@ -35,9 +35,12 @@ public class AnnotationStatsWriter {
 		String location;
 		String method;
 		String lang;
+		String marginalia_people;
+		String marginalia_places;
+		String marginalia_books;
 	}
 
-	private List<AnnotationStats> get_stats(String book_id, Path xml_path) throws IOException {
+	protected List<AnnotationStats> collectStats(String book_id, Path xml_path) throws IOException {
 		AnnotatedPage ap = Util.readAorPage(xml_path.toString());
 
 		List<AnnotationStats> result = new ArrayList<>();
@@ -65,7 +68,7 @@ public class AnnotationStatsWriter {
 		result.signature = ap.getSignature();
 		result.text = a.getReferencedText();
 		result.type = a.getClass().getSimpleName().toLowerCase();
-		
+
 		if (a.getLocation() != null) {
 			result.location = a.getLocation().name().toLowerCase();
 		}
@@ -78,19 +81,22 @@ public class AnnotationStatsWriter {
 			Marginalia m = Marginalia.class.cast(a);
 
 			result.translation = m.getTranslation();
-			
+
 			Set<String> locs = new HashSet<>();
 			List<String> texts = new ArrayList<>();
 			Set<String> langs = new HashSet<>();
-			
+			Set<String> books = new HashSet<>();
+			Set<String> people = new HashSet<>();
+			Set<String> places = new HashSet<>();
+
 			if (result.lang != null) {
 				langs.add(result.lang);
 			}
-			
+
 			if (result.location != null) {
 				locs.add(result.location);
 			}
-			
+
 			m.getLanguages().forEach(ml -> {
 				String lang = ml.getLang();
 
@@ -100,18 +106,25 @@ public class AnnotationStatsWriter {
 
 				ml.getPositions().forEach(p -> {
 					texts.addAll(p.getTexts());
-					
+
 					if (p.getPlace() != null) {
 						locs.add(p.getPlace().name().toLowerCase());
 					}
+
+					places.addAll(p.getLocations());
+					people.addAll(p.getPeople());
+					books.addAll(p.getBooks());
 				});
 			});
 
-			result.location = join(locs, " ");
+			result.location = join(locs, "|");
 			result.text = join(texts, " ");
-			result.lang = join(langs, " ");
-			
-			// TODO People places locations?
+			result.lang = join(langs, "|");
+
+			result.marginalia_books = join(books, "|");
+			result.marginalia_places = join(places, "|");
+			result.marginalia_people = join(people, "|");
+
 		} else if (a instanceof Underline) {
 			Underline u = Underline.class.cast(a);
 
@@ -149,7 +162,7 @@ public class AnnotationStatsWriter {
 
 		Iterator<String> iter = values.iterator();
 		StringBuilder result = new StringBuilder(iter.next());
-		
+
 		while (iter.hasNext()) {
 			result.append(sep);
 			result.append(iter.next());
@@ -167,6 +180,9 @@ public class AnnotationStatsWriter {
 		cell(stats.signature, out);
 		cell(stats.image_id, out);
 		cell(stats.book_id, out);
+		cell(stats.marginalia_books, out);
+		cell(stats.marginalia_people, out);
+		cell(stats.marginalia_places, out);
 		cell(stats.text, out);
 		cell(stats.translation, out);
 
@@ -187,10 +203,11 @@ public class AnnotationStatsWriter {
 	public void writeStats(Path book_path, PrintWriter out) throws IOException {
 		String book_id = book_path.getFileName().toString();
 
-		out.println("type, name, languages, locations, method, signature, image_id, book_id, text, translation");
+		out.println(
+				"type, name, languages, locations, method, signature, image_id, book_id, marginalia_books, marginalia_people, marginalia_places, text, translation");
 
 		for (Path xml_path : Files.newDirectoryStream(book_path, "*aor*.xml")) {
-			get_stats(book_id, xml_path).forEach(s -> write_stats(s, out));
+			collectStats(book_id, xml_path).forEach(s -> write_stats(s, out));
 			out.flush();
 		}
 	}
