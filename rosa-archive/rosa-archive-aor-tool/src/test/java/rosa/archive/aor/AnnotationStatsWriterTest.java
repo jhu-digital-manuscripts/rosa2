@@ -1,13 +1,15 @@
 package rosa.archive.aor;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 
-import org.junit.BeforeClass;
-import org.junit.ClassRule;
+import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 
@@ -18,22 +20,22 @@ import rosa.archive.core.ResourceUtil;
  * Do some simple testing of Annotation Stats to make sure they are sane.
  */
 public class AnnotationStatsWriterTest {
-	@ClassRule
-	public static TemporaryFolder tempFolder = new TemporaryFolder();
+	@Rule
+	public TemporaryFolder tempFolder = new TemporaryFolder();
 
-	private static Path base_archive_path;
-	private static Path folgers_ha2_path;
-	private static String folgers_ha2_id = "FolgersHa2";
+	private Path base_archive_path;
+	private Path folgers_ha2_path;
+	private String folgers_ha2_id = "FolgersHa2";
 	
-	private static AnnotationStatsWriter asw = new AnnotationStatsWriter();
+	private AnnotationStatsWriter asw = new AnnotationStatsWriter();
 
-	@BeforeClass
-	public static void setup() throws Exception {
+	@Before
+	public void setup() throws Exception {
 		Path temp = tempFolder.newFolder().toPath();
 		
 		ResourceUtil.copyResource(AnnotationStatsWriterTest.class, "/archive/valid", temp);
 		
-		base_archive_path = temp.resolve("archive/valid");
+		base_archive_path = temp.resolve("valid");
 		folgers_ha2_path = base_archive_path.resolve(folgers_ha2_id);
 	}
 	
