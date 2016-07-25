@@ -3,8 +3,9 @@ package rosa.archive.aor;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
@@ -15,19 +16,21 @@ import org.junit.rules.TemporaryFolder;
 
 import rosa.archive.aor.AnnotationStatsWriter.AnnotationStats;
 import rosa.archive.core.ResourceUtil;
+import rosa.archive.core.serialize.ImageListSerializer;
+import rosa.archive.model.ImageList;
 
 /**
  * Do some simple testing of Annotation Stats to make sure they are sane.
  */
 public class AnnotationStatsWriterTest {
+	private static String folgers_ha2_id = "FolgersHa2";
+	
 	@Rule
 	public TemporaryFolder tempFolder = new TemporaryFolder();
 
 	private Path base_archive_path;
 	private Path folgers_ha2_path;
-	private String folgers_ha2_id = "FolgersHa2";
-	
-	private AnnotationStatsWriter asw = new AnnotationStatsWriter();
+	private AnnotationStatsWriter asw;
 
 	@Before
 	public void setup() throws Exception {
@@ -35,8 +38,10 @@ public class AnnotationStatsWriterTest {
 		
 		ResourceUtil.copyResource(AnnotationStatsWriterTest.class, "/archive/valid", temp);
 		
-		base_archive_path = temp.resolve("valid");
+		base_archive_path = temp.resolve("archive/valid");
 		folgers_ha2_path = base_archive_path.resolve(folgers_ha2_id);
+		
+		asw = new AnnotationStatsWriter();
 	}
 	
 	private long count_type(List<AnnotationStats> stats, String type) {
@@ -71,7 +76,15 @@ public class AnnotationStatsWriterTest {
 		String xml_id = "FolgersHa2.aor.001r.xml";
 		String image_id = "FolgersHa2.001r.tif";
 		
-		List<AnnotationStats> result = asw.collectStats(folgers_ha2_id, folgers_ha2_path.resolve(xml_id));
+		ImageListSerializer ils = new ImageListSerializer();
+		Path images_file = folgers_ha2_path.resolve(folgers_ha2_id + ".images.csv");
+		ImageList images;
+		
+		try (InputStream is = Files.newInputStream(images_file)) {
+			images = ils.read(is, null);
+		}
+				
+		List<AnnotationStats> result = asw.collectStats(folgers_ha2_id, folgers_ha2_path.resolve(xml_id), images);
 		
 		assertNotNull(result);
 		assertEquals(42, result.size());

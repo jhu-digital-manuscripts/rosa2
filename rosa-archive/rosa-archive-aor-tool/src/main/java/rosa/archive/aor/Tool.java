@@ -40,7 +40,9 @@ public class Tool {
 
             AnnotationStatsWriter asw = new AnnotationStatsWriter();
             PrintWriter out = new PrintWriter(System.out);
-            		
+            
+            asw.writeStatsHeader(out);
+            
             for (int i = 1; i < args.length; i++) {
                 Path book_path = Paths.get(args[i]);
 
