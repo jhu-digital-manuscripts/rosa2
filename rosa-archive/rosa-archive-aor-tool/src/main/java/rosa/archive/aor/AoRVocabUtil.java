@@ -9,7 +9,7 @@ public class AoRVocabUtil {
         if (vocab.containsKey(word)) {
             vocab.put(word, vocab.get(word) + count);
         } else {
-            vocab.put(word, 1);
+            vocab.put(word, count);
         }
     }
 
@@ -27,7 +27,10 @@ public class AoRVocabUtil {
 
     // Turn text into words and punctuation
     public static String[] parse_text(String text) {
-        text = text.trim().replaceAll("\\p{Punct}", " ");
+    	// Remove brackets used for abbreviations
+    	text = text.replace("[", "").replace("]", "");
+    	
+        text = text.replaceAll("\\p{Punct}", " ");
 
         return text.trim().split("\\s+");
     }
