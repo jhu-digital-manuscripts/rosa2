@@ -38,7 +38,7 @@ public class AnnotationStatsWriterTest {
 		
 		ResourceUtil.copyResource(AnnotationStatsWriterTest.class, "/archive/valid", temp);
 		
-		base_archive_path = temp.resolve("archive/valid");
+		base_archive_path = temp.resolve("valid");
 		folgers_ha2_path = base_archive_path.resolve(folgers_ha2_id);
 		
 		asw = new AnnotationStatsWriter();
