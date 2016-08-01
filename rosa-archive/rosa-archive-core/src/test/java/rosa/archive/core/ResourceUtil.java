@@ -43,7 +43,7 @@ public class ResourceUtil {
             File src = FileUtils.toFile(resource);
 
             if (src.isDirectory()) {
-                FileUtils.copyDirectory(src, dest.resolve(src.getName()).toFile());
+                FileUtils.copyDirectoryToDirectory(src, dest.toFile());
             } else {
                 FileUtils.copyFileToDirectory(src, dest.toFile());
             }
