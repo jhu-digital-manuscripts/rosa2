@@ -282,7 +282,7 @@ public class FSIService implements IIIFService {
 
         // Retrieve info from FSI
 
-        String fsi_info_url = baseurl + "?type=info&tpl=info" + "&" + param("source", image_id);
+        String fsi_info_url = baseurl + "?type=info" + "&" + param("source", image_id);
 
         try {
             URLConnection con = new URL(fsi_info_url).openConnection();
