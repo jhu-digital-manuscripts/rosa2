@@ -138,4 +138,9 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         
         serializer.write(fields, os);    
     }
+
+	@Override
+	public boolean has_content() throws IOException {
+		return !isEmpty();
+	}
 }

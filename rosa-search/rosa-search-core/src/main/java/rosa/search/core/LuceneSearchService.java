@@ -191,6 +191,14 @@ public class LuceneSearchService implements SearchService {
         searcher_manager.maybeRefresh();
     }
 
+    
+    @Override
+    public boolean isEmpty() throws IOException {
+        try (IndexWriter iw = get_index_writer(false)) {
+        	return iw.numDocs() == 0;
+        }
+    }
+    
     @Override
     public void shutdown() {
         try {

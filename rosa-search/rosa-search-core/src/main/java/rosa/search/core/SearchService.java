@@ -45,6 +45,12 @@ public interface SearchService {
     void clear() throws IOException;
 
     /**
+     * @return Whether or not the index is empty of content.
+     * @throws IOException 
+     */
+    boolean isEmpty() throws IOException;
+    
+    /**
      * Stop and cleanup the service.
      */
     void shutdown();
