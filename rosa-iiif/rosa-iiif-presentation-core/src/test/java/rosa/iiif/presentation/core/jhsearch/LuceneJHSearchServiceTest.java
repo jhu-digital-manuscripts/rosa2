@@ -8,7 +8,6 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyListOf;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Matchers.eq;
-import static org.mockito.Matchers.matches;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -31,7 +30,9 @@ import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.SearchMatch;
+import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
+import rosa.search.model.SortOrder;
 
 public class LuceneJHSearchServiceTest extends BaseSearchTest {
     private static LuceneJHSearchService service;
@@ -49,6 +50,8 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         service = new LuceneJHSearchService(tmpfolder.newFolder().toPath(),
                 new IIIFPresentationRequestFormatter(scheme, host, pres_prefix, port));
         service.update(store, VALID_COLLECTION);
+        
+        assertTrue(service.has_content());
     }
     
     @AfterClass
@@ -91,12 +94,34 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     @Test
     public void testStemLatin() throws Exception {
         Query query = new Query(JHSearchField.MARGINALIA, "maximus");
-        SearchResult result = service.search(query, null);
+        SearchOptions opts = new SearchOptions();
+        opts.setSortOrder(SortOrder.INDEX);
+        SearchResult result = service.search(query, opts);
 
         assertNotNull("Search result was NULL", result);
-        assertEquals("Unexpected number of results found.", 10, result.getTotal());
+        assertEquals("Unexpected number of results found.", 17, result.getTotal());
     }
 
+    @Test
+    public void testCaseLatin() throws Exception {
+    	{
+	        Query query = new Query(JHSearchField.MARGINALIA, "Quod");
+	        SearchResult result = service.search(query, null);
+	
+	        assertNotNull("Search result was NULL", result);
+	        assertEquals("Unexpected number of results found.", 5, result.getTotal());
+    	}
+    	
+    	{
+	        Query query = new Query(JHSearchField.MARGINALIA, "quod");
+	        SearchResult result = service.search(query, null);
+	
+	        assertNotNull("Search result was NULL", result);
+	        assertEquals("Unexpected number of results found.", 5, result.getTotal());
+    	}
+    }
+    
+    
     @Test
     public void testSearchMarginaliaTranslationPhrase() throws Exception {
         Query query = new Query(JHSearchField.MARGINALIA, "\"if you wish, you may command the citizens.\"");
@@ -108,15 +133,32 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     }
 
     @Test
-    public void testSearchMarginaliaForTranscriberMarks() throws Exception {
+    public void testStripTranscibersMarks() {
+    	assertEquals("supra, infra",   JHSearchLuceneMapper.stripTranscribersMarks("s[upr]a, i[nfr]a"));
+    }
+    
+    @Test
+    public void testSearchMarginaliaIgnoringTranscriberMarks() throws Exception {
         Query query = new Query(JHSearchField.MARGINALIA, "supra");
-        SearchResult result = service.search(query, null);
+        SearchOptions opts = new SearchOptions();
+        opts.setSortOrder(SortOrder.INDEX);
+        
+        SearchResult result = service.search(query, opts);
 
         assertNotNull("Search result was NULL.", result);
 
-        assertEquals(15, result.getTotal());
-        assertTrue("Unexpected context found.", result.getMatches()[0].getContext().contains("s[upr]<B>a</B> / dilemma. ("));
-        assertTrue("Unexpected context found.", result.getMatches()[1].getContext().contains("a learned Greek wine. pure Greek. s[upr]<B>a</B> / 53. i[nfr]a, 399."));
+        assertEquals(20, result.getTotal());
+        
+        
+        
+        for (SearchMatch m: result.getMatches()) {
+        	m.getContext().forEach(text -> {
+        		assertFalse(text.contains("["));
+        		assertFalse(text.contains("]"));
+        	});
+        }
+        
+        assertTrue("Unexpected context found.", result.getMatches()[0].getContext().contains("<B>supra</B>"));
     }
 
     @Test
