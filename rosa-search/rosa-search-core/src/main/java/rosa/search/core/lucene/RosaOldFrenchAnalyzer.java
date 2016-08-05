@@ -1,4 +1,4 @@
-package rosa.search.core.analyzer;
+package rosa.search.core.lucene;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
@@ -31,7 +31,6 @@ import org.apache.lucene.analysis.util.ElisionFilter;
 import org.apache.lucene.analysis.util.StopwordAnalyzerBase;
 import org.apache.lucene.analysis.util.WordlistLoader;
 import org.apache.lucene.util.IOUtils;
-import rosa.search.core.SpellingVariationTokenFilter;
 
 import java.io.IOException;
 import java.io.Reader;

@@ -1,4 +1,4 @@
-package rosa.search.core.analyzer;
+package rosa.search.core.lucene;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
@@ -9,7 +9,7 @@ import org.apache.lucene.analysis.standard.StandardTokenizer;
 
 import rosa.lucene.la.LatinStemFilter;
 
-public class RosaLatinAnalyzer extends Analyzer {
+public class LatinAnalyzer extends Analyzer {
 
     @Override
     protected TokenStreamComponents createComponents(String fieldName) {

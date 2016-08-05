@@ -42,6 +42,7 @@ import rosa.archive.model.redtag.StructurePage;
 import rosa.archive.model.redtag.StructurePageSide;
 import rosa.search.core.BaseLuceneMapper;
 import rosa.search.core.SearchUtil;
+import rosa.search.core.lucene.RosaOldFrenchAnalyzer;
 import rosa.search.model.SearchField;
 import rosa.search.model.SearchFieldType;
 import rosa.website.search.client.model.WebsiteSearchFields;
@@ -118,7 +119,8 @@ public class WebsiteLuceneMapper extends BaseLuceneMapper {
      */
     private void setupNameVariants(BookCollection col) {
         CharacterNames names = col.getCharacterNames();
-
+        RosaOldFrenchAnalyzer analyzer = (RosaOldFrenchAnalyzer) analyzers.get(SearchFieldType.OLD_FRENCH);
+        
         if (names != null) {
             for (String name_id : names.getAllCharacterIds()) {
                 CharacterName name = names.getCharacterName(name_id);
@@ -147,7 +149,8 @@ public class WebsiteLuceneMapper extends BaseLuceneMapper {
                         vars.add(str);
                     }
                 }
-                addNameVariant(key, vars.toArray(new String[vars.size()]));
+                
+                analyzer.addNameVariant(key, vars.toArray(new String[vars.size()]));
             }
         }
     }

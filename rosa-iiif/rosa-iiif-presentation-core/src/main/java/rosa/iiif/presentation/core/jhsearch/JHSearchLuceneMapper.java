@@ -10,11 +10,6 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.apache.lucene.analysis.el.GreekAnalyzer;
-import org.apache.lucene.analysis.en.EnglishAnalyzer;
-import org.apache.lucene.analysis.es.SpanishAnalyzer;
-import org.apache.lucene.analysis.fr.FrenchAnalyzer;
-import org.apache.lucene.analysis.it.ItalianAnalyzer;
 import org.apache.lucene.document.Document;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -50,9 +45,6 @@ import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.search.core.BaseLuceneMapper;
-import rosa.search.core.analyzer.RosaLanguageAnalyzers;
-import rosa.search.core.analyzer.RosaLatinAnalyzer;
-import rosa.search.core.analyzer.RosaOldFrenchAnalyzer;
 import rosa.search.model.SearchField;
 import rosa.search.model.SearchFieldType;
 
@@ -68,11 +60,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	private final IIIFPresentationRequestFormatter formatter;
 
 	public JHSearchLuceneMapper(IIIFPresentationRequestFormatter formatter) {
-		super(new RosaLanguageAnalyzers.Builder().englishAnalyzer(new EnglishAnalyzer())
-				.frenchAnalyzer(new FrenchAnalyzer()).oldFrenchAnalyzer(new RosaOldFrenchAnalyzer())
-				.greekAnalyzer(new GreekAnalyzer()).italianAnalyzer(new ItalianAnalyzer())
-				.spanishAnalyzer(new SpanishAnalyzer()).latinAnalyzer(new RosaLatinAnalyzer()).build(),
-				JHSearchField.values());
+		super(JHSearchField.values());
 		this.formatter = formatter;
 	}
 
