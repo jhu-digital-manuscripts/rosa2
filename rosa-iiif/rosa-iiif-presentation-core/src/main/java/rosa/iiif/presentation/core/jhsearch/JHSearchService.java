@@ -60,4 +60,10 @@ public interface JHSearchService {
      * @throws IOException
      */
     void shutdown() throws IOException;
+    
+    /**
+     * @return Whether or not the search service has content indexed.
+     * @throws IOException 
+     */
+    boolean has_content() throws IOException;
 }

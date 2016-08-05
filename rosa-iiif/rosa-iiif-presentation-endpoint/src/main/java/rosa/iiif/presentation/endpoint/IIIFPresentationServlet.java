@@ -34,7 +34,6 @@ public class IIIFPresentationServlet extends HttpServlet {
     private final IIIFPresentationService service;
     private final IIIFPresentationRequestParser parser;
     private final JHSearchService searchService;
-
     private final Store store;
 
     /**
@@ -54,9 +53,15 @@ public class IIIFPresentationServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         try {
-            logger.info("Updating IIIF Presentation Search Service index.");
-            searchService.update(store);
-            logger.info("Done updating IIIF Presentation Search Service index.");
+            if (searchService.has_content()) {
+                logger.info("Using existing IIIF Presentation Search Service index.");
+            } else {
+                logger.info("Updating IIIF Presentation Search Service index.");
+
+                searchService.update(store);
+
+                logger.info("Done updating IIIF Presentation Search Service index.");
+            }
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Failed to update index for IIIF Presentation Search Service.", e);
         }
@@ -109,7 +114,7 @@ public class IIIFPresentationServlet extends HttpServlet {
 
         return result;
     }
-    
+
     // Provide a way to send a plain text error message.
     private void send_error(HttpServletResponse resp, int code, String message) throws IOException {
         resp.resetBuffer();
@@ -121,7 +126,7 @@ public class IIIFPresentationServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setHeader("Access-Control-Allow-Origin", "*");
         resp.setCharacterEncoding("utf-8");
-        
+
         if (want_json_ld_mime_type(req)) {
             resp.setContentType(JSON_LD_MIME_TYPE);
         } else {
@@ -141,13 +146,13 @@ public class IIIFPresentationServlet extends HttpServlet {
             raw_path = raw_path.substring(0, raw_path.length() - JHSearchService.INFO_RESOURCE_PATH.length());
 
             // Must follow recommended URI pattern
-            
+
             PresentationRequest presreq = parser.parsePresentationRequest(raw_path);
 
             if (presreq == null) {
                 send_error(resp, HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + req.getRequestURL());
             }
-            
+
             searchService.handle_info_request(presreq, os);
         } else if (raw_path.endsWith(JHSearchService.RESOURCE_PATH)) {
             // Search request
@@ -167,9 +172,9 @@ public class IIIFPresentationServlet extends HttpServlet {
                 send_error(resp, HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + req.getRequestURL());
             } else {
                 try {
-                	searchService.handle_request(presreq, query, offset, max, sort_order, os);
+                    searchService.handle_request(presreq, query, offset, max, sort_order, os);
                 } catch (IllegalArgumentException e) {
-                    send_error(resp, HttpURLConnection.HTTP_BAD_REQUEST, e.getMessage());   
+                    send_error(resp, HttpURLConnection.HTTP_BAD_REQUEST, e.getMessage());
                 }
             }
         } else {

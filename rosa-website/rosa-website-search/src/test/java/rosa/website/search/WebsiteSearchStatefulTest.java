@@ -1,9 +1,22 @@
 package rosa.website.search;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyList;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import java.io.InputStream;
+
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+
 import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.core.Store;
 import rosa.archive.core.serialize.TranscriptionXmlSerializer;
@@ -14,16 +27,6 @@ import rosa.search.model.Query;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
 import rosa.website.search.client.model.WebsiteSearchFields;
-
-import java.io.InputStream;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyList;
-import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 /**
  * Tests here will change either the data that is indexed or the search index,
@@ -43,6 +46,8 @@ public class WebsiteSearchStatefulTest extends BaseArchiveTest {
     @Before
     public void setup() throws Exception {
         service = new LuceneSearchService(tmp_index_dir.newFolder().toPath(), new WebsiteLuceneMapper());
+        
+        assertTrue(service.isEmpty());
     }
 
     /**
@@ -66,6 +71,8 @@ public class WebsiteSearchStatefulTest extends BaseArchiveTest {
 
         service.update(store, VALID_COLLECTION);
 
+        assertFalse(service.isEmpty());
+        
         // Confirm expected counts
 
         result = service.search(book_query, null);
@@ -90,7 +97,15 @@ public class WebsiteSearchStatefulTest extends BaseArchiveTest {
 
     @Test
     public void testClear() throws Exception {
-        service.clear();
+    	assertTrue(service.isEmpty());
+    	
+        service.update(store, VALID_COLLECTION);
+
+        assertFalse(service.isEmpty());
+        
+    	service.clear();
+        
+    	assertTrue(service.isEmpty());
     }
 
     /*
@@ -105,6 +120,8 @@ public class WebsiteSearchStatefulTest extends BaseArchiveTest {
         updateWithDifferentTranscription("Douce195.transcription.xml");
         updateWithDifferentTranscription("Morgan948.transcription.xml");
         updateWithDifferentTranscription("Walters143.transcription.xml");
+        
+        assertFalse(service.isEmpty());
     }
 
     @SuppressWarnings("unchecked")
