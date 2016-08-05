@@ -9,8 +9,6 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
-import rosa.archive.model.Illustration;
-import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -171,39 +169,39 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         return ref;
     }
 
-    /**
-     * @param book archive book object
-     * @param page page in the book in question
-     * @return does this page contain annotations?
-     */
-    private boolean hasAnnotations(Book book, String page) {
-        AnnotatedPage aPage = book.getAnnotationPage(page);
-        // If the page contains at least one annotation transcription, return true
-        if (aPage != null &&
-                (!aPage.getMarginalia().isEmpty()
-                        || !aPage.getMarks().isEmpty()
-                        || !aPage.getSymbols().isEmpty()
-                        || !aPage.getNumerals().isEmpty()
-                        || !aPage.getErrata().isEmpty()
-                        || !aPage.getUnderlines().isEmpty())) {
-            return true;
-        }
-
-        // If there is no annotated page transcriptions, check for illustrations
-        if (book.getIllustrationTagging() == null) {
-            return false;
-        }
-
-        for (Illustration ill : book.getIllustrationTagging()) {
-            // If one illustration is found for this page, there is at least 1 annotation
-            if (ill.getPage().equals(page)) {
-                return true;
-            }
-        }
-
-        // No illustrations were found, so there no annotations were found for this page
-        // Look for transcriptions
-        return book.getTranscription() != null && book.getTranscription().getXML() != null && book.getTranscription().getXML().contains(page);
-    }
+//    /**
+//     * @param book archive book object
+//     * @param page page in the book in question
+//     * @return does this page contain annotations?
+//     */
+//    private boolean hasAnnotations(Book book, String page) {
+//        AnnotatedPage aPage = book.getAnnotationPage(page);
+//        // If the page contains at least one annotation transcription, return true
+//        if (aPage != null &&
+//                (!aPage.getMarginalia().isEmpty()
+//                        || !aPage.getMarks().isEmpty()
+//                        || !aPage.getSymbols().isEmpty()
+//                        || !aPage.getNumerals().isEmpty()
+//                        || !aPage.getErrata().isEmpty()
+//                        || !aPage.getUnderlines().isEmpty())) {
+//            return true;
+//        }
+//
+//        // If there is no annotated page transcriptions, check for illustrations
+//        if (book.getIllustrationTagging() == null) {
+//            return false;
+//        }
+//
+//        for (Illustration ill : book.getIllustrationTagging()) {
+//            // If one illustration is found for this page, there is at least 1 annotation
+//            if (ill.getPage().equals(page)) {
+//                return true;
+//            }
+//        }
+//
+//        // No illustrations were found, so there no annotations were found for this page
+//        // Look for transcriptions
+//        return book.getTranscription() != null && book.getTranscription().getXML() != null && book.getTranscription().getXML().contains(page);
+//    }
 
 }

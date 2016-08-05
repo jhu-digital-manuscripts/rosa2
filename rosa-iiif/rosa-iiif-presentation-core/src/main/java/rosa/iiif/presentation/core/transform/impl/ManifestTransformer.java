@@ -23,7 +23,6 @@ import rosa.iiif.presentation.model.ViewingHint;
 
 public class ManifestTransformer extends BasePresentationTransformer implements Transformer<Manifest> {
     private final SequenceTransformer sequenceTransformer;
-    private final RangeTransformer rangeTransformer;
 
     @Inject
     public ManifestTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
@@ -31,7 +30,6 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
                                RangeTransformer rangeTransformer) {
         super(presRequestFormatter);
         this.sequenceTransformer = sequenceTransformer;
-        this.rangeTransformer = rangeTransformer;
     }
 
     @Override

@@ -1,7 +1,20 @@
 package rosa.iiif.presentation.core.transform;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 import org.junit.Before;
 import org.junit.Test;
+
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
@@ -26,22 +39,6 @@ import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.annotation.Annotation;
-import rosa.iiif.presentation.model.annotation.AnnotationTarget;
-import rosa.iiif.presentation.model.selector.FragmentSelector;
-import rosa.iiif.presentation.model.selector.Selector;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
 
 public class PresentationTransformerTest extends BaseArchiveTest {
     private static final String ENDPOINT_SCHEME = "http";
@@ -320,19 +317,19 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 //        }
 //    }
 
-    private void checkTarget(AnnotationTarget target, boolean isFullPage) {
-        assertNotNull(target);
-        if (isFullPage) {
-            assertFalse(target.isSpecificResource());
-            assertNull(target.getSelector());
-        } else {
-            assertTrue(target.isSpecificResource());
-
-            Selector s = target.getSelector();
-            assertNotNull(s);
-            assertTrue(s instanceof FragmentSelector);
-        }
-    }
+//    private void checkTarget(AnnotationTarget target, boolean isFullPage) {
+//        assertNotNull(target);
+//        if (isFullPage) {
+//            assertFalse(target.isSpecificResource());
+//            assertNull(target.getSelector());
+//        } else {
+//            assertTrue(target.isSpecificResource());
+//
+//            Selector s = target.getSelector();
+//            assertNotNull(s);
+//            assertTrue(s instanceof FragmentSelector);
+//        }
+//    }
 
     /**
      * Make sure this ID is present, and starts with a well constructed IIIF formatted
