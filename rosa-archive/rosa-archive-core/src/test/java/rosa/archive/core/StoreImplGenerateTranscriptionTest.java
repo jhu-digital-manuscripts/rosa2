@@ -1,28 +1,23 @@
 package rosa.archive.core;
 
-import com.google.inject.Inject;
-import org.junit.Before;
-import org.junit.Test;
-import rosa.archive.core.check.BookChecker;
-import rosa.archive.core.serialize.TranscriptionXmlSerializer;
-import rosa.archive.model.Transcription;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import org.junit.Before;
+import org.junit.Test;
+
+import rosa.archive.core.serialize.TranscriptionXmlSerializer;
+import rosa.archive.model.Transcription;
 
 
 public class StoreImplGenerateTranscriptionTest extends BaseArchiveTest {
-    @Inject
-    private BookChecker bookChecker;
-
     private List<String> errors;
     private List<String> warnings;
 

@@ -307,16 +307,16 @@ public class StoreImplRenameReferencesTest {
     }
 
     // For debugging
-    private void printTarget(ReferenceTarget target) {
-        System.out.println(
-                "<target book_id=\""
-                        + target.getBookId()
-                        + "\" filename=\""
-                        + target.getFilename()
-                        + "\" text=\""
-                        + target.getText()
-                        + "\" />"
-        );
-    }
+//    private void printTarget(ReferenceTarget target) {
+//        System.out.println(
+//                "<target book_id=\""
+//                        + target.getBookId()
+//                        + "\" filename=\""
+//                        + target.getFilename()
+//                        + "\" text=\""
+//                        + target.getText()
+//                        + "\" />"
+//        );
+//    }
 
 }

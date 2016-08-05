@@ -1,12 +1,8 @@
 package rosa.archive.core.util;
 
-import org.xml.sax.SAXException;
-
 import java.io.File;
 import java.io.IOException;
-import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +10,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.apache.commons.io.FileUtils;
+import org.xml.sax.SAXException;
 
 // TODO Validate output as TEI
 // TODO The code has become a bit of a mess as the error handling has changed
@@ -33,35 +32,6 @@ public class TranscriptionConverter {
 	private List<String> errors;
 	private int nextlinenumber;
 	private String foliooverride;
-
-	public static ByteBuffer read(String name, long offset, int length) throws IOException {
-		return read(new File(name), offset, length);
-	}
-
-	public static FileChannel channel(File file, boolean writeable) throws IOException {
-		String opts = writeable ? "rw" : "r";
-		RandomAccessFile fd = new RandomAccessFile(file, opts);
-
-		return fd.getChannel();
-	}
-
-	public static ByteBuffer read(File file, long offset, int length) throws IOException {
-		FileChannel chan = channel(file, false);
-
-		ByteBuffer buf = ByteBuffer.allocate(length);
-		chan.position(offset);
-
-		while (buf.remaining() > 0) {
-			if (chan.read(buf) <= 0) {
-				throw new IOException("Failed to read from channel.");
-			}
-		}
-
-		buf.rewind();
-		chan.close();
-
-		return buf;
-	}
 
 	public TranscriptionConverter() {
 		this.warnings = new ArrayList<>();
@@ -129,7 +99,7 @@ public class TranscriptionConverter {
     }
 
 	public void convert(File infile, String charset, XMLWriter out) throws IOException, SAXException {
-		ByteBuffer buf = read(infile, 0, (int) infile.length());
+	    ByteBuffer buf = ByteBuffer.wrap(FileUtils.readFileToByteArray(infile));
 		String text = Charset.forName(charset).decode(buf).toString();
 
 		convert(text, out);
