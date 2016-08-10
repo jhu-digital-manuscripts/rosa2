@@ -20,7 +20,7 @@
             </activation>
 
             <properties>
-                <archive.path>/mnt</archive.path>
+                <archive.path>/mnt/archive</archive.path>
                 <collection.name>rosecollection</collection.name>
                 <search.index.path>webapps/rose/WEB-INF/lucene</search.index.path>
                 <gwt.output.style>pretty</gwt.output.style>
@@ -33,7 +33,7 @@
             <id>production</id>
 
             <properties>
-                <archive.path>/mnt</archive.path>
+                <archive.path>/mnt/archive</archive.path>
                 <collection.name>rosecollection</collection.name>
                 <search.index.path>webapps/rose/WEB-INF/lucene</search.index.path>
                 <gwt.output.style>obf</gwt.output.style>
