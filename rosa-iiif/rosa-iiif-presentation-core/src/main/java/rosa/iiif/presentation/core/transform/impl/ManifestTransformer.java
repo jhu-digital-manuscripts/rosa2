@@ -146,7 +146,7 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
             if (metadata.getDate() != null) {
                 map.put("date", new HtmlValue(metadata.getDate(), lang));
             }
-            if (metadata.getDimensions() != null) {
+            if (metadata.getDimensions() != null && !metadata.getDimensions().replaceAll("\\s+", "").equals("-1x-1")) {
                 map.put("dimensions", new HtmlValue(metadata.getDimensions(), lang));
             }
             if (metadata.getDimensionUnits() != null) {
