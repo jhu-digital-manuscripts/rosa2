@@ -11,18 +11,15 @@ import java.util.List;
  * &lt;/internal_ref&gt;
  *
  * <h3>internal_ref</h3>
- * <p>
  * Attributes:
  * <ul>
  * <li>text (required) - source text</li>
  * </ul>
- * </p>
  * <p>
  * Contains elements:
  * <ul>
  * <li>target : list at least one {@link ReferenceTarget}</li>
  * </ul>
- * </p>
  *
  */
 public class InternalReference implements Serializable {

@@ -93,11 +93,11 @@ public class AORTranscriptionChecker {
      * not validated against the schema here, however. After parsing the files,
      * some content is checked for logical consistency.
      *
-     * This tool will perform its operations on the given {@param path}. If it is
+     * This tool will perform its operations on the given <em>path</em>. If it is
      * specified to be a book, the book check will be run on the path, otherwise,
      * the book check will be run on all subdirectories of the given path. If no
-     * {@param spreadsheetDirectory} is specified, it is assumed that all
-     * spreadsheets are held in the {@param path}. Any errors or inconsistencies
+     * <em>spreadsheetDirectory</em> is specified, it is assumed that all
+     * spreadsheets are held in the <em>path</em>. Any errors or inconsistencies
      * found with the data will be output to the given PrintStream.
      *
      * In the &lt;page&gt; element, there is a reference to an image file name.

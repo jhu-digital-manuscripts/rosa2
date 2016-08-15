@@ -6,17 +6,13 @@ import java.io.Serializable;
  *
  * &lt;target filename="" book_id="" text="" /&gt;
  *
- * <h3>
- * target
- * </h3>
- * <p>
+ * <h3>target</h3>
  * Attributes:
  * <ul>
  * <li>filename (required) : target file to link to</li>
  * <li>book_id (required) : ID of book where the reference points</li>
  * <li>text (required) : ?? </li>
  * </ul>
- * </p>
  *
  */
 public class ReferenceTarget implements Serializable {

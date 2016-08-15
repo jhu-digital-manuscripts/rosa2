@@ -324,7 +324,7 @@ public class Book implements HasId, Serializable {
     /**
      * Guess name of image from fragment.
      * 
-     * @param frag
+     * @param frag name fragment
      * @return image id or null
      */
     public String guessImageName(String frag) {

@@ -1,7 +1,5 @@
 package rosa.archive.model.redtag;
 
-import rosa.archive.model.redtag.Item;
-
 /**
  *
  */

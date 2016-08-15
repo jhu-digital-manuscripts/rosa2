@@ -65,6 +65,8 @@ public class IllustrationTagging implements HasId, Iterable<Illustration>, Seria
 
     
     /**
+     * @param book book object
+     * @param image_id id of image
      * @return indices of Illustrations on an image in a book
      */
     public List<Integer> findImageIndices(Book book, String image_id) {
