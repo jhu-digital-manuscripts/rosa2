@@ -130,7 +130,7 @@ public class FSIViewerHTMLBuilder {
      * @return HTML for an embedded FSI flash viewer
      */
     public String build() {
-        String url = fsi_server_url + "viewer/fsi.swf?" + urlParameters();
+        String url = fsi_server_url + "/viewer/fsi.swf?" + urlParameters();
 
         return "<OBJECT "
                 + "id=\"" + type.getViewerId() + "\" "

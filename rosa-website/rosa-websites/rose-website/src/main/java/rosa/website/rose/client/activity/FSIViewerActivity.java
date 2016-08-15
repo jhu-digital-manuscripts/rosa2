@@ -267,7 +267,7 @@ public class FSIViewerActivity implements Activity {
         String fsiHtml = new FSIViewerHTMLBuilder()
                 .book(collection, book, language)
                 .type(type)
-                .fsiServerUrl(WebsiteConfig.INSTANCE.fsiUrl())
+                .fsiServerUrl(WebsiteConfig.INSTANCE.fsiFlashUrl())
                 .fsiBookData(URL.encode(fsi_xml_url))
                 .initialImage(startPage)
                 .build();

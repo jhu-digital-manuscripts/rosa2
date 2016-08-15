@@ -37,9 +37,14 @@ public interface WebsiteConfig extends Constants {
     String csvHistory();
 
     /**
-     * @return FSI URL
+     * @return FSI URL for getting flash viewer
      */
-    String fsiUrl();
+    String fsiFlashUrl();
+
+    /**
+     * @return FSI server URL for getting images
+     */
+    String fsiServerUrl();
 
     /**
      * @return should Google analytics be tracked?
