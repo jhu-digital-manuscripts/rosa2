@@ -47,7 +47,7 @@ interface JHSearchFieldProperties {
     String SYMBOL_DESCRIPTION = "Simple drawings that carry some abstract and consistent meaning.";
     String[] SYMBOL_VALUES = {
              "Asterisk", "Asterisk",
-             "Bisected_circle", "Bisectedcircle",
+             "Bisected_circle", "Bisected Circle",
              "Crown", "Crown",
              "JC", "JC",
              "HT", "HT",
