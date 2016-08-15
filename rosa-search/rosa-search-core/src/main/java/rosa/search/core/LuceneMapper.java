@@ -28,11 +28,11 @@ public interface LuceneMapper {
     /**
      * Return Lucene field corresponding to a search field of a given type.
      * 
-     * @param field
-     * @param type
+     * @param field search field
+     * @param type search field type (language)
      * @return lucene field
      */
-    String getLuceneField(SearchField field, SearchFieldType ype);
+    String getLuceneField(SearchField field, SearchFieldType type);
 
     /**
      * @return Analyzer used for all documents.
@@ -40,7 +40,7 @@ public interface LuceneMapper {
     Analyzer getAnalyzer();
 
     /**
-     * @param name
+     * @param name lucene field
      * @return Search field name corresponding to a lucene field.
      */
     String getSearchFieldNameFromLuceneField(String name);
@@ -49,7 +49,7 @@ public interface LuceneMapper {
      * Transform a search query into a lucene query.
      * Throw an IllegalArgumentException if the query cannot be handled, perhaps because of an unknown field name.
      * 
-     * @param query
+     * @param query rosa query
      * @return Lucene query
      */
     org.apache.lucene.search.Query createLuceneQuery(Query query) throws IllegalArgumentException;
@@ -58,13 +58,13 @@ public interface LuceneMapper {
     /**
      * Create a lucene query from a string no matter what the contents of the string.
      * 
-     * @param query
+     * @param query query string
      * @return Lucene query or null if query string has no terms.
      */
     org.apache.lucene.search.Query createLuceneQuery(String query);
     
     /**
-     * @param query .
+     * @param query rosa query
      * @return Return the names of lucene field used by this query which should be included in context
      */
     Set<String> getLuceneContextFields(Query query);
@@ -76,7 +76,7 @@ public interface LuceneMapper {
      * @param col BookCollection object
      * @param book Book object
      * @return list of documents representing the book
-     * @throws IOException
+     * @throws IOException .
      */
     List<Document> createDocuments(BookCollection col, Book book) throws IOException;
 

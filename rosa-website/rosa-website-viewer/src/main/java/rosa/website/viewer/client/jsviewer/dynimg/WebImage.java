@@ -18,10 +18,10 @@ public class WebImage extends FocusWidget implements RenderedImage {
 
 	/**
 	 * 
-	 * @param master
-	 * @param width
-	 * @param height
-	 * @param url
+	 * @param master master image
+	 * @param width width in pixels
+	 * @param height height in pixels
+	 * @param url URL of this image
 	 * @param crop
 	 *            (left, top, right, bottom) gives location in master image
 	 */

@@ -6,7 +6,8 @@ package rosa.website.viewer.client.jsviewer.dynimg;
 public abstract class ImageServer {
     /**
      * 
-     * @param img
+     * @param image
+     *            master image
      * @param width
      *            of rendered image
      * @param height
@@ -29,15 +30,13 @@ public abstract class ImageServer {
      * Render image into the specified square, preserving the aspect ratio. The
      * actual image may be smaller than the square.
      * 
-     * @param image
-     * @param width
-     * @param height
-     * @param crop
-     * @return
+     * @param image master image
+     * @param square_size dimension of image square in pixels
+     * @param crop crop dimensions [x, y, w, h]
+     * @return WebImage object
      */
 
-    public WebImage renderToSquare(MasterImage image, int square_size,
-            int... crop) {
+    public WebImage renderToSquare(MasterImage image, int square_size, int... crop) {
         int width, height;
 
         if (image.width() > image.height()) {
@@ -66,16 +65,15 @@ public abstract class ImageServer {
      * Render image into the specified rectangle, preserving the aspect ratio. The
      * actual image may be smaller than the square.
      * 
-     * @param image
-     * @param width
-     * @param height
-     * @param crop
-     * @return
+     * @param image master image
+     * @param rect_width desired width in pixels
+     * @param rect_height desired height in pixels
+     * @param crop crop parameters
+     * @return the WebImage
      */
 
     // TODO wrong
-    public WebImage renderToRectangle(MasterImage image, int rect_width, int rect_height,
-            int... crop) {
+    public WebImage renderToRectangle(MasterImage image, int rect_width, int rect_height, int... crop) {
         int width, height;
 
         if (image.width() > image.height()) {
@@ -103,15 +101,13 @@ public abstract class ImageServer {
     /**
      * Render image into the specified width, preserving the aspect ratio.
      * 
-     * @param image
-     * @param width
-     * @param height
-     * @param crop
-     * @return
+     * @param image master image
+     * @param render_width desired width in pixels
+     * @param crop crop parameters
+     * @return the WebImage
      */
 
-    public WebImage renderToWidth(MasterImage image, int render_width,
-            int... crop) {
+    public WebImage renderToWidth(MasterImage image, int render_width, int... crop) {
         int height = (render_width * image.height()) / image.width();
 
         return new WebImage(image, render_width, height, renderToUrl(image,
@@ -122,13 +118,12 @@ public abstract class ImageServer {
      * All tiles except perhaps the right most have the same width. All tiles
      * except perhaps the bottom most have the same height.
      * 
-     * @param master
-     * @param tiled_width
-     * @param tiled_height
-     * @return
+     * @param master master image
+     * @param tiled_width width of image tiles in pixels
+     * @param tiled_height height of image tiles in pixels
+     * @return 2D array of WebImages for render
      */
-    public WebImage[][] tile(MasterImage master, int tiled_width,
-            int tiled_height) {
+    public WebImage[][] tile(MasterImage master, int tiled_width, int tiled_height) {
         int rows = tiled_height / tileSize();
 
         if ((tiled_height % tileSize()) != 0) {

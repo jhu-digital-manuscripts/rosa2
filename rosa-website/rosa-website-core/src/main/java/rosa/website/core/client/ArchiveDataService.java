@@ -25,15 +25,15 @@ import java.io.IOException;
  *
  * EX:
  * <code>
- * <servlet>
- *     <servlet-name>archiveService</servlet-name>
- *     <servlet-class>rosa.website.core.server.ArchiveDataServiceImpl</servlet-class>
- * </servlet>
+ * &lt;servlet&gt;
+ *     &lt;servlet-name&gt;archiveService&lt;/servlet-name&gt;
+ *     &lt;servlet-class&gt;rosa.website.core.server.ArchiveDataServiceImpl&lt;/servlet-class&gt;
+ * &lt;/servlet&gt;
  *
- * <servlet-mapping>
- *     <servlet-name>archiveService</servlet-name>
- *     <url-pattern>/data</url-pattern>
- * </servlet-mapping>
+ * &lt;servlet-mapping&gt;
+ *     &lt;servlet-name&gt;archiveService&lt;/servlet-name&gt;
+ *     &lt;url-pattern&gt;/data&lt;/url-pattern&gt;
+ * &lt;/servlet-mapping&gt;
  * </code>
  */
 @RemoteServiceRelativePath("data")
@@ -43,7 +43,8 @@ public interface ArchiveDataService extends RemoteService {
      * @param lang desired language
      * @param type type of CSV to return
      * @return CSV data
-     * @throws IOException
+     * @throws IOException if archive is not available
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     CSVData loadCSVData(String collection, String lang, CSVType type) throws IOException, RosaConfigurationException;
 
@@ -56,6 +57,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param lang language code
      * @return collection data
      * @throws IOException if the collection does not exist or is not available
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     CollectionCSV loadCollectionData(String collection, String lang) throws IOException, RosaConfigurationException;
 
@@ -66,6 +68,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param lang language code
      * @return book data
      * @throws IOException if the collection or any books within are not available
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     BookDataCSV loadCollectionBookData(String collection, String lang) throws IOException, RosaConfigurationException;
 
@@ -78,6 +81,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param lang language code
      * @return book selection data
      * @throws IOException if the collection or any books within are not available
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     BookSelectList loadBookSelectionData(String collection, SelectCategory category, String lang) throws IOException, RosaConfigurationException;
 
@@ -89,6 +93,7 @@ public interface ArchiveDataService extends RemoteService {
      * @param collection collection in the archive
      * @return illustration titles
      * @throws IOException if the collection or any books are unavailable
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     IllustrationTitleCSV loadIllustrationTitles(String collection) throws IOException, RosaConfigurationException;
 
@@ -99,7 +104,8 @@ public interface ArchiveDataService extends RemoteService {
      * @param book name of the book
      * @param lang language code
      * @return permission statement for use of the book
-     * @throws IOException
+     * @throws IOException if archive is not available or book/collection do not exist
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     String loadPermissionStatement(String collection, String book, String lang) throws IOException, RosaConfigurationException;
 
@@ -109,7 +115,8 @@ public interface ArchiveDataService extends RemoteService {
      * @param collection name of collection
      * @param book name of book
      * @return image list as a String
-     * @throws IOException
+     * @throws IOException if archive is not available
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     String loadImageListAsString(String collection, String book) throws IOException, RosaConfigurationException;
 
@@ -119,7 +126,8 @@ public interface ArchiveDataService extends RemoteService {
      * @param collection name of collection
      * @param book name of book
      * @return image list as a String
-     * @throws IOException
+     * @throws IOException .
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     ImageList loadImageList(String collection, String book) throws IOException, RosaConfigurationException;
 
@@ -130,7 +138,8 @@ public interface ArchiveDataService extends RemoteService {
      * @param book name of book
      * @param language language to return data
      * @return model object for the FSI flash viewer
-     * @throws IOException
+     * @throws IOException .
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     FSIViewerModel loadFSIViewerModel(String collection, String book, String language) throws IOException, RosaConfigurationException;
 
@@ -141,7 +150,8 @@ public interface ArchiveDataService extends RemoteService {
      * @param book name of book
      * @param language language to return the data
      * @return data model object
-     * @throws IOException
+     * @throws IOException .
+     * @throws RosaConfigurationException if archive has been misconfigured
      */
     BookDescriptionViewModel loadBookDescriptionModel(String collection, String book, String language) throws IOException, RosaConfigurationException;
 }

@@ -71,7 +71,7 @@ public class WebsiteLuceneMapper extends BaseLuceneMapper {
      * @param col BookCollection object
      * @param book Book object
      * @return list of documents representing the book
-     * @throws IOException
+     * @throws IOException .
      */
     public List<Document> createDocuments(BookCollection col, Book book)
             throws IOException {
@@ -172,8 +172,8 @@ public class WebsiteLuceneMapper extends BaseLuceneMapper {
      *
      * @param src source XML
      * @return String of all textual content
-     * @throws SAXException
-     * @throws IOException
+     * @throws SAXException malformed XML
+     * @throws IOException search service unavailable
      */
     private static String xml_to_text(InputSource src) throws SAXException, IOException {
         XMLReader r = XMLReaderFactory.createXMLReader();

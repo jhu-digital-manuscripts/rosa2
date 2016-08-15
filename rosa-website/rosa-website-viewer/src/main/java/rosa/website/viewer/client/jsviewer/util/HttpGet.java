@@ -19,8 +19,8 @@ public class HttpGet {
 	 * 
 	 * cb.success returns a String[] parallel to urls with the results
 	 * 
-	 * @param urls
-	 * @param cb
+	 * @param urls array of URLs
+	 * @param cb callback
 	 */
 	public static void request(final String[] urls, final Callback<String[]> cb) {
 		final String[] result = new String[urls.length];

@@ -20,10 +20,10 @@ public interface SearchService {
      * The resume token in the result and be used to efficiently retrieve more
      * matches.
      * 
-     * @param query
-     * @param opts
+     * @param query rosa query object
+     * @param opts search options
      * @return result
-     * @throws IOException
+     * @throws IOException if search service is unavailable
      */
     SearchResult search(Query query, SearchOptions opts) throws IOException;
     
@@ -31,22 +31,22 @@ public interface SearchService {
      * Index the collection indicated. Existing content in the index with same
      * identifier will be replaced.
      * 
-     * @param store
-     * @param collection_id
-     * @throws IOException
+     * @param store archive store
+     * @param collection_id ID of collection to index
+     * @throws IOException if archive or search service is unavailable
      */
     void update(Store store, String collection_id) throws IOException;
 
     /**
      * Delete all indexed content.
      * 
-     * @throws IOException
+     * @throws IOException if service is unavailable
      */
     void clear() throws IOException;
 
     /**
      * @return Whether or not the index is empty of content.
-     * @throws IOException 
+     * @throws IOException  if service is unavailable
      */
     boolean isEmpty() throws IOException;
     

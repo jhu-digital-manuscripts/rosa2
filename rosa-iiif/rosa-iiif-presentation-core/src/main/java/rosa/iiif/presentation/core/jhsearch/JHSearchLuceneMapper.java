@@ -78,7 +78,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	 * @param book
 	 *            Book object
 	 * @return list of documents representing the book
-	 * @throws IOException
+	 * @throws IOException if search service is not available
 	 */
 	public List<Document> createDocuments(BookCollection col, Book book) throws IOException {
 		List<Document> result = new ArrayList<>();
@@ -139,8 +139,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	 * @param src
 	 *            source XML
 	 * @return String of all textual content
-	 * @throws SAXException
-	 * @throws IOException
+	 * @throws SAXException if XMl is malformed
+	 * @throws IOException if search service is not available
 	 */
 	private static String xml_to_text(InputSource src) throws SAXException, IOException {
 		XMLReader r = XMLReaderFactory.createXMLReader();
@@ -344,19 +344,12 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 			}
 		});
 
-		langs.forEach(lc -> addField(doc, JHSearchField.LANGUAGE, lc)); // Index
-																		// languages
-																		// with
-																		// all
-																		// annotations
-		marg_langs.forEach(lc -> addField(doc, JHSearchField.MARGINALIA_LANGUAGE, lc)); // Index
-																						// languages
-																						// within
-																						// marginalia
-																						// only
+		// Index languages with all annotations
+		langs.forEach(lc -> addField(doc, JHSearchField.LANGUAGE, lc));
+		// Index languages within marginalia only
+		marg_langs.forEach(lc -> addField(doc, JHSearchField.MARGINALIA_LANGUAGE, lc));
 
 		// Index method used
-
 		Set<String> methods = new HashSet<>();
 
 		page.getUnderlines().forEach(a -> {

@@ -16,18 +16,18 @@ import rosa.search.model.QueryOperation;
  * </pre>
  * 
  * Grammar:
- * <pre>
- * Query -> Term | "(" Query (Operation Query)+ ")" [Must use same operation]
- * Operation -> "&" | "|"
- * Term -> Field ~ ":" ~ Value
- * Field -> [\w_-]+
- * Value -> "'" ~ .* ~ "'" [Backslash is escape character]
- * </pre>
+ *
+ * Query -&gt; Term | "(" Query (Operation Query)+ ")" [Must use same operation]
+ * Operation -&gt; "&amp;" | "|"
+ * Term -&gt; Field ~ ":" ~ Value
+ * Field -&gt; [\w_-]+
+ * Value -&gt; "'" ~ .* ~ "'" [Backslash is escape character]
  */
 public class QueryParser {
     /**
+     * @param input .
      * @return the next query present in input.
-     * @throws ParseException
+     * @throws ParseException .
      */
     public static Query parseQuery(ParserInput input) throws ParseException {
        return parseQuery(input, true);

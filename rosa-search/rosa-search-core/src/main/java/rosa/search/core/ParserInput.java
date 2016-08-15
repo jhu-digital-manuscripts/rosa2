@@ -9,14 +9,14 @@ public interface ParserInput {
 
 	/**
 	 * @return the next character and iterate
-	 * @throws ParseException
+	 * @throws ParseException .
 	 */
 
 	public char next() throws ParseException;
 	
 	/**
 	 * @return the next character without iterating.
-	 * @throws ParseException 
+	 * @throws ParseException .
 	 */
 	public char peek() throws ParseException;
 	

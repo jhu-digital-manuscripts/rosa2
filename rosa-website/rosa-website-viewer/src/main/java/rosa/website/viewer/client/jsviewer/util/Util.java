@@ -95,7 +95,7 @@ public class Util {
      * Does not handle newlines in cell values. We ensure cells do not have
      * newlines on client side.
      * 
-     * @param csv
+     * @param csv CSV data as a string
      * @return table
      */
     public static String[][] parseCSVTable(String csv) {
@@ -113,11 +113,11 @@ public class Util {
      * Popup window and display the given html. Name must not contain spaces or
      * special chars.
      * 
-     * @param name
-     * @param width
-     * @param height
-     * @param html
-     * @param opts
+     * @param name window name
+     * @param width window width in pixels
+     * @param height window height in pixels
+     * @param html window content HTML
+     * @param opts window options
      */
     public static native void popupWindowHTML(String name, int width, int height, String html, String opts) /*-{
                                                                                                             var w = $wnd.open('', name, "height=" + height + ",width=" + width + "," + opts);
@@ -173,8 +173,8 @@ public class Util {
     /**
      * Parse arguments encoded with toToken.
      * 
-     * @param token
-     * @return
+     * @param token token string to parse
+     * @return list of arguments from the token
      */
     public static List<String> parseTokenArguments(String token) {
         List<String> args = new ArrayList<String>(4);
@@ -220,9 +220,9 @@ public class Util {
      * Build up a token with the given arguments. Null arguments are ignored.
      * The prefix is returned if there are no arguments.
      * 
-     * @param prefix
-     * @param args
-     * @return
+     * @param prefix token prefix
+     * @param args arguments to put into token
+     * @return the final token string
      */
 
     public static String toToken(String prefix, String... args) {
