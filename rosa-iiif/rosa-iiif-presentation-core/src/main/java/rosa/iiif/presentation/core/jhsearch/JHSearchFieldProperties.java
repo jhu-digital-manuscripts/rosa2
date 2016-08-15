@@ -41,13 +41,13 @@ interface JHSearchFieldProperties {
              "tilde", "Tilde",
              "triple_dash", "Triple Dash",
              "vertical_bar", "Vertical Bar",
-             "sign", "Sign"
+             "X_sign", "X Sign"
     };
     String SYMBOL_LABEL = "Symbol";
     String SYMBOL_DESCRIPTION = "Simple drawings that carry some abstract and consistent meaning.";
     String[] SYMBOL_VALUES = {
              "Asterisk", "Asterisk",
-             "Bisectedcircle", "Bisectedcircle",
+             "Bisected_circle", "Bisectedcircle",
              "Crown", "Crown",
              "JC", "JC",
              "HT", "HT",
