@@ -17,6 +17,7 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.archive.core.util.Annotations;
@@ -32,6 +33,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
+
+import org.apache.commons.lang3.StringEscapeUtils;
 
 public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
         AORAnnotatedPageConstants {
@@ -147,23 +150,25 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return anno;
     }
 
+    // Must make sure to escape text appropriately
     private String marginaliaToDisplayHtml(Marginalia marg) {
-
-        String transcription = "";
-        List<String> people = new ArrayList<>();
-        List<String> books = new ArrayList<>();
-        List<String> locs = new ArrayList<>();
+        StringBuilder transcription = new StringBuilder();
+        StringBuilder people = new StringBuilder();
+        StringBuilder books = new StringBuilder();
+        StringBuilder locs = new StringBuilder();
+        StringBuilder xrefs = new StringBuilder();
 
         // Left, top, right, bottom
         boolean[] orientation = new boolean[4];
 
         for (MarginaliaLanguage lang : marg.getLanguages()) {
             for (Position pos : lang.getPositions()) {
-                transcription += listToString(pos.getTexts());
-                people.addAll(pos.getPeople());
-                books.addAll(pos.getBooks());
-                locs.addAll(pos.getLocations());
-
+                add(transcription, pos.getTexts(), " ");
+                add(people, pos.getPeople(), ", ");
+                add(books, pos.getBooks(), ", ");
+                add(locs, pos.getLocations(), ", ");
+                add_xrefs(xrefs, pos.getxRefs(), ", ");
+                
                 // No default case. If orientation is not 0, 90, 180, 270 then do nothing
                 switch (pos.getOrientation()) {
                     case 0:
@@ -182,7 +187,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             }
         }
 
-        StringBuilder sb = new StringBuilder("<div>");
+        StringBuilder html = new StringBuilder("<div>");
 
         // Add icon for position(s) on page
         List<Location> positions = new ArrayList<>();
@@ -192,68 +197,59 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         );
 
         // Add span container for icons + orientation arrows (only for marginalia)
-        sb.append("<span class=\"aor-icon-container\">");
+        html.append("<span class=\"aor-icon-container\">");
         if (orientation[0]) {   // Left orientation
-            sb.append("<i class=\"orientation arrow-left\"></i>");
+            html.append("<i class=\"orientation arrow-left\"></i>");
         }
         if (orientation[1]) {   // Up orientation
-            sb.append("<i class=\"orientation arrow-top\"></i>");
+            html.append("<i class=\"orientation arrow-top\"></i>");
         }
-        sb.append(locationToHtml(positions.toArray(new Location[positions.size()])));
+        html.append(locationToHtml(positions.toArray(new Location[positions.size()])));
         if (orientation[2]) {   // Right orientation
-            sb.append("<i class=\"orientation arrow-right\"></i>");
+            html.append("<i class=\"orientation arrow-right\"></i>");
         }
         if (orientation[3]) {   // Down orientation
-            sb.append("<i class=\"orientation arrow-bottom\"></i>");
+            html.append("<i class=\"orientation arrow-bottom\"></i>");
         }
-        sb.append("</span>");
+        html.append("</span>");
 
-        sb.append("<p>");
-        sb.append(transcription);
-        sb.append("</p>");
+        html.append("<p>");
+        html.append(StringEscapeUtils.escapeHtml4(transcription.toString()));
+        html.append("</p>");
 
         if (marg.getTranslation() != null && !marg.getTranslation().isEmpty()) {
-            sb.append("<p class=\"italic\">[");
-            sb.append(marg.getTranslation());
-            sb.append("]</p>");
+            html.append("<p class=\"italic\">[");
+            html.append(StringEscapeUtils.escapeHtml4(marg.getTranslation()));
+            html.append("]</p>");
         }
 
-        if (!people.isEmpty()) {
-            sb.append("<p><span class=\"emphasize\">People:</span> ");
-            for (int i = 0; i < people.size(); i++) {
-                if (i > 0) {
-                    sb.append(", ");
-                }
-                // TODO Will be a link eventually!
-                sb.append(people.get(i));
-            }
-            sb.append("</p>");
+        if (people.length() > 0) {
+            html.append("<p><span class=\"emphasize\">People:</span> ");
+            html.append(StringEscapeUtils.escapeHtml4(trim_right(people, 2)));
+            html.append("</p>");
         }
 
-        if (!books.isEmpty()) {
-            sb.append("<p><span class=\"emphasize\">Books:</span> ");
-            for (int i = 0; i < books.size(); i++) {
-                if (i > 0) {
-                    sb.append(", ");
-                }
-                sb.append(books.get(i));
-            }
-            sb.append("</p>");
+        if (books.length() > 0) {
+            html.append("<p><span class=\"emphasize\">Books:</span> ");
+            html.append(StringEscapeUtils.escapeHtml4(trim_right(books, 2)));
+            html.append("</p>");
         }
 
-        if (!locs.isEmpty()) {
-            sb.append("<p><span class=\"emphasize\">Locations:</span> ");
-            for (int i = 0; i < locs.size(); i++) {
-                if (i > 0) {
-                    sb.append(", ");
-                }
-                sb.append(locs.get(i));
-            }
-            sb.append("</p>");
+        if (locs.length() > 0) {
+            html.append("<p><span class=\"emphasize\">Locations:</span> ");
+            html.append(StringEscapeUtils.escapeHtml4(trim_right(locs, 2)));
+            html.append("</p>");
+        }
+        
+        if (xrefs.length() > 0) {
+            html.append("<p><span class=\"emphasize\">Cross References:</span> ");
+            html.append(StringEscapeUtils.escapeHtml4(trim_right(xrefs, 2)));
+            html.append("</p>");
         }
 
-        sb.append("</div>");
-        return sb.toString();
+        html.append("</div>");
+        
+        return html.toString();
     }
 
     /**
@@ -356,13 +352,36 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
     }
 
-    private String listToString(List<String> list) {
-        StringBuilder sb = new StringBuilder();
-        for (String str : list) {
-            sb.append(str);
-            sb.append(' ');
+    // Add strings to builder separated by the given string and ending with the separator
+    private void add(StringBuilder sb, List<String> list, String sep) {
+        list.forEach(s -> {
+            sb.append(s);
+            sb.append(sep);
+        });
+    }
+
+    
+    
+    // Add formatted xrefs to builder separated by the given string and ending with the separator
+    private void add_xrefs(StringBuilder sb, List<XRef> list, String sep) {
+        list.forEach(x -> {
+            sb.append(format_xref(x));
+            sb.append(sep);
+        });
+    }
+    
+    // return string from builder with n characters trimmed off right if they exist
+    
+    private String trim_right(StringBuilder sb, int n) {
+        if (sb.length() < n) {
+            return "";
         }
-        return sb.toString();
+        
+        return sb.substring(0, sb.length() - n);
+    }
+    
+    private String format_xref(XRef xref) {
+        return xref.getPerson() + " (" + xref.getTitle() + ")";
     }
 
     private BookImage getPageImage(ImageList images, String page) {
