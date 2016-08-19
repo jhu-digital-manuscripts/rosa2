@@ -156,7 +156,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         StringBuilder people = new StringBuilder();
         StringBuilder books = new StringBuilder();
         StringBuilder locs = new StringBuilder();
-        StringBuilder xrefs = new StringBuilder();
+        StringBuilder xrefs_html = new StringBuilder();
 
         // Left, top, right, bottom
         boolean[] orientation = new boolean[4];
@@ -167,7 +167,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 add(people, pos.getPeople(), ", ");
                 add(books, pos.getBooks(), ", ");
                 add(locs, pos.getLocations(), ", ");
-                add_xrefs(xrefs, pos.getxRefs(), ", ");
+                add_xrefs(xrefs_html, pos.getxRefs(), "; ");
                 
                 // No default case. If orientation is not 0, 90, 180, 270 then do nothing
                 switch (pos.getOrientation()) {
@@ -241,9 +241,9 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             html.append("</p>");
         }
         
-        if (xrefs.length() > 0) {
+        if (xrefs_html.length() > 0) {
             html.append("<p><span class=\"emphasize\">Cross References:</span> ");
-            html.append(StringEscapeUtils.escapeHtml4(trim_right(xrefs, 2)));
+            html.append(trim_right(xrefs_html, 2));
             html.append("</p>");
         }
 
@@ -365,7 +365,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     // Add formatted xrefs to builder separated by the given string and ending with the separator
     private void add_xrefs(StringBuilder sb, List<XRef> list, String sep) {
         list.forEach(x -> {
-            sb.append(format_xref(x));
+            sb.append(format_xref_as_html(x));
             sb.append(sep);
         });
     }
@@ -380,8 +380,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return sb.substring(0, sb.length() - n);
     }
     
-    private String format_xref(XRef xref) {
-        return xref.getPerson() + " (" + xref.getTitle() + ")";
+    private String format_xref_as_html(XRef xref) {
+        return StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", <i>" + StringEscapeUtils.escapeHtml4(xref.getTitle()) + "</i>";
     }
 
     private BookImage getPageImage(ImageList images, String page) {
