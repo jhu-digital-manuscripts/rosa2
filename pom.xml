@@ -9,6 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0.0</version>
 
+    <scm>
+        <connection>scm:git:https://github.com/jhu-digital-manuscripts/rosa2.git</connection>
+    </scm>
+
     <modules>
         <module>rosa-archive</module>
         <module>rosa-iiif</module>
@@ -30,6 +34,7 @@
         <mvn.war.plugin.version>2.6</mvn.war.plugin.version>
         <mvn.gwt.plugin.version>${gwt.version}</mvn.gwt.plugin.version>
         <mvn.source.plugin.version>2.4</mvn.source.plugin.version>
+        <mvn.buildnumber.plugin.version>1.4</mvn.buildnumber.plugin.version>
 
         <!-- Dependency versions -->
         <guice.version>4.0</guice.version>
@@ -41,7 +46,7 @@
         <commons-io.version>2.4</commons-io.version>
         <commons-codec.version>1.9</commons-codec.version>
         <commons-cli.version>1.2</commons-cli.version>
-	<lucene.version>5.2.1</lucene.version>
+	    <lucene.version>5.2.1</lucene.version>
     </properties>
 
     <dependencyManagement>
@@ -178,23 +183,23 @@
               <version>${lucene.version}</version>
             </dependency>	    
 
-	    <dependency>
-	      <groupId>org.apache.lucene</groupId>
-	      <artifactId>lucene-queryparser</artifactId>
-	      <version>${lucene.version}</version>
-	    </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-queryparser</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
 
-	    <dependency>
-              <groupId>com.twelvemonkeys.imageio</groupId>
-              <artifactId>imageio-tiff</artifactId>
-              <version>3.2.1</version>
-	    </dependency>
+            <dependency>
+                <groupId>com.twelvemonkeys.imageio</groupId>
+                <artifactId>imageio-tiff</artifactId>
+                <version>3.2.1</version>
+            </dependency>
 
-	    <dependency>
-              <groupId>rosa</groupId>
-              <artifactId>lucene-latin-stemmer</artifactId>
-              <version>1.0.0</version>
-	    </dependency>
+            <dependency>
+                <groupId>rosa</groupId>
+                <artifactId>lucene-latin-stemmer</artifactId>
+                <version>1.0.0</version>
+            </dependency>
 
             <!-- Testing dependencies -->
 
@@ -234,7 +239,7 @@
                 <groupId>rosa.archive</groupId>
                 <artifactId>rosa-archive-core</artifactId>
                 <version>${project.version}</version>
-	        <type>test-jar</type>
+	            <type>test-jar</type>
             </dependency>
 
             <dependency>
@@ -286,15 +291,15 @@
             </dependency>
 
             <dependency>
-                  <groupId>rosa.search</groupId>
-                  <artifactId>rosa-search</artifactId>
-                  <version>${project.version}</version>
+                <groupId>rosa.search</groupId>
+                <artifactId>rosa-search</artifactId>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                  <groupId>rosa.search</groupId>
-                  <artifactId>rosa-search-core</artifactId>
-                  <version>${project.version}</version>
+                <groupId>rosa.search</groupId>
+                <artifactId>rosa-search-core</artifactId>
+                <version>${project.version}</version>
             </dependency>
 
             <dependency>
@@ -343,6 +348,12 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>${mvn.war.plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>buildnumber-maven-plugin</artifactId>
+                    <version>${mvn.buildnumber.plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
