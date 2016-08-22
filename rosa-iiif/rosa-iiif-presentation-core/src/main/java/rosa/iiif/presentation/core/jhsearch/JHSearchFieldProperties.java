@@ -67,7 +67,7 @@ interface JHSearchFieldProperties {
     String DRAWING_LABEL = "Drawing";
     String DRAWING_DESCRIPTION = "Drawings or diagrams.";
     String CROSS_REFERENCE_LABEL = "Cross Reference";
-    String CROSS_REFERENCE_DESCRIPTION = "";
+    String CROSS_REFERENCE_DESCRIPTION = "Quotes from sources not explicitly identified by the reader.";
     String TRANSCRIPTION_LABEL = "Transcription";
     String TRANSCRIPTION_DESCRIPTION = "";
     String ILLUSTRATION_LABEL = "Transcription";
