@@ -66,6 +66,12 @@ interface JHSearchFieldProperties {
     String NUMERAL_DESCRIPTION = "Numbers written in the book.";
     String DRAWING_LABEL = "Drawing";
     String DRAWING_DESCRIPTION = "Drawings or diagrams.";
+    String[] DRAWING_VALUES = {
+            "face", "Face",
+            "manicule", "Manicule",
+            "map", "Map",
+            "florilegium", "Florilegium"
+    };
     String CROSS_REFERENCE_LABEL = "Cross Reference";
     String CROSS_REFERENCE_DESCRIPTION = "Quotes from sources not explicitly identified by the reader.";
     String TRANSCRIPTION_LABEL = "Transcription";

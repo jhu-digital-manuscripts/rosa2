@@ -22,7 +22,7 @@ public enum JHSearchField implements SearchField, JHSearchFieldProperties {
     MARK(true, false, true, MARK_LABEL, MARK_DESCRIPTION, MARK_VALUES, SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
     SYMBOL(true, false,true, SYMBOL_LABEL, SYMBOL_DESCRIPTION, SYMBOL_VALUES, SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
     NUMERAL(true,false,true, NUMERAL_LABEL, NUMERAL_DESCRIPTION, SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
-    DRAWING(true,false,true, DRAWING_LABEL, DRAWING_DESCRIPTION, SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    DRAWING(true,false,true, DRAWING_LABEL, DRAWING_DESCRIPTION, DRAWING_VALUES, SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
     CROSS_REFERENCE(true, false,true, CROSS_REFERENCE_LABEL, CROSS_REFERENCE_DESCRIPTION, SearchFieldType.ENGLISH),
     TRANSCRIPTION(true, false, true, TRANSCRIPTION_LABEL, TRANSCRIPTION_DESCRIPTION, SearchFieldType.OLD_FRENCH, SearchFieldType.ENGLISH),
     ILLUSTRATION(true, false, true, ILLUSTRATION_LABEL, ILLUSTRATION_DESCRIPTION, SearchFieldType.ENGLISH),
