@@ -51,4 +51,6 @@ public interface WebsiteConfig extends Constants {
      */
     @DefaultBooleanValue(false)
     boolean trackAnalytics();
+
+    String commitNumber();
 }

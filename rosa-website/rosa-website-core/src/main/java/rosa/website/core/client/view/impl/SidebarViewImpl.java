@@ -193,6 +193,13 @@ public class SidebarViewImpl extends Composite implements SidebarView {
         });
     }
 
+    @Override
+    public void setRevisionLabel(String revisionLabel) {
+        Label label = new Label("Revision: " + revisionLabel);
+        label.setStyleName("debug");
+        content.add(label);
+    }
+
     private void addFlashSelector() {
         addHeader("Feature", featuresPanel);
         final CheckBox useFlash = new CheckBox("Flash");

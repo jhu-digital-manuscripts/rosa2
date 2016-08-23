@@ -66,4 +66,6 @@ public interface SidebarView extends IsWidget {
      */
     void addLanguageLink(String label, final String languageCode);
 
+    void setRevisionLabel(String revision);
+
 }

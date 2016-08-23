@@ -30,6 +30,7 @@ public class SidebarPresenter implements SidebarView.Presenter {
         addBookSelectLinks();
         addProjectLinks();
         addLanguageLinks();
+        view.setRevisionLabel(WebsiteConfig.INSTANCE.commitNumber());
     }
 
     /**
