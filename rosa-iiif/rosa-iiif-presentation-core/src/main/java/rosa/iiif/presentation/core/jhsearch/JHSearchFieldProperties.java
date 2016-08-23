@@ -69,7 +69,6 @@ interface JHSearchFieldProperties {
     String[] DRAWING_VALUES = {
             "face", "Face",
             "manicule", "Manicule",
-            "map", "Map",
             "florilegium", "Florilegium"
     };
     String CROSS_REFERENCE_LABEL = "Cross Reference";
