@@ -902,7 +902,7 @@ public class BookChecker extends AbstractArchiveChecker {
             }
 
             if (!bsg.hasByteStream(page.getId())) {
-                errors.add("Cannot find file. " + page.getId() + "]");
+                errors.add("Cannot find file. [" + page.getId() + "]");
             } else {
                 validateAgainstSchema(page.getId(), bsg, errors, warnings);
             }
@@ -926,6 +926,26 @@ public class BookChecker extends AbstractArchiveChecker {
                 if (!page.getId().equals(page.getPage())) {
                     errors.add("Transcription name does not match image name. ["
                             + page.getId() + " / " + page.getPage() + "]");
+                }
+            }
+
+            final List<String> langs = Arrays.asList("EN", "EL", "FR", "IT", "LA", "ES");
+            for (Marginalia marg : page.getMarginalia()) {
+                for (MarginaliaLanguage lang : marg.getLanguages()) {
+                    for (Position pos : lang.getPositions()) {
+                        // Make sure if text attr appears, language attr appears as well
+                        boolean badXrefText = pos.getxRefs().stream()
+                                .filter(xref -> xref.getText() != null && !xref.getText().equals(""))
+                                .anyMatch(xRef -> xRef.getLanguage() == null || xRef.getLanguage().equals(""));
+                        // Make sure any language attr is one of the acceptable values
+                        badXrefText = badXrefText || pos.getxRefs().stream()
+                                .filter(xRef -> xRef.getLanguage() != null && !xRef.getLanguage().equals(""))
+                                .anyMatch(xRef -> !langs.contains(xRef.getLanguage().toUpperCase()));
+
+                        if (badXrefText) {
+                            errors.add("X-ref has associated text, but no language. [" + page.getId() + "]");
+                        }
+                    }
                 }
             }
 
