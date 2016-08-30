@@ -211,7 +211,8 @@
     </xs:complexType>
   </xs:element>
   <xs:attributeGroup name="attlist.internal_ref">
-    <xs:attribute name="text" use="required"/>
+    <xs:attribute name="text"/>
+    <xs:attribute name="anchor_text"/>
   </xs:attributeGroup>
   <xs:element name="target">
     <xs:complexType>
@@ -453,7 +454,6 @@
         <xs:restriction base="xs:token">
           <xs:enumeration value="face"/>
           <xs:enumeration value="manicule"/>
-          <xs:enumeration value="map"/>
           <xs:enumeration value="florilegium"/>
         </xs:restriction>
       </xs:simpleType>

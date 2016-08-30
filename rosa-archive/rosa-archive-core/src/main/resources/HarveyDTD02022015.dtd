@@ -42,7 +42,8 @@
 							<!ATTLIST emphasis type (straight|curved|dotted) #REQUIRED>
 							<!ATTLIST emphasis text CDATA #IMPLIED>
 						<!ELEMENT internal_ref (target+)> 
-						    <!ATTLIST internal_ref text CDATA #REQUIRED>
+						    <!ATTLIST internal_ref text CDATA #IMPLIED>
+						    <!ATTLIST internal_ref anchor_text CDATA #IMPLIED>
 						          <!ELEMENT target EMPTY>
 						              <!ATTLIST target filename CDATA #REQUIRED>
 						              <!ATTLIST target book_id CDATA #REQUIRED>
@@ -73,7 +74,7 @@
 	   <!ATTLIST errata copytext CDATA #REQUIRED>
 	   <!ATTLIST errata amendedtext CDATA #REQUIRED>
 	<!ELEMENT drawing EMPTY>
-	   <!ATTLIST drawing name (face|manicule|map|florilegium) #REQUIRED>
+	   <!ATTLIST drawing name (face|manicule|florilegium) #REQUIRED>
 	   <!ATTLIST drawing method (chalk|pen) #REQUIRED>
 	   <!ATTLIST drawing place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
 	   <!ATTLIST drawing language (EN|EL|FR|IT|LA|ES) #IMPLIED>

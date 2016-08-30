@@ -25,6 +25,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.StringUtils;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
@@ -33,6 +37,7 @@ import rosa.archive.core.util.BookImageComparator;
 import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.core.util.CropRunnable;
 import rosa.archive.core.util.TranscriptionConverter;
+import rosa.archive.core.util.XMLUtil;
 import rosa.archive.core.util.XMLWriter;
 import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.Book;
@@ -65,6 +70,8 @@ import rosa.archive.model.meta.MultilangMetadata;
 import com.google.inject.Inject;
 
 import javax.imageio.ImageIO;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.stream.StreamResult;
 
 /**
@@ -597,65 +604,22 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
 
         for (String originalName : getTranscriptionsNames(bookStreams)) {
-            AnnotatedPage aPage = loadItem(originalName, bookStreams, AnnotatedPage.class, errors);
-            String referencePage = aPage.getPage();
-
-            // Get new name
-            String imageName = null;
-            if (reverse) {
-                // Set 'imageName' to the key for which the value is equal to 'referencePage'
-                for (Map.Entry<String, String> entry : fileMap.getMap().entrySet()) {
-                    if (entry.getValue().equals(referencePage)) {
-                        imageName = entry.getKey();
-                    }
-                }
-            } else {
-                imageName = fileMap.getMap().get(referencePage);
-            }
-
-            if (imageName == null || imageName.isEmpty()) {
-                continue;
-            }
-// TODO when reversing name changes, this still adds the .aor in the renamed file... (EX: 000000001.aor.xml)
-            // Change the 'filename' attribute of the <page> tag to point to the correct
-            // image name. Write the AnnotationPage back to file.
-            AnnotatedPage page = loadItem(originalName, bookStreams, AnnotatedPage.class, errors);
-            page.setPage(imageName);
-            renameInternalReferences(base.getByteStreamGroup(collection), bookStreams, page, fileMap, reverse, errors);
-            // Must also modify any <internal_ref>s found. Their targets contain references
-            // To other transcription files in other directories
-            // Both the target file and named directory must be renamed
-            writeItem(page, bookStreams, AnnotatedPage.class, errors);
-
-            if (errors.isEmpty()) {
-                // If no errors, rename the transcription file
-                if (reverse) {
-                    bookStreams.renameByteStream(originalName, imageName.replace(TIF_EXT, XML_EXT));
-                } else {
-                    List<String> parts = new ArrayList<>(Arrays.asList(imageName.split("\\.")));
-                    parts.add(1, ArchiveItemType.TRANSCRIPTION_AOR.getIdentifier());
-
-                    StringBuilder sb = new StringBuilder();
-                    boolean isFirst = true;
-                    for (String str : parts) {
-                        if (isFirst) {
-                            isFirst = false;
-                        } else {
-                            sb.append('.');
-                        }
-                        sb.append(str);
-                    }
-
-                    bookStreams.renameByteStream(originalName, sb.toString().replace(TIF_EXT, XML_EXT));
-                }
-            }
+            renameTranscription(originalName, fileMap, bookStreams, base.getByteStreamGroup(collection), errors);
         }
     }
 
     /**
-     * Modify the given AoR annotated page by changing names given in the
-     * internal references tags from using original git file/directory names
-     * to using the archive names.
+     * Rename a transcription file, plus all references to this or other pages
+     * within the transcription.
+     *
+     * Must be renamed:
+     *
+     * &lt;page filename="..."&gt;
+     * &lt;internal_ref&gt;
+     *   &lt;target filename="..." book_id="..."&gt;
+     *
+     * Change names given in the internal references tags from using original git
+     * file/directory names to using the archive names.
      *
      * Cases to look for:
      *  BookID = git name; XML file = git name
@@ -667,82 +631,121 @@ public class StoreImpl implements Store, ArchiveConstants {
      *  BookID = archive name; XML file = archive name
      *      - keep BookId, keep file
      *
-     * @param collection ByteStreamGroup for collection
-     * @param book ByteStreamGroup for book
-     * @param aPage AoR transcribed page
-     * @param currentFileMap file map of current book
-     * @param reverse reverse the operation by changing names from archive name to git name?
+     * @param pageName original name
+     * @param fileMap file map for current book
+     * @param bookStreams byte stream group for book
+     * @param collectionStreams byte stream group for collection
      * @param errors list of errors
-     * @throws IOException
      */
-    private void renameInternalReferences(ByteStreamGroup collection, ByteStreamGroup book, AnnotatedPage aPage,
-                                          FileMap currentFileMap, boolean reverse, List<String> errors) throws IOException {
-        if (collection == null || book == null || aPage == null || currentFileMap == null) {
-            return;
-        }
+    private void renameTranscription(String pageName, FileMap fileMap, ByteStreamGroup bookStreams,
+                                     ByteStreamGroup collectionStreams, List<String> errors) throws IOException {
+
         if (directoryMap == null) {
             loadDirectoryMap();
         }
 
-        errors = nonNullList(errors);
+        try (InputStream in = bookStreams.getByteStream(pageName)) {
+            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(in);
 
-        for (Marginalia marg : aPage.getMarginalia()) {
-            for (MarginaliaLanguage lang : marg.getLanguages()) {
-                for (Position pos : lang.getPositions()) {
-                    for (InternalReference ref : pos.getInternalRefs()) {
-                        for (ReferenceTarget target : ref.getTargets()) {
-                            // Make sure the reference target exists
-                            String targetBook = target.getBookId();
+            String transformedImageName = null;
 
-                            if (!collection.hasByteStreamGroup(targetBook)) {
-                                // Original book name not found, check directory map
-                                targetBook = transformName(targetBook, directoryMap, true);
-                                if (!collection.hasByteStreamGroup(targetBook)) {
-                                    errors.add("[" + aPage.getId() + "] Internal reference points to a book that" +
-                                            " was not found in the archive. (" + targetBook + ")");
-                                    continue;
-                                }
-                            }
+            NodeList pageEls = doc.getElementsByTagName("page");
+            for (int i = 0; i < pageEls.getLength(); i++) {
+                Node pageEl = pageEls.item(i);
+                if (pageEl.getNodeType() != Node.ELEMENT_NODE) {
+                    continue;
+                }
 
-                            // Change BookID if it is not already its archive name
-                            if (!target.getBookId().equals(targetBook)
-                                    && directoryMap.getMap().containsValue(targetBook)) {
-                                target.setBookId(targetBook);
-                            }
+                Element page = (Element) pageEl;
+                String referencePage = page.getAttribute("filename");
 
-                            // Target book found, load file map
-                            ByteStreamGroup targetBSG = collection.getByteStreamGroup(targetBook);
-                            if (!targetBSG.hasByteStream(FILE_MAP)) {
-                                errors.add("Source: [" + aPage.getId() + "] Internal reference targets a book with" +
-                                        " no file map. Cannot transform names.");
+                // Get new name
+                transformedImageName = fileMap.getMap().get(referencePage);
+                if (transformedImageName == null || transformedImageName.isEmpty()) {
+                    continue;
+                }
+
+                // Change the 'filename' attribute of the <page> tag to point to the correct image name.
+                page.setAttribute("filename", transformedImageName);
+            }
+
+            // Do Internal References, relies on getting the new name from <page> tag above
+            // Must also modify any <internal_ref>s found. Their targets contain references
+            // To other transcription files in other directories
+            // Both the target file and named directory must be renamed
+            NodeList internalRefs = doc.getElementsByTagName("internal_ref");
+            for (int i = 0; i < internalRefs.getLength(); i++) {
+                // Modify all <target>s
+                NodeList children = internalRefs.item(i).getChildNodes();
+                for (int j = 0; j < children.getLength(); j++) {
+                    Node child = children.item(j);
+                    if (child.getNodeType() != Node.ELEMENT_NODE) {
+                        continue;
+                    }
+
+                    Element target = (Element) child;
+                    if (target.getTagName().equals("target")) {
+                        String targetBook = target.getAttribute("book_id");
+
+                        // Make sure target book exists in the archive
+                        if (!collectionStreams.hasByteStreamGroup(targetBook)) {
+                            // Original book name not found, check directory map
+                            targetBook = transformName(targetBook, directoryMap, true);
+                            if (!collectionStreams.hasByteStreamGroup(targetBook)) {
+                                errors.add("[" + pageName + "] Internal reference points to a book that" +
+                                        " was not found in the archive. (" + targetBook + ")");
                                 continue;
                             }
+                        }
 
-                            // Rename target file name as needed
-                            String targetFile = target.getFilename().replace(XML_EXT, TIF_EXT);
+                        // Change book ID if it hasn't already been changed
+                        if (directoryMap.getMap().containsValue(targetBook) && !targetBook.equals(target.getAttribute("book_id"))) {
+                            target.setAttribute("book_id", targetBook);
+                        }
 
-                            String newFileName;
-                            if (targetBSG.id().equals(book.id())) {
-                                newFileName = transformName(targetFile, currentFileMap, false);
-                            } else {
-                                // WIll load a FileMap every time a <target> is encountered.......must be smarter about these loads
-                                FileMap targetFilemap = loadItem(FILE_MAP, targetBSG, FileMap.class, null);
-                                newFileName = transformName(targetFile, targetFilemap, false);
-                            }
+                        // Target book found, load file map
+                        ByteStreamGroup targetBSG = collectionStreams.getByteStreamGroup(targetBook);
+                        if (!targetBSG.hasByteStream(FILE_MAP)) {
+                            errors.add("Source: [" + pageName + "] Internal reference targets a book with" +
+                                    " no file map. Cannot transform names.");
+                            continue;
+                        }
 
-                            // File map actually maps image files. These names are related to transcription
-                            // files, but do not exactly match.
-                            newFileName = imageToTranscriptionName(newFileName);
+                        String targetFile = target.getAttribute("filename").replace(XML_EXT, TIF_EXT);
 
-                            if (!newFileName.equals(targetFile)) {
-                                target.setFilename(newFileName);
-                            }
+                        String newFileName;
+                        if (targetBSG.id().equals(bookStreams.name())) {
+                            // If targeted book is the current book
+                            newFileName = transformName(targetFile, fileMap, false);
+                        } else {
+                            // Will load a FileMap every time a <target> is encountered.......must be smarter about these loads
+                            FileMap targetFilemap = loadItem(FILE_MAP, targetBSG, FileMap.class, null);
+                            newFileName = transformName(targetFile, targetFilemap, false);
+                        }
+
+                        // File map actually maps image files. These names are related to transcription
+                        // files, but do not exactly match.
+                        newFileName = imageToTranscriptionName(newFileName);
+
+                        if (!newFileName.equals(targetFile)) {
+                            target.setAttribute("filename", newFileName);
                         }
                     }
                 }
             }
-        }
 
+            // Write XML back to file
+            if (errors.isEmpty() && transformedImageName != null) {
+                try (OutputStream os = bookStreams.getOutputStream(pageName)) {
+                    XMLUtil.write(doc, os, false);
+                }
+                // If no errors, rename the transcription file
+                bookStreams.renameByteStream(pageName, imageToTranscriptionName(transformedImageName));
+            }
+
+        } catch (ParserConfigurationException | SAXException e) {
+            errors.add("Failed to read XML transcription. " + pageName);
+        }
     }
 
     private String imageToTranscriptionName(String name) {
