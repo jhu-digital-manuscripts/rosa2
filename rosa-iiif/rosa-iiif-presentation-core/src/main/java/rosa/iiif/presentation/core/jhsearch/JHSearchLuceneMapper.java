@@ -518,7 +518,13 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
                     addField(doc, JHSearchField.CROSS_REFERENCE, SearchFieldType.ENGLISH, xref.getTitle());
                     
                     if (xref.getText() != null && xref.getLanguage() != null) {
-                        addField(doc, JHSearchField.CROSS_REFERENCE, getSearchFieldTypeForLang(xref.getLanguage()), xref.getText());
+                        SearchFieldType type = getSearchFieldTypeForLang(xref.getLanguage());
+                        String text = stripTranscribersMarks(xref.getText());
+                        
+                        // TODO Do some checks of X-Ref lang and some logging
+                        if (type != null) {
+                            addField(doc, JHSearchField.CROSS_REFERENCE, type, text);
+                        }
                     }
 				}
 			}
