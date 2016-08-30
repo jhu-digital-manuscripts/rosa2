@@ -10,14 +10,16 @@ public class XRef implements Serializable {
     
     private String person;
     private String title;
+    private String text;
 
     public XRef() {
 
     }
 
-    public XRef(String person, String title) {
+    public XRef(String person, String title, String text) {
         this.person = person;
         this.title = title;
+        this.text = text;
     }
 
     public String getPerson() {
@@ -36,6 +38,14 @@ public class XRef implements Serializable {
         this.title = title;
     }
 
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -45,6 +55,7 @@ public class XRef implements Serializable {
 
         if (person != null ? !person.equals(xRef.person) : xRef.person != null) return false;
         if (title != null ? !title.equals(xRef.title) : xRef.title != null) return false;
+        if (text != null ? !text.equals(xRef.text) : xRef.text != null) return false;
 
         return true;
     }
@@ -53,6 +64,7 @@ public class XRef implements Serializable {
     public int hashCode() {
         int result = person != null ? person.hashCode() : 0;
         result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + (text != null ? text.hashCode() : 0);
         return result;
     }
 

@@ -242,7 +242,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
         
         if (xrefs_html.length() > 0) {
-            html.append("<p><span class=\"emphasize\">Cross References:</span> ");
+            html.append("<p><span class=\"emphasize\">Cross-references:</span> ");
             html.append(trim_right(xrefs_html, 2));
             html.append("</p>");
         }
@@ -381,7 +381,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
     
     private String format_xref_as_html(XRef xref) {
-        return StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", <i>" + StringEscapeUtils.escapeHtml4(xref.getTitle()) + "</i>";
+        String text_html = xref.getText() == null ? "" :  " &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;"; 
+        return StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", <i>" + StringEscapeUtils.escapeHtml4(xref.getTitle()) + "</i>" + text_html;
     }
 
     private BookImage getPageImage(ImageList images, String page) {

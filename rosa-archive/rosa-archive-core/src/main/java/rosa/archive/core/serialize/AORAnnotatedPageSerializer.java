@@ -258,6 +258,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                         Element e = newElement(TAG_X_REF, posEl, doc);
                         setAttribute(e, ATTR_PERSON, xRef.getPerson());
                         setAttribute(e, ATTR_BOOK_TITLE, xRef.getTitle());
+                        setAttribute(e, ATTR_TEXT, xRef.getText());
                     }
                     for (Underline underline : pos.getEmphasis()) {
                         Element e = newElement(TAG_EMPHASIS, posEl, doc);
@@ -527,7 +528,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                 case TAG_X_REF:
                     XRef xRef = new XRef(el.getAttribute(ATTR_PERSON),
                             hasAttribute(ATTR_BOOK_TITLE, el) ?
-                                    el.getAttribute(ATTR_BOOK_TITLE) : el.getAttribute(ATTR_TITLE));
+                                    el.getAttribute(ATTR_BOOK_TITLE) : el.getAttribute(ATTR_TITLE), el.getAttribute(ATTR_TEXT));
                     xRefs.add(xRef);
                     break;
                 case TAG_INTERNAL_REF:
