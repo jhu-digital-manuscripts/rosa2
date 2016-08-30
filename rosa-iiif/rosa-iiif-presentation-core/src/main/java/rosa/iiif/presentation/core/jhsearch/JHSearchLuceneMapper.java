@@ -465,7 +465,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		StringBuilder transcription = new StringBuilder();
 		StringBuilder emphasis = new StringBuilder();
-		StringBuilder xrefs = new StringBuilder();
 
 		SearchFieldType marg_lang_type = SearchFieldType.ENGLISH;
 
@@ -515,13 +514,12 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 				pos.getEmphasis().forEach(underline -> emphasis.append(stripTranscribersMarks(underline.getReferencedText())).append(" "));
 
 				for (XRef xref : pos.getxRefs()) {
-					if (xref.getPerson() != null) {
-						xrefs.append(xref.getPerson()).append(" ");
-					}
-
-					if (xref.getTitle() != null) {
-						xrefs.append(xref.getTitle()).append(" ");
-					}
+                    addField(doc, JHSearchField.CROSS_REFERENCE, SearchFieldType.ENGLISH, xref.getPerson());
+                    addField(doc, JHSearchField.CROSS_REFERENCE, SearchFieldType.ENGLISH, xref.getTitle());
+                    
+                    if (xref.getText() != null) {
+                        addField(doc, JHSearchField.CROSS_REFERENCE, getSearchFieldTypeForLang(xref.getLanguage()), xref.getText());
+                    }
 				}
 			}
 		}
@@ -530,7 +528,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		addField(doc, JHSearchField.MARGINALIA, marg_lang_type, stripTranscribersMarks(transcription.toString()));
 		addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
-		addField(doc, JHSearchField.CROSS_REFERENCE, SearchFieldType.ENGLISH, xrefs.toString());
 		addField(doc, JHSearchField.EMPHASIS, marg_lang_type, emphasis.toString());
 	}
 
