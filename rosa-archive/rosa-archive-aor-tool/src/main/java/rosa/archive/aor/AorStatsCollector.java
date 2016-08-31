@@ -115,7 +115,7 @@ public class AorStatsCollector {
     }
 
     public void writeBookStats(Path output_dir) throws IOException {
-        Path book_csv_path = output_dir.resolve("bookstotals.csv");
+        Path book_csv_path = output_dir.resolve("book_totals.csv");
 
         try (BufferedWriter out = Files.newBufferedWriter(book_csv_path,
                 CHARSET)) {
