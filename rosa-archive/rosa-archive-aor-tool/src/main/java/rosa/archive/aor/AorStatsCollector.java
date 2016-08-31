@@ -11,7 +11,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import rosa.archive.core.util.CSV;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.MarginaliaLanguage;
+import rosa.archive.model.aor.Position;
 /**
  * Collect stats on AOR annotations and write them out as CSV spreadsheets.
  */
@@ -24,9 +28,18 @@ public class AorStatsCollector {
     // book id -> page stats
     private final Map<String, List<Stats>> page_stats;
 
+    
+    private final Map<String, Integer> people_freq;
+    private final Map<String, Integer> books_freq;
+    private final Map<String, Integer> locs_freq;
+    
     public AorStatsCollector() {
         this.book_stats = new HashMap<>();
         this.page_stats = new HashMap<>();
+        
+        this.people_freq = new HashMap<>();
+        this.books_freq = new HashMap<>();
+        this.locs_freq = new HashMap<>();
     }
 
     public void collectBookStats(String book_id, Path path) throws IOException {
@@ -52,6 +65,8 @@ public class AorStatsCollector {
         if (ap == null) {
             return;
         }
+        
+        update_freq(ap);
 
         // Collect page stats and add to list
 
@@ -77,9 +92,30 @@ public class AorStatsCollector {
 
         bs.add(ps);
     }
+    
+    
+    private void update_freq(AnnotatedPage ap) {
+        for (Marginalia marg : ap.getMarginalia()) {
+            for (MarginaliaLanguage lang : marg.getLanguages()) {
+                for (Position pos : lang.getPositions()) {
+                    
+                    update_freq(books_freq, pos.getBooks());
+                    update_freq(people_freq, pos.getPeople());
+                    update_freq(locs_freq, pos.getLocations());
+                }
+            }
+        }
+    }
+    
+
+    private void update_freq(Map<String, Integer> freq, List<String> items) {
+        items.forEach(i -> {
+            freq.put(i, freq.getOrDefault(i, 0) + 1); 
+        });
+    }
 
     public void writeBookStats(Path output_dir) throws IOException {
-        Path book_csv_path = output_dir.resolve("books-latest.csv");
+        Path book_csv_path = output_dir.resolve("bookstotals.csv");
 
         try (BufferedWriter out = Files.newBufferedWriter(book_csv_path,
                 CHARSET)) {
@@ -101,6 +137,22 @@ public class AorStatsCollector {
         GitStatsWriter writer = new GitStatsWriter(output_dir);
         writer.cleanOutputDir();
         writer.writeVocab(allStats);
+        
+        
+        try (BufferedWriter out = Files.newBufferedWriter(output_dir.resolve("people.csv"),
+                CHARSET)) {
+            write_freq(out, people_freq);
+        }
+        
+        try (BufferedWriter out = Files.newBufferedWriter(output_dir.resolve("locs.csv"),
+                CHARSET)) {
+            write_freq(out, locs_freq);
+        }
+        
+        try (BufferedWriter out = Files.newBufferedWriter(output_dir.resolve("books.csv"),
+                CHARSET)) {
+            write_freq(out, books_freq);
+        }
     }
 
     private void write_page_stats(BufferedWriter out, List<Stats> list)
@@ -172,6 +224,21 @@ public class AorStatsCollector {
         for (String book_id: stats.keySet()) {
             write_row(out, stats.get(book_id), false);
         }
+        
+        out.flush();
+    }
+    
+    private void write_freq(BufferedWriter out, Map<String, Integer> freq)
+            throws IOException {
+        out.write("book id, freq");
+        out.newLine();
+
+       for (String key: freq.keySet()) {
+           out.write(CSV.escape(key) + "," + freq.get(key));
+           out.newLine();
+       }
+        
+       out.flush();
     }
 
     private void write_header_row(BufferedWriter out, String first_cell)
