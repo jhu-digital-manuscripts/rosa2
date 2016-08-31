@@ -34,6 +34,7 @@ import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.core.util.BookImageComparator;
+import rosa.archive.core.util.CachingUrlResourceResolver;
 import rosa.archive.core.util.ChecksumUtil;
 import rosa.archive.core.util.CropRunnable;
 import rosa.archive.core.util.TranscriptionConverter;
@@ -70,6 +71,7 @@ import rosa.archive.model.meta.MultilangMetadata;
 import com.google.inject.Inject;
 
 import javax.imageio.ImageIO;
+import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.stream.StreamResult;
@@ -79,6 +81,7 @@ import javax.xml.transform.stream.StreamResult;
  */
 public class StoreImpl implements Store, ArchiveConstants {
     private static final ArchiveNameParser parser = new ArchiveNameParser();
+    private static final CachingUrlResourceResolver aorResourceResolver = new CachingUrlResourceResolver();
 
     private final SerializerSet serializers;
     private final ByteStreamGroup base;
@@ -645,7 +648,9 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
 
         try (InputStream in = bookStreams.getByteStream(pageName)) {
-            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(in);
+            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            builder.setEntityResolver(aorResourceResolver);
+            Document doc = builder.parse(in);
 
             String transformedImageName = null;
 
