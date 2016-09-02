@@ -1,7 +1,5 @@
 package rosa.website.model.csv;
 
-import rosa.website.model.csv.CollectionCSV.Column;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

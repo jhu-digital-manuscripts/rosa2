@@ -12,7 +12,6 @@ import rosa.website.core.client.view.HeaderViewNoSearch.Presenter;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Logger;
 
 public class HeaderPresenter implements Presenter, IsWidget {
     private Labels labels = Labels.INSTANCE;
