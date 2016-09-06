@@ -1,6 +1,5 @@
 package rosa.website.core.server;
 
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
@@ -15,7 +14,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Singleton
-public class RosaSearchServiceImpl extends RemoteServiceServlet implements RosaSearchService {
+public class RosaSearchServiceImpl extends ContextRemoteServiceServlet implements RosaSearchService {
+    private static final long serialVersionUID = 1L;
+
     private static final Logger log = Logger.getLogger(RosaSearchServiceImpl.class.toString());
 
     private StoreAccessLayer storeAccess;

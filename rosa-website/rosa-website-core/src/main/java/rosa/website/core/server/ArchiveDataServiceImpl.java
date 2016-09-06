@@ -1,6 +1,5 @@
 package rosa.website.core.server;
 
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
@@ -56,7 +55,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Singleton
-public class ArchiveDataServiceImpl extends RemoteServiceServlet implements ArchiveDataService {
+public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implements ArchiveDataService {
+    private static final long serialVersionUID = 1L;
     private static final Logger logger = Logger.getLogger("");
     private static final String DEFAULT_LANGUAGE = "en";
 
@@ -69,7 +69,6 @@ public class ArchiveDataServiceImpl extends RemoteServiceServlet implements Arch
     private String collection;
 
     /** No-arg constructor needed to make GWT RPC work. */
-    @SuppressWarnings("unused")
     ArchiveDataServiceImpl() {}
 
     /**
