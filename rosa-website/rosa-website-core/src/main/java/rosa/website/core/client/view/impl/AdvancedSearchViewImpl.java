@@ -17,9 +17,6 @@ import java.util.List;
 import java.util.Map;
 
 public class AdvancedSearchViewImpl extends ErrorComposite implements AdvancedSearchView {
-    private int thumbWidth = 100;
-    private int thumbHeight = 100;
-
     private AdvancedSearchWidget searchWidget;
     private SearchResultsWidget searchResults;
 
