@@ -59,9 +59,7 @@ public class RosaSearchServiceImpl extends ContextRemoteServiceServlet implement
     public SearchResult search(Query query, SearchOptions options) throws IOException {
         if (query != null) {
             try {
-                log.info("Performing search on the server.");
                 SearchResult result = searchService.search(query, options);
-                log.info("Result found: Total= " + result.getTotal() + ", offset= " + result.getOffset());
 
                 return result;
             } catch (Exception e) {
