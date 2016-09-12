@@ -3,7 +3,6 @@ package rosa.website.viewer.client.jsviewer.codexview;
 import rosa.pageturner.client.model.Book;
 import rosa.pageturner.client.model.Opening;
 import rosa.pageturner.client.model.Page;
-import rosa.pageturner.client.util.Console;
 import rosa.website.viewer.client.jsviewer.util.Util;
 
 import java.util.ArrayList;
@@ -233,25 +232,21 @@ public class RoseBook {
     }
 
     public Book fsiBook() {
-        Console.log("Creating new FSI viewer model.");
         CodexModel model = model();
-        Console.log("Using base model, num images = " + model.numImages() + ", num openings = " + model.numOpenings());
         int numOpenings = model.numOpenings();
 
         List<Opening> fsiOpenings = new ArrayList<>();
         for (int i = 0; i < numOpenings; i++) {
             CodexOpening o = model.opening(i);
-            Console.log("  Opening[" + i + "]");
+
             Page verso = null;
             if (o.verso() != null) {
                 CodexImage img = o.verso();
-                Console.log("    Verso: " + img.id() + " :: " + img.missing() + " :: " + img.width() + " x " + img.height());
                 verso = new Page(img.id(), img.label(), img.missing(), img.width(), img.height());
             }
             Page recto = null;
             if (o.recto() != null) {
                 CodexImage img = o.recto();
-                Console.log("    Recto: " + img.id() + " :: " + img.missing() + " :: " + img.width() + " x " + img.height());
                 recto = new Page(img.id(), img.label(), img.missing(), img.width(), img.height());
             }
 

@@ -229,6 +229,17 @@ public class JSViewerActivity implements Activity {
     private void setupFsiJS(RoseBook book) {
         view.setFsiJS(book.fsiBook());
         view.addShowExtraChangeHandler(showExtraChangeHandler);
+//
+//        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+//            @Override
+//            public void execute() {
+//                eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.pageTurner()));
+//            }
+//        });
+//
+//        setupShowExtra(current_selected_index, true);
+//
+//        view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
     }
 
     private void setupView(final CodexModel codexModel) {
