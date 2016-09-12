@@ -5,6 +5,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Widget;
+import rosa.pageturner.client.model.Book;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
 import rosa.website.viewer.client.jsviewer.codexview.CodexModel;
 import rosa.website.viewer.client.jsviewer.codexview.CodexView;
@@ -26,6 +27,7 @@ public interface JSViewerView extends ErrorWidget {
      * @param mode page turner or browser mode?
      */
     void setCodexView(ImageServer imageServer, CodexModel model, CodexController controller, Mode mode);
+    void setFsiJS(Book model);
     void setViewerMode(CodexView.Mode mode);
     void setToolbarVisible(boolean visible);
     void setGotoText(String text);

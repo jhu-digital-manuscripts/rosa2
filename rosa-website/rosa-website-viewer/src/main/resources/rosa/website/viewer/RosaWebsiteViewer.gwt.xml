@@ -5,6 +5,7 @@
     <inherits name='com.google.gwt.user.theme.standard.Standard' />
     <inherits name="rosa.archive.RosaArchiveModel"/>
     <inherits name="rosa.archive.RosaArchiveCore"/>
+    <inherits name="rosa.pageturner.FsiPageTurner"/>
 
     <source path='client' />
     <source path='shared' />

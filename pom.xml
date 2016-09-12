@@ -52,6 +52,18 @@
     <dependencyManagement>
         <dependencies>
 
+            <dependency>
+                <groupId>rosa</groupId>
+                <artifactId>fsi-pageturner</artifactId>
+                <classifier>sources</classifier>
+                <version>0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>rosa</groupId>
+                <artifactId>fsi-pageturner</artifactId>
+                <version>0.1</version>
+            </dependency>
+
             <!-- External dependencies -->
 
             <!-- GWT dependencies -->

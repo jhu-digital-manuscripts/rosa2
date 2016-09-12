@@ -215,7 +215,8 @@ public class JSViewerActivity implements Activity {
             @Override
             public void onSuccess(String result) {
                 RoseBook roseBook = new RoseBook(fsi_share, result, fsi_missing_image);
-                setupView(roseBook.model());
+//                setupView(roseBook.model());
+                setupFsiJS(roseBook);
             }
         });
     }
@@ -223,6 +224,10 @@ public class JSViewerActivity implements Activity {
     private boolean needsRV(String str) {
         return model.imagesNeedRV() &&
                 !(str.endsWith("r") || str.endsWith("R") || str.endsWith("v") || str.endsWith("V"));
+    }
+
+    private void setupFsiJS(RoseBook book) {
+        view.setFsiJS(book.fsiBook());
     }
 
     private void setupView(final CodexModel codexModel) {

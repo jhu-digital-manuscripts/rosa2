@@ -27,7 +27,7 @@
 
             <properties>
                 <archive.path>/mnt/archive</archive.path>
-                <gwt.output.style>pretty</gwt.output.style>
+                <gwt.output.style>PRETTY</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>
                 <analytics.status>false</analytics.status>
             </properties>
@@ -120,6 +120,17 @@
         </dependency>
 
         <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>fsi-pageturner</artifactId>
+            <classifier>sources</classifier>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>fsi-pageturner</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
@@ -179,6 +190,7 @@
                         <compileSourcesArtifact>rosa.website:rosa-website-viewer</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.website:rosa-website-search</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.website:rosa-website-core</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.pageturner.FsipageTurner</compileSourcesArtifact>
                     </compileSourcesArtifacts>
                 </configuration>
             </plugin>

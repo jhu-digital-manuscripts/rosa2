@@ -15,6 +15,8 @@ import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
+import rosa.pageturner.client.model.Book;
+import rosa.pageturner.client.viewers.FsiPageTurner;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.widget.ViewerControlsWidget;
@@ -41,6 +43,7 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
     private ViewerControlsWidget viewerControlsWidget;
 
     private CodexView codexView;
+    private FsiPageTurner pageTurner;
 
     /**  */
     public JSViewerViewImpl() {
@@ -119,6 +122,15 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
                 doResize();
             }
         });
+    }
+
+    @Override
+    public void setFsiJS(Book model) {
+        if (pageTurner != null) {
+            root.remove(pageTurner);
+        }
+        pageTurner = new FsiPageTurner(model, model.getPagesList().split(","), 400, 500, true);
+        root.insert(pageTurner, 1);
     }
 
     @Override

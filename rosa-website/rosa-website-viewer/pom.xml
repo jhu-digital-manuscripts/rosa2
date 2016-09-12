@@ -14,6 +14,17 @@
 
     <dependencies>
         <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>fsi-pageturner</artifactId>
+            <classifier>sources</classifier>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>rosa</groupId>
+            <artifactId>fsi-pageturner</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-servlet</artifactId>
             <scope>runtime</scope>

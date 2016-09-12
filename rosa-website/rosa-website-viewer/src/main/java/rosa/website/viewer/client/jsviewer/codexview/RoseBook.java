@@ -1,6 +1,13 @@
 package rosa.website.viewer.client.jsviewer.codexview;
 
+import rosa.pageturner.client.model.Book;
+import rosa.pageturner.client.model.Opening;
+import rosa.pageturner.client.model.Page;
+import rosa.pageturner.client.util.Console;
 import rosa.website.viewer.client.jsviewer.util.Util;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // TODO handle missing image
 // TODO  handle cropping, could crop dynamically???
@@ -8,6 +15,9 @@ import rosa.website.viewer.client.jsviewer.util.Util;
 public class RoseBook {
     private final RoseImage[] images;
     private int opening_end;
+
+    private String fsiDir;
+    private Page missingImage;
 
 //    public static void load(final String fsi_collection, String bookid,
 //            final HttpGet.Callback<RoseBook> topcb) {
@@ -50,10 +60,21 @@ public class RoseBook {
                 opening_end = i + 1;
             }
         }
+
+        fsiDir = getFsiDir(fsi_collection, images[0].id);
+        this.missingImage = new Page(missing_image_name, "missing image", false, images[0].width(), images[0].height());
     }
 
     private static String getBookIdFromImage(String image) {
         return image.substring(0, image.indexOf('.'));
+    }
+
+    private static String getFsiDir(String prefix, String image) {
+        if (image.startsWith("*")) {
+            image = image.substring(1);
+        }
+
+        return prefix + "/" + getBookIdFromImage(image);
     }
 
     private static String getFsiId(String prefix, String image) {
@@ -209,5 +230,34 @@ public class RoseBook {
                 return -1;
             }
         };
+    }
+
+    public Book fsiBook() {
+        Console.log("Creating new FSI viewer model.");
+        CodexModel model = model();
+        Console.log("Using base model, num images = " + model.numImages() + ", num openings = " + model.numOpenings());
+        int numOpenings = model.numOpenings();
+
+        List<Opening> fsiOpenings = new ArrayList<>();
+        for (int i = 0; i < numOpenings; i++) {
+            CodexOpening o = model.opening(i);
+            Console.log("  Opening[" + i + "]");
+            Page verso = null;
+            if (o.verso() != null) {
+                CodexImage img = o.verso();
+                Console.log("    Verso: " + img.id() + " :: " + img.missing() + " :: " + img.width() + " x " + img.height());
+                verso = new Page(img.id(), img.label(), img.missing(), img.width(), img.height());
+            }
+            Page recto = null;
+            if (o.recto() != null) {
+                CodexImage img = o.recto();
+                Console.log("    Recto: " + img.id() + " :: " + img.missing() + " :: " + img.width() + " x " + img.height());
+                recto = new Page(img.id(), img.label(), img.missing(), img.width(), img.height());
+            }
+
+            fsiOpenings.add(new Opening(verso, recto, o.label(), o.position()));
+        }
+
+        return new Book(fsiDir, fsiOpenings, missingImage);
     }
 }
