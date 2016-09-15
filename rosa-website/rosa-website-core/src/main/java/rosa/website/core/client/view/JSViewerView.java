@@ -3,9 +3,11 @@ package rosa.website.core.client.view;
 import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
+import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Widget;
 import rosa.pageturner.client.model.Book;
+import rosa.pageturner.client.model.Opening;
 import rosa.website.viewer.client.jsviewer.codexview.CodexController;
 import rosa.website.viewer.client.jsviewer.codexview.CodexModel;
 import rosa.website.viewer.client.jsviewer.codexview.CodexView;
@@ -35,6 +37,7 @@ public interface JSViewerView extends ErrorWidget {
 
     void setShowExtraLabels(String ... data);
     HandlerRegistration addShowExtraChangeHandler(ChangeHandler handler);
+    HandlerRegistration addOpeningChangeHandler(ValueChangeHandler<Opening> handler);
     void setSelectedShowExtra(String selected);
     String getSelectedShowExtra();
     void showExtra(Widget widget);

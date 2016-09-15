@@ -5,6 +5,8 @@ import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyDownHandler;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
+import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.FlowPanel;
@@ -16,7 +18,9 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import rosa.pageturner.client.model.Book;
+import rosa.pageturner.client.model.Opening;
 import rosa.pageturner.client.viewers.FsiPageTurner;
+import rosa.pageturner.client.viewers.PageTurner;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.widget.ViewerControlsWidget;
@@ -43,7 +47,7 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
     private ViewerControlsWidget viewerControlsWidget;
 
     private CodexView codexView;
-    private FsiPageTurner pageTurner;
+    private PageTurner pageTurner;
 
     /**  */
     public JSViewerViewImpl() {
@@ -129,7 +133,19 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
         if (pageTurner != null) {
             root.remove(pageTurner);
         }
-        pageTurner = new FsiPageTurner(model, model.getPagesList().split(","), 400, 500, true);
+        pageTurner = new FsiPageTurner(model, model.getPagesList().split(","), 400, 500, false);
+
+        pageTurner.addOpeningChangedHandler(new ValueChangeHandler<Opening>() {
+            @Override
+            public void onValueChange(ValueChangeEvent<Opening> event) {
+                if (goTo == null) {
+                    return;
+                }
+
+                setGotoText(event.getValue().label);
+            }
+        });
+
         root.insert(pageTurner, 1);
     }
 
@@ -166,6 +182,11 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
     @Override
     public HandlerRegistration addShowExtraChangeHandler(ChangeHandler handler) {
         return viewerControlsWidget.addShowExtraChangeHandler(handler);
+    }
+
+    @Override
+    public HandlerRegistration addOpeningChangeHandler(ValueChangeHandler<Opening> handler) {
+        return pageTurner.addOpeningChangedHandler(handler);
     }
 
     @Override

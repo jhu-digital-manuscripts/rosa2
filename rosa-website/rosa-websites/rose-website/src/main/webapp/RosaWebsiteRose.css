@@ -408,3 +408,11 @@ a:hover.Tooltip span {
   font-size: 18px;
   font-weight: bold;
 }
+
+fsi-rosa-pageturner {
+  float: left;
+  margin-bottom: 10px;
+}
+.pageturner-controls a i {
+  color: black;
+}

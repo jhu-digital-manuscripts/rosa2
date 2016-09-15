@@ -9,6 +9,8 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
+import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.place.shared.PlaceController;
@@ -17,6 +19,7 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
+import rosa.pageturner.client.model.Opening;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
@@ -228,18 +231,15 @@ public class JSViewerActivity implements Activity {
 
     private void setupFsiJS(RoseBook book) {
         view.setFsiJS(book.fsiBook());
+        view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
         view.addShowExtraChangeHandler(showExtraChangeHandler);
-//
-//        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-//            @Override
-//            public void execute() {
-//                eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.pageTurner()));
-//            }
-//        });
-//
-//        setupShowExtra(current_selected_index, true);
-//
-//        view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
+        view.addOpeningChangeHandler(new ValueChangeHandler<Opening>() {
+            @Override
+            public void onValueChange(ValueChangeEvent<Opening> event) {
+                current_selected_index = event.getValue().position * 2;
+                setupShowExtra(current_selected_index, true);
+            }
+        });
     }
 
     private void setupView(final CodexModel codexModel) {

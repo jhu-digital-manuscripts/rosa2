@@ -89,6 +89,9 @@ public class RoseBook {
     }
 
     private static String getLabel(String name) {
+        if (name == null) {
+            return "";
+        }
         int start = name.indexOf('.') + 1;
 
         // Also strip leading 0
@@ -187,12 +190,13 @@ public class RoseBook {
                 }
 
                 String label;
-                if (verso == -1) {
+                if (verso == -1 && images[recto] != null) {
                     label = images[recto].label();
-                } else if (recto == -1) {
+                } else if (recto == -1 && images[verso] != null) {
                     label = images[verso].label();
                 } else {
-                    label = images[verso].label() + "," + images[recto].label();
+                    label = (images[verso] != null ? images[verso].label() + "," : "") +
+                            (images[recto] != null ? images[recto].label() : "");
                 }
 
                 return new RoseOpening(label, images[recto], images[verso],
@@ -238,6 +242,9 @@ public class RoseBook {
         List<Opening> fsiOpenings = new ArrayList<>();
         for (int i = 0; i < numOpenings; i++) {
             CodexOpening o = model.opening(i);
+            if (o == null) {
+                continue;
+            }
 
             Page verso = null;
             if (o.verso() != null) {
