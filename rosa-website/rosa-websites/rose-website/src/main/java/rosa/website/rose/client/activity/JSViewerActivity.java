@@ -546,7 +546,7 @@ public class JSViewerActivity implements Activity {
      */
     private String getImageName(int index) {
         if (book == null || model.getImages() == null || model.getImages().getImages() == null
-                || model.getImages().getImages().size() < index
+                || model.getImages().getImages().size() <= index
                 || model.getImages().getImages().get(index) == null) {
             return "";
         }

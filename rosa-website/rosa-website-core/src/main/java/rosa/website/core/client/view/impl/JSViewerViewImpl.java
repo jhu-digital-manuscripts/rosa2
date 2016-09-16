@@ -133,7 +133,7 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
         if (pageTurner != null) {
             root.remove(pageTurner);
         }
-        pageTurner = new FsiPageTurner(model, model.getPagesList().split(","), 400, 500, false);
+        pageTurner = new FsiPageTurner(model, model.getPagesList().split(","), 800, 500, false);
 
         pageTurner.addOpeningChangedHandler(new ValueChangeHandler<Opening>() {
             @Override
