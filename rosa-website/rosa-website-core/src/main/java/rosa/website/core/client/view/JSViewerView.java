@@ -33,6 +33,7 @@ public interface JSViewerView extends ErrorWidget {
     void setViewerMode(CodexView.Mode mode);
     void setToolbarVisible(boolean visible);
     void setGotoText(String text);
+    void setOpening(Opening opening);
     String getGotoText();
 
     void setShowExtraLabels(String ... data);

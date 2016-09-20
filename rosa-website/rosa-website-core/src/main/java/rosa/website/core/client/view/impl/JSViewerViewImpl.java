@@ -146,6 +146,11 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
             }
         });
 
+        first.setVisible(false);
+        prev.setVisible(false);
+        next.setVisible(false);
+        last.setVisible(false);
+
         root.insert(pageTurner, 1);
     }
 
@@ -167,6 +172,14 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
     @Override
     public void setGotoText(String text) {
         goTo.setText(text);
+    }
+
+    @Override
+    public void setOpening(Opening opening) {
+        if (pageTurner == null) {
+            return;
+        }
+        pageTurner.setOpening(opening);
     }
 
     @Override
