@@ -234,6 +234,7 @@ public class JSViewerActivity implements Activity {
         final Book b = book.fsiBook();
 
         view.setFsiJS(b);
+        view.setViewerSize("600px", "500px");
         view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
         view.addShowExtraChangeHandler(showExtraChangeHandler);
         view.addOpeningChangeHandler(new ValueChangeHandler<Opening>() {

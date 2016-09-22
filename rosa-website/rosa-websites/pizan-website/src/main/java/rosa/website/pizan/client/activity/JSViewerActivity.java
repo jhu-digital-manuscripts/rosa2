@@ -9,6 +9,8 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
+import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.place.shared.PlaceController;
@@ -17,6 +19,8 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
+import rosa.pageturner.client.model.Book;
+import rosa.pageturner.client.model.Opening;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
@@ -214,8 +218,7 @@ public class JSViewerActivity implements Activity {
 
             @Override
             public void onSuccess(String result) {
-                RoseBook roseBook = new RoseBook(fsi_share, result, fsi_missing_image);
-//                setupView(roseBook.model());
+                RoseBook roseBook = new RoseBook(fsi_share, result, "rose/missing_image.tif");
                 setupFsiJS(roseBook);
             }
         });
@@ -227,7 +230,70 @@ public class JSViewerActivity implements Activity {
     }
 
     private void setupFsiJS(RoseBook book) {
-        view.setFsiJS(book.fsiBook());
+        final Book b = book.fsiBook();
+
+        view.setFsiJS(b);
+        view.setViewerSize("600px", "500px");
+        view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
+        view.addShowExtraChangeHandler(showExtraChangeHandler);
+        view.addOpeningChangeHandler(new ValueChangeHandler<Opening>() {
+            @Override
+            public void onValueChange(ValueChangeEvent<Opening> event) {
+                current_selected_index = event.getValue().position * 2;
+                setupShowExtra(current_selected_index, true);
+            }
+        });
+
+        view.addGoToKeyDownHandler(new KeyDownHandler() {
+            @Override
+            public void onKeyDown(KeyDownEvent event) {
+                if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
+                    String tryThis = view.getGotoText();
+                    if (needsRV(tryThis)) {
+                        tryThis += "r";
+                    }
+
+                    int index = getImageIndex(tryThis);
+
+                    /*
+                        This hack gets around a bug in the original website where a user inputs
+                        a verso page into the 'goto' text box and hits enter. The resulting
+                        opening will be the previous opening to what the user intends. Adding one to
+                        the index at this stage will boost the index to the facing recto and
+                        avoid the issue.
+
+                        This is likely because of the indexing scheme of the openings. Since the front
+                        cover will start the index at 0, any subsequent verso page will fall on an odd
+                        number. The integer rounding of the index to get the opening index means that
+                        the guessed opening index will be rounded down to the previous opening as opposed
+                        to the intended opening. Even though this should work for all of the Rosa books,
+                        this will not work in the general case, as it will depend on the number of
+                        single images that appear at the front of the book, before recto/verso numbering
+                        occurs.
+                     */
+                    if (view.getGotoText().toLowerCase().endsWith("v")) {
+                        index++;
+                    }
+
+                    if (index != -1) {
+                        index /= 2;
+                        if (index < b.openings.size()) {
+                            view.setOpening(b.getOpening(index));
+                        }
+                    }
+                }
+            }
+        });
+
+        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+            @Override
+            public void execute() {
+                Opening op = b.getOpening(starterPage);
+                if (op != null) {
+                    view.setOpening(op);
+                }
+            }
+        });
     }
 
     private void setupView(final CodexModel codexModel) {

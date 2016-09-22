@@ -421,3 +421,24 @@ a:hover.Tooltip span {
   font-weight: bold;
   color: #FF4545;
 }
+
+fsi-rosa-pageturner {
+  float: left;
+  margin-bottom: 10px;
+}
+
+fsi-rosa-pageturner .pageturner-thumbs {
+  height: 100px;
+}
+
+.pageturner-controls a i, .pageturner-controls a i:visited {
+  color: #8d8d8d;
+}
+
+.pageturner-controls a i:hover {
+  color: #565757;
+}
+
+.pageturner-controls a i:active {
+  color: black;
+}

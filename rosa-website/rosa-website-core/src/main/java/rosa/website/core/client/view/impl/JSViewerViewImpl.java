@@ -133,7 +133,7 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
         if (pageTurner != null) {
             root.remove(pageTurner);
         }
-        pageTurner = new FsiPageTurner(model, model.getPagesList().split(","), 800, 500, false);
+        pageTurner = new FsiPageTurner(model, model.getPagesList().split(","), false);
 
         pageTurner.addOpeningChangedHandler(new ValueChangeHandler<Opening>() {
             @Override
@@ -152,6 +152,13 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
         last.setVisible(false);
 
         root.insert(pageTurner, 1);
+    }
+
+    @Override
+    public void setViewerSize(String width, String height) {
+        if (pageTurner != null) {
+            pageTurner.asWidget().setSize(width, height);
+        }
     }
 
     @Override
