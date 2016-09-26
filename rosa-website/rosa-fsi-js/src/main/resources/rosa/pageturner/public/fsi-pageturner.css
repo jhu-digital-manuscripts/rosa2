@@ -47,7 +47,10 @@ fsi-rosa-pageturner {
   left: 6px;
   font-weight: bold;
   font-style: italic;
-  color: #565757
+  color: #565757;
+  width: 35%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .pageturner-controls a, .pageturner-controls a:visited {
