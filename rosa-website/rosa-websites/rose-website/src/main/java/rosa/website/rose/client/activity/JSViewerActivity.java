@@ -289,9 +289,15 @@ public class JSViewerActivity implements Activity {
         Scheduler.get().scheduleDeferred(new ScheduledCommand() {
             @Override
             public void execute() {
-                Opening op = b.getOpening(starterPage);
-                if (op != null) {
-                    view.setOpening(op);
+                int index = getImageIndex(starterPage);
+                if (starterPage.toLowerCase().endsWith("v")) {
+                    index++;
+                }
+                if (index != -1) {
+                    index /= 2;
+                    if (index < b.openings.size()) {
+                        view.setOpening(b.getOpening(index));
+                    }
                 }
             }
         });
