@@ -120,14 +120,14 @@
         </dependency>
 
         <dependency>
-            <groupId>rosa</groupId>
-            <artifactId>fsi-pageturner</artifactId>
+            <groupId>rosa.website</groupId>
+            <artifactId>rosa-fsi-js</artifactId>
             <classifier>sources</classifier>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>rosa</groupId>
-            <artifactId>fsi-pageturner</artifactId>
+            <groupId>rosa.website</groupId>
+            <artifactId>rosa-fsi-js</artifactId>
         </dependency>
 
         <dependency>
@@ -189,8 +189,8 @@
                         <compileSourcesArtifact>rosa.website:rosa-website-model</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.website:rosa-website-viewer</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.website:rosa-website-search</compileSourcesArtifact>
+                        <compileSourcesArtifact>rosa.website:rosa-fsi-js</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.website:rosa-website-core</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa.pageturner.FsipageTurner</compileSourcesArtifact>
                     </compileSourcesArtifacts>
                 </configuration>
             </plugin>

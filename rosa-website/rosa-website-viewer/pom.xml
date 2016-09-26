@@ -13,16 +13,6 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>rosa</groupId>
-            <artifactId>fsi-pageturner</artifactId>
-            <classifier>sources</classifier>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>rosa</groupId>
-            <artifactId>fsi-pageturner</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>com.google.gwt</groupId>
@@ -57,6 +47,17 @@
             <artifactId>rosa-archive-core</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa.website</groupId>
+            <artifactId>rosa-fsi-js</artifactId>
+            <classifier>sources</classifier>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>rosa.website</groupId>
+            <artifactId>rosa-fsi-js</artifactId>
         </dependency>
 
     </dependencies>

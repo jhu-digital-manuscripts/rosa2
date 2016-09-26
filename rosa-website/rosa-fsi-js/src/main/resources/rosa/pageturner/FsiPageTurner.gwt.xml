@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='FsiPageTurner'>
+    <inherits name='com.google.gwt.user.User' />
+    <inherits name='com.google.gwt.user.theme.standard.Standard' />
+    <inherits name="com.google.gwt.regexp.RegExp"/>
+
+    <stylesheet src="fsi-pageturner.css" />
+
+    <source path='client' />
+</module>
