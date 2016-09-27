@@ -85,4 +85,5 @@ public interface JSViewerView extends ErrorWidget {
     HandlerRegistration addGoToKeyDownHandler(KeyDownHandler handler);
 
     void onResize();
+    void setResizable(boolean resizable);
 }

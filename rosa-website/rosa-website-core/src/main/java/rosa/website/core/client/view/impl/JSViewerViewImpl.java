@@ -21,7 +21,6 @@ import rosa.pageturner.client.model.Book;
 import rosa.pageturner.client.model.Opening;
 import rosa.pageturner.client.viewers.FsiPageTurner;
 import rosa.pageturner.client.viewers.PageTurner;
-import rosa.website.core.client.Console;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.widget.ViewerControlsWidget;
@@ -49,10 +48,12 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
 
     private CodexView codexView;
     private PageTurner pageTurner;
+    private boolean resizable;
 
     /**  */
     public JSViewerViewImpl() {
         super();
+        resizable = true;
 
         root = new FlowPanel();
         root.setSize("100%", "100%");
@@ -165,7 +166,7 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
     @Override
     public void setViewerSize(String width, String height) {
         if (pageTurner != null) {
-            pageTurner.asWidget().setSize(width, height);
+            pageTurner.setSize(width, height);
         }
     }
 
@@ -268,8 +269,13 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
         doResize();
     }
 
+    @Override
+    public void setResizable(boolean resizable) {
+        this.resizable = resizable;
+    }
+
     private void doResize() {
-        if (getParent() == null || permissionPanel == null || readerToolbar == null) {
+        if (!resizable || getParent() == null || permissionPanel == null || readerToolbar == null) {
             return;
         }
 

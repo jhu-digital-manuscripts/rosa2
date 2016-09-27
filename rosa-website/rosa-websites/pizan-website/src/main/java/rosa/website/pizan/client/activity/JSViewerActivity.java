@@ -236,6 +236,7 @@ public class JSViewerActivity implements Activity {
         view.setViewerSize("600px", "500px");
         view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
         view.addShowExtraChangeHandler(showExtraChangeHandler);
+        view.setResizable(false);
         view.addOpeningChangeHandler(new ValueChangeHandler<Opening>() {
             @Override
             public void onValueChange(ValueChangeEvent<Opening> event) {
