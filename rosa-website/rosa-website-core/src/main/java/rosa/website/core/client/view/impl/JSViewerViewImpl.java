@@ -21,6 +21,7 @@ import rosa.pageturner.client.model.Book;
 import rosa.pageturner.client.model.Opening;
 import rosa.pageturner.client.viewers.FsiPageTurner;
 import rosa.pageturner.client.viewers.PageTurner;
+import rosa.website.core.client.Console;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.widget.ViewerControlsWidget;
@@ -152,6 +153,13 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
         last.setVisible(false);
 
         root.insert(pageTurner, 1);
+
+        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+            @Override
+            public void execute() {
+                doResize();
+            }
+        });
     }
 
     @Override
@@ -257,20 +265,23 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
 
     @Override
     public void onResize() {
-
+        doResize();
     }
 
     private void doResize() {
-        if (permissionPanel == null || readerToolbar == null) {
+        if (getParent() == null || permissionPanel == null || readerToolbar == null) {
             return;
         }
 
-        int width = getOffsetWidth() - 30 - (300);  // 300 px for approximate width of transcription window + margins
-        int height = getOffsetHeight() - 30
+        int width = getParent().getOffsetWidth() - 60 -   // 300 px for approximate width of transcription window + margins
+                (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
+        int height = getParent().getOffsetHeight() - 60
                 - header.getOffsetHeight()
                 - permissionPanel.getOffsetHeight()
                 - readerToolbar.getOffsetHeight();
 
-        codexView.resize(width, height);
+        if (pageTurner != null) {
+            pageTurner.setSize(width + "px", height + "px");
+        }
     }
 }

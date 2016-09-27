@@ -208,6 +208,21 @@ public class FsiPageTurner extends Composite implements PageTurner, HasClickHand
     @Override
     public void setSize(String width, String height) {
         super.setSize(width, height);
+
+        int w = Integer.parseInt(width.substring(0, width.length() - 2));
+        int h = Integer.parseInt(height.substring(0, height.length() - 2)) -
+                thumbnailStrip.getOffsetHeight() - controls.getOffsetHeight();
+
+        if (left != null) {
+            left.setSize((w / 2) - 1 + "px", h + "px");
+        }
+        if (right != null) {
+            right.setSize((w / 2) - 1 + "px", h + "px");
+        }
+        if (zoomView != null) {
+            zoomView.setSize(width, h + "px");
+        }
+
         this.preferredWidth = width;
         this.preferredHeight = height;
     }
