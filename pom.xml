@@ -53,15 +53,15 @@
         <dependencies>
 
             <dependency>
-                <groupId>rosa</groupId>
-                <artifactId>fsi-pageturner</artifactId>
+                <groupId>rosa.website</groupId>
+                <artifactId>rosa-fsi-js</artifactId>
                 <classifier>sources</classifier>
-                <version>0.1</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>rosa</groupId>
-                <artifactId>fsi-pageturner</artifactId>
-                <version>0.1</version>
+                <groupId>rosa.website</groupId>
+                <artifactId>rosa-fsi-js</artifactId>
+                <version>${project.version}</version>
             </dependency>
 
             <!-- External dependencies -->

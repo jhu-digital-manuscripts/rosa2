@@ -30,6 +30,7 @@ public interface JSViewerView extends ErrorWidget {
      */
     void setCodexView(ImageServer imageServer, CodexModel model, CodexController controller, Mode mode);
     void setFsiJS(Book model);
+    void setViewerSize(String width, String height);
     void setViewerMode(CodexView.Mode mode);
     void setToolbarVisible(boolean visible);
     void setGotoText(String text);
@@ -84,4 +85,5 @@ public interface JSViewerView extends ErrorWidget {
     HandlerRegistration addGoToKeyDownHandler(KeyDownHandler handler);
 
     void onResize();
+    void setResizable(boolean resizable);
 }

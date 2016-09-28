@@ -48,10 +48,12 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
 
     private CodexView codexView;
     private PageTurner pageTurner;
+    private boolean resizable;
 
     /**  */
     public JSViewerViewImpl() {
         super();
+        resizable = true;
 
         root = new FlowPanel();
         root.setSize("100%", "100%");
@@ -133,7 +135,7 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
         if (pageTurner != null) {
             root.remove(pageTurner);
         }
-        pageTurner = new FsiPageTurner(model, model.getPagesList().split(","));
+        pageTurner = new FsiPageTurner(model, model.getPagesList().split(","), false);
 
         pageTurner.addOpeningChangedHandler(new ValueChangeHandler<Opening>() {
             @Override
@@ -152,6 +154,20 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
         last.setVisible(false);
 
         root.insert(pageTurner, 1);
+
+        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+            @Override
+            public void execute() {
+                doResize();
+            }
+        });
+    }
+
+    @Override
+    public void setViewerSize(String width, String height) {
+        if (pageTurner != null) {
+            pageTurner.setSize(width, height);
+        }
     }
 
     @Override
@@ -250,20 +266,28 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
 
     @Override
     public void onResize() {
+        doResize();
+    }
 
+    @Override
+    public void setResizable(boolean resizable) {
+        this.resizable = resizable;
     }
 
     private void doResize() {
-        if (permissionPanel == null || readerToolbar == null) {
+        if (!resizable || getParent() == null || permissionPanel == null || readerToolbar == null) {
             return;
         }
 
-        int width = getOffsetWidth() - 30 - (300);  // 300 px for approximate width of transcription window + margins
-        int height = getOffsetHeight() - 30
+        int width = getParent().getOffsetWidth() - 60 -   // 300 px for approximate width of transcription window + margins
+                (transcriptionPanel.isVisible() ? transcriptionPanel.getOffsetWidth() : 0);
+        int height = getParent().getOffsetHeight() - 60
                 - header.getOffsetHeight()
                 - permissionPanel.getOffsetHeight()
                 - readerToolbar.getOffsetHeight();
 
-        codexView.resize(width, height);
+        if (pageTurner != null) {
+            pageTurner.setSize(width + "px", height + "px");
+        }
     }
 }

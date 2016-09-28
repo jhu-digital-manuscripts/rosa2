@@ -218,8 +218,7 @@ public class JSViewerActivity implements Activity {
 
             @Override
             public void onSuccess(String result) {
-                RoseBook roseBook = new RoseBook(fsi_share, result, fsi_missing_image);
-//                setupView(roseBook.model());
+                RoseBook roseBook = new RoseBook(fsi_share, result, "rose/missing_image.tif");
                 setupFsiJS(roseBook);
             }
         });
@@ -234,8 +233,10 @@ public class JSViewerActivity implements Activity {
         final Book b = book.fsiBook();
 
         view.setFsiJS(b);
+        view.setViewerSize("600px", "500px");
         view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
         view.addShowExtraChangeHandler(showExtraChangeHandler);
+        view.setResizable(false);
         view.addOpeningChangeHandler(new ValueChangeHandler<Opening>() {
             @Override
             public void onValueChange(ValueChangeEvent<Opening> event) {
@@ -288,9 +289,15 @@ public class JSViewerActivity implements Activity {
         Scheduler.get().scheduleDeferred(new ScheduledCommand() {
             @Override
             public void execute() {
-                Opening op = b.getOpening(starterPage);
-                if (op != null) {
-                    view.setOpening(op);
+                int index = getImageIndex(starterPage);
+                if (starterPage.toLowerCase().endsWith("v")) {
+                    index++;
+                }
+                if (index != -1) {
+                    index /= 2;
+                    if (index < b.openings.size()) {
+                        view.setOpening(b.getOpening(index));
+                    }
                 }
             }
         });
@@ -600,7 +607,7 @@ public class JSViewerActivity implements Activity {
      */
     private String getImageName(int index) {
         if (book == null || model.getImages() == null || model.getImages().getImages() == null
-                || model.getImages().getImages().size() < index
+                || model.getImages().getImages().size() <= index
                 || model.getImages().getImages().get(index) == null) {
             return "";
         }
