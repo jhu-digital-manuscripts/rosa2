@@ -21,6 +21,7 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 import rosa.pageturner.client.model.Book;
 import rosa.pageturner.client.model.Opening;
+import rosa.pageturner.client.util.Console;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
@@ -293,10 +294,12 @@ public class JSViewerActivity implements Activity {
                 if (starterPage.toLowerCase().endsWith("v")) {
                     index++;
                 }
-                if (index != -1) {
+                if (index >= 0) {
                     index /= 2;
                     if (index < b.openings.size()) {
-                        view.setOpening(b.getOpening(index));
+                        Opening o = b.getOpening(index);
+                        Console.log("[PageTurner] " + o);
+                        view.setOpening(o);
                     }
                 }
             }
