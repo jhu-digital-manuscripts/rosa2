@@ -150,12 +150,15 @@ public class ArchiveTool {
     }
 
     private static Command getCommand(String cmd) {
+        if (cmd == null) {
+            return Command.INVALID;
+        }
         for (Command c : Command.values()) {
             if (c.display().equals(cmd)) {
                 return c;
             }
         }
-        return null;
+        return Command.INVALID;
     }
 
     private void displayError(String message, String[] args) {
