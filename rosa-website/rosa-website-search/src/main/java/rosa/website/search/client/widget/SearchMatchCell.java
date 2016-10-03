@@ -14,12 +14,7 @@ public class SearchMatchCell extends AbstractCell<SearchMatchModel> {
         }
 
         sb.appendHtmlConstant("<div class=\"Result\">");
-        if (value.getImageUrl() != null && !value.getImageUrl().isEmpty()) {
-            sb.appendHtmlConstant("<img style=\"float:left;margin-right:10px\" src=\"");
-            sb.appendEscaped(value.getImageUrl());
-            sb.appendHtmlConstant("\">");
-        }
-
+        
         if (value.getTargetUrl() != null && !value.getTargetUrl().isEmpty()) {
             sb.appendHtmlConstant("<a href=\"");
             sb.appendEscaped(value.getTargetUrl());
@@ -30,28 +25,31 @@ public class SearchMatchCell extends AbstractCell<SearchMatchModel> {
             sb.appendEscaped(value.getDisplay());
         }
 
+        // Display 1x2 table with image and context
         sb.appendHtmlConstant("<table><tr><td>");
-        sb.appendHtmlConstant("</td></tr>");
-
-        for (int i = 0, count = 0; i < value.getContext().size() && count < 3; i += 2) {
-            String category = value.getContext().get(i);
-            if (category == null || category.isEmpty()
-                    || category.contains(">collection<")) {
-                continue;
-            }
-
-            sb.appendHtmlConstant("<tr><td>");
-
-            sb.append(SafeHtmlUtils.fromTrustedString(value.getContext().get(i)));
-            if (i + 1 < value.getContext().size()) {
-                sb.appendHtmlConstant("</td><td>");
-                sb.append(SafeHtmlUtils.fromTrustedString(value.getContext().get(i + 1)));
-            }
-
-            sb.appendHtmlConstant("</td></tr>");
-            count++;
+        
+        if (value.getImageUrl() != null && !value.getImageUrl().isEmpty()) {
+            sb.appendHtmlConstant("<a href=\"");
+            sb.appendEscaped(value.getTargetUrl());
+            sb.appendHtmlConstant("\">");
+            sb.appendHtmlConstant("<img style=\"float:left;margin-right:10px\" src=\"");
+            sb.appendEscaped(value.getImageUrl());
+            sb.appendHtmlConstant("\">");
+            sb.appendHtmlConstant("</a>");
         }
 
-        sb.appendHtmlConstant("</table></div>");
+        sb.appendHtmlConstant("</td><td>");
+        
+        for (int i = 0; i < value.getContext().size();) {
+            String category = value.getContext().get(i++);
+            String html = value.getContext().get(i++);
+            
+            sb.appendHtmlConstant("<b>");
+            sb.append(SafeHtmlUtils.fromString(category + ": "));
+            sb.appendHtmlConstant("</b>");
+            sb.append(SafeHtmlUtils.fromTrustedString(html + " "));
+        }
+
+        sb.appendHtmlConstant("</td></tr></table></div>");
     }
 }

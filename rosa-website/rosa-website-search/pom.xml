@@ -6,7 +6,7 @@
     <parent>
         <artifactId>rosa-website-parent</artifactId>
         <groupId>rosa.website</groupId>
-        <version>1.0.0</version>
+        <version>2.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>rosa-website-search</artifactId>
@@ -40,7 +40,6 @@
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-dev</artifactId>
-            <version>2.6.1</version>
             <scope>test</scope>
         </dependency>
 

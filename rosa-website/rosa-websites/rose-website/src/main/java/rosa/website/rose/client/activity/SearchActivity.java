@@ -358,7 +358,7 @@ public class SearchActivity implements Activity {
     }
 
     private String getFieldString(WebsiteSearchFields field) {
-        StringBuilder fieldLabel = new StringBuilder("<span style=\"font-style:italic\">");
+        StringBuilder fieldLabel = new StringBuilder();
 
         switch (field) {
             case COLLECTION_ID:
@@ -402,8 +402,6 @@ public class SearchActivity implements Activity {
                 fieldLabel.append(field.toString());
                 break;
         }
-
-        fieldLabel.append("</span>");
 
         return fieldLabel.toString();
     }

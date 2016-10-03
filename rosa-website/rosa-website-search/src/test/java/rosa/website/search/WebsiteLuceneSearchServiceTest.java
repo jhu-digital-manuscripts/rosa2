@@ -227,15 +227,13 @@ public class WebsiteLuceneSearchServiceTest extends BaseSearchTest {
 
         SearchMatch match = result.getMatches()[0];
 
-        assertEquals(4, match.getContext().size());
+        assertEquals(2, match.getContext().size());
 
         for (int i = 0; i < match.getContext().size();) {
             String field = match.getContext().get(i++);
             String context = match.getContext().get(i++);
 
-            if (field.equals(WebsiteSearchFields.BOOK_ID.getFieldName())) {
-                assertTrue(context.contains(VALID_BOOK_LUDWIGXV7));
-            } else if (field.equals(WebsiteSearchFields.ILLUSTRATION_CHAR
+            if (field.equals(WebsiteSearchFields.ILLUSTRATION_CHAR
                     .getFieldName())) {
                 assertTrue(context.contains("Faim"));
             } else {
