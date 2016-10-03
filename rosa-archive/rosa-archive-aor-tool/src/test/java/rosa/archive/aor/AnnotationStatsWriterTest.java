@@ -10,6 +10,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -73,6 +74,7 @@ public class AnnotationStatsWriterTest {
 	 * Test results on Folgers 1r transcription.
 	 */
 	@Test
+	@Ignore
 	public void testGetStatsFolgers1r() throws IOException {
 		String xml_id = "FolgersHa2.aor.001r.xml";
 		String image_id = "FolgersHa2.001r.tif";
