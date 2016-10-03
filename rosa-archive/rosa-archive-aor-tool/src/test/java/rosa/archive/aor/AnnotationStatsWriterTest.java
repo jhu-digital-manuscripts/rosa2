@@ -10,7 +10,6 @@ import java.nio.file.Path;
 import java.util.List;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -31,7 +30,6 @@ public class AnnotationStatsWriterTest {
 	@Rule
 	public TemporaryFolder tempFolder = new TemporaryFolder();
 
-	private Path base_archive_path;
 	private Path folgers_ha2_path;
 	private AnnotationStatsWriter asw;
 
@@ -40,10 +38,10 @@ public class AnnotationStatsWriterTest {
 		Path temp = tempFolder.newFolder().toPath();
 		
 		ResourceUtil.copyResource(AnnotationStatsWriterTest.class, "/archive/valid", temp);
-		
-		base_archive_path = temp.resolve("valid");
+
+		Path base_archive_path = temp.resolve("archive").resolve("valid");
 		folgers_ha2_path = base_archive_path.resolve(folgers_ha2_id);
-		
+
 		asw = new AnnotationStatsWriter();
 	}
 	
@@ -75,7 +73,6 @@ public class AnnotationStatsWriterTest {
 	 * Test results on Folgers 1r transcription.
 	 */
 	@Test
-	@Ignore
 	public void testGetStatsFolgers1r() throws IOException {
 		String xml_id = "FolgersHa2.aor.001r.xml";
 		String image_id = "FolgersHa2.001r.tif";
