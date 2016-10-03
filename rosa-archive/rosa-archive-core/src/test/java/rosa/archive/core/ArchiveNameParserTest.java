@@ -102,4 +102,26 @@ public class ArchiveNameParserTest {
         }
     }
 
+    @Test
+    public void archiveItemTypeWithSpacesTest() {
+        String[] names = {
+                "LudwigXV7.130r.tif ", "LudwigXV7.001v.tif  ", "LudwigXV7.crop.txt", "LudwigXV7.description_en.xml",
+                "LudwigXV7.description.xml", "LudwigXV7.endmatter.flyleaf.01v.tif",
+                "LudwigXV7.images.crop.csv", "LudwigXV7.images.csv", "LudwigXV7.nartag.csv",
+                "LudwigXV7.permission_en.html", "LudwigXV7.redtag.txt", "LudwigXV7.SHA1SUM",
+                "LudwigXV7.transcription.xml", "LudwigXV7.aor.130r.xml", "LudwigXV7.aor.001v.xml\t"
+        };
+        ArchiveItemType[] expected = {
+                ArchiveItemType.IMAGE, ArchiveItemType.IMAGE, ArchiveItemType.CROPPING, ArchiveItemType.DESCRIPTION,
+                ArchiveItemType.DESCRIPTION_MULTILANG, ArchiveItemType.IMAGE,
+                ArchiveItemType.CROPPED_IMAGE_LIST, ArchiveItemType.IMAGE_LIST, ArchiveItemType.NARRATIVE_TAGGING,
+                ArchiveItemType.PERMISSION, ArchiveItemType.REDUCED_TAGGING_TXT, ArchiveItemType.SHA1SUM,
+                ArchiveItemType.TRANSCRIPTION_ROSE, ArchiveItemType.TRANSCRIPTION_AOR, ArchiveItemType.TRANSCRIPTION_AOR
+        };
+
+        for (int i = 0; i < names.length; i++) {
+            assertEquals("Unexpected type found.", expected[i], parser.getArchiveItemType(names[i]));
+        }
+    }
+
 }

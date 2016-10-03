@@ -17,11 +17,13 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -529,37 +531,56 @@ public class StoreImpl implements Store, ArchiveConstants {
             return;
         }
 
-        // TODO checking file map should happen in the BookChecker!
-        // This would involve including the file map in the Book model object
         FileMap fileMap = loadItem(FILE_MAP, bookStreams, FileMap.class, errors);
 
-        if (containsDuplicateValues(fileMap.getMap(), errors)) {
+        if (fileMap == null) {
+            errors.add("Failed to load file map. Cannot rename images.");
+            return;
+        } if (containsDuplicateValues(fileMap.getMap(), errors)) {
+            errors.add("Duplicate target names found. Check the file map.");
             return;
         }
-        for (String from : getImageNames(bookStreams)) {
-            String to = null;
+
+        for (Entry<String, String> entry : fileMap.getMap().entrySet()) {
+            String source;
+            String target;
 
             if (reverse) {
-                for (Map.Entry<String, String> entry : fileMap.getMap().entrySet()) {
-                    if (entry.getValue().equals(from)) {
-                        to = entry.getKey();
-                    }
-                }
+                source = entry.getValue();
+                target = entry.getKey();
             } else {
-                to = fileMap.getMap().get(from);
+                source = entry.getKey();
+                target = entry.getValue();
             }
 
-            if (to == null || to.isEmpty()) {
+            // Do not do copy if source/target is empty or target already exists
+            if (isEmpty(source)) {
+                errors.add("Failed to rename image, no source image was specified.");
+                continue;
+            } else if (isEmpty(target)) {
+                errors.add("Failed to rename image, no target was specified.");
+                continue;
+            } else if (bookStreams.hasByteStream(target)) {
+                errors.add("Failed to rename image, an image with the target name already exists. ("
+                        + source + " -> " + target + ")");
                 continue;
             }
 
-            bookStreams.renameByteStream(from, to);
+            bookStreams.renameByteStream(source, target);
         }
+    }
+
+    private boolean isEmpty(String str) {
+        return str == null || str.isEmpty();
     }
 
     private boolean containsDuplicateValues(Map<String, String> map, List<String> errors) {
         boolean hasDuplicates = false;
         Set<String> valueSet = new HashSet<>();
+
+        if (map == null) {
+            throw new IllegalArgumentException("Map provided cannot be NULL.");
+        }
 
         for (Map.Entry<String, String> entry : map.entrySet()) {
             if (valueSet.contains(entry.getValue())) {
@@ -600,7 +621,10 @@ public class StoreImpl implements Store, ArchiveConstants {
         FileMap fileMap = loadItem(FILE_MAP, bookStreams, FileMap.class, errors);
 
         // Search for duplicates
-        if (containsDuplicateValues(fileMap.getMap(), errors)) {
+        if (fileMap == null) {
+            errors.add("No file map found. Cannot rename transcriptions.");
+            return;
+        } if (containsDuplicateValues(fileMap.getMap(), errors)) {
             // If duplicate entries are found in the file map, DO NOT proceed,
             // As  it will result in overwritten files and loss of data
             return;
@@ -906,18 +930,15 @@ public class StoreImpl implements Store, ArchiveConstants {
     /**
      * @param bookStreams byte stream group for a book
      * @return list of names of all images in the book
-     * @throws IOException
+     * @throws IOException if book streams are not available
      */
     private List<String> getImageNames(ByteStreamGroup bookStreams) throws IOException {
-        List<String> filenames = new ArrayList<>();
-        for (String name : bookStreams.listByteStreamNames()) {
-            if (parser.getArchiveItemType(name) == ArchiveItemType.IMAGE) {
-                filenames.add(name);
-            }
-        }
-
-        Collections.sort(filenames);
-        return filenames;
+        // Get all file names, filter out only images, trim excess whitespace, sort, then return as List
+        return bookStreams.listByteStreamNames().stream()
+                .filter(name -> parser.getArchiveItemType(name) == ArchiveItemType.IMAGE)
+                .map(String::trim)
+                .sorted()
+                .collect(Collectors.toList());
     }
 
     /**
@@ -1175,7 +1196,7 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @param book
      *            book name
      * @return list of BookImages
-     * @throws IOException
+     * @throws IOException if archive is not available
      */
     private List<BookImage> buildImageList(String collection, String book, boolean addMissing,
             ByteStreamGroup bookStreams) throws IOException {
@@ -1184,6 +1205,7 @@ public class StoreImpl implements Store, ArchiveConstants {
             if (parser.getArchiveItemType(file) == ArchiveItemType.IMAGE) {
 
                 int[] dimensions = getImageDimensions(Paths.get(bookStreams.id()).resolve(file));
+                file = file.trim();
 
                 BookImage img = new BookImage();
                 img.setId(file);
@@ -1275,7 +1297,7 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @param path
      *            file path of image
      * @return array: [width, height]
-     * @throws IOException
+     * @throws IOException if archive is not available
      */
     private static int[] getImageDimensions(Path path) throws IOException {
         BufferedImage img = ImageIO.read(path.toFile());
@@ -1321,7 +1343,7 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @return if checksums were updated and written successfully
      * @throws IOException if a byte stream or byte stream group does not exist as expected
      */
-    protected boolean updateChecksum(SHA1Checksum checksums, ByteStreamGroup bsg, boolean force, List<String> errors)
+    private boolean updateChecksum(SHA1Checksum checksums, ByteStreamGroup bsg, boolean force, List<String> errors)
             throws IOException {
         boolean success = true;
 
@@ -1377,7 +1399,7 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @param <T> type
      * @return true if write succeeded, false otherwise
      */
-    protected <T extends HasId> boolean writeItem(T item, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
+    private  <T extends HasId> boolean writeItem(T item, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
         // No item to write
         if (item == null) {
             errors.add("Cannot write an object that does not exist! [type=" + type.toString() + "]");
@@ -1403,7 +1425,7 @@ public class StoreImpl implements Store, ArchiveConstants {
      * @param <T> type
      * @return the item as an archive model object
      */
-    protected <T extends HasId> T loadItem(String name, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
+    private  <T extends HasId> T loadItem(String name, ByteStreamGroup bsg, Class<T> type, List<String> errors) {
         // The file does not exist
         if (!bsg.hasByteStream(name)) {
             return null;

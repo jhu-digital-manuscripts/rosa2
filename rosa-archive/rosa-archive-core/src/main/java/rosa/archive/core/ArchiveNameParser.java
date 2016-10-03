@@ -154,12 +154,12 @@ public class ArchiveNameParser implements ArchiveConstants {
             return null;
         }
 
-        if (name.endsWith(TIF_EXT)) {
+        if (name.trim().endsWith(TIF_EXT)) {
             return ArchiveItemType.IMAGE;
         }
 
         for (ArchiveItemType type : ArchiveItemType.values()) {
-            if (name.contains(type.getIdentifier()) && name.endsWith(type.getFileExtension())) {
+            if (name.contains(type.getIdentifier()) && name.trim().endsWith(type.getFileExtension())) {
                 return type;
             }
         }
