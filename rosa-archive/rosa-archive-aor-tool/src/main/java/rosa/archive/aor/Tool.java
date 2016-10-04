@@ -17,48 +17,48 @@ public class Tool {
 
         GitStatCollector statCollector = new GitStatCollector();
         switch (command) {
-        case "stats":
-            if (args.length < 2) {
-                exitOnError("Usage: stats aor_book_dir...");
-            }
+            case "stats":
+                if (args.length < 2) {
+                    exitOnError("Usage: stats aor_book_dir...");
+                }
 
-            AorStatsCollector stats = new AorStatsCollector();
+                AorStatsCollector stats = new AorStatsCollector();
 
-            for (int i = 1; i < args.length; i++) {
-                Path book_path = Paths.get(args[i]);
-                String book_id = book_path.getFileName().toString();
+                for (int i = 1; i < args.length; i++) {
+                    Path book_path = Paths.get(args[i]);
+                    String book_id = book_path.getFileName().toString();
 
-                stats.collectBookStats(book_id, book_path);
-            }
+                    stats.collectBookStats(book_id, book_path);
+                }
 
-            stats.writeBookStats(Paths.get("."));
-            break;
-        case "annotation-stats":
-            if (args.length < 2) {
-                exitOnError("Usage: annotation-stats aor_book_dir...");
-            }
+                stats.writeBookStats(Paths.get("."));
+                break;
+            case "annotation-stats":
+                if (args.length < 2) {
+                    exitOnError("Usage: annotation-stats aor_book_dir...");
+                }
 
-            AnnotationStatsWriter asw = new AnnotationStatsWriter();
-            PrintWriter out = new PrintWriter(System.out);
-            
-            asw.writeStatsHeader(out);
-            
-            for (int i = 1; i < args.length; i++) {
-                Path book_path = Paths.get(args[i]);
+                AnnotationStatsWriter asw = new AnnotationStatsWriter();
+                PrintWriter out = new PrintWriter(System.out);
 
-                asw.writeStats(book_path, out);
-            }
-            
-            out.flush();
+                asw.writeStatsHeader(out);
 
-            break;            
+                for (int i = 1; i < args.length; i++) {
+                    Path book_path = Paths.get(args[i]);
+
+                    asw.writeStats(book_path, out);
+                }
+
+                out.flush();
+
+                break;
             case "git-stats":
                 if (args.length < 2) {
                     exitOnError("Usage: git-stats <repository_url>");
                 }
 
                 statCollector.run(args);
-                
+
                 break;
             case "validate":
                 XmlValidator.validate(args);

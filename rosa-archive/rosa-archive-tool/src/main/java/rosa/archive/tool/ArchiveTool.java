@@ -71,7 +71,7 @@ public class ArchiveTool {
                 .withValueSeparator()
                 .create("D"));
 
-        // Set specific options TODO need a more generic way of getting "command"
+        // Set specific options
         switch (getCommand(args[0])) {
         case LIST:
             break;
@@ -235,13 +235,29 @@ public class ArchiveTool {
             break;
         default:
             displayError("Invalid command found.", args);
+            listPossibleCommands();
             break;
+        }
+    }
+
+    private void listPossibleCommands() {
+        report.print("Possible commands: ");
+
+        Command[] commands = Command.values();
+        for (int i = 0; i < commands.length; i++) {
+            if (commands[i] == Command.INVALID) {
+                continue;
+            }
+            if (i > 0) {
+                report.print("|");
+            }
+            report.print(commands[i].display());
         }
     }
 
     private void handle_collection(CommandLine cmd) throws IOException {
         String[] args = cmd.getArgs();
-        String[] cols = null;
+        String[] cols;
 
         if (args.length == 1) {
             // No collectionID listed, so do it for all collections
@@ -270,7 +286,7 @@ public class ArchiveTool {
                 cd.cropImages(hasOption(cmd, Flag.FORCE));
                 break;
             case FILE_MAP:
-                displayError("Cannot generate file map for collections.", args);
+                displayError("Cannot generate file map for collections, a book must be specified.", args);
                 break;
             case VALIDATE_XML:
                 deriv.validateXml();
@@ -287,6 +303,7 @@ public class ArchiveTool {
                 break;
             default:
                 displayError("Invalid command found.", args);
+                listPossibleCommands();
                 break;
             }
         }

@@ -3,6 +3,7 @@ package rosa.archive.tool.derivative;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -18,14 +19,32 @@ public class BookDerivative extends AbstractDerivative {
     protected String collection;
     protected String book;
 
+    private boolean collectionExists;
+    private boolean bookExists;
+
     public BookDerivative(String collection, String book, PrintStream report, Store store) {
         super(report, store);
         this.collection = collection;
         this.book = book;
+
+        try {
+            collectionExists = Arrays.asList(store.listBookCollections()).contains(collection);
+            bookExists = collectionExists && Arrays.asList(store.listBooks(collection)).contains(book);
+        } catch (IOException e) {
+            report.println("Failed to find archive.");
+        }
     }
 
     @Override
     public void list() {
+        if (!collectionExists) {
+            report.println("Collection not found in archive. (" + collection + ")");
+            return;
+        } else if (!bookExists) {
+            report.println("Book not found in archive. (" + collection + ":" + book + ")");
+            return;
+        }
+
         try {
             BookCollection col = store.loadBookCollection(collection, null);
             Book book = store.loadBook(col, this.book, null);
@@ -41,6 +60,14 @@ public class BookDerivative extends AbstractDerivative {
 
     @Override
     public void updateChecksum(boolean force) throws IOException {
+        if (!collectionExists) {
+            report.println("Collection not found in archive. (" + collection + ")");
+            return;
+        } else if (!bookExists) {
+            report.println("Book not found in archive. (" + collection + ":" + book + ")");
+            return;
+        }
+
         List<String> errors = new ArrayList<>();
 
         report.println("Updating checksum [" + collection + ":" + book + "]");
@@ -53,6 +80,14 @@ public class BookDerivative extends AbstractDerivative {
 
     @Override
     public void check(boolean checkBits) throws IOException {
+        if (!collectionExists) {
+            report.println("Collection not found in archive. (" + collection + ")");
+            return;
+        } else if (!bookExists) {
+            report.println("Book not found in archive. (" + collection + ":" + book + ")");
+            return;
+        }
+
         List<String> errors = new ArrayList<>();
         List<String> warnings = new ArrayList<>();
         List<String> loadingErrors = new ArrayList<>();
@@ -76,6 +111,14 @@ public class BookDerivative extends AbstractDerivative {
 
     @Override
     public void generateAndWriteImageList(boolean force) throws IOException {
+        if (!collectionExists) {
+            report.println("Collection not found in archive. (" + collection + ")");
+            return;
+        } else if (!bookExists) {
+            report.println("Book not found in archive. (" + collection + ":" + book + ")");
+            return;
+        }
+
         List<String> errors = new ArrayList<>();
         report.println("Generating and writing image list. [" + collection + ":" + book + "]");
         store.generateAndWriteImageList(collection, book, force, errors);
@@ -87,6 +130,14 @@ public class BookDerivative extends AbstractDerivative {
 
     @Override
     public void validateXml() throws IOException {
+        if (!collectionExists) {
+            report.println("Collection not found in archive. (" + collection + ")");
+            return;
+        } else if (!bookExists) {
+            report.println("Book not found in archive. (" + collection + ":" + book + ")");
+            return;
+        }
+
         List<String> errors = new ArrayList<>();
         store.validateXml(collection, book, errors, errors);
 
@@ -97,6 +148,14 @@ public class BookDerivative extends AbstractDerivative {
 
     @Override
     public void renameImages(boolean changeId, boolean reverse) throws IOException {
+        if (!collectionExists) {
+            report.println("Collection not found in archive. (" + collection + ")");
+            return;
+        } else if (!bookExists) {
+            report.println("Book not found in archive. (" + collection + ":" + book + ")");
+            return;
+        }
+
         List<String> errors = new ArrayList<>();
         report.println("Renaming images. [" + collection + ":" + book + "]");
         store.renameImages(collection, book, changeId, reverse, errors);
@@ -108,6 +167,14 @@ public class BookDerivative extends AbstractDerivative {
 
     @Override
     public void renameTranscriptions(boolean reverse) throws IOException {
+        if (!collectionExists) {
+            report.println("Collection not found in archive. (" + collection + ")");
+            return;
+        } else if (!bookExists) {
+            report.println("Book not found in archive. (" + collection + ":" + book + ")");
+            return;
+        }
+
         List<String> errors = new ArrayList<>();
         report.println("Renaming AoR transcriptions. [" + collection + ":" + book + "]");
         store.renameTranscriptions(collection, book, reverse, errors);
@@ -118,6 +185,14 @@ public class BookDerivative extends AbstractDerivative {
     }
 
     public void convertTranscriptionTexts() throws IOException {
+        if (!collectionExists) {
+            report.println("Collection not found in archive. (" + collection + ")");
+            return;
+        } else if (!bookExists) {
+            report.println("Book not found in archive. (" + collection + ":" + book + ")");
+            return;
+        }
+
         List<String> errors = new ArrayList<>();
         List<String> warnings = new ArrayList<>();
 
@@ -135,6 +210,14 @@ public class BookDerivative extends AbstractDerivative {
 
 
     public void generateFileMap() throws IOException {
+        if (!collectionExists) {
+            report.println("Collection not found in archive. (" + collection + ")");
+            return;
+        } else if (!bookExists) {
+            report.println("Book not found in archive. (" + collection + ":" + book + ")");
+            return;
+        }
+
         Scanner in = new Scanner(System.in);
 
         System.out.print("Has a frontcover + front pastedown image? (true|false) ");
