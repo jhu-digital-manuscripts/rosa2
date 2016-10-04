@@ -936,7 +936,6 @@ public class StoreImpl implements Store, ArchiveConstants {
         // Get all file names, filter out only images, trim excess whitespace, sort, then return as List
         return bookStreams.listByteStreamNames().stream()
                 .filter(name -> parser.getArchiveItemType(name) == ArchiveItemType.IMAGE)
-                .map(String::trim)
                 .sorted()
                 .collect(Collectors.toList());
     }

@@ -27,7 +27,7 @@ public class StoreImplRenameImagesTest extends BaseArchiveTest {
     /**
      * Successfully rename all images in FolgersHa2.
      *
-     * @throws IOException
+     * @throws IOException if archive is not available
      */
     @Test
     public void renameImagesTest() throws IOException {
@@ -49,7 +49,7 @@ public class StoreImplRenameImagesTest extends BaseArchiveTest {
      * Successfully rename all images in FolgersHa2, then rename them back
      * to their original names using the REVERSE flag.
      *
-     * @throws IOException
+     * @throws IOException if archive is not available
      */
     @Test
     public void renameImagesReverseTest() throws IOException {
@@ -82,7 +82,7 @@ public class StoreImplRenameImagesTest extends BaseArchiveTest {
      * with the same value. If the operation would succeed, then it would result in
      * multiple images being written to the same file name, ending with data loss.
      *
-     * @throws IOException
+     * @throws IOException if archive is not available
      */
     @Test
     public void doesNotRenameWithBadFileMap() throws IOException {
@@ -98,7 +98,7 @@ public class StoreImplRenameImagesTest extends BaseArchiveTest {
      * All images are given a bad book ID in its name. They are then renamed to have
      * the correct book ID in its name.
      *
-     * @throws IOException
+     * @throws IOException if archive is not available
      */
     @Test
     public void renameByChangingIdsOnly() throws IOException {
@@ -131,11 +131,9 @@ public class StoreImplRenameImagesTest extends BaseArchiveTest {
      * @param names list of file names
      */
     private void checkImageIds(String goodId, List<String> names) {
-        for (String name : names) {
-            if (parser.getArchiveItemType(name) == ArchiveItemType.IMAGE) {
-                assertTrue("Bad ID found in image name.", name.startsWith(goodId));
-            }
-        }
+        names.stream()
+                .filter(name -> parser.getArchiveItemType(name) == ArchiveItemType.IMAGE)
+                .forEach(name -> assertTrue("Bad ID found in image name.", name.startsWith(goodId)));
     }
 
     private void generateFileMap(String collection, String book, String id, boolean hasFront, boolean hasBack,

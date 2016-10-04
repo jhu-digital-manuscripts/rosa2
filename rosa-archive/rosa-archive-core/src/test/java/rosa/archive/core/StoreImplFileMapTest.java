@@ -7,16 +7,18 @@ import rosa.archive.model.FileMap;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 public class StoreImplFileMapTest extends BaseArchiveTest {
     private static final String NEW_ID = "NewId";
@@ -40,9 +42,46 @@ public class StoreImplFileMapTest extends BaseArchiveTest {
         assertNotNull("Failed to load book content.", folgers.getContent());
 
         assertTrue("File map not found in book content.",
-                Arrays.asList(folgers.getContent()).contains(ArchiveConstants.FILE_MAP));
+                Arrays.stream(folgers.getContent()).anyMatch(ArchiveConstants.FILE_MAP::equals));
 
         Path bookPath = getBookPath(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
+        testFileMap(bookPath);
+    }
+
+    /**
+     * Generate a file map using image files with tabs at the end of the file names.
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void generateFileMapWithSpaces() throws Exception {
+        List<String> errors = new ArrayList<>();
+        Path bookPath = getBookPath(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
+
+        Files.list(bookPath).filter(file -> file.toString().trim().endsWith(".tif"))
+                .forEach(file -> {
+                    Path target = Paths.get(file.toString() + "\t\t");
+
+                    try {
+                        Files.move(file, target);
+                    } catch (IOException e) {
+                        System.err.println("Failed to rename files.");
+                        fail();
+                    }
+                });
+
+        store.generateFileMap(VALID_COLLECTION, VALID_BOOK_LUDWIGXV7, NEW_ID, HAS_FRONT_COVER, HAS_BACK_COVER,
+                NUM_FRONTMATTER, NUM_ENDMATTER, NUM_MISC, errors);
+        assertTrue("Unexpected errors found.", errors.isEmpty());
+
+        // Load the book after modification
+        Book ludwig = loadValidLudwigXV7();
+        assertNotNull("Could not find FolgersHa2 in test archive.", ludwig);
+        assertNotNull("Failed to load book content.", ludwig.getContent());
+
+        assertTrue("File map not found in book content.",
+                Arrays.stream(ludwig.getContent()).anyMatch(ArchiveConstants.FILE_MAP::equals));
+
         testFileMap(bookPath);
     }
 
@@ -57,7 +96,7 @@ public class StoreImplFileMapTest extends BaseArchiveTest {
         FileMapSerializer serializer = new FileMapSerializer();
 
         // Load the file map
-        FileMap map = null;
+        FileMap map;
         try (InputStream in = Files.newInputStream(fileMapPath)) {
             map = serializer.read(in, errors);
         }
@@ -69,17 +108,14 @@ public class StoreImplFileMapTest extends BaseArchiveTest {
         Set<String> keySet = map.getMap().keySet();
 
         // Make sure all images are present in file map
-        try (DirectoryStream<Path> ds = Files.newDirectoryStream(bookPath, new DirectoryStream.Filter<Path>() {
-            @Override
-            public boolean accept(Path entry) throws IOException {
-                String name = entry.getFileName().toString();
-                return name.endsWith(ArchiveConstants.TIF_EXT);
-            }
-        })) {
-            for (Path p : ds) {
-                assertTrue("Image not present in file map.", keySet.contains(p.getFileName().toString()));
-            }
-        }
+        Files.list(bookPath)
+                .filter(file -> file.getFileName().toString().trim().endsWith(ArchiveConstants.TIF_EXT))
+                .forEach(file -> assertTrue("Image not present in file map.", keySet.contains(file.getFileName().toString())));
+
+        // Ensure no duplicate values
+        assertEquals("Duplicate values found in file map which could result in some files overwriting others.",
+                map.getMap().size(),
+                map.getMap().entrySet().stream().distinct().count());
     }
 
 }
