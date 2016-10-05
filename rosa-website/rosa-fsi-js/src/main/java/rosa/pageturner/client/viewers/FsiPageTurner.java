@@ -168,6 +168,7 @@ public class FsiPageTurner extends Composite implements PageTurner, HasClickHand
         options = new HashMap<>();
         options.put("plugins", "FullScreen, Resize");
         options.put("src", book.missingImage.id);
+        options.put("inPlaceZoom", "true");
         zoomView.setId("rosa-pageturner-zoomview");
         zoomView.setOptions(options);
 
