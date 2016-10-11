@@ -895,6 +895,15 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
     }
 
+    @Override
+    public void shallowCopy(ByteStreamGroup destination) throws IOException {
+        if (destination == null || destination.id() == null || destination.id().isEmpty()) {
+            throw new IllegalArgumentException("No destination specified.");
+        }
+
+        base.copyTo(destination);
+    }
+
     private List<String> getTranscriptionFileNames(Book book) {
         List<String> list = new ArrayList<>();
 

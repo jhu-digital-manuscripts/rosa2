@@ -324,4 +324,15 @@ public interface Store {
      */
     void generateTEITranscriptions(String collection, String book, List<String> errors,
                                    List<String> warnings) throws IOException;
+
+    /**
+     * Create a shallow copy of this archive at the specified destination. A new
+     * directory will be ByteStreamGroup will be created at the destination.
+     * This copy will contain only metadata and transcription files. No images
+     * will be copied over.
+     *
+     * @param destination target byte stream group
+     * @throws IOException if the archive or destination are not available
+     */
+    void shallowCopy(ByteStreamGroup destination) throws IOException;
 }

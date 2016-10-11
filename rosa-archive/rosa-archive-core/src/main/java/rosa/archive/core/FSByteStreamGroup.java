@@ -5,17 +5,45 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.DirectoryStream;
 import java.nio.file.FileSystems;
+import java.nio.file.FileVisitOption;
+import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.SimpleFileVisitor;
 import java.nio.file.StandardCopyOption;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
+import java.util.EnumSet;
 import java.util.List;
 
 /**
  * Implementation of {@link ByteStreamGroup} backed by a directory in a file system.
  */
 public class FSByteStreamGroup implements ByteStreamGroup {
+    /**
+     * Enum of files that can be copied when doing a shallow copy of this ByteStreamGroup.
+     */
+    private enum SHALLOW_COPY_TYPES {
+        XML("application/xml", "xml"), TXT("text/plain", "txt"), HTML("text/html", "html"), CSV("text/csv", "csv");
+
+        final String type;
+        final String extension;
+
+        SHALLOW_COPY_TYPES(String type, String extension) {
+            this.type = type;
+            this.extension = extension;
+        }
+
+        static boolean canCopy(String type) {
+            for (SHALLOW_COPY_TYPES t : values()) {
+                if (t.type.equals(type)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
 
     private Path base;
 
@@ -201,6 +229,45 @@ public class FSByteStreamGroup implements ByteStreamGroup {
 
         Path group = Files.createDirectory(base.resolve(name));
         return new FSByteStreamGroup(group);
+    }
+
+    @Override
+    public void copyTo(ByteStreamGroup targetGroup) throws IOException {
+        if (targetGroup == null || targetGroup.id() == null || targetGroup.id().isEmpty()) {
+            throw new IOException("No target specified.");
+        }
+
+        // TODO if target already has a directory with the same name? Overwrite or do nothing?
+        // Current behavior is to overwrite
+        if (!targetGroup.hasByteStreamGroup(name())) {
+            targetGroup.newByteStreamGroup(name());
+        }
+
+        Path targetPath = Paths.get(targetGroup.id()).resolve(name());
+        Files.copy(base, targetPath, StandardCopyOption.REPLACE_EXISTING);
+        Files.walkFileTree(
+                base, EnumSet.of(FileVisitOption.FOLLOW_LINKS), Integer.MAX_VALUE,
+                new SimpleFileVisitor<Path>() {
+                    @Override
+                    public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+                        Path targetDir = targetPath.resolve(base.relativize(dir));
+
+                        Files.copy(dir, targetDir);
+                        return FileVisitResult.CONTINUE;
+                    }
+
+                    @Override
+                    public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+                        Path targetDir = targetPath.resolve(base.relativize(file));
+
+                        String type = Files.probeContentType(file);
+                        if (!file.toString().startsWith(".") && SHALLOW_COPY_TYPES.canCopy(type)) {
+                            Files.copy(file, targetDir);
+                        }
+                        return FileVisitResult.CONTINUE;
+                    }
+                }
+        );
     }
 
     @Override
