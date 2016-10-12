@@ -1,4 +1,4 @@
-package rosa.website.tool;
+package rosa.search.tool;
 
 import rosa.archive.core.Store;
 import rosa.archive.model.BookCollection;

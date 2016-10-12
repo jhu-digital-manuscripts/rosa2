@@ -319,6 +319,12 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>rosa.search</groupId>
+                <artifactId>rosa-search-tool</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
