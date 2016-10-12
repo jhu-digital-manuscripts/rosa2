@@ -34,6 +34,7 @@
         <mvn.gwt.plugin.version>${gwt.version}</mvn.gwt.plugin.version>
         <mvn.source.plugin.version>2.4</mvn.source.plugin.version>
         <mvn.buildnumber.plugin.version>1.4</mvn.buildnumber.plugin.version>
+        <mvn.exec.plugin.version>1.5.0</mvn.exec.plugin.version>
 
         <!-- Dependency versions -->
         <guice.version>4.0</guice.version>
@@ -365,6 +366,12 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>buildnumber-maven-plugin</artifactId>
                     <version>${mvn.buildnumber.plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>${mvn.exec.plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>

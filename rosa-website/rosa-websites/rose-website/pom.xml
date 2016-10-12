@@ -15,7 +15,8 @@
     <properties>
         <commitNumber>${buildNumber}</commitNumber>
         <collection.name>rosecollection</collection.name>
-        <search.index.path>webapps/rose/WEB-INF/lucene</search.index.path>
+        <!--<search.index.path>webapps/rose/WEB-INF/lucene</search.index.path>-->
+        <search.index.path>${project.build.directory}/${project.build.finalName}/lucene</search.index.path>
     </properties>
 
     <profiles>
@@ -212,6 +213,27 @@
                     </webResources>
                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>create-lucene-index</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>rosa.website.core.server.IndexToolMain</mainClass>
+                    <arguments>
+                        <argument>${collection.name}</argument>
+                        <argument>${search.index.path}</argument>
+                    </arguments>
                 </configuration>
             </plugin>
         </plugins>
