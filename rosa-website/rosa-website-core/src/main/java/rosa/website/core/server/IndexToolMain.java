@@ -10,7 +10,7 @@ import rosa.search.tool.Tool;
 public class IndexToolMain {
 
     public static void main(String[] args) {
-        Injector injector = Guice.createInjector(new ToolModule(), new ArchiveCoreModule());
+        Injector injector = Guice.createInjector(new ToolModule());
 
         Tool tool = new Tool(
                 injector.getInstance(Store.class),

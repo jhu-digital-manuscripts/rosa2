@@ -12,6 +12,12 @@
     <artifactId>pizan-website</artifactId>
     <packaging>war</packaging>
 
+    <properties>
+        <archive.path>/mnt/archive</archive.path>
+        <!--<search.index.path>webapps/pizan/WEB-INF/lucene</search.index.path>-->
+        <search.index.path>${project.build.directory}/${project.build.finalName}/lucene</search.index.path>
+    </properties>
+
     <profiles>
         <profile>
             <id>test</id>
@@ -20,9 +26,7 @@
             </activation>
 
             <properties>
-                <archive.path>/mnt/archive</archive.path>
                 <collection.name>pizancollection</collection.name>
-                <search.index.path>webapps/pizan/WEB-INF/lucene</search.index.path>
                 <gwt.output.style>pretty</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>
                 <analytics.status>false</analytics.status>
@@ -35,7 +39,6 @@
             <properties>
               <archive.path>/mnt/archive</archive.path>
               <collection.name>pizancollection</collection.name>
-              <search.index.path>webapps/pizan/WEB-INF/lucene</search.index.path>
               <gwt.output.style>obf</gwt.output.style>
               <gwt.log.level>SEVERE</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
               <analytics.status>false</analytics.status>
@@ -183,6 +186,30 @@
                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
                 </configuration>
+            </plugin>
+
+            <!-- Exec plugin to run CLI tools -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>create-lucene-index</id>
+                        <phase>generate-resources</phase>
+
+                        <configuration>
+                            <mainClass>rosa.website.core.server.IndexToolMain</mainClass>
+                            <arguments>
+                                <argument>${collection.name}</argument>
+                                <argument>${search.index.path}</argument>
+                            </arguments>
+                        </configuration>
+
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
 

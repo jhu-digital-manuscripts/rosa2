@@ -216,6 +216,7 @@
                 </configuration>
             </plugin>
 
+            <!-- Exec plugin to run CLI tools -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -223,18 +224,20 @@
                     <execution>
                         <id>create-lucene-index</id>
                         <phase>generate-resources</phase>
+
+                        <configuration>
+                            <mainClass>rosa.website.core.server.IndexToolMain</mainClass>
+                            <arguments>
+                                <argument>${collection.name}</argument>
+                                <argument>${search.index.path}</argument>
+                            </arguments>
+                        </configuration>
+
                         <goals>
                             <goal>java</goal>
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <mainClass>rosa.website.core.server.IndexToolMain</mainClass>
-                    <arguments>
-                        <argument>${collection.name}</argument>
-                        <argument>${search.index.path}</argument>
-                    </arguments>
-                </configuration>
             </plugin>
         </plugins>
 
