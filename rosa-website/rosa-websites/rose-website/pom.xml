@@ -43,6 +43,31 @@
                 <analytics.status>false</analytics.status>
             </properties>
         </profile>
+
+        <profile>
+            <id>no-archive-test</id>
+            <properties>
+                <gwt.output.style>pretty</gwt.output.style>
+                <gwt.log.level>INFO</gwt.log.level>
+                <analytics.status>false</analytics.status>
+            </properties>
+
+            <build>
+                <plugins>
+                    <!-- Disable this plugin by binding to no lifecycle phase -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>create-lucene-index</id>
+                                <phase>none</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 
     <dependencies>

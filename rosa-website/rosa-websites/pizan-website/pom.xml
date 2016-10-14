@@ -13,6 +13,7 @@
     <packaging>war</packaging>
 
     <properties>
+        <collection.name>pizancollection</collection.name>
         <archive.path>/mnt/archive</archive.path>
         <search.index.path>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</search.index.path>
     </properties>
@@ -25,7 +26,6 @@
             </activation>
 
             <properties>
-                <collection.name>pizancollection</collection.name>
                 <gwt.output.style>pretty</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>
                 <analytics.status>false</analytics.status>
@@ -36,12 +36,35 @@
             <id>production</id>
 
             <properties>
-              <archive.path>/mnt/archive</archive.path>
-              <collection.name>pizancollection</collection.name>
               <gwt.output.style>obf</gwt.output.style>
               <gwt.log.level>SEVERE</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
               <analytics.status>false</analytics.status>
             </properties>
+        </profile>
+
+        <profile>
+            <id>no-archive-test</id>
+            <properties>
+                <gwt.output.style>pretty</gwt.output.style>
+                <gwt.log.level>INFO</gwt.log.level>
+                <analytics.status>false</analytics.status>
+            </properties>
+
+            <build>
+                <plugins>
+                    <!-- Disable this plugin by binding to no lifecycle phase -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>create-lucene-index</id>
+                                <phase>none</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
     </profiles>
 
