@@ -15,8 +15,7 @@
     <properties>
         <commitNumber>${buildNumber}</commitNumber>
         <collection.name>rosecollection</collection.name>
-        <!--<search.index.path>webapps/rose/WEB-INF/lucene</search.index.path>-->
-        <search.index.path>${project.build.directory}/${project.build.finalName}/lucene</search.index.path>
+        <search.index.path>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</search.index.path>
     </properties>
 
     <profiles>

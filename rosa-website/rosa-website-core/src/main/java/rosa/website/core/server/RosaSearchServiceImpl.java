@@ -48,6 +48,8 @@ public class RosaSearchServiceImpl extends ContextRemoteServiceServlet implement
             if (searchService.isEmpty()) {
                 log.info("Search index empty, creating new index.");
                 update();
+            } else {
+                log.info("Loading pre-initialized search index.");
             }
         } catch (IOException e) {
             log.log(Level.SEVERE, "Could not initialize search service. ", e);

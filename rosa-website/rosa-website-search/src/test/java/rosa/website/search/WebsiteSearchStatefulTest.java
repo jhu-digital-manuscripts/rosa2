@@ -11,6 +11,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import java.io.InputStream;
+import java.nio.file.Path;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -23,6 +24,7 @@ import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.search.core.LuceneSearchService;
+import rosa.search.core.SearchService;
 import rosa.search.model.Query;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
@@ -38,6 +40,7 @@ public class WebsiteSearchStatefulTest extends BaseArchiveTest {
 
     @Rule
     public TemporaryFolder tmp_index_dir = new TemporaryFolder();
+    private Path indexPath;
 
     /*
      * NOTE: According to JUnit4 documentation, @Before methods in superclasses are
@@ -45,7 +48,8 @@ public class WebsiteSearchStatefulTest extends BaseArchiveTest {
      */
     @Before
     public void setup() throws Exception {
-        service = new LuceneSearchService(tmp_index_dir.newFolder().toPath(), new WebsiteLuceneMapper());
+        indexPath = tmp_index_dir.newFolder().toPath();
+        service = new LuceneSearchService(indexPath, new WebsiteLuceneMapper());
         
         assertTrue(service.isEmpty());
     }
@@ -106,6 +110,23 @@ public class WebsiteSearchStatefulTest extends BaseArchiveTest {
     	service.clear();
         
     	assertTrue(service.isEmpty());
+    }
+
+    /**
+     * Test the {@link LuceneSearchService#isEmpty()} method with two separate search services.
+     * The first search service will index a collection. The second search service will then use
+     * the same index. The second search service should see that the index already exists.
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testIsEmpty() throws Exception {
+        assertTrue(service.isEmpty());
+        service.update(store, VALID_COLLECTION);
+        assertFalse(service.isEmpty());
+
+        SearchService otherService = new LuceneSearchService(indexPath, new WebsiteLuceneMapper());
+        assertFalse(otherService.isEmpty());
     }
 
     /*
