@@ -33,6 +33,9 @@ public class SearchIndexDerivative extends Derivative {
         } catch (IOException e) {
             report().println("Could not create search index.");
             e.printStackTrace(report());
+        } catch (NullPointerException e) {
+            report().println("Archive not found, or collection not found.");
+            e.printStackTrace(report());
         }
     }
 
