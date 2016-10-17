@@ -237,14 +237,7 @@ public class FSByteStreamGroup implements ByteStreamGroup {
             throw new IOException("No target specified.");
         }
 
-        // TODO if target already has a directory with the same name? Overwrite or do nothing?
-        // Current behavior is to overwrite
-        if (!targetGroup.hasByteStreamGroup(name())) {
-            targetGroup.newByteStreamGroup(name());
-        }
-
         Path targetPath = Paths.get(targetGroup.id()).resolve(name());
-        Files.copy(base, targetPath, StandardCopyOption.REPLACE_EXISTING);
         Files.walkFileTree(
                 base, EnumSet.of(FileVisitOption.FOLLOW_LINKS), Integer.MAX_VALUE,
                 new SimpleFileVisitor<Path>() {
@@ -258,11 +251,11 @@ public class FSByteStreamGroup implements ByteStreamGroup {
 
                     @Override
                     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-                        Path targetDir = targetPath.resolve(base.relativize(file));
+                        Path target = targetPath.resolve(base.relativize(file));
 
                         String type = Files.probeContentType(file);
                         if (!file.toString().startsWith(".") && SHALLOW_COPY_TYPES.canCopy(type)) {
-                            Files.copy(file, targetDir);
+                            Files.copy(file, target);
                         }
                         return FileVisitResult.CONTINUE;
                     }

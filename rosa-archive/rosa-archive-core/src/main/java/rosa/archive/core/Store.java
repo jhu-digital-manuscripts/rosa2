@@ -334,5 +334,5 @@ public interface Store {
      * @param destination target byte stream group
      * @throws IOException if the archive or destination are not available
      */
-    void shallowCopy(ByteStreamGroup destination) throws IOException;
+    void shallowCopy(String collection, ByteStreamGroup destination) throws IOException;
 }
