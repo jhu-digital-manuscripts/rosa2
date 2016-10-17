@@ -5,6 +5,7 @@ import com.google.inject.Provides;
 import com.google.inject.TypeLiteral;
 import com.google.inject.multibindings.Multibinder;
 import com.google.inject.name.Named;
+import com.google.inject.name.Names;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.Store;
@@ -32,10 +33,13 @@ import rosa.archive.core.serialize.Serializer;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.core.serialize.TranscriptionXmlSerializer;
 import rosa.search.core.LuceneMapper;
+import rosa.search.core.LuceneSearchService;
+import rosa.search.core.SearchService;
 import rosa.website.search.WebsiteLuceneMapper;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class ToolModule extends AbstractModule {
@@ -43,6 +47,7 @@ public class ToolModule extends AbstractModule {
 
     @Override
     protected void configure() {
+        Names.bindProperties(binder(), System.getProperties());
         //  Serializers
         Multibinder<Serializer<?>> serializers = Multibinder.newSetBinder(binder(), new TypeLiteral<Serializer<?>>(){});
 
@@ -87,6 +92,15 @@ public class ToolModule extends AbstractModule {
     }
 
     @Provides
+    public SearchService searchService(@Named("search.index.path") String indexPath, LuceneMapper mapper) {
+        try {
+            return new LuceneSearchService(Paths.get(indexPath), mapper);
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to create search service.");
+        }
+    }
+
+    @Provides
     public Store store(SerializerSet serializerSet, BookChecker bookChecker, BookCollectionChecker collectionChecker,
                        ByteStreamGroup archive) {
         return new StoreImpl(serializerSet, bookChecker, collectionChecker, archive);
@@ -97,14 +111,4 @@ public class ToolModule extends AbstractModule {
         return new FSByteStreamGroup(archivePath);
     }
 
-    @Provides
-    @Named("archive.path")
-    public String archivePath() {
-        String path = System.getProperty("archive.path");
-        if (path != null && !path.isEmpty()) {
-            return path;
-        }
-
-        return loadProperties(TOOL_PROPERTIES).getProperty("archive.path");
-    }
 }

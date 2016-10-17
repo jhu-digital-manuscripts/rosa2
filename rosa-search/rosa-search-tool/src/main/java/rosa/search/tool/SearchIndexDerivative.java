@@ -1,13 +1,10 @@
 package rosa.search.tool;
 
 import rosa.archive.core.Store;
-import rosa.search.core.LuceneMapper;
-import rosa.search.core.LuceneSearchService;
 import rosa.search.core.SearchService;
 
 import java.io.IOException;
 import java.io.PrintStream;
-import java.nio.file.Path;
 
 /**
  * Create a search index based on current archive data.
@@ -17,19 +14,17 @@ import java.nio.file.Path;
  */
 public class SearchIndexDerivative extends Derivative {
 
-    private final LuceneMapper mapper;
+    private final SearchService searchService;
 
-    public SearchIndexDerivative(String collectionName, Store archiveStore, Path targetPath, LuceneMapper mapper,
-                                 PrintStream report) {
-        super(collectionName, archiveStore, targetPath, report);
-        this.mapper = mapper;
+    public SearchIndexDerivative(String collectionName, Store archiveStore, SearchService searchService, PrintStream report) {
+        super(collectionName, archiveStore, report);
+        this.searchService = searchService;
     }
 
     @Override
     public void update() {
         try {
-            SearchService service = new LuceneSearchService(targetPath(), mapper);
-            service.update(archiveStore(), collectionName());
+            searchService.update(archiveStore(), collectionName());
         } catch (IOException e) {
             report().println("Could not create search index.");
             e.printStackTrace(report());

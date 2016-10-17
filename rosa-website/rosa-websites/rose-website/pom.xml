@@ -253,8 +253,13 @@
                             <mainClass>rosa.website.core.server.IndexToolMain</mainClass>
                             <arguments>
                                 <argument>${collection.name}</argument>
-                                <argument>${search.index.path}</argument>
                             </arguments>
+                            <systemProperties>
+                                <systemProperty>
+                                    <key>search.index.path</key>
+                                    <value>${search.index.path}</value>
+                                </systemProperty>
+                            </systemProperties>
                         </configuration>
 
                         <goals>

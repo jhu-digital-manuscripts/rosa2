@@ -12,13 +12,11 @@ import java.util.List;
 public abstract class Derivative {
     private final PrintStream report;
     private final Store archiveStore;
-    private final Path targetPath;
     private final String collectionName;
 
-    public Derivative(String collectionName, Store archiveStore, Path targetPath, PrintStream report) {
+    public Derivative(String collectionName, Store archiveStore, PrintStream report) {
         this.report = report;
         this.archiveStore = archiveStore;
-        this.targetPath = targetPath;
         this.collectionName = collectionName;
     }
 
@@ -28,10 +26,6 @@ public abstract class Derivative {
 
     public Store archiveStore() {
         return archiveStore;
-    }
-
-    public Path targetPath() {
-        return targetPath;
     }
 
     public String collectionName() {

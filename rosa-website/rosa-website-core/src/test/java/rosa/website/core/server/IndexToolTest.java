@@ -5,6 +5,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import rosa.archive.core.BaseArchiveTest;
+import rosa.search.core.LuceneSearchService;
+import rosa.search.core.SearchService;
 import rosa.search.tool.Tool;
 import rosa.website.search.WebsiteLuceneMapper;
 
@@ -36,9 +38,10 @@ public class IndexToolTest extends BaseArchiveTest {
     @Test
     public void createIndexTest() throws Exception {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        Tool tool = new Tool(store, new WebsiteLuceneMapper(), new PrintStream(out));
+        SearchService service = new LuceneSearchService(targetIndexPath, new WebsiteLuceneMapper());
+        Tool tool = new Tool(store, service, new PrintStream(out));
 
-        tool.process(new String[] {VALID_COLLECTION, targetIndexPath.toString()});
+        tool.process(new String[] {VALID_COLLECTION});
 
         String[] content = targetIndexPath.toFile().list();
         assertNotNull("Could not list contents of target index directory.", content);
@@ -50,12 +53,13 @@ public class IndexToolTest extends BaseArchiveTest {
     @Test
     public void doNothingWithBadInput() throws Exception {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-        Tool tool = new Tool(store, new WebsiteLuceneMapper(), new PrintStream(out));
+        SearchService service = new LuceneSearchService(targetIndexPath, new WebsiteLuceneMapper());
+        Tool tool = new Tool(store, service, new PrintStream(out));
 
-        tool.process(new String[] {VALID_COLLECTION});
+        tool.process(new String[] {VALID_COLLECTION, "blah"});
 
         assertFalse("Output messages were expected from tool.", out.toString("UTF-8").isEmpty());
-        assertTrue(out.toString("UTF-8").startsWith("Must provide two arguments. Usage: <tool> <collectionName> <indexPath>"));
+        assertTrue(out.toString("UTF-8").startsWith("Must provide one arguments. Usage: <tool> <collectionName>"));
     }
 
 }

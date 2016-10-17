@@ -1,87 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <parent>
-    <artifactId>rosa-iiif-parent</artifactId>
-    <groupId>rosa.iiif</groupId>
-    <version>2.0.1-SNAPSHOT</version>
-  </parent>
+    <parent>
+        <artifactId>rosa-iiif-parent</artifactId>
+        <groupId>rosa.iiif</groupId>
+        <version>2.0.1-SNAPSHOT</version>
+    </parent>
 
-  <modelVersion>4.0.0</modelVersion>
-  <artifactId>rosa-iiif-presentation-endpoint</artifactId>
-  <packaging>war</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>rosa-iiif-presentation-endpoint</artifactId>
+    <packaging>war</packaging>
+
+    <properties>
+        <archive.path>/mnt/archive</archive.path>
+        <iiif.pres.scheme>http</iiif.pres.scheme>
+        <iiif.pres.host>jdm.library.jhu.edu</iiif.pres.host>
+        <iiif.pres.port>80</iiif.pres.port>
+        <iiif.pres.prefix>/iiif-pres</iiif.pres.prefix>
+        <iiif.pres.search.index>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</iiif.pres.search.index>
+    </properties>
 
     <profiles>
         <profile>
-            <id>test</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+            <id>no-archive-test</id>
 
-            <properties>
-                <iiif.pres.search.index>/tmp/lucene</iiif.pres.search.index>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>production</id>
-
-            <properties>
-                <iiif.pres.search.index>webapps/iiif-pres/WEB-INF/lucene</iiif.pres.search.index>
-            </properties>
+            <build>
+                <plugins>
+                    <!-- Disable this plugin by binding to no lifecycle phase -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>create-lucene-index</id>
+                                <phase>none</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
     </profiles>
 
-    <build>    
-      <resources>
-	<resource>
-	  <directory>src/main/resources</directory>
-	  <filtering>true</filtering>
-	</resource>
-      </resources>
+    <build>
+        <plugins>
+            <!-- Exec plugin to run CLI tools -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>create-lucene-index</id>
+                        <phase>generate-resources</phase>
+
+                        <configuration>
+                            <mainClass>rosa.iiif.presentation.core.IndexTool</mainClass>
+                            <arguments>
+                                <argument>${iiif.pres.search.index}</argument>
+                            </arguments>
+
+                            <systemProperties>
+                                <systemProperty>
+                                    <key>archive.path</key>
+                                    <value>${archive.path}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>iiif.pres.search.index</key>
+                                    <value>${iiif.pres.search.index}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>iiif.pres.scheme</key>
+                                    <value>${iiif.pres.scheme}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>iiif.pres.host</key>
+                                    <value>${iiif.pres.host}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>iiif.pres.prefix</key>
+                                    <value>${iiif.pres.prefix}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>iiif.pres.port</key>
+                                    <value>${iiif.pres.port}</value>
+                                </systemProperty>
+                            </systemProperties>
+                        </configuration>
+
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
-  
- <dependencies>
-    <dependency>
-      <artifactId>servlet-api</artifactId>
-      <groupId>javax.servlet</groupId>
-      <scope>provided</scope>
-    </dependency>
 
-    <dependency>
-      <groupId>com.google.inject</groupId>
-      <artifactId>guice</artifactId>
-    </dependency>
+    <dependencies>
+        <dependency>
+            <artifactId>servlet-api</artifactId>
+            <groupId>javax.servlet</groupId>
+            <scope>provided</scope>
+        </dependency>
 
-    <dependency>
-      <groupId>com.google.inject.extensions</groupId>
-      <artifactId>guice-servlet</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+        </dependency>
 
-    <dependency>
-      <groupId>rosa.iiif</groupId>
-      <artifactId>rosa-iiif-presentation-model</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-servlet</artifactId>
+        </dependency>
 
-    <dependency>
-      <groupId>rosa.archive</groupId>
-      <artifactId>rosa-archive-core</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>rosa.iiif</groupId>
+            <artifactId>rosa-iiif-presentation-model</artifactId>
+        </dependency>
 
-    <dependency>
-      <groupId>rosa.iiif</groupId>
-      <artifactId>rosa-iiif-image-core</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>rosa.archive</groupId>
+            <artifactId>rosa-archive-core</artifactId>
+        </dependency>
 
-    <dependency>
-      <groupId>rosa.iiif</groupId>
-      <artifactId>rosa-iiif-presentation-core</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>rosa.iiif</groupId>
+            <artifactId>rosa-iiif-image-core</artifactId>
+        </dependency>
 
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>                
-  </dependencies>
+        <dependency>
+            <groupId>rosa.iiif</groupId>
+            <artifactId>rosa-iiif-presentation-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>
