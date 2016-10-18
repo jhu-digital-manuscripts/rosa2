@@ -13,20 +13,18 @@
     <packaging>war</packaging>
 
     <properties>
+        <archive.path>/mnt/archive</archive.path>
         <commitNumber>${buildNumber}</commitNumber>
         <collection.name>rosecollection</collection.name>
+        <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF/archive</metadata.copy.path>
         <search.index.path>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</search.index.path>
     </properties>
 
     <profiles>
         <profile>
-            <id>test</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+            <id>debug</id>
 
             <properties>
-                <archive.path>/mnt/archive</archive.path>
                 <gwt.output.style>PRETTY</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>
                 <analytics.status>false</analytics.status>
@@ -35,9 +33,11 @@
 
         <profile>
             <id>production</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
 
             <properties>
-                <archive.path>/mnt/archive</archive.path>
                 <gwt.output.style>obf</gwt.output.style>
                 <gwt.log.level>WARNING</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
                 <analytics.status>false</analytics.status>
@@ -46,12 +46,6 @@
 
         <profile>
             <id>no-archive-test</id>
-            <properties>
-                <gwt.output.style>pretty</gwt.output.style>
-                <gwt.log.level>INFO</gwt.log.level>
-                <analytics.status>false</analytics.status>
-            </properties>
-
             <build>
                 <plugins>
                     <!-- Disable this plugin by binding to no lifecycle phase -->
@@ -100,6 +94,11 @@
             <groupId>rosa.archive</groupId>
             <artifactId>rosa-archive-model</artifactId>
             <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa.archive</groupId>
+            <artifactId>rosa-archive-tool</artifactId>
         </dependency>
 
         <dependency>
@@ -245,6 +244,31 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <executions>
+                    <execution>
+                        <id>copy-archive-data</id>
+                        <phase>generate-resources</phase>
+
+                        <configuration>
+                            <mainClass>rosa.archive.tool.CopyArchiveTool</mainClass>
+                            <arguments>
+                                <!--<argument>-collection</argument>-->
+                                <argument>${metadata.copy.path}</argument>
+                                <argument>rosecollection</argument>
+                            </arguments>
+
+                            <systemProperties>
+                                <systemProperty>
+                                    <key>archive.path</key>
+                                    <value>${archive.path}</value>
+                                </systemProperty>
+                            </systemProperties>
+                        </configuration>
+
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+
                     <execution>
                         <id>create-lucene-index</id>
                         <phase>generate-resources</phase>

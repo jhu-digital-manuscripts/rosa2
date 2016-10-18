@@ -245,7 +245,21 @@ public class FSByteStreamGroup implements ByteStreamGroup {
                     public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
                         Path targetDir = targetPath.resolve(base.relativize(dir));
 
-                        Files.copy(dir, targetDir);
+                        String name = targetDir.getFileName().toString();
+                        if (name.contains("ignore") || name.equals("cropped")) {
+                            return FileVisitResult.SKIP_SUBTREE;
+                        }
+
+                        Files.createDirectory(targetDir);
+                        System.out.println("  + " + targetDir);
+                        return FileVisitResult.CONTINUE;
+                    }
+
+                    @Override
+                    public FileVisitResult postVisitDirectory(Path dir, IOException e) throws IOException {
+                        if (e != null) {
+                            System.out.println("  > Access denied for " + dir);
+                        }
                         return FileVisitResult.CONTINUE;
                     }
 
@@ -254,9 +268,16 @@ public class FSByteStreamGroup implements ByteStreamGroup {
                         Path target = targetPath.resolve(base.relativize(file));
 
                         String type = Files.probeContentType(file);
-                        if (!file.toString().startsWith(".") && SHALLOW_COPY_TYPES.canCopy(type)) {
+                        String name = file.getFileName().toString();
+                        if (!name.startsWith(".") && !name.contains("ignore") && SHALLOW_COPY_TYPES.canCopy(type)) {
                             Files.copy(file, target);
                         }
+                        return FileVisitResult.CONTINUE;
+                    }
+
+                    @Override
+                    public FileVisitResult visitFileFailed(Path file, IOException exc) throws IOException {
+                        System.out.println("  > Access denied for " + file);
                         return FileVisitResult.CONTINUE;
                     }
                 }

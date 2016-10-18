@@ -16,6 +16,7 @@
         <iiif.pres.host>jdm.library.jhu.edu</iiif.pres.host>
         <iiif.pres.port>80</iiif.pres.port>
         <iiif.pres.prefix>/iiif-pres</iiif.pres.prefix>
+        <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF</metadata.copy.path>
         <iiif.pres.search.index>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</iiif.pres.search.index>
     </properties>
 
@@ -48,6 +49,30 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <executions>
+                    <execution>
+                        <id>copy-archive-data</id>
+                        <phase>generate-resources</phase>
+
+                        <configuration>
+                            <mainClass>rosa.archive.tool.CopyArchiveTool</mainClass>
+                            <arguments>
+                                <!--<argument>-collection</argument>-->
+                                <argument>${metadata.copy.path}</argument>
+                            </arguments>
+
+                            <systemProperties>
+                                <systemProperty>
+                                    <key>archive.path</key>
+                                    <value>${archive.path}</value>
+                                </systemProperty>
+                            </systemProperties>
+                        </configuration>
+
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+
                     <execution>
                         <id>create-lucene-index</id>
                         <phase>generate-resources</phase>
@@ -137,6 +162,11 @@
         <dependency>
             <groupId>rosa.iiif</groupId>
             <artifactId>rosa-iiif-presentation-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rosa.archive</groupId>
+            <artifactId>rosa-archive-tool</artifactId>
         </dependency>
 
         <dependency>

@@ -901,6 +901,7 @@ public class StoreImpl implements Store, ArchiveConstants {
             throw new IllegalArgumentException("No destination specified.");
         }
         if (collection != null && base.hasByteStreamGroup(collection)) {
+            destination.newByteStreamGroup(base.name());
             base.getByteStreamGroup(collection).copyTo(destination);
         } else if (collection == null) {
             base.copyTo(destination);

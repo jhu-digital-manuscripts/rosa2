@@ -255,6 +255,12 @@
             </dependency>
 
             <dependency>
+                <groupId>rosa.archive</groupId>
+                <artifactId>rosa-archive-tool</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>rosa.iiif</groupId>
                 <artifactId>rosa-iiif-image-model</artifactId>
                 <version>${project.version}</version>
