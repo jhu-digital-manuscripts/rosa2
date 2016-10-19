@@ -13,44 +13,30 @@
     <packaging>war</packaging>
 
     <properties>
-        <collection.name>pizancollection</collection.name>
         <archive.path>/mnt/archive</archive.path>
+        <commitNumber>${buildNumber}</commitNumber>
+        <collection.name>pizancollection</collection.name>
         <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF/archive</metadata.copy.path>
         <search.index.path>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</search.index.path>
+
+        <gwt.output.style>obf</gwt.output.style>
+        <gwt.log.level>SEVERE</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
+        <analytics.status>false</analytics.status>
     </properties>
 
     <profiles>
         <profile>
-            <id>test</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+            <id>debug</id>
 
             <properties>
-                <gwt.output.style>pretty</gwt.output.style>
+                <gwt.output.style>PRETTY</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>
                 <analytics.status>false</analytics.status>
             </properties>
         </profile>
 
         <profile>
-            <id>production</id>
-
-            <properties>
-              <gwt.output.style>obf</gwt.output.style>
-              <gwt.log.level>SEVERE</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
-              <analytics.status>false</analytics.status>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>no-archive-test</id>
-            <properties>
-                <gwt.output.style>pretty</gwt.output.style>
-                <gwt.log.level>INFO</gwt.log.level>
-                <analytics.status>false</analytics.status>
-            </properties>
-
+            <id>no-archive</id>
             <build>
                 <plugins>
                     <!-- Disable this plugin by binding to no lifecycle phase -->
@@ -163,6 +149,24 @@
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <doCheck>false</doCheck>
+                    <doUpdate>false</doUpdate>
+                    <shortRevisionLength>7</shortRevisionLength>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
 
                 <executions>
@@ -230,7 +234,7 @@
                             <arguments>
                                 <!--<argument>-collection</argument>-->
                                 <argument>${metadata.copy.path}</argument>
-                                <argument>pizancollection</argument>
+                                <argument>${collection.name}</argument>
                             </arguments>
 
                             <systemProperties>

@@ -18,6 +18,10 @@
         <collection.name>rosecollection</collection.name>
         <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF/archive</metadata.copy.path>
         <search.index.path>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</search.index.path>
+
+        <gwt.output.style>obf</gwt.output.style>
+        <gwt.log.level>WARNING</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
+        <analytics.status>false</analytics.status>
     </properties>
 
     <profiles>
@@ -32,20 +36,7 @@
         </profile>
 
         <profile>
-            <id>production</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-
-            <properties>
-                <gwt.output.style>obf</gwt.output.style>
-                <gwt.log.level>WARNING</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
-                <analytics.status>false</analytics.status>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>no-archive-test</id>
+            <id>no-archive</id>
             <build>
                 <plugins>
                     <!-- Disable this plugin by binding to no lifecycle phase -->
@@ -254,7 +245,7 @@
                             <arguments>
                                 <!--<argument>-collection</argument>-->
                                 <argument>${metadata.copy.path}</argument>
-                                <argument>rosecollection</argument>
+                                <argument>${collection.name}</argument>
                             </arguments>
 
                             <systemProperties>

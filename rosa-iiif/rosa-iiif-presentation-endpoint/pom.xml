@@ -22,7 +22,7 @@
 
     <profiles>
         <profile>
-            <id>no-archive-test</id>
+            <id>no-archive</id>
 
             <build>
                 <plugins>
