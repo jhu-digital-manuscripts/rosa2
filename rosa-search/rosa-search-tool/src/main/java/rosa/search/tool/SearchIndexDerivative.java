@@ -24,7 +24,13 @@ public class SearchIndexDerivative extends Derivative {
     @Override
     public void update() {
         try {
-            searchService.update(archiveStore(), collectionName());
+            if (collectionName() != null) {
+                searchService.update(archiveStore(), collectionName());
+            } else {
+                for (String col : archiveStore().listBookCollections()) {
+                    searchService.update(archiveStore(), col);
+                }
+            }
         } catch (IOException e) {
             report().println("Could not create search index.");
             e.printStackTrace(report());

@@ -103,18 +103,9 @@ public class ToolModule extends AbstractModule {
 
     @Provides
     public ByteStreamGroup archiveByteStreams(@Named("archive.path") String archivePath) {
+        System.out.println("#### Using archive: " + archivePath);
         return new FSByteStreamGroup(archivePath);
     }
-
-//    @Provides
-//    JHSearchService provideJHSearchService(@Named("iiif.pres.search.index") String index_path,
-//                                           @Named("formatter.presentation") IIIFPresentationRequestFormatter requestFormatter) {
-//        try {
-//            return new LuceneJHSearchService(Paths.get(index_path), requestFormatter);
-//        } catch (IOException e) {
-//            throw new RuntimeException("Failed to create LuceneIIIFSearchService", e);
-//        }
-//    }
 
     @Provides
     SearchService provideSearchService(@Named("iiif.pres.search.index") String index_path,

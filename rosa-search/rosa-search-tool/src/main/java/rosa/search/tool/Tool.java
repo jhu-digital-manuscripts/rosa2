@@ -28,13 +28,16 @@ public class Tool {
     }
 
     public void process(String[] args) {
-        if (args.length != 1) {
-            report.println("Must provide one arguments. Usage: <tool> <collectionName>");
+        if (args.length != 1 && args.length != 0) {
+            report.println("Must have zero or one arguments. Usage: <tool> <optional_collectionName>");
             return;
         }
 
-        String collection = args[0];
-        indexCollection(collection);
+        if (args.length == 0) {
+            indexCollection(null);
+        } else {
+            indexCollection(args[0]);
+        }
     }
 
 }

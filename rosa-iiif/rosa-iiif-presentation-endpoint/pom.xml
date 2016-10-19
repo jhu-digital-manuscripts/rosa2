@@ -86,7 +86,7 @@
                             <systemProperties>
                                 <systemProperty>
                                     <key>archive.path</key>
-                                    <value>${archive.path}</value>
+                                    <value>${metadata.copy.path}/archive</value>
                                 </systemProperty>
                                 <systemProperty>
                                     <key>iiif.pres.search.index</key>

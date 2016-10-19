@@ -38,12 +38,10 @@ import rosa.search.core.SearchService;
 import rosa.website.search.WebsiteLuceneMapper;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Paths;
-import java.util.Properties;
 
+@SuppressWarnings("unused")
 public class ToolModule extends AbstractModule {
-    private static final String TOOL_PROPERTIES = "tool.properties";
 
     @Override
     protected void configure() {
@@ -79,18 +77,6 @@ public class ToolModule extends AbstractModule {
         bind(LuceneMapper.class).to(WebsiteLuceneMapper.class);
     }
 
-    private Properties loadProperties(String path) {
-        Properties props = new Properties();
-
-        try (InputStream in = getClass().getResourceAsStream(path)) {
-            props.load(in);
-        } catch (IOException e) {
-            throw new RuntimeException("Failed to load properties: " + path, e);
-        }
-
-        return props;
-    }
-
     @Provides
     public SearchService searchService(@Named("search.index.path") String indexPath, LuceneMapper mapper) {
         try {
@@ -108,6 +94,7 @@ public class ToolModule extends AbstractModule {
 
     @Provides
     public ByteStreamGroup archiveByteStreams(@Named("archive.path") String archivePath) {
+        System.out.println("#### Using archive: " + archivePath);
         return new FSByteStreamGroup(archivePath);
     }
 

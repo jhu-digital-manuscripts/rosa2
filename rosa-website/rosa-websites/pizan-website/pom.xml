@@ -258,6 +258,10 @@
 
                             <systemProperties>
                                 <systemProperty>
+                                    <key>archive.path</key>
+                                    <value>${metadata.copy.path}</value>
+                                </systemProperty>
+                                <systemProperty>
                                     <key>search.index.path</key>
                                     <value>${search.index.path}</value>
                                 </systemProperty>

@@ -244,6 +244,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <executions>
+                    <!-- Copy archive contents into WAR -->
                     <execution>
                         <id>copy-archive-data</id>
                         <phase>generate-resources</phase>
@@ -269,6 +270,7 @@
                         </goals>
                     </execution>
 
+                    <!-- Generate search index -->
                     <execution>
                         <id>create-lucene-index</id>
                         <phase>generate-resources</phase>
@@ -279,6 +281,10 @@
                                 <argument>${collection.name}</argument>
                             </arguments>
                             <systemProperties>
+                                <systemProperty>
+                                    <key>archive.path</key>
+                                    <value>${metadata.copy.path}</value>
+                                </systemProperty>
                                 <systemProperty>
                                     <key>search.index.path</key>
                                     <value>${search.index.path}</value>

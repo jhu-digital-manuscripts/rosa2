@@ -25,15 +25,7 @@ public class IndexTool {
                 System.out
         );
 
-        try {
-            for (String col : store.listBookCollections()) {
-                System.out.println("## Generating search index (" + col + ")");
-                tool.process(new String[] {col});
-            }
-        } catch (IOException e) {
-            System.out.println("Failed to list collections in archive.");
-            e.printStackTrace(System.out);
-        }
+        tool.process(new String[0]);
     }
 
 }
