@@ -1,5 +1,12 @@
 package rosa.iiif.presentation.model;
 
+/**
+ * Object representing a request to the IIIF Presentation endpoint. This object records
+ * the requested object name/id.
+ *
+ * IIIF Collection has a name, but no ID.
+ * Other IIIF objects have IDs.
+ */
 public class PresentationRequest {
     private PresentationRequestType type;
     private String id;

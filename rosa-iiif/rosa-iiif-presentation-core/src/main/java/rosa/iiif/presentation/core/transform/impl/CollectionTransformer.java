@@ -8,9 +8,12 @@ import com.google.inject.name.Named;
 
 import rosa.archive.model.BookCollection;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.Collection;
+import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
+import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.TextValue;
 
 public class CollectionTransformer extends BasePresentationTransformer {
@@ -39,8 +42,16 @@ public class CollectionTransformer extends BasePresentationTransformer {
         }
 
         col.setManifests(refs);
-        
-        // TODO Set search service
+
+        col.setService(new Service(
+                JHSearchService.CONTEXT_URI,
+                presRequestFormatter.format(
+                        new PresentationRequest(
+                                collection.getId(),
+                                collection.getId(),
+                                PresentationRequestType.COLLECTION)) + JHSearchService.RESOURCE_PATH,
+                IIIF_SEARCH_PROFILE
+        ));
 
         return col;
     }
