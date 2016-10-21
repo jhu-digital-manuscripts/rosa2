@@ -19,6 +19,10 @@
         <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF/archive</metadata.copy.path>
         <search.index.path>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</search.index.path>
 
+        <web.prefix>webapps/pizan/WEB-INF</web.prefix>
+        <web.archive>${web.prefix}/archive</web.archive>
+        <web.search.index>${web.prefix}/lucene</web.search.index>
+
         <gwt.output.style>obf</gwt.output.style>
         <gwt.log.level>SEVERE</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
         <analytics.status>false</analytics.status>

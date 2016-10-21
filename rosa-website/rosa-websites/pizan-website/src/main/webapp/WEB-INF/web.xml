@@ -21,7 +21,7 @@
 
     <context-param>
         <param-name>archive.path</param-name>
-        <param-value>${archive.path}</param-value>
+        <param-value>${web.archive}</param-value>
     </context-param>
     <context-param>
         <param-name>module.name</param-name>
@@ -29,7 +29,7 @@
     </context-param>
     <context-param>
         <param-name>search.index.path</param-name>
-        <param-value>${search.index.path}</param-value>
+        <param-value>${web.search.index}</param-value>
     </context-param>
     <context-param>
         <param-name>collection.name</param-name>
