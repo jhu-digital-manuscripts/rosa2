@@ -11,13 +11,19 @@
     <packaging>war</packaging>
 
     <properties>
-        <archive.path>/mnt/archive</archive.path>
+        <build.archive.path>/mnt/archive</build.archive.path>
+
         <iiif.pres.scheme>http</iiif.pres.scheme>
         <iiif.pres.host>jdm.library.jhu.edu</iiif.pres.host>
         <iiif.pres.port>80</iiif.pres.port>
         <iiif.pres.prefix>/iiif-pres</iiif.pres.prefix>
+
         <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF</metadata.copy.path>
-        <iiif.pres.search.index>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</iiif.pres.search.index>
+        <build.search.index>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</build.search.index>
+
+        <build.prefix>webapps/iiif-pres/WEB-INF</build.prefix>
+        <web.search.index>${build.prefix}/lucene</web.search.index>
+        <web.archive>${build.prefix}/archive</web.archive>
     </properties>
 
     <profiles>
@@ -63,7 +69,7 @@
                             <systemProperties>
                                 <systemProperty>
                                     <key>archive.path</key>
-                                    <value>${archive.path}</value>
+                                    <value>${build.archive.path}</value>
                                 </systemProperty>
                             </systemProperties>
                         </configuration>
@@ -80,7 +86,7 @@
                         <configuration>
                             <mainClass>rosa.iiif.presentation.core.IndexTool</mainClass>
                             <arguments>
-                                <argument>${iiif.pres.search.index}</argument>
+                                <argument>${build.search.index}</argument>
                             </arguments>
 
                             <systemProperties>
@@ -90,7 +96,7 @@
                                 </systemProperty>
                                 <systemProperty>
                                     <key>iiif.pres.search.index</key>
-                                    <value>${iiif.pres.search.index}</value>
+                                    <value>${build.search.index}</value>
                                 </systemProperty>
                                 <systemProperty>
                                     <key>iiif.pres.scheme</key>
