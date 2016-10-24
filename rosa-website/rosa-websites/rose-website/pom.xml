@@ -41,6 +41,11 @@
 
         <profile>
             <id>no-archive</id>
+
+            <properties>
+                <web.archive>/mnt/archive</web.archive>
+            </properties>
+
             <build>
                 <plugins>
                     <!-- Disable this plugin by binding to no lifecycle phase -->
