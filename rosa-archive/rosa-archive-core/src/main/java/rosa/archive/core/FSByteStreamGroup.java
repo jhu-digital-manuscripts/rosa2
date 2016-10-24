@@ -36,6 +36,9 @@ public class FSByteStreamGroup implements ByteStreamGroup {
         }
 
         static boolean canCopy(String type) {
+            if ("missing_image.tif".equals(type)) {
+                return true;
+            }
             for (SHALLOW_COPY_TYPES t : values()) {
                 if (t.type.equals(type)) {
                     return true;
@@ -269,7 +272,8 @@ public class FSByteStreamGroup implements ByteStreamGroup {
 
                         String type = Files.probeContentType(file);
                         String name = file.getFileName().toString();
-                        if (!name.startsWith(".") && !name.contains("ignore") && SHALLOW_COPY_TYPES.canCopy(type)) {
+                        if (name.equals("missing_image.tif") || (!name.startsWith(".") && !name.contains("ignore")
+                                && SHALLOW_COPY_TYPES.canCopy(type))) {
                             Files.copy(file, target);
                         }
                         return FileVisitResult.CONTINUE;

@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.logging.Logger;
 
 import com.google.inject.Provides;
 import com.google.inject.TypeLiteral;
@@ -48,7 +49,9 @@ import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 /**
  * The servlet is configured by iiif-servlet.properties.
  */
+@SuppressWarnings("unused")
 public class IIIFPresentationServletModule extends ServletModule {
+    private static final Logger LOG = Logger.getLogger(IIIFPresentationServletModule.class.toString());
     private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
     private static final String FSI_SHARE_MAP_CONFIG_PATH = "/fsi-share-map.properties";
 
@@ -96,6 +99,7 @@ public class IIIFPresentationServletModule extends ServletModule {
     @Provides
     Store provideStore(@Named("archive.path") String archive_path, SerializerSet serializers,
             BookChecker bookChecker, BookCollectionChecker collectionChecker) {
+        LOG.info("Loading archive :: " + archive_path);
         ByteStreamGroup base = new FSByteStreamGroup(Paths.get(archive_path));
         return new StoreImpl(serializers, bookChecker, collectionChecker, base);
     }
@@ -103,7 +107,7 @@ public class IIIFPresentationServletModule extends ServletModule {
     @Provides
     @Named("fsi.share.map")
     Map<String, String> provideImageAlises() {
-        Map<String, String> result = new HashMap<String, String>();
+        Map<String, String> result = new HashMap<>();
 
         Properties props = loadProperties(FSI_SHARE_MAP_CONFIG_PATH);
 
@@ -134,13 +138,17 @@ public class IIIFPresentationServletModule extends ServletModule {
     }
     
     @Provides
-    rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme, @Named("iiif.image.host") String host, @Named("iiif.image.prefix") String prefix, @Named("iiif.image.port") int port) {
+    rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme,
+                                                                           @Named("iiif.image.host") String host,
+                                                                           @Named("iiif.image.prefix") String prefix,
+                                                                           @Named("iiif.image.port") int port) {
         return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
     }
     
     @Provides
     JHSearchService provideJHSearchService(@Named("iiif.pres.search.index") String index_path,
             @Named("formatter.presentation") IIIFPresentationRequestFormatter requestFormatter) {
+        LOG.info("Using lucene index path :: " + index_path);
         try {
             return new LuceneJHSearchService(Paths.get(index_path), requestFormatter);
         } catch (IOException e) {
