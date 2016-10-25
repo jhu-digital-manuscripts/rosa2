@@ -16,6 +16,9 @@
         <!-- Directory of the archive to be used during the build -->
         <archive.path>/mnt/archive</archive.path>
 
+	<!-- URL to FSI Server webapp -->
+	<fsi.url>http://fsiserver.library.jhu.edu/</fsi.url>
+		
         <!-- Property bind for buildnumber-maven-plugin, holds the current git commit hash -->
         <commitNumber>${buildNumber}</commitNumber>
 

@@ -298,7 +298,7 @@ public class SearchActivity implements Activity {
                         pageId,
                         THUMB_WIDTH,
                         THUMB_HEIGHT,
-                        WebsiteConfig.INSTANCE.fsiServerUrl()
+                        WebsiteConfig.INSTANCE.fsiUrl()
                 );
             }
 

@@ -308,7 +308,7 @@ public class JSViewerActivity implements Activity {
 
     private void setupView(final CodexModel codexModel) {
         final CodexController controller = new SimpleCodexController(codexModel);
-        ImageServer server = new FSIImageServer(WebsiteConfig.INSTANCE.fsiServerUrl());
+        ImageServer server = new FSIImageServer(WebsiteConfig.INSTANCE.fsiUrl());
 
         view.setCodexView(server, codexModel, controller, viewerMode);
 

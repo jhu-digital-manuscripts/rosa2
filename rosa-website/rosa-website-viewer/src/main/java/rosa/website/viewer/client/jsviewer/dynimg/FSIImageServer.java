@@ -6,7 +6,7 @@ public final class FSIImageServer extends ImageServer {
 	private final String baseurl;
 
 	public FSIImageServer(String baseurl) {
-		this.baseurl = baseurl;
+	    this.baseurl = (baseurl.endsWith("/") ? baseurl : baseurl + "/") + "server";
 	}
 
 	public int maxRenderSize() {

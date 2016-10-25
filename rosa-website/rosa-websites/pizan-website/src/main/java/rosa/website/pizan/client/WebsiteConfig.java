@@ -12,8 +12,7 @@ public interface WebsiteConfig extends Constants {
     String defaultPage();
     String htmlHistory();
     String csvHistory();
-    String fsiFlashUrl();
-    String fsiServerUrl();
+    String fsiUrl();
     @DefaultBooleanValue(false)
     boolean trackAnalytics();
     @DefaultStringValue("left")

@@ -45,10 +45,7 @@ public class FSIService implements IIIFService {
     private final int max_image_size;
 
     /**
-     * The base url must not end in '/' and should look something like
-     * 'http://fsiserver.library.jhu.edu/server'.
-     * 
-     * @param baseurl base URL
+     * @param baseurl base URL to FSI webapp
      * @param max_image_size
      *            maximum dimension of a returned image, -1 for unlimited
      * @param tile_width width of tiles in px
@@ -59,7 +56,8 @@ public class FSIService implements IIIFService {
      */
     public FSIService(String baseurl, int max_image_size, int tile_width, int tile_height,
                       int[] scale_factors, int image_info_cache_size) {
-        this.baseurl = baseurl;
+        // Add /server to FSI URL
+        this.baseurl = (baseurl.endsWith("/") ? baseurl : baseurl + "/") + "server";
         this.image_info_cache = new ConcurrentHashMap<>(image_info_cache_size);
         this.profile = new ImageServerProfile();
         this.max_image_size = max_image_size;

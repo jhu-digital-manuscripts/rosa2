@@ -10,16 +10,18 @@ public class FSIUtil {
      * @param image image ID
      * @param width desired width in pixels
      * @param height desired height in pixels
-     * @param imageServer base URL of image server
+     * @param baseurl base URL of Fsi Server webapp
      * @return URL for the image on the FSI image server
      */
     public static String getFSIImageUrl(String share, String book, String image,
-                                        int width, int height, String imageServer) {
-        if (isEmpty(share) || isEmpty(book) || isEmpty(image) || isEmpty(imageServer)) {
+                                        int width, int height, String baseurl) {
+        if (isEmpty(share) || isEmpty(book) || isEmpty(image) || isEmpty(baseurl)) {
             return null;
         }
 
-        return imageServer
+        String url = (baseurl.endsWith("/") ? baseurl : baseurl + "/") + "server";
+        
+        return url
                 + "?type=image&"
                 + "source="
                 + URL.encodeQueryString(share + "/" + book + "/" + image)

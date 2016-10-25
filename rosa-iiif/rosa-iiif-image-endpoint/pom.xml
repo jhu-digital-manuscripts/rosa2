@@ -10,6 +10,20 @@
   <artifactId>rosa-iiif-image-endpoint</artifactId>
   <packaging>war</packaging>
 
+  <properties>
+    <!-- URL to FSI Server webapp -->
+    <fsi.url>http://fsiserver.library.jhu.edu/</fsi.url>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
+      
  <dependencies>
     <dependency>
       <artifactId>servlet-api</artifactId>
