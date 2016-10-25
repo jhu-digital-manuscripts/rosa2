@@ -13,18 +13,47 @@
     <packaging>war</packaging>
 
     <properties>
+        <!-- Directory of the archive to be used during the build -->
         <archive.path>/mnt/archive</archive.path>
+
+        <!-- Property bind for buildnumber-maven-plugin, holds the current git commit hash -->
         <commitNumber>${buildNumber}</commitNumber>
+
+        <!-- Collection name in the archive for this site -->
         <collection.name>rosecollection</collection.name>
+
+        <!--
+            These two properties define the target directory into which resources will be copied.
+                - 'metadata.copy.path' : metadata from the archive will be copied to this location
+                - 'build.search.index' : the search index for this webapp will be generated here
+        -->
         <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF/archive</metadata.copy.path>
         <search.index.path>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</search.index.path>
 
+        <!-- Build phase during which the search index will be generated -->
+        <index.phase>generate-resources</index.phase>
+        <!-- Build phase during which the  -->
+        <copy.metadata.phase>generate-resources</copy.metadata.phase>
+
+        <!--
+            Properties for the webapp:
+                - 'web.search.index' : location of the deployed search index
+                - 'web.archive' : location of the copied metadata once deployed
+        -->
         <web.prefix>webapps/rose/WEB-INF</web.prefix>
         <web.archive>${web.prefix}/archive</web.archive>
         <web.search.index>${web.prefix}/lucene</web.search.index>
 
+        <!--
+            Set a few GWT properties:
+                - 'gwt.output.style' : style of generated JavaScript, default is 'obf' (obfuscated code).
+                                        Set to 'PRETTY' for unobfuscated code
+                - 'gwt.log.level' : should change the level at which logging messages are sent to the server (remote logging)
+        -->
         <gwt.output.style>obf</gwt.output.style>
         <gwt.log.level>WARNING</gwt.log.level><!--The level of logging detail: ERROR, WARN, INFO, TRACE, DEBUG, SPAM, or ALL-->
+
+        <!-- Google Analytics on or off -->
         <analytics.status>false</analytics.status>
     </properties>
 
@@ -37,30 +66,6 @@
                 <gwt.log.level>INFO</gwt.log.level>
                 <analytics.status>false</analytics.status>
             </properties>
-        </profile>
-
-        <profile>
-            <id>no-archive</id>
-
-            <properties>
-                <web.archive>/mnt/archive</web.archive>
-            </properties>
-
-            <build>
-                <plugins>
-                    <!-- Disable this plugin by binding to no lifecycle phase -->
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>create-lucene-index</id>
-                                <phase>none</phase>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
         </profile>
     </profiles>
 
@@ -247,7 +252,7 @@
                     <!-- Copy archive contents into WAR -->
                     <execution>
                         <id>copy-archive-data</id>
-                        <phase>generate-resources</phase>
+                        <phase>${copy.metadata.phase}</phase>
 
                         <configuration>
                             <mainClass>rosa.archive.tool.CopyArchiveTool</mainClass>
@@ -273,7 +278,7 @@
                     <!-- Generate search index -->
                     <execution>
                         <id>create-lucene-index</id>
-                        <phase>generate-resources</phase>
+                        <phase>${index.phase}</phase>
 
                         <configuration>
                             <mainClass>rosa.website.core.server.IndexToolMain</mainClass>
