@@ -16,8 +16,8 @@
         <!-- Directory of the archive to be used during the build -->
         <archive.path>/mnt/archive</archive.path>
 
-	<!-- URL to FSI Server webapp -->
-	<fsi.url>http://fsiserver.library.jhu.edu/</fsi.url>
+        <!-- URL to FSI Server webapp. Must end in / -->
+        <fsi.url>http://fsiserver.library.jhu.edu/</fsi.url>
 	  
         <!-- Property bind for buildnumber-maven-plugin, holds the current git commit hash -->
         <commitNumber>${buildNumber}</commitNumber>
@@ -40,10 +40,12 @@
 
         <!--
             Properties for the webapp:
+                - 'pizan.name' : name of the final deployed artifact
                 - 'web.search.index' : location of the deployed search index
                 - 'web.archive' : location of the copied metadata once deployed
         -->
-        <web.prefix>webapps/pizan/WEB-INF</web.prefix>
+        <pizan.name>pizan</pizan.name>
+        <web.prefix>webapps/${pizan.name}/WEB-INF</web.prefix>
         <web.archive>${web.prefix}/archive</web.archive>
         <web.search.index>${web.prefix}/lucene</web.search.index>
 
@@ -67,7 +69,6 @@
             <properties>
                 <gwt.output.style>PRETTY</gwt.output.style>
                 <gwt.log.level>INFO</gwt.log.level>
-                <analytics.status>false</analytics.status>
             </properties>
         </profile>
     </profiles>
