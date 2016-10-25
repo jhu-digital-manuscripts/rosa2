@@ -3,8 +3,6 @@ package rosa.website.viewer.client.fsiviewer;
 import com.google.gwt.http.client.URL;
 
 public class FSIViewerHTMLBuilder {
-//    private static final String DEFAULT_FSI_SERVER = "http://fsiserver.library.jhu.edu/";
-    private static final String DEFAULT_FSI_SERVER = "http://fsitest.mse.jhu.edu/fsi/";
     private static final String PLUGINSPAGE = "http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash";
     private static final String FLASH_CODEBASE = "http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,65,0";
     private static final String MIME_TYPE = "application/x-shockwave-flash";
@@ -31,14 +29,11 @@ public class FSIViewerHTMLBuilder {
      * Create a new FsiViewerHTMLBuilder.
      */
     public FSIViewerHTMLBuilder() {
-        fsi_server_url = DEFAULT_FSI_SERVER;
-
         viewer_height = "600";
         viewer_width = "400";
         tile_width = 600;
         tile_height = 600;
         initial_image_index = 1;
-
         debug = false;
     }
 
