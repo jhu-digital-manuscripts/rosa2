@@ -11,42 +11,43 @@
     <packaging>war</packaging>
 
     <properties>
+        <!-- Directory of the archive to be used during the build -->
         <build.archive.path>/mnt/archive</build.archive.path>
 
+        <!-- IIIF Presentation endpoint information -->
         <iiif.pres.scheme>http</iiif.pres.scheme>
         <iiif.pres.host>jdm.library.jhu.edu</iiif.pres.host>
         <iiif.pres.port>80</iiif.pres.port>
         <iiif.pres.prefix>/iiif-pres</iiif.pres.prefix>
 
+        <!-- IIIF Image endpoint info -->
+        <iiif.image.scheme>http</iiif.image.scheme>
+        <iiif.image.host>jdm.library.jhu.edu</iiif.image.host>
+        <iiif.image.port>80</iiif.image.port>
+        <iiif.image.prefix>/iiif-image</iiif.image.prefix>
+
+        <!--
+            These two properties define the target directory into which resources will be copied.
+                - 'metadata.copy.path' : metadata from the archive will be copied to this location
+                - 'build.search.index' : the search index for this webapp will be generated here
+        -->
         <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF</metadata.copy.path>
         <build.search.index>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</build.search.index>
 
-        <build.prefix>webapps/iiif-pres/WEB-INF</build.prefix>
-        <web.search.index>${build.prefix}/lucene</web.search.index>
-        <web.archive>${build.prefix}/archive</web.archive>
+        <!-- Build phase during which the search index will be generated -->
+        <index.phase>generate-resources</index.phase>
+        <!-- Build phase during which the  -->
+        <copy.metadata.phase>generate-resources</copy.metadata.phase>
+
+        <!--
+            Properties for the webapp:
+                - 'web.search.index' : location of the deployed search index
+                - 'web.archive' : location of the copied metadata once deployed
+        -->
+        <webapp.prefix>webapps/${iiif.image.prefix}/WEB-INF</webapp.prefix>
+        <web.search.index>${webapp.prefix}/lucene</web.search.index>
+        <web.archive>${webapp.prefix}/archive</web.archive>
     </properties>
-
-    <profiles>
-        <profile>
-            <id>no-archive</id>
-
-            <build>
-                <plugins>
-                    <!-- Disable this plugin by binding to no lifecycle phase -->
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>create-lucene-index</id>
-                                <phase>none</phase>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 
     <build>
         <plugins>
@@ -57,12 +58,11 @@
                 <executions>
                     <execution>
                         <id>copy-archive-data</id>
-                        <phase>generate-resources</phase>
+                        <phase>${copy.metadata.phase}</phase>
 
                         <configuration>
                             <mainClass>rosa.archive.tool.CopyArchiveTool</mainClass>
                             <arguments>
-                                <!--<argument>-collection</argument>-->
                                 <argument>${metadata.copy.path}</argument>
                             </arguments>
 
@@ -81,7 +81,7 @@
 
                     <execution>
                         <id>create-lucene-index</id>
-                        <phase>generate-resources</phase>
+                        <phase>${index.phase}</phase>
 
                         <configuration>
                             <mainClass>rosa.iiif.presentation.core.IndexTool</mainClass>
