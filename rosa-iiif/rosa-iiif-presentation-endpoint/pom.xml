@@ -12,7 +12,7 @@
 
     <properties>
         <!-- Directory of the archive to be used during the build -->
-        <build.archive.path>/mnt/archive</build.archive.path>
+        <archive.path>/mnt/archive</archive.path>
 
         <!-- IIIF Presentation endpoint information -->
         <iiif.pres.scheme>http</iiif.pres.scheme>
@@ -69,7 +69,7 @@
                             <systemProperties>
                                 <systemProperty>
                                     <key>archive.path</key>
-                                    <value>${build.archive.path}</value>
+                                    <value>${archive.path}</value>
                                 </systemProperty>
                             </systemProperties>
                         </configuration>
