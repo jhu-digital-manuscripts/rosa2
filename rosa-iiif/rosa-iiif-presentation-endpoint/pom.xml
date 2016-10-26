@@ -44,7 +44,7 @@
                 - 'web.search.index' : location of the deployed search index
                 - 'web.archive' : location of the copied metadata once deployed
         -->
-        <web.prefix>webapps/${iiif.image.prefix}/WEB-INF</web.prefix>
+        <web.prefix>webapps${iiif.pres.prefix}/WEB-INF</web.prefix>
         <web.search.index>${web.prefix}/lucene</web.search.index>
         <web.archive>${web.prefix}/archive</web.archive>
     </properties>
