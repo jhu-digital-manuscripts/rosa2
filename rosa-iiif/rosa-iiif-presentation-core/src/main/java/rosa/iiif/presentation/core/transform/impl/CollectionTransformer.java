@@ -10,7 +10,6 @@ import rosa.archive.model.BookCollection;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.Collection;
-import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Service;
@@ -45,11 +44,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
         col.setService(new Service(
                 JHSearchService.CONTEXT_URI,
-                presRequestFormatter.format(
-                        new PresentationRequest(
-                                collection.getId(),
-                                collection.getId(),
-                                PresentationRequestType.COLLECTION)) + JHSearchService.RESOURCE_PATH,
+                col.getId() + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE
         ));
 
@@ -74,6 +69,12 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
             cols.add(ref);
         }
+
+        col.setService(new Service(
+                JHSearchService.CONTEXT_URI,
+                col.getId() + JHSearchService.RESOURCE_PATH,
+                IIIF_SEARCH_PROFILE
+        ));
 
         col.setCollections(cols);
         return col;

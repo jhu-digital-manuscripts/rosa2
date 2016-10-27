@@ -62,8 +62,9 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         // Only supports collection and manifest restrictions
         
         String req_url = formatter.format(req);
-        
-        if (req.getType() == PresentationRequestType.COLLECTION) {
+
+        // Restrict to a specific collection if the collection is not "top"
+        if (req.getType() == PresentationRequestType.COLLECTION && !"top".equals(req.getName())) {
             restrict_query = new Query(JHSearchField.COLLECTION_ID, req_url);
         } else if (req.getType() == PresentationRequestType.MANIFEST) {
             restrict_query = new Query(JHSearchField.MANIFEST_ID, req_url);
