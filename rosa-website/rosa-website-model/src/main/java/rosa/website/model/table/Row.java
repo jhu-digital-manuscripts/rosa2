@@ -1,22 +1,24 @@
-package rosa.website.model.csv;
+package rosa.website.model.table;
 
 import java.io.Serializable;
 import java.util.Arrays;
-import java.util.Iterator;
 
-public class CSVRow implements Iterable<String>, Serializable {
+/**
+ * A row of string values in a Table. Optionally indexed by an enumeration.
+ */
+public class Row implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String[] values;
 
-    public CSVRow() {}
+    public Row() {}
 
     /**
      * Create a new row in a CSV.
      *
      * @param values values of each cell
      */
-    public CSVRow(String... values) {
+    public Row(String... values) {
         this.values = values;
     }
 
@@ -40,26 +42,22 @@ public class CSVRow implements Iterable<String>, Serializable {
      * @param e column header
      * @return the cell value for this row at specified column
      */
-    public String getValue(Enum<?> e) {
-        if (e == null) {
+    public String getValue(Enum<?> col) {
+        if (col == null) {
             return null;
         }
-        return getValue(e.ordinal());
-    }
-
-    @Override
-    public Iterator<String> iterator() {
-        return Arrays.asList(values).iterator();
+        
+        return getValue(col.ordinal());
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof CSVRow)) return false;
+        if (!(o instanceof Row)) return false;
 
-        CSVRow strings = (CSVRow) o;
+        Row row = (Row) o;
 
-        if (!Arrays.equals(values, strings.values)) return false;
+        if (!Arrays.equals(values, row.values)) return false;
 
         return true;
     }
@@ -71,8 +69,6 @@ public class CSVRow implements Iterable<String>, Serializable {
 
     @Override
     public String toString() {
-        return "CSVEntry{" +
-                "values=" + Arrays.toString(values) +
-                '}';
+        return Arrays.toString(values);
     }
 }

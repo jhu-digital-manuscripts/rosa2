@@ -1,6 +1,7 @@
 package rosa.website.core.shared;
 
 public class RosaConfigurationException extends RuntimeException {
+    private static final long serialVersionUID = 1L;
 
     private String propertyName;
     private String value;

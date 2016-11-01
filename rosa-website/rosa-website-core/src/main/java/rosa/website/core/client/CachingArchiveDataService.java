@@ -1,21 +1,18 @@
 package rosa.website.core.client;
 
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.user.client.rpc.AsyncCallback;
-import rosa.archive.model.ImageList;
-import rosa.website.model.view.BookDescriptionViewModel;
-import rosa.website.model.view.FSIViewerModel;
-import rosa.website.model.csv.BookDataCSV;
-import rosa.website.model.csv.CSVData;
-import rosa.website.model.csv.CSVType;
-import rosa.website.model.csv.CollectionCSV;
-import rosa.website.model.csv.IllustrationTitleCSV;
-import rosa.website.model.select.BookSelectList;
-import rosa.website.model.select.SelectCategory;
-
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Logger;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.user.client.rpc.AsyncCallback;
+
+import rosa.archive.model.ImageList;
+import rosa.website.model.select.BookSelectList;
+import rosa.website.model.select.SelectCategory;
+import rosa.website.model.table.Table;
+import rosa.website.model.table.Tables;
+import rosa.website.model.view.BookDescriptionViewModel;
+import rosa.website.model.view.FSIViewerModel;
 
 /**
  * An implementation of the ArchiveDataServiceAsync interface that caches all
@@ -25,7 +22,6 @@ import java.util.logging.Logger;
  * there is no GWT emulation of a ConcurrentHashMap.
  */
 public class CachingArchiveDataService implements ArchiveDataServiceAsync {
-    private static final Logger logger = Logger.getLogger(CachingArchiveDataService.class.toString());
     public static final CachingArchiveDataService INSTANCE = new CachingArchiveDataService();
     private static final int MAX_CACHE_SIZE = 1000;
 
@@ -38,96 +34,41 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
     }
 
     @Override
-    public void loadCSVData(String collection, String lang, CSVType type, final AsyncCallback<CSVData> cb) {
-        final String key = getKey(collection, type.toString(), lang, CSVData.class);
+    public void loadCSVData(String collection, String lang, Tables type, final AsyncCallback<Table> cb) {
+        final String key = getKey(collection, type.toString(), lang, Table.class);
 
         Object data = cache.get(key);
+
         if (data != null) {
-            logger.info("Found CSVData in cache (" + key + ") -> {" + cb.toString() + "}");
-            cb.onSuccess((CSVData) data);
+            cb.onSuccess((Table) data);
             return;
         }
 
-        logger.info("CSVData not found in cache. Loading from data service. (" + key + ")");
-        service.loadCSVData(collection, lang, type, new AsyncCallback<CSVData>() {
+        service.loadCSVData(collection, lang, type, new AsyncCallback<Table>() {
             @Override
             public void onFailure(Throwable caught) {
                 cb.onFailure(caught);
             }
 
             @Override
-            public void onSuccess(CSVData result) {
+            public void onSuccess(Table result) {
                 updateCache(key, result);
                 cb.onSuccess(result);
             }
         });
     }
-
-    @Override
-    public void loadCollectionData(String collection, String lang, final AsyncCallback<CollectionCSV> cb) {
-        final String key = getKey(collection, "", lang, CollectionCSV.class);
-
-        Object data = cache.get(key);
-        if (data != null) {
-            logger.info("Found collection data in cache. (" + key + ")");
-            cb.onSuccess((CollectionCSV) cache.get(key));
-            return;
-        }
-
-        logger.info("Collection data not found in cache. Loading from data service. (" + key + ")");
-        service.loadCollectionData(collection, lang, new AsyncCallback<CollectionCSV>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                cb.onFailure(caught);
-            }
-
-            @Override
-            public void onSuccess(CollectionCSV result) {
-                updateCache(key, result);
-                cb.onSuccess(result);
-            }
-        });
-    }
-
-    @Override
-    public void loadCollectionBookData(String collection, String lang, final AsyncCallback<BookDataCSV> cb) {
-        final String key = getKey(collection, "", lang, BookDataCSV.class);
-
-        Object data = cache.get(key);
-        if (data != null) {
-            logger.info("Found collection book data in cache. (" + key + ")");
-            cb.onSuccess((BookDataCSV) cache.get(key));
-            return;
-        }
-
-        logger.info("Collection book data not found in cache. Loading from data service. (" + key + ")");
-        service.loadCollectionBookData(collection, lang, new AsyncCallback<BookDataCSV>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                cb.onFailure(caught);
-            }
-
-            @Override
-            public void onSuccess(BookDataCSV result) {
-                updateCache(key, result);
-                cb.onSuccess(result);
-            }
-        });
-    }
-
+    
     @Override
     public void loadBookSelectionData(String collection, SelectCategory category, String lang,
-                                      final AsyncCallback<BookSelectList> cb) {
+            final AsyncCallback<BookSelectList> cb) {
         final String key = getKey(collection, category.toString(), lang, BookSelectList.class);
 
         Object data = cache.get(key);
         if (data != null) {
-            logger.info("Found book selection data in cache. (" + key + ")");
             cb.onSuccess((BookSelectList) cache.get(key));
             return;
         }
 
-        logger.info("Book selection data not found in cache. Loading from data service. (" + key + ")");
         service.loadBookSelectionData(collection, category, lang, new AsyncCallback<BookSelectList>() {
             @Override
             public void onFailure(Throwable caught) {
@@ -142,31 +83,6 @@ public class CachingArchiveDataService implements ArchiveDataServiceAsync {
         });
     }
 
-    @Override
-    public void loadIllustrationTitles(String collection, final AsyncCallback<IllustrationTitleCSV> cb) {
-        final String key = getKey(collection, "illustration_titles.csv", "", IllustrationTitleCSV.class);
-
-        Object data = cache.get(key);
-        if (data != null) {
-            logger.info("Illustration titles CSV found in cache. (" + key + ")");
-            cb.onSuccess((IllustrationTitleCSV) cache.get(key));
-            return;
-        }
-
-        logger.info("Illustration titles not found in cache. Loading from data service. (" + key + ")");
-        service.loadIllustrationTitles(collection, new AsyncCallback<IllustrationTitleCSV>() {
-            @Override
-            public void onFailure(Throwable caught) {
-                cb.onFailure(caught);
-            }
-
-            @Override
-            public void onSuccess(IllustrationTitleCSV result) {
-                updateCache(key, result);
-                cb.onSuccess(result);
-            }
-        });
-    }
 
     @Override
     public void loadPermissionStatement(String collection, String book, String lang, final AsyncCallback<String> cb) {

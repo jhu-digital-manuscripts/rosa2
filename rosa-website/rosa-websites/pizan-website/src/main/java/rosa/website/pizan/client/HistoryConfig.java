@@ -2,7 +2,8 @@ package rosa.website.pizan.client;
 
 import com.google.gwt.resources.client.ExternalTextResource;
 import com.google.gwt.resources.client.TextResource;
-import rosa.website.model.csv.CSVType;
+
+import rosa.website.model.table.Tables;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -97,18 +98,16 @@ public class HistoryConfig {
      * @param history history token
      * @return the csv type
      */
-    public static CSVType getCsvType(String history) {
+    public static Tables getCsvType(String history) {
         switch (history) {
-            case "corpus":
-                return CSVType.COLLECTION_DATA;
             case "data":
-                return CSVType.COLLECTION_BOOKS;
+                return Tables.COLLECTION_DISPLAY;
             case "illustrations":
-                return CSVType.ILLUSTRATIONS;
+                return Tables.ILLUSTRATIONS;
             case "chars":
-                return CSVType.CHARACTERS;
+                return Tables.CHARACTERS;
             case "sections":
-                return CSVType.NARRATIVE_SECTIONS;
+                return Tables.NARRATIVE_SECTIONS;
             default:
                 return null;
         }

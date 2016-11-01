@@ -9,11 +9,11 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
 import rosa.website.core.client.ArchiveDataService;
-import rosa.website.model.csv.BookDataCSV;
-import rosa.website.model.csv.CSVRow;
-import rosa.website.model.csv.CollectionCSV;
 import rosa.website.model.select.BookSelectList;
 import rosa.website.model.select.SelectCategory;
+import rosa.website.model.table.Table;
+import rosa.website.model.table.Row;
+import rosa.website.model.table.Tables;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -58,8 +58,8 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
     public void loadCollectionDataWithNullCollectionTest() throws IOException {
         when(mockStore.collection(anyString())).thenReturn(null);
 
-        CollectionCSV colCsv = service.loadCollectionData(VALID_COLLECTION, LANGUAGE);
-        assertNull("Null data expected.", colCsv);
+        Table data = service.loadCSVData(VALID_COLLECTION, LANGUAGE, Tables.COLLECTION_DISPLAY);
+        assertNull("Null data expected.", data);
     }
 
     /**
@@ -69,16 +69,15 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
      *
      * @throws IOException
      */
-    @Test//(expected = RosaConfigurationException.class)
+    @Test
     public void loadCollectionDataWithInvalidBook() throws IOException {
         BookCollection col = loadValidCollection();
         when(mockStore.collection(anyString())).thenReturn(col);
-//        when(mockStore.hasBook(anyString(), anyString())).thenReturn(false);
+
         when(mockStore.book(anyString(), anyString())).thenReturn(store.loadBook(col, "INVALID_BOOK", null));
 
-        CollectionCSV collectionCSV = service.loadCollectionData(VALID_COLLECTION, LANGUAGE);
-        assertEquals("Unexpected ID found.", VALID_COLLECTION, collectionCSV.getId());
-        assertEquals("Unexpected number of rows found.", 0, collectionCSV.size());
+        Table collectionCSV = service.loadCSVData(VALID_COLLECTION, LANGUAGE, Tables.COLLECTION_DISPLAY);
+        assertEquals("Unexpected number of rows found.", 0, collectionCSV.rows().size());
     }
 
     /**
@@ -101,11 +100,10 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
         when(mockStore.book(anyString(), anyString())).thenReturn(loadValidLudwigXV7());
         when(mockStore.hasBook(anyString(), anyString())).thenReturn(true);
 
-        CollectionCSV collectionCSV = service.loadCollectionData("collection", LANGUAGE);
+        Table collectionCSV = service.loadCSVData("collection", LANGUAGE, Tables.COLLECTION_DISPLAY);
 
         assertNotNull("Collection CSV data is missing.", collectionCSV);
-        assertEquals("Unexpected collection ID found.", "collection", collectionCSV.getId());
-        assertEquals("Unexpected number of CSV rows found.", 1, collectionCSV.size());
+        assertEquals("Unexpected number of CSV rows found.", 1, collectionCSV.rows().size());
     }
 
     /**
@@ -134,9 +132,8 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
         when(mockStore.book(anyString(), anyString())).thenReturn(book);
         when(mockStore.hasBook(anyString(), anyString())).thenReturn(true);
 
-        CollectionCSV collectionCSV = service.loadCollectionData("collection", LANGUAGE);
-        assertEquals("Unexpected ID found for the collection.", "collection", collectionCSV.getId());
-        assertEquals("Unexpected number of rows found.", 1, collectionCSV.size());
+        Table collectionCSV = service.loadCSVData("collection", LANGUAGE, Tables.COLLECTION_DISPLAY);
+        assertEquals("Unexpected number of rows found.", 1, collectionCSV.rows().size());
     }
 
     /**
@@ -163,11 +160,10 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
         when(mockStore.book(anyString(), anyString())).thenReturn(book);
         when(mockStore.hasBook(anyString(), anyString())).thenReturn(true);
 
-        CollectionCSV collectionCSV = service.loadCollectionData("collection", LANGUAGE);
-        assertNotNull("Collection ID missing.", collectionCSV.getId());
-        assertEquals("Unexpected number of rows found.", 1, collectionCSV.size());
+        Table collectionCSV = service.loadCSVData("collection", LANGUAGE, Tables.COLLECTION_DISPLAY);
+        assertEquals("Unexpected number of rows found.", 1, collectionCSV.rows().size());
 
-        CSVRow row = collectionCSV.getRow(0);
+        Row row = collectionCSV.getRow(0);
         assertNotNull(row);
         for (int i = 0; i < collectionCSV.columns().length; i++) {
             if (i == 0) {
@@ -179,44 +175,6 @@ public class ArchiveDataServiceImplTestWithMocks extends BaseArchiveTest {
         }
     }
 
-    /**
-     * The service is used to load book data in a collection that does not
-     * exist in the archive. This service call should return NULL without
-     * throwing any exceptions.
-     *
-     * @throws IOException
-     */
-    @Test
-    public void loadCollectionBookDataWithBadCollection() throws IOException {
-        when(mockStore.collection(anyString())).thenReturn(null);
-        assertNull("NULL value expected.", service.loadCollectionBookData(VALID_COLLECTION, LANGUAGE));
-    }
-
-    /**
-     * The service loads the book data for a collection that contains a
-     * book that is not present in the archive. The CSV result should
-     * exist, but the CSV row representing this bad book should not
-     * exist. Since the bad book is the only book in this collection, the
-     * CSV should have 0 rows.
-     *
-     * @throws IOException
-     */
-    @Test
-    public void loadCollectionBookDataWithBadBook() throws IOException {
-        BookCollection mockCollection = new BookCollection();
-        mockCollection.setId("COLLECTION");
-        mockCollection.setBooks(new String[]{"BAD_NAME"});
-
-        when(mockStore.collection(anyString())).thenReturn(mockCollection);
-        when(mockStore.hasCollection(anyString())).thenReturn(true);
-        when(mockStore.book(anyString(), anyString())).thenReturn(
-                store.loadBook(mockCollection, "BAD_NAME", null));
-        when(mockStore.hasBook(anyString(), anyString())).thenReturn(true);
-
-        BookDataCSV csv = service.loadCollectionBookData("COLLECTION", LANGUAGE);
-        assertEquals("Unexpected collection ID found.", "COLLECTION", csv.getId());
-        assertEquals("Unexpected number of rows found.", 0, csv.size());
-    }
 
     /**
      * Book selection data is loaded for some criteria for a collection that

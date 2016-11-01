@@ -18,11 +18,11 @@ import rosa.website.core.client.place.CSVDataPlace;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.core.shared.RosaConfigurationException;
-import rosa.website.model.csv.CSVData;
-import rosa.website.model.csv.CSVType;
-import rosa.website.model.csv.CollectionDisplayCSV;
-import rosa.website.model.csv.IllustrationTitleCSV;
-import rosa.website.model.csv.NarrativeSectionsCSV;
+import rosa.website.model.table.Table;
+import rosa.website.model.table.Tables;
+import rosa.website.model.table.CollectionDisplayColumn;
+import rosa.website.model.table.IllustrationTitleColumn;
+import rosa.website.model.table.NarrativeSectionColumn;
 import rosa.website.pizan.client.HistoryConfig;
 import rosa.website.pizan.client.WebsiteConfig;
 
@@ -86,15 +86,16 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
 
         LoadingPanel.INSTANCE.show();
 
-        CSVType type = HistoryConfig.getCsvType(place.getName());
+        Tables type = HistoryConfig.getCsvType(place.getName());
         if (type == null) {
             logger.warning("No CSV data associated associated with this place. " + place.toString());
             return;
         }
 
-        final Map<Enum, String> links = getPossibleLinks(type);
+        final Map<Enum<?>, String> links = getPossibleLinks(type);
         final String[] headers = getHeaders(type);
-        service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<CSVData>() {
+        
+        service.loadCSVData(WebsiteConfig.INSTANCE.collection(), lang, type, new AsyncCallback<Table>() {
             @Override
             public void onFailure(Throwable caught) {
                 logger.log(Level.SEVERE, CSV_LOAD_ERROR_MSG, caught);
@@ -106,7 +107,7 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
             }
 
             @Override
-            public void onSuccess(CSVData result) {
+            public void onSuccess(Table result) {
                 LoadingPanel.INSTANCE.hide();
                 if (result == null) { // Error
                     view.addErrorMessage(CSV_DATA_NOT_FOUND);
@@ -139,30 +140,28 @@ public class CSVDataActivity implements Activity, CSVDataView.Presenter {
         }
     }
 
-    private Map<Enum, String> getPossibleLinks(CSVType type) {
-        Map<Enum, String> map = new HashMap<>();
+    private Map<Enum<?>, String> getPossibleLinks(Tables type) {
+        Map<Enum<?>, String> map = new HashMap<>();
 
         switch (type) {
-            case COLLECTION_DATA:
-            case COLLECTION_BOOKS:
-                map.put(CollectionDisplayCSV.Column.NAME, "book");
+            case COLLECTION_DISPLAY:
+                map.put(CollectionDisplayColumn.NAME, "book");
                 return map;
             case NARRATIVE_SECTIONS:
-                map.put(NarrativeSectionsCSV.Column.ID, "search;NARRATIVE_SECTION");
+                map.put(NarrativeSectionColumn.ID, "search;NARRATIVE_SECTION");
                 return map;
             case ILLUSTRATIONS:
-                map.put(IllustrationTitleCSV.Column.TITLE, "search;ILLUSTRATION_TITLE");
+                map.put(IllustrationTitleColumn.TITLE, "search;ILLUSTRATION_TITLE");
                 return map;
             default:
                 return null;
         }
     }
 
-    private String[] getHeaders(CSVType type) {
+    private String[] getHeaders(Tables type) {
         Labels labels = Labels.INSTANCE;
         switch (type) {
-            case COLLECTION_DATA:
-            case COLLECTION_BOOKS:
+            case COLLECTION_DISPLAY:
                 return new String[] {
                         labels.name(),
                         labels.date(),

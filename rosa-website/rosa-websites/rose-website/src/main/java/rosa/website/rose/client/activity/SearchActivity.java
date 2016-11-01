@@ -37,12 +37,11 @@ import rosa.website.core.client.view.AdvancedSearchView;
 import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.core.shared.ImageNameParser;
 import rosa.website.core.shared.RosaConfigurationException;
-import rosa.website.model.csv.BookDataCSV;
-import rosa.website.model.csv.BookDataCSV.Column;
-import rosa.website.model.csv.CSVData;
-import rosa.website.model.csv.CSVRow;
-import rosa.website.model.csv.CSVType;
 import rosa.website.model.select.BookInfo;
+import rosa.website.model.table.BookDataColumn;
+import rosa.website.model.table.Table;
+import rosa.website.model.table.Row;
+import rosa.website.model.table.Tables;
 import rosa.website.rose.client.WebsiteConfig;
 import rosa.website.search.client.QueryUtil;
 import rosa.website.search.client.RosaQueryUtil;
@@ -63,7 +62,7 @@ public class SearchActivity implements Activity {
     private final ArchiveDataServiceAsync archiveDataService;
     private final RosaSearchServiceAsync searchService;
 
-    private BookDataCSV bookDataCSV;
+    private Table bookDataCSV;
 
     private HandlerRegistration rangeChangeHandler;
     private HandlerRegistration searchButtonHandler;
@@ -121,7 +120,7 @@ public class SearchActivity implements Activity {
         String collection = WebsiteConfig.INSTANCE.collection();
         String lang = LocaleInfo.getCurrentLocale().getLocaleName();
 
-        archiveDataService.loadCSVData(collection, lang, CSVType.COLLECTION_BOOKS, new AsyncCallback<CSVData>() {
+        archiveDataService.loadCSVData(collection, lang, Tables.BOOK_DATA, new AsyncCallback<Table>() {
             @Override
             public void onFailure(Throwable caught) {
                 LOG.log(Level.SEVERE, error, caught);
@@ -132,16 +131,8 @@ public class SearchActivity implements Activity {
             }
 
             @Override
-            public void onSuccess(CSVData result) {
-                if (result instanceof BookDataCSV) {
-                    setSearchModel((BookDataCSV) result);
-                } else {
-                    String msg = "Cannot initialize search widget, bad data returned from server. " +
-                            "Results not 'BookDataCSV' cannot initialize.";
-
-                    LOG.log(Level.SEVERE, msg);
-                    view.addErrorMessage(msg);
-                }
+            public void onSuccess(Table result) {
+                setSearchModel(result);
                 LoadingPanel.INSTANCE.hide();
             }
         });
@@ -170,13 +161,13 @@ public class SearchActivity implements Activity {
         });
     }
 
-    private void setSearchModel(BookDataCSV data) {
+    private void setSearchModel(Table data) {
         this.bookDataCSV = data;
 
         List<BookInfo> books = new ArrayList<>();
         books.add(new BookInfo(Labels.INSTANCE.restrictByBook(), null));
-        for (CSVRow row : data) {
-            books.add(new BookInfo(row.getValue(Column.COMMON_NAME), row.getValue(Column.ID)));
+        for (Row row : data.rows()) {
+            books.add(new BookInfo(row.getValue(BookDataColumn.COMMON_NAME), row.getValue(BookDataColumn.ID)));
         }
         view.addBooksToRestrictionList(books.toArray(new BookInfo[books.size()]));
 
@@ -320,12 +311,12 @@ public class SearchActivity implements Activity {
      */
     private String getDisplayName(String bookId, String pageId) {
         if (pageId != null) {
-            CSVRow row = bookDataCSV.getRow(bookId);
+            Row row = bookDataCSV.getRow(BookDataColumn.ID, bookId);
 
             if (row != null) {
                 return ImageNameParser.toStandardName(pageId) + ": "
-                        + row.getValue(Column.REPO) + " "
-                        + row.getValue(Column.SHELFMARK);
+                        + row.getValue(BookDataColumn.REPO) + " "
+                        + row.getValue(BookDataColumn.SHELFMARK);
             }
         }
 
