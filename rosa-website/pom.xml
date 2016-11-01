@@ -11,27 +11,12 @@
   <groupId>rosa.website</groupId>
   <packaging>pom</packaging>
 
-  <!-- Override project to use Java 1.7 until GWT supports 1.8 -->
-  <build>
-    <plugins>
-      <plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-compiler-plugin</artifactId>
-	
-	<configuration>
-	  <source>1.7</source>
-	  <target>1.7</target>
-	</configuration>
-      </plugin>
-    </plugins>
-  </build>
-  
   <modules>
     <module>rosa-website-model</module>
     <module>rosa-website-search</module>
     <module>rosa-website-viewer</module>
     <module>rosa-website-core</module>
     <module>rosa-websites</module>
-      <module>rosa-fsi-js</module>
+    <module>rosa-fsi-js</module>
   </modules>
 </project>

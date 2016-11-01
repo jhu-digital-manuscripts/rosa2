@@ -39,14 +39,14 @@
         <!-- Dependency versions -->
         <guice.version>4.0</guice.version>
         <gin.version>2.1.2</gin.version>
-        <gwt.version>2.7.0</gwt.version>
+        <gwt.version>2.8.0</gwt.version>
         <jsonld-java.version>0.5.1</jsonld-java.version>
         <apache.poi.version>3.13</apache.poi.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons-io.version>2.4</commons-io.version>
         <commons-codec.version>1.9</commons-codec.version>
         <commons-cli.version>1.2</commons-cli.version>
-	    <lucene.version>5.2.1</lucene.version>
+        <lucene.version>5.2.1</lucene.version>
     </properties>
 
     <dependencyManagement>
