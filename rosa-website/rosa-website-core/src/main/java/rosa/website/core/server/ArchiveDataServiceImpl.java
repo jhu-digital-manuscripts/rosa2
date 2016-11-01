@@ -1,9 +1,24 @@
 package rosa.website.core.server;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.apache.commons.lang3.math.NumberUtils;
+
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
-import org.apache.commons.lang3.math.NumberUtils;
+
 import rosa.archive.core.serialize.ImageListSerializer;
 import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.Book;
@@ -22,37 +37,20 @@ import rosa.archive.model.NarrativeScene;
 import rosa.archive.model.NarrativeSections;
 import rosa.website.core.client.ArchiveDataService;
 import rosa.website.core.shared.RosaConfigurationException;
-import rosa.website.model.csv.CollectionDisplayCSV;
-import rosa.website.model.select.DataStatus;
-import rosa.website.model.view.BookDescriptionViewModel;
-import rosa.website.model.view.FSIViewerModel;
-import rosa.website.model.csv.BookDataCSV;
-import rosa.website.model.csv.CSVData;
-import rosa.website.model.csv.CSVRow;
-import rosa.website.model.csv.CharacterNamesCSV;
-import rosa.website.model.csv.CollectionCSV;
-import rosa.website.model.csv.CSVType;
-import rosa.website.model.csv.IllustrationTitleCSV;
-import rosa.website.model.csv.NarrativeSectionsCSV;
 import rosa.website.model.select.BookSelectData;
 import rosa.website.model.select.BookSelectList;
+import rosa.website.model.select.DataStatus;
 import rosa.website.model.select.SelectCategory;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import rosa.website.model.table.BookDataColumn;
+import rosa.website.model.table.Table;
+import rosa.website.model.table.Row;
+import rosa.website.model.table.Tables;
+import rosa.website.model.table.CharacterNamesColumn;
+import rosa.website.model.table.CollectionDisplayColumn;
+import rosa.website.model.table.IllustrationTitleColumn;
+import rosa.website.model.table.NarrativeSectionColumn;
+import rosa.website.model.view.BookDescriptionViewModel;
+import rosa.website.model.view.FSIViewerModel;
 
 @Singleton
 public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implements ArchiveDataService {
@@ -108,40 +106,30 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
     }
 
     @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-    }
-
-    @Override
-    public CSVData loadCSVData(String collection, String lang, CSVType type) throws IOException {
-        logger.info("Loading CSV data. [" + collection + ":" + lang + ":" + type + "]");
-
+    public Table loadCSVData(String collection, String lang, Tables type) throws IOException {
         switch (type) {
-            case COLLECTION_DATA:
-//                return loadCollectionData(collection, lang);
-                return loadCollectionSpreadsheet(collection, lang);
-            case COLLECTION_BOOKS:
-                return loadCollectionBookData(collection, lang);
-            case ILLUSTRATIONS:
-                return loadIllustrationTitles(collection);
-            case CHARACTERS:
-                return loadCharacterNames(collection);
-            case NARRATIVE_SECTIONS:
-                return loadNarrativeSections(collection);
-            default:
-                throw new IllegalArgumentException("CSV type not found.");
+        case COLLECTION_DISPLAY:
+            return loadCollectionDisplayData(collection, lang);
+        case BOOK_DATA:
+            return loadBookData(collection, lang);        
+        case ILLUSTRATIONS:
+            return loadIllustrationTitles(collection);
+        case CHARACTERS:
+            return loadCharacterNames(collection);
+        case NARRATIVE_SECTIONS:
+            return loadNarrativeSections(collection);
+        default:
+            throw new IllegalArgumentException("CSV type not found.");
         }
     }
-
-    @Override
-    public CollectionCSV loadCollectionData(String collection, String lang) throws IOException {
-        // collection_data.csv | collection_data_fr.csv
-        logger.info("Loading collection_data. [" + collection + ":" + lang + "]");
-        String key = CollectionCSV.class + "." + collection + "." + lang;
+    
+    private Table loadCollectionDisplayData(String collection, String lang) throws IOException {
+        String key = Table.class + "." + "coldisplay" + collection + "." + lang;
 
         Object obj = objectCache.get(key);
+        
         if (obj != null) {
-            return (CollectionCSV) obj;
+            return Table.class.cast(obj);
         }
 
         BookCollection col = loadBookCollection(collection);
@@ -152,7 +140,8 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
         }
         lang = checkLang(lang);
 
-        List<CSVRow> entries = new ArrayList<>();
+        List<Row> rows = new ArrayList<>();
+        
         for (String bookName : col.books()) {
             if (!archiveStore.hasBook(collection, bookName)) {
                 continue;
@@ -185,63 +174,49 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
                 boolean hasRose = rose != null;
                 int[] illusCount = countPagesWithIllustrations(book.getIllustrationTagging());
 
-            /*
-                Roman de la Rose collection counts only those book texts with the identifier 'rose' as only
-                those texts contain Roman de la Rose material.
-                Pizan and AoR do not care about this, and will count all book texts.
-             */
-                entries.add(new CSVRow(
-                        bookName, md.getCommonName(), md.getOrigin(), md.getMaterial(),
+                /*
+                * Roman de la Rose collection counts only those book texts with the identifier 'rose' as only
+                * those texts contain Roman de la Rose material.
+                * Pizan and AoR do not care about this, and will count all book texts.
+                */
+                
+                String date = md.getYearStart() + "-" + md.getYearEnd();
+                String size = md.getWidth() + "x" + md.getHeight();
+
+                rows.add(new Row(
+                        bookName,
+                        date.contains("null") || date.contains("NULL") ? "" : date,
                         String.valueOf(hasRose ? rose.getNumberOfPages() : md.getNumberOfPages()),
-                        String.valueOf(md.getHeight()),
-                        String.valueOf(md.getWidth()),
-                        String.valueOf(hasRose ? rose.getLeavesPerGathering() : -1),
-                        String.valueOf(hasRose ? rose.getLinesPerColumn() : -1),
                         String.valueOf(hasRose ? rose.getNumberOfIllustrations() : md.getNumberOfIllustrations()),
-                        String.valueOf(md.getYearStart()),
-                        String.valueOf(md.getYearEnd()),
                         String.valueOf(hasRose ? rose.getColumnsPerPage() : -1),
-                        String.valueOf(md.getTexts() == null ? 0 : md.getTexts().length),
-                        String.valueOf(illusCount[0]),
-                        String.valueOf(illusCount[1])
-                ));
+                        String.valueOf(hasRose ? rose.getLinesPerColumn() : -1),
+                        size.contains("null") || size.contains("NULL") ? "" : size,
+                        String.valueOf(hasRose ? rose.getLeavesPerGathering() : -1),
+                        String.valueOf(illusCount[1])));
             } else {
                 // If there is no metadata, add a row with only the book's name
-                entries.add(new CSVRow(
+                rows.add(new Row(
                         bookName, "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
                 ));
             }
         }
-
-        Collections.sort(entries, new Comparator<CSVRow>() {
-            @Override
-            public int compare(CSVRow o1, CSVRow o2) {
-                if (o1 == null && o2 != null) { // first is NULL
-                    return -1;
-                } else if (o1 != null && o2 == null) { // second is NULL
-                    return 1;
-                } else if (o1 == null) { // both are NULL
-                    return 0;
-                }
-
-                return o1.getValue(CollectionCSV.Column.NAME)
-                        .compareToIgnoreCase(o2.getValue(CollectionCSV.Column.NAME));
-            }
-        });
-        CollectionCSV result = new CollectionCSV(collection, entries);
+        
+        Collections.sort(rows, (r1, r2) -> r1.getValue(CollectionDisplayColumn.NAME)
+                .compareTo(r2.getValue(CollectionDisplayColumn.NAME)));
+        
+        Table result = new Table(CollectionDisplayColumn.values(), rows);
 
         updateCache(key, result);
         return result;
     }
 
-    @Override
-    public BookDataCSV loadCollectionBookData(String collection, String lang) throws IOException {
+    private Table loadBookData(String collection, String lang) throws IOException {
         // books.csv | books_fr.csv
-        final String key = BookDataCSV.class.toString() + "." + collection + "." + lang;
+        final String key = Table.class.toString() + "."  + "bookdata" + "." + collection + "." + lang;
 
         Object obj = objectCache.get(key);
         if (obj != null) {
-            return (BookDataCSV) obj;
+            return Table.class.cast(obj);
         }
         BookCollection col = loadBookCollection(collection);
 
@@ -252,44 +227,31 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
 
         lang = checkLang(lang);
 
-        List<CSVRow> entries = new ArrayList<>();
+        List<Row> entries = new ArrayList<>();
+        
         for (String bookName : col.books()) {
             if (!archiveStore.hasBook(collection, bookName)) {
                 continue;
             }
 
             Book book = loadBook(collection, bookName);
+            
             if (book == null || book.getId().contains(".ignore")) {
                 continue;
             }
-
+                    
             entries.add(rowForBookData(book, lang));
         }
 
-        Collections.sort(entries, new Comparator<CSVRow>() {
-            @Override
-            public int compare(CSVRow o1, CSVRow o2) {
-                if (o1 == null && o2 != null) { // first is NULL
-                    return -1;
-                } else if (o1 != null && o2 == null) { // second is NULL
-                    return 1;
-                } else if (o1 == null) { // both are NULL
-                    return 0;
-                }
+        Collections.sort(entries, (r1, r2) -> r2.getValue(BookDataColumn.COMMON_NAME)
+                .compareTo(r1.getValue(BookDataColumn.COMMON_NAME)));
 
-                return o1.getValue(BookDataCSV.Column.COMMON_NAME)
-                        .compareToIgnoreCase(o2.getValue(BookDataCSV.Column.COMMON_NAME));
-            }
-        });
-        BookDataCSV result = new BookDataCSV(collection, entries);
+        Table result = new Table(BookDataColumn.values(), entries);
         updateCache(key, result);
 
         return result;
     }
-
-    private CollectionDisplayCSV loadCollectionSpreadsheet(String collection, String lang) throws IOException {
-        return new CollectionDisplayCSV(loadCollectionData(collection, lang));
-    }
+    
 
     /**
      * {@link #getTranscriptionStatus(Book)}
@@ -342,13 +304,13 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
         return result;
     }
 
-    @Override
-    public IllustrationTitleCSV loadIllustrationTitles(String collection) throws IOException {
-        String key = IllustrationTitleCSV.class + "." + collection;
+    private Table loadIllustrationTitles(String collection) throws IOException {
+        String key = Table.class +"." + "illustitles" + "." + collection;
 
-        Object csv = objectCache.get(key);
-        if (csv != null) {
-            return (IllustrationTitleCSV) csv;
+        Object obj = objectCache.get(key);
+        
+        if (obj != null) {
+            return Table.class.cast(obj); 
         }
 
         BookCollection col = loadBookCollection(collection);
@@ -358,7 +320,7 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
         }
         IllustrationTitles titles = col.getIllustrationTitles();
 
-        List<CSVRow> entries = new ArrayList<>();
+        List<Row> entries = new ArrayList<>();
         Map<String, List<Integer>> positions = new HashMap<>();
         Map<String, Integer> frequencies = new HashMap<>();
 
@@ -376,7 +338,7 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
             }
 
             if (average_position != -1) {
-                entries.add(new CSVRow(
+                entries.add(new Row(
                         String.valueOf(average_position),
                         title,
                         String.valueOf(frequency)
@@ -385,9 +347,9 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
         }
 
         // Sort entries by location
-        Collections.sort(entries, new Comparator<CSVRow>() {
+        Collections.sort(entries, new Comparator<Row>() {
             @Override
-            public int compare(CSVRow o1, CSVRow o2) {
+            public int compare(Row o1, Row o2) {
                 if (o1 == null && o2 != null) { // first is NULL
                     return -1;
                 } else if (o1 != null && o2 == null) { // second is NULL
@@ -396,8 +358,8 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
                     return 0;
                 }
 
-                String o1_val = o1.getValue(IllustrationTitleCSV.Column.LOCATION);
-                String o2_val = o2.getValue(IllustrationTitleCSV.Column.LOCATION);
+                String o1_val = o1.getValue(IllustrationTitleColumn.LOCATION);
+                String o2_val = o2.getValue(IllustrationTitleColumn.LOCATION);
 
                 try {
                     int o1_loc = Integer.parseInt(o1_val);
@@ -405,13 +367,13 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
 
                     return o1_loc - o2_loc;
                 } catch (NumberFormatException e) {
-                    return o1.getValue(IllustrationTitleCSV.Column.LOCATION)
-                            .compareTo(o2.getValue(IllustrationTitleCSV.Column.LOCATION));
+                    return o1.getValue(IllustrationTitleColumn.LOCATION)
+                            .compareTo(o2.getValue(IllustrationTitleColumn.LOCATION));
                 }
             }
         });
 
-        IllustrationTitleCSV result = new IllustrationTitleCSV(titles.getId(), entries);
+        Table result = new Table(IllustrationTitleColumn.values(), entries);
         updateCache(key, result);
 
         return result;
@@ -579,22 +541,24 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
         }
     }
 
-    private CharacterNamesCSV loadCharacterNames(String collection) throws IOException {
+    private Table loadCharacterNames(String collection) throws IOException {
         logger.info("Loading character_names.csv for collection [" + collection + "]");
-        String key = CharacterNamesCSV.class + "." + collection;
+        String key = Table.class + "." +  "charnames" + "." + collection;
 
         Object obj = objectCache.get(key);
+        
         if (obj != null) {
-            return (CharacterNamesCSV) obj;
+            return Table.class.cast(obj);
         }
 
         BookCollection col = loadBookCollection(collection);
+        
         if (col == null) {
             logger.severe("Failed to load book collection. (" + collection + ")");
-            return new CharacterNamesCSV();
+            return null;
         }
 
-        List<CSVRow> entries = new ArrayList<>();
+        List<Row> entries = new ArrayList<>();
 
         CharacterNames names = col.getCharacterNames();
         for (String id : names.getAllCharacterIds()) {
@@ -605,12 +569,12 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
                 siteName = id;
             }
 
-            entries.add(new CSVRow(siteName, name.getNameInLanguage("en"), name.getNameInLanguage("fr")));
+            entries.add(new Row(siteName, name.getNameInLanguage("en"), name.getNameInLanguage("fr")));
         }
 
-        Collections.sort(entries, new Comparator<CSVRow>() {
+        Collections.sort(entries, new Comparator<Row>() {
             @Override
-            public int compare(CSVRow o1, CSVRow o2) {
+            public int compare(Row o1, Row o2) {
                 if (o1 == null && o2 != null) { // first is NULL
                     return -1;
                 } else if (o1 != null && o2 == null) { // second is NULL
@@ -619,29 +583,29 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
                     return 0;
                 }
 
-                return o1.getValue(CharacterNamesCSV.Column.NAME)
-                        .compareToIgnoreCase(o2.getValue(CharacterNamesCSV.Column.NAME));
+                return o1.getValue(CharacterNamesColumn.NAME)
+                        .compareToIgnoreCase(o2.getValue(CharacterNamesColumn.NAME));
             }
         });
 
-        CharacterNamesCSV csv = new CharacterNamesCSV(names.getId(), entries);
+        Table csv = new Table(CharacterNamesColumn.values(), entries);
         updateCache(key, csv);
 
         return csv;
     }
 
-    private NarrativeSectionsCSV loadNarrativeSections(String collection) throws IOException {
+    private Table loadNarrativeSections(String collection) throws IOException {
         logger.info("Loading narrative sections. [" + collection + "]");
-        String key = NarrativeSectionsCSV.class + "." + collection;
+        String key = Table.class + "." + "narsecs" +  "." + collection;
 
         Object obj = objectCache.get(key);
         if (obj != null) {
-            return (NarrativeSectionsCSV) obj;
+            return Table.class.cast(obj);
         }
 
         BookCollection col = loadBookCollection(collection);
 
-        List<CSVRow> entries = new ArrayList<>();
+        List<Row> entries = new ArrayList<>();
         NarrativeSections sections = col.getNarrativeSections();
 
         if (sections == null) {
@@ -653,20 +617,20 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
                 continue;
             }
 
-            entries.add(new CSVRow(
+            entries.add(new Row(
                     scene.getId(),
                     scene.getDescription(),
                     scene.getCriticalEditionStart() + "-" + scene.getCriticalEditionEnd()
             ));
         }
 
-        NarrativeSectionsCSV csv = new NarrativeSectionsCSV(sections.getId(), entries);
+        Table csv = new Table(NarrativeSectionColumn.values(), entries);
         updateCache(key, csv);
 
         return csv;
     }
 
-    private CSVRow rowForBookData(Book book, String lang) throws IOException {
+    private Row rowForBookData(Book book, String lang) throws IOException {
         if (book == null) {
             return null;
         }
@@ -685,7 +649,7 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
 
             boolean hasRose = rose != null;
 
-            return new CSVRow(
+            return new Row(
                     book.getId(),
                     md.getRepository(),
                     md.getShelfmark(),
@@ -700,7 +664,7 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
                             nonNegative(rose.getNumberOfPages()) : nonNegative(md.getNumberOfPages()))
             );
         } else {
-            return new CSVRow(book.getId(), "", "", "", "", "", "", "", "", "");
+            return new Row(book.getId(), "", "", "", "", "", "", "", "", "");
         }
 
     }

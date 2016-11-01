@@ -2,7 +2,7 @@
 <module rename-to='RosaWebsiteModel'>
     <inherits name="rosa.archive.RosaArchiveModel"/>
 
-    <source path='csv' />
+    <source path='table' />
     <source path='select' />
     <source path='view' />
 </module>

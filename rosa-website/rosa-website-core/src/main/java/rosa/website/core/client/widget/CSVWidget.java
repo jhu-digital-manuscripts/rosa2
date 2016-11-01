@@ -14,8 +14,8 @@ import com.google.gwt.view.client.ListDataProvider;
 import rosa.website.core.client.place.AdvancedSearchPlace;
 import rosa.website.core.client.place.BookDescriptionPlace;
 import rosa.website.core.client.view.CSVDataView.Presenter;
-import rosa.website.model.csv.CSVData;
-import rosa.website.model.csv.CSVRow;
+import rosa.website.model.table.Table;
+import rosa.website.model.table.Row;
 
 import java.util.Comparator;
 import java.util.Map;
@@ -27,8 +27,8 @@ public class CSVWidget extends Composite {
 
     private final ScrollPanel top;
 
-    private final CellTable<CSVRow> table;
-    private final ListDataProvider<CSVRow> dataProvider;
+    private final CellTable<Row> table;
+    private final ListDataProvider<Row> dataProvider;
 
     private Presenter presenter;
 
@@ -56,13 +56,11 @@ public class CSVWidget extends Composite {
         this.presenter = presenter;
     }
 
-    @SuppressWarnings("unchecked")
-    public void setData(CSVData data) {
+    public void setData(Table data) {
         setData(data, null);
     }
 
-    @SuppressWarnings("unchecked")
-    public void setData(CSVData data, Map<Enum, String> links) {
+    public void setData(Table data, Map<Enum<?>, String> links) {
         setData(data, links, null);
     }
 
@@ -79,22 +77,23 @@ public class CSVWidget extends Composite {
      * @param links links, force a column of data to be hyperlinked to place in the app
      * @param headers column headers
      */
-    @SuppressWarnings("unchecked")
-    public void setData(CSVData data, Map<Enum, String> links, String[] headers) {
+    public void setData(Table data, Map<Enum<?>, String> links, String[] headers) {
         clear();
 
-        dataProvider.setList(data.asList());
-        ListHandler<CSVRow> sortHandler = new ListHandler<CSVRow>(dataProvider.getList()) {
+        dataProvider.setList(data.rows());
+        
+        ListHandler<Row> sortHandler = new ListHandler<Row>(dataProvider.getList()) {
             @Override
             public void onColumnSort(ColumnSortEvent event) {
                 super.onColumnSort(event);
                 dataProvider.refresh();
             }
         };
+        
         createColumns(data, sortHandler, links, headers);
 
         table.addColumnSortHandler(sortHandler);
-        table.setPageSize(data.size());
+        table.setPageSize(data.rows().size());
         table.flush();
     }
 
@@ -122,8 +121,8 @@ public class CSVWidget extends Composite {
      * @param links map of column enum to history prefix
      * @param headers array of column headers
      */
-    private void createColumns(CSVData  data, ColumnSortEvent.ListHandler<CSVRow> sortHandler,
-                               final Map<Enum, String> links, String ... headers) {
+    private void createColumns(Table  data, ColumnSortEvent.ListHandler<Row> sortHandler,
+                               final Map<Enum<?>, String> links, String ... headers) {
         if (data.columns() == null) {
             logger.warning("CSV data has no columns assigned.");
             return;
@@ -137,23 +136,23 @@ public class CSVWidget extends Composite {
             }
         }
 
-        for (final Enum col : data.columns()) {
+        for (final Enum<?> col : data.columns()) {
             if (col == null) {
                 logger.warning("NULL column detected.");
                 continue;
             }
 
-            com.google.gwt.user.cellview.client.Column<CSVRow, String> column;
+            com.google.gwt.user.cellview.client.Column<Row, String> column;
             if (links != null && links.containsKey(col)) {
-                column = new com.google.gwt.user.cellview.client.Column<CSVRow, String>(new ClickableTextCell()) {
+                column = new com.google.gwt.user.cellview.client.Column<Row, String>(new ClickableTextCell()) {
                     @Override
-                    public String getValue(CSVRow val) {
+                    public String getValue(Row val) {
                         return val.getValue(col);
                     }
                 };
-                column.setFieldUpdater(new FieldUpdater<CSVRow, String>() {
+                column.setFieldUpdater(new FieldUpdater<Row, String>() {
                     @Override
-                    public void update(int index, CSVRow object, String value) {
+                    public void update(int index, Row object, String value) {
                         String token;
                         switch (links.get(col)) {       // TODO this kind of sucks, since it needs to know about site implementation
                             case "book":
@@ -180,9 +179,9 @@ public class CSVWidget extends Composite {
                 });
                 column.setCellStyleNames("link");
             } else {
-                column = new TextColumn<CSVRow>() {
+                column = new TextColumn<Row>() {
                     @Override
-                    public String getValue(CSVRow entry) {
+                    public String getValue(Row entry) {
                         String val = entry.getValue(col);
 
                         // Report blank for missing or null-like values to display nicely
@@ -198,9 +197,9 @@ public class CSVWidget extends Composite {
             column.setSortable(true);
             table.addColumn(column, headers[col.ordinal()]);
 
-            sortHandler.setComparator(column, new Comparator<CSVRow>() {
+            sortHandler.setComparator(column, new Comparator<Row>() {
                 @Override
-                public int compare(CSVRow o1, CSVRow o2) {
+                public int compare(Row o1, Row o2) {
                     String val1 = o1.getValue(col);
                     String val2 = o2.getValue(col);
 

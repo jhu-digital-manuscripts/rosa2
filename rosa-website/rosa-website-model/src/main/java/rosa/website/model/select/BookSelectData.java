@@ -1,9 +1,9 @@
 package rosa.website.model.select;
 
-import rosa.website.model.csv.BookDataCSV;
-import rosa.website.model.csv.CSVRow;
-
 import java.io.Serializable;
+
+import rosa.website.model.table.BookDataColumn;
+import rosa.website.model.table.Row;
 
 /**
  * Similar to a BookDataCSV row. Extended to include more data and tailored to
@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class BookSelectData implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private CSVRow data;
+    private Row data;
     private boolean hasTranscription;
     private boolean hasImageTagging;
     private boolean hasNarrativeTagging;
@@ -31,7 +31,7 @@ public class BookSelectData implements Serializable {
      * @param hasNarrativeTagging .
      * @param hasBibliography .
      */
-    public BookSelectData(CSVRow data, boolean hasTranscription, boolean hasImageTagging,
+    public BookSelectData(Row data, boolean hasTranscription, boolean hasImageTagging,
                           boolean hasNarrativeTagging, boolean hasBibliography, DataStatus transcriptionStatus) {
         this.data = data;
         this.hasTranscription = hasTranscription;
@@ -41,7 +41,7 @@ public class BookSelectData implements Serializable {
         this.transcriptionStatus = transcriptionStatus;
     }
 
-    public void setData(CSVRow data) {
+    public void setData(Row data) {
         this.data = data;
     }
 
@@ -87,52 +87,52 @@ public class BookSelectData implements Serializable {
 
     /** @return the book's ID */
     public String id() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.ID);
+        return data == null ? null : data.getValue(BookDataColumn.ID);
     }
 
     /** @return the book's repository */
     public String repository() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.REPO);
+        return data == null ? null : data.getValue(BookDataColumn.REPO);
     }
 
     /** @return the book's current shelf mark */
     public String shelfmark() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.SHELFMARK);
+        return data == null ? null : data.getValue(BookDataColumn.SHELFMARK);
     }
 
     /** @return the book's common name */
     public String commonName() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.COMMON_NAME);
+        return data == null ? null : data.getValue(BookDataColumn.COMMON_NAME);
     }
 
     /** @return the book's current location */
     public String currentLocation() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.CURRENT_LOCATION);
+        return data == null ? null : data.getValue(BookDataColumn.CURRENT_LOCATION);
     }
 
     /** @return the book's publication date (EX: 1561, 16th century, etc) */
     public String date() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.DATE);
+        return data == null ? null : data.getValue(BookDataColumn.DATE);
     }
 
     /** @return the place of the book's origin (EX: Paris, France) */
     public String origin() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.ORIGIN);
+        return data == null ? null : data.getValue(BookDataColumn.ORIGIN);
     }
 
     /** @return the book's type (manuscript, printed book, etc) */
     public String type() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.TYPE);
+        return data == null ? null : data.getValue(BookDataColumn.TYPE);
     }
 
     /** @return the number of illustrations in the book */
     public String numberOfIllustrations() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.NUM_ILLUS);
+        return data == null ? null : data.getValue(BookDataColumn.NUM_ILLUS);
     }
 
     /** @return the number of pages in the book */
     public String numberOfFolios() {
-        return data == null ? null : data.getValue(BookDataCSV.Column.NUM_FOLIOS);
+        return data == null ? null : data.getValue(BookDataColumn.NUM_FOLIOS);
     }
 
     @Override

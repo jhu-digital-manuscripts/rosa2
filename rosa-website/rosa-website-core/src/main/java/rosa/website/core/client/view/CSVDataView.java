@@ -4,7 +4,8 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.user.cellview.client.ColumnSortEvent.ListHandler;
-import rosa.website.model.csv.CSVData;
+
+import rosa.website.model.table.Table;
 
 import java.util.Map;
 
@@ -26,7 +27,7 @@ public interface CSVDataView extends ErrorWidget {
      *
      * @param data CSV data to display
      */
-    void setData(CSVData data);
+    void setData(Table data);
 
     /**
      *
@@ -46,7 +47,7 @@ public interface CSVDataView extends ErrorWidget {
      *
      * <em>More behavior must be defined in the CSVWidget, this should change in
      * the future.</em>
-     * {@link rosa.website.core.client.widget.CSVWidget#createColumns(CSVData, ListHandler, Map, String...)}
+     * {@link rosa.website.core.client.widget.CSVWidget#createColumns(Table, ListHandler, Map, String...)}
      *
      * EXAMPLE:
      * In the 'collection spreadsheet', the column holding book IDs contains links that
@@ -59,7 +60,7 @@ public interface CSVDataView extends ErrorWidget {
      * @param links possible links in table, Column enum -&gt; history fragment prefix
      * @param headers column headers, optional
      */
-    void setData(CSVData data, Map<Enum, String> links, String[] headers);
+    void setData(Table data, Map<Enum<?>, String> links, String[] headers);
 
     void setDescription(String description);
 

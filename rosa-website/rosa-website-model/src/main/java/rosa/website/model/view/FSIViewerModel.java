@@ -85,7 +85,6 @@ public class FSIViewerModel implements Serializable {
     private boolean needsRV;
 
     /** No-arg constructor for GWT RPC serialization */
-    @SuppressWarnings("unused")
     FSIViewerModel() {}
 
     /**

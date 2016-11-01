@@ -357,26 +357,25 @@ public class AORTranscriptionChecker {
         List<MultiValue> list = new ArrayList<>();
 
         try (InputStream in = Files.newInputStream(filePath)) {
-
-            Workbook wb = new XSSFWorkbook(in);
-            Sheet sheet = wb.getSheetAt(0);
-
-            for (Row row : sheet) {
-                MultiValue rowVal = null;
-                boolean isFirst = true;
-
-                for (Cell cell : row) {
-                    if (isFirst) {
-                        rowVal = new MultiValue(cell.getStringCellValue());
-                        isFirst = false;
-                    } else {
-                        rowVal.addAlternate(cell.getStringCellValue());
+            try (Workbook wb = new XSSFWorkbook(in)) {
+                Sheet sheet = wb.getSheetAt(0);
+    
+                for (Row row : sheet) {
+                    MultiValue rowVal = null;
+                    boolean isFirst = true;
+    
+                    for (Cell cell : row) {
+                        if (isFirst) {
+                            rowVal = new MultiValue(cell.getStringCellValue());
+                            isFirst = false;
+                        } else {
+                            rowVal.addAlternate(cell.getStringCellValue());
+                        }
                     }
+    
+                    list.add(rowVal);
                 }
-
-                list.add(rowVal);
             }
-
         } catch (IOException e) {
             report.println("## [ERROR] Failed to parse spreadsheet. (" + filePath.getFileName().toString() + ")");
             e.printStackTrace(report);

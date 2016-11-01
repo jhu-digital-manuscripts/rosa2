@@ -1,7 +1,6 @@
 package rosa.archive.model;
 
 import java.io.Serializable;
-import java.util.Comparator;
 
 /**
  * Prose description about a book.
@@ -12,29 +11,6 @@ public final class BookDescription implements HasId, Serializable {
         HISTORY, TEXT, AUTHOR
     }
 
-    private static final Comparator<String> topics_comparator = new Comparator<String>() {
-        @Override
-        public int compare(String s1, String s2) {
-            TOPIC t1 = getTopic(s1);
-            TOPIC t2 = getTopic(s2);
-
-            if (t1 == null || t2 == null) {
-                return 0;
-            } else {
-                return t1.ordinal() - t2.ordinal();
-            }
-        }
-
-        private TOPIC getTopic(String str) {
-            for (TOPIC t : TOPIC.values()) {
-                if (t.toString().replace("_", " ").equalsIgnoreCase(str)) {
-                    return t;
-                }
-            }
-
-            return null;
-        }
-    };
     private static final long serialVersionUID = 1L;
 
     private String description;

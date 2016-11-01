@@ -15,7 +15,7 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import rosa.website.core.client.view.CSVDataView;
 import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.widget.CSVWidget;
-import rosa.website.model.csv.CSVData;
+import rosa.website.model.table.Table;
 
 import java.util.Map;
 
@@ -24,8 +24,6 @@ public class CSVDataViewImpl extends ErrorComposite implements CSVDataView {
     private Panel linkPanel;
     private CSVWidget display;
     private SimplePanel description;
-
-    private CSVData data;
 
     /**  */
     public CSVDataViewImpl() {
@@ -58,13 +56,13 @@ public class CSVDataViewImpl extends ErrorComposite implements CSVDataView {
     }
 
     @Override
-    public void setData(CSVData data) {
+    public void setData(Table data) {
         display.setData(data);
         resetPosition();
     }
 
     @Override
-    public void setData(CSVData data, Map<Enum, String> links, String[] headers) {
+    public void setData(Table data, Map<Enum<?>, String> links, String[] headers) {
         display.setData(data, links, headers);
         resetPosition();
         resizeTable();
