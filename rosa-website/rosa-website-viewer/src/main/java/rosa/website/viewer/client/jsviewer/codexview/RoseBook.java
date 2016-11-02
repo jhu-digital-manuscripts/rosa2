@@ -18,24 +18,6 @@ public class RoseBook {
     private String fsiDir;
     private Page missingImage;
 
-//    public static void load(final String fsi_collection, String bookid,
-//            final HttpGet.Callback<RoseBook> topcb) {
-//        HttpGet.Callback<String> cb = new HttpGet.Callback<String>() {
-//            public void failure(String error) {
-//                topcb.failure(error);
-//            }
-//
-//            public void success(String result) {
-//                topcb.success(new RoseBook(fsi_collection, result, ""));
-//            }
-//        };
-//
-//        String url = GWT.getModuleBaseURL() + "data/" + bookid + "/" + bookid
-//                + ".images.csv";
-//
-//        HttpGet.request(url, cb);
-//    }
-
     public RoseBook(String fsi_collection, String csv, String missing_image_name) {
         this(fsi_collection, Util.parseCSVTable(csv), missing_image_name);
     }
