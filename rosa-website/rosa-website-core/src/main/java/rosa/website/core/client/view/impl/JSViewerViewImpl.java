@@ -13,23 +13,18 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RequiresResize;
-import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
+
 import rosa.pageturner.client.model.Book;
 import rosa.pageturner.client.model.Opening;
 import rosa.pageturner.client.viewers.FsiPageTurner;
 import rosa.pageturner.client.viewers.PageTurner;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.ErrorComposite;
-import rosa.website.core.client.widget.ViewerControlsWidget;
-import rosa.website.viewer.client.jsviewer.codexview.CodexController;
-import rosa.website.viewer.client.jsviewer.codexview.CodexModel;
-import rosa.website.viewer.client.jsviewer.codexview.CodexView;
-import rosa.website.viewer.client.jsviewer.codexview.CodexView.Mode;
-import rosa.website.viewer.client.jsviewer.dynimg.ImageServer;
 import rosa.website.core.client.view.JSViewerView;
+import rosa.website.core.client.widget.ViewerControlsWidget;
 
 public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, RequiresResize {
     private FlowPanel root;
@@ -46,7 +41,6 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
 
     private ViewerControlsWidget viewerControlsWidget;
 
-    private CodexView codexView;
     private PageTurner pageTurner;
     private boolean resizable;
 
@@ -112,25 +106,6 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
     }
 
     @Override
-    public void setCodexView(ImageServer imageServer, CodexModel model, CodexController controller, Mode mode) {
-        if (codexView != null) {
-            codexView.removeFromParent();
-        }
-
-        codexView = new CodexView(imageServer, model, controller, (ScrollPanel) this.getParent());
-        codexView.addStyleName("float-left");
-        root.insert(codexView, 1);
-        setViewerMode(mode);
-
-        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-            @Override
-            public void execute() {
-                doResize();
-            }
-        });
-    }
-
-    @Override
     public void setFsiJS(Book model) {
         if (pageTurner != null) {
             root.remove(pageTurner);
@@ -167,16 +142,6 @@ public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, Re
     public void setViewerSize(String width, String height) {
         if (pageTurner != null) {
             pageTurner.setSize(width, height);
-        }
-    }
-
-    @Override
-    public void setViewerMode(Mode mode) {
-        codexView.setMode(mode);
-        if (mode == Mode.PAGE_TURNER) {
-            readerToolbar.setVisible(true);
-        } else {
-            readerToolbar.setVisible(false);
         }
     }
 

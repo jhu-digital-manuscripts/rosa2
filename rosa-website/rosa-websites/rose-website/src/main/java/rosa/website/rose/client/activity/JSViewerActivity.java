@@ -1,11 +1,15 @@
 package rosa.website.rose.client.activity;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.ChangeEvent;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyDownEvent;
 import com.google.gwt.event.dom.client.KeyDownHandler;
@@ -17,6 +21,7 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 import rosa.pageturner.client.model.Book;
@@ -26,32 +31,16 @@ import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.event.BookSelectEvent;
-import rosa.website.core.client.event.SidebarItemSelectedEvent;
+import rosa.website.core.client.place.BookViewerPlace;
 import rosa.website.core.client.place.HTMLPlace;
+import rosa.website.core.client.view.JSViewerView;
 import rosa.website.core.client.widget.LoadingPanel;
 import rosa.website.core.client.widget.TranscriptionViewer;
 import rosa.website.core.shared.ImageNameParser;
 import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.view.FSIViewerModel;
-import rosa.website.viewer.client.jsviewer.codexview.CodexController;
-import rosa.website.viewer.client.jsviewer.codexview.CodexController.ChangeHandler;
-import rosa.website.viewer.client.jsviewer.codexview.CodexImage;
-import rosa.website.viewer.client.jsviewer.codexview.CodexModel;
-import rosa.website.viewer.client.jsviewer.codexview.CodexOpening;
-import rosa.website.viewer.client.jsviewer.codexview.CodexView.Mode;
-import rosa.website.viewer.client.jsviewer.codexview.RoseBook;
-import rosa.website.viewer.client.jsviewer.codexview.SimpleCodexController;
-import rosa.website.viewer.client.jsviewer.dynimg.FSIImageServer;
-import rosa.website.viewer.client.jsviewer.dynimg.ImageServer;
-import rosa.website.core.client.place.BookViewerPlace;
-import rosa.website.core.client.view.JSViewerView;
 import rosa.website.rose.client.WebsiteConfig;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import rosa.website.viewer.client.jsviewer.codexview.RoseBook;
 
 public class JSViewerActivity implements Activity {
 
@@ -92,7 +81,6 @@ public class JSViewerActivity implements Activity {
 
     private FSIViewerModel model;
 
-    private Mode viewerMode;
     private DisplayCategory showExtraCategory;
 
     private int current_selected_index;
@@ -126,7 +114,6 @@ public class JSViewerActivity implements Activity {
         this.book = place.getBook();
         this.collection = clientFactory.context().getCollection();
         this.fsi_share = WebsiteConfig.INSTANCE.fsiShare();
-        this.viewerMode = getViewerMode(place.getType());
         this.starterPage = place.getPage();
 
         current_selected_index = 0;
@@ -307,152 +294,6 @@ public class JSViewerActivity implements Activity {
         });
     }
 
-    private void setupView(final CodexModel codexModel) {
-        final CodexController controller = new SimpleCodexController(codexModel);
-        ImageServer server = new FSIImageServer(WebsiteConfig.INSTANCE.fsiUrl());
-
-        view.setCodexView(server, codexModel, controller, viewerMode);
-
-        view.addFirstClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                controller.gotoOpening(codexModel.opening(0));
-            }
-        });
-
-        view.addLastClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                controller.gotoOpening(codexModel.opening(codexModel.numOpenings() - 1));
-            }
-        });
-
-        view.addNextClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                controller.gotoNextOpening();
-            }
-        });
-
-        view.addPrevClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                controller.gotoPreviousOpening();
-            }
-        });
-
-        view.addGoToKeyDownHandler(new KeyDownHandler() {
-            @Override
-            public void onKeyDown(KeyDownEvent event) {
-                if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
-                    String tryThis = view.getGotoText();
-                    if (needsRV(tryThis)) {
-                        tryThis += "r";
-                    }
-
-                    int index = getImageIndex(tryThis);
-
-                    /*
-                        This hack gets around a bug in the original website where a user inputs
-                        a verso page into the 'goto' text box and hits enter. The resulting
-                        opening will be the previous opening to what the user intends. Adding one to
-                        the index at this stage will boost the index to the facing recto and
-                        avoid the issue.
-
-                        This is likely because of the indexing scheme of the openings. Since the front
-                        cover will start the index at 0, any subsequent verso page will fall on an odd
-                        number. The integer rounding of the index to get the opening index means that
-                        the guessed opening index will be rounded down to the previous opening as opposed
-                        to the intended opening. Even though this should work for all of the Rosa books,
-                        this will not work in the general case, as it will depend on the number of
-                        single images that appear at the front of the book, before recto/verso numbering
-                        occurs.
-                     */
-                    if (view.getGotoText().endsWith("v") || view.getGotoText().endsWith("V")) {
-                        index++;
-                    }
-
-                    if (index != -1) {
-                        index /= 2;
-
-                        if (index < codexModel.numOpenings()) {
-                            controller.gotoOpening(codexModel.opening(index));
-                        }
-                    }
-                }
-            }
-        });
-
-        view.addShowExtraChangeHandler(showExtraChangeHandler);
-
-        controller.addChangeHandler(new ChangeHandler() {
-            @Override
-            public void openingChanged(CodexOpening opening) {
-                view.setToolbarVisible(true);
-
-                current_selected_index = opening.position() * 2;
-                view.setGotoText(opening.label());
-                setupShowExtra(current_selected_index, true);
-            }
-
-            @Override
-            public void viewChanged(List<CodexImage> viewList) {
-                view.setToolbarVisible(false);
-                if (viewList.size() > 0) {
-                    CodexImage img = viewList.get(0);
-                    current_selected_index = codexModel.findOpeningImage(img.id());
-                    setupShowExtra(current_selected_index, false);
-                }
-            }
-        });
-
-        switch (viewerMode) {
-            case PAGE_TURNER:
-                Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-                    @Override
-                    public void execute() {
-                        eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.pageTurner()));
-                    }
-                });
-
-                int index = current_selected_index / 2;
-
-                if (index < codexModel.numOpenings()) {
-                    controller.gotoOpening(codexModel.opening(index));
-                } else {
-                    controller.gotoOpening(codexModel.opening(0));
-                }
-
-                setupShowExtra(current_selected_index, true);
-
-                view.setHeader(Labels.INSTANCE.pageTurner() + ": " + model.getTitle());
-                break;
-            case IMAGE_BROWSER:
-                break;
-            case IMAGE_VIEWER:
-                Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-                    @Override
-                    public void execute() {
-                        eventBus.fireEvent(new SidebarItemSelectedEvent(Labels.INSTANCE.browseImages()));
-                    }
-                });
-
-                if (current_selected_index < codexModel.numImages()) {
-                    controller.setView(codexModel.image(current_selected_index));
-                } else {
-                    controller.setView(codexModel.nonOpeningImage(current_selected_index - codexModel.numImages()));
-                }
-
-                setupShowExtra(current_selected_index, false);
-
-                view.setHeader(Labels.INSTANCE.browseImages() + ": " + model.getTitle());
-                break;
-            default:
-                view.setToolbarVisible(false);
-                break;
-        }
-    }
-
     private void setupShowExtra(int page, boolean opening) {
         List<String> page1 = new ArrayList<>(Arrays.asList(getExtraDataLabels(page)));
 
@@ -576,17 +417,6 @@ public class JSViewerActivity implements Activity {
         }
 
         return labels.toArray(new String[labels.size()]);
-    }
-
-    private Mode getViewerMode(String type) {
-        switch (type) {
-            case "read":
-                return Mode.PAGE_TURNER;
-            case "browse":
-                return Mode.IMAGE_BROWSER;
-            default:
-                return null;
-        }
     }
 
     private int getImageIndex(String name) {
