@@ -40,7 +40,6 @@ import rosa.website.search.WebsiteLuceneMapper;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-@SuppressWarnings("unused")
 public class ToolModule extends AbstractModule {
 
     @Override
