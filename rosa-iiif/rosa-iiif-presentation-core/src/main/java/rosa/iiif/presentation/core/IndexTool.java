@@ -6,7 +6,6 @@ import rosa.archive.core.Store;
 import rosa.search.core.SearchService;
 import rosa.search.tool.Tool;
 
-import java.io.IOException;
 
 public class IndexTool {
 

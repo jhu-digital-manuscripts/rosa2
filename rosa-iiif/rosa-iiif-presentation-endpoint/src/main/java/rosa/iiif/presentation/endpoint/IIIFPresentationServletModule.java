@@ -49,7 +49,7 @@ import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 /**
  * The servlet is configured by iiif-servlet.properties.
  */
-@SuppressWarnings("unused")
+
 public class IIIFPresentationServletModule extends ServletModule {
     private static final Logger LOG = Logger.getLogger(IIIFPresentationServletModule.class.toString());
     private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
