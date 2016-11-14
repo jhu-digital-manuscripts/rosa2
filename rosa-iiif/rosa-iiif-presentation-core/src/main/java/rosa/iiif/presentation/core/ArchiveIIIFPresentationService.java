@@ -270,7 +270,7 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         List<BookCollection> collections = new ArrayList<>();
         for (String name : store.listBookCollections()) {
             // Hack for current archive in rosetest under /mnt
-            if (name.equals("cdrom")) {
+            if (name.equals("cdrom") || name.equals("biblehistoriale")) {
                 continue;
             }
             BookCollection col = store.loadBookCollection(name, null);

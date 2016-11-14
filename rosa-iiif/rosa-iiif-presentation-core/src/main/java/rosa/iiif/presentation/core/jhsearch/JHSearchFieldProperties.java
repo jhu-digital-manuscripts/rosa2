@@ -80,7 +80,7 @@ interface JHSearchFieldProperties {
     String DESCRIPTION_LABEL = "Description";
     String DESCRIPTION_DESCRIPTION = "";
     String LANGUAGE_LABEL ="Language";
-    String LANGUAGE_DESCRIPTION = "";
+    String LANGUAGE_DESCRIPTION = "Search text of non-structured description of items.";
     String[] LANGUAGE_VALUES = { 
     			"en", "English", 
     			"es", "Spanish", 
@@ -94,12 +94,17 @@ interface JHSearchFieldProperties {
     String BOOK_LABEL = "Book";
     String BOOK_DESCRIPTION = "Books mentioned in marginalia.";
     String PEOPLE_LABEL = "People";
-    String PEOPLE_DESCRIPTION = "People mentioned in marginalia.";
+    String PEOPLE_DESCRIPTION = "Names of people.";
     String PLACE_LABEL = "Place";
-    String PLACE_DESCRIPTION = "Places mentioned in marginalia.";    
+    String PLACE_DESCRIPTION = "Names of places or locations.";
     String METHOD_LABEL = "Method";
     String METHOD_DESCRIPTION = "Implement used to create mark or underline.";
     String[] METHOD_VALUES = { 
     		"pen", "Pen", "chalk", "Chalk"
     };
+
+    String TITLE_LABEL = "Title";
+    String TITLE_DESCRIPTION = "Search titles of items.";
+    String REPO_LABEL = "Repository";
+    String REPO_DESCRIPTION = "Search names of repositories";
 }

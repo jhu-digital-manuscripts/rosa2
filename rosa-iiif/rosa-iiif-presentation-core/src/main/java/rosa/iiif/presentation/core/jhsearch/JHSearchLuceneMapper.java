@@ -22,6 +22,8 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookText;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
@@ -40,6 +42,8 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
+import rosa.archive.model.meta.BiblioData;
+import rosa.archive.model.meta.MultilangMetadata;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -397,7 +401,9 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		String collection_id = get_uri(col.getId(), null, col.getId(), PresentationRequestType.COLLECTION);
 		String manifest_id = get_uri(col.getId(), book.getId(), null, PresentationRequestType.MANIFEST);
-		String manifest_label = book.getBookMetadata("en").getCommonName();
+
+        BookMetadata md = book.getBookMetadata("en");
+		String manifest_label = md.getCommonName();
 
 		addField(doc, JHSearchField.COLLECTION_ID, collection_id);
 
@@ -407,6 +413,27 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		addField(doc, JHSearchField.MANIFEST_ID, manifest_id);
 		addField(doc, JHSearchField.MANIFEST_LABEL, manifest_label);
+
+		addField(doc, JHSearchField.TITLE, manifest_label);
+        addField(doc, JHSearchField.REPO, md.getRepository());
+
+        addField(doc, JHSearchField.PLACE, md.getCurrentLocation());
+
+        if (md.getTexts() != null) {
+            for (BookText text : md.getTexts()) {
+                addField(doc, JHSearchField.TITLE, text.getTitle());
+            }
+        }
+
+        MultilangMetadata mm = book.getMultilangMetadata();
+        if (mm != null && mm.getBiblioDataMap() != null) {
+            BiblioData data = mm.getBiblioDataMap().get("en");
+            if (data.getAuthors() != null) {
+                for (String author : data.getAuthors()) {
+                    addField(doc, JHSearchField.PEOPLE, author);
+                }
+            }
+        }
 
 		return doc;
 	}

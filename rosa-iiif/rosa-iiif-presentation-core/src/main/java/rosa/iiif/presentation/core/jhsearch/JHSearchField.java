@@ -26,13 +26,19 @@ public enum JHSearchField implements SearchField, JHSearchFieldProperties {
     CROSS_REFERENCE(true, false,true, CROSS_REFERENCE_LABEL, CROSS_REFERENCE_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
     TRANSCRIPTION(true, false, true, TRANSCRIPTION_LABEL, TRANSCRIPTION_DESCRIPTION, SearchFieldType.OLD_FRENCH, SearchFieldType.ENGLISH),
     ILLUSTRATION(true, false, true, ILLUSTRATION_LABEL, ILLUSTRATION_DESCRIPTION, SearchFieldType.ENGLISH),
-    DESCRIPTION(true, false, true, DESCRIPTION_LABEL, DESCRIPTION_DESCRIPTION, SearchFieldType.ENGLISH),
     LANGUAGE(false, false, true, LANGUAGE_LABEL, LANGUAGE_DESCRIPTION, LANGUAGE_VALUES, SearchFieldType.STRING),
     MARGINALIA_LANGUAGE(false, false, true, MARG_LANGUAGE_LABEL, MARG_LANGUAGE_DESCRIPTION, LANGUAGE_VALUES, SearchFieldType.STRING),
     BOOK(true, false,true, BOOK_LABEL, BOOK_DESCRIPTION, SearchFieldType.ENGLISH),
+    METHOD(false, false, true, METHOD_LABEL, METHOD_DESCRIPTION, METHOD_VALUES, SearchFieldType.STRING),
+
+    // Set of fields that will be shared among all collections
+    TITLE(true, false, true, TITLE_LABEL, TITLE_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.OLD_FRENCH, SearchFieldType.FRENCH, SearchFieldType.LATIN, SearchFieldType.GREEK, SearchFieldType.ITALIAN, SearchFieldType.SPANISH),
     PEOPLE(true, false, true, PEOPLE_LABEL, PEOPLE_DESCRIPTION, SearchFieldType.ENGLISH),
     PLACE(true, false, true, PLACE_LABEL, PLACE_DESCRIPTION, SearchFieldType.ENGLISH),
-    METHOD(false, false, true, METHOD_LABEL, METHOD_DESCRIPTION, METHOD_VALUES, SearchFieldType.STRING),    
+    // Include 'author'/'creator' ?
+    REPO(true, false, true, REPO_LABEL, REPO_DESCRIPTION, SearchFieldType.ENGLISH),
+    DESCRIPTION(true, false, true, DESCRIPTION_LABEL, DESCRIPTION_DESCRIPTION, SearchFieldType.ENGLISH),
+
     ;
     
      // TODO Move some of this to SearchField?
