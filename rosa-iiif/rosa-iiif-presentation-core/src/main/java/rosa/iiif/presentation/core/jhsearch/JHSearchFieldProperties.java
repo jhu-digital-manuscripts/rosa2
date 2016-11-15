@@ -107,4 +107,6 @@ interface JHSearchFieldProperties {
     String TITLE_DESCRIPTION = "Search titles of items.";
     String REPO_LABEL = "Repository";
     String REPO_DESCRIPTION = "Search names of repositories";
+    String TEXT_LABEL = "Text";
+    String TEXT_DESCRIPTION = "Search the text of an item. This can include transcriptions and translations.";
 }

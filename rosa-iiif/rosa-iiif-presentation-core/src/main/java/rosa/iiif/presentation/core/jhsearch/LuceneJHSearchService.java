@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.nio.file.Path;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 import rosa.archive.core.Store;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
@@ -130,7 +133,8 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             JHSearchField.TITLE,
             JHSearchField.PEOPLE,
             JHSearchField.PLACE,
-            JHSearchField.REPO
+            JHSearchField.REPO,
+            JHSearchField.TRANSCRIPTION
     };
     
     @Override
@@ -139,11 +143,10 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         String identifier = req.getType() == PresentationRequestType.COLLECTION ? req.getName() : req.getId();
         
         if (identifier.contains("rose") || identifier.contains("pizan")) {
-            fields = ROSE_PIZAN_FIELDS;
+            fields = joinFields(ROSE_PIZAN_FIELDS, SHARED_FIELDS);
         } else if (identifier.contains("aor")) {
             fields = AOR_FIELDS;
         } else {
-//            fields = JHSearchField.values();
             fields = SHARED_FIELDS;
         }
         
@@ -154,4 +157,10 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
 	public boolean has_content() throws IOException {
 		return !isEmpty();
 	}
+
+	private JHSearchField[] joinFields(JHSearchField[] a1, JHSearchField[] a2) {
+        Set<JHSearchField> fields = new HashSet<>(Arrays.asList(a1));
+        Arrays.stream(a2).parallel().forEach(fields::add);
+        return fields.toArray(new JHSearchField[fields.size()]);
+    }
 }
