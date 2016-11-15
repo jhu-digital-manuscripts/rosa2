@@ -90,10 +90,8 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
 
             logger.info("Initializing data. Collection: (" + collection + ")");
             for (String book : archiveStore.store().listBooks(collection)) {
-                logger.info("  - Caching book [" + book + "]");
                 archiveStore.book(collection, book);
             }
-            logger.info("Initializing done.");
         } catch (IOException e) {
             logger.warning("Failed to initialize.");
         }
@@ -417,7 +415,6 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
 
     @Override
     public FSIViewerModel loadFSIViewerModel(String collection, String book, String language) throws IOException {
-        logger.info("Loading FSI model.");
         String key = FSIViewerModel.class + "." + collection + "." + book + "." + language;
 
         Object obj = objectCache.get(key);
@@ -489,7 +486,6 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
     @Override
     public BookDescriptionViewModel loadBookDescriptionModel(String collection, String book, String language)
             throws IOException {
-        logger.info("Loading FSI model.");
         String key = BookDescriptionViewModel.class + "." + collection + "." + book + "." + language;
 
         Object obj = objectCache.get(key);
@@ -542,7 +538,6 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
     }
 
     private Table loadCharacterNames(String collection) throws IOException {
-        logger.info("Loading character_names.csv for collection [" + collection + "]");
         String key = Table.class + "." +  "charnames" + "." + collection;
 
         Object obj = objectCache.get(key);
@@ -595,7 +590,6 @@ public class ArchiveDataServiceImpl extends ContextRemoteServiceServlet implemen
     }
 
     private Table loadNarrativeSections(String collection) throws IOException {
-        logger.info("Loading narrative sections. [" + collection + "]");
         String key = Table.class + "." + "narsecs" +  "." + collection;
 
         Object obj = objectCache.get(key);
