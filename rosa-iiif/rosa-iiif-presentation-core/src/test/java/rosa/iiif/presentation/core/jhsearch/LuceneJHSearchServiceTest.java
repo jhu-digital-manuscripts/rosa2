@@ -12,6 +12,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import java.io.ByteArrayOutputStream;
+import java.util.Arrays;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -303,6 +304,65 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     }
 
     /**
+     * Search for the world "love" in all collections. There should be 15 total results in transcriptions
+     * and translations in the data. Two results should come from the Folgers book, the rest will come from
+     * the Rose manuscript translation.
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void testTopSearch() throws Exception {
+        SearchResult result = service.search(new Query("text", "love"), null);
+
+        assertNotNull(result);
+        assertEquals(15, result.getMatches().length);
+        assertEquals(15, result.getTotal());
+
+        assertEquals(2, Arrays.stream(result.getMatches()).filter(m -> m.getId().contains("FolgersHa2")).count());
+        assertEquals(13, Arrays.stream(result.getMatches()).filter(m -> m.getId().contains("LudwigXV7")).count());
+    }
+
+    /**
+     * Test the search service request handling method.
+     *
+     * Make a search request, search through TOP collection for the word "love" in the "text" field.
+     * Results should match those in {@link #testTopSearch()}
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void testTopService() throws Exception {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+
+        service.handle_request(
+                new PresentationRequest("top", "top", PresentationRequestType.COLLECTION),
+                "text:'love'",
+                0,
+                30,
+                null,
+                out
+        );
+
+        // This ID should appear 13 times
+        // "@id":"http://serenity.dkc.jhu.edu/pres/valid.LudwigXV7/manifest"
+        assertEquals(13, countStrings("\"@id\":\"http://serenity.dkc.jhu.edu/pres/valid.LudwigXV7/manifest\"", out.toString()));
+        // This ID should appear 2 times
+        // "@id":"http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest"
+        assertEquals(2, countStrings("\"@id\":\"http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest\"", out.toString()));
+    }
+
+    private int countStrings(String substr, String original) {
+        int index;
+        int count = 0;
+        while ((index = original.indexOf(substr)) > -1) {
+            count++;
+            original = original.substring(index+substr.length());
+        }
+
+        return count;
+    }
+
+    /**
      * Search for a person's name that appears once in the Folgers book. Then search for
      * an alternate spelling of the name. Both should return a single result of the same
      * page.
@@ -312,7 +372,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
      *
      * TODO re-enable when there is correct handling of name variants in AOR
      *
-     * @throws Exception
+     * @throws Exception .
      */
     @Test
     @Ignore
@@ -362,7 +422,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
      * variants is missing. While the alternate spelling search will not fail, it will
      * return zero results.
      *
-     * @throws Exception
+     * @throws Exception .
      */
     @Test
     @Ignore
