@@ -17,14 +17,14 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 
-import rosa.pageturner.client.model.Book;
-import rosa.pageturner.client.model.Opening;
-import rosa.pageturner.client.viewers.FsiPageTurner;
-import rosa.pageturner.client.viewers.PageTurner;
 import rosa.website.core.client.Labels;
 import rosa.website.core.client.view.ErrorComposite;
 import rosa.website.core.client.view.JSViewerView;
 import rosa.website.core.client.widget.ViewerControlsWidget;
+import rosa.website.viewer.client.pageturner.model.Book;
+import rosa.website.viewer.client.pageturner.model.Opening;
+import rosa.website.viewer.client.pageturner.viewers.FsiPageTurner;
+import rosa.website.viewer.client.pageturner.viewers.PageTurner;
 
 public class JSViewerViewImpl extends ErrorComposite implements JSViewerView, RequiresResize {
     private FlowPanel root;

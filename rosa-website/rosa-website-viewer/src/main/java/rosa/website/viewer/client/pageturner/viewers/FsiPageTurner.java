@@ -1,4 +1,4 @@
-package rosa.pageturner.client.viewers;
+package rosa.website.viewer.client.pageturner.viewers;
 
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
@@ -23,11 +23,12 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Panel;
-import rosa.pageturner.client.model.Book;
-import rosa.pageturner.client.model.Opening;
-import rosa.pageturner.client.model.Page;
-import rosa.pageturner.client.util.Console;
-import rosa.pageturner.client.util.FadeAnimation;
+
+import rosa.website.viewer.client.pageturner.model.Book;
+import rosa.website.viewer.client.pageturner.model.Opening;
+import rosa.website.viewer.client.pageturner.model.Page;
+import rosa.website.viewer.client.pageturner.util.Console;
+import rosa.website.viewer.client.pageturner.util.FadeAnimation;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -495,7 +496,7 @@ public class FsiPageTurner extends Composite implements PageTurner, HasClickHand
 
     private native void createViewerCallbacks(FsiPageTurner el) /*-{
         $wnd.imageFlowClick = function(oInstance, idElement, nImageIndex, strImagePath) {
-            el.@rosa.pageturner.client.viewers.FsiPageTurner::onThumbnailClick(Ljava/lang/String;I)(strImagePath, nImageIndex);
+            el.@rosa.website.viewer.client.pageturner.viewers.FsiPageTurner::onThumbnailClick(Ljava/lang/String;I)(strImagePath, nImageIndex);
         }
     }-*/;
 

@@ -153,17 +153,6 @@
         </dependency>
 
         <dependency>
-            <groupId>rosa.website</groupId>
-            <artifactId>rosa-fsi-js</artifactId>
-            <classifier>sources</classifier>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>rosa.website</groupId>
-            <artifactId>rosa-fsi-js</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
@@ -222,7 +211,6 @@
                         <compileSourcesArtifact>rosa.website:rosa-website-model</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.website:rosa-website-viewer</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.website:rosa-website-search</compileSourcesArtifact>
-                        <compileSourcesArtifact>rosa.website:rosa-fsi-js</compileSourcesArtifact>
                         <compileSourcesArtifact>rosa.website:rosa-website-core</compileSourcesArtifact>
                     </compileSourcesArtifacts>
                 </configuration>

@@ -21,8 +21,6 @@
     <inherits name="rosa.website.core.RosaWebsiteCore"/>
     <inherits name="rosa.website.search.RosaWebsiteSearch"/>
 
-    <inherits name="rosa.pageturner.FsiPageTurner"/>
-
     <inherits name='com.google.gwt.user.theme.chrome.Chrome' />
     <stylesheet src="../RosaWebsitePizan.css"/>
 

@@ -51,19 +51,6 @@
 
     <dependencyManagement>
         <dependencies>
-
-            <dependency>
-                <groupId>rosa.website</groupId>
-                <artifactId>rosa-fsi-js</artifactId>
-                <classifier>sources</classifier>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>rosa.website</groupId>
-                <artifactId>rosa-fsi-js</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
             <!-- External dependencies -->
 
             <!-- GWT dependencies -->

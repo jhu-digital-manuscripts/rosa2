@@ -49,17 +49,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>rosa.website</groupId>
-            <artifactId>rosa-fsi-js</artifactId>
-            <classifier>sources</classifier>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>rosa.website</groupId>
-            <artifactId>rosa-fsi-js</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>

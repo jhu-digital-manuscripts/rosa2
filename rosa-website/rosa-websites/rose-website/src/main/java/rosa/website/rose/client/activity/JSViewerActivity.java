@@ -24,9 +24,6 @@ import com.google.gwt.user.client.ui.AcceptsOneWidget;
 
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
-import rosa.pageturner.client.model.Book;
-import rosa.pageturner.client.model.Opening;
-import rosa.pageturner.client.util.Console;
 import rosa.website.core.client.ArchiveDataServiceAsync;
 import rosa.website.core.client.ClientFactory;
 import rosa.website.core.client.Labels;
@@ -41,6 +38,9 @@ import rosa.website.core.shared.RosaConfigurationException;
 import rosa.website.model.view.FSIViewerModel;
 import rosa.website.rose.client.WebsiteConfig;
 import rosa.website.viewer.client.jsviewer.codexview.RoseBook;
+import rosa.website.viewer.client.pageturner.model.Book;
+import rosa.website.viewer.client.pageturner.model.Opening;
+import rosa.website.viewer.client.pageturner.util.Console;
 
 public class JSViewerActivity implements Activity {
 
