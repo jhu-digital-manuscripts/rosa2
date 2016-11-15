@@ -27,7 +27,6 @@
     <!-- Logging -->
     <set-property name="gwt.logging.logLevel" value="${gwt.log.level}" />
     <set-property name="gwt.logging.enabled" value="TRUE"/>
-    <set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
 
     <entry-point class='rosa.website.rose.client.RosaWebsite' />
 

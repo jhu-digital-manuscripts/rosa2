@@ -20,7 +20,6 @@
     <!-- Logging -->
     <set-property name="gwt.logging.logLevel" value="FINE" />
     <set-property name="gwt.logging.enabled" value="TRUE"/>
-    <set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
 
     <inherits name='com.google.gwt.user.theme.standard.Standard' />
     <source path='client' />
