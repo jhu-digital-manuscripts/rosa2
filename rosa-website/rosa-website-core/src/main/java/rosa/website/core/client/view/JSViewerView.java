@@ -7,8 +7,8 @@ import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.Widget;
 
-import rosa.pageturner.client.model.Book;
-import rosa.pageturner.client.model.Opening;
+import rosa.website.viewer.client.pageturner.model.Book;
+import rosa.website.viewer.client.pageturner.model.Opening;
 
 public interface JSViewerView extends ErrorWidget {
     void setHeader(String header);

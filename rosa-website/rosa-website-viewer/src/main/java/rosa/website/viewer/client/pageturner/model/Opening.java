@@ -1,4 +1,4 @@
-package rosa.pageturner.client.model;
+package rosa.website.viewer.client.pageturner.model;
 
 public class Opening {
 

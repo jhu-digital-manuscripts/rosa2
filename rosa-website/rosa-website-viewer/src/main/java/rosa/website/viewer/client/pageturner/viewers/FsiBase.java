@@ -1,4 +1,4 @@
-package rosa.pageturner.client.viewers;
+package rosa.website.viewer.client.pageturner.viewers;
 
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.Style.Unit;

@@ -1,11 +1,12 @@
-package rosa.pageturner.client.viewers;
-
-import com.google.gwt.dom.client.Document;
-import com.google.gwt.dom.client.Element;
-import rosa.pageturner.client.util.Console;
+package rosa.website.viewer.client.pageturner.viewers;
 
 import java.util.Map;
 import java.util.Map.Entry;
+
+import com.google.gwt.dom.client.Document;
+import com.google.gwt.dom.client.Element;
+
+import rosa.website.viewer.client.pageturner.util.Console;
 
 public class FsiViewer extends FsiBase {
 

@@ -1,9 +1,10 @@
-package rosa.pageturner.client.viewers;
+package rosa.website.viewer.client.pageturner.viewers;
 
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.IsWidget;
-import rosa.pageturner.client.model.Opening;
+
+import rosa.website.viewer.client.pageturner.model.Opening;
 
 public interface PageTurner extends IsWidget {
     /**

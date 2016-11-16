@@ -1,12 +1,12 @@
 package rosa.website.viewer.client.jsviewer.codexview;
 
-import rosa.pageturner.client.model.Book;
-import rosa.pageturner.client.model.Opening;
-import rosa.pageturner.client.model.Page;
-import rosa.website.viewer.client.jsviewer.util.Util;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import rosa.website.viewer.client.jsviewer.util.Util;
+import rosa.website.viewer.client.pageturner.model.Book;
+import rosa.website.viewer.client.pageturner.model.Opening;
+import rosa.website.viewer.client.pageturner.model.Page;
 
 // TODO handle missing image
 // TODO  handle cropping, could crop dynamically???

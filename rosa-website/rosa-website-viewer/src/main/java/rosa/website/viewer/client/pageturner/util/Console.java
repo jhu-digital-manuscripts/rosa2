@@ -1,4 +1,4 @@
-package rosa.pageturner.client.util;
+package rosa.website.viewer.client.pageturner.util;
 
 public class Console {
     public static native void log(String message) /*-{

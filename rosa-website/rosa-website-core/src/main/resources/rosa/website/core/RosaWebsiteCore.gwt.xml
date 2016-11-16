@@ -9,7 +9,6 @@
     <inherits name="com.google.gwt.http.HTTP"/> <!-- To get access to gwt URL util -->
     <inherits name="com.google.gwt.regexp.RegExp"/>
 
-    <inherits name="rosa.pageturner.FsiPageTurner"/>
     <inherits name="rosa.archive.RosaArchiveModel"/>
     <inherits name="rosa.archive.RosaArchiveCore"/>
     <inherits name="rosa.search.RosaSearchModel"/>
@@ -21,7 +20,6 @@
     <!-- Logging -->
     <set-property name="gwt.logging.logLevel" value="FINE" />
     <set-property name="gwt.logging.enabled" value="TRUE"/>
-    <set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
 
     <inherits name='com.google.gwt.user.theme.standard.Standard' />
     <source path='client' />
