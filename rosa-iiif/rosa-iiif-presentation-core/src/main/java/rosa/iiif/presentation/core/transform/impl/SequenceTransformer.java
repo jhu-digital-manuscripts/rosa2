@@ -5,6 +5,7 @@ import com.google.inject.name.Named;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.ImageList;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -57,11 +58,10 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
         int count = 0;
         boolean hasNotBeenSet = true;
         for (BookImage image : imageList) {
-            String page = image.getName();
             canvases.add(canvasTransformer.transform(collection, book, image.getName()));
 
             // Set the starting point in the sequence to the first page of printed material
-            if (hasNotBeenSet && page.matches(PAGE_REGEX)) {
+            if (hasNotBeenSet && image.getLocation().equals(BookImageLocation.BODY_MATTER)) {
                 sequence.setStartCanvas(count);
                 hasNotBeenSet = false;
             }
