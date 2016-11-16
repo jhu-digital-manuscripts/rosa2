@@ -1,10 +1,11 @@
-package rosa.pageturner.client.viewers;
+package rosa.website.viewer.client.pageturner.viewers;
+
+import java.util.Map;
 
 import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
-import rosa.pageturner.client.util.Console;
 
-import java.util.Map;
+import rosa.website.viewer.client.pageturner.util.Console;
 
 public class FsiImageFlow extends FsiBase {
 

@@ -42,7 +42,9 @@ public class RosaWebsiteModule extends ServletModule {
 
         filter(buildUrlSegment("data")).through(CacheFilter.class);
 
-        serve(buildUrlSegment("remote_logging")).with(RemoteLoggingServiceImpl.class);
+        // Uncomment to enable remote logging
+        //serve(buildUrlSegment("remote_logging")).with(RemoteLoggingServiceImpl.class);
+        
         serve(buildUrlSegment("data")).with(ArchiveDataServiceImpl.class);
         serve(buildUrlSegment("fsi/*")).with(FSIDataServlet.class);
         serve(buildUrlSegment("search")).with(RosaSearchServiceImpl.class);

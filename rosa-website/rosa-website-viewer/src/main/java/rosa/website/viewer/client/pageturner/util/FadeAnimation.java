@@ -1,4 +1,4 @@
-package rosa.pageturner.client.util;
+package rosa.website.viewer.client.pageturner.util;
 
 import com.google.gwt.animation.client.Animation;
 import com.google.gwt.dom.client.Element;

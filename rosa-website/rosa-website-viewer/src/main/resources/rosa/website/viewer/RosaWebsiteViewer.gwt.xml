@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module rename-to='RosaWebsiteViewer'>
     <inherits name='com.google.gwt.user.User' />
-
     <inherits name='com.google.gwt.user.theme.standard.Standard' />
+    <inherits name="com.google.gwt.regexp.RegExp"/>
+
     <inherits name="rosa.archive.RosaArchiveModel"/>
     <inherits name="rosa.archive.RosaArchiveCore"/>
-    <inherits name="rosa.pageturner.FsiPageTurner"/>
+
+    <stylesheet src="fsi-pageturner.css" />
 
     <source path='client' />
     <source path='shared' />
