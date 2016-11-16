@@ -229,7 +229,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
                     t.append(title_id).append(", ");
 				}
 			}
-			addField(doc, JHSearchField.TITLE, t.toString());
+//			addField(doc, JHSearchField.TITLE, SearchFieldType.ENGLISH, t.toString());
 			text.append(t);
 
 			text.append(illus.getTextualElement());
@@ -421,14 +421,14 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		addField(doc, JHSearchField.MANIFEST_ID, manifest_id);
 		addField(doc, JHSearchField.MANIFEST_LABEL, manifest_label);
 
-		addField(doc, JHSearchField.TITLE, manifest_label);
-        addField(doc, JHSearchField.REPO, md.getRepository());
+        addField(doc, JHSearchField.TITLE, SearchFieldType.ENGLISH, manifest_label);
+        addField(doc, JHSearchField.REPO, SearchFieldType.ENGLISH, md.getRepository());
 
         addField(doc, JHSearchField.PLACE, md.getCurrentLocation());
 
         if (md.getTexts() != null) {
             for (BookText text : md.getTexts()) {
-                addField(doc, JHSearchField.TITLE, text.getTitle());
+                addField(doc, JHSearchField.TITLE, SearchFieldType.ENGLISH, text.getTitle());
             }
         }
 

@@ -323,6 +323,22 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     }
 
     /**
+     * Make sure that the "title" field doesn't repeat itself in the results context.
+     *
+     * @throws Exception .
+     */
+    @Test
+    @Ignore
+    public void testTitleField() throws Exception {
+        SearchResult result = service.search(new Query("title", "ludwig"), null);
+
+        // Make sure each context contains 0 or 1 "title" field
+        Arrays.stream(result.getMatches()).forEach(m ->
+            assertTrue("Results context contains more than ONE 'title' field",
+                    m.getContext().stream().filter(context -> context.equals("title")).count() < 2));
+    }
+
+    /**
      * Test the search service request handling method.
      *
      * Make a search request, search through TOP collection for the word "love" in the "text" field.
