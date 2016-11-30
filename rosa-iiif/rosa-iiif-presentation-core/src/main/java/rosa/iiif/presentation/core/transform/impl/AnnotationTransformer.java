@@ -19,6 +19,8 @@ import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.extres.HtmlDecorator;
+import rosa.iiif.presentation.core.extres.PleaidasGazetteer;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.archive.core.util.Annotations;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -28,6 +30,7 @@ import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -40,12 +43,16 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         AORAnnotatedPageConstants {
 
     private ArchiveNameParser nameParser;
+    private HtmlDecorator decorator;
+    private PleaidasGazetteer pgdb;
 
     @Inject
     public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
-                                 ArchiveNameParser nameParser) {
+                                 ArchiveNameParser nameParser) throws IOException {
         super(presRequestFormatter);
         this.nameParser = nameParser;
+        this.decorator = new HtmlDecorator();
+        this.pgdb = new PleaidasGazetteer();
     }
 
     @Override
@@ -214,12 +221,14 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         html.append("</span>");
 
         html.append("<p>");
-        html.append(StringEscapeUtils.escapeHtml4(transcription.toString()));
+        //html.append(StringEscapeUtils.escapeHtml4(transcription.toString()));
+        html.append(decorator.decorate(transcription.toString(), pgdb));
         html.append("</p>");
 
         if (marg.getTranslation() != null && !marg.getTranslation().isEmpty()) {
             html.append("<p class=\"italic\">[");
-            html.append(StringEscapeUtils.escapeHtml4(marg.getTranslation()));
+            //html.append(StringEscapeUtils.escapeHtml4(marg.getTranslation()));
+            html.append(decorator.decorate(marg.getTranslation(), pgdb));
             html.append("]</p>");
         }
 
@@ -237,7 +246,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
         if (locs.length() > 0) {
             html.append("<p><span class=\"emphasize\">Locations:</span> ");
-            html.append(StringEscapeUtils.escapeHtml4(trim_right(locs, 2)));
+            //html.append(StringEscapeUtils.escapeHtml4(trim_right(locs, 2)));
+            html.append(decorator.decorate(trim_right(locs, 2), pgdb));
             html.append("</p>");
         }
         

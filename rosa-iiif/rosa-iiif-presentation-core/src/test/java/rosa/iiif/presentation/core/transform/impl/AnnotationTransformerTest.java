@@ -11,6 +11,7 @@ import rosa.archive.model.aor.Location;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -25,7 +26,7 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
     private AnnotationTransformer transformer;
 
     @Before
-    public void setup() {
+    public void setup() throws IOException {
         transformer = new AnnotationTransformer(
                 new IIIFPresentationRequestFormatter("SCHEME", "HOST", "PREFIX", 80),
                 new ArchiveNameParser()
