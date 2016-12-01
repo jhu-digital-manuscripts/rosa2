@@ -5,14 +5,13 @@ import java.net.URI;
 import org.apache.commons.lang3.StringEscapeUtils;
 
 public class HtmlDecorator {
-    // TODO Handle multiword terms
-    
-    
+    private static final int MIN_TERM_LENGTH = 3;
+
     private int find_term_start(String s, int offset) {
         for (int i = offset; i < s.length(); i++) {
             char c = s.charAt(i);
 
-            if (Character.isLetter(c)) {
+            if (Character.isUpperCase(c)) {
                 return i;
             }
         }
@@ -38,6 +37,7 @@ public class HtmlDecorator {
      * @return properly escaped HTML text with links for terms.
      */
     // TODO Does not handle or multi-word terms
+    // TODO Assume term starts with uppercase letter.
     public String decorate(String text, ExternalResourceDb db) {
         StringBuilder result = new StringBuilder();
 
@@ -56,7 +56,7 @@ public class HtmlDecorator {
 
                 URI uri = db.lookup(term);
 
-                if (uri == null) {
+                if (uri == null || term.length() < MIN_TERM_LENGTH) {
                     result.append(escape_html(term));
                 } else {
                     result.append(create_link(term, uri.toString()));

@@ -25,7 +25,7 @@ public class PleaidasGazetteerTest {
     public void testDecoration() throws IOException {
         PleaidasGazetteer pg = new PleaidasGazetteer();
 
-        String text = "The cow goes Moo in Rome and athens.";
+        String text = "The cow goes Moo in Rome and Athens.";
 
         String html = new HtmlDecorator().decorate(text, pg);
 
