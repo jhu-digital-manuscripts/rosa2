@@ -26,7 +26,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
         Collection col = new Collection();
 
         col.setId(urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION));
-        col.setLabel(collection.getId(), "en");
+        col.setLabel(collection.getLabel(), "en");
         col.setType(SC_COLLECTION);
 
         List<Reference> refs = new ArrayList<>();
@@ -55,7 +55,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
         Collection col = new Collection();
 
         col.setId(urlId("top", null, "top", PresentationRequestType.COLLECTION));
-        col.setLabel("top", "en");
+        col.setLabel("All JHU collections", "en");
         col.setDescription("Top level collection bringing together all other collections in this archive.", "en");
         col.setType(SC_COLLECTION);
 
@@ -64,7 +64,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
             Reference ref = new Reference();
 
             ref.setType(SC_COLLECTION);
-            ref.setLabel(new TextValue(c.getId(), "en"));
+            ref.setLabel(new TextValue(c.getLabel(), "en"));
             ref.setReference(urlId(c.getId(), null, c.getId(), PresentationRequestType.COLLECTION));
 
             cols.add(ref);

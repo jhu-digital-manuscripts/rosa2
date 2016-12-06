@@ -22,6 +22,11 @@ else
   find /mnt/archive/pizancollection/ -maxdepth 1 -type f -exec cp {} archive/pizancollection \;
   find /mnt/archive/rosecollection/ -maxdepth 1 -type f -exec cp {} archive/rosecollection \;
 
+  # Add labels to collection files 'config.properties'
+  printf "\nlabel=Archaeology of Reading collection\n" >> archive/aorcollection/config.properties
+  printf "\nlabel=Christine de Pizan collection\n" >> archive/pizancollection/config.properties
+  printf "\nlabel=Roman de la Rose collection\n" >> archive/rosecollection/config.properties
+
   ln -s /mnt/archive/aorcollection/FolgersHa2/ archive/aorcollection/FolgersHa2
   ln -s /mnt/archive/aorcollection/HoughtonSTC11402/ archive/aorcollection/HoughtonSTC11402
   ln -s /mnt/archive/aorcollection/PrincetonPA6452/ archive/aorcollection/PrincetonPA6452
