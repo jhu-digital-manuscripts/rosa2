@@ -1,19 +1,20 @@
 package rosa.iiif.presentation.core.extres;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.net.URI;
 
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class PleaidasGazetteerTest {
-    private PleaidasGazetteer pg;
+    private static PleaidesGazetteer pg;
     
-    @Before
-    public void setup() throws IOException {
-        pg = new PleaidasGazetteer();
+    @BeforeClass
+    public static void setup() throws IOException {
+        pg = new PleaidesGazetteer();
     }
     
     @Test
@@ -23,12 +24,10 @@ public class PleaidasGazetteerTest {
 
     @Test
     public void testDecoration() throws IOException {
-        PleaidasGazetteer pg = new PleaidasGazetteer();
-
         String text = "The cow goes Moo in Rome and Athens.";
-
         String html = new HtmlDecorator().decorate(text, pg);
 
-        System.err.println(html);
+        assertTrue(html.contains("https://pleiades.stoa.org/places/423025"));
+        assertTrue(html.contains("https://pleiades.stoa.org/places/579885"));
     }
 }

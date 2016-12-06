@@ -38,7 +38,7 @@ public class HtmlDecorator {
      */
     // TODO Does not handle or multi-word terms
     // TODO Assume term starts with uppercase letter.
-    public String decorate(String text, ExternalResourceDb db) {
+    public String decorate(String text, ExternalResourceDb... dbs) {
         StringBuilder result = new StringBuilder();
 
         for (int offset = 0;;) {
@@ -54,7 +54,16 @@ public class HtmlDecorator {
 
                 String term = text.substring(term_start, term_end);
 
-                URI uri = db.lookup(term);
+                URI uri = null;
+                
+                for (ExternalResourceDb db: dbs) {
+                    URI test = db.lookup(term);
+                    
+                    if (test != null) {
+                        uri = test;
+                        break;
+                    }
+                }
 
                 if (uri == null || term.length() < MIN_TERM_LENGTH) {
                     result.append(escape_html(term));

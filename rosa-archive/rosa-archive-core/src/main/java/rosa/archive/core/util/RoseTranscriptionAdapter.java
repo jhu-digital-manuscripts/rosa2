@@ -1,14 +1,19 @@
 package rosa.archive.core.util;
 
-import org.w3c.dom.Document;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.StringReader;
+import java.util.function.Function;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParserFactory;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
+
+
+// TODO Use a HTML library
 
 /**
  * Adapt transcriptions from Rose collection
@@ -21,72 +26,74 @@ public class RoseTranscriptionAdapter {
      * @param xml string contents
      * @return HTML representations, a String per column in each page
      */
-    public String toHtml(String xml, String name) {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-
+    public String toHtml(String xml, Function<String, String> text_to_html) {
         try {
-
-            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(
-                    new InputSource(new StringReader(xml))
-            );
-
-            XMLUtil.write(doc, out, true);
-
-        } catch (ParserConfigurationException | IOException | SAXException e) {
-            return null;
+            HtmlTransformer tr = new HtmlTransformer(text_to_html);
+            SAXParserFactory.newInstance().newSAXParser().parse(new InputSource(new StringReader(xml)), tr);
+            return tr.getHtml();
+        } catch (SAXException | ParserConfigurationException | IOException e) {
+            throw new RuntimeException(e);
         }
-
-        StringBuilder result = new StringBuilder();
-
-        String[] lines = out.toString().split("\n");
-        for (String line : lines) {
-            boolean needsNL = true;
-            line = line.trim();
-
-            if (skipLine(line)) {
-                needsNL = false;
-            }
-
-            if (line.startsWith("<div")) {
-                needsNL = false;
-            }
-            if (line.startsWith("<pb")) {
-                line = line.replaceFirst("<pb\\s+n=\"", "<h3>").replaceFirst("\"\\s*/>", "</h3>");
-                needsNL = false;
-            }
-            if (line.startsWith("<cb")) {
-                line = line.replaceFirst("<cb\\s+n=\"", "<h5>Column ").replaceFirst("\"\\s*/>", "</h5>");
-                needsNL = false;
-            }
-            if (line.contains("</l>")) {
-                line = line.replaceAll("</l>", "</l><br/>");
-                needsNL = false;
-            }
-
-            if (line.contains("<hi ")) {
-                line = line.replaceAll("<hi\\s+rend", "<span class").replaceAll("</hi>", "</span>");
-            }
-            if (line.contains("<note")) {
-                line = line.replaceAll("<note .*</note>", "");
-            }
-            if (line.contains("<expan")) {
-                line = line.replaceAll("<expan>", "<span class=\"expan\">").replaceAll("</expan>", "</span>");
-            }
-
-            if (needsNL)
-                line = line.concat("<br/>");
-
-            result.append(line);
-        }
-
-        return result.toString();
     }
 
-    private boolean skipLine(String line) {
-        return line.startsWith("<figure") || line.startsWith("</figure>") ||
-                line.startsWith("<lg") || line.startsWith("</lg") ||
-                line.startsWith("<milestone") ||
-                line.equals("<l>") || line.equals("</l>");
+    // TODO lecoy numbers.
+    
+    private class HtmlTransformer extends DefaultHandler {
+        private final StringBuilder html;
+        private final Function<String, String> text_to_html;
+        
+        public HtmlTransformer(Function<String, String> text_to_html) {
+            this.html = new StringBuilder();
+            this.text_to_html = text_to_html;
+        }
+        
+        @Override
+        public void characters(char[] ch, int start, int length) throws SAXException {
+            String text = new String(ch, start, length);
+            
+            html.append(text_to_html.apply(text));
+        }
+
+        @Override
+        public void startElement(String uri, String localName, String qName, Attributes attributes)
+                throws SAXException {
+            if (qName.equals("div")) {
+                html.append("<div>");
+            } else if (qName.equals("pb")) {
+                html.append("<h3>" + attributes.getValue("n") + "</h3>");
+            } else if (qName.equals("cb")) {
+                html.append("<h5>Column " + attributes.getValue("n") + "</h5>");
+            } else if (qName.equals("hi")) {
+                html.append("<span class='" + attributes.getValue("rend") + "'>");
+            } else if (qName.equals("expan")) {
+                html.append("<span class='expan'>");
+            } else if (qName.equals("l")) {
+                html.append(attributes.getValue("n") + ". ");                
+            } else if (qName.equals("figure")) {
+                html.append("<p>");
+            } else if (qName.equals("note")) {
+                html.append(" (");                
+            }
+        }
+
+        @Override
+        public void endElement(String uri, String localName, String qName) throws SAXException {
+            if (qName.equals("div")) {
+                html.append("</div>");
+            } else if (qName.equals("hi") || qName.equals("expan")) {
+                html.append("</span>");
+            } else if (qName.equals("l")) {
+                html.append("<br/>");
+            } else if (qName.equals("figure")) {
+                html.append("</p>");
+            } else if (qName.equals("note")) {
+                html.append(")");                
+            }
+        }
+        
+        public String getHtml() {
+            return html.toString();
+        }
     }
 
 }

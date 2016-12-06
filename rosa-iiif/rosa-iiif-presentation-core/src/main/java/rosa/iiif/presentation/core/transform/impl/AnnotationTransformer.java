@@ -20,7 +20,9 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.extres.HtmlDecorator;
-import rosa.iiif.presentation.core.extres.PleaidasGazetteer;
+import rosa.iiif.presentation.core.extres.PerseusDictionary;
+import rosa.iiif.presentation.core.extres.PleaidesGazetteer;
+import rosa.iiif.presentation.core.extres.ExternalResourceDb;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.archive.core.util.Annotations;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -44,7 +46,9 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
     private ArchiveNameParser nameParser;
     private HtmlDecorator decorator;
-    private PleaidasGazetteer pgdb;
+    private ExternalResourceDb pleaides_db;
+    private ExternalResourceDb perseus_db;
+    
 
     @Inject
     public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
@@ -52,7 +56,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         super(presRequestFormatter);
         this.nameParser = nameParser;
         this.decorator = new HtmlDecorator();
-        this.pgdb = new PleaidasGazetteer();
+        this.pleaides_db = new PleaidesGazetteer();
+        this.perseus_db = new PerseusDictionary();
     }
 
     @Override
@@ -222,19 +227,20 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
         html.append("<p>");
         //html.append(StringEscapeUtils.escapeHtml4(transcription.toString()));
-        html.append(decorator.decorate(transcription.toString(), pgdb));
+        html.append(decorator.decorate(transcription.toString(), pleaides_db, perseus_db));
         html.append("</p>");
 
         if (marg.getTranslation() != null && !marg.getTranslation().isEmpty()) {
             html.append("<p class=\"italic\">[");
             //html.append(StringEscapeUtils.escapeHtml4(marg.getTranslation()));
-            html.append(decorator.decorate(marg.getTranslation(), pgdb));
+            html.append(decorator.decorate(marg.getTranslation(), pleaides_db, perseus_db));
             html.append("]</p>");
         }
 
         if (people.length() > 0) {
             html.append("<p><span class=\"emphasize\">People:</span> ");
-            html.append(StringEscapeUtils.escapeHtml4(trim_right(people, 2)));
+            //html.append(StringEscapeUtils.escapeHtml4(trim_right(people, 2)));
+            html.append(decorator.decorate(trim_right(locs, 2), perseus_db));
             html.append("</p>");
         }
 
@@ -247,7 +253,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         if (locs.length() > 0) {
             html.append("<p><span class=\"emphasize\">Locations:</span> ");
             //html.append(StringEscapeUtils.escapeHtml4(trim_right(locs, 2)));
-            html.append(decorator.decorate(trim_right(locs, 2), pgdb));
+            html.append(decorator.decorate(trim_right(locs, 2), pleaides_db));
             html.append("</p>");
         }
         
@@ -447,7 +453,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
 
         RoseTranscriptionAdapter adapter = new RoseTranscriptionAdapter();
-        transcription = adapter.toHtml(transcription, page);
+
+        transcription = adapter.toHtml(transcription, (String t) -> decorator.decorate(t, perseus_db));
 
         Annotation ann = new Annotation();
 
@@ -457,6 +464,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         ann.setType(OA_ANNOTATION);
 
         ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
+
         ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", transcription, "en"));
 
         return Collections.singletonList(ann);
@@ -518,8 +526,9 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                         .append(sb_titles.toString()).append("</p>");
             }
             if (isNotEmpty(ill.getCharacters())) {
+               
                 html.append("<p><span class=\"bold\">Characters:</span> ")
-                        .append(sb_names.toString()).append("</p>");
+                        .append(decorator.decorate(sb_names.toString(), perseus_db)).append("</p>");
             }
             if (isNotEmpty(ill.getTextualElement())) {
                 html.append("<p><span class=\"bold\">Textual Elements:</span> ")
