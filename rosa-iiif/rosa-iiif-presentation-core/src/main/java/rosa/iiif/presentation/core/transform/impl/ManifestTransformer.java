@@ -67,9 +67,9 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         if (book.getLicenseUrl() != null) {
             preziRights.setLicenseUris(new String[] {book.getLicenseUrl()});
         }
-        if (book.getLicenseLogoUrl() != null) {
-            preziRights.setLogoUris(new String[] {book.getLicenseLogoUrl()});
-        }
+//        if (book.getLicenseLogoUrl() != null) {
+//            preziRights.setLogoUris(new String[] {book.getLicenseLogoUrl()});
+//        }
         preziRights.addAttribution(book.getPermission(lc).getPermission(), lc);
 
         manifest.setRights(preziRights);
@@ -77,11 +77,11 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
 
         manifest.setMetadata(transformMetadata(book, new String[]{lc}));
 
-        // Set manifest thumbnail, set to thumbnail for default sequence
-        if (manifest.getDefaultSequence() != null) {
-            manifest.setThumbnailUrl(manifest.getDefaultSequence().getThumbnailUrl());
-            manifest.setThumbnailService(manifest.getDefaultSequence().getThumbnailService());
-        }
+        // TODO Set manifest thumbnail, set to thumbnail for default sequence
+//        if (manifest.getDefaultSequence() != null) {
+//            manifest.setThumbnailUrl(manifest.getDefaultSequence().getThumbnailUrl());
+//            manifest.setThumbnailService(manifest.getDefaultSequence().getThumbnailService());
+//        }
 
         // Set 'within' property to point this manifest to its parent collection
         manifest.setWithin(urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION));
