@@ -240,7 +240,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         if (people.length() > 0) {
             html.append("<p><span class=\"emphasize\">People:</span> ");
             //html.append(StringEscapeUtils.escapeHtml4(trim_right(people, 2)));
-            html.append(decorator.decorate(trim_right(locs, 2), perseus_db));
+            html.append(decorator.decorate(trim_right(people, 2), perseus_db));
             html.append("</p>");
         }
 
