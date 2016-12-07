@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.extres;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
@@ -29,5 +30,21 @@ public class PleaidasGazetteerTest {
 
         assertTrue(html.contains("https://pleiades.stoa.org/places/423025"));
         assertTrue(html.contains("https://pleiades.stoa.org/places/579885"));
+    }
+    
+    @Test
+    public void testMultiWordDecorationFail1() throws IOException {
+        String text = "The cow goes Moo in Rome Athens.";
+        String html = new HtmlDecorator().decorate(text, pg);
+
+        assertFalse(html.contains("http"));
+    }
+    
+    @Test
+    public void testMultiWordDecorationFail2() throws IOException {
+        String text = "The cow goes Moo in RomeAthens.";
+        String html = new HtmlDecorator().decorate(text, pg);
+
+        assertFalse(html.contains("http"));
     }
 }

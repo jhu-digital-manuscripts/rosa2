@@ -52,6 +52,11 @@ public class PerseusDictionary extends SimpleExternalResourceDb {
         private String letter_id;
         private String entry_id;
         private String text;
+        private StringBuilder name;
+
+        public SaxHandler() {
+            this.name = new StringBuilder();
+        }
 
         @Override
         public void characters(char[] ch, int start, int length) throws SAXException {
@@ -71,18 +76,20 @@ public class PerseusDictionary extends SimpleExternalResourceDb {
                         entry_id = attributes.getValue("n");
                     }
                 }
-            } else if (qName.equals("persName")) {
-
-            } else if (qName.equals("surname")) {
-
             }
         }
 
         @Override
         public void endElement(String uri, String localName, String qName) throws SAXException {
             if (qName.equals("surname")) {
+                name.append(text);
+            } else if (qName.equals("addName")) {
+                name.append(' ');
+                name.append(text);
+            } else if (qName.equals("persName")) {
                 try {
-                    add(text, new URI(book_url + letter_id + "." + entry_id));
+                    add(name.toString(), new URI(book_url + letter_id + "." + entry_id));
+                    name.setLength(0);
                 } catch (URISyntaxException e) {
                     throw new RuntimeException(e);
                 }

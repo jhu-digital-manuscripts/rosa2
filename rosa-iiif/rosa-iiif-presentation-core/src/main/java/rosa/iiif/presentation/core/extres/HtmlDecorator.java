@@ -7,6 +7,7 @@ import org.apache.commons.lang3.StringEscapeUtils;
 public class HtmlDecorator {
     private static final int MIN_TERM_LENGTH = 3;
 
+    // Term starts with upper case letter
     private int find_term_start(String s, int offset) {
         for (int i = offset; i < s.length(); i++) {
             char c = s.charAt(i);
@@ -19,11 +20,24 @@ public class HtmlDecorator {
         return -1;
     }
 
+    // Term ends with non-letter character unless there are space characters followed by an upper case letter.
     private int find_term_end(String s, int offset) {
         for (int i = offset; i < s.length(); i++) {
             char c = s.charAt(i);
 
-            if (!Character.isLetter(c)) {
+            if (Character.isSpaceChar(c)) {
+                int space_end = i + 1;
+                
+                for (; space_end < s.length() && Character.isSpaceChar(s.charAt(space_end)); space_end++)
+                    ;
+                
+                if (space_end < s.length() && Character.isUpperCase(s.charAt(space_end))) {
+                    i = space_end;
+                    continue;
+                } else {
+                    return i;
+                }
+            } else if (!Character.isLetter(c)) {
                 return i;
             }
         }
@@ -55,10 +69,10 @@ public class HtmlDecorator {
                 String term = text.substring(term_start, term_end);
 
                 URI uri = null;
-                
-                for (ExternalResourceDb db: dbs) {
+
+                for (ExternalResourceDb db : dbs) {
                     URI test = db.lookup(term);
-                    
+
                     if (test != null) {
                         uri = test;
                         break;
@@ -77,7 +91,7 @@ public class HtmlDecorator {
 
         return result.toString();
     }
-    
+
     private String escape_html(String text) {
         return StringEscapeUtils.escapeHtml4(text);
     }
