@@ -74,11 +74,11 @@ interface JHSearchFieldProperties {
     String CROSS_REFERENCE_LABEL = "Cross Reference";
     String CROSS_REFERENCE_DESCRIPTION = "Quotes from sources not explicitly identified by the reader.";
     String TRANSCRIPTION_LABEL = "Transcription";
-    String TRANSCRIPTION_DESCRIPTION = "";
-    String ILLUSTRATION_LABEL = "Transcription";
-    String ILLUSTRATION_DESCRIPTION = "Description of illustrations";
+    String TRANSCRIPTION_DESCRIPTION = "Search transcriptions of the text";
+    String ILLUSTRATION_LABEL = "Illustrations";
+    String ILLUSTRATION_DESCRIPTION = "Description of illustrations including illustration titles, characters that appear in illustrations, objects that appear in illustrations, etc";
     String DESCRIPTION_LABEL = "Description";
-    String DESCRIPTION_DESCRIPTION = "";
+    String DESCRIPTION_DESCRIPTION = "Search the description of books or manuscripts";
     String LANGUAGE_LABEL ="Language";
     String LANGUAGE_DESCRIPTION = "Search text of non-structured description of items.";
     String[] LANGUAGE_VALUES = { 

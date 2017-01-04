@@ -4,9 +4,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 import rosa.archive.core.Store;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
@@ -106,8 +103,18 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
     private static final JHSearchField[] ROSE_PIZAN_FIELDS = {
             JHSearchField.DESCRIPTION,
             JHSearchField.TRANSCRIPTION,
-            JHSearchField.ILLUSTRATION, 
-            JHSearchField.IMAGE_NAME
+            JHSearchField.ILLUSTRATION,
+            JHSearchField.TITLE,
+            JHSearchField.REPO
+            // -----------------------------
+//            JHSearchField.LINES_VERSE,
+//            JHSearchField.RUBRIC,
+//            JHSearchField.LECOY,
+//            JHSearchField.CRITICAL_NOTE,
+//            JHSearchField.CHARACTER_DEPICTED,
+//            JHSearchField.ILLUSTRATION_KEYWORD,
+//            JHSearchField.FOLIO,
+//            JHSearchField.NARRATIVE_SECTIONS
     };
     
     private static final JHSearchField[] AOR_FIELDS = {
@@ -134,7 +141,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             JHSearchField.PEOPLE,
             JHSearchField.PLACE,
             JHSearchField.REPO,
-            JHSearchField.TRANSCRIPTION
+            JHSearchField.TEXT
     };
     
     @Override
@@ -143,7 +150,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         String identifier = req.getType() == PresentationRequestType.COLLECTION ? req.getName() : req.getId();
         
         if (identifier.contains("rose") || identifier.contains("pizan")) {
-            fields = joinFields(ROSE_PIZAN_FIELDS, SHARED_FIELDS);
+            fields = ROSE_PIZAN_FIELDS;
         } else if (identifier.contains("aor")) {
             fields = AOR_FIELDS;
         } else {
@@ -158,9 +165,4 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
 		return !isEmpty();
 	}
 
-	private JHSearchField[] joinFields(JHSearchField[] a1, JHSearchField[] a2) {
-        Set<JHSearchField> fields = new HashSet<>(Arrays.asList(a1));
-        Arrays.stream(a2).parallel().forEach(fields::add);
-        return fields.toArray(new JHSearchField[fields.size()]);
-    }
 }
