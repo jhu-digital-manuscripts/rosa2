@@ -8,7 +8,6 @@ import java.util.logging.Logger;
 
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyDownEvent;
@@ -273,9 +272,8 @@ public class JSViewerActivity implements Activity {
             }
         });
 
-        Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-            @Override
-            public void execute() {
+        Scheduler.get().scheduleDeferred(() -> {
+            if (starterPage != null) {
                 int index = getImageIndex(starterPage);
                 if (starterPage.toLowerCase().endsWith("v")) {
                     index++;
