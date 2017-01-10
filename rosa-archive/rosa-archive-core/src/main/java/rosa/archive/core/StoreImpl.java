@@ -159,6 +159,12 @@ public class StoreImpl implements Store, ArchiveConstants {
         try (InputStream configIn = collectionGroup.getByteStream("config.properties")) {
             props.load(configIn);
         }
+
+        // Add label to collection if it exists in the config
+        String label = props.getProperty("label");
+        if (label != null && !label.isEmpty()) {
+            collection.setLabel(label);
+        }
         
         String langs = props.getProperty("languages");
         if (langs != null) {

@@ -28,6 +28,8 @@ public class BookCollection implements HasId, Serializable {
     private ReferenceSheet locationsRef;
     private BookReferenceSheet booksRef;
 
+    private String label;
+
     /**
      * Create an empty book collection. Is not persisted.
      */
@@ -44,6 +46,14 @@ public class BookCollection implements HasId, Serializable {
     @Override
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
     }
 
     /**
@@ -165,6 +175,7 @@ public class BookCollection implements HasId, Serializable {
         if (characterNames != null ? !characterNames.equals(that.characterNames) : that.characterNames != null)
             return false;
         if (checksums != null ? !checksums.equals(that.checksums) : that.checksums != null) return false;
+        if (label != null ? !label.equals(that.getLabel()) : that.getLabel() != null) return false;
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (illustrationTitles != null ? !illustrationTitles.equals(that.illustrationTitles) : that.illustrationTitles != null)
             return false;
@@ -181,6 +192,7 @@ public class BookCollection implements HasId, Serializable {
     @Override
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (label != null ? label.hashCode() : 0);
         result = 31 * result + (books != null ? Arrays.hashCode(books) : 0);
         result = 31 * result + (languages != null ? Arrays.hashCode(languages) : 0);
         result = 31 * result + (characterNames != null ? characterNames.hashCode() : 0);
@@ -198,6 +210,7 @@ public class BookCollection implements HasId, Serializable {
     public String toString() {
         return "BookCollection{" +
                 "id='" + id + '\'' +
+                ", label='" + label + "'" +
                 ", books=" + Arrays.toString(books) +
                 ", languages=" + Arrays.toString(languages) +
                 ", characterNames=" + characterNames +
