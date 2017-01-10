@@ -22,6 +22,8 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookText;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
@@ -40,6 +42,8 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
+import rosa.archive.model.meta.BiblioData;
+import rosa.archive.model.meta.MultilangMetadata;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -202,31 +206,31 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		for (int index : imgtag.findImageIndices(book, image.getId())) {
 			Illustration illus = imgtag.getIllustrationData(index);
 
+			StringBuilder chars = new StringBuilder();
 			for (String char_id : illus.getCharacters()) {
 				rosa.archive.model.CharacterName char_name = char_names.getCharacterName(char_id);
 
 				if (char_name == null) {
-					text.append(char_id);
-					text.append(", ");
+                    chars.append(char_id).append(", ");
 				} else {
-					for (String name : char_name.getAllNames()) {
-						text.append(name);
-						text.append(", ");
-					}
+                    char_name.getAllNames().forEach(name -> chars.append(name).append(", "));
 				}
 			}
+            addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, chars.toString());
+            text.append(chars);
 
+            StringBuilder t = new StringBuilder();
 			for (String title_id : illus.getTitles()) {
 				String title = titles.getTitleById(title_id);
 
 				if (title != null && !title.isEmpty()) {
-					text.append(title);
-					text.append(", ");
+                    t.append(title).append(", ");
 				} else {
-					text.append(title_id);
-					text.append(", ");
+                    t.append(title_id).append(", ");
 				}
 			}
+//			addField(doc, JHSearchField.TITLE, SearchFieldType.ENGLISH, t.toString());
+            text.append(t);
 
 			text.append(illus.getTextualElement());
 			text.append(", ");
@@ -255,24 +259,31 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		xmlReader.parse(new InputSource(new StringReader(transcription)));
 
 		addField(doc, JHSearchField.TRANSCRIPTION, SearchFieldType.OLD_FRENCH, trxml.getPoetry());
+        addField(doc, JHSearchField.TEXT, SearchFieldType.OLD_FRENCH, trxml.getPoetry());
 
 		if (trxml.hasCatchphrase()) {
 			addField(doc, JHSearchField.TRANSCRIPTION, SearchFieldType.OLD_FRENCH, trxml.getCatchphrase());
+            addField(doc, JHSearchField.TEXT, SearchFieldType.OLD_FRENCH, trxml.getCatchphrase());
 		}
 
 		if (trxml.hasRubric()) {
-			addField(doc, JHSearchField.TRANSCRIPTION, SearchFieldType.OLD_FRENCH, trxml.getRubric());
+            addField(doc, JHSearchField.TRANSCRIPTION, SearchFieldType.OLD_FRENCH, trxml.getRubric());
+            addField(doc, JHSearchField.TEXT, SearchFieldType.OLD_FRENCH, trxml.getRubric());
 		}
 
 		if (trxml.hasIllus()) {
 			addField(doc, JHSearchField.TRANSCRIPTION, SearchFieldType.ENGLISH, trxml.getIllustration());
+            addField(doc, JHSearchField.TEXT, SearchFieldType.ENGLISH, trxml.getIllustration());
 		}
 
 		addField(doc, JHSearchField.TRANSCRIPTION, SearchFieldType.ENGLISH, trxml.getLecoy());
 		addField(doc, JHSearchField.TRANSCRIPTION, SearchFieldType.ENGLISH, trxml.getLine());
+        addField(doc, JHSearchField.TEXT, SearchFieldType.ENGLISH, trxml.getLecoy());
+        addField(doc, JHSearchField.TEXT, SearchFieldType.ENGLISH, trxml.getLine());
 
 		if (trxml.hasNote()) {
 			addField(doc, JHSearchField.TRANSCRIPTION, SearchFieldType.ENGLISH, trxml.getNote());
+            addField(doc, JHSearchField.TEXT, SearchFieldType.ENGLISH, trxml.getNote());
 		}
 	}
 
@@ -397,9 +408,11 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		String collection_id = get_uri(col.getId(), null, col.getId(), PresentationRequestType.COLLECTION);
 		String manifest_id = get_uri(col.getId(), book.getId(), null, PresentationRequestType.MANIFEST);
-		String manifest_label = book.getBookMetadata("en").getCommonName();
 
-		addField(doc, JHSearchField.COLLECTION_ID, collection_id);
+        BookMetadata md = book.getBookMetadata("en");
+        String manifest_label = md.getCommonName();
+
+        addField(doc, JHSearchField.COLLECTION_ID, collection_id);
 
 		addField(doc, JHSearchField.OBJECT_ID, manifest_id);
 		addField(doc, JHSearchField.OBJECT_TYPE, IIIFNames.SC_MANIFEST);
@@ -408,17 +421,40 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		addField(doc, JHSearchField.MANIFEST_ID, manifest_id);
 		addField(doc, JHSearchField.MANIFEST_LABEL, manifest_label);
 
+        addField(doc, JHSearchField.TITLE, SearchFieldType.ENGLISH, manifest_label);
+        addField(doc, JHSearchField.REPO, SearchFieldType.ENGLISH, md.getRepository());
+
+        addField(doc, JHSearchField.PLACE, md.getCurrentLocation());
+
+        if (md.getTexts() != null) {
+            for (BookText text : md.getTexts()) {
+                addField(doc, JHSearchField.TITLE, SearchFieldType.ENGLISH, text.getTitle());
+            }
+        }
+
+        MultilangMetadata mm = book.getMultilangMetadata();
+        if (mm != null && mm.getBiblioDataMap() != null) {
+            BiblioData data = mm.getBiblioDataMap().get("en");
+            if (data.getAuthors() != null) {
+                for (String author : data.getAuthors()) {
+                    addField(doc, JHSearchField.PEOPLE, author);
+                }
+            }
+        }
+
 		return doc;
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Symbol symbol, Document doc) {
 		addField(doc, JHSearchField.SYMBOL, SearchFieldType.STRING, symbol.getName());
 		addField(doc, JHSearchField.SYMBOL, get_lang(symbol), stripTranscribersMarks(symbol.getReferencedText()));
+        addField(doc, JHSearchField.TEXT, get_lang(symbol), stripTranscribersMarks(symbol.getReferencedText()));
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Drawing drawing, Document doc) {
 		addField(doc, JHSearchField.DRAWING, SearchFieldType.STRING, drawing.getName());
 		addField(doc, JHSearchField.DRAWING, get_lang(drawing), stripTranscribersMarks(drawing.getReferencedText()));
+        addField(doc, JHSearchField.TEXT, get_lang(drawing), stripTranscribersMarks(drawing.getReferencedText()));
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Errata errata, Document doc) {
@@ -426,23 +462,27 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		addField(doc, JHSearchField.ERRATA, type, errata.getAmendedText());
 		addField(doc, JHSearchField.ERRATA, type, stripTranscribersMarks(errata.getReferencedText()));
+        addField(doc, JHSearchField.TEXT, type, stripTranscribersMarks(errata.getReferencedText()));
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Mark mark, Document doc) {
 		addField(doc, JHSearchField.MARK, SearchFieldType.STRING, mark.getName());
 		addField(doc, JHSearchField.MARK, get_lang(mark), stripTranscribersMarks(mark.getReferencedText()));
+        addField(doc, JHSearchField.TEXT, get_lang(mark), stripTranscribersMarks(mark.getReferencedText()));
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Numeral numeral, Document doc) {
 		SearchFieldType type = get_lang(numeral);
 
 		addField(doc, JHSearchField.NUMERAL, type, stripTranscribersMarks(numeral.getReferencedText()));
+        addField(doc, JHSearchField.TEXT, type, stripTranscribersMarks(numeral.getReferencedText()));
 		addField(doc, JHSearchField.NUMERAL, type, numeral.getNumeral());
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Underline underline, Document doc) {
 		addField(doc, JHSearchField.UNDERLINE, get_lang(underline),
-				stripTranscribersMarks(underline.getReferencedText()));
+                stripTranscribersMarks(underline.getReferencedText()));
+        addField(doc, JHSearchField.TEXT, get_lang(underline), stripTranscribersMarks(underline.getReferencedText()));
 	}
 
 	private SearchFieldType get_lang(Annotation a) {
@@ -462,6 +502,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 	private void index(BookCollection col, Book book, BookImage image, Marginalia marg, Document doc) {
 		addField(doc, JHSearchField.MARGINALIA, get_lang(marg), stripTranscribersMarks(marg.getReferencedText()));
+        addField(doc, JHSearchField.TEXT, get_lang(marg), stripTranscribersMarks(marg.getReferencedText()));
 
 		StringBuilder transcription = new StringBuilder();
 		StringBuilder emphasis = new StringBuilder();
@@ -534,6 +575,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		addField(doc, JHSearchField.MARGINALIA, marg_lang_type, stripTranscribersMarks(transcription.toString()));
 		addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
+        addField(doc, JHSearchField.TEXT, SearchFieldType.ENGLISH, marg.getTranslation());
 		addField(doc, JHSearchField.EMPHASIS, marg_lang_type, emphasis.toString());
 	}
 

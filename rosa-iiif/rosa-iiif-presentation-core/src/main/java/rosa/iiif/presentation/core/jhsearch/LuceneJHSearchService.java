@@ -104,7 +104,8 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             JHSearchField.DESCRIPTION,
             JHSearchField.TRANSCRIPTION,
             JHSearchField.ILLUSTRATION, 
-            JHSearchField.IMAGE_NAME
+            JHSearchField.TITLE,
+            JHSearchField.REPO
     };
     
     private static final JHSearchField[] AOR_FIELDS = {
@@ -124,6 +125,15 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             JHSearchField.CROSS_REFERENCE,
             JHSearchField.METHOD,
     };
+
+    private static final JHSearchField[] SHARED_FIELDS = {
+            JHSearchField.DESCRIPTION,
+            JHSearchField.TITLE,
+            JHSearchField.PEOPLE,
+            JHSearchField.PLACE,
+            JHSearchField.REPO,
+            JHSearchField.TEXT
+    };
     
     @Override
     public void handle_info_request(PresentationRequest req, OutputStream os) throws IOException {
@@ -135,7 +145,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         } else if (identifier.contains("aor")) {
             fields = AOR_FIELDS;
         } else {
-            fields = JHSearchField.values();
+            fields = SHARED_FIELDS;
         }
         
         serializer.write(fields, os);    
