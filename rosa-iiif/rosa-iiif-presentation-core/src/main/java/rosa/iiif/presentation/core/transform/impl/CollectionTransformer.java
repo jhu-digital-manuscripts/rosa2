@@ -48,6 +48,8 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 IIIF_SEARCH_PROFILE
         ));
 
+        col.setWithin(urlId("top", null, "top", PresentationRequestType.COLLECTION));
+
         return col;
     }
 
