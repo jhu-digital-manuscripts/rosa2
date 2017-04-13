@@ -61,7 +61,8 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
             canvases.add(canvasTransformer.transform(collection, book, image.getName()));
 
             // Set the starting point in the sequence to the first page of printed material
-            if (hasNotBeenSet && image.getLocation().equals(BookImageLocation.BODY_MATTER)) {
+            if (hasNotBeenSet && image.getLocation() != null &&
+                    image.getLocation().equals(BookImageLocation.BODY_MATTER)) {
                 sequence.setStartCanvas(count);
                 hasNotBeenSet = false;
             }
