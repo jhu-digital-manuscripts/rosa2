@@ -14,8 +14,10 @@ import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.TextValue;
+import rosa.iiif.presentation.model.Within;
 
 public class CollectionTransformer extends BasePresentationTransformer {
+    public static final String TOP_COLLECTION_LABEL = "All JHU IIIF Collections";
 
     @Inject
     public CollectionTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter) {
@@ -42,13 +44,22 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
         col.setManifests(refs);
 
-        col.setService(new Service(
+        col.addService(new Service(
                 JHSearchService.CONTEXT_URI,
-                col.getId() + JHSearchService.RESOURCE_PATH,
+                urlId(col.getId(), null, col.getLabel("en"), PresentationRequestType.COLLECTION)
+                        + JHSearchService.RESOURCE_PATH,
+                IIIF_SEARCH_PROFILE
+        ));
+        col.addService(new Service(
+                JHSearchService.CONTEXT_URI,
+                urlId("top", null, TOP_COLLECTION_LABEL, PresentationRequestType.COLLECTION)
+                        + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE
         ));
 
-        col.setWithin(urlId("top", null, "top", PresentationRequestType.COLLECTION));
+        col.setWithin(new Within(
+                urlId("top", null, "top", PresentationRequestType.COLLECTION)
+        ));
 
         return col;
     }
@@ -57,7 +68,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
         Collection col = new Collection();
 
         col.setId(urlId("top", null, "top", PresentationRequestType.COLLECTION));
-        col.setLabel("All JHU collections", "en");
+        col.setLabel(TOP_COLLECTION_LABEL, "en");
         col.setDescription("Top level collection bringing together all other collections in this archive.", "en");
         col.setType(SC_COLLECTION);
 
@@ -72,7 +83,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
             cols.add(ref);
         }
 
-        col.setService(new Service(
+        col.addService(new Service(
                 JHSearchService.CONTEXT_URI,
                 col.getId() + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE

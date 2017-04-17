@@ -252,7 +252,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         checkTextValue(list.getLabel());
         assertEquals("Unexpected object type found.", IIIFNames.SC_ANNOTATION_LIST, list.getType());
         assertNotNull("'within' property missing.", list.getWithin());
-        assertFalse("'within' property empty.", list.getWithin().isEmpty());
+        assertFalse("'within' property empty.", list.getWithin() == null && list.getWithin().size() == 0);
 
         for (Annotation ann : list) {
             checkAnnotation(ann);

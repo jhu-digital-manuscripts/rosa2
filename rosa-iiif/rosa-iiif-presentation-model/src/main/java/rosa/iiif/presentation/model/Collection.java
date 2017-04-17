@@ -20,6 +20,7 @@ public class Collection extends PresentationBase {
      * Create an empty Collection.
      */
     public Collection() {
+        super();
         collections = new ArrayList<>();
         manifests = new ArrayList<>();
         setType(IIIFNames.SC_COLLECTION);

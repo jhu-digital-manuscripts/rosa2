@@ -20,6 +20,7 @@ import rosa.iiif.presentation.model.Rights;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
+import rosa.iiif.presentation.model.Within;
 
 public class ManifestTransformer extends BasePresentationTransformer implements Transformer<Manifest> {
     private final SequenceTransformer sequenceTransformer;
@@ -83,22 +84,57 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
 //            manifest.setThumbnailService(manifest.getDefaultSequence().getThumbnailService());
 //        }
 
-        // Set 'within' property to point this manifest to its parent collection
-        manifest.setWithin(urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION));
-
+        /*
+         * Set 'within' property to point this manifest to its parent collections.
+         * {
+         *      "@id" : "manifest",
+                "@type: "sc:Manifest",
+                ...
+                "within": {
+                    "@id": "parent-collection",
+                    "@type": "sc:Collection",
+                    "within": {
+                        "@id": "top-collection",
+                        "@type": "sc:Collection"
+                    }
+                }
+         * }
+         */
+        Within parent = new Within(
+                urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION),
+                SC_COLLECTION,
+                collection.getLabel()
+        );
+        parent.addParentRef(new Within(
+                urlId("top", null, "top", PresentationRequestType.COLLECTION),
+                SC_COLLECTION,
+                CollectionTransformer.TOP_COLLECTION_LABEL
+        ));
+        manifest.setWithin(parent);
         // TODO ranges
 //        manifest.setRanges(rangeTransformer.topRanges(collection, book));
 
         // Add search service
-        
-        // TODO
-        manifest.setSearchService(new Service(
+        manifest.addService(new Service(
                 JHSearchService.CONTEXT_URI,
                 presRequestFormatter.format(
                         new PresentationRequest(
                                 collection.getId()+"."+book.getId(),
                                 null,
                                 PresentationRequestType.MANIFEST)) + JHSearchService.RESOURCE_PATH,
+                IIIF_SEARCH_PROFILE
+        ));
+
+        manifest.addService(new Service(
+                JHSearchService.CONTEXT_URI,
+                urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION)
+                        + JHSearchService.RESOURCE_PATH,
+                IIIF_SEARCH_PROFILE
+        ));
+        manifest.addService(new Service(
+                JHSearchService.CONTEXT_URI,
+                urlId("top", null, "top", PresentationRequestType.COLLECTION)
+                        + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE
         ));
 
