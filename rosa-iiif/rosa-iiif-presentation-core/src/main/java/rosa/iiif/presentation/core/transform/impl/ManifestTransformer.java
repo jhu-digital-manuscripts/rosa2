@@ -129,13 +129,16 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
                 JHSearchService.CONTEXT_URI,
                 urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION)
                         + JHSearchService.RESOURCE_PATH,
-                IIIF_SEARCH_PROFILE
+                IIIF_SEARCH_PROFILE,
+                collection.getLabel()
         ));
         manifest.addService(new Service(
                 JHSearchService.CONTEXT_URI,
                 urlId("top", null, "top", PresentationRequestType.COLLECTION)
                         + JHSearchService.RESOURCE_PATH,
-                IIIF_SEARCH_PROFILE
+                IIIF_SEARCH_PROFILE,
+                CollectionTransformer.TOP_COLLECTION_LABEL
+
         ));
 
         return manifest;

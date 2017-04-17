@@ -659,6 +659,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         writeIfNotNull("@context", service.getContext(), jWriter);
         writeIfNotNull("@id", service.getId(), jWriter);
         writeIfNotNull("profile", service.getProfile(), jWriter);
+        writeIfNotNull("label", service.getLabel(), jWriter);
         jWriter.endObject();
     }
 

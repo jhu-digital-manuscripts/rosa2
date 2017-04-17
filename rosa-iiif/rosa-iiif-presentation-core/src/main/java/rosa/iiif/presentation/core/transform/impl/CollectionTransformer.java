@@ -46,15 +46,17 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
         col.addService(new Service(
                 JHSearchService.CONTEXT_URI,
-                urlId(col.getId(), null, col.getLabel("en"), PresentationRequestType.COLLECTION)
+                urlId(col.getId(), null, col.getId(), PresentationRequestType.COLLECTION)
                         + JHSearchService.RESOURCE_PATH,
-                IIIF_SEARCH_PROFILE
+                IIIF_SEARCH_PROFILE,
+                col.getLabel("en")
         ));
         col.addService(new Service(
                 JHSearchService.CONTEXT_URI,
-                urlId("top", null, TOP_COLLECTION_LABEL, PresentationRequestType.COLLECTION)
+                urlId("top", null, "top", PresentationRequestType.COLLECTION)
                         + JHSearchService.RESOURCE_PATH,
-                IIIF_SEARCH_PROFILE
+                IIIF_SEARCH_PROFILE,
+                TOP_COLLECTION_LABEL
         ));
 
         col.setWithin(new Within(
