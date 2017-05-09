@@ -62,6 +62,17 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     }
 
     @Test
+    public void testRequiredResultsFields() throws Exception {
+        Query query = new Query(JHSearchField.TEXT, "Moo");
+        SearchResult result = service.search(query, new SearchOptions(0, 20, SortOrder.RELEVANCE));
+
+        assertNotNull(result);
+        assertEquals(SortOrder.RELEVANCE, result.getSortOrder());
+        assertEquals(20, result.getMaxMatches());
+        assertEquals(0, result.getOffset());
+    }
+
+    @Test
     public void testSearchSymbolSun() throws Exception {
 
         Query query = new Query(JHSearchField.SYMBOL, "Sun");

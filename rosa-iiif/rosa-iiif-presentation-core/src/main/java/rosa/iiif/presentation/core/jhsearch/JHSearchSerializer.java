@@ -92,6 +92,7 @@ public class JHSearchSerializer implements IIIFNames {
 
         writer.key("offset").value(result.getOffset());
         writer.key("total").value(result.getTotal());
+        writer.key("max_matches").value(result.getMaxMatches());
 
         writer.key("matches").array();
         for (SearchMatch match: result.getMatches()) {

@@ -162,7 +162,7 @@ public class LuceneSearchService implements SearchService {
             long total = hits.totalHits;
             
 
-            return new SearchResult(offset, total, matches, sort_order, q.toString());
+            return new SearchResult(offset, total, opts.getMatchCount(), matches, sort_order, q.toString());
         } finally {
             searcher_manager.release(searcher);
         }
