@@ -5,6 +5,7 @@ import java.util.List;
 
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
+import rosa.search.model.QueryTerm;
 
 /**
  * Grammar syntax:
@@ -22,6 +23,7 @@ import rosa.search.model.QueryOperation;
  * Term -&gt; Field ~ ":" ~ Value
  * Field -&gt; [\w_-]+
  * Value -&gt; "'" ~ .* ~ "'" [Backslash is escape character]
+ * TermList -&gt; Term*
  */
 public class QueryParser {
     /**
@@ -60,6 +62,23 @@ public class QueryParser {
         return parseQuery(new CharSequenceParserInput(s), true);
     }
 
+    public static List<QueryTerm> parseTermList(CharSequence s) throws ParseException {
+        return parseTermList(new CharSequenceParserInput(s));
+    }
+    
+    public static List<QueryTerm> parseTermList(ParserInput input) throws ParseException {
+        List<QueryTerm> result = new ArrayList<>();
+
+        ParserUtil.skipWhitespace(input);
+        
+        while (input.more()) {
+            result.add(parseTerm(input).getTerm());
+            ParserUtil.skipWhitespace(input);
+        }
+        
+        return result;
+    }
+    
     private static Query parseOperation(ParserInput input) throws ParseException {
         if (input.next() != '(') {
             throw new ParseException(input, "operation", "Operation must start with '('");
@@ -116,16 +135,6 @@ public class QueryParser {
         }
 
         String value = ParserUtil.parseString(input);
-
-        // TODO
-//        if (input.more()) {
-//            char c = input.peek();
-//            
-//            if (c != ')' && !Character.isWhitespace(c)) {
-//                throw new ParseException(input, "term",
-//                        " must succeeded by ) or whitespace");
-//            }
-//        }
 
         return new Query(field, value);
     }

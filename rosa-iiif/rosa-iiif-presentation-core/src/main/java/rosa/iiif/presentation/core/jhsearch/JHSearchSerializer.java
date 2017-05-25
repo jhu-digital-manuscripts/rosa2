@@ -24,7 +24,7 @@ public class JHSearchSerializer implements IIIFNames {
         writer.flush();
     }
     
-    public void write(JHSearchField[] fields, OutputStream os) throws IOException {
+    public void write(JHSearchField[] fields, JHSearchCategory[] categories, OutputStream os) throws IOException {
         Writer os_writer = new OutputStreamWriter(os, "UTF-8");
         JSONWriter writer = new JSONWriter(os_writer);
 
@@ -61,7 +61,18 @@ public class JHSearchSerializer implements IIIFNames {
         }
         
         writer.endArray();
+
+        writer.key("categories").array();
         
+        for (JHSearchCategory cat: categories) {
+            writer.object();
+            writer.key("name").value(cat.getFieldName());
+            writer.key("label").value(cat.getCategoryLabel());
+            writer.endObject();
+        }
+        
+        writer.endArray();
+
         
         writer.key("default-fields").array();
         for (JHSearchField sf: fields) {

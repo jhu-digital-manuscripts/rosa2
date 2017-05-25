@@ -30,7 +30,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
     }
 
     @Override
-    public void handle_request(PresentationRequest req, String query, int offset, int max, String sort_order, OutputStream os)
+    public void handle_request(PresentationRequest req, String query, int offset, int max, String sort_order, String categories, OutputStream os)
             throws IOException {
 
         SearchOptions opts = new SearchOptions();
@@ -45,16 +45,20 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         	}
         }
         
-        handle_request(req, query, opts, os);
-    }
-
-    private void handle_request(PresentationRequest req, String query, SearchOptions opts, OutputStream os) throws IOException {
         Query search_query;
         
         try {
             search_query = QueryParser.parseQuery(query);
         } catch (ParseException e) {
-        	throw new IllegalArgumentException("Query error: " + e.getMessage()); 
+            throw new IllegalArgumentException("Query error: " + e.getMessage()); 
+        }
+        
+        if (categories != null) {
+            try {
+                opts.setCategories(QueryParser.parseTermList(categories));
+            } catch (ParseException e) {
+                throw new IllegalArgumentException("Category error: " + e.getMessage()); 
+            }
         }
         
         Query restrict_query = null;
@@ -148,7 +152,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             fields = SHARED_FIELDS;
         }
         
-        serializer.write(fields, os);    
+        serializer.write(fields, JHSearchCategory.values(), os);    
     }
 
 	@Override

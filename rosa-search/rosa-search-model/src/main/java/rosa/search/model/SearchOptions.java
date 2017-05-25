@@ -1,6 +1,7 @@
 package rosa.search.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * The search options are directions to the search service about how a query
@@ -19,23 +20,27 @@ public class SearchOptions implements Serializable {
     private long offset;
     private int match_count;
     private SortOrder sort_order;
+    private List<QueryTerm> categories;
 
     public SearchOptions() {
         this.offset = 0;
         this.match_count = DEFAULT_MATCH_COUNT;
         this.sort_order = SortOrder.RELEVANCE;
+        this.categories = null;
     }
 
     public SearchOptions(long offset, int match_count) {
         this.offset = offset;
         this.match_count = match_count;
         this.sort_order = SortOrder.RELEVANCE;
+        this.categories = null;
     }
     
     public SearchOptions(long offset, int match_count, SortOrder sort_order) {
         this.offset = offset;
         this.match_count = match_count;
         this.sort_order = sort_order;
+        this.categories = null;
     }
 
     public SearchOptions(SearchOptions opts) {
@@ -75,6 +80,14 @@ public class SearchOptions implements Serializable {
     public void setSortOrder(SortOrder sort_order) {
     	this.sort_order = sort_order;
     }
+    
+    public List<QueryTerm> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<QueryTerm> categories) {
+        this.categories = categories;
+    }    
 
     @Override
     public String toString() {
@@ -88,6 +101,7 @@ public class SearchOptions implements Serializable {
         int result = 1;
         result = prime * result + match_count;
         result = prime * result + + ((sort_order == null) ? 0 : sort_order.hashCode());
+        result = prime * result + + ((categories == null) ? 0 : categories.hashCode());        
         result = prime * result + (int) (offset ^ (offset >>> 32));
         return result;
     }
@@ -105,6 +119,8 @@ public class SearchOptions implements Serializable {
             return false;
         if (sort_order != other.sort_order)
             return false;        
+        if (categories != other.categories)
+            return false;                
         if (offset != other.offset)
             return false;
         return true;

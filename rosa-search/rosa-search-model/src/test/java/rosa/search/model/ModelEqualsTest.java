@@ -47,4 +47,18 @@ public class ModelEqualsTest {
                 .suppress(Warning.NONFINAL_FIELDS, Warning.STRICT_INHERITANCE)
                 .verify();
     }
+    
+    @Test
+    public void testSearchCategoryMatch() {
+        EqualsVerifier.forClass(SearchCategoryMatch.class).allFieldsShouldBeUsed()
+                .suppress(Warning.NONFINAL_FIELDS, Warning.STRICT_INHERITANCE)
+                .verify();
+    }
+    
+    @Test
+    public void testCategoryValueCount() {
+        EqualsVerifier.forClass(CategoryValueCount.class).allFieldsShouldBeUsed()
+                .suppress(Warning.NONFINAL_FIELDS, Warning.STRICT_INHERITANCE)
+                .verify();
+    }
 }

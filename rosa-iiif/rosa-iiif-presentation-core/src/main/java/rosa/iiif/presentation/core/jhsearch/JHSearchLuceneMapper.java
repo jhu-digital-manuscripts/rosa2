@@ -66,6 +66,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	public JHSearchLuceneMapper(IIIFPresentationRequestFormatter formatter) {
 		super(JHSearchField.values());
 		this.formatter = formatter;
+		
+		facets_config.setMultiValued(JHSearchCategory.AUTHOR.getFieldName(), true);
 	}
 
 	@Override
@@ -85,6 +87,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	 * @throws IOException if search service is not available
 	 */
 	public List<Document> createDocuments(BookCollection col, Book book) throws IOException {
+	    // Make sure to filter all documents to handle facets
+	    
 		List<Document> result = new ArrayList<>();
 
 		// Index information associated with canvases
@@ -103,7 +107,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 				String trans = transcriptionMap.get(getStandardPage(image));
 
 				index(col, book, image, doc, trans);
-				result.add(doc);
+				
+				result.add(facets_config.build(doc));
 			}
 		}
 
@@ -111,8 +116,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		Document doc = create_manifest_document(col, book);
 		index(col, book, doc);
-		result.add(doc);
-
+		result.add(facets_config.build(doc));
+		
 		return result;
 	}
 
@@ -171,6 +176,40 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		if (desc != null) {
 			index(desc, doc);
 		}
+	
+		index_book_facets(book, doc);
+	}
+	
+	private void index_book_facets(Book book, Document doc) {
+        String[] facet_author = null;
+
+        // Really need a better way of handling these metadata...
+        if (book.getMultilangMetadata() != null) {
+            BiblioData en = book.getMultilangMetadata().getBiblioDataMap().get("en");
+
+            if (en != null) {
+                facet_author = en.getAuthors();
+            }
+        }
+
+        BookMetadata md = book.getBookMetadata("en");
+        String facet_loc = md.getCurrentLocation();
+        String facet_repo = md.getRepository();
+        String facet_date = md.getDate();
+        int numPages = md.getNumberOfPages();
+        String facet_common_name = md.getCommonName();
+
+        addFacet(doc, JHSearchCategory.COMMON_NAME, facet_common_name);
+        addFacet(doc, JHSearchCategory.NUM_PAGES, "" + numPages);
+        addFacet(doc, JHSearchCategory.LOCATION, facet_loc);
+        addFacet(doc, JHSearchCategory.REPOSITORY, facet_repo);
+        addFacet(doc, JHSearchCategory.DATE, facet_date);
+        
+        if (facet_author != null) {
+            for (String s : facet_author) {
+                addFacet(doc, JHSearchCategory.AUTHOR, s);
+            }
+        }
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Document doc, String trans) {

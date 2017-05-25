@@ -16,11 +16,16 @@
 package rosa.search.core;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Test;
 
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
+import rosa.search.model.QueryTerm;
 
 public class QueryParserTest {
     QueryParser parser;
@@ -117,5 +122,30 @@ public class QueryParserTest {
     @Test(expected = ParseException.class)
     public void testInputAfterOp() throws ParseException {
         QueryParser.parseQuery("(cow:'mammal' | title:'moo') blah:'blah'");
+    }
+    
+    @Test
+    public void testEmptyTermList() throws ParseException {
+        assertTrue(QueryParser.parseTermList("").isEmpty());
+        assertTrue(QueryParser.parseTermList("  ").isEmpty());
+    }
+    
+    @Test
+    public void testTermListSizeOne() throws ParseException {
+        List<QueryTerm> expected = new ArrayList<QueryTerm>();
+        expected.add(new QueryTerm("field", "value"));
+        
+        assertEquals(expected, QueryParser.parseTermList("field:'value'"));
+        assertEquals(expected, QueryParser.parseTermList("   field:'value'  "));
+    }
+    
+    @Test
+    public void testTermListSizeTwo() throws ParseException {
+        List<QueryTerm> expected = new ArrayList<QueryTerm>();
+        expected.add(new QueryTerm("fielda", "value1"));
+        expected.add(new QueryTerm("fieldb", "value2"));
+        
+        assertEquals(expected, QueryParser.parseTermList("fielda:'value1'fieldb:'value2'"));
+        assertEquals(expected, QueryParser.parseTermList("  fielda:'value1'   fieldb:'value2'  "));        
     }
 }

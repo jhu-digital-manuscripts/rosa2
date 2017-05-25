@@ -163,6 +163,7 @@ public class IIIFPresentationServlet extends HttpServlet {
             int offset = get_int_param(req, JHSearchService.OFFSET_PARAM, 0);
             int max = get_int_param(req, JHSearchService.MAX_MATCHES_PARAM, -1);
             String sort_order = req.getParameter(JHSearchService.SORT_ORDER_PARAM);
+            String categories = req.getParameter(JHSearchService.CATEGORIES);
 
             // Must follow recommended URI pattern
 
@@ -172,7 +173,7 @@ public class IIIFPresentationServlet extends HttpServlet {
                 send_error(resp, HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + req.getRequestURL());
             } else {
                 try {
-                    searchService.handle_request(presreq, query, offset, max, sort_order, os);
+                    searchService.handle_request(presreq, query, offset, max, sort_order, categories, os);
                 } catch (IllegalArgumentException e) {
                     send_error(resp, HttpURLConnection.HTTP_BAD_REQUEST, e.getMessage());
                 }

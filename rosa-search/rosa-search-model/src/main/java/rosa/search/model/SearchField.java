@@ -5,8 +5,14 @@ package rosa.search.model;
  * using any of these types.
  */
 public interface SearchField {
+    /**
+     * @return The unique internal name of the field
+     */
     String getFieldName();
 
+    /**
+     * @return The possible type of values which the field can take.
+     */
     SearchFieldType[] getFieldTypes();
 
     /**

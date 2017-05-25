@@ -20,6 +20,8 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field.Store;
 import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
+import org.apache.lucene.facet.FacetsConfig;
+import org.apache.lucene.facet.sortedset.SortedSetDocValuesFacetField;
 import org.apache.lucene.index.IndexableField;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.simple.SimpleQueryParser;
@@ -33,6 +35,7 @@ import rosa.search.core.lucene.LatinAnalyzer;
 import rosa.search.core.lucene.RosaOldFrenchAnalyzer;
 import rosa.search.model.QueryOperation;
 import rosa.search.model.QueryTerm;
+import rosa.search.model.SearchCategory;
 import rosa.search.model.SearchField;
 import rosa.search.model.SearchFieldType;
 
@@ -42,6 +45,7 @@ import rosa.search.model.SearchFieldType;
  */
 public abstract class BaseLuceneMapper implements LuceneMapper {
     protected final Map<SearchFieldType, Analyzer> analyzers;
+    protected FacetsConfig facets_config;
     
     private final Analyzer default_analyzer;
     private final Analyzer main_analyzer;
@@ -66,7 +70,8 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         
         this.default_analyzer = new StandardAnalyzer();
         this.search_field_map = new HashMap<>();
-
+        this.facets_config = new FacetsConfig();
+        
         Map<String, Analyzer> analyzer_map = new HashMap<>();
 
         for (SearchField sf : fields) {
@@ -101,6 +106,10 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         return main_analyzer;
     }
 
+    public FacetsConfig getFacetsConfig() {
+        return facets_config;
+    }
+    
     public Query createLuceneQuery(rosa.search.model.Query query) {
         if (query.getOperation() == null && query.getTerm() == null) {
             throw new IllegalArgumentException("Query must have operation or term");
@@ -191,6 +200,21 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
 
         doc.add(create_field(getLuceneField(sf, type), type, value));
     }
+    
+    protected void addFacet(Document doc, SearchCategory category, String value) {
+        if (value == null) {
+            return;
+        }
+        
+        value = value.trim();
+        
+        if (value.isEmpty()) {
+            return;
+        }
+        
+        doc.add(new SortedSetDocValuesFacetField(category.getFieldName(), value));
+    }
+
 
     // Add field for each type. Use sparingly.
     protected void addField(Document doc, SearchField sf, String value) {

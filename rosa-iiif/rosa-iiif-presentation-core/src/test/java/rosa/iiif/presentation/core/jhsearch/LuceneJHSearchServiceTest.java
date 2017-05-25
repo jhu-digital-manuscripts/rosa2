@@ -12,6 +12,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import java.io.ByteArrayOutputStream;
+import java.util.Arrays;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -25,10 +26,13 @@ import rosa.archive.core.Store;
 import rosa.archive.core.StoreImpl;
 import rosa.archive.model.BookCollection;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.search.model.Query;
 import rosa.search.model.QueryOperation;
+import rosa.search.model.QueryTerm;
+import rosa.search.model.SearchCategory;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
 import rosa.search.model.SearchResult;
@@ -305,6 +309,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         String result_json = os.toString("UTF-8");
 
         assertTrue(result_json.contains("\"fields\":"));
+        assertTrue(result_json.contains("\"categories\":"));
         assertTrue(result_json.contains("\"default-fields\":"));
     }
 
@@ -428,5 +433,135 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
             ));
         }
 
+    }
+    
+    
+    /**
+     * Ensure that a specific location can be browsed. Only books in that location are 
+     * returned and that correct category information is returned for that book.
+     * 
+     * @throws Exception
+     */
+    @Test
+    public void testBrowseSpecificLocation() throws Exception {
+        Query query = new Query(JHSearchField.OBJECT_TYPE, IIIFNames.SC_MANIFEST);
+        
+        SearchOptions opts = new SearchOptions();
+        opts.setCategories(Arrays.asList(new QueryTerm(JHSearchCategory.LOCATION.getFieldName(),
+                "Los Angeles")));
+        
+        SearchResult result = service.search(query, opts);
+
+        assertNotNull("Search result was NULL", result);
+        assertEquals("Unexpected number of results found.", 1, result.getTotal());
+        
+        
+        assertEquals(1, result.getMatches().length);
+        assertEquals("http://serenity.dkc.jhu.edu/pres/valid.LudwigXV7/manifest",
+                result.getMatches()[0].getId());
+        
+        assertNotNull(result.getCategories());
+        
+        // Author category not present because Rose ms do not yet have author metadata
+        assertEquals(5, result.getCategories().size());
+        
+        result.getCategories().forEach(cat -> {
+            assertEquals(1, cat.getValues().length);
+            
+            boolean foundfield = false;
+            for (SearchCategory sc: JHSearchCategory.values()) {
+                if (sc.getFieldName().equals(cat.getFieldName())) {
+                    foundfield = true;
+                    break;
+                }
+            }
+            
+            assertTrue(foundfield);
+            assertNotNull(cat.getValues()[0].getValue());
+            assertEquals(1, cat.getValues()[0].getCount());
+        });
+    }
+    
+    /**
+     * Ensure that all the books with a location category value can be browsed.
+     * 
+     * @throws Exception
+     */
+    @Test
+    public void testBrowseAnyLocation() throws Exception {
+        Query query = new Query(JHSearchField.OBJECT_TYPE, IIIFNames.SC_MANIFEST);
+        
+        SearchOptions opts = new SearchOptions();
+        opts.setCategories(Arrays.asList(new QueryTerm(JHSearchCategory.LOCATION.getFieldName(), "")));
+        
+        SearchResult result = service.search(query, opts);
+
+        assertNotNull("Search result was NULL", result);
+        assertEquals("Unexpected number of results found.", 2, result.getTotal());
+        assertEquals(2, result.getMatches().length);        
+        assertNotNull(result.getCategories());
+        
+        assertEquals(6, result.getCategories().size());
+        
+        result.getCategories().forEach(cat -> {
+            assertEquals(2, cat.getValues().length);
+            
+            boolean foundfield = false;
+            for (SearchCategory sc: JHSearchCategory.values()) {
+                if (sc.getFieldName().equals(cat.getFieldName())) {
+                    foundfield = true;
+                    break;
+                }
+            }
+            
+            assertTrue(foundfield);
+            assertNotNull(cat.getValues()[0].getValue());
+            assertEquals(1, cat.getValues()[0].getCount());
+        });
+    }
+    
+    /**
+     * Ensure that all the books with an author category value can be browsed.
+     * 
+     * @throws Exception
+     */
+    @Test
+    public void testBrowseAnyAuthor() throws Exception {
+        Query query = new Query(JHSearchField.OBJECT_TYPE, IIIFNames.SC_MANIFEST);
+        
+        SearchOptions opts = new SearchOptions();
+        opts.setCategories(Arrays.asList(new QueryTerm(JHSearchCategory.AUTHOR.getFieldName(), "")));
+        
+        SearchResult result = service.search(query, opts);
+
+        assertNotNull("Search result was NULL", result);
+        assertEquals("Unexpected number of results found.", 1, result.getTotal());
+        assertEquals(1, result.getMatches().length);
+        assertEquals("http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest",
+                result.getMatches()[0].getId());
+        assertNotNull(result.getCategories());
+        
+        assertEquals(6, result.getCategories().size());
+        
+        result.getCategories().forEach(cat -> {
+            // Folgers Ha2 has two author facet values
+            if (cat.getFieldName().equals(JHSearchCategory.AUTHOR.getFieldName())) {
+                assertEquals(2, cat.getValues().length);
+            } else {
+                assertEquals(1, cat.getValues().length);
+            }
+            
+            boolean foundfield = false;
+            for (SearchCategory sc: JHSearchCategory.values()) {
+                if (sc.getFieldName().equals(cat.getFieldName())) {
+                    foundfield = true;
+                    break;
+                }
+            }
+            
+            assertTrue(foundfield);
+            assertNotNull(cat.getValues()[0].getValue());
+            assertEquals(1, cat.getValues()[0].getCount());
+        });
     }
 }
