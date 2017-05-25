@@ -296,6 +296,26 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         assertTrue(result_json.contains("\"context\":"));
         assertTrue(result_json.contains("\"manifest\":"));
         assertTrue(result_json.contains("\"object\":"));
+        assertFalse(result_json.contains("\"categories\":"));
+    }
+    
+    // Searches within a book for a manifest, so only one result.
+    @Test
+    public void testHandleBrowseRepository() throws Exception {
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        PresentationRequest req = new PresentationRequest("valid.FolgersHa2", null, PresentationRequestType.MANIFEST);
+
+        String query = "object_type:'sc:Manifest'";
+
+        service.handle_request(req, query, 0, 20, "index", "facet_repository:''", os);
+
+        String result_json = os.toString("UTF-8");
+
+        assertTrue(result_json.contains("\"total\":1"));
+        assertTrue(result_json.contains("\"context\":"));
+        assertTrue(result_json.contains("\"manifest\":"));
+        assertTrue(result_json.contains("\"object\":"));
+        assertTrue(result_json.contains("\"categories\":"));
     }
     
     

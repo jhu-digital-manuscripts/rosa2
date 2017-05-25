@@ -10,6 +10,8 @@ import org.json.JSONException;
 import org.json.JSONWriter;
 
 import rosa.iiif.presentation.model.IIIFNames;
+import rosa.search.model.CategoryValueCount;
+import rosa.search.model.SearchCategoryMatch;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchResult;
 
@@ -110,7 +112,32 @@ public class JHSearchSerializer implements IIIFNames {
             writeJsonld(match, writer);
         }
         writer.endArray();
+        
+        if (result.getCategories() != null && !result.getCategories().isEmpty()) {
+            writer.key("categories").array();
+            for (SearchCategoryMatch cat: result.getCategories()){
+                writeJsonld(cat, writer);
+            }
+            writer.endArray();
+        }
 
+        writer.endObject();
+    }
+
+    private void writeJsonld(SearchCategoryMatch cat, JSONWriter writer) {
+        writer.object();
+        
+        writer.key("name").value(cat.getFieldName());
+        writer.key("values").array();
+
+        for (CategoryValueCount val : cat.getValues()) {
+            writer.object();
+            writer.key("label").value(val.getValue());
+            writer.key("count").value(val.getCount());
+            writer.endObject();
+        }
+        
+        writer.endArray();
         writer.endObject();
     }
 
