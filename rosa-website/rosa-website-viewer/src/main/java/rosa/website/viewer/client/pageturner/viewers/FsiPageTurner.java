@@ -420,7 +420,6 @@ public class FsiPageTurner extends Composite implements PageTurner, HasClickHand
      * @param strImagePath ID of clicked image
      * @param nImageIndex index of clicked image in image list
      */
-    @SuppressWarnings("unused")
     private void onThumbnailClick(String strImagePath, int nImageIndex) {
         debug("[PageTurner#onThumbnailClick] " + nImageIndex + "\n" + strImagePath);
         Opening newOpening = model.getOpening(strImagePath);

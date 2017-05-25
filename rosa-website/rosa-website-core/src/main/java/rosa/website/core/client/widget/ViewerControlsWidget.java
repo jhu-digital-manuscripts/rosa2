@@ -22,7 +22,9 @@ public class ViewerControlsWidget extends Composite {
     public ViewerControlsWidget() {
         FlowPanel root = new FlowPanel();
 
-        showExtraListBox = new ListBox(false);
+        showExtraListBox = new ListBox();
+        showExtraListBox.setMultipleSelect(false);
+
         goToTextBox = new TextBox();
 
         showExtraListBox.setVisibleItemCount(1);

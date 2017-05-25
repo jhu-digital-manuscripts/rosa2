@@ -5,7 +5,6 @@ import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
 import java.io.PrintStream;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
