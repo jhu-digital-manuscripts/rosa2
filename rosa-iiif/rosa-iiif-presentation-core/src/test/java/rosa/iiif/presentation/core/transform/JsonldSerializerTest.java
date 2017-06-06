@@ -29,6 +29,7 @@ import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
+import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
@@ -198,7 +199,7 @@ public class JsonldSerializerTest {
         obj.setService(null);
         obj.setRelatedUri("URL_TO_RELATED_RESOURCE");
         obj.setRelatedFormat("text/plain");
-        obj.setWithin("ParentId");
+        obj.setWithin(new Within("ParentId"));
         obj.setMetadata(createMetadata());
 
         Rights preziRights = new Rights();
