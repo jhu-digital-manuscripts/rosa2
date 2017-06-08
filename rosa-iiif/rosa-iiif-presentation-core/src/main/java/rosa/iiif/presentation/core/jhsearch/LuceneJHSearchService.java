@@ -93,7 +93,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         url.append('&').append(OFFSET_PARAM).append('=').append(opts.getOffset());
 
         if (categories != null && !categories.equals("")) {
-            url.append('&').append(CATEGORIES).append('=').append(categories);
+            url.append('&').append(CATEGORIES).append('=').append(URLEncoder.encode(categories, "UTF-8"));
         }
         
         serializer.write(url.toString(), query, result, os);
