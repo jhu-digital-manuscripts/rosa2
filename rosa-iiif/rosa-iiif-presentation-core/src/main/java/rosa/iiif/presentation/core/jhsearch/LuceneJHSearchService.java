@@ -81,16 +81,22 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         SearchResult result = search(search_query, opts);
 
         // TODO Put URL generation elsewhere
-        
-        String url = req_url + RESOURCE_PATH + "?" + JHSearchService.QUERY_PARAM + "=" + URLEncoder.encode(query, "UTF-8") + "&" + JHSearchService.MAX_MATCHES_PARAM + "=" + opts.getMatchCount();
-        
+        StringBuilder url = new StringBuilder(req_url);
+        url.append(RESOURCE_PATH).append('?')
+                .append(QUERY_PARAM).append('=').append(URLEncoder.encode(query, "UTF-8"))
+                .append('&').append(MAX_MATCHES_PARAM).append('=').append(opts.getMatchCount());
+
         if (opts.getSortOrder() != null) {
-            url += "&" + JHSearchService.SORT_ORDER_PARAM + "=" + URLEncoder.encode(opts.getSortOrder().name().toLowerCase(), "UTF-8");
+            url.append('&').append(SORT_ORDER_PARAM).append('=').append(URLEncoder.encode(opts.getSortOrder().name().toLowerCase(), "UTF-8"));
+        }
+
+        url.append('&').append(OFFSET_PARAM).append('=').append(opts.getOffset());
+
+        if (categories != null && !categories.equals("")) {
+            url.append('&').append(CATEGORIES).append('=').append(categories);
         }
         
-        url += "&" + JHSearchService.OFFSET_PARAM + "=" + opts.getOffset();
-        
-        serializer.write(url, query, result, os);
+        serializer.write(url.toString(), query, result, os);
     }
 
 
