@@ -341,6 +341,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             }
 
             Element annotation = (Element) child;
+            Location loc = getLocation(annotation.getAttribute(ATTR_PLACE));
             switch (annotation.getTagName()) {
                 case TAG_MARGINALIA:
                     Marginalia marg = buildMarginalia(annotation, page.getPage());
@@ -364,9 +365,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_LANGUAGE),
-                            Location.valueOf(
-                                    annotation.getAttribute(ATTR_PLACE).toUpperCase()
-                            )
+                            loc
                     ));
                     break;
                 case TAG_MARK:
@@ -376,9 +375,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_LANGUAGE),
-                            Location.valueOf(
-                                    annotation.getAttribute(ATTR_PLACE).toUpperCase()
-                            )
+                            loc
                     ));
                     break;
                 case TAG_NUMERAL:
@@ -387,10 +384,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getTextContent(),
                             null,
-                            Location.valueOf(
-                                    annotation.getAttribute(ATTR_PLACE).toUpperCase()
-                            )
-
+                            loc
                     ));
                     break;
                 case TAG_ERRATA:
@@ -405,7 +399,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     page.getDrawings().add(new Drawing(
                             Annotations.annotationId(page.getPage(), TAG_DRAWING, page.getDrawings().size()),
                             annotation.getAttribute(ATTR_TEXT),
-                            Location.valueOf(annotation.getAttribute(ATTR_PLACE).toUpperCase()),
+                            loc,
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_LANGUAGE)
@@ -415,6 +409,18 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
             }
         }
+    }
+
+    private Location getLocation(String loc) {
+        if (loc == null || loc.length() == 0) {
+            return null;
+        }
+        for (Location l : Location.values()) {
+            if (l.name().toLowerCase().equals(loc.toLowerCase())) {
+                return l;
+            }
+        }
+        return null;
     }
 
     private Marginalia buildMarginalia(Element annotation, String page) {

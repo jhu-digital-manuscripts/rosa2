@@ -237,14 +237,14 @@ public class AORTranscriptionChecker {
                     }
 
                 } catch (IOException e) {
-                    report.println("Failed to read file. [" + xmlPath + "]\n");
-                    e.printStackTrace(report);
+                    report.println("Failed to read file. [" + xmlPath + "]");
+                    report.println("\t> " + e.getMessage());
                 }
             }
 
         } catch (IOException e) {
-            report.println("Failed to find transcriptions in path. [" + bookPath + "]\n");
-            e.printStackTrace(report);
+            report.println("Failed to find transcriptions in path. [" + bookPath + "]");
+            report.println("\t> " + e.getMessage());
         }
     }
 
