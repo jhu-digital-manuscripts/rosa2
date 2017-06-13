@@ -243,6 +243,9 @@ public class PresentationTransformerTest extends BaseArchiveTest {
                 checkReference(ref);
             }
         }
+
+        assertTrue(canvas.getMetadata().size() > 0);
+        assertTrue(canvas.getMetadata().containsKey("Image ID"));
     }
 
     private void checkAnnotationList(AnnotationList list) {

@@ -17,6 +17,8 @@ public abstract class BasePresentationTransformer implements IIIFNames {
     protected static final String ILLUSTRATION_RANGE_TYPE = "illus";
     protected static final String IMAGE_RANGE_TYPE = "image";
     protected static final String TEXT_RANGE_TYPE = "text";
+    protected static final String TRANSCRIPTION_ID_LABEL = "Transcription ID";
+    protected static final String IMAGE_ID_LABEL = "Image ID";
 
     protected IIIFPresentationRequestFormatter presRequestFormatter;
 

@@ -1,6 +1,8 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
@@ -9,10 +11,12 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
+import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.Canvas;
+import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
@@ -108,7 +112,21 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
             canvas.setThumbnailService(defaultImage.getDefaultSource().getService());
         }
 
+        canvas.setMetadata(canvasMetadata(book, image));
+
         return canvas;
+    }
+
+    private Map<String, HtmlValue> canvasMetadata(Book book, BookImage image) {
+        Map<String, HtmlValue> map = new HashMap<>();
+
+        map.put(IMAGE_ID_LABEL, new HtmlValue(image.getId()));
+        AnnotatedPage a = book.getAnnotationPage(image.getId());
+        if (a != null) {
+            map.put(TRANSCRIPTION_ID_LABEL, new HtmlValue(a.getId()));
+        }
+
+        return map;
     }
 
     /**
