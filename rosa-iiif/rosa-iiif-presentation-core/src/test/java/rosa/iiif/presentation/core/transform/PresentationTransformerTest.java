@@ -15,6 +15,7 @@ import java.util.Set;
 import org.junit.Before;
 import org.junit.Test;
 
+import rosa.archive.core.ArchiveConstants;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
@@ -244,8 +245,12 @@ public class PresentationTransformerTest extends BaseArchiveTest {
             }
         }
 
-        assertTrue(canvas.getMetadata().size() > 0);
+        assertEquals(2, canvas.getMetadata().size());
         assertTrue(canvas.getMetadata().containsKey("Image ID"));
+        assertTrue(canvas.getMetadata().containsKey("Transcription ID"));
+        System.out.println(canvas.getMetadata().get("Transcription ID").getValue());
+        String[] parts = canvas.getMetadata().get("Transcription ID").getValue().split("\\.");
+        assertEquals(ArchiveConstants.AOR_ANNOTATION, "." + parts[1]);
     }
 
     private void checkAnnotationList(AnnotationList list) {

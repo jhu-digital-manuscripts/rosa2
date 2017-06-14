@@ -7,6 +7,7 @@ import java.util.Map;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
+import rosa.archive.core.ArchiveConstants;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -124,6 +125,11 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         AnnotatedPage a = book.getAnnotationPage(image.getId());
         if (a != null) {
             map.put(TRANSCRIPTION_ID_LABEL, new HtmlValue(a.getId()));
+        } else {
+            String id = image.getId();
+            id = id.substring(0, id.indexOf('.')) + ArchiveConstants.AOR_ANNOTATION
+                    + id.substring(id.indexOf('.'), id.lastIndexOf('.')) + ArchiveConstants.XML_EXT;
+            map.put(TRANSCRIPTION_ID_LABEL, new HtmlValue(id));
         }
 
         return map;
