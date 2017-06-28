@@ -20,6 +20,7 @@ import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationBase;
 import rosa.iiif.presentation.model.Reference;
@@ -193,7 +194,7 @@ public class JsonldSerializerTest {
         obj.setViewingHint(ViewingHint.PAGED);
         obj.setLabel("Label", "en");
         obj.setDescription("This is a description. It can have minimal HTML markup.", "en");
-        obj.setThumbnailUrl("THUMBNAIL_URL");
+        obj.addThumbnail(new Image("THUMBNAIL_URL"));
         obj.setThumbnailService(createIiifService());
         obj.setSeeAlso("Do not see also.");
         obj.setService(null);

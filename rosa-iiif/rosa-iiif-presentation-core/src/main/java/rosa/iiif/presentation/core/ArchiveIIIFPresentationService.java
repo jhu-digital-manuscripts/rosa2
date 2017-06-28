@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-import rosa.archive.core.Store;
+import rosa.archive.core.SimpleStore;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
@@ -31,7 +31,7 @@ import rosa.iiif.presentation.model.Sequence;
  * To improve performance some objects are cached in memory.
  */
 public class ArchiveIIIFPresentationService implements IIIFPresentationService {
-    private final Store store;
+    private final SimpleStore store;
     private final PresentationSerializer serializer;
     private final PresentationTransformer transformer;
     private final ConcurrentHashMap<String, Object> cache;
@@ -44,7 +44,7 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
      * @param transformer transformer to transform archive data to IIIF presentation data
      * @param max_cache_size max number of objects to cache at a time
      */
-    public ArchiveIIIFPresentationService(Store store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer, int max_cache_size) {
+    public ArchiveIIIFPresentationService(SimpleStore store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer, int max_cache_size) {
         this.store = store;
         this.serializer = jsonld_serializer;
         this.transformer = transformer;
@@ -206,33 +206,13 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         
         cache.putIfAbsent(cache_key(id, value.getClass()), value);
     }
-    
+
     private BookCollection load_book_collection(String col_id) throws IOException {
-        BookCollection result = lookupCache(col_id, BookCollection.class);
-        
-        if (result == null) {
-            result = store.loadBookCollection(col_id, null);
-            updateCache(col_id, result);
-        }
-        
-        return result;
+        return store.loadBookCollection(col_id);
     }
     
     private Book load_book(String col_id, String book_id) throws IOException {
-        Book result = lookupCache(book_id, Book.class);
-        
-        if (result == null) {
-            BookCollection col = load_book_collection(col_id);
-            
-            if (col == null) {
-                return null;
-            }
-            
-            result = store.loadBook(col, book_id, null);
-            updateCache(book_id, result);
-        }
-        
-        return result;
+        return store.loadBook(col_id, book_id);
     }
     
     private BookCollection get_collection_from_id(String id) throws IOException {
@@ -267,24 +247,31 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
     }
 
     private boolean handle_top_collection(OutputStream os) throws IOException {
-        List<BookCollection> collections = new ArrayList<>();
-        for (String name : store.listBookCollections()) {
-            // Hack for current archive in rosetest under /mnt
-            if (name.equals("cdrom") || name.equals("biblehistoriale")) {
-                continue;
+        Collection result = lookupCache("top", Collection.class);
+
+        if (result == null) {
+            List<BookCollection> collections = new ArrayList<>();
+
+            for (String name : store.listCollections()) {
+                // Hack for current archive in rosetest under /mnt
+                if (name.equals("cdrom") || name.equals("biblehistoriale")) {
+                    continue;
+                }
+
+                BookCollection col = load_book_collection(name);
+                if (col != null) {
+                    collections.add(col);
+                }
             }
-            BookCollection col = store.loadBookCollection(name, null);
-            if (col != null) {
-                collections.add(col);
+
+            if (collections.isEmpty()) {
+                return false;
             }
+
+            result = transformer.topCollection(collections);
         }
 
-        if (collections.isEmpty()) {
-            return false;
-        }
-
-        serializer.write(transformer.topCollection(collections), os);
-
+        serializer.write(result, os);
         return true;
     }
 

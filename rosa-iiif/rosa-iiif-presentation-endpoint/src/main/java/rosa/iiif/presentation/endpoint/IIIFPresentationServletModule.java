@@ -18,6 +18,8 @@ import com.google.inject.servlet.ServletModule;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
+import rosa.archive.core.SimpleCachingStore;
+import rosa.archive.core.SimpleStore;
 import rosa.archive.core.Store;
 import rosa.archive.core.StoreImpl;
 import rosa.archive.core.check.BookChecker;
@@ -105,6 +107,11 @@ public class IIIFPresentationServletModule extends ServletModule {
     }
 
     @Provides
+    SimpleStore provideSimpleStore(Store store) {
+        return new SimpleCachingStore(store, 1000);
+    }
+
+    @Provides
     @Named("fsi.share.map")
     Map<String, String> provideImageAlises() {
         Map<String, String> result = new HashMap<>();
@@ -119,7 +126,7 @@ public class IIIFPresentationServletModule extends ServletModule {
     }
 
     @Provides
-    IIIFPresentationService providesIIIFPresentationService(Store store, PresentationSerializer jsonld_serializer,
+    IIIFPresentationService providesIIIFPresentationService(SimpleStore store, PresentationSerializer jsonld_serializer,
                                     PresentationTransformer transformer) {
         return new ArchiveIIIFPresentationService(store, jsonld_serializer, transformer, 1000);
     }

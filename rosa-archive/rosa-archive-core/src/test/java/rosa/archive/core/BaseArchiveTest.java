@@ -50,6 +50,7 @@ public abstract class BaseArchiveTest {
     protected ByteStreamGroup base;
     protected Path basePath;
     protected StoreImpl store;
+    protected SimpleStore simpleStore;
 
     @Before
     public void setupArchiveStore() throws Exception {
@@ -60,6 +61,7 @@ public abstract class BaseArchiveTest {
         basePath = tmp.resolve("archive");
         base = new FSByteStreamGroup(basePath);
         store = new StoreImpl(serializers, bookChecker, collectionChecker, base);
+        simpleStore = new SimpleCachingStore(store, 1000);
     }
 
     protected BookCollection loadCollection(String name) throws IOException {

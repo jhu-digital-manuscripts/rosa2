@@ -64,7 +64,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         ImageIdMapper idMapper = new JhuFSIImageIdMapper(idMap);
 
         CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
-        CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter);
+        CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter, simpleStore, imageReqFormatter, idMapper);
         SequenceTransformer sequenceTransformer = new SequenceTransformer(presentationReqFormatter, canvasTransformer);
         AnnotationTransformer annotationTransformer = new AnnotationTransformer(presentationReqFormatter, new ArchiveNameParser());
 

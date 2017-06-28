@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;

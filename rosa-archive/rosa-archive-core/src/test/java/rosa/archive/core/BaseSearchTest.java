@@ -62,6 +62,7 @@ public abstract class BaseSearchTest {
     protected static ByteStreamGroup base;
     protected static Path basePath;
     protected static StoreImpl store;
+    protected static SimpleStore simpleStore;
 
     @BeforeClass
     public static void setupArchiveStore() throws Exception {
@@ -97,6 +98,7 @@ public abstract class BaseSearchTest {
         BookCollectionChecker bookCollectionChecker = new BookCollectionChecker(serializers);
 
         store = new StoreImpl(serializers, bookChecker, bookCollectionChecker, base);
+        simpleStore = new SimpleCachingStore(store, 1000);
     }
 
     protected BookCollection loadCollection(String name) throws IOException {

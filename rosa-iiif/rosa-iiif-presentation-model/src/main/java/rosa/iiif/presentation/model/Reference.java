@@ -5,28 +5,32 @@ import java.io.Serializable;
 /**
  * A reference to another object. It contains the URI, type, and label of an
  * object.
+ *
+ * A reference in IIIF MAY contain extra metadata relating to the object.
+ * For example, a collection may contain a reference to a manifest. That
+ * manifest reference must have the manifest ID, label, and object type, but
+ * it also may include other data such as thumbnails and an arbitrary
+ * metadata map. The reference must not include references to other IIIF
+ * objects.
  */
-public class Reference implements Serializable {
+public class Reference extends PresentationBase implements Serializable {
     private static final long serialVersionUID = 1L;
-
-    private String ref;
-    private TextValue label;
-    private String type;
 
     public Reference() {}
 
     public Reference(String ref, TextValue label, String type) {
-        this.ref = ref;
+        super();
+        this.id = ref;
         this.label = label;
         this.type = type;
     }
 
     public String getReference() {
-        return ref;
+        return id;
     }
 
     public void setReference(String ref) {
-        this.ref = ref;
+        this.id = ref;
     }
 
     public TextValue getLabel() {
@@ -45,45 +49,11 @@ public class Reference implements Serializable {
         this.type = type;
     }
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((label == null) ? 0 : label.hashCode());
-        result = prime * result + ((ref == null) ? 0 : ref.hashCode());
-        result = prime * result + ((type == null) ? 0 : type.hashCode());
-        return result;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (!(obj instanceof Reference))
-            return false;
-        Reference other = (Reference) obj;
-        if (label == null) {
-            if (other.label != null)
-                return false;
-        } else if (!label.equals(other.label))
-            return false;
-        if (ref == null) {
-            if (other.ref != null)
-                return false;
-        } else if (!ref.equals(other.ref))
-            return false;
-        if (type == null) {
-            if (other.type != null)
-                return false;
-        } else if (!type.equals(other.type))
-            return false;
-        return true;
-    }
+    // No new information is actually added here on top of PresentationBase.
+    // #equals and #hashCode are therefore the same
 
     @Override
     public String toString() {
-        return "Reference [ref=" + ref + ", label=" + label + ", type=" + type + "]";
+        return "Reference{" + super.toString() + '}';
     }
 }

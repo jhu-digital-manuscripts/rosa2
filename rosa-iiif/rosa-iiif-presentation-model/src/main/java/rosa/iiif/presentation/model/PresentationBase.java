@@ -42,12 +42,12 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
     /**
      * Long-form prose description, can include some basic HTML formatting.
      */
-    protected HtmlValue description;     
+    protected HtmlValue description;
 
     /**
-     * URL that should follow the IIIF Image API syntax.
+     * Zero or more thumbnails for a IIIF object.
      */
-    protected String thumbnailUrl;
+    protected List<Image> thumbnails;
 
     // Linked properties
     /**
@@ -96,6 +96,7 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         metadata = new HashMap<>();
         services = new ArrayList<>();
         within = new ArrayList<>();
+        thumbnails = new ArrayList<>();
     }
 
     public String getContext() {
@@ -162,12 +163,18 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         setDescription(new HtmlValue(description, language));
     }
 
-    public String getThumbnailUrl() {
-        return thumbnailUrl;
+    public List<Image> getThumbnails() {
+        return thumbnails;
     }
 
-    public void setThumbnailUrl(String thumbnailUrl) {
-        this.thumbnailUrl = thumbnailUrl;
+    public void setThumbnails(List<Image> thumbnails) {
+        if (thumbnails != null) {
+            this.thumbnails.addAll(thumbnails);
+        }
+    }
+
+    public void addThumbnail(Image img) {
+        this.thumbnails.add(img);
     }
 
     public String getSeeAlso() {
@@ -252,8 +259,7 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
     }
 
     /**
-     * A IIIF object may have a thumbnail. That thumbnail may have a single image service
-     * associated with it.
+     * Set an image service for all thumbnails associated with this object.
      *
      * @param thumbnailService SHOULD be IIIF service
      */
@@ -296,7 +302,7 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         if (viewingDirection != that.viewingDirection) return false;
         if (label != null ? !label.equals(that.label) : that.label != null) return false;
         if (description != null ? !description.equals(that.description) : that.description != null) return false;
-        if (thumbnailUrl != null ? !thumbnailUrl.equals(that.thumbnailUrl) : that.thumbnailUrl != null) return false;
+        if (thumbnails != null ? !thumbnails.equals(that.thumbnails) : that.thumbnails != null) return false;
         if (seeAlso != null ? !seeAlso.equals(that.seeAlso) : that.seeAlso != null) return false;
         if (services != null ? !services.equals(that.services) : that.services != null) return false;
         if (relatedUri != null ? !relatedUri.equals(that.relatedUri) : that.relatedUri != null) return false;
@@ -316,7 +322,7 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
         result = 31 * result + (viewingDirection != null ? viewingDirection.hashCode() : 0);
         result = 31 * result + (label != null ? label.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
-        result = 31 * result + (thumbnailUrl != null ? thumbnailUrl.hashCode() : 0);
+        result = 31 * result + (thumbnails != null ? thumbnails.hashCode() : 0);
         result = 31 * result + (seeAlso != null ? seeAlso.hashCode() : 0);
         result = 31 * result + (services != null ? services.hashCode() : 0);
         result = 31 * result + (relatedUri != null ? relatedUri.hashCode() : 0);
@@ -331,7 +337,7 @@ public abstract class PresentationBase implements IIIFNames, Serializable {
     public String toString() {
         return "PresentationBase [context=" + context + ", id=" + id + ", type=" + type + ", viewingHint="
                 + viewingHint + ", viewingDirection=" + viewingDirection + ", label=" + label + ", description="
-                + description + ", thumbnailUrl=" + thumbnailUrl + ", seeAlso=" + seeAlso + ", service="
+                + description + ", thumbnailUrl=" + thumbnails + ", seeAlso=" + seeAlso + ", service="
                 + services + ", relatedUri=" + relatedUri + ", relatedFormat=" + relatedFormat + ", within="
                 + within + ", metadata=" + metadata + ", rights=" + rights + "]";
     }

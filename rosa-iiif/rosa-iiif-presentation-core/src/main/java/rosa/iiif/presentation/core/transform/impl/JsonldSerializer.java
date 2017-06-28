@@ -8,6 +8,7 @@ import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationBase;
@@ -182,11 +183,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
     private void writeJsonld(Reference ref, JSONWriter jWriter) {
         jWriter.object();
-
-        jWriter.key("@id").value(ref.getReference());
-        jWriter.key("@type").value(ref.getType());
-        jWriter.key("label").value(ref.getLabel().getValue());
-
+        writeBaseData(ref, jWriter);
         jWriter.endObject();
     }
 
@@ -508,7 +505,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      * @param <T> type
      * @throws JSONException
      */
-    protected  <T extends PresentationBase> void writeBaseData(T obj, JSONWriter jWriter)
+    protected <T extends PresentationBase> void writeBaseData(T obj, JSONWriter jWriter)
             throws JSONException {
         jWriter.key("@id").value(obj.getId());
         jWriter.key("@type").value(obj.getType());
@@ -531,14 +528,13 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
             jWriter.endArray();
         }
 
-        if (obj.getThumbnailUrl() != null) {
+        if (obj.getThumbnails().size() == 1) {
             jWriter.key("thumbnail");
-            jWriter.object();
-
-            jWriter.key("@id").value(obj.getThumbnailUrl());
-            writeService(obj.getThumbnailService(), true, jWriter);
-
-            jWriter.endObject();
+            writeThumbnail(obj.getThumbnails().get(0), jWriter);
+        } else if (obj.getThumbnails().size() > 1) {
+            jWriter.key("thumbnail").array();
+            obj.getThumbnails().forEach(thumb -> writeThumbnail(thumb, jWriter));
+            jWriter.endArray();
         }
 
         // Rights info
@@ -660,6 +656,17 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         writeIfNotNull("@id", service.getId(), jWriter);
         writeIfNotNull("profile", service.getProfile(), jWriter);
         writeIfNotNull("label", service.getLabel(), jWriter);
+        jWriter.endObject();
+    }
+
+    private void writeThumbnail(Image thumb, JSONWriter jWriter) throws JSONException {
+        jWriter.object();
+        jWriter.key("@id").value(thumb.getUri());
+        writeIfNotNull("@type", thumb.getType(), jWriter);
+        writeIfNotNull("format", thumb.getFormat(), jWriter);
+        writeService(thumb.getService(), true, jWriter);
+        writeIfNotNull("width", thumb.getWidth(), jWriter);
+        writeIfNotNull("height", thumb.getHeight(), jWriter);
         jWriter.endObject();
     }
 
