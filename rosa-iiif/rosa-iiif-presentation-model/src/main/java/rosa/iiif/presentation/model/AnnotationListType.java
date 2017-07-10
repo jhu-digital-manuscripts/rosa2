@@ -12,6 +12,7 @@ public enum AnnotationListType {
     SYMBOL,
     MARGINALIA,
     NUMBERAL,
+    SUBSTITUTION,
     ERRATA,
     MARK;
 

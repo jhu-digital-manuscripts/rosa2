@@ -70,7 +70,11 @@ public class Substitution extends Annotation implements Serializable {
     @Override
     public String toPrettyString() {
         // TODO perhaps different forms depending on 'type'
-        return (signature != null ? signature + ": ": "") + "\nBefore: " + getCopyText() + "\nAfter: " + amendedText;
+        return (signature != null ? signature + ": ": "") +
+                "<br><span class=\"sub-label\">Before:</span> " +
+                getCopyText() +
+                "<br><span class=\"sub-label\">After: " +
+                amendedText;
     }
 
     @Override
