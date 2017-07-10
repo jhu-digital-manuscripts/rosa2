@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE transcription SYSTEM "http://www.livesandletters.ac.uk/schema/aor_20141023.dtd">
+
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/ChrisRG/ReadingHamlet/master/RHschema.xsd">
+	
+	<page filename="Hamlet.002r.tif" pagination="3" signature="I.1" reader="John Ward"/> <!-- Signature = act + scene -->
+	<annotation>
+		<!-- Marginalia --> 	<!-- Positions available: head, intext, tail, left_margin, right_margin -->
+		<marginalia>
+			<language ident="EN">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						(4)
+						Ghost
+					</marginalia_text>
+					<person name="Ghost"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia>
+			<language ident="EN">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						(5)
+						one to Cron [?]	<!-- Unsure -->
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia>
+			<language ident="EN">
+				<position place="right_margin" book_orientation="0">
+					<marginalia_text>
+						(6)
+						King
+						Queen
+						Hamlet
+						Polonius
+						Laertes
+						Attendant
+						a
+						Flouris[h]
+					</marginalia_text>
+					<person name="King"/>
+					<person name="Queen"/>
+					<person name="Hamlet"/>
+					<person name="Polonius"/>
+					<person name="Laertes"/>
+					<person name="Attendant"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<!-- Substitutions -->
+		<substitution method="pen" type="replacement" copyText="I could not believe this," amendedText="I could not this believe,"/>
+			
+		<substitution method="pen" type="deletion" copyText="'' So frown'd he once, when in angry Parle | '' He smote the sleaded Pollax on the ice | 'Tis strange." amendedText=""/>
+		<substitution method="pen" type="deletion" copyText="Mar. Pray sit down and tell me he that knows," amendedText="Mar. Pray tell me he that knows,"/>
+		<substitution method="pen" type="deletion" copyText="
+			'' And with such daily cost of brasen Cannon, | 
+			'' And foreign Mart for implements of war? |
+			'' Why such impress of ship-wrights, whose sore task |
+			'' Does not divide the Sunday from the week?
+			'' What might be toward, that this sweaty haste" amendedText=""/>
+		
+		<substitution method="pen" type="replacement" copyText="Makes the night joynt labour with the day?" amendedText="Making the night joynt labourer with the day?"/>
+		
+		<substitution method="pen" type="deletion" copyText="'' At least the whisper goes so:" amendedText=""/>
+		
+		<substitution method="pen" type="insertion" copyText="Our last King," amendedText="-- Our last King,"/>		
+		
+		<substitution method="pen" type="deletion" copyText="'' Thereto prickt on by a most emulate pride" amendedText=""/>
+		
+		<substitution method="pen" type="deletion" copyText="'' For (so this side of our known world esteem'd him)" amendedText=""/>
+		
+		<substitution method="pen" type="deletion" copyText="
+			'' Against the which a moity competent |
+			'' Was gaged by our King, which had returned |
+			'' To the inheritance of Fortinbas, |
+			'' Had he been vanquisher: as by the same compact, |
+			'' And carriage of the Articles design, |
+			'' His fell to Hamlet:" amendedText=""/>
+		
+		<substitution method="pen" type="deletion" copyText="'' Of unimproved metal, hot, and full," amendedText=""/>
+		
+		
+		<!-- Symbols and marks -->	<!-- Positions available: head, intext, tail, left_margin, right_margin -->
+		<symbol name="Hatching" place="right_margin"/> 
+		
+				
+    </annotation>
+</transcription>

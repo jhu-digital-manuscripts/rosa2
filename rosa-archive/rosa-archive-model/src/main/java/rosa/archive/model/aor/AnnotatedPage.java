@@ -24,6 +24,7 @@ public class AnnotatedPage implements HasId, Serializable {
     private List<Symbol> symbols;
     private List<Underline> underlines;
     private List<Numeral> numerals;
+    private List<Substitution> subs;
     private List<Errata> errata;
     private List<Drawing> drawings;
 
@@ -33,6 +34,7 @@ public class AnnotatedPage implements HasId, Serializable {
         symbols = new ArrayList<>();
         underlines = new ArrayList<>();
         numerals = new ArrayList<>();
+        subs = new ArrayList<>();
         errata = new ArrayList<>();
         drawings = new ArrayList<>();
     }
@@ -65,6 +67,7 @@ public class AnnotatedPage implements HasId, Serializable {
     	result.addAll(symbols);
     	result.addAll(underlines);
     	result.addAll(numerals);
+    	result.addAll(subs);
     	result.addAll(errata);
     	result.addAll(drawings);
     	
@@ -168,6 +171,14 @@ public class AnnotatedPage implements HasId, Serializable {
         this.drawings = drawings;
     }
 
+    public List<Substitution> getSubs() {
+        return subs;
+    }
+
+    public void setSubs(List<Substitution> subs) {
+        this.subs = subs;
+    }
+
     public List<Errata> getErrata() {
         return errata;
     }
@@ -183,20 +194,19 @@ public class AnnotatedPage implements HasId, Serializable {
 
         AnnotatedPage that = (AnnotatedPage) o;
 
-        if (errata != null ? !errata.equals(that.errata) : that.errata != null) return false;
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (page != null ? !page.equals(that.page) : that.page != null) return false;
+        if (reader != null ? !reader.equals(that.reader) : that.reader != null) return false;
+        if (pagination != null ? !pagination.equals(that.pagination) : that.pagination != null) return false;
+        if (signature != null ? !signature.equals(that.signature) : that.signature != null) return false;
         if (marginalia != null ? !marginalia.equals(that.marginalia) : that.marginalia != null) return false;
         if (marks != null ? !marks.equals(that.marks) : that.marks != null) return false;
-        if (numerals != null ? !numerals.equals(that.numerals) : that.numerals != null) return false;
-        if (page != null ? !page.equals(that.page) : that.page != null) return false;
-        if (pagination != null ? !pagination.equals(that.pagination) : that.pagination != null) return false;
-        if (reader != null ? !reader.equals(that.reader) : that.reader != null) return false;
-        if (signature != null ? !signature.equals(that.signature) : that.signature != null) return false;
         if (symbols != null ? !symbols.equals(that.symbols) : that.symbols != null) return false;
         if (underlines != null ? !underlines.equals(that.underlines) : that.underlines != null) return false;
-        if (drawings != null ? !drawings.equals(that.drawings) : that.drawings != null) return false;
-
-        return true;
+        if (numerals != null ? !numerals.equals(that.numerals) : that.numerals != null) return false;
+        if (subs != null ? !subs.equals(that.subs) : that.subs != null) return false;
+        if (errata != null ? !errata.equals(that.errata) : that.errata != null) return false;
+        return drawings != null ? drawings.equals(that.drawings) : that.drawings == null;
     }
 
     @Override
@@ -211,6 +221,7 @@ public class AnnotatedPage implements HasId, Serializable {
         result = 31 * result + (symbols != null ? symbols.hashCode() : 0);
         result = 31 * result + (underlines != null ? underlines.hashCode() : 0);
         result = 31 * result + (numerals != null ? numerals.hashCode() : 0);
+        result = 31 * result + (subs != null ? subs.hashCode() : 0);
         result = 31 * result + (errata != null ? errata.hashCode() : 0);
         result = 31 * result + (drawings != null ? drawings.hashCode() : 0);
         return result;
@@ -229,6 +240,7 @@ public class AnnotatedPage implements HasId, Serializable {
                 ", symbols=" + symbols +
                 ", underlines=" + underlines +
                 ", numerals=" + numerals +
+                ", subs=" + subs +
                 ", errata=" + errata +
                 ", drawings=" + drawings +
                 '}';

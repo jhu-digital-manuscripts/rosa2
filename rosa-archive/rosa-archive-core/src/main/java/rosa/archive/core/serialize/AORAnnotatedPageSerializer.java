@@ -38,6 +38,7 @@ import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.ReferenceTarget;
+import rosa.archive.model.aor.Substitution;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
@@ -98,6 +99,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         addSymbol(aPage.getSymbols(), annotationEl, doc);
         addMark(aPage.getMarks(), annotationEl, doc);
         addNumeral(aPage.getNumerals(), annotationEl, doc);
+        addSubstitution(aPage.getSubs(), annotationEl, doc);
         addErrata(aPage.getErrata(), annotationEl, doc);
         addDrawing(aPage.getDrawings(), annotationEl, doc);
 
@@ -193,6 +195,17 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             if (numeral.getNumeral() != null) {
                 n.setTextContent(numeral.getNumeral());
             }
+        }
+    }
+
+    private void addSubstitution(List<Substitution> subs, Element parent, Document doc) {
+        for (Substitution sub : subs) {
+            Element s = newElement(TAG_SUBSTITUTION, parent, doc);
+            setAttribute(s, ATTR_TYPE, sub.getType());
+            setAttribute(s, ATTR_METHOD, sub.getMethod());
+            setAttribute(s, ATTR_SUB_COPYTEXT, sub.getCopyText());
+            setAttribute(s, ATTR_SUB_AMENDEDTEXT, sub.getAmendedText());
+            setAttribute(s, ATTR_LANGUAGE, sub.getLanguage());
         }
     }
 
@@ -385,6 +398,18 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getTextContent(),
                             null,
                             loc
+                    ));
+                    break;
+                case TAG_SUBSTITUTION:
+                    page.getSubs().add(new Substitution(
+                            Annotations.annotationId(page.getPage(), TAG_SUBSTITUTION, page.getSubs().size()),
+                            page.getSignature(),
+                            annotation.getAttribute(ATTR_TYPE),
+                            annotation.getAttribute(ATTR_METHOD),
+                            annotation.getAttribute(ATTR_SUB_COPYTEXT),
+                            annotation.getAttribute(ATTR_SUB_AMENDEDTEXT),
+                            annotation.getAttribute(ATTR_LANGUAGE),
+                            Location.INTEXT
                     ));
                     break;
                 case TAG_ERRATA:

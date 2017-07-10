@@ -49,6 +49,7 @@ import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.Substitution;
 import rosa.archive.model.meta.MultilangMetadata;
 import rosa.archive.model.redtag.Item;
 import rosa.archive.model.redtag.StructureColumn;
@@ -891,6 +892,10 @@ public class BookChecker extends AbstractArchiveChecker {
                 continue;
             }
 
+            if (page.getSignature() == null || page.getSignature().isEmpty()) {
+                warnings.add("Page does not have a signature (" + page.getId() + ")");
+            }
+
             if (!isInArchive(page.getId(), parent.getContent())) {
                 errors.add("Annotated page not found in archive. ["
                         + parent.getId() + ":" + page.getId() + "]");
@@ -949,7 +954,40 @@ public class BookChecker extends AbstractArchiveChecker {
                 }
             }
 
+            page.getSubs().forEach(substitution -> checkSubstitution(substitution, errors));
+        }
+    }
 
+    private void checkSubstitution(Substitution sub, List<String> errors) {
+        String prefix = "Substitution/";
+        switch (sub.getType()) {
+            case "insertion":
+                // Must have amendedText at least
+                if (sub.getCopyText().isEmpty()) {
+                    errors.add(prefix +"insertion found without 'copyText' (" + sub.getId() + ")");
+                }
+                break;
+            case "deletion":
+                // Must have copyText at least
+                if (sub.getCopyText().isEmpty()) {
+                    errors.add(prefix + "deletion found without 'copyText' (" + sub.getId() + ")");
+                }
+                break;
+            case "replacement":
+                prefix += "replacement";
+            case "errata":
+                prefix += "errata";
+                // Must have both copyText and amendedText
+                if (sub.getCopyText().isEmpty()) {
+                    errors.add(prefix + " found without 'copyText' (" + sub.getId() + ")");
+                }
+                if (sub.getCopyText().isEmpty()) {
+                    errors.add(prefix + " found without 'copyText' (" + sub.getId() + ")");
+                }
+                break;
+            default:
+                errors.add("No type found for substitution. (" + sub.getId() + ")");
+                break;
         }
     }
 
