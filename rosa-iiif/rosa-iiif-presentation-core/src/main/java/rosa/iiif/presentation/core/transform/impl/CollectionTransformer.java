@@ -167,9 +167,11 @@ public class CollectionTransformer extends BasePresentationTransformer {
         for (BookImage image : book.getImages()) {
             if (image.getLocation() == BookImageLocation.BODY_MATTER && !image.isMissing()) {
                 String id = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId()));
+
                 list.add(new Image(
                         id,
-                        new IIIFImageService(IIIF_IMAGE_CONTEXT, id, IIIF_IMAGE_PROFILE_LEVEL2, -1, -1, -1, -1, null)
+                        new IIIFImageService(IIIF_IMAGE_CONTEXT, id, IIIF_IMAGE_PROFILE_LEVEL2,
+                                image.getWidth(), image.getHeight(), -1, -1, null)
                 ));
 
                 if (i++ > MAX_THUMBNAILS) {

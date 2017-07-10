@@ -7,6 +7,7 @@ import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
+import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.Layer;
@@ -656,6 +657,13 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         writeIfNotNull("@id", service.getId(), jWriter);
         writeIfNotNull("profile", service.getProfile(), jWriter);
         writeIfNotNull("label", service.getLabel(), jWriter);
+
+        if (service instanceof IIIFImageService) {
+            IIIFImageService iiif = (IIIFImageService) service;
+            writeIfNotNull("width", iiif.getWidth(), jWriter);
+            writeIfNotNull("height", iiif.getHeight(), jWriter);
+        }
+
         jWriter.endObject();
     }
 
