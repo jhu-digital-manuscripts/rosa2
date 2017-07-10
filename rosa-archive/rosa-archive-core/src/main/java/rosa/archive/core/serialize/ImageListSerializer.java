@@ -95,6 +95,14 @@ public class ImageListSerializer implements Serializer<ImageList> {
         }
         image.setWidth(width);
         image.setHeight(height);
+        
+        if (csvRow.length == 4) {
+            String label = csvRow[3];
+            
+            if (!label.isEmpty()) {
+                image.setName(label);
+            }
+        }
 
         return image;
     }
