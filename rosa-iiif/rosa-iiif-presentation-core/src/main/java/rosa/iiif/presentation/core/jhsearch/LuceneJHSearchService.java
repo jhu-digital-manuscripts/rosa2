@@ -134,6 +134,22 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             JHSearchField.REPO,
             JHSearchField.TEXT
     };
+
+    private static final JHSearchField[] HAMLET_FIELDS = {
+            JHSearchField.REPLACEMENTS,
+            JHSearchField.INSERTIONS,
+            JHSearchField.DELETIONS,
+            JHSearchField.ERRATA,
+            JHSearchField.MARGINALIA,
+            JHSearchField.SYMBOL,
+            JHSearchField.UNDERLINE,
+            JHSearchField.EMPHASIS,
+            JHSearchField.MARK,
+            JHSearchField.BOOK,
+            JHSearchField.PEOPLE,
+            JHSearchField.PLACE,
+            JHSearchField.METHOD
+    };
     
     @Override
     public void handle_info_request(PresentationRequest req, OutputStream os) throws IOException {
@@ -144,6 +160,8 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
             fields = ROSE_PIZAN_FIELDS;
         } else if (identifier.contains("aor")) {
             fields = AOR_FIELDS;
+        } else if (identifier.contains("hamlet")) {
+            fields = HAMLET_FIELDS;
         } else {
             fields = SHARED_FIELDS;
         }

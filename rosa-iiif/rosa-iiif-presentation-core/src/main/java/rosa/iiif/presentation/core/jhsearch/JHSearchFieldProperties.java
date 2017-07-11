@@ -109,4 +109,12 @@ interface JHSearchFieldProperties {
     String REPO_DESCRIPTION = "Search names of repositories";
     String TEXT_LABEL = "Text";
     String TEXT_DESCRIPTION = "Search the text of an item. This can include transcriptions and translations.";
+
+    // Hamlet class stuff
+    String REPLACEMENT_LABEL = "Replacements";
+    String REPLACEMENT_DESCRIPTION = "Original text that has been modified by a reader, or the text that replaces it.";
+    String INSERT_LABEL = "Insertions";
+    String INSERT_DESCRIPTION = "Text that a reader has inserted into the text.";
+    String DELETE_LABEL = "Deletions";
+    String DELETE_DESCRIPTION = "Text that a reader has removed from the text.";
 }
