@@ -119,16 +119,23 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         String label = sub.getType().substring(0, 1).toUpperCase() + sub.getType().substring(1);
 
         res.append("<div class=\"substitution\">");
-        res.append("<div class=\"sub-title\">").append(sub.getSignature()).append(" : ")
-                .append(label).append(':').append("</div>");
-        res.append("<table>");
-        if (sub.getCopyText() != null && !sub.getCopyText().isEmpty()) {
-            res.append("<tr><td>Before:</td><td>").append(sub.getCopyText()).append("</td></tr>");
+        res.append("<div class=\"sub-title\">")
+                .append(StringEscapeUtils.escapeHtml4(sub.getSignature()))
+                .append(" : ").append(label).append(':').append("</div>");
+
+        String copy = StringEscapeUtils.escapeHtml4(sub.getCopyText());
+        if (copy != null && !copy.isEmpty()) {
+            copy = copy.replace("|", "<br/>");
+            res.append("<div><span class=\"italic full-width\">Before:</span>")
+                    .append(copy).append("</div>");
         }
-        if (sub.getAmendedText() != null && !sub.getAmendedText().isEmpty()) {
-            res.append("<tr><td>After:</td><td>").append(sub.getAmendedText()).append("</td></tr>");
+        String amended = StringEscapeUtils.escapeHtml4(sub.getAmendedText());
+        if (amended != null && !amended.isEmpty()) {
+            amended = amended.replace("|", "<br/>");
+            res.append("<div><span class=\"italic full-width\">After:</span>")
+                    .append(amended).append("</div>");
         }
-        res.append("</table></div>");
+        res.append("</div>");
 
         return res.toString();
     }
