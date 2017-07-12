@@ -127,6 +127,7 @@ public class JHSearchSerializer implements IIIFNames {
         String object_label = null;
         String manifest_id = null;
         String manifest_label = null;
+        String signature_label = null;
         
         for (int i = 0; i < values.size(); ) {
             String field = values.get(i++);
@@ -140,6 +141,8 @@ public class JHSearchSerializer implements IIIFNames {
                 manifest_id = value;
             } else if (field.equals(JHSearchField.MANIFEST_LABEL.getFieldName())) {
                 manifest_label = value;
+            } else if (field.equals(JHSearchField.TEXT_SCENE.getFieldName())) {
+                signature_label = value;
             }
         }
         
@@ -162,9 +165,13 @@ public class JHSearchSerializer implements IIIFNames {
             writer.key("manifest").object();
             writer.key("@id").value(manifest_id);
             writer.key("@type").value(IIIFNames.SC_MANIFEST);
-            
+
             if (manifest_label != null) {
-                writer.key("label").value(manifest_label);
+                if (signature_label != null) {
+                    writer.key("label").value(manifest_label + " : " + signature_label);
+                } else {
+                    writer.key("label").value(manifest_label);
+                }
             }
             writer.endObject();
         }
