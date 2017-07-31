@@ -126,14 +126,16 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         String copy = StringEscapeUtils.escapeHtml4(sub.getCopyText());
         if (copy != null && !copy.isEmpty()) {
             copy = copy.replace("|", "<br/>");
-            res.append("<div><span class=\"italic full-width\">Before:</span>")
+            res.append("<div class=\"section\"><span class=\"italic full-width\">Before:</span>")
                     .append(copy).append("</div>");
         }
         String amended = StringEscapeUtils.escapeHtml4(sub.getAmendedText());
         if (amended != null && !amended.isEmpty()) {
             amended = amended.replace("|", "<br/>");
-            res.append("<div><span class=\"italic full-width\">After:</span>")
+            res.append("<div class=\"section\"><span class=\"italic full-width\">After:</span>")
                     .append(amended).append("</div>");
+        } else if (sub.getType().equals("deletion")) {
+            res.append("<div class=\"section\"><span class=\"italic full-width\">After:</span> (deleted)</div>");
         }
         res.append("</div>");
 
