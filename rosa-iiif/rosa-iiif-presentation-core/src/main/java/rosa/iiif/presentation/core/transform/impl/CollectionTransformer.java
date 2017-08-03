@@ -59,8 +59,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
         col.addService(new Service(
                 JHSearchService.CONTEXT_URI,
-                urlId(col.getId(), null, col.getId(), PresentationRequestType.COLLECTION)
-                        + JHSearchService.RESOURCE_PATH,
+                col.getId() + JHSearchService.RESOURCE_PATH,    // ID is already transformed above
                 IIIF_SEARCH_PROFILE,
                 col.getLabel("en")
         ));
