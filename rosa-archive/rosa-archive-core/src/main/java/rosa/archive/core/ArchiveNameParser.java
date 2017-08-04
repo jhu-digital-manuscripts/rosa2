@@ -6,7 +6,8 @@ import rosa.archive.model.BookImageRole;
 
 
 public class ArchiveNameParser implements ArchiveConstants {
-    private static final String DEFAULT_PAGE_REGEX = "([a-zA-Z]*)(\\d+)(r|v|R|V)";
+//    private static final String DEFAULT_PAGE_REGEX = "([a-zA-Z]*)(\\d+)(r|v|R|V)";
+    private static final String DEFAULT_PAGE_REGEX = "(([a-zA-Z]*)(\\d+)([rRvV]))|(\\d+)";
     private static final String DEFAULT_DELIMITER = "\\.";
 
     private final String delimiter;

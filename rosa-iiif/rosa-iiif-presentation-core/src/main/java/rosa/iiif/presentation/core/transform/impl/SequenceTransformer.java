@@ -73,7 +73,7 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
         sequence.setCanvases(canvases);
 
         // Set thumbnail for this sequence, set to the thumbnail for the start canvas
-        if (sequence.getCanvases().size() > 0) {
+        if (sequence.getCanvases().size() > 0 && sequence.getStartCanvas() >= 0) {
             Canvas defaultCanvas = sequence.getCanvases().get(sequence.getStartCanvas());
 
             if (defaultCanvas.getThumbnails().size() > 0) {
