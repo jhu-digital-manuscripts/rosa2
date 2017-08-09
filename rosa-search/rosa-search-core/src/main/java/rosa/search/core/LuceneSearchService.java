@@ -212,15 +212,25 @@ public class LuceneSearchService implements SearchService {
         
         return dq;
     }
-    
-    // Get the category matches from the facets collected from a search
+
+    /**
+     * Get the category matches from the facets collected from a search.
+     *
+     * IMPL NOTE: Using this method for getting category values relies on
+     * {@link SortedSetDocValuesFacetCounts#getAllDims(int)} forcing us to
+     * specify the maximum number of values that can be returned. Undocumented
+     * is the maximum that this number can be:
+     * <em>topN</em> must be less than org.apache.lucene.util.ArrayUtil.MAX_ARRAY_LENGTH,
+     * which is Integer.MAX_VALUE - whatever overhead arrays require.
+     *
+     */
     private List<SearchCategoryMatch> get_category_matches(FacetsCollector fc, SortedSetDocValuesReaderState state) throws IOException {
         Facets facets = new SortedSetDocValuesFacetCounts(state, fc);
 
         List<SearchCategoryMatch> result = new ArrayList<>();
 
-        // TODO Make max number of dimenstions to return configurable?
-        facets.getAllDims(100).forEach(f -> result.add(get_category_matches(f)));
+        int mamResults = searcher_manager.acquire().getIndexReader().numDocs();
+        facets.getAllDims(mamResults).forEach(f -> result.add(get_category_matches(f)));
 
         return result;
     }
