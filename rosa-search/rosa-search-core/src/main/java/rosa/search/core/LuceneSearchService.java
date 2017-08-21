@@ -3,6 +3,7 @@ package rosa.search.core;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.logging.Level;
@@ -231,6 +232,20 @@ public class LuceneSearchService implements SearchService {
 
         int mamResults = searcher_manager.acquire().getIndexReader().numDocs();
         facets.getAllDims(mamResults).forEach(f -> result.add(get_category_matches(f)));
+
+        result.sort((o1, o2) -> o1.getFieldName().compareToIgnoreCase(o2.getFieldName()));
+        result.parallelStream().forEach(cat -> {
+            // Sort values under this category
+            Arrays.sort(cat.getValues(), (o1, o2) -> {
+                String v1 = o1.getValue();
+                String v2 = o2.getValue();
+                try {
+                    return Integer.parseInt(v1) - Integer.parseInt(v2);
+                } catch (NumberFormatException e) {
+                    return v1.compareToIgnoreCase(v2);
+                }
+            });
+        });
 
         return result;
     }
