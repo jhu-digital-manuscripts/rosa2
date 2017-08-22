@@ -19,6 +19,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.CollectionMetadata;
 import rosa.archive.model.ImageList;
 import rosa.search.core.LuceneMapper;
 import rosa.search.core.SearchUtil;
@@ -115,6 +116,8 @@ public class WebsiteLuceneMapperTest {
     @Test
     public void testCreateDocuments() throws IOException {
         BookCollection col = new BookCollection();
+        CollectionMetadata cmd = new CollectionMetadata();
+        col.setMetadata(cmd);
         col.setId("barn");
 
         Book book = new Book();
@@ -130,7 +133,7 @@ public class WebsiteLuceneMapperTest {
                 .setDescription("<desc>Une bonne vache est toujours un délice.</desc>");
         book.addBookDescription(book_desc_fr, "fr");
 
-        col.setLanguages(new String[] { "en", "fr" });
+        cmd.setLanguages(new String[] { "en", "fr" });
 
         ImageList images = new ImageList();
         book.setImages(images);
