@@ -24,12 +24,15 @@ import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
+import rosa.iiif.presentation.model.Rights;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.Within;
 
 public class CollectionTransformer extends BasePresentationTransformer {
     public static final String TOP_COLLECTION_LABEL = "All JHU IIIF Collections";
+    public static final String TOP_COLLECTION_NAME = "top";
+    public static final String LANGUAGE_DEFAULT = "en";
     private static final int MAX_THUMBNAILS = 3;
 
     private SimpleStore store;
@@ -52,8 +55,12 @@ public class CollectionTransformer extends BasePresentationTransformer {
         Collection col = new Collection();
 
         col.setId(urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION));
-        col.setLabel(collection.getLabel(), "en");
+        col.setLabel(collection.getLabel(), LANGUAGE_DEFAULT);
         col.setType(SC_COLLECTION);
+
+        if (collection.getDescription() != null) {
+            col.setDescription(new HtmlValue(collection.getDescription()));
+        }
 
         col.setManifests(getBookRefs(collection));
 
@@ -61,28 +68,29 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 JHSearchService.CONTEXT_URI,
                 col.getId() + JHSearchService.RESOURCE_PATH,    // ID is already transformed above
                 IIIF_SEARCH_PROFILE,
-                col.getLabel("en")
+                col.getLabel(LANGUAGE_DEFAULT)
         ));
         col.addService(new Service(
                 JHSearchService.CONTEXT_URI,
-                urlId("top", null, "top", PresentationRequestType.COLLECTION)
+                urlId(TOP_COLLECTION_NAME, null, TOP_COLLECTION_NAME, PresentationRequestType.COLLECTION)
                         + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE,
                 TOP_COLLECTION_LABEL
         ));
 
         col.setWithin(new Within(
-                urlId("top", null, "top", PresentationRequestType.COLLECTION)
+                urlId(TOP_COLLECTION_NAME, null, TOP_COLLECTION_NAME, PresentationRequestType.COLLECTION)
         ));
 
         return col;
     }
 
+    // TODO modify once 'root' collection has been added to archive
     public Collection topCollection(List<BookCollection> collections) {
         Collection col = new Collection();
 
-        col.setId(urlId("top", null, "top", PresentationRequestType.COLLECTION));
-        col.setLabel(TOP_COLLECTION_LABEL, "en");
+        col.setId(urlId(TOP_COLLECTION_NAME, null, TOP_COLLECTION_NAME, PresentationRequestType.COLLECTION));
+        col.setLabel(TOP_COLLECTION_LABEL, LANGUAGE_DEFAULT);
         col.setDescription("Top level collection bringing together all other collections in this archive.", "en");
         col.setType(SC_COLLECTION);
 
@@ -91,7 +99,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
             Reference ref = new Reference();
 
             ref.setType(SC_COLLECTION);
-            ref.setLabel(new TextValue(c.getLabel(), "en"));
+            ref.setLabel(new TextValue(c.getLabel(), LANGUAGE_DEFAULT));
             ref.setReference(urlId(c.getId(), null, c.getId(), PresentationRequestType.COLLECTION));
 
             cols.add(ref);

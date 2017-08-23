@@ -63,7 +63,7 @@ public class Rights implements Serializable {
     }
 
     public String getAttribution(String lang) {
-        return attributionMap.get(lang).getValue();
+        return attributionMap.containsKey(lang) ? attributionMap.get(lang).getValue() : null;
     }
 
     public String[] getLicenseUris() {

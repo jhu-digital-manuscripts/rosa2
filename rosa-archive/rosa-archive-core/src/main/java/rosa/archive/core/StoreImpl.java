@@ -200,6 +200,9 @@ public class StoreImpl implements Store, ArchiveConstants {
         if (props.containsKey(CONFIG_CHILDREN)) {
             cmd.setParents(props.getProperty(CONFIG_CHILDREN).split(","));
         }
+        if (props.containsKey(CONFIG_DESCRIPTION)) {
+            cmd.setDescription(props.getProperty(CONFIG_DESCRIPTION));
+        }
 
         collection.setMetadata(cmd);
         

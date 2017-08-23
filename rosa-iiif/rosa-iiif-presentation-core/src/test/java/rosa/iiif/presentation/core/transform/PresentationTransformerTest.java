@@ -32,6 +32,7 @@ import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
 import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
+import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
@@ -79,6 +80,21 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         TransformerSet transformerSet = new TransformerSet(transformers);
 
         presentationTransformer = new PresentationTransformerImpl(presentationReqFormatter, transformerSet, collectionTransformer);
+    }
+
+    @Test
+    public void collectionTest() throws IOException {
+        Collection col = presentationTransformer.collection(loadValidCollection());
+
+        assertNotNull(col);
+
+        assertNotNull(col.getDescription("en"));
+        assertFalse(col.getDescription("en").isEmpty());
+
+        assertNotNull(col.getRights());
+        assertTrue(col.getRights().hasOneLogo());
+        assertNotNull(col.getRights().getFirstLogo());
+        assertFalse(col.getRights().getFirstLogo().isEmpty());
     }
 
     /**
