@@ -200,7 +200,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         String facet_common_name = md.getCommonName();
 
         addFacet(doc, JHSearchCategory.COMMON_NAME, facet_common_name);
-        addFacet(doc, JHSearchCategory.NUM_PAGES, "" + numPages);
+        addFacet(doc, JHSearchCategory.NUM_PAGES, quantize(numPages, 100));
         addFacet(doc, JHSearchCategory.LOCATION, facet_loc);
         addFacet(doc, JHSearchCategory.REPOSITORY, facet_repo);
         addFacet(doc, JHSearchCategory.DATE, facet_date);
@@ -210,6 +210,19 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
                 addFacet(doc, JHSearchCategory.AUTHOR, s);
             }
         }
+	}
+	
+	private String quantize(int n, int bin_size) {
+	    if (n < 0) {
+	        return "Unknown";
+	    }
+	    
+	    int bin = n / bin_size;
+	    
+	    int start = bin * bin_size;
+	    int end = start + (bin_size - 1);
+	    
+	    return start + "-" + end;
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Document doc, String trans) {
