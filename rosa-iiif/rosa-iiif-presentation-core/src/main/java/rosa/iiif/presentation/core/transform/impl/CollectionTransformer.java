@@ -21,6 +21,7 @@ import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFImageService;
+import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
@@ -78,6 +79,31 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 TOP_COLLECTION_LABEL
         ));
 
+        List<Reference> childList = new ArrayList<>();
+        for (String child : collection.getChildCollections()) {
+            try {
+                BookCollection childCol = store.loadBookCollection(child);
+
+                childList.add(new Reference(
+                        childCol.getId(),
+                        new TextValue(childCol.getLabel(), LANGUAGE_DEFAULT),
+                        IIIFNames.SC_COLLECTION
+                ));
+            } catch (IOException e) {}
+        }
+        col.setCollections(childList);
+
+        List<Reference> parentList = new ArrayList<>();
+        for (String parent : collection.getParentCollections()) {
+            try {
+                BookCollection parentCol = store.loadBookCollection(parent);
+                parentList.add(new Reference(
+                        parentCol.getId(),
+                        new TextValue(parentCol.getLabel(), LANGUAGE_DEFAULT),
+                        IIIFNames.SC_COLLECTION
+                ));
+            } catch (IOException e) {}
+        }
         col.setWithin(new Within(
                 urlId(TOP_COLLECTION_NAME, null, TOP_COLLECTION_NAME, PresentationRequestType.COLLECTION)
         ));
