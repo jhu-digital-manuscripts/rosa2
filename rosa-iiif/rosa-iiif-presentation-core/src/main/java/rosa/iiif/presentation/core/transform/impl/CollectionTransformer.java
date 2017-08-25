@@ -83,7 +83,9 @@ public class CollectionTransformer extends BasePresentationTransformer {
         for (String child : collection.getChildCollections()) {
             try {
                 BookCollection childCol = store.loadBookCollection(child);
-
+                if (childCol == null) {
+                    continue;
+                }
                 childList.add(new Reference(
                         childCol.getId(),
                         new TextValue(childCol.getLabel(), LANGUAGE_DEFAULT),
@@ -97,6 +99,9 @@ public class CollectionTransformer extends BasePresentationTransformer {
         for (String parent : collection.getParentCollections()) {
             try {
                 BookCollection parentCol = store.loadBookCollection(parent);
+                if (parentCol == null) {
+                    continue;
+                }
                 parentList.add(new Reference(
                         parentCol.getId(),
                         new TextValue(parentCol.getLabel(), LANGUAGE_DEFAULT),

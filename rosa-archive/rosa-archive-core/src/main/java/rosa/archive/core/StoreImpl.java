@@ -198,7 +198,7 @@ public class StoreImpl implements Store, ArchiveConstants {
             cmd.setParents(props.getProperty(CONFIG_PARENTS).split(","));
         }
         if (props.containsKey(CONFIG_CHILDREN)) {
-            cmd.setParents(props.getProperty(CONFIG_CHILDREN).split(","));
+            cmd.setChildren(props.getProperty(CONFIG_CHILDREN).split(","));
         }
         if (props.containsKey(CONFIG_DESCRIPTION)) {
             cmd.setDescription(props.getProperty(CONFIG_DESCRIPTION));
