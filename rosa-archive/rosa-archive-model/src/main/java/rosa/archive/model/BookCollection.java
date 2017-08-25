@@ -167,11 +167,11 @@ public class BookCollection implements HasId, Serializable {
     }
 
     public String[] getChildCollections() {
-        return metadata != null ? metadata.getChildren() : null;
+        return metadata != null ? metadata.getChildren() : new String[0];
     }
 
     public String[] getParentCollections() {
-        return metadata != null ? metadata.getParents() : null;
+        return metadata != null ? metadata.getParents() : new String[0];
     }
 
     @Override

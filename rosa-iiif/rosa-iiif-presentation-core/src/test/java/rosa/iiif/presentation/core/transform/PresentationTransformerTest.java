@@ -90,11 +90,6 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
         assertNotNull(col.getDescription("en"));
         assertFalse(col.getDescription("en").isEmpty());
-
-        assertNotNull(col.getRights());
-        assertTrue(col.getRights().hasOneLogo());
-        assertNotNull(col.getRights().getFirstLogo());
-        assertFalse(col.getRights().getFirstLogo().isEmpty());
     }
 
     /**

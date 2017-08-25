@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
@@ -25,7 +26,6 @@ import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
-import rosa.iiif.presentation.model.Rights;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.Within;
@@ -104,9 +104,15 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 ));
             } catch (IOException e) {}
         }
-        col.setWithin(new Within(
-                urlId(TOP_COLLECTION_NAME, null, TOP_COLLECTION_NAME, PresentationRequestType.COLLECTION)
-        ));
+        col.setWithin(
+            parentList.parallelStream()
+                    .map(par -> new Within(
+                            urlId(par.getReference(), null, par.getReference(), PresentationRequestType.COLLECTION),
+                            par.getType(),
+                            par.getLabel(LANGUAGE_DEFAULT))
+                    )
+                    .collect(Collectors.toList()).toArray(new Within[parentList.size()])
+        );
 
         return col;
     }

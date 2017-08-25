@@ -15,7 +15,11 @@ public class CollectionMetadata implements Serializable {
 
     private String[] languages;
 
-    public CollectionMetadata() {}
+    public CollectionMetadata() {
+        this.parents = new String[0];
+        this.children = new String[0];
+        this.languages = new String[0];
+    }
 
     public String getLabel() {
         return label;
