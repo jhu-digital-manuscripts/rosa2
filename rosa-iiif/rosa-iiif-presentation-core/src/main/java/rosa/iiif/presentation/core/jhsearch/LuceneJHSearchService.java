@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.Map;
 
 import rosa.archive.core.Store;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
@@ -22,6 +24,59 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
     private final JHSearchSerializer serializer;
     private final IIIFPresentationRequestFormatter formatter;
     
+    // Map collection names to available search fields
+    // TODO Make configurable in archive or move to properties file. Perhaps move to lucene mapper?
+    private static final Map<String,JHSearchField[]> searchfields = new HashMap<>();
+       
+    static {
+        searchfields.put("rosecollection",
+                new JHSearchField[] {
+                        JHSearchField.DESCRIPTION,
+                        JHSearchField.TRANSCRIPTION,
+                        JHSearchField.ILLUSTRATION, 
+                        JHSearchField.TITLE,
+                        JHSearchField.REPO});
+        
+        searchfields.put("pizancollection",
+                new JHSearchField[] {
+                        JHSearchField.DESCRIPTION,
+                        JHSearchField.TITLE,
+                        JHSearchField.REPO}); 
+        
+        searchfields.put("aorcollection",
+                new JHSearchField[] {
+                        JHSearchField.MARGINALIA,
+                        JHSearchField.SYMBOL,
+                        JHSearchField.UNDERLINE,
+                        JHSearchField.MARK,
+                        JHSearchField.BOOK,
+                        JHSearchField.PEOPLE,
+                        JHSearchField.PLACE,
+                        JHSearchField.LANGUAGE,
+                        JHSearchField.MARGINALIA_LANGUAGE,
+                        JHSearchField.NUMERAL,
+                        JHSearchField.DRAWING,
+                        JHSearchField.ERRATA,            
+                        JHSearchField.EMPHASIS,
+                        JHSearchField.CROSS_REFERENCE,
+                        JHSearchField.METHOD});
+        
+        searchfields.put("top",
+                new JHSearchField[] {
+                        JHSearchField.DESCRIPTION,
+                        JHSearchField.TITLE,
+                        JHSearchField.PEOPLE,
+                        JHSearchField.PLACE,
+                        JHSearchField.REPO,
+                        JHSearchField.TEXT});
+        }
+    
+    /**
+     * @param path
+     * @param formatter
+     * @param searchfields collection id -> search fields
+     * @throws IOException
+     */
     public LuceneJHSearchService(Path path, IIIFPresentationRequestFormatter formatter) throws IOException {
         super(path, new JHSearchLuceneMapper(formatter));
 
@@ -107,55 +162,13 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         }
     }
 
-    // TODO Hack to return search fields based on collection.
-    // TODO Refactor to make search service per collection?
-    
-    private static final JHSearchField[] ROSE_PIZAN_FIELDS = {
-            JHSearchField.DESCRIPTION,
-            JHSearchField.TRANSCRIPTION,
-            JHSearchField.ILLUSTRATION, 
-            JHSearchField.TITLE,
-            JHSearchField.REPO
-    };
-    
-    private static final JHSearchField[] AOR_FIELDS = {
-            JHSearchField.MARGINALIA,
-            JHSearchField.SYMBOL,
-            JHSearchField.UNDERLINE,
-            JHSearchField.MARK,
-            JHSearchField.BOOK,
-            JHSearchField.PEOPLE,
-            JHSearchField.PLACE,
-            JHSearchField.LANGUAGE,
-            JHSearchField.MARGINALIA_LANGUAGE,
-            JHSearchField.NUMERAL,
-            JHSearchField.DRAWING,
-            JHSearchField.ERRATA,            
-            JHSearchField.EMPHASIS,
-            JHSearchField.CROSS_REFERENCE,
-            JHSearchField.METHOD,
-    };
-
-    private static final JHSearchField[] SHARED_FIELDS = {
-            JHSearchField.DESCRIPTION,
-            JHSearchField.TITLE,
-            JHSearchField.PEOPLE,
-            JHSearchField.PLACE,
-            JHSearchField.REPO,
-            JHSearchField.TEXT
-    };
-    
     @Override
     public void handle_info_request(PresentationRequest req, OutputStream os) throws IOException {
-        JHSearchField[] fields;
-        String identifier = req.getType() == PresentationRequestType.COLLECTION ? req.getName() : req.getId();
+        JHSearchField[] fields = searchfields.get(req.getType() == PresentationRequestType.COLLECTION ?
+                req.getName() : req.getId());
         
-        if (identifier.contains("rose") || identifier.contains("pizan")) {
-            fields = ROSE_PIZAN_FIELDS;
-        } else if (identifier.contains("aor")) {
-            fields = AOR_FIELDS;
-        } else {
-            fields = SHARED_FIELDS;
+        if (fields == null) {
+            fields = new JHSearchField[]{};
         }
         
         serializer.write(fields, JHSearchCategory.values(), os);    
