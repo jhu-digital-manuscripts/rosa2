@@ -87,7 +87,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
                     continue;
                 }
                 childList.add(new Reference(
-                        childCol.getId(),
+                        urlId(childCol.getId(), null, childCol.getId(), PresentationRequestType.COLLECTION),
                         new TextValue(childCol.getLabel(), LANGUAGE_DEFAULT),
                         IIIFNames.SC_COLLECTION
                 ));
@@ -103,20 +103,15 @@ public class CollectionTransformer extends BasePresentationTransformer {
                     continue;
                 }
                 parentList.add(new Reference(
-                        parentCol.getId(),
+                        urlId(parentCol.getId(), null, parentCol.getId(), PresentationRequestType.COLLECTION),
                         new TextValue(parentCol.getLabel(), LANGUAGE_DEFAULT),
                         IIIFNames.SC_COLLECTION
                 ));
             } catch (IOException e) {}
         }
-        col.setWithin(
-            parentList.parallelStream()
-                    .map(par -> new Within(
-                            urlId(par.getReference(), null, par.getReference(), PresentationRequestType.COLLECTION),
-                            par.getType(),
-                            par.getLabel(LANGUAGE_DEFAULT))
-                    )
-                    .collect(Collectors.toList()).toArray(new Within[parentList.size()])
+        col.setWithin(parentList.parallelStream()
+                .map(par -> new Within(par.getReference(), par.getType(), par.getLabel(LANGUAGE_DEFAULT)))
+                .collect(Collectors.toList()).toArray(new Within[parentList.size()])
         );
 
         return col;

@@ -13,7 +13,7 @@ import rosa.iiif.presentation.model.Sequence;
 import java.util.List;
 
 public interface PresentationTransformer {
-    Collection topCollection(List<BookCollection> collections);
+//    Collection topCollection(List<BookCollection> collections);
     Collection collection(BookCollection collection);
     Manifest manifest(BookCollection collection, Book book);
     Sequence sequence(BookCollection collection, Book book, String name);
