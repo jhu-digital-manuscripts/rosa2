@@ -14,10 +14,6 @@ public class BookCollection implements HasId, Serializable {
      * Array of book IDs for the books in this collection.
      */
     private String[] books;
-    /**
-     * Array of languages supported by this collection.
-     */
-    private String[] languages;
     private CharacterNames characterNames;
     private IllustrationTitles illustrationTitles;
     private NarrativeSections narrativeSections;
@@ -28,14 +24,13 @@ public class BookCollection implements HasId, Serializable {
     private ReferenceSheet locationsRef;
     private BookReferenceSheet booksRef;
 
-    private String label;
+    private CollectionMetadata metadata;
 
     /**
      * Create an empty book collection. Is not persisted.
      */
     public BookCollection() {
         books = new String[0];
-        languages = new String[0];
     }
 
     @Override
@@ -49,11 +44,7 @@ public class BookCollection implements HasId, Serializable {
     }
 
     public String getLabel() {
-        return label;
-    }
-
-    public void setLabel(String label) {
-        this.label = label;
+        return metadata == null ? null : metadata.getLabel();
     }
 
     /**
@@ -123,11 +114,7 @@ public class BookCollection implements HasId, Serializable {
      *          List of languages
      */
     public String[] getAllSupportedLanguages() {
-        return languages;
-    }
-
-    public void setLanguages(String[] languages) {
-        this.languages = languages;
+        return metadata != null ? metadata.getLanguages() : new String[0];
     }
 
     /**
@@ -139,7 +126,7 @@ public class BookCollection implements HasId, Serializable {
      *          TRUE if language is supported by collection. FALSE otherwise.
      */
     public boolean isLanguageSupported(String language) {
-        for (String lang : languages) {
+        for (String lang : getAllSupportedLanguages()) {
             if (lang.equals(language)) {
                 return true;
             }
@@ -163,6 +150,30 @@ public class BookCollection implements HasId, Serializable {
         this.missingImage = missingImage;
     }
 
+    public CollectionMetadata getMetadata() {
+        return metadata;
+    }
+
+    public void setMetadata(CollectionMetadata metadata) {
+        this.metadata = metadata;
+    }
+
+    public String getDescription() {
+        return metadata != null ? metadata.getDescription() : null;
+    }
+
+    public String getLogo() {
+        return metadata != null ? metadata.getLogoUrl() : null;
+    }
+
+    public String[] getChildCollections() {
+        return metadata != null ? metadata.getChildren() : new String[0];
+    }
+
+    public String[] getParentCollections() {
+        return metadata != null ? metadata.getParents() : new String[0];
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -170,31 +181,26 @@ public class BookCollection implements HasId, Serializable {
 
         BookCollection that = (BookCollection) o;
 
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (!Arrays.equals(books, that.books)) return false;
-        if (booksRef != null ? !booksRef.equals(that.booksRef) : that.booksRef != null) return false;
         if (characterNames != null ? !characterNames.equals(that.characterNames) : that.characterNames != null)
             return false;
-        if (checksums != null ? !checksums.equals(that.checksums) : that.checksums != null) return false;
-        if (label != null ? !label.equals(that.getLabel()) : that.getLabel() != null) return false;
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (illustrationTitles != null ? !illustrationTitles.equals(that.illustrationTitles) : that.illustrationTitles != null)
             return false;
-        if (!Arrays.equals(languages, that.languages)) return false;
-        if (locationsRef != null ? !locationsRef.equals(that.locationsRef) : that.locationsRef != null) return false;
-        if (missingImage != null ? !missingImage.equals(that.missingImage) : that.missingImage != null) return false;
         if (narrativeSections != null ? !narrativeSections.equals(that.narrativeSections) : that.narrativeSections != null)
             return false;
+        if (checksums != null ? !checksums.equals(that.checksums) : that.checksums != null) return false;
+        if (missingImage != null ? !missingImage.equals(that.missingImage) : that.missingImage != null) return false;
         if (peopleRef != null ? !peopleRef.equals(that.peopleRef) : that.peopleRef != null) return false;
-
-        return true;
+        if (locationsRef != null ? !locationsRef.equals(that.locationsRef) : that.locationsRef != null) return false;
+        if (booksRef != null ? !booksRef.equals(that.booksRef) : that.booksRef != null) return false;
+        return metadata != null ? metadata.equals(that.metadata) : that.metadata == null;
     }
 
     @Override
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (label != null ? label.hashCode() : 0);
-        result = 31 * result + (books != null ? Arrays.hashCode(books) : 0);
-        result = 31 * result + (languages != null ? Arrays.hashCode(languages) : 0);
+        result = 31 * result + Arrays.hashCode(books);
         result = 31 * result + (characterNames != null ? characterNames.hashCode() : 0);
         result = 31 * result + (illustrationTitles != null ? illustrationTitles.hashCode() : 0);
         result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
@@ -203,6 +209,7 @@ public class BookCollection implements HasId, Serializable {
         result = 31 * result + (peopleRef != null ? peopleRef.hashCode() : 0);
         result = 31 * result + (locationsRef != null ? locationsRef.hashCode() : 0);
         result = 31 * result + (booksRef != null ? booksRef.hashCode() : 0);
+        result = 31 * result + (metadata != null ? metadata.hashCode() : 0);
         return result;
     }
 
@@ -210,9 +217,7 @@ public class BookCollection implements HasId, Serializable {
     public String toString() {
         return "BookCollection{" +
                 "id='" + id + '\'' +
-                ", label='" + label + "'" +
                 ", books=" + Arrays.toString(books) +
-                ", languages=" + Arrays.toString(languages) +
                 ", characterNames=" + characterNames +
                 ", illustrationTitles=" + illustrationTitles +
                 ", narrativeSections=" + narrativeSections +
@@ -221,6 +226,7 @@ public class BookCollection implements HasId, Serializable {
                 ", peopleRef=" + peopleRef +
                 ", locationsRef=" + locationsRef +
                 ", booksRef=" + booksRef +
+                ", metadata=" + metadata +
                 '}';
     }
 }

@@ -53,6 +53,7 @@ import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.CharacterNames;
+import rosa.archive.model.CollectionMetadata;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
 import rosa.archive.model.FileMap;
@@ -156,35 +157,32 @@ public class StoreImpl implements Store, ArchiveConstants {
         collection.setBooksRef(loadItem(BOOKS, collectionGroup, BookReferenceSheet.class, errors));
 
         Properties props = new Properties();
-        try (InputStream configIn = collectionGroup.getByteStream("config.properties")) {
+        try (InputStream configIn = collectionGroup.getByteStream(COLLECTION_CONFIG)) {
             props.load(configIn);
         }
 
+        CollectionMetadata cmd = new CollectionMetadata();
         // Add label to collection if it exists in the config
-        String label = props.getProperty("label");
-        if (label != null && !label.isEmpty()) {
-            collection.setLabel(label);
+        if (props.containsKey(CONFIG_LABEL)) {
+            cmd.setLabel(props.getProperty(CONFIG_LABEL));
         }
         
-        String langs = props.getProperty("languages");
+        String langs = props.getProperty(CONFIG_LANGUAGES);
         if (langs != null) {
-            collection.setLanguages(langs.split(","));
+            cmd.setLanguages(langs.split(","));
         }
         
         if (collectionGroup.hasByteStream(MISSING_IMAGE)) {
-            String height_prop = "missing_image.height";
-            String width_prop = "missing_image.width";
-            
-            if (!props.containsKey(width_prop) || !props.containsKey(height_prop)) {
-                errors.add("Missing properties: " + width_prop + ", " + height_prop);
+            if (!props.containsKey(CONFIG_MISSING_WIDTH) || !props.containsKey(CONFIG_MISSING_HEIGHT)) {
+                errors.add("Missing properties: " + CONFIG_MISSING_WIDTH + ", " + CONFIG_MISSING_HEIGHT);
             } else {
                 BookImage missing = new BookImage();
                 missing.setId(MISSING_IMAGE);
                 missing.setMissing(false);
 
                 try {
-                    missing.setWidth(Integer.parseInt(props.getProperty(width_prop)));
-                    missing.setHeight(Integer.parseInt(props.getProperty(height_prop)));
+                    missing.setWidth(Integer.parseInt(props.getProperty(CONFIG_MISSING_WIDTH)));
+                    missing.setHeight(Integer.parseInt(props.getProperty(CONFIG_MISSING_HEIGHT)));
                 } catch (NumberFormatException e) {
                     errors.add("Failed to parse missing image dimensions in config.properties");
                 }
@@ -192,6 +190,21 @@ public class StoreImpl implements Store, ArchiveConstants {
                 collection.setMissingImage(missing);                
             }
         }
+
+        if (props.containsKey(CONFIG_LOGO)) {
+            cmd.setLogoUrl(props.getProperty(CONFIG_LOGO));
+        }
+        if (props.containsKey(CONFIG_PARENTS)) {
+            cmd.setParents(props.getProperty(CONFIG_PARENTS).split(","));
+        }
+        if (props.containsKey(CONFIG_CHILDREN)) {
+            cmd.setChildren(props.getProperty(CONFIG_CHILDREN).split(","));
+        }
+        if (props.containsKey(CONFIG_DESCRIPTION)) {
+            cmd.setDescription(props.getProperty(CONFIG_DESCRIPTION));
+        }
+
+        collection.setMetadata(cmd);
         
         return collection;
     }

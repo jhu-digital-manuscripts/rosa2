@@ -64,8 +64,8 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
         return collectionTransformer.collection(collection);
     }
 
-    @Override
-    public Collection topCollection(List<BookCollection> collections) {
-        return collectionTransformer.topCollection(collections);
-    }
+//    @Override
+//    public Collection topCollection(List<BookCollection> collections) {
+//        return collectionTransformer.topCollection(collections);
+//    }
 }

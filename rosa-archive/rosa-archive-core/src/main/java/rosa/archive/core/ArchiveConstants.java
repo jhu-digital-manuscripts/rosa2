@@ -54,6 +54,8 @@ public interface ArchiveConstants {
     String AOR_ANNOTATION = ".aor";
 
     String FILE_MAP = "filemap.csv";
+
+    String COLLECTION_CONFIG = "config.properties";
     
     // Images names
 
@@ -92,4 +94,14 @@ public interface ArchiveConstants {
     String TXT_EXT = ".txt";
 
     String TIF_EXT = ".tif";
+
+    // Collection config properties
+    String CONFIG_LABEL = "label";
+    String CONFIG_DESCRIPTION = "description";
+    String CONFIG_MISSING_HEIGHT = "missing_image.height";
+    String CONFIG_MISSING_WIDTH = "missing_image.width";
+    String CONFIG_PARENTS = "parents";
+    String CONFIG_CHILDREN = "children";
+    String CONFIG_LANGUAGES = "languages";
+    String CONFIG_LOGO = "logo";
 }

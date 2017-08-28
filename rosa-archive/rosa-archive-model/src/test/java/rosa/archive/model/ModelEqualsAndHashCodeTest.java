@@ -237,4 +237,14 @@ public class ModelEqualsAndHashCodeTest {
                 .verify();
     }
 
+    @Test
+    public void collectionMetadataTest() {
+        EqualsVerifier
+                .forClass(CollectionMetadata.class)
+                .usingGetClass()
+                .allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
+                .verify();
+    }
+
 }
