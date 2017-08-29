@@ -1,1 +1,1 @@
-mvn clean install -Diiif.pres.scheme=https -Diiif.pres.host=rosetest.library.jhu.edu -Diiif.image.scheme=https -Diiif.image.host=image.library.jhu.edu -Diiif.image.prefix=/iiif
+mvn clean install -Diiif.pres.scheme=https -Diiif.pres.port=443 -Diiif.pres.host=rosetest.library.jhu.edu -Diiif.image.scheme=https -Diiif.image.port=443 -Diiif.image.host=image.library.jhu.edu -Diiif.image.prefix=/iiif
