@@ -69,12 +69,20 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                         JHSearchField.PLACE,
                         JHSearchField.REPO,
                         JHSearchField.TEXT});
+
+        searchfields.put("dlmm",
+                new JHSearchField[] {
+                        JHSearchField.DESCRIPTION,
+                        JHSearchField.TITLE,
+                        JHSearchField.PEOPLE,
+                        JHSearchField.PLACE,
+                        JHSearchField.REPO,
+                        JHSearchField.TEXT});
         }
     
     /**
      * @param path
      * @param formatter
-     * @param searchfields collection id -> search fields
      * @throws IOException
      */
     public LuceneJHSearchService(Path path, IIIFPresentationRequestFormatter formatter) throws IOException {
@@ -123,8 +131,21 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         String req_url = formatter.format(req);
 
         // Restrict to a specific collection if the collection is not "top"
-        if (req.getType() == PresentationRequestType.COLLECTION && !"top".equals(req.getName())) {
-            restrict_query = new Query(JHSearchField.COLLECTION_ID, req_url);
+        // TODO We should load the archive collection to check for child/parent relationships in order to properly generate the restriction query
+        if (req.getType() == PresentationRequestType.COLLECTION) {
+            if ("dlmm".equals(req.getName())) {
+                String rose_url = formatter.format(
+                        new PresentationRequest(null, "rosecollection", PresentationRequestType.COLLECTION));
+                String pizan_url = formatter.format(
+                        new PresentationRequest(null, "pizancollection", PresentationRequestType.COLLECTION));
+                restrict_query = new Query(
+                        QueryOperation.OR,
+                        new Query(JHSearchField.COLLECTION_ID, rose_url),
+                        new Query(JHSearchField.COLLECTION_ID, pizan_url)
+                );
+            } else if (!"top".equals(req.getName())) {
+                restrict_query = new Query(JHSearchField.COLLECTION_ID, req_url);
+            }
         } else if (req.getType() == PresentationRequestType.MANIFEST) {
             restrict_query = new Query(JHSearchField.MANIFEST_ID, req_url);
         }
