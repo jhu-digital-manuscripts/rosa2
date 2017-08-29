@@ -66,7 +66,7 @@ public class IIIFRequestFormatter {
     }
 
     private String base() {
-        return scheme + "://" + host + (port == -1 || (scheme.equals("http") && port == 80) ? "" : ":" + port) + prefix + "/";
+        return scheme + "://" + host + (port == -1 || (scheme.equals("http") && port == 80) || (scheme.equals("https") && port == 443) ? "" : ":" + port) + prefix + "/";
     }
 
     private String format(Region reg) {
