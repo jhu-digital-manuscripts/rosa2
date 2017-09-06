@@ -27,6 +27,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
     // Map collection names to available search fields
     // TODO Make configurable in archive or move to properties file. Perhaps move to lucene mapper?
     private static final Map<String,JHSearchField[]> searchfields = new HashMap<>();
+    private static final Map<String,JHSearchCategory[]> searchcategories = new HashMap<>();
        
     static {
         searchfields.put("rosecollection",
@@ -36,12 +37,20 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                         JHSearchField.ILLUSTRATION, 
                         JHSearchField.TITLE,
                         JHSearchField.REPO});
+        searchcategories.put("rosecollection",
+                new JHSearchCategory[] {JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION, JHSearchCategory.DATE,
+                        JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN, JHSearchCategory.TYPE,
+                        JHSearchCategory.TRANSCRIPTION});
         
         searchfields.put("pizancollection",
                 new JHSearchField[] {
                         JHSearchField.DESCRIPTION,
                         JHSearchField.TITLE,
-                        JHSearchField.REPO}); 
+                        JHSearchField.REPO});
+        searchcategories.put("pizancollection",
+                new JHSearchCategory[] {JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION, JHSearchCategory.DATE,
+                        JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN, JHSearchCategory.TYPE,
+                        JHSearchCategory.TRANSCRIPTION});
         
         searchfields.put("aorcollection",
                 new JHSearchField[] {
@@ -60,6 +69,10 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                         JHSearchField.EMPHASIS,
                         JHSearchField.CROSS_REFERENCE,
                         JHSearchField.METHOD});
+        searchcategories.put("aorcollection",
+                new JHSearchCategory[] {JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME, JHSearchCategory.DATE,
+                        JHSearchCategory.LOCATION, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN,
+                        JHSearchCategory.TRANSCRIPTION});
         
         searchfields.put("top",
                 new JHSearchField[] {
@@ -69,6 +82,9 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                         JHSearchField.PLACE,
                         JHSearchField.REPO,
                         JHSearchField.TEXT});
+        searchcategories.put("top",
+                new JHSearchCategory[] {JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION,
+                        JHSearchCategory.DATE, JHSearchCategory.REPOSITORY});
 
         searchfields.put("dlmm",
                 new JHSearchField[] {
@@ -78,6 +94,10 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                         JHSearchField.PLACE,
                         JHSearchField.REPO,
                         JHSearchField.TEXT});
+        searchcategories.put("dlmm",
+                new JHSearchCategory[]{JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION,
+                        JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN,
+                        JHSearchCategory.TYPE, JHSearchCategory.TRANSCRIPTION});
         }
     
     /**
@@ -185,14 +205,20 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
 
     @Override
     public void handle_info_request(PresentationRequest req, OutputStream os) throws IOException {
-        JHSearchField[] fields = searchfields.get(req.getType() == PresentationRequestType.COLLECTION ?
-                req.getName() : req.getId());
+        String name = req.getType() == PresentationRequestType.COLLECTION ? req.getName() : req.getId();
+
+        JHSearchField[] fields = searchfields.get(name);
+        JHSearchCategory[] categories = searchcategories.get(name);
         
         if (fields == null) {
             fields = new JHSearchField[]{};
         }
-        
-        serializer.write(fields, JHSearchCategory.values(), os);    
+        if (categories == null) {
+            categories = new JHSearchCategory[0];
+        }
+
+
+        serializer.write(fields, categories, os);
     }
 
 	@Override
