@@ -30,6 +30,7 @@ import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.ReferenceSheet;
+import rosa.archive.model.Transcription;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.Drawing;
@@ -197,14 +198,25 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         String facet_repo = md.getRepository();
         String facet_date = md.getDate();
         int numPages = md.getNumberOfPages();
+        int numIlls = md.getNumberOfIllustrations();
         String facet_common_name = md.getCommonName();
+        String facet_origin = md.getOrigin();
+        String facet_type = md.getType();
 
         addFacet(doc, JHSearchCategory.COMMON_NAME, facet_common_name);
         addFacet(doc, JHSearchCategory.NUM_PAGES, quantize(numPages, 100));
         addFacet(doc, JHSearchCategory.LOCATION, facet_loc);
         addFacet(doc, JHSearchCategory.REPOSITORY, facet_repo);
         addFacet(doc, JHSearchCategory.DATE, facet_date);
-        
+        addFacet(doc, JHSearchCategory.ORIGIN, facet_origin);
+        addFacet(doc, JHSearchCategory.NUM_ILLUS, quantize(numIlls, 10));
+        addFacet(doc, JHSearchCategory.TYPE, facet_type);
+
+        Transcription tr = book.getTranscription();
+        // TODO how to tell if we have full VS partial transcription?
+        boolean hasTranscription = tr != null && tr.getXML() != null && !tr.getXML().isEmpty();
+        addFacet(doc, JHSearchCategory.TRANSCRIPTION, String.valueOf(hasTranscription));
+
         if (facet_author != null) {
             for (String s : facet_author) {
                 addFacet(doc, JHSearchCategory.AUTHOR, s);

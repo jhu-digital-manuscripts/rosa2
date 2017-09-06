@@ -483,7 +483,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         assertNotNull(result.getCategories());
         
         // Author category not present because Rose ms do not yet have author metadata
-        assertEquals(5, result.getCategories().size());
+        assertEquals(9, result.getCategories().size());
         
         result.getCategories().forEach(cat -> {
             assertEquals(1, cat.getValues().length);
@@ -521,10 +521,13 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         assertEquals(2, result.getMatches().length);        
         assertNotNull(result.getCategories());
         
-        assertEquals(6, result.getCategories().size());
-        
+        assertEquals(10, result.getCategories().size());
         result.getCategories().forEach(cat -> {
-            assertEquals(2, cat.getValues().length);
+            if (cat.getFieldName().equals("facet_origin") || cat.getFieldName().equals("facet_type")) {
+                assertEquals(1, cat.getValues().length);
+            } else {
+                assertEquals(2, cat.getValues().length);
+            }
             
             boolean foundfield = false;
             for (SearchCategory sc: JHSearchCategory.values()) {
@@ -561,7 +564,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
                 result.getMatches()[0].getId());
         assertNotNull(result.getCategories());
         
-        assertEquals(6, result.getCategories().size());
+        assertEquals(8, result.getCategories().size());
         
         result.getCategories().forEach(cat -> {
             // Folgers Ha2 has two author facet values
