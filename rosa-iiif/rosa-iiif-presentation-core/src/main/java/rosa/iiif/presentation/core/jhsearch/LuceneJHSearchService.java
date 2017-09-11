@@ -204,7 +204,12 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
 
     @Override
     public void handle_info_request(PresentationRequest req, OutputStream os) throws IOException {
-        String name = req.getType() == PresentationRequestType.COLLECTION ? req.getName() : req.getId();
+        String name;
+        if (req.getType() == PresentationRequestType.COLLECTION) {
+            name = req.getName();
+        } else {
+            name = req.getId().split("\\.")[0];
+        }
 
         JHSearchField[] fields = searchfields.get(name);
         JHSearchCategory[] categories = searchcategories.get(name);
