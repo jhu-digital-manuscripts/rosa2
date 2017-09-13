@@ -182,14 +182,14 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	}
 	
 	private void index_book_facets(Book book, Document doc) {
-        String[] facet_author = null;
-
         // Really need a better way of handling these metadata...
         if (book.getMultilangMetadata() != null) {
             BiblioData en = book.getMultilangMetadata().getBiblioDataMap().get("en");
 
             if (en != null) {
-                facet_author = en.getAuthors();
+                for (String s : en.getAuthors()) {
+                    addFacet(doc, JHSearchCategory.AUTHOR, s);
+                }
             }
         }
 
@@ -217,10 +217,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         boolean hasTranscription = tr != null && tr.getXML() != null && !tr.getXML().isEmpty();
         addFacet(doc, JHSearchCategory.TRANSCRIPTION, String.valueOf(hasTranscription));
 
-        if (facet_author != null) {
-            for (String s : facet_author) {
-                addFacet(doc, JHSearchCategory.AUTHOR, s);
-            }
+        for (BookText text : md.getTexts()) {
+            text.getAuthors().forEach(author -> addFacet(doc, JHSearchCategory.AUTHOR, author));
         }
 	}
 	

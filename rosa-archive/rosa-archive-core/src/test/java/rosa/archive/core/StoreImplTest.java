@@ -149,6 +149,7 @@ public class StoreImplTest extends BaseArchiveTest {
         assertNotNull(book.getPermission("en"));
         assertNotNull(book.getPermission("fr"));
         assertNotNull(book.getImages());
+        assertEquals("Moo cow", book.getBookMetadata("en").getTexts()[0].getAuthors().get(0));
     }
 
     /**

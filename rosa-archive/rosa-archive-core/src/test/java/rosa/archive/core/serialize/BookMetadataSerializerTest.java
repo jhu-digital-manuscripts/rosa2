@@ -50,6 +50,8 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
 
         assertNotNull(metadata.getTexts());
         assertEquals(1, metadata.getTexts().length);
+        assertEquals(1, metadata.getTexts()[0].getAuthors().size());
+        assertEquals("Moo cow", metadata.getTexts()[0].getAuthors().get(0));
     }
 
     @Test

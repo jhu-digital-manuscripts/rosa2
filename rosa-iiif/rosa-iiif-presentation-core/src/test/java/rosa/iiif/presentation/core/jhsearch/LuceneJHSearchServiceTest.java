@@ -481,9 +481,8 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
                 result.getMatches()[0].getId());
         
         assertNotNull(result.getCategories());
-        
-        // Author category not present because Rose ms do not yet have author metadata
-        assertEquals(9, result.getCategories().size());
+
+        assertEquals(10, result.getCategories().size());
         
         result.getCategories().forEach(cat -> {
             assertEquals(1, cat.getValues().length);
@@ -523,7 +522,9 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         
         assertEquals(10, result.getCategories().size());
         result.getCategories().forEach(cat -> {
-            if (cat.getFieldName().equals("facet_origin") || cat.getFieldName().equals("facet_type")) {
+            if (cat.getFieldName().equals("facet_author")) {
+                assertEquals(3, cat.getValues().length);
+            } else if (cat.getFieldName().equals("facet_origin") || cat.getFieldName().equals("facet_type")) {
                 assertEquals(1, cat.getValues().length);
             } else {
                 assertEquals(2, cat.getValues().length);
@@ -558,20 +559,23 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         SearchResult result = service.search(query, opts);
 
         assertNotNull("Search result was NULL", result);
-        assertEquals("Unexpected number of results found.", 1, result.getTotal());
-        assertEquals(1, result.getMatches().length);
+        assertEquals("Unexpected number of results found.", 2, result.getTotal());
+        assertEquals(2, result.getMatches().length);
         assertEquals("http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest",
-                result.getMatches()[0].getId());
+                result.getMatches()[1].getId());
         assertNotNull(result.getCategories());
-        
-        assertEquals(8, result.getCategories().size());
+
+        assertEquals(10, result.getCategories().size());
         
         result.getCategories().forEach(cat -> {
+            String name = cat.getFieldName();
             // Folgers Ha2 has two author facet values
             if (cat.getFieldName().equals(JHSearchCategory.AUTHOR.getFieldName())) {
-                assertEquals(2, cat.getValues().length);
-            } else {
+                assertEquals(3, cat.getValues().length);
+            } else if (name.equals(JHSearchCategory.ORIGIN.getFieldName()) || name.equals(JHSearchCategory.TYPE.getFieldName())) {
                 assertEquals(1, cat.getValues().length);
+            } else {
+                assertEquals(2, cat.getValues().length);
             }
             
             boolean foundfield = false;

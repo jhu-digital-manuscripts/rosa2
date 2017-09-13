@@ -1,6 +1,8 @@
 package rosa.archive.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -20,6 +22,7 @@ public final class BookText implements Serializable {
     private String lastPage;
 
     private String language;
+    private List<String> authors;
 
     /**
      * Create empty BookText
@@ -30,6 +33,7 @@ public final class BookText implements Serializable {
         leavesPerGathering = -1;
         numberOfIllustrations = -1;
         numberOfPages = -1;
+        authors = new ArrayList<>();
     }
 
     public int getLinesPerColumn() {
@@ -120,6 +124,14 @@ public final class BookText implements Serializable {
         this.language = language;
     }
 
+    public List<String> getAuthors() {
+        return authors;
+    }
+
+    public void addAuthor(String author) {
+        authors.add(author);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -137,6 +149,7 @@ public final class BookText implements Serializable {
         if (title != null ? !title.equals(text.title) : text.title != null) return false;
         if (firstPage != null ? !firstPage.equals(text.firstPage) : text.firstPage != null) return false;
         if (lastPage != null ? !lastPage.equals(text.lastPage) : text.lastPage != null) return false;
+        if (authors != null ? !authors.equals(text.authors) : text.authors != null) return false;
         return !(language != null ? !language.equals(text.language) : text.language != null);
 
     }
@@ -154,6 +167,7 @@ public final class BookText implements Serializable {
         result = 31 * result + (firstPage != null ? firstPage.hashCode() : 0);
         result = 31 * result + (lastPage != null ? lastPage.hashCode() : 0);
         result = 31 * result + (language != null ? language.hashCode() : 0);
+        result = 31 * result + (authors != null ? authors.hashCode() : 0);
         return result;
     }
 
@@ -171,6 +185,7 @@ public final class BookText implements Serializable {
                 ", firstPage='" + firstPage + '\'' +
                 ", lastPage='" + lastPage + '\'' +
                 ", language='" + language + '\'' +
+                ", authors='" + authors + '\'' +
                 '}';
     }
 }
