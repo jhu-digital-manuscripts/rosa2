@@ -10,7 +10,6 @@ import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.Sequence;
 
-import java.util.List;
 
 public interface PresentationTransformer {
 //    Collection topCollection(List<BookCollection> collections);

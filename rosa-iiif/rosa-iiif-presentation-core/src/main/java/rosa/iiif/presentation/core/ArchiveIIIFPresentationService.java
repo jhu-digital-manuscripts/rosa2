@@ -2,8 +2,6 @@ package rosa.iiif.presentation.core;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 import rosa.archive.core.SimpleStore;
