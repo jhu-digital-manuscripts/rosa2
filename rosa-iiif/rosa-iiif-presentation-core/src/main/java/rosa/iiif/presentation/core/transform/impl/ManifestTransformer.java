@@ -105,11 +105,6 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
                 SC_COLLECTION,
                 collection.getLabel()
         );
-        parent.addParentRef(new Within(
-                urlId("top", null, "top", PresentationRequestType.COLLECTION),
-                SC_COLLECTION,
-                CollectionTransformer.TOP_COLLECTION_LABEL
-        ));
         manifest.setWithin(parent);
         // TODO ranges
 //        manifest.setRanges(rangeTransformer.topRanges(collection, book));

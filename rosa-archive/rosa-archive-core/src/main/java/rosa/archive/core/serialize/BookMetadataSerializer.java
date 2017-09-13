@@ -49,6 +49,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
     private static final String MetadataTextsLocusTag = "locus";
     private static final String MetadataTextsFirstPageTag = "from";
     private static final String MetadataTextsLastPageTag = "to";
+    private static final String MetadataTextsAuthorTag = "author";
        
     @Override
     public BookMetadata read(InputStream is, List<String> errors) throws IOException {
@@ -193,6 +194,10 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
                     String.valueOf(text.getLeavesPerGathering()), doc));
             msItem.appendChild(note(MetadataTextsColsPerPageTag, String.valueOf(text.getColumnsPerPage()),
                     doc));
+
+            for (String author : text.getAuthors()) {
+                msItem.appendChild(note(MetadataTextsAuthorTag, author, doc));
+            }
         }
 
         XMLUtil.write(doc, out, false);
@@ -396,6 +401,15 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
                 text.setFirstPage(range.getAttribute(MetadataTextsFirstPageTag));
                 text.setLastPage(range.getAttribute(MetadataTextsLastPageTag));
             }
+
+            NodeList notes = el.getElementsByTagName("note");
+            for (int j = 0; j < notes.getLength(); j++) {
+                Element moo = (Element) notes.item(j);
+                if (moo != null && MetadataTextsAuthorTag.equals(moo.getAttribute("type"))) {
+                    text.addAuthor(moo.getTextContent());
+                }
+            }
+
             texts.add(text);
         }
 
