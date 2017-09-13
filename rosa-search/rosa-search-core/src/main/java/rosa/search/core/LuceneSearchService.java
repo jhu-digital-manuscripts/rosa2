@@ -275,10 +275,14 @@ public class LuceneSearchService implements SearchService {
         int compare;
         
         if (i1 > 0 && i2 > 0 && s1.charAt(i1 - 1) == '-' && s2.charAt(i2 -1) == '-') {
-            int n1 = Integer.parseInt(s1.substring(0, i1 - 1));
-            int n2 = Integer.parseInt(s2.substring(0, i2 - 1));
+            try {
+                int n1 = Integer.parseInt(s1.substring(0, i1 - 1));
+                int n2 = Integer.parseInt(s2.substring(0, i2 - 1));
 
-            compare = n1 - n2;   
+                compare = n1 - n2;
+            }   catch (NumberFormatException e) {
+                compare = s1.substring(0, i1).compareTo(s2.substring(0, i2));
+            }
         } else {
             compare = s1.substring(0, i1).compareTo(s2.substring(0, i2));
         }
