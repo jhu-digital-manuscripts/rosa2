@@ -40,6 +40,7 @@ public class Range extends PresentationBase {
     private List<String> ranges;
 
     public Range() {
+        super();
         canvases = new ArrayList<>();
         ranges = new ArrayList<>();
         setType(IIIFNames.SC_RANGE);

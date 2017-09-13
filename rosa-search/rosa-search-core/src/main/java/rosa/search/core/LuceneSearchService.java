@@ -3,12 +3,21 @@ package rosa.search.core;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.apache.lucene.document.Document;
+import org.apache.lucene.facet.DrillDownQuery;
+import org.apache.lucene.facet.FacetResult;
+import org.apache.lucene.facet.Facets;
+import org.apache.lucene.facet.FacetsCollector;
+import org.apache.lucene.facet.LabelAndValue;
+import org.apache.lucene.facet.sortedset.DefaultSortedSetDocValuesReaderState;
+import org.apache.lucene.facet.sortedset.SortedSetDocValuesFacetCounts;
+import org.apache.lucene.facet.sortedset.SortedSetDocValuesReaderState;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.IndexWriterConfig.OpenMode;
@@ -26,7 +35,10 @@ import org.apache.lucene.store.FSDirectory;
 import rosa.archive.core.Store;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.search.model.CategoryValueCount;
 import rosa.search.model.Query;
+import rosa.search.model.QueryTerm;
+import rosa.search.model.SearchCategoryMatch;
 import rosa.search.model.SearchField;
 import rosa.search.model.SearchMatch;
 import rosa.search.model.SearchOptions;
@@ -111,12 +123,10 @@ public class LuceneSearchService implements SearchService {
             if (opts == null) {
                 opts = new SearchOptions();
             }
-
-            long offset = opts.getOffset();
-
+            
             TopDocs hits;
-            int hits_offset;
-
+            List<SearchCategoryMatch> category_matches;
+            
             SortOrder sort_order = opts.getSortOrder();
             Sort lucene_order;
             
@@ -125,28 +135,35 @@ public class LuceneSearchService implements SearchService {
             } else {
             	lucene_order = Sort.RELEVANCE;
             }
-            
-            if (offset == 0) {
 
-            	hits = searcher.search(q, opts.getMatchCount(), lucene_order);
-            	hits_offset = 0;
-            } else {
-            	if (offset > Integer.MAX_VALUE) {
-                	// TODO Do multiple small searches instead?
-            		throw new IllegalStateException("Offset too large: " + offset);
-            	}
-
-            	hits = searcher.search(q, (int) offset + opts.getMatchCount(), lucene_order);
-            	hits_offset = (int) offset;
+            if (opts.getOffset() > Integer.MAX_VALUE) {
+                // TODO Do multiple small searches instead?
+                throw new IllegalStateException("Offset too large: " + opts.getOffset());
             }
-           
+            
+            int offset = (int) opts.getOffset();
+            
+            if (opts.getCategories() != null) {
+                // Categories indicate a faceted search
+
+                FacetsCollector fc = new FacetsCollector(true);
+                SortedSetDocValuesReaderState state = new DefaultSortedSetDocValuesReaderState(searcher.getIndexReader());
+                
+                hits = FacetsCollector.search(searcher, create_dill_down_query(opts.getCategories(), q), null,
+                        offset + opts.getMatchCount(), lucene_order, fc);
+                category_matches = get_category_matches(fc, state);
+            } else {
+                hits = searcher.search(q, offset + opts.getMatchCount(), lucene_order);
+                category_matches = null;
+            }
+            
             Highlighter hilighter = new Highlighter(new QueryScorer(q));
 
             Set<String> query_context_fields = mapper.getLuceneContextFields(query);
 
-            SearchMatch[] matches = new SearchMatch[hits.scoreDocs.length - hits_offset];
+            SearchMatch[] matches = new SearchMatch[hits.scoreDocs.length - offset];
 
-            for (int i = hits_offset; i < hits.scoreDocs.length; i++) {
+            for (int i = offset; i < hits.scoreDocs.length; i++) {
                 int doc_id = hits.scoreDocs[i].doc;
 
                 Document doc = searcher.doc(doc_id);
@@ -156,13 +173,11 @@ public class LuceneSearchService implements SearchService {
                 List<String> context = get_match_context(hilighter, doc, query_context_fields);
                 List<String> values = get_match_values(doc);
 
-                matches[i - hits_offset] = new SearchMatch(id, context, values);
+                matches[i - offset] = new SearchMatch(id, context, values);
             }
 
-            long total = hits.totalHits;
-            
+            return new SearchResult(offset, hits.totalHits, opts.getMatchCount(), matches, sort_order, q.toString(), category_matches);
 
-            return new SearchResult(offset, total, opts.getMatchCount(), matches, sort_order, q.toString());
         } finally {
             searcher_manager.release(searcher);
         }
@@ -181,6 +196,70 @@ public class LuceneSearchService implements SearchService {
         }
 
         return values;
+    }
+    
+    // Create a facet query from a set of category values and a base query
+    private DrillDownQuery create_dill_down_query(List<QueryTerm> category_terms, org.apache.lucene.search.Query baseQuery) {
+        DrillDownQuery dq = new DrillDownQuery(mapper.getFacetsConfig(), baseQuery);
+        
+        category_terms.forEach(t -> {
+            // Empty or null value indicates match all values
+            if (t.getValue() == null || t.getValue().isEmpty()) {
+                dq.add(t.getField());
+            } else {
+                dq.add(t.getField(), t.getValue());
+            }
+        });
+        
+        return dq;
+    }
+
+    /**
+     * Get the category matches from the facets collected from a search.
+     *
+     * IMPL NOTE: Using this method for getting category values relies on
+     * {@link SortedSetDocValuesFacetCounts#getAllDims(int)} forcing us to
+     * specify the maximum number of values that can be returned. Undocumented
+     * is the maximum that this number can be:
+     * <em>topN</em> must be less than org.apache.lucene.util.ArrayUtil.MAX_ARRAY_LENGTH,
+     * which is Integer.MAX_VALUE - whatever overhead arrays require.
+     *
+     */
+    private List<SearchCategoryMatch> get_category_matches(FacetsCollector fc, SortedSetDocValuesReaderState state) throws IOException {
+        Facets facets = new SortedSetDocValuesFacetCounts(state, fc);
+
+        List<SearchCategoryMatch> result = new ArrayList<>();
+
+        int mamResults = searcher_manager.acquire().getIndexReader().numDocs();
+        facets.getAllDims(mamResults).forEach(f -> result.add(get_category_matches(f)));
+
+        result.sort((o1, o2) -> o1.getFieldName().compareToIgnoreCase(o2.getFieldName()));
+        result.parallelStream().forEach(cat -> {
+            // Sort values under this category
+            Arrays.sort(cat.getValues(), (o1, o2) -> {
+                String v1 = o1.getValue();
+                String v2 = o2.getValue();
+                try {
+                    return Integer.parseInt(v1) - Integer.parseInt(v2);
+                } catch (NumberFormatException e) {
+                    return v1.compareToIgnoreCase(v2);
+                }
+            });
+        });
+
+        return result;
+    }
+
+    // Get the values within a category together with corresponding coutns from a FacetResult
+    private SearchCategoryMatch get_category_matches(FacetResult facet_result) {
+        CategoryValueCount[] values = new CategoryValueCount[facet_result.labelValues.length];
+        
+        for (int i = 0; i < facet_result.labelValues.length; i++) {
+            LabelAndValue lv = facet_result.labelValues[i];
+            values[i] = new CategoryValueCount(lv.label, lv.value.intValue());
+        }
+        
+        return new SearchCategoryMatch(facet_result.dim, values);
     }
 
     @Override

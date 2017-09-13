@@ -32,6 +32,7 @@ import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
 import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
+import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
@@ -64,7 +65,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         ImageIdMapper idMapper = new JhuFSIImageIdMapper(idMap);
 
         CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
-        CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter);
+        CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter, simpleStore, imageReqFormatter, idMapper);
         SequenceTransformer sequenceTransformer = new SequenceTransformer(presentationReqFormatter, canvasTransformer);
         AnnotationTransformer annotationTransformer = new AnnotationTransformer(presentationReqFormatter, new ArchiveNameParser());
 
@@ -79,6 +80,17 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         TransformerSet transformerSet = new TransformerSet(transformers);
 
         presentationTransformer = new PresentationTransformerImpl(presentationReqFormatter, transformerSet, collectionTransformer);
+    }
+
+    @Test
+    public void collectionTest() throws IOException {
+        Collection col = presentationTransformer.collection(loadValidCollection());
+
+        assertNotNull(col);
+
+        assertNotNull(col.getDescription("en"));
+        assertFalse(col.getDescription("en").isEmpty());
+        System.out.println(col);
     }
 
     /**
@@ -252,7 +264,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         checkTextValue(list.getLabel());
         assertEquals("Unexpected object type found.", IIIFNames.SC_ANNOTATION_LIST, list.getType());
         assertNotNull("'within' property missing.", list.getWithin());
-        assertFalse("'within' property empty.", list.getWithin().isEmpty());
+        assertFalse("'within' property empty.", list.getWithin() == null && list.getWithin().size() == 0);
 
         for (Annotation ann : list) {
             checkAnnotation(ann);

@@ -7,7 +7,9 @@ import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
+import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.PresentationBase;
@@ -16,6 +18,7 @@ import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Rights;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.Service;
+import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
@@ -27,6 +30,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
+import java.util.List;
 
 // TODO handle multiple languages?
 public class JsonldSerializer implements PresentationSerializer, IIIFNames {
@@ -180,11 +184,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
     private void writeJsonld(Reference ref, JSONWriter jWriter) {
         jWriter.object();
-
-        jWriter.key("@id").value(ref.getReference());
-        jWriter.key("@type").value(ref.getType());
-        jWriter.key("label").value(ref.getLabel().getValue());
-
+        writeBaseData(ref, jWriter);
         jWriter.endObject();
     }
 
@@ -206,18 +206,6 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         writeBaseData(manifest, jWriter);
         writeIfNotNull("viewingDirection",
                 manifest.getViewingDirection() != null ? manifest.getViewingDirection().getKeyword() : null, jWriter);
-
-        /*
-        "service": {
-            "@context": "http://iiif.io/api/search/0/context.json",
-            "@id": "http://example.org/services/identifier/search",
-            "profile": "http://iiif.io/api/search/0/search"
-          }
-         */
-        // TODO do this right
-        if (manifest.getSearchService() != null) {
-            writeService(manifest.getSearchService(), jWriter);
-        }
 
         if (manifest.getDefaultSequence() == null && (manifest.getOtherSequences() == null
                 || manifest.getOtherSequences().isEmpty())) {
@@ -463,7 +451,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
             writeIfNotNull("format", source.getFormat(), jWriter);
             writeIfNotNull("width", width, jWriter);
             writeIfNotNull("height", height, jWriter);
-            writeService(source.getService(), jWriter);
+            writeService(source.getService(), true, jWriter);
         }
         writeIfNotNull("label", label, jWriter);
 
@@ -518,7 +506,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      * @param <T> type
      * @throws JSONException
      */
-    protected  <T extends PresentationBase> void writeBaseData(T obj, JSONWriter jWriter)
+    protected <T extends PresentationBase> void writeBaseData(T obj, JSONWriter jWriter)
             throws JSONException {
         jWriter.key("@id").value(obj.getId());
         jWriter.key("@type").value(obj.getType());
@@ -541,14 +529,13 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
             jWriter.endArray();
         }
 
-        if (obj.getThumbnailUrl() != null) {
+        if (obj.getThumbnails().size() == 1) {
             jWriter.key("thumbnail");
-            jWriter.object();
-
-            jWriter.key("@id").value(obj.getThumbnailUrl());
-            writeService(obj.getThumbnailService(), jWriter);
-
-            jWriter.endObject();
+            writeThumbnail(obj.getThumbnails().get(0), jWriter);
+        } else if (obj.getThumbnails().size() > 1) {
+            jWriter.key("thumbnail").array();
+            obj.getThumbnails().forEach(thumb -> writeThumbnail(thumb, jWriter));
+            jWriter.endArray();
         }
 
         // Rights info
@@ -572,7 +559,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
                 for (String logo : preziRights.getLogoUris()) {
                     if (preziRights.hasLogoService()) {
                         jWriter.object().key("@id").value(logo);
-                        writeService(preziRights.getLogoService(), jWriter);
+                        writeService(preziRights.getLogoService(), true, jWriter);
                         jWriter.endObject();
                     } else {
                         jWriter.value(logo);
@@ -583,7 +570,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
                 if (preziRights.hasLogoService()) {
                     jWriter.key("logo").object();
                     jWriter.key("@id").value(preziRights.getFirstLogo());
-                    writeService(preziRights.getLogoService(), jWriter);
+                    writeService(preziRights.getLogoService(), true, jWriter);
                     jWriter.endObject();
                 } else {
                     writeIfNotNull("logo", preziRights.getFirstLogo(), jWriter);
@@ -601,53 +588,93 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
             jWriter.endObject();
         }
-        writeService(obj.getService(), jWriter);
+        writeServices(obj.getServices(), jWriter);
         writeIfNotNull("seeAlso", obj.getSeeAlso(), jWriter);
-        writeIfNotNull("within", obj.getWithin(), jWriter);
+        writeWithins(obj.getWithin(), jWriter);
     }
 
-    private void writeService(Service service, JSONWriter jWriter) throws JSONException {
+    private void writeWithins(List<Within> withins, JSONWriter writer) {
+        if (withins == null || withins.size() == 0) {
+            return;
+        }
+
+        boolean multi = withins.size() > 1;
+        writer.key("within");
+        if (multi) {
+            writer.array();
+        }
+        for (Within w : withins) {
+            writeWithin(w, writer);
+        }
+        if (multi) {
+            writer.endArray();
+        }
+    }
+
+    private void writeWithin(Within within, JSONWriter writer) throws JSONException {
+        if (within.onlyId()) {
+            writer.value(within.getId());
+        } else {
+            writer.object();
+
+            writeIfNotNull("@id", within.getId(), writer);
+            writeIfNotNull("@type", within.getType(), writer);
+            writeIfNotNull("label", within.getLabel(), writer);
+            writeWithins(within.getWithins(), writer);
+
+            writer.endObject();
+        }
+    }
+
+    private void writeServices(List<Service> services, JSONWriter jWriter) throws JSONException {
+        if (services == null || services.size() == 0) {
+            return;
+        }
+        boolean multi = services.size() > 1;
+
+        jWriter.key("service");
+        if (multi) {
+            jWriter.array();
+        }
+
+        services.forEach(service -> writeService(service, false, jWriter));
+
+        if (multi) {
+            jWriter.endArray();
+        }
+    }
+
+    private void writeService(Service service, boolean writeKey, JSONWriter jWriter) throws JSONException {
         if (service == null) {
             return;
         }
 
-        jWriter.key("service");
+        if (writeKey) {
+            jWriter.key("service");
+        }
         jWriter.object();
-
         writeIfNotNull("@context", service.getContext(), jWriter);
         writeIfNotNull("@id", service.getId(), jWriter);
         writeIfNotNull("profile", service.getProfile(), jWriter);
+        writeIfNotNull("label", service.getLabel(), jWriter);
 
-//        if (service instanceof IIIFImageService) {
-//            IIIFImageService imageService = (IIIFImageService) service;
-//
-//            writeIfNotNull("height", imageService.getHeight(), jWriter);
-//            writeIfNotNull("width", imageService.getWidth(), jWriter);
-//
-//            if (imageService.getTileHeight() != -1 || imageService.getTileWidth() != -1
-//                    || imageService.getScaleFactors() != null) {
-//                jWriter.key("tiles");
-//                jWriter.array();
-//                jWriter.object();
-//
-//                writeIfNotNull("width", imageService.getTileWidth(), jWriter);
-//                writeIfNotNull("height", imageService.getTileHeight(), jWriter);
-//                if (imageService.getScaleFactors() != null) {
-//                    jWriter.key("scaleFactors");
-//                    jWriter.array();
-//                    StringBuilder sb = new StringBuilder();
-//                    for (int i = 0; i < imageService.getScaleFactors().length; i++) {
-//                        if (i != 0) {
-//                            sb.append(',');
-//                        }
-//                        sb.append(imageService.getScaleFactors()[i]);
-//                    }
-//                    jWriter.endArray();
-//                }
-//                jWriter.endObject();
-//                jWriter.endArray(); // TODO the hell is with this structure (its from the IIIF spec)??
-//            }
-//        }
+        if (service instanceof IIIFImageService) {
+            IIIFImageService iiif = (IIIFImageService) service;
+            writeIfNotNull("width", iiif.getWidth(), jWriter);
+            writeIfNotNull("height", iiif.getHeight(), jWriter);
+        }
+
+        jWriter.endObject();
+    }
+
+    private void writeThumbnail(Image thumb, JSONWriter jWriter) throws JSONException {
+        jWriter.object();
+        jWriter.key("@id").value(thumb.getUri());
+        writeIfNotNull("@type", thumb.getType(), jWriter);
+        writeIfNotNull("format", thumb.getFormat(), jWriter);
+        writeService(thumb.getService(), true, jWriter);
+        writeIfNotNull("width", thumb.getWidth(), jWriter);
+        writeIfNotNull("height", thumb.getHeight(), jWriter);
         jWriter.endObject();
     }
 

@@ -14,6 +14,7 @@ import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
+import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.TextValue;
@@ -104,8 +105,8 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         if (canvas.getImages().size() > 0) {
             Annotation defaultImage = canvas.getImages().get(0);
 
-            canvas.setThumbnailUrl(defaultImage.getDefaultSource().getUri());
-            canvas.setThumbnailService(defaultImage.getDefaultSource().getService());
+            canvas.addThumbnail(new Image(defaultImage.getDefaultSource().getUri(),
+                    defaultImage.getDefaultSource().getService()));
         }
 
         return canvas;

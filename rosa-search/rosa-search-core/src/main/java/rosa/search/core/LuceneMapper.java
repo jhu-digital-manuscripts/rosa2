@@ -6,6 +6,7 @@ import java.util.Set;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
+import org.apache.lucene.facet.FacetsConfig;
 
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -70,8 +71,13 @@ public interface LuceneMapper {
     Set<String> getLuceneContextFields(Query query);
 
     /**
+     * @return Configuration used for facet fields.
+     */
+    FacetsConfig getFacetsConfig(); 
+    
+    /**
      * Create and index Lucene documents for a given book within a book
-     * collection.
+     * collection. If facet fields have been Documents should be built through the FacetsConfig.
      *
      * @param col BookCollection object
      * @param book Book object

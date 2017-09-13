@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.Map;
 
 import rosa.archive.core.Store;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
@@ -22,6 +24,86 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
     private final JHSearchSerializer serializer;
     private final IIIFPresentationRequestFormatter formatter;
     
+    // Map collection names to available search fields
+    // TODO Make configurable in archive or move to properties file. Perhaps move to lucene mapper?
+    private static final Map<String,JHSearchField[]> searchfields = new HashMap<>();
+    private static final Map<String,JHSearchCategory[]> searchcategories = new HashMap<>();
+       
+    static {
+        searchfields.put("rosecollection",
+                new JHSearchField[] {
+                        JHSearchField.DESCRIPTION,
+                        JHSearchField.TRANSCRIPTION,
+                        JHSearchField.ILLUSTRATION, 
+                        JHSearchField.TITLE,
+                        JHSearchField.REPO});
+        searchcategories.put("rosecollection",
+                new JHSearchCategory[] {JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION, JHSearchCategory.DATE,
+                        JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN, JHSearchCategory.TYPE,
+                        JHSearchCategory.TRANSCRIPTION});
+        
+        searchfields.put("pizancollection",
+                new JHSearchField[] {
+                        JHSearchField.DESCRIPTION,
+                        JHSearchField.TITLE,
+                        JHSearchField.REPO});
+        searchcategories.put("pizancollection",
+                new JHSearchCategory[] {JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION, JHSearchCategory.DATE,
+                        JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN, JHSearchCategory.TYPE,
+                        JHSearchCategory.TRANSCRIPTION});
+        
+        searchfields.put("aorcollection",
+                new JHSearchField[] {
+                        JHSearchField.MARGINALIA,
+                        JHSearchField.SYMBOL,
+                        JHSearchField.UNDERLINE,
+                        JHSearchField.MARK,
+                        JHSearchField.BOOK,
+                        JHSearchField.PEOPLE,
+                        JHSearchField.PLACE,
+                        JHSearchField.LANGUAGE,
+                        JHSearchField.MARGINALIA_LANGUAGE,
+                        JHSearchField.NUMERAL,
+                        JHSearchField.DRAWING,
+                        JHSearchField.ERRATA,            
+                        JHSearchField.EMPHASIS,
+                        JHSearchField.CROSS_REFERENCE,
+                        JHSearchField.METHOD});
+        searchcategories.put("aorcollection",
+                new JHSearchCategory[] {JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME, JHSearchCategory.DATE,
+                        JHSearchCategory.LOCATION, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN});
+        
+        searchfields.put("top",
+                new JHSearchField[] {
+                        JHSearchField.DESCRIPTION,
+                        JHSearchField.TITLE,
+                        JHSearchField.PEOPLE,
+                        JHSearchField.PLACE,
+                        JHSearchField.REPO,
+                        JHSearchField.TEXT});
+        searchcategories.put("top",
+                new JHSearchCategory[] {JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION,
+                        JHSearchCategory.DATE, JHSearchCategory.REPOSITORY});
+
+        searchfields.put("dlmm",
+                new JHSearchField[] {
+                        JHSearchField.DESCRIPTION,
+                        JHSearchField.TITLE,
+                        JHSearchField.PEOPLE,
+                        JHSearchField.PLACE,
+                        JHSearchField.REPO,
+                        JHSearchField.TEXT});
+        searchcategories.put("dlmm",
+                new JHSearchCategory[]{JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION,
+                        JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN,
+                        JHSearchCategory.TYPE, JHSearchCategory.TRANSCRIPTION});
+        }
+    
+    /**
+     * @param path
+     * @param formatter
+     * @throws IOException
+     */
     public LuceneJHSearchService(Path path, IIIFPresentationRequestFormatter formatter) throws IOException {
         super(path, new JHSearchLuceneMapper(formatter));
 
@@ -30,7 +112,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
     }
 
     @Override
-    public void handle_request(PresentationRequest req, String query, int offset, int max, String sort_order, OutputStream os)
+    public void handle_request(PresentationRequest req, String query, int offset, int max, String sort_order, String categories, OutputStream os)
             throws IOException {
 
         SearchOptions opts = new SearchOptions();
@@ -45,16 +127,20 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         	}
         }
         
-        handle_request(req, query, opts, os);
-    }
-
-    private void handle_request(PresentationRequest req, String query, SearchOptions opts, OutputStream os) throws IOException {
         Query search_query;
         
         try {
             search_query = QueryParser.parseQuery(query);
         } catch (ParseException e) {
-        	throw new IllegalArgumentException("Query error: " + e.getMessage()); 
+            throw new IllegalArgumentException("Query error: " + e.getMessage()); 
+        }
+        
+        if (categories != null) {
+            try {
+                opts.setCategories(QueryParser.parseTermList(categories));
+            } catch (ParseException e) {
+                throw new IllegalArgumentException("Category error: " + e.getMessage()); 
+            }
         }
         
         Query restrict_query = null;
@@ -64,8 +150,21 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         String req_url = formatter.format(req);
 
         // Restrict to a specific collection if the collection is not "top"
-        if (req.getType() == PresentationRequestType.COLLECTION && !"top".equals(req.getName())) {
-            restrict_query = new Query(JHSearchField.COLLECTION_ID, req_url);
+        // TODO We should load the archive collection to check for child/parent relationships in order to properly generate the restriction query
+        if (req.getType() == PresentationRequestType.COLLECTION) {
+            if ("dlmm".equals(req.getName())) {
+                String rose_url = formatter.format(
+                        new PresentationRequest(null, "rosecollection", PresentationRequestType.COLLECTION));
+                String pizan_url = formatter.format(
+                        new PresentationRequest(null, "pizancollection", PresentationRequestType.COLLECTION));
+                restrict_query = new Query(
+                        QueryOperation.OR,
+                        new Query(JHSearchField.COLLECTION_ID, rose_url),
+                        new Query(JHSearchField.COLLECTION_ID, pizan_url)
+                );
+            } else if (!"top".equals(req.getName())) {
+                restrict_query = new Query(JHSearchField.COLLECTION_ID, req_url);
+            }
         } else if (req.getType() == PresentationRequestType.MANIFEST) {
             restrict_query = new Query(JHSearchField.MANIFEST_ID, req_url);
         }
@@ -77,16 +176,22 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         SearchResult result = search(search_query, opts);
 
         // TODO Put URL generation elsewhere
-        
-        String url = req_url + RESOURCE_PATH + "?" + JHSearchService.QUERY_PARAM + "=" + URLEncoder.encode(query, "UTF-8") + "&" + JHSearchService.MAX_MATCHES_PARAM + "=" + opts.getMatchCount();
-        
+        StringBuilder url = new StringBuilder(req_url);
+        url.append(RESOURCE_PATH).append('?')
+                .append(QUERY_PARAM).append('=').append(URLEncoder.encode(query, "UTF-8"))
+                .append('&').append(MAX_MATCHES_PARAM).append('=').append(opts.getMatchCount());
+
         if (opts.getSortOrder() != null) {
-            url += "&" + JHSearchService.SORT_ORDER_PARAM + "=" + URLEncoder.encode(opts.getSortOrder().name().toLowerCase(), "UTF-8");
+            url.append('&').append(SORT_ORDER_PARAM).append('=').append(URLEncoder.encode(opts.getSortOrder().name().toLowerCase(), "UTF-8"));
+        }
+
+        url.append('&').append(OFFSET_PARAM).append('=').append(opts.getOffset());
+
+        if (categories != null && !categories.equals("")) {
+            url.append('&').append(CATEGORIES).append('=').append(URLEncoder.encode(categories, "UTF-8"));
         }
         
-        url += "&" + JHSearchService.OFFSET_PARAM + "=" + opts.getOffset();
-        
-        serializer.write(url, query, result, os);
+        serializer.write(url.toString(), query, result, os);
     }
 
 
@@ -97,58 +202,22 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         }
     }
 
-    // TODO Hack to return search fields based on collection.
-    // TODO Refactor to make search service per collection?
-    
-    private static final JHSearchField[] ROSE_PIZAN_FIELDS = {
-            JHSearchField.DESCRIPTION,
-            JHSearchField.TRANSCRIPTION,
-            JHSearchField.ILLUSTRATION, 
-            JHSearchField.TITLE,
-            JHSearchField.REPO
-    };
-    
-    private static final JHSearchField[] AOR_FIELDS = {
-            JHSearchField.MARGINALIA,
-            JHSearchField.SYMBOL,
-            JHSearchField.UNDERLINE,
-            JHSearchField.MARK,
-            JHSearchField.BOOK,
-            JHSearchField.PEOPLE,
-            JHSearchField.PLACE,
-            JHSearchField.LANGUAGE,
-            JHSearchField.MARGINALIA_LANGUAGE,
-            JHSearchField.NUMERAL,
-            JHSearchField.DRAWING,
-            JHSearchField.ERRATA,            
-            JHSearchField.EMPHASIS,
-            JHSearchField.CROSS_REFERENCE,
-            JHSearchField.METHOD,
-    };
-
-    private static final JHSearchField[] SHARED_FIELDS = {
-            JHSearchField.DESCRIPTION,
-            JHSearchField.TITLE,
-            JHSearchField.PEOPLE,
-            JHSearchField.PLACE,
-            JHSearchField.REPO,
-            JHSearchField.TEXT
-    };
-    
     @Override
     public void handle_info_request(PresentationRequest req, OutputStream os) throws IOException {
-        JHSearchField[] fields;
-        String identifier = req.getType() == PresentationRequestType.COLLECTION ? req.getName() : req.getId();
+        String name = req.getType() == PresentationRequestType.COLLECTION ? req.getName() : req.getId();
+
+        JHSearchField[] fields = searchfields.get(name);
+        JHSearchCategory[] categories = searchcategories.get(name);
         
-        if (identifier.contains("rose") || identifier.contains("pizan")) {
-            fields = ROSE_PIZAN_FIELDS;
-        } else if (identifier.contains("aor")) {
-            fields = AOR_FIELDS;
-        } else {
-            fields = SHARED_FIELDS;
+        if (fields == null) {
+            fields = new JHSearchField[]{};
         }
-        
-        serializer.write(fields, os);    
+        if (categories == null) {
+            categories = new JHSearchCategory[0];
+        }
+
+
+        serializer.write(fields, categories, os);
     }
 
 	@Override

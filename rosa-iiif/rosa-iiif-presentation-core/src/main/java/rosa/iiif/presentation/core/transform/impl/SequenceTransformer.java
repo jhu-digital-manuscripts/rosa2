@@ -11,6 +11,7 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFNames;
+import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
@@ -61,7 +62,8 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
             canvases.add(canvasTransformer.transform(collection, book, image.getName()));
 
             // Set the starting point in the sequence to the first page of printed material
-            if (hasNotBeenSet && image.getLocation().equals(BookImageLocation.BODY_MATTER)) {
+            if (hasNotBeenSet && image.getLocation() != null &&
+                    image.getLocation().equals(BookImageLocation.BODY_MATTER)) {
                 sequence.setStartCanvas(count);
                 hasNotBeenSet = false;
             }
@@ -71,11 +73,12 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
         sequence.setCanvases(canvases);
 
         // Set thumbnail for this sequence, set to the thumbnail for the start canvas
-        if (sequence.getCanvases().size() > 0) {
+        if (sequence.getCanvases().size() > 0 && sequence.getStartCanvas() >= 0) {
             Canvas defaultCanvas = sequence.getCanvases().get(sequence.getStartCanvas());
 
-            sequence.setThumbnailUrl(defaultCanvas.getThumbnailUrl());
-            sequence.setThumbnailService(defaultCanvas.getThumbnailService());
+            if (defaultCanvas.getThumbnails().size() > 0) {
+                sequence.addThumbnail(defaultCanvas.getThumbnails().get(0));
+            }
         }
 
         return sequence;

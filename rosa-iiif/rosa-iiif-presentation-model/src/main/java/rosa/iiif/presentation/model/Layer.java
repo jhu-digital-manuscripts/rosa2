@@ -10,6 +10,7 @@ public class Layer extends PresentationBase {
     private List<String> otherContent;
 
     public Layer() {
+        super();
         this.otherContent = new ArrayList<>();
         setType(IIIFNames.SC_LAYER);
     }

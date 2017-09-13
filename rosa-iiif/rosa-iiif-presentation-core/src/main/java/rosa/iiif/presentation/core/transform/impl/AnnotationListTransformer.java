@@ -12,6 +12,7 @@ import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.PresentationRequestType;
+import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
 import java.util.List;
@@ -102,8 +103,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         list.setDescription("Annotation list for " + listType.toString().toLowerCase() + " on page "
                 + image.getName(), "en");
         list.setLabel(label, "en");
-        list.setWithin(urlId(collection.getId(), book.getId(), listType.toString().toLowerCase(),
-                PresentationRequestType.LAYER));
+        list.setWithin(new Within(
+                urlId(collection.getId(), book.getId(), listType.toString().toLowerCase(), PresentationRequestType.LAYER)
+        ));
 
         List<Annotation> annotations = list.getAnnotations();
 
@@ -190,7 +192,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         list.setType(SC_ANNOTATION_LIST);
         list.setDescription("Annotation list for " + type + " on page " + image.getName(), "en");
         list.setLabel(name, "en");
-        list.setWithin(urlId(collection.getId(), book.getId(), "all", PresentationRequestType.LAYER));
+        list.setWithin(new Within(
+                urlId(collection.getId(), book.getId(), "all", PresentationRequestType.LAYER)
+        ));
 
         return list;
     }

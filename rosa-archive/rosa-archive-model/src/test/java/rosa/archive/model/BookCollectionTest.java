@@ -17,9 +17,11 @@ public class BookCollectionTest {
     @Before
     public void setup() {
         this.collection = new BookCollection();
+        CollectionMetadata cmd = new CollectionMetadata();
+        this.collection.setMetadata(cmd);
 
         // Add supported languages
-        collection.setLanguages(LANGS);
+        cmd.setLanguages(LANGS);
     }
 
     @Test

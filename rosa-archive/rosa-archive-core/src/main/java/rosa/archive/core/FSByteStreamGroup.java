@@ -28,11 +28,9 @@ public class FSByteStreamGroup implements ByteStreamGroup {
         XML("application/xml", "xml"), TXT("text/plain", "txt"), HTML("text/html", "html"), CSV("text/csv", "csv");
 
         final String type;
-        final String extension;
 
         SHALLOW_COPY_TYPES(String type, String extension) {
             this.type = type;
-            this.extension = extension;
         }
 
         static boolean canCopy(String type) {

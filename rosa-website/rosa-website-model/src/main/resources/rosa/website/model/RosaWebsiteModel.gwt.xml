@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module rename-to='RosaWebsiteModel'>
-    <inherits name="rosa.archive.RosaArchiveModel"/>
-
-    <source path='table' />
-    <source path='select' />
-    <source path='view' />
-</module>

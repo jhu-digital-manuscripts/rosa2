@@ -16,6 +16,7 @@ public interface JHSearchService {
     public static String OFFSET_PARAM = "o";
     public static String SORT_ORDER_PARAM = "so";
     public static String MAX_MATCHES_PARAM = "m";
+    public static String CATEGORIES = "c";    
     
     /**
      * Perform a search on a presentation object, writing the result to an output stream.
@@ -26,15 +27,16 @@ public interface JHSearchService {
      * @param offset
      * @param max
      * @param sort_order
+     * @param categories
      * @param os
      * @throws IOException
      * @throws IllegalArgumentException
      */
-    void handle_request(PresentationRequest req, String query, int offset, int max, String sort_order, OutputStream os) throws IOException, IllegalArgumentException;
+    void handle_request(PresentationRequest req, String query, int offset, int max, String sort_order, String categories, OutputStream os) throws IOException, IllegalArgumentException;
     
     
     default void handle_request(PresentationRequest req, String query, int offset, OutputStream os) throws IOException, IllegalArgumentException {
-    	handle_request(req, query, offset, -1, null, os);
+    	handle_request(req, query, offset, -1, null, null, os);
     }
     
     /**

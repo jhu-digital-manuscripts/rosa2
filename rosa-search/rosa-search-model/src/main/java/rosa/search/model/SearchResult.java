@@ -2,6 +2,7 @@ package rosa.search.model;
 
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * The sublist in the list of total results matching a query given some options.
@@ -11,28 +12,35 @@ public class SearchResult implements Serializable {
 
     private long offset;
     private long total;
-    private long max_matches;
+    private int max_matches;
     private SearchMatch[] matches;
     private SortOrder sort_order;
     private String debug;
-
+    private List<SearchCategoryMatch> categories;
+    
     public SearchResult() {
-        this(0, 0, 0, new SearchMatch[] {}, null, null);
+        this(0, 0, 0, new SearchMatch[] {}, null, null, null);
     }
 
-    public SearchResult(long offset, long total, long max_matches, SearchMatch[] matches,
+    public SearchResult(long offset, long total, int max_matches, SearchMatch[] matches,
             SortOrder sort_order) {
-        this(offset, total, max_matches, matches, sort_order, null);
+        this(offset, total, max_matches, matches, sort_order, null, null);
     }
     
-    public SearchResult(long offset, long total, long max_matches, SearchMatch[] matches,
+    public SearchResult(long offset, long total, int max_matches, SearchMatch[] matches,
             SortOrder sort_order, String debug) {
+        this(offset, total, 0, matches, sort_order, debug, null);
+    }
+    
+    public SearchResult(long offset, long total, int max_matches, SearchMatch[] matches,
+            SortOrder sort_order, String debug, List<SearchCategoryMatch> categories) {
         this.offset = offset;
         this.total = total;
         this.max_matches = max_matches;
         this.matches = matches;
         this.sort_order = sort_order;
         this.debug = debug;
+        this.categories = categories;
     }
 
     public long getOffset() {
@@ -59,8 +67,12 @@ public class SearchResult implements Serializable {
         return sort_order;
     }
 
-    public long getMaxMatches() {
+    public int getMaxMatches() {
         return max_matches;
+    }
+
+    public List<SearchCategoryMatch> getCategories() {
+        return categories;
     }
 
     @Override
@@ -70,30 +82,51 @@ public class SearchResult implements Serializable {
                 ", debug='" + debug + '\'' + '}';
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof SearchResult)) return false;
-
-        SearchResult that = (SearchResult) o;
-
-        if (offset != that.offset) return false;
-        if (total != that.total) return false;
-        if (max_matches != that.max_matches) return false;
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
-        if (!Arrays.equals(matches, that.matches)) return false;
-        if (sort_order != that.sort_order) return false;
-        return debug != null ? debug.equals(that.debug) : that.debug == null;
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + Arrays.hashCode(matches);
+        result = prime * result + (int) (offset ^ (offset >>> 32));
+        result = 31 * result + max_matches;
+        result = prime * result
+                + ((sort_order == null) ? 0 : sort_order.hashCode());
+        result = prime * result
+                + ((debug == null) ? 0 : debug.hashCode());
+        result = prime * result
+                + ((categories == null) ? 0 : categories.hashCode());                
+        result = prime * result + (int) (total ^ (total >>> 32));
+        return result;
     }
 
     @Override
-    public int hashCode() {
-        int result = (int) (offset ^ (offset >>> 32));
-        result = 31 * result + (int) (total ^ (total >>> 32));
-        result = 31 * result + (int) (max_matches ^ (max_matches >>> 32));
-        result = 31 * result + Arrays.hashCode(matches);
-        result = 31 * result + (sort_order != null ? sort_order.hashCode() : 0);
-        result = 31 * result + (debug != null ? debug.hashCode() : 0);
-        return result;
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (!(obj instanceof SearchResult))
+            return false;
+        SearchResult other = (SearchResult) obj;
+        if (!Arrays.equals(matches, other.matches))
+            return false;
+        if (offset != other.offset)
+            return false;
+        if (sort_order != other.sort_order)
+            return false;
+        if (debug == null) {
+            if (other.debug != null)
+                return false;
+        } else if (!debug.equals(other.debug))
+            return false;        
+        if (categories == null) {
+            if (other.categories != null)
+                return false;
+        } else if (!categories.equals(other.categories))
+            return false;                
+        if (total != other.total)
+            return false;
+        if (max_matches != other.max_matches)
+            return false;        
+        return true;
     }
 }

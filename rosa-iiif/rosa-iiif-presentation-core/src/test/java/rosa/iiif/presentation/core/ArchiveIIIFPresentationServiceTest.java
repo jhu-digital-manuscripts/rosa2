@@ -53,7 +53,7 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
                 scheme, host, port, image_prefix);
         ImageIdMapper imageIdMapper = new JhuFSIImageIdMapper(new HashMap<String, String>());
 
-        CollectionTransformer collectionTransformer = new CollectionTransformer(requestFormatter);
+        CollectionTransformer collectionTransformer = new CollectionTransformer(requestFormatter, simpleStore, imageFormatter, imageIdMapper);
         CanvasTransformer canvasTransformer = new CanvasTransformer(requestFormatter, imageFormatter, imageIdMapper);
         SequenceTransformer sequenceTransformer = new SequenceTransformer(requestFormatter, canvasTransformer);
         AnnotationTransformer annotationTransformer = new AnnotationTransformer(requestFormatter, new ArchiveNameParser());
@@ -70,7 +70,7 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
         PresentationTransformer transformer = new PresentationTransformerImpl(requestFormatter, transformerSet,
                 collectionTransformer);
 
-        service = new ArchiveIIIFPresentationService(store, serializer, transformer, 1000);
+        service = new ArchiveIIIFPresentationService(simpleStore, serializer, transformer, 1000);
     }
     
     // TODO More extensive testing

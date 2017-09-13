@@ -6,6 +6,9 @@ import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookImageRole;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -62,6 +65,35 @@ public class ArchiveNameParserTest {
 
         for (int i = 0; i < names.length; i++) {
             assertEquals("Unexpected short name found.", expected[i], parser.shortName(names[i]));
+        }
+    }
+
+    /**
+     * There is at least one book from Bibliothèque de l'Arsenal that does not
+     * follow the above expected numbering scheme, instead using "normal" page numbers
+     * instead of the verso/recto designation.
+     */
+    @Test
+    public void arsenalNumberingTest() {
+        String[] names = {
+                "Arsenal2989.frontmatter.pastedown.tif", "Arsenal2989.frontmatter.01.tif",
+                "Arsenal2989.001.tif", "Arsenal2989.132.tif",
+                "Arsenal2989.endmatter.01.tif", "Arsenal2989.binding.backcover.tif"
+        };
+        int size = names.length;
+        {
+            // Short name should be just the page number, with extra info as needed.
+            String[] expected = {"front matter pastedown", "front matter 1", "1", "132", "end matter 1", "binding back cover"};
+            IntStream.range(0, size).forEach(i -> assertEquals(expected[i], parser.shortName(names[i])));
+        }
+        {
+            // Check location
+            BookImageLocation[] expected = {
+                    BookImageLocation.FRONT_MATTER, BookImageLocation.FRONT_MATTER,
+                    BookImageLocation.BODY_MATTER, BookImageLocation.BODY_MATTER,
+                    BookImageLocation.END_MATTER, BookImageLocation.BINDING
+            };
+            IntStream.range(0, size).forEach(i -> assertEquals(expected[i], parser.location(names[i])));
         }
     }
 

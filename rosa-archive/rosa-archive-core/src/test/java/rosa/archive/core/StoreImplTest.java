@@ -96,6 +96,10 @@ public class StoreImplTest extends BaseArchiveTest {
         assertTrue(store.check(loadValidCollection(), false, errors, warnings));
         assertEquals(0, errors.size());
 
+        boolean check = store.check(loadValidCollection(), true, errors, warnings);
+        if (!check) {
+            errors.forEach(System.out::println);
+        }
         assertTrue(store.check(loadValidCollection(), true, errors, warnings));
         assertEquals(0, errors.size());
 

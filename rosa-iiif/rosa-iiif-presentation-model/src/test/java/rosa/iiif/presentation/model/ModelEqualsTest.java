@@ -131,4 +131,10 @@ public class ModelEqualsTest {
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
     }
 
+    @Test
+    public void testImage() {
+        EqualsVerifier.forClass(Image.class).allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
+    }
+
 }
