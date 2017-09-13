@@ -234,20 +234,63 @@ public class LuceneSearchService implements SearchService {
         facets.getAllDims(mamResults).forEach(f -> result.add(get_category_matches(f)));
 
         result.sort((o1, o2) -> o1.getFieldName().compareToIgnoreCase(o2.getFieldName()));
+
+        // Sort values in each category
+
         result.parallelStream().forEach(cat -> {
-            // Sort values under this category
             Arrays.sort(cat.getValues(), (o1, o2) -> {
-                String v1 = o1.getValue();
-                String v2 = o2.getValue();
-                try {
-                    return Integer.parseInt(v1) - Integer.parseInt(v2);
-                } catch (NumberFormatException e) {
-                    return v1.compareToIgnoreCase(v2);
-                }
+                return compare_strings_possibly_ending_with_numbers(o1.getValue(), o2.getValue());
             });
         });
 
         return result;
+    }
+    
+    private static final int find_last_digit_sequence(String s) {
+        int last = -1;
+
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (Character.isDigit(s.charAt(i))) {
+                last = i;
+            } else {
+                break;
+            }
+        }
+
+        return last;
+    }
+
+    // Sort in alphabetical order, but if identical prefixes end in numbers, order by those numbers.
+    private static int compare_strings_possibly_ending_with_numbers(String s1, String s2) {
+        int i1 = find_last_digit_sequence(s1);
+        int i2 = find_last_digit_sequence(s2);
+
+        if (i1 == -1 || i2 == -1) {
+            return s1.compareTo(s2);
+        }
+
+        // Special case for values like number-number, compare by first number, then second
+        // Else compare by prefix string, then number
+        
+        int compare;
+        
+        if (i1 > 0 && i2 > 0 && s1.charAt(i1 - 1) == '-' && s2.charAt(i2 -1) == '-') {
+            int n1 = Integer.parseInt(s1.substring(0, i1 - 1));
+            int n2 = Integer.parseInt(s2.substring(0, i2 - 1));
+
+            compare = n1 - n2;   
+        } else {
+            compare = s1.substring(0, i1).compareTo(s2.substring(0, i2));
+        }
+        
+        if (compare == 0) {
+            int n1 = Integer.parseInt(s1.substring(i1));
+            int n2 = Integer.parseInt(s2.substring(i2));
+
+            return n1 - n2;
+        }
+
+        return compare;
     }
 
     // Get the values within a category together with corresponding coutns from a FacetResult
