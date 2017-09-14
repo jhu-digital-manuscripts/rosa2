@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
+import com.google.inject.name.Named;
 
 import rosa.archive.core.Store;
 import rosa.iiif.presentation.core.IIIFPresentationRequestParser;
@@ -35,6 +36,7 @@ public class IIIFPresentationServlet extends HttpServlet {
     private final IIIFPresentationRequestParser parser;
     private final JHSearchService searchService;
     private final Store store;
+    private final int max_age;
 
     /**
      * Create a servlet for the IIIF presentation layer.
@@ -43,11 +45,13 @@ public class IIIFPresentationServlet extends HttpServlet {
      *            a IIIFService that knows how to handle requests
      */
     @Inject
-    public IIIFPresentationServlet(IIIFPresentationService service, JHSearchService searchService, Store store) {
+    public IIIFPresentationServlet(IIIFPresentationService service, JHSearchService searchService, Store store,
+            @Named("iiif.pres.max_cache_age") int max_age) {
         this.service = service;
         this.searchService = searchService;
         this.parser = new IIIFPresentationRequestParser();
         this.store = store;
+        this.max_age = max_age;
     }
 
     @Override
@@ -126,7 +130,11 @@ public class IIIFPresentationServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setHeader("Access-Control-Allow-Origin", "*");
         resp.setCharacterEncoding("utf-8");
-
+        
+        if (max_age > 0) {
+            resp.setHeader("Cache-Control", "max-age=" + max_age);
+        }
+        
         if (want_json_ld_mime_type(req)) {
             resp.setContentType(JSON_LD_MIME_TYPE);
         } else {

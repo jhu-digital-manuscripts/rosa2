@@ -26,6 +26,7 @@ public class IIIFPresentationServletConfigTest {
             "iiif.pres.host = rosetest.library.jhu.edu\n" +
             "iiif.pres.port = 80\n" +
             "iiif.pres.prefix = /iiif-pres\n" +
+            "iiif.pres.max_cache_age = 10\n" +
             "iiif.image.scheme = http\n" +
             "iiif.image.host = rosetest.library.jhu.edu\n" +
             "iiif.image.port = 80\n" +

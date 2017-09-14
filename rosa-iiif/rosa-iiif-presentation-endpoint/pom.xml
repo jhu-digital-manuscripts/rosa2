@@ -19,6 +19,7 @@
         <iiif.pres.host>jdm.library.jhu.edu</iiif.pres.host>
         <iiif.pres.port>80</iiif.pres.port>
         <iiif.pres.prefix>/iiif-pres</iiif.pres.prefix>
+        <iiif.pres.max_cache_age>86400</iiif.pres.max_cache_age>	
 
         <!-- IIIF Image endpoint info -->
         <iiif.image.scheme>http</iiif.image.scheme>
