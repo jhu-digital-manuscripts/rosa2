@@ -76,9 +76,9 @@ interface JHSearchFieldProperties {
     String TRANSCRIPTION_LABEL = "Transcription";
     String TRANSCRIPTION_DESCRIPTION = "";
     String ILLUSTRATION_LABEL = "Illustrations";
-    String ILLUSTRATION_DESCRIPTION = "Description of illustrations";
+    String ILLUSTRATION_DESCRIPTION = "Search within the descriptions of illustrations. For a list of illustration titles, please visit the list of descriptions provided on the <em>Roman de la Rose</em> Digital library website. [http://dlmm.sharedblogs.library.jhu.edu/en/illustration-titles/]";
     String DESCRIPTION_LABEL = "Description";
-    String DESCRIPTION_DESCRIPTION = "Search text of non-structured description of items.";
+    String DESCRIPTION_DESCRIPTION = "Search within the metadata for the collection.";
     String LANGUAGE_LABEL ="Language";
     String LANGUAGE_DESCRIPTION = "";
     String[] LANGUAGE_VALUES = { 
@@ -94,9 +94,9 @@ interface JHSearchFieldProperties {
     String BOOK_LABEL = "Book";
     String BOOK_DESCRIPTION = "Titles of books.";
     String PEOPLE_LABEL = "People";
-    String PEOPLE_DESCRIPTION = "Names of people.";
+    String PEOPLE_DESCRIPTION = "Search for names of people within metadata and transcriptions.";
     String PLACE_LABEL = "Place";
-    String PLACE_DESCRIPTION = "Names of places or locations.";
+    String PLACE_DESCRIPTION = "Search for places and locations within metadata and transcriptions.";
     String METHOD_LABEL = "Method";
     String METHOD_DESCRIPTION = "Implement used to create mark or underline.";
     String[] METHOD_VALUES = { 
@@ -109,4 +109,6 @@ interface JHSearchFieldProperties {
     String REPO_DESCRIPTION = "Search names of repositories";
     String TEXT_LABEL = "Text";
     String TEXT_DESCRIPTION = "Search the text of an item. This can include transcriptions and translations.";
+    String CHAR_NAME_LABEL = "Character names";
+    String CHAR_NAME_DESCRIPTION = "Search names of characters in the Roman de la Rose. For a list of character names visit the <em>Roman de la Rose</em> Digital Library [http://dlmm.sharedblogs.library.jhu.edu/en/character-names/]";
 }

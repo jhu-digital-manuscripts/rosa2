@@ -38,7 +38,8 @@ public enum JHSearchField implements SearchField, JHSearchFieldProperties {
     // Include 'author'/'creator' ?
     REPO(true, false, true, REPO_LABEL, REPO_DESCRIPTION, SearchFieldType.ENGLISH),
     DESCRIPTION(true, false, true, DESCRIPTION_LABEL, DESCRIPTION_DESCRIPTION, SearchFieldType.ENGLISH),
-    TEXT(true, false, true, TEXT_LABEL, TEXT_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.OLD_FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN)
+    TEXT(true, false, true, TEXT_LABEL, TEXT_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.OLD_FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    CHAR_NAME(true, false, true, CHAR_NAME_LABEL, CHAR_NAME_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.OLD_FRENCH, SearchFieldType.FRENCH)
     ;
     
      // TODO Move some of this to SearchField?

@@ -279,6 +279,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 				}
 			}
             addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, chars.toString());
+			addField(doc, JHSearchField.CHAR_NAME, chars.toString());
             text.append(chars);
 
             StringBuilder t = new StringBuilder();
