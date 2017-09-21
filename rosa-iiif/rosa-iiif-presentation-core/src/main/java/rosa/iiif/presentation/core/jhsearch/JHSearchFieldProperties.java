@@ -74,7 +74,7 @@ interface JHSearchFieldProperties {
     String CROSS_REFERENCE_LABEL = "Cross Reference";
     String CROSS_REFERENCE_DESCRIPTION = "Quotes from sources not explicitly identified by the reader.";
     String TRANSCRIPTION_LABEL = "Transcription";
-    String TRANSCRIPTION_DESCRIPTION = "";
+    String TRANSCRIPTION_DESCRIPTION = "Search within transcriptions of manuscript texts.";
     String ILLUSTRATION_LABEL = "Illustrations";
     String ILLUSTRATION_DESCRIPTION = "Search within the descriptions of illustrations. For a list of illustration titles, please visit the list of descriptions provided on the <em>Roman de la Rose</em> Digital library website. [http://dlmm.sharedblogs.library.jhu.edu/en/illustration-titles/]";
     String DESCRIPTION_LABEL = "Description";
@@ -92,7 +92,7 @@ interface JHSearchFieldProperties {
     String MARG_LANGUAGE_LABEL = "Marginalia language";
     String MARG_LANGUAGE_DESCRIPTION = "Marginalia text in a single language.";
     String BOOK_LABEL = "Book";
-    String BOOK_DESCRIPTION = "Titles of books.";
+    String BOOK_DESCRIPTION = "Titles of books that are referenced in text or annotations.";
     String PEOPLE_LABEL = "People";
     String PEOPLE_DESCRIPTION = "Search for names of people within metadata and transcriptions.";
     String PLACE_LABEL = "Place";
@@ -106,7 +106,7 @@ interface JHSearchFieldProperties {
     String TITLE_LABEL = "Title";
     String TITLE_DESCRIPTION = "Search titles of items.";
     String REPO_LABEL = "Repository";
-    String REPO_DESCRIPTION = "Search names of repositories";
+    String REPO_DESCRIPTION = "Search for names of repositories in which manuscripts are currently held";
     String TEXT_LABEL = "Text";
     String TEXT_DESCRIPTION = "Search the text of an item. This can include transcriptions and translations.";
     String CHAR_NAME_LABEL = "Character names";

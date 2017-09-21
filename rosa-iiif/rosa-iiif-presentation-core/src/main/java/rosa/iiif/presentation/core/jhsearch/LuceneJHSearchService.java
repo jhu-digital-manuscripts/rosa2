@@ -33,10 +33,11 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         searchfields.put("rosecollection",
                 new JHSearchField[] {
                         JHSearchField.DESCRIPTION,
-                        JHSearchField.TRANSCRIPTION,
-                        JHSearchField.ILLUSTRATION, 
-                        JHSearchField.TITLE,
-                        JHSearchField.REPO});
+                        JHSearchField.REPO,
+                        JHSearchField.PLACE,
+                        JHSearchField.ILLUSTRATION,
+                        JHSearchField.CHAR_NAME,
+                        JHSearchField.TRANSCRIPTION});
         searchcategories.put("rosecollection",
                 new JHSearchCategory[] {JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION, JHSearchCategory.DATE,
                         JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN, JHSearchCategory.TYPE,
@@ -45,8 +46,10 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         searchfields.put("pizancollection",
                 new JHSearchField[] {
                         JHSearchField.DESCRIPTION,
+                        JHSearchField.REPO,
+                        JHSearchField.PLACE,
                         JHSearchField.TITLE,
-                        JHSearchField.REPO});
+                        JHSearchField.TRANSCRIPTION});
         searchcategories.put("pizancollection",
                 new JHSearchCategory[] {JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION, JHSearchCategory.DATE,
                         JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN, JHSearchCategory.TYPE,
@@ -92,7 +95,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                         JHSearchField.PEOPLE,
                         JHSearchField.PLACE,
                         JHSearchField.REPO,
-                        JHSearchField.TEXT});
+                        JHSearchField.TRANSCRIPTION});
         searchcategories.put("dlmm",
                 new JHSearchCategory[]{JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION,
                         JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN,
