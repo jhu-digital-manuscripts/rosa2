@@ -112,7 +112,8 @@ public class StoreImpl implements Store, ArchiveConstants {
     public String[] listBookCollections() throws IOException {
         List<String> names = base.listByteStreamGroupNames();
         for (int i = 0; i < names.size(); i++) {
-            if (names.get(i).contains(".ignore")) {
+            String name = names.get(i);
+            if (name.contains(".ignore") || name.equals("biblehistoriale")) {
                 names.remove(i--);
             }
         }
