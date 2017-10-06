@@ -32,7 +32,7 @@
                 - 'metadata.copy.path' : metadata from the archive will be copied to this location
                 - 'build.search.index' : the search index for this webapp will be generated here
         -->
-        <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF</metadata.copy.path>
+        <metadata.copy.path>${project.build.directory}/${project.build.finalName}/WEB-INF/archive</metadata.copy.path>
         <build.search.index>${project.build.directory}/${project.build.finalName}/WEB-INF/lucene</build.search.index>
 
         <!-- Build phase during which the search index will be generated -->
@@ -93,7 +93,7 @@
                             <systemProperties>
                                 <systemProperty>
                                     <key>archive.path</key>
-                                    <value>${metadata.copy.path}/archive</value>
+                                    <value>${metadata.copy.path}</value>
                                 </systemProperty>
                                 <systemProperty>
                                     <key>iiif.pres.search.index</key>

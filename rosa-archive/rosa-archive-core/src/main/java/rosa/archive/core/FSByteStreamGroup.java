@@ -233,12 +233,13 @@ public class FSByteStreamGroup implements ByteStreamGroup {
     }
 
     @Override
-    public void copyTo(ByteStreamGroup targetGroup) throws IOException {
+    public void copyMetadataInto(ByteStreamGroup targetGroup) throws IOException {
         if (targetGroup == null || targetGroup.id() == null || targetGroup.id().isEmpty()) {
             throw new IOException("No target specified.");
         }
 
-        Path targetPath = Paths.get(targetGroup.id()).resolve(name());
+        Path targetPath = Paths.get(targetGroup.id());
+        
         Files.walkFileTree(
                 base, EnumSet.of(FileVisitOption.FOLLOW_LINKS), Integer.MAX_VALUE,
                 new SimpleFileVisitor<Path>() {
@@ -251,7 +252,7 @@ public class FSByteStreamGroup implements ByteStreamGroup {
                             return FileVisitResult.SKIP_SUBTREE;
                         }
 
-                        Files.createDirectory(targetDir);
+                        Files.createDirectories(targetDir);
                         System.out.println("  + " + targetDir);
                         return FileVisitResult.CONTINUE;
                     }

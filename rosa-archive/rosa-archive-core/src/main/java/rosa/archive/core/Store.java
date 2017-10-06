@@ -326,13 +326,12 @@ public interface Store {
                                    List<String> warnings) throws IOException;
 
     /**
-     * Create a shallow copy of this archive at the specified destination. A new
-     * directory will be ByteStreamGroup will be created at the destination.
+     * Create a shallow copy of this archive at the specified destination.
      * This copy will contain only metadata and transcription files. No images
      * will be copied over.
      *
      * @param destination target byte stream group
      * @throws IOException if the archive or destination are not available
      */
-    void shallowCopy(String collection, ByteStreamGroup destination) throws IOException;
+    void shallowCopy(ByteStreamGroup destination) throws IOException;
 }

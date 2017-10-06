@@ -42,7 +42,7 @@ public class CopyArchiveTool {
             }
 
             System.out.println("## Copying " + (collection != null ? collection : "archive") + " --> " + targetPath.toString());
-            store.shallowCopy(collection, new FSByteStreamGroup(targetPath));
+            store.shallowCopy(new FSByteStreamGroup(targetPath));
 
         } catch (IOException e) {
             System.err.println("Failed to copy data.");

@@ -136,7 +136,7 @@ public interface ByteStreamGroup {
     ByteStreamGroup newByteStreamGroup(String name) throws IOException;
 
     /**
-     * Copy this ByteStreamGroup to another location.
+     * Copy metadata files contained by this ByteStreamGroup into another ByteStreamGroup.
      *
      * By default, this method will copy all files of type:
      *  - XML (application/xml)
@@ -145,13 +145,11 @@ public interface ByteStreamGroup {
      *  - CSV (text/csv)
      *
      *  All other files will not be copied.
-     *
-     * TODO if target already has a directory with the same name? Overwrite or do nothing?
-     *
-     * @param targetGroup target name
+     *  
+     * @param targetGroup target
      * @throws IOException if this or the target ByteStreamGroup is not available
      */
-    void copyTo(ByteStreamGroup targetGroup) throws IOException;
+    void copyMetadataInto(ByteStreamGroup targetGroup) throws IOException;
 
     /**
      * Copy a byte stream from this group to the target group. The copied stream will

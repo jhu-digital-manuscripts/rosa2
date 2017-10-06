@@ -171,11 +171,10 @@ public class StoreImplTest extends BaseArchiveTest {
 
     /**
      * Test the method {@link Store#shallowCopy(String, ByteStreamGroup)}.
-     * Using NULL as the value for the collection, this method should copy metadata from the
-     * whole archive to the target ByteStreamGroup.
+     * This method should copy metadata from the whole archive to the target ByteStreamGroup.
      *
      * If the test Store is shallow copied to a temp directory called "tarchive",
-     * "tarchive" should have one directory called "archive" which will be a copy of the test
+     * "tarchive" should contain a copy of the test
      * Store archive. There should be no images in the copy.
      *
      * @throws Exception .
@@ -183,11 +182,12 @@ public class StoreImplTest extends BaseArchiveTest {
     @Test
     public void testShallowCopy() throws Exception {
         Path targetPath = tmp.newFolder("tarchive").toPath();
-        store.shallowCopy(null, new FSByteStreamGroup(targetPath));
+        store.shallowCopy(new FSByteStreamGroup(targetPath));
 
         // Inspect target directory
         for (String collection : store.listBookCollections()) {
-            Path tmpColPath = targetPath.resolve("archive").resolve(collection);
+            Path tmpColPath = targetPath.resolve(collection);
+            
             assertTrue("Collection not found in copy. (" + collection + ")",Files.exists(tmpColPath));
 
             for (String book : store.listBooks(collection)) {
