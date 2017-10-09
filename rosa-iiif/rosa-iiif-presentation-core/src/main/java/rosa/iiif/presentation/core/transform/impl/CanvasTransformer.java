@@ -39,33 +39,11 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
     /**
      * @param collection book collection holding the book
      * @param book book containing the page
-     * @param name page to manifest
+     * @param image page to manifest
+     * @param cropped whether or not his is cropped form of image
      * @return the Canvas representation of a page
      */
-    @Override
-    public Canvas transform(BookCollection collection, Book book, String name) {
-        // Look for the image representing 'page'
-        for (BookImage image : book.getImages()) {
-            if (image.getName().equals(name)) {
-                return buildCanvas(collection, book, image);
-            }
-        }
-        // Return NULL if the page was not found in the list of images
-        return null;
-    }
-
-    @Override
-    public Class<Canvas> getType() {
-        return Canvas.class;
-    }
-
-    /**
-     * Transform an archive book image into a IIIF canvas.
-     *
-     * @param image image object
-     * @return canvas
-     */
-    private Canvas buildCanvas(BookCollection collection, Book book, BookImage image) {
+    public Canvas transform(BookCollection collection, Book book, BookImage image, boolean cropped) {
         if (image == null) {
             return null;
         }
@@ -90,8 +68,8 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
 
         // Set images to be the single image. Always needs to be at least 1 image with Mirador2
         canvas.setImages(Collections.singletonList(
-                image.isMissing() ? imageResource(collection, null, collection.getMissingImage(), canvas.getId()) :
-                        imageResource(collection, book, image, canvas.getId())));
+                image.isMissing() ? imageResource(collection, null, collection.getMissingImage(), canvas.getId(), false) :
+                        imageResource(collection, book, image, canvas.getId(), cropped)));
 
         // Set 'other content' to be AoR transcriptions as IIIF annotations
         Reference otherContent = annotationList(collection, book, image);
@@ -112,6 +90,34 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         return canvas;
     }
 
+    // TODO Cannot access cropped image.
+    
+    /**
+     * Avoid this method, requires a lookup in the image list.
+     * 
+     * @param collection book collection holding the book
+     * @param book book containing the page
+     * @param name page to manifest
+     * @return the Canvas representation of a page
+     */
+    @Override
+    public Canvas transform(BookCollection collection, Book book, String name) {
+        // Look for the image representing 'page'
+        
+        for (BookImage image : book.getImages()) {
+            if (image.getName().equals(name)) {
+                return transform(collection, book, image, false);
+            }
+        }
+        // Return NULL if the page was not found in the list of images
+        return null;
+    }
+
+    @Override
+    public Class<Canvas> getType() {
+        return Canvas.class;
+    }
+
     /**
      * Transform an image in the archive into an image annotation.
      *
@@ -119,7 +125,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
      * @param canvasId ID of the canvas that the image belongs to
      * @return archive image as an annotation
      */
-    private Annotation imageResource(BookCollection collection, Book book, BookImage image, String canvasId) {
+    private Annotation imageResource(BookCollection collection, Book book, BookImage image, String canvasId, boolean cropped) {
         if (image == null) {
             return null;
         }
@@ -135,7 +141,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
 
         ann.setLabel(image.getName(), "en");
 
-        String id_in_image_server = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId()));
+        String id_in_image_server = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId(), cropped));
         AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "image/tiff");
         // Can set target when building Canvas (to the Canvas URI)?
         AnnotationTarget target = new AnnotationTarget(canvasId);

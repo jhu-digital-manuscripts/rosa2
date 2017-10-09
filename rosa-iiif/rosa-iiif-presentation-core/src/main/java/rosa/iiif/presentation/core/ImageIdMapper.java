@@ -20,5 +20,5 @@ public interface ImageIdMapper {
      *          ID of the image in the archive
      * @return the ID of the image on an image server
      */
-    String mapId(BookCollection collection, Book book, String imageId);
+    String mapId(BookCollection collection, Book book, String imageId, boolean cropped);
 }

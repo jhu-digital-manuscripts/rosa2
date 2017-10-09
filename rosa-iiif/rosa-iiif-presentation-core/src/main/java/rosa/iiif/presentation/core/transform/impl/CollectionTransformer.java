@@ -16,6 +16,7 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.ImageList;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
@@ -203,9 +204,17 @@ public class CollectionTransformer extends BasePresentationTransformer {
         List<Image> list = new ArrayList<>();
         int i = 0;
 
+        ImageList images = book.getCroppedImages();
+        boolean cropped = true;
+        
+        if (images == null) {
+            images = book.getImages();
+            cropped = false;
+        }
+        
         for (BookImage image : book.getImages()) {
             if (image.getLocation() == BookImageLocation.BODY_MATTER && !image.isMissing()) {
-                String id = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId()));
+                String id = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId(), cropped));
 
                 list.add(new Image(
                         id,

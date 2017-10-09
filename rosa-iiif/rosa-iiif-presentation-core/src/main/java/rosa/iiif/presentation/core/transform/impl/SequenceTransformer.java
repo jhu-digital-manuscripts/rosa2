@@ -29,7 +29,16 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
 
     @Override
     public Sequence transform(BookCollection collection, Book book, String name) {
-        return buildSequence(collection, book, name, book.getImages());
+        // Default to cropped images
+        ImageList images = book.getCroppedImages();
+        boolean cropped = true;
+        
+        if (images == null) {
+            images = book.getImages();
+            cropped = false;
+        }
+        
+        return buildSequence(collection, book, name, images, cropped);
     }
 
     @Override
@@ -41,9 +50,10 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
      * Transform an archive image list into a IIIF sequence.
      *
      * @param imageList image list
+     * @param cropped 
      * @return sequence
      */
-    private Sequence buildSequence(BookCollection collection, Book book, String label, ImageList imageList) {
+    private Sequence buildSequence(BookCollection collection, Book book, String label, ImageList imageList, boolean cropped) {
         if (imageList == null) {
             return null;
         }
@@ -57,8 +67,9 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
         List<Canvas> canvases = new ArrayList<>();
         int count = 0;
         boolean hasNotBeenSet = true;
+        
         for (BookImage image : imageList) {
-            canvases.add(canvasTransformer.transform(collection, book, image.getName()));
+            canvases.add(canvasTransformer.transform(collection, book, image, cropped));
 
             // Set the starting point in the sequence to the first page of printed material
             if (hasNotBeenSet && image.getLocation() != null &&
