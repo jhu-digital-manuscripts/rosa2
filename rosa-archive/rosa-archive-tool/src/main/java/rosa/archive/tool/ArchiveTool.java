@@ -2,7 +2,6 @@ package rosa.archive.tool;
 
 import java.io.IOException;
 import java.io.PrintStream;
-import java.util.Arrays;
 
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
@@ -11,8 +10,11 @@ import org.apache.commons.cli.Option;
 import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-
 import org.apache.commons.cli.UnrecognizedOptionException;
+
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.FSByteStreamGroup;
@@ -27,9 +29,6 @@ import rosa.archive.tool.config.ToolConfig;
 import rosa.archive.tool.derivative.BookDerivative;
 import rosa.archive.tool.derivative.CollectionDerivative;
 import rosa.archive.tool.derivative.CropDerivative;
-
-import com.google.inject.Guice;
-import com.google.inject.Injector;
 
 /**
  *
@@ -71,8 +70,36 @@ public class ArchiveTool {
                 .withValueSeparator()
                 .create("D"));
 
-        // Set specific options
-        switch (getCommand(args[0])) {
+        // Determine command being executed
+        
+        Command cmd = null;
+        
+        for (Command c : Command.values()) {
+            if (c.display().equals(args[0])) {
+                cmd = c;
+            }
+        }
+
+        if (cmd == null) {
+            System.err.println("Invalid command: " + args[0]);
+            System.err.print("Commands: ");
+
+            Command[] commands = Command.values();
+            
+            for (int i = 0; i < commands.length; i++) {
+                if (i > 0) {
+                    System.err.print("|");
+                }
+                System.err.print(commands[i].display());
+            }
+            System.err.println();
+            
+            System.exit(1);
+        }
+        
+        // Set options for command
+
+        switch (cmd) {
         case LIST:
             break;
         case CHECK:
@@ -120,21 +147,22 @@ public class ArchiveTool {
             break;
         }
 
-        CommandLine cmd = null;
+        CommandLine cmdline = null;
+        
         try {
-            cmd = parser.parse(options, args);
+            cmdline = parser.parse(options, args);
         } catch (UnrecognizedOptionException e) {
-            System.out.println("Bad option found. [" + e.getOption() + "]");
+            System.err.println("Bad option found. [" + e.getOption() + "]");
             System.exit(1);
         } catch (ParseException e) {
-            System.out.println("Unable to parse command.");
+            System.err.println("Unable to parse command.");
             System.exit(1);
         }
 
         // Set archive path if the argument exists in the CLI command issued
-        if (cmd.hasOption("D") && cmd.getOptionProperties("D").getProperty("archive.path") != null) {
+        if (cmdline.hasOption("D") && cmdline.getOptionProperties("D").getProperty("archive.path") != null) {
             config.setArchivePath(
-                    cmd.getOptionProperties("D").getProperty("archive.path")
+                    cmdline.getOptionProperties("D").getProperty("archive.path")
             );
         }
 
@@ -146,28 +174,11 @@ public class ArchiveTool {
         ArchiveTool tool = new ArchiveTool(store, config);
         tool.aorTranscriptionChecker = injector.getInstance(AORTranscriptionChecker.class);
 
-        tool.run(cmd);
+        tool.run(cmdline, cmd);
     }
 
-    private static Command getCommand(String cmd) {
-        if (cmd == null) {
-            return Command.INVALID;
-        }
-        for (Command c : Command.values()) {
-            if (c.display().equals(cmd)) {
-                return c;
-            }
-        }
-        return Command.INVALID;
-    }
-
-    private void displayError(String message, String[] args) {
-        report.println("Command: " + Arrays.toString(args));
-        report.println(message);
-    }
-
-    private void run(CommandLine cmd) throws IOException {
-        String[] args = cmd.getArgs();
+    private void run(CommandLine cmdline, Command cmd) throws IOException {
+        String[] args = cmdline.getArgs();
 
         switch (args.length) {
         case 1:
@@ -175,41 +186,42 @@ public class ArchiveTool {
                 if (config.ignore(collection)) {
                     continue;
                 }
-                handle_collection(cmd);
+                
+                handle_collection(cmdline, cmd);
             }
             break;
         case 2:
-            handle_collection(cmd);
+            handle_collection(cmdline, cmd);
             break;
         case 3:
-            handle_book(cmd);
+            handle_book(cmdline, cmd);
             break;
         default:
-            displayError("Too many arguments. Usage: <command> [-options] <collectionId> <bookId>", args);
-            break;
+            System.err.println("Too many arguments. Usage: <command> [-options] <collectionId> <bookId>");
+            System.exit(1);
         }
     }
 
-    private void handle_book(CommandLine cmd) throws IOException {
-        String[] args = cmd.getArgs();
+    private void handle_book(CommandLine cmdline, Command cmd) throws IOException {
+        String[] args = cmdline.getArgs();
         BookDerivative deriv = new BookDerivative(args[1], args[2], report, store);
 
-        switch (getCommand(args[0])) {
+        switch (cmd) {
         case LIST:
             deriv.list();
             break;
         case CHECK:
-            deriv.check(hasOption(cmd, Flag.CHECK_BITS));
+            deriv.check(has_option(cmdline, Flag.CHECK_BITS));
             break;
         case UPDATE:
-            deriv.updateChecksum(hasOption(cmd, Flag.FORCE));
+            deriv.updateChecksum(has_option(cmdline, Flag.FORCE));
             break;
         case UPDATE_IMAGE_LIST:
-            deriv.generateAndWriteImageList(hasOption(cmd, Flag.FORCE));
+            deriv.generateAndWriteImageList(has_option(cmdline, Flag.FORCE));
             break;
         case CROP_IMAGES:
             CropDerivative cDer = new CropDerivative(args[1], args[2], report, store);
-            cDer.cropImages(hasOption(cmd, Flag.FORCE));
+            cDer.cropImages(has_option(cmdline, Flag.FORCE));
             break;
         case FILE_MAP:
             deriv.generateFileMap();
@@ -218,45 +230,26 @@ public class ArchiveTool {
             deriv.validateXml();
             break;
         case RENAME_IMAGES:
-            deriv.renameImages(hasOption(cmd, Flag.CHANGE_ID), hasOption(cmd, Flag.REVERSE));
+            deriv.renameImages(has_option(cmdline, Flag.CHANGE_ID), has_option(cmdline, Flag.REVERSE));
             break;
         case RENAME_TRANSCRIPTIONS:
-            deriv.renameTranscriptions(hasOption(cmd, Flag.REVERSE));
+            deriv.renameTranscriptions(has_option(cmdline, Flag.REVERSE));
             break;
         case GENERATE_TEI:
             deriv.convertTranscriptionTexts();
             break;
         case CHECK_AOR:
-            String sheet_dir = cmd.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
+            String sheet_dir = cmdline.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
             aorTranscriptionChecker.run(args[1], true, sheet_dir, report);
             break;
         case SEPARATE_TEI_METADATA:
-            TEIDescriptionConverter.run(cmd, config, report);
-            break;
-        default:
-            displayError("Invalid command found.", args);
-            listPossibleCommands();
+            TEIDescriptionConverter.run(cmdline, config, report);
             break;
         }
     }
-
-    private void listPossibleCommands() {
-        report.print("Possible commands: ");
-
-        Command[] commands = Command.values();
-        for (int i = 0; i < commands.length; i++) {
-            if (commands[i] == Command.INVALID) {
-                continue;
-            }
-            if (i > 0) {
-                report.print("|");
-            }
-            report.print(commands[i].display());
-        }
-    }
-
-    private void handle_collection(CommandLine cmd) throws IOException {
-        String[] args = cmd.getArgs();
+    
+    private void handle_collection(CommandLine cmdline, Command cmd) throws IOException {
+        String[] args = cmdline.getArgs();
         String[] cols;
 
         if (args.length == 1) {
@@ -269,47 +262,45 @@ public class ArchiveTool {
         for (String col : cols) {
             CollectionDerivative deriv = new CollectionDerivative(col, report, store);
 
-            switch (getCommand(args[0])) {
+            switch (cmd) {
             case LIST:
                 deriv.list();
                 break;
             case CHECK:
-                deriv.check(hasOption(cmd, Flag.CHECK_BITS));
+                deriv.check(has_option(cmdline, Flag.CHECK_BITS));
                 break;
             case UPDATE:
-                deriv.updateChecksum(hasOption(cmd, Flag.FORCE));
+                deriv.updateChecksum(has_option(cmdline, Flag.FORCE));
                 break;
             case UPDATE_IMAGE_LIST:
                 break;
             case CROP_IMAGES:
                 CropDerivative cd = new CropDerivative(col, report, store);
-                cd.cropImages(hasOption(cmd, Flag.FORCE));
+                cd.cropImages(has_option(cmdline, Flag.FORCE));
                 break;
             case FILE_MAP:
-                displayError("Cannot generate file map for collections, a book must be specified.", args);
+                System.err.println("Cannot generate file map for collections, a book must be specified.");
                 break;
             case VALIDATE_XML:
                 deriv.validateXml();
                 break;
             case RENAME_IMAGES:
-                deriv.renameImages(hasOption(cmd, Flag.CHANGE_ID), hasOption(cmd, Flag.REVERSE));
+                deriv.renameImages(has_option(cmdline, Flag.CHANGE_ID), has_option(cmdline, Flag.REVERSE));
                 break;
             case CHECK_AOR:
-                String sheet_dir = cmd.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
+                String sheet_dir = cmdline.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
                 aorTranscriptionChecker.run(args[1], false, sheet_dir, report);
                 break;
             case SEPARATE_TEI_METADATA:
-                TEIDescriptionConverter.run(cmd, config, report);
+                TEIDescriptionConverter.run(cmdline, config, report);
                 break;
             default:
-                displayError("Invalid command found.", args);
-                listPossibleCommands();
                 break;
             }
         }
     }
 
-    private boolean hasOption(CommandLine cmd, Flag flag) {
-        return cmd.hasOption(flag.longName()) || cmd.hasOption(flag.shortName());
+    private boolean has_option(CommandLine cmdline, Flag flag) {
+        return cmdline.hasOption(flag.longName()) || cmdline.hasOption(flag.shortName());
     }
 }
