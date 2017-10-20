@@ -17,35 +17,17 @@ import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
 
+import org.apache.commons.io.FilenameUtils;
+
 /**
  * Implementation of {@link ByteStreamGroup} backed by a directory in a file system.
  */
 public class FSByteStreamGroup implements ByteStreamGroup {
     /**
-     * Enum of files that can be copied when doing a shallow copy of this ByteStreamGroup.
+     * Extensions of files to copy when copying metadata
      */
-    private enum SHALLOW_COPY_TYPES {
-        XML("application/xml", "xml"), TXT("text/plain", "txt"), HTML("text/html", "html"), CSV("text/csv", "csv");
-
-        final String type;
-
-        SHALLOW_COPY_TYPES(String type, String extension) {
-            this.type = type;
-        }
-
-        static boolean canCopy(String type) {
-            if ("missing_image.tif".equals(type)) {
-                return true;
-            }
-            for (SHALLOW_COPY_TYPES t : values()) {
-                if (t.type.equals(type)) {
-                    return true;
-                }
-            }
-            return false;
-        }
-    }
-
+    private static String[] METADATA_COPY_FILE_EXT = {"xml", "csv", "txt", "properties"};
+    
     private Path base;
 
     /**
@@ -231,7 +213,17 @@ public class FSByteStreamGroup implements ByteStreamGroup {
         Path group = Files.createDirectory(base.resolve(name));
         return new FSByteStreamGroup(group);
     }
-
+    
+    private boolean is_metadata_file_ext(String ext) {
+        for (String s: METADATA_COPY_FILE_EXT) {
+            if (s.equals(ext)) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
     @Override
     public void copyMetadataInto(ByteStreamGroup targetGroup) throws IOException {
         if (targetGroup == null || targetGroup.id() == null || targetGroup.id().isEmpty()) {
@@ -268,13 +260,12 @@ public class FSByteStreamGroup implements ByteStreamGroup {
                     @Override
                     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
                         Path target = targetPath.resolve(base.relativize(file));
-
-                        String type = Files.probeContentType(file);
-                        String name = file.getFileName().toString();
-                        if (name.equals("missing_image.tif") || (!name.startsWith(".") && !name.contains("ignore")
-                                && SHALLOW_COPY_TYPES.canCopy(type))) {
+                        String ext = FilenameUtils.getExtension(file.getFileName().toString());
+                        
+                        if (is_metadata_file_ext(ext)) {
                             Files.copy(file, target);
                         }
+                        
                         return FileVisitResult.CONTINUE;
                     }
 

@@ -33,6 +33,7 @@
         <mvn.source.plugin.version>2.4</mvn.source.plugin.version>
         <mvn.buildnumber.plugin.version>1.4</mvn.buildnumber.plugin.version>
         <mvn.exec.plugin.version>1.5.0</mvn.exec.plugin.version>
+	<mvn.failsafe.plugin.version>2.20.1</mvn.failsafe.plugin.version>
 
         <!-- Dependency versions -->
         <guice.version>4.0</guice.version>
@@ -213,7 +214,7 @@
                 <groupId>rosa.archive</groupId>
                 <artifactId>rosa-archive-core</artifactId>
                 <version>${project.version}</version>
-	            <type>test-jar</type>
+                <type>test-jar</type>
             </dependency>
 
             <dependency>
@@ -263,13 +264,6 @@
                 <artifactId>rosa-search-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>rosa.search</groupId>
-                <artifactId>rosa-search-tool</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
@@ -311,6 +305,12 @@
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>${mvn.exec.plugin.version}</version>
                 </plugin>
+
+		<plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-failsafe-plugin</artifactId>
+		  <version>${mvn.failsafe.plugin.version}</version>
+		</plugin>
             </plugins>
         </pluginManagement>
 	
@@ -347,6 +347,23 @@
                     </execution>
                 </executions>
             </plugin>
+
+
+	    <!-- Enable integration tests -->
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-failsafe-plugin</artifactId>
+	      <version>2.20.1</version>
+	      <executions>
+		<execution>
+		  <goals>
+		    <goal>integration-test</goal>
+		    <goal>verify</goal>
+		  </goals>
+		</execution>
+              </executions>
+	    </plugin>
+	  
         </plugins>
     </build>
 

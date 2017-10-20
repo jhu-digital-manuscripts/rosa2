@@ -30,8 +30,7 @@ public class IIIFPresentationServletConfigTest {
             "iiif.image.scheme = http\n" +
             "iiif.image.host = rosetest.library.jhu.edu\n" +
             "iiif.image.port = 80\n" +
-            "iiif.image.prefix = /iiif-image\n" +
-            "iiif.pres.search.index = ";
+            "iiif.image.prefix = /iiif-image\n" ;
 
     @Rule
     public TemporaryFolder tempDir = new TemporaryFolder();

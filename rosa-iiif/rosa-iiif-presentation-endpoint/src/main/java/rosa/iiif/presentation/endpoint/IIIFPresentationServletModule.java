@@ -2,6 +2,8 @@ package rosa.iiif.presentation.endpoint;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URISyntaxException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
@@ -56,6 +58,8 @@ public class IIIFPresentationServletModule extends ServletModule {
     private static final Logger LOG = Logger.getLogger(IIIFPresentationServletModule.class.toString());
     private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
     private static final String FSI_SHARE_MAP_CONFIG_PATH = "/fsi-share-map.properties";
+    private static final String LUCENE_DIRECTORY = "lucene";
+    private static final String ARCHIVE_DIRECTORY = "archive";
 
     @Override
     protected void configureServlets() {
@@ -99,10 +103,12 @@ public class IIIFPresentationServletModule extends ServletModule {
     }
 
     @Provides
-    Store provideStore(@Named("archive.path") String archive_path, SerializerSet serializers,
+    Store provideStore(SerializerSet serializers,
             BookChecker bookChecker, BookCollectionChecker collectionChecker) {
+        Path archive_path = get_webapp_path().resolve(ARCHIVE_DIRECTORY);
         LOG.info("Loading archive :: " + archive_path);
-        ByteStreamGroup base = new FSByteStreamGroup(Paths.get(archive_path));
+        
+        ByteStreamGroup base = new FSByteStreamGroup(archive_path);
         return new StoreImpl(serializers, bookChecker, collectionChecker, base);
     }
 
@@ -152,12 +158,22 @@ public class IIIFPresentationServletModule extends ServletModule {
         return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
     }
     
-    @Provides
-    JHSearchService provideJHSearchService(@Named("iiif.pres.search.index") String index_path,
-            @Named("formatter.presentation") IIIFPresentationRequestFormatter requestFormatter) {
-        LOG.info("Using lucene index path :: " + index_path);
+    // Derive the web app path from location of iiif-servlet.properties    
+    private Path get_webapp_path() {
         try {
-            return new LuceneJHSearchService(Paths.get(index_path), requestFormatter);
+            return Paths.get(getClass().getResource(SERVLET_CONFIG_PATH).toURI()).getParent().getParent();
+        } catch (URISyntaxException e) {
+            throw new RuntimeException("Failed find webapp path", e);
+        }
+    }
+    
+    @Provides
+    JHSearchService provideJHSearchService(@Named("formatter.presentation") IIIFPresentationRequestFormatter requestFormatter) {
+        try {
+            Path index_path = get_webapp_path().resolve(LUCENE_DIRECTORY);
+            LOG.info("Using lucene index path :: " + index_path);
+            
+            return new LuceneJHSearchService(index_path, requestFormatter);
         } catch (IOException e) {
             throw new RuntimeException("Failed to create LuceneIIIFSearchService", e);
         }
