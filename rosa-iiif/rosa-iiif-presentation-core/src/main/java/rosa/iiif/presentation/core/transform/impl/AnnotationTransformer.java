@@ -28,6 +28,7 @@ import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -35,6 +36,10 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 import org.apache.commons.lang3.StringEscapeUtils;
+
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamWriter;
 
 public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
         AORAnnotatedPageConstants {
@@ -156,10 +161,11 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         StringBuilder people = new StringBuilder();
         StringBuilder books = new StringBuilder();
         StringBuilder locs = new StringBuilder();
-        StringBuilder xrefs_html = new StringBuilder();
 
         // Left, top, right, bottom
         boolean[] orientation = new boolean[4];
+        List<Location> positions = new ArrayList<>();
+        List<XRef> xrefs = new ArrayList<>();
 
         for (MarginaliaLanguage lang : marg.getLanguages()) {
             for (Position pos : lang.getPositions()) {
@@ -167,7 +173,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 add(people, pos.getPeople(), ", ");
                 add(books, pos.getBooks(), ", ");
                 add(locs, pos.getLocations(), ", ");
-                add_xrefs(xrefs_html, pos.getxRefs(), "; ");
+                xrefs.addAll(pos.getxRefs());
                 
                 // No default case. If orientation is not 0, 90, 180, 270 then do nothing
                 switch (pos.getOrientation()) {
@@ -184,72 +190,141 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                         orientation[2] = true;
                         break;
                 }
+
+                // Add icon for position(s) on page
+                positions.add(pos.getPlace());
             }
         }
 
-        StringBuilder html = new StringBuilder("<div>");
+        XMLOutputFactory outF = XMLOutputFactory.newInstance();
 
-        // Add icon for position(s) on page
-        List<Location> positions = new ArrayList<>();
-        marg.getLanguages().forEach(lang -> lang.getPositions().stream()
-                        .map(Position::getPlace)
-                        .forEach(positions::add)
-        );
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        try {
+            XMLStreamWriter writer = outF.createXMLStreamWriter(output);
 
-        // Add span container for icons + orientation arrows (only for marginalia)
-        html.append("<span class=\"aor-icon-container\">");
-        if (orientation[0]) {   // Left orientation
-            html.append("<i class=\"orientation arrow-left\"></i>");
-        }
-        if (orientation[1]) {   // Up orientation
-            html.append("<i class=\"orientation arrow-top\"></i>");
-        }
-        html.append(locationToHtml(positions.toArray(new Location[positions.size()])));
-        if (orientation[2]) {   // Right orientation
-            html.append("<i class=\"orientation arrow-right\"></i>");
-        }
-        if (orientation[3]) {   // Down orientation
-            html.append("<i class=\"orientation arrow-bottom\"></i>");
-        }
-        html.append("</span>");
+            writer.writeStartElement("div");
 
-        html.append("<p>");
-        html.append(StringEscapeUtils.escapeHtml4(transcription.toString()));
-        html.append("</p>");
+            // ------ Add orientation + location icons ------
+            writer.writeStartElement("span");
+            writer.writeAttribute("class", "aor-icon-container");
+            if (orientation[0]) {   // Left
+                addElementWithAttributes(writer, "i", "class", "orientation arrow-left");
+            }
+            if (orientation[1]) {   // Up
+                addElementWithAttributes(writer, "i", "class", "orientation arrow-top");
+            }
+            writeLocationAsHtml(writer, positions.toArray(new Location[positions.size()]));
+            if (orientation[2]) {   // Right
+                addElementWithAttributes(writer, "i", "class", "orientation arrow-right");
+            }
+            if (orientation[3]) {   // Down
+                addElementWithAttributes(writer, "i", "class", "orientation arrow-bottom");
+            }
+            writer.writeEndElement();
+            // ------------
 
-        if (marg.getTranslation() != null && !marg.getTranslation().isEmpty()) {
-            html.append("<p class=\"italic\">[");
-            html.append(StringEscapeUtils.escapeHtml4(marg.getTranslation()));
-            html.append("]</p>");
-        }
+            // Add transcription
+            writer.writeStartElement("p");
+            writer.writeCharacters(StringEscapeUtils.escapeHtml4(transcription.toString()));
+            writer.writeEndElement();
 
-        if (people.length() > 0) {
-            html.append("<p><span class=\"emphasize\">People:</span> ");
-            html.append(StringEscapeUtils.escapeHtml4(trim_right(people, 2)));
-            html.append("</p>");
-        }
+            // Add translation
+            if (marg.getTranslation() != null && !marg.getTranslation().isEmpty()) {
+                writer.writeStartElement("p");
+                writer.writeAttribute("class", "italic");
+                writer.writeCharacters("[" + StringEscapeUtils.escapeHtml4(marg.getTranslation()) + "]");
+                writer.writeEndElement();
+            }
 
-        if (books.length() > 0) {
-            html.append("<p><span class=\"emphasize\">Books:</span> ");
-            html.append(StringEscapeUtils.escapeHtml4(trim_right(books, 2)));
-            html.append("</p>");
-        }
+            // Add list of People
+            if (people.length() > 0) {
+                writer.writeStartElement("p");
 
-        if (locs.length() > 0) {
-            html.append("<p><span class=\"emphasize\">Locations:</span> ");
-            html.append(StringEscapeUtils.escapeHtml4(trim_right(locs, 2)));
-            html.append("</p>");
-        }
-        
-        if (xrefs_html.length() > 0) {
-            html.append("<p><span class=\"emphasize\">Cross-references:</span> ");
-            html.append(trim_right(xrefs_html, 2));
-            html.append("</p>");
-        }
+                writer.writeStartElement("span");
+                writer.writeAttribute("class", "emphasize");
+                writer.writeCharacters("People:");
+                writer.writeEndElement();
 
-        html.append("</div>");
-        
-        return html.toString();
+                writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(people, 2)));
+                writer.writeEndElement();
+            }
+
+            // Add list of books
+            if (books.length() > 0) {
+                writer.writeStartElement("p");
+
+                writer.writeStartElement("span");
+                writer.writeAttribute("class", "emphasize");
+                writer.writeCharacters("Books:");
+                writer.writeEndElement();
+
+                writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(books, 2)));
+                writer.writeEndElement();
+            }
+
+            // Add list of Locations
+            if (locs.length() > 0) {
+                writer.writeStartElement("p");
+
+                writer.writeStartElement("span");
+                writer.writeAttribute("class", "emphasize");
+                writer.writeCharacters("Locations:");
+                writer.writeEndElement();
+
+                writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(locs, 2)));
+                writer.writeEndElement();
+            }
+
+            // Add list of X-refs
+            if (xrefs.size() > 0) {
+                writer.writeStartElement("p");
+
+                writer.writeStartElement("span");
+                writer.writeAttribute("class", "emphasize");
+                writer.writeCharacters("Cross-references:");
+                writer.writeEndElement();
+
+                writer.writeCharacters(" ");
+                for (XRef xref : xrefs) {
+                    writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
+                    writer.writeStartElement("span");
+                    writer.writeAttribute("class", "italic");
+                    writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getTitle()));
+                    writer.writeEndElement();
+
+                    if (xref.getText() != null && !xref.getText().isEmpty()) {
+                        writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
+                    }
+                    writer.writeCharacters("; ");
+                }
+
+                writer.writeEndElement();
+            }
+
+            writer.writeEndElement();
+
+        } catch (XMLStreamException e) {
+            return "Failed to write out marginalia.";
+        }
+        return output.toString();
+    }
+
+    /**
+     * Create an empty element that may have attributes.
+     *
+     * @param writer xml stream writer
+     * @param element element name
+     * @param attrs array of attributes for the new element, always attribute label followed by attribute value
+     *              IF PRESENT, attrs MUST have even number of elements
+     */
+    private void addElementWithAttributes(XMLStreamWriter writer, String element, String ... attrs) throws XMLStreamException {
+        writer.writeStartElement(element);
+        if (attrs != null && attrs.length % 2 == 0) {
+            for (int i = 0; i < attrs.length - 1;) {
+                writer.writeAttribute(attrs[i++], attrs[i++]);
+            }
+        }
+        writer.writeEndElement();
     }
 
     /**
@@ -312,25 +387,44 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     String locationToHtml(Location ... locations) {
-        if (locations == null || locations.length == 0) {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        try {
+            XMLStreamWriter writer = XMLOutputFactory.newInstance().createXMLStreamWriter(out);
+            writeLocationAsHtml(writer, locations);
+
+            return out.toString();
+        } catch (XMLStreamException e) {
             return "";
         }
+    }
 
-        StringBuilder result = new StringBuilder("<i class=\"aor-icon ");
+    /**
+     *
+     * @param writer xml stream writer
+     * @param locations list of zero or more locations on the page
+     * @throws XMLStreamException .
+     */
+    private void writeLocationAsHtml(XMLStreamWriter writer, Location ... locations) throws XMLStreamException {
+        if (locations == null || locations.length == 0) {
+            return;
+        }
+
+        StringBuilder styleClass = new StringBuilder("aor-icon ");
 
         // For each distinct location value, append appropriate CSS class
         Stream.of(locations)
                 .distinct()
                 .map(this::locationToClass)
-                .forEach(result::append);
+                .forEach(styleClass::append);
 
-        result.append("\">");
-        // Add 'inner' icon if any part is in-text
+        writer.writeStartElement("i");
+        writer.writeAttribute("class", styleClass.toString());
+
         if (Stream.of(locations).anyMatch(loc -> loc.equals(Location.INTEXT))) {
-            result.append("<i class=\"inner\"></i>");
+            addElementWithAttributes(writer, "i", "class", "inner");
         }
-        result.append("</i>");
-        return result.toString();
+
+        writer.writeEndElement();
     }
 
     private String locationToClass(Location location) {
@@ -359,18 +453,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             sb.append(sep);
         });
     }
-
-    
-    
-    // Add formatted xrefs to builder separated by the given string and ending with the separator
-    private void add_xrefs(StringBuilder sb, List<XRef> list, String sep) {
-        list.forEach(x -> {
-            sb.append(format_xref_as_html(x));
-            sb.append(sep);
-        });
-    }
-    
-    // return string from builder with n characters trimmed off right if they exist
     
     private String trim_right(StringBuilder sb, int n) {
         if (sb.length() < n) {
@@ -378,11 +460,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
         
         return sb.substring(0, sb.length() - n);
-    }
-    
-    private String format_xref_as_html(XRef xref) {
-        String text_html = xref.getText() == null ? "" :  " &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;"; 
-        return StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", <i>" + StringEscapeUtils.escapeHtml4(xref.getTitle()) + "</i>" + text_html;
     }
 
     private BookImage getPageImage(ImageList images, String page) {
@@ -452,6 +529,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return Collections.singletonList(ann);
     }
 
+    // TODO rewrite with actual XML handling, instead of string manipulation
     List<Annotation> illustrationsForPage(BookCollection collection, Book book, BookImage image) {
         String page = image.getName();
         if (book.getIllustrationTagging() == null) {
