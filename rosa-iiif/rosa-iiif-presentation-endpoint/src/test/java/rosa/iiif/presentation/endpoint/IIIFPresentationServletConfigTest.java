@@ -3,22 +3,19 @@ package rosa.iiif.presentation.endpoint;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
+import java.io.BufferedWriter;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 
 import com.google.inject.Injector;
 
-import org.junit.rules.TemporaryFolder;
 import rosa.iiif.presentation.core.IIIFPresentationService;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
-
-import java.io.BufferedWriter;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class IIIFPresentationServletConfigTest {
     private static String props = "archive.path = /mnt\n" +
@@ -32,9 +29,6 @@ public class IIIFPresentationServletConfigTest {
             "iiif.image.port = 80\n" +
             "iiif.image.prefix = /iiif-image\n" ;
 
-    @Rule
-    public TemporaryFolder tempDir = new TemporaryFolder();
-
     /**
      * Write new 'iiif-servlet.properties' file that will tell the Guice servlet
      * configuration to put the Lucene index into a JUnit temporary folder.
@@ -43,10 +37,8 @@ public class IIIFPresentationServletConfigTest {
      */
     @Before
     public void setup() throws Exception {
-        Path tempPath = tempDir.newFolder().toPath();
-        props += tempPath.toString();
-
         URL propsPath = getClass().getClassLoader().getResource("iiif-servlet.properties");
+
         if (propsPath == null) {
             fail("Failed to load 'iiif-servlet.properties'");
         }
