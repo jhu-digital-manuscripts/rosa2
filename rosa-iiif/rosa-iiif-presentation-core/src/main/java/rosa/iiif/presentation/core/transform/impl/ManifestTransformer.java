@@ -71,7 +71,10 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
 //        if (book.getLicenseLogoUrl() != null) {
 //            preziRights.setLogoUris(new String[] {book.getLicenseLogoUrl()});
 //        }
-        preziRights.addAttribution(book.getPermission(lc).getPermission(), lc);
+        if (book.getPermission(lc) != null && book.getPermission(lc).getPermission() != null) {
+            // Tolerate lack of permission data
+            preziRights.addAttribution(book.getPermission(lc).getPermission(), lc);
+        }
 
         manifest.setRights(preziRights);
         manifest.setViewingHint(ViewingHint.PAGED);
