@@ -44,7 +44,7 @@ public class WebAppResourceTool {
 
         System.out.println("## Indexing archive to " + archive_index_path);
 
-        SearchService service = new LuceneJHSearchService(Paths.get(args[0]), reqFormatter);
+        SearchService service = new LuceneJHSearchService(archive_index_path, reqFormatter);
 
         for (String col: store.listBookCollections()) {
                 service.update(store, col);
