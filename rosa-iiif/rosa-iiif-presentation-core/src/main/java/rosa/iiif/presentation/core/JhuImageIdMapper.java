@@ -7,10 +7,11 @@ import java.util.Map;
 
 /**
  * An implementation of ImageIdMapper that knows how to find an ID of
- * an image on the JHU FSI image server, given its location in the JHU
- * archive. An image id is FSI Share Name '/' Book Id '/' Image Id (without extension). 
+ * an image on the JHU image server, given its location in the JHU
+ * archive. An image id is Collection Id '/' Book Id '/' Image Id (without extension).
+ * Some images may also have a cropped version.
  */
-public class JhuFSIImageIdMapper implements ImageIdMapper {
+public class JhuImageIdMapper implements ImageIdMapper {
     private final Map<String, String> fsi_share_map;
 
     /**
@@ -18,7 +19,7 @@ public class JhuFSIImageIdMapper implements ImageIdMapper {
      * 
      * @param fsi_share_map map relating archive names to names on the image server
      */
-    public JhuFSIImageIdMapper(Map<String, String> fsi_share_map) {
+    public JhuImageIdMapper(Map<String, String> fsi_share_map) {
         this.fsi_share_map = fsi_share_map;
     }
 
