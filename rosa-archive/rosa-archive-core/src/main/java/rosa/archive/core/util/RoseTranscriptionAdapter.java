@@ -1,92 +1,44 @@
 package rosa.archive.core.util;
 
-import org.w3c.dom.Document;
-import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.ByteArrayOutputStream;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.StringReader;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Adapt transcriptions from Rose collection
  */
 public class RoseTranscriptionAdapter {
+    private static final Logger logger = Logger.getLogger("RoseTranscriptionAdapter");
 
     /**
      * Adapt transcription XML to HTML for display.
      *
      * @param xml string contents
+     * @param name name of the xml fragment
      * @return HTML representations, a String per column in each page
      */
     public String toHtml(String xml, String name) {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-
         try {
+            SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
+            RoseTranscriptionAdapterHandler handler = new RoseTranscriptionAdapterHandler();
 
-            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(
-                    new InputSource(new StringReader(xml))
+            parser.parse(
+                    new ByteArrayInputStream(xml.getBytes("UTF-8")),
+                    handler
             );
 
-            XMLUtil.write(doc, out, true);
+            return handler.getAdaptedString();
 
-        } catch (ParserConfigurationException | IOException | SAXException e) {
-            return null;
+        } catch (ParserConfigurationException | SAXException | IOException e) {
+            logger.log(Level.WARNING, "Failed to adapt Rose transcription from TEI to HTML. ", e);
+            return "";
         }
-
-        StringBuilder result = new StringBuilder();
-
-        String[] lines = out.toString().split("\n");
-        for (String line : lines) {
-            boolean needsNL = true;
-            line = line.trim();
-
-            if (skipLine(line)) {
-                needsNL = false;
-            }
-
-            if (line.startsWith("<div")) {
-                needsNL = false;
-            }
-            if (line.startsWith("<pb")) {
-                line = line.replaceFirst("<pb\\s+n=\"", "<h3>").replaceFirst("\"\\s*/>", "</h3>");
-                needsNL = false;
-            }
-            if (line.startsWith("<cb")) {
-                line = line.replaceFirst("<cb\\s+n=\"", "<h5>Column ").replaceFirst("\"\\s*/>", "</h5>");
-                needsNL = false;
-            }
-            if (line.contains("</l>")) {
-                line = line.replaceAll("</l>", "</l><br/>");
-                needsNL = false;
-            }
-
-            if (line.contains("<hi ")) {
-                line = line.replaceAll("<hi\\s+rend", "<span class").replaceAll("</hi>", "</span>");
-            }
-            if (line.contains("<note")) {
-                line = line.replaceAll("<note .*</note>", "");
-            }
-            if (line.contains("<expan")) {
-                line = line.replaceAll("<expan>", "<span class=\"expan\">").replaceAll("</expan>", "</span>");
-            }
-
-            if (needsNL)
-                line = line.concat("<br/>");
-
-            result.append(line);
-        }
-
-        return result.toString();
-    }
-
-    private boolean skipLine(String line) {
-        return line.startsWith("<figure") || line.startsWith("</figure>") ||
-                line.startsWith("<lg") || line.startsWith("</lg") ||
-                line.startsWith("<milestone") ||
-                line.equals("<l>") || line.equals("</l>");
     }
 
 }

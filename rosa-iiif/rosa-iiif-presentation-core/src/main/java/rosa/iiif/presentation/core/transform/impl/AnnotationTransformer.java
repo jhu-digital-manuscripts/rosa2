@@ -29,6 +29,7 @@ import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 
 import java.io.ByteArrayOutputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -208,17 +209,17 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             writer.writeStartElement("span");
             writer.writeAttribute("class", "aor-icon-container");
             if (orientation[0]) {   // Left
-                addElementWithAttributes(writer, "i", "class", "orientation arrow-left");
+                addSimpleElement(writer, "i",null,  "class", "orientation arrow-left");
             }
             if (orientation[1]) {   // Up
-                addElementWithAttributes(writer, "i", "class", "orientation arrow-top");
+                addSimpleElement(writer, "i",null,  "class", "orientation arrow-top");
             }
             writeLocationAsHtml(writer, positions.toArray(new Location[positions.size()]));
             if (orientation[2]) {   // Right
-                addElementWithAttributes(writer, "i", "class", "orientation arrow-right");
+                addSimpleElement(writer, "i",null,  "class", "orientation arrow-right");
             }
             if (orientation[3]) {   // Down
-                addElementWithAttributes(writer, "i", "class", "orientation arrow-bottom");
+                addSimpleElement(writer, "i", null, "class", "orientation arrow-bottom");
             }
             writer.writeEndElement();
             // ------------
@@ -229,22 +230,15 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             writer.writeEndElement();
 
             // Add translation
-            if (marg.getTranslation() != null && !marg.getTranslation().isEmpty()) {
-                writer.writeStartElement("p");
-                writer.writeAttribute("class", "italic");
-                writer.writeCharacters("[" + StringEscapeUtils.escapeHtml4(marg.getTranslation()) + "]");
-                writer.writeEndElement();
+            if (isNotEmpty(marg.getTranslation())) {
+                String content = "[" + StringEscapeUtils.escapeHtml4(marg.getTranslation()) + "]";
+                addSimpleElement(writer, "p", content, "class", "italic");
             }
 
             // Add list of People
             if (people.length() > 0) {
                 writer.writeStartElement("p");
-
-                writer.writeStartElement("span");
-                writer.writeAttribute("class", "emphasize");
-                writer.writeCharacters("People:");
-                writer.writeEndElement();
-
+                addSimpleElement(writer, "span", "People:", "class", "emphasize");
                 writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(people, 2)));
                 writer.writeEndElement();
             }
@@ -252,12 +246,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             // Add list of books
             if (books.length() > 0) {
                 writer.writeStartElement("p");
-
-                writer.writeStartElement("span");
-                writer.writeAttribute("class", "emphasize");
-                writer.writeCharacters("Books:");
-                writer.writeEndElement();
-
+                addSimpleElement(writer, "span", "Books:", "class", "emphasize");
                 writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(books, 2)));
                 writer.writeEndElement();
             }
@@ -265,12 +254,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             // Add list of Locations
             if (locs.length() > 0) {
                 writer.writeStartElement("p");
-
-                writer.writeStartElement("span");
-                writer.writeAttribute("class", "emphasize");
-                writer.writeCharacters("Locations:");
-                writer.writeEndElement();
-
+                addSimpleElement(writer, "span", "Locations:", "class", "emphasize");
                 writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(locs, 2)));
                 writer.writeEndElement();
             }
@@ -278,21 +262,13 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             // Add list of X-refs
             if (xrefs.size() > 0) {
                 writer.writeStartElement("p");
-
-                writer.writeStartElement("span");
-                writer.writeAttribute("class", "emphasize");
-                writer.writeCharacters("Cross-references:");
-                writer.writeEndElement();
-
+                addSimpleElement(writer, "span", "Cross-references:", "class", "emphasize");
                 writer.writeCharacters(" ");
                 for (XRef xref : xrefs) {
                     writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
-                    writer.writeStartElement("span");
-                    writer.writeAttribute("class", "italic");
-                    writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getTitle()));
-                    writer.writeEndElement();
 
-                    if (xref.getText() != null && !xref.getText().isEmpty()) {
+                    addSimpleElement(writer, "span", StringEscapeUtils.escapeHtml4(xref.getTitle()), "class", "italic");
+                    if (isNotEmpty(xref.getText())) {
                         writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
                     }
                     writer.writeCharacters("; ");
@@ -302,27 +278,32 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             }
 
             writer.writeEndElement();
-
-        } catch (XMLStreamException e) {
+            return output.toString("UTF-8");
+        } catch (XMLStreamException | UnsupportedEncodingException e) {
             return "Failed to write out marginalia.";
         }
-        return output.toString();
     }
 
     /**
-     * Create an empty element that may have attributes.
+     * Create an simple element that may have attributes and may have simple string content.
+     * This element cannot have nested elements.
      *
      * @param writer xml stream writer
      * @param element element name
+     * @param content simple String content
      * @param attrs array of attributes for the new element, always attribute label followed by attribute value
      *              IF PRESENT, attrs MUST have even number of elements
      */
-    private void addElementWithAttributes(XMLStreamWriter writer, String element, String ... attrs) throws XMLStreamException {
+    private void addSimpleElement(XMLStreamWriter writer, String element, String content, String ... attrs)
+            throws XMLStreamException {
         writer.writeStartElement(element);
         if (attrs != null && attrs.length % 2 == 0) {
             for (int i = 0; i < attrs.length - 1;) {
                 writer.writeAttribute(attrs[i++], attrs[i++]);
             }
+        }
+        if (isNotEmpty(content)) {
+            writer.writeCharacters(content);
         }
         writer.writeEndElement();
     }
@@ -421,7 +402,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         writer.writeAttribute("class", styleClass.toString());
 
         if (Stream.of(locations).anyMatch(loc -> loc.equals(Location.INTEXT))) {
-            addElementWithAttributes(writer, "i", "class", "inner");
+            addSimpleElement(writer, "i", null, "class", "inner");
         }
 
         writer.writeEndElement();
@@ -516,20 +497,23 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         RoseTranscriptionAdapter adapter = new RoseTranscriptionAdapter();
         transcription = adapter.toHtml(transcription, page);
 
-        Annotation ann = new Annotation();
+        if (isNotEmpty(transcription)) {
+            Annotation ann = new Annotation();
 
-        ann.setLabel("Transcription for page " + page, "en");
-        ann.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION));
-        ann.setMotivation(SC_PAINTING);
-        ann.setType(OA_ANNOTATION);
+            ann.setLabel("Transcription for page " + page, "en");
+            ann.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION));
+            ann.setMotivation(SC_PAINTING);
+            ann.setType(OA_ANNOTATION);
 
-        ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
-        ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", transcription, "en"));
+            ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
+            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", transcription, "en"));
 
-        return Collections.singletonList(ann);
+            return Collections.singletonList(ann);
+        } else {
+            return Collections.emptyList();
+        }
     }
 
-    // TODO rewrite with actual XML handling, instead of string manipulation
     List<Annotation> illustrationsForPage(BookCollection collection, Book book, BookImage image) {
         String page = image.getName();
         if (book.getIllustrationTagging() == null) {
@@ -579,48 +563,75 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 }
             }
 
-            StringBuilder html = new StringBuilder("<p class=\"annotation-title\">Illustration</p>");
+            String content;
+            ByteArrayOutputStream output = new ByteArrayOutputStream();
+            try {
+                XMLStreamWriter xml = XMLOutputFactory.newInstance().createXMLStreamWriter(output);
 
-            if (isNotEmpty(ill.getTitles())) {
-                html.append("<p><span class=\"bold\">Titles:</span> ")
-                        .append(sb_titles.toString()).append("</p>");
-            }
-            if (isNotEmpty(ill.getCharacters())) {
-                html.append("<p><span class=\"bold\">Characters:</span> ")
-                        .append(sb_names.toString()).append("</p>");
-            }
-            if (isNotEmpty(ill.getTextualElement())) {
-                html.append("<p><span class=\"bold\">Textual Elements:</span> ")
-                        .append(ill.getTextualElement()).append("</p>");
-            }
-            if (isNotEmpty(ill.getCostume())) {
-                html.append("<p><span class=\"bold\">Costume:</span> ")
-                        .append(ill.getCostume()).append("</p>");
-            }
-            if (isNotEmpty(ill.getInitials())) {
-                html.append("<p><span class=\"bold\">Initials:</span> ")
-                        .append(ill.getInitials()).append("</p>");
-            }
-            if (isNotEmpty(ill.getObject())) {
-                html.append("<p><span class=\"bold\">Object:</span> ")
-                        .append(ill.getObject()).append("</p>");
-            }
-            if (isNotEmpty(ill.getLandscape())) {
-                html.append("<p><span class=\"bold\">Landscape:</span> ")
-                        .append(ill.getLandscape()).append("</p>");
-            }
-            if (isNotEmpty(ill.getArchitecture())) {
-                html.append("<p><span class=\"bold\">Architecture:</span> ")
-                        .append(ill.getArchitecture()).append("</p>");
-            }
-            if (isNotEmpty(ill.getOther())) {
-                html.append("<p><span class=\"bold\">Other:</span> ")
-                        .append(ill.getOther()).append("</p>");
+                addSimpleElement(xml, "p", "Illustration", "class", "annotation-title");
+
+                if (isNotEmpty(ill.getTitles())) {
+                    xml.writeStartElement("p");
+                    addSimpleElement(xml, "span", "Titles:", "class", "bold");
+                    xml.writeCharacters(sb_titles.toString());
+                    xml.writeEndElement();
+                }
+                if (isNotEmpty(ill.getCharacters())) {
+                    xml.writeStartElement("p");
+                    addSimpleElement(xml, "span", "Characters:", "class", "bold");
+                    xml.writeCharacters(sb_names.toString());
+                    xml.writeEndElement();
+                }
+                if (isNotEmpty(ill.getTextualElement())) {
+                    xml.writeStartElement("p");
+                    addSimpleElement(xml, "span", "Textual Elements:", "class", "bold");
+                    xml.writeCharacters(ill.getTextualElement());
+                    xml.writeEndElement();
+                }
+                if (isNotEmpty(ill.getCostume())) {
+                    xml.writeStartElement("p");
+                    addSimpleElement(xml, "span", "Costume:", "class", "bold");
+                    xml.writeCharacters(ill.getCostume());
+                    xml.writeEndElement();
+                }
+                if (isNotEmpty(ill.getInitials())) {
+                    xml.writeStartElement("p");
+                    addSimpleElement(xml, "span", "Initials:", "class", "bold");
+                    xml.writeCharacters(ill.getInitials());
+                    xml.writeEndElement();
+                }
+                if (isNotEmpty(ill.getObject())) {
+                    xml.writeStartElement("p");
+                    addSimpleElement(xml, "span", "Object:", "class", "bold");
+                    xml.writeCharacters(ill.getObject());
+                    xml.writeEndElement();
+                }
+                if (isNotEmpty(ill.getLandscape())) {
+                    xml.writeStartElement("p");
+                    addSimpleElement(xml, "span", "Landscape:", "class", "bold");
+                    xml.writeCharacters(ill.getLandscape());
+                    xml.writeEndElement();
+                }
+                if (isNotEmpty(ill.getArchitecture())) {
+                    xml.writeStartElement("p");
+                    addSimpleElement(xml, "span", "Architecture:", "class", "bold");
+                    xml.writeCharacters(ill.getArchitecture());
+                    xml.writeEndElement();
+                }
+                if (isNotEmpty(ill.getOther())) {
+                    xml.writeStartElement("p");
+                    addSimpleElement(xml, "span", "Other:", "class", "bold");
+                    xml.writeCharacters(ill.getOther());
+                    xml.writeEndElement();
+                }
+
+                content = output.toString("UTF-8");
+            } catch (XMLStreamException | UnsupportedEncodingException e) {
+                content = "";
             }
 
-            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", html.toString(), "en"));
+            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", content, "en"));
             ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
-
             anns.add(ann);
         }
 
