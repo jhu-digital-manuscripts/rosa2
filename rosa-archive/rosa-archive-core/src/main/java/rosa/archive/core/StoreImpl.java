@@ -173,23 +173,21 @@ public class StoreImpl implements Store, ArchiveConstants {
             cmd.setLanguages(langs.split(","));
         }
         
-        if (collectionGroup.hasByteStream(MISSING_IMAGE)) {
-            if (!props.containsKey(CONFIG_MISSING_WIDTH) || !props.containsKey(CONFIG_MISSING_HEIGHT)) {
-                errors.add("Missing properties: " + CONFIG_MISSING_WIDTH + ", " + CONFIG_MISSING_HEIGHT);
-            } else {
-                BookImage missing = new BookImage();
-                missing.setId(MISSING_IMAGE);
-                missing.setMissing(false);
+        if (!props.containsKey(CONFIG_MISSING_WIDTH) || !props.containsKey(CONFIG_MISSING_HEIGHT)) {
+            errors.add("Missing properties: " + CONFIG_MISSING_WIDTH + ", " + CONFIG_MISSING_HEIGHT);
+        } else {
+            BookImage missing = new BookImage();
+            missing.setId(MISSING_IMAGE);
+            missing.setMissing(false);
 
-                try {
-                    missing.setWidth(Integer.parseInt(props.getProperty(CONFIG_MISSING_WIDTH)));
-                    missing.setHeight(Integer.parseInt(props.getProperty(CONFIG_MISSING_HEIGHT)));
-                } catch (NumberFormatException e) {
-                    errors.add("Failed to parse missing image dimensions in config.properties");
-                }
-
-                collection.setMissingImage(missing);                
+            try {
+                missing.setWidth(Integer.parseInt(props.getProperty(CONFIG_MISSING_WIDTH)));
+                missing.setHeight(Integer.parseInt(props.getProperty(CONFIG_MISSING_HEIGHT)));
+            } catch (NumberFormatException e) {
+                errors.add("Failed to parse missing image dimensions in config.properties");
             }
+
+            collection.setMissingImage(missing);
         }
 
         if (props.containsKey(CONFIG_LOGO)) {
