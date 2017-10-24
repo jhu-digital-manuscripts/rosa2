@@ -14,8 +14,6 @@ import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Manifest;
-import rosa.iiif.presentation.model.PresentationRequest;
-import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Rights;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.ViewingDirection;
@@ -53,7 +51,7 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
     private Manifest buildManifest(BookCollection collection, Book book) {
         Manifest manifest = new Manifest();
 
-        manifest.setId(urlId(collection.getId(), book.getId(), null, PresentationRequestType.MANIFEST));
+        manifest.setId(pres_uris.getManifestURI(collection.getId(), book.getId()));
         manifest.setType(SC_MANIFEST);
         manifest.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
         manifest.setDefaultSequence(sequenceTransformer.transform(collection, book, DEFAULT_SEQUENCE_LABEL));
@@ -104,7 +102,7 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
          * }
          */
         Within parent = new Within(
-                urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION),
+                pres_uris.getCollectionURI(collection.getId()),
                 SC_COLLECTION,
                 collection.getLabel()
         );
@@ -115,24 +113,20 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         // Add search service
         manifest.addService(new Service(
                 JHSearchService.CONTEXT_URI,
-                presRequestFormatter.format(
-                        new PresentationRequest(
-                                collection.getId()+"."+book.getId(),
-                                null,
-                                PresentationRequestType.MANIFEST)) + JHSearchService.RESOURCE_PATH,
+                pres_uris.getManifestURI(collection.getId(), book.getId()) + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE
         ));
 
         manifest.addService(new Service(
                 JHSearchService.CONTEXT_URI,
-                urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION)
+                pres_uris.getCollectionURI(collection.getId())
                         + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE,
                 collection.getLabel()
         ));
         manifest.addService(new Service(
                 JHSearchService.CONTEXT_URI,
-                urlId("top", null, "top", PresentationRequestType.COLLECTION)
+                pres_uris.getCollectionURI("top")
                         + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE,
                 CollectionTransformer.TOP_COLLECTION_LABEL

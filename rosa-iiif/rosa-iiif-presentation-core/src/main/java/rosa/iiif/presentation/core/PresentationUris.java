@@ -3,7 +3,6 @@ package rosa.iiif.presentation.core;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 
-// TODO BasePresentationTransformer, JHSearchLuceneMapper, IT
 
 /**
  * Handle mapping of archive objects into recommended URI patterns for IIIF
@@ -22,13 +21,33 @@ public class PresentationUris {
         return formatter.format(new PresentationRequest(null, collection, PresentationRequestType.COLLECTION));
     }
 
-    public String getBookURI(String collection, String book) {
+    public String getManifestURI(String collection, String book) {
         return formatter.format(new PresentationRequest(get_presentation_id(collection, book), null, PresentationRequestType.MANIFEST));
     }
 
     public String getAnnotationURI(String collection, String book, String name) {
         return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
                 PresentationRequestType.ANNOTATION));
+    }
+    
+    public String getAnnotationListURI(String collection, String book, String name) {
+        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
+                PresentationRequestType.ANNOTATION_LIST));
+    }
+    
+    public String getSequenceURI(String collection, String book, String name) {
+        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
+                PresentationRequestType.SEQUENCE));
+    }
+    
+    public String getLayerURI(String collection, String book, String name) {
+        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
+                PresentationRequestType.LAYER));
+    }
+    
+    public String getRangeURI(String collection, String book, String name) {
+        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
+                PresentationRequestType.RANGE));
     }
     
     public String getCanvasURI(String collection, String book, String name) {

@@ -1,7 +1,11 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
+
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -13,13 +17,9 @@ import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
-import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.ViewingHint;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class RangeTransformer extends BasePresentationTransformer implements Transformer<Range> {
 
@@ -64,7 +64,7 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
     }
 
     private String constructRangeURI(BookCollection col, Book book, String range_type, String range_id) {
-        return urlId(col.getId(), book.getId(), constructRangeName(range_type, range_id), PresentationRequestType.RANGE);
+        return pres_uris.getRangeURI(col.getId(), book.getId(), constructRangeName(range_type, range_id));
     }
 
     public List<Range> topRanges(BookCollection col, Book book) {
@@ -127,7 +127,7 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
                     // If this_page lies within the range of pages of this BookText, add it to the range
                     if (this_page.compareToIgnoreCase(start_page) >= 0
                             && this_page.compareToIgnoreCase(end_page) <= 0) {
-                        canvases.add(urlId(col.getId(), book.getId(), this_page, PresentationRequestType.CANVAS));
+                        canvases.add(pres_uris.getCanvasURI(col.getId(), book.getId(), this_page));
                     }
                 }
                 result.setCanvases(canvases);
@@ -196,7 +196,7 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
     private void addCanvasUris(BookCollection collection, Book book, BookImageLocation targetType, List<String> uris) {
         for (BookImage image : book.getImages()) {
             if (image.getLocation() == targetType) {
-                uris.add(urlId(collection.getId(), book.getId(), image.getName(), PresentationRequestType.CANVAS));
+                uris.add(pres_uris.getCanvasURI(collection.getId(), book.getId(), image.getName()));
             }
         }
     }
@@ -255,7 +255,7 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
             }
 
             List<String> canvases = new ArrayList<>();
-            canvases.add(urlId(col.getId(), book.getId(), illus.getPage(), PresentationRequestType.CANVAS));
+            canvases.add(pres_uris.getCanvasURI(col.getId(), book.getId(), illus.getPage()));
 
             result.setLabel(label, "en");
             result.setCanvases(canvases);

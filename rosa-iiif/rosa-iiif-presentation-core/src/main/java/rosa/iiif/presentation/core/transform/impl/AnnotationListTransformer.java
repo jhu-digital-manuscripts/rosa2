@@ -1,7 +1,10 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+import java.util.List;
+
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
+
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -11,11 +14,8 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.AnnotationListType;
-import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
-
-import java.util.List;
 
 public class AnnotationListTransformer extends BasePresentationTransformer implements Transformer<AnnotationList> {
 
@@ -97,14 +97,14 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         AnnotationList list = new AnnotationList();
 
         String label = annotationListName(image.getName(), listType.toString().toLowerCase());
-        list.setId(urlId(collection.getId(), book.getId(), annotationListName(image.getName(),
-                listType.toString().toLowerCase()), PresentationRequestType.ANNOTATION_LIST));
+        list.setId(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), annotationListName(image.getName(),
+                listType.toString().toLowerCase())));
         list.setType(SC_ANNOTATION_LIST);
         list.setDescription("Annotation list for " + listType.toString().toLowerCase() + " on page "
                 + image.getName(), "en");
         list.setLabel(label, "en");
         list.setWithin(new Within(
-                urlId(collection.getId(), book.getId(), listType.toString().toLowerCase(), PresentationRequestType.LAYER)
+                pres_uris.getLayerURI(collection.getId(), book.getId(), listType.toString().toLowerCase())
         ));
 
         List<Annotation> annotations = list.getAnnotations();
@@ -188,12 +188,12 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         String type = AnnotationListType.ALL.toString().toLowerCase();
         String name = annotationListName(image.getName(), type);
 
-        list.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION_LIST));
+        list.setId(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), name));
         list.setType(SC_ANNOTATION_LIST);
         list.setDescription("Annotation list for " + type + " on page " + image.getName(), "en");
         list.setLabel(name, "en");
         list.setWithin(new Within(
-                urlId(collection.getId(), book.getId(), "all", PresentationRequestType.LAYER)
+                pres_uris.getLayerURI(collection.getId(), book.getId(), "all")
         ));
 
         return list;

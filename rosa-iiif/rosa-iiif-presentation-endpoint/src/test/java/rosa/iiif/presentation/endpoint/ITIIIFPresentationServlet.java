@@ -61,9 +61,9 @@ public class ITIIIFPresentationServlet {
             check_retrieve_json(pres_uris.getCollectionURI(col));
             
             for (String book: store.listBooks(col)) {
-                System.out.println("Checking: " + pres_uris.getBookURI(col, book));
+                System.out.println("Checking: " + pres_uris.getManifestURI(col, book));
                 
-                check_retrieve_json(pres_uris.getBookURI(col, book));
+                check_retrieve_json(pres_uris.getManifestURI(col, book));
             }
         }
     }

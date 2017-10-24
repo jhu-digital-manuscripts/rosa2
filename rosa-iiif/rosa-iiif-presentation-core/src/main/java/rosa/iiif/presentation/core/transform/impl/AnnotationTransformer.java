@@ -1,9 +1,24 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Stream;
+
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamWriter;
+
+import org.apache.commons.lang3.StringEscapeUtils;
+
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
+
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
+import rosa.archive.core.util.Annotations;
 import rosa.archive.core.util.RoseTranscriptionAdapter;
 import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.Book;
@@ -20,27 +35,13 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
-import rosa.archive.core.util.Annotations;
 import rosa.iiif.presentation.model.IIIFNames;
-import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 
-import java.io.ByteArrayOutputStream;
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Stream;
-
-import org.apache.commons.lang3.StringEscapeUtils;
-
-import javax.xml.stream.XMLOutputFactory;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
 
 public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
         AORAnnotatedPageConstants {
@@ -85,7 +86,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
         Annotation a = new Annotation();
 
-        a.setId(urlId(collection.getId(), book.getId(), anno.getId(), PresentationRequestType.ANNOTATION));
+        a.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), anno.getId()));
         a.setType(IIIFNames.OA_ANNOTATION);
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.setDefaultSource(new AnnotationSource(
@@ -97,11 +98,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         AnnotationTarget target = locationOnCanvas(
                 getPageImage(book.getImages(), getAnnotationPage(anno.getId())),
                 Location.FULL_PAGE);
-        target.setUri(urlId(
+        target.setUri(pres_uris.getCanvasURI(
                 collection.getId(),
                 book.getId(),
-                getAnnotationPage(anno.getId()),
-                PresentationRequestType.CANVAS
+                getAnnotationPage(anno.getId())
         ));
 
         a.setDefaultTarget(target);
@@ -134,7 +134,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
         Annotation anno = new Annotation();
 
-        anno.setId(urlId(collection.getId(), book.getId(), marg.getId(), PresentationRequestType.ANNOTATION));
+        anno.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), marg.getId()));
         anno.setMotivation(IIIFNames.SC_PAINTING);
         anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
                 marginaliaToDisplayHtml(marg), lang));
@@ -142,11 +142,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         AnnotationTarget target = locationOnCanvas(
                 getPageImage(book.getImages(), getAnnotationPage(marg.getId())),
                 Location.FULL_PAGE);
-        target.setUri(urlId(
+        target.setUri(pres_uris.getCanvasURI(
                 collection.getId(),
                 book.getId(),
-                getAnnotationPage(anno.getId()),
-                PresentationRequestType.CANVAS
+                getAnnotationPage(anno.getId())
         ));
 
         anno.setDefaultTarget(target); // TODO actual position(s)
@@ -501,7 +500,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             Annotation ann = new Annotation();
 
             ann.setLabel("Transcription for page " + page, "en");
-            ann.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION));
+            ann.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), name));
             ann.setMotivation(SC_PAINTING);
             ann.setType(OA_ANNOTATION);
 
@@ -530,7 +529,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
             Annotation ann = new Annotation();
             ann.setLabel("Illustration(s) on " + page, "en");
-            ann.setId(urlId(collection.getId(), book.getId(), anno_name, PresentationRequestType.ANNOTATION));
+            ann.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), anno_name));
             ann.setMotivation(SC_PAINTING);
             ann.setType(OA_ANNOTATION);
 

@@ -1,7 +1,11 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
+
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -10,10 +14,6 @@ import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Layer;
-import rosa.iiif.presentation.model.PresentationRequestType;
-
-import java.util.ArrayList;
-import java.util.List;
 
 // TODO finish implementing
 public class LayerTransformer extends BasePresentationTransformer implements Transformer<Layer>, IIIFNames {
@@ -45,7 +45,7 @@ public class LayerTransformer extends BasePresentationTransformer implements Tra
     private Layer layer(BookCollection collection, Book book, String name) {
         Layer layer = new Layer();
 
-        layer.setId(urlId(collection.getId(), book.getId(), name, PresentationRequestType.LAYER));
+        layer.setId(pres_uris.getLayerURI(collection.getId(), book.getId(), name));
         layer.setType(SC_LAYER);
         layer.setLabel(name, "en");
 
@@ -54,8 +54,7 @@ public class LayerTransformer extends BasePresentationTransformer implements Tra
             for (BookImage image : book.getImages()) {
                 String id = image.getId();
 
-                otherContent.add(urlId(collection.getId(), book.getId(), annotationListName(id, name),
-                        PresentationRequestType.LAYER));
+                otherContent.add(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), annotationListName(id, name)));
             }
             layer.setOtherContent(otherContent);
         }

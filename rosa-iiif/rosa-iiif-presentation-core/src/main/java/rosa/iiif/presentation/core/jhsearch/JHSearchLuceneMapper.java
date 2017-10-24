@@ -448,7 +448,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		Document doc = new Document();
 
 		String collection_id = pres_uris.getCollectionURI(col.getId());
-		String manifest_id =  pres_uris.getBookURI(col.getId(), book.getId());
+		String manifest_id =  pres_uris.getManifestURI(col.getId(), book.getId());
 		String canvas_id = pres_uris.getCanvasURI(col.getId(), book.getId(), image.getName());
 
 		addField(doc, JHSearchField.COLLECTION_ID, collection_id);
@@ -468,7 +468,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		Document doc = new Document();
 
 		String collection_id = pres_uris.getCollectionURI(col.getId());
-		String manifest_id = pres_uris.getBookURI(col.getId(), book.getId());
+		String manifest_id = pres_uris.getManifestURI(col.getId(), book.getId());
 
         BookMetadata md = book.getBookMetadata("en");
         String manifest_label = md.getCommonName();

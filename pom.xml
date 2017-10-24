@@ -34,6 +34,7 @@
         <mvn.buildnumber.plugin.version>1.4</mvn.buildnumber.plugin.version>
         <mvn.exec.plugin.version>1.5.0</mvn.exec.plugin.version>
 	<mvn.failsafe.plugin.version>2.20.1</mvn.failsafe.plugin.version>
+	<mvn.tomcat.plugin.version>2.2</mvn.tomcat.plugin.version>	
 
         <!-- Dependency versions -->
         <guice.version>4.0</guice.version>
@@ -311,6 +312,13 @@
 		  <artifactId>maven-failsafe-plugin</artifactId>
 		  <version>${mvn.failsafe.plugin.version}</version>
 		</plugin>
+
+		<plugin>
+		  <groupId>org.apache.tomcat.maven</groupId>
+		  <artifactId>tomcat7-maven-plugin</artifactId>
+		  <version>${mvn.tomcat.plugin.version}</version>
+		</plugin>
+
             </plugins>
         </pluginManagement>
 	
@@ -353,7 +361,6 @@
 	    <plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-failsafe-plugin</artifactId>
-	      <version>2.20.1</version>
 	      <executions>
 		<execution>
 		  <goals>

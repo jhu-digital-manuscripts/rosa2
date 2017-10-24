@@ -1,9 +1,8 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.IIIFNames;
-import rosa.iiif.presentation.model.PresentationRequest;
-import rosa.iiif.presentation.model.PresentationRequestType;
 
 public abstract class BasePresentationTransformer implements IIIFNames {
     protected static final String IMAGE_RANGE_MISC_ID = "misc";
@@ -18,23 +17,9 @@ public abstract class BasePresentationTransformer implements IIIFNames {
     protected static final String IMAGE_RANGE_TYPE = "image";
     protected static final String TEXT_RANGE_TYPE = "text";
 
-    protected IIIFPresentationRequestFormatter presRequestFormatter;
+    protected final PresentationUris pres_uris;
 
     public BasePresentationTransformer(IIIFPresentationRequestFormatter presRequestFormatter) {
-        this.presRequestFormatter = presRequestFormatter;
-    }
-
-    // This needs to be pulled out into a separate service with sensible methods
-    protected String urlId(String collection, String book, String name, PresentationRequestType type) {
-        return presRequestFormatter.format(presentationRequest(collection, book, name, type));
-    }
-
-    private String presentationId(String collection, String book) {
-        return collection + (book == null || book.isEmpty() ? "" : "." + book);
-    }
-
-    private PresentationRequest presentationRequest(String collection, String book, String name,
-                                                    PresentationRequestType type) {
-        return new PresentationRequest(presentationId(collection, book), name, type);
+        this.pres_uris = new PresentationUris(presRequestFormatter);
     }
 }
