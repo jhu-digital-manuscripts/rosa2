@@ -25,7 +25,6 @@ import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Image;
-import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.TextValue;
@@ -56,7 +55,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
     public Collection collection(BookCollection collection) {
         Collection col = new Collection();
 
-        col.setId(urlId(collection.getId(), null, collection.getId(), PresentationRequestType.COLLECTION));
+        col.setId(pres_uris.getCollectionURI(collection.getId()));
         col.setLabel(collection.getLabel(), LANGUAGE_DEFAULT);
         col.setType(SC_COLLECTION);
 
@@ -73,9 +72,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 col.getLabel(LANGUAGE_DEFAULT)
         ));
         col.addService(new Service(
-                JHSearchService.CONTEXT_URI,
-                urlId(TOP_COLLECTION_NAME, null, TOP_COLLECTION_NAME, PresentationRequestType.COLLECTION)
-                        + JHSearchService.RESOURCE_PATH,
+                JHSearchService.CONTEXT_URI, pres_uris.getCollectionURI(TOP_COLLECTION_NAME) + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE,
                 TOP_COLLECTION_LABEL
         ));
@@ -88,7 +85,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
                     continue;
                 }
                 childList.add(new Reference(
-                        urlId(childCol.getId(), null, childCol.getId(), PresentationRequestType.COLLECTION),
+                        pres_uris.getCollectionURI(childCol.getId()),       
                         new TextValue(childCol.getLabel(), LANGUAGE_DEFAULT),
                         IIIFNames.SC_COLLECTION
                 ));
@@ -104,7 +101,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
                     continue;
                 }
                 parentList.add(new Reference(
-                        urlId(parentCol.getId(), null, parentCol.getId(), PresentationRequestType.COLLECTION),
+                        pres_uris.getCollectionURI(parentCol.getId()),
                         new TextValue(parentCol.getLabel(), LANGUAGE_DEFAULT),
                         IIIFNames.SC_COLLECTION
                 ));
@@ -122,7 +119,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
     public Collection topCollection(List<BookCollection> collections) {
         Collection col = new Collection();
 
-        col.setId(urlId(TOP_COLLECTION_NAME, null, TOP_COLLECTION_NAME, PresentationRequestType.COLLECTION));
+        col.setId(pres_uris.getCollectionURI(TOP_COLLECTION_NAME));
         col.setLabel(TOP_COLLECTION_LABEL, LANGUAGE_DEFAULT);
         col.setDescription("Top level collection bringing together all other collections in this archive.", "en");
         col.setType(SC_COLLECTION);
@@ -133,7 +130,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
             ref.setType(SC_COLLECTION);
             ref.setLabel(new TextValue(c.getLabel(), LANGUAGE_DEFAULT));
-            ref.setReference(urlId(c.getId(), null, c.getId(), PresentationRequestType.COLLECTION));
+            ref.setReference(pres_uris.getCollectionURI(c.getId()));
 
             cols.add(ref);
         }
@@ -161,7 +158,8 @@ public class CollectionTransformer extends BasePresentationTransformer {
             Reference ref = new Reference();
 
             ref.setType(SC_MANIFEST);
-            ref.setReference(urlId(collection.getId(), title, null, PresentationRequestType.MANIFEST));
+            
+            ref.setReference(pres_uris.getManifestURI(collection.getId(), title));
 
             try {
                 Book b = store.loadBook(collection.getId(), title);

@@ -1,7 +1,11 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
+
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -11,12 +15,8 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFNames;
-import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class SequenceTransformer extends BasePresentationTransformer implements Transformer<Sequence> {
     private CanvasTransformer canvasTransformer;
@@ -59,7 +59,7 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
         }
 
         Sequence sequence = new Sequence();
-        sequence.setId(urlId(collection.getId(), book.getId(), label, PresentationRequestType.SEQUENCE));
+        sequence.setId(pres_uris.getSequenceURI(collection.getId(), book.getId(), label));
         sequence.setType(IIIFNames.SC_SEQUENCE);
         sequence.setViewingDirection(ViewingDirection.LEFT_TO_RIGHT);
         sequence.setLabel(label, "en");

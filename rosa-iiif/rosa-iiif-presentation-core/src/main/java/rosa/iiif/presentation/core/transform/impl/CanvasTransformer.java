@@ -15,7 +15,6 @@ import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.Image;
-import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.ViewingHint;
@@ -48,7 +47,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
             return null;
         }
         Canvas canvas = new Canvas();
-        canvas.setId(urlId(collection.getId(), book.getId(), image.getName(), PresentationRequestType.CANVAS));
+        canvas.setId(pres_uris.getCanvasURI(collection.getId(), book.getId(), image.getName()));
         canvas.setType(SC_CANVAS);
         canvas.setLabel(image.getName(), "en");
 
@@ -132,8 +131,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
 
         Annotation ann = new Annotation();
 
-        ann.setId(urlId(collection.getId(), book == null ? "" : book.getId(), image.getName(),
-                PresentationRequestType.ANNOTATION));
+        ann.setId(pres_uris.getAnnotationURI(collection.getId(), book == null ? "" : book.getId(), image.getName()));
         ann.setWidth(image.getWidth());
         ann.setHeight(image.getHeight());
         ann.setMotivation(SC_PAINTING);
@@ -169,7 +167,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         Reference ref = new Reference();
 
         String name = image.getName() + ".all";
-        ref.setReference(urlId(collection.getId(), book.getId(), name, PresentationRequestType.ANNOTATION_LIST));
+        ref.setReference(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), name));
         ref.setLabel(new TextValue(name, "en"));
         ref.setType(SC_ANNOTATION_LIST);
 
