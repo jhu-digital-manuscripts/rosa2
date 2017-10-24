@@ -19,7 +19,7 @@ import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
-import rosa.iiif.presentation.core.JhuFSIImageIdMapper;
+import rosa.iiif.presentation.core.JhuImageIdMapper;
 import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
@@ -62,7 +62,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
                 new IIIFPresentationRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT);
         rosa.iiif.image.core.IIIFRequestFormatter imageReqFormatter =
                 new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
-        ImageIdMapper idMapper = new JhuFSIImageIdMapper(idMap);
+        ImageIdMapper idMapper = new JhuImageIdMapper(idMap);
 
         CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
         CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter, simpleStore, imageReqFormatter, idMapper);

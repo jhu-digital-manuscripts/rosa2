@@ -7,7 +7,6 @@ import java.io.BufferedWriter;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Properties;
 
 import org.junit.Before;
 import org.junit.Test;

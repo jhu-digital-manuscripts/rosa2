@@ -46,14 +46,11 @@ import rosa.archive.model.aor.XRef;
 import rosa.archive.model.meta.BiblioData;
 import rosa.archive.model.meta.MultilangMetadata;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.IIIFNames;
-import rosa.iiif.presentation.model.PresentationRequest;
-import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.search.core.BaseLuceneMapper;
 import rosa.search.model.SearchField;
 import rosa.search.model.SearchFieldType;
-
-// TODO Duplication with WebsiteLuceneMapper
 
 /**
  * Index and create queries for data which becomes IIIF Presentation
@@ -62,11 +59,12 @@ import rosa.search.model.SearchFieldType;
 public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	private static final Logger logger = Logger.getLogger(JHSearchLuceneMapper.class.toString());
 
-	private final IIIFPresentationRequestFormatter formatter;
+	private final PresentationUris pres_uris;
 
 	public JHSearchLuceneMapper(IIIFPresentationRequestFormatter formatter) {
 		super(JHSearchField.values());
-		this.formatter = formatter;
+
+		this.pres_uris = new PresentationUris(formatter);		        
 		
 		facets_config.setMultiValued(JHSearchCategory.AUTHOR.getFieldName(), true);
 	}
@@ -449,9 +447,9 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	private Document create_canvas_document(BookCollection col, Book book, BookImage image) {
 		Document doc = new Document();
 
-		String collection_id = get_uri(col.getId(), null, col.getId(), PresentationRequestType.COLLECTION);
-		String manifest_id = get_uri(col.getId(), book.getId(), null, PresentationRequestType.MANIFEST);
-		String canvas_id = get_uri(col.getId(), book.getId(), image.getName(), PresentationRequestType.CANVAS);
+		String collection_id = pres_uris.getCollectionURI(col.getId());
+		String manifest_id =  pres_uris.getBookURI(col.getId(), book.getId());
+		String canvas_id = pres_uris.getCanvasURI(col.getId(), book.getId(), image.getName());
 
 		addField(doc, JHSearchField.COLLECTION_ID, collection_id);
 
@@ -469,8 +467,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	private Document create_manifest_document(BookCollection col, Book book) {
 		Document doc = new Document();
 
-		String collection_id = get_uri(col.getId(), null, col.getId(), PresentationRequestType.COLLECTION);
-		String manifest_id = get_uri(col.getId(), book.getId(), null, PresentationRequestType.MANIFEST);
+		String collection_id = pres_uris.getCollectionURI(col.getId());
+		String manifest_id = pres_uris.getBookURI(col.getId(), book.getId());
 
         BookMetadata md = book.getBookMetadata("en");
         String manifest_label = md.getCommonName();
@@ -653,20 +651,5 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 			sb.append(' ');
 		}
 		return sb.toString();
-	}
-
-	// TODO Duplicated from BasePresentationTransformer. Must be put into
-	// separate service.
-
-	private String get_uri(String collection, String book, String name, PresentationRequestType type) {
-		return formatter.format(get_request(collection, book, name, type));
-	}
-
-	private String get_id(String collection, String book) {
-		return collection + (book == null || book.isEmpty() ? "" : "." + book);
-	}
-
-	private PresentationRequest get_request(String collection, String book, String name, PresentationRequestType type) {
-		return new PresentationRequest(get_id(collection, book), name, type);
 	}
 }

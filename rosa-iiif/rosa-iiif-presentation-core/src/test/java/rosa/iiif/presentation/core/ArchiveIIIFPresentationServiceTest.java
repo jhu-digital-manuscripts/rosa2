@@ -51,7 +51,7 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
 
         rosa.iiif.image.core.IIIFRequestFormatter imageFormatter = new rosa.iiif.image.core.IIIFRequestFormatter(
                 scheme, host, port, image_prefix);
-        ImageIdMapper imageIdMapper = new JhuFSIImageIdMapper(new HashMap<String, String>());
+        ImageIdMapper imageIdMapper = new JhuImageIdMapper(new HashMap<String, String>());
 
         CollectionTransformer collectionTransformer = new CollectionTransformer(requestFormatter, simpleStore, imageFormatter, imageIdMapper);
         CanvasTransformer canvasTransformer = new CanvasTransformer(requestFormatter, imageFormatter, imageIdMapper);

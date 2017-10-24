@@ -153,36 +153,6 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         return false;
     }
 
-    private String[] split_id(String id) {
-        String[] parts = id.split("\\.");
-
-        if (parts.length != 2) {
-            return null;
-        }
-
-        return parts;
-    }
-
-    private String get_collection_id(String id) {
-        String[] parts = split_id(id);
-
-        if (parts == null) {
-            return null;
-        }
-
-        return parts[0];
-    }
-
-    private String get_book_id(String id) {
-        String[] parts = split_id(id);
-
-        if (parts == null) {
-            return null;
-        }
-
-        return parts[1];
-    }
-
     // Id of object in cache must be unique for class
     
     private String cache_key(String id, Class<?> type) {
@@ -214,11 +184,11 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
     }
     
     private BookCollection get_collection_from_id(String id) throws IOException {
-        return load_book_collection(get_collection_id(id));
+        return load_book_collection(PresentationUris.getCollectionId(id));
     }
 
     private Book get_book_from_id(String id) throws IOException {
-        return load_book(get_collection_id(id), get_book_id(id));
+        return load_book(PresentationUris.getCollectionId(id), PresentationUris.getBookId(id));
     }
 
     private boolean handle_collection(String name, OutputStream os) throws IOException {
