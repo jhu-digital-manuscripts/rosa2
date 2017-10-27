@@ -1,5 +1,6 @@
 package rosa.archive.core;
 
+import org.apache.commons.lang3.StringUtils;
 import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookImageRole;
@@ -82,6 +83,10 @@ public class ArchiveNameParser implements ArchiveConstants {
             }
         }
 
+        if (parts.length >= 5 && BookImageRole.INSERT.getArchiveName().equals(parts[4])) {
+            return BookImageRole.INSERT;
+        }
+
         return null;
     }
 
@@ -95,20 +100,23 @@ public class ArchiveNameParser implements ArchiveConstants {
         BookImageRole role = role(imageId);
         BookImageLocation location = location(imageId);
         String page = page(imageId);
+        String insertNum = insertNumber(imageId);
 
         StringBuilder short_name = new StringBuilder();
 
         if (location != null) {
-            short_name.append(location.getDisplay());
-            short_name.append(' ');
-        }
-        if (role != null) {
-            short_name.append(role.getDisplay());
-            short_name.append(' ');
+            short_name.append(location.getDisplay()).append(' ');
         }
         // Strip leading zeros from page number
         if (page != null) {
-            short_name.append(page.replaceFirst("^0+(?!$)", ""));
+            short_name.append(page.replaceFirst("^0+(?!$)", "")).append(" ");
+        }
+
+        if (role != null) {
+            short_name.append(role.getDisplay()).append(' ');
+        }
+        if (insertNum != null) {
+            short_name.append(insertNum);
         }
 
         return short_name.toString().trim();
@@ -128,6 +136,28 @@ public class ArchiveNameParser implements ArchiveConstants {
         for (String part : parts) {
             if (part.matches(page_regex)) {
                 return part;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * There may be multiple images associated with an INSERT on a page. Get the image number.
+     *
+     * @param imageId ID of item in archive
+     * @return image number for a particular insert, NULL there is no such number
+     */
+    public String insertNumber(String imageId) {
+        String[] parts = imageId.split(delimiter);
+
+        // Check for INSERT keyword, then return the following part if it is a number
+        for (int i = 0; i < parts.length - 1; i++) {
+            if (parts[i].equals(BookImageRole.INSERT.getArchiveName())) {
+                String possible = parts[i+1];
+                if (StringUtils.isNumeric(possible)) {
+                    return possible;
+                }
             }
         }
 

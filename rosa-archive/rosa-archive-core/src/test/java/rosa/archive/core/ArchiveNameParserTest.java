@@ -165,7 +165,28 @@ public class ArchiveNameParserTest {
         for (String name : names) {
             assertEquals(BookImageLocation.BODY_MATTER, parser.location(name));
         }
+    }
 
+    @Test
+    public void checkMutliInsertNames() {
+        String[] names = {
+                "Moo.037v.tif", "Moo.037r.insert.tif", "Moo.037v.insert.tif", "Moo.038r.tif",
+                "Moo.038v.tif", "Moo.038r.insert.1.tif", "Moo.038v.insert.1.tif", "Moo.039r.tif",
+                "Moo.endmatter.flyleaf.001v.tif", "Moo.endmatter.flyleaf.001r.insert.tif",
+                "Moo.endmatter.flyleaf.001v.insert.1.tif"
+        };
+        String[] expectedInsert = {
+                null, null, null, null, null, "1", "1", null, null, null, "1"
+        };
+        String[] expectedShortnames = {
+                "37v", "37r insert", "37v insert", "38r", "38v", "38r insert 1", "38v insert 1",
+                "39r", "end matter 1v", "end matter 1r insert", "end matter 1v insert 1"
+        };
+
+        for (int i = 0; i < names.length; i++) {
+            assertEquals(expectedInsert[i], parser.insertNumber(names[i]));
+            assertEquals(expectedShortnames[i], parser.shortName(names[i]));
+        }
     }
 
 }
