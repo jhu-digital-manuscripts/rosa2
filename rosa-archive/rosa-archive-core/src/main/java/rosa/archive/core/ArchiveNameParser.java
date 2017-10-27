@@ -52,7 +52,7 @@ public class ArchiveNameParser implements ArchiveConstants {
             }
         }
 
-        if (parts.length == 3 && location.matches(page_regex)) {
+        if (location.matches(page_regex) && (parts.length == 3 || role(imageId) == BookImageRole.INSERT)) {
             return BookImageLocation.BODY_MATTER;
         }
 
@@ -69,7 +69,7 @@ public class ArchiveNameParser implements ArchiveConstants {
         String[] parts = split_name(imageId);
         if (parts.length < 4) {
             /*
-                Body matter images will have length == 3, other images
+                Body matter images may have length == 3, other images
                 will have length > 3
              */
             return null;

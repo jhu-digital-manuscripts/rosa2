@@ -155,4 +155,17 @@ public class ArchiveNameParserTest {
         }
     }
 
+    /**
+     * Check parsing for inserts. All names are BODY MATTER images.
+     */
+    @Test
+    public void checkInsertNames() {
+        String[] names = {"Moo.037v.tif", "Moo.037r.insert.tif", "Moo.037v.insert.tif", "Moo.038r.tif"};
+        
+        for (String name : names) {
+            assertEquals(BookImageLocation.BODY_MATTER, parser.location(name));
+        }
+
+    }
+
 }

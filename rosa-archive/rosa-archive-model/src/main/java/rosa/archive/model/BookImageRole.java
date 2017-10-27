@@ -5,6 +5,7 @@ public enum BookImageRole {
     FRONT_COVER("frontcover", "front cover"),
     BACK_COVER("backcover", "back cover"),
     PASTEDOWN("pastedown", "pastedown"),
+    INSERT("insert", "insert"),
     // Bindings
     SPINE("spine", "spine"),
     GUTTER("gutter", "gutter"),
