@@ -19,7 +19,9 @@ import java.util.logging.Logger;
 public class RoseTranscriptionAdapterHandler extends DefaultHandler {
     private static final Logger logger = Logger.getLogger("RoseTranscriptionAdapterHandler");
 
-    private static final Set<String> skippedElements = new HashSet<>(Arrays.asList("l", "lg", "figure", "head", "div"));
+    private static final Set<String> skippedElements = new HashSet<>(Arrays.asList(
+            "l", "lg", "figure", "head", "div", "pb"
+    ));
 
     private ByteArrayOutputStream output;
     private XMLStreamWriter writer;
@@ -45,13 +47,9 @@ public class RoseTranscriptionAdapterHandler extends DefaultHandler {
 
         try {
             switch (qName) {
-                case "pb":
-                    writer.writeStartElement("h3");
-                    writer.writeCharacters(attributes.getValue("n"));
-                    break;
                 case "cb":
                     writer.writeStartElement("p");
-                    writer.writeCharacters(attributes.getValue("n"));
+                    writer.writeCharacters("Col " + attributes.getValue("n"));
                     break;
                 case "expan":
                     writer.writeStartElement("span");
