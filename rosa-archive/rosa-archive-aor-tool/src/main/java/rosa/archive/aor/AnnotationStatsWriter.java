@@ -161,7 +161,7 @@ public class AnnotationStatsWriter {
 			result.name = m.getName();
 			result.method = m.getMethod();
 		} else if (a instanceof Drawing) {
-			result.name = Drawing.class.cast(a).getName();
+			
 		} else if (a instanceof Errata) {
 			String amend = Errata.class.cast(a).getAmendedText();
 

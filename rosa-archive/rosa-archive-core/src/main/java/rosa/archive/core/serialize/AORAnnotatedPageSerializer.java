@@ -210,7 +210,6 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             Element d = newElement(TAG_DRAWING, parent, doc);
             setAttribute(d, ATTR_TEXT, drawing.getReferencedText());
             setAttribute(d, ATTR_PLACE, drawing.getLocation().toString().toLowerCase());
-            setAttribute(d, ATTR_NAME, drawing.getName());
             setAttribute(d, ATTR_METHOD, drawing.getMethod());
             setAttribute(d, ATTR_LANGUAGE, drawing.getLanguage());
         }

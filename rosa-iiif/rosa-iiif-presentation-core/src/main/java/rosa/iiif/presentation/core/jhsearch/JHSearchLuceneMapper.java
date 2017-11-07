@@ -513,7 +513,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Drawing drawing, Document doc) {
-		addField(doc, JHSearchField.DRAWING, SearchFieldType.STRING, drawing.getName());
 		addField(doc, JHSearchField.DRAWING, get_lang(drawing), stripTranscribersMarks(drawing.getReferencedText()));
         addField(doc, JHSearchField.TEXT, get_lang(drawing), stripTranscribersMarks(drawing.getReferencedText()));
 	}

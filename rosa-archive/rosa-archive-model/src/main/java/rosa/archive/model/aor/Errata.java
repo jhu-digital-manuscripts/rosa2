@@ -3,7 +3,20 @@ package rosa.archive.model.aor;
 import java.io.Serializable;
 
 /**
+ * Element representing an error in some text that a reader corrected.
  *
+ * &lt;errata language copytext amendedtext id internal_ref /&gt;
+ *
+ * Attributes:
+ * <ul>
+ *   <li>language (required)</li>
+ *   <li>copytext (required) : original text</li>
+ *   <li>amendedtext (required) : corrected text from the reader</li>
+ *   <li>id (optional)</li>
+ *   <li>internal_ref (optional)</li>
+ * </ul>
+ *
+ * Contains no elements.
  */
 public class Errata extends Annotation implements Serializable {
     private static final long serialVersionUID = 1L;

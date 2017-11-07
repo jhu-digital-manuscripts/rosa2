@@ -5,7 +5,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * &lt;marginalia id hand method colour marginalia_continues_to marginalia_continues_from
+ *      marginalia_to_transcription marginalia_from_transcription book_id internal_ref date
+ *      other_reader topic anchor_text&gt;
+ *   &lt;language&gt;
+ *   &lt;translation&gt;
+ * &lt;/marginalia&gt;
  *
+ * <h3>Marginalia element</h3>
+ * Attributes (all are optional):
+ * <ul>
+ *   <li>id</li>
+ *   <li>hand</li>
+ *   <li>method</li>
+ *   <li>colour</li>
+ *   <li>marginalia_continues_to</li>
+ *   <li>marginalia_continues_from</li>
+ *   <li>marginalia_from_transcription</li>
+ *   <li>marginalia_to_transcription</li>
+ *   <li>book_id</li>
+ *   <li>internal_ref</li>
+ *   <li>date</li>
+ *   <li>other_reader</li>
+ *   <li>topic</li>
+ *   <li>anchor_text</li>
+ * </ul>
+ *
+ * Contains elements:
+ * <ul>
+ *   <li>language (zero or more) {@link MarginaliaLanguage}</li>
+ *   <li>translation (zero or one)</li>
+ * </ul>
  */
 public class Marginalia extends Annotation implements MultiPart, Serializable {
     private static final long serialVersionUID = 1L;
