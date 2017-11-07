@@ -10,6 +10,7 @@ public class Underline extends Annotation implements Serializable {
 
     private String method;
     private String type;
+    private String color;
 
     public Underline() {}
 
@@ -46,6 +47,14 @@ public class Underline extends Annotation implements Serializable {
         this.type = type;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -56,8 +65,7 @@ public class Underline extends Annotation implements Serializable {
 
         if (method != null ? !method.equals(underline.method) : underline.method != null) return false;
         if (type != null ? !type.equals(underline.type) : underline.type != null) return false;
-
-        return true;
+        return color != null ? color.equals(underline.color) : underline.color == null;
     }
 
     @Override
@@ -65,6 +73,7 @@ public class Underline extends Annotation implements Serializable {
         int result = super.hashCode();
         result = 31 * result + (method != null ? method.hashCode() : 0);
         result = 31 * result + (type != null ? type.hashCode() : 0);
+        result = 31 * result + (color != null ? color.hashCode() : 0);
         return result;
     }
 
@@ -73,7 +82,8 @@ public class Underline extends Annotation implements Serializable {
         return "Underline{" +
                 "method='" + method + '\'' +
                 ", type='" + type + '\'' +
-                ", text='" + getReferencedText() + '\'' +
+                ", color='" + color + '\'' +
+                super.toString() +
                 '}';
     }
 }

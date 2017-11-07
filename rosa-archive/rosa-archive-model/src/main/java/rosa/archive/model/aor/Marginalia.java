@@ -7,7 +7,7 @@ import java.util.List;
 /**
  *
  */
-public class Marginalia extends Annotation implements Serializable {
+public class Marginalia extends Annotation implements MultiPart, Serializable {
     private static final long serialVersionUID = 1L;
 
     private String hand;
@@ -16,6 +16,13 @@ public class Marginalia extends Annotation implements Serializable {
     private String topic;
     private String translation;
     private List<MarginaliaLanguage> languages;
+
+    private String marginaliaBefore;
+    private String marginaliaAfter;
+    private String transcriptBefore;
+    private String transcriptAfter;
+
+    private String color;
 
     public Marginalia() {
         languages = new ArrayList<>();
@@ -70,6 +77,54 @@ public class Marginalia extends Annotation implements Serializable {
     }
 
     @Override
+    public String getContinuesTo() {
+        return marginaliaAfter;
+    }
+
+    @Override
+    public String getContinuesFrom() {
+        return marginaliaBefore;
+    }
+
+    @Override
+    public String getToTranscription() {
+        return transcriptAfter;
+    }
+
+    @Override
+    public String getFromTranscription() {
+        return transcriptBefore;
+    }
+
+    @Override
+    public void setContinuesTo(String continuesTo) {
+        marginaliaAfter = continuesTo;
+    }
+
+    @Override
+    public void setContinuesFrom(String continuesFrom) {
+        marginaliaBefore = continuesFrom;
+    }
+
+    @Override
+    public void setToTranscription(String toTranscription) {
+        transcriptAfter = toTranscription;
+    }
+
+    @Override
+    public void setFromTranscription(String fromTranscription) {
+        transcriptBefore = fromTranscription;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
     public String toPrettyString() {
         StringBuilder sb = new StringBuilder("<p>");
         sb.append("<strong>Marginalia</strong>");
@@ -89,14 +144,21 @@ public class Marginalia extends Annotation implements Serializable {
 
         Marginalia that = (Marginalia) o;
 
-        if (date != null ? !date.equals(that.date) : that.date != null) return false;
         if (hand != null ? !hand.equals(that.hand) : that.hand != null) return false;
-        if (languages != null ? !languages.equals(that.languages) : that.languages != null) return false;
+        if (date != null ? !date.equals(that.date) : that.date != null) return false;
         if (otherReader != null ? !otherReader.equals(that.otherReader) : that.otherReader != null) return false;
         if (topic != null ? !topic.equals(that.topic) : that.topic != null) return false;
         if (translation != null ? !translation.equals(that.translation) : that.translation != null) return false;
-
-        return true;
+        if (languages != null ? !languages.equals(that.languages) : that.languages != null) return false;
+        if (marginaliaBefore != null ? !marginaliaBefore.equals(that.marginaliaBefore) : that.marginaliaBefore != null)
+            return false;
+        if (marginaliaAfter != null ? !marginaliaAfter.equals(that.marginaliaAfter) : that.marginaliaAfter != null)
+            return false;
+        if (transcriptBefore != null ? !transcriptBefore.equals(that.transcriptBefore) : that.transcriptBefore != null)
+            return false;
+        if (transcriptAfter != null ? !transcriptAfter.equals(that.transcriptAfter) : that.transcriptAfter != null)
+            return false;
+        return color != null ? color.equals(that.color) : that.color == null;
     }
 
     @Override
@@ -108,6 +170,11 @@ public class Marginalia extends Annotation implements Serializable {
         result = 31 * result + (topic != null ? topic.hashCode() : 0);
         result = 31 * result + (translation != null ? translation.hashCode() : 0);
         result = 31 * result + (languages != null ? languages.hashCode() : 0);
+        result = 31 * result + (marginaliaBefore != null ? marginaliaBefore.hashCode() : 0);
+        result = 31 * result + (marginaliaAfter != null ? marginaliaAfter.hashCode() : 0);
+        result = 31 * result + (transcriptBefore != null ? transcriptBefore.hashCode() : 0);
+        result = 31 * result + (transcriptAfter != null ? transcriptAfter.hashCode() : 0);
+        result = 31 * result + (color != null ? color.hashCode() : 0);
         return result;
     }
 
@@ -120,6 +187,11 @@ public class Marginalia extends Annotation implements Serializable {
                 ", topic='" + topic + '\'' +
                 ", translation='" + translation + '\'' +
                 ", languages=" + languages +
-                '}';
+                ", marginaliaBefore='" + marginaliaBefore + '\'' +
+                ", marginaliaAfter='" + marginaliaAfter + '\'' +
+                ", transcriptBefore='" + transcriptBefore + '\'' +
+                ", transcriptAfter='" + transcriptAfter + '\'' +
+                ", color='" + color + '\'' +
+                super.toString() + '}';
     }
 }

@@ -13,6 +13,8 @@ public abstract class Annotation implements Serializable {
     private Location location;
     private String language;
 
+    private String internalRef;
+
     protected Annotation() {}
 
     protected Annotation(String id, String refText, String language, Location location) {
@@ -56,6 +58,14 @@ public abstract class Annotation implements Serializable {
 
     public abstract String toPrettyString();
 
+    public String getInternalRef() {
+        return internalRef;
+    }
+
+    public void setInternalRef(String internalRef) {
+        this.internalRef = internalRef;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -64,11 +74,10 @@ public abstract class Annotation implements Serializable {
         Annotation that = (Annotation) o;
 
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (text != null ? !text.equals(that.text) : that.text != null)
-            return false;
+        if (text != null ? !text.equals(that.text) : that.text != null) return false;
         if (location != that.location) return false;
-        return !(language != null ? !language.equals(that.language) : that.language != null);
-
+        if (language != null ? !language.equals(that.language) : that.language != null) return false;
+        return internalRef != null ? internalRef.equals(that.internalRef) : that.internalRef == null;
     }
 
     @Override
@@ -77,6 +86,7 @@ public abstract class Annotation implements Serializable {
         result = 31 * result + (text != null ? text.hashCode() : 0);
         result = 31 * result + (location != null ? location.hashCode() : 0);
         result = 31 * result + (language != null ? language.hashCode() : 0);
+        result = 31 * result + (internalRef != null ? internalRef.hashCode() : 0);
         return result;
     }
 
@@ -84,9 +94,10 @@ public abstract class Annotation implements Serializable {
     public String toString() {
         return "Annotation{" +
                 "id='" + id + '\'' +
-                ", referringText='" + text + '\'' +
+                ", text='" + text + '\'' +
                 ", location=" + location +
                 ", language='" + language + '\'' +
+                ", internalRef='" + internalRef + '\'' +
                 '}';
     }
 }

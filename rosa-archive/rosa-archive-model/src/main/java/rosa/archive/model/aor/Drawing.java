@@ -7,6 +7,7 @@ public class Drawing extends Annotation implements Serializable {
 
     private String name;
     private String method;
+    private String color;
 
     public Drawing() {}
 
@@ -32,6 +33,14 @@ public class Drawing extends Annotation implements Serializable {
         this.method = method;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     @Override
     public String toPrettyString() {
         return null;
@@ -45,10 +54,9 @@ public class Drawing extends Annotation implements Serializable {
 
         Drawing drawing = (Drawing) o;
 
-        if (method != null ? !method.equals(drawing.method) : drawing.method != null) return false;
         if (name != null ? !name.equals(drawing.name) : drawing.name != null) return false;
-
-        return true;
+        if (method != null ? !method.equals(drawing.method) : drawing.method != null) return false;
+        return color != null ? color.equals(drawing.color) : drawing.color == null;
     }
 
     @Override
@@ -56,6 +64,7 @@ public class Drawing extends Annotation implements Serializable {
         int result = super.hashCode();
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (method != null ? method.hashCode() : 0);
+        result = 31 * result + (color != null ? color.hashCode() : 0);
         return result;
     }
 
@@ -64,6 +73,7 @@ public class Drawing extends Annotation implements Serializable {
         return "Drawing{" +
                 "name='" + name + '\'' +
                 ", method='" + method + '\'' +
-                '}';
+                ", color='" + color + '\'' +
+                super.toString() + '}';
     }
 }
