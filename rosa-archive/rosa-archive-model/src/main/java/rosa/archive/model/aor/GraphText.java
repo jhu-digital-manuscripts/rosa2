@@ -20,7 +20,7 @@ import java.util.List;
  *
  * Contains elements:
  * <ul>
- *   <li>note (zero or more) : {@link Note}</li>
+ *   <li>note (zero or more) : {@link GraphNote}</li>
  *   <li>person (zero or more)</li>
  *   <li>book (zero or more)</li>
  *   <li>location (zero or more)</li>
@@ -31,67 +31,7 @@ import java.util.List;
 public class GraphText implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    public class Note implements Serializable {
-        private static final long serialVersionUID = 1L;
-
-        public final String id;
-        public final String hand;
-        public final String language;
-        public final String internalLink;
-        public final String anchorText;
-        public final String content;
-
-        public Note(String id, String hand, String language, String content) {
-            this(id, hand, language, null, null, content);
-        }
-
-        public Note(String id, String hand, String language, String internalLink, String anchorText, String content) {
-            this.id = id;
-            this.hand = hand;
-            this.language = language;
-            this.internalLink = internalLink;
-            this.anchorText = anchorText;
-            this.content = content;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-
-            Note note = (Note) o;
-
-            if (id != null ? !id.equals(note.id) : note.id != null) return false;
-            if (hand != null ? !hand.equals(note.hand) : note.hand != null) return false;
-            if (language != null ? !language.equals(note.language) : note.language != null) return false;
-            if (internalLink != null ? !internalLink.equals(note.internalLink) : note.internalLink != null)
-                return false;
-            return anchorText != null ? anchorText.equals(note.anchorText) : note.anchorText == null;
-        }
-
-        @Override
-        public int hashCode() {
-            int result = id != null ? id.hashCode() : 0;
-            result = 31 * result + (hand != null ? hand.hashCode() : 0);
-            result = 31 * result + (language != null ? language.hashCode() : 0);
-            result = 31 * result + (internalLink != null ? internalLink.hashCode() : 0);
-            result = 31 * result + (anchorText != null ? anchorText.hashCode() : 0);
-            return result;
-        }
-
-        @Override
-        public String toString() {
-            return "Note{" +
-                    "id='" + id + '\'' +
-                    ", hand='" + hand + '\'' +
-                    ", language='" + language + '\'' +
-                    ", internalLink='" + internalLink + '\'' +
-                    ", anchorText='" + anchorText + '\'' +
-                    '}';
-        }
-    }
-
-    private List<Note> notes;
+    private List<GraphNote> notes;
     private List<String> people;
     private List<String> books;
     private List<String> locations;
@@ -107,15 +47,15 @@ public class GraphText implements Serializable {
         this.translations = new ArrayList<>();
     }
 
-    public List<Note> getNotes() {
+    public List<GraphNote> getNotes() {
         return notes;
     }
 
-    public void setNotes(List<Note> notes) {
+    public void setNotes(List<GraphNote> notes) {
         this.notes = notes;
     }
 
-    public void addNote(Note note) {
+    public void addNote(GraphNote note) {
         notes.add(note);
     }
 

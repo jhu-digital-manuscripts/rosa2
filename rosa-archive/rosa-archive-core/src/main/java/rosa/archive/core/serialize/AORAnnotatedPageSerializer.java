@@ -28,8 +28,14 @@ import rosa.archive.core.util.Annotations;
 import rosa.archive.core.util.CachingUrlResourceResolver;
 import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.AnnotationLink;
+import rosa.archive.model.aor.Calculation;
 import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Errata;
+import rosa.archive.model.aor.Graph;
+import rosa.archive.model.aor.GraphNode;
+import rosa.archive.model.aor.GraphNote;
+import rosa.archive.model.aor.GraphText;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
@@ -39,6 +45,7 @@ import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.Symbol;
+import rosa.archive.model.aor.Table;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
 
@@ -340,6 +347,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             }
 
             Element annotation = (Element) child;
+            String id = annotation.getAttribute(ATTR_ID);
             Location loc = getLocation(annotation.getAttribute(ATTR_PLACE));
             switch (annotation.getTagName()) {
                 case TAG_MARGINALIA:
@@ -350,7 +358,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_UNDERLINE:
                     page.getUnderlines().add(new Underline(
-                            Annotations.annotationId(page.getPage(), TAG_UNDERLINE, page.getUnderlines().size()),
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_TYPE),
@@ -360,7 +368,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_SYMBOL:
                     page.getSymbols().add(new Symbol(
-                            Annotations.annotationId(page.getPage(), TAG_SYMBOL, page.getSymbols().size()),
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_LANGUAGE),
@@ -369,7 +377,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_MARK:
                     page.getMarks().add(new Mark(
-                            Annotations.annotationId(page.getPage(), TAG_MARK, page.getMarks().size()),
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
@@ -379,7 +387,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_NUMERAL:
                     page.getNumerals().add(new Numeral(
-                            Annotations.annotationId(page.getPage(), TAG_NUMERAL, page.getNumerals().size()),
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getTextContent(),
                             null,
@@ -388,7 +396,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_ERRATA:
                     page.getErrata().add(new Errata(
-                            Annotations.annotationId(page.getPage(), TAG_ERRATA, page.getErrata().size()),
+                            id,
                             annotation.getAttribute(ATTR_LANGUAGE),
                             annotation.getAttribute(ATTR_COPYTEXT),
                             annotation.getAttribute(ATTR_AMENDEDTEXT)
@@ -396,13 +404,21 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_DRAWING:
                     page.getDrawings().add(new Drawing(
-                            Annotations.annotationId(page.getPage(), TAG_DRAWING, page.getDrawings().size()),
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             loc,
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_LANGUAGE)
                     ));
+                    break;
+                case TAG_CALCULATION:
+                    break;
+                case TAG_GRAPH:
+                    break;
+                case TAG_TABLE:
+                    break;
+                case TAG_PHYSICAL_LINK:
                     break;
                 default:
                     break;
@@ -430,6 +446,13 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         marg.setOtherReader(annotation.getAttribute(ATTR_OTHER_READER));
         marg.setTopic(annotation.getAttribute(ATTR_TOPIC));
         marg.setReferencedText(annotation.getAttribute(ATTR_ANCHOR_TEXT));
+        marg.setContinuesTo(annotation.getAttribute(ATTR_MARG_CONT_TO));
+        marg.setContinuesFrom(annotation.getAttribute(ATTR_MARG_CONT_FROM));
+        marg.setToTranscription(annotation.getAttribute(ATTR_MARG_TO_TRANSC));
+        marg.setFromTranscription(annotation.getAttribute(ATTR_MARG_FROM_TRANSC));
+        marg.setInternalRef(annotation.getAttribute(ATTR_INTERNAL_REF));
+        marg.setDate(annotation.getAttribute(ATTR_DATE));
+        marg.setColor(annotation.getAttribute(ATTR_COLOR));
 
         List<MarginaliaLanguage> langs = marg.getLanguages();
         NodeList children = annotation.getChildNodes();
@@ -539,41 +562,202 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     xRefs.add(xRef);
                     break;
                 case TAG_INTERNAL_REF:
-                    InternalReference ref = new InternalReference();
-                    ref.setText(el.getAttribute(ATTR_TEXT));
-
-                    // Build targets
-                    NodeList children = el.getChildNodes();
-                    if (children == null) {
-                        System.err.println("No targets found for this reference.");
-                        break;
+                    InternalReference ref = buildInternalRef(el);
+                    if (ref != null) {
+                        internalRefs.add(ref);
                     }
-
-                    for (int j = 0; j < children.getLength(); j++) {
-                        Node n = children.item(j);
-                        if (n == null || n.getNodeType() != Node.ELEMENT_NODE) {
-                            continue;
-                        }
-
-                        Element child = (Element) n;
-
-                        if (child.getTagName().equals(TAG_TARGET)) {
-                            ReferenceTarget t = new ReferenceTarget(
-                                    child.getAttribute(ATTR_FILENAME),
-                                    child.getAttribute(ATTR_BOOK_ID),
-                                    child.getAttribute(ATTR_TEXT)
-                            );
-                            ref.addTargets(t);
-                        }
-                    }
-
-                    internalRefs.add(ref);
                 default:
                     break;
             }
         }
 
         return pos;
+    }
+
+    /**
+     * @param el internal_ref XML element
+     * @return {@link InternalReference} object from the XML
+     */
+    private InternalReference buildInternalRef(Element el) {
+        InternalReference ir = new InternalReference();
+
+        ir.setText(el.getAttribute(ATTR_TEXT));
+
+        // Build targets
+        NodeList children = el.getChildNodes();
+        if (children == null) {
+            System.err.println("No targets found for this reference.");
+            return null;
+        }
+
+        for (int j = 0; j < children.getLength(); j++) {
+            Node n = children.item(j);
+            if (n == null || n.getNodeType() != Node.ELEMENT_NODE) {
+                continue;
+            }
+
+            Element child = (Element) n;
+
+            if (child.getTagName().equals(TAG_TARGET)) {
+                ReferenceTarget t = new ReferenceTarget(
+                        child.getAttribute(ATTR_FILENAME),
+                        child.getAttribute(ATTR_BOOK_ID),
+                        child.getAttribute(ATTR_TEXT)
+                );
+                ir.addTargets(t);
+            }
+        }
+
+        return null;
+    }
+
+    private Table buildTable(Element tableEl) {
+
+        return null;
+    }
+
+    /**
+     * @param graphEl graph XML element
+     * @return {@link Graph} object
+     */
+    private Graph buildGraph(Element graphEl) {
+        Graph g = new Graph(
+                graphEl.getAttribute(ATTR_ID),
+                graphEl.getAttribute(ATTR_TYPE),
+                getOrientationAngle(graphEl.getAttribute(ATTR_BOOK_ORIENTATION)),
+                getLocation(graphEl.getAttribute(ATTR_PLACE)),
+                graphEl.getAttribute(ATTR_METHOD)
+        );
+
+        NodeList children = graphEl.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            if (children.item(i).getNodeType() != Node.ELEMENT_NODE) {
+                continue;
+            }
+            Element child = (Element) children.item(i);
+            switch (child.getTagName()) {
+                case TAG_NODE:
+                    g.addNode(new GraphNode(
+                            child.getAttribute(ATTR_ID),
+                            child.getAttribute(ATTR_PERSON),
+                            child.getAttribute(ATTR_ANCHOR_TEXT),
+                            child.getTextContent()
+                    ));
+                    break;
+                case TAG_LINK:
+                    g.addLink(new AnnotationLink(
+                            null,
+                            child.getAttribute(ATTR_FROM),
+                            child.getAttribute(ATTR_TO),
+                            child.getAttribute(ATTR_RELATIONSHIP)
+                    ));
+                    break;
+                case TAG_GRAPH_TEXT:
+                    g.addGraphText(buildGraphText(child));
+                    break;
+                case TAG_INTERNAL_REF:
+                    g.getInternalRefs().add(buildInternalRef(child));
+                    break;
+                default:
+                    break;
+            }
+        }
+        return null;
+    }
+
+    private GraphText buildGraphText(Element el) {
+        GraphText gt = new GraphText();
+
+        NodeList children = el.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            if (children.item(i).getNodeType() != Node.ELEMENT_NODE) {
+                continue;
+            }
+            Element child = (Element) children.item(i);
+            switch (child.getTagName()) {
+                case TAG_NOTE:
+                    gt.addNote(new GraphNote(
+                            child.getAttribute(ATTR_ID),
+                            child.getAttribute(ATTR_HAND),
+                            child.getAttribute(ATTR_LANGUAGE),
+                            child.getAttribute(ATTR_INTERNAL_LINK),
+                            child.getAttribute(ATTR_ANCHOR_TEXT),
+                            child.getTextContent()
+                    ));
+                    break;
+                case TAG_PERSON:
+                    gt.addPerson(child.getAttribute(ATTR_NAME));
+                    break;
+                case TAG_BOOK:
+                    gt.addBook(child.getAttribute(ATTR_TITLE));
+                    break;
+                case TAG_LOCATION:
+                    gt.addLocation(child.getAttribute(ATTR_NAME));
+                    break;
+                case TAG_SYMBOL_IN_TEXT:
+                    gt.addSymbol(child.getAttribute(ATTR_NAME));
+                    break;
+                case TAG_TRANSLATION:
+                    gt.addTranslation(child.getTextContent());
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        return gt;
+    }
+
+    /**
+     * @param calcEl calculation XML element
+     * @return {@link Calculation} object from the XML
+     */
+    private Calculation buildCalculation(Element calcEl) {
+        Calculation calc = new Calculation(
+                calcEl.getAttribute(ATTR_ID),
+                calcEl.getAttribute(ATTR_TYPE),
+                getOrientationAngle(calcEl.getAttribute(ATTR_BOOK_ORIENTATION)),
+                getLocation(calcEl.getAttribute(ATTR_PLACE)),
+                calcEl.getAttribute(ATTR_METHOD),
+                calcEl.getAttribute(ATTR_INTERNAL_REF)
+        );
+
+        NodeList children = calcEl.getElementsByTagName(TAG_CALCULATION_ANCHOR);
+        for (int i = 0; i < children.getLength(); i++) {
+            if (children.item(i).getNodeType() == Node.ELEMENT_NODE) {
+                calc.addData(((Element) children.item(i)).getAttribute(ATTR_DATA));
+            }
+        }
+
+        return calc;
+    }
+
+    private int getOrientationAngle(String val) {
+        try {
+            return Integer.parseInt(val);
+        } catch (NumberFormatException e) {
+            return 0;
+        }
+    }
+
+    private AnnotationLink buildPhysicalLink(Element el) {
+        String from = null;
+        String to = null;
+        String id = null;
+        String type = null;
+
+        NodeList marges = el.getElementsByTagName(TAG_MARGINAL_ANNOTATION);
+        for (int i = 0; i < marges.getLength(); i++) {
+            if (marges.item(i).getNodeType() == Node.ELEMENT_NODE) {
+
+            }
+        }
+        NodeList relations = el.getElementsByTagName(TAG_RELATION);
+
+
+        // String nodeId, String source, String target, String relationship
+
+        return new AnnotationLink(id, from, to, type);
     }
 
     @Override

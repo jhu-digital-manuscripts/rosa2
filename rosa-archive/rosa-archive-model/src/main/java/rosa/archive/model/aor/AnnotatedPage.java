@@ -39,10 +39,10 @@ import rosa.archive.model.HasId;
  *   <li>numeral (zero or more) : {@link Numeral}</li>
  *   <li>errata (zero or more) : {@link Errata}</li>
  *   <li>drawing (zero or more) : {@link Drawing}</li>
- *   <li>calculation (zero or more)</li>
+ *   <li>calculation (zero or more) : {@link Calculation}</li>
  *   <li>graph (zero or more) : {@link Graph}</li>
- *   <li>table (zero or more)</li>
- *   <li>physical_link (zero or more)</li>
+ *   <li>table (zero or more) : {@link Table}</li>
+ *   <li>physical_link (zero or more) : {@link PhysicalLink}</li>
  * </ul>
  */
 public class AnnotatedPage implements HasId, Serializable {
@@ -70,7 +70,7 @@ public class AnnotatedPage implements HasId, Serializable {
     private List<Calculation> calculations;
     private List<Graph> graphs;
     private List<Table> tables;
-    private List<AnnotationLink> links;
+    private List<PhysicalLink> links;
 
     public AnnotatedPage() {
         marginalia = new ArrayList<>();
@@ -262,11 +262,11 @@ public class AnnotatedPage implements HasId, Serializable {
         this.tables = tables;
     }
 
-    public List<AnnotationLink> getLinks() {
+    public List<PhysicalLink> getLinks() {
         return links;
     }
 
-    public void setLinks(List<AnnotationLink> links) {
+    public void setLinks(List<PhysicalLink> links) {
         this.links = links;
     }
 

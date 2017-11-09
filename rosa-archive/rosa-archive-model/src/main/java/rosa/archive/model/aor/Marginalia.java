@@ -47,6 +47,8 @@ public class Marginalia extends Annotation implements MultiPart, Serializable {
     private String translation;
     private List<MarginaliaLanguage> languages;
 
+    private String bookId;
+
     private String marginaliaBefore;
     private String marginaliaAfter;
     private String transcriptBefore;
@@ -104,6 +106,14 @@ public class Marginalia extends Annotation implements MultiPart, Serializable {
 
     public void setLanguages(List<MarginaliaLanguage> languages) {
         this.languages = languages;
+    }
+
+    public String getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(String bookId) {
+        this.bookId = bookId;
     }
 
     @Override
@@ -180,6 +190,7 @@ public class Marginalia extends Annotation implements MultiPart, Serializable {
         if (topic != null ? !topic.equals(that.topic) : that.topic != null) return false;
         if (translation != null ? !translation.equals(that.translation) : that.translation != null) return false;
         if (languages != null ? !languages.equals(that.languages) : that.languages != null) return false;
+        if (bookId != null ? !bookId.equals(that.bookId) : that.bookId != null) return false;
         if (marginaliaBefore != null ? !marginaliaBefore.equals(that.marginaliaBefore) : that.marginaliaBefore != null)
             return false;
         if (marginaliaAfter != null ? !marginaliaAfter.equals(that.marginaliaAfter) : that.marginaliaAfter != null)
@@ -200,6 +211,7 @@ public class Marginalia extends Annotation implements MultiPart, Serializable {
         result = 31 * result + (topic != null ? topic.hashCode() : 0);
         result = 31 * result + (translation != null ? translation.hashCode() : 0);
         result = 31 * result + (languages != null ? languages.hashCode() : 0);
+        result = 31 * result + (bookId != null ? bookId.hashCode() : 0);
         result = 31 * result + (marginaliaBefore != null ? marginaliaBefore.hashCode() : 0);
         result = 31 * result + (marginaliaAfter != null ? marginaliaAfter.hashCode() : 0);
         result = 31 * result + (transcriptBefore != null ? transcriptBefore.hashCode() : 0);
@@ -216,12 +228,13 @@ public class Marginalia extends Annotation implements MultiPart, Serializable {
                 ", otherReader='" + otherReader + '\'' +
                 ", topic='" + topic + '\'' +
                 ", translation='" + translation + '\'' +
-                ", languages=" + languages +
+                ", languages=" + languages.size() +
+                ", bookId='" + bookId + '\'' +
                 ", marginaliaBefore='" + marginaliaBefore + '\'' +
                 ", marginaliaAfter='" + marginaliaAfter + '\'' +
                 ", transcriptBefore='" + transcriptBefore + '\'' +
                 ", transcriptAfter='" + transcriptAfter + '\'' +
                 ", color='" + color + '\'' +
-                super.toString() + '}';
+                '}';
     }
 }

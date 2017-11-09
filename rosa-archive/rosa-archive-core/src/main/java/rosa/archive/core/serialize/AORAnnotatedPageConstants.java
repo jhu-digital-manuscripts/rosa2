@@ -22,6 +22,23 @@ public interface AORAnnotatedPageConstants {
     String TAG_TRANSLATION = "translation";
     String TAG_INTERNAL_REF = "internal_ref";
     String TAG_TARGET = "target";
+    // Tags added in AOR2
+    String TAG_CALCULATION = "calculation";
+    String TAG_CALCULATION_ANCHOR = "calculation_anchor";
+    String TAG_TEXT = "text";
+    String TAG_SYMBOL_IN_TEXT = "symbol_in_text";
+    String TAG_GRAPH = "graph";
+    String TAG_NODE = "node";
+    String TAG_LINK = "link";
+    String TAG_GRAPH_TEXT = "graph_text";
+    String TAG_TABLE = "table";
+    String TAG_TR = "tr";
+    String TAG_TH = "th";
+    String TAG_TD = "td";
+    String TAG_PHYSICAL_LINK = "physical_link";
+    String TAG_MARGINAL_ANNOTATION = "marginal_annotation";
+    String TAG_RELATION = "relation";
+    String TAG_NOTE = "note";
 
     String ATTR_FILENAME = "filename";
     String ATTR_PAGINATION = "pagination";
@@ -50,5 +67,31 @@ public interface AORAnnotatedPageConstants {
     String ATTR_BOOK_TITLE = "book_title";
     String ATTR_EMPHASIS_TEXT = "emphasis_text";
     String ATTR_BOOK_ID = "book_id";
+    // Attributes added in AOR2
+    String ATTR_ID = "id";
+    String ATTR_ANCHOR_PREFIX = "anchor_prefix";
+    String ATTR_ANCHOR_SUFFIX = "anchor_suffix";
+    String ATTR_STATUS = "status";
+    String ATTR_REF = "ref";
+    String ATTR_PREFIX = "prefix";
+    String ATTR_SUFFIX = "suffix";
+    String ATTR_COLOR = "colour";
+    String ATTR_MARG_CONT_TO = "marginalia_continues_to";
+    String ATTR_MARG_CONT_FROM = "marginalia_continues_from";
+    String ATTR_MARG_TO_TRANSC = "marginalia_to_transcription";
+    String ATTR_MARG_FROM_TRANSC = "marginalia_from_transcription";
+    String ATTR_INTERNAL_REF = "internal_ref";
+    String ATTR_GRAPH_CONT_TO = "graph_continues_to";
+    String ATTR_GRAPH_CONT_FROM = "graph_continues_from";
+    String ATTR_GRAPH_TO_TRANSC = "graph_to_transcription";
+    String ATTR_GRAPH_FROM_TRANSC = "graph_from_transcription";
+    String ATTR_RELATIONSHIP = "relationship";
+    String ATTR_TO = "to";
+    String ATTR_FROM = "from";
+    String ATTR_AGGREGATED_INFO = "aggregated_information";
+    String ATTR_ANCHOR_DATA = "anchor_data";
+    String ATTR_ID_REF = "idref";
+    String ATTR_DATA = "data";
+    String ATTR_INTERNAL_LINK = "internal_link";
 
 }

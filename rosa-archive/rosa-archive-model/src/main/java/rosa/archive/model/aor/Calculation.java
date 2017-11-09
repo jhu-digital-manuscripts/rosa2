@@ -50,6 +50,20 @@ public class Calculation extends Annotation implements Serializable {
         this.method = method;
     }
 
+    public List<String> getData() {
+        return data;
+    }
+
+    public void setData(List<String> data) {
+        this.data = data;
+    }
+
+    public void addData(String moo) {
+        if (this.data != null) {
+            this.data.add(moo);
+        }
+    }
+
     @Override
     public String toPrettyString() {
         return null;
