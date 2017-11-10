@@ -93,5 +93,6 @@ public interface AORAnnotatedPageConstants {
     String ATTR_ID_REF = "idref";
     String ATTR_DATA = "data";
     String ATTR_INTERNAL_LINK = "internal_link";
+    String ATTR_LABEL = "label";
 
 }

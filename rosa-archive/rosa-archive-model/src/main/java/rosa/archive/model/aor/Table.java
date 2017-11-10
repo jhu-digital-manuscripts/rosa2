@@ -35,12 +35,12 @@ import java.util.List;
  * <ul>
  *   <li>tr (zero or more) : row, containing header information and cells {@link TableRow} {@link TableCell}</li>
  *   <li>text (zero or more) : {@link TextEl}</li>
- *   <li>person (zero or more)</li>
- *   <li>book (zero or more)</li>
- *   <li>location (zero or more)</li>
- *   <li>symbol_in_text (zero or more)</li>
+ *   <li>person (zero or more) : {@link #people}</li>
+ *   <li>book (zero or more) : {@link #books}</li>
+ *   <li>location (zero or more) : {@link #locations}</li>
+ *   <li>symbol_in_text (zero or more) : {@link #symbols}</li>
  *   <li>internal_ref (zero or more) : {@link InternalReference}</li>
- *   <li>translation (zero or one)</li>
+ *   <li>translation (zero or one) : {@link #translation}</li>
  * </ul>
  */
 public class Table extends Annotation implements Serializable {
@@ -49,6 +49,7 @@ public class Table extends Annotation implements Serializable {
     private List<TableRow> rows;
     private List<TableCell> cells;
 
+    private List<TextEl> texts;
     private List<String> people;
     private List<String> books;
     private List<String> locations;
@@ -111,6 +112,14 @@ public class Table extends Annotation implements Serializable {
 
     public void setAggregatedInfo(String aggregatedInfo) {
         this.aggregatedInfo = aggregatedInfo;
+    }
+
+    public List<TextEl> getTexts() {
+        return texts;
+    }
+
+    public void setTexts(List<TextEl> texts) {
+        this.texts = texts;
     }
 
     public List<String> getPeople() {
@@ -176,6 +185,7 @@ public class Table extends Annotation implements Serializable {
 
         if (rows != null ? !rows.equals(table.rows) : table.rows != null) return false;
         if (cells != null ? !cells.equals(table.cells) : table.cells != null) return false;
+        if (texts != null ? !texts.equals(table.texts) : table.texts != null) return false;
         if (people != null ? !people.equals(table.people) : table.people != null) return false;
         if (books != null ? !books.equals(table.books) : table.books != null) return false;
         if (locations != null ? !locations.equals(table.locations) : table.locations != null) return false;
@@ -192,6 +202,7 @@ public class Table extends Annotation implements Serializable {
         int result = super.hashCode();
         result = 31 * result + (rows != null ? rows.hashCode() : 0);
         result = 31 * result + (cells != null ? cells.hashCode() : 0);
+        result = 31 * result + (texts != null ? texts.hashCode() : 0);
         result = 31 * result + (people != null ? people.hashCode() : 0);
         result = 31 * result + (books != null ? books.hashCode() : 0);
         result = 31 * result + (locations != null ? locations.hashCode() : 0);
@@ -206,13 +217,14 @@ public class Table extends Annotation implements Serializable {
     @Override
     public String toString() {
         return "Table{" +
-                "rows:" + rows.size() +
-                ", cells:" + cells.size() +
+                "rows=" + rows.size() +
+                ", cells=" + cells.size() +
+                ", texts=" + texts.size() +
                 ", people=" + people +
                 ", books=" + books +
                 ", locations=" + locations +
                 ", symbols=" + symbols +
-                ", internalRefs:" + internalRefs.size() +
+                ", internalRefs=" + internalRefs.size() +
                 ", type='" + type + '\'' +
                 ", aggregatedInfo='" + aggregatedInfo + '\'' +
                 ", translation='" + translation + '\'' +
