@@ -39,7 +39,13 @@ public enum JHSearchField implements SearchField, JHSearchFieldProperties {
     REPO(true, false, true, REPO_LABEL, REPO_DESCRIPTION, SearchFieldType.ENGLISH),
     DESCRIPTION(true, false, true, DESCRIPTION_LABEL, DESCRIPTION_DESCRIPTION, SearchFieldType.ENGLISH),
     TEXT(true, false, true, TEXT_LABEL, TEXT_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.OLD_FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
-    CHAR_NAME(true, false, true, CHAR_NAME_LABEL, CHAR_NAME_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.OLD_FRENCH, SearchFieldType.FRENCH)
+    CHAR_NAME(true, false, true, CHAR_NAME_LABEL, CHAR_NAME_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.OLD_FRENCH, SearchFieldType.FRENCH),
+
+    // Hamlet class fields
+    REPLACEMENTS(true, false, true, REPLACEMENT_LABEL, REPLACEMENT_DESCRIPTION, SearchFieldType.ENGLISH),
+    INSERTIONS(true, false, true, INSERT_LABEL, INSERT_DESCRIPTION, SearchFieldType.ENGLISH),
+    DELETIONS(true, false, true, DELETE_LABEL, DELETE_DESCRIPTION, SearchFieldType.ENGLISH),
+    TEXT_SCENE(false, true, SearchFieldType.STRING)
     ;
     
      // TODO Move some of this to SearchField?

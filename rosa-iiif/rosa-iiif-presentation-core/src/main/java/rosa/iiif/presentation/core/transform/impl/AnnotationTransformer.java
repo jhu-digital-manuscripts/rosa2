@@ -32,6 +32,7 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.Substitution;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -87,11 +88,17 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         Annotation a = new Annotation();
 
         a.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), anno.getId()));
+
+        String text = locationIcon + " " + anno.toPrettyString();
+        if (anno instanceof Substitution) {
+            text = getSubstitutionString((Substitution) anno);
+        }
+
         a.setType(IIIFNames.OA_ANNOTATION);
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.setDefaultSource(new AnnotationSource(
                 "URI", IIIFNames.DC_TEXT, "text/html",
-                locationIcon + " " + anno.toPrettyString(),
+                text,
                 (anno.getLanguage() != null && !anno.getLanguage().isEmpty() ? anno.getLanguage() : "en")
         ));
 
@@ -111,6 +118,35 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
 
         return a;
+    }
+
+    private String getSubstitutionString(Substitution sub) {
+        StringBuilder res = new StringBuilder();
+
+        String label = sub.getType().substring(0, 1).toUpperCase() + sub.getType().substring(1);
+
+        res.append("<div class=\"substitution\">");
+        res.append("<div class=\"sub-title\">")
+                .append(StringEscapeUtils.escapeHtml4(sub.getSignature()))
+                .append(" : ").append(label).append(':').append("</div>");
+
+        String copy = StringEscapeUtils.escapeHtml4(sub.getCopyText());
+        if (copy != null && !copy.isEmpty()) {
+            copy = copy.replace("|", "<br/>");
+            res.append("<div class=\"section\"><span class=\"italic full-width\">Before:</span>")
+                    .append(copy).append("</div>");
+        }
+        String amended = StringEscapeUtils.escapeHtml4(sub.getAmendedText());
+        if (amended != null && !amended.isEmpty()) {
+            amended = amended.replace("|", "<br/>");
+            res.append("<div class=\"section\"><span class=\"italic full-width\">After:</span>")
+                    .append(amended).append("</div>");
+        } else if (sub.getType().equals("deletion")) {
+            res.append("<div class=\"section\"><span class=\"italic full-width\">After:</span> (deleted)</div>");
+        }
+        res.append("</div>");
+
+        return res.toString();
     }
 
     /**
@@ -444,11 +480,11 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
     private BookImage getPageImage(ImageList images, String page) {
         for (BookImage image : images) {
-            if (image.getName().equals(page) || image.getId().equals(page)) {
+            if (image.getName().equals(page) || nameParser.shortName(image.getId()).equals(page) ||
+                    image.getId().equals(page)) {
                 return image;
             }
         }
-
         return null;
     }
 

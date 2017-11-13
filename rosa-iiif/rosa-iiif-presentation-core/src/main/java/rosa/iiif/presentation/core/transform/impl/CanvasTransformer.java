@@ -1,18 +1,23 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
+import rosa.archive.core.ArchiveConstants;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
+import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.Canvas;
+import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.Reference;
@@ -86,6 +91,8 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
                     defaultImage.getDefaultSource().getService()));
         }
 
+        canvas.setMetadata(canvasMetadata(book, image));
+
         return canvas;
     }
 
@@ -115,6 +122,23 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
     @Override
     public Class<Canvas> getType() {
         return Canvas.class;
+    }
+
+    private Map<String, HtmlValue> canvasMetadata(Book book, BookImage image) {
+        Map<String, HtmlValue> map = new HashMap<>();
+
+        map.put(IMAGE_ID_LABEL, new HtmlValue(image.getId()));
+        AnnotatedPage a = book.getAnnotationPage(image.getId());
+        if (a != null) {
+            map.put(TRANSCRIPTION_ID_LABEL, new HtmlValue(a.getId()));
+        } else {
+            String id = image.getId();
+            id = id.substring(0, id.indexOf('.')) + ArchiveConstants.AOR_ANNOTATION
+                    + id.substring(id.indexOf('.'), id.lastIndexOf('.')) + ArchiveConstants.XML_EXT;
+            map.put(TRANSCRIPTION_ID_LABEL, new HtmlValue(id));
+        }
+
+        return map;
     }
 
     /**
@@ -160,10 +184,7 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
      * @return a reference to the annotation for a page
      */
     private Reference annotationList(BookCollection collection, Book book, BookImage image) {
-//        if (!hasAnnotations(book, image.getName()) && !hasAnnotations(book, image.getId())) {
-//            return null;
-//        }
-
+        // TODO Exclude this if no annotations for this page?
         Reference ref = new Reference();
 
         String name = image.getName() + ".all";
@@ -173,40 +194,5 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
 
         return ref;
     }
-
-//    /**
-//     * @param book archive book object
-//     * @param page page in the book in question
-//     * @return does this page contain annotations?
-//     */
-//    private boolean hasAnnotations(Book book, String page) {
-//        AnnotatedPage aPage = book.getAnnotationPage(page);
-//        // If the page contains at least one annotation transcription, return true
-//        if (aPage != null &&
-//                (!aPage.getMarginalia().isEmpty()
-//                        || !aPage.getMarks().isEmpty()
-//                        || !aPage.getSymbols().isEmpty()
-//                        || !aPage.getNumerals().isEmpty()
-//                        || !aPage.getErrata().isEmpty()
-//                        || !aPage.getUnderlines().isEmpty())) {
-//            return true;
-//        }
-//
-//        // If there is no annotated page transcriptions, check for illustrations
-//        if (book.getIllustrationTagging() == null) {
-//            return false;
-//        }
-//
-//        for (Illustration ill : book.getIllustrationTagging()) {
-//            // If one illustration is found for this page, there is at least 1 annotation
-//            if (ill.getPage().equals(page)) {
-//                return true;
-//            }
-//        }
-//
-//        // No illustrations were found, so there no annotations were found for this page
-//        // Look for transcriptions
-//        return book.getTranscription() != null && book.getTranscription().getXML() != null && book.getTranscription().getXML().contains(page);
-//    }
 
 }

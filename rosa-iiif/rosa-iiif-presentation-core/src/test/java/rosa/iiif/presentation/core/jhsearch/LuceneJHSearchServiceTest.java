@@ -562,7 +562,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         assertEquals("Unexpected number of results found.", 2, result.getTotal());
         assertEquals(2, result.getMatches().length);
         assertEquals("http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest",
-                result.getMatches()[1].getId());
+                result.getMatches()[0].getId());
         assertNotNull(result.getCategories());
 
         assertEquals(10, result.getCategories().size());

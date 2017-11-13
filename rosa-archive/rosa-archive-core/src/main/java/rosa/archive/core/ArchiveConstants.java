@@ -7,7 +7,8 @@ public interface ArchiveConstants {
     
     // AoR annotation schema and dtd
 
-    String annotationSchemaUrl = "http://www.livesandletters.ac.uk/schema/aor_20141118.xsd";
+//    String annotationSchemaUrl = "http://www.livesandletters.ac.uk/schema/aor_20141118.xsd";
+    String annotationSchemaUrl = "https://raw.githubusercontent.com/ChrisRG/ReadingHamlet/master/RHschema.xsd";
 
     String TEI_SCHEMA_URL = "http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_ms.xsd";
 

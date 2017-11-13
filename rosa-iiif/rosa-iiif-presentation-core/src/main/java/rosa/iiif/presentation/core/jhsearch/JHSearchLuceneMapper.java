@@ -40,6 +40,7 @@ import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.Substitution;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
@@ -371,6 +372,16 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	 * <li>numerals</li>
 	 * </ul>
 	 *
+	 * For the summer Hamlet class, a new annotation was added that needs to be
+     * indexed. However, this annotation is separated into different types that
+     * should be handled separately.
+     *
+     * <ul>
+     * <li>replacements</li>
+     * <li>insertions</li>
+     * <li>deletions</li>
+     * </ul>
+	 *
 	 *
 	 * @param col
 	 *            BookCollection obj
@@ -389,6 +400,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		page.getNumerals().forEach(a -> index(col, book, image, a, doc));
 		page.getMarginalia().forEach(a -> index(col, book, image, a, doc));
 		page.getUnderlines().forEach(a -> index(col, book, image, a, doc));
+		page.getSubs().forEach(a -> index(col, book, image, a, doc));
 
 		// Index languages used and breaking out marginalia specifically
 
@@ -639,6 +651,34 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         addField(doc, JHSearchField.TEXT, SearchFieldType.ENGLISH, marg.getTranslation());
 		addField(doc, JHSearchField.EMPHASIS, marg_lang_type, emphasis.toString());
 	}
+
+	private void index(BookCollection col, Book book, BookImage image, Substitution sub, Document doc) {
+	    switch (sub.getType()) {
+            case "deletion":
+                addField(doc, JHSearchField.DELETIONS, sub.getCopyText());
+                addField(doc, JHSearchField.DELETIONS, sub.getAmendedText());
+                break;
+            case "insertion":
+                addField(doc, JHSearchField.INSERTIONS, sub.getCopyText());
+                addField(doc, JHSearchField.INSERTIONS, sub.getAmendedText());
+                break;
+            case "replacement":
+                addField(doc, JHSearchField.REPLACEMENTS, sub.getCopyText());
+                addField(doc, JHSearchField.REPLACEMENTS, sub.getAmendedText());
+                break;
+            case "errata":
+                addField(doc, JHSearchField.ERRATA, sub.getCopyText());
+                addField(doc, JHSearchField.ERRATA, sub.getAmendedText());
+                break;
+            default:
+                break;
+        }
+
+        addField(doc, JHSearchField.TEXT_SCENE, sub.getSignature());
+        addField(doc, JHSearchField.TEXT, sub.getCopyText());
+        addField(doc, JHSearchField.TEXT, sub.getAmendedText());
+
+    }
 
 	protected static String stripTranscribersMarks(String s) {
 		return s.replace("[", "").replace("]", "");

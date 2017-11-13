@@ -30,6 +30,23 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
     private static final Map<String,JHSearchCategory[]> searchcategories = new HashMap<>();
        
     static {
+        searchfields.put("hamletcollection",
+                new JHSearchField[] {
+                        JHSearchField.REPLACEMENTS,
+                        JHSearchField.INSERTIONS,
+                        JHSearchField.DELETIONS,
+                        JHSearchField.ERRATA,
+                        JHSearchField.MARGINALIA,
+                        JHSearchField.SYMBOL,
+                        JHSearchField.UNDERLINE,
+                        JHSearchField.EMPHASIS,
+                        JHSearchField.MARK,
+                        JHSearchField.BOOK,
+                        JHSearchField.PEOPLE,
+                        JHSearchField.PLACE,
+                        JHSearchField.METHOD
+                });
+
         searchfields.put("rosecollection",
                 new JHSearchField[] {
                         JHSearchField.DESCRIPTION,

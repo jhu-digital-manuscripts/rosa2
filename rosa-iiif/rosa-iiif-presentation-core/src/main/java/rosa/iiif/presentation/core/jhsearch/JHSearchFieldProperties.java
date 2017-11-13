@@ -111,4 +111,12 @@ interface JHSearchFieldProperties {
     String TEXT_DESCRIPTION = "Search the text of an item. This can include transcriptions and translations.";
     String CHAR_NAME_LABEL = "Character names";
     String CHAR_NAME_DESCRIPTION = "Search names of characters in the Roman de la Rose. For a list of character names visit the <em>Roman de la Rose</em> Digital Library [http://dlmm.sharedblogs.library.jhu.edu/en/character-names/]";
+
+    // Hamlet class stuff
+    String REPLACEMENT_LABEL = "Replacements";
+    String REPLACEMENT_DESCRIPTION = "Original text that has been modified by a reader, or the text that replaces it.";
+    String INSERT_LABEL = "Insertions";
+    String INSERT_DESCRIPTION = "Text that a reader has inserted into the text.";
+    String DELETE_LABEL = "Deletions";
+    String DELETE_DESCRIPTION = "Text that a reader has removed from the text.";
 }
