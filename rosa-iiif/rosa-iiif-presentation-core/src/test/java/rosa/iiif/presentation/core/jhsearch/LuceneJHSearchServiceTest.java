@@ -391,6 +391,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
                 0,
                 30,
                 null,
+                null,
                 out
         );
 
