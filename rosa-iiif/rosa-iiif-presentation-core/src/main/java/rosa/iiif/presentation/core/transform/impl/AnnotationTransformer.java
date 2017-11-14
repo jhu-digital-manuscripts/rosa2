@@ -1,12 +1,16 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import java.io.ByteArrayOutputStream;
+import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
@@ -16,6 +20,10 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
+import org.xml.sax.Attributes;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
 import rosa.archive.core.util.Annotations;
@@ -35,10 +43,7 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Substitution;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.extres.HtmlDecorator;
-import rosa.iiif.presentation.core.extres.PerseusDictionary;
-import rosa.iiif.presentation.core.extres.PleaidesGazetteer;
-import rosa.iiif.presentation.core.extres.ExternalResourceDb;
+import rosa.iiif.presentation.core.extres.*;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.annotation.Annotation;
@@ -273,20 +278,25 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
             // Add transcription
             writer.writeStartElement("p");
-            writer.writeCharacters(decorator.decorate(transcription.toString(), pleaides_db, perseus_db));
+            addDecoratedText(decorator.decorate(transcription.toString(), pleaides_db, perseus_db), writer);
             writer.writeEndElement();
 
             // Add translation
             if (isNotEmpty(marg.getTranslation())) {
-                String content = "[" + decorator.decorate(marg.getTranslation(), pleaides_db, perseus_db) + "]";
-                addSimpleElement(writer, "p", content, "class", "italic");
+                writer.writeStartElement("p");
+                writer.writeAttribute("class", "italic");
+                writer.writeCharacters("[");
+                addDecoratedText(decorator.decorate(marg.getTranslation(), pleaides_db, perseus_db), writer);
+                writer.writeCharacters("]");
+                writer.writeEndElement();
             }
 
             // Add list of People
             if (people.length() > 0) {
                 writer.writeStartElement("p");
                 addSimpleElement(writer, "span", "People:", "class", "emphasize");
-                writer.writeCharacters(" " + decorator.decorate(trim_right(people, 2), perseus_db));
+                writer.writeCharacters(" ");
+                addDecoratedText(decorator.decorate(trim_right(people, 2), perseus_db), writer);
                 writer.writeEndElement();
             }
 
@@ -302,7 +312,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             if (locs.length() > 0) {
                 writer.writeStartElement("p");
                 addSimpleElement(writer, "span", "Locations:", "class", "emphasize");
-                writer.writeCharacters(" " + decorator.decorate(trim_right(locs, 2), pleaides_db));
+                writer.writeCharacters(" ");
+                addDecoratedText(decorator.decorate(trim_right(locs, 2), pleaides_db), writer);
                 writer.writeEndElement();
             }
 
@@ -627,7 +638,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 if (isNotEmpty(ill.getCharacters())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Characters:", "class", "bold");
-                    xml.writeCharacters(decorator.decorate(sb_names.toString(), perseus_db));
+                    addDecoratedText(decorator.decorate(sb_names.toString(), perseus_db), xml);
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getTextualElement())) {
@@ -684,6 +695,32 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
 
         return anns;
+    }
+
+    /**
+     * Add string content without escaping any potentially included HTML tags.
+     * The string must be parsed first. Any included tags will then have to be added to the
+     * final document normally through the {@link XMLStreamWriter} (Trying to write a simple
+     * String using {@link XMLStreamWriter#writeCharacters(String)} will properly escape
+     * any included HTML).
+     *
+     * Notes: String content must be padded with dummy tags at the beginning and end
+     * in order to parse a well-formatted XML fragment, otherwise the parser will die.
+     *
+     * @param text decorated text, potentially with HTML anchors
+     * @param writer xml output
+     */
+    protected void addDecoratedText(String text, XMLStreamWriter writer) {
+        text = "<zz>" + text + "</zz>";
+
+        try {
+            SAXParserFactory factory = SAXParserFactory.newInstance();
+            SAXParser saxParser = factory.newSAXParser();
+
+            saxParser.parse(new InputSource(new StringReader(text)),
+                    new DecoratorParserHandler(writer)
+            );
+        } catch (ParserConfigurationException | SAXException | IOException e) {}
     }
 
     private boolean isNotEmpty(String[] str) {

@@ -260,7 +260,6 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         assertEquals(2, canvas.getMetadata().size());
         assertTrue(canvas.getMetadata().containsKey("Image ID"));
         assertTrue(canvas.getMetadata().containsKey("Transcription ID"));
-        System.out.println(canvas.getMetadata().get("Transcription ID").getValue());
         String[] parts = canvas.getMetadata().get("Transcription ID").getValue().split("\\.");
         assertEquals(ArchiveConstants.AOR_ANNOTATION, "." + parts[1]);
     }

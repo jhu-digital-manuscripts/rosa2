@@ -51,6 +51,10 @@ public class RoseTranscriptionAdapterHandler extends DefaultHandler {
 
         try {
             switch (qName) {
+                case "a":
+                    writer.writeStartElement("a");
+                    copyAttributes(attributes);
+                    break;
                 case "cb":
                     writer.writeStartElement("p");
                     writer.writeCharacters("Col " + attributes.getValue("n"));
@@ -161,6 +165,15 @@ public class RoseTranscriptionAdapterHandler extends DefaultHandler {
 
     private boolean skipElement(String element) {
         return skippedElements.contains(element) || ("note".equals(element) && !inNote);
+    }
+
+    private void copyAttributes(Attributes attributes) throws XMLStreamException {
+        for (int i = 0; i < attributes.getLength(); i++) {
+            writer.writeAttribute(
+                    attributes.getQName(i),
+                    attributes.getValue(i)
+            );
+        }
     }
 
 }

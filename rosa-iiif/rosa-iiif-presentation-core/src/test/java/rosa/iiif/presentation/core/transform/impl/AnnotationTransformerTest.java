@@ -140,6 +140,26 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
 
     }
 
+    /**
+     * For CNI stuff, test annotation decoration. Folgers page 2v should contain
+     * several external links.
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void decorateWithPersuesTest() throws Exception {
+        BookCollection col = loadValidCollection();
+        Book book  = loadValidFolgersHa2();
+
+        AnnotatedPage ap = book.getAnnotationPage("FolgersHa2.002v.tif");
+
+        // First marginalia talks about Venus. This should be decorated with an appropriate CTS URL
+        Annotation result = transformer.transform(col, book, ap.getMarginalia().get(0));
+        assertTrue(result.getDefaultSource().getEmbeddedText()
+                .contains("http://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/U.venus_1"));
+        assertFalse("Found probable escaped HTML", result.getDefaultSource().getEmbeddedText().contains("&lt;"));
+    }
+
     private List<Location[]> testLocations() {
         List<Location[]> tests = new ArrayList<>();
 
