@@ -192,10 +192,6 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
     }
 
     private boolean handle_collection(String name, OutputStream os) throws IOException {
-//        if (name.equals("top")) {
-//            return handle_top_collection(os);
-//        }
-
         BookCollection col = load_book_collection(name);
 
         if (col == null) {
@@ -213,35 +209,6 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         
         return true;
     }
-
-//    private boolean handle_top_collection(OutputStream os) throws IOException {
-//        Collection result = lookupCache("top", Collection.class);
-//
-//        if (result == null) {
-//            List<BookCollection> collections = new ArrayList<>();
-//
-//            for (String name : store.listCollections()) {
-//                // Hack for current archive in rosetest under /mnt
-//                if (name.equals("cdrom") || name.equals("biblehistoriale")) {
-//                    continue;
-//                }
-//
-//                BookCollection col = load_book_collection(name);
-//                if (col != null) {
-//                    collections.add(col);
-//                }
-//            }
-//
-//            if (collections.isEmpty()) {
-//                return false;
-//            }
-//
-//            result = transformer.topCollection(collections);
-//        }
-//
-//        serializer.write(result, os);
-//        return true;
-//    }
 
     private boolean handle_canvas(String id, String name, OutputStream os) throws IOException {
         Book book = get_book_from_id(id);

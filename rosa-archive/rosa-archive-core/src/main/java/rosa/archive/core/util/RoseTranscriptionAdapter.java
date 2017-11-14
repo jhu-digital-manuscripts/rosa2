@@ -1,12 +1,14 @@
 package rosa.archive.core.util;
 
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.StringReader;
+import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -20,16 +22,16 @@ public class RoseTranscriptionAdapter {
      * Adapt transcription XML to HTML for display.
      *
      * @param xml string contents
-     * @param name name of the xml fragment
+     * @param decorator function to apply to text to decorate it with links
      * @return HTML representations, a String per column in each page
      */
-    public String toHtml(String xml, String name) {
+    public String toHtml(String xml, Function<String, String> decorator) {
         try {
             SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
-            RoseTranscriptionAdapterHandler handler = new RoseTranscriptionAdapterHandler();
+            RoseTranscriptionAdapterHandler handler = new RoseTranscriptionAdapterHandler(decorator);
 
             parser.parse(
-                    new ByteArrayInputStream(xml.getBytes("UTF-8")),
+                    new InputSource(new StringReader(xml)),
                     handler
             );
 

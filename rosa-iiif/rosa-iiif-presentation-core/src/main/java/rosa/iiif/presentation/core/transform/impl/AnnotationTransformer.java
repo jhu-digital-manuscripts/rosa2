@@ -35,6 +35,10 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Substitution;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.extres.HtmlDecorator;
+import rosa.iiif.presentation.core.extres.PerseusDictionary;
+import rosa.iiif.presentation.core.extres.PleaidesGazetteer;
+import rosa.iiif.presentation.core.extres.ExternalResourceDb;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.annotation.Annotation;
@@ -43,17 +47,25 @@ import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 
 import java.io.UnsupportedEncodingException;
+import java.io.IOException;
 
 public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
         AORAnnotatedPageConstants {
 
     private ArchiveNameParser nameParser;
+    private HtmlDecorator decorator;
+    private ExternalResourceDb pleaides_db;
+    private ExternalResourceDb perseus_db;
+    
 
     @Inject
     public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
-                                 ArchiveNameParser nameParser) {
+                                 ArchiveNameParser nameParser) throws IOException {
         super(presRequestFormatter);
         this.nameParser = nameParser;
+        this.decorator = new HtmlDecorator();
+        this.pleaides_db = new PleaidesGazetteer();
+        this.perseus_db = new PerseusDictionary();
     }
 
     @Override
@@ -261,12 +273,12 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
             // Add transcription
             writer.writeStartElement("p");
-            writer.writeCharacters(StringEscapeUtils.escapeHtml4(transcription.toString()));
+            writer.writeCharacters(decorator.decorate(transcription.toString(), pleaides_db, perseus_db));
             writer.writeEndElement();
 
             // Add translation
             if (isNotEmpty(marg.getTranslation())) {
-                String content = "[" + StringEscapeUtils.escapeHtml4(marg.getTranslation()) + "]";
+                String content = "[" + decorator.decorate(marg.getTranslation(), pleaides_db, perseus_db) + "]";
                 addSimpleElement(writer, "p", content, "class", "italic");
             }
 
@@ -274,7 +286,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             if (people.length() > 0) {
                 writer.writeStartElement("p");
                 addSimpleElement(writer, "span", "People:", "class", "emphasize");
-                writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(people, 2)));
+                writer.writeCharacters(" " + decorator.decorate(trim_right(people, 2), perseus_db));
                 writer.writeEndElement();
             }
 
@@ -290,7 +302,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             if (locs.length() > 0) {
                 writer.writeStartElement("p");
                 addSimpleElement(writer, "span", "Locations:", "class", "emphasize");
-                writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(locs, 2)));
+                writer.writeCharacters(" " + decorator.decorate(trim_right(locs, 2), pleaides_db));
                 writer.writeEndElement();
             }
 
@@ -530,7 +542,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
 
         RoseTranscriptionAdapter adapter = new RoseTranscriptionAdapter();
-        transcription = adapter.toHtml(transcription, page);
+
+        transcription = adapter.toHtml(transcription, (String t) -> decorator.decorate(t, perseus_db));
 
         if (isNotEmpty(transcription)) {
             Annotation ann = new Annotation();
@@ -614,7 +627,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 if (isNotEmpty(ill.getCharacters())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Characters:", "class", "bold");
-                    xml.writeCharacters(sb_names.toString());
+                    xml.writeCharacters(decorator.decorate(sb_names.toString(), perseus_db));
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getTextualElement())) {

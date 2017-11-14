@@ -1,0 +1,3 @@
+create-cni-collection.sh
+First time run should set up a subset collection for use in the CNI demo. A new directory 'archive' will be created at the location that the script is run with important collection files and symlinks to books (mounted at /mnt/archive)
+Second time running will use the 'unlink' command to remove symlinks

@@ -13,6 +13,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -23,12 +24,15 @@ public class RoseTranscriptionAdapterHandler extends DefaultHandler {
             "l", "lg", "figure", "head", "div", "pb"
     ));
 
+    private Function<String, String> text_to_html;
+
     private ByteArrayOutputStream output;
     private XMLStreamWriter writer;
 
     private boolean inNote = false;
 
-    public RoseTranscriptionAdapterHandler() {
+    public RoseTranscriptionAdapterHandler(Function<String, String> text_to_html) {
+        this.text_to_html = text_to_html;
         output = new ByteArrayOutputStream();
         try {
             writer = XMLOutputFactory.newInstance().createXMLStreamWriter(output);
@@ -112,7 +116,12 @@ public class RoseTranscriptionAdapterHandler extends DefaultHandler {
         }
 
         try {
-            writer.writeCharacters(ch, start, length);
+            if (text_to_html != null) {
+                String text = new String(ch, start, length);
+                writer.writeCharacters(text_to_html.apply(text));
+            } else {
+                writer.writeCharacters(ch, start, length);
+            }
         } catch (XMLStreamException e) {
             throw new SAXException(e);
         }

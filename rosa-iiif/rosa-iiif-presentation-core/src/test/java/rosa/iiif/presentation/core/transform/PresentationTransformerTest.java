@@ -53,9 +53,10 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
     /**
      * Set up a new PresentationTransformer with each test.
+     * @throws IOException 
      */
     @Before
-    public void setup() {
+    public void setup() throws IOException {
         Map<String, String> idMap = new HashMap<>();
         idMap.put(VALID_COLLECTION, "valid");
 

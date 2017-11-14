@@ -7,10 +7,14 @@ import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Location;
+import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.Position;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -25,7 +29,7 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
     private AnnotationTransformer transformer;
 
     @Before
-    public void setup() {
+    public void setup() throws IOException {
         transformer = new AnnotationTransformer(
                 new IIIFPresentationRequestFormatter("SCHEME", "HOST", "PREFIX", 80),
                 new ArchiveNameParser()
@@ -81,6 +85,36 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
                     });
         }
 
+    }
+
+    /**
+     * Test the annotation transformer to make sure that the list of people in
+     * marginalia is output correctly. Only applicable to AOR transcriptions.
+     * No marginalia exist in the test data that has people specified, so the data
+     * will be faked.
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void peopleListTest() throws Exception {
+       BookCollection col = loadValidCollection();
+       Book book = loadValidFolgersHa2();
+
+       // Grab a random marginalia and insert a known list of people
+        AnnotatedPage annotatedPage = book.getAnnotatedPages().get(0);
+        assertNotNull("Failed to load annotated page.", annotatedPage);
+
+        Marginalia marg = annotatedPage.getMarginalia().get(0);
+        Position pos = marg.getLanguages().get(0).getPositions().get(0);
+        pos.setPeople(Arrays.asList("Jim", "Mark", "Jeff"));
+
+        Annotation anno = transformer.transform(col, book, marg);
+
+        String text = anno.getDefaultSource().getEmbeddedText();
+
+        assertTrue("List of people failed to appear.", text.contains("People:"));
+        assertTrue("List of names not found in marginalia translation.",
+                text.substring(text.indexOf("People:")).contains("Jim, Mark, Jeff"));
     }
 
     @Test
