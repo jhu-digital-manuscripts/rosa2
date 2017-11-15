@@ -637,8 +637,12 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         assertNotNull("Search result was NULL", result);
         assertEquals("Unexpected number of results found.", 2, result.getTotal());
         assertEquals(2, result.getMatches().length);
-        assertEquals("http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest",
-                result.getMatches()[0].getId());
+
+        assertTrue(
+                "ID for Folgers was not found in search matches",
+                Arrays.stream(result.getMatches()).map(SearchMatch::getId)
+                        .anyMatch(id -> id.equals("http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest"))
+        );
         assertNotNull(result.getCategories());
 
         assertEquals(10, result.getCategories().size());
