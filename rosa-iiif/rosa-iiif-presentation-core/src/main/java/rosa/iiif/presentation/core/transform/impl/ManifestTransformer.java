@@ -66,9 +66,6 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         if (book.getLicenseUrl() != null) {
             preziRights.setLicenseUris(new String[] {book.getLicenseUrl()});
         }
-//        if (book.getLicenseLogoUrl() != null) {
-//            preziRights.setLogoUris(new String[] {book.getLicenseLogoUrl()});
-//        }
         if (book.getPermission(lc) != null && book.getPermission(lc).getPermission() != null) {
             // Tolerate lack of permission data
             preziRights.addAttribution(book.getPermission(lc).getPermission(), lc);
@@ -78,15 +75,10 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         manifest.setViewingHint(ViewingHint.PAGED);
 
         manifest.setMetadata(transformMetadata(book, new String[]{lc}));
-
         // TODO Set manifest thumbnail, set to thumbnail for default sequence
-//        if (manifest.getDefaultSequence() != null) {
-//            manifest.setThumbnailUrl(manifest.getDefaultSequence().getThumbnailUrl());
-//            manifest.setThumbnailService(manifest.getDefaultSequence().getThumbnailService());
-//        }
-
         /*
          * Set 'within' property to point this manifest to its parent collections.
+         * TODO load these collections to inspect collection hierarchy?
          * {
          *      "@id" : "manifest",
                 "@type: "sc:Manifest",
@@ -108,29 +100,19 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         );
         manifest.setWithin(parent);
         // TODO ranges
-//        manifest.setRanges(rangeTransformer.topRanges(collection, book));
 
         // Add search service
         manifest.addService(new Service(
                 JHSearchService.CONTEXT_URI,
                 pres_uris.getManifestURI(collection.getId(), book.getId()) + JHSearchService.RESOURCE_PATH,
-                IIIF_SEARCH_PROFILE
+                IIIF_SEARCH_PROFILE,
+                manifest.getLabel(lc)
         ));
-
         manifest.addService(new Service(
                 JHSearchService.CONTEXT_URI,
-                pres_uris.getCollectionURI(collection.getId())
-                        + JHSearchService.RESOURCE_PATH,
+                pres_uris.getCollectionURI(collection.getId()) + JHSearchService.RESOURCE_PATH,
                 IIIF_SEARCH_PROFILE,
                 collection.getLabel()
-        ));
-        manifest.addService(new Service(
-                JHSearchService.CONTEXT_URI,
-                pres_uris.getCollectionURI("top")
-                        + JHSearchService.RESOURCE_PATH,
-                IIIF_SEARCH_PROFILE,
-                CollectionTransformer.TOP_COLLECTION_LABEL
-
         ));
 
         return manifest;
