@@ -112,9 +112,6 @@ public class ITIIIFPresentationServlet {
     @Test
     public void testSearchInfo() throws Exception {
         for (String col : store.listBookCollections()) {
-            if (!col.contains("hamlet")) { // Collection of 1 book, no defined categories
-                continue;
-            }
             check_retrieve_search_info(pres_uris.getCollectionURI(col) + JHSearchService.INFO_RESOURCE_PATH);
 
             for (String book : store.listBooks(col)) {
