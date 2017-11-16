@@ -46,6 +46,10 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                         JHSearchField.PLACE,
                         JHSearchField.METHOD
                 });
+        searchcategories.put("hamletcollection",
+                new JHSearchCategory[] {
+                        JHSearchCategory.COMMON_NAME, JHSearchCategory.NUM_PAGES, JHSearchCategory.REPOSITORY,
+                        JHSearchCategory.DATE});
 
         searchfields.put("rosecollection",
                 new JHSearchField[] {
