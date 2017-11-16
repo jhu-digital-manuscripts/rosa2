@@ -65,16 +65,12 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
         col.setManifests(getBookRefs(collection));
 
+        // Add search service for THIS collection
         col.addService(new Service(
                 JHSearchService.CONTEXT_URI,
                 col.getId() + JHSearchService.RESOURCE_PATH,    // ID is already transformed above
                 IIIF_SEARCH_PROFILE,
                 col.getLabel(LANGUAGE_DEFAULT)
-        ));
-        col.addService(new Service(
-                JHSearchService.CONTEXT_URI, pres_uris.getCollectionURI(TOP_COLLECTION_NAME) + JHSearchService.RESOURCE_PATH,
-                IIIF_SEARCH_PROFILE,
-                TOP_COLLECTION_LABEL
         ));
 
         List<Reference> childList = new ArrayList<>();
@@ -100,11 +96,11 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 if (parentCol == null) {
                     continue;
                 }
-                parentList.add(new Reference(
-                        pres_uris.getCollectionURI(parentCol.getId()),
-                        new TextValue(parentCol.getLabel(), LANGUAGE_DEFAULT),
-                        IIIFNames.SC_COLLECTION
-                ));
+                // Add references and search services for parent collections
+                String parentURI = pres_uris.getCollectionURI(parentCol.getId());
+                parentList.add(new Reference(parentURI, new TextValue(parentCol.getLabel(), LANGUAGE_DEFAULT),
+                        IIIFNames.SC_COLLECTION));
+                col.addService(new Service( JHSearchService.CONTEXT_URI, parentURI, IIIF_SEARCH_PROFILE, parentCol.getLabel()));
             } catch (IOException e) {}
         }
         col.setWithin(parentList.parallelStream()
@@ -112,36 +108,6 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 .collect(Collectors.toList()).toArray(new Within[parentList.size()])
         );
 
-        return col;
-    }
-
-    // TODO modify once 'root' collection has been added to archive
-    public Collection topCollection(List<BookCollection> collections) {
-        Collection col = new Collection();
-
-        col.setId(pres_uris.getCollectionURI(TOP_COLLECTION_NAME));
-        col.setLabel(TOP_COLLECTION_LABEL, LANGUAGE_DEFAULT);
-        col.setDescription("Top level collection bringing together all other collections in this archive.", "en");
-        col.setType(SC_COLLECTION);
-
-        List<Reference> cols = new ArrayList<>();
-        for (BookCollection c : collections) {
-            Reference ref = new Reference();
-
-            ref.setType(SC_COLLECTION);
-            ref.setLabel(new TextValue(c.getLabel(), LANGUAGE_DEFAULT));
-            ref.setReference(pres_uris.getCollectionURI(c.getId()));
-
-            cols.add(ref);
-        }
-
-        col.addService(new Service(
-                JHSearchService.CONTEXT_URI,
-                col.getId() + JHSearchService.RESOURCE_PATH,
-                IIIF_SEARCH_PROFILE
-        ));
-
-        col.setCollections(cols);
         return col;
     }
 
