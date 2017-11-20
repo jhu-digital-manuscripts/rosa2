@@ -35,7 +35,10 @@ public class RoseTranscriptionAdapterHandler extends DefaultHandler {
         this.text_to_html = text_to_html;
         output = new ByteArrayOutputStream();
         try {
-            writer = XMLOutputFactory.newInstance().createXMLStreamWriter(output);
+            XMLOutputFactory factory = XMLOutputFactory.newInstance();
+            factory.setProperty("escapeCharacters", false);
+
+            writer = factory.createXMLStreamWriter(output);
             writer.writeStartElement("div");
         } catch (XMLStreamException e) {
             logger.log(Level.SEVERE, "Failed to create XML writer.");
