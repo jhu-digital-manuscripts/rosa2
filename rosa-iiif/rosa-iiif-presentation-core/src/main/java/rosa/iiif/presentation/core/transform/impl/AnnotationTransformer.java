@@ -61,7 +61,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     private HtmlDecorator decorator;
     private ExternalResourceDb pleaides_db;
     private ExternalResourceDb perseus_db;
-    
+    private ExternalResourceDb isni_db;
 
     @Inject
     public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
@@ -94,6 +94,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
 
     private Annotation adaptAnnotation(BookCollection collection, Book book, rosa.archive.model.aor.Annotation anno) {
+        isni_db = new ISNIResourceDb(collection);
         if (anno == null) {
             return null;
         } else if (anno instanceof Marginalia) {
@@ -286,7 +287,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 writer.writeStartElement("p");
                 writer.writeAttribute("class", "italic");
                 writer.writeCharacters("[");
-                addDecoratedText(decorator.decorate(marg.getTranslation(), pleaides_db, perseus_db), writer);
+                addDecoratedText(decorator.decorate(marg.getTranslation(), pleaides_db, perseus_db, isni_db), writer);
                 writer.writeCharacters("]");
                 writer.writeEndElement();
             }
@@ -296,7 +297,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 writer.writeStartElement("p");
                 addSimpleElement(writer, "span", "People:", "class", "emphasize");
                 writer.writeCharacters(" ");
-                addDecoratedText(decorator.decorate(trim_right(people, 2), perseus_db), writer);
+                addDecoratedText(decorator.decorate(trim_right(people, 2), perseus_db, isni_db), writer);
                 writer.writeEndElement();
             }
 
@@ -323,7 +324,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 addSimpleElement(writer, "span", "Cross-references:", "class", "emphasize");
                 writer.writeCharacters(" ");
                 for (XRef xref : xrefs) {
-                    writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
+//                    writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
+                    addDecoratedText(decorator.decorate(xref.getPerson(), isni_db) + ", ", writer);
 
                     addSimpleElement(writer, "span", StringEscapeUtils.escapeHtml4(xref.getTitle()), "class", "italic");
                     if (isNotEmpty(xref.getText())) {
