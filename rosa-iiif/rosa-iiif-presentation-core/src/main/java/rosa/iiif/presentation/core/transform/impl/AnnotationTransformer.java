@@ -1,12 +1,17 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
@@ -16,6 +21,8 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
 import rosa.archive.core.util.Annotations;
@@ -42,6 +49,10 @@ import rosa.archive.model.aor.Table;
 import rosa.archive.model.aor.TextEl;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.extras.DecoratorParserHandler;
+import rosa.iiif.presentation.core.extras.ExternalResourceDb;
+import rosa.iiif.presentation.core.extras.HtmlDecorator;
+import rosa.iiif.presentation.core.extras.ISNIResourceDb;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -56,12 +67,15 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         AORAnnotatedPageConstants {
 
     private ArchiveNameParser nameParser;
+    private HtmlDecorator decorator;
+    private ISNIResourceDb isni_db;
 
     @Inject
     public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
                                  ArchiveNameParser nameParser) {
         super(presRequestFormatter);
         this.nameParser = nameParser;
+        this.decorator = new HtmlDecorator();
     }
 
     @Override
@@ -87,6 +101,11 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     private Annotation adaptAnnotation(BookCollection collection, Book book, rosa.archive.model.aor.Annotation anno, BookImage image) {
+        if (isni_db == null) {
+            isni_db = new ISNIResourceDb(collection);
+        } else {
+            isni_db.setCollection(collection);
+        }
         if (anno == null) {
             return null;
         } else if (anno instanceof Marginalia) {
@@ -239,7 +258,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
             addListOfValues("Notes:", notes.toString(), writer);
             addListOfValues("Notes (translated):", notesTr.toString(), writer);
-            addListOfValues("People:", people.toString(), writer);
+            addListOfValues("People:", people.toString(), writer, isni_db);
             addListOfValues("Books:", books.toString(), writer);
             addListOfValues("Locations:", locs.toString(), writer);
             addListOfValues("Symbols:", symbols.toString(), writer);
@@ -291,7 +310,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             addTranslation(drawing.getTranslation(), writer);
 
             addListOfValues("Symbols:", drawing.getSymbols(), ", ", writer);
-            addListOfValues("People:", drawing.getPeople(), ", ", writer);
+            addListOfValues("People:", drawing.getPeople(), ", ", writer, isni_db);
             addListOfValues("Books:", drawing.getBooks(), ", ", writer);
             addListOfValues("Locations:", drawing.getLocations(), ", ", writer);
 
@@ -326,7 +345,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
             addTranslation(table.getTranslation(), writer);
             addListOfValues("Symbols:", table.getSymbols(), ", ", writer);
-            addListOfValues("People:", table.getPeople(), ", ", writer);
+            addListOfValues("People:", table.getPeople(), ", ", writer, isni_db);
             addListOfValues("Books:", table.getBooks(), ", ", writer);
             addListOfValues("Locations:", table.getLocations(), ", ", writer);
             addInternalRefs(table.getInternalRefs(), writer);
@@ -408,7 +427,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             addTranslation(marg.getTranslation(), writer);
 
             addListOfValues("Symbols:", symb.toString(), writer);
-            addListOfValues("People:", people.toString(), writer);
+            addListOfValues("People:", people.toString(), writer, isni_db);
             addListOfValues("Books:", books.toString(), writer);
             addListOfValues("Locations:", locs.toString(), writer);
 
@@ -464,17 +483,21 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
     }
 
-    private void addListOfValues(String label, List<String> vals, String separator, XMLStreamWriter writer) throws XMLStreamException {
+    private void addListOfValues(String label, List<String> vals, String separator, XMLStreamWriter writer, ExternalResourceDb ... externalDbs) throws XMLStreamException {
         StringBuilder str = new StringBuilder();
         add(str, vals, separator);
         addListOfValues(label, str.toString(), writer);
     }
 
-    private void addListOfValues(String label, String listStr, XMLStreamWriter writer) throws XMLStreamException {
+    private void addListOfValues(String label, String listStr, XMLStreamWriter writer, ExternalResourceDb ... externalDbs) throws XMLStreamException {
         if (isNotEmpty(listStr)) {
             writer.writeStartElement("p");
             addSimpleElement(writer, "span", label, "class", "emphasize");
-            writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(listStr));
+            if (externalDbs == null || externalDbs.length == 0) {
+                writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(listStr));
+            } else {
+                addDecoratedText(decorator.decorate(listStr.trim(), externalDbs), writer);
+            }
             writer.writeEndElement();
         }
     }
@@ -517,9 +540,27 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 writer.writeCharacters(", ");
             }
 
+//<<<<<<< HEAD
             writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()));
             for (int j = 0; j < ref.getTargets().size(); j++) {
                 ReferenceTarget tar = ref.getTargets().get(j);
+//=======
+//            // Add list of X-refs
+//            if (xrefs.size() > 0) {
+//                writer.writeStartElement("p");
+//                addSimpleElement(writer, "span", "Cross-references:", "class", "emphasize");
+//                writer.writeCharacters(" ");
+//                for (XRef xref : xrefs) {
+////                    writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
+//                    addDecoratedText(decorator.decorate(xref.getPerson(), isni_db) + ", ", writer);
+//
+//                    addSimpleElement(writer, "span", StringEscapeUtils.escapeHtml4(xref.getTitle()), "class", "italic");
+//                    if (isNotEmpty(xref.getText())) {
+//                        writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
+//                    }
+//                    writer.writeCharacters("; ");
+//                }
+//>>>>>>> 448fa2d7... Decorate people names with ISNI URIs
 
                 writer.writeCharacters("(");
                 writer.writeStartElement("a");
@@ -880,6 +921,32 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
 
         return anns;
+    }
+
+    /**
+     * Add string content without escaping any potentially included HTML tags.
+     * The string must be parsed first. Any included tags will then have to be added to the
+     * final document normally through the {@link XMLStreamWriter} (Trying to write a simple
+     * String using {@link XMLStreamWriter#writeCharacters(String)} will properly escape
+     * any included HTML).
+     *
+     * Notes: String content must be padded with dummy tags at the beginning and end
+     * in order to parse a well-formatted XML fragment, otherwise the parser will die.
+     *
+     * @param text decorated text, potentially with HTML anchors
+     * @param writer xml output
+     */
+    protected void addDecoratedText(String text, XMLStreamWriter writer) {
+        text = "<zz>" + text + "</zz>";
+
+        try {
+            SAXParserFactory factory = SAXParserFactory.newInstance();
+            SAXParser saxParser = factory.newSAXParser();
+
+            saxParser.parse(new InputSource(new StringReader(text)),
+                    new DecoratorParserHandler(writer)
+            );
+        } catch (ParserConfigurationException | SAXException | IOException e) {}
     }
 
     private boolean isNotEmpty(String[] str) {
