@@ -20,10 +20,8 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
-import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import org.xml.sax.helpers.DefaultHandler;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
 import rosa.archive.core.util.Annotations;
@@ -43,6 +41,7 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Substitution;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.extres.ISNIResourceDb;
 import rosa.iiif.presentation.core.extres.*;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.IIIFNames;

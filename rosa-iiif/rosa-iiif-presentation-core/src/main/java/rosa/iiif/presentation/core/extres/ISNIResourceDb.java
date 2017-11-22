@@ -1,9 +1,8 @@
-package rosa.iiif.presentation.core.extras;
+package rosa.iiif.presentation.core.extres;
 
 import org.apache.commons.lang3.StringUtils;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.ReferenceSheet;
-
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Map;

@@ -3,6 +3,8 @@ package rosa.iiif.presentation.core.extras;
 import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.core.BaseArchiveTest;
+import rosa.iiif.presentation.core.extres.HtmlDecorator;
+import rosa.iiif.presentation.core.extres.ISNIResourceDb;
 
 import java.util.Arrays;
 
