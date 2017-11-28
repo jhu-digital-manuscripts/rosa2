@@ -14,13 +14,13 @@ public class Substitution extends Annotation implements Serializable {
 
     public Substitution() {}
 
-    public Substitution(String id, String signature, String type, String method, String copyText, String amendedText) {
-        this(id, signature, type, method, copyText, amendedText, null, null);
+    public Substitution(String id, String signature, String type, String method, String copyText, String amendedText, String imageId) {
+        this(id, signature, type, method, copyText, amendedText, null, null, imageId);
     }
 
     public Substitution(String id, String signature, String type, String method, String copyText, String amendedText,
-                        String language, Location location) {
-        super(id, copyText, language, location);
+                        String language, Location location, String imageId) {
+        super(id, copyText, language, imageId, location);
         this.signature = signature;
         this.type = type;
         this.method = method;

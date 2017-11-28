@@ -18,8 +18,8 @@ public class Symbol extends Annotation implements Serializable {
                 + (getReferencedText() != null && !getReferencedText().isEmpty() ? " " + getReferencedText() : "");
     }
 
-    public Symbol(String id, String referringText, String name, String language, Location location) {
-        super(id, referringText, language, location);
+    public Symbol(String id, String referringText, String name, String language, Location location, String imageId) {
+        super(id, referringText, language, imageId, location);
         this.name = name;
     }
 

@@ -369,6 +369,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
      * @see rosa.archive.core.util.Annotations#annotationId(String, String, int)
      */
     private void readAnnotations(Element annotationEl, AnnotatedPage page) {
+        String pageId = page.getId();
 
         NodeList children = annotationEl.getChildNodes();
         for (int i = 0; i < children.getLength(); i++) {
@@ -383,6 +384,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                 case TAG_MARGINALIA:
                     Marginalia marg = buildMarginalia(annotation, page.getPage());
                     marg.setId(Annotations.annotationId(page.getPage(), TAG_MARGINALIA, page.getMarginalia().size()));
+                    marg.setImageId(pageId);
 
                     page.getMarginalia().add(marg);
                     break;
@@ -393,7 +395,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_TYPE),
                             annotation.getAttribute(ATTR_LANGUAGE),
-                            Location.INTEXT
+                            Location.INTEXT,
+                            pageId
                     ));
                     break;
                 case TAG_SYMBOL:
@@ -402,7 +405,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_LANGUAGE),
-                            loc
+                            loc,
+                            pageId
                     ));
                     break;
                 case TAG_MARK:
@@ -412,7 +416,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_LANGUAGE),
-                            loc
+                            loc,
+                            pageId
                     ));
                     break;
                 case TAG_NUMERAL:
@@ -421,7 +426,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getTextContent(),
                             null,
-                            loc
+                            loc,
+                            pageId
                     ));
                     break;
                 case TAG_SUBSTITUTION:
@@ -433,7 +439,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getAttribute(ATTR_SUB_COPYTEXT),
                             annotation.getAttribute(ATTR_SUB_AMENDEDTEXT),
                             annotation.getAttribute(ATTR_LANGUAGE),
-                            Location.INTEXT
+                            Location.INTEXT,
+                            pageId
                     ));
                     break;
                 case TAG_ERRATA:
@@ -441,7 +448,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             Annotations.annotationId(page.getPage(), TAG_ERRATA, page.getErrata().size()),
                             annotation.getAttribute(ATTR_LANGUAGE),
                             annotation.getAttribute(ATTR_COPYTEXT),
-                            annotation.getAttribute(ATTR_AMENDEDTEXT)
+                            annotation.getAttribute(ATTR_AMENDEDTEXT),
+                            pageId
                     ));
                     break;
                 case TAG_DRAWING:
@@ -451,11 +459,14 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             loc,
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
-                            annotation.getAttribute(ATTR_LANGUAGE)
+                            annotation.getAttribute(ATTR_LANGUAGE),
+                            pageId
                     ));
                     break;
                 case TAG_REFERENCE:
-                    page.getRefs().add(readReference(annotation));
+                    Reference ref = readReference(annotation);
+                    ref.setImageId(pageId);
+                    page.getRefs().add(ref);
                     break;
                 default:
                     break;
@@ -635,7 +646,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             el.getAttribute(ATTR_METHOD),
                             el.getAttribute(ATTR_TYPE),
                             el.getAttribute(ATTR_LANGUAGE),
-                            pos.getPlace()
+                            pos.getPlace(),
+                            page
                     ));
                     break;
                 case TAG_X_REF:

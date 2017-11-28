@@ -11,8 +11,8 @@ public class Numeral extends Annotation implements Serializable {
     
     public Numeral() {}
 
-    public Numeral(String id, String referringText, String numeral, String language, Location location) {
-        super(id, referringText, language, location);
+    public Numeral(String id, String referringText, String numeral, String language, Location location, String imageId) {
+        super(id, referringText, language, imageId, location);
         this.numeral = numeral;
     }
 

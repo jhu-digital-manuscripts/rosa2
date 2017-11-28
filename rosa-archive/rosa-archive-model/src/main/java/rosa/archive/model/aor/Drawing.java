@@ -10,8 +10,8 @@ public class Drawing extends Annotation implements Serializable {
 
     public Drawing() {}
 
-    public Drawing(String id, String referringText, Location location, String name, String method, String language) {
-        super(id, referringText, language, location);
+    public Drawing(String id, String referringText, Location location, String name, String method, String language, String imageId) {
+        super(id, referringText, language, imageId, location);
         this.name = name;
         this.method = method;
     }

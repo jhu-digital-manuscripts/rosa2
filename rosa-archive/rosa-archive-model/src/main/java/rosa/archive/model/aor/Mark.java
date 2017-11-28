@@ -18,8 +18,8 @@ public class Mark extends Annotation implements Serializable {
         return "Mark: " + name + " (" + getReferencedText() + ")";
     }
 
-    public Mark(String id, String referringText, String name, String method, String language, Location location) {
-        super(id, referringText, language, location);
+    public Mark(String id, String referringText, String name, String method, String language, Location location, String imageId) {
+        super(id, referringText, language, imageId, location);
         this.name = name;
         this.method = method;
     }

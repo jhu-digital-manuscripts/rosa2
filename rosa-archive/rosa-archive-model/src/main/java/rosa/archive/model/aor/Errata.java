@@ -18,8 +18,8 @@ public class Errata extends Annotation implements Serializable {
         return "Errata: " + getReferencedText() + " > " + amendedText;
     }
 
-    public Errata(String id, String language, String copyText, String amendedText) {
-        super(id, copyText, language, Location.INTEXT);
+    public Errata(String id, String language, String copyText, String amendedText, String imageId) {
+        super(id, copyText, language, imageId, Location.INTEXT);
         this.amendedText = amendedText;
     }
 

@@ -90,27 +90,27 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals("acommodato", e.getAmendedText());
 
         // <mark name="plus_sign" method="pen" place="intext" language="IT" text="Arguto"/>
-        Mark m1 = new Mark("FolgersHa2.036r.tif_mark_35", "Arguto", "plus_sign", "pen", "IT", Location.INTEXT);
+        Mark m1 = new Mark("FolgersHa2.036r.tif_mark_35", "Arguto", "plus_sign", "pen", "IT", Location.INTEXT, null);
         // <mark name="dash" method="pen" place="right_margin"/>
-        Mark m2 = new Mark("FolgersHa2.036r.tif_mark_2", "", "dash", "pen", "", Location.RIGHT_MARGIN);
+        Mark m2 = new Mark("FolgersHa2.036r.tif_mark_2", "", "dash", "pen", "", Location.RIGHT_MARGIN, null);
         // fake mark
-        Mark m3 = new Mark("id", "fake text", "moo", "method", "lang", null);
+        Mark m3 = new Mark("id", "fake text", "moo", "method", "lang", null, null);
 
         assertTrue(page.getMarks().contains(m1));
         assertTrue(page.getMarks().contains(m2));
         assertFalse(page.getMarks().contains(m3));
 
         // <symbol name="Sun" place="left_margin"/>
-        Symbol s1 = new Symbol("FolgersHa2.036r.tif_symbol_0", "", "Sun", "", Location.LEFT_MARGIN);
+        Symbol s1 = new Symbol("FolgersHa2.036r.tif_symbol_0", "", "Sun", "", Location.LEFT_MARGIN, null);
         // not present in document
-        Symbol s2 = new Symbol("id", "fake text", "moo method", "lang", null);
+        Symbol s2 = new Symbol("id", "fake text", "moo method", "lang", null, null);
         assertTrue(page.getSymbols().contains(s1));
         assertFalse(page.getSymbols().contains(s2));
 
         // <underline method="pen" type="straight" language="IT" text="Arguto, &amp;"/>
-        Underline u1 = new Underline("FolgersHa2.036r.tif_underline_25", "Arguto, &", "pen", "straight", "IT");
+        Underline u1 = new Underline("FolgersHa2.036r.tif_underline_25", "Arguto, &", "pen", "straight", "IT", null);
         // fake underline
-        Underline u2 = new Underline("id", "fake text", "moomethod", "asdf", "lang");
+        Underline u2 = new Underline("id", "fake text", "moomethod", "asdf", "lang", null);
         assertTrue(page.getUnderlines().contains(u1));
         assertFalse(page.getUnderlines().contains(u2));
     }
@@ -221,16 +221,16 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         page.setSignature("~~Signature~~");
 
         page.setMarks(Arrays.asList(
-                new Mark("1_mark_0", "", "plus_sign", "pen", "EN", Location.HEAD),
-                new Mark("1_mark_1", "", "plus_sign", "pen", "EN", Location.HEAD),
-                new Mark("1_mark_2", "", "pen_trial", "pen", "EN", Location.HEAD)
+                new Mark("1_mark_0", "", "plus_sign", "pen", "EN", Location.HEAD, null),
+                new Mark("1_mark_1", "", "plus_sign", "pen", "EN", Location.HEAD, null),
+                new Mark("1_mark_2", "", "pen_trial", "pen", "EN", Location.HEAD, null)
         ));
         page.setSymbols(Arrays.asList(
-                new Symbol("1_symbol_0", "", "Mars", "EN", Location.RIGHT_MARGIN),
-                new Symbol("1_symbol_1", "", "Mars", "EN", Location.RIGHT_MARGIN),
-                new Symbol("1_symbol_2", "", "Sun", "EN", Location.LEFT_MARGIN)
+                new Symbol("1_symbol_0", "", "Mars", "EN", Location.RIGHT_MARGIN, null),
+                new Symbol("1_symbol_1", "", "Mars", "EN", Location.RIGHT_MARGIN, null),
+                new Symbol("1_symbol_2", "", "Sun", "EN", Location.LEFT_MARGIN, null)
         ));
-        page.setErrata(Collections.singletonList(new Errata("1_errata_0", "EN", "error text", "good text")));
+        page.setErrata(Collections.singletonList(new Errata("1_errata_0", "EN", "error text", "good text", null)));
 
         List<Marginalia> margs = new ArrayList<>();
         page.setMarginalia(margs);

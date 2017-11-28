@@ -12,14 +12,16 @@ public abstract class Annotation implements Serializable {
     private String text;
     private Location location;
     private String language;
+    private String imageId;
 
     protected Annotation() {}
 
-    protected Annotation(String id, String refText, String language, Location location) {
+    protected Annotation(String id, String refText, String language, String imageId, Location location) {
         this.id = id;
         this.text = refText;
         this.location = location;
         this.language = language;
+        this.imageId = imageId;
     }
 
     public String getId() {
@@ -54,6 +56,14 @@ public abstract class Annotation implements Serializable {
         this.language = language;
     }
 
+    public String getImageId() {
+        return imageId;
+    }
+
+    public void setImageId(String imageId) {
+        this.imageId = imageId;
+    }
+
     public abstract String toPrettyString();
 
     @Override
@@ -64,11 +74,10 @@ public abstract class Annotation implements Serializable {
         Annotation that = (Annotation) o;
 
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (text != null ? !text.equals(that.text) : that.text != null)
-            return false;
+        if (text != null ? !text.equals(that.text) : that.text != null) return false;
         if (location != that.location) return false;
-        return !(language != null ? !language.equals(that.language) : that.language != null);
-
+        if (language != null ? !language.equals(that.language) : that.language != null) return false;
+        return imageId != null ? imageId.equals(that.imageId) : that.imageId == null;
     }
 
     @Override
@@ -77,6 +86,7 @@ public abstract class Annotation implements Serializable {
         result = 31 * result + (text != null ? text.hashCode() : 0);
         result = 31 * result + (location != null ? location.hashCode() : 0);
         result = 31 * result + (language != null ? language.hashCode() : 0);
+        result = 31 * result + (imageId != null ? imageId.hashCode() : 0);
         return result;
     }
 
@@ -84,9 +94,10 @@ public abstract class Annotation implements Serializable {
     public String toString() {
         return "Annotation{" +
                 "id='" + id + '\'' +
-                ", referringText='" + text + '\'' +
+                ", text='" + text + '\'' +
                 ", location=" + location +
                 ", language='" + language + '\'' +
+                ", imageId='" + imageId + '\'' +
                 '}';
     }
 }
