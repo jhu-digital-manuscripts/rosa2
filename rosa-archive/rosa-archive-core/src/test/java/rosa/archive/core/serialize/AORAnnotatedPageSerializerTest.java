@@ -7,6 +7,7 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -15,6 +16,11 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
+import rosa.archive.model.CollectionMetadata;
+import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Endpoint;
 import rosa.archive.model.aor.Errata;
@@ -153,6 +159,30 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals(32, marks);
         assertEquals(0, errata);
         assertEquals(0, numerals);
+    }
+
+    @Test
+    public void testReadHamlet() throws Exception {
+        // First fake a "hamlet" collection and book to provide necessary metadata
+        BookCollection fakeCol = new BookCollection();
+        fakeCol.setId("The many moos of Hamlet");
+        fakeCol.setMetadata(new CollectionMetadata());
+        fakeCol.getMetadata().setLanguages(new String[] {"en"});
+
+        Book b = new Book();
+        b.setId("Ghost's moo");
+        b.setImages(new ImageList());
+        b.getImages().getImages().add(new BookImage("Hamlet.001r.tif", 3, 3, false));
+
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("data/collection/Hamlet/Hamlet.aor.001r.xml")) {
+            List<String> err = new ArrayList<>();
+            AnnotatedPage page = serializer.read(in, err);
+
+            assertNotNull(page);
+            assertTrue(err.isEmpty());
+
+            assertFalse("Loaded page does not include <reference>s!", page.getRefs().isEmpty());
+        }
     }
 
 //    /**
