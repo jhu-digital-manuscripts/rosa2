@@ -681,7 +681,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
     }
 
 	protected static String stripTranscribersMarks(String s) {
-		return s.replace("[", "").replace("]", "");
+		return s != null ? s.replace("[", "").replace("]", "") : null;
 	}
 
 	private String to_string(List<String> list) {

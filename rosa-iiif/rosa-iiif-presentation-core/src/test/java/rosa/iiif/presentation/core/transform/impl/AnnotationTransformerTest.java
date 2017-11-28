@@ -4,9 +4,12 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
+import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.CollectionMetadata;
+import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
@@ -15,6 +18,7 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -158,6 +162,51 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
         assertTrue(result.getDefaultSource().getEmbeddedText()
                 .contains("http://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/U.venus_1"));
         assertFalse("Found probable escaped HTML", result.getDefaultSource().getEmbeddedText().contains("&lt;"));
+    }
+
+    /**
+     * The sample Hamlet page has a few features that the base AOR test data does not. Exercise these aspects
+     * in the transformer.
+     *
+     * - A marginalia defines its own ID
+     * - New 'reference' that points from the marginalia (with an ID) to an external URL
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void hamletAnnotationsTest() throws Exception {
+        BookCollection fakeCol = new BookCollection();
+        fakeCol.setId("The many moos of Hamlet");
+        fakeCol.setMetadata(new CollectionMetadata());
+        fakeCol.getMetadata().setLanguages(new String[] {"en"});
+
+        Book b = new Book();
+        b.setId("Ghost's moo");
+        b.setImages(new ImageList());
+        b.getImages().getImages().add(new BookImage("Hamlet.001r.tif", 3, 3, false));
+
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("data/collection/Hamlet/Hamlet.aor.001r.xml")) {
+            List<String> err = new ArrayList<>();
+
+            AORAnnotatedPageSerializer serializer = new AORAnnotatedPageSerializer();
+            AnnotatedPage page = serializer.read(in, err);
+
+            assertNotNull(page);
+            assertTrue(err.isEmpty());
+
+            // Hamlet annotations serialized, now we can transform them
+            checkPageAnnos(page.getMarginalia(), fakeCol, b);
+            checkPageAnnos(page.getRefs(), fakeCol, b);
+        }
+    }
+
+    private void checkPageAnnos(List<? extends rosa.archive.model.aor.Annotation> annos, BookCollection c, Book b) {
+        annos.stream().map(a -> transformer.transform(c, b, a))
+                .forEach(a -> {
+                    assertNotNull(a);
+                    assertNotNull(a.getDefaultSource());
+                    assertNotNull(a.getDefaultTarget());
+                });
     }
 
     private List<Location[]> testLocations() {

@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Stream;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -56,12 +58,12 @@ import java.io.IOException;
 
 public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
         AORAnnotatedPageConstants {
+    private static Logger logger = Logger.getLogger("AnnotationTransformer");
 
     private ArchiveNameParser nameParser;
     private HtmlDecorator decorator;
     private ExternalResourceDb pleaides_db;
     private ExternalResourceDb perseus_db;
-    
 
     @Inject
     public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
@@ -193,28 +195,29 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         anno.setMotivation(IIIFNames.SC_PAINTING);
         anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
                 marginaliaToDisplayHtml(marg), lang));
-// ---------------------------------------------------------------------------------------------------------------------
-        /*
-        Here we can start to run into issues with annotations that define their own IDs!
-        We clumsily locate the book image by parsing a generated ID.
-        If an annotation already defines its own ID, we likely can't parse it for a page
-        name.
-         */
-        AnnotationTarget target = locationOnCanvas(
-                getPageImage(book.getImages(), getAnnotationPage(marg.getId())),
-                Location.FULL_PAGE);
-// ---------------------------------------------------------------------------------------------------------------------
-        target.setUri(pres_uris.getCanvasURI(
-                collection.getId(),
-                book.getId(),
-                getAnnotationPage(anno.getId())
-        ));
 
-        anno.setDefaultTarget(target); // TODO actual position(s)
+        // Get the image this annotation is on
+        BookImage relatedImage = book.getImages().getImages().stream()
+                .filter(im -> im.getId().equals(marg.getImageId()) || im.getName().equals(marg.getImageId()))
+                .findFirst()
+                .orElse(null);
 
-        anno.setLabel(marg.getId(), "en");
+        if (relatedImage != null) {
+            AnnotationTarget target = locationOnCanvas(relatedImage, Location.FULL_PAGE);
+            target.setUri(pres_uris.getCanvasURI(
+                    collection.getId(),
+                    book.getId(),
+                    getAnnotationPage(anno.getId())
+            ));
 
-        return anno;
+            anno.setDefaultTarget(target); // TODO actual position(s)
+            anno.setLabel(marg.getId(), "en");
+
+            return anno;
+        } else {
+            logger.log(Level.WARNING, "Failed to transform annotation " + marg);
+            return null;
+        }
     }
 
     private Annotation adaptReference(String collectionId, String bookId, Reference r) {

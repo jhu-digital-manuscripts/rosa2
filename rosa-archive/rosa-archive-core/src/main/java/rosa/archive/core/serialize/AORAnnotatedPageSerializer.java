@@ -369,7 +369,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
      * @see rosa.archive.core.util.Annotations#annotationId(String, String, int)
      */
     private void readAnnotations(Element annotationEl, AnnotatedPage page) {
-        String pageId = page.getId();
+        String pageId = page.getPage();
 
         NodeList children = annotationEl.getChildNodes();
         for (int i = 0; i < children.getLength(); i++) {

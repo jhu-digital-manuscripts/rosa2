@@ -22,6 +22,7 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.CollectionMetadata;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.Endpoint;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Location;
@@ -90,27 +91,27 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals("acommodato", e.getAmendedText());
 
         // <mark name="plus_sign" method="pen" place="intext" language="IT" text="Arguto"/>
-        Mark m1 = new Mark("FolgersHa2.036r.tif_mark_35", "Arguto", "plus_sign", "pen", "IT", Location.INTEXT, null);
+        Mark m1 = new Mark("FolgersHa2.036r.tif_mark_35", "Arguto", "plus_sign", "pen", "IT", Location.INTEXT, "FolgersHa2.036r.tif");
         // <mark name="dash" method="pen" place="right_margin"/>
-        Mark m2 = new Mark("FolgersHa2.036r.tif_mark_2", "", "dash", "pen", "", Location.RIGHT_MARGIN, null);
+        Mark m2 = new Mark("FolgersHa2.036r.tif_mark_2", "", "dash", "pen", "", Location.RIGHT_MARGIN, "FolgersHa2.036r.tif");
         // fake mark
-        Mark m3 = new Mark("id", "fake text", "moo", "method", "lang", null, null);
+        Mark m3 = new Mark("id", "fake text", "moo", "method", "lang", null, "FolgersHa2.036r.tif");
 
         assertTrue(page.getMarks().contains(m1));
         assertTrue(page.getMarks().contains(m2));
         assertFalse(page.getMarks().contains(m3));
 
         // <symbol name="Sun" place="left_margin"/>
-        Symbol s1 = new Symbol("FolgersHa2.036r.tif_symbol_0", "", "Sun", "", Location.LEFT_MARGIN, null);
+        Symbol s1 = new Symbol("FolgersHa2.036r.tif_symbol_0", "", "Sun", "", Location.LEFT_MARGIN, "FolgersHa2.036r.tif");
         // not present in document
-        Symbol s2 = new Symbol("id", "fake text", "moo method", "lang", null, null);
+        Symbol s2 = new Symbol("id", "fake text", "moo method", "lang", null, "FolgersHa2.036r.tif");
         assertTrue(page.getSymbols().contains(s1));
         assertFalse(page.getSymbols().contains(s2));
 
         // <underline method="pen" type="straight" language="IT" text="Arguto, &amp;"/>
-        Underline u1 = new Underline("FolgersHa2.036r.tif_underline_25", "Arguto, &", "pen", "straight", "IT", null);
+        Underline u1 = new Underline("FolgersHa2.036r.tif_underline_25", "Arguto, &", "pen", "straight", "IT", "FolgersHa2.036r.tif");
         // fake underline
-        Underline u2 = new Underline("id", "fake text", "moomethod", "asdf", "lang", null);
+        Underline u2 = new Underline("id", "fake text", "moomethod", "asdf", "lang", "FolgersHa2.036r.tif");
         assertTrue(page.getUnderlines().contains(u1));
         assertFalse(page.getUnderlines().contains(u2));
     }
@@ -181,6 +182,13 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
             assertNotNull(page);
             assertTrue(err.isEmpty());
 
+            // Check for image IDs for each annotation
+            page.getAnnotations().stream().map(Annotation::getImageId)
+                    .forEach(imgId -> {
+                        assertNotNull("Image ID NULL", imgId);
+                        assertFalse("Image ID is empty", imgId.isEmpty());
+                    });
+
             assertFalse("Loaded page does not include <reference>s!", page.getRefs().isEmpty());
         }
     }
@@ -221,16 +229,16 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         page.setSignature("~~Signature~~");
 
         page.setMarks(Arrays.asList(
-                new Mark("1_mark_0", "", "plus_sign", "pen", "EN", Location.HEAD, null),
-                new Mark("1_mark_1", "", "plus_sign", "pen", "EN", Location.HEAD, null),
-                new Mark("1_mark_2", "", "pen_trial", "pen", "EN", Location.HEAD, null)
+                new Mark("1_mark_0", "", "plus_sign", "pen", "EN", Location.HEAD, "1"),
+                new Mark("1_mark_1", "", "plus_sign", "pen", "EN", Location.HEAD, "1"),
+                new Mark("1_mark_2", "", "pen_trial", "pen", "EN", Location.HEAD, "1")
         ));
         page.setSymbols(Arrays.asList(
-                new Symbol("1_symbol_0", "", "Mars", "EN", Location.RIGHT_MARGIN, null),
-                new Symbol("1_symbol_1", "", "Mars", "EN", Location.RIGHT_MARGIN, null),
-                new Symbol("1_symbol_2", "", "Sun", "EN", Location.LEFT_MARGIN, null)
+                new Symbol("1_symbol_0", "", "Mars", "EN", Location.RIGHT_MARGIN, "1"),
+                new Symbol("1_symbol_1", "", "Mars", "EN", Location.RIGHT_MARGIN, "1"),
+                new Symbol("1_symbol_2", "", "Sun", "EN", Location.LEFT_MARGIN, "1")
         ));
-        page.setErrata(Collections.singletonList(new Errata("1_errata_0", "EN", "error text", "good text", null)));
+        page.setErrata(Collections.singletonList(new Errata("1_errata_0", "EN", "error text", "good text", "1")));
 
         List<Marginalia> margs = new ArrayList<>();
         page.setMarginalia(margs);
@@ -239,6 +247,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         m1.setTranslation("Marginalia 1 translation");
 //        m1.setLocation(Location.TAIL);// Not valid place to put 'location'. For marginalia (only) it should go in <position> tag
         m1.setId("1_marginalia_0");
+        m1.setImageId("1");
 
         List<MarginaliaLanguage> langs = new ArrayList<>();
         m1.setLanguages(langs);
@@ -262,7 +271,9 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         Endpoint source = new Endpoint("source_url", false, "The moo cometh from thee");
         source.setDescription("Descriptive moo");
         Endpoint target = new Endpoint("target_url", false, "We moo is for you");
-        page.getRefs().add(new Reference(source, target));
+        Reference r = new Reference(source, target);
+        r.setImageId("1");
+        page.getRefs().add(r);
 
         return page;
     }
