@@ -16,12 +16,14 @@ import org.junit.Before;
 import org.junit.Test;
 
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Endpoint;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.Reference;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 
@@ -205,7 +207,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
 
         Marginalia m1 = new Marginalia();
         m1.setTranslation("Marginalia 1 translation");
-        m1.setLocation(Location.TAIL);
+//        m1.setLocation(Location.TAIL);// Not valid place to put 'location'. For marginalia (only) it should go in <position> tag
         m1.setId("1_marginalia_0");
 
         List<MarginaliaLanguage> langs = new ArrayList<>();
@@ -225,6 +227,12 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         pos.setTexts(Collections.singletonList("Text of Marginalia in pos1"));
         pos.setPeople(Arrays.asList("Jim", "Sayeed", "Mark"));
         pos.setBooks(Arrays.asList("Dune", "Foundation", "Hyperion"));
+        page.getMarginalia().add(m1);
+
+        Endpoint source = new Endpoint("source_url", false, "The moo cometh from thee");
+        source.setDescription("Descriptive moo");
+        Endpoint target = new Endpoint("target_url", false, "We moo is for you");
+        page.getRefs().add(new Reference(source, target));
 
         return page;
     }

@@ -63,9 +63,9 @@ public class HamletTest {
         List<AnnotatedPage> pages = getPages(BOOK_HAMLET);
 
         assertNotNull(pages);
-        assertEquals("Only 1 page was expected.", 1, pages.size());
+        assertEquals("2 page were expected.", 2, pages.size());
 
-        List<Annotation> annos = pages.get(0).getAnnotations();
+        List<Annotation> annos = pages.get(1).getAnnotations();
         assertEquals("15 annotations expected on sample page.", 15, annos.size());
     }
 

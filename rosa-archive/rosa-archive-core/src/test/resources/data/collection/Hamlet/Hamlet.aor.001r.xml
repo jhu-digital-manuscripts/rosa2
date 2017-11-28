@@ -1,0 +1,83 @@
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/ChrisRG/ReadingHamlet/master/RHschema.xsd">
+
+    <page filename="Hamlet.001r.tif" pagination="1" signature="I.1" reader="John Ward"/> <!-- Signature = act + scene -->
+    <annotation>
+        <!-- Marginalia --> 	<!-- Positions available: head, intext, tail, left_margin, right_margin -->
+        <marginalia anchor_text="Act I.">
+            <language ident="EN">
+                <position place="left_margin" book_orientation="0">
+                    <marginalia_text>
+                        Town:
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+
+        <marginalia>
+            <language ident="EN">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>
+                        (1)
+                        Barnardo
+                        Francisco
+                    </marginalia_text>
+                    <person name="Barnardo"/>
+                    <person name="Francisco"/>
+                </position>
+            </language>
+        </marginalia>
+
+        <marginalia>
+            <language ident="EN">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>
+                        (2)
+                        Horatio
+                        Marcellus
+                    </marginalia_text>
+                    <person name="Horatio"/>
+                    <person name="Marcellus"/>
+                </position>
+            </language>
+        </marginalia>
+
+        <marginalia anchor_text="two Sentinels.">
+            <language ident="EN">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>
+                        meet
+                    </marginalia_text>
+                    <emphasis method="pen" type="straight" text="meet"/>
+                </position>
+            </language>
+        </marginalia>
+
+        <marginalia id="a8e92ef4-d37e-11e7-9296-cec278b6b50a">
+            <language ident="EN">
+                <position place="right_margin" book_orientation="0">
+                    <marginalia_text>
+                        (3)
+                        Ghost
+                    </marginalia_text>
+                    <person name="Ghost"/>
+                </position>
+            </language>
+        </marginalia>
+
+
+        <!-- Symbols and marks -->	<!-- Positions available: head, intext, tail, left_margin, right_margin -->
+        <symbol name="Hatching" place="right_margin" text="Enter Horatio and Marcellus."/>
+
+        <reference>
+            <ref_target external="false" text="Ghost" url="a8e92ef4-d37e-11e7-9296-cec278b6b50a" />
+            <source external="true" url="https://www.jstor.org/stable/2868853" label="JSTOR">
+                <description>Diana Macintyre DeLuca, “The Movements of the Ghost in Hamlet,” in Shakespeare Quarterly, 24, 1973, pp. 147-154.</description>
+            </source>
+        </reference>
+        <reference>
+            <ref_target external="false" text="Ghost" url="a8e92ef4-d37e-11e7-9296-cec278b6b50a" />
+            <source external="true" url="https://en.wikipedia.org/wiki/Ghost_(Hamlet)" label="Wikipedia"/>
+        </reference>
+    </annotation>
+</transcription>

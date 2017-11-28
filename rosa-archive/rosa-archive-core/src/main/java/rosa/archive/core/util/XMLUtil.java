@@ -1,6 +1,7 @@
 package rosa.archive.core.util;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -19,6 +20,7 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import java.io.OutputStream;
+import java.io.StringWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.ConcurrentHashMap;
@@ -29,6 +31,31 @@ import java.util.concurrent.ConcurrentHashMap;
 public class XMLUtil {
     private static final int MAX_CACHE_SIZE = 100;
     private static final ConcurrentHashMap<String, Schema> schemaCache = new ConcurrentHashMap<>();
+
+    /**
+     * Print an XML element, useful for debugging.
+     *
+     * @param el XML element object
+     * @return element in string form
+     */
+    public static String printElement(Element el) {
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        try {
+            Transformer transformer = transformerFactory.newTransformer();
+            transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+
+            DOMSource source = new DOMSource(el);
+            StreamResult result = new StreamResult(new StringWriter());
+
+            transformer.transform(source, result);
+
+            return result.getWriter().toString();
+        } catch (Exception e) {
+            return "Failed to print.";
+        }
+    }
 
     /**
      * @return a new DOM document

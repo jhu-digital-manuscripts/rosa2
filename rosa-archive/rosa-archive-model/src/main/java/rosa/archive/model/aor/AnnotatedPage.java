@@ -27,6 +27,7 @@ public class AnnotatedPage implements HasId, Serializable {
     private List<Substitution> subs;
     private List<Errata> errata;
     private List<Drawing> drawings;
+    private List<Reference> refs;
 
     public AnnotatedPage() {
         marginalia = new ArrayList<>();
@@ -37,6 +38,7 @@ public class AnnotatedPage implements HasId, Serializable {
         subs = new ArrayList<>();
         errata = new ArrayList<>();
         drawings = new ArrayList<>();
+        refs = new ArrayList<>();
     }
 
     @Override
@@ -70,6 +72,7 @@ public class AnnotatedPage implements HasId, Serializable {
     	result.addAll(subs);
     	result.addAll(errata);
     	result.addAll(drawings);
+    	result.addAll(refs);
     	
     	return result;
     }
@@ -83,12 +86,10 @@ public class AnnotatedPage implements HasId, Serializable {
     	
     	return null;
 	}
-    
-    // TODO Cannot use type.cast because of lack of GWT support
-    
+
     @SuppressWarnings("unchecked")
 	public <T extends Annotation> T getAnnotation(String id, Class<T> type) {
-    	return (T) getAnnotation(id);
+    	return type.cast(getAnnotation(id));
     }
 
 	public String getPage() {
@@ -187,6 +188,14 @@ public class AnnotatedPage implements HasId, Serializable {
         this.errata = errata;
     }
 
+    public List<Reference> getRefs() {
+        return refs;
+    }
+
+    public void setRefs(List<Reference> refs) {
+        this.refs = refs;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -206,7 +215,8 @@ public class AnnotatedPage implements HasId, Serializable {
         if (numerals != null ? !numerals.equals(that.numerals) : that.numerals != null) return false;
         if (subs != null ? !subs.equals(that.subs) : that.subs != null) return false;
         if (errata != null ? !errata.equals(that.errata) : that.errata != null) return false;
-        return drawings != null ? drawings.equals(that.drawings) : that.drawings == null;
+        if (drawings != null ? !drawings.equals(that.drawings) : that.drawings != null) return false;
+        return refs != null ? refs.equals(that.refs) : that.refs == null;
     }
 
     @Override
@@ -224,6 +234,7 @@ public class AnnotatedPage implements HasId, Serializable {
         result = 31 * result + (subs != null ? subs.hashCode() : 0);
         result = 31 * result + (errata != null ? errata.hashCode() : 0);
         result = 31 * result + (drawings != null ? drawings.hashCode() : 0);
+        result = 31 * result + (refs != null ? refs.hashCode() : 0);
         return result;
     }
 
@@ -243,6 +254,7 @@ public class AnnotatedPage implements HasId, Serializable {
                 ", subs=" + subs +
                 ", errata=" + errata +
                 ", drawings=" + drawings +
+                ", refs=" + refs +
                 '}';
     }
 }

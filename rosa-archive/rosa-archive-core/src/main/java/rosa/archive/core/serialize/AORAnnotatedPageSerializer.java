@@ -29,6 +29,7 @@ import rosa.archive.core.util.CachingUrlResourceResolver;
 import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Drawing;
+import rosa.archive.model.aor.Endpoint;
 import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Location;
@@ -37,9 +38,11 @@ import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.Reference;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.Substitution;
 import rosa.archive.model.aor.Symbol;
+import rosa.archive.model.aor.TextSelector;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
 
@@ -102,15 +105,16 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         addSubstitution(aPage.getSubs(), annotationEl, doc);
         addErrata(aPage.getErrata(), annotationEl, doc);
         addDrawing(aPage.getDrawings(), annotationEl, doc);
+        aPage.getRefs().forEach(ref -> addReference(ref, annotationEl, doc));
 
         doc.normalizeDocument();
 
         // validate written document against schema, only write to file if valid
-        if (validate(doc, annotationSchemaUrl)) {
+//        if (validate(doc, annotationSchemaUrl)) {
             XMLUtil.write(doc, out, false);
-        } else {
-            throw new IOException("Failed to write AoR transcription due to previously logged errors.");
-        }
+//        } else {
+//            throw new IOException("Failed to write AoR transcription due to previously logged errors.");
+//        }
     }
 
     private boolean validate(Document doc, String schemaUrl) throws IOException {
@@ -301,6 +305,26 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         }
     }
 
+    private void addReference(Reference ref, Element parent, Document doc) {
+        Element e = newElement(TAG_REFERENCE, parent, doc);
+        addEndpoint(TAG_SOURCE, ref.getSource(), e, doc);
+        addEndpoint(TAG_REFERENCE_TARGET, ref.getTarget(), e, doc);
+    }
+
+    private void addEndpoint(String tag, Endpoint endpoint, Element parent, Document doc) {
+        Element s = newElement(tag, parent, doc);
+        setAttribute(s, ATTR_EXTERNAL, String.valueOf(endpoint.isExternal()));
+        setAttribute(s, ATTR_URL, endpoint.getUrl());
+        setAttribute(s, ATTR_LABEL, endpoint.getLabel());
+        setAttribute(s, ATTR_TEXT, endpoint.getText());
+        setAttribute(s, ATTR_PREFIX, endpoint.getTextPrefix());
+        setAttribute(s, ATTR_SUFFIX, endpoint.getTextSuffix());
+        if (endpoint.getDescription() != null) {
+            Element desc = newElement(TAG_DESCRIPTION, s, doc);
+            desc.setTextContent(endpoint.getDescription());
+        }
+    }
+
     private AnnotatedPage buildPage(Document doc, List<String> errors) {
         AnnotatedPage page = new AnnotatedPage();
 
@@ -430,10 +454,74 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             annotation.getAttribute(ATTR_LANGUAGE)
                     ));
                     break;
+                case TAG_REFERENCE:
+                    page.getRefs().add(readReference(annotation));
+                    break;
                 default:
                     break;
             }
         }
+    }
+
+    private Reference readReference(Element el) {
+        Endpoint source = null;
+        Endpoint target = null;
+
+        NodeList children = el.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            if (children.item(i).getNodeType() != Node.ELEMENT_NODE) {
+                continue;
+            }
+
+            Element child = (Element) children.item(i);
+            switch (child.getTagName()) {
+                case TAG_SOURCE:
+                    source = readEndpoint(child);
+                    break;
+                case TAG_REFERENCE_TARGET:
+                    target = readEndpoint(child);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        return new Reference(source, target);
+    }
+
+    private Endpoint readEndpoint(Element el) {
+        Endpoint e = new Endpoint(
+                el.getAttribute(ATTR_URL),
+                Boolean.parseBoolean(el.getAttribute(ATTR_EXTERNAL)),
+                getAttribute(ATTR_LABEL, el)
+        );
+
+        NodeList desc = el.getElementsByTagName(TAG_DESCRIPTION);
+        if (desc.getLength() > 0) {
+            e.setDescription(desc.item(0).getTextContent());
+        }
+
+        TextSelector text = new TextSelector(
+                getAttribute(ATTR_TEXT, el),
+                getAttribute(ATTR_PREFIX, el),
+                getAttribute(ATTR_SUFFIX, el)
+        );
+        if (text.hasContent()) {
+            e.setTextSelector(text);
+        }
+
+        return e;
+    }
+
+    /**
+     * Useful for getting values of optional attributes.
+     *
+     * @param attr attribute name
+     * @param el element to look through
+     * @return the attribute value, if present, or NULL if attribute not present
+     */
+    private String getAttribute(String attr, Element el) {
+        return hasAttribute(attr, el) ? el.getAttribute(attr) : null;
     }
 
     private Location getLocation(String loc) {
@@ -451,11 +539,11 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
     private Marginalia buildMarginalia(Element annotation, String page) {
         Marginalia marg = new Marginalia();
 
-        marg.setDate(annotation.getAttribute(ATTR_DATE));
-        marg.setHand(annotation.getAttribute(ATTR_HAND));
-        marg.setOtherReader(annotation.getAttribute(ATTR_OTHER_READER));
-        marg.setTopic(annotation.getAttribute(ATTR_TOPIC));
-        marg.setReferencedText(annotation.getAttribute(ATTR_ANCHOR_TEXT));
+        marg.setDate(getAttribute(ATTR_DATE, annotation));
+        marg.setHand(getAttribute(ATTR_HAND, annotation));
+        marg.setOtherReader(getAttribute(ATTR_OTHER_READER, annotation));
+        marg.setTopic(getAttribute(ATTR_TOPIC, annotation));
+        marg.setReferencedText(getAttribute(ATTR_ANCHOR_TEXT, annotation));
 
         List<MarginaliaLanguage> langs = marg.getLanguages();
         NodeList children = annotation.getChildNodes();
@@ -506,13 +594,6 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             pos.setOrientation(Integer.parseInt(orientation));
         }
 
-        List<String> people = pos.getPeople();
-        List<String> books = pos.getBooks();
-        List<XRef> xRefs = pos.getxRefs();
-        List<String> locations = pos.getLocations();
-        List<Underline> underlines = pos.getEmphasis();
-        List<InternalReference> internalRefs = pos.getInternalRefs();
-
         NodeList list = position.getChildNodes();
         for (int i = 0; i < list.getLength(); i++) {
             Node node = list.item(i);
@@ -523,14 +604,14 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             Element el = (Element) node;
             switch (el.getTagName()) {
                 case TAG_PERSON:
-                    people.add(hasAttribute(ATTR_NAME, el) ?
+                    pos.getPeople().add(hasAttribute(ATTR_NAME, el) ?
                             el.getAttribute(ATTR_NAME) : el.getAttribute(ATTR_PERSON_NAME));
                     break;
                 case TAG_BOOK:
-                    books.add(el.getAttribute(ATTR_TITLE));
+                    pos.getBooks().add(el.getAttribute(ATTR_TITLE));
                     break;
                 case TAG_LOCATION:
-                    locations.add(hasAttribute(ATTR_NAME, el) ?
+                    pos.getLocations().add(hasAttribute(ATTR_NAME, el) ?
                             el.getAttribute(ATTR_NAME) : el.getAttribute(ATTR_LOCATION_NAME));
                     break;
                 case TAG_MARGINALIA_TEXT:
@@ -548,7 +629,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                         id.append('0');
                     }
 
-                    underlines.add(new Underline(id.toString(),
+                    pos.getEmphasis().add(new Underline(id.toString(),
                             hasAttribute(ATTR_TEXT, el) ?
                                     el.getAttribute(ATTR_TEXT) : el.getAttribute(ATTR_EMPHASIS_TEXT),
                             el.getAttribute(ATTR_METHOD),
@@ -562,7 +643,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                             hasAttribute(ATTR_BOOK_TITLE, el) ?
                                     el.getAttribute(ATTR_BOOK_TITLE) : el.getAttribute(ATTR_TITLE), el.getAttribute(ATTR_TEXT),
                                     el.getAttribute(ATTR_LANGUAGE));
-                    xRefs.add(xRef);
+                    pos.getxRefs().add(xRef);
                     break;
                 case TAG_INTERNAL_REF:
                     InternalReference ref = new InternalReference();
@@ -593,7 +674,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                         }
                     }
 
-                    internalRefs.add(ref);
+                    pos.getInternalRefs().add(ref);
                 default:
                     break;
             }
