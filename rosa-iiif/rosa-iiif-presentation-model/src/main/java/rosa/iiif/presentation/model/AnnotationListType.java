@@ -14,7 +14,8 @@ public enum AnnotationListType {
     NUMBERAL,
     SUBSTITUTION,
     ERRATA,
-    MARK;
+    MARK,
+    REFERENCE;
 
     /**
      * @param name name to parse

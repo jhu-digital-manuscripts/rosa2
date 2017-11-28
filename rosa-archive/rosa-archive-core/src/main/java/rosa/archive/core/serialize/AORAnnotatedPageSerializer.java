@@ -380,17 +380,19 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
 
             Element annotation = (Element) child;
             Location loc = getLocation(annotation.getAttribute(ATTR_PLACE));
+            boolean hasId = hasAttribute(ATTR_ID, annotation);
+            String annoId = annotation.getAttribute(ATTR_ID);
             switch (annotation.getTagName()) {
                 case TAG_MARGINALIA:
                     Marginalia marg = buildMarginalia(annotation, page.getPage());
-                    marg.setId(Annotations.annotationId(page.getPage(), TAG_MARGINALIA, page.getMarginalia().size()));
+                    marg.setId(hasId ? annoId : Annotations.annotationId(page.getPage(), TAG_MARGINALIA, page.getMarginalia().size()));
                     marg.setImageId(pageId);
 
                     page.getMarginalia().add(marg);
                     break;
                 case TAG_UNDERLINE:
                     page.getUnderlines().add(new Underline(
-                            Annotations.annotationId(page.getPage(), TAG_UNDERLINE, page.getUnderlines().size()),
+                            hasId ? annoId : Annotations.annotationId(page.getPage(), TAG_UNDERLINE, page.getUnderlines().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_TYPE),
@@ -401,7 +403,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_SYMBOL:
                     page.getSymbols().add(new Symbol(
-                            Annotations.annotationId(page.getPage(), TAG_SYMBOL, page.getSymbols().size()),
+                            hasId ? annoId : Annotations.annotationId(page.getPage(), TAG_SYMBOL, page.getSymbols().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_LANGUAGE),
@@ -411,7 +413,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_MARK:
                     page.getMarks().add(new Mark(
-                            Annotations.annotationId(page.getPage(), TAG_MARK, page.getMarks().size()),
+                            hasId ? annoId : Annotations.annotationId(page.getPage(), TAG_MARK, page.getMarks().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
@@ -422,7 +424,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_NUMERAL:
                     page.getNumerals().add(new Numeral(
-                            Annotations.annotationId(page.getPage(), TAG_NUMERAL, page.getNumerals().size()),
+                            hasId ? annoId : Annotations.annotationId(page.getPage(), TAG_NUMERAL, page.getNumerals().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getTextContent(),
                             null,
@@ -432,7 +434,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_SUBSTITUTION:
                     page.getSubs().add(new Substitution(
-                            Annotations.annotationId(page.getPage(), TAG_SUBSTITUTION, page.getSubs().size()),
+                            hasId ? annoId : Annotations.annotationId(page.getPage(), TAG_SUBSTITUTION, page.getSubs().size()),
                             page.getSignature(),
                             annotation.getAttribute(ATTR_TYPE),
                             annotation.getAttribute(ATTR_METHOD),
@@ -445,7 +447,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_ERRATA:
                     page.getErrata().add(new Errata(
-                            Annotations.annotationId(page.getPage(), TAG_ERRATA, page.getErrata().size()),
+                            hasId ? annoId : Annotations.annotationId(page.getPage(), TAG_ERRATA, page.getErrata().size()),
                             annotation.getAttribute(ATTR_LANGUAGE),
                             annotation.getAttribute(ATTR_COPYTEXT),
                             annotation.getAttribute(ATTR_AMENDEDTEXT),
@@ -454,7 +456,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_DRAWING:
                     page.getDrawings().add(new Drawing(
-                            Annotations.annotationId(page.getPage(), TAG_DRAWING, page.getDrawings().size()),
+                            hasId ? annoId : Annotations.annotationId(page.getPage(), TAG_DRAWING, page.getDrawings().size()),
                             annotation.getAttribute(ATTR_TEXT),
                             loc,
                             annotation.getAttribute(ATTR_NAME),
@@ -465,6 +467,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     break;
                 case TAG_REFERENCE:
                     Reference ref = readReference(annotation);
+                    ref.setId(hasId ? annoId : Annotations.annotationId(page.getPage(), TAG_REFERENCE, page.getRefs().size()));
                     ref.setImageId(pageId);
                     page.getRefs().add(ref);
                     break;

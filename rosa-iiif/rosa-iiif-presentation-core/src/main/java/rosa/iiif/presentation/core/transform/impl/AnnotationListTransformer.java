@@ -142,6 +142,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
                 break;
             case SUBSTITUTION:
                 aPage.getSubs().forEach(sub -> annotations.add(annotationTransformer.transform(collection, book, sub)));
+                break;
+            case REFERENCE:
+                aPage.getRefs().forEach(r -> annotations.add(annotationTransformer.transform(collection, book, r)));
 //            case MARK:
 //                for (rosa.archive.model.aor.Annotation ann : aPage.getMarks()) {
 //                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
