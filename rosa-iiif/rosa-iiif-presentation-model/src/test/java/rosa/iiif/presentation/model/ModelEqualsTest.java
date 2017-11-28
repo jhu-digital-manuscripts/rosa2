@@ -9,6 +9,7 @@ import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 import rosa.iiif.presentation.model.selector.SvgSelector;
+import rosa.iiif.presentation.model.selector.TextQuoteSelector;
 
 public class ModelEqualsTest {
     @Test
@@ -134,6 +135,12 @@ public class ModelEqualsTest {
     @Test
     public void testImage() {
         EqualsVerifier.forClass(Image.class).allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
+    }
+
+    @Test
+    public void testTextQuoteSelector() {
+        EqualsVerifier.forClass(TextQuoteSelector.class).allFieldsShouldBeUsed().usingGetClass()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
     }
 

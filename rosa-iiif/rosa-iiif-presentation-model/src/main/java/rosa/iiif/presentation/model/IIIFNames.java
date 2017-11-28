@@ -19,6 +19,7 @@ public interface IIIFNames {
     String SC_SEQUENCE = "sc:Sequence";
 
     String SC_PAINTING = "sc:painting";
+    String OA_LINKING = "oa:linking";
 
     String IIIF_IMAGE_API_SELECTOR = "iiif:ImageApiSelector";
 
@@ -31,6 +32,7 @@ public interface IIIFNames {
     String DC_IMAGE = "dctypes:Image";
     String DC_TEXT = "dctypes:Text";
 
+    String FORMAT_TEXT_HTML = "text/html";
     String CNT_CONTENT_AS_TEXT = "cnt:ContentAsText";
 
 }

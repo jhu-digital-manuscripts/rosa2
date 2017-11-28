@@ -20,10 +20,8 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
-import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import org.xml.sax.helpers.DefaultHandler;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
 import rosa.archive.core.util.Annotations;
@@ -40,6 +38,7 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.Reference;
 import rosa.archive.model.aor.Substitution;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
@@ -50,6 +49,7 @@ import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
+import rosa.iiif.presentation.model.selector.TextQuoteSelector;
 
 import java.io.UnsupportedEncodingException;
 import java.io.IOException;
@@ -98,6 +98,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             return null;
         } else if (anno instanceof Marginalia) {
             return adaptMarginalia(collection, book, (Marginalia) anno);
+        } else if (anno instanceof Reference) {
+            return adaptReference(collection.getId(), book.getId(), (Reference) anno);
         }
 
         String locationIcon = locationToHtml(anno.getLocation());
@@ -191,10 +193,17 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         anno.setMotivation(IIIFNames.SC_PAINTING);
         anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
                 marginaliaToDisplayHtml(marg), lang));
-
+// ---------------------------------------------------------------------------------------------------------------------
+        /*
+        Here we can start to run into issues with annotations that define their own IDs!
+        We clumsily locate the book image by parsing a generated ID.
+        If an annotation already defines its own ID, we likely can't parse it for a page
+        name.
+         */
         AnnotationTarget target = locationOnCanvas(
                 getPageImage(book.getImages(), getAnnotationPage(marg.getId())),
                 Location.FULL_PAGE);
+// ---------------------------------------------------------------------------------------------------------------------
         target.setUri(pres_uris.getCanvasURI(
                 collection.getId(),
                 book.getId(),
@@ -206,6 +215,41 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         anno.setLabel(marg.getId(), "en");
 
         return anno;
+    }
+
+    private Annotation adaptReference(String collectionId, String bookId, Reference r) {
+        Annotation a = new Annotation();
+
+        a.setId(pres_uris.getAnnotationURI(collectionId, bookId, r.getId()));
+        a.setMotivation(OA_LINKING);
+
+        // Annotation bodies : URL link and maybe long-form description
+        AnnotationSource source = new AnnotationSource(r.getSource().getUrl(), DC_TEXT, FORMAT_TEXT_HTML);
+        TextQuoteSelector source_selector =
+                new TextQuoteSelector(r.getSource().getText(), r.getSource().getTextPrefix(), r.getSource().getTextSuffix());
+        if (source_selector.hasContent()) {
+            source.setSelector(source_selector);
+        }
+        a.setDefaultSource(source);
+        if (r.getSource().getDescription() != null) {
+            a.addSourceChoice(new AnnotationSource(r.getSource().getUrl(), DC_TEXT, FORMAT_TEXT_HTML,
+                    r.getSource().getDescription(), "en"));
+        }
+
+        // Annotation targets : probably an annotation
+        AnnotationTarget target = new AnnotationTarget(r.getTarget().getUrl());
+        TextQuoteSelector target_selector =
+                new TextQuoteSelector(r.getTarget().getText(), r.getTarget().getTextPrefix(), r.getTarget().getTextSuffix());
+        if (target_selector.hasContent()) {
+            target.setSelector(target_selector);
+        }
+        a.setDefaultTarget(target);
+
+        if (r.getSource().getLabel() != null) {
+            a.setLabel(r.getSource().getLabel(), "en");
+        }
+
+        return a;
     }
 
     // Must make sure to escape text appropriately
