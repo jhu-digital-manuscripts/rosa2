@@ -25,6 +25,7 @@ import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 import rosa.iiif.presentation.model.selector.Selector;
 import rosa.iiif.presentation.model.selector.SvgSelector;
+import rosa.iiif.presentation.model.selector.TextQuoteSelector;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -460,23 +461,37 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         }
     }
 
-    protected void writeTarget(Annotation annotation, JSONWriter jWriter) throws JSONException {
+    private void writeTarget(Annotation annotation, JSONWriter jWriter) throws JSONException {
         AnnotationTarget target = annotation.getDefaultTarget();
 
+        jWriter.key("on");
         if (target.isSpecificResource()) {
             Selector selector = target.getSelector();
             if (selector instanceof FragmentSelector) {
-                jWriter.key("on").value(target.getUri() + "#xywh=" + selector.content());
+                jWriter.value(target.getUri() + "#xywh=" + selector.content());
             } else if (selector instanceof SvgSelector) {
                 writeSelector(target.getSelector(), jWriter);
+            } else if (selector instanceof TextQuoteSelector) {
+                jWriter.object();
+                jWriter.key("@id").value(target.getUri());
+                jWriter.key("selector").object();
+
+                writeIfNotNull("@context", selector.context(), jWriter);
+                writeIfNotNull("@type", selector.type(), jWriter);
+
+                TextQuoteSelector s = (TextQuoteSelector) selector;
+                jWriter.key("exact").value(s.getText());
+                writeIfNotNull("prefix", s.getPre(), jWriter);
+                writeIfNotNull("suffix", s.getPost(), jWriter);
+
+                jWriter.endObject().endObject();
             }
         } else {
-            jWriter.key("on").value(target.getUri());
+            jWriter.value(target.getUri());
         }
-
     }
 
-    protected void writeSelector(Selector selector, JSONWriter jWriter) throws JSONException {
+    private void writeSelector(Selector selector, JSONWriter jWriter) throws JSONException {
         jWriter.key("selector");
         jWriter.object();
         writeIfNotNull("@context", selector.context(), jWriter);
@@ -504,9 +519,9 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      * @param obj IIIF Presentation model object
      * @param jWriter JSON-LD writer
      * @param <T> type
-     * @throws JSONException
+     * @throws JSONException .
      */
-    protected <T extends PresentationBase> void writeBaseData(T obj, JSONWriter jWriter)
+    private <T extends PresentationBase> void writeBaseData(T obj, JSONWriter jWriter)
             throws JSONException {
         jWriter.key("@id").value(obj.getId());
         jWriter.key("@type").value(obj.getType());
@@ -678,14 +693,14 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         jWriter.endObject();
     }
 
-    protected void writeIfNotNull(String key, Object value, JSONWriter jWriter)
+    private void writeIfNotNull(String key, Object value, JSONWriter jWriter)
             throws JSONException {
         if (value != null && !value.toString().equals("")) {
             jWriter.key(key).value(value.toString());
         }
     }
 
-    protected void writeIfNotNull(String key, int value, JSONWriter jWriter) throws JSONException {
+    private void writeIfNotNull(String key, int value, JSONWriter jWriter) throws JSONException {
         if (value != -1) {
             jWriter.key(key).value(value);
         }
