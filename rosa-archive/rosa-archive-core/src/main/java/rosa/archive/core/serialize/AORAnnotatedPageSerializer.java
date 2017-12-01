@@ -307,8 +307,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
 
     private void addReference(Reference ref, Element parent, Document doc) {
         Element e = newElement(TAG_REFERENCE, parent, doc);
-        addEndpoint(TAG_SOURCE, ref.getSource(), e, doc);
-        addEndpoint(TAG_REFERENCE_TARGET, ref.getTarget(), e, doc);
+        ref.getSources().forEach(s -> addEndpoint(TAG_SOURCE, s, e, doc));
+        ref.getTargets().forEach(t -> addEndpoint(TAG_REFERENCE_TARGET, t, e, doc));
     }
 
     private void addEndpoint(String tag, Endpoint endpoint, Element parent, Document doc) {
@@ -478,8 +478,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
     }
 
     private Reference readReference(Element el) {
-        Endpoint source = null;
-        Endpoint target = null;
+        Reference ref = new Reference();
 
         NodeList children = el.getChildNodes();
         for (int i = 0; i < children.getLength(); i++) {
@@ -490,17 +489,17 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             Element child = (Element) children.item(i);
             switch (child.getTagName()) {
                 case TAG_SOURCE:
-                    source = readEndpoint(child);
+                    ref.getSources().add(readEndpoint(child));
                     break;
                 case TAG_REFERENCE_TARGET:
-                    target = readEndpoint(child);
+                    ref.getTargets().add(readEndpoint(child));
                     break;
                 default:
                     break;
             }
         }
 
-        return new Reference(source, target);
+        return ref;
     }
 
     private Endpoint readEndpoint(Element el) {

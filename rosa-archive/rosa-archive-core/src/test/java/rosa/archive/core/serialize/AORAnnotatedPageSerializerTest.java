@@ -270,7 +270,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
 
         Endpoint source = new Endpoint("source_url", false, "The moo cometh from thee");
         source.setDescription("Descriptive moo");
-        Endpoint target = new Endpoint("target_url", false, "We moo is for you");
+        Endpoint target = new Endpoint("target_url", false, "We moo for you");
         Reference r = new Reference(source, target);
         r.setId("1_reference_0");
         r.setImageId("1");

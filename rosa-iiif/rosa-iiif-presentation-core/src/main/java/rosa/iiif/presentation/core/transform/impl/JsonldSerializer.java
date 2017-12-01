@@ -412,20 +412,18 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         } else {
             jWriter.key("@type").value(IIIFNames.OA_CHOICE);
 
-            boolean isFirst = true;
-            for (AnnotationSource source : annotation.getSources()) {
-                if (isFirst) {
-                    jWriter.key("default");
-                    isFirst = false;
-                } else {
-                    jWriter.key("item");
-                }
-
+            jWriter.key("default").object();
+            writeSource(annotation.getDefaultSource(), annotation.getLabel("en"), annotation.getWidth(),
+                    annotation.getHeight(), jWriter);
+            jWriter.endObject();
+            jWriter.key("items").array();
+            for (int i = 1; i < annotation.getSources().size(); i++) {
                 jWriter.object();
-                writeSource(source, annotation.getLabel("en"), annotation.getWidth(),
-                        annotation.getHeight(), jWriter);
+                writeSource(annotation.getSources().get(i), annotation.getLabel("en"),
+                        annotation.getWidth(), annotation.getHeight(), jWriter);
                 jWriter.endObject();
             }
+            jWriter.endArray();
         }
 
         jWriter.endObject();

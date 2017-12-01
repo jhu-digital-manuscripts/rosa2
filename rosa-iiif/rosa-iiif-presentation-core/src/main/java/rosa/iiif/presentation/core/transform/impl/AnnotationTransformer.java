@@ -227,30 +227,35 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         a.setMotivation(OA_LINKING);
 
         // Annotation bodies : URL link and maybe long-form description
-        AnnotationSource source = new AnnotationSource(r.getSource().getUrl(), DC_TEXT, FORMAT_TEXT_HTML);
-        TextQuoteSelector source_selector =
-                new TextQuoteSelector(r.getSource().getText(), r.getSource().getTextPrefix(), r.getSource().getTextSuffix());
-        if (source_selector.hasContent()) {
-            source.setSelector(source_selector);
-        }
-        a.setDefaultSource(source);
-        if (r.getSource().getDescription() != null) {
-            a.addSourceChoice(new AnnotationSource(r.getSource().getUrl(), DC_TEXT, FORMAT_TEXT_HTML,
-                    r.getSource().getDescription(), "en"));
-        }
+        r.getSources().forEach(s -> {
+            AnnotationSource source = new AnnotationSource(s.getUrl(), DC_TEXT, FORMAT_TEXT_HTML);
+            TextQuoteSelector source_selector =
+                    new TextQuoteSelector(s.getText(), s.getTextPrefix(), s.getTextSuffix());
+            if (source_selector.hasContent()) {
+                source.setSelector(source_selector);
+            }
+            if (s.getDescription() != null) {
+                source.setEmbeddedText(s.getDescription());
+                source.setEmbeddedLanguage("en");
+            }
+            a.addSourceChoice(source);
+        });
 
         // Annotation targets : probably an annotation
-        AnnotationTarget target = new AnnotationTarget(r.getTarget().getUrl());
-        TextQuoteSelector target_selector =
-                new TextQuoteSelector(r.getTarget().getText(), r.getTarget().getTextPrefix(), r.getTarget().getTextSuffix());
-        if (target_selector.hasContent()) {
-            target.setSelector(target_selector);
-        }
-        a.setDefaultTarget(target);
+        r.getTargets().forEach(t -> {
+            AnnotationTarget target = new AnnotationTarget(t.getUrl());
+            TextQuoteSelector target_selector =
+                    new TextQuoteSelector(t.getText(), t.getTextPrefix(), t.getTextSuffix());
+            if (target_selector.hasContent()) {
+                target.setSelector(target_selector);
+            }
+            a.setDefaultTarget(target);
 
-        if (r.getSource().getLabel() != null) {
-            a.setLabel(r.getSource().getLabel(), "en");
-        }
+            if (t.getLabel() != null) {
+                a.setLabel(t.getLabel(), "en");
+            }
+        });
+
 
         return a;
     }
