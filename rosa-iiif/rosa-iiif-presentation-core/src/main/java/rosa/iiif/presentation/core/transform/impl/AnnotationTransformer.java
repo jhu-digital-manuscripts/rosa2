@@ -238,6 +238,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 source.setEmbeddedText(s.getDescription());
                 source.setEmbeddedLanguage("en");
             }
+            source.setLabel(s.getLabel());
             a.addSourceChoice(source);
         });
 

@@ -104,7 +104,7 @@ public class ModelEqualsTest {
     
     @Test
     public void testAnnotationSource() {
-        EqualsVerifier.forClass(AnnotationSource.class).allFieldsShouldBeUsed()
+        EqualsVerifier.forClass(AnnotationSource.class).usingGetClass().allFieldsShouldBeUsed()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
     }
 

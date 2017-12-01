@@ -407,20 +407,17 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
     private void writeResource(Annotation annotation, JSONWriter jWriter) throws JSONException {
         jWriter.object();
         if (annotation.getSources().size() == 1) {
-            writeSource(annotation.getDefaultSource(), annotation.getLabel("en"),
-                    annotation.getWidth(), annotation.getHeight(), jWriter);
+            writeSource(annotation.getDefaultSource(), annotation.getWidth(), annotation.getHeight(), jWriter);
         } else {
             jWriter.key("@type").value(IIIFNames.OA_CHOICE);
 
             jWriter.key("default").object();
-            writeSource(annotation.getDefaultSource(), annotation.getLabel("en"), annotation.getWidth(),
-                    annotation.getHeight(), jWriter);
+            writeSource(annotation.getDefaultSource(), annotation.getWidth(), annotation.getHeight(), jWriter);
             jWriter.endObject();
             jWriter.key("items").array();
             for (int i = 1; i < annotation.getSources().size(); i++) {
                 jWriter.object();
-                writeSource(annotation.getSources().get(i), annotation.getLabel("en"),
-                        annotation.getWidth(), annotation.getHeight(), jWriter);
+                writeSource(annotation.getSources().get(i), annotation.getWidth(), annotation.getHeight(), jWriter);
                 jWriter.endObject();
             }
             jWriter.endArray();
@@ -433,14 +430,12 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      * Write an annotation source as JSON-LD.
      *
      * @param source content source for an annotation
-     * @param label label to give the source
      * @param width width, if source is an image
      * @param height height, if source is an image
      * @param jWriter JSON-LD writer
      * @throws JSONException
      */
-    private void writeSource(AnnotationSource source, String label, int width,
-                             int height, JSONWriter jWriter) throws JSONException {
+    private void writeSource(AnnotationSource source, int width, int height, JSONWriter jWriter) throws JSONException {
         jWriter.key("@id").value(source.getUri());
         if (source.isEmbeddedText()) {
             jWriter.key("@type").value(IIIFNames.CNT_CONTENT_AS_TEXT);
@@ -452,7 +447,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
             writeIfNotNull("height", height, jWriter);
             writeService(source.getService(), true, jWriter);
         }
-        writeIfNotNull("label", label, jWriter);
+        writeIfNotNull("label", source.getLabel(), jWriter);
 
         if (source.isSpecificResource()) {
             writeSelector(source.getSelector(), jWriter);
