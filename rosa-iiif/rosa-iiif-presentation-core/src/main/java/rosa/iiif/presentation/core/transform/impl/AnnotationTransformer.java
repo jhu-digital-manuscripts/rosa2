@@ -101,7 +101,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         } else if (anno instanceof Marginalia) {
             return adaptMarginalia(collection, book, (Marginalia) anno);
         } else if (anno instanceof Reference) {
-            return adaptReference(collection.getId(), book.getId(), (Reference) anno);
+            return adaptReference(collection.getId(), book, (Reference) anno);
         }
 
         String locationIcon = locationToHtml(anno.getLocation());
@@ -220,10 +220,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
     }
 
-    private Annotation adaptReference(String collectionId, String bookId, Reference r) {
+    private Annotation adaptReference(String collectionId, Book book, Reference r) {
         Annotation a = new Annotation();
 
-        a.setId(pres_uris.getAnnotationURI(collectionId, bookId, r.getId()));
+        a.setId(pres_uris.getAnnotationURI(collectionId, book.getId(), r.getId()));
         a.setMotivation(OA_LINKING);
 
         // Annotation bodies : URL link and maybe long-form description
@@ -245,6 +245,23 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         // Annotation targets : probably an annotation
         r.getTargets().forEach(t -> {
             AnnotationTarget target = new AnnotationTarget(t.getUrl());
+            if (target.getUri() == null) {
+                // Possible for a reference to not point to anything, in which case, assume it points to the current canvas
+                // Get the image this annotation is on
+                BookImage relatedImage = book.getImages().getImages().stream()
+                        .filter(im -> im.getId().equals(r.getImageId()) || im.getName().equals(r.getImageId()))
+                        .findFirst()
+                        .orElse(null);
+
+                if (relatedImage != null) {
+                    target = locationOnCanvas(relatedImage, Location.FULL_PAGE);
+                    target.setUri(pres_uris.getCanvasURI(
+                            collectionId,
+                            book.getId(),
+                            relatedImage.getName()
+                    ));
+                }
+            }
             TextQuoteSelector target_selector =
                     new TextQuoteSelector(t.getText(), t.getTextPrefix(), t.getTextSuffix());
             if (target_selector.hasContent()) {
@@ -256,7 +273,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 a.setLabel(t.getLabel(), "en");
             }
         });
-
 
         return a;
     }
