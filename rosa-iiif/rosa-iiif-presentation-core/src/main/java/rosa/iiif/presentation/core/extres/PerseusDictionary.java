@@ -24,7 +24,7 @@ import org.xml.sax.helpers.DefaultHandler;
 // URL: http://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/A.abaris_1
 
 public class PerseusDictionary extends SimpleExternalResourceDb {
-    private static final String BOOK_URL = "http://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/";
+    private static final String BOOK_URL = "https://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/";
     private static final String BOOK_RES_PATH = "/viaf88890045.003.perseus-eng1.xml";
 
     private final String book_url;

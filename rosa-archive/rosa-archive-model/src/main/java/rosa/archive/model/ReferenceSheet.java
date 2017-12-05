@@ -3,6 +3,7 @@ package rosa.archive.model;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -53,7 +54,7 @@ public class ReferenceSheet implements HasId, Serializable {
 
     public List<String> getAlternates(String key) {
         if (!hasAlternates(key)) {
-            return null;
+            return Collections.emptyList();
         }
 
         List<String> result = new ArrayList<>();

@@ -18,7 +18,7 @@ public class PerseusDictionaryTest {
 
     @Test
     public void testLookup() throws IOException {
-        assertEquals(URI.create("http://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/A.apollo_1"),
+        assertEquals(URI.create("https://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/A.apollo_1"),
                 pd.lookup("Apollo"));
     }
 
@@ -28,7 +28,7 @@ public class PerseusDictionaryTest {
 
         String html = new HtmlDecorator().decorate(text, pd);
 
-        assertTrue(html.contains("http://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/A.apollo_1"));
+        assertTrue(html.contains("https://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/A.apollo_1"));
     }
 
     @Test
@@ -44,6 +44,6 @@ public class PerseusDictionaryTest {
         String text = "Rerum Romanarum mej primi historici, Aurelius Victor. ";
         
         String html = new HtmlDecorator().decorate(text, pd);
-        assertTrue(html.contains("http://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/A.aurelius_victor_1"));
+        assertTrue(html.contains("https://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/A.aurelius_victor_1"));
     }
 }

@@ -160,7 +160,7 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
         // First marginalia talks about Venus. This should be decorated with an appropriate CTS URL
         Annotation result = transformer.transform(col, book, ap.getMarginalia().get(0));
         assertTrue(result.getDefaultSource().getEmbeddedText()
-                .contains("http://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/U.venus_1"));
+                .contains("https://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/U.venus_1"));
         assertFalse("Found probable escaped HTML", result.getDefaultSource().getEmbeddedText().contains("&lt;"));
     }
 

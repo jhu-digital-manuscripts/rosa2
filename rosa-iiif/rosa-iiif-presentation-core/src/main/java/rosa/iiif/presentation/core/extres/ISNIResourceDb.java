@@ -32,17 +32,17 @@ public class ISNIResourceDb implements ExternalResourceDb {
         ReferenceSheet people = collection.getPeopleRef();
         if (people != null) {
             people.getKeys().parallelStream().forEach(name ->
-                    people.getAlternates(name).stream()
-                            .map(n -> n.replaceAll("\\s+", ""))  // Remove spaces
-                            .filter(this::isPossibleISNI)
-                            .findAny()
-                            .ifPresent(n -> {
-                                try {
-                                    db.putIfAbsent(normalize(name), new URI(ISNI_URL + n));
-                                } catch (URISyntaxException e) {
-                                    logger.log(Level.WARNING, "Failed to generate ISNI URI for person (" + name + ")", e);
-                                }
-                            })
+                people.getAlternates(name).stream()
+                        .map(n -> n.replaceAll("\\s+", ""))  // Remove spaces
+                        .filter(this::isPossibleISNI)
+                        .findAny()
+                        .ifPresent(n -> {
+                            try {
+                                db.putIfAbsent(normalize(name), new URI(ISNI_URL + n));
+                            } catch (URISyntaxException e) {
+                                logger.log(Level.WARNING, "Failed to generate ISNI URI for person (" + name + ")", e);
+                            }
+                        })
                     );
         }
     }
