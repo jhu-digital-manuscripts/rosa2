@@ -123,7 +123,21 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                 new JHSearchCategory[]{JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME, JHSearchCategory.LOCATION,
                         JHSearchCategory.NUM_ILLUS, JHSearchCategory.NUM_PAGES, JHSearchCategory.ORIGIN,
                         JHSearchCategory.TYPE, JHSearchCategory.TRANSCRIPTION});
-        }
+
+        searchfields.put("ptolemycollection",
+                new JHSearchField[] {
+                        JHSearchField.DESCRIPTION,
+                        JHSearchField.TITLE,
+                        JHSearchField.PEOPLE,
+                        JHSearchField.PLACE,
+                        JHSearchField.REPO,
+                        JHSearchField.TRANSCRIPTION
+                });
+        searchcategories.put("ptolemycollection",
+                new JHSearchCategory[] {
+                        JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME
+                });
+    }
     
     /**
      * @param path
