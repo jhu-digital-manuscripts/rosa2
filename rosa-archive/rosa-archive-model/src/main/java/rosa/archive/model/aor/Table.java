@@ -62,6 +62,7 @@ public class Table extends Annotation implements Serializable {
 
     public Table(String id, Location location) {
         super(id, null, null, location);
+        this.texts = new ArrayList<>();
         this.rows = new ArrayList<>();
         this.cells = new ArrayList<>();
         this.people = new ArrayList<>();
