@@ -39,6 +39,7 @@ public interface AORAnnotatedPageConstants {
     String TAG_MARGINAL_ANNOTATION = "marginal_annotation";
     String TAG_RELATION = "relation";
     String TAG_NOTE = "note";
+    String TAG_MARGINALIA_REF = "marginalia_ref";
 
     String ATTR_FILENAME = "filename";
     String ATTR_PAGINATION = "pagination";

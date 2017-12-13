@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+  <xs:element name="person">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.person"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.person">
+    <xs:attribute name="name" use="required"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.book"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.book">
+    <xs:attribute name="title" use="required"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="location">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.location"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.location">
+    <xs:attribute name="name" use="required"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="symbol_in_text"> <!-- I.e. all the symbols that do not stand on their own, but appear with/as part of the text of a reader's intervention-->
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.symbol_in_text"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.symbol_in_text">
+    <xs:attribute name="name" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Asterisk"/>
+          <xs:enumeration value="Bisected_circle"/>
+          <xs:enumeration value="Crown"/>
+          <xs:enumeration value="JC"/>
+          <xs:enumeration value="HT"/>
+          <xs:enumeration value="Hieroglyphic_Monad"/>
+          <xs:enumeration value="Jupiter"/>
+          <xs:enumeration value="LL"/>
+          <xs:enumeration value="Mars"/>
+          <xs:enumeration value="Mercury"/>
+          <xs:enumeration value="Moon"/>
+          <xs:enumeration value="Opposite_planets"/>
+          <xs:enumeration value="Conjunction"/>
+          <xs:enumeration value="Salt"/>
+          <xs:enumeration value="Saturn"/>
+          <xs:enumeration value="Square"/>
+          <xs:enumeration value="Trine"/>
+          <xs:enumeration value="SS"/>
+          <xs:enumeration value="Sulfur"/>
+          <xs:enumeration value="Sun"/>
+          <xs:enumeration value="Venus"/>
+          <xs:enumeration value="Aries"/>
+          <xs:enumeration value="Cancer"/>
+          <xs:enumeration value="Libra"/>
+          <xs:enumeration value="Capricorn"/>
+          <xs:enumeration value="Taurus"/>
+          <xs:enumeration value="Leo"/>
+          <xs:enumeration value="Scorpio"/>
+          <xs:enumeration value="Aquarius"/>
+          <xs:enumeration value="Gemini"/>
+          <xs:enumeration value="Virgo"/>
+          <xs:enumeration value="Sagittarius"/>
+          <xs:enumeration value="Pices"/>
+          <xs:enumeration value="North_Node"/>
+          <xs:enumeration value="South_Node"/>
+          <xs:enumeration value="Sextile"/>
+          <xs:enumeration value="Phi"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  
+  <xs:element name="text"> <!--used for drawing & table tags-->
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.text"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.text">
+    <xs:attribute ref="hand" use="required"/>
+    <xs:attribute ref="language" use="required"/>
+    <xs:attribute name="anchor_text"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="translation" type="xs:string"/>
+  
+  <xs:attribute name="language">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="EN"/>
+        <xs:enumeration value="EL"/>
+        <xs:enumeration value="FR"/>
+        <xs:enumeration value="IT"/>
+        <xs:enumeration value="LA"/>
+        <xs:enumeration value="ES"/>
+        <xs:enumeration value="DE"/>
+        <xs:enumeration value="CY"/>
+        <xs:enumeration value="IW"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  
+  <xs:attribute name="place">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="head"/>
+        <xs:enumeration value="tail"/>
+        <xs:enumeration value="left_margin"/>
+        <xs:enumeration value="right_margin"/>
+        <xs:enumeration value="intext"/>
+        <xs:enumeration value="full_page"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  
+  <xs:attribute name="book_orientation">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="0"/>
+        <xs:enumeration value="90"/>
+        <xs:enumeration value="180"/>
+        <xs:enumeration value="270"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  
+  <xs:attribute name="hand">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="English_secretary"/>
+        <xs:enumeration value="Italian"/>
+        <xs:enumeration value="typescript"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  
+  <xs:attribute name="method">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="chalk"/>
+        <xs:enumeration value="pen"/>
+        <xs:enumeration value="pencil"/>
+        <xs:enumeration value="typewriter"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  
+  <xs:attribute name="colour">
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="red"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  
+  <xs:element name="internal_ref"> <!--Used to establish, ultimately, working links in the viewer-->
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="target"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.internal_ref"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.internal_ref">
+    <xs:attribute name="text"/>
+    <xs:attribute name="anchor_prefix"/>
+    <xs:attribute name="anchor_suffix"/>
+    <xs:attribute name="anchor_text"/>
+  </xs:attributeGroup>
+  <xs:element name="target">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.target"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.target">
+    <xs:attribute name="ref" use="required"/>
+    <xs:attribute name="text" use="required"/>
+    <xs:attribute name="prefix"/>
+    <xs:attribute name="suffix"/>
+  </xs:attributeGroup>
+  
+ <!--- end of the global elements and attributes-->    
+  
+  <xs:element name="transcription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="page"/>
+        <xs:element ref="annotation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="page">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.page"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.page">
+    <xs:attribute name="filename" use="required"/>
+    <xs:attribute name="pagination"/>
+    <xs:attribute name="signature"/>
+    <xs:attribute name="reader" use="required"/>
+    <xs:attribute name="origin">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="added"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="status">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="floating"/>
+          <xs:enumeration value="fixed"/>
+          <xs:enumeration value="separated"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="host_page"/>
+    <xs:attribute name="related_page"/>
+  </xs:attributeGroup>
+  <xs:element name="annotation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="marginalia"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="underline"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="symbol"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="mark"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="numeral"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="errata"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="drawing"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="calculation"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="graph"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="table"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="physical_link"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="marginalia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="language"/>
+        <xs:element minOccurs="0" ref="translation"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.marginalia"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.marginalia">
+    <xs:attribute ref="hand" use="required"/>
+    <xs:attribute ref="method"/>
+    <xs:attribute ref="colour"/>
+    <xs:attribute name="id"/>
+    <xs:attribute name="marginalia_continues_to"/>
+    <xs:attribute name="marginalia_continues_from"/>
+    <xs:attribute name="marginalia_to_transcription"/>
+    <xs:attribute name="marginalia_from_transcription"/>
+    <xs:attribute name="book_id"/>
+    <xs:attribute name="internal_ref"/>
+    <xs:attribute name="date"/>
+    <xs:attribute name="other_reader"/>
+    <xs:attribute name="topic">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Law"/>
+          <xs:enumeration value="Astronomy"/>
+          <xs:enumeration value="Warfare"/>
+          <xs:enumeration value="Rhetoric"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="anchor_text"/>
+  </xs:attributeGroup>
+  <xs:element name="language">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="position"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.language"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.language">
+    <xs:attribute name="ident" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="EN"/>
+          <xs:enumeration value="EL"/>
+          <xs:enumeration value="FR"/>
+          <xs:enumeration value="IT"/>
+          <xs:enumeration value="LA"/>
+          <xs:enumeration value="ES"/>
+          <xs:enumeration value="DE"/>
+          <xs:enumeration value="CY"/>
+          <xs:enumeration value="IW"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="position">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="marginalia_text"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="symbol_in_text"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="person"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="book"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="location"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="X-ref"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="emphasis"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="internal_ref"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.position"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.position">
+    <xs:attribute ref="place" use="required"/>
+    <xs:attribute ref="book_orientation" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="marginalia_text">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="marginalia_ref"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="marginalia_ref">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.marginalia_ref"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.marginalia_ref">
+    <xs:attribute name="id" use="required"/>
+    <xs:attribute name="filename" use="required"/>
+    <xs:attribute name="book_id" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="X-ref">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.X-ref"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.X-ref">
+    <xs:attribute name="person" use="required"/>
+    <xs:attribute name="book_title" use="required"/>
+    <xs:attribute ref="language"/>
+    <xs:attribute name="text"/>
+  </xs:attributeGroup>
+  <xs:element name="emphasis">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.emphasis"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.emphasis">
+    <xs:attribute ref="method" use="required"/>
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="straight"/>
+          <xs:enumeration value="curved"/>
+          <xs:enumeration value="dotted"/>
+          <xs:enumeration value="double"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="text"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="underline">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.underline"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.underline">
+    <xs:attribute ref="method" use="required"/>
+    <xs:attribute ref="colour"/>
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="straight"/>
+          <xs:enumeration value="curved"/>
+          <xs:enumeration value="dotted"/>
+          <xs:enumeration value="double"/>
+          <xs:enumeration value="grid"/>
+          <xs:enumeration value="triple"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute ref="language" use="required"/>
+    <xs:attribute name="text" use="required"/>
+    <xs:attribute name="id"/>
+    <xs:attribute name="internal_ref"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="symbol">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.symbol_in_text"/>
+      <xs:attribute ref="place" use="required"/>
+      <xs:attribute ref="language"/>
+      <xs:attribute name="text"/>
+      <xs:attribute name="id"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="mark">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.mark"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.mark">
+    <xs:attribute name="name" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="ampersand"/>
+          <xs:enumeration value="apostrophe"/>
+          <xs:enumeration value="box"/>
+          <xs:enumeration value="bracket"/>
+          <xs:enumeration value="circumflex"/>
+          <xs:enumeration value="colon"/>
+          <xs:enumeration value="comma"/>
+          <xs:enumeration value="dash"/>
+          <xs:enumeration value="diacritic"/>
+          <xs:enumeration value="dot"/>
+          <xs:enumeration value="double_vertical_bar"/>
+          <xs:enumeration value="equal_sign"/>
+          <xs:enumeration value="est_mark"/>
+          <xs:enumeration value="hash"/>
+          <xs:enumeration value="horizontal_bar"/>
+          <xs:enumeration value="page_break"/>
+          <xs:enumeration value="pen_trial"/>
+          <xs:enumeration value="plus_sign"/>
+          <xs:enumeration value="quotation_mark"/>
+          <xs:enumeration value="quattuorpunctus"/>
+          <xs:enumeration value="scribble"/>
+          <xs:enumeration value="section_sign"/>
+          <xs:enumeration value="semicolon"/>
+          <xs:enumeration value="slash"/>
+          <xs:enumeration value="straight_quotation_mark"/>
+          <xs:enumeration value="small_circle"/>
+          <xs:enumeration value="tick"/>
+          <xs:enumeration value="tilde"/>
+          <xs:enumeration value="triple_dash"/>
+          <xs:enumeration value="tripunctus"/>
+          <xs:enumeration value="vertical_bar"/>
+          <xs:enumeration value="X_sign"/>
+          <xs:enumeration value="dagger"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute ref="method" use="required"/>
+    <xs:attribute ref="colour"/>
+    <xs:attribute ref="place" use="required"/>
+    <xs:attribute ref="language"/>
+    <xs:attribute name="text"/>
+    <xs:attribute name="id"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="numeral">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.numeral"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.numeral">
+    <xs:attribute ref="place" use="required"/>
+    <xs:attribute ref="language"/>
+    <xs:attribute name="text"/>
+    <xs:attribute name="id"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="errata">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.errata"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.errata">
+    <xs:attribute ref="language" use="required"/>
+    <xs:attribute name="copytext" use="required"/>
+    <xs:attribute name="amendedtext" use="required"/>
+    <xs:attribute name="id"/>
+    <xs:attribute name="internal_ref"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="drawing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="text"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="person"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="book"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="location"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="symbol_in_text"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="internal_ref"/>
+        <xs:element minOccurs="0" ref="translation"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.drawing"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.drawing">
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="arrow"/>
+          <xs:enumeration value="face"/>
+          <xs:enumeration value="manicule"/>
+          <xs:enumeration value="florilegium"/>
+          <xs:enumeration value="crown"/>
+          <xs:enumeration value="coat_of_arms"/>
+          <xs:enumeration value="scientific_instrument"/>
+          <xs:enumeration value="animal"/>
+          <xs:enumeration value="chain"/>
+          <xs:enumeration value="canon"/>
+          <xs:enumeration value="divining rod"/>
+          <xs:enumeration value="map"/>
+          <xs:enumeration value="church"/>
+          <xs:enumeration value="star"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute ref="book_orientation" use="required"/>
+    <xs:attribute ref="place" use="required"/>
+    <xs:attribute ref="method" use="required"/>
+    <xs:attribute ref="colour"/>
+    <xs:attribute name="id"/>
+    <xs:attribute name="anchor_text"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="calculation">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="calculation_anchor"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.calculation"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.calculation">
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="arithmetic"/>
+          <xs:enumeration value="measurement"/>
+          <xs:enumeration value="logic"/>
+          <xs:enumeration value="algebra"/>
+          <xs:enumeration value="geometry"/>
+          <xs:enumeration value="calculus"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute ref="book_orientation" use="required"/>
+    <xs:attribute ref="place" use="required"/>
+    <xs:attribute ref="method" use="required"/>
+    <xs:attribute name="id"/>
+    <xs:attribute name="internal_ref"/>
+  </xs:attributeGroup>
+  <xs:element name="calculation_anchor">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.calculation_anchor"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.calculation_anchor">
+    <xs:attribute name="data"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="graph">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="node"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="link"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="graph_text"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="internal_ref"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.graph"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.graph">
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="genealogical_tree"/>
+          <xs:enumeration value="ramus_tree"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute ref="book_orientation" use="required"/>
+    <xs:attribute ref="place" use="required"/>
+    <xs:attribute ref="method" use="required"/>
+    <xs:attribute name="id"/>
+    <xs:attribute name="internal_ref"/>
+    <xs:attribute name="graph_continues_to"/>
+    <xs:attribute name="graph_continues_from"/>
+    <xs:attribute name="graph_to_transcription"/>
+    <xs:attribute name="graph_from_transcription"/>
+  </xs:attributeGroup>
+  <xs:element name="node">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.node"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.node">
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+    <xs:attribute name="person"/>
+    <xs:attribute name="anchor_text"/>
+  </xs:attributeGroup>
+  <xs:element name="link">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.link"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.link">
+    <xs:attribute name="to" use="required" type="xs:IDREFS"/>
+    <xs:attribute name="from" use="required" type="xs:IDREFS"/>
+    <xs:attribute name="relationship"> <!--JG: Only required in the case of a genealogical tree!-->
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="has_child"/>
+          <xs:enumeration value="has_spouse"/>
+          <xs:enumeration value="has_sibling"/>
+          <xs:enumeration value="transgenerational"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="graph_text">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="note"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="person"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="book"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="location"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="symbol_in_text"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="translation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="note">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.note"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.note">
+    <xs:attribute name="id" type="xs:ID"/>
+    <xs:attribute ref="hand" use="required"/>
+    <xs:attribute ref="language" use="required"/>
+    <xs:attribute name="internal_link" type="xs:IDREFS"/> <!--Internal reference (within annotation)-->
+    <xs:attribute name="anchor_text"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="table">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="tr"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="text"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="person"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="book"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="location"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="symbol_in_text"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="internal_ref"/>
+        <xs:element minOccurs="0" ref="translation"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.table"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.table">
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="astrological_chart"/>
+          <xs:enumeration value="standard_table"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute ref="place" use="required"/>
+    <xs:attribute name="id"/>
+    <xs:attribute name="internal_ref"/>
+    <xs:attribute name="aggregated_information"/>
+  </xs:attributeGroup>
+  <xs:element name="tr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="th"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="td"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="th">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.th"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.th">
+    <xs:attribute name="label"/>
+    <xs:attribute name="anchor_text"/>
+    <xs:attribute name="anchor_data"/>
+  </xs:attributeGroup>
+  <xs:element name="td">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.td"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.td">
+    <xs:attribute name="anchor_text"/>
+    <xs:attribute name="anchor_data"/>
+  </xs:attributeGroup>
+  
+  <xs:element name="physical_link">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="marginal_annotation"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="relation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="marginal_annotation">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.marginal_annotation"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.marginal_annotation">
+    <xs:attribute name="idref" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="relation">
+    <xs:complexType>
+      <xs:attributeGroup ref="attlist.relation"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.relation">
+    <xs:attribute name="from" use="required"/>
+    <xs:attribute name="to" use="required"/>
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="directed"/>
+          <xs:enumeration value="undirected"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+</xs:schema>

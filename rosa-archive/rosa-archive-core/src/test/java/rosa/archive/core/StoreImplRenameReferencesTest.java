@@ -146,7 +146,6 @@ public class StoreImplRenameReferencesTest {
                     for (Position pos : lang.getPositions()) {
                         for (InternalReference ref : pos.getInternalRefs()) {
                             for (ReferenceTarget target : ref.getTargets()) {
-//                                printTarget(target);
                                 assertNotNull("Target book id is NULL.", target.getBookId());
                                 assertFalse("Target book id is empty.", target.getBookId().isEmpty());
                                 assertNotNull("Target filename is NULL.", target.getFilename());
