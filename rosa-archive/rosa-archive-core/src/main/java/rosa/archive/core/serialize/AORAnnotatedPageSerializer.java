@@ -517,91 +517,119 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             switch (annotation.getTagName()) {
                 case TAG_MARGINALIA:
                     Marginalia marg = buildMarginalia(annotation, page.getPage());
-                    marg.setId(hasId ? id : Annotations.annotationId(page.getPage(), TAG_MARGINALIA, page.getMarginalia().size()));
+                    if (hasId) {
+                        marg.setId(id);
+                    } else {
+                        marg.setId(Annotations.annotationId(page.getPage(), TAG_MARGINALIA, page.getMarginalia().size()), true);
+                    }
 
                     page.getMarginalia().add(marg);
                     break;
                 case TAG_UNDERLINE:
-                    page.getUnderlines().add(new Underline(
-                            hasId ? id : Annotations.annotationId(page.getPage(), TAG_UNDERLINE, page.getUnderlines().size()),
+                    Underline u = new Underline(
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_TYPE),
                             annotation.getAttribute(ATTR_LANGUAGE),
                             Location.INTEXT
-                    ));
+                    );
+                    if (!hasId) {
+                        u.setId(Annotations.annotationId(page.getPage(), TAG_UNDERLINE, page.getUnderlines().size()), true);
+                    }
+                    page.getUnderlines().add(u);
                     break;
                 case TAG_SYMBOL:
-                    page.getSymbols().add(new Symbol(
-                            hasId ? id : Annotations.annotationId(page.getPage(), TAG_SYMBOL, page.getSymbols().size()),
+                    Symbol s = new Symbol(
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_LANGUAGE),
                             loc
-                    ));
+                    );
+                    if (!hasId) {
+                        s.setId(Annotations.annotationId(page.getPage(), TAG_SYMBOL, page.getSymbols().size()), true);
+                    }
+                    page.getSymbols().add(s);
                     break;
                 case TAG_MARK:
-                    page.getMarks().add(new Mark(
-                            hasId ? id : Annotations.annotationId(page.getPage(), TAG_MARK, page.getMarks().size()),
+                    Mark m = new Mark(
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_LANGUAGE),
                             loc
-                    ));
+                    );
+                    if (!hasId) {
+                        m.setId(Annotations.annotationId(page.getPage(), TAG_MARK, page.getMarks().size()), true);
+                    }
+                    page.getMarks().add(m);
                     break;
                 case TAG_NUMERAL:
-                    page.getNumerals().add(new Numeral(
-                            hasId ? id : Annotations.annotationId(page.getPage(), TAG_NUMERAL, page.getNumerals().size()),
+                    Numeral n = new Numeral(
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             annotation.getTextContent(),
                             null,
                             loc
-                    ));
+                    );
+                    if (!hasId) {
+                        n.setId(Annotations.annotationId(page.getPage(), TAG_NUMERAL, page.getNumerals().size()), true);
+                    }
+                    page.getNumerals().add(n);
                     break;
                 case TAG_ERRATA:
-                    page.getErrata().add(new Errata(
-                            hasId ? id : Annotations.annotationId(page.getPage(), TAG_ERRATA, page.getErrata().size()),
+                    Errata e = new Errata(
+                            id,
                             annotation.getAttribute(ATTR_LANGUAGE),
                             annotation.getAttribute(ATTR_COPYTEXT),
                             annotation.getAttribute(ATTR_AMENDEDTEXT)
-                    ));
+                    );
+                    if (!hasId) {
+                        e.setId(Annotations.annotationId(page.getPage(), TAG_ERRATA, page.getErrata().size()), true);
+                    }
+                    page.getErrata().add(e);
                     break;
                 case TAG_DRAWING:
-                    page.getDrawings().add(new Drawing(
-                            hasId ? id : Annotations.annotationId(page.getPage(), TAG_DRAWING, page.getDrawings().size()),
+                    Drawing d = new Drawing(
+                            id,
                             annotation.getAttribute(ATTR_TEXT),
                             loc,
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_LANGUAGE)
-                    ));
+                    );
+                    if (!hasId) {
+                        d.setId(Annotations.annotationId(page.getPage(), TAG_DRAWING, page.getDrawings().size()), true);
+                    }
+                    page.getDrawings().add(d);
                     break;
                 case TAG_CALCULATION:
                     Calculation c = buildCalculation(annotation);
                     if (!hasId) {
-                        c.setId(Annotations.annotationId(page.getPage(), TAG_CALCULATION, page.getCalculations().size()));
+                        c.setId(Annotations.annotationId(page.getPage(), TAG_CALCULATION, page.getCalculations().size()), true);
                     }
                     page.getCalculations().add(c);
                     break;
                 case TAG_GRAPH:
                     Graph g = buildGraph(annotation);
                     if (!hasId) {
-                        g.setId(Annotations.annotationId(page.getPage(), TAG_GRAPH, page.getGraphs().size()));
+                        g.setId(Annotations.annotationId(page.getPage(), TAG_GRAPH, page.getGraphs().size()), true);
                     }
                     page.getGraphs().add(g);
                     break;
                 case TAG_TABLE:
                     Table t = buildTable(annotation);
                     if (!hasId) {
-                        t.setId(Annotations.annotationId(page.getPage(), TAG_TABLE, page.getTables().size()));
+                        t.setId(Annotations.annotationId(page.getPage(), TAG_TABLE, page.getTables().size()), true);
                     }
                     page.getTables().add(t);
                     break;
                 case TAG_PHYSICAL_LINK:
                     PhysicalLink l = buildPhysicalLink(annotation);
                     if (!hasId) {
-                        l.setId(Annotations.annotationId(page.getPage(), TAG_PHYSICAL_LINK, page.getLinks().size()));
+                        l.setId(Annotations.annotationId(page.getPage(), TAG_PHYSICAL_LINK, page.getLinks().size()), true);
                     }
                     page.getLinks().add(l);
                     break;
@@ -776,6 +804,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         InternalReference ir = new InternalReference();
 
         ir.setText(el.getAttribute(ATTR_TEXT));
+        ir.setAnchorPrefix(el.getAttribute(ATTR_ANCHOR_PREFIX));
+        ir.setAnchorSuffix(el.getAttribute(ATTR_ANCHOR_SUFFIX));
 
         // Build targets
         NodeList children = el.getChildNodes();
@@ -793,12 +823,20 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             Element child = (Element) n;
 
             if (child.getTagName().equals(TAG_TARGET)) {
-                ReferenceTarget t = new ReferenceTarget(
-                        child.getAttribute(ATTR_FILENAME),
-                        child.getAttribute(ATTR_BOOK_ID),
-                        child.getAttribute(ATTR_TEXT)
-                );
-                ir.addTargets(t);
+                if (hasAttribute(ATTR_FILENAME, child) || hasAttribute(ATTR_BOOK_ID, child)) {
+                    ir.addTargets(new ReferenceTarget(
+                            child.getAttribute(ATTR_FILENAME),
+                            child.getAttribute(ATTR_BOOK_ID),
+                            child.getAttribute(ATTR_TEXT)
+                    ));
+                } else if (hasAttribute(ATTR_REF, child)) {
+                    ir.addTargets(new ReferenceTarget(
+                            child.getAttribute(ATTR_REF),
+                            child.getAttribute(ATTR_TEXT),
+                            child.getAttribute(ATTR_PREFIX),
+                            child.getAttribute(ATTR_SUFFIX)
+                    ));
+                }
             }
         }
 

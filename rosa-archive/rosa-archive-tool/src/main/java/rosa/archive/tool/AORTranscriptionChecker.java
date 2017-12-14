@@ -10,6 +10,7 @@ import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.core.serialize.FileMapSerializer;
 import rosa.archive.model.FileMap;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
@@ -20,7 +21,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.nio.file.DirectoryStream;
-import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -77,6 +77,8 @@ public class AORTranscriptionChecker {
     private List<MultiValue> booksList;
     private List<MultiValue> locationsList;
 
+    private Set<String> annotationIds;
+
     private FileMap gitArchiveMap;
 
     @Inject
@@ -84,6 +86,7 @@ public class AORTranscriptionChecker {
             throws IOException {
         this.serializer = serializer;
         this.fileMapSerializer = fileMapSerializer;
+        this.annotationIds = new HashSet<>();
     }
 
     /**
@@ -159,17 +162,25 @@ public class AORTranscriptionChecker {
      */
     private void doCollection(final String path, PrintStream report) {
 
-        try (DirectoryStream<Path> ds = Files.newDirectoryStream(Paths.get(path), new Filter<Path>() {
-            @Override
-            public boolean accept(Path entry) throws IOException {
-                return Files.isDirectory(entry);
-            }
-        })) {
-
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(Paths.get(path),
+                entry -> Files.isDirectory(entry)
+        )) {
+            // First, build a list of all annotation IDs from the books in the collection
             for (Path p : ds) {
-                doBook(p.toString(), path, report);
+                addBookIds(p, report);
             }
+        } catch (IOException e) {
+            report.println("Failed to read path. [" + path + "]\n");
+            e.printStackTrace(report);
+            return;
+        }
 
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(Paths.get(path),
+                entry -> Files.isDirectory(entry)
+        )) {
+            for (Path p : ds) {
+                doBook(p, report);
+            }
         } catch (IOException e) {
             report.println("Failed to read path. [" + path + "]\n");
             e.printStackTrace(report);
@@ -178,8 +189,8 @@ public class AORTranscriptionChecker {
     }
 
     private void doBook(String bookPath, PrintStream report) {
-        Path book = Paths.get(bookPath);
-        doBook(bookPath, book.getParent().toString(), report);
+        addBookIds(Paths.get(bookPath), report);
+        doBook(Paths.get(bookPath), report);
     }
 
     /**
@@ -188,15 +199,12 @@ public class AORTranscriptionChecker {
      * @param bookPath path of book
      * @param report PrintStream to record output
      */
-    private void doBook(String bookPath, String collectionPath, PrintStream report) {
+    private void doBook(Path bookPath, PrintStream report) {
         report.println("Reading transcriptions for book. [" + bookPath + "]");
 
-        try (DirectoryStream<Path> ds = Files.newDirectoryStream(Paths.get(bookPath), new Filter<Path>() {
-            @Override
-            public boolean accept(Path entry) throws IOException {
-                return entry.getFileName().toString().endsWith(".xml");
-            }
-        })) {
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(bookPath,
+                entry -> entry.getFileName().toString().endsWith(".xml")
+        )) {
 
             for (Path xmlPath : ds) {
                 List<String> errors = new ArrayList<>();
@@ -232,12 +240,11 @@ public class AORTranscriptionChecker {
                         }
 
                         checkAgainstSpreadsheets(aorPage, report);
-
-                        checkInternalRefs(aorPage, collectionPath, report);
+                        checkInternalRefs(aorPage, report);
                     }
 
                 } catch (IOException e) {
-                    report.println("Failed to read file. [" + xmlPath + "]");
+                    report.println("  !! Failed to read file. [" + xmlPath + "]");
                     report.println("\t> " + e.getMessage());
                 }
             }
@@ -248,7 +255,48 @@ public class AORTranscriptionChecker {
         }
     }
 
-    private void checkAgainstSpreadsheets(AnnotatedPage annotatedPage, PrintStream report) throws IOException {
+    private void addBookIds(Path bookPath, PrintStream report) {
+        List<String> errors = new ArrayList<>();
+        String book = bookPath.getFileName().toString();
+
+        try (DirectoryStream<Path> ds = Files.newDirectoryStream(
+                bookPath,
+                entry -> entry.getFileName().toString().endsWith(".xml")
+        )) {
+            for (Path xmlP : ds) {
+                String transcriptionName = xmlP.getFileName().toString();
+
+                try (InputStream xmlIn = Files.newInputStream(xmlP)) {
+                    errors.clear();
+                    AnnotatedPage aorPage = serializer.read(xmlIn, errors);
+                    aorPage.setId(transcriptionName);
+
+                    if (!errors.isEmpty()) {
+                        continue;
+                    }
+
+                    // Only add IDs present in original transcriptions, ignore auto-generated IDs
+                    aorPage.getAnnotations().parallelStream()
+                            .filter(a -> !a.isGeneratedId())
+                            .map(Annotation::getId)
+                            .forEach(id -> {
+                                if (annotationIds.contains(id)) {
+                                    report.println("  Duplicate ID found on page [" + book + ":" + transcriptionName +
+                                            "] (" + id + ")");
+                                } else {
+                                    annotationIds.add(id);
+                                }
+                            });
+                } catch (IOException e) {
+                    continue;
+                }
+            }
+        } catch (IOException e) {
+            report.println("Failed to get transcription IDs present in book (" + bookPath.getFileName().toString() + ")");
+        }
+    }
+
+    private void checkAgainstSpreadsheets(AnnotatedPage annotatedPage, PrintStream report) {
         if (annotatedPage == null) {
             return;
         }
@@ -384,61 +432,31 @@ public class AORTranscriptionChecker {
         return list;
     }
 
-    private void checkInternalRefs(AnnotatedPage aPage, String collection, PrintStream report) {
-        Path colPath = Paths.get(collection);
-
+    private void checkInternalRefs(AnnotatedPage aPage, PrintStream report) {
         for (Marginalia marg : aPage.getMarginalia()) {
             for (MarginaliaLanguage lang : marg.getLanguages()) {
                 for (Position pos : lang.getPositions()) {
                     for (InternalReference ref : pos.getInternalRefs()) {
                         for (ReferenceTarget target : ref.getTargets()) {
-                            String bookId = target.getBookId();
-                            String filename = target.getFilename();
-
-//                            System.out.println("  #### Internal reference target found: " + target.toString());
-
-                            // Check Book ID
-                            if (isEmpty(bookId)) {
-                                report.println("  [" + aPage.getId() + "]Internal reference book_id is blank. "
-                                        + target.toString());
+                            // Check internal ref targets to make sure their referenced IDs exist
+                            // in the corpus (unless target points to external entity)
+                            String targetId = target.getTargetId();
+                            if (targetId == null) {
+                                report.println("  Internal Reference [" + aPage.getId() + ":" + marg.getId() +
+                                        "] no 'ref' ID found.");
                                 continue;
                             }
-                            Path desiredPath = colPath.resolve(bookId);
-                            if (!Files.exists(desiredPath) || !Files.isDirectory(desiredPath)) {
-                                // If names don't exist, first apply the git-archive mapping and recheck
-                                String mappedPath = tryFileMap(bookId);
-                                if (mappedPath == null || mappedPath.isEmpty()) {
-                                    report.println("  [" + aPage.getId() + "] Cannot check internal references. " +
-                                            "book_id is invalid or does not exist. (" + bookId + ")");
-                                    return;
-                                }
-                                desiredPath = colPath.resolve(tryFileMap(bookId));
-                                if (!Files.exists(desiredPath) || !Files.isDirectory(desiredPath)) {
-                                    report.println("  [" + aPage.getId() + "] Internal reference target " +
-                                            "book_id is invalid or does not exist (" + bookId + ")");
-                                    // Might as well continue, since the file cannot be searched for...
-                                    continue;
-                                }
-                                // TODO add warning here
+                            if (!annotationIds.contains(targetId) && !targetId.startsWith("http")) {
+                                report.println("  Internal Reference [" + aPage.getId() + ":" + marg.getId() +
+                                        "] target ID not found in corpus. (" + targetId + ")");
                             }
-
-                            // Check filename
-                            if (isEmpty(filename)) {
-                                report.println("  [" + aPage.getId() + "] Internal reference 'filename' is " +
-                                        "blank. " + target.toString());
-                                return;
+                            if (target.getBookId() != null && !target.getBookId().isEmpty()) {
+                                report.println("  Internal Reference [" + aPage.getId() + ":" + marg.getId() +
+                                        "] found using deprecated attribute (book_id)");
                             }
-                            if (!filename.endsWith(".xml")) {
-                                // Must be an XML target
-                                report.println("  [" + aPage.getId() + "] Internal reference filename is " +
-                                        "invalid: must target an XML transcription. (filename=\"" + filename + "\")");
-                            } else {
-                                Path desiredFile = desiredPath.resolve(filename);
-                                if (!Files.exists(desiredFile)) {
-                                    // File must exist...
-                                    report.println("  [" + aPage.getId() + "] Internal reference filename is " +
-                                            "invalid: file does not exist. (" + bookId + "/" + filename + ")");
-                                }
+                            if (target.getFilename() != null && !target.getFilename().isEmpty()) {
+                                report.println("  Internal Reference [" + aPage.getId() + ":" + marg.getId() +
+                                        "] found using deprecated attribute (filename)");
                             }
                         }
                     }

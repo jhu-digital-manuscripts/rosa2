@@ -1,6 +1,7 @@
 package rosa.archive.model.aor;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  *
@@ -15,6 +16,8 @@ public abstract class Annotation implements Serializable {
 
     private String internalRef;
 
+    private boolean generatedId;
+
     protected Annotation() {}
 
     protected Annotation(String id, String refText, String language, Location location) {
@@ -22,6 +25,7 @@ public abstract class Annotation implements Serializable {
         this.text = refText;
         this.location = location;
         this.language = language;
+        this.generatedId = false;
     }
 
     public String getId() {
@@ -30,6 +34,11 @@ public abstract class Annotation implements Serializable {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public void setId(String id, boolean generatedId) {
+        this.id = id;
+        this.generatedId = generatedId;
     }
 
     public String getReferencedText() {
@@ -66,28 +75,30 @@ public abstract class Annotation implements Serializable {
         this.internalRef = internalRef;
     }
 
+    public boolean isGeneratedId() {
+        return generatedId;
+    }
+
+    public void setGeneratedId(boolean generatedId) {
+        this.generatedId = generatedId;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         Annotation that = (Annotation) o;
-
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (text != null ? !text.equals(that.text) : that.text != null) return false;
-        if (location != that.location) return false;
-        if (language != null ? !language.equals(that.language) : that.language != null) return false;
-        return internalRef != null ? internalRef.equals(that.internalRef) : that.internalRef == null;
+        return generatedId == that.generatedId &&
+                Objects.equals(id, that.id) &&
+                Objects.equals(text, that.text) &&
+                location == that.location &&
+                Objects.equals(language, that.language) &&
+                Objects.equals(internalRef, that.internalRef);
     }
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (text != null ? text.hashCode() : 0);
-        result = 31 * result + (location != null ? location.hashCode() : 0);
-        result = 31 * result + (language != null ? language.hashCode() : 0);
-        result = 31 * result + (internalRef != null ? internalRef.hashCode() : 0);
-        return result;
+        return Objects.hash(id, text, location, language, internalRef, generatedId);
     }
 
     @Override
@@ -98,6 +109,7 @@ public abstract class Annotation implements Serializable {
                 ", location=" + location +
                 ", language='" + language + '\'' +
                 ", internalRef='" + internalRef + '\'' +
+                ", generatedId=" + generatedId +
                 '}';
     }
 }

@@ -83,8 +83,10 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
 
         // <mark name="plus_sign" method="pen" place="intext" language="IT" text="Arguto"/>
         Mark m1 = new Mark("FolgersHa2.036r.tif_mark_35", "Arguto", "plus_sign", "pen", "IT", Location.INTEXT);
+        m1.setGeneratedId(true);
         // <mark name="dash" method="pen" place="right_margin"/>
         Mark m2 = new Mark("FolgersHa2.036r.tif_mark_2", "", "dash", "pen", "", Location.RIGHT_MARGIN);
+        m2.setGeneratedId(true);
         // fake mark
         Mark m3 = new Mark("id", "fake text", "moo", "method", "lang", null);
 
@@ -94,6 +96,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
 
         // <symbol name="Sun" place="left_margin"/>
         Symbol s1 = new Symbol("FolgersHa2.036r.tif_symbol_0", "", "Sun", "", Location.LEFT_MARGIN);
+        s1.setGeneratedId(true);
         // not present in document
         Symbol s2 = new Symbol("id", "fake text", "moo method", "lang", null);
         assertTrue(page.getSymbols().contains(s1));
@@ -101,6 +104,7 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
 
         // <underline method="pen" type="straight" language="IT" text="Arguto, &amp;"/>
         Underline u1 = new Underline("FolgersHa2.036r.tif_underline_25", "Arguto, &", "pen", "straight", "IT");
+        u1.setGeneratedId(true);
         // fake underline
         Underline u2 = new Underline("id", "fake text", "moomethod", "asdf", "lang");
         assertTrue(page.getUnderlines().contains(u1));

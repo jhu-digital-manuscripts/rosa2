@@ -134,9 +134,7 @@ public class BookChecker extends AbstractArchiveChecker {
         check(book.getAutomaticNarrativeTagging(), book, bsg, errors, warnings);
         check(book.getAutomaticNarrativeTagging(), book, bsg, errors, warnings);
         //   annotated pages
-        check(book.getAnnotatedPages(), book, bsg, errors, warnings);
-        // Check AoR reference sheets
-        checkReferences(collection, book.getAnnotatedPages(), book, bsg, errors, warnings);
+        check(collection, book, bsg, errors, warnings);
         // Check transcription
         checkTranscription(book.getTranscription(), errors, warnings);
 
@@ -873,32 +871,26 @@ public class BookChecker extends AbstractArchiveChecker {
      *     <li>Page that the transcription refers to must be in archive</li>
      * </ul>
      *
-     * @param pages list of AOR annotated pages
+     * @param collection parent collection
      * @param parent parent book
      * @param bsg byte stream group that holds these pages
      * @param errors list of errors
      * @param warnings list of warnings
      */
-    private void check(List<AnnotatedPage> pages, Book parent, ByteStreamGroup bsg,
+    private void check(BookCollection collection, Book parent, ByteStreamGroup bsg,
                        final List<String> errors, final List<String> warnings) {
-
-        if (pages == null) {
+        List<AnnotatedPage> pages = parent.getAnnotatedPages();
+        if (pages == null || pages.isEmpty()) {
             return;
         }
 
-        for (final AnnotatedPage page : pages) {
-            if (page == null) {
-                continue;
-            }
-
+        pages.parallelStream().forEach(page -> {
             if (!isInArchive(page.getId(), parent.getContent())) {
-                errors.add("Annotated page not found in archive. ["
-                        + parent.getId() + ":" + page.getId() + "]");
+                errors.add("Annotated page not found in archive. [" + parent.getId() + ":" + page.getId() + "]");
             }
 
             if (!isInArchive(page.getPage(), parent.getContent())) {
-                errors.add("Annotated page refers to a page not in archive. ["
-                        + page.getPage() + "]");
+                errors.add("Annotated page refers to a page not in archive. [" + page.getPage() + "]");
             }
 
             if (!bsg.hasByteStream(page.getId())) {
@@ -906,51 +898,11 @@ public class BookChecker extends AbstractArchiveChecker {
             } else {
                 validateAgainstSchema(page.getId(), bsg, errors, warnings);
             }
+        });
 
-            // Make sure that the transcription file name matches the associated image name:
-            // FolgersHa2.aor.033v.xml must match with FolgersHa2.033v.tif
-            //     OR
-            // 0000033v.xml must match with 0000033v.tif
-//            System.out.println("Checking transcription name vs image name. [" + page.getId() + " / " + page.getPage() + "]");
-            if (page.getId().contains("aor")) {
-                String[] nameParts = page.getId().replaceAll("\\.aor", "").split("\\.");
-                String[] imageParts = page.getPage().split("\\.");
-
-                if (nameParts.length < 2 || imageParts.length < 2) {
-                    errors.add("Transcription name or associated image name has invalid format.");
-                } else if (!nameParts[nameParts.length - 2].equals(imageParts[imageParts.length - 2])) {
-                    errors.add("Transcription name does not match image name. ["
-                            + page.getId() + " / " + page.getPage() + "]");
-                }
-            } else {
-                if (!page.getId().equals(page.getPage())) {
-                    errors.add("Transcription name does not match image name. ["
-                            + page.getId() + " / " + page.getPage() + "]");
-                }
-            }
-
-            final List<String> langs = Arrays.asList("EN", "EL", "FR", "IT", "LA", "ES");
-            for (Marginalia marg : page.getMarginalia()) {
-                for (MarginaliaLanguage lang : marg.getLanguages()) {
-                    for (Position pos : lang.getPositions()) {
-                        // Make sure if text attr appears, language attr appears as well
-                        boolean badXrefText = pos.getxRefs().stream()
-                                .filter(xref -> xref.getText() != null && !xref.getText().equals(""))
-                                .anyMatch(xRef -> xRef.getLanguage() == null || xRef.getLanguage().equals(""));
-                        // Make sure any language attr is one of the acceptable values
-                        badXrefText = badXrefText || pos.getxRefs().stream()
-                                .filter(xRef -> xRef.getLanguage() != null && !xRef.getLanguage().equals(""))
-                                .anyMatch(xRef -> !langs.contains(xRef.getLanguage().toUpperCase()));
-
-                        if (badXrefText) {
-                            errors.add("X-ref has associated text, but no language. [" + page.getId() + "]");
-                        }
-                    }
-                }
-            }
-
-
-        }
+        AORChecker.ResultSet results = AORChecker.checkAORTranscriptions(collection, parent);
+        errors.addAll(results.errors);
+        warnings.addAll(results.warnings);
     }
 
     /**
@@ -1169,55 +1121,6 @@ public class BookChecker extends AbstractArchiveChecker {
             if (sections.findIndexOfSceneById(scene.getId()) < 0) {
                 errors.add("Narrative tagging scene [" + scene.getId()
                         + "] not found in narrative_sections.");
-            }
-        }
-    }
-
-    private void checkReferences(BookCollection collection, List<AnnotatedPage> pages, Book parent, ByteStreamGroup bsg,
-                       List<String> errors, List<String> warnings) {
-
-        ReferenceSheet people = collection.getPeopleRef();
-        ReferenceSheet locations = collection.getLocationsRef();
-        BookReferenceSheet books = collection.getBooksRef();
-
-        if (people == null || locations == null || books == null) {
-            return;
-        }
-
-        for (AnnotatedPage page : pages) {
-            String sig = parent.getId() + ":" + page.getPage();
-
-            for (Marginalia marg : page.getMarginalia()) {
-                for (MarginaliaLanguage lang : marg.getLanguages()) {
-                    for (Position pos : lang.getPositions()) {
-                        for (String book : pos.getBooks()) {
-                            if (book == null || book.isEmpty()) {
-                                warnings.add("Book reference is blank. [" + sig + ":Marginalia:" + pos.getPlace());
-                            } else if (!books.containsKey(book)) {
-                                warnings.add("Book reference found in annotation not present in reference sheets. " +
-                                        "[" + sig + ":Marginalia:" + pos.getPlace() + ":" + book + "]");
-                            }
-                        }
-
-                        for (String person : pos.getPeople()) {
-                            if (person == null || person.isEmpty()) {
-                                warnings.add("Person reference is blank. [" + sig + ":Marginalia:" + pos.getPlace());
-                            } else if (!people.containsKey(person)) {
-                                warnings.add("Person reference found in annotation not present in reference sheets. " +
-                                        "[" + sig + ":Marginalia:" + pos.getPlace() + ":" + person + "]");
-                            }
-                        }
-
-                        for (String loc : pos.getLocations()) {
-                            if (loc == null || loc.isEmpty()) {
-                                warnings.add("Location reference is blank. [" + sig + ":Marginalia:" + pos.getPlace());
-                            } else if (!locations.containsKey(loc)) {
-                                warnings.add("Location reference found in annotation not present in reference sheets. " +
-                                        "[" + sig + ":Marginalia:" + pos.getPlace() + ":" + loc + "]");
-                            }
-                        }
-                    }
-                }
             }
         }
     }
