@@ -43,7 +43,7 @@ public class PhysicalLink extends Annotation implements Serializable {
     public Set<String> getAllIds() {
         Set<String> ids = new HashSet<>();
 
-        links.parallelStream().forEach(link -> {
+        links.forEach(link -> {
             if (link.getSource() != null) {
                 ids.add(link.getSource());
             }

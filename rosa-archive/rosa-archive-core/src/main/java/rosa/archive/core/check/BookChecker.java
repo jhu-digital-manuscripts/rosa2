@@ -884,7 +884,7 @@ public class BookChecker extends AbstractArchiveChecker {
             return;
         }
 
-        pages.parallelStream().forEach(page -> {
+        pages.forEach(page -> {
             if (!isInArchive(page.getId(), parent.getContent())) {
                 errors.add("Annotated page not found in archive. [" + parent.getId() + ":" + page.getId() + "]");
             }

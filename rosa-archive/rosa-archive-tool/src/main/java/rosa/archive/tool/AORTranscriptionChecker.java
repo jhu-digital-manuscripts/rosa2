@@ -27,7 +27,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map.Entry;
 import java.util.Set;
 
 public class AORTranscriptionChecker {
@@ -276,7 +275,7 @@ public class AORTranscriptionChecker {
                     }
 
                     // Only add IDs present in original transcriptions, ignore auto-generated IDs
-                    aorPage.getAnnotations().parallelStream()
+                    aorPage.getAnnotations().stream()
                             .filter(a -> !a.isGeneratedId())
                             .map(Annotation::getId)
                             .forEach(id -> {
@@ -463,28 +462,6 @@ public class AORTranscriptionChecker {
                 }
             }
         }
-    }
-
-    /**
-     * The data might have it that the BOOK_ID is actually the name of the book in
-     * our archive, as opposed to the name of the book in the AoR Git repo. Attempt
-     * to reconcile these names.
-     *
-     * @param toTransform String to transform using mapping
-     * @return transformed directory name
-     */
-    private String tryFileMap(String toTransform) {
-        if (gitArchiveMap == null) {
-            return null;
-        }
-
-        for (Entry<String, String> entry: gitArchiveMap.getMap().entrySet()) {
-            if (entry.getValue().equals(toTransform)) {
-                return entry.getKey();
-            }
-        }
-
-        return null;
     }
 
     private FileMap loadDirectoryMap() {
