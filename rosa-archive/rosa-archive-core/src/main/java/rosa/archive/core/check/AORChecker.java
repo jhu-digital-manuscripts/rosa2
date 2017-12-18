@@ -45,7 +45,7 @@ public class AORChecker {
     public static ResultSet checkAORTranscriptions(BookCollection collection, Book book) {
         ResultSet results = new ResultSet();
 
-        book.getAnnotatedPages().parallelStream().forEach(page -> {
+        book.getAnnotatedPages().forEach(page -> {
             results.combine(checkPage(page));
             results.combine(checkReferences(collection, book));
         });

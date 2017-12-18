@@ -91,8 +91,6 @@ public class StoreImpl implements Store, ArchiveConstants {
     private final BookCollectionChecker collectionChecker;
     private final BookChecker bookChecker;
 
-    private FileMap directoryMap;
-
     /**
      * @param serializers object containing all required serializers
      * @param bookChecker object that knows how to validate the contents of a book
@@ -592,6 +590,19 @@ public class StoreImpl implements Store, ArchiveConstants {
         return str == null || str.isEmpty();
     }
 
+    /**
+     * Check a map for duplicate entries. The map will ensure entry keys are distinct, however,
+     * entry values do not have the same assurances. For our use case, we must ensure that all
+     * entry values are unique, or else data can be lost while being manipulated.
+     *
+     * This method will always check every entry in the map in order to document all possible
+     * duplicates and report them in the list of errors. This is done for the benefit of the
+     * user so all duplicates can be fixed externally.
+     *
+     * @param map map to look through
+     * @param errors list of errors found while checking
+     * @return are there duplicate entries in this map?
+     */
     private boolean containsDuplicateValues(Map<String, String> map, List<String> errors) {
         boolean hasDuplicates = false;
         Set<String> valueSet = new HashSet<>();
@@ -648,47 +659,26 @@ public class StoreImpl implements Store, ArchiveConstants {
             return;
         }
 
-        for (String originalName : getTranscriptionsNames(bookStreams)) {
-            renameTranscription(originalName, fileMap, bookStreams, base.getByteStreamGroup(collection), errors);
-        }
+        List<String> renameErrors = new ArrayList<>();
+        getTranscriptionsNames(bookStreams)
+                .forEach(originalName -> renameTranscription(originalName, fileMap, bookStreams, renameErrors));
+        errors.addAll(renameErrors);
     }
 
     /**
-     * Rename a transcription file, plus all references to this or other pages
-     * within the transcription.
+     * Rename a transcription file, plus the 'filename' attribute on the 'page' element that relates
+     * a transcription page to an image file.
      *
-     * Must be renamed:
-     *
-     * &lt;page filename="..."&gt;
-     * &lt;internal_ref&gt;
-     *   &lt;target filename="..." book_id="..."&gt;
-     *
-     * Change names given in the internal references tags from using original git
-     * file/directory names to using the archive names.
-     *
-     * Cases to look for:
-     *  BookID = git name; XML file = git name
-     *      - rename BookID, rename file
-     *  BookID = git name; XML file = archive name
-     *      - rename BookID, keep file
-     *  BookID = archive name; XML file = git name (should be the case in most or all references)
-     *      - keep BookID, rename file
-     *  BookID = archive name; XML file = archive name
-     *      - keep BookId, keep file
+     * Renaming of attributes of the 'internal_ref' element was necessary in AOR1. Since AOR2,
+     * however, the renamed relative references were dropped in favor of absolute IDs.
      *
      * @param pageName original name
      * @param fileMap file map for current book
      * @param bookStreams byte stream group for book
-     * @param collectionStreams byte stream group for collection
      * @param errors list of errors
      */
     private void renameTranscription(String pageName, FileMap fileMap, ByteStreamGroup bookStreams,
-                                     ByteStreamGroup collectionStreams, List<String> errors) throws IOException {
-
-        if (directoryMap == null) {
-            loadDirectoryMap();
-        }
-
+                                     List<String> errors) {
         try (InputStream in = bookStreams.getByteStream(pageName)) {
             DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
             builder.setEntityResolver(aorResourceResolver);
@@ -716,81 +706,17 @@ public class StoreImpl implements Store, ArchiveConstants {
                 page.setAttribute("filename", transformedImageName);
             }
 
-            // Do Internal References, relies on getting the new name from <page> tag above
-            // Must also modify any <internal_ref>s found. Their targets contain references
-            // To other transcription files in other directories
-            // Both the target file and named directory must be renamed
-            NodeList internalRefs = doc.getElementsByTagName("internal_ref");
-            for (int i = 0; i < internalRefs.getLength(); i++) {
-                // Modify all <target>s
-                NodeList children = internalRefs.item(i).getChildNodes();
-                for (int j = 0; j < children.getLength(); j++) {
-                    Node child = children.item(j);
-                    if (child.getNodeType() != Node.ELEMENT_NODE) {
-                        continue;
-                    }
-
-                    Element target = (Element) child;
-                    if (target.getTagName().equals("target")) {
-                        String targetBook = target.getAttribute("book_id");
-
-                        // Make sure target book exists in the archive
-                        if (!collectionStreams.hasByteStreamGroup(targetBook)) {
-                            // Original book name not found, check directory map
-                            targetBook = transformName(targetBook, directoryMap, true);
-                            if (!collectionStreams.hasByteStreamGroup(targetBook)) {
-                                errors.add("[" + pageName + "] Internal reference points to a book that" +
-                                        " was not found in the archive. (" + targetBook + ")");
-                                continue;
-                            }
-                        }
-
-                        // Change book ID if it hasn't already been changed
-                        if (directoryMap.getMap().containsValue(targetBook) && !targetBook.equals(target.getAttribute("book_id"))) {
-                            target.setAttribute("book_id", targetBook);
-                        }
-
-                        // Target book found, load file map
-                        ByteStreamGroup targetBSG = collectionStreams.getByteStreamGroup(targetBook);
-                        if (!targetBSG.hasByteStream(FILE_MAP)) {
-                            errors.add("Source: [" + pageName + "] Internal reference targets a book with" +
-                                    " no file map. Cannot transform names.");
-                            continue;
-                        }
-
-                        String targetFile = target.getAttribute("filename").replace(XML_EXT, TIF_EXT);
-
-                        String newFileName;
-                        if (targetBSG.id().equals(bookStreams.name())) {
-                            // If targeted book is the current book
-                            newFileName = transformName(targetFile, fileMap, false);
-                        } else {
-                            // Will load a FileMap every time a <target> is encountered.......must be smarter about these loads
-                            FileMap targetFilemap = loadItem(FILE_MAP, targetBSG, FileMap.class, null);
-                            newFileName = transformName(targetFile, targetFilemap, false);
-                        }
-
-                        // File map actually maps image files. These names are related to transcription
-                        // files, but do not exactly match.
-                        newFileName = imageToTranscriptionName(newFileName);
-
-                        if (!newFileName.equals(targetFile)) {
-                            target.setAttribute("filename", newFileName);
-                        }
-                    }
-                }
-            }
-
             // Write XML back to file
-            if (errors.isEmpty() && transformedImageName != null) {
+            if (transformedImageName != null) {
                 try (OutputStream os = bookStreams.getOutputStream(pageName)) {
                     XMLUtil.write(doc, os, false);
+                } catch (IOException e) {
+                    errors.add("Failed to write XML transcription. " + pageName);
                 }
                 // If no errors, rename the transcription file
                 bookStreams.renameByteStream(pageName, imageToTranscriptionName(transformedImageName));
             }
-
-        } catch (ParserConfigurationException | SAXException e) {
+        } catch (ParserConfigurationException | SAXException | IOException e) {
             errors.add("Failed to read XML transcription. " + pageName);
         }
     }
@@ -811,47 +737,6 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
 
         return sb.toString().replace(TIF_EXT, XML_EXT);
-    }
-
-    private void loadDirectoryMap() throws IOException {
-        // TODO really crappy...
-        try (InputStream in = getClass().getClassLoader().getResourceAsStream("rosa/archive/dir-map.csv")) {
-            directoryMap = serializers.getSerializer(FileMap.class).read(in, null);
-        }
-    }
-
-    /**
-     * Look for a name within a file map and return the mapped name. This method will attempt to
-     * look in both directions for a mapping if requested:
-     *
-     * original -> target
-     *   AND
-     * target -> original
-     *
-     * The original name itself will be returned if no mapping is found.
-     *
-     * @param name name to transform
-     * @param fileMap file map containing name mappings
-     * @param twoway attempt to find target -> original relation
-     * @return transformed name
-     */
-    private String transformName(String name, FileMap fileMap, boolean twoway) {
-        if (fileMap == null) {
-            return name;
-        }
-
-        Map<String, String> map = fileMap.getMap();
-        if (map.containsKey(name)) {
-            return map.get(name);
-        } else if (twoway){
-            for (Map.Entry<String, String> entry: map.entrySet()) {
-                if (entry.getValue().equals(name)) {
-                    return entry.getKey();
-                }
-            }
-        }
-
-        return name;
     }
 
     @Override
