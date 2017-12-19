@@ -574,7 +574,10 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		ReferenceSheet locationRefs = col.getLocationsRef();
 
 		for (MarginaliaLanguage lang : marg.getLanguages()) {
-			marg_lang_type = getSearchFieldTypeForLang(lang.getLang());
+			SearchFieldType tmpLangType = getSearchFieldTypeForLang(lang.getLang());
+			if (tmpLangType != null) {
+				marg_lang_type = tmpLangType;
+			}
 
 			for (Position pos : lang.getPositions()) {
 				transcription.append(to_string(pos.getTexts()));
@@ -632,7 +635,6 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		}
 		
 		// Remove [] used for transcribers marks
-
 		addField(doc, JHSearchField.MARGINALIA, marg_lang_type, stripTranscribersMarks(transcription.toString()));
 		addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
         addField(doc, JHSearchField.TEXT, SearchFieldType.ENGLISH, marg.getTranslation());
