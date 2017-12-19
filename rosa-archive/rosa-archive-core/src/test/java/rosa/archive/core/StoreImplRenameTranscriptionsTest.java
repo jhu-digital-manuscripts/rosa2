@@ -4,8 +4,11 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
@@ -15,7 +18,9 @@ import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
     private static final ArchiveNameParser parser = new ArchiveNameParser();
@@ -96,6 +101,18 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
                 names.size() - 1,
                 names.stream().filter(name -> name.startsWith("Moo_ID")).count()
         );
+
+        names.stream().filter(name -> name.startsWith("Moo_ID")).forEach(name -> {
+            Path p = getBookPath(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2).resolve(name);
+            // Make sure the renamed XML file has content
+            try {
+                List<String> lines = Files.readAllLines(p, Charset.forName("UTF-8"));
+                assertNotNull(lines);
+                assertFalse(lines.isEmpty());
+            } catch (Exception e) {
+                fail("Failed to read back transcription file. " + e.getMessage());
+            }
+        });
     }
 
     private boolean checkWithBookChecker(String collection, String book) throws IOException {

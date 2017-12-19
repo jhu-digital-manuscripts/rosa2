@@ -710,11 +710,12 @@ public class StoreImpl implements Store, ArchiveConstants {
             if (transformedImageName != null) {
                 try (OutputStream os = bookStreams.getOutputStream(pageName)) {
                     XMLUtil.write(doc, os, false);
+
+                    // If no errors, rename the transcription file
+                    bookStreams.renameByteStream(pageName, imageToTranscriptionName(transformedImageName));
                 } catch (IOException e) {
                     errors.add("Failed to write XML transcription. " + pageName);
                 }
-                // If no errors, rename the transcription file
-                bookStreams.renameByteStream(pageName, imageToTranscriptionName(transformedImageName));
             }
         } catch (ParserConfigurationException | SAXException | IOException e) {
             errors.add("Failed to read XML transcription. " + pageName);
