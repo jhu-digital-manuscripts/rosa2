@@ -167,9 +167,9 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 BookMetadata bm = b.getBookMetadata("en");
 
                 Map<String, HtmlValue> map = new HashMap<>();
-                if (bm.getCommonName() != null && !bm.getCommonName().isEmpty()) {
+                if (hasContent(bm.getCommonName())) {
                     ref.setLabel(new TextValue(bm.getCommonName(), "en"));
-                } else if (bm.getTitle() != null && !bm.getTitle().isEmpty()) {
+                } else if (hasContent(bm.getTitle())) {
                     ref.setLabel(new TextValue(bm.getTitle(), "en"));
                 } else {
                     ref.setLabel(new TextValue(title, "en"));
@@ -179,12 +179,13 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 map.put("Repository", new HtmlValue(bm.getRepository(), "en"));
                 map.put("Shelfmark", new HtmlValue(bm.getShelfmark(), "en"));
                 map.put("Origin", new HtmlValue(bm.getOrigin(), "en"));
-                if (bm.getTitle() != null && !bm.getTitle().isEmpty()) {
+                if (hasContent(bm.getTitle())) {
                     map.put("Title", new HtmlValue(bm.getTitle(), "en"));
                 }
-                if (bm.getDate() != null && !bm.getTitle().isEmpty()) {
+                if (hasContent(bm.getDate())) {
                     map.put("Date", new HtmlValue(bm.getDate(), "en"));
                 }
+                map.put("pageCount", new HtmlValue(String.valueOf(b.getImages().getImages().size()), "en"));
 
                 ref.setMetadata(map);
 
@@ -227,5 +228,9 @@ public class CollectionTransformer extends BasePresentationTransformer {
         }
 
         return list;
+    }
+
+    private boolean hasContent(String str) {
+        return str != null && !str.isEmpty();
     }
 }
