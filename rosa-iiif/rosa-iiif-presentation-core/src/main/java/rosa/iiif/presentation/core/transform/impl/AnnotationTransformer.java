@@ -28,10 +28,12 @@ import rosa.archive.model.CharacterNames;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -161,11 +163,13 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         StringBuilder people = new StringBuilder();
         StringBuilder books = new StringBuilder();
         StringBuilder locs = new StringBuilder();
+        StringBuilder symb = new StringBuilder();
 
         // Left, top, right, bottom
         boolean[] orientation = new boolean[4];
         List<Location> positions = new ArrayList<>();
         List<XRef> xrefs = new ArrayList<>();
+        List<InternalReference> iRefs = new ArrayList<>();
 
         for (MarginaliaLanguage lang : marg.getLanguages()) {
             for (Position pos : lang.getPositions()) {
@@ -173,7 +177,9 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 add(people, pos.getPeople(), ", ");
                 add(books, pos.getBooks(), ", ");
                 add(locs, pos.getLocations(), ", ");
+                add(symb, pos.getSymbols(), ", ");
                 xrefs.addAll(pos.getxRefs());
+                iRefs.addAll(pos.getInternalRefs());
                 
                 // No default case. If orientation is not 0, 90, 180, 270 then do nothing
                 switch (pos.getOrientation()) {
@@ -205,23 +211,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             writer.writeStartElement("div");
 
             // ------ Add orientation + location icons ------
-            writer.writeStartElement("span");
-            writer.writeAttribute("class", "aor-icon-container");
-            if (orientation[0]) {   // Left
-                addSimpleElement(writer, "i",null,  "class", "orientation arrow-left");
-            }
-            if (orientation[1]) {   // Up
-                addSimpleElement(writer, "i",null,  "class", "orientation arrow-top");
-            }
-            writeLocationAsHtml(writer, positions.toArray(new Location[positions.size()]));
-            if (orientation[2]) {   // Right
-                addSimpleElement(writer, "i",null,  "class", "orientation arrow-right");
-            }
-            if (orientation[3]) {   // Down
-                addSimpleElement(writer, "i", null, "class", "orientation arrow-bottom");
-            }
-            writer.writeEndElement();
-            // ------------
+            assembleLocationIcon(orientation, positions.toArray(new Location[positions.size()]), writer);
 
             // Add transcription
             writer.writeStartElement("p");
@@ -229,58 +219,113 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             writer.writeEndElement();
 
             // Add translation
-            if (isNotEmpty(marg.getTranslation())) {
-                String content = "[" + StringEscapeUtils.escapeHtml4(marg.getTranslation()) + "]";
-                addSimpleElement(writer, "p", content, "class", "italic");
-            }
+            addTranslation(marg.getTranslation(), writer);
 
-            // Add list of People
-            if (people.length() > 0) {
-                writer.writeStartElement("p");
-                addSimpleElement(writer, "span", "People:", "class", "emphasize");
-                writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(people, 2)));
-                writer.writeEndElement();
-            }
-
-            // Add list of books
-            if (books.length() > 0) {
-                writer.writeStartElement("p");
-                addSimpleElement(writer, "span", "Books:", "class", "emphasize");
-                writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(books, 2)));
-                writer.writeEndElement();
-            }
-
-            // Add list of Locations
-            if (locs.length() > 0) {
-                writer.writeStartElement("p");
-                addSimpleElement(writer, "span", "Locations:", "class", "emphasize");
-                writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(trim_right(locs, 2)));
-                writer.writeEndElement();
-            }
+            addListOfValues("Symbols:", symb.toString(), writer);
+            addListOfValues("People:", people.toString(), writer);
+            addListOfValues("Books:", books.toString(), writer);
+            addListOfValues("Locations:", locs.toString(), writer);
 
             // Add list of X-refs
-            if (xrefs.size() > 0) {
-                writer.writeStartElement("p");
-                addSimpleElement(writer, "span", "Cross-references:", "class", "emphasize");
-                writer.writeCharacters(" ");
-                for (XRef xref : xrefs) {
-                    writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
-
-                    addSimpleElement(writer, "span", StringEscapeUtils.escapeHtml4(xref.getTitle()), "class", "italic");
-                    if (isNotEmpty(xref.getText())) {
-                        writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
-                    }
-                    writer.writeCharacters("; ");
-                }
-
-                writer.writeEndElement();
-            }
+            addXRefs(xrefs, writer);
+            addInternalRefs(iRefs, writer);
 
             writer.writeEndElement();
             return output.toString("UTF-8");
         } catch (XMLStreamException | UnsupportedEncodingException e) {
             return "Failed to write out marginalia.";
         }
+    }
+
+    private void assembleLocationIcon(boolean[] orientation, Location[] locations, XMLStreamWriter writer) throws XMLStreamException {
+        writer.writeStartElement("span");
+        writer.writeAttribute("class", "aor-icon-container");
+        if (orientation[0]) {   // Left
+            addSimpleElement(writer, "i",null,  "class", "orientation arrow-left");
+        }
+        if (orientation[1]) {   // Up
+            addSimpleElement(writer, "i",null,  "class", "orientation arrow-top");
+        }
+        writeLocationAsHtml(writer, locations);
+        if (orientation[2]) {   // Right
+            addSimpleElement(writer, "i",null,  "class", "orientation arrow-right");
+        }
+        if (orientation[3]) {   // Down
+            addSimpleElement(writer, "i", null, "class", "orientation arrow-bottom");
+        }
+        writer.writeEndElement();
+    }
+
+    private void addTranslation(String translation, XMLStreamWriter writer) throws XMLStreamException {
+        if (isNotEmpty(translation)) {
+            String content = "[" + StringEscapeUtils.escapeHtml4(translation) + "]";
+            addSimpleElement(writer, "p", content, "class", "italic");
+        }
+    }
+
+    private void addListOfValues(String label, String listStr, XMLStreamWriter writer) throws XMLStreamException {
+        if (isNotEmpty(listStr)) {
+            writer.writeStartElement("p");
+            addSimpleElement(writer, "span", label, "class", "emphasize");
+            writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(listStr));
+            writer.writeEndElement();
+        }
+    }
+
+    private void addXRefs(List<XRef> xRefs, XMLStreamWriter writer) throws XMLStreamException {
+        if (xRefs == null || xRefs.isEmpty()) {
+            return;
+        }
+
+        writer.writeStartElement("p");
+        addSimpleElement(writer, "span", "Cross-references:", "class", "emphasize");
+        writer.writeCharacters(" ");
+        for (int i = 0; i < xRefs.size(); i++) {
+            XRef xref = xRefs.get(i);
+            if (i > 0) {
+                writer.writeCharacters("; ");
+            }
+            writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
+            addSimpleElement(writer, "span", StringEscapeUtils.escapeHtml4(xref.getTitle()), "class", "italic");
+            if (isNotEmpty(xref.getText())) {
+                writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
+            }
+        }
+
+        writer.writeEndElement();
+    }
+
+    private void addInternalRefs(List<InternalReference> refs, XMLStreamWriter writer) throws XMLStreamException {
+        if (refs == null || refs.isEmpty()) {
+            return;
+        }
+        writer.writeStartElement("p");
+
+        addSimpleElement(writer, "span", "Internal References:", "class", "emphasize");
+        writer.writeCharacters(" ");
+
+        for (int i = 0; i < refs.size(); i++) {
+            InternalReference ref = refs.get(i);
+            if (i > 0) {
+                writer.writeEmptyElement("br");
+            }
+            // The 'reference' text seems to be left blank
+//            writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()) + " -&gt; ");
+            for (int j = 0; j < ref.getTargets().size(); j++) {
+                ReferenceTarget tar = ref.getTargets().get(j);
+                if (i > 0) {
+                    writer.writeCharacters("; ");
+                }
+
+                writer.writeStartElement("a");
+                writer.writeAttribute("href", "javascript:;");
+                writer.writeAttribute("data-targetId", tar.getTargetId());
+                writer.writeCharacters("[" + tar.getText() + "]");
+                writer.writeEndElement();
+            }
+        }
+
+        writer.writeEndElement();
     }
 
     /**
@@ -426,21 +471,23 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
     }
 
-    // Add strings to builder separated by the given string and ending with the separator
+    // Add strings to builder separated by the given string
     private void add(StringBuilder sb, List<String> list, String sep) {
-        list.forEach(s -> {
-            sb.append(s);
-            sb.append(sep);
-        });
-    }
-    
-    private String trim_right(StringBuilder sb, int n) {
-        if (sb.length() < n) {
-            return "";
+        for (int i = 0; i < list.size(); i++) {
+            if (i > 0) {
+                sb.append(sep);
+            }
+            sb.append(list.get(i));
         }
-        
-        return sb.substring(0, sb.length() - n);
     }
+
+//    private String trim_right(StringBuilder sb, int n) {
+//        if (sb.length() < n) {
+//            return "";
+//        }
+//
+//        return sb.substring(0, sb.length() - n);
+//    }
 
     private BookImage getPageImage(ImageList images, String page) {
         for (BookImage image : images) {
