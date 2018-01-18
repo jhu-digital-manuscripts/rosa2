@@ -140,6 +140,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
             case SYMBOL:
                 aPage.getSymbols().forEach(symb -> annotations.add(annotationTransformer.transform(collection, book, symb)) );
                 break;
+            case GRAPH:
+                aPage.getGraphs().forEach(graph -> annotations.add(annotationTransformer.transform(collection, book, graph)));
+                break;
 //            case MARK:
 //                for (rosa.archive.model.aor.Annotation ann : aPage.getMarks()) {
 //                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));

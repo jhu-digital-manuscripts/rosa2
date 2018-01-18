@@ -28,6 +28,9 @@ import rosa.archive.model.CharacterNames;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.aor.Graph;
+import rosa.archive.model.aor.GraphNode;
+import rosa.archive.model.aor.GraphText;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
@@ -84,6 +87,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             return adaptMarginalia(collection, book, (Marginalia) anno);
         }
 
+        String language = anno.getLanguage() != null && !anno.getLanguage().isEmpty() ? anno.getLanguage() : "en";
         String locationIcon = locationToHtml(anno.getLocation());
 
         Annotation a = new Annotation();
@@ -91,11 +95,17 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         a.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), anno.getId()));
         a.setType(IIIFNames.OA_ANNOTATION);
         a.setMotivation(IIIFNames.SC_PAINTING);
-        a.setDefaultSource(new AnnotationSource(
-                "URI", IIIFNames.DC_TEXT, "text/html",
-                locationIcon + " " + anno.toPrettyString(),
-                (anno.getLanguage() != null && !anno.getLanguage().isEmpty() ? anno.getLanguage() : "en")
-        ));
+
+        if (anno instanceof Graph) {
+            a.setDefaultSource(new AnnotationSource(
+                    "moo", IIIFNames.DC_TEXT, "text/html", graphToDisplayHtml((Graph) anno), language));
+        } else {
+            a.setDefaultSource(new AnnotationSource(
+                    "URI", IIIFNames.DC_TEXT, "text/html",
+                    locationIcon + " " + anno.toPrettyString(),
+                    language
+            ));
+        }
 
         AnnotationTarget target = locationOnCanvas(
                 getPageImage(book.getImages(), getAnnotationPage(anno.getId())),
@@ -155,6 +165,96 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         anno.setLabel(marg.getId(), "en");
 
         return anno;
+    }
+
+    private String graphToDisplayHtml(Graph graph) {
+        StringBuilder people = new StringBuilder();
+        StringBuilder books = new StringBuilder();
+        StringBuilder locs = new StringBuilder();
+        StringBuilder symbols = new StringBuilder();
+        StringBuilder notes = new StringBuilder();      // Notes that target the graph, not an individual node
+        StringBuilder notesTr = new StringBuilder();
+
+        List<InternalReference> iRefs = new ArrayList<>(graph.getInternalRefs());
+
+        for (GraphText gt : graph.getGraphTexts()) {
+            add(people, gt.getPeople(), ", ");
+            add(books, gt.getBooks(), ", ");
+            add(locs, gt.getLocations(), ", ");
+            add(symbols, gt.getSymbols(), ", ");
+            gt.getNotes().forEach(note -> {
+                notes.append(note.content);
+                if (note.internalLink == null || note.internalLink.isEmpty()) {
+                    notes.append(note.content).append(", ");
+                }
+            });
+            add(notesTr, gt.getTranslations(), ", ");
+        }
+
+        // ----------------------------------------------------------------------------------------------
+        // ----- Write XML ------------------------------------------------------------------------------
+        XMLOutputFactory outF = XMLOutputFactory.newInstance();
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+
+        try {
+            XMLStreamWriter writer = outF.createXMLStreamWriter(output);
+
+            writer.writeStartElement("div");
+
+            assembleLocationIcon(orientation(graph.getOrientation()), new Location[] { graph.getLocation() }, writer);
+
+            writer.writeStartElement("p");      // Nodes
+            addSimpleElement(writer, "span", "Nodes: ", "class", "emphasize");
+            for (int i = 0; i < graph.getNodes().size(); i++) {
+                if (i > 0) {
+                    writer.writeEmptyElement("br");
+                }
+                GraphNode node = graph.getNodes().get(i);
+
+                writer.writeCharacters(node.getContent());
+                if (isNotEmpty(node.getPerson())) {
+                    writer.writeCharacters(" (" + node.getPerson() + ")");
+                }
+
+                String note = getNoteForGraphNode(node.getId(), graph);
+                if (isNotEmpty(note)) {
+                    writer.writeCharacters(" Note: " + note);
+                }
+            }
+            writer.writeEndElement();
+
+            addListOfValues("Notes:", notes.toString(), writer);
+            addListOfValues("Notes (translated):", notesTr.toString(), writer);
+            addListOfValues("People:", people.toString(), writer);
+            addListOfValues("Books:", books.toString(), writer);
+            addListOfValues("Locations:", locs.toString(), writer);
+            addListOfValues("Symbols:", symbols.toString(), writer);
+
+            addInternalRefs(iRefs, writer);
+
+            writer.writeEndElement();
+            return output.toString("UTF-8");
+        } catch (XMLStreamException | UnsupportedEncodingException e) {
+            return "Failed to write out graph as HTML.";
+        }
+    }
+
+    private String getNoteForGraphNode(String nodeId, Graph graph) {
+        if (nodeId == null || nodeId.isEmpty()) {
+            return "";
+        }
+        StringBuilder result = new StringBuilder();
+        // Each graph text, find any a note with an 'internal_link' matching 'nodeId'.
+        // Add each of those to the final result.
+        graph.getGraphTexts().stream()
+                .map(GraphText::getNotes)
+                .forEach(notes ->
+                    result.append(notes.stream().filter(note -> nodeId.equals(note.internalLink))
+                            .map(moo -> moo.content)
+                            .findFirst()
+                            .orElse("")).append(' ')
+                );
+        return result.toString();
     }
 
     // Must make sure to escape text appropriately
@@ -237,6 +337,21 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
     }
 
+    private boolean[] orientation(int orientation) {
+        switch (orientation) {
+            case 0:
+                return new boolean[] { false, true, false, false };
+            case 90:
+                return new boolean[] { true, false, false, false };
+            case 180:
+                return new boolean[] { false, false, false, true };
+            case 270:
+                return new boolean[] { false, false, true, false };
+            default:
+                return new boolean[] { false, false, false, false };
+        }
+    }
+
     private void assembleLocationIcon(boolean[] orientation, Location[] locations, XMLStreamWriter writer) throws XMLStreamException {
         writer.writeStartElement("span");
         writer.writeAttribute("class", "aor-icon-container");
@@ -307,21 +422,20 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         for (int i = 0; i < refs.size(); i++) {
             InternalReference ref = refs.get(i);
             if (i > 0) {
-                writer.writeEmptyElement("br");
+                writer.writeCharacters(", ");
             }
-            // The 'reference' text seems to be left blank
-//            writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()) + " -&gt; ");
+
+            writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()));
             for (int j = 0; j < ref.getTargets().size(); j++) {
                 ReferenceTarget tar = ref.getTargets().get(j);
-                if (i > 0) {
-                    writer.writeCharacters("; ");
-                }
 
+                writer.writeCharacters("(");
                 writer.writeStartElement("a");
                 writer.writeAttribute("href", "javascript:;");
                 writer.writeAttribute("data-targetId", tar.getTargetId());
                 writer.writeCharacters("[" + tar.getText() + "]");
                 writer.writeEndElement();
+                writer.writeCharacters(")");
             }
         }
 
@@ -474,7 +588,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     // Add strings to builder separated by the given string
     private void add(StringBuilder sb, List<String> list, String sep) {
         for (int i = 0; i < list.size(); i++) {
-            if (i > 0) {
+            if (sb.length() > 0) {
                 sb.append(sep);
             }
             sb.append(list.get(i));
