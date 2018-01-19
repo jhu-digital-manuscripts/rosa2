@@ -38,6 +38,8 @@ import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.ReferenceTarget;
+import rosa.archive.model.aor.Table;
+import rosa.archive.model.aor.TextEl;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -100,6 +102,9 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         if (anno instanceof Drawing) {
             a.setDefaultSource(new AnnotationSource(
                     "moo", DC_TEXT, "text/html", drawingToDisplayHtml((Drawing) anno), language));
+        } else if (anno instanceof Table) {
+            a.setDefaultSource(new AnnotationSource(
+                    "moo", DC_TEXT, "text/html", tableToDisplayHtml((Table) anno), language));
         } else if (anno instanceof Graph) {
             a.setDefaultSource(new AnnotationSource(
                     "moo", DC_TEXT, "text/html", graphToDisplayHtml((Graph) anno), language));
@@ -257,18 +262,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     private String drawingToDisplayHtml(Drawing drawing) {
-        StringBuilder symbols = new StringBuilder();
-        StringBuilder people = new StringBuilder();
-        StringBuilder books = new StringBuilder();
-        StringBuilder locs = new StringBuilder();
-
-        add(symbols, drawing.getSymbols(), ", ");
-        add(people, drawing.getPeople(), ", ");
-        add(books, drawing.getBooks(), ", ");
-        add(locs, drawing.getLocations(), ", ");
-
-        // ----------------------------------------------------------------------------------------------
-        // ----- Write XML ------------------------------------------------------------------------------
         XMLOutputFactory outF = XMLOutputFactory.newInstance();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
 
@@ -289,10 +282,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
             addTranslation(drawing.getTranslation(), writer);
 
-            addListOfValues("Symbols:", symbols.toString(), writer);
-            addListOfValues("People:", people.toString(), writer);
-            addListOfValues("Books:", books.toString(), writer);
-            addListOfValues("Locations:", locs.toString(), writer);
+            addListOfValues("Symbols:", drawing.getSymbols(), ", ", writer);
+            addListOfValues("People:", drawing.getPeople(), ", ", writer);
+            addListOfValues("Books:", drawing.getBooks(), ", ", writer);
+            addListOfValues("Locations:", drawing.getLocations(), ", ", writer);
 
             addInternalRefs(drawing.getInternalRefs(), writer);
 
@@ -300,6 +293,41 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             return output.toString("UTF-8");
         } catch (XMLStreamException | UnsupportedEncodingException e) {
             return "Failed to write out drawing as HTML.";
+        }
+    }
+
+    private String tableToDisplayHtml(Table table) {
+        XMLOutputFactory outF = XMLOutputFactory.newInstance();
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        try {
+            XMLStreamWriter writer = outF.createXMLStreamWriter(output);
+
+            writer.writeStartElement("p");
+
+            addSimpleElement(writer, "span", "Table", "class", "annotation-title");
+            if (isNotEmpty(table.getType())) {
+                writer.writeCharacters(" " + table.getType().replaceAll("_", " "));
+            }
+
+            writer.writeStartElement("p");
+            addSimpleElement(writer, "span", "Text:", "class", "emphasize");
+            for (TextEl txt : table.getTexts()) {
+                writer.writeEmptyElement("br");
+                writer.writeCharacters(txt.getText());
+            }
+            writer.writeEndElement();
+
+            addTranslation(table.getTranslation(), writer);
+            addListOfValues("Symbols:", table.getSymbols(), ", ", writer);
+            addListOfValues("People:", table.getPeople(), ", ", writer);
+            addListOfValues("Books:", table.getBooks(), ", ", writer);
+            addListOfValues("Locations:", table.getLocations(), ", ", writer);
+            addInternalRefs(table.getInternalRefs(), writer);
+
+            writer.writeEndElement();
+            return output.toString("UTF-8");
+        } catch (XMLStreamException | UnsupportedEncodingException e) {
+            return "Failed to write out table as HTML.";
         }
     }
 
@@ -422,6 +450,12 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             String content = "[" + StringEscapeUtils.escapeHtml4(translation) + "]";
             addSimpleElement(writer, "p", content, "class", "italic");
         }
+    }
+
+    private void addListOfValues(String label, List<String> vals, String separator, XMLStreamWriter writer) throws XMLStreamException {
+        StringBuilder str = new StringBuilder();
+        add(str, vals, separator);
+        addListOfValues(label, str.toString(), writer);
     }
 
     private void addListOfValues(String label, String listStr, XMLStreamWriter writer) throws XMLStreamException {

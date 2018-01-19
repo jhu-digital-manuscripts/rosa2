@@ -149,27 +149,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
             case DRAWING:
                 aPage.getDrawings().forEach(d -> annotations.add(annotationTransformer.transform(collection, book, d)));
                 break;
-//            case MARK:
-//                for (rosa.archive.model.aor.Annotation ann : aPage.getMarks()) {
-//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-//                }
-//                break;
-//            // Underlines will not become annotations.
-//            case UNDERLINE:
-//                for (rosa.archive.model.aor.Annotation ann : aPage.getUnderlines()) {
-//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-//                }
-//                break;
-//            case NUMBERAL:
-//                for (rosa.archive.model.aor.Annotation ann : aPage.getNumerals()) {
-//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-//                }
-//                break;
-//            case ERRATA:
-//                for (rosa.archive.model.aor.Annotation ann : aPage.getErrata()) {
-//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-//                }
-//                break;
+            case TABLE:
+                aPage.getTables().forEach(t -> annotations.add(annotationTransformer.transform(collection, book, t)));
+                break;
             default:
                 break;
         }
