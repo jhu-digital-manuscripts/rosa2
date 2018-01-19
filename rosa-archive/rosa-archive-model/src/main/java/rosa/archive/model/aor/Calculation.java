@@ -66,7 +66,9 @@ public class Calculation extends Annotation implements Serializable {
 
     @Override
     public String toPrettyString() {
-        return null;
+        StringBuilder d = new StringBuilder();
+        data.forEach(d::append);
+        return "<p>" + d.toString() + "</p>";
     }
 
     @Override

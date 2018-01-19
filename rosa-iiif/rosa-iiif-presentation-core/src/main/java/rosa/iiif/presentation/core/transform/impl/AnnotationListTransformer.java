@@ -143,6 +143,12 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
             case GRAPH:
                 aPage.getGraphs().forEach(graph -> annotations.add(annotationTransformer.transform(collection, book, graph)));
                 break;
+            case CALCULATION:
+                aPage.getCalculations().forEach(c -> annotations.add(annotationTransformer.transform(collection, book, c)));
+                break;
+            case DRAWING:
+                aPage.getDrawings().forEach(d -> annotations.add(annotationTransformer.transform(collection, book, d)));
+                break;
 //            case MARK:
 //                for (rosa.archive.model.aor.Annotation ann : aPage.getMarks()) {
 //                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));

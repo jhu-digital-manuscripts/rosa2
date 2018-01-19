@@ -28,6 +28,7 @@ import rosa.archive.model.CharacterNames;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Graph;
 import rosa.archive.model.aor.GraphNode;
 import rosa.archive.model.aor.GraphText;
@@ -96,15 +97,15 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         a.setType(IIIFNames.OA_ANNOTATION);
         a.setMotivation(IIIFNames.SC_PAINTING);
 
-        if (anno instanceof Graph) {
+        if (anno instanceof Drawing) {
             a.setDefaultSource(new AnnotationSource(
-                    "moo", IIIFNames.DC_TEXT, "text/html", graphToDisplayHtml((Graph) anno), language));
+                    "moo", DC_TEXT, "text/html", drawingToDisplayHtml((Drawing) anno), language));
+        } else if (anno instanceof Graph) {
+            a.setDefaultSource(new AnnotationSource(
+                    "moo", DC_TEXT, "text/html", graphToDisplayHtml((Graph) anno), language));
         } else {
-            a.setDefaultSource(new AnnotationSource(
-                    "URI", IIIFNames.DC_TEXT, "text/html",
-                    locationIcon + " " + anno.toPrettyString(),
-                    language
-            ));
+            a.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
+                    locationIcon + " " + anno.toPrettyString(), language));
         }
 
         AnnotationTarget target = locationOnCanvas(
@@ -175,8 +176,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         StringBuilder notes = new StringBuilder();      // Notes that target the graph, not an individual node
         StringBuilder notesTr = new StringBuilder();
 
-        List<InternalReference> iRefs = new ArrayList<>(graph.getInternalRefs());
-
         for (GraphText gt : graph.getGraphTexts()) {
             add(people, gt.getPeople(), ", ");
             add(books, gt.getBooks(), ", ");
@@ -199,7 +198,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         try {
             XMLStreamWriter writer = outF.createXMLStreamWriter(output);
 
-            writer.writeStartElement("div");
+            writer.writeStartElement("p");
 
             assembleLocationIcon(orientation(graph.getOrientation()), new Location[] { graph.getLocation() }, writer);
 
@@ -230,7 +229,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             addListOfValues("Locations:", locs.toString(), writer);
             addListOfValues("Symbols:", symbols.toString(), writer);
 
-            addInternalRefs(iRefs, writer);
+            addInternalRefs(graph.getInternalRefs(), writer);
 
             writer.writeEndElement();
             return output.toString("UTF-8");
@@ -255,6 +254,53 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                             .orElse("")).append(' ')
                 );
         return result.toString();
+    }
+
+    private String drawingToDisplayHtml(Drawing drawing) {
+        StringBuilder symbols = new StringBuilder();
+        StringBuilder people = new StringBuilder();
+        StringBuilder books = new StringBuilder();
+        StringBuilder locs = new StringBuilder();
+
+        add(symbols, drawing.getSymbols(), ", ");
+        add(people, drawing.getPeople(), ", ");
+        add(books, drawing.getBooks(), ", ");
+        add(locs, drawing.getLocations(), ", ");
+
+        // ----------------------------------------------------------------------------------------------
+        // ----- Write XML ------------------------------------------------------------------------------
+        XMLOutputFactory outF = XMLOutputFactory.newInstance();
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+
+        try {
+            XMLStreamWriter writer = outF.createXMLStreamWriter(output);
+            writer.writeStartElement("p");
+
+            int orientation = 0;
+            try {
+                orientation = Integer.parseInt(drawing.getOrientation());
+            } catch (NumberFormatException e) {}
+
+            assembleLocationIcon(orientation(orientation), new Location[] {drawing.getLocation()}, writer);
+
+            addSimpleElement(writer, "span", "Drawing", "class", "annotation-title");
+
+            writer.writeCharacters(" " + drawing.getType().replaceAll("_", " "));
+
+            addTranslation(drawing.getTranslation(), writer);
+
+            addListOfValues("Symbols:", symbols.toString(), writer);
+            addListOfValues("People:", people.toString(), writer);
+            addListOfValues("Books:", books.toString(), writer);
+            addListOfValues("Locations:", locs.toString(), writer);
+
+            addInternalRefs(drawing.getInternalRefs(), writer);
+
+            writer.writeEndElement();
+            return output.toString("UTF-8");
+        } catch (XMLStreamException | UnsupportedEncodingException e) {
+            return "Failed to write out drawing as HTML.";
+        }
     }
 
     // Must make sure to escape text appropriately
@@ -308,7 +354,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         try {
             XMLStreamWriter writer = outF.createXMLStreamWriter(output);
 
-            writer.writeStartElement("div");
+            writer.writeStartElement("p");
 
             // ------ Add orientation + location icons ------
             assembleLocationIcon(orientation, positions.toArray(new Location[positions.size()]), writer);
@@ -594,14 +640,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             sb.append(list.get(i));
         }
     }
-
-//    private String trim_right(StringBuilder sb, int n) {
-//        if (sb.length() < n) {
-//            return "";
-//        }
-//
-//        return sb.substring(0, sb.length() - n);
-//    }
 
     private BookImage getPageImage(ImageList images, String page) {
         for (BookImage image : images) {

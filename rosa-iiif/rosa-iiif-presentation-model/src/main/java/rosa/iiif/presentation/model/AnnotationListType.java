@@ -16,7 +16,8 @@ public enum AnnotationListType {
     MARK,
     GRAPH,
     TABLE,
-    DRAWING
+    DRAWING,
+    CALCULATION
     ;
 
     /**

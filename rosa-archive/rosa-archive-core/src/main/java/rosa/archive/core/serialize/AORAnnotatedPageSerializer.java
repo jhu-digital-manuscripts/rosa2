@@ -594,12 +594,26 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                 case TAG_DRAWING:
                     Drawing d = new Drawing(
                             id,
-                            annotation.getAttribute(ATTR_TEXT),
+                            annotation.getAttribute(ATTR_ANCHOR_TEXT),
                             loc,
                             annotation.getAttribute(ATTR_NAME),
                             annotation.getAttribute(ATTR_METHOD),
                             annotation.getAttribute(ATTR_LANGUAGE)
                     );
+                    d.setType(annotation.getAttribute(ATTR_TYPE));
+                    NodeList textNodes = annotation.getElementsByTagName("text");
+                    for (int j = 0; j < textNodes.getLength(); j++) {
+                        if (textNodes.item(j).getNodeType() != Node.ELEMENT_NODE) {
+                            continue;
+                        }
+                        Element txtEl = (Element) textNodes.item(j);
+                        d.getTexts().add(new TextEl(
+                                txtEl.getAttribute(ATTR_HAND),
+                                txtEl.getAttribute(ATTR_LANGUAGE),
+                                txtEl.getAttribute(ATTR_ANCHOR_TEXT),
+                                txtEl.getTextContent()
+                        ));
+                    }
                     if (!hasId) {
                         d.setId(Annotations.annotationId(page.getPage(), TAG_DRAWING, page.getDrawings().size()), true);
                     }
