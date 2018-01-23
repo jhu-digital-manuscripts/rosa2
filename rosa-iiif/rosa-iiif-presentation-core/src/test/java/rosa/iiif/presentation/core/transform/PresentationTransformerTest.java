@@ -123,6 +123,9 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         checkACanvas(c1);
         checkACanvas(c2);
 
+        assertEquals("323", c1.getLabel("en"));
+        assertEquals("341", c2.getLabel("en"));
+
         assertNotNull(c1.getOtherContent());
         assertNotNull(c2.getOtherContent());
         assertEquals(1, c1.getOtherContent().size());
