@@ -455,7 +455,17 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		addField(doc, JHSearchField.OBJECT_ID, canvas_id);
 		addField(doc, JHSearchField.OBJECT_TYPE, IIIFNames.SC_CANVAS);
-		addField(doc, JHSearchField.OBJECT_LABEL, image.getName());
+
+		String label = image.getName();
+		AnnotatedPage transcript = book.getAnnotationPage(image.getId());
+		if (transcript != null) {
+			if (transcript.getPagination() != null && !transcript.getPagination().isEmpty()) {
+				label = transcript.getPagination();
+			} else if (transcript.getSignature() != null && !transcript.getSignature().isEmpty()) {
+				label = transcript.getSignature();
+			}
+		}
+		addField(doc, JHSearchField.OBJECT_LABEL, label);
 
 		addField(doc, JHSearchField.MANIFEST_ID, manifest_id);
 		addField(doc, JHSearchField.MANIFEST_LABEL, book.getBookMetadata("en").getCommonName());
