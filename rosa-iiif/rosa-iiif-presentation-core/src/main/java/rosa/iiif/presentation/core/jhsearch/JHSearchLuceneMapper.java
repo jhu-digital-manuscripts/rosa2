@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 import org.apache.lucene.document.Document;
 import org.xml.sax.InputSource;
@@ -33,14 +34,20 @@ import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.Transcription;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Annotation;
+import rosa.archive.model.aor.Calculation;
 import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Errata;
+import rosa.archive.model.aor.Graph;
+import rosa.archive.model.aor.GraphNode;
+import rosa.archive.model.aor.GraphText;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Symbol;
+import rosa.archive.model.aor.Table;
+import rosa.archive.model.aor.TextEl;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
 import rosa.archive.model.meta.BiblioData;
@@ -389,6 +396,9 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		page.getNumerals().forEach(a -> index(col, book, image, a, doc));
 		page.getMarginalia().forEach(a -> index(col, book, image, a, doc));
 		page.getUnderlines().forEach(a -> index(col, book, image, a, doc));
+		page.getCalculations().forEach(a -> index(col, book, image, a, doc));
+		page.getGraphs().forEach(a -> index(col, book, image, a, doc));
+		page.getTables().forEach(a -> index(col, book, image, a, doc));
 
 		// Index languages used and breaking out marginalia specifically
 
@@ -427,7 +437,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		page.getUnderlines().forEach(a -> {
 			String method = a.getMethod();
 
-			if (a != null) {
+			if (method != null) {
 				methods.add(method.toLowerCase());
 			}
 		});
@@ -435,7 +445,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		page.getMarks().forEach(a -> {
 			String method = a.getMethod();
 
-			if (a != null) {
+			if (method != null) {
 				methods.add(method.toLowerCase());
 			}
 		});
@@ -523,8 +533,23 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Drawing drawing, Document doc) {
-		addField(doc, JHSearchField.DRAWING, get_lang(drawing), stripTranscribersMarks(drawing.getReferencedText()));
-        addField(doc, JHSearchField.TEXT, get_lang(drawing), stripTranscribersMarks(drawing.getReferencedText()));
+		addField(doc, JHSearchField.DRAWING, SearchFieldType.STRING, drawing.getType());
+		addField(doc, JHSearchField.HAND, String.join(", ",
+				drawing.getTexts().stream().map(TextEl::getHand).distinct().collect(Collectors.toList())));
+
+		addField(doc, JHSearchField.METHOD, drawing.getMethod());
+
+		// All text: ./text[text] and ./text[anchor_text],
+		String allText = stripTranscribersMarks(String.join(", ", drawing.getTexts().stream()
+				.map(el -> el.getText() + " " + el.getAnchor_text())
+				.collect(Collectors.toList())) + " " + drawing.getReferencedText() + " " + drawing.getTranslation());
+		addField(doc, JHSearchField.DRAWING, get_lang(drawing), allText);
+        addField(doc, JHSearchField.TEXT, get_lang(drawing), allText);
+
+        addRefList(drawing.getPeople(), col.getPeopleRef(), JHSearchField.PEOPLE, doc);
+        addRefList(drawing.getBooks(), col.getBooksRef(), JHSearchField.BOOK, doc);
+        addRefList(drawing.getLocations(), col.getLocationsRef(), JHSearchField.PLACE, doc);
+		addField(doc, JHSearchField.SYMBOL, SearchFieldType.STRING, String.join(", ", drawing.getSymbols()));
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Errata errata, Document doc) {
@@ -555,6 +580,12 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         addField(doc, JHSearchField.TEXT, get_lang(underline), stripTranscribersMarks(underline.getReferencedText()));
 	}
 
+	private void index(BookCollection col, Book book, BookImage image, Calculation calc, Document doc) {
+	    addField(doc, JHSearchField.CALCULATION, SearchFieldType.STRING, calc.getType());
+	    addField(doc, JHSearchField.METHOD, SearchFieldType.STRING, calc.getMethod());
+	    addField(doc, JHSearchField.CALCULATION, String.join(", ", calc.getData()));
+    }
+
 	private SearchFieldType get_lang(Annotation a) {
 		SearchFieldType type = null;
 
@@ -568,6 +599,25 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		}
 
 		return type;
+	}
+
+	/**
+	 * Add a list of values to the index. If a reference sheet exists, also add any
+	 * relevant alternative values.
+	 *
+	 * @param values list of values to index
+	 * @param reference reference sheet that may contain alternate values
+	 * @param field search field to index data
+	 * @param doc Lucene document
+	 */
+	private void addRefList(List<String> values, ReferenceSheet reference, JHSearchField field, Document doc) {
+		values.forEach(v -> {
+			addField(doc, field, v);
+
+			if (reference != null && reference.hasAlternates(v)) {
+				reference.getAlternates(v).forEach(alt -> addField(doc, field, alt));
+			}
+		});
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Marginalia marg, Document doc) {
@@ -590,40 +640,14 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 			}
 
 			for (Position pos : lang.getPositions()) {
-				transcription.append(to_string(pos.getTexts()));
+				transcription.append(String.join(", ", pos.getTexts()));
 
 				// Index <person> tags + variants
-
-				pos.getPeople().forEach(person -> {
-					addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, person);
-
-					if (peopleRefs != null && peopleRefs.hasAlternates(person)) {
-						peopleRefs.getAlternates(person)
-								.forEach(alt -> addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, alt));
-					}
-				});
-
+				addRefList(pos.getPeople(), peopleRefs, JHSearchField.PEOPLE, doc);
 				// Index <book> tags + variants
-
-				pos.getBooks().forEach(bookRef -> {
-					addField(doc, JHSearchField.BOOK, SearchFieldType.ENGLISH, bookRef);
-
-					if (bookRefs != null && bookRefs.hasAlternates(bookRef)) {
-						bookRefs.getAlternates(bookRef)
-								.forEach(alt -> addField(doc, JHSearchField.BOOK, SearchFieldType.ENGLISH, alt));
-					}
-				});
-
+				addRefList(pos.getBooks(), bookRefs, JHSearchField.BOOK, doc);
 				// Index <location> tags + variants
-
-				pos.getLocations().forEach(location -> {
-					addField(doc, JHSearchField.PLACE, SearchFieldType.ENGLISH, location);
-
-					if (locationRefs != null && locationRefs.hasAlternates(location)) {
-						locationRefs.getAlternates(location)
-								.forEach(alt -> addField(doc, JHSearchField.PLACE, SearchFieldType.ENGLISH, alt));
-					}
-				});
+				addRefList(pos.getLocations(), locationRefs, JHSearchField.PLACE, doc);
 
 				pos.getEmphasis().forEach(underline -> emphasis.append(stripTranscribersMarks(underline.getReferencedText())).append(" "));
 
@@ -633,14 +657,15 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
                     
                     if (xref.getText() != null && xref.getLanguage() != null) {
                         SearchFieldType type = getSearchFieldTypeForLang(xref.getLanguage());
-                        String text = stripTranscribersMarks(xref.getText());
                         
                         // TODO Do some checks of X-Ref lang and some logging
                         if (type != null) {
-                            addField(doc, JHSearchField.CROSS_REFERENCE, type, text);
+                            addField(doc, JHSearchField.CROSS_REFERENCE, type, stripTranscribersMarks(xref.getText()));
                         }
                     }
 				}
+
+				pos.getSymbols().forEach(s -> addField(doc, JHSearchField.SYMBOL, SearchFieldType.STRING, s));
 			}
 		}
 		
@@ -649,18 +674,60 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
         addField(doc, JHSearchField.TEXT, SearchFieldType.ENGLISH, marg.getTranslation());
 		addField(doc, JHSearchField.EMPHASIS, marg_lang_type, emphasis.toString());
+		addField(doc, JHSearchField.HAND, marg.getHand());
 	}
+
+	private void index(BookCollection col, Book book, BookImage image, Graph graph, Document doc) {
+	    addField(doc, JHSearchField.GRAPH, SearchFieldType.STRING, graph.getType());
+
+	    for (GraphText text : graph.getGraphTexts()) {
+	        addField(doc, JHSearchField.HAND, String.join(", ",
+                    text.getNotes().stream().map(note -> note.hand).distinct().collect(Collectors.toList())));
+	        addRefList(text.getPeople(), col.getPeopleRef(), JHSearchField.PEOPLE, doc);
+	        addRefList(text.getBooks(), col.getBooksRef(), JHSearchField.BOOK, doc);
+	        addRefList(text.getLocations(), col.getLocationsRef(), JHSearchField.PLACE, doc);
+	        addField(doc, JHSearchField.SYMBOL, SearchFieldType.STRING, String.join(", ", text.getSymbols()));
+	        addField(doc, JHSearchField.GRAPH, String.join(", ", text.getTranslations()));
+            addField(doc, JHSearchField.TEXT, String.join(", ", text.getTranslations()));
+        }
+
+        String text = String.join(", ",
+                graph.getNodes().stream().map(node -> node.getText() + " " + node.getContent()).collect(Collectors.toList()));
+        addField(doc, JHSearchField.GRAPH, text);
+        addField(doc, JHSearchField.TEXT, text);
+        addField(doc, JHSearchField.PEOPLE, String.join(", ",
+                graph.getNodes().stream().map(GraphNode::getPerson).collect(Collectors.toList())));
+    }
+
+    private void index(BookCollection col, Book book, BookImage image, Table table, Document doc) {
+	    addField(doc, JHSearchField.TABLE, SearchFieldType.STRING, table.getType());
+        addField(doc, JHSearchField.HAND,
+                String.join(", ", table.getTexts().stream().map(TextEl::getHand).distinct().collect(Collectors.toList())));
+
+	    addField(doc, JHSearchField.TABLE, String.join(", ",
+                table.getTexts().stream().map(txt -> txt.getAnchor_text() + " " + txt.getText()).collect(Collectors.toList())));
+        addField(doc, JHSearchField.TEXT, String.join(", ",
+                table.getTexts().stream().map(txt -> txt.getAnchor_text() + " " + txt.getText()).collect(Collectors.toList())));
+        addField(doc, JHSearchField.TABLE, table.getTranslation());
+        addField(doc, JHSearchField.TEXT, table.getTranslation());
+        addField(doc, JHSearchField.TABLE, table.getAggregatedInfo());
+
+        addRefList(table.getPeople(), col.getPeopleRef(), JHSearchField.PEOPLE, doc);
+        addRefList(table.getBooks(), col.getBooksRef(), JHSearchField.BOOK, doc);
+        addRefList(table.getLocations(), col.getLocationsRef(), JHSearchField.PLACE, doc);
+
+        addField(doc, JHSearchField.SYMBOL, String.join(", ", table.getSymbols()));
+
+        table.getCells().stream()
+                .map(cell -> cell.getAnchorData() + " " + cell.getAnchorText() + " " + cell.getContent())
+                .forEach(stuff -> {
+                    addField(doc, JHSearchField.TABLE, stuff);
+                    addField(doc, JHSearchField.TEXT, stuff);
+                });
+    }
 
 	protected static String stripTranscribersMarks(String s) {
 		return s.replace("[", "").replace("]", "");
 	}
 
-	private String to_string(List<String> list) {
-		StringBuilder sb = new StringBuilder();
-		for (String str : list) {
-			sb.append(str.trim());
-			sb.append(' ');
-		}
-		return sb.toString();
-	}
 }

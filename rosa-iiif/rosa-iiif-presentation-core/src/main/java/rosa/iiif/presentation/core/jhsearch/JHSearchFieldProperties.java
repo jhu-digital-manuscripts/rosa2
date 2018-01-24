@@ -111,4 +111,13 @@ interface JHSearchFieldProperties {
     String TEXT_DESCRIPTION = "Search the text of an item. This can include transcriptions and translations.";
     String CHAR_NAME_LABEL = "Character names";
     String CHAR_NAME_DESCRIPTION = "Search names of characters in the Roman de la Rose. For a list of character names visit the <em>Roman de la Rose</em> Digital Library [http://dlmm.sharedblogs.library.jhu.edu/en/character-names/]";
+
+    String HAND_LABEL = "Hand";
+    String HAND_DESCRIPTION = "Author of the annotation";
+    String CALC_LABEL = "Calculation";
+    String CALC_DESCRIPTION = "Search through annotations used as calculations ";
+    String GRAPH_LABEL = "Graph";
+    String GRAPH_DESCRIPTION = "Search through graphs";
+    String TABLE_LABEL = "Table";
+    String TABLE_DESCRIPTION = "Search through table annotations";
 }

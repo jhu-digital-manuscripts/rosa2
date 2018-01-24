@@ -31,6 +31,12 @@ public enum JHSearchField implements SearchField, JHSearchFieldProperties {
     BOOK(true, false,true, BOOK_LABEL, BOOK_DESCRIPTION, SearchFieldType.ENGLISH),
     METHOD(false, false, true, METHOD_LABEL, METHOD_DESCRIPTION, METHOD_VALUES, SearchFieldType.STRING),
 
+    // Added with AOR2
+    CALCULATION(true, false, true, CALC_LABEL, CALC_DESCRIPTION, SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    GRAPH(true, false, true, GRAPH_LABEL, GRAPH_DESCRIPTION, SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    TABLE(true, false, true, TABLE_LABEL, TABLE_DESCRIPTION, SearchFieldType.STRING, SearchFieldType.ENGLISH, SearchFieldType.FRENCH, SearchFieldType.ITALIAN, SearchFieldType.GREEK, SearchFieldType.SPANISH, SearchFieldType.LATIN),
+    HAND(true, false, true, HAND_LABEL, HAND_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.STRING),
+
     // Set of fields that will be shared among all collections
     TITLE(true, false, true, TITLE_LABEL, TITLE_DESCRIPTION, SearchFieldType.ENGLISH, SearchFieldType.OLD_FRENCH, SearchFieldType.FRENCH, SearchFieldType.LATIN, SearchFieldType.GREEK, SearchFieldType.ITALIAN, SearchFieldType.SPANISH),
     PEOPLE(true, false, true, PEOPLE_LABEL, PEOPLE_DESCRIPTION, SearchFieldType.ENGLISH),
