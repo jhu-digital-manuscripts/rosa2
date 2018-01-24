@@ -43,6 +43,7 @@ import rosa.archive.model.aor.TextEl;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
+import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
@@ -98,6 +99,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         a.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), anno.getId()));
         a.setType(IIIFNames.OA_ANNOTATION);
         a.setMotivation(IIIFNames.SC_PAINTING);
+        a.getMetadata().put("type", new HtmlValue(anno.getClass().getSimpleName()));
 
         if (anno instanceof Drawing) {
             a.setDefaultSource(new AnnotationSource(
@@ -154,6 +156,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
         anno.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), marg.getId()));
         anno.setMotivation(IIIFNames.SC_PAINTING);
+        anno.getMetadata().put("type", new HtmlValue("Marginalia"));
         anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
                 marginaliaToDisplayHtml(marg), lang));
 
@@ -275,9 +278,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             } catch (NumberFormatException e) {}
 
             assembleLocationIcon(orientation(orientation), new Location[] {drawing.getLocation()}, writer);
-
-            addSimpleElement(writer, "span", "Drawing", "class", "annotation-title");
-
+//            addSimpleElement(writer, "span", "Drawing", "class", "annotation-title");
             writer.writeCharacters(" " + drawing.getType().replaceAll("_", " "));
 
             addTranslation(drawing.getTranslation(), writer);
@@ -303,8 +304,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             XMLStreamWriter writer = outF.createXMLStreamWriter(output);
 
             writer.writeStartElement("p");
-
-            addSimpleElement(writer, "span", "Table", "class", "annotation-title");
+//            addSimpleElement(writer, "span", "Table", "class", "annotation-title");
             if (isNotEmpty(table.getType())) {
                 writer.writeCharacters(" " + table.getType().replaceAll("_", " "));
             }
