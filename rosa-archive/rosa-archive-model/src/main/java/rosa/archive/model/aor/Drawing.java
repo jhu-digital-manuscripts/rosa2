@@ -61,6 +61,7 @@ public class Drawing extends Annotation implements Serializable {
         this.books = new ArrayList<>();
         this.locations = new ArrayList<>();
         this.symbols = new ArrayList<>();
+        this.internalRefs = new ArrayList<>();
     }
 
     public Drawing(String id, String referringText, Location location, String name, String method, String language) {
@@ -71,6 +72,7 @@ public class Drawing extends Annotation implements Serializable {
         this.books = new ArrayList<>();
         this.locations = new ArrayList<>();
         this.symbols = new ArrayList<>();
+        this.internalRefs = new ArrayList<>();
     }
 
     public String getMethod() {

@@ -11,11 +11,15 @@ import rosa.archive.core.serialize.FileMapSerializer;
 import rosa.archive.model.FileMap;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Annotation;
+import rosa.archive.model.aor.Drawing;
+import rosa.archive.model.aor.Graph;
+import rosa.archive.model.aor.GraphText;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.ReferenceTarget;
+import rosa.archive.model.aor.Table;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -114,14 +118,14 @@ public class AORTranscriptionChecker {
      * PrincetonK6233.001r.tif. This tool will check to see if the associated
      * image is the same page as the transcription.
      *
-     * Within each transcription file, there will exist a list of Marginalia,
-     * each of which may contain references to books, people, and/or locations. These
+     * Within each transcription file, there will exist a list of elements,
+     * that may contain references to books, people, and/or locations. These
      * references are held in an external spreadsheet along with any alternate spelling
      * that has been used in the corpus. The references in the marginalia tags
      * MUST be a recognized "standard" name, which serves as an index in the
      * spreadsheet. This tool will check all references against the spreadsheets.
      *
-     * The marginalia can also contain references to other transcribed pages in the
+     * Elements can also contain references to other transcribed pages in the
      * corpus. These "internal references" must follow certain rules in order to
      * be useful. The targets of these references must cite a valid transcription
      * file that ends with a '.xml' file extension and exists within the specified
@@ -160,7 +164,6 @@ public class AORTranscriptionChecker {
      * @param report PrintStream to record output
      */
     private void doCollection(final String path, PrintStream report) {
-
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(Paths.get(path),
                 entry -> Files.isDirectory(entry)
         )) {
@@ -254,6 +257,13 @@ public class AORTranscriptionChecker {
         }
     }
 
+    /**
+     * Add all annotation IDs to the internal list so that we can check to see if referenced
+     * IDs exist.
+     *
+     * @param bookPath path of book
+     * @param report PrintStream to record output
+     */
     private void addBookIds(Path bookPath, PrintStream report) {
         List<String> errors = new ArrayList<>();
         String book = bookPath.getFileName().toString();
@@ -313,33 +323,44 @@ public class AORTranscriptionChecker {
         }
         // -----------------------------------------------------------------------
         // Check annotated page against spreadsheets
+        String prefix = "Page [" + annotatedPage.getPage() + "]";
+
         for (Marginalia marg : annotatedPage.getMarginalia()) {
             for (MarginaliaLanguage ml : marg.getLanguages()) {
                 for (Position pos : ml.getPositions()) {
-
-                    String prefix = "Page [" + annotatedPage.getPage() + "]";
-                    for (String book : pos.getBooks()) {
-                        if (isEmpty(book)) {
-                            report.println("  [" + annotatedPage.getId() + "] Found invalid book: Empty title");
-                        } else {
-                            checkString(book, booksList, prefix + " books - ", report);
-                        }
-                    }
-
-                    for (String person : pos.getPeople()) {
-                        checkString(person, peopleList, prefix + " person - ", report);
-                    }
-
-                    for (String loc : pos.getLocations()) {
-                        checkString(loc, locationsList, prefix + " location - ", report);
-                    }
+                    pos.getBooks().forEach(book -> checkString(book, booksList, prefix + " book - ", report));
+                    pos.getPeople().forEach(person -> checkString(person, peopleList, prefix + " person - ", report));
+                    pos.getLocations().forEach(loc -> checkString(loc, locationsList, prefix + " location - ", report));
                 }
             }
+        }
+
+        for (Drawing drawing : annotatedPage.getDrawings()) {
+            drawing.getBooks().forEach(book -> checkString(book, booksList, prefix + " book - ", report));
+            drawing.getPeople().forEach(p -> checkString(p, peopleList, prefix + " person - ", report));
+            drawing.getLocations().forEach(l -> checkString(l, locationsList, prefix + " location - ", report));
+        }
+
+        for (Graph graph : annotatedPage.getGraphs()) {
+            for (GraphText gt : graph.getGraphTexts()) {
+                gt.getBooks().forEach(book -> checkString(book, booksList, prefix + " book - ", report));
+                gt.getPeople().forEach(p -> checkString(p, peopleList, prefix + " person - ", report));
+                gt.getLocations().forEach(l -> checkString(l, locationsList, prefix + " location - ", report));
+            }
+        }
+
+        for (Table table : annotatedPage.getTables()) {
+            table.getBooks().forEach(book -> checkString(book, booksList, prefix + " book - ", report));
+            table.getPeople().forEach(p -> checkString(p, peopleList, prefix + " person - ", report));
+            table.getLocations().forEach(l -> checkString(l, locationsList, prefix + " location - ", report));
         }
     }
 
     private void checkString(String toCheck, List<MultiValue> reference, String reportPrefix, PrintStream report) {
-        if (isEmpty(toCheck) || reference == null || reference.isEmpty()) {
+        if (reference == null || reference.isEmpty()) {
+            return;
+        } else if (isEmpty(toCheck)) {
+            report.println("  " + reportPrefix + " Invalid: empty value");
             return;
         }
 
@@ -432,35 +453,94 @@ public class AORTranscriptionChecker {
     }
 
     private void checkInternalRefs(AnnotatedPage aPage, PrintStream report) {
+        // First check all annotations for 'internal_ref' attribute
+        aPage.getAnnotations()
+                .forEach(annotation -> checkTarget(annotation.getInternalRef(), aPage.getId(), annotation.getId(), report));
+
         for (Marginalia marg : aPage.getMarginalia()) {
+            checkTarget(marg.getContinuesFrom(), aPage.getId(), marg.getId(), report);
+            checkTarget(marg.getContinuesTo(), aPage.getId(), marg.getId(), report);
             for (MarginaliaLanguage lang : marg.getLanguages()) {
                 for (Position pos : lang.getPositions()) {
                     for (InternalReference ref : pos.getInternalRefs()) {
                         for (ReferenceTarget target : ref.getTargets()) {
-                            // Check internal ref targets to make sure their referenced IDs exist
-                            // in the corpus (unless target points to external entity)
-                            String targetId = target.getTargetId();
-                            if (targetId == null) {
-                                report.println("  Internal Reference [" + aPage.getId() + ":" + marg.getId() +
-                                        "] no 'ref' ID found.");
-                                continue;
-                            }
-                            if (!annotationIds.contains(targetId) && !targetId.startsWith("http")) {
-                                report.println("  Internal Reference [" + aPage.getId() + ":" + marg.getId() +
-                                        "] target ID not found in corpus. (" + targetId + ")");
-                            }
-                            if (target.getBookId() != null && !target.getBookId().isEmpty()) {
-                                report.println("  Internal Reference [" + aPage.getId() + ":" + marg.getId() +
-                                        "] found using deprecated attribute (book_id)");
-                            }
-                            if (target.getFilename() != null && !target.getFilename().isEmpty()) {
-                                report.println("  Internal Reference [" + aPage.getId() + ":" + marg.getId() +
-                                        "] found using deprecated attribute (filename)");
-                            }
+                            checkTarget(target, aPage.getId(), marg.getId(), report);
                         }
                     }
                 }
             }
+        }
+
+        for (Drawing d : aPage.getDrawings()) {
+            for (InternalReference ref : d.getInternalRefs()) {
+                for (ReferenceTarget target : ref.getTargets()) {
+                    checkTarget(target, aPage.getId(), d.getId(), report);
+                }
+            }
+        }
+
+        for (Graph g : aPage.getGraphs()) {
+            checkTarget(g.getContinuesFrom(), aPage.getId(), g.getId(), report);
+            checkTarget(g.getContinuesTo(), aPage.getId(), g.getId(), report);
+            for (InternalReference ref : g.getInternalRefs()) {
+                for (ReferenceTarget target : ref.getTargets()) {
+                    checkTarget(target, aPage.getId(), g.getId(), report);
+                }
+            }
+        }
+
+        for (Table table : aPage.getTables()) {
+            for (InternalReference ref : table.getInternalRefs()) {
+                for (ReferenceTarget target : ref.getTargets()) {
+                    checkTarget(target, aPage.getId(), table.getId(), report);
+                }
+            }
+        }
+
+        aPage.getLinks().forEach(link ->
+            link.getAllIds().forEach(id -> {
+                if (isEmpty(id)) {
+                    report.println("  [" + aPage.getId() + ":" + link.getId() + "] Empty physical link node ID");
+                } else if (!annotationIds.contains(id)) {
+                    report.println("  [" + aPage.getId() + ":" + link.getId() + "] Physical link node ID not found (" + id + ")");
+                }
+            })
+        );
+    }
+
+    private void checkTarget(String ref, String transcriptionId, String annotationId, PrintStream report) {
+        if (!isEmpty(ref)) {
+            checkTarget(new ReferenceTarget(ref, null), transcriptionId, annotationId, report);
+        }
+    }
+
+    /**
+     * Check internal ref targets to make sure their referenced IDs exist in the corpus
+     * (unless target points to external entity)
+     *
+     * @param target internal reference target
+     * @param transcriptionId page ID
+     * @param annotationId ID of parent annotation of this reference target
+     * @param report PrintStream to record output
+     */
+    private void checkTarget(ReferenceTarget target, String transcriptionId, String annotationId, PrintStream report) {
+        String targetId = target.getTargetId();
+        if (targetId == null) {
+            report.println("  Internal Reference [" + transcriptionId + ":" + annotationId +
+                    "] no 'ref' ID found.");
+            return;
+        }
+        if (!annotationIds.contains(targetId) && !targetId.startsWith("http")) {
+            report.println("  Internal Reference [" + transcriptionId + ":" + annotationId +
+                    "] target ID not found in corpus. (" + targetId + ")");
+        }
+        if (target.getBookId() != null && !target.getBookId().isEmpty()) {
+            report.println("  Internal Reference [" + transcriptionId + ":" + annotationId +
+                    "] found using deprecated attribute (book_id)");
+        }
+        if (target.getFilename() != null && !target.getFilename().isEmpty()) {
+            report.println("  Internal Reference [" + transcriptionId + ":" + annotationId +
+                    "] found using deprecated attribute (filename)");
         }
     }
 

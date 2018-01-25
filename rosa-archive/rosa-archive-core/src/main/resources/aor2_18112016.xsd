@@ -148,6 +148,7 @@
         <xs:enumeration value="chalk"/>
         <xs:enumeration value="pen"/>
         <xs:enumeration value="pencil"/>
+        <xs:enumeration value="scoring"/>
         <xs:enumeration value="typewriter"/>
       </xs:restriction>
     </xs:simpleType>
@@ -364,6 +365,7 @@
           <xs:enumeration value="curved"/>
           <xs:enumeration value="dotted"/>
           <xs:enumeration value="double"/>
+          <xs:enumeration value="triple"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -516,6 +518,8 @@
           <xs:enumeration value="map"/>
           <xs:enumeration value="church"/>
           <xs:enumeration value="star"/>
+          <xs:enumeration value="house"/>
+          <xs:enumeration value="sword"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
