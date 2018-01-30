@@ -4,13 +4,18 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
+import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Location;
+import rosa.archive.model.aor.Marginalia;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.model.annotation.Annotation;
+import sun.misc.IOUtils;
 
+import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -104,6 +109,69 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
             assertEquals("Unexpected result found.", expected.get(i), result);
         }
 
+    }
+
+    /**
+     * Make sure entities are not double-escaped. As XML data is read, entities will be expanded, as normal.
+     * However, when the data is translated to HTML, we need to ensure the writer is not too aggressive in
+     * escaping these entities. 'á' will be escaped to '&amp;aacute;' by an HTML 4 escape utility. Some
+     * writers will then try to escape the ampersand again, resulting in '&amp;amp;accute;'
+     *
+     * (For the sake of reading in Java: 'á' will be escaped to '&aacute;' by an HTML 4 escape utility. Some
+     * writers will then try to escape the ampersand again, resulting in '&amp;accute;')
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void xmlEntitiesTest() throws Exception {
+        String data = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+                "<!DOCTYPE transcription SYSTEM \"http://www.livesandletters.ac.uk/schema/aor_20141023.dtd\">\n" +
+                "<transcription xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd\">\n" +
+                "    <page filename=\"BLC120b4.016r.tif\" pagination=\"16\" reader=\"John Dee\"/>\n" +
+                "    <annotation>\n" +
+                "        <marginalia hand=\"Italian\" method=\"pen\">\n" +
+                "            <language ident=\"EN\">\n" +
+                "                <position place=\"tail\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>&Sun; - 1/2</marginalia_text>\n" +        // Entity here :: &Sun;  -->   ☉
+                "                    <symbol_in_text name=\"Sun\"/>\n" +                        //   - Defined only in DTD
+                "                </position>\n" +
+                "            </language>\n" +
+                "        </marginalia>\n" +
+                "        <marginalia hand=\"Italian\" anchor_text=\"Adum&aacute;\" method=\"pen\">\n" +         // á
+                "            <language ident=\"LA\">\n" +
+                "                <position place=\"right_margin\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>\n" +
+                "                        Nota quod dicat Adum&aacute;, tantu[m], no[n] adiecta particula illa Voarch[adumia]:\n" +
+                "                    </marginalia_text>\n" +
+                "                    <person name=\"Adum&aacute;\"/>\n" +
+                "                    <book title=\"Voarchadumia\"/>\n" +
+                "                </position>\n" +
+                "            </language>\n" +
+                "            <translation>Note what Aduma says, only that particular was not aimed at Voarchadumia:</translation>\n" +
+                "        </marginalia>\n" +
+                "    </annotation>\n" +
+                "</transcription>";
+
+        BookCollection col = new BookCollection();
+        col.setId("Moo");
+
+        Book book = new Book();
+        book.setId("The Greatest Moo");
+
+        BookImage image = new BookImage("FirstMoo", 3, 3, false);
+
+        AORAnnotatedPageSerializer serializer = new AORAnnotatedPageSerializer();
+        List<String> errors = new ArrayList<>();
+        ByteArrayInputStream in = new ByteArrayInputStream(data.getBytes("UTF-8"));
+
+        AnnotatedPage p = serializer.read(in, errors);
+
+        assertNotNull(p);
+        assertTrue(errors.isEmpty());
+        assertEquals(2, p.getMarginalia().size());
+
+        Annotation a = transformer.transform(col, book, image, p.getMarginalia().get(1));
+        assertFalse(a.getDefaultSource().getEmbeddedText().contains("&amp;"));
     }
 
     private List<Location[]> testLocations() {

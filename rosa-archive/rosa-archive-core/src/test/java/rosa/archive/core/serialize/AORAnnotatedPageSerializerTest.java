@@ -160,31 +160,6 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals(0, numerals);
     }
 
-//    /**
-//     * Test the serializer's reading and writing functions together. Given a known AnnotationPage
-//     * object, the serializer is used to write the object and to read back the written object.
-//     * The resulting object MUST be equal to the original object.
-//     *
-//     * @throws Exception reading/writing can both throw IOExceptions
-//     */
-//    @Test
-//    @Override
-//    public void roundTripTest() throws IOException {
-//        AnnotatedPage page = createPage();
-//        ByteArrayOutputStream out = new ByteArrayOutputStream();
-//
-//        serializer.write(page, out);
-//
-//        ByteArrayInputStream in = new ByteArrayInputStream(out.toByteArray());
-//        List<String> errors = new ArrayList<>();
-//
-//        AnnotatedPage read = serializer.read(in, errors);
-//
-//        assertTrue("Unexpected errors found while deserializing.", errors.isEmpty());
-//        assertNotNull("Deserialized page is NULL.", read);
-//        assertTrue("Deserialized page not equal to original page.", page.equals(read));
-//    }
-
     // Note IDs of annotations take special values based of Page#, annotation type, and annotation order
     @Override
     protected AnnotatedPage createObject() {
@@ -236,6 +211,11 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         return page;
     }
 
+    /**
+     * Test that the AOR parser expands XML entities based on the DTD definitions.
+     *
+     * @throws Exception .
+     */
     @Test
     public void resolvingXmlEntitiesTest() throws Exception {
         String data = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
@@ -243,13 +223,25 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
                 "<transcription xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd\">\n" +
                 "    <page filename=\"BLC120b4.016r.tif\" pagination=\"16\" reader=\"John Dee\"/>\n" +
                 "    <annotation>\n" +
-                "    <marginalia hand=\"Italian\" method=\"pen\">\n" +
+                "        <marginalia hand=\"Italian\" method=\"pen\">\n" +
                 "            <language ident=\"EN\">\n" +
                 "                <position place=\"tail\" book_orientation=\"0\">\n" +
                 "                    <marginalia_text>&Sun; - 1/2</marginalia_text>\n" +        // Entity here :: &Sun;  -->   ☉
                 "                    <symbol_in_text name=\"Sun\"/>\n" +                        //   - Defined only in DTD
                 "                </position>\n" +
                 "            </language>\n" +
+                "        </marginalia>\n" +
+                "        <marginalia hand=\"Italian\" anchor_text=\"Adum&aacute;\" method=\"pen\">\n" +         // á
+                "            <language ident=\"LA\">\n" +
+                "                <position place=\"right_margin\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>\n" +
+                "                        Nota quod dicat Adum&aacute;, tantu[m], no[n] adiecta particula illa Voarch[adumia]:\n" +
+                "                    </marginalia_text>\n" +
+                "                    <person name=\"Adum&aacute;\"/>\n" +
+                "                    <book title=\"Voarchadumia\"/>\n" +
+                "                </position>\n" +
+                "            </language>\n" +
+                "            <translation>Note what Aduma says, only that particular was not aimed at Voarchadumia:</translation>\n" +
                 "        </marginalia>\n" +
                 "    </annotation>\n" +
                 "</transcription>";
@@ -263,35 +255,17 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertTrue(errors.isEmpty());
 
         assertFalse(obj.getMarginalia().isEmpty());
-        assertEquals(1, obj.getMarginalia().size());
-        assertEquals(1, obj.getMarginalia().get(0).getLanguages().size());
-        assertEquals(1, obj.getMarginalia().get(0).getLanguages().get(0).getPositions().size());
+        assertEquals(2, obj.getMarginalia().size());
 
         Position pos = obj.getMarginalia().get(0).getLanguages().get(0).getPositions().get(0);
         // Marginalia position must have text and symbol
-        assertNotNull(pos);
-        assertFalse(pos.getTexts().isEmpty());
-        assertFalse(pos.getSymbols().isEmpty());
-
-        System.out.println(pos);
         String text = pos.getTexts().get(0);
         assertTrue("Text should contain entity \"&Sun;\" or its resolved form \"☉\"\n\tInstead found \"" + text + "\"",
                 text.contains("☉") || text.contains("&Sun;"));
-    }
 
-//    private Document getDocument(String path) throws IOException {
-//        try {
-//            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-//            InputStream in = getResourceAsStream(path);
-//
-//            Document doc = builder.parse(in);
-//            in.close();
-//
-//            doc.normalizeDocument();
-//            return doc;
-//        } catch (ParserConfigurationException | SAXException e) {
-//            throw new IOException("Failed to load XML.", e);
-//        }
-//    }
+        String otherPerson = obj.getMarginalia().get(1).getLanguages().get(0).getPositions().get(0).getPeople().get(0);
+        assertTrue("Name of person should contain \"á\", instead found \"" + otherPerson + '"',
+                otherPerson.contains("á"));
+    }
 
 }

@@ -208,7 +208,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
         // ----------------------------------------------------------------------------------------------
         // ----- Write XML ------------------------------------------------------------------------------
-        XMLOutputFactory outF = XMLOutputFactory.newInstance();
+        XMLOutputFactory outF = newOutputFactory();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
 
         try {
@@ -273,7 +273,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     private String drawingToDisplayHtml(Drawing drawing) {
-        XMLOutputFactory outF = XMLOutputFactory.newInstance();
+        XMLOutputFactory outF = newOutputFactory();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
 
         try {
@@ -306,7 +306,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     private String tableToDisplayHtml(Table table) {
-        XMLOutputFactory outF = XMLOutputFactory.newInstance();
+        XMLOutputFactory outF = newOutputFactory();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         try {
             XMLStreamWriter writer = outF.createXMLStreamWriter(output);
@@ -384,8 +384,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             }
         }
 
-        XMLOutputFactory outF = XMLOutputFactory.newInstance();
-
+        XMLOutputFactory outF = newOutputFactory();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         try {
             XMLStreamWriter writer = outF.createXMLStreamWriter(output);
@@ -884,6 +883,12 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
     private boolean isNotEmpty(String str) {
         return str != null && !str.isEmpty();
+    }
+
+    private XMLOutputFactory newOutputFactory() {
+        XMLOutputFactory outF = XMLOutputFactory.newInstance();
+        outF.setProperty("escapeCharacters", false);
+        return outF;
     }
 
 }
