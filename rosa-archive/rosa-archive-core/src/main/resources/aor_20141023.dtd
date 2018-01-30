@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--Special characters-->
 <!ENTITY AElig "Æ" >
 <!ENTITY Agrave "À">
 <!ENTITY Auml "Ä">
 <!ENTITY agrave "à">
 <!ENTITY aacute "á">
-<!ENTITY  acirc "â" >
+<!ENTITY acirc "â" >
 <!ENTITY atiled "ã">
 <!ENTITY auml "ä">
+<!ENTITY a_super "U+2090">
 <!ENTITY ccedil "ç">
-<!ENTITY Egrave " È">
+<!ENTITY Egrave "È">
 <!ENTITY egrave "è">
 <!ENTITY eacute "é">
 <!ENTITY ecirc "ê">
@@ -18,15 +20,74 @@
 <!ENTITY igrave "ì">
 <!ENTITY iacute "í">
 <!ENTITY iuml "ï">
+<!ENTITY Iuml "Ï" >
 <!ENTITY oacute "ó">
+<!ENTITY o_super "U+2092">
 <!ENTITY OELIG "Œ"> 
 <!ENTITY ograve "ò">
 <!ENTITY ocirc "ô">
 <!ENTITY Ocirc "Ô">
 <!ENTITY ouml "ö">
 <!ENTITY ntitle "ñ" >
+<!ENTITY pilcrow "U+00B6;">
+<!ENTITY sharp-S "U+00DF;">
+<!ENTITY U_ring "&#x16e;" >
+<!ENTITY u_ring "&#x16f;">
 <!ENTITY ucirc "û">
 <!ENTITY uacute "ú"> 
 <!ENTITY ugrave "ù"> 
 <!ENTITY uuml "ü">
+
+<!ENTITY id_est "&#37;">
+
+<!--Symbols-->
+
+<!ENTITY Aquarius "&#x2652;">
+<!ENTITY Aries "&#x2648;">
+<!ENTITY Leo "&#x264c;">
+<!ENTITY Pisces "&#x2653;">
+<!ENTITY Scorpio "&#x264f;">
+<!ENTITY Taurus "&#x2649;">
+<!ENTITY Virgo "&#x264d;">
+<!ENTITY Gemini "&#x264a;">
+<!ENTITY Cancer "&#x264b;">
+<!ENTITY Libra "&#x264e;">
+<!ENTITY Sagittarius "&#x2650;">
+<!ENTITY Capricorn "&#x2651;">
+<!ENTITY North_Node "U+260A">
+<!ENTITY South_Node "U+260B">
+
+<!ENTITY Earth "&#10753;">
+<!ENTITY Moon "&#x263e;">
+<!ENTITY Venus "&#x2640;">
+<!ENTITY Mercury "&#x263f;">
+<!ENTITY Salt "U+25A2" > <!--Dee uses square as symbol for salt (instead of circle with horizontal line)-->
+<!ENTITY Sun "&#x2609;">
+<!ENTITY Sulfur "&#128781;">
+<!ENTITY Star "&#xe739;">
+<!ENTITY Mars "&#x2642;">
+<!ENTITY Jupiter "&#x2643;">
+<!ENTITY Saturn "&#x2644;">
+<!ENTITY Square "&#x25A1;">
+<!ENTITY Trine "&#x25B3;">
+<!ENTITY Opposition "&#9741;">
+<!ENTITY Conjunction "U+0260C">
+<!ENTITY Sextile "U+26B9">
+
+<!--Fractions-->
+
+<!ENTITY Onequarter "U+00BC;">
+<!ENTITY Onehalf "U+00BD;">
+<!ENTITY Threequarter "U+00BE;">
+<!ENTITY Onethird "U+2153;">
+<!ENTITY Twothird "U+2154;">
+
+
+
+
+
+
+
+
+
 

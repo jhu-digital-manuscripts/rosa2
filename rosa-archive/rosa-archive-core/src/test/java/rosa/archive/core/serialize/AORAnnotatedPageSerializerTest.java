@@ -6,7 +6,10 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -231,6 +234,49 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         pos.setBooks(Arrays.asList("Dune", "Foundation", "Hyperion"));
 
         return page;
+    }
+
+    @Test
+    public void resolvingXmlEntitiesTest() throws Exception {
+        String data = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+                "<!DOCTYPE transcription SYSTEM \"http://www.livesandletters.ac.uk/schema/aor_20141023.dtd\">\n" +
+                "<transcription xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd\">\n" +
+                "    <page filename=\"BLC120b4.016r.tif\" pagination=\"16\" reader=\"John Dee\"/>\n" +
+                "    <annotation>\n" +
+                "    <marginalia hand=\"Italian\" method=\"pen\">\n" +
+                "            <language ident=\"EN\">\n" +
+                "                <position place=\"tail\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>&Sun; - 1/2</marginalia_text>\n" +        // Entity here :: &Sun;  -->   ☉
+                "                    <symbol_in_text name=\"Sun\"/>\n" +                        //   - Defined only in DTD
+                "                </position>\n" +
+                "            </language>\n" +
+                "        </marginalia>\n" +
+                "    </annotation>\n" +
+                "</transcription>";
+
+        List<String> errors = new ArrayList<>();
+        InputStream in = new ByteArrayInputStream(data.getBytes("UTF-8"));
+
+        AnnotatedPage obj = serializer.read(in, errors);
+
+        assertNotNull(obj);
+        assertTrue(errors.isEmpty());
+
+        assertFalse(obj.getMarginalia().isEmpty());
+        assertEquals(1, obj.getMarginalia().size());
+        assertEquals(1, obj.getMarginalia().get(0).getLanguages().size());
+        assertEquals(1, obj.getMarginalia().get(0).getLanguages().get(0).getPositions().size());
+
+        Position pos = obj.getMarginalia().get(0).getLanguages().get(0).getPositions().get(0);
+        // Marginalia position must have text and symbol
+        assertNotNull(pos);
+        assertFalse(pos.getTexts().isEmpty());
+        assertFalse(pos.getSymbols().isEmpty());
+
+        System.out.println(pos);
+        String text = pos.getTexts().get(0);
+        assertTrue("Text should contain entity \"&Sun;\" or its resolved form \"☉\"\n\tInstead found \"" + text + "\"",
+                text.contains("☉") || text.contains("&Sun;"));
     }
 
 //    private Document getDocument(String path) throws IOException {
