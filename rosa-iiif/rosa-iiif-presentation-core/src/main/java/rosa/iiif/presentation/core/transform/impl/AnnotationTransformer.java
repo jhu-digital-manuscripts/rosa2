@@ -70,11 +70,11 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         rosa.archive.model.aor.Annotation archiveAnno = Annotations.getArchiveAnnotation(book, name);
 
         // Transform archive anno -> iiif anno
-        return adaptAnnotation(collection, book, archiveAnno);
+        return adaptAnnotation(collection, book, archiveAnno, null);
     }
 
     public Annotation transform(BookCollection collection, Book book, rosa.archive.model.aor.Annotation anno) {
-        return adaptAnnotation(collection, book, anno);
+        return adaptAnnotation(collection, book, anno, null);
     }
 
     @Override
@@ -82,13 +82,15 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return Annotation.class;
     }
 
+    public Annotation transform(BookCollection col, Book book, BookImage image, rosa.archive.model.aor.Annotation anno) {
+        return adaptAnnotation(col, book, anno, image);
+    }
 
-
-    private Annotation adaptAnnotation(BookCollection collection, Book book, rosa.archive.model.aor.Annotation anno) {
+    private Annotation adaptAnnotation(BookCollection collection, Book book, rosa.archive.model.aor.Annotation anno, BookImage image) {
         if (anno == null) {
             return null;
         } else if (anno instanceof Marginalia) {
-            return adaptMarginalia(collection, book, (Marginalia) anno);
+            return adaptMarginalia(collection, book, (Marginalia) anno, image);
         }
 
         String language = anno.getLanguage() != null && !anno.getLanguage().isEmpty() ? anno.getLanguage() : "en";
@@ -115,9 +117,11 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                     locationIcon + " " + anno.toPrettyString(), language));
         }
 
-        AnnotationTarget target = locationOnCanvas(
-                getPageImage(book.getImages(), getAnnotationPage(anno.getId())),
-                Location.FULL_PAGE);
+
+        if (image == null) {
+            image = getPageImage(book.getImages(), getAnnotationPage(anno.getId()));
+        }
+        AnnotationTarget target = locationOnCanvas(image, Location.FULL_PAGE);
         target.setUri(pres_uris.getCanvasURI(
                 collection.getId(),
                 book.getId(),
@@ -148,7 +152,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
      * @param marg AoR marginalia
      * @return list of annotations
      */
-    private Annotation adaptMarginalia(BookCollection collection, Book book, Marginalia marg) {
+    private Annotation adaptMarginalia(BookCollection collection, Book book, Marginalia marg, BookImage image) {
         String lang = marg.getLanguages() != null && marg.getLanguages().size() > 0
                 ? marg.getLanguages().get(0).getLang() : "en";
 
@@ -160,9 +164,14 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
                 marginaliaToDisplayHtml(marg), lang));
 
-        AnnotationTarget target = locationOnCanvas(
-                getPageImage(book.getImages(), getAnnotationPage(marg.getId())),
-                Location.FULL_PAGE);
+        /*
+            #getAnnotationPage(String) -- This will not work if an annotation has a pre-defined ID
+            (( only works with our home-baked IDs ))
+         */
+        if (image == null) {
+            image = getPageImage(book.getImages(), getAnnotationPage(marg.getId()));
+        }
+        AnnotationTarget target = locationOnCanvas(image, Location.FULL_PAGE);
         target.setUri(pres_uris.getCanvasURI(
                 collection.getId(),
                 book.getId(),
@@ -170,7 +179,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         ));
 
         anno.setDefaultTarget(target); // TODO actual position(s)
-
         anno.setLabel(marg.getId(), "en");
 
         return anno;

@@ -135,22 +135,22 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         }
         switch (listType) {
             case MARGINALIA:
-                aPage.getMarginalia().forEach(marg ->  annotations.add(annotationTransformer.transform(collection, book, marg)) );
+                aPage.getMarginalia().forEach(marg ->  annotations.add(annotationTransformer.transform(collection, book, image, marg)) );
                 break;
             case SYMBOL:
-                aPage.getSymbols().forEach(symb -> annotations.add(annotationTransformer.transform(collection, book, symb)) );
+                aPage.getSymbols().forEach(symb -> annotations.add(annotationTransformer.transform(collection, book, image, symb)) );
                 break;
             case GRAPH:
-                aPage.getGraphs().forEach(graph -> annotations.add(annotationTransformer.transform(collection, book, graph)));
+                aPage.getGraphs().forEach(graph -> annotations.add(annotationTransformer.transform(collection, book, image, graph)));
                 break;
             case CALCULATION:
-                aPage.getCalculations().forEach(c -> annotations.add(annotationTransformer.transform(collection, book, c)));
+                aPage.getCalculations().forEach(c -> annotations.add(annotationTransformer.transform(collection, book, image, c)));
                 break;
             case DRAWING:
-                aPage.getDrawings().forEach(d -> annotations.add(annotationTransformer.transform(collection, book, d)));
+                aPage.getDrawings().forEach(d -> annotations.add(annotationTransformer.transform(collection, book, image, d)));
                 break;
             case TABLE:
-                aPage.getTables().forEach(t -> annotations.add(annotationTransformer.transform(collection, book, t)));
+                aPage.getTables().forEach(t -> annotations.add(annotationTransformer.transform(collection, book, image, t)));
                 break;
             default:
                 break;
