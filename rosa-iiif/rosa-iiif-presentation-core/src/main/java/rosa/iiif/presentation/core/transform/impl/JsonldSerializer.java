@@ -675,6 +675,7 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         writeService(thumb.getService(), true, jWriter);
         writeIfNotNull("width", thumb.getWidth(), jWriter);
         writeIfNotNull("height", thumb.getHeight(), jWriter);
+        writeIfNotNull("depicts", thumb.getDepicts(), jWriter);
         jWriter.endObject();
     }
 

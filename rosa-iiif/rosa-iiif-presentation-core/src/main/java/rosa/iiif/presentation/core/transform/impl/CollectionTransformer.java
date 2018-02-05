@@ -183,11 +183,14 @@ public class CollectionTransformer extends BasePresentationTransformer {
             if (image.getLocation() == BookImageLocation.BODY_MATTER && !image.isMissing()) {
                 String id = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId(), cropped));
 
-                list.add(new Image(
+                Image thumb = new Image(
                         id,
                         new IIIFImageService(IIIF_IMAGE_CONTEXT, id, IIIF_IMAGE_PROFILE_LEVEL2,
                                 image.getWidth(), image.getHeight(), -1, -1, null)
-                ));
+                );
+                thumb.setDepicts(pres_uris.getCanvasURI(collection.getId(), book.getId(), image.getName()));
+
+                list.add(thumb);
 
                 if (i++ > MAX_THUMBNAILS) {
                     break;

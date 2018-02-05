@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.model;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * Intended for images that are not considered annotations, but instead
@@ -11,6 +12,9 @@ import java.io.Serializable;
  * For thumbnails, 'type' and 'format' are generally not required. It is
  * encouraged to have a IIIF image service available for images, but it
  * is not required.
+ *
+ * A thumbnail image is meant to represent a larger image. The 'depicts'
+ * field allows this Image to reference the full object URI.
  */
 public class Image implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -19,6 +23,7 @@ public class Image implements Serializable {
     private String type;
     private String format;
     private Service service;
+    private String depicts;
 
     private int width;
     private int height;
@@ -80,6 +85,14 @@ public class Image implements Serializable {
         this.service = service;
     }
 
+    public String getDepicts() {
+        return depicts;
+    }
+
+    public void setDepicts(String depicts) {
+        this.depicts = depicts;
+    }
+
     public int getWidth() {
         return width;
     }
@@ -99,27 +112,20 @@ public class Image implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Image)) return false;
-
+        if (o == null || getClass() != o.getClass()) return false;
         Image image = (Image) o;
-
-        if (width != image.width) return false;
-        if (height != image.height) return false;
-        if (uri != null ? !uri.equals(image.uri) : image.uri != null) return false;
-        if (type != null ? !type.equals(image.type) : image.type != null) return false;
-        if (format != null ? !format.equals(image.format) : image.format != null) return false;
-        return service != null ? service.equals(image.service) : image.service == null;
+        return width == image.width &&
+                height == image.height &&
+                Objects.equals(uri, image.uri) &&
+                Objects.equals(type, image.type) &&
+                Objects.equals(format, image.format) &&
+                Objects.equals(service, image.service) &&
+                Objects.equals(depicts, image.depicts);
     }
 
     @Override
     public int hashCode() {
-        int result = uri != null ? uri.hashCode() : 0;
-        result = 31 * result + (type != null ? type.hashCode() : 0);
-        result = 31 * result + (format != null ? format.hashCode() : 0);
-        result = 31 * result + (service != null ? service.hashCode() : 0);
-        result = 31 * result + width;
-        result = 31 * result + height;
-        return result;
+        return Objects.hash(uri, type, format, service, depicts, width, height);
     }
 
     @Override
@@ -129,6 +135,7 @@ public class Image implements Serializable {
                 ", type='" + type + '\'' +
                 ", format='" + format + '\'' +
                 ", service=" + service +
+                ", depicts='" + depicts + '\'' +
                 ", width=" + width +
                 ", height=" + height +
                 '}';
