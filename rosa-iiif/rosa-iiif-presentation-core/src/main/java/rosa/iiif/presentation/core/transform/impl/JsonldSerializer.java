@@ -359,8 +359,9 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
         jWriter.object();
 
         addIiifContext(jWriter, isRequested);
-        jWriter.key("@id").value(annoList.getId());
-        jWriter.key("@type").value(IIIFNames.SC_ANNOTATION_LIST);
+        writeBaseData(annoList, jWriter);
+//        jWriter.key("@id").value(annoList.getId());
+//        jWriter.key("@type").value(IIIFNames.SC_ANNOTATION_LIST);
 
         if (isRequested) {
             jWriter.key("resources").array();

@@ -394,6 +394,12 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             // ------ Add orientation + location icons ------
             assembleLocationIcon(orientation, positions.toArray(new Location[positions.size()]), writer);
 
+            if (isNotEmpty(marg.getOtherReader())) {
+                writer.writeStartElement("p");
+                writer.writeCharacters("Reader: " + marg.getOtherReader());
+                writer.writeEndElement();
+            }
+
             // Add transcription
             writer.writeStartElement("p");
             writer.writeCharacters(StringEscapeUtils.escapeHtml4(transcription.toString()));

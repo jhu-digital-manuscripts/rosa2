@@ -14,6 +14,7 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.AnnotationListType;
+import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
@@ -106,6 +107,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         list.setWithin(new Within(
                 pres_uris.getLayerURI(collection.getId(), book.getId(), listType.toString().toLowerCase())
         ));
+        if (aPage != null && aPage.getReader() != null && !aPage.getReader().isEmpty()) {
+            list.getMetadata().put("reader", new HtmlValue(aPage.getReader()));
+        }
 
         List<Annotation> annotations = list.getAnnotations();
 
@@ -186,6 +190,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         list.setWithin(new Within(
                 pres_uris.getLayerURI(collection.getId(), book.getId(), "all")
         ));
+        if (aPage != null && aPage.getReader() != null && !aPage.getReader().isEmpty()) {
+            list.getMetadata().put("reader", new HtmlValue(aPage.getReader()));
+        }
 
         return list;
     }
