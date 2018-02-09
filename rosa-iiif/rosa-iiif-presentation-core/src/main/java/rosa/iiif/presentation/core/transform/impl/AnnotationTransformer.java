@@ -489,9 +489,9 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             }
             writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
             addSimpleElement(writer, "span", StringEscapeUtils.escapeHtml4(xref.getTitle()), "class", "italic");
-            if (isNotEmpty(xref.getText())) {
-                writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
-            }
+//            if (isNotEmpty(xref.getText())) {
+//                writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
+//            }
         }
 
         writer.writeEndElement();
