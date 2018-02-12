@@ -17,6 +17,7 @@ import org.junit.Test;
 
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
+import rosa.archive.model.aor.Marginalia;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuImageIdMapper;
@@ -85,7 +86,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     @Test
     public void collectionTest() throws IOException {
         Collection col = presentationTransformer.collection(loadValidCollection());
-
+col.getManifests().stream().map(Reference::getSortingTag).forEach(System.out::println);
         assertNotNull(col);
 
         assertNotNull(col.getDescription("en"));
@@ -206,15 +207,17 @@ public class PresentationTransformerTest extends BaseArchiveTest {
                     loadValidCollection(), loadValidFolgersHa2(), "1r.all");
             assertNotNull("Failed to create AnnotationList for '1r'", ll);
 
-            int marg_count = 0;
-            for (int i = 0; i < ll.size(); i++) {
-                Annotation a = ll.getAnnotations().get(i);
-                if (a.getId().contains("marginalia")) {
-                    marg_count++;
-                }
-            }
+            int marg_count = (int) ll.getAnnotations().stream()
+                    .map(Annotation::getId)
+                    .filter(id -> id.contains("marginalia"))
+                    .count();
             assertEquals("Unexpected number of marginalia found.", 8, marg_count);
 
+            String target = ll.getAnnotations().get(0).getDefaultTarget().getUri();
+            assertNotNull(target);
+            assertFalse(target.isEmpty());
+
+            ll.getAnnotations().forEach(a -> assertEquals(target, a.getDefaultTarget().getUri()));
         }
     }
 

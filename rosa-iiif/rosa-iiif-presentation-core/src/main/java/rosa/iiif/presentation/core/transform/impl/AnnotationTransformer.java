@@ -117,7 +117,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                     locationIcon + " " + anno.toPrettyString(), language));
         }
 
-
         if (image == null) {
             image = getPageImage(book.getImages(), getAnnotationPage(anno.getId()));
         }
@@ -125,7 +124,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         target.setUri(pres_uris.getCanvasURI(
                 collection.getId(),
                 book.getId(),
-                getAnnotationPage(anno.getId())
+                image.getName()
         ));
 
         a.setDefaultTarget(target);
@@ -175,7 +174,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         target.setUri(pres_uris.getCanvasURI(
                 collection.getId(),
                 book.getId(),
-                getAnnotationPage(anno.getId())
+                image.getName()
         ));
 
         anno.setDefaultTarget(target); // TODO actual position(s)
