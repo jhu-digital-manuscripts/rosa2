@@ -86,7 +86,6 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     @Test
     public void collectionTest() throws IOException {
         Collection col = presentationTransformer.collection(loadValidCollection());
-col.getManifests().stream().map(Reference::getSortingTag).forEach(System.out::println);
         assertNotNull(col);
 
         assertNotNull(col.getDescription("en"));
