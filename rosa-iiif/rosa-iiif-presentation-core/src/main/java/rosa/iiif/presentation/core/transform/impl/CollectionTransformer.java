@@ -90,7 +90,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
         }
         col.setCollections(childList);
 
-        List<Reference> parentList = new ArrayList<>();
+        List<Within> parents = new ArrayList<>();
         for (String parent : collection.getParentCollections()) {
             try {
                 BookCollection parentCol = store.loadBookCollection(parent);
@@ -99,15 +99,11 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 }
                 // Add references and search services for parent collections
                 String parentURI = pres_uris.getCollectionURI(parentCol.getId());
-                parentList.add(new Reference(parentURI, new TextValue(parentCol.getLabel(), LANGUAGE_DEFAULT),
-                        IIIFNames.SC_COLLECTION));
+                parents.add(new Within(parentURI, SC_COLLECTION, parentCol.getLabel()));
                 col.addService(new Service( JHSearchService.CONTEXT_URI, parentURI, IIIF_SEARCH_PROFILE, parentCol.getLabel()));
             } catch (IOException e) {}
         }
-        col.setWithin(parentList.parallelStream()
-                .map(par -> new Within(par.getReference(), par.getType(), par.getLabel(LANGUAGE_DEFAULT)))
-                .collect(Collectors.toList()).toArray(new Within[parentList.size()])
-        );
+        col.setWithin(parents.toArray(new Within[parents.size()]));
 
         return col;
     }
@@ -125,45 +121,69 @@ public class CollectionTransformer extends BasePresentationTransformer {
             Reference ref = new Reference();
 
             ref.setType(SC_MANIFEST);
-            
             ref.setReference(pres_uris.getManifestURI(collection.getId(), title));
 
             try {
                 Book b = store.loadBook(collection.getId(), title);
-
-                BookMetadata bm = b.getBookMetadata("en");
+                BookMetadata bm = b.getBookMetadata(LANGUAGE_DEFAULT);
 
                 Map<String, HtmlValue> map = new HashMap<>();
                 if (hasContent(bm.getCommonName())) {
-                    ref.setLabel(new TextValue(bm.getCommonName(), "en"));
+                    ref.setLabel(new TextValue(bm.getCommonName(), LANGUAGE_DEFAULT));
                 } else if (hasContent(bm.getTitle())) {
-                    ref.setLabel(new TextValue(bm.getTitle(), "en"));
+                    ref.setLabel(new TextValue(bm.getTitle(), LANGUAGE_DEFAULT));
                 } else {
-                    ref.setLabel(new TextValue(title, "en"));
+                    ref.setLabel(new TextValue(title, LANGUAGE_DEFAULT));
                 }
 
-                map.put("Current Location", new HtmlValue(bm.getCurrentLocation(), "en"));
-                map.put("Repository", new HtmlValue(bm.getRepository(), "en"));
-                map.put("Shelfmark", new HtmlValue(bm.getShelfmark(), "en"));
-                map.put("Origin", new HtmlValue(bm.getOrigin(), "en"));
+                map.put("Current Location", new HtmlValue(bm.getCurrentLocation(), LANGUAGE_DEFAULT));
+                map.put("Repository", new HtmlValue(bm.getRepository(), LANGUAGE_DEFAULT));
+                map.put("Shelfmark", new HtmlValue(bm.getShelfmark(), LANGUAGE_DEFAULT));
+                map.put("Origin", new HtmlValue(bm.getOrigin(), LANGUAGE_DEFAULT));
                 if (hasContent(bm.getTitle())) {
-                    map.put("Title", new HtmlValue(bm.getTitle(), "en"));
+                    map.put("Title", new HtmlValue(bm.getTitle(), LANGUAGE_DEFAULT));
                 }
                 if (hasContent(bm.getDate())) {
-                    map.put("Date", new HtmlValue(bm.getDate(), "en"));
+                    map.put("Date", new HtmlValue(bm.getDate(), LANGUAGE_DEFAULT));
                 }
-                map.put("pageCount", new HtmlValue(String.valueOf(b.getImages().getImages().size()), "en"));
+                map.put("pageCount", new HtmlValue(String.valueOf(b.getImages().getImages().size()), LANGUAGE_DEFAULT));
 
                 ref.setMetadata(map);
 
+                if (b.getMultilangMetadata() != null && b.getMultilangMetadata().getBiblioDataMap() != null
+                        && b.getMultilangMetadata().getBiblioDataMap().containsKey(LANGUAGE_DEFAULT)) {
+                    String[] auths = b.getMultilangMetadata().getBiblioDataMap().get(LANGUAGE_DEFAULT).getAuthors();
+                    if (auths != null && auths.length > 0) {
+                        ref.addSortingTag("0" + auths[0]);
+                    }
+                }
+                if (hasContent(bm.getCommonName())) {
+                    ref.addSortingTag("1" + bm.getCommonName());
+                }
+                ref.addSortingTag("2" + ref.getReference());
+
                 ref.setThumbnails(getThumbnails(collection, b));
             } catch (IOException e) {
-                ref.setLabel(new TextValue(title, "en"));
+                ref.setLabel(new TextValue(title, LANGUAGE_DEFAULT));
             }
 
             refs.add(ref);
         }
-        refs.sort(Comparator.comparing(Reference::getId));
+//        refs.sort((o1, o2) -> {
+//            String t1 = o1.getSortingTag();
+//            String t2 = o2.getSortingTag();
+//
+//            if (t1 == null && t2 == null) {
+//                return 0;
+//            } else if (t1 == null) {
+//                return -1;
+//            } else if (t2 == null) {
+//                return 1;
+//            } else {
+//                return t1.compareTo(t2);
+//            }
+//        });
+        refs.sort(Comparator.comparing(Reference::getSortingTag));
         return refs;
     }
 
