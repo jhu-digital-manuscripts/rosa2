@@ -3,6 +3,7 @@ package rosa.archive.model.aor;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Calculation extends Annotation implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -10,6 +11,7 @@ public class Calculation extends Annotation implements Serializable {
     private String type;
     private int orientation;
     private String method;
+    private String content;
 
     private List<String> data;
 
@@ -64,11 +66,20 @@ public class Calculation extends Annotation implements Serializable {
         }
     }
 
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
     @Override
     public String toPrettyString() {
         StringBuilder d = new StringBuilder();
         data.forEach(d::append);
-        return "<p>" + d.toString() + "</p>";
+        return (content != null ? "<p>" + content + "</p>" : "" ) +
+                (!d.toString().isEmpty() ? "<p>" + d.toString() + "</p>" : "");
     }
 
     @Override
@@ -76,23 +87,17 @@ public class Calculation extends Annotation implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
-
         Calculation that = (Calculation) o;
-
-        if (orientation != that.orientation) return false;
-        if (type != null ? !type.equals(that.type) : that.type != null) return false;
-        if (method != null ? !method.equals(that.method) : that.method != null) return false;
-        return data != null ? data.equals(that.data) : that.data == null;
+        return orientation == that.orientation &&
+                Objects.equals(type, that.type) &&
+                Objects.equals(method, that.method) &&
+                Objects.equals(content, that.content) &&
+                Objects.equals(data, that.data);
     }
 
     @Override
     public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + (type != null ? type.hashCode() : 0);
-        result = 31 * result + orientation;
-        result = 31 * result + (method != null ? method.hashCode() : 0);
-        result = 31 * result + (data != null ? data.hashCode() : 0);
-        return result;
+        return Objects.hash(super.hashCode(), type, orientation, method, content, data);
     }
 
     @Override
@@ -101,6 +106,7 @@ public class Calculation extends Annotation implements Serializable {
                 "type='" + type + '\'' +
                 ", orientation=" + orientation +
                 ", method='" + method + '\'' +
+                ", content='" + content + '\'' +
                 ", data=" + data +
                 '}';
     }

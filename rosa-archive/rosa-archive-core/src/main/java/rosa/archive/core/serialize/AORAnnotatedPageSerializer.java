@@ -1048,6 +1048,8 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
             }
         }
 
+        calc.setContent(calcEl.getTextContent());
+
         return calc;
     }
 

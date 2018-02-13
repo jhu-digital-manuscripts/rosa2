@@ -540,11 +540,17 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		addField(doc, JHSearchField.METHOD, drawing.getMethod());
 
 		// All text: ./text[text] and ./text[anchor_text],
-		String allText = stripTranscribersMarks(String.join(", ", drawing.getTexts().stream()
-				.map(el -> el.getText() + " " + el.getAnchor_text())
-				.collect(Collectors.toList())) + " " + drawing.getReferencedText() + " " + drawing.getTranslation());
-		addField(doc, JHSearchField.DRAWING, get_lang(drawing), allText);
-        addField(doc, JHSearchField.TEXT, get_lang(drawing), allText);
+		for (TextEl txt : drawing.getTexts()) {
+			SearchFieldType sft = getSearchFieldTypeForLang(txt.getLanguage());
+			if (sft == null) {
+				sft = SearchFieldType.ENGLISH;
+			}
+
+			String toIndex = txt.getText() + " " + txt.getAnchor_text();
+			addSomeText(doc, JHSearchField.DRAWING, sft, toIndex);
+		}
+		addSomeText(doc, JHSearchField.DRAWING, get_lang(drawing), drawing.getReferencedText());
+		addSomeText(doc, JHSearchField.DRAWING, SearchFieldType.ENGLISH, drawing.getTranslation());
 
         addRefList(drawing.getPeople(), col.getPeopleRef(), JHSearchField.PEOPLE, doc);
         addRefList(drawing.getBooks(), col.getBooksRef(), JHSearchField.BOOK, doc);
@@ -583,7 +589,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	private void index(BookCollection col, Book book, BookImage image, Calculation calc, Document doc) {
 	    addField(doc, JHSearchField.CALCULATION, SearchFieldType.STRING, calc.getType());
 	    addField(doc, JHSearchField.METHOD, SearchFieldType.STRING, calc.getMethod());
-	    addField(doc, JHSearchField.CALCULATION, String.join(", ", calc.getData()));
+	    addField(doc, JHSearchField.CALCULATION, SearchFieldType.ENGLISH, String.join(", ", calc.getData()));
+	    addSomeText(doc, JHSearchField.CALCULATION, SearchFieldType.ENGLISH, calc.getContent());
     }
 
 	private SearchFieldType get_lang(Annotation a) {
@@ -615,9 +622,14 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 			addField(doc, field, v);
 
 			if (reference != null && reference.hasAlternates(v)) {
-				reference.getAlternates(v).forEach(alt -> addField(doc, field, alt));
+				reference.getAlternates(v).forEach(alt -> addField(doc, field, SearchFieldType.ENGLISH, alt));
 			}
 		});
+	}
+
+	private void addSomeText(Document doc, JHSearchField field, SearchFieldType lang, String text) {
+		addField(doc, field, lang, text);
+		addField(doc, JHSearchField.TEXT, lang, text);
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Marginalia marg, Document doc) {
@@ -670,9 +682,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		}
 		
 		// Remove [] used for transcribers marks
-		addField(doc, JHSearchField.MARGINALIA, marg_lang_type, stripTranscribersMarks(transcription.toString()));
-		addField(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
-        addField(doc, JHSearchField.TEXT, SearchFieldType.ENGLISH, marg.getTranslation());
+		addSomeText(doc, JHSearchField.MARGINALIA, marg_lang_type, stripTranscribersMarks(transcription.toString()));
+		addSomeText(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
 		addField(doc, JHSearchField.EMPHASIS, marg_lang_type, emphasis.toString());
 		addField(doc, JHSearchField.HAND, marg.getHand());
 	}
@@ -687,15 +698,12 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	        addRefList(text.getBooks(), col.getBooksRef(), JHSearchField.BOOK, doc);
 	        addRefList(text.getLocations(), col.getLocationsRef(), JHSearchField.PLACE, doc);
 	        addField(doc, JHSearchField.SYMBOL, SearchFieldType.STRING, String.join(", ", text.getSymbols()));
-	        addField(doc, JHSearchField.GRAPH, String.join(", ", text.getTranslations()));
-            addField(doc, JHSearchField.TEXT, String.join(", ", text.getTranslations()));
+	        addSomeText(doc, JHSearchField.GRAPH, SearchFieldType.ENGLISH, String.join(", ", text.getTranslations()));
         }
 
-        String text = String.join(", ",
-                graph.getNodes().stream().map(node -> node.getText() + " " + node.getContent()).collect(Collectors.toList()));
-        addField(doc, JHSearchField.GRAPH, text);
-        addField(doc, JHSearchField.TEXT, text);
-        addField(doc, JHSearchField.PEOPLE, String.join(", ",
+	    addSomeText(doc, JHSearchField.GRAPH, get_lang(graph), String.join(", ",
+				graph.getNodes().stream().map(node -> node.getText() + " " + node.getContent()).collect(Collectors.toList())));
+        addField(doc, JHSearchField.PEOPLE, SearchFieldType.ENGLISH, String.join(", ",
                 graph.getNodes().stream().map(GraphNode::getPerson).collect(Collectors.toList())));
     }
 
@@ -704,19 +712,16 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         addField(doc, JHSearchField.HAND,
                 String.join(", ", table.getTexts().stream().map(TextEl::getHand).distinct().collect(Collectors.toList())));
 
-	    addField(doc, JHSearchField.TABLE, String.join(", ",
-                table.getTexts().stream().map(txt -> txt.getAnchor_text() + " " + txt.getText()).collect(Collectors.toList())));
-        addField(doc, JHSearchField.TEXT, String.join(", ",
-                table.getTexts().stream().map(txt -> txt.getAnchor_text() + " " + txt.getText()).collect(Collectors.toList())));
-        addField(doc, JHSearchField.TABLE, table.getTranslation());
-        addField(doc, JHSearchField.TEXT, table.getTranslation());
+        addSomeText(doc, JHSearchField.TABLE, get_lang(table), String.join(", ",
+				table.getTexts().stream().map(txt -> txt.getAnchor_text() + " " + txt.getText()).collect(Collectors.toList())));
+        addSomeText(doc, JHSearchField.TABLE, SearchFieldType.ENGLISH, table.getTranslation());
         addField(doc, JHSearchField.TABLE, table.getAggregatedInfo());
 
         addRefList(table.getPeople(), col.getPeopleRef(), JHSearchField.PEOPLE, doc);
         addRefList(table.getBooks(), col.getBooksRef(), JHSearchField.BOOK, doc);
         addRefList(table.getLocations(), col.getLocationsRef(), JHSearchField.PLACE, doc);
 
-        addField(doc, JHSearchField.SYMBOL, String.join(", ", table.getSymbols()));
+        addField(doc, JHSearchField.SYMBOL, SearchFieldType.STRING, String.join(", ", table.getSymbols()));
 
         table.getCells().stream()
                 .map(cell -> cell.getAnchorData() + " " + cell.getAnchorText() + " " + cell.getContent())
