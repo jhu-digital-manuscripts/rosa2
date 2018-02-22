@@ -135,6 +135,9 @@ public class GitStatsWriter {
         writeUnderlineVocab(output, stats);
         writeMarkedVocab(output, stats);
         writeSymbolVocab(output, stats);
+        writeDrawingVocab(output, stats);
+        writeGraphVocab(output, stats);
+        writeTableVocab(output, stats);
     }
 
     // TODO need to write aggregation of vocab from all annotation types? (might not make sense)
@@ -213,6 +216,24 @@ public class GitStatsWriter {
         }
 
         writeVocabAllLanguages("symbols", output, total);
+    }
+
+    private void writeDrawingVocab(Path output, BookStats stats) {
+        Vocab total = new Vocab();
+        stats.statsMap.forEach((e, v) -> total.update(v.drawing_vocab));
+        writeVocabAllLanguages("drawings", output, total);
+    }
+
+    private void writeGraphVocab(Path output, BookStats stats) {
+        Vocab total = new Vocab();
+        stats.statsMap.forEach((e, v) -> total.update(v.graph_vocab));
+        writeVocabAllLanguages("graphs", output, total);
+    }
+
+    private void writeTableVocab(Path output, BookStats stats) {
+        Vocab total = new Vocab();
+        stats.statsMap.forEach((e, v) -> total.update(v.table_vocab));
+        writeVocabAllLanguages("tables", output, total);
     }
 
     /**
