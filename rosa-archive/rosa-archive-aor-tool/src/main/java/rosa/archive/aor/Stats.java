@@ -69,7 +69,14 @@ public class Stats implements Comparable<Stats> {
         symbols += s.symbols;
         symbol_words += s.symbol_words;
         drawings += s.drawings;
+        drawing_words += s.drawing_words;
         numerals += s.numerals;
+        calculations += s.calculations;
+        graphs += s.graphs;
+        graph_words += s.graph_words;
+        tables += s.tables;
+        table_words += s.table_words;
+
         books += s.books;
         people += s.people;
         locations += s.locations;
@@ -78,6 +85,9 @@ public class Stats implements Comparable<Stats> {
         underlines_vocab.update(s.underlines_vocab);
         marks_vocab.update(s.marks_vocab);
         symbols_vocab.update(s.symbols_vocab);
+        drawing_vocab.update(s.drawing_vocab);
+        graph_vocab.update(s.graph_vocab);
+        table_vocab.update(s.table_vocab);
     }
 
     /**
