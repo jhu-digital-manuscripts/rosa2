@@ -29,6 +29,7 @@ public class Stats implements Comparable<Stats> {
     int graph_words;
     int tables;
     int table_words;
+    int phys_links;
 
     int books;
     int people;
@@ -76,6 +77,7 @@ public class Stats implements Comparable<Stats> {
         graph_words += s.graph_words;
         tables += s.tables;
         table_words += s.table_words;
+        phys_links += s.phys_links;
 
         books += s.books;
         people += s.people;
@@ -176,6 +178,7 @@ public class Stats implements Comparable<Stats> {
                 graph_words == stats.graph_words &&
                 tables == stats.tables &&
                 table_words == stats.table_words &&
+                phys_links == stats.phys_links &&
                 books == stats.books &&
                 people == stats.people &&
                 locations == stats.locations &&
@@ -186,16 +189,15 @@ public class Stats implements Comparable<Stats> {
                 Objects.equals(symbols_vocab, stats.symbols_vocab) &&
                 Objects.equals(drawing_vocab, stats.drawing_vocab) &&
                 Objects.equals(graph_vocab, stats.graph_vocab) &&
-                Objects.equals(table_vocab, stats.table_vocab) &&
-                Objects.equals(manuscriptMatcher, stats.manuscriptMatcher);
+                Objects.equals(table_vocab, stats.table_vocab);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id, marginalia, marginalia_words, underlines, underline_words, marks, mark_words, symbols,
                 symbol_words, drawings, drawing_words, numerals, calculations, graphs, graph_words, tables, table_words,
-                books, people, locations, marginalia_vocab, underlines_vocab, marks_vocab, symbols_vocab, drawing_vocab,
-                graph_vocab, table_vocab, manuscriptMatcher);
+                phys_links, books, people, locations, marginalia_vocab, underlines_vocab, marks_vocab, symbols_vocab,
+                drawing_vocab, graph_vocab, table_vocab);
     }
 
     @Override
@@ -218,6 +220,7 @@ public class Stats implements Comparable<Stats> {
                 ", graph_words=" + graph_words +
                 ", tables=" + tables +
                 ", table_words=" + table_words +
+                ", phys_links=" + phys_links +
                 ", books=" + books +
                 ", people=" + people +
                 ", locations=" + locations +
@@ -228,7 +231,6 @@ public class Stats implements Comparable<Stats> {
                 ", drawing_vocab=" + drawing_vocab +
                 ", graph_vocab=" + graph_vocab +
                 ", table_vocab=" + table_vocab +
-                ", manuscriptMatcher=" + manuscriptMatcher +
                 '}';
     }
 }

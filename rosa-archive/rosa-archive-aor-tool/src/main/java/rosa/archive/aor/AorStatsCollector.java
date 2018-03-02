@@ -232,6 +232,8 @@ public class AorStatsCollector {
         out.write(',');
         out.write(String.valueOf(s.table_words));
         out.write(',');
+        out.write(String.valueOf(s.phys_links));
+        out.write(',');
         out.write(String.valueOf(s.books));
         out.write(',');
         out.write(String.valueOf(s.people));
@@ -268,7 +270,7 @@ public class AorStatsCollector {
             throws IOException {
         out.write(first_cell);
         out.write(",marginalia,marginalia_words,underlines,underline_words,marks,mark_words,symbols,symbol_words," +
-                "drawings,drawing_words,numerals,calculations,graphs,graph_words,tables,table_words,books,people,locations");
+                "drawings,drawing_words,numerals,calculations,graphs,graph_words,tables,table_words,physical_links,books,people,locations");
         out.newLine();
     }
 }

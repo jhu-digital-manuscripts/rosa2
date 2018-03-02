@@ -39,6 +39,7 @@ public class AorStatsAdapter {
         bs.graph_words += count_graph_words(ap);
         bs.tables += ap.getTables().size();
         bs.table_words += count_table_words(ap);
+        bs.phys_links += ap.getLinks().size();
         bs.books += count_books(ap);
         bs.people += count_people(ap);
         bs.locations += count_locations(ap);
