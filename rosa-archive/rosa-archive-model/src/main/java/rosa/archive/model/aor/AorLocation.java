@@ -3,7 +3,7 @@ package rosa.archive.model.aor;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class AorRef implements Serializable {
+public class AorLocation implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String collection;
@@ -11,7 +11,7 @@ public class AorRef implements Serializable {
     private String page;
     private String annotation;
 
-    public AorRef(String collection, String book, String page, String annotation) {
+    public AorLocation(String collection, String book, String page, String annotation) {
         this.collection = collection;
         this.book = book;
         this.page = page;
@@ -54,11 +54,11 @@ public class AorRef implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        AorRef aorRef = (AorRef) o;
-        return Objects.equals(collection, aorRef.collection) &&
-                Objects.equals(book, aorRef.book) &&
-                Objects.equals(page, aorRef.page) &&
-                Objects.equals(annotation, aorRef.annotation);
+        AorLocation aorLocation = (AorLocation) o;
+        return Objects.equals(collection, aorLocation.collection) &&
+                Objects.equals(book, aorLocation.book) &&
+                Objects.equals(page, aorLocation.page) &&
+                Objects.equals(annotation, aorLocation.annotation);
     }
 
     @Override
@@ -68,7 +68,7 @@ public class AorRef implements Serializable {
 
     @Override
     public String toString() {
-        return "AorRef{" +
+        return "AorLocation{" +
                 "collection='" + collection + '\'' +
                 ", book='" + book + '\'' +
                 ", page='" + page + '\'' +

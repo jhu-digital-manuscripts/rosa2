@@ -84,6 +84,8 @@ public interface ArchiveConstants {
 
     String BOOKS = "books.csv";
 
+    String ANNOTATION_LINK_MAP = "annotation-ids.csv";
+
     // File extensions
 
     String CSV_EXT = ".csv";

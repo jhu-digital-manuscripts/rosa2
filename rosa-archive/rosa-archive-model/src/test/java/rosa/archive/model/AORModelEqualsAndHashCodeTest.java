@@ -3,29 +3,7 @@ package rosa.archive.model;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.Warning;
 import org.junit.Test;
-import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.Calculation;
-import rosa.archive.model.aor.Drawing;
-import rosa.archive.model.aor.Errata;
-import rosa.archive.model.aor.Graph;
-import rosa.archive.model.aor.AnnotationLink;
-import rosa.archive.model.aor.GraphNode;
-import rosa.archive.model.aor.GraphNote;
-import rosa.archive.model.aor.GraphText;
-import rosa.archive.model.aor.InternalReference;
-import rosa.archive.model.aor.Marginalia;
-import rosa.archive.model.aor.MarginaliaLanguage;
-import rosa.archive.model.aor.Mark;
-import rosa.archive.model.aor.Numeral;
-import rosa.archive.model.aor.PhysicalLink;
-import rosa.archive.model.aor.Position;
-import rosa.archive.model.aor.ReferenceTarget;
-import rosa.archive.model.aor.Symbol;
-import rosa.archive.model.aor.TableCell;
-import rosa.archive.model.aor.TableRow;
-import rosa.archive.model.aor.TextEl;
-import rosa.archive.model.aor.Underline;
-import rosa.archive.model.aor.XRef;
+import rosa.archive.model.aor.*;
 
 /**
  *
@@ -256,6 +234,16 @@ public class AORModelEqualsAndHashCodeTest {
     public void physicalLinkTest() {
         EqualsVerifier
                 .forClass(PhysicalLink.class)
+                .usingGetClass()
+                .allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
+                .verify();
+    }
+
+    @Test
+    public void aorLocationTest() {
+        EqualsVerifier
+                .forClass(AorLocation.class)
                 .usingGetClass()
                 .allFieldsShouldBeUsed()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)

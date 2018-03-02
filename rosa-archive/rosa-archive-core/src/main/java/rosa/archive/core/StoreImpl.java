@@ -35,13 +35,7 @@ import org.xml.sax.SAXException;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
-import rosa.archive.core.util.BookImageComparator;
-import rosa.archive.core.util.CachingUrlResourceResolver;
-import rosa.archive.core.util.ChecksumUtil;
-import rosa.archive.core.util.CropRunnable;
-import rosa.archive.core.util.TranscriptionConverter;
-import rosa.archive.core.util.XMLUtil;
-import rosa.archive.core.util.XMLWriter;
+import rosa.archive.core.util.*;
 import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -202,6 +196,8 @@ public class StoreImpl implements Store, ArchiveConstants {
         }
 
         collection.setMetadata(cmd);
+
+        collection.setAnnotationMap(AnnotationLocationMapUtil.annotationIdMap(collectionGroup));
         
         return collection;
     }
