@@ -77,6 +77,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return adaptAnnotation(collection, book, anno, null);
     }
 
+    public List<Annotation> transformToLinks(BookCollection col, Book book, BookImage image, rosa.archive.model.aor.Annotation anno) {
+        return adaptToLinks(col, book, image, anno);
+    }
+
     @Override
     public Class<Annotation> getType() {
         return Annotation.class;
@@ -894,6 +898,26 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         XMLOutputFactory outF = XMLOutputFactory.newInstance();
         outF.setProperty("escapeCharacters", false);
         return outF;
+    }
+
+    /**
+     *
+     * Many AOR annotations
+     *
+     * Marginalia, Graph annotations can be split up between multiple pages and share the properties:
+     * continues_to, continues_from, to_transcription, from_transcription. These will link the
+     * annotations to other annotations or to other pages.
+     *
+     * @param col book collection
+     * @param book book obj
+     * @return list of annotations that link other annotations to other entities
+     */
+    private List<Annotation> adaptToLinks(BookCollection col, Book book, BookImage image, rosa.archive.model.aor.Annotation anno) {
+        List<Annotation> result = new ArrayList<>();
+
+
+
+        return result;
     }
 
 }
