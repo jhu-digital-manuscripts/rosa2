@@ -1,45 +1,58 @@
 package rosa.archive.tool;
 
+import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ArchiveConstants;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.core.Store;
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
+import rosa.archive.core.serialize.FileMapSerializer;
 import rosa.archive.core.util.AnnotationLocationMapUtil;
 import rosa.archive.model.ArchiveItemType;
+import rosa.archive.model.FileMap;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.AorLocation;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Generate a mapping of annotation IDs to their location in the corpus.
  *  ID -> collection id, book id, page id, annotation id
  *
+ * Also generate IDs for all books and pages.
+ *
+ * The mapped location information can later be used to construct IIIF
+ * URIs.
+ *
  * Store this mapping with the collection in 'annotation-map.csv
  */
 public class AORIdMapper {
+    private static final String DELIMITER = ":";
+    private static final String FILEMAP_NAME = "filemap.csv";
+    private static final AORAnnotatedPageSerializer aorSerializer = new AORAnnotatedPageSerializer();
+    private static final FileMapSerializer fileMapSerializer = new FileMapSerializer();
+    private static final Map<String, FileMap> map_cache = new ConcurrentHashMap<>();
+    private static final FileMap emptyFileMap = new FileMap();
 
     private Store store;
     private PrintStream report;
     private ByteStreamGroup base;
 
     private ArchiveNameParser nameParser;
-    private AORAnnotatedPageSerializer aorSerializer;
 
     public AORIdMapper(Store store, ByteStreamGroup base, PrintStream report) {
         this.store = store;
         this.base = base;
         this.report = report;
         this.nameParser = new ArchiveNameParser();
-        this.aorSerializer = new AORAnnotatedPageSerializer();
     }
 
     /**
@@ -74,6 +87,8 @@ public class AORIdMapper {
         Map<String, AorLocation> result = new HashMap<>();
         List<String> errors = new ArrayList<>();
 
+        result.put(book.name(), new AorLocation(col, book.name(), null, null));
+
         book.listByteStreamNames().stream()
                 .filter(file -> nameParser.getArchiveItemType(file) == ArchiveItemType.TRANSCRIPTION_AOR)
                 .forEach(aor -> {
@@ -97,6 +112,8 @@ public class AORIdMapper {
 
     /**
      * For each page, add a mapping for the page and a mapping for any annotations on the page.
+     * The mapping for the page will use the original file name, found from the book's page
+     * file map, with the file extension removed.
      *
      * @param col collection name
      * @param book book name
@@ -106,11 +123,64 @@ public class AORIdMapper {
     private Map<String, AorLocation> doPage(String col, String book, AnnotatedPage page) {
         Map<String, AorLocation> result = new HashMap<>();
 
+        FileMap pageMap = loadFileMap(book);
+        String orig_page = pageMap.getMap().entrySet().stream()
+                .filter(entry -> entry.getValue().equals(page.getPage()))
+                .map(entry -> trimExt(entry.getKey()))
+                .findFirst()
+                .orElse(null);
+
+        if (orig_page != null) {
+            AorLocation loc = new AorLocation(col, book, page.getPage(), null);
+            result.put(getId(book, orig_page, null), loc);
+        }
+
         page.getAnnotations().stream()
-                .filter(a -> a.getId() != null && !a.getId().isEmpty())
-                .forEach();
+                .map(Annotation::getId)
+                .filter(id -> id != null && !id.isEmpty())
+                .forEach(id -> result.put(id, new AorLocation(col, book, page.getPage(), id)));
 
         return result;
+    }
+
+    private FileMap loadFileMap(String parent) {
+        if (map_cache.containsKey(parent)) {
+            return map_cache.get(parent);
+        }
+
+        if (!base.hasByteStreamGroup(parent)) {
+            return emptyFileMap;
+        }
+        ByteStreamGroup parentGroup = base.getByteStreamGroup(parent);
+        if (!parentGroup.hasByteStream(FILEMAP_NAME)) {
+            return emptyFileMap;
+        }
+        try (InputStream in = parentGroup.getByteStream(FILEMAP_NAME)) {
+            FileMap m = fileMapSerializer.read(in, new ArrayList<>());
+            map_cache.putIfAbsent(parent, m);
+            return m;
+        } catch (IOException e) {
+            return emptyFileMap;
+        }
+    }
+
+    private String getId(String book, String page, String anno) {
+        if (StringUtils.isNotEmpty(anno)) {
+            return book + DELIMITER + page + DELIMITER + anno;
+        } else if (StringUtils.isNotEmpty(page)) {
+            return book + DELIMITER + page;
+        } else if (StringUtils.isNotEmpty(book)) {
+            return book;
+        } else {
+            return null;
+        }
+    }
+
+    private String trimExt(String name) {
+        if (!name.contains(".")) {
+            return name;
+        }
+        return name.substring(0, name.lastIndexOf('.'));
     }
 
     private void print(String message) {
