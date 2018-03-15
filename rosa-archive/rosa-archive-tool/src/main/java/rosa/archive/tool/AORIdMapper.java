@@ -78,7 +78,7 @@ public class AORIdMapper {
         List<String> errors = new ArrayList<>();
         AnnotationLocationMapUtil.write(colBSG, result, errors);
         if (!errors.isEmpty()) {
-            print("Errors encountered while writing '" + ArchiveConstants.ANNOTATION_LINK_MAP + "' (" + collection + ")");
+            print("Errors encountered while writing '" + ArchiveConstants.ID_LOCATION_MAP + "' (" + collection + ")");
             errors.forEach(e -> print("  > " + e));
         }
     }

@@ -30,6 +30,7 @@ public class BookCollection implements HasId, Serializable {
 
     private CollectionMetadata metadata;
 
+    /** Map of IDs to locations in the collection */
     private Map<String, AorLocation> annotationMap;
 
     /**

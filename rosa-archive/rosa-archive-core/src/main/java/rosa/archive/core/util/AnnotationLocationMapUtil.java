@@ -12,18 +12,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static rosa.archive.core.ArchiveConstants.ANNOTATION_LINK_MAP;
+import static rosa.archive.core.ArchiveConstants.ID_LOCATION_MAP;
 
+// TODO actually a serializer
 public class AnnotationLocationMapUtil {
 
     public static Map<String, AorLocation> annotationIdMap(ByteStreamGroup collection, PrintStream report) {
         Map<String, AorLocation> result = new HashMap<>();
 
-        if (!collection.hasByteStream(ANNOTATION_LINK_MAP)) {
+        if (!collection.hasByteStream(ID_LOCATION_MAP)) {
             return result;
         }
 
-        try (InputStream map = collection.getByteStream(ANNOTATION_LINK_MAP)) {
+        try (InputStream map = collection.getByteStream(ID_LOCATION_MAP)) {
             /*
                 Each line:
                 annotation_id,collection,book,page
@@ -44,12 +45,18 @@ public class AnnotationLocationMapUtil {
                 }
             });
         } catch (IOException e) {
-            print(report, "Failed to parse '" + ANNOTATION_LINK_MAP + "' for (" + collection.name() + ")");
+            print(report, "Failed to parse '" + ID_LOCATION_MAP + "' for (" + collection.name() + ")");
         }
 
         return result;
     }
 
+    /**
+     * Get the collection's map of IDs to locations within that collection, ignoring errors.
+     *
+     * @param collection collection
+     * @return map of IDs to locations in corpus
+     */
     public static Map<String, AorLocation> annotationIdMap(ByteStreamGroup collection) {
         return annotationIdMap(collection, null);
     }
@@ -70,12 +77,12 @@ public class AnnotationLocationMapUtil {
             return;
         }
 
-        try (OutputStream out = collection.getOutputStream(ANNOTATION_LINK_MAP)) {
+        try (OutputStream out = collection.getOutputStream(ID_LOCATION_MAP)) {
             for (Map.Entry<String, AorLocation> entry : map.entrySet()) {
                 IOUtils.write(entry.getKey() + "," + entry.getValue().getCollection() + "," + entry.getValue().getBook(), out);
             }
         } catch (IOException e) {
-            errors.add("Failed to write '" + ANNOTATION_LINK_MAP + "' for collection (" + collection.name() + ")");
+            errors.add("Failed to write '" + ID_LOCATION_MAP + "' for collection (" + collection.name() + ")");
         }
 
     }
