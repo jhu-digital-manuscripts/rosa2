@@ -174,7 +174,7 @@ public class ArchiveTool {
 
         ArchiveTool tool = new ArchiveTool(store, config);
         tool.aorTranscriptionChecker = injector.getInstance(AORTranscriptionChecker.class);
-        tool.idMapper = new AORIdMapper(store, base, tool.report);
+        tool.idMapper = new AORIdMapper(base, tool.report);
 
         tool.run(cmdline, cmd);
     }

@@ -157,7 +157,7 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
                 aPage.getTables().forEach(t -> annotations.add(annotationTransformer.transform(collection, book, image, t)));
                 break;
             case LINKS:
-                aPage.getAnnotations().forEach(a -> annotations.addAll(annotationTransformer.transformToLinks(collection, book, image, a)));
+//                aPage.getAnnotations().forEach(a -> annotations.addAll(annotationTransformer.transformToLinks(collection, book, image, a)));
                 break;
             default:
                 break;

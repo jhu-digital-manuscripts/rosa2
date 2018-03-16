@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -42,14 +43,12 @@ public class AORIdMapper {
     private static final Map<String, FileMap> map_cache = new ConcurrentHashMap<>();
     private static final FileMap emptyFileMap = new FileMap();
 
-    private Store store;
     private PrintStream report;
     private ByteStreamGroup base;
 
     private ArchiveNameParser nameParser;
 
-    public AORIdMapper(Store store, ByteStreamGroup base, PrintStream report) {
-        this.store = store;
+    public AORIdMapper(ByteStreamGroup base, PrintStream report) {
         this.base = base;
         this.report = report;
         this.nameParser = new ArchiveNameParser();
@@ -61,11 +60,14 @@ public class AORIdMapper {
      * @param collection collection ByteStreamGroup
      */
     public void run(String collection) {
-        if (!base.hasByteStream(collection)) {
+        if (!base.hasByteStreamGroup(collection)) {
             print("  No such collection found (" + collection + ")");
         }
         Map<String, AorLocation> result = new HashMap<>();
         ByteStreamGroup colBSG = base.getByteStreamGroup(collection);
+
+        print("Writing '" + ArchiveConstants.ID_LOCATION_MAP + "' for collection: " + collection);
+        result.put(collection, new AorLocation(collection, null, null, null));
 
         try {
             for (String book : colBSG.listByteStreamGroupNames()) {
@@ -84,6 +86,7 @@ public class AORIdMapper {
     }
 
     private Map<String, AorLocation> doBook(String col, ByteStreamGroup book) throws IOException {
+        print("  >> " + book.name());
         Map<String, AorLocation> result = new HashMap<>();
         List<String> errors = new ArrayList<>();
 
@@ -130,7 +133,15 @@ public class AORIdMapper {
                 .findFirst()
                 .orElse(null);
 
+        for (Entry<String, String> entry : pageMap.getMap().entrySet()) {
+            if (entry.getValue().equals(page.getPage())) {
+                orig_page = trimExt(entry.getKey());
+                break;
+            }
+        }
+
         if (orig_page != null) {
+            print("  - " + orig_page);
             AorLocation loc = new AorLocation(col, book, page.getPage(), null);
             result.put(getId(book, orig_page, null), loc);
         }

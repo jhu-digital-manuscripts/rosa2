@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import javax.xml.stream.XMLOutputFactory;
@@ -37,6 +39,7 @@ import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
+import rosa.iiif.presentation.model.selector.TextQuoteSelector;
 
 import java.io.UnsupportedEncodingException;
 
@@ -97,13 +100,13 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
         if (anno instanceof Drawing) {
             a.setDefaultSource(new AnnotationSource(
-                    "moo", DC_TEXT, "text/html", drawingToDisplayHtml((Drawing) anno), language));
+                    "moo", DC_TEXT, "text/html", drawingToDisplayHtml(collection, (Drawing) anno), language));
         } else if (anno instanceof Table) {
             a.setDefaultSource(new AnnotationSource(
-                    "moo", DC_TEXT, "text/html", tableToDisplayHtml((Table) anno), language));
+                    "moo", DC_TEXT, "text/html", tableToDisplayHtml(collection, (Table) anno), language));
         } else if (anno instanceof Graph) {
             a.setDefaultSource(new AnnotationSource(
-                    "moo", DC_TEXT, "text/html", graphToDisplayHtml((Graph) anno), language));
+                    "moo", DC_TEXT, "text/html", graphToDisplayHtml(collection, (Graph) anno), language));
         } else {
             a.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
                     locationIcon + " " + anno.toPrettyString(), language));
@@ -153,7 +156,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         anno.setMotivation(IIIFNames.SC_PAINTING);
         anno.getMetadata().put("type", new HtmlValue("Marginalia"));
         anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
-                marginaliaToDisplayHtml(marg), lang));
+                marginaliaToDisplayHtml(collection, marg), lang));
 
         /*
             #getAnnotationPage(String) -- This will not work if an annotation has a pre-defined ID
@@ -175,7 +178,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return anno;
     }
 
-    private String graphToDisplayHtml(Graph graph) {
+    private String graphToDisplayHtml(BookCollection col, Graph graph) {
         StringBuilder people = new StringBuilder();
         StringBuilder books = new StringBuilder();
         StringBuilder locs = new StringBuilder();
@@ -236,7 +239,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             addListOfValues("Locations:", locs.toString(), writer);
             addListOfValues("Symbols:", symbols.toString(), writer);
 
-            addInternalRefs(graph.getInternalRefs(), writer);
+            addInternalRefs(col, graph.getInternalRefs(), writer);
 
             writer.writeEndElement();
             return output.toString("UTF-8");
@@ -263,7 +266,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return result.toString();
     }
 
-    private String drawingToDisplayHtml(Drawing drawing) {
+    private String drawingToDisplayHtml(BookCollection col, Drawing drawing) {
         XMLOutputFactory outF = newOutputFactory();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
 
@@ -287,7 +290,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             addListOfValues("Books:", drawing.getBooks(), ", ", writer);
             addListOfValues("Locations:", drawing.getLocations(), ", ", writer);
 
-            addInternalRefs(drawing.getInternalRefs(), writer);
+            addInternalRefs(col, drawing.getInternalRefs(), writer);
 
             writer.writeEndElement();
             return output.toString("UTF-8");
@@ -296,7 +299,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
     }
 
-    private String tableToDisplayHtml(Table table) {
+    private String tableToDisplayHtml(BookCollection col, Table table) {
         XMLOutputFactory outF = newOutputFactory();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         try {
@@ -321,7 +324,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             addListOfValues("People:", table.getPeople(), ", ", writer);
             addListOfValues("Books:", table.getBooks(), ", ", writer);
             addListOfValues("Locations:", table.getLocations(), ", ", writer);
-            addInternalRefs(table.getInternalRefs(), writer);
+            addInternalRefs(col, table.getInternalRefs(), writer);
 
             writer.writeEndElement();
             return output.toString("UTF-8");
@@ -331,7 +334,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     // Must make sure to escape text appropriately
-    private String marginaliaToDisplayHtml(Marginalia marg) {
+    private String marginaliaToDisplayHtml(BookCollection col, Marginalia marg) {
         StringBuilder transcription = new StringBuilder();
         StringBuilder people = new StringBuilder();
         StringBuilder books = new StringBuilder();
@@ -406,7 +409,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
             // Add list of X-refs
             addXRefs(xrefs, writer);
-            addInternalRefs(iRefs, writer);
+            addInternalRefs(col, iRefs, writer);
 
             writer.writeEndElement();
             return output.toString("UTF-8");
@@ -494,7 +497,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         writer.writeEndElement();
     }
 
-    private void addInternalRefs(List<InternalReference> refs, XMLStreamWriter writer) throws XMLStreamException {
+    private void addInternalRefs(BookCollection col, List<InternalReference> refs, XMLStreamWriter writer) throws XMLStreamException {
         if (refs == null || refs.isEmpty()) {
             return;
         }
@@ -513,13 +516,18 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             for (int j = 0; j < ref.getTargets().size(); j++) {
                 ReferenceTarget tar = ref.getTargets().get(j);
 
-                writer.writeCharacters("(");
-                writer.writeStartElement("a");
-                writer.writeAttribute("href", "javascript:;");
-                writer.writeAttribute("data-targetId", tar.getTargetId());
-                writer.writeCharacters("[" + tar.getText() + "]");
-                writer.writeEndElement();
-                writer.writeCharacters(")");
+                String targetId = targetId(col.getAnnotationMap().get(tar.getTargetId()));
+                if (targetId != null) {
+                    writer.writeCharacters("(");
+                    writer.writeStartElement("a");
+                    writer.writeAttribute("href", "javascript:;");
+                    writer.writeAttribute("data-targetId", tar.getTargetId());
+                    writer.writeCharacters("[" + tar.getText() + "]");
+                    writer.writeEndElement();
+                    writer.writeCharacters(")");
+                } else {
+                    writer.writeCharacters("[" + tar.getText() + "]");
+                }
             }
         }
 
@@ -946,26 +954,73 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
     private List<Annotation> adaptMarginaliaLinks(BookCollection col, Book book, Marginalia marg) {
         List<Annotation> res = new ArrayList<>();
-
+        for (MarginaliaLanguage lang : marg.getLanguages()) {
+            for (Position pos : lang.getPositions()) {
+                res.addAll(pos.getInternalRefs().stream()
+                        .map(ref -> adaptInternalRef(col, book, marg.getId(), ref))
+                        .filter(Objects::nonNull)
+                        .collect(Collectors.toList()));
+            }
+        }
         return res;
     }
 
     private List<Annotation> adaptDrawingLinks(BookCollection col, Book book, Drawing d) {
-        List<Annotation> res = new ArrayList<>();
-
-        return res;
+        return d.getInternalRefs().stream()
+                .map(ref -> adaptInternalRef(col, book, d.getId(), ref))
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
     }
 
     private List<Annotation> adaptGraphLinks(BookCollection col, Book book, Graph g) {
-        List<Annotation> res = new ArrayList<>();
-
-        return res;
+        return g.getInternalRefs().stream()
+                .map(ref -> adaptInternalRef(col, book, g.getId(), ref))
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
     }
 
     private List<Annotation> adaptTableLinks(BookCollection col, Book book, Table t) {
-        List<Annotation> res = new ArrayList<>();
+        return t.getInternalRefs().stream()
+                .map(ref -> adaptInternalRef(col, book, t.getId(), ref))
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+    }
 
-        return res;
+    private Annotation adaptInternalRef(BookCollection col, Book book, String annoId, InternalReference ref) {
+        if (ref == null) {
+            return null;
+        }
+
+        Annotation a = new Annotation();
+
+        a.setMotivation(IIIFNames.OA_LINKING);
+
+        AnnotationSource source = new AnnotationSource(
+                pres_uris.getAnnotationURI(col.getId(), book.getId(), annoId), DC_TEXT, "text/html");
+        TextQuoteSelector source_selector = new TextQuoteSelector(
+                ref.getAnchor(), ref.getAnchorPrefix(), ref.getAnchorSuffix());
+        if (source_selector.hasContent()) {
+            source.setSelector(source_selector);
+        }
+        a.setDefaultSource(source);
+
+        // Point to the last target for now
+        ref.getTargets().forEach(target -> {
+            AnnotationTarget t = annotationTarget(col.getAnnotationMap().get(target.getTargetId()));
+            if (t != null) {
+                TextQuoteSelector selector = new TextQuoteSelector(
+                        target.getText(), target.getTextPrefix(), target.getTextSuffix());
+                if (selector.hasContent()) {
+                    t.setSelector(selector);
+                }
+                a.setDefaultTarget(t);
+            }
+        });
+        if (a.getDefaultTarget() == null) {
+            return null;
+        }
+
+        return a;
     }
 
     /**
@@ -984,14 +1039,14 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         String continuesTo = anno.getContinuesTo();
         String continuesFrom = anno.getContinuesFrom();
 
-        if (toTranscription != null) {
+        if (toTranscription != null && toTranscription.lastIndexOf('.') > 0) {
             toTranscription = toTranscription.substring(0, toTranscription.lastIndexOf('.'));
             if (toTranscription.equals(continuesTo)) {
                 // TODO param page actually needs to come from the book's page filemap to get the real page name
 //                result.add(annotationTarget(new AorLocation(col.getId(), book, page, null)));
             }
         }
-        if (fromTranscription != null) {
+        if (fromTranscription != null && fromTranscription.lastIndexOf('.') > 0) {
             fromTranscription = fromTranscription.substring(1, fromTranscription.lastIndexOf('.'));
             if (fromTranscription.equals(continuesFrom)) {
                 // TODO param page actually needs to come from the book's page filemap to get the real page name
@@ -1037,63 +1092,27 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
     }
 
-/*
-    private Annotation adaptReference(String collectionId, Book book, Reference r) {
-        Annotation a = new Annotation();
+    private String targetId(AorLocation loc) {
+        if (loc == null) {
+            return null;
+        }
 
-        a.setId(pres_uris.getAnnotationURI(collectionId, book.getId(), r.getId()));
-        a.setMotivation(OA_LINKING);
+        String uri = null;
+        if (isNotEmpty(loc.getAnnotation())) {
+            uri = pres_uris.getAnnotationURI(loc.getCollection(), loc.getBook(), loc.getAnnotation());
+        } else if (isNotEmpty(loc.getPage())) {
+            uri = pres_uris.getCanvasURI(loc.getCollection(), loc.getBook(), loc.getPage());
+        } else if (isNotEmpty(loc.getBook())) {
+            uri = pres_uris.getManifestURI(loc.getCollection(), loc.getBook());
+        } else if (isNotEmpty(loc.getCollection())) {
+            uri = pres_uris.getCollectionURI(loc.getCollection());
+        }
 
-        // Annotation bodies : URL link and maybe long-form description
-        r.getSources().forEach(s -> {
-            AnnotationSource source = new AnnotationSource(s.getUrl(), DC_TEXT, FORMAT_TEXT_HTML);
-            TextQuoteSelector source_selector =
-                    new TextQuoteSelector(s.getText(), s.getTextPrefix(), s.getTextSuffix());
-            if (source_selector.hasContent()) {
-                source.setSelector(source_selector);
-            }
-            if (s.getDescription() != null) {
-                source.setEmbeddedText(s.getDescription());
-                source.setEmbeddedLanguage("en");
-            }
-            source.setLabel(s.getLabel());
-            a.addSourceChoice(source);
-        });
-
-        // Annotation targets : probably an annotation
-        r.getTargets().forEach(t -> {
-            AnnotationTarget target = new AnnotationTarget(t.getUrl());
-            if (target.getUri() == null) {
-                // Possible for a reference to not point to anything, in which case, assume it points to the current canvas
-                // Get the image this annotation is on
-                BookImage relatedImage = book.getImages().getImages().stream()
-                        .filter(im -> im.getId().equals(r.getImageId()) || im.getName().equals(r.getImageId()))
-                        .findFirst()
-                        .orElse(null);
-
-                if (relatedImage != null) {
-                    target = locationOnCanvas(relatedImage, Location.FULL_PAGE);
-                    target.setUri(pres_uris.getCanvasURI(
-                            collectionId,
-                            book.getId(),
-                            relatedImage.getName()
-                    ));
-                }
-            }
-            TextQuoteSelector target_selector =
-                    new TextQuoteSelector(t.getText(), t.getTextPrefix(), t.getTextSuffix());
-            if (target_selector.hasContent()) {
-                target.setSelector(target_selector);
-            }
-            a.setDefaultTarget(target);
-
-            if (t.getLabel() != null) {
-                a.setLabel(t.getLabel(), "en");
-            }
-        });
-
-        return a;
+        if (isNotEmpty(uri)) {
+            return uri;
+        } else {
+            return null;
+        }
     }
- */
 
 }

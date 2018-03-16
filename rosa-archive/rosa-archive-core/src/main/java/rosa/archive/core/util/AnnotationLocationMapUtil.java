@@ -1,6 +1,7 @@
 package rosa.archive.core.util;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ByteStreamGroup;
 import rosa.archive.model.aor.AorLocation;
 
@@ -8,9 +9,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import static rosa.archive.core.ArchiveConstants.ID_LOCATION_MAP;
 
@@ -78,8 +82,26 @@ public class AnnotationLocationMapUtil {
         }
 
         try (OutputStream out = collection.getOutputStream(ID_LOCATION_MAP)) {
-            for (Map.Entry<String, AorLocation> entry : map.entrySet()) {
-                IOUtils.write(entry.getKey() + "," + entry.getValue().getCollection() + "," + entry.getValue().getBook(), out);
+            List<Entry<String, AorLocation>> list = new ArrayList<>(map.entrySet());
+            list.sort(Comparator.comparing(Entry::getKey));
+//            for (Map.Entry<String, AorLocation> entry : map.entrySet()) {
+            for (Entry<String, AorLocation> entry : list) {
+                AorLocation loc = entry.getValue();
+
+                StringBuilder line = new StringBuilder(entry.getKey());
+                line.append(',').append(loc.getCollection());
+                if (StringUtils.isNotBlank(loc.getBook())) {
+                    line.append(',').append(loc.getBook());
+                }
+                if (StringUtils.isNotBlank(loc.getPage())) {
+                    line.append(',').append(loc.getPage());
+                }
+                if (StringUtils.isNotBlank(loc.getAnnotation())) {
+                    line.append(',').append(loc.getAnnotation());
+                }
+                line.append(System.lineSeparator());
+
+                IOUtils.write(line, out);
             }
         } catch (IOException e) {
             errors.add("Failed to write '" + ID_LOCATION_MAP + "' for collection (" + collection.name() + ")");

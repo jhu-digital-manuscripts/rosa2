@@ -561,7 +561,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         assertNotNull("Search result was NULL", result);
         assertEquals("Unexpected number of results found.", 2, result.getTotal());
         assertEquals(2, result.getMatches().length);
-        assertEquals("http://serenity.dkc.jhu.edu/pres/valid.LudwigXV7/manifest",
+        assertEquals("http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest",
                 result.getMatches()[1].getId());
         assertNotNull(result.getCategories());
 
