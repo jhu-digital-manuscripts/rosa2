@@ -69,7 +69,8 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     public List<Annotation> transformToLinks(BookCollection col, Book book, BookImage image, rosa.archive.model.aor.Annotation anno) {
-        return adaptToLinks(col, book, image, anno);
+//        return adaptToLinks(col, book, image, anno);
+        return Collections.emptyList();
     }
 
     @Override
@@ -521,7 +522,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                     writer.writeCharacters("(");
                     writer.writeStartElement("a");
                     writer.writeAttribute("href", "javascript:;");
-                    writer.writeAttribute("data-targetId", tar.getTargetId());
+                    writer.writeAttribute("data-targetId", targetId);
                     writer.writeCharacters("[" + tar.getText() + "]");
                     writer.writeEndElement();
                     writer.writeCharacters(")");
@@ -896,201 +897,201 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         return outF;
     }
 
-    /**
-     * Many AOR annotations are related to other annotations, other pages, or even other books.
-     * This method will return a list of IIIF Annotations. The source of these annotations will
-     * be the given AOR annotation and each resulting IIIF annotation will have single target
-     * URI pointing to the desired object.
-     *
-     * @param col book collection
-     * @param book book obj
-     * @param image parent page
-     * @param anno an AOR annotation
-     * @return list of annotations that link other annotations to other entities
-     */
-    private <T extends rosa.archive.model.aor.Annotation> List<Annotation> adaptToLinks(BookCollection col, Book book, BookImage image, T anno) {
-        if (anno == null) {
-            return Collections.emptyList();
-        }
-        List<Annotation> result = new ArrayList<>();
+//    /**
+//     * Many AOR annotations are related to other annotations, other pages, or even other books.
+//     * This method will return a list of IIIF Annotations. The source of these annotations will
+//     * be the given AOR annotation and each resulting IIIF annotation will have single target
+//     * URI pointing to the desired object.
+//     *
+//     * @param col book collection
+//     * @param book book obj
+//     * @param image parent page
+//     * @param anno an AOR annotation
+//     * @return list of annotations that link other annotations to other entities
+//     */
+//    private <T extends rosa.archive.model.aor.Annotation> List<Annotation> adaptToLinks(BookCollection col, Book book, BookImage image, T anno) {
+//        if (anno == null) {
+//            return Collections.emptyList();
+//        }
+//        List<Annotation> result = new ArrayList<>();
+//
+//        AnnotationSource source = new AnnotationSource();
+//
+//        List<AnnotationTarget> targets = new ArrayList<>();
+//        if (isNotEmpty(anno.getInternalRef())) {
+//            AnnotationTarget t = annotationTarget(col.getAnnotationMap().get(anno.getInternalRef()));
+//            if (t != null) {
+//                targets.add(t);
+//            }
+//        }
+//
+//        if (anno instanceof MultiPart) {
+//            targets.addAll(adaptMultiPart(col, book.getId(), (MultiPart) anno));
+//        }
+//
+//        if (anno instanceof Marginalia) {
+//            result.addAll(adaptMarginaliaLinks(col, book, (Marginalia) anno));
+//        } else if (anno instanceof Drawing) {
+//            result.addAll(adaptDrawingLinks(col, book, (Drawing) anno));
+//        } else if (anno instanceof Graph) {
+//            result.addAll(adaptGraphLinks(col, book, (Graph) anno));
+//        } else if (anno instanceof Table) {
+//            result.addAll(adaptTableLinks(col, book, (Table) anno));
+//        }
+//
+//        for (AnnotationTarget target : targets) {
+//            Annotation a = new Annotation();
+//
+//            a.setId(pres_uris.getAnnotationURI(col.getId(), book.getId(), anno.getId()));
+//            a.setMotivation(IIIFNames.OA_LINKING);
+//            a.setDefaultSource(source);
+//            a.setDefaultTarget(target);
+//
+//            result.add(a);
+//        }
+//
+//        return result;
+//    }
 
-        AnnotationSource source = new AnnotationSource();
-
-        List<AnnotationTarget> targets = new ArrayList<>();
-        if (isNotEmpty(anno.getInternalRef())) {
-            AnnotationTarget t = annotationTarget(col.getAnnotationMap().get(anno.getInternalRef()));
-            if (t != null) {
-                targets.add(t);
-            }
-        }
-
-        if (anno instanceof MultiPart) {
-            targets.addAll(adaptMultiPart(col, book.getId(), (MultiPart) anno));
-        }
-
-        if (anno instanceof Marginalia) {
-            result.addAll(adaptMarginaliaLinks(col, book, (Marginalia) anno));
-        } else if (anno instanceof Drawing) {
-            result.addAll(adaptDrawingLinks(col, book, (Drawing) anno));
-        } else if (anno instanceof Graph) {
-            result.addAll(adaptGraphLinks(col, book, (Graph) anno));
-        } else if (anno instanceof Table) {
-            result.addAll(adaptTableLinks(col, book, (Table) anno));
-        }
-
-        for (AnnotationTarget target : targets) {
-            Annotation a = new Annotation();
-
-            a.setId(pres_uris.getAnnotationURI(col.getId(), book.getId(), anno.getId()));
-            a.setMotivation(IIIFNames.OA_LINKING);
-            a.setDefaultSource(source);
-            a.setDefaultTarget(target);
-
-            result.add(a);
-        }
-
-        return result;
-    }
-
-    private List<Annotation> adaptMarginaliaLinks(BookCollection col, Book book, Marginalia marg) {
-        List<Annotation> res = new ArrayList<>();
-        for (MarginaliaLanguage lang : marg.getLanguages()) {
-            for (Position pos : lang.getPositions()) {
-                res.addAll(pos.getInternalRefs().stream()
-                        .map(ref -> adaptInternalRef(col, book, marg.getId(), ref))
-                        .filter(Objects::nonNull)
-                        .collect(Collectors.toList()));
-            }
-        }
-        return res;
-    }
-
-    private List<Annotation> adaptDrawingLinks(BookCollection col, Book book, Drawing d) {
-        return d.getInternalRefs().stream()
-                .map(ref -> adaptInternalRef(col, book, d.getId(), ref))
-                .filter(Objects::nonNull)
-                .collect(Collectors.toList());
-    }
-
-    private List<Annotation> adaptGraphLinks(BookCollection col, Book book, Graph g) {
-        return g.getInternalRefs().stream()
-                .map(ref -> adaptInternalRef(col, book, g.getId(), ref))
-                .filter(Objects::nonNull)
-                .collect(Collectors.toList());
-    }
-
-    private List<Annotation> adaptTableLinks(BookCollection col, Book book, Table t) {
-        return t.getInternalRefs().stream()
-                .map(ref -> adaptInternalRef(col, book, t.getId(), ref))
-                .filter(Objects::nonNull)
-                .collect(Collectors.toList());
-    }
-
-    private Annotation adaptInternalRef(BookCollection col, Book book, String annoId, InternalReference ref) {
-        if (ref == null) {
-            return null;
-        }
-
-        Annotation a = new Annotation();
-
-        a.setMotivation(IIIFNames.OA_LINKING);
-
-        AnnotationSource source = new AnnotationSource(
-                pres_uris.getAnnotationURI(col.getId(), book.getId(), annoId), DC_TEXT, "text/html");
-        TextQuoteSelector source_selector = new TextQuoteSelector(
-                ref.getAnchor(), ref.getAnchorPrefix(), ref.getAnchorSuffix());
-        if (source_selector.hasContent()) {
-            source.setSelector(source_selector);
-        }
-        a.setDefaultSource(source);
-
-        // Point to the last target for now
-        ref.getTargets().forEach(target -> {
-            AnnotationTarget t = annotationTarget(col.getAnnotationMap().get(target.getTargetId()));
-            if (t != null) {
-                TextQuoteSelector selector = new TextQuoteSelector(
-                        target.getText(), target.getTextPrefix(), target.getTextSuffix());
-                if (selector.hasContent()) {
-                    t.setSelector(selector);
-                }
-                a.setDefaultTarget(t);
-            }
-        });
-        if (a.getDefaultTarget() == null) {
-            return null;
-        }
-
-        return a;
-    }
-
-    /**
-     * Marginalia, Graph annotations can be split up between multiple pages and share the properties:
-     * continues_to, continues_from, to_transcription, from_transcription. These will link the
-     * annotations to other annotations or to other pages.
-     *
-     * @param anno a multi-part annotation
-     * @return list of targets
-     */
-    private List<AnnotationTarget> adaptMultiPart(BookCollection col, String book, MultiPart anno) {
-        List<AnnotationTarget> result = new ArrayList<>();
-
-        String toTranscription = anno.getToTranscription();
-        String fromTranscription = anno.getFromTranscription();
-        String continuesTo = anno.getContinuesTo();
-        String continuesFrom = anno.getContinuesFrom();
-
-        if (toTranscription != null && toTranscription.lastIndexOf('.') > 0) {
-            toTranscription = toTranscription.substring(0, toTranscription.lastIndexOf('.'));
-            if (toTranscription.equals(continuesTo)) {
-                // TODO param page actually needs to come from the book's page filemap to get the real page name
-//                result.add(annotationTarget(new AorLocation(col.getId(), book, page, null)));
-            }
-        }
-        if (fromTranscription != null && fromTranscription.lastIndexOf('.') > 0) {
-            fromTranscription = fromTranscription.substring(1, fromTranscription.lastIndexOf('.'));
-            if (fromTranscription.equals(continuesFrom)) {
-                // TODO param page actually needs to come from the book's page filemap to get the real page name
-//                result.add(annotationTarget(new AorLocation(col.getId(), book, page, null)));
-            }
-        }
-        if (isNotEmpty(anno.getContinuesFrom())) {
-            AnnotationTarget t = annotationTarget(col.getAnnotationMap().get(anno.getContinuesFrom()));
-            if (t != null) {
-                result.add(t);
-            }
-        }
-        if (isNotEmpty(anno.getContinuesTo())) {
-            AnnotationTarget t = annotationTarget(col.getAnnotationMap().get(anno.getContinuesTo()));
-            if (t != null) {
-                result.add(t);
-            }
-        }
-
-        return result;
-    }
-
-    private AnnotationTarget annotationTarget(AorLocation loc) {
-        if (loc == null) {
-            return null;
-        }
-
-        String uri = null;
-        if (isNotEmpty(loc.getAnnotation())) {
-            uri = pres_uris.getAnnotationURI(loc.getCollection(), loc.getBook(), loc.getAnnotation());
-        } else if (isNotEmpty(loc.getPage())) {
-            uri = pres_uris.getCanvasURI(loc.getCollection(), loc.getBook(), loc.getPage());
-        } else if (isNotEmpty(loc.getBook())) {
-            uri = pres_uris.getManifestURI(loc.getCollection(), loc.getBook());
-        } else if (isNotEmpty(loc.getCollection())) {
-            uri = pres_uris.getCollectionURI(loc.getCollection());
-        }
-
-        if (isNotEmpty(uri)) {
-            return new AnnotationTarget(uri);
-        } else {
-            return null;
-        }
-    }
+//    private List<Annotation> adaptMarginaliaLinks(BookCollection col, Book book, Marginalia marg) {
+//        List<Annotation> res = new ArrayList<>();
+//        for (MarginaliaLanguage lang : marg.getLanguages()) {
+//            for (Position pos : lang.getPositions()) {
+//                res.addAll(pos.getInternalRefs().stream()
+//                        .map(ref -> adaptInternalRef(col, book, marg.getId(), ref))
+//                        .filter(Objects::nonNull)
+//                        .collect(Collectors.toList()));
+//            }
+//        }
+//        return res;
+//    }
+//
+//    private List<Annotation> adaptDrawingLinks(BookCollection col, Book book, Drawing d) {
+//        return d.getInternalRefs().stream()
+//                .map(ref -> adaptInternalRef(col, book, d.getId(), ref))
+//                .filter(Objects::nonNull)
+//                .collect(Collectors.toList());
+//    }
+//
+//    private List<Annotation> adaptGraphLinks(BookCollection col, Book book, Graph g) {
+//        return g.getInternalRefs().stream()
+//                .map(ref -> adaptInternalRef(col, book, g.getId(), ref))
+//                .filter(Objects::nonNull)
+//                .collect(Collectors.toList());
+//    }
+//
+//    private List<Annotation> adaptTableLinks(BookCollection col, Book book, Table t) {
+//        return t.getInternalRefs().stream()
+//                .map(ref -> adaptInternalRef(col, book, t.getId(), ref))
+//                .filter(Objects::nonNull)
+//                .collect(Collectors.toList());
+//    }
+//
+//    private Annotation adaptInternalRef(BookCollection col, Book book, String annoId, InternalReference ref) {
+//        if (ref == null) {
+//            return null;
+//        }
+//
+//        Annotation a = new Annotation();
+//
+//        a.setMotivation(IIIFNames.OA_LINKING);
+//
+//        AnnotationSource source = new AnnotationSource(
+//                pres_uris.getAnnotationURI(col.getId(), book.getId(), annoId), DC_TEXT, "text/html");
+//        TextQuoteSelector source_selector = new TextQuoteSelector(
+//                ref.getAnchor(), ref.getAnchorPrefix(), ref.getAnchorSuffix());
+//        if (source_selector.hasContent()) {
+//            source.setSelector(source_selector);
+//        }
+//        a.setDefaultSource(source);
+//
+//        // Point to the last target for now
+//        ref.getTargets().forEach(target -> {
+//            AnnotationTarget t = annotationTarget(col.getAnnotationMap().get(target.getTargetId()));
+//            if (t != null) {
+//                TextQuoteSelector selector = new TextQuoteSelector(
+//                        target.getText(), target.getTextPrefix(), target.getTextSuffix());
+//                if (selector.hasContent()) {
+//                    t.setSelector(selector);
+//                }
+//                a.setDefaultTarget(t);
+//            }
+//        });
+//        if (a.getDefaultTarget() == null) {
+//            return null;
+//        }
+//
+//        return a;
+//    }
+//
+//    /**
+//     * Marginalia, Graph annotations can be split up between multiple pages and share the properties:
+//     * continues_to, continues_from, to_transcription, from_transcription. These will link the
+//     * annotations to other annotations or to other pages.
+//     *
+//     * @param anno a multi-part annotation
+//     * @return list of targets
+//     */
+//    private List<AnnotationTarget> adaptMultiPart(BookCollection col, String book, MultiPart anno) {
+//        List<AnnotationTarget> result = new ArrayList<>();
+//
+//        String toTranscription = anno.getToTranscription();
+//        String fromTranscription = anno.getFromTranscription();
+//        String continuesTo = anno.getContinuesTo();
+//        String continuesFrom = anno.getContinuesFrom();
+//
+//        if (toTranscription != null && toTranscription.lastIndexOf('.') > 0) {
+//            toTranscription = toTranscription.substring(0, toTranscription.lastIndexOf('.'));
+//            if (toTranscription.equals(continuesTo)) {
+//                // TODO param page actually needs to come from the book's page filemap to get the real page name
+////                result.add(annotationTarget(new AorLocation(col.getId(), book, page, null)));
+//            }
+//        }
+//        if (fromTranscription != null && fromTranscription.lastIndexOf('.') > 0) {
+//            fromTranscription = fromTranscription.substring(1, fromTranscription.lastIndexOf('.'));
+//            if (fromTranscription.equals(continuesFrom)) {
+//                // TODO param page actually needs to come from the book's page filemap to get the real page name
+////                result.add(annotationTarget(new AorLocation(col.getId(), book, page, null)));
+//            }
+//        }
+//        if (isNotEmpty(anno.getContinuesFrom())) {
+//            AnnotationTarget t = annotationTarget(col.getAnnotationMap().get(anno.getContinuesFrom()));
+//            if (t != null) {
+//                result.add(t);
+//            }
+//        }
+//        if (isNotEmpty(anno.getContinuesTo())) {
+//            AnnotationTarget t = annotationTarget(col.getAnnotationMap().get(anno.getContinuesTo()));
+//            if (t != null) {
+//                result.add(t);
+//            }
+//        }
+//
+//        return result;
+//    }
+//
+//    private AnnotationTarget annotationTarget(AorLocation loc) {
+//        if (loc == null) {
+//            return null;
+//        }
+//
+//        String uri = null;
+//        if (isNotEmpty(loc.getAnnotation())) {
+//            uri = pres_uris.getAnnotationURI(loc.getCollection(), loc.getBook(), loc.getAnnotation());
+//        } else if (isNotEmpty(loc.getPage())) {
+//            uri = pres_uris.getCanvasURI(loc.getCollection(), loc.getBook(), loc.getPage());
+//        } else if (isNotEmpty(loc.getBook())) {
+//            uri = pres_uris.getManifestURI(loc.getCollection(), loc.getBook());
+//        } else if (isNotEmpty(loc.getCollection())) {
+//            uri = pres_uris.getCollectionURI(loc.getCollection());
+//        }
+//
+//        if (isNotEmpty(uri)) {
+//            return new AnnotationTarget(uri);
+//        } else {
+//            return null;
+//        }
+//    }
 
     private String targetId(AorLocation loc) {
         if (loc == null) {

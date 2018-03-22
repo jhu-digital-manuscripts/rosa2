@@ -86,7 +86,6 @@ public class AORIdMapper {
     }
 
     private Map<String, AorLocation> doBook(String col, ByteStreamGroup book) throws IOException {
-        print("  >> " + book.name());
         Map<String, AorLocation> result = new HashMap<>();
         List<String> errors = new ArrayList<>();
 
@@ -141,10 +140,13 @@ public class AORIdMapper {
         }
 
         if (orig_page != null) {
-            print("  - " + orig_page);
             AorLocation loc = new AorLocation(col, book, page.getPage(), null);
             result.put(getId(book, orig_page, null), loc);
         }
+
+        String p = trimExt(page.getPage());
+        p = book + DELIMITER + p.substring(book.length() + 1);
+        result.putIfAbsent(p, new AorLocation(col, book, page.getPage(), null));
 
         page.getAnnotations().stream()
                 .map(Annotation::getId)

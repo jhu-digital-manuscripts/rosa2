@@ -31,18 +31,19 @@ public class AnnotationLocationMapUtil {
         try (InputStream map = collection.getByteStream(ID_LOCATION_MAP)) {
             /*
                 Each line:
-                annotation_id,collection,book,page
+                id,collection,book,page,annotation
              */
             IOUtils.readLines(map, "UTF-8").forEach(line -> {
                 String[] parts = line.split(",");
 
-                if (parts.length != 4) {
-                    return;
-                }
                 String id = parts[0];
-                AorLocation loc = new AorLocation(parts[1], parts[2], parts[3], id);
+                AorLocation loc = new AorLocation(
+                        parts.length > 1 ? parts[1] : null,
+                        parts.length > 2 ? parts[2] : null,
+                        parts.length > 3 ? parts[3] : null,
+                        parts.length > 4 ? parts[4] : null);
 
-                if (!result.containsKey(id)) {
+                if (result.containsKey(id)) {
                     print(report, " >> Duplicate ID found (" + id + ")");
                 } else {
                     result.put(id, loc);
@@ -90,14 +91,17 @@ public class AnnotationLocationMapUtil {
 
                 StringBuilder line = new StringBuilder(entry.getKey());
                 line.append(',').append(loc.getCollection());
+                line.append(',');
                 if (StringUtils.isNotBlank(loc.getBook())) {
-                    line.append(',').append(loc.getBook());
+                    line.append(loc.getBook());
                 }
+                line.append(',');
                 if (StringUtils.isNotBlank(loc.getPage())) {
-                    line.append(',').append(loc.getPage());
+                    line.append(loc.getPage());
                 }
+                line.append(',');
                 if (StringUtils.isNotBlank(loc.getAnnotation())) {
-                    line.append(',').append(loc.getAnnotation());
+                    line.append(loc.getAnnotation());
                 }
                 line.append(System.lineSeparator());
 
