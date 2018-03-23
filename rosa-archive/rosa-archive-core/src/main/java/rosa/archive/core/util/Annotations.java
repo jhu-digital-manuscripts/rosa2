@@ -26,7 +26,8 @@ public class Annotations implements AORAnnotatedPageConstants {
      * @return annotation ID
      */
     public static String annotationId(String page, String annotationType, int index) {
-        return page + ANNOTATION_ID_SEPARATOR + annotationType + ANNOTATION_ID_SEPARATOR + index;
+//        return page + ANNOTATION_ID_SEPARATOR + annotationType + ANNOTATION_ID_SEPARATOR + index;
+        return null;
     }
 
     /**

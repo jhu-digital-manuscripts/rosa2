@@ -17,6 +17,7 @@ import rosa.archive.model.aor.AorLocation;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -144,16 +145,20 @@ public class AORIdMapper {
             result.put(getId(book, orig_page, null), loc);
         }
 
-        String p = trimExt(page.getPage());
-        p = book + DELIMITER + p.substring(book.length() + 1);
-        result.putIfAbsent(p, new AorLocation(col, book, page.getPage(), null));
+        String label = getPageLabel(book, page.getPage());
+        String p = book + DELIMITER + label;
+        result.putIfAbsent(p, new AorLocation(col, book, label, null));
 
         page.getAnnotations().stream()
                 .map(Annotation::getId)
                 .filter(id -> id != null && !id.isEmpty())
-                .forEach(id -> result.put(id, new AorLocation(col, book, page.getPage(), id)));
+                .forEach(id -> result.put(id, new AorLocation(col, book, label, id)));
 
         return result;
+    }
+
+    private String getPageLabel(String book, String page) {
+        return trimExt(page).substring(book.length() + 1);
     }
 
     private FileMap loadFileMap(String parent) {
