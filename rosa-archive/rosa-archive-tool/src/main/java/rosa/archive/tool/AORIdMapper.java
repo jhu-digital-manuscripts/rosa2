@@ -4,7 +4,6 @@ import org.apache.commons.lang3.StringUtils;
 import rosa.archive.core.ArchiveConstants;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.ByteStreamGroup;
-import rosa.archive.core.Store;
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.core.serialize.FileMapSerializer;
 import rosa.archive.core.util.AnnotationLocationMapUtil;
@@ -17,7 +16,6 @@ import rosa.archive.model.aor.AorLocation;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -126,22 +124,18 @@ public class AORIdMapper {
     private Map<String, AorLocation> doPage(String col, String book, AnnotatedPage page) {
         Map<String, AorLocation> result = new HashMap<>();
 
-        FileMap pageMap = loadFileMap(book);
-        String orig_page = pageMap.getMap().entrySet().stream()
-                .filter(entry -> entry.getValue().equals(page.getPage()))
-                .map(entry -> trimExt(entry.getKey()))
-                .findFirst()
-                .orElse(null);
+        FileMap pageMap = loadFileMap(col, book);
 
+        String orig_page = null;
         for (Entry<String, String> entry : pageMap.getMap().entrySet()) {
             if (entry.getValue().equals(page.getPage())) {
-                orig_page = trimExt(entry.getKey());
+                orig_page = getPageLabel(book, entry.getKey());
                 break;
             }
         }
 
         if (orig_page != null) {
-            AorLocation loc = new AorLocation(col, book, page.getPage(), null);
+            AorLocation loc = new AorLocation(col, book, getPageLabel(book, page.getPage()), null);
             result.put(getId(book, orig_page, null), loc);
         }
 
@@ -158,18 +152,22 @@ public class AORIdMapper {
     }
 
     private String getPageLabel(String book, String page) {
-        return trimExt(page).substring(book.length() + 1);
+        page = trimExt(page);
+        if (page.startsWith(book)) {
+            page = page.substring(book.length() + 1);
+        }
+        return page;
     }
 
-    private FileMap loadFileMap(String parent) {
+    private FileMap loadFileMap(String col, String parent) {
         if (map_cache.containsKey(parent)) {
             return map_cache.get(parent);
         }
 
-        if (!base.hasByteStreamGroup(parent)) {
+        if (!base.hasByteStreamGroup(col) || !base.getByteStreamGroup(col).hasByteStreamGroup(parent)) {
             return emptyFileMap;
         }
-        ByteStreamGroup parentGroup = base.getByteStreamGroup(parent);
+        ByteStreamGroup parentGroup = base.getByteStreamGroup(col).getByteStreamGroup(parent);
         if (!parentGroup.hasByteStream(FILEMAP_NAME)) {
             return emptyFileMap;
         }
