@@ -517,9 +517,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             }
             writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
             addSimpleElement(writer, "span", StringEscapeUtils.escapeHtml4(xref.getTitle()), "class", "italic");
-//            if (isNotEmpty(xref.getText())) {
-//                writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
-//            }
+            if (isNotEmpty(xref.getText())) {
+                writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
+            }
+            writer.writeCharacters("; ");
         }
 
         writer.writeEndElement();
@@ -540,27 +541,9 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
                 writer.writeCharacters(", ");
             }
 
-//<<<<<<< HEAD
             writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()));
             for (int j = 0; j < ref.getTargets().size(); j++) {
                 ReferenceTarget tar = ref.getTargets().get(j);
-//=======
-//            // Add list of X-refs
-//            if (xrefs.size() > 0) {
-//                writer.writeStartElement("p");
-//                addSimpleElement(writer, "span", "Cross-references:", "class", "emphasize");
-//                writer.writeCharacters(" ");
-//                for (XRef xref : xrefs) {
-////                    writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
-//                    addDecoratedText(decorator.decorate(xref.getPerson(), isni_db) + ", ", writer);
-//
-//                    addSimpleElement(writer, "span", StringEscapeUtils.escapeHtml4(xref.getTitle()), "class", "italic");
-//                    if (isNotEmpty(xref.getText())) {
-//                        writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
-//                    }
-//                    writer.writeCharacters("; ");
-//                }
-//>>>>>>> 448fa2d7... Decorate people names with ISNI URIs
 
                 writer.writeCharacters("(");
                 writer.writeStartElement("a");
