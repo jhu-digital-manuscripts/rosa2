@@ -30,6 +30,7 @@ import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.*;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.jhsearch.JHSearchField;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -37,6 +38,7 @@ import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
+import rosa.search.model.SearchField;
 
 import java.io.UnsupportedEncodingException;
 
@@ -130,7 +132,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
      *
      * Marginalia is split into potentially several languages, each of which are
      * split into potentially several locations. Currently, each piece is treated
-     * as a new and separate IIIF annotation. TODO these pieces must be linked somehow
+     * as a new and separate IIIF annotation.
      *
      * Marginalia ID structure:
      *
@@ -172,18 +174,19 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     private String graphToDisplayHtml(BookCollection col, Graph graph) {
-        StringBuilder people = new StringBuilder();
-        StringBuilder books = new StringBuilder();
-        StringBuilder locs = new StringBuilder();
-        StringBuilder symbols = new StringBuilder();
+        List<String> people = new ArrayList<>();
+        List<String> books = new ArrayList<>();
+        List<String> locs = new ArrayList<>();
+        List<String> symbols = new ArrayList<>();
         StringBuilder notes = new StringBuilder();      // Notes that target the graph, not an individual node
         StringBuilder notesTr = new StringBuilder();
 
         for (GraphText gt : graph.getGraphTexts()) {
-            add(people, gt.getPeople(), ", ");
-            add(books, gt.getBooks(), ", ");
-            add(locs, gt.getLocations(), ", ");
-            add(symbols, gt.getSymbols(), ", ");
+            people.addAll(gt.getPeople());
+            books.addAll(gt.getBooks());
+            locs.addAll(gt.getLocations());
+            symbols.addAll(gt.getSymbols());
+
             gt.getNotes().forEach(note -> {
                 notes.append(note.content);
                 if (note.internalLink == null || note.internalLink.isEmpty()) {
@@ -227,10 +230,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
             addListOfValues("Notes:", notes.toString(), writer);
             addListOfValues("Notes (translated):", notesTr.toString(), writer);
-            addListOfValues("People:", people.toString(), writer);
-            addListOfValues("Books:", books.toString(), writer);
-            addListOfValues("Locations:", locs.toString(), writer);
-            addListOfValues("Symbols:", symbols.toString(), writer);
+            addSearchableList("People:", people, JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
+            addListOfValues("Books:", books, writer);
+            addListOfValues("Locations:", locs, writer);
+            addListOfValues("Symbols:", symbols, writer);
 
             addInternalRefs(col, graph.getInternalRefs(), writer);
 
@@ -278,10 +281,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
             addTranslation(drawing.getTranslation(), writer);
 
-            addListOfValues("Symbols:", drawing.getSymbols(), ", ", writer);
-            addListOfValues("People:", drawing.getPeople(), ", ", writer);
-            addListOfValues("Books:", drawing.getBooks(), ", ", writer);
-            addListOfValues("Locations:", drawing.getLocations(), ", ", writer);
+            addListOfValues("Symbols:", drawing.getSymbols(), writer);
+            addSearchableList("People:", drawing.getPeople(), JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
+            addListOfValues("Books:", drawing.getBooks(), writer);
+            addListOfValues("Locations:", drawing.getLocations(), writer);
 
             addInternalRefs(col, drawing.getInternalRefs(), writer);
 
@@ -313,10 +316,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             writer.writeEndElement();
 
             addTranslation(table.getTranslation(), writer);
-            addListOfValues("Symbols:", table.getSymbols(), ", ", writer);
-            addListOfValues("People:", table.getPeople(), ", ", writer);
-            addListOfValues("Books:", table.getBooks(), ", ", writer);
-            addListOfValues("Locations:", table.getLocations(), ", ", writer);
+            addListOfValues("Symbols:", table.getSymbols(), writer);
+            addSearchableList("People:", table.getPeople(), JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
+            addListOfValues("Books:", table.getBooks(), writer);
+            addListOfValues("Locations:", table.getLocations(), writer);
             addInternalRefs(col, table.getInternalRefs(), writer);
 
             writer.writeEndElement();
@@ -328,11 +331,11 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
     // Must make sure to escape text appropriately
     private String marginaliaToDisplayHtml(BookCollection col, Marginalia marg) {
-        StringBuilder transcription = new StringBuilder();
-        StringBuilder people = new StringBuilder();
-        StringBuilder books = new StringBuilder();
-        StringBuilder locs = new StringBuilder();
-        StringBuilder symb = new StringBuilder();
+        List<String> transcription = new ArrayList<>();
+        List<String> people = new ArrayList<>();
+        List<String> books = new ArrayList<>();
+        List<String> locs = new ArrayList<>();
+        List<String> symb = new ArrayList<>();
 
         // Left, top, right, bottom
         boolean[] orientation = new boolean[4];
@@ -342,11 +345,12 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
         for (MarginaliaLanguage lang : marg.getLanguages()) {
             for (Position pos : lang.getPositions()) {
-                add(transcription, pos.getTexts(), " ");
-                add(people, pos.getPeople(), ", ");
-                add(books, pos.getBooks(), ", ");
-                add(locs, pos.getLocations(), ", ");
-                add(symb, pos.getSymbols(), ", ");
+                transcription.addAll(pos.getTexts());
+                people.addAll(pos.getPeople());
+                books.addAll(pos.getBooks());
+                locs.addAll(pos.getLocations());
+                symb.addAll(pos.getSymbols());
+
                 xrefs.addAll(pos.getxRefs());
                 iRefs.addAll(pos.getInternalRefs());
                 
@@ -379,7 +383,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             writer.writeStartElement("p");
 
             // ------ Add orientation + location icons ------
-            assembleLocationIcon(orientation, positions.toArray(new Location[positions.size()]), writer);
+            assembleLocationIcon(orientation, positions.toArray(new Location[0]), writer);
 
             if (isNotEmpty(marg.getOtherReader())) {
                 writer.writeStartElement("p");
@@ -395,10 +399,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             // Add translation
             addTranslation(marg.getTranslation(), writer);
 
-            addListOfValues("Symbols:", symb.toString(), writer);
-            addListOfValues("People:", people.toString(), writer);
-            addListOfValues("Books:", books.toString(), writer);
-            addListOfValues("Locations:", locs.toString(), writer);
+            addListOfValues("Symbols:", symb, writer);
+            addSearchableList("People:", people, JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
+            addListOfValues("Books:", books, writer);
+            addListOfValues("Locations:", locs, writer);
 
             // Add list of X-refs
             addXRefs(xrefs, writer);
@@ -452,9 +456,9 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
     }
 
-    private void addListOfValues(String label, List<String> vals, String separator, XMLStreamWriter writer) throws XMLStreamException {
+    private void addListOfValues(String label, List<String> vals, XMLStreamWriter writer) throws XMLStreamException {
         StringBuilder str = new StringBuilder();
-        add(str, vals, separator);
+        add(str, vals, ", ");
         addListOfValues(label, str.toString(), writer);
     }
 
@@ -465,6 +469,28 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
             writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(listStr));
             writer.writeEndElement();
         }
+    }
+
+    private void addSearchableList(String label, List<String> vals, SearchField searchField, String withinUri,
+                                   XMLStreamWriter writer) throws XMLStreamException {
+        if (vals == null || vals.size() == 0) {
+            return;
+        }
+
+        writer.writeStartElement("p");
+        addSimpleElement(writer, "span", label, "class", "emphasize");
+        for (int i = 0; i < vals.size(); i++) {
+            String val = vals.get(i);
+
+            writer.writeStartElement("a");
+            writer.writeAttribute("href", "javascript:;");
+            writer.writeAttribute("class", "searchable");
+            writer.writeAttribute("data-searchfield", searchField.getFieldName());
+            writer.writeAttribute("data-searchwithin", withinUri);
+            writer.writeCharacters((i == 0 ? " " : ", ") + StringEscapeUtils.escapeHtml4(val));
+            writer.writeEndElement();
+        }
+        writer.writeEndElement();
     }
 
     private void addXRefs(List<XRef> xRefs, XMLStreamWriter writer) throws XMLStreamException {
