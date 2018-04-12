@@ -29,12 +29,60 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
 
     private AnnotationTransformer transformer;
 
+    // Test data for stuff not in test archive
+    private BookCollection col;
+    private Book book;
+    private BookImage img;
+    private AnnotatedPage loadedPage;
+
     @Before
-    public void setup() {
+    public void setup() throws Exception {
         transformer = new AnnotationTransformer(
                 new IIIFPresentationRequestFormatter("SCHEME", "HOST", "PREFIX", 80),
                 new ArchiveNameParser()
         );
+
+        String data = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+                "<!DOCTYPE transcription SYSTEM \"http://www.livesandletters.ac.uk/schema/aor_20141023.dtd\">\n" +
+                "<transcription xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd\">\n" +
+                "    <page filename=\"BLC120b4.016r.tif\" pagination=\"16\" reader=\"John Dee\"/>\n" +
+                "    <annotation>\n" +
+                "        <marginalia hand=\"Italian\" method=\"pen\">\n" +
+                "            <language ident=\"EN\">\n" +
+                "                <position place=\"tail\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>&Sun; - 1/2</marginalia_text>\n" +        // Entity here :: &Sun;  -->   ☉
+                "                    <symbol_in_text name=\"Sun\"/>\n" +                        //   - Defined only in DTD
+                "                </position>\n" +
+                "            </language>\n" +
+                "        </marginalia>\n" +
+                "        <marginalia hand=\"Italian\" anchor_text=\"Adum&aacute;\" method=\"pen\">\n" +         // á
+                "            <language ident=\"LA\">\n" +
+                "                <position place=\"right_margin\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>\n" +
+                "                        Nota quod dicat Adum&aacute;, tantu[m], no[n] adiecta particula illa Voarch[adumia]:\n" +
+                "                    </marginalia_text>\n" +
+                "                    <person name=\"Adum&aacute;\"/>\n" +
+                "                    <book title=\"Voarchadumia\"/>\n" +
+                "                </position>\n" +
+                "            </language>\n" +
+                "            <translation>Note what Aduma says, only that particular was not aimed at Voarchadumia:</translation>\n" +
+                "        </marginalia>\n" +
+                "    </annotation>\n" +
+                "</transcription>";
+
+        col = new BookCollection();
+        col.setId("Moo");
+
+        book = new Book();
+        book.setId("The Greatest Moo");
+
+        img = new BookImage("FirstMoo", 3, 3, false);
+
+        AORAnnotatedPageSerializer serializer = new AORAnnotatedPageSerializer();
+        List<String> errors = new ArrayList<>();
+        ByteArrayInputStream in = new ByteArrayInputStream(data.getBytes("UTF-8"));
+
+        loadedPage = serializer.read(in, errors);
     }
 
     @Test
@@ -124,54 +172,21 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
      */
     @Test
     public void xmlEntitiesTest() throws Exception {
-        String data = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
-                "<!DOCTYPE transcription SYSTEM \"http://www.livesandletters.ac.uk/schema/aor_20141023.dtd\">\n" +
-                "<transcription xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd\">\n" +
-                "    <page filename=\"BLC120b4.016r.tif\" pagination=\"16\" reader=\"John Dee\"/>\n" +
-                "    <annotation>\n" +
-                "        <marginalia hand=\"Italian\" method=\"pen\">\n" +
-                "            <language ident=\"EN\">\n" +
-                "                <position place=\"tail\" book_orientation=\"0\">\n" +
-                "                    <marginalia_text>&Sun; - 1/2</marginalia_text>\n" +        // Entity here :: &Sun;  -->   ☉
-                "                    <symbol_in_text name=\"Sun\"/>\n" +                        //   - Defined only in DTD
-                "                </position>\n" +
-                "            </language>\n" +
-                "        </marginalia>\n" +
-                "        <marginalia hand=\"Italian\" anchor_text=\"Adum&aacute;\" method=\"pen\">\n" +         // á
-                "            <language ident=\"LA\">\n" +
-                "                <position place=\"right_margin\" book_orientation=\"0\">\n" +
-                "                    <marginalia_text>\n" +
-                "                        Nota quod dicat Adum&aacute;, tantu[m], no[n] adiecta particula illa Voarch[adumia]:\n" +
-                "                    </marginalia_text>\n" +
-                "                    <person name=\"Adum&aacute;\"/>\n" +
-                "                    <book title=\"Voarchadumia\"/>\n" +
-                "                </position>\n" +
-                "            </language>\n" +
-                "            <translation>Note what Aduma says, only that particular was not aimed at Voarchadumia:</translation>\n" +
-                "        </marginalia>\n" +
-                "    </annotation>\n" +
-                "</transcription>";
+        assertNotNull(loadedPage);
+        assertEquals(2, loadedPage.getMarginalia().size());
 
-        BookCollection col = new BookCollection();
-        col.setId("Moo");
-
-        Book book = new Book();
-        book.setId("The Greatest Moo");
-
-        BookImage image = new BookImage("FirstMoo", 3, 3, false);
-
-        AORAnnotatedPageSerializer serializer = new AORAnnotatedPageSerializer();
-        List<String> errors = new ArrayList<>();
-        ByteArrayInputStream in = new ByteArrayInputStream(data.getBytes("UTF-8"));
-
-        AnnotatedPage p = serializer.read(in, errors);
-
-        assertNotNull(p);
-        assertTrue(errors.isEmpty());
-        assertEquals(2, p.getMarginalia().size());
-
-        Annotation a = transformer.transform(col, book, image, p.getMarginalia().get(1));
+        Annotation a = transformer.transform(col, book, img, loadedPage.getMarginalia().get(1));
         assertFalse(a.getDefaultSource().getEmbeddedText().contains("&amp;"));
+    }
+
+    @Test
+    public void testLists() throws Exception {
+        Annotation a = transformer.transform(col, book, img, loadedPage.getMarginalia().get(1));
+        String text = a.getDefaultSource().getEmbeddedText();
+
+        assertNotNull(text);
+        assertFalse(text.isEmpty());
+        assertFalse("Annotation text should not contain '[]'", text.contains("[]"));
     }
 
     private List<Location[]> testLocations() {
