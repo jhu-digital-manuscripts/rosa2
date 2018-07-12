@@ -13,6 +13,8 @@ import static org.mockito.Mockito.when;
 
 import java.io.ByteArrayOutputStream;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -561,10 +563,20 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         assertNotNull("Search result was NULL", result);
         assertEquals("Unexpected number of results found.", 2, result.getTotal());
         assertEquals(2, result.getMatches().length);
-        assertEquals("http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest",
-                result.getMatches()[1].getId());
+        
+        Set<String> expected_manifests = new HashSet<>();
+        expected_manifests.add("http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest");
+        expected_manifests.add("http://serenity.dkc.jhu.edu/pres/valid.LudwigXV7/manifest");
+        
+        Set<String> manifests = new HashSet<>();
+        
+        for (SearchMatch m: result.getMatches()) {
+            manifests.add(m.getId());
+        }
+        
+        assertEquals(expected_manifests, manifests);
+        
         assertNotNull(result.getCategories());
-
         assertEquals(10, result.getCategories().size());
         
         result.getCategories().forEach(cat -> {
