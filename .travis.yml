@@ -13,4 +13,5 @@ before_install:
   - (cd lucene-latin-stemmer && mvn install && cd -)
 
 script:
-  - mvn test
+  - mkdir archive
+  - mvn verify -Darchive.path=`pwd`/archive
