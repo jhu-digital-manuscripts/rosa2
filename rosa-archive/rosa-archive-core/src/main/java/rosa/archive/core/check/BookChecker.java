@@ -65,6 +65,7 @@ public class BookChecker extends AbstractArchiveChecker {
     private static final String MANUSCRIPT = "manuscript";
     private static final String DESCRIPTION_SCHEMA_LOCATION = "rosa-book-description.xsd";
     private static final LSResourceResolver resourceResolver = new CachingUrlResourceResolver();
+    private static final String TEI_SCHEMA_RESOURCE = "/tei_ms.xsd";
 
     private static Schema aorAnnotationSchema;
     private static Schema teiSchema;
@@ -965,10 +966,13 @@ public class BookChecker extends AbstractArchiveChecker {
                                       final List<String> warnings) {
         try {
             if (aorAnnotationSchema == null) {
-                URL schemaUrl = new URL(annotationSchemaUrl);
+                // Load schema from resource path                
+                String path = annotationSchemaUrl.substring(annotationSchemaUrl.lastIndexOf('/'));
+                
                 SchemaFactory schemaFactory =
                         SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-                aorAnnotationSchema = schemaFactory.newSchema(schemaUrl);
+                schemaFactory.setResourceResolver(resourceResolver);                
+                aorAnnotationSchema = schemaFactory.newSchema(new StreamSource(this.getClass().getResourceAsStream(path)));
             }
 
             Validator validator = aorAnnotationSchema.newValidator();
@@ -1040,9 +1044,9 @@ public class BookChecker extends AbstractArchiveChecker {
         // Validate as TEI
         try {
             if (teiSchema == null) {
-                URL schemaUrl = new URL(TEI_SCHEMA_URL);
                 SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-                teiSchema = schemaFactory.newSchema(schemaUrl);
+                schemaFactory.setResourceResolver(resourceResolver);                
+                teiSchema = schemaFactory.newSchema(new StreamSource(this.getClass().getResourceAsStream(TEI_SCHEMA_RESOURCE)));
             }
 
             Validator validator = teiSchema.newValidator();
