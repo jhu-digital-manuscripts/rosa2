@@ -8,6 +8,7 @@ cache:
       - $HOME/.m2
 
 before_install:
+  - mkdir -p /mnt/archive
   - git clone https://github.com/jhu-digital-manuscripts/lucene-latin-stemmer
   - (cd lucene-latin-stemmer && mvn install && cd -)
 
