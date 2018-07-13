@@ -1,0 +1,17 @@
+language: java
+
+sudo: false
+dist: trusty
+install: true
+
+cache:
+    directories:
+      - $HOME/.m2
+
+before_install:
+  - git clone https://github.com/jhu-digital-manuscripts/lucene-latin-stemmer
+  - (cd lucene-latin-stemmer && mvn install && cd -)
+
+script:
+  - mkdir archive
+  - mvn verify -Darchive.path=`pwd`/archive
