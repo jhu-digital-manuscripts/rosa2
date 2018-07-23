@@ -8,29 +8,18 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
-import rosa.archive.model.aor.Marginalia;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuImageIdMapper;
-import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
-import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
-import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
+import rosa.iiif.presentation.core.PresentationTestUtils;
 import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
-import rosa.iiif.presentation.core.transform.impl.LayerTransformer;
-import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
-import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
-import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
-import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
@@ -65,22 +54,11 @@ public class PresentationTransformerTest extends BaseArchiveTest {
                 new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
         ImageIdMapper idMapper = new JhuImageIdMapper(idMap);
 
-        CanvasTransformer canvasTransformer = new CanvasTransformer(presentationReqFormatter, imageReqFormatter, idMapper);
         CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter, simpleStore, imageReqFormatter, idMapper);
-        SequenceTransformer sequenceTransformer = new SequenceTransformer(presentationReqFormatter, canvasTransformer);
-        AnnotationTransformer annotationTransformer = new AnnotationTransformer(presentationReqFormatter, new ArchiveNameParser());
 
-        Set<Transformer<?>> transformers = new HashSet<>();
-        transformers.add(new AnnotationListTransformer(presentationReqFormatter, annotationTransformer));
-        transformers.add(canvasTransformer);
-        transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(presentationReqFormatter, sequenceTransformer, new RangeTransformer(presentationReqFormatter)));
-        transformers.add(new RangeTransformer(presentationReqFormatter));
-        transformers.add(new LayerTransformer(presentationReqFormatter));
-
-        TransformerSet transformerSet = new TransformerSet(transformers);
-
-        presentationTransformer = new PresentationTransformerImpl(presentationReqFormatter, transformerSet, collectionTransformer);
+        presentationTransformer = new PresentationTransformerImpl(presentationReqFormatter,
+                PresentationTestUtils.transformerSet(presentationReqFormatter, imageReqFormatter, idMapper),
+                collectionTransformer);
     }
 
     @Test

@@ -10,10 +10,9 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Location;
-import rosa.archive.model.aor.Marginalia;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationTestUtils;
 import rosa.iiif.presentation.model.annotation.Annotation;
-import sun.misc.IOUtils;
 
 import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
@@ -37,10 +36,9 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
 
     @Before
     public void setup() throws Exception {
-        transformer = new AnnotationTransformer(
-                new IIIFPresentationRequestFormatter("SCHEME", "HOST", "PREFIX", 80),
-                new ArchiveNameParser()
-        );
+        IIIFPresentationRequestFormatter formatter =
+                new IIIFPresentationRequestFormatter("SCHEME", "HOST", "PREFIX", 80);
+        transformer = new AnnotationTransformer(formatter, new ArchiveNameParser(), PresentationTestUtils.htmlAdapterSet(formatter));
 
         String data = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
                 "<!DOCTYPE transcription SYSTEM \"http://www.livesandletters.ac.uk/schema/aor_20141023.dtd\">\n" +
@@ -136,29 +134,6 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
 
     }
 
-    @Test
-    public void locationToHtmlNoLocationTest() {
-        String result = transformer.locationToHtml();
-        assertNotNull("Result was NULL.", result);
-        assertTrue("Result was not empty.", result.isEmpty());
-    }
-
-    @Test
-    public void locationToHtmlTest() {
-
-        List<Location[]> testLocations = testLocations();
-        List<String> expected = expected();
-
-        for (int i = 0; i < testLocations.size(); i++) {
-            String result = transformer.locationToHtml(testLocations.get(i));
-
-            assertNotNull("Result is NULL.", result);
-            assertFalse("Result is empty.", result.isEmpty());
-            assertEquals("Unexpected result found.", expected.get(i), result);
-        }
-
-    }
-
     /**
      * Make sure entities are not double-escaped. As XML data is read, entities will be expanded, as normal.
      * However, when the data is translated to HTML, we need to ensure the writer is not too aggressive in
@@ -187,26 +162,6 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
         assertNotNull(text);
         assertFalse(text.isEmpty());
         assertFalse("Annotation text should not contain '[]'", text.contains("[]"));
-    }
-
-    private List<Location[]> testLocations() {
-        List<Location[]> tests = new ArrayList<>();
-
-        tests.add(new Location[] {Location.LEFT_MARGIN});
-        tests.add(new Location[] {Location.LEFT_MARGIN, Location.RIGHT_MARGIN});
-        tests.add(new Location[] {Location.LEFT_MARGIN, Location.INTEXT});
-        tests.add(new Location[] {Location.HEAD, Location.TAIL, Location.INTEXT});
-
-        return tests;
-    }
-
-    private List<String> expected() {
-        return Arrays.asList(
-                "<i class=\"aor-icon side-left \"></i>",
-                "<i class=\"aor-icon side-left side-right \"></i>",
-                "<i class=\"aor-icon side-left side-within \"><i class=\"inner\"></i></i>",
-                "<i class=\"aor-icon side-top side-bottom side-within \"><i class=\"inner\"></i></i>"
-        );
     }
 
 }

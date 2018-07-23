@@ -1,28 +1,18 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Stream;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
 
-import org.apache.commons.lang3.StringEscapeUtils;
-
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
 import rosa.archive.core.util.Annotations;
@@ -37,15 +27,15 @@ import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.*;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.jhsearch.JHSearchField;
 import rosa.iiif.presentation.core.transform.Transformer;
+import rosa.iiif.presentation.core.util.AdapterSet;
+import rosa.iiif.presentation.core.util.AnnotationLocationUtil;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
-import rosa.search.model.SearchField;
 
 import java.io.UnsupportedEncodingException;
 
@@ -53,14 +43,16 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         AORAnnotatedPageConstants {
 
     private ArchiveNameParser nameParser;
+    private AdapterSet htmlAdapters;
 //    private HtmlDecorator decorator;
 //    private ISNIResourceDb isni_db;
 
     @Inject
     public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
-                                 ArchiveNameParser nameParser) {
+                                 ArchiveNameParser nameParser, AdapterSet htmlAdapters) {
         super(presRequestFormatter);
         this.nameParser = nameParser;
+        this.htmlAdapters = htmlAdapters;
 //        this.decorator = new HtmlDecorator();
     }
 
@@ -94,12 +86,10 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 //        }
         if (anno == null) {
             return null;
-        } else if (anno instanceof Marginalia) {
-            return adaptMarginalia(collection, book, (Marginalia) anno, image);
         }
 
         String language = anno.getLanguage() != null && !anno.getLanguage().isEmpty() ? anno.getLanguage() : "en";
-        String locationIcon = locationToHtml(anno.getLocation());
+        String locationIcon = AnnotationLocationUtil.locationToHtml(anno.getLocation());
 
         Annotation a = new Annotation();
 
@@ -108,15 +98,18 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.getMetadata().put("type", new HtmlValue(anno.getClass().getSimpleName()));
 
-        if (anno instanceof Drawing) {
-            a.setDefaultSource(new AnnotationSource(
-                    "moo", DC_TEXT, "text/html", drawingToDisplayHtml(collection, (Drawing) anno), language));
+        if (anno instanceof Marginalia) {
+            a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
+                    htmlAdapters.get(Marginalia.class).adapt(collection, book, image, (Marginalia) anno), language));
+        } else if (anno instanceof Drawing) {
+            a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
+                    htmlAdapters.get(Drawing.class).adapt(collection, book, image, (Drawing) anno), language));
         } else if (anno instanceof Table) {
-            a.setDefaultSource(new AnnotationSource(
-                    "moo", DC_TEXT, "text/html", tableToDisplayHtml(collection, (Table) anno), language));
+            a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
+                    htmlAdapters.get(Table.class).adapt(collection, book, image, (Table) anno), language));
         } else if (anno instanceof Graph) {
-            a.setDefaultSource(new AnnotationSource(
-                    "moo", DC_TEXT, "text/html", graphToDisplayHtml(collection, (Graph) anno), language));
+            a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
+                    htmlAdapters.get(Graph.class).adapt(collection, book, image, (Graph) anno), language));
         } else {
             a.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
                     locationIcon + " " + anno.toPrettyString(), language));
@@ -139,437 +132,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         }
 
         return a;
-    }
-
-    /**
-     * Transform marginalia data into a list of annotations that are associated
-     * with a canvas.
-     *
-     * Marginalia is split into potentially several languages, each of which are
-     * split into potentially several locations. Currently, each piece is treated
-     * as a new and separate IIIF annotation.
-     *
-     * Marginalia ID structure:
-     *
-     * @param collection book collection obj
-     * @param book book obj
-     * @param marg AoR marginalia
-     * @return list of annotations
-     */
-    private Annotation adaptMarginalia(BookCollection collection, Book book, Marginalia marg, BookImage image) {
-        String lang = marg.getLanguages() != null && marg.getLanguages().size() > 0
-                ? marg.getLanguages().get(0).getLang() : "en";
-
-        Annotation anno = new Annotation();
-
-        anno.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), marg.getId()));
-        anno.setMotivation(IIIFNames.SC_PAINTING);
-        anno.getMetadata().put("type", new HtmlValue("Marginalia"));
-        anno.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
-                marginaliaToDisplayHtml(collection, marg), lang));
-
-        /*
-            #getAnnotationPage(String) -- This will not work if an annotation has a pre-defined ID
-            (( only works with our home-baked IDs ))
-         */
-        if (image == null) {
-            image = getPageImage(book.getImages(), getAnnotationPage(marg.getId()));
-        }
-        AnnotationTarget target = locationOnCanvas(image, Location.FULL_PAGE);
-        target.setUri(pres_uris.getCanvasURI(
-                collection.getId(),
-                book.getId(),
-                image.getName()
-        ));
-
-        anno.setDefaultTarget(target); // TODO actual position(s)
-        anno.setLabel(marg.getId(), "en");
-
-        return anno;
-    }
-
-    private String graphToDisplayHtml(BookCollection col, Graph graph) {
-        List<String> people = new ArrayList<>();
-        List<String> books = new ArrayList<>();
-        List<String> locs = new ArrayList<>();
-        List<String> symbols = new ArrayList<>();
-        StringBuilder notes = new StringBuilder();      // Notes that target the graph, not an individual node
-        StringBuilder notesTr = new StringBuilder();
-
-        for (GraphText gt : graph.getGraphTexts()) {
-            people.addAll(gt.getPeople());
-            books.addAll(gt.getBooks());
-            locs.addAll(gt.getLocations());
-            symbols.addAll(gt.getSymbols());
-
-            gt.getNotes().forEach(note -> {
-                notes.append(note.content);
-                if (note.internalLink == null || note.internalLink.isEmpty()) {
-                    notes.append(note.content).append(", ");
-                }
-            });
-            add(notesTr, gt.getTranslations(), ", ");
-        }
-
-        // ----------------------------------------------------------------------------------------------
-        // ----- Write XML ------------------------------------------------------------------------------
-        XMLOutputFactory outF = newOutputFactory();
-        ByteArrayOutputStream output = new ByteArrayOutputStream();
-
-        try {
-            XMLStreamWriter writer = outF.createXMLStreamWriter(output);
-
-            writer.writeStartElement("p");
-
-            assembleLocationIcon(orientation(graph.getOrientation()), new Location[] { graph.getLocation() }, writer);
-
-            writer.writeStartElement("p");      // Nodes
-            addSimpleElement(writer, "span", "Nodes: ", "class", "emphasize");
-            for (int i = 0; i < graph.getNodes().size(); i++) {
-                if (i > 0) {
-                    writer.writeEmptyElement("br");
-                }
-                GraphNode node = graph.getNodes().get(i);
-
-                writer.writeCharacters(node.getContent());
-                if (isNotEmpty(node.getPerson())) {
-                    writer.writeCharacters(" (" + node.getPerson() + ")");
-                }
-
-                String note = getNoteForGraphNode(node.getId(), graph);
-                if (isNotEmpty(note)) {
-                    writer.writeCharacters(" Note: " + note);
-                }
-            }
-            writer.writeEndElement();
-
-            addListOfValues("Notes:", notes.toString(), writer);
-            addListOfValues("Notes (translated):", notesTr.toString(), writer);
-            addSearchableList("People:", people, JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
-            addListOfValues("Books:", books, writer);
-            addListOfValues("Locations:", locs, writer);
-            addListOfValues("Symbols:", symbols, writer);
-
-            addInternalRefs(col, graph.getInternalRefs(), writer);
-
-            writer.writeEndElement();
-            return output.toString("UTF-8");
-        } catch (XMLStreamException | UnsupportedEncodingException e) {
-            return "Failed to write out graph as HTML.";
-        }
-    }
-
-    private String getNoteForGraphNode(String nodeId, Graph graph) {
-        if (nodeId == null || nodeId.isEmpty()) {
-            return "";
-        }
-        StringBuilder result = new StringBuilder();
-        // Each graph text, find any a note with an 'internal_link' matching 'nodeId'.
-        // Add each of those to the final result.
-        graph.getGraphTexts().stream()
-                .map(GraphText::getNotes)
-                .forEach(notes ->
-                    result.append(notes.stream().filter(note -> nodeId.equals(note.internalLink))
-                            .map(moo -> moo.content)
-                            .findFirst()
-                            .orElse("")).append(' ')
-                );
-        return result.toString();
-    }
-
-    private String drawingToDisplayHtml(BookCollection col, Drawing drawing) {
-        XMLOutputFactory outF = newOutputFactory();
-        ByteArrayOutputStream output = new ByteArrayOutputStream();
-
-        try {
-            XMLStreamWriter writer = outF.createXMLStreamWriter(output);
-            writer.writeStartElement("p");
-
-            int orientation = 0;
-            try {
-                orientation = Integer.parseInt(drawing.getOrientation());
-            } catch (NumberFormatException e) {}
-
-            assembleLocationIcon(orientation(orientation), new Location[] {drawing.getLocation()}, writer);
-//            addSimpleElement(writer, "span", "Drawing", "class", "annotation-title");
-            writer.writeCharacters(" " + drawing.getType().replaceAll("_", " "));
-
-            addTranslation(drawing.getTranslation(), writer);
-
-            addListOfValues("Symbols:", drawing.getSymbols(), writer);
-            addSearchableList("People:", drawing.getPeople(), JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
-            addListOfValues("Books:", drawing.getBooks(), writer);
-            addListOfValues("Locations:", drawing.getLocations(), writer);
-
-            addInternalRefs(col, drawing.getInternalRefs(), writer);
-
-            writer.writeEndElement();
-            return output.toString("UTF-8");
-        } catch (XMLStreamException | UnsupportedEncodingException e) {
-            return "Failed to write out drawing as HTML.";
-        }
-    }
-
-    private String tableToDisplayHtml(BookCollection col, Table table) {
-        XMLOutputFactory outF = newOutputFactory();
-        ByteArrayOutputStream output = new ByteArrayOutputStream();
-        try {
-            XMLStreamWriter writer = outF.createXMLStreamWriter(output);
-
-            writer.writeStartElement("p");
-//            addSimpleElement(writer, "span", "Table", "class", "annotation-title");
-            if (isNotEmpty(table.getType())) {
-                writer.writeCharacters(" " + table.getType().replaceAll("_", " "));
-            }
-
-            writer.writeStartElement("p");
-            addSimpleElement(writer, "span", "Text:", "class", "emphasize");
-            for (TextEl txt : table.getTexts()) {
-                writer.writeEmptyElement("br");
-                writer.writeCharacters(txt.getText());
-            }
-            writer.writeEndElement();
-
-            addTranslation(table.getTranslation(), writer);
-            addListOfValues("Symbols:", table.getSymbols(), writer);
-            addSearchableList("People:", table.getPeople(), JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
-            addListOfValues("Books:", table.getBooks(), writer);
-            addListOfValues("Locations:", table.getLocations(), writer);
-            addInternalRefs(col, table.getInternalRefs(), writer);
-
-            writer.writeEndElement();
-            return output.toString("UTF-8");
-        } catch (XMLStreamException | UnsupportedEncodingException e) {
-            return "Failed to write out table as HTML.";
-        }
-    }
-
-    // Must make sure to escape text appropriately
-    private String marginaliaToDisplayHtml(BookCollection col, Marginalia marg) {
-        List<String> transcription = new ArrayList<>();
-        List<String> people = new ArrayList<>();
-        List<String> books = new ArrayList<>();
-        List<String> locs = new ArrayList<>();
-        List<String> symb = new ArrayList<>();
-
-        // Left, top, right, bottom
-        boolean[] orientation = new boolean[4];
-        List<Location> positions = new ArrayList<>();
-        List<XRef> xrefs = new ArrayList<>();
-        List<InternalReference> iRefs = new ArrayList<>();
-
-        for (MarginaliaLanguage lang : marg.getLanguages()) {
-            for (Position pos : lang.getPositions()) {
-                transcription.addAll(pos.getTexts());
-                people.addAll(pos.getPeople());
-                books.addAll(pos.getBooks());
-                locs.addAll(pos.getLocations());
-                symb.addAll(pos.getSymbols());
-
-                xrefs.addAll(pos.getxRefs());
-                iRefs.addAll(pos.getInternalRefs());
-                
-                // No default case. If orientation is not 0, 90, 180, 270 then do nothing
-                switch (pos.getOrientation()) {
-                    case 0:
-                        orientation[1] = true;
-                        break;
-                    case 90:
-                        orientation[0] = true;
-                        break;
-                    case 180:
-                        orientation[3] = true;
-                        break;
-                    case 270:
-                        orientation[2] = true;
-                        break;
-                }
-
-                // Add icon for position(s) on page
-                positions.add(pos.getPlace());
-            }
-        }
-
-        XMLOutputFactory outF = newOutputFactory();
-        ByteArrayOutputStream output = new ByteArrayOutputStream();
-        try {
-            XMLStreamWriter writer = outF.createXMLStreamWriter(output);
-
-            writer.writeStartElement("p");
-
-            // ------ Add orientation + location icons ------
-            assembleLocationIcon(orientation, positions.toArray(new Location[0]), writer);
-
-            if (isNotEmpty(marg.getOtherReader())) {
-                writer.writeStartElement("p");
-                writer.writeCharacters("Reader: " + marg.getOtherReader());
-                writer.writeEndElement();
-            }
-
-            // Add transcription
-            writer.writeStartElement("p");
-            writer.writeCharacters(StringEscapeUtils.escapeHtml4(transcription.toString()));
-            writer.writeEndElement();
-
-            // Add translation
-            addTranslation(marg.getTranslation(), writer);
-
-            addListOfValues("Symbols:", symb, writer);
-            addSearchableList("People:", people, JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
-            addListOfValues("Books:", books, writer);
-            addListOfValues("Locations:", locs, writer);
-
-            // Add list of X-refs
-            addXRefs(xrefs, writer);
-            addInternalRefs(col, iRefs, writer);
-
-            writer.writeEndElement();
-            return output.toString("UTF-8");
-        } catch (XMLStreamException | UnsupportedEncodingException e) {
-            return "Failed to write out marginalia.";
-        }
-    }
-
-    private boolean[] orientation(int orientation) {
-        switch (orientation) {
-            case 0:
-                return new boolean[] { false, true, false, false };
-            case 90:
-                return new boolean[] { true, false, false, false };
-            case 180:
-                return new boolean[] { false, false, false, true };
-            case 270:
-                return new boolean[] { false, false, true, false };
-            default:
-                return new boolean[] { false, false, false, false };
-        }
-    }
-
-    private void assembleLocationIcon(boolean[] orientation, Location[] locations, XMLStreamWriter writer) throws XMLStreamException {
-        writer.writeStartElement("span");
-        writer.writeAttribute("class", "aor-icon-container");
-        if (orientation[0]) {   // Left
-            addSimpleElement(writer, "i",null,  "class", "orientation arrow-left");
-        }
-        if (orientation[1]) {   // Up
-            addSimpleElement(writer, "i",null,  "class", "orientation arrow-top");
-        }
-        writeLocationAsHtml(writer, locations);
-        if (orientation[2]) {   // Right
-            addSimpleElement(writer, "i",null,  "class", "orientation arrow-right");
-        }
-        if (orientation[3]) {   // Down
-            addSimpleElement(writer, "i", null, "class", "orientation arrow-bottom");
-        }
-        writer.writeEndElement();
-    }
-
-    private void addTranslation(String translation, XMLStreamWriter writer) throws XMLStreamException {
-        if (isNotEmpty(translation)) {
-            String content = "[" + StringEscapeUtils.escapeHtml4(translation) + "]";
-            addSimpleElement(writer, "p", content, "class", "italic");
-        }
-    }
-
-    private void addListOfValues(String label, List<String> vals, XMLStreamWriter writer) throws XMLStreamException {
-        StringBuilder str = new StringBuilder();
-        add(str, vals, ", ");
-        addListOfValues(label, str.toString(), writer);
-    }
-
-    private void addListOfValues(String label, String listStr, XMLStreamWriter writer) throws XMLStreamException {
-        if (isNotEmpty(listStr)) {
-            writer.writeStartElement("p");
-            addSimpleElement(writer, "span", label, "class", "emphasize");
-            writer.writeCharacters(" " + StringEscapeUtils.escapeHtml4(listStr));
-            writer.writeEndElement();
-        }
-    }
-
-    private void addSearchableList(String label, List<String> vals, SearchField searchField, String withinUri,
-                                   XMLStreamWriter writer) throws XMLStreamException {
-        if (vals == null || vals.size() == 0) {
-            return;
-        }
-
-        writer.writeStartElement("p");
-        addSimpleElement(writer, "span", label, "class", "emphasize");
-        for (int i = 0; i < vals.size(); i++) {
-            String val = vals.get(i);
-
-            writer.writeStartElement("a");
-            writer.writeAttribute("href", "javascript:;");
-            writer.writeAttribute("class", "searchable");
-            writer.writeAttribute("data-searchfield", searchField.getFieldName());
-            writer.writeAttribute("data-searchwithin", withinUri);
-            writer.writeCharacters((i == 0 ? " " : ", ") + StringEscapeUtils.escapeHtml4(val));
-            writer.writeEndElement();
-        }
-        writer.writeEndElement();
-    }
-
-    private void addXRefs(List<XRef> xRefs, XMLStreamWriter writer) throws XMLStreamException {
-        if (xRefs == null || xRefs.isEmpty()) {
-            return;
-        }
-
-        writer.writeStartElement("p");
-        addSimpleElement(writer, "span", "Cross-references:", "class", "emphasize");
-        writer.writeCharacters(" ");
-        for (int i = 0; i < xRefs.size(); i++) {
-            XRef xref = xRefs.get(i);
-            if (i > 0) {
-                writer.writeCharacters("; ");
-            }
-            writer.writeCharacters(StringEscapeUtils.escapeHtml4(xref.getPerson()) + ", ");
-            addSimpleElement(writer, "span", StringEscapeUtils.escapeHtml4(xref.getTitle()), "class", "italic");
-            if (isNotEmpty(xref.getText())) {
-                writer.writeCharacters(" &quot;" + StringEscapeUtils.escapeHtml4(xref.getText()) + "&quot;");
-            }
-            writer.writeCharacters("; ");
-        }
-
-        writer.writeEndElement();
-    }
-
-    private void addInternalRefs(BookCollection col, List<InternalReference> refs, XMLStreamWriter writer) throws XMLStreamException {
-        if (refs == null || refs.isEmpty()) {
-            return;
-        }
-        writer.writeStartElement("p");
-
-        addSimpleElement(writer, "span", "Internal References:", "class", "emphasize");
-        writer.writeCharacters(" ");
-
-        for (int i = 0; i < refs.size(); i++) {
-            InternalReference ref = refs.get(i);
-            if (i > 0) {
-                writer.writeCharacters(", ");
-            }
-
-            writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()));
-            for (int j = 0; j < ref.getTargets().size(); j++) {
-                ReferenceTarget tar = ref.getTargets().get(j);
-
-                AorLocation location = col.getAnnotationMap().get(tar.getTargetId());
-                String targetId = targetId(location);
-                if (targetId != null) {
-                    writer.writeCharacters("(");
-                    writer.writeStartElement("a");
-                    writer.writeAttribute("class", "internal-ref");
-                    writer.writeAttribute("href", "javascript:;");
-                    writer.writeAttribute("data-targetId", targetId);
-                    writer.writeAttribute("data-manifestid", manifestId(location));
-                    writer.writeCharacters("[" + tar.getText() + "]");
-                    writer.writeEndElement();
-                    writer.writeCharacters(")");
-                } else {
-                    writer.writeCharacters("[" + tar.getText() + "]");
-                }
-            }
-        }
-
-        writer.writeEndElement();
     }
 
     /**
@@ -653,76 +215,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         target.setSelector(new FragmentSelector(x, y, w, h));
 
         return target;
-    }
-
-    String locationToHtml(Location ... locations) {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        try {
-            XMLStreamWriter writer = XMLOutputFactory.newInstance().createXMLStreamWriter(out);
-            writeLocationAsHtml(writer, locations);
-
-            return out.toString();
-        } catch (XMLStreamException e) {
-            return "";
-        }
-    }
-
-    /**
-     *
-     * @param writer xml stream writer
-     * @param locations list of zero or more locations on the page
-     * @throws XMLStreamException .
-     */
-    private void writeLocationAsHtml(XMLStreamWriter writer, Location ... locations) throws XMLStreamException {
-        if (locations == null || locations.length == 0) {
-            return;
-        }
-
-        StringBuilder styleClass = new StringBuilder("aor-icon ");
-
-        // For each distinct location value, append appropriate CSS class
-        Stream.of(locations)
-                .distinct()
-                .map(this::locationToClass)
-                .forEach(styleClass::append);
-
-        writer.writeStartElement("i");
-        writer.writeAttribute("class", styleClass.toString());
-
-        if (Stream.of(locations).anyMatch(loc -> loc.equals(Location.INTEXT))) {
-            addSimpleElement(writer, "i", null, "class", "inner");
-        }
-
-        writer.writeEndElement();
-    }
-
-    private String locationToClass(Location location) {
-        switch (location) {
-            default:
-                return "";
-            case HEAD:
-                return "side-top ";
-            case TAIL:
-                return "side-bottom ";
-            case LEFT_MARGIN:
-                return "side-left ";
-            case RIGHT_MARGIN:
-                return "side-right ";
-            case INTEXT:
-                return "side-within ";
-            case FULL_PAGE:
-                return "full-page ";
-        }
-    }
-
-    // Add strings to builder separated by the given string
-    private void add(StringBuilder sb, List<String> list, String sep) {
-        for (int i = 0; i < list.size(); i++) {
-            if (sb.length() > 0) {
-                sb.append(sep);
-            }
-            sb.append(list.get(i));
-        }
     }
 
     private BookImage getPageImage(ImageList images, String page) {
@@ -926,49 +418,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
     private boolean isNotEmpty(String str) {
         return str != null && !str.isEmpty();
-    }
-
-    private XMLOutputFactory newOutputFactory() {
-        XMLOutputFactory outF = XMLOutputFactory.newInstance();
-        outF.setProperty("escapeCharacters", false);
-        return outF;
-    }
-
-    private String targetId(AorLocation loc) {
-        if (loc == null) {
-            return null;
-        }
-
-        String uri = null;
-
-        String page = loc.getPage();
-        while (page.startsWith("0")) {
-            page = page.substring(1);
-        }
-
-        if (isNotEmpty(loc.getAnnotation())) {
-//            uri = pres_uris.getAnnotationURI(loc.getCollection(), loc.getBook(), loc.getAnnotation());
-            uri = pres_uris.getCanvasURI(loc.getCollection(), loc.getBook(), page);
-        } else if (isNotEmpty(loc.getPage())) {
-            uri = pres_uris.getCanvasURI(loc.getCollection(), loc.getBook(), page);
-        } else if (isNotEmpty(loc.getBook())) {
-            uri = pres_uris.getManifestURI(loc.getCollection(), loc.getBook());
-        } else if (isNotEmpty(loc.getCollection())) {
-            uri = pres_uris.getCollectionURI(loc.getCollection());
-        }
-
-        if (isNotEmpty(uri)) {
-            return uri;
-        } else {
-            return null;
-        }
-    }
-
-    private String manifestId(AorLocation loc) {
-        if (loc == null || !isNotEmpty(loc.getBook())) {
-            return null;
-        }
-        return pres_uris.getManifestURI(loc.getCollection(), loc.getBook());
     }
 
 }
