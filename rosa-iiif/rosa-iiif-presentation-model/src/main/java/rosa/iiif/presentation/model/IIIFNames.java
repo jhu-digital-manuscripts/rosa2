@@ -19,6 +19,7 @@ public interface IIIFNames {
     String SC_SEQUENCE = "sc:Sequence";
 
     String SC_PAINTING = "sc:painting";
+    String OA_LINKING = "oa:linking";
 
     String IIIF_IMAGE_API_SELECTOR = "iiif:ImageApiSelector";
 

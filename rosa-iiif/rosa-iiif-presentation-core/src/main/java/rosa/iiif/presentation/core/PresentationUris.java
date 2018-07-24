@@ -1,8 +1,9 @@
 package rosa.iiif.presentation.core;
 
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
-
 
 /**
  * Handle mapping of archive objects into recommended URI patterns for IIIF
@@ -13,7 +14,8 @@ import rosa.iiif.presentation.model.PresentationRequestType;
 public class PresentationUris {
     private final IIIFPresentationRequestFormatter formatter;
 
-    public PresentationUris(IIIFPresentationRequestFormatter formatter) {
+    @Inject
+    public PresentationUris(@Named("formatter.presentation") IIIFPresentationRequestFormatter formatter) {
         this.formatter = formatter;
     }
 
