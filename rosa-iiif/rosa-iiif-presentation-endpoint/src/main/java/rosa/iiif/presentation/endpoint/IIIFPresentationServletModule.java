@@ -50,12 +50,12 @@ import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
 import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
 import rosa.iiif.presentation.core.transform.impl.TransformerSet;
-import rosa.iiif.presentation.core.util.AdapterSet;
-import rosa.iiif.presentation.core.util.AnnotationBaseHtmlAdapter;
-import rosa.iiif.presentation.core.util.DrawingHtmlAdapter;
-import rosa.iiif.presentation.core.util.GraphHtmlAdapter;
-import rosa.iiif.presentation.core.util.MarginaliaHtmlAdapter;
-import rosa.iiif.presentation.core.util.TableHtmlAdapter;
+import rosa.iiif.presentation.core.html.AdapterSet;
+import rosa.iiif.presentation.core.html.AnnotationBaseHtmlAdapter;
+import rosa.iiif.presentation.core.html.DrawingHtmlAdapter;
+import rosa.iiif.presentation.core.html.GraphHtmlAdapter;
+import rosa.iiif.presentation.core.html.MarginaliaHtmlAdapter;
+import rosa.iiif.presentation.core.html.TableHtmlAdapter;
 
 /**
  * The servlet is configured by iiif-servlet.properties.

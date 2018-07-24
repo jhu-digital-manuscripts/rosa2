@@ -28,7 +28,7 @@ import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.*;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
-import rosa.iiif.presentation.core.util.AdapterSet;
+import rosa.iiif.presentation.core.html.AdapterSet;
 import rosa.iiif.presentation.core.util.AnnotationLocationUtil;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFNames;

@@ -1,4 +1,4 @@
-package rosa.iiif.presentation.core.util;
+package rosa.iiif.presentation.core.html;
 
 import com.google.inject.Inject;
 import org.apache.commons.lang3.StringEscapeUtils;
@@ -83,6 +83,7 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
 
         if (isNotEmpty(annotation.getOtherReader())) {
             writer.writeStartElement("p");
+            writer.writeAttribute("class", "other-reader " + annotation.getOtherReader());
             writer.writeCharacters("Reader: " + annotation.getOtherReader());
             writer.writeEndElement();
         }

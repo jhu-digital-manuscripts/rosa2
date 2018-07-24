@@ -1,4 +1,4 @@
-package rosa.iiif.presentation.core.util;
+package rosa.iiif.presentation.core.html;
 
 import org.apache.commons.lang3.StringEscapeUtils;
 import rosa.archive.model.Book;
@@ -10,6 +10,7 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.util.AnnotationLocationUtil;
 import rosa.search.model.SearchField;
 
 import javax.xml.stream.XMLOutputFactory;
@@ -19,6 +20,15 @@ import java.io.ByteArrayOutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
+/**
+ * This base class provides a starting point with useful utilities to adapt the content
+ * of an annotation object to an HTML string that can be displayed to a user. The HTML
+ * content will be generated and added to an XMLStreamWriter in
+ * {@link #annotationAsHtml(BookCollection, Book, BookImage, Object)}
+ * then stringified and sent back to the original caller.
+ *
+ * @param <T>
+ */
 public abstract class AnnotationBaseHtmlAdapter<T> {
     protected final PresentationUris pres_uris;
 
@@ -28,6 +38,15 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
         this.pres_uris = pres_uris;
     }
 
+    /**
+     * Adapt the contents of an annotation object to an HTML string
+     *
+     * @param col book collection object
+     * @param book book object
+     * @param page information for specific page
+     * @param annotation annotation to adapt
+     * @return Stringified HTML
+     */
     public String adapt(BookCollection col, Book book, BookImage page, T annotation) {
         XMLOutputFactory outF = newOutputFactory();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
@@ -41,21 +60,21 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
         }
     }
 
+    /**
+     * @return Class for annotation that an implementation will adapt
+     */
     abstract Class<T> getAnnotationType();
 
     /**
+     * Adapt the given annotation to HTML as XML using the class' XMLStreamWriter.
      *
-     * @param col
-     * @param book
-     * @param page
-     * @param annotation
-     * @throws XMLStreamException
+     * @param col book collection object
+     * @param book book object
+     * @param page info for the page
+     * @param annotation annotation to adapt
+     * @throws XMLStreamException .
      */
     abstract void annotationAsHtml(BookCollection col, Book book, BookImage page, T annotation) throws XMLStreamException;
-
-    boolean isNotEmpty(String[] str) {
-        return str != null && str.length > 0;
-    }
 
     boolean isNotEmpty(String str) {
         return str != null && !str.isEmpty();

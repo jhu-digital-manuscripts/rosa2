@@ -1,4 +1,4 @@
-package rosa.iiif.presentation.core.util;
+package rosa.iiif.presentation.core.html;
 
 import com.google.inject.Inject;
 
