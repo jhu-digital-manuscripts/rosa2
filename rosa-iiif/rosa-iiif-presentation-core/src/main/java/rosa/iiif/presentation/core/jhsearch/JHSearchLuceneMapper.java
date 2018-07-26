@@ -451,6 +451,9 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		});
 
 		methods.forEach(method -> addField(doc, JHSearchField.METHOD, method));
+		if (page.getReader() != null && !page.getReader().isEmpty()) {
+			addField(doc, JHSearchField.ANNOTATOR, page.getReader());
+		}
 	}
 
 	// Create document to index a canvas
@@ -686,6 +689,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		addSomeText(doc, JHSearchField.MARGINALIA, SearchFieldType.ENGLISH, marg.getTranslation());
 		addField(doc, JHSearchField.EMPHASIS, marg_lang_type, emphasis.toString());
 		addField(doc, JHSearchField.HAND, marg.getHand());
+		addField(doc, JHSearchField.ANNOTATOR, marg.getOtherReader());
 	}
 
 	private void index(BookCollection col, Book book, BookImage image, Graph graph, Document doc) {
