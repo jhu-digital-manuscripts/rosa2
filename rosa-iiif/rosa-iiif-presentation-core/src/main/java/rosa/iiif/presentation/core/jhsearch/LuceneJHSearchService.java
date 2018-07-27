@@ -75,7 +75,8 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                         JHSearchField.CALCULATION,
                         JHSearchField.GRAPH,
                         JHSearchField.TABLE,
-                        JHSearchField.HAND
+                        JHSearchField.HAND,
+                        JHSearchField.ANNOTATOR
                 });
         searchcategories.put("aorcollection",
                 new JHSearchCategory[] {JHSearchCategory.AUTHOR, JHSearchCategory.COMMON_NAME, JHSearchCategory.DATE,
