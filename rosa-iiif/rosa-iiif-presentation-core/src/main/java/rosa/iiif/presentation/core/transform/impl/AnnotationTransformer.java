@@ -27,6 +27,8 @@ import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.*;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.extras.ExternalResourceDb;
+import rosa.iiif.presentation.core.extras.ISNIResourceDb;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.core.html.AdapterSet;
 import rosa.iiif.presentation.core.util.AnnotationLocationUtil;
@@ -45,7 +47,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     private ArchiveNameParser nameParser;
     private AdapterSet htmlAdapters;
 //    private HtmlDecorator decorator;
-//    private ISNIResourceDb isni_db;
+    private ISNIResourceDb isni_db;
 
     @Inject
     public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
@@ -79,11 +81,11 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
     }
 
     private Annotation adaptAnnotation(BookCollection collection, Book book, rosa.archive.model.aor.Annotation anno, BookImage image) {
-//        if (isni_db == null) {
-//            isni_db = new ISNIResourceDb(collection);
-//        } else {
-//            isni_db.setCollection(collection);
-//        }
+        if (isni_db == null) {
+            isni_db = new ISNIResourceDb(collection);
+        } else {
+            isni_db.setCollection(collection);
+        }
         if (anno == null) {
             return null;
         }
@@ -100,7 +102,7 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
         if (anno instanceof Marginalia) {
             a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
-                    htmlAdapters.get(Marginalia.class).adapt(collection, book, image, (Marginalia) anno), language));
+                    htmlAdapters.get(Marginalia.class).adapt(collection, book, image, (Marginalia) anno, isni_db), language));
         } else if (anno instanceof Drawing) {
             a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
                     htmlAdapters.get(Drawing.class).adapt(collection, book, image, (Drawing) anno), language));
