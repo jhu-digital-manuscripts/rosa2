@@ -250,7 +250,10 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         case "es":
             return SearchFieldType.SPANISH;
         case "de":
-            return SearchFieldType.GERMAN;            
+            return SearchFieldType.GERMAN;
+        case "iw":
+            // Seldom used, just index as english
+            return SearchFieldType.ENGLISH;
         default:
             return null;
         }
