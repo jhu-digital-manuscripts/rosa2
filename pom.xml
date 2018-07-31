@@ -44,7 +44,7 @@
         <commons-io.version>2.4</commons-io.version>
         <commons-codec.version>1.9</commons-codec.version>
         <commons-cli.version>1.2</commons-cli.version>
-        <lucene.version>5.2.1</lucene.version>
+        <lucene.version>7.4.0</lucene.version>
     </properties>
 
     <dependencyManagement>
@@ -174,7 +174,7 @@
             <dependency>
                 <groupId>rosa</groupId>
                 <artifactId>lucene-latin-stemmer</artifactId>
-                <version>1.0.0</version>
+                <version>1.1.0</version>
             </dependency>
 
             <!-- Testing dependencies -->

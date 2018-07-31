@@ -149,7 +149,7 @@ public class LuceneSearchService implements SearchService {
                 FacetsCollector fc = new FacetsCollector(true);
                 SortedSetDocValuesReaderState state = new DefaultSortedSetDocValuesReaderState(searcher.getIndexReader());
                 
-                hits = FacetsCollector.search(searcher, create_dill_down_query(opts.getCategories(), q), null,
+                hits = FacetsCollector.search(searcher, create_dill_down_query(opts.getCategories(), q),
                         offset + opts.getMatchCount(), lucene_order, fc);
                 category_matches = get_category_matches(fc, state);
             } else {
