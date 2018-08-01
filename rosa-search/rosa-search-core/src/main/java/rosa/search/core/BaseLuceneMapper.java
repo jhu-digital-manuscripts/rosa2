@@ -9,6 +9,7 @@ import java.util.Set;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
+import org.apache.lucene.analysis.de.GermanAnalyzer;
 import org.apache.lucene.analysis.el.GreekAnalyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.es.SpanishAnalyzer;
@@ -64,6 +65,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         analyzers.put(SearchFieldType.GREEK, new GreekAnalyzer());
         analyzers.put(SearchFieldType.IMAGE_NAME, new ImageNameAnalyzer());
         analyzers.put(SearchFieldType.ITALIAN, new ItalianAnalyzer());
+        analyzers.put(SearchFieldType.GERMAN, new GermanAnalyzer());
         analyzers.put(SearchFieldType.LATIN, new LatinAnalyzer());
         analyzers.put(SearchFieldType.OLD_FRENCH, new RosaOldFrenchAnalyzer());
         analyzers.put(SearchFieldType.STRING, new WhitespaceAnalyzer());
@@ -247,6 +249,11 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
             return SearchFieldType.LATIN;
         case "es":
             return SearchFieldType.SPANISH;
+        case "de":
+            return SearchFieldType.GERMAN;
+        case "iw":
+            // Seldom used, just index as english
+            return SearchFieldType.ENGLISH;
         default:
             return null;
         }
