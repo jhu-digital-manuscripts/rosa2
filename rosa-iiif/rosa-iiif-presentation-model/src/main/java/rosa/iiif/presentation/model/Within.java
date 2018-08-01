@@ -38,11 +38,11 @@ public class Within implements Serializable {
     private final List<Within> withins;
 
     public Within(String id) {
-        this(id, null, null, null);
+        this(id, null, null, (Within[]) null);
     }
 
     public Within(String id, String type, String label) {
-        this(id, type, label, null);
+        this(id, type, label, (Within[]) null);
     }
 
     public Within(String id, String type, String label, Within ... withins) {

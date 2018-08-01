@@ -9,6 +9,7 @@ import java.util.Set;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
+import org.apache.lucene.analysis.de.GermanAnalyzer;
 import org.apache.lucene.analysis.el.GreekAnalyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.es.SpanishAnalyzer;
@@ -64,6 +65,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         analyzers.put(SearchFieldType.GREEK, new GreekAnalyzer());
         analyzers.put(SearchFieldType.IMAGE_NAME, new ImageNameAnalyzer());
         analyzers.put(SearchFieldType.ITALIAN, new ItalianAnalyzer());
+        analyzers.put(SearchFieldType.GERMAN, new GermanAnalyzer());
         analyzers.put(SearchFieldType.LATIN, new LatinAnalyzer());
         analyzers.put(SearchFieldType.OLD_FRENCH, new RosaOldFrenchAnalyzer());
         analyzers.put(SearchFieldType.STRING, new WhitespaceAnalyzer());
@@ -120,18 +122,18 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         }
 
         if (query.isOperation()) {
-            BooleanQuery result = new BooleanQuery();
+            BooleanQuery.Builder builder = new BooleanQuery.Builder();            
             Occur occur = query.getOperation() == QueryOperation.AND ? Occur.MUST : Occur.SHOULD;
 
             for (rosa.search.model.Query kid : query.children()) {
                 Query kid_query = createLuceneQuery(kid);
 
                 if (kid_query != null) {
-                    result.add(kid_query, occur);
+                    builder.add(kid_query, occur);
                 }
             }
 
-            return result;
+            return builder.build();
         } else {
             return create_lucene_query(query.getTerm());
         }
@@ -144,15 +146,15 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         } catch (ParseException e) {
         }
 
-        BooleanQuery result = new BooleanQuery();
+        BooleanQuery.Builder builder = new BooleanQuery.Builder();
 
         for (SearchField sf : context_search_fields) {
             for (SearchFieldType type : sf.getFieldTypes()) {
-                result.add(create_lucene_query(sf, type, query), Occur.SHOULD);
+                builder.add(create_lucene_query(sf, type, query), Occur.SHOULD);
             }
         }
 
-        return result;
+        return builder.build();
     }
 
     private Query create_lucene_query(QueryTerm term) {
@@ -165,13 +167,13 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
         if (sf.getFieldTypes().length == 1) {
             return create_lucene_query(sf, sf.getFieldTypes()[0], term.getValue());
         } else {
-            BooleanQuery query = new BooleanQuery();
+            BooleanQuery.Builder builder = new BooleanQuery.Builder();
 
             for (SearchFieldType type : sf.getFieldTypes()) {
-                query.add(create_lucene_query(sf, type, term.getValue()), Occur.SHOULD);
+                builder.add(create_lucene_query(sf, type, term.getValue()), Occur.SHOULD);
             }
 
-            return query;
+            return builder.build();
         }
     }
 
@@ -247,6 +249,11 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
             return SearchFieldType.LATIN;
         case "es":
             return SearchFieldType.SPANISH;
+        case "de":
+            return SearchFieldType.GERMAN;
+        case "iw":
+            // Seldom used, just index as english
+            return SearchFieldType.ENGLISH;
         default:
             return null;
         }
