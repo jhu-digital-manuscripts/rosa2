@@ -152,11 +152,7 @@ public class AORIdMapper {
     }
 
     private String getPageLabel(String book, String page) {
-        page = trimExt(page);
-        if (page.startsWith(book)) {
-            page = page.substring(book.length() + 1);
-        }
-        return page;
+        return nameParser.shortName(page);
     }
 
     private FileMap loadFileMap(String col, String parent) {
