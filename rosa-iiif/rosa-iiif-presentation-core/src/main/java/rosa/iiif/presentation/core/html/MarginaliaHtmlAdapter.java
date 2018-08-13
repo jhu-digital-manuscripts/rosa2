@@ -12,6 +12,7 @@ import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.extras.ISNIResourceDb;
 import rosa.iiif.presentation.core.jhsearch.JHSearchField;
 
 import javax.xml.stream.XMLStreamException;
@@ -97,7 +98,8 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
         addTranslation(annotation.getTranslation(), writer);
 
         addListOfValues("Symbols:", symb, writer);
-        addSearchableList("People:", people, JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
+
+        addSearchableList("People:", people, JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer, ISNIResourceDb.class);
         addListOfValues("Books:", books, writer);
         addListOfValues("Locations:", locs, writer);
 

@@ -10,6 +10,7 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.extras.ExternalResourceDb;
 import rosa.iiif.presentation.core.util.AnnotationLocationUtil;
 import rosa.search.model.SearchField;
 
@@ -18,7 +19,12 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
 import java.io.ByteArrayOutputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * This base class provides a starting point with useful utilities to adapt the content
@@ -30,12 +36,21 @@ import java.util.List;
  * @param <T>
  */
 public abstract class AnnotationBaseHtmlAdapter<T> {
+    private static final Logger LOGGER = Logger.getLogger("AnnotationHtmlAdapter");
+
     protected final PresentationUris pres_uris;
+    private List<ExternalResourceDb> externalDbs;
 
     protected XMLStreamWriter writer;
 
-    public AnnotationBaseHtmlAdapter(PresentationUris pres_uris) {
+    AnnotationBaseHtmlAdapter(PresentationUris pres_uris) {
         this.pres_uris = pres_uris;
+        this.externalDbs = new ArrayList<>();
+    }
+
+    private void setExternalDbs(ExternalResourceDb ... externalDbs) {
+        this.externalDbs.clear();
+        this.externalDbs.addAll(Arrays.asList(externalDbs));
     }
 
     /**
@@ -45,11 +60,14 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
      * @param book book object
      * @param page information for specific page
      * @param annotation annotation to adapt
+     * @param externalDbs external DBs to lookup related URIs
      * @return Stringified HTML
      */
-    public String adapt(BookCollection col, Book book, BookImage page, T annotation) {
+    public String adapt(BookCollection col, Book book, BookImage page, T annotation, ExternalResourceDb ... externalDbs) {
         XMLOutputFactory outF = newOutputFactory();
         ByteArrayOutputStream output = new ByteArrayOutputStream();
+
+        setExternalDbs(externalDbs);
 
         try {
             this.writer = outF.createXMLStreamWriter(output);
@@ -120,7 +138,7 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
     }
 
     void addSearchableList(String label, List<String> vals, SearchField searchField, String withinUri,
-                                   XMLStreamWriter writer) throws XMLStreamException {
+                                   XMLStreamWriter writer, Class<?> ... desiredExternalDbs) throws XMLStreamException {
         if (vals == null || vals.size() == 0) {
             return;
         }
@@ -135,6 +153,23 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
             writer.writeAttribute("class", "searchable");
             writer.writeAttribute("data-searchfield", searchField.getFieldName());
             writer.writeAttribute("data-searchwithin", withinUri);
+
+            if (desiredExternalDbs != null && desiredExternalDbs.length > 0 && externalDbs != null) {
+                Arrays.stream(desiredExternalDbs).forEach(dbClass ->
+                    externalDbs.stream().filter(db -> dbClass.equals(db.getClass())).forEach(db -> {
+                        try {
+                            URI result = db.lookup(val);
+                            if (result != null) {
+                                writer.writeAttribute("data-" + db.label(), result.toString());
+                            }
+                        } catch (XMLStreamException e) {
+                            /* If error occurs, just skip it */
+                            LOGGER.log(Level.WARNING, "External DB lookup failed ", e);
+                        }
+                    })
+                );
+            }
+
             writer.writeCharacters((i == 0 ? " " : ", ") + StringEscapeUtils.escapeHtml4(val));
             writer.writeEndElement();
         }

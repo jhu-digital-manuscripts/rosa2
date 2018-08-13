@@ -21,4 +21,6 @@ public interface ExternalResourceDb {
      */
 
     URI lookup(String term);
+
+    String label();
 }

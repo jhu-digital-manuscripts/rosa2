@@ -15,14 +15,23 @@ import java.util.logging.Logger;
 public class ISNIResourceDb implements ExternalResourceDb {
     private static final Logger logger = Logger.getLogger("ISNIResourceDb");
     private static final String ISNI_URL = "http://isni.org/isni/";
+    private static final String label = "isni";
 
     private final Map<String, URI> db;
 
     private String currentCollection;
 
+    public ISNIResourceDb() {
+        db = new ConcurrentHashMap<>();
+    }
+
     public ISNIResourceDb(BookCollection collection) {
         db = new ConcurrentHashMap<>();
         setCollection(collection);
+    }
+
+    public String label() {
+        return label;
     }
 
     /*
