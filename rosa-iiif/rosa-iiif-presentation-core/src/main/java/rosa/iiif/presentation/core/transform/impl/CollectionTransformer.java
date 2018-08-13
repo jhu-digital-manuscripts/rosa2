@@ -6,7 +6,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
@@ -32,9 +31,9 @@ import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.Within;
 
 public class CollectionTransformer extends BasePresentationTransformer {
-    public static final String TOP_COLLECTION_LABEL = "All JHU IIIF Collections";
-    public static final String TOP_COLLECTION_NAME = "top";
-    public static final String LANGUAGE_DEFAULT = "en";
+//    public static final String TOP_COLLECTION_LABEL = "All JHU IIIF Collections";
+//    public static final String TOP_COLLECTION_NAME = "top";
+    private static final String LANGUAGE_DEFAULT = "en";
     private static final int MAX_THUMBNAILS = 3;
 
     private SimpleStore store;
@@ -103,7 +102,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 col.addService(new Service( JHSearchService.CONTEXT_URI, parentURI, IIIF_SEARCH_PROFILE, parentCol.getLabel()));
             } catch (IOException e) {}
         }
-        col.setWithin(parents.toArray(new Within[parents.size()]));
+        col.setWithin(parents.toArray(new Within[0]));
 
         return col;
     }
@@ -148,15 +147,27 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 }
                 map.put("pageCount", new HtmlValue(String.valueOf(b.getImages().getImages().size()), LANGUAGE_DEFAULT));
 
-                ref.setMetadata(map);
-
                 if (b.getMultilangMetadata() != null && b.getMultilangMetadata().getBiblioDataMap() != null
                         && b.getMultilangMetadata().getBiblioDataMap().containsKey(LANGUAGE_DEFAULT)) {
                     String[] auths = b.getMultilangMetadata().getBiblioDataMap().get(LANGUAGE_DEFAULT).getAuthors();
                     if (auths != null && auths.length > 0) {
                         ref.addSortingTag("0" + auths[0]);
                     }
+                    String[] readers = b.getMultilangMetadata().getBiblioDataMap().get(LANGUAGE_DEFAULT).getReaders();
+                    if (readers != null && readers.length > 0) {
+                        StringBuilder sb = new StringBuilder();
+                        for (int i = 0; i < readers.length; i++) {
+                            if (i > 0) {
+                                sb.append(" ");
+                            }
+                            sb.append(readers[i]);
+                        }
+                        map.put("Reader", new HtmlValue(sb.toString(), LANGUAGE_DEFAULT));
+                    }
                 }
+
+                ref.setMetadata(map);
+
                 if (hasContent(bm.getCommonName())) {
                     ref.addSortingTag("1" + bm.getCommonName());
                 }

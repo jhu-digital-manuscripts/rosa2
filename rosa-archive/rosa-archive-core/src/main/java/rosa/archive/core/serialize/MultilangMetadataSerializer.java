@@ -134,6 +134,9 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
             for (String author : data.getAuthors()) {
                 valueElement("author", author, bib, doc);
             }
+            for (String reader : data.getReaders()) {
+                valueElement("reader", reader, bib, doc);
+            }
             for (String detail : data.getDetails()) {
                 valueElement("detail", detail, bib, doc);
             }
@@ -231,6 +234,7 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
             data.setType(text("type", el));
             data.setDetails(getTextValues("detail", el).toArray(new String[0]));
             data.setAuthors(getTextValues("author", el).toArray(new String[0]));
+            data.setReaders(getTextValues("reader", el).toArray(new String[0]));
             data.setNotes(getTextValues("note", el).toArray(new String[0]));
 
             map.put(lang, data);
