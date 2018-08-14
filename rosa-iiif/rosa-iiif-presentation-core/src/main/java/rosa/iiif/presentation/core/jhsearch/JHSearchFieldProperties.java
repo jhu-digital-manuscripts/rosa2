@@ -76,7 +76,7 @@ interface JHSearchFieldProperties {
     String TRANSCRIPTION_LABEL = "Transcription";
     String TRANSCRIPTION_DESCRIPTION = "Search within transcriptions of manuscript texts.";
     String ILLUSTRATION_LABEL = "Illustrations";
-    String ILLUSTRATION_DESCRIPTION = "Search within the descriptions of illustrations. For a list of illustration titles, please visit the list of descriptions provided on the <em>Roman de la Rose</em> Digital library website. [http://dlmm.sharedblogs.library.jhu.edu/en/illustration-titles/]";
+    String ILLUSTRATION_DESCRIPTION = "Search within the descriptions of illustrations.";
     String DESCRIPTION_LABEL = "Description";
     String DESCRIPTION_DESCRIPTION = "Search within the metadata for the collection.";
     String LANGUAGE_LABEL ="Language";
@@ -110,5 +110,5 @@ interface JHSearchFieldProperties {
     String TEXT_LABEL = "Text";
     String TEXT_DESCRIPTION = "Search the text of an item. This can include transcriptions and translations.";
     String CHAR_NAME_LABEL = "Character names";
-    String CHAR_NAME_DESCRIPTION = "Search names of characters in the Roman de la Rose. For a list of character names visit the <em>Roman de la Rose</em> Digital Library [http://dlmm.sharedblogs.library.jhu.edu/en/character-names/]";
+    String CHAR_NAME_DESCRIPTION = "Search names of characters in the Roman de la Rose.";
 }
