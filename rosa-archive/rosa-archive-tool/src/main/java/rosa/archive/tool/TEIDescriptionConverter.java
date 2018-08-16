@@ -22,6 +22,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * Convert TEI descriptions to our custom xml book metadata description.
+ * The TEI descriptions are left untouched.
+ */
 public class TEIDescriptionConverter {
     private static final BookMetadataSerializer bookMetadataSerializer = new BookMetadataSerializer();
     private static final MultilangMetadataSerializer multilangMetadataSerializer = new MultilangMetadataSerializer();
@@ -143,12 +147,14 @@ public class TEIDescriptionConverter {
     }
 
     private static void writeOutput(MultilangMetadata mm, Path outputPath, PrintStream report) {
-        try (OutputStream out = Files.newOutputStream(outputPath)) {
-
-            multilangMetadataSerializer.write(mm, out);
-
-        } catch (IOException e) {
-            report.printf("[ERROR] Failed to write output file. [%s]", outputPath.toAbsolutePath());
+        if (Files.exists(outputPath)) {
+            report.printf("[WARNING] Skipped existing [%s]", outputPath.toAbsolutePath());
+        } else {
+            try (OutputStream out = Files.newOutputStream(outputPath)) {
+                multilangMetadataSerializer.write(mm, out);
+            } catch (IOException e) {
+                report.printf("[ERROR] Failed to write output file. [%s]", outputPath.toAbsolutePath());
+            }
         }
     }
 
