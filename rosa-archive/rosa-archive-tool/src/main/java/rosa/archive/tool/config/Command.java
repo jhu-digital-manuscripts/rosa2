@@ -16,7 +16,7 @@ public enum Command {
     RENAME_TRANSCRIPTIONS("rename-transcriptions"),
     GENERATE_TEI("generate-tei"),
     CHECK_AOR("check-aor"),
-    SEPARATE_TEI_METADATA("separate-tei-metadata");
+    MIGRATE_TEI_METADATA("migrate-tei-metadata");
 
     private String display;
 
