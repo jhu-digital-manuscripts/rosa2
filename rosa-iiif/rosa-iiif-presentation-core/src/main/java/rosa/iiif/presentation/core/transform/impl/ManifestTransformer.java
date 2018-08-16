@@ -9,6 +9,7 @@ import com.google.inject.name.Named;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.meta.BiblioData;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -174,6 +175,18 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
             if (metadata.getMaterial() != null) {
                 map.put("material", new HtmlValue(metadata.getMaterial(), lang));
             }
+
+            if (book.getMultilangMetadata() != null && book.getMultilangMetadata().getBiblioDataMap().containsKey(lang)) {
+                BiblioData bd = book.getMultilangMetadata().getBiblioDataMap().get(lang);
+
+                if (bd.getReaders().length > 0) {
+                    map.put("reader", new HtmlValue(bd.getReaders()[0], lang));
+                }
+                if (bd.getAuthors().length > 0) {
+                    map.put("author", new HtmlValue(bd.getAuthors()[0], lang));
+                }
+            }
+
 
             // TODO book texts
         }
