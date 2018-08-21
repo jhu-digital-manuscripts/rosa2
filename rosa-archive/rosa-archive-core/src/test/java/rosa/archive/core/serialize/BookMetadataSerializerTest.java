@@ -2,9 +2,10 @@ package rosa.archive.core.serialize;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import rosa.archive.model.BiblioData;
+import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
-import rosa.archive.model.meta.BiblioData;
-import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -17,7 +18,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-public class MultilangMetadataSerializerTest extends BaseSerializerTest<MultilangMetadata> {
+public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata> {
     private final static String bigXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
             "<book>\n" +
             "    <license>\n" +
@@ -89,14 +90,14 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest<Multilan
 
     @Before
     public void setup() {
-        serializer = new MultilangMetadataSerializer();
+        serializer = new BookMetadataSerializer();
     }
 
     @Test
     public void readTest() throws IOException {
 
         List<String> errors = new ArrayList<>();
-        MultilangMetadata metadata = null;
+        BookMetadata metadata = null;
         try (InputStream in = new ByteArrayInputStream(bigXml.getBytes("UTF-8"))) {
             metadata = serializer.read(in, errors);
         }
@@ -168,7 +169,7 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest<Multilan
                 "</book>";
 
         List<String> errors = new ArrayList<>();
-        MultilangMetadata metadata = null;
+        BookMetadata metadata = null;
         try (InputStream in = new ByteArrayInputStream(xml.getBytes("UTF-8"))) {
             metadata = serializer.read(in, errors);
         }
@@ -223,12 +224,12 @@ public class MultilangMetadataSerializerTest extends BaseSerializerTest<Multilan
     }
 
     @Override
-    protected MultilangMetadata createObject() {
+    protected BookMetadata createObject() {
         return createMetadata();
     }
 
-    private MultilangMetadata createMetadata() {
-        MultilangMetadata metadata = new MultilangMetadata();
+    private BookMetadata createMetadata() {
+        BookMetadata metadata = new BookMetadata();
 
         metadata.setNumberOfIllustrations(10);
         metadata.setNumberOfPages(8);

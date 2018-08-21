@@ -2,7 +2,7 @@ package rosa.archive.core.serialize;
 
 import org.junit.Before;
 import org.junit.Test;
-import rosa.archive.model.BookMetadata;
+import rosa.archive.model.DeprecatedBookMetadata;
 import rosa.archive.model.BookText;
 
 import java.io.IOException;
@@ -14,13 +14,13 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 /**
- * @see rosa.archive.core.serialize.BookMetadataSerializer
+ * @see rosa.archive.core.serialize.DeprecatedBookMetadataSerializer
  */
-public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata> {
+public class DeprecatedBookMetadataSerializerTest extends BaseSerializerTest<DeprecatedBookMetadata> {
 
     @Before
     public void setup() {
-        serializer = new BookMetadataSerializer();
+        serializer = new DeprecatedBookMetadataSerializer();
     }
 
     @Test
@@ -29,7 +29,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
 
         List<String> errors = new ArrayList<>();
 
-        BookMetadata metadata = loadResource(COLLECTION_NAME, BOOK_NAME, testFile, errors);
+        DeprecatedBookMetadata metadata = loadResource(COLLECTION_NAME, BOOK_NAME, testFile, errors);
         assertNotNull(metadata);
 
         assertEquals("15th century", metadata.getDate());
@@ -74,12 +74,12 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
     }
 
     @Override
-    protected BookMetadata createObject() {
+    protected DeprecatedBookMetadata createObject() {
         return createMetadata();
     }
 
-    private BookMetadata createMetadata() {
-        BookMetadata metadata = new BookMetadata();
+    private DeprecatedBookMetadata createMetadata() {
+        DeprecatedBookMetadata metadata = new DeprecatedBookMetadata();
 
         metadata.setCommonName("Common Name");
         metadata.setTitle("Title");

@@ -121,8 +121,8 @@ public class ArchiveNameParserTest {
                 "LudwigXV7.transcription.xml", "LudwigXV7.aor.130r.xml", "LudwigXV7.aor.001v.xml"
         };
         ArchiveItemType[] expected = {
-                ArchiveItemType.IMAGE, ArchiveItemType.IMAGE, ArchiveItemType.CROPPING, ArchiveItemType.DESCRIPTION,
-                ArchiveItemType.DESCRIPTION_MULTILANG, ArchiveItemType.IMAGE,
+                ArchiveItemType.IMAGE, ArchiveItemType.IMAGE, ArchiveItemType.CROPPING, ArchiveItemType.DEPRECATED_DESCRIPTION,
+                ArchiveItemType.METADATA, ArchiveItemType.IMAGE,
                 ArchiveItemType.CROPPED_IMAGE_LIST, ArchiveItemType.IMAGE_LIST, ArchiveItemType.NARRATIVE_TAGGING,
                 ArchiveItemType.PERMISSION, ArchiveItemType.REDUCED_TAGGING_TXT, ArchiveItemType.SHA1SUM,
                 ArchiveItemType.TRANSCRIPTION_ROSE, ArchiveItemType.TRANSCRIPTION_AOR, ArchiveItemType.TRANSCRIPTION_AOR
@@ -143,8 +143,8 @@ public class ArchiveNameParserTest {
                 "LudwigXV7.transcription.xml", "LudwigXV7.aor.130r.xml", "LudwigXV7.aor.001v.xml\t"
         };
         ArchiveItemType[] expected = {
-                ArchiveItemType.IMAGE, ArchiveItemType.IMAGE, ArchiveItemType.CROPPING, ArchiveItemType.DESCRIPTION,
-                ArchiveItemType.DESCRIPTION_MULTILANG, ArchiveItemType.IMAGE,
+                ArchiveItemType.IMAGE, ArchiveItemType.IMAGE, ArchiveItemType.CROPPING, ArchiveItemType.DEPRECATED_DESCRIPTION,
+                ArchiveItemType.METADATA, ArchiveItemType.IMAGE,
                 ArchiveItemType.CROPPED_IMAGE_LIST, ArchiveItemType.IMAGE_LIST, ArchiveItemType.NARRATIVE_TAGGING,
                 ArchiveItemType.PERMISSION, ArchiveItemType.REDUCED_TAGGING_TXT, ArchiveItemType.SHA1SUM,
                 ArchiveItemType.TRANSCRIPTION_ROSE, ArchiveItemType.TRANSCRIPTION_AOR, ArchiveItemType.TRANSCRIPTION_AOR

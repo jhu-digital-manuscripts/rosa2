@@ -17,15 +17,15 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import rosa.archive.core.util.XMLUtil;
-import rosa.archive.model.BookMetadata;
+import rosa.archive.model.DeprecatedBookMetadata;
 import rosa.archive.model.BookText;
 
 /**
  * Serialization format is a custom TEI profile.
  * 
- * @see rosa.archive.model.BookMetadata
+ * @see rosa.archive.model.DeprecatedBookMetadata
  */
-public class BookMetadataSerializer implements Serializer<BookMetadata> {
+public class DeprecatedBookMetadataSerializer implements Serializer<DeprecatedBookMetadata> {
     private static final String MetadataDateTag = "date";
     private static final String MetadataCurrentLocationTag = "settlement";
     private static final String MetadataRepositoryTag = "repository";
@@ -54,7 +54,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
     private static final String MetadataTextsAuthorTag = "author";
        
     @Override
-    public BookMetadata read(InputStream is, List<String> errors) throws IOException {
+    public DeprecatedBookMetadata read(InputStream is, List<String> errors) throws IOException {
 
         try {
 
@@ -74,7 +74,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
     }
 
     @Override
-    public void write(BookMetadata metadata, OutputStream out) throws IOException {
+    public void write(DeprecatedBookMetadata metadata, OutputStream out) throws IOException {
         Document doc = XMLUtil.newDocument();
 
         Element root = doc.createElement("TEI");
@@ -334,8 +334,8 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
      *            XML document
      * @return metadata
      */
-    private BookMetadata buildMetadata(Document doc) {
-        BookMetadata metadata = new BookMetadata();
+    private DeprecatedBookMetadata buildMetadata(Document doc) {
+        DeprecatedBookMetadata metadata = new DeprecatedBookMetadata();
 
         Element top = doc.getDocumentElement();
 
@@ -421,7 +421,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
     }
 
     @Override
-    public Class<BookMetadata> getObjectType() {
-        return BookMetadata.class;
+    public Class<DeprecatedBookMetadata> getObjectType() {
+        return DeprecatedBookMetadata.class;
     }
 }

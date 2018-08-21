@@ -9,9 +9,9 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 import rosa.archive.core.util.XMLUtil;
+import rosa.archive.model.BiblioData;
+import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
-import rosa.archive.model.meta.BiblioData;
-import rosa.archive.model.meta.MultilangMetadata;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -28,9 +28,9 @@ import java.util.Map;
 /**
  *
  */
-public class MultilangMetadataSerializer implements Serializer<MultilangMetadata> {
+public class BookMetadataSerializer implements Serializer<BookMetadata> {
     @Override
-    public MultilangMetadata read(InputStream is, final List<String> errors) throws IOException {
+    public BookMetadata read(InputStream is, final List<String> errors) throws IOException {
         try {
 
             DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
@@ -64,7 +64,7 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
     }
 
     @Override
-    public void write(MultilangMetadata metadata, OutputStream out) throws IOException {
+    public void write(BookMetadata metadata, OutputStream out) throws IOException {
         Document doc = XMLUtil.newDocument();
 
         Element root = doc.createElement("book");
@@ -145,10 +145,10 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
         XMLUtil.write(doc, out, false);
     }
 
-    private MultilangMetadata buildMetadata(Document doc) {
+    private BookMetadata buildMetadata(Document doc) {
         Element top = doc.getDocumentElement();
 
-        MultilangMetadata metadata = new MultilangMetadata();
+        BookMetadata metadata = new BookMetadata();
 
         metadata.setWidth(number("width", top));
         metadata.setHeight(number("height", top));
@@ -313,7 +313,7 @@ public class MultilangMetadataSerializer implements Serializer<MultilangMetadata
     }
 
     @Override
-    public Class<MultilangMetadata> getObjectType() {
-        return MultilangMetadata.class;
+    public Class<BookMetadata> getObjectType() {
+        return BookMetadata.class;
     }
 }

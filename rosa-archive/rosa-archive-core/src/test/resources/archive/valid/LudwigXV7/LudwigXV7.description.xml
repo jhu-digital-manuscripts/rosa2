@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>101</illustrations>
+    <totalPages>136</totalPages>
+    <dimensions units="mm">
+        <width>260</width>
+        <height>370</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="135v" start="1r">135</pages>
+            <illustrations>101</illustrations>
+            <linesPerColumn>44</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Ludwig XV7</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Los Angeles</currentLocation>
+            <repository>J. Paul Getty Museum</repository>
+            <shelfmark>Ludwig XV 7</shelfmark>
+            <author>Moo cow</author>	    
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Ludwig XV7</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Los Angeles</currentLocation>
+            <repository>J. Paul Getty Museum</repository>
+            <shelfmark>Ludwig XV 7</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>
+

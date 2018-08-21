@@ -60,7 +60,7 @@ public abstract class BaseArchiveTest {
         
         basePath = tmp.resolve("archive");
         base = new FSByteStreamGroup(basePath);
-        store = new StoreImpl(serializers, bookChecker, collectionChecker, base);
+        store = new StoreImpl(serializers, bookChecker, collectionChecker, base, true);
         simpleStore = new SimpleCachingStore(store, 1000);
     }
 
