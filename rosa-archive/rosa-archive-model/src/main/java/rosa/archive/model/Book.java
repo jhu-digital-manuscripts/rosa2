@@ -1,8 +1,6 @@
 package rosa.archive.model;
 
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.meta.BiblioData;
-import rosa.archive.model.meta.MultilangMetadata;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -41,10 +39,10 @@ public class Book implements HasId, Serializable {
     private IllustrationTagging illustrationTagging;
     private NarrativeTagging manualNarrativeTagging;
     private NarrativeTagging automaticNarrativeTagging;
-    private MultilangMetadata multilangMetadata;
+    private BookMetadata bookMetadata;
 
     private Map<String, Permission> permissions;
-    private Map<String, BookMetadata> metadataMap;
+    private Map<String, DeprecatedBookMetadata> deprecatedMetadataMap;
     private Map<String, BookDescription> descriptionMap;
     private Transcription transcription;
 
@@ -55,7 +53,7 @@ public class Book implements HasId, Serializable {
      */
     public Book() {
         this.permissions = new HashMap<>();
-        this.metadataMap = new HashMap<>();
+        this.deprecatedMetadataMap = new HashMap<>();
         this.annotatedPages = new ArrayList<>();
         this.descriptionMap = new HashMap<>();
     }
@@ -95,15 +93,15 @@ public class Book implements HasId, Serializable {
     }
 
     public String getLicenseUrl() {
-        return multilangMetadata != null ? multilangMetadata.getLicenseUrl() : null;
+        return bookMetadata != null ? bookMetadata.getLicenseUrl() : null;
     }
 
     public String getLicenseLogoUrl() {
-        return multilangMetadata != null ? multilangMetadata.getLicenseLogo() : null;
+        return bookMetadata != null ? bookMetadata.getLicenseLogo() : null;
     }
 
-    public MultilangMetadata getMultilangMetadata() {
-        return multilangMetadata;
+    public BookMetadata getBookMetadata() {
+        return bookMetadata;
     }
 
     /**
@@ -112,49 +110,30 @@ public class Book implements HasId, Serializable {
      * @param language language code
      * @return the book metadata
      */
-    public BookMetadata getBookMetadata(String language) {
-        if (multilangMetadata != null && multilangMetadata.supportsLanguage(language)) {
-            BookMetadata metadata = new BookMetadata();
-
-            metadata.setId(multilangMetadata.getId());
-            metadata.setYearStart(multilangMetadata.getYearStart());
-            metadata.setYearEnd(multilangMetadata.getYearEnd());
-            metadata.setDimensionUnits(multilangMetadata.getDimensionUnits());
-            metadata.setDimensions(multilangMetadata.getDimensionsString());
-            metadata.setWidth(multilangMetadata.getWidth());
-            metadata.setHeight(multilangMetadata.getHeight());
-            metadata.setNumberOfPages(multilangMetadata.getNumberOfPages());
-            metadata.setNumberOfIllustrations(multilangMetadata.getNumberOfIllustrations());
-            metadata.setTexts(multilangMetadata.getBookTexts().toArray(new BookText[0]));
-
-            BiblioData forLang = multilangMetadata.getBiblioDataMap().get(language);
-            metadata.setTitle(forLang.getTitle());
-            metadata.setDate(forLang.getDateLabel());
-            metadata.setCurrentLocation(forLang.getCurrentLocation());
-            metadata.setRepository(forLang.getRepository());
-            metadata.setShelfmark(forLang.getShelfmark());
-            metadata.setOrigin(forLang.getOrigin());
-            metadata.setType(forLang.getType());
-            metadata.setCommonName(forLang.getCommonName());
-            metadata.setMaterial(forLang.getMaterial());
-
-            return metadata;
-        }
-        return metadataMap.get(language);
+    public DeprecatedBookMetadata getDeprecatedBookMetadata(String language) {
+        return deprecatedMetadataMap.get(language);
     }
 
     /**
-     * Add book metadata in a specific language.
+     * @param lc
+     * @return bibliographic data in the given language if available
+     */
+    public BiblioData getBiblioData(String lc) {
+        return bookMetadata.getBiblioDataMap().get(lc);
+    }
+    
+    /**
+     * Add deprecated book metadata in a specific language.
      *
      * @param metadata metadata to add
      * @param language language code
      */
-    public void addBookMetadata(BookMetadata metadata, String language) {
-        metadataMap.put(language, metadata);
+    public void addDeprecatedBookMetadata(DeprecatedBookMetadata metadata, String language) {
+        deprecatedMetadataMap.put(language, metadata);
     }
 
-    public void setBookMetadata(Map<String, BookMetadata> metadataMap) {
-        this.metadataMap = metadataMap;
+    public void setDeprecatedBookMetadata(Map<String, DeprecatedBookMetadata> metadataMap) {
+        this.deprecatedMetadataMap = metadataMap;
     }
 
     public void addBookDescription(BookDescription description, String language) {
@@ -316,10 +295,9 @@ public class Book implements HasId, Serializable {
         this.annotatedPages = annotatedPages;
     }
 
-    public void setMultilangMetadata(MultilangMetadata multilangMetadata) {
-        this.multilangMetadata = multilangMetadata;
+    public void setBookMetadata(BookMetadata bookMetadata) {
+        this.bookMetadata = bookMetadata;
     }
-
     
     /**
      * Guess name of image from fragment.
@@ -384,10 +362,10 @@ public class Book implements HasId, Serializable {
             return false;
         if (automaticNarrativeTagging != null ? !automaticNarrativeTagging.equals(book.automaticNarrativeTagging) : book.automaticNarrativeTagging != null)
             return false;
-        if (multilangMetadata != null ? !multilangMetadata.equals(book.multilangMetadata) : book.multilangMetadata != null)
+        if (bookMetadata != null ? !bookMetadata.equals(book.bookMetadata) : book.bookMetadata != null)
             return false;
         if (permissions != null ? !permissions.equals(book.permissions) : book.permissions != null) return false;
-        if (metadataMap != null ? !metadataMap.equals(book.metadataMap) : book.metadataMap != null) return false;
+        if (deprecatedMetadataMap != null ? !deprecatedMetadataMap.equals(book.deprecatedMetadataMap) : book.deprecatedMetadataMap != null) return false;
         if (descriptionMap != null ? !descriptionMap.equals(book.descriptionMap) : book.descriptionMap != null)
             return false;
         if (transcription != null ? !transcription.equals(book.transcription) : book.transcription != null)
@@ -408,9 +386,9 @@ public class Book implements HasId, Serializable {
         result = 31 * result + (illustrationTagging != null ? illustrationTagging.hashCode() : 0);
         result = 31 * result + (manualNarrativeTagging != null ? manualNarrativeTagging.hashCode() : 0);
         result = 31 * result + (automaticNarrativeTagging != null ? automaticNarrativeTagging.hashCode() : 0);
-        result = 31 * result + (multilangMetadata != null ? multilangMetadata.hashCode() : 0);
+        result = 31 * result + (bookMetadata != null ? bookMetadata.hashCode() : 0);
         result = 31 * result + (permissions != null ? permissions.hashCode() : 0);
-        result = 31 * result + (metadataMap != null ? metadataMap.hashCode() : 0);
+        result = 31 * result + (deprecatedMetadataMap != null ? deprecatedMetadataMap.hashCode() : 0);
         result = 31 * result + (descriptionMap != null ? descriptionMap.hashCode() : 0);
         result = 31 * result + (transcription != null ? transcription.hashCode() : 0);
         result = 31 * result + (annotatedPages != null ? annotatedPages.hashCode() : 0);
@@ -430,9 +408,9 @@ public class Book implements HasId, Serializable {
                 ", illustrationTagging=" + illustrationTagging +
                 ", manualNarrativeTagging=" + manualNarrativeTagging +
                 ", automaticNarrativeTagging=" + automaticNarrativeTagging +
-                ", multilangMetadata=" + multilangMetadata +
+                ", bookMetadata=" + bookMetadata +
                 ", permissions=" + permissions +
-                ", metadataMap=" + metadataMap +
+                ", deprecatedMetadataMap=" + deprecatedMetadataMap +
                 ", descriptionMap=" + descriptionMap +
                 ", transcription=" + transcription +
                 ", annotatedPages=" + annotatedPages +
