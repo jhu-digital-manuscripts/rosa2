@@ -18,6 +18,7 @@ import org.xml.sax.helpers.DefaultHandler;
 import org.xml.sax.helpers.XMLReaderFactory;
 
 import rosa.archive.core.util.TranscriptionSplitter;
+import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookDescription;
@@ -43,8 +44,6 @@ import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
-import rosa.archive.model.meta.BiblioData;
-import rosa.archive.model.meta.MultilangMetadata;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.IIIFNames;
@@ -180,26 +179,17 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	}
 	
 	private void index_book_facets(Book book, Document doc) {
-        // Really need a better way of handling these metadata...
-        if (book.getMultilangMetadata() != null) {
-            BiblioData en = book.getMultilangMetadata().getBiblioDataMap().get("en");
+        BookMetadata md = book.getBookMetadata();	    
+        BiblioData bd = book.getBiblioData("en");
 
-            if (en != null) {
-                for (String s : en.getAuthors()) {
-                    addFacet(doc, JHSearchCategory.AUTHOR, s);
-                }
-            }
-        }
-
-        BookMetadata md = book.getBookMetadata("en");
-        String facet_loc = md.getCurrentLocation();
-        String facet_repo = md.getRepository();
-        String facet_date = md.getDate();
+        String facet_loc = bd.getCurrentLocation();
+        String facet_repo = bd.getRepository();
+        String facet_date = bd.getDateLabel();
         int numPages = md.getNumberOfPages();
         int numIlls = md.getNumberOfIllustrations();
-        String facet_common_name = md.getCommonName();
-        String facet_origin = md.getOrigin();
-        String facet_type = md.getType();
+        String facet_common_name = bd.getCommonName();
+        String facet_origin = bd.getOrigin();
+        String facet_type = bd.getType();
 
         addFacet(doc, JHSearchCategory.COMMON_NAME, facet_common_name);
         addFacet(doc, JHSearchCategory.NUM_PAGES, quantize(numPages, 100));
@@ -210,12 +200,16 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         addFacet(doc, JHSearchCategory.NUM_ILLUS, quantize(numIlls, 10));
         addFacet(doc, JHSearchCategory.TYPE, facet_type);
 
+        for (String author : bd.getAuthors()) {
+            addFacet(doc, JHSearchCategory.AUTHOR, author);
+        }
+        
         Transcription tr = book.getTranscription();
         // TODO how to tell if we have full VS partial transcription?
         boolean hasTranscription = tr != null && tr.getXML() != null && !tr.getXML().isEmpty();
         addFacet(doc, JHSearchCategory.TRANSCRIPTION, String.valueOf(hasTranscription));
 
-        for (BookText text : md.getTexts()) {
+        for (BookText text : book.getBookMetadata().getBookTexts()) {
             text.getAuthors().forEach(author -> addFacet(doc, JHSearchCategory.AUTHOR, author));
         }
 	}
@@ -458,7 +452,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		addField(doc, JHSearchField.OBJECT_LABEL, image.getName());
 
 		addField(doc, JHSearchField.MANIFEST_ID, manifest_id);
-		addField(doc, JHSearchField.MANIFEST_LABEL, book.getBookMetadata("en").getCommonName());
+		addField(doc, JHSearchField.MANIFEST_LABEL, book.getBiblioData("en").getCommonName());
 
 		return doc;
 	}
@@ -470,8 +464,8 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		String collection_id = pres_uris.getCollectionURI(col.getId());
 		String manifest_id = pres_uris.getManifestURI(col.getId(), book.getId());
 
-        BookMetadata md = book.getBookMetadata("en");
-        String manifest_label = md.getCommonName();
+        BiblioData bd = book.getBiblioData("en");
+        String manifest_label = bd.getCommonName();
 
         addField(doc, JHSearchField.COLLECTION_ID, collection_id);
 
@@ -483,17 +477,19 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		addField(doc, JHSearchField.MANIFEST_LABEL, manifest_label);
 
         addField(doc, JHSearchField.TITLE, SearchFieldType.ENGLISH, manifest_label);
-        addField(doc, JHSearchField.REPO, SearchFieldType.ENGLISH, md.getRepository());
+        addField(doc, JHSearchField.REPO, SearchFieldType.ENGLISH, bd.getRepository());
 
-        addField(doc, JHSearchField.PLACE, md.getCurrentLocation());
+        addField(doc, JHSearchField.PLACE, bd.getCurrentLocation());
 
-        if (md.getTexts() != null) {
-            for (BookText text : md.getTexts()) {
+        BookMetadata md = book.getBookMetadata();
+        
+        if (md.getBookTexts() != null) {
+            for (BookText text : md.getBookTexts()) {
                 addField(doc, JHSearchField.TITLE, SearchFieldType.ENGLISH, text.getTitle());
             }
         }
 
-        MultilangMetadata mm = book.getMultilangMetadata();
+        BookMetadata mm = book.getBookMetadata();
         if (mm != null && mm.getBiblioDataMap() != null) {
             BiblioData data = mm.getBiblioDataMap().get("en");
             if (data.getAuthors() != null) {

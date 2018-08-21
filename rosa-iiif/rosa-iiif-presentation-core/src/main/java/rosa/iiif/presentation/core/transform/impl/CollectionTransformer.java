@@ -1,5 +1,6 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,11 +12,11 @@ import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
 import rosa.archive.core.SimpleStore;
+import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
-import rosa.archive.model.BookMetadata;
 import rosa.archive.model.ImageList;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
@@ -130,26 +131,26 @@ public class CollectionTransformer extends BasePresentationTransformer {
             try {
                 Book b = store.loadBook(collection.getId(), title);
 
-                BookMetadata bm = b.getBookMetadata("en");
-
+                BiblioData bd = b.getBiblioData("en");
+                
                 Map<String, HtmlValue> map = new HashMap<>();
-                if (bm.getCommonName() != null && !bm.getCommonName().isEmpty()) {
-                    ref.setLabel(new TextValue(bm.getCommonName(), "en"));
-                } else if (bm.getTitle() != null && !bm.getTitle().isEmpty()) {
-                    ref.setLabel(new TextValue(bm.getTitle(), "en"));
+                if (bd.getCommonName() != null && !bd.getCommonName().isEmpty()) {
+                    ref.setLabel(new TextValue(bd.getCommonName(), "en"));
+                } else if (bd.getTitle() != null && !bd.getTitle().isEmpty()) {
+                    ref.setLabel(new TextValue(bd.getTitle(), "en"));
                 } else {
                     ref.setLabel(new TextValue(title, "en"));
                 }
 
-                map.put("Current Location", new HtmlValue(bm.getCurrentLocation(), "en"));
-                map.put("Repository", new HtmlValue(bm.getRepository(), "en"));
-                map.put("Shelfmark", new HtmlValue(bm.getShelfmark(), "en"));
-                map.put("Origin", new HtmlValue(bm.getOrigin(), "en"));
-                if (bm.getTitle() != null && !bm.getTitle().isEmpty()) {
-                    map.put("Title", new HtmlValue(bm.getTitle(), "en"));
+                map.put("Current Location", new HtmlValue(bd.getCurrentLocation(), "en"));
+                map.put("Repository", new HtmlValue(bd.getRepository(), "en"));
+                map.put("Shelfmark", new HtmlValue(bd.getShelfmark(), "en"));
+                map.put("Origin", new HtmlValue(bd.getOrigin(), "en"));
+                if (bd.getTitle() != null && !bd.getTitle().isEmpty()) {
+                    map.put("Title", new HtmlValue(bd.getTitle(), "en"));
                 }
-                if (bm.getDate() != null && !bm.getTitle().isEmpty()) {
-                    map.put("Date", new HtmlValue(bm.getDate(), "en"));
+                if (bd.getDateLabel() != null && !bd.getDateLabel().isEmpty()) {
+                    map.put("Date", new HtmlValue(bd.getDateLabel(), "en"));
                 }
 
                 ref.setMetadata(map);

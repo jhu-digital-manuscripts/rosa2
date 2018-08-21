@@ -483,7 +483,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
                 result.getMatches()[0].getId());
         
         assertNotNull(result.getCategories());
-
+System.err.println(result.getCategories());
         assertEquals(10, result.getCategories().size());
         
         result.getCategories().forEach(cat -> {
