@@ -244,7 +244,7 @@ public class ArchiveTool {
             String sheet_dir = cmdline.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
             aorTranscriptionChecker.run(args[1], true, sheet_dir, report);
             break;
-        case SEPARATE_TEI_METADATA:
+        case MIGRATE_TEI_METADATA:
             TEIDescriptionConverter.run(cmdline, config, report);
             break;
         }
@@ -293,7 +293,7 @@ public class ArchiveTool {
                 String sheet_dir = cmdline.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
                 aorTranscriptionChecker.run(args[1], false, sheet_dir, report);
                 break;
-            case SEPARATE_TEI_METADATA:
+            case MIGRATE_TEI_METADATA:
                 TEIDescriptionConverter.run(cmdline, config, report);
                 break;
             case GENERATE_ANNOTATION_MAP:

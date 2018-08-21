@@ -21,6 +21,8 @@ import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 
 /**
+ * Serialization format is a custom TEI profile.
+ * 
  * @see rosa.archive.model.BookMetadata
  */
 public class BookMetadataSerializer implements Serializer<BookMetadata> {
