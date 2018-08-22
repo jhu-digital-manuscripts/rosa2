@@ -124,7 +124,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     	{
 	        Query query = new Query(JHSearchField.MARGINALIA, "Quod");
 	        SearchResult result = service.search(query, null);
-	
+
 	        assertNotNull("Search result was NULL", result);
 	        assertEquals("Unexpected number of results found.", 5, result.getTotal());
     	}
@@ -483,7 +483,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
                 result.getMatches()[0].getId());
         
         assertNotNull(result.getCategories());
-System.err.println(result.getCategories());
+
         assertEquals(10, result.getCategories().size());
         
         result.getCategories().forEach(cat -> {
