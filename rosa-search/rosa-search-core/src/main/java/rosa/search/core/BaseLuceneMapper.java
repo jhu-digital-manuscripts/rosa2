@@ -255,7 +255,7 @@ public abstract class BaseLuceneMapper implements LuceneMapper {
             // Seldom used, just index as english
             return SearchFieldType.ENGLISH;
         default:
-            throw new IllegalArgumentException("Unknown language: " + lc);
+            return null;
         }
     }
 
