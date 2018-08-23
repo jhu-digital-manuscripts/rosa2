@@ -7,7 +7,8 @@ public interface ArchiveConstants {
     
     // AoR annotation schema and dtd
 
-    String annotationSchemaUrl = "http://www.livesandletters.ac.uk/schema/aor_20141118.xsd";
+//    String annotationSchemaUrl = "http://www.livesandletters.ac.uk/schema/aor_20141118.xsd";
+    String annotationSchemaUrl = "http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd";
 
     String TEI_SCHEMA_URL = "http://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_ms.xsd";
 
@@ -82,6 +83,8 @@ public interface ArchiveConstants {
     String LOCATIONS = "locations.csv";
 
     String BOOKS = "books.csv";
+
+    String ID_LOCATION_MAP = "id_locations.csv";
 
     // File extensions
 

@@ -1,7 +1,11 @@
 package rosa.archive.model;
 
+import rosa.archive.model.aor.AorLocation;
+
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * A collection of books stored in the archive.
@@ -25,6 +29,9 @@ public class BookCollection implements HasId, Serializable {
     private BookReferenceSheet booksRef;
 
     private CollectionMetadata metadata;
+
+    /** Map of IDs to locations in the collection */
+    private Map<String, AorLocation> annotationMap;
 
     /**
      * Create an empty book collection. Is not persisted.
@@ -174,42 +181,37 @@ public class BookCollection implements HasId, Serializable {
         return metadata != null ? metadata.getParents() : new String[0];
     }
 
+    public Map<String, AorLocation> getAnnotationMap() {
+        return annotationMap;
+    }
+
+    public void setAnnotationMap(Map<String, AorLocation> annotationMap) {
+        this.annotationMap = annotationMap;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         BookCollection that = (BookCollection) o;
-
-        if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (!Arrays.equals(books, that.books)) return false;
-        if (characterNames != null ? !characterNames.equals(that.characterNames) : that.characterNames != null)
-            return false;
-        if (illustrationTitles != null ? !illustrationTitles.equals(that.illustrationTitles) : that.illustrationTitles != null)
-            return false;
-        if (narrativeSections != null ? !narrativeSections.equals(that.narrativeSections) : that.narrativeSections != null)
-            return false;
-        if (checksums != null ? !checksums.equals(that.checksums) : that.checksums != null) return false;
-        if (missingImage != null ? !missingImage.equals(that.missingImage) : that.missingImage != null) return false;
-        if (peopleRef != null ? !peopleRef.equals(that.peopleRef) : that.peopleRef != null) return false;
-        if (locationsRef != null ? !locationsRef.equals(that.locationsRef) : that.locationsRef != null) return false;
-        if (booksRef != null ? !booksRef.equals(that.booksRef) : that.booksRef != null) return false;
-        return metadata != null ? metadata.equals(that.metadata) : that.metadata == null;
+        return Objects.equals(id, that.id) &&
+                Arrays.equals(books, that.books) &&
+                Objects.equals(characterNames, that.characterNames) &&
+                Objects.equals(illustrationTitles, that.illustrationTitles) &&
+                Objects.equals(narrativeSections, that.narrativeSections) &&
+                Objects.equals(checksums, that.checksums) &&
+                Objects.equals(missingImage, that.missingImage) &&
+                Objects.equals(peopleRef, that.peopleRef) &&
+                Objects.equals(locationsRef, that.locationsRef) &&
+                Objects.equals(booksRef, that.booksRef) &&
+                Objects.equals(metadata, that.metadata) &&
+                Objects.equals(annotationMap, that.annotationMap);
     }
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
+        int result = Objects.hash(id, characterNames, illustrationTitles, narrativeSections, checksums, missingImage, peopleRef, locationsRef, booksRef, metadata, annotationMap);
         result = 31 * result + Arrays.hashCode(books);
-        result = 31 * result + (characterNames != null ? characterNames.hashCode() : 0);
-        result = 31 * result + (illustrationTitles != null ? illustrationTitles.hashCode() : 0);
-        result = 31 * result + (narrativeSections != null ? narrativeSections.hashCode() : 0);
-        result = 31 * result + (checksums != null ? checksums.hashCode() : 0);
-        result = 31 * result + (missingImage != null ? missingImage.hashCode() : 0);
-        result = 31 * result + (peopleRef != null ? peopleRef.hashCode() : 0);
-        result = 31 * result + (locationsRef != null ? locationsRef.hashCode() : 0);
-        result = 31 * result + (booksRef != null ? booksRef.hashCode() : 0);
-        result = 31 * result + (metadata != null ? metadata.hashCode() : 0);
         return result;
     }
 
@@ -227,6 +229,7 @@ public class BookCollection implements HasId, Serializable {
                 ", locationsRef=" + locationsRef +
                 ", booksRef=" + booksRef +
                 ", metadata=" + metadata +
+                ", annotationMap=" + annotationMap +
                 '}';
     }
 }

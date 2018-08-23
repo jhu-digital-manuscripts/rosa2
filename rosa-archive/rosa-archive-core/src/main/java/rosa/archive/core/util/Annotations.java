@@ -14,7 +14,6 @@ import java.util.logging.Logger;
 public class Annotations implements AORAnnotatedPageConstants {
     private static final Logger logger = Logger.getLogger(Annotations.class.toString());
     private static final String ANNOTATION_ILLUSTRATION = "illustration";
-    private static final String ANNOTATION_ID_SEPARATOR = "_";
 
     /**
      * An annotation ID consists of the page on which the annotation lives, the type
@@ -26,7 +25,8 @@ public class Annotations implements AORAnnotatedPageConstants {
      * @return annotation ID
      */
     public static String annotationId(String page, String annotationType, int index) {
-        return page + ANNOTATION_ID_SEPARATOR + annotationType + ANNOTATION_ID_SEPARATOR + index;
+//        return page + ANNOTATION_ID_SEPARATOR + annotationType + ANNOTATION_ID_SEPARATOR + index;
+        return null;
     }
 
     /**

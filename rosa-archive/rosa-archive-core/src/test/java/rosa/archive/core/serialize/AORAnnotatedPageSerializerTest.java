@@ -6,7 +6,9 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -82,27 +84,31 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals("acommodato", e.getAmendedText());
 
         // <mark name="plus_sign" method="pen" place="intext" language="IT" text="Arguto"/>
-        Mark m1 = new Mark("FolgersHa2.036r.tif_mark_35", "Arguto", "plus_sign", "pen", "IT", Location.INTEXT);
+        Mark m1 = new Mark(null, "Arguto", "plus_sign", "pen", "IT", Location.INTEXT);
+        m1.setGeneratedId(true);
         // <mark name="dash" method="pen" place="right_margin"/>
-        Mark m2 = new Mark("FolgersHa2.036r.tif_mark_2", "", "dash", "pen", "", Location.RIGHT_MARGIN);
+        Mark m2 = new Mark(null, "", "dash", "pen", "", Location.RIGHT_MARGIN);
+        m2.setGeneratedId(true);
         // fake mark
-        Mark m3 = new Mark("id", "fake text", "moo", "method", "lang", null);
+        Mark m3 = new Mark(null, "fake text", "moo", "method", "lang", null);
 
         assertTrue(page.getMarks().contains(m1));
         assertTrue(page.getMarks().contains(m2));
         assertFalse(page.getMarks().contains(m3));
 
         // <symbol name="Sun" place="left_margin"/>
-        Symbol s1 = new Symbol("FolgersHa2.036r.tif_symbol_0", "", "Sun", "", Location.LEFT_MARGIN);
+        Symbol s1 = new Symbol(null, "", "Sun", "", Location.LEFT_MARGIN);
+        s1.setGeneratedId(true);
         // not present in document
-        Symbol s2 = new Symbol("id", "fake text", "moo method", "lang", null);
+        Symbol s2 = new Symbol(null, "fake text", "moo method", "lang", null);
         assertTrue(page.getSymbols().contains(s1));
         assertFalse(page.getSymbols().contains(s2));
 
         // <underline method="pen" type="straight" language="IT" text="Arguto, &amp;"/>
-        Underline u1 = new Underline("FolgersHa2.036r.tif_underline_25", "Arguto, &", "pen", "straight", "IT");
+        Underline u1 = new Underline(null, "Arguto, &", "pen", "straight", "IT");
+        u1.setGeneratedId(true);
         // fake underline
-        Underline u2 = new Underline("id", "fake text", "moomethod", "asdf", "lang");
+        Underline u2 = new Underline(null, "fake text", "moomethod", "asdf", "lang");
         assertTrue(page.getUnderlines().contains(u1));
         assertFalse(page.getUnderlines().contains(u2));
     }
@@ -152,31 +158,6 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         assertEquals(0, errata);
         assertEquals(0, numerals);
     }
-
-//    /**
-//     * Test the serializer's reading and writing functions together. Given a known AnnotationPage
-//     * object, the serializer is used to write the object and to read back the written object.
-//     * The resulting object MUST be equal to the original object.
-//     *
-//     * @throws Exception reading/writing can both throw IOExceptions
-//     */
-//    @Test
-//    @Override
-//    public void roundTripTest() throws IOException {
-//        AnnotatedPage page = createPage();
-//        ByteArrayOutputStream out = new ByteArrayOutputStream();
-//
-//        serializer.write(page, out);
-//
-//        ByteArrayInputStream in = new ByteArrayInputStream(out.toByteArray());
-//        List<String> errors = new ArrayList<>();
-//
-//        AnnotatedPage read = serializer.read(in, errors);
-//
-//        assertTrue("Unexpected errors found while deserializing.", errors.isEmpty());
-//        assertNotNull("Deserialized page is NULL.", read);
-//        assertTrue("Deserialized page not equal to original page.", page.equals(read));
-//    }
 
     // Note IDs of annotations take special values based of Page#, annotation type, and annotation order
     @Override
@@ -229,19 +210,61 @@ public class AORAnnotatedPageSerializerTest extends BaseSerializerTest<Annotated
         return page;
     }
 
-//    private Document getDocument(String path) throws IOException {
-//        try {
-//            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-//            InputStream in = getResourceAsStream(path);
-//
-//            Document doc = builder.parse(in);
-//            in.close();
-//
-//            doc.normalizeDocument();
-//            return doc;
-//        } catch (ParserConfigurationException | SAXException e) {
-//            throw new IOException("Failed to load XML.", e);
-//        }
-//    }
+    /**
+     * Test that the AOR parser expands XML entities based on the DTD definitions.
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void resolvingXmlEntitiesTest() throws Exception {
+        String data = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+                "<!DOCTYPE transcription SYSTEM \"http://www.livesandletters.ac.uk/schema/aor_20141023.dtd\">\n" +
+                "<transcription xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd\">\n" +
+                "    <page filename=\"BLC120b4.016r.tif\" pagination=\"16\" reader=\"John Dee\"/>\n" +
+                "    <annotation>\n" +
+                "        <marginalia hand=\"Italian\" method=\"pen\">\n" +
+                "            <language ident=\"EN\">\n" +
+                "                <position place=\"tail\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>&Sun; - 1/2</marginalia_text>\n" +        // Entity here :: &Sun;  -->   ☉
+                "                    <symbol_in_text name=\"Sun\"/>\n" +                        //   - Defined only in DTD
+                "                </position>\n" +
+                "            </language>\n" +
+                "        </marginalia>\n" +
+                "        <marginalia hand=\"Italian\" anchor_text=\"Adum&aacute;\" method=\"pen\">\n" +         // á
+                "            <language ident=\"LA\">\n" +
+                "                <position place=\"right_margin\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>\n" +
+                "                        Nota quod dicat Adum&aacute;, tantu[m], no[n] adiecta particula illa Voarch[adumia]:\n" +
+                "                    </marginalia_text>\n" +
+                "                    <person name=\"Adum&aacute;\"/>\n" +
+                "                    <book title=\"Voarchadumia\"/>\n" +
+                "                </position>\n" +
+                "            </language>\n" +
+                "            <translation>Note what Aduma says, only that particular was not aimed at Voarchadumia:</translation>\n" +
+                "        </marginalia>\n" +
+                "    </annotation>\n" +
+                "</transcription>";
+
+        List<String> errors = new ArrayList<>();
+        InputStream in = new ByteArrayInputStream(data.getBytes("UTF-8"));
+
+        AnnotatedPage obj = serializer.read(in, errors);
+
+        assertNotNull(obj);
+        assertTrue(errors.isEmpty());
+
+        assertFalse(obj.getMarginalia().isEmpty());
+        assertEquals(2, obj.getMarginalia().size());
+
+        Position pos = obj.getMarginalia().get(0).getLanguages().get(0).getPositions().get(0);
+        // Marginalia position must have text and symbol
+        String text = pos.getTexts().get(0);
+        assertTrue("Text should contain entity \"&Sun;\" or its resolved form \"☉\"\n\tInstead found \"" + text + "\"",
+                text.contains("☉") || text.contains("&Sun;"));
+
+        String otherPerson = obj.getMarginalia().get(1).getLanguages().get(0).getPositions().get(0).getPeople().get(0);
+        assertTrue("Name of person should contain \"á\", instead found \"" + otherPerson + '"',
+                otherPerson.contains("á"));
+    }
 
 }

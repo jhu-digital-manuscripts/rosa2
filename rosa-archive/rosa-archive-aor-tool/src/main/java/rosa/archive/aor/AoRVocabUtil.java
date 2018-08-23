@@ -27,6 +27,9 @@ public class AoRVocabUtil {
 
     // Turn text into words and punctuation
     public static String[] parse_text(String text) {
+        if (text == null) {
+            return new String[0];
+        }
     	// Remove brackets used for abbreviations
     	text = text.replace("[", "").replace("]", "");
     	

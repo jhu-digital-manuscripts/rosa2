@@ -1,6 +1,9 @@
 package rosa.archive.core.util;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.ls.DOMImplementationLS;
+import org.w3c.dom.ls.LSSerializer;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -130,5 +133,18 @@ public class XMLUtil {
         } catch (TransformerException e) {
             return;
         }
+    }
+
+    /**
+     * Write out an XML node, useful for debugging.
+     *
+     * @param node XML Node
+     * @return String of node
+     */
+    public static String write(Node node) {
+        DOMImplementationLS lsImpl = (DOMImplementationLS)node.getOwnerDocument().getImplementation().getFeature("LS", "3.0");
+        LSSerializer serializer = lsImpl.createLSSerializer();
+        serializer.getDomConfig().setParameter("xml-declaration", false); //by default its true, so set it to false to get String without xml-declaration
+        return serializer.writeToString(node);
     }
 }

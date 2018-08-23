@@ -38,6 +38,7 @@ public class ArchiveTool {
     private final Store store;
     private final PrintStream report;
     private AORTranscriptionChecker aorTranscriptionChecker;
+    private AORIdMapper idMapper;
 
     public ArchiveTool(Store store, ToolConfig config) {
         this(store, config, System.out);
@@ -173,6 +174,7 @@ public class ArchiveTool {
 
         ArchiveTool tool = new ArchiveTool(store, config);
         tool.aorTranscriptionChecker = injector.getInstance(AORTranscriptionChecker.class);
+        tool.idMapper = new AORIdMapper(base, tool.report);
 
         tool.run(cmdline, cmd);
     }
@@ -293,6 +295,9 @@ public class ArchiveTool {
                 break;
             case MIGRATE_TEI_METADATA:
                 TEIDescriptionConverter.run(cmdline, config, report);
+                break;
+            case GENERATE_ANNOTATION_MAP:
+                idMapper.run(args[1]);
                 break;
             default:
                 break;

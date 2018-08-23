@@ -6,11 +6,19 @@ import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookCollection;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
     private static final ArchiveNameParser parser = new ArchiveNameParser();
@@ -28,7 +36,7 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
     /**
      * Rename all AoR transcriptions according to a file map.
      *
-     * @throws IOException
+     * @throws IOException .
      */
     @Test
     public void renameTranscriptionsNormalTest() throws IOException {
@@ -48,34 +56,9 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
     }
 
     /**
-     * Rename all AoR transcriptions according to a file map, then successfully
-     * rename all AoR transcriptions back to their original names.
-     *
-     * @throws IOException .
-     */
-//    @Test
-//    public void renameTranscriptionsReverseTest() throws IOException {
-//        generateFileMap(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, "BOOK_ID", true, true, 10, 10, 1);
-//
-//        store.renameTranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, false, errors);
-//        assertTrue("Unexpected errors found.", errors.isEmpty());
-//
-//        store.renameTranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, true, errors);
-//        assertTrue("Unexpected errors found.", errors.isEmpty());
-//
-//        List<String> names = base.getByteStreamGroup(VALID_COLLECTION).getByteStreamGroup(VALID_BOOK_FOLGERSHA2)
-//                .listByteStreamNames();
-//        checkPages("FolgersHa2", names);
-//
-//        assertTrue(names.contains("FolgersHa2.037v.xml"));
-//        assertFalse(names.contains("FolgersHa2.aor.frontmatter.flyleaf.001v.xml"));
-//        checkWithBookChecker(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
-//    }
-
-    /**
      * Does not rename any items due to duplicate values in the file map.
      *
-     * @throws IOException
+     * @throws IOException .
      */
     @Test
     public void dontRenameWithBadFileMap() throws IOException {
@@ -84,6 +67,50 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
         store.renameTranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, false, errors);
         assertFalse("Errors should occur, but were not encountered.", errors.isEmpty());
         checkWithBookChecker(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
+    }
+
+    /**
+     * Here, we want to rename all files that we can. One file in the middle will contain an XML
+     * syntax error, making our tools unable to parse it. Make sure that all other files are
+     * renamed.
+     *
+     * @throws Exception .
+     */
+    @Test
+    public void renameAllButUnparsableFileTest() throws Exception {
+        final String BAD_FILE = "FolgersHa2.aor.022r.xml";
+        generateFileMap(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, "Moo_ID", false, false, 5, 5, 1);
+
+        // Append some stuff to the file to make it invalid XML
+        Path badPath = getBookPath(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2).resolve(BAD_FILE);
+        Files.write(badPath, "Bad moo".getBytes("UTF-8"), StandardOpenOption.APPEND);
+
+        store.renameTranscriptions(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2, false, errors);
+        assertEquals(1, errors.size());
+        assertEquals("Failed to read XML transcription. FolgersHa2.aor.022r.xml", errors.get(0));
+
+        List<String> names = base.getByteStreamGroup(VALID_COLLECTION).getByteStreamGroup(VALID_BOOK_FOLGERSHA2)
+                .listByteStreamNames().stream()
+                .filter(n -> n.endsWith(".xml") && !n.contains("description"))
+                .collect(Collectors.toList());
+
+        assertEquals(
+                "Expecting all files to be renamed except one.",
+                names.size() - 1,
+                names.stream().filter(name -> name.startsWith("Moo_ID")).count()
+        );
+
+        names.stream().filter(name -> name.startsWith("Moo_ID")).forEach(name -> {
+            Path p = getBookPath(VALID_COLLECTION, VALID_BOOK_FOLGERSHA2).resolve(name);
+            // Make sure the renamed XML file has content
+            try {
+                List<String> lines = Files.readAllLines(p, Charset.forName("UTF-8"));
+                assertNotNull(lines);
+                assertFalse(lines.isEmpty());
+            } catch (Exception e) {
+                fail("Failed to read back transcription file. " + e.getMessage());
+            }
+        });
     }
 
     private boolean checkWithBookChecker(String collection, String book) throws IOException {

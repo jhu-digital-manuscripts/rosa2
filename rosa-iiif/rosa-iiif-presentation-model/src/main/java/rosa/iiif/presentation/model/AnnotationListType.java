@@ -13,7 +13,13 @@ public enum AnnotationListType {
     MARGINALIA,
     NUMBERAL,
     ERRATA,
-    MARK;
+    MARK,
+    GRAPH,
+    TABLE,
+    DRAWING,
+    CALCULATION,
+    LINKS
+    ;
 
     /**
      * @param name name to parse

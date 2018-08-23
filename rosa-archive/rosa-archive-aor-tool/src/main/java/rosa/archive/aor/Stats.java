@@ -1,5 +1,6 @@
 package rosa.archive.aor;
 
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -7,7 +8,9 @@ import java.util.regex.Pattern;
  * Per page or book stats.
  */
 public class Stats implements Comparable<Stats> {
-    private static final Pattern MANUSCRIPT_PATTERN = Pattern.compile("^(.+\\.)(\\d+)(r|v|R|V)$");
+//    private static final Pattern MANUSCRIPT_PATTERN = Pattern.compile("^(.+\\.)(\\d+)(r|v|R|V)$");
+    private static final Pattern MANUSCRIPT_PATTERN2 = Pattern.compile("^(.+\\.)?([a-zA-Z])*(\\d+)([rvRV])$");
+    private static final Pattern INSERT_PATTERN1 = Pattern.compile("^(\\d+)_(\\d+)$");
 
     final String id;
     int marginalia;
@@ -19,7 +22,15 @@ public class Stats implements Comparable<Stats> {
     int symbols;
     int symbol_words;
     int drawings;
+    int drawing_words;
     int numerals;
+    int calculations;
+    int graphs;
+    int graph_words;
+    int tables;
+    int table_words;
+    int phys_links;
+
     int books;
     int people;
     int locations;
@@ -28,8 +39,12 @@ public class Stats implements Comparable<Stats> {
     Vocab underlines_vocab;
     Vocab marks_vocab;
     Vocab symbols_vocab;
+    Vocab drawing_vocab;
+    Vocab graph_vocab;
+    Vocab table_vocab;
 
     private Matcher manuscriptMatcher;
+    private Matcher insertMatcher;
 
     public Stats(String id) {
         this.id = id;
@@ -37,8 +52,12 @@ public class Stats implements Comparable<Stats> {
         this.underlines_vocab = new Vocab();
         this.marks_vocab = new Vocab();
         this.symbols_vocab = new Vocab();
+        this.drawing_vocab = new Vocab();
+        this.graph_vocab = new Vocab();
+        this.table_vocab = new Vocab();
 
-        this.manuscriptMatcher = MANUSCRIPT_PATTERN.matcher(id);
+        this.manuscriptMatcher = MANUSCRIPT_PATTERN2.matcher(id);
+        this.insertMatcher = INSERT_PATTERN1.matcher(id);
     }
 
     public void add(Stats s) {
@@ -51,7 +70,15 @@ public class Stats implements Comparable<Stats> {
         symbols += s.symbols;
         symbol_words += s.symbol_words;
         drawings += s.drawings;
+        drawing_words += s.drawing_words;
         numerals += s.numerals;
+        calculations += s.calculations;
+        graphs += s.graphs;
+        graph_words += s.graph_words;
+        tables += s.tables;
+        table_words += s.table_words;
+        phys_links += s.phys_links;
+
         books += s.books;
         people += s.people;
         locations += s.locations;
@@ -60,6 +87,9 @@ public class Stats implements Comparable<Stats> {
         underlines_vocab.update(s.underlines_vocab);
         marks_vocab.update(s.marks_vocab);
         symbols_vocab.update(s.symbols_vocab);
+        drawing_vocab.update(s.drawing_vocab);
+        graph_vocab.update(s.graph_vocab);
+        table_vocab.update(s.table_vocab);
     }
 
     /**
@@ -67,22 +97,38 @@ public class Stats implements Comparable<Stats> {
      * its ID. Return -1 if the page ID format is unknown or this Stats refers to a
      * book instead of a page.
      *
+     * Inserts will not be assigned an index. There are other edge cases such as
+     * odd names for front/end matter pages which are ignored here. Those cases
+     * will simply not be assigned an index.
+     *
      * @return index of page in a book, or -1 if index is of unknown form
      *         or this refers to a book.
      */
     public int pageIndex() {
-        if (id.contains("_") && containsDigits(id.substring(id.lastIndexOf('_')))) {
-            // Castiglione, Castiglione_Newberry, and Frontinus
-            return Integer.parseInt(id.substring(id.lastIndexOf('_') + 1, id.length()));
-        } else if (manuscriptMatcher.find()) {
-            int index = Integer.parseInt(manuscriptMatcher.group(2)) * 2;
-            if (manuscriptMatcher.group(3).equals("r") || manuscriptMatcher.group(3).equals("R")) {
+        String test = id;
+
+        if (insertMatcher.find()) {
+            return -1;
+        }
+
+        if (test.contains("_") && containsDigits(test.substring(test.lastIndexOf('_')))) { // EX: Castiglione, Castiglione_Newberry, Frontinus, etc
+            test = test.substring(test.lastIndexOf('_') + 1, test.length());
+            manuscriptMatcher = MANUSCRIPT_PATTERN2.matcher(test);
+        } else if (test.contains("-") && containsDigits(test.substring(test.lastIndexOf('-')))) { // EX: De navigatione
+            test = test.substring(test.lastIndexOf('-') + 1, test.length());
+            manuscriptMatcher = MANUSCRIPT_PATTERN2.matcher(test);
+        }
+
+        if (manuscriptMatcher.find()) {
+            int index = Integer.parseInt(manuscriptMatcher.group(3)) * 2;
+
+            if (manuscriptMatcher.group(4).equals("r") || manuscriptMatcher.group(4).equals("R")) {
                 index --;
             }
             return index;
         } else {
             try {
-                return Integer.parseInt(id);
+                return Integer.parseInt(test);
             } catch (NumberFormatException e) {
                 return -1;
             }
@@ -99,11 +145,11 @@ public class Stats implements Comparable<Stats> {
     }
 
     public int totalAnnotations() {
-        return marginalia + underlines + marks + symbols + drawings + numerals;
+        return marginalia + underlines + marks + symbols + drawings + numerals + calculations + graphs + tables;
     }
 
     public int totalWords() {
-        return marginalia_words + underline_words + mark_words + symbol_words;
+        return marginalia_words + underline_words + mark_words + symbol_words + drawing_words + graph_words + table_words;
     }
 
     @Override
@@ -115,45 +161,43 @@ public class Stats implements Comparable<Stats> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         Stats stats = (Stats) o;
-
-        if (marginalia != stats.marginalia) return false;
-        if (marginalia_words != stats.marginalia_words) return false;
-        if (underlines != stats.underlines) return false;
-        if (underline_words != stats.underline_words) return false;
-        if (marks != stats.marks) return false;
-        if (mark_words != stats.mark_words) return false;
-        if (symbols != stats.symbols) return false;
-        if (symbol_words != stats.symbol_words) return false;
-        if (drawings != stats.drawings) return false;
-        if (numerals != stats.numerals) return false;
-        if (books != stats.books) return false;
-        if (people != stats.people) return false;
-        if (locations != stats.locations) return false;
-        if (id != null ? !id.equals(stats.id) : stats.id != null) return false;
-        return !(marginalia_vocab != null ? !marginalia_vocab.equals(stats.marginalia_vocab) : stats.marginalia_vocab != null);
-
+        return marginalia == stats.marginalia &&
+                marginalia_words == stats.marginalia_words &&
+                underlines == stats.underlines &&
+                underline_words == stats.underline_words &&
+                marks == stats.marks &&
+                mark_words == stats.mark_words &&
+                symbols == stats.symbols &&
+                symbol_words == stats.symbol_words &&
+                drawings == stats.drawings &&
+                drawing_words == stats.drawing_words &&
+                numerals == stats.numerals &&
+                calculations == stats.calculations &&
+                graphs == stats.graphs &&
+                graph_words == stats.graph_words &&
+                tables == stats.tables &&
+                table_words == stats.table_words &&
+                phys_links == stats.phys_links &&
+                books == stats.books &&
+                people == stats.people &&
+                locations == stats.locations &&
+                Objects.equals(id, stats.id) &&
+                Objects.equals(marginalia_vocab, stats.marginalia_vocab) &&
+                Objects.equals(underlines_vocab, stats.underlines_vocab) &&
+                Objects.equals(marks_vocab, stats.marks_vocab) &&
+                Objects.equals(symbols_vocab, stats.symbols_vocab) &&
+                Objects.equals(drawing_vocab, stats.drawing_vocab) &&
+                Objects.equals(graph_vocab, stats.graph_vocab) &&
+                Objects.equals(table_vocab, stats.table_vocab);
     }
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + marginalia;
-        result = 31 * result + marginalia_words;
-        result = 31 * result + underlines;
-        result = 31 * result + underline_words;
-        result = 31 * result + marks;
-        result = 31 * result + mark_words;
-        result = 31 * result + symbols;
-        result = 31 * result + symbol_words;
-        result = 31 * result + drawings;
-        result = 31 * result + numerals;
-        result = 31 * result + books;
-        result = 31 * result + people;
-        result = 31 * result + locations;
-        result = 31 * result + (marginalia_vocab != null ? marginalia_vocab.hashCode() : 0);
-        return result;
+        return Objects.hash(id, marginalia, marginalia_words, underlines, underline_words, marks, mark_words, symbols,
+                symbol_words, drawings, drawing_words, numerals, calculations, graphs, graph_words, tables, table_words,
+                phys_links, books, people, locations, marginalia_vocab, underlines_vocab, marks_vocab, symbols_vocab,
+                drawing_vocab, graph_vocab, table_vocab);
     }
 
     @Override
@@ -169,11 +213,24 @@ public class Stats implements Comparable<Stats> {
                 ", symbols=" + symbols +
                 ", symbol_words=" + symbol_words +
                 ", drawings=" + drawings +
+                ", drawing_words=" + drawing_words +
                 ", numerals=" + numerals +
+                ", calculations=" + calculations +
+                ", graphs=" + graphs +
+                ", graph_words=" + graph_words +
+                ", tables=" + tables +
+                ", table_words=" + table_words +
+                ", phys_links=" + phys_links +
                 ", books=" + books +
                 ", people=" + people +
                 ", locations=" + locations +
                 ", marginalia_vocab=" + marginalia_vocab +
+                ", underlines_vocab=" + underlines_vocab +
+                ", marks_vocab=" + marks_vocab +
+                ", symbols_vocab=" + symbols_vocab +
+                ", drawing_vocab=" + drawing_vocab +
+                ", graph_vocab=" + graph_vocab +
+                ", table_vocab=" + table_vocab +
                 '}';
     }
 }

@@ -67,7 +67,8 @@ public class ModelEqualsTest {
     
     @Test
     public void testReference() {
-        EqualsVerifier.forClass(Reference.class).allFieldsShouldBeUsed()
+        EqualsVerifier.forClass(Reference.class).allFieldsShouldBeUsed().withRedefinedSuperclass()
+                .usingGetClass()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
     }
     
@@ -134,6 +135,7 @@ public class ModelEqualsTest {
     @Test
     public void testImage() {
         EqualsVerifier.forClass(Image.class).allFieldsShouldBeUsed()
+                .usingGetClass()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
     }
 

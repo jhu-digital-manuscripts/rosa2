@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT transcription (page, annotation)>
+<!ELEMENT page EMPTY>
+	<!ATTLIST page filename CDATA #REQUIRED>
+	<!ATTLIST page pagination CDATA #IMPLIED>
+	<!ATTLIST page signature CDATA #IMPLIED>
+	<!ATTLIST page reader CDATA #REQUIRED>
+	<!ATTLIST page origin (inserted) #IMPLIED>
+	<!ATTLIST page status (floating|fixed) #IMPLIED>
+	<!ATTLIST page host_page CDATA #IMPLIED>
+	<!ATTLIST page related_page CDATA #IMPLIED>
+<!ELEMENT annotation (marginalia*, underline*, symbol*, mark*, numeral*, errata*, drawing*, calculation*, graph*, table*, physical_link)>	
+	<!ELEMENT marginalia (language*, translation?)>
+	<!ATTLIST marginalia hand (English_secretary|Italian|typescript) #REQUIRED>
+	<!ATTLIST marginalia method (pen|pencil|typewriter) #IMPLIED>
+	<!ATTLIST marginalia id CDATA #IMPLIED>	
+	<!ATTLIST marginalia marginalia_continues_to CDATA #IMPLIED>
+	<!ATTLIST marginalia marginalia_continues_from CDATA #IMPLIED>
+	<!ATTLIST marginalia marginalia_to_transcription CDATA #IMPLIED>
+	<!ATTLIST marginalia marginalia_from_transcription CDATA #IMPLIED>
+	<!ATTLIST marginalia book_id CDATA #IMPLIED>
+	<!ATTLIST marginalia internal_link CDATA #IMPLIED>
+	<!ATTLIST marginalia date CDATA #IMPLIED>
+	<!ATTLIST marginalia other_reader CDATA #IMPLIED>
+	<!ATTLIST marginalia topic (Law|Astronomy|Warfare|Rhetoric) #IMPLIED>
+	<!ATTLIST marginalia anchor_text CDATA #IMPLIED>
+	 	<!ELEMENT language (position*)>
+			<!ATTLIST language ident (EN|EL|FR|IT|LA|ES|DE|CY) #REQUIRED> 
+				<!ELEMENT position (marginalia_text*, marginalia_symbol*, person*, book*, location*, X-ref*, emphasis*, internal_ref*)>
+					<!ATTLIST position place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+					<!ATTLIST position book_orientation	(0|90|180|270) #REQUIRED>
+						<!ELEMENT marginalia_text (#PCDATA|marginalia_ref)*>
+						<!ELEMENT marginalia_ref (#PCDATA)>
+						      <!ATTLIST marginalia_ref id CDATA #REQUIRED>
+						      <!ATTLIST marginalia_ref filename CDATA #REQUIRED>
+						      <!ATTLIST marginalia_ref book_id CDATA #REQUIRED>
+						<!ELEMENT marginalia_symbol EMPTY>
+						    <!ATTLIST marginalia_symbol name (Asterisk|Bisected_circle|Crown|JC|HT| Hieroglyphic_Monad|LL|Mars|Mercury|Moon|Opposite_planets|Salt|Saturn|Square|SS|Sulfur|Sun|Venus) #REQUIRED>  
+						<!ELEMENT person EMPTY>
+							<!ATTLIST person name CDATA #REQUIRED>
+						<!ELEMENT book EMPTY>
+							<!ATTLIST book title CDATA #REQUIRED>
+						<!ELEMENT location EMPTY>
+							<!ATTLIST location name CDATA #REQUIRED>
+						<!ELEMENT X-ref EMPTY>
+							<!ATTLIST X-ref person CDATA #REQUIRED>
+							<!ATTLIST X-ref book_title CDATA #REQUIRED>
+							<!ATTLIST X-ref language (EN|EL|FR|IT|LA|ES|DE|CY) #IMPLIED>
+							<!ATTLIST X-ref text CDATA #IMPLIED>
+						<!ELEMENT emphasis EMPTY> 
+							<!ATTLIST emphasis method (chalk|pen) #REQUIRED>
+							<!ATTLIST emphasis type (straight|curved|dotted|double) #REQUIRED>
+							<!ATTLIST emphasis text CDATA #IMPLIED>
+						<!ELEMENT internal_ref (target+)> 
+	                       <!ATTLIST internal_ref text CDATA #IMPLIED>
+	                       <!ATTLIST internal_ref anchor_prefix CDATA #IMPLIED>
+	                       <!ATTLIST internal_ref anchor_suffix CDATA #IMPLIED>
+	                       <!ATTLIST internal_ref anchor_text CDATA #IMPLIED>
+		                      <!ELEMENT target EMPTY>
+			                     <!ATTLIST target filename CDATA #IMPLIED >
+			                     <!ATTLIST target book_id CDATA #IMPLIED >
+			                     <!ATTLIST target ref CDATA #REQUIRED>
+			                     <!ATTLIST target text CDATA #REQUIRED>
+			                     <!ATTLIST target prefix CDATA #IMPLIED>
+			                     <!ATTLIST target suffix CDATA #IMPLIED>
+		<!ELEMENT translation (#PCDATA)>
+	<!ELEMENT underline EMPTY>
+		<!ATTLIST underline method (chalk|pen|scoring) #REQUIRED>
+		<!ATTLIST underline type (straight|curved|dotted|double|grid|triple) #REQUIRED>
+		<!ATTLIST underline language (EN|EL|FR|IT|LA|ES|DE|CY) #REQUIRED>
+		<!ATTLIST underline text CDATA #IMPLIED>
+		<!ATTLIST underline id CDATA #IMPLIED> <!--functions as ID-->
+		<!ATTLIST underline internal_ref CDATA #IMPLIED> <!--functions as IDREFS-->
+	<!ELEMENT symbol EMPTY>
+		<!ATTLIST symbol name (Asterisk|Bisected_circle|Crown|JC|Jupiter|HT| Hieroglyphic_Monad|LL|Mars|Mercury|Moon|Opposite_planets|Salt|Saturn|Square|SS|Sulfur|Sun|Venus) #REQUIRED>
+		<!ATTLIST symbol place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+		<!ATTLIST symbol language (EN|EL|FR|IT|LA|ES|DE|CY) #IMPLIED>
+		<!ATTLIST symbol text CDATA #IMPLIED>
+		<!ATTLIST symbol id CDATA #IMPLIED> <!--functions as ID-->
+		<!ATTLIST symbol internal_ref CDATA #IMPLIED> <!--functions as IDREFS-->
+	<!ELEMENT mark EMPTY>
+		<!ATTLIST mark name	(apostrophe|box|bracket|circumflex|colon|comma|dash|diacritic|dot|double_vertical_bar|equal_sign|est_mark|hash|horizontal_bar|page_break|pen_trial|plus_sign|quotation_mark|quattuorpunctus|scribble|section_sign|semicolon|slash|straight_quotation_mark|tick|tilde|triple_dash|tripunctus|vertical_bar|X_sign) #REQUIRED>
+		<!ATTLIST mark method (chalk|pen) #REQUIRED>
+		<!ATTLIST mark place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+		<!ATTLIST mark language (EN|EL|FR|IT|LA|ES|DE|CY) #IMPLIED>
+		<!ATTLIST mark text CDATA #IMPLIED>
+		<!ATTLIST mark id CDATA #IMPLIED> <!--functions as ID-->
+		<!ATTLIST mark internal_ref CDATA #IMPLIED> <!--functions as IDREFS-->
+	<!ELEMENT numeral (#PCDATA)>
+	    <!ATTLIST numeral place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+	    <!ATTLIST numeral language (EN|EL|FR|IT|LA|ES|DE|CY) #IMPLIED> <!--http://www.loc.gov/standards/iso639-2/php/code_list.php-->
+	    <!ATTLIST numeral text CDATA #IMPLIED>
+	    <!ATTLIST numeral id CDATA #IMPLIED> <!--functions as ID-->
+		<!ATTLIST numeral internal_ref CDATA #IMPLIED> <!--functions as IDREFS-->
+	<!ELEMENT errata EMPTY>
+	   <!ATTLIST errata language  (EN|EL|FR|IT|LA|ES|DE|CY) #REQUIRED>
+	   <!ATTLIST errata copytext CDATA #REQUIRED>
+	   <!ATTLIST errata amendedtext CDATA #REQUIRED>
+	   <!ATTLIST errata id CDATA #IMPLIED> <!--functions as ID-->
+	   <!ATTLIST errata internal_ref CDATA #IMPLIED> <!--functions as IDREFS-->        
+	<!ELEMENT drawing (drawing_text*, drawing_person*, drawing_book*, drawing_location*, drawing_symbol*, drawing_text_translation?)>
+	   <!ATTLIST drawing type (face|manicule|florilegium|crown|coat_of_arms|scientific_instrument|animal|canon) #REQUIRED>
+	   <!ATTLIST drawing book_orientation (0|90|180|270) #REQUIRED>
+	   <!ATTLIST drawing place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+	   <!ATTLIST drawing method (chalk|pen) #REQUIRED>
+	   <!ATTLIST drawing id CDATA #IMPLIED> <!--functions as ID-->
+	   <!ATTLIST drawing internal_link CDATA #IMPLIED> <!--functions as IDREFS-->
+	   <!ATTLIST drawing anchor_text CDATA #IMPLIED>   
+	       <!ELEMENT drawing_text (#PCDATA)>
+	           <!ATTLIST drawing_text hand (English_secretary|Italian|typescript) #REQUIRED>
+	           <!ATTLIST drawing_text language (EN|EL|FR|IT|LA|ES|DE|CY) #REQUIRED>
+	       <!ELEMENT drawing_person EMPTY>
+	           <!ATTLIST drawing_person name CDATA #REQUIRED>
+	       <!ELEMENT drawing_book EMPTY>
+	           <!ATTLIST drawing_book name CDATA #REQUIRED>
+	       <!ELEMENT drawing_location EMPTY>
+	           <!ATTLIST drawing_location name CDATA #REQUIRED>
+	       <!ELEMENT drawing_symbol EMPTY>
+	           <!ATTLIST drawing_symbol name CDATA #IMPLIED>
+	       <!ELEMENT drawing_text_translation (#PCDATA)>
+	<!ELEMENT calculation (#PCDATA|calculation_anchor)*>
+	   <!ATTLIST calculation type (arithmetic|measurement|logic|algebra|geometry|calculus) #REQUIRED>
+	   <!ATTLIST calculation book_orientation (0|90|180|270) #REQUIRED>
+	   <!ATTLIST calculation place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+	   <!ATTLIST calculation method (chalk|pen) #REQUIRED>
+	   <!ATTLIST calculation id CDATA #IMPLIED> <!--functions as ID-->
+		<!ATTLIST calculation internal_link CDATA #IMPLIED> <!--functions as IDREFS-->
+	       <!ELEMENT calculation_anchor (#PCDATA)>
+			 <!ATTLIST calculation_anchor data CDATA #IMPLIED>       
+	<!ELEMENT graph (node*, link*, graph_text*, graph_text_translation?)>
+	   <!ATTLIST graph type (genealogical_tree|ramus_tree) #REQUIRED> 
+	   <!ATTLIST graph book_orientation (0|90|180|270) #REQUIRED>
+	   <!ATTLIST graph place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+	   <!ATTLIST graph method (chalk|pen) #REQUIRED>
+	   <!ATTLIST graph id CDATA #IMPLIED> <!--functions as ID-->
+	   <!ATTLIST graph graph_continues_to CDATA #IMPLIED>
+	   <!ATTLIST graph graph_continues_from CDATA #IMPLIED>
+	   <!ATTLIST graph graph_to_transcription CDATA #IMPLIED>
+	   <!ATTLIST graph graph_from_transcription CDATA #IMPLIED>
+	      <!ELEMENT node (#PCDATA)>
+	       <!ATTLIST node id ID #REQUIRED>
+	       <!ATTLIST node person CDATA #IMPLIED>
+	       <!ATTLIST node anchor_text CDATA #IMPLIED>
+	     <!ELEMENT link EMPTY>
+	       <!ATTLIST link to IDREFS #REQUIRED>
+	       <!ATTLIST link from IDREFS #REQUIRED>
+	       <!ATTLIST link relationship (has_child|has_spouse) #REQUIRED>
+	      <!ELEMENT graph_text (note*, note_person*, note_book*, note_location*, note_symbol*)>
+	           <!ELEMENT note (#PCDATA)>
+	               <!ATTLIST note id ID #IMPLIED>
+	               <!ATTLIST note hand (English_secretary|Italian|typescript) #REQUIRED>
+	               <!ATTLIST note language (EN|EL|FR|IT|LA|ES|DE|CY) #REQUIRED>
+	               <!ATTLIST note internal_link IDREFS #IMPLIED>
+	               <!ATTLIST note anchor_text CDATA #IMPLIED>
+	          <!ELEMENT note_symbol EMPTY>
+	               <!ATTLIST note_symbol name CDATA #REQUIRED>
+		      <!ELEMENT note_person EMPTY>
+				  <!ATTLIST note_person name CDATA #REQUIRED>
+			  <!ELEMENT note_book EMPTY>
+				  <!ATTLIST note_book title CDATA #REQUIRED>
+			  <!ELEMENT note_location EMPTY>
+				  <!ATTLIST note_location name CDATA #REQUIRED>
+	          <!ELEMENT graph_text_translation (#PCDATA)>
+	<!ELEMENT table (tr*, table_text*, table_person*, table_book*, table_location*, table_symbol*, table_text_translation?)> 
+	   <!ATTLIST table type (astrological_chart|standard_table) #REQUIRED>
+	   <!ATTLIST table place (head|tail|left_margin|right_margin|intext|full_page) #REQUIRED>
+	   <!ATTLIST table id CDATA #IMPLIED> <!--functions as ID-->
+	   <!ATTLIST table internal_link CDATA #IMPLIED> <!--functions as IDREFS-->
+       <!ATTLIST table aggregated_information CDATA #IMPLIED>
+	       <!ELEMENT tr (th*, td*)>
+	           <!ELEMENT th (#PCDATA)>
+	             <!ATTLIST th label CDATA #IMPLIED>  
+			     <!ATTLIST th anchor_text CDATA #IMPLIED>
+			     <!ATTLIST th anchor_data CDATA #IMPLIED>  
+		      <!ELEMENT td (#PCDATA)>
+			     <!ATTLIST td anchor_text CDATA #IMPLIED>
+			     <!ATTLIST td anchor_data CDATA #IMPLIED>   
+	         <!ELEMENT table_text (#PCDATA)>
+	           <!ATTLIST table_text hand (English_secretary|Italian|typescript) #REQUIRED>
+	           <!ATTLIST table_text language_ident (EN|EL|FR|IT|LA|ES|DE|CY) #REQUIRED>
+	           <!ATTLIST table_text anchor_text CDATA #IMPLIED>
+	         <!ELEMENT table_person EMPTY>
+	           <!ATTLIST table_person name CDATA #IMPLIED>
+	       <!ELEMENT table_book EMPTY>
+	           <!ATTLIST table_book name CDATA #IMPLIED>
+	       <!ELEMENT table_location EMPTY>
+	           <!ATTLIST table_location name CDATA #IMPLIED>
+	       <!ELEMENT table_symbol EMPTY>
+	           <!ATTLIST table_symbol name CDATA #IMPLIED>  
+	       <!ELEMENT table_text_translation (#PCDATA)>
+	  <!ELEMENT physical_link (marginal_annotation*, relation*)>
+	       <!ELEMENT marginal_annotation EMPTY>
+   	            <!ATTLIST marginal_annotation idref CDATA #REQUIRED>
+	               <!ELEMENT relation EMPTY>
+   	                <!ATTLIST relation from CDATA #REQUIRED>
+   	                <!ATTLIST relation to CDATA #REQUIRED>
+   	                <!ATTLIST relation type (directed|undirected) #REQUIRED>

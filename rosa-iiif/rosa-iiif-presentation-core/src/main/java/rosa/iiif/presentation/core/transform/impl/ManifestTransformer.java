@@ -120,7 +120,7 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
     }
 
     /**
-     * Handle the book's structured metadata and manifest it into Manifest bd.
+     * Handle the book's structured metadata and manifest it into Manifest metadata.
      *
      * @param book book
      * @param languages languages available
@@ -176,6 +176,15 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
             if (bd.getMaterial() != null) {
                 map.put("material", new HtmlValue(bd.getMaterial(), lang));
             }
+
+            if (bd.getReaders().length > 0) {
+                map.put("reader", new HtmlValue(bd.getReaders()[0], lang));
+            }
+            if (bd.getAuthors().length > 0) {
+                map.put("author", new HtmlValue(bd.getAuthors()[0], lang));
+            }
+            
+
 
             // TODO book texts
         }

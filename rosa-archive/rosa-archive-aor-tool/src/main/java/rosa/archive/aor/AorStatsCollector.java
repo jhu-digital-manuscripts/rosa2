@@ -13,6 +13,8 @@ import java.util.Map;
 
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Graph;
+import rosa.archive.model.aor.GraphText;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
@@ -95,23 +97,44 @@ public class AorStatsCollector {
     
     
     private void update_freq(AnnotatedPage ap) {
+        // Update from Marginalia
         for (Marginalia marg : ap.getMarginalia()) {
             for (MarginaliaLanguage lang : marg.getLanguages()) {
                 for (Position pos : lang.getPositions()) {
-                    
                     update_freq(books_freq, pos.getBooks());
                     update_freq(people_freq, pos.getPeople());
                     update_freq(locs_freq, pos.getLocations());
                 }
             }
         }
+
+        // Update from Graphs
+        for (Graph g : ap.getGraphs()) {
+            for (GraphText t : g.getGraphTexts()) {
+                update_freq(books_freq, t.getBooks());
+                update_freq(people_freq, t.getPeople());
+                update_freq(locs_freq, t.getLocations());
+            }
+        }
+
+        // Update from Drawings
+        ap.getDrawings().forEach(drawing -> {
+            update_freq(books_freq, drawing.getBooks());
+            update_freq(people_freq, drawing.getPeople());
+            update_freq(locs_freq, drawing.getLocations());
+        });
+
+        // Update from Tables
+        ap.getTables().forEach(t -> {
+            update_freq(books_freq, t.getBooks());
+            update_freq(people_freq, t.getPeople());
+            update_freq(locs_freq, t.getLocations());
+        });
     }
     
 
     private void update_freq(Map<String, Integer> freq, List<String> items) {
-        items.forEach(i -> {
-            freq.put(i, freq.getOrDefault(i, 0) + 1); 
-        });
+        items.forEach(i -> freq.put(i, freq.getOrDefault(i, 0) + 1));
     }
 
     public void writeBookStats(Path output_dir) throws IOException {
@@ -179,40 +202,42 @@ public class AorStatsCollector {
 
         out.write(String.valueOf(s.marginalia));
         out.write(',');
-
         out.write(String.valueOf(s.marginalia_words));
         out.write(',');
-
         out.write(String.valueOf(s.underlines));
         out.write(',');
-
         out.write(String.valueOf(s.underline_words));
         out.write(',');
-
         out.write(String.valueOf(s.marks));
         out.write(',');
-
         out.write(String.valueOf(s.mark_words));
         out.write(',');
-
         out.write(String.valueOf(s.symbols));
         out.write(',');
-
         out.write(String.valueOf(s.symbol_words));
         out.write(',');
-
         out.write(String.valueOf(s.drawings));
         out.write(',');
-
+        out.write(String.valueOf(s.drawing_words));
+        out.write(',');
         out.write(String.valueOf(s.numerals));
         out.write(',');
-
+        out.write(String.valueOf(s.calculations));
+        out.write(',');
+        out.write(String.valueOf(s.graphs));
+        out.write(',');
+        out.write(String.valueOf(s.graph_words));
+        out.write(',');
+        out.write(String.valueOf(s.tables));
+        out.write(',');
+        out.write(String.valueOf(s.table_words));
+        out.write(',');
+        out.write(String.valueOf(s.phys_links));
+        out.write(',');
         out.write(String.valueOf(s.books));
         out.write(',');
-
         out.write(String.valueOf(s.people));
         out.write(',');
-
         out.write(String.valueOf(s.locations));
         out.newLine();
     }
@@ -244,7 +269,8 @@ public class AorStatsCollector {
     private void write_header_row(BufferedWriter out, String first_cell)
             throws IOException {
         out.write(first_cell);
-        out.write(",marginalia,marginalia_words,underlines,underline_words,marks,mark_words,symbols,symbol_words,drawings,numerals,books,people,locations");
+        out.write(",marginalia,marginalia_words,underlines,underline_words,marks,mark_words,symbols,symbol_words," +
+                "drawings,drawing_words,numerals,calculations,graphs,graph_words,tables,table_words,physical_links,books,people,locations");
         out.newLine();
     }
 }

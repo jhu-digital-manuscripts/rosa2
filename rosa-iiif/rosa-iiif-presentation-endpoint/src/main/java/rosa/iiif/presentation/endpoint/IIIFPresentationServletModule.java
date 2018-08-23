@@ -33,6 +33,7 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestParser;
 import rosa.iiif.presentation.core.IIIFPresentationService;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuImageIdMapper;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.core.jhsearch.LuceneJHSearchService;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
@@ -49,6 +50,12 @@ import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
 import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
 import rosa.iiif.presentation.core.transform.impl.TransformerSet;
+import rosa.iiif.presentation.core.html.AdapterSet;
+import rosa.iiif.presentation.core.html.AnnotationBaseHtmlAdapter;
+import rosa.iiif.presentation.core.html.DrawingHtmlAdapter;
+import rosa.iiif.presentation.core.html.GraphHtmlAdapter;
+import rosa.iiif.presentation.core.html.MarginaliaHtmlAdapter;
+import rosa.iiif.presentation.core.html.TableHtmlAdapter;
 
 /**
  * The servlet is configured by iiif-servlet.properties.
@@ -65,6 +72,7 @@ public class IIIFPresentationServletModule extends ServletModule {
     protected void configureServlets() {
         bind(ArchiveNameParser.class);
         bind(IIIFPresentationRequestParser.class);
+        bind(PresentationUris.class);
         
         Multibinder<Transformer<?>> transformers = Multibinder.newSetBinder(binder(), new TypeLiteral<Transformer<?>>() {});
 
@@ -82,6 +90,21 @@ public class IIIFPresentationServletModule extends ServletModule {
         transformers.addBinding().to(LayerTransformer.class);
 
         bind(TransformerSet.class);
+
+        // Html adapters
+        Multibinder<AnnotationBaseHtmlAdapter<?>> adapters =
+                Multibinder.newSetBinder(binder(), new TypeLiteral<AnnotationBaseHtmlAdapter<?>>() {});
+
+        bind(MarginaliaHtmlAdapter.class);
+        bind(GraphHtmlAdapter.class);
+        bind(DrawingHtmlAdapter.class);
+        bind(TableHtmlAdapter.class);
+        adapters.addBinding().to(MarginaliaHtmlAdapter.class);
+        adapters.addBinding().to(GraphHtmlAdapter.class);
+        adapters.addBinding().to(DrawingHtmlAdapter.class);
+        adapters.addBinding().to(TableHtmlAdapter.class);
+
+        bind(AdapterSet.class);
 
         bind(PresentationSerializer.class).to(JsonldSerializer.class);
         

@@ -1,22 +1,7 @@
 package rosa.archive.core;
 
-import com.google.inject.Inject;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.TemporaryFolder;
-import org.junit.runner.RunWith;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
-import rosa.archive.core.check.BookChecker;
-import rosa.archive.core.check.BookCollectionChecker;
-import rosa.archive.core.serialize.SerializerSet;
-import rosa.archive.model.FileMap;
-import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.InternalReference;
-import rosa.archive.model.aor.Marginalia;
-import rosa.archive.model.aor.MarginaliaLanguage;
-import rosa.archive.model.aor.Position;
-import rosa.archive.model.aor.ReferenceTarget;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,11 +11,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
+import org.junit.runner.RunWith;
+
+import com.google.inject.Inject;
+
+import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
+import rosa.archive.core.check.BookChecker;
+import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.serialize.SerializerSet;
+import rosa.archive.model.FileMap;
+import rosa.archive.model.aor.AnnotatedPage;
 
 /**
  * Test a part of the method {@link Store#renameTranscriptions(String, String, boolean, List)}.
@@ -125,56 +119,13 @@ public class StoreImplRenameReferencesTest {
         List<String> filesInBook = base.getByteStreamGroup(VALID_COLLECTION)
                 .getByteStreamGroup(BOOK_DOMENICHI)
                 .listByteStreamNames();
-        for (String file : filesInBook) {
-            if (file.endsWith(".xml")) {
-                assertTrue("Unexpected prefix for transcription. (" + file + ")", file.startsWith("FolgersHa2.aor."));
-            }
-        }
+        assertTrue(filesInBook.parallelStream()
+                .filter(file -> file.endsWith(".xml"))
+                .allMatch(file -> file.endsWith(".xml") && file.startsWith("FolgersHa2.aor.")));
 
-        // Load file maps
-        Map<String, FileMap> filemaps = loadFileMaps();
-
-        int folgers_count = 0;
-        int princeton_count = 0;
-        // Make sure all <internal_ref>s have been changed appropriately
-        List<AnnotatedPage> pages = getPages(BOOK_DOMENICHI);
-        for (AnnotatedPage page : pages) {
-            assertNotNull("NULL page.", page);
-
-            for (Marginalia marg : page.getMarginalia()) {
-                for (MarginaliaLanguage lang : marg.getLanguages()) {
-                    for (Position pos : lang.getPositions()) {
-                        for (InternalReference ref : pos.getInternalRefs()) {
-                            for (ReferenceTarget target : ref.getTargets()) {
-//                                printTarget(target);
-                                assertNotNull("Target book id is NULL.", target.getBookId());
-                                assertFalse("Target book id is empty.", target.getBookId().isEmpty());
-                                assertNotNull("Target filename is NULL.", target.getFilename());
-                                assertFalse("Target filename is empty.", target.getFilename().isEmpty());
-
-                                assertTrue("Unexpected Book ID found. (" + target.getBookId() + ")",
-                                        filemaps.get(DIRECTORY_MAP).getMap().containsValue(target.getBookId()));
-                                assertTrue("Unexpected filename found. (" + target.getFilename() + ")",
-                                        target.getFilename().startsWith("FolgersHa2.aor.") ||
-                                                target.getFilename().startsWith("PrincetonRB16th11.aor.") &&
-                                                target.getFilename().endsWith(".xml"));
-
-                                if (target.getBookId().startsWith("Folgers")) {
-                                    folgers_count++;
-                                } else if (target.getBookId().startsWith("Princeton")) {
-                                    princeton_count++;
-                                } else {
-                                    fail("Unexpected book id found. (" + target.getBookId() + ")");
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        assertEquals("Unexpected number of Folgers references", 43, folgers_count);
-        assertEquals("Unexpected number of PrincetonRB16th11 references", 2, princeton_count);
+        // Ensure that 'filename' attribute in all transcriptions have been changed
+        assertTrue(getPages(BOOK_DOMENICHI).parallelStream().map(AnnotatedPage::getPage)
+                .allMatch(page -> page.endsWith(".tif") && page.startsWith("FolgersHa2")));
     }
 
     /**
@@ -195,56 +146,13 @@ public class StoreImplRenameReferencesTest {
         List<String> filesInBook = base.getByteStreamGroup(VALID_COLLECTION)
                 .getByteStreamGroup(BOOK_BUCHANAN)
                 .listByteStreamNames();
-        for (String file : filesInBook) {
-            if (file.endsWith(".xml")) {
-                assertTrue("Unexpected prefix for transcription. (" + file + ")",
-                        file.startsWith("PrincetonRB16th11.aor."));
-            }
-        }
+        assertTrue(filesInBook.parallelStream()
+                .filter(file -> file.endsWith(".xml"))
+                .allMatch(file -> file.endsWith(".xml") && file.startsWith("PrincetonRB16th11.aor.")));
 
-        // Load file maps
-        Map<String, FileMap> filemaps = loadFileMaps();
-
-        int folgers_count = 0;
-        int princeton_count = 0;
-        // Make sure all <internal_ref>s have been changed appropriately
-        List<AnnotatedPage> pages = getPages(BOOK_BUCHANAN);
-        for (AnnotatedPage page : pages) {
-            assertNotNull("NULL page.", page);
-
-            for (Marginalia marg : page.getMarginalia()) {
-                for (MarginaliaLanguage lang : marg.getLanguages()) {
-                    for (Position pos : lang.getPositions()) {
-                        for (InternalReference ref : pos.getInternalRefs()) {
-                            for (ReferenceTarget target : ref.getTargets()) {
-//                                printTarget(target);
-                                assertNotNull("Target book id is NULL.", target.getBookId());
-                                assertFalse("Target book id is empty.", target.getBookId().isEmpty());
-                                assertNotNull("Target filename is NULL.", target.getFilename());
-                                assertFalse("Target filename is empty.", target.getFilename().isEmpty());
-
-                                assertTrue("Unexpected Book ID found. (" + target.getBookId() + ")",
-                                        filemaps.get(DIRECTORY_MAP).getMap().containsValue(target.getBookId()));
-                                assertTrue("Unexpected filename found. (" + target.getFilename() + ")",
-                                        target.getFilename().startsWith("PrincetonRB16th11.aor.") &&
-                                                target.getFilename().endsWith(".xml"));
-
-                                if (target.getBookId().startsWith("Folgers")) {
-                                    folgers_count++;
-                                } else if (target.getBookId().startsWith("Princeton")) {
-                                    princeton_count++;
-                                } else {
-                                    fail("Unexpected book id found. (" + target.getBookId() + ")");
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        assertEquals("Unexpected number of Folgers references", 0, folgers_count);
-        assertEquals("Unexpected number of PrincetonRB16th11 references", 2, princeton_count);
+        // Ensure that 'filename' attribute in all transcriptions have been changed
+        assertTrue(getPages(BOOK_BUCHANAN).parallelStream().map(AnnotatedPage::getPage)
+                .allMatch(page -> page.endsWith(".tif") && page.startsWith("PrincetonRB16th11")));
     }
 
     /**

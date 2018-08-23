@@ -10,6 +10,7 @@ public class Mark extends Annotation implements Serializable {
 
     private String name;
     private String method;
+    private String color;
 
     public Mark() {}
 
@@ -40,6 +41,14 @@ public class Mark extends Annotation implements Serializable {
         this.method = method;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -48,10 +57,9 @@ public class Mark extends Annotation implements Serializable {
 
         Mark mark = (Mark) o;
 
-        if (method != null ? !method.equals(mark.method) : mark.method != null) return false;
         if (name != null ? !name.equals(mark.name) : mark.name != null) return false;
-
-        return true;
+        if (method != null ? !method.equals(mark.method) : mark.method != null) return false;
+        return color != null ? color.equals(mark.color) : mark.color == null;
     }
 
     @Override
@@ -59,6 +67,7 @@ public class Mark extends Annotation implements Serializable {
         int result = super.hashCode();
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (method != null ? method.hashCode() : 0);
+        result = 31 * result + (color != null ? color.hashCode() : 0);
         return result;
     }
 
@@ -67,6 +76,7 @@ public class Mark extends Annotation implements Serializable {
         return "Mark{" +
                 "name='" + name + '\'' +
                 ", method='" + method + '\'' +
-                '}';
+                ", color='" + color + '\'' +
+                super.toString() + '}';
     }
 }

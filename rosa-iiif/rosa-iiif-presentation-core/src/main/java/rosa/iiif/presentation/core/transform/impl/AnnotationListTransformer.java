@@ -14,6 +14,7 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.AnnotationListType;
+import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
@@ -106,6 +107,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         list.setWithin(new Within(
                 pres_uris.getLayerURI(collection.getId(), book.getId(), listType.toString().toLowerCase())
         ));
+        if (aPage != null && aPage.getReader() != null && !aPage.getReader().isEmpty()) {
+            list.getMetadata().put("reader", new HtmlValue(aPage.getReader()));
+        }
 
         List<Annotation> annotations = list.getAnnotations();
 
@@ -135,32 +139,23 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         }
         switch (listType) {
             case MARGINALIA:
-                aPage.getMarginalia().forEach(marg ->  annotations.add(annotationTransformer.transform(collection, book, marg)) );
+                aPage.getMarginalia().forEach(marg ->  annotations.add(annotationTransformer.transform(collection, book, image, marg)) );
                 break;
             case SYMBOL:
-                aPage.getSymbols().forEach(symb -> annotations.add(annotationTransformer.transform(collection, book, symb)) );
+                aPage.getSymbols().forEach(symb -> annotations.add(annotationTransformer.transform(collection, book, image, symb)) );
                 break;
-//            case MARK:
-//                for (rosa.archive.model.aor.Annotation ann : aPage.getMarks()) {
-//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-//                }
-//                break;
-//            // Underlines will not become annotations.
-//            case UNDERLINE:
-//                for (rosa.archive.model.aor.Annotation ann : aPage.getUnderlines()) {
-//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-//                }
-//                break;
-//            case NUMBERAL:
-//                for (rosa.archive.model.aor.Annotation ann : aPage.getNumerals()) {
-//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-//                }
-//                break;
-//            case ERRATA:
-//                for (rosa.archive.model.aor.Annotation ann : aPage.getErrata()) {
-//                    annotations.add(adaptAnnotation(collection, book.getId(), ann, image));
-//                }
-//                break;
+            case GRAPH:
+                aPage.getGraphs().forEach(graph -> annotations.add(annotationTransformer.transform(collection, book, image, graph)));
+                break;
+            case CALCULATION:
+                aPage.getCalculations().forEach(c -> annotations.add(annotationTransformer.transform(collection, book, image, c)));
+                break;
+            case DRAWING:
+                aPage.getDrawings().forEach(d -> annotations.add(annotationTransformer.transform(collection, book, image, d)));
+                break;
+            case TABLE:
+                aPage.getTables().forEach(t -> annotations.add(annotationTransformer.transform(collection, book, image, t)));
+                break;
             default:
                 break;
         }
@@ -195,6 +190,9 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
         list.setWithin(new Within(
                 pres_uris.getLayerURI(collection.getId(), book.getId(), "all")
         ));
+        if (aPage != null && aPage.getReader() != null && !aPage.getReader().isEmpty()) {
+            list.getMetadata().put("reader", new HtmlValue(aPage.getReader()));
+        }
 
         return list;
     }

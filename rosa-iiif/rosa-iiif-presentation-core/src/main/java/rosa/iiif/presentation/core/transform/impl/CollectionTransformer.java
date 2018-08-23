@@ -3,10 +3,10 @@ package rosa.iiif.presentation.core.transform.impl;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
@@ -32,9 +32,9 @@ import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.Within;
 
 public class CollectionTransformer extends BasePresentationTransformer {
-    public static final String TOP_COLLECTION_LABEL = "All JHU IIIF Collections";
-    public static final String TOP_COLLECTION_NAME = "top";
-    public static final String LANGUAGE_DEFAULT = "en";
+//    public static final String TOP_COLLECTION_LABEL = "All JHU IIIF Collections";
+//    public static final String TOP_COLLECTION_NAME = "top";
+    private static final String LANGUAGE_DEFAULT = "en";
     private static final int MAX_THUMBNAILS = 3;
 
     private SimpleStore store;
@@ -90,7 +90,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
         }
         col.setCollections(childList);
 
-        List<Reference> parentList = new ArrayList<>();
+        List<Within> parents = new ArrayList<>();
         for (String parent : collection.getParentCollections()) {
             try {
                 BookCollection parentCol = store.loadBookCollection(parent);
@@ -99,15 +99,11 @@ public class CollectionTransformer extends BasePresentationTransformer {
                 }
                 // Add references and search services for parent collections
                 String parentURI = pres_uris.getCollectionURI(parentCol.getId());
-                parentList.add(new Reference(parentURI, new TextValue(parentCol.getLabel(), LANGUAGE_DEFAULT),
-                        IIIFNames.SC_COLLECTION));
+                parents.add(new Within(parentURI, SC_COLLECTION, parentCol.getLabel()));
                 col.addService(new Service( JHSearchService.CONTEXT_URI, parentURI, IIIF_SEARCH_PROFILE, parentCol.getLabel()));
             } catch (IOException e) {}
         }
-        col.setWithin(parentList.parallelStream()
-                .map(par -> new Within(par.getReference(), par.getType(), par.getLabel(LANGUAGE_DEFAULT)))
-                .collect(Collectors.toList()).toArray(new Within[parentList.size()])
-        );
+        col.setWithin(parents.toArray(new Within[0]));
 
         return col;
     }
@@ -125,22 +121,45 @@ public class CollectionTransformer extends BasePresentationTransformer {
             Reference ref = new Reference();
 
             ref.setType(SC_MANIFEST);
-            
             ref.setReference(pres_uris.getManifestURI(collection.getId(), title));
 
             try {
                 Book b = store.loadBook(collection.getId(), title);
-
                 BiblioData bd = b.getBiblioData("en");
                 
                 Map<String, HtmlValue> map = new HashMap<>();
+
                 if (bd.getCommonName() != null && !bd.getCommonName().isEmpty()) {
                     ref.setLabel(new TextValue(bd.getCommonName(), "en"));
                 } else if (bd.getTitle() != null && !bd.getTitle().isEmpty()) {
                     ref.setLabel(new TextValue(bd.getTitle(), "en"));
                 } else {
-                    ref.setLabel(new TextValue(title, "en"));
+                    ref.setLabel(new TextValue(title, LANGUAGE_DEFAULT));
                 }
+
+                map.put("pageCount", new HtmlValue(String.valueOf(b.getImages().getImages().size()), LANGUAGE_DEFAULT));
+
+                String[] auths = bd.getAuthors();
+                
+                if (auths != null && auths.length > 0) {
+                    ref.addSortingTag("0" + auths[0]);
+                }
+                
+                String[] readers = bd.getReaders();
+                
+                if (readers != null && readers.length > 0) {
+                    StringBuilder sb = new StringBuilder();
+                    
+                    for (int i = 0; i < readers.length; i++) {
+                        if (i > 0) {
+                            sb.append(" ");
+                        }
+                        sb.append(readers[i]);
+                    }
+                    
+                    map.put("Reader", new HtmlValue(sb.toString(), LANGUAGE_DEFAULT));
+                }
+            
 
                 map.put("Current Location", new HtmlValue(bd.getCurrentLocation(), "en"));
                 map.put("Repository", new HtmlValue(bd.getRepository(), "en"));
@@ -155,13 +174,33 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
                 ref.setMetadata(map);
 
+                if (hasContent(bd.getCommonName())) {
+                    ref.addSortingTag("1" + bd.getCommonName());
+                }
+                ref.addSortingTag("2" + ref.getReference());
+
                 ref.setThumbnails(getThumbnails(collection, b));
             } catch (IOException e) {
-                ref.setLabel(new TextValue(title, "en"));
+                ref.setLabel(new TextValue(title, LANGUAGE_DEFAULT));
             }
 
             refs.add(ref);
         }
+//        refs.sort((o1, o2) -> {
+//            String t1 = o1.getSortingTag();
+//            String t2 = o2.getSortingTag();
+//
+//            if (t1 == null && t2 == null) {
+//                return 0;
+//            } else if (t1 == null) {
+//                return -1;
+//            } else if (t2 == null) {
+//                return 1;
+//            } else {
+//                return t1.compareTo(t2);
+//            }
+//        });
+        refs.sort(Comparator.comparing(Reference::getSortingTag));
         return refs;
     }
 
@@ -181,11 +220,14 @@ public class CollectionTransformer extends BasePresentationTransformer {
             if (image.getLocation() == BookImageLocation.BODY_MATTER && !image.isMissing()) {
                 String id = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId(), cropped));
 
-                list.add(new Image(
+                Image thumb = new Image(
                         id,
                         new IIIFImageService(IIIF_IMAGE_CONTEXT, id, IIIF_IMAGE_PROFILE_LEVEL2,
                                 image.getWidth(), image.getHeight(), -1, -1, null)
-                ));
+                );
+                thumb.setDepicts(pres_uris.getCanvasURI(collection.getId(), book.getId(), image.getName()));
+
+                list.add(thumb);
 
                 if (i++ > MAX_THUMBNAILS) {
                     break;
@@ -194,5 +236,9 @@ public class CollectionTransformer extends BasePresentationTransformer {
         }
 
         return list;
+    }
+
+    private boolean hasContent(String str) {
+        return str != null && !str.isEmpty();
     }
 }

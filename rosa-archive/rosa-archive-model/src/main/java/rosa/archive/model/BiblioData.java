@@ -2,6 +2,7 @@ package rosa.archive.model;
 
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.Objects;
 
 /**
  * Bilbliographic data in a given language.
@@ -21,6 +22,7 @@ public class BiblioData implements Serializable {
     private String[] details;
     private String[] authors;
     private String[] notes;
+    private String[] readers;
 
     private String language;
 
@@ -28,6 +30,7 @@ public class BiblioData implements Serializable {
         details = new String[0];
         authors = new String[0];
         notes = new String[0];
+        readers = new String[0];
     }
 
     public String getTitle() {
@@ -126,6 +129,46 @@ public class BiblioData implements Serializable {
         this.notes = notes;
     }
 
+    public String[] getReaders() {
+        return readers;
+    }
+
+    public void setReaders(String[] readers) {
+        this.readers = readers;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        BiblioData that = (BiblioData) o;
+        return Objects.equals(title, that.title) &&
+                Objects.equals(dateLabel, that.dateLabel) &&
+                Objects.equals(currentLocation, that.currentLocation) &&
+                Objects.equals(repository, that.repository) &&
+                Objects.equals(shelfmark, that.shelfmark) &&
+                Objects.equals(origin, that.origin) &&
+                Objects.equals(type, that.type) &&
+                Objects.equals(commonName, that.commonName) &&
+                Objects.equals(material, that.material) &&
+                Arrays.equals(details, that.details) &&
+                Arrays.equals(authors, that.authors) &&
+                Arrays.equals(notes, that.notes) &&
+                Arrays.equals(readers, that.readers) &&
+                Objects.equals(language, that.language);
+    }
+
+    @Override
+    public int hashCode() {
+
+        int result = Objects.hash(title, dateLabel, currentLocation, repository, shelfmark, origin, type, commonName, material, language);
+        result = 31 * result + Arrays.hashCode(details);
+        result = 31 * result + Arrays.hashCode(authors);
+        result = 31 * result + Arrays.hashCode(notes);
+        result = 31 * result + Arrays.hashCode(readers);
+        return result;
+    }
+
     @Override
     public String toString() {
         return "BiblioData{" +
@@ -141,51 +184,9 @@ public class BiblioData implements Serializable {
                 ", details=" + Arrays.toString(details) +
                 ", authors=" + Arrays.toString(authors) +
                 ", notes=" + Arrays.toString(notes) +
+                ", readers=" + Arrays.toString(readers) +
                 ", language='" + language + '\'' +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        BiblioData that = (BiblioData) o;
-
-        if (!Arrays.equals(authors, that.authors)) return false;
-        if (commonName != null ? !commonName.equals(that.commonName) : that.commonName != null) return false;
-        if (currentLocation != null ? !currentLocation.equals(that.currentLocation) : that.currentLocation != null)
-            return false;
-        if (dateLabel != null ? !dateLabel.equals(that.dateLabel) : that.dateLabel != null) return false;
-        if (!Arrays.equals(details, that.details)) return false;
-        if (language != null ? !language.equals(that.language) : that.language != null) return false;
-        if (material != null ? !material.equals(that.material) : that.material != null) return false;
-        if (!Arrays.equals(notes, that.notes)) return false;
-        if (origin != null ? !origin.equals(that.origin) : that.origin != null) return false;
-        if (repository != null ? !repository.equals(that.repository) : that.repository != null) return false;
-        if (shelfmark != null ? !shelfmark.equals(that.shelfmark) : that.shelfmark != null) return false;
-        if (title != null ? !title.equals(that.title) : that.title != null) return false;
-        if (type != null ? !type.equals(that.type) : that.type != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = title != null ? title.hashCode() : 0;
-        result = 31 * result + (dateLabel != null ? dateLabel.hashCode() : 0);
-        result = 31 * result + (currentLocation != null ? currentLocation.hashCode() : 0);
-        result = 31 * result + (repository != null ? repository.hashCode() : 0);
-        result = 31 * result + (shelfmark != null ? shelfmark.hashCode() : 0);
-        result = 31 * result + (origin != null ? origin.hashCode() : 0);
-        result = 31 * result + (type != null ? type.hashCode() : 0);
-        result = 31 * result + (commonName != null ? commonName.hashCode() : 0);
-        result = 31 * result + (material != null ? material.hashCode() : 0);
-        result = 31 * result + (details != null ? Arrays.hashCode(details) : 0);
-        result = 31 * result + (authors != null ? Arrays.hashCode(authors) : 0);
-        result = 31 * result + (notes != null ? Arrays.hashCode(notes) : 0);
-        result = 31 * result + (language != null ? language.hashCode() : 0);
-        return result;
     }
 
     public String getLanguage() {

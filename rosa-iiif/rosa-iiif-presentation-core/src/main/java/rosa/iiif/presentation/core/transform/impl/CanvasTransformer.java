@@ -9,6 +9,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
+import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.transform.Transformer;
@@ -49,7 +50,22 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         Canvas canvas = new Canvas();
         canvas.setId(pres_uris.getCanvasURI(collection.getId(), book.getId(), image.getName()));
         canvas.setType(SC_CANVAS);
-        canvas.setLabel(image.getName(), "en");
+
+        /*
+         * If an AOR transcription is available for this page, prefer pagination or page signature
+         * from there, instead of the archive name.
+         */
+        String label = image.getName();
+
+        AnnotatedPage annotations = book.getAnnotationPage(image.getId());
+        if (annotations != null) {
+            if (annotations.getPagination() != null && !annotations.getPagination().isEmpty()) {
+                label = annotations.getPagination();
+            } else if (annotations.getSignature() != null && !annotations.getSignature().isEmpty()) {
+                label = annotations.getSignature();
+            }
+        }
+        canvas.setLabel(label, "en");
 
         // Images of bindings or misc images will be displayed as individuals instead of openings
         if (image.getLocation() == BookImageLocation.MISC || image.getLocation() == BookImageLocation.BINDING) {

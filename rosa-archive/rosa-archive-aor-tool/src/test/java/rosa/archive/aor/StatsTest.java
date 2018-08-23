@@ -14,9 +14,14 @@ public class StatsTest {
     public void testPageIndex() {
         assertEquals(47, new Stats("Ha2.024r").pageIndex());
         assertEquals(48, new Stats("Ha2.024v").pageIndex());
+        assertEquals(1, new Stats("615_d_7_f001r").pageIndex());
         assertEquals(7, new Stats("case_712_c27495_007").pageIndex());
         assertEquals(12, new Stats("000000012").pageIndex());
+        assertEquals(7, new Stats("PR-R-00005-00027-F-000-00007").pageIndex());
+        assertEquals(6, new Stats("WB5-12_0226_003v").pageIndex());
 
+        assertEquals(-1, new Stats("c_120_b_4_(2)_f038bv").pageIndex());
+        assertEquals(-1, new Stats("017_2").pageIndex());
         assertEquals(-1, new Stats("FolgersHa2").pageIndex());
         assertEquals(-1, new Stats("Buchanan_MariaScotorumRegina").pageIndex());
     }
