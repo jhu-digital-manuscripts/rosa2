@@ -44,6 +44,7 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookImageRole;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.DeprecatedBookMetadata;
 import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.BookStructure;
 import rosa.archive.model.CharacterNames;
@@ -63,7 +64,6 @@ import rosa.archive.model.Permission;
 import rosa.archive.model.SHA1Checksum;
 import rosa.archive.model.Transcription;
 import rosa.archive.model.aor.*;
-import rosa.archive.model.meta.MultilangMetadata;
 
 import com.google.inject.Inject;
 
@@ -84,20 +84,23 @@ public class StoreImpl implements Store, ArchiveConstants {
     private final ByteStreamGroup base;
     private final BookCollectionChecker collectionChecker;
     private final BookChecker bookChecker;
+    private boolean loadDeprecated;
 
     /**
      * @param serializers object containing all required serializers
      * @param bookChecker object that knows how to validate the contents of a book
      * @param collectionChecker knows how to validate contents of a book collection
      * @param base byte stream group representing the base of the archive
+     * @param loadDeprecated load deprecated files
      */
     @Inject
     public StoreImpl(SerializerSet serializers, BookChecker bookChecker, BookCollectionChecker collectionChecker,
-            ByteStreamGroup base) {
+            ByteStreamGroup base, boolean loadDeprecated) {
         this.serializers = serializers;
         this.base = base;
         this.collectionChecker = collectionChecker;
         this.bookChecker = bookChecker;
+        this.loadDeprecated = loadDeprecated;
     }
 
     @Override
@@ -232,7 +235,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         book.setAutomaticNarrativeTagging(loadItem(bookId + NARRATIVE_TAGGING, bookStreams, NarrativeTagging.class,
                 errors));
         book.setTranscription(loadItem(bookId + TRANSCRIPTION + XML_EXT, bookStreams, Transcription.class, errors));
-        book.setMultilangMetadata(loadItem(bookId + ".description.xml", bookStreams, MultilangMetadata.class, errors));
+        book.setBookMetadata(loadItem(bookId + ".description.xml", bookStreams, BookMetadata.class, errors));
 
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[]{}));
@@ -249,7 +252,11 @@ public class StoreImpl implements Store, ArchiveConstants {
             book.addPermission(loadItem(perm_name, bookStreams, Permission.class, errors), lang);
             
             String descr_name = bookId + DESCRIPTION + lang + XML_EXT;
-            book.addBookMetadata(loadItem(descr_name, bookStreams, BookMetadata.class, errors), lang);
+            
+            if (loadDeprecated) {
+                book.addDeprecatedBookMetadata(loadItem(descr_name, bookStreams, DeprecatedBookMetadata.class, errors), lang);
+            }
+            
             book.addBookDescription(loadItem(descr_name, bookStreams, BookDescription.class, errors), lang);
         }
 
@@ -827,7 +834,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         for (String name : bookStreams.listByteStreamNames()) {
             ArchiveItemType type = parser.getArchiveItemType(name);
             if (name.endsWith(XML_EXT) && type != ArchiveItemType.TRANSCRIPTION_ROSE
-                    && type != ArchiveItemType.DESCRIPTION && type != ArchiveItemType.DESCRIPTION_MULTILANG) {
+                    && type != ArchiveItemType.DEPRECATED_DESCRIPTION && type != ArchiveItemType.METADATA) {
                 names.add(name);
             }
         }

@@ -6,6 +6,7 @@ import java.util.Map;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
+import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
@@ -59,9 +60,9 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         // setSequences(...) not used, as it sets references to other sequences
 
         String lc = "en";
-        BookMetadata md = book.getBookMetadata(lc);
-        manifest.setLabel(md.getCommonName(), lc);
-        manifest.setDescription(md.getRepository() + ", " + md.getShelfmark(), lc);
+        BiblioData bd = book.getBiblioData(lc);
+        manifest.setLabel(bd.getCommonName(), lc);
+        manifest.setDescription(bd.getRepository() + ", " + bd.getShelfmark(), lc);
 
         Rights preziRights = new Rights();
         if (book.getLicenseUrl() != null) {
@@ -120,7 +121,7 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
     }
 
     /**
-     * Handle the book's structured metadata and manifest it into Manifest metadata.
+     * Handle the book's structured metadata and manifest it into Manifest bd.
      *
      * @param book book
      * @param languages languages available
@@ -129,51 +130,52 @@ public class ManifestTransformer extends BasePresentationTransformer implements 
         Map<String, HtmlValue> map = new HashMap<>();
 
         for (String lang : languages) {
-            BookMetadata metadata = book.getBookMetadata(lang);
+            BookMetadata md = book.getBookMetadata();
+            BiblioData bd = book.getBiblioData(lang);
 
-            map.put("currentLocation", new HtmlValue(metadata.getCurrentLocation(), lang));
-            map.put("repository", new HtmlValue(metadata.getRepository(), lang));
-            map.put("shelfmark", new HtmlValue(metadata.getShelfmark(), lang));
-            map.put("origin", new HtmlValue(metadata.getOrigin(), lang));
+            map.put("currentLocation", new HtmlValue(bd.getCurrentLocation(), lang));
+            map.put("repository", new HtmlValue(bd.getRepository(), lang));
+            map.put("shelfmark", new HtmlValue(bd.getShelfmark(), lang));
+            map.put("origin", new HtmlValue(bd.getOrigin(), lang));
 
-            if (metadata.getWidth() != -1) {
-                map.put("width", new HtmlValue(metadata.getWidth() + "", lang));
+            if (md.getWidth() != -1) {
+                map.put("width", new HtmlValue(md.getWidth() + "", lang));
             }
-            if (metadata.getHeight() != -1) {
-                map.put("height", new HtmlValue(metadata.getHeight() + "", lang));
+            if (md.getHeight() != -1) {
+                map.put("height", new HtmlValue(md.getHeight() + "", lang));
             }
-            if (metadata.getYearStart() != -1) {
-                map.put("yearStart", new HtmlValue(metadata.getYearStart() + "", lang));
+            if (md.getYearStart() != -1) {
+                map.put("yearStart", new HtmlValue(md.getYearStart() + "", lang));
             }
-            if (metadata.getYearEnd() != -1) {
-                map.put("yearEnd", new HtmlValue(metadata.getYearEnd() + "", lang));
+            if (md.getYearEnd() != -1) {
+                map.put("yearEnd", new HtmlValue(md.getYearEnd() + "", lang));
             }
-            if (metadata.getNumberOfPages() != -1) {
-                map.put("numberOfPages", new HtmlValue(metadata.getNumberOfPages() + "", lang));
+            if (md.getNumberOfPages() != -1) {
+                map.put("numberOfPages", new HtmlValue(md.getNumberOfPages() + "", lang));
             }
-            if (metadata.getNumberOfIllustrations() != -1) {
-                map.put("numberOfIllustrations", new HtmlValue(metadata.getNumberOfIllustrations() + "", lang));
+            if (md.getNumberOfIllustrations() != -1) {
+                map.put("numberOfIllustrations", new HtmlValue(md.getNumberOfIllustrations() + "", lang));
             }
-            if (metadata.getTitle() != null) {
-                map.put("title", new HtmlValue(metadata.getTitle(), lang));
+            if (bd.getTitle() != null) {
+                map.put("title", new HtmlValue(bd.getTitle(), lang));
             }
-            if (metadata.getDate() != null) {
-                map.put("date", new HtmlValue(metadata.getDate(), lang));
+            if (bd.getDateLabel() != null) {
+                map.put("date", new HtmlValue(bd.getDateLabel(), lang));
             }
-            if (metadata.getDimensions() != null && !metadata.getDimensions().replaceAll("\\s+", "").equals("-1x-1")) {
-                map.put("dimensions", new HtmlValue(metadata.getDimensions(), lang));
+            if (md.getDimensionsString() != null && !md.getDimensionsString().replaceAll("\\s+", "").equals("-1x-1")) {
+                map.put("dimensions", new HtmlValue(md.getDimensionsString(), lang));
             }
-            if (metadata.getDimensionUnits() != null) {
-                map.put("dimensionUnits", new HtmlValue(metadata.getDimensionUnits(), lang));
+            if (md.getDimensionUnits() != null) {
+                map.put("dimensionUnits", new HtmlValue(md.getDimensionUnits(), lang));
             }
-            if (metadata.getType() != null) {
-                map.put("type", new HtmlValue(metadata.getType(), lang));
+            if (bd.getType() != null) {
+                map.put("type", new HtmlValue(bd.getType(), lang));
             }
-            if (metadata.getCommonName() != null) {
-                map.put("commonName", new HtmlValue(metadata.getCommonName(), lang));
+            if (bd.getCommonName() != null) {
+                map.put("commonName", new HtmlValue(bd.getCommonName(), lang));
             }
-            if (metadata.getMaterial() != null) {
-                map.put("material", new HtmlValue(metadata.getMaterial(), lang));
+            if (bd.getMaterial() != null) {
+                map.put("material", new HtmlValue(bd.getMaterial(), lang));
             }
 
             if (book.getMultilangMetadata() != null && book.getMultilangMetadata().getBiblioDataMap().containsKey(lang)) {

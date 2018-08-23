@@ -132,7 +132,7 @@ public class IIIFPresentationServletModule extends ServletModule {
         LOG.info("Loading archive :: " + archive_path);
         
         ByteStreamGroup base = new FSByteStreamGroup(archive_path);
-        return new StoreImpl(serializers, bookChecker, collectionChecker, base);
+        return new StoreImpl(serializers, bookChecker, collectionChecker, base, false);
     }
 
     @Provides

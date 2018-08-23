@@ -1,5 +1,6 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -11,11 +12,11 @@ import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
 import rosa.archive.core.SimpleStore;
+import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
-import rosa.archive.model.BookMetadata;
 import rosa.archive.model.ImageList;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
@@ -124,52 +125,57 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
             try {
                 Book b = store.loadBook(collection.getId(), title);
-                BookMetadata bm = b.getBookMetadata(LANGUAGE_DEFAULT);
-
+                BiblioData bd = b.getBiblioData("en");
+                
                 Map<String, HtmlValue> map = new HashMap<>();
-                if (hasContent(bm.getCommonName())) {
-                    ref.setLabel(new TextValue(bm.getCommonName(), LANGUAGE_DEFAULT));
-                } else if (hasContent(bm.getTitle())) {
-                    ref.setLabel(new TextValue(bm.getTitle(), LANGUAGE_DEFAULT));
+
+                if (bd.getCommonName() != null && !bd.getCommonName().isEmpty()) {
+                    ref.setLabel(new TextValue(bd.getCommonName(), "en"));
+                } else if (bd.getTitle() != null && !bd.getTitle().isEmpty()) {
+                    ref.setLabel(new TextValue(bd.getTitle(), "en"));
                 } else {
                     ref.setLabel(new TextValue(title, LANGUAGE_DEFAULT));
                 }
 
-                map.put("Current Location", new HtmlValue(bm.getCurrentLocation(), LANGUAGE_DEFAULT));
-                map.put("Repository", new HtmlValue(bm.getRepository(), LANGUAGE_DEFAULT));
-                map.put("Shelfmark", new HtmlValue(bm.getShelfmark(), LANGUAGE_DEFAULT));
-                map.put("Origin", new HtmlValue(bm.getOrigin(), LANGUAGE_DEFAULT));
-                if (hasContent(bm.getTitle())) {
-                    map.put("Title", new HtmlValue(bm.getTitle(), LANGUAGE_DEFAULT));
-                }
-                if (hasContent(bm.getDate())) {
-                    map.put("Date", new HtmlValue(bm.getDate(), LANGUAGE_DEFAULT));
-                }
                 map.put("pageCount", new HtmlValue(String.valueOf(b.getImages().getImages().size()), LANGUAGE_DEFAULT));
 
-                if (b.getMultilangMetadata() != null && b.getMultilangMetadata().getBiblioDataMap() != null
-                        && b.getMultilangMetadata().getBiblioDataMap().containsKey(LANGUAGE_DEFAULT)) {
-                    String[] auths = b.getMultilangMetadata().getBiblioDataMap().get(LANGUAGE_DEFAULT).getAuthors();
-                    if (auths != null && auths.length > 0) {
-                        ref.addSortingTag("0" + auths[0]);
-                    }
-                    String[] readers = b.getMultilangMetadata().getBiblioDataMap().get(LANGUAGE_DEFAULT).getReaders();
-                    if (readers != null && readers.length > 0) {
-                        StringBuilder sb = new StringBuilder();
-                        for (int i = 0; i < readers.length; i++) {
-                            if (i > 0) {
-                                sb.append(" ");
-                            }
-                            sb.append(readers[i]);
+                String[] auths = bd.getAuthors();
+                
+                if (auths != null && auths.length > 0) {
+                    ref.addSortingTag("0" + auths[0]);
+                }
+                
+                String[] readers = bd.getReaders();
+                
+                if (readers != null && readers.length > 0) {
+                    StringBuilder sb = new StringBuilder();
+                    
+                    for (int i = 0; i < readers.length; i++) {
+                        if (i > 0) {
+                            sb.append(" ");
                         }
-                        map.put("Reader", new HtmlValue(sb.toString(), LANGUAGE_DEFAULT));
+                        sb.append(readers[i]);
                     }
+                    
+                    map.put("Reader", new HtmlValue(sb.toString(), LANGUAGE_DEFAULT));
+                }
+            
+
+                map.put("Current Location", new HtmlValue(bd.getCurrentLocation(), "en"));
+                map.put("Repository", new HtmlValue(bd.getRepository(), "en"));
+                map.put("Shelfmark", new HtmlValue(bd.getShelfmark(), "en"));
+                map.put("Origin", new HtmlValue(bd.getOrigin(), "en"));
+                if (bd.getTitle() != null && !bd.getTitle().isEmpty()) {
+                    map.put("Title", new HtmlValue(bd.getTitle(), "en"));
+                }
+                if (bd.getDateLabel() != null && !bd.getDateLabel().isEmpty()) {
+                    map.put("Date", new HtmlValue(bd.getDateLabel(), "en"));
                 }
 
                 ref.setMetadata(map);
 
-                if (hasContent(bm.getCommonName())) {
-                    ref.addSortingTag("1" + bm.getCommonName());
+                if (hasContent(bd.getCommonName())) {
+                    ref.addSortingTag("1" + bd.getCommonName());
                 }
                 ref.addSortingTag("2" + ref.getReference());
 

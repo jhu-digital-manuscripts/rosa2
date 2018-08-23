@@ -9,7 +9,7 @@ import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
 import rosa.archive.core.serialize.BookDescriptionSerializer;
-import rosa.archive.core.serialize.BookMetadataSerializer;
+import rosa.archive.core.serialize.DeprecatedBookMetadataSerializer;
 import rosa.archive.core.serialize.BookReferenceSheetSerializer;
 import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
@@ -18,7 +18,7 @@ import rosa.archive.core.serialize.FileMapSerializer;
 import rosa.archive.core.serialize.IllustrationTaggingSerializer;
 import rosa.archive.core.serialize.IllustrationTitlesSerializer;
 import rosa.archive.core.serialize.ImageListSerializer;
-import rosa.archive.core.serialize.MultilangMetadataSerializer;
+import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.core.serialize.NarrativeSectionsSerializer;
 import rosa.archive.core.serialize.NarrativeTaggingSerializer;
 import rosa.archive.core.serialize.PermissionSerializer;
@@ -74,7 +74,7 @@ public abstract class BaseSearchTest {
         base = new FSByteStreamGroup(basePath);
 
         SerializerSet serializers = new SerializerSet(new HashSet<>(Arrays.asList(
-                new BookMetadataSerializer(),
+                new DeprecatedBookMetadataSerializer(),
                 new BookStructureSerializer(),
                 new CharacterNamesSerializer(),
                 new SHA1ChecksumSerializer(),
@@ -86,7 +86,7 @@ public abstract class BaseSearchTest {
                 new NarrativeTaggingSerializer(),
                 new TranscriptionXmlSerializer(),
                 new PermissionSerializer(),
-                new MultilangMetadataSerializer(),
+                new BookMetadataSerializer(),
                 new AORAnnotatedPageSerializer(),
                 new ReferenceSheetSerializer(),
                 new BookReferenceSheetSerializer(),
@@ -97,7 +97,7 @@ public abstract class BaseSearchTest {
         BookChecker bookChecker = new BookChecker(serializers);
         BookCollectionChecker bookCollectionChecker = new BookCollectionChecker(serializers);
 
-        store = new StoreImpl(serializers, bookChecker, bookCollectionChecker, base);
+        store = new StoreImpl(serializers, bookChecker, bookCollectionChecker, base, true);
         simpleStore = new SimpleCachingStore(store, 1000);
     }
 

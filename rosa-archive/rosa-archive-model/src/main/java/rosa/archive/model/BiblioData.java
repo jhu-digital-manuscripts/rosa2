@@ -1,11 +1,11 @@
-package rosa.archive.model.meta;
+package rosa.archive.model;
 
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Objects;
 
 /**
- *
+ * Bilbliographic data in a given language.
  */
 public class BiblioData implements Serializable {
     private static final long serialVersionUID = 1L;

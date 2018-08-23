@@ -138,8 +138,8 @@ public class StoreImplTest extends BaseArchiveTest {
         assertNotNull(book);
         assertNotNull(book.getId());
         assertNotNull(book.getIllustrationTagging());
-        assertNotNull(book.getBookMetadata("en"));
-        assertNotNull(book.getBookMetadata("fr"));
+        assertNotNull(book.getDeprecatedBookMetadata("en"));
+        assertNotNull(book.getDeprecatedBookMetadata("fr"));
         assertNotNull(book.getBookDescription("en"));
         assertNotNull(book.getBookDescription("fr"));
         assertNotNull(book.getContent());
@@ -149,7 +149,7 @@ public class StoreImplTest extends BaseArchiveTest {
         assertNotNull(book.getPermission("en"));
         assertNotNull(book.getPermission("fr"));
         assertNotNull(book.getImages());
-        assertEquals("Moo cow", book.getBookMetadata("en").getTexts()[0].getAuthors().get(0));
+        assertEquals("Moo cow", book.getDeprecatedBookMetadata("en").getTexts()[0].getAuthors().get(0));
     }
 
     /**

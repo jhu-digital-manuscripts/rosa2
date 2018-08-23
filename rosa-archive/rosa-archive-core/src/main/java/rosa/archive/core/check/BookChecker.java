@@ -3,7 +3,6 @@ package rosa.archive.core.check;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -28,6 +27,7 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.DeprecatedBookMetadata;
 import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.BookScene;
 import rosa.archive.model.BookStructure;
@@ -49,7 +49,6 @@ import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
-import rosa.archive.model.meta.MultilangMetadata;
 import rosa.archive.model.redtag.Item;
 import rosa.archive.model.redtag.StructureColumn;
 import rosa.archive.model.redtag.StructurePage;
@@ -112,11 +111,11 @@ public class BookChecker extends AbstractArchiveChecker {
 
         checkTEIDescriptions(bsg, errors, warnings);
         // Check newer style metadata XML
-        check(book.getMultilangMetadata(), bsg, errors, warnings);
+        check(book.getBookMetadata(), bsg, errors, warnings);
 
         for (String lang : collection.getAllSupportedLanguages()) {
             //   bookMetadata
-            check(book.getBookMetadata(lang), book, bsg, errors, warnings);
+            check(book.getDeprecatedBookMetadata(lang), book, bsg, errors, warnings);
             //   permissions
             check(book.getPermission(lang), book, bsg, errors, warnings);
         }
@@ -232,7 +231,7 @@ public class BookChecker extends AbstractArchiveChecker {
         }
     }
 
-    private void check(MultilangMetadata metadata, ByteStreamGroup bsg, final List<String> errors,
+    private void check(BookMetadata metadata, ByteStreamGroup bsg, final List<String> errors,
                        final List<String> warnings) {
         if (metadata == null) {
             return;
@@ -282,7 +281,7 @@ public class BookChecker extends AbstractArchiveChecker {
     }
 
     /**
-     * Check data consistency of a {@link rosa.archive.model.BookMetadata} object according
+     * Check data consistency of a {@link rosa.archive.model.DeprecatedBookMetadata} object according
      * to the rules:
      *
      * <ul>
@@ -297,10 +296,10 @@ public class BookChecker extends AbstractArchiveChecker {
      * @param errors list of errors
      * @param warnings list of warnings
      */
-    private void check(BookMetadata metadata, Book parent, ByteStreamGroup bsg,
+    private void check(DeprecatedBookMetadata metadata, Book parent, ByteStreamGroup bsg,
                                List<String> errors, List<String> warnings) {
         if (metadata == null) {
-            errors.add("Metadata is missing.");
+            // Deprecated metadata may be missing
             return;
         }
 
@@ -393,21 +392,21 @@ public class BookChecker extends AbstractArchiveChecker {
     }
 
     private void check(Book parent, String[] languages, ByteStreamGroup bsg, List<String> errors, List<String> warnings) {
-        List<BookMetadata> metadatas = new ArrayList<>();
+        List<DeprecatedBookMetadata> metadatas = new ArrayList<>();
 
         for (String lang : languages) {
-            if (parent.getBookMetadata(lang) != null) {
-                metadatas.add(parent.getBookMetadata(lang));
+            if (parent.getDeprecatedBookMetadata(lang) != null) {
+                metadatas.add(parent.getDeprecatedBookMetadata(lang));
             }
         }
 
         if (metadatas.size() == 0) {
-            errors.add("Failed to get metadata descriptions. [" + parent.getId() + "]");
+            // Deprecated metadata may not be present.
             return;
         }
-        BookMetadata reference = metadatas.get(0);
+        DeprecatedBookMetadata reference = metadatas.get(0);
         for (int i = 0; i < metadatas.size(); i++) {
-            BookMetadata test = metadatas.get(i);
+            DeprecatedBookMetadata test = metadatas.get(i);
             String fileLabel = " [" + reference.getId() + "/" + test.getId() + "] ";
 
             if (test.getYearStart() != reference.getYearStart()) {

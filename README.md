@@ -2,6 +2,13 @@
 
 # Introduction
 
-This project provides IIIF endpoints.
+This project provides tools to manage archives of data and services to provide a IIIF representation of that data.
+
+# Building
+
+See the build scripts. The archive specified as archive.path must contain collections either named aorcollection, rosecollection, pizancollection, or top in order to support search.
+
+
+
 
 
