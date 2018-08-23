@@ -1,12 +1,12 @@
 package rosa.archive.tool;
 
 import org.apache.commons.cli.CommandLine;
+import rosa.archive.core.serialize.DeprecatedBookMetadataSerializer;
 import rosa.archive.core.serialize.BookMetadataSerializer;
-import rosa.archive.core.serialize.MultilangMetadataSerializer;
+import rosa.archive.model.DeprecatedBookMetadata;
+import rosa.archive.model.BiblioData;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
-import rosa.archive.model.meta.BiblioData;
-import rosa.archive.model.meta.MultilangMetadata;
 import rosa.archive.tool.config.ToolConfig;
 
 import java.io.IOException;
@@ -27,8 +27,8 @@ import java.util.stream.Stream;
  * The TEI descriptions are left untouched.
  */
 public class TEIDescriptionConverter {
+    private static final DeprecatedBookMetadataSerializer deprecatedBookMetadataSerializer = new DeprecatedBookMetadataSerializer();
     private static final BookMetadataSerializer bookMetadataSerializer = new BookMetadataSerializer();
-    private static final MultilangMetadataSerializer multilangMetadataSerializer = new MultilangMetadataSerializer();
 
     public static void run(CommandLine cmd, ToolConfig config, PrintStream report) {
         System.out.println("Archive path: " + config.getArchivePath());
@@ -77,7 +77,7 @@ public class TEIDescriptionConverter {
         Path bookPath = colPath.resolve(bookName);
 
 
-        MultilangMetadata mm = new MultilangMetadata();
+        BookMetadata mm = new BookMetadata();
 
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(bookPath,
              entry -> entry.getFileName().toString().contains("description_"))) {
@@ -94,7 +94,7 @@ public class TEIDescriptionConverter {
         writeOutput(mm, newDescriptionPath, report);
     }
 
-    private static void addLanguageData(Path langSpecificPath, MultilangMetadata mm, PrintStream report) {
+    private static void addLanguageData(Path langSpecificPath, BookMetadata mm, PrintStream report) {
         List<String> errors = new ArrayList<>();
 
         String file = langSpecificPath.getFileName().toString();
@@ -106,7 +106,7 @@ public class TEIDescriptionConverter {
         String lang = filename.substring(filename.indexOf('_') + 1);
 
         try (InputStream in = Files.newInputStream(langSpecificPath)) {
-            BookMetadata metadata = bookMetadataSerializer.read(in, errors);
+            DeprecatedBookMetadata metadata = deprecatedBookMetadataSerializer.read(in, errors);
 
             if (!errors.isEmpty()) {
                 return;
@@ -146,12 +146,12 @@ public class TEIDescriptionConverter {
         }
     }
 
-    private static void writeOutput(MultilangMetadata mm, Path outputPath, PrintStream report) {
+    private static void writeOutput(BookMetadata mm, Path outputPath, PrintStream report) {
         if (Files.exists(outputPath)) {
             report.printf("[WARNING] Skipped existing [%s]", outputPath.toAbsolutePath());
         } else {
             try (OutputStream out = Files.newOutputStream(outputPath)) {
-                multilangMetadataSerializer.write(mm, out);
+                bookMetadataSerializer.write(mm, out);
             } catch (IOException e) {
                 report.printf("[ERROR] Failed to write output file. [%s]", outputPath.toAbsolutePath());
             }

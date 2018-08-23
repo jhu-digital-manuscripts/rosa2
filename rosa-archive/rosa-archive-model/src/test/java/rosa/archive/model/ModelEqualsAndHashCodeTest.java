@@ -22,7 +22,7 @@ public class ModelEqualsAndHashCodeTest {
     @Test
     public void bookMetadataTest() {
         EqualsVerifier
-                .forClass(BookMetadata.class)
+                .forClass(DeprecatedBookMetadata.class)
                 .allFieldsShouldBeUsed()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
                 .verify();

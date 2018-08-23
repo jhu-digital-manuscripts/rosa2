@@ -1,75 +1,65 @@
 package rosa.archive.core.serialize;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.List;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.ErrorHandler;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
+
+import rosa.archive.core.util.XMLUtil;
+import rosa.archive.model.BiblioData;
+import rosa.archive.model.BookMetadata;
+import rosa.archive.model.BookText;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.apache.commons.lang3.StringUtils;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
-import rosa.archive.core.util.XMLUtil;
-import rosa.archive.model.BookMetadata;
-import rosa.archive.model.BookText;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
- * Serialization format is a custom TEI profile.
- * 
- * @see rosa.archive.model.BookMetadata
+ *
  */
 public class BookMetadataSerializer implements Serializer<BookMetadata> {
-    private static final String MetadataDateTag = "date";
-    private static final String MetadataCurrentLocationTag = "settlement";
-    private static final String MetadataRepositoryTag = "repository";
-    private static final String MetadataShelfmarkTag = "idno";
-    private static final String MetadataOriginTag = "pubPlace";
-    private static final String MetadataWidthTag = "width";
-    private static final String MetadataHeightTag = "height";
-    private static final String MetadataNumIllustrationsTag = "illustrations";
-    private static final String MetadataCommonNameTag = "commonName";
-    private static final String MetadataMaterialTag = "material";
-    private static final String MetadataTypeTag = "format";
-    private static final String MetadataMeasureTag = "measure";
-    private static final String MetadataNumPagesTag = "quantity";
-    private static final String MetadataYearStartTag = "notBefore";
-    private static final String MetadataYearEndTag = "notAfter";
-    private static final String MetadataTextsTag = "msItem";
-    private static final String MetadataTextsLinesPerColTag = "linesPerColumn";
-    private static final String MetadataTextsColsPerPageTag = "columnsPerFolio";
-    private static final String MetadataTextsLeavesPerGatheringTag = "leavesPerGathering";
-    private static final String MetadataTextsNumPagesTag = "folios";
-    private static final String MetadataTextsIdTag = "textid";
-    private static final String MetadataTextsTitleTag = "title";
-    private static final String MetadataTextsLocusTag = "locus";
-    private static final String MetadataTextsFirstPageTag = "from";
-    private static final String MetadataTextsLastPageTag = "to";
-    private static final String MetadataTextsAuthorTag = "author";
-       
     @Override
-    public BookMetadata read(InputStream is, List<String> errors) throws IOException {
-
+    public BookMetadata read(InputStream is, final List<String> errors) throws IOException {
         try {
 
             DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            builder.setErrorHandler(new ErrorHandler() {
+                @Override
+                public void warning(SAXParseException e) throws SAXException {
+                    // do nothing
+                }
+
+                @Override
+                public void error(SAXParseException e) throws SAXException {
+                    errors.add("[Error] (line=" + e.getLineNumber() + ", col=" + e.getColumnNumber()
+                            + ") " + e.getMessage());
+                }
+
+                @Override
+                public void fatalError(SAXParseException e) throws SAXException {
+                    errors.add("[Fatal Error] (line=" + e.getLineNumber() + ", col=" + e.getColumnNumber()
+                            + ") " + e.getMessage());
+                }
+            });
+
             Document doc = builder.parse(is);
             return buildMetadata(doc);
 
         } catch (ParserConfigurationException e) {
-            String reason = "Failed to build Document.";
-            errors.add(reason);
-            throw new IOException(reason, e);
+            throw new IOException("Failed to build Document.", e);
         } catch (SAXException e) {
-            String reason = "Failed to parse input stream.";
-            errors.add(reason);
-            throw new IOException(reason, e);
+            throw new IOException("Failed to parse input stream.", e);
         }
     }
 
@@ -77,347 +67,249 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
     public void write(BookMetadata metadata, OutputStream out) throws IOException {
         Document doc = XMLUtil.newDocument();
 
-        Element root = doc.createElement("TEI");
-        root.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
-        root.setAttribute("version", "5.0");
+        Element root = doc.createElement("book");
         doc.appendChild(root);
 
-        Element teiheader = doc.createElement("teiheader");
-        root.appendChild(teiheader);
+        Element license  = doc.createElement("license");
+        root.appendChild(license);
 
-        Element sourceDesc = doc.createElement("sourceDesc");
-        teiheader.appendChild(sourceDesc);
+        valueElement("url", metadata.getLicenseUrl() == null ? "" : metadata.getLicenseUrl(), license, doc);
+        valueElement("logo", metadata.getLicenseLogo() == null ? "" : metadata.getLicenseLogo(), license, doc);
 
-        // ------ bibl ------
-        Element bibl = doc.createElement("bibl");
-        sourceDesc.appendChild(bibl);
+        valueElement("illustrations", metadata.getNumberOfIllustrations(), root, doc);
+        valueElement("totalPages", metadata.getNumberOfPages(), root, doc);
 
-        Element title = doc.createElement(MetadataTextsTitleTag);
-        title.appendChild(doc.createTextNode(metadata.getTitle()));
-        bibl.appendChild(title);
+        Element dimensions = doc.createElement("dimensions");
+        root.appendChild(dimensions);
+        dimensions.setAttribute("units", metadata.getDimensionUnits());
+        valueElement("width", metadata.getWidth(), dimensions, doc);
+        valueElement("height", metadata.getHeight(), dimensions, doc);
 
-        // origin: <pubPlace>
-        Element pubPlace = doc.createElement(MetadataOriginTag);
-        pubPlace.appendChild(doc.createTextNode(metadata.getOrigin()));
-        bibl.appendChild(pubPlace);
+        Element dates = doc.createElement("dates");
+        root.appendChild(dates);
+        valueElement("startDate", metadata.getYearStart(), dates, doc);
+        valueElement("endDate", metadata.getYearEnd(), dates, doc);
 
-        // <date>
-        Element dateEl = doc.createElement(MetadataDateTag);
-        dateEl.setAttribute(MetadataYearEndTag, String.valueOf(metadata.getYearEnd()));
-        dateEl.setAttribute(MetadataYearStartTag, String.valueOf(metadata.getYearStart()));
-        dateEl.appendChild(doc.createTextNode(metadata.getDate()));
-        bibl.appendChild(dateEl);
+        Element texts = doc.createElement("texts");
+        root.appendChild(texts);
 
-        // Notes: format, commonName, material, illustrations
-        bibl.appendChild(note(MetadataTypeTag, metadata.getType(), doc));
-        bibl.appendChild(note(MetadataCommonNameTag, metadata.getCommonName(), doc));
-        bibl.appendChild(note(MetadataMaterialTag, metadata.getMaterial(), doc));
-        bibl.appendChild(note(MetadataNumIllustrationsTag,
-                String.valueOf(metadata.getNumberOfIllustrations()), doc));
+        for (BookText t : metadata.getBookTexts()) {
+            Element text = doc.createElement("text");
+            texts.appendChild(text);
 
-        // <extent>
-        Element extentEl = doc.createElement("extent");
-        bibl.appendChild(extentEl);
+            text.setAttribute("id", t.getId());
+            valueElement("language", t.getLanguage(), text, doc);
+            valueElement("title", t.getTitle(), text, doc);
+            valueElement("textId", t.getTextId(), text, doc);
 
-        // <measure>
-        Element measureEl = doc.createElement(MetadataMeasureTag);
-        extentEl.appendChild(measureEl);
-        measureEl.setAttribute(MetadataNumPagesTag, String.valueOf(metadata.getNumberOfPages()));
-        measureEl.setAttribute("unit", "folios");
-        measureEl.appendChild(doc.createTextNode(metadata.getNumberOfPages() + " folios"));
+            Element pages = valueElement("pages", t.getNumberOfPages(), text, doc);
+            pages.setAttribute("end", t.getLastPage());
+            pages.setAttribute("start", t.getFirstPage());
 
-        // <dimensions>
-        Element dimensionsEl = doc.createElement("dimensions");
-        extentEl.appendChild(dimensionsEl);
+            valueElement("illustrations", t.getNumberOfIllustrations(), text, doc);
+            valueElement("linesPerColumn", t.getLinesPerColumn(), text, doc);
+            valueElement("leavesPerGathering", t.getLeavesPerGathering(), text, doc);
+            valueElement("columnsPerPage", t.getColumnsPerPage(), text, doc);
+        }
 
-        Element height = doc.createElement(MetadataHeightTag);
-        dimensionsEl.appendChild(height);
-        height.setAttribute("unit", metadata.getDimensionUnits());
-        height.appendChild(doc.createTextNode(String.valueOf(metadata.getHeight())));
+        Element bibs = doc.createElement("bibliographies");
+        root.appendChild(bibs);
+        for (String lang : metadata.getBiblioDataMap().keySet()) {
+            BiblioData data = metadata.getBiblioDataMap().get(lang);
 
-        // <width>
-        Element width = doc.createElement(MetadataWidthTag);
-        dimensionsEl.appendChild(width);
-        height.setAttribute("unit", metadata.getDimensionUnits());
-        width.appendChild(doc.createTextNode(String.valueOf(metadata.getWidth())));
+            Element bib = doc.createElement("bibliography");
+            bibs.appendChild(bib);
+            bib.setAttribute("lang", lang);
 
-        // ------ msDesc ------
-        Element msDesc = doc.createElement("msDesc");
-        sourceDesc.appendChild(msDesc);
+            valueElement("title", data.getTitle(), bib, doc);
+            valueElement("commonName", data.getCommonName(), bib, doc);
+            valueElement("dateLabel", data.getDateLabel(), bib, doc);
+            valueElement("type", data.getType(), bib, doc);
+            valueElement("material", data.getMaterial(), bib, doc);
+            valueElement("origin", data.getOrigin(), bib, doc);
+            valueElement("currentLocation", data.getCurrentLocation(), bib, doc);
+            valueElement("repository", data.getRepository(), bib, doc);
+            valueElement("shelfmark", data.getShelfmark(), bib, doc);
 
-        // <msIdentifier>
-        Element msIdentifier = doc.createElement("msIdentifier");
-        msDesc.appendChild(msIdentifier);
-
-        // <settlement>
-        Element origin = doc.createElement(MetadataCurrentLocationTag);
-        msIdentifier.appendChild(origin);
-        origin.appendChild(doc.createTextNode(metadata.getCurrentLocation()));
-
-        // <repository>
-        Element repository = doc.createElement(MetadataRepositoryTag);
-        msIdentifier.appendChild(repository);
-        repository.appendChild(doc.createTextNode(metadata.getRepository()));
-
-        // <idno>
-        Element shelfmark = doc.createElement(MetadataShelfmarkTag);
-        msIdentifier.appendChild(shelfmark);
-        shelfmark.appendChild(doc.createTextNode(metadata.getShelfmark()));
-
-        // <msContents>
-        Element msContents = doc.createElement("msContents");
-        msDesc.appendChild(msContents);
-
-        for (int i = 0; i < metadata.getTexts().length; i++) {
-            BookText text = metadata.getTexts()[i];
-
-            // <msItems>
-            Element msItem = doc.createElement("msItem");
-            msContents.appendChild(msItem);
-            msItem.setAttribute("n", String.valueOf(i));
-
-            Element locus = doc.createElement(MetadataTextsLocusTag);
-            msItem.appendChild(locus);
-            locus.setAttribute(MetadataTextsFirstPageTag, text.getFirstPage());
-            locus.setAttribute(MetadataTextsLastPageTag, text.getLastPage());
-            locus.appendChild(doc.createTextNode(text.getFirstPage() + "-" + text.getLastPage()));
-
-            Element textTitle = doc.createElement(MetadataTextsTitleTag);
-            msItem.appendChild(textTitle);
-            textTitle.appendChild(doc.createTextNode(text.getTitle()));
-
-            msItem.appendChild(note(MetadataTextsIdTag, text.getId(), doc));
-            msItem.appendChild(note(MetadataTextsNumPagesTag, String.valueOf(text.getNumberOfPages()), doc));
-            msItem.appendChild(note(MetadataNumIllustrationsTag,
-                    String.valueOf(text.getNumberOfIllustrations()), doc));
-            msItem.appendChild(note(MetadataTextsLinesPerColTag, String.valueOf(text.getLinesPerColumn()),
-                    doc));
-            msItem.appendChild(note(MetadataTextsLeavesPerGatheringTag,
-                    String.valueOf(text.getLeavesPerGathering()), doc));
-            msItem.appendChild(note(MetadataTextsColsPerPageTag, String.valueOf(text.getColumnsPerPage()),
-                    doc));
-
-            for (String author : text.getAuthors()) {
-                msItem.appendChild(note(MetadataTextsAuthorTag, author, doc));
+            for (String author : data.getAuthors()) {
+                valueElement("author", author, bib, doc);
+            }
+            for (String detail : data.getDetails()) {
+                valueElement("detail", detail, bib, doc);
+            }
+            for (String note : data.getNotes()) {
+                valueElement("note", note, bib, doc);
             }
         }
 
         XMLUtil.write(doc, out, false);
     }
 
-    /**
-     * Create a new &lt;note&gt; tag, with a 'type' attribute. The text
-     * content of this new tag is set to 'text'.
-     *
-     * @param type
-     *            type attribute
-     * @param text
-     *            note text
-     * @param doc
-     *            containing document
-     * @return the note element
-     */
-    private Element note(String type, String text, Document doc) {
-        Element note = doc.createElement("note");
+    private BookMetadata buildMetadata(Document doc) {
+        Element top = doc.getDocumentElement();
 
-        note.setAttribute("type", type);
-        note.appendChild(doc.createTextNode(text));
+        BookMetadata metadata = new BookMetadata();
 
-        return note;
-    }
+        metadata.setWidth(number("width", top));
+        metadata.setHeight(number("height", top));
+        metadata.setDimensionUnits(getAttribute("units", "dimensions", top));
+        metadata.setNumberOfPages(number("totalPages", top));
+        metadata.setNumberOfIllustrations(number("illustrations", top));
+        metadata.setYearStart(number("startDate", top));
+        metadata.setYearEnd(number("endDate", top));
 
-    /**
-     * Get the text value of the first element encountered with the specified
-     * name. If no tags exist within the base element with the specified name,
-     * then all <code>&lt;note&gt;</code> tags are searched. A
-     * <code>&lt;note&gt;</code> tag is determined to match if 'name' matches
-     * the 'type' attribute.
-     *
-     * If both of these searches fails to find any matches, a value of NULL is
-     * returned.
-     *
-     * Example: method call: .firstElementValue(someElement, "commonName");
-     *
-     * If no <code>&lt;commonName&gt;</code> tags exist within <em>someElement</em>,
-     * then this method will search for <code>&lt;note type="commonName"&gt;</code>.
-     * The text content of this tag will be returned if it is found.
-     * 
-     * @param el
-     *            search inside this element
-     * @param name
-     *            name of tag to look for
-     * @return text value of the desired element. if multiple elements exist,
-     *         than the first value is taken
-     */
-    private String firstElementValue(Element el, String name) {
-        NodeList list = el.getElementsByTagName(name);
+        metadata.setBookTexts(getBookTexts(top));
+        metadata.setBiblioDataMap(getBibliographies(top));
 
-        // No XML tag with specified name.
-        if (list.getLength() == 0) {
-            // First check if there is a <note> tag with 'type' attribute equal
-            // to specified name
-            NodeList notes = el.getElementsByTagName("note");
+        NodeList licenseList = top.getElementsByTagName("license");
+        if (licenseList.getLength() == 1 && licenseList.item(0).getNodeType() == Node.ELEMENT_NODE) {
+            Element licenseElement = (Element) licenseList.item(0);
 
-            if (notes == null) {
-                return null;
-            }
+            String url = text("url", licenseElement);
+            metadata.setLicenseUrl(url.equals("") ? null : url);
 
-            // in read() method, create a Map<String, String> (type attribute ->
-            // textContent)?
-            for (int i = 0; i < notes.getLength(); i++) {
-                Element note = (Element) notes.item(i);
-                if (note.getAttribute("type").equals(name)) {
-                    return note.getTextContent();
-                }
-            }
-
-            return null;
+            String logo = text("logo", licenseElement);
+            metadata.setLicenseLogo(logo.equals("") ? null : logo);
         }
 
-        return list.item(0).getTextContent();
+        return metadata;
     }
 
-    private String getString(Element el, String name) {
-        return firstElementValue(el, name);
-    }
+    private List<BookText> getBookTexts(Element parent) {
+        List<BookText> textList = new ArrayList<>();
 
-    private int getInteger(Element el, String name) {
-        return getIntegerQuietly(getString(el, name));
-    }
-
-    private String getAttribute(Element el, String elementName, String attribute) {
-        NodeList list = el.getElementsByTagName(elementName);
-
-        // No XML tag with specified name.
-        if (list.getLength() == 0) {
-            // First check if there is a <note> tag with 'type' attribute equal
-            // to specified name
-            NodeList notes = el.getElementsByTagName("note");
-
-            if (notes == null) {
-                return null;
-            }
-
-            // in read() method, create a Map<String, String> (type attribute ->
-            // textContent)?
-            return  ((Element) notes.item(0)).getAttribute(attribute);
+        NodeList list = parent.getElementsByTagName("texts");
+        if (list.getLength() != 1 || list.item(0).getNodeType() != Node.ELEMENT_NODE) {
+            return textList;
         }
 
-        return ((Element) list.item(0)).getAttribute(attribute);
+        Element texts = (Element) list.item(0);
+        for (Element textEl : getElementsInList("text", texts)) {
+            BookText text = new BookText();
+
+            text.setId(textEl.getAttribute("id"));
+            text.setTextId(text("textId", textEl));
+            text.setColumnsPerPage(number("columnsPerPage", textEl));
+            text.setLeavesPerGathering(number("leavesPerGathering", textEl));
+            text.setLinesPerColumn(number("linesPerColumn", textEl));
+            text.setNumberOfIllustrations(number("illustrations", textEl));
+            text.setNumberOfPages(number("pages", textEl));
+            text.setFirstPage(getAttribute("start", "pages", textEl));
+            text.setLastPage(getAttribute("end", "pages", textEl));
+            text.setTitle(text("title", textEl));
+            text.setLanguage(text("language", textEl));
+
+            textList.add(text);
+        }
+
+        return textList;
     }
 
-    /**
-     * Parse a string as an integer. Will not throw an exception in the event of
-     * a parsing error, instead it will return the value of -1. A parsing error
-     * will happen if the input string is blank, or is not a number.
-     * 
-     * @param integer
-     *            string to parse
-     * @return integer equivalent of input string
-     */
-    private int getIntegerQuietly(String integer) {
-        if (StringUtils.isBlank(integer)) {
+    private Map<String, BiblioData> getBibliographies(Element parent) {
+        Map<String, BiblioData> map = new HashMap<>();
+
+        NodeList list = parent.getElementsByTagName("bibliographies");
+        if (list.getLength() != 1 || list.item(0).getNodeType() != Node.ELEMENT_NODE) {
+            return map;
+        }
+
+        Element bibs = (Element) list.item(0);
+        for (Element el : getElementsInList("bibliography", bibs)) {
+            String lang = el.getAttribute("lang");
+
+            BiblioData data = new BiblioData();
+
+            data.setLanguage(lang);
+            data.setTitle(text("title", el));
+            data.setCommonName(text("commonName", el));
+            data.setCurrentLocation(text("currentLocation", el));
+            data.setDateLabel(text("dateLabel", el));
+            data.setMaterial(text("material", el));
+            data.setOrigin(text("origin", el));
+            data.setRepository(text("repository", el));
+            data.setShelfmark(text("shelfmark", el));
+            data.setType(text("type", el));
+            data.setDetails(getTextValues("detail", el).toArray(new String[0]));
+            data.setAuthors(getTextValues("author", el).toArray(new String[0]));
+            data.setNotes(getTextValues("note", el).toArray(new String[0]));
+
+            map.put(lang, data);
+        }
+
+        return map;
+    }
+
+    private List<Element> getElementsInList(String elementName, Element parent) {
+        List<Element> elements = new ArrayList<>();
+
+        NodeList list = parent.getElementsByTagName(elementName);
+        for (int i = 0; i < list.getLength(); i++) {
+            Node node = list.item(i);
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                elements.add((Element) node);
+            }
+        }
+
+        return elements;
+    }
+
+    private List<String> getTextValues(String elementName, Element parent) {
+        List<String> values = new ArrayList<>();
+
+        for (Element el : getElementsInList(elementName, parent)) {
+            values.add(el.getTextContent());
+        }
+
+        return values;
+    }
+
+    private String getAttribute(String attribute, String tag, Element parent) {
+        List<Element> els = getElementsInList(tag, parent);
+
+        if (els.size() > 0) {
+            return els.get(0).getAttribute(attribute);
+        } else {
+            return "";
+        }
+    }
+
+    private int number(String tagName, Element parent) {
+        String text = text(tagName, parent);
+        if (text == null) {
             return -1;
         }
 
         try {
-            return Integer.parseInt(integer.trim());
+            return Integer.parseInt(text);
         } catch (NumberFormatException e) {
             return -1;
         }
     }
 
-    /**
-     * From an XML document, build the metadata object.
-     * 
-     * @param doc
-     *            XML document
-     * @return metadata
-     */
-    private BookMetadata buildMetadata(Document doc) {
-        BookMetadata metadata = new BookMetadata();
+    private String text(String tagName, Element parent) {
+        List<Element> els = getElementsInList(tagName, parent);
 
-        Element top = doc.getDocumentElement();
-
-        metadata.setTitle(getString(top, MetadataTextsTitleTag));
-        metadata.setDate(getString(top, MetadataDateTag));
-        metadata.setCurrentLocation(getString(top, MetadataCurrentLocationTag));
-        metadata.setRepository(getString(top, MetadataRepositoryTag));
-
-        metadata.setShelfmark(getString(top, "shelfmark"));
-        if (StringUtils.isBlank(metadata.getShelfmark())) {
-            metadata.setShelfmark(getString(top, MetadataShelfmarkTag));
+        if (els.size() > 0) {
+            return els.get(0).getTextContent();
+        } else {
+            return "";
         }
+    }
 
-        metadata.setOrigin(getString(top, MetadataOriginTag));
-        metadata.setWidth(getInteger(top, MetadataWidthTag));
-        metadata.setHeight(getInteger(top, MetadataHeightTag));
-        metadata.setNumberOfIllustrations(getInteger(top, MetadataNumIllustrationsTag));
-        metadata.setCommonName(getString(top, MetadataCommonNameTag));
-        metadata.setMaterial(getString(top, MetadataMaterialTag));
-        metadata.setType(getString(top, MetadataTypeTag));
-        metadata.setDimensions((metadata.getWidth() == -1 || metadata.getHeight() == -1) ? "" : metadata.getWidth()
-                + "x" + metadata.getHeight());
-        metadata.setDimensionUnits(metadata.getWidth() == -1 ? "" : getAttribute(top, MetadataHeightTag, "unit"));
+    private Element valueElement(String tagName, String value, Element parent, Document doc) {
+        Element el = doc.createElement(tagName);
+        el.setTextContent(value);
+        parent.appendChild(el);
 
-        NodeList measureElement = top.getElementsByTagName(MetadataMeasureTag);
-        if (measureElement.getLength() > 0) {
-            Element numPages = (Element) measureElement.item(0);
-            metadata.setNumberOfPages(getIntegerQuietly(numPages.getAttribute(MetadataNumPagesTag)));
-        }
+        return el;
+    }
 
-        NodeList dates = top.getElementsByTagName(MetadataDateTag);
-        if (dates.getLength() > 0) {
-            Element date = (Element) dates.item(0);
+    private Element valueElement(String tagName, int value, Element parent, Document doc) {
+        Element el = doc.createElement(tagName);
+        el.setTextContent(String.valueOf(value));
+        parent.appendChild(el);
 
-            try {
-                metadata.setYearStart(Integer.parseInt(date.getAttribute(MetadataYearStartTag)));
-                metadata.setYearEnd(Integer.parseInt(date.getAttribute(MetadataYearEndTag)));
-            } catch (NumberFormatException e) {
-                metadata.setYearStart(-1);
-                metadata.setYearEnd(-1);
-            }
-        }
-
-        List<BookText> texts = new ArrayList<>();
-        NodeList nodes = doc.getElementsByTagName(MetadataTextsTag);
-
-        for (int i = 0; i < nodes.getLength(); i++) {
-            Element el = (Element) nodes.item(i);
-            BookText text = new BookText();
-
-//            text.setId(String.valueOf(i));
-            text.setId(getString(el, MetadataTextsIdTag));
-            text.setLinesPerColumn(getInteger(el, MetadataTextsLinesPerColTag));
-            text.setColumnsPerPage(getInteger(el, MetadataTextsColsPerPageTag));
-            text.setLeavesPerGathering(getInteger(el, MetadataTextsLeavesPerGatheringTag));
-            text.setNumberOfIllustrations(getInteger(el, MetadataNumIllustrationsTag));
-            text.setNumberOfPages(getInteger(el, MetadataTextsNumPagesTag));
-//            text.setTextId(getString(el, MetadataTextsIdTag));
-            text.setTitle(getString(el, MetadataTextsTitleTag));
-
-            NodeList locii = el.getElementsByTagName(MetadataTextsLocusTag);
-            if (locii.getLength() > 0) {
-                Element range = (Element) locii.item(0);
-
-                text.setFirstPage(range.getAttribute(MetadataTextsFirstPageTag));
-                text.setLastPage(range.getAttribute(MetadataTextsLastPageTag));
-            }
-
-            NodeList notes = el.getElementsByTagName("note");
-            for (int j = 0; j < notes.getLength(); j++) {
-                Element moo = (Element) notes.item(j);
-                if (moo != null && MetadataTextsAuthorTag.equals(moo.getAttribute("type"))) {
-                    text.addAuthor(moo.getTextContent());
-                }
-            }
-
-            texts.add(text);
-        }
-
-        metadata.setTexts(texts.toArray(new BookText[texts.size()]));
-
-        return metadata;
+        return el;
     }
 
     @Override

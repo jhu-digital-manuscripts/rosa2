@@ -105,7 +105,7 @@ public class StoreImplRenameReferencesTest {
 
         basePath = tmp.resolve("data");
         base = new FSByteStreamGroup(basePath);
-        store = new StoreImpl(serializers, bookChecker, collectionChecker, base);
+        store = new StoreImpl(serializers, bookChecker, collectionChecker, base, true);
     }
 
     /**

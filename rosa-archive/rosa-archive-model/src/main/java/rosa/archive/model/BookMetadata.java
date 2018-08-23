@@ -1,36 +1,47 @@
 package rosa.archive.model;
 
 import java.io.Serializable;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
- * Metadata describing a book in the archive.
+ * Metadata describing a book.
+ * 
+ * Bibliographic data is keyed by the language used.
  */
-public final class BookMetadata implements HasId, Serializable {
+public class BookMetadata implements HasId, Serializable {
     private static final long serialVersionUID = 1L;
 
     private String id;
-    private String title;
-    private String date;
+
     private int yearStart;
     private int yearEnd;
-    private String currentLocation;
-    private String repository;
-    private String shelfmark;
-    private String origin;
-    private String dimensions;
+
     private String dimensionUnits;
     private int width;
     private int height;
     private int numberOfIllustrations;
     private int numberOfPages;
-    private String type;
-    private String commonName;
-    private String material;
-    private BookText[] texts;
+
+    private String licenseUrl;
+    private String licenseLogo;
 
     /**
-     * Create empty BookMetadata.
+     * Map ID -&gt; BookText
+     * &lt;text id=""&gt; element
+     * OR
+     * &lt;msItem n=""&gt;
+     */
+    private List<BookText> bookTexts;
+    /**
+     * Map Language -&gt; Bibliographic information
+     */
+    private Map<String, BiblioData> biblioDataMap;
+
+    /**
+     * Create empty BookMetadata
      */
     public BookMetadata() {
         yearStart = -1;
@@ -39,6 +50,13 @@ public final class BookMetadata implements HasId, Serializable {
         height = -1;
         numberOfIllustrations = -1;
         numberOfPages = -1;
+
+        bookTexts = new ArrayList<>();
+        biblioDataMap = new HashMap<>();
+    }
+
+    public String getDimensionsString() {
+        return width + dimensionUnits + " x " + height + dimensionUnits;
     }
 
     @Override
@@ -49,22 +67,6 @@ public final class BookMetadata implements HasId, Serializable {
     @Override
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
     }
 
     public int getYearStart() {
@@ -83,44 +85,12 @@ public final class BookMetadata implements HasId, Serializable {
         this.yearEnd = yearEnd;
     }
 
-    public String getCurrentLocation() {
-        return currentLocation;
+    public String getDimensionUnits() {
+        return dimensionUnits;
     }
 
-    public void setCurrentLocation(String currentLocation) {
-        this.currentLocation = currentLocation;
-    }
-
-    public String getRepository() {
-        return repository;
-    }
-
-    public void setRepository(String repository) {
-        this.repository = repository;
-    }
-
-    public String getShelfmark() {
-        return shelfmark;
-    }
-
-    public void setShelfmark(String shelfmark) {
-        this.shelfmark = shelfmark;
-    }
-
-    public String getOrigin() {
-        return origin;
-    }
-
-    public void setOrigin(String origin) {
-        this.origin = origin;
-    }
-
-    public String getDimensions() {
-        return dimensions;
-    }
-
-    public void setDimensions(String dimensions) {
-        this.dimensions = dimensions;
+    public void setDimensionUnits(String dimensionUnits) {
+        this.dimensionUnits = dimensionUnits;
     }
 
     public int getWidth() {
@@ -155,44 +125,40 @@ public final class BookMetadata implements HasId, Serializable {
         this.numberOfPages = numberOfPages;
     }
 
-    public String getType() {
-        return type;
+    public Map<String, BiblioData> getBiblioDataMap() {
+        return biblioDataMap;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setBiblioDataMap(Map<String, BiblioData> biblioDataMap) {
+        this.biblioDataMap = biblioDataMap;
     }
 
-    public String getCommonName() {
-        return commonName;
+    public List<BookText> getBookTexts() {
+        return bookTexts;
     }
 
-    public void setCommonName(String commonName) {
-        this.commonName = commonName;
+    public void setBookTexts(List<BookText> bookTexts) {
+        this.bookTexts = bookTexts;
     }
 
-    public String getMaterial() {
-        return material;
+    public boolean supportsLanguage(String langaugeCode) {
+        return biblioDataMap.containsKey(langaugeCode);
     }
 
-    public void setMaterial(String material) {
-        this.material = material;
+    public String getLicenseUrl() {
+        return licenseUrl;
     }
 
-    public String getDimensionUnits() {
-        return dimensionUnits;
+    public void setLicenseUrl(String licenseUrl) {
+        this.licenseUrl = licenseUrl;
     }
 
-    public void setDimensionUnits(String dimensionUnits) {
-        this.dimensionUnits = dimensionUnits;
+    public String getLicenseLogo() {
+        return licenseLogo;
     }
 
-    public BookText[] getTexts() {
-        return texts;
-    }
-
-    public void setTexts(BookText[] texts) {
-        this.texts = texts;
+    public void setLicenseLogo(String licenseLogo) {
+        this.licenseLogo = licenseLogo;
     }
 
     @Override
@@ -200,79 +166,56 @@ public final class BookMetadata implements HasId, Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        BookMetadata metadata = (BookMetadata) o;
+        BookMetadata that = (BookMetadata) o;
 
-        if (height != metadata.height) return false;
-        if (numberOfIllustrations != metadata.numberOfIllustrations) return false;
-        if (numberOfPages != metadata.numberOfPages) return false;
-        if (width != metadata.width) return false;
-        if (yearEnd != metadata.yearEnd) return false;
-        if (yearStart != metadata.yearStart) return false;
-        if (commonName != null ? !commonName.equals(metadata.commonName) : metadata.commonName != null) return false;
-        if (currentLocation != null ? !currentLocation.equals(metadata.currentLocation) : metadata.currentLocation != null)
+        if (yearStart != that.yearStart) return false;
+        if (yearEnd != that.yearEnd) return false;
+        if (width != that.width) return false;
+        if (height != that.height) return false;
+        if (numberOfIllustrations != that.numberOfIllustrations) return false;
+        if (numberOfPages != that.numberOfPages) return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (dimensionUnits != null ? !dimensionUnits.equals(that.dimensionUnits) : that.dimensionUnits != null)
             return false;
-        if (date != null ? !date.equals(metadata.date) : metadata.date != null) return false;
-        if (dimensionUnits != null ? !dimensionUnits.equals(metadata.dimensionUnits) : metadata.dimensionUnits != null)
-            return false;
-        if (dimensions != null ? !dimensions.equals(metadata.dimensions) : metadata.dimensions != null) return false;
-        if (id != null ? !id.equals(metadata.id) : metadata.id != null) return false;
-        if (material != null ? !material.equals(metadata.material) : metadata.material != null) return false;
-        if (origin != null ? !origin.equals(metadata.origin) : metadata.origin != null) return false;
-        if (repository != null ? !repository.equals(metadata.repository) : metadata.repository != null) return false;
-        if (shelfmark != null ? !shelfmark.equals(metadata.shelfmark) : metadata.shelfmark != null) return false;
-        if (!Arrays.equals(texts, metadata.texts)) return false;
-        if (title != null ? !title.equals(metadata.title) : metadata.title != null) return false;
-        if (type != null ? !type.equals(metadata.type) : metadata.type != null) return false;
+        if (licenseUrl != null ? !licenseUrl.equals(that.licenseUrl) : that.licenseUrl != null) return false;
+        if (licenseLogo != null ? !licenseLogo.equals(that.licenseLogo) : that.licenseLogo != null) return false;
+        if (bookTexts != null ? !bookTexts.equals(that.bookTexts) : that.bookTexts != null) return false;
+        return !(biblioDataMap != null ? !biblioDataMap.equals(that.biblioDataMap) : that.biblioDataMap != null);
 
-        return true;
     }
 
     @Override
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (title != null ? title.hashCode() : 0);
-        result = 31 * result + (date != null ? date.hashCode() : 0);
         result = 31 * result + yearStart;
         result = 31 * result + yearEnd;
-        result = 31 * result + (currentLocation != null ? currentLocation.hashCode() : 0);
-        result = 31 * result + (repository != null ? repository.hashCode() : 0);
-        result = 31 * result + (shelfmark != null ? shelfmark.hashCode() : 0);
-        result = 31 * result + (origin != null ? origin.hashCode() : 0);
-        result = 31 * result + (dimensions != null ? dimensions.hashCode() : 0);
         result = 31 * result + (dimensionUnits != null ? dimensionUnits.hashCode() : 0);
         result = 31 * result + width;
         result = 31 * result + height;
         result = 31 * result + numberOfIllustrations;
         result = 31 * result + numberOfPages;
-        result = 31 * result + (type != null ? type.hashCode() : 0);
-        result = 31 * result + (commonName != null ? commonName.hashCode() : 0);
-        result = 31 * result + (material != null ? material.hashCode() : 0);
-        result = 31 * result + (texts != null ? Arrays.hashCode(texts) : 0);
+        result = 31 * result + (licenseUrl != null ? licenseUrl.hashCode() : 0);
+        result = 31 * result + (licenseLogo != null ? licenseLogo.hashCode() : 0);
+        result = 31 * result + (bookTexts != null ? bookTexts.hashCode() : 0);
+        result = 31 * result + (biblioDataMap != null ? biblioDataMap.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return "BookMetadata{" +
+        return " BookMetadata{" +
                 "id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", date='" + date + '\'' +
                 ", yearStart=" + yearStart +
                 ", yearEnd=" + yearEnd +
-                ", currentLocation='" + currentLocation + '\'' +
-                ", repository='" + repository + '\'' +
-                ", shelfmark='" + shelfmark + '\'' +
-                ", origin='" + origin + '\'' +
-                ", dimensions='" + dimensions + '\'' +
                 ", dimensionUnits='" + dimensionUnits + '\'' +
                 ", width=" + width +
                 ", height=" + height +
                 ", numberOfIllustrations=" + numberOfIllustrations +
                 ", numberOfPages=" + numberOfPages +
-                ", type='" + type + '\'' +
-                ", commonName='" + commonName + '\'' +
-                ", material='" + material + '\'' +
-                ", texts=" + Arrays.toString(texts) +
+                ", licenseUrl='" + licenseUrl + '\'' +
+                ", licenseLogo='" + licenseLogo + '\'' +
+                ", bookTexts=" + bookTexts +
+                ", biblioDataMap=" + biblioDataMap +
                 '}';
     }
 }

@@ -124,7 +124,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     	{
 	        Query query = new Query(JHSearchField.MARGINALIA, "Quod");
 	        SearchResult result = service.search(query, null);
-	
+
 	        assertNotNull("Search result was NULL", result);
 	        assertEquals("Unexpected number of results found.", 5, result.getTotal());
     	}

@@ -99,15 +99,16 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
 
         result.setId(constructRangeURI(col, book, TEXT_RANGE_TYPE, range_id));
 
-        String lang_code = "lc";
-        BookMetadata metadata = book.getBookMetadata(lang_code);
+        String lang_code = "en";
+        BookMetadata metadata = book.getBookMetadata();
+        
         if (metadata == null || range_id == null || range_id.isEmpty()) {
             return null;
         }
 
         List<String> ranges = new ArrayList<>();
 
-        for (BookText text : metadata.getTexts()) {
+        for (BookText text : metadata.getBookTexts()) {
             if (range_id.equals(TOP_RANGE_ID)) {
                 // If TOP range, collect all BookText text_id's for sub-ranges
                 result.setViewingHint(ViewingHint.TOP);

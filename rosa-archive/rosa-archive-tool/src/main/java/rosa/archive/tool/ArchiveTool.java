@@ -169,7 +169,7 @@ public class ArchiveTool {
         // Create the tool and run the command
         ByteStreamGroup base = new FSByteStreamGroup(config.getArchivePath());
         Store store = new StoreImpl(injector.getInstance(SerializerSet.class), injector.getInstance(BookChecker.class),
-                injector.getInstance(BookCollectionChecker.class), base);
+                injector.getInstance(BookCollectionChecker.class), base, true);
 
         ArchiveTool tool = new ArchiveTool(store, config);
         tool.aorTranscriptionChecker = injector.getInstance(AORTranscriptionChecker.class);

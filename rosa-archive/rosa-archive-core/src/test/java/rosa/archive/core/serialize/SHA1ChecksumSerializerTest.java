@@ -27,7 +27,7 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest<SHA1Checksum>
         SHA1Checksum info = loadResource(COLLECTION_NAME, BOOK_NAME, "LudwigXV7.SHA1SUM");
 
         assertNotNull(info);
-        assertEquals(470, info.getAllIds().size());
+        assertEquals(471, info.getAllIds().size());
 
         String hash = info.checksums().get("LudwigXV7.permission_en.html");
         assertEquals("1a7db4954a300cae8ef041e2eaf6ec7b9a04d832", hash);

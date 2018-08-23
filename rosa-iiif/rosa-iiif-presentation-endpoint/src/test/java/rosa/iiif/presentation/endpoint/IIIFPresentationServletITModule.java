@@ -27,7 +27,7 @@ public class IIIFPresentationServletITModule extends AbstractModule {
     @Provides
     public Store store(SerializerSet serializerSet, BookChecker bookChecker, BookCollectionChecker collectionChecker,
             @Named("archive.path") String archive_path) {
-        return new StoreImpl(serializerSet, bookChecker, collectionChecker, new FSByteStreamGroup(archive_path));
+        return new StoreImpl(serializerSet, bookChecker, collectionChecker, new FSByteStreamGroup(archive_path), false);
     }
 
     @Provides
