@@ -1,22 +1,7 @@
 package rosa.archive.core;
 
-import com.google.inject.Inject;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.TemporaryFolder;
-import org.junit.runner.RunWith;
-import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
-import rosa.archive.core.check.BookChecker;
-import rosa.archive.core.check.BookCollectionChecker;
-import rosa.archive.core.serialize.SerializerSet;
-import rosa.archive.model.FileMap;
-import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.InternalReference;
-import rosa.archive.model.aor.Marginalia;
-import rosa.archive.model.aor.MarginaliaLanguage;
-import rosa.archive.model.aor.Position;
-import rosa.archive.model.aor.ReferenceTarget;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,11 +11,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
+import org.junit.runner.RunWith;
+
+import com.google.inject.Inject;
+
+import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
+import rosa.archive.core.check.BookChecker;
+import rosa.archive.core.check.BookCollectionChecker;
+import rosa.archive.core.serialize.SerializerSet;
+import rosa.archive.model.FileMap;
+import rosa.archive.model.aor.AnnotatedPage;
 
 /**
  * Test a part of the method {@link Store#renameTranscriptions(String, String, boolean, List)}.

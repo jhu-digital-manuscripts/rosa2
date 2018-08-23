@@ -4,10 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookCollection;
-import rosa.archive.model.aor.AnnotatedPage;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
