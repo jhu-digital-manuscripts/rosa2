@@ -14,7 +14,6 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.Canvas;
-import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.Image;
 import rosa.iiif.presentation.model.Reference;

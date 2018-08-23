@@ -27,7 +27,6 @@ import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.*;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.extras.ExternalResourceDb;
 import rosa.iiif.presentation.core.extras.ISNIResourceDb;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.core.html.AdapterSet;
