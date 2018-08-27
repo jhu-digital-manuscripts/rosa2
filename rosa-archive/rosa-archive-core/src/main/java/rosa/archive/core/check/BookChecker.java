@@ -348,37 +348,37 @@ public class BookChecker extends AbstractArchiveChecker {
         } else {
             for (BookText text : metadata.getTexts()) {
                 if (StringUtils.isBlank(text.getFirstPage())) {
-                    warnings.add("Metadata text first page not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata text first page not set. [" + metadata.getId() + "]");
                 } else if (!text.getFirstPage().matches(PAGE_PATTERN) && metadata.getType().equalsIgnoreCase(MANUSCRIPT)) {
                     errors.add("Page has bad format. [" + metadata.getId() + ":" + text.getFirstPage() + "]");
                 }
                 if (StringUtils.isBlank(text.getLastPage())) {
-                    warnings.add("Metadata text last page not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata text last page not set. [" + metadata.getId() + "]");
                 } else if (!text.getLastPage().matches(PAGE_PATTERN) && metadata.getType().equalsIgnoreCase(MANUSCRIPT)) {
                     errors.add("Page has bad format. [" + metadata.getId() + ":" + text.getLastPage() + "]");
                 }
                 if (StringUtils.isBlank(text.getTitle())) {
-                    warnings.add("Metadata text title not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata text title not set. [" + metadata.getId() + "]");
                 }
                 if (text.getNumberOfIllustrations() == -1) {
-                    warnings.add("Metadata number of illustrations not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata number of illustrations not set. [" + metadata.getId() + "]");
                 } else if (text.getNumberOfIllustrations() > metadata.getNumberOfIllustrations()) {
                     errors.add("Number of illustrations in text [" + text.getNumberOfIllustrations()
                             + "] is greater than the number if illustrations in the manuscript ["
-                            + metadata.getNumberOfIllustrations() + "] {" + metadata.getId() + ":" + text.getId() + "}");
+                            + metadata.getNumberOfIllustrations() + "] {" + metadata.getId() + "}");
                 }
                 if (text.getNumberOfPages() == -1) {
-                    warnings.add("Metadata number of pages not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata number of pages not set. [" + metadata.getId() + "]");
                 } else if (text.getNumberOfPages() > metadata.getNumberOfPages()) {
                     errors.add("Number of pages in text [" + text.getNumberOfPages() + "] exceeds number " +
                             "of pages in the manuscript [" + metadata.getNumberOfPages() + "] {"
-                            + metadata.getId() + ":" + text.getId() + "}");
+                            + metadata.getId() + "}");
                 }
                 if (text.getColumnsPerPage() == -1) {
-                    warnings.add("Metadata columns per page not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata columns per page not set. [" + metadata.getId() + "]");
                 }
                 if (text.getLinesPerColumn() == -1) {
-                    warnings.add("Metadata lines per column not set. [" + metadata.getId() + ":" + text.getId() + "]");
+                    warnings.add("Metadata lines per column not set. [" + metadata.getId() + "]");
                 }
             }
         }
@@ -436,7 +436,7 @@ public class BookChecker extends AbstractArchiveChecker {
                 for (int j = 0; j < reference.getTexts().length; j++) {
                     BookText refText = reference.getTexts()[j];
                     BookText testText = test.getTexts()[j];
-                    String textLabel = " [" + refText.getTextId() + "/" + testText.getTextId() + "] ";
+                    String textLabel = " [" + j + "] ";
 
                     if (testText.getLinesPerColumn() != refText.getLinesPerColumn()) {
                         errors.add("Book text lines per column different" + textLabel

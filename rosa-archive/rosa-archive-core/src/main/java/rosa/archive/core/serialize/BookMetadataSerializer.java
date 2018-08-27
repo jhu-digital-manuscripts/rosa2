@@ -97,10 +97,8 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             Element text = doc.createElement("text");
             texts.appendChild(text);
 
-            text.setAttribute("id", t.getId());
             valueElement("language", t.getLanguage(), text, doc);
             valueElement("title", t.getTitle(), text, doc);
-            valueElement("textId", t.getTextId(), text, doc);
 
             Element pages = valueElement("pages", t.getNumberOfPages(), text, doc);
             pages.setAttribute("end", t.getLastPage());
@@ -187,8 +185,6 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         for (Element textEl : getElementsInList("text", texts)) {
             BookText text = new BookText();
 
-            text.setId(textEl.getAttribute("id"));
-            text.setTextId(text("textId", textEl));
             text.setColumnsPerPage(number("columnsPerPage", textEl));
             text.setLeavesPerGathering(number("leavesPerGathering", textEl));
             text.setLinesPerColumn(number("linesPerColumn", textEl));
