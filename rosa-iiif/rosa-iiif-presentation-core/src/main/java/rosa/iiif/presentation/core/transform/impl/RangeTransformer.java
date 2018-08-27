@@ -108,14 +108,18 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
 
         List<String> ranges = new ArrayList<>();
 
+        int text_count = 0;
         for (BookText text : metadata.getBookTexts()) {
+            text_count++;
+            String text_id = String.valueOf(text_count);
+            
             if (range_id.equals(TOP_RANGE_ID)) {
                 // If TOP range, collect all BookText text_id's for sub-ranges
                 result.setViewingHint(ViewingHint.TOP);
                 result.setLabel("Text Type", lang_code);
 
-                ranges.add(constructRangeURI(col, book, TEXT_RANGE_TYPE, text.getTextId()));
-            } else if (text.getTextId().equals(range_id)) {
+                ranges.add(constructRangeURI(col, book, TEXT_RANGE_TYPE, text_id));
+            } else if (text_id.equals(range_id)) {
                 // If specific range, return canvases for specific BookText text_id
                 result.setLabel("Text Type: " + range_id, lang_code);
 

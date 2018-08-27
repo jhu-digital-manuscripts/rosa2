@@ -46,7 +46,6 @@ public class DeprecatedBookMetadataSerializer implements Serializer<DeprecatedBo
     private static final String MetadataTextsColsPerPageTag = "columnsPerFolio";
     private static final String MetadataTextsLeavesPerGatheringTag = "leavesPerGathering";
     private static final String MetadataTextsNumPagesTag = "folios";
-    private static final String MetadataTextsIdTag = "textid";
     private static final String MetadataTextsTitleTag = "title";
     private static final String MetadataTextsLocusTag = "locus";
     private static final String MetadataTextsFirstPageTag = "from";
@@ -186,7 +185,6 @@ public class DeprecatedBookMetadataSerializer implements Serializer<DeprecatedBo
             msItem.appendChild(textTitle);
             textTitle.appendChild(doc.createTextNode(text.getTitle()));
 
-            msItem.appendChild(note(MetadataTextsIdTag, text.getId(), doc));
             msItem.appendChild(note(MetadataTextsNumPagesTag, String.valueOf(text.getNumberOfPages()), doc));
             msItem.appendChild(note(MetadataNumIllustrationsTag,
                     String.valueOf(text.getNumberOfIllustrations()), doc));
@@ -386,14 +384,11 @@ public class DeprecatedBookMetadataSerializer implements Serializer<DeprecatedBo
             Element el = (Element) nodes.item(i);
             BookText text = new BookText();
 
-//            text.setId(String.valueOf(i));
-            text.setId(getString(el, MetadataTextsIdTag));
             text.setLinesPerColumn(getInteger(el, MetadataTextsLinesPerColTag));
             text.setColumnsPerPage(getInteger(el, MetadataTextsColsPerPageTag));
             text.setLeavesPerGathering(getInteger(el, MetadataTextsLeavesPerGatheringTag));
             text.setNumberOfIllustrations(getInteger(el, MetadataNumIllustrationsTag));
             text.setNumberOfPages(getInteger(el, MetadataTextsNumPagesTag));
-//            text.setTextId(getString(el, MetadataTextsIdTag));
             text.setTitle(getString(el, MetadataTextsTitleTag));
 
             NodeList locii = el.getElementsByTagName(MetadataTextsLocusTag);

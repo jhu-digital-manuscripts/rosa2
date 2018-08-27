@@ -70,7 +70,7 @@ public class DeprecatedBookMetadataSerializerTest extends BaseSerializerTest<Dep
         assertEquals("                        <locus from=\"Page 0\" to=\"Page 1\">Page 0-Page 1</locus>",
                     lines.get(28));
         assertEquals("                        <note type=\"linesPerColumn\">45</note>",
-                    lines.get(53));
+                    lines.get(50));
     }
 
     @Override
@@ -102,7 +102,6 @@ public class DeprecatedBookMetadataSerializerTest extends BaseSerializerTest<Dep
         List<BookText> bookTextList = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
             BookText text = new BookText();
-            text.setId("ID" + i);
             text.setFirstPage("Page " + i);
             text.setLastPage("Page " + (i+1));
             text.setColumnsPerPage(2);

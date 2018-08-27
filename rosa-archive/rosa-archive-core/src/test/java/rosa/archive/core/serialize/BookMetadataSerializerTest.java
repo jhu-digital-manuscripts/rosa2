@@ -36,20 +36,18 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
             "        <endDate>1950</endDate>\n" +
             "    </dates>\n" +
             "    <texts>\n" +
-            "        <text id=\"1\">\n" +
+            "        <text>\n" +
             "            <language>fr</language>\n" +
             "            <title>title</title>\n" +
-            "            <textId>rose</textId>\n" +
             "            <pages end=\"100r\" start=\"1r\">100</pages>\n" +
             "            <illustrations>1</illustrations>\n" +
             "            <linesPerColumn>2</linesPerColumn>\n" +
             "            <columnsPerPage>3</columnsPerPage>\n" +
             "            <leavesPerGathering>4</leavesPerGathering>\n" +
             "        </text>\n" +
-            "        <text id=\"2\">\n" +
+            "        <text>\n" +
             "            <language>fr</language>\n" +
             "            <title>title</title>\n" +
-            "            <textId>not rose</textId>\n" +
             "            <pages end=\"300r\" start=\"100v\">200</pages>\n" +
             "            <illustrations>0</illustrations>\n" +
             "            <linesPerColumn>0</linesPerColumn>\n" +
@@ -144,7 +142,6 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         BookText text = metadata.getBookTexts().get(0);
         assertNotNull(text);
         assertEquals("title", text.getTitle());
-        assertEquals("rose", text.getTextId());
         assertEquals(100, text.getNumberOfPages());
         assertEquals("1r", text.getFirstPage());
         assertEquals("100r", text.getLastPage());
@@ -241,9 +238,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
 //        metadata.setLicenseUrl("http://example.org/license");
 
         BookText t1 = new BookText();
-        t1.setId("1");
         t1.setTitle("title");
-        t1.setTextId("rose");
         t1.setFirstPage("1r");
         t1.setLastPage("100r");
         t1.setNumberOfPages(100);
@@ -255,9 +250,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         metadata.getBookTexts().add(t1);
 
         BookText t2 = new BookText();
-        t2.setId("2");
         t2.setTitle("title");
-        t2.setTextId("not rose");
         t2.setFirstPage("100v");
         t2.setLastPage("300r");
         t2.setNumberOfPages(200);
