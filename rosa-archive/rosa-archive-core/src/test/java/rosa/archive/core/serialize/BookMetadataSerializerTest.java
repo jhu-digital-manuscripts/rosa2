@@ -68,6 +68,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
             "            <shelfmark>Shelfmark String</shelfmark>\n" +
             "            <detail>Bibliographic Details</detail>\n" +
             "            <author>Author</author>\n" +
+            "            <reader>Moo Jones</reader>\n" +
             "            <note>Note</note>\n" +
             "        </bibliography>\n" +
             "        <bibliography lang=\"fr\">\n" +
@@ -82,6 +83,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
             "            <shelfmark>Shelfmark String</shelfmark>\n" +
             "            <detail>Bibliographic Details</detail>\n" +
             "            <author>Author</author>\n" +
+            "            <reader>Moo Jones</reader>\n" +
             "        </bibliography>\n" +
             "    </bibliographies>\n" +
             "</book>";
@@ -125,6 +127,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         assertNotNull(biblio.getAuthors());
         assertEquals(1, biblio.getAuthors().length);
         assertEquals("Author", biblio.getAuthors()[0]);
+        assertEquals("Moo Jones", biblio.getReaders()[0]);
         assertNotNull(biblio.getNotes());
         assertEquals(0, biblio.getNotes().length);
 
@@ -274,6 +277,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         d2.setShelfmark("Shelfmark String");
         d2.setDetails(new String[]{"Bibliographic Details"});
         d2.setAuthors(new String[]{"Author"});
+        d2.setReaders(new String[]{"Moo Jones"});
         metadata.getBiblioDataMap().put("fr", d2);
 
         BiblioData d1 = new BiblioData();
@@ -289,6 +293,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         d1.setShelfmark("Shelfmark String");
         d1.setDetails(new String[] {"Bibliographic Details"});
         d1.setAuthors(new String[] {"Author"});
+        d1.setReaders(new String[]{"Moo Jones"});
         d1.setNotes(new String[] {"Note"});
         metadata.getBiblioDataMap().put("en", d1);
 
