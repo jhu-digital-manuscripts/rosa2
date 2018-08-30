@@ -28,6 +28,7 @@ import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.*;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.extras.ISNIResourceDb;
+import rosa.iiif.presentation.core.html.AnnotationBaseHtmlAdapter;
 import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.core.html.AdapterSet;
 import rosa.iiif.presentation.core.util.AnnotationLocationUtil;
@@ -99,22 +100,20 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.getMetadata().put("type", new HtmlValue(anno.getClass().getSimpleName()));
 
+        String text = locationIcon + " " + anno.toPrettyString();
         if (anno instanceof Marginalia) {
-            a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
-                    htmlAdapters.get(Marginalia.class).adapt(collection, book, image, (Marginalia) anno, isni_db), language));
+            text = htmlAdapters.get(Marginalia.class).adapt(collection, book, image, (Marginalia) anno, isni_db);
         } else if (anno instanceof Drawing) {
-            a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
-                    htmlAdapters.get(Drawing.class).adapt(collection, book, image, (Drawing) anno), language));
+            text = htmlAdapters.get(Drawing.class).adapt(collection, book, image, (Drawing) anno);
         } else if (anno instanceof Table) {
-            a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
-                    htmlAdapters.get(Table.class).adapt(collection, book, image, (Table) anno), language));
+            text = htmlAdapters.get(Table.class).adapt(collection, book, image, (Table) anno);
         } else if (anno instanceof Graph) {
-            a.setDefaultSource(new AnnotationSource("moo", DC_TEXT, "text/html",
-                    htmlAdapters.get(Graph.class).adapt(collection, book, image, (Graph) anno), language));
-        } else {
-            a.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html",
-                    locationIcon + " " + anno.toPrettyString(), language));
+            text = htmlAdapters.get(Graph.class).adapt(collection, book, image, (Graph) anno);
+        } else if (anno instanceof Calculation) {
+            text = htmlAdapters.get(Calculation.class).adapt(collection, book, image, (Calculation) anno);
         }
+
+        a.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html", text, language));
 
         if (image == null) {
             image = getPageImage(book.getImages(), getAnnotationPage(anno.getId()));
