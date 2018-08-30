@@ -6,7 +6,7 @@ package rosa.iiif.presentation.model;
  */
 public enum PresentationRequestType {
     MANIFEST("manifest"), SEQUENCE("sequence"), CANVAS("canvas"), ANNOTATION("annotation"), ANNOTATION_LIST("list"), RANGE(
-            "range"), LAYER("layer"), COLLECTION("collection"), CONTENT("res");
+            "range"), COLLECTION("collection"), JHSEASRCH("jhsearch");
 
     private final String keyword;
 
