@@ -31,6 +31,9 @@ public class CalculationHtmlAdapter extends AnnotationBaseHtmlAdapter<Calculatio
         if (isNotEmpty(calc.getContent())) {
             writer.writeStartElement("ul");
             for (String part : massageContent(calc.getContent())) {
+                if (part.trim().isEmpty()) {
+                    continue;
+                }
                 writer.writeStartElement("li");
                 writer.writeCharacters(part.trim());
                 writer.writeEndElement();
