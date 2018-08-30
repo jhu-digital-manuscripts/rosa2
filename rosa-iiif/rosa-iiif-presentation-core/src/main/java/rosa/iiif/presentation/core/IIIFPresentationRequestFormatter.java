@@ -5,8 +5,7 @@ import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 
 /**
- * RECOMMENDED: {scheme}://{host}{/prefix}/{collection.book}/{object}/{object identifier}
- *              {scheme}://{host}{/prefix}/{id}             /{type}  /{name}
+ * {scheme}://{host}{/prefix}/{collection}/{book}/{object}
  */
 public class IIIFPresentationRequestFormatter {
 

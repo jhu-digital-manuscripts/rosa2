@@ -42,11 +42,6 @@ public class PresentationUris {
                 PresentationRequestType.SEQUENCE));
     }
     
-    public String getLayerURI(String collection, String book, String name) {
-        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
-                PresentationRequestType.LAYER));
-    }
-    
     public String getRangeURI(String collection, String book, String name) {
         return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
                 PresentationRequestType.RANGE));
