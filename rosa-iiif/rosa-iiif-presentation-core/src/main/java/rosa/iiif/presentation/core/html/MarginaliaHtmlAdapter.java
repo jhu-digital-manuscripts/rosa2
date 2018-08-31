@@ -33,6 +33,8 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
 
     @Override
     void annotationAsHtml(BookCollection col, Book book, BookImage page, Marginalia annotation) throws XMLStreamException{
+        final String COLLECTION_URI = pres_uris.getCollectionURI(col.getId());
+
         List<String> transcription = new ArrayList<>();
         List<String> people = new ArrayList<>();
         List<String> books = new ArrayList<>();
@@ -99,9 +101,9 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
 
         addListOfValues("Symbols:", symb, writer);
 
-        addSearchableList("People:", people, JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer, ISNIResourceDb.class);
-        addListOfValues("Books:", books, writer);
-        addListOfValues("Locations:", locs, writer);
+        addSearchableList("People:", people, JHSearchField.PEOPLE, COLLECTION_URI, writer, ISNIResourceDb.class);
+        addSearchableList("Books:", books, JHSearchField.BOOK, COLLECTION_URI, writer);
+        addSearchableList("Locations:", locs, JHSearchField.PLACE, COLLECTION_URI, writer);
 
         // Add list of X-refs
         addXRefs(xrefs, writer);
