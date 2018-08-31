@@ -34,6 +34,7 @@ import rosa.iiif.presentation.core.IIIFPresentationService;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuImageIdMapper;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.html.CalculationHtmlAdapter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.core.jhsearch.LuceneJHSearchService;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
@@ -99,10 +100,12 @@ public class IIIFPresentationServletModule extends ServletModule {
         bind(GraphHtmlAdapter.class);
         bind(DrawingHtmlAdapter.class);
         bind(TableHtmlAdapter.class);
+        bind(CalculationHtmlAdapter.class);
         adapters.addBinding().to(MarginaliaHtmlAdapter.class);
         adapters.addBinding().to(GraphHtmlAdapter.class);
         adapters.addBinding().to(DrawingHtmlAdapter.class);
         adapters.addBinding().to(TableHtmlAdapter.class);
+        adapters.addBinding().to(CalculationHtmlAdapter.class);
 
         bind(AdapterSet.class);
 

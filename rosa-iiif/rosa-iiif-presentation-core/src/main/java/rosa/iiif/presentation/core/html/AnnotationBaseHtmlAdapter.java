@@ -4,6 +4,7 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.AorLocation;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Location;
@@ -22,6 +23,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -37,6 +39,7 @@ import java.util.logging.Logger;
  */
 public abstract class AnnotationBaseHtmlAdapter<T> {
     private static final Logger LOGGER = Logger.getLogger("AnnotationHtmlAdapter");
+    protected static final boolean[] NO_ORIENTATION = new boolean[] { false, false, false, false };
 
     protected final PresentationUris pres_uris;
     private List<ExternalResourceDb> externalDbs;
@@ -200,7 +203,7 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
         writer.writeEndElement();
     }
 
-    void addInternalRefs(BookCollection col, List<InternalReference> refs, XMLStreamWriter writer) throws XMLStreamException {
+    void addInternalRefs(BookCollection col, Annotation a, List<InternalReference> refs, XMLStreamWriter writer) throws XMLStreamException {
         if (refs == null || refs.isEmpty()) {
             return;
         }
@@ -209,35 +212,49 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
         addSimpleElement(writer, "span", "Internal References:", "class", "emphasize");
         writer.writeCharacters(" ");
 
+        if (hasExtraInternalRef(col, a)) {
+            InternalReference annoRef = fromInternalRefAttr(a);
+            writeInternalRef(col, annoRef.getTargets().get(0), writer);
+        }
+
         for (int i = 0; i < refs.size(); i++) {
             InternalReference ref = refs.get(i);
-            if (i > 0) {
+            if (i > 0 || hasExtraInternalRef(col, a)) {
                 writer.writeCharacters(", ");
             }
 
             writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()));
-            for (int j = 0; j < ref.getTargets().size(); j++) {
-                ReferenceTarget tar = ref.getTargets().get(j);
-
-                AorLocation location = col.getAnnotationMap().get(tar.getTargetId());
-                String targetId = targetId(location);
-                if (targetId != null) {
-                    writer.writeCharacters("(");
-                    writer.writeStartElement("a");
-                    writer.writeAttribute("class", "internal-ref");
-                    writer.writeAttribute("href", "javascript:;");
-                    writer.writeAttribute("data-targetId", targetId);
-                    writer.writeAttribute("data-manifestid", manifestId(location));
-                    writer.writeCharacters("[" + tar.getText() + "]");
-                    writer.writeEndElement();
-                    writer.writeCharacters(")");
-                } else {
-                    writer.writeCharacters("[" + tar.getText() + "]");
-                }
+            for (ReferenceTarget tar : ref.getTargets()) {
+                writeInternalRef(col, tar, writer);
             }
         }
 
         writer.writeEndElement();
+    }
+
+    private void writeInternalRef(BookCollection col, ReferenceTarget target, XMLStreamWriter writer) throws XMLStreamException {
+        AorLocation loc = col.getAnnotationMap().get(target.getTargetId());
+
+        if (targetId(loc) != null) {
+            writer.writeStartElement("a");
+            writer.writeAttribute("class", "internal-ref");
+            writer.writeAttribute("href", "javascript:;");
+            writer.writeAttribute("data-targetId", targetId(loc));
+            writer.writeAttribute("data-manifestid", manifestId(loc));
+            writer.writeCharacters(target.getText());
+            writer.writeEndElement();
+        } else {
+            writer.writeCharacters(target.getText());
+        }
+    }
+
+    private boolean hasExtraInternalRef(BookCollection col, Annotation a) {
+        return isNotEmpty(a.getInternalRef()) && col.getAnnotationMap().containsKey(a.getInternalRef());
+    }
+
+    private InternalReference fromInternalRefAttr(Annotation a) {
+        String text = a.getReferencedText();
+        return new InternalReference(text, Collections.singletonList(new ReferenceTarget(a.getInternalRef(), text)));
     }
 
     /**

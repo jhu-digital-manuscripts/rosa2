@@ -105,7 +105,7 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
 
         // Add list of X-refs
         addXRefs(xrefs, writer);
-        addInternalRefs(col, iRefs, writer);
+        addInternalRefs(col, annotation, iRefs, writer);
 
         writer.writeEndElement();
     }
