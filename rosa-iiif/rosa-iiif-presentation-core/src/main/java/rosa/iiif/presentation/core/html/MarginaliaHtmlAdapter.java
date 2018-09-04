@@ -35,7 +35,7 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
     void annotationAsHtml(BookCollection col, Book book, BookImage page, Marginalia annotation) throws XMLStreamException{
         final String COLLECTION_URI = pres_uris.getCollectionURI(col.getId());
 
-        List<String> transcription = new ArrayList<>();
+        StringBuilder transcription = new StringBuilder();
         List<String> people = new ArrayList<>();
         List<String> books = new ArrayList<>();
         List<String> locs = new ArrayList<>();
@@ -49,7 +49,7 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
 
         for (MarginaliaLanguage lang : annotation.getLanguages()) {
             for (Position pos : lang.getPositions()) {
-                transcription.addAll(pos.getTexts());
+                pos.getTexts().forEach(t -> transcription.append(t).append(' '));
                 people.addAll(pos.getPeople());
                 books.addAll(pos.getBooks());
                 locs.addAll(pos.getLocations());
