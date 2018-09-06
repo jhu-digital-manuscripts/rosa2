@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Instance represents an IIIF Presentation API request for an object.
  * The object is identified by a list of strings.
  */
-public class PresentationRequest {
+public final class PresentationRequest {
     private PresentationRequestType type;
     private String[] identifier;
 

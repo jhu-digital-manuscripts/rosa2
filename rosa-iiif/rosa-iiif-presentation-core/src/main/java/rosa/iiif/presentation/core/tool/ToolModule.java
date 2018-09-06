@@ -16,7 +16,6 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 /**
  * Guice module for build tools.
  */
-@SuppressWarnings("unused")
 public class ToolModule extends AbstractModule {
     @Override
     protected void configure() {

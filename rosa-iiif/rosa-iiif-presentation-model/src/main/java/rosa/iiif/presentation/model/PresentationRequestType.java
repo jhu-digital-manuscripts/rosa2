@@ -5,8 +5,8 @@ package rosa.iiif.presentation.model;
  * to a IIIF presentation object.
  */
 public enum PresentationRequestType {
-    MANIFEST("manifest"), SEQUENCE("sequence"), CANVAS("canvas"), ANNOTATION("annotation"), ANNOTATION_LIST("list"), RANGE(
-            "range"), COLLECTION("collection"), JHSEASRCH("jhsearch");
+    MANIFEST("manifest"), SEQUENCE("sequence"), CANVAS("canvas"), ANNOTATION("annotation"), ANNOTATION_LIST("annotations"), RANGE(
+            "range"), COLLECTION("collection"), LAYER("layer"), JHSEARCH("jhsearch");
 
     private final String keyword;
 

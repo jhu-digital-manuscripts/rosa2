@@ -42,15 +42,15 @@ public class IIIFPresentationRequestFormatter {
      */
     public String format(PresentationRequest req) {
         PresentationRequestType type = req.getType();
-
-        if (type == PresentationRequestType.COLLECTION) {
-            return base() + UriUtil.encodePathSegment(type.getKeyword()) + "/"
-                    + UriUtil.encodePathSegment(req.getName());
-        } else if (type == PresentationRequestType.MANIFEST) {
-            return base() + UriUtil.encodePathSegment(req.getId()) + "/" + UriUtil.encodePathSegment(type.getKeyword());
-        } else {
-            return base() + UriUtil.encodePathSegment(req.getId()) + "/" + UriUtil.encodePathSegment(type.getKeyword())
-                    + "/" + UriUtil.encodePathSegment(req.getName());
+        StringBuilder result = new StringBuilder(base());
+        
+        for (String s: req.getIdentifier()) {
+            result.append(UriUtil.encodePathSegment(s));
+            result.append('/');
         }
+        
+        result.append(UriUtil.encodePathSegment(type.getKeyword()));
+
+        return result.toString();
     }
 }

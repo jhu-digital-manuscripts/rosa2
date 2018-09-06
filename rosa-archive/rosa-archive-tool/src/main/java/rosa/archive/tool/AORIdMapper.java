@@ -188,13 +188,6 @@ public class AORIdMapper {
         }
     }
 
-    private String trimExt(String name) {
-        if (!name.contains(".")) {
-            return name;
-        }
-        return name.substring(0, name.lastIndexOf('.'));
-    }
-
     private void print(String message) {
         if (report == null || message == null) {
             return;

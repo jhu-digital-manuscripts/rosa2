@@ -55,8 +55,7 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
     
     @Test
     public void testLudwigXV7ManifestRequest() throws IOException {
-        String id = VALID_COLLECTION + "." + VALID_BOOK_LUDWIGXV7;
-        PresentationRequest req = new PresentationRequest(id, null, PresentationRequestType.MANIFEST);
+        PresentationRequest req = new PresentationRequest(PresentationRequestType.MANIFEST, VALID_COLLECTION, VALID_BOOK_LUDWIGXV7);
         
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         assertTrue(service.handle_request(req, os));
@@ -73,8 +72,7 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
     
     @Test
     public void testFolgersHa2ManifestRequest() throws IOException {
-        String id = VALID_COLLECTION + "." + VALID_BOOK_FOLGERSHA2;
-        PresentationRequest req = new PresentationRequest(id, null, PresentationRequestType.MANIFEST);
+        PresentationRequest req = new PresentationRequest(PresentationRequestType.MANIFEST, VALID_COLLECTION, VALID_BOOK_FOLGERSHA2);
         
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         assertTrue(service.handle_request(req, os));
