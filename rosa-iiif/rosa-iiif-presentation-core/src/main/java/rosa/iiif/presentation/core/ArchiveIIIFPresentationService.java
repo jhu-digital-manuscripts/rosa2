@@ -28,7 +28,7 @@ import rosa.iiif.presentation.model.Range;
  * collection.
  * 
  * Objects are loaded from the archive and transformed into IIIF Presentation objects and then serialized.
- * To improve performance some objects are cached in memory.
+ * To improve performance, BookCollections, Collections, Books, and Manifests are cached.
  */
 public class ArchiveIIIFPresentationService implements IIIFPresentationService {
     private final static Logger logger = Logger.getLogger(ArchiveIIIFPresentationService.class.getName());
@@ -78,23 +78,13 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
     }
 
     // Return value in cache if present or updates cache with supplied value
+    // The id must be unique within the class.
     private <T> T get_cached(String id, Class<T> type, Supplier<T> supplier) {
-        String key = id + "," + type.getName(); 
-        T value = type.cast(cache.get(key));
-        
-        if (value == null) {
-            value = supplier.get();
-            
-            if (cache.size() > max_cache_size) {
-                cache.clear();
-            }
-            
-            if (value != null) {
-                cache.putIfAbsent(key, value);
-            }
+        if (cache.size() > max_cache_size) {
+            cache.clear();
         }
         
-        return value;
+        return type.cast(cache.computeIfAbsent(id + "," + type.getName(), k -> supplier.get()));
     }
 
     private BookCollection get_book_collection(String col_id) {
@@ -109,14 +99,16 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
     }
     
     private Book get_book(String col_id, String book_id) {
-        // Do not bother caching books
+        String id = col_id + book_id;
         
-        try {
-            return store.loadBook(col_id, book_id);
-        } catch (IOException e) {
-            logger.log(Level.SEVERE,  "Loading book " + col_id + " " + book_id, e);
-            return null;
-        }
+        return get_cached(id, Book.class, () -> {
+            try {
+                return store.loadBook(col_id, book_id);
+            } catch (IOException e) {
+                logger.log(Level.SEVERE,  "Loading book " + col_id + " " + book_id, e);
+                return null;
+            }
+        });        
     }
     
     private boolean handle_collection(String[] identifier, OutputStream os) throws IOException {
@@ -136,10 +128,8 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String col_id = identifier[0];
         String book_id = identifier[1];
         String name = identifier[2];
-        String id = col_id + book_id + name;
         
-        Range range = get_cached(id, Range.class, () -> 
-            transformer.range(get_book_collection(col_id), get_book(col_id, book_id), name));
+        Range range = transformer.range(get_book_collection(col_id), get_book(col_id, book_id), name);
         
         if (range == null) {
             return false;
@@ -167,16 +157,12 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         return true;
     }
     
-    
-    
     private boolean handle_canvas(String[] identifier, OutputStream os) throws IOException {
         String col_id = identifier[0];
         String book_id = identifier[1];
         String name = identifier[2];
-        String id = col_id + book_id + name;
         
-        Canvas canvas = get_cached(id, Canvas.class, () -> 
-            transformer.canvas(get_book_collection(col_id), get_book(col_id, book_id), name));
+        Canvas canvas = transformer.canvas(get_book_collection(col_id), get_book(col_id, book_id), name);
         
         if (canvas == null) {
             return false;
@@ -191,10 +177,8 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String col_id = identifier[0];
         String book_id = identifier[1];
         String name = identifier[2];
-        String id = col_id + book_id + name;
         
-        AnnotationList list = get_cached(id, AnnotationList.class, () -> 
-            transformer.annotationList(get_book_collection(col_id), get_book(col_id, book_id), name));
+        AnnotationList list = transformer.annotationList(get_book_collection(col_id), get_book(col_id, book_id), name);
         
         if (list == null) {
             return false;
