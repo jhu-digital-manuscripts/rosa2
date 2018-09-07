@@ -14,6 +14,7 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.html.AdapterSet;
 import rosa.iiif.presentation.core.html.AnnotationBaseHtmlAdapter;
+import rosa.iiif.presentation.core.html.CalculationHtmlAdapter;
 import rosa.iiif.presentation.core.html.DrawingHtmlAdapter;
 import rosa.iiif.presentation.core.html.GraphHtmlAdapter;
 import rosa.iiif.presentation.core.html.MarginaliaHtmlAdapter;
@@ -51,6 +52,7 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
         html_adapters.add(new GraphHtmlAdapter(pres_uris));
         html_adapters.add(new DrawingHtmlAdapter(pres_uris));
         html_adapters.add(new TableHtmlAdapter(pres_uris));
+        html_adapters.add(new CalculationHtmlAdapter(pres_uris));
         
         this.col = new CollectionTransformer(presFormatter, store, imageFormatter, idMapper);
         this.canvas = new CanvasTransformer(presFormatter, imageFormatter, idMapper);

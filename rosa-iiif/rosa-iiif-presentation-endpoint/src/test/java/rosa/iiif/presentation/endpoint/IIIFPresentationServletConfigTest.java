@@ -14,7 +14,6 @@ import org.junit.Test;
 import com.google.inject.Injector;
 
 import rosa.iiif.presentation.core.IIIFPresentationService;
-import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 
 public class IIIFPresentationServletConfigTest {

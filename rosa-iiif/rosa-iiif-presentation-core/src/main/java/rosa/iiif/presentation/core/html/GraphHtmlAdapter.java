@@ -82,7 +82,7 @@ public class GraphHtmlAdapter extends AnnotationBaseHtmlAdapter<Graph> {
         addListOfValues("Locations:", locs, writer);
         addListOfValues("Symbols:", symbols, writer);
 
-        addInternalRefs(col, annotation.getInternalRefs(), writer);
+        addInternalRefs(col, annotation, annotation.getInternalRefs(), writer);
 
         writer.writeEndElement();
     }

@@ -22,4 +22,8 @@ public class AdapterSet {
     public <T> AnnotationBaseHtmlAdapter<T> get(Class<T> type) {
         return (AnnotationBaseHtmlAdapter<T>) map.get(type);
     }
+
+    public boolean hasAdapter(Class type) {
+        return map.containsKey(type);
+    }
 }

@@ -44,7 +44,7 @@ public class TableHtmlAdapter extends AnnotationBaseHtmlAdapter<Table> {
         addSearchableList("People:", annotation.getPeople(), JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
         addListOfValues("Books:", annotation.getBooks(), writer);
         addListOfValues("Locations:", annotation.getLocations(), writer);
-        addInternalRefs(col, annotation.getInternalRefs(), writer);
+        addInternalRefs(col, annotation, annotation.getInternalRefs(), writer);
 
         writer.writeEndElement();
     }
