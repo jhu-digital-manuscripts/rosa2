@@ -44,10 +44,6 @@ public class IIIFPresentationRequestParserTest {
         expected = new PresentationRequest(PresentationRequestType.ANNOTATION_LIST, "rose", "Douce195", "1r", "transcription");
         assertEquals(expected, result);        
         
-        result = parser.parsePresentationRequest("/rose/jhsearch");
-        expected = new PresentationRequest(PresentationRequestType.JHSEARCH, "rose");
-        assertEquals(expected, result);        
-        
         result = parser.parsePresentationRequest("/rose/Douce195/base/sequence");
         expected = new PresentationRequest(PresentationRequestType.SEQUENCE, "rose", "Douce195", "base");
         assertEquals(expected, result);
