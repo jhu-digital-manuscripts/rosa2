@@ -60,9 +60,6 @@ public class IIIFPresentationServletConfigTest {
         PresentationTransformerImpl trans = injector.getInstance(PresentationTransformerImpl.class);
         assertNotNull("Failed to inject presentation transformer.", trans);
 
-        AnnotationListTransformer listTrans = injector.getInstance(AnnotationListTransformer.class);
-        assertNotNull("Failed to inject annotation list transformer.", listTrans);
-
         IIIFPresentationService service = injector.getInstance(IIIFPresentationService.class);
         assertNotNull("Failed to inject IIIF Service.", service);
 

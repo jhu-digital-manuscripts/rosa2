@@ -1,48 +1,20 @@
 package rosa.iiif.presentation.core;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import rosa.archive.core.ArchiveNameParser;
-import rosa.iiif.image.core.IIIFRequestFormatter;
-import rosa.iiif.presentation.core.transform.Transformer;
-import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
-import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
-import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
-import rosa.iiif.presentation.core.transform.impl.LayerTransformer;
-import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
-import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
-import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
-import rosa.iiif.presentation.core.transform.impl.TransformerSet;
 import rosa.iiif.presentation.core.html.AdapterSet;
 import rosa.iiif.presentation.core.html.AnnotationBaseHtmlAdapter;
 import rosa.iiif.presentation.core.html.DrawingHtmlAdapter;
 import rosa.iiif.presentation.core.html.GraphHtmlAdapter;
 import rosa.iiif.presentation.core.html.MarginaliaHtmlAdapter;
 import rosa.iiif.presentation.core.html.TableHtmlAdapter;
-
-import java.util.HashSet;
-import java.util.Set;
+import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 
 public class PresentationTestUtils {
     public static AnnotationTransformer annotationTransformer(IIIFPresentationRequestFormatter presReqFormatter) {
         return new AnnotationTransformer(presReqFormatter, new ArchiveNameParser(), htmlAdapterSet(presReqFormatter));
-    }
-
-    public static TransformerSet transformerSet(IIIFPresentationRequestFormatter presReqFormatter,
-                                                IIIFRequestFormatter imageReqFormatter,
-                                                ImageIdMapper idMapper) {
-        Set<Transformer<?>> transformers = new HashSet<>();
-
-        CanvasTransformer canvasTransformer = new CanvasTransformer(presReqFormatter, imageReqFormatter, idMapper);
-        SequenceTransformer sequenceTransformer = new SequenceTransformer(presReqFormatter, canvasTransformer);
-        AnnotationTransformer annotationTransformer = annotationTransformer(presReqFormatter);
-
-        transformers.add(new AnnotationListTransformer(presReqFormatter, annotationTransformer));
-        transformers.add(canvasTransformer);
-        transformers.add(sequenceTransformer);
-        transformers.add(new ManifestTransformer(presReqFormatter, sequenceTransformer, new RangeTransformer(presReqFormatter)));
-        transformers.add(new RangeTransformer(presReqFormatter));
-        transformers.add(new LayerTransformer(presReqFormatter));
-
-        return new TransformerSet(transformers);
     }
 
     public static AdapterSet htmlAdapterSet(IIIFPresentationRequestFormatter formatter) {

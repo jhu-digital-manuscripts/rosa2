@@ -11,8 +11,6 @@ import java.util.Properties;
 import java.util.logging.Logger;
 
 import com.google.inject.Provides;
-import com.google.inject.TypeLiteral;
-import com.google.inject.multibindings.Multibinder;
 import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 import com.google.inject.servlet.ServletModule;
@@ -38,24 +36,8 @@ import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.core.jhsearch.LuceneJHSearchService;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
-import rosa.iiif.presentation.core.transform.Transformer;
-import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
-import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
-import rosa.iiif.presentation.core.transform.impl.CanvasTransformer;
-import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
-import rosa.iiif.presentation.core.transform.impl.LayerTransformer;
-import rosa.iiif.presentation.core.transform.impl.ManifestTransformer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
-import rosa.iiif.presentation.core.transform.impl.RangeTransformer;
-import rosa.iiif.presentation.core.transform.impl.SequenceTransformer;
-import rosa.iiif.presentation.core.transform.impl.TransformerSet;
-import rosa.iiif.presentation.core.html.AdapterSet;
-import rosa.iiif.presentation.core.html.AnnotationBaseHtmlAdapter;
-import rosa.iiif.presentation.core.html.DrawingHtmlAdapter;
-import rosa.iiif.presentation.core.html.GraphHtmlAdapter;
-import rosa.iiif.presentation.core.html.MarginaliaHtmlAdapter;
-import rosa.iiif.presentation.core.html.TableHtmlAdapter;
 
 /**
  * The servlet is configured by iiif-servlet.properties.
@@ -73,39 +55,7 @@ public class IIIFPresentationServletModule extends ServletModule {
         bind(ArchiveNameParser.class);
         bind(IIIFPresentationRequestParser.class);
         bind(PresentationUris.class);
-        
-        Multibinder<Transformer<?>> transformers = Multibinder.newSetBinder(binder(), new TypeLiteral<Transformer<?>>() {});
-
         bind(PresentationTransformer.class).to(PresentationTransformerImpl.class);
-        bind(CollectionTransformer.class);
-        bind(CanvasTransformer.class);
-        bind(SequenceTransformer.class);
-        bind(AnnotationTransformer.class);
-        transformers.addBinding().to(AnnotationTransformer.class);
-        transformers.addBinding().to(AnnotationListTransformer.class);
-        transformers.addBinding().to(RangeTransformer.class);
-        transformers.addBinding().to(CanvasTransformer.class);
-        transformers.addBinding().to(SequenceTransformer.class);
-        transformers.addBinding().to(ManifestTransformer.class);
-        transformers.addBinding().to(LayerTransformer.class);
-
-        bind(TransformerSet.class);
-
-        // Html adapters
-        Multibinder<AnnotationBaseHtmlAdapter<?>> adapters =
-                Multibinder.newSetBinder(binder(), new TypeLiteral<AnnotationBaseHtmlAdapter<?>>() {});
-
-        bind(MarginaliaHtmlAdapter.class);
-        bind(GraphHtmlAdapter.class);
-        bind(DrawingHtmlAdapter.class);
-        bind(TableHtmlAdapter.class);
-        adapters.addBinding().to(MarginaliaHtmlAdapter.class);
-        adapters.addBinding().to(GraphHtmlAdapter.class);
-        adapters.addBinding().to(DrawingHtmlAdapter.class);
-        adapters.addBinding().to(TableHtmlAdapter.class);
-
-        bind(AdapterSet.class);
-
         bind(PresentationSerializer.class).to(JsonldSerializer.class);
         
         Names.bindProperties(binder(), loadProperties(SERVLET_CONFIG_PATH));

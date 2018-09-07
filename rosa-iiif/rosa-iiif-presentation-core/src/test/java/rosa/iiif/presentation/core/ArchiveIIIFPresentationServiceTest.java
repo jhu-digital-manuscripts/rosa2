@@ -11,9 +11,9 @@ import org.json.JSONObject;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseSearchTest;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
-import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
 import rosa.iiif.presentation.core.transform.impl.JsonldSerializer;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -34,19 +34,15 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
         int port = 80;
         String pres_prefix = "/pres";
         String image_prefix = "/image";
-//        String search_prefix = "/search";
 
         IIIFPresentationRequestFormatter requestFormatter = new IIIFPresentationRequestFormatter(scheme, host, pres_prefix, port);
 
         rosa.iiif.image.core.IIIFRequestFormatter imageFormatter = new rosa.iiif.image.core.IIIFRequestFormatter(
                 scheme, host, port, image_prefix);
         ImageIdMapper imageIdMapper = new JhuImageIdMapper(new HashMap<String, String>());
-
-        CollectionTransformer collectionTransformer = new CollectionTransformer(requestFormatter, simpleStore, imageFormatter, imageIdMapper);
-
-        PresentationTransformer transformer = new PresentationTransformerImpl(requestFormatter,
-                PresentationTestUtils.transformerSet(requestFormatter, imageFormatter, imageIdMapper),
-                collectionTransformer);
+        ArchiveNameParser nameParser = new ArchiveNameParser();
+        
+        PresentationTransformer transformer = new PresentationTransformerImpl(requestFormatter, imageFormatter, imageIdMapper, simpleStore, nameParser);
 
         service = new ArchiveIIIFPresentationService(simpleStore, serializer, transformer, 1000);
     }
