@@ -258,6 +258,64 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
     }
 
     /**
+     * Insert internal references found in an annotation into its transcription.
+     *
+     * Note this impl won't handle the case where two references have the same source, though
+     * ideally, this case will not appear, as we can have a reference with the same source and
+     * multiple targets.
+     *
+     * @param transcription original annotation transcription text
+     * @param refs list of internal references
+     * @return newly modified transcription
+     */
+    String addInternalRefs(String transcription, List<InternalReference> refs) {
+        if (transcription == null || transcription.isEmpty()) {
+            return "";
+        }
+        if (refs == null || refs.size() == 0) {
+            return transcription;
+        }
+
+        for (InternalReference ref : refs) {
+            // Source text with identifying prefix/suffix
+            final String fullSource = (ref.getAnchorPrefix() != null && !ref.getAnchorPrefix().isEmpty() ? ref.getAnchorPrefix() : "") +
+                                        ref.getAnchor() +
+                                        (ref.getAnchorSuffix() != null && !ref.getAnchorSuffix().isEmpty() ? ref.getAnchorSuffix() : "");
+
+            for (ReferenceTarget target : ref.getTargets()) {
+                final String start = "<a href=\"" + target.getTargetId() + "\" target=\"_blank\">";
+                final String end = "</a>";
+
+                // Split by source text, then insert text on split as needed
+                String[] parts = transcription.split(fullSource);
+
+                StringBuilder result = new StringBuilder();
+                if (parts.length > 0) {
+                    result.append(parts[0]);
+                    for (int i = 1; i < parts.length; i++) {
+                        result.append(ref.getAnchorPrefix()).append(start).append(ref.getAnchor())
+                                .append(end).append(ref.getAnchorSuffix());
+                        result.append(parts[i]);
+                    }
+
+                    // "Full Source" appears at the end of the transcription
+                    if (transcription.lastIndexOf(fullSource) + fullSource.length() == transcription.length()) {
+                        result.append(ref.getAnchorPrefix()).append(start).append(ref.getAnchor())
+                                .append(end).append(ref.getAnchorSuffix());
+                    }
+                } else { // Transcription should be exactly equal to "fullSource"
+                    result.append(ref.getAnchorPrefix()).append(start).append(ref.getAnchor())
+                            .append(end).append(ref.getAnchorSuffix());
+                }
+
+                transcription = result.toString();
+            }
+        }
+
+        return transcription;
+    }
+
+    /**
      * Create an simple element that may have attributes and may have simple string content.
      * This element cannot have nested elements.
      *
