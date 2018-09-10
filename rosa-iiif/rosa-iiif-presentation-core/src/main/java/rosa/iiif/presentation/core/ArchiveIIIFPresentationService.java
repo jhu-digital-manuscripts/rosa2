@@ -2,14 +2,7 @@ package rosa.iiif.presentation.core;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.Supplier;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-import rosa.archive.core.SimpleStore;
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.model.AnnotationList;
@@ -30,29 +23,23 @@ import rosa.iiif.presentation.model.Range;
  * Objects are loaded from the archive and transformed into IIIF Presentation objects and then serialized.
  * To improve performance, BookCollections, Collections, Books, and Manifests are cached.
  */
-public class ArchiveIIIFPresentationService implements IIIFPresentationService {
-    private final static Logger logger = Logger.getLogger(ArchiveIIIFPresentationService.class.getName());
-    
-    private final SimpleStore store;
+public class ArchiveIIIFPresentationService implements IIIFPresentationService {    
     private final PresentationSerializer serializer;
     private final PresentationTransformer transformer;
-    private final ConcurrentHashMap<String, Object> cache;
-    private final int max_cache_size;
-    
+    private final IIIFPresentationCache cache;
+
     /**
-     *
-     * @param store the store to manipulate the archive
-     * @param jsonld_serializer serializer to write the response as json-ld
-     * @param transformer transformer to transform archive data to IIIF presentation data
-     * @param max_cache_size max number of objects to cache at a time
-     */
-    public ArchiveIIIFPresentationService(SimpleStore store, PresentationSerializer jsonld_serializer, PresentationTransformer transformer, int max_cache_size) {
-        this.store = store;
-        this.serializer = jsonld_serializer;
-        this.transformer = transformer;
-        this.max_cache_size = max_cache_size;
-        this.cache = new ConcurrentHashMap<>();
-    }
+    *
+    * @param cache loads and caches objects
+    * @param jsonld_serializer serializer to write the response as json-ld
+    * @param transformer transformer to transform archive data to IIIF presentation data
+    * @param max_cache_size max number of objects to cache at a time
+    */
+   public ArchiveIIIFPresentationService(IIIFPresentationCache cache, PresentationSerializer jsonld_serializer, PresentationTransformer transformer) {
+       this.serializer = jsonld_serializer;
+       this.transformer = transformer;
+       this.cache = cache;
+   }
 
     @Override
     public boolean handle_request(String uri, OutputStream os) throws IOException {
@@ -76,44 +63,10 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
                 throw new IOException("Unknown type: " + req.getType());
         }
     }
-
-    // Return value in cache if present or updates cache with supplied value
-    // The id must be unique within the class.
-    private <T> T get_cached(String id, Class<T> type, Supplier<T> supplier) {
-        if (cache.size() > max_cache_size) {
-            cache.clear();
-        }
-        
-        return type.cast(cache.computeIfAbsent(id + "," + type.getName(), k -> supplier.get()));
-    }
-
-    private BookCollection get_book_collection(String col_id) {
-        return get_cached(col_id, BookCollection.class, () -> {
-            try {
-                return store.loadBookCollection(col_id);
-            } catch (IOException e) {
-                logger.log(Level.SEVERE,  "Loading collection " + col_id, e);
-                return null;
-            }
-        });
-    }
-    
-    private Book get_book(String col_id, String book_id) {
-        String id = col_id + book_id;
-        
-        return get_cached(id, Book.class, () -> {
-            try {
-                return store.loadBook(col_id, book_id);
-            } catch (IOException e) {
-                logger.log(Level.SEVERE,  "Loading book " + col_id + " " + book_id, e);
-                return null;
-            }
-        });        
-    }
     
     private boolean handle_collection(String[] identifier, OutputStream os) throws IOException {
         String col_id = identifier[0];
-        Collection col = get_cached(col_id, Collection.class, () -> transformer.collection(get_book_collection(col_id)));
+        Collection col = cache.get(col_id, Collection.class, () -> transformer.collection(cache.getBookCollection(col_id)));
         
         if (col == null) {
             return false;
@@ -129,7 +82,7 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String book_id = identifier[1];
         String name = identifier[2];
         
-        Range range = transformer.range(get_book_collection(col_id), get_book(col_id, book_id), name);
+        Range range = transformer.range(cache.getBookCollection(col_id), cache.getBook(col_id, book_id), name);
         
         if (range == null) {
             return false;
@@ -145,8 +98,8 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String book_id = identifier[1];
         String id = col_id + book_id;
         
-        Manifest man = get_cached(id, Manifest.class, () -> 
-            transformer.manifest(get_book_collection(col_id), get_book(col_id, book_id)));
+        Manifest man = cache.get(id, Manifest.class, () -> 
+            transformer.manifest(cache.getBookCollection(col_id), cache.getBook(col_id, book_id)));
         
         if (man == null) {
             return false;
@@ -162,7 +115,7 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String book_id = identifier[1];
         String name = identifier[2];
         
-        Canvas canvas = transformer.canvas(get_book_collection(col_id), get_book(col_id, book_id), name);
+        Canvas canvas = transformer.canvas(cache.getBookCollection(col_id), cache.getBook(col_id, book_id), name);
         
         if (canvas == null) {
             return false;
@@ -178,7 +131,7 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String book_id = identifier[1];
         String name = identifier[2];
         
-        AnnotationList list = transformer.annotationList(get_book_collection(col_id), get_book(col_id, book_id), name);
+        AnnotationList list = transformer.annotationList(cache.getBookCollection(col_id), cache.getBook(col_id, book_id), name);
         
         if (list == null) {
             return false;

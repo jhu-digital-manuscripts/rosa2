@@ -42,9 +42,10 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
         ImageIdMapper imageIdMapper = new JhuImageIdMapper(new HashMap<String, String>());
         ArchiveNameParser nameParser = new ArchiveNameParser();
         
-        PresentationTransformer transformer = new PresentationTransformerImpl(requestFormatter, imageFormatter, imageIdMapper, simpleStore, nameParser);
+        IIIFPresentationCache cache = new IIIFPresentationCache(store, 10);
+        PresentationTransformer transformer = new PresentationTransformerImpl(cache, requestFormatter, imageFormatter, imageIdMapper, nameParser);
 
-        service = new ArchiveIIIFPresentationService(simpleStore, serializer, transformer, 1000);
+        service = new ArchiveIIIFPresentationService(cache, serializer, transformer);
     }
     
     // TODO More extensive testing

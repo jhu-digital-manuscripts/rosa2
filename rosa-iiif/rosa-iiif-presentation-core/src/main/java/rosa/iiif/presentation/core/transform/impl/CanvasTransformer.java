@@ -2,9 +2,6 @@ package rosa.iiif.presentation.core.transform.impl;
 
 import java.util.Collections;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
-
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -12,7 +9,6 @@ import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
-import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.Image;
@@ -23,12 +19,11 @@ import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 
-public class CanvasTransformer extends BasePresentationTransformer implements Transformer<Canvas> {
+public class CanvasTransformer extends BasePresentationTransformer {
     private ImageIdMapper idMapper;
     private rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter;
 
-    @Inject
-    public CanvasTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
+    public CanvasTransformer(IIIFPresentationRequestFormatter presRequestFormatter,
                              rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
                              ImageIdMapper idMapper) {
         super(presRequestFormatter);
@@ -115,7 +110,6 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
      * @param name page to manifest
      * @return the Canvas representation of a page
      */
-    @Override
     public Canvas transform(BookCollection collection, Book book, String name) {
         // Look for the image representing 'page'
         
@@ -126,11 +120,6 @@ public class CanvasTransformer extends BasePresentationTransformer implements Tr
         }
         // Return NULL if the page was not found in the list of images
         return null;
-    }
-
-    @Override
-    public Class<Canvas> getType() {
-        return Canvas.class;
     }
 
     /**

@@ -15,6 +15,7 @@ import org.junit.Test;
 
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
+import rosa.iiif.presentation.core.IIIFPresentationCache;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.JhuImageIdMapper;
@@ -53,8 +54,9 @@ public class PresentationTransformerTest extends BaseArchiveTest {
                 new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
         ImageIdMapper idMapper = new JhuImageIdMapper(idMap);
         ArchiveNameParser nameParser = new ArchiveNameParser();
+        IIIFPresentationCache cache = new IIIFPresentationCache(store, 1000);
         
-        presentationTransformer = new PresentationTransformerImpl(presFormatter, imageFormatter, idMapper, simpleStore, nameParser);
+        presentationTransformer = new PresentationTransformerImpl(cache, presFormatter, imageFormatter, idMapper, nameParser);
     }
 
     @Test

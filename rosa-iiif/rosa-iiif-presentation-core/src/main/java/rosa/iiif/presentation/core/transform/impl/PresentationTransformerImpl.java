@@ -7,9 +7,9 @@ import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
 import rosa.archive.core.ArchiveNameParser;
-import rosa.archive.core.SimpleStore;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.iiif.presentation.core.IIIFPresentationCache;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.html.AdapterSet;
@@ -40,9 +40,8 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
     private AnnotationListTransformer list;
 
     @Inject
-    public PresentationTransformerImpl(@Named("formatter.presentation") IIIFPresentationRequestFormatter presFormatter,
-            rosa.iiif.image.core.IIIFRequestFormatter imageFormatter, ImageIdMapper idMapper, SimpleStore store,
-            ArchiveNameParser nameParser) {
+    public PresentationTransformerImpl(IIIFPresentationCache cache,  @Named("formatter.presentation") IIIFPresentationRequestFormatter presFormatter,
+            rosa.iiif.image.core.IIIFRequestFormatter imageFormatter, ImageIdMapper idMapper, ArchiveNameParser nameParser) {
         super(presFormatter);
 
         Set<AnnotationBaseHtmlAdapter<?>> html_adapters = new HashSet<>();
@@ -54,7 +53,7 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
         html_adapters.add(new TableHtmlAdapter(pres_uris));
         html_adapters.add(new CalculationHtmlAdapter(pres_uris));
         
-        this.col = new CollectionTransformer(presFormatter, store, imageFormatter, idMapper);
+        this.col = new CollectionTransformer(cache, presFormatter, imageFormatter, idMapper);
         this.canvas = new CanvasTransformer(presFormatter, imageFormatter, idMapper);
         this.ann = new AnnotationTransformer(presFormatter, nameParser, new AdapterSet(html_adapters));
         this.range = new RangeTransformer(presFormatter);
