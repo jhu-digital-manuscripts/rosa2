@@ -23,7 +23,7 @@ public class AdapterSet {
         return (AnnotationBaseHtmlAdapter<T>) map.get(type);
     }
 
-    public boolean hasAdapter(Class type) {
+    public boolean hasAdapter(Class<?> type) {
         return map.containsKey(type);
     }
 }

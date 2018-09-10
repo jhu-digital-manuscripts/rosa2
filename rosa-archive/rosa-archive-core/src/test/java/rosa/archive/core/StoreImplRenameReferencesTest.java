@@ -7,9 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -23,7 +21,6 @@ import rosa.archive.core.GuiceJUnitRunner.GuiceModules;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
-import rosa.archive.model.FileMap;
 import rosa.archive.model.aor.AnnotatedPage;
 
 /**
@@ -70,7 +67,6 @@ public class StoreImplRenameReferencesTest {
     private static final String VALID_COLLECTION = "collection";
     private static final String BOOK_DOMENICHI = "Domenichi";
     private static final String BOOK_BUCHANAN = "Buchanan_MariaScotorumRegina";
-    private static final String DIRECTORY_MAP = "dir-map.csv";
 
     @Rule
     public TemporaryFolder tempFolder = new TemporaryFolder();
@@ -191,27 +187,6 @@ public class StoreImplRenameReferencesTest {
 
 
         return list;
-    }
-
-    private Map<String, FileMap> loadFileMaps() throws IOException {
-        Map<String, FileMap> map = new HashMap<>();
-
-        List<String> errors = new ArrayList<>();
-
-        ByteStreamGroup coll_streams = base.getByteStreamGroup(VALID_COLLECTION);
-        try (InputStream in_dom = coll_streams.getByteStreamGroup(BOOK_DOMENICHI).getByteStream("filemap.csv");
-             InputStream in_buc = coll_streams.getByteStreamGroup(BOOK_BUCHANAN).getByteStream("filemap.csv");
-             InputStream in_dir_map = getClass().getClassLoader().getResourceAsStream("rosa/archive/dir-map.csv")) {
-
-            map.put(BOOK_DOMENICHI, serializers.getSerializer(FileMap.class).read(in_dom, errors));
-            map.put(BOOK_BUCHANAN, serializers.getSerializer(FileMap.class).read(in_buc, errors));
-            map.put(DIRECTORY_MAP, serializers.getSerializer(FileMap.class).read(in_dir_map, errors));
-
-        }
-
-        assertTrue("Unexpected errors found while loading file maps.", errors.isEmpty());
-
-        return map;
     }
 
     // For debugging

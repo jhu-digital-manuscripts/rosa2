@@ -2,28 +2,23 @@ package rosa.iiif.presentation.core.transform.impl;
 
 import java.util.List;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
-
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
-public class AnnotationListTransformer extends BasePresentationTransformer implements Transformer<AnnotationList> {
+public class AnnotationListTransformer extends BasePresentationTransformer {
 
     private AnnotationTransformer annotationTransformer;
 
-    @Inject
-    public AnnotationListTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
+    public AnnotationListTransformer(IIIFPresentationRequestFormatter presRequestFormatter,
                                      AnnotationTransformer annotationTransformer) {
         super(presRequestFormatter);
         this.annotationTransformer = annotationTransformer;
@@ -46,11 +41,6 @@ public class AnnotationListTransformer extends BasePresentationTransformer imple
             return annotationList(collection, book, pageImage, aPage);
         }
         return annotationList(collection, book, pageImage, aPage, type);
-    }
-
-    @Override
-    public Class<AnnotationList> getType() {
-        return AnnotationList.class;
     }
 
     private String[] split_id(String id) {

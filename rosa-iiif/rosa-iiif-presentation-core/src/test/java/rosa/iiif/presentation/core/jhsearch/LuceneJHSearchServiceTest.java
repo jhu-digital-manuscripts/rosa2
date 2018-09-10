@@ -286,7 +286,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     @Test
     public void testHandleRequestSymbol() throws Exception {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
-        PresentationRequest req = new PresentationRequest("valid.FolgersHa2", null, PresentationRequestType.MANIFEST);
+        PresentationRequest req = new PresentationRequest(PresentationRequestType.MANIFEST, "valid", "FolgersHa2");
 
         String query = "symbol:'Sun'";
 
@@ -305,7 +305,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     @Test
     public void testHandleBrowseRepository() throws Exception {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
-        PresentationRequest req = new PresentationRequest("valid.FolgersHa2", null, PresentationRequestType.MANIFEST);
+        PresentationRequest req = new PresentationRequest(PresentationRequestType.MANIFEST, "valid", "FolgersHa2");
 
         String query = "object_type:'sc:Manifest'";
 
@@ -324,8 +324,8 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     @Test
     public void testHandleInfoRequest() throws Exception {
         ByteArrayOutputStream os = new ByteArrayOutputStream();
-        PresentationRequest req = new PresentationRequest("valid.FolgersHa2", null, PresentationRequestType.MANIFEST);
-
+        PresentationRequest req = new PresentationRequest(PresentationRequestType.MANIFEST, "valid", "FolgersHa2");
+        
         service.handle_info_request(req, os);
 
         String result_json = os.toString("UTF-8");
@@ -355,7 +355,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
     @Test
     @Ignore
     public void testPersonSpellingVariant() throws Exception {
-        PresentationRequest req = new PresentationRequest("valid.FolgersHa2", null, PresentationRequestType.MANIFEST);
+        PresentationRequest req = new PresentationRequest(PresentationRequestType.MANIFEST, "valid", "FolgersHa2");        
 
         // Check this name: Baldo degli Ubaldi,Baldus,Baldus de Ubaldis,,
         // Alternate spelling
@@ -423,7 +423,8 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         service.clear();
         service.update(mockStore, mockCollection.getId());
 
-        PresentationRequest req = new PresentationRequest("valid.FolgersHa2", null, PresentationRequestType.MANIFEST);
+        PresentationRequest req = new PresentationRequest(PresentationRequestType.MANIFEST, "valid", "FolgersHa2");
+
         // Check this name: Baldo degli Ubaldi,Baldus,Baldus de Ubaldis,,
         // Alternate spelling
         {
@@ -479,7 +480,7 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         
         
         assertEquals(1, result.getMatches().length);
-        assertEquals("http://serenity.dkc.jhu.edu/pres/valid.LudwigXV7/manifest",
+        assertEquals("http://serenity.dkc.jhu.edu/pres/valid/LudwigXV7/manifest",
                 result.getMatches()[0].getId());
         
         assertNotNull(result.getCategories());
@@ -565,8 +566,8 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
         assertEquals(2, result.getMatches().length);
         
         Set<String> expected_manifests = new HashSet<>();
-        expected_manifests.add("http://serenity.dkc.jhu.edu/pres/valid.FolgersHa2/manifest");
-        expected_manifests.add("http://serenity.dkc.jhu.edu/pres/valid.LudwigXV7/manifest");
+        expected_manifests.add("http://serenity.dkc.jhu.edu/pres/valid/FolgersHa2/manifest");
+        expected_manifests.add("http://serenity.dkc.jhu.edu/pres/valid/LudwigXV7/manifest");
         
         Set<String> manifests = new HashSet<>();
         

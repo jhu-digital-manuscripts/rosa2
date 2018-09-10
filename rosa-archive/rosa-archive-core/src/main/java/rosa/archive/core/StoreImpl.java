@@ -189,10 +189,18 @@ public class StoreImpl implements Store, ArchiveConstants {
             cmd.setLogoUrl(props.getProperty(CONFIG_LOGO));
         }
         if (props.containsKey(CONFIG_PARENTS)) {
-            cmd.setParents(props.getProperty(CONFIG_PARENTS).split(","));
+            String val = props.getProperty(CONFIG_PARENTS).trim();
+            
+            if (!val.isEmpty()) {
+                cmd.setParents(val.split(","));
+            }
         }
         if (props.containsKey(CONFIG_CHILDREN)) {
-            cmd.setChildren(props.getProperty(CONFIG_CHILDREN).split(","));
+            String val = props.getProperty(CONFIG_CHILDREN).trim();
+            
+            if (!val.isEmpty()) {
+                cmd.setChildren(val.split(","));
+            }
         }
         if (props.containsKey(CONFIG_DESCRIPTION)) {
             cmd.setDescription(props.getProperty(CONFIG_DESCRIPTION));
