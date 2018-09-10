@@ -25,7 +25,7 @@ public class DrawingHtmlAdapter extends AnnotationBaseHtmlAdapter<Drawing> {
 
     @Override
     void annotationAsHtml(BookCollection col, Book book, BookImage page, Drawing annotation) throws XMLStreamException {
-        writer.writeStartElement("p");
+        writer.writeStartElement(ANNOTATION_ELEMENT);
 
         int orientation = 0;
         try {
@@ -38,10 +38,10 @@ public class DrawingHtmlAdapter extends AnnotationBaseHtmlAdapter<Drawing> {
 
         addTranslation(annotation.getTranslation(), writer);
 
-        addListOfValues("Symbols:", annotation.getSymbols(), writer);
-        addSearchableList("People:", annotation.getPeople(), JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
-        addListOfValues("Books:", annotation.getBooks(), writer);
-        addListOfValues("Locations:", annotation.getLocations(), writer);
+        addListOfValues(SYMBOLS_LABEL, annotation.getSymbols(), writer);
+        addSearchableList(PEOPLE_LABEL, annotation.getPeople(), JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
+        addListOfValues(BOOKS_LABEL, annotation.getBooks(), writer);
+        addListOfValues(LOCATIONS_LABEL, annotation.getLocations(), writer);
 
         addInternalRefs(col, annotation, annotation.getInternalRefs(), writer);
 

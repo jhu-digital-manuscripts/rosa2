@@ -25,14 +25,14 @@ public class TableHtmlAdapter extends AnnotationBaseHtmlAdapter<Table> {
 
     @Override
     void annotationAsHtml(BookCollection col, Book book, BookImage page, Table annotation) throws XMLStreamException {
-        writer.writeStartElement("p");
+        writer.writeStartElement(ANNOTATION_ELEMENT);
 //            addSimpleElement(writer, "span", "Table", "class", "annotation-title");
         if (isNotEmpty(annotation.getType())) {
             writer.writeCharacters(" " + annotation.getType().replaceAll("_", " "));
         }
 
-        writer.writeStartElement("p");
-        addSimpleElement(writer, "span", "Text:", "class", "emphasize");
+        writer.writeStartElement(TRANSCRIPTION_ELEMENT);
+        addSimpleElement(writer, TABLE_TEXT_ELEMENT, TEXT_LABEL, CSS_CLASS, CSS_CLASS_EMPHASIZE);
         for (TextEl txt : annotation.getTexts()) {
             writer.writeEmptyElement("br");
             writer.writeCharacters(txt.getText());
@@ -40,10 +40,10 @@ public class TableHtmlAdapter extends AnnotationBaseHtmlAdapter<Table> {
         writer.writeEndElement();
 
         addTranslation(annotation.getTranslation(), writer);
-        addListOfValues("Symbols:", annotation.getSymbols(), writer);
-        addSearchableList("People:", annotation.getPeople(), JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
-        addListOfValues("Books:", annotation.getBooks(), writer);
-        addListOfValues("Locations:", annotation.getLocations(), writer);
+        addListOfValues(SYMBOLS_LABEL, annotation.getSymbols(), writer);
+        addSearchableList(PEOPLE_LABEL, annotation.getPeople(), JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
+        addListOfValues(BOOKS_LABEL, annotation.getBooks(), writer);
+        addListOfValues(LOCATIONS_LABEL, annotation.getLocations(), writer);
         addInternalRefs(col, annotation, annotation.getInternalRefs(), writer);
 
         writer.writeEndElement();

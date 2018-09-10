@@ -37,7 +37,7 @@ import java.util.logging.Logger;
  *
  * @param <T>
  */
-public abstract class AnnotationBaseHtmlAdapter<T> {
+public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstants {
     private static final Logger LOGGER = Logger.getLogger("AnnotationHtmlAdapter");
     protected static final boolean[] NO_ORIENTATION = new boolean[] { false, false, false, false };
 
