@@ -24,17 +24,17 @@ public class CalculationHtmlAdapter extends AnnotationBaseHtmlAdapter<Calculatio
 
     @Override
     void annotationAsHtml(BookCollection col, Book book, BookImage page, Calculation calc) throws XMLStreamException {
-        writer.writeStartElement("p");
+        writer.writeStartElement(ANNOTATION_ELEMENT);
 
         assembleLocationIcon(orientation(calc.getOrientation()), new Location[] {calc.getLocation()}, writer);
 
         if (isNotEmpty(calc.getContent())) {
-            writer.writeStartElement("ul");
+            writer.writeStartElement(CALC_CONTENT_ELEMENT);
             for (String part : massageContent(calc.getContent())) {
                 if (part.trim().isEmpty()) {
                     continue;
                 }
-                writer.writeStartElement("li");
+                writer.writeStartElement(CALC_CONTENT_ITEM_ELEMENT);
                 writer.writeCharacters(part.trim());
                 writer.writeEndElement();
             }
