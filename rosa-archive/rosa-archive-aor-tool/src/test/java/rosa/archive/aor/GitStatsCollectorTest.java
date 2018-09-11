@@ -203,15 +203,15 @@ public class GitStatsCollectorTest {
         assertNotNull("Book Livy not found.", stats.statsMap.get("Livy"));
 
         assertEquals("Unexpected number of annotations found for Domenichi.",
-                1449, stats.statsMap.get("Domenichi").totalAnnotations());
+                3529, stats.statsMap.get("Domenichi").totalAnnotations());
         assertEquals("Unexpected number of annotions found for Castiglione.",
-                17, stats.statsMap.get("Castiglione").totalAnnotations());
+                19, stats.statsMap.get("Castiglione").totalAnnotations());
         assertEquals("Unexpected number of annotations found for Livy.",
-                1587, stats.statsMap.get("Livy").totalAnnotations());
+                1874, stats.statsMap.get("Livy").totalAnnotations());
 
-        assertEquals("Unexpected number of unreadable pages.", 33, stats.getNumberOfUnreadablePages("Domenichi"));
-        assertEquals("Unexpected number of unreadable pages.", 9, stats.getNumberOfUnreadablePages("Livy"));
-        assertEquals("Unexpected number of unreadable pages.", 1, stats.getNumberOfUnreadablePages("Castiglione"));
+        assertEquals("Unexpected number of unreadable pages.", 0, stats.getNumberOfUnreadablePages("Domenichi"));
+        assertEquals("Unexpected number of unreadable pages.", 0, stats.getNumberOfUnreadablePages("Livy"));
+        assertEquals("Unexpected number of unreadable pages.", 0, stats.getNumberOfUnreadablePages("Castiglione"));
     }
 
 }
