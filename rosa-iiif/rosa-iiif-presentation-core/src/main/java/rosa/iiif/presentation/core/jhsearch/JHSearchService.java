@@ -6,6 +6,9 @@ import java.io.OutputStream;
 import rosa.archive.core.Store;
 import rosa.iiif.presentation.model.PresentationRequest;
 
+/**
+ * JHSearch service has /jhsearch or /jhsearch/info.json appended to a presentation request.
+ */
 public interface JHSearchService {
     public static String PROFILE_URI = "http://manuscriptlib.org/jhiff/search/profile";
     public static String CONTEXT_URI = "http://manuscriptlib.org/jhiff/search/context.json";

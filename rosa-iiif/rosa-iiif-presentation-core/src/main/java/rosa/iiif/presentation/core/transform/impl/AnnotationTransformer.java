@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 import java.io.ByteArrayOutputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,9 +10,6 @@ import java.util.Map;
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
-
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
 
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.serialize.AORAnnotatedPageConstants;
@@ -25,11 +23,14 @@ import rosa.archive.model.CharacterNames;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
-import rosa.archive.model.aor.*;
+import rosa.archive.model.aor.Calculation;
+import rosa.archive.model.aor.Drawing;
+import rosa.archive.model.aor.Graph;
+import rosa.archive.model.aor.Location;
+import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.Table;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.extras.ISNIResourceDb;
-import rosa.iiif.presentation.core.html.AnnotationBaseHtmlAdapter;
-import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.core.html.AdapterSet;
 import rosa.iiif.presentation.core.util.AnnotationLocationUtil;
 import rosa.iiif.presentation.model.HtmlValue;
@@ -39,18 +40,14 @@ import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 
-import java.io.UnsupportedEncodingException;
-
-public class AnnotationTransformer extends BasePresentationTransformer implements Transformer<Annotation>,
-        AORAnnotatedPageConstants {
+public class AnnotationTransformer extends BasePresentationTransformer implements AORAnnotatedPageConstants {
 
     private ArchiveNameParser nameParser;
     private AdapterSet htmlAdapters;
 //    private HtmlDecorator decorator;
     private ISNIResourceDb isni_db;
 
-    @Inject
-    public AnnotationTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
+    public AnnotationTransformer(IIIFPresentationRequestFormatter presRequestFormatter,
                                  ArchiveNameParser nameParser, AdapterSet htmlAdapters) {
         super(presRequestFormatter);
         this.nameParser = nameParser;
@@ -58,7 +55,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 //        this.decorator = new HtmlDecorator();
     }
 
-    @Override
     public Annotation transform(BookCollection collection, Book book, String name) {
         // Find annotation in book
         rosa.archive.model.aor.Annotation archiveAnno = Annotations.getArchiveAnnotation(book, name);
@@ -69,11 +65,6 @@ public class AnnotationTransformer extends BasePresentationTransformer implement
 
     public Annotation transform(BookCollection collection, Book book, rosa.archive.model.aor.Annotation anno) {
         return adaptAnnotation(collection, book, anno, null);
-    }
-
-    @Override
-    public Class<Annotation> getType() {
-        return Annotation.class;
     }
 
     public Annotation transform(BookCollection col, Book book, BookImage image, rosa.archive.model.aor.Annotation anno) {

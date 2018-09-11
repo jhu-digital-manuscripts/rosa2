@@ -161,17 +161,19 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         // Restrict to a specific collection if the collection is not "top"
         // TODO We should load the archive collection to check for child/parent relationships in order to properly generate the restriction query
         if (req.getType() == PresentationRequestType.COLLECTION) {
-            if ("dlmm".equals(req.getName())) {
+            String name = req.getIdentifier()[0]; 
+                    
+            if ("dlmm".equals(name)) {
                 String rose_url = formatter.format(
-                        new PresentationRequest(null, "rosecollection", PresentationRequestType.COLLECTION));
+                        new PresentationRequest(PresentationRequestType.COLLECTION, "rosecollection"));
                 String pizan_url = formatter.format(
-                        new PresentationRequest(null, "pizancollection", PresentationRequestType.COLLECTION));
+                        new PresentationRequest(PresentationRequestType.COLLECTION, "pizancollection"));
                 restrict_query = new Query(
                         QueryOperation.OR,
                         new Query(JHSearchField.COLLECTION_ID, rose_url),
                         new Query(JHSearchField.COLLECTION_ID, pizan_url)
                 );
-            } else if (!"top".equals(req.getName())) {
+            } else if (!"top".equals(name)) {
                 restrict_query = new Query(JHSearchField.COLLECTION_ID, req_url);
             }
         } else if (req.getType() == PresentationRequestType.MANIFEST) {
@@ -213,23 +215,22 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
 
     @Override
     public void handle_info_request(PresentationRequest req, OutputStream os) throws IOException {
-        String name;
-        if (req.getType() == PresentationRequestType.COLLECTION) {
-            name = req.getName();
-        } else {
-            name = req.getId().split("\\.")[0];
+        String name = null;
+        
+        if (req.getIdentifier().length > 0) {
+            name = req.getIdentifier()[0];
         }
-
+        
         JHSearchField[] fields = searchfields.get(name);
         JHSearchCategory[] categories = searchcategories.get(name);
         
         if (fields == null) {
             fields = new JHSearchField[]{};
         }
+        
         if (categories == null) {
             categories = new JHSearchCategory[0];
         }
-
 
         serializer.write(fields, categories, os);
     }

@@ -1,23 +1,20 @@
 package rosa.iiif.presentation.core.transform.impl;
 
 
-import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
-
-import rosa.archive.core.SimpleStore;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.ImageList;
+import rosa.iiif.presentation.core.IIIFPresentationCache;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.ImageIdMapper;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
@@ -37,20 +34,17 @@ public class CollectionTransformer extends BasePresentationTransformer {
     private static final String LANGUAGE_DEFAULT = "en";
     private static final int MAX_THUMBNAILS = 3;
 
-    private SimpleStore store;
-
     private rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter;
     private ImageIdMapper idMapper;
+    private IIIFPresentationCache cache;
 
-    @Inject
-    public CollectionTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
-                                 SimpleStore store,
+    public CollectionTransformer(IIIFPresentationCache cache, IIIFPresentationRequestFormatter presRequestFormatter,
                                  rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
                                  ImageIdMapper idMapper) {
         super(presRequestFormatter);
-        this.store = store;
         this.imageRequestFormatter = imageRequestFormatter;
         this.idMapper = idMapper;
+        this.cache = cache;
     }
 
     public Collection collection(BookCollection collection) {
@@ -76,32 +70,31 @@ public class CollectionTransformer extends BasePresentationTransformer {
 
         List<Reference> childList = new ArrayList<>();
         for (String child : collection.getChildCollections()) {
-            try {
-                BookCollection childCol = store.loadBookCollection(child);
-                if (childCol == null) {
-                    continue;
-                }
-                childList.add(new Reference(
-                        pres_uris.getCollectionURI(childCol.getId()),       
-                        new TextValue(childCol.getLabel(), LANGUAGE_DEFAULT),
-                        IIIFNames.SC_COLLECTION
-                ));
-            } catch (IOException e) {}
+            BookCollection childCol = cache.getBookCollection(child);
+            
+            if (childCol == null) {
+                continue;
+            }
+            
+            childList.add(new Reference(
+                    pres_uris.getCollectionURI(childCol.getId()),       
+                    new TextValue(childCol.getLabel(), LANGUAGE_DEFAULT),
+                    IIIFNames.SC_COLLECTION
+            ));
         }
         col.setCollections(childList);
 
         List<Within> parents = new ArrayList<>();
         for (String parent : collection.getParentCollections()) {
-            try {
-                BookCollection parentCol = store.loadBookCollection(parent);
-                if (parentCol == null) {
-                    continue;
-                }
-                // Add references and search services for parent collections
-                String parentURI = pres_uris.getCollectionURI(parentCol.getId());
-                parents.add(new Within(parentURI, SC_COLLECTION, parentCol.getLabel()));
-                col.addService(new Service( JHSearchService.CONTEXT_URI, parentURI, IIIF_SEARCH_PROFILE, parentCol.getLabel()));
-            } catch (IOException e) {}
+            BookCollection parentCol = cache.getBookCollection(parent);
+            
+            if (parentCol == null) {
+                continue;
+            }
+            // Add references and search services for parent collections
+            String parentURI = pres_uris.getCollectionURI(parentCol.getId());
+            parents.add(new Within(parentURI, SC_COLLECTION, parentCol.getLabel()));
+            col.addService(new Service( JHSearchService.CONTEXT_URI, parentURI, IIIF_SEARCH_PROFILE, parentCol.getLabel()));
         }
         col.setWithin(parents.toArray(new Within[0]));
 
@@ -117,72 +110,69 @@ public class CollectionTransformer extends BasePresentationTransformer {
      */
     private List<Reference> getBookRefs(BookCollection collection) {
         List<Reference> refs = new ArrayList<>();
-        for (String title : collection.books()) {
+        for (String book_id : collection.books()) {
             Reference ref = new Reference();
 
             ref.setType(SC_MANIFEST);
-            ref.setReference(pres_uris.getManifestURI(collection.getId(), title));
+            ref.setReference(pres_uris.getManifestURI(collection.getId(), book_id));
 
-            try {
-                Book b = store.loadBook(collection.getId(), title);
-                BiblioData bd = b.getBiblioData("en");
-                
-                Map<String, HtmlValue> map = new HashMap<>();
-
-                if (bd.getCommonName() != null && !bd.getCommonName().isEmpty()) {
-                    ref.setLabel(new TextValue(bd.getCommonName(), "en"));
-                } else if (bd.getTitle() != null && !bd.getTitle().isEmpty()) {
-                    ref.setLabel(new TextValue(bd.getTitle(), "en"));
-                } else {
-                    ref.setLabel(new TextValue(title, LANGUAGE_DEFAULT));
-                }
-
-                map.put("pageCount", new HtmlValue(String.valueOf(b.getImages().getImages().size()), LANGUAGE_DEFAULT));
-
-                String[] auths = bd.getAuthors();
-                
-                if (auths != null && auths.length > 0) {
-                    ref.addSortingTag("0" + auths[0]);
-                }
-                
-                String[] readers = bd.getReaders();
-                
-                if (readers != null && readers.length > 0) {
-                    StringBuilder sb = new StringBuilder();
-                    
-                    for (int i = 0; i < readers.length; i++) {
-                        if (i > 0) {
-                            sb.append(" ");
-                        }
-                        sb.append(readers[i]);
-                    }
-                    
-                    map.put("Reader", new HtmlValue(sb.toString(), LANGUAGE_DEFAULT));
-                }
+            Book b = cache.getBook(collection.getId(), book_id);
             
+            BiblioData bd = b.getBiblioData("en");
+            
+            Map<String, HtmlValue> map = new HashMap<>();
 
-                map.put("Current Location", new HtmlValue(bd.getCurrentLocation(), "en"));
-                map.put("Repository", new HtmlValue(bd.getRepository(), "en"));
-                map.put("Shelfmark", new HtmlValue(bd.getShelfmark(), "en"));
-                map.put("Origin", new HtmlValue(bd.getOrigin(), "en"));
-                if (bd.getTitle() != null && !bd.getTitle().isEmpty()) {
-                    map.put("Title", new HtmlValue(bd.getTitle(), "en"));
-                }
-                if (bd.getDateLabel() != null && !bd.getDateLabel().isEmpty()) {
-                    map.put("Date", new HtmlValue(bd.getDateLabel(), "en"));
-                }
-
-                ref.setMetadata(map);
-
-                if (hasContent(bd.getCommonName())) {
-                    ref.addSortingTag("1" + bd.getCommonName());
-                }
-                ref.addSortingTag("2" + ref.getReference());
-
-                ref.setThumbnails(getThumbnails(collection, b));
-            } catch (IOException e) {
-                ref.setLabel(new TextValue(title, LANGUAGE_DEFAULT));
+            if (bd.getCommonName() != null && !bd.getCommonName().isEmpty()) {
+                ref.setLabel(new TextValue(bd.getCommonName(), "en"));
+            } else if (bd.getTitle() != null && !bd.getTitle().isEmpty()) {
+                ref.setLabel(new TextValue(bd.getTitle(), "en"));
+            } else {
+                ref.setLabel(new TextValue(book_id, LANGUAGE_DEFAULT));
             }
+
+            map.put("pageCount", new HtmlValue(String.valueOf(b.getImages().getImages().size()), LANGUAGE_DEFAULT));
+
+            String[] auths = bd.getAuthors();
+            
+            if (auths != null && auths.length > 0) {
+                ref.addSortingTag("0" + auths[0]);
+            }
+            
+            String[] readers = bd.getReaders();
+            
+            if (readers != null && readers.length > 0) {
+                StringBuilder sb = new StringBuilder();
+                
+                for (int i = 0; i < readers.length; i++) {
+                    if (i > 0) {
+                        sb.append(" ");
+                    }
+                    sb.append(readers[i]);
+                }
+                
+                map.put("Reader", new HtmlValue(sb.toString(), LANGUAGE_DEFAULT));
+            }
+         
+
+            map.put("Current Location", new HtmlValue(bd.getCurrentLocation(), "en"));
+            map.put("Repository", new HtmlValue(bd.getRepository(), "en"));
+            map.put("Shelfmark", new HtmlValue(bd.getShelfmark(), "en"));
+            map.put("Origin", new HtmlValue(bd.getOrigin(), "en"));
+            if (bd.getTitle() != null && !bd.getTitle().isEmpty()) {
+                map.put("Title", new HtmlValue(bd.getTitle(), "en"));
+            }
+            if (bd.getDateLabel() != null && !bd.getDateLabel().isEmpty()) {
+                map.put("Date", new HtmlValue(bd.getDateLabel(), "en"));
+            }
+
+            ref.setMetadata(map);
+
+            if (hasContent(bd.getCommonName())) {
+                ref.addSortingTag("1" + bd.getCommonName());
+            }
+            ref.addSortingTag("2" + ref.getReference());
+
+            ref.setThumbnails(getThumbnails(collection, b));
 
             refs.add(ref);
         }

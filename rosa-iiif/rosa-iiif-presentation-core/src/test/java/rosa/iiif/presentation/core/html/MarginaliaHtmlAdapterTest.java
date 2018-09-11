@@ -46,8 +46,8 @@ public class MarginaliaHtmlAdapterTest {
     public void fromLivyTest() {
         final String transcription = "I[nfr]a";
         final String expected = "<a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/aorcollection.Princeton6452/canvas/20r\" " +
-                "data-manifestid=\"https://example.com/aorcollection.Princeton6452/manifest\">I[nfr]a</a>";
+                "data-targetid=\"https://example.com/aorcollection/Princeton6452/20r/canvas\" " +
+                "data-manifestid=\"https://example.com/aorcollection/Princeton6452/manifest\">I[nfr]a</a>";
 
         List<ReferenceTarget> targets = new ArrayList<>();
         targets.add(new ReferenceTarget("PrincetonPA6452:00000023", "[a1r]"));
@@ -64,8 +64,8 @@ public class MarginaliaHtmlAdapterTest {
     public void fromVoarchadumiaTest() {
         final String transcription = "vide synonia pag[ina] 54:";
         final String expected = "vide synonia <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/aor.BLC120b4/canvas/32v\" " +
-                "data-manifestid=\"https://example.com/aor.BLC120b4/manifest\">pag[ina] 54</a>:";
+                "data-targetid=\"https://example.com/aor/BLC120b4/32v/canvas\" " +
+                "data-manifestid=\"https://example.com/aor/BLC120b4/manifest\">pag[ina] 54</a>:";
 
         List<ReferenceTarget> targets = new ArrayList<>();
         targets.add(new ReferenceTarget("BLC120b4:c_120_b_4_(2)_f054v", "pag[ina] 54"));
@@ -80,8 +80,8 @@ public class MarginaliaHtmlAdapterTest {
     @Test
     public void referenceAtEndTest() {
         final String expected = "This is a <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
-                "data-manifestid=\"https://example.com/col.book/manifest\">test</a> moo";
+                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
+                "data-manifestid=\"https://example.com/col/book/manifest\">test</a> moo";
         final String trans = "This is a test moo";
 
         String result = adapter.addInternalRefs(fakeCollection, trans, Collections.singletonList(newRef()));
@@ -93,8 +93,8 @@ public class MarginaliaHtmlAdapterTest {
     public void referenceAtStartTest() {
         final String transcription = "is a test moo sound";
         final String expected = "is a <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
-                "data-manifestid=\"https://example.com/col.book/manifest\">test</a> moo sound";
+                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
+                "data-manifestid=\"https://example.com/col/book/manifest\">test</a> moo sound";
 
         String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(newRef()));
 
@@ -105,8 +105,8 @@ public class MarginaliaHtmlAdapterTest {
     public void referenceInMiddleTest() {
         final String transcription = "This is a test moo sound";
         final String expected = "This is a <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
-                "data-manifestid=\"https://example.com/col.book/manifest\">test</a> moo sound";
+                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
+                "data-manifestid=\"https://example.com/col/book/manifest\">test</a> moo sound";
 
         String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(newRef()));
 
@@ -117,8 +117,8 @@ public class MarginaliaHtmlAdapterTest {
     public void referenceIsTextTest() {
         final String transcription = "is a test moo";
         final String expected = "is a <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
-                "data-manifestid=\"https://example.com/col.book/manifest\">test</a> moo";
+                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
+                "data-manifestid=\"https://example.com/col/book/manifest\">test</a> moo";
 
         String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(newRef()));
 
@@ -136,8 +136,8 @@ public class MarginaliaHtmlAdapterTest {
     public void sourceTextInReferenceTest() {
         final String transcription = "This is a test moo";
         final String expected = "This is a test <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
-                "data-manifestid=\"https://example.com/col.book/manifest\">moo</a>";
+                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
+                "data-manifestid=\"https://example.com/col/book/manifest\">moo</a>";
 
         String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(weirdRef()));
         assertEquals(expected, result);

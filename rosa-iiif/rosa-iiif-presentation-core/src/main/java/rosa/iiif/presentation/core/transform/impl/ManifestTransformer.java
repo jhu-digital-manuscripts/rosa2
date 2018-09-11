@@ -3,16 +3,12 @@ package rosa.iiif.presentation.core.transform.impl;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
-
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
-import rosa.iiif.presentation.core.transform.Transformer;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Rights;
@@ -21,26 +17,20 @@ import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
 import rosa.iiif.presentation.model.Within;
 
-public class ManifestTransformer extends BasePresentationTransformer implements Transformer<Manifest> {
+public class ManifestTransformer extends BasePresentationTransformer {
     private final SequenceTransformer sequenceTransformer;
 
-    @Inject
-    public ManifestTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter,
+    public ManifestTransformer(IIIFPresentationRequestFormatter presRequestFormatter,
                                SequenceTransformer sequenceTransformer,
                                RangeTransformer rangeTransformer) {
         super(presRequestFormatter);
         this.sequenceTransformer = sequenceTransformer;
     }
 
-    @Override
     public Manifest transform(BookCollection collection, Book book, String name) {
         return buildManifest(collection, book);
     }
 
-    @Override
-    public Class<Manifest> getType() {
-        return Manifest.class;
-    }
 
     /**
      * Transform a Book in the archive to a IIIF manifest.

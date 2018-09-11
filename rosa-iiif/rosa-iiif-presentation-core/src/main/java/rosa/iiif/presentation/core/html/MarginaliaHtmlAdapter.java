@@ -79,21 +79,20 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
             }
         }
 
-        writer.writeStartElement("p");
+        writer.writeStartElement(ANNOTATION_ELEMENT);
 
         // ------ Add orientation + location icons ------
         assembleLocationIcon(orientation, positions.toArray(new Location[0]), writer);
 
         if (isNotEmpty(annotation.getOtherReader())) {
-            writer.writeStartElement("p");
-            writer.writeAttribute("class", "other-reader " + annotation.getOtherReader());
-            writer.writeCharacters("Reader: " + annotation.getOtherReader());
+            writer.writeStartElement(ALT_READER_ELEMENT);
+            writer.writeAttribute(CSS_CLASS, ALT_READER_CLASS + annotation.getOtherReader());
+            writer.writeCharacters(ALT_READER_LABEL + annotation.getOtherReader());
             writer.writeEndElement();
         }
 
         // Add transcription
-        writer.writeStartElement("p");
-//        writer.writeCharacters(StringEscapeUtils.escapeHtml4(transcription.toString()));
+        writer.writeStartElement(TRANSCRIPTION_ELEMENT);
         writer.writeCharacters(addInternalRefs(
                 col,
                 StringEscapeUtils.escapeHtml4(transcription.toString()),
@@ -104,11 +103,11 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
         // Add translation
         addTranslation(annotation.getTranslation(), writer);
 
-        addListOfValues("Symbols:", symb, writer);
+        addListOfValues(SYMBOLS_LABEL, symb, writer);
 
-        addSearchableList("People:", people, JHSearchField.PEOPLE, COLLECTION_URI, writer, ISNIResourceDb.class);
-        addSearchableList("Books:", books, JHSearchField.BOOK, COLLECTION_URI, writer);
-        addSearchableList("Locations:", locs, JHSearchField.PLACE, COLLECTION_URI, writer);
+        addSearchableList(PEOPLE_LABEL, people, JHSearchField.PEOPLE, COLLECTION_URI, writer, ISNIResourceDb.class);
+        addSearchableList(BOOKS_LABEL, books, JHSearchField.BOOK, COLLECTION_URI, writer);
+        addSearchableList(LOCATIONS_LABEL, locs, JHSearchField.PLACE, COLLECTION_URI, writer);
 
         // Add list of X-refs
         addXRefs(xrefs, writer);
