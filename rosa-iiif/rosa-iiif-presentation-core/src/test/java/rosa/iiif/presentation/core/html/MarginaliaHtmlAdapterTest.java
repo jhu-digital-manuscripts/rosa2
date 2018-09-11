@@ -1,37 +1,73 @@
 package rosa.iiif.presentation.core.html;
 
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.aor.AorLocation;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
 public class MarginaliaHtmlAdapterTest {
     private MarginaliaHtmlAdapter adapter;
+    private BookCollection fakeCollection;
 
     @Before
     public void setup() {
         IIIFPresentationRequestFormatter requestFormatter = new IIIFPresentationRequestFormatter(
-                "scheme",
-                "host",
-                "prefix",
-                11
+                "https",
+                "example.com",
+                "",
+                -1
         );
 
         adapter = new MarginaliaHtmlAdapter(new PresentationUris(requestFormatter));
+
+        fakeCollection = new BookCollection();
+
+        Map<String, AorLocation> map = new HashMap<>();
+        fakeCollection.setAnnotationMap(map);
+        map.put("id", new AorLocation("col", "book", "page", null));
+        map.put("PrincetonPA6452:00000027", new AorLocation("aorcollection", "Princeton6452", "22r", null));
+        map.put("PrincetonPA6452:00000023", new AorLocation("aorcollection", "Princeton6452", "20r", null));
+    }
+
+    @Test
+    public void fromLivyTest() {
+        final String transcription = "I[nfr]a";
+        final String expected = "I[nfr]a<a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"https://example.com/aorcollection.Princeton6452/canvas/20r\" " +
+                "data-targetmanifest=\"https://example.com/aorcollection.Princeton6452/manifest\">I[nfr]a</a>";
+
+        List<ReferenceTarget> targets = new ArrayList<>();
+        targets.add(new ReferenceTarget("PrincetonPA6452:00000023", "[a1r]"));
+        targets.add(new ReferenceTarget("PrincetonPA6452:00000027", "[5]"));
+
+        InternalReference ref = new InternalReference("I[nfr]a", targets);
+
+        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(ref));
+
+        assertEquals(expected, result);
     }
 
     @Test
     public void referenceAtEndTest() {
-        final String expected = "This is a <a href=\"id\" target=\"_blank\">test</a> moo";
+        final String expected = "This is a <a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
+                "data-targetmanifest=\"https://example.com/col.book/manifest\">test</a> moo";
         final String trans = "This is a test moo";
 
-        String result = adapter.addInternalRefs(trans, Collections.singletonList(newRef()));
+        String result = adapter.addInternalRefs(fakeCollection, trans, Collections.singletonList(newRef()));
 
         assertEquals(expected, result);
     }
@@ -39,9 +75,11 @@ public class MarginaliaHtmlAdapterTest {
     @Test
     public void referenceAtStartTest() {
         final String transcription = "is a test moo sound";
-        final String expected = "is a <a href=\"id\" target=\"_blank\">test</a> moo sound";
+        final String expected = "is a <a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
+                "data-targetmanifest=\"https://example.com/col.book/manifest\">test</a> moo sound";
 
-        String result = adapter.addInternalRefs(transcription, Collections.singletonList(newRef()));
+        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(newRef()));
 
         assertEquals(expected, result);
     }
@@ -49,9 +87,11 @@ public class MarginaliaHtmlAdapterTest {
     @Test
     public void referenceInMiddleTest() {
         final String transcription = "This is a test moo sound";
-        final String expected = "This is a <a href=\"id\" target=\"_blank\">test</a> moo sound";
+        final String expected = "This is a <a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
+                "data-targetmanifest=\"https://example.com/col.book/manifest\">test</a> moo sound";
 
-        String result = adapter.addInternalRefs(transcription, Collections.singletonList(newRef()));
+        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(newRef()));
 
         assertEquals(expected, result);
     }
@@ -59,20 +99,47 @@ public class MarginaliaHtmlAdapterTest {
     @Test
     public void referenceIsTextTest() {
         final String transcription = "is a test moo";
-        final String expected = "is a <a href=\"id\" target=\"_blank\">test</a> moo";
+        final String expected = "is a <a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
+                "data-targetmanifest=\"https://example.com/col.book/manifest\">test</a> moo";
 
-        String result = adapter.addInternalRefs(transcription, Collections.singletonList(newRef()));
+        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(newRef()));
 
         assertEquals(expected, result);
     }
 
-    private InternalReference newRef() {
-        ReferenceTarget tar =new ReferenceTarget("id", "text", "pre", "post");
-        InternalReference r = new InternalReference("text", Collections.singletonList(tar));
+    /**
+     * Tests the case where the source text is actually in the internal_ref#text, instead of
+     * internal_ref/target#text. This is done on a subset of internal references. In many cases,
+     * the target also has text which we will ignore for now.
+     *
+     *
+     */
+    @Test
+    public void sourceTextInReferenceTest() {
+        final String transcription = "This is a test moo";
+        final String expected = "This is a test <a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"https://example.com/col.book/canvas/page\" " +
+                "data-targetmanifest=\"https://example.com/col.book/manifest\">moo</a>";
 
-        r.setAnchor("test");
-        r.setAnchorPrefix("is a ");
-        r.setAnchorSuffix(" moo");
+        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(weirdRef()));
+        assertEquals(expected, result);
+    }
+
+    private InternalReference newRef() {
+        ReferenceTarget tar = new ReferenceTarget("id", "text", "pre", "post");
+        InternalReference r = new InternalReference(null, Collections.singletonList(tar));
+
+        tar.setText("test");
+        tar.setTextPrefix("is a ");
+        tar.setTextSuffix(" moo");
+
+        return r;
+    }
+
+    private InternalReference weirdRef() {
+        InternalReference r = newRef();
+        r.setText("moo");
 
         return r;
     }

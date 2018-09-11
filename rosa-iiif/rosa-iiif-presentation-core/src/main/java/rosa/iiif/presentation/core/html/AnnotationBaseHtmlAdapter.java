@@ -258,17 +258,21 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
     }
 
     /**
-     * Insert internal references found in an annotation into its transcription.
+     * Mutate transcription text by inserting internal references found in an annotation into its transcription.
      *
-     * Note this impl won't handle the case where two references have the same source, though
-     * ideally, this case will not appear, as we can have a reference with the same source and
-     * multiple targets.
+     * Note: "source text" identifies the specific text in the current annotation that is referring to
+     * another place. It seems that in the transcriptions, this text was placed on the <target text="" />
+     * element.
+     *
+     * Another Note: A subset of internal_refs in the corpus have the source text in the internal_ref#text
+     * attribute, opposite of the normal behavior - which is to have the source text in internal_ref/target#text.
+     * In this anomalous behavior, we will for now ignore the target#text attribute.
      *
      * @param transcription original annotation transcription text
      * @param refs list of internal references
      * @return newly modified transcription
      */
-    String addInternalRefs(String transcription, List<InternalReference> refs) {
+    String addInternalRefs(BookCollection col, String transcription, List<InternalReference> refs) {
         if (transcription == null || transcription.isEmpty()) {
             return "";
         }
@@ -277,14 +281,31 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
         }
 
         for (InternalReference ref : refs) {
-            // Source text with identifying prefix/suffix
-            final String fullSource = (ref.getAnchorPrefix() != null && !ref.getAnchorPrefix().isEmpty() ? ref.getAnchorPrefix() : "") +
-                                        ref.getAnchor() +
-                                        (ref.getAnchorSuffix() != null && !ref.getAnchorSuffix().isEmpty() ? ref.getAnchorSuffix() : "");
+            boolean textInRef = ref.getText() != null && !ref.getText().isEmpty();
 
             for (ReferenceTarget target : ref.getTargets()) {
-                final String start = "<a href=\"" + target.getTargetId() + "\" target=\"_blank\">";
-                final String end = "</a>";
+                String sourcePrefix;
+                String sourceText;
+                String sourceSuffix;
+
+                if (textInRef) {
+                    sourcePrefix = "";
+                    sourceSuffix = "";
+                    sourceText = ref.getText();
+                } else {
+                    sourcePrefix = target.getTextPrefix();
+                    sourceText = target.getText();
+                    sourceSuffix = target.getTextSuffix();
+                }
+
+                final String fullSource = (sourcePrefix != null && !sourcePrefix.isEmpty() ? sourcePrefix : "") +
+                        sourceText +
+                        (sourceSuffix != null && !sourceSuffix.isEmpty() ? sourceSuffix : "");
+
+                if (!resolvable(col, target.getTargetId())) {
+                    continue;
+                }
+                final String link = buildLink(col, sourceText, target.getTargetId());
 
                 // Split by source text, then insert text on split as needed
                 String[] parts = transcription.split(fullSource);
@@ -293,19 +314,16 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
                 if (parts.length > 0) {
                     result.append(parts[0]);
                     for (int i = 1; i < parts.length; i++) {
-                        result.append(ref.getAnchorPrefix()).append(start).append(ref.getAnchor())
-                                .append(end).append(ref.getAnchorSuffix());
+                        result.append(sourcePrefix).append(link).append(sourceSuffix);
                         result.append(parts[i]);
                     }
 
                     // "Full Source" appears at the end of the transcription
                     if (transcription.lastIndexOf(fullSource) + fullSource.length() == transcription.length()) {
-                        result.append(ref.getAnchorPrefix()).append(start).append(ref.getAnchor())
-                                .append(end).append(ref.getAnchorSuffix());
+                        result.append(sourcePrefix).append(link).append(sourceSuffix);
                     }
                 } else { // Transcription should be exactly equal to "fullSource"
-                    result.append(ref.getAnchorPrefix()).append(start).append(ref.getAnchor())
-                            .append(end).append(ref.getAnchorSuffix());
+                    result.append(sourcePrefix).append(link).append(sourceSuffix);
                 }
 
                 transcription = result.toString();
@@ -313,6 +331,28 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
         }
 
         return transcription;
+    }
+
+    private boolean resolvable(BookCollection col, String target) {
+        return col.getAnnotationMap().containsKey(target);
+    }
+
+    private String buildLink(BookCollection col, String text, String targetId) {
+        return "<a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"" + getTargetUri(col, targetId) + "\" " +
+                "data-targetmanifest=\"" + getTargetManifest(col, targetId) + "\">" +
+                text +
+                "</a>";
+    }
+
+    private String getTargetUri(BookCollection col, String target) {
+        AorLocation location = col.getAnnotationMap().get(target);
+        return pres_uris.getCanvasURI(location.getCollection(), location.getBook(), location.getPage());
+    }
+
+    private String getTargetManifest(BookCollection col, String target) {
+        AorLocation loc = col.getAnnotationMap().get(target);
+        return pres_uris.getManifestURI(loc.getCollection(), loc.getBook());
     }
 
     /**

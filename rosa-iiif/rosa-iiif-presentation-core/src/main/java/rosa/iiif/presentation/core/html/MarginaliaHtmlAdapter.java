@@ -95,6 +95,7 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
         writer.writeStartElement("p");
 //        writer.writeCharacters(StringEscapeUtils.escapeHtml4(transcription.toString()));
         writer.writeCharacters(addInternalRefs(
+                col,
                 StringEscapeUtils.escapeHtml4(transcription.toString()),
                 iRefs
         ));
