@@ -243,7 +243,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         book.setAutomaticNarrativeTagging(loadItem(bookId + NARRATIVE_TAGGING, bookStreams, NarrativeTagging.class,
                 errors));
         book.setTranscription(loadItem(bookId + TRANSCRIPTION + XML_EXT, bookStreams, Transcription.class, errors));
-        book.setBookMetadata(loadItem(bookId + ".description.xml", bookStreams, BookMetadata.class, errors));
+        book.setBookMetadata(loadItem(bookId + METADATA, bookStreams, BookMetadata.class, errors));
 
         List<String> content = bookStreams.listByteStreamNames();
         book.setContent(content.toArray(new String[]{}));

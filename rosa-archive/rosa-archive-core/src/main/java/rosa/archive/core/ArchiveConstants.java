@@ -27,6 +27,8 @@ public interface ArchiveConstants {
     String CROP = ".crop.txt";
 
     String IMAGES = ".images.csv";
+    
+    String METADATA = ".metadata.xml";
 
     String IMAGES_CROP = ".images.crop.csv";
 

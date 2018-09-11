@@ -247,6 +247,8 @@ public class ArchiveTool {
         case MIGRATE_TEI_METADATA:
             TEIDescriptionConverter.run(cmdline, config, report);
             break;
+        default:
+            break;
         }
     }
     

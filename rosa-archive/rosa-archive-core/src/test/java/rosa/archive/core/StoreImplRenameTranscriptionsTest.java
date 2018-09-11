@@ -91,7 +91,7 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
 
         List<String> names = base.getByteStreamGroup(VALID_COLLECTION).getByteStreamGroup(VALID_BOOK_FOLGERSHA2)
                 .listByteStreamNames().stream()
-                .filter(n -> n.endsWith(".xml") && !n.contains("description"))
+                .filter(n -> n.endsWith(".xml") && !n.contains(ArchiveConstants.METADATA))
                 .collect(Collectors.toList());
 
         assertEquals(
