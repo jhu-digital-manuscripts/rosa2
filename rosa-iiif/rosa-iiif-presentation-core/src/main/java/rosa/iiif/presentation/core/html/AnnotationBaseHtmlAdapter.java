@@ -39,7 +39,7 @@ import java.util.logging.Logger;
  */
 public abstract class AnnotationBaseHtmlAdapter<T> {
     private static final Logger LOGGER = Logger.getLogger("AnnotationHtmlAdapter");
-    protected static final boolean[] NO_ORIENTATION = new boolean[] { false, false, false, false };
+//    protected static final boolean[] NO_ORIENTATION = new boolean[] { false, false, false, false };
 
     protected final PresentationUris pres_uris;
     private List<ExternalResourceDb> externalDbs;
@@ -268,6 +268,8 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
      * attribute, opposite of the normal behavior - which is to have the source text in internal_ref/target#text.
      * In this anomalous behavior, we will for now ignore the target#text attribute.
      *
+     * TODO only handles the first reference target for now
+     *
      * @param transcription original annotation transcription text
      * @param refs list of internal references
      * @return newly modified transcription
@@ -283,7 +285,9 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
         for (InternalReference ref : refs) {
             boolean textInRef = ref.getText() != null && !ref.getText().isEmpty();
 
-            for (ReferenceTarget target : ref.getTargets()) {
+//            for (ReferenceTarget target : ref.getTargets()) {
+            if (ref.getTargets().size() > 0) {
+                ReferenceTarget target = ref.getTargets().get(0);
                 String sourcePrefix;
                 String sourceText;
                 String sourceSuffix;
@@ -298,39 +302,34 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
                     sourceSuffix = target.getTextSuffix();
                 }
 
-                final String fullSource = (sourcePrefix != null && !sourcePrefix.isEmpty() ? sourcePrefix : "") +
-                        sourceText +
-                        (sourceSuffix != null && !sourceSuffix.isEmpty() ? sourceSuffix : "");
-
                 if (!resolvable(col, target.getTargetId())) {
                     continue;
                 }
                 final String link = buildLink(col, sourceText, target.getTargetId());
 
-                // Split by source text, then insert text on split as needed
-                String[] parts = transcription.split(fullSource);
-
-                StringBuilder result = new StringBuilder();
-                if (parts.length > 0) {
-                    result.append(parts[0]);
-                    for (int i = 1; i < parts.length; i++) {
-                        result.append(sourcePrefix).append(link).append(sourceSuffix);
-                        result.append(parts[i]);
-                    }
-
-                    // "Full Source" appears at the end of the transcription
-                    if (transcription.lastIndexOf(fullSource) + fullSource.length() == transcription.length()) {
-                        result.append(sourcePrefix).append(link).append(sourceSuffix);
-                    }
-                } else { // Transcription should be exactly equal to "fullSource"
-                    result.append(sourcePrefix).append(link).append(sourceSuffix);
-                }
-
-                transcription = result.toString();
+                transcription = decorate(transcription, sourcePrefix, sourceText, sourceSuffix, link);
             }
         }
 
         return transcription;
+    }
+
+    private String decorate(String transcription, String prefix, String text, String suffix, String link) {
+        StringBuilder original = new StringBuilder();
+        StringBuilder modified = new StringBuilder();
+
+        if (prefix != null && !prefix.isEmpty()) {
+            original.append(prefix);
+            modified.append(prefix);
+        }
+        original.append(text);
+        modified.append(link);
+        if (suffix != null && !suffix.isEmpty()) {
+            original.append(suffix);
+            modified.append(suffix);
+        }
+
+        return transcription.replace(original, modified);
     }
 
     private boolean resolvable(BookCollection col, String target) {
@@ -338,21 +337,12 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
     }
 
     private String buildLink(BookCollection col, String text, String targetId) {
+        AorLocation loc = col.getAnnotationMap().get(targetId);
         return "<a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"" + getTargetUri(col, targetId) + "\" " +
-                "data-targetmanifest=\"" + getTargetManifest(col, targetId) + "\">" +
+                "data-targetid=\"" + targetId(loc) + "\" " +
+                "data-manifestid=\"" + manifestId(loc) + "\">" +
                 text +
                 "</a>";
-    }
-
-    private String getTargetUri(BookCollection col, String target) {
-        AorLocation location = col.getAnnotationMap().get(target);
-        return pres_uris.getCanvasURI(location.getCollection(), location.getBook(), location.getPage());
-    }
-
-    private String getTargetManifest(BookCollection col, String target) {
-        AorLocation loc = col.getAnnotationMap().get(target);
-        return pres_uris.getManifestURI(loc.getCollection(), loc.getBook());
     }
 
     /**
