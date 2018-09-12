@@ -2,7 +2,6 @@ package rosa.iiif.presentation.core.transform.impl;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -116,7 +115,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
             ref.setType(SC_MANIFEST);
             ref.setReference(pres_uris.getManifestURI(collection.getId(), book_id));
 
-            Book b = cache.getBook(collection.getId(), book_id);
+            Book b = cache.getBook(collection, book_id);
             
             BiblioData bd = b.getBiblioData("en");
             

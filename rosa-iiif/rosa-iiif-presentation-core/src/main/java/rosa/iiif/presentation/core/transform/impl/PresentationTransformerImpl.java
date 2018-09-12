@@ -65,7 +65,7 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
 
     @Override
     public Manifest manifest(BookCollection collection, Book book) {
-        return man.transform(collection, book, null);
+        return man.transform(collection, book);
     }
 
     @Override

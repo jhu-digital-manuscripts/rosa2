@@ -1,12 +1,14 @@
 package rosa.iiif.presentation.core;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 
+import org.apache.lucene.queries.function.valuesource.VectorValueSource;
 import org.json.JSONObject;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -65,6 +67,23 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
         assertTrue(json.has("sequences"));
         assertTrue(result.contains("otherContent"));
 //        assertTrue(json.has("structures"));
+    }
+    
+    
+    @Test
+    public void testUnknownCollectionRequest() throws IOException {
+        PresentationRequest req = new PresentationRequest(PresentationRequestType.MANIFEST, "foo", VALID_BOOK_LUDWIGXV7);
+        
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        assertFalse(service.handle_request(req, os));
+    }
+    
+    @Test
+    public void testUnknownManifestRequest() throws IOException {
+        PresentationRequest req = new PresentationRequest(PresentationRequestType.MANIFEST, VALID_COLLECTION, "foo");
+        
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        assertFalse(service.handle_request(req, os));
     }
     
     @Test
