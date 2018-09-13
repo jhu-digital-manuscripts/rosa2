@@ -8,7 +8,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 
-import org.apache.lucene.queries.function.valuesource.VectorValueSource;
 import org.json.JSONObject;
 import org.junit.BeforeClass;
 import org.junit.Test;
