@@ -134,7 +134,7 @@ public class AORIdMapper {
             }
         }
 
-        if (orig_page != null) {
+        if (orig_page != null && !orig_page.isEmpty()) {
             AorLocation loc = new AorLocation(col, book, getPageLabel(book, page.getPage()), null);
             result.put(getId(book, orig_page, null), loc);
         }
@@ -152,6 +152,12 @@ public class AORIdMapper {
     }
 
     private String getPageLabel(String book, String page) {
+        String[] parts = page.split("\\.");
+        if (parts.length == 2) {
+            // we can guess that this is using the "original" image names (as opposed to archive name).
+            // In this case, just throw away the file extension
+            return parts[0];
+        }
         return nameParser.shortName(page);
     }
 
