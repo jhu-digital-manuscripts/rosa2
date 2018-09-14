@@ -82,7 +82,6 @@ public class AORTranscriptionChecker {
 
     private Set<String> annotationIds;
 
-    private FileMap gitArchiveMap;
 
     @Inject
     public AORTranscriptionChecker(AORAnnotatedPageSerializer serializer, FileMapSerializer fileMapSerializer)
@@ -148,7 +147,7 @@ public class AORTranscriptionChecker {
             locationsPath = Paths.get(path).resolve("Locations.xlsx");
         }
 
-        gitArchiveMap = loadDirectoryMap();
+        loadDirectoryMap();
 
         if (isBook) {
             doBook(path, report);
