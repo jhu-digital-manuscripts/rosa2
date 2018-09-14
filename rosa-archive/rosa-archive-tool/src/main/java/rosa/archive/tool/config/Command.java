@@ -13,6 +13,7 @@ public enum Command {
     FILE_MAP("file-map"),
     VALIDATE_XML("validate-xml"),
     RENAME_IMAGES("rename-images"),
+    RENAME_FILES("rename-files"),    
     RENAME_TRANSCRIPTIONS("rename-transcriptions"),
     GENERATE_TEI("generate-tei"),
     CHECK_AOR("check-aor"),
