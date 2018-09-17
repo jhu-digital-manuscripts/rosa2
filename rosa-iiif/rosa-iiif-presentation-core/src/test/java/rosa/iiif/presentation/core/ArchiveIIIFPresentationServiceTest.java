@@ -6,7 +6,6 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
 
 import org.json.JSONObject;
 import org.junit.BeforeClass;
@@ -40,11 +39,12 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
 
         rosa.iiif.image.core.IIIFRequestFormatter imageFormatter = new rosa.iiif.image.core.IIIFRequestFormatter(
                 scheme, host, port, image_prefix);
-        ImageIdMapper imageIdMapper = new JhuImageIdMapper(new HashMap<String, String>());
         ArchiveNameParser nameParser = new ArchiveNameParser();
         
         IIIFPresentationCache cache = new IIIFPresentationCache(store, 10);
-        PresentationTransformer transformer = new PresentationTransformerImpl(cache, requestFormatter, imageFormatter, imageIdMapper, nameParser);
+        PresentationUris pres_uris = new PresentationUris(requestFormatter, imageFormatter);
+
+        PresentationTransformer transformer = new PresentationTransformerImpl(cache, pres_uris, nameParser);
 
         service = new ArchiveIIIFPresentationService(cache, serializer, transformer);
     }

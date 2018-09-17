@@ -5,8 +5,6 @@ import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 import java.util.logging.Logger;
 
@@ -28,8 +26,6 @@ import rosa.iiif.presentation.core.IIIFPresentationCache;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestParser;
 import rosa.iiif.presentation.core.IIIFPresentationService;
-import rosa.iiif.presentation.core.ImageIdMapper;
-import rosa.iiif.presentation.core.JhuImageIdMapper;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.core.jhsearch.LuceneJHSearchService;
@@ -45,7 +41,6 @@ import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 public class IIIFPresentationServletModule extends ServletModule {
     private static final Logger LOG = Logger.getLogger(IIIFPresentationServletModule.class.toString());
     private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
-    private static final String FSI_SHARE_MAP_CONFIG_PATH = "/fsi-share-map.properties";
     private static final String LUCENE_DIRECTORY = "lucene";
     private static final String ARCHIVE_DIRECTORY = "archive";
 
@@ -83,20 +78,6 @@ public class IIIFPresentationServletModule extends ServletModule {
         ByteStreamGroup base = new FSByteStreamGroup(archive_path);
         return new StoreImpl(serializers, bookChecker, collectionChecker, base, false);
     }
-
-    @Provides
-    @Named("fsi.share.map")
-    Map<String, String> provideImageAlises() {
-        Map<String, String> result = new HashMap<>();
-
-        Properties props = loadProperties(FSI_SHARE_MAP_CONFIG_PATH);
-
-        for (String key : props.stringPropertyNames()) {
-            result.put(key, props.getProperty(key));
-        }
-
-        return result;
-    }
     
     @Provides
     IIIFPresentationCache provideIIIFPresentationCache(Store store) {
@@ -107,11 +88,6 @@ public class IIIFPresentationServletModule extends ServletModule {
     IIIFPresentationService providesIIIFPresentationService(IIIFPresentationCache cache, PresentationSerializer jsonld_serializer,
                                     PresentationTransformer transformer) {
         return new ArchiveIIIFPresentationService(cache, jsonld_serializer, transformer);
-    }
-    
-    @Provides
-    ImageIdMapper provideImageIdMapper(@Named("fsi.share.map") Map<String, String> fsi_share_map) {
-        return new JhuImageIdMapper(fsi_share_map);
     }
     
     @Provides @Named("formatter.presentation")
@@ -140,12 +116,12 @@ public class IIIFPresentationServletModule extends ServletModule {
     }
     
     @Provides
-    JHSearchService provideJHSearchService(@Named("formatter.presentation") IIIFPresentationRequestFormatter requestFormatter) {
+    JHSearchService provideJHSearchService(PresentationUris pres_uris) {
         try {
             Path index_path = get_webapp_path().resolve(LUCENE_DIRECTORY);
             LOG.info("Using lucene index path :: " + index_path);
             
-            return new LuceneJHSearchService(index_path, requestFormatter);
+            return new LuceneJHSearchService(index_path, pres_uris);
         } catch (IOException e) {
             throw new RuntimeException("Failed to create LuceneIIIFSearchService", e);
         }

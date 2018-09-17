@@ -30,15 +30,15 @@ public class MarginaliaHtmlAdapterTest {
                 -1
         );
 
-        adapter = new MarginaliaHtmlAdapter(new PresentationUris(requestFormatter));
+        adapter = new MarginaliaHtmlAdapter(new PresentationUris(requestFormatter, null));
 
         fakeCollection = new BookCollection();
 
         Map<String, AorLocation> map = new HashMap<>();
         fakeCollection.setAnnotationMap(map);
         map.put("id", new AorLocation("col", "book", "page", null));
-        map.put("PrincetonPA6452:00000027", new AorLocation("aorcollection", "Princeton6452", "22r", null));
-        map.put("PrincetonPA6452:00000023", new AorLocation("aorcollection", "Princeton6452", "20r", null));
+        map.put("PrincetonPA6452:00000027", new AorLocation("aor", "Princeton6452", "22r", null));
+        map.put("PrincetonPA6452:00000023", new AorLocation("aor", "Princeton6452", "20r", null));
         map.put("BLC120b4:c_120_b_4_(2)_f054v", new AorLocation("aor", "BLC120b4", "32v", null));
     }
 
@@ -46,8 +46,8 @@ public class MarginaliaHtmlAdapterTest {
     public void fromLivyTest() {
         final String transcription = "I[nfr]a";
         final String expected = "<a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/aorcollection/Princeton6452/20r/canvas\" " +
-                "data-manifestid=\"https://example.com/aorcollection/Princeton6452/manifest\">I[nfr]a</a>";
+                "data-targetid=\"https://example.com/aor/Princeton6452/20r/canvas\" " +
+                "data-manifestid=\"https://example.com/aor/Princeton6452/manifest\">I[nfr]a</a>";
 
         List<ReferenceTarget> targets = new ArrayList<>();
         targets.add(new ReferenceTarget("PrincetonPA6452:00000023", "[a1r]"));

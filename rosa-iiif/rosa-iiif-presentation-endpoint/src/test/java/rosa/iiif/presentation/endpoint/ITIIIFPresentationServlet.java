@@ -20,6 +20,7 @@ import com.google.inject.Injector;
 
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.Store;
+import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
@@ -36,7 +37,7 @@ public class ITIIIFPresentationServlet {
         Injector injector = Guice.createInjector(new ArchiveCoreModule(), new IIIFPresentationServletITModule());
 
         store = injector.getInstance(Store.class);
-        pres_uris = new PresentationUris(injector.getInstance(IIIFPresentationRequestFormatter.class));
+        pres_uris = new PresentationUris(injector.getInstance(IIIFPresentationRequestFormatter.class), injector.getInstance(IIIFRequestFormatter.class));
     }
 
     private void check_json_syntax(InputStream is) throws Exception {

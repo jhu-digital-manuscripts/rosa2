@@ -13,12 +13,11 @@ import rosa.iiif.presentation.core.html.TableHtmlAdapter;
 import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 
 public class PresentationTestUtils {
-    public static AnnotationTransformer annotationTransformer(IIIFPresentationRequestFormatter presReqFormatter) {
-        return new AnnotationTransformer(presReqFormatter, new ArchiveNameParser(), htmlAdapterSet(presReqFormatter));
+    public static AnnotationTransformer annotationTransformer(PresentationUris presUris) {
+        return new AnnotationTransformer(presUris, new ArchiveNameParser(), htmlAdapterSet(presUris));
     }
 
-    public static AdapterSet htmlAdapterSet(IIIFPresentationRequestFormatter formatter) {
-        PresentationUris presUris = new PresentationUris(formatter);
+    public static AdapterSet htmlAdapterSet(PresentationUris presUris) {
         Set<AnnotationBaseHtmlAdapter<?>> adapters = new HashSet<>();
 
         adapters.add(new MarginaliaHtmlAdapter(presUris));
