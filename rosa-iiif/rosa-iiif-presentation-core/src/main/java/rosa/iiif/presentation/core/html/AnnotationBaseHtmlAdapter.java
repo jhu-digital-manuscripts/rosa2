@@ -39,7 +39,7 @@ import java.util.logging.Logger;
  */
 public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstants {
     private static final Logger LOGGER = Logger.getLogger("AnnotationHtmlAdapter");
-    protected static final boolean[] NO_ORIENTATION = new boolean[] { false, false, false, false };
+//    protected static final boolean[] NO_ORIENTATION = new boolean[] { false, false, false, false };
 
     protected final PresentationUris pres_uris;
     private List<ExternalResourceDb> externalDbs;
@@ -255,6 +255,94 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
     private InternalReference fromInternalRefAttr(Annotation a) {
         String text = a.getReferencedText();
         return new InternalReference(text, Collections.singletonList(new ReferenceTarget(a.getInternalRef(), text)));
+    }
+
+    /**
+     * Mutate transcription text by inserting internal references found in an annotation into its transcription.
+     *
+     * Note: "source text" identifies the specific text in the current annotation that is referring to
+     * another place. It seems that in the transcriptions, this text was placed on the <target text="" />
+     * element.
+     *
+     * Another Note: A subset of internal_refs in the corpus have the source text in the internal_ref#text
+     * attribute, opposite of the normal behavior - which is to have the source text in internal_ref/target#text.
+     * In this anomalous behavior, we will for now ignore the target#text attribute.
+     *
+     * TODO only handles the first reference target for now
+     *
+     * @param transcription original annotation transcription text
+     * @param refs list of internal references
+     * @return newly modified transcription
+     */
+    String addInternalRefs(BookCollection col, String transcription, List<InternalReference> refs) {
+        if (transcription == null || transcription.isEmpty()) {
+            return "";
+        }
+        if (refs == null || refs.size() == 0) {
+            return transcription;
+        }
+
+        for (InternalReference ref : refs) {
+            boolean textInRef = ref.getText() != null && !ref.getText().isEmpty();
+
+//            for (ReferenceTarget target : ref.getTargets()) {
+            if (ref.getTargets().size() > 0) {
+                ReferenceTarget target = ref.getTargets().get(0);
+                String sourcePrefix;
+                String sourceText;
+                String sourceSuffix;
+
+                if (textInRef) {
+                    sourcePrefix = "";
+                    sourceSuffix = "";
+                    sourceText = ref.getText();
+                } else {
+                    sourcePrefix = target.getTextPrefix();
+                    sourceText = target.getText();
+                    sourceSuffix = target.getTextSuffix();
+                }
+
+                if (!resolvable(col, target.getTargetId())) {
+                    continue;
+                }
+                final String link = buildLink(col, sourceText, target.getTargetId());
+
+                transcription = decorate(transcription, sourcePrefix, sourceText, sourceSuffix, link);
+            }
+        }
+
+        return transcription;
+    }
+
+    private String decorate(String transcription, String prefix, String text, String suffix, String link) {
+        StringBuilder original = new StringBuilder();
+        StringBuilder modified = new StringBuilder();
+
+        if (prefix != null && !prefix.isEmpty()) {
+            original.append(prefix);
+            modified.append(prefix);
+        }
+        original.append(text);
+        modified.append(link);
+        if (suffix != null && !suffix.isEmpty()) {
+            original.append(suffix);
+            modified.append(suffix);
+        }
+
+        return transcription.replace(original, modified);
+    }
+
+    private boolean resolvable(BookCollection col, String target) {
+        return col.getAnnotationMap().containsKey(target);
+    }
+
+    private String buildLink(BookCollection col, String text, String targetId) {
+        AorLocation loc = col.getAnnotationMap().get(targetId);
+        return "<a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"" + targetId(loc) + "\" " +
+                "data-manifestid=\"" + manifestId(loc) + "\">" +
+                text +
+                "</a>";
     }
 
     /**

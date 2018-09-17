@@ -27,7 +27,7 @@ public class ManifestTransformer extends BasePresentationTransformer {
         this.sequenceTransformer = sequenceTransformer;
     }
 
-    public Manifest transform(BookCollection collection, Book book, String name) {
+    public Manifest transform(BookCollection collection, Book book) {
         return buildManifest(collection, book);
     }
 

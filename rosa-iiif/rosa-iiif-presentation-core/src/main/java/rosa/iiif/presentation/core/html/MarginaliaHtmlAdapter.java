@@ -93,7 +93,11 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
 
         // Add transcription
         writer.writeStartElement(TRANSCRIPTION_ELEMENT);
-        writer.writeCharacters(StringEscapeUtils.escapeHtml4(transcription.toString()));
+        writer.writeCharacters(addInternalRefs(
+                col,
+                StringEscapeUtils.escapeHtml4(transcription.toString()),
+                iRefs
+        ));
         writer.writeEndElement();
 
         // Add translation

@@ -3,6 +3,8 @@ package rosa.iiif.presentation.core;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
 import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.model.AnnotationList;
@@ -66,7 +68,13 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
     
     private boolean handle_collection(String[] identifier, OutputStream os) throws IOException {
         String col_id = identifier[0];
-        Collection col = cache.get(col_id, Collection.class, () -> transformer.collection(cache.getBookCollection(col_id)));
+        BookCollection book_col = cache.getBookCollection(col_id);
+        
+        if (book_col == null) {
+            return false;
+        }
+        
+        Collection col = cache.get(col_id, Collection.class, () -> transformer.collection(book_col));
         
         if (col == null) {
             return false;
@@ -82,7 +90,19 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String book_id = identifier[1];
         String name = identifier[2];
         
-        Range range = transformer.range(cache.getBookCollection(col_id), cache.getBook(col_id, book_id), name);
+        BookCollection book_col = cache.getBookCollection(col_id);
+        
+        if (book_col == null) {
+            return false;
+        }
+        
+        Book book = cache.getBook(book_col, book_id);
+        
+        if (book == null) {
+            return false;
+        }
+        
+        Range range = transformer.range(book_col, book, name);
         
         if (range == null) {
             return false;
@@ -98,8 +118,21 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String book_id = identifier[1];
         String id = col_id + book_id;
         
-        Manifest man = cache.get(id, Manifest.class, () -> 
-            transformer.manifest(cache.getBookCollection(col_id), cache.getBook(col_id, book_id)));
+        Manifest man = cache.get(id, Manifest.class, () -> {
+            BookCollection book_col = cache.getBookCollection(col_id);
+            
+            if (book_col == null) {
+                return null;
+            }
+            
+            Book book = cache.getBook(book_col, book_id);
+            
+            if (book == null) {
+                return null;
+            }
+            
+            return transformer.manifest(book_col, book);
+            });
         
         if (man == null) {
             return false;
@@ -115,7 +148,19 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String book_id = identifier[1];
         String name = identifier[2];
         
-        Canvas canvas = transformer.canvas(cache.getBookCollection(col_id), cache.getBook(col_id, book_id), name);
+        BookCollection book_col = cache.getBookCollection(col_id);
+        
+        if (book_col == null) {
+            return false;
+        }
+        
+        Book book = cache.getBook(book_col, book_id);
+        
+        if (book == null) {
+            return false;
+        }
+        
+        Canvas canvas = transformer.canvas(book_col, book, name);
         
         if (canvas == null) {
             return false;
@@ -131,7 +176,19 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String book_id = identifier[1];
         String name = identifier[2];
         
-        AnnotationList list = transformer.annotationList(cache.getBookCollection(col_id), cache.getBook(col_id, book_id), name);
+        BookCollection book_col = cache.getBookCollection(col_id);
+        
+        if (book_col == null) {
+            return false;
+        }
+        
+        Book book = cache.getBook(book_col, book_id);
+        
+        if (book == null) {
+            return false;
+        }
+        
+        AnnotationList list = transformer.annotationList(book_col, book, name);
         
         if (list == null) {
             return false;

@@ -66,14 +66,14 @@ public class IIIFPresentationCache {
         });
     }
 
-    public Book getBook(String col_id, String book_id) {
-        String id = col_id + book_id;
+    public Book getBook(BookCollection book_col, String book_id) {
+        String id = book_col.getId() + book_id;
 
         return get(id, Book.class, () -> {
             try {
-                return store.loadBook(getBookCollection(col_id), book_id, null);
+                return store.loadBook(book_col, book_id, null);
             } catch (IOException e) {
-                logger.log(Level.SEVERE, "Loading book " + col_id + " " + book_id, e);
+                logger.log(Level.SEVERE, "Loading book " + book_col.getId() + " " + book_id, e);
                 return null;
             }
         });

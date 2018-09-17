@@ -115,7 +115,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
             ref.setType(SC_MANIFEST);
             ref.setReference(pres_uris.getManifestURI(collection.getId(), book_id));
 
-            Book b = cache.getBook(collection.getId(), book_id);
+            Book b = cache.getBook(collection, book_id);
             
             BiblioData bd = b.getBiblioData("en");
             

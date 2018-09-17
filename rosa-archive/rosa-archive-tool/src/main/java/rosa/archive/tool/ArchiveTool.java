@@ -1,5 +1,6 @@
 package rosa.archive.tool;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
 
@@ -26,6 +27,7 @@ import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.tool.config.Command;
 import rosa.archive.tool.config.Flag;
 import rosa.archive.tool.config.ToolConfig;
+import rosa.archive.tool.derivative.AbstractDerivative;
 import rosa.archive.tool.derivative.BookDerivative;
 import rosa.archive.tool.derivative.CollectionDerivative;
 import rosa.archive.tool.derivative.CropDerivative;
@@ -182,6 +184,16 @@ public class ArchiveTool {
     private void run(CommandLine cmdline, Command cmd) throws IOException {
         String[] args = cmdline.getArgs();
 
+        if (cmd == Command.RENAME_FILES) {
+            if (args.length == 3) {
+                AbstractDerivative.renameFiles(new File(args[1]), new File(args[2]));    
+            } else {
+                System.err.println("Must pass directory and filemap arguments");
+            }
+            
+            return;
+        }
+        
         switch (args.length) {
         case 1:
             for (String collection : store.listBookCollections()) {
@@ -248,6 +260,7 @@ public class ArchiveTool {
             TEIDescriptionConverter.run(cmdline, config, report);
             break;
         default:
+            System.err.println("Command not supported on book");
             break;
         }
     }
@@ -261,7 +274,7 @@ public class ArchiveTool {
             cols = store.listBookCollections();
         } else {
             cols = new String[] {args[1]};
-        }
+        }        
 
         for (String col : cols) {
             CollectionDerivative deriv = new CollectionDerivative(col, report, store);
@@ -282,14 +295,8 @@ public class ArchiveTool {
                 CropDerivative cd = new CropDerivative(col, report, store);
                 cd.cropImages(has_option(cmdline, Flag.FORCE));
                 break;
-            case FILE_MAP:
-                System.err.println("Cannot generate file map for collections, a book must be specified.");
-                break;
             case VALIDATE_XML:
                 deriv.validateXml();
-                break;
-            case RENAME_IMAGES:
-                deriv.renameImages(has_option(cmdline, Flag.CHANGE_ID), has_option(cmdline, Flag.REVERSE));
                 break;
             case CHECK_AOR:
                 String sheet_dir = cmdline.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
@@ -302,11 +309,12 @@ public class ArchiveTool {
                 idMapper.run(args[1]);
                 break;
             default:
+                System.err.println("Command not supported on collection");
                 break;
             }
         }
     }
-
+    
     private boolean has_option(CommandLine cmdline, Flag flag) {
         return cmdline.hasOption(flag.longName()) || cmdline.hasOption(flag.shortName());
     }
