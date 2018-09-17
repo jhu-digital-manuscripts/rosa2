@@ -29,7 +29,7 @@ import rosa.archive.model.aor.Graph;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.Table;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.extras.ISNIResourceDb;
 import rosa.iiif.presentation.core.html.AdapterSet;
 import rosa.iiif.presentation.core.util.AnnotationLocationUtil;
@@ -40,19 +40,17 @@ import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 import rosa.iiif.presentation.model.selector.FragmentSelector;
 
-public class AnnotationTransformer extends BasePresentationTransformer implements AORAnnotatedPageConstants {
-
-    private ArchiveNameParser nameParser;
-    private AdapterSet htmlAdapters;
-//    private HtmlDecorator decorator;
+public class AnnotationTransformer implements TransformerConstants, AORAnnotatedPageConstants {
+    private final PresentationUris pres_uris;
+    private final ArchiveNameParser nameParser;
+    private final AdapterSet htmlAdapters;
     private ISNIResourceDb isni_db;
 
-    public AnnotationTransformer(IIIFPresentationRequestFormatter presRequestFormatter,
+    public AnnotationTransformer(PresentationUris pres_uris,
                                  ArchiveNameParser nameParser, AdapterSet htmlAdapters) {
-        super(presRequestFormatter);
+        this.pres_uris = pres_uris;
         this.nameParser = nameParser;
         this.htmlAdapters = htmlAdapters;
-//        this.decorator = new HtmlDecorator();
     }
 
     public Annotation transform(BookCollection collection, Book book, String name) {

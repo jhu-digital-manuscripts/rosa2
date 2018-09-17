@@ -6,16 +6,16 @@ import java.util.List;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.AnnotationListType;
-import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Layer;
 
 // TODO finish implementing
-public class LayerTransformer extends BasePresentationTransformer implements IIIFNames {
-
-    public LayerTransformer(IIIFPresentationRequestFormatter presRequestFormatter) {
-        super(presRequestFormatter);
+public class LayerTransformer implements TransformerConstants {
+    private final PresentationUris pres_uris;
+    
+    public LayerTransformer(PresentationUris pres_uris) {
+        this.pres_uris = pres_uris;
     }
 
     public Layer transform(BookCollection collection, Book book, String name) {

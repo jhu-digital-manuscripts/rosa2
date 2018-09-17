@@ -14,8 +14,7 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.ImageList;
 import rosa.iiif.presentation.core.IIIFPresentationCache;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.ImageIdMapper;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.HtmlValue;
@@ -27,23 +26,18 @@ import rosa.iiif.presentation.model.Service;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.Within;
 
-public class CollectionTransformer extends BasePresentationTransformer {
+public class CollectionTransformer implements TransformerConstants {
 //    public static final String TOP_COLLECTION_LABEL = "All JHU IIIF Collections";
 //    public static final String TOP_COLLECTION_NAME = "top";
     private static final String LANGUAGE_DEFAULT = "en";
     private static final int MAX_THUMBNAILS = 3;
 
-    private rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter;
-    private ImageIdMapper idMapper;
-    private IIIFPresentationCache cache;
+    private final IIIFPresentationCache cache;
+    private final PresentationUris pres_uris;
 
-    public CollectionTransformer(IIIFPresentationCache cache, IIIFPresentationRequestFormatter presRequestFormatter,
-                                 rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
-                                 ImageIdMapper idMapper) {
-        super(presRequestFormatter);
-        this.imageRequestFormatter = imageRequestFormatter;
-        this.idMapper = idMapper;
+    public CollectionTransformer(IIIFPresentationCache cache, PresentationUris pres_uris) {
         this.cache = cache;
+        this.pres_uris = pres_uris;
     }
 
     public Collection collection(BookCollection collection) {
@@ -207,7 +201,7 @@ public class CollectionTransformer extends BasePresentationTransformer {
         
         for (BookImage image : book.getImages()) {
             if (image.getLocation() == BookImageLocation.BODY_MATTER && !image.isMissing()) {
-                String id = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId(), cropped));
+                String id = pres_uris.getImageURI(collection.getId(), book.getId(), image.getId(), cropped);
 
                 Image thumb = new Image(
                         id,

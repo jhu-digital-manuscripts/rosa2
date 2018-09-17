@@ -12,15 +12,16 @@ import rosa.archive.model.BookText;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.ViewingHint;
 
-public class RangeTransformer extends BasePresentationTransformer {
-
-    public RangeTransformer(IIIFPresentationRequestFormatter presRequestFormatter) {
-        super(presRequestFormatter);
+public class RangeTransformer implements TransformerConstants {
+    private final PresentationUris pres_uris;
+    
+    public RangeTransformer(PresentationUris pres_uris) {
+        this.pres_uris = pres_uris;
     }
 
     public Range transform(BookCollection collection, Book book, String name) {
