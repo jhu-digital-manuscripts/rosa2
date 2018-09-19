@@ -58,7 +58,7 @@ public class ITIIIFPresentationServlet {
         }
     }
 
-    private void check_retrieve_search_inro(String url) throws Exception {
+    private void check_retrieve_search_info(String url) throws Exception {
         HttpURLConnection con = (HttpURLConnection) (new URL(url)).openConnection();
 
         con.connect();
@@ -113,10 +113,10 @@ public class ITIIIFPresentationServlet {
     @Test
     public void testSearchInfo() throws Exception {
         for (String col : store.listBookCollections()) {
-            check_retrieve_search_inro(pres_uris.getCollectionURI(col) + JHSearchService.INFO_RESOURCE_PATH);
-
+            check_retrieve_search_info(pres_uris.getCollectionURI(col) + JHSearchService.INFO_RESOURCE_PATH);
+            
             for (String book : store.listBooks(col)) {
-                check_retrieve_search_inro(pres_uris.getManifestURI(col, book) + JHSearchService.INFO_RESOURCE_PATH);
+                check_retrieve_search_info(pres_uris.getManifestURI(col, book) + JHSearchService.INFO_RESOURCE_PATH);
             }
         }
     }
