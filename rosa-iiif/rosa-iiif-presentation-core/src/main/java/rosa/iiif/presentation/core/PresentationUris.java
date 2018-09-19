@@ -3,9 +3,6 @@ package rosa.iiif.presentation.core;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
-
 import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -28,9 +25,7 @@ public class PresentationUris {
     private final IIIFPresentationRequestFormatter presFormatter;
     private final IIIFRequestFormatter imageFormatter;
 
-    @Inject
-    public PresentationUris(@Named("formatter.presentation") IIIFPresentationRequestFormatter presFormatter,
-            IIIFRequestFormatter imageFormatter) {
+    public PresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter) {
         this.presFormatter = presFormatter;
         this.imageFormatter = imageFormatter;
     }

@@ -21,6 +21,7 @@ import rosa.archive.core.StoreImpl;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
+import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.ArchiveIIIFPresentationService;
 import rosa.iiif.presentation.core.IIIFPresentationCache;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
@@ -48,7 +49,6 @@ public class IIIFPresentationServletModule extends ServletModule {
     protected void configureServlets() {
         bind(ArchiveNameParser.class);
         bind(IIIFPresentationRequestParser.class);
-        bind(PresentationUris.class);
         bind(PresentationTransformer.class).to(PresentationTransformerImpl.class);
         bind(PresentationSerializer.class).to(JsonldSerializer.class);
         
@@ -90,7 +90,7 @@ public class IIIFPresentationServletModule extends ServletModule {
         return new ArchiveIIIFPresentationService(cache, jsonld_serializer, transformer);
     }
     
-    @Provides @Named("formatter.presentation")
+    @Provides
     IIIFPresentationRequestFormatter provideIIIFPresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme,
                                                              @Named("iiif.pres.host") String host,
                                                              @Named("iiif.pres.prefix") String prefix,
@@ -98,12 +98,18 @@ public class IIIFPresentationServletModule extends ServletModule {
         return new IIIFPresentationRequestFormatter(scheme, host, prefix, port);
     }
     
+
     @Provides
     rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme,
                                                                            @Named("iiif.image.host") String host,
                                                                            @Named("iiif.image.prefix") String prefix,
                                                                            @Named("iiif.image.port") int port) {
         return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
+    }
+    
+    @Provides
+    PresentationUris providePresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter) {
+        return new PresentationUris(presFormatter, imageFormatter);
     }
     
     // Derive the web app path from location of iiif-servlet.properties    
