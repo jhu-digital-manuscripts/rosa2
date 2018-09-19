@@ -35,4 +35,12 @@ public class ToolModule extends AbstractModule {
                                                                              @Named("iiif.pres.port") int port) {
         return new IIIFPresentationRequestFormatter(scheme, host, prefix, port);
     }
+    
+    @Provides
+    rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme,
+                                                                           @Named("iiif.image.host") String host,
+                                                                           @Named("iiif.image.prefix") String prefix,
+                                                                           @Named("iiif.image.port") int port) {
+        return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
+    }
 }

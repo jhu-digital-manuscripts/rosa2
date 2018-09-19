@@ -7,8 +7,7 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.ImageIdMapper;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.Image;
@@ -19,16 +18,11 @@ import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 
-public class CanvasTransformer extends BasePresentationTransformer {
-    private ImageIdMapper idMapper;
-    private rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter;
-
-    public CanvasTransformer(IIIFPresentationRequestFormatter presRequestFormatter,
-                             rosa.iiif.image.core.IIIFRequestFormatter imageRequestFormatter,
-                             ImageIdMapper idMapper) {
-        super(presRequestFormatter);
-        this.idMapper = idMapper;
-        this.imageRequestFormatter = imageRequestFormatter;
+public class CanvasTransformer implements TransformerConstants {
+    private final PresentationUris pres_uris;
+    
+    public CanvasTransformer(PresentationUris pres_uris) {
+        this.pres_uris = pres_uris;
     }
 
     /**
@@ -143,8 +137,9 @@ public class CanvasTransformer extends BasePresentationTransformer {
         ann.setType(OA_ANNOTATION);
 
         ann.setLabel(image.getName(), "en");
-
-        String id_in_image_server = imageRequestFormatter.format(idMapper.mapId(collection, book, image.getId(), cropped));
+        
+        String id_in_image_server = pres_uris.getImageURI(collection.getId(), book == null ? null : book.getId(), image.getId(), cropped);
+        
         AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "image/tiff");
         // Can set target when building Canvas (to the Canvas URI)?
         AnnotationTarget target = new AnnotationTarget(canvasId);

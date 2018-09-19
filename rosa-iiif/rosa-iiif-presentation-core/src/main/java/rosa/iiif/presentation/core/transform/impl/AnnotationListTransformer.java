@@ -7,20 +7,20 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
-public class AnnotationListTransformer extends BasePresentationTransformer {
-
-    private AnnotationTransformer annotationTransformer;
-
-    public AnnotationListTransformer(IIIFPresentationRequestFormatter presRequestFormatter,
+public class AnnotationListTransformer implements TransformerConstants {
+    private final AnnotationTransformer annotationTransformer;
+    private final PresentationUris pres_uris;
+    
+    public AnnotationListTransformer(PresentationUris pres_uris,
                                      AnnotationTransformer annotationTransformer) {
-        super(presRequestFormatter);
+        this.pres_uris = pres_uris;
         this.annotationTransformer = annotationTransformer;
     }
 

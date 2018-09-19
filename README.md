@@ -6,7 +6,7 @@ This project provides tools to manage archives of data and services to provide a
 
 # Building
 
-See the build scripts. The archive specified as archive.path must contain collections either named aorcollection, rosecollection, pizancollection, or top in order to support search.
+See the build scripts. The archive specified as archive.path must contain collections either named aor, rose, pizan, or top in order to support search.
 
 
 

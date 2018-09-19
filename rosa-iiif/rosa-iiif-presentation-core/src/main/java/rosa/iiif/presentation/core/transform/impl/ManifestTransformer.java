@@ -7,7 +7,7 @@ import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.HtmlValue;
 import rosa.iiif.presentation.model.Manifest;
@@ -17,20 +17,20 @@ import rosa.iiif.presentation.model.ViewingDirection;
 import rosa.iiif.presentation.model.ViewingHint;
 import rosa.iiif.presentation.model.Within;
 
-public class ManifestTransformer extends BasePresentationTransformer {
+public class ManifestTransformer implements TransformerConstants {
     private final SequenceTransformer sequenceTransformer;
-
-    public ManifestTransformer(IIIFPresentationRequestFormatter presRequestFormatter,
+    private final PresentationUris pres_uris;
+    
+    public ManifestTransformer(PresentationUris pres_uris,
                                SequenceTransformer sequenceTransformer,
                                RangeTransformer rangeTransformer) {
-        super(presRequestFormatter);
+        this.pres_uris = pres_uris;
         this.sequenceTransformer = sequenceTransformer;
     }
 
     public Manifest transform(BookCollection collection, Book book) {
         return buildManifest(collection, book);
     }
-
 
     /**
      * Transform a Book in the archive to a IIIF manifest.

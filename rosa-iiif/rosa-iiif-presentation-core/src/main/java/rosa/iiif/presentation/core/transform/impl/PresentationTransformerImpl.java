@@ -4,14 +4,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 import com.google.inject.Inject;
-import com.google.inject.name.Named;
 
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.iiif.presentation.core.IIIFPresentationCache;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.ImageIdMapper;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.html.AdapterSet;
 import rosa.iiif.presentation.core.html.AnnotationBaseHtmlAdapter;
 import rosa.iiif.presentation.core.html.CalculationHtmlAdapter;
@@ -29,7 +27,7 @@ import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.Sequence;
 
 
-public class PresentationTransformerImpl extends BasePresentationTransformer implements PresentationTransformer {
+public class PresentationTransformerImpl implements PresentationTransformer {
     private CollectionTransformer col;
     private ManifestTransformer man;
     private SequenceTransformer seq;
@@ -40,10 +38,7 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
     private AnnotationListTransformer list;
 
     @Inject
-    public PresentationTransformerImpl(IIIFPresentationCache cache,  @Named("formatter.presentation") IIIFPresentationRequestFormatter presFormatter,
-            rosa.iiif.image.core.IIIFRequestFormatter imageFormatter, ImageIdMapper idMapper, ArchiveNameParser nameParser) {
-        super(presFormatter);
-
+    public PresentationTransformerImpl(IIIFPresentationCache cache, PresentationUris pres_uris, ArchiveNameParser nameParser) {
         Set<AnnotationBaseHtmlAdapter<?>> html_adapters = new HashSet<>();
         
         html_adapters.add(new TableHtmlAdapter(pres_uris));
@@ -53,14 +48,14 @@ public class PresentationTransformerImpl extends BasePresentationTransformer imp
         html_adapters.add(new TableHtmlAdapter(pres_uris));
         html_adapters.add(new CalculationHtmlAdapter(pres_uris));
         
-        this.col = new CollectionTransformer(cache, presFormatter, imageFormatter, idMapper);
-        this.canvas = new CanvasTransformer(presFormatter, imageFormatter, idMapper);
-        this.ann = new AnnotationTransformer(presFormatter, nameParser, new AdapterSet(html_adapters));
-        this.range = new RangeTransformer(presFormatter);
-        this.lay = new LayerTransformer(presFormatter);
-        this.seq = new SequenceTransformer(presFormatter, canvas);
-        this.list = new AnnotationListTransformer(presFormatter, ann);
-        this.man = new ManifestTransformer(presFormatter, seq, range);
+        this.col = new CollectionTransformer(cache, pres_uris);
+        this.canvas = new CanvasTransformer(pres_uris);
+        this.ann = new AnnotationTransformer(pres_uris, nameParser, new AdapterSet(html_adapters));
+        this.range = new RangeTransformer(pres_uris);
+        this.lay = new LayerTransformer(pres_uris);
+        this.seq = new SequenceTransformer(pres_uris, canvas);
+        this.list = new AnnotationListTransformer(pres_uris, ann);
+        this.man = new ManifestTransformer(pres_uris, seq, range);
     }
 
     @Override

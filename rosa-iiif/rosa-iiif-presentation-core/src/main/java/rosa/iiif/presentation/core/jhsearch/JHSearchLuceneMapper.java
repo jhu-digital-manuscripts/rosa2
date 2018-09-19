@@ -51,7 +51,6 @@ import rosa.archive.model.aor.Table;
 import rosa.archive.model.aor.TextEl;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.search.core.BaseLuceneMapper;
@@ -67,10 +66,10 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 	private final PresentationUris pres_uris;
 
-	public JHSearchLuceneMapper(IIIFPresentationRequestFormatter formatter) {
+	public JHSearchLuceneMapper(PresentationUris pres_uris) {
 		super(JHSearchField.values());
 
-		this.pres_uris = new PresentationUris(formatter);		        
+		this.pres_uris = pres_uris;
 		
 		facets_config.setMultiValued(JHSearchCategory.AUTHOR.getFieldName(), true);
 	}

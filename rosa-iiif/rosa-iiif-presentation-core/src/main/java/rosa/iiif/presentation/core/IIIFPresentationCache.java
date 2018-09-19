@@ -42,8 +42,8 @@ public class IIIFPresentationCache {
      *            uniquely identifies the object in the type
      * @param type
      * @param supplier
-     *            if object not in cache, it is retrieved from the supplier and
-     *            cached
+     *            If object not in cache, it is retrieved from the supplier and
+     *            cached. The supplier must not itself call get. 
      * @return value in cache if present or updates cache with supplied value, null
      *         indicates no value
      */

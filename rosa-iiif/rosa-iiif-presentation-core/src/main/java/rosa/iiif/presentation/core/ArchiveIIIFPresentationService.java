@@ -50,6 +50,8 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
 
     @Override
     public boolean handle_request(PresentationRequest req, OutputStream os) throws IOException {
+        System.err.println(req);
+        
         switch (req.getType()) {
             case ANNOTATION_LIST:
                 return handle_annotation_list(req.getIdentifier(), os);
@@ -118,21 +120,19 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
         String book_id = identifier[1];
         String id = col_id + book_id;
         
-        Manifest man = cache.get(id, Manifest.class, () -> {
-            BookCollection book_col = cache.getBookCollection(col_id);
-            
-            if (book_col == null) {
-                return null;
-            }
-            
-            Book book = cache.getBook(book_col, book_id);
-            
-            if (book == null) {
-                return null;
-            }
-            
-            return transformer.manifest(book_col, book);
-            });
+        BookCollection book_col = cache.getBookCollection(col_id);
+
+        if (book_col == null) {
+            return false;
+        }
+        
+        Book book = cache.getBook(book_col, book_id);
+
+        if (book == null) {
+            return false;
+        }
+
+        Manifest man = cache.get(id, Manifest.class, () -> transformer.manifest(book_col, book));
         
         if (man == null) {
             return false;
