@@ -50,8 +50,6 @@ public class ArchiveIIIFPresentationService implements IIIFPresentationService {
 
     @Override
     public boolean handle_request(PresentationRequest req, OutputStream os) throws IOException {
-        System.err.println(req);
-        
         switch (req.getType()) {
             case ANNOTATION_LIST:
                 return handle_annotation_list(req.getIdentifier(), os);
