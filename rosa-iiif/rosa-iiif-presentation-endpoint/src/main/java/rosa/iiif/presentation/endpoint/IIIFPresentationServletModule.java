@@ -2,9 +2,7 @@ package rosa.iiif.presentation.endpoint;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URISyntaxException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.logging.Logger;
 
@@ -41,9 +39,6 @@ import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 
 public class IIIFPresentationServletModule extends ServletModule {
     private static final Logger LOG = Logger.getLogger(IIIFPresentationServletModule.class.toString());
-    private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
-    private static final String LUCENE_DIRECTORY = "lucene";
-    private static final String ARCHIVE_DIRECTORY = "archive";
 
     @Override
     protected void configureServlets() {
@@ -52,8 +47,9 @@ public class IIIFPresentationServletModule extends ServletModule {
         bind(PresentationTransformer.class).to(PresentationTransformerImpl.class);
         bind(PresentationSerializer.class).to(JsonldSerializer.class);
         
-        Names.bindProperties(binder(), loadProperties(SERVLET_CONFIG_PATH));
+        Names.bindProperties(binder(), loadProperties(Util.SERVLET_CONFIG_PATH));
          
+        serve("/data/*").with(DataServlet.class);
         serve("/*").with(IIIFPresentationServlet.class);
     }
 
@@ -72,7 +68,7 @@ public class IIIFPresentationServletModule extends ServletModule {
     @Provides
     Store provideStore(SerializerSet serializers,
             BookChecker bookChecker, BookCollectionChecker collectionChecker) {
-        Path archive_path = get_webapp_path().resolve(ARCHIVE_DIRECTORY);
+        Path archive_path = Util.getArchivePath();
         LOG.info("Loading archive :: " + archive_path);
         
         ByteStreamGroup base = new FSByteStreamGroup(archive_path);
@@ -112,19 +108,10 @@ public class IIIFPresentationServletModule extends ServletModule {
         return new PresentationUris(presFormatter, imageFormatter);
     }
     
-    // Derive the web app path from location of iiif-servlet.properties    
-    private Path get_webapp_path() {
-        try {
-            return Paths.get(getClass().getResource(SERVLET_CONFIG_PATH).toURI()).getParent().getParent();
-        } catch (URISyntaxException e) {
-            throw new RuntimeException("Failed find webapp path", e);
-        }
-    }
-    
     @Provides
     JHSearchService provideJHSearchService(PresentationUris pres_uris) {
         try {
-            Path index_path = get_webapp_path().resolve(LUCENE_DIRECTORY);
+            Path index_path = Util.getLucenePath();
             LOG.info("Using lucene index path :: " + index_path);
             
             return new LuceneJHSearchService(index_path, pres_uris);
