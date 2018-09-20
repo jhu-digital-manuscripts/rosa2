@@ -15,6 +15,7 @@ import com.google.inject.Injector;
 
 import rosa.iiif.presentation.core.IIIFPresentationService;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 
 public class IIIFPresentationServletConfigTest {
@@ -27,7 +28,11 @@ public class IIIFPresentationServletConfigTest {
             + "iiif.image.scheme = http\n"
             + "iiif.image.host = rosetest.library.jhu.edu\n" 
             + "iiif.image.port = 80\n"
-            + "iiif.image.prefix = /iiifimage\n";
+            + "iiif.image.prefix = /iiifimage\n"
+            + "static.scheme = http\n"
+            + "static.host = rosetest.library.jhu.edu\n"
+            + "static.port = 80\n"
+            + "static.prefix = /iiifpres/data\n";
 
     /**
      * Must write new 'iiifservlet.properties' with valid values because it has not been
@@ -68,5 +73,8 @@ public class IIIFPresentationServletConfigTest {
 
         IIIFPresentationServlet servlet = injector.getInstance(IIIFPresentationServlet.class);
         assertNotNull("Failed to inject IIIF Servlet.", servlet);
+
+        StaticResourceRequestFormatter staticFormatter = injector.getInstance(StaticResourceRequestFormatter.class);
+        assertNotNull("Failed to inject Static Resource Request Formatter", staticFormatter);
     }
 }

@@ -13,6 +13,7 @@ import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationTestUtils;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
 import java.io.ByteArrayInputStream;
@@ -38,7 +39,8 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
         IIIFPresentationRequestFormatter formatter =
                 new IIIFPresentationRequestFormatter("SCHEME", "HOST", "PREFIX", 80);
         IIIFRequestFormatter imageFormatter = new IIIFRequestFormatter("http", "localhost", 8080, "/image");
-        PresentationUris pres_uris = new PresentationUris(formatter, imageFormatter);
+        StaticResourceRequestFormatter staticFormatter = new StaticResourceRequestFormatter("http", "localhost", "/data", 80);
+        PresentationUris pres_uris = new PresentationUris(formatter, imageFormatter, staticFormatter);
         
         transformer = new AnnotationTransformer(pres_uris, new ArchiveNameParser(), PresentationTestUtils.htmlAdapterSet(pres_uris));
 

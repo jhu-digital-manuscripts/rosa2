@@ -24,10 +24,13 @@ import rosa.search.model.SearchOptions;
 public class PresentationUris {
     private final IIIFPresentationRequestFormatter presFormatter;
     private final IIIFRequestFormatter imageFormatter;
+    private final StaticResourceRequestFormatter staticFormatter;
 
-    public PresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter) {
+    public PresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter,
+                            StaticResourceRequestFormatter staticFormatter) {
         this.presFormatter = presFormatter;
         this.imageFormatter = imageFormatter;
+        this.staticFormatter = staticFormatter;
     }
 
     public String getCollectionURI(String collection) {
@@ -103,5 +106,9 @@ public class PresentationUris {
         }
 
         return url.toString();
+    }
+
+    public String getDescriptionUri(String collection, String book, String lang) {
+        return staticFormatter.format(collection, book, book + ".description_" + lang + ".xml");
     }
 }

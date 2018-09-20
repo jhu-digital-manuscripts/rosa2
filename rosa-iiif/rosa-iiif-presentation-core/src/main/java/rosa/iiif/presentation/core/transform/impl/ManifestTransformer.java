@@ -106,6 +106,10 @@ public class ManifestTransformer implements TransformerConstants {
                 collection.getLabel()
         ));
 
+//        manifest.setRelatedUri(pres_uris.getManifestURI(collection.getId(), book.getId()).replace("manifest", "description"));
+        manifest.setRelatedUri(pres_uris.getDescriptionUri(collection.getId(), book.getId(), "en"));
+        manifest.setRelatedFormat("application/xml");
+
         return manifest;
     }
 

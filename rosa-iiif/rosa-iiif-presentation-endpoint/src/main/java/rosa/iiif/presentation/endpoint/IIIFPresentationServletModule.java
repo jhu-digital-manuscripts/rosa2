@@ -26,6 +26,7 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestParser;
 import rosa.iiif.presentation.core.IIIFPresentationService;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.core.jhsearch.LuceneJHSearchService;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
@@ -36,7 +37,7 @@ import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 /**
  * The servlet is configured by iiif-servlet.properties.
  */
-
+@SuppressWarnings("unused")
 public class IIIFPresentationServletModule extends ServletModule {
     private static final Logger LOG = Logger.getLogger(IIIFPresentationServletModule.class.toString());
 
@@ -74,7 +75,7 @@ public class IIIFPresentationServletModule extends ServletModule {
         ByteStreamGroup base = new FSByteStreamGroup(archive_path);
         return new StoreImpl(serializers, bookChecker, collectionChecker, base, false);
     }
-    
+
     @Provides
     IIIFPresentationCache provideIIIFPresentationCache(Store store) {
             return new IIIFPresentationCache(store, 5000);
@@ -85,7 +86,7 @@ public class IIIFPresentationServletModule extends ServletModule {
                                     PresentationTransformer transformer) {
         return new ArchiveIIIFPresentationService(cache, jsonld_serializer, transformer);
     }
-    
+
     @Provides
     IIIFPresentationRequestFormatter provideIIIFPresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme,
                                                              @Named("iiif.pres.host") String host,
@@ -93,7 +94,6 @@ public class IIIFPresentationServletModule extends ServletModule {
                                                              @Named("iiif.pres.port") int port) {
         return new IIIFPresentationRequestFormatter(scheme, host, prefix, port);
     }
-    
 
     @Provides
     rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme,
@@ -102,12 +102,21 @@ public class IIIFPresentationServletModule extends ServletModule {
                                                                            @Named("iiif.image.port") int port) {
         return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
     }
-    
+
     @Provides
-    PresentationUris providePresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter) {
-        return new PresentationUris(presFormatter, imageFormatter);
+    StaticResourceRequestFormatter provideStaticResourceRequestFormatter(@Named("iiif.pres.scheme") String scheme,
+                                                                         @Named("iiif.pres.host") String host,
+                                                                         @Named("static.prefix") String prefix,
+                                                                         @Named("iiif.pres.port") int port) {
+        return new StaticResourceRequestFormatter(scheme, host, prefix, port);
     }
-    
+
+    @Provides
+    PresentationUris providePresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter,
+                                             StaticResourceRequestFormatter staticFormatter) {
+        return new PresentationUris(presFormatter, imageFormatter, staticFormatter);
+    }
+
     @Provides
     JHSearchService provideJHSearchService(PresentationUris pres_uris) {
         try {
