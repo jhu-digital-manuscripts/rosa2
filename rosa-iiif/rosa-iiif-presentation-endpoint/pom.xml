@@ -81,7 +81,23 @@
                                 <systemProperty>
                                     <key>iiif.image.port</key>
                                     <value>${iiif.image.port}</value>
-                                </systemProperty>                                
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>static.scheme</key>
+                                    <value>${iiif.pres.scheme}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>static.host</key>
+                                    <value>${iiif.pres.host}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>static.prefix</key>
+                                    <value>${iiif.pres.prefix}/data</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>static.port</key>
+                                    <value>${iiif.pres.port}</value>
+                                </systemProperty>
                             </systemProperties>
                         </configuration>
                         <goals>

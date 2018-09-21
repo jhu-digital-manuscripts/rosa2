@@ -3,6 +3,7 @@ package rosa.iiif.presentation.core;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
+import rosa.archive.model.Book;
 import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -24,10 +25,13 @@ import rosa.search.model.SearchOptions;
 public class PresentationUris {
     private final IIIFPresentationRequestFormatter presFormatter;
     private final IIIFRequestFormatter imageFormatter;
+    private final StaticResourceRequestFormatter staticFormatter;
 
-    public PresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter) {
+    public PresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter,
+                            StaticResourceRequestFormatter staticFormatter) {
         this.presFormatter = presFormatter;
         this.imageFormatter = imageFormatter;
+        this.staticFormatter = staticFormatter;
     }
 
     public String getCollectionURI(String collection) {
@@ -103,5 +107,9 @@ public class PresentationUris {
         }
 
         return url.toString();
+    }
+
+    public String getStaticResourceUri(String collection, String book, String target) {
+        return staticFormatter.format(collection, book, target);
     }
 }

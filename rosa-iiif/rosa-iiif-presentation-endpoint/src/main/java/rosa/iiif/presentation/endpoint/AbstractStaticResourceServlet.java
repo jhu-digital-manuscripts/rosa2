@@ -70,6 +70,8 @@ public abstract class AbstractStaticResourceServlet extends HttpServlet {
             return;
         }
 
+        response.addHeader("Access-Control-Allow-Origin", "*");
+
         writeContent(response, resource);
     }
 

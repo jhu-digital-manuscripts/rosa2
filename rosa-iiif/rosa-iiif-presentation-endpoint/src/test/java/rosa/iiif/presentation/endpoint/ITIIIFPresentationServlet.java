@@ -23,6 +23,7 @@ import rosa.archive.core.Store;
 import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 
 /**
@@ -37,7 +38,8 @@ public class ITIIIFPresentationServlet {
         Injector injector = Guice.createInjector(new ArchiveCoreModule(), new IIIFPresentationServletITModule());
 
         store = injector.getInstance(Store.class);
-        pres_uris = new PresentationUris(injector.getInstance(IIIFPresentationRequestFormatter.class), injector.getInstance(IIIFRequestFormatter.class));
+        pres_uris = new PresentationUris(injector.getInstance(IIIFPresentationRequestFormatter.class),
+                injector.getInstance(IIIFRequestFormatter.class), injector.getInstance(StaticResourceRequestFormatter.class));
     }
 
     private void check_json_syntax(InputStream is) throws Exception {
@@ -138,6 +140,50 @@ public class ITIIIFPresentationServlet {
             }
         }
     }
-    
+
+    /**
+     * Check any object's "related" property. If it exists, see if the URI is resolvable.
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testResolveRelatedUris() throws Exception {
+        for (String col : store.listBookCollections()) {
+//            test_related_uris(pres_uris.getCollectionURI(col));
+            for (String book : store.listBooks(col)) {
+                test_related_uris(pres_uris.getManifestURI(col, book));
+            }
+        }
+    }
+
+    private void test_related_uris(String uri) throws Exception {
+        HttpURLConnection con = (HttpURLConnection) (new URL(uri)).openConnection();
+
+        con.connect();
+        int code = con.getResponseCode();
+        assertEquals(200, code);
+
+        try (InputStream is = con.getInputStream()) {
+            ObjectMapper objectMapper = new ObjectMapper();
+            objectMapper.enable(DeserializationFeature.FAIL_ON_READING_DUP_TREE_KEY);
+            JsonNode base = objectMapper.readTree(is);
+
+            if (base.has("related")) {
+                String resourceUri = base.get("related").get("@id").textValue();
+                assertNotNull("A 'related' resource was found that had no access URI", resourceUri);
+
+                resolve_resource_uri(resourceUri);
+            }
+        }
+    }
+
+    private void resolve_resource_uri(String uri) throws Exception {
+        HttpURLConnection con = (HttpURLConnection) (new URL(uri)).openConnection();
+
+        con.connect();
+        int code = con.getResponseCode();
+        assertEquals(200, code);
+
+    }
     
 }

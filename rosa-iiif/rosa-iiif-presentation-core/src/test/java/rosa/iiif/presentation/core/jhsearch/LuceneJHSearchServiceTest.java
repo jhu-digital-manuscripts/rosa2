@@ -30,6 +30,7 @@ import rosa.archive.model.BookCollection;
 import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
@@ -58,8 +59,9 @@ public class LuceneJHSearchServiceTest extends BaseSearchTest {
 
         IIIFPresentationRequestFormatter presFormatter = new IIIFPresentationRequestFormatter(scheme, host, pres_prefix, port);
         IIIFRequestFormatter imageFormatter = new IIIFRequestFormatter(scheme, host, port, image_prefix);
+        StaticResourceRequestFormatter staticFormatter = new StaticResourceRequestFormatter(scheme, host, pres_prefix, port);
         
-        service = new LuceneJHSearchService(tmpfolder.newFolder().toPath(), new PresentationUris(presFormatter, imageFormatter));
+        service = new LuceneJHSearchService(tmpfolder.newFolder().toPath(), new PresentationUris(presFormatter, imageFormatter, staticFormatter));
         service.update(store, VALID_COLLECTION);
         
         assertTrue(service.has_content());

@@ -39,10 +39,11 @@ public class ArchiveIIIFPresentationServiceTest extends BaseSearchTest {
 
         rosa.iiif.image.core.IIIFRequestFormatter imageFormatter = new rosa.iiif.image.core.IIIFRequestFormatter(
                 scheme, host, port, image_prefix);
+        StaticResourceRequestFormatter staticFormatter = new StaticResourceRequestFormatter(scheme, host, pres_prefix, port);
         ArchiveNameParser nameParser = new ArchiveNameParser();
         
         IIIFPresentationCache cache = new IIIFPresentationCache(store, 10);
-        PresentationUris pres_uris = new PresentationUris(requestFormatter, imageFormatter);
+        PresentationUris pres_uris = new PresentationUris(requestFormatter, imageFormatter, staticFormatter);
 
         PresentationTransformer transformer = new PresentationTransformerImpl(cache, pres_uris, nameParser);
 
