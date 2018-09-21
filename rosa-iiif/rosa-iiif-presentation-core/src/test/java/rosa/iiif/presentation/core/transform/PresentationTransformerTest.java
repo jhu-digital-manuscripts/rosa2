@@ -133,6 +133,10 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         assertNotNull("", manifest.getOtherSequences());
         assertTrue("Unexpected other sequences found.", manifest.getOtherSequences().isEmpty());
         checkSequence(manifest.getDefaultSequence());
+
+        String expectedDescriptionUri = ENDPOINT_SCHEME + "://" + ENDPOINT_HOST + ENDPOINT_PREFIX +
+                "/valid/LudwigXV7/LudwigXV7.description_en.xml";
+        assertEquals(expectedDescriptionUri, manifest.getRelatedUri());
     }
 
     /**

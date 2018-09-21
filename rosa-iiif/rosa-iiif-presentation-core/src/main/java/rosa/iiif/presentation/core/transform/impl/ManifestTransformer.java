@@ -106,9 +106,11 @@ public class ManifestTransformer implements TransformerConstants {
                 collection.getLabel()
         ));
 
-//        manifest.setRelatedUri(pres_uris.getManifestURI(collection.getId(), book.getId()).replace("manifest", "description"));
-        manifest.setRelatedUri(pres_uris.getDescriptionUri(collection.getId(), book.getId(), "en"));
-        manifest.setRelatedFormat("application/xml");
+        if (book.getBookDescription("en") != null) {
+            manifest.setRelatedUri(pres_uris.getStaticResourceUri(collection.getId(), book.getId(),
+                    book.getBookDescription("en").getId()));
+            manifest.setRelatedFormat("application/xml");
+        }
 
         return manifest;
     }
@@ -126,63 +128,53 @@ public class ManifestTransformer implements TransformerConstants {
             BookMetadata md = book.getBookMetadata();
             BiblioData bd = book.getBiblioData(lang);
 
-            map.put("currentLocation", new HtmlValue(bd.getCurrentLocation(), lang));
-            map.put("repository", new HtmlValue(bd.getRepository(), lang));
-            map.put("shelfmark", new HtmlValue(bd.getShelfmark(), lang));
-            map.put("origin", new HtmlValue(bd.getOrigin(), lang));
+            putMetadata(KEY_CURRENT_LOC, bd.getCurrentLocation(), lang, map);
+            putMetadata(KEY_REPO, bd.getRepository(), lang, map);
+            putMetadata(KEY_SHELFMARK, bd.getShelfmark(), lang, map);
+            putMetadata(KEY_ORIGIN, bd.getOrigin(), lang, map);
 
-            if (md.getWidth() != -1) {
-                map.put("width", new HtmlValue(md.getWidth() + "", lang));
-            }
-            if (md.getHeight() != -1) {
-                map.put("height", new HtmlValue(md.getHeight() + "", lang));
-            }
-            if (md.getYearStart() != -1) {
-                map.put("yearStart", new HtmlValue(md.getYearStart() + "", lang));
-            }
-            if (md.getYearEnd() != -1) {
-                map.put("yearEnd", new HtmlValue(md.getYearEnd() + "", lang));
-            }
-            if (md.getNumberOfPages() != -1) {
-                map.put("numberOfPages", new HtmlValue(md.getNumberOfPages() + "", lang));
-            }
-            if (md.getNumberOfIllustrations() != -1) {
-                map.put("numberOfIllustrations", new HtmlValue(md.getNumberOfIllustrations() + "", lang));
-            }
-            if (bd.getTitle() != null) {
-                map.put("title", new HtmlValue(bd.getTitle(), lang));
-            }
-            if (bd.getDateLabel() != null) {
-                map.put("date", new HtmlValue(bd.getDateLabel(), lang));
-            }
-            if (md.getDimensionsString() != null && !md.getDimensionsString().replaceAll("\\s+", "").equals("-1x-1")) {
-                map.put("dimensions", new HtmlValue(md.getDimensionsString(), lang));
-            }
-            if (md.getDimensionUnits() != null) {
-                map.put("dimensionUnits", new HtmlValue(md.getDimensionUnits(), lang));
-            }
-            if (bd.getType() != null) {
-                map.put("type", new HtmlValue(bd.getType(), lang));
-            }
-            if (bd.getCommonName() != null) {
-                map.put("commonName", new HtmlValue(bd.getCommonName(), lang));
-            }
-            if (bd.getMaterial() != null) {
-                map.put("material", new HtmlValue(bd.getMaterial(), lang));
+            putMetadata(KEY_WIDTH, md.getWidth(), lang, map);
+            putMetadata(KEY_HEIGHT, md.getHeight(), lang, map);
+            putMetadata(KEY_YEAR_START, md.getYearStart(), lang, map);
+            putMetadata(KEY_YEAR_END, md.getYearEnd(), lang, map);
+            putMetadata(KEY_NUM_PAGES, md.getNumberOfPages(), lang, map);
+            putMetadata(KEY_NUM_ILLS, md.getNumberOfIllustrations(), lang, map);
+            putMetadata(KEY_TITLE, bd.getTitle(), lang, map);
+            putMetadata(KEY_DATE, bd.getDateLabel(), lang, map);
+
+            if (md.getDimensionsString() != null
+                    && !md.getDimensionsString().replaceAll("\\s+", "").equals("-1x-1")) {
+                putMetadata(KEY_DIMS, md.getDimensionsString(), lang, map);
             }
 
-            if (bd.getReaders().length > 0) {
-                map.put("reader", new HtmlValue(bd.getReaders()[0], lang));
-            }
-            if (bd.getAuthors().length > 0) {
-                map.put("author", new HtmlValue(bd.getAuthors()[0], lang));
-            }
-            
-
+            putMetadata(KEY_DIM_UNITS, md.getDimensionUnits(), lang, map);
+            putMetadata(KEY_TYPE, bd.getType(), lang, map);
+            putMetadata(KEY_COMMON_NAME, bd.getCommonName(), lang, map);
+            putMetadata(KEY_MATERIAL, bd.getMaterial(), lang, map);
+            putMetadata(KEY_READER, bd.getReaders(), lang, map);
+            putMetadata(KEY_AUTHOR, bd.getAuthors(), lang, map);
 
             // TODO book texts
         }
 
         return map;
+    }
+
+    private void putMetadata(String key, int value, String lang, Map<String, HtmlValue> map) {
+        if (value != -1) {
+            putMetadata(key, String.valueOf(value), lang, map);
+        }
+    }
+
+    private void putMetadata(String key, String[] value, String lang, Map<String, HtmlValue> map) {
+        if (value != null && value.length > 0) {
+            putMetadata(key, String.join(", ", value), lang, map);
+        }
+    }
+
+    private void putMetadata(String key, String value, String lang, Map<String, HtmlValue> map) {
+        if (value != null && !value.isEmpty()) {
+            map.put(key, new HtmlValue(value, lang));
+        }
     }
 }
