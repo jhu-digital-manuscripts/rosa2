@@ -2,9 +2,7 @@ package rosa.iiif.presentation.endpoint;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URISyntaxException;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.logging.Logger;
 
@@ -28,6 +26,7 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestParser;
 import rosa.iiif.presentation.core.IIIFPresentationService;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.core.jhsearch.LuceneJHSearchService;
 import rosa.iiif.presentation.core.transform.PresentationSerializer;
@@ -38,12 +37,9 @@ import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 /**
  * The servlet is configured by iiif-servlet.properties.
  */
-
+@SuppressWarnings("unused")
 public class IIIFPresentationServletModule extends ServletModule {
     private static final Logger LOG = Logger.getLogger(IIIFPresentationServletModule.class.toString());
-    private static final String SERVLET_CONFIG_PATH = "/iiif-servlet.properties";
-    private static final String LUCENE_DIRECTORY = "lucene";
-    private static final String ARCHIVE_DIRECTORY = "archive";
 
     @Override
     protected void configureServlets() {
@@ -52,8 +48,9 @@ public class IIIFPresentationServletModule extends ServletModule {
         bind(PresentationTransformer.class).to(PresentationTransformerImpl.class);
         bind(PresentationSerializer.class).to(JsonldSerializer.class);
         
-        Names.bindProperties(binder(), loadProperties(SERVLET_CONFIG_PATH));
+        Names.bindProperties(binder(), loadProperties(Util.SERVLET_CONFIG_PATH));
          
+        serve("/data/*").with(DataServlet.class);
         serve("/*").with(IIIFPresentationServlet.class);
     }
 
@@ -72,13 +69,13 @@ public class IIIFPresentationServletModule extends ServletModule {
     @Provides
     Store provideStore(SerializerSet serializers,
             BookChecker bookChecker, BookCollectionChecker collectionChecker) {
-        Path archive_path = get_webapp_path().resolve(ARCHIVE_DIRECTORY);
+        Path archive_path = Util.getArchivePath();
         LOG.info("Loading archive :: " + archive_path);
         
         ByteStreamGroup base = new FSByteStreamGroup(archive_path);
         return new StoreImpl(serializers, bookChecker, collectionChecker, base, false);
     }
-    
+
     @Provides
     IIIFPresentationCache provideIIIFPresentationCache(Store store) {
             return new IIIFPresentationCache(store, 5000);
@@ -89,7 +86,7 @@ public class IIIFPresentationServletModule extends ServletModule {
                                     PresentationTransformer transformer) {
         return new ArchiveIIIFPresentationService(cache, jsonld_serializer, transformer);
     }
-    
+
     @Provides
     IIIFPresentationRequestFormatter provideIIIFPresentationRequestFormatter(@Named("iiif.pres.scheme") String scheme,
                                                              @Named("iiif.pres.host") String host,
@@ -97,7 +94,6 @@ public class IIIFPresentationServletModule extends ServletModule {
                                                              @Named("iiif.pres.port") int port) {
         return new IIIFPresentationRequestFormatter(scheme, host, prefix, port);
     }
-    
 
     @Provides
     rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme,
@@ -106,25 +102,25 @@ public class IIIFPresentationServletModule extends ServletModule {
                                                                            @Named("iiif.image.port") int port) {
         return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
     }
-    
+
     @Provides
-    PresentationUris providePresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter) {
-        return new PresentationUris(presFormatter, imageFormatter);
+    StaticResourceRequestFormatter provideStaticResourceRequestFormatter(@Named("iiif.pres.scheme") String scheme,
+                                                                         @Named("iiif.pres.host") String host,
+                                                                         @Named("static.prefix") String prefix,
+                                                                         @Named("iiif.pres.port") int port) {
+        return new StaticResourceRequestFormatter(scheme, host, prefix, port);
     }
-    
-    // Derive the web app path from location of iiif-servlet.properties    
-    private Path get_webapp_path() {
-        try {
-            return Paths.get(getClass().getResource(SERVLET_CONFIG_PATH).toURI()).getParent().getParent();
-        } catch (URISyntaxException e) {
-            throw new RuntimeException("Failed find webapp path", e);
-        }
+
+    @Provides
+    PresentationUris providePresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter,
+                                             StaticResourceRequestFormatter staticFormatter) {
+        return new PresentationUris(presFormatter, imageFormatter, staticFormatter);
     }
-    
+
     @Provides
     JHSearchService provideJHSearchService(PresentationUris pres_uris) {
         try {
-            Path index_path = get_webapp_path().resolve(LUCENE_DIRECTORY);
+            Path index_path = Util.getLucenePath();
             LOG.info("Using lucene index path :: " + index_path);
             
             return new LuceneJHSearchService(index_path, pres_uris);

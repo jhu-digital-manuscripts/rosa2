@@ -8,6 +8,7 @@ import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,8 +30,14 @@ public class MarginaliaHtmlAdapterTest {
                 "",
                 -1
         );
+        StaticResourceRequestFormatter staticFormatter = new StaticResourceRequestFormatter(
+                "https",
+                "example.com",
+                "",
+                -1
+        );
 
-        adapter = new MarginaliaHtmlAdapter(new PresentationUris(requestFormatter, null));
+        adapter = new MarginaliaHtmlAdapter(new PresentationUris(requestFormatter, null, staticFormatter));
 
         fakeCollection = new BookCollection();
 
