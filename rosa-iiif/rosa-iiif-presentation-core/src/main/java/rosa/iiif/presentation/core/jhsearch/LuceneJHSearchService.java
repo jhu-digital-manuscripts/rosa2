@@ -108,9 +108,9 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
         }
     
     /**
-     * @param path
-     * @param formatter
-     * @throws IOException
+     * @param path .
+     * @param pres_uris .
+     * @throws IOException .
      */
     public LuceneJHSearchService(Path path, PresentationUris pres_uris) throws IOException {
         super(path, new JHSearchLuceneMapper(pres_uris));
@@ -172,7 +172,7 @@ public class LuceneJHSearchService extends LuceneSearchService implements JHSear
                         new Query(JHSearchField.COLLECTION_ID, pizan_url)
                 );
             } else if (!"top".equals(name)) {
-                restrict_query = new Query(JHSearchField.COLLECTION_ID, pres_uris.getCollectionURI("name"));
+                restrict_query = new Query(JHSearchField.COLLECTION_ID, pres_uris.getCollectionURI(name));
             }
         } else if (req.getType() == PresentationRequestType.MANIFEST) {
             restrict_query = new Query(JHSearchField.MANIFEST_ID, pres_uris.getManifestURI(req.getIdentifier()[0], req.getIdentifier()[1]));
