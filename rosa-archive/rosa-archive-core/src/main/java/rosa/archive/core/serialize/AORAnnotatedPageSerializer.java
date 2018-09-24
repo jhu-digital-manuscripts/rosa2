@@ -314,9 +314,9 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
         setAttribute(t, ATTR_INTERNAL_REF, table.getInternalRef());
         setAttribute(t, ATTR_AGGREGATED_INFO, table.getAggregatedInfo());
 
-        for (int i = 0; i < table.getRows().size(); i++) {
+        for (int i = 0; i < table.getColHeaders().size(); i++) {
             final int r = i;
-            TableRow row = table.getRow(i);
+            TableHeader row = table.getRow(i);
 
             Element rel = newElement(TAG_TR, t, doc);
 
@@ -878,8 +878,7 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     NodeList headers = tableEl.getElementsByTagName(TAG_TH);
                     if (headers.getLength() > 0) {
                         Element h = (Element) headers.item(0);
-                        table.getRows().add(new TableRow(
-                                table.getRows().size(),
+                        table.getColHeaders().add(new TableHeader(
                                 h.getAttribute(ATTR_LABEL),
                                 h.getAttribute(ATTR_ANCHOR_TEXT),
                                 h.getAttribute(ATTR_ANCHOR_DATA),
@@ -891,7 +890,6 @@ public class AORAnnotatedPageSerializer implements Serializer<AnnotatedPage>, Ar
                     for (int j = 0; j < cols.getLength(); j++) {
                         Element c = (Element) cols.item(j);
                         table.getCells().add(new TableCell(
-                                // int row, int col, String anchorText, String anchorData, String content
                                 rowCount,
                                 j,
                                 c.getAttribute(ATTR_ANCHOR_TEXT),
