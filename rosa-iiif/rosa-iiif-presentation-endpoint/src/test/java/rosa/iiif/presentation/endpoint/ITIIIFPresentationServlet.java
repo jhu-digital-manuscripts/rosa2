@@ -11,6 +11,7 @@ import java.net.URLEncoder;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -25,6 +26,9 @@ import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
+import rosa.iiif.presentation.model.PresentationRequest;
+import rosa.iiif.presentation.model.PresentationRequestType;
+import rosa.search.model.SearchOptions;
 
 /**
  * Check that the IIIF Presentation API implementation is working as expected.
@@ -142,48 +146,80 @@ public class ITIIIFPresentationServlet {
     }
 
     /**
-     * Check any object's "related" property. If it exists, see if the URI is resolvable.
+     * Test that a known search returns results. Search for the word "one" in the TEXT field.
+     * This _should_ be a search across all collections that returns at least one result
      *
-     * @throws Exception
+     * @throws Exception .
      */
+    @Ignore
     @Test
-    public void testResolveRelatedUris() throws Exception {
+    public void testMoo() throws Exception {
         for (String col : store.listBookCollections()) {
-//            test_related_uris(pres_uris.getCollectionURI(col));
-            for (String book : store.listBooks(col)) {
-                test_related_uris(pres_uris.getManifestURI(col, book));
+            PresentationRequest req = new PresentationRequest(PresentationRequestType.COLLECTION, col);
+            String search = pres_uris.getJHSearchURI(req,
+                    "text:'one'", new SearchOptions(0, 30), null);
+            HttpURLConnection con = (HttpURLConnection) (new URL(search)).openConnection();
+            System.out.println(" ### " + search);
+            con.connect();
+            int code = con.getResponseCode();
+            assertEquals(200, code);
+
+            try (InputStream is = con.getInputStream()) {
+                ObjectMapper objectMapper = new ObjectMapper();
+                objectMapper.enable(DeserializationFeature.FAIL_ON_READING_DUP_TREE_KEY);
+                JsonNode base = objectMapper.readTree(is);
+
+                JsonNode matches = base.findValue("matches");
+                assertNotNull(matches);
+                assertTrue(matches.isArray());
+                assertTrue(matches.has(0));
             }
         }
     }
 
-    private void test_related_uris(String uri) throws Exception {
-        HttpURLConnection con = (HttpURLConnection) (new URL(uri)).openConnection();
-
-        con.connect();
-        int code = con.getResponseCode();
-        assertEquals(200, code);
-
-        try (InputStream is = con.getInputStream()) {
-            ObjectMapper objectMapper = new ObjectMapper();
-            objectMapper.enable(DeserializationFeature.FAIL_ON_READING_DUP_TREE_KEY);
-            JsonNode base = objectMapper.readTree(is);
-
-            if (base.has("related")) {
-                String resourceUri = base.get("related").get("@id").textValue();
-                assertNotNull("A 'related' resource was found that had no access URI", resourceUri);
-
-                resolve_resource_uri(resourceUri);
-            }
-        }
-    }
-
-    private void resolve_resource_uri(String uri) throws Exception {
-        HttpURLConnection con = (HttpURLConnection) (new URL(uri)).openConnection();
-
-        con.connect();
-        int code = con.getResponseCode();
-        assertEquals(200, code);
-
-    }
+//    /**
+////     * Check any object's "related" property. If it exists, see if the URI is resolvable.
+////     *
+////     * @throws Exception
+////     */
+//    @Test
+//    public void testResolveRelatedUris() throws Exception {
+//        for (String col : store.listBookCollections()) {
+////            test_related_uris(pres_uris.getCollectionURI(col));
+//            for (String book : store.listBooks(col)) {
+//                test_related_uris(pres_uris.getManifestURI(col, book));
+//            }
+//        }
+//    }
+//
+//    private void test_related_uris(String uri) throws Exception {
+//        HttpURLConnection con = (HttpURLConnection) (new URL(uri)).openConnection();
+//
+//        con.connect();
+//        int code = con.getResponseCode();
+//        assertEquals(200, code);
+//
+//        try (InputStream is = con.getInputStream()) {
+//            ObjectMapper objectMapper = new ObjectMapper();
+//            objectMapper.enable(DeserializationFeature.FAIL_ON_READING_DUP_TREE_KEY);
+//            JsonNode base = objectMapper.readTree(is);
+//
+//            if (base.has("related")) {
+//                String resourceUri = base.get("related").get("@id").textValue();
+//                assertNotNull("A 'related' resource was found that had no access URI", resourceUri);
+//
+//                resolve_resource_uri(resourceUri);
+//            }
+//        }
+//    }
+//
+//    private void resolve_resource_uri(String uri) throws Exception {
+//        HttpURLConnection con = (HttpURLConnection) (new URL(uri)).openConnection();
+//        System.out.println(" Trying >> " + uri);
+//        con.connect();
+//        int code = con.getResponseCode();
+//        assertEquals(200, code);
+//
+//    }
     
 }
