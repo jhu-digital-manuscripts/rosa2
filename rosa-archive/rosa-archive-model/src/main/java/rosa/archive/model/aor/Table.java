@@ -33,7 +33,7 @@ import java.util.List;
  *
  * Contains elements:
  * <ul>
- *   <li>tr (zero or more) : row, containing header information and cells {@link TableRow} {@link TableCell}</li>
+ *   <li>tr (zero or more) : row, containing header information and cells {@link TableHeader} {@link TableCell}</li>
  *   <li>text (zero or more) : {@link TextEl}</li>
  *   <li>person (zero or more) : {@link #people}</li>
  *   <li>book (zero or more) : {@link #books}</li>
@@ -46,7 +46,7 @@ import java.util.List;
 public class Table extends Annotation implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private List<TableRow> rows;
+    private List<TableHeader> rows;
     private List<TableCell> cells;
 
     private List<TextEl> texts;
@@ -72,15 +72,15 @@ public class Table extends Annotation implements Serializable {
         this.internalRefs = new ArrayList<>();
     }
 
-    public List<TableRow> getRows() {
+    public List<TableHeader> getColHeaders() {
         return rows;
     }
 
-    public void setRows(List<TableRow> rows) {
+    public void setRows(List<TableHeader> rows) {
         this.rows = rows;
     }
 
-    public TableRow getRow(int row) {
+    public TableHeader getRow(int row) {
         return rows.get(row);
     }
 
