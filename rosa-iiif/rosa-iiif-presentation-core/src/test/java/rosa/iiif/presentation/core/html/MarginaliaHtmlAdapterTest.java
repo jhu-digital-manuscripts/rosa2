@@ -44,8 +44,21 @@ public class MarginaliaHtmlAdapterTest {
         Map<String, AorLocation> map = new HashMap<>();
         fakeCollection.setAnnotationMap(map);
         map.put("id", new AorLocation("col", "book", "page", null));
-        map.put("PrincetonPA6452:00000027", new AorLocation("aor", "Princeton6452", "22r", null));
-        map.put("PrincetonPA6452:00000023", new AorLocation("aor", "Princeton6452", "20r", null));
+        /*
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000023", "[a1r]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000028", "[6]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000031", "[9]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000051", "[20]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000055", "[33]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000057", "[35]"));
+         */
+        map.put("PrincetonPA6452:00000027", new AorLocation("aor", "PrincetonPA6452", "22r", null));
+        map.put("PrincetonPA6452:00000023", new AorLocation("aor", "PrincetonPA6452", "20r", null));
+        map.put("PrincetonPA6452:00000028", new AorLocation("aor", "PrincetonPA6452", "11v", null));
+        map.put("PrincetonPA6452:00000031", new AorLocation("aor", "PrincetonPA6452", "13r", null));
+        map.put("PrincetonPA6452:00000051", new AorLocation("aor", "PrincetonPA6452", "23r", null));
+        map.put("PrincetonPA6452:00000055", new AorLocation("aor", "PrincetonPA6452", "25r", null));
+        map.put("PrincetonPA6452:00000057", new AorLocation("aor", "PrincetonPA6452", "26r", null));
         map.put("BLC120b4:c_120_b_4_(2)_f054v", new AorLocation("aor", "BLC120b4", "32v", null));
     }
 
@@ -53,8 +66,12 @@ public class MarginaliaHtmlAdapterTest {
     public void fromLivyTest() {
         final String transcription = "I[nfr]a";
         final String expected = "<a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/aor/Princeton6452/20r/canvas\" " +
-                "data-manifestid=\"https://example.com/aor/Princeton6452/manifest\">I[nfr]a</a>";
+                "data-targetid=\"https://example.com/aor/PrincetonPA6452/20r/canvas\" " +
+                "data-label=\"[a1r]\" " +
+                "data-manifestid=\"https://example.com/aor/PrincetonPA6452/manifest\" " +
+                "data-targetid1=\"https://example.com/aor/PrincetonPA6452/22r/canvas\" " +
+                "data-label1=\"[5]\" " +
+                ">I[nfr]a</a>";
 
         List<ReferenceTarget> targets = new ArrayList<>();
         targets.add(new ReferenceTarget("PrincetonPA6452:00000023", "[a1r]"));
@@ -144,15 +161,29 @@ public class MarginaliaHtmlAdapterTest {
         final String transcription = "This is a test moo";
         final String expected = "This is a test <a class=\"internal-ref\" href=\"javascript:;\" " +
                 "data-targetid=\"https://example.com/col/book/page/canvas\" " +
+                "data-label=\"test\" " +
                 "data-manifestid=\"https://example.com/col/book/manifest\">moo</a>";
 
         String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(weirdRef()));
         assertEquals(expected, result);
     }
 
+    @Test
+    public void targetAlreadyPresent() {
+        final String transcription = "This is a test moo";
+        final String expected = "This is a <a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
+                "data-manifestid=\"https://example.com/col/book/manifest\" " +
+                "data-targetid1=\"https://example.com/col/book/page/canvas\"" +
+                ">test</a> moo";
+
+        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(doubleTargetRef()));
+        assertEquals(expected, result);
+    }
+
     private InternalReference newRef() {
         ReferenceTarget tar = new ReferenceTarget("id", "text", "pre", "post");
-        InternalReference r = new InternalReference(null, Collections.singletonList(tar));
+        InternalReference r = new InternalReference(null, new ArrayList<>(Collections.singletonList(tar)));
 
         tar.setText("test");
         tar.setTextPrefix("is a ");
@@ -166,5 +197,87 @@ public class MarginaliaHtmlAdapterTest {
         r.setText("moo");
 
         return r;
+    }
+
+    private InternalReference doubleTargetRef() {
+        ReferenceTarget t = new ReferenceTarget("id", "test", "is a ", " moo");
+        InternalReference ref = newRef();
+        ref.getTargets().add(t);
+
+        return ref;
+    }
+
+    /*
+        Crazy internal references from Livy: PrincetonPA6452.aor.046v.xml
+
+        <marginalia_text>= peritus in difficili casu processus. pro se quisq[ue]: s[upr]a, i[nfr]a. Pudor in imperio, rebusq[ue] gerendis, puer est, non vir.
+        </marginalia_text>
+        <emphasis method="pen" text="Pudor" type="straight"/>
+        <internal_ref text="s[upr]a">
+            <target ref="PrincetonPA6452:00000023" text="[a1r]"/>
+            <target ref="PrincetonPA6452:00000028" text="[6]"/>
+            <target ref="PrincetonPA6452:00000031" text="[9]"/>
+            <target ref="PrincetonPA6452:00000051" text="[20]"/>
+            <target ref="PrincetonPA6452:00000055" text="[33]"/>
+            <target ref="PrincetonPA6452:00000057" text="[35]"/>
+        </internal_ref>
+        <internal_ref text="i[nfr]a">
+            <target ref="PrincetonPA6452:00000098" text="[76]"/>
+            <target ref="PrincetonPA6452:00000107" text="[85]"/>
+            <target ref="PrincetonPA6452:00000115" text="[93]"/>
+            <target ref="PrincetonPA6452:00000131" text="[109]"/>
+            <target ref="PrincetonPA6452:00000137" text="[115]"/>
+            <target ref="PrincetonPA6452:00000147" text="[125]"/>
+            <target ref="PrincetonPA6452:00000154" text="[132]"/>
+            <target ref="PrincetonPA6452:00000172" text="[150]"/>
+            <target ref="PrincetonPA6452:00000174" text="[152]"/>
+            <target ref="PrincetonPA6452:00000195" text="[173]"/>
+            <target ref="PrincetonPA6452:00000209" text="[187]"/>
+            <target ref="PrincetonPA6452:00000210" text="[188]"/>
+            <target ref="PrincetonPA6452:00000211" text="[189]"/>
+            <target ref="PrincetonPA6452:00000238" text="[216]"/>
+            <target ref="PrincetonPA6452:00000245" text="[223]"/>
+            <target ref="PrincetonPA6452:00000271" text="[249]"/>
+            <target ref="PrincetonPA6452:00000276" text="[254]"/>
+            <target ref="PrincetonPA6452:00000468" text="[446]"/>
+            <target ref="PrincetonPA6452:00000476" text="[454]"/>
+            <target ref="PrincetonPA6452:00000630" text="[608]"/>
+            <target ref="PrincetonPA6452:00000711" text="[689]"/>
+            <target ref="PrincetonPA6452:00000732" text="[710]"/>
+            <target ref="PrincetonPA6452:00000851" text="[829]"/>
+        </internal_ref>
+     */
+    @Test
+    public void testCrazyLivy() {
+        final String transcription = "= peritus in difficili casu processus. pro se quisq[ue]: s[upr]a, i[nfr]a. " +
+                "Pudor in imperio, rebusq[ue] gerendis, puer est, non vir.";
+        final String expected =
+                "= peritus in difficili casu processus. pro se quisq[ue]: <a class=\"internal-ref\" href=\"javascript:;\" " +
+                        "data-targetid=\"https://example.com/aor/PrincetonPA6452/20r/canvas\" " +
+                        "data-label=\"[a1r]\" " +
+                        "data-manifestid=\"https://example.com/aor/PrincetonPA6452/manifest\" " +
+                        "data-targetid1=\"https://example.com/aor/PrincetonPA6452/11v/canvas\" " +
+                        "data-label1=\"[6]\"  " +
+                        "data-targetid2=\"https://example.com/aor/PrincetonPA6452/13r/canvas\" " +
+                        "data-label2=\"[9]\"  " +
+                        "data-targetid3=\"https://example.com/aor/PrincetonPA6452/23r/canvas\" " +
+                        "data-label3=\"[20]\"  " +
+                        "data-targetid4=\"https://example.com/aor/PrincetonPA6452/25r/canvas\" " +
+                        "data-label4=\"[33]\"  " +
+                        "data-targetid5=\"https://example.com/aor/PrincetonPA6452/26r/canvas\" " +
+                        "data-label5=\"[35]\" >s[upr]a</a>" +
+                        ", i[nfr]a. Pudor in imperio, rebusq[ue] gerendis, puer est, non vir.";
+
+        List<ReferenceTarget> t1 = new ArrayList<>();
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000023", "[a1r]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000028", "[6]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000031", "[9]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000051", "[20]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000055", "[33]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000057", "[35]"));
+        InternalReference r1 = new InternalReference("s[upr]a", t1);
+
+        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(r1));
+        assertEquals(expected, result);
     }
 }
