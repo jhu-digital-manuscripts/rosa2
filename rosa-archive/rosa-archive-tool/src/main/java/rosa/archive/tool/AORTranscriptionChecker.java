@@ -13,6 +13,7 @@ import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Annotation;
 import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Graph;
+import rosa.archive.model.aor.GraphNode;
 import rosa.archive.model.aor.GraphText;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Marginalia;
@@ -20,6 +21,8 @@ import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.Table;
+import rosa.archive.model.aor.TableCell;
+import rosa.archive.model.aor.TextEl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -32,6 +35,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class AORTranscriptionChecker {
 
@@ -457,11 +461,15 @@ public class AORTranscriptionChecker {
                 .forEach(annotation -> checkTarget(annotation.getInternalRef(), aPage.getId(), annotation.getId(), report));
 
         for (Marginalia marg : aPage.getMarginalia()) {
+            String transcription = getTranscription(marg);
+            String id = aPage.getId() + ":" + marg.getId();
+
             checkTarget(marg.getContinuesFrom(), aPage.getId(), marg.getId(), report);
             checkTarget(marg.getContinuesTo(), aPage.getId(), marg.getId(), report);
             for (MarginaliaLanguage lang : marg.getLanguages()) {
                 for (Position pos : lang.getPositions()) {
                     for (InternalReference ref : pos.getInternalRefs()) {
+                        checkRefText(transcription, ref, id, report);
                         for (ReferenceTarget target : ref.getTargets()) {
                             checkTarget(target, aPage.getId(), marg.getId(), report);
                         }
@@ -471,7 +479,10 @@ public class AORTranscriptionChecker {
         }
 
         for (Drawing d : aPage.getDrawings()) {
+            String id = aPage.getId() + ":" + d.getId();
+            String transcription = String.join(" ", d.getTexts().stream().map(TextEl::getText).collect(Collectors.toList()));
             for (InternalReference ref : d.getInternalRefs()) {
+                checkRefText(transcription, ref, id, report);
                 for (ReferenceTarget target : ref.getTargets()) {
                     checkTarget(target, aPage.getId(), d.getId(), report);
                 }
@@ -479,9 +490,13 @@ public class AORTranscriptionChecker {
         }
 
         for (Graph g : aPage.getGraphs()) {
+            String id = aPage.getId() + ":" + g.getId();
+            String transcription = String.join(" ", g.getNodes().stream().map(GraphNode::getContent).collect(Collectors.toList()));
+
             checkTarget(g.getContinuesFrom(), aPage.getId(), g.getId(), report);
             checkTarget(g.getContinuesTo(), aPage.getId(), g.getId(), report);
             for (InternalReference ref : g.getInternalRefs()) {
+                checkRefText(transcription, ref, id, report);
                 for (ReferenceTarget target : ref.getTargets()) {
                     checkTarget(target, aPage.getId(), g.getId(), report);
                 }
@@ -489,7 +504,11 @@ public class AORTranscriptionChecker {
         }
 
         for (Table table : aPage.getTables()) {
+            String id = aPage.getId() + ":" + table.getId();
+            String transcription = String.join(" ", table.getCells().stream().map(TableCell::getContent).collect(Collectors.toList()));
+
             for (InternalReference ref : table.getInternalRefs()) {
+                checkRefText(transcription, ref, id, report);
                 for (ReferenceTarget target : ref.getTargets()) {
                     checkTarget(target, aPage.getId(), table.getId(), report);
                 }
@@ -507,6 +526,63 @@ public class AORTranscriptionChecker {
         );
     }
 
+    private String getTranscription(Marginalia marg) {
+        String allText = "";
+
+        for (MarginaliaLanguage lang : marg.getLanguages()) {
+            for (Position pos : lang.getPositions()) {
+                allText = allText.concat(String.join(" ", pos.getTexts()));
+            }
+        }
+
+        return allText;
+    }
+
+    /**
+     * Ensure that an internal reference contains text that actually points to text in an annotations
+     * transcription text.
+     *
+     * @param transcription transcription text to check against
+     * @param ref internal reference
+     * @param report print stream
+     */
+    private void checkRefText(String transcription, InternalReference ref, String reportId, PrintStream report) {
+        if (ref.getText() != null && !ref.getText().isEmpty()) {
+            // If this exists, then chances are that targets actually have text from the target :)
+            checkRefText2(transcription, ref.getText(), reportId, report);
+
+        } else {
+            // If ref.text is not present, then targets will probably contain text from the source :(
+            List<String> moo = ref.getTargets().stream().map(tar -> {
+                String result = "";
+                if (tar.getTextPrefix() != null && !tar.getTextPrefix().isEmpty()) {
+                    result += tar.getTextPrefix();
+                }
+                result += tar.getText();
+                if (tar.getTextSuffix() != null && !tar.getTextSuffix().isEmpty()) {
+                    result += tar.getTextSuffix();
+                }
+                return result;
+            }).collect(Collectors.toList());
+
+            for (String refText : moo) {
+                checkRefText2(transcription, refText, reportId, report);
+            }
+        }
+    }
+
+    private void checkRefText2(String transcription, String refText, String reportId, PrintStream report) {
+        if (transcription == null || transcription.isEmpty()) {
+            return;
+        }
+
+        if (refText == null || refText.isEmpty()) {
+            report.println("   [" + reportId + "] internal reference found with no source text to reference");
+        } else if (!transcription.contains(refText)) {
+            report.println("   [" + reportId + "] internal reference found with text that does not match its annotation's transcription");
+        }
+    }
+
     private void checkTarget(String ref, String transcriptionId, String annotationId, PrintStream report) {
         if (!isEmpty(ref)) {
             checkTarget(new ReferenceTarget(ref, null), transcriptionId, annotationId, report);
@@ -518,8 +594,8 @@ public class AORTranscriptionChecker {
      * (unless target points to external entity)
      *
      * @param target internal reference target
-     * @param transcriptionId page ID
-     * @param annotationId ID of parent annotation of this reference target
+     * @param transcriptionId page ID for reporting
+     * @param annotationId ID of parent annotation of this reference target for reporting
      * @param report PrintStream to record output
      */
     private void checkTarget(ReferenceTarget target, String transcriptionId, String annotationId, PrintStream report) {
