@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,8 +30,12 @@ public class StoreImplRenameTranscriptionsTest extends BaseArchiveTest {
      * Set up. Create fresh list to hold errors.
      */
     @Before
-    public void setup() {
+    public void setup() throws IOException {
         errors = new ArrayList<>();
+
+        // Remove already existing filemap
+        ByteStreamGroup folgers = base.getByteStreamGroup(VALID_COLLECTION).getByteStreamGroup(VALID_BOOK_FOLGERSHA2);
+        Files.deleteIfExists(Paths.get(folgers.resolveName("filemap.csv")));
     }
 
     /**
