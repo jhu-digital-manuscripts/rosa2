@@ -5,11 +5,17 @@ import org.junit.Test;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.aor.AorLocation;
 import rosa.archive.model.aor.InternalReference;
+import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.MarginaliaLanguage;
+import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamWriter;
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -17,6 +23,9 @@ import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 public class MarginaliaHtmlAdapterTest {
     private MarginaliaHtmlAdapter adapter;
@@ -60,6 +69,39 @@ public class MarginaliaHtmlAdapterTest {
         map.put("PrincetonPA6452:00000055", new AorLocation("aor", "PrincetonPA6452", "25r", null));
         map.put("PrincetonPA6452:00000057", new AorLocation("aor", "PrincetonPA6452", "26r", null));
         map.put("BLC120b4:c_120_b_4_(2)_f054v", new AorLocation("aor", "BLC120b4", "32v", null));
+    }
+
+    @Test
+    public void internalRefListTest() throws Exception {
+        List<ReferenceTarget> t1 = new ArrayList<>();
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000023", "[a1r]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000028", "[6]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000031", "[9]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000051", "[20]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000055", "[33]"));
+        t1.add(new ReferenceTarget("PrincetonPA6452:00000057", "[35]"));
+        InternalReference r1 = new InternalReference("s[upr]a", t1);
+
+        List<InternalReference> refs = new ArrayList<>(Collections.singletonList(r1));
+
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        XMLStreamWriter writer = XMLOutputFactory.newInstance().createXMLStreamWriter(out);
+
+        Marginalia marg = new Marginalia();
+        marg.setLanguages(Collections.singletonList(new MarginaliaLanguage()));
+        marg.getLanguages().get(0).setLang("en");
+        marg.getLanguages().get(0).setPositions(Collections.singletonList(new Position()));
+        marg.getLanguages().get(0).getPositions().get(0).setInternalRefs(refs);
+
+        adapter.addInternalRefs(fakeCollection, marg, refs, writer);
+
+        String result = out.toString();
+//        System.out.println(result);
+        assertNotNull(result);
+        assertTrue(result.contains("<span class=\"emphasize\">Internal References:</span>"));
+        assertTrue("There must be ', ' between text and targets", result.contains("s[upr]a, <a"));
+        assertFalse("There should be ', ' between targets", result.contains("</a><a"));
+        assertTrue("There should be ', ' between targets", result.contains("</a>, <a "));
     }
 
     @Test
