@@ -222,11 +222,20 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
         for (int i = 0; i < refs.size(); i++) {
             InternalReference ref = refs.get(i);
             if (i > 0 || hasExtraInternalRef(col, a)) {
+//                writer.writeCharacters("<br/>");
                 writer.writeCharacters(", ");
             }
 
-            writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()));
-            for (ReferenceTarget tar : ref.getTargets()) {
+            if (ref.getText() != null && !ref.getText().isEmpty()) {
+                writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()));
+                writer.writeCharacters(", ");
+            }
+            for (int j = 0; j < ref.getTargets().size(); j++) {
+//            for (ReferenceTarget tar : ref.getTargets()) {
+                ReferenceTarget tar = ref.getTargets().get(j);
+                if (j > 0) {
+                    writer.writeCharacters(", ");
+                }
                 writeInternalRef(col, tar, writer);
             }
         }
