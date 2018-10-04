@@ -292,6 +292,11 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
         }
 
         for (InternalReference ref : refs) {
+            // TODO temp block preventing decoration of references with more than 1 target to avoid user confusion
+            if (ref.getTargets().size() > 1) {
+                continue;
+            }
+
             boolean textInRef = ref.getText() != null && !ref.getText().isEmpty();
 
             for (ReferenceTarget target : ref.getTargets()) {
