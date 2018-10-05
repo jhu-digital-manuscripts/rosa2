@@ -13,12 +13,12 @@ import java.util.Map;
 import org.junit.Before;
 import org.junit.Test;
 
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
+import rosa.iiif.presentation.core.IIIFPresentationCache;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.ImageIdMapper;
-import rosa.iiif.presentation.core.JhuImageIdMapper;
-import rosa.iiif.presentation.core.PresentationTestUtils;
-import rosa.iiif.presentation.core.transform.impl.CollectionTransformer;
+import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
@@ -48,17 +48,16 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         Map<String, String> idMap = new HashMap<>();
         idMap.put(VALID_COLLECTION, "valid");
 
-        IIIFPresentationRequestFormatter presentationReqFormatter =
+        IIIFPresentationRequestFormatter presFormatter =
                 new IIIFPresentationRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT);
-        rosa.iiif.image.core.IIIFRequestFormatter imageReqFormatter =
+        rosa.iiif.image.core.IIIFRequestFormatter imageFormatter =
                 new rosa.iiif.image.core.IIIFRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PORT, ENDPOINT_PREFIX);
-        ImageIdMapper idMapper = new JhuImageIdMapper(idMap);
-
-        CollectionTransformer collectionTransformer = new CollectionTransformer(presentationReqFormatter, simpleStore, imageReqFormatter, idMapper);
-
-        presentationTransformer = new PresentationTransformerImpl(presentationReqFormatter,
-                PresentationTestUtils.transformerSet(presentationReqFormatter, imageReqFormatter, idMapper),
-                collectionTransformer);
+        ArchiveNameParser nameParser = new ArchiveNameParser();
+        StaticResourceRequestFormatter staticFormatter = new StaticResourceRequestFormatter(ENDPOINT_SCHEME, ENDPOINT_HOST, ENDPOINT_PREFIX, ENDPOINT_PORT);
+        IIIFPresentationCache cache = new IIIFPresentationCache(store, 1000);
+        PresentationUris pres_uris = new PresentationUris(presFormatter, imageFormatter, staticFormatter);
+        
+        presentationTransformer = new PresentationTransformerImpl(cache, pres_uris, nameParser);
     }
 
     @Test
@@ -134,6 +133,10 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         assertNotNull("", manifest.getOtherSequences());
         assertTrue("Unexpected other sequences found.", manifest.getOtherSequences().isEmpty());
         checkSequence(manifest.getDefaultSequence());
+
+        String expectedDescriptionUri = ENDPOINT_SCHEME + "://" + ENDPOINT_HOST + ENDPOINT_PREFIX +
+                "/valid/LudwigXV7/LudwigXV7.description_en.xml";
+        assertEquals(expectedDescriptionUri, manifest.getRelatedUri());
     }
 
     /**

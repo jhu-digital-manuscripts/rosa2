@@ -44,6 +44,7 @@
                             <arguments>
                                 <argument>${project.build.directory}/${project.build.finalName}</argument>
                             </arguments>
+                            <!-- Pass configuration as system properties to tool -->
                             <systemProperties>
                                 <systemProperty>
                                     <key>archive.path</key>
@@ -63,6 +64,38 @@
                                 </systemProperty>
                                 <systemProperty>
                                     <key>iiif.pres.port</key>
+                                    <value>${iiif.pres.port}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>iiif.image.scheme</key>
+                                    <value>${iiif.image.scheme}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>iiif.image.host</key>
+                                    <value>${iiif.image.host}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>iiif.image.prefix</key>
+                                    <value>${iiif.image.prefix}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>iiif.image.port</key>
+                                    <value>${iiif.image.port}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>static.scheme</key>
+                                    <value>${iiif.pres.scheme}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>static.host</key>
+                                    <value>${iiif.pres.host}</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>static.prefix</key>
+                                    <value>${iiif.pres.prefix}/data</value>
+                                </systemProperty>
+                                <systemProperty>
+                                    <key>static.port</key>
                                     <value>${iiif.pres.port}</value>
                                 </systemProperty>
                             </systemProperties>

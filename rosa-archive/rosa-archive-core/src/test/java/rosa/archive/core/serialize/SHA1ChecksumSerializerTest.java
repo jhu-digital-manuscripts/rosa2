@@ -50,7 +50,7 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest<SHA1Checksum>
         map.put("Walters143.description_en.xml", "298f9d809330430ba389f9dacd2d29c27298c99e");
         map.put("Walters143.transcription.xml", "1c3ebdade52bd59e66753d3c7d67d7050730bd9c");
         map.put("Walters143.permission.xml", "cc722817d05eab67afba53f32d81e009ecda578f");
-        map.put("Walters143.description.xml", "ba0cb6a3b3719deb5c9a9288a2abf0407079d12a");
+        map.put("Walters143.metadata.xml", "ba0cb6a3b3719deb5c9a9288a2abf0407079d12a");
         map.put("Walters143.permission_en.xml", "22e133059e91f4ea91d085de8084e376ad4bb321");
         map.put("Walters143.description_fr.xml", "3f33d7bb70d717530734c131809af99e79c8baf2");
         map.put("Walters143.permission_fr.xml", "5eb98c10331f65bc6118f1f5480cd93d618def50");
@@ -83,7 +83,7 @@ public class SHA1ChecksumSerializerTest extends BaseSerializerTest<SHA1Checksum>
         map.put("Walters143.description_en.xml", "298f9d809330430ba389f9dacd2d29c27298c99e");
         map.put("Walters143.transcription.xml", "1c3ebdade52bd59e66753d3c7d67d7050730bd9c");
         map.put("Walters143.permission.xml", "cc722817d05eab67afba53f32d81e009ecda578f");
-        map.put("Walters143.description.xml", "ba0cb6a3b3719deb5c9a9288a2abf0407079d12a");
+        map.put("Walters143.metadata.xml", "ba0cb6a3b3719deb5c9a9288a2abf0407079d12a");
         map.put("Walters143.permission_en.xml", "22e133059e91f4ea91d085de8084e376ad4bb321");
         map.put("Walters143.description_fr.xml", "3f33d7bb70d717530734c131809af99e79c8baf2");
         map.put("Walters143.permission_fr.xml", "5eb98c10331f65bc6118f1f5480cd93d618def50");

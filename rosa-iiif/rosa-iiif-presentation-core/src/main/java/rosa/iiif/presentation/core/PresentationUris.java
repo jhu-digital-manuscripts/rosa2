@@ -1,93 +1,115 @@
 package rosa.iiif.presentation.core;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
+import rosa.archive.model.Book;
+import rosa.iiif.image.core.IIIFRequestFormatter;
+import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
+import rosa.search.model.SearchOptions;
 
 /**
- * Handle mapping of archive objects into recommended URI patterns for IIIF
- * Presentation API.
- *
- * For non-collection objects, the id is 'COLLECTION_ID.BOOK_ID'.
+ * Handle mapping of archive objects into URIs for IIIF Presentation API and
+ * Image PAI.
+ * 
+ * The general structure for presentation API is is COLLECTION / NAME? / NAME? /
+ * TYPE
+ * 
+ * 
+ * An image id is Collection Id '/' Book Id '/' Image Id (without extension).
+ * Some images may also have a cropped version with a 'cropped' path segment
+ * before the Image Id.
  */
 public class PresentationUris {
-    private final IIIFPresentationRequestFormatter formatter;
+    private final IIIFPresentationRequestFormatter presFormatter;
+    private final IIIFRequestFormatter imageFormatter;
+    private final StaticResourceRequestFormatter staticFormatter;
 
-    @Inject
-    public PresentationUris(@Named("formatter.presentation") IIIFPresentationRequestFormatter formatter) {
-        this.formatter = formatter;
+    public PresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter,
+                            StaticResourceRequestFormatter staticFormatter) {
+        this.presFormatter = presFormatter;
+        this.imageFormatter = imageFormatter;
+        this.staticFormatter = staticFormatter;
     }
 
     public String getCollectionURI(String collection) {
-        return formatter.format(new PresentationRequest(null, collection, PresentationRequestType.COLLECTION));
+        return presFormatter.format(new PresentationRequest(PresentationRequestType.COLLECTION, collection));
     }
 
     public String getManifestURI(String collection, String book) {
-        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), null, PresentationRequestType.MANIFEST));
+        return presFormatter.format(new PresentationRequest(PresentationRequestType.MANIFEST, collection, book));
     }
 
     public String getAnnotationURI(String collection, String book, String name) {
-        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
-                PresentationRequestType.ANNOTATION));
+        return presFormatter
+                .format(new PresentationRequest(PresentationRequestType.ANNOTATION, collection, book, name));
     }
-    
+
     public String getAnnotationListURI(String collection, String book, String name) {
-        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
-                PresentationRequestType.ANNOTATION_LIST));
+        return presFormatter
+                .format(new PresentationRequest(PresentationRequestType.ANNOTATION_LIST, collection, book, name));
     }
-    
+
     public String getSequenceURI(String collection, String book, String name) {
-        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
-                PresentationRequestType.SEQUENCE));
+        return presFormatter.format(new PresentationRequest(PresentationRequestType.SEQUENCE, collection, book, name));
     }
-    
-    public String getLayerURI(String collection, String book, String name) {
-        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
-                PresentationRequestType.LAYER));
-    }
-    
+
     public String getRangeURI(String collection, String book, String name) {
-        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
-                PresentationRequestType.RANGE));
+        return presFormatter.format(new PresentationRequest(PresentationRequestType.RANGE, collection, book, name));
     }
-    
+
+    public String getLayerURI(String collection, String book, String name) {
+        return presFormatter.format(new PresentationRequest(PresentationRequestType.LAYER, collection, book, name));
+    }
+
     public String getCanvasURI(String collection, String book, String name) {
-        return formatter.format(new PresentationRequest(get_presentation_id(collection, book), name,
-                PresentationRequestType.CANVAS));
+        return presFormatter.format(new PresentationRequest(PresentationRequestType.CANVAS, collection, book, name));
     }
 
-    private String get_presentation_id(String collection, String book) {
-        return collection + "." + book;
+    public String getImageURI(String collection, String book, String imageId, boolean cropped) {
+        return imageFormatter.format(get_iiif_image_id(collection, book, imageId, cropped));
     }
 
-    /**
-     * @param id
-     *            - presentation request id
-     * @return collection id
-     */
-    public static String getCollectionId(String id) {
-        int i = id.indexOf('.');
+    private String get_iiif_image_id(String collection, String book, String imageId, boolean cropped) {
+        String image = imageId;
+        int i = image.lastIndexOf('.');
 
-        if (i == -1) {
-            return null;
+        if (i > 0) {
+            image = image.substring(0, i);
         }
 
-        return id.substring(0, i);
+        return collection + (book == null ? "" : "/" + book) + "/" + (cropped ? "cropped/" : "") + image;
     }
 
-    /**
-     * @param id
-     *            - presentation request id
-     * @return book id
-     */
-    public static String getBookId(String id) {
-        int i = id.indexOf('.');
+    public String getJHSearchURI(PresentationRequest req, String query, SearchOptions opts, String categories) {
+        StringBuilder url = new StringBuilder(presFormatter.format(req));
 
-        if (i == -1) {
-            return null;
+        try {
+            url.append(JHSearchService.RESOURCE_PATH).append('?').append(JHSearchService.QUERY_PARAM).append('=')
+                    .append(URLEncoder.encode(query, "UTF-8")).append('&').append(JHSearchService.MAX_MATCHES_PARAM)
+                    .append('=').append(opts.getMatchCount());
+
+            if (opts.getSortOrder() != null) {
+                url.append('&').append(JHSearchService.SORT_ORDER_PARAM).append('=')
+                        .append(URLEncoder.encode(opts.getSortOrder().name().toLowerCase(), "UTF-8"));
+            }
+
+            url.append('&').append(JHSearchService.OFFSET_PARAM).append('=').append(opts.getOffset());
+
+            if (categories != null && !categories.equals("")) {
+                url.append('&').append(JHSearchService.CATEGORIES).append('=')
+                        .append(URLEncoder.encode(categories, "UTF-8"));
+            }
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
         }
 
-        return id.substring(i + 1);
+        return url.toString();
+    }
+
+    public String getStaticResourceUri(String collection, String book, String target) {
+        return staticFormatter.format(collection, book, target);
     }
 }

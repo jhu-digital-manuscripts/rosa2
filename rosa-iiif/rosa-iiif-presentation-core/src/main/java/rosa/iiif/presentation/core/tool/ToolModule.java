@@ -12,11 +12,11 @@ import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 
 /**
  * Guice module for build tools.
  */
-@SuppressWarnings("unused")
 public class ToolModule extends AbstractModule {
     @Override
     protected void configure() {
@@ -35,5 +35,21 @@ public class ToolModule extends AbstractModule {
                                                                              @Named("iiif.pres.prefix") String prefix,
                                                                              @Named("iiif.pres.port") int port) {
         return new IIIFPresentationRequestFormatter(scheme, host, prefix, port);
+    }
+    
+    @Provides
+    rosa.iiif.image.core.IIIFRequestFormatter provideImageRequestFormatter(@Named("iiif.image.scheme") String scheme,
+                                                                           @Named("iiif.image.host") String host,
+                                                                           @Named("iiif.image.prefix") String prefix,
+                                                                           @Named("iiif.image.port") int port) {
+        return new rosa.iiif.image.core.IIIFRequestFormatter(scheme, host, port, prefix);
+    }
+
+    @Provides
+    StaticResourceRequestFormatter provideStaticResourceRequestFormatter(@Named("iiif.pres.scheme") String scheme,
+                                                                         @Named("iiif.pres.host") String host,
+                                                                         @Named("iiif.pres.prefix") String prefix,
+                                                                         @Named("iiif.pres.port") int port) {
+        return new StaticResourceRequestFormatter(scheme, host, prefix, port);
     }
 }

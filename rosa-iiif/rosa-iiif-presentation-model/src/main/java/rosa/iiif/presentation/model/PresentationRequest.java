@@ -1,16 +1,14 @@
 package rosa.iiif.presentation.model;
 
+import java.util.Arrays;
+
 /**
- * Object representing a request to the IIIF Presentation endpoint. This object records
- * the requested object name/id.
- *
- * IIIF Collection has a name, but no ID.
- * Other IIIF objects have IDs.
+ * Instance represents an IIIF Presentation API request for an object.
+ * The object is identified by a list of strings.
  */
-public class PresentationRequest {
+public final class PresentationRequest {
     private PresentationRequestType type;
-    private String id;
-    private String name;
+    private String[] identifier;
 
     /**
      * Create an empty PresentationRequest
@@ -20,16 +18,14 @@ public class PresentationRequest {
     /**
      * Create a PresentationRequests with data.
      *
-     * @param id requested ID, including collection and book
-     * @param name requested name
+     * @param identifier ID of requested object
      * @param type requested type
      */
-    public PresentationRequest(String id, String name, PresentationRequestType type) {
+    public PresentationRequest(PresentationRequestType type, String... identifier) {
         this.type = type;
-        this.id = id;
-        this.name = name;
+        this.identifier = identifier;
     }
-
+    
     public PresentationRequestType getType() {
         return type;
     }
@@ -38,28 +34,19 @@ public class PresentationRequest {
         this.type = type;
     }
 
-    public String getId() {
-        return id;
+    public String[] getIdentifier() {
+        return identifier;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setIdentifier(String[] identifier) {
+        this.identifier = identifier;
     }
 
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((id == null) ? 0 : id.hashCode());
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + Arrays.hashCode(identifier);
         result = prime * result + ((type == null) ? 0 : type.hashCode());
         return result;
     }
@@ -70,18 +57,10 @@ public class PresentationRequest {
             return true;
         if (obj == null)
             return false;
-        if (!(obj instanceof PresentationRequest))
+        if (getClass() != obj.getClass())
             return false;
         PresentationRequest other = (PresentationRequest) obj;
-        if (id == null) {
-            if (other.id != null)
-                return false;
-        } else if (!id.equals(other.id))
-            return false;
-        if (name == null) {
-            if (other.name != null)
-                return false;
-        } else if (!name.equals(other.name))
+        if (!Arrays.equals(identifier, other.identifier))
             return false;
         if (type != other.type)
             return false;
@@ -90,6 +69,6 @@ public class PresentationRequest {
 
     @Override
     public String toString() {
-        return "PresentationRequest [type=" + type + ", id=" + id + ", name=" + name + "]";
+        return "PresentationRequest [type=" + type + ", identifier=" + Arrays.toString(identifier) + "]";
     }
 }

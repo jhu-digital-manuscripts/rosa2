@@ -203,7 +203,7 @@ public class AORModelEqualsAndHashCodeTest {
     @Test
     public void tableRowTest() {
         EqualsVerifier
-                .forClass(TableRow.class)
+                .forClass(TableHeader.class)
                 .usingGetClass()
                 .allFieldsShouldBeUsed()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)

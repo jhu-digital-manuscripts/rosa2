@@ -15,6 +15,7 @@ public class ModelEqualsAndHashCodeTest {
         EqualsVerifier
                 .forClass(BookImage.class)
                 .allFieldsShouldBeUsed()
+                .usingGetClass()
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
                 .verify();
     }

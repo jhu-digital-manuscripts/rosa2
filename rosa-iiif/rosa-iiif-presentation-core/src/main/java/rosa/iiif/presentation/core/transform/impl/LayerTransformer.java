@@ -3,34 +3,23 @@ package rosa.iiif.presentation.core.transform.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
-
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.transform.Transformer;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.AnnotationListType;
-import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Layer;
 
 // TODO finish implementing
-public class LayerTransformer extends BasePresentationTransformer implements Transformer<Layer>, IIIFNames {
-
-    @Inject
-    public LayerTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter) {
-        super(presRequestFormatter);
+public class LayerTransformer implements TransformerConstants {
+    private final PresentationUris pres_uris;
+    
+    public LayerTransformer(PresentationUris pres_uris) {
+        this.pres_uris = pres_uris;
     }
 
-    @Override
     public Layer transform(BookCollection collection, Book book, String name) {
         return layer(collection, book, name);
-    }
-
-    @Override
-    public Class<Layer> getType() {
-        return Layer.class;
     }
 
     /**

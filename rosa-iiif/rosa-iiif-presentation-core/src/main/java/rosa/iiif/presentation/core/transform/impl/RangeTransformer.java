@@ -3,9 +3,6 @@ package rosa.iiif.presentation.core.transform.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
-
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -15,20 +12,18 @@ import rosa.archive.model.BookText;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.transform.Transformer;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.ViewingHint;
 
-public class RangeTransformer extends BasePresentationTransformer implements Transformer<Range> {
-
-    @Inject
-    public RangeTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter) {
-        super(presRequestFormatter);
+public class RangeTransformer implements TransformerConstants {
+    private final PresentationUris pres_uris;
+    
+    public RangeTransformer(PresentationUris pres_uris) {
+        this.pres_uris = pres_uris;
     }
 
-    @Override
     public Range transform(BookCollection collection, Book book, String name) {
         String[] parts = name.split("\\.");
 
@@ -48,11 +43,6 @@ public class RangeTransformer extends BasePresentationTransformer implements Tra
         } else {
             return null;
         }
-    }
-
-    @Override
-    public Class<Range> getType() {
-        return Range.class;
     }
 
     private Range range(BookCollection col, Book book, String name) {

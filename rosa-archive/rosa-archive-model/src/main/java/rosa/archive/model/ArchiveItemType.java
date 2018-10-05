@@ -6,7 +6,7 @@ public enum ArchiveItemType {
     IMAGE_LIST("images.csv", "csv"),
     CROPPING("crop", "txt"),
     DEPRECATED_DESCRIPTION("description_", "xml"),
-    METADATA("description.xml", "xml"),
+    METADATA("metadata.xml", "xml"),
     FILE_MAP("filemap", "csv"),
     SHA1SUM("", "SHA1SUM"),
     NARRATIVE_TAGGING("nartag", "csv"),

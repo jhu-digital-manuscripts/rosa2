@@ -11,7 +11,9 @@ import rosa.archive.core.StoreImpl;
 import rosa.archive.core.check.BookChecker;
 import rosa.archive.core.check.BookCollectionChecker;
 import rosa.archive.core.serialize.SerializerSet;
+import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 
 
 /**
@@ -33,5 +35,15 @@ public class IIIFPresentationServletITModule extends AbstractModule {
     @Provides
     IIIFPresentationRequestFormatter provideIIIFPresentationRequestFormatter() {
         return new IIIFPresentationRequestFormatter("http", "localhost", "/iiif-pres", 9090);
+    }
+    
+    @Provides
+    IIIFRequestFormatter provideIIIFRequestFormatter() {
+        return new IIIFRequestFormatter("http", "localhost", 9090, "/iiif-image");
+    }
+
+    @Provides
+    StaticResourceRequestFormatter provideStaticResourceRequestFormatter() {
+        return new StaticResourceRequestFormatter("http", "localhost", "/iiif-pres/data", 9090);
     }
 }

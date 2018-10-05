@@ -9,9 +9,9 @@
 <!ENTITY acirc "â" >
 <!ENTITY atiled "ã">
 <!ENTITY auml "ä">
-<!ENTITY a_super "U+2090">
 <!ENTITY ccedil "ç">
 <!ENTITY Egrave "È">
+<!ENTITY Euml "Ë">
 <!ENTITY egrave "è">
 <!ENTITY eacute "é">
 <!ENTITY ecirc "ê">
@@ -22,15 +22,15 @@
 <!ENTITY iuml "ï">
 <!ENTITY Iuml "Ï" >
 <!ENTITY oacute "ó">
-<!ENTITY o_super "U+2092">
+<!ENTITY o_super "&#x2070;">
 <!ENTITY OELIG "Œ"> 
 <!ENTITY ograve "ò">
 <!ENTITY ocirc "ô">
 <!ENTITY Ocirc "Ô">
 <!ENTITY ouml "ö">
 <!ENTITY ntitle "ñ" >
-<!ENTITY pilcrow "U+00B6;">
-<!ENTITY sharp-S "U+00DF;">
+<!ENTITY pilcrow "&#182;"> 
+<!ENTITY sharp-S "&#223;">
 <!ENTITY U_ring "&#x16e;" >
 <!ENTITY u_ring "&#x16f;">
 <!ENTITY ucirc "û">
@@ -54,14 +54,14 @@
 <!ENTITY Libra "&#x264e;">
 <!ENTITY Sagittarius "&#x2650;">
 <!ENTITY Capricorn "&#x2651;">
-<!ENTITY North_Node "U+260A">
-<!ENTITY South_Node "U+260B">
+<!ENTITY North_Node "&#x260A;">
+<!ENTITY South_Node "&#x260B;">
 
 <!ENTITY Earth "&#10753;">
 <!ENTITY Moon "&#x263e;">
 <!ENTITY Venus "&#x2640;">
 <!ENTITY Mercury "&#x263f;">
-<!ENTITY Salt "U+25A2" > <!--Dee uses square as symbol for salt (instead of circle with horizontal line)-->
+<!ENTITY Salt "&#x25A2;" > <!--Dee uses square as symbol for salt (instead of circle with horizontal line)-->
 <!ENTITY Sun "&#x2609;">
 <!ENTITY Sulfur "&#128781;">
 <!ENTITY Star "&#xe739;">
@@ -71,16 +71,18 @@
 <!ENTITY Square "&#x25A1;">
 <!ENTITY Trine "&#x25B3;">
 <!ENTITY Opposition "&#9741;">
-<!ENTITY Conjunction "U+0260C">
-<!ENTITY Sextile "U+26B9">
+<!ENTITY Conjunction "&#x260C;">
+<!ENTITY Sextile "&#x26B9;">
+
+<!ENTITY Phi "&#x3A6;">
 
 <!--Fractions-->
 
-<!ENTITY Onequarter "U+00BC;">
-<!ENTITY Onehalf "U+00BD;">
-<!ENTITY Threequarter "U+00BE;">
-<!ENTITY Onethird "U+2153;">
-<!ENTITY Twothird "U+2154;">
+<!ENTITY Onequarter "&#188;">
+<!ENTITY Onehalf "&#189;">
+<!ENTITY Threequarter "&#190;">
+<!ENTITY Onethird "&#8531;">
+<!ENTITY Twothird "&#8532;">
 
 
 

@@ -10,7 +10,10 @@ import com.google.inject.Injector;
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.FSByteStreamGroup;
 import rosa.archive.core.Store;
+import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.LuceneJHSearchService;
 import rosa.search.core.SearchService;
 
@@ -25,6 +28,8 @@ public class WebAppResourceTool {
         Injector injector = Guice.createInjector(new ToolModule(), new ArchiveCoreModule());
         Store store = injector.getInstance(Store.class);
         IIIFPresentationRequestFormatter reqFormatter = injector.getInstance(IIIFPresentationRequestFormatter.class);
+        IIIFRequestFormatter imageFormatter = injector.getInstance(IIIFRequestFormatter.class);
+        StaticResourceRequestFormatter staticFormatter = injector.getInstance(StaticResourceRequestFormatter.class);
         
         if (args.length != 1) {
             System.err.println("Usage: <tool> <web_app_path>");
@@ -44,7 +49,8 @@ public class WebAppResourceTool {
 
         System.out.println("## Indexing archive to " + archive_index_path);
 
-        SearchService service = new LuceneJHSearchService(archive_index_path, reqFormatter);
+        SearchService service = new LuceneJHSearchService(archive_index_path, new PresentationUris(reqFormatter,
+                imageFormatter, staticFormatter));
 
         for (String col: store.listBookCollections()) {
                 service.update(store, col);

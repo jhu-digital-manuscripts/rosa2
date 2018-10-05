@@ -27,6 +27,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * This base class provides a starting point with useful utilities to adapt the content
@@ -37,9 +39,9 @@ import java.util.logging.Logger;
  *
  * @param <T>
  */
-public abstract class AnnotationBaseHtmlAdapter<T> {
+public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstants {
     private static final Logger LOGGER = Logger.getLogger("AnnotationHtmlAdapter");
-    protected static final boolean[] NO_ORIENTATION = new boolean[] { false, false, false, false };
+//    protected static final boolean[] NO_ORIENTATION = new boolean[] { false, false, false, false };
 
     protected final PresentationUris pres_uris;
     private List<ExternalResourceDb> externalDbs;
@@ -220,11 +222,20 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
         for (int i = 0; i < refs.size(); i++) {
             InternalReference ref = refs.get(i);
             if (i > 0 || hasExtraInternalRef(col, a)) {
+//                writer.writeCharacters("<br/>");
                 writer.writeCharacters(", ");
             }
 
-            writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()));
-            for (ReferenceTarget tar : ref.getTargets()) {
+            if (ref.getText() != null && !ref.getText().isEmpty()) {
+                writer.writeCharacters(StringEscapeUtils.escapeHtml4(ref.getText()));
+                writer.writeCharacters(", ");
+            }
+            for (int j = 0; j < ref.getTargets().size(); j++) {
+//            for (ReferenceTarget tar : ref.getTargets()) {
+                ReferenceTarget tar = ref.getTargets().get(j);
+                if (j > 0) {
+                    writer.writeCharacters(", ");
+                }
                 writeInternalRef(col, tar, writer);
             }
         }
@@ -255,6 +266,179 @@ public abstract class AnnotationBaseHtmlAdapter<T> {
     private InternalReference fromInternalRefAttr(Annotation a) {
         String text = a.getReferencedText();
         return new InternalReference(text, Collections.singletonList(new ReferenceTarget(a.getInternalRef(), text)));
+    }
+
+    /**
+     * Mutate transcription text by inserting internal references found in an annotation into its transcription.
+     *
+     * Note: "source text" identifies the specific text in the current annotation that is referring to
+     * another place. It seems that in the transcriptions, this text was placed on the <target text="" />
+     * element.
+     *
+     * Another Note: A subset of internal_refs in the corpus have the source text in the internal_ref#text
+     * attribute, opposite of the normal behavior - which is to have the source text in internal_ref/target#text.
+     * In this anomalous behavior, we will for now ignore the target#text attribute.
+     *
+     * @param transcription original annotation transcription text
+     * @param refs list of internal references
+     * @return newly modified transcription
+     */
+    String addInternalRefs(BookCollection col, String transcription, List<InternalReference> refs) {
+        if (transcription == null || transcription.isEmpty()) {
+            return "";
+        }
+        if (refs == null || refs.size() == 0) {
+            return transcription;
+        }
+
+        for (InternalReference ref : refs) {
+            // TODO temp block preventing decoration of references with more than 1 target to avoid user confusion
+            if (ref.getTargets().size() > 1) {
+                continue;
+            }
+
+            boolean textInRef = ref.getText() != null && !ref.getText().isEmpty();
+
+            for (ReferenceTarget target : ref.getTargets()) {
+                String sourcePrefix;
+                String sourceText;
+                String sourceSuffix;
+                String label;
+
+                if (textInRef) {
+                    sourcePrefix = "";
+                    sourceSuffix = "";
+                    sourceText = ref.getText();
+                    label = target.getText();
+                } else {
+                    sourcePrefix = target.getTextPrefix();
+                    sourceText = target.getText();
+                    sourceSuffix = target.getTextSuffix();
+                    label = ref.getText();
+                }
+
+                if (!resolvable(col, target.getTargetId())) {
+                    continue;
+                }
+
+                transcription = decorate(transcription, sourcePrefix, sourceText, sourceSuffix,
+                        target.getTargetId(), label, col);
+            }
+        }
+
+        return transcription;
+    }
+
+    /**
+     * Decorate the transcription with a given {@link ReferenceTarget} in an {@link InternalReference}.
+     *
+     * A single internal reference may have multiple targets where the same bit of text can point to
+     * multiple places. In this case, the first target will decorate the transcription with an <a> tag.
+     * Subsequent targets will try to match the same text, which will have been modified by the first
+     * target. So instead of a simple string match, we may have to match a REGEX, matching the prefix,
+     * a possible anchor tag with arbitrary attributes, the actual link text, a possible end tag, finally
+     * the suffix.
+     *
+     * From there, we can pull that string from the original transcription. If the anchor tag is not there,
+     * we can do a simple drop in replacement with an anchor tag, as {@link #buildLink(BookCollection, String, String, String)}.
+     * If the anchor tag is already there, we can add a new 'data-' attribute with the new target URI. This
+     * 'data-' attribute will be a 'data-targetid#' where the number is determined by how many other
+     * 'data-targetid#' attributes already exist. The UI should then be able to match all 'data-targetid*'.
+     *
+     * @param transcription full original transcription
+     * @param prefix ref prefix
+     * @param text ref text
+     * @param suffix ref suffix
+     * @param targetId ID of the reference target
+     * @param col book collection
+     * @return decorated HTML-ified transcription
+     */
+    private String decorate(String transcription, String prefix, String text, String suffix,
+                            String targetId, String label, BookCollection col) {
+        // REGEX Groups:                          1                   2               3                 4               5
+        Pattern p = Pattern.compile("(" + escapeRegex(prefix) + ")(<a.*>)?(" + escapeRegex(text) + ")(</a>)?(" + escapeRegex(suffix) + ")");
+        Matcher matcher = p.matcher(transcription);
+
+        String targetUri = targetId(col.getAnnotationMap().get(targetId));
+
+        StringBuilder sb = new StringBuilder();
+        int start = 0;
+        int end = 0;
+        while (matcher.find()) {
+            sb.append(transcription.substring(start, matcher.start()));
+
+            start = matcher.start();
+
+            if (matcher.group(2) == null) { // No 'anchor' tag present
+                sb.append(simpleReplace(matcher.group(0), prefix, text, suffix, buildLink(col, text, targetId, label)));
+            } else {
+                sb.append(prefix).append(replaceAnchorStart(matcher.group(2), targetUri, label));
+                sb.append(text).append(matcher.group(4)).append(suffix);
+            }
+
+            end = matcher.end();
+        }
+        sb.append(transcription.substring(end));
+
+        return sb.toString();
+
+    }
+
+    private String escapeRegex(String in) {
+        if (in == null) {
+            return "";
+        }
+        return StringEscapeUtils.escapeJava(in).replaceAll("\\[", "\\\\[");
+    }
+
+    private String replaceAnchorStart(String anchor, String targetUri, String label) {
+        int targetIndex = anchor.split("data-targetid").length - 1;
+        return anchor.substring(0, anchor.length() - 1) + " data-targetid" + targetIndex + "=\"" + targetUri + "\""
+                + (label != null ? " data-label" + targetIndex + "=\"" + label + "\" " : "")
+                + anchor.substring(anchor.length() - 1);
+    }
+
+    /**
+     * This is used to decorate some text with an internal reference, if it has not already been
+     * decorated.
+     *
+     * @param transcription full original transcription
+     * @param prefix ref prefix
+     * @param text ref text
+     * @param suffix ref suffix
+     * @param link 'text' surrounded by an anchor tag
+     * @return decorated HTML-ified transcription
+     */
+    private String simpleReplace(String transcription, String prefix, String text, String suffix, String link) {
+        StringBuilder original = new StringBuilder();
+        StringBuilder modified = new StringBuilder();
+
+        if (prefix != null && !prefix.isEmpty()) {
+            original.append(prefix);
+            modified.append(prefix);
+        }
+        original.append(text);
+        modified.append(link);
+        if (suffix != null && !suffix.isEmpty()) {
+            original.append(suffix);
+            modified.append(suffix);
+        }
+
+        return transcription.replace(original, modified);
+    }
+
+    private boolean resolvable(BookCollection col, String target) {
+        return col.getAnnotationMap().containsKey(target);
+    }
+
+    private String buildLink(BookCollection col, String text, String targetId, String label) {
+        AorLocation loc = col.getAnnotationMap().get(targetId);
+        return "<a class=\"internal-ref\" href=\"javascript:;\" " +
+                "data-targetid=\"" + targetId(loc) + "\" " +
+                (label != null ? "data-label=\"" + label + "\" " : "") +
+                "data-manifestid=\"" + manifestId(loc) + "\">" +
+                text +
+                "</a>";
     }
 
     /**

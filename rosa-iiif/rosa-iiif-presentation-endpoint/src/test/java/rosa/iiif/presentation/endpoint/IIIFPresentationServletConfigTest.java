@@ -14,7 +14,8 @@ import org.junit.Test;
 import com.google.inject.Injector;
 
 import rosa.iiif.presentation.core.IIIFPresentationService;
-import rosa.iiif.presentation.core.transform.impl.AnnotationListTransformer;
+import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.core.transform.impl.PresentationTransformerImpl;
 
 public class IIIFPresentationServletConfigTest {
@@ -27,7 +28,11 @@ public class IIIFPresentationServletConfigTest {
             + "iiif.image.scheme = http\n"
             + "iiif.image.host = rosetest.library.jhu.edu\n" 
             + "iiif.image.port = 80\n"
-            + "iiif.image.prefix = /iiifimage\n";
+            + "iiif.image.prefix = /iiifimage\n"
+            + "static.scheme = http\n"
+            + "static.host = rosetest.library.jhu.edu\n"
+            + "static.port = 80\n"
+            + "static.prefix = /iiifpres/data\n";
 
     /**
      * Must write new 'iiifservlet.properties' with valid values because it has not been
@@ -57,16 +62,19 @@ public class IIIFPresentationServletConfigTest {
     public void testInjection() {
         Injector injector = new IIIFPresentationServletConfig().getInjector();
 
+        PresentationUris pres_uris = injector.getInstance(PresentationUris.class);
+        assertNotNull("Failed to inject PresentationUris", pres_uris);
+
         PresentationTransformerImpl trans = injector.getInstance(PresentationTransformerImpl.class);
         assertNotNull("Failed to inject presentation transformer.", trans);
-
-        AnnotationListTransformer listTrans = injector.getInstance(AnnotationListTransformer.class);
-        assertNotNull("Failed to inject annotation list transformer.", listTrans);
 
         IIIFPresentationService service = injector.getInstance(IIIFPresentationService.class);
         assertNotNull("Failed to inject IIIF Service.", service);
 
         IIIFPresentationServlet servlet = injector.getInstance(IIIFPresentationServlet.class);
         assertNotNull("Failed to inject IIIF Servlet.", servlet);
+
+        StaticResourceRequestFormatter staticFormatter = injector.getInstance(StaticResourceRequestFormatter.class);
+        assertNotNull("Failed to inject Static Resource Request Formatter", staticFormatter);
     }
 }

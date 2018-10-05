@@ -6,6 +6,8 @@ import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookImageLocation;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +24,10 @@ public class StoreImplRenameImagesTest extends BaseArchiveTest {
     @Before
     public void setup() throws IOException {
         errors = new ArrayList<>();
+
+        // Remove already existing filemap
+        ByteStreamGroup folgers = base.getByteStreamGroup(VALID_COLLECTION).getByteStreamGroup(VALID_BOOK_FOLGERSHA2);
+        Files.deleteIfExists(Paths.get(folgers.resolveName("filemap.csv")));
     }
 
     /**

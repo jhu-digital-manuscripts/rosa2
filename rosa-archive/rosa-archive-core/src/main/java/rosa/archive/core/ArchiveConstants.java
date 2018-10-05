@@ -27,6 +27,8 @@ public interface ArchiveConstants {
     String CROP = ".crop.txt";
 
     String IMAGES = ".images.csv";
+    
+    String METADATA = ".metadata.xml";
 
     String IMAGES_CROP = ".images.crop.csv";
 
@@ -75,6 +77,8 @@ public interface ArchiveConstants {
     String CROPPED_DIR = "cropped";
 
     String MISSING_PREFIX = "*";
+
+    String GENERATED_PREFIX = "##";
 
     // AoR Specific
 

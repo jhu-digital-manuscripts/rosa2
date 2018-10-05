@@ -3,31 +3,26 @@ package rosa.iiif.presentation.core.transform.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.google.inject.Inject;
-import com.google.inject.name.Named;
-
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.ImageList;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.transform.Transformer;
+import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFNames;
 import rosa.iiif.presentation.model.Sequence;
 import rosa.iiif.presentation.model.ViewingDirection;
 
-public class SequenceTransformer extends BasePresentationTransformer implements Transformer<Sequence> {
+public class SequenceTransformer implements TransformerConstants {
     private CanvasTransformer canvasTransformer;
-
-    @Inject
-    public SequenceTransformer(@Named("formatter.presentation") IIIFPresentationRequestFormatter presRequestFormatter, CanvasTransformer canvasTransformer) {
-        super(presRequestFormatter);
+    private final PresentationUris pres_uris;
+    
+    public SequenceTransformer(PresentationUris pres_uris, CanvasTransformer canvasTransformer) {
+        this.pres_uris = pres_uris;
         this.canvasTransformer = canvasTransformer;
     }
 
-    @Override
     public Sequence transform(BookCollection collection, Book book, String name) {
         // Default to cropped images
         ImageList images = book.getCroppedImages();
@@ -41,10 +36,6 @@ public class SequenceTransformer extends BasePresentationTransformer implements 
         return buildSequence(collection, book, name, images, cropped);
     }
 
-    @Override
-    public Class<Sequence> getType() {
-        return Sequence.class;
-    }
 
     /**
      * Transform an archive image list into a IIIF sequence.

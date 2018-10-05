@@ -51,12 +51,12 @@ public class GraphHtmlAdapter extends AnnotationBaseHtmlAdapter<Graph> {
             add(notesTr, gt.getTranslations(), ", ");
         }
 
-        writer.writeStartElement("p");
+        writer.writeStartElement(ANNOTATION_ELEMENT);
 
         assembleLocationIcon(orientation(annotation.getOrientation()), new Location[] { annotation.getLocation() }, writer);
 
-        writer.writeStartElement("p");      // Nodes
-        addSimpleElement(writer, "span", "Nodes: ", "class", "emphasize");
+        writer.writeStartElement(TRANSCRIPTION_ELEMENT);      // Nodes
+        addSimpleElement(writer, GRAPH_NODE_ELEMENT, NODES_LABEL, CSS_CLASS, CSS_CLASS_EMPHASIZE);
         for (int i = 0; i < annotation.getNodes().size(); i++) {
             if (i > 0) {
                 writer.writeEmptyElement("br");
@@ -75,12 +75,12 @@ public class GraphHtmlAdapter extends AnnotationBaseHtmlAdapter<Graph> {
         }
         writer.writeEndElement();
 
-        addListOfValues("Notes:", notes.toString(), writer);
-        addListOfValues("Notes (translated):", notesTr.toString(), writer);
-        addSearchableList("People:", people, JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
-        addListOfValues("Books:", books, writer);
-        addListOfValues("Locations:", locs, writer);
-        addListOfValues("Symbols:", symbols, writer);
+        addListOfValues(NOTES_LABEL, notes.toString(), writer);
+        addListOfValues(NOTES_TRANS_LABEL, notesTr.toString(), writer);
+        addSearchableList(PEOPLE_LABEL, people, JHSearchField.PEOPLE, pres_uris.getCollectionURI(col.getId()), writer);
+        addListOfValues(BOOKS_LABEL, books, writer);
+        addListOfValues(LOCATIONS_LABEL, locs, writer);
+        addListOfValues(SYMBOLS_LABEL, symbols, writer);
 
         addInternalRefs(col, annotation, annotation.getInternalRefs(), writer);
 

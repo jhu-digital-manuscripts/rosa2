@@ -1,7 +1,10 @@
 package rosa.archive.tool;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
@@ -26,6 +29,7 @@ import rosa.archive.core.serialize.SerializerSet;
 import rosa.archive.tool.config.Command;
 import rosa.archive.tool.config.Flag;
 import rosa.archive.tool.config.ToolConfig;
+import rosa.archive.tool.derivative.AbstractDerivative;
 import rosa.archive.tool.derivative.BookDerivative;
 import rosa.archive.tool.derivative.CollectionDerivative;
 import rosa.archive.tool.derivative.CropDerivative;
@@ -39,6 +43,7 @@ public class ArchiveTool {
     private final PrintStream report;
     private AORTranscriptionChecker aorTranscriptionChecker;
     private AORIdMapper idMapper;
+    private ImageListDecorator imageListDecorator;
 
     public ArchiveTool(Store store, ToolConfig config) {
         this(store, config, System.out);
@@ -144,6 +149,8 @@ public class ArchiveTool {
         case GENERATE_TEI:
             // No options
             break;
+        case DECORATE_IMAGE_LIST:
+            break;
         default:
             break;
         }
@@ -175,6 +182,7 @@ public class ArchiveTool {
         ArchiveTool tool = new ArchiveTool(store, config);
         tool.aorTranscriptionChecker = injector.getInstance(AORTranscriptionChecker.class);
         tool.idMapper = new AORIdMapper(base, tool.report);
+        tool.imageListDecorator = new ImageListDecorator(store, base, tool.report);
 
         tool.run(cmdline, cmd);
     }
@@ -182,6 +190,16 @@ public class ArchiveTool {
     private void run(CommandLine cmdline, Command cmd) throws IOException {
         String[] args = cmdline.getArgs();
 
+        if (cmd == Command.RENAME_FILES) {
+            if (args.length == 3) {
+                AbstractDerivative.renameFiles(new File(args[1]), new File(args[2]));    
+            } else {
+                System.err.println("Must pass directory and filemap arguments");
+            }
+            
+            return;
+        }
+        
         switch (args.length) {
         case 1:
             for (String collection : store.listBookCollections()) {
@@ -247,6 +265,13 @@ public class ArchiveTool {
         case MIGRATE_TEI_METADATA:
             TEIDescriptionConverter.run(cmdline, config, report);
             break;
+        case DECORATE_IMAGE_LIST:
+            imageListDecorator.run(args[1], args[2]);
+            break;
+        default:
+            System.out.println("Command not supported on book");
+            System.out.println(genericUsage());
+            break;
         }
     }
     
@@ -259,7 +284,7 @@ public class ArchiveTool {
             cols = store.listBookCollections();
         } else {
             cols = new String[] {args[1]};
-        }
+        }        
 
         for (String col : cols) {
             CollectionDerivative deriv = new CollectionDerivative(col, report, store);
@@ -280,14 +305,8 @@ public class ArchiveTool {
                 CropDerivative cd = new CropDerivative(col, report, store);
                 cd.cropImages(has_option(cmdline, Flag.FORCE));
                 break;
-            case FILE_MAP:
-                System.err.println("Cannot generate file map for collections, a book must be specified.");
-                break;
             case VALIDATE_XML:
                 deriv.validateXml();
-                break;
-            case RENAME_IMAGES:
-                deriv.renameImages(has_option(cmdline, Flag.CHANGE_ID), has_option(cmdline, Flag.REVERSE));
                 break;
             case CHECK_AOR:
                 String sheet_dir = cmdline.getOptionValue(Flag.SPREADSHEET_DIR.longName(), null);
@@ -299,10 +318,21 @@ public class ArchiveTool {
             case GENERATE_ANNOTATION_MAP:
                 idMapper.run(args[1]);
                 break;
+            case DECORATE_IMAGE_LIST:
+                imageListDecorator.run(args[1], null);
+                break;
             default:
+                System.out.println("Command not supported on collection");
+                System.out.println(genericUsage());
                 break;
             }
         }
+    }
+
+    private String genericUsage() {
+        return "Valid commands: [" +
+                Arrays.stream(Command.values()).map(Command::display).collect(Collectors.joining(", ")) +
+                "]";
     }
 
     private boolean has_option(CommandLine cmdline, Flag flag) {

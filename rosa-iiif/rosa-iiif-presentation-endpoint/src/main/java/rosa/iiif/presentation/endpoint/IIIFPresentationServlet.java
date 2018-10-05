@@ -187,19 +187,14 @@ public class IIIFPresentationServlet extends HttpServlet {
                 }
             }
         } else {
-            // Check if request follows recommended URI pattern
+            // Check if request follows required URI pattern
 
             PresentationRequest presreq = parser.parsePresentationRequest(raw_path);
-            String uri = req.getRequestURL().toString();
-
+            
             if (presreq == null) {
-                if (!service.handle_request(uri, os)) {
-                    send_error(resp, HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + uri);
-                }
-            } else {
-                if (!service.handle_request(presreq, os)) {
-                    send_error(resp, HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + uri);
-                }
+                send_error(resp, HttpURLConnection.HTTP_BAD_REQUEST, "Malformed request: " + req.getRequestURL());
+            } else if (!service.handle_request(presreq, os)) {
+                send_error(resp, HttpURLConnection.HTTP_NOT_FOUND, "No such object: " + req.getRequestURL());
             }
         }
 

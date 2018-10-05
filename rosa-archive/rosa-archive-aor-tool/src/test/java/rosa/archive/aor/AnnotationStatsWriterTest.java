@@ -51,7 +51,7 @@ public class AnnotationStatsWriterTest {
 	}
 	
 	private long count_person(List<AnnotationStats> stats, String person) {
-		return stats.stream().filter(as -> as.marginalia_people  != null && as.marginalia_people.contains(person)).count();
+		return stats.stream().filter(as -> as.people != null && as.people.contains(person)).count();
 	}
 	
 	private long count_lang(List<AnnotationStats> stats, String lang) {
@@ -59,7 +59,7 @@ public class AnnotationStatsWriterTest {
 	}
 	
 	private long count_place(List<AnnotationStats> stats, String place) {
-		return stats.stream().filter(as -> as.marginalia_places  != null && as.marginalia_places.contains(place)).count();
+		return stats.stream().filter(as -> as.places != null && as.places.contains(place)).count();
 	}
 	
 	private long count_method(List<AnnotationStats> stats, String method) {

@@ -99,7 +99,10 @@ public class AnnotatedPage implements HasId, Serializable {
     // TODO Cannot have stream because no support in GWT yet
     public Stream<? extends Annotation> stream() {
     	return Stream.of(marginalia.stream(), marks.stream(), symbols.stream(), underlines.stream(), numerals.stream(),
-    				errata.stream(), drawings.stream()).reduce(Stream::concat).orElseGet(Stream::empty);
+    				errata.stream(), drawings.stream(), calculations.stream(), graphs.stream(), tables.stream(),
+                    links.stream())
+                .reduce(Stream::concat)
+                .orElseGet(Stream::empty);
     }
 
     // Do we have a guarantee that ID is unique?

@@ -2,6 +2,7 @@ package rosa.archive.tool;
 
 import org.apache.commons.cli.CommandLine;
 import rosa.archive.core.serialize.DeprecatedBookMetadataSerializer;
+import rosa.archive.core.ArchiveConstants;
 import rosa.archive.core.serialize.BookMetadataSerializer;
 import rosa.archive.model.DeprecatedBookMetadata;
 import rosa.archive.model.BiblioData;
@@ -23,7 +24,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 /**
- * Convert TEI descriptions to our custom xml book metadata description.
+ * Convert TEI descriptions to our custom xml book metadata.
  * The TEI descriptions are left untouched.
  */
 public class TEIDescriptionConverter {
@@ -90,7 +91,7 @@ public class TEIDescriptionConverter {
             report.printf("[ERROR] Failed to read book. (%s:%s)\n", colPath.getFileName().toAbsolutePath(), bookName);
         }
 
-        Path newDescriptionPath = bookPath.resolve(bookName + ".description.xml");
+        Path newDescriptionPath = bookPath.resolve(bookName + ArchiveConstants.METADATA);
         writeOutput(mm, newDescriptionPath, report);
     }
 

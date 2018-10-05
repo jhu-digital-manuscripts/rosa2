@@ -87,7 +87,9 @@ interface JHSearchFieldProperties {
     			"it", "Italian", 
     			"el", "Greek", 
     			"la", "Latin", 
-    			"fr", "French"
+    			"fr", "French",
+    			"de", "German",
+    			"iw", "Hebrew"
     };
     String MARG_LANGUAGE_LABEL = "Marginalia language";
     String MARG_LANGUAGE_DESCRIPTION = "Marginalia text in a single language.";
