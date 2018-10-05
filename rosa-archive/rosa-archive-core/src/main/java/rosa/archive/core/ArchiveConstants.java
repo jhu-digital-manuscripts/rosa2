@@ -78,6 +78,8 @@ public interface ArchiveConstants {
 
     String MISSING_PREFIX = "*";
 
+    String GENERATED_PREFIX = "##";
+
     // AoR Specific
 
     String PEOPLE = "people.csv";
