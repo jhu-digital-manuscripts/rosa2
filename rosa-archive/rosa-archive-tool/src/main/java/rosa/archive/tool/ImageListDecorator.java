@@ -63,7 +63,7 @@ public class ImageListDecorator {
         try {
             BookCollection col = store.loadBookCollection(collection, errors);
 
-            if (col == null || errors.size() > 0) {
+            if (col == null) {
                 report.println("Failed to load collection. [" + collection + "]");
                 errors.forEach(error -> report.println("  > " + error));
                 return;
