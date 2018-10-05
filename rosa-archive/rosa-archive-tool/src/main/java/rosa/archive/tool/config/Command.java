@@ -18,7 +18,8 @@ public enum Command {
     GENERATE_TEI("generate-tei"),
     CHECK_AOR("check-aor"),
     GENERATE_ANNOTATION_MAP("generate-annotation-map"),
-    MIGRATE_TEI_METADATA("migrate-tei-metadata");
+    MIGRATE_TEI_METADATA("migrate-tei-metadata"),
+    DECORATE_IMAGE_LIST("decorate-image-list");
 
     private String display;
 

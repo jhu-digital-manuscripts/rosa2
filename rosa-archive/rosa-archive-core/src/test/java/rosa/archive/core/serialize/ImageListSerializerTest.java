@@ -65,7 +65,7 @@ public class ImageListSerializerTest extends BaseSerializerTest<ImageList> {
 
         assertNotNull(lines);
         assertEquals(10, lines.size());
-        assertTrue(lines.contains("*LudwigXV7.binding.backcover.tif,109,209"));
+        assertTrue(lines.contains("*LudwigXV7.binding.backcover.tif,109,209,binding back cover"));
     }
 
     @Override

@@ -208,7 +208,9 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
 
     private BookImage getPageImage(ImageList images, String page) {
         for (BookImage image : images) {
-            if (image.getName().equals(page) || image.getId().equals(page)) {
+            // To account for an image getting its name from the Image List
+            if (image.getName().equals(page) || nameParser.shortName(image.getId()).equals(page) ||
+                    image.getId().equals(page)) {
                 return image;
             }
         }

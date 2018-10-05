@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 import rosa.archive.core.serialize.ImageListSerializer;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BookImage;
-import rosa.archive.model.HasId;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.Annotation;
@@ -33,7 +32,7 @@ import rosa.archive.model.aor.PhysicalLink;
 import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Table;
-import rosa.archive.model.aor.TableRow;
+import rosa.archive.model.aor.TableHeader;
 import rosa.archive.model.aor.Underline;
 
 // TODO Rewrite to use archive infrastructure
@@ -289,7 +288,7 @@ public class AnnotationStatsWriter {
 		result.translation = t.getTranslation();
 
 		Set<String> hands = new HashSet<>();
-		Set<String> texts = t.getRows().stream().map(TableRow::getHeaderLabel).collect(Collectors.toSet());
+		Set<String> texts = t.getColHeaders().stream().map(TableHeader::getHeaderLabel).collect(Collectors.toSet());
 		Set<String> langs = new HashSet<>();
 
 		t.getCells().forEach(c -> {
