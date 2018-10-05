@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
@@ -48,11 +47,13 @@ public class ImageListSerializer implements Serializer<ImageList> {
     public void write(ImageList imageList, OutputStream out) throws IOException {
         List<BookImage> images = imageList.getImages();
 
-        Collections.sort(images, BookImageComparator.instance());
+        images.sort(BookImageComparator.instance());
 
         for (BookImage image : imageList) {
+            boolean hasLabel = image.getName() != null && !image.getName().isEmpty();
             String line = image.isMissing() ? MISSING_PREFIX : "";
-            line += image.getId() + "," + image.getWidth() + "," + image.getHeight() + System.lineSeparator();
+            line += image.getId() + "," + image.getWidth() + "," + image.getHeight() +
+                    (hasLabel ? "," + image.getName() : "") + System.lineSeparator();
             IOUtils.write(line, out, UTF_8);
         }
     }
@@ -95,6 +96,14 @@ public class ImageListSerializer implements Serializer<ImageList> {
         }
         image.setWidth(width);
         image.setHeight(height);
+
+        if (csvRow.length > 3) {
+            String label = csvRow[3];
+
+            if (!label.isEmpty()) {
+                image.setName(label);
+            }
+        }
 
         return image;
     }

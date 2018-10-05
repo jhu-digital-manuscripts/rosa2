@@ -3,6 +3,8 @@ package rosa.archive.tool;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
@@ -41,6 +43,7 @@ public class ArchiveTool {
     private final PrintStream report;
     private AORTranscriptionChecker aorTranscriptionChecker;
     private AORIdMapper idMapper;
+    private ImageListDecorator imageListDecorator;
 
     public ArchiveTool(Store store, ToolConfig config) {
         this(store, config, System.out);
@@ -146,6 +149,8 @@ public class ArchiveTool {
         case GENERATE_TEI:
             // No options
             break;
+        case DECORATE_IMAGE_LIST:
+            break;
         default:
             break;
         }
@@ -177,6 +182,7 @@ public class ArchiveTool {
         ArchiveTool tool = new ArchiveTool(store, config);
         tool.aorTranscriptionChecker = injector.getInstance(AORTranscriptionChecker.class);
         tool.idMapper = new AORIdMapper(base, tool.report);
+        tool.imageListDecorator = new ImageListDecorator(store, base, tool.report);
 
         tool.run(cmdline, cmd);
     }
@@ -259,8 +265,12 @@ public class ArchiveTool {
         case MIGRATE_TEI_METADATA:
             TEIDescriptionConverter.run(cmdline, config, report);
             break;
+        case DECORATE_IMAGE_LIST:
+            imageListDecorator.run(args[1], args[2]);
+            break;
         default:
-            System.err.println("Command not supported on book");
+            System.out.println("Command not supported on book");
+            System.out.println(genericUsage());
             break;
         }
     }
@@ -308,13 +318,23 @@ public class ArchiveTool {
             case GENERATE_ANNOTATION_MAP:
                 idMapper.run(args[1]);
                 break;
+            case DECORATE_IMAGE_LIST:
+                imageListDecorator.run(args[1], null);
+                break;
             default:
-                System.err.println("Command not supported on collection");
+                System.out.println("Command not supported on collection");
+                System.out.println(genericUsage());
                 break;
             }
         }
     }
-    
+
+    private String genericUsage() {
+        return "Valid commands: [" +
+                Arrays.stream(Command.values()).map(Command::display).collect(Collectors.joining(", ")) +
+                "]";
+    }
+
     private boolean has_option(CommandLine cmdline, Flag flag) {
         return cmdline.hasOption(flag.longName()) || cmdline.hasOption(flag.shortName());
     }
