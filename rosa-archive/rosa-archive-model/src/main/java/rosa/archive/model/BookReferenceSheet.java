@@ -95,7 +95,9 @@ public final class BookReferenceSheet extends ReferenceSheet implements HasId, S
         Map<String, String> map = new HashMap<>();
         for (int i = 8; i < line.size(); i++) {
             Link l = Link.getFromIndex(i);
-            if (l != null) {
+            String val = line.get(i);
+
+            if (l != null && (val != null && !val.isEmpty())) {
                 map.put(l.label, line.get(i));
             }
         }

@@ -3,9 +3,11 @@ package rosa.iiif.presentation.core.transform.impl;
 import java.io.ByteArrayOutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Stream;
 
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
@@ -19,6 +21,7 @@ import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTitles;
@@ -30,6 +33,8 @@ import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.Table;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.extras.BookReferenceResourceDb;
+import rosa.iiif.presentation.core.extras.ExternalResourceDb;
 import rosa.iiif.presentation.core.extras.ISNIResourceDb;
 import rosa.iiif.presentation.core.html.AdapterSet;
 import rosa.iiif.presentation.core.util.AnnotationLocationUtil;
@@ -46,11 +51,26 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
     private final AdapterSet htmlAdapters;
     private ISNIResourceDb isni_db;
 
+    private BookReferenceResourceDb[] bookReferenceResourceDbs;
+
     public AnnotationTransformer(PresentationUris pres_uris,
                                  ArchiveNameParser nameParser, AdapterSet htmlAdapters) {
         this.pres_uris = pres_uris;
         this.nameParser = nameParser;
         this.htmlAdapters = htmlAdapters;
+    }
+
+    private void setExternalDbs(BookCollection collection) {
+        if (isni_db == null) {
+            isni_db = new ISNIResourceDb(collection);
+        } else {
+            isni_db.setCollection(collection);
+        }
+
+        List<BookReferenceResourceDb> bookDbs = new ArrayList<>();
+        Arrays.stream(BookReferenceSheet.Link.values()).forEach(link ->
+                bookDbs.add(new BookReferenceResourceDb(link, collection.getBooksRef())));
+        this.bookReferenceResourceDbs = bookDbs.toArray(new BookReferenceResourceDb[0]);
     }
 
     public Annotation transform(BookCollection collection, Book book, String name) {
@@ -70,11 +90,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
     }
 
     private Annotation adaptAnnotation(BookCollection collection, Book book, rosa.archive.model.aor.Annotation anno, BookImage image) {
-        if (isni_db == null) {
-            isni_db = new ISNIResourceDb(collection);
-        } else {
-            isni_db.setCollection(collection);
-        }
+        setExternalDbs(collection);
         if (anno == null) {
             return null;
         }
@@ -91,15 +107,16 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
 
         String text = locationIcon + " " + anno.toPrettyString();
         if (anno instanceof Marginalia) {
-            text = htmlAdapters.get(Marginalia.class).adapt(collection, book, image, (Marginalia) anno, isni_db);
+            text = htmlAdapters.get(Marginalia.class).adapt(collection, book, image, (Marginalia) anno,
+                    Stream.concat(Stream.of(isni_db), Stream.of(bookReferenceResourceDbs)).toArray(ExternalResourceDb[]::new));
         } else if (anno instanceof Drawing) {
-            text = htmlAdapters.get(Drawing.class).adapt(collection, book, image, (Drawing) anno);
+            text = htmlAdapters.get(Drawing.class).adapt(collection, book, image, (Drawing) anno, bookReferenceResourceDbs);
         } else if (anno instanceof Table) {
-            text = htmlAdapters.get(Table.class).adapt(collection, book, image, (Table) anno);
+            text = htmlAdapters.get(Table.class).adapt(collection, book, image, (Table) anno, bookReferenceResourceDbs);
         } else if (anno instanceof Graph) {
-            text = htmlAdapters.get(Graph.class).adapt(collection, book, image, (Graph) anno);
+            text = htmlAdapters.get(Graph.class).adapt(collection, book, image, (Graph) anno, bookReferenceResourceDbs);
         } else if (anno instanceof Calculation) {
-            text = htmlAdapters.get(Calculation.class).adapt(collection, book, image, (Calculation) anno);
+            text = htmlAdapters.get(Calculation.class).adapt(collection, book, image, (Calculation) anno, bookReferenceResourceDbs);
         }
 
         a.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html", text, language));
