@@ -2,19 +2,31 @@ package rosa.iiif.presentation.core.html;
 
 import org.junit.Before;
 import org.junit.Test;
+import rosa.archive.core.ArchiveNameParser;
+import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
+import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
+import rosa.archive.model.BookReferenceSheet;
+import rosa.archive.model.BookReferenceSheet.Link;
+import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.AorLocation;
 import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.ReferenceTarget;
+import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationTestUtils;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
+import rosa.iiif.presentation.core.extras.BookReferenceResourceDb;
+import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
 
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamWriter;
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -324,5 +336,59 @@ public class MarginaliaHtmlAdapterTest {
         String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(r1));
 //        assertEquals(expected, result);
         assertEquals(transcription, result);
+    }
+
+    @Test
+    public void moo() throws Exception {
+        String data = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+                "<!DOCTYPE transcription SYSTEM \"http://www.livesandletters.ac.uk/schema/aor_20141023.dtd\">\n" +
+                "<transcription xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd\">\n" +
+                "    <page filename=\"BLC120b4.016r.tif\" pagination=\"16\" reader=\"John Dee\"/>\n" +
+                "    <annotation>\n" +
+                "        <marginalia hand=\"Italian\" method=\"pen\">\n" +
+                "            <language ident=\"EN\">\n" +
+                "                <position place=\"tail\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>&Sun; - 1/2</marginalia_text>\n" +        // Entity here :: &Sun;  -->   ☉
+                "                    <symbol_in_text name=\"Sun\"/>\n" +                        //   - Defined only in DTD
+                "                </position>\n" +
+                "            </language>\n" +
+                "        </marginalia>\n" +
+                "        <marginalia hand=\"Italian\" anchor_text=\"Adum&aacute;\" method=\"pen\">\n" +         // á
+                "            <language ident=\"LA\">\n" +
+                "                <position place=\"right_margin\" book_orientation=\"0\">\n" +
+                "                    <marginalia_text>\n" +
+                "                        Nota quod dicat Adum&aacute;, tantu[m], no[n] adiecta particula illa Voarch[adumia]:\n" +
+                "                    </marginalia_text>\n" +
+                "                    <person name=\"Adum&aacute;\"/>\n" +
+                "                    <book title=\"Voarchadumia\"/>\n" +
+                "                    <book title=\"Tragoedia\"/>\n" +
+                "                </position>\n" +
+                "            </language>\n" +
+                "            <translation>Note what Aduma says, only that particular was not aimed at Voarchadumia:</translation>\n" +
+                "        </marginalia>\n" +
+                "    </annotation>\n" +
+                "</transcription>";
+
+        BookCollection col = new BookCollection();
+        col.setId("Moo");
+        BookReferenceSheet sheet = new BookReferenceSheet();
+        sheet.setLines(Collections.singletonList("Tragoedia,,,,,,Lucian,,,,,http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2008.01.0437,,,,,,,,,,,,"));
+        col.setBooksRef(sheet);
+
+        Book book = new Book();
+        book.setId("The Greatest Moo");
+
+        BookImage img = new BookImage("FirstMoo", 3, 3, false);
+
+        AORAnnotatedPageSerializer serializer = new AORAnnotatedPageSerializer();
+        List<String> errors = new ArrayList<>();
+        ByteArrayInputStream in = new ByteArrayInputStream(data.getBytes("UTF-8"));
+
+        AnnotatedPage loadedPage = serializer.read(in, errors);
+
+        Marginalia m = loadedPage.getMarginalia().get(1);
+        String result = adapter.adapt(col, book, img, m, new BookReferenceResourceDb(Link.PERSEUS, col.getBooksRef()));
+
+        assertTrue(result.contains("data-Perseus=\"http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2008.01.0437\""));
     }
 }

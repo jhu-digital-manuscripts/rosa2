@@ -30,6 +30,15 @@ public class BookReferenceSerializerTest extends BaseSerializerTest<BookReferenc
         assertTrue("Errors found while loading book sheet.", errors.isEmpty());
 
         assertFalse("Book reference sheet has no books.", sheet.getKeys().isEmpty());
+
+        assertTrue(sheet.getKeys().stream().map(sheet::getExternalLinks)
+                .anyMatch(map -> map != null && !map.isEmpty()));
+
+        sheet.getKeys().stream().map(sheet::getExternalLinks).forEach(map -> {
+            if (map != null) {
+                map.forEach((key, val) -> assertFalse(val.isEmpty()));
+            }
+        });
     }
 
     @Override

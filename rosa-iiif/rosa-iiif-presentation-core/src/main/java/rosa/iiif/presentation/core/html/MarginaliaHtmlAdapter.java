@@ -12,6 +12,7 @@ import rosa.archive.model.aor.MarginaliaLanguage;
 import rosa.archive.model.aor.Position;
 import rosa.archive.model.aor.XRef;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.extras.BookReferenceResourceDb;
 import rosa.iiif.presentation.core.extras.ISNIResourceDb;
 import rosa.iiif.presentation.core.jhsearch.JHSearchField;
 
@@ -106,7 +107,7 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
         addListOfValues(SYMBOLS_LABEL, symb, writer);
 
         addSearchableList(PEOPLE_LABEL, people, JHSearchField.PEOPLE, COLLECTION_URI, writer, ISNIResourceDb.class);
-        addSearchableList(BOOKS_LABEL, books, JHSearchField.BOOK, COLLECTION_URI, writer);
+        addSearchableList(BOOKS_LABEL, books, JHSearchField.BOOK, COLLECTION_URI, writer, BookReferenceResourceDb.class);
         addSearchableList(LOCATIONS_LABEL, locs, JHSearchField.PLACE, COLLECTION_URI, writer);
 
         // Add list of X-refs
