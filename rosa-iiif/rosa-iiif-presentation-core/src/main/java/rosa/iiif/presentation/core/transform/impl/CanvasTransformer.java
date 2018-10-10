@@ -2,6 +2,7 @@ package rosa.iiif.presentation.core.transform.impl;
 
 import java.util.Collections;
 
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -20,9 +21,11 @@ import rosa.iiif.presentation.model.annotation.AnnotationTarget;
 
 public class CanvasTransformer implements TransformerConstants {
     private final PresentationUris pres_uris;
+    private final ArchiveNameParser nameParser;
     
     public CanvasTransformer(PresentationUris pres_uris) {
         this.pres_uris = pres_uris;
+        this.nameParser = new ArchiveNameParser();
     }
 
     /**
@@ -37,7 +40,7 @@ public class CanvasTransformer implements TransformerConstants {
             return null;
         }
         Canvas canvas = new Canvas();
-        canvas.setId(pres_uris.getCanvasURI(collection.getId(), book.getId(), image.getName()));
+        canvas.setId(pres_uris.getCanvasURI(collection.getId(), book.getId(), nameParser.shortName(image.getId())));
         canvas.setType(SC_CANVAS);
 
         /*
