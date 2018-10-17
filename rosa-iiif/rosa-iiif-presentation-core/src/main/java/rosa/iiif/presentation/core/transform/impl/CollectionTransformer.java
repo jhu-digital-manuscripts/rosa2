@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -27,17 +28,19 @@ import rosa.iiif.presentation.model.TextValue;
 import rosa.iiif.presentation.model.Within;
 
 public class CollectionTransformer implements TransformerConstants {
-//    public static final String TOP_COLLECTION_LABEL = "All JHU IIIF Collections";
-//    public static final String TOP_COLLECTION_NAME = "top";
-    private static final String LANGUAGE_DEFAULT = "en";
+    //    public static final String TOP_COLLECTION_LABEL = "All JHU IIIF Collections";
+    //    public static final String TOP_COLLECTION_NAME = "top";
     private static final int MAX_THUMBNAILS = 3;
+    private static final String LANGUAGE_DEFAULT = "en";
 
+    private final ArchiveNameParser nameParser;
     private final IIIFPresentationCache cache;
     private final PresentationUris pres_uris;
 
     public CollectionTransformer(IIIFPresentationCache cache, PresentationUris pres_uris) {
         this.cache = cache;
         this.pres_uris = pres_uris;
+        this.nameParser = new ArchiveNameParser();
     }
 
     public Collection collection(BookCollection collection) {
@@ -208,7 +211,7 @@ public class CollectionTransformer implements TransformerConstants {
                         new IIIFImageService(IIIF_IMAGE_CONTEXT, id, IIIF_IMAGE_PROFILE_LEVEL2,
                                 image.getWidth(), image.getHeight(), -1, -1, null)
                 );
-                thumb.setDepicts(pres_uris.getCanvasURI(collection.getId(), book.getId(), image.getName()));
+                thumb.setDepicts(pres_uris.getCanvasURI(collection.getId(), book.getId(), nameParser.shortName(image.getId())));
 
                 list.add(thumb);
 
