@@ -2,6 +2,7 @@ package rosa.iiif.presentation.core.transform.impl;
 
 import java.util.List;
 
+import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
@@ -17,11 +18,13 @@ import rosa.iiif.presentation.model.annotation.Annotation;
 public class AnnotationListTransformer implements TransformerConstants {
     private final AnnotationTransformer annotationTransformer;
     private final PresentationUris pres_uris;
+    private final ArchiveNameParser nameParser;
     
     public AnnotationListTransformer(PresentationUris pres_uris,
                                      AnnotationTransformer annotationTransformer) {
         this.pres_uris = pres_uris;
         this.annotationTransformer = annotationTransformer;
+        this.nameParser = new ArchiveNameParser();
     }
 
     public AnnotationList transform(BookCollection collection, Book book, String name) {
@@ -75,7 +78,7 @@ public class AnnotationListTransformer implements TransformerConstants {
 
     private BookImage getPageImage(ImageList images, String page) {
         for (BookImage image : images) {
-            if (image.getName().equals(page)) {
+            if (nameParser.shortName(image.getId()).equals(page)) {
                 return image;
             }
         }
@@ -88,8 +91,7 @@ public class AnnotationListTransformer implements TransformerConstants {
         AnnotationList list = new AnnotationList();
 
         String label = annotationListName(image.getName(), listType.toString().toLowerCase());
-        list.setId(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), annotationListName(image.getName(),
-                listType.toString().toLowerCase())));
+        list.setId(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), nameParser.shortName(image.getId())));
         list.setType(SC_ANNOTATION_LIST);
         list.setDescription("Annotation list for " + listType.toString().toLowerCase() + " on page "
                 + image.getName(), "en");
