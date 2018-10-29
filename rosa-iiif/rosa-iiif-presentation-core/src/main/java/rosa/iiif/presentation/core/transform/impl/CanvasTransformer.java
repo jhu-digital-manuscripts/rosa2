@@ -169,7 +169,7 @@ public class CanvasTransformer implements TransformerConstants {
 
         Reference ref = new Reference();
 
-        String name = image.getName() + ".all";
+        String name = nameParser.shortName(image.getId()) + ".all";
         ref.setReference(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), name));
         ref.setLabel(new TextValue(name, "en"));
         ref.setType(SC_ANNOTATION_LIST);
