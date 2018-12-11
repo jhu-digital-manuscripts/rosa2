@@ -36,7 +36,7 @@ public class BookCheckerTest extends BaseArchiveTest {
         warnings.clear();
 
         boolean check = store.check(loadValidCollection(), loadValidLudwigXV7(), false, errors, warnings);
-
+        System.out.println(errors);
         assertTrue(check);
         assertTrue("There should be NO errors.", errors.isEmpty());
         assertTrue("Warnings list should be empty.", warnings.isEmpty());
