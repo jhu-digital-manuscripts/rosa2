@@ -2,10 +2,12 @@ package rosa.iiif.presentation.core.transform.impl;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.BiblioData;
@@ -14,6 +16,7 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.ObjectRef;
 import rosa.iiif.presentation.core.IIIFPresentationCache;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
@@ -128,27 +131,21 @@ public class CollectionTransformer implements TransformerConstants {
 
             map.put("pageCount", new HtmlValue(String.valueOf(b.getImages().getImages().size()), LANGUAGE_DEFAULT));
 
-            String[] auths = bd.getAuthors();
-            
-            if (auths != null && auths.length > 0) {
-                ref.addSortingTag("0" + auths[0]);
-            }
-            
-            String[] readers = bd.getReaders();
-            
-            if (readers != null && readers.length > 0) {
-                StringBuilder sb = new StringBuilder();
-                
-                for (int i = 0; i < readers.length; i++) {
-                    if (i > 0) {
-                        sb.append(" ");
-                    }
-                    sb.append(readers[i]);
+            Arrays.stream(bd.getAuthors()).map(auth -> "0" + auth.getName())
+                    .forEach(ref::addSortingTag);
+
+            for (int i = 0; i < bd.getReaders().length; i++) {
+                ObjectRef rd = bd.getReaders()[i];
+
+                String cnt;
+                if (hasContent(rd.getUri())) {
+                    cnt = "<a target=\"_blank\" href=\"" + rd.getUri() + "\">" + rd.getName() + "</a>";
+                } else {
+                    cnt = rd.getName();
                 }
-                
-                map.put("Reader", new HtmlValue(sb.toString(), LANGUAGE_DEFAULT));
+
+                map.put("Reader " + (i + 1), new HtmlValue(cnt, LANGUAGE_DEFAULT));
             }
-         
 
             map.put("Current Location", new HtmlValue(bd.getCurrentLocation(), "en"));
             map.put("Repository", new HtmlValue(bd.getRepository(), "en"));
@@ -159,6 +156,12 @@ public class CollectionTransformer implements TransformerConstants {
             }
             if (bd.getDateLabel() != null && !bd.getDateLabel().isEmpty()) {
                 map.put("Date", new HtmlValue(bd.getDateLabel(), "en"));
+            }
+            if (bd.getAorWebsite() != null && bd.getAorWebsite().length > 0) {
+                String sites = Arrays.stream(bd.getAorWebsite())
+                        .map(url -> "<a target=\"_blank\" href=\"" + url + "\">" + url + "</a>")
+                        .collect(Collectors.joining(", "));
+                map.put("AORWebsite", new HtmlValue(sites, "en"));
             }
 
             ref.setMetadata(map);
