@@ -12,6 +12,7 @@ import rosa.archive.core.util.XMLUtil;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
+import rosa.archive.model.ObjectRef;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -129,11 +130,14 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             valueElement("repository", data.getRepository(), bib, doc);
             valueElement("shelfmark", data.getShelfmark(), bib, doc);
 
-            for (String author : data.getAuthors()) {
-                valueElement("author", author, bib, doc);
+            for (ObjectRef author : data.getAuthors()) {
+                createObjectRefElement("author", author, bib, doc);
             }
-            for (String reader : data.getReaders()) {
-                valueElement("reader", reader, bib, doc);
+            for (ObjectRef reader : data.getReaders()) {
+                createObjectRefElement("reader", reader, bib, doc);
+            }
+            for (String uri : data.getAorWebsite()) {
+                valueElement("aorWebsite", uri, bib, doc);
             }
             for (String detail : data.getDetails()) {
                 valueElement("detail", detail, bib, doc);
@@ -144,6 +148,15 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
         }
 
         XMLUtil.write(doc, out, false);
+    }
+
+    private void createObjectRefElement(String elName, ObjectRef ref, Element parent, Document doc) {
+        Element el = doc.createElement(elName);
+
+        valueElement("name", ref.getName(), el, doc);
+        valueElement("id", ref.getUri(), el, doc);
+
+        parent.appendChild(el);
     }
 
     private BookMetadata buildMetadata(Document doc) {
@@ -229,14 +242,27 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             data.setShelfmark(text("shelfmark", el));
             data.setType(text("type", el));
             data.setDetails(getTextValues("detail", el).toArray(new String[0]));
-            data.setAuthors(getTextValues("author", el).toArray(new String[0]));
-            data.setReaders(getTextValues("reader", el).toArray(new String[0]));
+            data.setAuthors(getObjectRefs("author", el));
+            data.setReaders(getObjectRefs("reader", el));
+            data.setAorWebsite(getTextValues("aorWebsite", el).toArray(new String[0]));
             data.setNotes(getTextValues("note", el).toArray(new String[0]));
 
             map.put(lang, data);
         }
 
         return map;
+    }
+
+    private ObjectRef[] getObjectRefs(String elementName, Element parent) {
+        List<ObjectRef> objs = new ArrayList<>();
+
+        getElementsInList(elementName, parent).forEach(el ->
+            objs.add(new ObjectRef(
+                    text("name", el),
+                    text("id", el)
+            )));
+
+        return objs.toArray(new ObjectRef[0]);
     }
 
     private List<Element> getElementsInList(String elementName, Element parent) {

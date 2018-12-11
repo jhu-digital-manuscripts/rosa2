@@ -3,6 +3,7 @@ package rosa.iiif.presentation.core.jhsearch;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -32,6 +33,7 @@ import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
+import rosa.archive.model.ObjectRef;
 import rosa.archive.model.ReferenceSheet;
 import rosa.archive.model.Transcription;
 import rosa.archive.model.aor.AnnotatedPage;
@@ -208,7 +210,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         addFacet(doc, JHSearchCategory.NUM_ILLUS, quantize(numIlls, 10));
         addFacet(doc, JHSearchCategory.TYPE, facet_type);
 
-        for (String author : bd.getAuthors()) {
+        for (String author : Arrays.stream(bd.getAuthors()).map(ObjectRef::getName).collect(Collectors.toList())) {
             addFacet(doc, JHSearchCategory.AUTHOR, author);
         }
         
@@ -517,7 +519,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
         if (mm != null && mm.getBiblioDataMap() != null) {
             BiblioData data = mm.getBiblioDataMap().get("en");
             if (data.getAuthors() != null) {
-                for (String author : data.getAuthors()) {
+                for (String author : Arrays.stream(data.getAuthors()).map(ObjectRef::getName).collect(Collectors.toList())) {
                     addField(doc, JHSearchField.PEOPLE, author);
                 }
             }

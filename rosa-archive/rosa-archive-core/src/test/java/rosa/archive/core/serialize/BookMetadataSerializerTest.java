@@ -6,6 +6,7 @@ import org.junit.Test;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
+import rosa.archive.model.ObjectRef;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -67,8 +68,15 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
             "            <repository>Repository String</repository>\n" +
             "            <shelfmark>Shelfmark String</shelfmark>\n" +
             "            <detail>Bibliographic Details</detail>\n" +
-            "            <author>Author</author>\n" +
-            "            <reader>Moo Jones</reader>\n" +
+            "            <author>\n" +
+            "                <name>Author</name>\n" +
+            "                <id>https://example.com/authorial</id>\n" +
+            "            </author>\n" +
+            "            <reader>\n" +
+            "                <name>Moo Jones</name>\n" +
+            "                <id>https://example.com/reader/moo</id>\n" +
+            "            </reader>\n" +
+            "            <aorWebsite>https://example.com/aor</aorWebsite>\n" +
             "            <note>Note</note>\n" +
             "        </bibliography>\n" +
             "        <bibliography lang=\"fr\">\n" +
@@ -82,8 +90,15 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
             "            <repository>Repository String</repository>\n" +
             "            <shelfmark>Shelfmark String</shelfmark>\n" +
             "            <detail>Bibliographic Details</detail>\n" +
-            "            <author>Author</author>\n" +
-            "            <reader>Moo Jones</reader>\n" +
+            "            <author>\n" +
+            "                <name>Author</name>\n" +
+            "                <id>https://example.com/authorial</id>\n" +
+            "            </author>\n" +
+            "            <reader>\n" +
+            "                <name>Moo Jones</name>\n" +
+            "                <id>https://example.com/reader/moo</id>\n" +
+            "            </reader>\n" +
+            "            <aorWebsite>https://example.com/aor</aorWebsite>\n" +
             "        </bibliography>\n" +
             "    </bibliographies>\n" +
             "</book>";
@@ -126,8 +141,8 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         assertEquals("Bibliographic Details", biblio.getDetails()[0]);
         assertNotNull(biblio.getAuthors());
         assertEquals(1, biblio.getAuthors().length);
-        assertEquals("Author", biblio.getAuthors()[0]);
-        assertEquals("Moo Jones", biblio.getReaders()[0]);
+        assertEquals("Author", biblio.getAuthors()[0].getName());
+        assertEquals("Moo Jones", biblio.getReaders()[0].getName());
         assertNotNull(biblio.getNotes());
         assertEquals(0, biblio.getNotes().length);
 
@@ -276,8 +291,9 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         d2.setRepository("Repository String");
         d2.setShelfmark("Shelfmark String");
         d2.setDetails(new String[]{"Bibliographic Details"});
-        d2.setAuthors(new String[]{"Author"});
-        d2.setReaders(new String[]{"Moo Jones"});
+        d2.setAuthors(new ObjectRef[]{new ObjectRef("Author", "https://example.com/authorial")});
+        d2.setReaders(new ObjectRef[]{new ObjectRef("Moo Jones", "https://example.com/reader/moo")});
+        d2.setAorWebsite(new  String[] {"https://example.com/aor"});
         metadata.getBiblioDataMap().put("fr", d2);
 
         BiblioData d1 = new BiblioData();
@@ -292,8 +308,9 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         d1.setRepository("Repository String");
         d1.setShelfmark("Shelfmark String");
         d1.setDetails(new String[] {"Bibliographic Details"});
-        d1.setAuthors(new String[] {"Author"});
-        d1.setReaders(new String[]{"Moo Jones"});
+        d1.setAuthors(new ObjectRef[] {new ObjectRef("Author", "https://example.com/authorial")});
+        d1.setReaders(new ObjectRef[]{new ObjectRef("Moo Jones", "https://example.com/reader/moo")});
+        d1.setAorWebsite(new  String[] {"https://example.com/aor"});
         d1.setNotes(new String[] {"Note"});
         metadata.getBiblioDataMap().put("en", d1);
 

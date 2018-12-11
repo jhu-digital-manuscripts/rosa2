@@ -1,12 +1,15 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookMetadata;
+import rosa.archive.model.ObjectRef;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.HtmlValue;
@@ -154,6 +157,10 @@ public class ManifestTransformer implements TransformerConstants {
             putMetadata(KEY_READER, bd.getReaders(), lang, map);
             putMetadata(KEY_AUTHOR, bd.getAuthors(), lang, map);
 
+            String sites = Arrays.stream(bd.getAorWebsite())
+                    .map(url -> "<a target=\"_blank\" href=\"" + url + "\">" + url + "</a>")
+                    .collect(Collectors.joining(", "));
+            map.put("AORWebsite", new HtmlValue(sites, lang));
             // TODO book texts
         }
 
@@ -175,6 +182,33 @@ public class ManifestTransformer implements TransformerConstants {
     private void putMetadata(String key, String value, String lang, Map<String, HtmlValue> map) {
         if (value != null && !value.isEmpty()) {
             map.put(key, new HtmlValue(value, lang));
+        }
+    }
+
+    private void putMetadata(String key, ObjectRef[] value, String lang, Map<String, HtmlValue> map) {
+        if (value != null && value.length > 0) {
+            String cnt = Arrays.stream(value).map(this::stringify).collect(Collectors.joining(", "));
+            map.put(key, new HtmlValue(cnt, lang));
+        }
+    }
+
+//    private void putMetadata(String key, ObjectRef value, String lang, Map<String, HtmlValue> map) {
+//        if (value == null || value.getName() == null || value.getName().isEmpty()) {
+//            return;
+//        }
+//
+//        map.put(key, new HtmlValue(stringify(value), lang));
+//    }
+
+    private String stringify(ObjectRef obj) {
+        if (obj == null || obj.getName() == null || obj.getName().isEmpty()) {
+            return null;
+        }
+
+        if (obj.getUri() == null || obj.getUri().isEmpty()) {
+            return obj.getName();
+        } else {
+            return "<a target=\"_blank\" href=\"" + obj.getUri() + "\">" + obj.getName() + "</a>";
         }
     }
 }

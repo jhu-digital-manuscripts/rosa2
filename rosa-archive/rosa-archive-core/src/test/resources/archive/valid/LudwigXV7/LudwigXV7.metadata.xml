@@ -37,7 +37,10 @@
             <currentLocation>Los Angeles</currentLocation>
             <repository>J. Paul Getty Museum</repository>
             <shelfmark>Ludwig XV 7</shelfmark>
-            <author>Moo cow</author>	    
+            <author>
+                <name>Moo cow</name>
+                <id></id>
+            </author>
         </bibliography>
         <bibliography lang="fr">
             <title>Roman de la Rose</title>
