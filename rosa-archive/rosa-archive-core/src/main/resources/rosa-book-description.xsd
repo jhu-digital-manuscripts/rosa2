@@ -110,6 +110,7 @@
         <xs:element ref="repository"/>
         <xs:element minOccurs="0" ref="shelfmark"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="author"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="aorWebsite"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="detail"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="note"/>
       </xs:sequence>
@@ -130,7 +131,25 @@
   <xs:element name="shelfmark" type="xs:string"/>
   <xs:element name="material" type="xs:string"/>
   <xs:element name="type" type="xs:string"/>
-  <xs:element name="author" type="xs:string"/>
+  <xs:element name="author">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="id" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reader">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="id" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="detail" type="xs:string"/>
   <xs:element name="note" type="xs:string"/>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="id" type="xs:anyURI"/>
+  <xs:element name="aorWebsite" type="xs:anyURI"/>
 </xs:schema>

@@ -249,4 +249,13 @@ public class AORModelEqualsAndHashCodeTest {
                 .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
                 .verify();
     }
+
+    @Test
+    public void objectRefTest() {
+        EqualsVerifier
+                .forClass(ObjectRef.class)
+                .allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
+                .verify();
+    }
 }

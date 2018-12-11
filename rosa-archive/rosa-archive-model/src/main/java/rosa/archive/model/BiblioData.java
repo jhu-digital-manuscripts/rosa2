@@ -20,17 +20,18 @@ public class BiblioData implements Serializable {
     private String commonName;
     private String material;
     private String[] details;
-    private String[] authors;
+    private ObjectRef[] authors;
     private String[] notes;
-    private String[] readers;
+    private ObjectRef[] readers;
+    private String[] aorWebsite;
 
     private String language;
 
     public BiblioData() {
         details = new String[0];
-        authors = new String[0];
+        authors = new ObjectRef[0];
         notes = new String[0];
-        readers = new String[0];
+        readers = new ObjectRef[0];
     }
 
     public String getTitle() {
@@ -113,11 +114,11 @@ public class BiblioData implements Serializable {
         this.details = details;
     }
 
-    public String[] getAuthors() {
+    public ObjectRef[] getAuthors() {
         return authors;
     }
 
-    public void setAuthors(String[] authors) {
+    public void setAuthors(ObjectRef[] authors) {
         this.authors = authors;
     }
 
@@ -129,18 +130,26 @@ public class BiblioData implements Serializable {
         this.notes = notes;
     }
 
-    public String[] getReaders() {
+    public ObjectRef[] getReaders() {
         return readers;
     }
 
-    public void setReaders(String[] readers) {
+    public void setReaders(ObjectRef[] readers) {
         this.readers = readers;
+    }
+
+    public String[] getAorWebsite() {
+        return aorWebsite;
+    }
+
+    public void setAorWebsite(String[] aorWebsite) {
+        this.aorWebsite = aorWebsite;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof BiblioData)) return false;
         BiblioData that = (BiblioData) o;
         return Objects.equals(title, that.title) &&
                 Objects.equals(dateLabel, that.dateLabel) &&
@@ -155,17 +164,18 @@ public class BiblioData implements Serializable {
                 Arrays.equals(authors, that.authors) &&
                 Arrays.equals(notes, that.notes) &&
                 Arrays.equals(readers, that.readers) &&
+                Arrays.equals(aorWebsite, that.aorWebsite) &&
                 Objects.equals(language, that.language);
     }
 
     @Override
     public int hashCode() {
-
         int result = Objects.hash(title, dateLabel, currentLocation, repository, shelfmark, origin, type, commonName, material, language);
         result = 31 * result + Arrays.hashCode(details);
         result = 31 * result + Arrays.hashCode(authors);
         result = 31 * result + Arrays.hashCode(notes);
         result = 31 * result + Arrays.hashCode(readers);
+        result = 31 * result + Arrays.hashCode(aorWebsite);
         return result;
     }
 
@@ -185,6 +195,7 @@ public class BiblioData implements Serializable {
                 ", authors=" + Arrays.toString(authors) +
                 ", notes=" + Arrays.toString(notes) +
                 ", readers=" + Arrays.toString(readers) +
+                ", aorWebsite=" + Arrays.toString(aorWebsite) +
                 ", language='" + language + '\'' +
                 '}';
     }
