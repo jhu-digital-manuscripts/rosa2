@@ -1,7 +1,16 @@
 package rosa.iiif.presentation.core.transform.impl;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+
+import java.io.ByteArrayInputStream;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
+
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.BaseArchiveTest;
 import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
@@ -9,20 +18,13 @@ import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.Symbol;
 import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationTestUtils;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.model.annotation.Annotation;
-
-import java.io.ByteArrayInputStream;
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
 
 public class AnnotationTransformerTest extends BaseArchiveTest {
 
@@ -69,6 +71,7 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
                 "            </language>\n" +
                 "            <translation>Note what Aduma says, only that particular was not aimed at Voarchadumia:</translation>\n" +
                 "        </marginalia>\n" +
+                "        <symbol language=\"LA\" name=\"SS\" place=\"head\" text=\"Eccè principia istius Artis, in P. Gregorij Arte mirabili de militia: capite, de Excercitu classico.\"/>\n" + 
                 "    </annotation>\n" +
                 "</transcription>";
 
@@ -168,4 +171,16 @@ public class AnnotationTransformerTest extends BaseArchiveTest {
         assertFalse("Annotation text should not contain '[]'", text.contains("[]"));
     }
 
+    @Test
+    public void testSymbol() {
+        assertEquals(1, loadedPage.getSymbols().size());
+        
+        Symbol s = loadedPage.getSymbols().get(0);
+        Annotation a = transformer.transform(col, book, img, s);
+        String text = a.getDefaultSource().getEmbeddedText();
+
+        // Symbol should not include referenced text
+        System.err.println(text);
+        assertFalse(text.contains("mirabili"));
+    }
 }
