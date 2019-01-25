@@ -45,6 +45,7 @@
           <xs:enumeration value="Hieroglyphic_Monad"/>
           <xs:enumeration value="Jupiter"/>
           <xs:enumeration value="LL"/>
+          <xs:enumeration value="Locus_Fortunae"/>
           <xs:enumeration value="Mars"/>
           <xs:enumeration value="Mercury"/>
           <xs:enumeration value="Moon"/>
@@ -52,6 +53,7 @@
           <xs:enumeration value="Conjunction"/>
           <xs:enumeration value="Salt"/>
           <xs:enumeration value="Saturn"/>
+          <xs:enumeration value="Florilegium"/>
           <xs:enumeration value="Square"/>
           <xs:enumeration value="Trine"/>
           <xs:enumeration value="SS"/>
@@ -74,6 +76,8 @@
           <xs:enumeration value="South_Node"/>
           <xs:enumeration value="Sextile"/>
           <xs:enumeration value="Phi"/>
+          <xs:enumeration value="Simeiosi"/>
+          <xs:enumeration value="Unidentified"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -435,9 +439,11 @@
           <xs:enumeration value="horizontal_bar"/>
           <xs:enumeration value="page_break"/>
           <xs:enumeration value="pen_trial"/>
+          <xs:enumeration value="pin"/>
           <xs:enumeration value="plus_sign"/>
           <xs:enumeration value="quotation_mark"/>
           <xs:enumeration value="quattuorpunctus"/>
+          <xs:enumeration value="quattuorpunctus_with_tail"/>
           <xs:enumeration value="scribble"/>
           <xs:enumeration value="section_sign"/>
           <xs:enumeration value="semicolon"/>
@@ -454,6 +460,12 @@
           <xs:enumeration value="X_sign"/>
           <xs:enumeration value="dagger"/>
           <xs:enumeration value="quinquepunctus"/>
+          <xs:enumeration value="arrowhead"/>
+          <xs:enumeration value="Ichthys"/>
+          <xs:enumeration value="w_mark"/>
+          <xs:enumeration value="guillemet"/>
+          <xs:enumeration value="lightening_bolt"/>
+          <xs:enumeration value="hook"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -509,12 +521,14 @@
       <xs:simpleType>
         <xs:restriction base="xs:token">
           <xs:enumeration value="arrow"/>
+          <xs:enumeration value="atoms"/>
           <xs:enumeration value="cone"/>
           <xs:enumeration value="pyramid"/>
           <xs:enumeration value="egg"/>
           <xs:enumeration value="grave"/>
           <xs:enumeration value="axe"/>
           <xs:enumeration value="face"/>
+          <xs:enumeration value="heart"/>
           <xs:enumeration value="manicule"/>
           <xs:enumeration value="mountain"/>
           <xs:enumeration value="florilegium"/>
@@ -525,6 +539,7 @@
           <xs:enumeration value="chain"/>
           <xs:enumeration value="canon"/>
           <xs:enumeration value="divining rod"/>
+          <xs:enumeration value="shield"/>
           <xs:enumeration value="map"/>
           <xs:enumeration value="saddle"/>
           <xs:enumeration value="church"/>
@@ -535,6 +550,10 @@
           <xs:enumeration value="dragon"/>
           <xs:enumeration value="person"/>
           <xs:enumeration value="scroll"/>
+          <xs:enumeration value="triangle"/>
+          <xs:enumeration value="one_point_perspective_drawing"/>
+          <xs:enumeration value="geometric_diagram"/>
+          <xs:enumeration value="sceptre"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
@@ -559,11 +578,6 @@
       <xs:simpleType>
         <xs:restriction base="xs:token">
           <xs:enumeration value="arithmetic"/>
-          <xs:enumeration value="measurement"/>
-          <xs:enumeration value="logic"/>
-          <xs:enumeration value="algebra"/>
-          <xs:enumeration value="geometry"/>
-          <xs:enumeration value="calculus"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
