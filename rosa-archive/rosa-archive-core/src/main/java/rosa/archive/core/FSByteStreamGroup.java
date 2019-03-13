@@ -26,7 +26,7 @@ public class FSByteStreamGroup implements ByteStreamGroup {
     /**
      * Extensions of files to copy when copying metadata
      */
-    private static String[] METADATA_COPY_FILE_EXT = {"xml", "csv", "txt", "properties"};
+    private static String[] METADATA_COPY_FILE_EXT = {"xml", "csv", "txt", "properties", "html"};
     
     private Path base;
 
