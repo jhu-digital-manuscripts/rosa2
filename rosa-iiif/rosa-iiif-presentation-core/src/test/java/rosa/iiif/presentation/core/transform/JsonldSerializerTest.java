@@ -1,9 +1,5 @@
 package rosa.iiif.presentation.core.transform;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,6 +30,8 @@ import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
 import rosa.iiif.presentation.model.annotation.AnnotationSource;
 import rosa.iiif.presentation.model.annotation.AnnotationTarget;
+
+import static org.junit.Assert.*;
 
 public class JsonldSerializerTest {
     private static final String IIIF_CONTEXT_URL = "http://iiif.io/api/presentation/2/context.json";
@@ -71,6 +69,8 @@ public class JsonldSerializerTest {
         assertFalse("JSON-LD string is empty.", json.isEmpty());
 
         checkForIIIFContextAppearances(json, 1);
+
+        assertTrue("No attribution (permission) found", json.contains("This is the attribution"));
     }
 
     @Test
