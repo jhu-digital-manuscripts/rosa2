@@ -58,7 +58,7 @@ public class GitStatsCollectorTest {
         Path output = basePath.getParent();
 
         collector.setOutputDirectory(output.toString());
-        collector.collectGitStats("https://github.com/jabrah/test-transcriptions.git", true);
+        collector.collectGitStats("https://github.com/jhu-digital-manuscripts/rosa2-test-transcriptions", true);
 
         assertTrue("books.csv not found.", Files.exists(output.resolve("books.csv")));
         assertTrue("commits.csv not found.", Files.exists(output.resolve("commits.csv")));
@@ -115,7 +115,7 @@ public class GitStatsCollectorTest {
 
         // Do stats collection on test repository
         collector.setOutputDirectory(output.toString());
-        collector.collectGitStats("https://github.com/jabrah/test-transcriptions.git", false);
+        collector.collectGitStats("https://github.com/jhu-digital-manuscripts/rosa2-test-transcriptions", false);
 
         // Check output files
         assertTrue("books.csv not found.", Files.exists(output.resolve("books.csv")));
