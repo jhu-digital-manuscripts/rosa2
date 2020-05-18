@@ -40,7 +40,7 @@ public class CanvasTransformer implements TransformerConstants {
             return null;
         }
         Canvas canvas = new Canvas();
-        canvas.setId(pres_uris.getCanvasURI(collection.getId(), book.getId(), nameParser.shortName(image.getId())));
+        canvas.setId(pres_uris.getCanvasURI(collection.getId(), book.getId(), image));
         canvas.setType(SC_CANVAS);
 
         /*

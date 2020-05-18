@@ -3,7 +3,8 @@ package rosa.iiif.presentation.core;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import rosa.archive.model.Book;
+import rosa.archive.core.ArchiveNameParser;
+import rosa.archive.model.BookImage;
 import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
 import rosa.iiif.presentation.model.PresentationRequest;
@@ -26,6 +27,8 @@ public class PresentationUris {
     private final IIIFPresentationRequestFormatter presFormatter;
     private final IIIFRequestFormatter imageFormatter;
     private final StaticResourceRequestFormatter staticFormatter;
+    
+    private static final ArchiveNameParser nameParser = new ArchiveNameParser();
 
     public PresentationUris(IIIFPresentationRequestFormatter presFormatter, IIIFRequestFormatter imageFormatter,
                             StaticResourceRequestFormatter staticFormatter) {
@@ -64,8 +67,8 @@ public class PresentationUris {
         return presFormatter.format(new PresentationRequest(PresentationRequestType.LAYER, collection, book, name));
     }
 
-    public String getCanvasURI(String collection, String book, String name) {
-        return presFormatter.format(new PresentationRequest(PresentationRequestType.CANVAS, collection, book, name));
+    public String getCanvasURI(String collection, String book, BookImage image) {
+        return presFormatter.format(new PresentationRequest(PresentationRequestType.CANVAS, collection, book, nameParser.shortUniqueImageIdInBook(image.getId())));
     }
 
     public String getImageURI(String collection, String book, String imageId, boolean cropped) {

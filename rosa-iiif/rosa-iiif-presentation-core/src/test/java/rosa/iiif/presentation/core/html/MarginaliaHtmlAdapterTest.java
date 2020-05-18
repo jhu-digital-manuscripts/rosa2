@@ -1,31 +1,10 @@
 package rosa.iiif.presentation.core.html;
 
-import org.junit.Before;
-import org.junit.Test;
-import rosa.archive.core.ArchiveNameParser;
-import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
-import rosa.archive.model.Book;
-import rosa.archive.model.BookCollection;
-import rosa.archive.model.BookImage;
-import rosa.archive.model.BookReferenceSheet;
-import rosa.archive.model.BookReferenceSheet.Link;
-import rosa.archive.model.aor.AnnotatedPage;
-import rosa.archive.model.aor.AorLocation;
-import rosa.archive.model.aor.InternalReference;
-import rosa.archive.model.aor.Marginalia;
-import rosa.archive.model.aor.MarginaliaLanguage;
-import rosa.archive.model.aor.Position;
-import rosa.archive.model.aor.ReferenceTarget;
-import rosa.iiif.image.core.IIIFRequestFormatter;
-import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
-import rosa.iiif.presentation.core.PresentationTestUtils;
-import rosa.iiif.presentation.core.PresentationUris;
-import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
-import rosa.iiif.presentation.core.extras.BookReferenceResourceDb;
-import rosa.iiif.presentation.core.transform.impl.AnnotationTransformer;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
-import javax.xml.stream.XMLOutputFactory;
-import javax.xml.stream.XMLStreamWriter;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
@@ -34,14 +13,35 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamWriter;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import rosa.archive.core.serialize.AORAnnotatedPageSerializer;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
+import rosa.archive.model.BookReferenceSheet;
+import rosa.archive.model.BookReferenceSheet.Link;
+import rosa.archive.model.ImageList;
+import rosa.archive.model.aor.AnnotatedPage;
+import rosa.archive.model.aor.AorLocation;
+import rosa.archive.model.aor.InternalReference;
+import rosa.archive.model.aor.Marginalia;
+import rosa.archive.model.aor.MarginaliaLanguage;
+import rosa.archive.model.aor.Position;
+import rosa.archive.model.aor.ReferenceTarget;
+import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
+import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
+import rosa.iiif.presentation.core.extras.BookReferenceResourceDb;
 
 public class MarginaliaHtmlAdapterTest {
     private MarginaliaHtmlAdapter adapter;
     private BookCollection fakeCollection;
+    private Book fakeBook;
 
     @Before
     public void setup() {
@@ -61,10 +61,28 @@ public class MarginaliaHtmlAdapterTest {
         adapter = new MarginaliaHtmlAdapter(new PresentationUris(requestFormatter, null, staticFormatter));
 
         fakeCollection = new BookCollection();
+        fakeCollection.setId("aor");
+        
+        fakeBook = new Book();
+        fakeBook.setId("PrincetonPA6452");
+        
+        ImageList fakeImages = new ImageList();
+        
+        fakeImages.getImages().add(new BookImage("PrincetonPA6452.022r.tif", 10, 10, false));
+        fakeImages.getImages().add(new BookImage("PrincetonPA6452.020r.tif", 10, 10, false));
+        fakeImages.getImages().add(new BookImage("PrincetonPA6452.011v.tif", 10, 10, false));
+        fakeImages.getImages().add(new BookImage("PrincetonPA6452.013r.tif", 10, 10, false));
+        fakeImages.getImages().add(new BookImage("PrincetonPA6452.023r.tif", 10, 10, false));
+        fakeImages.getImages().add(new BookImage("PrincetonPA6452.025r.tif", 10, 10, false));
+        fakeImages.getImages().add(new BookImage("PrincetonPA6452.026r.tif", 10, 10, false));
+        fakeImages.getImages().add(new BookImage("PrincetonPA6452.032v.tif", 10, 10, false));
 
+        fakeBook.setImages(fakeImages);
+        
         Map<String, AorLocation> map = new HashMap<>();
         fakeCollection.setAnnotationMap(map);
-        map.put("id", new AorLocation("col", "book", "page", null));
+        fakeCollection.setId("aor");
+        map.put("id", new AorLocation("aor", "PrincetonPA6452", "11v", null));
         /*
         t1.add(new ReferenceTarget("PrincetonPA6452:00000023", "[a1r]"));
         t1.add(new ReferenceTarget("PrincetonPA6452:00000028", "[6]"));
@@ -105,10 +123,10 @@ public class MarginaliaHtmlAdapterTest {
         marg.getLanguages().get(0).setPositions(Collections.singletonList(new Position()));
         marg.getLanguages().get(0).getPositions().get(0).setInternalRefs(refs);
 
-        adapter.addInternalRefs(fakeCollection, marg, refs, writer);
+        adapter.addInternalRefs(fakeCollection, fakeBook, marg, refs, writer);
 
         String result = out.toString();
-//        System.out.println(result);
+        // System.out.println(result);
         assertNotNull(result);
         assertTrue(result.contains("<span class=\"emphasize\">Internal References:</span>"));
         assertTrue("There must be ', ' between text and targets", result.contains("s[upr]a, <a"));
@@ -133,7 +151,7 @@ public class MarginaliaHtmlAdapterTest {
 
         InternalReference ref = new InternalReference("I[nfr]a", targets);
 
-        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(ref));
+        String result = adapter.addInternalRefs(fakeCollection, fakeBook, transcription, Collections.singletonList(ref));
 
 //        assertEquals(expected, result);
         assertEquals(transcription, result);
@@ -143,7 +161,7 @@ public class MarginaliaHtmlAdapterTest {
     public void fromVoarchadumiaTest() {
         final String transcription = "vide synonia pag[ina] 54:";
         final String expected = "vide synonia <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/aor/BLC120b4/32v/canvas\" " +
+                "data-targetid=\"https://example.com/aor/BLC120b4/032v/canvas\" " +
                 "data-manifestid=\"https://example.com/aor/BLC120b4/manifest\">pag[ina] 54</a>:";
 
         List<ReferenceTarget> targets = new ArrayList<>();
@@ -151,7 +169,7 @@ public class MarginaliaHtmlAdapterTest {
 
         InternalReference ref = new InternalReference(null, targets);
 
-        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(ref));
+        String result = adapter.addInternalRefs(fakeCollection, fakeBook, transcription, Collections.singletonList(ref));
 
         assertEquals(expected, result);
     }
@@ -159,11 +177,11 @@ public class MarginaliaHtmlAdapterTest {
     @Test
     public void referenceAtEndTest() {
         final String expected = "This is a <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
-                "data-manifestid=\"https://example.com/col/book/manifest\">test</a> moo";
+                "data-targetid=\"https://example.com/aor/PrincetonPA6452/011v/canvas\" " +
+                "data-manifestid=\"https://example.com/aor/PrincetonPA6452/manifest\">test</a> moo";
         final String trans = "This is a test moo";
 
-        String result = adapter.addInternalRefs(fakeCollection, trans, Collections.singletonList(newRef()));
+        String result = adapter.addInternalRefs(fakeCollection, fakeBook, trans, Collections.singletonList(newRef()));
 
         assertEquals(expected, result);
     }
@@ -172,10 +190,10 @@ public class MarginaliaHtmlAdapterTest {
     public void referenceAtStartTest() {
         final String transcription = "is a test moo sound";
         final String expected = "is a <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
-                "data-manifestid=\"https://example.com/col/book/manifest\">test</a> moo sound";
+                "data-targetid=\"https://example.com/aor/PrincetonPA6452/011v/canvas\" " +
+                "data-manifestid=\"https://example.com/aor/PrincetonPA6452/manifest\">test</a> moo sound";
 
-        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(newRef()));
+        String result = adapter.addInternalRefs(fakeCollection, fakeBook, transcription, Collections.singletonList(newRef()));
 
         assertEquals(expected, result);
     }
@@ -184,10 +202,10 @@ public class MarginaliaHtmlAdapterTest {
     public void referenceInMiddleTest() {
         final String transcription = "This is a test moo sound";
         final String expected = "This is a <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
-                "data-manifestid=\"https://example.com/col/book/manifest\">test</a> moo sound";
+                "data-targetid=\"https://example.com/aor/PrincetonPA6452/011v/canvas\" " +
+                "data-manifestid=\"https://example.com/aor/PrincetonPA6452/manifest\">test</a> moo sound";
 
-        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(newRef()));
+        String result = adapter.addInternalRefs(fakeCollection, fakeBook, transcription, Collections.singletonList(newRef()));
 
         assertEquals(expected, result);
     }
@@ -196,10 +214,10 @@ public class MarginaliaHtmlAdapterTest {
     public void referenceIsTextTest() {
         final String transcription = "is a test moo";
         final String expected = "is a <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
-                "data-manifestid=\"https://example.com/col/book/manifest\">test</a> moo";
+                "data-targetid=\"https://example.com/aor/PrincetonPA6452/011v/canvas\" " +
+                "data-manifestid=\"https://example.com/aor/PrincetonPA6452/manifest\">test</a> moo";
 
-        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(newRef()));
+        String result = adapter.addInternalRefs(fakeCollection, fakeBook, transcription, Collections.singletonList(newRef()));
 
         assertEquals(expected, result);
     }
@@ -215,11 +233,11 @@ public class MarginaliaHtmlAdapterTest {
     public void sourceTextInReferenceTest() {
         final String transcription = "This is a test moo";
         final String expected = "This is a test <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
+                "data-targetid=\"https://example.com/aor/PrincetonPA6452/011v/canvas\" " +
                 "data-label=\"test\" " +
-                "data-manifestid=\"https://example.com/col/book/manifest\">moo</a>";
+                "data-manifestid=\"https://example.com/aor/PrincetonPA6452/manifest\">moo</a>";
 
-        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(weirdRef()));
+        String result = adapter.addInternalRefs(fakeCollection, fakeBook, transcription, Collections.singletonList(weirdRef()));
         assertEquals(expected, result);
     }
 
@@ -227,12 +245,12 @@ public class MarginaliaHtmlAdapterTest {
     public void targetAlreadyPresent() {
         final String transcription = "This is a test moo";
         final String expected = "This is a <a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"https://example.com/col/book/page/canvas\" " +
+                "data-targetid=\"https://example.com/aor/PrincetonPA6452/canvas\" " +
                 "data-manifestid=\"https://example.com/col/book/manifest\" " +
-                "data-targetid1=\"https://example.com/col/book/page/canvas\"" +
+                "data-targetid1=\"https://example.com/aor/PrincetonPA6452/canvas\"" +
                 ">test</a> moo";
 
-        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(doubleTargetRef()));
+        String result = adapter.addInternalRefs(fakeCollection, fakeBook, transcription, Collections.singletonList(doubleTargetRef()));
 //        assertEquals(expected, result);
         assertEquals(transcription, result);
     }
@@ -333,7 +351,7 @@ public class MarginaliaHtmlAdapterTest {
         t1.add(new ReferenceTarget("PrincetonPA6452:00000057", "[35]"));
         InternalReference r1 = new InternalReference("s[upr]a", t1);
 
-        String result = adapter.addInternalRefs(fakeCollection, transcription, Collections.singletonList(r1));
+        String result = adapter.addInternalRefs(fakeCollection, fakeBook, transcription, Collections.singletonList(r1));
 //        assertEquals(expected, result);
         assertEquals(transcription, result);
     }

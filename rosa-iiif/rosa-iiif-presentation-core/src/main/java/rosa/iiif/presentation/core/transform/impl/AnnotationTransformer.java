@@ -128,7 +128,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
         target.setUri(pres_uris.getCanvasURI(
                 collection.getId(),
                 book.getId(),
-                nameParser.shortName(image.getId())
+                image
         ));
 
         a.setDefaultTarget(target);

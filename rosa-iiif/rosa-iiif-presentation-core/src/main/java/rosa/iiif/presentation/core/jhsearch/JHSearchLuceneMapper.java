@@ -19,7 +19,6 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 import org.xml.sax.helpers.XMLReaderFactory;
 
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.util.TranscriptionSplitter;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
@@ -66,7 +65,6 @@ import rosa.search.model.SearchFieldType;
  */
 public class JHSearchLuceneMapper extends BaseLuceneMapper {
 	private static final Logger logger = Logger.getLogger(JHSearchLuceneMapper.class.toString());
-	private static final ArchiveNameParser nameParser = new ArchiveNameParser();
 
 	private final PresentationUris pres_uris;
 
@@ -459,7 +457,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 		String collection_id = pres_uris.getCollectionURI(col.getId());
 		String manifest_id =  pres_uris.getManifestURI(col.getId(), book.getId());
-		String canvas_id = pres_uris.getCanvasURI(col.getId(), book.getId(), nameParser.shortName(image.getId()));
+		String canvas_id = pres_uris.getCanvasURI(col.getId(), book.getId(), image);
 
 		addField(doc, JHSearchField.COLLECTION_ID, collection_id);
 

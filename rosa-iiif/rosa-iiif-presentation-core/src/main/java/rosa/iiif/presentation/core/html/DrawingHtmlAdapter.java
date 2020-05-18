@@ -43,7 +43,7 @@ public class DrawingHtmlAdapter extends AnnotationBaseHtmlAdapter<Drawing> {
         addListOfValues(BOOKS_LABEL, annotation.getBooks(), writer);
         addListOfValues(LOCATIONS_LABEL, annotation.getLocations(), writer);
 
-        addInternalRefs(col, annotation, annotation.getInternalRefs(), writer);
+        addInternalRefs(col, book, annotation, annotation.getInternalRefs(), writer);
 
         writer.writeEndElement();
     }
