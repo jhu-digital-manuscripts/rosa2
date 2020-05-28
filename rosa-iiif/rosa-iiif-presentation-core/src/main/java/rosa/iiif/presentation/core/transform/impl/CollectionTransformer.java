@@ -204,10 +204,11 @@ public class CollectionTransformer implements TransformerConstants {
         
         for (BookImage image : book.getImages()) {
             if (image.getLocation() == BookImageLocation.BODY_MATTER && !image.isMissing()) {
-                String id = pres_uris.getImageURI(collection.getId(), book.getId(), image.getId(), cropped);
-
+                String id = pres_uris.getImageServiceURI(collection.getId(), book.getId(), image.getId(), cropped);
+                String static_image_url = pres_uris.getJpegURI (collection.getId(), book.getId(), image.getId(), cropped);
+                
                 Image thumb = new Image(
-                        id,
+                        static_image_url,
                         new IIIFImageService(IIIF_IMAGE_CONTEXT, id, IIIF_IMAGE_PROFILE_LEVEL2,
                                 image.getWidth(), image.getHeight(), -1, -1, null)
                 );

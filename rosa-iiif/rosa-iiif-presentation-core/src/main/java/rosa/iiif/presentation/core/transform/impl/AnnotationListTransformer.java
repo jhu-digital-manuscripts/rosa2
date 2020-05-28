@@ -6,13 +6,11 @@ import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
-import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.HtmlValue;
-import rosa.iiif.presentation.model.Within;
 import rosa.iiif.presentation.model.annotation.Annotation;
 
 public class AnnotationListTransformer implements TransformerConstants {
@@ -28,57 +26,34 @@ public class AnnotationListTransformer implements TransformerConstants {
     }
 
     public AnnotationList transform(BookCollection collection, Book book, String name) {
-        String page = get_annotation_list_page(name);
-        String listType = get_annotation_list_id(name);
-
-        // TODO need better way of finding a page
-        BookImage pageImage = getPageImage(book.getImages(), page);
+    	String[] parts = pres_uris.splitInflectedName(name);
+    	String short_image_id = parts[0];
+    	String list_type_name = parts[1];
+    	
+        BookImage pageImage = getPageImage(book, short_image_id);
+        
         if (pageImage == null) {
             return null;
         }
-
+        
         AnnotatedPage aPage = book.getAnnotationPage(pageImage.getId());
-        AnnotationListType type = AnnotationListType.getType(listType);
+        AnnotationListType type = AnnotationListType.getType(list_type_name);
 
+        if (type == null) {
+        	return null;
+        }
+        
         if (type == AnnotationListType.ALL) {
             return annotationList(collection, book, pageImage, aPage);
         }
         return annotationList(collection, book, pageImage, aPage, type);
     }
 
-    private String[] split_id(String id) {
-        String[] parts = id.split("\\.");
-
-        if (parts.length != 2) {
-            return null;
-        }
-
-        return parts;
-    }
-
-    private String get_annotation_list_page(String name) {
-        String[] parts = split_id(name);
-
-        if (parts == null) {
-            return null;
-        }
-
-        return parts[0];
-    }
-
-    private String get_annotation_list_id(String name) {
-        String[] parts = split_id(name);
-
-        if (parts == null) {
-            return null;
-        }
-
-        return parts[1];
-    }
-
-    private BookImage getPageImage(ImageList images, String page) {
-        for (BookImage image : images) {
-            if (nameParser.shortName(image.getId()).equals(page)) {
+    private BookImage getPageImage(Book book, String short_image_id) {
+    	String imageId = nameParser.fullImageIdFromShortId(book.getId(), short_image_id);
+    	
+        for (BookImage image : book.getImages()) {
+            if (image.getId().equals(imageId)) {
                 return image;
             }
         }
@@ -90,15 +65,13 @@ public class AnnotationListTransformer implements TransformerConstants {
                                           AnnotationListType listType) {
         AnnotationList list = new AnnotationList();
 
-        String label = annotationListName(image.getName(), listType.toString().toLowerCase());
-        list.setId(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), nameParser.shortName(image.getId())));
+        String label = image.getName() + " " +  listType.toString().toLowerCase();
+        
+        list.setId(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), image, listType));
         list.setType(SC_ANNOTATION_LIST);
         list.setDescription("Annotation list for " + listType.toString().toLowerCase() + " on page "
                 + image.getName(), "en");
         list.setLabel(label, "en");
-        list.setWithin(new Within(
-                pres_uris.getLayerURI(collection.getId(), book.getId(), listType.toString().toLowerCase())
-        ));
         if (aPage != null && aPage.getReader() != null && !aPage.getReader().isEmpty()) {
             list.getMetadata().put("reader", new HtmlValue(aPage.getReader()));
         }
@@ -172,25 +145,15 @@ public class AnnotationListTransformer implements TransformerConstants {
                 list.getAnnotations().addAll(l.getAnnotations());
             }
         }
-        String type = AnnotationListType.ALL.toString().toLowerCase();
-        String name = annotationListName(image.getName(), type);
 
-        list.setId(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), name));
+        list.setId(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), image, AnnotationListType.ALL));
         list.setType(SC_ANNOTATION_LIST);
-        list.setDescription("Annotation list for " + type + " on page " + image.getName(), "en");
-        list.setLabel(name, "en");
-        list.setWithin(new Within(
-                pres_uris.getLayerURI(collection.getId(), book.getId(), "all")
-        ));
+        list.setDescription("Annotation list for everything on page " + image.getName(), "en");
+        list.setLabel(image.getName() + " annotations", "en");
         if (aPage != null && aPage.getReader() != null && !aPage.getReader().isEmpty()) {
             list.getMetadata().put("reader", new HtmlValue(aPage.getReader()));
         }
 
         return list;
     }
-
-    private String annotationListName(String page, String listType) {
-        return page + (listType == null ? "" : "." + listType);
-    }
-
 }

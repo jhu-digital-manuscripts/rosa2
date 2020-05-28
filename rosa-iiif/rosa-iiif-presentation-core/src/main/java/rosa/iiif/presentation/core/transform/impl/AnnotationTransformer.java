@@ -25,7 +25,6 @@ import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTitles;
-import rosa.archive.model.ImageList;
 import rosa.archive.model.aor.Calculation;
 import rosa.archive.model.aor.Drawing;
 import rosa.archive.model.aor.Graph;
@@ -73,9 +72,14 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
         this.bookReferenceResourceDbs = bookDbs.toArray(new BookReferenceResourceDb[0]);
     }
 
-    public Annotation transform(BookCollection collection, Book book, String name) {
+    public Annotation transform(BookCollection collection, Book book, String name) {    	
+    	// TODO This is a huge mess and almost certainly does not lookup the annotation correctly
+    	
+    	String[] parts = pres_uris.splitInflectedName(name);
+    	String anno_id = parts[1];
+    	
         // Find annotation in book
-        rosa.archive.model.aor.Annotation archiveAnno = Annotations.getArchiveAnnotation(book, name);
+        rosa.archive.model.aor.Annotation archiveAnno = Annotations.getArchiveAnnotation(book, anno_id);
 
         // Transform archive anno -> iiif anno
         return adaptAnnotation(collection, book, archiveAnno, null);
@@ -100,7 +104,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
 
         Annotation a = new Annotation();
 
-        a.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), anno.getId()));
+        a.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), image, anno.getId()));
         a.setType(IIIFNames.OA_ANNOTATION);
         a.setMotivation(IIIFNames.SC_PAINTING);
         a.getMetadata().put("type", new HtmlValue(anno.getClass().getSimpleName()));
@@ -122,7 +126,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
         a.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html", text, language));
 
         if (image == null) {
-            image = getPageImage(book.getImages(), getAnnotationPage(anno.getId()));
+            image = getPageImage(book, getAnnotationPage(anno.getId()));
         }
         AnnotationTarget target = locationOnCanvas(image, Location.FULL_PAGE);
         target.setUri(pres_uris.getCanvasURI(
@@ -223,11 +227,11 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
         return target;
     }
 
-    private BookImage getPageImage(ImageList images, String page) {
-        for (BookImage image : images) {
-            // To account for an image getting its name from the Image List
-            if (image.getName().equals(page) || nameParser.shortName(image.getId()).equals(page) ||
-                    image.getId().equals(page)) {
+    private BookImage getPageImage(Book book, String short_image_id) {
+    	String imageId = nameParser.fullImageIdFromShortId(book.getId(), short_image_id);
+    	
+        for (BookImage image : book.getImages()) {
+            if (image.getId().equals(imageId)) {
                 return image;
             }
         }
@@ -265,7 +269,6 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
             return null;
         }
         String page = getStandardPage(image);
-        String name = image.getName() + ".transcription";
 
         // TODO only want to do this once, not once PER PAGE
         Map<String, String> transcriptionMap = TranscriptionSplitter.split(book.getTranscription());
@@ -283,7 +286,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
             Annotation ann = new Annotation();
 
             ann.setLabel("Transcription for page " + page, "en");
-            ann.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), name));
+            ann.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), image, "transcription"));
             ann.setMotivation(SC_PAINTING);
             ann.setType(OA_ANNOTATION);
 
@@ -308,11 +311,11 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
             if (!illusPage.equals(page)) {
                 continue;
             }
-            String anno_name = page + ".illustration_" + ill.getId();
+            String anno_name = "illustration_" + ill.getId();
 
             Annotation ann = new Annotation();
             ann.setLabel("Illustration(s) on " + page, "en");
-            ann.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), anno_name));
+            ann.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), image, anno_name));
             ann.setMotivation(SC_PAINTING);
             ann.setType(OA_ANNOTATION);
 
