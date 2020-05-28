@@ -1,6 +1,7 @@
 package rosa.archive.core;
 
 import org.apache.commons.lang3.StringUtils;
+
 import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookImageRole;
@@ -201,6 +202,10 @@ public class ArchiveNameParser implements ArchiveConstants {
      * @return identifier for image unique within book
      */
     public String shortUniqueImageIdInBook(String imageId) {
+    	if (imageId.equals(ArchiveConstants.MISSING_IMAGE)) {
+    		return "missing";
+    	}
+    	
     	String[] parts = split_name(imageId);
     	
     	StringBuilder result = new StringBuilder();
@@ -212,5 +217,18 @@ public class ArchiveNameParser implements ArchiveConstants {
     		}
     	}
     	return result.toString();
+    }
+    
+    /**
+     * 
+     * @param imageId
+     * @return identifier for image unique within book
+     */
+    public String fullImageIdFromShortId(String bookId, String shortId) {
+    	if (shortId.equals("missing")) {
+    		return ArchiveConstants.MISSING_IMAGE;
+    	}
+    	
+    	return bookId + "." + shortId + ArchiveConstants.TIF_EXT;
     }
 }

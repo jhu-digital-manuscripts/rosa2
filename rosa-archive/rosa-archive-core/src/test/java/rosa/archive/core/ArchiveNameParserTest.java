@@ -71,10 +71,10 @@ public class ArchiveNameParserTest {
     public void shortUniqueNameTest() {
         String[] names = {
                 "LudwigXV7.frontmatter.flyleaf.002r.tif", "LudwigXV7.frontmatter.flyleaf.002v.tif",
-                "LudwigXV7.002r.tif", "LudwigXV7.insert.02r.tif"
+                "LudwigXV7.002r.tif", "LudwigXV7.insert.02r.tif", "missing_image.tif"
         };
         String[] expected = {
-                "frontmatter.flyleaf.002r", "frontmatter.flyleaf.002v", "002r", "insert.02r"
+                "frontmatter.flyleaf.002r", "frontmatter.flyleaf.002v", "002r", "insert.02r", "missing"
         };
 
         for (int i = 0; i < names.length; i++) {
