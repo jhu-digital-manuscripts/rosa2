@@ -1,20 +1,24 @@
 package rosa.iiif.presentation.endpoint;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import java.io.FileWriter;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.HashSet;
+import java.util.Set;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -49,7 +53,10 @@ public class ITIIIFPresentationServlet {
     private void check_json_syntax(InputStream is) throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(DeserializationFeature.FAIL_ON_READING_DUP_TREE_KEY);
-        objectMapper.readTree(is);
+        JsonNode root = objectMapper.readTree(is);
+        
+        // In case this is JSON-LD ensure that there are no duplicate @id statements
+        check_json_ld_id_dups(root);
     }
 
     private void check_retrieve_json(String url) throws Exception {
@@ -74,6 +81,51 @@ public class ITIIIFPresentationServlet {
         try (InputStream is = con.getInputStream()) {
             check_search_info_syntax(is);
         }
+    }
+
+    // Check a JSON-LD document to see if any of the @ids are duplicated.
+    private void check_json_ld_id_dups(JsonNode root) {
+    	try {
+    	FileWriter w = new FileWriter("/home/msp/blah");
+    	w.append(root.toString());
+    	w.close();
+    	} catch (Exception e) {
+    		throw new RuntimeException(e);
+    	}
+    	
+    	check_json_ld_id_dups(root, new HashSet<String>(), "");
+    }
+    
+    private void check_json_ld_id_dups(JsonNode node, Set<String> ids, String parent_name) {    	
+    	if (node.isObject()) {
+    		node.fields().forEachRemaining(e -> {    			
+    			if (e.getKey().equals("@id")) {
+    				String id = e.getValue().asText();
+    				
+    				assertFalse("Duplicate @id: " + id, ids.contains(id));
+    	
+    				// Ignore missing image which may occur several times.
+    				if (!id.endsWith("missing;image/annotation") && !id.contains("missing_image")) {
+    					ids.add(id);
+    				}
+    				// System.err.println("@id " + id);
+    			} else if (e.getKey().equals("service")) {
+    				// There will be duplicate image services from thumbnail and canvas
+    			} else if (e.getKey().equals("thumbnail") && parent_name.equals("sequences")) {
+    			    // Do not check duplicates in thumbnail of sequence because it will be present in a canvas
+    			} else {
+    				JsonNode val = e.getValue();
+    				
+    				if (val.isObject()) {
+    					check_json_ld_id_dups(val, ids, e.getKey());
+    				} else if (val.isArray()) {
+    					val.elements().forEachRemaining(c -> {
+    						check_json_ld_id_dups(c, ids, e.getKey());
+    					});
+    				}
+    			}
+    		});
+    	}
     }
 
     private void check_search_info_syntax(InputStream is) throws Exception {
@@ -159,7 +211,7 @@ public class ITIIIFPresentationServlet {
             String search = pres_uris.getJHSearchURI(req,
                     "text:'one'", new SearchOptions(0, 30), null);
             HttpURLConnection con = (HttpURLConnection) (new URL(search)).openConnection();
-            System.out.println(" ### " + search);
+            // System.out.println(" ### " + search);
             con.connect();
             int code = con.getResponseCode();
             assertEquals(200, code);
