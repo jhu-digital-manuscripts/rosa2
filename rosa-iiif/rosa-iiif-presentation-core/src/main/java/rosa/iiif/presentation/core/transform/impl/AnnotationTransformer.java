@@ -123,7 +123,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
             text = htmlAdapters.get(Calculation.class).adapt(collection, book, image, (Calculation) anno, bookReferenceResourceDbs);
         }
 
-        a.setDefaultSource(new AnnotationSource("URI", IIIFNames.DC_TEXT, "text/html", text, language));
+        a.setDefaultSource(new AnnotationSource(null, IIIFNames.DC_TEXT, "text/html", text, language));
 
         if (image == null) {
             image = getPageImage(book, getAnnotationPage(anno.getId()));
@@ -291,7 +291,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
             ann.setType(OA_ANNOTATION);
 
             ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
-            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", transcription, "en"));
+            ann.setDefaultSource(new AnnotationSource(null, IIIFNames.DC_TEXT, "text/html", transcription, "en"));
 
             return Collections.singletonList(ann);
         } else {
@@ -415,7 +415,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
                 content = "";
             }
 
-            ann.setDefaultSource(new AnnotationSource("ID", IIIFNames.DC_TEXT, "text/html", content, "en"));
+            ann.setDefaultSource(new AnnotationSource(null, IIIFNames.DC_TEXT, "text/html", content, "en"));
             ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
             anns.add(ann);
         }
