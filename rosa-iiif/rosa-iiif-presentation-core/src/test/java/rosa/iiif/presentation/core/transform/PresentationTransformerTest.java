@@ -185,12 +185,12 @@ public class PresentationTransformerTest extends BaseArchiveTest {
             AnnotationList ll = presentationTransformer.annotationList(
                     loadValidCollection(), loadValidFolgersHa2(), "001r;all");
             assertNotNull("Failed to create AnnotationList for '1r'", ll);
-
+            
             int marg_count = (int) ll.getAnnotations().stream()
                     .map(Annotation::getId)
                     .filter(id -> id.contains("marginalia"))
                     .count();
-            assertEquals("Unexpected number of marginalia found.", 0, marg_count);
+            assertEquals("Unexpected number of marginalia found.", 8, marg_count);
 
             String target = ll.getAnnotations().get(0).getDefaultTarget().getUri();
             assertNotNull(target);
