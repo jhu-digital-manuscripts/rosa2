@@ -14,19 +14,21 @@ import java.util.logging.Logger;
 public class Annotations implements AORAnnotatedPageConstants {
     private static final Logger logger = Logger.getLogger(Annotations.class.toString());
     private static final String ANNOTATION_ILLUSTRATION = "illustration";
+	private static final String ANNOTATION_ID_SEPARATOR = ",";
 
     /**
-     * An annotation ID consists of the page on which the annotation lives, the type
+     * An annotation ID consists of the type
      * of the annotation (underline, marginalia, etc), and its index on the page.
-     *
+     * It must be unique within an AnnotationPage.
+     * 
      * @param page ID of page
      * @param annotationType type = (underline|symbol|marginalia|mark|drawing|numeral|errata)
      * @param index the index of the annotation on the page
      * @return annotation ID
      */
     public static String annotationId(String page, String annotationType, int index) {
-//        return page + ANNOTATION_ID_SEPARATOR + annotationType + ANNOTATION_ID_SEPARATOR + index;
-        return null;
+    	return annotationType + ANNOTATION_ID_SEPARATOR + index;
+        //return null;
     }
 
     /**
