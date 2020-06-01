@@ -443,7 +443,11 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      */
     private void writeSource(AnnotationSource source, String label, int width,
                              int height, JSONWriter jWriter) throws JSONException {
-        jWriter.key("@id").value(source.getUri());
+    
+    	if (source.getUri() != null) {
+    		jWriter.key("@id").value(source.getUri());
+    	}
+    	
         if (source.isEmbeddedText()) {
             jWriter.key("@type").value(IIIFNames.CNT_CONTENT_AS_TEXT);
             jWriter.key("chars").value(source.getEmbeddedText());
