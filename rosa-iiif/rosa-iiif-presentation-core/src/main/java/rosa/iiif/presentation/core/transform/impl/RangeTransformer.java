@@ -122,7 +122,7 @@ public class RangeTransformer implements TransformerConstants {
                     // If this_page lies within the range of pages of this BookText, add it to the range
                     if (this_page.compareToIgnoreCase(start_page) >= 0
                             && this_page.compareToIgnoreCase(end_page) <= 0) {
-                        canvases.add(pres_uris.getCanvasURI(col.getId(), book.getId(), this_page));
+                        canvases.add(pres_uris.getCanvasURI(col.getId(), book.getId(), image));
                     }
                 }
                 result.setCanvases(canvases);
@@ -191,7 +191,7 @@ public class RangeTransformer implements TransformerConstants {
     private void addCanvasUris(BookCollection collection, Book book, BookImageLocation targetType, List<String> uris) {
         for (BookImage image : book.getImages()) {
             if (image.getLocation() == targetType) {
-                uris.add(pres_uris.getCanvasURI(collection.getId(), book.getId(), image.getName()));
+                uris.add(pres_uris.getCanvasURI(collection.getId(), book.getId(), image));
             }
         }
     }
@@ -250,7 +250,14 @@ public class RangeTransformer implements TransformerConstants {
             }
 
             List<String> canvases = new ArrayList<>();
-            canvases.add(pres_uris.getCanvasURI(col.getId(), book.getId(), illus.getPage()));
+            
+            BookImage image = book.guessImage(illus.getPage());
+
+            if (image == null) {
+            	return null;
+            }
+            
+            canvases.add(pres_uris.getCanvasURI(col.getId(), book.getId(), image));
 
             result.setLabel(label, "en");
             result.setCanvases(canvases);

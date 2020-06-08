@@ -44,7 +44,7 @@ public class ArchiveNameParserTest {
         BookImageRole[] expected = {
                 BookImageRole.FRONT_COVER, null,
                 null, null, null,
-                null, null, null
+                null, BookImageRole.MISC, null
         };
 
         for (int i = 0; i < TEST_NAMES.length; i++) {
@@ -56,14 +56,29 @@ public class ArchiveNameParserTest {
     public void otherPageNumberingTest() {
         String[] names = {
                 "LudwigXV7.frontmatter.flyleaf.002r.tif", "LudwigXV7.frontmatter.flyleaf.002v.tif",
-                "LudwigXV7.020r.tif", "LudwigXV7.020v.tif", "LudwigXV7.A1r.tif", "LudwigXV7.A2v.tif"
+                "LudwigXV7.020r.tif", "LudwigXV7.020v.tif", "LudwigXV7.A1r.tif", "LudwigXV7.A2v.tif", "LudwigXV7.insert.02r.tif"
         };
         String[] expected = {
-                "front matter 2r", "front matter 2v", "20r", "20v", "A1r", "A2v"
+                "front matter 2r", "front matter 2v", "20r", "20v", "A1r", "A2v", "2r insert"
         };
 
         for (int i = 0; i < names.length; i++) {
             assertEquals("Unexpected short name found.", expected[i], parser.shortName(names[i]));
+        }
+    }
+    
+    @Test
+    public void shortUniqueNameTest() {
+        String[] names = {
+                "LudwigXV7.frontmatter.flyleaf.002r.tif", "LudwigXV7.frontmatter.flyleaf.002v.tif",
+                "LudwigXV7.002r.tif", "LudwigXV7.insert.02r.tif", "missing_image.tif"
+        };
+        String[] expected = {
+                "frontmatter.flyleaf.002r", "frontmatter.flyleaf.002v", "002r", "insert.02r", "missing"
+        };
+
+        for (int i = 0; i < names.length; i++) {
+            assertEquals("Unexpected short name found.", expected[i], parser.shortUniqueImageIdInBook(names[i]));
         }
     }
 

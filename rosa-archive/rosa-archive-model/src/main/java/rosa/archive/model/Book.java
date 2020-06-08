@@ -303,9 +303,9 @@ public class Book implements HasId, Serializable {
      * Guess name of image from fragment.
      * 
      * @param frag name fragment
-     * @return image id or null
+     * @return image or null
      */
-    public String guessImageName(String frag) {
+    public BookImage guessImage(String frag) {
             frag = frag.trim();
 
             if (frag.matches("\\d+")) {
@@ -332,11 +332,27 @@ public class Book implements HasId, Serializable {
             
             for (BookImage image: images) {
                 if (image.getId().equalsIgnoreCase(frag)) {
-                    return image.getId();
+                    return image;
                 }
             }
 
             return null;
+    }
+    
+    /**
+     * Guess name of image from fragment.
+     * 
+     * @param frag name fragment
+     * @return image id or null
+     */
+    public String guessImageName(String frag) {
+            BookImage result = guessImage(frag);
+            
+            if (result == null) {
+            	return null;
+            }
+            
+            return result.getId();
     }
     
     @Override

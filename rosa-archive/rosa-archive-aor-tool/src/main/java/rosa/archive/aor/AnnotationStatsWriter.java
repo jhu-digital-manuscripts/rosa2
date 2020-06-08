@@ -3,6 +3,7 @@ package rosa.archive.aor;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -388,9 +389,11 @@ public class AnnotationStatsWriter {
 			images = ils.read(is, null);
 		}
 		
-		for (Path xml_path : Files.newDirectoryStream(book_path, "*aor*.xml")) {
-			collectStats(book_id, xml_path, images).forEach(s -> write_stats(s, out));
-			out.flush();
+		try (DirectoryStream<Path> path_stream = Files.newDirectoryStream(book_path, "*aor*.xml")) {		
+			for (Path xml_path : path_stream) {
+				collectStats(book_id, xml_path, images).forEach(s -> write_stats(s, out));
+				out.flush();
+			}
 		}
 	}
 }

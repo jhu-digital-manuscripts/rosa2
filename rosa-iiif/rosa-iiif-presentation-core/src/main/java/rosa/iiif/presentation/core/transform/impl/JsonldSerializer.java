@@ -443,7 +443,11 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
      */
     private void writeSource(AnnotationSource source, String label, int width,
                              int height, JSONWriter jWriter) throws JSONException {
-        jWriter.key("@id").value(source.getUri());
+    
+    	if (source.getUri() != null) {
+    		jWriter.key("@id").value(source.getUri());
+    	}
+    	
         if (source.isEmbeddedText()) {
             jWriter.key("@type").value(IIIFNames.CNT_CONTENT_AS_TEXT);
             jWriter.key("chars").value(source.getEmbeddedText());
@@ -670,7 +674,11 @@ public class JsonldSerializer implements PresentationSerializer, IIIFNames {
 
     private void writeThumbnail(Image thumb, JSONWriter jWriter) throws JSONException {
         jWriter.object();
-        jWriter.key("@id").value(thumb.getUri());
+        
+        // TODO Bad hack for static image uri.
+        String static_image_url = thumb.getUri().replace("/full/full/", "/full/!128,128/");
+        
+        jWriter.key("@id").value(static_image_url);
         writeIfNotNull("@type", thumb.getType(), jWriter);
         writeIfNotNull("format", thumb.getFormat(), jWriter);
         writeService(thumb.getService(), true, jWriter);

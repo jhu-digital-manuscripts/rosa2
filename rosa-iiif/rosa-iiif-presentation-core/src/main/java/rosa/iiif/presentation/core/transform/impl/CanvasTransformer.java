@@ -9,6 +9,7 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.iiif.presentation.core.PresentationUris;
+import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.IIIFImageService;
 import rosa.iiif.presentation.model.Image;
@@ -40,7 +41,7 @@ public class CanvasTransformer implements TransformerConstants {
             return null;
         }
         Canvas canvas = new Canvas();
-        canvas.setId(pres_uris.getCanvasURI(collection.getId(), book.getId(), nameParser.shortName(image.getId())));
+        canvas.setId(pres_uris.getCanvasURI(collection.getId(), book.getId(), image));
         canvas.setType(SC_CANVAS);
 
         /*
@@ -57,6 +58,7 @@ public class CanvasTransformer implements TransformerConstants {
                 label = annotations.getSignature();
             }
         }
+        
         canvas.setLabel(label, "en");
 
         // Images of bindings or misc images will be displayed as individuals instead of openings
@@ -110,8 +112,10 @@ public class CanvasTransformer implements TransformerConstants {
     public Canvas transform(BookCollection collection, Book book, String name) {
         // Look for the image representing 'page'
         
+    	String full_image_id = nameParser.fullImageIdFromShortId(book.getId(), name);
+    	
         for (BookImage image : book.getImages()) {
-            if (image.getName().equals(name)) {
+            if (full_image_id.equals(image.getId())) {
                 return transform(collection, book, image, false);
             }
         }
@@ -133,7 +137,7 @@ public class CanvasTransformer implements TransformerConstants {
 
         Annotation ann = new Annotation();
 
-        ann.setId(pres_uris.getAnnotationURI(collection.getId(), book == null ? "" : book.getId(), image.getName()));
+        ann.setId(pres_uris.getAnnotationURI(collection.getId(), book == null ? null : book.getId(), image, "image"));
         ann.setWidth(image.getWidth());
         ann.setHeight(image.getHeight());
         ann.setMotivation(SC_PAINTING);
@@ -141,9 +145,11 @@ public class CanvasTransformer implements TransformerConstants {
 
         ann.setLabel(image.getName(), "en");
         
-        String id_in_image_server = pres_uris.getImageURI(collection.getId(), book == null ? null : book.getId(), image.getId(), cropped);
+        String id_in_image_server = pres_uris.getImageServiceURI(collection.getId(), book == null ? null : book.getId(), image.getId(), cropped);        
+        String static_image_url = pres_uris.getJpegURI (collection.getId(), book == null ? null : book.getId(), image.getId(), cropped);
+
         
-        AnnotationSource source = new AnnotationSource(id_in_image_server, "dcterms:Image", "image/tiff");
+        AnnotationSource source = new AnnotationSource(static_image_url, "dcterms:Image", "image/jpeg");
         // Can set target when building Canvas (to the Canvas URI)?
         AnnotationTarget target = new AnnotationTarget(canvasId);
 
@@ -168,10 +174,9 @@ public class CanvasTransformer implements TransformerConstants {
 //        }
 
         Reference ref = new Reference();
-
-        String name = nameParser.shortName(image.getId()) + ".all";
-        ref.setReference(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), name));
-        ref.setLabel(new TextValue(name, "en"));
+        
+        ref.setReference(pres_uris.getAnnotationListURI(collection.getId(), book.getId(), image, AnnotationListType.ALL));
+        ref.setLabel(new TextValue(image.getName(), "en"));
         ref.setType(SC_ANNOTATION_LIST);
 
         return ref;

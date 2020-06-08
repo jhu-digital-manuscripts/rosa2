@@ -24,7 +24,6 @@ import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
 import rosa.iiif.presentation.model.IIIFNames;
-import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Reference;
 import rosa.iiif.presentation.model.Sequence;
@@ -84,7 +83,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
      */
     @Test
     public void canvasLudwigXV7Test() throws IOException {
-        checkACanvas(presentationTransformer.canvas(loadValidCollection(), loadValidLudwigXV7(), "1v"));
+        checkACanvas(presentationTransformer.canvas(loadValidCollection(), loadValidLudwigXV7(), "001v"));
     }
 
     /**
@@ -94,8 +93,8 @@ public class PresentationTransformerTest extends BaseArchiveTest {
      */
     @Test
     public void canvasFolgersHa2Test() throws IOException {
-        Canvas c1 = presentationTransformer.canvas(loadValidCollection(), loadValidFolgersHa2(), "1r");
-        Canvas c2 = presentationTransformer.canvas(loadValidCollection(), loadValidFolgersHa2(), "11r");
+        Canvas c1 = presentationTransformer.canvas(loadValidCollection(), loadValidFolgersHa2(), "001r");
+        Canvas c2 = presentationTransformer.canvas(loadValidCollection(), loadValidFolgersHa2(), "011r");
 
         checkACanvas(c1);
         checkACanvas(c2);
@@ -146,7 +145,7 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     @Test
     public void annotationListLudwigXV7Test() throws IOException {
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidLudwigXV7(), "2r.all"));
+                loadValidCollection(), loadValidLudwigXV7(), "002r;all"));
     }
 
     /**
@@ -156,17 +155,17 @@ public class PresentationTransformerTest extends BaseArchiveTest {
     @Test
     public void annotationListFolgersHa2Test() throws IOException {
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidFolgersHa2(), "1r.all"));
+                loadValidCollection(), loadValidFolgersHa2(), "001r;all"));
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidFolgersHa2(), "1r.symbol"));
+                loadValidCollection(), loadValidFolgersHa2(), "001r;symbol"));
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidFolgersHa2(), "1r.marginalia"));
+                loadValidCollection(), loadValidFolgersHa2(), "001r;marginalia"));
         checkAnnotationList(presentationTransformer.annotationList(
-                loadValidCollection(), loadValidFolgersHa2(), "1r.underline"));
+                loadValidCollection(), loadValidFolgersHa2(), "001r;underline"));
 
         // Check for name-matching problem
-        AnnotationList l1 = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "1r.all");
-        AnnotationList l2 = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "11r.all");
+        AnnotationList l1 = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "001r;all");
+        AnnotationList l2 = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "011r;all");
 
         assertNotNull("Annotation list missing for 1r.all", l1);
         assertNotNull("Annotation list missing for 11r.all", l2);
@@ -177,21 +176,21 @@ public class PresentationTransformerTest extends BaseArchiveTest {
         assertEquals("Unexpected number of annotations in 11r.all", 12, l2.size());
 
         {
-            AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "front matter 1r.all");
+            AnnotationList ll = presentationTransformer.annotationList(loadValidCollection(), loadValidFolgersHa2(), "frontmatter.flyleaf.001r;all");
             assertNotNull("Failed to create AnnotationList for front matter 1r", ll);
             assertTrue("Unexpected annotations found in annotation list for 'front matter 1r'", ll.getAnnotations().isEmpty());
         }
 
         {
             AnnotationList ll = presentationTransformer.annotationList(
-                    loadValidCollection(), loadValidFolgersHa2(), "1r.all");
+                    loadValidCollection(), loadValidFolgersHa2(), "001r;all");
             assertNotNull("Failed to create AnnotationList for '1r'", ll);
-
+            
             int marg_count = (int) ll.getAnnotations().stream()
                     .map(Annotation::getId)
                     .filter(id -> id.contains("marginalia"))
                     .count();
-            assertEquals("Unexpected number of marginalia found.", 0, marg_count);
+            assertEquals("Unexpected number of marginalia found.", 8, marg_count);
 
             String target = ll.getAnnotations().get(0).getDefaultTarget().getUri();
             assertNotNull(target);
@@ -199,17 +198,6 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
             ll.getAnnotations().forEach(a -> assertEquals(target, a.getDefaultTarget().getUri()));
         }
-    }
-
-    /**
-     * Generate layers from FolgersHa2 and check validity.
-     * @throws IOException if collection or book is not found
-     */
-    @Test
-    public void layerFolgersHa2Test() throws IOException {
-        checkLayer(presentationTransformer.layer(loadValidCollection(), loadValidFolgersHa2(), "all"));
-        checkLayer(presentationTransformer.layer(loadValidCollection(), loadValidFolgersHa2(), "underline"));
-        checkLayer(presentationTransformer.layer(loadValidCollection(), loadValidFolgersHa2(), "marginalia"));
     }
 
     private void checkSequence(Sequence seq) {
@@ -253,19 +241,6 @@ public class PresentationTransformerTest extends BaseArchiveTest {
 
         for (Annotation ann : list) {
             checkAnnotation(ann);
-        }
-    }
-
-    private void checkLayer(Layer layer) {
-        assertNotNull("Layer does not exist.", layer);
-
-        checkId(layer.getId());
-        checkTextValue(layer.getLabel());
-        assertNotNull("Layer 'otherContents' is missing.", layer.getOtherContent());
-        assertFalse("Layer 'otherContent' is empty.", layer.getOtherContent().isEmpty());
-
-        for (String content : layer.getOtherContent()) {
-            checkId(content);
         }
     }
 

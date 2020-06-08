@@ -1,6 +1,7 @@
 package rosa.archive.core;
 
 import org.apache.commons.lang3.StringUtils;
+
 import rosa.archive.model.ArchiveItemType;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookImageRole;
@@ -68,23 +69,13 @@ public class ArchiveNameParser implements ArchiveConstants {
      */
     public BookImageRole role(String imageId) {
         String[] parts = split_name(imageId);
-        if (parts.length < 4) {
-            /*
-                Body matter images may have length == 3, other images
-                will have length > 3
-             */
-            return null;
-        }
-
-        String role = parts[2];
-        for (BookImageRole r : BookImageRole.values()) {
-            if (r.getArchiveName().equals(role)) {
-                return r;
-            }
-        }
-
-        if (parts.length >= 5 && BookImageRole.INSERT.getArchiveName().equals(parts[4])) {
-            return BookImageRole.INSERT;
+        
+        for (int i = 1; i < parts.length - 1; i++) {
+        	for (BookImageRole r : BookImageRole.values()) {
+        		if (r.getArchiveName().equals(parts[i])) {
+        			return r;
+                }
+        	}
         }
 
         return null;
@@ -92,6 +83,7 @@ public class ArchiveNameParser implements ArchiveConstants {
 
     /**
      * Get a short name, a human readable label.
+     * The name may not be unique within the book.
      *
      * @param imageId ID of image in archive
      * @return short name
@@ -107,14 +99,16 @@ public class ArchiveNameParser implements ArchiveConstants {
         if (location != null) {
             short_name.append(location.getDisplay()).append(' ');
         }
+        
         // Strip leading zeros from page number
         if (page != null) {
             short_name.append(page.replaceFirst("^0+(?!$)", "")).append(" ");
         }
-
+        
         if (role != null) {
             short_name.append(role.getDisplay()).append(' ');
         }
+
         if (insertNum != null) {
             short_name.append(insertNum);
         }
@@ -200,5 +194,41 @@ public class ArchiveNameParser implements ArchiveConstants {
 
     private String[] split_name(String name) {
         return name.split(delimiter);
+    }
+    
+    /**
+     * 
+     * @param imageId
+     * @return identifier for image unique within book
+     */
+    public String shortUniqueImageIdInBook(String imageId) {
+    	if (imageId.equals(ArchiveConstants.MISSING_IMAGE)) {
+    		return "missing";
+    	}
+    	
+    	String[] parts = split_name(imageId);
+    	
+    	StringBuilder result = new StringBuilder();
+    	for (int i = 1; i < parts.length - 1; i++) {
+    		result.append(parts[i]);
+    		
+    		if (i != parts.length -2) {
+    			result.append('.');
+    		}
+    	}
+    	return result.toString();
+    }
+    
+    /**
+     * 
+     * @param imageId
+     * @return identifier for image unique within book
+     */
+    public String fullImageIdFromShortId(String bookId, String shortId) {
+    	if (shortId.equals("missing")) {
+    		return ArchiveConstants.MISSING_IMAGE;
+    	}
+    	
+    	return bookId + "." + shortId + ArchiveConstants.TIF_EXT;
     }
 }

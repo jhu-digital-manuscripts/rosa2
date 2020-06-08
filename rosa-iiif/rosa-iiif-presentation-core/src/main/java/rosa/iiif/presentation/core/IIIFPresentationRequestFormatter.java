@@ -45,8 +45,10 @@ public class IIIFPresentationRequestFormatter {
         StringBuilder result = new StringBuilder(base());
         
         for (String s: req.getIdentifier()) {
-            result.append(UriUtil.encodePathSegment(s));
-            result.append('/');
+        	if (s != null && !s.isEmpty()) {
+        		result.append(UriUtil.encodePathSegment(s));
+        		result.append('/');
+        	}
         }
         
         result.append(UriUtil.encodePathSegment(type.getKeyword()));

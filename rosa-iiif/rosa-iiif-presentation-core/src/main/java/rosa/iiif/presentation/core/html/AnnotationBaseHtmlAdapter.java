@@ -205,7 +205,7 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
         writer.writeEndElement();
     }
 
-    void addInternalRefs(BookCollection col, Annotation a, List<InternalReference> refs, XMLStreamWriter writer) throws XMLStreamException {
+    void addInternalRefs(BookCollection col, Book book, Annotation a, List<InternalReference> refs, XMLStreamWriter writer) throws XMLStreamException {
         if (refs == null || refs.isEmpty()) {
             return;
         }
@@ -216,7 +216,7 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
 
         if (hasExtraInternalRef(col, a)) {
             InternalReference annoRef = fromInternalRefAttr(a);
-            writeInternalRef(col, annoRef.getTargets().get(0), writer);
+            writeInternalRef(col, book, annoRef.getTargets().get(0), writer);
         }
 
         for (int i = 0; i < refs.size(); i++) {
@@ -236,21 +236,23 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
                 if (j > 0) {
                     writer.writeCharacters(", ");
                 }
-                writeInternalRef(col, tar, writer);
+                writeInternalRef(col, book, tar, writer);
             }
         }
 
         writer.writeEndElement();
     }
 
-    private void writeInternalRef(BookCollection col, ReferenceTarget target, XMLStreamWriter writer) throws XMLStreamException {
+    private void writeInternalRef(BookCollection col, Book book, ReferenceTarget target, XMLStreamWriter writer) throws XMLStreamException {
         AorLocation loc = col.getAnnotationMap().get(target.getTargetId());
-
-        if (targetId(loc) != null) {
+        
+        String target_id = targetId(book, loc);
+        
+        if (target_id != null) {
             writer.writeStartElement("a");
             writer.writeAttribute("class", "internal-ref");
             writer.writeAttribute("href", "javascript:;");
-            writer.writeAttribute("data-targetId", targetId(loc));
+            writer.writeAttribute("data-targetId", target_id);
             writer.writeAttribute("data-manifestid", manifestId(loc));
             writer.writeCharacters(target.getText());
             writer.writeEndElement();
@@ -283,7 +285,7 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
      * @param refs list of internal references
      * @return newly modified transcription
      */
-    String addInternalRefs(BookCollection col, String transcription, List<InternalReference> refs) {
+    String addInternalRefs(BookCollection col, Book book, String transcription, List<InternalReference> refs) {
         if (transcription == null || transcription.isEmpty()) {
             return "";
         }
@@ -322,7 +324,7 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
                 }
 
                 transcription = decorate(transcription, sourcePrefix, sourceText, sourceSuffix,
-                        target.getTargetId(), label, col);
+                        target.getTargetId(), label, book, col);
             }
         }
 
@@ -354,12 +356,12 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
      * @return decorated HTML-ified transcription
      */
     private String decorate(String transcription, String prefix, String text, String suffix,
-                            String targetId, String label, BookCollection col) {
+                            String targetId, String label, Book book, BookCollection col) {
         // REGEX Groups:                          1                   2               3                 4               5
         Pattern p = Pattern.compile("(" + escapeRegex(prefix) + ")(<a.*>)?(" + escapeRegex(text) + ")(</a>)?(" + escapeRegex(suffix) + ")");
         Matcher matcher = p.matcher(transcription);
 
-        String targetUri = targetId(col.getAnnotationMap().get(targetId));
+        String targetUri = targetId(book, col.getAnnotationMap().get(targetId));
 
         StringBuilder sb = new StringBuilder();
         int start = 0;
@@ -370,7 +372,7 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
             start = matcher.start();
 
             if (matcher.group(2) == null) { // No 'anchor' tag present
-                sb.append(simpleReplace(matcher.group(0), prefix, text, suffix, buildLink(col, text, targetId, label)));
+                sb.append(simpleReplace(matcher.group(0), prefix, text, suffix, buildLink(col, book, text, targetId, label)));
             } else {
                 sb.append(prefix).append(replaceAnchorStart(matcher.group(2), targetUri, label));
                 sb.append(text).append(matcher.group(4)).append(suffix);
@@ -431,10 +433,10 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
         return col.getAnnotationMap().containsKey(target);
     }
 
-    private String buildLink(BookCollection col, String text, String targetId, String label) {
+    private String buildLink(BookCollection col, Book book, String text, String targetId, String label) {
         AorLocation loc = col.getAnnotationMap().get(targetId);
         return "<a class=\"internal-ref\" href=\"javascript:;\" " +
-                "data-targetid=\"" + targetId(loc) + "\" " +
+                "data-targetid=\"" + targetId(book, loc) + "\" " +
                 (label != null ? "data-label=\"" + label + "\" " : "") +
                 "data-manifestid=\"" + manifestId(loc) + "\">" +
                 text +
@@ -499,23 +501,21 @@ public abstract class AnnotationBaseHtmlAdapter<T> implements AnnotationConstant
         writer.writeEndElement();
     }
 
-    private String targetId(AorLocation loc) {
+    private String targetId(Book book, AorLocation loc) {
         if (loc == null) {
             return null;
         }
-
+        
         String uri = null;
 
-        String page = loc.getPage();
-        while (page.startsWith("0")) {
-            page = page.substring(1);
-        }
-
-        if (isNotEmpty(loc.getAnnotation())) {
-//            uri = pres_uris.getAnnotationURI(loc.getCollection(), loc.getBook(), loc.getAnnotation());
-            uri = pres_uris.getCanvasURI(loc.getCollection(), loc.getBook(), page);
-        } else if (isNotEmpty(loc.getPage())) {
-            uri = pres_uris.getCanvasURI(loc.getCollection(), loc.getBook(), page);
+        if (isNotEmpty(loc.getPage())) {
+            BookImage image = book.guessImage(loc.getPage());
+            
+            if (image == null) {
+            	return null;
+            }
+            
+            uri = pres_uris.getCanvasURI(loc.getCollection(), loc.getBook(), image);
         } else if (isNotEmpty(loc.getBook())) {
             uri = pres_uris.getManifestURI(loc.getCollection(), loc.getBook());
         } else if (isNotEmpty(loc.getCollection())) {

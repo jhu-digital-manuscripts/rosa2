@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
@@ -36,14 +35,12 @@ public class CollectionTransformer implements TransformerConstants {
     private static final int MAX_THUMBNAILS = 3;
     private static final String LANGUAGE_DEFAULT = "en";
 
-    private final ArchiveNameParser nameParser;
     private final IIIFPresentationCache cache;
     private final PresentationUris pres_uris;
 
     public CollectionTransformer(IIIFPresentationCache cache, PresentationUris pres_uris) {
         this.cache = cache;
         this.pres_uris = pres_uris;
-        this.nameParser = new ArchiveNameParser();
     }
 
     public Collection collection(BookCollection collection) {
@@ -207,14 +204,15 @@ public class CollectionTransformer implements TransformerConstants {
         
         for (BookImage image : book.getImages()) {
             if (image.getLocation() == BookImageLocation.BODY_MATTER && !image.isMissing()) {
-                String id = pres_uris.getImageURI(collection.getId(), book.getId(), image.getId(), cropped);
-
+                String id = pres_uris.getImageServiceURI(collection.getId(), book.getId(), image.getId(), cropped);
+                String static_image_url = pres_uris.getJpegURI (collection.getId(), book.getId(), image.getId(), cropped);
+                
                 Image thumb = new Image(
-                        id,
+                        static_image_url,
                         new IIIFImageService(IIIF_IMAGE_CONTEXT, id, IIIF_IMAGE_PROFILE_LEVEL2,
                                 image.getWidth(), image.getHeight(), -1, -1, null)
                 );
-                thumb.setDepicts(pres_uris.getCanvasURI(collection.getId(), book.getId(), nameParser.shortName(image.getId())));
+                thumb.setDepicts(pres_uris.getCanvasURI(collection.getId(), book.getId(), image));
 
                 list.add(thumb);
 

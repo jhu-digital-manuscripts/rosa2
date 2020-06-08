@@ -1,6 +1,7 @@
 package rosa.iiif.presentation.endpoint;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -8,24 +9,30 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.HashSet;
+import java.util.Set;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
 import rosa.archive.core.ArchiveCoreModule;
 import rosa.archive.core.Store;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookImage;
 import rosa.iiif.image.core.IIIFRequestFormatter;
 import rosa.iiif.presentation.core.IIIFPresentationRequestFormatter;
 import rosa.iiif.presentation.core.PresentationUris;
 import rosa.iiif.presentation.core.StaticResourceRequestFormatter;
 import rosa.iiif.presentation.core.jhsearch.JHSearchService;
+import rosa.iiif.presentation.model.AnnotationListType;
 import rosa.iiif.presentation.model.PresentationRequest;
 import rosa.iiif.presentation.model.PresentationRequestType;
 import rosa.search.model.SearchOptions;
@@ -46,18 +53,23 @@ public class ITIIIFPresentationServlet {
                 injector.getInstance(IIIFRequestFormatter.class), injector.getInstance(StaticResourceRequestFormatter.class));
     }
 
-    private void check_json_syntax(InputStream is) throws Exception {
+    private JsonNode check_json_syntax(InputStream is) throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(DeserializationFeature.FAIL_ON_READING_DUP_TREE_KEY);
-        objectMapper.readTree(is);
+        JsonNode root = objectMapper.readTree(is);
+        
+        // In case this is JSON-LD ensure that there are no duplicate @id statements
+        check_json_ld_id_dups(root);
+        
+        return root;
     }
 
     private void check_retrieve_json(String url) throws Exception {
         HttpURLConnection con = (HttpURLConnection) (new URL(url)).openConnection();
-
+System.err.println(url);
         con.connect();
         int code = con.getResponseCode();
-        assertEquals(200, code);
+        assertEquals("GET to " + url + " failed: " + con.getResponseMessage(), 200, code);
 
         try (InputStream is = con.getInputStream()) {
             check_json_syntax(is);
@@ -69,11 +81,63 @@ public class ITIIIFPresentationServlet {
 
         con.connect();
         int code = con.getResponseCode();
-        assertEquals(200, code);
+        
+        assertEquals("GET to " + url + " failed: " + con.getResponseMessage(), 200, code);
 
         try (InputStream is = con.getInputStream()) {
             check_search_info_syntax(is);
         }
+    }
+
+    // Check a JSON-LD document to see if any of the @ids are duplicated.
+    private void check_json_ld_id_dups(JsonNode root) {
+//    	try {
+//    	FileWriter w = new FileWriter("/tmp/blah.json");
+//    	w.append(root.toString());
+//    	w.close();
+//    	} catch (Exception e) {
+//    		throw new RuntimeException(e);
+//    	}
+    	
+    	check_json_ld_id_dups(root, new HashSet<String>(), "");
+    }
+    
+    // Also recurses into annotation lists
+    private void check_json_ld_id_dups(JsonNode node, Set<String> ids, String parent_name) {    	
+    	if (node.isObject()) {
+    		node.fields().forEachRemaining(e -> {    			
+    			if (e.getKey().equals("@id")) {
+    				String id = e.getValue().asText();
+    				
+    				assertFalse("Duplicate @id: " + id, ids.contains(id));
+    	
+//    				if (ids.contains(id)) {
+//    					System.err.println("Error: Duplicate @id: " + id);
+//    				}
+    				
+    				// Ignore missing image which may occur several times.
+    				if (!id.endsWith("missing;image/annotation") && !id.contains("missing_image")) {
+    					ids.add(id);
+    				}
+
+    				// System.err.println("@id " + id);
+    			} else if (e.getKey().equals("service")) {
+    				// There will be duplicate image services from thumbnail and canvas
+    			} else if (e.getKey().equals("thumbnail") && parent_name.equals("sequences")) {
+    			    // Do not check duplicates in thumbnail of sequence because it will be present in a canvas
+    			} else {
+    				JsonNode val = e.getValue();
+    				
+    				if (val.isObject()) {
+    					check_json_ld_id_dups(val, ids, e.getKey());
+    				} else if (val.isArray()) {
+    					val.elements().forEachRemaining(c -> {
+    						check_json_ld_id_dups(c, ids, e.getKey());
+    					});
+    				}
+    			}
+    		});
+    	}
     }
 
     private void check_search_info_syntax(InputStream is) throws Exception {
@@ -94,17 +158,25 @@ public class ITIIIFPresentationServlet {
 
     /**
      * Test that each book and collection can be retrieved successfully through
-     * the IIIF Presentation API.
+     * the IIIF Presentation API. It also retrieves annotation lists and checks them.
      * 
      * @throws Exception
      */
     @Test
-    public void testRetrieveCollectionsAndManifests() throws Exception {
+    public void testRetrieveCollectionsManifestsAndAnnotationLists() throws Exception {
         for (String col : store.listBookCollections()) {
             check_retrieve_json(pres_uris.getCollectionURI(col));
 
+            BookCollection c = store.loadBookCollection(col, null);
+            
             for (String book : store.listBooks(col)) {
                 check_retrieve_json(pres_uris.getManifestURI(col, book));
+                
+                Book b = store.loadBook(c, book, null);
+                
+                for (BookImage image: b.getImages()) {
+                    check_retrieve_json(pres_uris.getAnnotationListURI(col, book, image, AnnotationListType.ALL));
+                }
             }
         }
     }
@@ -159,7 +231,7 @@ public class ITIIIFPresentationServlet {
             String search = pres_uris.getJHSearchURI(req,
                     "text:'one'", new SearchOptions(0, 30), null);
             HttpURLConnection con = (HttpURLConnection) (new URL(search)).openConnection();
-            System.out.println(" ### " + search);
+            // System.out.println(" ### " + search);
             con.connect();
             int code = con.getResponseCode();
             assertEquals(200, code);

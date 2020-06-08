@@ -96,6 +96,7 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
         writer.writeStartElement(TRANSCRIPTION_ELEMENT);
         writer.writeCharacters(addInternalRefs(
                 col,
+                book,
                 StringEscapeUtils.escapeHtml4(transcription.toString()),
                 iRefs
         ));
@@ -112,7 +113,7 @@ public class MarginaliaHtmlAdapter extends AnnotationBaseHtmlAdapter<Marginalia>
 
         // Add list of X-refs
         addXRefs(xrefs, writer);
-        addInternalRefs(col, annotation, iRefs, writer);
+        addInternalRefs(col, book, annotation, iRefs, writer);
 
         writer.writeEndElement();
     }

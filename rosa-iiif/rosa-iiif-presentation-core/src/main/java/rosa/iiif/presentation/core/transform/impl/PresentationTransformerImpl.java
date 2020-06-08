@@ -21,7 +21,6 @@ import rosa.iiif.presentation.core.transform.PresentationTransformer;
 import rosa.iiif.presentation.model.AnnotationList;
 import rosa.iiif.presentation.model.Canvas;
 import rosa.iiif.presentation.model.Collection;
-import rosa.iiif.presentation.model.Layer;
 import rosa.iiif.presentation.model.Manifest;
 import rosa.iiif.presentation.model.Range;
 import rosa.iiif.presentation.model.Sequence;
@@ -33,7 +32,6 @@ public class PresentationTransformerImpl implements PresentationTransformer {
     private SequenceTransformer seq;
     private CanvasTransformer canvas;
     private RangeTransformer range;
-    private LayerTransformer lay;
     private AnnotationTransformer ann;
     private AnnotationListTransformer list;
 
@@ -52,7 +50,6 @@ public class PresentationTransformerImpl implements PresentationTransformer {
         this.canvas = new CanvasTransformer(pres_uris);
         this.ann = new AnnotationTransformer(pres_uris, nameParser, new AdapterSet(html_adapters));
         this.range = new RangeTransformer(pres_uris);
-        this.lay = new LayerTransformer(pres_uris);
         this.seq = new SequenceTransformer(pres_uris, canvas);
         this.list = new AnnotationListTransformer(pres_uris, ann);
         this.man = new ManifestTransformer(pres_uris, seq, range);
@@ -76,11 +73,6 @@ public class PresentationTransformerImpl implements PresentationTransformer {
     @Override
     public Range range(BookCollection collection, Book book, String name) {
         return range.transform(collection, book, name);
-    }
-
-    @Override
-    public Layer layer(BookCollection collection, Book book, String name) {
-        return lay.transform(collection, book, name);
     }
 
     @Override
