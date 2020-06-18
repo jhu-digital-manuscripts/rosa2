@@ -106,7 +106,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
 
         a.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), image, anno.getId()));
         a.setType(IIIFNames.OA_ANNOTATION);
-        a.setMotivation(IIIFNames.SC_PAINTING);
+        a.setMotivation(IIIFNames.OA_COMMENTING);
         a.getMetadata().put("type", new HtmlValue(anno.getClass().getSimpleName()));
 
         String text = locationIcon + " " + anno.toPrettyString();
@@ -287,7 +287,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
 
             ann.setLabel("Transcription for page " + page, "en");
             ann.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), image, "transcription"));
-            ann.setMotivation(SC_PAINTING);
+            ann.setMotivation(OA_COMMENTING);
             ann.setType(OA_ANNOTATION);
 
             ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
@@ -316,7 +316,7 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
             Annotation ann = new Annotation();
             ann.setLabel("Illustration(s) on " + page, "en");
             ann.setId(pres_uris.getAnnotationURI(collection.getId(), book.getId(), image, anno_name));
-            ann.setMotivation(SC_PAINTING);
+            ann.setMotivation(OA_COMMENTING);
             ann.setType(OA_ANNOTATION);
 
             CharacterNames names = collection.getCharacterNames();

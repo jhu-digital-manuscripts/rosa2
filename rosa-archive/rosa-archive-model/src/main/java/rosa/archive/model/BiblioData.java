@@ -23,7 +23,7 @@ public class BiblioData implements Serializable {
     private ObjectRef[] authors;
     private String[] notes;
     private ObjectRef[] readers;
-    private String[] aorWebsite;
+    private String[] websites;
 
     private String language;
 
@@ -138,12 +138,12 @@ public class BiblioData implements Serializable {
         this.readers = readers;
     }
 
-    public String[] getAorWebsite() {
-        return aorWebsite;
+    public String[] getWebsites() {
+        return websites;
     }
 
-    public void setAorWebsite(String[] aorWebsite) {
-        this.aorWebsite = aorWebsite;
+    public void setWebsites(String[] websites) {
+        this.websites = websites;
     }
 
     @Override
@@ -164,7 +164,7 @@ public class BiblioData implements Serializable {
                 Arrays.equals(authors, that.authors) &&
                 Arrays.equals(notes, that.notes) &&
                 Arrays.equals(readers, that.readers) &&
-                Arrays.equals(aorWebsite, that.aorWebsite) &&
+                Arrays.equals(websites, that.websites) &&
                 Objects.equals(language, that.language);
     }
 
@@ -175,7 +175,7 @@ public class BiblioData implements Serializable {
         result = 31 * result + Arrays.hashCode(authors);
         result = 31 * result + Arrays.hashCode(notes);
         result = 31 * result + Arrays.hashCode(readers);
-        result = 31 * result + Arrays.hashCode(aorWebsite);
+        result = 31 * result + Arrays.hashCode(websites);
         return result;
     }
 
@@ -195,7 +195,7 @@ public class BiblioData implements Serializable {
                 ", authors=" + Arrays.toString(authors) +
                 ", notes=" + Arrays.toString(notes) +
                 ", readers=" + Arrays.toString(readers) +
-                ", aorWebsite=" + Arrays.toString(aorWebsite) +
+                ", website=" + Arrays.toString(websites) +
                 ", language='" + language + '\'' +
                 '}';
     }

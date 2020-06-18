@@ -157,10 +157,10 @@ public class ManifestTransformer implements TransformerConstants {
             putMetadata(KEY_READER, bd.getReaders(), lang, map);
             putMetadata(KEY_AUTHOR, bd.getAuthors(), lang, map);
 
-            String sites = Arrays.stream(bd.getAorWebsite())
+            String sites = Arrays.stream(bd.getWebsites())
                     .map(url -> "<a target=\"_blank\" href=\"" + url + "\">" + url + "</a>")
                     .collect(Collectors.joining(", "));
-            map.put("AORWebsite", new HtmlValue(sites, lang));
+            map.put("website", new HtmlValue(sites, lang));
             // TODO book texts
         }
 
