@@ -76,7 +76,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
             "                <name>Moo Jones</name>\n" +
             "                <id>https://example.com/reader/moo</id>\n" +
             "            </reader>\n" +
-            "            <aorWebsite>https://example.com/aor</aorWebsite>\n" +
+            "            <website>https://example.com/aor</website>\n" +
             "            <note>Note</note>\n" +
             "        </bibliography>\n" +
             "        <bibliography lang=\"fr\">\n" +
@@ -98,7 +98,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
             "                <name>Moo Jones</name>\n" +
             "                <id>https://example.com/reader/moo</id>\n" +
             "            </reader>\n" +
-            "            <aorWebsite>https://example.com/aor</aorWebsite>\n" +
+            "            <website>https://example.com/aor</website>\n" +
             "        </bibliography>\n" +
             "    </bibliographies>\n" +
             "</book>";
@@ -293,7 +293,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         d2.setDetails(new String[]{"Bibliographic Details"});
         d2.setAuthors(new ObjectRef[]{new ObjectRef("Author", "https://example.com/authorial")});
         d2.setReaders(new ObjectRef[]{new ObjectRef("Moo Jones", "https://example.com/reader/moo")});
-        d2.setAorWebsite(new  String[] {"https://example.com/aor"});
+        d2.setWebsites(new  String[] {"https://example.com/aor"});
         metadata.getBiblioDataMap().put("fr", d2);
 
         BiblioData d1 = new BiblioData();
@@ -310,7 +310,7 @@ public class BookMetadataSerializerTest extends BaseSerializerTest<BookMetadata>
         d1.setDetails(new String[] {"Bibliographic Details"});
         d1.setAuthors(new ObjectRef[] {new ObjectRef("Author", "https://example.com/authorial")});
         d1.setReaders(new ObjectRef[]{new ObjectRef("Moo Jones", "https://example.com/reader/moo")});
-        d1.setAorWebsite(new  String[] {"https://example.com/aor"});
+        d1.setWebsites(new  String[] {"https://example.com/aor"});
         d1.setNotes(new String[] {"Note"});
         metadata.getBiblioDataMap().put("en", d1);
 

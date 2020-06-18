@@ -136,8 +136,8 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             for (ObjectRef reader : data.getReaders()) {
                 createObjectRefElement("reader", reader, bib, doc);
             }
-            for (String uri : data.getAorWebsite()) {
-                valueElement("aorWebsite", uri, bib, doc);
+            for (String uri : data.getWebsites()) {
+                valueElement("website", uri, bib, doc);
             }
             for (String detail : data.getDetails()) {
                 valueElement("detail", detail, bib, doc);
@@ -244,7 +244,7 @@ public class BookMetadataSerializer implements Serializer<BookMetadata> {
             data.setDetails(getTextValues("detail", el).toArray(new String[0]));
             data.setAuthors(getObjectRefs("author", el));
             data.setReaders(getObjectRefs("reader", el));
-            data.setAorWebsite(getTextValues("aorWebsite", el).toArray(new String[0]));
+            data.setWebsites(getTextValues("website", el).toArray(new String[0]));
             data.setNotes(getTextValues("note", el).toArray(new String[0]));
 
             map.put(lang, data);

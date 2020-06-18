@@ -154,11 +154,11 @@ public class CollectionTransformer implements TransformerConstants {
             if (bd.getDateLabel() != null && !bd.getDateLabel().isEmpty()) {
                 map.put("Date", new HtmlValue(bd.getDateLabel(), "en"));
             }
-            if (bd.getAorWebsite() != null && bd.getAorWebsite().length > 0) {
-                String sites = Arrays.stream(bd.getAorWebsite())
+            if (bd.getWebsites() != null && bd.getWebsites().length > 0) {
+                String sites = Arrays.stream(bd.getWebsites())
                         .map(url -> "<a target=\"_blank\" href=\"" + url + "\">" + url + "</a>")
                         .collect(Collectors.joining(", "));
-                map.put("AORWebsite", new HtmlValue(sites, "en"));
+                map.put("Website", new HtmlValue(sites, "en"));
             }
 
             ref.setMetadata(map);
