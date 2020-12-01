@@ -96,6 +96,14 @@ public class AnnotationListTransformer implements TransformerConstants {
 
             annotations.addAll(anns);
             return list;
+        } else if (listType == AnnotationListType.HTML_ANNOS) {
+            List<Annotation> anns = annotationTransformer.htmlAnnotationsForPage(collection, book, image);
+            if (anns == null || anns.isEmpty()) {
+                return null;
+            }
+
+            annotations.addAll(anns);
+            return list;        	
         }
 
         // Annotated page can be NULL if no transcriptions are present.
