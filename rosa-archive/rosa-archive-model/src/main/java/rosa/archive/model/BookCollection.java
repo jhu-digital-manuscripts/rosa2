@@ -23,6 +23,7 @@ public class BookCollection implements HasId, Serializable {
     private NarrativeSections narrativeSections;
     private SHA1Checksum checksums;
     private BookImage missingImage;
+    private HTMLAnnotations htmlAnnos;
 
     private ReferenceSheet peopleRef;
     private ReferenceSheet locationsRef;
@@ -112,6 +113,14 @@ public class BookCollection implements HasId, Serializable {
 
     public void setNarrativeSections(NarrativeSections narrativeSections) {
         this.narrativeSections = narrativeSections;
+    }
+
+    public HTMLAnnotations getHTMLAnnotations() {
+    	return htmlAnnos;
+    }
+    
+    public void setHTMLAnnotations(HTMLAnnotations annos) {
+    	this.htmlAnnos = annos;
     }
 
     /**
@@ -205,12 +214,13 @@ public class BookCollection implements HasId, Serializable {
                 Objects.equals(locationsRef, that.locationsRef) &&
                 Objects.equals(booksRef, that.booksRef) &&
                 Objects.equals(metadata, that.metadata) &&
-                Objects.equals(annotationMap, that.annotationMap);
+                Objects.equals(annotationMap, that.annotationMap) &&
+                Objects.equals(htmlAnnos, that.htmlAnnos);
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(id, characterNames, illustrationTitles, narrativeSections, checksums, missingImage, peopleRef, locationsRef, booksRef, metadata, annotationMap);
+        int result = Objects.hash(id, characterNames, illustrationTitles, narrativeSections, checksums, missingImage, peopleRef, locationsRef, booksRef, metadata, annotationMap, htmlAnnos);
         result = 31 * result + Arrays.hashCode(books);
         return result;
     }

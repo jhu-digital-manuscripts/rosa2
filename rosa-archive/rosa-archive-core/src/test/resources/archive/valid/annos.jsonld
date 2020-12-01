@@ -1,0 +1,14 @@
+[
+    {
+        "id": "rosa:annos.jsonld#0",
+        "type": "Annotation",
+        "body": {
+            "format": "text/html",
+            "type": "TextualBody",
+            "value": "<div>Here is an annotation</div>"
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld",
+        "via": "http://example.com/blah.html",
+        "target": "rosa:LudwigXV7.003r.tif"
+    }
+]
