@@ -52,6 +52,7 @@ import rosa.archive.model.CollectionMetadata;
 import rosa.archive.model.CropData;
 import rosa.archive.model.CropInfo;
 import rosa.archive.model.FileMap;
+import rosa.archive.model.HTMLAnnotations;
 import rosa.archive.model.HasId;
 import rosa.archive.model.HashAlgorithm;
 import rosa.archive.model.IllustrationTagging;
@@ -151,6 +152,7 @@ public class StoreImpl implements Store, ArchiveConstants {
         collection.setPeopleRef(loadItem(PEOPLE, collectionGroup, ReferenceSheet.class, errors));
         collection.setLocationsRef(loadItem(LOCATIONS, collectionGroup, ReferenceSheet.class, errors));
         collection.setBooksRef(loadItem(BOOKS, collectionGroup, BookReferenceSheet.class, errors));
+        collection.setHTMLAnnotations(loadItem(HTML_ANNOS, collectionGroup, HTMLAnnotations.class, errors));
 
         Properties props = new Properties();
         try (InputStream configIn = collectionGroup.getByteStream(COLLECTION_CONFIG)) {

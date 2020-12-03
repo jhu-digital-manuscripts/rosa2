@@ -15,6 +15,7 @@ import rosa.archive.core.serialize.BookStructureSerializer;
 import rosa.archive.core.serialize.CharacterNamesSerializer;
 import rosa.archive.core.serialize.CropInfoSerializer;
 import rosa.archive.core.serialize.FileMapSerializer;
+import rosa.archive.core.serialize.HTMLAnnotationsSerializer;
 import rosa.archive.core.serialize.IllustrationTaggingSerializer;
 import rosa.archive.core.serialize.IllustrationTitlesSerializer;
 import rosa.archive.core.serialize.ImageListSerializer;
@@ -90,6 +91,7 @@ public abstract class BaseSearchTest {
                 new ReferenceSheetSerializer(),
                 new BookReferenceSheetSerializer(),
                 new FileMapSerializer(),
+                new HTMLAnnotationsSerializer(),
                 new BookDescriptionSerializer()
         )));
 
