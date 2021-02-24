@@ -248,4 +248,13 @@ public class ModelEqualsAndHashCodeTest {
                 .verify();
     }
 
+    @Test
+    public void htmlAnnotationsTest() {
+        EqualsVerifier
+                .forClass(HTMLAnnotations.class)
+                .usingGetClass()
+                .allFieldsShouldBeUsed()
+                .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS)
+                .verify();
+    }
 }

@@ -28,6 +28,7 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
 import rosa.archive.model.CharacterNames;
+import rosa.archive.model.HTMLAnnotations;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
@@ -243,9 +244,10 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 		}
 
 		IllustrationTagging tag = book.getIllustrationTagging();
-
+		HTMLAnnotations annos = col.getHTMLAnnotations();
+		
 		if (tag != null) {
-			index(col, book, image, doc, tag);
+			index(col, book, image, doc, tag, annos);
 		}
 
 		// Index transcription text that appears on this page
@@ -259,7 +261,7 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 
 	}
 
-	private void index(BookCollection col, Book book, BookImage image, Document doc, IllustrationTagging imgtag) {
+	private void index(BookCollection col, Book book, BookImage image, Document doc, IllustrationTagging imgtag, HTMLAnnotations annos) {
 		IllustrationTitles titles = col.getIllustrationTitles();
 		CharacterNames char_names = col.getCharacterNames();
 
@@ -309,6 +311,17 @@ public class JHSearchLuceneMapper extends BaseLuceneMapper {
 			text.append(", ");
 		}
 
+		if (annos != null) {
+			// TODO: Assume the HTML annos are about illustrations
+		
+			String htmlanno = annos.getAnnotation(image.getId());
+		
+			if (htmlanno != null) {
+				// TODO Hack to remove elements
+				text.append(htmlanno.replaceAll("\\<.*?\\>", " "));
+			}
+		}
+		
 		if (text.length() > 0) {
 			addField(doc, JHSearchField.ILLUSTRATION, SearchFieldType.ENGLISH, text.toString());
 		}

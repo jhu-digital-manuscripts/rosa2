@@ -87,6 +87,8 @@ public interface ArchiveConstants {
     String LOCATIONS = "locations.csv";
 
     String BOOKS = "books.csv";
+    
+    String HTML_ANNOS = "annos.jsonld";
 
     String ID_LOCATION_MAP = "id_locations.csv";
 

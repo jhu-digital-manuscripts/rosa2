@@ -6,9 +6,7 @@ This project provides tools to manage archives of data and services to provide a
 
 # Building
 
-See the build scripts. The archive specified as archive.path must contain collections either named aor, rose, pizan, or top in order to support search.
+Java 8 is required. Integration tests will fail on Java 11.
 
-
-
-
+See the build scripts. The archive specified as archive.path must contain collections either named aor, rose, pizan, or dlmm in order to support search.
 

@@ -23,6 +23,7 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.CharacterNames;
+import rosa.archive.model.HTMLAnnotations;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.aor.Calculation;
@@ -430,5 +431,31 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
     private boolean isNotEmpty(String str) {
         return str != null && !str.isEmpty();
     }
+
+	public List<Annotation> htmlAnnotationsForPage(BookCollection col, Book book, BookImage image) {
+		HTMLAnnotations annos = col.getHTMLAnnotations();
+		
+		if (annos == null) {
+			return null;
+		}
+		
+		String content = annos.getAnnotation(image.getId());
+		
+		if (content == null) {
+			return null;
+		}
+		
+        Annotation ann = new Annotation();
+        ann.setLabel("Annotation on " + image.getName(), "en");
+        ann.setId(pres_uris.getAnnotationURI(col.getId(), book.getId(), image, "htmlanno1"));
+        ann.setMotivation(OA_COMMENTING);
+        ann.setType(OA_ANNOTATION);
+        ann.setDefaultSource(new AnnotationSource(null, IIIFNames.DC_TEXT, "text/html", content, "en"));
+        ann.setDefaultTarget(locationOnCanvas(image, Location.INTEXT));
+        
+        List<Annotation> result = new ArrayList<>();
+        result.add(ann);
+        return result;
+	}
 
 }

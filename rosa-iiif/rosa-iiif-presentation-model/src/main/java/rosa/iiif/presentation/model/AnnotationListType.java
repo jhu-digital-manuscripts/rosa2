@@ -2,6 +2,7 @@ package rosa.iiif.presentation.model;
 
 public enum AnnotationListType {
     ALL,
+    HTML_ANNOS,
 
     // Rose specific
     ILLUSTRATION,

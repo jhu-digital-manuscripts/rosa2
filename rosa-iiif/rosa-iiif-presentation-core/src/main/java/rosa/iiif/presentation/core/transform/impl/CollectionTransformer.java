@@ -90,7 +90,7 @@ public class CollectionTransformer implements TransformerConstants {
             // Add references and search services for parent collections
             String parentURI = pres_uris.getCollectionURI(parentCol.getId());
             parents.add(new Within(parentURI, SC_COLLECTION, parentCol.getLabel()));
-            col.addService(new Service( JHSearchService.CONTEXT_URI, parentURI, IIIF_SEARCH_PROFILE, parentCol.getLabel()));
+            col.addService(new Service( JHSearchService.CONTEXT_URI, parentURI + JHSearchService.RESOURCE_PATH, IIIF_SEARCH_PROFILE, parentCol.getLabel()));
         }
         col.setWithin(parents.toArray(new Within[0]));
 
