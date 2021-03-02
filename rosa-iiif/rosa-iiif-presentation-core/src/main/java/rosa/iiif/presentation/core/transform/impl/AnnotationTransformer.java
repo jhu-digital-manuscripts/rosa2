@@ -359,55 +359,55 @@ public class AnnotationTransformer implements TransformerConstants, AORAnnotated
                 if (isNotEmpty(ill.getTitles())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Titles:", "class", "bold");
-                    xml.writeCharacters(sb_titles.toString());
+                    xml.writeCharacters(" " + sb_titles.toString());
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getCharacters())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Characters:", "class", "bold");
-                    xml.writeCharacters(sb_names.toString());
+                    xml.writeCharacters(" " + sb_names.toString());
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getTextualElement())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Textual Elements:", "class", "bold");
-                    xml.writeCharacters(ill.getTextualElement());
+                    xml.writeCharacters(" " + ill.getTextualElement());
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getCostume())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Costume:", "class", "bold");
-                    xml.writeCharacters(ill.getCostume());
+                    xml.writeCharacters(" " + ill.getCostume());
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getInitials())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Initials:", "class", "bold");
-                    xml.writeCharacters(ill.getInitials());
+                    xml.writeCharacters(" " + ill.getInitials());
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getObject())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Object:", "class", "bold");
-                    xml.writeCharacters(ill.getObject());
+                    xml.writeCharacters(" " + ill.getObject());
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getLandscape())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Landscape:", "class", "bold");
-                    xml.writeCharacters(ill.getLandscape());
+                    xml.writeCharacters(" " + ill.getLandscape());
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getArchitecture())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Architecture:", "class", "bold");
-                    xml.writeCharacters(ill.getArchitecture());
+                    xml.writeCharacters(" " + ill.getArchitecture());
                     xml.writeEndElement();
                 }
                 if (isNotEmpty(ill.getOther())) {
                     xml.writeStartElement("p");
                     addSimpleElement(xml, "span", "Other:", "class", "bold");
-                    xml.writeCharacters(ill.getOther());
+                    xml.writeCharacters(" " + ill.getOther());
                     xml.writeEndElement();
                 }
 
