@@ -168,6 +168,11 @@ public class IIIFPresentationServlet extends HttpServlet {
             raw_path = raw_path.substring(0, raw_path.length() - JHSearchService.RESOURCE_PATH.length());
 
             String query = req.getParameter(JHSearchService.QUERY_PARAM);
+            
+            if (query == null) {
+            	query = "";
+            }
+            
             int offset = get_int_param(req, JHSearchService.OFFSET_PARAM, 0);
             int max = get_int_param(req, JHSearchService.MAX_MATCHES_PARAM, -1);
             String sort_order = req.getParameter(JHSearchService.SORT_ORDER_PARAM);
