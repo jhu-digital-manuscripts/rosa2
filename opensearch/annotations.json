@@ -1,0 +1,114 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "latin": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "latin_stemmer"]
+        },
+        "old_french": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "french_stemmer", "asciifolding"]
+        }
+      },
+      "filter": {
+        "latin_stemmer": {
+          "type": "stemmer",
+          "language": "light_german"
+        },
+        "french_stemmer": {
+          "type": "stemmer",
+          "language": "light_french"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "canvas_id": { "type": "keyword" },
+      "manifest_id": { "type": "keyword" },
+      "collection_id": { "type": "keyword" },
+      "type": { "type": "keyword" },
+      "annotator": { "type": "keyword" },
+      "topic": { "type": "keyword" },
+      "color": { "type": "keyword" },
+      "orientation": { "type": "keyword" },
+      "method": { "type": "keyword" },
+      "hand": { "type": "keyword" },
+      "language": { "type": "keyword" },
+      "image_name": { "type": "keyword" },
+      "text": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "translation": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "emphasis": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "cross_reference": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "anchor_text": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "people": { "type": "keyword" },
+      "books": { "type": "keyword" },
+      "locations": { "type": "keyword" },
+      "symbols": { "type": "keyword" }
+    }
+  }
+}

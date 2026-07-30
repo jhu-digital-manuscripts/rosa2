@@ -5,372 +5,107 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>rosa</groupId>
-    <artifactId>rosa-parent</artifactId>
-    <packaging>pom</packaging>
-    <version>1.4.0</version>
+    <artifactId>rosa2</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-    <scm>
-        <connection>scm:git:https://github.com/jhu-digital-manuscripts/rosa2.git</connection>
-    </scm>
-
-    <modules>
-        <module>rosa-archive</module>
-        <module>rosa-iiif</module>
-        <module>rosa-search</module>
-    </modules>
+    <name>rosa2</name>
+    <description>CLI tool for managing rosa digital manuscript archives</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mvn.compiler.source>1.8</mvn.compiler.source>
-        <mvn.compiler.target>1.8</mvn.compiler.target>
-
-        <!-- Maven plugins versions -->
-        <mvn.compiler.version>3.1</mvn.compiler.version>
-        <mvn.javadoc.version>2.9.1</mvn.javadoc.version>
-        <mvn.assembly.version>2.4.1</mvn.assembly.version>
-        <mvn.jar.version>2.5</mvn.jar.version>
-        <mvn.war.plugin.version>2.6</mvn.war.plugin.version>
-        <mvn.source.plugin.version>2.4</mvn.source.plugin.version>
-        <mvn.buildnumber.plugin.version>1.4</mvn.buildnumber.plugin.version>
-        <mvn.exec.plugin.version>1.5.0</mvn.exec.plugin.version>
-	<mvn.failsafe.plugin.version>2.20.1</mvn.failsafe.plugin.version>
-	<mvn.tomcat.plugin.version>2.2</mvn.tomcat.plugin.version>	
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
 
         <!-- Dependency versions -->
-        <guice.version>4.0</guice.version>
-        <jsonld-java.version>0.5.1</jsonld-java.version>
-        <apache.poi.version>4.1.2</apache.poi.version>
-        <commons-lang3.version>3.3.2</commons-lang3.version>
-        <commons-io.version>2.4</commons-io.version>
-        <commons-codec.version>1.9</commons-codec.version>
-        <commons-cli.version>1.2</commons-cli.version>
-        <lucene.version>7.4.0</lucene.version>
+        <picocli.version>4.7.7</picocli.version>
+        <jackson.version>2.18.2</jackson.version>
+        <junit.version>5.11.4</junit.version>
+        <jqwik.version>1.9.2</jqwik.version>
+
+        <!-- Plugin versions -->
+        <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+        <maven-shade-plugin.version>3.6.0</maven-shade-plugin.version>
+        <maven-surefire-plugin.version>3.5.2</maven-surefire-plugin.version>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- External dependencies -->
+    <dependencies>
+        <!-- CLI parsing -->
+        <dependency>
+            <groupId>info.picocli</groupId>
+            <artifactId>picocli</artifactId>
+            <version>${picocli.version}</version>
+        </dependency>
 
-            <dependency>
-                <groupId>com.google.inject</groupId>
-                <artifactId>guice</artifactId>
-                <version>${guice.version}</version>
-            </dependency>
+        <!-- JSON processing -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
 
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-multibindings</artifactId>
-                <version>${guice.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-assistedinject</artifactId>
-                <version>${guice.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-servlet</artifactId>
-                <version>${guice.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.github.jsonld-java</groupId>
-                <artifactId>jsonld-java</artifactId>
-                <version>${jsonld-java.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi</artifactId>
-                <version>${apache.poi.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi-ooxml</artifactId>
-                <version>${apache.poi.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${commons-lang3.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>${commons-io.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>${commons-codec.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-cli</groupId>
-                <artifactId>commons-cli</artifactId>
-                <version>${commons-cli.version}</version>
-            </dependency>
-
-            <dependency>
-                <artifactId>servlet-api</artifactId>
-                <groupId>javax.servlet</groupId>
-                <version>2.5</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.json</groupId>
-                <artifactId>json</artifactId>
-                <version>20140107</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.apache.lucene</groupId>
-              <artifactId>lucene-core</artifactId>
-              <version>${lucene.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.apache.lucene</groupId>
-              <artifactId>lucene-highlighter</artifactId>
-              <version>${lucene.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.apache.lucene</groupId>
-              <artifactId>lucene-analyzers-common</artifactId>
-              <version>${lucene.version}</version>
-            </dependency>
-
-            <dependency>
-              <groupId>org.apache.lucene</groupId>
-              <artifactId>lucene-analyzers-icu</artifactId>
-              <version>${lucene.version}</version>
-            </dependency>	    
-
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-queryparser</artifactId>
-                <version>${lucene.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-facet</artifactId>
-                <version>${lucene.version}</version>
-            </dependency>
-	    
-            <dependency>
-                <groupId>com.twelvemonkeys.imageio</groupId>
-                <artifactId>imageio-tiff</artifactId>
-                <version>3.2.1</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa</groupId>
-                <artifactId>lucene-latin-stemmer</artifactId>
-                <version>1.1.0</version>
-            </dependency>
-
-            <!-- Testing dependencies -->
-
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.11</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-all</artifactId>
-                <version>1.9.5</version>
-            </dependency>
-
-            <dependency>
-                <groupId>nl.jqno.equalsverifier</groupId>
-                <artifactId>equalsverifier</artifactId>
-                <version>1.5.1</version>
-            </dependency>
-
-            <!-- Internal dependencies -->
-
-            <dependency>
-                <groupId>rosa.archive</groupId>
-                <artifactId>rosa-archive-model</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.archive</groupId>
-                <artifactId>rosa-archive-core</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.archive</groupId>
-                <artifactId>rosa-archive-core</artifactId>
-                <version>${project.version}</version>
-                <type>test-jar</type>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.archive</groupId>
-                <artifactId>rosa-archive-tool</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.iiif</groupId>
-                <artifactId>rosa-iiif-image-model</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.iiif</groupId>
-                <artifactId>rosa-iiif-image-core</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.iiif</groupId>
-                <artifactId>rosa-iiif-presentation-model</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.iiif</groupId>
-                <artifactId>rosa-iiif-presentation-core</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.search</groupId>
-                <artifactId>rosa-search</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.search</groupId>
-                <artifactId>rosa-search-core</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>rosa.search</groupId>
-                <artifactId>rosa-search-model</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+        <!-- Testing -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.jqwik</groupId>
+            <artifactId>jqwik</artifactId>
+            <version>${jqwik.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${mvn.compiler.version}</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>${mvn.javadoc.version}</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>${mvn.source.plugin.version}</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>${mvn.war.plugin.version}</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>buildnumber-maven-plugin</artifactId>
-                    <version>${mvn.buildnumber.plugin.version}</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>exec-maven-plugin</artifactId>
-                    <version>${mvn.exec.plugin.version}</version>
-                </plugin>
-
-		<plugin>
-		  <groupId>org.apache.maven.plugins</groupId>
-		  <artifactId>maven-failsafe-plugin</artifactId>
-		  <version>${mvn.failsafe.plugin.version}</version>
-		</plugin>
-
-		<plugin>
-		  <groupId>org.apache.tomcat.maven</groupId>
-		  <artifactId>tomcat7-maven-plugin</artifactId>
-		  <version>${mvn.tomcat.plugin.version}</version>
-		</plugin>
-
-            </plugins>
-        </pluginManagement>
-	
         <plugins>
-            <!-- Maven compiler plugin -->
+            <!-- Compiler plugin for Java 25 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>${mvn.compiler.source}</source>
-                    <target>${mvn.compiler.target}</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
 
-            <!-- Javadoc plugin -->
+            <!-- Surefire for JUnit 5 + jqwik -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <configuration>
-                    <!-- Default configuration for all reports -->
-                    <excludePackageNames>rosa.archive.core.util,rosa.iiif.presentation.core.util</excludePackageNames>
-                </configuration>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+            </plugin>
+
+            <!-- Fat JAR with shade plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>${maven-shade-plugin.version}</version>
                 <executions>
                     <execution>
-                        <id>aggregate</id>
+                        <phase>package</phase>
                         <goals>
-                            <goal>aggregate</goal>
+                            <goal>shade</goal>
                         </goals>
-                        <phase>site</phase>
                         <configuration>
-                            <!-- Specific configuration for the aggregate report -->
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>rosa.archive.cli.Rosa2Cli</mainClass>
+                                </transformer>
+                            </transformers>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-
-
-	    <!-- Enable integration tests -->
-	    <plugin>
-	      <groupId>org.apache.maven.plugins</groupId>
-	      <artifactId>maven-failsafe-plugin</artifactId>
-	      <executions>
-		<execution>
-		  <goals>
-		    <goal>integration-test</goal>
-		    <goal>verify</goal>
-		  </goals>
-		</execution>
-              </executions>
-	    </plugin>
-	  
         </plugins>
     </build>
 

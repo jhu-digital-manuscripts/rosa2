@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "manifest_id": { "type": "keyword" },
+      "collection_id": { "type": "keyword" },
+      "label": { "type": "text" },
+      "image_name": { "type": "keyword" },
+      "position": { "type": "integer" }
+    }
+  }
+}
