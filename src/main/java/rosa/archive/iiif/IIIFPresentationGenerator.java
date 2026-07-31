@@ -44,9 +44,11 @@ import rosa.archive.model.aor.XRef;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Generates IIIF Presentation API 3.0 static JSON files from archive data.
@@ -80,26 +82,39 @@ public final class IIIFPresentationGenerator {
      * @param store           the archive store to read data from
      * @param outputDir       the root output directory
      * @param baseUrl         the base URL prefix for resource IDs, or {@code null} for relative IDs
+     * @param imageBaseUrl    the base URL for IIIF Image API services, or {@code null} to use baseUrl
      * @param imageApiVersion the IIIF Image API version (2 or 3)
      * @throws IOException if an I/O error occurs during generation
      */
-    public void generate(ArchiveStore store, Path outputDir, String baseUrl, int imageApiVersion) throws IOException {
+    public void generate(ArchiveStore store, Path outputDir, String baseUrl, String imageBaseUrl, int imageApiVersion) throws IOException {
         List<String> collectionIds = store.listCollections();
 
-        // Generate top-level collection
-        ObjectNode topCollection = generateTopCollection(collectionIds, baseUrl);
+        // Load all collections upfront to determine hierarchy
+        Map<String, BookCollection> loadedCollections = new LinkedHashMap<>();
+        Set<String> childCollectionIds = new HashSet<>();
+        for (String collectionId : collectionIds) {
+            BookCollection collection = store.loadCollection(collectionId);
+            loadedCollections.put(collectionId, collection);
+            // A collection is a child if it has non-empty parents
+            String[] parents = collection.getParentCollections();
+            if (parents != null && parents.length > 0) {
+                childCollectionIds.add(collectionId);
+            }
+        }
+
+        // Generate top-level collection (excluding child collections from items)
+        ObjectNode topCollection = generateTopCollection(collectionIds, baseUrl, childCollectionIds);
         writer.write(topCollection, outputDir.resolve("collection.json"));
 
         // Generate per-collection sub-collections and manifests
         for (String collectionId : collectionIds) {
-            BookCollection collection = store.loadCollection(collectionId);
+            BookCollection collection = loadedCollections.get(collectionId);
             List<String> bookIds = store.listBooks(collectionId);
 
-            // Generate sub-collection
-            ObjectNode subCollection = generateSubCollection(collection, bookIds, baseUrl);
-            writer.write(subCollection, outputDir.resolve(collectionId).resolve("collection.json"));
+            // Process books first to collect labels and first image IDs
+            Map<String, String> bookLabels = new LinkedHashMap<>();
+            Map<String, String> bookFirstImages = new LinkedHashMap<>();
 
-            // Generate manifests for each book
             for (String bookId : bookIds) {
                 Book book = store.loadBook(collection, bookId);
                 ImageList images = book.getImages();
@@ -110,9 +125,37 @@ public final class IIIFPresentationGenerator {
                     continue;
                 }
 
-                ObjectNode manifest = generateManifest(collection, book, baseUrl, imageApiVersion);
+                // Collect label for sub-collection
+                bookLabels.put(bookId, resolveManifestLabel(collection, book));
+
+                // Collect first image ID for sub-collection thumbnail
+                bookFirstImages.put(bookId, images.getImages().get(0).getId());
+
+                // Generate annotation pages first to know if reference is needed
+                List<BookImage> imageList = images.getImages();
+                boolean[] hasAnnotationsArray = new boolean[imageList.size()];
+
+                for (int i = 0; i < imageList.size(); i++) {
+                    BookImage image = imageList.get(i);
+                    ObjectNode annotationPage = generateAnnotationPage(collection, book, image, i, baseUrl);
+                    hasAnnotationsArray[i] = (annotationPage != null);
+
+                    if (annotationPage != null) {
+                        // Add @context for standalone serving
+                        annotationPage.put("@context", CONTEXT);
+                        writer.write(annotationPage, outputDir.resolve(collectionId).resolve(bookId)
+                                .resolve("canvas").resolve(String.valueOf(i)).resolve("annotations.json"));
+                    }
+                }
+
+                // Generate manifest with hasAnnotations info
+                ObjectNode manifest = generateManifest(collection, book, baseUrl, imageBaseUrl, imageApiVersion, hasAnnotationsArray);
                 writer.write(manifest, outputDir.resolve(collectionId).resolve(bookId).resolve("manifest.json"));
             }
+
+            // Write sub-collection AFTER processing books so labels are available
+            ObjectNode subCollection = generateSubCollection(collection, bookLabels, bookFirstImages, baseUrl, imageBaseUrl);
+            writer.write(subCollection, outputDir.resolve(collectionId).resolve("collection.json"));
         }
     }
 
@@ -124,6 +167,19 @@ public final class IIIFPresentationGenerator {
      * @return the top-level Collection as a JSON ObjectNode
      */
     public ObjectNode generateTopCollection(List<String> collectionIds, String baseUrl) {
+        return generateTopCollection(collectionIds, baseUrl, Set.of());
+    }
+
+    /**
+     * Generates the top-level IIIF Collection listing only root sub-collections.
+     * Child collections (those with non-empty parents) are excluded from the items array.
+     *
+     * @param collectionIds      the sub-collection identifiers
+     * @param baseUrl            the base URL prefix, or {@code null} for relative IDs
+     * @param childCollectionIds set of collection IDs that are children (have parents) and should be excluded
+     * @return the top-level Collection as a JSON ObjectNode
+     */
+    public ObjectNode generateTopCollection(List<String> collectionIds, String baseUrl, Set<String> childCollectionIds) {
         ObjectNode node = mapper.createObjectNode();
         node.put("@context", CONTEXT);
         node.put("id", buildId(baseUrl, "collection"));
@@ -132,6 +188,10 @@ public final class IIIFPresentationGenerator {
 
         ArrayNode items = mapper.createArrayNode();
         for (String collectionId : collectionIds) {
+            // Skip child collections — they belong under their parent's sub-collection
+            if (childCollectionIds.contains(collectionId)) {
+                continue;
+            }
             ObjectNode item = mapper.createObjectNode();
             item.put("id", buildId(baseUrl, collectionId + "/collection"));
             item.put("type", "Collection");
@@ -144,13 +204,32 @@ public final class IIIFPresentationGenerator {
 
     /**
      * Generates a sub-collection listing all manifests within a collection.
+     * If the collection has child collections, they are included as Collection-type items.
+     * This backward-compatible overload does not generate thumbnails for manifest items.
      *
      * @param collection the book collection
-     * @param bookIds    the book identifiers in this collection
+     * @param bookLabels a map of bookId to label for each book in this collection
      * @param baseUrl    the base URL prefix, or {@code null} for relative IDs
      * @return the sub-collection as a JSON ObjectNode
      */
-    public ObjectNode generateSubCollection(BookCollection collection, List<String> bookIds, String baseUrl) {
+    public ObjectNode generateSubCollection(BookCollection collection, Map<String, String> bookLabels, String baseUrl) {
+        return generateSubCollection(collection, bookLabels, null, baseUrl, null);
+    }
+
+    /**
+     * Generates a sub-collection listing all manifests within a collection.
+     * If the collection has child collections, they are included as Collection-type items.
+     * When bookFirstImages is provided, each manifest item includes a thumbnail referencing the book's first image.
+     *
+     * @param collection      the book collection
+     * @param bookLabels      a map of bookId to label for each book in this collection
+     * @param bookFirstImages a map of bookId to first image ID (e.g., "LudwigXV7" → "LudwigXV7.001r.tif"), or {@code null} for no thumbnails
+     * @param baseUrl         the base URL prefix, or {@code null} for relative IDs
+     * @param imageBaseUrl    the base URL for IIIF Image API services, or {@code null} to use baseUrl
+     * @return the sub-collection as a JSON ObjectNode
+     */
+    public ObjectNode generateSubCollection(BookCollection collection, Map<String, String> bookLabels,
+                                            Map<String, String> bookFirstImages, String baseUrl, String imageBaseUrl) {
         String collectionId = collection.getId();
         String lang = getCollectionLanguage(collection);
 
@@ -163,11 +242,40 @@ public final class IIIFPresentationGenerator {
         node.set("label", languageMap(lang, label));
 
         ArrayNode items = mapper.createArrayNode();
-        for (String bookId : bookIds) {
+
+        // Add child collection items for parent collections
+        String[] children = collection.getChildCollections();
+        if (children != null && children.length > 0) {
+            for (String childId : children) {
+                ObjectNode item = mapper.createObjectNode();
+                item.put("id", buildId(baseUrl, childId + "/collection"));
+                item.put("type", "Collection");
+                item.set("label", languageMap(lang, childId));
+                items.add(item);
+            }
+        }
+
+        // Add manifest items for books
+        for (Map.Entry<String, String> entry : bookLabels.entrySet()) {
+            String bookId = entry.getKey();
             ObjectNode item = mapper.createObjectNode();
             item.put("id", buildId(baseUrl, collectionId + "/" + bookId + "/manifest"));
             item.put("type", "Manifest");
-            item.set("label", languageMap(lang, bookId));
+            item.set("label", languageMap(lang, entry.getValue()));
+
+            // Add thumbnail if first image data is available
+            if (bookFirstImages != null && bookFirstImages.containsKey(bookId)) {
+                String firstImageId = bookFirstImages.get(bookId);
+                String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, firstImageId);
+                ArrayNode thumbnailArray = mapper.createArrayNode();
+                ObjectNode thumbnail = mapper.createObjectNode();
+                thumbnail.put("id", imageServiceId + "/full/80,/0/default.jpg");
+                thumbnail.put("type", "Image");
+                thumbnail.put("format", "image/jpeg");
+                thumbnailArray.add(thumbnail);
+                item.set("thumbnail", thumbnailArray);
+            }
+
             items.add(item);
         }
         node.set("items", items);
@@ -180,10 +288,26 @@ public final class IIIFPresentationGenerator {
      * @param collection      the parent collection
      * @param book            the book to generate a manifest for
      * @param baseUrl         the base URL prefix, or {@code null} for relative IDs
+     * @param imageBaseUrl    the base URL for IIIF Image API services, or {@code null} to use baseUrl
      * @param imageApiVersion the IIIF Image API version (2 or 3)
      * @return the Manifest as a JSON ObjectNode
      */
-    public ObjectNode generateManifest(BookCollection collection, Book book, String baseUrl, int imageApiVersion) {
+    public ObjectNode generateManifest(BookCollection collection, Book book, String baseUrl, String imageBaseUrl, int imageApiVersion) {
+        return generateManifest(collection, book, baseUrl, imageBaseUrl, imageApiVersion, null);
+    }
+
+    /**
+     * Generates a Manifest for a single book with all metadata, canvases, and ranges.
+     *
+     * @param collection         the parent collection
+     * @param book               the book to generate a manifest for
+     * @param baseUrl            the base URL prefix, or {@code null} for relative IDs
+     * @param imageBaseUrl       the base URL for IIIF Image API services, or {@code null} to use baseUrl
+     * @param imageApiVersion    the IIIF Image API version (2 or 3)
+     * @param hasAnnotationsArray per-canvas flag indicating whether annotations exist, or {@code null} to auto-detect
+     * @return the Manifest as a JSON ObjectNode
+     */
+    public ObjectNode generateManifest(BookCollection collection, Book book, String baseUrl, String imageBaseUrl, int imageApiVersion, boolean[] hasAnnotationsArray) {
         String collectionId = collection.getId();
         String bookId = book.getId();
         String lang = getCollectionLanguage(collection);
@@ -217,7 +341,7 @@ public final class IIIFPresentationGenerator {
             BookImage firstImage = images.get(0);
             ArrayNode thumbnailArray = mapper.createArrayNode();
             ObjectNode thumbnail = mapper.createObjectNode();
-            String imageServiceId = buildImageServiceId(baseUrl, collectionId, bookId, firstImage.getId());
+            String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, firstImage.getId());
             thumbnail.put("id", imageServiceId + "/full/80,/0/default.jpg");
             thumbnail.put("type", "Image");
             thumbnail.put("format", "image/jpeg");
@@ -229,7 +353,8 @@ public final class IIIFPresentationGenerator {
         ArrayNode canvasItems = mapper.createArrayNode();
         for (int i = 0; i < images.size(); i++) {
             BookImage image = images.get(i);
-            ObjectNode canvas = generateCanvas(collection, book, image, i, baseUrl, imageApiVersion);
+            boolean hasAnnotations = hasAnnotationsArray != null ? hasAnnotationsArray[i] : false;
+            ObjectNode canvas = generateCanvas(collection, book, image, i, baseUrl, imageBaseUrl, imageApiVersion, hasAnnotations);
             canvasItems.add(canvas);
         }
         node.set("items", canvasItems);
@@ -258,11 +383,14 @@ public final class IIIFPresentationGenerator {
      * @param image           the book image
      * @param index           the zero-based index of the image in the book
      * @param baseUrl         the base URL prefix, or {@code null} for relative IDs
+     * @param imageBaseUrl    the base URL for IIIF Image API services, or {@code null} to use baseUrl
      * @param imageApiVersion the IIIF Image API version (2 or 3)
+     * @param hasAnnotations  whether this canvas has an associated annotation page
      * @return the Canvas as a JSON ObjectNode
      */
     public ObjectNode generateCanvas(BookCollection collection, Book book, BookImage image,
-                                     int index, String baseUrl, int imageApiVersion) {
+                                     int index, String baseUrl, String imageBaseUrl, int imageApiVersion,
+                                     boolean hasAnnotations) {
         String collectionId = collection.getId();
         String bookId = book.getId();
         String lang = getCollectionLanguage(collection);
@@ -283,7 +411,7 @@ public final class IIIFPresentationGenerator {
         canvas.put("height", height);
 
         // Painting annotation with Image Service
-        String imageServiceId = buildImageServiceId(baseUrl, collectionId, bookId, image.getId());
+        String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, image.getId());
         ObjectNode paintingAnnoPage = mapper.createObjectNode();
         paintingAnnoPage.put("id", canvasId + "/page");
         paintingAnnoPage.put("type", "AnnotationPage");
@@ -333,9 +461,8 @@ public final class IIIFPresentationGenerator {
         thumbnailArray.add(thumbnail);
         canvas.set("thumbnail", thumbnailArray);
 
-        // Annotation page reference (commenting annotations)
-        ObjectNode commentingAnnotationPage = generateAnnotationPage(collection, book, image, index, baseUrl);
-        if (commentingAnnotationPage != null) {
+        // Annotation page reference (commenting annotations) - only if annotations exist
+        if (hasAnnotations) {
             ArrayNode annotationsRef = mapper.createArrayNode();
             ObjectNode apRef = mapper.createObjectNode();
             apRef.put("id", buildId(baseUrl, collectionId + "/" + bookId + "/canvas/" + index + "/annotations"));
@@ -817,6 +944,15 @@ public final class IIIFPresentationGenerator {
                 String shortName = baseName.substring(dotIdx + 1);
                 pbMarker = "pb n=\"" + shortName;
                 startIdx = xml.indexOf(pbMarker);
+
+                // If not found, try with leading zeros stripped
+                if (startIdx < 0) {
+                    String strippedName = shortName.replaceFirst("^0+(?=\\d)", "");
+                    if (!strippedName.equals(shortName)) {
+                        pbMarker = "pb n=\"" + strippedName;
+                        startIdx = xml.indexOf(pbMarker);
+                    }
+                }
             }
         }
         if (startIdx < 0) return null;
@@ -1185,8 +1321,9 @@ public final class IIIFPresentationGenerator {
     /**
      * Builds the image service ID for a given image.
      */
-    private String buildImageServiceId(String baseUrl, String collectionId, String bookId, String imageId) {
-        return buildId(baseUrl, collectionId + "/" + bookId + "/" + imageId);
+    private String buildImageServiceId(String baseUrl, String imageBaseUrl, String collectionId, String bookId, String imageId) {
+        String effectiveBase = imageBaseUrl != null ? imageBaseUrl : baseUrl;
+        return buildId(effectiveBase, collectionId + "/" + bookId + "/" + imageId);
     }
 
     /**

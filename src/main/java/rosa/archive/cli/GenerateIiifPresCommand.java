@@ -29,6 +29,10 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
     @Option(names = "--base-url", description = "Base URL prefix for resource IDs")
     private String baseUrl;
 
+    @Option(names = "--image-base-url",
+            description = "Base URL for IIIF Image API services (defaults to --base-url)")
+    private String imageBaseUrl;
+
     @Option(names = "--image-api-version", defaultValue = "2",
             description = "IIIF Image API version (2 or 3)")
     private int imageApiVersion;
@@ -49,7 +53,7 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
 
             IIIFJsonWriter writer = new IIIFJsonWriter();
             IIIFPresentationGenerator generator = new IIIFPresentationGenerator(writer);
-            generator.generate(store, outputPath, baseUrl, imageApiVersion);
+            generator.generate(store, outputPath, baseUrl, imageBaseUrl, imageApiVersion);
             return 0;
         } catch (IOException e) {
             System.err.println("Error generating IIIF files: " + e.getMessage());

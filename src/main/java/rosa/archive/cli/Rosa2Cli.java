@@ -22,7 +22,19 @@ import java.util.concurrent.Callable;
              CheckCommand.class,
              ListCommand.class,
              ValidateXmlCommand.class,
-             AorStatsCommand.class
+             AorStatsCommand.class,
+             UpdateChecksumCommand.class,
+             UpdateImageListCommand.class,
+             CropImagesCommand.class,
+             FileMapCommand.class,
+             RenameImagesCommand.class,
+             RenameFilesCommand.class,
+             RenameTranscriptionsCommand.class,
+             GenerateTeiCommand.class,
+             CheckAorCommand.class,
+             GenerateAnnotationMapCommand.class,
+             MigrateTeiMetadataCommand.class,
+             DecorateImageListCommand.class
          })
 public final class Rosa2Cli implements Callable<Integer> {
 

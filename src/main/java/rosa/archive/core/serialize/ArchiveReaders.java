@@ -15,6 +15,8 @@ import rosa.archive.model.BookText;
 import rosa.archive.model.CharacterName;
 import rosa.archive.model.CharacterNames;
 import rosa.archive.model.HTMLAnnotations;
+import rosa.archive.model.Illustration;
+import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.IllustrationTitles;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.NarrativeScene;
@@ -482,6 +484,76 @@ public final class ArchiveReaders {
         }
 
         return result;
+    }
+
+    /**
+     * Reads illustration tagging from a CSV file.
+     * CSV columns: id, Folio #, Illustration title, Textual elements, Initials,
+     * Characters, Costume, Objects, Landscape, Architecture, Other
+     *
+     * @param path   the path to the .imagetag.csv file
+     * @param errors list to collect error messages
+     * @return the parsed illustration tagging, or null if file doesn't exist
+     * @throws IOException if reading fails
+     */
+    public static IllustrationTagging readIllustrationTagging(Path path, List<String> errors) throws IOException {
+        if (!Files.exists(path)) {
+            return null;
+        }
+
+        IllustrationTagging tagging = new IllustrationTagging();
+        tagging.setId(path.getFileName().toString());
+
+        List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+
+        // Skip header row (index 0)
+        for (int i = 1; i < lines.size(); i++) {
+            String line = lines.get(i);
+            if (line.isBlank()) {
+                continue;
+            }
+
+            String[] cols = CSV.parse(line);
+
+            Illustration illustration = new Illustration();
+            illustration.setId(cols.length > 0 ? cols[0] : "");
+            illustration.setPage(cols.length > 1 ? cols[1] : "");
+
+            // Titles (column 2) - split by comma into array
+            if (cols.length > 2 && !cols[2].isBlank()) {
+                String[] titles = cols[2].split(",");
+                for (int t = 0; t < titles.length; t++) {
+                    titles[t] = titles[t].trim();
+                }
+                illustration.setTitles(titles);
+            } else {
+                illustration.setTitles(new String[0]);
+            }
+
+            illustration.setTextualElement(cols.length > 3 ? cols[3] : "");
+            illustration.setInitials(cols.length > 4 ? cols[4] : "");
+
+            // Characters (column 5) - split by comma into array
+            if (cols.length > 5 && !cols[5].isBlank()) {
+                String[] characters = cols[5].split(",");
+                for (int c = 0; c < characters.length; c++) {
+                    characters[c] = characters[c].trim();
+                }
+                illustration.setCharacters(characters);
+            } else {
+                illustration.setCharacters(new String[0]);
+            }
+
+            illustration.setCostume(cols.length > 6 ? cols[6] : "");
+            illustration.setObject(cols.length > 7 ? cols[7] : "");
+            illustration.setLandscape(cols.length > 8 ? cols[8] : "");
+            illustration.setArchitecture(cols.length > 9 ? cols[9] : "");
+            illustration.setOther(cols.length > 10 ? cols[10] : "");
+
+            tagging.addIllustrationData(illustration);
+        }
+
+        return tagging;
     }
 
     // ---- Private helpers ----

@@ -80,4 +80,167 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
      * @throws IOException if files cannot be copied
      */
     void shallowCopy(Path destination) throws IOException;
+
+    /**
+     * Recomputes SHA-1 checksums for all files at the collection level
+     * (collection-level CSVs and reference sheets) and writes the updated
+     * checksum file.
+     *
+     * <p>When {@code force} is false, only files whose last-modified time is newer
+     * than the existing checksum file, or files missing from the existing checksum
+     * file, are recomputed. When {@code force} is true, all files are recomputed
+     * unconditionally.
+     *
+     * @param collectionId the collection identifier
+     * @param force        whether to recompute all checksums regardless of modification date
+     * @param errors       list to collect error messages
+     * @throws IOException if the collection directory cannot be read or the checksum file cannot be written
+     */
+    void updateChecksum(String collectionId, boolean force, List<String> errors) throws IOException;
+
+    /**
+     * Recomputes SHA-1 checksums for all files in a book directory and writes
+     * the updated checksum file.
+     *
+     * <p>When {@code force} is false, only files whose last-modified time is newer
+     * than the existing checksum file, or files missing from the existing checksum
+     * file, are recomputed. When {@code force} is true, all files are recomputed
+     * unconditionally.
+     *
+     * @param collectionId the collection identifier
+     * @param bookId       the book identifier
+     * @param force        whether to recompute all checksums regardless of modification date
+     * @param errors       list to collect error messages
+     * @throws IOException if the book directory cannot be read or the checksum file cannot be written
+     */
+    void updateChecksum(String collectionId, String bookId, boolean force, List<String> errors) throws IOException;
+
+    /**
+     * Scans the book directory for image files ({@code .tif}, {@code .jpg}), reads
+     * their dimensions, and writes the image list CSV ({@code <bookId>.images.csv}).
+     *
+     * <p>When {@code force} is false and the image list file already exists, this
+     * method does nothing.
+     *
+     * @param collectionId the collection identifier
+     * @param bookId       the book identifier
+     * @param force        whether to overwrite an existing image list
+     * @param errors       list to collect error messages
+     * @throws IOException if the book directory cannot be read or the CSV cannot be written
+     */
+    void generateAndWriteImageList(String collectionId, String bookId, boolean force, List<String> errors) throws IOException;
+
+    /**
+     * Crops images in the book directory based on crop data stored in
+     * {@code <bookId>.crop.txt} and writes the cropped versions to a
+     * {@code cropped/} subdirectory.
+     *
+     * <p>When {@code force} is false and a cropped image already exists, that
+     * image is skipped.
+     *
+     * @param collectionId the collection identifier
+     * @param bookId       the book identifier
+     * @param force        whether to overwrite existing cropped images
+     * @param errors       list to collect error messages
+     * @throws IOException if the book directory cannot be read or images cannot be written
+     */
+    void cropImages(String collectionId, String bookId, boolean force, List<String> errors) throws IOException;
+
+    /**
+     * Generates the cropped image list CSV ({@code <bookId>.images.crop.csv})
+     * by reading dimensions from images in the {@code cropped/} subdirectory.
+     *
+     * <p>When {@code force} is false and the cropped image list already exists,
+     * this method does nothing.
+     *
+     * @param collectionId the collection identifier
+     * @param bookId       the book identifier
+     * @param force        whether to overwrite an existing cropped image list
+     * @param errors       list to collect error messages
+     * @throws IOException if the book directory cannot be read or the CSV cannot be written
+     */
+    void generateAndWriteCropList(String collectionId, String bookId, boolean force, List<String> errors) throws IOException;
+
+    /**
+     * Generates a file map ({@code filemap.csv}) that maps existing image filenames
+     * to new standardized filenames following archive naming conventions.
+     *
+     * <p>The generated file map allocates names sequentially: front cover and pastedown
+     * (if present), frontmatter flyleaves, body pages in recto/verso pairs, endmatter
+     * flyleaves, back pastedown and cover (if present), and misc images.
+     *
+     * @param collectionId   the collection identifier
+     * @param bookId         the book identifier
+     * @param newId          the new book ID to use in generated filenames
+     * @param hasFrontCover  whether the book has a front cover and pastedown
+     * @param hasBackCover   whether the book has a back cover and pastedown
+     * @param numFrontmatter number of frontmatter flyleaf images (each produces recto+verso)
+     * @param numEndmatter   number of endmatter flyleaf images (each produces recto+verso)
+     * @param numMisc        number of miscellaneous images at the end
+     * @param errors         list to collect error messages
+     * @throws IOException if the book directory cannot be read or the file map cannot be written
+     */
+    void generateFileMap(String collectionId, String bookId, String newId, boolean hasFrontCover,
+                         boolean hasBackCover, int numFrontmatter, int numEndmatter, int numMisc,
+                         List<String> errors) throws IOException;
+
+    /**
+     * Renames image files in a book directory according to the file map ({@code filemap.csv}).
+     *
+     * <p>When {@code reverse} is false, renames old filenames to new filenames.
+     * When {@code reverse} is true, renames new filenames back to old filenames.
+     * When {@code changeId} is true, replaces the ID prefix in image filenames with
+     * the book directory name (ignores the file map).
+     *
+     * @param collectionId the collection identifier
+     * @param bookId       the book identifier
+     * @param changeId     whether to rename by replacing the ID prefix only
+     * @param reverse      whether to apply the file map in reverse (new → old)
+     * @param errors       list to collect error messages
+     * @throws IOException if the book directory cannot be read or files cannot be renamed
+     */
+    void renameImages(String collectionId, String bookId, boolean changeId, boolean reverse,
+                      List<String> errors) throws IOException;
+
+    /**
+     * Renames AoR transcription XML files in a book directory according to the file map
+     * ({@code filemap.csv}). Also updates the internal {@code page} element's
+     * {@code filename} attribute to reference the new image filename.
+     *
+     * <p>When {@code reverse} is false, renames transcription files to match new image names.
+     * When {@code reverse} is true, renames them back to match old image names.
+     *
+     * @param collectionId the collection identifier
+     * @param bookId       the book identifier
+     * @param reverse      whether to apply the renaming in reverse (new → old)
+     * @param errors       list to collect error messages
+     * @throws IOException if the book directory cannot be read or files cannot be renamed
+     */
+    void renameTranscriptions(String collectionId, String bookId, boolean reverse,
+                              List<String> errors) throws IOException;
+
+    /**
+     * Generates TEI P5 transcription files from AoR transcription XML files in a book directory.
+     *
+     * <p>Each AoR transcription XML file is transformed into a corresponding TEI P5 XML file
+     * with appropriate element mappings:
+     * <ul>
+     *   <li>Marginalia → {@code <note>} with {@code @type="marginalia"} and {@code @place}</li>
+     *   <li>Underlines → {@code <hi rend="underline">} wrapping referenced text</li>
+     *   <li>Marks → {@code <metamark>} elements</li>
+     *   <li>Symbols → {@code <g>} (glyph) elements</li>
+     *   <li>Errata → {@code <choice><sic>...</sic><corr>...</corr></choice>}</li>
+     * </ul>
+     *
+     * <p>Warnings are reported for unmappable annotation types. Errors are reported for
+     * unreadable files, but processing continues for remaining transcriptions.
+     *
+     * @param collectionId the collection identifier
+     * @param bookId       the book identifier
+     * @param errors       list to collect error messages for unreadable files
+     * @param warnings     list to collect warning messages for unmappable annotations
+     * @throws IOException if the book directory cannot be read
+     */
+    void generateTEITranscriptions(String collectionId, String bookId, List<String> errors,
+                                   List<String> warnings) throws IOException;
 }

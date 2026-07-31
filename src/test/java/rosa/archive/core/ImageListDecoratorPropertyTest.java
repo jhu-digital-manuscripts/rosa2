@@ -1,0 +1,222 @@
+package rosa.archive.core;
+
+import net.jqwik.api.*;
+import net.jqwik.api.constraints.NotBlank;
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Property 26: Image List Decoration Label Priority
+ * When pagination and signature both present, pagination is used as label.
+ *
+ * Validates: Requirements 27.3
+ */
+class ImageListDecoratorPropertyTest {
+
+    // Feature: rosa2-cli-refactor, Property 26: Image List Decoration Label Priority
+    @Property(tries = 100)
+    void paginationIsPreferredOverSignatureWhenBothPresent(
+            @ForAll("paginationValues") String pagination,
+            @ForAll("signatureValues") String signature
+    ) throws IOException {
+        Path tempDir = Files.createTempDirectory("imgdecor-prop-");
+        try {
+            Path archiveDir = tempDir.resolve("archive");
+            String collectionId = "col";
+            String bookId = "testbook";
+            Path bookDir = archiveDir.resolve(collectionId).resolve(bookId);
+            Files.createDirectories(bookDir);
+
+            String imageFilename = bookId + ".aor.001r.tif";
+
+            // Write image list CSV with a single entry
+            String imagesCsv = imageFilename + ",1000,1500,false\n";
+            Files.writeString(bookDir.resolve(bookId + ".images.csv"), imagesCsv, StandardCharsets.UTF_8);
+
+            // Write AoR transcription XML with both pagination and signature
+            String transcriptionXml = """
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <transcription>
+                        <page filename="%s" reader="Harvey" pagination="%s" signature="%s"/>
+                        <annotation>
+                        </annotation>
+                    </transcription>
+                    """.formatted(imageFilename, pagination, signature);
+            Files.writeString(bookDir.resolve(bookId + ".aor.001r.xml"), transcriptionXml, StandardCharsets.UTF_8);
+
+            // Run the decorator
+            var decorator = new ImageListDecorator(archiveDir);
+            List<String> errors = new ArrayList<>();
+            decorator.decorateBook(collectionId, bookId, errors);
+
+            assert errors.isEmpty() : "Expected no errors but got: " + errors;
+
+            // Read the decorated image list
+            List<String> lines = Files.readAllLines(bookDir.resolve(bookId + ".images.csv"), StandardCharsets.UTF_8);
+            assert lines.size() == 1 : "Expected 1 line but got " + lines.size();
+
+            String[] parts = lines.get(0).split(",", -1);
+            assert parts.length == 6 : "Expected 6 CSV columns but got " + parts.length;
+
+            // Property: when pagination is present, it is used as label (not signature)
+            assert parts[4].equals(pagination) :
+                    "Label should be pagination '" + pagination + "' but was '" + parts[4] + "' (signature was '" + signature + "')";
+            assert parts[5].equals("false") :
+                    "auto_generated should be false when label is set from transcription";
+
+        } finally {
+            deleteRecursive(tempDir);
+        }
+    }
+
+    @Provide
+    Arbitrary<String> paginationValues() {
+        // Generate non-empty pagination strings (e.g. "1r", "42v", "iii", "A1")
+        return Arbitraries.oneOf(
+                // Typical folio pagination like "1r", "42v", "123r"
+                Arbitraries.integers().between(1, 500)
+                        .flatMap(n -> Arbitraries.of("r", "v").map(side -> n + side)),
+                // Roman numeral style like "i", "iv", "xii"
+                Arbitraries.of("i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"),
+                // Alpha-numeric like "A1", "B2r"
+                Arbitraries.strings().alpha().ofMinLength(1).ofMaxLength(4)
+                        .map(s -> s.substring(0, 1).toUpperCase() + s.substring(1))
+        );
+    }
+
+    @Provide
+    Arbitrary<String> signatureValues() {
+        // Generate non-empty signature strings (e.g. "A1r", "B2v", "C3")
+        return Arbitraries.oneOf(
+                // Typical signature like "A1r", "B2v"
+                Arbitraries.strings().alpha().ofLength(1)
+                        .flatMap(letter -> Arbitraries.integers().between(1, 8)
+                                .flatMap(num -> Arbitraries.of("r", "v", "")
+                                        .map(side -> letter.toUpperCase() + num + side))),
+                // Simple alpha signatures
+                Arbitraries.strings().alpha().ofMinLength(1).ofMaxLength(3)
+                        .map(String::toUpperCase)
+        );
+    }
+
+    /**
+     * Property 27: Image List Decoration Auto-Generated Marking
+     * Images with no corresponding AoR transcription are marked auto-generated.
+     *
+     * Validates: Requirements 27.4
+     */
+    @Property(tries = 100)
+    void imagesWithoutTranscriptionAreMarkedAutoGenerated(
+            @ForAll("imageCountsWithMix") ImageMix mix
+    ) throws IOException {
+        Path tempDir = Files.createTempDirectory("imgdecor-autogen-");
+        try {
+            Path archiveDir = tempDir.resolve("archive");
+            String collectionId = "col";
+            String bookId = "testbook";
+            Path bookDir = archiveDir.resolve(collectionId).resolve(bookId);
+            Files.createDirectories(bookDir);
+
+            // Generate image filenames: some with transcriptions, some without
+            List<String> allImageFilenames = new ArrayList<>();
+            List<String> imagesWithTranscription = new ArrayList<>();
+            List<String> imagesWithoutTranscription = new ArrayList<>();
+
+            // Create images WITH transcription files
+            for (int i = 0; i < mix.withTranscription; i++) {
+                String page = String.format("%03d", i + 1) + "r";
+                String imageFilename = bookId + ".aor." + page + ".tif";
+                allImageFilenames.add(imageFilename);
+                imagesWithTranscription.add(imageFilename);
+
+                // Write corresponding AoR transcription XML with pagination
+                String transcriptionXml = """
+                        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                        <transcription>
+                            <page filename="%s" reader="Harvey" pagination="%s" signature=""/>
+                            <annotation>
+                            </annotation>
+                        </transcription>
+                        """.formatted(imageFilename, page);
+                Files.writeString(bookDir.resolve(bookId + ".aor." + page + ".xml"),
+                        transcriptionXml, StandardCharsets.UTF_8);
+            }
+
+            // Create images WITHOUT transcription files
+            for (int i = 0; i < mix.withoutTranscription; i++) {
+                String page = String.format("%03d", mix.withTranscription + i + 1) + "v";
+                String imageFilename = bookId + ".aor." + page + ".tif";
+                allImageFilenames.add(imageFilename);
+                imagesWithoutTranscription.add(imageFilename);
+                // No transcription XML created for these
+            }
+
+            // Write image list CSV with all images
+            var csvBuilder = new StringBuilder();
+            for (String filename : allImageFilenames) {
+                csvBuilder.append(filename).append(",1000,1500,false\n");
+            }
+            Files.writeString(bookDir.resolve(bookId + ".images.csv"),
+                    csvBuilder.toString(), StandardCharsets.UTF_8);
+
+            // Run the decorator
+            var decorator = new ImageListDecorator(archiveDir);
+            List<String> errors = new ArrayList<>();
+            decorator.decorateBook(collectionId, bookId, errors);
+
+            assert errors.isEmpty() : "Expected no errors but got: " + errors;
+
+            // Read decorated image list
+            List<String> lines = Files.readAllLines(bookDir.resolve(bookId + ".images.csv"), StandardCharsets.UTF_8);
+            assert lines.size() == allImageFilenames.size() :
+                    "Expected " + allImageFilenames.size() + " lines but got " + lines.size();
+
+            // Verify property: images WITHOUT transcription → auto_generated=true
+            // images WITH transcription → auto_generated=false
+            for (String line : lines) {
+                String[] parts = line.split(",", -1);
+                assert parts.length == 6 : "Expected 6 CSV columns but got " + parts.length + " in: " + line;
+                String filename = parts[0];
+                boolean autoGenerated = Boolean.parseBoolean(parts[5]);
+
+                if (imagesWithoutTranscription.contains(filename)) {
+                    assert autoGenerated :
+                            "Image without transcription should be auto_generated=true: " + filename;
+                } else if (imagesWithTranscription.contains(filename)) {
+                    assert !autoGenerated :
+                            "Image with transcription should be auto_generated=false: " + filename;
+                }
+            }
+        } finally {
+            deleteRecursive(tempDir);
+        }
+    }
+
+    @Provide
+    Arbitrary<ImageMix> imageCountsWithMix() {
+        return Combinators.combine(
+                Arbitraries.integers().between(1, 10),  // images with transcription
+                Arbitraries.integers().between(1, 10)   // images without transcription
+        ).as(ImageMix::new);
+    }
+
+    record ImageMix(int withTranscription, int withoutTranscription) {}
+
+    private void deleteRecursive(Path path) {
+        try {
+            if (Files.isDirectory(path)) {
+                try (var entries = Files.list(path)) {
+                    entries.forEach(this::deleteRecursive);
+                }
+            }
+            Files.deleteIfExists(path);
+        } catch (IOException e) {
+            // Best effort cleanup
+        }
+    }
+}

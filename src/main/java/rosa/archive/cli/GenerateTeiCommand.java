@@ -1,0 +1,63 @@
+package rosa.archive.cli;
+
+import picocli.CommandLine.Command;
+import picocli.CommandLine.Option;
+import rosa.archive.core.FileSystemArchiveStore;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.Callable;
+
+/**
+ * Converts AoR transcription XML files into TEI P5 format.
+ *
+ * <p>Delegates to {@link rosa.archive.core.ArchiveStore#generateTEITranscriptions}
+ * which transforms each AoR transcription XML file in the specified book into a
+ * corresponding TEI P5 XML file. Warnings for unmappable annotations are printed
+ * to stdout; errors for unreadable files are printed to stderr.</p>
+ */
+@Command(name = "generate-tei",
+         mixinStandardHelpOptions = true,
+         description = "Convert AoR transcription XML files into TEI format")
+public final class GenerateTeiCommand implements Callable<Integer> {
+
+    @Option(names = "--archive", required = true, description = "Path to archive directory")
+    private Path archivePath;
+
+    @Option(names = "--collection", required = true, description = "Collection ID")
+    private String collectionId;
+
+    @Option(names = "--book", required = true, description = "Book ID")
+    private String bookId;
+
+    /**
+     * Executes the TEI generation operation.
+     *
+     * @return 0 if no errors occurred, 1 on error
+     */
+    @Override
+    public Integer call() {
+        if (!Files.isDirectory(archivePath)) {
+            System.err.println("Error: archive path does not exist or is not a directory: " + archivePath);
+            return 1;
+        }
+
+        try {
+            var store = new FileSystemArchiveStore(archivePath);
+            List<String> errors = new ArrayList<>();
+            List<String> warnings = new ArrayList<>();
+
+            store.generateTEITranscriptions(collectionId, bookId, errors, warnings);
+
+            warnings.forEach(w -> System.out.println("Warning: " + w));
+            errors.forEach(System.err::println);
+            return errors.isEmpty() ? 0 : 1;
+        } catch (IOException e) {
+            System.err.println("Error: " + e.getMessage());
+            return 1;
+        }
+    }
+}

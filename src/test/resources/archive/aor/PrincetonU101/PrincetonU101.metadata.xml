@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url>http://creativecommons.org/licenses/by/4.0/</url>
+        <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+    </license>
+    <totalPages>124</totalPages>
+    <dates>
+        <startDate>1573</startDate>
+        <endDate>1573</endDate>
+    </dates>
+    <texts>
+        <text id="1">
+            <language>en</language>
+            <title>Art of warre (London, 1573)</title>
+            <textId>machiavelli</textId>
+            <pages end="124v" start="1r">124</pages>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Art of warre (London, 1573)</title>
+            <commonName>Niccolò Machiavelli, Art of warre (London, 1573)</commonName>
+            <dateLabel>1573</dateLabel>
+            <currentLocation>Princeton University Library</currentLocation>
+            <repository>Princeton University Library</repository>
+            <shelfmark>U101 .M16 1573</shelfmark>
+            <author>
+              <name>Machiavelli, Niccolò</name>
+              <id>http://www.isni.org/isni/0000000121441233</id>
+            </author>
+            <reader>
+              <name>Gabriel Harvey</name>
+              <id>http://www.isni.org/isni/0000000073570531</id>
+            </reader>
+            <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Machiavelli</website>
+            <detail>2 pts. in 1 v. : ill.; 19 cm. (4to)</detail>
+            <note>Already digitized</note>
+        </bibliography>
+    </bibliographies>
+</book>

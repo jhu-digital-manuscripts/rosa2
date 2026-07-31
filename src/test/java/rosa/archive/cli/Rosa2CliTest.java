@@ -29,7 +29,7 @@ class Rosa2CliTest {
     }
 
     @Test
-    void helpOutputContainsDescriptionAndCommands() {
+    void helpOutputContainsDescriptionAndAllCommands() {
         StringWriter out = new StringWriter();
         CommandLine cmd = new CommandLine(new Rosa2Cli());
         cmd.setOut(new PrintWriter(out));
@@ -44,6 +44,18 @@ class Rosa2CliTest {
         assertTrue(output.contains("list"));
         assertTrue(output.contains("validate-xml"));
         assertTrue(output.contains("aor-stats"));
+        assertTrue(output.contains("update"));
+        assertTrue(output.contains("update-image-list"));
+        assertTrue(output.contains("crop-images"));
+        assertTrue(output.contains("file-map"));
+        assertTrue(output.contains("rename-images"));
+        assertTrue(output.contains("rename-files"));
+        assertTrue(output.contains("rename-transcriptions"));
+        assertTrue(output.contains("generate-tei"));
+        assertTrue(output.contains("check-aor"));
+        assertTrue(output.contains("generate-annotation-map"));
+        assertTrue(output.contains("migrate-tei-metadata"));
+        assertTrue(output.contains("decorate-image-list"));
     }
 
     @Test
@@ -87,16 +99,29 @@ class Rosa2CliTest {
             "check",
             "list",
             "validate-xml",
-            "aor-stats"
+            "aor-stats",
+            "update",
+            "update-image-list",
+            "crop-images",
+            "file-map",
+            "rename-images",
+            "rename-files",
+            "rename-transcriptions",
+            "generate-tei",
+            "check-aor",
+            "generate-annotation-map",
+            "migrate-tei-metadata",
+            "decorate-image-list"
     })
     void subcommandHelpExitsWithZero(String subcommand) {
         StringWriter out = new StringWriter();
         CommandLine cmd = new CommandLine(new Rosa2Cli());
         cmd.setOut(new PrintWriter(out));
         int exitCode = cmd.execute(subcommand, "--help");
-        assertEquals(0, exitCode);
+        assertEquals(0, exitCode, "Expected exit code 0 for --help on " + subcommand);
         String output = out.toString();
-        assertTrue(output.contains("--help"), "Help output should mention --help option");
+        assertTrue(output.contains("--help"), "Help output for " + subcommand + " should mention --help option");
+        assertTrue(output.length() > 50, "Help output for " + subcommand + " should contain meaningful content");
     }
 
     @Test
@@ -110,7 +135,19 @@ class Rosa2CliTest {
         assertTrue(subcommands.containsKey("list"));
         assertTrue(subcommands.containsKey("validate-xml"));
         assertTrue(subcommands.containsKey("aor-stats"));
-        assertEquals(7, subcommands.size());
+        assertTrue(subcommands.containsKey("update"));
+        assertTrue(subcommands.containsKey("update-image-list"));
+        assertTrue(subcommands.containsKey("crop-images"));
+        assertTrue(subcommands.containsKey("file-map"));
+        assertTrue(subcommands.containsKey("rename-images"));
+        assertTrue(subcommands.containsKey("rename-files"));
+        assertTrue(subcommands.containsKey("rename-transcriptions"));
+        assertTrue(subcommands.containsKey("generate-tei"));
+        assertTrue(subcommands.containsKey("check-aor"));
+        assertTrue(subcommands.containsKey("generate-annotation-map"));
+        assertTrue(subcommands.containsKey("migrate-tei-metadata"));
+        assertTrue(subcommands.containsKey("decorate-image-list"));
+        assertEquals(19, subcommands.size());
     }
 
     @Test
