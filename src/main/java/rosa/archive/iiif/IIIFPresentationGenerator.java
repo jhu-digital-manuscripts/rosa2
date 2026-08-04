@@ -42,6 +42,8 @@ import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -114,6 +116,7 @@ public final class IIIFPresentationGenerator {
             // Process books first to collect labels and first image IDs
             Map<String, String> bookLabels = new LinkedHashMap<>();
             Map<String, String> bookFirstImages = new LinkedHashMap<>();
+            Map<String, Boolean> bookCroppedFlags = new LinkedHashMap<>();
 
             for (String bookId : bookIds) {
                 Book book = store.loadBook(collection, bookId);
@@ -131,12 +134,18 @@ public final class IIIFPresentationGenerator {
                 // Collect first image ID for sub-collection thumbnail
                 bookFirstImages.put(bookId, images.getImages().get(0).getId());
 
-                // Generate annotation pages first to know if reference is needed
-                List<BookImage> imageList = images.getImages();
-                boolean[] hasAnnotationsArray = new boolean[imageList.size()];
+                // Determine the painting image list: prefer cropped images if available
+                ImageList croppedImages = book.getCroppedImages();
+                boolean bookHasCropped = croppedImages != null && !croppedImages.getImages().isEmpty();
+                bookCroppedFlags.put(bookId, bookHasCropped);
+                List<BookImage> paintingImageList = bookHasCropped
+                        ? croppedImages.getImages() : images.getImages();
 
-                for (int i = 0; i < imageList.size(); i++) {
-                    BookImage image = imageList.get(i);
+                // Generate annotation pages first to know if reference is needed
+                boolean[] hasAnnotationsArray = new boolean[paintingImageList.size()];
+
+                for (int i = 0; i < paintingImageList.size(); i++) {
+                    BookImage image = paintingImageList.get(i);
                     ObjectNode annotationPage = generateAnnotationPage(collection, book, image, i, baseUrl);
                     hasAnnotationsArray[i] = (annotationPage != null);
 
@@ -154,7 +163,7 @@ public final class IIIFPresentationGenerator {
             }
 
             // Write sub-collection AFTER processing books so labels are available
-            ObjectNode subCollection = generateSubCollection(collection, bookLabels, bookFirstImages, baseUrl, imageBaseUrl);
+            ObjectNode subCollection = generateSubCollection(collection, bookLabels, bookFirstImages, bookCroppedFlags, baseUrl, imageBaseUrl);
             writer.write(subCollection, outputDir.resolve(collectionId).resolve("collection.json"));
         }
     }
@@ -230,6 +239,26 @@ public final class IIIFPresentationGenerator {
      */
     public ObjectNode generateSubCollection(BookCollection collection, Map<String, String> bookLabels,
                                             Map<String, String> bookFirstImages, String baseUrl, String imageBaseUrl) {
+        return generateSubCollection(collection, bookLabels, bookFirstImages, null, baseUrl, imageBaseUrl);
+    }
+
+    /**
+     * Generates a sub-collection listing all manifests within a collection.
+     * If the collection has child collections, they are included as Collection-type items.
+     * When bookFirstImages is provided, each manifest item includes a thumbnail referencing the book's first image.
+     * When bookCroppedFlags is provided, thumbnails use the cropped image path where applicable.
+     *
+     * @param collection       the book collection
+     * @param bookLabels       a map of bookId to label for each book in this collection
+     * @param bookFirstImages  a map of bookId to first image ID, or {@code null} for no thumbnails
+     * @param bookCroppedFlags a map of bookId to whether cropped images are available, or {@code null}
+     * @param baseUrl          the base URL prefix, or {@code null} for relative IDs
+     * @param imageBaseUrl     the base URL for IIIF Image API services, or {@code null} to use baseUrl
+     * @return the sub-collection as a JSON ObjectNode
+     */
+    public ObjectNode generateSubCollection(BookCollection collection, Map<String, String> bookLabels,
+                                            Map<String, String> bookFirstImages, Map<String, Boolean> bookCroppedFlags,
+                                            String baseUrl, String imageBaseUrl) {
         String collectionId = collection.getId();
         String lang = getCollectionLanguage(collection);
 
@@ -266,7 +295,8 @@ public final class IIIFPresentationGenerator {
             // Add thumbnail if first image data is available
             if (bookFirstImages != null && bookFirstImages.containsKey(bookId)) {
                 String firstImageId = bookFirstImages.get(bookId);
-                String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, firstImageId);
+                boolean cropped = bookCroppedFlags != null && Boolean.TRUE.equals(bookCroppedFlags.get(bookId));
+                String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, firstImageId, cropped);
                 ArrayNode thumbnailArray = mapper.createArrayNode();
                 ObjectNode thumbnail = mapper.createObjectNode();
                 thumbnail.put("id", imageServiceId + "/full/80,/0/default.jpg");
@@ -336,12 +366,17 @@ public final class IIIFPresentationGenerator {
             node.set("behavior", behavior);
         }
 
+        // Determine if cropped images are available
+        ImageList croppedImageList = book.getCroppedImages();
+        boolean hasCropped = croppedImageList != null && !croppedImageList.getImages().isEmpty();
+        List<BookImage> paintingImages = hasCropped ? croppedImageList.getImages() : images;
+
         // Thumbnail from first image
         if (!images.isEmpty()) {
             BookImage firstImage = images.get(0);
             ArrayNode thumbnailArray = mapper.createArrayNode();
             ObjectNode thumbnail = mapper.createObjectNode();
-            String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, firstImage.getId());
+            String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, firstImage.getId(), hasCropped);
             thumbnail.put("id", imageServiceId + "/full/80,/0/default.jpg");
             thumbnail.put("type", "Image");
             thumbnail.put("format", "image/jpeg");
@@ -349,12 +384,12 @@ public final class IIIFPresentationGenerator {
             node.set("thumbnail", thumbnailArray);
         }
 
-        // Canvas items
+        // Canvas items - use cropped images if available
         ArrayNode canvasItems = mapper.createArrayNode();
-        for (int i = 0; i < images.size(); i++) {
-            BookImage image = images.get(i);
-            boolean hasAnnotations = hasAnnotationsArray != null ? hasAnnotationsArray[i] : false;
-            ObjectNode canvas = generateCanvas(collection, book, image, i, baseUrl, imageBaseUrl, imageApiVersion, hasAnnotations);
+        for (int i = 0; i < paintingImages.size(); i++) {
+            BookImage image = paintingImages.get(i);
+            boolean hasAnnotations = hasAnnotationsArray != null && i < hasAnnotationsArray.length ? hasAnnotationsArray[i] : false;
+            ObjectNode canvas = generateCanvas(collection, book, image, i, baseUrl, imageBaseUrl, imageApiVersion, hasAnnotations, hasCropped);
             canvasItems.add(canvas);
         }
         node.set("items", canvasItems);
@@ -391,6 +426,26 @@ public final class IIIFPresentationGenerator {
     public ObjectNode generateCanvas(BookCollection collection, Book book, BookImage image,
                                      int index, String baseUrl, String imageBaseUrl, int imageApiVersion,
                                      boolean hasAnnotations) {
+        return generateCanvas(collection, book, image, index, baseUrl, imageBaseUrl, imageApiVersion, hasAnnotations, false);
+    }
+
+    /**
+     * Generates a Canvas for a single book image, optionally using cropped image paths.
+     *
+     * @param collection      the parent collection
+     * @param book            the book containing the image
+     * @param image           the book image
+     * @param index           the zero-based index of the image in the book
+     * @param baseUrl         the base URL prefix, or {@code null} for relative IDs
+     * @param imageBaseUrl    the base URL for IIIF Image API services, or {@code null} to use baseUrl
+     * @param imageApiVersion the IIIF Image API version (2 or 3)
+     * @param hasAnnotations  whether this canvas has an associated annotation page
+     * @param cropped         whether to use cropped image paths
+     * @return the Canvas as a JSON ObjectNode
+     */
+    public ObjectNode generateCanvas(BookCollection collection, Book book, BookImage image,
+                                     int index, String baseUrl, String imageBaseUrl, int imageApiVersion,
+                                     boolean hasAnnotations, boolean cropped) {
         String collectionId = collection.getId();
         String bookId = book.getId();
         String lang = getCollectionLanguage(collection);
@@ -411,7 +466,15 @@ public final class IIIFPresentationGenerator {
         canvas.put("height", height);
 
         // Painting annotation with Image Service
-        String imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, image.getId());
+        // When the image is missing, reference the collection's missing_image placeholder
+        String imageServiceId;
+        if (image.isMissing()) {
+            BookImage missingImage = collection.getMissingImage();
+            String missingId = missingImage != null ? missingImage.getId() : "missing_image.tif";
+            imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, null, missingId, false);
+        } else {
+            imageServiceId = buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, image.getId(), cropped);
+        }
         ObjectNode paintingAnnoPage = mapper.createObjectNode();
         paintingAnnoPage.put("id", canvasId + "/page");
         paintingAnnoPage.put("type", "AnnotationPage");
@@ -465,7 +528,7 @@ public final class IIIFPresentationGenerator {
         if (hasAnnotations) {
             ArrayNode annotationsRef = mapper.createArrayNode();
             ObjectNode apRef = mapper.createObjectNode();
-            apRef.put("id", buildId(baseUrl, collectionId + "/" + bookId + "/canvas/" + index + "/annotations"));
+            apRef.put("id", buildId(baseUrl, collectionId + "/" + bookId + "/canvas/" + index + "/annotations.json"));
             apRef.put("type", "AnnotationPage");
             annotationsRef.add(apRef);
             canvas.set("annotations", annotationsRef);
@@ -628,7 +691,7 @@ public final class IIIFPresentationGenerator {
             for (Drawing drawing : annotatedPage.getDrawings()) {
                 StringBuilder html = new StringBuilder();
                 String drawType = drawing.getType() != null ? drawing.getType() : "Drawing";
-                html.append("<p><strong>").append(escapeHtml(drawType)).append("</strong></p>");
+                html.append("<p><b>").append(escapeHtml(drawType)).append("</b></p>");
 
                 if (drawing.getReferencedText() != null && !drawing.getReferencedText().isEmpty()) {
                     html.append("<p>").append(escapeHtml(drawing.getReferencedText())).append("</p>");
@@ -665,7 +728,7 @@ public final class IIIFPresentationGenerator {
             for (Graph graph : annotatedPage.getGraphs()) {
                 StringBuilder html = new StringBuilder();
                 String graphType = graph.getType() != null ? graph.getType() : "Graph";
-                html.append("<p><strong>").append(escapeHtml(graphType)).append("</strong></p>");
+                html.append("<p><b>").append(escapeHtml(graphType)).append("</b></p>");
 
                 // Nodes
                 for (GraphNode node : graph.getNodes()) {
@@ -718,7 +781,7 @@ public final class IIIFPresentationGenerator {
             for (Table table : annotatedPage.getTables()) {
                 StringBuilder html = new StringBuilder();
                 String tableType = table.getType() != null ? table.getType() : "Table";
-                html.append("<p><strong>").append(escapeHtml(tableType)).append("</strong></p>");
+                html.append("<p><b>").append(escapeHtml(tableType)).append("</b></p>");
 
                 // Headers
                 for (TableHeader header : table.getColHeaders()) {
@@ -816,7 +879,7 @@ public final class IIIFPresentationGenerator {
             for (int illusIdx : illusIndices) {
                 Illustration illus = tagging.getIllustrationData(illusIdx);
                 StringBuilder html = new StringBuilder();
-                html.append("<p><strong>Illustration</strong></p>");
+                html.append("<p><b>Illustration</b></p>");
 
                 if (illus.getTitles() != null && illus.getTitles().length > 0) {
                     html.append("<p>Titles: ").append(escapeHtml(String.join(", ", illus.getTitles()))).append("</p>");
@@ -1320,10 +1383,56 @@ public final class IIIFPresentationGenerator {
 
     /**
      * Builds the image service ID for a given image.
+     * The image identifier is encoded as a single IIIF Image API path segment:
+     * slashes are percent-encoded as %2F, and the file extension is stripped.
      */
     private String buildImageServiceId(String baseUrl, String imageBaseUrl, String collectionId, String bookId, String imageId) {
+        return buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, imageId, false);
+    }
+
+    /**
+     * Builds the image service ID for a given image, optionally using the cropped path.
+     * The image identifier is encoded as a single IIIF Image API path segment:
+     * slashes are percent-encoded as %2F, and the file extension is stripped.
+     * When cropped is true, a "cropped/" segment is prepended before the image ID.
+     */
+    private String buildImageServiceId(String baseUrl, String imageBaseUrl, String collectionId, String bookId, String imageId, boolean cropped) {
         String effectiveBase = imageBaseUrl != null ? imageBaseUrl : baseUrl;
-        return buildId(effectiveBase, collectionId + "/" + bookId + "/" + imageId);
+
+        // Strip file extension from the image id
+        String strippedId = imageId;
+        int dotIndex = strippedId.lastIndexOf('.');
+        if (dotIndex > 0) {
+            strippedId = strippedId.substring(0, dotIndex);
+        }
+
+        // Build the composite image identifier: collection/book/[cropped/]image (or collection/[cropped/]image if book is null)
+        String compositeId = collectionId
+                + (bookId != null ? "/" + bookId : "")
+                + "/" + (cropped ? "cropped/" : "") + strippedId;
+
+        // Encode as a single IIIF Image API identifier path segment (slashes become %2F)
+        String encodedId = encodeImageId(compositeId);
+
+        if (effectiveBase != null && !effectiveBase.isEmpty()) {
+            String base = effectiveBase.endsWith("/") ? effectiveBase.substring(0, effectiveBase.length() - 1) : effectiveBase;
+            return base + "/" + encodedId;
+        }
+        return encodedId;
+    }
+
+    /**
+     * Encodes a IIIF Image API image identifier as a single path segment.
+     * Slashes within the identifier are percent-encoded as %2F per the IIIF Image API specification.
+     */
+    private String encodeImageId(String imageId) {
+        try {
+            // Use URI to encode the identifier properly, then replace slashes with %2F
+            return new URI("http", "x", "/" + imageId, null).getRawPath().substring(1).replace("/", "%2F");
+        } catch (URISyntaxException e) {
+            // Fallback: manual percent-encoding of slashes
+            return imageId.replace("/", "%2F");
+        }
     }
 
     /**

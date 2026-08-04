@@ -300,9 +300,9 @@ class IIIFPresentationGeneratorTest {
         // Canvas ID should use baseUrl, not imageBaseUrl
         assertEquals("http://example.org/rose/LudwigXV7/canvas/0", parsed.get("id").asText());
 
-        // Image Service ID should use imageBaseUrl
+        // Image Service ID should use imageBaseUrl with encoded slashes and no file extension
         JsonNode service = parsed.get("items").get(0).get("items").get(0).get("body").get("service").get(0);
-        assertEquals("https://images.example.com/rose/LudwigXV7/LudwigXV7.001r.tif", service.get("id").asText());
+        assertEquals("https://images.example.com/rose%2FLudwigXV7%2FLudwigXV7.001r", service.get("id").asText());
     }
 
     @Test
@@ -321,9 +321,9 @@ class IIIFPresentationGeneratorTest {
         // Canvas ID should use baseUrl
         assertEquals("http://example.org/rose/LudwigXV7/canvas/0", parsed.get("id").asText());
 
-        // Image Service ID should fall back to baseUrl when imageBaseUrl is null
+        // Image Service ID should fall back to baseUrl when imageBaseUrl is null, with encoded slashes and no extension
         JsonNode service = parsed.get("items").get(0).get("items").get(0).get("body").get("service").get(0);
-        assertEquals("http://example.org/rose/LudwigXV7/LudwigXV7.001r.tif", service.get("id").asText());
+        assertEquals("http://example.org/rose%2FLudwigXV7%2FLudwigXV7.001r", service.get("id").asText());
     }
 
     @Test
@@ -342,11 +342,11 @@ class IIIFPresentationGeneratorTest {
         // Manifest ID should use baseUrl
         assertEquals("http://example.org/rose/LudwigXV7/manifest", parsed.get("id").asText());
 
-        // Thumbnail should use imageBaseUrl
+        // Thumbnail should use imageBaseUrl with encoded image identifier
         String thumbnailId = parsed.get("thumbnail").get(0).get("id").asText();
         assertTrue(thumbnailId.startsWith("https://images.example.com/"),
                 "Thumbnail should use imageBaseUrl, got: " + thumbnailId);
-        assertEquals("https://images.example.com/rose/LudwigXV7/LudwigXV7.001r.tif/full/80,/0/default.jpg",
+        assertEquals("https://images.example.com/rose%2FLudwigXV7%2FLudwigXV7.001r/full/80,/0/default.jpg",
                 thumbnailId);
     }
 
@@ -553,7 +553,7 @@ class IIIFPresentationGeneratorTest {
 
         // Verify the reference contains only id and type (no items, no full content)
         JsonNode ref = annotations.get(0);
-        assertEquals("http://example.org/aor/testbook/canvas/0/annotations", ref.get("id").asText());
+        assertEquals("http://example.org/aor/testbook/canvas/0/annotations.json", ref.get("id").asText());
         assertEquals("AnnotationPage", ref.get("type").asText());
         assertFalse(ref.has("items"), "Annotation reference should not contain items (full content)");
     }
@@ -575,6 +575,136 @@ class IIIFPresentationGeneratorTest {
         // Verify there is NO annotations property
         assertFalse(parsed.has("annotations"),
                 "Canvas with no annotation content should omit the annotations property");
+    }
+
+    // --- Tests for missing image handling ---
+
+    @Test
+    void testCanvasMissingImageReferencesMissingImagePlaceholder() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        // Set the collection's missing image placeholder
+        BookImage missingImage = new BookImage("missing_image.tif", 100, 100, false);
+        collection.setMissingImage(missingImage);
+
+        // Create a book with a missing image
+        BookImage image = new BookImage("LudwigXV7.001r.tif", 3000, 4000, true);
+        image.setName("LudwigXV7.001r");
+        ImageList imageList = new ImageList();
+        imageList.setImages(List.of(image));
+        Book book = new Book();
+        book.setId("LudwigXV7");
+        book.setImages(imageList);
+
+        ObjectNode canvas = generator.generateCanvas(collection, book, image, 0,
+                "http://example.org", "https://images.example.com", 2, false);
+
+        String json = writer.writeToString(canvas);
+        JsonNode parsed = mapper.readTree(json);
+
+        // Image service ID should reference missing_image in the collection (no book in path)
+        JsonNode service = parsed.get("items").get(0).get("items").get(0).get("body").get("service").get(0);
+        assertEquals("https://images.example.com/rose%2Fmissing_image", service.get("id").asText());
+    }
+
+    @Test
+    void testCanvasMissingImageFallsBackToDefaultName() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        // No missing image set on the collection
+
+        BookImage image = new BookImage("LudwigXV7.001r.tif", 3000, 4000, true);
+        image.setName("LudwigXV7.001r");
+        ImageList imageList = new ImageList();
+        imageList.setImages(List.of(image));
+        Book book = new Book();
+        book.setId("LudwigXV7");
+        book.setImages(imageList);
+
+        ObjectNode canvas = generator.generateCanvas(collection, book, image, 0,
+                "http://example.org", "https://images.example.com", 2, false);
+
+        String json = writer.writeToString(canvas);
+        JsonNode parsed = mapper.readTree(json);
+
+        // Should fallback to "missing_image.tif" (with extension stripped)
+        JsonNode service = parsed.get("items").get(0).get("items").get(0).get("body").get("service").get(0);
+        assertEquals("https://images.example.com/rose%2Fmissing_image", service.get("id").asText());
+    }
+
+    // --- Tests for cropped image support ---
+
+    @Test
+    void testCanvasWithCroppedFlagUsesCroppedPath() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+
+        BookImage image = book.getImages().getImages().get(0);
+
+        // Generate canvas with cropped=true
+        ObjectNode canvas = generator.generateCanvas(collection, book, image, 0,
+                "http://example.org", "https://images.example.com", 2, false, true);
+
+        String json = writer.writeToString(canvas);
+        JsonNode parsed = mapper.readTree(json);
+
+        // Image service ID should include "cropped" in the path
+        JsonNode service = parsed.get("items").get(0).get("items").get(0).get("body").get("service").get(0);
+        assertEquals("https://images.example.com/rose%2FLudwigXV7%2Fcropped%2FLudwigXV7.001r", service.get("id").asText());
+    }
+
+    @Test
+    void testManifestUsesCroppedImagesWhenAvailable() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+
+        // Create a book with regular images and cropped images
+        BookImage regularImage = new BookImage("LudwigXV7.001r.tif", 3000, 4000, false);
+        regularImage.setName("LudwigXV7.001r");
+        ImageList regularList = new ImageList();
+        regularList.setImages(List.of(regularImage));
+
+        BookImage croppedImage = new BookImage("LudwigXV7.001r.tif", 2800, 3800, false);
+        croppedImage.setName("LudwigXV7.001r");
+        ImageList croppedList = new ImageList();
+        croppedList.setImages(List.of(croppedImage));
+
+        Book book = new Book();
+        book.setId("LudwigXV7");
+        book.setImages(regularList);
+        book.setCroppedImages(croppedList);
+
+        ObjectNode manifest = generator.generateManifest(collection, book,
+                "http://example.org", "https://images.example.com", 2);
+
+        String json = writer.writeToString(manifest);
+        JsonNode parsed = mapper.readTree(json);
+
+        // Canvas image service should use the cropped path
+        JsonNode canvasService = parsed.get("items").get(0).get("items").get(0).get("items").get(0)
+                .get("body").get("service").get(0);
+        assertEquals("https://images.example.com/rose%2FLudwigXV7%2Fcropped%2FLudwigXV7.001r",
+                canvasService.get("id").asText());
+
+        // Manifest thumbnail should also use the cropped path
+        String thumbnailId = parsed.get("thumbnail").get(0).get("id").asText();
+        assertTrue(thumbnailId.contains("cropped"), "Thumbnail should use cropped path");
+    }
+
+    @Test
+    void testManifestFallsBackToRegularImagesWhenNoCropped() throws IOException {
+        BookCollection collection = createTestCollection("rose", "Roman de la Rose");
+        Book book = createTestBookWithImage("LudwigXV7", "LudwigXV7.001r.tif", 3000, 4000);
+        // No cropped images set
+
+        ObjectNode manifest = generator.generateManifest(collection, book,
+                "http://example.org", "https://images.example.com", 2);
+
+        String json = writer.writeToString(manifest);
+        JsonNode parsed = mapper.readTree(json);
+
+        // Canvas image service should NOT have "cropped" in the path
+        JsonNode canvasService = parsed.get("items").get(0).get("items").get(0).get("items").get(0)
+                .get("body").get("service").get(0);
+        assertEquals("https://images.example.com/rose%2FLudwigXV7%2FLudwigXV7.001r",
+                canvasService.get("id").asText());
     }
 
     // --- Helper methods ---
