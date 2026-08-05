@@ -89,6 +89,27 @@ public final class IIIFPresentationGenerator {
      * @throws IOException if an I/O error occurs during generation
      */
     public void generate(ArchiveStore store, Path outputDir, String baseUrl, String imageBaseUrl, int imageApiVersion) throws IOException {
+        generate(store, outputDir, baseUrl, imageBaseUrl, imageApiVersion, null);
+    }
+
+    /**
+     * Generates all IIIF Presentation 3.0 files for the archive, optionally including
+     * JHSearch service references and service/jhsearch.json files.
+     *
+     * <p>Writes a top-level collection, per-collection sub-collections, and per-book manifests
+     * to the output directory hierarchy. When opensearchUrl is provided, also generates
+     * service/jhsearch.json per collection and adds JHSearchService2 service references to
+     * sub-collections and manifests.
+     *
+     * @param store           the archive store to read data from
+     * @param outputDir       the root output directory
+     * @param baseUrl         the base URL prefix for resource IDs, or {@code null} for relative IDs
+     * @param imageBaseUrl    the base URL for IIIF Image API services, or {@code null} to use baseUrl
+     * @param imageApiVersion the IIIF Image API version (2 or 3)
+     * @param opensearchUrl   the Opensearch _search endpoint URL for JHSearch service, or {@code null} to skip
+     * @throws IOException if an I/O error occurs during generation
+     */
+    public void generate(ArchiveStore store, Path outputDir, String baseUrl, String imageBaseUrl, int imageApiVersion, String opensearchUrl) throws IOException {
         List<String> collectionIds = store.listCollections();
 
         // Load all collections upfront to determine hierarchy
@@ -159,11 +180,27 @@ public final class IIIFPresentationGenerator {
 
                 // Generate manifest with hasAnnotations info
                 ObjectNode manifest = generateManifest(collection, book, baseUrl, imageBaseUrl, imageApiVersion, hasAnnotationsArray);
+
+                // Add JHSearch service reference to manifest if opensearchUrl is provided
+                if (opensearchUrl != null) {
+                    addJHSearchService(manifest, baseUrl, collectionId);
+                }
+
                 writer.write(manifest, outputDir.resolve(collectionId).resolve(bookId).resolve("manifest.json"));
             }
 
             // Write sub-collection AFTER processing books so labels are available
             ObjectNode subCollection = generateSubCollection(collection, bookLabels, bookFirstImages, bookCroppedFlags, baseUrl, imageBaseUrl);
+
+            // Add JHSearch service reference to sub-collection and generate service/jhsearch.json
+            if (opensearchUrl != null) {
+                addJHSearchService(subCollection, baseUrl, collectionId);
+
+                JHSearchInfoGenerator searchInfoGenerator = new JHSearchInfoGenerator(mapper);
+                ObjectNode searchInfo = searchInfoGenerator.generate(collectionId, opensearchUrl);
+                writer.write(searchInfo, outputDir.resolve(collectionId).resolve("service").resolve("jhsearch.json"));
+            }
+
             writer.write(subCollection, outputDir.resolve(collectionId).resolve("collection.json"));
         }
     }
@@ -1187,6 +1224,23 @@ public final class IIIFPresentationGenerator {
     }
 
     // ---- Private helper methods ----
+
+    /**
+     * Adds a JHSearchService1 service reference to a IIIF resource node.
+     *
+     * @param node         the ObjectNode to add the service to
+     * @param baseUrl      the base URL prefix, or {@code null} for relative IDs
+     * @param collectionId the collection identifier
+     */
+    private void addJHSearchService(ObjectNode node, String baseUrl, String collectionId) {
+        ArrayNode serviceArray = mapper.createArrayNode();
+        ObjectNode service = mapper.createObjectNode();
+        service.put("id", buildId(baseUrl, collectionId + "/service/jhsearch"));
+        service.put("type", "JHSearchService2");
+        service.put("profile", "https://github.com/jhu-digital-manuscripts/rosa2/doc/search.md");
+        serviceArray.add(service);
+        node.set("service", serviceArray);
+    }
 
     /**
      * Resolves the manifest label from BiblioData commonName or title.

@@ -37,6 +37,9 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
             description = "IIIF Image API version (2 or 3)")
     private int imageApiVersion;
 
+    @Option(names = "--opensearch-url", description = "Opensearch search endpoint URL for JHSearch service")
+    private String opensearchUrl;
+
     @Override
     public Integer call() {
         if (!Files.isDirectory(archivePath)) {
@@ -53,7 +56,7 @@ public final class GenerateIiifPresCommand implements Callable<Integer> {
 
             IIIFJsonWriter writer = new IIIFJsonWriter();
             IIIFPresentationGenerator generator = new IIIFPresentationGenerator(writer);
-            generator.generate(store, outputPath, baseUrl, imageBaseUrl, imageApiVersion);
+            generator.generate(store, outputPath, baseUrl, imageBaseUrl, imageApiVersion, opensearchUrl);
             return 0;
         } catch (IOException e) {
             System.err.println("Error generating IIIF files: " + e.getMessage());
