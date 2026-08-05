@@ -46,6 +46,6 @@ java -jar target/rosa2-2.0.0-SNAPSHOT.jar --help
 - [Usage](doc/usage.md) — CLI commands, options, and examples
 - [Archive Structure](doc/archive-structure.md) — Directory hierarchy and file conventions
 - [IIIF Generation](doc/iiif-generation.md) — How IIIF 3.0 output is structured
-- [Opensearch Indexes](doc/opensearch-indexes.md) — Index design and multi-language fields
+- [Search](doc/search.md) — JHSearch service design, Opensearch indexes, and query examples
 - [AoR Data Model](doc/aor-data-model.md) — Annotation types and data structures
 - [Deployment](doc/deployment.md) — Building, releasing, and deploying the tool
