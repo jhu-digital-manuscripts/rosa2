@@ -5,7 +5,7 @@
         "latin": {
           "type": "custom",
           "tokenizer": "standard",
-          "filter": ["lowercase", "latin_stemmer"]
+          "filter": ["lowercase", "asciifolding"]
         },
         "old_french": {
           "type": "custom",
@@ -14,10 +14,6 @@
         }
       },
       "filter": {
-        "latin_stemmer": {
-          "type": "stemmer",
-          "language": "light_german"
-        },
         "french_stemmer": {
           "type": "stemmer",
           "language": "light_french"

@@ -33,15 +33,17 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.StringJoiner;
 
 /**
  * Generates Opensearch bulk ingest NDJSON files from archive data.
  *
  * <p>Produces files in the Opensearch Bulk API format (alternating action and document lines)
- * with one output file per collection. Documents are generated for the {@code manifests},
- * {@code canvases}, and {@code annotations} indexes.
+ * with one output file per collection. Documents are generated for the {@code manifest},
+ * {@code canvas}, and {@code annotation} indexes.
  */
 public final class OpensearchIngestGenerator {
 
@@ -76,6 +78,10 @@ public final class OpensearchIngestGenerator {
             BookCollection collection = store.loadCollection(collectionId);
             List<String> bookIds = store.listBooks(collectionId);
 
+            if (bookIds.isEmpty()) {
+                continue;
+            }
+
             Path outputFile = outputDir.resolve(collectionId + ".bulk.json");
 
             try (BufferedWriter writer = Files.newBufferedWriter(outputFile)) {
@@ -84,12 +90,19 @@ public final class OpensearchIngestGenerator {
 
                     // Manifest document
                     ObjectNode manifestDoc = generateManifestDocument(collection, book);
-                    writeActionDocumentPair(writer, "manifests", book.getId(), manifestDoc);
+                    writeActionDocumentPair(writer, "manifest", book.getId(), manifestDoc);
 
                     // Process each image (canvas)
                     ImageList imageList = book.getImages();
                     if (imageList == null) {
                         continue;
+                    }
+
+                    // Split the transcription XML once per book into per-page fragments
+                    Transcription transcription = book.getTranscription();
+                    Map<String, String> transcriptionPages = Collections.emptyMap();
+                    if (transcription != null && transcription.getXML() != null) {
+                        transcriptionPages = TranscriptionSplitter.split(transcription.getXML());
                     }
 
                     List<BookImage> images = imageList.getImages();
@@ -100,7 +113,7 @@ public final class OpensearchIngestGenerator {
                         // Canvas document
                         ObjectNode canvasDoc = generateCanvasDocument(collection, book, image, position);
                         String canvasId = collection.getId() + "." + book.getId() + "." + image.getId();
-                        writeActionDocumentPair(writer, "canvases", canvasId, canvasDoc);
+                        writeActionDocumentPair(writer, "canvas", canvasId, canvasDoc);
 
                         // AoR annotations for this page
                         AnnotatedPage annotatedPage = book.getAnnotationPage(image.getId());
@@ -110,19 +123,20 @@ public final class OpensearchIngestGenerator {
                                 ObjectNode annotationDoc = generateAnnotationDocument(
                                         collection, book, image, annotation, reader);
                                 String annotDocId = annotationDoc.has("id") ? annotationDoc.get("id").asText() : "";
-                                writeActionDocumentPair(writer, "annotations", annotDocId, annotationDoc);
+                                writeActionDocumentPair(writer, "annotation", annotDocId, annotationDoc);
                             }
                         }
 
-                        // Transcription for this page
-                        Transcription transcription = book.getTranscription();
-                        if (transcription != null && transcription.getXML() != null) {
-                            // The transcription content is stored as a single XML blob;
-                            // generate one transcription document per page
-                            ObjectNode transcriptionDoc = generateTranscriptionDocument(
-                                    collection, book, image, transcription.getXML());
-                            String transId = transcriptionDoc.has("id") ? transcriptionDoc.get("id").asText() : "";
-                            writeActionDocumentPair(writer, "annotations", transId, transcriptionDoc);
+                        // Transcription for this page — look up the per-page fragment
+                        if (!transcriptionPages.isEmpty()) {
+                            String normalizedPage = TranscriptionSplitter.normalizePageName(image.getName());
+                            String pageFragment = transcriptionPages.get(normalizedPage);
+                            if (pageFragment != null && !pageFragment.isBlank()) {
+                                ObjectNode transcriptionDoc = generateTranscriptionDocument(
+                                        collection, book, image, pageFragment);
+                                String transId = transcriptionDoc.has("id") ? transcriptionDoc.get("id").asText() : "";
+                                writeActionDocumentPair(writer, "annotation", transId, transcriptionDoc);
+                            }
                         }
 
                         // Illustration tagging for this page
@@ -134,7 +148,7 @@ public final class OpensearchIngestGenerator {
                                 ObjectNode illustrationDoc = generateIllustrationDocument(
                                         collection, book, image, illustration);
                                 String illusId = illustrationDoc.has("id") ? illustrationDoc.get("id").asText() : "";
-                                writeActionDocumentPair(writer, "annotations", illusId, illustrationDoc);
+                                writeActionDocumentPair(writer, "annotation", illusId, illustrationDoc);
                             }
                         }
                     }
@@ -172,7 +186,7 @@ public final class OpensearchIngestGenerator {
     }
 
     /**
-     * Generates a manifest document for the {@code manifests} index.
+     * Generates a manifest document for the {@code manifest} index.
      *
      * <p>Contains bibliographic metadata and structural information for a single book.
      * Fields include: id, collection_id, title, repository, shelfmark, date, origin,
@@ -280,7 +294,7 @@ public final class OpensearchIngestGenerator {
     }
 
     /**
-     * Generates a canvas document for the {@code canvases} index.
+     * Generates a canvas document for the {@code canvas} index.
      *
      * <p>Contains page-level data including the image name and 1-based sequential position.
      *
@@ -311,7 +325,7 @@ public final class OpensearchIngestGenerator {
     }
 
     /**
-     * Generates an annotation document for the {@code annotations} index.
+     * Generates an annotation document for the {@code annotation} index.
      *
      * <p>Handles all annotation types: marginalia, underline, mark, symbol, drawing,
      * errata, numeral, transcription, and illustration. Routes text content into
@@ -371,7 +385,7 @@ public final class OpensearchIngestGenerator {
     }
 
     /**
-     * Generates a transcription annotation document for the {@code annotations} index.
+     * Generates a transcription annotation document for the {@code annotation} index.
      *
      * <p>Transcription documents contain the XML content of the transcription for a specific page.
      *
@@ -404,7 +418,7 @@ public final class OpensearchIngestGenerator {
     }
 
     /**
-     * Generates an illustration annotation document for the {@code annotations} index.
+     * Generates an illustration annotation document for the {@code annotation} index.
      *
      * <p>Illustration documents contain title/description information for a tagged illustration.
      *

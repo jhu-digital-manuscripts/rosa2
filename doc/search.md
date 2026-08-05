@@ -101,7 +101,7 @@ The `service/jhsearch.json` file is a static JSON file generated per collection.
     { "name": "date", "label": "Date" }
   ],
   "default-fields": ["text", "title", "method", "people"],
-  "opensearch": "https://search.example.org/annotations/_search"
+  "opensearch": "https://search.example.org/_search"
 }
 ```
 
@@ -130,19 +130,19 @@ The system uses three Opensearch indexes, each defined in the `opensearch/` dire
 
 | Index | Definition File | Description |
 |-------|----------------|-------------|
-| `manifests` | `opensearch/manifests.json` | One document per book — bibliographic metadata, identifiers, and keyword facet fields |
-| `canvases` | `opensearch/canvases.json` | One document per page — image identifier and sequential position within a book |
-| `annotations` | `opensearch/annotations.json` | One document per annotation — text content routed into language-specific sub-fields |
+| `manifest` | `opensearch/manifest.json` | One document per book — bibliographic metadata, identifiers, and keyword facet fields |
+| `canvas` | `opensearch/canvas.json` | One document per page — image identifier and sequential position within a book |
+| `annotation` | `opensearch/annotation.json` | One document per annotation — text content routed into language-specific sub-fields |
 
-### `manifests` Index
+### `manifest` Index
 
 Book-level metadata for full-text search and faceted filtering. Contains fields such as title, authors, repository, date, origin, current location, and type. Keyword-typed fields enable faceted search result filtering.
 
-### `canvases` Index
+### `canvas` Index
 
 Page-level data for image and position lookups. Contains the image identifier and sequential position within the book. Supports page-based navigation and linking annotations back to specific images.
 
-### `annotations` Index
+### `annotation` Index
 
 Annotation content for full-text and faceted search. Contains one document per annotation across all types (marginalia, underline, mark, symbol, drawing, errata, numeral, transcription, illustration, calculation, graph, table). Text content is routed into language-specific sub-fields for proper stemming and analysis.
 
@@ -151,17 +151,17 @@ Annotation content for full-text and faceted search. Contains one document per a
 Use the Opensearch REST API with the definition files:
 
 ```bash
-curl -X PUT "https://<host>:9200/manifests" \
+curl -X PUT "https://<host>:9200/manifest" \
   -H "Content-Type: application/json" \
-  -d @opensearch/manifests.json
+  -d @opensearch/manifest.json
 
-curl -X PUT "https://<host>:9200/canvases" \
+curl -X PUT "https://<host>:9200/canvas" \
   -H "Content-Type: application/json" \
-  -d @opensearch/canvases.json
+  -d @opensearch/canvas.json
 
-curl -X PUT "https://<host>:9200/annotations" \
+curl -X PUT "https://<host>:9200/annotation" \
   -H "Content-Type: application/json" \
-  -d @opensearch/annotations.json
+  -d @opensearch/annotation.json
 ```
 
 ## Multi-Language Text Analysis
@@ -260,7 +260,7 @@ java -jar rosa2.jar generate-iiif-pres \
   --base-url https://iiif.example.org \
   --image-base-url https://image.example.org/iiif/ \
   --image-api-version 2 \
-  --opensearch-url https://search.example.org/annotations/_search
+  --opensearch-url https://search.example.org/_search
 ```
 
 When `--opensearch-url` is provided:

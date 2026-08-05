@@ -1,4 +1,26 @@
 {
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "latin": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "asciifolding"]
+        },
+        "old_french": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "french_stemmer", "asciifolding"]
+        }
+      },
+      "filter": {
+        "french_stemmer": {
+          "type": "stemmer",
+          "language": "light_french"
+        }
+      }
+    }
+  },
   "mappings": {
     "properties": {
       "id": { "type": "keyword" },

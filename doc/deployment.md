@@ -64,12 +64,12 @@ A standard deployment workflow for generating and publishing content:
 
 4. **Create Opensearch indexes** using the definition files:
    ```bash
-   curl -X PUT "https://search.example.org:9200/manifests" \
-     -H "Content-Type: application/json" -d @opensearch/manifests.json
-   curl -X PUT "https://search.example.org:9200/canvases" \
-     -H "Content-Type: application/json" -d @opensearch/canvases.json
-   curl -X PUT "https://search.example.org:9200/annotations" \
-     -H "Content-Type: application/json" -d @opensearch/annotations.json
+   curl -X PUT "https://search.example.org:9200/manifest" \
+     -H "Content-Type: application/json" -d @opensearch/manifest.json
+   curl -X PUT "https://search.example.org:9200/canvas" \
+     -H "Content-Type: application/json" -d @opensearch/canvas.json
+   curl -X PUT "https://search.example.org:9200/annotation" \
+     -H "Content-Type: application/json" -d @opensearch/annotation.json
    ```
 
 5. **Generate and ingest bulk data**:
