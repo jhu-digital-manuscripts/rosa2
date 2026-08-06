@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.101r.tif" pagination="xcvii[r]" reader="Harvey" signature="Bbi[r]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="perculles made like vnto a grate" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Percullesses commendid, lyke vnto grates.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="somewaht stronger then the ordinarye" type="straight"/>
+    	<underline language="EN" method="pen" text="the insample" type="straight"/>
+    	<underline language="EN" method="pen" text="muche debilitie" type="straight"/>
+    	<underline language="EN" method="pen" text="king Charles of Frau[n]ce" type="straight"/>
+    	<underline language="EN" method="pen" text="made the batelmentes not" type="straight"/>
+    	<underline language="EN" method="pen" text="the loopes" type="straight"/>
+    	<underline language="EN" method="pen" text="the flanckers were" type="straight"/>
+    	<underline language="EN" method="pen" text="litle opening without" type="straight"/>
+    	<underline language="EN" method="pen" text="from thinne battelments" type="straight"/>
+    	<underline language="EN" method="pen" text="defence is taken" type="straight"/>
+    	<underline language="EN" method="pen" text="flanckers builded" type="straight"/>
+    	<underline language="EN" method="pen" text="moste easylye are" type="straight"/>
+    	<underline language="EN" method="pen" text="the battelment large" type="straight"/>
+    	<underline language="EN" method="pen" text="and thicke" type="straight"/>
+    	<underline language="EN" method="pen" text="flanckers to bee" type="straight"/>
+    	<underline language="EN" method="pen" text="agayn to waxe wider vnto the vttermost" type="straight"/>
+    	<underline language="EN" method="pen" text="the ordinaunce hardlye" type="straight"/>
+    	<underline language="EN" method="pen" text="can take" type="straight"/>
+    	<underline language="EN" method="pen" text="haue, manye other deuises like" type="straight"/>
+    	<underline language="EN" method="pen" text="perculles made like vnto a grate" type="straight"/>
+    	<underline language="EN" method="pen" text="massiue parculles" type="straight"/>
+    	<underline language="EN" method="pen" text="shutte in your" type="straight"/>
+    	<underline language="EN" method="pen" text="not" type="straight"/>
+    	<underline language="EN" method="pen" text="though the" type="straight"/>
+    	<underline language="EN" method="pen" text="hurte the enemie" type="straight"/>
+    	<underline language="EN" method="pen" text="with axes" type="straight"/>
+    	<underline language="EN" method="pen" text="and with fire" type="straight"/>
+    	<underline language="EN" method="pen" text="breake it downe" type="straight"/>
+    	<underline language="EN" method="pen" text="downe, through those" type="straight"/>
+    	<underline language="EN" method="pen" text="those open places, defende it with" type="straight"/>
+    	<underline language="EN" method="pen" text="with crosbowes" type="straight"/>
+    	<underline language="EN" method="pen" text="with all other" type="straight"/>
+    	<underline language="EN" method="pen" text="the carriage of the artillery" type="straight"/>
+    	<underline language="EN" method="pen" text="the spokes of [the] wheele" type="straight"/>
+    	<underline language="EN" method="pen" text="towardes the Axeltree" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="Battelme[n]ts" type="straight"/>
+    	<underline language="EN" method="pen" text="large and thicke" type="straight"/>
+    	<underline language="EN" method="pen" text="flanckers large" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Battelme[n]ts"/>
+    	<mark method="pen" name="comma" place="right_margin"/> <!-- Marginal text -->
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="those open places, defende it with"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- loste, for -->
+    	<mark method="pen" name="comma" place="intext"/> <!-- debilitie before --> 
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="from thinne battelments"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- awaye, the -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the battelment"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="and thicke"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- thicke, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="flanckers to bee"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the ordinaunce hardlye"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="manye other deuises"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- these, the -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="perculles"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- gate a -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- enemie, so -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the spokes of [the] wheele"/>
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="through" copytext="though" language="EN"/>
+    	
+    </annotation>
+</transcription>

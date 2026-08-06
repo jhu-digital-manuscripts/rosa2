@@ -51,7 +51,14 @@ public final class LanguageFieldRouter {
             return;
         }
         String subField = resolveSubField(langCode);
-        doc.put(fieldName + "." + subField, content);
+        String key = fieldName + "." + subField;
+        if (doc.has(key)) {
+            // Append to existing content with a space separator
+            String existing = doc.get(key).asText();
+            doc.put(key, existing + " " + content);
+        } else {
+            doc.put(key, content);
+        }
     }
 
     /**

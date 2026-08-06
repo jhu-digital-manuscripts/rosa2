@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.114v.tif" reader="Harvey" signature="[Eii[v]]"/>
+    <annotation>
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="CCCC. me[n] into .lxxx. ranckes" type="straight"/>
+    	<underline language="EN" method="pen" text="vvith the pikes on the front" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="dash" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="vvith the pikes on the front"/>
+
+	<!-- Numerals  -->
+    	<numeral place="intext">
+    		I.
+    	</numeral>
+    	<numeral place="intext">
+    		2.
+    	</numeral>
+    	<numeral place="intext">
+    		3.
+    	</numeral>
+    	<numeral place="intext">
+    		4.
+    	</numeral>
+    </annotation>
+</transcription>

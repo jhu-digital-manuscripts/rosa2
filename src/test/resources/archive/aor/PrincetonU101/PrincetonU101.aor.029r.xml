@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.029r.tif" pagination="xxv[r]" reader="Harvey" signature="Gi[r]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					notabilis victoria, paucorum de multis.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			A notable victory of a few out of many.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					The power of footemen, surer &amp; stronger,
+    					then the power of horses.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Christianoru[m] Equites: Turcarum pedites, Valentiores.
+    					Jouius in Amurathe 2. Lib. 3. Elog. Bellic.
+    				</marginalia_text>
+    				<person name="Paolo Giovio"/>
+    				<person name="Murad II"/>
+    				<book title="Elogia virorum bellica virtute illustrium"/>
+    			</position>
+    		</language>
+    		<translation>
+    			The Christians' horsemen: the Turks' infantry, more powerful.
+    			Paolo Giovio on Murad II, in Book 3 of Elogia virorum bellica virtute illustrium.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+    	<underline language="EN" method="pen" text="that a power thus" type="straight"/>
+    	<underline language="EN" method="pen" text="ouercome at this daye, any other power" type="straight"/>
+    	<underline language="EN" method="pen" text="concerning footemen" type="straight"/>
+    	<underline language="EN" method="pen" text="concernig horsemen, wee" type="straight"/>
+    	<underline language="EN" method="pen" text="more stronger" type="straight"/>
+    	<underline language="EN" method="pen" text="ours" type="straight"/>
+    	<underline language="EN" method="pen" text="the antiquitie" type="straight"/>
+    	<underline language="EN" method="pen" text="Saddelles bolstered, and to the stiroppes" type="straight"/>
+    	<underline language="EN" method="pen" text="stande more stronglye on horsebacke" type="straight"/>
+    	<underline language="EN" method="pen" text="a bande of men of armes" type="straight"/>
+    	<underline language="EN" method="pen" text="paysing very muche, commeth" type="straight"/>
+    	<underline language="EN" method="pen" text="more accompt of horses" type="straight"/>
+    	<underline language="EN" method="pen" text="haue with the footemen receyued shame" type="straight"/>
+    	<underline language="EN" method="pen" text="receyue alwayes, where" type="straight"/>
+    	<underline language="EN" method="pen" text="of footemen armed, and ordered, as" type="straight"/>
+    	<underline language="EN" method="pen" text="Tigrane king" type="straight"/>
+    	<underline language="EN" method="pen" text="CI. thousande horsemen" type="straight"/>
+    	<underline language="EN" method="pen" text="armed, like vnto our" type="straight"/>
+    	<underline language="EN" method="pen" text="Catafratti" type="straight"/>
+    	<underline language="EN" method="pen" text="about sixe thousande" type="straight"/>
+    	<underline language="EN" method="pen" text="with xxv. thousand footemen" type="straight"/>
+    	<underline language="EN" method="pen" text="be horses enough for an imbassage" type="straight"/>
+    	<underline language="EN" method="pen" text="incountering together, he was ouerthrown" type="straight"/>
+    	<underline language="EN" method="pen" text="those Catafratti, declaring them" type="straight"/>
+    	<underline language="EN" method="pen" text="had their faces couered" type="straight"/>
+    	<underline language="EN" method="pen" text="a doe to see, and to offende" type="straight"/>
+    	<underline language="EN" method="pen" text="falling, being laden with armour, coulde not" type="straight"/>
+    	<underline language="EN" method="pen" text="nor welde themselues" type="straight"/>
+    	<underline language="EN" method="pen" text="people or kingdomes" type="straight"/>
+    	<underline language="EN" method="pen" text="esteeme more the power of horses" type="straight"/>
+    	<underline language="EN" method="pen" text="then the power" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="of Lucullo" type="straight"/>
+    	<underline language="EN" method="pen" text="Tigrane" type="straight"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="ouercome at this daye, any other power"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="Saddelles bolstered, and to the stiroppes"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="haue with the footemen receyued shame"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="bracket" place="right_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="then the power"/>
+
+	<mark method="pen" name="dot" place="intext"/> <!-- footemen, but -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="horsemen"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="and to the Stiroppes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="stronglye"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="receyue alwayes"/>
+    	<mark method="pen" name="comma" place="right_margin"/> <!-- receuyed shame -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="of footemen armed"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="and ordered"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- Catafratti, & -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="about sixe thousande"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="horses"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="imbassage"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="had their faces couered"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="laden"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="kingdomes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="power of horses"/>
+    	    	
+    </annotation>
+</transcription>

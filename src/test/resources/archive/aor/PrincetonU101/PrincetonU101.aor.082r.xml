@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.082r.tif" pagination="lxxviii[r]" reader="Harvey" signature="Uij[r]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="foure &amp; twentie thousande footemen, &amp; of twoo thousande good horsemen" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					24000 footme[n]:
+    					2000 horsemen.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="in their consull" type="straight"/>
+    	<underline language="EN" method="pen" text="Legions of Romayne" type="straight"/>
+    	<underline language="EN" method="pen" text="aleuen thousande footemen" type="straight"/>
+    	<underline language="EN" method="pen" text="and sixe hundred horsemen" type="straight"/>
+    	<underline language="EN" method="pen" text="they had an other" type="straight"/>
+    	<underline language="EN" method="pen" text="sent from their friends in their" type="straight"/>
+    	<underline language="EN" method="pen" text="more souldiours" type="straight"/>
+    	<underline language="EN" method="pen" text="were straungers" type="straight"/>
+    	<underline language="EN" method="pen" text="Romaynes, except" type="straight"/>
+    	<underline language="EN" method="pen" text="all their doinges" type="straight"/>
+    	<underline language="EN" method="pen" text="their Legions in the middest" type="straight"/>
+    	<underline language="EN" method="pen" text="and the aiders, on the sides" type="straight"/>
+    	<underline language="EN" method="pen" text="also in incamping" type="straight"/>
+    	<underline language="EN" method="pen" text="distinctly how they incamped" type="straight"/>
+    	<underline language="EN" method="pen" text="would incampe my" type="straight"/>
+    	<underline language="EN" method="pen" text="of sixe thousand footemen" type="straight"/>
+    	<underline language="EN" method="pen" text="three hundred horsemen" type="straight"/>
+    	<underline language="EN" method="pen" text="what battailes" type="straight"/>
+    	<underline language="EN" method="pen" text="what weapons" type="straight"/>
+    	<underline language="EN" method="pen" text="names I" type="straight"/>
+    	<underline language="EN" method="pen" text="armie to marche, and to fighte" type="straight"/>
+    	<underline language="EN" method="pen" text="doubling the men, they" type="straight"/>
+    	<underline language="EN" method="pen" text="but to double the orders" type="straight"/>
+    	<underline language="EN" method="pen" text="maner of incamping" type="straight"/>
+    	<underline language="EN" method="pen" text="together a iuste armye, made" type="straight"/>
+    	<underline language="EN" method="pen" text="Romaines, of twoo mayne battailes" type="straight"/>
+    	<underline language="EN" method="pen" text="manye mo aiding men" type="straight"/>
+    	<underline language="EN" method="pen" text="the incamping" type="straight"/>
+    	<underline language="EN" method="pen" text="lodging a perfecte armye" type="straight"/>
+    	<underline language="EN" method="pen" text="inca[m]pe a iuste army of foure &amp; twentie thousande footemen" type="straight"/>
+    	<underline language="EN" method="pen" text="twoo thousande good horsemen" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="the inca[m]ping of an armie" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="aiding men"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark method="pen" name="hash" place="tail"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- hrosemen, and -->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- their aide -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="all their doinges"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Legions"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="middest"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- middest, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="on the sides"/>
+    	<mark method="pen" name="semicolon" place="right_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="incamping"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="double"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="a iuste armye"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="lodging a perfecte armye"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="iuste"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="good horsemen"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="twoo thousande good horsemen"/>
+    </annotation>
+</transcription>

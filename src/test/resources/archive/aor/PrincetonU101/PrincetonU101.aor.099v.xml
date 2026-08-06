@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.099v.tif" pagination="[xcv[v]]" reader="Harvey"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="Catherin the Cou[n]tesse" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					against Countesse Catherin.
+    					Whome he browght in Triumph to Roome.
+    				</marginalia_text>
+    				<person name="Caterina Sforza"/>
+    				<person name="Cesare Borgia"/>
+    				<location name="Rome"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					No walles, or forts of any ualu, where liuely walles, 
+    					&amp; forts ar wanting to defend them, with all forcible
+    					&amp; possible manition:
+    				</marginalia_text>
+    			</position>
+    			
+    		</language>
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Ca[e]sariana illahorribilidiligentia. 
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The horrible diligence of Caesar.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="ought to make any" type="straight"/>
+    	<underline language="EN" method="pen" text="maye be driuen without remeedy to leese" type="straight"/>
+    	<underline language="EN" method="pen" text="first reputation" type="straight"/>
+    	<underline language="EN" method="pen" text="Bulwarkes out of the Towne, that is to" type="straight"/>
+    	<underline language="EN" method="pen" text="alwayes he shall leese them, little" type="straight"/>
+    	<underline language="EN" method="pen" text="not able to bee defended" type="straight"/>
+    	<underline language="EN" method="pen" text="to the furie of ordinance" type="straight"/>
+    	<underline language="EN" method="pen" text="bee beginning and cause of his ruine" type="straight"/>
+    	<underline language="EN" method="pen" text="Genua rebelled" type="straight"/>
+    	<underline language="EN" method="pen" text="certaine Bulwarkes a loste on those" type="straight"/>
+    	<underline language="EN" method="pen" text="which bee" type="straight"/>
+    	<underline language="EN" method="pen" text="was sodainly, made" type="straight"/>
+    	<underline language="EN" method="pen" text="same refuge places, to be able to" type="straight"/>
+    	<underline language="EN" method="pen" text="the hope" type="straight"/>
+    	<underline language="EN" method="pen" text="they leese the vtter warde" type="straight"/>
+    	<underline language="EN" method="pen" text="after, all the Fortresse" type="straight"/>
+    	<underline language="EN" method="pen" text="Fortresse of Furlye" type="straight"/>
+    	<underline language="EN" method="pen" text="Catherin the Cou[n]tesse" type="straight"/>
+    	<underline language="EN" method="pen" text="conducted thether [the] armie of the king of France" type="straight"/>
+    	<underline language="EN" method="pen" text="places, to retire out of one" type="straight"/>
+    	<underline language="EN" method="pen" text="the keepe" type="straight"/>
+    	<underline language="EN" method="pen" text="Fortresse, was a ditche" type="straight"/>
+    	<underline language="EN" method="pen" text="by a drawe bridge" type="straight"/>
+    	<underline language="EN" method="pen" text="deuided into three" type="straight"/>
+    	<underline language="EN" method="pen" text="the other with ditches, and with" type="straight"/>
+    	<underline language="EN" method="pen" text="battered with his artillerie, one of the partes of the fortresse" type="straight"/>
+    	<underline language="EN" method="pen" text="and opened" type="straight"/>
+    	<underline language="EN" method="pen" text="appoincted to that Warde, thoughte" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="Small fortresses can" type="straight"/>
+    	<underline language="EN" method="pen" text="tovvne of" type="straight"/>
+    	<underline language="EN" method="pen" text="or Fortresse ought" type="straight"/>
+    	<underline language="EN" method="pen" text="retiring places" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Small fortresses can"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="after, all the Fortresse"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="Catherin the Cou[n]tesse"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="conducted thether [the] armie of the king of France"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- reputation, the -->
+    	<mark method="pen" name="bracket" place="intext"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- defence, and -->
+    	<mark method="pen" name="bracket" place="intext"/>    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- them, litle -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- ordinance, in -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- it, the -->
+    	<mark method="pen" name="comma" place="intext"/> <!-- were lost --> 
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="was sodainly"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="refuge places"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the hope"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="thether [the] armie of the king of France"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the keepe"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="one of the partes of the fortresse"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="appoincted to that Warde"/>
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="who" copytext="whom" language="EN"/>
+    	
+    </annotation>
+</transcription>

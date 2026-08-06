@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.108v.tif" pagination="[ciii[v]]" reader="Harvey"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Regula Regularum.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="EN">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					To seeke &amp; enforce all possible aduantage.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The rule of rules.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Locus.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Place.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian"> <!--JG: Link to printed text?-->
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Cohortatio.	
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Exhortation.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					stratagematicè.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Strategical.
+    		</translation>
+    	</marginalia>
+    	<marginalia anchor_text="howe thou wilte order thy army to fight " hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Ordo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Order.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					{ 	ante pra[e]liu[m].
+    						in pra[e]lio.
+    						O[e]conomia.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Before battle.
+    			In battle.
+    			Arrangement.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Vires.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Men.
+    		</translation>
+    	</marginalia>
+    	<marginalia anchor_text="Men, yron, money, and bread" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					4.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Capua Hannibali Cannae. Dura duros efficiunt: molles mollia.
+    				</marginalia_text>
+    				<person name="Hannibal"/>
+    				<location name="Capua"/>
+    				<location name="Cannae"/>
+    				<X-ref book_title="Ab urbe condita" language="LA" person="Livy" text="Capua Hannibali Cannae"/>
+    			</position>
+    		</language>
+    		<translation>
+    			"Capua was Hannibal's at Cannae." 
+    			The hard carry out hard things: the soft soft things. 
+    		</translation>		
+    	</marginalia>
+    	
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					stratagematicè
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Strategical.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Added to Vegetius.
+    				</marginalia_text>
+    				<person name="Vegetius"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia anchor_text="thing" hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					vir,
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			man,
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					suu[m] cuiq[ue] pensu[m] assignandu[m]. inuiolatè.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The task which has been appointed to him. Inviolably.
+    		</translation>
+    	</marginalia>
+    	<marginalia anchor_text="yron" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					munition,
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia anchor_text="bread" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					meat,
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Mmmm.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="with the situacion" type="straight"/>
+    	<underline language="EN" method="pen" text="anye spie into the Campe" type="straight"/>
+    	<underline language="EN" method="pen" text="Chaunge purpose, when" type="straight"/>
+    	<underline language="EN" method="pen" text="hath forseene it" type="straight"/>
+    	<underline language="EN" method="pen" text="thou oughtest" type="straight"/>
+    	<underline language="EN" method="pen" text="thou wilt after" type="straight"/>
+    	<underline language="EN" method="pen" text="abide at home" type="straight"/>
+    	<underline language="EN" method="pen" text="feare and punishmente" type="straight"/>
+    	<underline language="EN" method="pen" text="warre, with hope and with rewarde" type="straight"/>
+    	<underline language="EN" method="pen" text="neuer to fighte the fielde" type="straight"/>
+    	<underline language="EN" method="pen" text="except necessitie constrayne them" type="straight"/>
+    	<underline language="EN" method="pen" text="and occasion call" type="straight"/>
+    	<underline language="EN" method="pen" text="not, howe thou" type="straight"/>
+    	<underline language="EN" method="pen" text="order thy army to fight" type="straight"/>
+    	<underline language="EN" method="pen" text="so euer maner" type="straight"/>
+    	<underline language="EN" method="pen" text="ordaynest" type="straight"/>
+    	<underline language="EN" method="pen" text="firste bande maye" type="straight"/>
+    	<underline language="EN" method="pen" text="receyued of the seconde" type="straight"/>
+    	<underline language="EN" method="pen" text="and of the thirde" type="straight"/>
+    	<underline language="EN" method="pen" text="the fighte" type="straight"/>
+    	<underline language="EN" method="pen" text="occupie a battaill to anye other thing, then to the same, for whiche thou hast" type="straight"/>
+    	<underline language="EN" method="pen" text="make no disorder" type="straight"/>
+    	<underline language="EN" method="pen" text="sodayne accidentes" type="straight"/>
+    	<underline language="EN" method="pen" text="with difficultie are remeedied" type="straight"/>
+    	<underline language="EN" method="pen" text="that are thought vpon" type="straight"/>
+    	<underline language="EN" method="pen" text="with facilitie" type="straight"/>
+    	<underline language="EN" method="pen" text="Men" type="straight"/>
+    	<underline language="EN" method="pen" text="yron" type="straight"/>
+    	<underline language="EN" method="pen" text="money" type="straight"/>
+    	<underline language="EN" method="pen" text="bread" type="straight"/>
+    	<underline language="EN" method="pen" text="the strength" type="straight"/>
+    	<underline language="EN" method="pen" text="these foure" type="straight"/>
+    	<underline language="EN" method="pen" text="the first twoo be moste" type="straight"/>
+    	<underline language="EN" method="pen" text="because men and yron, finde" type="straight"/>
+    	<underline language="EN" method="pen" text="vnarmed ritch" type="straight"/>
+    	<underline language="EN" method="pen" text="bootie to the poore souldiour" type="straight"/>
+    	<underline language="EN" method="pen" text="Accustome" type="straight"/>
+    	<underline language="EN" method="pen" text="souldiours to dispise delicate liuing" type="straight"/>
+    	<underline language="EN" method="pen" text="laciuius apparell" type="straight"/>
+    	<underline language="EN" method="pen" text="mee generallye" type="straight"/>
+    	<underline language="EN" method="pen" text="manye other thinges in all" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="the strength" type="straight"/>
+    	<underline language="EN" method="pen" text="the vvarre" type="straight"/>
+    		
+    	<!-- Symbols -->
+    	<symbol name="SS" place="tail"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="bracket" place="right_margin" text="Men, yron, money, and bread, bee the strength of the warre, but of these foure, the first twoo be moste necessarye: because men and yron, finde money and bread: but breade and money finde not men and yron."/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="feare"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- punishmente, after -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="hope"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="necessitie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="occasion"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="order thy army to fight"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- fight, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the fighte"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="anye"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="same"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="sodayne"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="difficultie are remeedied"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="thought"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="strength"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="men"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="yron"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Accustome"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to dispise delicate"/>
+    	<mark method="pen" name="horizontal_bar" place="intext"/>
+    	<mark method="pen" name="horizontal_bar" place="intext"/>
+    	<mark method="pen" name="horizontal_bar" place="intext"/>
+    	<mark method="pen" name="horizontal_bar" place="intext"/>
+    	<mark method="pen" name="dot" place="intext"/>
+    	
+    	<errata amendedtext=", and" copytext=",and" language="EN"/> <!-- Bar seems to be separting comma from word. -->
+    	
+    </annotation>
+</transcription>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.081r.tif" pagination="lxxvii[r]" reader="Harvey" signature="Ui[r]"/>
+    <annotation>
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="the best Souldiours, before" type="straight"/>
+    	<underline language="EN" method="pen" text="behinde the armye" type="straight"/>
+    	<underline language="EN" method="pen" text="haue before" type="straight"/>
+    	<underline language="EN" method="pen" text="behinde maye" type="straight"/>
+    	<underline language="EN" method="pen" text="wee lodge this our armie" type="straight"/>
+    	
+    	<!-- Symbols -->
+	<symbol name="Bisected_circle" place="right_margin"/>
+    	<symbol name="Bisected_circle" place="right_margin"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="the best Souldiours, before"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!--  mine, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="before"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="behinde"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- hetherto -->
+    	<mark method="pen" name="comma" place="intext"/> <!-- matter I -->
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="wee lodge this our armie"/>
+    	
+    </annotation>
+</transcription>

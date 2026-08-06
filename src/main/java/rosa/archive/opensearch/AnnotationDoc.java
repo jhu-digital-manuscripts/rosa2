@@ -14,7 +14,7 @@ import java.util.Map;
  * @param manifestId     the identifier of the manifest (book) containing this annotation
  * @param collectionId   the identifier of the collection containing this annotation
  * @param type           the annotation type (e.g. marginalia, underline, mark, symbol, drawing,
- *                       errata, numeral, transcription, illustration)
+ *                       errata, numeral, transcription, illustration, calculation, graph, table)
  * @param language       the primary language of this annotation
  * @param imageName      the short image identifier for page-based lookups
  * @param annotator      the reader who made this annotation
@@ -23,6 +23,7 @@ import java.util.Map;
  * @param orientation    the orientation of drawings, graphs, or calculations
  * @param method         the method used for the annotation
  * @param hand           the hand (principal or other) that wrote the annotation
+ * @param markName       the mark type name (e.g. plus_sign, dash) for mark annotations
  * @param text           the text content routed by language (e.g. {@code {"en": "content"}})
  * @param translation    the translation content routed by language
  * @param emphasis       emphasized or underlined text within marginalia, routed by language
@@ -47,6 +48,7 @@ public record AnnotationDoc(
         String orientation,
         String method,
         String hand,
+        String markName,
         Map<String, String> text,
         Map<String, String> translation,
         Map<String, String> emphasis,

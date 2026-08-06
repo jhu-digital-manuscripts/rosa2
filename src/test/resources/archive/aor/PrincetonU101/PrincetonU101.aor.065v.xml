@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.065v.tif" pagination="lxi[v]" reader="Harvey" signature="[Qi[v]]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="Ca[e]sar" hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Ca[e]sar, max[im]e omniu[m] sciebat vti Victoria.
+    				</marginalia_text>
+    				<person name="Julius Caesar"/>
+    			</position>
+    		</language>
+    		<translation>
+    			Caesar most of all knew how to take advantage of victory.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Nota.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Scitum est, et Triumpho dignu[m], Impedimentu[m] pro occasione
+    					arripere; et tanq[uam] panem ex lapidibus facere.
+    				</marginalia_text>
+    				<X-ref book_title="Ab Urbe Condita" language="LA" person="Livy" text="Impedimentum pro occasione arripere"/>	<!-- "Impedimentum pro occasione arripere" from Book 3.35 -->
+    				<X-ref book_title="Bible" language="LA" person="Matthew" text="panem ex lapidibus facere"/>
+    			</position>
+    		</language>
+    		<translation>
+    			He is known, and worthy of celebration, for "turning an obstacle into an opportunity,"
+    			and, as it were, for "making bread from stones."  
+    		</translation>
+    	</marginalia>
+    	
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					atonce.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="an Ansigne out" type="straight"/>
+    	<underline language="EN" method="pen" text="throwen it amongest the enemies" type="straight"/>
+    	<underline language="EN" method="pen" text="that coulde get it again" type="straight"/>
+    	<underline language="EN" method="pen" text="after the fight" type="straight"/>
+    	<underline language="EN" method="pen" text="to be left behinde, and" type="straight"/>
+    	<underline language="EN" method="pen" text="when it is wo[n]ne" type="straight"/>
+    	<underline language="EN" method="pen" text="the victorie" type="straight"/>
+    	<underline language="EN" method="pen" text="all celerity to be followed" type="straight"/>
+    	<underline language="EN" method="pen" text="imitate Caesar" type="straight"/>
+    	<underline language="EN" method="pen" text="not Anibal" type="straight"/>
+    	<underline language="EN" method="pen" text="lost [the] empire" type="straight"/>
+    	<underline language="EN" method="pen" text="The other neuer rested" type="straight"/>
+    	<underline language="EN" method="pen" text="followed the enemie being broken, with greater violence" type="straight"/>
+    	<underline language="EN" method="pen" text="and furye" type="straight"/>
+    	<underline language="EN" method="pen" text="when he assulted him whole" type="straight"/>
+    	<underline language="EN" method="pen" text="doth leese, hee" type="straight"/>
+    	<underline language="EN" method="pen" text="the losse" type="straight"/>
+    	<underline language="EN" method="pen" text="may growe any vtilitie vnto" type="straight"/>
+    	<underline language="EN" method="pen" text="small aduertisment of the enemye" type="straight"/>
+    	<underline language="EN" method="pen" text="after the victorye, becommeth" type="straight"/>
+    	<underline language="EN" method="pen" text="negligent, and" type="straight"/>
+    	<underline language="EN" method="pen" text="giueth thee occasion to oppresse" type="straight"/>
+    	<underline language="EN" method="pen" text="oppressed the army of the Carthaginers" type="straight"/>
+    	<underline language="EN" method="pen" text="slain the twoo" type="straight"/>
+    	<underline language="EN" method="pen" text="not esteeming the same" type="straight"/>
+    	<underline language="EN" method="pen" text="assaulted and ouerthrowen" type="straight"/>
+    	<underline language="EN" method="pen" text="no thing so much to be brought" type="straight"/>
+    	<underline language="EN" method="pen" text="which the enemie thinketh, that thou canst not attempt" type="straight"/>
+    	<underline language="EN" method="pen" text="men be hurte most" type="straight"/>
+    	<underline language="EN" method="pen" text="they doubt least" type="straight"/>
+    	<underline language="EN" method="pen" text="cannot do this" type="straight"/>
+    	<underline language="EN" method="pen" text="deuise at least" type="straight"/>
+    	<underline language="EN" method="pen" text="losse bee lesse hurtefull" type="straight"/>
+    	<underline language="EN" method="pen" text="meanes, that the enemie maye not easelye followe thee" type="straight"/>
+    	<underline language="EN" method="pen" text="giue him occasion to make delaye" type="straight"/>
+    	<underline language="EN" method="pen" text="beene sure to" type="straight"/>
+    	<underline language="EN" method="pen" text="that in diuers" type="straight"/>
+    	<underline language="EN" method="pen" text="they shoulde flye" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="victorie" type="straight"/>
+    	<underline language="EN" method="pen" text="celeritie to" type="straight"/>
+    	<underline language="EN" method="pen" text="receaue an ouerthrovv" type="straight"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="Ansigne out"/>
+    	<mark method="pen" name="quotation_mark" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="followed the enemie being broken, with greater violence"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="receaue an ouerthrovv"/>
+    	<mark method="pen" name="quotation_mark" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="which the enemie thinketh, that thou canst not attempt"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="they doubt least"/>
+    	<mark method="pen" name="quotation_mark" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="losse bee lesse hurtefull"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="head" text="Ansigne out"/>
+    	<mark method="pen" name="section_sign" place="intext"/> <!-- again. I -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="after the fight"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="it is wo[n]ne"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="all celerity to be followed"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="imitate Caesar"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="The other neuer rested"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="being broken"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="with greater violence"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="doth leese"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the losse"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="small aduertisment of the enemye"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="negligent"/>
+    	<mark language="EN" method="pen" name="straight_quotation_mark" place="intext" text="giueth thee occasion to opresse"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="oppressed"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="no thing so muche to be brought"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="that thou canst not attempt"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="men be hurte most"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="they doubt least"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="at least"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="losse bee lesse hurtefull"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="that the enemie maye not easelye"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="giue him occasion to make delaye"/>
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="whoe" copytext="whome" language="EN"/>
+    	<errata amendedtext="who" copytext="whom" language="EN"/>
+    	<errata amendedtext="whoe" copytext="whome" language="EN"/>
+    	
+    </annotation>
+</transcription>

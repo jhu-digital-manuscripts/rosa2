@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.047v.tif" pagination="xliii[v]" reader="Harvey" signature="[Liii[v]]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Nota.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+    	<underline language="EN" method="pen" text="such wise, that they might receiue betweene" type="straight"/>
+    	<underline language="EN" method="pen" text="Suizzers not to be so" type="straight"/>
+    	<underline language="EN" method="pen" text="fought with the Grekes Falangi" type="straight"/>
+    	<underline language="EN" method="pen" text="were consumed of them" type="straight"/>
+    	<underline language="EN" method="pen" text="that the kinde" type="straight"/>
+    	<underline language="EN" method="pen" text="their weapons" type="straight"/>
+    	<underline language="EN" method="pen" text="renuing themselues" type="straight"/>
+    	<underline language="EN" method="pen" text="more, then the massiuenesse" type="straight"/>
+    	<underline language="EN" method="pen" text="retaine the maner of arming &amp; the orders" type="straight"/>
+    	<underline language="EN" method="pen" text="of the Romain Legions and" type="straight"/>
+    	<underline language="EN" method="pen" text="thousand pikes, which" type="straight"/>
+    	<underline language="EN" method="pen" text="three thousand Targaettes" type="straight"/>
+    	<underline language="EN" method="pen" text="sweardes, which be the Romain" type="straight"/>
+    	<underline language="EN" method="pen" text="the main battaile, into .x. battailes" type="straight"/>
+    	<underline language="EN" method="pen" text="the Veliti, that is the light armed" type="straight"/>
+    	<underline language="EN" method="pen" text="do participate" type="straight"/>
+    	<underline language="EN" method="pen" text="so the orders also doe participate" type="straight"/>
+    	<underline language="EN" method="pen" text="shall haue v. rankes of" type="straight"/>
+    	<underline language="EN" method="pen" text="the rest of Targaettes, to bee" type="straight"/>
+    	<underline language="EN" method="pen" text="firste fronte, or vawarde, Pikes, as" type="straight"/>
+    	<underline language="EN" method="pen" text="me to withstand them" type="straight"/>
+    	<underline language="EN" method="pen" text="to ouercome them" type="straight"/>
+    	<underline language="EN" method="pen" text="vertue of this order" type="straight"/>
+    	<underline language="EN" method="pen" text="these weapons, to doe fully" type="straight"/>
+    	<underline language="EN" method="pen" text="the Pikes" type="straight"/>
+    	<underline language="EN" method="pen" text="doe theyr office well, beefore the" type="straight"/>
+    	<underline language="EN" method="pen" text="soone as they presse" type="straight"/>
+    	<underline language="EN" method="pen" text="together, they become" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="armour" type="straight"/>
+    	<underline language="EN" method="pen" text="vveapons" type="straight"/>
+    	<underline language="EN" method="pen" text="to order" type="straight"/>
+    	<underline language="EN" method="pen" text="same after" type="straight"/>
+    	<underline language="EN" method="pen" text="the Greeke" type="straight"/>
+    	<underline language="EN" method="pen" text="Romaine maner" type="straight"/>
+    	
+    	<!-- Symbols -->
+    	<symbol name="Mars" place="left_margin"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="fought with the Grekes Falangi"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="shall haue v. rankes of"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/> 
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- Falangi, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="vawarde"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- office, for -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the Pikes"/>
+    		
+    	<!-- Errata -->
+    	<errata amendedtext="Targaettes" copytext="Targatettes" language="EN"/>
+    	<errata amendedtext="Legions into" copytext="Legions:into" language="EN"/>
+    	
+    </annotation>
+</transcription>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.013r.tif" pagination="ix[r]" reader="Harvey" signature="Ci[r]"/>
+    <annotation>
+
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Nota, contrà absolutum regimen, et
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="EL">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					πανβασιλείαν		<!-- Greek: panbasileian -->
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Principu[m]. Pra[e]terq[uam] in Bello.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note, against the absolute rule and total dominion of princes. Except in war. 
+    		</translation>
+    	</marginalia>
+
+	<underline language="EN" method="pen" text="kingdomes whiche" type="straight"/>
+    	<underline language="EN" method="pen" text="not their absolute Empire vnto their king, sauing" type="straight"/>
+    	<underline language="EN" method="pen" text="this place onelye" type="straight"/>
+    	<underline language="EN" method="pen" text="quicke deliberation is necessarye" type="straight"/>
+    	<underline language="EN" method="pen" text="principall power ought" type="straight"/>
+    	<underline language="EN" method="pen" text="to do any thing without counsell" type="straight"/>
+    	<underline language="EN" method="pen" text="to be feared, whiche counsell" type="straight"/>
+    	<underline language="EN" method="pen" text="in time of peace" type="straight"/>
+    	<underline language="EN" method="pen" text="warre, because" type="straight"/>
+    	<underline language="EN" method="pen" text="also of a king those ought" type="straight"/>
+    	<underline language="EN" method="pen" text="which take the warre for their art" type="straight"/>
+    	<underline language="EN" method="pen" text="of armies without" type="straight"/>
+    	<underline language="EN" method="pen" text="are the foote men" type="straight"/>
+    	<underline language="EN" method="pen" text="men in time of peace maye be content" type="straight"/>
+    	<underline language="EN" method="pen" text="owne trades" type="straight"/>
+    	<underline language="EN" method="pen" text="he ruinate" type="straight"/>
+    	<underline language="EN" method="pen" text="more perillous men, then those, which make the warre" type="straight"/>
+    	<underline language="EN" method="pen" text="as their arte" type="straight"/>
+    	<underline language="EN" method="pen" text="alwayes to make" type="straight"/>
+    	<underline language="EN" method="pen" text="paye them alwaies" type="straight"/>
+    	<underline language="EN" method="pen" text="in perill" type="straight"/>
+    	<underline language="EN" method="pen" text="they take not from him" type="straight"/>
+    	<underline language="EN" method="pen" text="make" type="straight"/>
+    	<underline language="EN" method="pen" text="paye them alwaies" type="straight"/>
+    	<underline language="EN" method="pen" text="were wise &amp; good" type="straight"/>
+    	<underline language="EN" method="pen" text="séeing the time did not varye" type="straight"/>
+    	<underline language="EN" method="pen" text="chaunged the men" type="straight"/>
+    	<underline language="EN" method="pen" text="in xv. yeres alwayes, they" type="straight"/>
+    	<underline language="EN" method="pen" text="renewed them" type="straight"/>
+    	<underline language="EN" method="pen" text="xviij. to xxxiij. yeres" type="straight"/>
+
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="this place onelye"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="which take the warre for their art"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="perillous men, then those, which make the warre"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="seeing the time did not varye"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!--ordered, because-->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="quicke deliberation"/>
+    		
+    </annotation>
+</transcription>

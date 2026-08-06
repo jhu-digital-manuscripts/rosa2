@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.037v.tif" pagination="xxxiii[v]" reader="Harvey" signature="Ii[v]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Nota.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Who ar to be callid Expert, &amp; owld Sowldiours.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Scientia, no[n] a[e]tas facit veteranu[m] milite[m].
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Knowledge, not age, makes a veteran soldier.
+    		</translation>
+    	</marginalia>
+    	
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Non sensus, (ut auditus, aut visus), sed intellectus facit veteranum Militem.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Not sense (such as hearing or sight), but intelligence, makes a veteran soldier.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+    	<underline language="EN" method="pen" text="redoubling by flanke" type="straight"/>
+    	<underline language="EN" method="pen" text="with better order" type="straight"/>
+    	<underline language="EN" method="pen" text="redoubling by righte line" type="straight"/>
+    	<underline language="EN" method="pen" text="the nomber because fiue" type="straight"/>
+    	<underline language="EN" method="pen" text="you cannot make a head of fiftene, nor" type="straight"/>
+    	<underline language="EN" method="pen" text="same nomber will" type="straight"/>
+    	<underline language="EN" method="pen" text="euery daye" type="straight"/>
+    	<underline language="EN" method="pen" text="the foreward with sixe hundred, or eight hundred men" type="straight"/>
+    	<underline language="EN" method="pen" text="difficultie" type="straight"/>
+    	<underline language="EN" method="pen" text="most with practise" type="straight"/>
+    	<underline language="EN" method="pen" text="be made easy" type="straight"/>
+    	<underline language="EN" method="pen" text="importeth more then any" type="straight"/>
+    	<underline language="EN" method="pen" text="how to set them selues in araye quickely" type="straight"/>
+    	<underline language="EN" method="pen" text="to exercise them therin, and" type="straight"/>
+    	<underline language="EN" method="pen" text="them to go apace" type="straight"/>
+    	<underline language="EN" method="pen" text="either forwarde or backewarde" type="straight"/>
+    	<underline language="EN" method="pen" text="places, without" type="straight"/>
+    	<underline language="EN" method="pen" text="bee experte" type="straight"/>
+    	<underline language="EN" method="pen" text="haue neuer seen enemies" type="straight"/>
+    	<underline language="EN" method="pen" text="called old souldiours" type="straight"/>
+    	<underline language="EN" method="pen" text="been in a thousand warres" type="straight"/>
+    	<underline language="EN" method="pen" text="newe souldiours" type="straight"/>
+    	<underline language="EN" method="pen" text="concerning setting them together" type="straight"/>
+    	<underline language="EN" method="pen" text="are marching in small rankes" type="straight"/>
+    	<underline language="EN" method="pen" text="set, and after being" type="straight"/>
+    	<underline language="EN" method="pen" text="chaunce, whiche" type="straight"/>
+    	<underline language="EN" method="pen" text="situation" type="straight"/>
+    	<underline language="EN" method="pen" text="come into order againe, this" type="straight"/>
+    	<underline language="EN" method="pen" text="the difficultie" type="straight"/>
+    	<underline language="EN" method="pen" text="and much practise" type="straight"/>
+    	<underline language="EN" method="pen" text="muche studie" type="straight"/>
+    	<underline language="EN" method="pen" text="twoo thinges" type="straight"/>
+    	<underline language="EN" method="pen" text="battaile full of countersignes" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="hundred, or eight hundred men"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="to be made easy"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="quickely"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="been in a thousand warres"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="and much practise"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="battaile full of countersignes"/>
+
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="redoubling by flanke"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="better order"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="difficultie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="with exercise"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="be made easy"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="importeth more then any thing"/>
+    	<mark method="pen" name="dot" place="intext"/> <!--quickely, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="bee experte"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="old souldiours"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- souldiours, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="newe souldiours"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- enemie, to -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the importance"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the difficultie"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- difficultie, and -->
+    	
+    	
+    </annotation>
+</transcription>

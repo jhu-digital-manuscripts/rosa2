@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>2</illustrations>
+    <totalPages>260</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Livre de paix par Christine de Pisan">
+            <language>fr</language>
+            <title>Livre de paix par Christine de Pisan</title>
+            <textId/>
+            <pages end="39v" start="1r">39</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>23</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Le Livre intitulé : De bonnes meurs, par Frere Jaques le Grant">
+            <language>fr</language>
+            <title>Le Livre intitulé : De bonnes meurs, par Frere Jaques le Grant</title>
+            <textId/>
+            <pages end="134v" start="40r">94</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>26</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Epistola Beati Bernardi ad Raymundum, de cura rei familiaris et gubernacione domus habenda per patrez familias">
+            <language>fr</language>
+            <title>Epistola Beati Bernardi ad Raymundum, de cura rei familiaris et gubernacione domus habenda per patrez familias</title>
+            <textId/>
+            <pages end="170v" start="135r">35</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>28</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Livre de la cité des dames par Christine de Pisan">
+            <language>fr</language>
+            <title>Livre de la cité des dames par Christine de Pisan</title>
+            <textId/>
+            <pages end="254r" start="172r">82</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 1182</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 1182</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 1182</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 1182</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

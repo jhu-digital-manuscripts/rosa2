@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.116v.tif" reader="Harvey" signature="[Eiv[v]]"/>
+    <annotation>
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="horned battaile of" type="straight"/>
+    	<underline language="EN" method="pen" text="the voide space in the middest" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="dash" place="left_margin"/>
+    	<mark method="pen" name="dot" place="left_margin"/> <!--of, and-->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="horned battaile of"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the voide space in the middest"/>
+    	
+    	<!-- Numerals -->
+    	<numeral place="intext">
+    		I.
+    	</numeral>
+    	<numeral place="intext">
+    		2.
+    	</numeral>
+    </annotation>
+</transcription>

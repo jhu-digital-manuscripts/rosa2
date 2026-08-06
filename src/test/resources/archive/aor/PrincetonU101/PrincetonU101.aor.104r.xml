@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.104r.tif" pagination="c[r]" reader="Harvey"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					So [the] Army of Themperour Charles V. under [the] Conduct of [the] Duke of Borbony,
+    					in [their] uoiage thorowgh Roome, obiter sacked [the] City, [and] enricched themselues, with [the]
+    					ransoms of [the] Pope, &amp; [the] Cardinals.
+    				</marginalia_text>
+    				<person name="Charles V"/>
+    				<person name="Charles III, Duke of Bourbon"/>
+    				<person name="Pope Clement VII"/>
+    				<location name="Rome"/>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Contrà omne[m] expectatione[m].
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Ca[e]sariana Inuasio, subita, et improuisa. s[upr]a, 61.v.
+    				</marginalia_text>
+    				<person name="Julius Caesar"/>
+    				<internal_ref>
+    					<target ref="PrincetonU101:00000136" text="61.v."/>
+    				</internal_ref>
+    			</position>
+    		</language>
+    		<translation>
+    			Against every expectation. A sudden and improvised invasion in the manner of Caesar. Above, 61v.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Veteratoria, et plane Machiavellica astutia.
+    				</marginalia_text>
+    				<person name="Machiavelli"/>
+    			</position>
+    		</language>
+    		<translation>
+    			Crafty and entirely Machiavellian shrewdness.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					s[upr]a, L.2.
+    				</marginalia_text>
+    				<book title="Book of the Courtier"/>
+    				<internal_ref text="s[upr]a">
+    					<target ref="PrincetonU101:00000054" text="L.2."/>
+    				</internal_ref>
+    			</position>
+    		</language>
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					of [the] Courtier
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			[See] above, second book of the Book of the Courtier.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EL">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					ἀπιστία.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Distrust.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					The Spanish Armada, thie 
+    				</marginalia_text>
+    				<location name="Spain"/>
+    			</position>
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					{ other day threatning Ingland,
+    				</marginalia_text>
+    				<location name="England"/>
+    			</position>
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					might peradvent
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					all on the the suddain have surprised
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Scotland.
+    				</marginalia_text>
+    				<location name="Scotland"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Elenchus signorum
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Refutation of signs.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					The Dukedom of Urbin, allonthe suddain surprized at
+    					vnawares, &amp; wholy gotten atonce; The cunningist, &amp; brauist way 
+    					in [the] world, to winne with most aduantage of Tyme, expense, &amp; trauail. 
+    					Ca[e]sar Borgia, in that point a uery right Ca[e]sar indeede.
+    				</marginalia_text>
+    				<person name="Cesare Borgia"/>
+    				<location name="Urbino"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="thou wilte assault" type="straight"/>
+    	<underline language="EN" method="pen" text="without comming openly" type="straight"/>
+    	<underline language="EN" method="pen" text="secretelye and" type="straight"/>
+    	<underline language="EN" method="pen" text="speedely assaulte" type="straight"/>
+    	<underline language="EN" method="pen" text="oft alwayes it shall followe" type="straight"/>
+    	<underline language="EN" method="pen" text="shalt get the victorie" type="straight"/>
+    	<underline language="EN" method="pen" text="succeded in oure time" type="straight"/>
+    	<underline language="EN" method="pen" text="of other" type="straight"/>
+    	<underline language="EN" method="pen" text="insample of Cesar Borgia" type="straight"/>
+    	<underline language="EN" method="pen" text="vnder colour of going to besiege Camerino" type="straight"/>
+    	<underline language="EN" method="pen" text="towardes the state of Urbin, and got a state in a day" type="straight"/>
+    	<underline language="EN" method="pen" text="without any payne, the" type="straight"/>
+    	<underline language="EN" method="pen" text="with muche" type="straight"/>
+    	<underline language="EN" method="pen" text="time and cost, shoulde" type="straight"/>
+    	<underline language="EN" method="pen" text="deceiptes, and of the policies of the" type="straight"/>
+    	<underline language="EN" method="pen" text="not to trust to any thing" type="straight"/>
+    	<underline language="EN" method="pen" text="enemie do continually" type="straight"/>
+    	<underline language="EN" method="pen" text="alwayes, that it is vnder deceipt" type="straight"/>
+    	<underline language="EN" method="pen" text="he can" type="straight"/>
+    	<underline language="EN" method="pen" text="hurte vary it" type="straight"/>
+    	<underline language="EN" method="pen" text="for a custome" type="straight"/>
+    	<underline language="EN" method="pen" text="to compasse aboute euery daye with" type="straight"/>
+    	<underline language="EN" method="pen" text="good parte of his men, the wall" type="straight"/>
+    	<underline language="EN" method="pen" text="did it for exercise" type="straight"/>
+    	<underline language="EN" method="pen" text="flacked the Warde" type="straight"/>
+    	<underline language="EN" method="pen" text="being aware, assaulted" type="straight"/>
+    	<underline language="EN" method="pen" text="Certayn Capitaynes" type="straight"/>
+    	<underline language="EN" method="pen" text="come aide to the besieged" type="straight"/>
+    	<underline language="EN" method="pen" text="apparreled their" type="straight"/>
+    	<underline language="EN" method="pen" text="Souldiours, vnder the Ansigne of those, that should come" type="straight"/>
+    	<underline language="EN" method="pen" text="let in, haue gotte the Towne" type="straight"/>
+    	<underline language="EN" method="pen" text="set fire in a nighte" type="straight"/>
+    	<underline language="EN" method="pen" text="a Temple, whiche was oute" type="straight"/>
+    	<underline language="EN" method="pen" text="Townes men going to succour it, left the towne" type="straight"/>
+    	<underline language="EN" method="pen" text="the enemie" type="straight"/>
+    	<underline language="EN" method="pen" text="slayne those" type="straight"/>
+    	<underline language="EN" method="pen" text="Castle, haue gone a foraging" type="straight"/>
+    	<underline language="EN" method="pen" text="appareled their Souldiours, with the" type="straight"/>
+    	<underline language="EN" method="pen" text="the foragers, whome" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="got the citie of Vrbine" type="straight"/>
+    	<underline language="EN" method="pen" text="of the deceiptes &amp; policies of" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="towardes the state of Urbin, and got a state in a day"/> 
+    	
+    	<mark method="pen" name="quotation_mark" place="right_margin"/>
+    	<mark method="pen" name="quotation_mark" place="right_margin"/>
+    	<mark method="pen" name="quotation_mark" place="right_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="secretelye and"/>
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="shalt get the victorie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="towardes the state of Urbin, and got a state in a day"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- Marginal text -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- Marginal text -->
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="Souldiours, vnder the Ansigne of those, that should come"/>
+    	<mark method="pen" name="bracket" place="right_margin"/>
+    	<mark method="pen" name="comma" place="right_margin"/> <!-- Marginal text -->
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="Townes men going to succour it, left the towne"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- them, or -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="secretelye"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="speedely"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="alwayes"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- time, for -->
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- burthen, & -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- Valentine, who -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the state of Urbin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="and got a state in a day"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- payne, the -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="deceiptes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="not to trust to any thing"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="compasse"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="did it for exercise"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="aide to"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="apparreled"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="fire"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- Towne, wherefore -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="men going to succour it"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="haue gone a foraging"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="appareled their Souldiours"/>
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="whoe" copytext="whome" language="EN"/>
+    	
+    </annotation>
+</transcription>

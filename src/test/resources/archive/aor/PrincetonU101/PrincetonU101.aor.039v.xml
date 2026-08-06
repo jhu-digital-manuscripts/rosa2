@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.039v.tif" pagination="xxxv[r]" reader="Harvey" signature="[Iiii[v]]"/>
+    <annotation>
+    	
+    <!-- Underlines -->
+	<underline language="EN" method="pen" text="an acte separate" type="straight"/>
+    	<underline language="EN" method="pen" text="leadeth them" type="straight"/> 
+    	<underline language="EN" method="pen" text="where he will place the Pikes, and" type="straight"/>
+    	<underline language="EN" method="pen" text="it is a rule, whiche" type="straight"/>
+    	<underline language="EN" method="pen" text="wherein a band" type="straight"/>
+    	<underline language="EN" method="pen" text="haue to do" type="straight"/>
+    	<underline language="EN" method="pen" text="vsed whe[n] a battaile" type="straight"/>
+    	<underline language="EN" method="pen" text="a lone, and not in companye" type="straight"/>
+    	<underline language="EN" method="pen" text="them, with twoo hornes" type="straight"/>
+    	<underline language="EN" method="pen" text="twentie Peticaptaynes" type="straight"/>
+    	<underline language="EN" method="pen" text="after these, the Conestable" type="straight"/>
+    	<underline language="EN" method="pen" text="after this" type="straight"/>
+
+    	<underline language="EN" method="pen" text="made vvith 2 hornes" type="straight"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="haue to do"/>
+    	<mark method="pen" name="bracket" place="left_margin"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- them, the; end of Fabritio's first line--> 
+    	<mark method="pen" name="dot" place="intext"/>  <!-- other, and -->
+    	<mark method="pen" name="bracket" place="intext"/>
+    	<mark method="pen" name="bracket" place="intext"/>
+    	<mark method="pen" name="dot" place="intext"/>  <!-- Taragettes, after -->
+    	
+    	<!-- Errata -->    	
+    	<errata amendedtext="whoe" copytext="whome" language="EN"/>
+   	
+    </annotation>
+</transcription>

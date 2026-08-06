@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.124v.tif" reader="Harvey" signature="[Ggiv[v]]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Bellai, &amp; Dela now, in French. 
+    					
+    					<!-- Unclear who Dela is. -->
+    				</marginalia_text>
+    				<person name="Martin du Bellay"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Acontius new Art of Fortification. 
+    				</marginalia_text>
+    				<person name="Jacob Acontius"/>
+    				<book title="Trattato sulle fortificazioni"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    		
+    	
+    	<!-- Underlines -->
+    	<underline language="EN" method="pen" text="chiefelye for a Capitaine" type="straight"/>
+    	<underline language="EN" method="pen" text="Souldiours punished and paied" type="straight"/>
+    	<underline language="EN" method="pen" text="Moste excellente aduertisementes and pollicies" type="straight"/>
+    	<underline language="EN" method="pen" text="Cities" type="straight"/>
+    	<underline language="EN" method="pen" text="manner of Fortification" type="straight"/>
+    	<underline language="EN" method="pen" text="Bulwarkes oughte not" type="straight"/>
+    	<underline language="EN" method="pen" text="made out of a Towne" type="straight"/>
+    	<underline language="EN" method="pen" text="percullesses" type="straight"/>
+    	<underline language="EN" method="pen" text="Battelmentes of walles" type="straight"/>
+    	<underline language="EN" method="pen" text="Diuers Pollicies, for the besieging" type="straight"/>
+    	<underline language="EN" method="pen" text="Secrete conueying of Letters" type="straight"/>
+    	<underline language="EN" method="pen" text="Generall rules of Warre" type="straight"/>
+    	
+    	
+    	<!-- Symbols -->
+    	<symbol name="SS" place="intext"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Souldiours punished and paied"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Moste excellente aduertisementes and pollicies"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Diuers Pollicies, for the besieging"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Secrete conueying of Letters"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Generall rules of Warre"/>
+
+    </annotation>
+</transcription>

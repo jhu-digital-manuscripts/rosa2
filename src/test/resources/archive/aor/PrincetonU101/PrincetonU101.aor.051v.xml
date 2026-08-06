@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.051v.tif" pagination="xlvii[v]" reader="Harvey" signature="[Miii[v]]"/> <!--JG: Should we infer the signature if there's no signature on these couple of pages? Not sure whether it's useful, since the pages are numbered...-->
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					A battail, cunningly, &amp; most valiantly fowghten.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="enemies horse haue" type="straight"/>
+    	<underline language="EN" method="pen" text="tourned betweene" type="straight"/>
+    	<underline language="EN" method="pen" text="they cannot shoote, but are" type="straight"/>
+    	<underline language="EN" method="pen" text="what furie our" type="straight"/>
+    	<underline language="EN" method="pen" text="also affront" type="straight"/>
+    	<underline language="EN" method="pen" text="the footemen be" type="straight"/>
+    	<underline language="EN" method="pen" text="that the Pikes" type="straight"/>
+    	<underline language="EN" method="pen" text="our pikes do retire a litle" type="straight"/>
+    	<underline language="EN" method="pen" text="ours, according" type="straight"/>
+    	<underline language="EN" method="pen" text="the extraordinarie" type="straight"/>
+    	<underline language="EN" method="pen" text="helpe of those giuing againe a" type="straight"/>
+    	<underline language="EN" method="pen" text="they hauing" type="straight"/>
+    	<underline language="EN" method="pen" text="the fight to the Targaet men" type="straight"/>
+    	<underline language="EN" method="pen" text="you may" type="straight"/>
+    	<underline language="EN" method="pen" text="muche vertue, securitie, and leasure, they" type="straight"/>
+    	<underline language="EN" method="pen" text="how much" type="straight"/>
+    	<underline language="EN" method="pen" text="[the] orders" type="straight"/>
+    	<underline language="EN" method="pen" text="thrust together" type="straight"/>
+    	<underline language="EN" method="pen" text="scace weld their swoords" type="straight"/>
+    	<underline language="EN" method="pen" text="how much furie the enemies" type="straight"/>
+    	<underline language="EN" method="pen" text="armed with the pike" type="straight"/>
+    	<underline language="EN" method="pen" text="one for beyng to" type="straight"/>
+    	<underline language="EN" method="pen" text="they flie on the" type="straight"/>
+    	<underline language="EN" method="pen" text="flie also on the" type="straight"/>
+    	<underline language="EN" method="pen" text="the victorie" type="straight"/>
+    	<underline language="EN" method="pen" text="ours" type="straight"/>
+    	<underline language="EN" method="pen" text="wonne a field most happely" type="straight"/>
+    	<underline language="EN" method="pen" text="more happinesse it should" type="straight"/>
+    	<underline language="EN" method="pen" text="graunted me to put it in acte" type="straight"/>
+    	<underline language="EN" method="pen" text="the helpe of the seconde" type="straight"/>
+    	<underline language="EN" method="pen" text="our first fronte hath sufficed" type="straight"/>
+    	<underline language="EN" method="pen" text="so much furie wonne" type="straight"/>
+    	<underline language="EN" method="pen" text="meruaile and am so astonied" type="straight"/>
+    	
+    	<!-- Symbols -->
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+    	<symbol name="Mars" place="left_margin"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="much vertue, securitie, and leasure, they"/>
+    		
+    </annotation>
+</transcription>

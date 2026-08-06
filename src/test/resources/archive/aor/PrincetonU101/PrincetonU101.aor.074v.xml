@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.074v.tif" pagination="[lxx[v]]" reader="Harvey" signature="[Sii[v]]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Romani, orbis victores, Militaris Disciplina[e], atq[ue] Ordinis
+    					semper obseruantissimi.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The Romans, conquerors of the world, always most observant of military instruction and order.
+    		</translation>
+    	</marginalia>
+    	<marginalia anchor_text="discipline of warre" hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Militaris Disciplina.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Military instruction.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="whiche exercises" type="straight"/>
+    	<underline language="EN" method="pen" text="vses bee necessarie, minding" type="straight"/>
+    	<underline language="EN" method="pen" text="instructed and practised: in" type="straight"/>
+    	<underline language="EN" method="pen" text="Capitaynes" type="straight"/>
+    	<underline language="EN" method="pen" text="to take paine" type="straight"/>
+    	<underline language="EN" method="pen" text="discipline of warre" type="straight"/>
+    	<underline language="EN" method="pen" text="to knowe howe to" type="straight"/>
+    	<underline language="EN" method="pen" text="commaunde" type="straight"/>
+    	<underline language="EN" method="pen" text="to execute these thinges" type="straight"/>
+    	<underline language="EN" method="pen" text="Nor an instructed armye is no" type="straight"/>
+    	<underline language="EN" method="pen" text="armie that is" type="straight"/>
+    	<underline language="EN" method="pen" text="these orders" type="straight"/>
+    	<underline language="EN" method="pen" text="ca[n]not be possible" type="straight"/>
+    	<underline language="EN" method="pen" text="vse like discipline" type="straight"/>
+    	<underline language="EN" method="pen" text="be broken" type="straight"/>
+    	<underline language="EN" method="pen" text="knowing well, howe to set them" type="straight"/>
+    	<underline language="EN" method="pen" text="more easyly how to stande in" type="straight"/>
+    	<underline language="EN" method="pen" text="the voyce" type="straight"/>
+    	<underline language="EN" method="pen" text="with the sounde" type="straight"/>
+    	<underline language="EN" method="pen" text="playne the waie" type="straight"/>
+    	<underline language="EN" method="pen" text="commaundementes" type="straight"/>
+    	<underline language="EN" method="pen" text="disordered their armie" type="straight"/>
+    	<underline language="EN" method="pen" text="the voyces with" type="straight"/>
+    	<underline language="EN" method="pen" text="cleare and nete" type="straight"/>
+    	<underline language="EN" method="pen" text="sounde, it" type="straight"/>
+    	<underline language="EN" method="pen" text="one can not be chaunged" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="Commaundementes" type="straight"/>
+    	<underline language="EN" method="pen" text="Capitaines" type="straight"/>
+    	<underline language="EN" method="pen" text="vvell vnderstoode" type="straight"/>
+    	<underline language="EN" method="pen" text="bee the destruction of" type="straight"/>
+    	<underline language="EN" method="pen" text="Respect that" type="straight"/>
+    	<underline language="EN" method="pen" text="made vvith the sound of" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="vses bee necessarie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="instructed and practised: in"/>
+    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- reverse quotation mark -->
+    	<mark method="pen" name="bracket" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- reverse quotation mark -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="discipline of warre"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="commaunde"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="execute"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="an instructed armye is no"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="these orders"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="ca[n]not be possible"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="vse like discipline"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- discipline shal -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="be broken"/>
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    	<mark method="pen" name="dot" place="intext"/> <!--  tourne, whether -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="voyces"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="cleare"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="sounde"/>
+    	
+    </annotation>
+</transcription>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.042r.tif" pagination="xxxvii[r]" reader="Harvey" signature="Kii[r]"/>
+	<!-- Pagination incorrect: should be xxxiii, but it's xxxii again. --> 
+	
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="Ansigne bearers" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Ensignebearers.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="Ansigne bearers, for" type="straight"/>
+    	<underline language="EN" method="pen" text="faire muster, then for any" type="straight"/>
+    	<underline language="EN" method="pen" text="them for guides" type="straight"/>
+    	<underline language="EN" method="pen" text="themselues againe into order" type="straight"/>
+    	<underline language="EN" method="pen" text="Ansigne stoode still" type="straight"/>
+    	<underline language="EN" method="pen" text="knewe the place, that" type="straight"/>
+    	<underline language="EN" method="pen" text="the same moouing" type="straight"/>
+    	<underline language="EN" method="pen" text="should staie, or mooue" type="straight"/>
+    	<underline language="EN" method="pen" text="be many bodies" type="straight"/>
+    	<underline language="EN" method="pen" text="bande of men to haue his Ansigne, and his guide" type="straight"/>
+    	<underline language="EN" method="pen" text="stomackes" type="straight"/>
+    	<underline language="EN" method="pen" text="life enough" type="straight"/>
+    	<underline language="EN" method="pen" text="march according to the Ansigne" type="straight"/>
+    	<underline language="EN" method="pen" text="mooue, according to the Drumme" type="straight"/>
+    	<underline language="EN" method="pen" text="well ordered, commaundeth to" type="straight"/>
+    	<underline language="EN" method="pen" text="easyly thorders" type="straight"/>
+    	<underline language="EN" method="pen" text="had Shalmes Flutes, and soundes perfectly" type="straight"/>
+    	<underline language="EN" method="pen" text="that danseth" type="straight"/>
+    	<underline language="EN" method="pen" text="proceadeth with the time of" type="straight"/>
+    	<underline language="EN" method="pen" text="doeth not erre" type="straight"/>
+    	<underline language="EN" method="pen" text="doeth not disorder" type="straight"/>
+    	<underline language="EN" method="pen" text="varied the sounde" type="straight"/>
+    	<underline language="EN" method="pen" text="varye the mocion" type="straight"/>
+    	<underline language="EN" method="pen" text="would inflame, or quiete, or staie the mindes" type="straight"/>
+    	<underline language="EN" method="pen" text="sounde Dorico" type="straight"/>
+    	<underline language="EN" method="pen" text="sounde Frigio" type="straight"/>
+    	<underline language="EN" method="pen" text="Alexander being at the Table" type="straight"/>
+    	<underline language="EN" method="pen" text="it kindled so muche" type="straight"/>
+    	<underline language="EN" method="pen" text="necesarie to finde" type="straight"/>
+    	<underline language="EN" method="pen" text="that teache the Souldiour to obeye" type="straight"/>
+    	<underline language="EN" method="pen" text="vary, and ordayne after" type="straight"/>
+    	<underline language="EN" method="pen" text="practise, bee accustome the eares" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="Ansignes ought" type="straight"/>
+    	<underline language="EN" method="pen" text="Drummes" type="straight"/>
+    	<underline language="EN" method="pen" text="sou[n]des of instrumentes" type="straight"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="for guides"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="well ordered, commaundeth to"/>    	
+    	<mark language="EN" method="pen" name="double_vertical_bar" place="right_margin" text="proceadeth with the time of"/>
+    	<mark language="EN" method="pen" name="double_vertical_bar" place="right_margin" text="not disorder"/> 
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="inflame, or quiete, or staie the mindes"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="sounde Dorico"/>    	
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="that teache the Souldiour to obeye"/>
+
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="faire muster"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="for guides"/>
+    	<mark language="EN" method="pen" name="hash" place="intext" text="life enough"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- Drumme, the -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- erre, even -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="it kindled so"/>
+    	
+    </annotation>
+</transcription>

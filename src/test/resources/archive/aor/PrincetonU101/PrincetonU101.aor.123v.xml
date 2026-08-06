@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.123v.tif" reader="Harvey" signature="[Ggiii[v]]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					s[upr]a,
+    				</marginalia_text>
+    				<internal_ref>
+    					<target ref="PrincetonU101:00000101" text="s[upr]a"/>
+    				</internal_ref>
+    			</position>
+    		</language>
+    		<translation>[See] above.</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+    	<underline language="EN" method="pen" text="Romaines vsed to order them" type="straight"/>
+    	<underline language="EN" method="pen" text="againe in the ouerthrowe" type="straight"/>
+    	<underline language="EN" method="pen" text="many Legions of Romaine Citezens" type="straight"/>
+    	<underline language="EN" method="pen" text="ordinary armie" type="straight"/>
+    	<underline language="EN" method="pen" text="howe to pitche a fielde to fighte a" type="straight"/>
+    	<underline language="EN" method="pen" text="what number of fighting menne" type="straight"/>
+    	<underline language="EN" method="pen" text="descripcion of a battaile that is a fighting" type="straight"/>
+    	<underline language="EN" method="pen" text="How the Artillerie is vnprofitable" type="straight"/>
+    	<underline language="EN" method="pen" text="that the Standarde of all the armie" type="straight"/>
+    	<underline language="EN" method="pen" text="Diuers examples of the antiquitie" type="straight"/>
+    	<underline language="EN" method="pen" text="To howe many thinges" type="straight"/>
+    	<underline language="EN" method="pen" text="respecte oughte to" type="straight"/>
+    	<underline language="EN" method="pen" text="what place" type="straight"/>
+    	<underline language="EN" method="pen" text="maye order his armie" type="straight"/>
+    	<underline language="EN" method="pen" text="to be cleane ouerthrowen" type="straight"/>
+    	<underline language="EN" method="pen" text="Anniball and Scipio praised for" type="straight"/>
+    	<underline language="EN" method="pen" text="The prudence whiche" type="straight"/>
+    		
+    	<!-- Symbols -->
+    	<symbol language="EN" name="Mercury" place="left_margin" text="The descripcion of a battaile that is a fighting"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="in the ouerthrowe"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to be cleane ouerthrowen"/>
+
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Standarde"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- thinges respecte -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="what place"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- sauegarde not -->
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    </annotation>
+</transcription>

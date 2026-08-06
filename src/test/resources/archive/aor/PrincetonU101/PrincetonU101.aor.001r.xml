@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="PrincetonU101.001r.tif" reader="Harvey" signature="Title page"/>
+    	<annotation>
+            	<!-- Marginalia -->
+    		
+        		<marginalia date="1580" hand="Italian">
+        			<language ident="EN">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					1580
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="head">
+    					<marginalia_text>
+    						Gabriel Haruey.
+    					</marginalia_text>
+    					<person name="Gabriel Harvey"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="head">
+    					<marginalia_text>
+    						preciu[m] iijs
+    					</marginalia_text>
+    					<emphasis method="pen" text="preciu[m] iij6" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				price 3 shilling
+    			</translation>
+    		</marginalia>
+	        	        
+    		<symbol name="Mars" place="head"/>
+	    	<symbol name="SS" place="intext"/>
+
+    </annotation>
+</transcription>

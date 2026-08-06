@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>MS Douce 195, Bodleian Library, Oxford. Français, deuxième moitié du XVe siècle (spéculé). Contient le <hi rend="italics">Roman de la Rose</hi>.</p>
+        </note>
+        <note rend="INFORMATIONS BASIQUES">
+          <p>Parchemin, 345 x 235 mm, 156 Feuillets.</p>
+        </note>
+        <note rend="MATERIEL">
+          <p><material>Parchemin</material> en état excellent partout.</p>
+        </note>
+        <note rend="CAHIERS">
+          <list>
+            <head>Collation:</head>
+            <item n="I"><locus from="1" to="8">1</locus>1-8</item>
+            <item n="II">
+              <locus from="9" to="16">9-16</locus>
+            </item>
+            <item n="III">
+              <locus from="17" to="24">17-24</locus>
+            </item>
+            <item n="IV">
+              <locus from="32" to="25">25-32</locus>
+            </item>
+            <item n="V">
+              <locus from="33" to="40">33-40</locus>
+            </item>
+            <item n="VI">
+              <locus from="41" to="48">41-48</locus>
+            </item>
+            <item n="VII">
+              <locus from="49" to="56">49-56</locus>
+            </item>
+            <item n="VIII">
+              <locus from="57" to="64">57-64</locus>
+            </item>
+            <item n="IX">
+              <locus from="65" to="72">65-72</locus>
+            </item>
+            <item n="X">
+              <locus from="73" to="80">62-69</locus>
+            </item>
+            <item n="XI">
+              <locus from="81" to="88">81-88</locus>
+            </item>
+            <item n="XII">
+              <locus from="89" to="96">89-96</locus>
+            </item>
+            <item n="XIII">
+              <locus from="97" to="104">97-104</locus>
+            </item>
+            <item n="XIV">
+              <locus from="105" to="112">105-112</locus>
+            </item>
+            <item n="XV">
+              <locus from="113" to="120">113-120</locus>
+            </item>
+            <item n="XVI">
+              <locus from="121" to="128">121-128</locus>
+            </item>
+            <item n="XVII">
+              <locus from="129" to="136">129-136</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="137" to="144">137-144</locus>
+            </item>
+            <item n="XIX">
+              <locus from="145" to="152">145-152</locus>
+            </item>
+            <item n="XX">
+              <locus from="153" to="156">153-156</locus>
+            </item>
+          </list>
+          <p>ii+156+ii. Relié en quaternions. Il n'y a ni de signatures ni de marques de cahier. Réclames écrites verticalement en dessous 
+			   du corps de texte, à la droite. 
+			   Folitotation moderne en crayon, droite supérieure, est juste.</p>
+        </note>
+        <note rend="MISE-EN-PAGE">
+          <p>Réglé en rouge pour deux colonnes. Il n'y a pas de piqûres. Deux lignes rectrices horizontales (inférieur et supérieur), 
+			   et quatre lignes rectrices verticales délimitent les colonnes. A l'intérieur de chaque colonne l'on voit aussi une ligne 
+			   verticale qui sépare les lettres initiales du reste de la ligne.  Le corps du texte mesure 220 x 70 mm et 38 lignes à la 
+			   colonne.  </p>
+        </note>
+        <note rend="ECRITURE">
+          <p>Un scribe partout a utilisé une écriture hybrida ; l'encre est brune.  Il n'y a pas de lettres capitulaires.  Les corrections 
+			   sont très éparses, mais l'on voit quelques vers ajoutés, par exemple aux ff. <locus>12v</locus> et <locus>14v</locus>, et quelques effacements, par exemple au f. <locus>32v</locus>. </p>
+        </note>
+        <note rend="DECORATION">
+          <p> Des rubriques accompagnent souvent les miniatures.  La première lettre de chaque vers, si elle n'est pas ornée d'autre 
+			   façon, est touchée en jaune.  La première initiale est de quatre lignes d'hauteur, bleue filigranée de blanc et est encadrée 
+			   d'un cadre rouge décoré en or.  La lettre entoure « les blasons joints d'Orléans et de Savoie à mi-parti par pal » 
+			   (<hi rend="italics">Summary Catalogue</hi>) De nombreuses initiales dorées d'une ou de deux linges se trouve partout, encadrées 
+			   de rouge décorés d'or. On voit des bouts-de-lignes de rouge et de bleu en alternance, chacun décoré en or.  Voir aussi 
+			   <locus>86v</locus> où des losanges rouges et fleurs bleues remplissent des petits éspaces à la fin des lignes. Un encadrement 
+			   se trouve seulement au premier feuillet et présente des vignes et des fleurs aux deux côtés et à l'inférieur.  Parmi les vignes 
+			   se trouvent un archer, un coq, une sirène ( ?), et un papillon. <hi rend="italics">Illuminated Manuscripts in the Bodleian 
+			   Library</hi> note que les miniatures sont faites par "Robert Testard qui a travaillé aussi sur les Heures de Charles d'Angoulême, 
+			   Paris, Bib. Nat., Lat. 1173"
+            </p>
+        </note>
+        <note rend="RELIURE">
+          <p>Reliure du XIXe siècle, 335 mm de hauteur et 265 de largeur du centre du dos à la gouttière. Relié en basane bordeaux.  
+			   Ais plats, six nervures, avec tranchefiles supérieure et inférieure (celles-ci sont actuellement de couleur fauve, mais 
+			   elles étaient probablement teints de la même couleur que la reliure). Le devant et la fin sont décorés de façon identique, 
+			   avec un cadre situé environ 30 mm du centre. Les coins du cadre sont ornés de plusieurs petits poinçons qui se joignent par 
+			   deux séries de lignes parallèles doubles.  Des sept compartiments du dos, le deuxième et le sixième contiennent du texte poussé, 
+			   et les autres sont décorés du même motif de lignes parallèles poinçonnées que le devant et la fin. Les bords supérieur et 
+			   inférieur et la gouttière sont ornés de trois lignes parallèles poussées.  Les contre-plats sont de doublé assorti avec six 
+			   dessins poussés (un en haut, un en bas, et deux à chaque côté), qui répètent certains des poinçons de l'extérieur.  Une série 
+			   de huit filets poussés encadrent un centre de parchemin blanc sans ornement. Ces filets s'unissent aux coins par de petits 
+			   cercles poussés.  Ajouté à cette série de huit filets, une autre série de filets doubles marque les bords des contre-plats 
+			   dont les coins sont ornés de poinçons en forme de cercle ou de fleure, plus grands que ceux qui décorent les coins des filets 
+			   individuels. Le centre de chaque doublure présente un rectangle de parchemin blanc sans ornement.  Les tranches sont dorées.  
+			   Le titre apparaît au deuxième compartiment du dos : « ROMANT / DE LA ROSE ».  Au sixième compartiment l'on voit écrit : « MS. 
+			   SUR VELIN / AVEC MINIATURES ».  Il y a de plus au dos une étiquette en papier que se lit « 95 », ce qui fait référence au lieu 
+			   de rangement antérieur du livre dans le placard Selden Cupboard 95 (voir inscription au contre-plat du devant).  Deux gardes 
+			   volantes au devant et deux à la fin, chacun fait d'un seul bifeuillet de parchemin fin.  La reliure est signée, inférieure 
+			   droite du contre-plat de la fin, «BOUND BY C LEWIS ».  Lewis était un relieur anglais actif à la fin du XVIIIe siècle et la 
+			   première moitié du XIXe.  Il a relié le livre avant 1829, quand l'on l'a vendu aux enchères avec la mention « relié en maroquin 
+			   par C. Lewis » (voir la section 9 ci-dessous).  L'attribution du <hi rend="italics">Summary Catalogue</hi> à la France au XVIIIe 
+			   siècle est presque certainement incorrecte puisque Lewis travaillait en Angleterre, surtout au XIX siècle.</p>
+        </note>
+        <note rend="HISTOIRE">
+          <p>1. <hi rend="italics">Illuminated Manuscripts in the Bodleian Library</hi>
+                 note les “blasons d'Orléans et de Savoie, à mi-parti per pal”.  Appartenait à Louise de Savoie,épouse de Charles d'Orléans, 
+				 comte d'Angoulême et mère de François I.  </p>
+          <p>2. Appartenait au compte Mac Carthy. Voire no. 3 ci-dessous.</p>
+          <p>3. Identifié comme article 6947 dans <hi rend="italics">A Catalogue of the Library of George Hibbert, Esq.</hi> Ce catalogue a 
+			   été imprimé à Londres en 1829 par W. Nicol. La note se lit ainsi :</p>
+          <p>[« 6947 ROMAN DE LA ROSE (COMMENCÉ PAR GUILLAUME DE LORRIS ET ACHEVE PAR JEAN DE MEUN), <hi rend="italics">relié en maroquin par C. Lewis</hi>.</p>
+          <p>MANUSCRIT SUPERBE EN VELLIN DU QUINZIEME SIECLE, écrit en colonnes doubles, dont toutes les lettres initiales sont finement achevées en or et en 
+			   couleurs.  Il contient cent vingt-cinq miniatures ornées très richement, dont l'un la planche en face, une représentation très curieuse 
+			   de l'habit de la période, est gravé par M. G. Lewis.  <hi rend="italics"> Ce MS. spendide était considéré par le feu compte Mac Carthy, dont 
+			   la bibliothèque [le livre] a été obtenu, comme le plus beau qu'il avait jamais vu de ce Roman.</hi>.”</p>
+          <p> La gravure mentionnée dans la description représente la miniature qui se trouve au f. <locus>7r</locus>. Le catalogue a été imprimé 
+			afin d'annoncer et décrire la vente aux enchères de la bibliothèque de Hibbert  “On Monday, March 16, and Seventeen following Days ; 
+			on Monday, May 4, and Eleven following Days ;  and on Monday, May 25, and Eleven following Days, (Sundays excepted,) BY MR. EVANS, 
+			AT HIS HOUSE, No. 93, PALL-MALL.” [Lundi, le 16 mars et le dix-septième, et les dix-sept journées suivantes ; et lundi, le 4 mai, 
+			et les onze journées suivantes ; et lundi, le 25 mai, et onze journées suivantes (sauf le dimanche,) PAR M. EVANS, CHEZ LUI, No. 93, PALL-MALL  </p>
+          <p>4. Contient l'ex-libris de Francis Douce, qui a légué le livre à l'Université.  Douce a acheté le manuscrit pour £84 de 
+			   Hibbert aux enchères ou très peu de temps après. La Bodleian retient l'exemplaire du catalogue de Hibbert qui appartenait à 
+			   Douce, qui a été beaucoup marqué par Douce.  Il marque les livres qui sont déjà dans sa bibliothèque, ceux qu'il a acheté aux 
+			   enchères (et le prix qu'il a payé) et pour la plupart du reste des livres (desquels il y a quelques 8,786 notés), l'acheteur 
+			   et le prix.  Puique Douce n'avait pas de catalogue de sa propre collection, et aucun n'en est arrivé à la Bodleian avec son 
+			   legs, ce fait est de valeur particulière. L'exemplaire de Douce du catalogue de Hibbertétait l'un de seulement '36 exemplaires 
+			   imprimé sur du papier grand' selon une inscription à la deuxième garde volante. A la même garde volant on voit écrite “F. Douce 
+			   Presented by his friend G. Hibbert Esq.”[« F. Douce présenté par son ami G. Hibbert Esq. »</p>
+        </note>
+        <note rend="TEXTE">
+          <p>Contient seul le <hi rend="italics">Roman de la Rose</hi>. </p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Douce 195</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="156" unit="folios">156 feuillets</measure>
+            <dimensions>
+              <height unit="mm">345</height>
+              <width unit="mm">235</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">125</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1450">15e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Oxford</settlement>
+            <repository>Bodleian Library</repository>
+            <idno>MS Douce 195</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="156v">1r-156v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">156</note>
+              <note type="illustrations">125</note>
+              <note type="linesPerColumn">38</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

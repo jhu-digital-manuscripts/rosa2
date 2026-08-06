@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.076v.tif" pagination="[lxxii[v]]" reader="Harvey"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian"> <!--JG: Link to printed text-->
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Qua[e]stores.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Quaestors.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="tharmie the questours" type="straight"/>
+    	<underline language="EN" method="pen" text="the chamberlaynes" type="straight"/>
+    	<underline language="EN" method="pen" text="the spoyle and booties" type="straight"/>
+    	<underline language="EN" method="pen" text="was serued" type="straight"/>
+    	<underline language="EN" method="pen" text="the ordinarie pay to" type="straight"/>
+    	<underline language="EN" method="pen" text="succour the wounded" type="straight"/>
+    	<underline language="EN" method="pen" text="other businesse" type="straight"/>
+    	<underline language="EN" method="pen" text="it often" type="straight"/>
+    	<underline language="EN" method="pen" text="graunt a spoyle to Souldiours" type="straight"/>
+    	<underline language="EN" method="pen" text="graunting made no disorder" type="straight"/>
+    	<underline language="EN" method="pen" text="pray was put in the middest" type="straight"/>
+    	<underline language="EN" method="pen" text="distributed by head, according" type="straight"/>
+    	<underline language="EN" method="pen" text="Souldiers should attende to ouercome" type="straight"/>
+    	<underline language="EN" method="pen" text="to robbe" type="straight"/>
+    	<underline language="EN" method="pen" text="ouercame" type="straight"/>
+    	<underline language="EN" method="pen" text="followed them not, for that they neuer" type="straight"/>
+    	<underline language="EN" method="pen" text="their orders" type="straight"/>
+    	<underline language="EN" method="pen" text="followed them, the" type="straight"/>
+    	<underline language="EN" method="pen" text="light armed" type="straight"/>
+    	<underline language="EN" method="pen" text="Souldiours then" type="straight"/>
+    	<underline language="EN" method="pen" text="pursued the chase" type="straight"/>
+    	<underline language="EN" method="pen" text="his that" type="straight"/>
+    	<underline language="EN" method="pen" text="to haue kept the Legions steddie" type="straight"/>
+    	<underline language="EN" method="pen" text="common weale enritched" type="straight"/>
+    	<underline language="EN" method="pen" text="triumphe into the treasurie, muche" type="straight"/>
+    	<underline language="EN" method="pen" text="was of booties &amp; spoyles" type="straight"/>
+    	<underline language="EN" method="pen" text="the wages whiche" type="straight"/>
+    	<underline language="EN" method="pen" text="the thirde" type="straight"/>
+    	<underline language="EN" method="pen" text="parte they woulde" type="straight"/>
+    	<underline language="EN" method="pen" text="layed vp nexte" type="straight"/>
+    	<underline language="EN" method="pen" text="carryed the Ansigne" type="straight"/>
+    	<underline language="EN" method="pen" text="before the warre" type="straight"/>
+    	<underline language="EN" method="pen" text="Souldiour should thriue" type="straight"/>
+    	<underline language="EN" method="pen" text="that their mooueables" type="straight"/>
+    	<underline language="EN" method="pen" text="next to the Ansigne, they shoulde" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="their souldiours vvages" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+    	<mark language="EN" method="pen" name="straight_quotation_mark" place="left_margin" text="succour the wounded"/>
+    	<mark language="EN" method="pen" name="straight_quotation_mark" place="left_margin" text="other businesse"/>
+    	<mark method="chalk" name="vertical_bar" place="left_margin"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="pursued the chase"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="common weale enritched"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="before the warre"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="next to the Ansigne, they shoulde"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="it often"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="spoyle"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="followed them not"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- armed, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="pursued the chase"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- bande, whiche -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="should thriue"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- spende, the -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="that their mooueables"/>
+    	
+    	<errata amendedtext="who" copytext="whome" language="EN"/>
+    	
+    </annotation>
+</transcription>

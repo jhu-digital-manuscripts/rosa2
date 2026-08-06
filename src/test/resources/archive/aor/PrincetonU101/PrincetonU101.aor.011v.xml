@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.011v.tif" pagination="vij[r]" reader="Harvey" signature="[Biii[v]]"/>
+    <annotation>
+
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Excellent warriours, aspirers to Principalityes, &amp; Kingdoms.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					i[nfr]a, X.v.
+    				</marginalia_text>
+    				<internal_ref>
+    					<target ref="PrincetonU101:00000034" text="i[nfr]a"/>
+    				</internal_ref>
+    			</position>
+    		</language>
+    		<translation>
+    			[see] below, Xv. 
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Annual permutation,
+    					A notable remedy.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					i[nfr]a, XIX.
+    				</marginalia_text>
+    				<internal_ref>
+    					<target ref="PrincetonU101:00000051" text="i[nfr]a"/>
+    				</internal_ref>
+    			</position>
+    		</language>
+    		<translation>
+    			above, XIX.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>Nota.</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>Note.</translation>
+    	</marginalia>
+    	
+		<underline language="EN" method="pen" text="same industrie" type="straight"/>
+    	<underline language="EN" method="pen" text="to possesse the kingdome" type="straight"/>
+    	<underline language="EN" method="pen" text="bene ouerthrowen" type="straight"/>
+    	<underline language="EN" method="pen" text="brought it to" type="straight"/>
+    	<underline language="EN" method="pen" text="exercise of warfare, for their proper" type="straight"/>
+    	<underline language="EN" method="pen" text="warre maketh Theeues, and peace hangeth" type="straight"/>
+    	<underline language="EN" method="pen" text="vp?" type="straight"/>
+    	<underline language="EN" method="pen" text="hauing not so muche" type="straight"/>
+    	<underline language="EN" method="pen" text="an open rebellion" type="straight"/>
+    	<underline language="EN" method="pen" text="Robbe in the highe" type="straight"/>
+    	<underline language="EN" method="pen" text="the most excellentest, and moste" type="straight"/>
+    	<underline language="EN" method="pen" text="honorablest that hath béene vsed: so that" type="straight"/>
+    	<underline language="EN" method="pen" text="the glorye" type="straight"/>
+    	<underline language="EN" method="pen" text="of Caesar" type="straight"/>
+    	<underline language="EN" method="pen" text="of Pompei" type="straight"/>
+    	<underline language="EN" method="pen" text="of Scipio" type="straight"/>
+    	<underline language="EN" method="pen" text="of Marcello" type="straight"/>
+    	<underline language="EN" method="pen" text="celebrated as Goddes" type="straight"/>
+    	<underline language="EN" method="pen" text="Pompei and Caesar, and" type="straight"/>
+    	<underline language="EN" method="pen" text="as ualiaunt men" type="straight"/>
+    	<underline language="EN" method="pen" text="good" type="straight"/>
+    	<underline language="EN" method="pen" text="liued before them" type="straight"/>
+    	<underline language="EN" method="pen" text="valiaunt and good men" type="straight"/>
+
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="warre maketh Theeues, and peace hangeth them vp?"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="an open rebellion"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark method="pen" name="circumflex" place="left_margin"/>
+    	<mark method="pen" name="circumflex" place="left_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="Pompei and Caesar, and"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="as valiaunt men"/>
+    	<mark language="EN" method="pen" name="circumflex" place="left_margin" text="valiaunt and good men"/>
+    	
+		<mark language="EN" method="pen" name="plus_sign" place="tail" text="valiaunt and good men"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="possesse the kingdome"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="as valiaunt men"/>
+    	<mark method="pen" name="dot" place="intext"/> <!--good, and-->
+
+    </annotation>
+</transcription>

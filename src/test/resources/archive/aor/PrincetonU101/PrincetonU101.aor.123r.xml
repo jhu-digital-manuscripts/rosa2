@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.123r.tif" reader="Harvey" signature="[Ggiii[r]]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					s[upr]a. 9.
+    				</marginalia_text>
+    				<internal_ref>
+    					<target ref="PrincetonU101:00000031" text="9"/>
+    				</internal_ref>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					s[upr]a, 9.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian"> <!--JG: Link to printed text-->
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					battleray.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Trecenti Lacones.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Three hundred Lacones.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+    	<underline language="EN" method="pen" text="Whether the Footemen" type="straight"/>
+    	<underline language="EN" method="pen" text="or the Horsemen" type="straight"/>
+    	<underline language="EN" method="pen" text="esteemed moste" type="straight"/>
+    	<underline language="EN" method="pen" text="Romaines were ouercome of" type="straight"/>
+    	<underline language="EN" method="pen" text="Parthians" type="straight"/>
+    	<underline language="EN" method="pen" text="antiquitie exercised theyr menne" type="straight"/>
+    	<underline language="EN" method="pen" text="esteemed moste happie in a common" type="straight"/>
+    	<underline language="EN" method="pen" text="maner, of maintaining the order" type="straight"/>
+    	<underline language="EN" method="pen" text="legion" type="straight"/>
+    	<underline language="EN" method="pen" text="Falange" type="straight"/>
+    	<underline language="EN" method="pen" text="Catterua" type="straight"/>
+    	<underline language="EN" method="pen" text="The order of battelraye" type="straight"/>
+    	<underline language="EN" method="pen" text="and the manner of appoyncting the battailes" type="straight"/>
+    	<underline language="EN" method="pen" text="CCCC.L. men to" type="straight"/>
+    	<underline language="EN" method="pen" text="some seuerall feate" type="straight"/>
+    	<underline language="EN" method="pen" text="What carriages the" type="straight"/>
+    	<underline language="EN" method="pen" text="of carriages requisit to euery" type="straight"/>
+    	<underline language="EN" method="pen" text="the vtilitie" type="straight"/>
+    	<underline language="EN" method="pen" text="the disorder of" type="straight"/>
+    	<underline language="EN" method="pen" text="are now adayes" type="straight"/>
+    	<underline language="EN" method="pen" text="men of armes" type="straight"/>
+    	<underline language="EN" method="pen" text="light Horsemen oughte" type="straight"/>
+    	<underline language="EN" method="pen" text="greateste disorder that is vsed nowe" type="straight"/>
+    	<underline language="EN" method="pen" text="the ordering" type="straight"/>
+    	<underline language="EN" method="pen" text="Romaines deuided" type="straight"/>
+    	
+    	<!-- Symbols -->
+    	<symbol name="Bisected_circle" place="right_margin"/>
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Romaines were ouercome"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="esteemed moste happie in a common"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="exercised theyr"/>
+    	<mark method="pen" name="hash" place="intext"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="carriages"/>
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- Principi and Triarii -->
+    	
+    </annotation>
+</transcription>

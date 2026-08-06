@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.082v.tif" pagination="[lxxviii[v]]" reader="Harvey" signature="[Uii[v]]"/>
+<annotation>    	
+	<!-- Marginalia -->
+	<marginalia anchor_text="Capitaynes lodging" hand="Italian"> 
+		<language ident="EN">
+			<position book_orientation="0" place="left_margin">
+				<marginalia_text>
+					[The] Generals Cabbin.
+				</marginalia_text>
+			</position>
+		</language>
+	</marginalia>
+						
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="foure maine battailes, twoo of" type="straight"/>
+    	<underline language="EN" method="pen" text="twoo of straungers" type="straight"/>
+    	<underline language="EN" method="pen" text="situation being" type="straight"/>
+    	<underline language="EN" method="pen" text="erecte the head standarde" type="straight"/>
+    	<underline language="EN" method="pen" text="out a quadrant, which" type="straight"/>
+    	<underline language="EN" method="pen" text="betweene the which" type="straight"/>
+    	<underline language="EN" method="pen" text="Capitaynes lodging shoulde" type="straight"/>
+    	<underline language="EN" method="pen" text="wisedome, to deuide the armed" type="straight"/>
+    	<underline language="EN" method="pen" text="the vnarmed" type="straight"/>
+    	<underline language="EN" method="pen" text="that were cumbered" type="straight"/>
+    	<underline language="EN" method="pen" text="from the vncombered" type="straight"/>
+    	<underline language="EN" method="pen" text="all, or the greatest parte of the armed" type="straight"/>
+    	<underline language="EN" method="pen" text="the vnarmed, and the combred" type="straight"/>
+    	<underline language="EN" method="pen" text="the West side" type="straight"/>
+    	<underline language="EN" method="pen" text="South, and North" type="straight"/>
+    	<underline language="EN" method="pen" text="the flanckes" type="straight"/>
+    	<underline language="EN" method="pen" text="the head standarde" type="straight"/>
+    	<underline language="EN" method="pen" text="xxxvij. yardes and" type="straight"/>
+    	<underline language="EN" method="pen" text="lodging of the Capitayne waye" type="straight"/>
+    	<underline language="EN" method="pen" text="other waye, from the" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="lodgi[n]g for the general capitain" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="erecte the head standarde"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the vnarmed, and the combred"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the West side"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the flanckes"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="head standarde"/>
+	<mark method="pen" name="bracket" place="intext"/>
+	<mark method="pen" name="bracket" place="intext"/>
+	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Capitaynes lodging"/>
+	<mark language="EN" method="pen" name="plus_sign" place="intext" text="wisedome"/>
+	<mark language="EN" method="pen" name="plus_sign" place="intext" text="deuide"/>
+	<mark method="pen" name="bracket" place="intext"/>
+	<mark method="pen" name="bracket" place="intext"/>
+	<mark language="EN" method="pen" name="plus_sign" place="intext" text="that were cumbered"/>
+	<mark language="EN" method="pen" name="plus_sign" place="intext" text="vncombered"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- East, and -->
+	<mark method="pen" name="dot" place="intext"/> <!-- Campe, and --> 
+	
+    </annotation>
+</transcription>

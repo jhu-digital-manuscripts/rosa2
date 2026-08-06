@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.092v.tif" pagination="[lxxxviii[v]]" reader="Harvey"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					De Secretis non reuelandis.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Of not revealing secrets.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="doubtest, to hide" type="straight"/>
+    	<underline language="EN" method="pen" text="some enterprise in hande" type="straight"/>
+    	<underline language="EN" method="pen" text="easyly thou" type="straight"/>
+    	<underline language="EN" method="pen" text="beguile and oppresse him" type="straight"/>
+    	<underline language="EN" method="pen" text="to deminishe thy" type="straight"/>
+    	<underline language="EN" method="pen" text="not to deminish" type="straight"/>
+    	<underline language="EN" method="pen" text="to maintaine the signes, &amp; the orders" type="straight"/>
+    	<underline language="EN" method="pen" text="the very same fires, and" type="straight"/>
+    	<underline language="EN" method="pen" text="thou werte ingrossed" type="straight"/>
+    	<underline language="EN" method="pen" text="not to increase" type="straight"/>
+    	<underline language="EN" method="pen" text="the lodginges" type="straight"/>
+    	<underline language="EN" method="pen" text="keeping secrete" type="straight"/>
+    	<underline language="EN" method="pen" text="alwaies beene most profitable" type="straight"/>
+    	<underline language="EN" method="pen" text="woulde doe" type="straight"/>
+    	<underline language="EN" method="pen" text="his sherte knew therof, he" type="straight"/>
+    	<underline language="EN" method="pen" text="beeluest thou to" type="straight"/>
+    	<underline language="EN" method="pen" text="alone not to here the trumpet" type="straight"/>
+    	<underline language="EN" method="pen" text="the secretes of thy enemie" type="straight"/>
+    	<underline language="EN" method="pen" text="sende ambassadours, and" type="straight"/>
+    	<underline language="EN" method="pen" text="seruauntes apparel, msote expertest" type="straight"/>
+    	<underline language="EN" method="pen" text="taken occasion to see the" type="straight"/>
+    	<underline language="EN" method="pen" text="consider his strength" type="straight"/>
+    	<underline language="EN" method="pen" text="and weakenesse" type="straight"/>
+    	<underline language="EN" method="pen" text="opportunitie to ouercome" type="straight"/>
+    	<underline language="EN" method="pen" text="into exile one of their familiars" type="straight"/>
+    	<underline language="EN" method="pen" text="knowen the deuises of his" type="straight"/>
+    	<underline language="EN" method="pen" text="like secretes are" type="straight"/>
+    	<underline language="EN" method="pen" text="when for this effecte" type="straight"/>
+    	<underline language="EN" method="pen" text="were taken any prisoners" type="straight"/>
+    	<underline language="EN" method="pen" text="the fayeth of those Frenchmen" type="straight"/>
+    	<underline language="EN" method="pen" text="Lombardie, and were in" type="straight"/>
+    	<underline language="EN" method="pen" text="them letters open" type="straight"/>
+    	<underline language="EN" method="pen" text="sealed" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="enemie shal not perceiue" type="straight"/>
+    	<underline language="EN" method="pen" text="same be deminished, or increased" type="straight"/>
+    	<underline language="EN" method="pen" text="secretes of thy enemie" type="straight"/>
+    	<underline language="EN" method="pen" text="hovv he might trust the Frenchmen" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="the secretes of thy"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="knowen the deuises of his"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- therof, it -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- ingrossed, it -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="secrete"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="sherte"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the secretes of thy"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="ambassadours"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="moste expertest"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="opportunitie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="into exile"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="familiars"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="taken any prisoners"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- people, sent -->
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="whoe" copytext="whome" language="EN"/>
+    	<errata amendedtext="who" copytext="whom" language="EN"/>
+    	
+    </annotation>
+</transcription>

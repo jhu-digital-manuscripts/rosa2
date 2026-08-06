@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.060v.tif" pagination="[lvi[v]]" reader="Harvey"/>
+    <annotation>
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="won so honourablye" type="straight"/>
+    	<underline language="EN" method="pen" text="tempt not fortune" type="straight"/>
+    	<underline language="EN" method="pen" text="how variable" type="straight"/>
+    	<underline language="EN" method="pen" text="vnstable she is" type="straight"/> <!-- CG: Unclear if/how Harvey might have emended the "she" here. -->
+    	<underline language="EN" method="pen" text="that you leese no time" type="straight"/>
+    	<underline language="EN" method="pen" text="pacience, if with these our Ceremonies" type="straight"/>
+    	<underline language="EN" method="pen" text="demaunders, maketh mee" type="straight"/>
+    	
+    	<errata amendedtext="she" copytext="she" language="EN"/>
+    	<errata amendedtext="hetherto" copytext="he rto" language="EN"/>
+    	<errata amendedtext="those shoulde" copytext="those shoulde" language="EN"/>
+
+    </annotation>
+</transcription>
