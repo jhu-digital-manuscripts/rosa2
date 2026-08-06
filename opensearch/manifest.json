@@ -37,6 +37,7 @@
           "es": { "type": "text", "analyzer": "spanish" }
         }
       },
+      "titles": { "type": "text", "analyzer": "english" },
       "repository": { "type": "text" },
       "shelfmark": { "type": "text" },
       "date": { "type": "text" },

@@ -219,7 +219,7 @@ The legacy rosa2 search system used Lucene with JHSearch field names. The table 
 | `underline` | annotations | `text.*` (type=underline) | Filter by `type` + search `text` |
 | `emphasis` | annotations | `emphasis.*` | Separate multi-lang field |
 | `errata` | annotations | `text.*` (type=errata) | Filter by `type` + search `text` |
-| `mark` | annotations | `text.*` (type=mark) | Filter by `type` + search `text` |
+| `mark` | annotations | `text.*` (type=mark), `mark_name` | Filter by `type` + search `text`; mark type in `mark_name` keyword |
 | `symbol` | annotations | `text.*` (type=symbol) | Filter by `type` + search `text` |
 | `numeral` | annotations | `text.*` (type=numeral) | Filter by `type` + search `text` |
 | `drawing` | annotations | `text.*` (type=drawing) | Filter by `type` + search `text` |
@@ -229,7 +229,7 @@ The legacy rosa2 search system used Lucene with JHSearch field names. The table 
 | `calculation` | annotations | `text.*` (type=calculation) | Filter by `type` + search `text` |
 | `graph` | annotations | `text.*` (type=graph) | Filter by `type` + search `text` |
 | `table` | annotations | `text.*` (type=table) | Filter by `type` + search `text` |
-| `title` | manifests | `title.*` | Multi-lang sub-fields |
+| `title` | manifests | `title.*`, `titles` | Multi-lang sub-fields on `title`; `titles` array includes BookText titles |
 | `people` | annotations | `people` | Keyword array |
 | `place` | annotations | `locations` | Renamed to `locations` |
 | `repo` | manifests | `repository` | Renamed to `repository` |
@@ -246,6 +246,11 @@ The legacy rosa2 search system used Lucene with JHSearch field names. The table 
 - Per-annotation-type fields (e.g., `marginalia`, `underline`) are unified into a single `text` field with a `type` discriminator for filtering.
 - Language routing was `field.ENGLISH`, `field.FRENCH` etc. in Lucene; now it is `field.en`, `field.fr` etc.
 - Faceting used Lucene's `SortedSetDocValuesFacetField`; now uses keyword-typed fields directly.
+- Mark names (e.g., `plus_sign`, `dash`) are stored in the `mark_name` keyword field for faceted filtering.
+- People, books, and locations include alternate names/spellings from collection reference sheets.
+- Transcription XML is parsed into structured categories (poetry, rubric, notes, etc.) with appropriate language routing.
+- Illustration title IDs and character IDs are resolved to human-readable names before indexing.
+- Translations are always routed to the `.en` sub-field since translations are into English.
 
 ## Generating Search Data
 

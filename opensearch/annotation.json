@@ -34,6 +34,7 @@
       "orientation": { "type": "keyword" },
       "method": { "type": "keyword" },
       "hand": { "type": "keyword" },
+      "mark_name": { "type": "keyword" },
       "language": { "type": "keyword" },
       "image_name": { "type": "keyword" },
       "text": {
