@@ -20,13 +20,22 @@ curl -X PUT "http://localhost:9200/annotation" \
   -H "Content-Type: application/json" \
   -d @../opensearch/annotation.json
 
-# Ingest data
+# Ingest data in chunks to avoid circuit breaker limits
+CHUNK_DIR=os/split
+mkdir $CHUNK_DIR
 for f in os/*.bulk.json; do
-  curl -X POST "http://localhost:9200/_bulk" \
-    -H "Content-Type: application/x-ndjson" \
-    --data-binary @"$f"
+  echo "Splitting $f..."
+  split -l 2000 "$f" "$CHUNK_DIR/chunk_"
+  for chunk in "$CHUNK_DIR"/chunk_*; do
+    curl -s -X POST "http://localhost:9200/_bulk" \
+      -H "Content-Type: application/x-ndjson" \
+      --data-binary @"$chunk"
+    echo ""
+    sleep 0.5
+  done
+  rm -f "$CHUNK_DIR"/chunk_*
 done
-
+rm -rf "$CHUNK_DIR"
 
 # Serve out website
 npx serve site
