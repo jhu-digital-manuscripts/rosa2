@@ -25,8 +25,10 @@ An archive is a root directory containing one or more collections. Each collecti
       <book-id>.images.crop.csv
       <book-id>.permission_en.html
       <book-id>.SHA1SUM
-      <page>.xml              (AoR transcription files)
-      <page>.tif              (page images)
+      <book-id>.transcription.xml       (TEI XML transcription)
+      <book-id>.transcription.<page>.txt (per-page text transcription source files)
+      <book-id>.aor.<page>.xml          (AoR annotation files)
+      <page>.tif                         (page images)
       ...
 ```
 
@@ -54,8 +56,28 @@ A book represents a single digitized manuscript or printed work. Each book direc
 | `{book-id}.images.crop.csv` | Cropped image data for display |
 | `{book-id}.permission_en.html` | Usage permission and license text |
 | `{book-id}.SHA1SUM` | SHA1 checksums for integrity verification |
-| `{page-id}.xml` | AoR annotation transcription XML for each annotated page |
+| `{book-id}.transcription.xml` | TEI P5 XML transcription (hand-authored or generated from .txt files) |
+| `{book-id}.transcription.{page}.txt` | Per-page text transcription source files (custom format) |
+| `{book-id}.aor.{page}.xml` | AoR annotation transcription XML for each annotated page |
 | Image files (`.tif`, `.jpg`) | Page images (excluded by shallow-copy) |
+
+## Transcription Types
+
+Transcription files come in three forms:
+
+1. **TEI XML** (`{book-id}.transcription.xml`) — A single TEI P5 document containing the full
+   manuscript transcription with `<pb>` page breaks. May be hand-authored (e.g., Douce195)
+   or generated from per-page text files via `generate-tei` (e.g., Douce332).
+
+2. **Per-page text** (`{book-id}.transcription.{page}.txt`) — Source files in a custom text format.
+   Each file contains a `[folio col]` header followed by lines of poetry, rubrics, illustrations,
+   annotations, and catchphrases in a simple markup. These are converted to the TEI XML file
+   using the `generate-tei` command.
+
+3. **AoR annotation XML** (`{book-id}.aor.{page}.xml`) — Archaeology of Reading transcription files.
+   These record reader annotations (marginalia, underlines, marks, symbols, errata, drawings,
+   graphs, tables, calculations, physical links) and are NOT converted to TEI. They are processed
+   separately for IIIF annotation pages and Opensearch annotation documents.
 
 ## File Naming Conventions
 

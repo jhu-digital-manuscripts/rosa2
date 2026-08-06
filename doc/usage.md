@@ -237,11 +237,15 @@ java -jar rosa2.jar rename-transcriptions --archive <dir> --collection <id> --bo
 
 ### generate-tei
 
-Converts AoR transcription XML into TEI format for a specific book.
+Generates a single TEI P5 XML transcription file from per-page text transcription source files for a specific book.
 
 ```
 java -jar rosa2.jar generate-tei --archive <dir> --collection <id> --book <id>
 ```
+
+This finds all `{book-id}.transcription.{page}.txt` files in the specified book directory, parses their custom text format, and combines them into `{book-id}.transcription.xml`.
+
+Books that already have a hand-authored `.transcription.xml` (like Douce195) or books that only have AoR annotation XML do not need this command.
 
 | Option | Required | Description |
 |--------|----------|-------------|

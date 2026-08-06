@@ -248,7 +248,7 @@ The legacy rosa2 search system used Lucene with JHSearch field names. The table 
 - Faceting used Lucene's `SortedSetDocValuesFacetField`; now uses keyword-typed fields directly.
 - Mark names (e.g., `plus_sign`, `dash`) are stored in the `mark_name` keyword field for faceted filtering.
 - People, books, and locations include alternate names/spellings from collection reference sheets.
-- Transcription XML is parsed into structured categories (poetry, rubric, notes, etc.) with appropriate language routing.
+- Transcription XML (from `{book-id}.transcription.xml`) is split per-page at `<pb>` elements, then parsed into structured categories (poetry, rubric, notes, etc.) with appropriate language routing. AoR annotation XML is indexed as separate annotation documents and is not part of the transcription index.
 - Illustration title IDs and character IDs are resolved to human-readable names before indexing.
 - Translations are always routed to the `.en` sub-field since translations are into English.
 

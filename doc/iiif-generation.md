@@ -57,7 +57,7 @@ One canvas per page image. Each canvas has:
 Annotation pages contain textual and descriptive annotations. The generator produces annotation pages for:
 - **AoR annotations** — marginalia (with HTML rendering, people/books/locations, multi-language), underline, mark, symbol, numeral, errata, drawing, graph, table, calculation, physical_link
 - **Illustrations** — titles, characters, textual elements, costume, objects, landscapes, architecture
-- **Transcriptions** — rose transcription text rendered as HTML with poetry lines, rubrics, and catchphrases
+- **Transcriptions** — TEI transcription text (from `{book-id}.transcription.xml`) rendered as HTML with poetry lines, rubrics, and catchphrases, split per-page at `<pb>` elements
 - **HTML annotations** — collection-level HTML annotation content
 
 ## Serialization

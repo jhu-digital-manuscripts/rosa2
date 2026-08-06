@@ -12,16 +12,17 @@ import java.util.List;
 import java.util.concurrent.Callable;
 
 /**
- * Converts AoR transcription XML files into TEI P5 format.
+ * Generates a single TEI P5 XML transcription from per-page text transcription files.
  *
  * <p>Delegates to {@link rosa.archive.core.ArchiveStore#generateTEITranscriptions}
- * which transforms each AoR transcription XML file in the specified book into a
- * corresponding TEI P5 XML file. Warnings for unmappable annotations are printed
- * to stdout; errors for unreadable files are printed to stderr.</p>
+ * which finds all per-page text transcription files ({@code BookId.transcription.NNNr.txt})
+ * in the specified book, parses their custom text format, and combines them into a
+ * single TEI P5 XML file ({@code BookId.transcription.xml}). Warnings for formatting
+ * issues are printed to stdout; errors are printed to stderr.</p>
  */
 @Command(name = "generate-tei",
          mixinStandardHelpOptions = true,
-         description = "Convert AoR transcription XML files into TEI format")
+         description = "Generate TEI XML from per-page text transcription files")
 public final class GenerateTeiCommand implements Callable<Integer> {
 
     @Option(names = "--archive", required = true, description = "Path to archive directory")

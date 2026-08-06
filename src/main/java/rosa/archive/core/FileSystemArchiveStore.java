@@ -759,289 +759,34 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             throw new IOException("Book not found: " + collectionId + "/" + bookId);
         }
 
-        List<String> content = listFiles(bookDir);
-        for (String name : content) {
-            if (PARSER.isAorTranscription(name)) {
-                generateSingleTEI(bookDir, name, errors, warnings);
-            }
+        // Find per-page text transcription files: BookId.transcription.NNNr.txt
+        List<Path> textFiles = listPerPageTranscriptionFiles(bookDir, bookId);
+        if (textFiles.isEmpty()) {
+            return; // No per-page text transcriptions to convert
         }
+
+        // Convert all text files into a single TEI XML
+        Path outputFile = bookDir.resolve(bookId + TRANSCRIPTION);
+        var converter = new TranscriptionConverter();
+        converter.convert(textFiles, outputFile);
+
+        warnings.addAll(converter.getWarnings());
+        errors.addAll(converter.getErrors());
     }
 
-    /**
-     * Generates a single TEI P5 XML file from an AoR transcription XML file.
-     *
-     * @param bookDir  the book directory
-     * @param fileName the AoR transcription filename
-     * @param errors   list to collect error messages
-     * @param warnings list to collect warning messages
-     */
-    private void generateSingleTEI(Path bookDir, String fileName, List<String> errors,
-                                   List<String> warnings) {
-        Path aorFile = bookDir.resolve(fileName);
-
-        Document aorDoc;
-        try {
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            factory.setNamespaceAware(false);
-            // Allow DTD references but don't fetch them
-            factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
-            DocumentBuilder builder = factory.newDocumentBuilder();
-            try (InputStream in = Files.newInputStream(aorFile)) {
-                aorDoc = builder.parse(in);
-            }
-        } catch (ParserConfigurationException | SAXException | IOException e) {
-            errors.add("Failed to read AoR transcription [" + fileName + "]: " + e.getMessage());
-            return;
-        }
-
-        // Extract page identifier for the output filename
-        String pageId = extractPageId(aorDoc, fileName);
-        String outputName = pageId + ".tei.xml";
-
-        try {
-            Document teiDoc = buildTEIDocument(aorDoc, pageId, warnings);
-            Path outputFile = bookDir.resolve(outputName);
-            try (OutputStream os = Files.newOutputStream(outputFile)) {
-                writeXml(teiDoc, os);
-            }
-        } catch (ParserConfigurationException | IOException e) {
-            errors.add("Failed to write TEI file [" + outputName + "]: " + e.getMessage());
+    private List<Path> listPerPageTranscriptionFiles(Path bookDir, String bookId) throws IOException {
+        String prefix = bookId + ".transcription.";
+        String suffix = ".txt";
+        try (var stream = Files.list(bookDir)) {
+            return stream
+                    .filter(p -> {
+                        String name = p.getFileName().toString();
+                        return name.startsWith(prefix) && name.endsWith(suffix);
+                    })
+                    .sorted()
+                    .toList();
         }
     }
-
-    /**
-     * Extracts the page identifier from the AoR document's {@code <page>} element filename attribute.
-     * Falls back to deriving the page id from the filename.
-     */
-    private String extractPageId(Document aorDoc, String fileName) {
-        NodeList pageEls = aorDoc.getElementsByTagName("page");
-        if (pageEls.getLength() > 0) {
-            Element pageEl = (Element) pageEls.item(0);
-            String imageFilename = pageEl.getAttribute("filename");
-            if (imageFilename != null && !imageFilename.isBlank()) {
-                // Remove extension from image filename to get page id
-                // e.g. "2862_005.tif" -> "2862_005", "Ha2.001r.tif" -> "Ha2.001r"
-                int dotIdx = imageFilename.lastIndexOf('.');
-                return dotIdx > 0 ? imageFilename.substring(0, dotIdx) : imageFilename;
-            }
-        }
-        // Fallback: derive from AoR filename by removing the .xml extension and .aor. segment
-        // e.g. "BookId.aor.001r.xml" -> "001r"
-        String base = fileName.replace(".xml", "");
-        int aorIdx = base.indexOf(".aor.");
-        if (aorIdx >= 0) {
-            return base.substring(aorIdx + 5);
-        }
-        return base;
-    }
-
-    /**
-     * Builds a TEI P5 document from an AoR transcription document.
-     */
-    private Document buildTEIDocument(Document aorDoc, String pageId,
-                                      List<String> warnings) throws ParserConfigurationException {
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = factory.newDocumentBuilder();
-        Document teiDoc = builder.newDocument();
-
-        // Root TEI element
-        Element tei = teiDoc.createElement("TEI");
-        tei.setAttribute("xmlns", "http://www.tei-c.org/ns/1.0");
-        teiDoc.appendChild(tei);
-
-        // teiHeader
-        Element teiHeader = teiDoc.createElement("teiHeader");
-        tei.appendChild(teiHeader);
-
-        Element fileDesc = teiDoc.createElement("fileDesc");
-        teiHeader.appendChild(fileDesc);
-
-        Element titleStmt = teiDoc.createElement("titleStmt");
-        fileDesc.appendChild(titleStmt);
-        Element title = teiDoc.createElement("title");
-        title.setTextContent("AoR transcription of page " + pageId);
-        titleStmt.appendChild(title);
-
-        Element publicationStmt = teiDoc.createElement("publicationStmt");
-        fileDesc.appendChild(publicationStmt);
-        Element p = teiDoc.createElement("p");
-        p.setTextContent("Generated from Archaeology of Reading transcription data");
-        publicationStmt.appendChild(p);
-
-        Element sourceDesc = teiDoc.createElement("sourceDesc");
-        fileDesc.appendChild(sourceDesc);
-        Element sourceP = teiDoc.createElement("p");
-        sourceP.setTextContent("Converted from AoR transcription XML");
-        sourceDesc.appendChild(sourceP);
-
-        // text > body
-        Element text = teiDoc.createElement("text");
-        tei.appendChild(text);
-        Element body = teiDoc.createElement("body");
-        text.appendChild(body);
-
-        Element div = teiDoc.createElement("div");
-        div.setAttribute("type", "annotations");
-        body.appendChild(div);
-
-        // Process annotations
-        NodeList annotationEls = aorDoc.getElementsByTagName("annotation");
-        if (annotationEls.getLength() > 0) {
-            Element annotationEl = (Element) annotationEls.item(0);
-            transformAnnotations(teiDoc, div, annotationEl, warnings);
-        }
-
-        return teiDoc;
-    }
-
-    /**
-     * Transforms all annotations within an {@code <annotation>} element into TEI elements.
-     */
-    private void transformAnnotations(Document teiDoc, Element parent, Element annotationEl,
-                                      List<String> warnings) {
-        NodeList children = annotationEl.getChildNodes();
-        for (int i = 0; i < children.getLength(); i++) {
-            Node child = children.item(i);
-            if (child.getNodeType() != Node.ELEMENT_NODE) {
-                continue;
-            }
-            Element el = (Element) child;
-            String tagName = el.getTagName();
-
-            switch (tagName) {
-                case "marginalia" -> transformMarginalia(teiDoc, parent, el);
-                case "underline" -> transformUnderline(teiDoc, parent, el);
-                case "mark" -> transformMark(teiDoc, parent, el);
-                case "symbol" -> transformSymbol(teiDoc, parent, el);
-                case "errata" -> transformErrata(teiDoc, parent, el);
-                default -> warnings.add("Unmappable annotation type: " + tagName);
-            }
-        }
-    }
-
-    /**
-     * Transforms a {@code <marginalia>} element into a TEI {@code <note>} element.
-     */
-    private void transformMarginalia(Document teiDoc, Element parent, Element marginalia) {
-        Element note = teiDoc.createElement("note");
-        note.setAttribute("type", "marginalia");
-
-        String hand = marginalia.getAttribute("hand");
-        if (hand != null && !hand.isBlank()) {
-            note.setAttribute("hand", hand);
-        }
-
-        // Extract place from the first position element
-        NodeList positions = marginalia.getElementsByTagName("position");
-        if (positions.getLength() > 0) {
-            Element pos = (Element) positions.item(0);
-            String place = pos.getAttribute("place");
-            if (place != null && !place.isBlank()) {
-                note.setAttribute("place", place);
-            }
-        }
-
-        // Collect all marginalia_text content
-        NodeList textEls = marginalia.getElementsByTagName("marginalia_text");
-        StringBuilder textContent = new StringBuilder();
-        for (int i = 0; i < textEls.getLength(); i++) {
-            String t = textEls.item(i).getTextContent().trim();
-            if (!t.isEmpty()) {
-                if (!textContent.isEmpty()) {
-                    textContent.append(" ");
-                }
-                textContent.append(t);
-            }
-        }
-
-        if (!textContent.isEmpty()) {
-            note.setTextContent(textContent.toString());
-        }
-
-        parent.appendChild(note);
-    }
-
-    /**
-     * Transforms an {@code <underline>} element into a TEI {@code <hi rend="underline">} element.
-     */
-    private void transformUnderline(Document teiDoc, Element parent, Element underline) {
-        Element hi = teiDoc.createElement("hi");
-        hi.setAttribute("rend", "underline");
-
-        String text = underline.getAttribute("text");
-        if (text != null && !text.isBlank()) {
-            hi.setTextContent(text);
-        }
-
-        parent.appendChild(hi);
-    }
-
-    /**
-     * Transforms a {@code <mark>} element into a TEI {@code <metamark>} element.
-     */
-    private void transformMark(Document teiDoc, Element parent, Element mark) {
-        Element metamark = teiDoc.createElement("metamark");
-
-        String name = mark.getAttribute("name");
-        if (name != null && !name.isBlank()) {
-            metamark.setAttribute("function", name);
-        }
-
-        String place = mark.getAttribute("place");
-        if (place != null && !place.isBlank()) {
-            metamark.setAttribute("place", place);
-        }
-
-        String text = mark.getAttribute("text");
-        if (text != null && !text.isBlank()) {
-            metamark.setTextContent(text);
-        }
-
-        parent.appendChild(metamark);
-    }
-
-    /**
-     * Transforms a {@code <symbol>} element into a TEI {@code <g>} (glyph) element.
-     */
-    private void transformSymbol(Document teiDoc, Element parent, Element symbol) {
-        Element g = teiDoc.createElement("g");
-
-        String name = symbol.getAttribute("name");
-        if (name != null && !name.isBlank()) {
-            g.setAttribute("ref", "#" + name);
-        }
-
-        String place = symbol.getAttribute("place");
-        if (place != null && !place.isBlank()) {
-            g.setAttribute("place", place);
-        }
-
-        parent.appendChild(g);
-    }
-
-    /**
-     * Transforms an {@code <errata>} element into a TEI {@code <choice><sic>...<corr>...</choice>}.
-     */
-    private void transformErrata(Document teiDoc, Element parent, Element errata) {
-        Element choice = teiDoc.createElement("choice");
-
-        Element sic = teiDoc.createElement("sic");
-        String copytext = errata.getAttribute("copytext");
-        if (copytext != null && !copytext.isBlank()) {
-            sic.setTextContent(copytext);
-        }
-        choice.appendChild(sic);
-
-        Element corr = teiDoc.createElement("corr");
-        String amendedtext = errata.getAttribute("amendedtext");
-        if (amendedtext != null && !amendedtext.isBlank()) {
-            corr.setTextContent(amendedtext);
-        }
-        choice.appendChild(corr);
-
-        parent.appendChild(choice);
-    }
-
     /**
      * Loads existing checksums from a checksum file, or returns an empty map if the file doesn't exist.
      */

@@ -220,26 +220,18 @@ public sealed interface ArchiveStore permits FileSystemArchiveStore {
                               List<String> errors) throws IOException;
 
     /**
-     * Generates TEI P5 transcription files from AoR transcription XML files in a book directory.
+     * Generates a TEI P5 XML transcription file ({@code BookId.transcription.xml})
+     * by combining per-page text transcription files ({@code BookId.transcription.NNNr.txt}).
      *
-     * <p>Each AoR transcription XML file is transformed into a corresponding TEI P5 XML file
-     * with appropriate element mappings:
-     * <ul>
-     *   <li>Marginalia → {@code <note>} with {@code @type="marginalia"} and {@code @place}</li>
-     *   <li>Underlines → {@code <hi rend="underline">} wrapping referenced text</li>
-     *   <li>Marks → {@code <metamark>} elements</li>
-     *   <li>Symbols → {@code <g>} (glyph) elements</li>
-     *   <li>Errata → {@code <choice><sic>...</sic><corr>...</corr></choice>}</li>
-     * </ul>
+     * <p>Books that already have a hand-authored {@code .transcription.xml} or that use
+     * only AoR annotation XML do not need this step. If no per-page text files are found,
+     * this method returns without producing output.
      *
-     * <p>Warnings are reported for unmappable annotation types. Errors are reported for
-     * unreadable files, but processing continues for remaining transcriptions.
-     *
-     * @param collectionId the collection identifier
-     * @param bookId       the book identifier
-     * @param errors       list to collect error messages for unreadable files
-     * @param warnings     list to collect warning messages for unmappable annotations
-     * @throws IOException if the book directory cannot be read
+     * @param collectionId the collection containing the book
+     * @param bookId       the book to process
+     * @param errors       list to collect error messages
+     * @param warnings     list to collect warning messages
+     * @throws IOException if the book directory cannot be read or the output file cannot be written
      */
     void generateTEITranscriptions(String collectionId, String bookId, List<String> errors,
                                    List<String> warnings) throws IOException;

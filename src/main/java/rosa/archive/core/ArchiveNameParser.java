@@ -177,6 +177,17 @@ public final class ArchiveNameParser {
     }
 
     /**
+     * Checks whether a filename is a per-page text transcription file.
+     * These files contain ".transcription." and end with ".txt".
+     *
+     * @param name the filename to test
+     * @return true if this is a per-page text transcription file
+     */
+    public boolean isPerPageTextTranscription(String name) {
+        return name.contains(".transcription.") && name.endsWith(".txt");
+    }
+
+    /**
      * Returns a short image identifier unique within the book.
      *
      * @param imageId the full image ID
