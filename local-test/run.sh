@@ -6,6 +6,10 @@ java -jar ../target/rosa2-2.0.0-SNAPSHOT.jar generate-iiif-pres --archive=../../
 # Generate Opensearch data for bulk ingest
 java -jar ../target/rosa2-2.0.0-SNAPSHOT.jar generate-opensearch-ingest --archive=../../rosa-archive/  --output os
 
+# Start Opensearch
+
+docker compose up -d
+
 # Create Opensearch indexes
 
 curl -X PUT "http://localhost:9200/manifest" \
