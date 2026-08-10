@@ -77,6 +77,22 @@ Split `manifest_id` on the first `.` to extract `collection_id` and `book_id`. F
 https://iiif.example.org/rose/Douce195/canvas/2
 ```
 
+### Constructing IIIF Image API URLs from Search Results
+
+A client can construct a IIIF Image API URL for a canvas thumbnail using the `iiif_image_id` field:
+
+```
+{image_base_url}/{iiif_image_id_percent_encoded}/{region}/{size}/{rotation}/{quality}.{format}
+```
+
+The `iiif_image_id` value (e.g. `rose/Douce195/cropped/Douce195.001r`) must be percent-encoded as a single path segment (slashes become `%2F`). For example, to get an 80px-wide thumbnail:
+
+```
+https://image.example.org/rose%2FDouce195%2Fcropped%2FDouce195.001r/full/80,/0/default.jpg
+```
+
+The same `iiif_image_id` field appears on both manifest `thumbnail` entries and canvas documents, providing a consistent way to generate image URLs.
+
 ## Multi-Language Field Structure
 
 Textual content is routed into language-specific sub-fields so that the correct analyzer (stemming, stop words) is applied at index time.
@@ -149,7 +165,7 @@ Fields using this pattern: `mark`, `symbol`, `drawing`, `calculation`, `graph`, 
 | `num_illustrations` | integer | Number of illustrations |
 | `material` | keyword | Material (parchment, paper) |
 | `has_transcription` | boolean | Whether transcription data exists |
-| `thumbnail` | keyword (array) | Up to 3 canvas IDs for representative thumbnails |
+| `thumbnail` | object (disabled, array) | Up to 3 thumbnail objects with `iiif_image_id` and `page_num` |
 | `logo` | keyword | Logo image filename |
 
 ### collection_id
@@ -158,7 +174,21 @@ An array of keyword values containing the book's immediate collection ID plus al
 
 ### thumbnail
 
-An array of up to 3 canvas IDs (in `{collection_id}.{image_id_no_ext}` format) representing pages suitable for use as book thumbnails. The logic selects the first 3 non-missing, non-front-matter, non-binding pages from the image list.
+A disabled object array (not searchable) containing up to 3 entries representing pages suitable for use as book thumbnails. Each entry has:
+
+- `iiif_image_id` — the IIIF Image API identifier path (e.g. `rose/Douce195/cropped/Douce195.001r`). Clients can construct a full IIIF Image API URL by appending this to the image server base URL and adding size/rotation/quality parameters.
+- `page_num` — the 0-based page position in the book, usable to construct the IIIF Presentation API canvas URI (`{base_url}/{collection_id}/{book_id}/canvas/{page_num}`).
+
+The logic selects the first 3 non-missing, non-front-matter, non-binding pages from the image list. If the book has cropped images available, the `iiif_image_id` uses the cropped path (e.g. `rose/Douce195/cropped/Douce195.001r`).
+
+Example:
+```json
+"thumbnail": [
+  { "iiif_image_id": "rose/Douce195/cropped/Douce195.001r", "page_num": 2 },
+  { "iiif_image_id": "rose/Douce195/cropped/Douce195.001v", "page_num": 3 },
+  { "iiif_image_id": "rose/Douce195/cropped/Douce195.002r", "page_num": 4 }
+]
+```
 
 ### logo
 
@@ -175,6 +205,7 @@ A filename for the logo image associated with this book:
 | `id` | keyword | Unique canvas ID (`{collection_id}.{image_id_no_ext}`) |
 | `manifest_id` | keyword | Parent manifest ID (`{collection_id}.{book_id}`) |
 | `collection_id` | keyword (array) | All ancestor collection IDs |
+| `iiif_image_id` | keyword | IIIF Image API identifier (e.g. `rose/Douce195/cropped/Douce195.001r`) |
 | `label` | text | Page label (pagination, signature, or image name) |
 | `page_num` | integer | 0-based page position in the book (maps to IIIF canvas URI path) |
 

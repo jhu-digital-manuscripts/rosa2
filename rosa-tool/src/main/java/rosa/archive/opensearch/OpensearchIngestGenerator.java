@@ -292,18 +292,33 @@ public final class OpensearchIngestGenerator {
         boolean hasTranscription = book.getTranscription() != null;
         doc.put("has_transcription", hasTranscription);
 
-        // Thumbnail: first 3 non-missing, non-front-matter, non-binding canvas IDs
+        // Thumbnail: first 3 non-missing, non-front-matter, non-binding pages as objects
+        // Each object has iiif_image_id (for IIIF Image API requests) and page_num (for canvas URI construction)
         ArrayNode thumbnailArray = doc.putArray("thumbnail");
         ImageList imageList = book.getImages();
         if (imageList != null) {
+            // Determine if cropped images are available for this book
+            ImageList croppedImages = book.getCroppedImages();
+            boolean hasCropped = croppedImages != null && !croppedImages.getImages().isEmpty();
+
             int count = 0;
-            for (BookImage img : imageList.getImages()) {
+            List<BookImage> images = imageList.getImages();
+            for (int i = 0; i < images.size(); i++) {
                 if (count >= 3) break;
+                BookImage img = images.get(i);
                 if (img.isMissing()) continue;
                 BookImageLocation loc = img.getLocation();
                 if (loc == BookImageLocation.FRONT_MATTER || loc == BookImageLocation.BINDING) continue;
-                String canvasId = collection.getId() + "." + stripExtension(img.getId());
-                thumbnailArray.add(canvasId);
+
+                // Build iiif_image_id: collection/book/[cropped/]image_id_no_ext
+                String imageIdNoExt = stripExtension(img.getId());
+                String iiifImageId = collection.getId() + "/" + book.getId()
+                        + "/" + (hasCropped ? "cropped/" : "") + imageIdNoExt;
+
+                ObjectNode thumbObj = mapper.createObjectNode();
+                thumbObj.put("iiif_image_id", iiifImageId);
+                thumbObj.put("page_num", i);
+                thumbnailArray.add(thumbObj);
                 count++;
             }
         }
@@ -348,6 +363,14 @@ public final class OpensearchIngestGenerator {
         for (String cid : collectionIds) {
             collIdArray.add(cid);
         }
+
+        // IIIF Image ID: collection/book/[cropped/]image_id_no_ext
+        ImageList croppedImages = book.getCroppedImages();
+        boolean hasCropped = croppedImages != null && !croppedImages.getImages().isEmpty();
+        String imageIdNoExt = stripExtension(image.getId());
+        String iiifImageId = collection.getId() + "/" + book.getId()
+                + "/" + (hasCropped ? "cropped/" : "") + imageIdNoExt;
+        doc.put("iiif_image_id", iiifImageId);
 
         // Label: prefer pagination from AnnotatedPage, then signature, then image name
         String label = image.getName() != null ? image.getName() : image.getId();

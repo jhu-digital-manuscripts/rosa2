@@ -28,7 +28,7 @@ import java.util.List;
  * @param numIllustrations       the number of illustrations in the book
  * @param material               the material of the book (e.g. parchment, paper)
  * @param hasTranscription       whether the book has transcription data available
- * @param thumbnail              up to 3 canvas IDs ({collection_id}.{image_id_no_ext}) for representative thumbnails
+ * @param thumbnail              up to 3 thumbnail objects with iiif_image_id and page_num for representative pages
  * @param logo                   logo image filename for this book
  */
 public record ManifestDoc(
@@ -49,5 +49,14 @@ public record ManifestDoc(
         int numIllustrations,
         String material,
         boolean hasTranscription,
-        List<String> thumbnail,
-        String logo) {}
+        List<ManifestDoc.Thumbnail> thumbnail,
+        String logo) {
+
+    /**
+     * A thumbnail entry representing a page suitable for use as a book thumbnail.
+     *
+     * @param iiifImageId the IIIF Image API identifier (e.g. "rose/Douce195/cropped/Douce195.001r")
+     * @param pageNum     the 0-based page position in the book (maps to IIIF canvas URI)
+     */
+    public record Thumbnail(String iiifImageId, int pageNum) {}
+}

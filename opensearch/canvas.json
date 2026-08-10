@@ -26,6 +26,7 @@
       "id": { "type": "keyword" },
       "manifest_id": { "type": "keyword" },
       "collection_id": { "type": "keyword" },
+      "iiif_image_id": { "type": "keyword" },
       "label": { "type": "text" },
       "page_num": { "type": "integer" },
 

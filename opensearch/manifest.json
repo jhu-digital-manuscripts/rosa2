@@ -51,7 +51,7 @@
       "num_illustrations": { "type": "integer" },
       "material": { "type": "keyword" },
       "has_transcription": { "type": "boolean" },
-      "thumbnail": { "type": "keyword" },
+      "thumbnail": { "type": "object", "enabled": false },
       "logo": { "type": "keyword" }
     }
   }

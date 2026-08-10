@@ -174,6 +174,12 @@ class OpensearchIngestGeneratorTest {
             assertTrue(doc.get("collection_id").isArray());
             assertEquals("testcol", doc.get("collection_id").get(0).asText());
         }
+
+        @Test
+        void iiifImageIdIsPopulated() {
+            ObjectNode doc = generateCanvas();
+            assertEquals("testcol/testbook/testbook.001r", doc.get("iiif_image_id").asText());
+        }
     }
 
     @Nested
@@ -259,8 +265,11 @@ class OpensearchIngestGeneratorTest {
             assertNotNull(thumbnail);
             assertTrue(thumbnail.isArray());
             assertEquals(2, thumbnail.size());
-            assertEquals("testcol.body1", thumbnail.get(0).asText());
-            assertEquals("testcol.body2", thumbnail.get(1).asText());
+            // Each entry is an object with iiif_image_id and page_num
+            assertEquals("testcol/testbook/body1", thumbnail.get(0).get("iiif_image_id").asText());
+            assertEquals(2, thumbnail.get(0).get("page_num").asInt());
+            assertEquals("testcol/testbook/body2", thumbnail.get(1).get("iiif_image_id").asText());
+            assertEquals(3, thumbnail.get(1).get("page_num").asInt());
         }
 
         @Test
