@@ -96,7 +96,7 @@ class OpensearchIngestGeneratorTest {
 
     /** Generate canvas doc with current book/collection/image setup. */
     private ObjectNode generateCanvas() {
-        return generator.generateCanvasDocument(collection, book, image, 1, Collections.emptyMap());
+        return generator.generateCanvasDocument(collection, book, image, 0, Collections.emptyMap());
     }
 
     /** Set up an AnnotatedPage for the test image with a reader. */
@@ -259,8 +259,8 @@ class OpensearchIngestGeneratorTest {
             assertNotNull(thumbnail);
             assertTrue(thumbnail.isArray());
             assertEquals(2, thumbnail.size());
-            assertEquals("testcol.testbook.body1.tif", thumbnail.get(0).asText());
-            assertEquals("testcol.testbook.body2.tif", thumbnail.get(1).asText());
+            assertEquals("testcol.body1", thumbnail.get(0).asText());
+            assertEquals("testcol.body2", thumbnail.get(1).asText());
         }
 
         @Test
@@ -750,7 +750,7 @@ class OpensearchIngestGeneratorTest {
             String xmlFragment = "<div><lg><l>Li jolis temps de mai</l></lg></div>";
             Map<String, String> transcriptionPages = Map.of("001r", xmlFragment);
 
-            ObjectNode doc = generator.generateCanvasDocument(collection, book, image, 1, transcriptionPages);
+            ObjectNode doc = generator.generateCanvasDocument(collection, book, image, 0, transcriptionPages);
             assertTrue(doc.has("transcription.ofr") || doc.has("transcription.en"),
                     "transcription should have some content");
         }
@@ -871,7 +871,7 @@ class OpensearchIngestGeneratorTest {
             tagging.addIllustrationData(illus);
             book.setIllustrationTagging(tagging);
 
-            return generator.generateCanvasDocument(collection, book, image, 1, Collections.emptyMap());
+            return generator.generateCanvasDocument(collection, book, image, 0, Collections.emptyMap());
         }
     }
 }

@@ -8,7 +8,10 @@ import java.util.List;
  * <p>Contains bibliographic metadata and structural information for a digitized
  * manuscript or printed book within the archive.
  *
- * @param id                     the unique document identifier
+ * <p>The manifest ID format is {@code {collection_id}.{book_id}} (e.g. {@code rose.Douce195}).
+ * This provides a globally unique identifier across all collections.
+ *
+ * @param id                     unique document identifier ({collection_id}.{book_id})
  * @param collectionId           all ancestor collection IDs (immediate + parents)
  * @param label                  the human-readable common name of the book
  * @param title                  the book title (combined from common name + BookText titles)
@@ -27,7 +30,7 @@ import java.util.List;
  * @param numIllustrations       the number of illustrations in the book
  * @param material               the material of the book (e.g. parchment, paper)
  * @param hasTranscription       whether the book has transcription data available
- * @param thumbnail              up to 3 canvas IDs for representative page thumbnails
+ * @param thumbnail              up to 3 canvas IDs ({collection_id}.{image_id_no_ext}) for representative thumbnails
  * @param logo                   logo image filename for this book
  */
 public record ManifestDoc(

@@ -8,8 +8,6 @@ rosa2 provides full-text and faceted search over manuscript collection data thro
 2. **Per-collection `service/jhsearch.json` files** — describe the available search fields, categories, and default fields for each collection, enabling clients to build search interfaces dynamically.
 3. **Opensearch backend** — provides the actual search engine with full-text queries, language-specific analysis, and keyword faceting via the Opensearch Bulk API.
 
-The legacy rosa2 system used an embedded Lucene index with a custom JHSearch servlet. The current architecture replaces that with static file generation and an external Opensearch cluster, decoupling the search infrastructure from the IIIF content delivery.
-
 ## IIIF Search Service
 
 The JHSearch service is advertised as a custom IIIF Presentation 3.0 service on collections and manifests. When the `--opensearch-url` option is provided to `generate-iiif-pres`, each generated collection and manifest includes a `service` entry pointing to a per-collection `service/jhsearch.json` file. This file describes the available search fields, facet categories, and the Opensearch endpoint for direct queries.
@@ -123,6 +121,7 @@ All annotation data targeting a canvas is accumulated into the canvas document. 
 ### `manifest` Index
 
 Book-level metadata for full-text search and faceted filtering. Key fields:
+- `id` — unique manifest ID (`{collection_id}.{book_id}`, e.g. `rose.Douce195`)
 - `label` — the human-readable common name of the book
 - `title` — multi-language title field (common name + BookText titles)
 - `collection_id` — array of all ancestor collection IDs
@@ -133,11 +132,11 @@ Book-level metadata for full-text search and faceted filtering. Key fields:
 ### `canvas` Index
 
 Page-level data with all annotations merged in. Key structural fields:
-- `id` — unique canvas ID (`collection.book.image`)
-- `manifest_id` — parent book ID
+- `id` — unique canvas ID (`{collection_id}.{image_id_no_ext}`, e.g. `aor.Ha2.001r`)
+- `manifest_id` — parent manifest ID (`{collection_id}.{book_id}`, e.g. `aor.Ha2`)
 - `collection_id` — array of all ancestor collection IDs
 - `label` — page label (pagination/signature/name)
-- `position` — sequential page number
+- `page_num` — 0-based page position (maps to IIIF canvas URI `/canvas/{page_num}`)
 
 Per-type annotation fields (multi-language text objects):
 - `marginalia`, `underline`, `mark`, `symbol`, `errata`, `numeral`, `drawing`, `emphasis`, `cross_reference`, `calculation`, `graph`, `table`, `transcription`, `illustration`, `translation`, `anchor_text`
@@ -183,45 +182,6 @@ Fields like `mark`, `symbol`, `drawing`, `calculation`, `graph`, and `table` con
 
 If content has a language code not in the supported set, it is routed to the `.en` (English) sub-field.
 
-## Field Mapping From Legacy System
-
-| Legacy JHSearch Field | New Index | New Field | Notes |
-|----------------------|-----------|-----------|-------|
-| `OBJECT_ID` | — | Removed | Replaced by `manifest_id` / canvas `id` |
-| `OBJECT_TYPE` | — | Removed | Implicit from index |
-| `OBJECT_LABEL` | manifest / canvas | `label` | Common name / pagination |
-| `COLLECTION_ID` | both | `collection_id` | Now array of all ancestors |
-| `MANIFEST_ID` | canvas | `manifest_id` | Unchanged |
-| `MANIFEST_LABEL` | manifest | `label` | Common name of book |
-| `IMAGE_NAME` | canvas | `image_name` | Unchanged |
-| `MARGINALIA` | canvas | `marginalia.*` | Per-type multi-lang field |
-| `UNDERLINE` | canvas | `underline.*` | Per-type multi-lang field |
-| `EMPHASIS` | canvas | `emphasis.*` | Per-type multi-lang field |
-| `ERRATA` | canvas | `errata.*` | Per-type multi-lang field |
-| `MARK` | canvas | `mark.keyword` + `mark.*` | Keyword for name, text for content |
-| `SYMBOL` | canvas | `symbol.keyword` + `symbol.*` | Keyword for name, text for content |
-| `NUMERAL` | canvas | `numeral.*` | Per-type multi-lang field |
-| `DRAWING` | canvas | `drawing.keyword` + `drawing.*` | Keyword for type, text for content |
-| `CROSS_REFERENCE` | canvas | `cross_reference.*` | Per-type multi-lang field |
-| `TRANSCRIPTION` | canvas | `transcription.*` | Per-type multi-lang field |
-| `ILLUSTRATION` | canvas | `illustration.*` | Per-type multi-lang field |
-| `CALCULATION` | canvas | `calculation.keyword` + `calculation.*` | Keyword for type, text for content |
-| `GRAPH` | canvas | `graph.keyword` + `graph.*` | Keyword for type, text for content |
-| `TABLE` | canvas | `table.keyword` + `table.*` | Keyword for type, text for content |
-| `LANGUAGE` | canvas | `language` | Keyword array |
-| `MARGINALIA_LANGUAGE` | canvas | `marginalia_language` | Keyword array |
-| `BOOK` | canvas | `books` | Keyword array |
-| `METHOD` | canvas | `method` | Keyword array |
-| `HAND` | canvas | `hand` | Keyword array |
-| `ANNOTATOR` | canvas | `annotator` | Keyword array |
-| `TITLE` | manifest | `title.*` | Multi-lang sub-fields |
-| `PEOPLE` | canvas | `people` | Keyword array |
-| `PLACE` | canvas | `locations` | Renamed |
-| `REPO` | manifest | `repository` | Renamed |
-| `DESCRIPTION` | manifest | `description` | Unchanged |
-| `TEXT` | — | Removed | Search type-specific fields directly |
-| `CHAR_NAME` | canvas | `char_name` | Keyword array |
-
 ## Generating Search Data
 
 ### Step 1: Generate IIIF Presentation Files
@@ -251,8 +211,8 @@ java -jar rosa2.jar generate-opensearch-ingest \
 Produces one `<collection-id>.bulk.json` file per collection. Each file uses the Opensearch Bulk API format — alternating action and document lines (NDJSON):
 
 ```json
-{"index":{"_index":"canvas","_id":"aor.Ha2.Ha2.001r"}}
-{"id":"aor.Ha2.Ha2.001r","manifest_id":"Ha2","collection_id":["aor","top"],"label":"1r","marginalia.la":"verbum","mark.keyword":"plus_sign",...}
+{"index":{"_index":"canvas","_id":"aor.Ha2.001r"}}
+{"id":"aor.Ha2.001r","manifest_id":"aor.Ha2","collection_id":["aor","top"],"label":"1r","page_num":0,"marginalia.la":"verbum","mark.keyword":"plus_sign",...}
 ```
 
 ### Step 3: Create Indexes
@@ -373,14 +333,25 @@ Filter by annotator with aggregations on method and language:
 }
 ```
 
-### Page-Based Lookup
+### Canvas Lookup by ID
 
-Find the canvas data for a specific image:
+Find a specific canvas document:
 
 ```json
 {
   "query": {
-    "term": { "image_name": "Ha2.003r" }
+    "term": { "id": "aor.Ha2.003r" }
   }
+}
+```
+
+### Find All Canvases for a Manifest
+
+```json
+{
+  "query": {
+    "term": { "manifest_id": "aor.Ha2" }
+  },
+  "sort": [{ "page_num": "asc" }]
 }
 ```

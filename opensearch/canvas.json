@@ -27,8 +27,7 @@
       "manifest_id": { "type": "keyword" },
       "collection_id": { "type": "keyword" },
       "label": { "type": "text" },
-      "image_name": { "type": "keyword" },
-      "position": { "type": "integer" },
+      "page_num": { "type": "integer" },
 
       "marginalia": {
         "type": "object",

@@ -1235,7 +1235,7 @@ public final class IIIFPresentationGenerator {
     private void addJHSearchService(ObjectNode node, String baseUrl, String collectionId) {
         ArrayNode serviceArray = mapper.createArrayNode();
         ObjectNode service = mapper.createObjectNode();
-        service.put("id", buildId(baseUrl, collectionId + "/service/jhsearch"));
+        service.put("id", buildId(baseUrl, collectionId + "/service/jhsearch.json"));
         service.put("type", "JHSearchService2");
         service.put("profile", "https://github.com/jhu-digital-manuscripts/rosa2/doc/search.md");
         serviceArray.add(service);

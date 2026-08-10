@@ -68,8 +68,6 @@ A standard deployment workflow for generating and publishing content:
      -H "Content-Type: application/json" -d @opensearch/manifest.json
    curl -X PUT "https://search.example.org:9200/canvas" \
      -H "Content-Type: application/json" -d @opensearch/canvas.json
-   curl -X PUT "https://search.example.org:9200/annotation" \
-     -H "Content-Type: application/json" -d @opensearch/annotation.json
    ```
 
 5. **Generate and ingest bulk data**:

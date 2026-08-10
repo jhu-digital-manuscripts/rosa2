@@ -9,6 +9,10 @@ import java.util.Map;
  * <p>Each canvas corresponds to one page image within a book. All annotations targeting
  * this canvas are merged into the document with per-type independently searchable fields.
  *
+ * <p>The canvas ID format is {@code {collection_id}.{image_id_without_extension}}. Since
+ * the archive image ID already contains the manifest/book ID (e.g. {@code Douce195.001r.tif}),
+ * only the collection prefix is needed to form a globally unique ID.
+ *
  * <p>Multi-language text fields are represented as {@code Map<String, String>} where keys
  * are language codes (en, fr, la, it, el, es, de, ofr) and values are the text content.
  * Content from multiple annotations of the same type is concatenated.
@@ -17,12 +21,11 @@ import java.util.Map;
  * {@code graph}, and {@code table} also have a {@code keyword} entry in their map for
  * enumerated type/name values (searched via e.g. {@code mark.keyword}).
  *
- * @param id                  unique canvas ID (collection.book.image)
- * @param manifestId          parent manifest/book ID
+ * @param id                  unique canvas ID ({collection_id}.{image_id_no_ext}, e.g. rose.Douce195.001r)
+ * @param manifestId          parent manifest ID ({collection_id}.{book_id}, e.g. rose.Douce195)
  * @param collectionId        all ancestor collection IDs
  * @param label               page label (pagination, signature, or image name)
- * @param imageName           short image identifier
- * @param position            1-based page position in the book
+ * @param pageNum             0-based page position in the book (maps to IIIF canvas URI /canvas/{pageNum})
  * @param marginalia          marginalia text routed by language
  * @param underline           underline referenced text routed by language
  * @param mark                mark names (keyword) and referenced text routed by language
@@ -56,8 +59,7 @@ public record CanvasDoc(
         String manifestId,
         List<String> collectionId,
         String label,
-        String imageName,
-        int position,
+        int pageNum,
         Map<String, String> marginalia,
         Map<String, String> underline,
         Map<String, String> mark,

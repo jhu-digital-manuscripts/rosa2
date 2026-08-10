@@ -41,6 +41,42 @@ curl -X POST "https://<host>:9200/_bulk" \
   --data-binary @output/aor.bulk.json
 ```
 
+## Document ID Formats
+
+### Manifest ID
+
+Format: `{collection_id}.{book_id}`
+
+The manifest document ID combines the collection and book archive IDs with a dot separator. This provides a globally unique identifier across all collections.
+
+Examples:
+- `rose.Douce195` — book Douce195 in the rose collection
+- `aor.Ha2` — book Ha2 in the aor collection
+
+### Canvas ID
+
+Format: `{collection_id}.{image_id_without_extension}`
+
+The canvas document ID combines the collection ID with the archive image ID (minus the file extension). Since the archive image ID already contains the book ID (e.g. `Douce195.001r.tif` belongs to book `Douce195`), only the collection prefix is needed.
+
+Examples:
+- `rose.Douce195.001r` — page 001r of Douce195 in the rose collection (from image `Douce195.001r.tif`)
+- `aor.Ha2.003r` — page 003r of Ha2 in the aor collection (from image `Ha2.003r.tif`)
+
+### Constructing IIIF Canvas URIs from Search Results
+
+A client receiving a canvas search result can construct the IIIF Presentation API canvas URI using the `manifest_id` and `page_num` fields:
+
+```
+{base_url}/{collection_id}/{book_id}/canvas/{page_num}
+```
+
+Split `manifest_id` on the first `.` to extract `collection_id` and `book_id`. For example, given `manifest_id: "rose.Douce195"` and `page_num: 2`:
+
+```
+https://iiif.example.org/rose/Douce195/canvas/2
+```
+
 ## Multi-Language Field Structure
 
 Textual content is routed into language-specific sub-fields so that the correct analyzer (stemming, stop words) is applied at index time.
@@ -93,7 +129,7 @@ Fields using this pattern: `mark`, `symbol`, `drawing`, `calculation`, `graph`, 
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `id` | keyword | Unique manifest/book ID |
+| `id` | keyword | Unique manifest ID (`{collection_id}.{book_id}`) |
 | `collection_id` | keyword (array) | All ancestor collection IDs |
 | `label` | text | Human-readable common name of the book |
 | `title` | text (multi-lang) | Combined title: common name + BookText titles |
@@ -122,7 +158,7 @@ An array of keyword values containing the book's immediate collection ID plus al
 
 ### thumbnail
 
-An array of up to 3 canvas IDs representing pages suitable for use as book thumbnails. The logic selects the first 3 non-missing, non-front-matter, non-binding pages from the image list.
+An array of up to 3 canvas IDs (in `{collection_id}.{image_id_no_ext}` format) representing pages suitable for use as book thumbnails. The logic selects the first 3 non-missing, non-front-matter, non-binding pages from the image list.
 
 ### logo
 
@@ -136,12 +172,11 @@ A filename for the logo image associated with this book:
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `id` | keyword | Unique canvas ID (`collection.book.image`) |
-| `manifest_id` | keyword | Parent manifest/book ID |
+| `id` | keyword | Unique canvas ID (`{collection_id}.{image_id_no_ext}`) |
+| `manifest_id` | keyword | Parent manifest ID (`{collection_id}.{book_id}`) |
 | `collection_id` | keyword (array) | All ancestor collection IDs |
 | `label` | text | Page label (pagination, signature, or image name) |
-| `image_name` | keyword | Short image identifier |
-| `position` | integer | 1-based page position in the book |
+| `page_num` | integer | 0-based page position in the book (maps to IIIF canvas URI path) |
 
 ### Annotation Type Fields (multi-language text objects)
 
@@ -187,8 +222,8 @@ Each field contains accumulated text from all annotations of that type on the pa
 Generated bulk files use the Opensearch Bulk API format — alternating action and document lines (newline-delimited JSON):
 
 ```json
-{"index":{"_index":"canvas","_id":"aor.Ha2.Ha2.001r"}}
-{"id":"aor.Ha2.Ha2.001r","manifest_id":"Ha2","collection_id":["aor","top"],"label":"1r","marginalia.la":"verbum","mark.keyword":"plus_sign",...}
+{"index":{"_index":"canvas","_id":"aor.Ha2.001r"}}
+{"id":"aor.Ha2.001r","manifest_id":"aor.Ha2","collection_id":["aor","top"],"label":"1r","page_num":0,"marginalia.la":"verbum","mark.keyword":"plus_sign",...}
 ```
 
 One bulk file is produced per collection, named `<collection-id>.bulk.json`.

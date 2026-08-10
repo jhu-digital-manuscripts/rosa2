@@ -105,7 +105,8 @@ public final class OpensearchIngestGenerator {
 
                     // Manifest document
                     ObjectNode manifestDoc = generateManifestDocument(collection, book);
-                    writeActionDocumentPair(writer, "manifest", book.getId(), manifestDoc);
+                    String manifestId = collection.getId() + "." + book.getId();
+                    writeActionDocumentPair(writer, "manifest", manifestId, manifestDoc);
 
                     // Process each image (canvas) with merged annotations
                     ImageList imageList = book.getImages();
@@ -123,12 +124,11 @@ public final class OpensearchIngestGenerator {
                     List<BookImage> images = imageList.getImages();
                     for (int i = 0; i < images.size(); i++) {
                         BookImage image = images.get(i);
-                        int position = i + 1;
 
                         // Generate canvas document with all annotations merged in
                         ObjectNode canvasDoc = generateCanvasDocument(
-                                collection, book, image, position, transcriptionPages);
-                        String canvasId = collection.getId() + "." + book.getId() + "." + image.getId();
+                                collection, book, image, i, transcriptionPages);
+                        String canvasId = collection.getId() + "." + stripExtension(image.getId());
                         writeActionDocumentPair(writer, "canvas", canvasId, canvasDoc);
                     }
                 }
@@ -195,7 +195,7 @@ public final class OpensearchIngestGenerator {
     public ObjectNode generateManifestDocument(BookCollection collection, Book book) {
         ObjectNode doc = mapper.createObjectNode();
 
-        doc.put("id", book.getId());
+        doc.put("id", collection.getId() + "." + book.getId());
 
         // Collection IDs: immediate + all ancestors
         List<String> collectionIds = getAncestorCollectionIds(collection);
@@ -307,7 +307,7 @@ public final class OpensearchIngestGenerator {
                 if (img.isMissing()) continue;
                 BookImageLocation loc = img.getLocation();
                 if (loc == BookImageLocation.FRONT_MATTER || loc == BookImageLocation.BINDING) continue;
-                String canvasId = collection.getId() + "." + book.getId() + "." + img.getId();
+                String canvasId = collection.getId() + "." + stripExtension(img.getId());
                 thumbnailArray.add(canvasId);
                 count++;
             }
@@ -339,13 +339,13 @@ public final class OpensearchIngestGenerator {
      * All annotations targeting this canvas are accumulated into per-type fields.
      */
     public ObjectNode generateCanvasDocument(BookCollection collection, Book book,
-                                              BookImage image, int position,
+                                              BookImage image, int pageNum,
                                               Map<String, String> transcriptionPages) {
         ObjectNode doc = mapper.createObjectNode();
 
-        String canvasId = collection.getId() + "." + book.getId() + "." + image.getId();
+        String canvasId = collection.getId() + "." + stripExtension(image.getId());
         doc.put("id", canvasId);
-        doc.put("manifest_id", book.getId());
+        doc.put("manifest_id", collection.getId() + "." + book.getId());
 
         // Collection IDs: immediate + all ancestors
         List<String> collectionIds = getAncestorCollectionIds(collection);
@@ -365,8 +365,7 @@ public final class OpensearchIngestGenerator {
             }
         }
         doc.put("label", label);
-        doc.put("image_name", image.getId());
-        doc.put("position", position);
+        doc.put("page_num", pageNum);
 
         // ===== Merge all annotations into this canvas document =====
 
@@ -1081,6 +1080,17 @@ public final class OpensearchIngestGenerator {
                 }
             }
         }
+    }
+
+    /**
+     * Strips the file extension from a filename.
+     * Uses lastIndexOf('.') so multi-dot filenames (e.g. "Ha2.binding.frontcover.tif")
+     * are handled correctly → "Ha2.binding.frontcover".
+     */
+    private static String stripExtension(String filename) {
+        if (filename == null) return null;
+        int dot = filename.lastIndexOf('.');
+        return (dot > 0) ? filename.substring(0, dot) : filename;
     }
 
     /**

@@ -52,6 +52,8 @@ One canvas per page image. Each canvas has:
 - A **thumbnail** reference
 - `viewingHint: "non-paged"` for binding or miscellaneous images
 
+Canvas URIs use a 0-based index as the path segment: `{base-url}/{collection-id}/{book-id}/canvas/{i}`. This index corresponds directly to the `page_num` field in the Opensearch canvas index, allowing clients to construct canvas URIs from search results using `manifest_id` and `page_num`.
+
 ### Annotation Pages
 
 Annotation pages contain textual and descriptive annotations. The generator produces annotation pages for:
