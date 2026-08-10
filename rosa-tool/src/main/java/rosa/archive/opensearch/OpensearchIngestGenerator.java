@@ -283,11 +283,6 @@ public final class OpensearchIngestGenerator {
         String currentLocation = biblio != null ? biblio.getCurrentLocation() : null;
         doc.put("current_location", currentLocation != null ? currentLocation : "");
 
-        int yearStart = metadata != null ? metadata.getYearStart() : -1;
-        int yearEnd = metadata != null ? metadata.getYearEnd() : -1;
-        doc.put("year_start", yearStart >= 0 ? yearStart : 0);
-        doc.put("year_end", yearEnd >= 0 ? yearEnd : 0);
-
         int numIllustrations = metadata != null ? metadata.getNumberOfIllustrations() : 0;
         doc.put("num_illustrations", numIllustrations >= 0 ? numIllustrations : 0);
 

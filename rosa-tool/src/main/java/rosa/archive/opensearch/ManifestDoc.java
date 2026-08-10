@@ -25,8 +25,6 @@ import java.util.List;
  * @param authors                the authors associated with the book (including BookText authors)
  * @param type                   the type of the book (e.g. manuscript, print)
  * @param currentLocation        the current physical location of the book
- * @param yearStart              the start year of the date range
- * @param yearEnd                the end year of the date range
  * @param numIllustrations       the number of illustrations in the book
  * @param material               the material of the book (e.g. parchment, paper)
  * @param hasTranscription       whether the book has transcription data available
@@ -48,8 +46,6 @@ public record ManifestDoc(
         List<String> authors,
         String type,
         String currentLocation,
-        int yearStart,
-        int yearEnd,
         int numIllustrations,
         String material,
         boolean hasTranscription,
