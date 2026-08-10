@@ -1,0 +1,473 @@
+/**
+ * JHSearch plugin styles
+ */
+
+/* Main container */
+.jhsearch-view {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.jhsearch-sidebar {
+  width: 320px;
+  min-width: 280px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Collection selector */
+.jhsearch-collection-selector {
+  margin-bottom: 16px;
+}
+
+.jhsearch-collection-selector .collection-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.jhsearch-collection-selector .collection-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Search controls */
+.jhsearch-search-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.jhsearch-simple-search {
+  width: 100%;
+}
+
+/* Advanced search */
+.jhsearch-advanced-search {
+  margin-top: 8px;
+}
+
+.jhsearch-advanced-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.jhsearch-advanced-row .operator-select {
+  width: 70px;
+  min-width: 70px;
+}
+
+.jhsearch-advanced-row .field-select {
+  width: 120px;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.jhsearch-advanced-row .value-input {
+  flex: 1;
+  min-width: 100px;
+}
+
+.jhsearch-advanced-row .remove-button {
+  flex-shrink: 0;
+}
+
+.jhsearch-advanced-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+/* Field help tooltip */
+.jhsearch-field-help {
+  margin-left: 4px;
+  font-size: 14px;
+  cursor: help;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* Facets */
+.jhsearch-facets {
+  margin-top: 16px;
+}
+
+.jhsearch-facet-category {
+  margin-bottom: 8px;
+}
+
+.jhsearch-facet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.jhsearch-facet-values {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 8px;
+}
+
+.jhsearch-facet-item {
+  display: flex;
+  align-items: center;
+}
+
+.jhsearch-facet-item .facet-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.jhsearch-facet-item .facet-count {
+  margin-left: 8px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.875rem;
+}
+
+.jhsearch-selected-facets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* Sort order */
+.jhsearch-sort-order {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.jhsearch-sort-order .sort-field {
+  flex: 1;
+  min-width: 120px;
+}
+
+.jhsearch-sort-order .sort-direction {
+  width: 100px;
+}
+
+/* Results area */
+.jhsearch-results {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.jhsearch-results-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.jhsearch-results-count {
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.875rem;
+}
+
+/* Loading and empty states */
+.jhsearch-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+}
+
+.jhsearch-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: center;
+}
+
+.jhsearch-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+/* Result cards */
+.jhsearch-result-card {
+  display: flex;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.jhsearch-result-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Manifest result */
+.jhsearch-manifest-result {
+  flex-direction: column;
+}
+
+.jhsearch-manifest-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.jhsearch-manifest-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.jhsearch-manifest-title {
+  flex: 1;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.jhsearch-manifest-metadata {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.jhsearch-manifest-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.jhsearch-manifest-thumbnail {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+
+/* Canvas result */
+.jhsearch-canvas-result {
+  flex-direction: row;
+  gap: 12px;
+}
+
+.jhsearch-canvas-thumbnail {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+}
+
+.jhsearch-canvas-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.jhsearch-canvas-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.jhsearch-canvas-manifest {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jhsearch-canvas-highlight {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 4px;
+}
+
+/* Highlighted text */
+.jhsearch-highlight em,
+.jhsearch-highlight mark {
+  background-color: #fff59d;
+  font-style: normal;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* Pagination */
+.jhsearch-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  margin-top: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.jhsearch-pagination-info {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jhsearch-page-size-select {
+  width: 80px;
+  margin-left: 8px;
+}
+
+/* Error display */
+.jhsearch-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  text-align: center;
+  color: #d32f2f;
+}
+
+.jhsearch-error-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.jhsearch-error-title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.jhsearch-error-message {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 400px;
+}
+
+.jhsearch-error-retry {
+  margin-top: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .jhsearch-view {
+    flex-direction: column;
+  }
+
+  .jhsearch-sidebar {
+    width: 100%;
+    max-width: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    max-height: 40vh;
+  }
+
+  .jhsearch-results {
+    min-height: 60vh;
+  }
+
+  .jhsearch-pagination {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+/* Dark mode support (when parent has dark theme) */
+.mirador-theme-dark .jhsearch-sidebar,
+[data-theme="dark"] .jhsearch-sidebar {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.mirador-theme-dark .jhsearch-result-card,
+[data-theme="dark"] .jhsearch-result-card {
+  border-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.mirador-theme-dark .jhsearch-result-card:hover,
+[data-theme="dark"] .jhsearch-result-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mirador-theme-dark .jhsearch-empty,
+.mirador-theme-dark .jhsearch-results-count,
+[data-theme="dark"] .jhsearch-empty,
+[data-theme="dark"] .jhsearch-results-count {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.mirador-theme-dark .jhsearch-highlight em,
+.mirador-theme-dark .jhsearch-highlight mark,
+[data-theme="dark"] .jhsearch-highlight em,
+[data-theme="dark"] .jhsearch-highlight mark {
+  background-color: #f9a825;
+  color: #000;
+}
+
+.mirador-theme-dark .jhsearch-manifest-thumbnail,
+.mirador-theme-dark .jhsearch-canvas-thumbnail,
+[data-theme="dark"] .jhsearch-manifest-thumbnail,
+[data-theme="dark"] .jhsearch-canvas-thumbnail {
+  background-color: #424242;
+}
+
+.mirador-theme-dark .jhsearch-pagination,
+[data-theme="dark"] .jhsearch-pagination {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Accessibility - focus states */
+.jhsearch-result-card:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+.jhsearch-result-card:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.jhsearch-result-card:focus-visible {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .jhsearch-result-card {
+    transition: none;
+  }
+}
