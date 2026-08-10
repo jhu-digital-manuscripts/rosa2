@@ -25,6 +25,7 @@
     "properties": {
       "id": { "type": "keyword" },
       "collection_id": { "type": "keyword" },
+      "label": { "type": "text" },
       "title": {
         "type": "text",
         "fields": {
@@ -37,7 +38,6 @@
           "es": { "type": "text", "analyzer": "spanish" }
         }
       },
-      "titles": { "type": "text", "analyzer": "english" },
       "repository": { "type": "text" },
       "shelfmark": { "type": "text" },
       "date": { "type": "text" },
@@ -48,12 +48,13 @@
       "authors": { "type": "keyword" },
       "type": { "type": "keyword" },
       "current_location": { "type": "keyword" },
-      "websites": { "type": "keyword" },
       "year_start": { "type": "integer" },
       "year_end": { "type": "integer" },
-      "number_of_illustrations": { "type": "integer" },
+      "num_illustrations": { "type": "integer" },
       "material": { "type": "keyword" },
-      "has_transcription": { "type": "boolean" }
+      "has_transcription": { "type": "boolean" },
+      "thumbnail": { "type": "keyword" },
+      "logo": { "type": "keyword" }
     }
   }
 }

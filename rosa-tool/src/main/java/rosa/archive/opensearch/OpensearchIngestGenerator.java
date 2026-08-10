@@ -8,6 +8,7 @@ import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
+import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.BookText;
@@ -48,8 +49,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
@@ -57,8 +60,9 @@ import java.util.stream.Collectors;
  * Generates Opensearch bulk ingest NDJSON files from archive data.
  *
  * <p>Produces files in the Opensearch Bulk API format (alternating action and document lines)
- * with one output file per collection. Documents are generated for the {@code manifest},
- * {@code canvas}, and {@code annotation} indexes.
+ * with one output file per collection. Documents are generated for the {@code manifest}
+ * and {@code canvas} indexes. All annotation data targeting a canvas is merged into the
+ * canvas document with per-type independently searchable fields.
  */
 public final class OpensearchIngestGenerator {
 
@@ -103,7 +107,7 @@ public final class OpensearchIngestGenerator {
                     ObjectNode manifestDoc = generateManifestDocument(collection, book);
                     writeActionDocumentPair(writer, "manifest", book.getId(), manifestDoc);
 
-                    // Process each image (canvas)
+                    // Process each image (canvas) with merged annotations
                     ImageList imageList = book.getImages();
                     if (imageList == null) {
                         continue;
@@ -121,47 +125,11 @@ public final class OpensearchIngestGenerator {
                         BookImage image = images.get(i);
                         int position = i + 1;
 
-                        // Canvas document
-                        ObjectNode canvasDoc = generateCanvasDocument(collection, book, image, position);
+                        // Generate canvas document with all annotations merged in
+                        ObjectNode canvasDoc = generateCanvasDocument(
+                                collection, book, image, position, transcriptionPages);
                         String canvasId = collection.getId() + "." + book.getId() + "." + image.getId();
                         writeActionDocumentPair(writer, "canvas", canvasId, canvasDoc);
-
-                        // AoR annotations for this page
-                        AnnotatedPage annotatedPage = book.getAnnotationPage(image.getId());
-                        if (annotatedPage != null) {
-                            String reader = annotatedPage.getReader();
-                            for (Annotation annotation : annotatedPage.getAnnotations()) {
-                                ObjectNode annotationDoc = generateAnnotationDocument(
-                                        collection, book, image, annotation, reader);
-                                String annotDocId = annotationDoc.has("id") ? annotationDoc.get("id").asText() : "";
-                                writeActionDocumentPair(writer, "annotation", annotDocId, annotationDoc);
-                            }
-                        }
-
-                        // Transcription for this page
-                        if (!transcriptionPages.isEmpty()) {
-                            String normalizedPage = TranscriptionSplitter.normalizePageName(image.getName());
-                            String pageFragment = transcriptionPages.get(normalizedPage);
-                            if (pageFragment != null && !pageFragment.isBlank()) {
-                                ObjectNode transcriptionDoc = generateTranscriptionDocument(
-                                        collection, book, image, pageFragment);
-                                String transId = transcriptionDoc.has("id") ? transcriptionDoc.get("id").asText() : "";
-                                writeActionDocumentPair(writer, "annotation", transId, transcriptionDoc);
-                            }
-                        }
-
-                        // Illustration tagging for this page
-                        IllustrationTagging illustrationTagging = book.getIllustrationTagging();
-                        if (illustrationTagging != null) {
-                            List<Integer> illustrationIndices = illustrationTagging.findImageIndices(book, image.getId());
-                            for (int idx : illustrationIndices) {
-                                Illustration illustration = illustrationTagging.getIllustrationData(idx);
-                                ObjectNode illustrationDoc = generateIllustrationDocument(
-                                        collection, book, image, illustration);
-                                String illusId = illustrationDoc.has("id") ? illustrationDoc.get("id").asText() : "";
-                                writeActionDocumentPair(writer, "annotation", illusId, illustrationDoc);
-                            }
-                        }
                     }
                 }
             }
@@ -181,6 +149,44 @@ public final class OpensearchIngestGenerator {
         writer.newLine();
     }
 
+    // ========== Collection ID helpers ==========
+
+    /**
+     * Computes all ancestor collection IDs for a given collection.
+     * Returns a list containing the collection itself plus all parent collections.
+     */
+    private List<String> getAncestorCollectionIds(BookCollection collection, ArchiveStore store) {
+        List<String> ids = new ArrayList<>();
+        ids.add(collection.getId());
+        String[] parents = collection.getParentCollections();
+        if (parents != null) {
+            for (String parent : parents) {
+                if (parent != null && !parent.isBlank() && !ids.contains(parent)) {
+                    ids.add(parent);
+                }
+            }
+        }
+        return ids;
+    }
+
+    /**
+     * Computes ancestor collection IDs using just the collection (no store needed for recursion
+     * since parent IDs are already available on the collection object).
+     */
+    private List<String> getAncestorCollectionIds(BookCollection collection) {
+        List<String> ids = new ArrayList<>();
+        ids.add(collection.getId());
+        String[] parents = collection.getParentCollections();
+        if (parents != null) {
+            for (String parent : parents) {
+                if (parent != null && !parent.isBlank() && !ids.contains(parent)) {
+                    ids.add(parent);
+                }
+            }
+        }
+        return ids;
+    }
+
     // ========== Manifest ==========
 
     /**
@@ -190,29 +196,40 @@ public final class OpensearchIngestGenerator {
         ObjectNode doc = mapper.createObjectNode();
 
         doc.put("id", book.getId());
-        doc.put("collection_id", collection.getId());
+
+        // Collection IDs: immediate + all ancestors
+        List<String> collectionIds = getAncestorCollectionIds(collection);
+        ArrayNode collIdArray = doc.putArray("collection_id");
+        for (String cid : collectionIds) {
+            collIdArray.add(cid);
+        }
 
         BookMetadata metadata = book.getBookMetadata();
         BiblioData biblio = book.getBiblioData("en");
 
-        String title = null;
+        // Label: the common name of the book
+        String label = null;
         if (biblio != null) {
-            title = biblio.getCommonName() != null ? biblio.getCommonName() : biblio.getTitle();
+            label = biblio.getCommonName();
         }
-        doc.put("title", title != null ? title : book.getId());
+        doc.put("label", label != null ? label : book.getId());
 
-        // Titles array: common name + BookText titles
-        ArrayNode titlesArray = doc.putArray("titles");
-        if (title != null && !title.isBlank()) {
-            titlesArray.add(title);
+        // Title: combine common name + BookText titles
+        StringBuilder titleBuilder = new StringBuilder();
+        if (label != null && !label.isBlank()) {
+            titleBuilder.append(label);
         }
         if (metadata != null && metadata.getBookTexts() != null) {
             for (BookText bt : metadata.getBookTexts()) {
                 if (bt.getTitle() != null && !bt.getTitle().isBlank()) {
-                    titlesArray.add(bt.getTitle());
+                    if (!titleBuilder.isEmpty()) {
+                        titleBuilder.append(" ");
+                    }
+                    titleBuilder.append(bt.getTitle());
                 }
             }
         }
+        doc.put("title", !titleBuilder.isEmpty() ? titleBuilder.toString() : book.getId());
 
         String repository = biblio != null ? biblio.getRepository() : null;
         doc.put("repository", repository != null ? repository : "");
@@ -237,7 +254,6 @@ public final class OpensearchIngestGenerator {
             }
         }
 
-        // Description: BookDescription doesn't exist in new code, use empty string
         doc.put("description", "");
 
         // Authors: from BiblioData + BookText authors
@@ -267,22 +283,13 @@ public final class OpensearchIngestGenerator {
         String currentLocation = biblio != null ? biblio.getCurrentLocation() : null;
         doc.put("current_location", currentLocation != null ? currentLocation : "");
 
-        ArrayNode websitesArray = doc.putArray("websites");
-        if (biblio != null && biblio.getWebsites() != null) {
-            for (String website : biblio.getWebsites()) {
-                if (website != null && !website.isBlank()) {
-                    websitesArray.add(website);
-                }
-            }
-        }
-
         int yearStart = metadata != null ? metadata.getYearStart() : -1;
         int yearEnd = metadata != null ? metadata.getYearEnd() : -1;
         doc.put("year_start", yearStart >= 0 ? yearStart : 0);
         doc.put("year_end", yearEnd >= 0 ? yearEnd : 0);
 
         int numIllustrations = metadata != null ? metadata.getNumberOfIllustrations() : 0;
-        doc.put("number_of_illustrations", numIllustrations >= 0 ? numIllustrations : 0);
+        doc.put("num_illustrations", numIllustrations >= 0 ? numIllustrations : 0);
 
         String material = biblio != null ? biblio.getMaterial() : null;
         doc.put("material", material != null ? material : "");
@@ -290,21 +297,62 @@ public final class OpensearchIngestGenerator {
         boolean hasTranscription = book.getTranscription() != null;
         doc.put("has_transcription", hasTranscription);
 
+        // Thumbnail: first 3 non-missing, non-front-matter, non-binding canvas IDs
+        ArrayNode thumbnailArray = doc.putArray("thumbnail");
+        ImageList imageList = book.getImages();
+        if (imageList != null) {
+            int count = 0;
+            for (BookImage img : imageList.getImages()) {
+                if (count >= 3) break;
+                if (img.isMissing()) continue;
+                BookImageLocation loc = img.getLocation();
+                if (loc == BookImageLocation.FRONT_MATTER || loc == BookImageLocation.BINDING) continue;
+                String canvasId = collection.getId() + "." + book.getId() + "." + img.getId();
+                thumbnailArray.add(canvasId);
+                count++;
+            }
+        }
+
+        // Logo
+        String logo;
+        if ("aor".equals(collection.getId())) {
+            // AOR: first reader name, lowercased, spaces to underscores, + .jpg
+            logo = collection.getId() + ".jpg"; // default fallback
+            if (biblio != null && biblio.getReaders() != null && biblio.getReaders().length > 0) {
+                String readerName = biblio.getReaders()[0].getName();
+                if (readerName != null && !readerName.isBlank()) {
+                    logo = readerName.toLowerCase().replace(' ', '_') + ".jpg";
+                }
+            }
+        } else {
+            logo = collection.getId() + ".jpg";
+        }
+        doc.put("logo", logo);
+
         return doc;
     }
 
     // ========== Canvas ==========
 
     /**
-     * Generates a canvas document for the {@code canvas} index.
-     * Uses pagination/signature from AnnotatedPage for the label when available.
+     * Generates a canvas document for the {@code canvas} index with all annotations merged in.
+     * All annotations targeting this canvas are accumulated into per-type fields.
      */
-    public ObjectNode generateCanvasDocument(BookCollection collection, Book book, BookImage image, int position) {
+    public ObjectNode generateCanvasDocument(BookCollection collection, Book book,
+                                              BookImage image, int position,
+                                              Map<String, String> transcriptionPages) {
         ObjectNode doc = mapper.createObjectNode();
 
-        doc.put("id", collection.getId() + "." + book.getId() + "." + image.getId());
+        String canvasId = collection.getId() + "." + book.getId() + "." + image.getId();
+        doc.put("id", canvasId);
         doc.put("manifest_id", book.getId());
-        doc.put("collection_id", collection.getId());
+
+        // Collection IDs: immediate + all ancestors
+        List<String> collectionIds = getAncestorCollectionIds(collection);
+        ArrayNode collIdArray = doc.putArray("collection_id");
+        for (String cid : collectionIds) {
+            collIdArray.add(cid);
+        }
 
         // Label: prefer pagination from AnnotatedPage, then signature, then image name
         String label = image.getName() != null ? image.getName() : image.getId();
@@ -320,277 +368,164 @@ public final class OpensearchIngestGenerator {
         doc.put("image_name", image.getId());
         doc.put("position", position);
 
-        return doc;
-    }
+        // ===== Merge all annotations into this canvas document =====
 
-    // ========== Annotation (dispatcher) ==========
-
-    /**
-     * Generates an annotation document for the {@code annotation} index.
-     */
-    public ObjectNode generateAnnotationDocument(BookCollection collection, Book book, BookImage image,
-                                                  Annotation annotation, String reader) {
-        ObjectNode doc = mapper.createObjectNode();
-
-        String annotationId = annotation.getId() != null ? annotation.getId() : "";
-        doc.put("id", collection.getId() + "." + book.getId() + "." + image.getId() + "." + annotationId);
-        doc.put("canvas_id", collection.getId() + "." + book.getId() + "." + image.getId());
-        doc.put("manifest_id", book.getId());
-        doc.put("collection_id", collection.getId());
-        doc.put("image_name", image.getId());
-
-        if (reader != null && !reader.isBlank()) {
-            doc.put("annotator", reader);
+        // Determine default language: prefer the text language from the page's underlines
+        // (which carry the printed book's text language), then fall back to BookText language,
+        // then to "en".
+        BookMetadata metadata2 = book.getBookMetadata();
+        BiblioData biblio = book.getBiblioData("en");
+        String defaultLang = "en";
+        if (metadata2 != null && metadata2.getBookTexts() != null && !metadata2.getBookTexts().isEmpty()) {
+            String textLang = metadata2.getBookTexts().get(0).getLanguage();
+            if (textLang != null && !textLang.isBlank()) {
+                defaultLang = textLang.toLowerCase();
+            }
         }
-
-        String language = annotation.getLanguage();
-        if (language != null && !language.isBlank()) {
-            doc.put("language", language);
-        }
-
-        switch (annotation) {
-            case Marginalia m -> generateMarginaliaFields(doc, m, collection);
-            case Underline u -> generateUnderlineFields(doc, u);
-            case Mark mk -> generateMarkFields(doc, mk);
-            case Symbol sym -> generateSymbolFields(doc, sym);
-            case Drawing d -> generateDrawingFields(doc, d, collection);
-            case Errata e -> generateErrataFields(doc, e);
-            case Numeral n -> generateNumeralFields(doc, n);
-            case Calculation c -> generateCalculationFields(doc, c);
-            case Graph g -> generateGraphFields(doc, g, collection);
-            case Table t -> generateTableFields(doc, t, collection);
-            default -> {
-                doc.put("type", annotation.getClass().getSimpleName().toLowerCase());
-                if (annotation.getReferencedText() != null && !annotation.getReferencedText().isBlank()) {
-                    String lang = language != null ? language : "en";
-                    LanguageFieldRouter.routeField(doc, "text", lang,
-                            stripTranscriberMarks(annotation.getReferencedText()));
-                }
+        // Override with underline language from the page if available, since underlines
+        // explicitly carry the language of the printed text
+        if (ap != null && !ap.getUnderlines().isEmpty()) {
+            String ulLang = ap.getUnderlines().get(0).getLanguage();
+            if (ulLang != null && !ulLang.isBlank()) {
+                defaultLang = ulLang.toLowerCase();
             }
         }
 
-        return doc;
-    }
+        // Keyword array accumulators
+        Set<String> allPeople = new HashSet<>();
+        Set<String> allBooks = new HashSet<>();
+        Set<String> allLocations = new HashSet<>();
+        Set<String> allSymbols = new HashSet<>();
+        Set<String> allMethods = new HashSet<>();
+        Set<String> allHands = new HashSet<>();
+        Set<String> allAnnotators = new HashSet<>();
+        Set<String> allLanguages = new HashSet<>();
+        Set<String> allMargLanguages = new HashSet<>();
+        Set<String> allTopics = new HashSet<>();
+        Set<String> allCharNames = new HashSet<>();
 
-    // ========== Transcription ==========
-
-    /**
-     * Generates a transcription annotation document. Parses the XML fragment to extract
-     * text content and routes it to appropriate language sub-fields.
-     */
-    public ObjectNode generateTranscriptionDocument(BookCollection collection, Book book,
-                                                     BookImage image, String content) {
-        ObjectNode doc = mapper.createObjectNode();
-
-        doc.put("id", collection.getId() + "." + book.getId() + "." + image.getId() + ".transcription");
-        doc.put("canvas_id", collection.getId() + "." + book.getId() + "." + image.getId());
-        doc.put("manifest_id", book.getId());
-        doc.put("collection_id", collection.getId());
-        doc.put("image_name", image.getId());
-        doc.put("type", "transcription");
-
-        // Parse the transcription XML to extract text by category
-        TranscriptionXmlExtractor.Result extracted = TranscriptionXmlExtractor.extract(content);
-
-        // Poetry, rubric, catchphrase → Old French
-        StringBuilder ofrText = new StringBuilder();
-        if (!extracted.poetry().isBlank()) {
-            ofrText.append(extracted.poetry()).append(" ");
-        }
-        if (!extracted.rubric().isBlank()) {
-            ofrText.append(extracted.rubric()).append(" ");
-        }
-        if (!extracted.catchphrase().isBlank()) {
-            ofrText.append(extracted.catchphrase()).append(" ");
-        }
-        if (!ofrText.isEmpty()) {
-            LanguageFieldRouter.routeField(doc, "text", "ofr", ofrText.toString().trim());
-            doc.put("language", "ofr");
-        }
-
-        // Illustration, notes, lecoy, line numbers → English
-        StringBuilder enText = new StringBuilder();
-        if (!extracted.illustration().isBlank()) {
-            enText.append(extracted.illustration()).append(" ");
-        }
-        if (!extracted.note().isBlank()) {
-            enText.append(extracted.note()).append(" ");
-        }
-        if (!extracted.lecoy().isBlank()) {
-            enText.append(extracted.lecoy()).append(" ");
-        }
-        if (!extracted.line().isBlank()) {
-            enText.append(extracted.line()).append(" ");
-        }
-        if (!enText.isEmpty()) {
-            LanguageFieldRouter.routeField(doc, "text", "en", enText.toString().trim());
-            if (!doc.has("language")) {
-                doc.put("language", "en");
+        // AoR annotations for this page
+        if (ap != null) {
+            String reader = ap.getReader();
+            if (reader != null && !reader.isBlank()) {
+                allAnnotators.add(reader);
             }
-        }
 
-        return doc;
-    }
-
-    // ========== Illustration ==========
-
-    /**
-     * Generates an illustration annotation document. Resolves title IDs and character IDs
-     * using collection reference data.
-     */
-    public ObjectNode generateIllustrationDocument(BookCollection collection, Book book,
-                                                    BookImage image, Illustration illustration) {
-        ObjectNode doc = mapper.createObjectNode();
-
-        String illustrationId = illustration.getId() != null ? illustration.getId() : "";
-        doc.put("id", collection.getId() + "." + book.getId() + "." + image.getId() + ".illustration." + illustrationId);
-        doc.put("canvas_id", collection.getId() + "." + book.getId() + "." + image.getId());
-        doc.put("manifest_id", book.getId());
-        doc.put("collection_id", collection.getId());
-        doc.put("image_name", image.getId());
-        doc.put("type", "illustration");
-        doc.put("language", "en");
-
-        StringBuilder textBuilder = new StringBuilder();
-        List<String> peopleList = new ArrayList<>();
-
-        // Resolve titles via IllustrationTitles
-        IllustrationTitles titles = collection.getIllustrationTitles();
-        if (illustration.getTitles() != null) {
-            for (String titleId : illustration.getTitles()) {
-                if (titleId == null || titleId.isBlank()) {
-                    continue;
+            for (Annotation annotation : ap.getAnnotations()) {
+                String lang = annotation.getLanguage();
+                if (lang != null && !lang.isBlank()) {
+                    allLanguages.add(lang.toLowerCase());
                 }
-                if (titles == null) {
-                    throw new IllegalStateException(
-                            "Cannot resolve illustration title ID '" + titleId
-                                    + "': no illustration_titles.csv loaded for collection '"
-                                    + collection.getId() + "'");
-                }
-                String resolvedTitle = titles.getTitleById(titleId);
-                if (resolvedTitle == null || resolvedTitle.isBlank()) {
-                    throw new IllegalStateException(
-                            "Cannot resolve illustration title ID '" + titleId
-                                    + "' in collection '" + collection.getId()
-                                    + "', book '" + book.getId()
-                                    + "', page '" + image.getId() + "'");
-                }
-                textBuilder.append(resolvedTitle).append(", ");
-            }
-        }
 
-        // Resolve characters via CharacterNames
-        CharacterNames charNames = collection.getCharacterNames();
-        if (illustration.getCharacters() != null) {
-            for (String charId : illustration.getCharacters()) {
-                if (charId == null || charId.isBlank()) {
-                    continue;
-                }
-                if (charNames == null) {
-                    throw new IllegalStateException(
-                            "Cannot resolve character ID '" + charId
-                                    + "': no character_names.csv loaded for collection '"
-                                    + collection.getId() + "'");
-                }
-                CharacterName charName = charNames.getCharacterName(charId);
-                if (charName == null) {
-                    throw new IllegalStateException(
-                            "Cannot resolve character ID '" + charId
-                                    + "' in collection '" + collection.getId()
-                                    + "', book '" + book.getId()
-                                    + "', page '" + image.getId() + "'");
-                }
-                for (String name : charName.getAllNames()) {
-                    textBuilder.append(name).append(", ");
-                    if (!peopleList.contains(name)) {
-                        peopleList.add(name);
+                switch (annotation) {
+                    case Marginalia m -> indexMarginalia(doc, m, collection, defaultLang,
+                            allPeople, allBooks, allLocations, allSymbols,
+                            allMethods, allHands, allAnnotators, allLanguages,
+                            allMargLanguages, allTopics);
+                    case Underline u -> indexUnderline(doc, u, defaultLang, allMethods);
+                    case Mark mk -> indexMark(doc, mk, defaultLang, allMethods);
+                    case Symbol sym -> indexSymbol(doc, sym, defaultLang, allSymbols);
+                    case Drawing d -> indexDrawing(doc, d, collection, defaultLang,
+                            allPeople, allBooks, allLocations, allSymbols, allHands, allMethods);
+                    case Errata e -> indexErrata(doc, e, defaultLang);
+                    case Numeral n -> indexNumeral(doc, n, defaultLang);
+                    case Calculation c -> indexCalculation(doc, c, allMethods);
+                    case Graph g -> indexGraph(doc, g, collection, defaultLang,
+                            allPeople, allBooks, allLocations, allSymbols, allHands);
+                    case Table t -> indexTable(doc, t, collection, defaultLang,
+                            allPeople, allBooks, allLocations, allSymbols, allHands);
+                    default -> {
+                        // Unknown annotation type: index referenced text into marginalia field
+                        if (annotation.getReferencedText() != null && !annotation.getReferencedText().isBlank()) {
+                            String defLang = lang != null ? lang.toLowerCase() : defaultLang;
+                            LanguageFieldRouter.routeField(doc, "marginalia", defLang,
+                                    stripTranscriberMarks(annotation.getReferencedText()));
+                        }
                     }
                 }
             }
         }
 
-        // Textual element
-        appendIfPresent(textBuilder, illustration.getTextualElement());
-        // Architecture, costume, object, landscape, other
-        appendIfPresent(textBuilder, illustration.getArchitecture());
-        appendIfPresent(textBuilder, illustration.getCostume());
-        appendIfPresent(textBuilder, illustration.getObject());
-        appendIfPresent(textBuilder, illustration.getLandscape());
-        appendIfPresent(textBuilder, illustration.getOther());
-
-        // HTML annotations about this illustration
-        HTMLAnnotations htmlAnnotations = collection.getHTMLAnnotations();
-        if (htmlAnnotations != null) {
-            String htmlAnno = htmlAnnotations.getAnnotation(image.getId());
-            if (htmlAnno != null && !htmlAnno.isBlank()) {
-                // Strip HTML tags
-                textBuilder.append(htmlAnno.replaceAll("<.*?>", " ")).append(" ");
+        // Transcription for this page
+        if (!transcriptionPages.isEmpty()) {
+            String normalizedPage = TranscriptionSplitter.normalizePageName(image.getName());
+            String pageFragment = transcriptionPages.get(normalizedPage);
+            if (pageFragment != null && !pageFragment.isBlank()) {
+                indexTranscription(doc, pageFragment);
             }
         }
 
-        if (!textBuilder.isEmpty()) {
-            LanguageFieldRouter.routeField(doc, "text", "en", textBuilder.toString().trim());
+        // Illustration tagging for this page
+        IllustrationTagging illustrationTagging = book.getIllustrationTagging();
+        if (illustrationTagging != null) {
+            List<Integer> illustrationIndices = illustrationTagging.findImageIndices(book, image.getId());
+            for (int idx : illustrationIndices) {
+                Illustration illustration = illustrationTagging.getIllustrationData(idx);
+                indexIllustration(doc, collection, book, image, illustration, allCharNames);
+            }
         }
 
-        addArrayField(doc, "people", peopleList);
+        // Write keyword arrays (only if non-empty)
+        addSetField(doc, "people", allPeople);
+        addSetField(doc, "books", allBooks);
+        addSetField(doc, "locations", allLocations);
+        addSetField(doc, "symbols", allSymbols);
+        addSetField(doc, "method", allMethods);
+        addSetField(doc, "hand", allHands);
+        addSetField(doc, "annotator", allAnnotators);
+        addSetField(doc, "language", allLanguages);
+        addSetField(doc, "marginalia_language", allMargLanguages);
+        addSetField(doc, "topic", allTopics);
+        addSetField(doc, "char_name", allCharNames);
 
         return doc;
     }
 
-    // ========== Marginalia ==========
+    // ========== Annotation type indexers ==========
 
-    private void generateMarginaliaFields(ObjectNode doc, Marginalia m, BookCollection collection) {
-        doc.put("type", "marginalia");
-
+    private void indexMarginalia(ObjectNode doc, Marginalia m, BookCollection collection,
+                                  String defaultLang,
+                                  Set<String> allPeople, Set<String> allBooks,
+                                  Set<String> allLocations, Set<String> allSymbols,
+                                  Set<String> allMethods, Set<String> allHands,
+                                  Set<String> allAnnotators, Set<String> allLanguages,
+                                  Set<String> allMargLanguages, Set<String> allTopics) {
         if (m.getTopic() != null && !m.getTopic().isBlank()) {
-            doc.put("topic", m.getTopic());
+            allTopics.add(m.getTopic());
         }
         if (m.getHand() != null && !m.getHand().isBlank()) {
-            doc.put("hand", m.getHand());
+            allHands.add(m.getHand());
         }
-        if (m.getColor() != null && !m.getColor().isBlank()) {
-            doc.put("color", m.getColor());
-        }
-
-        // Index referenced text (text in the book that is being annotated)
-        String baseLang = m.getLanguage() != null ? m.getLanguage() : "en";
-        if (m.getReferencedText() != null && !m.getReferencedText().isBlank()) {
-            LanguageFieldRouter.routeField(doc, "text", baseLang, stripTranscriberMarks(m.getReferencedText()));
-        }
-
-        // Index otherReader as annotator (overrides page-level reader for this annotation)
         if (m.getOtherReader() != null && !m.getOtherReader().isBlank()) {
-            doc.put("annotator", m.getOtherReader());
+            allAnnotators.add(m.getOtherReader());
         }
 
-        List<String> allPeople = new ArrayList<>();
-        List<String> allBooks = new ArrayList<>();
-        List<String> allLocations = new ArrayList<>();
-        List<String> allSymbols = new ArrayList<>();
+        // Referenced text (anchor_text attribute from XML) → anchor_text field
+        String baseLang = m.getLanguage() != null ? m.getLanguage().toLowerCase() : defaultLang;
+        if (m.getReferencedText() != null && !m.getReferencedText().isBlank()) {
+            LanguageFieldRouter.routeField(doc, "anchor_text", baseLang,
+                    stripTranscriberMarks(m.getReferencedText()));
+        }
 
         ReferenceSheet peopleRef = collection.getPeopleRef();
         ReferenceSheet bookRef = collection.getBooksRef();
         ReferenceSheet locationRef = collection.getLocationsRef();
 
-        String marg_lang_type = "en";
-
         for (MarginaliaLanguage ml : m.getLanguages()) {
             String langCode = ml.getLang();
             if (langCode == null || langCode.isBlank()) {
-                langCode = "en";
+                langCode = defaultLang;
             }
-            marg_lang_type = langCode;
-
-            if (m.getLanguages().indexOf(ml) == 0) {
-                doc.put("language", langCode);
-            }
+            langCode = langCode.toLowerCase();
+            allLanguages.add(langCode);
+            allMargLanguages.add(langCode);
 
             for (Position pos : ml.getPositions()) {
                 // Transcription text
                 if (pos.getTexts() != null && !pos.getTexts().isEmpty()) {
                     String joinedText = stripTranscriberMarks(String.join(" ", pos.getTexts()));
-                    if (joinedText != null && !joinedText.isBlank()) {
-                        LanguageFieldRouter.routeField(doc, "text", langCode, joinedText);
+                    if (!joinedText.isBlank()) {
+                        LanguageFieldRouter.routeField(doc, "marginalia", langCode, joinedText);
                     }
                 }
 
@@ -618,7 +553,7 @@ public final class OpensearchIngestGenerator {
                             LanguageFieldRouter.routeField(doc, "cross_reference", "en", xref.title());
                         }
                         if (xref.text() != null && !xref.text().isBlank()) {
-                            String xrefLang = xref.language() != null ? xref.language() : langCode;
+                            String xrefLang = xref.language() != null ? xref.language().toLowerCase() : langCode;
                             LanguageFieldRouter.routeField(doc, "cross_reference", xrefLang,
                                     stripTranscriberMarks(xref.text()));
                         }
@@ -627,29 +562,17 @@ public final class OpensearchIngestGenerator {
 
                 // Collect people, books, locations, symbols
                 if (pos.getPeople() != null) {
-                    for (String person : pos.getPeople()) {
-                        if (person != null && !person.isBlank() && !allPeople.contains(person)) {
-                            allPeople.add(person);
-                        }
-                    }
+                    addRefAlternates(pos.getPeople(), peopleRef, allPeople);
                 }
                 if (pos.getBooks() != null) {
-                    for (String book : pos.getBooks()) {
-                        if (book != null && !book.isBlank() && !allBooks.contains(book)) {
-                            allBooks.add(book);
-                        }
-                    }
+                    addRefAlternates(pos.getBooks(), bookRef, allBooks);
                 }
                 if (pos.getLocations() != null) {
-                    for (String loc : pos.getLocations()) {
-                        if (loc != null && !loc.isBlank() && !allLocations.contains(loc)) {
-                            allLocations.add(loc);
-                        }
-                    }
+                    addRefAlternates(pos.getLocations(), locationRef, allLocations);
                 }
                 if (pos.getSymbols() != null) {
                     for (String sym : pos.getSymbols()) {
-                        if (sym != null && !sym.isBlank() && !allSymbols.contains(sym)) {
+                        if (sym != null && !sym.isBlank()) {
                             allSymbols.add(sym);
                         }
                     }
@@ -657,122 +580,100 @@ public final class OpensearchIngestGenerator {
             }
         }
 
-        // Translation always routed to English (translations are into English)
+        // Translation always routed to English
         if (m.getTranslation() != null && !m.getTranslation().isBlank()) {
-            LanguageFieldRouter.routeField(doc, "translation", "en", m.getTranslation());
+            LanguageFieldRouter.routeField(doc, "marginalia", "en", m.getTranslation());
         }
-
-        // Add reference sheet alternates and write arrays
-        addArrayField(doc, "people", addRefListAlternates(allPeople, peopleRef));
-        addArrayField(doc, "books", addRefListAlternates(allBooks, bookRef));
-        addArrayField(doc, "locations", addRefListAlternates(allLocations, locationRef));
-        addArrayField(doc, "symbols", allSymbols);
     }
 
-    // ========== Underline ==========
-
-    private void generateUnderlineFields(ObjectNode doc, Underline u) {
-        doc.put("type", "underline");
-
+    private void indexUnderline(ObjectNode doc, Underline u, String defaultLang, Set<String> allMethods) {
         if (u.getMethod() != null && !u.getMethod().isBlank()) {
-            doc.put("method", u.getMethod());
-        }
-        if (u.getColor() != null && !u.getColor().isBlank()) {
-            doc.put("color", u.getColor());
+            allMethods.add(u.getMethod().toLowerCase());
         }
 
-        String lang = u.getLanguage() != null ? u.getLanguage() : "en";
+        String lang = u.getLanguage() != null ? u.getLanguage().toLowerCase() : defaultLang;
         if (u.getReferencedText() != null && !u.getReferencedText().isBlank()) {
-            LanguageFieldRouter.routeField(doc, "text", lang, stripTranscriberMarks(u.getReferencedText()));
+            LanguageFieldRouter.routeField(doc, "underline", lang,
+                    stripTranscriberMarks(u.getReferencedText()));
         }
     }
 
-    // ========== Mark ==========
-
-    private void generateMarkFields(ObjectNode doc, Mark mk) {
-        doc.put("type", "mark");
-
+    private void indexMark(ObjectNode doc, Mark mk, String defaultLang, Set<String> allMethods) {
         if (mk.getMethod() != null && !mk.getMethod().isBlank()) {
-            doc.put("method", mk.getMethod());
+            allMethods.add(mk.getMethod().toLowerCase());
         }
-        if (mk.getColor() != null && !mk.getColor().isBlank()) {
-            doc.put("color", mk.getColor());
-        }
-        // Mark name goes to mark_name field (NOT hand)
+
+        // Mark name goes to mark.keyword sub-field
         if (mk.getName() != null && !mk.getName().isBlank()) {
-            doc.put("mark_name", mk.getName());
+            appendKeywordSubField(doc, "mark", mk.getName());
         }
 
-        String lang = mk.getLanguage() != null ? mk.getLanguage() : "en";
+        // Mark referenced text goes to mark.<lang> sub-field
+        String lang = mk.getLanguage() != null ? mk.getLanguage().toLowerCase() : defaultLang;
         if (mk.getReferencedText() != null && !mk.getReferencedText().isBlank()) {
-            LanguageFieldRouter.routeField(doc, "text", lang, stripTranscriberMarks(mk.getReferencedText()));
+            LanguageFieldRouter.routeField(doc, "mark", lang,
+                    stripTranscriberMarks(mk.getReferencedText()));
         }
     }
 
-    // ========== Symbol ==========
-
-    private void generateSymbolFields(ObjectNode doc, Symbol sym) {
-        doc.put("type", "symbol");
-
+    private void indexSymbol(ObjectNode doc, Symbol sym, String defaultLang, Set<String> allSymbols) {
+        // Symbol name goes to both symbol.keyword and symbols array
         if (sym.getName() != null && !sym.getName().isBlank()) {
-            ArrayNode symbolsArray = doc.putArray("symbols");
-            symbolsArray.add(sym.getName());
+            appendKeywordSubField(doc, "symbol", sym.getName());
+            allSymbols.add(sym.getName());
         }
 
-        String lang = sym.getLanguage() != null ? sym.getLanguage() : "en";
+        // Symbol referenced text goes to symbol.<lang> sub-field
+        String lang = sym.getLanguage() != null ? sym.getLanguage().toLowerCase() : defaultLang;
         if (sym.getReferencedText() != null && !sym.getReferencedText().isBlank()) {
-            LanguageFieldRouter.routeField(doc, "text", lang, stripTranscriberMarks(sym.getReferencedText()));
+            LanguageFieldRouter.routeField(doc, "symbol", lang,
+                    stripTranscriberMarks(sym.getReferencedText()));
         }
     }
 
-    // ========== Drawing ==========
-
-    private void generateDrawingFields(ObjectNode doc, Drawing d, BookCollection collection) {
-        doc.put("type", "drawing");
+    private void indexDrawing(ObjectNode doc, Drawing d, BookCollection collection,
+                              String defaultLang,
+                              Set<String> allPeople, Set<String> allBooks,
+                              Set<String> allLocations, Set<String> allSymbols,
+                              Set<String> allHands, Set<String> allMethods) {
+        // Drawing type goes to drawing.keyword sub-field
+        if (d.getType() != null && !d.getType().isBlank()) {
+            appendKeywordSubField(doc, "drawing", d.getType());
+        }
 
         if (d.getMethod() != null && !d.getMethod().isBlank()) {
-            doc.put("method", d.getMethod());
-        }
-        if (d.getColor() != null && !d.getColor().isBlank()) {
-            doc.put("color", d.getColor());
-        }
-        if (d.getOrientation() != null && !d.getOrientation().isBlank()) {
-            doc.put("orientation", d.getOrientation());
+            allMethods.add(d.getMethod().toLowerCase());
         }
 
-        String lang = d.getLanguage() != null ? d.getLanguage() : "en";
+        String lang = d.getLanguage() != null ? d.getLanguage().toLowerCase() : defaultLang;
 
         // Hand from TextEl elements
         if (d.getTexts() != null && !d.getTexts().isEmpty()) {
-            String hand = d.getTexts().stream()
-                    .map(TextEl::hand)
-                    .filter(h -> h != null && !h.isBlank())
-                    .distinct()
-                    .collect(Collectors.joining(", "));
-            if (!hand.isBlank()) {
-                doc.put("hand", hand);
-            }
-
-            // Text content from TextEl elements
-            StringJoiner textJoiner = new StringJoiner(" ");
             for (TextEl textEl : d.getTexts()) {
-                String textLang = textEl.language() != null ? textEl.language() : lang;
-                String combined = "";
+                if (textEl.hand() != null && !textEl.hand().isBlank()) {
+                    allHands.add(textEl.hand());
+                }
+                // Text content from TextEl elements
+                String textLang = textEl.language() != null ? textEl.language().toLowerCase() : lang;
+                StringBuilder combined = new StringBuilder();
                 if (textEl.text() != null && !textEl.text().isBlank()) {
-                    combined += textEl.text();
+                    combined.append(textEl.text());
                 }
                 if (textEl.anchorText() != null && !textEl.anchorText().isBlank()) {
-                    combined += " " + textEl.anchorText();
+                    if (!combined.isEmpty()) combined.append(" ");
+                    combined.append(textEl.anchorText());
+                    LanguageFieldRouter.routeField(doc, "anchor_text", textLang, textEl.anchorText());
                 }
-                if (!combined.isBlank()) {
-                    LanguageFieldRouter.routeField(doc, "text", textLang, combined.trim());
+                if (!combined.isEmpty()) {
+                    LanguageFieldRouter.routeField(doc, "drawing", textLang, combined.toString());
                 }
             }
         }
 
         // Referenced text
         if (d.getReferencedText() != null && !d.getReferencedText().isBlank()) {
-            LanguageFieldRouter.routeField(doc, "text", lang, stripTranscriberMarks(d.getReferencedText()));
+            LanguageFieldRouter.routeField(doc, "drawing", lang,
+                    stripTranscriberMarks(d.getReferencedText()));
         }
 
         // Translation routed to English
@@ -781,145 +682,113 @@ public final class OpensearchIngestGenerator {
         }
 
         // People, books, locations with reference sheet alternates
-        List<String> people = addRefListAlternates(d.getPeople(), collection.getPeopleRef());
-        List<String> books = addRefListAlternates(d.getBooks(), collection.getBooksRef());
-        List<String> locations = addRefListAlternates(d.getLocations(), collection.getLocationsRef());
-        addArrayField(doc, "people", people);
-        addArrayField(doc, "books", books);
-        addArrayField(doc, "locations", locations);
-        addArrayField(doc, "symbols", d.getSymbols());
+        addRefAlternates(d.getPeople(), collection.getPeopleRef(), allPeople);
+        addRefAlternates(d.getBooks(), collection.getBooksRef(), allBooks);
+        addRefAlternates(d.getLocations(), collection.getLocationsRef(), allLocations);
+
+        // Symbols from drawing
+        if (d.getSymbols() != null) {
+            for (String sym : d.getSymbols()) {
+                if (sym != null && !sym.isBlank()) {
+                    allSymbols.add(sym);
+                }
+            }
+        }
     }
 
-    // ========== Errata ==========
-
-    private void generateErrataFields(ObjectNode doc, Errata e) {
-        doc.put("type", "errata");
-
-        String lang = e.getLanguage() != null ? e.getLanguage() : "en";
+    private void indexErrata(ObjectNode doc, Errata e, String defaultLang) {
+        String lang = e.getLanguage() != null ? e.getLanguage().toLowerCase() : defaultLang;
 
         StringBuilder textBuilder = new StringBuilder();
         if (e.getReferencedText() != null && !e.getReferencedText().isBlank()) {
             textBuilder.append(stripTranscriberMarks(e.getReferencedText()));
         }
         if (e.getAmendedText() != null && !e.getAmendedText().isBlank()) {
-            if (!textBuilder.isEmpty()) {
-                textBuilder.append(" ");
-            }
+            if (!textBuilder.isEmpty()) textBuilder.append(" ");
             textBuilder.append(e.getAmendedText());
         }
         if (!textBuilder.isEmpty()) {
-            LanguageFieldRouter.routeField(doc, "text", lang, textBuilder.toString());
+            LanguageFieldRouter.routeField(doc, "errata", lang, textBuilder.toString());
         }
     }
 
-    // ========== Numeral ==========
+    private void indexNumeral(ObjectNode doc, Numeral n, String defaultLang) {
+        String lang = n.getLanguage() != null ? n.getLanguage().toLowerCase() : defaultLang;
 
-    private void generateNumeralFields(ObjectNode doc, Numeral n) {
-        doc.put("type", "numeral");
-
-        String lang = n.getLanguage() != null ? n.getLanguage() : "en";
-
-        // Index BOTH referenced text AND numeral value
         StringBuilder textBuilder = new StringBuilder();
         if (n.getReferencedText() != null && !n.getReferencedText().isBlank()) {
             textBuilder.append(stripTranscriberMarks(n.getReferencedText()));
         }
         if (n.getNumeral() != null && !n.getNumeral().isBlank()) {
-            if (!textBuilder.isEmpty()) {
-                textBuilder.append(" ");
-            }
+            if (!textBuilder.isEmpty()) textBuilder.append(" ");
             textBuilder.append(n.getNumeral());
         }
         if (!textBuilder.isEmpty()) {
-            LanguageFieldRouter.routeField(doc, "text", lang, textBuilder.toString());
+            LanguageFieldRouter.routeField(doc, "numeral", lang, textBuilder.toString());
         }
     }
 
-    // ========== Calculation ==========
-
-    private void generateCalculationFields(ObjectNode doc, Calculation c) {
-        doc.put("type", "calculation");
-
-        if (c.getMethod() != null && !c.getMethod().isBlank()) {
-            doc.put("method", c.getMethod());
+    private void indexCalculation(ObjectNode doc, Calculation c, Set<String> allMethods) {
+        // Calculation type goes to calculation.keyword sub-field
+        if (c.getType() != null && !c.getType().isBlank()) {
+            appendKeywordSubField(doc, "calculation", c.getType());
         }
 
-        // Build text from data list and content
+        if (c.getMethod() != null && !c.getMethod().isBlank()) {
+            allMethods.add(c.getMethod().toLowerCase());
+        }
+
         StringBuilder textBuilder = new StringBuilder();
         if (c.getData() != null && !c.getData().isEmpty()) {
             textBuilder.append(String.join(", ", c.getData()));
         }
         if (c.getContent() != null && !c.getContent().isBlank()) {
-            if (!textBuilder.isEmpty()) {
-                textBuilder.append(" ");
-            }
+            if (!textBuilder.isEmpty()) textBuilder.append(" ");
             textBuilder.append(c.getContent());
         }
         if (!textBuilder.isEmpty()) {
-            LanguageFieldRouter.routeField(doc, "text", "en", textBuilder.toString());
+            LanguageFieldRouter.routeField(doc, "calculation", "en", textBuilder.toString());
         }
     }
 
-    // ========== Graph ==========
-
-    private void generateGraphFields(ObjectNode doc, Graph g, BookCollection collection) {
-        doc.put("type", "graph");
-
-        if (g.getMethod() != null && !g.getMethod().isBlank()) {
-            doc.put("method", g.getMethod());
+    private void indexGraph(ObjectNode doc, Graph g, BookCollection collection,
+                            String defaultLang,
+                            Set<String> allPeople, Set<String> allBooks,
+                            Set<String> allLocations, Set<String> allSymbols,
+                            Set<String> allHands) {
+        // Graph type goes to graph.keyword sub-field
+        if (g.getType() != null && !g.getType().isBlank()) {
+            appendKeywordSubField(doc, "graph", g.getType());
         }
 
-        String lang = g.getLanguage() != null ? g.getLanguage() : "en";
-
-        List<String> allPeople = new ArrayList<>();
-        List<String> allBooks = new ArrayList<>();
-        List<String> allLocations = new ArrayList<>();
-        List<String> allSymbols = new ArrayList<>();
-        List<String> allHands = new ArrayList<>();
+        String lang = g.getLanguage() != null ? g.getLanguage().toLowerCase() : defaultLang;
 
         // Process GraphText elements
         for (GraphText text : g.getGraphTexts()) {
             // Hand from notes
             for (GraphNote note : text.getNotes()) {
-                if (note.hand() != null && !note.hand().isBlank() && !allHands.contains(note.hand())) {
+                if (note.hand() != null && !note.hand().isBlank()) {
                     allHands.add(note.hand());
                 }
             }
 
             // People, books, locations, symbols
-            for (String p : text.getPeople()) {
-                if (p != null && !p.isBlank() && !allPeople.contains(p)) {
-                    allPeople.add(p);
-                }
-            }
-            for (String b : text.getBooks()) {
-                if (b != null && !b.isBlank() && !allBooks.contains(b)) {
-                    allBooks.add(b);
-                }
-            }
-            for (String l : text.getLocations()) {
-                if (l != null && !l.isBlank() && !allLocations.contains(l)) {
-                    allLocations.add(l);
-                }
-            }
+            addRefAlternates(text.getPeople(), collection.getPeopleRef(), allPeople);
+            addRefAlternates(text.getBooks(), collection.getBooksRef(), allBooks);
+            addRefAlternates(text.getLocations(), collection.getLocationsRef(), allLocations);
             for (String s : text.getSymbols()) {
-                if (s != null && !s.isBlank() && !allSymbols.contains(s)) {
+                if (s != null && !s.isBlank()) {
                     allSymbols.add(s);
                 }
             }
 
-            // Translations → English
+            // Translations → routed to English in graph field
             if (text.getTranslations() != null && !text.getTranslations().isEmpty()) {
                 String translations = String.join(", ", text.getTranslations());
                 if (!translations.isBlank()) {
-                    LanguageFieldRouter.routeField(doc, "text", "en", translations);
+                    LanguageFieldRouter.routeField(doc, "graph", "en", translations);
                 }
             }
-        }
-
-        // Set hand
-        if (!allHands.isEmpty()) {
-            doc.put("hand", String.join(", ", allHands));
         }
 
         // Process GraphNode elements: text + content + person
@@ -932,39 +801,35 @@ public final class OpensearchIngestGenerator {
                 if (node.content() != null && !node.content().isBlank()) {
                     nodeTextJoiner.add(node.content());
                 }
-                if (node.person() != null && !node.person().isBlank() && !allPeople.contains(node.person())) {
+                if (node.person() != null && !node.person().isBlank()) {
                     allPeople.add(node.person());
                 }
             }
             String nodeText = nodeTextJoiner.toString();
             if (!nodeText.isBlank()) {
-                LanguageFieldRouter.routeField(doc, "text", lang, nodeText);
+                LanguageFieldRouter.routeField(doc, "graph", lang, nodeText);
             }
         }
-
-        // Write arrays with reference sheet alternates
-        addArrayField(doc, "people", addRefListAlternates(allPeople, collection.getPeopleRef()));
-        addArrayField(doc, "books", addRefListAlternates(allBooks, collection.getBooksRef()));
-        addArrayField(doc, "locations", addRefListAlternates(allLocations, collection.getLocationsRef()));
-        addArrayField(doc, "symbols", allSymbols);
     }
 
-    // ========== Table ==========
+    private void indexTable(ObjectNode doc, Table t, BookCollection collection,
+                            String defaultLang,
+                            Set<String> allPeople, Set<String> allBooks,
+                            Set<String> allLocations, Set<String> allSymbols,
+                            Set<String> allHands) {
+        // Table type goes to table.keyword sub-field
+        if (t.getType() != null && !t.getType().isBlank()) {
+            appendKeywordSubField(doc, "table", t.getType());
+        }
 
-    private void generateTableFields(ObjectNode doc, Table t, BookCollection collection) {
-        doc.put("type", "table");
-
-        String lang = t.getLanguage() != null ? t.getLanguage() : "en";
+        String lang = t.getLanguage() != null ? t.getLanguage().toLowerCase() : defaultLang;
 
         // Hand from TextEl elements
         if (t.getTexts() != null && !t.getTexts().isEmpty()) {
-            String hand = t.getTexts().stream()
-                    .map(TextEl::hand)
-                    .filter(h -> h != null && !h.isBlank())
-                    .distinct()
-                    .collect(Collectors.joining(", "));
-            if (!hand.isBlank()) {
-                doc.put("hand", hand);
+            for (TextEl txt : t.getTexts()) {
+                if (txt.hand() != null && !txt.hand().isBlank()) {
+                    allHands.add(txt.hand());
+                }
             }
 
             // Text from TextEl elements (anchorText + text)
@@ -973,6 +838,7 @@ public final class OpensearchIngestGenerator {
                 StringBuilder sb = new StringBuilder();
                 if (txt.anchorText() != null && !txt.anchorText().isBlank()) {
                     sb.append(txt.anchorText());
+                    LanguageFieldRouter.routeField(doc, "anchor_text", lang, txt.anchorText());
                 }
                 if (txt.text() != null && !txt.text().isBlank()) {
                     if (!sb.isEmpty()) sb.append(" ");
@@ -984,7 +850,7 @@ public final class OpensearchIngestGenerator {
             }
             String textsContent = textJoiner.toString();
             if (!textsContent.isBlank()) {
-                LanguageFieldRouter.routeField(doc, "text", lang, textsContent);
+                LanguageFieldRouter.routeField(doc, "table", lang, textsContent);
             }
         }
 
@@ -995,7 +861,7 @@ public final class OpensearchIngestGenerator {
 
         // Aggregated info
         if (t.getAggregatedInfo() != null && !t.getAggregatedInfo().isBlank()) {
-            LanguageFieldRouter.routeField(doc, "text", "en", t.getAggregatedInfo());
+            LanguageFieldRouter.routeField(doc, "table", "en", t.getAggregatedInfo());
         }
 
         // Table cells (anchorData + anchorText + content)
@@ -1020,64 +886,208 @@ public final class OpensearchIngestGenerator {
             }
             String cellText = cellJoiner.toString();
             if (!cellText.isBlank()) {
-                LanguageFieldRouter.routeField(doc, "text", "en", cellText);
+                LanguageFieldRouter.routeField(doc, "table", "en", cellText);
             }
         }
 
         // People, books, locations, symbols with reference sheet alternates
-        addArrayField(doc, "people", addRefListAlternates(t.getPeople(), collection.getPeopleRef()));
-        addArrayField(doc, "books", addRefListAlternates(t.getBooks(), collection.getBooksRef()));
-        addArrayField(doc, "locations", addRefListAlternates(t.getLocations(), collection.getLocationsRef()));
-        addArrayField(doc, "symbols", t.getSymbols());
+        addRefAlternates(t.getPeople(), collection.getPeopleRef(), allPeople);
+        addRefAlternates(t.getBooks(), collection.getBooksRef(), allBooks);
+        addRefAlternates(t.getLocations(), collection.getLocationsRef(), allLocations);
+        if (t.getSymbols() != null) {
+            for (String sym : t.getSymbols()) {
+                if (sym != null && !sym.isBlank()) {
+                    allSymbols.add(sym);
+                }
+            }
+        }
+    }
+
+    // ========== Transcription ==========
+
+    private void indexTranscription(ObjectNode doc, String content) {
+        TranscriptionXmlExtractor.Result extracted = TranscriptionXmlExtractor.extract(content);
+
+        // Poetry, rubric, catchphrase → Old French
+        StringBuilder ofrText = new StringBuilder();
+        if (!extracted.poetry().isBlank()) {
+            ofrText.append(extracted.poetry()).append(" ");
+        }
+        if (!extracted.rubric().isBlank()) {
+            ofrText.append(extracted.rubric()).append(" ");
+        }
+        if (!extracted.catchphrase().isBlank()) {
+            ofrText.append(extracted.catchphrase()).append(" ");
+        }
+        if (!ofrText.isEmpty()) {
+            LanguageFieldRouter.routeField(doc, "transcription", "ofr", ofrText.toString().trim());
+        }
+
+        // Illustration, notes, lecoy, line numbers → English
+        StringBuilder enText = new StringBuilder();
+        if (!extracted.illustration().isBlank()) {
+            enText.append(extracted.illustration()).append(" ");
+        }
+        if (!extracted.note().isBlank()) {
+            enText.append(extracted.note()).append(" ");
+        }
+        if (!extracted.lecoy().isBlank()) {
+            enText.append(extracted.lecoy()).append(" ");
+        }
+        if (!extracted.line().isBlank()) {
+            enText.append(extracted.line()).append(" ");
+        }
+        if (!enText.isEmpty()) {
+            LanguageFieldRouter.routeField(doc, "transcription", "en", enText.toString().trim());
+        }
+    }
+
+    // ========== Illustration ==========
+
+    private void indexIllustration(ObjectNode doc, BookCollection collection, Book book,
+                                    BookImage image, Illustration illustration,
+                                    Set<String> allCharNames) {
+        StringBuilder textBuilder = new StringBuilder();
+
+        // Resolve titles via IllustrationTitles
+        IllustrationTitles titles = collection.getIllustrationTitles();
+        if (illustration.getTitles() != null) {
+            for (String titleId : illustration.getTitles()) {
+                if (titleId == null || titleId.isBlank()) continue;
+                if (isNumeric(titleId)) {
+                    // Numeric: resolve as a title ID
+                    if (titles == null) {
+                        throw new IllegalStateException(
+                                "Cannot resolve illustration title ID '" + titleId
+                                        + "': no illustration_titles.csv loaded for collection '"
+                                        + collection.getId() + "'");
+                    }
+                    String resolvedTitle = titles.getTitleById(titleId);
+                    if (resolvedTitle == null || resolvedTitle.isBlank()) {
+                        throw new IllegalStateException(
+                                "Cannot resolve illustration title ID '" + titleId
+                                        + "' in collection '" + collection.getId()
+                                        + "', book '" + book.getId()
+                                        + "', page '" + image.getId() + "'");
+                    }
+                    textBuilder.append(resolvedTitle).append(", ");
+                } else {
+                    // Non-numeric: treat as a literal value
+                    textBuilder.append(titleId).append(", ");
+                }
+            }
+        }
+
+        // Resolve characters via CharacterNames
+        CharacterNames charNames = collection.getCharacterNames();
+        if (illustration.getCharacters() != null) {
+            for (String charId : illustration.getCharacters()) {
+                if (charId == null || charId.isBlank()) continue;
+                if (isNumeric(charId)) {
+                    // Numeric: resolve as a character ID
+                    if (charNames == null) {
+                        throw new IllegalStateException(
+                                "Cannot resolve character ID '" + charId
+                                        + "': no character_names.csv loaded for collection '"
+                                        + collection.getId() + "'");
+                    }
+                    CharacterName charName = charNames.getCharacterName(charId);
+                    if (charName == null) {
+                        throw new IllegalStateException(
+                                "Cannot resolve character ID '" + charId
+                                        + "' in collection '" + collection.getId()
+                                        + "', book '" + book.getId()
+                                        + "', page '" + image.getId() + "'");
+                    }
+                    for (String name : charName.getAllNames()) {
+                        textBuilder.append(name).append(", ");
+                        allCharNames.add(name);
+                    }
+                } else {
+                    // Non-numeric: treat as a literal value
+                    textBuilder.append(charId).append(", ");
+                    allCharNames.add(charId);
+                }
+            }
+        }
+
+        // Textual element, architecture, costume, object, landscape, other
+        appendIfPresent(textBuilder, illustration.getTextualElement());
+        appendIfPresent(textBuilder, illustration.getArchitecture());
+        appendIfPresent(textBuilder, illustration.getCostume());
+        appendIfPresent(textBuilder, illustration.getObject());
+        appendIfPresent(textBuilder, illustration.getLandscape());
+        appendIfPresent(textBuilder, illustration.getOther());
+
+        // HTML annotations about this illustration
+        HTMLAnnotations htmlAnnotations = collection.getHTMLAnnotations();
+        if (htmlAnnotations != null) {
+            String htmlAnno = htmlAnnotations.getAnnotation(image.getId());
+            if (htmlAnno != null && !htmlAnno.isBlank()) {
+                textBuilder.append(htmlAnno.replaceAll("<.*?>", " ")).append(" ");
+            }
+        }
+
+        if (!textBuilder.isEmpty()) {
+            LanguageFieldRouter.routeField(doc, "illustration", "en", textBuilder.toString().trim());
+        }
     }
 
     // ========== Utility methods ==========
 
     /**
-     * Adds a string array field to the document if the list is non-empty.
+     * Appends a keyword value to the dot-notation keyword sub-field of a multi-field.
+     * Uses comma-separated values since Opensearch keyword fields support arrays.
+     * The dot notation {@code fieldName.keyword} maps to the keyword sub-field in the index.
      */
-    private void addArrayField(ObjectNode doc, String fieldName, List<String> values) {
-        if (values != null && !values.isEmpty()) {
-            ArrayNode array = doc.putArray(fieldName);
-            for (String value : values) {
-                if (value != null && !value.isBlank()) {
-                    array.add(value);
-                }
+    private void appendKeywordSubField(ObjectNode doc, String fieldName, String value) {
+        if (value == null || value.isBlank()) return;
+        String key = fieldName + ".keyword";
+        if (doc.has(key)) {
+            String existing = doc.get(key).asText();
+            doc.put(key, existing + ", " + value);
+        } else {
+            doc.put(key, value);
+        }
+    }
+
+    /**
+     * Adds a Set of values as a keyword array field on the document.
+     */
+    private void addSetField(ObjectNode doc, String fieldName, Set<String> values) {
+        if (values == null || values.isEmpty()) return;
+        ArrayNode array = doc.putArray(fieldName);
+        for (String value : values) {
+            if (value != null && !value.isBlank()) {
+                array.add(value);
             }
         }
     }
 
     /**
-     * Expands a list of reference values with alternates from a reference sheet.
-     * Returns a new list containing original values plus all alternates.
+     * Expands a list of reference values with alternates from a reference sheet,
+     * adding all results to the target set.
      */
-    private List<String> addRefListAlternates(List<String> values, ReferenceSheet reference) {
-        if (values == null || values.isEmpty()) {
-            return values != null ? values : List.of();
-        }
-        if (reference == null) {
-            return values;
-        }
-        List<String> expanded = new ArrayList<>(values);
+    private void addRefAlternates(List<String> values, ReferenceSheet reference, Set<String> target) {
+        if (values == null || values.isEmpty()) return;
         for (String v : values) {
-            if (v != null && reference.hasAlternates(v)) {
+            if (v == null || v.isBlank()) continue;
+            target.add(v);
+            if (reference != null && reference.hasAlternates(v)) {
                 for (String alt : reference.getAlternates(v)) {
-                    if (alt != null && !alt.isBlank() && !expanded.contains(alt)) {
-                        expanded.add(alt);
+                    if (alt != null && !alt.isBlank()) {
+                        target.add(alt);
                     }
                 }
             }
         }
-        return expanded;
     }
 
     /**
      * Strips transcriber marks ([ and ]) from text.
      */
     static String stripTranscriberMarks(String s) {
-        if (s == null) {
-            return null;
-        }
+        if (s == null) return null;
         return s.replace("[", "").replace("]", "");
     }
 
@@ -1088,6 +1098,20 @@ public final class OpensearchIngestGenerator {
         if (value != null && !value.isBlank()) {
             sb.append(value).append(", ");
         }
+    }
+
+    /**
+     * Checks if a string is a numeric value (integer).
+     * Used to distinguish reference IDs from literal text values in CSV columns.
+     */
+    private static boolean isNumeric(String s) {
+        if (s == null || s.isBlank()) return false;
+        for (int i = 0; i < s.length(); i++) {
+            if (!Character.isDigit(s.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**

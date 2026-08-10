@@ -2,6 +2,7 @@ target/
 war/
 gwt-unitCache/
 *~
+.jqwik-database
 
 # IntelliJ stuff
 .idea/
@@ -12,3 +13,6 @@ gwt-unitCache/
 .project
 .settings
 bin
+
+# Kiro
+.kiro

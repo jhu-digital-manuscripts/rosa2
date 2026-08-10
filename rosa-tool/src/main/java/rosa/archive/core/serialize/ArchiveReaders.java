@@ -506,6 +506,34 @@ public final class ArchiveReaders {
 
         List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
 
+        if (lines.isEmpty()) {
+            return tagging;
+        }
+
+        // Parse header to determine column positions (some files have an "Initials" column, some don't)
+        String[] header = CSV.parse(lines.get(0));
+        int colId = -1, colPage = -1, colTitles = -1, colTextual = -1, colInitials = -1;
+        int colCharacters = -1, colCostume = -1, colObjects = -1;
+        int colLandscape = -1, colArchitecture = -1, colOther = -1;
+
+        for (int h = 0; h < header.length; h++) {
+            String name = header[h].trim().toLowerCase();
+            switch (name) {
+                case "id" -> colId = h;
+                case "folio", "folio #" -> colPage = h;
+                case "illustration title" -> colTitles = h;
+                case "textual elements" -> colTextual = h;
+                case "initials" -> colInitials = h;
+                case "characters" -> colCharacters = h;
+                case "costume" -> colCostume = h;
+                case "objects" -> colObjects = h;
+                case "landscape" -> colLandscape = h;
+                case "architecture" -> colArchitecture = h;
+                case "other" -> colOther = h;
+                default -> { /* ignore unknown columns */ }
+            }
+        }
+
         // Skip header row (index 0)
         for (int i = 1; i < lines.size(); i++) {
             String line = lines.get(i);
@@ -516,12 +544,12 @@ public final class ArchiveReaders {
             String[] cols = CSV.parse(line);
 
             Illustration illustration = new Illustration();
-            illustration.setId(cols.length > 0 ? cols[0] : "");
-            illustration.setPage(cols.length > 1 ? cols[1] : "");
+            illustration.setId(colId >= 0 && cols.length > colId ? cols[colId] : "");
+            illustration.setPage(colPage >= 0 && cols.length > colPage ? cols[colPage] : "");
 
-            // Titles (column 2) - split by comma into array
-            if (cols.length > 2 && !cols[2].isBlank()) {
-                String[] titles = cols[2].split(",");
+            // Titles - split by semicolons or commas into array of IDs
+            if (colTitles >= 0 && cols.length > colTitles && !cols[colTitles].isBlank()) {
+                String[] titles = cols[colTitles].split("[;,]");
                 for (int t = 0; t < titles.length; t++) {
                     titles[t] = titles[t].trim();
                 }
@@ -530,12 +558,12 @@ public final class ArchiveReaders {
                 illustration.setTitles(new String[0]);
             }
 
-            illustration.setTextualElement(cols.length > 3 ? cols[3] : "");
-            illustration.setInitials(cols.length > 4 ? cols[4] : "");
+            illustration.setTextualElement(colTextual >= 0 && cols.length > colTextual ? cols[colTextual] : "");
+            illustration.setInitials(colInitials >= 0 && cols.length > colInitials ? cols[colInitials] : "");
 
-            // Characters (column 5) - split by comma into array
-            if (cols.length > 5 && !cols[5].isBlank()) {
-                String[] characters = cols[5].split(",");
+            // Characters - split by semicolons or commas into array of IDs
+            if (colCharacters >= 0 && cols.length > colCharacters && !cols[colCharacters].isBlank()) {
+                String[] characters = cols[colCharacters].split("[;,]");
                 for (int c = 0; c < characters.length; c++) {
                     characters[c] = characters[c].trim();
                 }
@@ -544,11 +572,11 @@ public final class ArchiveReaders {
                 illustration.setCharacters(new String[0]);
             }
 
-            illustration.setCostume(cols.length > 6 ? cols[6] : "");
-            illustration.setObject(cols.length > 7 ? cols[7] : "");
-            illustration.setLandscape(cols.length > 8 ? cols[8] : "");
-            illustration.setArchitecture(cols.length > 9 ? cols[9] : "");
-            illustration.setOther(cols.length > 10 ? cols[10] : "");
+            illustration.setCostume(colCostume >= 0 && cols.length > colCostume ? cols[colCostume] : "");
+            illustration.setObject(colObjects >= 0 && cols.length > colObjects ? cols[colObjects] : "");
+            illustration.setLandscape(colLandscape >= 0 && cols.length > colLandscape ? cols[colLandscape] : "");
+            illustration.setArchitecture(colArchitecture >= 0 && cols.length > colArchitecture ? cols[colArchitecture] : "");
+            illustration.setOther(colOther >= 0 && cols.length > colOther ? cols[colOther] : "");
 
             tagging.addIllustrationData(illustration);
         }
@@ -1033,6 +1061,13 @@ public final class ArchiveReaders {
                     null
             );
             pos.getEmphasis().add(emphasis);
+        }
+        // Marginalia text
+        for (Element el : getDirectChildElements("marginalia_text", posEl)) {
+            String text = el.getTextContent();
+            if (text != null && !text.isBlank()) {
+                pos.getTexts().add(text.trim());
+            }
         }
 
         return pos;
