@@ -24,14 +24,11 @@ import static org.junit.jupiter.api.Assertions.*;
  * <p>Feature: rosa2-cli-refactor, Property 24: Duplicate ID Detection</p>
  * <p>For any corpus of annotated pages where two or more pages contain annotations with
  * the same ID, the checker SHALL report that ID as a duplicate.</p>
- *
- * <p><b>Validates: Requirements 24.4, 24.7</b></p>
  */
 class AoRTranscriptionCheckerPropertyTest {
 
     // Feature: rosa2-cli-refactor, Property 23: AoR Reference Validation Soundness
     // Every reference not in reference dataset is reported as an error
-    // **Validates: Requirements 24.4**
     @Property(tries = 100)
     void everyInvalidPersonReferenceIsReportedAsError(
             @ForAll("validPersonNames") Set<String> validPeople,
@@ -183,7 +180,6 @@ class AoRTranscriptionCheckerPropertyTest {
 
     // Feature: rosa2-cli-refactor, Property 24: Duplicate ID Detection
     // Annotations with same ID across pages are reported as duplicates
-    // **Validates: Requirements 24.7**
     @Property(tries = 100)
     void duplicateAnnotationIdAcrossPagesIsReportedAsDuplicate(
             @ForAll("annotationIds") String duplicateId

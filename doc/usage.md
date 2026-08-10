@@ -11,7 +11,7 @@ Developers, content administrators, and system administrators who work with the 
 ## General Usage
 
 ```
-java -jar rosa2-2.0.0-SNAPSHOT.jar <command> [options] [arguments]
+java -jar rosa-tool.jar <command> [options] [arguments]
 ```
 
 Use `--help` on any command for detailed usage. All commands exit with code 0 on success and code 1 on error.

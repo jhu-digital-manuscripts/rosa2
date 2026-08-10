@@ -15,8 +15,6 @@ import java.util.stream.Collectors;
 /**
  * Property 19: Image List Completeness
  * Generated image list CSV contains exactly one entry per .tif/.jpg file and no entries for non-image files.
- *
- * Validates: Requirements 17.1
  */
 class ImageListCompletenessPropertyTest {
 

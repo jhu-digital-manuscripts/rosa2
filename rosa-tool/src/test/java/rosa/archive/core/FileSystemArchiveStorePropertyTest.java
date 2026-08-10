@@ -18,7 +18,6 @@ class FileSystemArchiveStorePropertyTest {
 
     // Feature: rosa2-cli-refactor, Property 21: Rename Forward-Reverse Round Trip
     // Renaming forward then reverse restores original filenames exactly
-    // **Validates: Requirements 20.1, 20.3, 22.1, 22.2**
     @Property(tries = 100)
     void renameForwardThenReverseRestoresOriginalFilenames(
             @ForAll("tifFileSet") List<TifFileEntry> entries
@@ -119,7 +118,6 @@ class FileSystemArchiveStorePropertyTest {
 
     // Feature: rosa2-cli-refactor, Property 22: Rename Completeness
     // After renaming, directory contains all new-names and none of old-names
-    // **Validates: Requirements 20.1, 21.1, 22.1**
     @Property(tries = 100)
     void afterRenamingDirectoryContainsAllNewNamesAndNoOldNames(
             @ForAll("tifFileSet") List<TifFileEntry> entries
@@ -197,7 +195,6 @@ class FileSystemArchiveStorePropertyTest {
 
     // Feature: rosa2-cli-refactor, Property 22: Rename Completeness (standalone rename-files)
     // After renaming via CSV, directory contains all new-names and none of old-names
-    // **Validates: Requirement 21.1**
     @Property(tries = 100)
     void standaloneRenameFilesContainsAllNewNamesAndNoOldNames(
             @ForAll("tifFileSet") List<TifFileEntry> entries

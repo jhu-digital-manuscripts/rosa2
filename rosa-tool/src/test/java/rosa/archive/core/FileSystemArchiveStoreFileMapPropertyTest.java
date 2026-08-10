@@ -15,14 +15,10 @@ import java.util.regex.Pattern;
 /**
  * Property-based tests for file map generation in FileSystemArchiveStore.
  *
- * Feature: rosa2-cli-refactor, Property 20: File Map Naming Convention
- *
  * For any sorted list of N image files and a valid configuration (front cover, back cover,
  * frontmatter count, endmatter count, misc count), the generated file map SHALL contain
  * exactly N rows, each target filename SHALL follow the archive naming convention, and
  * no two target filenames SHALL be identical.
- *
- * Validates: Requirements 19.1, 19.2
  */
 class FileSystemArchiveStoreFileMapPropertyTest {
 

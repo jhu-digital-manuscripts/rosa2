@@ -17,9 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * <p>Feature: rosa2-cli-refactor, Property 25: Annotation Map Completeness</p>
  * <p>Generated {@code id_locations.csv} contains an entry for every annotation ID
  * with correct collection/book/page information.</p>
- *
- * <p><b>Validates: Requirements 25.1, 25.2</b></p>
- */
+  */
 class AnnotationMapGeneratorPropertyTest {
 
     private static final String[] ANNOTATION_TYPES = {
@@ -30,8 +28,6 @@ class AnnotationMapGeneratorPropertyTest {
     /**
      * Property 25: Annotation Map Completeness — Generated id_locations.csv contains entry
      * for every annotation ID with correct location.
-     *
-     * <p><b>Validates: Requirements 25.1, 25.2</b></p>
      */
     @Property(tries = 50)
     void annotationMapContainsEntryForEveryAnnotationId(

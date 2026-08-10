@@ -26,7 +26,7 @@ mvn clean package
 Run the tool:
 
 ```sh
-java -jar target/rosa2-2.0.0-SNAPSHOT.jar --help
+java -jar target/rosa-tool.jar --help
 ```
 
 ## Commands

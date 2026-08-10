@@ -25,8 +25,6 @@ import static org.junit.jupiter.api.Assertions.*;
  * - Top-level collection.json lists only root collections (aor, dlmm)
  * - dlmm/collection.json lists rose and pizan as Collection-type items
  * - Every sub-collection collection.json has manifest items with thumbnail properties
- *
- * Validates: Requirements 2.1, 2.2, 4.6
  */
 class IIIFIntegrationTest {
 
@@ -190,8 +188,6 @@ class IIIFIntegrationTest {
      * - Annotation pages for Douce195 include illustration tagging annotations
      *   parsed from Douce195.imagetag.csv
      * - Annotation bodies contain expected illustration data (titles, characters, etc.)
-     *
-     * Validates: Requirements 2.3, 4.2, 4.3, 4.5
      */
     @Test
     void testIllustrationTaggingAnnotations(@TempDir Path outputDir) throws IOException, URISyntaxException {
@@ -336,8 +332,6 @@ class IIIFIntegrationTest {
      *   index 6: Douce332.001r.tif → canvas/6
      *   index 8: Douce332.002r.tif → canvas/8
      *   index 10: Douce332.003r.tif → canvas/10
-     *
-     * Validates: Requirements 4.2, 4.5
      */
     @Test
     void testPerPagePlainTextTranscription(@TempDir Path outputDir) throws IOException, URISyntaxException {
@@ -449,8 +443,6 @@ class IIIFIntegrationTest {
      *   marginalia, underlines, marks, symbols, numerals
      * - Each annotation type has the correct structure and content from the source XML
      * - No illustration tagging annotations are generated for PrincetonU101 (it has no .imagetag.csv)
-     *
-     * Validates: Requirements 3.5, 4.4, 4.5
      */
     @Test
     void testAoRAnnotationsAllSubTypes(@TempDir Path outputDir) throws IOException, URISyntaxException {
@@ -615,8 +607,6 @@ class IIIFIntegrationTest {
      * - TEI transcription annotations (from .transcription.xml) — verified on Douce195 with zero-padded folios
      * - Per-page plain-text transcription annotations (from .transcription.{page}.txt) — verified on Douce332
      * - AoR annotations (from .aor.{page}.xml) covering all sub-types — verified on PrincetonU101
-     *
-     * Validates: Requirements 4.5
      */
     @Test
     void testComprehensiveAllAnnotationTypes(@TempDir Path outputDir) throws IOException, URISyntaxException {

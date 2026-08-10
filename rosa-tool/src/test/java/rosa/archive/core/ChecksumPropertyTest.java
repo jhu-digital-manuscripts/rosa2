@@ -16,14 +16,10 @@ import java.util.Map;
 
 /**
  * Property-based tests for checksum update operations in FileSystemArchiveStore.
- *
- * Feature: rosa2-cli-refactor, Property 18: Non-Forced Checksum Stability
- */
+*/
 class ChecksumPropertyTest {
 
     /**
-     * **Validates: Requirements 16.4**
-     *
      * Property 18: Non-Forced Checksum Stability
      *
      * Files with lastModifiedTime not newer than the SHA1SUM file remain unchanged

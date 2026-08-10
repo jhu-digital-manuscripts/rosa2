@@ -23,7 +23,7 @@ Build the executable JAR from the project root:
 mvn clean package
 ```
 
-This produces a fat JAR at `target/rosa2-2.0.0-SNAPSHOT.jar` containing all runtime dependencies. The JAR includes a `Main-Class` manifest entry, so it can be executed directly.
+This produces a fat JAR at `target/rosa-tool.jar` containing all runtime dependencies. The JAR includes a `Main-Class` manifest entry, so it can be executed directly.
 
 To skip tests during development builds:
 
@@ -34,13 +34,13 @@ mvn clean package -DskipTests
 ## Running
 
 ```bash
-java -jar target/rosa2-2.0.0-SNAPSHOT.jar <command> [options]
+java -jar target/rosa-tool.jar <command> [options]
 ```
 
 Verify the build works:
 
 ```bash
-java -jar target/rosa2-2.0.0-SNAPSHOT.jar --help
+java -jar target/rosa-tool.jar --help
 ```
 
 ## Typical Deployment Pipeline

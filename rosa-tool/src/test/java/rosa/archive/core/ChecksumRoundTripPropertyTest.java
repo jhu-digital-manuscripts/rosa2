@@ -21,8 +21,6 @@ import java.util.Map;
  *
  * <p>After running {@code update --force}, the stored checksum for every file
  * equals {@code HashUtil.computeSHA1()} applied to the current file content.
- *
- * <p><b>Validates: Requirements 16.1, 16.5</b>
  */
 class ChecksumRoundTripPropertyTest {
 
