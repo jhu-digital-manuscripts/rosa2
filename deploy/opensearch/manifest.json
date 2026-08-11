@@ -1,0 +1,64 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "latin": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "asciifolding"]
+        },
+        "old_french": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "french_stemmer", "asciifolding"]
+        }
+      },
+      "filter": {
+        "french_stemmer": {
+          "type": "stemmer",
+          "language": "light_french"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "collection_id": { "type": "keyword" },
+      "label": {
+        "type": "text",
+        "fields": {
+          "keyword": { "type": "keyword" }
+        }
+      },
+      "title": {
+        "type": "text",
+        "fields": {
+          "keyword": { "type": "keyword" },
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "ofr": { "type": "text", "analyzer": "old_french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "es": { "type": "text", "analyzer": "spanish" }
+        }
+      },
+      "repository": { "type": "text" },
+      "shelfmark": { "type": "text" },
+      "date": { "type": "keyword" },
+      "origin": { "type": "keyword" },
+      "num_pages": { "type": "integer" },
+      "languages": { "type": "keyword" },
+      "description": { "type": "text" },
+      "authors": { "type": "keyword" },
+      "type": { "type": "keyword" },
+      "current_location": { "type": "keyword" },
+      "num_illustrations": { "type": "integer" },
+      "material": { "type": "keyword" },
+      "has_transcription": { "type": "boolean" },
+      "thumbnail": { "type": "object", "enabled": false },
+      "logo": { "type": "keyword" }
+    }
+  }
+}

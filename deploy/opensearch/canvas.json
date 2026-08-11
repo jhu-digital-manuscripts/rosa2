@@ -1,0 +1,266 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "latin": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "asciifolding"]
+        },
+        "old_french": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "french_stemmer", "asciifolding"]
+        }
+      },
+      "filter": {
+        "french_stemmer": {
+          "type": "stemmer",
+          "language": "light_french"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "manifest_id": { "type": "keyword" },
+      "collection_id": { "type": "keyword" },
+      "iiif_image_id": { "type": "keyword" },
+      "label": {
+        "type": "text",
+        "fields": {
+          "keyword": { "type": "keyword" }
+        }
+      },
+      "page_num": { "type": "integer" },
+
+      "marginalia": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "underline": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "mark": {
+        "type": "object",
+        "properties": {
+          "keyword": { "type": "keyword" },
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "symbol": {
+        "type": "object",
+        "properties": {
+          "keyword": { "type": "keyword" },
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "errata": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "numeral": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "drawing": {
+        "type": "object",
+        "properties": {
+          "keyword": { "type": "keyword" },
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "emphasis": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "cross_reference": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "calculation": {
+        "type": "object",
+        "properties": {
+          "keyword": { "type": "keyword" },
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "graph": {
+        "type": "object",
+        "properties": {
+          "keyword": { "type": "keyword" },
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "table": {
+        "type": "object",
+        "properties": {
+          "keyword": { "type": "keyword" },
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "transcription": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "illustration": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "translation": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+      "anchor_text": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "text", "analyzer": "english" },
+          "fr": { "type": "text", "analyzer": "french" },
+          "la": { "type": "text", "analyzer": "latin" },
+          "it": { "type": "text", "analyzer": "italian" },
+          "el": { "type": "text", "analyzer": "greek" },
+          "es": { "type": "text", "analyzer": "spanish" },
+          "de": { "type": "text", "analyzer": "german" },
+          "ofr": { "type": "text", "analyzer": "old_french" }
+        }
+      },
+
+      "people": { "type": "keyword" },
+      "books": { "type": "keyword" },
+      "locations": { "type": "keyword" },
+      "symbols": { "type": "keyword" },
+      "method": { "type": "keyword" },
+      "hand": { "type": "keyword" },
+      "annotator": { "type": "keyword" },
+      "language": { "type": "keyword" },
+      "marginalia_language": { "type": "keyword" },
+      "topic": { "type": "keyword" },
+      "char_name": { "type": "text", "analyzer": "standard" }
+    }
+  }
+}

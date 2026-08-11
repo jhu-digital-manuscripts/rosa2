@@ -67,8 +67,8 @@ export const initialState = {
 
   // Sort order
   sort: {
-    field: '_score',
-    order: 'desc',
+    field: 'label.keyword',
+    order: 'asc',
   },
 
   // Pagination
