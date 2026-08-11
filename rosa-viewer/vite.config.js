@@ -29,12 +29,31 @@ export default defineConfig({
   server: {
     port: 3001,
     proxy: {
+      // IIIF Presentation API files served by local-dev
       '/iiif': {
         target: 'http://localhost:3000',
         changeOrigin: true,
       },
-      '/logo': {
-        target: 'http://localhost:3000',
+      // Logos served from rosa-viewer/public/logo/ (no proxy needed, served by vite)
+      // But if logos were served from the IIIF server:
+      // '/logo': {
+      //   target: 'http://localhost:3000',
+      //   changeOrigin: true,
+      // },
+      
+      // Opensearch endpoints - proxy to local Opensearch instance
+      // The jhsearch.json specifies /_search, and the opensearch service
+      // may rewrite it to /manifest/_search or /canvas/_search
+      '/manifest/_search': {
+        target: 'http://localhost:9200',
+        changeOrigin: true,
+      },
+      '/canvas/_search': {
+        target: 'http://localhost:9200',
+        changeOrigin: true,
+      },
+      '/_search': {
+        target: 'http://localhost:9200',
         changeOrigin: true,
       },
     },
