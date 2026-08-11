@@ -94,7 +94,7 @@ stop_server() {
 stop_opensearch() {
     if docker compose -f "$SCRIPT_DIR/docker-compose.yml" ps -q 2>/dev/null | grep -q .; then
         log_info "Stopping Opensearch..."
-        docker compose -f "$SCRIPT_DIR/docker-compose.yml" down
+        docker compose -f "$SCRIPT_DIR/docker-compose.yml" down -v
         log_info "Opensearch stopped"
     else
         log_info "Opensearch not running"

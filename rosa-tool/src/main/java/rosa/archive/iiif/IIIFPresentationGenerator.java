@@ -325,7 +325,7 @@ public final class IIIFPresentationGenerator {
         for (Map.Entry<String, String> entry : bookLabels.entrySet()) {
             String bookId = entry.getKey();
             ObjectNode item = mapper.createObjectNode();
-            item.put("id", buildId(baseUrl, collectionId + "/" + bookId + "/manifest"));
+            item.put("id", buildId(baseUrl, collectionId + "/" + bookId + "/manifest.json"));
             item.put("type", "Manifest");
             item.set("label", languageMap(lang, entry.getValue()));
 
@@ -381,7 +381,7 @@ public final class IIIFPresentationGenerator {
 
         ObjectNode node = mapper.createObjectNode();
         node.put("@context", CONTEXT);
-        node.put("id", buildId(baseUrl, collectionId + "/" + bookId + "/manifest"));
+        node.put("id", buildId(baseUrl, collectionId + "/" + bookId + "/manifest.json"));
         node.put("type", "Manifest");
 
         // Label from BiblioData commonName or title

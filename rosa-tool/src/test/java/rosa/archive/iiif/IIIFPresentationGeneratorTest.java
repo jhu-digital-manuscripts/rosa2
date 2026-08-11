@@ -115,10 +115,10 @@ class IIIFPresentationGeneratorTest {
         JsonNode items = parsed.get("items");
         assertEquals(2, items.size());
 
-        assertEquals("http://example.org/rose/LudwigXV7/manifest", items.get(0).get("id").asText());
+        assertEquals("http://example.org/rose/LudwigXV7/manifest.json", items.get(0).get("id").asText());
         assertEquals("Manifest", items.get(0).get("type").asText());
 
-        assertEquals("http://example.org/rose/Walters143/manifest", items.get(1).get("id").asText());
+        assertEquals("http://example.org/rose/Walters143/manifest.json", items.get(1).get("id").asText());
     }
 
     @Test
@@ -151,7 +151,7 @@ class IIIFPresentationGeneratorTest {
         JsonNode parsed = mapper.readTree(json);
 
         assertEquals("dlmm/collection", parsed.get("id").asText());
-        assertEquals("dlmm/MS100/manifest", parsed.get("items").get(0).get("id").asText());
+        assertEquals("dlmm/MS100/manifest.json", parsed.get("items").get(0).get("id").asText());
     }
 
     @Test
@@ -209,7 +209,7 @@ class IIIFPresentationGeneratorTest {
         // Sub-collection should reference the manifest with proper label (falls back to bookId)
         JsonNode subItems = subParsed.get("items");
         assertEquals(1, subItems.size());
-        assertEquals("http://example.org/testcollection/testbook/manifest", subItems.get(0).get("id").asText());
+        assertEquals("http://example.org/testcollection/testbook/manifest.json", subItems.get(0).get("id").asText());
 
         // Manifest should exist
         Path manifest = outputDir.resolve("testcollection").resolve("testbook").resolve("manifest.json");
@@ -340,7 +340,7 @@ class IIIFPresentationGeneratorTest {
         JsonNode parsed = mapper.readTree(json);
 
         // Manifest ID should use baseUrl
-        assertEquals("http://example.org/rose/LudwigXV7/manifest", parsed.get("id").asText());
+        assertEquals("http://example.org/rose/LudwigXV7/manifest.json", parsed.get("id").asText());
 
         // Thumbnail should use imageBaseUrl with encoded image identifier
         String thumbnailId = parsed.get("thumbnail").get(0).get("id").asText();
@@ -372,8 +372,8 @@ class IIIFPresentationGeneratorTest {
         assertEquals("Walters Art Museum MS 143", items.get(1).get("label").get("none").get(0).asText());
 
         // Verify IDs still use the bookId
-        assertEquals("http://example.org/rose/LudwigXV7/manifest", items.get(0).get("id").asText());
-        assertEquals("http://example.org/rose/Walters143/manifest", items.get(1).get("id").asText());
+        assertEquals("http://example.org/rose/LudwigXV7/manifest.json", items.get(0).get("id").asText());
+        assertEquals("http://example.org/rose/Walters143/manifest.json", items.get(1).get("id").asText());
     }
 
     @Test
@@ -397,8 +397,8 @@ class IIIFPresentationGeneratorTest {
         assertEquals("PrincetonPA6452", items.get(1).get("label").get("none").get(0).asText());
 
         // IDs still use the bookId
-        assertEquals("http://example.org/aor/BL531k6/manifest", items.get(0).get("id").asText());
-        assertEquals("http://example.org/aor/PrincetonPA6452/manifest", items.get(1).get("id").asText());
+        assertEquals("http://example.org/aor/BL531k6/manifest.json", items.get(0).get("id").asText());
+        assertEquals("http://example.org/aor/PrincetonPA6452/manifest.json", items.get(1).get("id").asText());
     }
 
     @Test

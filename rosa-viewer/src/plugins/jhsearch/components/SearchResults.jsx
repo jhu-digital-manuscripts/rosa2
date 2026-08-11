@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CircularProgress from '@mui/material/CircularProgress';
+import { addWindow } from 'mirador';
 
 import { ManifestResult } from './ManifestResult';
 import { CanvasResult } from './CanvasResult';
@@ -99,12 +100,13 @@ export function SearchResults({ onRetry }) {
   const handleManifestClick = (result) => {
     const manifestUrl = buildManifestUrl(result.source.id, iiifBaseUrl);
     
-    // Dispatch Mirador action to open the manifest
+    // Use Mirador's addWindow action creator to properly open the manifest
+    dispatch(addWindow({ manifestId: manifestUrl }));
+    
+    // Hide the JHSearch view to show the page turner
     dispatch({
-      type: 'mirador/ADD_WINDOW',
-      window: {
-        manifestId: manifestUrl,
-      },
+      type: 'mirador/SET_WORKSPACE_ADD_VISIBILITY',
+      isWorkspaceAddVisible: false,
     });
   };
 
@@ -113,13 +115,13 @@ export function SearchResults({ onRetry }) {
     const manifestUrl = buildManifestUrl(manifest_id, iiifBaseUrl);
     const canvasUrl = buildCanvasUrl(manifest_id, page_num, iiifBaseUrl);
     
-    // Dispatch Mirador action to open the manifest at the specific canvas
+    // Use Mirador's addWindow action creator to properly open the manifest at the specific canvas
+    dispatch(addWindow({ manifestId: manifestUrl, canvasId: canvasUrl }));
+    
+    // Hide the JHSearch view to show the page turner
     dispatch({
-      type: 'mirador/ADD_WINDOW',
-      window: {
-        manifestId: manifestUrl,
-        canvasId: canvasUrl,
-      },
+      type: 'mirador/SET_WORKSPACE_ADD_VISIBILITY',
+      isWorkspaceAddVisible: false,
     });
   };
 
