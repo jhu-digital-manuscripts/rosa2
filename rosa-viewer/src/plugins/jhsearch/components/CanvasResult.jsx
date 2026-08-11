@@ -106,7 +106,9 @@ function HighlightedText({ html, fieldLabel }) {
  * CanvasResult displays a single canvas/page result.
  */
 export function CanvasResult({ result, onClick }) {
-  const thumbnailConfig = useSelector(selectors.getThumbnailConfig);
+  const imageBaseUrl = useSelector(selectors.getImageBaseUrl);
+  const thumbnailTemplate = useSelector(selectors.getThumbnailTemplate);
+  const thumbnailWidth = useSelector(selectors.getThumbnailWidth);
 
   const { source, highlight } = result;
   const {
@@ -119,6 +121,9 @@ export function CanvasResult({ result, onClick }) {
   // Parse manifest ID to get book info
   const manifestInfo = parseManifestId(manifest_id);
   const bookId = manifestInfo?.bookId || manifest_id;
+
+  // Build thumbnail config object for urlBuilder functions
+  const thumbnailConfig = { imageBaseUrl, thumbnailTemplate, thumbnailWidth };
 
   // Build thumbnail URL
   const thumbnailUrl = iiif_image_id

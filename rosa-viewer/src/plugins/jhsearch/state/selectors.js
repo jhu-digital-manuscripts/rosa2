@@ -218,7 +218,18 @@ export const getResultsError = (state) => getResults(state).error;
 export const isResultsLoading = (state) => getResults(state).loading;
 
 /**
- * Get thumbnail configuration.
+ * Get thumbnail configuration - individual selectors to avoid re-render issues.
+ * Using individual selectors prevents returning a new object reference each time.
+ */
+export const getImageBaseUrl = (state) => getConfig(state).imageBaseUrl || '';
+export const getThumbnailTemplate = (state) => 
+  getConfig(state).thumbnailTemplate || '{imageBaseUrl}/{iiifImageId}/full/{width},/0/default.jpg';
+export const getThumbnailWidth = (state) => getConfig(state).thumbnailWidth || 80;
+export const getLogoBaseUrl = (state) => getConfig(state).logoBaseUrl || '/logo';
+
+/**
+ * @deprecated Use individual selectors (getImageBaseUrl, getThumbnailTemplate, etc.) instead.
+ * This selector returns a new object each render which causes performance issues.
  */
 export const getThumbnailConfig = (state) => {
   const config = getConfig(state);

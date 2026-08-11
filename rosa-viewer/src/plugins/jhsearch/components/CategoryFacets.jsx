@@ -33,7 +33,10 @@ function FacetCategory({ category, values, selectedValues, onToggle }) {
     if (b.count !== a.count) {
       return b.count - a.count;
     }
-    return a.key.localeCompare(b.key);
+    // Handle non-string keys (e.g., booleans) by converting to string
+    const keyA = String(a.key);
+    const keyB = String(b.key);
+    return keyA.localeCompare(keyB);
   });
 
   return (
@@ -58,9 +61,15 @@ function FacetCategory({ category, values, selectedValues, onToggle }) {
         <List dense disablePadding>
           {sortedValues.map((value) => {
             const isSelected = selectedValues.includes(value.key);
+            // Convert key to string for display and React key
+            const keyStr = String(value.key);
+            // Format display value (e.g., "true" -> "Yes", "false" -> "No")
+            const displayValue = value.key === true ? 'Yes' 
+              : value.key === false ? 'No' 
+              : keyStr || '(empty)';
 
             return (
-              <ListItem key={value.key} disablePadding>
+              <ListItem key={keyStr} disablePadding>
                 <ListItemButton
                   role="checkbox"
                   aria-checked={isSelected}
@@ -94,7 +103,7 @@ function FacetCategory({ category, values, selectedValues, onToggle }) {
                             flex: 1,
                           }}
                         >
-                          {value.key}
+                          {displayValue}
                         </Typography>
                         <Chip
                           label={value.count}

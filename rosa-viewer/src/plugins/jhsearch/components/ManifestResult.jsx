@@ -101,16 +101,21 @@ function HighlightedText({ html, fieldLabel }) {
  * ManifestResult displays a single manifest result.
  */
 export function ManifestResult({ result, onClick }) {
-  const thumbnailConfig = useSelector(selectors.getThumbnailConfig);
+  const imageBaseUrl = useSelector(selectors.getImageBaseUrl);
+  const thumbnailTemplate = useSelector(selectors.getThumbnailTemplate);
+  const thumbnailWidth = useSelector(selectors.getThumbnailWidth);
+  const logoBaseUrl = useSelector(selectors.getLogoBaseUrl);
 
   const { source, highlight } = result;
   const {
-    id,
     label,
     num_pages,
     thumbnail: thumbnails,
     logo,
   } = source;
+
+  // Build thumbnail config object for urlBuilder functions
+  const thumbnailConfig = { imageBaseUrl, thumbnailTemplate, thumbnailWidth };
 
   // Build thumbnail URLs
   const thumbnailUrls = (thumbnails || []).slice(0, 3).map((thumb) => ({
@@ -119,7 +124,7 @@ export function ManifestResult({ result, onClick }) {
   }));
 
   // Build logo URL
-  const logoUrl = logo ? buildLogoUrl(logo, thumbnailConfig.logoBaseUrl) : null;
+  const logoUrl = logo ? buildLogoUrl(logo, logoBaseUrl) : null;
 
   // Get highlighted fields
   const highlightEntries = Object.entries(highlight || {}).slice(0, 2);
