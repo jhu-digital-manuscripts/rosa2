@@ -115,6 +115,15 @@ export function SearchResults({ onRetry }) {
     const manifestUrl = buildManifestUrl(manifest_id, iiifBaseUrl);
     const canvasUrl = buildCanvasUrl(manifest_id, page_num, iiifBaseUrl);
     
+    // Debug logging
+    console.log('Canvas click:', {
+      manifest_id,
+      page_num,
+      manifestUrl,
+      canvasUrl,
+      iiifBaseUrl,
+    });
+    
     // Use Mirador's addWindow action creator to properly open the manifest at the specific canvas
     dispatch(addWindow({ manifestId: manifestUrl, canvasId: canvasUrl }));
     

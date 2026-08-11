@@ -22,8 +22,8 @@
       window.rosaViewerConfig = {
         id: 'rosa-viewer',
         jhsearch: {
-          // IIIF Presentation API base URL
-          iiifBaseUrl: '/iiif',
+          // IIIF Presentation API base URL (must be absolute to match manifest IDs)
+          iiifBaseUrl: 'http://localhost:3000/iiif',
           
           // Top-level collection ID - the viewer will load /iiif/dlmm/collection.json
           // and discover the JHSearchService configuration from there
