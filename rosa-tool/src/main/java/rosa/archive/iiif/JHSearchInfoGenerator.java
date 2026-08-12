@@ -42,7 +42,7 @@ public final class JHSearchInfoGenerator {
             "rose", List.of("description", "repository", "locations", "illustration",
                     "char_name", "transcription"),
             "pizan", List.of("description", "repository", "locations", "title",
-                    "transcription",
+                    "transcription"),
             "aor", List.of("marginalia", "symbol", "underline", "mark",
                     "books", "people", "locations", "language", "marginalia_language",
                     "numeral", "drawing", "errata", "emphasis", "cross_reference",
