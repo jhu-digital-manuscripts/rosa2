@@ -7,6 +7,7 @@ import {
   buildBrowseQuery,
   buildSimpleSearchQuery,
   buildAdvancedSearchQuery,
+  buildFacetAggregations,
 } from '../utils/queryBuilder';
 import { mockJHSearchService } from '../../../test/mocks';
 
@@ -139,6 +140,44 @@ describe('queryBuilder', () => {
 
       // Should still produce a valid query
       expect(query.query.bool).toBeDefined();
+    });
+  });
+
+  describe('buildFacetAggregations', () => {
+    it('should use terms aggregation for regular categories', () => {
+      const regularCategories = [
+        { name: 'origin', label: 'Origin' },
+        { name: 'date', label: 'Date' },
+      ];
+
+      const aggs = buildFacetAggregations(regularCategories);
+
+      expect(aggs.origin).toEqual({
+        terms: { field: 'origin', size: 100 },
+      });
+      expect(aggs.date).toEqual({
+        terms: { field: 'date', size: 100 },
+      });
+    });
+
+    it('should use histogram aggregation for categories with quantize-interval', () => {
+      const categoriesWithInterval = [
+        { name: 'origin', label: 'Origin' },
+        { name: 'num_pages', label: 'Number of Pages', 'quantize-interval': 100 },
+        { name: 'num_illustrations', label: 'Number of Illustrations', 'quantize-interval': 10 },
+      ];
+
+      const aggs = buildFacetAggregations(categoriesWithInterval);
+
+      expect(aggs.origin).toEqual({
+        terms: { field: 'origin', size: 100 },
+      });
+      expect(aggs.num_pages).toEqual({
+        histogram: { field: 'num_pages', interval: 100, min_doc_count: 1 },
+      });
+      expect(aggs.num_illustrations).toEqual({
+        histogram: { field: 'num_illustrations', interval: 10, min_doc_count: 1 },
+      });
     });
   });
 });

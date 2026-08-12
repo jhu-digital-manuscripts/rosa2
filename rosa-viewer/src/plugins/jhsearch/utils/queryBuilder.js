@@ -65,6 +65,9 @@ export function buildFacetFilters(facets) {
 /**
  * Build aggregations for facet categories.
  *
+ * Categories with a 'quantize-interval' property use histogram aggregation
+ * for numeric bucketing. All other categories use terms aggregation.
+ *
  * @param {Object[]} categories - Category definitions from jhsearch.json
  * @returns {Object} Aggregations configuration for Opensearch
  */
@@ -72,12 +75,23 @@ export function buildFacetAggregations(categories) {
   const aggs = {};
 
   for (const category of categories) {
-    aggs[category.name] = {
-      terms: {
-        field: category.name,
-        size: 100, // Return up to 100 facet values
-      },
-    };
+    if (category['quantize-interval']) {
+      // Use histogram aggregation for numeric fields with quantize-interval
+      aggs[category.name] = {
+        histogram: {
+          field: category.name,
+          interval: category['quantize-interval'],
+          min_doc_count: 1,
+        },
+      };
+    } else {
+      aggs[category.name] = {
+        terms: {
+          field: category.name,
+          size: 100, // Return up to 100 facet values
+        },
+      };
+    }
   }
 
   return aggs;

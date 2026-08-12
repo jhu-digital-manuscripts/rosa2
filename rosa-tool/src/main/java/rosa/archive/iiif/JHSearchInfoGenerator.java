@@ -40,14 +40,13 @@ public final class JHSearchInfoGenerator {
     // Per-collection search fields (using opensearch field names from the canvas index)
     private static final Map<String, List<String>> SEARCH_FIELDS = Map.of(
             "rose", List.of("description", "repository", "locations", "illustration",
-                    "transcription", "title", "char_name", "people"),
+                    "char_name", "transcription"),
             "pizan", List.of("description", "repository", "locations", "title",
-                    "transcription", "people"),
+                    "transcription",
             "aor", List.of("marginalia", "symbol", "underline", "mark",
                     "books", "people", "locations", "language", "marginalia_language",
                     "numeral", "drawing", "errata", "emphasis", "cross_reference",
                     "method", "calculation", "graph", "table", "hand", "annotator"),
-            "top", List.of("description", "title", "people", "locations", "repository"),
             "dlmm", List.of("description", "title", "people", "locations", "repository",
                     "transcription")
     );
@@ -57,8 +56,7 @@ public final class JHSearchInfoGenerator {
             "rose", List.of("current_location", "date", "num_illustrations", "num_pages", "origin", "type", "has_transcription"),
             "pizan", List.of("current_location", "date", "num_illustrations", "num_pages", "origin", "type", "has_transcription"),
             "aor", List.of("authors", "current_location", "date", "num_pages", "origin"),
-            "top", List.of("authors", "current_location", "date", "repository"),
-            "dlmm", List.of("authors", "current_location", "num_illustrations", "num_pages", "origin", "type", "has_transcription")
+            "dlmm", List.of("current_location", "date", "num_illustrations", "num_pages", "origin", "has_transcription", "type")
     );
 
     /**
@@ -137,6 +135,9 @@ public final class JHSearchInfoGenerator {
                 ObjectNode catNode = mapper.createObjectNode();
                 catNode.put("name", meta.fieldName);
                 catNode.put("label", meta.label);
+                if (meta.quantizeInterval != null) {
+                    catNode.put("quantize-interval", meta.quantizeInterval);
+                }
                 categoriesArray.add(catNode);
             }
         }
@@ -259,8 +260,8 @@ public final class JHSearchInfoGenerator {
             case "date" -> new CategoryMetadata("date", "Date");
             case "origin" -> new CategoryMetadata("origin", "Origin");
             case "type" -> new CategoryMetadata("type", "Type");
-            case "num_pages" -> new CategoryMetadata("num_pages", "Number of Pages");
-            case "num_illustrations" -> new CategoryMetadata("num_illustrations", "Number of Illustrations");
+            case "num_pages" -> new CategoryMetadata("num_pages", "Number of Pages", 100);
+            case "num_illustrations" -> new CategoryMetadata("num_illustrations", "Number of Illustrations", 10);
             case "has_transcription" -> new CategoryMetadata("has_transcription", "Transcription");
             case "repository" -> new CategoryMetadata("repository", "Repository");
             default -> null;
@@ -427,5 +428,9 @@ public final class JHSearchInfoGenerator {
     private record FieldMetadata(String label, String description, List<String> subfields,
                                   boolean hasKeywordSubField, Map<String, String> values) {}
 
-    private record CategoryMetadata(String fieldName, String label) {}
+    private record CategoryMetadata(String fieldName, String label, Integer quantizeInterval) {
+        CategoryMetadata(String fieldName, String label) {
+            this(fieldName, label, null);
+        }
+    }
 }
