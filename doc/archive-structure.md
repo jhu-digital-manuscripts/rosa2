@@ -15,7 +15,6 @@ An archive is a root directory containing one or more collections. Each collecti
 ```
 <archive>/
   <collection-id>/
-    collection_metadata.xml
     character_names.csv
     illustration_titles.csv
     narrative_sections.csv

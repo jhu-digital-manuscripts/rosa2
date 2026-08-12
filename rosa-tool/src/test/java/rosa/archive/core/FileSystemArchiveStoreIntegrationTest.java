@@ -3,6 +3,9 @@ package rosa.archive.core;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import rosa.archive.core.util.HashUtil;
+import rosa.archive.model.Book;
+import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookDescription;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -19,6 +22,36 @@ import static org.junit.jupiter.api.Assertions.*;
  * Integration tests that combine multiple ArchiveStore write operations.
  */
 class FileSystemArchiveStoreIntegrationTest {
+
+    private static final Path TEST_ARCHIVE = Path.of("src/test/resources/archive");
+
+    @Test
+    void loadBook_includesEnglishDescription() throws IOException {
+        var store = new FileSystemArchiveStore(TEST_ARCHIVE);
+        
+        // Load the rose collection
+        BookCollection collection = store.loadCollection("rose");
+        assertNotNull(collection);
+        
+        // Load Douce195 which has description_en.xml
+        Book book = store.loadBook(collection, "Douce195");
+        assertNotNull(book);
+        
+        // Check that English description was loaded
+        BookDescription enDesc = book.getDescription("en");
+        assertNotNull(enDesc, "English description should be loaded from Douce195.description_en.xml");
+        
+        // Verify content
+        String identification = enDesc.getNote("IDENTIFICATION");
+        assertNotNull(identification);
+        assertTrue(identification.contains("MS Douce 195"));
+        assertTrue(identification.contains("Bodleian Library"));
+        
+        // Verify full text works
+        String fullText = enDesc.getFullText();
+        assertFalse(fullText.isBlank());
+        assertTrue(fullText.contains("Roman de la Rose"));
+    }
 
     @Test
     void generateFileMap_thenRenameImages_producesCorrectlyNamedFiles(@TempDir Path tempDir) throws IOException {

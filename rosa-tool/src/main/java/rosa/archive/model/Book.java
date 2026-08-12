@@ -27,6 +27,7 @@ public class Book implements HasId {
     private NarrativeTagging automaticNarrativeTagging;
     private BookMetadata bookMetadata;
     private Map<String, Permission> permissions;
+    private Map<String, BookDescription> descriptions;
     private Transcription transcription;
     private List<AnnotatedPage> annotatedPages;
 
@@ -35,6 +36,7 @@ public class Book implements HasId {
      */
     public Book() {
         this.permissions = new HashMap<>();
+        this.descriptions = new HashMap<>();
         this.annotatedPages = new ArrayList<>();
     }
 
@@ -329,6 +331,35 @@ public class Book implements HasId {
     }
 
     /**
+     * Adds a description in a particular language.
+     *
+     * @param description the description
+     * @param language    the language code
+     */
+    public void addDescription(BookDescription description, String language) {
+        descriptions.put(language, description);
+    }
+
+    /**
+     * Returns the description in the specified language.
+     *
+     * @param language the language code
+     * @return the description, or {@code null} if not available
+     */
+    public BookDescription getDescription(String language) {
+        return descriptions.get(language);
+    }
+
+    /**
+     * Returns all descriptions across all languages.
+     *
+     * @return array of all descriptions
+     */
+    public BookDescription[] getDescriptionsInAllLanguages() {
+        return descriptions.values().toArray(new BookDescription[0]);
+    }
+
+    /**
      * Returns the transcription data for this book.
      *
      * @return the transcription, or {@code null}
@@ -446,6 +477,7 @@ public class Book implements HasId {
                 Objects.equals(automaticNarrativeTagging, that.automaticNarrativeTagging) &&
                 Objects.equals(bookMetadata, that.bookMetadata) &&
                 Objects.equals(permissions, that.permissions) &&
+                Objects.equals(descriptions, that.descriptions) &&
                 Objects.equals(transcription, that.transcription) &&
                 Objects.equals(annotatedPages, that.annotatedPages);
     }
@@ -454,7 +486,7 @@ public class Book implements HasId {
     public int hashCode() {
         int result = Objects.hash(id, images, croppedImages, cropInfo, checksum,
                 bookStructure, illustrationTagging, manualNarrativeTagging,
-                automaticNarrativeTagging, bookMetadata, permissions,
+                automaticNarrativeTagging, bookMetadata, permissions, descriptions,
                 transcription, annotatedPages);
         result = 31 * result + Arrays.hashCode(content);
         return result;
@@ -475,6 +507,7 @@ public class Book implements HasId {
                 ", automaticNarrativeTagging=" + automaticNarrativeTagging +
                 ", bookMetadata=" + bookMetadata +
                 ", permissions=" + permissions +
+                ", descriptions=" + descriptions +
                 ", transcription=" + transcription +
                 ", annotatedPages=" + annotatedPages +
                 '}';

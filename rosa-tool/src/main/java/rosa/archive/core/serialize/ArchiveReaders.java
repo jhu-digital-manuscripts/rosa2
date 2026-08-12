@@ -8,6 +8,7 @@ import org.xml.sax.SAXException;
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BiblioData;
+import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookReferenceSheet;
@@ -582,6 +583,110 @@ public final class ArchiveReaders {
         }
 
         return tagging;
+    }
+
+    /**
+     * Reads a book description from a TEI P5 XML file.
+     * 
+     * <p>The description file contains a TEI document with notesStmt containing
+     * multiple note elements with different @rend attributes (IDENTIFICATION,
+     * BASIC INFORMATION, MATERIAL, QUIRES, LAYOUT, SCRIPT, DECORATION, BINDING,
+     * HISTORY, TEXT, etc.).
+     *
+     * @param path   the path to the description XML file
+     * @param errors list to collect error messages
+     * @return the parsed book description, or null if file doesn't exist
+     * @throws IOException if reading fails
+     */
+    public static BookDescription readBookDescription(Path path, List<String> errors) throws IOException {
+        if (!Files.exists(path)) {
+            return null;
+        }
+
+        try (InputStream is = Files.newInputStream(path)) {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            factory.setNamespaceAware(true);
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document doc = builder.parse(is);
+            return buildBookDescription(doc);
+        } catch (ParserConfigurationException | SAXException e) {
+            errors.add("Failed to parse description XML: " + path + " - " + e.getMessage());
+            return null;
+        }
+    }
+
+    // ---- Book Description XML parsing ----
+
+    private static BookDescription buildBookDescription(Document doc) {
+        BookDescription description = new BookDescription();
+
+        // Find notesStmt element - it contains the note elements with descriptions
+        NodeList notesStmtList = doc.getElementsByTagNameNS("http://www.tei-c.org/ns/1.0", "notesStmt");
+        if (notesStmtList.getLength() == 0) {
+            // Try without namespace
+            notesStmtList = doc.getElementsByTagName("notesStmt");
+        }
+
+        if (notesStmtList.getLength() == 0) {
+            return description;
+        }
+
+        Element notesStmt = (Element) notesStmtList.item(0);
+
+        // Get all note elements
+        NodeList noteList = notesStmt.getElementsByTagNameNS("http://www.tei-c.org/ns/1.0", "note");
+        if (noteList.getLength() == 0) {
+            noteList = notesStmt.getElementsByTagName("note");
+        }
+
+        for (int i = 0; i < noteList.getLength(); i++) {
+            Node node = noteList.item(i);
+            if (node.getNodeType() != Node.ELEMENT_NODE) {
+                continue;
+            }
+
+            Element noteEl = (Element) node;
+            
+            // Only process direct children of notesStmt
+            if (noteEl.getParentNode() != notesStmt) {
+                continue;
+            }
+
+            String rend = noteEl.getAttribute("rend");
+            String textContent = extractTextContent(noteEl);
+
+            if (rend != null && !rend.isEmpty() && !textContent.isBlank()) {
+                description.addNote(rend, textContent.trim());
+            } else if ((rend == null || rend.isEmpty()) && !textContent.isBlank()) {
+                // Notes without rend attribute (like attribution notes)
+                description.addNote("OTHER", textContent.trim());
+            }
+        }
+
+        return description;
+    }
+
+    /**
+     * Extracts text content from an element, recursively getting text from
+     * all child elements and normalizing whitespace.
+     */
+    private static String extractTextContent(Element element) {
+        StringBuilder sb = new StringBuilder();
+        extractTextContentRecursive(element, sb);
+        // Normalize whitespace: collapse multiple spaces/newlines into single space
+        return sb.toString().replaceAll("\\s+", " ").trim();
+    }
+
+    private static void extractTextContentRecursive(Node node, StringBuilder sb) {
+        NodeList children = node.getChildNodes();
+        for (int i = 0; i < children.getLength(); i++) {
+            Node child = children.item(i);
+            if (child.getNodeType() == Node.TEXT_NODE) {
+                sb.append(child.getTextContent());
+            } else if (child.getNodeType() == Node.ELEMENT_NODE) {
+                extractTextContentRecursive(child, sb);
+            }
+        }
     }
 
     // ---- Private helpers ----

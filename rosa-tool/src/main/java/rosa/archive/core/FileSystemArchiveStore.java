@@ -309,6 +309,15 @@ public final class FileSystemArchiveStore implements ArchiveStore {
             if (perm != null) {
                 book.addPermission(perm, lang);
             }
+
+            String descName = bookId + DESCRIPTION + lang + XML_EXT;
+            rosa.archive.model.BookDescription desc = ArchiveReaders.readBookDescription(
+                    bookDir.resolve(descName), errors);
+            if (desc != null) {
+                desc.setId(descName);
+                desc.setLanguage(lang);
+                book.addDescription(desc, lang);
+            }
         }
 
         // AoR annotations

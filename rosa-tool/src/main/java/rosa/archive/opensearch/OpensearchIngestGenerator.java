@@ -256,6 +256,15 @@ public final class OpensearchIngestGenerator {
 
         doc.put("description", "");
 
+        // Description: use English description if available
+        rosa.archive.model.BookDescription bookDesc = book.getDescription("en");
+        if (bookDesc != null) {
+            String descText = bookDesc.getFullText();
+            if (descText != null && !descText.isBlank()) {
+                doc.put("description", descText);
+            }
+        }
+
         // Authors: from BiblioData + BookText authors
         ArrayNode authorsArray = doc.putArray("authors");
         if (biblio != null && biblio.getAuthors() != null) {

@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
+import rosa.archive.model.BookDescription;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookMetadata;
@@ -276,6 +277,52 @@ class OpensearchIngestGeneratorTest {
         void noTitlesField() {
             ObjectNode doc = generator.generateManifestDocument(collection, book);
             assertFalse(doc.has("titles"));
+        }
+
+        @Test
+        void descriptionIsEmptyByDefault() {
+            ObjectNode doc = generator.generateManifestDocument(collection, book);
+            assertEquals("", doc.get("description").asText());
+        }
+
+        @Test
+        void descriptionUsesEnglishBookDescription() {
+            BookDescription desc = new BookDescription();
+            desc.addNote("IDENTIFICATION", "MS Test 123, Test Library");
+            desc.addNote("MATERIAL", "Parchment in good condition");
+            book.addDescription(desc, "en");
+
+            ObjectNode doc = generator.generateManifestDocument(collection, book);
+            String description = doc.get("description").asText();
+            assertFalse(description.isEmpty());
+            assertTrue(description.contains("MS Test 123"));
+            assertTrue(description.contains("Parchment"));
+        }
+
+        @Test
+        void descriptionIgnoresFrenchIfEnglishAvailable() {
+            BookDescription enDesc = new BookDescription();
+            enDesc.addNote("IDENTIFICATION", "English description");
+            book.addDescription(enDesc, "en");
+
+            BookDescription frDesc = new BookDescription();
+            frDesc.addNote("IDENTIFICATION", "French description");
+            book.addDescription(frDesc, "fr");
+
+            ObjectNode doc = generator.generateManifestDocument(collection, book);
+            String description = doc.get("description").asText();
+            assertTrue(description.contains("English description"));
+            assertFalse(description.contains("French description"));
+        }
+
+        @Test
+        void descriptionIsEmptyWhenOnlyFrenchAvailable() {
+            BookDescription frDesc = new BookDescription();
+            frDesc.addNote("IDENTIFICATION", "French description");
+            book.addDescription(frDesc, "fr");
+
+            ObjectNode doc = generator.generateManifestDocument(collection, book);
+            assertEquals("", doc.get("description").asText());
         }
     }
 
