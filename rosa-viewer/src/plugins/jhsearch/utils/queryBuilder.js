@@ -3,23 +3,22 @@
  */
 
 /**
- * Expand field names that have subfields into their full paths.
- * e.g., 'marginalia' with subfields ['en', 'fr'] becomes ['marginalia.en', 'marginalia.fr']
+ * Expand field names that have subfields into wildcard patterns.
+ * e.g., 'marginalia' with has_subfields=true becomes ['marginalia.*']
+ * Fields without subfields are passed through unchanged.
  *
  * @param {string[]} fieldNames - Array of field names to expand
  * @param {Object[]} fieldDefinitions - Field definitions from jhsearch.json
- * @returns {string[]} Expanded field names
+ * @returns {string[]} Expanded field names with wildcards where appropriate
  */
 export function expandFieldsWithSubfields(fieldNames, fieldDefinitions) {
   const expanded = [];
 
   for (const name of fieldNames) {
     const fieldDef = fieldDefinitions.find((f) => f.name === name);
-    if (fieldDef?.subfields && fieldDef.subfields.length > 0) {
-      // Expand to all subfields
-      for (const subfield of fieldDef.subfields) {
-        expanded.push(`${name}.${subfield}`);
-      }
+    if (fieldDef?.has_subfields) {
+      // Use wildcard to match all subfields
+      expanded.push(`${name}.*`);
     } else {
       expanded.push(name);
     }
@@ -229,10 +228,7 @@ export function buildAdvancedSearchQuery({
     .filter((row) => row.value && row.value.trim())
     .map((row) => {
       const fieldDef = fieldDefinitions.find((f) => f.name === row.field);
-      const searchFields =
-        fieldDef?.subfields && fieldDef.subfields.length > 0
-          ? fieldDef.subfields.map((sf) => `${row.field}.${sf}`)
-          : [row.field];
+      const searchFields = fieldDef?.has_subfields ? [`${row.field}.*`] : [row.field];
 
       return {
         clause: {

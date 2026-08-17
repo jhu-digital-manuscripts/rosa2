@@ -50,13 +50,13 @@ The `service/jhsearch.json` file is a static JSON file generated per collection.
       "name": "marginalia",
       "label": "Marginalia",
       "description": "Notes written by a reader.",
-      "subfields": ["en", "fr", "la", "it", "el", "es", "de", "ofr", "keyword"]
+      "has_subfields": true
     },
     {
       "name": "mark",
       "label": "Mark",
       "description": "Pen marks made on a page...",
-      "subfields": ["en", "fr", "la", "it", "el", "es", "de", "ofr", "keyword"],
+      "has_subfields": true,
       "values": [
         { "value": "plus_sign", "label": "Plus Sign" },
         { "value": "dash", "label": "Dash" }
@@ -89,9 +89,9 @@ The `service/jhsearch.json` file is a static JSON file generated per collection.
 
 | Key | Description |
 |-----|-------------|
-| `fields` | Array of searchable fields. Each has `name`, `label`, `description`, optional `subfields` (language sub-field names), and optional `values` (enumerated values). |
-| `fields[].name` | The Opensearch field name. For fields with subfields, query as `name.subfield` (e.g., `marginalia.en`, `mark.keyword`). |
-| `fields[].subfields` | Array of sub-field names. Includes language codes for text search and `keyword` for type/name lookup. |
+| `fields` | Array of searchable fields. Each has `name`, `label`, `description`, optional `has_subfields` boolean, and optional `values` (enumerated values). |
+| `fields[].name` | The Opensearch field name. |
+| `fields[].has_subfields` | Boolean indicating whether the field has language sub-fields (e.g., `.en`, `.fr`, `.la`) and/or a `.keyword` sub-field. When true, use `name.*` wildcard in multi_match queries. |
 | `fields[].values` | Array of `{value, label}` pairs for fields with enumerated keyword values (searched via `field.keyword`). |
 | `categories` | Array of facet categories. Each `name` is an Opensearch keyword field suitable for `terms` aggregations. |
 | `default-fields` | Array of field names searched when no explicit field is specified in the query. |
@@ -103,7 +103,7 @@ The `service/jhsearch.json` file is a static JSON file generated per collection.
 2. Find the `JHSearchService2` entry in the `service` array.
 3. Dereference the service `id` to fetch `service/jhsearch.json`.
 4. Use the `fields` and `categories` to build a search UI.
-5. For fields with `subfields`, construct queries against `fieldName.subfield` (e.g., `marginalia.en`, `mark.keyword`).
+5. For fields with `has_subfields: true`, use `fieldName.*` wildcard in multi_match queries to search all sub-fields.
 6. For fields with `values`, present enumerated options and query `field.keyword: "value"`.
 7. Send queries to the `opensearch` endpoint using the Opensearch query DSL.
 
@@ -241,10 +241,25 @@ done
 
 ### Search Marginalia for a Specific Term
 
+Search a specific language sub-field directly:
+
 ```json
 {
   "query": {
     "match": { "marginalia.en": "astronomy" }
+  }
+}
+```
+
+Or use the wildcard pattern to search all language sub-fields:
+
+```json
+{
+  "query": {
+    "multi_match": {
+      "query": "astronomy",
+      "fields": ["marginalia.*"]
+    }
   }
 }
 ```
@@ -261,12 +276,14 @@ done
 
 ### Search Mark Text Content
 
+Use a wildcard to search all language sub-fields of a field:
+
 ```json
 {
   "query": {
     "multi_match": {
       "query": "important passage",
-      "fields": ["mark.en", "mark.la", "mark.fr"]
+      "fields": ["mark.*"]
     }
   }
 }
@@ -274,18 +291,20 @@ done
 
 ### Cross-Field Search Across Multiple Annotation Types
 
+Use wildcards to search all sub-fields of multiple fields:
+
 ```json
 {
   "query": {
     "multi_match": {
       "query": "philosophia naturalis",
       "fields": [
-        "marginalia.la",
-        "underline.la",
-        "cross_reference.la",
-        "drawing.la",
-        "graph.la",
-        "table.la"
+        "marginalia.*",
+        "underline.*",
+        "cross_reference.*",
+        "drawing.*",
+        "graph.*",
+        "table.*"
       ],
       "type": "best_fields"
     }

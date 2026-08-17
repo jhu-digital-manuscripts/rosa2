@@ -39,32 +39,25 @@ export const mockJHSearchService = {
   default_fields: ['label', 'description'],
   fields: [
     {
-      names: ['label'],
+      name: 'label',
       label: 'Title',
       description: 'The title or name of the item',
-      type: 'text',
-      index: 'manifest',
     },
     {
-      names: ['description'],
+      name: 'description',
       label: 'Description',
       description: 'A description of the item',
-      type: 'text',
-      index: 'manifest',
     },
     {
-      names: ['text'],
+      name: 'text',
       label: 'Text',
       description: 'Full text content',
-      type: 'text',
-      index: 'canvas',
+      has_subfields: true,
     },
     {
-      names: ['origin'],
+      name: 'origin',
       label: 'Origin',
       description: 'Place of origin',
-      type: 'facet',
-      index: 'manifest',
     },
   ],
   categories: [

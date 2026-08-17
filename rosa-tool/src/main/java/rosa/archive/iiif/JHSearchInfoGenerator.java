@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * Generates service/jhsearch.json files per collection for the JHSearch service.
  *
- * <p>The JSON structure contains fields (with optional subfields and enumerated values),
+ * <p>The JSON structure contains fields (with optional has_subfields flag and enumerated values),
  * categories, default-fields, and the Opensearch endpoint URL that clients can use
  * for search queries.
  *
@@ -19,23 +19,13 @@ import java.util.Map;
  * defined in the {@code opensearch/} directory so clients can construct valid queries.
  *
  * <p>The system uses two indexes: {@code manifest} (one doc per book) and {@code canvas}
- * (one doc per page with all annotations merged in). Fields that have a {@code keyword}
- * sub-field (mark, symbol, drawing, calculation, graph, table) support both enumerated
- * keyword search (via {@code field.keyword}) and free-text search (via {@code field.en}, etc.).
+ * (one doc per page with all annotations merged in). Fields that have subfields (language
+ * variants or keyword) are marked with {@code has_subfields: true}. Clients should use
+ * {@code field.*} wildcard syntax in multi_match queries to search all subfields.
  */
 public final class JHSearchInfoGenerator {
 
     private final ObjectMapper mapper;
-
-    /**
-     * Language sub-fields available in the canvas index for multi-language text fields.
-     */
-    private static final List<String> LANG_SUBFIELDS = List.of("en", "fr", "la", "it", "el", "es", "de", "ofr");
-
-    /**
-     * Language sub-fields available in the manifests index for the title field.
-     */
-    private static final List<String> MANIFEST_TITLE_SUBFIELDS = List.of("en", "fr", "ofr", "la", "el", "it", "es");
 
     // Per-collection search fields (using opensearch field names from the canvas index)
     private static final Map<String, List<String>> SEARCH_FIELDS = Map.of(
@@ -91,25 +81,9 @@ public final class JHSearchInfoGenerator {
                 fieldNode.put("label", meta.label);
                 fieldNode.put("description", meta.description);
 
-                // Add subfields if this field has language sub-fields
-                if (meta.subfields != null && !meta.subfields.isEmpty()) {
-                    ArrayNode subfieldsArray = mapper.createArrayNode();
-                    for (String subfield : meta.subfields) {
-                        subfieldsArray.add(subfield);
-                    }
-                    fieldNode.set("subfields", subfieldsArray);
-                }
-
-                // Add "keyword" to subfields if this field has a keyword sub-field
-                if (meta.hasKeywordSubField) {
-                    ArrayNode subfieldsArray;
-                    if (fieldNode.has("subfields")) {
-                        subfieldsArray = (ArrayNode) fieldNode.get("subfields");
-                    } else {
-                        subfieldsArray = mapper.createArrayNode();
-                        fieldNode.set("subfields", subfieldsArray);
-                    }
-                    subfieldsArray.add("keyword");
+                // Add has_subfields boolean if this field has language sub-fields or keyword sub-field
+                if (meta.hasSubfields) {
+                    fieldNode.put("has_subfields", true);
                 }
 
                 if (meta.values != null && !meta.values.isEmpty()) {
@@ -158,96 +132,96 @@ public final class JHSearchInfoGenerator {
 
     private FieldMetadata getFieldMetadata(String fieldName) {
         return switch (fieldName) {
-            // Canvas index: per-type multi-language text fields
+            // Canvas index: per-type multi-language text fields (has_subfields = true)
             case "marginalia" -> new FieldMetadata("Marginalia",
                     "Notes written by a reader.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
             case "underline" -> new FieldMetadata("Underline",
                     "Words or phrases in the printed text that have been underlined.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
             case "mark" -> new FieldMetadata("Mark",
-                    "Pen marks made on a page that may not have consistent abstract meaning. Search mark.keyword for specific mark types, or mark.<lang> for referenced text.",
-                    LANG_SUBFIELDS, true, markValues());
+                    "Pen marks made on a page that may not have consistent abstract meaning. Search mark.keyword for specific mark types, or mark.* for referenced text.",
+                    true, markValues());
             case "symbol" -> new FieldMetadata("Symbol",
-                    "Simple drawings that carry some abstract and consistent meaning. Search symbol.keyword for specific symbols, or symbol.<lang> for referenced text.",
-                    LANG_SUBFIELDS, true, symbolValues());
+                    "Simple drawings that carry some abstract and consistent meaning. Search symbol.keyword for specific symbols, or symbol.* for referenced text.",
+                    true, symbolValues());
             case "errata" -> new FieldMetadata("Errata",
                     "Corrections made by a reader to the printed text.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
             case "numeral" -> new FieldMetadata("Numeral",
                     "Numbers written in the book.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
             case "drawing" -> new FieldMetadata("Drawing",
-                    "Drawings or diagrams. Search drawing.keyword for specific drawing types, or drawing.<lang> for text.",
-                    LANG_SUBFIELDS, true, drawingValues());
+                    "Drawings or diagrams. Search drawing.keyword for specific drawing types, or drawing.* for text.",
+                    true, drawingValues());
             case "emphasis" -> new FieldMetadata("Emphasis",
                     "Words or phrases within the readers marginal notes that have been underlined or otherwise emphasized.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
             case "cross_reference" -> new FieldMetadata("Cross Reference",
                     "Quotes from sources not explicitly identified by the reader.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
             case "calculation" -> new FieldMetadata("Calculation",
                     "Search through annotations used as calculations.",
-                    LANG_SUBFIELDS, true, null);
+                    true, null);
             case "graph" -> new FieldMetadata("Graph",
                     "Search through graphs.",
-                    LANG_SUBFIELDS, true, null);
+                    true, null);
             case "table" -> new FieldMetadata("Table",
                     "Search through table annotations.",
-                    LANG_SUBFIELDS, true, null);
+                    true, null);
             case "transcription" -> new FieldMetadata("Transcription",
                     "Search within transcriptions of manuscript texts.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
             case "illustration" -> new FieldMetadata("Illustrations",
                     "Search within the descriptions of illustrations.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
             case "translation" -> new FieldMetadata("Translation",
                     "Search within translated text.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
             case "anchor_text" -> new FieldMetadata("Anchor Text",
                     "Text from drawings and tables.",
-                    LANG_SUBFIELDS, false, null);
+                    true, null);
 
-            // Manifest index: multi-language title field
+            // Manifest index: multi-language title field (has_subfields = true)
             case "title" -> new FieldMetadata("Title", "Search titles of items.",
-                    MANIFEST_TITLE_SUBFIELDS, false, null);
+                    true, null);
 
-            // Canvas index: keyword fields
+            // Canvas index: keyword fields (no subfields)
             case "people" -> new FieldMetadata("People",
                     "Search for names of people within metadata and transcriptions.",
-                    null, false, null);
+                    false, null);
             case "locations" -> new FieldMetadata("Place",
                     "Search for places and locations within metadata and transcriptions.",
-                    null, false, null);
+                    false, null);
             case "books" -> new FieldMetadata("Book",
                     "Titles of books that are referenced in text or annotations.",
-                    null, false, null);
+                    false, null);
             case "language" -> new FieldMetadata("Language",
                     "Language of the annotations.",
-                    null, false, languageValues());
+                    false, languageValues());
             case "marginalia_language" -> new FieldMetadata("Marginalia Language",
                     "Language used specifically within marginalia text.",
-                    null, false, languageValues());
+                    false, languageValues());
             case "method" -> new FieldMetadata("Method",
                     "Implement used to create mark or underline.",
-                    null, false, methodValues());
+                    false, methodValues());
             case "hand" -> new FieldMetadata("Hand",
                     "The hand in which an annotation was written.",
-                    null, false, null);
+                    false, null);
             case "annotator" -> new FieldMetadata("Annotator",
                     "Author of annotations.",
-                    null, false, null);
+                    false, null);
             case "char_name" -> new FieldMetadata("Character Names",
                     "Search names of characters in the Roman de la Rose.",
-                    null, false, null);
+                    false, null);
 
-            // Manifest index: text fields
+            // Manifest index: text fields (no subfields)
             case "description" -> new FieldMetadata("Description",
                     "Search within the metadata for the collection.",
-                    null, false, null);
+                    false, null);
             case "repository" -> new FieldMetadata("Repository",
                     "Search for names of repositories in which manuscripts are currently held.",
-                    null, false, null);
+                    false, null);
 
             default -> null;
         };
@@ -425,8 +399,8 @@ public final class JHSearchInfoGenerator {
         return values;
     }
 
-    private record FieldMetadata(String label, String description, List<String> subfields,
-                                  boolean hasKeywordSubField, Map<String, String> values) {}
+    private record FieldMetadata(String label, String description, boolean hasSubfields,
+                                  Map<String, String> values) {}
 
     private record CategoryMetadata(String fieldName, String label, Integer quantizeInterval) {
         CategoryMetadata(String fieldName, String label) {
