@@ -1,0 +1,62 @@
+# Latin orthographic normalization mappings for OpenSearch
+# Used with the mapping char_filter to normalize spelling variations
+# in early modern and medieval Latin texts.
+#
+# Format: source => target
+# Multiple sources can map to the same target on separate lines.
+
+# =============================================================================
+# U/V Normalization
+# =============================================================================
+# In classical and medieval Latin, U and V were the same letter.
+# Early modern printed texts often use V at word-initial position
+# and U elsewhere, regardless of vowel/consonant distinction.
+# We normalize V → U for consistency with modern Latin conventions.
+
+V => U
+v => u
+
+# =============================================================================
+# J → I Normalization  
+# =============================================================================
+# J developed from I in the early modern period. In Latin, J is 
+# essentially a variant of I used for consonantal sounds.
+# We normalize J → I for consistency with classical orthography.
+
+J => I
+j => i
+
+# =============================================================================
+# Ligature Expansion
+# =============================================================================
+# Medieval and early modern texts may use ligatures for diphthongs.
+# We expand these to their component letters.
+
+# AE ligature
+Æ => AE
+æ => ae
+
+# OE ligature  
+Œ => OE
+œ => oe
+
+# =============================================================================
+# Long S Normalization
+# =============================================================================
+# The long s (ſ) was commonly used in early modern printing.
+# It appears in non-final positions within words.
+
+ſ => s
+
+# =============================================================================
+# Additional Medieval Latin Variations
+# =============================================================================
+# Some texts use Y for I in Greek loanwords or hypercorrections
+
+# Uncomment if needed for your corpus:
+# Y => I
+# y => i
+
+# Double letters sometimes written with macron or tilde
+# These are typically handled by asciifolding, but explicit mappings
+# can be added here if needed.

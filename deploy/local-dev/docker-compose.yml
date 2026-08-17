@@ -17,6 +17,8 @@ services:
     volumes:
       - osdata:/usr/share/opensearch/data
       - ./opensearch.yml:/usr/share/opensearch/config/opensearch.yml:Z
+      - ../opensearch/latin-stemmer-rules.txt:/usr/share/opensearch/config/analyzers/latin-stemmer-rules.txt:Z
+      - ../opensearch/latin-charmap.txt:/usr/share/opensearch/config/analyzers/latin-charmap.txt:Z
     ports:
       - "9200:9200"
 

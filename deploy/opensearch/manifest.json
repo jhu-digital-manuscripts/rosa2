@@ -1,11 +1,18 @@
 {
   "settings": {
     "analysis": {
+      "char_filter": {
+        "latin_char_normalizer": {
+          "type": "mapping",
+          "mappings_path": "analyzers/latin-charmap.txt"
+        }
+      },
       "analyzer": {
         "latin": {
           "type": "custom",
+          "char_filter": ["latin_char_normalizer"],
           "tokenizer": "standard",
-          "filter": ["lowercase", "asciifolding"]
+          "filter": ["lowercase", "latin_stemmer", "asciifolding"]
         },
         "old_french": {
           "type": "custom",
@@ -14,6 +21,10 @@
         }
       },
       "filter": {
+        "latin_stemmer": {
+          "type": "stemmer_override",
+          "rules_path": "analyzers/latin-stemmer-rules.txt"
+        },
         "french_stemmer": {
           "type": "stemmer",
           "language": "light_french"
