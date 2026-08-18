@@ -221,6 +221,12 @@ export function jhsearchReducer(state = initialState, action) {
           ...state.ui,
           viewMode: action.payload,
         },
+        // Set default sort for the new mode:
+        // - browse: Title (A-Z)
+        // - search: Relevance
+        sort: action.payload === 'browse'
+          ? { field: 'label.keyword', order: 'asc' }
+          : { field: '_score', order: 'desc' },
         pagination: {
           ...state.pagination,
           page: 0,

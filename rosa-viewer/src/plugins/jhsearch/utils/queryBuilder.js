@@ -191,7 +191,12 @@ export function buildSimpleSearchQuery({
 
   // Only add sort if not using relevance (default)
   if (sortField !== '_score') {
-    body.sort = [{ [sortField]: sortOrder }];
+    // For page_num sort, manifests don't have this field - put them last
+    if (sortField === 'page_num') {
+      body.sort = [{ [sortField]: { order: sortOrder, missing: '_last' } }];
+    } else {
+      body.sort = [{ [sortField]: sortOrder }];
+    }
   }
 
   return body;
@@ -290,7 +295,12 @@ export function buildAdvancedSearchQuery({
   };
 
   if (sortField !== '_score') {
-    body.sort = [{ [sortField]: sortOrder }];
+    // For page_num sort, manifests don't have this field - put them last
+    if (sortField === 'page_num') {
+      body.sort = [{ [sortField]: { order: sortOrder, missing: '_last' } }];
+    } else {
+      body.sort = [{ [sortField]: sortOrder }];
+    }
   }
 
   return body;

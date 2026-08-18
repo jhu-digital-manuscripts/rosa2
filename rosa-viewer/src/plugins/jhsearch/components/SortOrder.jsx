@@ -15,12 +15,14 @@ import { setSort } from '../state/actions';
 
 /**
  * Sort options available to the user.
+ * - Browse mode: Title options only (manifests don't have page_num, relevance needs a query)
+ * - Search mode: Relevance and Page Order only
  */
 const SORT_OPTIONS = [
-  { value: '_score:desc', label: 'Relevance', field: '_score', order: 'desc', searchOnly: true },
-  { value: 'label.keyword:asc', label: 'Title (A-Z)', field: 'label.keyword', order: 'asc', searchOnly: false },
-  { value: 'label.keyword:desc', label: 'Title (Z-A)', field: 'label.keyword', order: 'desc', searchOnly: false },
-  { value: 'page_num:asc', label: 'Page Order', field: 'page_num', order: 'asc', searchOnly: false },
+  { value: '_score:desc', label: 'Relevance', field: '_score', order: 'desc', modes: ['search'] },
+  { value: 'label.keyword:asc', label: 'Title (A-Z)', field: 'label.keyword', order: 'asc', modes: ['browse'] },
+  { value: 'label.keyword:desc', label: 'Title (Z-A)', field: 'label.keyword', order: 'desc', modes: ['browse'] },
+  { value: 'page_num:asc', label: 'Page Order', field: 'page_num', order: 'asc', modes: ['search'] },
 ];
 
 /**
@@ -37,26 +39,17 @@ export function SortOrder() {
   const currentValue = `${sortField}:${sortOrder}`;
 
   // Filter options based on view mode
-  // Relevance only makes sense when searching
-  const availableOptions = SORT_OPTIONS.filter((option) => {
-    if (option.searchOnly && viewMode !== 'search') {
-      return false;
-    }
-    return true;
-  });
+  const availableOptions = SORT_OPTIONS.filter((option) => option.modes.includes(viewMode));
 
   // If current sort is not in available options, switch to default for this mode
+  // This effect is a fallback; the reducer should set the default when mode changes
   useEffect(() => {
     const isCurrentValueAvailable = availableOptions.some(
       (option) => option.value === currentValue
     );
     
     if (!isCurrentValueAvailable && availableOptions.length > 0) {
-      // In browse mode, default to Title (A-Z)
-      const defaultOption = availableOptions.find(
-        (option) => option.value === 'label.keyword:asc'
-      ) || availableOptions[0];
-      
+      const defaultOption = availableOptions[0];
       dispatch(setSort(defaultOption.field, defaultOption.order));
     }
   }, [viewMode, currentValue, availableOptions, dispatch]);
