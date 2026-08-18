@@ -2,30 +2,137 @@
   "settings": {
     "analysis": {
       "char_filter": {
+        "strip_brackets": {
+          "type": "pattern_replace",
+          "pattern": "[\\[\\]]",
+          "replacement": ""
+        },
         "latin_char_normalizer": {
           "type": "mapping",
           "mappings_path": "analyzers/latin-charmap.txt"
         }
       },
       "analyzer": {
+        "english_stripped": {
+          "type": "custom",
+          "char_filter": ["strip_brackets"],
+          "tokenizer": "standard",
+          "filter": ["lowercase", "english_possessive_stemmer", "english_stop", "english_stemmer"]
+        },
+        "french_stripped": {
+          "type": "custom",
+          "char_filter": ["strip_brackets"],
+          "tokenizer": "standard",
+          "filter": ["lowercase", "french_elision", "french_stop", "french_stemmer"]
+        },
+        "italian_stripped": {
+          "type": "custom",
+          "char_filter": ["strip_brackets"],
+          "tokenizer": "standard",
+          "filter": ["lowercase", "italian_elision", "italian_stop", "italian_stemmer"]
+        },
+        "greek_stripped": {
+          "type": "custom",
+          "char_filter": ["strip_brackets"],
+          "tokenizer": "standard",
+          "filter": ["lowercase", "greek_stop", "greek_stemmer"]
+        },
+        "spanish_stripped": {
+          "type": "custom",
+          "char_filter": ["strip_brackets"],
+          "tokenizer": "standard",
+          "filter": ["lowercase", "spanish_stop", "spanish_stemmer"]
+        },
+        "german_stripped": {
+          "type": "custom",
+          "char_filter": ["strip_brackets"],
+          "tokenizer": "standard",
+          "filter": ["lowercase", "german_stop", "german_normalization", "german_stemmer"]
+        },
         "latin": {
           "type": "custom",
-          "char_filter": ["latin_char_normalizer"],
+          "char_filter": ["strip_brackets", "latin_char_normalizer"],
           "tokenizer": "standard",
           "filter": ["lowercase", "latin_stemmer", "asciifolding"]
         },
         "old_french": {
           "type": "custom",
+          "char_filter": ["strip_brackets"],
           "tokenizer": "standard",
-          "filter": ["lowercase", "french_stemmer", "asciifolding"]
+          "filter": ["lowercase", "old_french_stemmer", "asciifolding"]
         }
       },
       "filter": {
+        "english_possessive_stemmer": {
+          "type": "stemmer",
+          "language": "possessive_english"
+        },
+        "english_stop": {
+          "type": "stop",
+          "stopwords": "_english_"
+        },
+        "english_stemmer": {
+          "type": "stemmer",
+          "language": "english"
+        },
+        "french_elision": {
+          "type": "elision",
+          "articles_case": true,
+          "articles": ["l", "m", "t", "qu", "n", "s", "j", "d", "c", "jusqu", "quoiqu", "lorsqu", "puisqu"]
+        },
+        "french_stop": {
+          "type": "stop",
+          "stopwords": "_french_"
+        },
+        "french_stemmer": {
+          "type": "stemmer",
+          "language": "light_french"
+        },
+        "italian_elision": {
+          "type": "elision",
+          "articles_case": true,
+          "articles": ["c", "l", "all", "dall", "dell", "nell", "sull", "coll", "pell", "gl", "agl", "dagl", "degl", "negl", "sugl", "un", "m", "t", "s", "v", "d"]
+        },
+        "italian_stop": {
+          "type": "stop",
+          "stopwords": "_italian_"
+        },
+        "italian_stemmer": {
+          "type": "stemmer",
+          "language": "light_italian"
+        },
+        "greek_stop": {
+          "type": "stop",
+          "stopwords": "_greek_"
+        },
+        "greek_stemmer": {
+          "type": "stemmer",
+          "language": "greek"
+        },
+        "spanish_stop": {
+          "type": "stop",
+          "stopwords": "_spanish_"
+        },
+        "spanish_stemmer": {
+          "type": "stemmer",
+          "language": "light_spanish"
+        },
+        "german_stop": {
+          "type": "stop",
+          "stopwords": "_german_"
+        },
+        "german_normalization": {
+          "type": "german_normalization"
+        },
+        "german_stemmer": {
+          "type": "stemmer",
+          "language": "light_german"
+        },
         "latin_stemmer": {
           "type": "stemmer_override",
           "rules_path": "analyzers/latin-stemmer-rules.txt"
         },
-        "french_stemmer": {
+        "old_french_stemmer": {
           "type": "stemmer",
           "language": "light_french"
         }
@@ -49,26 +156,26 @@
       "marginalia": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
       "underline": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
@@ -76,13 +183,13 @@
         "type": "object",
         "properties": {
           "keyword": { "type": "keyword" },
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
@@ -90,39 +197,39 @@
         "type": "object",
         "properties": {
           "keyword": { "type": "keyword" },
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
       "errata": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
       "numeral": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
@@ -130,39 +237,39 @@
         "type": "object",
         "properties": {
           "keyword": { "type": "keyword" },
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
       "emphasis": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
       "cross_reference": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
@@ -170,13 +277,13 @@
         "type": "object",
         "properties": {
           "keyword": { "type": "keyword" },
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
@@ -184,13 +291,13 @@
         "type": "object",
         "properties": {
           "keyword": { "type": "keyword" },
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
@@ -198,65 +305,65 @@
         "type": "object",
         "properties": {
           "keyword": { "type": "keyword" },
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
       "transcription": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
       "illustration": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
       "translation": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
       "anchor_text": {
         "type": "object",
         "properties": {
-          "en": { "type": "text", "analyzer": "english" },
-          "fr": { "type": "text", "analyzer": "french" },
+          "en": { "type": "text", "analyzer": "english_stripped" },
+          "fr": { "type": "text", "analyzer": "french_stripped" },
           "la": { "type": "text", "analyzer": "latin" },
-          "it": { "type": "text", "analyzer": "italian" },
-          "el": { "type": "text", "analyzer": "greek" },
-          "es": { "type": "text", "analyzer": "spanish" },
-          "de": { "type": "text", "analyzer": "german" },
+          "it": { "type": "text", "analyzer": "italian_stripped" },
+          "el": { "type": "text", "analyzer": "greek_stripped" },
+          "es": { "type": "text", "analyzer": "spanish_stripped" },
+          "de": { "type": "text", "analyzer": "german_stripped" },
           "ofr": { "type": "text", "analyzer": "old_french" }
         }
       },
