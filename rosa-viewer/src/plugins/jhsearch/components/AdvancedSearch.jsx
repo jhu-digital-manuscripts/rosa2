@@ -2,7 +2,7 @@
  * AdvancedSearch component - multi-field search with boolean operators.
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -13,12 +13,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import Tooltip from '@mui/material/Tooltip';
-import Collapse from '@mui/material/Collapse';
-import Typography from '@mui/material/Typography';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -27,14 +23,13 @@ import {
   setAdvancedRow,
   addAdvancedRow,
   removeAdvancedRow,
-  setSearchMode,
   setViewMode,
 } from '../state/actions';
 
 /**
  * Single row in the advanced search form.
  */
-function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, showOperator }) {
+function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, onSubmit, showOperator }) {
   const handleFieldChange = (event) => {
     onUpdate(index, { ...row, field: event.target.value });
   };
@@ -45,6 +40,13 @@ function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, showOperato
 
   const handleOperatorChange = (event) => {
     onUpdate(index, { ...row, operator: event.target.value });
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      onSubmit();
+    }
   };
 
   const fieldDef = fields.find((f) => f.name === row.field);
@@ -112,6 +114,7 @@ function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, showOperato
           placeholder="Search term..."
           value={row.value || ''}
           onChange={handleValueChange}
+          onKeyDown={handleKeyDown}
           sx={{ flex: 2 }}
         />
       )}
@@ -139,39 +142,59 @@ function AdvancedSearchRow({ row, index, fields, onUpdate, onRemove, showOperato
 
 /**
  * AdvancedSearch provides field-specific search with boolean operators.
+ * Uses local state for input values and only commits to Redux on submit.
  */
 export function AdvancedSearch() {
   const dispatch = useDispatch();
-  const [expanded, setExpanded] = useState(false);
 
-  const rows = useSelector(selectors.getAdvancedRows);
+  const reduxRows = useSelector(selectors.getAdvancedRows);
   const fields = useSelector(selectors.getFields);
-  const searchMode = useSelector(selectors.getSearchMode);
 
-  const handleToggle = () => {
-    setExpanded(!expanded);
-  };
+  // Local state for form values - only synced to Redux on submit
+  const [localRows, setLocalRows] = useState(reduxRows);
+
+  // Sync local state when Redux state changes externally (e.g., clearSearch)
+  useEffect(() => {
+    setLocalRows(reduxRows);
+  }, [reduxRows]);
 
   const handleUpdateRow = (index, row) => {
-    dispatch(setAdvancedRow(index, row));
+    const newRows = [...localRows];
+    newRows[index] = row;
+    setLocalRows(newRows);
   };
 
   const handleAddRow = () => {
-    dispatch(addAdvancedRow());
+    setLocalRows([...localRows, { field: '', value: '', operator: 'AND' }]);
   };
 
   const handleRemoveRow = (index) => {
-    dispatch(removeAdvancedRow(index));
+    const newRows = localRows.filter((_, i) => i !== index);
+    // Ensure at least one row remains
+    if (newRows.length === 0) {
+      newRows.push({ field: '', value: '', operator: 'AND' });
+    }
+    setLocalRows(newRows);
   };
 
   const handleSearch = () => {
-    // Switch to advanced search mode
-    if (searchMode !== 'advanced') {
-      dispatch(setSearchMode('advanced'));
+    // Commit local state to Redux
+    localRows.forEach((row, index) => {
+      dispatch(setAdvancedRow(index, row));
+    });
+
+    // Handle removed rows - if local has fewer rows than redux
+    while (reduxRows.length > localRows.length) {
+      dispatch(removeAdvancedRow(localRows.length));
     }
 
-    // Check if any row has a value
-    const hasValue = rows.some((row) => row.value && row.value.trim());
+    // Handle added rows - if local has more rows than redux
+    for (let i = reduxRows.length; i < localRows.length; i++) {
+      dispatch(addAdvancedRow(localRows[i]));
+    }
+
+    // Check if any row has a value and set view mode
+    const hasValue = localRows.some((row) => row.value && row.value.trim());
     if (hasValue) {
       dispatch(setViewMode('search'));
     } else {
@@ -181,56 +204,41 @@ export function AdvancedSearch() {
 
   return (
     <Box>
-      {/* Toggle button */}
-      <Button
-        fullWidth
-        variant="text"
-        onClick={handleToggle}
-        endIcon={expanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-        sx={{ justifyContent: 'space-between', textTransform: 'none' }}
-      >
-        <Typography variant="body2">Advanced Search</Typography>
-      </Button>
+      {/* Search rows */}
+      {localRows.map((row, index) => (
+        <AdvancedSearchRow
+          key={index}
+          row={row}
+          index={index}
+          fields={fields}
+          onUpdate={handleUpdateRow}
+          onRemove={handleRemoveRow}
+          onSubmit={handleSearch}
+          showOperator={index > 0}
+        />
+      ))}
 
-      {/* Collapsible content */}
-      <Collapse in={expanded}>
-        <Box sx={{ pt: 1 }}>
-          {/* Search rows */}
-          {rows.map((row, index) => (
-            <AdvancedSearchRow
-              key={index}
-              row={row}
-              index={index}
-              fields={fields}
-              onUpdate={handleUpdateRow}
-              onRemove={handleRemoveRow}
-              showOperator={index > 0}
-            />
-          ))}
+      {/* Add row and Search buttons */}
+      <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
+        <Button
+          size="small"
+          startIcon={<AddIcon />}
+          onClick={handleAddRow}
+          sx={{ textTransform: 'none' }}
+        >
+          Add Field
+        </Button>
 
-          {/* Add row button */}
-          <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
-            <Button
-              size="small"
-              startIcon={<AddIcon />}
-              onClick={handleAddRow}
-              sx={{ textTransform: 'none' }}
-            >
-              Add Field
-            </Button>
-
-            <Button
-              size="small"
-              variant="contained"
-              startIcon={<SearchIcon />}
-              onClick={handleSearch}
-              sx={{ ml: 'auto' }}
-            >
-              Search
-            </Button>
-          </Box>
-        </Box>
-      </Collapse>
+        <Button
+          size="small"
+          variant="contained"
+          startIcon={<SearchIcon />}
+          onClick={handleSearch}
+          sx={{ ml: 'auto' }}
+        >
+          Search
+        </Button>
+      </Box>
     </Box>
   );
 }

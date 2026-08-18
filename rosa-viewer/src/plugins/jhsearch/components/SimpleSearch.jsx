@@ -11,7 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
 
 import * as selectors from '../state/selectors';
-import { setSimpleQuery, setSearchMode, setViewMode } from '../state/actions';
+import { setSimpleQuery, setViewMode } from '../state/actions';
 
 /**
  * SimpleSearch provides a single search input for quick searching.
@@ -19,7 +19,6 @@ import { setSimpleQuery, setSearchMode, setViewMode } from '../state/actions';
 export function SimpleSearch() {
   const dispatch = useDispatch();
   const currentQuery = useSelector(selectors.getSimpleQuery);
-  const searchMode = useSelector(selectors.getSearchMode);
 
   // Local state for input value (debounced submit)
   const [inputValue, setInputValue] = useState(currentQuery);
@@ -33,21 +32,16 @@ export function SimpleSearch() {
       if (event) {
         event.preventDefault();
       }
-      
-      // Switch to simple search mode if needed
-      if (searchMode !== 'simple') {
-        dispatch(setSearchMode('simple'));
-      }
-      
+
       if (inputValue.trim()) {
         dispatch(setViewMode('search'));
       } else {
         dispatch(setViewMode('browse'));
       }
-      
+
       dispatch(setSimpleQuery(inputValue.trim()));
     },
-    [dispatch, inputValue, searchMode]
+    [dispatch, inputValue]
   );
 
   const handleClear = () => {
