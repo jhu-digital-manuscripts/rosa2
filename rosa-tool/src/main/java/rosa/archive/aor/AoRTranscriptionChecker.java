@@ -132,7 +132,7 @@ public final class AoRTranscriptionChecker {
                     String id = annotation.getId();
                     if (id != null && !id.isBlank()) {
                         String location = book + "/" + xmlFile + "#" + id;
-                        allAnnotationIds.computeIfAbsent(id, k -> new ArrayList<>()).add(location);
+                        allAnnotationIds.computeIfAbsent(id, _ -> new ArrayList<>()).add(location);
                     }
                 }
             }

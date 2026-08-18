@@ -45,10 +45,11 @@ final class TranscriptionXmlExtractor {
     /**
      * Parses a transcription XML fragment and extracts categorized text content.
      *
+     * @paran
      * @param xml the transcription XML fragment for a single page
      * @return the extraction result with categorized text, or empty fields on parse failure
      */
-    static Result extract(String xml) {
+    static Result extract(String name, String xml) {
         if (xml == null || xml.isBlank()) {
             return new Result("", "", "", "", "", "", "");
         }
@@ -60,7 +61,7 @@ final class TranscriptionXmlExtractor {
             parser.parse(new InputSource(new StringReader(xml)), handler);
             return handler.getResult();
         } catch (ParserConfigurationException | SAXException | IOException e) {
-            log.log(Level.WARNING, "Failed to parse transcription XML fragment.", e);
+            log.log(Level.WARNING, "Failed to parse transcription XML fragment from " + name, e);
             return new Result("", "", "", "", "", "", "");
         }
     }

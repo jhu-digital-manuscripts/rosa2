@@ -63,7 +63,7 @@ class Rosa2CliTest {
         StringWriter err = new StringWriter();
         CommandLine cmd = new CommandLine(new Rosa2Cli());
         cmd.setErr(new PrintWriter(err));
-        cmd.setParameterExceptionHandler((ex, args) -> {
+        cmd.setParameterExceptionHandler((ex, _) -> {
             cmd.getErr().println("Error: " + ex.getMessage());
             cmd.usage(cmd.getErr());
             return 1;
@@ -79,7 +79,7 @@ class Rosa2CliTest {
         StringWriter err = new StringWriter();
         CommandLine cmd = new CommandLine(new Rosa2Cli());
         cmd.setErr(new PrintWriter(err));
-        cmd.setParameterExceptionHandler((ex, args) -> {
+        cmd.setParameterExceptionHandler((ex, _) -> {
             CommandLine subCmd = ex.getCommandLine();
             subCmd.getErr().println("Error: " + ex.getMessage());
             subCmd.usage(subCmd.getErr());

@@ -1,17 +1,24 @@
 package rosa.archive.aor;
 
-import net.jqwik.api.*;
-import net.jqwik.api.constraints.IntRange;
-import net.jqwik.api.constraints.Size;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import net.jqwik.api.Arbitraries;
+import net.jqwik.api.Arbitrary;
+import net.jqwik.api.Assume;
+import net.jqwik.api.ForAll;
+import net.jqwik.api.Property;
+import net.jqwik.api.Provide;
 
 /**
  * Property-based tests for AoR transcription checker.

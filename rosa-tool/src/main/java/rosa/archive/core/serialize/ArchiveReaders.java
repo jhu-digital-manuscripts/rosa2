@@ -1,10 +1,27 @@
 package rosa.archive.core.serialize;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+
 import rosa.archive.core.ArchiveNameParser;
 import rosa.archive.core.util.CSV;
 import rosa.archive.model.BiblioData;
@@ -35,7 +52,6 @@ import rosa.archive.model.aor.Errata;
 import rosa.archive.model.aor.Graph;
 import rosa.archive.model.aor.GraphNode;
 import rosa.archive.model.aor.GraphText;
-import rosa.archive.model.aor.InternalReference;
 import rosa.archive.model.aor.Location;
 import rosa.archive.model.aor.Marginalia;
 import rosa.archive.model.aor.MarginaliaLanguage;
@@ -43,7 +59,6 @@ import rosa.archive.model.aor.Mark;
 import rosa.archive.model.aor.Numeral;
 import rosa.archive.model.aor.PhysicalLink;
 import rosa.archive.model.aor.Position;
-import rosa.archive.model.aor.ReferenceTarget;
 import rosa.archive.model.aor.Symbol;
 import rosa.archive.model.aor.Table;
 import rosa.archive.model.aor.TableCell;
@@ -51,21 +66,6 @@ import rosa.archive.model.aor.TableHeader;
 import rosa.archive.model.aor.TextEl;
 import rosa.archive.model.aor.Underline;
 import rosa.archive.model.aor.XRef;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Collection of reader methods for parsing archive data files (CSV, XML, TXT, HTML)
@@ -1176,20 +1176,6 @@ public final class ArchiveReaders {
         }
 
         return pos;
-    }
-
-    private static InternalReference buildInternalRef(Element el) {
-        InternalReference ref = new InternalReference();
-        ref.setText(el.getAttribute("text"));
-
-        for (Element targetEl : getDirectChildElements("target", el)) {
-            String targetFilename = targetEl.getAttribute("filename");
-            String targetBookId = targetEl.getAttribute("book_id");
-            String targetText = targetEl.getAttribute("text");
-            ref.getTargets().add(new ReferenceTarget(targetFilename, targetText, null, null, targetFilename, targetBookId));
-        }
-
-        return ref;
     }
 
     private static Calculation buildCalculation(Element calcEl) {

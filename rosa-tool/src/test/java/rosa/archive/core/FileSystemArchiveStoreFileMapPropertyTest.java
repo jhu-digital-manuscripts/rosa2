@@ -1,8 +1,5 @@
 package rosa.archive.core;
 
-import net.jqwik.api.*;
-import net.jqwik.api.constraints.IntRange;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -11,6 +8,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.regex.Pattern;
+
+import net.jqwik.api.Arbitraries;
+import net.jqwik.api.Arbitrary;
+import net.jqwik.api.Combinators;
+import net.jqwik.api.ForAll;
+import net.jqwik.api.Property;
+import net.jqwik.api.Provide;
 
 /**
  * Property-based tests for file map generation in FileSystemArchiveStore.

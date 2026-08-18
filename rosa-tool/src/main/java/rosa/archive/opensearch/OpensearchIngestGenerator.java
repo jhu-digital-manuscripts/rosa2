@@ -10,7 +10,6 @@ import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookMetadata;
-import rosa.archive.model.BookReferenceSheet;
 import rosa.archive.model.BookText;
 import rosa.archive.model.CharacterName;
 import rosa.archive.model.CharacterNames;
@@ -54,7 +53,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.StringJoiner;
-import java.util.stream.Collectors;
 
 /**
  * Generates Opensearch bulk ingest NDJSON files from archive data.
@@ -150,24 +148,6 @@ public final class OpensearchIngestGenerator {
     }
 
     // ========== Collection ID helpers ==========
-
-    /**
-     * Computes all ancestor collection IDs for a given collection.
-     * Returns a list containing the collection itself plus all parent collections.
-     */
-    private List<String> getAncestorCollectionIds(BookCollection collection, ArchiveStore store) {
-        List<String> ids = new ArrayList<>();
-        ids.add(collection.getId());
-        String[] parents = collection.getParentCollections();
-        if (parents != null) {
-            for (String parent : parents) {
-                if (parent != null && !parent.isBlank() && !ids.contains(parent)) {
-                    ids.add(parent);
-                }
-            }
-        }
-        return ids;
-    }
 
     /**
      * Computes ancestor collection IDs using just the collection (no store needed for recursion
@@ -400,7 +380,7 @@ public final class OpensearchIngestGenerator {
         // (which carry the printed book's text language), then fall back to BookText language,
         // then to "en".
         BookMetadata metadata2 = book.getBookMetadata();
-        BiblioData biblio = book.getBiblioData("en");
+
         String defaultLang = "en";
         if (metadata2 != null && metadata2.getBookTexts() != null && !metadata2.getBookTexts().isEmpty()) {
             String textLang = metadata2.getBookTexts().get(0).getLanguage();
@@ -477,7 +457,7 @@ public final class OpensearchIngestGenerator {
             String normalizedPage = TranscriptionSplitter.normalizePageName(image.getName());
             String pageFragment = transcriptionPages.get(normalizedPage);
             if (pageFragment != null && !pageFragment.isBlank()) {
-                indexTranscription(doc, pageFragment);
+                indexTranscription(book.getId(), doc, pageFragment);
             }
         }
 
@@ -931,8 +911,8 @@ public final class OpensearchIngestGenerator {
 
     // ========== Transcription ==========
 
-    private void indexTranscription(ObjectNode doc, String content) {
-        TranscriptionXmlExtractor.Result extracted = TranscriptionXmlExtractor.extract(content);
+    private void indexTranscription(String name, ObjectNode doc, String content) {
+        TranscriptionXmlExtractor.Result extracted = TranscriptionXmlExtractor.extract(name, content);
 
         // Poetry, rubric, catchphrase → Old French
         StringBuilder ofrText = new StringBuilder();

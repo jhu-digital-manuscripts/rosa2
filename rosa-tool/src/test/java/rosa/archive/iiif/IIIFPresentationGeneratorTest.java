@@ -7,18 +7,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import rosa.archive.core.FileSystemArchiveStore;
-import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
 import rosa.archive.model.BookCollection;
 import rosa.archive.model.BookImage;
-import rosa.archive.model.BookMetadata;
 import rosa.archive.model.CollectionMetadata;
 import rosa.archive.model.ImageList;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;

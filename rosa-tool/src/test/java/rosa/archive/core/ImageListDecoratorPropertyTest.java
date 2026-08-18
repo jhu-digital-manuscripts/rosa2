@@ -1,14 +1,18 @@
 package rosa.archive.core;
 
-import net.jqwik.api.*;
-import net.jqwik.api.constraints.NotBlank;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+
+import net.jqwik.api.Arbitraries;
+import net.jqwik.api.Arbitrary;
+import net.jqwik.api.Combinators;
+import net.jqwik.api.ForAll;
+import net.jqwik.api.Property;
+import net.jqwik.api.Provide;
 
 /**
  * Property 26: Image List Decoration Label Priority

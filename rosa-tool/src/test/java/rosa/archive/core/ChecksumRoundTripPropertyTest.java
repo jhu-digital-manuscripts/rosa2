@@ -1,11 +1,5 @@
 package rosa.archive.core;
 
-import net.jqwik.api.*;
-import net.jqwik.api.constraints.IntRange;
-import net.jqwik.api.constraints.Size;
-import org.junit.jupiter.api.io.TempDir;
-import rosa.archive.core.util.HashUtil;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -13,6 +7,13 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import net.jqwik.api.Arbitraries;
+import net.jqwik.api.Arbitrary;
+import net.jqwik.api.ForAll;
+import net.jqwik.api.Property;
+import net.jqwik.api.Provide;
+import rosa.archive.core.util.HashUtil;
 
 /**
  * Property-based test for checksum round-trip integrity.

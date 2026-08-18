@@ -300,7 +300,7 @@ public final class AoRStatsCollector {
         if (text == null || text.isBlank()) {
             return;
         }
-        Map<String, Integer> wordMap = freqMaps.computeIfAbsent(key, k -> new java.util.HashMap<>());
+        Map<String, Integer> wordMap = freqMaps.computeIfAbsent(key, _ -> new java.util.HashMap<>());
         String[] tokens = text.trim().split("\\s+");
         for (String token : tokens) {
             if (!token.isEmpty()) {

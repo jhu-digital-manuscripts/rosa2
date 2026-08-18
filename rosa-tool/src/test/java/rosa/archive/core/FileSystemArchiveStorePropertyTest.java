@@ -1,15 +1,27 @@
 package rosa.archive.core;
 
-import net.jqwik.api.*;
-import net.jqwik.api.constraints.IntRange;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import net.jqwik.api.Arbitraries;
+import net.jqwik.api.Arbitrary;
+import net.jqwik.api.ForAll;
+import net.jqwik.api.Property;
+import net.jqwik.api.Provide;
 
 /**
  * Property-based tests for FileSystemArchiveStore operations.
@@ -39,7 +51,6 @@ class FileSystemArchiveStorePropertyTest {
             List<String> errors = new ArrayList<>();
 
             // Step 2: Generate a file map
-            int n = entries.size();
             // Use simple config: no covers, no flyleaves, no misc — all body pages
             store.generateFileMap("testcol", "TestBook", "NewId", false, false, 0, 0, 0, errors);
             assertTrue(errors.isEmpty(), "Expected no errors from generateFileMap: " + errors);

@@ -1,8 +1,20 @@
 package rosa.archive.iiif;
 
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+
 import rosa.archive.core.ArchiveStore;
 import rosa.archive.model.BiblioData;
 import rosa.archive.model.Book;
@@ -11,13 +23,13 @@ import rosa.archive.model.BookImage;
 import rosa.archive.model.BookImageLocation;
 import rosa.archive.model.BookMetadata;
 import rosa.archive.model.BookText;
+import rosa.archive.model.HTMLAnnotations;
 import rosa.archive.model.Illustration;
 import rosa.archive.model.IllustrationTagging;
 import rosa.archive.model.ImageList;
 import rosa.archive.model.ObjectRef;
 import rosa.archive.model.Permission;
 import rosa.archive.model.Transcription;
-import rosa.archive.model.HTMLAnnotations;
 import rosa.archive.model.aor.AnnotatedPage;
 import rosa.archive.model.aor.AnnotationLink;
 import rosa.archive.model.aor.Calculation;
@@ -39,18 +51,6 @@ import rosa.archive.model.aor.TableCell;
 import rosa.archive.model.aor.TableHeader;
 import rosa.archive.model.aor.TextEl;
 import rosa.archive.model.aor.Underline;
-import rosa.archive.model.aor.XRef;
-
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Generates IIIF Presentation API 3.0 static JSON files from archive data.
@@ -1109,7 +1109,7 @@ public final class IIIFPresentationGenerator {
             BookImage image = images.get(i);
             BookImageLocation loc = image.getLocation();
             if (loc != null) {
-                locationGroups.computeIfAbsent(loc, k -> new ArrayList<>()).add(i);
+                locationGroups.computeIfAbsent(loc, _ -> new ArrayList<>()).add(i);
             }
         }
         for (Map.Entry<BookImageLocation, List<Integer>> entry : locationGroups.entrySet()) {
@@ -1433,15 +1433,6 @@ public final class IIIFPresentationGenerator {
             return base + "/" + path;
         }
         return path;
-    }
-
-    /**
-     * Builds the image service ID for a given image.
-     * The image identifier is encoded as a single IIIF Image API path segment:
-     * slashes are percent-encoded as %2F, and the file extension is stripped.
-     */
-    private String buildImageServiceId(String baseUrl, String imageBaseUrl, String collectionId, String bookId, String imageId) {
-        return buildImageServiceId(baseUrl, imageBaseUrl, collectionId, bookId, imageId, false);
     }
 
     /**

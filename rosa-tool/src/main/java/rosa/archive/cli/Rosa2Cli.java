@@ -57,11 +57,11 @@ public final class Rosa2Cli implements Callable<Integer> {
      */
     public static void main(String[] args) {
         int exitCode = new CommandLine(new Rosa2Cli())
-                .setExecutionExceptionHandler((ex, commandLine, parseResult) -> {
+                .setExecutionExceptionHandler((ex, _, _) -> {
                     System.err.println("Error: " + ex.getMessage());
                     return 1;
                 })
-                .setParameterExceptionHandler((ex, args1) -> {
+                .setParameterExceptionHandler((ex, _) -> {
                     CommandLine cmd = ex.getCommandLine();
                     cmd.getErr().println("Error: " + ex.getMessage());
                     cmd.usage(cmd.getErr());

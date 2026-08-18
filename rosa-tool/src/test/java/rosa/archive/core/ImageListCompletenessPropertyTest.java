@@ -1,27 +1,30 @@
 package rosa.archive.core;
 
-import net.jqwik.api.*;
-import net.jqwik.api.constraints.Size;
-
-import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
+
+import javax.imageio.ImageIO;
+
+import net.jqwik.api.Arbitraries;
+import net.jqwik.api.Arbitrary;
+import net.jqwik.api.Combinators;
+import net.jqwik.api.ForAll;
+import net.jqwik.api.Property;
+import net.jqwik.api.Provide;
 
 /**
  * Property 19: Image List Completeness
  * Generated image list CSV contains exactly one entry per .tif/.jpg file and no entries for non-image files.
  */
 class ImageListCompletenessPropertyTest {
-
-    private static final Set<String> IMAGE_EXTENSIONS = Set.of(".tif", ".jpg");
-    private static final List<String> NON_IMAGE_EXTENSIONS = List.of(".xml", ".csv", ".txt", ".html", ".pdf", ".md");
-
-    // Feature: rosa2-cli-refactor, Property 19: Image List Completeness
     @Property(tries = 100)
     void imageListContainsExactlyOneEntryPerImageFile(
             @ForAll("filenameSets") Set<String> filenames

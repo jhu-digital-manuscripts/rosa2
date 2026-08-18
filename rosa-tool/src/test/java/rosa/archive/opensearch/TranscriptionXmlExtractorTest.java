@@ -18,7 +18,7 @@ class TranscriptionXmlExtractorTest {
                 "<l n=\"2\">N'a se fables non et mensonges</l>" +
                 "</lg></div>";
 
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract(xml);
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
 
         assertTrue(result.poetry().contains("Maintes gens dient que en songes"));
         assertTrue(result.poetry().contains("N'a se fables non et mensonges"));
@@ -32,7 +32,7 @@ class TranscriptionXmlExtractorTest {
                 "<l n=\"102\">More text</l>" +
                 "</lg></div>";
 
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract(xml);
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
 
         assertTrue(result.line().contains("101"));
         assertTrue(result.line().contains("102"));
@@ -44,7 +44,7 @@ class TranscriptionXmlExtractorTest {
         String xml = "<div type=\"ms\"><milestone n=\"L101\"/>" +
                 "<lg type=\"couplet\"><l n=\"1\">text</l></lg></div>";
 
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract(xml);
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
 
         assertTrue(result.lecoy().contains("L101"));
     }
@@ -54,7 +54,7 @@ class TranscriptionXmlExtractorTest {
     void extractsRubrics() {
         String xml = "<div type=\"ms\"><hi rend=\"rubric\">Ci commence le rommant de la rose</hi></div>";
 
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract(xml);
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
 
         assertTrue(result.rubric().contains("Ci commence le rommant de la rose"));
     }
@@ -64,7 +64,7 @@ class TranscriptionXmlExtractorTest {
     void extractsCatchphrases() {
         String xml = "<div type=\"ms\"><fw>catch phrase text</fw></div>";
 
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract(xml);
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
 
         assertTrue(result.catchphrase().contains("catch phrase text"));
     }
@@ -77,7 +77,7 @@ class TranscriptionXmlExtractorTest {
                 "<note type=\"character\">The Lover</note>" +
                 "</div>";
 
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract(xml);
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
 
         assertTrue(result.illustration().contains("A garden scene"));
         assertTrue(result.illustration().contains("The Lover"));
@@ -88,7 +88,7 @@ class TranscriptionXmlExtractorTest {
     void extractsNotes() {
         String xml = "<div type=\"ms\"><note type=\"editorial\">Added by scribe</note></div>";
 
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract(xml);
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
 
         assertTrue(result.note().contains("Added by scribe"));
     }
@@ -96,7 +96,7 @@ class TranscriptionXmlExtractorTest {
     @Test
     @DisplayName("Returns empty result for null input")
     void handlesNullInput() {
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract(null);
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", null);
 
         assertEquals("", result.poetry());
         assertEquals("", result.rubric());
@@ -110,7 +110,7 @@ class TranscriptionXmlExtractorTest {
     @Test
     @DisplayName("Returns empty result for blank input")
     void handlesBlankInput() {
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("   ");
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", "   ");
 
         assertEquals("", result.poetry());
     }
@@ -120,7 +120,7 @@ class TranscriptionXmlExtractorTest {
     void ignoresScribalPun() {
         String xml = "<div type=\"ms\"><note type=\"scribalPun\">pun text</note></div>";
 
-        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract(xml);
+        TranscriptionXmlExtractor.Result result = TranscriptionXmlExtractor.extract("", xml);
 
         assertEquals("", result.note());
         assertEquals("", result.illustration());
